@@ -49,8 +49,9 @@ class AnjukePipeline(object):
         print('>>>>', item)
         print('\n')
         item["crawl_time"] = str(time.strftime("%Y-%m-%d %X", time.localtime()))
+        # 城市缩写
         city_abbreviate = re.findall('[a-zA-Z]+', item['start_url'])[1]
-        
+        item["_id"] = hashlib.md5(item['brokerPhone'].encode()).hexdigest()
         try:
             self.db[city_abbreviate].insert(item)
         except Exception as e:

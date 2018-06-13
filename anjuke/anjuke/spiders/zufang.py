@@ -9,23 +9,29 @@ class ZufangSpider(scrapy.Spider):
     name = 'zufang'
     # allowed_domains = []
     #
-    # start_urls = [
-    #     # 'https://sz.zu.anjuke.com/fangyuan/l2/',
-    #     # 'https://gz.zu.anjuke.com/fangyuan/l2/',
-    #     # 'https://fs.zu.anjuke.com/fangyuan/l2/',
-    #     # 'https://cs.zu.anjuke.com/fangyuan/l2/',
-    #     # 'https://san.zu.anjuke.com/fangyuan/l2/',  # 三亚
-    #     # 'https://hui.zu.anjuke.com/fangyuan/l2/',  # 惠州
-    #     # 'https://dg.zu.anjuke.com/fangyuan/l2/',  # 东莞
-    #     # 'https://hk.zu.anjuke.com/fangyuan/l2/',  # 海口
-    #     'https://zh.zu.anjuke.com/fangyuan/l2/',  # 珠海
-    #     'https://zs.zu.anjuke.com/fangyuan/l2/',  # 中山
-    #     'https://xm.zu.anjuke.com/fangyuan/l2/',  # 厦门
-    #     'https://nn.zu.anjuke.com/fangyuan/l2/',  # 南宁
-    #     'https://qz.zu.anjuke.com/fangyuan/l2/',  # 泉州
-    #     'https://lzh.zu.anjuke.com/fangyuan/l2/', # 柳州
-    # ]
     start_urls = [
+        # 'https://sh.zu.anjuke.com/fangyuan/l2/',
+        # 'https://hz.zu.anjuke.com/fangyuan/l2/',
+        # 'https://su.zu.anjuke.com/fangyuan/l2/',
+        # 'https://nj.zu.anjuke.com/fangyuan/l2/',
+        'https://wx.zu.anjuke.com/fangyuan/l2/',
+
+        # 'https://sz.zu.anjuke.com/fangyuan/l2/',
+        # 'https://gz.zu.anjuke.com/fangyuan/l2/',
+        # 'https://fs.zu.anjuke.com/fangyuan/l2/',
+        # 'https://cs.zu.anjuke.com/fangyuan/l2/',
+        # 'https://san.zu.anjuke.com/fangyuan/l2/',  # 三亚
+        # 'https://hui.zu.anjuke.com/fangyuan/l2/',  # 惠州
+        # 'https://dg.zu.anjuke.com/fangyuan/l2/',  # 东莞
+        # 'https://hk.zu.anjuke.com/fangyuan/l2/',  # 海口
+        # 'https://zh.zu.anjuke.com/fangyuan/l2/',  # 珠海
+        # 'https://zs.zu.anjuke.com/fangyuan/l2/',  # 中山
+        # 'https://xm.zu.anjuke.com/fangyuan/l2/',  # 厦门
+        # 'https://nn.zu.anjuke.com/fangyuan/l2/',  # 南宁
+        # 'https://qz.zu.anjuke.com/fangyuan/l2/',  # 泉州
+        # 'https://lzh.zu.anjuke.com/fangyuan/l2/', # 柳州
+    ]
+    # start_urls = [
         # 'https://am.zu.anjuke.com/fangyuan/l2/',
         # 'https://ans.zu.anjuke.com/fangyuan/l2/', #
         # 'https://ale.zu.anjuke.com/fangyuan/l2/', #
@@ -33,10 +39,10 @@ class ZufangSpider(scrapy.Spider):
         # 'https://ank.zu.anjuke.com/fangyuan/l2/', #
         # 'https://ab.zu.anjuke.com/fangyuan/l2/', #
         # 'https://aks.zu.anjuke.com/fangyuan/l2/', #
-        'https://al.zu.anjuke.com/fangyuan/l2/',
-        'https://aq.zu.anjuke.com/fangyuan/l2/',
-        'https://ay.zu.anjuke.com/fangyuan/l2/'
-    ]
+        # 'https://al.zu.anjuke.com/fangyuan/l2/',
+        # 'https://aq.zu.anjuke.com/fangyuan/l2/',
+        # 'https://ay.zu.anjuke.com/fangyuan/l2/'
+    # ]
 
     headers = {
         'authority': 'wh.zu.anjuke.com',
@@ -72,7 +78,6 @@ class ZufangSpider(scrapy.Spider):
         # print('user-agent-->',response.request.headers["User-Agent"])
         # print(response.body)
         a_list = response.xpath('//div[contains(@class,"itemmod")]')
-        print(len(a_list),'<<??<<<')
         item['city'] = response.xpath('//div[@class="cityselect"]/div[@class="city-view"]/text()').extract_first()
         if item['city'] is not None:
             item['city']=item['city'].strip()
@@ -85,14 +90,14 @@ class ZufangSpider(scrapy.Spider):
             )
             # break
 
-        # next_url = response.xpath('//a[text()="下一页 >"]/@href').extract_first()
-        # print('next_url',next_url)
-        # if next_url is not None:
-        #     yield scrapy.Request(
-        #         url=next_url,
-        #         callback=self.parse,
-        #         meta={'item': item}
-        #     )
+        next_url = response.xpath('//a[text()="下一页 >"]/@href').extract_first()
+        print('next_url',next_url)
+        if next_url is not None:
+            yield scrapy.Request(
+                url=next_url,
+                callback=self.parse,
+                meta={'item': item}
+            )
 
     def parse_detail(self,response):
         # print(response.url)
@@ -123,9 +128,11 @@ class ZufangSpider(scrapy.Spider):
             # 装修
             item['beautify'] = response.xpath('//ul[@class="house-info-zufang cf"]/li[6]/span[2]/text()').extract_first()
             # 小区名和位置
-            a = response.xpath('//ul[@class="house-info-zufang cf"]/li[8]//text()').extract()
-            b = ''.join(a).strip()
-            item['house_position'] = re.sub('\s','', b)
+            # a = response.xpath('//ul[@class="house-info-zufang cf"]/li[8]//text()').extract()
+            # b = ''.join(a).strip()
+            # item['house_position'] = re.sub('\s','', b)
+            a = response.xpath('//div[@class="p_1180 p_crumbs"]//text()').extract()
+            item['house_position'] = ''.join(a).strip()
             # 发布时间
             x = response.xpath('//div[@class="right-info"]/text()').extract_first()
             if x is not None:

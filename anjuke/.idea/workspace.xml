@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a4345aa-b5d6-4e6b-9c2f-bbec5ca698af" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../company/run.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/crawl.py" afterPath="$PROJECT_DIR$/run.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anjuke/middlewares.py" afterPath="$PROJECT_DIR$/anjuke/middlewares.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anjuke/pipelines.py" afterPath="$PROJECT_DIR$/anjuke/pipelines.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anjuke/settings.py" afterPath="$PROJECT_DIR$/anjuke/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anjuke/spiders/zufang.py" afterPath="$PROJECT_DIR$/anjuke/spiders/zufang.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../company/run.py" afterPath="$PROJECT_DIR$/../company/run.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,11 +23,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="zufang.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="zufang.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/anjuke/spiders/zufang.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-175">
-              <caret line="79" column="55" lean-forward="true" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
+            <state relative-caret-position="525">
+              <caret line="131" column="36" lean-forward="true" selection-start-line="131" selection-start-column="36" selection-end-line="131" selection-end-column="36" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -38,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/anjuke/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+            <state relative-caret-position="541">
+              <caret line="52" column="71" lean-forward="true" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
               <folding>
                 <element signature="e#24#38#0" expanded="true" />
               </folding>
@@ -50,21 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resultspider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../baidu_result_v1.1/baidu_result/spiders/resultspider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/anjuke/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="47" column="43" lean-forward="false" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+            <state relative-caret-position="500">
+              <caret line="25" column="74" lean-forward="true" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -73,7 +60,7 @@
       <file leaf-file-name="middlewares.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/anjuke/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="980">
+            <state relative-caret-position="745">
               <caret line="142" column="23" lean-forward="false" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
               <folding>
                 <element signature="e#376#2038#0" expanded="false" />
@@ -130,8 +117,8 @@
         <option value="$PROJECT_DIR$/../check_url_re.py" />
         <option value="$PROJECT_DIR$/anjuke/middlewares.py" />
         <option value="$PROJECT_DIR$/anjuke/settings.py" />
-        <option value="$PROJECT_DIR$/anjuke/spiders/zufang.py" />
         <option value="$PROJECT_DIR$/anjuke/pipelines.py" />
+        <option value="$PROJECT_DIR$/anjuke/spiders/zufang.py" />
       </list>
     </option>
   </component>
@@ -174,6 +161,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="work_code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="anjuke" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work_code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="anjuke" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -490,9 +491,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="-11" width="1849" height="979" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21456365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21456365" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -830,7 +830,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/anjuke/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
+        <state relative-caret-position="745">
           <caret line="142" column="23" lean-forward="false" selection-start-line="142" selection-start-column="23" selection-end-line="142" selection-end-column="23" />
           <folding>
             <element signature="e#376#2038#0" expanded="false" />
@@ -839,38 +839,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/anjuke/settings.py">
+    <entry file="file://$PROJECT_DIR$/../baidu_result_v1.1/baidu_result/spiders/resultspider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="47" column="43" lean-forward="false" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
+        <state relative-caret-position="-455">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../baidu_result_v1.1/baidu_result/spiders/resultspider.py">
+    <entry file="file://$PROJECT_DIR$/anjuke/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        <state relative-caret-position="541">
+          <caret line="52" column="71" lean-forward="true" selection-start-line="52" selection-start-column="71" selection-end-line="52" selection-end-column="71" />
+          <folding>
+            <element signature="e#24#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anjuke/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" column="74" lean-forward="true" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/anjuke/spiders/zufang.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="79" column="55" lean-forward="true" selection-start-line="79" selection-start-column="55" selection-end-line="79" selection-end-column="55" />
+        <state relative-caret-position="525">
+          <caret line="131" column="36" lean-forward="true" selection-start-line="131" selection-start-column="36" selection-end-line="131" selection-end-column="36" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/anjuke/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
-          <folding>
-            <element signature="e#24#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
