@@ -134,9 +134,9 @@ class ProxyMiddleware(object):
         proxy = random.choice(self.proxy)  # 111.76.149.218:1465
         request.meta['proxy'] = 'https://' + proxy
         print("request.meta['proxy'] >>> ", request.meta['proxy'])
-        print('*' * 60)
-        print(request.headers, '_+_+_+_+_+_+_+')
-        print('*' * 60)
+        # print('*' * 60)
+        # print(request.headers, '_+_+_+_+_+_+_+')
+        # print('*' * 40)
 
 # class ProxyMiddleware(object):
 #     """使用代理ip"""

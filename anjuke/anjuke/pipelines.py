@@ -1,32 +1,59 @@
 # -*- coding: utf-8 -*-
+import hashlib
+import time
+import pymongo
 from twisted.enterprise import adbapi
+import re
+import pymysql
+from anjuke.spiders.zufang import ZufangSpider
 
-class AnjukePipeline():
+#
+# from pymongo import MongoClient
+#
+# client = MongoClient()
+# collection = client['zufang']['anjuke']
+#
+# class AnjukePipeline(object):
+#
+#     def process_item(self, item, spider):
+#         print(111,item)
+#         item["_id"] = hashlib.md5(item['beautify']+item["house_position"]).hexdigest()
+#         print(item["_id"])
+#         collection.insert(dict(item))
+#         print("save ok")
+#         return item
+
+class AnjukePipeline(object):
+    def __init__(self, mongo_uri, mongo_db):
+        self.mongo_uri = mongo_uri
+        self.mongo_db = mongo_db
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(
+            mongo_uri=crawler.settings.get('MONGO_URI'),
+            mongo_db=crawler.settings.get('MONGO_DATABSE', 'items')
+        )
+
+
     def open_spider(self, spider):
-        database = "data"
-        host = "localhost"
-        port = 3306
-        user = "root"
-        password = "mysql"
-        charset = 'utf8mb4'
-        self.dbpool = adbapi.ConnectionPool('pymysql', database=database, host=host, port=port, user=user,
-                                            password=password, charset=charset)
-        # 创建连接池对象，每个连接对象在独立的线程中工作，内部使用第一个参数-》pymysql访问数据库
+        self.client = pymongo.MongoClient(self.mongo_uri)
+        self.db = self.client[self.mongo_db]
+
+
     def close_spider(self, spider):
-        self.dbpool.close()
+        self.client.close()
+
 
     def process_item(self, item, spider):
-        self.dbpool.runInteraction(self.insert_db, item)
-        # 以异步方式调用insert_db函数
+        print('>>>>', item)
+        print('\n')
+        item["crawl_time"] = str(time.strftime("%Y-%m-%d %X", time.localtime()))
+        city_abbreviate = re.findall('[a-zA-Z]+', item['start_url'])[1]
+        
+        try:
+            self.db[city_abbreviate].insert(item)
+        except Exception as e:
+            print(e)
+        print('save ok \n')
         return item
-
-    def insert_db(self, tx, item):  # 第一个参数是Transaction对象，
-        values = (
-            str(item.get('brokerPhone')),
-            str(item.get('personal_name')),
-            # str(item.get('house_title')),
-            str(item['right_info']),
-        )
-        sql = "insert into anjuke (brokerPhone, personal_name, right_info) values(%s,%s,%s)"
-        tx.execute(sql, values)
-        print('ok1')
