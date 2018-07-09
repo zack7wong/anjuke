@@ -1,0 +1,195 @@
+﻿﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>陕西国防工业职业技术学院</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/function.web.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+</head>
+<body>
+﻿<div class="top">
+    <div class="head auto">
+        <div class="logo fl">
+            <div class="lg"><a href="#"><img src="images/logo.png" /></a></div>
+            <div class="xx"><img src="images/xx.png" /></div>
+        </div>
+        <div class="head-right fr">
+            <div class="head-right-f">
+                <ul>
+                     <li><a href="http://old.gfxy.com/" target="_blank">怀念旧版</a></li>
+                     <li><a href="javascript:void(0);" onclick="AddFavorite( '陕西国防工业职业技术学院','http://www.gfxy.com/')">加入收藏</a></li>
+                </ul>
+            </div>
+            <div class="head-right-m fr">
+            	<form action="so_list.php" id="soform">
+                    <input type="text" class="search-left fl" name="soso" placeholder="请输入关键字..."/>
+                    <input type="image" class="search-right fr"src="images/search-img.jpg" onclick="so()"/>
+                    <input type="submit" style="display:none;">
+                </form>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<script>
+function so(){
+    var ss=$("input[name='soso']").val();
+    //alert(ss);
+    if (ss=='') {
+        alert("搜索不能为空");
+        return false;
+    }
+    $("#soform").submit;
+}
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+
+</script>
+<div class="nav w100" style="background:url(images/lan.png);">
+    <div class="nav w1200" style="position:relative;">
+<div class='lwy'><a href='http://www.gfxy.com/index.php' target='_blank'>首页</a></div><div class='lwy'><a href='content.php?url=U2ZXN1VsATdXIgRlBHpXMVYwVjQCbFJxWGQDdVd0BjFdJwdzBGEEclxqUDhQKAFvAmQBOwBiUyZdZFc2AzlQOlMyVyc%3D' target='_blank'>学院概况</a><div class='yzx'><ul><li><a href='content.php?url=AjcAYA43VGIGc1c2DXMIbgJkUDJQPlZ1CTVTJVJxBzBQKlcjVTAEcgE3Vj5XL1Q6AGYHPQ9tCH1YYQtqBjwFbwJjAHA%3D' target='_blank'>▪ 学院简介</a></li><li><a href='content.php?url=UmddPVNqATZVIARlDHIEYlg%2BVzUBbwIhAT1QJld0BTJdJwRwVjMAdlFnB29QKAhmVTMBOwVnAXQAOVY3BjwHbVIzXSk%3D' target='_blank'>▪ 学院荣誉</a></li><li><a href='content.php?url=UmcGZg82ATRRMlx8Vj1SJ1Y1UTIANgBuWHVXMgInBHUBb1Z0VSEDZlZ3XD8DYQl6UjlSMVc5CGoKcQtrDD5QOFJhBj8PYg%3D%3D' target='_blank'>▪ 现任领导</a></li><li><a href='content.php?url=UmcAYFZvCz4EZgcnBG9TJgBjAmEGMFU7X3JQNQ0oUyJVO1x%2BB3MLblFwUTIBYwFyAmlQMwdpB2VcJwBgBTdUPFJhADlWIg%3D%3D' target='_blank'>▪ 校园风光</a></li><li><a href='content.php?url=V2JXNw43BzIGZ1JyA2hQJQJhAWJQZgRqWndTNlVwUyIAblZ0BHBRNFZ3UzBXNQBzA2hWNVA%2BUzELcFExVmQHb1dkV24Ofg%3D%3D' target='_blank'>▪ 历史沿革</a></li><li><a href='content.php?url=XWhdPVNqUWcAa119Bm1VIABjVjUBN1I8CSQBZA0oA3IBb1R2AXUBZFFwUzACYFIhWDMHZFc5VTcMdwBgBTdUPF1uXWRTIw%3D%3D' target='_blank'>▪ 交通引导</a></li></ul><div class='jianjie'><dl><dt>学院简介<a href='content.php?url=VWBRMVVsVGIEcVMyVylTNVA2VzUOYAckDDBXIQAjAzQGfAdzVjMCdFdhXTVULANtUDYGPFIwA3YBOAJjADoAalU0USE%3D'>MORE >></a></dt><dd style='width:500px;'>陕西国防工业职业技术学院是一所由陕西省人民政府举办的全日制普通高校。1958年建校以来，学院立足陕西，面向国防，为国家航空、航天、兵器、船舶、核工业、军工电子等军工企事业单位和机电、电子、化工、能源、建筑、计算机信息、经贸等行业培养了大批高素质高技能人才。</dd><dd style='width:130px; margin:0 0 0 20px; text-indent:0; text-align:center;'><img src='images/tushuguan.png' /><span>图书馆</span></dd></dl></div></div></div><div class='lwy'><a href='newslist.php?url=V2xRJwZjBWVWYAY9VysCZFkpBXYGZAdyX3IKbw0oUiMANQdnUmtQYQZg' target='_blank'>校园新闻</a></div><div class='lwy'><a href='content.php?url=ADVXN1NqVmMAZgQkBG8JfAdkUzAGMAZoDyIHYldyUyJcMlNxBXEBZAAhVjUDYVMgBW5XNFM9A2VaIQVlV2UDawAzV25TIw%3D%3D' target='_blank'>组织机构</a><div class='yzx'><ul><li><a href='content.php?url=ATQGZlRtUGUGYF19AmlUIVU2AWIDNVM9XHEAZVJ3UyJWOF1%2FBHACZ118A2BRMwh7B2xRMlc5B2FbIFMzUmAFbQEyBj9UJA%3D%3D' target='_blank'>▪ 党群部门</a></li><li><a href='content.php?url=BTBQMAA5BTBUMQcnVj1UIVg7UDNTZQJsCSQCZ1dyBXRSPAMhAHRRNAEgXD9RM1ckBW5TMFM9BWNdJlc3VWdXPwU2UGkAcA%3D%3D' target='_blank'>▪ 行政部门</a></li><li><a href='content.php?url=XGkDYwY%2FBjMAZFFxAGtXIgJhBmVTZVE%2FCCUEYQMmVyZRPwQmBHAEYQEgAGNRM1UmVT4BYlM9UTcLcAdnADIFbVxvAzoGdg%3D%3D' target='_blank'>▪ 教学部门</a></li></ul><div class='jianjie'><dl><dt>学院简介<a href='content.php?url=BzJQMAY%2FUWcAdVEwBHoBZwJkUjAEagQnWGQDdQQnU2RULgF1VTAHcQA2UTlXLwhmVjAFP1U3AndYYVQ1Bz0PZQdmUCA%3D'>MORE >></a></dt><dd style='width:500px;'>陕西国防工业职业技术学院是一所由陕西省人民政府举办的全日制普通高校。1958年建校以来，学院立足陕西，面向国防，为国家航空、航天、兵器、船舶、核工业、军工电子等军工企事业单位和机电、电子、化工、能源、建筑、计算机信息、经贸等行业培养了大批高素质高技能人才。</dd><dd style='width:130px; margin:0 0 0 20px; text-indent:0; text-align:center;'><img src='images/tushuguan.png' /><span>图书馆</span></dd></dl></div></div></div><div class='lwy'><a href='javascript:void(0);'>教育教学</a><div class='yzx'><ul><li><a href='http://jwc.gfxy.com/index.html' target='_blank'>▪ 教学管理</a></li><li><a href='http://jpkc.gfxy.com/' target='_blank'>▪ 精品课程</a></li><li><a href='http://old.gfxy.com/root/RenCaiPeiYang/ShiZiDuiWu/' target='_blank'>▪ 名师风采</a></li><li><a href='http://dep.gfxy.com/shijian/' target='_blank'>▪ 实验实训</a></li><li><a href='http://zyk.gfxy.com:8002/gfxy/Default.aspx' target='_blank'>▪ 共享资源库</a></li></ul><div class='jianjie'><dl><dt>学院简介<a href='content.php?url=XGlUNAU8UGZRJAdmVCoDZVk%2FVDZQPgUmXGBXIQQnVGMHfVwoUzYGcFZgB29XL1c5VDIBO1Q2VSABOAVkUmhUPlw9VCQ%3D'>MORE >></a></dt><dd style='width:500px;'>陕西国防工业职业技术学院是一所由陕西省人民政府举办的全日制普通高校。1958年建校以来，学院立足陕西，面向国防，为国家航空、航天、兵器、船舶、核工业、军工电子等军工企事业单位和机电、电子、化工、能源、建筑、计算机信息、经贸等行业培养了大批高素质高技能人才。</dd><dd style='width:130px; margin:0 0 0 20px; text-indent:0; text-align:center;'><img src='images/tushuguan.png' /><span>图书馆</span></dd></dl></div></div></div><div class='lwy'><a href='javascript:void(0);'>招生就业</a><div class='yzx'><ul><li><a href='http://dep.gfxy.com/cjc/' target='_blank'>▪ 成人教育</a></li><li><a href='http://dep.gfxy.com/rencai/' target='_blank'>▪ 就业网</a></li><li><a href='http://zs.gfxy.com/' target='_blank'>▪ 招生网</a></li></ul><div class='jianjie'><dl><dt>学院简介<a href='content.php?url=UGVWNlJrUWdQJVQ1AnxVM1cxWzlUOgYlXGBWIFBzBTJULlQgAmdQJlZgAGhRKVI8WD4COAdlAXQKMwRlAzlUPlAxViY%3D'>MORE >></a></dt><dd style='width:500px;'>陕西国防工业职业技术学院是一所由陕西省人民政府举办的全日制普通高校。1958年建校以来，学院立足陕西，面向国防，为国家航空、航天、兵器、船舶、核工业、军工电子等军工企事业单位和机电、电子、化工、能源、建筑、计算机信息、经贸等行业培养了大批高素质高技能人才。</dd><dd style='width:130px; margin:0 0 0 20px; text-indent:0; text-align:center;'><img src='images/tushuguan.png' /><span>图书馆</span></dd></dl></div></div></div><div class='lwy'><a href='javascript:void(0);'>学生工作</a><div class='yzx'><ul><li><a href='http://xgb.gfxy.com/' target='_blank'>▪ 学生工作部</a></li><li><a href='content.php?url=VWBdPQU8UGAAZFV1Vj0EcQJhB2RVY1Q6DCECZwMmBHUGaAclBnIKb1NyUTJWNFUmBG8GZQJsVDMKYlZ0AjFTM1VkXTYFPFAg' target='_blank'>▪ 团委</a></li><li><a href='content.php?url=BTAEZFVsATFXPFZ2DWYIfVMwUTJUYlM9WncAZQEkVyZSPAMhAXUCZ1NyAGNXNQR3UzhWNVA%2BVjFdNVFzATIAYAU0BG9VbAFx' target='_blank'>▪ 学生会</a></li></ul><div class='jianjie'><dl><dt>学院简介<a href='content.php?url=VmNTMwE4BzFSJwFgAH5XMQdhWjgGaAIhCTVWIAYlV2AGfAB0UTRXIVBmUDgNdQZoWD5Vb1Q2CXwAOQdmDDYCaFY3UyM%3D'>MORE >></a></dt><dd style='width:500px;'>陕西国防工业职业技术学院是一所由陕西省人民政府举办的全日制普通高校。1958年建校以来，学院立足陕西，面向国防，为国家航空、航天、兵器、船舶、核工业、军工电子等军工企事业单位和机电、电子、化工、能源、建筑、计算机信息、经贸等行业培养了大批高素质高技能人才。</dd><dd style='width:130px; margin:0 0 0 20px; text-indent:0; text-align:center;'><img src='images/tushuguan.png' /><span>图书馆</span></dd></dl></div></div></div><div class='lwy'><a href='newslist.php?url=ATpRJ1M2UzNWYAc8An5XMQNzAXJVN1UgCyYBZAAlA3IANVIyADkFNFcy' target='_blank'>人才招聘</a></div><div class='lwy'><a href='http://kyc.gfxy.com/' target='_blank'>学术研究</a></div><div class='lwy'><a href='http://zjjt.gfxy.com' target='_blank'>国防职教集团</a></div>            
+        </div>
+</div>
+<div class="fullSlide">
+    <div class="bd">
+        <ul>
+<li><a target='_blank' href='http://60th.gfxy.com/'><img src='./GFcms/info/infoimg/2018050714470822111111.jpg'/></a><div class='tt'><span><a target='_blank' href='http://60th.gfxy.com/'>陕西国防工业职业技术学院六十周年庆</a></span></div></li><li><a target='_blank' href='javascript:void(0);'><img src='./GFcms/info/infoimg/20180330085534tushuguan_.jpg'/></a><div class='tt'><span><a target='_blank' href='javascript:void(0);'>校园春色</a></span></div></li><li><a target='_blank' href='javascript:void(0);'><img src='./GFcms/info/infoimg/20180420090527_B7A6056_22222.jpg'/></a><div class='tt'><span><a target='_blank' href='javascript:void(0);'>陕西省第二阶段“大国工匠进校园”启动仪式暨首场活动——对话工匠篇</a></span></div></li><li><a target='_blank' href='javascript:void(0);'><img src='./GFcms/info/infoimg/201804231011241111.jpg'/></a><div class='tt'><span><a target='_blank' href='javascript:void(0);'>梦在前方</a></span></div></li>        </ul>
+    </div>
+    <div class="hd"><ul></ul></div>
+    <div class="clear"></div>   
+</div>
+<script type="text/javascript">
+    jQuery(".fullSlide").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"fold",  autoPlay:true, autoPage:true, trigger:"click" });
+</script>
+
+
+<div class="part1 w100%">
+	<div class="scrollBox w1200" style="margin:0 auto">
+        <div class="hd">
+            <h2><img src="images/part1icon.png" /><span>校园新闻</span><a href="newslist.php?url=V2wAdlE0CmpUYlBrAX0AZlcnBXYBYwdyDCECZw0oDn8CNwBgDjcFNFI0" target="_blank">NEWS&gt;&gt;</a></h2>
+			<a class="next"></a>
+			<a class="prev"></a>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="bd">
+			<ul class="piclist">
+<li><a href='contxt.php?url=ADVTMwM6BzJcPVdiBTtUdVI3Wi8DMVZhXGRWb1VyUjZTfQd3VWBQcgAjAWYFe1QnAmkCYQVrVjBcNA%3D%3D' target='_blank' style='display:block;'><img src='./GFcms/info/infoimg/20180512190036_B7A7416_222222.jpg' width='288' height='180' /></a><div class='xx'><div class='xx-t'><a href='contxt.php?url=ADVTMwM6BzJcPVdiBTtUdVI3Wi8DMVZhXGRWb1VyUjZTfQd3VWBQcgAjAWYFe1QnAmkCYQVrVjBcNA%3D%3D' target='_blank'>陕西省首家社区干部学院在我校揭牌</a></div><div class='xx-p'>5月12日上午9时，中共西安市鄠邑区委组织部和陕西国防工业职业技术学院举办的西安市鄠邑区社区干部学院</div><div class='xx-time'><img src='images/time.png' /><span>2018-05-12</span><img src='images/eye.png' /><span>11694</span></div></li><li><a href='contxt.php?url=VWADYwc%2BV2JWNgE3VG9VdFg9Wi8PPQA3ATkBOAAnA2cCLFIiAzYBI1x%2FA2QNc1ckB2wCYVQ6VDJfNw%3D%3D' target='_blank' style='display:block;'><img src='./GFcms/info/infoimg/201805281557451527467672107063.jpg' width='288' height='180' /></a><div class='xx'><div class='xx-t'><a href='contxt.php?url=VWADYwc%2BV2JWNgE3VG9VdFg9Wi8PPQA3ATkBOAAnA2cCLFIiAzYBI1x%2FA2QNc1ckB2wCYVQ6VDJfNw%3D%3D' target='_blank'>我校举行国家级众创空间签约揭牌仪式</a></div><div class='xx-p'>5月25日下午，陕西国防工业职业技术学院与广州粤嵌通信科技股份有限公司校企协同育人签约暨中华人民共和</div><div class='xx-time'><img src='images/time.png' /><span>2018-05-28</span><img src='images/eye.png' /><span>1566</span></div></li><li><a href='contxt.php?url=XGkDYwY%2FBjMAYVFgADVXdgJnBnNTYVFmCDAEPQMkVzNRfwR0BDEEJgEiAGdRL1UmVT4BYlM9UTcLYw%3D%3D' target='_blank' style='display:block;'><img src='./GFcms/info/infoimg/201805231142111527043772681838.jpg' width='288' height='180' /></a><div class='xx'><div class='xx-t'><a href='contxt.php?url=XGkDYwY%2FBjMAYVFgADVXdgJnBnNTYVFmCDAEPQMkVzNRfwR0BDEEJgEiAGdRL1UmVT4BYlM9UTcLYw%3D%3D' target='_blank'>我校与巴基斯坦无限工程学院成功举办国际职教合作洽谈会</a></div><div class='xx-p'>5月22日，（中国）陕西国防工业职业技术学院（巴基斯坦）无限工程学院国际职教合作交流洽谈会在我校成功</div><div class='xx-time'><img src='images/time.png' /><span>2018-05-23</span><img src='images/eye.png' /><span>5561</span></div></li><li><a href='contxt.php?url=UmddPVNqATRVNAQwDDgEJVg9VyIBMwI1ATlQaVdwBWFdcwR0VmMAIlFyB2BQLgh7VT4BYgVrAWcAaA%3D%3D' target='_blank' style='display:block;'><img src='./GFcms/info/infoimg/201805111627301526024084181981.png' width='288' height='180' /></a><div class='xx'><div class='xx-t'><a href='contxt.php?url=UmddPVNqATRVNAQwDDgEJVg9VyIBMwI1ATlQaVdwBWFdcwR0VmMAIlFyB2BQLgh7VT4BYgVrAWcAaA%3D%3D' target='_blank'>我校在2018全国职业院校技能大赛“物联网技术应用”赛项中取得佳绩</a></div><div class='xx-p'>2018年5月9日，全国职业院校技能大赛高职组“物联网技术应用”赛项在天津举行，我校代表队最终荣获了</div><div class='xx-time'><img src='images/time.png' /><span>2018-05-11</span><img src='images/eye.png' /><span>10649</span></div></li><li><a href='contxt.php?url=UmcAYFZvCz4EZQcwBDBTcgBlAncGNFViX2dQaQ0qUzdVe1wsBzILKVFyUTYBfwFyAmlQMwdpB2FcNA%3D%3D' target='_blank' style='display:block;'><img src='./GFcms/info/infoimg/20180510143157_B7A73534333333.jpg' width='288' height='180' /></a><div class='xx'><div class='xx-t'><a href='contxt.php?url=UmcAYFZvCz4EZQcwBDBTcgBlAncGNFViX2dQaQ0qUzdVe1wsBzILKVFyUTYBfwFyAmlQMwdpB2FcNA%3D%3D' target='_blank'>省委高教工委委员、组织部长王军周来我校督查调研“高校思政课教师大练兵”有关工作</a></div><div class='xx-p'>5月10日上午9时，省委高教工委“陕西高校思政课教师大练兵”主题活动领导小组汇报会在北区第一会议室举</div><div class='xx-time'><img src='images/time.png' /><span>2018-05-10</span><img src='images/eye.png' /><span>10418</span></div></li><li><a href='contxt.php?url=U2YDYwQ9Cz4DYl1rBj4AIVYzBXBUZlRjW2MDOg0qDmpccgBwUWQGJAYlUzQHeQl6BG8BYlc5AGYLYw%3D%3D' target='_blank' style='display:block;'><img src='./GFcms/info/infoimg/20180507185118_B7A69352222.jpg' width='288' height='180' /></a><div class='xx'><div class='xx-t'><a href='contxt.php?url=U2YDYwQ9Cz4DYl1rBj4AIVYzBXBUZlRjW2MDOg0qDmpccgBwUWQGJAYlUzQHeQl6BG8BYlc5AGYLYw%3D%3D' target='_blank'>我校隆重举行“五四精神传薪火，激扬青春献国防” 2017-2018年度五四颁奖典礼暨文艺汇演</a></div><div class='xx-p'>5月4日，我校在北校区大学生活动中心举行“五四精神传薪火，激扬青春献国防”2017-2018年度五四</div><div class='xx-time'><img src='images/time.png' /><span>2018-05-07</span><img src='images/eye.png' /><span>9112</span></div></li><li><a href='contxt.php?url=ATRWNgE4Cz5dP1BvBjJVdAdiVCEAMgYxX2dTagAnAmYBL1QkUmdWdFV2A2RTLQd0UDtQM1A%2BBWMPZw%3D%3D' target='_blank' style='display:block;'><img src='./GFcms/info/infoimg/20180506153902IMG_11111.jpg' width='288' height='180' /></a><div class='xx'><div class='xx-t'><a href='contxt.php?url=ATRWNgE4Cz5dP1BvBjJVdAdiVCEAMgYxX2dTagAnAmYBL1QkUmdWdFV2A2RTLQd0UDtQM1A%2BBWMPZw%3D%3D' target='_blank'>我校召开纪念马克思诞辰200周年暨重温《共产党宣言》 学习研讨会</a></div><div class='xx-p'>5月4日下午，我校在南校区信息楼二楼会议室召开“纪念马克思诞辰200周年暨重温《共产党宣言》（以下简</div><div class='xx-time'><img src='images/time.png' /><span>2018-05-05</span><img src='images/eye.png' /><span>9932</span></div></li><li><a href='contxt.php?url=VmNTMwE4BzJSMAE%2FADpXdgdiWi8GNAI1CTFWbwYhVzMGKABwUWRXdVBzUDcNcwZ1WDNVNlQ6CW8AaA%3D%3D' target='_blank' style='display:block;'><img src='./GFcms/info/infoimg/201805031518421525318540171782.jpg' width='288' height='180' /></a><div class='xx'><div class='xx-t'><a href='contxt.php?url=VmNTMwE4BzJSMAE%2FADpXdgdiWi8GNAI1CTFWbwYhVzMGKABwUWRXdVBzUDcNcwZ1WDNVNlQ6CW8AaA%3D%3D' target='_blank'>开放办学 破冰中巴职教合作</a></div><div class='xx-p'>4月24日至4月26日，学院副院长全卫强一行赴巴基斯坦卡拉奇市参加“2018中国-巴基斯坦职业技术培</div><div class='xx-time'><img src='images/time.png' /><span>2018-05-03</span><img src='images/eye.png' /><span>11152</span></div></li><li><a href='contxt.php?url=BzIDY1RtVmNXNVVlDTIFJFg9ViNSYAUyDzcHPlF2UDRSfFMjUmcFJwEiA2RTLQh7B2xaOQ5gB2EPZw%3D%3D' target='_blank' style='display:block;'><img src='./GFcms/info/infoimg/201805021014272222.jpg' width='288' height='180' /></a><div class='xx'><div class='xx-t'><a href='contxt.php?url=BzIDY1RtVmNXNVVlDTIFJFg9ViNSYAUyDzcHPlF2UDRSfFMjUmcFJwEiA2RTLQh7B2xaOQ5gB2EPZw%3D%3D' target='_blank'>我校近5年CNKI收录期刊论文数量居全国高职院校第4位</a></div><div class='xx-p'>近日，教育部职业技术教育中心研究所所长王扬南在《中国职业技术教育》杂志发表专稿专访文章《2013—2</div><div class='xx-time'><img src='images/time.png' /><span>2018-04-27</span><img src='images/eye.png' /><span>13322</span></div></li>			</ul>
+		</div>
+        <div class="part1_list">
+            <ul>
+<li><a href='contxt.php?url=XWhSMgA5Cj8BYVBkUWwDIlA1Wi9VZwUyCTEKMwQjVDBdcwR0ATRTcVR3UjVXKVQnB2xTMARqCW8KYg%3D%3D' target='_blank'>我校参与承办团省委2018年大学生创新创</a><div class='time'>05-28</div></li><li><a href='contxt.php?url=BzJcPFFoAjcDY11qDDQEJQdiAXQPPQg%2FWGBQaQ0qB2NRf1wsUWQHJVR3A2RRLwFyUzhaOQFvVTMLYw%3D%3D' target='_blank'>我校获批三项国家级教师素质提高计划项目</a><div class='time'>05-28</div></li><li><a href='contxt.php?url=ADVVNQ43UGUDY1FmBDoEJVUwVyJXZQM0CjIEPQEmVzNQflMjVGELKVV2UjUCfFQnA2gBYgNtVTMKYg%3D%3D' target='_blank'>坚定理想信念，提升党性修养—— 我校开展</a><div class='time'>05-28</div></li><li><a href='contxt.php?url=VWADYwc%2BV2JWNgE3VG9VdFg9Wi8PPQA3ATkBOAAnA2cCLFIiAzYBI1x%2FA2QNc1ckB2wCYVQ6VDJfNw%3D%3D' target='_blank'>我校举行国家级众创空间签约揭牌仪式</a><div class='time'>05-28</div></li><li><a href='contxt.php?url=V2JSMgE4Cz5WNwY5U2ZSc1YzVyIOPAA3DTULMlF2AmZRfwFxDzoFJwckXTpWKAZ1BW5bOFQ6CW9YMA%3D%3D' target='_blank'>学校举行知识产权管理规范“贯标”工作启动</a><div class='time'>05-25</div></li><li><a href='contxt.php?url=VGFWNlZvVGEBYQcxUWsHJlcyBnMBMwk%2BCzMLMlZxB2NWeFAgUWQKKFBzXDsCfAl6UjlXNFA%2BUTcBaQ%3D%3D' target='_blank'>我校参加铜川市高校结对帮扶联席会议</a><div class='time'>05-25</div></li><li><a href='contxt.php?url=VWBcPFRtU2ZUNVFvUGgGJwRhAncAMgM0CzMKM1VyAmZWeABwBzJXdQckVDMGeFUmVD9bOANtVTMNZQ%3D%3D' target='_blank'>我校与广州粤嵌通信科技股份有限公司举行 </a><div class='time'>05-23</div></li><li><a href='contxt.php?url=V2JXNw43BzIGZ1JjAzZQcQJnAXRQYgQzWmJTalVyUzcALlYmBDFRc1Z1UzRXKQBzA2hWNVA%2BUzULYw%3D%3D' target='_blank'>我校与巴基斯坦无限工程学院成功举办国际职</a><div class='time'>05-23</div></li>            </ul>
+            <div class="more"><a href="newslist.php?url=XWZWIFM2UDBda1BrUCxVM1goUyAPbVMmCCUBZAwpBXRcaQNjUWgLOlA2" target="_blank">MORE&gt;&gt;</a></div>
+		</div>             
+	</div>
+    <script type="text/javascript">jQuery(".scrollBox").slide({  mainCell:".piclist", effect:"left",vis:3,scroll:3,delayTime:800,trigger:"click",easing:"easeOutCirc"});</script>
+</div>
+
+<div class="part2 w1200">
+    <div class="part2-box">
+    	<div class="part2-box-nav">
+        	<h2><img src="images/part2icon2.png" /><span>通知公告</span></h2><div class="more"><a href="newslist.php?url=ADtTJQNmB2dcaldsBXlUMlIiWikDYlYjXHFWM1VwUiNTZgdnVWxQZwBi" target="_blank">MORE&gt;&gt;</a></div>
+        </div>
+        <ul>
+<li><div class='time'><div class='day'>28</div><div class='year'>18.05</div></div><a href='contxt.php?url=UmdQMAY%2FADUHZwE2ATUCIwVgWi9VZ1FmWGAEPVF2BmJWeAZ2DjgLKVV2B2AFe1AjWTJRMgBuBWULZw%3D%3D' target='_blank'>陕西国防工业职业技术学院学生手册印制项目公告</a></li><li><div class='time'><div class='day'>28</div><div class='year'>18.05</div></div><a href='contxt.php?url=BjNTM1NqBTBTM1JmUW8DIgdiWy5TYVRjDDRWbwYhB2MFK1EhAzVQclV2AGcAfgl6WTJVNgBuCGgJZQ%3D%3D' target='_blank'>第 十三 周会议和重要活动安排表 （2017 -2018 学年第 二 学期）</a></li><li><div class='time'><div class='day'>25</div><div class='year'>18.05</div></div><a href='contxt.php?url=BzJVNVRtBTAGZlJlAzhVdFI3UyZUZlRjCjJWb1dwVzMBLwNzVGILKVNwA2QBfwFyUzhUNwNtUjJdMQ%3D%3D' target='_blank'>陕西国防工业职业技术学院“陕西省教育博览会布展设计及施工制作”采购项目公告</a></li><li><div class='time'><div class='day'>23</div><div class='year'>18.05</div></div><a href='contxt.php?url=XWhdPVFoAzZWN1JsBT8JKFM2UicGNAE2ADgGP1dwAmZTfVAgATcKKFJxB2BQLgd0UDtTMABuUTEKZg%3D%3D' target='_blank'>陕西国防工业职业技术学院保安服采购项目招标公告</a></li>        </ul>
+    </div>
+
+    <div class="part2-box1">
+    	<div class="part2-box-nav">
+        	<h2><img src="images/part2icon1.png" style=" margin:14px 0 0 0" /><span>媒体聚焦</span></h2><div class="more"><a href="newslist.php?url=VW4DdQdiVzdWYAE6VChVM1goWikPbgB1ASwBZAAlA3ICN1IyAzoBNlw8" target="_blank">MORE&gt;&gt;</a></div>
+        </div>
+        <ul class="ul">
+<li><img src='images/dot.png' /><a href='contxt.php?url=VGFSMgU8UGVVNVZgBTBTcgBlUicENgYxW2MAOVJ1AmYGKFcnBDIFJ1FyA2QGeAV2UzgBYlM9CWlcMg%3D%3D'>【中国青年报  中青在线】“创青春”陕西大学生创业大赛决赛开幕</a></li><li><img src='images/dot.png' /><a href='contxt.php?url=BzJdPQY%2FV2JSM1dpDTZVdFg9B3ICMFNkCzNUbQIlBWFSfANzBzEEJlJxA2QNcwh7AmkAYwdpBGQBbw%3D%3D'>【西部网】巴基斯坦职业教育专家来陕取经学习 </a></li><li><img src='images/dot.png' /><a href='contxt.php?url=AjdVNQQ9ATQEZQc1Bj8GJwJnUCUGNAI1CTEDOlJ1AWVXeQNzBjAGJFd0UTYBfwh7BW5TMAVrB2cJZw%3D%3D'>【陕西日报】全省首家社区干部学院在鄠邑区成立 </a></li><li><img src='images/dot.png' /><a href='contxt.php?url=ADVWNlNqCz5RMFFnAzkJKFE0USRXZQQzDTUAOQEmD2tTfVAgAjRWdFZ1XTpQLgd0BW5SMQBuA2NcMg%3D%3D'>【陕西省教育厅】陕西国防工业职业技术学院举办“规范汉字”手抄报比赛</a></li><li><img src='images/dot.png' /><a href='contxt.php?url=XWgDYwE4AzZRMFVjDTBUdVI3AndQYlJlDzcBOAcgUzdRf1UlVGJWdAMgVDNXKQNwUToHZFM9BmZfMQ%3D%3D'>【陕西省教育厅】陕西国防职院多措并举助推学生资助政策宣传与教育工作</a></li>        </ul>
+    </div>
+
+<div class="part2-box1">
+    	<div class="part2-box-nav">
+        	<h2><img src="images/part2icon1.png" style=" margin:14px 0 0 0" /><span>基层动态</span></h2><div class="more"><a href="newslist.php?url=ADtcKlM2BmYDNVFqDHAEYgR0WygBYAVwWHUAZVF0BndTZlAwVm8DMQRn" target="_blank">MORE&gt;&gt;</a></div>
+        </div>
+        <ul class="ul">
+<li><img src='images/dot.png' /><a href='contxt.php?url=V2JSMgE4Cz5WNgYyU2xSc1YzVyIOPAA3DTULMlF2AmZRfwFxDzkFJwckXTpWKAZ1BW5bOFQ6CWxYNQ%3D%3D'>教学管理党总支开展 “不忘初心，牢记使命”主题党日教育活动</a></li><li><img src='images/dot.png' /><a href='contxt.php?url=AjcGZgM6Cz5VNQYyVGgFJFQxAHUGNAA3W2MDOgYhAmZdcwd3VWNXdVZ1UDcAfgV2AGtXNFA%2BVDFfMg%3D%3D'>院学生会开展红色主题日教育活动</a></li><li><img src='images/dot.png' /><a href='contxt.php?url=BzJUNAE4U2ZQMFZhBzIBIAdiAncCMAcwDDQHPgcgBmIALlwsAjQKKFZ1BmEGeAV2B2wHZAVrBWAPYg%3D%3D'>我校体育部赴西安文理学院调研陕西省大学生定向运动比赛</a></li><li><img src='images/dot.png' /><a href='contxt.php?url=V2JXN1VsUGVcPFViUGoJKFg9VCEAMlFmWGBQaQEmBGBdc10tU2UHJQEiBGMEegFyB2wGZQBuBmNfMg%3D%3D'>汽车工程学院党总支积极开展组织活动暨教职工政治理论学习</a></li><li><img src='images/dot.png' /><a href='contxt.php?url=VGFWNlZvVGEBYQcwUWgHJlcyBnMBMwk%2BCzMLMlZxB2NWeFAgUWcKKFBzXDsCfAl6UjlXNFA%2BUTQBbA%3D%3D'>机械学院党总支开展“不忘初心，牢记使命”主题党日教育活动</a></li>        </ul>
+    </div>
+</div>
+
+<div class="part3 w100">
+	<div class="part3 w1280 part3_scoll" style="position:relative; margin:auto;">
+    	<div class="part3-nav w94">服务通道</div>
+        <div class="hd">
+              <a class="next"></a>
+              <a class="prev"></a>
+              <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+              </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="bd w1200" >
+            <ul class="part3_list">
+<li class='con-four'><img src='./GFcms/info/linkimg/2017part3-img2.png' /><a target='_blank' href='http://zs.gfxy.com/'><div class='txt-four'>招生网</div></a></li><li class='con-four'><img src='./GFcms/info/linkimg/2017part3-img3.png' /><a target='_blank' href='http://oa.gfxy.com/'><div class='txt-four'>OA办公</div></a></li><li class='con-four'><img src='./GFcms/info/linkimg/2017part3-img4.png' /><a target='_blank' href='http://jw.gfxy.com/'><div class='txt-four'>教务系统</div></a></li><li class='con-four'><img src='./GFcms/info/linkimg/2017333.jpg' /><a target='_blank' href='http://old.gfxy.com/quanjing/'><div class='txt-four'>网上全景看校</div></a></li><li class='con-four'><img src='./GFcms/info/img/2017timg_.jpg' /><a target='_blank' href='http://dep.gfxy.com/mail/'><div class='txt-four'>领导信箱</div></a></li><li class='con-four'><img src='./GFcms/info/linkimg/2017sadasdfas.jpg' /><a target='_blank' href='http://news.gfxy.com/JieChuJiaoYou/Index.shtml'><div class='txt-four'>校友风采</div></a></li><li class='con-four'><img src='./GFcms/info/linkimg/201723424.jpg' /><a target='_blank' href='http://xyh.gfxy.com/'><div class='txt-four'>校友网</div></a></li><li class='con-four'><img src='./GFcms/info/linkimg/20176666.jpg' /><a target='_blank' href='http://dep.gfxy.com/rencai/'><div class='txt-four'>就业信息网</div></a></li><li class='con-four'><img src='./GFcms/info/linkimg/201801051014220B7A9324222.jpg' /><a target='_blank' href='http://gfzg.gfxy.com/'><div class='txt-four'>国防科技展览馆</div></a></li>            </ul>
+        </div>
+        <script type="text/javascript">$(".con-four").hover(function() {
+			$(this).find(".txt-four").stop().animate({height:"168px",bottom:0},300);
+			
+			}, function() {
+			$(this).find(".txt-four").stop().animate({height:"40px",bottom:0},300);
+			
+		})
+    	</script>
+        <script type="text/javascript">jQuery(".part3_scoll").slide({  mainCell:".part3_list", effect:"left",vis:4,scroll:4,delayTime:800,trigger:"click",easing:"easeOutCirc"});</script>
+    </div>
+    <div class="part3 w1280 part3_scoll2" style="position:relative; margin:auto;">
+         <div class="part3-nav w94">常用链接</div>
+         <div class="hd">
+              <a class="next"></a>
+              <a class="prev"></a>
+              <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+              </ul>
+          </div>
+          <div class="clear"></div>
+          <div class="bd w1200">
+              <ul class="ul part3_list2">
+<li><a target='_blank' href='http://dep.gfxy.com/cwc/323.htm'><img src='./GFcms/info/linkimg/2017222111.jpg' /></a></li><li><a target='_blank' href='http://10.0.1.28/'><img src='./GFcms/info/linkimg/201711010825032222222222222222.jpg' /></a></li><li><a target='_blank' href='http://dzb.gfxy.com/xxgk/index.jhtml'><img src='./GFcms/info/linkimg/2017222.jpg' /></a></li><li><a target='_blank' href='http://wlzx.gfxy.com/'><img src='./GFcms/info/linkimg/2017wangluozhongx.jpg' /></a></li><li><a target='_blank' href='http://dep.gfxy.com/bysjpt/'><img src='./GFcms/info/linkimg/20170908094544222111222.jpg' /></a></li><li><a target='_blank' href='http://zlkz.gfxy.com/zjjz/index.jhtml'><img src='./GFcms/info/linkimg/201711070913251111.jpg' /></a></li>              </ul>
+          </div>
+    </div>
+    <script type="text/javascript">jQuery(".part3_scoll2").slide({  mainCell:".part3_list2", effect:"left",vis:3,scroll:3,delayTime:800,trigger:"click",easing:"easeOutCirc"});</script>
+    <div class="clear"></div>
+</div>
+<div class="clear"></div>
+
+﻿<div class="footer w100">
+ 	<div class="foot w1200" style=" background:url(images/footer-bg.png) left center no-repeat;">
+	   <div class="bs"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/27/000/0000/60213067/CA270000000602130670003.js' type='text/javascript'%3E%3C/script%3E"));</script>
+	   </div>
+    	<div class="footer-left"><ul><li>地址：西安市鄠邑区人民路8号&nbsp; 邮编：710300</li><li>电话：029-81481188（院办）&nbsp; 81481111（招生）</li><li>陕西国防工业职业技术学院　版权所有</li><li>E-MAIL：xcb@gfxy.com</li></ul></div><div class="footer-right"><ul><li><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=61012502000138" style="display:inline-block;text-decoration:none;line-height:20px;"><img src="/ueditor/php/upload/image/20170611/1497147460137495.png" title="1497147460137495.png" alt="gongan.png"/>陕公网安备：61012502000138号</a></li><li>备案号：陕ICP备06002608号</li></ul><div class="erweima"><img src="images/erweima.png" width="20" height="19"/><h5>微信二维码</h5></div><div class="erweima"><img src="images/weibo.png"/><h5>微博二维码</h5></div></div>    </div>
+    <div class="jl w1200">
+﻿总访问量：25203657 今日流量：66093 昨日流量：168642        <script src="https://s11.cnzz.com/z_stat.php?id=1261661524&web_id=1261661524" language="JavaScript"></script>
+        <a href="http://www.xajuli.net" target="_blank">技术支持：西安聚力</a>
+    </div>
+    <div class="clear"></div>
+</div>
+</body>
+</html>
+<div class="clear"></div>
+</body>
+</html>

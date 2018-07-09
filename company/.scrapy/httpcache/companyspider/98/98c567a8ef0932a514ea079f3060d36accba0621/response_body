@@ -1,0 +1,1208 @@
+<html>
+<head>
+<title>聊城市水城中学 >> 首页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="Copyright" content="" />
+<meta name="description" content="聊城水城中学，信息中心，下载中心，图片中心，留言中心，博客日志，校庆专栏，校友录，图书馆" />
+<meta name="keywords" content="聊城水城中学，水城中学，聊城，聊城新闻，课改，德育，学生社团，招生简章，考试，党建，课件，论文，教案，计划，语文，数学，英语，物理，化学，生物，政治，历史，地理，体育，美术，信息技术，网页设计，教学软件，社区服务，综合实践，研究性学习，校园风光，运动会，毕业留影，文娱汇演，新生军训，博客，日志，校庆，校友录，图书馆，FTP"  />
+<style type="text/css">
+<!--
+.style4 {color: #FFFFFF;}
+.STYLE6 {
+	color: #164C7A;
+	font-weight: bold;
+}
+.STYLE7 {color: #960e12}
+.STYLE9 {color: #FFFFFF; font-weight: bold; }
+-->
+</style>
+<link href='/Skin/DefaultSkin.css' rel='stylesheet' type='text/css'> <script language='JavaScript' type='text/JavaScript' src='/js/menu.js'></script>
+
+</head>
+<body leftmargin=0 topmargin=0  onmousemove='HideMenu()'>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- 
+    function ResumeError() {
+    return true;
+}
+window.onerror = ResumeError;
+// -->
+</SCRIPT> <SCRIPT src="/Skin/wxzx/plus.js"></SCRIPT> 
+<div id=menuDiv style="HEIGHT: 1px; WIDTH: 1px; POSITION: absolute; Z-INDEX: 1000; VISIBILITY: hidden; BACKGROUND-COLOR: #9cc5f8">
+</div>
+  <table class=top_tdbgall style="WORD-BREAK: break-all" cellSpacing=0 cellPadding=0 width=960 align=center background=/Skin/wxzx/titlebg02.gif border=0>
+    <tr>
+      <td height=33 width=177>　<IMG border=0 src="/Skin/wxzx/03.gif" width=9 align=absMiddle height=9> <A onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('/');" href="#"><FONT color=#ffffff>设为首页</FONT> </A><IMG border=0 src="/Skin/wxzx/02.gif" width=9 align=absMiddle height=9> <A href="" name=StranLink><FONT color=#ffffff>简体中文</FONT></A> 
+      <script language="javascript" type="text/javascript" src="/js/gb_big5.js"></script></td>
+      <td vAlign=middle width=773 align=right><FONT color=#ffffff><SCRIPT language=JavaScript >
+function RunGLNL(){
+var today=new Date();
+var d=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+var DDDD=(today.getYear()<100 ? today.getYear()+1900:today.getYear())+"年"+(today.getMonth()+1)+"月"+today.getDate()+"日";
+DDDD = DDDD + " " + d[today.getDay()];
+DDDD = DDDD+ " " + (CnDateofDateStr(today));
+//DDDD = DDDD+ " " + SolarTerm(today);
+document.write(DDDD);
+}
+function DaysNumberofDate(DateGL){
+return parseInt((Date.parse(DateGL)-Date.parse(DateGL.getYear()+"/1/1"))/86400000)+1;
+}
+function CnDateofDate(DateGL){
+var CnData=new Array(
+0x16,0x2a,0xda,0x00,0x83,0x49,0xb6,0x05,0x0e,0x64,0xbb,0x00,0x19,0xb2,0x5b,0x00,
+0x87,0x6a,0x57,0x04,0x12,0x75,0x2b,0x00,0x1d,0xb6,0x95,0x00,0x8a,0xad,0x55,0x02,
+0x15,0x55,0xaa,0x00,0x82,0x55,0x6c,0x07,0x0d,0xc9,0x76,0x00,0x17,0x64,0xb7,0x00,
+0x86,0xe4,0xae,0x05,0x11,0xea,0x56,0x00,0x1b,0x6d,0x2a,0x00,0x88,0x5a,0xaa,0x04,
+0x14,0xad,0x55,0x00,0x81,0xaa,0xd5,0x09,0x0b,0x52,0xea,0x00,0x16,0xa9,0x6d,0x00,
+0x84,0xa9,0x5d,0x06,0x0f,0xd4,0xae,0x00,0x1a,0xea,0x4d,0x00,0x87,0xba,0x55,0x04
+);
+var CnMonth=new Array();
+var CnMonthDays=new Array();
+var CnBeginDay;
+var LeapMonth;
+var Bytes=new Array();
+var I;
+var CnMonthData;
+var DaysCount;
+var CnDaysCount;
+var ResultMonth;
+var ResultDay;
+var yyyy=DateGL.getYear();
+var mm=DateGL.getMonth()+1;
+var dd=DateGL.getDate();
+if(yyyy<100) yyyy+=1900;
+  if ((yyyy < 1997) || (yyyy > 2020)){
+    return 0;
+    }
+  Bytes[0] = CnData[(yyyy - 1997) * 4];
+  Bytes[1] = CnData[(yyyy - 1997) * 4 + 1];
+  Bytes[2] = CnData[(yyyy - 1997) * 4 + 2];
+  Bytes[3] = CnData[(yyyy - 1997) * 4 + 3];
+  if ((Bytes[0] & 0x80) != 0) {CnMonth[0] = 12;}
+  else {CnMonth[0] = 11;}
+  CnBeginDay = (Bytes[0] & 0x7f);
+  CnMonthData = Bytes[1];
+  CnMonthData = CnMonthData << 8;
+  CnMonthData = CnMonthData | Bytes[2];
+  LeapMonth = Bytes[3];
+for (I=15;I>=0;I--){
+    CnMonthDays[15 - I] = 29;
+    if (((1 << I) & CnMonthData) != 0 ){
+      CnMonthDays[15 - I]++;}
+    if (CnMonth[15 - I] == LeapMonth ){
+      CnMonth[15 - I + 1] = - LeapMonth;}
+    else{
+      if (CnMonth[15 - I] < 0 ){CnMonth[15 - I + 1] = - CnMonth[15 - I] + 1;}
+      else {CnMonth[15 - I + 1] = CnMonth[15 - I] + 1;}
+      if (CnMonth[15 - I + 1] > 12 ){ CnMonth[15 - I + 1] = 1;}
+    }
+  }
+  DaysCount = DaysNumberofDate(DateGL) - 1;
+  if (DaysCount <= (CnMonthDays[0] - CnBeginDay)){
+    if ((yyyy > 1901) && (CnDateofDate(new Date((yyyy - 1)+"/12/31")) < 0)){
+      ResultMonth = - CnMonth[0];}
+    else {ResultMonth = CnMonth[0];}
+    ResultDay = CnBeginDay + DaysCount;
+  }
+  else{
+    CnDaysCount = CnMonthDays[0] - CnBeginDay;
+    I = 1;
+    while ((CnDaysCount < DaysCount) && (CnDaysCount + CnMonthDays[I] < DaysCount)){
+      CnDaysCount+= CnMonthDays[I];
+      I++;
+    }
+    ResultMonth = CnMonth[I];
+    ResultDay = DaysCount - CnDaysCount;
+  }
+  if (ResultMonth > 0){
+    return ResultMonth * 100 + ResultDay;}
+  else{return ResultMonth * 100 - ResultDay;}
+}
+function CnYearofDate(DateGL){
+var YYYY=DateGL.getYear();
+var MM=DateGL.getMonth()+1;
+var CnMM=parseInt(Math.abs(CnDateofDate(DateGL))/100);
+if(YYYY<100) YYYY+=1900;
+if(CnMM>MM) YYYY--;
+YYYY-=1864;
+return CnEra(YYYY)+"年";
+}
+function CnMonthofDate(DateGL){
+var  CnMonthStr=new Array("零","正","二","三","四","五","六","七","八","九","十","冬","腊");
+var  Month;
+  Month = parseInt(CnDateofDate(DateGL)/100);
+  if (Month < 0){return "闰" + CnMonthStr[-Month] + "月";}
+  else{return CnMonthStr[Month] + "月";}
+}
+function CnDayofDate(DateGL){
+var CnDayStr=new Array("零",
+    "初一", "初二", "初三", "初四", "初五",
+    "初六", "初七", "初八", "初九", "初十",
+    "十一", "十二", "十三", "十四", "十五",
+    "十六", "十七", "十八", "十九", "二十",
+    "廿一", "廿二", "廿三", "廿四", "廿五",
+    "廿六", "廿七", "廿八", "廿九", "三十");
+var Day;
+  Day = (Math.abs(CnDateofDate(DateGL)))%100;
+  return CnDayStr[Day];
+}
+function DaysNumberofMonth(DateGL){
+var MM1=DateGL.getYear();
+    MM1<100 ? MM1+=1900:MM1;
+var MM2=MM1;
+    MM1+="/"+(DateGL.getMonth()+1);
+    MM2+="/"+(DateGL.getMonth()+2);
+    MM1+="/1";
+    MM2+="/1";
+return parseInt((Date.parse(MM2)-Date.parse(MM1))/86400000);
+}
+function CnEra(YYYY){
+var Tiangan=new Array("甲","乙","丙","丁","戊","己","庚","辛","壬","癸");
+//var Dizhi=new Array("子(鼠)","丑(牛)","寅(虎)","卯(兔)","辰(龙)","巳(蛇)",
+                    //"午(马)","未(羊)","申(猴)","酉(鸡)","戌(狗)","亥(猪)");
+var Dizhi=new Array("子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥");
+return Tiangan[YYYY%10]+Dizhi[YYYY%12];
+}
+function CnDateofDateStr(DateGL){
+  if(CnMonthofDate(DateGL)=="零月") return "　请调整您的计算机日期!";
+  else return "农历"+CnYearofDate(DateGL)+ " " + CnMonthofDate(DateGL) + CnDayofDate(DateGL);
+}
+function SolarTerm(DateGL){
+  var SolarTermStr=new Array(
+        "小寒","大寒","立春","雨水","惊蛰","春分",
+        "清明","谷雨","立夏","小满","芒种","夏至",
+        "小暑","大暑","立秋","处暑","白露","秋分",
+        "寒露","霜降","立冬","小雪","大雪","冬至");
+  var DifferenceInMonth=new Array(
+        1272060,1275495,1281180,1289445,1299225,1310355,
+        1321560,1333035,1342770,1350855,1356420,1359045,
+        1358580,1355055,1348695,1340040,1329630,1318455,
+        1306935,1297380,1286865,1277730,1274550,1271556);
+  var DifferenceInYear=31556926;
+  var BeginTime=new Date(1901/1/1);
+  BeginTime.setTime(947120460000);
+     for(;DateGL.getYear()<BeginTime.getYear();){
+        BeginTime.setTime(BeginTime.getTime()-DifferenceInYear*1000);
+     }
+     for(;DateGL.getYear()>BeginTime.getYear();){
+        BeginTime.setTime(BeginTime.getTime()+DifferenceInYear*1000);
+     }
+     for(var M=0;DateGL.getMonth()>BeginTime.getMonth();M++){
+        BeginTime.setTime(BeginTime.getTime()+DifferenceInMonth[M]*1000);
+     }
+     if(DateGL.getDate()>BeginTime.getDate()){
+        BeginTime.setTime(BeginTime.getTime()+DifferenceInMonth[M]*1000);
+        M++;
+     }
+     if(DateGL.getDate()>BeginTime.getDate()){
+        BeginTime.setTime(BeginTime.getTime()+DifferenceInMonth[M]*1000);
+        M==23?M=0:M++;
+     }
+  var JQ;
+  if(DateGL.getDate()==BeginTime.getDate()){
+    JQ="　 今天是<font color='FF9999'><b>"+SolarTermStr[M] + "</b></font>";
+  }
+  else if(DateGL.getDate()==BeginTime.getDate()-1){
+    JQ="　 明天是<font color='FF9999'><b>"+SolarTermStr[M] + "</b></font>";
+  }
+  else if(DateGL.getDate()==BeginTime.getDate()-2){
+    JQ="　 后天是<font color='FF9999'><b>"+SolarTermStr[M] + "</b></font>";
+  }
+  else{
+   JQ=" "
+   if(DateGL.getMonth()==BeginTime.getMonth()){
+      JQ+="　 本月";
+   }
+   else{
+     JQ+="　 下月";
+   }
+   JQ+=BeginTime.getDate()+"日"+"<font color='FF9999'><b>"+SolarTermStr[M]+"</b></font>";
+  }
+return JQ;
+}
+function CAL()
+{}
+RunGLNL();
+function CurentTime(){ 
+    var now = new Date(); 
+    var hh = now.getHours(); 
+    var mm = now.getMinutes(); 
+    var ss = now.getTime() % 60000; 
+    ss = (ss - (ss % 1000)) / 1000; 
+    var clock = hh+':'; 
+    if (mm < 10) clock += '0'; 
+    clock += mm+':'; 
+    if (ss < 10) clock += '0'; 
+    clock += ss; 
+    return(clock); 
+} 
+                                                                                                                                                                                                                                                                                                                                                                                                            </SCRIPT></FONT></td>
+      <td vAlign=middle width=10 align=right></td>
+    </tr>
+  </table>
+  <table class=top_tdbgall style="WORD-BREAK: break-all" borderColor=#f4f4f4 cellSpacing=0 cellPadding=0 width=960 align=center border=5>
+<tr><td height=38 vAlign=top width=950><IMG src="/Skin/wxzx/banner001.jpg"> </td> </tr>
+   <tr>
+  <td height=160 vAlign=top width=950><IMG src="/Skin/wxzx/banner.jpg"> </td>
+    </tr>
+  </table>
+  <table class=Bottom1 style="WORD-BREAK: break-all" height=35 cellSpacing=0 cellPadding=0 width=956 align=center border=0>
+    <tr>
+      <td width=4></td>
+      <td height=35 vAlign=middle background=/Skin/wxzx/dh2.gif width=948 align=left>
+      <!--网站导航分类栏目显示代码-->
+<script language="JavaScript1.2" type="text/JavaScript" src="/JS/stm31.js">
+          </script> 
+<script language="JavaScript1.2" type="text/JavaScript" src="/Article/JS/ShowClass_Menu.js">
+                                                                                                                                                                                                                                                                                                                  </script> </td>
+      <td width=4></td>
+    </tr>
+    <tr>
+      <td height=5></td>
+    </tr>
+  </table>
+  <!-- ********网页顶部代码结束******** -->
+  <!-- ********网页中部代码开始******** -->
+  <table class=tdbg_top_bottom style="WORD-BREAK: break-all" cellSpacing=0 cellPadding=0 width=960 align=center border=0>
+    <tr>
+      <td class=left_tdbgall vAlign=top align=left>
+<script language='javascript' src='/AD/201206/1.js'></script> 
+      <!--中部中间200显示/隐藏层滚动公告、用户登录代码开始-->
+        <table class=tdbg_left_right style="WORD-BREAK: break-all" height=264 cellSpacing=0 cellPadding=0 width="100%" align=center>
+          <tr>
+            <td class=border vAlign=top><SCRIPT language=JavaScript> 
+                      var tID=0;
+                        function ShowTabs(ID){
+                        if(ID!=tID){
+                        TabTitle[tID].className="menu_title1";
+                        TabTitle[ID].className="menu_title3";
+                        Tabs[tID].style.display="none";
+                        Tabs[ID].style.display="";
+                        tID=ID;
+                         }
+                        }
+                    </SCRIPT> 
+              <table style="WORD-BREAK: break-all" height=30 cellSpacing=0 cellPadding=0 width=178 align=center border=0>
+                <tr align=center vAlign=bottom>
+                  <td width=10></td>
+                  <td onmouseover=ShowTabs(0) id=TabTitle class=menu_title3 vAlign=bottom width=78 align=center><A href="/fwgg/index.asp" target=_blank>发文公告</A></td>
+                  <td width=2></td>
+                  <td onmouseover=ShowTabs(1) id=TabTitle class=menu_title1 vAlign=bottom width=78 align=center>用户登录</td>
+                  <td width=10></td>
+                </tr>
+                <tr align=center>
+                  <td bgColor=#78a5dc height=2 width="100%" colSpan=5 align=center></td>
+                </tr>
+              </table>
+              <table style="WORD-BREAK: break-all" height=231 cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+<TBODY id=Tabs>
+                <tr>
+                  <td vAlign=top align=left>
+<MARQUEE onmouseover=this.stop(); onmouseout=this.start(); id=scrollarea direction=up height=196 width=176 scrollAmount=2 scrollDelay=100>
+                  ·&nbsp;<a class="" href="/fwgg/ShowArticle.asp?ArticleID=1501" title="山东省对违规从事普通中小学办学行为责任追究办法" target="_blank">山东省对违规从事普通中小学办学行为责任追究办法</a>&nbsp;(03-11)<br />·&nbsp;<a class="" href="/fwgg/ShowArticle.asp?ArticleID=1244" title="聊城市水城中学作息时间表" target="_blank">聊城市水城中学作息时间表</a>&nbsp;(06-30)<br />·&nbsp;<a class="" href="/fwgg/ShowArticle.asp?ArticleID=1975" title="水城中学有偿补课投诉电话" target="_blank">水城中学有偿补课投诉电话</a>&nbsp;(04-20)<br />·&nbsp;<a class="" href="/fwgg/ShowArticle.asp?ArticleID=1904" title="聊城市中小学教师师德投诉必查内容30条" target="_blank">聊城市中小学教师师德投诉必查内容30条</a>&nbsp;(06-30)<br />·&nbsp;<a class="" href="/fwgg/ShowArticle.asp?ArticleID=1903" title="山东省教育厅关于开展“树师德、正师风”治理教师有偿补课专项活动的通知" target="_blank">山东省教育厅关于开展“树师德、正师风”治理教师有偿补课专项活动的通知</a>&nbsp;(06-30)<br />·&nbsp;<a class="" href="/fwgg/ShowArticle.asp?ArticleID=1902" title="严禁中小学校和在职中小学教师有偿补课的规定" target="_blank">严禁中小学校和在职中小学教师有偿补课的规定</a>&nbsp;(06-30)<br />·&nbsp;<a class="" href="/fwgg/ShowArticle.asp?ArticleID=1901" title="中小学教师违反职业道德行为处理办法" target="_blank">中小学教师违反职业道德行为处理办法</a>&nbsp;(06-30)<br />·&nbsp;<a class="" href="/fwgg/ShowArticle.asp?ArticleID=1900" title="中小学教师职业道德规范" target="_blank">中小学教师职业道德规范</a>&nbsp;(06-30)<br />·&nbsp;<a class="" href="/fwgg/ShowArticle.asp?ArticleID=1502" title="各课程表公示" target="_blank">各课程表公示</a>&nbsp;(03-25)<br />·&nbsp;<a class="" href="/fwgg/ShowArticle.asp?ArticleID=1352" title="山东省规范办学40条" target="_blank">山东省规范办学40条</a>&nbsp;(09-25)<br /></MARQUEE></td>
+                </tr>
+                <tr>
+                  <td height=46 vAlign=bottom align=center><IMG border=0 alt=http://www.lcsczx.cn src="/Skin/wxzx/logo.jpg" width=178 align=absMiddle height=46></td>
+                </tr>
+<TBODY id=Tabs style="DISPLAY: none">
+                <tr>
+                  <td vAlign=top align=left><IFRAME id=UserLogin height=196 src="/UserLogin.asp?ShowType=1" frameBorder=0 width=178 scrolling=no></IFRAME></td>
+                </tr>
+                <tr>
+                  <td height=46 vAlign=bottom align=center><A href="/Reg/User_Reg.asp" target=_blank><IMG border=0 alt=用户注册 src="/Skin/wxzx/Reg.jpg" width=178 align=absMiddle height=46></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td vAlign=top width=432 align=center>
+      <!--中部中间500显示/隐藏层本站最新信息、教师专栏等代码开始-->
+        <table class=tdbg_right style="WORD-BREAK: break-all" height=270 cellSpacing=0 cellPadding=0 width="100%" align=center bgColor=#ffffff>
+          <tr>
+            <td class=border vAlign=top>
+              <table height=270 cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                <tr>
+                  <td class=menu_tdbg height=265 vAlign=top align=left><!-- 焦点图 begin -->
+<SCRIPT type=text/javascript>
+<!--
+ /*============================================*/
+ //配置参数
+ var TimeOut=5000,StartType="onmouseover";var imgUrl=[];var imgSUrl=[];var imgLink=[];var imgtext=[];var adNum=0;
+ /*============================================*/
+
+ //可编辑内容 开始
+
+
+  imgUrl[1]="/Article/UploadFiles/201805/2018052817322763.jpg"
+  imgSUrl[1]="/Article/UploadFiles/201805/2018052817322763.jpg"
+  imgtext[1]='<a href="/Article/jbgz/dyzc/201805/1981.asp" target="_blank">青春路上，与法同行&nbsp;—&nbsp;—水城学子迎来“法治”盛宴</a>'
+  imgLink[1]="/Article/jbgz/dyzc/201805/1981.asp"
+ 
+  imgUrl[2]="/Article/UploadFiles/201805/2018052817131041.jpg"
+  imgSUrl[2]="/Article/UploadFiles/201805/2018052817131041.jpg"
+  imgtext[2]='<a href="/Article/jbgz/dyzc/201805/1980.asp" target="_blank">与书为伴促博学，人人争做百事通&nbsp;-----记水城中学第二届百科知识竞赛</a>'
+  imgLink[2]="/Article/jbgz/dyzc/201805/1980.asp"
+ 
+  imgUrl[3]="/Article/UploadFiles/201805/2018050311271955.jpg"
+  imgSUrl[3]="/Article/UploadFiles/201805/2018050311271955.jpg"
+  imgtext[3]='<a href="/Article/jbgz/dyzc/201805/1979.asp" target="_blank">唇枪舌剑，谁“语”争锋</a>'
+  imgLink[3]="/Article/jbgz/dyzc/201805/1979.asp"
+ 
+  imgUrl[4]="/Article/UploadFiles/201805/2018050309454326.jpg"
+  imgSUrl[4]="/Article/UploadFiles/201805/2018050309454326.jpg"
+  imgtext[4]='<a href="/Article/jbgz/dyzc/201805/1978.asp" target="_blank">“双创”活动|缅怀革命先烈，播扬红色精神&nbsp;—&nbsp;—记水城中学国旗下的演讲</a>'
+  imgLink[4]="/Article/jbgz/dyzc/201805/1978.asp"
+ 
+
+ //可编辑内容 结束
+ /*============================================*/
+
+
+ /*============================================*/
+ //输出
+       function changeimg(i){
+        adNum=i;
+        window.clearInterval(theTimer);
+        adNum=adNum-1;
+        nextAd();
+       }
+       function goUrl(){
+        window.open(imgLink[adNum],"_blank");
+       }
+       var count=0;
+       for(i=1;i<imgUrl.length;i++){
+        if((imgUrl[i]!="")&&(imgLink[i]!="")&&(imgtext[i]!="")){
+         count++;
+        }else{
+         break;
+        }
+       }
+       function playTran(){
+        if(document.all){
+         imgInit.filters.revealTrans.play();
+        }
+       }
+       var key=0;
+       function nextAd(){
+        if(adNum<(imgUrl.length-1)){
+         adNum++;
+        }else{
+         adNum=1;
+        }
+        if(key==0){
+         key=1;
+        }else if(document.all){
+         imgInit.filters.revealTrans.Transition=23;
+         imgInit.filters.revealTrans.apply();
+         playTran();
+        }
+        document.images.imgInit.src=imgUrl[adNum];
+        document.getElementById("FIJ_R_IB_" + adNum).className="id_FIJ_R_ImgBlk_On";
+        for(var i=1;i<=count;i++){
+         if(i!=adNum){
+          document.getElementById("FIJ_R_IB_" + i).className="id_FIJ_R_ImgBlk";
+         }
+        }
+        document.getElementById("FocusText").innerHTML=imgtext[adNum];
+        document.getElementById("imgLink").href=imgLink[adNum];
+        theTimer=setTimeout("nextAd()",TimeOut)
+       }
+       document.write("<div id=\"FocusImg_JS\">");
+       document.write(" <div id=\"FIJ_L\">");
+       document.write("  <span><a id=\"imgLink\" href=\"" + imgLink[1] + "\" target=\"_blank\"><img style=\"FILTER: revealTrans(duration=1,transition=5);\" src=\"javascript:void(0);\" name=\"imgInit\" /></a></span>");
+       document.write("  <div id=\"FocusText\">" + imgtext[1] + "</div><div id=\"FocusTextBG\"></div>");
+       document.write(" </div>");
+       document.write(" <div id=\"FIJ_R\">");
+       for(var i=1;i<imgUrl.length;i++){
+        document.write("  <div id=\"FIJ_R_IB_" + i + "\" class=\"id_FIJ_R_ImgBlk\"><a href=\"" + imgLink[i] + "\" " + StartType + "=\"javascript:changeimg(" + i + ")\" target=\"_blank\"><img src=\"" + imgSUrl[i] + "\" /></a></div>");
+       }
+       document.write(" </div>");
+       document.write(" <div class=\"close_float\"></div>");
+       document.write("</div>");
+       nextAd();
+      //-->
+      </SCRIPT>
+ <noscript>
+ <p>很抱歉，您的浏览器不支持Javascript或您的浏览器禁止运行Javascript，请使用支持Javascript的浏览器浏览本页，获得最佳浏览体验。</p>
+ </noscript>
+ <!-- 焦点图 end -->
+</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      <!--中部中间500显示/隐藏层本站最新信息中心、资源中心等代码结束--></td>
+      <td vAlign=top width=330 align=left>
+        <table class=tdbg_right style="WORD-BREAK: break-all" height=270 cellSpacing=0 cellPadding=0 width="100%" align=center bgColor=#ffffff>
+          <tr>
+            <td class=border vAlign=top><SCRIPT language=JavaScript> 
+                      var aID=0;
+                        function ShowTabs1(ID){
+                        if(ID!=aID){
+                        TabTitle1[aID].className="main_menu_title1";
+                        TabTitle1[ID].className="main_menu_title2";
+                        Tabs1[aID].style.display="none";
+                        Tabs1[ID].style.display="";
+                        aID=ID;
+                         }
+                        }
+                    </SCRIPT> 
+              <table height=30 cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                <tr align=center vAlign=bottom>
+                  <td width=10></td>
+                  <td onmouseover=ShowTabs1(0) id=TabTitle1 class=main_menu_title2 style="CURSOR: hand" vAlign=bottom width=68 align=center>最新信息</td>
+                  <td height=25 width=2></td>
+                  <td onmouseover=ShowTabs1(1) id=TabTitle1 class=main_menu_title1 style="CURSOR: hand" vAlign=bottom width=68 align=center>校内新闻</td>
+                  <td height=25 width=2></td>
+                  <td onmouseover=ShowTabs1(2) id=TabTitle1 class=main_menu_title1 style="CURSOR: hand" vAlign=bottom width=68 align=center>媒体聚焦</td>
+                  <td height=25 width=2></td>
+                  <td onmouseover=ShowTabs1(3) id=TabTitle1 class=main_menu_title1 style="CURSOR: hand" vAlign=bottom width=68 align=center>教务处</td>
+                  <td height=25 width=2></td>
+                </tr>
+                <tr align=center bgColor=#78a5dc>
+                  <td height=2 colSpan=11 align=center></td>
+                </tr>
+              </table>
+              <table height=235 cellSpacing=0 cellPadding=0 width="99%" align=center border=0>
+<TBODY id=Tabs1>
+                <tr>
+                  <td class=menu_tdbg height=235 vAlign=top align=left>
+                  <!--最新|信息显示代码--><div id="dyna_body_109"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0"><tr><td colspan="2"><table><tr><td align="center" class="ttxw_bg_bt"><a href="/Article/jbgz/dyzc/201805/1982.asp" title="同护一面旗，共爱一个家" target="_self">同护一面旗，共爱一个家</a></td></tr><tr><td align="left" class="ttxw_bg_nr">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;同护一面旗，共爱一个家5月28日，周一，天朗气清，惠风和畅。初二年级全体师生齐聚教学楼前，举行了庄严隆重的升国旗仪式。7:30整，国旗班的旗手们着装整齐，迈着矫健的步…</td></tr></table></td></tr>
+<tr><td class="ttxw_bg_m" style="background:url(/Images/article_common.gif) no-repeat left;"><a href="/Article/jbgz/dyzc/201805/1981.asp" title="青春路上，与法同行&nbsp;—&nbsp;—水城学子迎来“法治”盛宴" target="_self">青春路上，与法同行&nbsp;—&nbsp;—水</a></td><td align="right" style="color:#999;" class="ttxw_bg_m">2018年5月28日</td></tr>
+<tr><td class="ttxw_bg_m" style="background:url(/Images/article_common.gif) no-repeat left;"><a href="/Article/jbgz/dyzc/201805/1980.asp" title="与书为伴促博学，人人争做百事通&nbsp;-----记水城中学第二届百科知识竞赛" target="_self">与书为伴促博学，人人争做百</a></td><td align="right" style="color:#999;" class="ttxw_bg_m">2018年5月28日</td></tr>
+函数式标签：{$YN(参数列表)}的参数个数不对。请检查模板中的此标签。
+<tr><td class="ttxw_bg_m" style="background:url(/Images/article_common.gif) no-repeat left;"><a href="/Article/jbgz/dyzc/201805/1978.asp" title="“双创”活动|缅怀革命先烈，播扬红色精神&nbsp;—&nbsp;—记水城中学国旗下的演讲" target="_self">“双创”活动|缅怀革命先烈</a></td><td align="right" style="color:#999;" class="ttxw_bg_m">2018年5月3日</td></tr>
+<tr><td class="ttxw_bg_m" style="background:url(/Images/article_common.gif) no-repeat left;"><a href="/Article/xwzx/201804/1977.asp" title="关于学校法人变更登记的通知" target="_self">关于学校法人变更登记的通知</a></td><td align="right" style="color:#999;" class="ttxw_bg_m">2018年4月28日</td></tr>
+ 
+</table></div><div id="dyna_page_109" style="text-align: right;"><script language="JavaScript" type="text/JavaScript">ShowDynaPage(109,1,20,'/','0|0|6|26|170|0|');</script></div> </td>
+                </tr>
+<TBODY id=Tabs1 style="DISPLAY: none">
+                <tr>
+                  <td class=menu_tdbg height=235 vAlign=top align=left>
+                  <!--校内新闻显示代码-->
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="lbxx"><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class="lbxx">[<a class="" href="/Article/xwzx/Index.asp">校内新闻</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/xwzx/201306/1539.asp" title="中国梦&nbsp;校园情&nbsp;快乐心&nbsp;展板" target="_blank">中国梦&nbsp;校园情&nbsp;快乐心…</a></td><td align="right" class="lbxx" width="40">06-24</td></tr><tr><td width="10" valign="top" class="lbxx2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx2">[<a class="" href="/Article/xwzx/Index.asp">校内新闻</a>]<a class="" href="/Article/xwzx/201804/1977.asp" title="关于学校法人变更登记的通知" target="_blank">关于学校法人变更登记的通知</a></td><td align="right" class="lbxx2" width="40">04-28</td></tr><tr><td width="10" valign="top" class="lbxx"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx">[<a class="" href="/Article/xwzx/Index.asp">校内新闻</a>]<a class="" href="/Article/xwzx/201804/1974.asp" title="聊城市水城中学在职教师有偿补课投诉举报电话" target="_blank">聊城市水城中学在职教师有偿…</a></td><td align="right" class="lbxx" width="40">04-20</td></tr><tr><td width="10" valign="top" class="lbxx2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx2">[<a class="" href="/Article/xwzx/Index.asp">校内新闻</a>]<a class="" href="/Article/xwzx/201803/1973.asp" title="关于调整2018年聊城市教育局直属学校公开招聘工作人员笔试时间的公告" target="_blank">关于调整2018年聊城市教育局…</a></td><td align="right" class="lbxx2" width="40">03-16</td></tr><tr><td width="10" valign="top" class="lbxx"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx">[<a class="" href="/Article/xwzx/Index.asp">校内新闻</a>]<a class="" href="/Article/xwzx/201803/1972.asp" title="2018年聊城市教育局直属学校公开招聘工作人员简章" target="_blank">2018年聊城市教育局直属学校…</a></td><td align="right" class="lbxx" width="40">03-15</td></tr><tr><td width="10" valign="top" class="lbxx2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx2">[<a class="" href="/Article/xwzx/Index.asp">校内新闻</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/xwzx/201801/1970.asp" title="省市级三好学生、优秀学生干部推荐人选公示" target="_blank">省市级三好学生、优秀…</a></td><td align="right" class="lbxx2" width="40">01-05</td></tr><tr><td width="10" valign="top" class="lbxx"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx">[<a class="" href="/Article/xwzx/Index.asp">校内新闻</a>]<a class="" href="/Article/xwzx/201710/1958.asp" title="山东省电化教育馆关于组织2018年度全省教育教学信息化交流展示活动的通知" target="_blank">山东省电化教育馆关于组织2…</a></td><td align="right" class="lbxx" width="40">10-25</td></tr><tr><td width="10" valign="top" class="lbxx2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx2">[<a class="" href="/Article/xwzx/Index.asp">校内新闻</a>]<a class="" href="/Article/xwzx/201710/1946.asp" title="学校青年教师师德征文评选揭晓" target="_blank">学校青年教师师德征文评选揭…</a></td><td align="right" class="lbxx2" width="40">10-10</td></tr><tr><td width="10" valign="top" class="lbxx"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx">[<a class="" href="/Article/xwzx/Index.asp">校内新闻</a>]<a class="" href="/Article/xwzx/201710/1945.asp" title="学校青年教师师德征文评选揭晓" target="_blank">学校青年教师师德征文评选揭…</a></td><td align="right" class="lbxx" width="40">10-10</td></tr><tr><td width="10" valign="top" class="lbxx2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx2">[<a class="" href="/Article/xwzx/Index.asp">校内新闻</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/xwzx/201709/1941.asp" title="聊城市水城中学召开中层干部（正职）谈话会议" target="_blank">聊城市水城中学召开中…</a></td><td align="right" class="lbxx2" width="40">09-25</td></tr><tr></tr></table></td>
+                </tr>
+<TBODY id=Tabs1 style="DISPLAY: none">
+                <tr>
+                  <td class=menu_tdbg height=235 vAlign=top align=left>
+                  <!--媒体聚焦显示代码-->
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="lbxx"><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class="lbxx">[<a class="" href="/Article/zszl/chengjixibao/Index.asp">成绩喜报</a>]<span class="S_headline3">[推荐]</span><a class="" href="/Article/zszl/chengjixibao/201706/1899.asp" title="水城中学2017高考再创新高" target="_blank"><b>水城中学2017高考…</b></a></td><td align="right" class="lbxx" width="40">06-24</td></tr><tr><td width="10" valign="top" class="lbxx2"><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class="lbxx2">[<a class="" href="/Article/wmcc/Index.asp">水城文明风尚专栏</a>]<span class="S_headline3">[推荐]</span><a class="" href="/Article/wmcc/201706/1891.asp" title="水城中学开展“践行社会主义核心价值观”主题宣传活动" target="_blank">水城中学开展“践…</a></td><td align="right" class="lbxx2" width="40">06-22</td></tr><tr><td width="10" valign="top" class="lbxx"><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class="lbxx">[<a class="" href="/Article/zszl/chengjixibao/Index.asp">成绩喜报</a>]<a class="" href="/Article/zszl/chengjixibao/201704/1854.asp" title="【喜报】水城中学艺考再传捷报！" target="_blank">【喜报】水城中学艺考再…</a></td><td align="right" class="lbxx" width="40">04-13</td></tr><tr><td width="10" valign="top" class="lbxx2"><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class="lbxx2">[<a class="" href="/Article/zszl/chengjixibao/Index.asp">成绩喜报</a>]<a class="" href="/Article/zszl/chengjixibao/201704/1826.asp" title="【喜报】水城中学美术校考再创佳绩！" target="_blank">【喜报】水城中学美术校…</a></td><td align="right" class="lbxx2" width="40">04-07</td></tr><tr><td width="10" valign="top" class="lbxx"><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class="lbxx">[<a class="" href="/Article/zszl/chengjixibao/Index.asp">成绩喜报</a>]<a class="" href="/Article/zszl/chengjixibao/201704/1823.asp" title="【喜报】水城中学一名学生获保送资格！全聊城才9名！" target="_blank">【喜报】水城中学一名学…</a></td><td align="right" class="lbxx" width="40">04-07</td></tr><tr><td width="10" valign="top" class="lbxx2"><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class="lbxx2">[<a class="" href="/Article/zszl/chengjixibao/Index.asp">成绩喜报</a>]<a class="" href="/Article/zszl/chengjixibao/201704/1818.asp" title="高中生人生规划四步走" target="_blank">高中生人生规划四步走</a></td><td align="right" class="lbxx2" width="40">04-07</td></tr><tr><td width="10" valign="top" class="lbxx"><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class="lbxx">[<a class="" href="/Article/xwzx/Index.asp">校内新闻</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/xwzx/201306/1539.asp" title="中国梦&nbsp;校园情&nbsp;快乐心&nbsp;展板" target="_blank">中国梦&nbsp;校园情&nbsp;快…</a></td><td align="right" class="lbxx" width="40">06-24</td></tr><tr><td width="10" valign="top" class="lbxx2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx2">[<a class="" href="/Article/jbgz/dyzc/Index.asp">德育之窗</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/jbgz/dyzc/201805/1982.asp" title="同护一面旗，共爱一个家" target="_blank">同护一面旗，共爱…</a></td><td align="right" class="lbxx2" width="40"><font color="red">05-29</font></td></tr><tr><td width="10" valign="top" class="lbxx"><img src="/Article/images/Article_elite.gif" alt="推荐文章"></td><td class="lbxx">[<a class="" href="/Article/jbgz/dyzc/Index.asp">德育之窗</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/jbgz/dyzc/201805/1981.asp" title="青春路上，与法同行&nbsp;—&nbsp;—水城学子迎来“法治”盛宴" target="_blank">青春路上，与法同…</a></td><td align="right" class="lbxx" width="40"><font color="red">05-28</font></td></tr><tr><td width="10" valign="top" class="lbxx2"><img src="/Article/images/Article_elite.gif" alt="推荐文章"></td><td class="lbxx2">[<a class="" href="/Article/jbgz/dyzc/Index.asp">德育之窗</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/jbgz/dyzc/201805/1980.asp" title="与书为伴促博学，人人争做百事通&nbsp;-----记水城中学第二届百科知识竞赛" target="_blank">与书为伴促博学，…</a></td><td align="right" class="lbxx2" width="40"><font color="red">05-28</font></td></tr><tr></tr></table></td>
+                </tr>
+<TBODY id=Tabs1 style="DISPLAY: none">
+                <tr>
+                  <td class=menu_tdbg height=235 vAlign=top align=left>
+                  <!--教务处显示代码-->
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="lbxx"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<span class="S_headline3">[推荐]</span><a class="" href="/Article/djzy/tztg/201709/1935.asp" title="关于评选全市中小学电化教育教学能手的通知" target="_blank">关于评选全市中小学电…</a></td><td align="right" class="lbxx" width="40">09-14</td></tr><tr><td width="10" valign="top" class="lbxx2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx2">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<span class="S_headline3">[推荐]</span><a class="" href="/Article/djzy/tztg/201505/1736.asp" title="“一师一优课”和“一课一名师”活动&nbsp;&nbsp;技术标准" target="_blank">“一师一优课”和“一…</a></td><td align="right" class="lbxx2" width="40">05-27</td></tr><tr><td width="10" valign="top" class="lbxx"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/djzy/tztg/201403/1650.asp" title="2014年聊城市课件评选通知" target="_blank">2014年聊城市课件评选…</a></td><td align="right" class="lbxx" width="40">03-27</td></tr><tr><td width="10" valign="top" class="lbxx2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx2">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<a class="" href="/Article/djzy/tztg/201109/1323.asp" title="聊城市水城中学教室多媒体设备管理制度" target="_blank">聊城市水城中学教室多媒体设…</a></td><td align="right" class="lbxx2" width="40">09-03</td></tr><tr><td width="10" valign="top" class="lbxx"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<a class="" href="/Article/djzy/tztg/201109/1322.asp" title="微机室安全职责" target="_blank">微机室安全职责</a></td><td align="right" class="lbxx" width="40">09-03</td></tr><tr><td width="10" valign="top" class="lbxx2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx2">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<a class="" href="/Article/djzy/tztg/201109/1311.asp" title="聊城市水城中学电教中心安全工作责任书" target="_blank">聊城市水城中学电教中心安全…</a></td><td align="right" class="lbxx2" width="40">09-03</td></tr><tr><td width="10" valign="top" class="lbxx"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<a class="" href="/Article/djzy/tztg/201109/1310.asp" title="微机室消防安全管理制度" target="_blank">微机室消防安全管理制度</a></td><td align="right" class="lbxx" width="40">09-03</td></tr><tr><td width="10" valign="top" class="lbxx2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx2">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<a class="" href="/Article/djzy/tztg/201109/1309.asp" title="聊城市水城中学电子白板教室管理使用制度" target="_blank">聊城市水城中学电子白板教室…</a></td><td align="right" class="lbxx2" width="40">09-03</td></tr><tr><td width="10" valign="top" class="lbxx"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx">[<a class="" href="/Article/djzy/pxzy/Index.asp">培训资源</a>]<a class="" href="/Article/djzy/pxzy/201109/1308.asp" title="中庆中控使用说明书" target="_blank">中庆中控使用说明书</a></td><td align="right" class="lbxx" width="40">09-03</td></tr><tr><td width="10" valign="top" class="lbxx2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="lbxx2">[<a class="" href="/Article/djzy/pxzy/Index.asp">培训资源</a>]<a class="" href="/Article/djzy/pxzy/201109/1307.asp" title="鸿合交互式电子白板功能键使用方法" target="_blank">鸿合交互式电子白板功能键使…</a></td><td align="right" class="lbxx2" width="40">09-03</td></tr><tr></tr></table></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--第一大表格960*250代码结束-->
+  <!--第二大表格960*277信息中心一代码开始-->
+  <table class=center_tdbgall style="WORD-BREAK: break-all" cellSpacing=0 cellPadding=0 width=960 align=center border=0>
+    <tr>
+      <td class=left_tdbgall height=252 vAlign=top width=200 align=left>
+        <table class=tdbg_left_right style="WORD-BREAK: break-all" height=252 cellSpacing=0 cellPadding=0 width="100%" align=center bgColor=#ffffff>
+          <tr>
+            <td class=border vAlign=top align=left>
+              <table cellSpacing=0 cellPadding=0 width="100%" bgColor=#e3e3e3 border=0>
+                <tr>
+                  <td rowSpan=2 width=5><IMG src="/Skin/wxzx/corxqmyz-l.gif" width=5 height=30></td>
+                  <td style="BACKGROUND-REPEAT: no-repeat" height=25 vAlign=baseline background=/Skin/wxzx/bh.gif><IMG hspace=8 vspace=5 src="/Skin/wxzx/dot.gif" width=14 align=absMiddle height=14><SPAN class=style4>校长寄语</SPAN></td>
+                  <td style="BACKGROUND-REPEAT: no-repeat" height=25 background=/Skin/wxzx/2.gif width=50>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td height=5 colSpan=2></td>
+                </tr>
+              </table>
+              <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+                <tr>
+                  </tr>
+                <tr>
+                  <td vAlign=middle width="100%" aling="center"><A href="/Article/ShowArticle.asp?ArticleID=1221"><IMG border=0 src="/Skin/wxzx/xxjj.gif" width=180 height=57></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td vAlign=top width=380 align=left>
+        <table class=tdbg_right style="WORD-BREAK: break-all" height=252 cellSpacing=0 cellPadding=0 width="100%" align=center bgColor=#ffffff>
+          <tr>
+            <td class=border vAlign=top align=left>
+              <table style="BACKGROUND-REPEAT: no-repeat" height=25 cellSpacing=0 cellPadding=0 width="100%" background=/Skin/wxzx/impnewsti.gif border=0>
+                <tr>
+                  <td vAlign=baseline>
+<div align=justify><IMG hspace=8 vspace=5 src="/Skin/wxzx/dot.gif" width=14 align=absMiddle height=14><SPAN class=STYLE6>文明创城动态</SPAN> 
+</div>
+                  </td>
+                  <td vAlign=baseline>
+<div align=right><A href="/Article/ShowClass.asp?ClassID=126" target=_blank><SPAN class=STYLE7>...更多</SPAN></A> 
+</div>
+                  </td>
+                </tr>
+              </table>
+              <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+                <tr>
+                  <td height=230 vAlign=top width="100%" align=left>
+                  <!--活动连连代码显示-->
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class=""><span class="S_headline3">[推荐]</span><a class="" href="/Article/wmcc/201706/1891.asp" title="水城中学开展“践行社会主义核心价值观”主题宣传活动" target="_blank">水城中学开展“践行社会主义核心价值…</a></td><td align="right" class="" width="50">6月22日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/wmcc/201710/1956.asp" title="聊城市中小学生学宪法演讲大赛开赛" target="_blank">聊城市中小学生学宪法演讲大赛开赛</a></td><td align="right" class="" width="50">10月16日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/wmcc/201710/1955.asp" title="东阿退伍小伙勇救落水者" target="_blank">东阿退伍小伙勇救落水者</a></td><td align="right" class="" width="50">10月16日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/wmcc/201710/1954.asp" title="空中看变化精彩新聊城&nbsp;绿色发展篇" target="_blank">空中看变化精彩新聊城&nbsp;绿色发展篇</a></td><td align="right" class="" width="50">10月16日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/wmcc/201710/1953.asp" title="宜居环境提升“幸福指数”" target="_blank">宜居环境提升“幸福指数”</a></td><td align="right" class="" width="50">10月16日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/wmcc/201710/1952.asp" title="净化社会文化环境加强未成年人思想道德建设" target="_blank">净化社会文化环境加强未成年人思想道德建设</a></td><td align="right" class="" width="50">10月16日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/wmcc/201710/1951.asp" title="聊城强化青少年思想品德教育" target="_blank">聊城强化青少年思想品德教育</a></td><td align="right" class="" width="50">10月16日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/wmcc/201710/1950.asp" title="人人参与扮靓水城&nbsp;爱国卫生运动形成全民热潮" target="_blank">人人参与扮靓水城&nbsp;爱国卫生运动形成全民热潮</a></td><td align="right" class="" width="50">10月16日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/wmcc/201710/1949.asp" title="聊城正能量——走近50位道德模范人物" target="_blank">聊城正能量——走近50位道德模范人物</a></td><td align="right" class="" width="50">10月16日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><span class="S_headline1">[图文]</span><a class="" href="/Article/wmcc/201710/1948.asp" title="文明行车和谐有道" target="_blank">文明行车和谐有道</a></td><td align="right" class="" width="50">10月16日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/wmcc/201710/1947.asp" title="聊城开展文明出行专项行动" target="_blank">聊城开展文明出行专项行动</a></td><td align="right" class="" width="50">10月16日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><span class="S_headline4">[注意]</span><a class="" href="/Article/wmcc/201707/1920.asp" title="市创城督导组莅临我校检查指导创城工作" target="_blank">市创城督导组莅临我校检查指导创城工…</a></td><td align="right" class="" width="50">7月14日</td></tr><tr></tr></table></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td vAlign=top width=380 align=left>
+        <table class=tdbg_right style="WORD-BREAK: break-all" height=252 cellSpacing=0 cellPadding=0 width="100%" align=center bgColor=#ffffff>
+          <tr>
+            <td class=border vAlign=top align=left>
+              <table style="BACKGROUND-REPEAT: no-repeat" height=25 cellSpacing=0 cellPadding=0 width="100%" background=/Skin/wxzx/impnewsti.gif border=0>
+                <tr>
+                  <td vAlign=baseline>
+<div align=justify><IMG hspace=8 vspace=5 src="/Skin/wxzx/dot.gif" width=14 align=absMiddle height=14><SPAN class=STYLE6>团学活动</SPAN> 
+</div>
+                  </td>
+                  <td vAlign=baseline>
+<div align=right><A href="/Article/ShowClass.asp?ClassID=27" target=_blank><SPAN class=STYLE7>...更多</SPAN></A> 
+</div>
+                  </td>
+                </tr>
+              </table>
+              <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+                <tr>
+                  <td height=230 vAlign=top width="100%" align=left>
+                  <!--团学活动代码显示-->
+                  <table width='100%' cellpadding='0' cellspacing='5' border='0' align='center'><tr valign='top'><td align='center'><a class="" href="/Article/xstd/qnzy/201511/1765.asp" title="我校举行2015年春季学期高中国家助学金发放签字仪式" target="_blank"><img class='pic1' src='/Article/UploadFiles/201511/2015112416545640.jpg'  width='60' height='60' border='0'></a></td><td valign='top' align='left'><a class="" href="/Article/xstd/qnzy/201511/1765.asp" title="我校举行2015年春季学期高中国家助学金发放签字仪式" target="_blank">我校举行2015年春季学期高中国家…</a><br><div align='left'><a class="" href="/Article/xstd/qnzy/201511/1765.asp" title="我校举行2015年春季学期高中国家助学金发放签字仪式" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11月9日……</a></div></td></tr></table> 
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><span class="S_headline2">[组图]</span><a class="" href="/Article/xstd/hdly/201801/1971.asp" title="水城中学开展“与信仰对话:青年的楷模,学习的榜样”团日活动和《习近平的七年知青岁月》读书学习交流活动" target="_blank">水城中学开展“与信仰对话:青年的楷模…</a></td><td align="right" class="" width="40">01-29</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><span class="S_headline2">[组图]</span><a class="" href="/Article/xstd/hdly/201710/1957.asp" title="水城中学党团员集中收看十九大开幕式直播" target="_blank">水城中学党团员集中收看十九大开幕式…</a></td><td align="right" class="" width="40">10-18</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><span class="S_headline2">[组图]</span><a class="" href="/Article/xstd/hdly/201709/1943.asp" title="我校学生朱萌萌、韩懿梅获市“小小百家讲坛”、“经典诵读”竞赛一等奖" target="_blank">我校学生朱萌萌、韩懿梅获市“小小百…</a></td><td align="right" class="" width="40">09-25</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><span class="S_headline2">[组图]</span><a class="" href="/Article/xstd/hdly/201709/1937.asp" title="我校开展学宪法讲宪法主题板报评比活动" target="_blank">我校开展学宪法讲宪法主题板报评比活…</a></td><td align="right" class="" width="40">09-18</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><span class="S_headline4">[注意]</span><a class="" href="/Article/xstd/hdly/201706/1893.asp" title="学生观看励志电影《摔跤吧，爸爸》" target="_blank">学生观看励志电影《摔跤吧，爸爸》</a></td><td align="right" class="" width="40">06-22</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><span class="S_headline3">[推荐]</span><a class="" href="/Article/xstd/hdly/201706/1890.asp" title="聚焦核心素养&#8226;彰显诗词魅力" target="_blank">聚焦核心素养&#8226;彰显诗词魅力</a></td><td align="right" class="" width="40">06-22</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><span class="S_headline1">[图文]</span><a class="" href="/Article/xstd/zhshsj/201705/1866.asp" title="从水城走进山大·水城中学研学旅行—走进山大活动回顾" target="_blank"><font color="#FF0000"><b>从水城走进山大·水城中学研学旅行—…</b></font></a></td><td align="right" class="" width="40">05-25</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><span class="S_headline1">[图文]</span><a class="" href="/Article/xstd/zhshsj/201705/1865.asp" title="最美的教育在路上，水城中学举行&quot;研学旅行&quot;活动" target="_blank"><font color="#FF0000"><b>最美的教育在路上，水城中学举行&quot;研学…</b></font></a></td><td align="right" class="" width="40">05-25</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><span class="S_headline2">[组图]</span><a class="" href="/Article/xstd/hdly/201605/1794.asp" title="水城中学开展“学团章、举团旗、戴团徽、唱团歌”主题团日活动" target="_blank">水城中学开展“学团章、举团旗、戴团…</a></td><td align="right" class="" width="40">05-12</td></tr><tr></tr></table></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--第二大表格960*277信息中心一代码结束-->
+  <!--第三大表格960*250图片欣赏代码开始-->
+  <table class=tdbg_top_left_right style="WORD-BREAK: break-all" cellSpacing=0 cellPadding=0 width=960 align=center bgColor=#ffffff>
+    <tr>
+      <td class=border height=130 vAlign=middle align=center>
+        <table cellSpacing=0 cellPadding=0 width="100%" bgColor=#e3e3e3 border=0>
+          <tr>
+            <td rowSpan=2 width=5><IMG src="/Skin/wxzx/corxqmyz-l.gif" width=5 height=30></td>
+            <td bgColor=#66bb20 height=25 vAlign=baseline><SPAN class=STYLE9>校园美景</SPAN></td>
+            <td bgColor=#66bb20 height=25 width=50 align=right><A href="/Photo/Index.asp" target=_blank><IMG border=0 hspace=5 alt=更多 src="/Skin/wxzx/icn_more.gif" width=34 align=middle height=11></A></td>
+          </tr>
+          <tr>
+            <td height=5 colSpan=2></td>
+          </tr>
+        </table>
+        <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+          <tr>
+            <td height=130 width=20 align=left><IMG onmouseup=ISL_StopUp() onmousedown=ISL_GoUp() onmouseout=ISL_StopUp() src="/Skin/wxzx/r.gif" width=16></td>
+            <td height=130>
+<div id=ISL_Cont style="OVERFLOW: hidden; WIDTH: 900px">
+            <!--最新图片代码显示-->
+              <table cellPadding=0 align=left border=0 cellspace="0">
+                <tr>
+                  <td id=List1 vAlign=top>
+                  <table width='100%' cellpadding='0' cellspacing='5' border='0' align='center'><tr valign='top'><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=231" title="图片名称：遵规守纪做文明中学生
+作&nbsp;&nbsp;&nbsp;&nbsp;者：团委
+更新时间：2014/3/12 22:25:35" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201403/2014031222311656.jpg'  width='139' height='100' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=231" title="图片名称：遵规守纪做文明中学生
+作&nbsp;&nbsp;&nbsp;&nbsp;者：团委
+更新时间：2014/3/12 22:25:35" target="_blank">遵规守纪做文明中学</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=230" title="图片名称：水城中学2014年元旦晚会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：团委
+更新时间：2014/1/9 15:50:12" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201401/2014010916514027.jpg'  width='139' height='100' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=230" title="图片名称：水城中学2014年元旦晚会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：团委
+更新时间：2014/1/9 15:50:12" target="_blank">水城中学2014年元旦</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=131" title="图片名称：国家助学金发放仪式暨“感恩、励志、责任”主题教育活动
+作&nbsp;&nbsp;&nbsp;&nbsp;者：团委
+更新时间：2013/5/26 10:26:54" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201305/2013052610383070.jpg'  width='139' height='100' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=131" title="图片名称：国家助学金发放仪式暨“感恩、励志、责任”主题教育活动
+作&nbsp;&nbsp;&nbsp;&nbsp;者：团委
+更新时间：2013/5/26 10:26:54" target="_blank">国家助学金发放仪式</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=130" title="图片名称：“勤俭节约，从我做起”宣传栏
+作&nbsp;&nbsp;&nbsp;&nbsp;者：团委
+更新时间：2013/3/25 20:36:42" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201303/2013032520333994.jpg'  width='139' height='100' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=130" title="图片名称：“勤俭节约，从我做起”宣传栏
+作&nbsp;&nbsp;&nbsp;&nbsp;者：团委
+更新时间：2013/3/25 20:36:42" target="_blank">“勤俭节约，从我做</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=129" title="图片名称：“勤俭节约，从我做起”主题签名
+作&nbsp;&nbsp;&nbsp;&nbsp;者：团委
+更新时间：2013/3/25 20:35:25" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201303/2013032520333986.jpg'  width='139' height='100' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=129" title="图片名称：“勤俭节约，从我做起”主题签名
+作&nbsp;&nbsp;&nbsp;&nbsp;者：团委
+更新时间：2013/3/25 20:35:25" target="_blank">“勤俭节约，从我做</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=28" title="图片名称：2005年纪念抗战歌咏比赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/11/25 9:06:19" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201111/2011112509190318.jpg'  width='139' height='100' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=28" title="图片名称：2005年纪念抗战歌咏比赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/11/25 9:06:19" target="_blank">2005年纪念抗战歌咏</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=27" title="图片名称：2005年军训典礼
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/11/25 9:04:42" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201111/2011112509060987.jpg'  width='139' height='100' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=27" title="图片名称：2005年军训典礼
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/11/25 9:04:42" target="_blank">2005年军训典礼</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=26" title="图片名称：2004年教职工篮球比赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/11/25 8:57:14" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201111/2011112508581541.jpg'  width='139' height='100' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=26" title="图片名称：2004年教职工篮球比赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/11/25 8:57:14" target="_blank">2004年教职工篮球比</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=25" title="图片名称：04法制教育百校行
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/11/25 8:53:22" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201111/2011112508564222.jpg'  width='139' height='100' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=25" title="图片名称：04法制教育百校行
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/11/25 8:53:22" target="_blank">04法制教育百校行</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=24" title="图片名称：水城中学揭牌仪式
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/11/24 14:30:25" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201111/2011112508531180.jpg'  width='139' height='100' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=24" title="图片名称：水城中学揭牌仪式
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/11/24 14:30:25" target="_blank">水城中学揭牌仪式</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=23" title="图片名称：2011元旦晚会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/11/16 16:29:35" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201111/2011111616341143.jpg'  width='139' height='100' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=23" title="图片名称：2011元旦晚会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/11/16 16:29:35" target="_blank">2011元旦晚会</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=22" title="图片名称：2008元旦晚会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/11/16 16:21:50" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201111/2011111616230465.jpg'  width='139' height='100' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=22" title="图片名称：2008元旦晚会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/11/16 16:21:50" target="_blank">2008元旦晚会</a></td></tr></table></td>
+                  <td id=list2 vAlign=top></td>
+                </tr>
+              </table>
+</div>
+<script language="javascript" type="text/javascript"> 
+              <!--//--><![CDATA[//>
+              <!-- 
+//图片滚动列表 mengjia 070816 
+var Speed = 40; //速度(毫秒) 
+var Space = 5; //每次移动(px) 
+var PageWidth = 150; //翻页宽度 
+var fill = 5; //整体移位 
+var MoveLock = false; 
+var MoveTimeObj; 
+var Comp = 0; 
+var AutoPlayObj = null; 
+GetObj("List2").innerHTML = GetObj("List1").innerHTML; 
+GetObj('ISL_Cont').scrollLeft = fill; 
+GetObj("ISL_Cont").onmouseover = function(){clearInterval(AutoPlayObj);} 
+GetObj("ISL_Cont").onmouseout = function(){AutoPlay();} 
+AutoPlay(); 
+function GetObj(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}} 
+function AutoPlay(){ //自动滚动 
+ clearInterval(AutoPlayObj); 
+ AutoPlayObj = setInterval('ISL_GoDown();ISL_StopDown();',3000); //间隔时间 
+} 
+function ISL_GoUp(){ //上翻开始 
+ if(MoveLock) return; 
+ clearInterval(AutoPlayObj); 
+ MoveLock = true; 
+ MoveTimeObj = setInterval('ISL_ScrUp();',Speed); 
+} 
+function ISL_StopUp(){ //上翻停止 
+ clearInterval(MoveTimeObj); 
+ if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0){ 
+  Comp = fill - (GetObj('ISL_Cont').scrollLeft % PageWidth); 
+  CompScr(); 
+ }else{ 
+  MoveLock = false; 
+ } 
+ AutoPlay(); 
+} 
+function ISL_ScrUp(){ //上翻动作 
+ if(GetObj('ISL_Cont').scrollLeft <= 0){GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft + GetObj('List1').offsetWidth} 
+ GetObj('ISL_Cont').scrollLeft -= Space ; 
+} 
+function ISL_GoDown(){ //下翻 
+ clearInterval(MoveTimeObj); 
+ if(MoveLock) return; 
+ clearInterval(AutoPlayObj); 
+ MoveLock = true; 
+ ISL_ScrDown(); 
+ MoveTimeObj = setInterval('ISL_ScrDown()',Speed); 
+} 
+function ISL_StopDown(){ //下翻停止 
+ clearInterval(MoveTimeObj); 
+ if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0 ){ 
+  Comp = PageWidth - GetObj('ISL_Cont').scrollLeft % PageWidth + fill; 
+  CompScr(); 
+ }else{ 
+  MoveLock = false; 
+ } 
+ AutoPlay(); 
+} 
+function ISL_ScrDown(){ //下翻动作 
+ if(GetObj('ISL_Cont').scrollLeft >= GetObj('List1').scrollWidth){GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft - GetObj('List1').scrollWidth;} 
+ GetObj('ISL_Cont').scrollLeft += Space ; 
+} 
+function CompScr(){ 
+ var num; 
+ if(Comp == 0){MoveLock = false;return;} 
+ if(Comp < 0){ //上翻 
+  if(Comp < -Space){ 
+   Comp += Space; 
+   num = Space; 
+  }else{ 
+   num = -Comp; 
+   Comp = 0; 
+  } 
+  GetObj('ISL_Cont').scrollLeft -= num; 
+  setTimeout('CompScr()',Speed); 
+ }else{ //下翻 
+  if(Comp > Space){ 
+   Comp -= Space; 
+   num = Space; 
+  }else{ 
+   num = Comp; 
+   Comp = 0; 
+  } 
+  GetObj('ISL_Cont').scrollLeft += num; 
+  setTimeout('CompScr()',Speed); 
+ } 
+} 
+//--><>]> 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </script> </td>
+<div>
+</div>
+            <td height=130 width=20 align=right><IMG onmouseup=ISL_StopDown() onmousedown=ISL_GoDown() onmouseout=ISL_StopDown() src="/Skin/wxzx/l.gif" width=16></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--第三大表格960*250图片欣赏代码结束-->
+  <!--第四大表格960*250资源中心一代码开始-->
+  <table class=center_tdbgall style="WORD-BREAK: break-all" cellSpacing=0 cellPadding=0 width=960 align=center border=0>
+    <tr>
+      <td class=left_tdbgall height=250 vAlign=top width=200 align=left>
+        <table class=tdbg_top_left_right style="WORD-BREAK: break-all" borderColor=#f4f4f4 height=322 cellSpacing=0 cellPadding=0 width="100%" align=center bgColor=#ffffff border=0>
+          <tr>
+            <td class=border vAlign=top><SCRIPT language=JavaScript> 
+                      var tID=0;
+                        function ShowTabs2(ID){
+                        if(ID!=tID){
+                        TabTitle2[tID].className="menu_title1";
+                        TabTitle2[ID].className="menu_title3";
+                        Tabs2[tID].style.display="none";
+                        Tabs2[ID].style.display="";
+                        tID=ID;
+                         }
+                        }
+                    </SCRIPT> 
+              <table style="WORD-BREAK: break-all" height=25 cellSpacing=0 cellPadding=0 width=178 align=center border=0>
+                <tr align=center vAlign=bottom>
+                  <td width=10></td>
+                  <td onmouseover=ShowTabs2(0) id=TabTitle2 class=menu_title1 vAlign=bottom width=78 align=center>登陆次数</td>
+                  <td width=2></td>
+                  <td onmouseover=ShowTabs2(1) id=TabTitle2 class=menu_title3 vAlign=bottom width=78 align=center>发表文章</td>
+                  <td width=10></td>
+                </tr>
+                <tr align=center>
+                  <td bgColor=#78a5dc height=2 width="100%" colSpan=5 align=center></td>
+                </tr>
+              </table>
+              <table style="WORD-BREAK: break-all" cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                <tr>
+                  <td vAlign=top colSpan=2><IMG vspace=2 src="/Skin/wxzx/dot.gif" width=1 height=1></td>
+                </tr>
+              </table>
+              <table style="WORD-BREAK: break-all" cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+<TBODY id=Tabs2 style="DISPLAY: none">
+                <tr>
+                  <td vAlign=top colSpan=2><table cellSpacing=0 cellPadding=0 width="98%" border=0>
+    <tr>
+      <td align=middle>名次</td>
+      <td align=middle>用户名</td>
+      <td align=middle>登陆数</td>
+    </tr>
+ 
+    <tr>
+      <td align=middle>1</td>
+      <td align=middle><A class=LinkTopUser href="/ShowUser.asp?ChannelID=0&UserID=2" target=_blank>电教中心</A></td>
+      <td align=middle>398</td>
+    </tr>
+ 
+    <tr>
+      <td align=middle>2</td>
+      <td align=middle><A class=LinkTopUser href="/ShowUser.asp?ChannelID=0&UserID=3" target=_blank>团委</A></td>
+      <td align=middle>308</td>
+    </tr>
+ 
+    <tr>
+      <td align=middle>3</td>
+      <td align=middle><A class=LinkTopUser href="/ShowUser.asp?ChannelID=0&UserID=5" target=_blank>德育张月敏</A></td>
+      <td align=middle>209</td>
+    </tr>
+ 
+    <tr>
+      <td align=middle>4</td>
+      <td align=middle><A class=LinkTopUser href="/ShowUser.asp?ChannelID=0&UserID=111" target=_blank>作者</A></td>
+      <td align=middle>149</td>
+    </tr>
+ 
+    <tr>
+      <td align=middle>5</td>
+      <td align=middle><A class=LinkTopUser href="/ShowUser.asp?ChannelID=0&UserID=7" target=_blank>教研宁吉耀</A></td>
+      <td align=middle>28</td>
+    </tr>
+ 
+    <tr>
+      <td align=middle>6</td>
+      <td align=middle><A class=LinkTopUser href="/ShowUser.asp?ChannelID=0&UserID=4" target=_blank>德育曹燕肖</A></td>
+      <td align=middle>25</td>
+    </tr>
+ 
+    <tr>
+      <td align=middle>7</td>
+      <td align=middle><A class=LinkTopUser href="/ShowUser.asp?ChannelID=0&UserID=26" target=_blank>shuichengjueqi</A></td>
+      <td align=middle>24</td>
+    </tr>
+ 
+    <tr>
+      <td align=middle>8</td>
+      <td align=middle><A class=LinkTopUser href="/ShowUser.asp?ChannelID=0&UserID=117" target=_blank>zsyx张菽云</A></td>
+      <td align=middle>15</td>
+    </tr>
+ 
+    <tr>
+      <td align=middle>9</td>
+      <td align=middle><A class=LinkTopUser href="/ShowUser.asp?ChannelID=0&UserID=12" target=_blank>办公室</A></td>
+      <td align=middle>12</td>
+    </tr>
+ 
+  </table>
+<div align=right><A class=LinkTopUser href="/UserList.asp?ChannelID=0" target=_blank>more...</A>&nbsp;&nbsp;</div></td>
+                </tr>
+<TBODY id=Tabs2>
+                <tr>
+                  <td vAlign=top colSpan=2><table width='98%' border='0' cellspacing='0' cellpadding='0'><tr><td width="30" align="center">名次</td><td align="center">用户名</td><td align="center">文章数</td></tr><tr><td  width='30' align='center'>1</td><td align='center'><a class='LinkTopUser' href='/ShowUser.asp?ChannelID=0&UserID=3'>团委</a></td><td align='center'>282</td></tr><tr><td  width='30' align='center'>2</td><td align='center'><a class='LinkTopUser' href='/ShowUser.asp?ChannelID=0&UserID=2'>电教中心</a></td><td align='center'>175</td></tr><tr><td  width='30' align='center'>3</td><td align='center'><a class='LinkTopUser' href='/ShowUser.asp?ChannelID=0&UserID=5'>德育张月敏</a></td><td align='center'>123</td></tr><tr><td  width='30' align='center'>4</td><td align='center'><a class='LinkTopUser' href='/ShowUser.asp?ChannelID=0&UserID=111'>作者</a></td><td align='center'>73</td></tr><tr><td  width='30' align='center'>5</td><td align='center'><a class='LinkTopUser' href='/ShowUser.asp?ChannelID=0&UserID=7'>教研宁吉耀</a></td><td align='center'>15</td></tr><tr><td  width='30' align='center'>6</td><td align='center'><a class='LinkTopUser' href='/ShowUser.asp?ChannelID=0&UserID=21'>景玉春</a></td><td align='center'>10</td></tr><tr><td  width='30' align='center'>7</td><td align='center'><a class='LinkTopUser' href='/ShowUser.asp?ChannelID=0&UserID=4'>德育曹燕肖</a></td><td align='center'>9</td></tr><tr><td  width='30' align='center'>8</td><td align='center'><a class='LinkTopUser' href='/ShowUser.asp?ChannelID=0&UserID=110'>宣传办</a></td><td align='center'>2</td></tr><tr><td  width='30' align='center'>9</td><td align='center'><a class='LinkTopUser' href='/ShowUser.asp?ChannelID=0&UserID=8'>教研魏璇</a></td><td align='center'>1</td></tr></table><div align='right'><a class='LinkTopUser' href='/UserList.asp?ChannelID=0'>more...</a>&nbsp;&nbsp;</div></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td height=265 vAlign=top width=380 align=left>
+        <table class=tdbg_top_right style="WORD-BREAK: break-all" height=265 cellSpacing=0 cellPadding=0 width="100%" align=center bgColor=#ffffff>
+          <tr>
+            <td class=border vAlign=top align=left>
+              <table style="BACKGROUND-REPEAT: no-repeat" height=25 cellSpacing=0 cellPadding=0 width="100%" background=/Skin/wxzx/impnewsti.gif border=0>
+                <tr>
+                  <td vAlign=baseline>
+<div align=justify><IMG hspace=8 vspace=5 src="/Skin/wxzx/dot.gif" width=14 align=absMiddle height=14><SPAN class=STYLE6>教育实践活动专栏</SPAN> 
+</div>
+                  </td>
+                  <td vAlign=baseline>
+<div align=right><A href="/Article/ShowClass.asp?ClassID=34" target=_blank><SPAN class=STYLE7>...更多</SPAN></A> 
+</div>
+                  </td>
+                </tr>
+              </table>
+              <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+                <tr>
+                  <td height=240 vAlign=top width="100%" align=left>
+                  <table width='100%' cellpadding='0' cellspacing='5' border='0' align='center'><tr valign='top'><td align='center'><a class="" href="/Article/gkjj/201403/1647.asp" title="聊城市水城中学党的群众路线教育实践活动&nbsp;工作简报&nbsp;第5期" target="_blank"><img class='pic1' src='/Article/UploadFiles/201403/2014032510403848.jpg'  width='60' height='60' border='0'></a></td><td valign='top' align='left'><a class="" href="/Article/gkjj/201403/1647.asp" title="聊城市水城中学党的群众路线教育实践活动&nbsp;工作简报&nbsp;第5期" target="_blank">聊城市水城中学党的群众路线教育…</a><br><div align='left'><a class="" href="/Article/gkjj/201403/1647.asp" title="聊城市水城中学党的群众路线教育实践活动&nbsp;工作简报&nbsp;第5期" target="_blank">中共聊城市水城中学党委党的群众路线教育实践活动领导小组办公室&nbsp;&nbsp;……</a></div></td></tr></table> 
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/gkjj/Index.asp">党建专栏</a>]<span class="S_headline4">[注意]</span><a class="" href="/Article/gkjj/201707/1918.asp" title="文章标题：学习廖俊波同志先进事迹&nbsp;深入开展支部主题党日活动
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2017/7/13 9:05:02" target="_blank">学习廖俊波同志先进事迹&nbsp;深入开…</a></td><td align="right" class="" width="50">7月13日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/gkjj/Index.asp">党建专栏</a>]<a class="" href="/Article/gkjj/201403/1652.asp" title="文章标题：聊城市关于深入开展党的群众路线教育实践活动的实施方案
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2014/3/28 11:44:39" target="_blank">聊城市关于深入开展党的群众路线教育…</a></td><td align="right" class="" width="50">3月28日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/gkjj/Index.asp">党建专栏</a>]<a class="" href="/Article/gkjj/201403/1651.asp" title="文章标题：林峰海在全市党的群众路线教育实践活动动员会议上的讲话
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2014/3/28 11:35:18" target="_blank">林峰海在全市党的群众路线教育实践活…</a></td><td align="right" class="" width="50">3月28日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_elite.gif" alt="推荐文章"></td><td class="">[<a class="" href="/Article/gkjj/Index.asp">党建专栏</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/gkjj/201403/1647.asp" title="文章标题：聊城市水城中学党的群众路线教育实践活动&nbsp;工作简报&nbsp;第5期
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2014/3/25 9:04:21" target="_blank">聊城市水城中学党的群众路线教…</a></td><td align="right" class="" width="50">3月25日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/gkjj/Index.asp">党建专栏</a>]<a class="" href="/Article/gkjj/201403/1646.asp" title="文章标题：聊城市水城中学党的群众路线教育实践活动&nbsp;工作简报&nbsp;&nbsp;第1期
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2014/3/25 8:43:58" target="_blank">聊城市水城中学党的群众路线教育实践…</a></td><td align="right" class="" width="50">3月25日</td></tr><tr></tr></table></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td height=265 vAlign=top width=380 align=left>
+        <table class=tdbg_top_right style="WORD-BREAK: break-all" height=265 cellSpacing=0 cellPadding=0 width="100%" align=center bgColor=#ffffff>
+          <tr>
+            <td class=border vAlign=top align=left>
+              <table style="BACKGROUND-REPEAT: no-repeat" height=25 cellSpacing=0 cellPadding=0 width="100%" background=/Skin/wxzx/impnewsti.gif border=0>
+                <tr>
+                  <td vAlign=baseline>
+<div align=justify><IMG hspace=8 vspace=5 src="/Skin/wxzx/dot.gif" width=14 align=absMiddle height=14><SPAN class=STYLE6>德育督导</SPAN> 
+</div>
+                  </td>
+                  <td vAlign=baseline>
+<div align=right><A href="/Article/ShowClass.asp?ClassID=95" target=_blank><SPAN class=STYLE7>...更多</SPAN></A> 
+</div>
+                  </td>
+                </tr>
+              </table>
+              <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+                <tr>
+                  <td height=240 vAlign=top width="100%" align=left>
+                  <table width='100%' cellpadding='0' cellspacing='5' border='0' align='center'><tr valign='top'><td align='center'><a class="" href="/Article/jbgz/dyzc/201805/1982.asp" title="文章标题：同护一面旗，共爱一个家
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018/5/29 9:05:51" target="_blank"><img class='pic1' src='/Article/UploadFiles/201805/2018052909121573.jpg'  width='60' height='60' border='0'></a></td><td valign='top' align='left'><a class="" href="/Article/jbgz/dyzc/201805/1982.asp" title="文章标题：同护一面旗，共爱一个家
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018/5/29 9:05:51" target="_blank">同护一面旗，共爱一个家</a><br><div align='left'><a class="" href="/Article/jbgz/dyzc/201805/1982.asp" title="文章标题：同护一面旗，共爱一个家
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018/5/29 9:05:51" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……</a></div></td></tr></table> 
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/jbgz/dyzc/Index.asp">德育之窗</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/jbgz/dyzc/201805/1982.asp" title="文章标题：同护一面旗，共爱一个家
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018/5/29 9:05:51" target="_blank">同护一面旗，共爱一个家</a></td><td align="right" class="" width="50"><font color="red">5月29日</font></td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_elite.gif" alt="推荐文章"></td><td class="">[<a class="" href="/Article/jbgz/dyzc/Index.asp">德育之窗</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/jbgz/dyzc/201805/1981.asp" title="文章标题：青春路上，与法同行&nbsp;—&nbsp;—水城学子迎来“法治”盛宴
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018/5/28 17:16:00" target="_blank">青春路上，与法同行&nbsp;—&nbsp;—水城…</a></td><td align="right" class="" width="50"><font color="red">5月28日</font></td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_elite.gif" alt="推荐文章"></td><td class="">[<a class="" href="/Article/jbgz/dyzc/Index.asp">德育之窗</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/jbgz/dyzc/201805/1980.asp" title="文章标题：与书为伴促博学，人人争做百事通&nbsp;-----记水城中学第二届百科知识竞赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018/5/28 16:50:12" target="_blank">与书为伴促博学，人人争做百事…</a></td><td align="right" class="" width="50"><font color="red">5月28日</font></td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_elite.gif" alt="推荐文章"></td><td class="">[<a class="" href="/Article/jbgz/dyzc/Index.asp">德育之窗</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/jbgz/dyzc/201805/1979.asp" title="文章标题：唇枪舌剑，谁“语”争锋
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018/5/3 11:01:36" target="_blank">唇枪舌剑，谁“语”争锋</a></td><td align="right" class="" width="50">5月3日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_elite.gif" alt="推荐文章"></td><td class="">[<a class="" href="/Article/jbgz/dyzc/Index.asp">德育之窗</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/jbgz/dyzc/201805/1978.asp" title="文章标题：“双创”活动|缅怀革命先烈，播扬红色精神&nbsp;—&nbsp;—记水城中学国旗下的演讲
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018/5/3 9:10:53" target="_blank">“双创”活动|缅怀革命先烈，播…</a></td><td align="right" class="" width="50">5月3日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/jbgz/dyzc/Index.asp">德育之窗</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/jbgz/dyzc/201712/1969.asp" title="文章标题：安全牢记心间&nbsp;&nbsp;健康伴我左右
+作&nbsp;&nbsp;&nbsp;&nbsp;者：德育处王继博
+更新时间：2017/12/11 9:01:36" target="_blank">安全牢记心间&nbsp;&nbsp;健康伴我左右</a></td><td align="right" class="" width="50">12月11日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/jbgz/dyzc/Index.asp">德育之窗</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/jbgz/dyzc/201712/1968.asp" title="文章标题：水城中学参与国家宪法日中小学宪法晨读活动
+作&nbsp;&nbsp;&nbsp;&nbsp;者：德育处王继博
+更新时间：2017/12/8 16:09:10" target="_blank">水城中学参与国家宪法日中小学…</a></td><td align="right" class="" width="50">12月8日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/jbgz/dyzc/Index.asp">德育之窗</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/jbgz/dyzc/201711/1960.asp" title="文章标题：水城中学安全与文明系列活动有序开展
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2017/11/15 15:37:08" target="_blank">水城中学安全与文明系列活动有…</a></td><td align="right" class="" width="50">11月15日</td></tr><tr></tr></table></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--第四大表格960*250资源中心一代码结束-->
+  <!--第五大表格960*250信息中心二代码开始-->
+  <table class=center_tdbgall style="WORD-BREAK: break-all" cellSpacing=0 cellPadding=0 width=960 align=center border=0>
+    <tr>
+      <td class=left_tdbgall height=255 vAlign=top width=200 align=left>
+        <table class=tdbg_top_left_right style="WORD-BREAK: break-all" height=255 cellSpacing=0 cellPadding=0 width="100%" align=center bgColor=#ffffff>
+          <tr>
+            <td class=border vAlign=top align=left>
+              <table cellSpacing=0 cellPadding=0 width="100%" bgColor=#e3e3e3 border=0>
+                <tr>
+                  <td rowSpan=2 width=5><IMG src="/Skin/wxzx/corxqmyz-l.gif" width=5 height=30></td>
+                  <td style="BACKGROUND-REPEAT: no-repeat" height=25 vAlign=baseline background=/Skin/wxzx/bh.gif><IMG hspace=8 vspace=5 src="/Skin/wxzx/dot.gif" width=14 align=absMiddle height=14><SPAN class=style4>本站调查</SPAN></td>
+                  <td style="BACKGROUND-REPEAT: no-repeat" height=25 background=/Skin/wxzx/2.gif width=50>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td height=5 colSpan=2></td>
+                </tr>
+              </table>
+              <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+                <tr>
+                  <td height=240 vAlign=middle width="100%" aling="center">&nbsp;没有任何调查<script language='javascript'>
+function CheckNum(num,obj,item){
+ var count;
+ count=0
+ for(var i=0 ;i<document.getElementById(obj).elements.length;i++){
+ if(document.getElementById(obj).elements[i].checked==true){
+ count++;
+ if (count>num&&num!=0){
+  alert('最多只能选择'+num+'个');
+  document.getElementById(item).checked=false;
+  }
+ }
+ }
+ }
+</script>
+</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td vAlign=top width=380 align=left>
+        <table class=tdbg_top_right style="WORD-BREAK: break-all" height=240 cellSpacing=0 cellPadding=0 width="100%" align=center bgColor=#ffffff>
+          <tr>
+            <td class=border vAlign=top align=left>
+              <table style="BACKGROUND-REPEAT: no-repeat" height=25 cellSpacing=0 cellPadding=0 width="100%" background=/Skin/wxzx/impnewsti.gif border=0>
+                <tr>
+                  <td vAlign=baseline>
+<div align=justify><IMG hspace=8 vspace=5 src="/Skin/wxzx/dot.gif" width=14 align=absMiddle height=14><SPAN class=STYLE6>电教资源</SPAN> 
+</div>
+                  </td>
+                  <td vAlign=baseline>
+<div align=right><A href="/Article/ShowClass.asp?ClassID=112" target=_blank><SPAN class=STYLE7>...更多</SPAN></A> 
+</div>
+                  </td>
+                </tr>
+              </table>
+              <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+                <tr>
+                  <td height=240 vAlign=top width="100%" align=left><SPAN class=menu_tdbg>
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<span class="S_headline3">[推荐]</span><a class="" href="/Article/djzy/tztg/201709/1935.asp" title="文章标题：关于评选全市中小学电化教育教学能手的通知
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2017/9/14 8:55:00" target="_blank">关于评选全市中小学电化教育教…</a></td><td align="right" class="" width="50">9月14日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<span class="S_headline3">[推荐]</span><a class="" href="/Article/djzy/tztg/201505/1736.asp" title="文章标题：“一师一优课”和“一课一名师”活动&nbsp;&nbsp;技术标准
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2015/5/27 14:58:57" target="_blank">“一师一优课”和“一课一名师…</a></td><td align="right" class="" width="50">5月27日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<span class="S_headline2">[组图]</span><a class="" href="/Article/djzy/tztg/201403/1650.asp" title="文章标题：2014年聊城市课件评选通知
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2014/3/27 8:21:44" target="_blank">2014年聊城市课件评选通知</a></td><td align="right" class="" width="50">3月27日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<a class="" href="/Article/djzy/tztg/201109/1323.asp" title="文章标题：聊城市水城中学教室多媒体设备管理制度
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/9/3 8:56:23" target="_blank">聊城市水城中学教室多媒体设备管理制…</a></td><td align="right" class="" width="50">9月3日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<a class="" href="/Article/djzy/tztg/201109/1322.asp" title="文章标题：微机室安全职责
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/9/3 8:48:17" target="_blank">微机室安全职责</a></td><td align="right" class="" width="50">9月3日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<a class="" href="/Article/djzy/tztg/201109/1311.asp" title="文章标题：聊城市水城中学电教中心安全工作责任书
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/9/3 8:45:16" target="_blank">聊城市水城中学电教中心安全工作责任…</a></td><td align="right" class="" width="50">9月3日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<a class="" href="/Article/djzy/tztg/201109/1310.asp" title="文章标题：微机室消防安全管理制度
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/9/3 8:43:12" target="_blank">微机室消防安全管理制度</a></td><td align="right" class="" width="50">9月3日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/djzy/tztg/Index.asp">通知通告</a>]<a class="" href="/Article/djzy/tztg/201109/1309.asp" title="文章标题：聊城市水城中学电子白板教室管理使用制度
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/9/3 8:39:01" target="_blank">聊城市水城中学电子白板教室管理使用…</a></td><td align="right" class="" width="50">9月3日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/djzy/pxzy/Index.asp">培训资源</a>]<a class="" href="/Article/djzy/pxzy/201109/1308.asp" title="文章标题：中庆中控使用说明书
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/9/3 8:33:40" target="_blank">中庆中控使用说明书</a></td><td align="right" class="" width="50">9月3日</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="">[<a class="" href="/Article/djzy/pxzy/Index.asp">培训资源</a>]<a class="" href="/Article/djzy/pxzy/201109/1307.asp" title="文章标题：鸿合交互式电子白板功能键使用方法
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011/9/3 8:30:16" target="_blank">鸿合交互式电子白板功能键使用方法</a></td><td align="right" class="" width="50">9月3日</td></tr><tr></tr></table> </SPAN></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td vAlign=top width=380 align=left>
+        <table class=tdbg_top_right style="WORD-BREAK: break-all" height=240 cellSpacing=0 cellPadding=0 width="100%" align=center bgColor=#ffffff>
+          <tr>
+            <td class=border vAlign=top align=left>
+              <table style="BACKGROUND-REPEAT: no-repeat" height=25 cellSpacing=0 cellPadding=0 width="100%" background=/Skin/wxzx/impnewsti.gif border=0>
+                <tr>
+                  <td vAlign=baseline>
+<div align=justify><IMG hspace=8 vspace=5 src="/Skin/wxzx/dot.gif" width=14 align=absMiddle height=14><SPAN class=STYLE6>工作安排</SPAN> 
+</div>
+                  </td>
+                  <td vAlign=baseline>
+<div align=right><A href="/gzap/index.asp" target=_blank><SPAN class=STYLE7>...更多</SPAN></A> 
+</div>
+                  </td>
+                </tr>
+              </table>
+              <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+                <tr>
+                  <td height=240 vAlign=top width="100%" align=left><SPAN class=menu_tdbg>
+                  <li>此频道已经被管理员禁用！</li> </SPAN></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--第五大表格960*250预留栏目二代码结束-->
+  <!--第六大表格960*80大幅AD广告代码开始-->
+  <table class=center_tdbgall style="WORD-BREAK: break-all" cellSpacing=0 cellPadding=0 width=960 align=center border=0>
+    <tr>
+      <td class=left_tdbgall vAlign=top width=200 align=left>
+        <table class=tdbg_top_left_right style="WORD-BREAK: break-all" cellSpacing=0 cellPadding=0 width="100%" align=center bgColor=#ffffff>
+          <tr>
+            <td class=border vAlign=top align=left>
+              <table cellSpacing=0 cellPadding=0 width="100%" bgColor=#e3e3e3 border=0>
+                <tr>
+                  <td rowSpan=2 width=5><IMG src="/Skin/wxzx/corxqmyz-l.gif" width=5 height=30></td>
+                  <td style="BACKGROUND-REPEAT: no-repeat" height=25 vAlign=baseline background=/Skin/wxzx/bh.gif><IMG hspace=8 vspace=5 src="/Skin/wxzx/dot.gif" width=14 align=absMiddle height=14><SPAN class=style4>校内资源</SPAN></td>
+                  <td style="BACKGROUND-REPEAT: no-repeat" height=25 background=/Skin/wxzx/2.gif width=50>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td height=5 colSpan=2></td>
+                </tr>
+              </table>
+              <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+                <tr>
+                  <td height=80 vAlign=top align=left>
+                  <!--第六大表格960*80大幅AD广告代码开始
+                                                                                <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                                                                                        <tr>
+                                                                                                <td width="10%">&nbsp;</td>
+                                                                                                <td width="90%">
+                        <script src='/guestbook/newguest.asp?KindId=0&OnlyTitle=1&num=5&Titlelen=10&Order=0&ShowPic=6&ShowKindName=0&ShowContentLen=0&ShowUserName=0&ShowTime=0'></script> </td>
+                                                                                        </tr>
+                                                                                </table>-->
+                    <table cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+                      <tr>
+                        <td width="39%">
+<div align=center><A href="http://192.168.0.253:7856/" target=_blank>数字题库</A> 
+</div>
+                        </td>
+                        <td width="61%">
+<div align=center><A href="http://192.168.0.253:8088/kcgl3/" target=_blank>选课系统</A> 
+</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+<div align=center><A href="http://192.168.0.253/" target=_blank>教研资料</A> 
+</div>
+                        </td>
+                        <td>
+<div align=center><A href="http://172.15.0.72:8080/oa/login.jsp" target=_blank>网上办公</A> 
+</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+<div align=center><A href="http://172.18.100.6:81/" target=_blank>数字图书</A> 
+</div>
+                        </td>
+                        <td>
+<div align=center><A href="http://172.15.0.136/vod" target=_blank>视频点播</A> 
+</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+<div align=center><A href="http://172.15.0.27/czpd/homepage/xia/index.html" target=_blank>教学资源</A> 
+</div>
+                        </td>
+                        <td>&nbsp;</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td vAlign=top align=left>
+        <table class=tdbg_top_right style="WORD-BREAK: break-all" cellSpacing=0 cellPadding=0 width="100%" align=center bgColor=#ffffff>
+          <tr>
+            <td class=border vAlign=top align=left>
+              <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+                <tr>
+                  <td height=111 vAlign=top colSpan=2 align=center>
+<OBJECT codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" classid=clsid:D27CDB6E-AE6D-11cf-96B8-444553540000 width=735 height=111><PARAM NAME="_cx" VALUE="19447"><PARAM NAME="_cy" VALUE="2937"><PARAM NAME="FlashVars" VALUE=""><PARAM NAME="Movie" VALUE="Images/edu.swf"><PARAM NAME="Src" VALUE="Images/edu.swf"><PARAM NAME="WMode" VALUE="Window"><PARAM NAME="Play" VALUE="-1"><PARAM NAME="Loop" VALUE="-1"><PARAM NAME="Quality" VALUE="High"><PARAM NAME="SAlign" VALUE=""><PARAM NAME="Menu" VALUE="-1"><PARAM NAME="Base" VALUE=""><PARAM NAME="AllowScriptAccess" VALUE=""><PARAM NAME="Scale" VALUE="ShowAll"><PARAM NAME="DeviceFont" VALUE="0"><PARAM NAME="EmbedMovie" VALUE="0"><PARAM NAME="BGColor" VALUE=""><PARAM NAME="SWRemote" VALUE=""><PARAM NAME="MovieData" VALUE=""><PARAM NAME="SeamlessTabbing" VALUE="1"><PARAM NAME="Profile" VALUE="0"><PARAM NAME="ProfileAddress" VALUE=""><PARAM NAME="ProfilePort" VALUE="0"><PARAM NAME="AllowNetworking" VALUE="all"><PARAM NAME="AllowFullScreen" VALUE="false"><PARAM NAME="AllowFullScreenInteractive" VALUE="false"><PARAM NAME="IsDependent" VALUE="0">
+                    <embed src="Images/edu.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="735" height="111"></embed>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </OBJECT></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--第六大表格960*80大幅AD广告代码结束-->
+  <!--第七大表格960*277资源中心二代码开始-->
+  <!--第七大表格960*277下载资源二代码结束-->
+  <table class=tdbg_top_left_right style="WORD-BREAK: break-all" cellSpacing=0 cellPadding=0 width=960 align=center bgColor=#ffffff>
+    <tr>
+      <td class=border height=60 vAlign=middle align=center><table width="100%" cellSpacing="5"><tr align="center" class="tdbg"><td width='88'><a href="/FriendSite/FriendSiteUrl.asp?ID=10" target="_blank" title="网站名称：聊城市教育信息网
+网站地址：http://www.lcedu.cn
+网站简介："><img src='http://www.lcedu.cn/images/logo3.jpg' width='88' height='31' border='0'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td></tr><tr align='center' class='tdbg'><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td></tr></table></td>
+    </tr>
+  </table>
+  <!-- ********网页中部代码结束******** -->
+  <!-- ********网页底部代码开始******** --><table class=bottom_tdbgall style="WORD-BREAK: break-all" borderColor=#f4f4f4 cellSpacing=0 cellPadding=0 width=960 align=center bgColor=#ffffff border=5>
+    <tr>
+      <td class=bottom_copyright width=960 height=60>
+        <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+          <tr>
+            <td align=middle height=20>版权所有：聊城市水城中学 ┋ 网站维护：聊城市水城中学电教中心 ┋ 电话：0635-8387711┋ 联系信箱：<A href="mailto:scxuanchuan007@163.com">scxuanchuan007@163.com</A></td>
+          </tr>
+          <tr>
+            <td align=middle><A href="/copyright.asp">版权申明</A> ┋ <A href="/admin/admin_login.asp">管理登录</A> ┋ 网站备案：<A href="http://www.miibeian.gov.cn/" target=_blank> 鲁备10215651号</A> ┋校址：聊城市卫育路65号 ┋ 邮政编码：252000<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/16/248/0000/41042125/CA162480000410421250002.js' type='text/javascript'%3E%3C/script%3E"));</script></td>
+          </tr>
+          <tr>
+            <td align=middle height=20></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table> 
+  <!-- ********网页底部代码结束******** -->
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/16/248/0000/41042125/CA162480000410421250002.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

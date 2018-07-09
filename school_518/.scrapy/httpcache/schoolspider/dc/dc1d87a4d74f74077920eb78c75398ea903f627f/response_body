@@ -1,0 +1,1900 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>西安市航天中学网站 </title>
+<meta name="keywords" content="航天中学">
+<meta name="description" content="航天中学">
+<link href="/eduweb/templets/style/css.css" rel="stylesheet" type="text/css" />
+<link href="/eduweb/templets/style/link.css" rel="stylesheet" type="text/css" />
+<link href="/eduweb/templets/style/words.css" rel="stylesheet" type="text/css" />
+<script src="/eduweb/Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script language="javascript" src="/eduweb/include/dedeajax2.js"></script>
+<script language="javascript">
+function CheckLogin(){
+  var taget_obj = document.getElementById('_loginform');
+  myajax = new DedeAjax(taget_obj,false,false,"","","");
+  myajax.SendGet2("/eduweb/member/loginsta.php");
+  DedeXHTTP = null;
+}
+function CheckForm(){
+			 //用户名
+			 if (loginform.userid.value==""||loginform.pwd.value=="")
+			{
+				alert("请输入用户名及密码！");
+				loginform.userid.focus();
+				return (false);
+			}
+			 if (loginform.pwd.value=="888888")
+			{
+				alert("请更改密码，否则可能出现安全问题！！");
+			}
+			//附加码
+			/*if (theForm.checknum.value=="")
+			{
+				alert("请输入下面显示的附加码！");
+				theForm.checknum.focus();
+				return (false);
+			}*/
+			return true;
+		}
+		function doSubmitByClickImage(theForm){
+			if(CheckForm()){
+				theForm.submit();
+			}
+		}
+</script>
+</head>
+<body>
+<!-- 头部开始 -->
+	<div class="w985 top">
+    	<img src="/eduweb/templets/style/images/topbanner.jpg" alt="" width="995" height="75" />
+    </div>
+    <div id="navbar" class="w985">
+    	<ul>
+       <li><a href="/">首页</a></li>
+  <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+     <span><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=104">学校概况</a></span>
+           <dl>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=125">学校介绍</a></dd>
+              <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=105">学校领导</a></dd>
+              <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=107">校园文化</a></dd>
+              <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=108">教学设施</a></dd>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=109">组织机构</a></dd>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=127">特色教育</a></dd>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=128">校史沿革</a></dd>			
+           </dl>
+ </li>
+ <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+     <span><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=2">校园资讯</a></span>
+           <dl>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=47">公告栏</a></dd>
+              <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=22">校园新闻</a></dd>
+              <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=51">媒体报道</a></dd>
+              <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=62">航中简报</a></dd>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=145">推荐文章</a></dd>	   	
+           </dl>
+ </li>
+ <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+     <span><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=65">党团工作</a></span>
+           <dl>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=129">党建园地</a></dd>
+              <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=130">工会工作</a></dd>
+              <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=131">团队工作</a></dd>             	
+           </dl>
+ </li>
+ <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+     <span><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=3">教师频道</a></span>
+           <dl>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=55">名师风采</a></dd>
+              <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=95">教学活动</a></dd>
+              <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=24">教学经验</a></dd>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=25">成果展示</a></dd>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=154" target="_blank">青年教师研究会</a></dd>
+           </dl>
+ </li>
+ <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+     <span><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=133">学生频道</a></span>
+           <dl>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=134">学生社团</a></dd>
+              <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=135">优秀学生</a></dd>
+              <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=136">学生荣誉</a></dd>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/home/group.php?gid=4" target="_blank">学生日志</a></dd>	     
+           </dl>
+ </li>
+ <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+     <span><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=149">大学区工作专栏</a></span>
+           <dl>
+	     
+              <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=150" target="_blank">航天中学大学区介绍</a></dd>
+			  <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=151" target="_blank">大学区工作管理</a></dd>   
+			  <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=152" target="_blank">大学区工作成就</a></dd>   
+			  <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=153" target="_blank">大学区活动记录</a></dd>   
+           </dl>
+ </li>
+ <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+     <span><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=6">德育之窗</a></span>
+           <dl>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=38">德育活动</a></dd>
+              <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=64">班主任建设</a></dd>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/home/?46" target="_blank">心灵驿站</a></dd> 
+	      <dd><a href="http://caschtzx.com.cn/eduweb/home/?48" target="_blank">学生会</a></dd>
+           </dl>
+ </li>
+ <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+     <span><a href="#">年级组</a></span>
+           <dl>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/home/?3" target="_blank">七年级</a></dd>
+              <dd><a href="http://caschtzx.com.cn/eduweb/home/?4" target="_blank">八年级</a></dd>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/home/?5" target="_blank">九年级</a></dd> 
+	      <dd><a href="http://caschtzx.com.cn/eduweb/home/?6" target="_blank">高一年级</a></dd>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/home/?7" target="_blank">高二年级</a></dd>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/home/?8" target="_blank">高三年级</a></dd>
+           </dl>
+ </li>
+ <li><a href="http://blog.sina.com.cn/u/2584743263" >校长主页</a></li>
+ <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+     <span><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=7">高考中考招生专栏</a></span>
+           <dl>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=96">高考专栏</a></dd>
+              <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=97">中考专栏</a></dd>
+	      <dd><a href="http://caschtzx.com.cn/eduweb/plus/list.php?tid=98">招生信息</a></dd> 
+	      <dd><a href="http://caschtzx.com.cn/eduweb/home/forum.php?mod=forumdisplay&fid=57" target="_blank">家长考生咨询</a></dd>	    
+           </dl>
+ </li>
+
+ <li><a href="/eduweb/plus/guestbook/index.php">留言薄</a></li>
+ <li><a href="/eduweb/home" target="_blank">航中社区</a></li>
+
+         <!--          
+        
+               <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+                 <span><a href="/eduweb/plus/list.php?tid=104">学校概况</a></span>
+                </li>
+		
+         
+               <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+                 <span><a href="/eduweb/plus/list.php?tid=65">党团工作</a></span>
+                </li>
+		
+         
+               <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+                 <span><a href="/eduweb/plus/list.php?tid=149">大学区工作专栏</a></span>
+                </li>
+		
+         
+               <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+                 <span><a href="/eduweb/plus/list.php?tid=85">社团校刊</a></span>
+                </li>
+		
+         
+               <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+                 <span><a href="/eduweb/plus/list.php?tid=3">教师频道</a></span>
+                </li>
+		
+         
+               <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+                 <span><a href="/eduweb/plus/list.php?tid=5">年级活动</a></span>
+                </li>
+		
+         
+               <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+                 <span><a href="/eduweb/plus/list.php?tid=6">德育之窗</a></span>
+                </li>
+		
+         
+               <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+                 <span><a href="/eduweb/plus/list.php?tid=7">高考中考信息专栏</a></span>
+                </li>
+		
+         
+               <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+                 <span><a href="/eduweb/plus/guestbook/index.php">留言版</a></span>
+                </li>
+		
+         
+               <li class="" onMouseOver="this.className='onShow'"  onmouseout="this.className=''">
+                 <span><a href="/eduweb/plus/list.php?tid=140">博客推荐专区</a></span>
+                </li>
+		
+         
+           -->       
+        </ul>
+    </div>
+<div style="background:#fdfbf0; text-align:center; width:995px; margin:0 auto;">
+
+  <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="985" height="141">
+   	  <param name="movie" value="http://www.caschtzx.com.cn//eduweb/templets/images/index_flash.swf" />
+   	  <param name="quality" value="high" />
+   	  <param name="wmode" value="opaque" />
+   	  <param name="swfversion" value="6.0.65.0" />
+   	  <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+   	  <param name="expressinstall" value="/eduweb/Scripts/expressInstall.swf" />
+   	  <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+   	  <!--[if !IE]>-->
+   	  <object type="application/x-shockwave-flash" data="http://www.caschtzx.com.cn//eduweb/templets/images/index_flash.swf" width="985" height="141">
+   	    <!--<![endif]-->
+   	    <param name="quality" value="high" />
+   	    <param name="wmode" value="opaque" />
+   	    <param name="swfversion" value="6.0.65.0" />
+   	    <param name="expressinstall" value="/eduweb/Scripts/expressInstall.swf" />
+   	    <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+   	    <div>
+   	      <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+   	      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+        </div>
+   	    <!--[if !IE]>-->
+    </object>
+   	  <!--<![endif]-->
+  </object>
+</div>
+<script type="text/javascript">
+<!--
+swfobject.registerObject("FlashID");
+swfobject.registerObject("FlashID");
+//-->
+</script>
+<table width="995" border="0" align="center" cellpadding="0" cellspacing="0" style="display:none;">
+	<tr>
+		<td width="5" bgcolor="#fdfbf0"></td>
+		<td width="985">
+			<table width="985" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td height="131">
+						<OBJECT codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"
+							height="141" width="985" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+							<PARAM NAME="_cx" VALUE="26061">
+							<PARAM NAME="_cy" VALUE="3731">
+							<PARAM NAME="FlashVars" VALUE="">
+							<PARAM NAME="Movie" VALUE="/eduweb/templets/images/index_flash.swf">
+							<PARAM NAME="Src" VALUE="/eduweb/templets/images/index_flash.swf">
+							<PARAM NAME="WMode" VALUE="Window">
+							<PARAM NAME="Play" VALUE="-1">
+							<PARAM NAME="Loop" VALUE="-1">
+							<PARAM NAME="Quality" VALUE="High">
+							<PARAM NAME="SAlign" VALUE="">
+							<PARAM NAME="Menu" VALUE="-1">
+							<PARAM NAME="Base" VALUE="">
+							<PARAM NAME="AllowScriptAccess" VALUE="">
+							<PARAM NAME="Scale" VALUE="ShowAll">
+							<PARAM NAME="DeviceFont" VALUE="0">
+							<PARAM NAME="EmbedMovie" VALUE="0">
+							<PARAM NAME="BGColor" VALUE="">
+							<PARAM NAME="SWRemote" VALUE="">
+							<PARAM NAME="MovieData" VALUE="">
+							<PARAM NAME="SeamlessTabbing" VALUE="1">
+							<PARAM NAME="Profile" VALUE="0">
+							<PARAM NAME="ProfileAddress" VALUE="">
+							<PARAM NAME="ProfilePort" VALUE="0">
+							<PARAM NAME="AllowNetworking" VALUE="all">
+							<PARAM NAME="AllowFullScreen" VALUE="false">
+                                                        <param name="wmode" value="opaque" />
+							<embed src="/eduweb/templets/images/index_flash.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer"
+								type="application/x-shockwave-flash" width="985" height="141"> </embed>
+						</OBJECT>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="5" bgcolor="#fdfbf0"></td>
+	</tr>
+</table>
+
+ 
+ 
+	  </td>
+	<tr>
+ </table>
+		<!-- 头部结束 -->
+		
+		<table cellSpacing="0" cellPadding="0" width="995" align="center" border="0">
+			<tr>
+				<td width="5" bgColor="#fdfbf0"></td>
+				<td width="985" bgColor="#fdfbf0">
+					<table cellSpacing="0" cellPadding="0" width="985" align="center" border="0">
+						<tr>
+							<td background="/eduweb/templets/images/index_M_BG_1.jpg" height="235">
+								<table cellSpacing="8" cellPadding="0" width="100%" align="center" border="0">
+									<tr>
+										<td width="271">
+											<script language='javascript'>
+linkarr = new Array();
+picarr = new Array();
+textarr = new Array();
+var focus_width=271;
+var focus_height=220;
+var text_height=0;
+var pics = "";
+var links = "";
+var texts = "";
+var swf_height = focus_height+text_height;
+var defJpeg = "/eduweb/templets/images/jpg.jpg";
+
+linkarr[1] = "/eduweb/html/xueyuandongtai/xiaoyuankuaixun/201805/16-2699.html";
+picarr[1] = "/eduweb/uploads/litimg/180516/09253G34Y.jpg";
+textarr[1] = "<b>一场科技体育艺术文化的盛宴——</b>";linkarr[2] = "/eduweb/html/xueyuandongtai/xiaoyuankuaixun/201805/04-2696.html";
+picarr[2] = "/eduweb/uploads/litimg/180504/1I94Q3A2.jpg";
+textarr[2] = "<b>雁塔区纪念建团96周年表彰活动在</b>";linkarr[3] = "/eduweb/html/xueyuandongtai/xiaoyuankuaixun/201804/28-2694.html";
+picarr[3] = "/eduweb/uploads/litimg/180428/115Z115154.jpg";
+textarr[3] = "<b>深化对口帮扶，共谋发展提升—西</b>";linkarr[4] = "/eduweb/html/xueyuandongtai/xiaoyuankuaixun/201804/14-2678.html";
+picarr[4] = "/eduweb/uploads/litimg/180414/19142Q1542.jpg";
+textarr[4] = "<b>击鼓扬鞭再奋蹄  砥砺奋进谱新篇</b>";linkarr[5] = "/eduweb/html/xueyuandongtai/xiaoyuankuaixun/201804/11-2677.html";
+picarr[5] = "/eduweb/uploads/litimg/180411/1I3241OZ.jpg";
+textarr[5] = "<b>雁塔区高考英语研讨会在航天中学</b>";linkarr[6] = "/eduweb/html/xueyuandongtai/xiaoyuankuaixun/201804/11-2676.html";
+picarr[6] = "/eduweb/uploads/litimg/180411/1015051T19.jpg";
+textarr[6] = "<b>关注问政,办好人民满意学校</b>";
+
+
+for(i=1;i<picarr.length;i++){
+  if(picarr[i].indexOf("jpg")==-1 && picarr[i].indexOf("JPG")==-1) picarr[i] = defJpeg;
+  if(pics=="") pics = picarr[i];
+  else pics += "|"+picarr[i];
+}
+
+for(i=1;i<linkarr.length;i++){
+  if(links=="") links = linkarr[i];
+  else links += "|"+linkarr[i];
+}
+
+for(i=1;i<textarr.length;i++){
+  if(texts=="") texts = textarr[i];
+  else texts += "|"+textarr[i];
+}
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">');
+document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="/eduweb/templets/images/slide.swf">');
+document.write('<param name="quality" value="high"><param name="bgcolor" value="#ffffff">');
+document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+document.write('<embed src="/eduweb/templets/images/slide.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" bgcolor="#ffffff" quality="high" width="'+ focus_width +'" height="'+ focus_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+document.write('</object>');
+</script>			
+										</td>
+										<td vAlign="top" width="481" background="/eduweb/templets/images/index_M_BG_2.jpg" height="227">
+											<table cellSpacing="0" cellPadding="0" width="95%" align="center" border="0">
+												<tr>
+													<td colSpan="2" height="30"> </td>
+												</tr>
+												<tr>
+													<td width="79%" height="25">  <span class="redorange_11pt"><strong>学校动态</strong></span></td>
+													<td width="21%"><a href='plus/list.php?tid=2' target="_blank"><font color="#ff0000">更多＞＞</font></a></td>
+												</tr>
+												<tr> <!--新闻动态-->
+													<td colSpan="2">
+														<table cellSpacing="0" cellPadding="0" width="96%" align="center" border="0">
+															
+	       <tr style="display:none;">
+																		<td width="78%" height="23"><img src="templets/images/index_M_XWDT_pic.jpg" width="9" height="9" align="absMiddle"> <a href='plus/view.php?aid=2706' target="_blank"><b>西安市航天中学开展“高考考前心理辅导”</b></a></td>
+																		<td width="22%" class="hui">2018-05-23</td>
+																	</tr>
+																	<tr style="display:none;">
+																		<td height="1" colspan="2" background="templets/images/index_M_line_2.jpg"></td>
+																	</tr>
+																
+                <tr>
+																		<td width="78%" height="23"><img src="templets/images/index_M_XWDT_pic.jpg" width="9" height="9" align="absMiddle"> <a href='plus/view.php?aid=2706' target="_blank"><b>西安市航天中学开展“高考考前心理辅导”</b></a></td>
+																		<td width="22%" class="hui">2018-05-23</td>
+																	</tr>
+																	<tr>
+																		<td height="1" colspan="2" background="templets/images/index_M_line_2.jpg"></td>
+																	</tr><tr>
+																		<td width="78%" height="23"><img src="templets/images/index_M_XWDT_pic.jpg" width="9" height="9" align="absMiddle"> <a href='plus/view.php?aid=2705' target="_blank"><b>“全国名校长新教育思想高级研修班”学员莅</b></a></td>
+																		<td width="22%" class="hui">2018-05-22</td>
+																	</tr>
+																	<tr>
+																		<td height="1" colspan="2" background="templets/images/index_M_line_2.jpg"></td>
+																	</tr><tr>
+																		<td width="78%" height="23"><img src="templets/images/index_M_XWDT_pic.jpg" width="9" height="9" align="absMiddle"> <a href='plus/view.php?aid=2704' target="_blank"><b>西安市航天中学大学区初中毕业学业考试理化</b></a></td>
+																		<td width="22%" class="hui">2018-05-18</td>
+																	</tr>
+																	<tr>
+																		<td height="1" colspan="2" background="templets/images/index_M_line_2.jpg"></td>
+																	</tr><tr>
+																		<td width="78%" height="23"><img src="templets/images/index_M_XWDT_pic.jpg" width="9" height="9" align="absMiddle"> <a href='plus/view.php?aid=2703' target="_blank"><b>注重细节落实新举措,家校携手共谱新篇章---</b></a></td>
+																		<td width="22%" class="hui">2018-05-17</td>
+																	</tr>
+																	<tr>
+																		<td height="1" colspan="2" background="templets/images/index_M_line_2.jpg"></td>
+																	</tr><tr>
+																		<td width="78%" height="23"><img src="templets/images/index_M_XWDT_pic.jpg" width="9" height="9" align="absMiddle"> <a href='plus/view.php?aid=2701' target="_blank"><b>加强防震逃生意识,提高安全自救能力—西安</b></a></td>
+																		<td width="22%" class="hui">2018-05-16</td>
+																	</tr>
+																	<tr>
+																		<td height="1" colspan="2" background="templets/images/index_M_line_2.jpg"></td>
+																	</tr><tr>
+																		<td width="78%" height="23"><img src="templets/images/index_M_XWDT_pic.jpg" width="9" height="9" align="absMiddle"> <a href='plus/view.php?aid=2700' target="_blank"><b>七年级召开期中考试表彰大会</b></a></td>
+																		<td width="22%" class="hui">2018-05-16</td>
+																	</tr>
+																	<tr>
+																		<td height="1" colspan="2" background="templets/images/index_M_line_2.jpg"></td>
+																	</tr><tr>
+																		<td width="78%" height="23"><img src="templets/images/index_M_XWDT_pic.jpg" width="9" height="9" align="absMiddle"> <a href='plus/view.php?aid=2699' target="_blank"><b>一场科技体育艺术文化的盛宴——航天中学大</b></a></td>
+																		<td width="22%" class="hui">2018-05-16</td>
+																	</tr>
+																	<tr>
+																		<td height="1" colspan="2" background="templets/images/index_M_line_2.jpg"></td>
+																	</tr>
+																	
+																
+													  </table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td vAlign="top" width="210" bgColor="#fffdee">
+								<table cellSpacing="1" cellPadding="0" width="100%" align="center" border="0">
+									<tr>
+										<td vAlign="top" height="241">
+											<!-- 本站公告 -->
+											<table cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+												<tr>
+													<td><IMG height="45" src="/eduweb/templets/images/index_M_T_bzgg.jpg" width="208"></td>
+												</tr>
+												<tr>
+													<td>
+														<table cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+															<tr>
+																<td width="2" background="/eduweb/templets/images/index_M_bzgg_BG_1.jpg"></td>
+																<td vAlign="top" width="204" background="/eduweb/templets/images/index_M_bzgg_BG_3.jpg" height="189">
+																	<MARQUEE id="scrollarea" onMouseOver="this.stop();" onMouseOut="this.start();" scrollAmount="2"
+																		scrollDelay="150" direction="up" width="204" height="189">
+																		<table cellSpacing="0" cellPadding="0" width="94%" align="center" border="0">
+																			<tr>
+																						<td height="23"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2702' target="_blank"><b>2018年西安市航天中学体育</b></a></td>
+																					</tr>
+																					<tr>
+																						<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																					</tr><tr>
+																						<td height="23"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2592' target="_blank"><b>2018年教师招聘公告</b></a></td>
+																					</tr>
+																					<tr>
+																						<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																					</tr><tr>
+																						<td height="23"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2512' target="_blank"><font color='#FF0000'>2017年航天中学高考工作安</font></a></td>
+																					</tr>
+																					<tr>
+																						<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																					</tr><tr>
+																						<td height="23"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2509' target="_blank">2017年西安市航天中学体育</a></td>
+																					</tr>
+																					<tr>
+																						<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																					</tr><tr>
+																						<td height="23"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2460' target="_blank"><font color='#FF0000'>西安市航天中学组织开展“</font></a></td>
+																					</tr>
+																					<tr>
+																						<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																					</tr><tr>
+																						<td height="23"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2381' target="_blank"><font color='#FF0000'>12月18日航天中学雾霾预警</font></a></td>
+																					</tr>
+																					<tr>
+																						<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																					</tr><tr>
+																						<td height="23"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2322' target="_blank">高效课堂教学研究活动第二</a></td>
+																					</tr>
+																					<tr>
+																						<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																					</tr><tr>
+																						<td height="23"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2238' target="_blank"><b>西安市航天中学学生基本信</b></a></td>
+																					</tr>
+																					<tr>
+																						<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																					</tr><tr>
+																						<td height="23"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2228' target="_blank">告初一新生家长书</a></td>
+																					</tr>
+																					<tr>
+																						<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																					</tr><tr>
+																						<td height="23"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2222' target="_blank">航天中学教师招聘启事</a></td>
+																					</tr>
+																					<tr>
+																						<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																					</tr>	
+																				
+																				
+																			<tr>
+																				<td align="right"><br>
+																					<a href="plus/list.php?tid=47">>>更多</a></td>
+																			</tr>
+																		</table>
+																	</MARQUEE>
+																</td>
+																<td width="2" background="/eduweb/templets/images/index_M_bzgg_BG_2.jpg"></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td><IMG height="7" src="/eduweb/templets/images/index_M_B_bzgg.jpg" width="208"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<table height="2" cellSpacing="0" cellPadding="0" width="985" align="center" border="0">
+						<tr>
+							<td></td>
+							<td width="210" bgColor="#fffdee"></td>
+						</tr>
+					</table>
+					<!--pic start-->
+                                              <table cellSpacing="1" cellPadding="0" width="100%" align="center" border="0">
+						<tr>
+							<td>
+                            <table cellSpacing="0" cellPadding="0" width="100%" align="center" border="0" style="BORDER: #d6d1ab 1px solid">
+															<tr>
+                                                            <td width="80"><IMG height="126" src="/eduweb/templets/images/pic.jpg" width="80"></td>
+																<td>
+																<td>
+																	<DIV id="demo8" style="BACKGROUND: #ffffff; OVERFLOW: hidden; WIDTH: 895px; COLOR: #fff; HEIGHT: 105px">
+																		<table cellSpacing="0" cellPadding="0" align="left" border="0" valign="center">
+																			<tr>
+																				<TD id="demo6" vAlign="top">
+																					<table cellSpacing="0" cellPadding="0" align="left" border="0">
+																						<tr>
+																							
+																									<td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201704/29-2496.html'><img src='/eduweb/uploads/litimg/170429/1A45912928.jpg' border='0' width='120' height='90' alt='清明主题海报设计'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201704/29-2495.html'><img src='/eduweb/uploads/litimg/170429/1A22G20c.jpg' border='0' width='120' height='90' alt='环保主题海报设计'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201704/29-2494.html'><img src='/eduweb/uploads/litimg/170429/1A04GE10.jpg' border='0' width='120' height='90' alt='创意ps图片'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201704/29-2493.html'><img src='/eduweb/uploads/litimg/170429/164631124b.jpg' border='0' width='120' height='90' alt='七年级《word排版设计》优秀作业'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201607/05-2229.html'><img src='/eduweb/uploads/160705/_1I34AU.jpg' border='0' width='120' height='90' alt='两学一做群众宣讲活动报告会'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201606/22-2220.html'><img src='/eduweb/uploads/litimg/160622/1413131LF.jpg' border='0' width='120' height='90' alt='初2016届毕业季'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201511/05-2083.html'><img src='/eduweb/uploads/litimg/151105/11204913011.jpg' border='0' width='120' height='90' alt='新教学楼'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201510/26-2071.html'><img src='/eduweb/uploads/151026/_1T630561.jpg' border='0' width='120' height='90' alt='中国梦 青年志演讲比赛'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201510/23-2070.html'><img src='/eduweb/uploads/litimg/151023/111921130H.jpg' border='0' width='120' height='90' alt='优秀教师表彰'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201510/09-2062.html'><img src='/eduweb/uploads/151009/_133951205.jpg' border='0' width='120' height='90' alt='2015年军训'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td>
+																						</tr>
+																					</table>
+																				</TD>
+																				<TD id="demo7" vAlign="top"></TD>
+																			</tr>
+																		</table>
+																		<SCRIPT>
+var speed=30
+demo7.innerHTML=demo6.innerHTML
+function Marquee(){
+if(demo7.offsetWidth-demo8.scrollLeft<=0)
+demo8.scrollLeft-=
+demo6.offsetWidth
+else{
+demo8.scrollLeft++
+}}
+var MyMar=setInterval(Marquee,speed)
+demo8.onmouseover=function() {clearInterval(MyMar)}
+demo8.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+																		</SCRIPT>
+																	</DIV>
+																</td>
+															</tr>
+														</table>
+                            </td>
+                         </tr>
+                      </table>
+                                              <!--pic end-->
+					<table height="3" cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+						<tr>
+							<td></td>
+						</tr>
+					</table>
+					<table cellSpacing="1" cellPadding="0" width="100%" align="center" border="0">
+						<tr>
+							<td width="201">
+								<!-- 部门子站开始 -->
+								<table cellSpacing="1" cellPadding="0" width="100%" align="center" bgColor="#d6d1ab" border="0">
+									<tr>
+										<td bgColor="#fdfbef">
+											<table cellSpacing="3" cellPadding="0" width="100%" align="center" border="0">
+												<tr>
+													<td>
+														<table cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+															<tr>
+																<td class="white_10pt" width="93" background="/eduweb/templets/images/index_M_top_bg_1.jpg" height="24"><IMG height="20" src="/eduweb/templets/images/index_M_bmzz_pic.jpg" width="20" align="absMiddle"> <strong>主页推荐</strong></td>
+																<td width="21"><IMG height="24" src="/eduweb/templets/images/index_M_top_mid.jpg" width="21"></td>
+																<td background="/eduweb/templets/images/index_M_top_bg_2.jpg"> </td>
+																<td width="7"><IMG height="24" src="/eduweb/templets/images/index_M_top_right.jpg" width="2"></td>
+															</tr>
+														</table>													</td>
+												</tr>
+												<tr>
+												  <td vAlign="top" height="191"><a href='newsList.aspx?columnTag=jsjzl' target="_blank">
+												    <table cellSpacing="0" cellPadding="0" width="94%" align="center" border="0">
+                                                      <tr>
+                                                        <td width="50%" height="24">·<A href="http://blog.sina.com.cn/u/2584743263" target="_blank" title="校长主页">校长博客</td>
+                                                        <td width="50%">·<A href="http://10.0.0.44:8810" target="_blank" title="西安市航天中学电子图书馆">电子图书馆</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td height="24">·<A href="http://caschtzx.com.cn/eduweb/home/?6732"_blank" title="中学生军训空间">军训空间</a></td>
+                                                        <td>·<A href="http://www.caschtzx.com.cn/sub/lipeng/index.htm" target="_blank" title="李鹏老师的网站">李鹏老师</a></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td height="24">·<A href="http://blog.163.com/wpf_1999/" target="_blank"  title="王鹏飞数学教育博客">王鹏飞老师</td>
+                                                       <td height="24">·<A href="http://caschtzx.com.cn/eduweb/home/?46" target="_blank"  title="心灵驿站">心灵驿站</td>
+
+                                                      </tr>
+                                                      <tr>
+                                                        <td height="24">·<A href="http://caschtzx.com.cn/eduweb/home/?47" target="_blank"  title="宇花园地">宇花园地</a></td>
+                                                        <td>·<A href="http://caschtzx.com.cn/eduweb/home/?48" target="_blank"  title="学生会">学生会</a></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td height="24">·<A href="http://caschtzx.com.cn/eduweb/home/?3" target="_blank"  title="七年级">七年级</a></td>
+                                                        <td>·<A href="http://caschtzx.com.cn/eduweb/home/?4" target="_blank"  title="八年级">八年级</a></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td height="24">·<A href="http://caschtzx.com.cn/eduweb/home/?5" target="_blank"  title="九年级">九年级</a></td>
+                                                        <td>·<A href="http://caschtzx.com.cn/eduweb/home/?6" target="_blank"  title="高一年级">高一年级</a></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td height="24">·<A href="http://caschtzx.com.cn/eduweb/home/?7" target="_blank"  title="高二年级">高二年级</a></td>
+                                                        <td>·<A href="http://caschtzx.com.cn/eduweb/home/?8" target="_blank"  title="高三年级">高三年级</a></td>
+                                                      </tr>
+                                                    </table></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- 部门子站结束 --></td>
+							<td width="2"></td>
+							<td width="568">
+								<!-- 学生活动开始 -->
+								<table cellSpacing="1" cellPadding="0" width="100%" align="center" bgColor="#d6d1ab" border="0">
+									<tr>
+										<td bgColor="#fdfbef">
+											<table cellSpacing="3" cellPadding="0" width="100%" align="center" border="0">
+												<tr>
+													<td>
+														<table cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+															<tr>
+																<td width="93" background="/eduweb/templets/images/index_M_top_bg_1.jpg" height="24"><span class="white_10pt"><IMG height="23" src="/eduweb/templets/images/index_M_xshd_pic.jpg" width="27" align="absMiddle"> <strong>聚焦航中</strong></span></td>
+																<td width="21"><IMG height="24" src="/eduweb/templets/images/index_M_top_mid.jpg" width="21"></td>
+																<td align="right" background="/eduweb/templets/images/index_M_top_bg_2.jpg"><a href='newsList.aspx?parentTag=xshd&columnTag=kyj' target="_blank"><IMG height="13" src="/eduweb/templets/images/index_M_xshd_more.jpg" width="28" align="absMiddle" border="0"></a> </td>
+																<td width="2"><IMG height="24" src="/eduweb/templets/images/index_M_top_right.jpg" width="2"></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td height="191">
+														<table height="96%" cellSpacing="0" cellPadding="0" width="563" align="center" border="0">
+															<tr>
+																<td width="278">
+																	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="278" height="200">
+    <param name="movie" value="/eduweb/flash/Flvplayer.swf" />
+    <param name="quality" value="high" />
+    <param name="allowFullScreen" value="true" />
+    <param name="FlashVars" value="vcastr_file=/eduweb/uploads/flash/zuixin.flv&LogoText=www.caschtzx.cn&BufferTime=3" />
+    <embed src="http://www.cnzz.cc/Flv/Flvplayer.swf" allowfullscreen="true" flashvars="vcastr_file=/eduweb/uploads/flash/zuixin.flv&LogoText=www.caschtzx.cn" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="278" height="200"></embed>
+  </object>																</td>
+																<td width="1" bgColor="#d6d1ab"></td>
+																<td width="279">
+																	<table cellSpacing="0" cellPadding="0" width="96%" align="center">
+																		<tr>																			
+																			<td vAlign="top" width="100%">
+																				<table cellSpacing="0" cellPadding="0" width="98%" align="center" border="0">
+																					<tr>
+																						<td height="23"><IMG height="7" src="/eduweb/templets/images/index_M_xshd_pic_6.jpg" width="9"> <a href='http://caschtzx.com.cn/eduweb/home/?400675' target="_blank"><span class="orange_red">视频点播</span></a></td>
+																					</tr>
+																					<tr> <!--阳光体育-->
+																						<td>
+																							<a href='http://caschtzx.com.cn/eduweb/home/?400675' target="_blank"><img src="http://caschtzx.com.cn/eduweb/home/data/attachment/album/201207/16/1950292u21ktuqoeu3u1ct.jpg" width="278" height="175"></a>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																		
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- 学生活动结束 --></td>
+							<td width="2"></td>
+							<td width="206">
+								<!-- 图片链接开始 -->
+								<table cellSpacing="1" cellPadding="0" width="100%" align="center" bgColor="#d6d1ab" border="0">
+									<tr>
+										<td bgColor="#fdfbef" height="223">
+											<table cellSpacing="5" cellPadding="0" align="center" border="0">
+												<tr>
+													<td height="37"><a href="/eduoa" target="_blank"><IMG height="37" src="/eduweb/templets/images/index_piclink_1.jpg" width="185" border="0"></a></td> <!--简介-->
+												</tr>
+												<tr>
+													<td height="37"><a href="http://10.0.0.15:7777/sms/" target="_blank"><IMG height="37" src="/eduweb/templets/images/index_piclink_4_1.jpg" width="185" border="0"></a></td> 
+													<!--邮局-->
+												</tr>
+												<tr>
+													<td height="37"><a href="http://10.0.0.44:8810" target="_blank"><IMG height="37" src="/eduweb/templets/images/index_piclink_3.jpg" width="185" border="0"></a></td> <!--数字图书馆-->
+												</tr>
+												<tr>
+													<td height="37"><a href="http://10.0.0.66/mod" target="_blank"><IMG height="37" src="/eduweb/templets/images/index_piclink_4.jpg" width="185" border="0"></a></td> <!--骄子-->
+												</tr>
+												<tr>
+											<td height="37"><a href="http://caschtzx.com.cn/eduweb/home/home.php" target="_blank"><IMG height="37" src="/eduweb/templets/images/index_piclink_5.jpg" width="185" border="0"></a></td> <!--校长信箱-->	</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- 图片链接结束 --></td>
+						</tr>
+					</table>
+					<table height="2" cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+						<tr>
+							<td></td>
+						</tr>
+					</table>
+					<table cellSpacing="1" cellPadding="0" width="100%" align="center" border="0">
+						<tr>
+							<td align="right" width="773" background="/eduweb/templets/images/index_M_xyfg_bg.jpg">
+								<!-- 校园风景开始 -->
+								<table cellSpacing="0" cellPadding="0" width="91%" align="right" border="0">
+									<tr>
+										<td width="96%">
+											<DIV id="demo" style="BACKGROUND: #ffffff; OVERFLOW: hidden; WIDTH: 665px; COLOR: #ffffff; HEIGHT: 75px">
+												<table cellSpacing="0" cellPadding="0" align="left" border="0">
+													<tr>
+														<TD id="demo1" vAlign="top">
+															<table cellSpacing="0" cellPadding="0" align="left" border="0">
+																<tr>
+																	<td width="120">
+																				<table style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px" cellSpacing="1" cellPadding="0" width="100"
+																					align="center" bgColor="#e5e5e5" border="0">
+																					<tr>
+																						<td bgColor="#ffffff">
+																							<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																								border="1">
+																								<tr>
+																									<td><a href='/eduweb/html/xuekejiaoyu/xiaoyuanfengguang/200904/19-244.html'><img src='/eduweb/uploads/090419/_140S3R6.jpg' border='0' width='90' height='60' alt='实验室三维全景'></a></td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td></td><td width="120">
+																				<table style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px" cellSpacing="1" cellPadding="0" width="100"
+																					align="center" bgColor="#e5e5e5" border="0">
+																					<tr>
+																						<td bgColor="#ffffff">
+																							<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																								border="1">
+																								<tr>
+																									<td><a href='/eduweb/plus/view.php?aid=243'><img src='/eduweb/uploads/090419/_135935430.jpg' border='0' width='90' height='60' alt='图书馆三维全景'></a></td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td></td><td width="120">
+																				<table style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px" cellSpacing="1" cellPadding="0" width="100"
+																					align="center" bgColor="#e5e5e5" border="0">
+																					<tr>
+																						<td bgColor="#ffffff">
+																							<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																								border="1">
+																								<tr>
+																									<td><a href='/eduweb/plus/view.php?aid=242'><img src='/eduweb/uploads/090419/_135446413.jpg' border='0' width='90' height='60' alt='学生机房三维全景'></a></td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td></td><td width="120">
+																				<table style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px" cellSpacing="1" cellPadding="0" width="100"
+																					align="center" bgColor="#e5e5e5" border="0">
+																					<tr>
+																						<td bgColor="#ffffff">
+																							<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																								border="1">
+																								<tr>
+																									<td><a href='/eduweb/plus/view.php?aid=50'><img src='/eduweb/uploads/litimg/081130/145JG63Z.jpg' border='0' width='90' height='60' alt='教学楼前三维全景'></a></td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td></td><td width="120">
+																				<table style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px" cellSpacing="1" cellPadding="0" width="100"
+																					align="center" bgColor="#e5e5e5" border="0">
+																					<tr>
+																						<td bgColor="#ffffff">
+																							<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																								border="1">
+																								<tr>
+																									<td><a href='/eduweb/plus/view.php?aid=49'><img src='/eduweb/uploads/litimg/081130/14560515L2.jpg' border='0' width='90' height='60' alt='学校操场三维全景'></a></td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td></td><td width="120">
+																				<table style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px" cellSpacing="1" cellPadding="0" width="100"
+																					align="center" bgColor="#e5e5e5" border="0">
+																					<tr>
+																						<td bgColor="#ffffff">
+																							<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																								border="1">
+																								<tr>
+																									<td><a href='/eduweb/plus/view.php?aid=48'><img src='/eduweb/uploads/090419/090419/_10492T95.jpg' border='0' width='90' height='60' alt='网管中心三维全景'></a></td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td></td><td width="120">
+																				<table style="MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px" cellSpacing="1" cellPadding="0" width="100"
+																					align="center" bgColor="#e5e5e5" border="0">
+																					<tr>
+																						<td bgColor="#ffffff">
+																							<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																								border="1">
+																								<tr>
+																									<td><a href='/eduweb/plus/view.php?aid=47'><img src='/eduweb/uploads/090419/_102310453.jpg' border='0' width='90' height='60' alt='阅览室三维全景'></a></td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																			<td></td>	
+																</tr>
+															</table>
+														</TD>
+														<TD id="demo2" vAlign="top"></TD>
+													</tr>
+												</table>
+												<SCRIPT>
+var speed=30
+demo2.innerHTML=demo1.innerHTML
+function Marquee(){
+if(demo2.offsetWidth-demo.scrollLeft<=0)
+demo.scrollLeft-=
+demo1.offsetWidth
+else{
+demo.scrollLeft++
+}}
+var MyMar=setInterval(Marquee,speed)
+demo.onmouseover=function() {clearInterval(MyMar)}
+demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+												</SCRIPT>
+											</DIV>
+										</td>
+										<td width="4%"> </td>
+									</tr>
+								</table>
+								<!-- 校园风景结束 --></td>
+							<td width="2"></td>
+							<td width="206">
+								<!-- 图片链接开始 -->
+								<table cellSpacing="1" cellPadding="0" width="100%" align="center" bgColor="#d6d1ab" border="0">
+									<tr>
+										<td align="center" bgColor="#fdfbef" height="98"><IMG height="90" src="/eduweb/templets/images/index_piclink_6.jpg" width="189" useMap="#Map" border="0"></td>
+									</tr>
+								</table>
+								<!-- 图片链接结束 --></td>
+						</tr>
+					</table>
+					<table height="2" cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+						<tr>
+							<td></td>
+						</tr>
+					</table>
+					<table cellSpacing="1" cellPadding="0" width="100%" align="center" border="0">
+						<tr>
+							<td width="201">
+								<!-- 领导风采开始 -->
+								<table cellSpacing="1" cellPadding="0" width="100%" align="center" bgColor="#d6d1ab" border="0">
+									<tr>
+										<td bgColor="#fdfbef">
+											<table cellSpacing="3" cellPadding="0" width="100%" align="center" border="0">
+												<tr>
+													<td>
+														<table cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+															<tr>
+																<td width="95" background="/eduweb/templets/images/index_M_top_bg_1.jpg" height="24"><span class="white_10pt"><IMG height="23" src="/eduweb/templets/images/index_M_ldfc_pic.jpg" width="27" align="absMiddle"> <strong>校长寄语</strong></span></td>
+																<td width="21"><IMG height="24" src="/eduweb/templets/images/index_M_top_mid.jpg" width="21"></td>
+																<td background="/eduweb/templets/images/index_M_top_bg_2.jpg"> </td>
+																<td width="2"><IMG height="24" src="/eduweb/templets/images/index_M_top_right.jpg" width="2"></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td vAlign="bottom" align="center" height="191">
+														<table cellSpacing="0" cellPadding="0" width="90%" align="center" border="0">
+															
+																	<tr>
+																		<td align="center">
+																			<table height="160" cellSpacing="6" cellPadding="0" width="155" bgColor="#e9e9e7">
+																				<tr>
+																					<td bgColor="#fdfbef"><a href='http://caschtzx.com.cn/eduweb/home/?55'><IMG src='templets/images/man.jpg' width="140" height="200" border="0"></td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td align="center" height="10">徐世锋</td>
+																	</tr>
+																
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- 领导风采结束 --></td>
+							<td width="2"></td>
+							<td width="568">
+								<table cellSpacing="1" cellPadding="0" width="100%" align="center" bgColor="#d6d1ab" border="0">
+									<tr>
+										<td width="50%" height="280" valign="top" bgColor="#fdfbef">
+											<!-- 学生会开始 -->
+											<table width="100%" border="0" align="center" cellpadding="0" cellspacing="3">
+												<tr>
+													<td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+															<tr>
+																<td width="95" height="24" background="/eduweb/templets/images/index_M_top_bg_1.jpg"><span class="white_10pt"><img src="/eduweb/templets/images/index_M_xsh_pic.jpg" width="27" height="23" align="absMiddle"> <strong>名师风采</strong></span></td>
+																<td width="21"><img src="/eduweb/templets/images/index_M_top_mid.jpg" width="21" height="24"></td>
+																<td background="/eduweb/templets/images/index_M_top_bg_2.jpg" align="right" class="hui_col_1"><A class="hui_col_1" href="plus/list.php?tid=55" target="_blank"><img src="/eduweb/templets/images/index_M_xshd_more.jpg" width="28" height="13" align="absMiddle" border="0"></a></td>
+																<td width="2"><img src="/eduweb/templets/images/index_M_top_right.jpg" width="2" height="24"></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td height="205" valign="top">
+		
+            <ul class="iconList">
+              
+               <li><a href='plus/view.php?aid=2118' target="_blank">徐世锋</a></li><li><a href='plus/view.php?aid=2117' target="_blank">卢京华</a></li><li><a href='plus/view.php?aid=2116' target="_blank">王鹏飞</a></li><li><a href='plus/view.php?aid=2115' target="_blank">闫英杰</a></li><li><a href='plus/view.php?aid=2114' target="_blank">李惠芳</a></li><li><a href='plus/view.php?aid=2113' target="_blank">李鹏</a></li><li><a href='plus/view.php?aid=1434' target="_blank">张雪芹</a></li>
+               <li><a href='plus/view.php?aid=2127' target="_blank">徐艳</a></li><li><a href='plus/view.php?aid=2126' target="_blank">惠言</a></li><li><a href='plus/view.php?aid=2125' target="_blank">刘丽娟</a></li><li><a href='plus/view.php?aid=2124' target="_blank">黄崇发</a></li><li><a href='plus/view.php?aid=2123' target="_blank">付小静</a></li><li><a href='plus/view.php?aid=1965' target="_blank">陈静 </a></li><li><a href='plus/view.php?aid=1438' target="_blank">张文莉</a></li><li><a href='plus/view.php?aid=1437' target="_blank">贾红云</a></li><li><a href='plus/view.php?aid=1436' target="_blank">王延丽</a></li><li><a href='plus/view.php?aid=1435' target="_blank">文永振</a></li><li><a href='plus/view.php?aid=1433' target="_blank">许裳</a></li><li><a href='plus/view.php?aid=1432' target="_blank">徐军</a></li><li><a href='plus/view.php?aid=1431' target="_blank">刘云飞</a></li><li><a href='plus/view.php?aid=909' target="_blank">张茜</a></li><li><a href='plus/view.php?aid=908' target="_blank">杨丽</a></li><li><a href='plus/view.php?aid=906' target="_blank">刘琳</a></li><li><a href='plus/view.php?aid=905' target="_blank">田晓丽</a></li><li><a href='plus/view.php?aid=903' target="_blank">刘莉</a></li><li><a href='plus/view.php?aid=902' target="_blank">姜丽</a></li><li><a href='plus/view.php?aid=901' target="_blank">韩世涛</a></li><li><a href='plus/view.php?aid=828' target="_blank">周宪利</a></li>
+            </ul>
+
+													
+												  </td>
+												</tr>
+											</table>
+									  <!-- 学生会结束 --></td>
+										<td width="50%" bgColor="#fdfbef" valign="top">
+											<!-- 招生咨询开始 -->
+											<table cellSpacing="3" cellPadding="0" width="100%" align="center" border="0">
+												<tr>
+													<td>
+														<table cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+															<tr>
+																<td width="95" background="/eduweb/templets/images/index_M_top_bg_1.jpg" height="24"><span class="white_10pt"><IMG height="23" src="/eduweb/templets/images/index_M_xszx_pic.jpg" width="25" align="absMiddle"> <strong>推荐文章</strong></span></td>
+																<td width="21"><IMG height="24" src="/eduweb/templets/images/index_M_top_mid.jpg" width="21"></td>
+																<td align="right" background="/eduweb/templets/images/index_M_top_bg_2.jpg"><A class="hui_col_1" href="plus/list.php?tid=145" target="_blank"><img src="/eduweb/templets/images/index_M_xshd_more.jpg" width="28" height="13" align="absMiddle" border="0"></a></td>
+																<td width="2"><IMG height="24" src="/eduweb/templets/images/index_M_top_right.jpg" width="2"></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr> <!--招生咨询-->
+													<td vAlign="top" height="206">
+														<table cellSpacing="0" cellPadding="0" width="94%" align="center" border="0">
+															
+																	<tr>
+																		<td height="24"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2449' target="_blank">女园丁颂歌</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="24"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2444' target="_blank">尊重生命   健全人格</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="24"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2401' target="_blank">再见2016，你好2017！</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="24"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2400' target="_blank">2017年，给年轻老师的十条建议!</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="24"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2399' target="_blank">人生真正的意义与价值是什么？</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="24"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2398' target="_blank">读书是福</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="24"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2305' target="_blank">关于“走班制”教学的思考</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="24"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2292' target="_blank">无悔的选择</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="24"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2291' target="_blank">无悔的奉献   一切为了学生</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="24"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2290' target="_blank">失败也有美丽和精彩</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr>	
+													  </table>
+												  </td>
+												</tr>
+											</table>
+											<!-- 招生咨询结束 --></td>
+									</tr>
+							  </table>
+							</td>
+							<td width="2"></td>
+							<td width="206">
+								<!-- 图片链接开始 -->
+								<table cellSpacing="1" cellPadding="0" width="100%" align="center" bgColor="#d6d1ab" border="0">
+									<tr>
+										<td bgColor="#fdfbef" height="223">
+											<table cellSpacing="5" cellPadding="0" align="center" border="0">
+												<tr>
+													<td height="37"><a href='http://caschtzx.com.cn/eduweb/home/forum.php?mod=forumdisplay&fid=37' target="_blank"><IMG height="37" src="/eduweb/templets/images/index_piclink_7.jpg" width="185" border="0"></a><!--校务公开--></td>
+												</tr>
+												<tr>
+													<td height="37"><a href='http://caschtzx.com.cn/eduweb/home/forum.php?mod=forumdisplay&fid=46' target="_blank"><IMG height="37" src="/eduweb/templets/images/index_piclink_8.jpg" width="185" border="0"></a><!--体育之窗--></td>
+												</tr>
+												<tr>
+													<td height="37"><a href='http://caschtzx.com.cn/eduweb/home/forum.php?mod=forumdisplay&fid=41' target="_blank"><IMG height="37" src="/eduweb/templets/images/index_piclink_9.jpg" width="185" border="0"></a><!--后勤服务--></td>
+												</tr>
+												<tr>
+													<td height="37"><a href='http://caschtzx.com.cn/eduweb/home/forum.php?mod=forumdisplay&fid=40' target="_blank"><IMG height="37" src="/eduweb/templets/images/index_piclink_10.jpg" width="185" border="0"></a><!--教务处--></td>
+												</tr>
+												<tr>
+													<td height="37"><a href='http://caschtzx.com.cn/eduweb/home/forum.php?gid=59' target="_blank"><IMG height="37" src="/eduweb/templets/images/index_piclink_11.jpg" width="185" border="0"></a><!--对外交流--></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- 图片链接结束 --></td>
+						</tr>
+					</table>
+					<table height="2" cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+						<tr>
+							<td></td>
+						</tr>
+					</table>
+					<!--newadd -->
+					<table width="100%" height="1" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td></td>
+						</tr>
+					</table>
+					<table width="985" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td><img src="/eduweb/templets/images/index_M_line_1.jpg" width="985" height="4"></td>
+						</tr>
+					</table>
+					<table width="100%" height="2" border="0" align="center" cellpadding="0" cellspacing="0">
+						<tr>
+							<td></td>
+						</tr>
+					</table>
+					<table width="100%" border="0" align="center" cellpadding="0" cellspacing="1">
+						<tr>
+							<td width="201">
+								<!-- 1 -->
+								<table width="100%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#d6d1ab">
+									<tr>
+										<td bgcolor="#fdfbef"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="3">
+												<tr>
+													<td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+															<tr>
+																<td width="95" height="24" background="/eduweb/templets/images/index_M_top_bg_1.jpg"><span class="white_10pt"><img src="/eduweb/templets/images/index_M_pic01.jpg" width="25" height="23" align="absMiddle"> <strong>家有考生</strong></span></td>
+																<td width="21"><img src="/eduweb/templets/images/index_M_top_mid.jpg" width="21" height="24"></td>
+																<td align="right" background="/eduweb/templets/images/index_M_top_bg_2.jpg"><span class="hui_col_1"><A class="hui_col_1" href="plus/list.php?tid=7" target="_blank"><img src="/eduweb/templets/images/index_M_xshd_more.jpg" width="28" height="13" align="absMiddle" border="0"></a></span></td>
+																<td width="2"><img src="/eduweb/templets/images/index_M_top_right.jpg" width="2" height="24"></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td height="191" align="center" valign="top">
+													<table width="94%" border="0" align="center" cellpadding="0" cellspacing="0">
+													
+															
+                                                                     <tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2597' target="_blank"><b>关于做好2018年陕西省普通高</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2591' target="_blank"><b>教育部 中国残疾人联合会关</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2589' target="_blank"><b>关于做好2018年陕西省普通高</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2588' target="_blank"><b>2018年高考报名资审航天中学</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2586' target="_blank"><b>航天中学2018年高考报名资格</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2580' target="_blank"><b>2018年中飞院在陕招飞简章及</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2579' target="_blank"><b>2018年南昌航空大学在陕招飞</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2578' target="_blank"><b>2018年空军在陕招飞启动宣传</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr>	
+														
+															
+													  </table>
+												  </td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- 1 -->
+							</td>
+							<td width="2"></td>
+							<td width="568">
+								<table width="100%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#d6d1ab">
+									<tr>
+										<td width="50%" bgcolor="#fdfbef">
+											<!-- 2开始 -->
+											<table width="100%" border="0" align="center" cellpadding="0" cellspacing="3">
+												<tr>
+													<td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+															<tr>
+																<td width="95" height="24" background="/eduweb/templets/images/index_M_top_bg_1.jpg"><span class="white_10pt"><img src="/eduweb/templets/images/index_M_xsh_pic.jpg" width="25" height="23" align="absMiddle"> <strong>教研学习</strong></span></td>
+																<td width="21"><img src="/eduweb/templets/images/index_M_top_mid.jpg" width="21" height="24"></td>
+																<td background="/eduweb/templets/images/index_M_top_bg_2.jpg" align="right" class="hui_col_1"><A class="hui_col_1" href="plus/list.php?tid=24" target="_blank"><img src="/eduweb/templets/images/index_M_xshd_more.jpg" width="28" height="13" align="absMiddle" border="0"></a></td>
+																<td width="2"><img src="/eduweb/templets/images/index_M_top_right.jpg" width="2" height="24"></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td height="191" valign="top">
+													<table width="94%" border="0" align="center" cellpadding="0" cellspacing="0">
+													     
+                                                                     <tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2689' target="_blank"><b>智慧课堂设备使用心得</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2688' target="_blank"><b>拾起粉笔，循序渐进—古典诗</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2687' target="_blank"><b>选修探究，缓慢前行—《先秦</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2686' target="_blank"><b>作文《亲切的怀恋》讲评课</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2685' target="_blank"><b>他山之石 可以攻玉---写在3.</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2684' target="_blank"><b>高三化学第一轮复习的反思</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2683' target="_blank"><b>一节习题课引起的思考</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2682' target="_blank"><b>历史教学中的外交问题探讨</b></a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr>																											
+													  </table>
+												  </td>
+												</tr>
+											</table>
+											<!-- 2结束 -->
+										</td>
+										<td width="50%" bgcolor="#fdfbef">
+											<!-- 3开始 --> <!--“新”学生会-->
+											<table width="100%" border="0" align="center" cellpadding="0" cellspacing="3">
+												<tr>
+													<td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+															<tr>
+																<td width="95" height="24" background="/eduweb/templets/images/index_M_top_bg_1.jpg"><span class="white_10pt"><img src="/eduweb/templets/images/index_M_pic03.jpg" width="25" height="23" align="absMiddle"> <strong>德育之窗</strong></span></td>
+																<td width="21"><img src="/eduweb/templets/images/index_M_top_mid.jpg" width="21" height="24"></td>
+																<td background="/eduweb/templets/images/index_M_top_bg_2.jpg" align="right"><A class="hui_col_1" href="plus/list.php?tid=6" target="_blank"><img src="/eduweb/templets/images/index_M_xshd_more.jpg" width="28" height="13" align="absMiddle" border="0"></a></td>
+																<td width="2"><img src="/eduweb/templets/images/index_M_top_right.jpg" width="2" height="24"></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td height="191" valign="top"><table width="94%" border="0" align="center" cellpadding="0" cellspacing="0">
+															
+																
+                                                                     <tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2459' target="_blank">西安市航天中学组织开展“书</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2453' target="_blank">春夏季传染病防治知识</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2452' target="_blank">控制结核     人人有责</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2451' target="_blank">中学生预防近视眼基本知识与</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2450' target="_blank">创建无烟校园   营造和谐  </a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2419' target="_blank">开学第一课——德育教育</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2395' target="_blank">“烟头不落地  古都更美丽”</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr><tr>
+																		<td height="22" align="left"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='plus/view.php?aid=2380' target="_blank">西安市航天中学12月18日雾霾</a></td>
+																	</tr>
+																	<tr>
+																		<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																	</tr>	
+																
+														</table>
+													</td>
+												</tr>
+											</table>
+											<!-- 3结束 -->
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td width="2"></td>
+							<td width="206">
+								<!-- 4开始 -->
+								<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#d6d1ab">
+									<tr>
+										<td height="223" valign="top" bgcolor="#fdfbef"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+												<tr>
+													<td><IMG height="29" src="/eduweb/templets/images/index_M_yqlj_top.jpg" width="206"></td>
+												</tr>
+												<tr>
+													<td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#d6d1ab">
+															<tr>
+																<td height="194" valign="top" bgcolor="#fdfbef">
+																<table width="94%" border="0" align="center" cellpadding="0" cellspacing="0">
+																	
+																			
+                                                                    
+																			
+																				<tr>
+																					<td height="22"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='http://www.jyb.com.cn' target='_blank'>中国教育新闻网</a></td>
+																				</tr>
+																				<tr>
+																					<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																				</tr>
+																			
+																			
+																				<tr>
+																					<td height="22"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='http://www.snedu.com' target='_blank'>陕西教育网</a></td>
+																				</tr>
+																				<tr>
+																					<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																				</tr>
+																			
+																			
+																				<tr>
+																					<td height="22"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='http://www.xaedu.gov.cn' target='_blank'>西安教育网</a></td>
+																				</tr>
+																				<tr>
+																					<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																				</tr>
+																			
+																			
+																				<tr>
+																					<td height="22"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='http://www.ks5u.com/' target='_blank'>高考资源网</a></td>
+																				</tr>
+																				<tr>
+																					<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																				</tr>
+																			
+																			
+																				<tr>
+																					<td height="22"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='http://www.xajjw.com/cms/' target='_blank'>西安基础教育网</a></td>
+																				</tr>
+																				<tr>
+																					<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																				</tr>
+																			
+																			
+																				<tr>
+																					<td height="22"><img src="templets/images/index_M_bzgg_pic.jpg" width="9" height="6"> <a href='http://www.shuxue.com.cn/' target='_blank'>数学教育网</a></td>
+																				</tr>
+																				<tr>
+																					<td height="1" background="templets/images/index_M_line_3.jpg"></td>
+																				</tr>
+																																					
+																		
+																  </table>
+															  </td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- 4结束 -->
+							</td>
+						</tr>
+					</table>
+                                       <!--主页-->
+    <div class="cleanFlex"></div>
+    <div class="w985">
+    	<!--校园主页-->
+        <div class="boxAdd cont">
+        	<div class="title">
+            	
+                <h2>校园主页</h2>
+            </div>
+            <div class="xiaoyuanIndex">
+            	<ul class="listF">
+                	<li><a href="http://caschtzx.com.cn/eduweb/home/?3" target="_blank">七年级</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?4" target="_blank">八年级</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?5" target="_blank">九年级</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?6" target="_blank">高一年级</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?7" target="_blank">高二年级</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?8" target="_blank">高三年级</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?46" target="_blank">心灵驿站</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?47" target="_blank">宇花园地</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?48" target="_blank">学生会</a></li>
+					<li><a href="http://caschtzx.com.cn/eduweb/home/?688" target="_blank">快乐英语俱乐部</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--班级主页-->
+        <div class="blank"></div>
+        <div class="boxAdd cont">
+        	<div class="title">
+            	
+                <h2>班级主页</h2>
+            </div>
+            <div class="banjiIndex">
+            	<div class="blank"></div>
+				  <ul class="listF cleanFlex">
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400704" target="_blank">初2017级一班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400705" target="_blank">初2017级二班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400706" target="_blank">初2017级三班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400707" target="_blank">初2017级四班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400708" target="_blank">初2017级五班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400709" target="_blank">初2017级六班</a></li>
+		             
+                </ul>
+				<ul class="listF cleanFlex">
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400690" target="_blank">初2016级一班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400691" target="_blank">初2016级二班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400692" target="_blank">初2016级三班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400693" target="_blank">初2016级四班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400694" target="_blank">初2016级五班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400695" target="_blank">初2016级六班</a></li>        
+
+                </ul>
+				<ul class="listF cleanFlex">
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400676" target="_blank">初2015级一班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400677" target="_blank">初2015级二班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400678" target="_blank">初2015级三班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400679" target="_blank">初2015级四班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400680" target="_blank">初2015级五班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400681" target="_blank">初2015级六班</a></li>
+		             
+                </ul>
+		       
+           <ul class="listF cleanFlex">
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400710" target="_blank">高2017级一班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400711" target="_blank">高2017级二班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400712" target="_blank">高2017级三班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400713" target="_blank">高2017级四班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400714" target="_blank">高2017级五班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400715" target="_blank">高2017级六班</a></li>
+		
+                </ul>  	
+			  <ul class="listF cleanFlex">
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400698" target="_blank">高2016级一班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400699" target="_blank">高2016级二班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400700" target="_blank">高2016级三班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400701" target="_blank">高2016级四班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400702" target="_blank">高2016级五班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400703" target="_blank">高2016级六班</a></li>
+		
+                </ul>
+			 <ul class="listF cleanFlex">
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400684" target="_blank">高2015级一班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400685" target="_blank">高2015级二班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400686" target="_blank">高2015级三班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400687" target="_blank">高2015级四班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400688" target="_blank">高2015级五班</a></li>
+                    <li><a href="http://caschtzx.com.cn/eduweb/home/?400689" target="_blank">高2015级六班</a></li>
+		
+                </ul>
+                
+		
+               
+                
+               
+                
+            </div>
+        </div>
+					<!--newadd -->
+					<table cellSpacing="1" cellPadding="0" width="100%" align="center" border="0">
+						<tr>
+							<td>
+								<!-- 学生作品开始 -->
+								<table cellSpacing="1" cellPadding="0" width="100%" align="center" bgColor="#cccccc" border="0">
+									<tr>
+										<td bgColor="#ffffff" background="/eduweb/templets/images/bg_a014.gif">
+											<table cellSpacing="1" cellPadding="0" width="100%" align="center" border="0">
+												<tr>
+													<td>
+														<table cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+															<tr>
+																<td width="80"><IMG height="126" src="/eduweb/templets/images/index_M_xszp_pic.jpg" width="80"></td>
+																<td>
+																	<DIV id="demo5" style="BACKGROUND: #ffffff; OVERFLOW: hidden; WIDTH: 895px; COLOR: #fff; HEIGHT: 105px">
+																		<table cellSpacing="0" cellPadding="0" align="left" border="0" valign="center">
+																			<tr>
+																				<TD id="demo3" vAlign="top">
+																					<table cellSpacing="0" cellPadding="0" align="left" border="0">
+																						<tr>
+																							
+																									<td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201704/29-2496.html'><img src='/eduweb/uploads/litimg/170429/1A45912928.jpg' border='0' width='120' height='90' alt='清明主题海报设计'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201704/29-2495.html'><img src='/eduweb/uploads/litimg/170429/1A22G20c.jpg' border='0' width='120' height='90' alt='环保主题海报设计'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201704/29-2494.html'><img src='/eduweb/uploads/litimg/170429/1A04GE10.jpg' border='0' width='120' height='90' alt='创意ps图片'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201704/29-2493.html'><img src='/eduweb/uploads/litimg/170429/164631124b.jpg' border='0' width='120' height='90' alt='七年级《word排版设计》优秀作业'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201607/05-2229.html'><img src='/eduweb/uploads/160705/_1I34AU.jpg' border='0' width='120' height='90' alt='两学一做群众宣讲活动报告会'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201606/22-2220.html'><img src='/eduweb/uploads/litimg/160622/1413131LF.jpg' border='0' width='120' height='90' alt='初2016届毕业季'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201511/05-2083.html'><img src='/eduweb/uploads/litimg/151105/11204913011.jpg' border='0' width='120' height='90' alt='新教学楼'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201510/26-2071.html'><img src='/eduweb/uploads/151026/_1T630561.jpg' border='0' width='120' height='90' alt='中国梦 青年志演讲比赛'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201510/23-2070.html'><img src='/eduweb/uploads/litimg/151023/111921130H.jpg' border='0' width='120' height='90' alt='优秀教师表彰'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td><td width="134">
+																										<table style="MARGIN-LEFT: 8px; MARGIN-RIGHT: 8px" cellSpacing="1" cellPadding="0" width="134"
+																											align="center" bgColor="#e5e5e5" border="0">
+																											<tr>
+																												<td bgColor="#ffffff">
+																													<table borderColor="#b1b3b2" cellSpacing="4" cellPadding="0" width="100%" align="center"
+																														border="1">
+																														<tr>
+																															<td><a href='/eduweb/html/tupian/tupianzhongxin/201510/09-2062.html'><img src='/eduweb/uploads/151009/_133951205.jpg' border='0' width='120' height='90' alt='2015年军训'></a></td>
+																														</tr>
+																													</table>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																									<td></td>
+																						</tr>
+																					</table>
+																				</TD>
+																				<TD id="demo4" vAlign="top"></TD>
+																			</tr>
+																		</table>
+																		<SCRIPT>
+var speed=30
+demo4.innerHTML=demo3.innerHTML
+function Marquee(){
+if(demo4.offsetWidth-demo5.scrollLeft<=0)
+demo5.scrollLeft-=
+demo3.offsetWidth
+else{
+demo5.scrollLeft++
+}}
+var MyMar=setInterval(Marquee,speed)
+demo5.onmouseover=function() {clearInterval(MyMar)}
+demo5.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+																		</SCRIPT>
+																	</DIV>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- 学生作品结束 --></td>
+						</tr>
+					</table>
+					<!-- 中部开始 -->
+			<div class="w985 top">
+    	<img src="/eduweb/images/995-1.jpg" alt="" width="990"/>
+    </div>
+					<table height="2" cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
+						<tr>
+							<td></td>
+						</tr>
+					</table>
+			  </td>
+				<td width="5" bgColor="#fdfbf0"></td>
+			</tr>
+		</table>
+		<!-- 中部结束 -->
+		<!-- 结尾开始 -->
+		
+<table width="995" border="0" align="center" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="5" bgcolor="#fdfbf0"></td>
+		<td width="985"><table width="100%" height="3" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td></td>
+				</tr>
+			</table>
+			<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td><img src="/eduweb/templets/images/index_B_PIC.jpg" width="984" height="126"></td>
+				</tr>
+			</table>
+			<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td height="8" background="/eduweb/templets/images/index_B_bg.jpg"></td>
+				</tr>
+				<tr>
+					<td height="94" background="/eduweb/templets/images/index_B_bg_2.jpg"><table width="90%" height="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+							<tr>
+								<td height="25" align="center" class="white"> 丨 <a href="plus/view.php?aid=46" class="white"> 联系我们</a> 丨 <a href="plus/list.php?tid=53" class="white"> 学校三维展示 </a> 丨 <a href="plus/list.php?tid=89" class="white"> 图片展示 </a> 丨<a href="plus/guestbook/index.php" class="white"> 留言版</a> 丨</td>
+							</tr>
+							<tr>
+								<td align="center"><font color="white">版权所有：西安市航天中学 联系电话：029-85615117  85206473 地址：西安国家民用航天产业基地凤栖东路</a><br>
+							    COPYRIGHT 2008 www.caschtzx.cn ALL RIGHTS RESERVED 建议IE5.5,1024×768以上分辨率浏览本网站 </font>
+</td>
+
+
+
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="5" bgcolor="#fdfbf0"></td>
+	</tr>
+</table>
+		<!-- 结尾结束 -->
+		<map name="Map">
+			<area shape="RECT" coords="http://caschtzx.com.cn/eduweb/home/group.php?gid=3" href="plus/view.php?aid=55"> <!--师资队伍-->
+			<area shape="RECT" coords="115,73,174,88" href="plus/list.php?tid=55"> <!--名师风采-->
+		</map>
+
+
+</body>
+</html>

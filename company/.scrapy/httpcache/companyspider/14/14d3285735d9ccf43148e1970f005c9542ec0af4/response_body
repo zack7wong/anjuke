@@ -1,0 +1,746 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="index.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="favicon.ico">
+<title>呼和浩特市第一中学</title>
+<style type="text/css">
+body{ color: #FFF; background-image: url(imges/shine.png); background-repeat: no-repeat; font-family: "微软雅黑"; }
+body {
+background-image: url(imges/xx.jpg);
+margin-top: 0px;
+text-align:center;
+background-repeat:repeat-x;
+margin-left: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+}
+</style>
+</head>
+<body>
+<script language="javascript">  
+function CopyIt(theField)  
+{  
+var tempval=document.getElementById(theField)   
+copyToClipboard(tempval.innerText);  
+}  
+
+function copyToClipboard(txt) {  
+if(window.clipboardData)   
+{  
+window.clipboardData.clearData();  
+window.clipboardData.setData("Text", txt);  
+alert("复制成功");  
+}   
+else if(navigator.userAgent.indexOf("Opera") != -1)   
+{  
+window.location = txt;  
+}   
+else if (window.netscape)   
+{  
+try {  
+netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");  
+} catch (e) {  
+alert("如果您正在使用FireFox！\n请在浏览器地址栏输入'about:config'并回车\n然后将'signed.applets.codebase_principal_support'设置为'true'");  
+}  
+var clip = Components.classes['@mozilla.org/widget/clipboard;1'].createInstance(Components.interfaces.nsIClipboard);  
+if (!clip) return;  
+var trans = Components.classes['@mozilla.org/widget/transferable;1'].createInstance(Components.interfaces.nsITransferable);  
+if (!trans) return;  
+trans.addDataFlavor('text/unicode');  
+var str = new Object();  
+var len = new Object();  
+var str = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);  
+var copytext = txt;  
+str.data = copytext;  
+trans.setTransferData("text/unicode",str,copytext.length*2);  
+var clipid = Components.interfaces.nsIClipboard;  
+if (!clip) return false;  
+clip.setData(trans,null,clipid.kGlobalClipboard);  
+alert("复制成功！")  
+}  
+}  
+</script>
+<div id="content">
+<div id="kangjia1" class="all">
+<div id="top">
+<script type="text/javascript"> 
+	function setHomePage(obj){ 
+		var aUrls=document.URL.split("/"); 
+		var vDomainName="http://"+aUrls[2]+"/"; 
+	try{//IE 
+		obj.style.behavior="url(#default#homepage)"; 
+		obj.setHomePage(vDomainName); 
+	}catch(e){//other 
+	if(window.netscape) {//ff 
+	try { 
+		netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect"); 
+	} 
+	catch (e) { 
+		 
+	} 
+		var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch); 
+		prefs.setCharPref('browser.startup.homepage',vDomainName); 
+	} 
+	} 
+		if(window.netscape)alert("ff"); 
+	} 
+	function addFavorite(){ 
+			var aUrls=document.URL.split("/"); 
+			var vDomainName="http://"+aUrls[2]+"/"; 
+			var description=document.title; 
+		try{//IE 
+			window.external.AddFavorite(vDomainName,description); 
+		}catch(e){//FF 
+			window.sidebar.addPanel(description,vDomainName,""); 
+		} 
+	} 
+</script>
+ <script src="js/jquery1.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+function jsddm_open()
+{	jsddm_canceltimer();
+	jsddm_close();
+	ddmenuitem = $(this).find('ul').eq(0).css('visibility', 'visible');}
+
+function jsddm_close()
+{	if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');}
+
+function jsddm_timer()
+{	closetimer = window.setTimeout(jsddm_close, timeout);}
+
+function jsddm_canceltimer()
+{	if(closetimer)
+	{	window.clearTimeout(closetimer);
+		closetimer = null;}}
+
+$(document).ready(function()
+{	$('#jsddm > li').bind('mouseover', jsddm_open);
+	$('#jsddm > li').bind('mouseout',  jsddm_timer);});
+
+document.onclick = jsddm_close;
+  </script> 
+  <link href="css/menu.css" rel="stylesheet" media="screen" type="text/css" />
+<div id="Tit">
+<div id="logol"><a href="index.php"><img src="imges/logol.png" class="linkimg" /></a></div>
+<div id="sc" class="gai"><a href="ditu.php" class="linkwhite">网站地图</a> &nbsp;<a href="about.php?id=541" class="linkwhite">联系我们</a>&nbsp; <a href="#" class="linkwhite" onclick="addFavorite();">加入收藏</a></div>
+</div>
+
+<div id="all" class="all nav">
+<ul id="jsddm">
+<li ><a href="index.php" style=" width:66px">首页</a>
+</li>
+<li style="padding-top:3px;_padding-top:8px"><img src="imges/shu.png"></li>
+<li><a href="about.php?id=530" title="学校概况">学校概况</a>
+<ul>
+<li><a href="about.php?id=530">校长致辞</a></li>
+<li><a href="about.php?id=531">学校简介</a></li>
+<li><a href="about.php?id=532">历史沿革</a></li>
+<li><a href="about.php?id=533">历任校长书记</a></li>
+<li><a href="about.php?id=534">学校荣誉</a></li>
+<li><a href="about.php?id=535">领导关怀</a></li>
+<li><a href="about1.php?id=536">菁菁校园</a></li>
+<li><a href="about.php?id=537">校旗</a></li>
+<li><a href="about.php?id=530">...</a></li>
+</ul>
+</li>
+
+<li style="padding-top:3px;_padding-top:8px"><img src="imges/shu.png"></li>
+<li><a href="news.php?id=543" title="学校新闻">学校新闻</a>
+<ul>
+<li><a href="news.php?id=543">校园新闻</a></li>
+<li><a href="news.php?id=580">通知公告</a></li>
+<li><a href="news.php?id=543"></a></li>
+</ul>
+</li>
+<li style="padding-top:3px;_padding-top:8px"><img src="imges/shu.png"></li>
+<li><a href="dtjs.php?id=545" title="党团建设">党团建设</a>
+<ul>
+<li><a href="dtjs.php?id=545">组织建设</a></li>
+<li><a href="dtjs.php?id=546">党员风采</a></li>
+<li><a href="dtjs.php?id=547">党旗飘扬</a></li>
+<li><a href="dtjs.php?id=548">学习资料</a></li>
+<li><a href="dtjs.php?id=549">创先争优</a></li>
+<li><a href="dtjs.php?id=637">群众路线</a></li>
+<li><a href="dtjs.php?id=545"></a></li>
+</ul>
+</li>
+<li style="padding-top:3px;_padding-top:8px"><img src="imges/shu.png"></li>
+<li><a href="szdw.php?id=552" title="师资队伍">师资队伍</a>
+<ul>
+<li><a href="szdw.php?id=552">师资概况</a></li>
+<li><a href="szdw.php?id=596">教师风采</a></li>
+<li><a href="szdw.php?id=553">特级教师</a></li>
+<li><a href="szdw.php?id=554">学科带头人</a></li>
+<li><a href="szdw.php?id=555">教学能手</a></li>
+<li><a href="szdw.php?id=552"></a></li>
+</ul>
+</li>
+<li style="padding-top:3px;_padding-top:8px"><img src="imges/shu.png"></li>
+<li><a href="jxky.php?id=558" title="教学科研">教学科研</a>
+<ul>
+<li><a href="jxky.php?id=558">课程设置</a></li>
+<li><a href="jxky1.php?id=560">校本课程</a></li>
+<li><a href="jxky1.php?id=561">教学改革</a></li>
+<li><a href="jxky1.php?id=562">学术委员会</a></li>
+<li><a href="jxky.php?id=558"></a></li>
+</ul>
+</li>
+<li style="padding-top:3px;_padding-top:8px"><img src="imges/shu.png"></li>
+<li><a href="jyyd.php?id=563" title="教育园地">教育园地</a>
+<ul>
+<li><a href="jyyd.php?id=563">德育动态</a></li>
+<li><a href="jyyd.php?id=564">班主任风采</a></li>
+<li><a href="jyyd.php?id=565">家长天地</a></li>
+<li><a href="jyyd.php?id=566">教育活动</a></li>
+<li><a href="jyyd.php?id=567">国旗下讲话</a></li>
+<li><a href="jyyd.php?id=568">学生发展指导</a></li>
+<li><a href="jyyd.php?id=563"></a></li>
+</ul>
+</li>
+<li style="padding-top:3px;_padding-top:8px"><img src="imges/shu.png"></li>
+<li><a href="ygxs.php?id=569" title="阳光学生">阳光学生</a>
+<ul>
+<li><a href="ygxs.php?id=569">学生社团</a></li>
+<li><a href="ygxs.php?id=627">学生会</a></li>
+<li><a href="ygxs.php?id=570">学生活动</a></li>
+<li><a href="ygxs.php?id=597">互动交流</a></li>
+<li ><a href="ygxs.php?id=569"></a></li>
+</ul>
+</li>
+<li style="padding-top:3px;_padding-top:8px"><img src="imges/shu.png"></li>
+<li><a href="zszx.php?id=571" title="招生咨询">招生咨询</a>
+<ul>
+<li><a href="zszx.php?id=571">招生考试</a></li>
+<li><a href="zszx.php?id=572">招考信息</a></li>
+<li><a href="liuyan.php?id=574">在线留言</a></li>
+<li><a href="zszx.php?id=571"></a></li>
+</ul>
+</li>
+<li style="padding-top:3px;_padding-top:8px"><img src="imges/shu.png"></li>
+<li><a href="dwjl.php?id=575" title="对外交流">对外交流</a>
+<ul>
+<li><a href="dwjl.php?id=575">英国之行</a></li>
+<li><a href="dwjl.php?id=576">日本之行</a></li>
+<li><a href="dwjl.php?id=577">加拿大之行</a></li>
+<li><a href="dwjl.php?id=638">澳大利亚之行</a></li>
+<li><a href="dwjl.php?id=625">国外中学来我校...</a></li>
+<li><a href="dwjl.php?id=575"></a></li>
+</ul>
+</li>
+<li style="padding-top:3px;_padding-top:8px"><img src="imges/shu.png"></li>
+<li><a href="lsxx.php?id=581" title="绿色学校">绿色学校</a>
+<ul>
+<li><a href="lsxx.php?id=581">组织管理</a></li>
+<li><a href="lsxx.php?id=631">绿色宣传</a></li>
+<li><a href="lsxx.php?id=633">教育成果</a></li>
+<li><a href="lsxx.php?id=634">环保实践</a></li>
+<li><a href="lsxx.php?id=635">绿眼睛工作室</a></li>
+<li><a href="lsxx.php?id=581"></a></li>
+</ul>
+</li>
+<li style="padding-top:3px;_padding-top:8px"><img src="imges/shu.png"></li>
+<li><a href="xqzl.php?id=578" title="校庆专栏">校庆专栏</a>
+<ul style=" margin-left:-55px;">
+<li><a href="xqzl.php?id=578">校庆指南</a></li>
+<li><a href="xqzl.php?id=579">校庆新闻</a></li>
+<li><a href="xqzlz.php?id=591">走进一中</a></li>
+<li><a href="xqzl.php?id=592">百年文化</a></li>
+<li><a href="xqzl.php?id=593">一中学子</a></li>
+<li><a href="xqzld.php?id=590">塞外学府</a></li>
+<li><a href="xqzl.php?id=594">校园记忆</a></li>
+<li><a href="xqzl.php?id=612">校友捐赠</a></li>
+<li><a href="xqzl1.php">校友登记</a></li>
+<li><a href="xqzl.php?id=578">...</a></li>
+</ul>
+</li>
+</ul>
+</div><div id="pic" class="all" ><img src="uploadfile/2013-6-7/22.jpg" class="linkimg"  /></div>
+</div>
+<div id="gcontent" >
+<link rel="stylesheet" href="css/g.css" type="text/css">
+<!--改的部分-->
+<div style="margin-left:4px;">
+<div style="float:left; width:297px; overflow:hidden; padding-top:7px">
+<div class="gyh">
+<span>用户登录</span>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:10px">
+<tr>
+<td class="gyhm" >用户名：</td>
+<td><input name="book_name" type="text" class="inputuser" id="book_name" style="width:161px; height:23px; color:#000000; background:url(gimages/b.jpg) no-repeat;border:0px;"></td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:5px">
+<tr>
+<td class="gyhm" >密&nbsp;&nbsp;码：</td>
+<td><input name="book_name" type="text" class="inputuser" id="book_name" style="width:161px; height:23px; color:#000000; background:url(gimages/b.jpg) no-repeat;border:0px;"></td>
+</tr>
+</table>
+<div style="clear:both; color:#54728e; padding-left:83px; padding-top:8px;font-size:12px;"><img src="gimages/t.jpg" width="11" height="11">&nbsp;记住密码&nbsp;&nbsp;&nbsp;忘记密码</div>
+<div style="text-align:center; padding-top:10px;font-size:12px;"><img src="gimages/d.jpg" width="68" height="20">&nbsp;&nbsp;&nbsp;&nbsp;<img src="gimages/c.jpg" width="69" height="21"></div>
+</div>
+<div style="height:13px"></div>
+<div class="gqz">
+<span class="gqz1">两学一做</span><span class="gqz2"><a href="qzlx1.php?id=662">More</a></span>
+<div style="clear:both; padding-top:2px">
+<style type ="text/css" >  
+.d1{width:277px;height:143px;overflow:hidden;position:relative; margin-left:8px}  
+.d1 ul{display:none;}  
+.loading{width:277px;border:#666666 0px solid;background-color:#000000;color:#FFCC00;font-size:12px;height:143px;text-align:center;font-weight:bold;}
+.d2{width:100%;height:143px;overflow:hidden;}  
+.num_list{position:absolute;width:100%;left:0px;bottom:-1px;color:#FFFFFF;font-size:12px;padding:4px 0px;height:20px;overflow:hidden;}  
+.num_list span{display:inline-block;height:16px;padding-left:6px;}
+.button{position:absolute;z-index:1000;right:0px;bottom:2px;font-size:13px;font-weight:bold;}  
+.button a{background-color:#fff;display:block;line-height:14px;float:left;padding:1px 5px;margin-right:3px;color:#000;text-decoration:none;cursor:pointer; border:1px #0288e6 solid}
+.button .b2{color:#FF3300;background-color:#fff;}  
+</style> 
+<script type="text/javascript">  
+//主函数  
+var s=function(){  
+	var interv=3500; //切换间隔时间  
+	var interv2=20; //切换速度  
+	var opac1=90; //文字背景的透明度  
+	var source="show" //焦点轮换图片容器的id名称  
+	//获取对象  
+	function getTag(tag,obj){  
+		if(obj==null){  
+			return document.getElementsByTagName(tag);  
+		}else{  
+			return obj.getElementsByTagName(tag);  
+		}  
+	}  
+	function getid(id){  
+		return document.getElementById(id);  
+	};  
+	var opac=0,j=0,t=63,num,scton=0,timer,timer2,timer3;  
+	var id=getid(source);  
+	id.removeChild(getTag("div",id)[0]);  
+	var li=getTag("li",id);  
+	var div=document.createElement("div");  
+	var title=document.createElement("div");  
+	var span=document.createElement("span");  
+	var button=document.createElement("div");  
+	button.className="button";  
+	for(var i=0;i<li.length;i++){  
+		var a=document.createElement("a");  
+		a.innerHTML=i+1;  
+		a.onclick=function(){  
+			clearTimeout(timer);  
+			clearTimeout(timer2);  
+			clearTimeout(timer3);  
+			j=parseInt(this.innerHTML)-1;  
+			scton=0;  
+			t=63;  
+			opac=0;  
+			fadeon();  
+		};  
+		a.className="b1";  
+		a.onmouseover=function(){  
+			this.className="b2";  
+		};  
+		a.onmouseout=function(){  
+			this.className="b1";sc(j);  
+		};  
+		button.appendChild(a);  
+	}  
+	//控制图层透明度  
+	function alpha(obj,n){  
+		if(document.all){  
+			obj.style.filter="alpha(opacity="+n+")";  
+		}else{  
+			obj.style.opacity=(n/100);  
+		}  
+	}  
+	//控制焦点按钮  
+	function sc(n){  
+		for(var i=0;i<li.length;i++){  
+			button.childNodes[i].className="b1";  
+		};  
+		button.childNodes[n].className="b2";  
+	}  
+	title.className="num_list";  
+	title.appendChild(span);  
+	alpha(title,opac1);  
+	id.className="d1";  
+	div.className="d2";  
+	id.appendChild(div);  
+	id.appendChild(title);  
+	id.appendChild(button);  
+	//渐显  
+	var fadeon=function(){  
+		opac+=5;  
+		div.innerHTML=li[j].innerHTML;  
+		span.innerHTML=getTag("img",li[j])[0].alt;  
+		alpha(div,opac);  
+		if(scton==0){  
+			sc(j);  
+			num=-2;  
+			scrolltxt();  
+			scton=1;  
+		};  
+		if(opac<100){  
+			timer=setTimeout(fadeon,interv2);  
+		}else{  
+			timer2=setTimeout(fadeout,interv);  
+		}  
+	};  
+	//渐隐  
+	var fadeout=function(){  
+		opac-=5;  
+		div.innerHTML=li[j].innerHTML;  
+		alpha(div,opac);  
+		if(scton==0){  
+			num=2;  
+			scrolltxt();  
+			scton=1;  
+		}  
+		if(opac>0){  
+			timer=setTimeout(fadeout,interv2);  
+		}else{  
+			if(j<li.length-1){  
+				j++;  
+			}else{  
+			j=0;  
+			}  
+			fadeon();  
+		}  
+	};  
+	//滚动文字  
+	var scrolltxt=function(){  
+		t+=num;  
+		span.style.marginTop=t+"px";  
+		if(num<0 && t>3){  
+			timer3=setTimeout(scrolltxt,interv2);  
+		}else if(num>0 && t<62){  
+			timer3=setTimeout(scrolltxt,interv2);  
+		}else{  
+			scton=0  
+		}  
+	};  
+	fadeon();  
+}  
+//初始化  
+window.onload=s;  
+</script>
+<div id="show" class="d1" style="z-index:1;">  
+<div class="loading"><img src="" width="277" height="143" /></div>  
+<ul>  
+<li><a href="qzlx1_list.php?id=663&cat_id=662"><img src="uploadfile/1474253851.jpg" width="277" height="143"  border="0"/></a></li>  
+<li><a href="qzlx1_list.php?id=665&cat_id=662"><img src="uploadfile/1474255720.JPG" width="277" height="143"  border="0"/></a></li>  
+<li><a href="qzlx1_list.php?id=664&cat_id=662"><img src="uploadfile/1474255638.JPG" width="277" height="143"  border="0"/></a></li>  
+</ul>  
+</div>  
+</div>
+</div>
+<div style="height:10px; overflow:hidden"></div>
+<div style="background:url(gimages/gzs.jpg) no-repeat; width:296px; height:301px">
+<div style="padding-top:5px"><span class="gqz1">招生咨询</span><span class="gqz2"><a href="zszx.php?id=571">More</a></span></div>
+<div style="text-align:center; clear:both; padding-top:6px; height:3px; overflow:hidden"><img src="gimages/x.jpg" width="253" height="3"></div>
+<div class="zicontent2"  style="height: 190px; width: 276px;_width: 276px; padding-left: 22px; padding-top:5px; overflow: hidden;">
+<div style="height:10px; overflow:hidden"></div>
+<div style="width:250px;background:url(gimages/sanjiao.gif) no-repeat 0px 4px; height:11px; padding-bottom:18px; _padding-bottom:10px;"><span style="float:left; padding-left:14px;"><a href="zszx_list.php?id=2385&cat_id=571">呼和浩特市第一中学2018...</a></span><span style="float:right;"><a href="zszx_list.php?id=2385&cat_id=571">[2018.04.18]</a></span></div>
+<div style="clear:both"></div>
+<div style="width:250px;background:url(gimages/sanjiao.gif) no-repeat 0px 4px; height:11px; padding-bottom:18px; _padding-bottom:10px;"><span style="float:left; padding-left:14px;"><a href="zszx_list.php?id=2384&cat_id=571">呼市一中2018年艺术特长...</a></span><span style="float:right;"><a href="zszx_list.php?id=2384&cat_id=571">[2018.04.12]</a></span></div>
+<div style="clear:both"></div>
+<div style="width:250px;background:url(gimages/sanjiao.gif) no-repeat 0px 4px; height:11px; padding-bottom:18px; _padding-bottom:10px;"><span style="float:left; padding-left:14px;"><a href="zszx_list.php?id=2383&cat_id=571">呼市一中2018年特长生招...</a></span><span style="float:right;"><a href="zszx_list.php?id=2383&cat_id=571">[2018.03.22]</a></span></div>
+<div style="clear:both"></div>
+<div style="width:250px;background:url(gimages/sanjiao.gif) no-repeat 0px 4px; height:11px; padding-bottom:18px; _padding-bottom:10px;"><span style="float:left; padding-left:14px;"><a href="zszx_list.php?id=2382&cat_id=571">呼市一中2018年特长生报...</a></span><span style="float:right;"><a href="zszx_list.php?id=2382&cat_id=571">[2018.03.22]</a></span></div>
+<div style="clear:both"></div>
+<div style="width:250px;background:url(gimages/sanjiao.gif) no-repeat 0px 4px; height:11px; padding-bottom:18px; _padding-bottom:10px;"><span style="float:left; padding-left:14px;"><a href="zszx_list.php?id=2328&cat_id=571">呼和浩特市第一中学2017...</a></span><span style="float:right;"><a href="zszx_list.php?id=2328&cat_id=571">[2017.04.28]</a></span></div>
+<div style="clear:both"></div>
+<div style="width:250px;background:url(gimages/sanjiao.gif) no-repeat 0px 4px; height:11px; padding-bottom:18px; _padding-bottom:10px;"><span style="float:left; padding-left:14px;"><a href="zszx_list.php?id=2326&cat_id=571">呼和浩特市第一中学国际班2...</a></span><span style="float:right;"><a href="zszx_list.php?id=2326&cat_id=571">[2017.04.28]</a></span></div>
+<div style="clear:both"></div>
+<div style="width:250px;background:url(gimages/sanjiao.gif) no-repeat 0px 4px; height:11px; padding-bottom:18px; _padding-bottom:10px;"><span style="float:left; padding-left:14px;"><a href="zszx_list.php?id=2324&cat_id=571">呼和浩特市第一中学2017...</a></span><span style="float:right;"><a href="zszx_list.php?id=2324&cat_id=571">[2017.04.28]</a></span></div>
+<div style="clear:both"></div>
+</div>
+<div style="text-align:center; padding-bottom:15px"><img src="gimages/x1.jpg" width="256" height="1"></div>
+<div align="center"><a href="liuyan.php"><img src="gimages/liuyan.jpg" border="0" /></a></div>   
+</div>
+</div>
+<div style="float:left;">
+<div class="ziti3" style="height:330px; width:375px; float: left;padding-left:30px">
+<div class="zitit" id="titnews"><span style="float:left; font-size:14px">校园新闻</span><span style=" float:right; padding-right:17px;" class="more"><a href="news.php?id=543">More</a></span></div>
+<div id="contentnews" class="ziti">
+<div id="contentnews1">
+<div id="picnews"><a href="news_list.php?id=2377&cat_id=543"><img src="uploadfile/2018-1-9/1.jpg" class="linkimg"  width="193" height="139"/></a></div>
+<div class="zicontent2" id="zinews">
+<ul class="ul">
+<li>从嘉兴南湖的粼粼波光，到井冈山上的燎原之火；
+从抗日战争的滚滚硝烟，到三大战役的辉煌战果；
+从五星红旗的冉冉升起，到...</li>
+</ul>
+</div>
+</div>
+<div class="zicontent2" >
+<div class="gnews"><span style="float:left"><a href="news_list.php?id=2381&cat_id=543">【学长助力·逐梦共远】呼市一中2018...</a></span></span><span style="float:right; width:82px;"><a href="news_list.php?id=2381&cat_id=543">[2018.01.19]</a></span></div>
+<div class="gnews"><span style="float:left"><a href="news_list.php?id=2380&cat_id=543">【弘扬宪法精神，践行法治理念】呼市一中...</a></span></span><span style="float:right; width:82px;"><a href="news_list.php?id=2380&cat_id=543">[2017.12.04]</a></span></div>
+<div class="gnews"><span style="float:left"><a href="news_list.php?id=2379&cat_id=543">【竞赛造就精彩 成绩彰显实力】呼市一中...</a></span></span><span style="float:right; width:82px;"><a href="news_list.php?id=2379&cat_id=543">[2018.01.08]</a></span></div>
+</div>
+<span class="zicontent2"></span></div>
+</div>
+<div style="float:left;height:330px;width:294px;background-image: url(imges/noticepic2.gif);background-repeat:no-repeat;" class="hh2">
+<div class="zitit" id="noticetit"><span style="float:left; font-size:14px">通知公告</span><span  class="ziti3 more" style="float:right; padding-right:17px;" ><a href="news.php?id=580">More</a></span></div>
+<div class="zicontent2" id="noticecontent">
+<ul class="ul">
+<li><img src="imges/sanjiao.gif" class="hh"/><a href="news_list.php?id=2350&cat_id=580">呼和浩特市第一中学 2017年招生咨询公告</a></li>
+<li><img src="imges/sanjiao.gif" class="hh"/><a href="news_list.php?id=2330&cat_id=580">呼市一中2017年“校园开放日”邀请函</a></li>
+<li><img src="imges/sanjiao.gif" class="hh"/><a href="news_list.php?id=2228&cat_id=580">呼和浩特市第一中学2016年预算情况汇报</a></li>
+<li><img src="imges/sanjiao.gif" class="hh"/><a href="news_list.php?id=2205&cat_id=580">呼和浩特市第一中学2017年教师招聘信息</a></li>
+<li><img src="imges/sanjiao.gif" class="hh"/><a href="news_list.php?id=2202&cat_id=580">【官方辟谣】网传呼市一中招聘消息不实，呼市...</a></li>
+<li><img src="imges/sanjiao.gif" class="hh"/><a href="news_list.php?id=2151&cat_id=580">呼和浩特市第一中学2016年教师招聘计划</a></li>
+<li><img src="imges/sanjiao.gif" class="hh"/><a href="news_list.php?id=2143&cat_id=580">呼市一中2016年艺术、体育类特长生入围名...</a></li>
+<li><img src="imges/sanjiao.gif" class="hh"/><a href="news_list.php?id=2137&cat_id=580">呼和浩特市第一中学2016年收支预算总表</a></li>
+</ul>
+</div>
+</div>
+<div style="clear:both"></div>
+<div style=" padding-left:11px">
+<div class="gms" style="float:left; width:350px">
+<span class="gms1">学术委员会</span><span class="gqz2" style="padding-top:20px"><a href="jxky1.php?id=562">More</a></span>
+<div style="clear:both;text-align:center; padding-top:5px; overflow:hidden"><img src="gimages/mx.jpg"></div>
+<div style="text-align:center; padding-top:7px; padding-bottom:7px"><img src="gimages/mt.jpg" width="224" height="129"></div>
+<div class="gms2"><span><a href="ms2_list.php?id=1908&cat_id=653">课题研究测试信息1...</a></span></div>
+</div>
+<div class="gms" style="float:left">
+<span class="gms1">教学科研</span><span class="gqz2" style="padding-top:20px"><a href="jxky1.php?id=559">More</a></span>
+<div style="clear:both;text-align:center; padding-top:5px; overflow:hidden"><img src="gimages/mx.jpg"></div>
+<div style="text-align:center; padding-top:7px; padding-bottom:7px"><img src="gimages/jx.png" width="224" height="129"></div>
+<div class="gms2"><span><a href="jxky1_list.php?id=2062&cat_id=561">华东师范大学专家与我校教师针对班主任工作...</a></span></div>
+<div class="gms2"><span><a href="jxky1_list.php?id=2058&cat_id=561">教师报专家来我校讲示范课及培训教师</a></span></div>
+<div class="gms2"><span><a href="jxky1_list.php?id=2051&cat_id=561">华东师范大学周彬教授为教师作培训</a></span></div>
+<div class="gms2"><span><a href="jxky1_list.php?id=2050&cat_id=562">青年教师教学交流沙龙</a></span></div>
+<div class="gms2"><span><a href="jxky1_list.php?id=2039&cat_id=561">“四新”深化课堂教学改革研讨会</a></span></div>
+</div>
+</div>
+</div>
+</div>
+<div style="height:10px; overflow:hidden; clear:both"></div>
+<!--改的部分-->
+<div id="clear"></div>
+<div class="all2" id="content3">
+<div id="student" class="hh">
+<div class="zitit" id="studenttit">阳光学生</div>
+<div class="zinav"  id="studentcontent">
+       
+<div class="s1"><a href="ygxs_list.php?id=791&cat_id=570"><img src="uploadfile/2013-9-16/7.jpg" class="linkimg" width="196" height="141" /></a></div>
+<div class="s2 more1"><a href="ygxs_list.php?id=791&cat_id=570">呼和浩特市第一中学2...</a></div>
+</div>
+<div class="zinav" id="studentright">
+<ul class="ul">
+   
+<li class="more1"><img src="imges/zhengfangxing.jpg" /><a href="ygxs_list.php?id=2065&cat_id=570">2014一中成语大赛</a></li>
+   
+<li class="more1"><img src="imges/zhengfangxing.jpg" /><a href="ygxs_list.php?id=2061&cat_id=570">高一年级合唱节</a></li>
+   
+<li class="more1"><img src="imges/zhengfangxing.jpg" /><a href="ygxs_list.php?id=2049&cat_id=570">2014年秋季运动会</a></li>
+   
+<li class="more1"><img src="imges/zhengfangxing.jpg" /><a href="ygxs_list.php?id=2036&cat_id=597">香港东涌天主教学校师生来我校参...</a></li>
+   
+<li class="more1"><img src="imges/zhengfangxing.jpg" /><a href="ygxs_list.php?id=2035&cat_id=597">台北高级中学体育总会交流团来我...</a></li>
+   
+<li class="more1"><img src="imges/zhengfangxing.jpg" /><a href="ygxs_list.php?id=2030&cat_id=597">锡盟二中来我校参观学习</a></li>
+</ul>
+</div>
+</div>
+<div id="student2">
+<div class="zitit" id="studenttit2">教育园地</div>
+          
+<div id="studentcontent2" class="ziti">
+<div class="s1"><a href="jyyd_list.php?id=2268&cat_id=566"><img src="uploadfile/2017-3-20/1.jpg" class="linkimg" width="209" height="141" /></a></div>
+<div class="s2"><a href="jyyd_list.php?id=2268&cat_id=566">呼和浩特市第一中学201...</a></div>
+</div>
+<div style=" color:#000000; font-size:14px; line-height: 23px; padding-top:10px; float:left;">
+<ul style=" list-style:none; padding-left:20px; text-decoration:none" class="ul">
+   
+<li class="more1"><img src="imges/zhengfangxing.jpg" /><a href="jyyd_list.php?id=2298&cat_id=564" style=" text-decoration:none">马秀兰</a></li>
+   
+<li class="more1"><img src="imges/zhengfangxing.jpg" /><a href="jyyd_list.php?id=2267&cat_id=566" style=" text-decoration:none">呼和浩特市第一中学国际部澳大...</a></li>
+   
+<li class="more1"><img src="imges/zhengfangxing.jpg" /><a href="jyyd_list.php?id=2077&cat_id=567" style=" text-decoration:none">呼市一中迎来新学期第一次升旗...</a></li>
+   
+<li class="more1"><img src="imges/zhengfangxing.jpg" /><a href="jyyd_list.php?id=2064&cat_id=566" style=" text-decoration:none">中科院研究员李建军教授为我校...</a></li>
+   
+<li class="more1"><img src="imges/zhengfangxing.jpg" /><a href="jyyd_list.php?id=2063&cat_id=566" style=" text-decoration:none">我的中国梦 奋斗的青春最美丽...</a></li>
+   
+<li class="more1"><img src="imges/zhengfangxing.jpg" /><a href="jyyd_list.php?id=2057&cat_id=563" style=" text-decoration:none">优秀班会课展示</a></li>
+   
+<li class="more1"><img src="imges/zhengfangxing.jpg" /><a href="jyyd_list.php?id=2055&cat_id=566" style=" text-decoration:none">消防逃生演练</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="clear"></div>
+</div>
+</div>
+<div id="clear"></div>
+<div id="foot" style=" width:100%">
+<div class="all2" id="footlogo">
+<div id="left" ><a href="#"><img src="imges/logo.gif" class="linkimg"  style="float:right"
+/></a><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/07/124/0000/60021200/CA071240000600212000001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+
+<div  style="width: 680px; float: left; color: #FFF; padding-left: 62px; font-size: 14px; line-height: 28px; background-color: #9b999a; padding-top:20px">
+<ul style=" list-style:none">
+<li><a href="#" class="linkwhite">
+版权所有:呼和浩特第一中学&nbsp;&nbsp;&nbsp;&nbsp;蒙ICP备05006614号</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="ditu.php" class="linkwhite">网站地图</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" class="linkwhite">流量统计：<script src="http://s19.cnzz.com/stat.php?id=5440594&web_id=5440594&show=pic" language="JavaScript"></script></a></li>
+<li style=" color:#FFFFFF; padding-left:32px"> 地址：内蒙古呼和浩特市回民区环河街33号   电话：0471-6362638  邮编：010030
+<a href="http://webscan.360.cn/index/checkwebsite/url/www.hhyz.net"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/246c43debfc29baf90699331745b924a"  width="60" height="20"/></a>
+</li>
+</ul>
+</div>
+</div>
+<div id="footlogoleft">
+</div>
+</div>
+</div>
+<!-- 
+<DIV id=ad2 style="z-index: 9999;position:relative;box-shadow: 0 0 5px 1px #000"><a href='http://www.626china.org/' target='_blank'><IMG src="gimages/jindu.jpg" width="260" height="93" border="0" > </a><div style="position: absolute;top: 0;right: 5px;background: "><a  onclick="document.getElementById('ad2').style.display='none'" style="color: #fff;font-size: 18px">☒</a></div>  
+</DIV>
+-->
+ <script type="text/javascript" language="javascript"> 
+function addEvent(obj, evtType, func, cap) { 
+cap = cap || false; 
+if (obj.addEventListener) { 
+obj.addEventListener(evtType, func, cap); 
+return true; 
+} else if (obj.attachEvent) { 
+if (cap) { 
+obj.setCapture(); 
+return true; 
+} else { 
+return obj.attachEvent("on" + evtType, func); 
+} 
+} else { 
+return false; 
+} 
+} 
+function getPageScroll() { 
+var xScroll, yScroll; 
+if (self.pageXOffset) { 
+xScroll = self.pageXOffset; 
+} else if (document.documentElement && document.documentElement.scrollLeft) { 
+xScroll = document.documentElement.scrollLeft; 
+} else if (document.body) { 
+xScroll = document.body.scrollLeft; 
+} 
+if (self.pageYOffset) { 
+yScroll = self.pageYOffset; 
+} else if (document.documentElement && document.documentElement.scrollTop) { 
+yScroll = document.documentElement.scrollTop; 
+} else if (document.body) { 
+yScroll = document.body.scrollTop; 
+} 
+arrayPageScroll = new Array(xScroll, yScroll); 
+return arrayPageScroll; 
+} 
+function GetPageSize() { 
+var xScroll, yScroll; 
+if (window.innerHeight && window.scrollMaxY) { 
+xScroll = document.body.scrollWidth; 
+yScroll = window.innerHeight + window.scrollMaxY; 
+} else if (document.body.scrollHeight > document.body.offsetHeight) { 
+xScroll = document.body.scrollWidth; 
+yScroll = document.body.scrollHeight; 
+} else { 
+xScroll = document.body.offsetWidth; 
+yScroll = document.body.offsetHeight; 
+} 
+var windowWidth, windowHeight; 
+if (self.innerHeight) { 
+windowWidth = self.innerWidth; 
+windowHeight = self.innerHeight; 
+} else if (document.documentElement && document.documentElement.clientHeight) { 
+windowWidth = document.documentElement.clientWidth; 
+windowHeight = document.documentElement.clientHeight; 
+} else if (document.body) { 
+windowWidth = document.body.clientWidth; 
+windowHeight = document.body.clientHeight; 
+} 
+if (yScroll < windowHeight) { 
+pageHeight = windowHeight; 
+} else { 
+pageHeight = yScroll; 
+} 
+if (xScroll < windowWidth) { 
+pageWidth = windowWidth; 
+} else { 
+pageWidth = xScroll; 
+} 
+arrayPageSize = new Array(pageWidth, pageHeight, windowWidth, windowHeight) 
+return arrayPageSize; 
+} 
+var AdMoveConfig = new Object(); 
+AdMoveConfig.IsInitialized = false; 
+AdMoveConfig.ScrollX = 0; 
+AdMoveConfig.ScrollY = 0; 
+AdMoveConfig.MoveWidth = 0; 
+AdMoveConfig.MoveHeight = 0; 
+AdMoveConfig.Resize = function () { 
+var winsize = GetPageSize(); 
+AdMoveConfig.MoveWidth = winsize[2]; 
+AdMoveConfig.MoveHeight = winsize[3]; 
+AdMoveConfig.Scroll(); 
+} 
+AdMoveConfig.Scroll = function () { 
+var winscroll = getPageScroll(); 
+AdMoveConfig.ScrollX = winscroll[0]; 
+AdMoveConfig.ScrollY = winscroll[1]; 
+} 
+addEvent(window, "resize", AdMoveConfig.Resize); 
+addEvent(window, "scroll", AdMoveConfig.Scroll); 
+function AdMove(id) { 
+if (!AdMoveConfig.IsInitialized) { 
+AdMoveConfig.Resize(); 
+AdMoveConfig.IsInitialized = true; 
+} 
+var obj = document.getElementById(id); 
+obj.style.position = "absolute"; 
+var W = AdMoveConfig.MoveWidth - obj.offsetWidth; 
+var H = AdMoveConfig.MoveHeight - obj.offsetHeight; 
+var x = W * Math.random(), y = H * Math.random(); 
+var rad = (Math.random() + 1) * Math.PI / 6; 
+var kx = Math.sin(rad), ky = Math.cos(rad); 
+var dirx = (Math.random() < 0.5 ? 1 : -1), diry = (Math.random() < 0.5 ? 1 : -1); 
+var step = 1; 
+var interval; 
+this.SetLocation = function (vx, vy) { x = vx; y = vy; } 
+this.SetDirection = function (vx, vy) { dirx = vx; diry = vy; } 
+obj.CustomMethod = function () { 
+obj.style.left = (x + AdMoveConfig.ScrollX) + "px"; 
+obj.style.top = (y + AdMoveConfig.ScrollY) + "px"; 
+rad = (Math.random() + 1) * Math.PI / 6; 
+W = AdMoveConfig.MoveWidth - obj.offsetWidth; 
+H = AdMoveConfig.MoveHeight - obj.offsetHeight; 
+x = x + step * kx * dirx; 
+if (x < 0) { dirx = 1; x = 0; kx = Math.sin(rad); ky = Math.cos(rad); } 
+if (x > W) { dirx = -1; x = W; kx = Math.sin(rad); ky = Math.cos(rad); } 
+y = y + step * ky * diry; 
+if (y < 0) { diry = 1; y = 0; kx = Math.sin(rad); ky = Math.cos(rad); } 
+if (y > H) { diry = -1; y = H; kx = Math.sin(rad); ky = Math.cos(rad); } 
+} 
+this.Run = function () { 
+var delay = 10; 
+interval = setInterval(obj.CustomMethod, delay); 
+obj.onmouseover = function () { clearInterval(interval); } 
+obj.onmouseout = function () { interval = setInterval(obj.CustomMethod, delay); } 
+} 
+} 
+</script>
+<!--
+<script type="text/javascript" language="javascript">
+    var ad2 = new AdMove("ad2");
+    ad2.Run();
+    //多组漂浮
+
+</script>
+-->
+
+</body>
+</html>

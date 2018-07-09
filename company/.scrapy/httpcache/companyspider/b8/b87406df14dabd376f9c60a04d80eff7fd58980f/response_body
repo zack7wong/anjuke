@@ -1,0 +1,804 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>东北师范大学附属中学</title>
+
+<link type="text/css" href="/_css/_system/system.css" rel="stylesheet"/>
+<link type="text/css" href="/_upload/site/1/style/1/1.css" rel="stylesheet"/>
+<link type="text/css" href="/_upload/site/00/02/2/style/2/2.css" rel="stylesheet"/>
+       <LINK href="/_css/tpl2/system.css" type="text/css" rel="stylesheet"> 
+       <LINK href="/_css/tpl2/default/default.css" type="text/css" rel="stylesheet"> 
+<link type="text/css" href="/_js/_portletPlugs/simpleNews/css/simplenews.css" rel="stylesheet" />
+<link type="text/css" href="/_js/_portletPlugs/sudyNavi/css/sudyNav.css" rel="stylesheet" />
+
+<script language="javascript" src="/_js/jquery.min.js" sudy-wp-context="" sudy-wp-siteId="2"></script>
+<script language="javascript" src="/_js/jquery.sudy.wp.visitcount.js"></script>
+<script type="text/javascript" src="/_js/_portletPlugs/sudyNavi/jquery.sudyNav.js"></script>
+<link rel="stylesheet" href="/_upload/tpl/00/01/1/template1/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/_upload/tpl/00/01/1/template1/extends/extends.css" type="text/css" media="all" />
+<script src="/_upload/tpl/00/01/1/template1/PubJS/windowStorage.js" type="text/javascript"></script>
+<script src="/_upload/tpl/00/01/1/template1/extends/extends.js"></script>
+
+<script language="javascript" type="text/javascript">
+        // 初始化获取焦点
+        jQuery(document).ready(function () {
+            jQuery("#LoginName").focus();
+        });
+
+        // 登陆验证
+        function JudgeUserLogin() {
+            var txtLoginName = jQuery("#LoginName");
+            var txtPassWord = jQuery("#PassWord");
+
+            if (jQuery.trim(txtLoginName.val()) == "") {
+                alert("用户名不能为空！");
+                txtLoginName.focus();
+                return false;
+            }
+            else if (jQuery.trim(txtPassWord.val()) == "") {
+                alert("密码不能为空！");
+                txtPassWord.focus();
+                return false;
+            }
+            else {
+				$("#log_random").val(Math.random());
+				$("#email_form").submit();
+				window.open("http://oa.msannu.cn/Function/Index.html","EmailFrame");
+            }
+        }
+
+        // 重新填写
+        function txtReSet() {
+            var txtLoginName = jQuery("#LoginName");
+            var txtPassWord = jQuery("#PassWord");
+            txtLoginName.val("");
+            txtPassWord.val("");
+            txtLoginName.focus();
+        }
+
+        // 回车直接执行登陆验证
+        function onKeyPressEnter() {
+            if (event.keyCode == 13) {
+                JudgeUserLogin();
+                return false;
+            }
+        }
+    </script>
+    <script>
+$(function(){
+		$(".hour-item").each(function(index, el) {
+		
+			var $hour = $(".item-time", el);
+			var hour = parseInt($hour.attr('data-time'),10);
+			var label = "";
+			if(0<=hour){
+	            label = "am";
+			}
+			if(12<=hour){
+	            label = "pm";
+			}
+
+			if(label!=="")
+				label = " " + label;
+
+	        $hour.html(function(index,html){
+	            
+	            return html+label;
+	        });
+
+		});
+})
+</script>
+
+</head>
+<body>
+<div class="wrapper1" id="header1">
+	<div class="inner">
+  	      <div class="head" >
+              <div class="head-1">
+                  <p><a href="http://www.msannu.cn/main.htm">首页</a>|<a href="http://www.msannu.cn/lxwm/list.htm">联系我们</a></p>
+              </div>
+    	      <div class="navbar" frag="面板2">
+    	               <div class="navbox" frag="窗口2">
+      	                     <div id="wp_nav_w2"> 
+
+ 
+<ul class="wp_nav" data-nav-config="{drop_v: 'down', drop_w: 'right', dir: 'y', opacity_main: '1', opacity_sub: '0.8', dWidth: '0'}">
+      
+     <li class="nav-item i1 "> 
+         <a href="/zjfz/list.htm" title="走进附中" target="_self"><span class="item-name">走进附中</span></a><i class="mark"></i> 
+          
+         <ul class="sub-nav"> 
+              
+             <li class="nav-item i1-1 "> 
+                 <a href="/xygk/list.htm" title="校园概况" target="_self"><span class="item-name">校园概况</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i1-2 "> 
+                 <a href="/lrxz/list.htm" title="历任校长" target="_self"><span class="item-name">历任校长</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i1-3 "> 
+                 <a href="/xxry/list.htm" title="学校荣誉" target="_self"><span class="item-name">学校荣誉</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i1-4 "> 
+                 <a href="/mtsj/list.htm" title="媒体视角" target="_self"><span class="item-name">媒体视角</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i1-5 "> 
+                 <a href="/fzxb/list.htm" title="附中校报" target="_self"><span class="item-name">附中校报</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+         </ul> 
+          
+     </li> 
+      
+     <li class="nav-item i2 "> 
+         <a href="/jxjy/list.htm" title="教学教研" target="_self"><span class="item-name">教学教研</span></a><i class="mark"></i> 
+          
+         <ul class="sub-nav"> 
+              
+             <li class="nav-item i2-1 "> 
+                 <a href="/kcgg/list.htm" title="课程改革" target="_self"><span class="item-name">课程改革</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i2-2 "> 
+                 <a href="/jspx/list.htm" title="教师培训" target="_self"><span class="item-name">教师培训</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i2-3 "> 
+                 <a href="/jyhd/list.htm" title="教研活动" target="_self"><span class="item-name">教研活动</span></a><i class="mark"></i> 
+                  
+         <ul class="sub-nav"> 
+              
+             <li class="nav-item i2-3-1 "> 
+                 <a href="/zyxq_74/list.htm" title="自由校区" target="_self"><span class="item-name">自由校区</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i2-3-2 "> 
+                 <a href="/75/list.htm" title="青华校区" target="_self"><span class="item-name">青华校区</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i2-3-3 "> 
+                 <a href="/76/list.htm" title="明珠校区" target="_self"><span class="item-name">明珠校区</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i2-3-4 "> 
+                 <a href="/77/list.htm" title="净月校区" target="_self"><span class="item-name">净月校区</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+         </ul> 
+          
+             </li> 
+              
+             <li class="nav-item i2-4 "> 
+                 <a href="/ktyj/list.htm" title="课题研究" target="_self"><span class="item-name">课题研究</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i2-5 "> 
+                 <a href="/kylw/list.htm" title="科研论文" target="_self"><span class="item-name">科研论文</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i2-6 "> 
+                 <a href="/fzxb_26/list.htm" title="附中学报" target="_self"><span class="item-name">附中学报</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+         </ul> 
+          
+     </li> 
+      
+     <li class="nav-item i3 "> 
+         <a href="/mstd/list.htm" title="名师团队" target="_self"><span class="item-name">名师团队</span></a><i class="mark"></i> 
+          
+         <ul class="sub-nav"> 
+              
+             <li class="nav-item i3-1 "> 
+                 <a href="/msfc/list.htm" title="名师风采" target="_self"><span class="item-name">名师风采</span></a><i class="mark"></i> 
+                  
+         <ul class="sub-nav"> 
+              
+             <li class="nav-item i3-1-1 "> 
+                 <a href="/tjjs/list.htm" title="特级教师" target="_self"><span class="item-name">特级教师</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i3-1-2 "> 
+                 <a href="/sjxkdtrwsjggjs/list.htm" title="省级学科带头人、升级骨干教师" target="_self"><span class="item-name">省级学科带头人、升级...</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i3-1-3 "> 
+                 <a href="/sjggjs/list.htm" title="市级骨干教师" target="_self"><span class="item-name">市级骨干教师</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i3-1-4 "> 
+                 <a href="/msgzs/list.htm" title="名师工作室" target="_self"><span class="item-name">名师工作室</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+         </ul> 
+          
+             </li> 
+              
+             <li class="nav-item i3-2 "> 
+                 <a href="/jsjl/list.htm" title="竞赛教练" target="_self"><span class="item-name">竞赛教练</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i3-3 "> 
+                 <a href="/xkdw/list.htm" title="学科队伍" target="_self"><span class="item-name">学科队伍</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i3-4 "> 
+                 <a href="/njtd/list.htm" title="年级团队" target="_self"><span class="item-name">年级团队</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+         </ul> 
+          
+     </li> 
+      
+     <li class="nav-item i4 "> 
+         <a href="/ldsr/list.htm" title="立德树人" target="_self"><span class="item-name">立德树人</span></a><i class="mark"></i> 
+          
+         <ul class="sub-nav"> 
+              
+             <li class="nav-item i4-1 "> 
+                 <a href="/zthd/list.htm" title="主题活动" target="_self"><span class="item-name">主题活动</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i4-2 "> 
+                 <a href="/jyxs/list.htm" title="教育叙事" target="_self"><span class="item-name">教育叙事</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i4-3 "> 
+                 <a href="/aqjy/list.htm" title="安全教育" target="_self"><span class="item-name">安全教育</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i4-4 "> 
+                 <a href="/xlyz/list.htm" title="心灵驿站" target="_self"><span class="item-name">心灵驿站</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+         </ul> 
+          
+     </li> 
+      
+     <li class="nav-item i5 "> 
+         <a href="/xzfc/list.htm" title="学子风采" target="_self"><span class="item-name">学子风采</span></a><i class="mark"></i> 
+          
+         <ul class="sub-nav"> 
+              
+             <li class="nav-item i5-1 "> 
+                 <a href="/zkcj/list.htm" title="中考成绩" target="_self"><span class="item-name">中考成绩</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i5-2 "> 
+                 <a href="/xsry/list.htm" title="学生荣誉" target="_self"><span class="item-name">学生荣誉</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i5-3 "> 
+                 <a href="/gkcj/list.htm" title="高考成绩" target="_self"><span class="item-name">高考成绩</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i5-4 "> 
+                 <a href="/xszz/list.htm" title="学生组织" target="_self"><span class="item-name">学生组织</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i5-5 "> 
+                 <a href="/sthd/list.htm" title="社团活动" target="_self"><span class="item-name">社团活动</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+         </ul> 
+          
+     </li> 
+      
+     <li class="nav-item i6 "> 
+         <a href="/dgtq/list.htm" title="党工团群" target="_self"><span class="item-name">党工团群</span></a><i class="mark"></i> 
+          
+         <ul class="sub-nav"> 
+              
+             <li class="nav-item i6-1 "> 
+                 <a href="/dtdt/list.htm" title="党团动态" target="_self"><span class="item-name">党团动态</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i6-2 "> 
+                 <a href="/dwgk/list.htm" title="党务公开" target="_self"><span class="item-name">党务公开</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i6-3 "> 
+                 <a href="/dyfc/list.htm" title="党员风采" target="_self"><span class="item-name">党员风采</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i6-4 "> 
+                 <a href="/xxyd/list.htm" title="学习园地" target="_self"><span class="item-name">学习园地</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i6-5 "> 
+                 <a href="/ghsh/list.htm" title="工会生活" target="_self"><span class="item-name">工会生活</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i6-6 "> 
+                 <a href="/mzdp/list.htm" title="民主党派" target="_self"><span class="item-name">民主党派</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+         </ul> 
+          
+     </li> 
+      
+     <li class="nav-item i7 "> 
+         <a href="/gjjy/list.htm" title="国际教育" target="_self"><span class="item-name">国际教育</span></a><i class="mark"></i> 
+          
+         <ul class="sub-nav"> 
+              
+             <li class="nav-item i7-1 "> 
+                 <a href="/gjkc/list.htm" title="国际课程" target="_self"><span class="item-name">国际课程</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i7-2 "> 
+                 <a href="/hwzs/list.htm" title="海外招生" target="_self"><span class="item-name">海外招生</span></a><i class="mark"></i> 
+                  
+         <ul class="sub-nav"> 
+              
+             <li class="nav-item i7-2-1 "> 
+                 <a href="/xjjl/list.htm" title="校际交流" target="_self"><span class="item-name">校际交流</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i7-2-2 "> 
+                 <a href="/gjkc_100/list.htm" title="国际课程" target="_self"><span class="item-name">国际课程</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i7-2-3 "> 
+                 <a href="/xslxzx/list.htm" title="学生留学资讯" target="_self"><span class="item-name">学生留学资讯</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i7-2-4 "> 
+                 <a href="/gwzsxx/list.htm" title="国外招生信息" target="_self"><span class="item-name">国外招生信息</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+         </ul> 
+          
+             </li> 
+              
+             <li class="nav-item i7-3 "> 
+                 <a href="/gjjl/list.htm" title="国际交流" target="_self"><span class="item-name">国际交流</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+         </ul> 
+          
+     </li> 
+      
+     <li class="nav-item i8 "> 
+         <a href="/zszx/list.htm" title="招生资讯" target="_self"><span class="item-name">招生资讯</span></a><i class="mark"></i> 
+          
+         <ul class="sub-nav"> 
+              
+             <li class="nav-item i8-1 "> 
+                 <a href="/zyxq/list.htm" title="自由校区" target="_self"><span class="item-name">自由校区</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i8-2 "> 
+                 <a href="/qhxq/list.htm" title="青华校区" target="_self"><span class="item-name">青华校区</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i8-3 "> 
+                 <a href="/jyxq/list.htm" title="净月校区" target="_self"><span class="item-name">净月校区</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i8-4 "> 
+                 <a href="/mzxq/list.htm" title="明珠校区" target="_self"><span class="item-name">明珠校区</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i8-5 "> 
+                 <a href="/gjb/list.htm" title="国际部" target="_self"><span class="item-name">国际部</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+         </ul> 
+          
+     </li> 
+      
+     <li class="nav-item i9 "> 
+         <a href="http://122.139.1.106:8080" title="课程平台" target="_blank"><span class="item-name">课程平台</span></a><i class="mark"></i> 
+          
+     </li> 
+      
+     <li class="nav-item i10 "> 
+         <a href="/xyxq/list.htm" title="校友校庆" target="_self"><span class="item-name">校友校庆</span></a><i class="mark"></i> 
+          
+     </li> 
+      
+     <li class="nav-item i11 "> 
+         <a href="/wwwwwww/list.htm" title="ENGLISH" target="_self"><span class="item-name">ENGLISH</span></a><i class="mark"></i> 
+          
+         <ul class="sub-nav"> 
+              
+             <li class="nav-item i11-1 "> 
+                 <a href="/wboutwwwwwww/list.htm" title="About HSANNU" target="_self"><span class="item-name">About HSANNU</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i11-2 "> 
+                 <a href="/wessagewfromwthewprincipal/list.htm" title="Message from the principal" target="_self"><span class="item-name">Message from the pri...</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i11-3 "> 
+                 <a href="/wchoolwwonors/list.htm" title="School Honors" target="_self"><span class="item-name">School Honors</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i11-4 "> 
+                 <a href="/wnternationalwwducation/list.htm" title="International Education" target="_self"><span class="item-name">International Educat...</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i11-5 "> 
+                 <a href="/wnternationalwwxchange/list.htm" title="International Exchange" target="_self"><span class="item-name">International Exchan...</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+             <li class="nav-item i11-6 "> 
+                 <a href="/wnrollmentwwist/list.htm" title="Enrollment List" target="_self"><span class="item-name">Enrollment List</span></a><i class="mark"></i> 
+                  
+             </li> 
+              
+         </ul> 
+          
+     </li> 
+      
+</ul> 
+ 
+ 
+ </div>
+                       </div>
+              </div>
+         </div>
+  </div>
+</div>
+<div frag="面板16"><div frag="窗口16"></div></div>
+<div class="wrapper1" id="container1">
+	<div class="inner">
+  	       <div class="cont-z">
+                <div class="cont-z-1">
+                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="625" height="605">
+<param name="movie" value="/_upload/tpl/00/01/1/template1/images/bannern.swf"> 
+<param name="wmode" value="transparent">
+<param name="quality" value="high">
+<embed src="/_upload/tpl/00/01/1/template1/images/bannern.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="625" height="605"  wmode="transparent"></embed></object>
+                </div>
+                <div class="cont-z-2" >
+                    <div class="tt">
+                        <h3 class="tit"><span>校园时光</span></h3>
+                        <div class="shangc"><a target="_blank" href="/_web/_plugs/artContribute/web/contributePicEdit.jsp?_p=YXM9MiZ0PTgmcD0xJm09TiY_"><img src="/_upload/tpl/00/01/1/template1/images/shangc-bg.jpg" /></a></div>
+                    </div>
+                    <div class="con" frag="面板4">
+                        <div frag="窗口4">
+                            <div id="topw4" class="imgscroll2_top" style="width:550px;height:100%;overflow:hidden;">
+    <table id="tabw4" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td id="beginw4">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="imgscroll2_tpl " >
+                    <tr class=" " >
+                        <td nowrap="nowrap" class=" imgscroll2_td " >
+                            <div class="imgscroll2_img">
+                                <a tailtagoutput="false" target="_blank" href="/2018/0417/c59a787/page.htm" title="法国团" >
+                                    
+                                        <img alt="法国团" src="/_upload/article/images/c9/e7/8b3ea28c41a6b91aeef45a19871c/5426d733-e85c-47cb-be9a-5dc3e32b5d24_s.jpg" width="300px" height="200px" >
+                                    
+                                </a>
+                            </div>
+                        </td><td nowrap="nowrap" class=" imgscroll2_td " >
+                            <div class="imgscroll2_img">
+                                <a tailtagoutput="false" target="_blank" href="/2018/0417/c59a786/page.htm" title="植树" >
+                                    
+                                        <img alt="植树" src="/_upload/article/images/94/b0/ca127f6b4ff2a61cdb48cb5bc9d7/3deafa28-eebb-4133-a634-f388afdfbe91_s.jpg" width="300px" height="200px" >
+                                    
+                                </a>
+                            </div>
+                        </td><td nowrap="nowrap" class=" imgscroll2_td " >
+                            <div class="imgscroll2_img">
+                                <a tailtagoutput="false" target="_blank" href="/2018/0417/c59a785/page.htm" title="跳大绳" >
+                                    
+                                        <img alt="跳大绳" src="/_upload/article/images/32/6e/467ef12248d5865f9fceb080bd07/b68bcd21-bd46-42dd-96eb-1b7036af63bb_s.jpg" width="300px" height="200px" >
+                                    
+                                </a>
+                            </div>
+                        </td><td nowrap="nowrap" class=" imgscroll2_td " >
+                            <div class="imgscroll2_img">
+                                <a tailtagoutput="false" target="_blank" href="/2018/0417/c59a784/page.htm" title="诗歌会" >
+                                    
+                                        <img alt="诗歌会" src="/_upload/article/images/9b/e4/1ad7e48a4c0bb8b9b99bb7ecdd2f/c9651ad5-21c9-4c8f-bb08-5cda82af63ea_s.jpg" width="300px" height="200px" >
+                                    
+                                </a>
+                            </div>
+                        </td><td nowrap="nowrap" class=" imgscroll2_td " >
+                            <div class="imgscroll2_img">
+                                <a tailtagoutput="false" target="_blank" href="/2018/0417/c59a783/page.htm" title="书画会" >
+                                    
+                                        <img alt="书画会" src="/_upload/article/images/0a/22/107a2cd74bb68518c45aa89250ed/0cee4d43-1634-4608-8dd1-c3a2f8c57c3d_s.jpg" width="300px" height="200px" >
+                                    
+                                </a>
+                            </div>
+                        </td><td nowrap="nowrap" class=" imgscroll2_td " >
+                            <div class="imgscroll2_img">
+                                <a tailtagoutput="false" target="_blank" href="/2018/0417/c59a782/page.htm" title="书画会" >
+                                    
+                                        <img alt="书画会" src="/_upload/article/images/5a/c3/407a4b234cad81dcd59e2a3a12df/a1248615-55a6-4f1f-a3a7-f3846afea1d0_s.jpg" width="300px" height="200px" >
+                                    
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td id="endw4"></td>
+        </tr>
+    </table>
+</div>
+
+<script language="javascript">
+    var topw4 = document.getElementById("topw4");
+    var beginw4 = document.getElementById("beginw4");
+    var endw4 = document.getElementById("endw4");
+    var tabw4 = document.getElementById("tabw4");
+    //复制内容
+    endw4.innerHTML = beginw4.innerHTML;
+    //调整table的宽度
+    tabw4.style.width = topw4.offsetWidth * 2;
+    //循环函数
+    function marqueew4() {
+        if (endw4.offsetWidth - topw4.scrollLeft <= 0) {
+            topw4.scrollLeft -= beginw4.offsetWidth;
+        } else {
+            topw4.scrollLeft += 1;
+        }
+    }
+    //定时器
+    var mymarw4 = setInterval(marqueew4, 20);
+    //鼠标移入
+    topw4.onmouseover = function() {
+        clearInterval(mymarw4);
+    };
+    //鼠标移出
+    topw4.onmouseout = function() {
+        mymarw4 = setInterval(marqueew4, 20);
+    };
+</script>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="cont-y">
+                <div class="cont-y-1" >
+                       <div class="sudy-tab">
+                           <div class="fan">
+                              <h3 class="jia1"><span>登陆入口</span></h3>
+                              <div class="jia2">
+                                  <ul class="tab-menu">
+                                     <li class="xiaon">管理登录</li>
+                                     <li class="youx"><a href="http://zy.msannu.cn/main/login.aspx" target="_blank">内网登录</a></li>
+                                  </ul>
+                              </div>
+                              <div class="clear"></div>
+                           </div>
+                           <ul class="tab-list">
+                                  <li>
+									<div frag="面板80">
+                                       <div frag="窗口80">
+                                            <div id="wp_login_w80"> 
+<div class="wp_login_x clearfix">
+    <div class="wp_login_form">
+        <form id='w80_loginform' name='w80_loginform' method="post">
+            <div class="login_input login_username"><label for="login_username">用户名：</label><span class="input"><input type='hidden' name='isSubmitted' value='1'/><input id='w80_userName' name='userName' onkeydown="if(event.keyCode=='13'){if(this.value==''){alert('请输入用户名！');}else{$('#w80_password').focus();}}" size='20'/></span></div>
+            <div class="login_input login_password"><label for="login_password">密码：</label><span class="input"><input type='password' id='w80_password' name='password' onkeydown="if(event.keyCode=='13'){if($('#w80_validateCode').length>0){$('#w80_validateCode').focus();}else{w80_userLogin();}}" size='20' /></span></div>
+            <div class="login_input login_code"><label for="login_code">验证码：</label><span class="input"><input name='validateCode' id='w80_validateCode' onkeydown="if(event.keyCode=='13'){w80_userLogin();}" /></span><span class="verifycodeImg"><img src="/_control/validateimage" id="w80_validateCode_img"/></span></div>
+            <div class="login_input login_btn"><span class="button"><input name="submit" type="button" id="w80_loginButton" value="登录"/></span></div>
+        </form>
+    </div>
+</div>
+</div> 
+
+<script type='text/javascript'> 
+    $().ready(function() { 
+        $("#w80_loginButton").click(function() { 
+            w80_userLogin(); 
+        }); 
+    }); 
+    function w80_userLogin() { 
+        if($('#w80_userName').val()=='') { 
+           $('#w80_userName').focus(); 
+            alert('请输入用户名！'); 
+        } else if($('#w80_password').val()=='') { 
+           $('#w80_password').focus(); 
+            alert('请输入密码！'); 
+        } else { 
+            if($('#w80_validateCode').length>0 && $('#w80_validateCode').val()=='') { 
+           $('#w80_validateCode').focus(); 
+                alert('请输入验证码！'); 
+                return; 
+            } 
+            $.post("/_web/ids/login.do?_p=YXM9MiZ0PTEmZD0xJnA9MSZtPVNOJg__&tt=" + Math.random(), {userName: $("#w80_userName").val(), password: $("#w80_password").val(), validateCode: $('#w80_validateCode').val()}, function(result) { 
+                var loginInfo = eval('(' + result + ')'); 
+                if (loginInfo.status !== 1) {  
+                  getCode();
+                   $("#w80_validateCode_img").trigger('click');
+                  alert(loginInfo.message); return; } 
+                var visitUrl = '/main.htm'; 
+                visitUrl = visitUrl.replace('.htm', '.psp'); 
+                window.location.href = visitUrl; 
+            }); 
+        } 
+    } 
+    function getCode() { 
+   $('#w1_validateCode_img').on('click', function(event) { 
+   event.preventDefault();
+    document.getElementById("w80_validateCode_img").src="/_control/validateimage?tt="+ Math.random();
+    }); 
+    } 
+</script>
+                                       </div>
+									</div>
+                                  </li>
+  	                                                                
+                           </ul>
+                       </div>                
+                </div>
+                <div class="cont-y-2" frag="面板6">
+                     <div class="post post-3 mbox" frag="窗口6">
+        	            <div class="tt">
+          	                 <h3 class="tit"><span class="title" frag="标题">通知公告</span></h3>
+                             <div class="more_btn" frag="按钮" type="更多"><a href="/tzgg/list.htm" class="w6_more"><span class="more_text" frag="按钮内容">更多&gt;&gt;</span></a></div>
+                        </div>
+                        <div class="con">
+                             <div id="wp_news_w6"> 
+
+                                     <ul class="news_list">
+                                            
+                                                    <li class="news n1 clearfix"><span class="news_meta post_lanmu">[通知公告]</span><span class="news_title"><a href='/2018/0517/c3a807/page.htm' target='_blank' title='东北师大附中2018年招聘初中部心理教师和体育教师的通知'><font style='color:#FF0000;'>东北师大附中2018年招聘初中部心...</font></a></span><span class="news_time">[2018-05-17]</span></li>
+                                            
+                                                    <li class="news n2 clearfix"><span class="news_meta post_lanmu">[通知公告]</span><span class="news_title"><a href='/2018/0417/c3a798/page.htm' target='_blank' title='东北师范大学附属中学2018年体育艺术特长生招生简章'><font style='color:#FF0000;'>东北师范大学附属中学2018年体育...</font></a></span><span class="news_time">[2018-04-17]</span></li>
+                                            
+                                                    <li class="news n3 clearfix"><span class="news_meta post_lanmu">[通知公告]</span><span class="news_title"><a href='/2018/0316/c3a737/page.htm' target='_blank' title='香港中文大学招生说明会'>香港中文大学招生说明会</a></span><span class="news_time">[2018-03-16]</span></li>
+                                            
+                                                    <li class="news n4 clearfix"><span class="news_meta post_lanmu">[通知公告]</span><span class="news_title"><a href='/2018/0312/c3a734/page.htm' target='_blank' title='2018IB国际课程实验班招生考试报名'><font style='font-weight:bold;color:#FF0000;'>2018IB国际课程实验班招生考试报...</font></a></span><span class="news_time">[2018-03-12]</span></li>
+                                            
+                                                    <li class="news n5 clearfix"><span class="news_meta post_lanmu">[通知公告]</span><span class="news_title"><a href='/2018/0417/c3a801/page.htm' target='_blank' title='东北师范大学附属中学维修材料采购项目竞磋公告'>东北师范大学附属中学维修材料采...</a></span><span class="news_time">[2018-05-08]</span></li>
+                                            
+                                                    <li class="news n6 clearfix"><span class="news_meta post_lanmu">[通知公告]</span><span class="news_title"><a href='/2018/0417/c3a800/page.htm' target='_blank' title='东北师大附中明珠校区校园北侧防护墙维修改造工程'>东北师大附中明珠校区校园北侧防...</a></span><span class="news_time">[2018-05-08]</span></li>
+                                            
+                                                    <li class="news n7 clearfix"><span class="news_meta post_lanmu">[通知公告]</span><span class="news_title"><a href='/2018/0417/c3a799/page.htm' target='_blank' title='东北师大附中明珠校区教学楼C座外墙加固改造工程竞磋公告'>东北师大附中明珠校区教学楼C座...</a></span><span class="news_time">[2018-05-08]</span></li>
+                                            
+                                                    <li class="news n8 clearfix"><span class="news_meta post_lanmu">[通知公告]</span><span class="news_title"><a href='/2018/0417/c3a802/page.htm' target='_blank' title='长春东师附中青华学校摄像机采购项目竞磋公告'>长春东师附中青华学校摄像机采购...</a></span><span class="news_time">[2018-05-08]</span></li>
+                                            
+                                     </ul>
+                             </div> 
+
+<div class="more"><a class="more-link" href="/tzgg/list.htm" title="显示更多"><span class="moretext"><img src="/_js/_portletPlugs/simpleNews/css/icon_more_1.gif" border="0"/></span></a></div>
+                        </div>
+                     </div>
+                </div>
+                <div class="cont-y-3" frag="面板7">
+                     <div class="post post-3 mbox" frag="窗口7">
+        	            <div class="tt">
+          	                 <h3 class="tit"><span class="title" frag="标题">校园快讯</span></h3>
+                             <div class="more_btn" frag="按钮" type="更多"><a href="/xykx/list.htm" class="w7_more"><span class="more_text" frag="按钮内容">更多&gt;&gt;</span></a></div>
+                        </div>
+                        <div class="con">
+                             <div id="wp_news_w7"> 
+
+                                     <ul class="news_list">
+                                            
+                                                    <li class="news n1 clearfix"><span class="news_meta post_lanmu">[校园快讯]</span><span class="news_title"><a href='/2018/0517/c4a806/page.htm' target='_blank' title='我校盟员教师参加中国民主同盟吉林省委表彰大会'>我校盟员教师参加中国民主同盟吉...</a></span><span class="news_time">[2018-05-14]</span></li>
+                                            
+                                                    <li class="news n2 clearfix"><span class="news_meta post_lanmu">[校园快讯]</span><span class="news_title"><a href='/2018/0517/c4a803/page.htm' target='_blank' title='2018相约附中--东北师大附中2018招生说明会暨校园开放日圆满结束'>2018相约附中--东北师大附中2018...</a></span><span class="news_time">[2018-05-14]</span></li>
+                                            
+                                                    <li class="news n3 clearfix"><span class="news_meta post_lanmu">[校园快讯]</span><span class="news_title"><a href='/2018/0517/c4a805/page.htm' target='_blank' title='名师团队助力高三学子 教育帮扶彰显名校责任'>名师团队助力高三学子 教育帮扶...</a></span><span class="news_time">[2018-05-08]</span></li>
+                                            
+                                                    <li class="news n4 clearfix"><span class="news_meta post_lanmu">[校园快讯]</span><span class="news_title"><a href='/2018/0517/c4a804/page.htm' target='_blank' title='不忘初心 牢记使命 砥砺前行——学校党委组织校级领导干部开展集体学习活动'>不忘初心 牢记使命 砥砺前行——学...</a></span><span class="news_time">[2018-05-08]</span></li>
+                                            
+                                                    <li class="news n5 clearfix"><span class="news_meta post_lanmu">[校园快讯]</span><span class="news_title"><a href='/2018/0417/c4a797/page.htm' target='_blank' title='法国雷蒙格诺高中师生访学团来我校学习交流'>法国雷蒙格诺高中师生访学团来我...</a></span><span class="news_time">[2018-04-17]</span></li>
+                                            
+                                                    <li class="news n6 clearfix"><span class="news_meta post_lanmu">[校园快讯]</span><span class="news_title"><a href='/2018/0417/c4a796/page.htm' target='_blank' title='春风沐桃李，雨露润芳华——第三期《校长有约》活动侧记'>春风沐桃李，雨露润芳华——第三期...</a></span><span class="news_time">[2018-04-17]</span></li>
+                                            
+                                                    <li class="news n7 clearfix"><span class="news_meta post_lanmu">[校园快讯]</span><span class="news_title"><a href='/2018/0417/c4a795/page.htm' target='_blank' title='学术型中学的班风建设——高中部全校班主任主题培训（二）'>学术型中学的班风建设——高中部全...</a></span><span class="news_time">[2018-04-17]</span></li>
+                                            
+                                                    <li class="news n8 clearfix"><span class="news_meta post_lanmu">[校园快讯]</span><span class="news_title"><a href='/2018/0417/c4a794/page.htm' target='_blank' title='吉林省科研兴校示范基地协作研究会暨长春市特色学校经验交流现场会——东北师范大学附属中学学术型中学建设主题展示'>吉林省科研兴校示范基地协作研究...</a></span><span class="news_time">[2018-04-17]</span></li>
+                                            
+                                     </ul>
+                             </div> 
+
+<div class="more"><a class="more-link" href="/xykx/list.htm" title="显示更多"><span class="moretext"><img src="/_js/_portletPlugs/simpleNews/css/icon_more_1.gif" border="0"/></span></a></div>
+                        </div>
+                     </div>
+                </div>
+                <div class="cont-y-4" frag="面板8">
+                     <div class="post post-3 mbox" frag="窗口8">
+        	            <div class="tt">
+          	                 <h3 class="tit"><span class="title" frag="标题">教学教研</span></h3>
+                             <div class="more_btn" frag="按钮" type="更多"><a href="/jxjy/list.htm" class="w8_more"><span class="more_text" frag="按钮内容">更多&gt;&gt;</span></a></div>
+                        </div>
+                        <div class="con">
+                             <div id="wp_news_w8"> 
+
+                                     <ul class="news_list">
+                                            
+                                                    <li class="news n1 clearfix"><span class="news_meta post_lanmu">[教学教研]</span><span class="news_title"><a href='/2017/1212/c6a645/page.htm' target='_blank' title='我校英语组王锐教师在第25届三省四校青年教师课上表现精彩'>我校英语组王锐教师在第25届三省...</a></span><span class="news_time">[2017-12-12]</span></li>
+                                            
+                                                    <li class="news n2 clearfix"><span class="news_meta post_lanmu">[教学教研]</span><span class="news_title"><a href='/2017/1212/c6a632/page.htm' target='_blank' title='深入开展岗位练功  切实提高自身素质——生物教研室组会通报'>深入开展岗位练功  切实提高自身...</a></span><span class="news_time">[2017-12-12]</span></li>
+                                            
+                                                    <li class="news n3 clearfix"><span class="news_meta post_lanmu">[教学教研]</span><span class="news_title"><a href='/2017/1208/c6a626/page.htm' target='_blank' title='体育教研室、历史教研室青年教师展示课圆满结束'>体育教研室、历史教研室青年教师...</a></span><span class="news_time">[2017-12-08]</span></li>
+                                            
+                                                    <li class="news n4 clearfix"><span class="news_meta post_lanmu">[教学教研]</span><span class="news_title"><a href='/2017/1116/c6a594/page.htm' target='_blank' title='孙立权语文名师工作室在松原实验高中举办教研活动'>孙立权语文名师工作室在松原实验...</a></span><span class="news_time">[2017-11-16]</span></li>
+                                            
+                                                    <li class="news n5 clearfix"><span class="news_meta post_lanmu">[明珠校区]</span><span class="news_title"><a href='/2017/0329/c6a39/page.htm' target='_blank' title='我校教师赴京参加学术研讨会获好评'>我校教师赴京参加学术研讨会获好...</a></span><span class="news_time">[2016-11-29]</span></li>
+                                            
+                                                    <li class="news n6 clearfix"><span class="news_meta post_lanmu">[教研活动]</span><span class="news_title"><a href='/2017/0329/c6a40/page.htm' target='_blank' title='东北师大附中第34届教学百花奖教研活动圆满落幕'>东北师大附中第34届教学百花奖教...</a></span><span class="news_time">[2016-11-22]</span></li>
+                                            
+                                     </ul>
+                             </div> 
+
+<div class="more"><a class="more-link" href="/jxjy/list.htm" title="显示更多"><span class="moretext"><img src="/_js/_portletPlugs/simpleNews/css/icon_more_1.gif" border="0"/></span></a></div>
+                        </div>
+                     </div>
+                
+                </div>
+           </div>
+           <div class="clear"></div>
+    </div>
+</div>
+
+<div class="wrapper1" id="footer1">
+	<div class="inner">
+  	<div class="foot">
+        <div class="xinx"><a class="xiaoz" target="_blank" href="http://www.msannu.cn/_web/leadermail/initLookReplies.do?_p=YXM9MiZ0PTgmcD0xJm09TiY_&leaderMailBoxId=4&request_locale=zh_CN&localeCH=true">校长信箱</a><a class="dianz" href="javascript:void(0)">电子校刊</a><a class="shuji" target="_blank" href="http://dw.msannu.cn/Main/MessageAdd.aspx">书记信箱</a></div>
+    	<p>版权所有&copy; 东北师范大附属中学 &nbsp; 吉ICP备05007184号</p>
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="/_upload/tpl/00/01/1/template1/PubJS/UserLogin.js"></script>
+</html>
+ <image src="/_visitcount?siteId=2&type=1&columnId=2" style="display:none" width="0" height="0"></image>

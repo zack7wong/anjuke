@@ -1,0 +1,641 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>吕叔湘中学</title>
+    <link rel="stylesheet" type="text/css" href="/lsxSchool/Public/Home/CSS/base.css">     
+    <link rel="stylesheet" type="text/css" href="/lsxSchool/Public/Home/CSS/lib.css">
+    <script type="text/javascript" src="/lsxSchool/Public/Home/JS/common.js"></script>
+    <script type="text/javascript" src="/lsxSchool/Public/Home/JS/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="/lsxSchool/Public/Home/JS/Focus/myfocus-2.0.1.min.js"></script>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+        //设置
+        myFocus.set({
+            id:'myFocus',//ID
+            pattern:'mF_fancy'//风格
+        });
+        </script>
+        <div id="Top-bar">
+             <div class="wrapper pos_r">
+                  <div class="Top-bar-white"></div>
+                  <div class="Top-bar-shadow"><img src="/lsxSchool/Public/Home/IMAGE/top_shadow.fw.png" border="0" width="900" height="14"></div>
+             </div>
+        </div>
+        
+        <div id="Logo-bar">
+             <div class="wrapper">  
+                  <div class="logo">
+                       <img src="/lsxSchool/Public/Home/IMAGE/logo.fw.png" border="0">
+                  </div>
+                  <div class="Logo-bar-tools">
+                       <ul>
+                           <li><a href="http://222.186.112.3/oa/" target="_blank"><img src="/lsxSchool/Public/Home/IMAGE/top_office.fw.png" border="0"></a></li>
+                           <li><a href="ftp://192.168.4.4/" target="_blank"><img src="/lsxSchool/Public/Home/IMAGE/top_ftp.fw.png" border="0"></a></li>
+                           <li><a href="mailto:30691539@qq.com" target="_blank"><img src="/lsxSchool/Public/Home/IMAGE/top_xiaozhang.fw.png" border="0" ></a></li>
+                           <li><a href="/Home/Mail/index.html" target="_blank"><img src="/lsxSchool/Public/Home/IMAGE/top_post.fw.png" border="0" ></a></li>
+                       </ul>
+                  </div>
+                  <div class="Logo-bar-right">
+                       <ul>
+                           <li><a href="javascript:void(0);" onclick="SetHome(this,'http://www.dysz.net.cn');">设为首页</a></li>
+                           <li>|</li>
+                           <li><a href="javascript:void(0);" onclick="AddFavorite('吕叔湘中学','http://www.dysz.net.cn')">加入收藏</a></li>
+                           <li>|</li>
+                           <li><a href="">联系我们</a></li>
+                       </ul>
+                  </div>
+             </div>
+        </div>
+        <div class="clear"></div>
+        <div id="Menu-bar">
+             <div class="wrapper pos_r"> 
+                  <link rel="stylesheet" type="text/css" href="/lsxSchool/Public/Home/CSS/menudt.css">
+<ul>
+   <li id='menu_index'><a href="/Index/index.html" class="m-menu">首页</a></li>
+<li show='Lsx'>
+   <a href="http://www.dysz.net.cn/Lsx.html" class="m-menu">吕叔湘</a>
+   <div class="inner-m">吕叔湘</div>
+      
+       <div id="Lsx" class="menuc shadow-3">
+           <div class='lsx_topline'>
+            <img src="/lsxSchool/Public/Home/IMAGE/lsx_top_1.jpg" border="0" width="105" height="30">
+            </div>
+            <div class="lsx_content">
+                <div class="lsx_content_left"><img src="/lsxSchool/Public/Home/IMAGE/lsx_header.jpg" border="0" width="230" height="300" ></div>
+                <div class="lsx_content_right">
+                    <div class="lsx_content_right_left">
+                    <span style="text-indent: 30px;display:inline-block;">语言学家，语文教育家。</span><br>
+                    <span style="text-indent: 30px;display:inline-block;">江苏丹阳人。１９８６年加入中国共产党。１９２６年东南大学外国语文系毕业，后曾在丹阳县立中学、苏州中学任教。 １９３６年赴英国留学，先后在牛津大学人类学系、伦敦大学图书馆学科修读。１９３８年回国后先后任云南大学文史系副教授，华西协合大学中国文化研究所研究员，金陵大学中国文化研究所研究员兼中央大学中文系教授以及开明书店编辑等职。</span><br>
+                    <span style="text-indent: 30px;display:inline-block;">新中国成立后，１９５０年－１９５２年任清华大学中国语文系教授、东欧交换生语文专修班主任。</span>
+                    </div>
+                    <div class="lsx_content_right_right">
+                    <span style="text-indent: 30px;display:inline-block;">他长期从事汉语语法的研究，是近代汉语语法的开创人之一，所著《中国文法要略》是迄今为止对汉语句法全面进行语义分析的唯一著作。主要著作有：《文言虚字》、《中国人学英文》、《语法修辞讲话》、《汉语语法论文集》、《汉语语法分析问题》、《现代汉语八百词》、《近代汉语指代词》、《吕叔湘语文论集》等。</span>
+                    <span style="text-indent: 30px;display:inline-block;"> １９９８年４月９日，因病在北京逝世，享年９４岁。时任校长袁炳泉专程赴北京参加了吕先生的葬礼。</span>
+                    </div>
+                </div>
+                <div id="lsx_navi">
+                    <a href="/Home/Lsx/lists/id/19.html" target="_parent" class="lsx_navi_a"><div style="background:#1369C0;left:0px">吕叔湘先生<br>介绍</div></a>
+                    <a href="/Home/Lsx/lists/id/20.html" target="_parent" class="lsx_navi_a"><div style="background:#5FA863;left:128px">吕叔湘与学<br>校的渊源</div></a>
+                    <a href="/Home/Lsx/lists/id/22.html" target="_parent" class="lsx_navi_a"><div style="background:#FFA803;right:0px">吕叔湘<br>图文集</div></a>
+                </div>
+            </div>
+       </div>
+         
+      
+      
+      
+   </li><li show='News'>
+   <a href="http://www.dysz.net.cn/News.html" class="m-menu">新闻专栏</a>
+   <div class="inner-m">新闻专栏</div>
+        
+       <div id="News" class="menuc shadow-3">
+           <div class="top_news_1"><a href="/Cate/lists/id/24.html"><img src="/lsxSchool/Public/Home/IMAGE/top_news_1.jpg" border="0" width="188" height="91" ></a></div>
+           <div class="top_news_2"><a href="/Cate/lists/id/56.html"><img src="/lsxSchool/Public/Home/IMAGE/top_news_2.jpg" border="0" width="188" height="91" ></a></div>
+           <div class="top_title_sign"><img src="/lsxSchool/Public/Home/IMAGE/top_title_sign.fw.png" border="0" width="194" height="30" ><span>栏目内容</span></div>
+           <div class="top_new_title_col">
+       
+            <dl>
+                <dt infoid="12"><a href="/Cate/lists/id/12.html">教育动态</a></dt>
+                <dt infoid="13"><a href="/Cate/lists/id/13.html">校园动态</a></dt>
+                <dt infoid="23"><a href="/Cate/lists/id/23.html">上级动态</a></dt>
+            </dl>
+            <div id='top_news_ajax_content'>
+            
+            </div>
+            </div> 
+            <div class="top_news_pic"> 
+                <img src="/lsxSchool/Public/Home/IMAGE/top_news_pic2.jpg" border="0" width="205" height="125">
+                <img src="/lsxSchool/Public/Home/IMAGE/top_news_pic3.jpg" border="0" width="205" height="125">
+                <img src="/lsxSchool/Public/Home/IMAGE/top_news_pic1.jpg" border="0" width="205" height="125">
+                <img src="/lsxSchool/Public/Home/IMAGE/top_news_pic4.jpg" border="0" width="205" height="125">
+                <img src="/lsxSchool/Public/Home/IMAGE/top_news_pic5.jpg" border="0" width="205" height="125">
+            </div>     
+                 
+       </div>
+      
+      
+      
+      
+   </li><li show='School'>
+   <a href="http://www.dysz.net.cn/School.html" class="m-menu">学校概况</a>
+   <div class="inner-m">学校概况</div>
+         
+     
+       <div id="School" class="menuc shadow-3">
+            <div class="top_school_left">
+            <a href="/Cate/lists/id/26.html"><img src="/lsxSchool/Public/Home/IMAGE/top_school_1.jpg" border="0" width="145" height="66"></a>
+            <a href="/Cate/lists/id/73.html"><img src="/lsxSchool/Public/Home/IMAGE/top_school_2.jpg" border="0" width="145" height="66"></a>
+            <a href="/Cate/lists/id/65.html"><img src="/lsxSchool/Public/Home/IMAGE/top_school_3.jpg" border="0" width="145" height="66"></a>
+            <a href="/Cate/lists/id/63.html"><img src="/lsxSchool/Public/Home/IMAGE/top_school_4.jpg" border="0" width="145" height="66"></a>
+            <a href="/Cate/lists/id/33.html"><img src="/lsxSchool/Public/Home/IMAGE/top_school_5.jpg" border="0" width="145" height="66"></a>
+            </div>
+            <div class="top_school_title_sign"><img src="/lsxSchool/Public/Home/IMAGE/top_title_sign.fw.png" border="0" width="194" height="30" ><span>学校概况</span></div>
+            <div class="top_school_content">
+            吕叔湘中学，占地面积102亩，座落在丹阳市区城河路上，交通便捷，环境优美。<br><p style="text-indent: 20px">她创建于1925年，初校名为“丹阳县立初级中学”，校址位于丹阳西门府馆巷城隍庙。1928年被迁址至西门夫子庙，1946年又迁至老北门积谷仓（即现址），更名为“丹阳县中”。后又更名为“井岗山中学”“丹阳县第二中学”“丹阳县中学”“丹阳市中学”。1998年更名为“丹阳市高级中学”，高质量通过省重点高中验收。2003年9月，更名为“吕叔湘中学”。2004年3月转评为“三星级高中”。 2006年12月高标准通过省四星级高中评估验收。<a href="/Cate/lists/id/27.html" style="color:#F67706">【更多】</a></p>
+            </div>
+            <div class="top_school"><img src="/lsxSchool/Public/Home/IMAGE/school.jpg" border="0" width="290" height="177"></div>   
+            <div class="top_school_pic">
+            <a href="/Cate/lists/id/28.html"><img src="/lsxSchool/Public/Home/IMAGE/top_school_pic_1.jpg" border="0" width="160" height="106"></a>
+            <a href="/Cate/lists/id/28.html"><img src="/lsxSchool/Public/Home/IMAGE/top_school_pic_2.jpg" border="0" width="160" height="106"></a>
+            </div>  
+            <div class="top_school_bottom">
+            <ul>
+            <li><a href="/Cate/lists/id/31.html">组织机构</a></li>
+            <li><a href="/Cate/lists/id/32.html">安全工作</a></li>
+            <li><a href="/Cate/lists/id/29.html">校庆专栏</a></li>
+            <li><a href="/Cate/lists/id/64.html">地理基地</a></li>
+            <li><a href="/Cate/lists/id/72.html">校园足球</a></li>
+            </ul>
+            </div>
+       </div>
+      
+      
+      
+   </li><li show='Teacher'>
+   <a href="http://www.dysz.net.cn/Teacher.html" class="m-menu">教师频道</a>
+   <div class="inner-m">教师频道</div>
+         
+      
+     
+       <div id="Teacher" class="menuc shadow-3">
+           <div class="top_teacher_title_sign"><img src="/lsxSchool/Public/Home/IMAGE/top_title_sign.fw.png" border="0" width="194" height="30" ><span>名师风采</span></div>
+           <div class="top_teacher_content">
+           <img src="/lsxSchool/Public/Home/IMAGE/top_teacher_1.jpg" border="0" width="213" height="142">
+           <img src="/lsxSchool/Public/Home/IMAGE/top_teacher_2.jpg" border="0" width="213" height="142">
+           <img src="/lsxSchool/Public/Home/IMAGE/top_teacher_3.jpg" border="0" width="213" height="142">
+           </div>
+           <div class="top_teacher_title2">
+           <img src="/lsxSchool/Public/Home/IMAGE/top_teacher_title2.jpg" border="0" width="12" height="23"><div>教师博客</div>
+           </div>
+           
+           <div class="top_teacher_right">
+           <a href="/Cate/lists/id/61.html"><img src="/lsxSchool/Public/Home/IMAGE/top_teacher_sign_1.jpg" border="0"></a>
+           <a href="/Cate/lists/id/34.html"><img src="/lsxSchool/Public/Home/IMAGE/top_teacher_sign_2.jpg" border="0"></a>
+           <a href="/Cate/lists/id/35.html"><img src="/lsxSchool/Public/Home/IMAGE/top_teacher_sign_3.jpg" border="0"></a>
+           <a href="/Cate/lists/id/36.html"><img src="/lsxSchool/Public/Home/IMAGE/top_teacher_sign_4.jpg" border="0"></a>
+           <a href="/Cate/lists/id/39.html"><img src="/lsxSchool/Public/Home/IMAGE/top_teacher_sign_5.jpg" border="0"></a>
+           <a href="/Cate/lists/id/40.html"><img src="/lsxSchool/Public/Home/IMAGE/top_teacher_sign_6.jpg" border="0"></a>
+           </div>
+           
+           <div class="top_teacher_blog">
+                <ul>
+                    <li>语文</li>
+                    <li>数学</li>
+                    <li>英语</li>
+                    <li>物理</li>
+                    <li>化学</li>
+                    <li>音乐</li>
+                    <li>美术</li>
+                    <li>体育</li>
+                    <li>其他</li>
+                    <li>教务</li>
+                </ul>
+           </div>
+       </div>
+      
+      
+   </li><li show='Student'>
+   <a href="http://www.dysz.net.cn/Student.html" class="m-menu">学生频道</a>
+   <div class="inner-m">学生频道</div>
+         
+      
+      
+     
+       <div id="Student" class="menuc shadow-3">
+           <div class="top_student_title_sign"><img src="/lsxSchool/Public/Home/IMAGE/top_title_sign2.fw.png" border="0" width="194" height="30" ><span>学生风采</span></div>
+           <div id="top_student_content">
+           <div style=\"line-height: 25pt\" align=\"center\"><b><span style=\"font-size: 12pt\">吕叔湘中学：高一（4）班蒋小雪</span></b></div>
+<div style=\"line-height: 25pt\" align=\"center\"><b><span style=\"font-size: 12pt\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b><span style=\"font-size: 12pt\">指导教师：郭长芬</span></b></div>
+<div style=\"line-height: 25pt\"><span style=\"font-size: 12pt\">&nbsp;&nbsp;&nbsp; </span><span style=\"font-size: 12pt\">在秋风扫落叶的夜晚，我打开台灯，打开一本厚重的书，在寂寞如潮的湖畔解开古树上的缆绳，荡舟离岸，穿越千年的风雨，去寻找文明的背影。</span></div>
+<div style=\"text-indent: 24pt; line-height: 25pt\"><span style=\"font-size: 12pt\">这弱水三千，我只取一瓢饮，独爱这中华文明。</span></div>
+<div style=\"text-indent: 24pt; line-height: 25pt\"><span style=\"font-size: 12pt\">我热爱这汉字。它是中华文明的载体，是中华文明的标志，是中华文明的内在。不知仓颉是怎么迸发出这奇妙的灵感，每一个文字中深藏的哲理都嵌在中华文明这方苍穹下。多少年来，时代变迁，物是人非，不改变的只是这汉字，它与中华儿女血肉相依，与中华民族荣辱与共，与中华文明相依相随。它记载，它写实，它传承，它集结了炎黄子孙的心血，它不断地演化，发展，渐渐为全世界所知。这是汉字的力量，正是它们，中华文明才得以传承至今，而我们，新一代的炎黄子孙就更要将它薪火相传。</span></div>
+<div style=\"text-indent: 24pt; line-height: 25pt\"><span style=\"font-size: 12pt\">我爱这文化，这由汉字书写的锦绣长卷，它积于我心中。或自天地之初，洪荒之始，文化便始终与人类如影随形。只消一阵风，一句话，尘封的文化便汹涌而至，诉说它背负的点滴文明。中华文化上下五千年，承载的文明不计其数。神秘的小宫闱撑起了一个王朝的大气蓬勃，这是唐代的文明；断桥残雪，清明雨上烟柳华侨，卧帘听雨眠，这是宋代的文明；市井小巷，民曲杂剧，惊醒梦中人，这是元代的文明；宫廷秘闺，古今小说，非常公民，这是清代的文明；夜上海，花灯初上，旗袍摇曳，幽人应未眠，这是民国的文明。而中华民族的文化，则是世界文明。</span></div>
+<div style=\"text-indent: 24pt; line-height: 25pt\"><span style=\"font-size: 12pt\">文字，文化，背后是中华民族文明的灵魂，千千万万个文字，千千万万段历史，最终表现的是那一抹灵魂，而灵魂又由千千万万个中国人铸起。莫等闲，白了少年头，空悲切，岳飞只为精忠报国，此为忠；郭巨埋儿，卧病求鲤，彩衣娱亲，此为孝；一介布衣，衣食无着，杜甫想的是广厦万间，庇天下寒士，此为仁；身为蜀国大将，与刘备桃园结义，关羽华容道释曹操，此为义。中华文明如同天空中最闪亮的星辰，多少年来，它静静地在世界这方苍穹中闪光，等待着炎黄子孙的采撷，而中国人做到了，他们紧紧抓住这一缕文明的灵魂，用自己的行动告诉全世界：我们可以。我们帮助他人不求回报，我们感恩社会，乐于奉献，我们重视情谊，忠孝两全，我们跟随文明的步伐，与它一起前行。</span></div>
+<div style=\"text-indent: 24pt; line-height: 25pt\"><span style=\"font-size: 12pt\">六千万年前的一次意外，生命退回到最初的蒙昧，六千年前的炎炎夏日，人类开始有了文明，文字，文化，灵魂，组成了文明的点线面，彼此生死相依，成为我们人生的每个阶段，以及每一个人生。</span></div>
+<div style=\"text-indent: 24pt; line-height: 25pt\">&nbsp;</div>           </div>
+           <div class="top_student_right">
+           <ul>
+           <li><a href="/Cate/lists/id/10.html">学生活动</a></li>
+           <li><a href="/Cate/lists/id/16.html">学生之窗</a></li>
+           <li><a href="/Cate/lists/id/41.html">第二课堂</a></li>
+           <li><a href="/Cate/lists/id/42.html">校文学社</a></li>
+           <li><a href="/Cate/lists/id/43.html">市中报</a></li>
+           </ul>
+           </div>
+       </div>
+      
+   </li><li show='Parent'>
+   <a href="http://www.dysz.net.cn/Parent.html" class="m-menu">家长频道</a>
+   <div class="inner-m">家长频道</div>
+         
+      
+      
+      
+   </li><li show='Gpdd'>
+   <a href="http://www.dysz.net.cn/Gpdd.html" class="m-menu">挂牌督导</a>
+   <div class="inner-m">挂牌督导</div>
+         
+      
+      
+      
+   </li></ul>
+
+
+             </div>
+        </div>
+        
+        <div id='Focus-bar' class="wrapper">
+            <img src="/lsxSchool/Public/Home/IMAGE/focus1.jpg" border="0" width="1100">
+        </div>
+        
+        <div id="index-content" class="wrapper">
+             <div class="index-content-left">
+                  <div class="index-content-left-title">
+                  <a href="/Home/News/Show/id/866.html">丹阳市物理青年名师班暨丹阳市袁晓鹤名教师工作室联合活动</a>
+                  </div>
+                  <div class="index-content-left-title-detail">
+                  <a href="/Home/News/Show/id/866.html">丹阳市物理青年名师班暨丹阳市袁晓鹤名...</a>
+                  <a href="/Home/News/Show/id/866.html">[详细]</a>
+                  <em>&nbsp&nbsp&nbsp&nbsp</em>
+                  </div>
+                  <div class="index-content-left-news">
+                       <div id="myFocus">
+                                                
+                            <div class="pic">
+                                <ul>
+                                <li><a href=""><img width="365" height="225" src="/Uploads/1479114395_6305.jpg" alt="我校高中男子篮球队在镇江市比赛中荣获三联冠" /></a></li><li><a href=""><img width="365" height="225" src="/Uploads/1479114437_7804.jpg" alt="我校66届初三校友聚会" /></a></li><li><a href="http://www.dysz.net.cn/Home/News/Show/id/743.html"><img width="365" height="225" src="/Uploads/1479114487_1861.jpg" alt="我校举行18岁成人仪式活动" /></a></li>                                </ul>
+                            </div>
+                            
+                        </div>
+                        
+                        <div id="myNews">
+                             <div class="myNews-title">
+                                  <div class="myNews-title-c">新闻资讯</div>
+                                  <div class="myNews-title-d">NEWS</div>
+                                  <div class="myNews-title-more"><em>&nbsp&nbsp&nbsp&nbsp&nbsp</em><a href="/Cate/lists/id/5.html">更多</a></div>
+                             </div>
+                             <div class="myNews-content">
+                                  <ul>
+                                  <li><span class="left"><a href="/Home/News/Show/id/1012.html">民盟吕叔湘支部 举行“纪念改革开放4...</a></span><span class="right">[2018-05-28]</span></li><li><span class="left"><a href="/Home/News/Show/id/1011.html">2018年吕叔湘中学体艺特长生测试合...</a></span><span class="right">[2018-05-21]</span></li><li><span class="left"><a href="/Home/News/Show/id/1010.html">高三年级举行高考考前心理助力</a></span><span class="right">[2018-05-21]</span></li><li><span class="left"><a href="/Home/News/Show/id/1009.html">吕叔湘中学18岁成人仪式</a></span><span class="right">[2018-05-18]</span></li><li><span class="left"><a href="/Home/News/Show/id/1008.html">我校举行2018年课堂教学、社团活动...</a></span><span class="right">[2018-05-17]</span></li><li><span class="left"><a href="/Home/News/Show/id/1007.html">吕叔湘中学承办丹阳市“活力课堂”数字...</a></span><span class="right">[2018-05-17]</span></li>                                  </ul>
+                             </div>
+                        </div>
+                  </div>
+                  
+                  <div class="clear"></div>
+                  
+                  <div class="index-content-left-z1">
+                       <ul>
+                           <li><a href="http://gzgl.etec.edu.cn/uids/login!login.action" target="_blank"><img src="/lsxSchool/Public/Home/IMAGE/z1.jpg" height="69" class="m-r-7"></a></li>
+                           <li><a href="http://zcs.dycjw.net:8001/portal/userLogin.jsp" target="_blank"><img src="/lsxSchool/Public/Home/IMAGE/z2.jpg" height="69" class="m-r-7"></a></li>
+                           <li><a href="http://zj.eamn.net/am/login.jsf" target="_blank"><img src="/lsxSchool/Public/Home/IMAGE/z3.jpg" height="69" class="m-r-7"></a></li>
+                           <li><a href="http://www.jste.net.cn/cmsplus/index.html" target="_blank"><img src="/lsxSchool/Public/Home/IMAGE/z4.jpg" height="69"></a></li>
+                       </ul>
+                  </div>
+                  
+                  <div class="index-content-left-col">
+                       <div class="left">
+                            <div class="col-title">
+                            <a href="/Cate/lists/id/27.html"><img src="/lsxSchool/Public/Home/IMAGE/col-1.fw.png" border="0" width="377" height="35" ></a>
+                            </div>
+                            <div class="myNews-content">
+                                  <ul>
+                                  <li><span class="left"><a href="/Home/News/Show/id/86.html">我校被评为2007-2010年度文...</a></span><span class="right">[2012-03-08]</span></li><li><span class="left"><a href="/Home/News/Show/id/214.html">校内主要办公电话</a></span><span class="right">[2011-12-07]</span></li><li><span class="left"><a href="/Home/News/Show/id/213.html">《学校安全工作意见》</a></span><span class="right">[2011-12-07]</span></li><li><span class="left"><a href="/Home/News/Show/id/212.html">学校简介</a></span><span class="right">[2011-12-07]</span></li>                                  </ul>
+                             </div>
+                       </div>
+                       <div class="right">
+                            <div class="col-title">
+                            <a href="/Cate/lists/id/6.html"><img src="/lsxSchool/Public/Home/IMAGE/col-2.fw.png" border="0" width="377" height="35" >
+                            </div></a>
+                            <div class="myNews-content">
+                                  <ul>
+                                  <li><span class="left"><a href="/Home/News/Show/id/997.html">【榜样的力量】记市名师工作室导师、...</a></span><span class="right">[2018-04-26]</span></li><li><span class="left"><a href="/Home/News/Show/id/983.html">2018年论文（部分）</a></span><span class="right">[2018-03-20]</span></li><li><span class="left"><a href="/Home/News/Show/id/972.html">潜心育人，润物无声 ——记民盟吕叔...</a></span><span class="right">[2018-01-30]</span></li><li><span class="left"><a href="/Home/News/Show/id/970.html">2017论文汇编</a></span><span class="right">[2018-01-16]</span></li><li><span class="left"><a href="/Home/News/Show/id/937.html">镇江市骨干+浦丽俐+两角和与差的余...</a></span><span class="right">[2018-01-07]</span></li><li><span class="left"><a href="/Home/News/Show/id/963.html">镇江骨干-赵擎宇-安培力的应用</a></span><span class="right">[2018-01-06]</span></li><li><span class="left"><a href="/Home/News/Show/id/898.html">丹阳市学科带头人 陆奕  新文化运...</a></span><span class="right">[2017-12-26]</span></li>                                  </ul>
+                             </div>
+                       </div>
+                  </div>
+                  
+                  <div class="index-content-left-col">
+                       <div class="left">
+                            <div class="col-title">
+                            <a href="/Cate/lists/id/4.html"><img src="/lsxSchool/Public/Home/IMAGE/col-3.fw.png" border="0" width="377" height="35" >
+                            </div></a>
+                            <div class="myNews-content">
+                                  <ul>
+                                  <li><span class="left"><a href="/Home/News/Show/id/833.html">八礼四仪内容</a></span><span class="right">[2017-07-09]</span></li><li><span class="left"><a href="/Home/News/Show/id/579.html">读《简&#8226;爱》，悟坚持</a></span><span class="right">[2015-06-12]</span></li><li><span class="left"><a href="/Home/News/Show/id/578.html">最初----回本归真</a></span><span class="right">[2015-06-12]</span></li><li><span class="left"><a href="/Home/News/Show/id/577.html">《钢铁是怎样炼成的》的读后感</a></span><span class="right">[2015-06-12]</span></li><li><span class="left"><a href="/Home/News/Show/id/576.html">寻找幸福</a></span><span class="right">[2015-06-12]</span></li><li><span class="left"><a href="/Home/News/Show/id/575.html">幸福生命</a></span><span class="right">[2015-06-12]</span></li><li><span class="left"><a href="/Home/News/Show/id/574.html">读《纳兰词》有感</a></span><span class="right">[2015-06-12]</span></li>                                  </ul>
+                             </div>
+                       </div>
+                       <div class="right">
+                            <div class="col-title">
+                            <a href="/Cate/lists/id/44.html"><img src="/lsxSchool/Public/Home/IMAGE/col-4.fw.png" border="0" width="377" height="35" ></a>
+                            </div>
+                            <div class="myNews-content">
+                                  <ul>
+                                  <li><span class="left"><a href="/Home/News/Show/id/602.html">走出考场后学生组团开疯 后高考期如...</a></span><span class="right">[2015-06-15]</span></li><li><span class="left"><a href="/Home/News/Show/id/601.html">高考之后如何安排生活</a></span><span class="right">[2015-06-15]</span></li><li><span class="left"><a href="/Home/News/Show/id/404.html">家长课堂：与父母争辩有利于孩子成长</a></span><span class="right">[2013-11-28]</span></li><li><span class="left"><a href="/Home/News/Show/id/403.html">家长课堂：如何在高考前做个让考生省...</a></span><span class="right">[2013-11-28]</span></li><li><span class="left"><a href="/Home/News/Show/id/402.html">家长课堂：让孩子性格变好的八条策略</a></span><span class="right">[2013-11-28]</span></li><li><span class="left"><a href="/Home/News/Show/id/396.html">家长课堂：记住7个“大于号”培养出...</a></span><span class="right">[2013-11-27]</span></li><li><span class="left"><a href="/Home/News/Show/id/395.html">家长课堂：杨洪基说李双江知道自己家...</a></span><span class="right">[2013-11-27]</span></li>                                  </ul>
+                             </div>
+                       </div>
+                  </div>
+             </div>
+             <!--左右分界线-->
+             <div class="index-content-right">
+                  <div class="col-title-2">
+                  通知公告<span class="en-string">NOTICE</span>
+                  </div>
+                  <div class="col-content-2">
+                       <ul>
+                       <li><a href="/Home/News/Show/id/1012.html">民盟吕叔湘支部 举行“纪念...</a></li><li><a href="/Home/News/Show/id/1011.html">2018年吕叔湘中学体艺特...</a></li><li><a href="/Home/News/Show/id/1010.html">高三年级举行高考考前心理助...</a></li><li><a href="/Home/News/Show/id/1009.html">吕叔湘中学18岁成人仪式</a></li><li><a href="/Home/News/Show/id/1008.html">我校举行2018年课堂教学...</a></li><li><a href="/Home/News/Show/id/1007.html">吕叔湘中学承办丹阳市“活力...</a></li>                       </ul>
+                  </div>
+                  
+                  <div class="col-right-menu">
+                      <ul>
+                           <a href="http://222.186.112.3/oa/" target="_blank"><li></li></a>
+                           <!--<a href="http://www.dysz.net.cn/lyb/index.asp" target="_blank"><li></li></a>-->
+                           <a href="/Guestbook/index.html" target="_blank"><li></li></a>
+                           <a href="http://221.131.129.128/" target="_blank"><li></li></a>
+                           <a href="http://www.dyjywx.com/" target="_blank"><li></li></a>
+                           <a href="http://www.chineseall.cn/" target="_blank"><li></li></a>
+                           <a href="http://222.186.112.4/xbk/Login.aspx" target="_blank"><li></li></a>
+                           <!--
+                           <a href="http://www.dysz.net.cn/dyc8/article_index.asp" target="_blank"><li></li></a>
+                           <a href="http://10.0.1.49/spjy" target="_blank"><li></li></a>
+                           -->
+                       </ul>
+                  </div>
+                  
+                  <div class="col-title-2 m-t-10">
+                  专题页面<span class="en-string">Special</span>
+                  </div>
+                  <div class="col-content-3" style="height:253px">
+                  <a href="http://218.3.19.163:8006/index.aspx" target="_blank">
+				  <img src="/lsxSchool/Public/Home/IMAGE/zt2.jpg" border="0" width="270" height="99" style="margin-left:4px;margin-top:15px">   
+                  </a>	
+                  <a href="http://218.3.19.163:8005/index.aspx?lanmuid=76&sublanmuid=639" target="_blank">
+                  <img src="/lsxSchool/Public/Home/IMAGE/sthd.jpg" border="0" width="270" height="99" style="margin-left:4px;margin-top:10px">   
+                  </a>			  
+                  </div>
+             </div>
+             <div class="clear"></div>
+        </div>
+        
+        <div id="index-content" class="wrapper">
+             <div class="left col-teacher pos-r">
+                 <span class="pos-a">教师风采</span>
+             </div>             
+             <div class="right">             
+             <script type="text/javascript" src="/lsxSchool/Public/Home/JS/SuperSlide2.1/jquery.SuperSlide.2.1.1.js"></script>
+                <div class="picMarquee-left">
+                    <!--
+                    <div class="hd alpha-75">
+                        <a class="prev"></a>
+                    </div>
+                    <div class="hd alpha-75" style="right:0px">
+                        <a class="next"></a>
+                    </div>
+                    -->
+                    <div class="bd">
+                        <ul class="picList">
+                        <li>
+                                <div class="pic"><a href="http://www.dysz.net.cn/Home/News/show/id/438.html" target="_blank"><img src="/Uploads/1479114560_6828.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="http://www.dysz.net.cn/Home/News/show/id/438.html" target="_blank">何青中</a></div>
+                            </li><li>
+                                <div class="pic"><a href="http://www.dysz.net.cn/Home/News/show/id/439.html" target="_blank"><img src="/Uploads/1479171243_7134.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="http://www.dysz.net.cn/Home/News/show/id/439.html" target="_blank">张国华</a></div>
+                            </li><li>
+                                <div class="pic"><a href="http://www.dysz.net.cn/Home/News/show/id/437.html" target="_blank"><img src="/Uploads/1479171292_4265.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="http://www.dysz.net.cn/Home/News/show/id/437.html" target="_blank">黄通福</a></div>
+                            </li><li>
+                                <div class="pic"><a href="http://www.dysz.net.cn/Home/News/show/id/436.html" target="_blank"><img src="/Uploads/1479171330_5954.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="http://www.dysz.net.cn/Home/News/show/id/436.html" target="_blank">陈仙娥</a></div>
+                            </li><li>
+                                <div class="pic"><a href="http://www.dysz.net.cn/Home/News/show/id/435.html" target="_blank"><img src="/Uploads/1479171389_5361.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="http://www.dysz.net.cn/Home/News/show/id/435.html" target="_blank">杜顺涛</a></div>
+                            </li><li>
+                                <div class="pic"><a href="http://www.dysz.net.cn/Home/News/show/id/434.html" target="_blank"><img src="/Uploads/1479171420_5466.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="http://www.dysz.net.cn/Home/News/show/id/434.html" target="_blank">孙蓉霞</a></div>
+                            </li><li>
+                                <div class="pic"><a href="http://www.dysz.net.cn/Home/News/show/id/433.html" target="_blank"><img src="/Uploads/1479171478_2805.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="http://www.dysz.net.cn/Home/News/show/id/433.html" target="_blank">袁晓鹤</a></div>
+                            </li><li>
+                                <div class="pic"><a href="http://www.dysz.net.cn/Home/News/show/id/432.html" target="_blank"><img src="/Uploads/1479171505_1295.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="http://www.dysz.net.cn/Home/News/show/id/432.html" target="_blank">周珍风</a></div>
+                            </li><li>
+                                <div class="pic"><a href="http://www.dysz.net.cn/Home/News/show/id/431.html" target="_blank"><img src="/Uploads/1479171528_2275.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="http://www.dysz.net.cn/Home/News/show/id/431.html" target="_blank">贡丽华</a></div>
+                            </li><li>
+                                <div class="pic"><a href="http://www.dysz.net.cn/Home/News/show/id/430.html" target="_blank"><img src="/Uploads/1479171680_1871.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="http://www.dysz.net.cn/Home/News/show/id/430.html" target="_blank">蒯秋珍</a></div>
+                            </li>                        </ul>
+                    </div>
+                </div>
+
+                <script id="jsID" type="text/javascript">
+                 var ary = location.href.split("&");
+                jQuery(".picMarquee-left").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:6,interTime:50,trigger:"click"});
+                </script>
+                
+                
+             </div>
+             <div class="clear"></div>
+        </div>
+        
+        <div id="index-content" class="wrapper">
+             <div class="index-content-left">
+    
+                  <div class="index-content-left-col">
+                       <div class="left">
+                            <div class="col-title">
+                            <a href="/Cate/lists/id/7.html"><img src="/lsxSchool/Public/Home/IMAGE/col-5.fw.png" border="0" width="377" height="35" ></a>
+                            </div>
+                            <div class="myNews-content">
+                                  <ul>
+                                  <li><span class="left"><a href="/Home/News/Show/id/453.html">七常委第一批群众路线教育实践活动全...</a></span><span class="right">[2014-03-26]</span></li><li><span class="left"><a href="/Home/News/Show/id/452.html">七常委第一批群众路线教育实践活动全...</a></span><span class="right">[2014-03-26]</span></li><li><span class="left"><a href="/Home/News/Show/id/451.html">七常委第一批群众路线教育实践活动全...</a></span><span class="right">[2014-03-26]</span></li><li><span class="left"><a href="/Home/News/Show/id/450.html">七常委第一批群众路线教育实践活动全...</a></span><span class="right">[2014-03-26]</span></li><li><span class="left"><a href="/Home/News/Show/id/449.html">习近平在党的群众路线教育实践活动发...</a></span><span class="right">[2014-03-26]</span></li><li><span class="left"><a href="/Home/News/Show/id/448.html">习近平在党的群众路线教育实践活动工...</a></span><span class="right">[2014-03-26]</span></li><li><span class="left"><a href="/Home/News/Show/id/401.html">2013年广东高考满分作文：当慈善...</a></span><span class="right">[2013-11-28]</span></li>                                  </ul>
+                             </div>
+                       </div>
+                       <div class="right">
+                            <div class="col-title">
+                            <a href="/Cate/lists/id/3.html"><img src="/lsxSchool/Public/Home/IMAGE/col-6.fw.png" border="0" width="377" height="35" ></a>
+                            </div>
+                            <div class="myNews-content">
+                                  <ul>
+                                  <li><span class="left"><a href="/Home/News/Show/id/939.html">2017届高三17班合影</a></span><span class="right">[2017-09-07]</span></li><li><span class="left"><a href="/Home/News/Show/id/946.html">2017届高三10班合影</a></span><span class="right">[2017-09-07]</span></li><li><span class="left"><a href="/Home/News/Show/id/945.html">2017届高三11班合影</a></span><span class="right">[2017-09-07]</span></li><li><span class="left"><a href="/Home/News/Show/id/944.html">2017届高三12班合影</a></span><span class="right">[2017-09-07]</span></li><li><span class="left"><a href="/Home/News/Show/id/943.html">2017届高三13班合影</a></span><span class="right">[2017-09-07]</span></li><li><span class="left"><a href="/Home/News/Show/id/942.html">2017届高三14班合影</a></span><span class="right">[2017-09-07]</span></li><li><span class="left"><a href="/Home/News/Show/id/940.html">2017届高三16班合影</a></span><span class="right">[2017-09-07]</span></li>                                  </ul>
+                             </div>
+                       </div>
+                  </div>
+                  
+                  <div class="index-content-left-col">
+                       <div class="left">
+                            <div class="col-title">
+                            <a href="/Cate/lists/id/4.html"><img src="/lsxSchool/Public/Home/IMAGE/col-7.fw.png" border="0" width="377" height="35" ></a>
+                            </div>
+                            <div class="myNews-content">
+                                  <ul>
+                                  <li><span class="left"><a href="/Home/News/Show/id/833.html">八礼四仪内容</a></span><span class="right">[2017-07-09]</span></li><li><span class="left"><a href="/Home/News/Show/id/579.html">读《简&#8226;爱》，悟坚持</a></span><span class="right">[2015-06-12]</span></li><li><span class="left"><a href="/Home/News/Show/id/578.html">最初----回本归真</a></span><span class="right">[2015-06-12]</span></li><li><span class="left"><a href="/Home/News/Show/id/577.html">《钢铁是怎样炼成的》的读后感</a></span><span class="right">[2015-06-12]</span></li><li><span class="left"><a href="/Home/News/Show/id/576.html">寻找幸福</a></span><span class="right">[2015-06-12]</span></li><li><span class="left"><a href="/Home/News/Show/id/575.html">幸福生命</a></span><span class="right">[2015-06-12]</span></li><li><span class="left"><a href="/Home/News/Show/id/574.html">读《纳兰词》有感</a></span><span class="right">[2015-06-12]</span></li>                                  </ul>
+                             </div>
+                       </div>
+                       <div class="right">
+                            <div class="col-title">
+                            <a href="/Cate/lists/id/6.html"><img src="/lsxSchool/Public/Home/IMAGE/col-8.fw.png" border="0" width="377" height="35" ></a>
+                            </div>
+                            <div class="myNews-content">
+                                  <ul>
+                                  <li><span class="left"><a href="/Home/News/Show/id/997.html">【榜样的力量】记市名师工作室导师、...</a></span><span class="right">[2018-04-26]</span></li><li><span class="left"><a href="/Home/News/Show/id/983.html">2018年论文（部分）</a></span><span class="right">[2018-03-20]</span></li><li><span class="left"><a href="/Home/News/Show/id/972.html">潜心育人，润物无声 ——记民盟吕叔...</a></span><span class="right">[2018-01-30]</span></li><li><span class="left"><a href="/Home/News/Show/id/970.html">2017论文汇编</a></span><span class="right">[2018-01-16]</span></li><li><span class="left"><a href="/Home/News/Show/id/937.html">镇江市骨干+浦丽俐+两角和与差的余...</a></span><span class="right">[2018-01-07]</span></li><li><span class="left"><a href="/Home/News/Show/id/963.html">镇江骨干-赵擎宇-安培力的应用</a></span><span class="right">[2018-01-06]</span></li><li><span class="left"><a href="/Home/News/Show/id/898.html">丹阳市学科带头人 陆奕  新文化运...</a></span><span class="right">[2017-12-26]</span></li>                                  </ul>
+                             </div>
+                       </div>
+                  </div>
+             </div>
+             <!--左右分界线-->
+             <div class="index-content-right">
+                  <div class="col-title-2">
+                  投票调查<span class="en-string">VOTE</span>
+                  </div>
+                  <div class="col-content-2">
+                  <table class="vote-table">
+                       <tr>
+                           <td><input type="radio" name="mid" value="1" checked="checked">变化很大很好</td>
+                       </tr><tr>
+                           <td><input type="radio" name="mid" value="2" >有进步继续努力</td>
+                       </tr><tr>
+                           <td><input type="radio" name="mid" value="3" >内容需要加强</td>
+                       </tr><tr>
+                           <td><input type="radio" name="mid" value="4" >服务需要加强</td>
+                       </tr><tr>
+                           <td><input type="radio" name="mid" value="5" >其他意见</td>
+                       </tr>                       <tr>
+                           <td><input id='vote-submit' type="button" value="投票"><input id='vote-result' type="button" value="查看结果"></td>
+                       </tr>
+                  </table>
+                  </div>
+                  
+                  <div class="col-right-sudent m-t-10">
+            
+
+                    <div id="slideBox" class="slideBox">
+                        <div class="hd">
+                            <ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul>
+
+                        </div>
+                        <div class="bd">
+                            <ul>
+                            <li><a href="" target="_blank"><img width="280" height="225" src="/Uploads/1480925371_6540.jpg" /></a></li><li><a href="" target="_blank"><img width="280" height="225" src="/Uploads/1480925372_8383.jpg" /></a></li><li><a href="" target="_blank"><img width="280" height="225" src="/Uploads/1480925374_7963.jpg" /></a></li><li><a href="" target="_blank"><img width="280" height="225" src="/Uploads/1480925375_1523.jpg" /></a></li><li><a href="" target="_blank"><img width="280" height="225" src="/Uploads/1480925393_1824.jpg" /></a></li>                            </ul>
+                        </div>
+
+                        <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+                        <a class="prev" href="javascript:void(0)"></a>
+                        <a class="next" href="javascript:void(0)"></a>
+                        <div class="col-right-sudent-tip">学生风采</div>
+                    </div>
+                    <script id="jsID" type="text/javascript">
+                     var ary = location.href.split("&");
+                    jQuery(".slideBox").slide( { mainCell:".bd ul", effect:ary[1],autoPlay:ary[2],trigger:ary[3],easing:ary[4],delayTime:ary[5],mouseOverStop:ary[6],pnLoop:ary[7] });
+                    </script>
+                  </div>
+                  
+                  <div class="col-title-2 m-t-10">
+                  统计信息<span class="en-string">INFO</span>
+                  </div>
+                  <div class="col-content-3">
+                       <ul>
+                           <li><span class="col-content-3-left">总文章数：</span><span class="col-content-3-right">1006</span></li>
+                           <li><span class="col-content-3-left">总访问量：</span><span class="col-content-3-right">246539</span></li>
+                           <li><span class="col-content-3-left">今日访问：</span><span class="col-content-3-right">0</span></li>
+                       </ul>
+                  </div>
+             </div>
+             <div class="clear"></div>
+        </div>
+        
+        <div id="index-content" class="wrapper">
+             <div class="right col-teacher pos-r">
+                 <span class="pos-a">校园风光</span>
+             </div>             
+             <div class="left">
+
+                <div class="picMarquee-left">
+                
+                <!--<div class="hd alpha-75">
+                        <a class="prev"></a>
+                    </div>
+                    <div class="hd alpha-75" style="right:0px">
+                        <a class="next"></a>
+                    </div>-->
+                    <div class="bd">
+                        <ul class="picList">
+                        <li>
+                                <div class="pic"><a href="" target="_blank"><img src="/Uploads/1480924838_7376.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="" target="_blank"></a></div>
+                            </li><li>
+                                <div class="pic"><a href="" target="_blank"><img src="/Uploads/1480924852_9800.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="" target="_blank"></a></div>
+                            </li><li>
+                                <div class="pic"><a href="" target="_blank"><img src="/Uploads/1480924905_3760.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="" target="_blank"></a></div>
+                            </li><li>
+                                <div class="pic"><a href="" target="_blank"><img src="/Uploads/1480924907_1090.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="" target="_blank"></a></div>
+                            </li><li>
+                                <div class="pic"><a href="" target="_blank"><img src="/Uploads/1480924908_8187.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="" target="_blank"></a></div>
+                            </li><li>
+                                <div class="pic"><a href="" target="_blank"><img src="/Uploads/1480924909_2661.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="" target="_blank"></a></div>
+                            </li><li>
+                                <div class="pic"><a href="" target="_blank"><img src="/Uploads/1480924961_6936.jpg" border="0" ></a></div>
+                                <div class="title alpha-75"><a href="" target="_blank"></a></div>
+                            </li>                        </ul>
+                    </div>
+                </div>
+
+                <script id="jsID" type="text/javascript">
+                 var ary = location.href.split("&");
+                jQuery(".picMarquee-left").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:6,interTime:50,trigger:"click"});
+                </script>
+                
+                
+             </div>
+             <div class="clear"></div>
+        </div>
+        
+        
+<script type="text/javascript" src="/lsxSchool/Public/Home/JS/footer.js?version=2018-05-29"></script>
+<div id="footer">
+     <div class="link">
+          <div class="wrapper">友情链接：
+          <a href="http://www.zje.net.cn/" target="_blank">镇江教育</a><a href="http://www.dyedu.cn" target="_blank">丹阳教育</a><a href="http://www.ec.js.edu.cn/" target="_blank">江苏教育</a><a href="http://www.ziyuanku.com/" target="_blank">中华资源库</a>          <!--
+          <a href="http://www.ec.js.edu.cn/" target="_blank">江苏教育</a>
+          <a href="http://www.zje.net.cn/" target="_blank">镇江教育</a>
+          <a href="http://www.dyedu.cn" target="_blank">丹阳教育</a>
+          <a href="http://www.ec.js.edu.cn/" target="_blank">江苏教育</a>-->
+          </div>
+     </div>
+     <div class="footer">
+          <div class="wrapper">
+               <div class="left">
+               <img src="/lsxSchool/Public/Home/IMAGE/logo-bottom.fw.png" border="0" width="226" height="59" class="m-t-30">
+               <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/11/174/1369/60355151/CA111741369603551510002.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+               </div>
+               <div class="right">
+                    <ul>
+                        <li><a href="http://www.dysz.net.cn">网站首页</a> | <a href="/Home/School/index.html">学校概况</a> | <a href="/Home/News/index.html">新闻动态</a> | <a href="/Home/Teacher/index.html">教师频道</a> | <a href="/Home/Student/index.html">学生频道</a> | <a href="/Home/Parent/index.html">家长频道</a> | <a href="mailto:30691539@qq.com">校长信箱</a> | <a href="/Home/Knowledge/index.html">知识广场</a></li>
+                        <li>CopyRight © 2014-2018 丹阳市吕叔湘中学. All rights reserved. 版权所有</li>
+                        <li>联系地址：丹阳市老北门大街14号  <a href="http://www.miitbeian.gov.cn">苏ICP备12027279号</a></li>
+                    </ul>
+               </div>
+          </div>
+     </div>
+    
+</div>
+
+
+		
+		<div id="editInfo" style="width:600px;height:400px;position:absolute;top:200px;z-index:65535">
+     <div style="position: relative;">
+     <div id='close-btn' style="width:50px;height:20px;line-height: 20px;text-align: center;cursor:pointer;background-color:black;color:white;position: absolute;right:0px;top:0px;z-index:50000">关闭</div>
+     <img src="/lsxSchool/Public/IMAGE/1333.jpg" style="position: absolute;right:0px;top:0px;z-index:40000">
+     </div>
+     
+</div>
+    </body>
+</html>

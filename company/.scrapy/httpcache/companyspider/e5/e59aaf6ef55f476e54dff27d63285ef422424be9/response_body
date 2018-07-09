@@ -1,0 +1,740 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	省一级重点--宁波市第三中学
+</title><meta name="keywords" content="宁波市第三中学,宁波三中" /><meta name="description" content="浙江省一级重点学校--宁波市第三中学" /><link href="assets/css/css-01.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/koala.min.1.5.js"></script>
+    <script type="text/javascript" src="assets/js/layout.js"></script>
+    
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="Index.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTU1MTE3MTI0NmRknmsQGCuPomLzd2wa9Yf5gMF01LY=" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+</div>
+    <div>
+        
+<!--topbanner--star-->
+<div class="topbanner">
+ <div class="w1010"  style=" background:url(../img/top_line.jpg) repeat-x; line-height:29px; height:29px;">
+  <div class="fl topbanner01">
+      <script type="text/javascript" charset="gb2312">
+          var sWeek = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+          var dNow = new Date();
+          var CalendarData = new Array(100);
+          var madd = new Array(12);
+          var tgString = "甲乙丙丁戊己庚辛壬癸";
+          var dzString = "子丑寅卯辰巳午未申酉戌亥";
+          var numString = "一二三四五六七八九十";
+          var monString = "正二三四五六七八九十冬腊";
+          var weekString = "日一二三四五六";
+          var sx = "鼠牛虎兔龙蛇马羊猴鸡狗猪";
+          var cYear, cMonth, cDay, TheDate;
+          CalendarData = new Array(
+      0xA4B, 0x5164B, 0x6A5, 0x6D4, 0x415B5, 0x2B6, 0x957, 0x2092F, 0x497, 0x60C96,
+      0xD4A, 0xEA5, 0x50DA9, 0x5AD, 0x2B6, 0x3126E, 0x92E, 0x7192D, 0xC95, 0xD4A,
+      0x61B4A, 0xB55, 0x56A, 0x4155B, 0x25D, 0x92D, 0x2192B, 0xA95, 0x71695, 0x6CA,
+      0xB55, 0x50AB5, 0x4DA, 0xA5B, 0x30A57, 0x52B, 0x8152A, 0xE95, 0x6AA, 0x615AA,
+      0xAB5, 0x4B6, 0x414AE, 0xA57, 0x526, 0x31D26, 0xD95, 0x70B55, 0x56A, 0x96D,
+      0x5095D, 0x4AD, 0xA4D, 0x41A4D, 0xD25, 0x81AA5, 0xB54, 0xB6A, 0x612DA, 0x95B,
+      0x49B, 0x41497, 0xA4B, 0xA164B, 0x6A5, 0x6D4, 0x615B4, 0xAB6, 0x957, 0x5092F,
+      0x497, 0x64B, 0x30D4A, 0xEA5, 0x80D65, 0x5AC, 0xAB6, 0x5126D, 0x92E, 0xC96,
+      0x41A95, 0xD4A, 0xDA5, 0x20B55, 0x56A, 0x7155B, 0x25D, 0x92D, 0x5192B, 0xA95,
+      0xB4A, 0x416AA, 0xAD5, 0x90AB5, 0x4BA, 0xA5B, 0x60A57, 0x52B, 0xA93, 0x40E95);
+          madd[0] = 0; madd[1] = 31; madd[2] = 59; madd[3] = 90;
+          madd[4] = 120; madd[5] = 151; madd[6] = 181; madd[7] = 212;
+          madd[8] = 243; madd[9] = 273; madd[10] = 304; madd[11] = 334;
+          function GetBit(m, n) { return (m >> n) & 1; }
+          function e2c() {
+              TheDate = (arguments.length != 3) ? new Date() : new Date(arguments[0], arguments[1], arguments[2]);
+              var total, m, n, k;
+              var isEnd = false;
+              var tmp = TheDate.getFullYear();
+              total = (tmp - 1921) * 365 + Math.floor((tmp - 1921) / 4) + madd[TheDate.getMonth()] + TheDate.getDate() - 38; if (TheDate.getYear() % 4 == 0 && TheDate.getMonth() > 1) { total++; } for (m = 0; ; m++) { k = (CalendarData[m] < 0xfff) ? 11 : 12; for (n = k; n >= 0; n--) { if (total <= 29 + GetBit(CalendarData[m], n)) { isEnd = true; break; } total = total - 29 - GetBit(CalendarData[m], n); } if (isEnd) break; } cYear = 1921 + m; cMonth = k - n + 1; cDay = total; if (k == 12) { if (cMonth == Math.floor(CalendarData[m] / 0x10000) + 1) { cMonth = 1 - cMonth; } if (cMonth > Math.floor(CalendarData[m] / 0x10000) + 1) { cMonth--; } }
+          }
+          function GetcDateString() {
+              var tmp = ""; tmp += tgString.charAt((cYear - 4) % 10);
+              tmp += dzString.charAt((cYear - 4) % 12);
+              tmp += "年 ";
+              if (cMonth < 1) { tmp += "(闰)"; tmp += monString.charAt(-cMonth - 1); } else { tmp += monString.charAt(cMonth - 1); } tmp += "月"; tmp += (cDay < 11) ? "初" : ((cDay < 20) ? "十" : ((cDay < 30) ? "廿" : "三十"));
+              if (cDay % 10 != 0 || cDay == 10) { tmp += numString.charAt((cDay - 1) % 10); } return tmp;
+          }
+          function GetLunarDay(solarYear, solarMonth, solarDay) {
+              if (solarYear < 1921 || solarYear > 2020) {
+                  return "";
+              } else { solarMonth = (parseInt(solarMonth) > 0) ? (solarMonth - 1) : 11; e2c(solarYear, solarMonth, solarDay); return GetcDateString(); }
+          }
+          var D = new Date();
+          var yy = D.getFullYear();
+          var mm = D.getMonth() + 1;
+          var dd = D.getDate();
+          var ww = D.getDay();
+          var ss = parseInt(D.getTime() / 1000);
+          function getFullYear(d) {// 修正firefox下year错误   
+              yr = d.getYear(); if (yr < 1000)
+                  yr += 1900; return yr;
+          }
+          document.write("<span id='nowDateIs'></span> <span id='nowCnWeekIs'></span> <span id='nowCnDateIs'></span> <span id='nowTimeIs'></span>");
+          function showDate() {
+              timeString = new Date().toLocaleTimeString();
+              var sValue = getFullYear(dNow) + "年" + (dNow.getMonth() + 1) + "月" + dNow.getDate() + "日" + " " + timeString +
+      " " + sWeek[dNow.getDay()] + " ";
+              sValue += GetLunarDay(yy, mm, dd);
+              var svalue1 = getFullYear(dNow) + "年" + (dNow.getMonth() + 1) + "月" + dNow.getDate() + "日 ";
+              var svalue2 = timeString + " ";
+              var svalue3 = GetLunarDay(yy, mm, dd);
+              var sx2 = sx.substr(dzString.indexOf(svalue3.substr(1, 1)), 1);
+              var svalue33 = svalue3.substr(0, 3)
+              var svalue333 = svalue33.substr(0, 2) + "(" + sx2 + ")" + svalue33.substr(2, 1);
+              var sx22 = " 农历" + svalue3.substr(4, 6) + " ";
+              document.getElementById('nowDateIs').innerHTML = svalue1
+              document.getElementById('nowTimeIs').innerHTML = svalue2
+              document.getElementById('nowCnWeekIs').innerHTML = sWeek[dNow.getDay()] + " "
+              document.getElementById('nowCnDateIs').innerHTML = sx22
+          };
+          window.onload = function () {
+              setInterval(showDate, 1000)
+          }
+</script>
+  </div>
+  <div class="fr topbanner01">|&nbsp;&nbsp;<a title="宁波第三中学" onclick="this.style.behavior='url(#default#homepage)';this.sethomepage('http://www.nbsz.com');" href="#">设为首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:window.external.addfavorite('http://www.nbsz.com','宁波第三中学')">加入收藏</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:huanjh@foxmail.com">联系站长</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="NewsList.aspx?CategoryId=207">版权申明</a>&nbsp;&nbsp;|</div>
+ </div>
+</div>
+<div style="clear:both;"></div>
+<!--topbanner--end-->
+<!--nav--star-->
+<div style="z-index:10;">
+   <div class="top">
+      <embed src="assets/img/topflash.swf" width="1010" type="application/x-shockwave-flash" height="123" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" quality="high" wmode="transparent"></embed>
+  </div>
+  <div class="w1010 nav" style="z-index:8;">
+    <div class="nav_w">
+      <div class="fl nav_url"><a href="Index.aspx">首页</a></div>
+      <div class="fl nav_line"></div>
+      <div class="fl nav_url"><a href="Profile.aspx?CategoryId=159" path="div1">学校概况</a></div>
+      <div class="fl nav_line"></div>
+      <div class="fl nav_url"><a href="Moral.aspx?CategoryId=165" path="div2">德育教育</a></div>
+      <div class="fl nav_line"></div>
+      <div class="fl nav_url"><a href="Research.aspx?CategoryId=171" path="div3">教学教研</a></div>
+      <div class="fl nav_line"></div>
+      <div class="fl nav_url"><a href="Features.aspx?CategoryId=177" path="div4">特色教育</a></div>
+      <div class="fl nav_line"></div>
+      <div class="fl nav_url"><a href="Party.aspx?CategoryId=182" path="div5">党建群团</a></div>
+      <div class="fl nav_line"></div>
+      <div class="fl nav_url"><a href="Campus.aspx?CategoryId=187" path="div6">和美校园</a></div>
+      <div class="fl nav_line"></div>
+      <div class="fl nav_url"><a href="31.html" target="_blank" path="div7">三一学院</a></div>
+      <div class="fl nav_line"></div>
+      <div class="fl nav_url"><a href="Student.aspx?CategoryId=193" path="div8">招生专栏</a></div>
+    </div>
+    
+    <div id="div1" class="xiala back01">
+      <div class="jiantou" style=" top: -23px; *top:-4px;  left:88px;"><img src="assets/img/jintou.png"/></div>
+      <div class="fl xl_01">
+          
+          <div class="xl_tit">学校概况</div>
+          <div class="xl_nr">我校创办于1868年，是一所跨越三个世纪的百年老校。学校占地面积约78.8亩，建筑总面积约3.6万平方米。
+</div>
+              
+         
+        <div class="xl_list">
+          <ul>
+              
+                      <li><a href='Profile.aspx?CategoryId=159'>学校简介</a></li>
+                  
+                      <li><a href='Profile.aspx?CategoryId=160'>学校荣誉</a></li>
+                  
+                      <li><a href='Profile.aspx?CategoryId=161'>校园风貌</a></li>
+                  
+                      <li><a href='Profile.aspx?CategoryId=162'>组织机构</a></li>
+                  
+                      <li><a href='Profile.aspx?CategoryId=163'>微信公众号</a></li>
+                  
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="div2" class="xiala back02">
+      <div class="jiantou" style="top: -23px; *top:-4px;  left: 195px;"><img src="assets/img/jintou.png"/></div>
+      <div class="fl xl_01">
+        
+          <div class="xl_tit">德育教育</div>
+          <div class="xl_nr">坚持“立德树人”的根本任务，以社会主义核心价值体系为引领，提升学生德行修养，塑造学生健全人格，培养学生创新能力，促进学生健康成长。</div>
+              
+        <div class="xl_list">
+          <ul>
+           
+                      <li><a href='Moral.aspx?CategoryId=165'>德育资讯</a></li>
+                  
+                      <li><a href='Moral.aspx?CategoryId=166'>专题教育</a></li>
+                  
+                      <li><a href='Moral.aspx?CategoryId=167'>心灵驿站</a></li>
+                  
+                      <li><a href='Moral.aspx?CategoryId=168'>国际交流</a></li>
+                  
+                      <li><a href='Moral.aspx?CategoryId=169'>学生风采</a></li>
+                  
+                      <li><a href='?CategoryId=213'>社团活动</a></li>
+                  
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="div3" class="xiala back03">
+      <div class="jiantou" style="top: -23px; *top:-4px;  left: 298px;"><img src="assets/img/jintou.png"/></div>
+      <div class="fl xl_01">
+         
+          <div class="xl_tit">教学研究</div>
+          <div class="xl_nr">宁波三中为了提高教学质量，通过教研组研讨、教师继续教育及课题研究等，对课堂教学方式进行着有效探索，取得了明显的效果。
+</div>
+              
+        <div class="xl_list">
+          <ul>
+           
+                      <li><a href='Research.aspx?CategoryId=171'>教研动态</a></li>
+                  
+                      <li><a href='Research.aspx?CategoryId=172'>科研信息</a></li>
+                  
+                      <li><a href='Research.aspx?CategoryId=173'>学科建设</a></li>
+                  
+                      <li><a href='Research.aspx?CategoryId=174'>获奖荣誉</a></li>
+                  
+                      <li><a href='Research_pic.aspx?CategoryId=175'>名师风采</a></li>
+                  
+                      <li><a href='Research.aspx?CategoryId=211'>组室风采</a></li>
+                  
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="div4" class="xiala back04">
+      <div class="jiantou" style="top: -23px; *top:-4px;  left: 407px;"><img src="assets/img/jintou.png"/></div>
+      <div class="fl xl_01">
+         
+          <div class="xl_tit">特色教育</div>
+          <div class="xl_nr">美术专业培养、德语课程教学、机器人创新教育使宁波三中这所百年老校焕发了新的生机与活力，在促进学生多样化发展的同时，也为深化课程改革打下了良好的基础。</div>
+              
+        <div class="xl_list">
+          <ul>
+           
+                      <li><a href='Features.aspx?CategoryId=177'>美术特色</a></li>
+                  
+                      <li><a href='Features.aspx?CategoryId=178'>德语特色</a></li>
+                  
+                      <li><a href='Features.aspx?CategoryId=179'>小球项目</a></li>
+                  
+                      <li><a href='Features.aspx?CategoryId=180'>创新教育</a></li>
+                  
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="div5" class="xiala back05">
+      <div class="jiantou" style="top: -23px; *top:-4px;  left: 514px;"><img src="assets/img/jintou.png"/></div>
+      <div class="fl xl_01">
+         
+          <div class="xl_tit">党建群团</div>
+          <div class="xl_nr">党建引领、群团互动，围绕学校的教育教学工作，立足于学生成长和教师发展。</div>
+              
+        <div class="xl_list">
+          <ul>
+           
+                      <li><a href='Party.aspx?CategoryId=182'>时事政要</a></li>
+                  
+                      <li><a href='Party.aspx?CategoryId=183'>党团活动</a></li>
+                  
+                      <li><a href='Party.aspx?CategoryId=184'>教工之家</a></li>
+                  
+                      <li><a href='Party.aspx?CategoryId=185'>巾帼创建</a></li>
+                  
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="div6" class="xiala back06">
+      <div class="jiantou" style="top: -23px; *top:-4px;  left: 621px;"><img src="assets/img/jintou.png"/></div>
+      <div class="fl xl_01">
+         
+          <div class="xl_tit">和美校园</div>
+          <div class="xl_nr">坚持“勤奋立校、和美兴校、卓越强校”，以学生的持续发展为本，培养“崇学尚道，智慧阳光”的和美人才。
+</div>
+              
+        <div class="xl_list">
+          <ul>
+           
+                      <li><a href='Campus.aspx?CategoryId=187'>规章制度</a></li>
+                  
+                      <li><a href='Campus.aspx?CategoryId=188'>计划总结</a></li>
+                  
+                      <li><a href='Campus.aspx?CategoryId=189'>平安校园</a></li>
+                  
+                      <li><a href='Campus.aspx?CategoryId=190'>特色示范</a></li>
+                  
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="div7" class="xiala back07">
+      <div class="jiantou" style="top: -23px; *top:-4px;  left: 726px;"><img src="assets/img/jintou.png"/></div>
+      <div class="fl xl_01">
+         
+          <div class="xl_tit">三一学院</div>
+          <div class="xl_nr">公元1869年（清同治八年）英岳教士及其夫人来华管理义塾，聘鄞郡牧师王有光为教习，这是三一书院的始基。板块提供优质的教学微课，为学生的学习提供更多的资源与途径。</div>
+              
+        <div class="xl_list">
+          <ul>
+           
+                      <li><a href='31.html' target="_blank">微课视频</a></li>
+                  
+                      <li><a href='31.html' target="_blank">空中课堂</a></li>
+                  
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="div8" class="xiala back08">
+      <div class="jiantou" style="top: -23px; *top:-4px;  left: 835px;"><img src="assets/img/jintou.png"/></div>
+      <div class="fl xl_01">
+         
+          <div class="xl_tit">招生专栏</div>
+          <div class="xl_nr">选择宁波三中，你就拥有了更多的成长通道。你可以在普通班、美术班、德语班之间选择，有通向优质大学的多条通道。我们有优秀的导师为你三年的学习定向指导，为你的职业生涯规划量身打造，私人定制。</div>
+              
+        <div class="xl_list">
+          <ul>
+           
+                      <li><a href='Student.aspx?CategoryId=193'>教学成果</a></li>
+                  
+                      <li><a href='Student.aspx?CategoryId=194'>普高招生</a></li>
+                  
+                      <li><a href='Student.aspx?CategoryId=195'>美术招生</a></li>
+                  
+                      <li><a href='Student.aspx?CategoryId=196'>德语招生</a></li>
+                  
+                      <li><a href='Student.aspx?CategoryId=197'>特长招生</a></li>
+                  
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav_downbanner w1010">
+    <div class="fl">
+      <div class="fl whe_01"><img src="assets/img/sun.png"></div>
+      <div class="fl whe_02">今日天气：</div>
+      <div class="fl whe_03">
+          <iframe src="Weather.aspx" frameborder='0' scrolling='no' width="580" height="22" marginWidth=0 marginHeight=0 leftmargin=0 topmargin=0 allowtransparency="true"></iframe>
+
+      </div>
+    </div>
+    <div class="fr">
+     <iframe scrolling="no" marginheight="0" marginwidth="0" height="22" width="94%" src="123.htm" frameborder="0" allowtransparency="true"></iframe>
+    </div>
+  </div>
+</div>
+<!--nav--end-->
+<div style="clear:both;"></div>
+
+
+        
+<!--浮动窗口Start-->
+ <div id="float_icon" style="Z-INDEX: 99999;position:absolute;visibility: visible;" >
+
+     
+
+  </div>
+<script type="text/javascript">
+    var ggRoll = {
+        roll: document.getElementById("float_icon"),
+        speed: 30,
+        statusX: 1,
+        statusY: 1,
+        x: 100,
+        y: 300,
+        winW: document.documentElement.clientWidth - document.getElementById("float_icon").offsetWidth,
+        winH: document.documentElement.clientHeight - document.getElementById("float_icon").offsetHeight,
+        Go: function () {
+            this.roll.style.left = this.x + 'px';
+            this.roll.style.top = this.y + 'px';
+
+            this.x = this.x + (this.statusX ? -1 : 1)
+            if (this.x < 0) { this.statusX = 0 }
+            if (this.x > this.winW) { this.statusX = 1 }
+
+            this.y = this.y + (this.statusY ? -1 : 1)
+            if (this.y < 0) { this.statusY = 0 }
+            if (this.y > this.winH) { this.statusY = 1 }
+        }
+    }
+    var interval = setInterval("ggRoll.Go()", ggRoll.speed);
+    ggRoll.roll.onmouseover = function () { clearInterval(interval) };
+    ggRoll.roll.onmouseout = function () { interval = setInterval("ggRoll.Go()", ggRoll.speed) };
+ </script>  
+<!--浮动窗口End-->
+
+<div class="banner w1010" style="z-index:0;">
+<div id="fsD2" class="focus2" style="z-index:0;">  
+
+    <div id="D1pic2" class="fPic">  
+        <div class='fcon' style='display: none;'><img title='操场' src='Portal/UpLoadFiles/20151020111038.jpg' style='opacity: 1;'></div><div class='fcon' style='display: none;'><img title='三中全景' src='Portal/UpLoadFiles/20151014151054.jpg' style='opacity: 1;'></div><div class='fcon' style='display: none;'><img title='首页图片4' src='Portal/UpLoadFiles/20151013101017.jpg' style='opacity: 1;'></div><div class='fcon' style='display: none;'><img title='首页图片3' src='Portal/UpLoadFiles/20151013101054.jpg' style='opacity: 1;'></div><div class='fcon' style='display: none;'><img title='首页图片2' src='Portal/UpLoadFiles/20151013101015.jpg' style='opacity: 1;'></div>  
+    </div>
+    <div class="fbg" style="display:none;">  
+    <div class="D2fBt" id="D2fBt" >  
+        <a href='javascript:void(0)' hidefocus='true' target='_self' class=''><i>1</i></a> <a href='javascript:void(0)' hidefocus='true' target='_self' class=''><i>2</i></a> <a href='javascript:void(0)' hidefocus='true' target='_self' class=''><i>3</i></a> <a href='javascript:void(0)' hidefocus='true' target='_self' class=''><i>4</i></a> <a href='javascript:void(0)' hidefocus='true' target='_self' class=''><i>5</i></a> 
+    </div>  
+    </div>  
+    <span class="prev"></span>   
+    <span class="next"></span>    
+</div>
+</div>
+<div style="clear:both;"></div>
+<div class="w1010 mt10">
+   <div class="fl news ml10">
+   <div class="tit">
+    <div class="fl tit_tit">综合信息</div>
+    <div class="tit_more"><a href="TotalList.aspx">更多>></a></div>
+   </div>
+    <div class="list01">
+      <ul>       
+          
+                  <li><a href='Student.aspx?CategoryId=194&ContentId=6599' target="_blank" title='2018年宁波三中普高保送生录取名单'><font color='#ff0000'>2018年宁波三中普高保送生录取名单</font></a><span>2018-05-21</span></li>
+              
+                  <li><a href='Features.aspx?CategoryId=177&ContentId=6589' target="_blank" title='2018年宁波三中美术专业测试合格名单'>2018年宁波三中美术专业测试合格名单…</a><span>2018-05-15</span></li>
+              
+                  <li><a href='Student.aspx?CategoryId=197&ContentId=6590' target="_blank" title='2018年宁波三中机器人创新教育特长生、小球特长生专业测试合格名单'>2018年宁波三中机器人创新教育特长生…</a><span>2018-05-15</span></li>
+              
+                  <li><a href='Features.aspx?CategoryId=177&ContentId=6573' target="_blank" title='喜报——2018年美术校考成绩揭晓'><font color='#ff0000'>喜报——2018年美术校考成绩揭晓</font></a><span>2018-04-25</span></li>
+              
+                  <li><a href='Student.aspx?CategoryId=193&ContentId=6559' target="_blank" title='2017届德语班、普通班名校录取荣誉榜'>2017届德语班、普通班名校录取荣誉榜…</a><span>2018-04-12</span></li>
+              
+                  <li><a href='Student.aspx?CategoryId=196&ContentId=6558' target="_blank" title='2018年宁波市第三中学第10届德语课程实验班招生简章'><font color='#ff0000'>2018年宁波市第三中学第10届德语课程…</font></a><span>2018-04-12</span></li>
+              
+      </ul>
+    </div>
+ </div>
+   <div class="fl news ml10">
+   <div class="tit">
+    <div class="fl tit_tit">三中新闻</div>
+    <div class="tit_more"><a href="NewsList.aspx?CategoryId=202">更多>></a></div>
+   </div>
+    <div class="list01">
+      <ul>
+
+                  <li><a href='NewsList.aspx?CategoryId=202&ContentId=6605' target="_blank" title='和风细雨芒种近  对话和美校园行'>和风细雨芒种近  对话和美校园行</a><span>2018-05-27</span></li>
+              
+                  <li><a href='NewsList.aspx?CategoryId=202&ContentId=6584' target="_blank" title='2018年宁波三中美术班、机器人及小球招生测试顺利举行'>2018年宁波三中美术班、机器人及小球…</a><span>2018-05-14</span></li>
+              
+                  <li><a href='NewsList.aspx?CategoryId=202&ContentId=6582' target="_blank" title='以“四会”为载体抓落实，让高一赢在起跑线上'>以“四会”为载体抓落实，让高一赢在…</a><span>2018-05-08</span></li>
+              
+                  <li><a href='NewsList.aspx?CategoryId=202&ContentId=6576' target="_blank" title='匠心永存，器成八方 '>匠心永存，器成八方 </a><span>2018-04-27</span></li>
+              
+                  <li><a href='NewsList.aspx?CategoryId=202&ContentId=6568' target="_blank" title='牵线搭桥请名师  引得千峰翠色来'>牵线搭桥请名师  引得千峰翠色来</a><span>2018-04-18</span></li>
+              
+                  <li><a href='NewsList.aspx?CategoryId=202&ContentId=6529' target="_blank" title='宁波三中隆重举行华东师范大学“立德树人”数学教育教学研究基地实验学校授牌仪式'>宁波三中隆重举行华东师范大学“立德…</a><span>2018-03-19</span></li>
+              
+      </ul>
+    </div>
+ </div>
+   <div class="fr news02 mr10">
+    <div class="tit02">
+    
+    <div class="tit_x" >
+      <ul class="tab tit_t2">
+          <li class="current">通知公告</li>
+          <li>工作安排</li>
+      </ul>
+    </div>
+    <div class="tit_y">
+        <ul class="tabmore tit_more">
+            <li><a href="NewsList.aspx?CategoryId=203">更多>></a></li>
+            <li><a href="NewsList.aspx?CategoryId=204" class="go_hidden">更多>></a></li>
+        </ul>
+     </div>
+   </div>
+   
+   <div class="tabcont xx_nr">
+     <div class="divbox">
+       <div class="list02">
+      <ul>
+          
+                  <li><a href='NewsList.aspx?CategoryId=203&ContentId=6604' target="_blank" title='宁波市第三中学第十四周菜单'>宁波市第三中学第十四周菜单…</a></li>
+              
+                  <li><a href='NewsList.aspx?CategoryId=203&ContentId=6598' target="_blank" title='宁波市第三中学第十三周菜单'>宁波市第三中学第十三周菜单…</a></li>
+              
+                  <li><a href='NewsList.aspx?CategoryId=203&ContentId=6596' target="_blank" title='宁波市第三中学年度教师暑期疗休养活动服务（旅游类）招标公告'>宁波市第三中学年度教师暑期…</a></li>
+              
+                  <li><a href='NewsList.aspx?CategoryId=203&ContentId=6594' target="_blank" title='宁波市第三中学年度教师暑期疗休养活动服务（旅游类）入围项目采购招标文件'>宁波市第三中学年度教师暑期…</a></li>
+              
+                  <li><a href='NewsList.aspx?CategoryId=203&ContentId=6587' target="_blank" title='宁波市第三中学第十二周菜单'>宁波市第三中学第十二周菜单…</a></li>
+              
+                  <li><a href='NewsList.aspx?CategoryId=203&ContentId=6580' target="_blank" title='宁波市第三中学第十一周菜单'>宁波市第三中学第十一周菜单…</a></li>
+              
+      </ul>
+    </div>
+     </div>
+     <div class="divbox">
+       <div class="list02">
+      <ul>
+      
+                  <li><a href='NewsList.aspx?CategoryId=204&ContentId=6425' target="_blank" title='宁波市第三中学2017学年第一学期第 16周工作日程'>宁波市第三中学2017学年第一…</a></li>
+              
+                  <li><a href='NewsList.aspx?CategoryId=204&ContentId=6333' target="_blank" title='宁波市第三中学2016学年第二学期第12周工作日程'>宁波市第三中学2016学年第二…</a></li>
+              
+                  <li><a href='NewsList.aspx?CategoryId=204&ContentId=6329' target="_blank" title='宁波市第三中学2016学年第二学期第11周工作日程'>宁波市第三中学2016学年第二…</a></li>
+              
+                  <li><a href='NewsList.aspx?CategoryId=204&ContentId=6312' target="_blank" title='宁波市第三中学2016学年第二学期第9周工作日程'>宁波市第三中学2016学年第二…</a></li>
+              
+                  <li><a href='NewsList.aspx?CategoryId=204&ContentId=6301' target="_blank" title='宁波市第三中学2016学年第二学期第8周工作日程'>宁波市第三中学2016学年第二…</a></li>
+              
+                  <li><a href='NewsList.aspx?CategoryId=204&ContentId=6295' target="_blank" title='宁波市第三中学2016学年第二学期第7周工作日程'>宁波市第三中学2016学年第二…</a></li>
+              
+      </ul>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div style="clear:both;"></div>
+<div class="w1010 mt10">
+ <div class="fl qturl ml10">
+   <div class="qturl_tit"><img src="assets/img/tit_01.png" width="38" height="147"></div>
+    <div class="qturl_left">
+        
+           <div class="fl url_list">
+             <div class="url_img"><a href='http://www.nbsz.com/Message.aspx' target="_blank"><img src='Portal/UpLoadFiles/20151009001042.png' /></a></div>
+             <div class="url_tit"><a href='http://www.nbsz.com/Message.aspx' target="_blank">家校互动</a></div>
+           </div>
+            
+           <div class="fl url_list">
+             <div class="url_img"><a href='http://pk.nbsz.com/3sys/' target="_blank"><img src='Portal/UpLoadFiles/20151009001021.png' /></a></div>
+             <div class="url_tit"><a href='http://pk.nbsz.com/3sys/' target="_blank">赛思系统</a></div>
+           </div>
+            
+           <div class="fl url_list">
+             <div class="url_img"><a href='http://10.30.0.7' target="_blank"><img src='Portal/UpLoadFiles/20151009001005.png' /></a></div>
+             <div class="url_tit"><a href='http://10.30.0.7' target="_blank">FTP服务</a></div>
+           </div>
+            
+           <div class="fl url_list">
+             <div class="url_img"><a href='http://10.30.1.199/apms/index.aspx' target="_blank"><img src='Portal/UpLoadFiles/20151009001037.png' /></a></div>
+             <div class="url_tit"><a href='http://10.30.1.199/apms/index.aspx' target="_blank">网上阅卷</a></div>
+           </div>
+            
+           <div class="fl url_list">
+             <div class="url_img"><a href='http://10.30.0.18/smartcampus/' target="_blank"><img src='Portal/UpLoadFiles/20151009001014.png' /></a></div>
+             <div class="url_tit"><a href='http://10.30.0.18/smartcampus/' target="_blank">智慧校园</a></div>
+           </div>
+            
+           <div class="fl url_list">
+             <div class="url_img"><a href='https://xjglpt.zjedu.gov.cn/logon.action' target="_blank"><img src='Portal/UpLoadFiles/20151009001050.png' /></a></div>
+             <div class="url_tit"><a href='https://xjglpt.zjedu.gov.cn/logon.action' target="_blank">学籍系统</a></div>
+           </div>
+            
+           <div class="fl url_list">
+             <div class="url_img"><a href='http://10.30.0.12' target="_blank"><img src='Portal/UpLoadFiles/20151009001022.png' /></a></div>
+             <div class="url_tit"><a href='http://10.30.0.12' target="_blank">信息平台</a></div>
+           </div>
+            
+  
+   
+   
+   </div>
+ </div>
+ <div class="fr img mr10">
+ <div id="fsD1" class="focus" style="z-index:1;">  
+
+    <div id="D1pic1" class="fPic">  
+        
+           <div class="fcon" style="display: none;">
+            <a target="_blank" href='Research_pic.aspx?CategoryId=175&ContentId=5723'><img src='Portal/UpLoadFiles/20151221141236.png' style="opacity: 1; " width='230'></a>
+            <span class="shadow"><a target="_blank" href='Research_pic.aspx?CategoryId=175&ContentId=5723'>康同杰</a></span>
+        </div>
+            
+           <div class="fcon" style="display: none;">
+            <a target="_blank" href='Research_pic.aspx?CategoryId=175&ContentId=5417'><img src='Portal/UpLoadFiles//new/edit/uploadfile/20149/2014-9-5-14-17-36.jpg' style="opacity: 1; " width='230'></a>
+            <span class="shadow"><a target="_blank" href='Research_pic.aspx?CategoryId=175&ContentId=5417'>童怀多</a></span>
+        </div>
+            
+           <div class="fcon" style="display: none;">
+            <a target="_blank" href='Research_pic.aspx?CategoryId=175&ContentId=5420'><img src='Portal/UpLoadFiles//new/edit/uploadfile/20122/2012-2-27-19-54-18.jpg' style="opacity: 1; " width='230'></a>
+            <span class="shadow"><a target="_blank" href='Research_pic.aspx?CategoryId=175&ContentId=5420'>范树怀</a></span>
+        </div>
+            
+           <div class="fcon" style="display: none;">
+            <a target="_blank" href='Research_pic.aspx?CategoryId=175&ContentId=5415'><img src='Portal/UpLoadFiles//new/edit/uploadfile/20122/2012-2-27-19-51-33.jpg' style="opacity: 1; " width='230'></a>
+            <span class="shadow"><a target="_blank" href='Research_pic.aspx?CategoryId=175&ContentId=5415'>竺宁彪</a></span>
+        </div>
+            
+
+        
+        
+    </div>
+    
+    
+    <div class="fbg">  
+    <div class="D1fBt" id="D1fBt">  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>1</i></a>  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a>  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>3</i></a>  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a>  
+    </div>  
+    </div>  
+    
+    <span class="prev"></span>   
+    <span class="next"></span>    
+</div>  
+
+<!-- 代码 结束 -->
+ </div>
+</div>
+<div style="clear:both;"></div>
+
+
+
+        
+<!--url-star-->
+<div class="w1010 url">
+ <div class="urlp">友情链接：</div>
+ <div class="sel">
+ <select name="宁波市中学" onchange="if (this.selectedindex!=0) window.open(this.value, '_blank')" class="ch01">
+   <option value='#'>宁波市中学</option>
+     
+             <option value='http://www.cxms.net/index.aspx'>慈溪中学</option>
+         
+             <option value='http://www.yyhs.net.cn/Category_194/Index.aspx'>余姚中学</option>
+         
+             <option value='http://www.zhzx.net.cn/'>镇海中学</option>
+         
+             <option value='http://www.nbzx.org/'>宁波中学</option>
+         
+             <option value='http://www.nbxiaoshi.net/index.asp'>效实中学</option>
+         
+             <option value='http://www.nbez.net/'>宁波二中</option>
+         
+             <option value='http://www.lwlms.com/'>李惠利中学</option>
+         
+             <option value='http://www.nb4z.com/'>宁波四中</option>
+         
+ </select>
+ </div>
+ <div class="sel">
+   <select name="全国中学" onchange="if (this.selectedindex!=0) window.open(this.value, '_blank')" class="ch01">
+     <option  value='#'>全国中学</option>
+       
+             <option value='http://dinghai.30edu.com/'>杭州学军中学</option>
+         
+             <option value='http://www.hbshgzx.com/index.html'>湖北省黄冈中学</option>
+         
+   </select>
+ </div>
+ <div class="sel">
+   <select name="全国大学" onchange="if (this.selectedindex!=0) window.open(this.value, '_blank')" class="ch01">
+     <option  value='#'>全国大学</option>
+       
+             <option value='http://www.pku.edu.cn/'>北京大学</option>
+         
+             <option value='http://www.tsinghua.edu.cn/publish/newthu/index.html'>清华大学</option>
+         
+   </select>
+ </div>
+ <div class="sel">
+   <select name="教育资源" onchange="if (this.selectedindex!=0) window.open(this.value, '_blank')" class="ch01">
+     <option  value='#'>教育资源</option>
+       
+             <option value='https://pjglpt.zjedu.gov.cn/login.action'>普通高中综合素质评价信息管理平台</option>
+         
+             <option value='http://www.nbgjzx.com/index.aspx'>宁波市国际交流服务中心</option>
+         
+             <option value='http://www.nbxxt.com'>宁波市家校互动管理平台</option>
+         
+             <option value='http://www.nbsedu.com'>宁波智慧教育学习平台</option>
+         
+             <option value='http://pxglpt.zjedu.gov.cn/'>浙江省教师培训管理平台</option>
+         
+             <option value='http://szxykj.zjer.cn/rrt/html/eduyun/home/index.html?sid=nbsdszx&path=/41D&ect=0.39033532553741684'>数字校园示范建设校网络空间</option>
+         
+             <option value='http://zbgl.zjedu.gov.cn/'>浙江省教育装备管理公共服务平台</option>
+         
+             <option value='http://yun.zjer.cn/'>浙江教育资源公共服务平台</option>
+         
+             <option value='http://www.zhixue.com/login.jsp?nextpage=index'>科大讯飞智学网题库</option>
+         
+             <option value='http://www.nbzfcg.cn/xycg/xycgcx.aspx'>宁波市政府采购网</option>
+         
+   </select>
+ </div>
+</div>
+<!--url-end-->
+<div style="clear:both;"></div>
+
+<div class="w1010 bottom">
+    版权所有：宁波市第三中学&nbsp;&nbsp; &nbsp;地址：宁波市惊驾路585号&nbsp;&nbsp; &nbsp;Copyright 2015 - 2016 All Rights Reserved<br />
+浙ICP备12018709号-1 <a style="color:#4d758a;" href="http://www.miibeian.gov.cn/" target="_blank">工业和信息化部备案管理系统</a> &nbsp;&nbsp; &nbsp;<a style="line-height:20px;display:inline-block;height:20px;text-decoration:none;color:#4d758a;" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33020402000180" target="_blank"><img alt="" src="/Portal/kindeditor/attached/image/20161110/20161110145117_4406.png" /> 浙公网安备 33020402000180号 </a> 
+<script type="text/javascript" src=""></script>
+<br />
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/12/187/0000/60600400/CA121870000606004000001.js' type='text/javascript'%3E%3C/script%3E"))</script>
+<img alt="" src="/Portal/kindeditor/attached/image/20160106/20160106132426_4238.jpg" height="70" />
+</div>
+
+    </div>
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+		//头部切换
+		$(".nav_url").mouseover(function(){
+			//隐藏全体dom
+			$(".xiala").hide();
+			//显示对应div层
+			var path = $(this).find('a').attr(('path'));
+			$("#"+path).slideDown(300);
+		})
+		$(".xiala").mouseover(function(){
+			$(this).show();
+		}).mouseout(function(){
+			$(".xiala").hide();
+		})
+	})
+</script>
+<script type="text/javascript">
+	Qfast.add('widgets', { path: "assets/js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+	Qfast(false, 'widgets', function () {
+		K.tabs({
+			id: 'fsD1',   //焦点图包裹id  
+			conId: "D1pic1",  //** 大图域包裹id  
+			tabId:"D1fBt",  
+			tabTn:"a",
+			conCn: '.fcon', //** 大图域配置class       
+			auto: 1,   //自动播放 1或0
+			effect: 'fade',   //效果配置
+			eType: 'click', //** 鼠标事件
+			pageBt:true,//是否有按钮切换页码
+			bns: ['.prev', '.next'],//** 前后按钮配置class                          
+			interval: 3000  //** 停顿时间  
+		}) 
+	})  
+	Qfast(false, 'widgets', function () {
+		K.tabs({
+			id: 'fsD2',   //焦点图包裹id  
+			conId: "D1pic2",  //** 大图域包裹id  
+			tabId:"D2fBt",  
+			tabTn:"a",
+			conCn: '.fcon', //** 大图域配置class       
+			auto: 1,   //自动播放 1或0
+			effect: 'fade',   //效果配置
+			eType: 'click', //** 鼠标事件
+			pageBt:true,//是否有按钮切换页码
+			bns: ['.prev', '.next'],//** 前后按钮配置class                          
+			interval: 3000  //** 停顿时间  
+		}) 
+	})  
+</script>

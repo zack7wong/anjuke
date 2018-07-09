@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="江西现代职业技术学院、江西现代、现代学院、江西现代学院">
+<title>江西现代职业技术学院</title>
+<link rel="stylesheet" href="/statics/xdxy/css/style2.css">
+<!-- 	<link rel="stylesheet" href="css/index.css"> -->
+
+<link rel="stylesheet" href="/statics/xdxy/css/style.css">
+<!-- 主css -->
+<script src="/statics/xdxy/js/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="/statics/js/jquery.cookie.js"></script>
+<script type="application/javascript">
+    var MobileUA = (function() {
+        var ua = navigator.userAgent.toLowerCase();
+        var mua = {
+            IOS: /ipod|iphone|ipad/.test(ua), //iOS
+            IPHONE: /iphone/.test(ua), //iPhone
+            IPAD: /ipad/.test(ua), //iPad
+            ANDROID: /android/.test(ua), //Android Device
+            WINDOWS: /windows/.test(ua), //Windows Device
+            TOUCH_DEVICE: ('ontouchstart' in window) || /touch/.test(ua), //Touch Device
+            MOBILE: /mobile/.test(ua), //Mobile Device (iPad)
+            ANDROID_TABLET: false, //Android Tablet
+            WINDOWS_TABLET: false, //Windows Tablet
+            TABLET: false, //Tablet (iPad, Android, Windows)
+            SMART_PHONE: false //Smart Phone (iPhone, Android)
+        };
+        mua.ANDROID_TABLET = mua.ANDROID && !mua.MOBILE;
+        mua.WINDOWS_TABLET = mua.WINDOWS && /tablet/.test(ua);
+        mua.TABLET = mua.IPAD || mua.ANDROID_TABLET || mua.WINDOWS_TABLET;
+        mua.SMART_PHONE = mua.MOBILE && !mua.TABLET;
+        return mua;
+    }());
+
+    if (MobileUA.SMART_PHONE && !$.cookie('vcms_my_test_code')) {
+    	var url = window.location.href;
+    	// 127.0.0.1 老域名  test.yuming.com 新域名
+       document.location.href = url.replace('www.jxxdxy.com','m.jxxdxy.com');
+    }
+</script>
+<div class="top_nav">
+		<div class="top_head">
+			<ul class="zf_nav fl"> 
+				<li id="xxmh"><a href="http://111.75.211.91/" target="_blank">信息门户</a></li>
+				<li id="facultystaff"><a href="http://www.jxxdxy.com/news-show-4647.html">领导信箱</a></li>
+				<li id="xxgk"><a href="http://www.jxxdxy.com/news-list-xxgk.html">信息公开</a></li>
+			</ul>
+
+			<div class="top_wbs fr">
+                <li id="ywz" ><a href="http://old.jxxdxy.com" target="_blank">学院原网站</a></li>
+				<li id="wxwn" ><a href=""><img src="/statics/xdxy/images/wx.png" alt=""></a>
+					<div class="wxwn_ewm"><a href="" ><img src="/statics/xdxy/images/jxxdzyjsxy.jpg" alt=""></a></div>
+				</li>
+				<script>
+					$("#wxwn").mouseover(function(){ $(".wxwn_ewm").css("display","block");});
+					$("#wxwn").mouseout(function(){ $(".wxwn_ewm").css("display","none");});
+				</script>
+                
+				<li id="weib" ><a href=""><img src="/statics/xdxy/images/wb.png" alt=""></a>
+                  <div class="wbwn_ewm"><a href="" ><img src="/statics/xdxy/images/wbewm.png" alt="" width="86" width="86"></a></div>
+                  <script>
+					$("#weib").mouseover(function(){ $(".wbwn_ewm").css("display","block");});
+					$("#weib").mouseout(function(){ $(".wbwn_ewm").css("display","none");});
+				</script>
+                  </li>
+				<div class="search">
+					<form class="search-form" method="get"  action="http://www.jxxdxy.com/index.php">
+						<input name="c" type="hidden" value="so">
+						<input name="module" type="hidden" value="MOD_DIR">
+						<input type="text" class="search_text" placeholder="&nbsp;&nbsp;搜索关键词..." name="keyword">
+						<div class="line_s fl">|</div>
+						<button class="search_sub" type="submit"><img src="/statics/xdxy/images/search_logo.png" style="margin-top: 3px;margin-right: 3px;" alt=""></button>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="head">
+		<div class="head">
+			<div class="head_l">
+				<a href="/"><img class="logo" src="/statics/xdxy/images/logo.png" alt=""></a>
+			</div>
+			<div class="head_m">
+			</div>
+		</div>
+	</div>
+	<div class="nav">
+		<ul>
+                
+					<li><a  href="/" class="nav_top_font">首页</a></a>
+                     
+					<li><a  href="http://www.jxxdxy.com/news-show-4622.html" class="nav_top_font">现代概况</a>
+							<dl>
+                            							<dd><a  href="http://www.jxxdxy.com/news-show-4622.html">学院简介</a></dd>
+														<dd><a  href="http://www.jxxdxy.com/news-show-4623.html">组织机构</a></dd>
+														<dd><a  href="http://www.jxxdxy.com/news-show-4625.html">现任领导</a></dd>
+														<dd><a  href="http://www.jxxdxy.com/news-list-xiandaiyingxiang.html">现代映象</a></dd>
+														<dd><a  href="http://www.jxxdxy.com/news-list-xiaoyuanditu.html">校园地图</a></dd>
+												        </dl>
+					</li>
+
+					<li><a  href="http://www.jxxdxy.com/news-list-jigoushezhi.html" class="nav_top_font">院系设置</a>
+							<dl>
+                            							<dd><a  href="http://xxgcxy.jxxdxy.com">信息工程学院</a></dd>
+														<dd><a  href="http://111.75.211.88:8089/">商务学院</a></dd>
+														<dd><a  href="http://jxxy.jxxdxy.com">机械学院</a></dd>
+														<dd><a  href="http://bm.jxxdxy.com:8080/index.aspx">建筑工程学院</a></dd>
+														<dd><a  href="http://sjxy.jxxdxy.com">设计学院</a></dd>
+														<dd><a  href="http://bm.jxxdxy.com/wenlv/">旅游与航空学院</a></dd>
+														<dd><a  href="http://hnxy.jxxdxy.com">环境与能源学院</a></dd>
+														<dd><a  href="http://jtjxb.jxxdxy.com">军事体育教学部</a></dd>
+														<dd><a  href="http://mks.jxxdxy.com">马克思主义学院</a></dd>
+														<dd><a  href="http://111.75.211.78:8081/web/index.aspx">继续教育学院</a></dd>
+														<dd><a  href="http://bkjy.jxxdxy.com/">本科教育学院</a></dd>
+												        </dl>
+					</li>
+
+					<li><a class="nav_top_font">教育教学</a>
+							<dl>
+                            							<dd><a  href="http://bm.jxxdxy.com/jw/">高等职业教育</a></dd>
+														<dd><a  href="http://111.75.211.78:8081/web/index.aspx">继续教育</a></dd>
+												        </dl>
+					</li>
+
+					<li><a  href="http://bm.jxxdxy.com:8089/index.html" class="nav_top_font">产学研究</a>
+							<dl>
+                            					        </dl>
+					</li>
+
+					<li><a  href="http://www.jxxdxy.com/news-list-zhaoshengjiuye.html" class="nav_top_font">招生就业</a>
+							<dl>
+                            							<dd><a  href="http://zsw.jxxdxy.com">招生处</a></dd>
+														<dd><a  href="http://jyw.jxxdxy.com/">就业处</a></dd>
+												        </dl>
+					</li>
+					
+					<li><a  href="http://www.jxxdxy.com/news-list-xiaoqihezuo.html" class="nav_top_font">校企合作</a>
+							<dl>
+                            							<dd><a  href="http://www.3gjs.cn/">现代--中兴通信学院</a></dd>
+														<dd><a  href="http://jxxd.chiwayauto.com/">现代--中锐教育集团</a></dd>
+												        </dl>
+					</li>
+
+					<li><a  href="http://111.75.211.85/" class="nav_top_font">图书馆</a>
+							<dl>
+                            							<dd><a  href="http://jxxdxy.fy.chaoxing.com/portal">空间学堂</a></dd>
+														<dd><a  href="http://111.75.211.85/newslist?cid=16">数字资源</a></dd>
+												        </dl>
+					</li>
+
+					<li><a  href="http://xyh.jxxdxy.com" class="nav_top_font">校友会</a>
+							<dl>
+                            					        </dl>
+					</li>
+			</ul>	
+	</div><div id="slide">
+  <div class="warrper m_auto">
+    <div class="focusBox9">
+      <ul class="pic" style="position: relative; width: 1000px; height: 395px;">
+              <li> <a target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzA5NjEwMDY5MA==&amp;mid=2739397461&amp;idx=1&amp;sn=8821b1694e521fa2186861b3500efa9b&amp;chksm=b6060b688171827eebf759b5674f1a5468c5e148f98e58ae4d108c437270fbd9ac53a67e7d4b#rd"><img src="/uploadfile/42/201805/a71390d39c.jpg" alt="一枝一叶总关情" /></a> </li>
+               <li> <a target="_blank" href="http://www.jxxdxy.com/news-show-47455.html"><img src="/uploadfile/42/201805/8fe670ad44.jpg" alt="信息工程分院勇夺国赛一等奖" /></a> </li>
+               <li> <a target="_blank" href="http://www.jxxdxy.com/news-show-47452.html"><img src="/uploadfile/42/201805/b0188f8131.jpg" alt="“现代—博导电商学院”成立！" /></a> </li>
+               <li> <a target="_blank" href="http://www.jxxdxy.com/news-show-47450.html"><img src="/uploadfile/42/201805/c071d97cb5.jpg" alt="百溪归湖为“溪湖”" /></a> </li>
+               <li> <a target="_blank" href="http://www.jxxdxy.com/news-show-47447.html"><img src="/uploadfile/42/201805/f45792f77e.jpg" alt="百团大战    光芒似社" /></a> </li>
+               <li> <a target="_blank" href="http://www.jxxdxy.com/news-show-47341.html"><img src="/uploadfile/42/201804/53a82550ca.jpg" alt="立足新时代  展现新作为" /></a> </li>
+             </ul>
+      <span class="prev"></span> <span class="next"></span> 
+      <ul class="txt" >	
+      	 
+                 <li>一枝一叶总关情</li>                
+      	 
+                 <li>信息工程分院勇夺国赛一等奖</li>                
+      	 
+                 <li>“现代—博导电商学院”成立！</li>                
+      	 
+                 <li>百溪归湖为“溪湖”</li>                
+      	 
+                 <li>百团大战    光芒似社</li>                
+      	 
+                 <li>立足新时代  展现新作为</li>                
+      <li></li>                                                  
+                 </ul>
+           <script src="/statics/xdxy/js/jquery.SuperSlide.js"></script>
+           <script type="text/javascript">
+          jQuery(".focusBox9").slide({ titCell:".num li", mainCell:".pic",effect:"fold", autoPlay:true,trigger:"click",startFun:function(i){jQuery(".focusBox9 .txt li").eq(i).animate({"bottom":30}).siblings().animate({"bottom":-60});}});
+	       </script> 
+    </div>
+  </div>
+</div>
+<div class="contens">
+  <div class="xdyw_news">
+    <div class="xdtit_news_top" > <span class="xdyw_tit">现代要闻</span> <span class="xd_news">NEWS</span> <a href="http://www.jxxdxy.com/news-list-xiaoyuanyaowen.html">更多</a> </div>
+    <div class="news_l">
+      <div class="pic" style="margin-top:13px;">
+          <ul>
+                        <li> <a href="http://www.jxxdxy.com/news-show-47567.html" target="_blank" title="民盟江西现代学院支部换届选举大会顺利召开"> <img src="/uploadfile/42/201805/3fddf40b86.jpg" alt="民盟江西现代学院支部换届选举大会顺利召开">
+              <div class="dsp">
+                <p>民盟江西现代学院支部换届选举大会..</p>
+                <div>团结奋进</div>
+              </div>
+              </a> </li>
+                      </ul>
+      </div>
+      <div class="xdlist_con">
+        <ul>
+                <li>
+           <div class="media">
+             <a class="pull-left" href="http://www.jxxdxy.com/news-show-47567.html" target="_blank" title="民盟江西现代学院支部换届选举大会顺利召开">
+               <div class="imgCon"><img width="120" src="/uploadfile/42/201805/3fddf40b86.jpg" alt=""></div>
+             </a>
+             <div class="media-body">
+               <h5 class="media-heading text-nowrap"><a href="http://www.jxxdxy.com/news-show-47567.html" target="_blank" title="民盟江西现代学院支部换届选举大会顺利召开">民盟江西现代学院支部换届..</a></h5>
+               <p class="text-grey">团结奋进</p>
+             </div>
+           </div>
+         </li>
+                 <li>
+           <div class="media">
+             <a class="pull-left" href="http://www.jxxdxy.com/news-show-47558.html" target="_blank" title="新华社转载学院2017年爱心文化育人工作纪实">
+               <div class="imgCon"><img width="120" src="/uploadfile/42/201805/af852c4fdb.png" alt=""></div>
+             </a>
+             <div class="media-body">
+               <h5 class="media-heading text-nowrap"><a href="http://www.jxxdxy.com/news-show-47558.html" target="_blank" title="新华社转载学院2017年爱心文化育人工作纪实">新华社转载学院2017年..</a></h5>
+               <p class="text-grey">一枝一叶总关情，“爱行天下”学生观。</p>
+             </div>
+           </div>
+         </li>
+                 <li>
+           <div class="media">
+             <a class="pull-left" href="http://www.jxxdxy.com/news-show-47559.html" target="_blank" title="【江西教育电视台】江西现代职院：全国大学生心理健康日，让大学生心阳光心健康">
+               <div class="imgCon"><img width="120" src="/uploadfile/42/201805/4de54c655b.jpg" alt=""></div>
+             </a>
+             <div class="media-body">
+               <h5 class="media-heading text-nowrap"><a href="http://www.jxxdxy.com/news-show-47559.html" target="_blank" title="【江西教育电视台】江西现代职院：全国大学生心理健康日，让大学生心阳光心健康">【江西教育电视台】江西现..</a></h5>
+               <p class="text-grey">心理健康日</p>
+             </div>
+           </div>
+         </li>
+                 <li>
+           <div class="media">
+             <a class="pull-left" href="http://www.jxxdxy.com/news-show-47557.html" target="_blank" title="学院商务学子在全国职业院校技能大赛“互联网+国际贸易综合技能”赛项中获奖">
+               <div class="imgCon"><img width="120" src="/uploadfile/42/201805/989e4dba77.jpg" alt=""></div>
+             </a>
+             <div class="media-body">
+               <h5 class="media-heading text-nowrap"><a href="http://www.jxxdxy.com/news-show-47557.html" target="_blank" title="学院商务学子在全国职业院校技能大赛“互联网+国际贸易综合技能”赛项中获奖">学院商务学子在全国职业院..</a></h5>
+               <p class="text-grey">技能大赛</p>
+             </div>
+           </div>
+         </li>
+                 <li>
+           <div class="media">
+             <a class="pull-left" href="http://www.jxxdxy.com/news-show-47556.html" target="_blank" title="学习禁毒知识    建设无毒社会——学院开展禁毒宣传教育活动">
+               <div class="imgCon"><img width="120" src="/uploadfile/42/201805/ba111d106a.JPG" alt=""></div>
+             </a>
+             <div class="media-body">
+               <h5 class="media-heading text-nowrap"><a href="http://www.jxxdxy.com/news-show-47556.html" target="_blank" title="学习禁毒知识    建设无毒社会——学院开展禁毒宣传教育活动">学习禁毒知识    建设..</a></h5>
+               <p class="text-grey">远离毒品  珍爱生命</p>
+             </div>
+           </div>
+         </li>
+                 <li>
+           <div class="media">
+             <a class="pull-left" href="http://www.jxxdxy.com/news-show-47552.html" target="_blank" title="学院环境与能源分院学子在2018年全国职业院校技能大赛中再获佳绩">
+               <div class="imgCon"><img width="120" src="/uploadfile/42/201805/0694e60851.jpg" alt=""></div>
+             </a>
+             <div class="media-body">
+               <h5 class="media-heading text-nowrap"><a href="http://www.jxxdxy.com/news-show-47552.html" target="_blank" title="学院环境与能源分院学子在2018年全国职业院校技能大赛中再获佳绩">学院环境与能源分院学子在..</a></h5>
+               <p class="text-grey">再获佳绩</p>
+             </div>
+           </div>
+         </li>
+                 </ul>
+      </div>
+    </div>
+  </div>
+  <div class="xdyw_news">
+    <div class="xdtit_news_top" style="border-bottom: 1px solid #eeeeee;"> <span class="xdyw_tit fl">专题网站</span> <span class="xd_news fl">SPECIAL WEBSITE </span> <a href="http://www.jxxdxy.com/news-list-ztwz.html">更多</a> </div>
+    <div class="ztwz_img"> 
+      <ul>
+      <li> <a href="http://jxxdxy.fy.chaoxing.com/portal" > <img src="/uploadfile/42/201803/8d20ac3a4d.jpg" /><span>空间学堂</span></a> </li><li> <a href="http://bm.jxxdxy.com/jxcgj/" > <img src="/uploadfile/42/201804/379865a1c8.jpg" /><span>2018年国家级教学成果奖申报</span></a> </li><li> <a href="http://bwc.jxxdxy.com/news-list-zhzlzl.html" > <img src="/uploadfile/42/201803/de435d77b2.jpg" /><span>综治宣传栏</span></a> </li><li> <a href="/news-list-xiandaiyingxiang.html" > <img src="/uploadfile/42/201711/79eb147228.png" /><span>现代映像</span></a> </li> 
+       </ul>
+     </div>
+    <div class="xdcylk_con"> <span>常用链接</span>
+      <div class="line"></div>
+      <ul>
+        <a href="http://www.jxxdxy.com/news-list-yqlj.html"><img src="/statics/xdxy/images/links.png"></a>
+      </ul>
+    </div>
+    <div class="xdrczp_img"> 
+      <a href="http://www.jxxdxy.com/news-list-rencaizhaopin.html" id="xd_rczp">
+      <div class="rczp_01"> <span class="xdrczp_zw">人才招聘</span> <span class="xdrczp_en">Recruitment</span> <span class="xdrczp_en"></span> </div>
+      </a> 
+       <a href="http://www.jxxdxy.com/news-list-meitishiye.html" id="xd_mtsy">
+      <div class="rczp_01"> <span class="xdrczp_zw">媒体视野</span> <span class="xdrczp_en">Media</span> <span class="xdrczp_en">vision</span> </div>
+      </a>
+      <a href="http://www.jxxdxy.com/news-list-xjjl.html" id="xd_xjjl">
+      <div class="rczp_01"> <span class="xdrczp_zw">校际交流</span> <span class="xdrczp_en">Inter-school</span> <span class="xdrczp_en">Exchange</span> </div>
+      </a>
+      <a href="http://jxxdxy.cuepa.cn/" id="xd_xdxb" target="_blank">
+      <div class="rczp_01"> <span class="xdrczp_zw">现代校报</span> <span class="xdrczp_en">School</span> <span class="xdrczp_en">Newspaper</span> </div>
+      </a> 
+      <a href="http://www.jxxdxy.com/news-list-zhaobiaoxinxi.html" id="xd_wzdt">
+      <div class="rczp_01"> <span class="xdrczp_zw">招标信息</span> <span class="xdrczp_en">Bidding</span> <span class="xdrczp_en">Information</span> </div>
+      </a> 
+      <a href="http://www.jxxdxy.com/news-list-qitagonggao.html" id="xd_qtgg">
+      <div class="rczp_01"> <span class="xdrczp_zw">其他公告</span> <span class="xdrczp_en">Other</span> <span class="xdrczp_en">Announcements</span> </div>
+      </a> 
+         
+      
+      </div>
+  </div>
+</div>
+<script type="text/javascript" src="/statics/js/tj.js"></script><div id="foot">
+  <div class="foot">
+    <div class="foot_l fl"> <span class="foot_w">Copyright 2013 www.jxxdxy.com All Rights Reserved © 江西现代职业技术学院  赣ICP备05003325号 </span> <span class="foot_g">地址：江西省南昌市昌东大学园区紫阳大道338号    邮政编码：330095     联系电话：0791-88384012 0791-88123818</span> </div>
+    <div class="foot_r fr foot_w"><a href="http://117.40.91.39" target="_blank"><img src="/statics/xdxy/images/bjgt.gif" width="73"  border="0"></a><a href="http://117.40.91.39/wzba_search.asp" target="_blank"><img src="/statics/xdxy/images/batb.png" width="70"  border="0"></a><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript  src='http://dcs.conac.cn/js/15/000/0000/60697180/CA150000000606971800001.js' type='text/javascript'%3E%3C/script%3E"));</script></div>
+  </div>
+</div> 
+<script src="/statics/xdxy/js/script.js"></script><!-- 主js --> 
+<script type="text/javascript" src="/statics/xdxy/js/slide.js"></script><!-- 轮播图js -->
+</body>
+</html>

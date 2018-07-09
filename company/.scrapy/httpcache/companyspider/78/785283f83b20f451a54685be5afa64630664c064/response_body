@@ -1,0 +1,1308 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<TITLE>山东省莱芜第一中学</TITLE>
+<META NAME="Author" CONTENT=" ">
+<META NAME="Keywords" CONTENT="山东省莱芜第一中学">
+<META NAME="Description" CONTENT="山东省莱芜第一中学">
+
+<link href="images/css.css" rel="stylesheet" type="text/css" />
+<LINK href="js/mt_style.css" type=text/css rel=stylesheet>
+<SCRIPT language=javascript src="js/Menu_func.js"></SCRIPT>
+<SCRIPT language=javascript src="js/Menu_init.js"></SCRIPT>
+<SCRIPT>
+function getNames(obj,name,tij)
+	{	
+		var p = document.getElementById(obj);
+		var plist = p.getElementsByTagName(tij);
+		var rlist = new Array();
+		for(i=0;i<plist.length;i++)
+		{
+			if(plist[i].getAttribute("name") == name)
+			{
+				rlist[rlist.length] = plist[i];
+			}
+		}
+		return rlist;
+	}
+
+		function butong_net(obj,name)
+		{
+			var p = obj.parentNode.getElementsByTagName("td");
+			var p1 = getNames(name,"f","div");
+			for(i=0;i<p1.length;i++)
+			{
+				if(obj==p[i])
+				{
+					p[i].className = "s";
+					p1[i].className = "dis";
+				}
+				else
+				{
+					p[i].className = "t";
+					p1[i].className = "undis";
+				}
+			}
+
+		}
+</SCRIPT>
+
+
+
+</head>
+
+<BODY onload=init();>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+    <td height="30" background="images/bb.jpg"><table width="982" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="11">&nbsp;</td>
+        <td width="351" background="images/top-bg.gif">欢迎光临山东省莱芜第一中学，<span>今天：
+          <script language="JavaScript" type="text/javascript">
+
+<!--                
+
+now=new Date();                
+
+thisYear=now.getFullYear();                
+
+thisMonth=now.getMonth()+1;                
+
+thisDate=now.getDate();
+
+thisHours=now.getHours();               
+
+thisMinutes=now.getMinutes();               
+
+thisSeconds=now.getSeconds();                
+
+if(now.getDay()==0){var thisDay="日";}                
+
+if(now.getDay()==1){var thisDay="一";}                
+
+if(now.getDay()==2){var thisDay="二";}                
+
+if(now.getDay()==3){var thisDay="三";}                
+
+if(now.getDay()==4){var thisDay="四";}                
+
+if(now.getDay()==5){var thisDay="五";}                
+
+if(now.getDay()==6){var thisDay="六";}                
+
+document.write(thisYear+"年"+thisMonth+"月"+thisDate+"日");           
+
+document.write(" 星期"+thisDay);                
+
+// -->
+
+                              </script>
+        </span></td>
+        <td valign="top" background="images/top-bg.gif" align="center"><iframe width="210" scrolling="no" height="23" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=1&icon=1&py=laiwu&wind=1&num=1"></iframe></td>
+        <td width="249" valign="top" background="images/top-bg.gif"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <form action="cps.asp" method="post">
+            <tr>
+              <td width="20%" height="30" align="right">搜索：</td>
+              <td width="58%"><input name="keyword" type="text" class="button" id="keyword" style="height:22; font-size:13px; width:120px" onclick="if (this.value=='请输入关键字'){this.value=''}" value="请输入关键字" size="20" /></td>
+              <td width="22%"><input name="image" type="image" src="images/so1.gif" width="48" height="19" /></td>
+              </tr>
+            </form>
+        </table></td>
+        <td width="12"><a href="yizhong/" target="_blank"><img src="images/Dot.gif" width="6" height="6" /></a></td>
+        <td width="91"><a href="http://old.laiwuyizhong.com" target="_blank">访问旧版网站</a></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><img src="images/top1.jpg" width="1000" height="100" /></td>
+  </tr>
+  
+  <tr>
+    <td height="33" background="images/mbg.jpg"><table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" >
+      <tr>
+        <td height="33"onmouseover="this.bgColor='#0E4E8D';" onmouseout="this.bgColor='';" ><div align="center"><a href="index.asp" class="menu" >网站首页</a></div></td>
+        <td onmouseover="this.bgColor='#0E4E8D';"  onmouseout="this.bgColor='';"><div align="center"><a href="cp.asp?id=1" class="menu" id="menu1">学校概况</a></div></td>
+        <td onmouseover="this.bgColor='#0E4E8D';" onmouseout="this.bgColor='';"><div align="center"><a href="cp.asp?id=9" class="menu" id="menu2">校园动态</a></div></td>
+        <td onmouseover="this.bgColor='#0E4E8D';" onmouseout="this.bgColor='';"><div align="center"><a href="cp.asp?id=13" class="menu" id="menu3">教师园地</a></div></td>
+        <td onmouseover="this.bgColor='#0E4E8D';" onmouseout="this.bgColor='';"><div align="center"><a href="cp.asp?id=21" class="menu" id="menu4">学生天地</a></div></td>
+        <td onmouseover="this.bgColor='#0E4E8D';" onmouseout="this.bgColor='';"><div align="center"><a href="cp.asp?id=29" class="menu" id="menu5">校友之家</a></div></td>
+        <td onmouseover="this.bgColor='#0E4E8D';" onmouseout="this.bgColor='';"><div align="center"><a href="#" class="menu" id="menu6">专题专栏</a></div></td>
+        </tr>
+    </table>      <script language="javascript" 
+      src="js/Menu_content.js" type="text/javascript"></script></td>
+  </tr>
+
+  <tr>
+    <td><object type="application/x-shockwave-flash" data="bcastr4.swf?xml=f1.xml"  width="1000" height="280" id="vcastr3">
+      <param name="wmode" value="transparent" />
+      <param name="movie" value="bcastr4.swf?xml=f1.xml" />
+      <embed src="bcastr4.swf?xml=f1.xml" width="1000" height="280" wmode="transparent"></embed>
+    </object></td>
+  </tr>
+</table>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="margin-top:10px">
+  <tr>
+    <td width="250" valign="top"><table width="250" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><table width="250" border="0" cellpadding="0" cellspacing="0" class="kuang_blue">
+            <tr>
+              <td height="32" background="images/tabtitlebg.jpg"><table class="wtop1" cellspacing="0" cellpadding="0" width="250" align="left" 
+            border="0">
+                <tbody>
+                  <tr>
+                    <td class="s" onmouseover="butong_net(this,'butong_net1');this.Color='#000000';"align="center" 
+                width="125" height="32">
+                 
+               <a 
+                  href="cp.asp?id=10" target="_blank">校外公告</a>
+                    
+                  </td>
+                    <td onmouseover="butong_net(this,'butong_net1')" 
+                align="center" width="125"> 
+               <a 
+                  href="cp.asp?id=46" target="_blank">校内公告</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table></td>
+            </tr>
+            <tr>
+              <td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td><div id="butong_net1">
+                    <div class="dis" name="f">
+                      <table width="96%" height="10" 
+                  border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tbody>
+                          <tr>
+                            <td height="8"></td>
+                          </tr>
+                          <tr>
+                            <td><marquee direction='up' id="scrollarea2" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="1" scrolldelay="10"  height="250">
+                              <center>
+                                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="news">
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5953&amp;id=10" target="_blank" class="text">莱芜一中2018年“航空教育特色班”招生简章</a>　<span class="timetxt">(2018/4/10)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5823&amp;id=10" target="_blank" class="text">关于做好山东省2017年冬季普通高中学业水平考试报名工作的通知</a>　<span class="timetxt">(2017/9/21)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5819&amp;id=10" target="_blank" class="text">莱芜一中简报2017年第2期 （总第42期）</a>　<span class="timetxt">(2017/9/19)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5795&amp;id=10" target="_blank" class="text">关于参加“普通高中2017届课程实施方案和学科教学培训活动”的通知</a>　<span class="timetxt">(2017/8/4)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5788&amp;id=10" target="_blank" class="text">莱芜市公安局《致广大高考毕业生的一封信》</a>　<span class="timetxt">(2017/7/6)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5780&amp;id=10" target="_blank" class="text">关于参加“2017年山东省普通高中教育质量综合测评”的通知</a>　<span class="timetxt">(2017/6/28)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5772&amp;id=10" target="_blank" class="text">关于选拔参加“2017年“国培计划”——示范性项目”人员的通知</a>　<span class="timetxt">(2017/6/10)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5742&amp;id=10" target="_blank" class="text">莱芜一中2017年艺体类特色专业招生专业合格名单公示</a>　<span class="timetxt">(2017/5/16)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5732&amp;id=10" target="_blank" class="text">莱芜一中、莱芜十七中2017年艺体类招生简章</a>　<span class="timetxt">(2017/5/6)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                </table>
+                              </center>
+                            </marquee></td>
+                          </tr>
+                          <tr>
+                            <td height="3"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="undis" name="f">
+                      <table width="96%" height="10" 
+                  border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tbody>
+                          <tr>
+                            <td height="8"></td>
+                          </tr>
+                          <tr>
+                            <td><marquee direction='up' id="scrollarea2" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="1" scrolldelay="10"  height="250">
+                              <center>
+                                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="news">
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5985&amp;id=46" target="_blank" class="text">关于2018年教职工子女就学报名的通知</a>　<span class="timetxt">(2018/5/23)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5982&amp;id=46" target="_blank" class="text">课题结题通知</a>　<span class="timetxt">(2018/5/17)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5975&amp;id=46" target="_blank" class="text">公  示</a>　<span class="timetxt">(2018/5/13)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5965&amp;id=46" target="_blank" class="text">2018年五一国际劳动节放假安排</a>　<span class="timetxt">(2018/4/25)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5963&amp;id=46" target="_blank" class="text">莱芜一中2018年组织学科德育优秀课例展评活动的通知</a>　<span class="timetxt">(2018/4/23)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5957&amp;id=46" target="_blank" class="text">2018年“互联网+教师专业发展”培训报名名单公示</a>　<span class="timetxt">(2018/4/16)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5955&amp;id=46" target="_blank" class="text">莱芜一中第二十届体育节暨春季田径运动会实施方案</a>　<span class="timetxt">(2018/4/11)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5951&amp;id=46" target="_blank" class="text">关于2018年 “互联网+教师专业发展”工程报名的通知</a>　<span class="timetxt">(2018/4/10)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td width="7%" align="center"><span class="ico">&middot;</span></td>
+                                    <td width="93%" height="30"><div align="left"> <a href="display.asp?did=5950&amp;id=46" target="_blank" class="text">莱芜一中2017-2018学年下学期“一师一优课、一课一名师”活动实施方案</a>　<span class="timetxt">(2018/4/10)</span></div></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" height="8"><table width="98%" border="0" cellpadding="0" cellspacing="0" bgcolor="#CCCCCC">
+                                      <tr>
+                                        <td height="1"></td>
+                                      </tr>
+                                    </table></td>
+                                  </tr>
+                                  
+                                </table>
+                              </center>
+                            </marquee></td>
+                          </tr>
+                          <tr>
+                            <td height="3"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td height="10"></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="29" background="images/lefttitle.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="76%" height="22"><div class="newstop"><a href="cp.asp?id=11" class="menu">级部工作</a></div></td>
+                  <td width="24%"><a href="cpdw.asp?id=23"><font color="#FFFFFF">更多&gt;&gt;</font></a></td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td><table width="100%" border="0" cellpadding="0" cellspacing="0" class="kuang-content">
+                <tr>
+                  <td height="177" valign="top"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="news" style="margin-top:9px; margin-bottom:7px">
+                    
+                    <tr>
+                      <td width="7%" align="center" ><img src="images/arr_n.gif" width="7" height="5" /></td>
+                      <td width="93%" height="28" ><a href="cpdw1.asp?did=10&amp;id=30" target="_blank" title="56级2级部召开学生大会" class="news">56级2级部召开学生大会</a></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="7%" align="center" ><img src="images/arr_n.gif" width="7" height="5" /></td>
+                      <td width="93%" height="28" ><a href="cpdw1.asp?did=9&amp;id=30" target="_blank" title="56级2级部家访" class="news">56级2级部家访</a></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="7%" align="center" ><img src="images/arr_n.gif" width="7" height="5" /></td>
+                      <td width="93%" height="28" ><a href="cpdw1.asp?did=8&amp;id=26" target="_blank" title="54级1级部召开女生专题会" class="news">54级1级部召开女生专题会</a></td>
+                    </tr>
+                    
+                  </table></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td height="10"></td>
+        </tr>
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="29" background="images/lefttitle.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="76%" height="22"><div class="newstop"><a href="cp.asp?id=12" class="menu">处室工作</a></div></td>
+                  <td width="24%"><a href="dw_chushi.asp"><font color="#FFFFFF">更多&gt;&gt;</font></a></td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td><table width="100%" border="0" cellpadding="0" cellspacing="0" class="kuang-content">
+                <tr>
+                  <td height="178" valign="top"><iframe width="244" scrolling="no" height="178" frameborder="0" allowtransparency="true" src="http://chushi.laiwuyizhong.com/dy_news.asp"></iframe></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td height="10"></td>
+        </tr>
+          <tr>
+        <td height="5"><a href="cp.asp?id=54"><img src="images/sysy.jpg" width="250" height="45" /></a></td>
+      </tr>
+          <tr>
+            <td height="10"></td>
+          </tr> <tr>
+        <td height="5"><a href="http://yun.lwjy.net/" target="_blank"><img src="images/rrt.jpg" width="250" height="45" /></a></td>
+      </tr>
+          <tr>
+            <td height="10"></td>
+          </tr>
+          <tr>
+            <td height="5"><a href="http://218.56.161.27:8280/" target="_blank"><img src="images/448.jpg" width="250" height="45" /></a></td>
+          </tr>
+          <tr>
+            <td height="10"></td>
+          </tr>
+          <tr>
+            <td height="10"><a href="http://218.56.161.27:8093/" target="_blank"><img src="images/449.jpg" width="250" height="45" /></a></td>
+          </tr>
+       
+    </table></td>
+    <td width="500" valign="top"><table width="480" border="0" align="center" cellpadding="0" cellspacing="0"  >
+      <tr>
+        <td height="31" background="images/nt480.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="8%">&nbsp;</td>
+            <td width="80%" class="newskind"><a href="cp.asp?id=9" class="newskind1">校园新闻</a></td>
+            <td width="12%"><a href="cp.asp?id=9" class="news">更多&gt;&gt;</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="kuang-5">
+          <tr>
+            <td height="208" valign="top"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                    <td><table width="99%" border="0" align="center" cellpadding="0" cellspacing="0" class="news">
+                      
+                      <tr>
+                        <td width="4%" style="BORDER-BOTTOM: #ccc 1px dotted" align="center"><img src="images/dd1.gif" width="3" height="5" /></td>
+                        <td width="79%" height="28" style="BORDER-BOTTOM: #ccc 1px dotted"><div align="left" ><a title="莱芜一中、十七中2018年艺体类非特色专业招生美术测试成绩公示" href="display.asp?did=5984&amp;id=9" target="_blank" class="news">
+						
+						<font color="#FF0000">莱芜一中、十七中2018年艺体类非特色专业招生美术测试成绩公</font>
+                        
+                        </a></div></td>
+                        <td width="17%"  class="timetxt"  style="BORDER-BOTTOM: #ccc 1px dotted"><font color=#979797>2018.05.23</font></td>
+                      </tr>
+                      
+                      <tr>
+                        <td width="4%" style="BORDER-BOTTOM: #ccc 1px dotted" align="center"><img src="images/dd1.gif" width="3" height="5" /></td>
+                        <td width="79%" height="28" style="BORDER-BOTTOM: #ccc 1px dotted"><div align="left" ><a title="莱芜一中2018年体育类特色专业招生专业合格名单公示" href="display.asp?did=5981&amp;id=9" target="_blank" class="news">
+						
+						<font color="#FF0000">莱芜一中2018年体育类特色专业招生专业合格名单公示</font>
+                        
+                        </a></div></td>
+                        <td width="17%"  class="timetxt"  style="BORDER-BOTTOM: #ccc 1px dotted"><font color=#979797>2018.05.17</font></td>
+                      </tr>
+                      
+                      <tr>
+                        <td width="4%" style="BORDER-BOTTOM: #ccc 1px dotted" align="center"><img src="images/dd1.gif" width="3" height="5" /></td>
+                        <td width="79%" height="28" style="BORDER-BOTTOM: #ccc 1px dotted"><div align="left" ><a title="2018年莱芜一中航空教育特色班体检合格名单公示" href="display.asp?did=5969&amp;id=9" target="_blank" class="news">
+						
+						<font color="#FF0000">2018年莱芜一中航空教育特色班体检合格名单公示</font>
+                        
+                        </a></div></td>
+                        <td width="17%"  class="timetxt"  style="BORDER-BOTTOM: #ccc 1px dotted"><font color=#979797>2018.05.07</font></td>
+                      </tr>
+                      
+                      <tr>
+                        <td width="4%" style="BORDER-BOTTOM: #ccc 1px dotted" align="center"><img src="images/dd1.gif" width="3" height="5" /></td>
+                        <td width="79%" height="28" style="BORDER-BOTTOM: #ccc 1px dotted"><div align="left" ><a title="我校举行第七届主题班会优质课评比活动" href="display.asp?did=5983&amp;id=9" target="_blank" class="news">
+						我校举行第七届主题班会优质课评比活动
+                        </a></div></td>
+                        <td width="17%"  class="timetxt"  style="BORDER-BOTTOM: #ccc 1px dotted"><font color=#979797>2018.05.22</font></td>
+                      </tr>
+                      
+                      <tr>
+                        <td width="4%" style="BORDER-BOTTOM: #ccc 1px dotted" align="center"><img src="images/dd1.gif" width="3" height="5" /></td>
+                        <td width="79%" height="28" style="BORDER-BOTTOM: #ccc 1px dotted"><div align="left" ><a title="我校举行高三学生毕业捐树留念活动" href="display.asp?did=5979&amp;id=9" target="_blank" class="news">
+						我校举行高三学生毕业捐树留念活动
+                        </a></div></td>
+                        <td width="17%"  class="timetxt"  style="BORDER-BOTTOM: #ccc 1px dotted"><font color=#979797>2018.05.16</font></td>
+                      </tr>
+                      
+                      <tr>
+                        <td width="4%" style="BORDER-BOTTOM: #ccc 1px dotted" align="center"><img src="images/dd1.gif" width="3" height="5" /></td>
+                        <td width="79%" height="28" style="BORDER-BOTTOM: #ccc 1px dotted"><div align="left" ><a title="我校58级（高一）举行励志报告会" href="display.asp?did=5977&amp;id=9" target="_blank" class="news">
+						我校58级（高一）举行励志报告会
+                        </a></div></td>
+                        <td width="17%"  class="timetxt"  style="BORDER-BOTTOM: #ccc 1px dotted"><font color=#979797>2018.05.15</font></td>
+                      </tr>
+                      
+                      <tr>
+                        <td width="4%" style="BORDER-BOTTOM: #ccc 1px dotted" align="center"><img src="images/dd1.gif" width="3" height="5" /></td>
+                        <td width="79%" height="28" style="BORDER-BOTTOM: #ccc 1px dotted"><div align="left" ><a title="莱芜一中在第33届山东省青少年科技创新大赛中再创佳绩" href="display.asp?did=5976&amp;id=9" target="_blank" class="news">
+						莱芜一中在第33届山东省青少年科技创新大赛中再创佳绩
+                        </a></div></td>
+                        <td width="17%"  class="timetxt"  style="BORDER-BOTTOM: #ccc 1px dotted"><font color=#979797>2018.05.14</font></td>
+                      </tr>
+                      
+                      <tr>
+                        <td width="4%" style="BORDER-BOTTOM: #ccc 1px dotted" align="center"><img src="images/dd1.gif" width="3" height="5" /></td>
+                        <td width="79%" height="28" style="BORDER-BOTTOM: #ccc 1px dotted"><div align="left" ><a title="第十六届中国日报社“21世纪&#8226;新东方”杯英语演讲山东省赛区喜报" href="display.asp?did=5973&amp;id=9" target="_blank" class="news">
+						第十六届中国日报社“21世纪&#8226;新东方”杯英语演讲
+                        </a></div></td>
+                        <td width="17%"  class="timetxt"  style="BORDER-BOTTOM: #ccc 1px dotted"><font color=#979797>2018.05.09</font></td>
+                      </tr>
+                      
+                      <tr>
+                        <td width="4%" style="BORDER-BOTTOM: #ccc 1px dotted" align="center"><img src="images/dd1.gif" width="3" height="5" /></td>
+                        <td width="79%" height="28" style="BORDER-BOTTOM: #ccc 1px dotted"><div align="left" ><a title="演绎青春，飞扬自我—莱芜一中58级英语话剧比赛" href="display.asp?did=5972&amp;id=9" target="_blank" class="news">
+						演绎青春，飞扬自我—莱芜一中58级英语话剧比赛
+                        </a></div></td>
+                        <td width="17%"  class="timetxt"  style="BORDER-BOTTOM: #ccc 1px dotted"><font color=#979797>2018.05.09</font></td>
+                      </tr>
+                      
+                    </table></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+      <table width="480" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:10px"> 
+        <tr>
+          <td height="28" background="images/newstitle6.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="8%">&nbsp;</td>
+              <td width="80%" class="newskind"><a href="cp.asp?id=13" class="newskind1">教师园地</a></td>
+              <td width="12%"><a href="cp.asp?id=13" class="news">更多&gt;&gt;</a></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="kuang-5">
+            <tr>
+              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="100%"><table width="99%" border="0" align="center" cellpadding="0" cellspacing="0" class="news" style="margin-top:6px">
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span>
+                        
+                        <a href="cp.asp?id=20" class="ch" target="_blank">[学习交流]</a>
+                        
+                        <a href="display.asp?did=5647&amp;id=20" target="_blank" title="莱芜市教育局关于全面提高普通中小学教育质量的若干意见" class="news">莱芜市教育局关于全面提高普通中小学教育质量的若干</a></span></td>
+                      <td width="17%"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2017.02.15</font></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span>
+                        
+                        <a href="cp.asp?id=20" class="ch" target="_blank">[学习交流]</a>
+                        
+                        <a href="display.asp?did=5590&amp;id=20" target="_blank" title="北京十一学校校长：为什么阅读比上语文课重要" class="news">北京十一学校校长：为什么阅读比上语文课重要</a></span></td>
+                      <td width="17%"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2016.11.18</font></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span>
+                        
+                        <a href="cp.asp?id=20" class="ch" target="_blank">[学习交流]</a>
+                        
+                        <a href="display.asp?did=5579&amp;id=20" target="_blank" title="京师问道（五）莱芜一中优秀教师国内第一期研修班研修简报" class="news">京师问道（五）莱芜一中优秀教师国内第一期研修班研</a></span></td>
+                      <td width="17%"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2016.11.10</font></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span>
+                        
+                        <a href="cp.asp?id=20" class="ch" target="_blank">[学习交流]</a>
+                        
+                        <a href="display.asp?did=5576&amp;id=20" target="_blank" title="京师问道（四）莱芜一中优秀教师国内第一期研修班研修简报" class="news">京师问道（四）莱芜一中优秀教师国内第一期研修班研</a></span></td>
+                      <td width="17%"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2016.11.09</font></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span>
+                        
+                        <a href="cp.asp?id=20" class="ch" target="_blank">[学习交流]</a>
+                        
+                        <a href="display.asp?did=5575&amp;id=20" target="_blank" title="京师问道（三）莱芜一中优秀教师国内第一期研修班研修简报" class="news">京师问道（三）莱芜一中优秀教师国内第一期研修班研</a></span></td>
+                      <td width="17%"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2016.11.08</font></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span>
+                        
+                        <a href="cp.asp?id=20" class="ch" target="_blank">[学习交流]</a>
+                        
+                        <a href="display.asp?did=5572&amp;id=20" target="_blank" title="京师问道（二）莱芜一中优秀教师国内第一期研修班研修简报" class="news">京师问道（二）莱芜一中优秀教师国内第一期研修班研</a></span></td>
+                      <td width="17%"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2016.11.07</font></span></td>
+                    </tr>
+                    
+                  </table></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table></td>
+        </tr>
+    </table>
+      <table width="480" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:10px">
+        <tr>
+          <td height="28" background="images/newstitle6.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="8%">&nbsp;</td>
+              <td width="80%" class="newskind"><a href="cp.asp?id=21" class="newskind1">学生天地</a></td>
+              <td width="12%"><a href="cp.asp?id=21" class="news">更多&gt;&gt;</a></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="kuang-5">
+            <tr>
+              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="100%"><table width="99%" border="0" align="center" cellpadding="0" cellspacing="0" class="news" style="margin-top:6px">
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span>
+                        
+                        <a href="cp.asp?id=24" class="ch" target="_blank">[星满校园]</a>
+                        
+                        <a href="display.asp?did=5923&amp;id=24" target="_blank" title="2018年1月校园之星评比结果" class="news">2018年1月校园之星评比结果</a></span></td>
+                      <td width="17%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2018.03.06</font></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span>
+                        
+                        <a href="cp.asp?id=24" class="ch" target="_blank">[星满校园]</a>
+                        
+                        <a href="display.asp?did=5911&amp;id=24" target="_blank" title="2017年12月校园之星评比结果" class="news">2017年12月校园之星评比结果</a></span></td>
+                      <td width="17%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2018.01.24</font></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span>
+                        
+                        <a href="cp.asp?id=24" class="ch" target="_blank">[星满校园]</a>
+                        
+                        <a href="display.asp?did=5889&amp;id=24" target="_blank" title="2017年11月高一(58级)“爱校之星”" class="news">2017年11月高一(58级)“爱校之星”</a></span></td>
+                      <td width="17%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2017.12.25</font></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span>
+                        
+                        <a href="cp.asp?id=24" class="ch" target="_blank">[星满校园]</a>
+                        
+                        <a href="display.asp?did=5888&amp;id=24" target="_blank" title="2017年11月高二(57级)“创新之星”" class="news">2017年11月高二(57级)“创新之星”</a></span></td>
+                      <td width="17%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2017.12.25</font></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span>
+                        
+                        <a href="cp.asp?id=24" class="ch" target="_blank">[星满校园]</a>
+                        
+                        <a href="display.asp?did=5887&amp;id=24" target="_blank" title="2017年11月高三(56级)“友爱之星”" class="news">2017年11月高三(56级)“友爱之星”</a></span></td>
+                      <td width="17%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2017.12.25</font></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span>
+                        
+                        <a href="cp.asp?id=24" class="ch" target="_blank">[星满校园]</a>
+                        
+                        <a href="display.asp?did=5873&amp;id=24" target="_blank" title="2017年10月高一(58级)“才艺之星”" class="news">2017年10月高一(58级)“才艺之星”</a></span></td>
+                      <td width="17%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2017.12.01</font></span></td>
+                    </tr>
+                    
+                  </table></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table></td>
+        </tr>
+    </table>
+      <table width="480" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:10px">
+        <tr>
+          <td height="28" background="images/newstitle6.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="8%">&nbsp;</td>
+              <td width="80%" class="newskind"><a href="cp.asp?id=29" class="newskind1">校友之家</a></td>
+              <td width="12%"><a href="cp.asp?id=29" class="news">更多&gt;&gt;</a></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="kuang-5">
+            <tr>
+              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="100%" height="179"><table width="99%" border="0" align="center" cellpadding="0" cellspacing="0" class="news" style="margin-top:6px">
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28" style="BORDER-BOTTOM: #ccc 1px dotted"><span >
+                        
+                        <a href="cp.asp?id=30" class="ch" target="_blank">[毕业照]</a>
+                        
+                        <a href="display.asp?did=5947&amp;id=30" target="_blank" title="高中五十五级一级部" class="news">高中五十五级一级部</a></span></td>
+                      <td width="17%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2018.04.08</font></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28" style="BORDER-BOTTOM: #ccc 1px dotted"><span >
+                        
+                        <a href="cp.asp?id=30" class="ch" target="_blank">[毕业照]</a>
+                        
+                        <a href="display.asp?did=5946&amp;id=30" target="_blank" title="高中五十五级二级部" class="news">高中五十五级二级部</a></span></td>
+                      <td width="17%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2018.04.08</font></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28" style="BORDER-BOTTOM: #ccc 1px dotted"><span >
+                        
+                        <a href="cp.asp?id=30" class="ch" target="_blank">[毕业照]</a>
+                        
+                        <a href="display.asp?did=5945&amp;id=30" target="_blank" title="高中五十五级三级部" class="news">高中五十五级三级部</a></span></td>
+                      <td width="17%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2018.04.08</font></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28" style="BORDER-BOTTOM: #ccc 1px dotted"><span >
+                        
+                        <a href="cp.asp?id=30" class="ch" target="_blank">[毕业照]</a>
+                        
+                        <a href="display.asp?did=5944&amp;id=30" target="_blank" title="高中五十五级艺术部" class="news">高中五十五级艺术部</a></span></td>
+                      <td width="17%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2018.04.08</font></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28" style="BORDER-BOTTOM: #ccc 1px dotted"><span >
+                        
+                        <a href="cp.asp?id=30" class="ch" target="_blank">[毕业照]</a>
+                        
+                        <a href="display.asp?did=5684&amp;id=30" target="_blank" title="高中五十四级一级部" class="news">高中五十四级一级部</a></span></td>
+                      <td width="17%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2017.03.27</font></span></td>
+                    </tr>
+                    
+                    <tr>
+                      <td width="6%" align="center" ><img src="images/dd1.gif" width="3" height="5" /></td>
+                      <td width="77%" height="28" style="BORDER-BOTTOM: #ccc 1px dotted"><span >
+                        
+                        <a href="cp.asp?id=30" class="ch" target="_blank">[毕业照]</a>
+                        
+                        <a href="display.asp?did=5683&amp;id=30" target="_blank" title="高中五十四级二级部" class="news">高中五十四级二级部</a></span></td>
+                      <td width="17%" height="28"  style="BORDER-BOTTOM: #ccc 1px dotted"><span class="timetxt" ><font color=#979797>2017.03.27</font></span></td>
+                    </tr>
+                    
+                  </table></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table></td>
+        </tr>
+    </table></td>
+    <td width="250" valign="top"><table width="250" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><table width="250" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="29" background="images/newstitle.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="16%" height="22"><div class="newskind1"></div></td>
+                        <td width="84%"><span class="newskind1">图片新闻</span></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td><table width="248" height="150" border="0" cellpadding="0" cellspacing="0" bgcolor="#cccccc" style="margin-top:2px">
+                          <tbody>
+                            <tr>
+                              <td width="248" bgcolor="#ffffff"><script type="text/javascript">
+					<!--
+					var pic_width=250;
+					var pic_height=182;
+					var text_height=22;
+					var swfpath='images/topnews.swf';
+					var swf_height=pic_height+text_height;
+
+var pics="";
+var links="";
+var texts="";
+
+pics += "admin/uploadfile/20180516155446390.jpg";
+links += "display.asp?did=5979";
+texts += "我校举行高三学生毕业捐树留念活动";
+pics += "|";
+links += "|";
+texts += "|";
+
+pics += "admin/uploadfile/20180515150855785.jpg";
+links += "display.asp?did=5977";
+texts += "我校58级（高一）举行励志报告会";
+pics += "|";
+links += "|";
+texts += "|";
+
+pics += "admin/uploadfile/20180507174934546.jpg";
+links += "display.asp?did=5970";
+texts += "我校58级模拟联合国社团参加衡水中学第六";
+pics += "|";
+links += "|";
+texts += "|";
+
+pics += "admin/uploadfile/20180502151120635.jpg";
+links += "display.asp?did=5966";
+texts += "我校荣获莱芜市2018年中学生运动会团体";
+pics += "|";
+links += "|";
+texts += "|";
+
+pics += "admin/uploadfile/20180424205956823.jpg";
+links += "display.asp?did=5964";
+texts += "我校隆重举行第20届体育节暨春季田径运动";
+pics += "|";
+links += "|";
+texts += "|";
+
+pics += "admin/uploadfile/20180423100835962.jpg";
+links += "display.asp?did=5962";
+texts += "“游园比才，梦系红楼”——莱芜一中第六届";
+
+
+					document.write('<embed src="'+swfpath+'" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+pic_width+'&borderheight='+pic_height+'&textheight='+text_height+'" menu="false" bgcolor="#f2f1f1" quality="high" width="'+ pic_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash"/>');
+				
+					//-->
+					        </script></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="10"></td>
+      </tr>
+        <tr>
+        <td height="10"><a href="cppic.asp?id=13"><img src="images/fc.jpg" width="250" height="50" /></a></td>
+      </tr>
+            <tr>
+        <td height="10"></td>
+      </tr>
+      <tr>
+        <td height="15"><img src="images/nb.jpg" width="250" height="208" usemap="#Map2" border="0" /></td>
+      </tr>
+        <tr>
+        <td height="10"></td>
+      </tr>
+
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="29" background="images/lefttitle.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="76%" height="22"><div class="newstop">校园安全</div></td>
+                <td width="24%"><a href="cp.asp?id=35"><font color="#FFFFFF">更多&gt;&gt;</font></a></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0" class="kuang-content">
+              <tr>
+                <td><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="news" style="margin-top:6px; margin-bottom:5px">
+                  
+                  <tr>
+                    <td width="7%" align="center" ><img src="images/arr_n.gif" width="7" height="5" /></td>
+                    <td width="93%" height="28" ><a href="display.asp?did=5936&amp;id=35" target="_blank" title="莱芜一中第23届“莱芜市中小学生安全教育日”专题教育活动方案" class="news">莱芜一中第23届“莱芜市中小学生安</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td width="7%" align="center" ><img src="images/arr_n.gif" width="7" height="5" /></td>
+                    <td width="93%" height="28" ><a href="display.asp?did=5787&amp;id=35" target="_blank" title="莱芜一中安全生产百日攻坚治理行动方案" class="news">莱芜一中安全生产百日攻坚治理行动方</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td width="7%" align="center" ><img src="images/arr_n.gif" width="7" height="5" /></td>
+                    <td width="93%" height="28" ><a href="display.asp?did=5770&amp;id=35" target="_blank" title="莱芜一中2017年夏季防溺水安全工作实施方案" class="news">莱芜一中2017年夏季防溺水安全工</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td width="7%" align="center" ><img src="images/arr_n.gif" width="7" height="5" /></td>
+                    <td width="93%" height="28" ><a href="display.asp?did=5768&amp;id=35" target="_blank" title="莱芜市人民政府办公室关于预防学生溺水事故加强学生安全工作的通知" class="news">莱芜市人民政府办公室关于预防学生溺</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td width="7%" align="center" ><img src="images/arr_n.gif" width="7" height="5" /></td>
+                    <td width="93%" height="28" ><a href="display.asp?did=5767&amp;id=35" target="_blank" title="教育部办公厅关于防范学生溺水事故的预警通知" class="news">教育部办公厅关于防范学生溺水事故的</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td width="7%" align="center" ><img src="images/arr_n.gif" width="7" height="5" /></td>
+                    <td width="93%" height="28" ><a href="display.asp?did=5715&amp;id=35" target="_blank" title="关于进一步加强校园安全管理的通知" class="news">关于进一步加强校园安全管理的通知</a></td>
+                  </tr>
+                  
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="9"></td>
+      </tr>
+
+
+      <tr>
+        <td height="10"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="29" background="images/lefttitle.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="76%" height="22"><div class="newstop">专题专栏</div></td>
+                <td width="24%">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellpadding="0" cellspacing="0" class="kuang-content">
+              <tr>
+                <td><table width="98%" border="0" align="center"  cellpadding="0" cellspacing="0" style=" margin-top:1px; margin-bottom:3px">
+                 <tr>
+                    <td width="8%" height="28" align="center" style="BORDER-BOTTOM: #ccc 1px dotted"><img src="images/dian.gif" width="6" height="7" align="middle" /></td>
+                    <td width="92%" height="25" style="BORDER-BOTTOM: #ccc 1px dotted"><div align="left"> <a href="cp.asp?id=54"  class="news">党建工作</a></div></td>
+                  </tr>
+                  
+                  <tr>
+                    <td width="8%" height="28" align="center" style="BORDER-BOTTOM: #ccc 1px dotted"><img src="images/dian.gif" width="6" height="7" align="middle" /></td>
+                    <td width="92%" height="25" style="BORDER-BOTTOM: #ccc 1px dotted"><div align="left"> <a href="cp.asp?id=53"  class="news">双创工作专题</a></div></td>
+                  </tr>
+                  
+                  <tr>
+                    <td width="8%" height="28" align="center" style="BORDER-BOTTOM: #ccc 1px dotted"><img src="images/dian.gif" width="6" height="7" align="middle" /></td>
+                    <td width="92%" height="25" style="BORDER-BOTTOM: #ccc 1px dotted"><div align="left"> <a href="cp.asp?id=51"  class="news">我的教育教学观</a></div></td>
+                  </tr>
+                  
+                  <tr>
+                    <td width="8%" height="28" align="center" style="BORDER-BOTTOM: #ccc 1px dotted"><img src="images/dian.gif" width="6" height="7" align="middle" /></td>
+                    <td width="92%" height="25" style="BORDER-BOTTOM: #ccc 1px dotted"><div align="left"> <a href="cp.asp?id=40"  class="news">莱芜一中简报</a></div></td>
+                  </tr>
+                  
+                  <tr>
+                    <td width="8%" height="28" align="center" style="BORDER-BOTTOM: #ccc 1px dotted"><img src="images/dian.gif" width="6" height="7" align="middle" /></td>
+                    <td width="92%" height="25" style="BORDER-BOTTOM: #ccc 1px dotted"><div align="left"> <a href="cp.asp?id=39"  class="news">语言文字专题</a></div></td>
+                  </tr>
+                  
+                  <tr>
+                    <td width="8%" height="28" align="center" style="BORDER-BOTTOM: #ccc 1px dotted"><img src="images/dian.gif" width="6" height="7" align="middle" /></td>
+                    <td width="92%" height="25" style="BORDER-BOTTOM: #ccc 1px dotted"><div align="left"> <a href="cp.asp?id=37"  class="news">新课程改革</a></div></td>
+                  </tr>
+                  
+                </table></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+
+
+    
+    </table></td>
+  </tr>
+  <tr>
+    <td height="10" colspan="3"></td>
+  </tr>
+</table>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+
+  <tr>
+    <td bgcolor="#F5F5F5"><table border="0" cellspacing="0" cellpadding="0" width="990" align="center">
+      <tbody>
+        <tr>
+          <td height="30"><select 
+        name="select1" size="5" 
+      class="wenbenkuang" style="WIDTH: 150px" 
+      onchange="window.open(this.options[this.selectedIndex].value);">
+            <option selected="selected" value="">----- 门户网站 -----</option>
+ 
+ <option value="http://www.sina.com">新浪</option>
+ 
+ <option value="http://www.sohu.com/">搜狐</option>
+ 
+ <option value="http://www.qq.com/">腾讯</option>
+ 
+ <option value="http://www.ifeng.com/">凤凰网</option>
+ 
+ <option value="http://www.163.com/">网易</option>
+ 
+ <option value="http://www.people.com.cn/">人民网</option>
+ 
+ <option value="http://www.xinhuanet.com/">新华网</option>
+ 
+ <option value="http://www.cntv.cn/">央视网</option>
+ 
+ <option value="http://www.china.com/zh_cn/">中华网</option>
+  
+          </select></td>
+          <td align="middle"><div align="center">
+            <select 
+        name="select2" size="5" 
+      class="wenbenkuang" style="WIDTH: 150px" 
+      onchange="window.open(this.options[this.selectedIndex].value);">
+              <option selected="selected" value="">----- 教育管理 -----</option>
+ 
+ <option value="http://www.lwjy.net/">莱芜市教育局</option>
+ 
+ <option value="http://www.sdedu.gov.cn/">山东省教育厅</option>
+ 
+ <option value="http://www.moe.edu.cn/">中华人民共和国教育部</option>
+ 
+ <option value="http://www.laiwu.gov.cn/">莱芜市人民政府</option>
+ 
+ <option value="http://www.shandong.gov.cn/">山东省人民政府</option>
+ 
+ <option value="http://www.gov.cn/">中华人民共和国中央人民政府</option>
+  
+            </select>
+          </div></td>
+          <td align="middle"><div align="center">
+            <select 
+        name="select3" size="5" 
+      class="wenbenkuang" style="WIDTH: 150px" 
+      onchange="window.open(this.options[this.selectedIndex].value);">
+              <option selected="selected" value="">----- 教育资源 -----</option>
+ 
+ <option value="http://www.sdzs.gov.cn/index.shtm">山东省教育招生考试院</option>
+ 
+ <option value="http://gaokao.chsi.com.cn/">教育部阳光高考信息平台</option>
+ 
+ <option value="http://www.sdjxyj.net/">山东教学研究网</option>
+ 
+ <option value="http://www.qlteacher.com/">山东省教师教育网</option>
+ 
+ <option value="http://www.sdjxyj.com/WebShow/Index.aspx">山东省教学研究室</option>
+ 
+ <option value="http://www.eduyun.cn">国家教育资源公共服务平台</option>
+ 
+ <option value="http://www.ncet.edu.cn">中央电化教育馆</option>
+  
+            </select>
+          </div></td>
+          <td align="middle"><div align="center">
+            <select 
+        name="select4" size="5" 
+      class="wenbenkuang" style="WIDTH: 150px" 
+      onchange="window.open(this.options[this.selectedIndex].value);">
+              <option selected="selected" value="">---- 高校链接 ----</option>
+ 
+ <option value="http://www.pku.edu.cn/">北京大学</option>
+ 
+ <option value="http://www.tsinghua.edu.cn/">清华大学</option>
+ 
+ <option value="http://www.fudan.edu.cn/index.html">复旦大学</option>
+ 
+ <option value="http://www.zju.edu.cn/">浙江大学</option>
+ 
+ <option value="http://www.sjtu.edu.cn/">上海交大</option>
+ 
+ <option value="http://www.nju.edu.cn/">南京大学</option>
+ 
+ <option value="http://www.sysu.edu.cn/2012/cn/index.htm">中山大学</option>
+ 
+ <option value="http://www.jlu.edu.cn/newjlu/">吉林大学</option>
+ 
+ <option value="http://www.whu.edu.cn/">武汉大学</option>
+ 
+ <option value="http://www.ustc.edu.cn/">中国科大</option>
+ 
+ <option value="http://www.hust.edu.cn/">华中科大</option>
+ 
+ <option value="http://www.ruc.edu.cn/home1024">中国人大</option>
+ 
+ <option value="http://www.sdu.edu.cn/">山东大学</option>
+ 
+ <option value="http://www.ouc.edu.cn/">中国海洋</option>
+ 
+ <option value="http://www.upc.edu.cn/">中国石油大学</option>
+ 
+ <option value="http://www.bnu.edu.cn/">北京师范大学</option>
+ 
+ <option value="http://www.ecnu.edu.cn/">华东师范大学</option>
+ 
+ <option value="http://www.nenu.edu.cn/">东北师范大学</option>
+ 
+ <option value="http://www.ccnu.edu.cn/">华中师范大学</option>
+ 
+ <option value="http://www.snnu.edu.cn/">陕西师范大学</option>
+ 
+ <option value="http://www.sdnu.edu.cn/">山东师范大学</option>
+  
+            </select>
+          </div></td>
+          <td align="middle"><div align="center">
+            <select 
+        name="select5" size="5" 
+      class="wenbenkuang" style="WIDTH: 150px" 
+      onchange="window.open(this.options[this.selectedIndex].value);">
+              <option selected="selected" value="">---- 友好学校 ----</option>
+ 
+ <option value="http://www.sdshiyan.cn/">山东省实验中学</option>
+ 
+ <option value="http://www.rdfz.cn/">人大附中</option>
+ 
+ <option value="http://www.bhsf.cn/">北京四中</option>
+ 
+ <option value="http://www.beijing101.com/">北京101中学</option>
+ 
+ <option value="http://www.hbshgzx.com/">湖北黄冈中学</option>
+ 
+ <option value="http://www.jssqdzx.cn/">江苏启东中学</option>
+ 
+ <option value="http://www.fdfz.cn/">复旦大学附属中学</option>
+ 
+ <option value="http://www.gdsyzx.edu.cn/">广东实验中学</option>
+ 
+ <option value="http://www.qderzhong.net/">山东青岛二中 </option>
+ 
+ <option value="http://www.lcyz.net/">江西临川一中</option>
+ 
+ <option value="http://www.lyyzedu.com/">湖南浏阳一中</option>
+ 
+ <option value="http://www.hbhz.net/index.asp">河北衡水中学</option>
+ 
+ <option value="http://sdlwsqz.com/">莱芜市第十七中学</option>
+ 
+ <option value="http://www.lwfcgz.net/">凤城高中</option>
+ 
+ <option value="http://www.lwez.cn/">莱芜二中</option>
+ 
+ <option value="http://www.lwszedu.com/">莱芜四中</option>
+ 
+ <option value="http://www.lwwz.net/">莱芜五中</option>
+ 
+ <option value="http://www.laiganggaozhong.com/">莱钢高中</option>
+  
+            </select>
+          </div></td>
+          <td><div align="right">
+            <select 
+        name="select6" size="5" 
+      class="wenbenkuang" style="WIDTH: 150px" 
+      onchange="window.open(this.options[this.selectedIndex].value);">
+              <option selected="selected" value="">----- 内网专区 -----</option>
+ 
+ <option value="http://www.laiwuyizhong.com.cn/display.asp?did=5604&id=46">莱芜一中订购网络资源汇总</option>
+  
+            </select>
+          </div></td>
+        </tr>
+      </tbody>
+    </table></td>
+  </tr>
+</table>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="120" background="images/foot.jpg" align="center">版权所有：山东省莱芜第一中学　<a href="http://www.miitbeian.gov.cn/" target="_blank">鲁ICP备15008641号 </a><br />
+      地址： 莱芜市高新技术开发区汶水大街29号　邮编：271100　 办公室电话：0634-6412099　传真：0634-6412997　校务信箱:lwccj877@163.com<br /><div style="width:300px;margin:0 auto; padding:20px 0;">
+		 		<a target="_blank" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37129102000004" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="7.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">鲁公网安备 37129102000004号</p></a>
+		 	</div>
+</td>
+  </tr>
+</table>
+<map name="Map2" id="Map2">
+  <area shape="rect" coords="24,62,102,85" href="dw_chushi.asp" />
+  <area shape="rect" coords="24,95,93,117" href="ftp://20.20.21.21" />
+  <area shape="rect" coords="25,130,141,147" href="ftp://20.20.21.22" />
+  <area shape="rect" coords="24,159,217,184" href="display.asp?did=5604&amp;id=46" />
+</map>
+</body>
+</html>

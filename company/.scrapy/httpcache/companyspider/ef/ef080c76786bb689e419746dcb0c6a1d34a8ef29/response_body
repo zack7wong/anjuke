@@ -1,0 +1,547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>欢迎光临江门职业技术学院</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="hj" />
+<link href="../../viscms/r/cms/jmpt/jmzy/css/public.css" rel="stylesheet" type="text/css">
+<link href="../../viscms/r/cms/jmpt/jmzy/css/index.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#apDiv1 {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    z-index: 1;
+}
+* { margin:0; padding:0; }
+ul, li { list-style:none; }
+fieldset, img { border:none; }
+legend { display:none; }
+em, strong, cite, th { font-style:normal; font-weight:normal; }
+input, textarea, select, button { font:12px Helvetica, Arial, sans-serif; }
+table { border-collapse:collapse; }
+html { overflow:-moz-scrollbars-vertical; } 
+#ibanner { position:relative; width:300px; height:200px; overflow:hidden;}
+#ibanner_pic {}
+#ibanner_pic a { position:absolute; top:0; display:block; width:300px; height:200px; overflow:hidden; }
+#ibanner_btn { position:absolute; z-index:9999; right:5px; bottom:5px; font-weight:700; font-family:Arial; }
+#ibanner_btn span { display:block; float:left; margin-left:4px; padding:0 5px; background:#000; cursor:pointer; }
+#ibanner_btn .normal { height:20px; margin-top:8px; border:1px solid #999; color:#999; font-size:16px; line-height:20px; }
+#ibanner_btn .current { height:28px; border:1px solid #FF5300; color:#FF5300; font-size:28px; line-height:28px; }
+</style>
+<!--[if IE 6]><script>document.execCommand("BackgroundImageCache", false, true)</script><![endif]-->
+</head>
+
+<body>
+    <div id="apDiv1">
+        <div id="sample" style="width:300px; height:200px; border:#CCC 1px solid;  margin:0px; padding:0 0 0 0px; font-size:12px; color:#5c5c5c; ">
+    <div style=" width:300px; height:25px; float:left; margin:0; padding:0">
+        <span  style="float: right;line-height:20px; margin:0;padding:0px 0px 0 0"><a href="javascript:void(0)" onclick="document.getElementById('sample').style.display='none'"><img src="http://www.jmpt.cn/viscms/r/cms/jmpt/jmzy/imgqiehuan/close.png" border="0" alt="点击关闭" /></a></span>
+    </div>
+    <div style=" width:300px; height:200px; float:left; margin:0;padding:0">
+        <script type="text/javascript">
+function $(id) { return document.getElementById(id); }
+function addLoadEvent(func){
+var oldonload = window.onload;
+if (typeof window.onload != 'function') {
+window.onload = func;
+} else {
+window.onload = function(){
+oldonload();
+func();
+}
+}
+}
+function addBtn() {
+if(!$('ibanner')||!$('ibanner_pic')) return;
+var picList = $('ibanner_pic').getElementsByTagName('a');
+if(picList.length==0) return;
+var btnBox = document.createElement('div');
+btnBox.setAttribute('id','ibanner_btn');
+var SpanBox ='';
+for(var i=1; i<=picList.length; i++ ) {
+var spanList = '<span class="normal">'+i+'</span>';
+SpanBox += spanList;
+}
+btnBox.innerHTML = SpanBox;
+$('ibanner').appendChild(btnBox);
+$('ibanner_btn').getElementsByTagName('span')[0].className = 'current';
+for (var m=0; m<picList.length; m++){
+var attributeValue = 'picLi_'+m
+picList[m].setAttribute('id',attributeValue);
+}
+}
+function moveElement(elementID,final_x,final_y,interval) {
+if (!document.getElementById) return false;
+if (!document.getElementById(elementID)) return false;
+var elem = document.getElementById(elementID);
+if (elem.movement) {
+clearTimeout(elem.movement);
+}
+if (!elem.style.left) {
+elem.style.left = "0px";
+}
+if (!elem.style.top) {
+elem.style.top = "0px";
+}
+var xpos = parseInt(elem.style.left);
+var ypos = parseInt(elem.style.top);
+if (xpos == final_x && ypos == final_y) {
+moveing = false;
+return true;
+}
+if (xpos < final_x) {
+var dist = Math.ceil((final_x - xpos)/10);
+xpos = xpos + dist;
+}
+if (xpos > final_x) {
+var dist = Math.ceil((xpos - final_x)/10);
+xpos = xpos - dist;
+}
+if (ypos < final_y) {
+var dist = Math.ceil((final_y - ypos)/10);
+ypos = ypos + dist;
+}
+if (ypos > final_y) {
+var dist = Math.ceil((ypos - final_y)/10);
+ypos = ypos - dist;
+}
+elem.style.left = xpos + "px";
+elem.style.top = ypos + "px";
+var repeat = "moveElement('"+elementID+"',"+final_x+","+final_y+","+interval+")";
+elem.movement = setTimeout(repeat,interval);
+}
+function classNormal() {
+var btnList = $('ibanner_btn').getElementsByTagName('span');
+for (var i=0; i<btnList.length; i++){
+btnList[i].className='normal';
+}
+}
+function picZ() {
+var picList = $('ibanner_pic').getElementsByTagName('a');
+for (var i=0; i<picList.length; i++){
+picList[i].style.zIndex='1';
+}
+}
+var autoKey = false;
+function iBanner() {
+if(!$('ibanner')||!$('ibanner_pic')||!$('ibanner_btn')) return;
+$('ibanner').onmouseover = function(){autoKey = true};
+$('ibanner').onmouseout = function(){autoKey = false};
+
+var btnList = $('ibanner_btn').getElementsByTagName('span');
+var picList = $('ibanner_pic').getElementsByTagName('a');
+if (picList.length==1) return;
+picList[0].style.zIndex='2';
+for (var m=0; m<btnList.length; m++){
+btnList[m].onmouseover = function() {
+for(var n=0; n<btnList.length; n++) {
+if (btnList[n].className == 'current') {
+var currentNum = n;
+}
+}
+classNormal();
+picZ();
+this.className='current';
+picList[currentNum].style.zIndex='2';
+var z = this.childNodes[0].nodeValue-1;
+picList[z].style.zIndex='3';
+if (currentNum!=z){
+picList[z].style.left='650px';
+moveElement('picLi_'+z,0,0,10);
+}
+}
+}
+}
+setInterval('autoBanner()', 1500);
+function autoBanner() {
+if(!$('ibanner')||!$('ibanner_pic')||!$('ibanner_btn')||autoKey) return;
+var btnList = $('ibanner_btn').getElementsByTagName('span');
+var picList = $('ibanner_pic').getElementsByTagName('a');
+if (picList.length==1) return;
+for(var i=0; i<btnList.length; i++) {
+if (btnList[i].className == 'current') {
+var currentNum = i;
+}
+}
+if (currentNum==(picList.length-1) ){
+classNormal();
+picZ();
+btnList[0].className='current';
+picList[currentNum].style.zIndex='2';
+picList[0].style.zIndex='3';
+picList[0].style.left='650px';
+moveElement('picLi_0',0,0,10);
+} else {
+classNormal();
+picZ();
+var nextNum = currentNum+1;
+btnList[nextNum].className='current';
+picList[currentNum].style.zIndex='2';
+picList[nextNum].style.zIndex='3';
+picList[nextNum].style.left='650px';
+moveElement('picLi_'+nextNum,0,0,10);
+}
+}
+addLoadEvent(addBtn);
+addLoadEvent(iBanner);
+</script>
+        <div id="ibanner">
+<div id="ibanner_pic">
+<a href="#"><img src="http://www.jmpt.cn/viscms/r/cms/jmpt/jmzy/imgqiehuan/4.jpg" alt="" /></a>
+<a href="#"><img src="http://www.jmpt.cn/viscms/r/cms/jmpt/jmzy/imgqiehuan/5.jpg" alt="" /></a>
+<a href="#"><img src="http://www.jmpt.cn/viscms/r/cms/jmpt/jmzy/imgqiehuan/6.jpg" alt="" /></a>
+<a href="#"><img src="http://www.jmpt.cn/viscms/r/cms/jmpt/jmzy/imgqiehuan/1.jpg" alt="" /></a>
+<a href="#"><img src="http://www.jmpt.cn/viscms/r/cms/jmpt/jmzy/imgqiehuan/2.jpg" alt="" /></a>
+<a href="#"><img src="http://www.jmpt.cn/viscms/r/cms/jmpt/jmzy/imgqiehuan/3.jpg" alt="" /></a>
+</div>
+</div><!--ibanner end-->
+    </div>
+</div><!--sample-->
+    </div>
+    <div class="doc">
+        <div class="header clearfix">
+            <div class="logo fl">
+                <a href="#"><img width="311" height="24" alt="" src="/viscms/r/cms/jmpt/jmzy/images/logo_font.gif"></a>
+          </div>
+            <div class="top_r fr">
+                <div class="banner1">
+                    <img width="433" height="34" alt="" src="/viscms/r/cms/jmpt/jmzy/images/banner1.jpg">
+                </div>
+                <div class="nav">
+                    <ul id="nav">
+                        <li><a href="/viscms/jmpt/" target="_self">首页</a>
+                        </li>
+                        <li>
+                            <a href="http://#" target="_blank">新闻网</a>
+                      </li>
+                        <li>
+                            <a href="http://www.jmpt.cn/viscms/jmpt/xuexiaojianjie5160.html" target="_blank">学校概况</a>
+                <p>
+                                <a href="/viscms/jmpt/xuexiaojianjie5160.html" target="_blank">学校简介</a>
+                                <a href="/viscms/jmpt/xianrenlingdao6028.html" target="_blank">现任领导</a>
+                                <a href="/viscms/jmpt/jigoushezhi7836.html" target="_blank">机构设置</a>
+                                <a href="/viscms/jmpt/xiaoxunxiaohuixiaoqixiaoge3750.html" target="_blank">校训校徽校旗校歌</a>
+                                <a href="/viscms/jmpt/xueyuanfengjing3562/" target="_blank">学院风景</a>
+                          </p>
+                      </li>
+                        <li>
+                            <a href="http://zsxx.jmpt.cn" target="_blank">招生就业</a>
+                <p>
+                                <a href="http://zsxx.jmpt.cn" target="_blank">招生信息</a>
+                                <a href="http://jyzd.jmpt.cn" target="_blank">就业信息</a>
+                          </p>
+                      </li>
+                        <li>
+                            <a href="http://jwc.jmpt.cn" target="_blank">教学科研</a>
+                <p>
+                                <a href="http://jwc.jmpt.cn" target="_blank">教学管理</a>
+                                <a href="http://kyc.jmpt.cn" target="_blank">科学研究</a>
+                                <a href="http://jpkc.jmpt.cn/suite" target="_blank">精品课程</a>
+                          </p>
+                      </li>
+                        <li>
+                            <a href="http://jxjyb.jmpt.cn" target="_blank">继续教育</a>
+                      </li>
+                        <li>
+                            <a href="/viscms/jmpt/xiaoyuanwenhua3207/" target="_blank">校园文化</a>
+                <p>
+                                <a href="/viscms/jmpt/ jingdiansongdu1680/" target="_blank"> 经典诵读</a>
+                                <a href="/viscms/jmpt/xiaodaomingming3384.html" target="_blank">校道命名</a>
+                                <a href="http://10.4.3.10:89/xinliweb/" target="_blank">心理辅导</a>
+                                <a href="http://jmzy.cuepa.cn/" target="_blank">院报在线</a>
+                          </p>
+                      </li>
+                        <li>
+                            <a href="http://tsg.jmpt.cn/" target="_blank">图书馆</a>
+                      </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div><!--header-->
+        <div class="wraper">
+            <div class="box1 mt10 clearfix">
+                <div class="layA fl">
+                    <!-- 日期、时间、天气 -->
+                    <div id="time" class="date">
+                        <span id="calendarA"></span>&nbsp;<span id="calendarB"></span>
+                    </div>
+                    <div class="weather clearfix">
+    
+                        <div class="fl weatherRight">   
+                        </div>
+                    </div>
+                    <!-- 图片广告焦点图 -->
+                    <div style="width:272; height:312"><a href="http://zsxx.jmpt.cn/" target="_blank"><img src="http://www.jmpt.cn/viscms/r/cms/jmpt/jmzy/images/zs2016.jpg" width="250" height="312" /></a></div>
+                    <!-- 数字化校园登录 -->
+                    <div class="login mt10">
+                        <div class="thA">数字化校园登录</div>
+                        <div class="tbA clearfix">
+                          <form action="http://my.jmpt.cn/loginPortalUrlForIndexLogin.portal" method="post" name="loginForm" target="_blank" id="loginForm">
+                            <div class="username fl"><label>账号：</label><input type="text" size="16" name="userName" id="userName" eMsg="asdasdw" >
+                                  &nbsp;&nbsp;<input type="submit" value="登录" id="btn" class="inputLogin" />
+                            </div><br>
+                            <div class="username fl">
+                              <label>密码：</label><input type="password" size="16" name="password" id="password" >
+                              <a href="http://my.jmpt.cn/getBackPassword.portal" target="_blank"> &nbsp;&nbsp;忘记密码</a>
+                            </div>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="layB fl">
+                    <!-- 江职要闻、校园传真、媒体江职、官微推文 -->
+                    <div class="new1">
+                        <div class="newshd">
+                            <h3 class="clearfix">
+                            <span class="hovertab" id="tb_1_1" onmouseover="hoverLi(1, 4, 'tb_1_', 'tbc_1_0');" ><a href="/viscms/jmpt/jiangzhiyaowen4687/">江职要闻</a></span>
+                            <span class="normaltab" id="tb_1_2" onmouseover="hoverLi(2, 4, 'tb_1_', 'tbc_1_0');"><a href="/viscms/jmpt/xiaoyuanchuanzhen8245/">校园传真</a></span>      
+                            <span class="normaltab" id="tb_1_3" onmouseover="hoverLi(3, 4, 'tb_1_', 'tbc_1_0');"><a href="/viscms/jmpt/meitijiangzhi9960/">媒体江职</a></span>      
+                            <span class="normaltab" id="tb_1_4" onmouseover="hoverLi(4, 4, 'tb_1_', 'tbc_1_0');"><a href="/viscms/jmpt/guanweituiwen8049/">官微推文</a></span>      
+                            </h3>
+                        </div>
+                        <div class="info_cont">
+                            <ul id="tbc_1_01">
+                                <li><a href="/viscms/jmpt/jiangzhiyaowen4687/20180528/178040.html" title="">阳江职业技术学院纪委到学院开展调研交流</a></li>
+                                <li><a href="/viscms/jmpt/jiangzhiyaowen4687/20180528/176895.html" title="">学校组织老师参加第二届中国高校科技成果交易会</a></li>
+                                <li><a href="/viscms/jmpt/jiangzhiyaowen4687/20180528/176893.html" title="">学院召开实训工作会议</a></li>
+                                <li><a href="/viscms/jmpt/jiangzhiyaowen4687/20180528/176889.html" title="">学校机关第二党总支委员到惠州学院交流</a></li>
+                                <li><a href="/viscms/jmpt/jiangzhiyaowen4687/20180525/174838.html" title="">省教育厅高校毕业生就业创业工作调研组到学校调研督查</a></li>
+                              
+                            </ul>
+                            <ul id="tbc_1_02" class="undis">
+                                <li><a href="/viscms/jmpt/xiaoyuanchuanzhen8245/20180528/178044.html" title="">教育系举行创新创业专题培训暨分享会</a></li>
+                                <li><a href="/viscms/jmpt/xiaoyuanchuanzhen8245/20180528/178042.html" title="">第十四届校园技术节之学前教育专业技能大赛圆满结束</a></li>
+                                <li><a href="/viscms/jmpt/xiaoyuanchuanzhen8245/20180528/178038.html" title="">第十四届校园技术节之面料检测技能大赛决赛开赛</a></li>
+                                <li><a href="/viscms/jmpt/xiaoyuanchuanzhen8245/20180528/176738.html" title="">第十四届校园技术节之英语师范生技能大赛圆满结束</a></li>
+                                <li><a href="/viscms/jmpt/xiaoyuanchuanzhen8245/20180525/174788.html" title="">外语系朋辈心理咨询比赛顺利举行</a></li>
+
+                            </ul>
+                            <ul id="tbc_1_03" class="undis">
+                                  <li><a href="http://dzb.jmrb.com:8080/jmrb/html/2018-05/25/content_523471.htm" title="">江门日报：把党建工作渗透到教学和工作中</a></li>
+                                  <li><a href="http://www.gdhed.edu.cn/publicfiles/business/htmlfiles/gdjyt/gdjy/201805/518453.html" title="">广东省教育厅：挑战江职脑洞极限，决战创意营销之巅——江职举...</a></li>
+                                  <li><a href="http://dzb.jmrb.com:8080/jmrb/html/2018-05/19/content_522765.htm" title="">江门日报：江门职院音乐舞蹈教研室主任陈娅：将侨乡非遗文化带...</a></li>
+                                  <li><a href="http://dzb.jmrb.com:8080/jmrb/html/2018-05/19/content_522748.htm" title="">江门日报：我市成立梁启超研究会 将充分挖掘梁启超精神和文化</a></li>
+                                  <li><a href="https://mp.weixin.qq.com/s/Av8SPOfY4TXFKQtthPxV0Q" title="">江门日报：这本书从江门的小学火到了大学！学生表示：深受鼓舞</a></li>
+                            </ul>
+                             <ul id="tbc_1_04" class="undis">
+                                  <li><a href="https://mp.weixin.qq.com/s?__biz=MzA4OTAyNzY2MA==&mid=2650905993&idx=1&sn=b94b6c6d2cad92fe8f62da1003a043ba&chksm=8bd418aabca391bc264a3fcd87dffab905d247ffa19222f043ed78cf4f0262645f07dfab82c6#rd" title="">爆照局 | 谁的高中校服最丑？</a></li>
+                                  <li><a href="https://mp.weixin.qq.com/s?__biz=MzA4OTAyNzY2MA==&mid=2650905990&idx=1&sn=0f7cc091906d83ba98e7d944ae146844&chksm=8bd418a5bca391b3fe12bf7524db77f9a7d6980f79fef4a6394519b2fa7cce8b2be666544da0#rd" title="">由你话事！快来pick你最喜欢的校园八景！</a></li>
+                                  <li><a href="https://mp.weixin.qq.com/s?timestamp=1527244076&src=3&ver=1&signature=QUUKthKnpvgsCNrK7W2X0bp7Vnc3E-jEsvVgtwWpeBA3GbCLRH7QVln4QqNc93X9SKsux0Tr69hbdFQgOcLNw0rL4ZWBTF7pps4y2BPSo7b5rUdk9IFsf2bBR8R*7NS95CYzgip*prBrC6We0NhNdOjUCysS3Qr62p*BYrOswOg=" title="">毕业倒数34天 | 好胆你就麦造</a></li>
+                                  <li><a href="https://mp.weixin.qq.com/s/8BWaot6wm7aag_wxuUc24A" title="">520花式赛法！今天15辆DIY小飞艇首次开进小银湖！</a></li>
+                                  <li><a href="https://mp.weixin.qq.com/s?__biz=MzA4OTAyNzY2MA==&mid=2650905885&idx=1&sn=bcb7d8beb0776e63050514237322c504&chksm=8bd4183ebca3912861216bff7c5c8889d3a5d3e5a82b719056638a21bea1b81dddf12b9cf0e6#rd" title="">江紫晚报｜请问今天傍晚的江职是什么颜色？</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 校园通知、招标公告、江潮讲堂 -->
+                    <div class="new2 mt10">
+                        <div class="newshd">
+                            <h3 class="clearfix">
+                            <span class="hovertab" id="tb_2_1" onmouseover="hoverLi(1, 4, 'tb_2_', 'tbc_2_0');" ><a href="/viscms/jmpt/xiaoyuantongzhi7961/">校园通知</a></span>
+                            <span class="normaltab" id="tb_2_2" onmouseover="hoverLi(2, 4, 'tb_2_', 'tbc_2_0');"><a href="/viscms/jmpt/caigouxinxi8961/">采购信息</a></span>
+                            <span class="normaltab" id="tb_2_3" onmouseover="hoverLi(3, 4, 'tb_2_', 'tbc_2_0');"><a href="/viscms/jmpt/jiangchaojiangtang9047/">江潮讲堂</a></span>
+                            <span class="normaltab" id="tb_2_4" onmouseover="hoverLi(4, 4, 'tb_2_', 'tbc_2_0');"><a href="/viscms/jmpt/rencaizhaopin9502/">人才招聘</a></span>
+                            </h3>
+                        </div>
+                        <div class="info_cont">
+                            <ul id="tbc_2_01">
+                                  <li><a href="/viscms/jmpt/xiaoyuantongzhi7961/20180528/176190.html" title="">2017-2018学年第二学期第十四周主要工作（会议）安排（以此件...</a></li>
+                                  <li><a href="/viscms/jmpt/xiaoyuantongzhi7961/20180518/163289.html" title="">2017-2018学年第二学期第十三周主要工作（会议）安排</a></li>
+                                  <li><a href="/viscms/jmpt/xiaoyuantongzhi7961/20180511/158494.html" title="">2017-2018学年第二学期第十二周主要工作（会议）安排</a></li>
+                                  <li><a href="/viscms/jmpt/xiaoyuantongzhi7961/20180504/156090.html" title="">2017-2018学年第二学期第十一周主要工作（会议）安排</a></li>
+                                  <li><a href="/viscms/jmpt/xiaoyuantongzhi7961/20180428/153468.html" title="">2017-2018学年第二学期第十周主要工作（会议）安排</a></li>
+                            </ul>
+                            <ul id="tbc_2_02" class="undis">
+                                  <li><a href="/viscms/jmpt/caigouxinxi8961/20180525/174348.html" title="">消防系统供水管道改造工程设计项目成交结果公告</a></li>
+                                  <li><a href="/viscms/jmpt/caigouxinxi8961/20180524/172063.html" title="">创文布置教室宣传喷画设计/制作项目成交结果公告</a></li>
+                                  <li><a href="/viscms/jmpt/caigouxinxi8961/20180524/171946.html" title="">中心机房柜式空调竞价结果公告</a></li>
+                                  <li><a href="/viscms/jmpt/caigouxinxi8961/20180518/163491.html" title="">消防系统供水管道改造工程设计项目采购公告（第三次）</a></li>
+                                  <li><a href="/viscms/jmpt/caigouxinxi8961/20180517/162089.html" title="">第一食堂和第三食堂承包经营资格项目公开招标公告</a></li>
+                            </ul>
+                            <ul id="tbc_2_03" class="undis">
+                                   <li><a href="/viscms/jmpt/jiangchaojiangtang9047/20160929/102161.html" title="">了解中国历史，传承长征精神——学校江潮讲坛再度开讲</a></li>
+                                   <li><a href="/viscms/jmpt/jiangchaojiangtang9047/20160419/72354.html" title="">小信诚则大信立——电子系举办道德讲堂活动</a></li>
+                                   <li><a href="/viscms/jmpt/jiangchaojiangtang9047/20160324/70190.html" title="">高山流水 源远流长——新学期首期江潮讲堂开讲</a></li>
+                                   <li><a href="/viscms/jmpt/jiangchaojiangtang9047/20150626/53518.html" title="">以身立教，为人师表——教育系开展师德系列讲座</a></li>
+                                   <li><a href="/viscms/jmpt/jiangchaojiangtang9047/20150619/53519.html" title="">教育系举办梁启超讲座</a></li>
+                            </ul>
+                            <ul id="tbc_2_04" class="undis">
+                                   <li><a href="/viscms/jmpt/rencaizhaopin9502/20180517/162788.html" title="">心理测试指南</a></li>
+                                   <li><a href="/viscms/jmpt/rencaizhaopin9502/20180510/158389.html" title="">关于公布2018年5月辅导员招聘考试面试成绩的通知</a></li>
+                                   <li><a href="/viscms/jmpt/rencaizhaopin9502/20180428/153290.html" title="">江门职业技术学院2018年4月管理、教辅、心理辅导中心岗位招聘启事</a></li>
+                                   <li><a href="/viscms/jmpt/rencaizhaopin9502/20180323/148626.html" title="">关于公布2018年3月管理、教辅岗位 招聘考试成绩的通知</a></li>
+                                   <li><a href="/viscms/jmpt/rencaizhaopin9502/20180309/147315.html" title="">关于公布2018年3月辅导员招聘考试成绩的通知</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 站内友情链接 -->
+                    <div class="link">
+                        <select onchange="top.location.href = this.options[this.selectedIndex].value;" name="select">
+                            <option selected="">教学教辅机构站点导航</option>
+                            <option value="http://clx.jmpt.cn/">材料技术系</option>
+                            <option value="http://Dzx.jmpt.cn/">电子与信息技术系</option>
+                            <option value="http://Jgx.jmpt.cn/">经济管理系</option>
+                            <option value="http://Jdx.jmpt.cn/">机电技术系</option>
+                            <option value="http://Jyx.jmpt.cn/">教育与教育技术系</option>
+                            <option value="http://Wyx.jmpt.cn/">外语系</option>
+                            <option value="http://Ysx.jmpt.cn/">艺术设计系</option>
+                            
+                            <option value="http://Szb.jmpt.cn/">思想政治理论课教学部</option>
+                            <option value="http://Jxjyb.jmpt.cn/">继续教育部</option>
+                            <option value="http://Djzx.jmpt.cn/">现代教育技术中心</option>
+                            <option value="http://tsg.jmpt.cn/">图书馆</option>
+                            
+                      </select> 
+                      <select   onchange="top.location.href = this.options[this.selectedIndex].value;" name="select2">
+                            <option selected="selected">管理机构站点导航</option>
+                            <option value="http://bgs.jmpt.cn/">学院办公室</option>
+                            <option value="http://rsc.jmpt.cn/">党委组织部</option>
+                            <option value="http://Xcb.jmpt.cn/">党委宣传部</option>
+                                                    <option value="http://Jcc.jmpt.cn/">监察审计处（纪委办）</option>
+                            <option value="http://Gh.jmpt.cn/">学院工会</option>
+                            <option value="http://tw.jmpt.cn/">学院团委</option>
+                            <option value="#">     </option>                    
+                            <option value="http://rsc.jmpt.cn/">人事处</option>
+                            <option value="http://Xsc.jmpt.cn/">学工处</option>
+          <option value="http://Jwc.jmpt.cn/">教务处</option>
+                            <option value="http://cwc.jmpt.cn/">财务处</option>
+                            <option value="http://Hqc.jmpt.cn/">后勤处</option>    
+                            <option value="http://Zcb.jmpt.cn/">设备与资产管理部</option>
+                            <option value="http://Kyc.jmpt.cn/">科研处</option>
+                            <option value="#">督导室</option>
+                      </select>
+                        <select class="home_select" onchange="if(this.selectedIndex &amp;&amp; this.selectedIndex!=0){window.open(this.value);}this.selectedIndex=0;" name="menu3">
+                              <option selected="selected">友情链接</option>
+                              <option value="http://www.moe.edu.cn/">中国教育部</option>
+                              <option value="http://www.gdhed.edu.cn/main/index.html">广东省教育厅</option>
+                              <option value="http://www.people.com.cn/">人民网</option>
+                               <option value="http://www.tech.net.cn/">高职高专网</option>
+                              <option value="http://www.southcn.com/">南方网</option>
+                              <option value="http://www.jmnews.com.cn">江门新闻网</option>
+                              <option value="http://www.wyu.edu.cn">五邑大学</option>
+                              <option value="http://www.dyzz.net">江门一职</option>
+                              <option value="http://Fhjd.jmpt.cn/">江门市创业孵化基地</option>
+                              <option value="http://www.jmvea.org.cn/">江门市职业教育联合会</option>
+                                                                                                                                                        
+                              <option value="http://10.4.2.5:9000/talents-1.5">数据平台（内网）</option>
+                              <option value="http://202.104.205.213:9000/talents-1.5">数据平台（外网）</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layC fr">
+                    <!-- 图片新闻 -->
+                    <div class="newPic">
+                        <a href="http://cpc.people.com.cn/GB/67481/412690/index.html" target="_blank"><img width="188" height="120" alt="决胜全面建成小康社会 夺取新时代中国特色社会主义伟大胜利" src="/viscms/u/cms/jmpt/201710/24145748vfyo.jpg"></a>
+                        <p><a href="http://cpc.people.com.cn/GB/67481/412690/index.html" target="_blank">决胜全面建成小康社会 ...</a></p>
+                  </div>
+                    <div class="rightLink">
+                         <a href="http://202.104.205.216:10100" target="_blank">广东省示范性高职院校建设项目验收网</a>
+                        <!--  <a href="http://ztw.jmpt.cn/viscms/ztw/jxcgjsb2017/" target="_blank">2017年省职业教育教学成果奖申报</a> -->
+                         <a href="http://www.jmpt.cn/viscms/r/cms/jmpt/jmzy/files/江门职业技术教育部学院高等职业教育质量年度报告(2018).pdf" target="_blank">高等职业教育质量年度报告（2018)</a>
+                        <a href="http://ztw.jmpt.cn/viscms/ztw/pinpaizhuanye20167305/" target="_blank">广东省高等职业教育品牌专业申报</a>
+                        <a href="http://ztw.jmpt.cn/viscms/ztw/2017shixunzhongxin0185/" target="_blank">2017年省级公共实训中心申报网站</a>
+                        <a href="http://ztw.jmpt.cn/viscms/ztw/xmsbyxmyspszl/" target="_blank">项目申报与验收评审专栏</a>
+                        <a href="http://jswm.jmpt.cn/" target="_blank">精神文明建设专栏</a>
+                        
+                        <a href="http://ztw.jmpt.cn/viscms/ztw/xzzyjczl2016/" target="_blank">新增专业检查专栏</a>
+                        <a href="http://ztw.jmpt.cn/viscms/ztw/2015sxjdxmsb/" target="_blank">2015省级实训基地申报</a> 
+                        <a href="http://ztw.jmpt.cn/viscms/ztw/sixiangxuexizhuanlan1280/" target="_blank">习近平新时代中国特色社会主义思想</a>  
+                    </div>
+            </div>
+            <!-- 热点链接 -->
+            <div class="box2 mt10">
+                
+            </div>
+        </div>
+
+        <div class="footer">
+          <dl class="bottomLink clearfix"> 
+                    <dt>热点链接</dt>
+                    <dd><a href="mailto:jmzy_liu@126.com">院长信箱</a></dd>
+                    <dd><a href="#">院报在线</a></dd>
+                    <dd><a href="http://xyh.jmpt.cn:8080/">校友会</a></dd>
+                    <dd><a href="http://www.jmpt.cn/ztwz/yywzgzw/">语言文字工作</a></dd>
+                    <dd><a href="http://www.jmpt.cn/ztwz/fzwh/index.asp">法治文化专题网</a></dd>
+                    <dd><a href="http://oa.jmpt.cn/Login.aspx">OA系统</a></dd>
+                    <dd><a href="http://www.jmpt.cn/viscms/jmpt/information_publication/">信息公开</a></dd> 
+                    <dd><a href="http://10.1.151.222">一卡通系统管理</a></dd>
+                    <dd><a href="https://202.104.205.209/">VPN登录</a></dd>
+                    <dd><a href="http://newoa.jmpt.cn/">新OA系统试运行</a></dd>
+          </dl>
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                 <td width="160" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="center"><img src="/viscms/r/cms/jmpt/jmzy/images/guanwei.jpg" width="120" height="120" /></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="margin-left: -5px;">江门职业技术学院微信公众号</td>
+                  </tr>
+                </table></td>
+
+                <td width="152" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td align="center"><img src="http://zsxx.jmpt.cn/viscms/r/cms/zsxx/zsc/images/ewm.jpg" width="120" height="120" /></td>
+                  </tr>
+                  <tr>
+                    <td align="center">学院招生办微信公众号</td>
+                  </tr>
+                </table></td>
+                <td valign="top">
+                 <p>版权所有&copy;江门职业技术学院 | 地址: 广东江门市潮连大道6号 | 电话：0750-3725555(院办)| 许可证：粤ICP备05065345号</p>
+            <div class="police"><img src="/viscms/r/cms/jmpt/jmzy/images/waicon.gif" alt="" /><img src="/viscms/r/cms/jmpt/jmzy/images/gt.gif" alt="" /></div>              </td>
+              </tr>
+            </table>
+            
+
+        </div>
+    </div>
+    <!-- 日期 -->
+    <script language="JavaScript" type="text/javascript" src="/viscms/r/cms/jmpt/jmzy/js/date.js"></script>
+    <!-- tab切换 -->
+    <script language="JavaScript" type="text/javascript" src="/viscms/r/cms/jmpt/jmzy/js/tab.js"></script>
+    <script type="text/javascript">
+    //导航 
+    var _nav = document.getElementById("nav");
+    var _liNum = _nav.getElementsByTagName("li");
+    for(var i = 0 ; i < _liNum.length ; i++){
+            _liNum[i].onmouseover = function(){
+                this.className = "current";
+            }
+            _liNum[i].onmouseout = function(){
+                if(this.className == "current"){
+                    this.className = "";
+                }
+            }
+    
+        }
+
+        //日期
+        var calendarB = document.getElementById("calendarB");
+        // alert(date);
+        function showCal(){  
+            calendarB.innerHTML = GetLunarDay(yy,mm,dd);
+            // document.write(GetLunarDay(yy,mm,dd));  
+        }
+        showCal(); 
+        
+    </script>
+<!-- end 导航 -->
+
+<!-- 左侧图片切换 -->
+<!-- 背景图片变换 -->
+
+<!-- end 左侧图片切换 -->
+<!-- end 左侧图片切换 -->
+
+
+    <!-- 农历 -->
+    
+    <!-- end 农历 -->
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/20/314/0000/45003370/CA203140000450033700001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

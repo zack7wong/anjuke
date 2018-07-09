@@ -1,0 +1,341 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="msapplication-TileColor" content="#1A0066"/>
+<meta name="msapplication-TileImage" content="/images/win8_symbol_140x140.png"/>
+<title>江西艺术职业学院_首页</title>
+<meta name="Keywords" content="江西艺术职业学院,艺术,职业,学院,艺术职业,江西艺术,江西职业,江西艺术学院,江西学院">
+<meta name="Description" content="江西艺术职业学院是经江西省人民政府批准,在(江西省文艺学校)基础上成立的江西省唯一的一所国办综合性艺术类高等专业院校。学院群楼林立,山水相映，是一个环境幽雅、布局合理的花园式学校。学院推进教育教学改革，拓宽办学渠道，扩大办学规模，提高教学质量，走上了快速发展的道路。学院现有舞蹈、音乐、戏剧表演、美术、戏曲系、综合艺术六个系和一个中专部,设有舞蹈表演、音乐(声乐、器乐)表演、艺术设计、影视表演、戏曲表演、杂技表演等17个专业,形成了多渠道,多层次办学的新格局">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<link href="/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/JS/jquery-1.11.1.min.js" ></script>
+<script src="/dist/js/bootstrap.min.js"></script>
+<link href="/dist/css/font-awesome.min.css" rel="stylesheet"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<link href="/Template/ArtSchool/style/global.css?Version=20170504" rel="stylesheet"/>
+<script src="/js/scrolltopcontrol.js"></script>
+<script src="/JS/Controls/B_User.js"></script>
+<style>
+.home_top .home_nav li a { color:#FFF;}
+@media screen and (max-width:768px){ /*小于768px私有*/
+.home_top .home_nav li a { color:#000;}
+}
+</style>
+</head>
+<body>
+<div class="home_top">
+<nav class="navbar navbar-default home_nav">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/"><img src="/Template/ArtSchool/style/images/logo.svg" alt="江西艺术职业学院" /></a>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li><a href="index.shtml">主页</a></li>
+<li id="tid9"><a href="/Class_9/Default.aspx">学院</a></li>
+<li id="tid60"><a href="/Class_60/Default.aspx">党建</a></li>
+<li id="tid17"><a href="/Class_17/Default.aspx">教研</a></li>
+<li id="tid12"><a href="/Class_12/Default.aspx">招生</a></li>
+<li id="tid13"><a href="/Class_13/Default.aspx">就业</a></li>
+<li id="tid110"><a href="/Class_110/Default.aspx">学工</a></li>
+<li id="tid27"><a href="/Class_133/Default.aspx">安保</a></li>
+<li><a href="/Class_137/NodeElite.aspx">招生彩页</a></li>
+<li><a href="/Class_124/NodePage.aspx" title="报名系统">报名 <i class="fa fa-edit" style="color:#ff000b;"></i></a></li>
+</ul>
+<form class="navbar-right home_search hidden-xs" role="search" action="/Search/SearchList">
+<div class="input-group">
+<input type="text" class="form-control" placeholder="全站检索       回车确认" name="keyword" />
+<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+</div>
+</form>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+</div>
+<div id="carousel-example-generic" class="carousel slide home_banner" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+</ol>
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+<div class="item active banner1"></div>
+<div class="item banner2"></div>
+<div class="item banner3"></div>
+<div class="item banner4"></div>
+<div class="item banner5"></div>
+<div class="item banner6"></div>
+</div>
+<a href="/index.shtml" class="btn btn-info home_btn"> 进入网站 </a>
+<!-- Controls -->
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+<div class="home_slide">
+<div id="banner_bolang_bg_1" class="setactive"></div>
+<div id="banner_bolang_bg_2" class="setactive"></div>
+</div>
+</div>
+
+<div class="container margin_top20 margin0_xs list_b">
+<div class="home_list">
+<div class="home_news">
+<h3><a href="/Class_4/Default.aspx">最新动态</a></h3>
+<ul>
+
+<li><a href="/Item/8368.aspx" title="江西艺术职业学院食堂大宗物资集中采购项目再招标成交结果公告" target="_self">江西艺术职业学院食堂大宗物资集中采购项目再招标成交...</a><span>18/02/28</span></li>
+
+<li><a href="/Item/8364.aspx" title="江西艺术职业学院食堂大宗物资集中采购项目招标公告" target="_self">江西艺术职业学院食堂大宗物资集中采购项目招标公告</a><span>18/02/12</span></li>
+
+<li><a href="/Item/8367.aspx" title="江西艺术职业学院食堂大宗物资集中采购项目招标结果公告" target="_self">江西艺术职业学院食堂大宗物资集中采购项目招标结果公...</a><span>18/02/12</span></li>
+
+<li><a href="/Item/8366.aspx" title="江西艺术职业学院《校情简报》2018 年第1期" target="_blank">江西艺术职业学院《校情简报》2018 年第1期</a><span>18/01/31</span></li>
+
+<li><a href="/Item/8363.aspx" title="学院戏剧系2018届表演毕业大戏 《萨拉姆的女巫》在省话剧团剧场上演" target="_self">学院戏剧系2018届表演毕业大戏 《萨拉姆的女巫》在省...</a><span>18/01/26</span></li>
+
+</ul>
+</div>
+<div class="home_dao">
+<h3><a href="/Class_97/Default.aspx">公开信息</a></h3>
+<ul>
+<li><a href="/Item/1003.aspx">学院概况</a></li>
+<li><a href="/Class_9/Default.aspx">院系介绍</a></li>
+<li><a href="/Class_105/Default.aspx">规划计划</a></li>
+<li><a href="/Class_0/Default.aspx">教育督导</a></li>
+
+<li><a href="/Class_102/Default.aspx">人事信息</a></li>
+<li><a href="/Class_44/Default.aspx">教师风采</a></li>
+<li><a href="/Class_60/Default.aspx">党建之窗</a></li>
+<li><a href="/Class_133/Default.aspx">安全工作</a></li>
+
+<li><a href="/Class_17/Default.aspx">教学教务</a></li>
+<li><a href="/Class_34/Default.aspx">学工园地</a></li>
+<li><a href="/Class_0/Default.aspx">成人教育</a></li>
+<li><a href="/Class_0/Default.aspx">教育统计</a></li>
+
+<li><a href="/Class_99/Default.aspx">学生工作</a></li>
+<li><a href="/Class_103/Default.aspx">奖学助学</a></li>
+<li><a href="/Class_90/Default.aspx">校园生活</a></li>
+<li><a href="/Class_78/Default.aspx">心理咨询</a></li>
+
+<li><a href="/Class_32/Default.aspx">工会活动</a></li>
+<li><a href="/Class_96/Default.aspx">后勤保障</a></li>
+<li><a href="/Class_107/Default.aspx">家长学校</a></li>
+<li><a href="/Class_55/Default.aspx">校友聚盟</a></li>
+
+<div class="clearfix"></div>
+</ul>
+</div>
+<div class="home_video">
+<div role="tabpanel">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">招生</a></li>
+<li role="presentation"><a href="#home1" aria-controls="home1" role="tab" data-toggle="tab">就业</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="home">
+<ul>
+<li><a href="/Class_26/Default.aspx">招生动态</a></li>
+<li><a href="/Class_123/Default.aspx">招生政策</a></li>
+<li><a href="/Class_36/Default.aspx">单独招生</a></li>
+<li><a href="/Class_125/Default.aspx">考生问答</a></li>
+</ul>
+</div>
+<div role="tabpanel" class="tab-pane" id="home1">
+<ul>
+<li><a href="/Class_74/Default.aspx">就业动态</a></li>
+<li><a href="/Class_73/Default.aspx">需求信息</a></li>
+<li><a href="/Class_92/Default.aspx">就业政策</a></li>
+<li><a href="/Class_93/Default.aspx">就业指导</a></li>
+<li><a href="/Class_94/Default.aspx">专场招聘</a></li>
+<li><a href="/Class_95/Default.aspx">大学征兵</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="home_student">
+<div role="tabpanel">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#message" aria-controls="message" role="tab" data-toggle="tab">图库</a></li>
+<li role="presentation"><a href="#message1" aria-controls="message1" role="tab" data-toggle="tab">视频</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="message">
+<ul>
+<li><a href="/Class_14/Default.aspx">名生风采</a></li>
+<li><a href="/Class_16/Default.aspx">珍贵留影</a></li>
+<li><a href="/Class_15/Default.aspx">演出掠影</a></li>
+<li><a href="/Class_58/Default.aspx">学院风光</a></li>
+<li><a href="/Class_19/Default.aspx">下载中心</a></li>
+</ul>
+</div>
+<div role="tabpanel" class="tab-pane" id="message1">
+<ul>
+<li><a href="/Class_66/Default.aspx">舞蹈系</a></li>
+<li><a href="/Class_67/Default.aspx">音乐系</a></li>
+<li><a href="/Class_68/Default.aspx">戏剧系</a></li>
+<li><a href="/Class_69/Default.aspx">综艺系</a></li>
+<li><a href="/Class_70/Default.aspx">美术系</a></li>
+<li><a href="/Class_76/Default.aspx">戏曲系</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="home_foot margin_top20">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 homefoot_js">
+<h3>江西艺术职业学院</h3>
+<p>江西艺术职业学院创建于1951年,前身是江西文化干部学校,隶属于江西省文化厅。现有<a href="/Class_22/Default.aspx">舞蹈</a>、<a href="/Class_23/Default.aspx">音乐</a>、<a href="/Class_24/Default.aspx">戏剧表演</a>、<a href="/Class_21/Default.aspx">美术</a>、<a href="/Class_25/Default.aspx">综合艺术</a>、<a href="/Class_76/Default.aspx">戏曲系</a>六个系,设有音乐表演、舞蹈表演、艺术设计、影视表演、戏曲、导游、空乘等近20个专业,是江西省规模最大、门类最齐全的公办综合性艺术院校,荣膺文化部授予的“全国先进文化单位”称号。学院坐落在南昌市蛟桥,占地面积153亩,建筑面积50000平<a href="/Item/1003.aspx">More >></a></p>
+</div>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 homefoot_u">
+<ul>
+<h4>关于学院</h4>
+<li><a href="/Class_26/Default.aspx" title="招生办">招生办</a></li>
+ <li><a href="/Item/8340.aspx">来校地址</a></li>
+<li><a href="#">版权申明</a></li>
+<li><a href="/Class_114/Default.aspx" title="友情链接">友情链接</a></li>
+<li><a href="#">旧版镜像</a></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 homefoot_u">
+<ul>
+<h4>院系概况</h4>
+<li><a href="/Item/1003.aspx" title="学院介绍">学院介绍</a></li>
+<li><a href="/Class_22/Default.aspx" title="舞蹈系">舞蹈系</a></li>
+<li><a href="/Class_23/Default.aspx" title="音乐系">音乐系</a></li>
+<li><a href="/Class_24/Default.aspx" title="戏剧系">戏剧系</a></li>
+<li><a href="/Class_76/Default.aspx" title="戏曲系">戏曲系</a></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 homefoot_u">
+<ul>
+<h4>教学教研</h4>
+<li><a href="/Class_49/Default.aspx" title="教学教研">教学教研</a></li>
+<li><a href="/Class_50/Default.aspx" title="教学交流">教学交流</a></li>
+<li><a href="/Class_87/Default.aspx" title="迎新专题">迎新专题</a></li>
+<li><a href="/Class_54/Default.aspx" title="作品欣赏">作品欣赏</a></li>
+  <li><a href="/Class_61/Default.aspx" title="党建活动">党建活动</a></li>
+</ul>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 homefoot_u">
+<ul>
+<h4>联系我们</h4>
+<li><a href="/Class_12/Default.aspx" title="招生信息">招生信息</a></li>
+<li><a href="mailto:jxys2018@126.com">校长信箱</a></li>
+<li><a href="mailto:jxysedu@163.com">联系校方</a></li>
+<li><a href="/Guest">给我留言</a></li>
+<li><a href="/Class_115/Default.aspx">网站地图</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="homefoot_copy">
+<script src="/js/mobile.js"></script>
+Copyright &copy;2018 All Rights Reserved 江西艺术职业学院  招办:83810006 83810007  院办:0791-83805792<br/>
+学院网站邮箱:<a href="mailto:jxysedu@163.com" target="_blank">jxysedu@163.com</a>
+<a target="_blank"  href="http://www.miibeian.gov.cn">赣ICP备09015308号</a>
+<a href="http://www.hx008.com" target="_blank">主机支持:华夏互联hx008.com</a> <a href="http://webscan.360.cn/index/checkwebsite/url/www.jxysedu.com" name="43a89c87484650b395efa404da4f5de7" >360网站安全检测平台</a>><br/>
+本站文章资料及MP3均服务于学术研究与教学使用,用户发布文章视自愿投稿并放弃稿酬行为,如有侵权请联系我们<script target=_blank src="http://59.53.216.180:8080/jxeduStat/stat.jsp?id=jxedu@0AA&color=green"></script>
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript  src='http://dcs.conac.cn/js/15/000/0000/41084693/CA150000000410846930001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</div>
+
+<!--右侧客服begin-->
+<div class="kefu">
+<ul>
+<li><a href="tel:0791-83805792"><span>院办热线</span><i class="fa fa-phone"></i></a><div class="clearfix"></div></li>
+<li><a href="https://jq.qq.com/?_wv=1027&k=43IpNP6" target="_blank"><span>QQ在线</span><i class="fa  fa-qq"></i></a><div class="clearfix"></div></li>
+<li class="kefu_qrcode"><a href="javascript:;"><span><img src="/Template/ArtSchool/style/images/wx.jpg" alt="微信二维码"></span><i class="fa fa-qrcode"></i></a><div class="clearfix"></div></li>
+<li><a href="mailto:jxysedu@163.com" target="_blank"><span>学院邮箱</span><i class="fa fa-envelope"></i></a><div class="clearfix"></div></li>
+<li><a href="/Class_118/Default.aspx" class="legal"><span>精彩视频</span><i class="fa fa-video-camera"></i></a><div class="clearfix"></div></li>
+</ul>
+</div>
+<!--右侧客服end-->
+<!--右侧报名系统图片浮动-->
+ <!--右<div id="fudong" style="width:230px; height:78px; position:absolute; right:10px; bottom:5px; z-index:9998">
+<a href="/Vote/Index?id=2" target="_blank"><img src="/Template/ArtSchool/style/images/sign.gif" alt="报名系统" /></a> 
+<a href="/Class_87/Default.aspx" target="_blank"><img src="/Template/ArtSchool/style/images/20170903ad.png" alt="2017迎新专题" /></a> 
+</div> 
+</div>-->
+</body>
+</html>
+<script>
+//-----手机下右侧导航菜单效果
+$(function() {
+  $('button.navbar-toggle').click(function(){ 
+    $('body').toggleClass('out');
+    $('nav.navbar-fixed-top').toggleClass('out');
+    if ($('body').hasClass('out')) {
+      $(this).focus();
+    } else {
+      $(this).blur();
+    }
+  });
+});
+$(document).click(function(e) {
+  if (!$(e.target).closest('.navbar-collapse, button.navbar-toggle').length && $('body').hasClass('out')) {
+    e.preventDefault();
+    $('button.navbar-toggle').trigger('click');
+  }
+}).keyup(function(e) {
+  if (e.keyCode == 27 && $('body').hasClass('out')) {
+    $('button.navbar-toggle').trigger('click');
+  } 
+});
+$(function() {	//右下角悬浮
+    var timer, scrollTop, sideDiv = $('#fudong').appendTo('body');
+    $(window).scroll(function() {
+        timer && clearTimeout(timer);
+        scrollTop = $(this).scrollTop();
+        timer = setTimeout(function() {
+            sideDiv.animate({
+                top: scrollTop + 410 + 'px'
+            }, 600);
+        }, 200);
+    });
+});
+//setTimeout("window.location='index.shtml'",6000);
+</script>
+<!--全局统计代码开始-->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff8ffe1d8ad507eccb1f46c6745401b64' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!--全局统计代码结束-->

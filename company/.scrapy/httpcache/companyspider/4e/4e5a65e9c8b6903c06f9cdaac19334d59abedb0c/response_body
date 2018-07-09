@@ -1,0 +1,904 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+<script language="javascript">
+var __exp_path = "index";
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>板桥中学</title>
+<link rel="stylesheet" type="text/css" href="style/reset.css" />
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+<link rel="stylesheet" href="style/slide.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+function nTabs(thisObj,Num,id){
+$(thisObj).parent().next().find("a").attr("href","list.jsp?chntypeid="+id);
+if(thisObj.className == "active")return;
+var tabObj = thisObj.parentNode.id;
+var tabList = document.getElementById(tabObj).getElementsByTagName("li");
+for(i=0; i <tabList.length; i++)
+{
+  if (i == Num)
+  {
+   thisObj.className = "active"; 
+      document.getElementById(tabObj+"_Content"+i).style.display = "block";
+  }else{
+   tabList[i].className = "normal"; 
+   document.getElementById(tabObj+"_Content"+i).style.display = "none";
+  }
+} 
+}
+</script>
+
+
+<script>
+function hidead()
+{document.getElementById("dd").style.display="none";}
+</script>
+<div id="dd" style="position:absolute; left:297px; top:114px; width:$fdwidth$; height:$fdheight$; z-index:9999;">
+  
+	<a href="http://www.njbqzx.cn/portal_jsps/site/bqzx/default/content.jsp?chnid=4305&cntid=19901" target="_blank">
+   <img width="200" height="122" src="/attaches/1299/20180425/20180425092309720.jpg"></img></a><span onclick="hidead();" style="FONT-SIZE: 8pt; CURSOR: hand;z-index:1000;background-color:#ffffff;margin-left:-20px;">关闭×</span>
+   
+</div>
+<script type="text/javascript">
+       
+ 
+        </script>
+
+</head>
+
+<body>
+	<div class="main">
+		<div class="top">
+			<div class="topl">
+				<img src="images/id_03.jpg" />
+			</div>
+			<div class="topr">
+				<img src="images/id_06.jpg" />
+			</div>
+		</div>
+		<!--top-->
+		<div class="nav">
+			<ul>
+				<li><a href="index.jsp">网站首页</a></li>
+				
+
+								
+				                                
+
+					
+				
+						<li><a href="list.jsp?chntypeid=4620">走进板中 </a>
+
+					
+
+						
+						<div class="second">
+
+							
+							<a href="list.jsp?chntypeid=4280">学校简介</a>
+           					 	
+							<a href="piclist.jsp?chntypeid=4281" target="_blank"> 校容校貌 </a>
+							
+							<a href="list.jsp?chntypeid=4282">学校荣誉</a>
+           					 	
+							<a href="ztlist.jsp?chntypeid=4667" target="_blank"> 美术特色 </a>
+							
+							<a href="piclist.jsp?chntypeid=4625" target="_blank"> 教师风采 </a>
+							
+							<a href="list.jsp?chntypeid=4283">办事指南</a>
+           					 	
+						</div>
+						
+
+					
+						</li>
+					
+						<li><a href="list.jsp?chntypeid=4670">新闻中心 </a>
+
+					
+
+						
+						<div class="second">
+
+							
+							<a href="list.jsp?chntypeid=4284">热点新闻</a>
+           					 	
+							<a href="list.jsp?chntypeid=4628">通知公告</a>
+           					 	
+							<a href="list.jsp?chntypeid=4285">工作安排</a>
+           					 	
+						</div>
+						
+
+					
+						</li>
+					
+						<li><a href="list.jsp?chntypeid=4286">范式管理 </a>
+
+					
+
+						
+						<div class="second">
+
+							
+							<a href="ztlist.jsp?chntypeid=4657" target="_blank"> 处室频道 </a>
+							
+							<a href="list.jsp?chntypeid=4668">年级空间</a>
+           					 	
+							<a href="list.jsp?chntypeid=4669">学科建设</a>
+           					 	
+							<a href="ztlist.jsp?chntypeid=4287" target="_blank"> 党建专栏 </a>
+							
+							<a href="ztlist.jsp?chntypeid=4288" target="_blank"> 校长寄语 </a>
+							
+						</div>
+						
+
+					
+						</li>
+					
+						<li><a href="list.jsp?chntypeid=4622">教学教研 </a>
+
+					
+
+						
+						<div class="second">
+
+							
+							<a href="ztlist.jsp?chntypeid=4289" target="_blank"> 教研专栏 </a>
+							
+							<a href="list.jsp?chntypeid=4290">教育博客</a>
+           					 	
+							<a href="list.jsp?chntypeid=4291">教育萃文</a>
+           					 	
+						</div>
+						
+
+					
+						</li>
+					
+						<li><a href="list.jsp?chntypeid=4621">学生活动 </a>
+
+					
+
+						
+						<div class="second">
+
+							
+							<a href="stdlist.jsp?chntypeid=4292" target="_blank"> 社团活动 </a>
+							
+							<a href="list.jsp?chntypeid=4293">桃李风采</a>
+           					 	
+							<a href="list.jsp?chntypeid=4294">书香板中</a>
+           					 	
+							<a href="list.jsp?chntypeid=4295">班级空间</a>
+           					 	
+						</div>
+						
+
+					
+						</li>
+					
+						<li><a href="list.jsp?chntypeid=4624">家校沟通 </a>
+
+					
+
+						
+						<div class="second">
+
+							
+							<a href="list.jsp?chntypeid=4296">家长委会</a>
+           					 	
+							<a href="http://www.njbqzx.cn/simas/mailbox/port/xzxx.jsp" target="_blank"> 校长信箱 </a>
+							
+							<a href="list.jsp?chntypeid=4298">在线交流</a>
+           					 	
+							<a href="list.jsp?chntypeid=4299">学生查询</a>
+           					 	
+							<a href="list.jsp?chntypeid=4300">信息填报</a>
+           					 	
+							<a href="list.jsp?chntypeid=4301">在线调查</a>
+           					 	
+						</div>
+						
+
+					
+						</li>
+					
+						<li><a href="list.jsp?chntypeid=4626">校园文化 </a>
+
+					
+
+						
+						<div class="second">
+
+							
+							<a href="list.jsp?chntypeid=4302">文化建设</a>
+           					 	
+							<a href="list.jsp?chntypeid=4303">校史沿革</a>
+           					 	
+							<a href="list.jsp?chntypeid=4304">校园刊物</a>
+           					 	
+						</div>
+						
+
+					
+						</li>
+					
+						<li><a href="list.jsp?chntypeid=4623">招生招聘 </a>
+
+					
+
+						
+						<div class="second">
+
+							
+							<a href="list.jsp?chntypeid=4305">招生信息</a>
+           					 	
+							<a href="list.jsp?chntypeid=4306">升学信息</a>
+           					 	
+							<a href="list.jsp?chntypeid=4307">招聘信息</a>
+           					 	
+						</div>
+						
+
+					
+						</li>
+					
+			</ul>
+		</div>
+
+<!--nav-->
+<script type="text/javascript">
+$(function(){
+	var nav = 0; // 默认值为0，二级菜单向下滑动显示；值为1，则二级菜单向上滑动显示
+	if(nav ==0){
+		$('.nav li').hover(function(){
+			$('.second',this).css('top','50px').show();
+		},function(){
+			$('.second',this).hide();
+		});
+	}else if(nav ==1){
+		$('.nav li').hover(function(){
+			$('.second',this).css('bottom','30px').show();
+		},function(){
+			$('.second',this).hide();
+		});
+	}
+	$('#dd').autoMove({angle:-Math.PI/4, speed:120});
+
+});
+
+	         //定义插件
+        !function($){
+        /**
+        * Description: jquery飘窗插件，可自适应浏览器宽高的变化
+        * Author: YZCS
+        * CreateTime: 2015-04-25
+        * param: args={startL:default, startT:default, angle:-Math.PI/4, speed: 125} 
+        * 参数说名: startL飘窗初始时距离左边的距离, startT飘窗初始化距离顶部的距离, angle飘窗初始运动方向, speed运动速度(px/s)
+        * CopyRight: GPL 
+        */
+        $.fn.autoMove = function(args){
+            //先定义一些工具函数判断边距
+            function isTop(pos, w_w, w_h, d_w, d_h){//飘窗到达上边距
+                if(pos.top<=0){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            function isBottom(pos, w_w, w_h, d_w, d_h){//飘窗到达下边距
+                if(pos.top>=(w_h-d_h)){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            function isLeft(pos, w_w, w_h, d_w, d_h){//飘窗到达左边距
+                if(pos.left<=0){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            function isRight(pos, w_w, w_h, d_w, d_h){//飘窗到达右边距
+                if(pos.left>=(w_w-d_w)){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            return this.each(function(){
+                var w_w = parseInt($(window).width()),
+                    w_h = parseInt($(window).height()),
+                    d_w = parseInt($(this).width()),
+                    d_h = parseInt($(this).height()),
+                    d_l = (w_w-d_w)/2,
+                    d_t = (w_h-d_h)/2,
+                    max_l = w_w - d_w;
+                    max_t = w_h - d_h;
+                    //位置及参数的初始化
+                var setobj = $.extend({startL:d_l, startT:d_t, angle:Math.PI/4, speed:100}, args);
+                $(this).css({position: 'absolute', left: setobj['startL']+'px', top: setobj['startT']+'px'});
+                var position = {left: setobj['startL'], top: setobj['startT']};//飘窗位置对象
+                var that = $(this);
+                var angle= setobj.angle;
+                var time = 10;//控制飘窗运动效果，值越小越细腻
+                var step = setobj.speed * (time/1000);//计算运动步长
+                var decoration = {x:step*Math.cos(angle), y:step*Math.sin(angle)};//计算二维上的运动增量
+                var mvtid;
+                $(window).on('resize', function(){//窗口大小变动时重新设置运动相关参数
+                    w_w = parseInt($(window).width()),
+                    w_h = parseInt($(window).height()),
+                    max_l = w_w - d_w;
+                    max_t = w_h - d_h;
+                });
+                function move(){
+                    position.left += decoration.x;
+                    position.top  += decoration.y;
+                    if(isLeft(position, w_w, w_h, d_w, d_h)||isRight(position, w_w, w_h, d_w, d_h)){
+                        decoration.x = -1*decoration.x;
+                    }
+                    if(isRight(position, w_w, w_h, d_w, d_h)){
+                        position.left = max_l;
+                    }
+                    if(isTop(position, w_w, w_h, d_w, d_h)||isBottom(position, w_w, w_h, d_w, d_h)){
+                        decoration.y = -1*decoration.y;
+                    }
+                    if(isBottom(position, w_w, w_h, d_w, d_h)){
+                        position.top = max_t;
+                    }
+                    //that.css({left:position.left, top:position.top});
+                    that.animate({left:position.left, top:position.top}, time);//改用jquery动画函数使其更加平滑
+                    mvtid = setTimeout(move, time);//递归调用，使飘窗连续运动
+                }
+                move();//触发动作
+                that.on('mouseenter', function(){ clearTimeout(mvtid) });//添加鼠标事件
+                that.on('mouseleave', function(){ move() });
+            });
+        }//end plugin definition
+        }(jQuery);
+</script>
+		<!--nav-->
+		<div class="banner">
+
+<!-- html -->
+		<div class="ck-slide">
+			<ul class="ck-slide-wrapper">
+				<li>
+					<a href=""><img src="images/b9.jpg" alt=""></a>
+				</li>
+				<li style="display:none">
+					<a href=""><img src="images/b1.jpg" alt=""></a>
+				</li>
+				<li style="display:none">
+					<a href="javascript:"><img src="images/b2.jpg" alt=""></a>
+				</li>
+				<li style="display:none">
+					<a href="javascript:"><img src="images/b3.jpg" alt=""></a>
+				</li>
+				<li style="display:none">
+					<a href="javascript:"><img src="images/b4.jpg" alt=""></a>
+				</li>
+                <li style="display:none">
+					<a href="javascript:"><img src="images/b5.jpg" alt=""></a>
+				</li>
+                <li style="display:none">
+					<a href="javascript:"><img src="images/b6.jpg" alt=""></a>
+				</li>
+                <li style="display:none">
+					<a href="javascript:"><img src="images/b7.jpg" alt=""></a>
+				</li>
+                <li style="display:none">
+					<a href="javascript:"><img src="images/b8.jpg" alt=""></a>
+				</li>
+			</ul>
+			<a href="javascript:" class="ctrl-slide ck-prev">上一张</a> <a href="javascript:" class="ctrl-slide ck-next">下一张</a>
+			<div class="ck-slidebox">
+				<div class="slideWrap">
+					<ul class="dot-wrap">
+						<li class="current"><em>1</em></li>
+						<li><em>2</em></li>
+						<li><em>3</em></li>
+						<li><em>4</em></li>
+						<li><em>5</em></li>
+                        <li><em>6</em></li>
+                        <li><em>7</em></li>
+                        <li><em>8</em></li>
+                        <li><em>9</em></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!-- js -->
+		
+		<script src="js/slide.js"></script>
+		<script>
+			$('.ck-slide').ckSlide();
+		</script>
+		<!-- Demo end -->
+
+</div><!--banner-->
+		<!--banner-->
+		<div class="conta">
+			<div class="conta-l">
+				<div class="conta-l-tit">
+					<a >&nbsp;&nbsp;通知公告</a> <span><a href="list.jsp?chntypeid=4628" target="_blank">more</a></span>
+				</div>
+				<div class="conta-l-tip">
+					
+							<h1><a href="content.jsp?chnid=4628&cntid=20960" target="_blank" title="板桥中学2017—2018学年第二学期第十四周工作安排一览表">板桥中学2017—2018学...</a></h1>
+							<p>
+								日 期工作内容负责部门5月28日（周一）1.召开行政例会校长室2.进一步推进...<span>2018-05-25</span>
+							</p>
+						
+				</div>
+				<ul>
+					
+							<li><span>2018-05-18</span><a href="content.jsp?chnid=4628&cntid=20780" target="_blank" title="板桥中学2017—2018学年第二学期第十三周工作安排一览表">板桥中学2017—201...</a></li>
+						
+							<li><span>2018-05-16</span><a href="content.jsp?chnid=4628&cntid=20640" target="_blank" title="2018年信息技术教师招聘公告">2018年信息技术教师招...</a></li>
+						
+							<li><span>2018-05-11</span><a href="content.jsp?chnid=4628&cntid=20501" target="_blank" title="板桥中学2017—2018学年第二学期第十二周工作安排一览表">板桥中学2017—201...</a></li>
+						
+							<li><span>2018-05-04</span><a href="content.jsp?chnid=4628&cntid=20382" target="_blank" title="板桥中学2017—2018学年第二学期第十一周工作安排一览表">板桥中学2017—201...</a></li>
+						
+							<li><span>2018-04-29</span><a href="content.jsp?chnid=4628&cntid=20320" target="_blank" title="板桥中学2018年劳动节行政值班表"><font color='#FF0000'>板桥中学2018年劳动节...</font></a></li>
+						
+							<li><span>2018-04-29</span><a href="content.jsp?chnid=4628&cntid=20321" target="_blank" title="关于做好近期学校安全稳定工作的紧急通知（宁教安〔2018〕15号）"><font color='#FF0000'>关于做好近期学校安全稳定...</font></a></li>
+						
+				</ul>
+			</div>
+			<!--conta-l-->
+			
+			   
+			<div class="conta-m">
+				<div class="conta-m-top" >
+					
+							<div class="conta-m-top-img">
+								
+								<img src="/attaches/1299/20180524/20180524111907736.jpg" style="width:151px;height:121px;"/>
+								
+							</div>
+							<div class="conta-m-top-txt">
+								<h1><a href="content.jsp?chnid=4312&cntid=20901" target="_blank" title="我校第二党支部开展主题党日观影活动">我校第二党支部开展主题党日观影活动</a></h1>
+								<p>5月23日,我校第二支部组织党员开展了《厉害了,我的国》主题党日观影活动,以...</p>
+								<p style='margin-right:0px;'><span>2018-05-24</span></p>
+							</div>
+						
+					<div style="padding-top:130px;margin-left:90%;font-size:12px;font-weight: bold;color:#058ad3;"><a  href='list.jsp?chntypeid=4284' target="_blank" style='color:#058ad3;'>more</a></div>							
+				</div>
+
+				<ul>
+					
+							<li><span>2018-05-18</span><a href="content.jsp?chnid=4284&cntid=20760" target="_blank" title="感受身边历史  升华党性修养——板桥中学第一党支部组织党员参观华兴侨史陈列馆"><em>[热点新闻]</em>感受身边历史  升华党性修养...</a></li>
+						
+							<li><span>2018-05-17</span><a href="content.jsp?chnid=4316&cntid=20701" target="_blank" title="领航班召开期中考试质量分析会"><em>[教研新闻]</em>领航班召开期中考试质量分析会</a></li>
+						
+							<li><span>2018-05-17</span><a href="content.jsp?chnid=4284&cntid=20700" target="_blank" title="敢问：学校德育 路在何方？——板桥中学5月份德育校本研修活动纪实"><em>[热点新闻]</em>敢问：学校德育 路在何方？—...</a></li>
+						
+							<li><span>2018-05-17</span><a href="content.jsp?chnid=4284&cntid=20680" target="_blank" title="舒缓考前压力 开展拓展训练——板中高考前心理辅导减压活动纪实"><em>[热点新闻]</em>舒缓考前压力 开展拓展训练—...</a></li>
+						
+				</ul>
+			</div>
+			<!--conta-m-->
+			<div class="conta-r">
+<div class="nTab">
+				<div class="TabTitle" >
+					<ul id="myTab" >
+						<li class="active" id="activeti" onmouseover="nTabs(this,0,4667);">美术特色</li>
+						<li class="normal" onmouseover="nTabs(this,1,4623);">招生升学</li>
+						<!--<li style="boder-right:-50px;background:0;border:1px solid red;"  >more</li>-->
+					</ul>
+					<div style="margin-top:9px;margin-left:88%;font-size:12px;font-weight: bold;color:#058ad3;"><a  href='list.jsp?chntypeid=4667' target="_blank" style='color:#058ad3;'>more</a></div>
+				</div>
+				
+	    <div class="TabContent">
+        
+		<div id="myTab_Content0">
+    
+			<div class="conta-l-tip">
+						
+								<h1><a href="content.jsp?chnid=4321&cntid=16980" target="_blank" title="我校2018年美术专业省统考再创佳绩"><font color='#FF0000'>我校2018年美术专业省统考再创...</font></a></h1>
+								<p>
+									2018年江苏省高校招生美术专业统考成绩近日揭晓,我校美术专业成绩创历年新高...<span>2018-01-16</span>
+								</p>
+							
+			</div>
+			<ul>
+						
+								<li><span>2018-01-15</span><a href="content.jsp?chnid=4323&cntid=17220" target="_blank" title="王伯良老师速写作品"><em>[作品展示]</em>王伯良老师速写作...</a></li>
+							
+								<li><span>2017-01-16</span><a href="content.jsp?chnid=4321&cntid=8720" target="_blank" title="我校美术班2017年江苏省美术统考创佳绩"><em>[美术报道]</em><font color='#FF0000'>我校美术班201...</font></a></li>
+							
+								<li><span>2016-12-20</span><a href="content.jsp?chnid=4321&cntid=8220" target="_blank" title="区中小学青年美术教师职业技能竞赛在我校举行"><em>[美术报道]</em>区中小学青年美术...</a></li>
+							
+								<li><span>2016-05-04</span><a href="content.jsp?chnid=4321&cntid=4564" target="_blank" title="江苏省美术专业统考近乎百分百通过率——这是一个你所不知道的板中"><em>[美术报道]</em>江苏省美术专业统...</a></li>
+							
+								<li><span>2016-01-01</span><a href="content.jsp?chnid=4321&cntid=4424" target="_blank" title="认真考试 客观评分"><em>[美术报道]</em>认真考试 客观评...</a></li>
+							
+								<li><span>2016-01-01</span><a href="content.jsp?chnid=4323&cntid=4742" target="_blank" title="东孙老师素描作品"><em>[作品展示]</em>东孙老师素描作品</a></li>
+							
+			</ul>
+		</div>
+		<div id="myTab_Content1" class="none">
+    
+			<div class="conta-l-tip">
+						
+								<h1><a href="content.jsp?chnid=4305&cntid=20820" target="_blank" title="板桥中学2018年初中美术特长生加试成绩公示">板桥中学2018年初中美...</a></h1>
+								<p>
+									　　考试号姓名性别毕业小学测试项目测试成绩备注　　　　　　　　　　　　　　　...<span>2018-05-21</span>
+								</p>
+							
+			</div>
+				<ul>
+					
+							<li><span>2018-04-25</span><a href="content.jsp?chnid=4305&cntid=20120" target="_blank" title="2018年南京市板桥中学初中美术特长生招生简章">2018年南京市板桥中学...</a></li>
+						
+							<li><span>2018-04-24</span><a href="content.jsp?chnid=4305&cntid=19901" target="_blank" title="板桥中学2018年高中招生问答">板桥中学2018年高中招...</a></li>
+						
+							<li><span>2018-04-23</span><a href="content.jsp?chnid=4305&cntid=20000" target="_blank" title="板桥中学2018年初中招生公告">板桥中学2018年初中招...</a></li>
+						
+							<li><span>2017-05-23</span><a href="content.jsp?chnid=4305&cntid=11861" target="_blank" title="板桥中学2017年初中美术特长生加试成绩公示">板桥中学2017年初中美...</a></li>
+						
+							<li><span>2017-04-26</span><a href="content.jsp?chnid=4305&cntid=11140" target="_blank" title="2017年南京市板桥中学初中美术特长生招生简章">2017年南京市板桥中学...</a></li>
+						
+							<li><span>2017-04-24</span><a href="content.jsp?chnid=4305&cntid=11081" target="_blank" title="板桥中学2017年初中招生公告">板桥中学2017年初中招...</a></li>
+						
+				</ul>
+		</div>
+	</div>	
+				
+			<!--conta-r-->
+		</div>
+		</div>
+		<!--conta-->
+		<div class="contb">
+			<div class="contb-l">
+				<div class="contb-l-top">
+					<div class="zl-nav">
+						<ul>
+							<li><a href="ztlist.jsp?chntypeid=4288">校长寄语</a></li>
+							<li><a href="ztlist.jsp?chntypeid=4287">党建专栏</a></li>
+							<li><a href="ztlist.jsp?chntypeid=4667">美术特色</a></li>
+							<li><a href="ztlist.jsp?chntypeid=4289">科研专栏</a></li>
+							<li><a href="stdlist.jsp?chntypeid=4292">学生社团</a></li>
+							
+						</ul>
+					</div>
+					<!--nav-->
+				</div>
+				<!--contb-l-top-->
+				<div class="contb-l-bot">
+					<div class="contb-l-bot-l">
+					
+						
+						<div class="nTab nTab2">
+								<div class="TabTitle" >
+									<ul id="myTab2" style="padding-top:0">
+										<li class="active" id="activeti" onmouseover="nTabs(this,0,4621);">学生活动</li>
+										<li class="normal" onmouseover="nTabs(this,1,4622);">教学研究</li>			      
+									</ul>
+									<div style="margin-top:9px;margin-left:88%;font-size:12px;font-weight: bold;color:#058ad3;"><a  href='list.jsp?chntypeid=4621' target="_blank" style='color:#058ad3;'>more</a></div>
+								</div>
+								<div class="TabContent">
+								
+							<div id="myTab2_Content0">
+
+									<ul>
+										
+												<li><span>2018-03-14</span><a href="content.jsp?chnid=4293&cntid=18440" target="_blank" title="2018年中小学生电脑制作活动作品展示">2018年中小学生电脑制作...</a></li>
+											
+												<li><span>2018-03-14</span><a href="content.jsp?chnid=4292&cntid=18441" target="_blank" title="2017-2018学年第二学期“舞动的画笔”美术社团活动计划">2017-2018学年第二...</a></li>
+											
+												<li><span>2018-01-12</span><a href="content.jsp?chnid=4292&cntid=16860" target="_blank" title="多彩美术社团 成就灵动少年 ——“舞动的画笔”美术社团学期工作总结">多彩美术社团 成就灵动少年...</a></li>
+											
+												<li><span>2017-12-18</span><a href="content.jsp?chnid=4292&cntid=16264" target="_blank" title="弘扬宪法精神  构建法治校园 ——我校开展模拟法庭社团活动">弘扬宪法精神  构建法治校...</a></li>
+											
+												<li><span>2017-06-09</span><a href="content.jsp?chnid=4324&cntid=12261" target="_blank" title="社团喜报">社团喜报</a></li>
+											
+												<li><span>2017-04-18</span><a href="content.jsp?chnid=4293&cntid=10940" target="_blank" title="喜报--创客大赛获奖">喜报--创客大赛获奖</a></li>
+											
+												<li><span>2016-12-22</span><a href="content.jsp?chnid=4293&cntid=8340" target="_blank" title="2016南京市中小学创客比赛区获奖">2016南京市中小学创客比...</a></li>
+											
+												<li><span>2016-11-24</span><a href="content.jsp?chnid=4325&cntid=7440" target="_blank" title="无人机社团风采">无人机社团风采</a></li>
+											
+									</ul>
+							
+							</div>
+							<div id="myTab2_Content1" class="none">
+									
+									<ul>
+										
+												<li><span>2018-04-25</span><a href="content.jsp?chnid=4318&cntid=20121" target="_blank" title="板桥中学开展“ppt制作”校本培训"><em>[青师发展]</em>板桥中学开展“ppt...</a></li>
+											
+												<li><span>2018-02-05</span><a href="content.jsp?chnid=4318&cntid=17700" target="_blank" title="不忘初心  牢记使命——板桥中学召开“骨干研修班”年度总结会"><em>[青师发展]</em>不忘初心  牢记使命...</a></li>
+											
+												<li><span>2017-12-14</span><a href="content.jsp?chnid=4318&cntid=16200" target="_blank" title=" 有效课堂: 从“必然王国”走向“自由王国”"><em>[青师发展]</em> 有效课堂: 从“必...</a></li>
+											
+												<li><span>2017-12-04</span><a href="content.jsp?chnid=4291&cntid=15923" target="_blank" title="板桥中学2017教师发表获奖论文"><em>[教育萃文]</em>板桥中学2017教师...</a></li>
+											
+												<li><span>2017-10-25</span><a href="content.jsp?chnid=4318&cntid=18620" target="_blank" title="雏雁飞出国门——板中邓红燕老师远赴澳洲学习"><em>[青师发展]</em>雏雁飞出国门——板中...</a></li>
+											
+												<li><span>2017-09-25</span><a href="content.jsp?chnid=4291&cntid=14124" target="_blank" title="多彩课堂  缔造希望"><em>[教育萃文]</em>多彩课堂  缔造希望</a></li>
+											
+												<li><span>2017-03-28</span><a href="content.jsp?chnid=4318&cntid=10360" target="_blank" title="打造精品课例,追求智慧课堂"><em>[青师发展]</em>打造精品课例,追求智...</a></li>
+											
+												<li><span>2016-12-08</span><a href="content.jsp?chnid=4318&cntid=7821" target="_blank" title="不忘初心  继续前行"><em>[青师发展]</em>不忘初心  继续前行</a></li>
+											
+									</ul>
+							
+							</div>
+							</div>	
+						</div>
+
+					</div>
+					
+					
+					<div class="contb-l-bot-r">
+					
+					
+					<div class="nTab nTab2">
+		<div class="TabTitle"  >
+            <ul id="myTab3" style="padding-top:0" >
+            	<li class="active" id="activeti" onmouseover="nTabs(this,0,4657);">处室频道</li>
+            	<li class="normal" id="activeti" onmouseover="nTabs(this,1,4668);">年级空间</li>
+                <li class="normal" onmouseover="nTabs(this,2,4669);">学科建设</li>					      
+            </ul>
+           <div style="margin-top:9px;margin-left:90%;font-size:12px;font-weight: bold;color:#058ad3;"><a  href='list.jsp?chntypeid=4657' target="_blank" style='color:#058ad3;'>more</a></div>
+		</div>
+	    <div class="TabContent">
+        
+	<div id="myTab3_Content0">
+
+            <ul>
+               
+									<li><span>2018-05-28</span><a href="content.jsp?chnid=4327&cntid=21020" target="_blank" title="喜报"><em>[德育处]</em>喜报</a><img src='/common/resources/images/icons/isnewest.gif' id='isnewest'/></li>
+								
+									<li><span>2018-05-28</span><a href="content.jsp?chnid=4327&cntid=21000" target="_blank" title="挥洒斗志,成就梦想 ——2017-2018学年第二学期第十四周升旗仪式暨主题晨会纪实"><em>[德育处]</em>挥洒斗志,成就梦想 ——201...</a><img src='/common/resources/images/icons/isnewest.gif' id='isnewest'/></li>
+								
+									<li><span>2018-05-25</span><a href="content.jsp?chnid=4327&cntid=20941" target="_blank" title="喜报"><em>[德育处]</em>喜报</a></li>
+								
+									<li><span>2018-05-25</span><a href="content.jsp?chnid=4327&cntid=20940" target="_blank" title="喜报"><em>[德育处]</em>喜报</a></li>
+								
+									<li><span>2018-05-21</span><a href="content.jsp?chnid=4327&cntid=20800" target="_blank" title="心怀感恩之情,共创温馨校园——2017-2018学年第二学期第十三周升旗仪式暨主题晨会纪实"><em>[德育处]</em>心怀感恩之情,共创温馨校园——...</a></li>
+								
+									<li><span>2018-05-18</span><a href="content.jsp?chnid=4327&cntid=20760" target="_blank" title="感受身边历史  升华党性修养——板桥中学第一党支部组织党员参观华兴侨史陈列馆"><em>[德育处]</em>感受身边历史  升华党性修养—...</a></li>
+								
+									<li><span>2018-05-17</span><a href="content.jsp?chnid=4327&cntid=20700" target="_blank" title="敢问：学校德育 路在何方？——板桥中学5月份德育校本研修活动纪实"><em>[德育处]</em>敢问：学校德育 路在何方？——...</a></li>
+								
+									<li><span>2018-05-17</span><a href="content.jsp?chnid=4327&cntid=20680" target="_blank" title="舒缓考前压力 开展拓展训练——板中高考前心理辅导减压活动纪实"><em>[德育处]</em>舒缓考前压力 开展拓展训练——...</a></li>
+								
+            </ul>
+    
+    </div>
+	<div id="myTab3_Content1" class="none">
+            
+            <ul>
+              
+									<li><span>2018-05-23</span><a href="content.jsp?chnid=4334&cntid=20860" target="_blank" title="初二五班的家长会"><em>[初二年级]</em>初二五班的家长会</a></li>
+								
+									<li><span>2018-05-17</span><a href="content.jsp?chnid=4333&cntid=20720" target="_blank" title="初一年级召开教学质量研讨会"><em>[初一年级]</em>初一年级召开教学质量研讨会</a></li>
+								
+									<li><span>2018-05-16</span><a href="content.jsp?chnid=4334&cntid=20620" target="_blank" title="初二年级家长会"><em>[初二年级]</em>初二年级家长会</a></li>
+								
+									<li><span>2018-05-15</span><a href="content.jsp?chnid=4336&cntid=20600" target="_blank" title="高一年级召开期中考试学生表彰会"><em>[高一年级]</em>高一年级召开期中考试学生表彰会</a></li>
+								
+									<li><span>2018-05-12</span><a href="content.jsp?chnid=4333&cntid=20740" target="_blank" title="初一年级召开家长会"><em>[初一年级]</em>初一年级召开家长会</a></li>
+								
+									<li><span>2018-05-11</span><a href="content.jsp?chnid=4337&cntid=20460" target="_blank" title="守规矩方可日日进步,肯吃苦才能代代成才 ——2018年5月份高二年级阶段性总结表彰大会纪实"><em>[高二年级]</em>守规矩方可日日进步,肯吃苦才能...</a></li>
+								
+									<li><span>2018-05-08</span><a href="content.jsp?chnid=4336&cntid=20420" target="_blank" title="高一年级召开期中考试家长会"><em>[高一年级]</em>高一年级召开期中考试家长会</a></li>
+								
+									<li><span>2018-05-02</span><a href="content.jsp?chnid=4335&cntid=20340" target="_blank" title="初三一模质量分析会"><em>[初三年级]</em>初三一模质量分析会</a></li>
+								
+            </ul>
+    
+    </div>
+    
+    <div id="myTab3_Content2" class="none">
+            <ul>
+               
+									<li><span>2018-05-26</span><a href="content.jsp?chnid=4345&cntid=20980" target="_blank" title="精彩课堂  助高效学习  -记南京市四区地理教研连片活动"><em>[地理]</em>精彩课堂  助高效学习  -记...</a><img src='/common/resources/images/icons/isnewest.gif' id='isnewest'/></li>
+								
+									<li><span>2018-05-24</span><a href="content.jsp?chnid=4340&cntid=20920" target="_blank" title="初中数学组开展集体备课活动"><em>[数学]</em>初中数学组开展集体备课活动</a></li>
+								
+									<li><span>2018-05-23</span><a href="content.jsp?chnid=4339&cntid=20880" target="_blank" title="中考作文路在何方 听听戴老师诊断与建议"><em>[语文]</em>中考作文路在何方 听听戴老师诊...</a></li>
+								
+									<li><span>2018-05-23</span><a href="content.jsp?chnid=4341&cntid=20861" target="_blank" title="托底推中,精准施教"><em>[英语]</em>托底推中,精准施教</a></li>
+								
+									<li><span>2018-05-22</span><a href="content.jsp?chnid=4348&cntid=20840" target="_blank" title="初二年级大课间跑操活动进行中"><em>[体育]</em>初二年级大课间跑操活动进行中</a></li>
+								
+									<li><span>2018-05-16</span><a href="content.jsp?chnid=4343&cntid=20660" target="_blank" title="聚精会神  奋力突破—一一模考试质量分析及基于二轮复习课例研讨活动在板中开展"><em>[化学]</em>聚精会神  奋力突破—一一模考...</a></li>
+								
+									<li><span>2018-05-11</span><a href="content.jsp?chnid=4340&cntid=20480" target="_blank" title="初中数学教研组开展听课评课交流活动"><em>[数学]</em>初中数学教研组开展听课评课交流...</a></li>
+								
+									<li><span>2018-05-10</span><a href="content.jsp?chnid=4339&cntid=20520" target="_blank" title="审题谋篇助力中考  江南江北共研作文——新优质初中联盟语文活动在板中举行"><em>[语文]</em>审题谋篇助力中考  江南江北共...</a></li>
+								
+            </ul>
+    
+    </div>
+	</div>	
+</div>
+						
+					</div>
+				</div>
+				<!--contb-l-bot-->
+			</div>
+			<!--contb-l-->
+			<div class="contb-r">
+				<div class="contb-r-top">
+					<div class="contb-r-top-l">
+						<div class="contb-r-top-l">
+    
+     
+    
+    
+    						</div>
+
+						<p class="bsznp">
+							<a href="list.jsp?chntypeid=4283">办事指南</a>
+						</p>
+						<p class="xzxxp">
+							<a href="/simas/mailbox/port/xzxx.jsp" target="_blank">校长信箱</a>
+						</p>
+					</div>
+					<div class="contb-r-top-r">
+						<img src="images/id_35.jpg" />
+						<p>扫描二维码关注板桥中学</p>
+					</div>
+				</div>
+				<div class="contb-r-bot">
+					<ul>
+						<li><a href="https://im.dingtalk.com/" target="_blank">校内办公</a></li>
+						<li><a href="">家校互动</a></li>
+						<li><a href="">活动交流</a></li>
+						<li><a href="http://www.chineseall.cn/org/index.action?orgTreeId=89417" target="_blank">书香板中</a></li>
+						<li><a href="http://www.njbqzx.cn:8089/Html/Default.html" target="_blank">研训平台</a></li>
+						<li><a href="http://10.189.16.36" target="_blank">录播平台</a></li>
+						<li><a href="">教育博客</a></li>
+						<li><a href="">班级空间</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--contb-r-->
+		</div>
+		<!--contb-->
+		<div class="footer">
+			<div class="gov">
+				<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/11/173/1285/40896943/CA111731285408969430001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+			</div>
+			<div class="info">
+				<div class="flink">
+					友情链接 &nbsp;&nbsp;<select style="width: 105px; height: 21px;" onchange="flinkFunc();" id="myURL">
+						<option >==请选择==</option>
+						
+								<option value="http://www.yhjyxx.cn/">雨花台区教育局</option>
+						
+								<option value="http://www.njyhjs.cn/">雨花台区教师发展中心</option>
+						
+								<option value="http://www.yhtzx.net/">雨花台中学</option>
+						
+								<option value="http://www.njgz.net/">共青团路中学</option>
+						
+								<option value="http://www.njcjxx.net/">雨花台中学春江分校</option>
+						
+								<option value="http://www.yzsyxx.cn/">南京实验学校</option>
+						
+								<option value="http://www.yhtaac.com/">雨花台区青少年活动中心</option>
+						
+								<option value="http://www.shmsyz.com/">梅山第一中学</option>
+						
+								<option value="http://www.shmsez.cn/">梅山第二中学</option>
+						
+								<option value="http://www.jlzxds.net/">金陵中学岱山分校</option>
+						
+								<option value="http://www.njzhzz.cn/">南京市中华中等专业学校</option>
+						
+								<option value="http://www.xsqzx.cn/">金陵中学西善分校</option>
+						
+								<option value="http://www.njssjzx.cn/">孙家中学</option>
+						
+								<option value="http://www.shmsgjzx.com/">京市梅山高级中学</option>
+						
+						
+						
+					</select>
+				</div>
+				<!-- <div class="search">全站搜索&nbsp;&nbsp;<input type="text" /> <a href=""><img src="images/id_55.jpg" /></a></div> -->
+				<form name="searchfrm" method="post" action="search.jsp?actionName=doPage&out=1&ds=CMS_001&sitedir=bqzx&siteid=641" >                      
+        			<div class="search">全站搜索&nbsp;&nbsp;<input type="text" name="searchkey" style="width:105px"/> <a href="javascript:searchfrm.submit();"><img src="images/id_55.jpg" style="padding-right:80px;"/></a></div>
+        		</form>
+				<p>版权所有:&nbsp;&nbsp;南京市板桥中学&nbsp;&nbsp;苏ICP备16009757号&nbsp;&nbsp;地址：南京市雨花台区板桥街道宁谷路106号</p>
+			</div>
+			<div class="webinfo">
+				<div class="police">
+					<a href="http://www.cyberpolice.cn/wfjb/" target="_blank"><img src="images/id_50.jpg" /></a>
+				</div>
+				<div class="webadmin">
+					<div class="weizhi">
+						<a href="http://map.baidu.com/?poiShareUid=0e7443e604af7f9114948efa&cityCode=315&tn=B_NORMAL_MAP" target="_blank">学校位置</a> <a href="mailto:bqzx2002@yahoo.com.cn" target="_blank">电子邮箱</a> <a href="/simas">网站管理</a>
+					</div>
+					<div class="visit">
+						<a href="http://www.cnzz.com/stat/website.php?web_id=4017665" target="_blank" title="站长统计">
+<img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic.gif">
+</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer-->
+	</div>
+	<!--main-->
+</body>
+
+<script>
+
+	function flinkFunc(){
+		var obj=document.getElementById("myURL");
+		var varURL=obj.options[obj.options.selectedIndex].value;
+		window.open(varURL);
+	}
+	function changeZS(){
+		document.getElementById("zhaosheng").style.display="";
+		document.getElementById("meishu").style.display="none";
+	};
+
+	function changeMS(){
+		document.getElementById("zhaosheng").style.display="none";
+		document.getElementById("meishu").style.display="";
+		document.getElementById("zsa").className="spa";
+		document.getElementById("msa").className="";
+	};
+	
+	function changeXS(){
+		document.getElementById("xuesheng").style.display="";
+		document.getElementById("jiaoxue").style.display="none";
+	};
+	
+	function changeJX(){
+		document.getElementById("xuesheng").style.display="none";
+		document.getElementById("jiaoxue").style.display="";
+	};
+	
+	function changeCS(){
+		document.getElementById("chushi").style.display="";
+		document.getElementById("nianji").style.display="none";
+		document.getElementById("xueke").style.display="none";
+	};
+	
+	function changeNJ(){
+		document.getElementById("chushi").style.display="none";
+		document.getElementById("nianji").style.display="";
+		document.getElementById("xueke").style.display="none";
+	};
+	
+	function changeXK(){
+		document.getElementById("chushi").style.display="none";
+		document.getElementById("nianji").style.display="none";
+		document.getElementById("xueke").style.display="";
+	};
+</script>
+</html>

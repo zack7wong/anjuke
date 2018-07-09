@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>天津市南开中学</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="天津市南开中学 南开中学 南开 中学 天津 著名爱国教育家严修和张伯苓1904年创办 全国重点中学 天津市教委直属中学 " />
+<meta name="keywords" content="天津市南开中学 南开中学 南开 中学 天津 著名爱国教育家严修和张伯苓1904年创办  占地面积115亩，建筑面积60289平方米，绿化面积18000平方米" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+<script src="portalsiteStyle/js/jquery.min.js"></script>
+<script type="text/javascript">
+		$(function() {
+			var system ={  
+				win : false,  
+				mac : false,  
+				xll : false  
+			};  
+			var p = navigator.platform;  
+			system.win = p.indexOf("Win") == 0;  
+			system.mac = p.indexOf("Mac") == 0;  
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			
+			if(system.win || system.mac || system.xll) {
+				// PC端啥也不做
+				document.getElementById("browseWebSiteId").submit();
+			} else { 
+				document.getElementById("browseWebSiteMobileId").submit();
+			}
+		})
+		/* $(function(){
+			document.getElementById("browseWebSiteId").submit();
+		})	    
+	    function mobile() {
+	    	$("#isMobile").attr("value","1"); 
+	    } */
+</script>
+</head>
+ <body>
+	<form action="browseWebSite.do" id="browseWebSiteId" method="post">
+		
+	</form>
+	<form action="browseWebSiteMobile.do" id="browseWebSiteMobileId" method="post">
+		
+	</form>
+</body> 
+
+
+</html>

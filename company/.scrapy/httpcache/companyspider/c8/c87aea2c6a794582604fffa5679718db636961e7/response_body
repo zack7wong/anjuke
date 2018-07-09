@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>岭南画派纪念中学-岭南画派纪念中学</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="/templates/gz76/style/gz76.css" rel="stylesheet" media="screen" type="text/css" />
+
+</head>
+
+<div class="header">
+   <div id="xiaoxun" class="header_xiaoxun"><img src="../../../../images/xiaoxun.jpg" /></div>
+   <div id="banner" class="header_banner">
+   <script language='javascript'>
+linkarr = new Array();
+picarr = new Array();
+textarr = new Array();
+var swf_width=470;
+var swf_height=102;
+var files = "";
+var links = "";
+var texts = "";
+var j =1;
+//设
+ 
+linkarr[j] = "";
+picarr[j]  = "/upload/ad/2012412151126.jpg";
+textarr[j] = "";
+j=j+1;
+ 
+linkarr[j] = "";
+picarr[j]  = "/upload/ad/2012412171048.jpg";
+textarr[j] = "";
+j=j+1;
+ 
+linkarr[j] = "";
+picarr[j]  = "/upload/ad/201241217119.jpg";
+textarr[j] = "";
+j=j+1;
+
+for(i=1;i<picarr.length;i++){
+  if(files=="") files = picarr[i];
+  else files += "|"+picarr[i];
+}
+for(i=1;i<linkarr.length;i++){
+  if(links=="") links = linkarr[i];
+  else links += "|"+linkarr[i];
+}
+for(i=1;i<textarr.length;i++){
+  if(texts=="") texts = textarr[i];
+  else texts += "|"+textarr[i];
+}
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+document.write('<param name="movie" value="/images/bcastr3.swf"><param name="quality" value="high">');
+document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config=0xffffff|2|0x8CA2AD|60|0xffffff|0xff9900|0x000033|5|2|0|_blank">');
+document.write('<embed src="/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'& menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>'); 
+</script>
+   </div>
+   <div id="logo" class="header_logo">
+    
+     <p>&nbsp;</p>
+     <p><img src="../../../../images/logo.jpg" /></p>
+   </div>
+</div><!-- //header -->
+
+<body>
+<!--<script type="text/javascript"> 
+function ScrollImgLeft(){ 
+var speed=50; 
+var scroll_begin = document.getElementById("scroll_begin"); 
+var scroll_end = document.getElementById("scroll_end"); 
+var scroll_div = document.getElementById("scroll_div"); 
+scroll_end.innerHTML=scroll_begin.innerHTML; 
+function Marquee(){ 
+if(scroll_end.offsetWidth-scroll_div.scrollLeft<=0) 
+scroll_div.scrollLeft-=scroll_begin.offsetWidth; 
+else 
+scroll_div.scrollLeft++; 
+} 
+var MyMar=setInterval(Marquee,speed); 
+scroll_div.onmouseover=function() {clearInterval(MyMar);} 
+scroll_div.onmouseout=function() {MyMar=setInterval(Marquee,speed);} 
+} 
+</script> 
+-->
+<div id="gongao"> 
+<div style="width:700px;height:30px;margin:0 auto;white-space: nowrap;overflow:hidden;"> 
+<!--<div id="scroll_begin">-->
+
+  <MARQUEE scrollAmount=3 behavior=alternate onmouseover=this.stop() onmouseout=this.start()></MARQUEE>
+
+<!--</div> -->
+<!--<div id="scroll_end"></div> -->
+</div> 
+<!--<script type="text/javascript">ScrollImgLeft();</script> -->
+</div> 
+
+<!----
+<div id="codefans_net" style="position:absolute; background-color:#ffff99; font-size:16px;padding:5px;">招生在线咨询
+<a href="tencent://Message/?Menu=YES&Uin=747610552&websiteName=im.qq.com"><img src="../../../images/qq.gif" width="20"/>何老师</a>
+<br/>招生在线咨询
+<a href="tencent://Message/?Menu=YES&Uin=379910407&websiteName=im.qq.com"><img src="../../../images/qq.gif" width="20"/>钟老师</a>
+<br/>招生在线咨询
+<a href="tencent://Message/?Menu=YES&Uin=2246062169&websiteName=im.qq.com"><img src="../../../images/qq.gif" width="20"/>游老师</a>
+<!----
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2246062169&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2246062169:51" alt="点击这里给我发消息" title="点击这里给我发消息"/>游老师</a>
+-->
+<!----
+</div>
+-->
+<script> 
+var x = 50,y = 60 
+var xin = true, yin = true 
+var step = 1 
+var delay = 10 
+var obj=document.getElementById("codefans_net") 
+function float() { 
+var L=T=0
+var R= document.body.clientWidth-obj.offsetWidth 
+var B = document.body.clientHeight-obj.offsetHeight 
+obj.style.left = x + document.body.scrollLeft 
+obj.style.top = y + document.body.scrollTop 
+x = x + step*(xin?1:-1) 
+if (x < L) { xin = true; x = L} 
+if (x > R){ xin = false; x = R} 
+y = y + step*(yin?1:-1) 
+if (y < T) { yin = true; y = T } 
+if (y > B) { yin = false; y = B } 
+} 
+var itl= setInterval("float()", delay) 
+obj.onmouseover=function(){clearInterval(itl)} 
+obj.onmouseout=function(){itl=setInterval("float()", delay)} 
+</script>
+
+<div  class="index">
+  <div class="my_left_category">
+ 
+ <div class="my_left_cat_list">
+  
+  <div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+   <h3><a href="list.aspx?cid=1&page=1">多彩岭中</a></h3>
+   <div class="h3_cat">
+     <div class="shadow">
+     <div class="shadow_border">
+      <ul>
+         <li><a href="html/xxgk/xxjj/2012515/209.html">学校简介</a></li>
+		 <li><a href="list.aspx?cid=59&page=1">学校章程</a></li>
+         <li><a href="html/xxgk/xzfc/20171116/649.html">领导班子</a></li>
+         <li><a href="list.aspx?cid=9&page=1">办学成果</a></li>
+		 <li><a href="list.aspx?cid=34&page=1">科组简介</a></li>  
+         <li><a href="list.aspx?cid=10&page=1">校园剪影</a></li>
+         <li><a href="list.aspx?cid=11&page=1">校友之家</a></li>
+		 <li><a href="html/xxgk/women/201258/265.html">联系我们</a></li>
+      </ul>
+     </div>
+     </div>
+   </div>  
+  </div> 
+  <div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+   <h3><a href="list.aspx?cid=2&page=1">新闻中心</a></h3>
+   <div class="h3_cat">
+    <div class="shadow">
+     <div class="shadow_border">
+      <ul>
+       <li><a href="list.aspx?cid=12&page=1">校内通知</a></li>
+       <li><a href="list.aspx?cid=13&page=1">校园动态</a></li>
+       <li><a href="list.aspx?cid=14&page=1">校外新闻</a></li>
+      </ul>
+     </div>
+    </div> 
+   </div>  
+  </div> 
+  <div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+   <h3><a href="list.aspx?cid=3&page=1">师生园地</a></h3>
+   <div class="h3_cat">
+    <div class="shadow">
+     <div class="shadow_border">
+      <ul>
+     <li><a href="list.aspx?cid=15&page=1">名师荟萃</a></li>
+<li><a href="list.aspx?cid=16&page=1">教师风采</a></li>
+<li><a href="list.aspx?cid=17&page=1">学生园地</a></li>
+<li><a href="list.aspx?cid=18&page=1">校园之星</a></li>
+<li><a href="list.aspx?cid=19&page=1">工会活动</a></li>
+       
+      </ul>
+     </div>
+    </div> 
+   </div>  
+  </div> 
+   <div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+   <h3><a href="list.aspx?cid=4&page=1">教育科研</a></h3>
+   <div class="h3_cat">
+    <div class="shadow">
+     <div class="shadow_border">
+      <ul>
+ <li><a href="list.aspx?cid=20&page=1">教研动态</a></li>
+<li><a href="list.aspx?cid=21&page=1">教研成果</a></li>
+<li><a href="list.aspx?cid=22&page=1">学科教学</a></li>
+<li><a href="list.aspx?cid=23&page=1">学术交流</a></li>
+      </ul>
+     </div>
+    </div> 
+   </div>  
+  </div> 
+   <div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+   <h3><a href="list.aspx?cid=5&page=1">特色办学</a></h3>
+   <div class="h3_cat">
+    <div class="shadow">
+     <div class="shadow_border">
+      <ul>
+ <li><a href="list.aspx?cid=24&page=1">美术教学</a></li>
+<li><a href="list.aspx?cid=25&page=1">学生作品</a></li>
+<li><a href="list.aspx?cid=26&page=1">美术高考</a></li>
+<li><a href="list.aspx?cid=27&page=1">轮滑运动</a></li>
+<li><a href="list.aspx?cid=61&page=1">传媒小主持</a></li>
+      </ul>
+     </div>
+    </div> 
+   </div>  
+  </div> 
+   <div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+   <h3><a href="list.aspx?cid=6&page=1">德育管理</a></h3>
+   <div class="h3_cat">
+    <div class="shadow">
+     <div class="shadow_border">
+      <ul>
+<li><a href="list.aspx?cid=30&page=1">安全教育</a></li>
+<li><a href="list.aspx?cid=31&page=1">班级文化</a></li>
+<li><a href="list.aspx?cid=32&page=1">家长学校</a></li>
+<li><a href="list.aspx?cid=33&page=1">心灵驿站</a></li>
+<li><a href="list.aspx?cid=36&page=1">国旗下讲话</a></li>
+<li><a href="list.aspx?cid=37&page=1">团队活动</a></li>
+      </ul>
+     </div>
+    </div> 
+   </div>  
+  </div>
+   <div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+   <h3><a href="list.aspx?cid=51&page=1">廉园秀色</a></h3>
+   <div class="h3_cat">
+    <div class="shadow">
+     <div class="shadow_border">
+      <ul>
+<li><a href="list.aspx?cid=28&page=1">敬廉崇洁铸师魂</a></li>
+<li><a href="list.aspx?cid=53&page=1">崇廉尚洁漫画集</a></li>
+<li><a href="list.aspx?cid=54&page=1">廉洁名言警句</a></li>
+<li><a href="list.aspx?cid=55&page=1">廉洁古今史话</a></li>
+<li><a href="list.aspx?cid=56&page=1">廉洁春风满校园</a></li>
+<li><a href="list.aspx?cid=57&page=1">廉风化雨润桃李</a></li>
+<li><a href="list.aspx?cid=58&page=1">廉洁之花在绽放</a></li>
+<li><a href="list.aspx?cid=60&page=1">廉洁教育实践活动</a></li>
+      </ul>
+     </div>
+    </div> 
+   </div>  
+  </div>
+ <div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+   <h3><a href="list.aspx?cid=59&page=1">学校章程</a></h3>
+   <div class="h3_cat">
+    <div class="shadow">
+     <div class="shadow_border">
+	  </ul>
+     </div>
+    </div> 
+   </div>  
+  </div>
+  <div class="h2_cat" onmouseover="this.className='h2_cat active_cat'" onmouseout="this.className='h2_cat'">
+   <h3><a href="list.aspx?cid=62&page=1">党建工作</a></h3>
+   <div class="h3_cat">
+    <div class="shadow">
+     <div class="shadow_border">
+	  </ul>
+     </div>
+    </div> 
+   </div>  
+  </div>
+  
+<!-- again -->
+  
+<!--测试复制end-->  
+  </div>
+  
+ </div> 
+  
+  
+  <div id="index_flash" class="index_flash">
+      
+      <!-- size: 280px * 192px -->
+    
+ <script language='javascript'>
+linkarr = new Array();
+picarr = new Array();
+textarr = new Array();
+var swf_width=500;
+var swf_height=339;
+var files = "";
+var links = "";
+var texts = "";
+//这里设置调用标记
+
+linkarr[1] = "/html/html/djgz/2018510/674.html";
+picarr[1]  = "/upload/images/2018/05/10/2018051010492封面.JPG";
+textarr[1] = "广州市岭南画派纪念中学观看观看马克思诞辰200周年纪念大会简报";
+
+linkarr[2] = "/html/xwzx/xydt/2018510/673.html";
+picarr[2]  = "/upload/images/2018/05/10/20180510102714封面图.jpg";
+textarr[2] = "岭中教师迎五一，红歌唱响十九大";
+
+linkarr[3] = "/html/xwzx/xydt/2018510/672.html";
+picarr[3]  = "/upload/images/2018/05/10/2018051091828封面.JPG";
+textarr[3] = "不忘初心，立德树人2017年新教师培训总结大会";
+
+linkarr[4] = "/html/xwzx/201859/671.html";
+picarr[4]  = "/upload/images/2018/05/09/20180509164236封面.JPG";
+textarr[4] = "春芽初发，学农正当时——广州市岭南画派纪念中学2017届高一级学农综合实践活动";
+
+linkarr[5] = "/html/xwzx/xwxw/201813/663.html";
+picarr[5]  = "/upload/images/2018/01/03/2018010312318{IIJ5AE6UPUIT$0I@}IAE44.png";
+textarr[5] = "同绘岭南春  聚力新未来——广佛阳三地四校师生交流活动";
+
+linkarr[6] = "/html/html/djgz/20171229/662.html";
+picarr[6]  = "/upload/images/2017/12/29/2017122915438QQ图片20171225113854.jpg";
+textarr[6] = "《习近平谈治国理政》（第二卷）学习交流活动";
+
+linkarr[7] = "/html/html/djgz/20171225/661.html";
+picarr[7]  = "/upload/images/2017/12/25/201712251445481D6A1859.JPG";
+textarr[7] = "党员的楷模 学习的榜样 ——广州市岭南画派纪念中学学习《习近平的七年知青岁月》";
+
+linkarr[8] = "/html/tsjx/2017126/660.html";
+picarr[8]  = "/upload/images/2017/12/06/2017120610221封面图.jpg";
+textarr[8] = "广东省轮滑球锦标赛圆满落幕，岭中轮滑球队再获佳绩";
+
+linkarr[9] = "/html/xwzx/2017126/659.html";
+picarr[9]  = "/upload/images/2017/12/06/20171206954611111111111111.jpg";
+textarr[9] = "夺取新时代中国特色社会主义伟大胜利——热烈庆祝中国共产党第十九次全国代表大会胜利召开";
+
+linkarr[10] = "/html/html/djgz/20171120/652.html";
+picarr[10]  = "/upload/images/2017/11/20/2017112095138201711161448383.png";
+textarr[10] = "把握新时代中国共产党的历史使命";
+
+for(i=1;i<picarr.length;i++){
+  if(files=="") files = picarr[i];
+  else files += "|"+picarr[i];
+}
+for(i=1;i<linkarr.length;i++){
+  if(links=="") links = linkarr[i];
+  else links += "|"+linkarr[i];
+}
+for(i=1;i<textarr.length;i++){
+  if(texts=="") texts = textarr[i];
+  else texts += "|"+textarr[i];
+}
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+document.write('<param name="movie" value="/images/bcastr3.swf"><param name="quality" value="high">');
+document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'">');
+document.write('<embed src="/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'& menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>'); 
+</script>
+       
+    <!-- /flashnews -->
+  </div>
+  <div id="index_content" class="index_content">
+  <div class='newarticle'><font face="方正美黑简体" color="#ab342a" size="3">最新报道</font></div>
+  <ul class="d1 ico3">
+      <!--最新文档-->
+     
+      <li><a href="/html/xwzx/xwxw/2018520/675.html" target="_blank" title="2018年高中独立批美术特色生招生方案">2018年高中独立批美术特色生招生方案(5-20) </a></li>
+      
+      <li><a href="/html/html/djgz/2018510/674.html" target="_blank" title="广州市岭南画派纪念中学观看观看马克思诞辰200周年纪念大会简报">广州市岭南画派纪念中学观看观看马克思诞辰200周年纪念大会简报(5-10) </a></li>
+      
+      <li><a href="/html/xwzx/xydt/2018510/673.html" target="_blank" title="岭中教师迎五一，红歌唱响十九大">岭中教师迎五一，红歌唱响十九大(5-10) </a></li>
+      
+      <li><a href="/html/xwzx/xydt/2018510/672.html" target="_blank" title="不忘初心，立德树人2017年新教师培训总结大会">不忘初心，立德树人2017年新教师培训总结大会(5-10) </a></li>
+      
+      <li><a href="/html/xwzx/201859/671.html" target="_blank" title="春芽初发，学农正当时——广州市岭南画派纪念中学2017届高一级学农综合实践活动">春芽初发，学农正当时——广州市岭南画派纪念中学2017届高一级学农综合实践活动(5-9) </a></li>
+      
+      <li><a href="/html/html/djgz/2018411/670.html" target="_blank" title="广州市岭南画派纪念中学党总支组织学习宣传贯彻习近平总书记重要讲话精神">广州市岭南画派纪念中学党总支组织学习宣传贯彻习近平总书记重要讲话精神(4-11) </a></li>
+      
+      <li><a href="/html/html/djgz/2018410/669.html" target="_blank" title="纪念周恩来，习近平说的这些金句直抵人心">纪念周恩来，习近平说的这些金句直抵人心(4-10) </a></li>
+      
+      <li><a href="/html/html/djgz/201832/668.html" target="_blank" title="纪念周恩来，习近平说的这些金句直抵人心">纪念周恩来，习近平说的这些金句直抵人心(3-2) </a></li>
+      
+      <li><a href="/html/html/djgz/2018224/667.html" target="_blank" title="习近平新时代中国特色社会主义思想之“新”">习近平新时代中国特色社会主义思想之“新”(2-22) </a></li>
+      
+      <li><a href="/html/html/djgz/2018224/666.html" target="_blank" title="习近平全票当选">习近平全票当选(1-31) </a></li>
+      
+      <li><a href="/html/html/djgz/2018224/665.html" target="_blank" title="谱写新时代改革新篇章">谱写新时代改革新篇章(2-23) </a></li>
+      
+      <!--//最新文档-->
+      </ul>
+	  </div>
+  </div>
+
+</div>
+
+</body>
+<!-- //底部模板 -->
+<div  class="footer">
+  <div id="footer_copyright" class="footer_copyright">&nbsp;版权所有&nbsp;&nbsp;岭南画派纪念中学&nbsp;</div>
+  <div id="footer_beian" class="footer_beian">
+    <p>copyright @ 2014  All Rights Reserved 粤ICP备12036895号-1</p>
+    
+  </div>
+  <div id="footer_contactusback" class="footer_contactusback">
+     <div  class="footer_contactus1">
+       <a href="http://www.lnms.net.cn/html/xxgk/women/201258/265.html" target="_blank">联系我们</a>
+     </div>
+	 <div class="footer_contactus1">
+       中文
+     </div>
+	 
+  
+  </div>
+	
+</div>
+</html>
+
+<!-- /footer -->

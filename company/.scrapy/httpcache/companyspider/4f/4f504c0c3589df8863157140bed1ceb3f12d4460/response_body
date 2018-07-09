@@ -1,0 +1,1274 @@
+
+
+<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="keywords" content="网站管理系统">
+<title>济宁市育才中学</title>
+<LINK href=news.css rel=stylesheet>
+<!--link rel="Shortcut Icon" href="codes.ico"><IE地址栏前换成自己的图标--> 
+<!--link rel="Bookmark" href="codes.ico"><可以在收藏夹中显示出你的图标-->
+
+<script language="JavaScript">
+var pngbrOK=false;
+var mie=false;
+var aver=parseInt(navigator.appVersion.substring(0,1));
+var aname=navigator.appName;
+var pngmystop=0;
+
+function pngcheckbrOK()
+{if(aname.indexOf("Internet Explorer")!=-1)
+{if(aver>=4) pngbrOK=navigator.javaEnabled();
+mie=true;
+}
+if(aname.indexOf("Netscape")!=-1)  
+{if(aver>=4) pngbrOK=navigator.javaEnabled();}
+}
+var vmin=2;
+var vmax=5;
+var vr=2;
+var timer1;
+
+function pngchip(chipname,width,height)
+{
+this.named=chipname;
+this.vx=vmin+vmax*Math.random();
+this.vy=vmin+vmax*Math.random();
+this.w=width;
+this.h=height;
+this.xx=0;
+this.yy=0;
+this.timer1=null;
+}
+
+function pngmovechip(chipname)
+{
+if(pngbrOK && pngmystop==0)
+{eval("pngchip="+chipname);
+if(!mie)
+{pageX=window.pageXOffset;
+pageW=window.innerWidth;
+pageY=window.pageYOffset;
+pageH=window.innerHeight;
+}
+else
+{pageX=window.document.body.scrollLeft;
+pageW=window.document.body.offsetWidth-8;
+pageY=window.document.body.scrollTop;
+pageH=window.document.body.offsetHeight;
+} 
+pngchip.xx=pngchip.xx+pngchip.vx;
+pngchip.yy=pngchip.yy+pngchip.vy;
+pngchip.vx+=vr*(Math.random()-0.5);
+pngchip.vy+=vr*(Math.random()-0.5);
+if(pngchip.vx>(vmax+vmin))  pngchip.vx=(vmax+vmin)*2-pngchip.vx;
+if(pngchip.vx<(-vmax-vmin)) pngchip.vx=(-vmax-vmin)*2-pngchip.vx;
+if(pngchip.vy>(vmax+vmin))  pngchip.vy=(vmax+vmin)*2-pngchip.vy;
+if(pngchip.vy<(-vmax-vmin)) pngchip.vy=(-vmax-vmin)*2-pngchip.vy;
+if(pngchip.xx<=pageX)
+{pngchip.xx=pageX;
+pngchip.vx=vmin+vmax*Math.random();
+}
+if(pngchip.xx>=pageX+pageW-pngchip.w)
+{pngchip.xx=pageX+pageW-pngchip.w;
+pngchip.vx=-vmin-vmax*Math.random();
+}
+if(pngchip.yy<=pageY)
+{pngchip.yy=pageY;
+pngchip.vy=vmin+vmax*Math.random();
+}
+if(pngchip.yy>=pageY+pageH-pngchip.h)
+{pngchip.yy=pageY+pageH-pngchip.h;
+pngchip.vy=-vmin-vmax*Math.random();
+}
+if(!mie)
+{eval('document.'+pngchip.named+'.top ='+pngchip.yy);
+eval('document.'+pngchip.named+'.left='+pngchip.xx);
+} 
+else
+{eval('document.all.'+pngchip.named+'.style.pixelLeft='+pngchip.xx);
+eval('document.all.'+pngchip.named+'.style.pixelTop ='+pngchip.yy); 
+}
+ pngchip.timer1=setTimeout("pngmovechip('"+pngchip.named+"')",100);
+}
+}
+function pngstop(x)
+{
+pngbrOK=true;
+pngmystop=x;
+pngmovechip("pngtome");
+}
+var pngtome;
+var pngchip;
+function pngtome()
+{pngcheckbrOK(); 
+pngtome=new pngchip("pngtome",80,80);
+if(pngbrOK) 
+{ pngmovechip("pngtome");
+}
+}
+
+ns4=(document.layers)?true:false;
+ie4=(document.all)?true:false;
+
+<!--document.write("<div align=center id='pngtome' style='position:absolute;'><a href='ReadNews.asp?NewsID=3710' target=_blank><img src='/images/2015.gif' border=0 id='myimg'></a>"+"</div>");//-->
+pngtome()
+
+function exchangeImg() {
+  var imgobj = document.getElementById('myimg');
+  if (imgobj != null) {
+    if (imgobj.src == 'images/2016.gif'){
+   imgobj.src = 'images/0002.png'
+ }
+ else {
+   imgobj.src = 'images/2016.gif'
+ }
+  }
+  var timer1 = setTimeout('exchangeImg()', 1000); 
+}
+
+exchangeImg();
+</script>
+
+
+
+<script language="JavaScript">
+<!--
+if (self != top) top.location.href = window.location.href
+//-->
+</script>
+<script language=JavaScript>
+<!--
+//
+var version = "other"
+browserName = navigator.appName;   
+browserVer = parseInt(navigator.appVersion);
+if (browserName == "Netscape" && browserVer >= 3) version = "n3";
+else if (browserName == "Netscape" && browserVer < 3) version = "n2";
+else if (browserName == "Microsoft Internet Explorer" && browserVer >= 4) version = "e4";
+else if (browserName == "Microsoft Internet Explorer" && browserVer < 4) version = "e3";
+function marquee1()
+{
+	if (version == "e4" | version == "n3")
+	{
+		document.write("<marquee style='BOTTOM: 0px; FONT-WEIGHT: 100px; HEIGHT:150px;  TEXT-ALIGN: left; TOP: 0px' id='news' scrollamount='1' scrolldelay='10' behavior='loop' direction='up' border='0' onmouseover='this.stop()' onmouseout='this.start()'>")
+	}
+}
+
+function marquee2()
+{
+	if (version == "e4" | version == "n3")
+	{
+		document.write("</marquee>")
+	}
+}
+
+function marquee_logo_news()
+{
+	if (version == "e4")
+	{
+		document.write("<marquee style='BOTTOM: 0px; FONT-WEIGHT: 1200px; HEIGHT:31px;  TEXT-ALIGN: left; TOP: 0px' id='link_map' scrollamount='2' scrolldelay='10' behavior='alternate' direction='right' border='0' onmouseover='this.stop()' onmouseout='this.start()'>")
+	}
+}
+
+function marquee3()
+{
+	if (version == "e4" | version == "n3")
+	{
+		document.write("<marquee direction='left' border='0' onmouseover='this.stop()' onmouseout='this.start()'>")
+	}
+}
+
+function marquee4()
+{
+	if (version == "e4" | version == "n3")
+	{
+		document.write("</marquee>")
+	}
+}
+
+function marquee5()
+{
+	if (version == "e4" | version == "n3")
+	{
+		document.write("<marquee style='BOTTOM: 0px; FONT-WEIGHT: 100px; HEIGHT:100px;  TEXT-ALIGN: left; TOP: 0px' id='news' scrollamount='1' scrolldelay='10' behavior='loop' direction='up' border='0' onmouseover='this.stop()' onmouseout='this.start()'>")
+	}
+}
+
+function marquee6()
+{
+	if (version == "e4" | version == "n3")
+	{
+		document.write("</marquee>")
+	}
+}
+
+//-->
+</script>
+<script language="JavaScript1.2">
+function makevisible(cur,which){
+if (which==0)
+cur.filters.alpha.opacity=100
+else
+cur.filters.alpha.opacity=20
+}
+</script>
+
+<script LANGUAGE="javascript">
+<!--
+function checkdata()
+{
+if (document.user.UserName.value=="")
+	{
+	  alert("对不起，请输入您的论坛用户名！");
+	  document.user.UserName.focus();
+	  return false;
+	 }
+else if (document.user.Password.value=="")
+	{
+	  alert("对不起，请输入您的论坛密码！");
+	  document.user.Passwd.focus();
+	  return false;
+	 }
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+//-->
+</script>
+
+<style type="text/css">
+.style1 {font-size: 12pt}
+.style5 {font-size: 10px}
+.style7 {font-size: 10pt}
+</style>
+</head>
+<body topmargin="0" >
+
+
+<!--include file="char.inc"-->
+
+<script language=javascript>
+function CheckFormUserLogin()
+{
+	if(document.UserLogin.UserName.value=="")
+	{
+		alert("请输入用户名！");
+		document.UserLogin.UserName.focus();
+		return false;
+	}
+	if(document.UserLogin.Passwd.value == "")
+	{
+		alert("请输入密码！");
+		document.UserLogin.Passwd.focus();
+		return false;
+	}
+	if(document.UserLogin.verifycode.value == "")
+	{
+		alert("请输入验证码！");
+		document.UserLogin.verifycode.focus();
+		return false;
+	}
+}
+</script>
+<SCRIPT language="JavaScript" type="text/javascript">
+    // Begin morelink
+      function morelink(morelink)
+      {
+        url = 'MoreLink.asp?linktype=1';
+        window.open(url,morelink);
+      }
+    // End morelink-->
+ // Begin linkreg
+      function linkreg(linkreg)
+      {
+        url = 'LinkReg.asp';
+        window.open(url,linkreg);
+      }
+    // End linkreg-->
+// Begin vote
+      function vote(vote)
+      {
+        url = 'Vote.asp?stype=view';
+        window.open(url,vote);
+      }
+    // End vote-->
+// Begin adduser
+      function adduser(adduser)
+      {
+        url = 'AddUser.asp';
+        window.open(url,adduser);
+      }
+    // End adduser-->
+// Begin getpwd
+      function getpwd(getpwd)
+      {
+        url = 'GetPwd.asp';
+        window.open(url,getpwd);
+      }
+    // End getpwd-->
+</script>
+
+
+
+
+<head>
+<link href="News.css" rel="stylesheet" type="text/css" />
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<style type="text/css">
+<!--
+.STYLE3 {
+	color: #FF6600;
+	font-size: 10pt;
+	font-weight: bold;
+	font-family: "宋体";
+}
+.STYLE6 {
+	color: #FFFFFF;
+	font-size: 24pt;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id=menuDiv style='Z-INDEX: 2; VISIBILITY: hidden; WIDTH: 1px; POSITION: absolute; HEIGHT: 1px; BACKGROUND-COLOR: #9cc5f8'></div>
+<!--两侧广告开始-->
+
+	<script src="clearevents.js"></script>
+	
+
+<!--两侧广告结束-->
+<table width="925" height="30" border="0" cellspacing="0" cellpadding="0" align="center">
+
+<tr>
+  <td height="66" colspan="2" background="IMAGES/sky_02.jpg" style="padding-left:40px;">
+  
+  <table width="100%" align="center" cellpadding="0" cellspacing="0">
+    <tr><td width="339">
+  <script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','66','height','66','src','image/globe','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','wmode','transparent','movie','image/globe' ); //end AC code
+</script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="66" height="66">
+  <param name="movie" value="image/globe.swf">
+  <param name="quality" value="high">
+  <param name="wmode" value="transparent">
+  <embed src="image/globe.swf" width="66" height="66" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" wmode="transparent"></embed>
+</object>
+</noscript></td><td width="544">
+  <div align="right"><img src="image/banner0.gif">
+  </div></td>
+  </tr></table>
+</td>
+</tr><form method="post" name="myform" action="Result.asp" target="newwindow"><tr><td width="624" height="26" background="IMAGES/sky_04.jpg" style="padding-left:128px; color:#33CCFF"><marquee scrollamount=3 FONT style="FILTER: Shadow(color=#000000,direction=45); HEIGHT: 10pt;font-size:25pt" face="隶书" color=#009900>
+<span class="STYLE3">济宁市育才中学为国办高级中学，直属济宁市教育局领导，现为山东省省级规范化学校、山东省首批高中教学示范学校、山东省中小学素质教育工作先进单位、山东省师德建设先进集体、山东省文明单位、山东省学校民主管理先进单位、全国教育教研管理工作先进单位、北京大学优秀生源基地、清华大学优秀生源基地，连续十余年获济宁市高中教育教学工作先进单位。  济宁市育才中学热诚欢迎您的到来!</span>
+</marquee></td>
+      <td width="281" background="IMAGES/sky_05.jpg" valign="top" style="padding-bottom:2px;"><input name="keyword" type="text" style=" background:none; border:0;width:70px;height:18px; margin-left:40px; margin-top:1px;"onfocus="if (value =='关键字'){value =''}"onblur="if (value ==''){value='关键字'}" value="关键字" size="30" maxlength="30">
+        <select name="action" style="border:1 solid #CCD5F9; font-size:9pt; background-color:#EAEAF4;"　size="1">
+      <option selected value="">全部内容</option>
+      <option value="title">按标题</option>
+      <option value="content">按内容</option>
+	  <option value="editor">按作者</option>
+	  <option value="about">按关键字</option>
+	  </select><input type="submit" style="background:url(IMAGES/sky_06.jpg); border:0;width:65px; height:22px;" value=""></td>
+</tr></form>
+<tr>
+  <td colspan="2"><table width="925" height="23" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="925" height="41" background="IMAGES/sky_07.jpg"><!--%
+dim menuid
+dim menuname
+dim menucontent
+dim menuview
+set rs=server.CreateObject("ADODB.RecordSet")
+rs.Source="select * from type order by typeorder"
+rs.Open rs.Source,conn,1,1
+i=1
+Dim ArraymenuID(1000),ArraymenuName(1000)
+while not rs.EOF
+RecordCount=rs.RecordCount
+menuid=rs("typeid")
+menuname=rs("typename")
+menucontent=rs("typecontent")
+menuview=rs("typeview")
+TdString="<font color='#396104'>||</font>&nbsp;<a href='type.asp?typeID="& menuid &" 'class=top9 title='"& menucontent &"' class='top9'>"& menuName &"</a>" 
+Response.Write TdString
+ArraymenuID(i)=menuID
+ArraymenuName(i)=menuName
+i=i+1
+rs.MoveNext
+wend
+rs.close
+set rs=nothing
+%-->
+          
+<table border=0 cellpadding=0 cellspacing=0 width="100%" align="left">
+<tbody> 
+<tr> 
+	<td class="top">
+<span style=' height:12px;color=#FFFFFF'> &nbsp;</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=5' id=menu1 title='学校概况'>学校概况</a>|</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=44' id=menu2 title='领导讲话'>领导讲话</a>|</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=23' id=menu3 title='校园速递'>校园速递</a>|</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=28' id=menu4 title='教学科研'>教学科研</a>|</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=36' id=menu5 title='处室主页'>处室主页</a>|</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=29' id=menu6 title='教师风采'>教师风采</a>|</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=30' id=menu7 title='学生社团'>学生社团</a>|</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=31' id=menu8 title='党建平台'>党建平台</a>|</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=32' id=menu9 title='教工之家'>教工之家</a>|</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=33' id=menu10 title='招考信息'>招考信息</a>|</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=34' id=menu11 title='友好交流'>友好交流</a>|</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=40' id=menu12 title='家校平台'>家校平台</a>|</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=41' id=menu13 title='新疆部'>新疆部</a>|</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=42' id=menu14 title='国际部'>国际部</a>|</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=43' id=menu15 title='纪委专栏'>纪委专栏</a>|</span>
+<span style=' height:12px;color=#FFFFFF'><a class=MenuType href='Type.asp?TypeId=37' id=menu16 title='校友风采'>校史办</a>|</span>
+
+	</td>
+</tr>
+</tbody> 
+</table>
+</td>
+      <!-- 改变菜单位置-->
+          </tr>
+  </table></td>
+</tr>
+</table>
+<!--菜单结束-->  
+
+
+<!--以下为新INDEX2.ASP的内容------------------------------------------------------------------------------------------>
+<table width="925" border="0" align="center"  cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" height="244" >
+  <tr bgcolor="#FFFFFF"> 
+    <td colspan="2"valign="top" height="180"><style type="text/css"> 
+<!-- 
+#scrollWrap {    
+ width:250px;   
+ height: 18px;    
+ overflow: hidden;      
+}   
+#scrollMsg {    
+ float: left;    
+ text-align: left;   
+  padding:0 10px;   
+}  
+#scrollMsg ul {   
+  margin:0;   
+  padding:0;   
+}  
+#scrollMsg li {    
+ line-height: 18px;    
+  list-style:none;   
+}    
+--> 
+</style>
+<table height="96" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="634" height="185" valign="top" background="IMAGES/sky_09.jpg" bgcolor="#FFFFFF"> 
+      <table border="0" cellpadding="0" cellspacing="0" height="149"><tr><td height="169"><table border="0" cellpadding="0" cellspacing="0" height="149" style="padding-left:1px;">
+        <tr>
+          <td><a href="about.asp" target="_blank"></a></td>
+        </tr>
+      </table></td>
+        </tr>
+</table>
+    </td>
+    <td width="291" height="185" valign="top" background="IMAGES/sky_10.jpg"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0"  height="61">
+        <tr>
+          <td height="150" valign="top" >
+                 
+                    <ul style="list-style:none; margin-left:30px; margin-top:15px; margin-bottom:0px; ">
+                   
+                           <li style="height:28px;"> <a  href="Board_news.asp?id=290" target="_blank"> 育才中学“国际班”2018年招生啦
+                                <img src="new.gif" border="0">
+                                
+                              </a></li>
+                       
+                              
+                           <li style="height:28px;"> <a  href="Board_news.asp?id=289" target="_blank"> 2018年济宁市育才中学高一新生招生说…
+                                <img src="new.gif" border="0">
+                                
+                              </a></li>
+                       
+                              
+                           <li style="height:28px;"> <a  href="Board_news.asp?id=288" target="_blank"> 济宁市育才中学2018年特长生招生简章
+                              </a></li>
+                       
+                              
+                           <li style="height:28px;"> <a  href="Board_news.asp?id=287" target="_blank"> 2018年夏季普通高中学业水平考试报名
+                              </a></li>
+                       
+                              
+                           <li style="height:28px;"> <a  href="Board_news.asp?id=286" target="_blank"> 济宁市育才中学2018年优质课评选办法
+                              </a></li>
+                       
+                              </ul>
+                         
+                            </td>
+        </tr>
+        <tr>
+          <td height="28" align="left" valign="middle" >
+		  
+<!--		  
+		  <script type="text/javascript"> 
+var speed=45
+gg2.innerHTML=gg1.innerHTML 
+function Marquee(){ 
+if(gg2.offsetTop-gg.scrollTop<=0) 
+gg.scrollTop-=gg1.offsetHeight 
+else{ 
+gg.scrollTop++ 
+} 
+} 
+var MyMar=setInterval(Marquee,speed) 
+gg.onmouseover=function() {clearInterval(MyMar)} 
+gg.onmouseout=function() {MyMar=setInterval(Marquee,speed)} 
+</script>
+	-->	  
+		  
+            <div id="mq" style="width=220px; float:left;height:17px;overflow:hidden" onmouseover="iScrollAmount=0" 
+onmouseout="iScrollAmount=1"> 
+<ul style="list-style:none">
+      
+                 <li>  <iframe src="http://m.weather.com.cn/m/p1/weather1.htm" width="190" height="18" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="No" style="overflow:hidden"></iframe></li>
+<li><a href="tel.asp" target="_blank">实用查询：办公电话</a></li> <li><a href="http://www.hao123.com/ss/lccx.htm" target="_blank">实用查询：列车时刻</a></li><li><a href="http://www.hao123.com/ss/fy.htm" target="_blank">实用查询：在线翻译</a></li>
+
+          
+          <li><a  href="Board_news.asp?id=15" target="_blank"> 济宁市育才中学作息时间表</a></li>
+          
+          <li><a  href="Board_news.asp?id=20" target="_blank"> 济宁市育才中学收费标准公示</a></li>
+          
+        </ul>
+</div> <div style="width:60px; float:right"><a href="/board.asp">更多...</a></div>
+<script> 
+var oMarquee = document.getElementById("mq"); //滚动对象 
+var iLineHeight = 17; //单行高度，像素 
+var iLineCount = 6; //实际行数 
+var iScrollAmount = 1; //每次滚动高度，像素 
+function run() { 
+oMarquee.scrollTop += iScrollAmount; 
+if ( oMarquee.scrollTop == iLineCount * iLineHeight ) 
+oMarquee.scrollTop = 0; 
+if ( oMarquee.scrollTop % iLineHeight == 0 ) { 
+window.setTimeout( "run()", 2000 ); 
+} else { 
+window.setTimeout( "run()", 50 ); 
+} 
+} 
+oMarquee.innerHTML += oMarquee.innerHTML; 
+window.setTimeout( "run()", 2000 ); 
+</script>                     </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+ </td><tr> 
+    <td valign="top"> <style type="text/css">
+<!--
+.STYLE1 {color: #FF0000}
+-->
+</style>
+<table width="925" border="0" cellpadding="0" cellspacing="0" bgcolor="#F4F4F4">
+  <tr> 
+    <td> 
+
+<table width="634" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="42" colspan="2" valign="bottom" background="IMAGES/sky_11.jpg"><script language=JavaScript type=text/JavaScript>
+var pic_index=1;
+var max_index=2;
+var inter=null;
+inter=setInterval;
+function changeall() {
+for (i=1;i<3;i++) {
+eval("tb"+i).style.display="none";
+eval("bt"+i).src="image/news_bt"+i+"1.gif";
+}
+}
+function change(a) {
+changeall();
+pic_index=a;
+eval("tb"+a).style.display="";
+eval("bt"+a).src="image/news_bt"+a+"2.gif";
+}
+
+function writeNewsImage(url, img) {	
+	var str = '<a href='+url;
+		if (-1 < url.indexOf("(") || -1 < url.indexOf("javascript:") )		
+			str+=' target=_self>';
+		else
+			str+=' target=_blank>';
+		str+='<img src='+img+' width=417 height=99 border=0 onmouseout="inter=setInterval"  onmouseover="clearInterval(inter)" /></a>';
+		document.write(str);
+}
+function writeNewsTitle(url, des) {
+	var str = '<a href='+url;
+	if (-1 < url.indexOf("(") || -1 < url.indexOf("javascript:") )
+		str+=' target=_self ';
+	else
+		str+=' target=_blank ';
+	str += ' class=news0601 onmouseout="javascript:inter=setInterval" onmouseover="clearInterval(inter)" >';
+	str += des;
+	str += '</a>';
+	document.write(str);
+}
+        </script><table height=8 cellspacing=0 cellpadding=0 
+                              width=100% border=0>
+              <tbody> 
+              <tr> 
+                <td width=261 height="2">&nbsp;</td>
+                <td width=76 height="2"><img id=bt1 
+                                onMouseOver=javascript:clearInterval(inter);change(1) 
+                                style="CURSOR: hand" 
+                                onMouseOut=javascript:inter=setInterval; 
+                                height=26 
+                                src="image/news_bt12.gif" width=76 
+                                border=0 name=bt1></td>
+                <td width=76 height="2">
+								<a href="/Type.asp?TypeId=23" target="_blank"><img id=bt2 
+                                onMouseOver=javascript:clearInterval(inter);change(2) 
+                                style="CURSOR: hand" 
+                                onMouseOut=javascript:inter=setInterval; 
+                                height=26 
+                                src="image/news_bt21.gif" width=76 
+                                border=0 name=bt2></a>
+								</td>
+                <!--
+				<td width=76 height="2"><img id=bt3 
+                                onMouseOver=javascript:clearInterval(inter);change(3) 
+                                style="CURSOR: hand" 
+                                onMouseOut=javascript:inter=setInterval; 
+                                height=26 
+                                src="image/news_bt31.gif" width=76 
+                                border=0 name=bt3></td> //-->
+				<td height="2">&nbsp;</td>
+              </tr>
+             
+              </tbody> 
+    </table></td>
+  </tr>
+  <tr> 
+    <td width="231" background="IMAGES/sky_13.jpg">
+	
+	
+	
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" > 
+<tr> <td height="160" align="center"  valign="top" > 
+	<script type="text/javascript">
+	<!--
+	
+	var focus_width=222
+	var focus_height=163
+	var text_height=30
+	var swf_height = focus_height+text_height
+	
+	
+	var pics='edit/UploadFile/201852516245582.jpg|/edit/UploadFile/201852512755622.jpg|edit/UploadFile/201852316551564.jpg|/edit/UploadFile/2018518165522784.jpg'
+	var links='readnews.asp?newsid=4374|readnews.asp?newsid=4373|readnews.asp?newsid=4372|readnews.asp?newsid=4370'
+	var texts='全省创客大赛：我校获得全市高|我校今年第一次上线《政风行风|我校“文化讲堂”开讲：历史上|我校学生会主席张天一同学当选'	
+	document.write('<object ID="focus_flash" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">');
+	document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="pixviewer.swf"><param name="quality" value="high"><param name="bgcolor" value="#ffffff">');
+	document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+	document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+	document.write('<embed ID="focus_flash" src="pixviewer.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false"  quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');		
+	document.write('</object>');
+	
+	//-->
+	</script>
+</td></tr> 
+</table>
+	
+	
+		
+		
+		<!--<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="163" valign="top">
+		<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" type="text/javascript"></script> 
+		<script language=JavaScript>
+var imgUrl=new Array();
+var imgLink=new Array();
+var imgtext=new Array();
+var adNum=0;
+
+imgUrl[1]="edit/UploadFile/201852516245582.jpg";
+imgtext[1]="全省创客大赛：我校获得全市高";
+imgLink[1]="readnews.asp?newsid=4374";
+
+imgUrl[2]="/edit/UploadFile/201852512755622.jpg";
+imgtext[2]="我校今年第一次上线《政风行风";
+imgLink[2]="readnews.asp?newsid=4373";
+
+imgUrl[3]="edit/UploadFile/201852316551564.jpg";
+imgtext[3]="我校“文化讲堂”开讲：历史上";
+imgLink[3]="readnews.asp?newsid=4372";
+
+imgUrl[4]="/edit/UploadFile/2018518165522784.jpg";
+imgtext[4]="我校学生会主席张天一同学当选...";
+imgLink[4]="readnews.asp?newsid=4370";
+
+imgUrl[5]="edit/UploadFile/2018516171753377.jpg";
+imgtext[5]="沟通，从讲好普通话开始";
+imgLink[5]="readnews.asp?newsid=4369";
+
+imgUrl[6]="edit/UploadFile/2018515155929970.jpg";
+imgtext[6]="让退休干部生活得更充实、更快";
+imgLink[6]="readnews.asp?newsid=4367";
+
+imgUrl[7]="edit/UploadFile/2018515172937153.jpg";
+imgtext[7]="我校举行“铸诚信品质，做文明...";
+imgLink[7]="readnews.asp?newsid=4366";
+
+imgUrl[8]="edit/UploadFile/201851411654345.jpg";
+imgtext[8]="我校2018年优质课评选活动";
+imgLink[8]="readnews.asp?newsid=4362";
+
+var imgPre=new Array();
+var count=0;
+for (i=1;i<=4;i++) {
+	if( (imgUrl[i]!="") && (imgLink[i]!="") ) {
+		count++;
+	} else {
+		break;
+	}
+}
+function playTran(){
+	if (document.all)
+		imgInit.filters.revealTrans.play();
+}
+var key=0;
+function nextAd(){
+	if(adNum<count)adNum++ ;
+	else adNum=1;
+	
+	if( key==0 ){
+		key=1;
+	} else if (document.all){
+		imgInit.filters.revealTrans.Transition=23;
+		imgInit.filters.revealTrans.apply();
+                   playTran();
+
+	}
+	document.images.imgInit.src=imgUrl[adNum];
+        focustext.innerHTML="<a href="+imgLink[adNum]+" target=_blank>"+imgtext[adNum]+"</a>";
+		setTimeout("nextAd()", 5000); //控制时间
+}
+
+function nextAd2(){
+	if(adNum<count)adNum++ ;
+	else adNum=1;
+	
+	if( key==0 ){
+		key=1;
+	} else if (document.all){
+		imgInit.filters.revealTrans.Transition=10;
+		imgInit.filters.revealTrans.apply();
+                   playTran();
+
+	}
+	document.images.imgInit.src=imgUrl[adNum];
+        focustext.innerHTML="<a href="+imgLink[adNum]+" target=_blank>"+imgtext[adNum]+"</a>";
+		
+}
+function prondAd(){
+	if(adNum>1)adNum-- ;
+	else adNum=4;
+	
+	if( key==0 ){
+		key=1;
+	} else if (document.all){
+		imgInit.filters.revealTrans.Transition=10;
+		imgInit.filters.revealTrans.apply();
+                   playTran();
+
+	}
+	document.images.imgInit.src=imgUrl[adNum];
+        focustext.innerHTML="<a href="+imgLink[adNum]+" target=_blank>"+imgtext[adNum]+"</a>";
+		
+}
+function goUrl(){
+window.open(imgLink[adNum],'_blank');
+}
+</script>
+<div class="table">
+<div class="table_1_1">
+<div class="table_1_1_pic" style="padding-left:12px; padding-top:2px;">
+<a href="javascript:goUrl()"><img style="FILTER: revealTrans(duration=1,transition=5); border:0;color:#000000; " src="javascript:nextAd()" width="212" height="155"  name="imgInit"></a>
+</div>
+<div class="table_1_1_pic"><div class="table_1_1_title"></div></div>
+
+</div>
+</div></td>
+      </tr>
+      <tr>
+        <td height="26" background="IMAGES/sky_18.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="focustext"></span></td>
+      </tr>
+    </table>-->
+	
+	
+	
+	</td>
+    <td width="403" height="189" valign="top" background="IMAGES/sky_14.jpg"><table height=92 cellspacing=0 cellpadding=0 border=0 style=" padding:10px;padding-left:15px;">
+                <tbody>
+                  <tr>
+                    <td valign=top height="89">
+                        <table id=tb1  height=31 
+                                cellspacing=0 cellpadding=0 border=0>
+                          <tbody>
+                            <tr>
+                              <td><table  class=gongyou cellspacing=0 cellpadding=0 
+                  border=0 height="35">
+                              
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4374" title="
+       
+       
+   &nbsp;&nbsp;&nbsp; 【本站讯】5月16日至18日，由山东省教育厅举办的首届山东省中小学创客…">全省创客大赛：我校获得全市高中最好成绩</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[5月25日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4373" title="
+   &nbsp;&nbsp;&nbsp; 【本站讯】2018年5月23日上午，我校副校长肖贤龙、纪委书记李文戈、教务处主任高守福、高…">我校今年第一次上线《政风行风热线》直播节目</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[5月24日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4372" title="
+         
+    &nbsp; &nbsp; 【本站讯】5月21日下午四点，我校“文化讲堂”在一号报告厅开讲。语文高级教师、…">我校“文化讲堂”开讲：历史上的“真”孔子</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[5月23日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4370" title="
+       
+     &nbsp; 
+     &nbsp; 
+   &nbsp;&nbsp;&nbsp; 【本站讯】近日，济宁市青年联合会第十届委员会…">我校学生会主席张天一同学当选济宁市学联第七…</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[5月18日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4367" title="让退休干部生活得更充实、更快乐    
+         &nbsp; 
+   ——我校开启退休老干部中华优秀传统文化体验之旅…">让退休干部生活得更充实、更快乐</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[5月15日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4362" title="
+       
+       
+     &nbsp; 
+     &nbsp; 
+   &nbsp;&nbsp;&nbsp; 【本站讯】为打造高效课堂，提升学校整…">我校2018年优质课评选活动圆满结束</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[5月14日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4358" title="
+         
+         
+         
+         
+         
+         
+       &nbsp; 
+    &nbsp;&nbsp…">感受语言力量 发现英语魅力——我校举行2018年…</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[5月9日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4357" title="
+         
+       &nbsp; 
+    &nbsp;&nbsp;&nbsp; 【本站讯】2018年5月7日，我校开展“创建全国文明城”主题升…">我校举行“创建全国文明城”主题升旗仪式</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[5月9日]</font>
+                                                                        </td>
+                                </tr>
+                                </table></td>
+                            </tr>
+                          </tbody>
+                      </table>
+					<!--  
+					  <table id=tb2 style="DISPLAY: none" height=31 cellspacing=0 
+                                cellpadding=0  
+border=0>
+                        <tbody>
+                          <tr>
+                            <td><table  class=gongyou cellspacing=0 cellpadding=0 
+                  border=0 height="35">
+                              
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=3235" title="青春引领梦想 &nbsp;奋斗铸就辉煌   
+     &nbsp; 
+   ——在“十八岁成人仪式上”的讲话   
+   &nbsp;…">乔德金校长在“十八岁成人仪式”上的讲话</a>
+                                     
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[5月5日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=3169" title="老师们、同学们：   
+    &nbsp;&nbsp;&nbsp;   我们全校各班班干部的代表汇聚在一起，共同见证我校第七届校…">校长乔德金在第七届校学生会成立大会上的讲话</a>
+                                     
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[1月29日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=3101" title="&nbsp;&nbsp; 乔德金校长在2014级国际班开班典礼暨施强国际出国留学人才基地揭牌仪式上的讲话   
+   （201…">乔德金校长在2014级国际班开班典礼暨施强国际…</a>
+                                     
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[11月27日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=3035" title="
+   乔德金校长在新疆班古尔邦节联欢会上的致词     
+   （2014年10月5日）   
+     &nbsp; 
+     &nb…">乔德金校长在新疆班古尔邦节联欢会上的致词</a>
+                                     
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[10月8日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=1938" title="乔德金校长在我校  “名家进校园”活动    
+    第二场报告  会上的致词    
+    （2011年10月22日）    …">乔德金校长在我校“名家进校园”活动第二场报…</a>
+                                     
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[10月24日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=1925" title="活跃的社团&nbsp;&nbsp; 灵动的校园   
+   ---乔德金校长在学生社团联合会成立大会上的讲话   
+   （201…">乔德金校长在学生社团联合会成立大会上的讲话</a>
+                                     
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[10月12日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=1923" title="有效课堂、高效课堂、魅力课堂   
+   ---“课堂教学效率年”系列活动启动仪式上的讲话   
+   （2011年10月…">乔德金校长在“课堂教学效率年”系列活动启动…</a>
+                                     
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[10月12日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=1911" title="乔德金校长在庆祝第27个教师节大会上的讲话   
+   （2011年9月10日）   
+     &nbsp; 
+   老师们，同志们：…">乔德金校长在庆祝第27个教师节大会上的讲话</a>
+                                     
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[9月10日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                            </table></td>
+                          </tr>
+                        </tbody>
+                      </table> //-->
+					  
+					  
+					  <table id=tb2 style="DISPLAY: none" height=31 
+                                cellspacing=0 cellpadding=0 border=0>
+                          <tbody>
+                            <tr>
+                              <td><table  class=gongyou cellspacing=0 cellpadding=0 
+                  border=0 height="35">
+                              
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4369" title="
+       
+       
+       
+     &nbsp; 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 【本站讯】5月14日，我校…">沟通，从讲好普通话开始</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[5月16日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4366" title="
+         
+         
+       &nbsp; 
+       &nbsp; 
+    &nbsp;&nbsp;&nbsp; 【本站讯】2018年5月14日…">我校举行“铸诚信品质，做文明学生”主题升旗…</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[5月15日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4361" title="
+       
+       
+       
+       
+     &nbsp; 
+   &nbsp;&nbsp;&nbsp; 【本站讯】2018年5月10日下午，…">我校开展食品安全检查测评活动</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[5月11日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4365" title="
+       
+   &nbsp;&nbsp;&nbsp; 【本站讯】5月9日，我校开展校舍设施安全大检查工作。总务处主任孙彦忠、教育处…">我校开展校舍设施安全大检查工作</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[5月10日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4353" title="
+       
+     &nbsp; 
+     &nbsp; 
+     &nbsp; 
+     &nbsp; 
+     &nbsp; 
+     &nbsp; 
+   &…">一腔热血铸警魂——新疆部开展“进警营 长见识…</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[5月2日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4359" title="
+     &nbsp; 
+   &nbsp;&nbsp;&nbsp; 【本站讯】4月28日上午，我校召开创建全国文明城市广播动员大会，全体班主…">我校召开创建全国文明城市广播动员大会</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[4月29日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4328" title="
+      
+       
+       
+     &nbsp; 
+   &nbsp;&nbsp;&nbsp; 【本站讯】近日，教育处、团委、年级部通力协…">我校举行“雷锋月”主题板报比赛等学雷锋系列…</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[4月16日]</font>
+                                                                        </td>
+                                </tr>
+                                
+                                <tr>
+                                  <td align="left" height="21"><img src="images/dot_blue.gif"><a class=middle target="_blank" href="ReadNews.asp?NewsId=4312" title="
+       
+       
+     &nbsp; 
+   &nbsp;&nbsp;&nbsp; 【本站讯】清明节又叫做踏青节，在清明节这个中华传统…">佳节清明桃李笑 雨足郊原草木柔</a>
+                                      <!--判断并显示时间格式-------->
+                                      
+                                    · </td>
+                                  <td align="left" ><font color="#666666">[4月10日]</font>
+                                                                        </td>
+                                </tr>
+                                </table></td>
+                            </tr>
+                          </tbody>
+                      </table>
+					  
+					  </td>
+                  </tr>
+                </tbody>
+    </table>    </td>
+  </tr>
+</table>
+</td>
+    
+    <td valign="top"> 
+      <table border="0" cellpadding="0" cellspacing="0">
+        
+        <tr> 
+          <td height="42" background="IMAGES/sky_12.jpg" style=" padding-top:15px;"><img src="IMAGES/spacer.gif" width="80" height="22" style="float:left">　　<a href="ReadNews.asp?NewsID=362" ><font color=red>育才中学校园网欢迎您的到来！</font></a></td>
+        </tr>
+        <tr><td> <div align="center"><img src="IMAGES/sky_15b.jpg" width="291" height="102" usemap="#Map" border="0" href="#"></div></td></tr>
+        <tr> 
+          <td height="35" bgcolor="#FFFFFF"> 
+            <div align="center"> 
+              <table width="221" border="0" cellpadding="0" cellspacing="0" height="42">
+                <tr> 
+                  <td height="42"><a href="http://172.19.0.15:8888" target="_blank"><img src="IMAGES/sky_16b.jpg" width="291" height="52" border="0"></a></td>
+                </tr>
+              </table>
+            </div>
+            <div align="center"></div>          </td>
+        </tr>
+        <tr> 
+          <td background="IMAGES/sky_17.jpg" height="35"><div align="center"><b><font color="#256485">友情链接</font></b>: 
+              <SELECT name="select3"  onchange="javascript:window.open(this.options[this.selectedIndex].value);" size="1">
+                <option value="javascript:void(0)" selected="selected">= 推荐教育站点 = </option>
+                <option value="http://www.sdedu.gov.cn/">山东省教育厅</option>
+                <option value="http://www.sdzs.gov.cn/">山东招生信息网</option>
+                <option value="http://www.k12.com.cn/">中小学教育教学</option>
+                <option value="http://www.jnjyw.edu.cn/">济宁教育网</option>
+                <option value="http://www.cnki.net/">中国基教知识库</option>
+                <option value="http://www.jnjyw.edu.cn/">济宁市教育网</option>
+                <option value="http://zsks.gov.cn/">济宁市招考信息网</option>
+                <option value="http://www.jnxyfz.cn/">济宁学院附中</option>
+				<option value="172.19.0.211">敏特英语</option>
+                <option value="http://www.jnycfx.jinedu.cn">济宁市育才中学分校</option>
+                <option value="http://www.626china.org">中国禁毒数字展览馆</option>
+              </SELECT>
+            </div></td>
+        </tr>
+      </table>    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="IMAGES/sky_19.jpg" /></td>
+  </tr>
+</table>
+<map name="Map">
+  <area shape="rect" coords="129,16,178,66" href="http://login.lanxin.cn" target="_blank">
+  <area shape="rect" coords="213,14,265,61" href="http://sd.czbanbantong.com" target="_blank">
+</map>
+
+    </td>
+    
+</table>
+<table width="925" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td valign="top"><table width="925" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" >
+        <tr> 
+          <td width="780"> 
+            <table width="100%"  border="0" cellpadding="0" cellspacing="0" bgcolor="#F3F3F3" style="border-left:0px solid #cccccc; border-top: 0px solid #cccccc; border-bottom: 0px solid #cccccc; border-right: 0px solid #cccccc" height="8">
+              <tr> 
+                <td height="1"> 
+                  <!--广告设置开始-->
+                  <!--广告设置结束-->
+                  <!--链接开始---->
+                  
+                  <!--链接结束-->
+                <style type="text/css">
+<!--
+.style6 { color: #FFFFFF;}
+.STYLE7 {color: #00CCFF}
+-->
+</style>
+  <table width=925 border=0 align="center" cellpadding=0 cellspacing=0 background="IMAGES/sky_20.jpg" style="color:#ffffff" class="white" height="70">
+    <tr> 
+      <td align="center"> 
+        <font color=#000000>|<a href='message.asp' class=bottom target='_blank'> 关于我们 </a>|<a href='./ReadNews.asp?NewsID=1' class=bottom>&nbsp;版权声明&nbsp;</a>|<a href='admin_login.asp' class=bottom>&nbsp;网站管理&nbsp;</a>|<a href='./map.asp' class=bottom>&nbsp;网站地图&nbsp;</a>      </td>
+    </tr>
+    <tr> 
+      <td align="center"> 
+                ·上月关注人数：<IMG SRC=count/gif/2.gif Align=middle><IMG SRC=count/gif/5.gif Align=middle><IMG SRC=count/gif/1.gif Align=middle><IMG SRC=count/gif/2.gif Align=middle><IMG SRC=count/gif/4.gif Align=middle><IMG SRC=count/gif/1.gif Align=middle>·本月关注人数：<IMG SRC=count/gif/1.gif Align=middle><IMG SRC=count/gif/6.gif Align=middle><IMG SRC=count/gif/5.gif Align=middle><IMG SRC=count/gif/3.gif Align=middle><IMG SRC=count/gif/5.gif Align=middle><IMG SRC=count/gif/7.gif Align=middle>·关注本站总人数：<IMG SRC=count/gif/2.gif Align=middle><IMG SRC=count/gif/7.gif Align=middle><IMG SRC=count/gif/8.gif Align=middle><IMG SRC=count/gif/9.gif Align=middle><IMG SRC=count/gif/4.gif Align=middle><IMG SRC=count/gif/6.gif Align=middle><IMG SRC=count/gif/8.gif Align=middle><IMG SRC=count/gif/0.gif Align=middle>  <div style="width:800px;margin:0 auto; padding:0px 0;">Copyright @2016 济宁市育才中学 版权所有 鲁ICP备09085130号
+                 <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37080202000427" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"> <img src="备案图标.png" width="20" height="20" /></a>         鲁公网安备 37080202000427号</div>
+		
+      </td>
+    </tr>
+  </table>
+<!--<table  border="0" width="100%">
+  <tr>
+    <th align="center" ><script>document.write("<a href='http://www.wj110.gov.cn/ShowResult.asp?sn=37080029000027' target='_blank'><img src='http://www.wj110.gov.cn/pic/icon.gif' border='0'></a>");</script></th>
+  </tr>
+</table>-->
+
+				</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<div align=center>
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript  src='http://dcs.conac.cn/js/16/241/0000/60768114/CA162410000607681140001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>

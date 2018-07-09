@@ -1,0 +1,500 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>重庆市大坪中学-官方网站</title>
+<meta name="keywords" content="重庆市中学,重庆市重点中学,重庆中学网站, " />
+<meta name="description" content="重庆市大坪中学-官方网站欢迎您，重庆市中学，重庆市重点中学，重庆中学网站！ " />
+<script type="text/javascript" src="http://www.cqdpzx.com/i/jquery1.42.min.js" ></script>
+<script type="text/javascript" src="http://www.cqdpzx.com/i/jquery.SuperSlide.2.1.1.js" ></script>
+<script type="text/javascript" src="http://www.cqdpzx.com/i/Favorites.js" ></script>
+<link rel="stylesheet" href="http://www.cqdpzx.com/i/style.css" /> 
+<style>
+.head .nv li a.iid{background: url(/i/li.jpg) no-repeat;}
+</style>
+<script type="text/javascript" src="/i/jquery.nivo.slider.js"></script>
+<link rel="stylesheet" href="/i/nivo-slider.css" /> 
+</head>
+<body>
+	<div class="head">
+			<div class="t"></div>
+			<div class="c wp">
+				<a href="http://www.cqdpzx.com/" class="logo"><img src="/i/logo.jpg" /></a>
+				<div class="s">
+					<p>
+						<a onclick="SetHome(window.location);" href="javascript:void(0);">设为首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<a onclick="AddFavorite(window.location,document.title);" href="javascript:void(0);">加入收藏</a>&nbsp;&nbsp;|&nbsp;&nbsp;	
+						<a href="http://www.cqdpzx.com/html/map.html">网站地图</a>
+					</p>
+					
+					<form name='search' action='/e/search/index.php' method="post">
+					<input type="hidden" name="tempid" value="1">
+					<input type="hidden" name="tbname" value="news">
+					<input type="hidden" name="show" value="title,smalltext" />
+					<div class="m">
+						<input type="text" name="keyboard" placeholder="输入关键字"  class="nr"/>
+						<input type="submit" value="" class="tj"/>
+					</div>
+					</form>
+					
+				</div>
+			</div>
+			
+			<div class="nv">
+				<ul class="wp">
+					<li><a href="http://www.cqdpzx.com/" class="iid">网站首页</a></li>
+					
+					<li>
+						<a href="http://www.cqdpzx.com/survey/Introduction/" class="lid3">学校概况</a>
+						<ul>
+							<li><a href="http://www.cqdpzx.com/survey/Introduction/">学校介绍</a></li><li><a href="http://www.cqdpzx.com/survey/scenery/">校园风光</a></li>						</ul>
+					</li>
+					
+					<li><a href="http://www.cqdpzx.com/campus/news/" class="lid49">校园新闻</a></li>
+					<li><a href="http://www.cqdpzx.com/anniversary/" class="lid55">校庆专栏</a>
+						<ul>
+							<li><a href="http://www.cqdpzx.com/anniversary/notice/">通知公告</a></li><li><a href="http://www.cqdpzx.com/anniversary/dynamic/">校庆动态</a></li><li><a href="http://www.cqdpzx.com/anniversary/trace/">岁月痕迹</a></li><li><a href="http://www.cqdpzx.com/anniversary/silhouette/">校庆剪影</a></li><li><a href="http://www.cqdpzx.com/anniversary/congratulate/">八方驰贺</a></li><li><a href="http://www.cqdpzx.com/anniversary/elegant-appearance/">校友风采</a></li>							
+						</ul></li>
+					<li class="hong"><a href="http://www.cqdpzx.com/recruit-students/" class="lid56">招生信息</a></li>
+					<li><a href="http://www.cqdpzx.com/scientific/" class="lid2">科研兴校</a>
+						<ul>
+							<li><a href="http://www.cqdpzx.com/scientific/research/">课题研究</a></li><li><a href="http://www.cqdpzx.com/scientific/paper/">科研论文</a></li><li><a href="http://www.cqdpzx.com/scientific/based/">校本培训</a></li><li><a href="http://www.cqdpzx.com/scientific/magazine/">校刊校报</a></li><li><a href="http://www.cqdpzx.com/scientific/results/">成果展示</a></li><li><a href="http://www.cqdpzx.com/scientific/tr-online/">网上教研</a></li>						</ul>
+					</li>
+					<li>
+						<a href="http://www.cqdpzx.com/treant/" class="lid16">德育树人</a>
+						<ul>
+							<li><a href="http://www.cqdpzx.com/treant/moral/">德育管理</a></li><li><a href="http://www.cqdpzx.com/treant/research/">德育科研</a></li><li><a href="http://www.cqdpzx.com/treant/home/">家校合作</a></li><li><a href="http://www.cqdpzx.com/treant/activities/">德育活动</a></li><li><a href="http://www.cqdpzx.com/treant/community/">社团活动</a></li><li><a href="http://www.cqdpzx.com/treant/cultural/">文化育人</a></li>						</ul>
+					</li>
+					
+					<li>
+						<a href="http://www.cqdpzx.com/discipline/" class="lid23">学科建设</a>
+						<ul>
+							<li><a href="http://www.cqdpzx.com/discipline/team/">学科团队</a></li><li><a href="http://www.cqdpzx.com/discipline/base/">政治学科基地</a></li><li><a href="http://www.cqdpzx.com/discipline/physical/">体育健康学科基地</a></li><li><a href="http://www.cqdpzx.com/discipline/teacher/">新教师培训</a></li><li><a href="http://www.cqdpzx.com/discipline/backbone/">骨干教师培训</a></li><li><a href="http://www.cqdpzx.com/discipline/styles/">名师风采</a></li><li><a href="http://www.cqdpzx.com/discipline/resource/">学科资源</a></li>						</ul>
+					</li>
+					
+					<li>
+						<a href="http://www.cqdpzx.com/caucus/" class="lid27">党团建设</a>
+						<ul>
+							<li><a href="http://www.cqdpzx.com/caucus/excel/">两学一做</a></li><li><a href="http://www.cqdpzx.com/caucus/youth/">团委介绍</a></li><li><a href="http://www.cqdpzx.com/caucus/team/">团队活动</a></li><li><a href="http://www.cqdpzx.com/caucus/branch/">党支部活动</a></li><li><a href="http://www.cqdpzx.com/caucus/party/">党总支介绍</a></li>						</ul>
+					</li>
+					
+					<li>
+						<a href="http://www.cqdpzx.com/chara/" class="lid33">特色教育</a>
+						<ul>
+							<li><a href="http://www.cqdpzx.com/chara/football/">女足</a></li><li><a href="http://www.cqdpzx.com/chara/science/">科技</a></li><li><a href="http://www.cqdpzx.com/chara/art/">艺术</a></li><li><a href="http://www.cqdpzx.com/chara/sports/">体育</a></li>						</ul>
+					</li>
+<li><a href="/sjdztz/sjdzt/" class="lid65"><div id="shan">十九大专栏</div></a></li>
+				</ul>
+			</div>
+			<script type="text/javascript">
+				$(function(){
+					$('.nv .wp li ul').parent().hover(function(){
+						$(this).find('ul').slideDown(100);
+						$(this).find('a').eq(0).addClass('on');
+					},function(){
+						$(this).find('ul').slideUp(100);
+						$(this).find('a').eq(0).removeClass('on');
+					})
+				})
+			</script>
+<script>  
+(function(){
+    var text=document.getElementById("shan");
+    function color(){
+        if(text.style.color=="red"){
+            text.style.color="yellow";
+        }
+        else{
+            text.style.color="red";
+        }
+        setTimeout(function(){
+           color(); 
+       },200);
+    }
+    color();
+})();
+</script>
+		</div>
+
+
+		<div class="hm wp">
+			
+			<div class="ha">
+				<div class="hp">
+					<div class="f" style="margin:0 auto">
+						<ul class="pic">
+														<li><a href="http://www.cqdpzx.com/html/201805/1086.html" ><img src="/d/file/201805/cac61a97e096ee46148d0a686d4d6f62.jpg"/><p>pick大中，给你创造101的成功</p></a></li>
+														<li><a href="http://www.cqdpzx.com/html/201805/1085.html" ><img src="/d/file/201805/729c42482667445c11ad66375809b2c5.jpg"/><p>“快乐足球 健康成长”校园足球嘉年华简报</p></a></li>
+														<li><a href="http://www.cqdpzx.com/html/201805/1084.html" ><img src="/d/file/201805/9cf0e320296ef41a60f8ed15a8f92769.jpg"/><p>“加强意识形态工作，规范党员干部网络行为”主题党日活</p></a></li>
+														<li><a href="http://www.cqdpzx.com/html/201805/1082.html" ><img src="/d/file/201805/da87e20eb996899fb53bb0d98bea8f5c.jpg"/><p>平凡岗位展风采   讲大中教师的故事</p></a></li>
+														<li><a href="http://www.cqdpzx.com/html/201803/1079.html" ><img src="/d/file/201803/ebabc1a2cfc645d18993da9cbef33af8.jpg"/><p>请以“雷锋”的名字呼唤我</p></a></li>
+													</ul>
+						<a class="prev" href="javascript:void(0)"></a>
+						<a class="next" href="javascript:void(0)"></a>
+					</div>
+					<script type="text/javascript">
+						jQuery(".f").slide({ mainCell:".pic",effect:"leftLoop", autoPlay:true, delayTime:600, trigger:"click",mouseOverStop:false,interTime:3000});
+					</script>
+				</div>
+				
+				<div class="r">
+					<div class="t">
+						<div class="ner">
+							<a href="http://www.cqdpzx.com/" class="a1">卷首语</a>
+						</div>
+						<p class="m">
+							幽雅的校园中浸润着书声朗朗,宽阔的操场上传递着笑声连连.这里是成功的摇篮,让你的追求插上腾飞的翅膀;这里是培养人才的学园,让你的梦想得以展翅翱翔;这里是发展个性的乐园,让你的心境在笑声中愉悦欢畅;这里是陶冶情操的花园,让你的心智丰盈而健康;这里更是精神文明的校园,留下你健康成长的脚印串串.
+						</p>
+					</div>
+					
+					<div class="b">
+						<div class="ner">
+							<a href="http://www.cqdpzx.com/campus/notice/" class="a1">通知公告</a>
+							<a href="http://www.cqdpzx.com/campus/notice/" class="more">More ></a>
+						</div>
+						<ul class="m">
+														<li><a href="http://www.cqdpzx.com/html/201804/1081.html">重庆市大坪中学校内部控制领导小组名单</a><span>04-16</span></li>
+														<li><a href="http://www.cqdpzx.com/html/201804/1080.html">重庆市大坪中学校内部控制建设实施方案</a><span>04-16</span></li>
+														<li><a href="http://www.cqdpzx.com/html/201703/868.html">重庆市渝中区教育委员会关于开展2017年教师</a><span>03-22</span></li>
+														<li><a href="http://www.cqdpzx.com/html/201612/824.html">重庆市渝中区教育委员会 关于渝中区“十二</a><span>12-14</span></li>
+													</ul>
+					</div>
+				</div>
+			</div>
+
+<div class="add1"><div class="add0">
+														<a href="http://www.cqdpzx.com/html/201709/918.html" ><img src="/i/xiaoq.jpg"/></a>
+							</div></div>
+					<script type="text/javascript">
+						jQuery(".add1").slide({ mainCell:".add0",effect:"topLoop", autoPlay:true, delayTime:600, trigger:"click",mouseOverStop:false,interTime:4000});
+					</script>
+
+			
+			<div class="hb">
+				<div class="l">
+					<div class="lv">
+						<a href="http://www.cqdpzx.com/campus/news/" class="a1">校园新闻</a>
+						<a href="http://www.cqdpzx.com/campus/news/" class="a2">More ></a>
+					</div>
+					<div class="lc">
+						<ul class="m">
+															<li><a href="http://www.cqdpzx.com/html/201805/1086.html">pick大中，给你创造101的成功</a><span>05-24</span></li>
+															<li><a href="http://www.cqdpzx.com/html/201805/1085.html">“快乐足球 健康成长”校园足球嘉年华</a><span>05-23</span></li>
+															<li><a href="http://www.cqdpzx.com/html/201805/1084.html">“加强意识形态工作，规范党员干部网络行</a><span>05-08</span></li>
+															<li><a href="http://www.cqdpzx.com/html/201805/1082.html">平凡岗位展风采   讲大中教师的故事</a><span>05-08</span></li>
+															<li><a href="http://www.cqdpzx.com/html/201803/1079.html">请以“雷锋”的名字呼唤我</a><span>03-28</span></li>
+															<li><a href="http://www.cqdpzx.com/html/201803/1078.html">重视问题引领 提高课堂效益</a><span>03-22</span></li>
+													</ul>
+					</div>
+					<div class="lb"></div>
+				</div>
+				<div class="c">
+					<div class="lv">
+						<a href="http://www.cqdpzx.com/treant/" class="a1">德育树人</a>
+						<a href="http://www.cqdpzx.com/treant/" class="a2">More ></a>
+					</div>
+					<div class="lc">
+						<div class="z">
+															<a href="http://www.cqdpzx.com/html/201612/813.html"><img src="/d/file/201612/3f45479f51e1db1691f8e5c64b6e6481.jpg" /></a>
+															<a href="http://www.cqdpzx.com/html/201611/808.html"><img src="/d/file/201611/aee57d8991081e9ce6956d0b3056c0a9.jpg" /></a>
+													</div>
+						<div class="y">
+							<ul>
+																	<li><a href="http://www.cqdpzx.com/html/201612/813.html"><span>·</span>远离火灾        幸福平安</a></li>
+																	<li><a href="http://www.cqdpzx.com/html/201611/808.html"><span>·</span>运动强健体魄      活力迎</a></li>
+																	<li><a href="http://www.cqdpzx.com/html/201610/800.html"><span>·</span>风华少年   ——重庆市大</a></li>
+																	<li><a href="http://www.cqdpzx.com/html/201609/794.html"><span>·</span>2015——2016学年度下期优</a></li>
+																	<li><a href="http://www.cqdpzx.com/html/201602/720.html"><span>·</span>强化学生工作    提升育人</a></li>
+																	<li><a href="http://www.cqdpzx.com/html/201602/719.html"><span>·</span>相约春天       起航梦想</a></li>
+															</ul>
+						</div>
+					</div>
+					<div class="lb"></div>
+				</div>
+				<div class="r">
+					<div class="lv">
+						<a href="http://www.cqdpzx.com/scientific/" class="a1">科研兴校</a>
+						<a href="http://www.cqdpzx.com/scientific/" class="a2">More ></a>
+					</div>
+					<div class="lc">
+						<div class="z">
+															<a href="http://www.cqdpzx.com/html/201610/796.html"><img src="/d/file/201610/f60f546ed6bea67c8dcdc676bceed9fa.jpg" /></a>
+															<a href="http://www.cqdpzx.com/html/201609/793.html"><img src="/d/file/201609/e71e27f0b0d0641d8e71d63c6f411647.jpg" /></a>
+													</div>
+						<div class="y">
+							<ul>
+																	<li><a href="http://www.cqdpzx.com/html/201610/796.html"><span>·</span>2016年9月27日 大坪中学召</a></li>
+																	<li><a href="http://www.cqdpzx.com/html/201609/793.html"><span>·</span>名师指引  拨云见日</a></li>
+															</ul>
+						</div>
+					</div>
+					<div class="lb"></div>
+				</div>
+			</div>
+			
+			
+			<div class="hc">
+				<div class="l">
+					<div class="cv">
+						<a href="http://www.cqdpzx.com/discipline/styles/" class="a1">名师风采</a>
+						<a href="http://www.cqdpzx.com/discipline/styles/" class="a2">More ></a>
+					</div>
+					<div class="cc">
+						<ul class="m">
+														<li>
+								<a href="http://www.cqdpzx.com/html/201501/474.html" class="a1"><img src="/d/file/201501/cf916dea69cc00655281d6bc2a367179.jpg" /></a>
+								<a href="http://www.cqdpzx.com/html/201501/474.html" class="a2">市骨干教师 黄笪</a>
+							</li>
+														<li>
+								<a href="http://www.cqdpzx.com/html/201501/503.html" class="a1"><img src="/d/file/201501/55fed84c13af28a2adfe25196901a659.jpg" /></a>
+								<a href="http://www.cqdpzx.com/html/201501/503.html" class="a2">区级骨干教师 林琳</a>
+							</li>
+														<li>
+								<a href="http://www.cqdpzx.com/html/201501/476.html" class="a1"><img src="/d/file/201501/896552125cc791ac2ff678993e1d1021.jpg" /></a>
+								<a href="http://www.cqdpzx.com/html/201501/476.html" class="a2">区骨干教师 周光临</a>
+							</li>
+														<li>
+								<a href="http://www.cqdpzx.com/html/201501/475.html" class="a1"><img src="/d/file/201501/e8b50ed5ff0c5899efea09f9c0383fdf.jpg" /></a>
+								<a href="http://www.cqdpzx.com/html/201501/475.html" class="a2">区骨干教师 王华峰</a>
+							</li>
+													</ul>
+					</div>
+					<div class="cb"></div>
+				</div>
+				<div class="r">
+					<div class="ner">
+						<a href="http://www.cqdpzx.com/treant/home/" class="a1">家长平台</a>
+						<a href="http://www.cqdpzx.com/treant/home/" class="more">More ></a>
+					</div>
+					<ul class="m">
+												<li><a href="http://www.cqdpzx.com/html/201512/690.html">关注家庭教育         助推学生成长</a><span>12-24</span></li>
+												<li><a href="http://www.cqdpzx.com/html/201512/687.html">关注青春健康教育    撑起学生成长天地</a><span>12-22</span></li>
+												<li><a href="http://www.cqdpzx.com/html/201511/635.html">关注孩子心理特点 陪伴孩子健康成长</a><span>11-12</span></li>
+												<li><a href="http://www.cqdpzx.com/html/201412/432.html">怎样进行家校合作？</a><span>12-29</span></li>
+												<li><a href="http://www.cqdpzx.com/html/201412/431.html">从学校的角度来看</a><span>12-29</span></li>
+												<li><a href="http://www.cqdpzx.com/html/201412/430.html">家校联系的重要性</a><span>12-29</span></li>
+											</ul>
+				</div>
+			</div>
+			
+			<a href="#" class="add2"><img src="/i/add2.jpg" /></a>
+			
+			<div class="hw">
+				<div class="l">
+					<div class="cv">
+						<a href="http://www.cqdpzx.com/treant/community/" class="a1">团体活动</a>
+						<a href="http://www.cqdpzx.com/treant/community/" class="a2">More ></a>
+					</div>
+					<div class="cc">
+						<ul class="m">
+														<li>
+								<a href="http://www.cqdpzx.com/html/201612/813.html" class="a1"><img src="/d/file/201612/3f45479f51e1db1691f8e5c64b6e6481.jpg" /></a>
+								<a href="http://www.cqdpzx.com/html/201612/813.html" class="a2">远离火灾        幸福</a>
+							</li>
+														<li>
+								<a href="http://www.cqdpzx.com/html/201610/800.html" class="a1"><img src="/d/file/201610/71e3acebbc874d4ed5b38b507ff72807.jpg" /></a>
+								<a href="http://www.cqdpzx.com/html/201610/800.html" class="a2">风华少年   ——重庆</a>
+							</li>
+														<li>
+								<a href="http://www.cqdpzx.com/html/201602/719.html" class="a1"><img src="/d/file/201602/ea9b69ed16953c5fbe4cce671931b23d.jpg" /></a>
+								<a href="http://www.cqdpzx.com/html/201602/719.html" class="a2">相约春天       起航</a>
+							</li>
+														<li>
+								<a href="http://www.cqdpzx.com/html/201601/708.html" class="a1"><img src="/d/file/201601/3fe57330811352a9fb67d8ce0227525a.jpg" /></a>
+								<a href="http://www.cqdpzx.com/html/201601/708.html" class="a2">文化凝聚力量      校</a>
+							</li>
+													</ul>
+					</div>
+					<div class="cb"></div>
+				</div>
+				<div class="r">
+					<div class="lv">
+						<a href="http://www.cqdpzx.com/scientific/results/" class="a1">学生作品</a>
+						<a href="http://www.cqdpzx.com/scientific/results/" class="a2">More ></a>
+					</div>
+					<div class="lc">
+						<ul class="m">
+														<li><a href="http://www.cqdpzx.com/html/201501/436.html">指导学生</a><span>12-27</span></li>
+														<li><a href="http://www.cqdpzx.com/html/201501/442.html">学生作品</a><span>12-27</span></li>
+														<li><a href="http://www.cqdpzx.com/html/201501/439.html">剪纸作品展示</a><span>12-27</span></li>
+														<li><a href="http://www.cqdpzx.com/html/201501/440.html">舞蹈作品展示</a><span>12-26</span></li>
+														<li><a href="http://www.cqdpzx.com/html/201501/441.html">绘画作品展示</a><span>12-26</span></li>
+													</ul>
+					</div>
+					<div class="lb"></div>
+				</div>
+			</div>
+			
+			<div class="hr">
+				<div class="l">
+					<div class="rt">
+						<p>
+							<a href="http://www.cqdpzx.com/treant/" class="a1">教学管理</a>
+							<a href="http://www.cqdpzx.com/treant/" class="a2">More ></a>
+						</p>
+						<p>
+							<a href="http://www.cqdpzx.com/caucus/" class="a1">党团建设</a>
+							<a href="http://www.cqdpzx.com/caucus/" class="a2">More ></a>
+						</p>
+						<p>
+							<a href="http://www.cqdpzx.com/chara/" class="a1">特色教育</a>
+							<a href="http://www.cqdpzx.com/chara/" class="a2">More ></a>
+						</p>
+					</div>
+					<div class="cc">
+						<ul class="m ml">
+														<li><a href="http://www.cqdpzx.com/html/201612/813.html">远离火灾        幸福平安</a></li>
+														<li><a href="http://www.cqdpzx.com/html/201611/808.html">运动强健体魄      活力迎接校庆</a></li>
+														<li><a href="http://www.cqdpzx.com/html/201610/800.html">风华少年   ——重庆市大坪中学</a></li>
+														<li><a href="http://www.cqdpzx.com/html/201609/794.html">2015——2016学年度下期优生、优</a></li>
+														<li><a href="http://www.cqdpzx.com/html/201602/720.html">强化学生工作    提升育人效果</a></li>
+														<li><a href="http://www.cqdpzx.com/html/201602/719.html">相约春天       起航梦想</a></li>
+													</ul>
+						<ul class="m">
+														<li><a href="http://www.cqdpzx.com/html/201704/887.html">关于转发《中共重庆市纪委关于加</a></li>
+														<li><a href="http://www.cqdpzx.com/html/201703/865.html">重庆市大坪中学全体党员教师赴民</a></li>
+														<li><a href="http://www.cqdpzx.com/html/201703/849.html">大坪中学领导班子召开“两学一做</a></li>
+														<li><a href="http://www.cqdpzx.com/html/201703/848.html">总支简介</a></li>
+														<li><a href="http://www.cqdpzx.com/html/201703/844.html">2016-2017学年度 第十二届团委换</a></li>
+														<li><a href="http://www.cqdpzx.com/html/201512/694.html">搭建平台展学生风采      民主选</a></li>
+													</ul>
+						<ul class="m">
+														<li><a href="http://www.cqdpzx.com/html/201412/396.html">重庆市大坪中学校初一年级素质拓</a></li>
+														<li><a href="http://www.cqdpzx.com/html/201412/397.html">大坪中学接受渝中区体育特色学校</a></li>
+														<li><a href="http://www.cqdpzx.com/html/201412/417.html">大坪中学、解放小学举行篮球友谊</a></li>
+														<li><a href="http://www.cqdpzx.com/html/201412/419.html">大坪中学趣味运动会简报</a></li>
+														<li><a href="http://www.cqdpzx.com/html/201412/422.html">中华路小学、大坪中学女足喜获全</a></li>
+														<li><a href="http://www.cqdpzx.com/html/201412/423.html">大坪中学女子足球队在第四届市运</a></li>
+													</ul>
+					</div>
+					<div class="cb"></div>
+				</div>
+				<div class="r">
+					<div class="ner">
+						<a href="http://www.cqdpzx.com/chara/football/" class="a1">精彩女足</a>
+						<a href="http://www.cqdpzx.com/chara/football/" class="more">More ></a>
+					</div>
+					<div class="t">
+												<a href="http://www.cqdpzx.com/html/201412/422.html"><img src="/d/file/201412/94ab95356c2fb844db8f76fd84a2c6ef.jpg" /></a>
+												<a href="http://www.cqdpzx.com/html/201412/423.html"><img src="/d/file/201412/f5d36efbb3acbebdd374392a6d6655cc.jpg" /></a>
+											</div>
+					<ul class="b">
+												<li><a href="http://www.cqdpzx.com/html/201412/422.html">中华路小学、大坪中学女足喜获全国女足</a><span>09-06</span></li>
+												<li><a href="http://www.cqdpzx.com/html/201412/423.html">大坪中学女子足球队在第四届市运会上勇</a><span>09-04</span></li>
+											</ul>
+				</div>
+			</div>
+			
+			
+			<div class="ht">
+				<div class="t">
+					<a href="http://www.cqdpzx.com/survey/scenery/" class="a1">校园风采</a>
+					<a href="http://www.cqdpzx.com/survey/scenery/" class="a2">More ></a>
+				</div>
+				<div class="c"><div class="picScrolls">
+					<ul>
+												<li>
+							<a href="http://www.cqdpzx.com/html/201511/656.html" class="a1"><img src="/d/file/201511/0461cecc411b58499518b6364239c098.jpg" /></a>
+							<a href="http://www.cqdpzx.com/html/201511/656.html" class="a2">校园风光</a>
+						</li>
+												<li>
+							<a href="http://www.cqdpzx.com/html/201511/652.html" class="a1"><img src="/d/file/201511/28bae18aee81d19ccf2a8de335d2f621.jpg" /></a>
+							<a href="http://www.cqdpzx.com/html/201511/652.html" class="a2">校园风光</a>
+						</li>
+												<li>
+							<a href="http://www.cqdpzx.com/html/201511/651.html" class="a1"><img src="/d/file/201511/ca55314b3bb7a12cddfd842e97f6854a.jpg" /></a>
+							<a href="http://www.cqdpzx.com/html/201511/651.html" class="a2">校园风光</a>
+						</li>
+												<li>
+							<a href="http://www.cqdpzx.com/html/201511/650.html" class="a1"><img src="/d/file/201511/85c8b51f988fa427f040ad2eb9c46aed.jpg" /></a>
+							<a href="http://www.cqdpzx.com/html/201511/650.html" class="a2">校园风光</a>
+						</li>
+												<li>
+							<a href="http://www.cqdpzx.com/html/201511/649.html" class="a1"><img src="/d/file/201511/e31f9a618d4c1f094b987d70ca179766.jpg" /></a>
+							<a href="http://www.cqdpzx.com/html/201511/649.html" class="a2">校园风光</a>
+						</li>
+												<li>
+							<a href="http://www.cqdpzx.com/html/201511/648.html" class="a1"><img src="/d/file/201511/eecd93dc11c1c542a4768126456e586c.jpg" /></a>
+							<a href="http://www.cqdpzx.com/html/201511/648.html" class="a2">校园风光</a>
+						</li>
+												<li>
+							<a href="http://www.cqdpzx.com/html/201511/646.html" class="a1"><img src="/d/file/201511/ca69535e8c5bea9fff48341bfbc34de5.jpg" /></a>
+							<a href="http://www.cqdpzx.com/html/201511/646.html" class="a2">校园风光</a>
+						</li>
+												<li>
+							<a href="http://www.cqdpzx.com/html/201511/645.html" class="a1"><img src="/d/file/201511/5bfaee4fba9b535e74140df532a0bb4c.jpg" /></a>
+							<a href="http://www.cqdpzx.com/html/201511/645.html" class="a2">校园风光</a>
+						</li>
+											</ul>
+				</div></div>
+						<script type="text/javascript">
+							jQuery(".picScrolls").slide({ mainCell:"ul", effect:"leftMarquee", vis:4, autoPlay:true, interTime:50 });
+						</script>
+
+				<div class="b"></div>
+			</div>
+		</div>
+
+
+<style>
+.advbox{position:absolute;top:expression(eval(document.documentElement.scrollTop));z-index:9997;}
+.advbox{width:420px;position:fixed;display:none;left:50%;top:0;margin:-75px 0 0 -210px;}
+.advbox .advpic{position:relative;height:943px;overflow:hidden;z-index:9998;}
+.advbox .advpic .closebtn{display:block;height:22px;line-height:26px;font-size:12px;color:#fff;text-indent:12px;overflow:hidden;position:absolute;right:12px;top:5px;z-index:9999;}
+.advbox img{width:420px;height:auto;}
+</style>
+<!--<div class="advbox">
+	<div class="advpic">
+<a href="/i/a01.jpg" ><img alt="" src="/i/a01.jpg" /></a>
+		<a href="javascript:void(0);" class="closebtn">关闭</a>
+	</div>	
+</div>-->
+<!--<script type="text/javascript">
+$(document).ready(function(){
+	$(".advbox").show();
+	$(".advbox").animate({top:"-15%"},1000);
+	$(".closebtn").click(function(){
+		$(".advbox").fadeOut(500);
+	})
+})
+</script>-->
+
+
+<!-- 底部开始 -->
+																																																																																																	<div id="PcIndicate"></div><div style="width:0px;height:0px;overflow:hidden;"><h2>友情链接 Link</h2><ul><li><a href="http://www.chenxingbb.com/" title="重庆幼儿园" target="_blank">重庆幼儿园</a></li><li><a href="http://m.tqyingning.com/" title="重庆心理咨询" target="_blank">重庆心理咨询</a></li><li><a href="http://www.cqxynt.net/" title="重庆地暖" target="_blank">重庆地暖</a></li><li><a href="http://www.taolifu.com/" title="重庆礼品" target="_blank">重庆礼品</a></li><li><a href="http://www.cqymfyp.com/" title="重庆遮阳棚" target="_blank">重庆遮阳棚</a></li><li><a href="http://www.mujun168.com/" title="重庆无人机" target="_blank">重庆无人机</a></li><li><a href="http://www.cqruixue.com/" title="重庆冷库安装" target="_blank">重庆冷库安装</a></li><li><a href="http://www.qxyjy.com/" title="重庆一对一家教" target="_blank">重庆一对一家教</a></li><li><a href="http://www.cqtyfs.com/" title="重庆防水补漏" target="_blank">重庆防水补漏</a></li><li><a href="http://www.yetgrand.com/" title="重庆印刷厂" target="_blank">重庆印刷厂</a></li><li><a href="http://www.tieying-china.com/" title="重庆员工培训" target="_blank">重庆员工培训</a></li><li><a href="http://www.liyinet.com/" title="礼品网" target="_blank">礼品网</a></li><li><a href="http://www.paichen.net/" title="重庆网站建设" target="_blank">重庆网站建设</a></li></ul></div>
+		<div class="ft">
+			<div class="t">
+				<p class="wp">
+					<a href="http://www.cqdpzx.com/html/contact.html">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="http://www.cqdpzx.com/survey/Introduction/">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a onclick="SetHome(window.location);" href="javascript:void(0);">设为首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="http://www.cqdpzx.com/">学校邮箱</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a onclick="AddFavorite(window.location,document.title);" href="javascript:void(0);">加入收藏</a>
+				</p>
+			</div>
+			<div class="p1 wp">
+				Copyright © 2011 大坪中学 All Rights Reserved<br />
+				地址：重庆市渝中区长江支路5号  渝ICP备11007004号  联系方式：023-86110324  技术支持：<a href="http://www.paichen.net/" title="派臣科技" target="_blank">派臣科技</a>
+				<!--友情链接-->
+				<div class="link">
+					<ul>
+												<li><a href="http://www.taobao.com" target="_blank" >淘宝</a></li>
+												<li><a href="http://www.baidu.com" target="_blank" >百度</a></li>
+											</ul>
+				</div>
+				<script type="text/javascript">
+					$(function(){
+						$('.link ul').parent().hover(function(){
+							$(this).find('ul').slideDown(100);
+						},function(){
+							$(this).find('ul').slideUp(100);
+						})
+					})
+				</script>
+			</div>
+		</div>
+<div style="width:300px;margin:0 auto; ">
+  <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50010302001195 
+
+" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://www.beian.gov.cn/img/ghs.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">渝公网安备 50010302001195号</p></a>
+  </div> 
+<!-- 底部结束 -->
+</body>
+</html>

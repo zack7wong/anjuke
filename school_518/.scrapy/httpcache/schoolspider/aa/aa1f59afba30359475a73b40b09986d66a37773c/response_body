@@ -1,0 +1,1121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>长沙市第二十一中学欢迎您——首页</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />	
+	<link rel="shortcut icon" href="http://www.cs21.com.cn/ROOT/favicon.ico" type="image/x-icon" />
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.litenav.js" type="text/javascript"></script>
+	<script src="js/tab.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/koala.min.1.5.js"></script>
+    <script type="text/javascript">
+	Qfast.add('widgets', { path: "js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+	Qfast(false, 'widgets', function () {
+		K.tabs({
+			id: 'fsD1',   //焦点图包裹id  
+			conId: "D1pic1",  //** 大图域包裹id  
+			tabId:"D1fBt",  
+			tabTn:"a",
+			conCn: '.fcon', //** 大图域配置class       
+			auto: 1,   //自动播放 1或0
+			effect: 'fade',   //效果配置
+			eType: 'click', //** 鼠标事件
+			pageBt:true,//是否有按钮切换页码
+			                       
+			interval: 3000  //** 停顿时间  
+		}) 
+	})  
+</script>	 
+</head>
+
+<body>
+            <link rel="shortcut icon" href="http://www.cs21.com.cn/ROOT/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="js/jquery.caroufredsel-6.0.4-packed.js" ></script>
+<script type="text/javascript" src="js/focus.js" ></script>
+	<div class="top">
+		<div class="top_txt">
+	<p>您好，欢迎进入长沙市第二十一中学官网!</p>
+			<div class="top_nav">
+				  <a href="goHome">网站首页 </a>   |  <a href="#" onclick="SetHome(this,window.location)" > 设为首页</a>    |  <a
+					href="http://www.cs21.com.cn:8080/"  target="_blank"> 怀念旧版 </a>   | <a href="gologin" target="_blank">  管理员入口</a> </div>
+			<div class="top_nav">
+				<form action="goquerylist" method="post" name="searchForm" id="searchForm">
+					<input type="text" class="search" placeholder="请输入关键字" name="title" id="title" value=""/>
+					<input type="submit" class="login" value="搜索" id="query_button" onclick="javascript:if($.trim($('#title').val())==''){alert('请输入关键词！');return false;}else{return true;}"/>
+		       </form> 
+		       </div>
+	</div>
+	</div>
+	<div class="banner">
+	<div class="logo"><img src="images/logo_03.png" /></div>
+	    <div class="banner_show" id="banner_show">
+	    <a href="#" target="_blank" class="bannger_inbox"><img src="images/banner_02.jpg" width="2000" height="500"></a>
+	    <a href="#" target="_blank" class="bannger_inbox"><img src="images/pic4_02.jpg" width="2000" height="500"></a>
+	    <a href="#" target="_blank" class="bannger_inbox"><img src="images/pic_02.jpg" width="2000" height="500"></a>
+	       <a href="#" target="_blank" class="bannger_inbox"><img src="images/pic3_02.jpg" width="2000" height="500"></a>
+	          <a href="#" target="_blank" class="bannger_inbox"><img src="images/pic2_02.jpg" width="2000" height="500"></a>
+	      <div class="banner_mag">
+	        <div class="yq_banner_list" id="yq_banner_list">
+	          <a href="javascript:;" rel="0" class="hover">&nbsp;</a>
+	          <a href="javascript:;" rel="1">&nbsp;</a>
+	          <a href="javascript:;" rel="2">&nbsp;</a>
+	           <a href="javascript:;" rel="3">&nbsp;</a>
+	            <a href="javascript:;" rel="4">&nbsp;</a>
+	          </div>
+	      </div>
+	         <div class="banner_pre_next">
+	        	<a href="javascript:;" class="banner_btn_left">上一个</a>
+	            <a href="javascript:;" class="banner_btn_right">下一个</a>
+	        </div>
+	    </div>
+	  </div>
+	<div class="page">
+	<ul class="nav" id="columnList">
+								<li><a href=goHome.do?columnId=2 >网站首页</a>
+								   |
+								</li>
+								<li><a href=goProfiles?columnId=3 >学校概况</a>
+								   |
+								</li>
+								<li><a href=goNewlist?columnId=4 >校园新闻</a>
+								   |
+								</li>
+								<li><a href=goNewlist?columnId=5 >校务公开</a>
+								   |
+								</li>
+								<li><a href=goPartyBuildingIndex?columnId=6 >党建专栏</a>
+								   |
+								</li>
+								<li><a href=goSunShineIndex?columnId=8 >阳光服务</a>
+								   |
+								</li>
+								<li><a href=goNewlist?columnId=110 >文明创建</a>
+								   |
+								</li>
+								<li><a href=goNewlist?columnId=9 >招生招聘</a>
+								   |
+								</li>
+								<li><a href=goNewlist?columnId=109 >民主党派</a>
+												</li>
+								<li><a href=goTeachManagerIndex?columnId=100 >教学管理</a>
+								   |
+								</li>
+								<li><a href=goNewlist?columnId=101 >教育科研</a>
+								   |
+								</li>
+								<li><a href=goNewlist?columnId=102 >教育督导</a>
+								   |
+								</li>
+								<li><a href=goNewlist?columnId=103 >学生工作</a>
+								   |
+								</li>
+								<li><a href=goNewlist?columnId=106 >教工之家</a>
+								   |
+								</li>
+								<li><a href=goNewlist?columnId=104 >后勤管理</a>
+								   |
+								</li>
+								<li><a href=goNewlist?columnId=105 >安全保卫</a>
+								   |
+								</li>
+								<li><a href=goNewlist?columnId=107 >团委风采</a>
+								   |
+								</li>
+								<li><a href=goNewlist?columnId=282&?columnId=111 >防震减灾</a>
+												</li>
+							</ul>
+	</div>
+
+
+
+            
+<div class="hsbj">
+	<div class="content txt">每周一语：古之欲明明德于天下者，先治其国；欲治其国者，先齐其家；欲齐其家者，先修其身；欲修其身者，先正其心。   ——《大学》</div>
+
+</div>
+<div class="content">
+	<div class="left">
+
+		<div class="left_about">
+			<ul class="title" id="tab1_li_now_">
+				<li class="now">校长寄语</li>
+				<li>学校简介</li>
+				<li>领导班子</li>
+			</ul>
+			<div>
+				<div id="tab1_1" class="about_cont">
+																				<div class="about_ctc">
+						<img src="images/index_11.jpg" width="295" height="202" />
+						　<a href="goNews2?id=721"  target="_blank">春华秋实，桃李沁香。在这美好的金秋时节，我们怀着喜悦的心情隆重庆祝第33个教师节。在此，我谨代表学校党委和行政，向辛勤工作在各个岗位的教职员工致以诚挚的问候和良好的祝愿！向关心、支持、参与学校改革发展的离退休老同志表示衷心的感谢和真切的祝福！</a>
+					</div>
+				</div>
+				<div id="tab1_2" class="about_cont none">
+					<div class="about_ctc">
+																				  <video controls="" src="http://www.cs21.com.cn/FileCenter/upfile/tt/2015xc.mp4" width="295" height="202" ></video>
+					　<a href="goNews?id=795"  target="_blank">湘江东畔，雨花山下，21中走了快一个甲子。近六十年风雨沧桑、薪火相传、生生不息。在市委、市政府和市教育局的正确领导和大力支持下，发扬艰苦奋斗、自强不息、敢为人先的精神，提出“办适合的教育，育负责的公民”的教育理念，深入推进教育教学改革，着力加强教师队伍建设，坚持立德树人，全面提升教育教学质量。近年来，学校先后被评为“湖南省文明卫生单位”、“湖南省安全文明校园”、“湖南省校务公开先进单位”、“湖南省科普教育示范校”、“长沙市文明标兵单位”、“长沙市学雷锋十佳先进集体”、“长沙市五老示范阵地”等等，学校内涵发展取得突破，形象声誉稳步提升，社会认可度不断增强。</a>
+					</div>
+				</div>
+				<div id="tab1_3" class="about_cont none">
+					<div class="about_ctc">
+					 <ul class="block block_w">
+												<li style="width: 130px; margin: 4px 4px;"><a href="goPiclist2?columnId=167" target="_blank">陈新春</a></li>
+												<li style="width: 130px; margin: 4px 4px;"><a href="goPiclist2?columnId=167" target="_blank">范如玲</a></li>
+												<li style="width: 130px; margin: 4px 4px;"><a href="goPiclist2?columnId=167" target="_blank">易建军</a></li>
+												<li style="width: 130px; margin: 4px 4px;"><a href="goPiclist2?columnId=167" target="_blank">文孟飞</a></li>
+												<li style="width: 130px; margin: 4px 4px;"><a href="goPiclist2?columnId=167" target="_blank">傅军</a></li>
+												<li style="width: 130px; margin: 4px 4px;"><a href="goPiclist2?columnId=167" target="_blank">周予哲</a></li>
+											</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="clear"></div>
+		<div class="title">
+			<div class="title_txt">通知公告</div>
+			<a class="more" href="goNewlist2?columnId=73" target="_blank">MORE ></a>
+		</div>
+		<ul class="l_high list list_bj" style="min-height: 204px;">
+									<li>
+								<a href="goNews2.do?id=4584" style="width: 295px; *width:295px;" title="2018年上学期5—8周文明班级评比" target="_blank">· 2018年上学期5—8周文明班级评比</a> 			</li>
+			 						<li>
+								<a href="goNews2.do?id=4533" style="width: 295px; *width:295px;" title="2018年长沙市第二十一中学高中招收特长生实施方案" target="_blank">· 2018年长沙市第二十一中学高中招收特长生实施方案</a> 			</li>
+			 						<li>
+								<a href="goNews2.do?id=4532" style="width: 295px; *width:295px;" title="2018年长沙市第二十一中学初中招收特长生实施方案" target="_blank">· 2018年长沙市第二十一中学初中招收特长生实施方案</a> 			</li>
+			 						<li>
+								<a href="goNews2.do?id=4520" style="width: 295px; *width:295px;" title="2018年上学期第1-4周文明班级评比" target="_blank">· 2018年上学期第1-4周文明班级评比</a> 			</li>
+			 						<li>
+								<a href="goNews2.do?id=4508" style="width: 295px; *width:295px;" title="2018年长沙市第二十一中学公开招聘编外合同制教师考试成绩公示一览表" target="_blank">· 2018年长沙市第二十一中学公开招聘编外合同制教师考试成绩公示一览表</a> 			</li>
+			 						<li>
+								<a href="goNews2.do?id=4507" style="width: 295px; *width:295px;" title="长沙市第二十一中学2018年春季编外合同制教师招聘笔试成绩公示" target="_blank">· 长沙市第二十一中学2018年春季编外合同制教师招聘笔试成绩公示</a> 			</li>
+			 		</ul>
+
+		<div class="title">
+			<div class="title_txt">学校机构</div>
+			<!--<a class="more" href="goNewlist?columnId=112" target="_blank">MORE ></a>-->
+		</div>
+		<div class="clear"></div>
+		<ul class="block block_w">
+						<li><a href="goOrgNews?id=3719" target="_blank">办公室</a></li>
+						<li><a href="goOrgNews?id=3749" target="_blank">教务处</a></li>
+						<li><a href="goOrgNews?id=3730" target="_blank">教育处</a></li>
+						<li><a href="goOrgNews?id=3750" target="_blank">教科室</a></li>
+						<li><a href="goOrgNews?id=3747" target="_blank">总务处</a></li>
+						<li><a href="goOrgNews?id=3722" target="_blank">保卫处</a></li>
+						<li><a href="goOrgNews?id=3721" target="_blank">工　会</a></li>
+						<li><a href="goOrgNews?id=3748" target="_blank">团　委</a></li>
+					</ul>
+
+
+	</div>
+	<div class="middle">
+        <ul class="title" id="tab6_li_now_">
+                <a class="more" href="goNewlist?columnId=162" target="_blank">MORE ></a>
+				<li class="now">校园新闻</li>			
+				<li>视频新闻</li>
+		</ul>
+		<ul id="tab6_1" class="list" style="margin-top:20px;">
+									<li>
+								      <a href="goNews?id=4622" target="_blank" title="学校举行第二十五期青年党校开班仪式 暨我校少年团校开课">· 学校举行第二十五期青年党校开班仪式 暨我校少年团校开课
+				      				        <img src="images/new_ico.gif"/>
+			          			        </a>				
+				<span>			
+			    					   2018-05-24
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4620" target="_blank" title="经典滋润人生，诗词传承文明 ——记长沙市第二十一中学第十四届读书节之初一年级“经典咏流传”古代诗词吟诵大赛">· 经典滋润人生，诗词传承文明 ——记长沙市第二十一中学第十四届读书节之初一年级“经典咏流传”古代诗词吟诵大赛
+				      				        <img src="images/new_ico.gif"/>
+			          			        </a>				
+				<span>			
+			    					   2018-05-23
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4616" target="_blank" title="二一学子的文化盛宴">· 二一学子的文化盛宴
+				      				        <img src="images/new_ico.gif"/>
+			          			        </a>				
+				<span>			
+			    					   2018-05-22
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4615" target="_blank" title="和谐、研究、热情 ——高三历史组积极应战2018年高考">· 和谐、研究、热情 ——高三历史组积极应战2018年高考
+				      				        <img src="images/new_ico.gif"/>
+			          			        </a>				
+				<span>			
+			    					   2018-05-21
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4608" target="_blank" title="未雨绸缪 ，同舟共济-----高二年级体育生家长会">· 未雨绸缪 ，同舟共济-----高二年级体育生家长会
+				      				        <img src="images/new_ico.gif"/>
+			          			        </a>				
+				<span>			
+			    					   2018-05-21
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4607" target="_blank" title="相约五月 静待花开">· 相约五月 静待花开
+				      				        <img src="images/new_ico.gif"/>
+			          			        </a>				
+				<span>			
+			    					   2018-05-21
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4604" target="_blank" title="与孩子同行——初一年级召开家长会">· 与孩子同行——初一年级召开家长会
+				      				        <img src="images/new_ico.gif"/>
+			          			        </a>				
+				<span>			
+			    					   2018-05-18
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4603" target="_blank" title="凝心聚力，超越自我——初一年级春季研学活动">· 凝心聚力，超越自我——初一年级春季研学活动
+				      				        <img src="images/new_ico.gif"/>
+			          			        </a>				
+				<span>			
+			    					   2018-05-18
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4602" target="_blank" title="初二年级5月语文教研活动">· 初二年级5月语文教研活动
+				      				        <img src="images/new_ico.gif"/>
+			          			        </a>				
+				<span>			
+			    					   2018-05-18
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4601" target="_blank" title="拨开云雾见日月 任务驱动巧支招 ——记语文教研组王满意老师作文指导课">· 拨开云雾见日月 任务驱动巧支招 ——记语文教研组王满意老师作文指导课
+				      				        <img src="images/new_ico.gif"/>
+			          			        </a>				
+				<span>			
+			    					   2018-05-18
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4600" target="_blank" title="聚焦中考题型 把脉“疑难杂症”">· 聚焦中考题型 把脉“疑难杂症”
+				      				        <img src="images/new_ico.gif"/>
+			          			        </a>				
+				<span>			
+			    					   2018-05-18
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4599" target="_blank" title="统筹规划组内事 开启新年新篇章——记2018年语文教研组首次活动开展">· 统筹规划组内事 开启新年新篇章——记2018年语文教研组首次活动开展
+				      				        <img src="images/new_ico.gif"/>
+			          			        </a>				
+				<span>			
+			    					   2018-05-18
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4588" target="_blank" title="培育家国情怀，吹响时代号角——政治教研组开展学习贯彻十九大精神主题“图说时政”比赛">· 培育家国情怀，吹响时代号角——政治教研组开展学习贯彻十九大精神主题“图说时政”比赛
+				      			        </a>				
+				<span>			
+			    					   2018-05-16
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4586" target="_blank" title="学校迎接市教育局校园环保工作检查">· 学校迎接市教育局校园环保工作检查
+				      			        </a>				
+				<span>			
+			    					   2018-05-15
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4585" target="_blank" title="阳光“三独”，争放光彩">· 阳光“三独”，争放光彩
+				      			        </a>				
+				<span>			
+			    					   2018-05-15
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4583" target="_blank" title="初一年级开展别开生面体育活动课">· 初一年级开展别开生面体育活动课
+				      			        </a>				
+				<span>			
+			    					   2018-05-14
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4581" target="_blank" title="2018年长沙市初中毕业生艺术考查在我校顺利进行">· 2018年长沙市初中毕业生艺术考查在我校顺利进行
+				      			        </a>				
+				<span>			
+			    					   2018-05-14
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4580" target="_blank" title="奋进新时代 青春勇担当">· 奋进新时代 青春勇担当
+				      			        </a>				
+				<span>			
+			    					   2018-05-14
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4571" target="_blank" title="学海无涯采众长  集思广益勤分享">· 学海无涯采众长  集思广益勤分享
+				      			        </a>				
+				<span>			
+			    					   2018-05-08
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4567" target="_blank" title="“让座”引发的思考">· “让座”引发的思考
+				      			        </a>				
+				<span>			
+			    					   2018-05-07
+					 				</span>
+							  </li>
+              						<li>
+								      <a href="goNews?id=4558" target="_blank" title="湖南省大中小学桥牌赛举行 长沙21中获4项第一">· 湖南省大中小学桥牌赛举行 长沙21中获4项第一
+				      			        </a>				
+				<span>			
+			    					   2018-05-02
+					 				</span>
+							  </li>
+              		</ul>
+		<ul id="tab6_2" class="list " style="margin-top:20px;display: none">
+									<li>
+								<a href="goNews?id=4579" target="_blank" title="【专题】2018十佳青年教师与校园之星采访视频">· 【专题】2018十佳青年教师与校园之星采访视频
+							</a>
+				
+				<span>
+			
+								2018-05-14  </span>
+							</li> 
+			 									<li>
+								<a href="http://www.cs21.com.cn/goTvVideoDetail?typeId=51" target="_blank" title="【新闻】第12期校园新闻">· 【新闻】第12期校园新闻
+							</a>
+				
+				<span>
+			
+								2018-05-14  </span>
+							</li> 
+			 									<li>
+								<a href="http://cs21.com.cn/goTvVideoDetail?typeId=49" target="_blank" title="【媒体报道】我校开展2018湖南省大中小学校桥牌比赛">· 【媒体报道】我校开展2018湖南省大中小学校桥牌比赛
+							</a>
+				
+				<span>
+			
+								2018-05-03  </span>
+							</li> 
+			 									<li>
+								<a href="http://cs21.com.cn/goTvVideoDetail?typeId=48" target="_blank" title="【春】2018.04.17 二一的四月天">· 【春】2018.04.17 二一的四月天
+							</a>
+				
+				<span>
+			
+								2018-05-03  </span>
+							</li> 
+			 									<li>
+								<a href="http://cs21.com.cn/goTvVideoDetail?typeId=47" target="_blank" title="【新闻】校园新闻第十一期">· 【新闻】校园新闻第十一期
+							</a>
+				
+				<span>
+			
+								2018-03-28  </span>
+							</li> 
+			 									<li>
+								<a href="http://www.cs21.com.cn/goTvVideoDetail?typeId=46" target="_blank" title="【新闻】2017年校园新闻第十期">· 【新闻】2017年校园新闻第十期
+							</a>
+				
+				<span>
+			
+								2018-01-26  </span>
+							</li> 
+			 									<li>
+								<a href="http://cs21.com.cn/goTvVideoDetail?typeId=44" target="_blank" title="【记实】2017初二年级综合实践活动记录">· 【记实】2017初二年级综合实践活动记录
+							</a>
+				
+				<span>
+			
+								2018-01-05  </span>
+							</li> 
+			 									<li>
+								<a href="http://cs21.com.cn/goTvVideoDetail?typeId=41" target="_blank" title="【优秀教案】2017年优秀教案专访">· 【优秀教案】2017年优秀教案专访
+							</a>
+				
+				<span>
+			
+								2018-01-05  </span>
+							</li> 
+			 									<li>
+								<a href="http://www.cs21.com.cn/goTvVideoDetail?typeId=38" target="_blank" title="【媒体报道】2017二十一中地质研学 教育电视台">· 【媒体报道】2017二十一中地质研学 教育电视台
+							</a>
+				
+				<span>
+			
+								2018-01-05  </span>
+							</li> 
+			 									<li>
+								<a href="http://www.cs21.com.cn/goTvVideoDetail?typeId=35" target="_blank" title="【新闻】2017年校园新闻第九期">· 【新闻】2017年校园新闻第九期
+							</a>
+				
+				<span>
+			
+								2018-01-03  </span>
+							</li> 
+			 									<li>
+								<a href="http://www.cs21.com.cn/goTvVideoDetail?typeId=33" target="_blank" title="【新闻】2017年校园新闻第八期">· 【新闻】2017年校园新闻第八期
+							</a>
+				
+				<span>
+			
+								2017-12-06  </span>
+							</li> 
+			 						<li>
+								<a href="goNews?id=4621" target="_blank" title="关注食品安全,共创美好生活">· 关注食品安全,共创美好生活
+								<img src="images/new_ico.gif"/>
+						</a>
+				
+				<span>
+			
+								2018-05-23  </span>
+							</li> 
+			 									<li>
+								<a href="http://www.cs21.com.cn/goTvVideoDetail?typeId=31" target="_blank" title="【新闻】2017年校园新闻第七期">· 【新闻】2017年校园新闻第七期
+							</a>
+				
+				<span>
+			
+								2017-11-08  </span>
+							</li> 
+			 									<li>
+								<a href="http://www.cs21.com.cn/goTvVideoDetail?typeId=30" target="_blank" title="【新闻】2017年校园新闻第六期">· 【新闻】2017年校园新闻第六期
+							</a>
+				
+				<span>
+			
+								2017-10-18  </span>
+							</li> 
+			 									<li>
+								<a href="http://www.cs21.com.cn/goTvVideoDetail?typeId=29" target="_blank" title="【新闻】2017年校园新闻第五期">· 【新闻】2017年校园新闻第五期
+							</a>
+				
+				<span>
+			
+								2017-09-19  </span>
+							</li> 
+			 						<li>
+								<a href="goNews?id=4587" target="_blank" title="后勤助力高考，爱心加油高三第二篇">· 后勤助力高考，爱心加油高三第二篇
+							</a>
+				
+				<span>
+			
+								2018-05-15  </span>
+							</li> 
+			 									<li>
+								<a href="http://www.cs21.com.cn/goTvVideoDetail?typeId=28" target="_blank" title="【新闻】2017年校园新闻第四期">· 【新闻】2017年校园新闻第四期
+							</a>
+				
+				<span>
+			
+								2017-06-06  </span>
+							</li> 
+			 									<li>
+								<a href="http://www.cs21.com.cn/goTvVideoDetail?typeId=27" target="_blank" title="【新闻】2017年校园新闻第三期">· 【新闻】2017年校园新闻第三期
+							</a>
+				
+				<span>
+			
+								2017-05-22  </span>
+							</li> 
+			 						<li>
+								<a href="goNews?id=4574" target="_blank" title="后勤助力高考，爱心加油高三！">· 后勤助力高考，爱心加油高三！
+							</a>
+				
+				<span>
+			
+								2018-05-09  </span>
+							</li> 
+			 									<li>
+								<a href="http://www.cs21.com.cn/goTvVideoDetail?typeId=25" target="_blank" title="【新闻】2017年校园新闻第二期">· 【新闻】2017年校园新闻第二期
+							</a>
+				
+				<span>
+			
+								2017-05-08  </span>
+							</li> 
+			 									<li>
+								<a href="http://www.cs21.com.cn/goTvVideoDetail?typeId=20" target="_blank" title="无声的文字，有声的倾诉”——遇见最美的朗读者">· 无声的文字，有声的倾诉”——遇见最美的朗读者
+							</a>
+				
+				<span>
+			
+								2017-05-04  </span>
+							</li> 
+			 									<li>
+								<a href="http://www.cs21.com.cn/goTvVideoDetail?typeId=18" target="_blank" title="气象科普万里行走进湖南 走进21校园">· 气象科普万里行走进湖南 走进21校园
+							</a>
+				
+				<span>
+			
+								2017-04-27  </span>
+							</li> 
+			 		</ul>
+		
+	</div>
+	<div class="right">
+		<div class="news_pic">
+
+			<div id="hotpic">
+            <div class="title">
+			<div class="title_txt">图片新闻</div><a class="more" href="goNewlist2?columnId=138" target="_blank">MORE ></a>
+		    </div>
+				<div  class="focus1" id="fsD1">
+				    
+										<div id="D1pic1" class="fPic">
+																									<div class="fcon" style="display: none;">
+                               <a target="_blank" href="goNews2?id=4173"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20170625\b514ea0f18b64f2c88a0265834fc7fa3.jpg" style="opacity: 1; "></a>
+                              <span class="shadow"><a target="_blank" href="#">2017年高考喜报</a></span>
+                   </div>
+																				<div class="fcon" style="display: none;">
+                               <a target="_blank" href="goNews2?id=4574"><img src="" style="opacity: 1; "></a>
+                              <span class="shadow"><a target="_blank" href="#">后勤助力高考，爱心加油高三！</a></span>
+                   </div>
+																				<div class="fcon" style="display: none;">
+                               <a target="_blank" href="goNews2?id=4360"><img src="" style="opacity: 1; "></a>
+                              <span class="shadow"><a target="_blank" href="#">轻舞飞扬，羽你飞翔</a></span>
+                   </div>
+																				<div class="fcon" style="display: none;">
+                               <a target="_blank" href="goNews2?id=4009"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20170418\fff39dd1eeee4cd680ac5eada8e7ca7e.jpg" style="opacity: 1; "></a>
+                              <span class="shadow"><a target="_blank" href="#">问得仔细      答得耐心 ——我校“赶集”长沙市小升初公益咨询会</a></span>
+                   </div>
+																				<div class="fcon" style="display: none;">
+                               <a target="_blank" href="goNews2?id=3964"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20170418\987cbff125e546e6b58410f5722cc1b4.jpg" style="opacity: 1; "></a>
+                              <span class="shadow"><a target="_blank" href="#">态度决定高度，一切皆有可能—---高二学考动员会</a></span>
+                   </div>
+										</div>
+					
+	<div class="fbg">  
+    <div class="D1fBt" id="D1fBt">  
+       
+        															 <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>1</i></a>  
+																												 <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a> 
+																												 <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>3</i></a> 
+																												 <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a> 
+																												 <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>5</i></a> 
+													    </div>  
+    </div> 
+
+				</div>
+			</div>
+		</div>
+
+		<ul class="title" id="tab7_li_now_">
+			<a class="more" href="goNewlist?columnId=95" id="tab7_a" target="_blank">MORE ></a>
+            <li class="now" data-id="95" data-val="tab7_1">周工作安排</li>
+			<li data-id="275" data-val="tab7_2">考勤栏</li>
+		</ul>
+		   
+		   
+		<div class="clear"></div>
+		<ul id="tab7_1" class="l_high list1 list_bj" style="min-height: 120px; overflow: hidden; height: 120px;">
+									<li>			<a href="goNews2?id=4606" title="第十二周工作安排" target="_blank" style="">· 第十二周工作安排
+							<img src="images/new_ico.gif"/>
+						</a>
+			<span>
+			
+								2018-05-21  </span>
+						</li>
+			 						<li>			<a href="goNews2?id=4576" title="第十一周工作安排" target="_blank" style="">· 第十一周工作安排
+						</a>
+			<span>
+			
+								2018-05-14  </span>
+						</li>
+			 						<li>			<a href="goNews2?id=4568" title="第十周工作安排" target="_blank" style="">· 第十周工作安排
+						</a>
+			<span>
+			
+								2018-05-07  </span>
+						</li>
+			 						<li>			<a href="goNews2?id=4559" title="第九周工作安排" target="_blank" style="">· 第九周工作安排
+						</a>
+			<span>
+			
+								2018-05-02  </span>
+						</li>
+			 						<li>			<a href="goNews2?id=4540" title="第八周工作安排" target="_blank" style="">· 第八周工作安排
+						</a>
+			<span>
+			
+								2018-04-23  </span>
+						</li>
+			 						<li>			<a href="goNews2?id=4523" title="第七周工作安排" target="_blank" style="">· 第七周工作安排
+						</a>
+			<span>
+			
+								2018-04-16  </span>
+						</li>
+			 
+		</ul>
+        <ul id="tab7_2" class="l_high list1 list_bj" style="min-height: 190px; overflow: hidden; height: 120px; display: none; ">
+									<li>
+								<a href="goNews?id=4605" target="_blank" title="2018年上学期第十二周考勤通报">· 2018年上学期第十二周考勤通报
+								<img src="images/new_ico.gif"/>
+						</a>
+				
+				<span>
+			
+								2018-05-21  </span>
+							</li> 
+			 						<li>
+								<a href="goNews?id=4577" target="_blank" title="2018年上学期第十一周考勤通报">· 2018年上学期第十一周考勤通报
+							</a>
+				
+				<span>
+			
+								2018-05-14  </span>
+							</li> 
+			 						<li>
+								<a href="goNews?id=4569" target="_blank" title="2018年上学期第十周考勤通报">· 2018年上学期第十周考勤通报
+							</a>
+				
+				<span>
+			
+								2018-05-07  </span>
+							</li> 
+			 						<li>
+								<a href="goNews?id=4541" target="_blank" title="2018年上学期第八周考勤通报">· 2018年上学期第八周考勤通报
+							</a>
+				
+				<span>
+			
+								2018-04-23  </span>
+							</li> 
+			 						<li>
+								<a href="goNews?id=4525" target="_blank" title="2018年上学期第七周考勤通报">· 2018年上学期第七周考勤通报
+							</a>
+				
+				<span>
+			
+								2018-04-16  </span>
+							</li> 
+			 		</ul>
+		<ul class="awm" style="margin-top:6px;">
+			<li style="margin-left:20px;line-height: 28px; background: orange; height: 60px; margin-bottom: 6px;" >
+				<a href="http://www.cs21.com.cn/studio/front/skipControl?type=ygfsx" target="_blank"><img src="images/ygf.gif" width="272" height="60" /></a>
+			</li>
+			<li style="margin-left:20px;line-height: 28px;" >
+				<a href="http://vip.csqx.com:8080/21weather" target="_blank"><img src="images/qixiang.jpg" width="272" height="60" /></a>
+			</li>
+		</ul>
+		<ul class="awm" style="margin-top:4px;">
+							<li style="margin-left:20px" ><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20170328\9090f50ec85e4ec99ecc9c1edba4c127.jpg" width="128" height="128" />
+				<p>学校官方微信</p>
+				</li>
+							<li style="margin-left:20px" ><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20161107\9cea32ff24744aecbe37cd1628610518.png" width="128" height="128" />
+				<p>二十一中党建网</p>
+				</li>
+					</ul>
+	</div>
+
+<div class="clear"></div>
+
+
+
+	<div class="left ">
+		<div class="title">
+			<div class="title_txt">服务平台</div>			 
+		</div>
+		<div class="clear"></div>
+		<ul class="block_w1 block " style="min-height: 250px;">						
+			<li><a href="goNewlist?columnId=204" target="_blank">资源中心</a></li>
+			<li><a href="queryTeacherCourse" target="_blank">课表查询</a></li>
+			<li><a href="queryStudentSorce" target="_blank">成绩查询</a></li>
+			<li><a href="queryStudentCode" target="_blank">学籍号查询</a></li>
+			<li><a href="http://172.49.12.46/ameqp" target="_blank" >阅卷系统</a></li>
+			<li><a href="gotvhome" target="_blank">校园电视台</a></li>
+			<li><a href="goRegistration?columnId=175" target="_blank">网上报名</a></li>
+			<li><a href="queryPerformance" target="_blank">绩效查询</a></li>
+			<li><a href="http://172.49.18.20:8000/" target="_blank">电子图书馆</a></li>			
+			<li><a href="http://172.49.11.3/reportRepair" target="_blank">网上报修</a></li>
+		</ul>
+		<div class="clear"></div>
+		<div class="title">
+			<div class="title_txt">学科频道</div>
+			<a class="more" href="goNewlist?columnId=115" target="_blank">MORE ></a>
+		</div>
+		<div class="clear"></div>
+		<ul class="block_w block" id="course_ul">
+
+		</ul>
+
+		<div class="clear"></div>
+		<div class="title">
+			<div class="title_txt">名师在线</div>
+			<a class="more" href="goPiclist?columnId=117" target="_blank">MORE ></a>
+		</div>
+		<div class="clear"></div>
+		<ul class="block_w block ">
+												<li><a href="goNewsPic?id=3097" class="red" target="_blank">易建军</a></li>
+												<li><a href="goNewsPic?id=3093" class="red" target="_blank">文孟飞</a></li>
+												<li><a href="goNewsPic?id=3098" class="red" target="_blank">张南平</a></li>
+												<li><a href="goNewsPic?id=3096" class="red" target="_blank">姚贵丰</a></li>
+												<li><a href="goNewsPic?id=3095" class="red" target="_blank">熊国斌</a></li>
+												<li><a href="goNewsPic?id=3092" class="red" target="_blank">王琴</a></li>
+												<li><a href="goNewsPic?id=3094" class="red" target="_blank">肖军荣</a></li>
+												<li><a href="goNewsPic?id=3090" class="red" target="_blank">邵国光</a></li>
+												<li><a href="goNewsPic?id=3099" class="red" target="_blank">张伟</a></li>
+												<li><a href="goNewsPic?id=3951" class="red" target="_blank">傅先君</a></li>
+												<li><a href="goNewsPic?id=3091" class="red" target="_blank">盛灿</a></li>
+						
+		</ul>
+	</div>
+	<div class="list_center" id="one">
+		<ul class="title" id="tab2_li_now_">
+        <a class="more" href="goPartyBuildingIndex" id="tab2_a">MORE ></a>
+			<li class="now" data-id="128" data-val="tab2_1">党建专栏</li>
+			<li data-id="5" data-val="tab2_2">校务公开</li>
+			<li data-id="7" data-val="tab2_3">党风廉政</li>
+			<li data-id="84" data-val="tab2_4">阳光服务</li>
+			
+		</ul>
+		<div class="clear"></div>
+		<ul class="l_high  list" id="tab2_1" style="min-height: 250px;">
+			 
+		</ul>
+
+		<ul class="l_high  list none" id="tab2_2" style="min-height: 250px;">
+			 
+		</ul>
+
+		<ul class="l_high  list none" id="tab2_3" style="min-height: 250px;">
+			 
+		</ul>
+
+		<ul class="l_high  list none" id="tab2_4" style="min-height: 250px;">
+			 
+		</ul>
+		<div class="title">
+			<div class="title_txt">教学管理</div>
+			<a class="more" href="goTeachManagerIndex?columnId=100" target="_blank">MORE ></a>
+		</div>
+		<div class="clear"></div>
+		<ul class="l_high list" id="teach_ul" style="min-height: 200px;">
+			 
+		</ul>
+
+		<div class="title">
+			<div class="title_txt">学生工作</div>
+			<a class="more" href="goNewlist?columnId=103" target="_blank">MORE ></a>
+		</div>
+		<div class="clear"></div>
+		<ul class="l_high list" id="student_ul" style="min-height: 160px;">
+			 
+		</ul>
+	</div>
+
+	<div class="list_center">
+		<ul class="title" id="tab3_li_now_">
+        <a class="more" href="#" id="tab3_a">MORE ></a>
+		    <li class="now" data-id="108" data-val="tab3_1">学生园地</li>
+			<li  data-id="11" data-val="tab3_2">教师园地</li>			
+			<li data-id="97" data-val="tab3_3">年级动态</li>
+			<li data-id="149" data-val="tab3_4">办学特色</li>
+			
+		</ul>
+
+		<div class="clear"></div>
+		<ul class="l_high  list" id="tab3_1" style="min-height: 250px;">
+			 
+		</ul>
+
+		<ul class="l_high  list none" id="tab3_2" style="min-height: 250px;">
+			 
+		</ul>
+
+		<ul class="l_high  list none" id="tab3_3" style="min-height: 250px;">
+			 
+		</ul>
+
+		<ul class="l_high  list none" id="tab3_4" style="min-height: 250px;">
+			 
+		</ul>
+
+		<ul class="title" id="tab4_li_now_">
+			<a class="more" href="goNewlist?columnId=101" id="tab4_a" target="_blank">MORE ></a>
+            <li class="now" data-id="101" data-val="tab4_1">教育科研</li>
+			<li data-id="102" data-val="tab4_2">教育督导</li>
+			
+		</ul>
+
+		<div class="clear"></div>
+		<ul class="l_high  list" id="tab4_1" style="min-height: 200px;">
+			 
+		</ul>
+
+		<ul class="l_high  list none" id="tab4_2" style="min-height: 200px;">
+			 
+		</ul>
+		<div class="title">
+			<div class="title_txt">教工之家</div>
+			<a class="more" href="goNewlist?columnId=106" target="_blank">MORE ></a>
+		</div>
+		<div class="clear"></div>
+		<ul class="l_high list" id="teach_home_ul">
+			 
+		</ul>
+
+	</div>
+
+	<div class="clear"></div>
+	<div class="index_pic">
+		<div class="pic_title pic_title_h1">
+			学<br/>校<br/>荣<br />誉
+		</div>
+		<div id="demo_u_3">
+			<div id="demo_con_3">
+				<div id="demo_u1_3">
+		<ul class="pic_list" id="school_pic_ul">
+			 
+		</ul>
+		 </div>
+        <div id="demo_u2_3"></div>
+        </div></div>
+	</div>
+
+	<div class="left">
+		<div class="title">
+			<div class="title_txt">国旗下讲话</div>
+			<a class="more" href="goNews2?id=703" target="_blank">MORE ></a>
+		</div>
+		<div class="clear"></div>
+		<div class="about_cont ldj_img">
+		    <img src="images/toms_tu3.gif" />
+						<div style="line-height: 30px; text-indent: 2em;">
+			 在全国上下隆重纪念抗日战争暨世界反法西斯胜利70周年之际，我们迎来了新的一年。本学期，有21位新老师，430多位高一新同学、570多位初一新同学来到我们21中这个温暖的大家庭，成为我们一起学习、生活的挚友与伙伴。让我们以掌声对他们的到来表示热烈的欢迎！借此机会，我谨代表学校党委行政工会向全体师生员工致以新学期的问候和美好祝愿......			
+			</div>
+									<a href="goNews2?id=703" class="morebj" target="_blank">MORE></a>
+		</div>
+		<div class="clear"></div>
+		<div class="email" style="background: #fff6ed; height: 170px; margin-top: 20px;">
+			<a href="mailto:308751919.qq.com"><img src="images/index_41.png" width="94" height="92" />
+			<p>校长邮箱</p></a> 
+			<a href="mailto:314709827.qq.com"><img src="images/index_43.png" width="93" height="92" />
+			<p>书记邮箱</p> </a>
+		</div>
+
+	</div>
+	<div class="list_center">
+		<ul class="title" id="tab5_li_now_">
+			<a class="more" href="goNewlist?columnId=174" id="tab5_a" target="_blank">MORE ></a>
+            <li class="now" data-id="174" data-val="tab5_1">招生招聘</li>			
+		</ul>
+		<div class="clear"></div>
+		<ul class="l_high  list" id="tab5_1" style="min-height: 230px;">
+			 
+		</ul>
+
+		<div class="title">
+			<div class="title_txt">后勤管理</div>
+			<a class="more" href="goNewlist2?columnId=104" target="_blank">MORE ></a>
+		</div>
+		<div class="clear"></div>
+		<ul class="l_high  list" id="lgts_manager_ul" style="min-height: 200px;">
+
+		</ul>
+	</div>
+	<div class="list_center">
+		<div class="title">
+			<div class="title_txt">团委风采</div>
+			<a class="more" href="goNewlist2?columnId=107" target="_blank">MORE ></a>
+		</div>
+		<div class="clear"></div>
+		<ul class="l_high list" id="tw_style_ul" style="min-height: 230px;">
+
+		</ul>
+		<div class="title">
+			<div class="title_txt">安全保卫</div>
+			<a class="more" href="goNewlist?columnId=105" target="_blank">MORE ></a>
+		</div>
+		<div class="clear"></div>
+		<ul class="l_high  list" id="safes_ul" style="min-height: 200px;">
+			 
+		</ul>
+	</div>
+
+	<div class="clear"></div>
+	<div class="index_pic">
+		<div class="pic_title pic_title_h1">
+			校<br />园<br/>风<br/>采
+		</div>
+		<div id="demo_u_2">
+			<div id="demo_con_2">
+				<div id="demo_u1_2">
+					<ul class="pic_list" id="school_style_pic_ul">
+						 
+					</ul>
+				</div>
+				<div id="demo_u2_2"></div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="index_pic">
+		<div class="pic_title pic_title_h1" style="height: 188px">
+			友<br />情<br/>链<br/>接
+		</div>
+		 <div id="demo_u_4">
+			<div id="demo_con_4">
+				<div id="demo_u1_4">
+		<ul class="pic_list" style="float: right; width: 1147px; padding-top: 10px;">
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.nncc626.com/" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20170802\2d341d96e35a4683950a1903d97c1a3f.jpg" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.hnjd.net/index.html" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20170802\c14c0bcef5444a1d89f393c961e61e45.jpg" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.hnedu.cn/" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20170329\3abd2a7acaec451aa42ee3c94ab4e64d.jpg" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.csedu.gov.cn/" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20161109\d55f7fee104549d7a3f3a2602e098ba1.png" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://edu.yuhua.gov.cn/" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20161109\0734ea68cf1141d3bb7f816087a2b58c.png" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.hnjky.net" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20161109\d71fd8e9ac4c412286c1af402efb4a75.png" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.hnfms.com.cn" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20161109\e24f93e1adbe4ce9a3499a985a73bf27.jpg" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.hbhz.net/index.asp" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20161115\8603e1469b3645a0a93c50e513b456c6.gif" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.rdfz.cn/" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20161115\94d0f37515a24e3187b128bf180c43f4.jpg" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.shs.sh.cn/" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20161115\bec1697afcfc4a0e86538116eb3677d7.jpg" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.qfls.com.cn/" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20161109\4bd14559cec040348615d92d741eb8bb.png" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.lyyzedu.com/" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20170329\b4ab82e873c7489e8b85157d785337c7.jpg" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.hnzyzx.com/?&code=6" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20170329\fae54d0a08354fc498fa34a955681924.jpg" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.zxxk.com/" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20161109\20b7ef144e6d4754b65d360f40fa512a.png" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.hnteacher.net/" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20161205\bd8e3c6d703845da9a22a1b1a09c8d7f.png" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.etiantian.com/" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20161115\1a24fedd949b4101881c65a31e011179.jpg" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.ttshopping.net/" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20171115\99104744817b4fb5891d1112632bc825.png" width="167" height="47"/></a></li> 
+						   <li style="margin-top: 0px; margin-bottom: 5px;"><a href="http://www.ziyuanku.com/" class="red" target="_blank"><img src="http://www.cs21.com.cn:80\/FileCenter\upfile\20171115\2e13ae71d6694690b67f3d57359ed7d6.png" width="167" height="47"/></a></li> 
+					</ul>
+		 </div>
+        <div id="demo_u2_4"></div>
+        </div></div>
+	</div>
+</div>            <div style="clear: both;"></div>
+<div class="bottom" style="height:240px;">
+<div class="bottom_txt">
+<p><!-- <img src="images/index_45.jpg" width="62" height="76" /> -->
+	<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/19/282/0000/60565201/CA192820000605652010001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+	</p>
+湖南省长沙市第二十一中学 版权所有  湘教QS7_201312_001740<br/> 
+湘ICP电子备案10006984号   联系电话 0731-85579529<br/>
+<div style="margin:0 auto;">
+		 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43011102000881" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff;"><img src="images/gatb.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;">湘公网安备 43011102000881号</p></a>
+		 	</div>
+  技术支持：湖南亿谷科技发展股份有限公司<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260776056'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260776056%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><br/>
+</div>
+</div>            
+<script type="text/javascript">
+	// JavaScript Document
+	// 加入收藏 < a onclick="AddFavorite(window.location,document.title)" >加入收藏< /a>	
+	function AddFavorite(sURL, sTitle)
+	{
+	    try
+	    {
+	        window.external.addFavorite(sURL, sTitle);
+	    }
+	    catch (e)
+	    {
+	        try
+	        {
+	            window.sidebar.addPanel(sTitle, sURL, "");
+	        }
+	        catch (e)
+	        {
+	            alert("加入收藏失败，请使用Ctrl+D进行添加");
+	        }
+	    }
+	}
+	//设为首页 < a onclick="SetHome(this,window.location)" > 设为首页 < /a>
+	function SetHome(obj,vrl){
+	        try{
+	                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+	        }
+	        catch(e){
+	                if(window.netscape) {
+	                        try {
+	                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+	                        }
+	                        catch (e) {
+	                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+	                        }
+	                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+	                        prefs.setCharPref('browser.startup.homepage',vrl);
+	                 }
+	        }
+	}
+	
+   
+                    
+   
+	
+	var speed4=40;
+    var tab2_4=document.getElementById("demo_u_4");
+    var tab12_4=document.getElementById("demo_u1_4");
+    var tab13_4=document.getElementById("demo_u2_4");
+    tab13_4.innerHTML=tab12_4.innerHTML;
+    function Marquee4(){
+        if(tab13_4.offsetWidth-tab2_4.scrollLeft<=0){
+            tab2_4.scrollLeft-=tab12_4.offsetWidth;
+        }else{
+            tab2_4.scrollLeft++;
+        }
+    }
+    var MyMar4=setInterval(Marquee4,speed4);
+    tab2_4.onmouseover=function() {clearInterval(MyMar4)};
+    tab2_4.onmouseout=function() {MyMar4=setInterval(Marquee4,speed4)};
+                      
+                      
+      </script>
+      
+       <script type="text/jscript">
+     
+    var xPos = 10;
+    var yPos = 10;
+    var step = 0.5;
+    var delay = 1;
+    var height = 0;
+    var Hoffset = 0;
+    var Woffset = 0;
+    var yon = 0;
+    var xon = 0;
+    var pause = true;
+    var interval;
+    function changePos() {
+        width = document.body.clientWidth;
+        height = document.body.clientHeight;
+        Hoffset = img.offsetHeight;
+        Woffset = img.offsetWidth;
+        img.style.left = xPos + document.body.scrollLeft + "px";
+        img.style.top = yPos + document.body.scrollTop + "px";
+        if (yon) {
+            yPos = yPos + step;
+        }else {
+            yPos = yPos - step;
+        }
+        if (yPos < 0 || yPos > 800) {
+            yon = 1;
+            yPos = 0;
+        }
+        if (yPos >= (height - Hoffset)) {
+            yon = 0;
+            yPos = (height - Hoffset);
+        }
+        if (xon) {
+            xPos = xPos + step;
+        }else {
+            xPos = xPos - step;
+        }
+        if (xPos < 0) {
+            xon = 1;
+            xPos = 0;
+        }
+        if (xPos >= (width - Woffset)) {
+            xon = 0;
+            xPos = (width - Woffset);
+        }
+    }
+    function start() {
+        img.visibility = "visible";
+        interval = setInterval('changePos()', delay);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1021 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>九峰实验学校</title>
+<link href="images/css.css" rel="stylesheet" type="text/css" />
+
+<script src="/js/jquery.min.js"></script>
+
+
+
+
+<!--双联浮动广告-->
+<!--
+<script language=JavaScript src="/wsbm/js/yugao_2014YZ.js" >
+</script>
+-->
+
+
+
+
+<!--招生简章 双联浮动广告-->
+<script language=JavaScript src="/js/2017zsjz.js" >
+</script>
+
+
+
+
+
+
+
+
+<!--
+
+<DIV id=img1 style="Z-INDEX: 100; LEFT: 2px; WIDTH: 59px; POSITION: absolute; TOP: 43px; HEIGHT: 61px;
+ visibility: visible;"><a href="http://www.jfzx.sjedu.cn/xwgg/xyxw/201404/464034.shtml" target="_blank"><img src="/js/images/2016zsjz.png" width="325" height="178" border="0"></a></DIV>
+<SCRIPT src="js/piaofu.js"></SCRIPT>
+-->
+
+<!--校园开放日DIV-->
+<!--
+<DIV id=YCXYKFR style="Z-INDEX: auto; TOP: 43px; LEFT: 50px; WIDTH: 384px; HEIGHT: 225px;
+POSITION: absolute;  visibility: visible;"><a href="http://www.jfzx.sjedu.cn/xydt/ggtz/201803/664866.shtml" target="_blank"><img src="/js/images/2018YCZSXYKFR.png" width="384" height="225" border="0"></a></DIV>
+-->
+
+<!--校园开放日DIV-->
+
+<!--校园开放日穿梭-->
+<!--
+<script language=JavaScript src="js/YCZSXYKFR.js" >
+</script>
+-->
+
+
+<!--穿梭浮动开始-->
+<!--
+<DIV id=img1 style="Z-INDEX: 10; TOP: 50px; LEFT: 50px; WIDTH: 384px; HEIGHT: 225px;
+POSITION: absolute;  visibility: visible;"><a href="http://www.jfzx.sjedu.cn/xydt/ggtz/201803/664866.shtml" target="_blank"><img src="/js/images/2018YCZSXYKFR.png" width="384" height="225" border="0"></a></DIV>
+<script >
+var xPos = 500;
+var yPos = 300; 
+var step = 1;
+var delay = 30; 
+var height = 0;
+var Hoffset = 0;
+var Woffset = 0;
+var yon = 0;
+var xon = 0;
+var pause = true;
+var interval;
+img1.style.top = yPos;
+function changePos() 
+{
+ width = document.body.clientWidth;
+ height = document.body.clientHeight;
+ Hoffset = img1.offsetHeight;
+ Woffset = img1.offsetWidth;
+ img1.style.left = xPos + document.body.scrollLeft;
+ img1.style.top = yPos + document.body.scrollTop;
+ if (yon) 
+  {yPos = yPos + step;}
+ else 
+  {yPos = yPos - step;}
+ if (yPos < 0) 
+  {yon = 1;yPos = 0;}
+ if (yPos >= (height - Hoffset)) 
+  {yon = 0;yPos = (height - Hoffset);}
+ if (xon) 
+  {xPos = xPos + step;}
+ else 
+  {xPos = xPos - step;}
+ if (xPos < 0) 
+  {xon = 1;xPos = 0;}
+ if (xPos >= (width - Woffset)) 
+  {xon = 0;xPos = (width - Woffset);   }
+ }
+ 
+ function start()
+  {
+   img1.visibility = "visible";
+  interval = setInterval('changePos()', delay);
+ }
+ function pause_resume() 
+ {
+  if(pause) 
+  {
+   clearInterval(interval);
+   pause = false;}
+  else 
+  {
+   interval = setInterval('changePos()',delay);
+   pause = true; 
+   }
+  }
+ start();</script>
+
+-->
+<!--穿梭浮动结束-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+//m选项卡数目
+//n当前选项卡编号
+function setTab(m,n){
+	var menu=document.getElementById("tab"+m).getElementsByTagName("li");   //获取ID为tab+m标签下的li标签
+	var showdiv=document.getElementById("tablist"+m).getElementsByTagName("div");   //获取ID为tablist+m标签下的div标签
+	for(i=0;i<menu.length;i++)
+	{
+		menu[i].className=i==n?"now":"";   //如果i=n;那么menu[i].classname为now
+		showdiv[i].style.display=i==n?"block":"none";   //如果如果i=n;那么showdiv[i].style.display为block"
+	}
+}
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>九峰实验学校</title>
+<link href="/static/css/css.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="/static/images/index_title.gif" width="380" height="76" /></td>
+    <td width="450" height="40" valign="bottom"><iframe src='http://cms2.sjedu.cn:8080/intertid-cms-web/select/select_all_41.jsp'  name='comment' width='410' marginwidth='0' height='30' marginheight='0' scrolling='No' frameborder='0' id="comment" allowtransparency="true"></iframe><table width="100%" height="15" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td> </td>
+  </tr>
+</table></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+</table>
+<table width="980" border="0" align="center" cellpadding="10" cellspacing="1">
+  <tr>
+    <td height="20" align="left"><div id="menu">
+        <ul>
+          <li><a href="/index.shtml" id="ok">首 页</a></li>
+          <li><a href="/xydt/index.shtml">校园动态</a></li>
+          <li><a href="/xxgk/index.shtml">信息公开</a></li>
+          <li><a href="/jxky/index.shtml">教学科研</a></li>
+          <li><a href="/dyjy/index.shtml">德育教育</a></li>
+          <li><a href="/dwjs/index.shtml">队伍建设</a></li>
+          <li><a href="/xstd/index.shtml">学生天地</a></li>
+          <li><a href="/djgz/index.shtml">党建工作</a></li>
+          <li><a href="/tdhd/index.shtml">团队活动</a></li>
+          <li><a href="/xxgl/index.shtml">学校管理</a></li>
+          <li><a href="/jyjs/index.shtml">教育技术</a></li>
+          <li ><a href="/2017-2018wmcj/index.shtml">上海市文明校园创建</a></li>
+        </ul>
+      </div></td>
+  </tr>
+</table>
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="980" height="292">
+          <param name="movie" value="/static/flash/banner_index.swf">
+<param value="opaque" />
+<embed wmode="opaque"></embed>
+          <param name="quality" value="high">
+          <PARAM NAME="wmode" VALUE="transparent">
+          <embed src="/static/flash/banner_index.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="292"></embed>
+        </object></td>
+  </tr>
+<tr>
+<td><a href="http://www.jfzx.sjedu.cn/2017-2018wmcj/index.shtml" target="_blank"><img src="/images/wmcj_mini.jpg" border="0"/></a></td>
+</tr>
+</table>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="232" align="center" id="left"><form id="form5" name="form5" method="post" action="http://cms2.sjedu.cn:8080/intertid-cms-web/main/process">
+        <table width="100%" background="/static/images/jfzxloginbg.gif" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="61" height="79"><img src="/static/images/login_1.gif" width="61" height="79" /></td>
+            <td width="93" height="79" valign="bottom" background="/static/images/login_2.gif">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="65" align="center"><input name="j_username" type="text" class="login" id="username" size="12" />
+                    <input name="j_password" type="password" class="login" id="password" size="12" /></td>
+                </tr>
+              </table></td>
+            <td width="78" height="79" valign="bottom" background="/static/images/login_3.gif">
+                <input type="image" name="imageField2" id="imageField2" src="/static/images/login_6.gif" />
+              </td>
+          </tr>
+          <tr>
+            <td colspan="3"><img src="/static/images/login_4.gif" width="232" height="27" /></td>
+          </tr>
+        </table>
+      </form>
+      <table width="90%" border="0" cellpadding="4" cellspacing="1" id="wzgg">
+        <tr>
+          <td height="20"> </td>
+        </tr>
+        <tr>
+          <td height="100" align="left">
+          <table width="100%"  border="0" cellspacing="0" cellpadding="0" align="left">
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='/xydt/ggtz/201803/666561.shtml' target='_self' class='leftlist' title='九峰实验学校2018年六年级招生有关问答'>九峰实验学校2018...</a>
+</td></tr>
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='/xydt/ggtz/201803/666225.shtml' target='_self' class='leftlist' title='九峰实验学校2018年六年级新生招生简章'>九峰实验学校2018...</a>
+</td></tr>
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='/xydt/ggtz/201803/664866.shtml' target='_self' class='leftlist' title='2018年九峰实验学校预初招生校园开放日通知'>2018年九峰实验学...</a>
+</td></tr>
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='/xydt/ggtz/201801/659363.shtml' target='_self' class='leftlist' title='关于第33届上海市青少年科技创新大赛的网上申报通知'>关于第33届上海市青...</a>
+</td></tr>
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='/xydt/ggtz/201712/645401.shtml' target='_self' class='leftlist' title='关于2017年度考核工作的安排'>关于2017年度考核...</a>
+</td></tr>
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='/xydt/ggtz/201711/643314.shtml' target='_self' class='leftlist' title='2017年九峰实验学校招聘简章'>2017年九峰实验学...</a>
+</td></tr>
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='http://cms2.sjedu.cn:9040/images/xydt/ggtz/201710/2017101412194693478.docx' target='_self' class='leftlist' title='九峰实验学校2017年头脑奥林匹克创新学习活动'>九峰实验学校2017...</a>
+</td></tr>
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='/xydt/ggtz/201709/631460.shtml' target='_self' class='leftlist' title='本学年心理辅导小屋开放啦！'>本学年心理辅导小屋开...</a>
+</td></tr>
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='http://www.jfzx.sjedu.cn/xxxxgk/zxfw/bgxz/szjs/201706/625450.shtml' target='_self' class='leftlist' title='松江区九峰实验学校教师履行职责考核表'>松江区九峰实验学校教...</a>
+</td></tr>
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='/xydt/ggtz/201703/609079.shtml' target='_self' class='leftlist' title='2017年六年级新生招生简章'>2017年六年级新生...</a>
+</td></tr>
+</table>
+
+          
+          </td>
+        </tr>
+        <tr>
+          <td height="20" align="left"><a href="/xydt/ggtz/index.shtml"><img src="/static/images/left_more.gif" width="82" height="15" border="0" /></a></td>
+        </tr>
+      </table>
+      <br />
+      <table width="231" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td colspan="3"><img src="/static/images/left_spxw_1.gif" width="231" height="55" /></td>
+        </tr>
+        <tr>
+          <td width="26"><img src="/static/images/left_spxw_2.gif" width="26" height="120" /></td>
+          <td width="147" background="/static/images/left_spxw_3.gif" align="center" valign="top"><!--播放器开始-->
+<script type='text/javascript' src="/static/js/silverlight.js"></script>
+<script type='text/javascript' src="/static/js/wmvplayer.js"></script>
+<script type="text/javascript" src="/static/js/swfobject.js"></script> 
+<script type="text/javascript">
+
+	var _file = "";
+	var _image = "";
+	var _width='140';
+	var _height='100';
+		_file = 'xuexiao/jfzx/spxw/2013/20zhounianxiaoqingjiankuang.flv';
+		_image = '/images/xydt/spxw/201311/2013111210383428014.png';
+	
+	var so = new SWFObject('/static/flash/player.swf','mpl',_width,_height,'9');
+	so.addParam('allowscriptaccess','always');
+	so.addParam('allowfullscreen','true');
+	so.addParam('flashvars','file='+_file+'&image='+_image+'&frontcolor=6666FF&lightcolor=000099&bufferlength=5&autostart=false&streamer=rtmp://flv.sjedu.cn/vod/&stretching=fill');
+
+//	var filetype = 'flv';
+	var filetype = 'flv';
+	
+//flv
+	if (filetype == "flv") {   
+		document.write("<div id='container_id'><a href='http://www.macromedia.com/go/getflashplayer'>Get the Flash Player</a> to see this player.</div>");
+		so.write('container_id');
+	} else {
+	
+//wmv
+		document.write("<div name='mediaspace' id='mediaspace'></div>");
+		var cnt = document.getElementById("mediaspace");
+		var src = '/static/js/wmvplayer.xaml';
+		var cfg = {
+			file:_file,
+			image:_image,
+			frontcolor:'#6666FF',
+			lightcolor:'#000099',
+			bufferlength:'15',
+			height:_width,
+			width:_width
+		};
+		var ply = new jeroenwijering.Player(cnt,src,cfg);
+
+	}  
+</script>
+<!--播放器结束-->
+</td>
+          <td width="58"><img src="/static/images/left_spxw_4.gif" width="58" height="120" border="0" usemap="#spxw"/></td>
+        </tr>
+      </table>
+      <br />
+      <table width="90%" border="0" cellpadding="4" cellspacing="1" id="zsxx">
+        <tr>
+          <td height="20"> </td>
+        </tr>
+        <tr>
+          <td height="100" align="left">
+             <table width="100%"  border="0" cellspacing="0" cellpadding="0" align="left">
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='/xxxxgk/xxgk/xxyw/zsks/zsfa/201703/609037.shtml' target='_self' class='leftlist' title='2017年六年级新生招生简章'>2017年六年级新生...</a>
+</td></tr>
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='/xxxxgk/xxgk/xxyw/zsks/zsfa/201604/566086.shtml' target='_self' class='leftlist' title='2016年六年级新生招生简章'>2016年六年级新生...</a>
+</td></tr>
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='/xxxxgk/xxgk/xxyw/zsks/zsfa/201504/514186.shtml' target='_self' class='leftlist' title='2015年六年级新生招生简章'>2015年六年级新生...</a>
+</td></tr>
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='/xxxxgk/xxgk/xxyw/zsks/zsfa/201404/464035.shtml' target='_self' class='leftlist' title='2014年六年级新生招生简章'>2014年六年级新生...</a>
+</td></tr>
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='/xxxxgk/xxgk/xxyw/zsks/zsfa/201304/396976.shtml' target='_self' class='leftlist' title='2013年六年级新生招生简章'>2013年六年级新生...</a>
+</td></tr>
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='/xxxxgk/xxgk/xxyw/zsks/zsfa/201204/324356.shtml' target='_self' class='leftlist' title='2012年六年级新生招生简章'>2012年六年级新生...</a>
+</td></tr>
+<tr>
+<td><img src="/static/images/icon_left_green.gif" width="27" height="11" border="0" /></td>
+<td>
+<a href='/xxxxgk/xxgk/xxyw/zsks/zsfa/s/zsfa/201111/132523.shtml' target='_self' class='leftlist' title='2011年六年级学生招生简章'>2011年六年级学生...</a>
+</td></tr>
+</table>
+
+          </td>
+        </tr>
+        <tr>
+          <td height="20" align="left"><a href="/xxxxgk/xxgk/xxyw/zsks/index.shtml"><img src="/static/images/left_more.gif" width="82" height="15" border="0" /></a></td>
+        </tr>
+      </table>
+      <br />
+      <a href="http://www.sjedu.cn"><img src="/static/images/left_link1.gif" width="214" height="35" vspace="4" border="0" /></a><a href="http://www.edu.sh.cn"><img src="/static/images/left_link2.gif" width="214" height="35" vspace="4" border="0" /></a><a href="http://mail.sjedu.cn"><img src="/static/images/left_link3.gif" width="214" height="35" vspace="4" border="0" /></a> <br />
+      <br />
+      <a href="http://gis.songjiang.gov.cn/speedmap/default.aspx"><img src="/static/images/left_dzdt.gif" width="231" height="123" border="0" /></a><br />
+      <br /></td>
+    <td align="right" valign="top"><table width="98%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="40"><img src="/static/images/icon_class.gif" width="29" height="30" hspace="4" vspace="4" /></td>
+              <td class="class_title">校园动态</td>
+              <td width="60"><a href="/xydt/index.shtml"><img src="/static/images/icon_more.gif" width="43" height="14" border="0" /></a></td>
+            </tr>
+          </table>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#FFFFFF"></td>
+  </tr>
+ <tr><td valign="middle"><table   border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xydt/mzap/201805/679291.shtml' target='_self' class='list' title='第十五周工作日程（2018年5月27日—6月2日）'>第十五周工作日程（2018年5月27日—6月2日）...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-28</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xwgg/xyxw/201805/679057.shtml' target='_self' class='list' title='关于2018年上海市“多威杯”青少年田径锦标赛的获奖喜报'>关于2018年上海市“多威杯”青少年田径锦标赛的获...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-25</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xwgg/xyxw/201805/679051.shtml' target='_self' class='list' title='关于2017“同达杯”上海市青少年摄影创作实践活动的获奖喜报'>关于2017“同达杯”上海市青少年摄影创作实践活动...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-25</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xwgg/xyxw/201805/678422.shtml' target='_self' class='list' title='关于2018年松江区中小学生劳技竞赛的获奖喜报（教师）'>关于2018年松江区中小学生劳技竞赛的获奖喜报（教...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-23</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xwgg/xyxw/201805/678418.shtml' target='_self' class='list' title='关于2018年松江区中小学生劳技竞赛的获奖喜报（学生）'>关于2018年松江区中小学生劳技竞赛的获奖喜报（学...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-23</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xydt/mzap/201805/677807.shtml' target='_self' class='list' title='第十四周工作日程（2018年5月20日—5月27日）'>第十四周工作日程（2018年5月20日—5月27日...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-21</td> 
+  </tr>
+  
+  
+</table></td></td>  
+  
+  <tr>
+    <td height="1" bgcolor="#FFFFFF"></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+</table>
+</td>
+          <td width="300" align="center"><table width="280" border="0" align="right" cellpadding="6" cellspacing="1" bgcolor="#CCCCCC">
+              <tr>
+                <td height="190" align="center" bgcolor="#FFFFFF"><script src="/static/js/flashSwf.js"></script>
+<script type="text/javascript">
+
+
+var focus_width=250;
+var focus_height=173;
+var text_height=15;
+var swf_height = focus_height+text_height;
+
+var pics="";
+var links="";
+var texts="";
+          pics += '/images/xwgg/xyxw/201801/2018010308085728723.jpg';
+          links += "/xwgg/xyxw/201801/648927.shtml";
+          texts += "艺术让校园更美丽——九峰实验学校第九届校园文化艺术节圆满落幕";
+          pics += "|";
+          links += "|";
+          texts += "|";
+          pics += '/images/xwgg/xyxw/201712/2017121508473222320.jpg';
+          links += "/xwgg/xyxw/201712/646233.shtml";
+          texts += "厉害了，九峰学子！——九峰实验学校在中华文化知识竞答中荣获一等奖";
+          pics += "|";
+          links += "|";
+          texts += "|";
+          pics += '/images/xwgg/xyxw/201712/2017120610061052558.JPG';
+          links += "/xwgg/xyxw/201712/645104.shtml";
+          texts += "“注重学生多元思维能力建构，推动概念教学全面深入发展”——高中信息科技区级研讨活动在九峰实验学校顺利开展";
+          pics += "|";
+          links += "|";
+          texts += "|";
+          pics += '/images/xwgg/xyxw/201711/2017112907413487286.jpg';
+          links += "/xwgg/xyxw/201711/643322.shtml";
+          texts += "增强“四个意识”，办好人民满意的教育——党的十九大精神学习宣讲";
+          pics += "|";
+          links += "|";
+          texts += "|";
+          pics += '/images/xwgg/xyxw/201711/2017112011545212185.jpg';
+          links += "/xwgg/xyxw/201711/642764.shtml";
+          texts += "青年教师成长系列之三  个人专业发展五年规划交流";
+          pics += "|";
+          links += "|";
+          texts += "|";
+          pics += '/images/xwgg/xyxw/201710/2017102610280744489.jpg';
+          links += "/xwgg/xyxw/201710/639085.shtml";
+          texts += "我运动，我健康，我快乐！—— 九峰实验学校2017年田径运动会顺利举行";
+
+flashSwf(pics,links,texts,focus_width,focus_height,text_height,swf_height);
+
+</script></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+      <br />
+      <table width="98%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="360"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="40"><img src="/static/images/icon_class.gif" width="29" height="30" hspace="4" vspace="4" /></td>
+                <td class="class_title">教学科研</td>
+                <td width="60"><a href="/jxky/index.shtml"><img src="/static/images/icon_more.gif" width="43" height="14" border="0" /></a></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#FFFFFF"></td>
+  </tr>
+ <tr><td valign="middle"><table   border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/jxky/jxgz/ryjx/201805/678420.shtml' target='_self' class='list' title='关于2018年松江区中小学生劳技竞赛的获奖喜报（教师）'>关于2018年松江区中小学生劳技竞赛的...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-23</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/jxky/jxgz/ryjx/201805/677647.shtml' target='_self' class='list' title='关于第十六届中学生古诗文阅读大赛的获奖喜报（教师）'>关于第十六届中学生古诗文阅读大赛的获奖...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-18</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/jxky/jxgz/ryjx/201803/668418.shtml' target='_self' class='list' title='关于2017年“第十八届华人少年作文比赛”的获奖喜报'>关于2017年“第十八届华人少年作文比...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-03-28</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/jxky/jxgz/ryjx/201803/665411.shtml' target='_self' class='list' title='关于松江区2017年中小学师生水仙花雕刻造型评比活动的获奖喜报（教师）'>关于松江区2017年中小学师生水仙花雕...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-03-12</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/jxky/jxgz/ryjx/201803/664772.shtml' target='_self' class='list' title='关于“第34届全国中学生物理竞赛”预赛暨松江区物理竞赛的获奖喜报（教师）'>关于“第34届全国中学生物理竞赛”预赛...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-03-08</td> 
+  </tr>
+  
+  
+</table></td></td>  
+  
+  <tr>
+    <td height="1" bgcolor="#FFFFFF"></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+</table>
+</td>
+          <td> </td>
+          <td width="360"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="40"><img src="/static/images/icon_class.gif" width="29" height="30" hspace="4" vspace="4" /></td>
+                <td class="class_title">德育教育</td>
+                <td width="60"><a href="/dyjy/index.shtml"><img src="/static/images/icon_more.gif" width="43" height="14" border="0" /></a></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#FFFFFF"></td>
+  </tr>
+ <tr><td valign="middle"><table   border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/dyjy/lgjy/201805/676310.shtml' target='_self' class='list' title='“庄严的时刻  人生的碑石”——十八岁成人仪式'>“庄严的时刻  人生的碑石”——十八岁...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-10</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/dyjy/lgjy/201805/676106.shtml' target='_self' class='list' title='敬别队礼 荣迎团员——2018年初三离队入团仪式'>敬别队礼 荣迎团员——2018年初三离...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-09</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/dyjy/lgjy/201805/675116.shtml' target='_self' class='list' title='高一年级东方绿洲国防教育活动的总结发言'>高一年级东方绿洲国防教育活动的总结发言...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-03</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/dyjy/axjy/jaxjy/201710/638973.shtml' target='_self' class='list' title='关于2017上海市第十二届金爱心学活动的获奖喜报'>关于2017上海市第十二届金爱心学活动...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2017-10-25</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/dyjy/jhzj/201709/632066.shtml' target='_self' class='list' title=' 2017学年九峰实验学校德育教育计划'> 2017学年九峰实验学校德育教育计划...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2017-09-15</td> 
+  </tr>
+  
+  
+</table></td></td>  
+  
+  <tr>
+    <td height="1" bgcolor="#FFFFFF"></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+</table>
+</td>
+        </tr>
+      </table>
+      <br />
+      <table width="98%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="360"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="40"><img src="/static/images/icon_class.gif" width="29" height="30" hspace="4" vspace="4" /></td>
+                <td class="class_title">队伍建设</td>
+                <td width="60"><a href="/dwjs/index.shtml"><img src="/static/images/icon_more.gif" width="43" height="14" border="0" /></a></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#FFFFFF"></td>
+  </tr>
+ <tr><td valign="middle"><table   border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/dwjs/jsxd/201705/620757.shtml' target='_self' class='list' title='杏坛之光'>杏坛之光</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2017-05-16</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/dwjs/msfc/201701/601807.shtml' target='_self' class='list' title='教师高效课堂管理的49个经典细节'>教师高效课堂管理的49个经典细节</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2017-01-04</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/dwjs/jsxd/201701/601780.shtml' target='_self' class='list' title='《做党和人民满意的好老师》心得体会'>《做党和人民满意的好老师》心得体会</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2017-01-04</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/dwjs/jsxd/201701/601779.shtml' target='_self' class='list' title='学习“四有好老师”心得体会'>学习“四有好老师”心得体会</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2017-01-04</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/dwjs/szgk/201701/601786.shtml' target='_self' class='list' title='上海市教育委员会关于贯彻落实教育部《严禁中小学校和在职中小学教师有偿补课的规定》的实施办法'>上海市教育委员会关于贯彻落实教育部《严...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2016-12-15</td> 
+  </tr>
+  
+  
+</table></td></td>  
+  
+  <tr>
+    <td height="1" bgcolor="#FFFFFF"></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+</table>
+</td>
+          <td> </td>
+          <td width="360"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="40"><img src="/static/images/icon_class.gif" width="29" height="30" hspace="4" vspace="4" /></td>
+                <td class="class_title">学生天地</td>
+                <td width="60"><a href="/xstd/index.shtml"><img src="/static/images/icon_more.gif" width="43" height="14" border="0" /></a></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#FFFFFF"></td>
+  </tr>
+ <tr><td valign="middle"><table   border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xstd/xszx/201805/679053.shtml' target='_self' class='list' title='关于2018年上海市“多威杯”青少年田径锦标赛的获奖喜报'>关于2018年上海市“多威杯”青少年田...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-25</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xstd/xszx/201805/679050.shtml' target='_self' class='list' title='关于2017“同达杯”上海市青少年摄影创作实践活动的获奖喜报'>关于2017“同达杯”上海市青少年摄影...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-25</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xstd/xszx/201805/678417.shtml' target='_self' class='list' title='关于2018年松江区中小学生劳技竞赛的获奖喜报（学生）'>关于2018年松江区中小学生劳技竞赛的...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-23</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xstd/xszx/201805/675897.shtml' target='_self' class='list' title='关于第31届上海市头脑奥林匹克创新大赛的获奖喜报'>关于第31届上海市头脑奥林匹克创新大赛...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-08</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xstd/xszx/201805/675564.shtml' target='_self' class='list' title='关于参加“东方绿舟国防教育”活动的获奖学生名单'>关于参加“东方绿舟国防教育”活动的获奖...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2018-05-07</td> 
+  </tr>
+  
+  
+</table></td></td>  
+  
+  <tr>
+    <td height="1" bgcolor="#FFFFFF"></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+</table>
+</td>
+        </tr>
+      </table>
+      <br />
+      <table width="98%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="360"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="40"><img src="/static/images/icon_class.gif" width="29" height="30" hspace="4" vspace="4" /></td>
+                <td class="class_title">学校管理</td>
+                <td width="60"><a href="/xxgl/index.shtml"><img src="/static/images/icon_more.gif" width="43" height="14" border="0" /></a></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#FFFFFF"></td>
+  </tr>
+ <tr><td valign="middle"><table   border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xxgl/gh/ghhd/201706/628044.shtml' target='_self' class='list' title='2017红十字光荣榜'>2017红十字光荣榜</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2017-06-27</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xxgl/hqgl/gzzd/201702/603791.shtml' target='_self' class='list' title='2016学年度第二学期九峰实验学校作息时间表'>2016学年度第二学期九峰实验学校作息...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2017-02-13</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xxgl/gh/ghhd/201701/601829.shtml' target='_self' class='list' title='关于贯彻“三重一大”制度的实施细则'>关于贯彻“三重一大”制度的实施细则</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2017-01-04</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xxgl/gh/ghhd/201610/584490.shtml' target='_self' class='list' title='2016红十字光荣榜'>2016红十字光荣榜</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2016-09-30</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/xxgl/gh/ghhd/201701/601775.shtml' target='_self' class='list' title='上海市教育委员会关于切实规范中小学课程教学工作深入实施素质教育的若干意见'>上海市教育委员会关于切实规范中小学课程...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2016-09-06</td> 
+  </tr>
+  
+  
+</table></td></td>  
+  
+  <tr>
+    <td height="1" bgcolor="#FFFFFF"></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+</table>
+</td>
+          <td> </td>
+          <td width="360"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="40"><img src="/static/images/icon_class.gif" width="29" height="30" hspace="4" vspace="4" /></td>
+                <td class="class_title">教育技术</td>
+                <td width="60"><a href="/jyjs/index.shtml"><img src="/static/images/icon_more.gif" width="43" height="14" border="0" /></a></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#FFFFFF"></td>
+  </tr>
+ <tr><td valign="middle"><table   border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/jyjs/rjjc/201112/177679.shtml' target='_self' class='list' title='Word 公式编辑器的应用方法'>Word 公式编辑器的应用方法</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2017-01-04</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/jyjs/rjjc/201701/601823.shtml' target='_self' class='list' title='关于贯彻“三重一大”制度的实施细则'>关于贯彻“三重一大”制度的实施细则</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2017-01-04</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/jyjs/rjjc/201111/110555.shtml' target='_self' class='list' title='EXCEL技巧'>EXCEL技巧</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2017-01-04</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/jyjs/rjjc/201112/177681.shtml' target='_self' class='list' title='powerpoint中如何插入flash'>powerpoint中如何插入flas...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2017-01-03</td> 
+  </tr>
+  <tr>
+    <td height="25" align="left" bgcolor="#EEEEEE" width="80%">
+      <img src="/static/images/icon_blue.gif" width="26" height="5" border="0" />
+	  <a href='/jyjs/rjjc/201303/392456.shtml' target='_self' class='list' title='Word2010下划线与文字间的距离调整'>Word2010下划线与文字间的距离调...</a>
+    <td width="20%" bgcolor="#EEEEEE" align="center" >2017-01-03</td> 
+  </tr>
+  
+  
+</table></td></td>  
+  
+  <tr>
+    <td height="1" bgcolor="#FFFFFF"></td>
+  </tr>
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+</table>
+</td>
+        </tr>
+      </table>
+      <br />
+            <table width="98%" border="0" cellspacing="1" cellpadding="0">
+
+  <tr>
+    <td width="90" height="80" rowspan="2" align="center"><a href="http://www.jfzx.sjedu.cn/xxxxgk/zxfw/bszn/index.shtml"><img src="/static/images/xxgk_bs1.jpg" width="89" height="69" border="0" /></a></td>
+    <td width="90" height="80" rowspan="2" align="center"><a href="http://www.jfzx.sjedu.cn/xxxxgk/zxfw/bgxz/index.shtml"><img src="/static/images/xxgk_bg1.jpg" width="89" height="69" border="0" /></a></td>
+    <td width="90" height="80" rowspan="2" align="center"><a href="http://www.jfzx.sjedu.cn/xzxx/index.shtml"><img src="/static/images/xxgk_yj1.jpg" width="89" height="69" border="0" /></a></td>
+    <td width="90" height="80" rowspan="2" align="center"><a href="http://www.jfzx.sjedu.cn/xxxxgk/zxfw/bmwd/index.shtml"><img src="/static/images/xxgk_bm1.jpg" width="89" height="69" border="0" /></a></td>
+    <td width="90" height="80" rowspan="2" align="center"><a href="http://www.jfzx.sjedu.cn/xxxxgk/zxfw/hdjl/index.shtml"><img src="/static/images/xxgk_hd1.jpg" width="89" height="69" border="0" /></a></td>
+    <td width="90" height="80" rowspan="2" align="center"><a href="http://www.jfzx.sjedu.cn/xxxxgk/zxfw/wszx/index.shtml"><img src="/static/images/xxgk_wsz1.jpg" width="89" height="69" border="0" /></a></td>
+    
+    <td width="90" height="80" rowspan="2" align="center"><a href="http://portal.sjedu.cn/TeacherPortal/"><img src="/static/images/jsgzf.jpg" width="89" height="69" border="0" /></a></td>
+    
+    
+  </tr>
+  <tr>
+   
+  </tr>
+</table>
+
+      <br />
+      <table width="98%" border="0" cellspacing="1" cellpadding="0">
+        <tr>
+          <td align="left"><div id="tab1">
+              <ul>
+                <li onmouseover="setTab(1,0)" class="now"><a href="/xxxxgk/xxgk/xxgl/index.shtml" class="list">学校概览</a></li>
+                <li onmouseover="setTab(1,1)"><a href="/xxxxgk/xxgk/jhzj/index.shtml" class="list">计划总结</a></li>
+                <li onmouseover="setTab(1,2)"><a href="/xxxxgk/xxgk/xxyw/index.shtml" class="list">学校业务</a></li>
+                <li onmouseover="setTab(1,3)"><a href="/xxxxgk/xxgk/qt/index.shtml" class="list">其他</a></li>
+              </ul>
+            </div>
+            <div id="tablist1">
+              <div class="tablist block"><span>
+              <img src="/static/images/icon_xxgk_1.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/xxgl/xxjj/index.shtml" class="list">学校简介</a>   <img src="/static/images/icon_xxgk_1.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/xxgl/xxld/index.shtml" class="list">学校领导</a>   <img src="/static/images/icon_xxgk_1.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/xxgl/zzjg/index.shtml" class="list">组织机构</a>
+                <hr />
+                <img src="/static/images/icon_xxgk_1.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/xxgl/lxfs/index.shtml" class="list">联系方式</a>   <img src="/static/images/icon_xxgk_1.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/xxgl/qt/index.shtml" class="list">其它</a> </span></div>
+              <div class="tablist"><span>
+              <img src="/static/images/icon_xxgk_2.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/jhzj/fzgh/index.shtml" class="list">发展规划</a>   <img src="/static/images/icon_xxgk_2.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/jhzj/ndjh/index.shtml" class="list">年度计划</a> </span></div>
+              <div class="tablist"><span>
+              <img src="/static/images/icon_xxgk_3.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/xxyw/zsks/index.shtml" class="list">招生考试</a>   <img src="/static/images/icon_xxgk_3.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/xxyw/jysf/index.shtml" class="list">教育收费</a>   <img src="/static/images/icon_xxgk_3.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/xxyw/xsgz/index.shtml" class="list">学生工作</a>   <img src="/static/images/icon_xxgk_3.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/xxyw/jxky/index.shtml" class="list">教学科研</a>
+                <hr />
+                <img src="/static/images/icon_xxgk_3.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/xxyw/szjs/index.shtml" class="list">师资建设</a>   <img src="/static/images/icon_xxgk_3.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/xxyw/twyk/index.shtml" class="list">体卫艺科</a>   <img src="/static/images/icon_xxgk_3.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/xxyw/hqaq/index.shtml" class="list">后勤安全</a> </span></div>
+              <div class="tablist"><span>
+              <img src="/static/images/icon_xxgk_4.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/qt/tjsj/index.shtml" class="list">统计数据</a>   <img src="/static/images/icon_xxgk_4.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/qt/zxgz/index.shtml" class="list">专项工作</a>
+                <hr />
+                <img src="/static/images/icon_xxgk_4.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/qt/hyhd/index.shtml" class="list">会议活动</a>   <img src="/static/images/icon_xxgk_4.gif" width="20" height="20" align="absmiddle" /><a href="/xxxxgk/xxgk/qt/qt/index.shtml" class="list">其它</a> </span></div>
+            </div></td>
+          <td width="230"><table width="215" border="0" cellspacing="1" cellpadding="0" background="/static/images/bg0.gif">
+             
+             <tr>
+                <td height="66" align="center"><a href="http://portal.sjedu.cn/StudentsWorld/"><img src="/static/images/xstd.png" width="78" height="60" border="0" /></a></td>
+                <td height="66" align="center"><a href="http://portal.sjedu.cn/ParentsChannel/"><img src="/static/images/jzpd.png" width="78" height="60" border="0" /></a></td>
+              </tr>
+              
+              <tr>
+                <td height="66" align="center"><a href="http://www.jfzx.sjedu.cn/xzxx/index.shtml"><img src="/static/images/button_1.gif" width="78" height="60" border="0" /></a></td>
+                <td height="66" align="center"><a href="http://portal.sjedu.cn/ClassSpace/?schoolId=SJAAAAG10025#"><img src="/static/images/bjkj.png" width="78" height="60" border="0" /></a></td>
+              </tr>
+              <tr>
+                <td height="66" align="center"><a href="/ceshi/ztwz/index.html"><img src="/static/images/button_4.gif" width="78" height="60" border="0" /></a></td>
+                <td height="66" align="center"><a href="http://mng.sj.edu.sh.cn/admin/user/login.jsp"><img src="/static/images/button_3.gif" width="78" height="60" border="0" /></a></td>
+              </tr>
+
+<tr>
+<table width="200" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><table width="60%" border="0" align="center" cellpadding="1" cellspacing="1">
+      <tr>
+        <td><div align="center">
+          <select 
+                  name=select style="WIDTH: 160px"
+                  onChange="if(this.value!=''){window.open(this.value)};">
+                   <option value="" selected>-禁毒科普教育-</option>
+	  <option value="http://www.626china.org/">中国禁毒展览馆</option>
+                   <option value="http://www.shjdg.org/html/">上海市禁毒科普教育馆</option>
+              </select>
+        </div></td>
+      </tr>
+    </table>
+
+</tr>
+            </table></td>
+        </tr>
+      </table>
+    </td>
+
+
+
+
+  </tr>
+</table>
+
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="1" bgcolor="#CCCCCC"></td>
+    <td height="1" bgcolor="#CCCCCC"></td>
+  </tr>
+  <tr>
+    <td width="231"><img src="/static/images/bottom_01.gif" width="231" height="67" border="0" /></td>
+    <td><a href="/xxgk/index.shtml" class="list">信息公开</a> |  <a href="/jxky/index.shtml" class="list">教学科研</a> |  <a href="/dyjy/index.shtml" class="list">德育教育</a> |  <a href="/dwjs/index.shtml" class="list">队伍建设</a> |  <a href="/xstd/index.shtml" class="list">学生天地</a> |  <a href="/djgz/index.shtml" class="list">党建工作</a> |  <a href="/tdhd/index.shtml" class="list">团队活动</a> | <a href="/xxgl/index.shtml" class="list">学校管理</a> |  <a href="/jyjs/index.shtml" class="list">教育技术</a><br />
+    All contents copyright&copy;2017 上海市松江九峰实验学校&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 网站访问次数：
+    <iframe src='http://cms2.sjedu.cn:8080/intertid-cms-web/web_count.jsp?sideid=9040' name='comment' width='50' marginwidth='0' height='14' marginheight='0' scrolling='No' frameborder='0' id="tranFrame" allowtransparency="true"></iframe>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011702003942" target="_blank"  class="list"><img src="/images/gonganbeian.png" border=0"/>沪公网安备 31011702003942号</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn" target="_blank"  class="list">沪ICP备11030667号</a>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.shmec.gov.cn/web/hdpt/wsgs_detail.php?subject_id=251" target="_blank" class="list">沪教Y6-20110014</a>
+</td>
+  </tr>
+</table>
+
+
+
+<map name="Map" id="Map">
+<area shape="rect" coords="238,-369,274,-343" href="/xwdt/spxw/index.shtml"  />
+</map>
+<map name="spxw" id="spxw">
+<area shape="rect" coords="-5,65,38,98" href="/xydt/spxw/index.shtml" onfocus="this.blur()" />
+</map>
+</body>
+</html>

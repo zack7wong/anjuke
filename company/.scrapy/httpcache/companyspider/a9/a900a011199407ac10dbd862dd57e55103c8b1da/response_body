@@ -1,0 +1,393 @@
+
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" id="indexCss" href="/css/newstyles.css"/>
+    <script src="/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="/js/newHome/qh.js" type="text/javascript"></script>
+	<script src="/js/newHome/lrtk.js" type="text/javascript"></script>
+	<script src="/js/newHome/index_sy.js" type="text/javascript"></script>
+	<script src="/js/newHome/public.js" type="text/javascript"></script>
+     <script src="/js/newHome/common.js" type="text/javascript"></script>
+   <!-- <script src="/js/jquery-cookie.js" type="text/javascript">
+    </script>
+   
+    <script src="/js/focusPic_.js" type="text/javascript">
+    </script>
+   
+    <script src="/js/index_skin.js" type="text/javascript">
+    </script> -->
+<script>
+	//img鼠标移动换图片
+	function over(imgObj){
+		var imgSrc = imgObj.src;
+		imgSrc = imgSrc.replace("-1","-2");
+		imgObj.src = imgSrc;
+	}
+
+	function out(imgObj){
+		var imgSrc = imgObj.src;
+		imgSrc = imgSrc.replace("-2","-1");
+		imgObj.src = imgSrc;
+	}
+ 	$(function(){
+			  weiz();
+	});
+  	function weiz(){
+       var wd=0;//($(window).width()-1190)/2+1190;
+		$("#dbbox").css("right",wd);
+	}
+	window.onresize = function(){
+       weiz();
+    }
+    
+    
+</script>
+
+<script>
+  
+</script>
+<title>重庆市璧山中学校-首页</title>
+</head>
+
+<body>
+<!--<div class="xqbox" id="xqbox"><a href="/Portal/portal/news/news_manage.htm?xqIndex">
+	<img src="images/imagesNew/sy.gif" width="150" height="150" />
+	<div class="txt">进入校庆网</div></a>
+</div> -->
+<div class="dbbox" id="dbbox">
+	<img src="images/wxt.png" width="150" height="150" />
+	<div class="txt">璧山中学官方微信</div>
+</div> 
+<!-- 头部和菜单 -->
+ 
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<body >
+ <script src="/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+ <script type="text/javascript">
+</script>
+<div class="new_top">
+	<div class="new_top_mid">
+		<div class="l_txt">您好，欢迎访问重庆市璧山中学校网站！</div>
+		<div class="r_link">
+			<!--<a href="javascript:void(0);">联系我们</a>
+			     <a href="javascript:addCookie();">设为首页</a>-->
+			<a href="javascript:setHomepage();">收藏网站</a>
+			
+		</div>
+	</div>
+</div>
+<div class="new_logobox">
+	<div class="new_logobox_mid">
+		<div class="logo"><a href="javascript:void(0);"><img src="/images/imagesNew/new_logo.png" width="427" height="66" /></a></div>
+		<div class="by"></div>
+	</div>
+</div>
+
+<div class="new_nav">
+	<div class="new_nav_mid">
+	<ul id="nav">
+		<li><a href="/Portal" class="">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+		
+		
+	</ul>
+	</div>
+</div>
+</body>
+</html>
+
+
+<!-- banner-->
+<div class="new_banner">
+	<div class="mainbanner">
+		<div class="mainbanner_window">
+		<ul id="slideContainer">
+			<li><a href="#"><img src="images/imagesNew/new/001.jpg" width="1920" height="445" /></a></li>
+			<li><a href="#"><img src="images/imagesNew/new/002.jpg" width="1920" height="445" /></a></li>
+			<li><a href="#"><img src="images/imagesNew/new/003.jpg" width="1920" height="445" /></a></li>
+			<li><a href="#"><img src="images/imagesNew/new/004.jpg" width="1920" height="445" /></a></li>
+			<li><a href="#"><img src="images/imagesNew/new/005.jpg" width="1920" height="445" /></a></li>
+			<li><a href="#"><img src="images/imagesNew/new/006.jpg" width="1920" height="445" /></a></li>
+			
+			<li><a href="#"><img src="images/imagesNew/new/007.jpg" width="1920" height="445" /></a></li>
+			<li><a href="#"><img src="images/imagesNew/new/008.jpg" width="1920" height="445" /></a></li>
+			<li><a href="#"><img src="images/imagesNew/new/009.jpg" width="1920" height="445" /></a></li>
+			<li><a href="#"><img src="images/imagesNew/new/010.jpg" width="1920" height="445" /></a></li>
+			<li><a href="#"><img src="images/imagesNew/new/011.jpg" width="1920" height="445" /></a></li>
+		</ul>
+		</div>
+		<ul class="mainbanner_list">
+			<li><a href="javascript:void(0);"></a></li>
+			<li><a href="javascript:void(0);"></a></li>
+			<li><a href="javascript:void(0);"></a></li>
+			<li><a href="javascript:void(0);"></a></li>
+			<li><a href="javascript:void(0);"></a></li>
+			<li><a href="javascript:void(0);"></a></li>
+			
+			<li><a href="javascript:void(0);"></a></li>
+			<li><a href="javascript:void(0);"></a></li>
+			<li><a href="javascript:void(0);"></a></li>
+			<li><a href="javascript:void(0);"></a></li>
+			<li><a href="javascript:void(0);"></a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- 中间 -->
+
+<div class="new_content">
+  <div class="new_content_mid">
+  
+	<div class="box100">
+		<div class="lht mr-14">
+			<div id="box" >
+				<!--<div class="prev"></div>
+				<div class="next"></div>
+				  <ul class="bigUl">
+					  <li style="z-index:1"><a href="#"><img src="images/1.jpg" alt="图1" /></a></li>
+					 <li><a href="#"><img src="images/2.jpg" alt="图2" /></a></li>
+				  </ul>
+				  <ul class="numberUl">
+					<li class="night"><a href="javascript:;">1</a></li>
+					<li><a href="javascript:;">2</a></li>
+				  </ul>
+				<div>
+					<ul class="textUl">
+					  <li style="display:block;"><a href="#">重庆市中小学幼儿园校园环境卫生管理现场推进会在璧山中学召开</a></li>
+					  <li><a href="#">锂电池是亮点 米儿低速电动车设计解读</a></li>
+					</ul>
+				</div>-->
+			</div>  
+		</div>
+		<div class="i_xwk">
+			<div class="title1">
+				<span>璧中要闻</span>
+				<a href="/Portal/portal/news/news_manage.htm?p=newsBySectionId&id=10046" class="more">更多>></a>
+			</div>
+			<div class="nr" id="bzyw_id"></div>
+		</div>
+		<div class="rk">
+			<div class="n_sbox">
+				<input name="" type="text" id="inpSearchId" class="textbox1"/>
+				<a href="javascript:toSearchHref('1','0')" class="btn">搜 索</a>
+			</div>
+			<div class="i_cbk">
+				<div class="title1">
+					<span>校园公告</span>
+					<a href="/Portal/portal/news/news_manage.htm?p=newsBySectionId&id=1417416449046" class="more"> MORE</a>
+				</div>
+				<div class="nr" >
+					<div class="list1" style="overflow:hidden;height:250px;" id="xygg_id">
+					<!-- <ul>
+						<li><a href="#">璧山中学2016—2017学年度作息时间</a></li>
+						<li><a href="#">璧山中学校面向全国招聘优秀教练员</a></li>
+					</ul> -->
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	<div class="box100">
+		<div class="z_banner"><script  type="text/javascript" src='/js/newHome/imgFlicker.js'></script></div>
+		<div class="n_iconbox">
+			<a href="http://218.201.83.100:8080/" class="s1">办公自动化</a>
+			<a href="http://10.0.1.13/" class="s2">教学资源库</a>
+			<a href="http://218.201.83.100:8090/" class="s3">综合素质评价</a>
+			<a href="http://218.201.83.100:81/lawyer/" class="s4">信息采集系统</a>
+		</div>
+	</div>
+   
+    <div class="box100">
+		<div class="i_xwk mr-14 w435">
+		<div class="title1">
+			<span>聚焦关注</span><a href="/Portal/portal/news/news_manage.htm?p=toSearch&type=0-1&sectionid=1111111" class="more">更多>></a>
+		</div>
+		<div class="nr" id="hdzt_id">
+			<!-- <div class="ttxw2">
+			<dl>
+				<dt><a href="#"><img src="images/img01.png" width="169" height="110" /></a></dt>
+				<dd><p class="s1"><a href="#">重庆市璧山中学校110周年校庆校友信息登记卡</a></p></dd>
+				<dd><p>岁月如歌，弹指百年。重庆市璧山中学校即将迎来110周年华诞，届时我们将举办系列校庆活动。目前，110周年校<a href="#">[详情]</a></p></dd>
+			</dl>
+			</div>
+			<div class="list1">
+				<ul>
+				  <li><a href="#">重庆市璧山中学校 关于征集校史和校友资料的启事</a><span>2016-10-20</span></li>
+				  <li><a href="#">璧山中学2016年高考再传捷报</a><span>2016-10-20</span></li> 
+				</ul>
+			</div> -->
+		</div>
+		</div>
+		<div class="i_xwk w435">
+			<div class="title1">
+				<span>璞石化璧</span>
+				<a href="/Portal/portal/news/news_manage.htm?p=toSearch&type=0-2&sectionid=2222222" class="more">更多>></a>
+			</div>
+			<div class="nr" id="ryzt_id">
+				<!-- <div class="ttxw2">
+				<dl>
+					<dt><a href="#"><img src="images/img01.png" width="169" height="110" /></a></dt>
+					<dd><p class="s1"><a href="#">重庆市璧山中学校110周年校庆校友信息登记卡</a></p></dd>
+					<dd><p>岁月如歌，弹指百年。重庆市璧山中学。目前，110周年校庆<a href="#">[详情]</a></p></dd>
+				</dl>
+				</div>
+				<div class="list1">
+					<ul>
+						<li><a href="#">重庆市璧山中学校 关于征集校史和校友资料的启事</a><span>2016-10-20</span></li>
+						<li><a href="#">璧山中学2016年高考再传捷报</a><span>2016-10-20</span></li> 
+					</ul>
+				</div> -->
+			</div>
+		</div>
+		<div class="rk">
+			<div class="i_cbk">
+				<div class="title1">
+					<span>璧中骄子</span>
+					<a href="/Portal/portal/news/news_manage.htm?p=toSearch&type=0-3&sectionid=3333333" class="more"> MORE</a>
+				</div>
+				<div class="nr">
+					<div class="list2" id="bzjz_id1">
+					  <!--<dl>
+						<dt><a href="#"><img src="images/img02.png" width="124" height="92" /></a></dt>
+						<dd><a href="#">香港中文大学 魏雨</a></dd>
+					  </dl> -->
+              
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  
+   <div class="box100">
+     
+     <div class="n_xyfg">
+       <div class="title1">
+         <a  class="rbtn" id="xytk_a_l"></a>
+         <a  class="lbtn" id="xytk_a_r"></a>
+       </div>
+       
+       	<div class="ctbox" id="xytk_id">
+          <div class="gd" id="xytk_id1">
+				<ul style="list-style:none;width:5999px;" >
+                 <li id="xytk_id1Li1" style="float:left;">
+                 <ul id="xytk_id1Ul1" style="list-style:none;">
+                 
+                 </ul> 
+                 </li>
+                 <li id="xytk_id1Li2"></li>
+                </ul>
+             <!-- <dl>
+              <dt><a href="#"><img src="images/img03.png" width="193" height="133" /></a></dt>
+              <dd><a href="#">璧山中学新校区鸟瞰图璧山中学新校区鸟瞰图</a></dd>
+             </dl>
+             <dl>
+              <dt><a href="#"><img src="images/img03.png" width="193" height="133" /></a></dt>
+              <dd><a href="#">璧山中学新校区鸟瞰图璧山中学新校区鸟瞰图</a></dd>
+             </dl> -->
+            
+          </div>
+       </div>
+     </div>
+	</div>
+	
+	<div class="box100">
+		<div class="i_xwk mr-14 w435">
+		<div class="title1">
+			<span>全站更新文章</span>
+			<a href="/Portal/portal/news/news_manage.htm?p=toSearch&type=7&sectionid=11111" class="more">更多>></a>
+		</div>
+		<div class="nr">
+			<div class="list1" id="czgxwz_id">
+            <!-- <ul>
+				<li><a href="#">重庆市璧山中学校 关于征集校史和校友资料的启事</a><span>2016-10-20</span></li>
+				<li><a href="#">璧山中学2016年高考再传捷报</a><span>2016-10-20</span></li> 
+            </ul> -->
+			</div>
+		</div>
+		</div>
+		<div class="i_xwk w435">
+		<div class="title1">
+			<span>全站热门文章</span>
+			<a href="/Portal/portal/news/news_manage.htm?p=toSearch&type=6&sectionid=11111" class="more">更多>></a>
+		</div>
+		<div class="nr">
+		<div class="list1" id="czrmwz_id">
+            <!--  <ul>
+              <li><a href="#" style='color:red;'>重庆市璧山中学校 关于征集校史和校友资料的启事</a><span>2016-10-20</span></li>
+              <li><a href="#">璧山中学2016年高考再传捷报</a><span>2016-10-20</span></li> 
+            </ul> -->
+        </div>
+		</div>
+		</div>
+		<div class="rk">
+			<div class="i_cbk">
+			<div class="title1">
+				<span>教师风采</span>
+				<a href="/Portal/portal/news/news_manage.htm?p=newsBySectionId&id=1422753410525"  class="more"> MORE</a>
+			</div>
+			<div class="nr">
+				<div class="list3" id="tjjs_id">
+					<!--<a href="#">
+					<img src="" width="238" height="320" />
+					<div class="txt1">重庆市教书育人楷模 谭功云</div>
+					</a> -->
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	</div>
+</div>
+
+<!--底部 -->
+
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body >
+
+<div class="new_footer">
+  <div class="bottom_mid">
+    <div class="txt1">Copyright © 2007-2014 bszx.com All Rights Reserved &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div class="txt1">版权所有:重庆市璧山中学 <a href="#">渝ICP备14006104号</a>	<a href="/Portal/com/user_manage.htm?toLogin">管理员登录</a><a href="/Portal/portal/news/news_manage.htm?toAddZxly&id=1417416449048" >在线留言</a>
+    </div>
+    <div style="margin-right: 100px;">
+    	<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50022702000022" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+			<img src="/Portal/images/beian.png" style="float:left;"/>
+			<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">渝公网安备 50022702000022号</p>
+		</a>
+	</div>
+  </div>
+   <div class="bottom_right">
+  		<!--<a  href="//bszs.conac.cn/sitename?method=show&amp;id=0C0B23C095F3271CE053012819AC5E27">
+ 			<img  width="80px";height="80px"; src="//dcs.conac.cn/image/blue_error.png" id="imgConac" />
+  		</a>-->
+		<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/04/083/0000/60434171/CA040830000604341710002.js' type='text/javascript'%3E%3C/script%3E"));</script>
+	</div>
+</div>
+
+<!-- <div class="new_footer">
+
+ <p> Copyright © 2007-2014 bszx.com All Rights Reserved</p>
+ <p>版权所有:重庆市璧山中学 渝ICP备14006104号	<a href="/Portal/com/user_manage.htm?toLogin">管理员登录</a> <a  href="/Portal/portal/news/news_manage.htm?toAddZxly&id=1417416449048">在线留言</a></p>
+ <p>渝公网安备 50022702000022号</p>
+  
+</div> -->
+
+</body>
+</html>
+
+
+</body>
+ <!-- 网页悬浮 -->
+ <script src="/js/float.js" type="text/javascript"></script>
+ 
+<script>
+//jQuery.floatDiv("教师节慰问","http://www.cqbszx.com.cn/Portal/portal/news/news_manage.htm?showNewDetails&id=1438156582840","/Portal/images/floatImg_left.jpg","images/upload/section/1441809336708.jpg");
+</script>
+</html>

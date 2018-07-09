@@ -1,0 +1,1290 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>厦门市金鸡亭中学</title>
+<link rel="stylesheet" type="text/css" href="/root/style/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/root/style/css/base.css">
+<link rel="stylesheet" type="text/css" href="/root/style/css/index.css">
+<link rel="stylesheet" type="text/css" href="/root/style/css/head.css">
+<link rel="stylesheet" type="text/css" href="/root/style/css/bottom.css">
+<link rel="stylesheet" type="text/css" href="/root/style/css/liMarquee.css">
+<link href="/resource/ligthBox/css/jquery.lightbox.css" type="text/css" rel="stylesheet" />
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="/resource/ligthBox/css/jquery.lightbox.ie6.css" />
+<![endif]-->
+<script type="text/javascript" src="/resource/javascript/setHomeSetFav.js"></script>
+<script src="/resource/headJs/head.min.js"></script>
+<script language="javascript" type="text/javascript" src="/resource/jquery/1.9.1/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="/root/style/js/bootstrap.js"></script>
+<script language="javascript" type="text/javascript" src="/root/style/js/respond.js"></script>
+
+<script>
+	//同步加载js(一般不常用的可以用这种方式引入)，按照以往的方式引入即可
+	//head.load("/resource/artDialog4.1.7/artDialog.source.js?skin=blue", "/resource/artDialog4.1.7/plugins/iframeTools.source.js", "/resource/artDialog4.1.7/config.js");
+	head.load("/resource/javascript/main.js");
+	head.load("/resource/My97DatePicker/WdatePicker.js");
+	head.load("/resource/select/css/selectordie.css","/resource/select/css/selectordie_theme_01.css","/resource/select/js/selectordie.js");
+	head.load("/resource/javascript/ajax.js");
+	head.load("/resource/javascript/base.js");
+</script>
+<!-- 此处几个JS在页面加载的时候就需要调用，不要同步加载 -->
+<link rel="stylesheet" href="/resource/sweetalert/lib/sweet-alert.css">
+<script src="/resource/sweetalert/lib/sweet-alert.min.js"></script>
+<script src="/root/style/js/jquery.superslide.2.1.1.js"></script>
+<script src="/root/style/js/slidePic.js"></script>
+<script src="/root/style/js/slide.js"></script>
+<script src="/resource/jQThumb/jqthumb.min.js"></script>
+<script src="/resource/ligthBox/js/jquery.lightbox.min.js"></script>
+<script src="/resource/artDialog4.1.7/artDialog.source.js?skin=blue"></script>
+<script src="/resource/artDialog4.1.7/plugins/iframeTools.source.js"></script>
+<script src="/resource/artDialog4.1.7/config.js"></script>
+<script src="/resource/layer-v1.8.5/layer.min.js"></script>
+<script src="/resource/layer-v1.8.5/extend/layer.ext.js"></script>
+<script src="/root/style/js/jquery.liMarquee.js"></script>
+<script type="text/javascript">
+	/*
+	 var isMobile = navigator.userAgent.match( /(iPad)|(iPhone)|(iPod)|(Android)|(PlayBook)|(BB10)|(BlackBerry)|(Opera Mini)|(IEMobile)|(webOS)|(MeeGo)/i );
+	 if(isMobile){
+	 window.location.href = "/phone/main.do";
+	 }
+	 */
+	window.contextPath = "/";
+	var USER_ARRAY = "";
+	var USER_ARRAY_WITH_ID = "";
+	var tipTime = 2;
+	//动态加载工具类
+	var head = document.getElementsByTagName('head')[0];
+	var script= document.createElement("script");
+	script.type = "text/javascript";
+	script.src= contextPath + "resource/javascript/commonUtils.js";
+	head.appendChild(script);
+
+	function setTitle(title)
+	{
+		if(document.documentElement)
+			y = document.documentElement.scrollTop;
+		else
+			y =	document.body.scrollTop;
+		if(div_title)
+		{
+			div_title.style.top = event.clientY + y ;
+			div_title.style.left = event.clientX + 8 ;
+
+			div_title.style.visibility = 'visible';
+		}
+	}
+
+	function clearTitle()
+	{
+		if(div_title)
+			div_title.style.visibility = 'hidden';
+	}
+	function checkExplorer(){
+
+		if(navigator.userAgent.indexOf("MSIE")>0){
+			if(navigator.userAgent.indexOf("MSIE 6.0")>0){
+				return false;
+			}
+			if(navigator.userAgent.indexOf("MSIE 7.0")>0){
+				return false;
+			}
+			if(navigator.userAgent.indexOf("MSIE 9.0")>0 && !window.innerWidth){//这里是重点，你懂的
+				return false;
+			}
+			if(navigator.userAgent.indexOf("MSIE 9.0")>0){
+				return true  ;
+			}
+		}
+		return true;
+	}
+</script>
+<script src="/resource/javascript/DrawImage.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$('#img-play').maiPlayer({speedSwitch: 5000, playerWidth: 296});
+	//处理图片变形
+	var w=$(".carousel-inner").width();
+	$('.carousel-inner img').jqthumb({
+		width: 430,
+		height: 232,
+		after: function(imgObj){
+			imgObj.css('opacity', 0).animate({opacity: 1}, 1000);
+		}
+	});
+	var msg = '';
+	if(null != msg && msg != ''){
+		var reloadUrl = window.location.toString();
+		if(reloadUrl.indexOf("msg") != -1){
+			reloadUrl = reloadUrl.substring(0,reloadUrl.indexOf("msg") - 1)
+		}
+		swal({title: "操作提醒",text: msg,   type: "error",   showCancelButton: false,   confirmButtonColor: "#DD6B55",   confirmButtonText: "确定",   closeOnConfirm: true }, function(){   window.location = reloadUrl; });
+	}
+
+
+
+	$(".picnews .SMS").each(function()
+	{
+		var divid = $(this).attr("divid");
+		var divtype = $(this).attr("divtype");
+		var text = $(this).text();
+		text = text.replace(/\s/g, "");
+		var strLength = getByteLen(text);
+		/*
+		 var width = $(this).width();
+		 var cssFontSize = $(this).css("font-size");  //获取字体大小
+		 var fontSize = parseFloat(cssFontSize); //获取字体大小的值
+		 var CutLen = Math.floor(width/fontSize)*2-2;
+		 */
+		if (strLength > 30)
+		{
+			text = text.substring(0, 30) + '……<a class="detail">详情</a>'
+		} else
+		{
+			text = text + '……<a class="detail">详情</a>'
+		}
+		$(this).html(text);
+	});
+	//内容截取
+	$(".student .SMS").each(function()
+	{
+		var divid = $(this).attr("divid");
+		var divtype = $(this).attr("divtype");
+		var text = $(this).text();
+		text = text.replace(/\s/g, "");
+		var strLength = getByteLen(text);
+		/*
+		var width = $(this).width();
+		 var cssFontSize = $(this).css("font-size");  //获取字体大小
+         var fontSize = parseFloat(cssFontSize); //获取字体大小的值
+         var CutLen = Math.floor(width/fontSize)*2-2;
+         */
+		if (strLength > 800)
+		{
+			text = text.substring(0, 80) + '……<a class="detail">详情</a>'
+		} else
+		{
+			text = text + '……<a class="detail">详情</a>'
+		}
+		$(this).html(text);
+	});
+	/*校园风貌、学校荣誉滚动切换Begin*/
+	/*
+	$("#xfT1").each(function()
+	{
+		$(this).mouseover(function()
+		{
+			//字体颜色
+			$("#xfT1").find("a").css("color","#ffffff");
+			$("#xfT2").find("a").css("color","#2a2a2a");
+
+			//背景图
+			$("#xfT1").css("background-color","#006c00");
+			$("#xfT2").css("background-color","#f3f1f2");
+
+			//more
+			$("#xfM1").css("display", "");
+			$("#xfM2").css("display", "none");
+
+			//top
+			$("#xfO1").css("display", "");
+			$("#xfO2").css("display", "none");
+
+			$("#aaaaa01").css("display", "");
+			$("#aaaaa02").css("display", "none");
+
+		});
+	});
+
+	$("#xfT2").each(function()
+	{
+		$(this).mouseover(function()
+		{
+			//字体颜色
+			$("#xfT2").find("a").css("color","#ffffff");
+			$("#xfT1").find("a").css("color","#2a2a2a");
+
+			//背景图
+			$("#xfT2").css("background-color","#006c00");
+			$("#xfT1").css("background-color","#f3f1f2");
+
+			//内容显示隐藏
+			$("#jydtN2").css("display", "");
+			$("#jydtN1").css("display", "none");
+			//more
+			$("#xfM2").css("display", "");
+			$("#xfM1").css("display", "none");
+
+			//top
+			$("#xfO2").css("display", "");
+			$("#xfO1").css("display", "none");
+
+			$("#aaaaa02").css("display", "");
+			$("#aaaaa01").css("display", "none");
+
+		});
+	});
+	*/
+	/*校园风貌、学校荣誉滚动切换End*/
+	var width = $("#aaaaa01").width();
+	$(".blk_18").css("width",width);
+	$(".pcont").css("width",width);
+	$(".List1_1").css("width",width);
+	new Marquee("marquee2",2,2,width-10,170,80,0,0);
+	//new Marquee("marquee5",2,2,width-10,170,80,0,0);
+	$(".dowebok").liMarquee();
+	window.setTimeout(function(){
+		$("#aaaaa02").css("display","none");
+	},1500);
+});
+
+window.onresize=function(){
+	window.setTimeout(function(){
+	window.location.reload()
+	},3500);
+}
+function getByteLen(val)
+{
+	var len = 0;
+	for ( var i = 0; i < val.length; i++)
+	{
+		var length = val.charCodeAt(i);
+		if (length >= 0 && length <= 100)
+		{
+			len += 1;
+		} else
+		{
+			len += 2;
+		}
+	}
+	return len;
+}
+function selectImg(id){
+	$("div[name='contentImg']").each(function(){
+		$(this).css("display","none");
+	});
+	$("#contentImg"+id).css("display","");
+}
+function getNewsContent(indexOrder){
+	var url="guide!getNewsContent.do";
+	if(indexOrder==107){
+		url="guide!getImgNewsContent.do";
+	}
+
+	$.ajax({
+      url:url,
+      type:"post",
+      data:"indexShowOrder="+ indexOrder,
+      dataType:'html',
+      async:false,
+ 	  cache:true,
+      success:function(result){
+      	document.getElementById("specialCon").innerHTML = result;
+  	  }
+	})
+}
+function getNewsInfoByTreeId(treeId,pid){
+	var url="guide!getNewsInfoByTreeId.do";
+
+	$.ajax({
+      url:url,
+      type:"post",
+      data:"treeId="+ treeId,
+      dataType:'html',
+      async:false,
+ 	  cache:true,
+      success:function(result){
+      	document.getElementById("innerContent"+pid).innerHTML = result;
+  	  }
+	})
+}
+$("#loginForm").submit(function() {
+	var username = $.trim($("#userName").val());
+	var password = $.trim($("#password").val());
+	if (username == '') {
+		swal({
+			title : "登录提示",
+			text : "用户名不能为空，请您输入",
+			type : "error",
+			confirmButtonColor : "#DD6B55",
+			confirmButtonText : "确定"
+		});
+		$("#userName").val('');
+		$("#userName").focus();
+		return false;
+	}
+	if (password == '') {
+		swal({
+			title : "登录提示",
+			text : "密码不能为空，请您输入",
+			type : "error",
+			confirmButtonColor : "#DD6B55",
+			confirmButtonText : "确定"
+		});
+		$("#password").val('');
+		$("#password").focus();
+		return false;
+	}
+
+});
+
+$("#keywords").focus(function() {
+	if ($.trim(this.value) == '请在搜索框输入您要查找的关键字') {
+		this.value = "";
+	}
+});
+
+$("#keywords").blur(function() {
+	if ($.trim(this.value) == '') {
+		this.value = "请在搜索框输入您要查找的关键字";
+	}
+});
+
+$("#searchForm").submit(function() {
+	if ($.trim($("#keywords").val()) == '请在搜索框输入您要查找的关键字') {
+		alertBox("请输入查询关键字");
+		return false;
+	}
+});
+
+var treeid = '';
+var id = '';
+if (null != id && id != "") {
+	treeid = id;
+}
+$('li.mainlevel').each(function() {
+	var menuId = $(this).attr("data-treeId");
+	if (treeid == menuId) {
+		$("li.mainlevel").removeClass("selectMenu");
+		$("#mainlevel" + menuId).addClass("selectMenu");
+		$("#mainlevel" + menuId).find('a:first').css('color', '#e8f003');
+	}
+})
+
+
+function init()
+{ 
+	
+   
+
+    	  var objKernalRoot = RTXAX.GetObject("KernalRoot");
+         //  alert(objKernalRoot)
+           var objRtcData = objKernalRoot.Sign;
+           var strAccount = objKernalRoot.Account;
+           var strSgin = objRtcData.GetString("Sign");
+           
+           //alert(strAccount)
+           //alert(strSgin)
+           LoginForm.userName.value = strAccount;
+			LoginForm.sign.value = strSgin;
+			
+			LoginForm.action = "Login!rexLogin.do";
+			LoginForm.submit();
+			
+   
+}
+
+</script>
+
+</head>
+<body onload="init()">
+<style type="text/css">
+.bottom_bg{
+padding:0 30px;
+}
+</style>
+		<div class="col-md-12 head">
+			<div class="logo_part">
+				<div class="col-md-6 logo">
+					<a href="index.do" hideFocus="true"><br>
+<img src="/ewebeditor/uploadfile/20160811155456198.png" border="0"><br> </a>
+				</div>
+				<div class="col-md-6 rightBar">
+						<div class="fav_search">
+								<div class="col-md-12 log">
+									<div class="fav">
+										<a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a> | <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a> | <a href="#" >联系我们</a>
+									</div>
+									
+										<div style="width:65px;float:right;border-radius:5px;"><a href="/Login!showLogin.do" style="display:block;background-color: #035b04;color:white;hover:none;height:25px;font-size:12px;line-height: 25px;border-radius:5px"  >用户登录</a></div>
+									
+
+								</div>
+								<div class="col-md-12  search-part">
+									<form class="form-search" target="_blank" name="searchform" action="morelist!morelist.do?actdo=search" method="post" id="searchform" >
+
+										<button type="submit" class="searchBtn">
+											搜 索
+										</button>
+										<span class="search-query"><input class="search" name="searchParma"
+											type="text" id="keywords"><div style="height:100%;display:inline;background-color:white;float:right;border: 1px solid #cccccc;border-right: none;"><img alt="" src="/root/style/images/search.png" style="float:left;"></div><input type="hidden" name="type" value="1">
+						<input type="hidden" name="treeid" value="0">
+						<input type="hidden" name="searchType" value="1">
+											 </span>
+									</form>
+								</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 nav">
+			<div class="row-fluid nav">
+				<div id="menu">
+<ul id="nav">
+<li class="mainlevel"><a href="index.do">首&nbsp页</a></li>
+<li class="mainlevel" id="mainlevel1" data-treeId="1">
+<a href="list!list.do?treeId=1">学校概况</a>
+<div class="dividing"></div><li class="mainlevel" id="mainlevel2" data-treeId="2">
+<a href="list!list.do?treeId=2">党建之窗</a>
+<div class="dividing"></div><li class="mainlevel" id="mainlevel3" data-treeId="3">
+<a href="list!list.do?treeId=3">德育之窗</a>
+<ul>
+<li><a href="morelist!morelist.do?treeid=73">社会实践</a></li>
+<li><a href="morelist!morelist.do?treeid=72">阳光体育</a></li>
+<li><a href="morelist!morelist.do?treeid=71">主题教育</a></li>
+<li><a href="morelist!morelist.do?treeid=68">家长学校</a></li>
+<li><a href="morelist!morelist.do?treeid=24">法纪安全</a></li>
+<li><a href="morelist!morelist.do?treeid=23">班主任之家</a></li>
+<li><a href="morelist!morelist.do?treeid=13">团队活动</a></li>
+<li><a href="http://www.626china.org/">中国禁毒数字展览馆</a></li>
+</ul>
+</li>
+<div class="dividing"></div><li class="mainlevel" id="mainlevel4" data-treeId="4">
+<a href="list!list.do?treeId=4">教育科研</a>
+<ul>
+<li><a href="morelist!morelist.do?treeid=19">教研之窗</a></li>
+<li><a href="morelist!morelist.do?treeid=18">教务管理</a></li>
+<li><a href="morelist!morelist.do?treeid=17">教研通知</a></li>
+</ul>
+</li>
+<div class="dividing"></div><li class="mainlevel" id="mainlevel5" data-treeId="5">
+<a href="list!list.do?treeId=5">学生风采</a>
+<ul>
+<li><a href="morelist!morelist.do?treeid=74">光荣榜</a></li>
+<li><a href="morelist!morelist.do?treeid=20">校园之星</a></li>
+</ul>
+</li>
+<div class="dividing"></div><li class="mainlevel" id="mainlevel6" data-treeId="6">
+<a href="morelist!morelist.do?treeid=6">校务公开</a>
+ </li>
+<div class="dividing"></div><li class="mainlevel" id="mainlevel7" data-treeId="7">
+<a href="list!list.do?treeId=7">教工之家</a>
+<ul>
+<li><a href="morelist!morelist.do?treeid=22">教工活动</a></li>
+<li><a href="morelist!morelist.do?treeid=21">教师风采</a></li>
+</ul>
+</li>
+<div class="dividing"></div><li class="mainlevel" id="mainlevel8" data-treeId="8">
+<a href="list!list.do?treeId=8">校园文明风</a>
+<div class="dividing"></div><li class="mainlevel" id="mainlevel11" data-treeId="11">
+<a href="list!list.do?treeId=11">班级主页</a>
+<div class="dividing"></div><li class="mainlevel" id="mainlevel12" data-treeId="12"><a href="http://10.107.76.160                                                                                ">视频直播</a></li>
+</ul>
+</div>
+
+			</div>
+		</div>
+	</div>
+
+<div class="main">
+	<div class="main_body">
+
+		<div style="background-color:white;height:100%;width:100%;float:left;padding-right:15px;padding-top:5px">
+			<div class="row">
+		<div class="col-md-4 main_left">
+    <!-- 通知告示 -->
+    <div>
+      <div class="tit">
+        <h2>
+          通知公示
+        </h2>
+        <a
+                href="morelist!morelist.do?treeid=78">更多>></a>
+      </div>
+      <div class="arret">
+        <ul><li><span class="title"><a href="javascript:;" title="标题："小马驹午餐贫困补贴"公示&#13;作者：管理员&#13;来源：本站原创&#13;日期：2018-05-28" onclick="windowOpen('/list!newsDetail.do?newsId=1350&id=78&schoolCode=001245');"><font  style="font-size:12px;">"小马驹午餐贫困补贴"公示</font></a></span><span class="time">05-28</span></li><li><span class="title" ><a class="a_title" title="标题：2018年《中考听力系统改造项目》项目方案征集&#13;作者：总务处&#13;来源：本站原创&#13;日期：2018-05-27" href="javascript:void(0);"  onclick="windowOpen('/list!newsDetail.do?newsId=1349&id=78&schoolCode=001245');"><font  color="#FF0000">2018年《中考听力系统改造项目》项目方案征集</font></a></span><span class="time">05-27</span></li>
+<li><span class="title" ><a class="a_title" title="标题：20180426思明区教育局关于组织对公办在职教师到校外培训机构兼职任教情况进行排查摸底工作的通知&#13;作者：吴祖仁&#13;来源：本站原创&#13;日期：2018-04-26" href="javascript:void(0);"  onclick="windowOpen('/list!newsDetail.do?newsId=1341&id=78&schoolCode=001245');"><font  color="#FF0000">20180426思明区教育局关于组织对公办在职教师到校外培训机构兼职任教情况进行排查摸底工作的通知</font></a></span><span class="time">04-26</span></li>
+<li><span class="title" ><a class="a_title" title="标题：20170116陈艺萌同学荣获第32届厦门市青少年科技创新大赛科幻画一等奖！&#13;作者：吴祖仁&#13;来源：本站原创&#13;日期：2017-01-16" href="javascript:void(0);"  onclick="windowOpen('/list!newsDetail.do?newsId=1016&id=78&schoolCode=001245');"><font  style="font-size:12px;">20170116陈艺萌同学荣获第32届厦门市青少年科技创新大赛科幻画一等奖！</font></a></span><span class="time">2017-01-16</span></li>
+</ul>
+      </div>
+    </div>
+    <div clas="searchLinks" style="padding:30px 0;height:150px;">
+        
+
+	
+		
+					<div class="link0_bg">
+						<a href="index.do" >
+						<div class="link_icon" alt=""
+							 src="userfiles/indexLink/1.png" ></div><font>
+								学生查询
+						</font>
+						 </a>
+					</div>
+		
+	
+		
+					<div class="link1_bg">
+						<a href="index.do" >
+						<div class="link_icon" alt=""
+							 src="userfiles/indexLink/2.png" ></div><font>
+								成绩查询
+						</font>
+						 </a>
+					</div>
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+
+    </div>
+    <!-- 校园校历 -->
+    <div style="padding-top:20px;">
+      <div class="tit">
+        <h2>
+          校园校历
+        </h2>
+        <a
+                href="morelist!morelist.do?treeid=77">更多>></a>
+      </div>
+      <div class="sch">
+        <ul><li><span class="title"><a href="javascript:;" title="标题：2017—2018学年下学期 第14周工作安排表&#13;作者：吴祖仁&#13;来源：本站原创&#13;日期：2018-05-25" onclick="windowOpen('/list!newsDetail.do?newsId=1348&id=77&schoolCode=001245');"><font  color="#FF0000">2017—2018学年下学期 第14周工作安排表</font></a></span><span class="time">05-25</span></li><li><span class="title" ><a class="a_title" title="标题：2017—2018学年下学期 第13周工作安排表&#13;作者：吴祖仁&#13;来源：本站原创&#13;日期：2018-05-18" href="javascript:void(0);"  onclick="windowOpen('/list!newsDetail.do?newsId=1347&id=77&schoolCode=001245');"><font  style="font-size:12px;">2017—2018学年下学期 第13周工作安排表</font></a></span><span class="time">05-18</span></li>
+<li><span class="title" ><a class="a_title" title="标题：2017—2018学年下学期 第12周工作安排表&#13;作者：吴祖仁&#13;来源：本站原创&#13;日期：2018-05-11" href="javascript:void(0);"  onclick="windowOpen('/list!newsDetail.do?newsId=1346&id=77&schoolCode=001245');"><font  style="font-size:12px;">2017—2018学年下学期 第12周工作安排表</font></a></span><span class="time">05-11</span></li>
+<li><span class="title" ><a class="a_title" title="标题：2017—2018学年下学期 第11周工作安排表&#13;作者：吴祖仁&#13;来源：本站原创&#13;日期：2018-05-04" href="javascript:void(0);"  onclick="windowOpen('/list!newsDetail.do?newsId=1345&id=77&schoolCode=001245');"><font  style="font-size:12px;">2017—2018学年下学期 第11周工作安排表</font></a></span><span class="time">05-04</span></li>
+<li><span class="title" ><a class="a_title" title="标题：2017—2018学年下学期 第10周工作安排表&#13;作者：吴祖仁&#13;来源：本站原创&#13;日期：2018-04-28" href="javascript:void(0);"  onclick="windowOpen('/list!newsDetail.do?newsId=1343&id=77&schoolCode=001245');"><font  style="font-size:12px;">2017—2018学年下学期 第10周工作安排表</font></a></span><span class="time">04-28</span></li>
+<li><span class="title" ><a class="a_title" title="标题：2017—2018学年下学期 第9周工作安排表&#13;作者：吴祖仁&#13;来源：本站原创&#13;日期：2018-04-20" href="javascript:void(0);"  onclick="windowOpen('/list!newsDetail.do?newsId=1340&id=77&schoolCode=001245');"><font  style="font-size:12px;">2017—2018学年下学期 第9周工作安排表</font></a></span><span class="time">04-20</span></li>
+<li><span class="title" ><a class="a_title" title="标题：2017—2018学年下学期 第8周工作安排表&#13;作者：吴祖仁&#13;来源：本站原创&#13;日期：2018-04-13" href="javascript:void(0);"  onclick="windowOpen('/list!newsDetail.do?newsId=1339&id=77&schoolCode=001245');"><font  style="font-size:12px;">2017—2018学年下学期 第8周工作安排表</font></a></span><span class="time">04-13</span></li>
+<li><span class="title" ><a class="a_title" title="标题：2017—2018学年下学期 第7周工作安排表&#13;作者：吴祖仁&#13;来源：本站原创&#13;日期：2018-04-08" href="javascript:void(0);"  onclick="windowOpen('/list!newsDetail.do?newsId=1338&id=77&schoolCode=001245');"><font  style="font-size:12px;">2017—2018学年下学期 第7周工作安排表</font></a></span><span class="time">04-08</span></li>
+</ul>
+      </div>
+    </div>
+  </div>
+	<div class="col-md-8 main_right">
+		<div>
+			<div class="column">
+				图片新闻
+				<a href="morelist!morelist.do?treeid=79"
+				   class="col-md-6 more">更多>></a>
+			</div>
+			<div class="col-md-4 picnews">
+							<div class="news_top2">
+								<div class="picnews_li"><a href="list!newsDetail.do?newsId=1342&id=7&schoolCode=001245"><div class="news_title"><div>喜报：我校学子再创佳绩！</div></div><div class="SMS">喜报：我校学子再创佳绩！
+
+
+WeChat&nbsp;ID&nbsp;
+Intro&nbsp</div></a> <span class="date">2018-04-26</span></div>
+							</div>
+							<div class="newslist">
+								<ul><li><span class="title"><a href="list!newsDetail.do?newsId=1315&id=7&schoolCode=001245">关于中小学校外托管机构“小饭桌”食品安全评分等级信息公开工作的通知</a></span><span class="date">03-05</span></li><li><span class="title"><a href="list!newsDetail.do?newsId=1318&id=7&schoolCode=001245">听徐强教授说汪曾祺</a></span><span class="date">02-28</span></li><li><span class="title"><a href="list!newsDetail.do?newsId=1317&id=7&schoolCode=001245">不忘初心，砥砺前行</a></span><span class="date">02-28</span></li><li><span class="title"><a href="list!newsDetail.do?newsId=1316&id=7&schoolCode=001245">热闹开学礼 迎接旺旺年</a></span><span class="date">02-28</span></li><li><span class="title"><a href="list!newsDetail.do?newsId=1320&id=7&schoolCode=001245">喜 报</a></span><span class="date">02-26</span></li></ul>
+							</div>
+				<div class="row-fluid">
+					<div class="col-md-12"></div>
+				</div>
+			</div>
+			<div class="col-md-8 slide_bg">
+				<div class="carousel slide" id="carousel-538988" data-ride="carousel">
+					<div class="carousel-inner">
+						
+							
+									<div class="item active">
+
+								<a href="list!newsDetail.do?newsId=1342 ">
+									<div class="picText">
+										喜报：我校学子再创佳绩！
+									</div>
+										<img src="/ewebeditor/uploadfile/20180426175539625002_min.png" />
+
+										<div class="carousel-caption" contenteditable="true">
+											</div>
+									 </a>
+									</div>
+							
+							
+						
+							
+							
+							<div class="item">
+								<a href="list!newsDetail.do?newsId=1315 ">
+									<div class="picText">
+										关于中小学校外托管机构“小饭桌”食品安全评分等级信息公开工作的通知
+									</div>
+									<img src="/ewebeditor/uploadfile/20180305141558734.doc" />
+									<div class="carousel-caption" contenteditable="true">
+										</div>
+								</a>
+							</div>
+							
+						
+							
+							
+							<div class="item">
+								<a href="list!newsDetail.do?newsId=1318 ">
+									<div class="picText">
+										听徐强教授说汪曾祺
+									</div>
+									<img src="/ewebeditor/uploadfile/20180306110256846003.png" />
+									<div class="carousel-caption" contenteditable="true">
+										</div>
+								</a>
+							</div>
+							
+						
+							
+							
+							<div class="item">
+								<a href="list!newsDetail.do?newsId=1317 ">
+									<div class="picText">
+										不忘初心，砥砺前行
+									</div>
+									<img src="/ewebeditor/uploadfile/20180306105740984005_min.png" />
+									<div class="carousel-caption" contenteditable="true">
+										</div>
+								</a>
+							</div>
+							
+						
+							
+							
+							<div class="item">
+								<a href="list!newsDetail.do?newsId=1316 ">
+									<div class="picText">
+										热闹开学礼 迎接旺旺年
+									</div>
+									<img src="/ewebeditor/uploadfile/20180306093356143003_min.png" />
+									<div class="carousel-caption" contenteditable="true">
+										</div>
+								</a>
+							</div>
+							
+						
+							
+							
+							<div class="item">
+								<a href="list!newsDetail.do?newsId=1320 ">
+									<div class="picText">
+										喜 报
+									</div>
+									<img src="/ewebeditor/uploadfile/20180306121857273001_min.png" />
+									<div class="carousel-caption" contenteditable="true">
+										</div>
+								</a>
+							</div>
+							
+						
+						<ol class="carousel-indicators">
+							
+								
+									<li class="active" data-slide-to="0"
+										data-target="#carousel-538988"></li>
+								
+								
+							
+								
+								
+									<li data-slide-to="1"
+										data-target="#carousel-538988"></li>
+								
+							
+								
+								
+									<li data-slide-to="2"
+										data-target="#carousel-538988"></li>
+								
+							
+								
+								
+									<li data-slide-to="3"
+										data-target="#carousel-538988"></li>
+								
+							
+								
+								
+									<li data-slide-to="4"
+										data-target="#carousel-538988"></li>
+								
+							
+								
+								
+									<li data-slide-to="5"
+										data-target="#carousel-538988"></li>
+								
+							
+						</ol>
+					</div>
+				</div>
+			</div>
+</div>
+
+			<div>
+		<!--
+	<div class="col-md-3 login_bg">
+		<div class="login">
+			
+			
+				<form action="Login!singleSysChkLogin.do" method="post"
+					id="LoginForm">
+					<div class="login_name_block">
+						<div class="userName">
+							<div class="inline">
+								<input type="text" placeholder="请输入用户名" class="inputBox"
+									name="userName" id="u_name"
+									value="" />
+							</div>
+							<div class="inline" style="width:50px;height:20px;float:right">用户名：</div>
+						</div>
+					</div>
+					<div class="pwd_block">
+						<div class="pwd">
+							<div class="inline">
+								<input type="password" placeholder="请输入密码" class="inputBox"
+									name="password" id="u_pwd"
+									value="" />
+							</div>
+							<div class="inline" style="width:50px;height:20px;float:right">密
+								码：</div>
+						</div>
+					</div>
+					<div class="btn">
+						<input type="submit" value="登&nbsp;录" class="loginBtn"
+							onclick="return toLoginCheck();" />
+					</div>
+				</form>
+			
+		</div>
+
+	</div>
+	-->
+		<div class="adv_bg">
+			<div class="adv">
+				<img alt=""
+					src="/root/style/images/adv.jpg"
+					height="110" width="700">
+			</div>
+		</div>
+</div>
+		<div>
+			<div class="column">
+				学生风采
+				<a href="morelist!morelist.do?treeid=5"
+				   class="col-md-6 more">更多>></a>
+			</div>
+			<div class="col-md-12 student">
+				<div class="row"><div class="col-md-3 picDiv"><img src="/ewebeditor/uploadfile/20180502151135483001_min.png" width="160" height="107"/></div><div class="col-md-9 picContent"><div class="picnews_li"><a href="list!newsDetail.do?newsId=1344&id=0&schoolCode=001245"><div class="news_title"><div>金中最美雷锋</div></div><div class="SMS">
+&nbsp;
+&nbsp;
+&nbsp;
+</div></a> <span class="date">2018-03-30</span></div></div></div><div class="row"><div class="col-md-3 picDiv"><img src="/ewebeditor/uploadfile/20160811130621258_min.jpg" width="160" height="107"/></div><div class="col-md-9 picContent"><div class="picnews_li"><a href="list!newsDetail.do?newsId=585&id=&schoolCode=001245"><div class="news_title"><div>2015年厦门市金鸡亭中学校园之星一</div></div><div class="SMS">
+</div></a> <span class="date">2015-11-30</span></div></div></div>
+			</div>
+</div>
+	</div>
+</div>
+
+
+
+				<div class="col-md-12 scoll">
+		<!--校园风貌、学校荣誉 左右滚动 -->
+<style type="text/css">
+.d3 {
+	float: left;
+	width: 50%;
+	height: 45px;
+	border-bottom: 1px solid #035b04;
+}
+.xfbjMoreRightContent{
+}
+.xfbjMoreRightContent a{
+	float:right;
+	color:#9b9b9b;
+	padding-top:12px;
+}
+.xfbjMoreRightContent a:hover{
+	color:#333333;
+}
+.d4 {
+	float: left;
+	width: 50%;
+	height: 45px;
+	border-bottom: 1px solid #035b04;
+}
+
+.xyfg_title a {
+	color: #45443f;
+	font-size: 12px;
+	text-decoration: none;
+	font-family: 宋体;
+}
+
+.xyfg_title a:hover {
+	color: orange;
+}
+
+.blk_18 {
+	float: left;
+	font-size: 12px;
+	height: 175px;
+	/* left: 20px; */
+	overflow: hidden;
+	position: relative;
+	top: 1px;
+	width: 1000px;
+}
+
+.blk_18 .pcont {
+	width: 100%;
+	position: relative;
+	top: 0px;
+	float: left;
+	overflow: hidden;
+}
+
+.blk_18 .ScrCont {
+	width: 32766px;
+	zoom: 1;
+	margin-left: 1px;
+}
+
+.blk_18 #List1_1,.blk_18 #List2_1 {
+	float: left;
+}
+
+.blk_18 .LeftBotton,.blk_18 .RightBotton {
+	width: 15px;
+	position: relative;
+	z-index: 1111;
+	height: 74px;
+	float: left;
+	position: relative;
+	background: url(root/style/images/ax.gif) no-repeat;
+}
+
+.blk_18 .LeftBotton {
+	background-position: 0 0;
+	margin: 44px 41px 0;
+}
+
+.blk_18 .RightBotton {
+	background-position: 0 -100px;
+	margin: 44px -23px;
+}
+
+.blk_18 .LeftBotton:hover {
+	background-position: -20px 0;
+}
+
+.blk_18 .RightBotton:hover {
+	background-position: -20px -100px;
+}
+
+.blk_18 .pl img {
+	display: block;
+	cursor: pointer;
+	border: none;
+	margin: 6px auto 1px auto;
+}
+
+.blk_18 .pl {
+	width: 20%;
+	float: left;
+	text-align: center;
+	line-height: 23px;
+	padding-left: 6px;
+	color: #333333;
+}
+
+.xyfg_title {
+	margin-top: 5px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	background: white;
+	width:193px;
+	margin:auto;
+}
+
+.xyfg_title:HOVER {
+	color: #035b04;
+}
+</style>
+<script type="text/javascript">
+var Speed_1 = 1; //速度(毫秒)
+var Space_1 = 1; //每次移动(px)
+var PageWidth_1 = 1; //翻页宽度
+var interval_1 = 10; //翻页间隔时间
+var fill_1 = 0; //整体移位
+var MoveLock_1 = false;
+var MoveTimeObj_1;
+var MoveWay_1="right";
+var Comp_1 = 0;
+var AutoPlayObj_1=null;
+function GetObj(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}}
+function AutoPlay_1(){clearInterval(AutoPlayObj_1);AutoPlayObj_1=setInterval('ISL_GoDown_1();ISL_StopDown_1();',interval_1)}
+function ISL_GoUp_1(){if(MoveLock_1)return;clearInterval(AutoPlayObj_1);MoveLock_1=true;MoveWay_1="left";MoveTimeObj_1=setInterval('ISL_ScrUp_1();',Speed_1);}
+function ISL_StopUp_1(){if(MoveWay_1 == "right"){return};clearInterval(MoveTimeObj_1);if((GetObj('ISL_Cont_1').scrollLeft-fill_1)%PageWidth_1!=0){Comp_1=fill_1-(GetObj('ISL_Cont_1').scrollLeft%PageWidth_1);CompScr_1()}else{MoveLock_1=false}
+AutoPlay_1()}
+function ISL_ScrUp_1(){if(GetObj('ISL_Cont_1').scrollLeft<=0){GetObj('ISL_Cont_1').scrollLeft=GetObj('ISL_Cont_1').scrollLeft+GetObj('List1_1').offsetWidth}
+GetObj('ISL_Cont_1').scrollLeft-=Space_1}
+function ISL_GoDown_1(){clearInterval(MoveTimeObj_1);if(MoveLock_1)return;clearInterval(AutoPlayObj_1);MoveLock_1=true;MoveWay_1="right";ISL_ScrDown_1();MoveTimeObj_1=setInterval('ISL_ScrDown_1()',Speed_1)}
+function ISL_StopDown_1(){if(MoveWay_1 == "left"){return};clearInterval(MoveTimeObj_1);if(GetObj('ISL_Cont_1').scrollLeft%PageWidth_1-(fill_1>=0?fill_1:fill_1+1)!=0){Comp_1=PageWidth_1-GetObj('ISL_Cont_1').scrollLeft%PageWidth_1+fill_1;CompScr_1()}else{MoveLock_1=false}
+AutoPlay_1()}
+function ISL_ScrDown_1(){if(GetObj('ISL_Cont_1').scrollLeft>=GetObj('List1_1').scrollWidth){GetObj('ISL_Cont_1').scrollLeft=GetObj('ISL_Cont_1').scrollLeft-GetObj('List1_1').scrollWidth}
+GetObj('ISL_Cont_1').scrollLeft+=Space_1}
+function CompScr_1(){if(Comp_1==0){MoveLock_1=false;return}
+var num,TempSpeed=Speed_1,TempSpace=Space_1;if(Math.abs(Comp_1)<PageWidth_1/2){TempSpace=Math.round(Math.abs(Comp_1/Space_1));if(TempSpace<1){TempSpace=1}}
+if(Comp_1<0){if(Comp_1<-TempSpace){Comp_1+=TempSpace;num=TempSpace}else{num=-Comp_1;Comp_1=0}
+GetObj('ISL_Cont_1').scrollLeft-=num;setTimeout('CompScr_1()',TempSpeed)}else{if(Comp_1>TempSpace){Comp_1-=TempSpace;num=TempSpace}else{num=Comp_1;Comp_1=0}
+GetObj('ISL_Cont_1').scrollLeft+=num;setTimeout('CompScr_1()',TempSpeed)}}
+function picrun_ini(){
+GetObj("List2_1").innerHTML=GetObj("List1_1").innerHTML;
+GetObj('ISL_Cont_1').scrollLeft=fill_1>=0?fill_1:GetObj('List1_1').scrollWidth-Math.abs(fill_1);
+GetObj("ISL_Cont_1").onmouseover=function(){clearInterval(AutoPlayObj_1)}
+GetObj("ISL_Cont_1").onmouseout=function(){AutoPlay_1()}
+AutoPlay_1();
+}
+</script>
+<!-- 校园风貌、学校荣誉左右滚动 END-->
+
+<!-- 校园风貌、学校荣誉左右滚动 -->
+<style type="text/css">
+
+	.xyfg_titleA {
+    margin-top:5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #fff;
+    margin: auto;
+}
+
+
+
+.blk_20 {
+	float: left;
+	font-size: 9pt;
+	height: 160px;
+	left: 20px;
+	overflow: hidden;
+	position: relative;
+	top: 1px;
+	width: 966px;
+}
+
+.blk_20 .pcontA {
+	width: 100%;
+	position: relative;
+	top: 0px;
+	float: left;
+	overflow: hidden;
+}
+
+.blk_20 .ScrContA {
+	width: 32766px;
+	zoom: 1;
+	margin-left: 1px;
+}
+
+.blk_20 #List1_1A,.blk_20 #List2_1A {
+	float: left;
+}
+
+.blk_20 .LeftBotton,.blk_20 .RightBotton {
+	width: 15px;
+	position: relative;
+	z-index: 1111;
+	height: 74px;
+	float: left;
+	position: relative;
+	background: url(root/style/images/ax.gif) no-repeat;
+}
+
+.blk_20 .LeftBotton {
+	background-position: 0 0;
+	margin: 44px 41px 0;
+}
+
+.blk_20 .RightBotton {
+	background-position: 0 -100px;
+	margin: 44px -23px;
+}
+
+.blk_20 .LeftBotton:hover {
+	background-position: -20px 0;
+}
+
+.blk_20 .RightBotton:hover {
+	background-position: -20px -100px;
+}
+
+.blk_20 .pl img {
+	displAay: block;
+	cursor: pointer;
+	border: none;
+	margin: 6px auto 1px auto;
+}
+
+.blk_20 .pl {
+	width: 20%;
+	float: left;
+	text-align: center;
+	line-height: 23px;
+	padding-left: 6px;
+}
+
+.xyfg_titleA {
+	margin-top: 5px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	background: #fff;
+	width:193px;
+}
+
+.xyfg_titleA:HOVER {
+	color: #059d05;
+}
+.xfbjMoreRightContent{
+padding:10px 0 10px 0;
+}
+.xfbjMoreRightContent a:hover{
+}
+</style>
+
+<script type="text/javascript">
+var Speed_1 = 1; //速度(毫秒)
+var Space_1 = 1; //每次移动(px)
+var PageWidth_1 = 1; //翻页宽度
+var interval_1 = 10; //翻页间隔时间
+var fill_1 = 0; //整体移位
+var MoveLock_1 = false;
+var MoveTimeObj_1;
+var MoveWay_1="right";
+var Comp_1 = 0;
+var AutoplAayObj_1=null;
+function GetObj(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}}
+function AutoplAay_1(){clearInterval(AutoplAayObj_1);AutoplAayObj_1=setInterval('ISL_GoDown_1();ISL_StopDown_1();',interval_1)}
+function ISL_GoUp_1(){if(MoveLock_1)return;clearInterval(AutoplAayObj_1);MoveLock_1=true;MoveWay_1="left";MoveTimeObj_1=setInterval('ISL_ScrUp_1();',Speed_1);}
+function ISL_StopUp_1(){if(MoveWay_1 == "right"){return};clearInterval(MoveTimeObj_1);if((GetObj('ISL_Cont_1').scrollLeft-fill_1)%PageWidth_1!=0){Comp_1=fill_1-(GetObj('ISL_Cont_1').scrollLeft%PageWidth_1);CompScr_1()}else{MoveLock_1=false}
+AutoplAay_1()}
+function ISL_ScrUp_1(){if(GetObj('ISL_Cont_1').scrollLeft<=0){GetObj('ISL_Cont_1').scrollLeft=GetObj('ISL_Cont_1').scrollLeft+GetObj('List1_1A').offsetWidth}
+GetObj('ISL_Cont_1').scrollLeft-=Space_1}
+function ISL_GoDown_1(){clearInterval(MoveTimeObj_1);if(MoveLock_1)return;clearInterval(AutoplAayObj_1);MoveLock_1=true;MoveWay_1="right";ISL_ScrDown_1();MoveTimeObj_1=setInterval('ISL_ScrDown_1()',Speed_1)}
+function ISL_StopDown_1(){if(MoveWay_1 == "left"){return};clearInterval(MoveTimeObj_1);if(GetObj('ISL_Cont_1').scrollLeft%PageWidth_1-(fill_1>=0?fill_1:fill_1+1)!=0){Comp_1=PageWidth_1-GetObj('ISL_Cont_1').scrollLeft%PageWidth_1+fill_1;CompScr_1()}else{MoveLock_1=false}
+AutoplAay_1()}
+function ISL_ScrDown_1(){if(GetObj('ISL_Cont_1').scrollLeft>=GetObj('List1_1A').scrollWidth){GetObj('ISL_Cont_1').scrollLeft=GetObj('ISL_Cont_1').scrollLeft-GetObj('List1_1A').scrollWidth}
+GetObj('ISL_Cont_1').scrollLeft+=Space_1}
+function CompScr_1(){if(Comp_1==0){MoveLock_1=false;return}
+var num,TempSpeed=Speed_1,TempSpace=Space_1;if(Math.abs(Comp_1)<PageWidth_1/2){TempSpace=Math.round(Math.abs(Comp_1/Space_1));if(TempSpace<1){TempSpace=1}}
+if(Comp_1<0){if(Comp_1<-TempSpace){Comp_1+=TempSpace;num=TempSpace}else{num=-Comp_1;Comp_1=0}
+GetObj('ISL_Cont_1').scrollLeft-=num;setTimeout('CompScr_1()',TempSpeed)}else{if(Comp_1>TempSpace){Comp_1-=TempSpace;num=TempSpace}else{num=Comp_1;Comp_1=0}
+GetObj('ISL_Cont_1').scrollLeft+=num;setTimeout('CompScr_1()',TempSpeed)}}
+function picrun_ini(){
+GetObj("List2_1A").innerHTML=GetObj("List1_1A").innerHTML;
+GetObj('ISL_Cont_1').scrollLeft=fill_1>=0?fill_1:GetObj('List1_1A').scrollWidth-Math.abs(fill_1);
+GetObj("ISL_Cont_1").onmouseover=function(){clearInterval(AutoplAayObj_1)}
+GetObj("ISL_Cont_1").onmouseout=function(){AutoplAay_1()}
+AutoplAay_1();
+}
+</script>
+
+<script language="javascript" type="text/javascript"
+	src="/root/style/css/MSClass.js"></script>
+<div class="d1">
+	<div class="d3">
+		<div id="xfT1"
+			style=" float: left;  width: 123px;  color: rgb(255, 255, 255);  font-size: 18px;  height: 44px;  text-align: left;
+							 padding-top: 10px; position: relative; left: 1px;cursor:hand;">
+			<a style="font-weight:500;font-family:'微软雅黑';color: #333333;	"> 校园风光 </a>
+		</div>
+
+	</div>
+	<div class="d4">
+		<div class="xfbjMoreRightContent" id="xfM1">
+			<a
+				href='morelist!morelist.do?treeid=80'
+				target="_blank"> 更多>> </a>
+		</div>
+
+	</div>
+</div>
+<div class="d2">
+	<div class="scollPictureContent">
+		<div class="scollContent">
+			<div class="scol" id="aaaaa01">
+				<center id="marquee2">
+					<!-- picrotate_left start  -->
+					<div class="blk_18">
+						<div class="pcont" id="ISL_Cont_1">
+							<div class="ScrCont">
+								<div id="List1_1" class="List1_1">
+									<!-- piclist begin -->
+									
+										<a target="_blank" class="pl"
+											href="list!newsDetail.do?newsId=653"> <img
+											src="/ewebeditor/uploadfile/20161130095959263_min.jpg" alt=""
+											width="193" height="132" />
+											<div class="xyfg_title">
+												校园风光7
+											</div> </a>
+									
+										<a target="_blank" class="pl"
+											href="list!newsDetail.do?newsId=654"> <img
+											src="/ewebeditor/uploadfile/20160811115045734_min.jpg" alt=""
+											width="193" height="132" />
+											<div class="xyfg_title">
+												校园风光8
+											</div> </a>
+									
+										<a target="_blank" class="pl"
+											href="list!newsDetail.do?newsId=652"> <img
+											src="/ewebeditor/uploadfile/20161130100224209_s_min.jpg" alt=""
+											width="193" height="132" />
+											<div class="xyfg_title">
+												校园风光6
+											</div> </a>
+									
+										<a target="_blank" class="pl"
+											href="list!newsDetail.do?newsId=650"> <img
+											src="/ewebeditor/uploadfile/20161130100332256_min.JPG" alt=""
+											width="193" height="132" />
+											<div class="xyfg_title">
+												校园风光4
+											</div> </a>
+									
+										<a target="_blank" class="pl"
+											href="list!newsDetail.do?newsId=651"> <img
+											src="/ewebeditor/uploadfile/20161130100120896_s_min.jpg" alt=""
+											width="193" height="132" />
+											<div class="xyfg_title">
+												校园风光5
+											</div> </a>
+									
+									<!-- piclist end -->
+								</div>
+								<div id="List2_1" class="List2_1"></div>
+							</div>
+						</div>
+					</div>
+					<div class="c"></div>
+					<script type="text/javascript">
+					</script>
+					<!-- picrotate_left end -->
+				</center>
+			</div>
+
+			<script language="javascript" type="text/javascript"
+				src="/root/style/css/MSClass.js"></script>
+
+		</div>
+	</div>
+</div>
+	</div>
+	<div class="col-md-12 blogroll">
+			<div class="column">友情链接</div>
+		<div class="dowebok">
+				
+					<div style="display:inline-block;padding:20px 2px 20px 2px;">
+						<a href="http://www.smjy.net"> <img alt="思明教育网" src="userfiles/201608/admin/smjy.jpg"
+														height="70" width="193"> </a>
+					</div>
+				
+					<div style="display:inline-block;padding:20px 2px 20px 2px;">
+						<a href="http://www.xmedu.gov.cn/"> <img alt="厦门市教育局" src="userfiles/201608/admin/xmedu.jpg"
+														height="70" width="193"> </a>
+					</div>
+				
+					<div style="display:inline-block;padding:20px 2px 20px 2px;">
+						<a href="http://www.xmaes.cn/"> <img alt="厦门市教育科学研究院" src="userfiles/201608/admin/xmaes.jpg"
+														height="70" width="193"> </a>
+					</div>
+				
+					<div style="display:inline-block;padding:20px 2px 20px 2px;">
+						<a href="http://www.fjedu.gov.cn/"> <img alt="福建省教育厅" src="userfiles/201608/admin/福建省教育厅.jpg"
+														height="70" width="193"> </a>
+					</div>
+				
+					<div style="display:inline-block;padding:20px 2px 20px 2px;">
+						<a href="http://www.moe.gov.cn/"> <img alt="中华人民共和国教育部" src="userfiles/201608/admin/中华人民共和国教育部.jpg"
+														height="70" width="193"> </a>
+					</div>
+				
+				<div style = "display:inline-block;padding:20px 2px 20px 2px;">
+					<a href="http://www.smjy.net" > <img alt="思明教育网" src="userfiles/201608/admin/smjy.jpg" height="70" width="193"> </a>
+				</div>
+		
+				<div style = "display:inline-block;padding:20px 2px 20px 2px;">
+					<a href="http://www.xmedu.gov.cn/" > <img alt="厦门市教育局" src="userfiles/201608/admin/xmedu.jpg" height="70" width="193"> </a>
+				</div>
+		
+				<div style = "display:inline-block;padding:20px 2px 20px 2px;">
+					<a href="http://www.xmaes.cn/" > <img alt="厦门市教育科学研究院" src="userfiles/201608/admin/xmaes.jpg" height="70" width="193"> </a>
+				</div>
+		
+				<div style = "display:inline-block;padding:20px 2px 20px 2px;">
+					<a href="http://www.fjedu.gov.cn/" > <img alt="福建省教育厅" src="userfiles/201608/admin/福建省教育厅.jpg" height="70" width="193"> </a>
+				</div>
+		
+				<div style = "display:inline-block;padding:20px 2px 20px 2px;">
+					<a href="http://www.moe.gov.cn/" > <img alt="中华人民共和国教育部" src="userfiles/201608/admin/中华人民共和国教育部.jpg" height="70" width="193"> </a>
+				</div>
+		
+			</div>
+	</div>
+
+		</div>
+
+	</div>
+</div>
+	 <div class="row-fluid bottom_bg">
+	 	<div style="width:1080px;height:100%;margin:auto;position:relative;padding:0 30px;">
+		<div class="span12 bottom">
+			<div class="row-fluid">
+				<div class="span12 ">
+					闽ICP备10020464号<br>版权所有：厦门市金鸡亭中学<br><a href="http://www.easeok.cn">技术支持：厦门宇客云网络科技有限公司</a><br> <img src ="/root/style/images/ga.png"/>闽公网安备 35020302000348号    &nbsp&nbsp本站当前有：193 位访问者
+					
+				</div>
+			</div>
+		</div>
+		<span id='_ideConac' ></span><script src='http://dcs.conac.cn/js/14/215/0735/41602973/CA142150735416029730002.js 
+
+' type='text/javascript'></script>
+	 	</div>
+	</div>
+<style>
+	.bottom{
+		width:60%
+	}
+	#_ideConac{
+		display:inline-block;
+		float:left;
+		margin-top:20px;
+	}
+	
+</style>
+
+<div style="display:none;">
+<OBJECT classid=clsid:5EEEA87D-160E-4A2D-8427-B6C333FEDA4D id=RTXAX ></OBJECT>
+
+
+<form action="Login!rexLogin.do" method="post" id="LoginForm" name="LoginForm">
+		<input type="hidden" name="userName" />			
+		<input type="hidden" name="sign" />					
+</form>
+</div>
+
+
+</body>
+</html>

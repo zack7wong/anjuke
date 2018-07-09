@@ -1,0 +1,1536 @@
+
+
+
+
+
+
+  
+   
+   
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="东营市第二中学" />
+<meta name="description" content="东营市第二中学" />
+<link href="skin/skin01/css/style.css" type="text/css" rel="stylesheet" >
+
+<title>东营市第二中学</title>
+
+</head>
+
+<body>
+
+<!--最底层id开始-->
+<div id="wrap">
+
+
+<!--第2层id开始，主要规范下面各id的居中-->
+	<div class="bg" >
+
+
+
+
+		<!--底部id开始-->
+		<div align="center">
+		<div id="head">
+
+		
+		
+		
+		
+		
+		
+			<div class="daohang_date" >
+				<span style="float:left;margin-left:20px;"><a style="color:#F00!important;" href="http://www.gov.cn/public/yidongkehuduan.htm" target="_blank">国务院客户端</a></span><span style="float:left;margin-left:20px;">今天是2018年05月24日 星期四<input type='hidden' id='input_year' value='2018' /><input type='hidden' id='input_month' value='05' /><input type='hidden' id='input_day' value='24' />(<SCRIPT language=JavaScript>
+var element_year=document.getElementById("input_year");
+var element_month=document.getElementById("input_month");
+var element_day=document.getElementById("input_day");
+<!--
+var CalendarData=new Array(100);
+var madd=new Array(12);
+var tgString="甲乙丙丁戊己庚辛壬癸";
+var dzString="子丑寅卯辰巳午未申酉戌亥";
+var numString="一二三四五六七八九十";
+var monString="正二三四五六七八九十冬腊";
+var weekString="日一二三四五六";
+var sx="鼠牛虎兔龙蛇马羊猴鸡狗猪";
+var cYear,cMonth,cDay,TheDate;
+CalendarData = new Array(0xA4B,0x5164B,0x6A5,0x6D4,0x415B5,0x2B6,0x957,0x2092F,0x497,0x60C96,0xD4A,0xEA5,0x50DA9,0x5AD,0x2B6,0x3126E, 0x92E,0x7192D,0xC95,0xD4A,0x61B4A,0xB55,0x56A,0x4155B, 0x25D,0x92D,0x2192B,0xA95,0x71695,0x6CA,0xB55,0x50AB5,0x4DA,0xA5B,0x30A57,0x52B,0x8152A,0xE95,0x6AA,0x615AA,0xAB5,0x4B6,0x414AE,0xA57,0x526,0x31D26,0xD95,0x70B55,0x56A,0x96D,0x5095D,0x4AD,0xA4D,0x41A4D,0xD25,0x81AA5,0xB54,0xB6A,0x612DA,0x95B,0x49B,0x41497,0xA4B,0xA164B, 0x6A5,0x6D4,0x615B4,0xAB6,0x957,0x5092F,0x497,0x64B, 0x30D4A,0xEA5,0x80D65,0x5AC,0xAB6,0x5126D,0x92E,0xC96,0x41A95,0xD4A,0xDA5,0x20B55,0x56A,0x7155B,0x25D,0x92D,0x5192B,0xA95,0xB4A,0x416AA,0xAD5,0x90AB5,0x4BA,0xA5B, 0x60A57,0x52B,0xA93,0x40E95);
+madd[0]=0;
+madd[1]=31;
+madd[2]=59;
+madd[3]=90;
+madd[4]=120;
+madd[5]=151;
+madd[6]=181;
+madd[7]=212;
+madd[8]=243;
+madd[9]=273;
+madd[10]=304;
+madd[11]=334;
+ 
+function GetBit(m,n){
+return (m>>n)&1;
+}
+function e2c(){
+TheDate= (arguments.length!=3) ? new Date() : new Date(arguments[0],arguments[1],arguments[2]);
+var total,m,n,k;
+var isEnd=false;
+var tmp=TheDate.getYear();
+if(tmp<1900){
+ tmp+=1900;
+}
+total=(tmp-1921)*365+Math.floor((tmp-1921)/4)+madd[TheDate.getMonth()]+TheDate.getDate()-38;
+ 
+if(TheDate.getYear()%4==0&&TheDate.getMonth()>1) {
+ total++;
+}
+for(m=0;;m++){
+ k=(CalendarData[m]<0xfff)?11:12;
+ for(n=k;n>=0;n--){
+if(total<=29+GetBit(CalendarData[m],n)){
+ isEnd=true; break;
+ }
+ total=total-29-GetBit(CalendarData[m],n);
+ }
+ if(isEnd) break;
+}
+cYear=1921 + m;
+cMonth=k-n+1;
+cDay=total;
+if(k==12){
+ if(cMonth==Math.floor(CalendarData[m]/0x10000)+1){
+ cMonth=1-cMonth;
+ }
+if(cMonth>Math.floor(CalendarData[m]/0x10000)+1){
+ cMonth--;
+ }
+}
+}
+ 
+function GetcDateString(){
+var tmp="";
+tmp+=tgString.charAt((cYear-4)%10);
+tmp+=dzString.charAt((cYear-4)%12);
+//tmp+="(";
+//tmp+=sx.charAt((cYear-4)%12);
+//tmp+=")年";
+tmp+="年";
+if(cMonth<1){
+tmp+="(闰)";
+tmp+=monString.charAt(-cMonth-1);
+}else{
+ tmp+=monString.charAt(cMonth-1);
+}
+tmp+="月";
+tmp+=(cDay<11)?"初":((cDay<20)?"十":((cDay<30)?"廿":"三十"));
+if (cDay%10!=0||cDay==10){
+ tmp+=numString.charAt((cDay-1)%10);
+}
+return tmp;
+}
+ 
+function GetLunarDay(solarYear,solarMonth,solarDay){
+//solarYear = solarYear<1900?(1900+solarYear):solarYear;
+if(solarYear<1921 || solarYear>2020){
+return "";
+}else{
+ solarMonth = (parseInt(solarMonth)>0) ? (solarMonth-1) : 11;
+ e2c(solarYear,solarMonth,solarDay);
+ return GetcDateString();
+}
+}
+ 
+var D=new Date();
+//var yy=D.getFullYear();
+var yy=element_year.value;
+//var mm=D.getMonth()+1;
+var mm=element_month.value;
+//var dd=D.getDate();
+var dd=element_day.value;
+var ww=D.getDay();
+var ss=parseInt(D.getTime() / 1000);
+
+if (yy<100) yy="19"+yy;
+function showCal(){
+document.write("农历"+GetLunarDay(yy,mm,dd));
+} 
+//-->
+</SCRIPT>
+<SCRIPT>showCal();</SCRIPT> )</span> 
+				
+				
+				
+				<span style="float:right;margin-right:10px;">
+					<script>
+	function CheckPost(){
+	    if (document.myform.title.value=="请输入关键字" || document.myform.title.value==""){
+		    alert('请输入关键字');
+			document.myform.title.focus();
+			return false;
+		}
+	}
+</script>
+
+<form id="myform" name="myform" method="post" action="http://www.dysez.net/search.php" onsubmit="return CheckPost();">
+	<input type="text"  name="title" class="long" value="请输入关键字"  style="line-height:22px;"
+	onfocus="if(value=='请输入关键字'){value=''}" 
+	onblur="if(value==''){value='请输入关键字'}" size="30" />
+	
+	<select name="t_class">
+		<option value="news">文章标题</option>
+		<option value="pic">图片标题</option>
+	</select>
+	
+	<input type="submit" name="add" class="short" value="查询" />
+</form>				</span>
+				
+				<span style="float:right;"><a href="http://www.dysez.net/login/">登录</a>&nbsp;
+				
+								
+				<!--<a href="<php echo $row_arr[website_url];?>register/">注册</a>-->
+				
+								
+				&nbsp;&nbsp;</span>
+				
+			</div>
+			
+		<!--头部背景图id开始-->
+			<div >
+				
+				
+				<!--<img src="/skin/skin01/images/top_bg.jpg" border="0" width="960px">
+<embed src="/skin/skin01/images/top2.swf"
+width="960" height="120"></embed>
+
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="960" height="200">
+  <param name="movie" value="/skin/skin01/images/top2.swf" />
+  <param name="quality" value="high" />
+  <embed src="/skin/skin01/images/top2.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="960" height="200"></embed>
+</object>-->
+
+	
+<div style="960px;">	
+<!--<div style="background-image: url(/skin/skin01/images/top_bg_left2.jpg);	background-repeat: no-repeat; float:left;"></div>-->
+
+<!--<div style="float:left;"><img src="http://www.dysez.net/skin/skin01/images/top2013092301.gif"></div>
+-->
+<div style="float:left; background-color:#ffffff;">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="960" height="200">
+	<param name="movie" value="http://www.dysez.net/skin/skin01/images/top150105.swf">
+	<param name="quality" value="High">
+	<param name="wmode" value="transparent">
+	<embed src="http://www.dysez.net/skin/skin01/images/top150105.swf" width="960" height="200" quality="High" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent">
+      </object> 
+</div>
+
+</div>				
+			</div>
+		<!--头部背景图id结束-->
+
+		<!--头部背景图id开始-->
+			<div class="daohang">
+					<style type="text/css">
+/*js导航下拉.begin*/
+{margin:0;padding:0;list-style-type:none;}
+/*body{font-family:Arial, Helvetica, sans-serif;font-size:14px;background-color:#fff;}*/
+/*导航菜单*/
+
+#nav{width:960px;margin:0px auto 10px auto;height:40px;line-height:40px;background:url('../images/nav-bg.png');display:block;overflow:hidden;}
+#navMenu ul{width:960px;float:left;height:40px;margin-top:-50px;list-style-type:none;}
+#navMenu li{float:left;font-size:14px;margin-top:-13px;list-style-type:none;}
+#navMenu li a{color:#fff!important;text-decoration:none;width:48px;height:40px;line-height:40px;text-align:center;background-image:url('../images/navbg.png');display:block;list-style-type:none;}
+#navMenu li a.last{width:92px;}
+#navMenu li a.current{background-position:0 -80px;width:91px;height:40px;line-height:40px;text-align:center;display:block;color:#fff;}
+#navMenu li a:hover{background-position:0 -40px;}
+/*-------- 下拉菜单 --------------*/
+.dropMenu{position:absolute;top:0;z-index:100;visibility:hidden;margin-top:-2px;border:1px solid #0e2c5e;border-top:0;background-color:#cbdef4;padding:4px;width:110px;}
+.dropMenu li{float:left;width:110px;height:40px;}
+.dropMenu li a{display:block;padding:5px 5px 5px 5px;color:#0f335d;text-align:left;}
+.dropMenu a:hover{text-decoration:underline;color:#000;background-color:#dceefc;height:32px;}
+
+/*js导航下拉.end*/
+</style>	
+
+
+
+	<div id="nav">
+		<ul id="navMenu">
+			<li><a href='http://www.dysez.net/'>首页</a></li>
+				
+			<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=1&name=概况" rel='dropmenu1'> 概况</a></li>
+			
+			
+				
+			<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=2&name=快讯" rel='dropmenu2'> 快讯</a></li>
+			
+			
+				
+			<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=3&name=公开" rel='dropmenu3'> 公开</a></li>
+			
+			
+				
+			<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=50&name=德育" rel='dropmenu4'> 德育</a></li>
+			
+			
+				
+			<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=58&name=教学" rel='dropmenu5'> 教学</a></li>
+			
+			
+				
+			<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=14&name=科研" rel='dropmenu6'> 科研</a></li>
+			
+			
+				
+			<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=68&name=工会" rel='dropmenu7'> 工会</a></li>
+			
+			
+				
+			<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=74&name=团委" rel='dropmenu8'> 团委</a></li>
+			
+			
+				
+			<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=79&name=后勤" rel='dropmenu9'> 后勤</a></li>
+			
+			
+				
+			<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=91&name=艺体" rel='dropmenu10'> 艺体</a></li>
+			
+			
+				
+			<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=39&name=电教" rel='dropmenu11'> 电教</a></li>
+			
+			
+				
+			<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=103&name=党建" rel='dropmenu12'> 党建</a></li>
+			
+			
+						
+			<li><a href="http://www.dysez.net/pic/" rel='dropmenu_pic'>图片</a></li>
+			<li><a href="http://www.dysez.net/video/"  rel='dropmenu_video' >视频</a></li>
+			<li><a href="http://www.dysez.net/xiaoyou/">校友</a></li>
+			<!--<li><a href="http://www.dysez.net/xiaoyouerrrthreui/">校友</a></li>-->
+			<li><a href="http://www.dysez.net/xiaobao/view_class.php">校报</a></li>
+			<li><a href="http://www.dysez.net/zhuanti/"  rel='dropmenu_zhuanti'  >专题</a></li>
+			<li style="width:48px;"><a style="width:56px;text-align:center;" href="http://store.9stars.cn:8080/starweb/book/showHome.action" target="_blank" rel='dropmenu_tushuguan'>图书馆</a></li>
+			
+		</ul>
+	</div>
+
+	<script type='text/javascript' src='http://www.dysez.net/js/dropdown.js'></script>
+
+	
+	<ul id="dropmenu1" class="dropMenu">
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=44&name=学校简介">学校简介</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=42&name=学校文化">学校文化</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=45&name=领导班子">领导班子</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=46&name=历史沿革">历史沿革</a></li>
+				
+		<!--
+		循环格式如下：
+		<li><a href="#">导航菜单</a></li>
+		-->
+		
+	</ul>
+	
+	<ul id="dropmenu2" class="dropMenu">
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=125&name=校园新闻">校园新闻</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=126&name=媒体二中">媒体二中</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=127&name=经验交流">经验交流</a></li>
+				
+		<!--
+		循环格式如下：
+		<li><a href="#">导航菜单</a></li>
+		-->
+		
+	</ul>
+	
+	<ul id="dropmenu3" class="dropMenu">
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=98&name=中考信息">中考信息</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=49&name=高考信息">高考信息</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=99&name=学考信息">学考信息</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=47&name=上级文件">上级文件</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=48&name=规章制度">规章制度</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=89&name=素质教育">素质教育</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=109&name=内设处室">内设处室</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=110&name=便民服务">便民服务</a></li>
+				
+		<!--
+		循环格式如下：
+		<li><a href="#">导航菜单</a></li>
+		-->
+		
+	</ul>
+	
+	<ul id="dropmenu4" class="dropMenu">
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=124&name=校园之星">校园之星</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=51&name=主题教育">主题教育</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=12&name=学生活动">学生活动</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=52&name=班主任工作">班主任工作</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=53&name=班级管理">班级管理</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=54&name=全员育人">全员育人</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=55&name=评先树优">评先树优</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=56&name=家校共育">家校共育</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=57&name=学生资助">学生资助</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=100&name=心理健康教育">心理健康教育</a></li>
+						<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=133&name=%B6%BE%C6%B7%D4%A4%B7%C0%BD%CC
+
+%D3%FD" target="_blank">毒品预防教育</a></li>
+				
+		<!--
+		循环格式如下：
+		<li><a href="#">导航菜单</a></li>
+		-->
+		
+	</ul>
+	
+	<ul id="dropmenu5" class="dropMenu">
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=122&name=教学动态">教学动态</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=59&name=教学常规">教学常规</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=60&name=学习心得">学习心得</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=61&name=艺体教学">艺体教学</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=62&name=图书实验">图书实验</a></li>
+				
+		<!--
+		循环格式如下：
+		<li><a href="#">导航菜单</a></li>
+		-->
+		
+	</ul>
+	
+	<ul id="dropmenu6" class="dropMenu">
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=123&name=教研动态">教研动态</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=38&name=科研成果">科研成果</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=37&name=课程改革">课程改革</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=64&name=教研活动">教研活动</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=65&name=课题研究">课题研究</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=66&name=教育培训">教育培训</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=67&name=教师专业化发展">教师专业化发展</a></li>
+				
+		<!--
+		循环格式如下：
+		<li><a href="#">导航菜单</a></li>
+		-->
+		
+	</ul>
+	
+	<ul id="dropmenu7" class="dropMenu">
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=132&name=先进团队">先进团队</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=70&name=教师风采">教师风采</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=72&name=师德建设">师德建设</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=73&name=教工活动">教工活动</a></li>
+				
+		<!--
+		循环格式如下：
+		<li><a href="#">导航菜单</a></li>
+		-->
+		
+	</ul>
+	
+	<ul id="dropmenu8" class="dropMenu">
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=121&name=团情快讯">团情快讯</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=75&name=组织建设">组织建设</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=94&name=校报">校报</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=102&name=网上团校">网上团校</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=76&name=主题活动">主题活动</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=77&name=社团建设">社团建设</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=78&name=国旗下讲话">国旗下讲话</a></li>
+				
+		<!--
+		循环格式如下：
+		<li><a href="#">导航菜单</a></li>
+		-->
+		
+	</ul>
+	
+	<ul id="dropmenu9" class="dropMenu">
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=120&name=服务动态">服务动态</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=96&name=办公采购">办公采购</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=81&name=校产管理">校产管理</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=82&name=基建维修">基建维修</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=83&name=饮食服务">饮食服务</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=90&name=卫生保健">卫生保健</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=84&name=安全保卫">安全保卫</a></li>
+				
+		<!--
+		循环格式如下：
+		<li><a href="#">导航菜单</a></li>
+		-->
+		
+	</ul>
+	
+	<ul id="dropmenu10" class="dropMenu">
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=95&name=艺术活动">艺术活动</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=92&name=体育活动">体育活动</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=93&name=大课间">大课间</a></li>
+				
+		<!--
+		循环格式如下：
+		<li><a href="#">导航菜单</a></li>
+		-->
+		
+	</ul>
+	
+	<ul id="dropmenu11" class="dropMenu">
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=85&name=资源管理">资源管理</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=86&name=技术支持">技术支持</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=87&name=资源中心">资源中心</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=88&name=网络维护">网络维护</a></li>
+				
+		<!--
+		循环格式如下：
+		<li><a href="#">导航菜单</a></li>
+		-->
+		
+	</ul>
+	
+	<ul id="dropmenu12" class="dropMenu">
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=104&name=党建动态">党建动态</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=105&name=党员风采">党员风采</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=106&name=网上党校">网上党校</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=107&name=组织建设">组织建设</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=108&name=党务公开">党务公开</a></li>
+				
+		<!--
+		循环格式如下：
+		<li><a href="#">导航菜单</a></li>
+		-->
+		
+	</ul>
+	
+	
+	
+	<ul id="dropmenu_pic" class="dropMenu">
+			<li><a href="http://www.dysez.net/pic/list_pic_title.php?cid=1&name=优秀学子">优秀学子</a></li>
+				<li><a href="http://www.dysez.net/pic/list_pic_title.php?cid=3&name=优秀教师">优秀教师</a></li>
+				<li><a href="http://www.dysez.net/pic/list_pic_title.php?cid=12&name=校园风光">校园风光</a></li>
+				<li><a href="http://www.dysez.net/pic/list_pic_title.php?cid=13&name=学校活动">学校活动</a></li>
+				<li><a href="http://www.dysez.net/pic/list_pic_title.php?cid=15&name=毕业留影">毕业留影</a></li>
+				<li><a href="http://www.dysez.net/pic/list_pic_title.php?cid=16&name=学校荣誉">学校荣誉</a></li>
+				<li><a href="http://www.dysez.net/pic/list_pic_title.php?cid=11&name=精美桌布">精美桌布</a></li>
+		
+	</ul>	
+	
+	<ul id="dropmenu_video" class="dropMenu">
+			<li><a href="http://www.dysez.net/video/list_pic_title.php?cid=12&name=课堂实录">课堂实录</a></li>
+				<li><a href="http://www.dysez.net/video/list_pic_title.php?cid=13&name=培训学习">培训学习</a></li>
+				<li><a href="http://www.dysez.net/video/list_pic_title.php?cid=1&name=艺术体育">艺术体育</a></li>
+				<li><a href="http://www.dysez.net/video/list_pic_title.php?cid=15&name=校园风景">校园风景</a></li>
+				<li><a href="http://www.dysez.net/video/list_pic_title.php?cid=3&name=体育锻炼">体育锻炼</a></li>
+		
+	</ul>	
+
+	
+	<ul id="dropmenu_zhuanti" class="dropMenu" style="overflow:hidden;width:173px;">
+				<li style="width:500px;"><a href="http://www.dysez.net/zhuanti/list_pic_title.php?cid=16&name=党的群众路线教育实践活动">党的群众路线教育实践活动</a></li>
+				<li style="width:500px;"><a href="http://www.dysez.net/zhuanti/list_pic_title.php?cid=21&name=国家卫生城市复审迎检工作动态">国家卫生城市复审迎检工作动态</a></li>
+				<li style="width:500px;"><a href="http://www.dysez.net/zhuanti/list_pic_title.php?cid=8&name=城乡共建">城乡共建</a></li>
+				<li style="width:500px;"><a href="http://www.dysez.net/zhuanti/list_pic_title.php?cid=10&name=法制教育">法制教育</a></li>
+				<li style="width:500px;"><a href="http://www.dysez.net/zhuanti/list_pic_title.php?cid=2&name=创建文明城市">创建文明城市</a></li>
+				<li style="width:500px;"><a href="http://www.dysez.net/zhuanti/list_pic_title.php?cid=3&name=创建平安校园">创建平安校园</a></li>
+				<li style="width:500px;"><a href="http://www.dysez.net/zhuanti/list_pic_title.php?cid=4&name=主题教育">主题教育</a></li>
+				<li style="width:500px;"><a href="http://www.dysez.net/zhuanti/list_pic_title.php?cid=7&name=教育大讨论活动">教育大讨论活动</a></li>
+				<li><a href="http://www.dysez.net/news/list_pic_title.php?cid=115&name=%BF%C6%BC%BC">科技创新</a></li>
+	</ul>		
+	
+	<ul id="dropmenu_tushuguan" class="dropMenu" style="overflow:hidden;width:173px;">
+		<li><a href="http://read.9stars.cn" target="_blank">电子报纸</a></li>
+		<li><a href="http://10.20.100.133:8082" target="_blank">电子图书</a></li>
+	</ul>		
+
+	<script type="text/javascript">cssdropdown.startchrome("navMenu")</script> 
+
+			</div>
+		<!--头部背景图id结束-->
+
+		</div>
+
+
+		
+		<!--中间第1行id开始-->
+		
+		<div id="middle01" style="margin-top:0px;" >
+			<div class="left" >
+				<!--以下div可被重复使用-->
+				<div class="sibian">
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >校园快讯&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="news/list_pic_title.php?cid=2&name=校园快讯">More</a></span>
+					</div>
+					
+					<div class="sibian_main" >
+						<span class="sibian_main_left" ><SCRIPT type=text/javascript>
+	linkarr = new Array();
+	picarr = new Array();
+	textarr = new Array();
+
+	var focus_width=280
+	var focus_height=200
+	var text_height=24
+	var swf_path='/';
+	var swf_height=focus_height+text_height;
+	
+
+	var pics='';
+	var links='';
+	var texts='';
+			linkarr[1] = "/news/view.php?id=17381$cid=125";
+		picarr[1]  = "userfiles/small_pic/thumb_20180524145045_496.jpg";
+		textarr[1] = "东营区市场监管局到市二中参观指导工作";
+			linkarr[2] = "/news/view.php?id=17378$cid=125";
+		picarr[2]  = "userfiles/small_pic/thumb_20180523165510_717.jpg";
+		textarr[2] = "“东营市2018年中小学书法课堂教学活动";
+			linkarr[3] = "/news/view.php?id=17369$cid=78";
+		picarr[3]  = "userfiles/small_pic/thumb_20180521162219_978.jpg";
+		textarr[3] = "第十二周国旗下演讲《阳光心态，从我做起》";
+			linkarr[4] = "/news/view.php?id=17366$cid=125";
+		picarr[4]  = "userfiles/small_pic/thumb_20180521160138_637.jpg";
+		textarr[4] = "弘扬红色文化 传承红色基因 —— 市二中";
+			linkarr[5] = "/news/view.php?id=17358$cid=125";
+		picarr[5]  = "userfiles/small_pic/thumb_20180518174602_704.jpg";
+		textarr[5] = "市二中举行名师讲堂活动";
+		/*
+		linkarr[1] = "/news/internation/guojihuabian/2010/1126/62007.html";
+		picarr[1]  = "/uploads/allimg/101126/0951092H2-0-lp.jpg";
+		textarr[1] = " 11月12日，整理好渔网之后，丁";
+	*/
+
+for(i=1;i<picarr.length;i++){
+  if(pics=="") pics = picarr[i];
+  else pics += "|"+picarr[i];
+}
+for(i=1;i<linkarr.length;i++){
+  if(links=="") links = linkarr[i];
+  else links += "|"+linkarr[i];
+}
+for(i=1;i<textarr.length;i++){
+  if(texts=="") texts = textarr[i];
+  else texts += "|"+textarr[i];
+}
+	
+	document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">');
+	document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="http://www.dysez.net/images/focus.swf"><param name="quality" value="high"><param name="bgcolor" value="#e8e8e8">');
+	document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+	document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+	document.write('<embed src="http://www.dysez.net/images/focus.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" bgcolor="#e8e8e8" quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+	document.write('</object>');
+</SCRIPT>
+
+</span>
+						<span class="sibian_main_right" >					<div class="toutiao" align="center" >
+					<!--头版头条标题输出begin-->
+												<a href="news/view.php?id=17334&&cid=2" target=_blank >
+
+						<font style="cursor:hand; color:red;font-size:23px; font-family:'黑体'; text-decoration:none; font-weight:400;text-align:center;">
+
+						“身教育人、典范引领”之优秀青						 </font>
+						 </a>
+					<!--头版头条标题输出end-->
+					</div>
+					
+					
+					
+					<div class="jianjie">&nbsp;&nbsp;&nbsp;&nbsp;
+					   					<a href="news/view.php?id=
+					17334					&cid=
+					2					" target=_blank>(详细) </a>
+					</div> 
+					
+					
+					
+					<div class="title_list" style="font-size:14px;">
+					<!--新闻begin--> 
+						<ul>
+								
+     
+	
+	
+    <li>&nbsp;&nbsp;<a href=news/view.php?id=17381&&cid=125 target=_blank><img src="skin/skin01/images/gif-0080.gif" width="9" height="9" border=0 />&nbsp;东营区市场监管局到市二中参观指导工作<img src="skin/skin01/images/new.gif" width="33" height="16" border=0 />&nbsp;&nbsp;[05-24]</a>    </li>
+     
+	
+	
+    <li>&nbsp;&nbsp;<a href=news/view.php?id=17378&&cid=125 target=_blank><img src="skin/skin01/images/gif-0080.gif" width="9" height="9" border=0 />&nbsp;“东营市2018年中小学书法课堂教学活<img src="skin/skin01/images/new.gif" width="33" height="16" border=0 />&nbsp;&nbsp;[05-23]</a>    </li>
+     
+	
+	
+    <li>&nbsp;&nbsp;<a href=news/view.php?id=17366&&cid=125 target=_blank><img src="skin/skin01/images/gif-0080.gif" width="9" height="9" border=0 />&nbsp;弘扬红色文化 传承红色基因 —— 市二<img src="skin/skin01/images/new.gif" width="33" height="16" border=0 />&nbsp;&nbsp;[05-21]</a>    </li>
+     
+	
+	
+    <li>&nbsp;&nbsp;<a href=news/view.php?id=17358&&cid=125 target=_blank><img src="skin/skin01/images/gif-0080.gif" width="9" height="9" border=0 />&nbsp;市二中举行名师讲堂活动<img src="skin/skin01/images/new.gif" width="33" height="16" border=0 />&nbsp;&nbsp;[05-18]</a>    </li>
+     
+	
+	
+    <li>&nbsp;&nbsp;<a href=news/view.php?id=17357&&cid=125 target=_blank><img src="skin/skin01/images/gif-0080.gif" width="9" height="9" border=0 />&nbsp;我校派员参加“东营市中小学幼儿园（局属<img src="skin/skin01/images/new.gif" width="33" height="16" border=0 />&nbsp;&nbsp;[05-18]</a>    </li>
+       						</ul>
+					<!--新闻end--> 
+					</div></span>
+					</div>
+				</div>
+				
+			</div>	
+			<div class="right" >
+				<div class="sibian" >
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >本站公告&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="gonggao/list_pic_title.php?cid=1&name=首页公告">More</a></span>
+					</div>
+					<div class="sibian_main" >
+						<marquee direction="up"  height="230px" scrolldelay="230"  onmouseover=this.stop() onmouseout=this.start() >
+								<div class='line_bottom' style='height:auto;'>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=gonggao/view.php?id=861&cid=1 target=_blank>全国学生资助管理中心致高中毕业生的一封信(05月21日)</a></div><div class='line_bottom' style='height:auto;'>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=gonggao/view.php?id=860&cid=1 target=_blank>致全市2018年春季高考考生及家长的一封(05月07日)</a></div><div class='line_bottom' style='height:auto;'>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=gonggao/view.php?id=859&cid=1 target=_blank>教育部预防中小学生沉迷网络教育 致全国中(04月24日)</a></div><div class='line_bottom' style='height:auto;'>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=gonggao/view.php?id=858&cid=1 target=_blank>2018年夏季普通高中学业水平考试报名工(03月21日)</a></div><div class='line_bottom' style='height:auto;'>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=gonggao/view.php?id=855&cid=1 target=_blank>山东省招考院致广大艺考考生的一封信(02月25日)</a></div>						</marquee>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--中间第1行id结束-->
+
+		<!--中间第2行id开始middle_xianchan3.gif-->
+<!--		
+<script language =javascript >
+ var curIndex=0;
+ //时间间隔 单位毫秒
+ var timeInterval=8000;
+ var arr=new Array();
+ arr[0]="skin/skin01/images/wenmingchengshi.gif";
+ arr[1]="skin/skin01/images/middle_xianchan3.gif";
+ setInterval(changeImg,timeInterval);
+	function changeImg()
+	{
+		var obj=document.getElementById("obj");
+		if (curIndex==arr.length-1) 
+		{
+		   curIndex=0;
+		}
+		else
+		{
+			curIndex+=1;
+		}
+		obj.src=arr[curIndex];
+	}
+</script>
+-->
+		<!--<div id="middle02" style="clear:left;padding-top:2px;" >
+			<img id=obj src="skin/skin01/images/homepage_middle.jpg" border="0" width="960px" height="117px">
+		</div>-->
+		<div id="middle02" >
+			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="960" height="117">
+			<param name="movie" value="http://www.dysez.net/skin/skin01/swf/liangxueyizuo20161104.swf">
+			<param name="quality" value="High">
+			<param name="wmode" value="transparent">
+			<embed src="http://www.dysez.net/skin/skin01/swf/liangxueyizuo20161104.swf" width="960" height="117" quality="High" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent">
+			</object> 
+		</div>
+		<!--中间第2行id结束-->
+
+		<!--中间分成三栏的第3行id开始,-->
+		<div id="middle03" >
+	
+			<!--左侧多行栏目begin-->
+			<div id="left" class="left2">
+				
+				<div class="sibian" style="height:414px; border:0px;margin-bottom:5px;">
+					<div align="center">
+					<a href="mailto:dyezxzyx@163.com" title="东营二中校长邮箱"><img src="skin/skin01/images/xzyx.gif" border="0" class="imgpadding" width="192px"; /></a>
+					<a href="/danye/view.php?cid=1&&id=2" title="德育检查系统"><img src="skin/skin01/images/dyjc.gif" border="0"  class="imgpadding" width="192px"; /></a>
+					<!--<a href="http://172.16.20.17:801" title="级部办公系统"><img src="skin/skin01/images/jibubangong.gif" border="0"  class="imgpadding" width="192px"; /></a>-->
+					<a href="http://172.16.21.223:82/list_pic_title.php" title="内部办公系统"><img src="skin/skin01/images/nbbg.gif" border="0"  class="imgpadding" width="192px"; /></a>
+					
+					<a href="/video" title="二中视频"><img src="skin/skin01/images/spdb.gif" border="0"  class="imgpadding" width="192px"; /></a>					
+					<a href="http://10.20.100.113"><img src="skin/skin01/images/xkjx.gif" border="0"  class="imgpadding" width="192px"; /></a>	
+					<a href="http://www.dysez.net/news/list_pic_title.php?cid=115&name=%BF%C6%BC%BC"><img src="skin/skin01/images/kjcx.gif" border="0"  class="imgpadding" width="192px"; /></a>
+					<a href="http://www.sunnysports.org.cn/org/profile/46758
+"><img src="skin/skin01/images/ygty.gif" border="0"  class="imgpadding" width="192px"; /></a>	
+					<!--<a href="http://dysezwenming.blog.163.com"><img src="skin/skin01/images/wenmingblog.gif" border="0"  class="imgpadding" width="192px"; /></a>-->
+					</div>
+				</div>
+
+								<div class="sibian" style="height:255px;" >
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >每周计划&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="news/list_title.php?cid=19&name=%C3%BF%D6%DC%BC%C6%BB%AE">More</a></span>
+					</div>
+					<div class="sibian_main" >
+						<div class=line_bottom> <a href=news/view.php?id=17324&cid=19 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;第十一周工作计划</a></div><div class=line_bottom> <a href=news/view.php?id=17307&cid=19 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;第十周工作计划</a></div><div class=line_bottom> <a href=news/view.php?id=17264&cid=19 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;第九周工作计划</a></div><div class=line_bottom> <a href=news/view.php?id=17263&cid=19 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;第八周工作计划</a></div><div class=line_bottom> <a href=news/view.php?id=17179&cid=19 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;第七周工作计划</a></div><div class=line_bottom> <a href=news/view.php?id=17146&cid=19 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;第六周工作计划</a></div><div class=line_bottom> <a href=news/view.php?id=17134&cid=19 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;第五周工作计划</a></div><div class=line_bottom> <a href=news/view.php?id=17095&cid=19 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;第四周工作计划</a></div>					</div>
+				</div>								<div class="sibian" style="height:90px;" >
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >作息时间表&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="news/list_title.php?cid=20&name=%D7%F7%CF%A2%CA%B1%BC%E4%B1%ED">More</a></span>
+					</div>
+					<div class="sibian_main">
+						<div class=line_bottom> <a href=news/view.php?id=16922&cid=20 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;东营市第二中学2017-201</a></div><div class=line_bottom> <a href=news/view.php?id=16063&cid=20 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;东营市第二中学2017-201</a></div>					</div>
+				</div>				
+												<div class="sibian" style="height:180px;" >
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >品牌活动&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="news/list_pic_title.php?cid=22&name=%C6%B7%C5%C6%BB%EE%B6%AF">More</a></span>
+					</div>
+					<div class="sibian_main" >
+						<div class=line_bottom>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=news/list_pic_title.php?cid=101&name=课堂教学改革 >课堂教学改革</a></div><div class=line_bottom>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=news/list_pic_title.php?cid=25&name=综合社会实践 >综合社会实践</a></div><div class=line_bottom>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=news/list_pic_title.php?cid=111&name=规范创建常规落实活动 >规范创建常规落实活动</a></div><div class=line_bottom>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=news/list_pic_title.php?cid=24&name=志愿者在行动 >志愿者在行动</a></div><div class=line_bottom>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=news/list_pic_title.php?cid=23&name=精品社团 >精品社团</a></div>					</div>
+				</div>				
+				
+				<div class="sibian"  style="height:260px;" >
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >专题活动&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="zhuanti">More</a></span>
+					</div>
+					<div class="sibian_main" >
+						<!--<div class=line_bottom style="height:40px;">
+						&nbsp;<img src="skin/skin01/images/gif-0080.gif" />
+						 <a href='http://www.moe.edu.cn/publicfiles/business/htmlfiles/moe/s7414/list.html' target='_blank'>深入开展党的群众路线教育实践活动</a>
+						</div>-->
+						<div class=line_bottom>
+							&nbsp;<img src="skin/skin01/images/gif-0080.gif" />
+							 <a href='http://dysezwenming.blog.163.com' >文明博客</a>
+						</div>
+						<div class=line_bottom>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=zhuanti/list_pic_title.php?cid=7&name=教育大讨论活动 >教育大讨论活动</a></div><div class=line_bottom>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=zhuanti/list_pic_title.php?cid=4&name=主题教育 >主题教育</a></div><div class=line_bottom>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=zhuanti/list_pic_title.php?cid=3&name=创建平安校园 >创建平安校园</a></div><div class=line_bottom>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=zhuanti/list_pic_title.php?cid=2&name=创建文明城市 >创建文明城市</a></div><div class=line_bottom>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=zhuanti/list_pic_title.php?cid=10&name=法制教育 >法制教育</a></div><div class=line_bottom>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=zhuanti/list_pic_title.php?cid=8&name=城乡共建 >城乡共建</a></div><div class=line_bottom>&nbsp;<img src="skin/skin01/images/gif-0080.gif" /> <a href=zhuanti/list_pic_title.php?cid=21&name=国家卫生城市复审迎检工作动态 >国家卫生城市复审迎检工作动态</a></div>
+					</div>
+				</div>									
+													<div class="sibian" style="height:125px; font-size:14px;" >
+						<div class="sibian_top" >
+							<span class="sibian_top_left" >网站统计&nbsp;&nbsp;</span>
+							<span class="sibian_top_right" ><a href="gonggao/"></a></span>
+						</div>
+						<div class="sibian_main" >
+							·当前在线人数:<script src="count2/online.php"></script>人
+							<br>·今日访问量:002619&nbsp;&nbsp;&nbsp;&nbsp;<br>·昨日访问量:005922&nbsp;&nbsp;&nbsp;&nbsp;<br>·总浏览量：3777462<br/>							
+						</div>
+					</div>	
+			</div>
+			<!--左侧多行栏目end-->	
+	
+	
+	
+	
+	
+	
+			
+			<!--中间多行栏目begin-->
+			<div class="middle_center">
+
+			
+				<div class="sibian_middle_bg" >
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >学生活动&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="news/list_pic_title.php?cid=12&name=%D1%A7%C9%FA%BB%EE%B6%AF">More</a></span>
+					</div>
+					
+					<div class="sibian_main_middle_left" >
+						<a href=news/view.php?id=17293&cid=12 target=_blank><img class="img_border"  witdh=170px height=120px   src=" ../userfiles/small_pic/thumb_20180507155146_392.jpg" ><br/>市二中组织师生参加“中国万达”2018黄河口（东营）国际马拉</a>					</div>
+					<div class="sibian_main_middle_right" >
+						<div class=line_bottom> <a href=news/view.php?id=17293&cid=12 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;市二中组织师生参加“中国万达”201(05-07)</a></div><div class=line_bottom> <a href=news/view.php?id=17208&cid=12 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;市二中举办“让生命远离毒品”主题漫画(04-23)</a></div><div class=line_bottom> <a href=news/view.php?id=17149&cid=12 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;2018年黄河口“国学小名士”校内选(04-13)</a></div><div class=line_bottom> <a href=news/view.php?id=17145&cid=12 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;市二中开展“缅怀革命先驱，传承先生之(04-09)</a></div><div class=line_bottom> <a href=news/view.php?id=17084&cid=12 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;“无毒青春，健康生活”志愿服务活动(03-27)</a></div><div class=line_bottom> <a href=news/view.php?id=17083&cid=12 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;“关爱老人，奉献爱心” ——高一5、(03-27)</a></div><div class=line_bottom> <a href=news/view.php?id=16665&cid=12 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;市二中举行消防应急疏散演练(01-08)</a></div>					</div>
+					
+				</div>				
+				
+
+			
+				<div class="sibian_middle_bg" >
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >教育科研&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="news/list_pic_title.php?cid=14&name=教育科研">More</a></span>
+					</div>
+					
+					<div class="sibian_main_middle_left" >
+						<a href=news/view.php?id=6577&cid=38 target=_blank><img class="img_border"  witdh=170px height=120px   src=" ../userfiles/small_pic/thumb_20170930103421_923.jpg" ><br/>风劲帆满好远航</a>					</div>
+					<div class="sibian_main_middle_right" >
+						<div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=17376&cid=37 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;如何构建校本核心素养模型——推进核心(05-23)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=17375&cid=37 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;课程形态变革提升育人能力(05-23)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=17340&cid=67 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;争做“四有”好老师 当好学生引路人(05-15)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=17304&cid=37 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;推进核心素养导向的学校课程改革①(05-09)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=17191&cid=67 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;育时代新人，做国家脊梁——北京外国语(04-18)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=17186&cid=67 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;翟小宁：踏上新时代教师发展新征程(04-18)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=17185&cid=37 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;深化高考综合改革（1-3）(04-18)</a></div>					</div>
+					
+				</div>				
+				
+
+			
+				<div class="sibian_middle_bg" >
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >优秀学子&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="pic/list_pic_title.php?cid=1&name=%D3%C5%D0%E3%D1%A7%D7%D3">More</a></span>
+					</div>
+					
+					<div class="sibian_main_middle_left" >
+						<table><tr><td align=center valign=top><a href=/pic/view.php?id=657&cid=1 target=_blank><img  height=120px   src=" ../userfiles/small_pic/thumb_20130110194341_700.jpg" ><br/>省级三好学生 郭聪聪</a></td><td align=center valign=top><a href=/pic/view.php?id=1590&cid=1 target=_blank><img  height=120px   src=" ../userfiles/small_pic/thumb_20150210202641_193.jpg" ><br/>2014年度市级优秀学生干部---丁效晨</a></td><td align=center valign=top><a href=/pic/view.php?id=1307&cid=1 target=_blank><img  height=120px   src=" ../userfiles/small_pic/thumb_20140630185904_942.jpg" ><br/>主持情缘---吴淑珍</a></td></tr></table>					</div>
+					<!--
+					<div class="sibian_main_middle_right" >
+						//<div class=line_bottom> <a href=/pic/view.php?id=1591&cid=1 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;2014年度市级优秀学生干部---陈(02-10)</a></div><div class=line_bottom> <a href=/pic/view.php?id=1590&cid=1 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;2014年度市级优秀学生干部---丁(02-10)</a></div><div class=line_bottom> <a href=/pic/view.php?id=1589&cid=1 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;2014年度市级优秀学生干部---赵(02-10)</a></div><div class=line_bottom> <a href=/pic/view.php?id=1588&cid=1 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;2014年度市级优秀学生干部---张(02-10)</a></div><div class=line_bottom> <a href=/pic/view.php?id=1587&cid=1 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;2014年度市级优秀学生干部---韩(02-10)</a></div><div class=line_bottom> <a href=/pic/view.php?id=1586&cid=1 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;2014年度市级优秀学生干部---田(02-10)</a></div><div class=line_bottom> <a href=/pic/view.php?id=1585&cid=1 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;2014年度市级优秀学生干部---李(02-10)</a></div>					</div>
+					-->
+				</div>				
+				
+			
+				<div class="sibian_middle_bg" >
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >优秀教师&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="pic/list_pic_title.php?cid=3&name=%D3%C5%D0%E3%BD%CC%CA%A6">More</a></span>
+					</div>
+					
+					<div class="sibian_main_middle_left" >
+						<marquee scrolldelay=150 onMouseOver='this.stop()' onMouseOut='this.start()' width='550'><table border=0><tr><td><img  border=0 height=100 width=130  src=" ../userfiles/small_pic/thumb_20141230150433_585.jpg" />&nbsp;&nbsp;&nbsp;<br/>武伟——（2013-2014学年）</td><td><img  border=0 height=100 width=130  src=" ../userfiles/small_pic/thumb_20130924152033_143.jpg" />&nbsp;&nbsp;&nbsp;<br/>十佳优秀教师——马龙华</td><td><img  border=0 height=100 width=130  src=" ../userfiles/small_pic/thumb_20130923084441_110.jpg" />&nbsp;&nbsp;&nbsp;<br/>十佳优秀青年教师——谢芳</td><td><img  border=0 height=100 width=130  src=" ../userfiles/small_pic/thumb_20141204075634_728.jpg" />&nbsp;&nbsp;&nbsp;<br/>于见宝——东营市高中地理教学能手</td><td><img  border=0 height=100 width=130  src=" ../userfiles/small_pic/thumb_20130929155658_198.jpg" />&nbsp;&nbsp;&nbsp;<br/>十佳课改先进教师——丁桂明</td><td><img  border=0 height=100 width=130  src=" ../userfiles/small_pic/thumb_20140923170744_113.jpg" />&nbsp;&nbsp;&nbsp;<br/>刘琦亮——（2013-2014学年）</td><td><img  border=0 height=100 width=130  src=" ../userfiles/small_pic/thumb_20130924153216_534.jpg" />&nbsp;&nbsp;&nbsp;<br/>十佳优秀教师——张金鹏</td><td><img  border=0 height=100 width=130  src=" ../userfiles/small_pic/thumb_20130929160235_237.jpg" />&nbsp;&nbsp;&nbsp;<br/>十佳课改先进教师——李善美</td><td><img  border=0 height=100 width=130  src=" ../userfiles/small_pic/thumb_20130927142208_533.jpg" />&nbsp;&nbsp;&nbsp;<br/>十佳优秀班主任——徐良庆</td><td><img  border=0 height=100 width=130  src=" ../userfiles/small_pic/thumb_20141225185727_319.jpg" />&nbsp;&nbsp;&nbsp;<br/>燕金亮（生物）——（2013-2014学</td></tr></table></marquee>					</div>
+					<!--
+					<div class="sibian_main_middle_right" >
+											</div>
+					-->
+				</div>			
+
+			
+				<div class="sibian_middle_bg" >
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >教育随笔&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="news/list_pic_title.php?cid=32&name=教育随笔">More</a></span>
+					</div>
+					
+					<div class="sibian_main_middle_left" >
+						<a href=news/view.php?id=1419&cid=29 target=_blank><img class="img_border"  witdh=170px height=120px   src=" ../userfiles/small_pic/thumb_20130106143159_537.jpg" ><br/>语文课堂要重视教学目标的导向作用</a>					</div>
+					<div class="sibian_main_middle_right" >
+						
+						<div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=17379&cid=32 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;优秀文化传承呼唤大语文教育(05-23)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=17374&cid=32 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;以德立身 以德立学 以德施教(05-23)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=17342&cid=33 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;论“核心素养”的证成方式(05-15)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=17318&cid=33 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;关于教育评价制度改革的几点思考(05-12)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=17314&cid=32 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;新时代素质教育的新形态(05-10)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=17311&cid=32 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;教育之本在于立德树人(05-10)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=17308&cid=32 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;为精神“赋能”(05-09)</a></div>						
+						
+					</div>
+					
+				</div>
+				
+				<div class="sibian_middle_bg" >
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >教育前沿&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="news/list_pic_title.php?cid=31&name=教育前沿">More</a></span>
+					</div>
+					
+					<div class="sibian_main_middle_left" >
+						<a href=news/view.php?id=1247&cid=31 target=_blank><img class="img_border"  witdh=170px height=120px   src=" ../userfiles/small_pic/thumb_20121223143533_582.jpg" ><br/>和合教育，让生命和谐生长——赣榆县外国语学校</a>					</div>
+					<div class="sibian_main_middle_right" >
+						<div class=line_bottom> <a href=news/view.php?id=17360&cid=31 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;升级教育信息化 助力教育系统变革——(05-20)</a></div><div class=line_bottom> <a href=news/view.php?id=17359&cid=31 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;人工智能教育如何进校园——“人工智能(05-20)</a></div><div class=line_bottom> <a href=news/view.php?id=17355&cid=31 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;人工智能时代需培养学生怎样能力——“(05-18)</a></div><div class=line_bottom> <a href=news/view.php?id=17347&cid=31 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;人工智能时代需要怎样的教师——“人工(05-17)</a></div><div class=line_bottom> <a href=news/view.php?id=17345&cid=31 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;人工智能时代学生如何学习——“人工智(05-16)</a></div><div class=line_bottom> <a href=news/view.php?id=17339&cid=31 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;人工智能来了，教育当未雨绸缪——“人(05-15)</a></div><div class=line_bottom> <a href=news/view.php?id=17338&cid=31 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;加快推进教育信息化2.0 行动计划落(05-15)</a></div>					</div>
+					
+				</div>
+			
+				
+			</div>
+			<!--中间多行栏目end-->
+			
+			<div id="right" class="left2" >
+			<!--右侧多行栏目begin-->
+			
+								<div class="sibian" >
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >学校文化&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="news/list_title.php?cid=42&name=学校文化" target="_blank">More</a></span>
+					</div>
+					<div class="sibian_main" >
+
+						<div class=line_bottom> <a href=news/view.php?id=2248&cid=42 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;校       徽</a></div><div class=line_bottom> <a href=news/view.php?id=2247&cid=42 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;校      风</a></div><div class=line_bottom> <a href=news/view.php?id=2246&cid=42 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;教      风</a></div><div class=line_bottom> <a href=news/view.php?id=2245&cid=42 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;学      风</a></div><div class=line_bottom> <a href=news/view.php?id=2244&cid=42 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;校      训</a></div><div class=line_bottom> <a href=news/view.php?id=2243&cid=42 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;学校精神</a></div><div class=line_bottom> <a href=news/view.php?id=2241&cid=42 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;办学思想</a></div><div class=line_bottom> <a href=news/view.php?id=2240&cid=42 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;办学策略</a></div>						
+					</div>
+				</div>								<div class="sibian" style="height:150px;" >
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >二中大事&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="news/list_title.php?cid=27&name=%B6%FE%D6%D0%B4%F3%CA%C2%BC%C7">More</a></span>
+					</div>
+					<div class="sibian_main" >
+						<div class=line_bottom> <a href=news/view.php?id=17029&cid=27 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;二O一七年下半年大事记</a></div><div class=line_bottom> <a href=news/view.php?id=17028&cid=27 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;二O一七年上半年大事记</a></div><div class=line_bottom> <a href=news/view.php?id=14682&cid=27 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;二O一六年下半年大事记</a></div><div class=line_bottom> <a href=news/view.php?id=14681&cid=27 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;二O一六年上半年大事记</a></div>					</div>
+				</div>				
+				<div class="sibian"  style="height:200px;font-size:14px;" >
+	<div class="sibian_top" >
+		<span class="sibian_top_left" >常用链接&nbsp;&nbsp;</span>
+		<span class="sibian_top_right" ><a href="gonggao/"></a></span>
+	</div>
+	<div class="sibian_main" >
+	
+			<style>
+			<!--
+			.select_width{
+				width: 180px;
+				height: 25px;
+				margin-top:5px;
+				margin-left:5px;
+			}
+			
+			-->
+			</style>	
+
+		<div  align="left" style="margin-bottom:5px;margin-top:5px;">
+
+		<!--[if !IE]>在新窗口中打开<![endif]-->
+		<script language="JavaScript">
+		function MM_o(selObj){
+		window.open(selObj.options[selObj.selectedIndex].value);}
+		</script>
+		<select onChange="MM_o(this)" name="select" class="select_width" />
+		  <Option selected>中国教育网站</Option>
+		  <Option value=http://www.moe.edu.cn>中国教育部</Option>
+		  <Option value=http://www.jyb.cn/>中国教育新闻网</Option>
+		  <Option value=http://www.eol.cn/>中国教育在线</Option>
+		  <Option value=http://www.gkxx.com/>高考学习网</Option>
+		  <Option value=http://www.teacheredu.cn>中国教师教育网</Option>
+		  <Option value=http://www.1e.com.cn>中国教师培训网</Option>
+		  <Option value=http://www.china-language.gov.cn/>中国语言文字网</Option>
+		  <Option value=http://gaokao.chsi.com.cn>阳光高考网</Option>
+		  <Option value=http://www.sunnysports.org.cn>阳光体育网</Option>
+		  <Option value=http://www.csh.edu.cn/index.action>中国学生体质健康网</Option>
+		  <Option value=http://www.zxxaqw.com/>全国中小学安全教育网</Option>
+		  <Option value=http://www.21caas.com>中国院校后勤信息网</Option>
+		  <Option value=http://www.edu.cn>中国教育科研网</Option>
+		  <Option value=http://www.cbe21.com>中国基础教育网</Option>
+		  <Option value=http://www.chedu.com>中国教育信息网</Option>
+		  <Option value=http://www.chedu.com>中国特殊教育网</Option>
+		  <Option value=http://www.pre-school.com.cn/>中国学前教育网</Option>
+		  <Option value=http://www.tefl.com.cn>中国外语教育网</Option>
+		  <Option value=http://www.edu88.com>教育互联</Option>
+		  <Option value=http://oaw.neea.edu.cn/neeacenter/sxjy/sxjy.htm>升学就业指导</Option>
+		  <Option value=http://www.edu.hc360.com>h360慧聪教育网</Option>
+		  <Option value=http://www.gjj.cc/url/4643.htm>职业与成人教育网站</Option>
+		  <Option value=http://www.sdedu.gov.cn>山东省教育厅</Option>
+		  <Option value=http://www.sdchild.cn>山东学前教育网</Option>
+		  <Option value=http://www.qltj.net>齐鲁特殊教育网</Option>
+		  <Option value=http://www.sdzs.gov.cn>山东省招生信息网</Option>
+		  <Option value=http://www.sdzk.gov.cn>山东省自考信息网</Option>
+		  <Option value=http://www.sdbern.cn>山东省电化教育馆</Option>
+		  <Option value=http://www.e21.edu.cn>湖北省教育信息网</Option>
+		  <Option value=http://www.zjedu.org>浙江省教育网</Option>
+		  <Option value=http://www.bjedu.com.cn>北京教育信息网</Option>
+		  <Option value=http://www.sz101.com>深圳教育网</Option>
+		  <Option value=http://www.sdre.net.cn>山东教师远程教育网</Option>
+		</select>
+<br/>
+
+		<!--[if !IE]>在新窗口中打开<![endif]-->
+		<script language="JavaScript">
+		function MM_o(selObj){
+		window.open(selObj.options[selObj.selectedIndex].value);}
+		</script>
+		<select onChange="MM_o(this)" name="select"  class="select_width" />
+		  <Option selected>各市局教育网站</Option>
+		  <Option value=http://www.dyjy.gov.cn>东营市教育信息网</Option>
+		  <Option value=http://www.jnedu.gov.cn>济南市教育局</Option>
+		  <Option value=http://www.qdedu.gov.cn>青岛市教育局</Option>
+		  <Option value=http://www.zbedu.gov.cn>淄博市教育局</Option>
+		  <Option value=http://www.bzedu.edu.cn>滨州市教育局</Option>
+		  <Option value=http://www.ln632.com/wenjiao/jiaoyuju/jiaoyuju.>枣庄市教育局</Option>
+		  <Option value=http://www.wfjyxxg.com>潍坊市教育局</Option>
+		  <Option value=http://www.ytedu.edu.cn>烟台市教育局</Option>
+		  <Option value=http://www.taian.edu.cn>泰安市教育局</Option>
+		  <Option value=http://www.jnedu.com.cn>济南现代教育信息网</Option>
+		  <Option value=http://www.jnjyw.edu.cn>济宁教育网</Option>
+		</select>
+<br/>
+		<!--[if !IE]>在新窗口中打开<![endif]-->
+		<script language="JavaScript">
+		function MM_o(selObj){
+		window.open(selObj.options[selObj.selectedIndex].value);}
+		</script>
+		<select onChange="MM_o(this)" name="select"  class="select_width" />
+		  <Option selected>各县区教育网站</Option>
+		  <Option value=http://www.dyqjy.net>东营区教育网站</Option>
+		  <Option value=http://172.21.1.55>东营区教研网</Option>
+		  <Option value=http://172.20.7.252>河口区教育网站</Option>
+		  <Option value=http://218.56.181.20>利津县教育网站</Option>
+		  <Option value=http://www.kljy.net>垦利县教育网站</Option>
+		  <Option value=http://www.grjy.net>广饶县教育网站</Option>
+		  <Option value=http://www.sljy.net/>胜利教育信息网</Option>
+		  <Option value='http://dyzyz.dongying.gov.cn/plogin.aspx'>东营志愿服务网</Option>
+		</select>
+<br/>
+
+		<!--[if !IE]>在新窗口中打开<![endif]-->
+		<script language="JavaScript">
+		function MM_o(selObj){
+		window.open(selObj.options[selObj.selectedIndex].value);}
+		</script>
+		<select onChange="MM_o(this)" name="select"  class="select_width" />
+		  <Option selected>各学校网站</Option>
+		  <Option value=http://www.dyyz.net />东营市一中</Option>
+		  <Option value=http://www.dyerz.net />东营市二中</Option>
+		  
+		  <Option value=http://www.sdgryz.com />广饶一中</Option>
+		  <Option value=http://www.ljyz.net.cn />利津一中</Option>
+		  
+		  <Option value=http://www.sdklyz.com />垦利一中</Option>
+		  <Option value=http://www.hkqyz.com/ />河口一中</Option>
+		  
+		  <Option value=http://www.ytyz.cn />胜利一中</Option>
+
+<Option value=http://www.dysyzx.net />东营市实验中学</Option> 
+<Option value=http://www.dyycxx.net/ >东营市育才学校</Option> 
+<Option value=http://www.dycyxx.net/ >东营市晨阳学校</Option> 
+<Option value=http://www.dysy.cn/ >东营市实验学校</Option> 
+
+
+
+  <Option value=http://www.dyqyz.net>东营区一中</Option> 
+  <Option value=http://www.dyqez.net>东营区二中</Option> 
+  <Option value=http://www.dyqdszx.net>东营区三中</Option> 
+  <Option value=http://172.21.140.2>东营区实验学校</Option> 
+  <Option value=http://172.21.144.98>东营区辛店办中学</Option> 
+  <Option value=http://172.21.184.10>东营区六户镇中学</Option> 
+  <Option value=http://www.dyqskzx.net>东营区史口镇中心初中</Option> 
+  <Option value=http://www.dyljzx.net/>东营区龙居镇中学</Option> 
+  <Option value=http://172.21.152.100>东营区黄河办中学</Option> 
+  <Option value=http://172.21.188.2>东营区胜园街道中心学校</Option>
+
+
+
+
+		  
+		  
+
+		</select>
+<br/>
+
+
+		<!--[if !IE]>在新窗口中打开<![endif]-->
+		<script language="JavaScript">
+		function MM_o(selObj){
+		window.open(selObj.options[selObj.selectedIndex].value);}
+		</script>
+		<select onChange="MM_o(this)" name="select"  class="select_width" />
+
+		<Option selected>参考网站</Option>
+		  <Option value=http://001en.com/ target=_blank />教育网站导航</Option>
+		  
+		  <Option value= http://res.hersp.com/ target=_blank />好研-教育资源网</Option>  
+		 <Option value= http://172.16.0.7/ target=_blank />市局远程教育资源</Option>  
+
+
+
+		</select>
+
+
+
+		</div>			
+					
+					
+					
+					
+	</div>
+</div>											<div class="sibian" style="height:260px;" >
+	<div class="sibian_top" >
+		<span class="sibian_top_left" >发稿排行&nbsp;&nbsp;</span>
+		<span class="sibian_top_right" ><a href="paihangbang/view_benzhan_fagao.php">More</a></span>
+	</div>
+	<div class="sibian_main" style="text-align:left;" >
+	
+	<table width="80%" border="0" align="center">
+	
+	<tr><td class='line_bottom'>1</td><td class='line_bottom'>校长室</td><td class='line_bottom'>9706</td><td class='line_bottom'>&nbsp;</td></tr><tr><td class='line_bottom'>2</td><td class='line_bottom'>办公室</td><td class='line_bottom'>4002</td><td class='line_bottom'>&nbsp;</td></tr><tr><td class='line_bottom'>3</td><td class='line_bottom'>团委</td><td class='line_bottom'>1880</td><td class='line_bottom'>&nbsp;</td></tr><tr><td class='line_bottom'>4</td><td class='line_bottom'>政教处</td><td class='line_bottom'>939</td><td class='line_bottom'>&nbsp;</td></tr><tr><td class='line_bottom'>5</td><td class='line_bottom'>教科室</td><td class='line_bottom'>882</td><td class='line_bottom'>&nbsp;</td></tr><tr><td class='line_bottom'>6</td><td class='line_bottom'>总务处</td><td class='line_bottom'>276</td><td class='line_bottom'>&nbsp;</td></tr><tr><td class='line_bottom'>7</td><td class='line_bottom'>艺体部</td><td class='line_bottom'>269</td><td class='line_bottom'>&nbsp;</td></tr><tr><td class='line_bottom'>8</td><td class='line_bottom'>教务处</td><td class='line_bottom'>166</td><td class='line_bottom'>&nbsp;</td></tr>	</table>		
+			
+	</div>
+</div>								<div class="sibian" >
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >文学天地&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="news/list_pic_title.php?cid=131&name=%CE%C4%D1%A7%CC%EC%B5%D8">More</a></span>
+					</div>
+					<div class="sibian_main" >
+						<div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=11475&cid=129 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;祖国，祖国！(09-28)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=11466&cid=13 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;感动我的，是他们(09-26)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=11465&cid=129 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;难忘国耻  铭记历史(09-26)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=11464&cid=129 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;因站立，而拥有(09-26)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=11458&cid=129 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;永远是铺满麦田的天涯海角(09-25)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=11456&cid=129 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;深院清秋(09-25)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=6682&cid=13 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;书如人生有百味(02-12)</a></div><div class='line_bottom' style='white-space:nowrap;overflow: hidden;text-overflow:ellipsis;'> <a href=news/view.php?id=6681&cid=13 target=_blank><img src=/skin/skin01/images/gif-0080.gif border=0px />&nbsp;书中自有百花香(01-22)</a></div>					</div>
+				</div>								<div class="sibian" style="height:190px;" >
+					<div class="sibian_top" >
+						<span class="sibian_top_left" >学校荣誉&nbsp;&nbsp;</span>
+						<span class="sibian_top_right" ><a href="pic/list_pic_title.php?cid=16&name=%D1%A7%D0%A3%C8%D9%D3%FE">More</a></span>
+					</div>
+					<div class="sibian_main" style="text-align:center;margin-top:2px;font-size:14px;" >
+												<a target=_blank href="/pic/list_pic_title.php?cid=16&name=%D1%A7%D0%A3%C8%D9%D3%FE" title="">
+						<span>
+						<img src="userfiles/small_pic/thumb_20170518112035_195.jpg" width="186" height="121" alt="" border="0" />
+						</span>
+						
+						<span>
+						二星级绿色建筑涉及标识证书						</span>
+						</a>
+
+						
+						
+						
+					</div>
+				</div>	
+						
+			<!--右侧多行栏目end-->
+			</div>		</div>
+		<!--底部id开始-->
+
+		
+<span style="width:100%; height:5px;float:left;"></span>
+
+<div id="footer"  >
+<div style="float:left; width:100%; height:20px; border:0px solid red; text-align:left;text-indent:10px; background-color:#ccc; " >
+<span style="float:left">友情链接(<a href="../youqing/shenqing.php">申请</a>)</span>
+<span style="float:right;">(<a href="../youqing/list.php">更多</a>)</span>
+</div>
+
+	<div align="left" style="float:left;hegiht:50px; margin-bottom:6px;">
+	<a href=http://222.174.117.26:6096/index.php target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/dysez/cjquery1.jpg /></a><a href=http://www.china-language.gov.cn/ target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/yywz.gif /></a><a href=http://www.dongying.gov.cn target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/dysh.gif /></a><a href=http://www.dyjy.gov.cn target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/dyjy.gif /></a><a href=http://www.626china.org target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/chinajindu.jpg /></a><a href=http://www.jyb.cn/ target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/jyb.gif /></a><a href=http://www.eol.cn/ target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/Logo_eol.jpg /></a><a href=http://www.gkxx.com/ target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/gkxx.jpg /></a><a href=http://www.1e.com.cn/ target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/jspx.gif /></a><a href=http://www.teacheredu.cn/ target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/jsjy.gif /></a><br/><a href=http://gaokao.chsi.com.cn/ target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/yggk.gif /></a><a href=http://www.163.com target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://img3.cache.netease.com/www/logo/logo_png.png /></a><a href=http://www.sunnysports.org.cn target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/ygty.gif /></a><a href=http://www.csh.edu.cn/index.action target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/xstz.gif /></a><a href=http://www.safetree.com.cn target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/anquan.gif /></a><a href=http://www.21caas.com/ target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/yxhq.gif /></a><a href=http://www.baidu.com target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.baidu.com/img/baidu_sylogo1.gif /></a><a href=http://www.ifeng.com target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/ifeng.gif /></a><a href=http://www.hao123.com target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/hao123.png /></a><a href=http://www.xinhuanet.com/ target=_blank><img style='width:88px; height:31px; margin:3.7px; border:0px;'  src=http://www.dysez.net/images/logo/xinhua.gif /></a>	<a href="http://www.dysez.net/youqing/shenqing.php" target="_blank">
+		</a>
+	</div>
+
+
+
+
+<div style="float:left;width:958px;height:auto;border:0px solid #89c2d6;">
+	<div align="center" style="float:left;background-color:#ccc; height:30px; line-height:30px;width:958px;">
+		<a href="javascript:window.external.addFavorite('http://www.dysez.net/','东营市第二中学');">加入收藏</a> |
+		<a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.dysez.net/');" href="#">设为首页</a> |
+		联系我们 |
+		<a href="http://www.dysez.net/youqing/list.php">友情链接</a> |
+		<a href="http://www.dysez.net/banquan_shengming.php">版权声明</a> |
+		
+				
+	</div>
+
+	<div  align="center" style="float:left;text-align:center;width:958px; height:166px;background-image: url(/skin/skin01/images/bottom1.jpg);">
+		<table style="margin:0 auto;">
+	<tr>
+	<td>
+	<script type="text/javascript">
+	//document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/16/238/0000/60139983/CA162380000601399830001.js' //type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<a href="http://bszs.conac.cn/sitename?method=show&id=07BBF56DB5277D16E053012819AC817A" target="_blank"><img src="http://www.dysez.net/images/logo/blue.png" width="100px" height="100px" border="0" /></a>
+	</td>
+	<td>
+	<img src="http://www.dysez.net/images/logo/dysez.png" width="100px" height="100px" border="0" />
+		</td>
+	<td>微信扫描立即关注东营市第二中学公众号</td>
+	</tr>
+	</table>
+		<font color='#00279A'><b>版权所有&nbsp;2012-2018&nbsp;东营市第二中学&nbsp;推荐分辨率：1024*768以上&nbsp;推荐浏览器：谷歌&nbsp;火狐&nbsp;IE9<br>学校地址：东营市海河路589号&nbsp;电话：0546-7762555（办公室）&nbsp;0546-7760523（教务处）&nbsp;E-mail：dyserz@126.com<br>网站备案：鲁ICP备09018635号</b></font><br/>
+		<!--网站开发与制作：dylwx@126.com<br/> <p></p> <p></p>--> <br/>
+	</div>
+</div>
+
+</div>
+		<!--底部id结束-->		
+
+	</div>
+</div>
+
+<!--
+<div id="advLayer" style="VISIBILITY:visible;position:absolute;left:0;top:0;width:260px;height:122px;"> 
+<a href="http://www.dysez.net/zhuanti/list_pic_title.php?cid=21&name=国家卫生城市复审迎检工作动态" target="_blank"><img onmouseover="stopMove()" onmouseout="startMove()" style="width:260px;height:122px;" src="http://www.dyerz.net/images/weishengchengshi.jpg" /></a>
+<div id="closeLayer" onClick="closeMe()" style="VISIBILITY:visible;position:absolute;left:236px;top:5px;width:22px;height:17px;"> 
+<img onmouseover="stopMove()" style="width:18px;height:12px;" src="http://www.dyerz.net/images/close.jpg" /> 
+</div> 
+</div> 
+-->
+
+<!--
+<div id="advLayer_temp" style="VISIBILITY:visible;position:absolute;left:766px;top:0;width:294px;height:144px;"> 
+<a href="http://www.dysez.net/gonggao/view.php?id=727&cid=1" target="_blank"><img onmouseover="stopMoveTemp()" onmouseout="startMoveTemp()" style="width:294px;height:144px;" src="http://www.dyerz.net/images/2016_1.jpg" /></a>
+<div id="closeLayer_temp" onClick="closeTemp()" style="VISIBILITY:visible;position:absolute;left:266px;top:5px;width:22px;height:17px;"> 
+<img  onmouseover="stopMoveTemp()"  style="width:18px;height:12px;" src="http://www.dyerz.net/images/close.jpg" /> 
+</div> 
+</div> 
+-->
+<!--首页浮动面板部分开始 -->
+<SCRIPT type='text/javascript'>
+	function addEvent(obj, evtType, func, cap) {
+
+		cap = cap || false;
+
+		if (obj.addEventListener) {
+
+			obj.addEventListener(evtType, func, cap);
+
+			return true;
+
+		} else if (obj.attachEvent) {
+
+			if (cap) {
+
+				obj.setCapture();
+
+				return true;
+
+			} else {
+
+				return obj.attachEvent("on" + evtType, func);
+
+			}
+
+		} else {
+
+			return false;
+
+		}
+
+	}
+
+	function getPageScroll() {
+
+		var xScroll, yScroll;
+
+		if (self.pageXOffset) {
+
+			xScroll = self.pageXOffset;
+
+		} else if (document.documentElement
+				&& document.documentElement.scrollLeft) {
+
+			xScroll = document.documentElement.scrollLeft;
+
+		} else if (document.body) {
+
+			xScroll = document.body.scrollLeft;
+
+		}
+
+		if (self.pageYOffset) {
+
+			yScroll = self.pageYOffset;
+
+		} else if (document.documentElement
+				&& document.documentElement.scrollTop) {
+
+			yScroll = document.documentElement.scrollTop;
+
+		} else if (document.body) {
+
+			yScroll = document.body.scrollTop;
+
+		}
+
+		arrayPageScroll = new Array(xScroll, yScroll);
+
+		return arrayPageScroll;
+
+	}
+
+	function GetPageSize() {
+
+		var xScroll, yScroll;
+
+		if (window.innerHeight && window.scrollMaxY) {
+
+			xScroll = document.body.scrollWidth;
+
+			yScroll = window.innerHeight + window.scrollMaxY;
+
+		} else if (document.body.scrollHeight > document.body.offsetHeight) {
+
+			xScroll = document.body.scrollWidth;
+
+			yScroll = document.body.scrollHeight;
+
+		} else {
+
+			xScroll = document.body.offsetWidth;
+
+			yScroll = document.body.offsetHeight;
+
+		}
+
+		var windowWidth, windowHeight;
+
+		if (self.innerHeight) {
+
+			windowWidth = self.innerWidth;
+
+			windowHeight = self.innerHeight;
+
+		} else if (document.documentElement
+				&& document.documentElement.clientHeight) {
+
+			windowWidth = document.documentElement.clientWidth;
+
+			windowHeight = document.documentElement.clientHeight;
+
+		} else if (document.body) {
+
+			windowWidth = document.body.clientWidth;
+
+			windowHeight = document.body.clientHeight;
+
+		}
+
+		if (yScroll < windowHeight) {
+
+			pageHeight = windowHeight;
+
+		} else {
+
+			pageHeight = yScroll;
+
+		}
+
+		if (xScroll < windowWidth) {
+
+			pageWidth = windowWidth;
+
+		} else {
+
+			pageWidth = xScroll;
+
+		}
+
+		arrayPageSize = new Array(pageWidth, pageHeight, windowWidth,
+				windowHeight)
+
+		return arrayPageSize;
+
+	}
+
+	var AdMoveConfig = new Object();
+
+	AdMoveConfig.IsInitialized = false;
+
+	AdMoveConfig.ScrollX = 0;
+
+	AdMoveConfig.ScrollY = 0;
+
+	AdMoveConfig.MoveWidth = 0;
+
+	AdMoveConfig.MoveHeight = 0;
+
+	AdMoveConfig.Resize = function() {
+
+		var winsize = GetPageSize();
+
+		AdMoveConfig.MoveWidth = winsize[2];
+
+		AdMoveConfig.MoveHeight = winsize[3];
+
+		AdMoveConfig.Scroll();
+
+	}
+
+	AdMoveConfig.Scroll = function() {
+
+		var winscroll = getPageScroll();
+
+		AdMoveConfig.ScrollX = winscroll[0];
+
+		AdMoveConfig.ScrollY = winscroll[1];
+
+	}
+
+	addEvent(window, "resize", AdMoveConfig.Resize);
+
+	addEvent(window, "scroll", AdMoveConfig.Scroll);
+
+	function AdMove(id) {
+
+		if (!AdMoveConfig.IsInitialized) {
+
+			AdMoveConfig.Resize();
+
+			AdMoveConfig.IsInitialized = true;
+
+		}
+
+		var obj = document.getElementById(id);
+
+		obj.style.position = "absolute";
+
+		var W = AdMoveConfig.MoveWidth - obj.offsetWidth;
+
+		var H = AdMoveConfig.MoveHeight - obj.offsetHeight;
+
+		var x = W * Math.random(), y = H * Math.random();
+
+		var rad = (Math.random() + 1) * Math.PI / 6;
+
+		var kx = Math.sin(rad), ky = Math.cos(rad);
+
+		var dirx = (Math.random() < 0.5 ? 1 : -1), diry = (Math.random() < 0.5 ? 1
+				: -1);
+
+		var step = 1;
+
+		var interval;
+
+		this.SetLocation = function(vx, vy) {
+			x = vx;
+			y = vy;
+		}
+
+		this.SetDirection = function(vx, vy) {
+			dirx = vx;
+			diry = vy;
+		}
+
+		obj.CustomMethod = function() {
+
+			obj.style.left = (x + AdMoveConfig.ScrollX) + "px";
+
+			obj.style.top = (y + AdMoveConfig.ScrollY) + "px";
+
+			rad = (Math.random() + 1) * Math.PI / 6;
+
+			W = AdMoveConfig.MoveWidth - obj.offsetWidth;
+
+			H = AdMoveConfig.MoveHeight - obj.offsetHeight;
+
+			x = x + step * kx * dirx;
+
+			if (x < 0) {
+				dirx = 1;
+				x = 0;
+				kx = Math.sin(rad);
+				ky = Math.cos(rad);
+			}
+
+			if (x > W) {
+				dirx = -1;
+				x = W;
+				kx = Math.sin(rad);
+				ky = Math.cos(rad);
+			}
+
+			y = y + step * ky * diry;
+
+			if (y < 0) {
+				diry = 1;
+				y = 0;
+				kx = Math.sin(rad);
+				ky = Math.cos(rad);
+			}
+
+			if (y > H) {
+				diry = -1;
+				y = H;
+				kx = Math.sin(rad);
+				ky = Math.cos(rad);
+			}
+
+		}
+
+		this.Run = function() {
+
+			var delay = 30;
+
+			interval = setInterval(obj.CustomMethod, delay);
+
+			obj.onmouseover = function() {
+				clearInterval(interval);
+			}
+
+			obj.onmouseout = function() {
+				interval = setInterval(obj.CustomMethod, delay);
+			}
+
+		}
+
+	}
+	function closeMe(){ 
+		document.getElementById('closeLayer').style.display="none"; 
+		document.getElementById('advLayer').style.display="none"; 
+	}
+</SCRIPT>
+<!--漂浮开始-->
+<div id="advLayer" style="VISIBILITY:visible;position:absolute;left:0;top:0;width:260px;height:122px;Z-INDEX:5;"> 
+<!--<img style="width:260px;height:122px;" src="http://www.dysez.net/images/dysez/dysez20170527.gif" />  http://www.dysez.net/new_student_query/query_index.php -->
+<!--a href="http://www.dysez.net/new_student_query/query_index.php" target="_blank"-->
+
+<img style="width:260px;height:122px;" src="http://www.dysez.net/images/dysez/dysez20170527.gif" />
+<!--a href="http://www.dysez.net/news/view.php?id=17082&&cid=98" target="_blank"><img style="width:260px;height:122px;" src="http://www.dysez.net/images/dysez/ytm2018.jpg" /></a-->
+
+<div id="closeLayer" onClick="closeMe()" style="VISIBILITY:visible;position:absolute;left:236px;top:5px;width:22px;height:17px;"> 
+<img style="width:18px;height:12px;" src="http://www.dyerz.net/images/close.jpg" /> 
+</div> 
+</div> 
+<!--漂浮结束-->
+
+<SCRIPT type=text/javascript>
+<!--
+	var moveLayer = new AdMove("advLayer");
+	moveLayer.Run();
+
+	//多组漂浮 
+	//var ad1=new AdMove("ad2"); 
+	//ad2.Run();
+//-->
+</SCRIPT>
+<!--首页浮动面板部分结束 -->
+</body>
+</html>
+

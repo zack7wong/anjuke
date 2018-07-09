@@ -1,0 +1,788 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="x-ua-compatible" content="ie=9" />
+<title>泉州工艺美术职业学院</title><META Name="keywords" Content="泉州工艺美术职业学院" />
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/shutter.css">
+<script src="js/jquery.min.js" type="text/javascript"></script>
+    <link type="text/css" rel="stylesheet" href="css/lrtk.css">
+    <script src="js/jquery.foucs.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function scrollDoor(){
+        }
+        scrollDoor.prototype = {
+            sd : function(menus,divs,openClass,closeClass){
+                var _this = this;
+                if(menus.length != divs.length)
+                {
+                    alert("菜单层数量和内容层数量不一样!");
+                    return false;
+                }
+                for(var i = 0 ; i < menus.length ; i++)
+                {
+                    _this.$(menus[i]).value = i;
+                    _this.$(menus[i]).onmouseover = function(){
+
+                        for(var j = 0 ; j < menus.length ; j++)
+                        {
+                            _this.$(menus[j]).className = closeClass;
+                            _this.$(divs[j]).style.display = "none";
+                        }
+                        _this.$(menus[this.value]).className = openClass;
+                        _this.$(divs[this.value]).style.display = "block";
+                    }
+                }
+            },
+            $ : function(oid){
+                if(typeof(oid) == "string")
+                    return document.getElementById(oid);
+                return oid;
+            }
+        }
+        window.onload = function(){
+            var SDmodel = new scrollDoor();
+            SDmodel.sd(["m101","m102"],["c101","c102"],"sd101","sd102");
+            SDmodel.sd(["m201","m202"],["c201","c202"],"sd201","sd202");
+
+        }
+    </script>
+<!--Announced by Visual SiteBuilder 9-->
+<link rel="stylesheet" type="text/css" href="_sitegray/_sitegray_d.css" />
+<script language="javascript" src="_sitegray/_sitegray.js"></script>
+<!-- CustomerNO:77656262657232307003475455525643055748 -->
+<link rel="stylesheet" type="text/css" href="index.vsb.css" />
+<script type="text/javascript" src="/system/resource/js/vsbscreen.min.js" id="_vsbscreen" devices="pc|pad"></script>
+<script type="text/javascript" src="/system/resource/js/counter.js"></script>
+<script type="text/javascript">_jsq_(1001,'/index.jsp',-1,1383947850)</script>
+</head>
+<body>
+<div class="header">
+    <div class="width">
+        <div class="h_left"><script language="javascript" src="/system/resource/js/calendar/simple.js"></script>               
+<script language="JavaScript">
+//阳历
+var c_Calendar166084EnDateString;
+
+var c_Calendar166084WeekDayString;
+
+//阴历
+var c_Calendar166084CnDateString;
+//节气
+var c_Calendar166084JQString;
+//年
+var c_Calendar166084YearString;
+//月
+var c_Calendar166084MonthString;
+//日
+var c_Calendar166084DayString;
+//周
+var c_Calendar166084WeekString;
+function RunGLNL166084()
+{          
+    var  sc =new Simple_Calendar ();
+    sc.init();
+    c_Calendar166084CnDateString=sc.getCnDateString();
+    c_Calendar166084WeekDayString=sc.getCalendarWeekString();
+    c_Calendar166084JQString=sc.getJQString();
+    c_Calendar166084EnDateString=sc.getEnDateString();
+    c_Calendar166084YearString=sc.getYearString();
+    c_Calendar166084MonthString=sc.getMonthString();
+    c_Calendar166084DayString=sc.getDayString();
+    c_Calendar166084WeekString=sc.getWeekString();
+}
+RunGLNL166084();
+document.write('<div id="c_lunar166084"   class="fontstyle166084"  >');       
+document.write(c_Calendar166084EnDateString);
+document.write("&nbsp;&nbsp;"+c_Calendar166084WeekDayString);
+document.write("&nbsp;&nbsp;"+c_Calendar166084CnDateString);
+
+
+document.write("</div>");
+
+</script>
+</div>
+        <div class="h_right">
+           <script language="javascript" src="/system/resource/js/dynclicks.js"></script><script language="javascript" src="/system/resource/js/openlink.js"></script>
+ <a href="mailto:qzgymy@163.com" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1383947850, 28481)">院长信箱</a>  | 
+ <a href="mailto:qgmdqlx@163.com" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1383947850, 28482)">书记信箱</a>  | 
+ <a href="mailto:qzgymyjw@163.com" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1383947850, 28486)">纪检信箱</a>  | 
+ <a href="http://xfj.fj.gov.cn/~fj/index.do" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1383947850, 28483)">省信访平台</a>  | 
+ <a href="http://ehall.qzgymy.cn/new/index.html" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1383947850, 28484)">服务大厅</a>  | 
+ <a href="http://218.85.221.11:8123/" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1383947850, 28485)">虚拟校园</a>  | 
+ <a href="http://218.85.221.11:8095/index" title="" onclick="_addDynClicks(&#34;wburl&#34;, 1383947850, 28613)">网上博物馆</a> 
+
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="logo">
+    <div class="width">
+        <div class="logo_left">
+<!-- 网站logo图片地址请在本组件"内容配置-网站logo"处填写 -->
+<a href="" title="泉州工艺美术职业学院"><img src="images/logo.png" width="377" height="76" border="0" alt="泉州工艺美术职业学院" title="泉州工艺美术职业学院"></a></div>
+        <div class="xx">
+        	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="360" height="50" align="middle">
+<param name="movie" value="images/xx.swf">
+<param name="quality" value="high">
+<param name="wmode" value="transparent"> <!--这里代码可使Flash背景透明 -->
+<embed src="images/xx.swf" width="360" height="50" align="middle" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent"></embed></object>
+        </div>
+        <div class="ss">
+           <script type="text/javascript">
+    function _nl_ys_check(){
+        
+        var keyword = document.getElementById('showkeycode166087').value;
+        if(keyword==null||keyword==""){
+            alert("请输入你要检索的内容！");
+            return false;
+        }
+        if(window.toFF==1)
+        {
+            document.getElementById("lucenenewssearchkey166087").value = Simplized(keyword );
+        }else
+        {
+            document.getElementById("lucenenewssearchkey166087").value = keyword;            
+        }
+        var  base64 = new Base64();
+        document.getElementById("lucenenewssearchkey166087").value = base64.encode(document.getElementById("lucenenewssearchkey166087").value);
+        new VsbFormFunc().disableAutoEnable(document.getElementById("showkeycode166087"));
+        return true;
+    } 
+</script>
+
+
+<form class="search-form" action="search.jsp?wbtreeid=1001" method="post" id="au3a" name="au3a" onsubmit="return _nl_ys_check()" style="display: inline">
+ <input type="hidden" id="lucenenewssearchkey166087" name="lucenenewssearchkey" value=""><input type="hidden" id="_lucenesearchtype166087" name="_lucenesearchtype" value="1"><input type="hidden" id="searchScope166087" name="searchScope" value="0">
+ 
+                <input name="showkeycode" id="showkeycode166087" type="text" class="ss_k" onfocus="if(this.value=='请输入关键词'){this.value='';}" onblur="if(this.value==''){this.value='请输入关键词';}" value="请输入关键词">
+              
+
+ <input type="image" src="images/ss_ss.png" align="absmiddle" style="cursor: hand">
+            </form><script language="javascript" src="/system/resource/js/base64.js"></script><script language="javascript" src="/system/resource/js/formfunc.js"></script>
+
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="nav">
+    <div id="menu">
+        <ul class="menu">
+            <li><a href="index.htm"><span>学院首页</span></a></li>
+            <li><a href="xygk/xyjj.htm" class="parent"><span>学院概况</span></a>
+                <div>
+                    <ul>
+                        <li><a href="xygk/xyjj.htm"><span>学院简介</span></a></li>
+                        <li><a href="xygk/xrld.htm"><span>现任领导</span></a></li>
+                        <li><a href="xygk/xbsz.htm"><span>系部设置</span></a></li>
+                        <li><a href="xygk/xyfg.htm"><span>校园风光</span></a></li>
+                        <li><a href="xygk/lxwm.htm"><span>联系我们</span></a></li>
+                    </ul>
+                </div>
+          </li>
+            <li><a href="http://www.qzgymy.cn/dj/index.htm" class="parent"><span>党建工作</span></a>
+               
+          </li>
+            <li><a href="jyjx1.htm" class="parent"><span>教育教学</span></a>
+                <div>
+                    <ul>
+                        <li><a href="http://www.qzgymy.cn/jwc/"><span>教务工作</span></a></li>
+                        <li><a href="http://218.85.221.11/"><span>教务网络管理系统</span></a></li>
+                        <li><a href="http://218.85.221.14/meol/custom.do?menuId=5"><span>精品课程</span></a></li>
+                        <li><a href="jyjx1/jxcgysb/tcgyjs_kcggjxcgzl.htm"><span>教学成果与申报</span></a></li>
+                        <li><a href="jyjx1/xqhz.htm"><span>校企合作</span></a></li>
+                        <li><a href="jyjx1/pjzc/pjdt.htm"><span>评建之窗</span></a></li>
+                        <li><a href="jyjx1/xfjszl.htm"><span>学风建设专栏</span></a></li>
+                    </ul>
+                </div>
+          </li>
+            <li><a href="kygz/tzgg.htm" class="parent"><span>科研工作</span></a>
+                <div>
+                    <ul>
+                        <li><a href="kygz/tzgg.htm"><span>通知公告</span></a></li>
+                        <li><a href="kygz/glzd.htm"><span>管理制度</span></a></li>
+                        <li><a href="kygz/tcjs.htm"><span>陶瓷技术</span></a></li>
+                        <li><a href="kygz/tcxykjqy.htm"><span>陶瓷行业科技企业</span></a></li>
+                    </ul>
+                </div>
+          </li>
+            <li><a href="#" class="parent"><span>招生就业</span></a>
+                <div>
+                    <ul>
+                        <li><a href="http://www.qzgymy.cn/zszt"><span>招生工作</span></a></li>
+                        <li><a href="http://www.qzgymy.cn/jyxx"><span>就业工作</span></a></li>
+                    </ul>
+                </div>
+          </li>
+            <li><a href="wmzc/lykt.htm" class="parent"><span>文明之窗</span></a>
+                <div>
+                    <ul>
+                        <li><a href="wmzc/lykt.htm"><span>礼仪课堂</span></a></li>
+                        <li><a href="wmzc/ddjs.htm"><span>道德建设</span></a></li>
+                        <li><a href="wmzc/jspy.htm"><span>精神培育</span></a></li>
+                        <li><a href="wmzc/zywj.htm"><span>重要文件</span></a></li>
+                        <li><a href="wmzc/wmxd.htm"><span>文明行动</span></a></li>
+                    </ul>
+                </div>
+          </li>
+            <li><a href="http://www.qzgymy.cn/xsgz" class="parent"><span>学生工作</span></a>
+                <div>
+                    <ul>
+                        <li><a href="http://www.qzgymy.cn/xsgz/wjtz.htm"><span>文件通知</span></a></li>
+                        <li><a href="http://www.qzgymy.cn/xsgz/xsjy.htm"><span>学生教育</span></a></li>
+                        <li><a href="http://www.qzgymy.cn/zzglzx/"><span>学生资助</span></a></li>
+                    </ul>
+                </div>
+          </li>
+            <li><a href="http://www.qzgymy.cn/tw" class="parent"><span>团委工作</span></a>
+               
+          </li>
+            <li><a href="aqjy.htm" class="parent"><span>安全教育</span></a>
+               
+          </li>
+            <li><a href="http://218.85.221.14/meol/index.do" class="parent"><span>在线教学</span></a>
+               
+          </li>
+            <li><a href="" class="parent"><span>信息系统</span></a>
+                <div>
+                    <ul>
+                        <li><a href="http://jwgl.dhcc.cc/"><span>教务系统</span></a></li>
+                        <li><a href="http://yx.qzgymy.cn:8080/welcome/index.jsp"><span>学工系统</span></a></li>
+                        <li><a href="http://218.85.221.13/login/index.php?"><span>办公OA</span></a></li>
+                    </ul>
+                </div>
+          </li>
+</ul>
+    </div>
+</div>
+
+  <div>               <div class="shutter">
+<div class="shutter-img">
+<A href="" style="cursor:pointer"><IMG src="images/17/08/08/1prpi1xq37/banner1.png"></A> 
+
+<A href="http://www.dhcc.cc/info/1059/3714.htm" target="_blank" style="cursor:pointer"><IMG src="images/vv110.jpg"></A> 
+
+<A href="" style="cursor:pointer"><IMG src="images/13.jpg"></A> 
+
+<A href="" style="cursor:pointer"><IMG src="images/2.jpg"></A> 
+
+<A href="" style="cursor:pointer"><IMG src="images/11.jpg"></A> 
+
+</div>
+<ul class="shutter-btn">
+  <li class="prev"></li>
+  <li class="next"></li>
+</ul>
+</div>
+<script language="javascript" src="/system/resource/js/jquery/jquery-latest.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/velocity.js"></script>
+<script src="js/shutter.js"></script>
+<script>
+$(function () {
+  $('.shutter').shutter({
+	shutterW: 1181, // 容器宽度
+	shutterH: 360, // 容器高度
+	isAutoPlay: true, // 是否自动播放
+	playInterval: 3000, // 自动播放时间
+	curDisplay: 3, // 当前显示页
+	fullPage: false // 是否全屏展示
+  });
+});
+</script>
+   </div>        
+   
+<!--end bannerslide-->
+<div class="width">
+    <div class="main_a">
+        <div class="xyxw">
+            <div class="xyxw_top"><a href="xwdt/xyxw.htm">更多>></a>学院新闻 </div>
+            <div class="xyxw_nr">
+                <div class="xyxw_img">
+                    <script type="text/javascript" src="/system/resource/js/news/webbertpltitlelist.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("#tpltitlelistc166099").KinSlideshow();
+    })
+</script>
+<div id="tpltitlelistc166099" style="visibility:hidden;">
+        <a href="info/1058/3718.htm" target="_blank" title="洪自强副市长莅临泉州工艺美术职业学院调研"><img src="/__local/6/D3/12/7EE93BE2B5B8EFA00799AC7CF5B_5796B730_685E.jpg" alt1="洪自强副市长莅临泉州工艺美术职业学院调研" width="319" height="237" /></a>
+        <a href="info/1058/3717.htm" target="_blank" title="集美大学原校长苏文金到访我院"><img src="/__local/8/EF/C1/74FA110A74F336044529A6AD38F_0BDC09F7_67168.png" alt1="集美大学原校长苏文金到访我院" width="319" height="237" /></a>
+        <a href="info/1058/3708.htm" target="_blank" title="省委宣讲团进我院宣讲习近平新时代中国特色社会主义思想"><img src="/__local/B/30/2A/438D945E44ADEEC43837865CC53_7E30D984_E235.jpg" alt1="省委宣讲团进我院宣讲习近平新时代中国..." width="319" height="237" /></a>
+        <a href="info/1058/3706.htm" target="_blank" title="市综治安全工作检查组莅临我校开展综治安全工作大检查"><img src="/__local/2/EA/34/066A01A69B1AC3DDBAEEFAF8A37_7E620A87_141F9.jpg" alt1="市综治安全工作检查组莅临我校开展综治..." width="319" height="237" /></a>
+</div><script>_showDynClickBatch(['dynclicks_u6_3718','dynclicks_u6_3717','dynclicks_u6_3708','dynclicks_u6_3706'],[3718,3717,3708,3706],"wbnews", 1383947850)</script>
+
+                </div>
+                <div class="xyxw_right">
+                    <div class="xyxw_tj" style="display:none">
+                        <h1 style="text-align:center"><a href="info/1058/3730.htm" target="_blank" title="学院获评2017年度市级优秀“平安单位”称号"> 学院获评2017年度市级优秀“平安单位”称号</a>&nbsp;<img src="images/newicon.gif"></h1>
+<script>_showDynClickBatch(['dynclicks_u7_3730'],[3730],"wbnews", 1383947850)</script>
+
+                    </div>
+                    <div class="news_lb">
+                        <ul>
+                          
+  <li><span>2018-05-24</span><a href="info/1058/3730.htm" target="_blank" title="学院获评2017年度市级优秀“平安单位”称号">学院获评2017年度市级优秀“平安单位”称号</a>&nbsp;<img src="images/newicon.gif"></li>
+
+             
+  <li><span>2018-05-18</span><a href="info/1058/3719.htm" target="_blank" title="学院举行深化“平安校园”建设 助推综治“三率”提升">学院举行深化“平安校园”建设 助推综治“三率”提升</a></li>
+
+             
+  <li><span>2018-05-18</span><a href="info/1058/3718.htm" target="_blank" title="洪自强副市长莅临泉州工艺美术职业学院调研">洪自强副市长莅临泉州工艺美术职业学院调研</a></li>
+
+             
+  <li><span>2018-05-15</span><a href="info/1058/3717.htm" target="_blank" title="集美大学原校长苏文金到访我院">集美大学原校长苏文金到访我院</a></li>
+
+             
+  <li><span>2018-05-11</span><a href="info/1058/3710.htm" target="_blank" title="国家艺术基金项目“白瓷瓷塑艺术创新人才培养研修班”在泉州工艺美院开班">国家艺术基金项目“白瓷瓷塑艺术创新人才培养研修班”…</a></li>
+
+             
+  <li><span>2018-05-11</span><a href="info/1058/3709.htm" target="_blank" title="党委副书记杜桂发为国家艺术基金研修班作开班讲座">党委副书记杜桂发为国家艺术基金研修班作开班讲座</a></li>
+
+             
+  <li><span>2018-05-11</span><a href="info/1058/3711.htm" target="_blank" title="泉州经贸职业技术学院周文心书记一行到我院考察交流">泉州经贸职业技术学院周文心书记一行到我院考察交流</a></li>
+
+             
+  <li><span>2018-05-10</span><a href="info/1058/3708.htm" target="_blank" title="省委宣讲团进我院宣讲习近平新时代中国特色社会主义思想">省委宣讲团进我院宣讲习近平新时代中国特色社会主义思想</a></li>
+
+                          <script>_showDynClickBatch(['dynclicks_u8_3730','dynclicks_u8_3719','dynclicks_u8_3718','dynclicks_u8_3717','dynclicks_u8_3710','dynclicks_u8_3709','dynclicks_u8_3711','dynclicks_u8_3708'],[3730,3719,3718,3717,3710,3709,3711,3708],"wbnews", 1383947850)</script>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="xxgg">
+            <div class="xyxw_top xxgg_top"><a href="xwdt/xxgg.htm">更多>></a>信息公告 </div>
+            <div class="xxgg_nr">
+                <div class="xxgg_nr_lb">
+                    <span><em>2018</em><i>05-14</i></span>
+                    <div class="xxgg_nr_lbwz">
+                        <h1><a href="info/1059/3714.htm" target="_blank" title="泉州工艺美术职业学院关于评选表彰学院第一届“优秀校友”的通知">泉州工艺美术职业学院关于...</a></h1>
+                        <p>各处室、系部（馆），工会...</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+<div class="xxgg_nr_lb">
+                    <span><em>2018</em><i>05-10</i></span>
+                    <div class="xxgg_nr_lbwz">
+                        <h1><a href="info/1059/3707.htm" target="_blank" title="中共泉州工艺美术职业学院委员会拟提任副处级干部任前公示">中共泉州工艺美术职业学院...</a></h1>
+                        <p>根据《党政领导干部选拔任...</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+<div class="xxgg_nr_lb">
+                    <span><em>2018</em><i>04-26</i></span>
+                    <div class="xxgg_nr_lbwz">
+                        <h1><a href="info/1059/3700.htm" target="_blank" title="关于2018年“五•一”国际劳动节放假的通知">关于2018年“五•一”国际...</a></h1>
+                        <p>各处室、系部（馆），工会...</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+<div class="xxgg_nr_lb">
+                    <span><em>2018</em><i>04-17</i></span>
+                    <div class="xxgg_nr_lbwz">
+                        <h1><a href="info/1059/3696.htm" target="_blank" title="泉州工艺美术职业学院关于办公、教学低值易耗品供应商的竞争性谈判公告" style="color:#ee0b0b;">泉州工艺美术职业学院关于...</a></h1>
+                        <p>​泉州工艺美术职业学院拟...</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+<script>_showDynClickBatch(['dynclicks_u9_3714','dynclicks_u9_3707','dynclicks_u9_3700','dynclicks_u9_3696'],[3714,3707,3700,3696],"wbnews", 1383947850)</script>
+
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="main_b">
+        <div class="main_b_l">
+            <div class="mtxw">
+                <div class="mtxw_top"><a href="xwdt/mtxw.htm">更多>></a>媒体新闻 </div>
+                <div class="mtxw_nr">
+                    <div class="mtxw_tj">
+                        <h1><a href="info/1060/3722.htm" target="_blank" title="新浪网：泉州工艺美院：院长与雕塑家互动 共话教学模式改革">新浪网：泉州工艺美院：院长与雕塑家互动 共话教...</a> </h1>
+                        <div class="mtxw_tj_nr">
+                            <div class="mtxw_tj_nr_img"><a href="info/1060/3722.htm" target="_blank" title="新浪网：泉州工艺美院：院长与雕塑家互动 共话教学模式改革"><img src="/__local/2/E2/30/BA01FE2410FC7C15556AE3C243C_E8D02F25_27F5F.jpg"> </a> </div>
+                            <div class="mtxw_tj_nr_wz"><a href="info/1060/3722.htm" target="_blank" title="新浪网：泉州工艺美院：院长与雕塑家互动 共话教学模式改革">本文摘自新浪网：http://news.sina.com.cn/o/2018-05-02/doc-ifzyqqip6616003.shtml“课堂形...</a> </div>
+                            <div class="clear"></div>
+                        </div><script>_showDynClickBatch(['dynclicks_u10_3722'],[3722],"wbnews", 1383947850)</script>
+
+                    </div>
+                    <div class="news_lb">
+                        <ul>
+                            <li><a href="info/1060/3722.htm" target="_blank" title="新浪网：泉州工艺美院：院长与雕塑家互动 共话教学模式改革">新浪网：泉州工艺美院：院长与雕塑家互动 共话教...</a> </li>
+   <li><a href="info/1060/3602.htm" target="_blank" title="中国网海峡频道：泉州市工艺美术学会成立 邱少煌任首届会长">中国网海峡频道：泉州市工艺美术学会成立 邱少煌...</a> </li>
+   <li><a href="info/1060/3726.htm" target="_blank" title="泉州市教育局网：省委宣讲团进我院宣讲习近平新时代中国特色社会主义思想">泉州市教育局网：省委宣讲团进我院宣讲习近平新...</a> </li>
+   <li><a href="info/1060/3729.htm" target="_blank" title="瓷都德化报:窑火不息 培育陶瓷接班人">瓷都德化报:窑火不息 培育陶瓷接班人</a> </li>
+   <li><a href="info/1060/3727.htm" target="_blank" title="泉州市教育局网：泉州工艺美院启动优秀校友评选活动">泉州市教育局网：泉州工艺美院启动优秀校友评选活动</a> </li>
+   <li><a href="info/1060/3728.htm" target="_blank" title="泉州市教育局网：国家艺术基金项目“白瓷瓷塑艺术创新人才培养研修班”在泉州工艺美院开班">泉州市教育局网：国家艺术基金项目“白瓷瓷塑艺...</a> </li>
+<script>_showDynClickBatch(['dynclicks_u11_3722','dynclicks_u11_3602','dynclicks_u11_3726','dynclicks_u11_3729','dynclicks_u11_3727','dynclicks_u11_3728'],[3722,3602,3726,3729,3727,3728],"wbnews", 1383947850)</script>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="yxmy">
+                <div class="mtxw_top yxmy_top"><a href="xwdt/yxmy.htm">更多>></a>印象美院 </div>
+                <div class="yxmy_nr">
+                   
+ <div class="yxmy_pic">
+                        <a href="info/1061/3290.htm"> <img src="/__local/E/D2/EA/D553A3544EBE091C969DB0F8027_07563F5C_61F8.jpg"></a>
+                        <p>泉州工艺美术职业学院接受...</p>
+                    </div>
+ <div class="yxmy_pic">
+                        <a href="info/1061/3286.htm"> <img src="/__local/9/06/02/5ED23453109DFED0C0E5A924205_60492A98_1A7B1.png"></a>
+                        <p>学院宣传片</p>
+                    </div>
+
+ <div class="yxmy_pic">
+                        <a href="info/1061/2820.htm"> <img src="/__local/8/F4/E9/E01DCCC334092B5BA7D343B975D_F85787B2_629B.jpg"></a>
+                        <p>泉州工艺美院10周年宣传视频</p>
+                    </div>
+ <div class="yxmy_pic">
+                        <a href="info/1061/2819.htm"> <img src="/__local/D/AC/5B/79255B9EB6EB0AA440E2197F124_038F5136_11F74.jpg"></a>
+                        <p>泉州工艺美术学院欢迎广大...</p>
+                    </div>
+<script>_showDynClickBatch(['dynclicks_u12_3290','dynclicks_u12_3286','dynclicks_u12_2820','dynclicks_u12_2819'],[3290,3286,2820,2819],"wbnews", 1383947850)</script>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="xywh">
+                <div class="mtxw_top"><a href="xywh/xyfc.htm">更多>></a>校园文化 </div>
+                <div class="xywh_nr">
+                    <div class="xyfc">
+                        <div class="scrolldoorFrame1">
+                            <ul class="scrollUl1">
+                                <li class="sd101" id="m101" value="0"><a href="xywh/xyfc.htm">校友风采</a></li>
+                                <li class="sd102" id="m102" value="1"><a href="xywh/xysh.htm">校园生活</a></li>
+                            </ul>
+                            <div class="bor03 cont">
+                                <div id="c101" style="display: block">
+                                    <div class="news_lb news_lb2">
+                                        <ul>
+                                          
+  <li><span>2017-05-28</span><a href="info/1063/2001.htm" target="_blank" title="产品造型专业学生获闽台大学生博物馆文创艺术设计大赛铜奖">产品造型专业学生获闽台大学生博物...</a> </li>
+  <li><span>2017-05-27</span><a href="info/1063/2000.htm" target="_blank" title="2017届工业设计专业毕业作品">2017届工业设计专业毕业作品</a> </li>
+  <li><span>2017-05-27</span><a href="info/1063/1999.htm" target="_blank" title="2017届产品造型设计专业毕业作品">2017届产品造型设计专业毕业作品</a> </li>
+  <li><span>2016-09-25</span><a href="info/1063/1997.htm" target="_blank" title="我系学生在泉州市2016年大学生创新创意大赛中喜获佳绩">我系学生在泉州市2016年大学生创新...</a> </li>
+  <li><span>2014-12-25</span><a href="info/1063/2007.htm" target="_blank" title="我系毕业生在全省职工技能创新竞赛中喜获佳绩">我系毕业生在全省职工技能创新竞赛...</a> </li>
+  <li><span>2014-12-12</span><a href="info/1063/2006.htm" target="_blank" title="我系毕业生参加首届全省陶瓷技能创新竞赛喜获佳绩">我系毕业生参加首届全省陶瓷技能创...</a> </li>
+  <li><span>2014-08-18</span><a href="info/1063/2005.htm" target="_blank" title="杨德宝：传统陶瓷 钟情有加">杨德宝：传统陶瓷 钟情有加</a> </li>
+<script>_showDynClickBatch(['dynclicks_u13_2001','dynclicks_u13_2000','dynclicks_u13_1999','dynclicks_u13_1997','dynclicks_u13_2007','dynclicks_u13_2006','dynclicks_u13_2005'],[2001,2000,1999,1997,2007,2006,2005],"wbnews", 1383947850)</script>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="c102" class="hidden" style="display: none">
+                                    <div class="news_lb news_lb2">
+                                        <ul>
+                                          
+  <li><span>2017-05-16</span><a href="info/1064/2042.htm" target="_blank" title="【SUFE 毕业季】毕业生心语｜下">【SUFE 毕业季】毕业生心语｜下</a> </li>
+  <li><span>2017-05-15</span><a href="info/1064/2041.htm" target="_blank" title="【SUFE 毕业季】毕业生心语｜上">【SUFE 毕业季】毕业生心语｜上</a> </li>
+  <li><span>2017-05-12</span><a href="info/1064/2040.htm" target="_blank" title="“礼行瓷都，食在美院” 文明餐桌活动">“礼行瓷都，食在美院” 文明餐桌活动</a> </li>
+  <li><span>2017-05-11</span><a href="info/1064/2039.htm" target="_blank" title="【喜讯】我院两名师生获泉州2016年度 “五四”表彰">【喜讯】我院两名师生获泉州2016年...</a> </li>
+  <li><span>2017-05-04</span><a href="info/1064/2038.htm" target="_blank" title="不忘初心跟党走——中国共产主义青年团95年的基本遵循">不忘初心跟党走——中国共产主义青...</a> </li>
+  <li><span>2017-04-19</span><a href="info/1064/2037.htm" target="_blank" title="辩论赛/征文等你来战！">辩论赛/征文等你来战！</a> </li>
+  <li><span>2017-04-18</span><a href="info/1064/2036.htm" target="_blank" title="美院百名志愿者为“晋江经济开发区商会杯”2017年全国登高徒步大赛提供优良服务（共青团义务星期六）">美院百名志愿者为“晋江经济开发区...</a> </li>
+<script>_showDynClickBatch(['dynclicks_u14_2042','dynclicks_u14_2041','dynclicks_u14_2040','dynclicks_u14_2039','dynclicks_u14_2038','dynclicks_u14_2037','dynclicks_u14_2036'],[2042,2041,2040,2039,2038,2037,2036],"wbnews", 1383947850)</script>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="yszt">
+                        <div class="scrolldoorFrame1">
+                            <ul class="scrollUl2">
+                                <li class="sd201" value="0"><a href="xywh/xyzt.htm">校园景观</a></li>
+                           
+                            </ul>
+                            <div class="bor03 cont">
+                                <div style="display: block">
+                                   <div class="yszt_pic">
+                                      
+
+
+ <div class="jzfx_tp">
+                                           <a href="info/1012/3228.htm" target="_blank"><img src="/__local/0/D7/EB/C399D33B3A48C11B512E07D573C_21E2BD2A_302E3.jpg" /></a>
+                                           <span>校园风光</span>
+                                       </div>
+                                   <div class="jzfx_tp">
+                                           <a href="info/1012/3229.htm" target="_blank"><img src="/__local/3/4C/96/00BD1CBCD422C2F4915A7FBBEBF_9B92340E_599E7.jpg" /></a>
+                                           <span>校园风光</span>
+                                       </div>
+                                  
+ <div class="jzfx_tp">
+                                           <a href="info/1012/3230.htm" target="_blank"><img src="/__local/2/35/7C/47B7341A60BFBE575ADF31E604D_6E357A23_32EA3.jpg" /></a>
+                                           <span>校园风光</span>
+                                       </div>
+                                   <div class="jzfx_tp">
+                                           <a href="info/1012/3231.htm" target="_blank"><img src="/__local/A/4F/EE/A1B2294872BB44E5E3AFC57FDAD_7E460EB2_1816D.jpg" /></a>
+                                           <span>校园风光</span>
+                                       </div>
+                                  
+ <div class="jzfx_tp">
+                                           <a href="info/1012/3232.htm" target="_blank"><img src="/__local/1/73/91/C15213F11E4210B2B076F57C2C9_7120E00B_51DB0.jpg" /></a>
+                                           <span>校园风光</span>
+                                       </div>
+                                   <div class="jzfx_tp">
+                                           <a href="info/1012/3233.htm" target="_blank"><img src="/__local/8/A3/47/1DE4AFD63BFB398F6390F8B271B_4B050767_69643.jpg" /></a>
+                                           <span>校园风光</span>
+                                       </div>
+                                     <script>_showDynClickBatch(['dynclicks_u15_3228','dynclicks_u15_3229','dynclicks_u15_3230','dynclicks_u15_3231','dynclicks_u15_3232','dynclicks_u15_3233'],[3228,3229,3230,3231,3232,3233],"wbnews", 1383947850)</script>
+
+                                   </div>
+                                </div>
+                               
+
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_b_r">
+            <div class="ztzl">
+                <div class="zfly_top">专题专栏<em></em></div>
+                <div class="ztzl_nr">
+                         
+  
+   <a href="http://www.qzgymy.cn/pinggwang" title="" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 30410)" target="_blank"><img src="images/zt_img1.jpg"> </a>
+                        <a href="http://www.qzgymy.cn/qzdlx/" title="" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 30411)" target="_blank"><img src="images/zt_img2.jpg"> </a>
+                        <a href="http://www.qzgymy.cn/zszt" title="" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 30412)" target="_blank"><img src="images/zt_img3.jpg"> </a>
+                        <a href="http://www.qzgymy.cn/gjjjxcg/" title="" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 40244)" target="_blank"><img src="images/zt7.png"> </a>
+                        <a href="http://www.qzgymy.cn/rsc/" title="" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 30413)" target="_blank"><img src="images/zt_img4.jpg"> </a>
+                        <a href="http://www.qzgymy.cn/jxcgz/" title="" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 30414)" target="_blank"><img src="images/zt_img5.jpg"> </a>
+                        <a href="http://www.qzgymy.cn/xh/" title="" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 30704)" target="_blank"><img src="images/xuehuiwang.jpg"> </a>
+                         
+                </div>
+            </div>
+            <div class="ksdh">
+                <div class="zfly_top">快速导航<em></em></div>
+                <div class="ksdh_nr">
+                       
+    
+ <a href="http://www.qzgymy.cn/tcysx/" title="陶瓷艺术系" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 30415)" target="_blank" class="ksdh_nr_pic"><img src="images/17/08/08/116w1g4q7e/d_tb1.png"> <p>陶瓷艺术系</p></a>
+ <a href="http://www.qzgymy.cn/sjx/" title="设计艺术系" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 30416)" target="_blank" class="ksdh_nr_pic"><img src="images/17/08/08/116w1g4q7e/d_tb2.png"> <p>设计艺术系</p></a>
+ <a href="http://www.qzgymy.cn/clgcx" title="材料工程系" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 30417)" target="_blank" class="ksdh_nr_pic"><img src="images/17/08/08/116w1g4q7e/d_tb3.png"> <p>材料工程系</p></a>
+
+ <a href="http://www.qzgymy.cn/gsglx" title="工商管理系" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 30418)" target="_blank" class="ksdh_nr_pic"><img src="images/17/08/08/116w1g4q7e/d_tb4.png"> <p>工商管理系</p></a>
+ <a href="http://www.qzgymy.cn/ggjxb" title="公共教学部" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 30419)" target="_blank" class="ksdh_nr_pic"><img src="images/17/08/08/116w1g4q7e/d_tb5.png"> <p>公共教学部</p></a>
+ <a href="http://www.qzgymy.cn/crjxb" title="成人教育部" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 30420)" target="_blank" class="ksdh_nr_pic"><img src="images/17/08/08/116w1g4q7e/d_tb6.png"> <p>成人教育部</p></a>
+
+ <a href="http://www.qzgymy.cn/jxcgz" title="教学成果展示" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 30421)" target="_blank" class="ksdh_nr_pic"><img src="images/17/08/08/116w1g4q7e/d_tb7.png"> <p>教学成果展示</p></a>
+ <a href="mailto:qzgymy@163.com" title="院长信箱" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 30422)" target="_blank" class="ksdh_nr_pic"><img src="images/17/08/08/116w1g4q7e/d_tb8.png"> <p>院长信箱</p></a>
+ <a href="mailto:qgmdqlx@163.com" title="书记信箱" onclick="_addDynClicks(&#34;wbimage&#34;, 1383947850, 30423)" target="_blank" class="ksdh_nr_pic"><img src="images/17/08/08/116w1g4q7e/d_tb9.png"> <p>书记信箱</p></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="sszp">
+        <div class="xyxw_top sszp_top"><a href="sszp.htm">更多>></a>师生作品</div>
+        <div class="sszp_nr">
+            <div id="colee1_left" style="overflow:hidden;width:1160px; margin:auto">
+                <table border="0" align="center" cellpadding="0" cellspacing="0" style="float:left">
+                    <tr>
+                        <td id="colee1_left1" valign="top" align="center">
+                            <table cellpadding="2" cellspacing="0" border="0">
+                                <tr align="center">
+                                   
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3448.htm" target="_blank"><img src="/__local/A/94/BD/9895E98202B9F543D292100B298_335C57AA_30B63.jpg" width="177" height="126" alt="" /></a>
+                                        <span>2016届毕业生作品展</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3449.htm" target="_blank"><img src="/__local/5/70/68/61CB500DB536CB08622A8B16D53_96B9699D_23D14.jpg" width="177" height="126" alt="" /></a>
+                                        <span>2016届毕业生作品展</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3450.htm" target="_blank"><img src="/__local/4/76/C2/5A6AEC6A099B8742AD8CEDA91BE_CD6F77E4_2F305.jpg" width="177" height="126" alt="" /></a>
+                                        <span>设计艺术系</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3453.htm" target="_blank"><img src="/__local/8/36/A1/BFF5688D4C9F6A1D8DE77F992D1_869D7228_5EC9.jpg" width="177" height="126" alt="" /></a>
+                                        <span>2013中国工艺美术“百花奖”大奖</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3452.htm" target="_blank"><img src="/__local/2/67/B0/D3639F28D7E1E2F65954FB32B90_539CA605_85EE.jpg" width="177" height="126" alt="" /></a>
+                                        <span>10雕塑班毕业生作品</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3451.htm" target="_blank"><img src="/__local/E/21/70/A592BC93D14489BA3CA5C03A19C_427683C0_9B45.jpg" width="177" height="126" alt="" /></a>
+                                        <span>10陶艺2班毕业生作品</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3454.htm" target="_blank"><img src="/__local/1/CD/B5/E4C8767E0AD92A62E560AF72378_965F75D2_165FD.jpg" width="177" height="126" alt="" /></a>
+                                        <span>我院教师第七届省“争艳杯”获奖作品</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3456.htm" target="_blank"><img src="/__local/D/12/2C/91E40999FCC6CDEA21D8E6B6E43_817126AB_10305.jpg" width="177" height="126" alt="" /></a>
+                                        <span>12工业设计—中国画（1）优秀作品</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3455.htm" target="_blank"><img src="/__local/6/F5/14/808D96E67E7B1D7E658C42D43CA_651122A4_1BF99.jpg" width="177" height="126" alt="" /></a>
+                                        <span>12视觉传达设计色彩优秀习作</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3457.htm" target="_blank"><img src="/__local/1/53/3C/9D8B1C9D6AE12EA3EDCA672210E_1CE0C407_ED58.jpg" width="177" height="126" alt="" /></a>
+                                        <span>11工业设计——《3dsmax（二）》优秀作品__指导老师：林振忠</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3458.htm" target="_blank"><img src="/__local/B/17/22/E51039B638FC8E06639D166F0DF_26F2AB67_6BED.jpg" width="177" height="126" alt="" /></a>
+                                        <span>首届虚拟产品表现设计作品展</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3459.htm" target="_blank"><img src="/__local/A/75/DE/768470ED15B0F066C23AC1E1B60_EBA0E7B4_C9A2.jpg" width="177" height="126" alt="" /></a>
+                                        <span>中韩师生陶艺交流展部分作品</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1092/3420.htm" target="_blank"><img src="/__local/8/10/4B/C17E4F1FAF46EA200861F915CDA_72BAA668_524A.jpg" width="177" height="126" alt="" /></a>
+                                        <span>陈桂玉</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3460.htm" target="_blank"><img src="/__local/B/85/07/8D50E82C83C35D38C557CC0F8FB_566F4A24_D864.jpg" width="177" height="126" alt="" /></a>
+                                        <span>07级装潢设计色彩部分优秀作品展示</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1092/3421.htm" target="_blank"><img src="/__local/E/21/70/A592BC93D14489BA3CA5C03A19C_427683C0_9B45.jpg" width="177" height="126" alt="" /></a>
+                                        <span>赖颖秦</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3461.htm" target="_blank"><img src="/__local/E/21/70/A592BC93D14489BA3CA5C03A19C_427683C0_9B45.jpg" width="177" height="126" alt="" /></a>
+                                        <span>05级工业设计专业立体构成作品展选登</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3463.htm" target="_blank"><img src="/__local/5/1C/3B/8B7E87799B7CFAC4FC5829F33CE_04B690D4_62B9.jpg" width="177" height="126" alt="" /></a>
+                                        <span>学生作品展</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1093/3462.htm" target="_blank"><img src="/__local/4/6E/EC/245DFC2A16532DFE842831980AD_373CF590_C551.jpg" width="177" height="126" alt="" /></a>
+                                        <span>陶瓷艺术设计06届学生陶瓷器皿展</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1092/3422.htm" target="_blank"><img src="/__local/E/21/70/A592BC93D14489BA3CA5C03A19C_427683C0_9B45.jpg" width="177" height="126" alt="" /></a>
+                                        <span>赖荣伟</span>
+                                    </td>
+ <td width="187" class="sszp_tp">
+                                        <a href="info/1092/3424.htm" target="_blank"><img src="/__local/7/28/10/003F2F476AB3F2A9C55BFAE8A32_C09F845E_ADEC.jpg" width="177" height="126" alt="" /></a>
+                                        <span>黄翠萍</span>
+                                    </td>
+<script>_showDynClickBatch(['dynclicks_u18_3448','dynclicks_u18_3449','dynclicks_u18_3450','dynclicks_u18_3453','dynclicks_u18_3452','dynclicks_u18_3451','dynclicks_u18_3454','dynclicks_u18_3456','dynclicks_u18_3455','dynclicks_u18_3457','dynclicks_u18_3458','dynclicks_u18_3459','dynclicks_u18_3420','dynclicks_u18_3460','dynclicks_u18_3421','dynclicks_u18_3461','dynclicks_u18_3463','dynclicks_u18_3462','dynclicks_u18_3422','dynclicks_u18_3424'],[3448,3449,3450,3453,3452,3451,3454,3456,3455,3457,3458,3459,3420,3460,3421,3461,3463,3462,3422,3424],"wbnews", 1383947850)</script>
+
+                                </tr>
+                            </table>
+                        </td>
+                        <td id="colee1_left2" valign="top">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <script>
+                var speed=10//速度数值越大速度越慢
+                var colee1_left2=document.getElementById("colee1_left2");
+                var colee1_left1=document.getElementById("colee1_left1");
+                var colee1_left=document.getElementById("colee1_left");
+                colee1_left2.innerHTML=colee1_left1.innerHTML
+                function Marquee6(){
+                    if(colee1_left2.offsetWidth-colee1_left.scrollLeft<=0)//offsetWidth 是对象的可见宽度
+                        colee1_left.scrollLeft-=colee1_left1.offsetWidth//scrollWidth 是对象的实际内容的宽，不包边线宽度
+                    else{
+                        colee1_left.scrollLeft++
+                    }
+                }
+                var MyMar6=setInterval(Marquee6,speed)
+                colee1_left.onmouseover=function() {clearInterval(MyMar6)}
+                colee1_left.onmouseout=function() {MyMar6=setInterval(Marquee6,speed)}
+            </script>
+        </div>
+    </div>
+
+</div>
+<div class="f">
+    <div class="width">
+        <div class="f_left">
+           <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/14/218/0768/60663547/CA142180768606635470002.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+        </div>
+        <div class="f_c">
+            <div class="f_yqlj">
+                <li>
+                  <select onchange="_openSelectLink(this, 'value', 'addclicks')">
+    <option>专题网站</option>
+    <option value="http://www.qzgymy.cn/zszt" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28465)">招生专题</option>
+    <option value="#" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28466)">职称评聘</option>
+    <option value="http://www.qzgymy.cn/djw" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28467)">学院党建</option>
+    <option value="http://mis.fjjg.gov.cn/schoolservice/Charge_Index.asp?Charge_Code=1&amp;User_Id=dz-31" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28468)">收费公示栏</option>
+    <option value="http://www.qzgymy.cn/cxzy" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28469)">创先争优专题</option>
+    <option value="http://www.dhcc.cc/szzt" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28493)">思想政治教育专题网站</option>
+    <option value="http://www.dhcc.cc/whlm" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28494)">泉州市文化创意职业院校联盟</option>
+    <option value="#" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28495)">职业院校管理水平提升行动计划</option>
+</select>
+
+
+                </li>
+                <li>
+                  <select onchange="_openSelectLink(this, 'value', 'addclicks')">
+    <option>信息资源</option>
+    <option value="http://218.85.221.14/meol/index.do" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28470)">精品课程</option>
+    <option value="http://jwgl.dhcc.cc" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28471)">教务管理系统</option>
+    <option value="http://www.qzgymy.cn/tsgs/" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28472)">图书馆</option>
+    <option value="http://www.fjbys.gov.cn/" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28473)">毕业生就业网</option>
+    <option value="http://gaokao.fjedu.gov.cn/ztc/index.php?aid=52" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28474)">阳光高考平台</option>
+    <option value="#" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28497)">文件下载</option>
+    <option value="wjdc.htm" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28498)">问卷调查</option>
+</select>
+
+
+                </li>
+                <li>
+                  <select onchange="_openSelectLink(this, 'value', 'addclicks')">
+    <option>友情链接</option>
+    <option value="http://www.626china.org/" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 29229)">中国禁毒数字展览馆</option>
+    <option value="http://www.qzedu.cn/" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28475)">泉州市教育局</option>
+    <option value="http://www.fjedu.gov.cn/" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28476)">福建省教育厅</option>
+    <option value="http://www.xmu.edu.cn/" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28477)">厦门大学</option>
+    <option value="http://www.fjzs.edu.cn/" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28478)">闽南师范大学</option>
+    <option value="http://www.lmu.edu.cn" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28479)">黎明职业大学</option>
+    <option value="http://www.china-ceram.com/" title="" addclicks="_addDynClicks(&#34;wburl&#34;, 1383947850, 28480)">中国陶瓷网</option>
+</select>
+
+
+                </li>
+
+                <div class="clear"></div>
+            </div>
+           <!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+<p>Copyright 2011-2022 All rights reserved. &nbsp; 闽ICP备:11004174号 &nbsp;<br />学院地址:福建省泉州市德化学府路100号</p>
+        </div>
+        <div class="f_right">
+            <ul>
+                  
+
+       
+  <li><img src="images/17/08/08/1id9asfq82/ewm_1.png"><br />新浪微博</li>
+                   <li><img src="images/17/08/08/1id9asfq82/ewm_2.png"><br />校务微博</li>
+                   <li><img src="images/17/08/08/1id9asfq82/ewm_3.png"><br />团委微博</li>
+                   <li><img src="images/17/08/08/1id9asfq82/ewm_4.png"><br />微信公众号</li>
+                   
+            </ul>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,510 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=1200">
+<title>重庆城市职业学院</title>
+<meta name="keywords" content="重庆城市职业学院">
+<meta name="description" content="重庆城市职业学院">
+<script type="text/javascript" src="http://www.cqcvc.com.cn/statics/js/jquery.mini.js"></script>
+<script type="text/javascript" src="http://www.cqcvc.com.cn/statics/js/jquery.sgallery.js"></script>
+<script type="text/javascript" src="http://www.cqcvc.com.cn/statics/js/admove.js"></script>
+<script src="/statics/plugin/layer/layer.js"></script>
+<link href="http://www.cqcvc.com.cn/statics/css/default_css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://www.cqcvc.com.cn/statics/js/flash.js"></script>
+</head>
+
+<body>
+<div class="top">
+	<div class="top_main">
+    	<div class="top_main_left">
+        	<span><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_top_font.png"/></span>
+            <a href="/"><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_top_logo.png"/></a>
+        </div>
+        <div class="top_main_right">
+        	<a href="/index.php?m=search"><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_top_righta.png"/></a>
+        	<a id="weixin" imgurl="http://www.cqcvc.com.cn/statics/images/default_img/qrcode.png" href="javascript:;"><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_top_rightb.png"/></a>
+        	<a href="#"><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_top_rightc.png"/></a>
+        	<!--<a href="/index.php?m=admin"><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_top_rightd.png"/></a>-->
+        </div>
+		<script>
+			$('#weixin').click(function(){
+				  layer.open({
+				  title: false, //不显示标题
+				  type: 1,
+				  skin: 'layui-layer-rim', //加上边框
+				  area: ['245px', '245px'], //宽高
+				  content: '<div style=" width:100%;height:100%;"><img src="'+$(this).attr('imgurl')+'" style="width:100%;height:100%" /></div>'
+				});
+				});
+		</script>
+    </div>
+</div><!------------------>
+<div class="index">
+	<div class="index_main">
+	
+	
+    	<div class="index_main_nav">
+		
+		<style>
+			.nav_main{position:relative;z-index:999}
+			.nav_main>ul>li{position:relative;padding:0px;}
+			.nav_main>ul>li>a{display:block;width:100%;height:100%;}
+			.nav_main>ul>li>ul{position:relative;width:100%;height:auto;padding-left:0px;background:#2464be;display:none}
+			.nav_main>ul>li:hover>ul{position:relative;width:100%;height:auto;padding-left:0px;background:#2464be;display:block;}
+			.nav_main>ul>li>ul>li{height:30px;line-height:30px;font-size:13px;}
+			.nav_main>ul>li:hover>ul>li>a{display:block;width:100%;height:100%;color:#fff;}
+			.nav_main>ul>li>ul>li>a:active,.nav_main>ul>li>ul>li>a:visited{color:#fff;}
+			.nav_main>ul>li>ul>li>a:link{display:block;width:100%;height:100%;color:#fff;}
+			.nav_main>ul>li>ul>li>a:hover{background:#f9921c;color:#fff}
+		</style>
+		<div class="nav_main">
+		        	<ul>
+				<li><a href="/">网站首页</a></li>
+											<li>
+																															<a href="http://www.cqcvc.com.cn/city/xygk/xyj/">学院概况</a>
+																															<!-- 二级栏目 -->
+															<ul>
+																																			<li><a href="http://www.cqcvc.com.cn/city/xygk/xyj/">学院简介</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/xygk/xshg/">校史回顾</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/xygk/xrld/">现任领导</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/xygk/xybs/">学院标识</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/xygk/bxcg/">办学成果</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/xygk/yrhj/">育人环境</a></li>
+																									<div style="clear:both;"></div>
+								</ul>
+														</li>
+											<li>
+																															<a href="http://www.cqcvc.com.cn/city/jgsz/jgsz/">机构设置</a>
+																															<!-- 二级栏目 -->
+															<ul>
+																																			<li><a href="http://www.cqcvc.com.cn/city/jgsz/jgsz/">党政管理机构</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/jgsz/jgsz/">教学科研机构</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/jgsz/jgsz/">群团组织</a></li>
+																									<div style="clear:both;"></div>
+								</ul>
+														</li>
+											<li>
+																															<a href="http://www.cqcvc.com.cn/city/rcpy/zyjs/">人才培养</a>
+																															<!-- 二级栏目 -->
+															<ul>
+																																			<li><a href="http://www.cqcvc.com.cn/city/rcpy/zyjs/">专业建设</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/rcpy/kcjs/">课程建设</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/rcpy/dshj/">大赛获奖</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/rcpy/sxjd/">实训基地</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/rcpy/jxjy/">继续教育</a></li>
+																									<div style="clear:both;"></div>
+								</ul>
+														</li>
+											<li>
+																															<a href="http://zsw.cqcvc.com.cn/">招生就业</a>
+																															<!-- 二级栏目 -->
+															<ul>
+																																			<li><a href="http://zsw.cqcvc.com.cn/">招生</a></li>
+																																				<li><a href="http://jyw.cqcvc.com.cn/">就业</a></li>
+																									<div style="clear:both;"></div>
+								</ul>
+														</li>
+											<li>
+																															<a href="http://www.cqcvc.com.cn/city/szdw/szgg/">师资队伍</a>
+																															<!-- 二级栏目 -->
+															<ul>
+																																			<li><a href="http://www.cqcvc.com.cn/city/szdw/szgg/">师资概况</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/szdw/jsbs/">教授博士</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/szdw/jxtd/">教学团队</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/index.php?m=content&c=index&a=lists&catid=517">教师培训</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/szdw/jsfc/">教师风采</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/index.php?m=content&c=index&a=lists&catid=515">人才招聘</a></li>
+																									<div style="clear:both;"></div>
+								</ul>
+														</li>
+											<li>
+																															<a href="http://www.cqcvc.com.cn/city/kxyj/xfjs/">科学研究</a>
+																															<!-- 二级栏目 -->
+															<ul>
+																																			<li><a href="http://www.cqcvc.com.cn/city/kxyj/xfjs/">学风建设</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/kxyj/kygl/">科研管理</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/kxyj/yb/">学术期刊</a></li>
+																									<div style="clear:both;"></div>
+								</ul>
+														</li>
+											<li>
+																															<a href="http://www.cqcvc.com.cn/city/duiwaihezuojiaoliu/xqhz/">合作发展</a>
+																															<!-- 二级栏目 -->
+															<ul>
+																																			<li><a href="http://www.cqcvc.com.cn/city/duiwaihezuojiaoliu/xqhz/">校企合作</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/duiwaihezuojiaoliu/gjhz/">国际合作</a></li>
+																									<div style="clear:both;"></div>
+								</ul>
+														</li>
+											<li>
+																															<a href="http://www.cqcvc.com.cn/city/czfc/xyfg/">城职风采</a>
+																															<!-- 二级栏目 -->
+															<ul>
+																																			<li><a href="http://www.cqcvc.com.cn/city/czfc/xyfg/">校园风光</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/czfc/czsp/">城职视频</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/czfc/jzlt/">讲座论坛</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/czfc/xsst/">学生活动</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/czfc/jghd/">教工活动</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/czfc/sshj/">师生获奖</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/czfc/jxhd/">教学活动</a></li>
+																									<div style="clear:both;"></div>
+								</ul>
+														</li>
+											<li>
+																															<a href="http://www.cqcvc.com.cn/city/xxgk/xxgkzn/">信息公开</a>
+																															<!-- 二级栏目 -->
+															<ul>
+																																			<li><a href="http://www.cqcvc.com.cn/city/xxgk/xxgkzn/">信息公开指南</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/xxgk/xxgkml/">信息公开目录</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/xxgk/xinxigongkainiandubaogao/">信息公开年度报告</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/xxgk/gzzd/">规章制度</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/index.php?m=content&c=index&a=lists&catid=2">学院概况</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/index.php?m=content&c=index&a=lists&catid=763">人才培养</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/index.php?m=content&c=index&a=lists&catid=777">科研管理</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/index.php?m=content&c=index&a=lists&catid=488">学生管理</a></li>
+																																				<li><a href="http://rsc.cqcvc.com.cn/">人才、人事与干部工作</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/xxgk/caiwuyuzichanguanli/">财务与资产管理</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/xxgk/wuzicaigou/">物资采购</a></li>
+																																				<li><a href="http://hqc.cqcvc.com.cn/">后勤保障</a></li>
+																									<div style="clear:both;"></div>
+								</ul>
+														</li>
+											<li>
+																															<a href="http://www.cqcvc.com.cn/city/ggfww/bmtxl/">公共服务</a>
+																															<!-- 二级栏目 -->
+															<ul>
+																																			<li><a href="http://www.cqcvc.com.cn/city/ggfww/bmtxl/">部门通讯录</a></li>
+																																				<li><a href="http://www.cqcvc.com.cn/city/ggfww/xydh/">校园导航</a></li>
+																																																								<li><a href="http://www.cqcvc.com.cn/city/ggfww/zlxz/ggzy/">资料下载</a></li>
+																																													<div style="clear:both;"></div>
+								</ul>
+														</li>
+				            </ul>
+		
+		</div>
+        </div>
+		<script type="text/javascript" src="http://www.cqcvc.com.cn/statics/plugin/00011/js/swfobject.js"></script>
+		<SCRIPT type=text/javascript>			
+			var flashvars = {};
+			flashvars.xml =  "http://www.cqcvc.com.cn/config.xml";
+			var params = {};
+			params.allowscriptaccess = "always";
+			params.allownetworking = "all";
+			params.wmode = "transparent";
+			var attributes = {};
+			attributes.id = "slider";
+			swfobject.embedSWF("http://www.cqcvc.com.cn/statics/plugin/00011/16sucai.swf", "cu3er_swf", "1200", "242", "9", flashvars, params, attributes);
+	</SCRIPT>
+        <div class="index_banner jsjtc" id="cu3er_swf">
+		</div>
+        <!-- <div class="index_ggw"><a href="/index.php?m=content&c=index&a=lists&catid=686"><img src="http://www.cqcvc.com.cn/statics/images/default_img/sy_gg01.jpg"/></a><a href="http://dz.cqcvc.com.cn:8000/Account/Login" style="float:right"><img src="http://www.cqcvc.com.cn/statics/images/default_img/sy_gg02.jpg"/></a></div> -->
+        <div style="clear:both"></div>       
+		
+        <div class="index_center">
+          <div class="index_left">
+              <div class="index_yi">
+              	<div class="index_tupxw_left">
+            	<div class="index_tupxw_left_title"><font>图片新闻</font></div>
+            	<div class="index_tupxw_left_bot">
+					<div class="FocusPic"> 
+					 						<div class="content" id="main-slide">
+						  <div class="changeDiv"> 
+						   
+						  <a target="_blank" href="http://www.cqcvc.com.cn/city/2018/show-15-2381-1.html" title="学院召开意识形态定期研判工作会"><img src="http://www.cqcvc.com.cn/uploadfile/2018/0522/20180522025611481.jpg" alt="学院召开意识形态定期研判工作会" width="380" height="235" /></a> 
+						   
+						  <a target="_blank" href="http://www.cqcvc.com.cn/city/2018/show-15-2372-1.html" title="学院党委书记刘波带队赴襄阳职业技术学院等单..."><img src="http://www.cqcvc.com.cn/uploadfile/2018/0522/20180522105333836.jpg" alt="学院党委书记刘波带队赴襄阳职业技术学院等单位考察调研" width="380" height="235" /></a> 
+						   
+						  <a target="_blank" href="http://www.cqcvc.com.cn/city/2018/show-15-2367-1.html" title="学院院长江洪一行赴市内外两所国家示范高职院..."><img src="http://www.cqcvc.com.cn/uploadfile/2018/0521/20180521035937486.jpg" alt="学院院长江洪一行赴市内外两所国家示范高职院校考察交流" width="380" height="235" /></a> 
+						   
+						  <a target="_blank" href="http://www.cqcvc.com.cn/city/2018/show-15-2348-1.html" title="加拿大圣劳伦斯学院来学院考察交流国际合作"><img src="http://www.cqcvc.com.cn/uploadfile/2018/0515/20180515114406638.jpg" alt="加拿大圣劳伦斯学院来学院考察交流国际合作" width="380" height="235" /></a> 
+						   
+						  <a target="_blank" href="http://www.cqcvc.com.cn/city/2018/show-15-2326-1.html" title="职教活动周丨学院赴梁平参加职教活动周 宣传..."><img src="http://www.cqcvc.com.cn/uploadfile/2018/0510/20180510031909280.jpg" alt="职教活动周丨学院赴梁平参加职教活动周 宣传展示学院改革发展成果" width="380" height="235" /></a> 
+						   
+						</div>
+						</div>
+										</div>
+					<script type="text/javascript"> 
+
+						new slide("#main-slide","cur",380,235,1,5000);
+					
+				</script>
+                </div>
+                </div>
+                <div class="index_tupxw_center">
+            	<div class="index_tupxw_center_title"><span><a href="http://www.cqcvc.com.cn/city/xwzx/xyyw/">MORE>></a></span><font>校园新闻</font></div>
+            	<div class="index_tupxw_center_bot">
+				                	<ul>
+					                    	<li><span>2017/10/19</span><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_title_icob.jpg"/><a style="color:#FF0000;bold" href="http://www.cqcvc.com.cn/city/2017/show-15-1827-1.html" >关注十九大丨习近平代表第十八届中央委员会向党的十九大作报告</a></li>
+                                        	<li><span>2018/04/04</span><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_title_icob.jpg"/><a style="color:#FF0000" href="http://www.cqcvc.com.cn/city/2018/show-15-2224-1.html" >学院与美国奥罗尔罗伯茨大学交流合作正式启动</a></li>
+                                        	<li><span>2018/03/27</span><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_title_icob.jpg"/><a style="color:#000" href="http://www.cq.xinhuanet.com/2018/cqcszyxy/" >重庆城市职业学院2018年招生专题</a></li>
+                                        	<li><span>2018/05/24</span><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_title_icob.jpg"/><a  href="http://www.cqcvc.com.cn/city/2018/show-15-2390-1.html" >学院举行“大学生心理压力的自我调适”心理知识讲座</a></li>
+                                        	<li><span>2018/05/24</span><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_title_icob.jpg"/><a  href="http://www.cqcvc.com.cn/city/2018/show-15-2389-1.html" >学院召开5月党建工作例会</a></li>
+                                        	<li><span>2018/05/24</span><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_title_icob.jpg"/><a  href="http://www.cqcvc.com.cn/city/2018/show-15-2388-1.html" >学院举行应聘人员见面会</a></li>
+                                        	<li><span>2018/05/23</span><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_title_icob.jpg"/><a  href="http://www.cqcvc.com.cn/city/2018/show-15-2386-1.html" >交流学习丨重庆水利电力职业技术学院来校考察</a></li>
+                                        	<li><span>2018/05/23</span><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_title_icob.jpg"/><a  href="http://www.cqcvc.com.cn/city/2018/show-15-2387-1.html" >学生活动丨建筑工程系开展班级男子篮球赛</a></li>
+                                        	<li><span>2018/05/23</span><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_title_icob.jpg"/><a  href="http://www.cqcvc.com.cn/city/2018/show-15-2384-1.html" >学生活动丨学院举行第三届大学生心理健康日宣传活动</a></li>
+                    					</ul>
+				                </div>
+            	</div>
+                
+              </div>
+              <div class="index_er">
+              	<div class="index_er_left">
+				                	<ul>
+					                    	<li>
+                        	<div class="index_er_time">
+                            	<span>05/22</span>
+                                <font>2018</font>
+                            </div>
+                        	<div class="index_er_font">
+                            	<h6><a href="http://www.cqcvc.com.cn/city/2018/show-742-46-1.html">学院第三届&ldquo;5.25&rdquo;（我爱我）心理健康月系...</a></h6>
+                                <P>一、活动主题青春正能量，与爱共成长二、活动时间2018年5月-6月三、系列活动（一）学院第三届...</P>
+                            </div>
+                        </li>
+					                    	<li>
+                        	<div class="index_er_time">
+                            	<span>05/14</span>
+                                <font>2018</font>
+                            </div>
+                        	<div class="index_er_font">
+                            	<h6><a href="http://www.cqcvc.com.cn/city/2018/show-742-43-1.html">“谱青春华章，展时代风采”青年活动月活动预告</a></h6>
+                                <P>具体安排活动名称时间地点参与人员我们的新时代演讲比赛2018年5月16日学术报告厅全院学生践行...</P>
+                            </div>
+                        </li>
+					                    </ul>
+				                </div>
+                <div class="index_er_right">
+            	<div class="index_er_right_title"><span><a href="http://www.cqcvc.com.cn/city/xwzx/tzgg1/">MORE>></a></span><font>通知公告</font></div>
+            	<div class="index_er_right_bot">
+				                 	<ul>
+					                    	<li><span>2018/05/24</span><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_title_icob.jpg"/><a href="http://www.cqcvc.com.cn/city/2018/show-363-2392-1.html">重庆城市职业学院桔园A、B栋风貌改造工程招标公告</a></li>
+                                        	<li><span>2018/05/24</span><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_title_icob.jpg"/><a href="http://www.cqcvc.com.cn/city/2018/show-363-2391-1.html">重庆城市职业学院建筑系测绘仪器采购项目中标结果</a></li>
+                                        	<li><span>2018/05/22</span><img src="http://www.cqcvc.com.cn/statics/images/default_img/index_title_icob.jpg"/><a href="http://www.cqcvc.com.cn/city/2018/show-363-2380-1.html">重庆城市职业学院竹园A栋宿舍改造项目公告第二次</a></li>
+                    					</ul>
+				                </div>
+            	</div>
+              </div>
+              <div class="index_san">
+						<div class="item_box box10">
+						<div class="item_box_wp">
+							<div class="voice_2">
+								<ul style="width:100%;">
+									<li class="li1" id="li1">
+										<div class="fold" style="display:none;">
+											<span class="img"><img src="http://www.cqcvc.com.cn/statics/images/img_2017/index_dhaa.png"/></span>
+										</div>
+										<div class="unfold" style="display:block">
+											<dl>
+												<dt><img src="http://www.cqcvc.com.cn/statics/images/img_2017/index_dhaa.png"/></dt>
+												<dd style="padding-top: 4px;">
+												<div class="zwenlsl" style="width:90px;"><font>></font><a target="_blank" href="http://csjsx.cqcvc.com.cn">建筑工程系</a></div>
+												<div class="zwenlsl" style="width:90px;"><font>></font><a target="_blank" href="http://csfwx.cqcvc.com.cn">旅游管理系</a></div>
+												<div class="zwenlsl" style="width:90px;"><font>></font><a target="_blank" href="http://csjmx.cqcvc.com.cn">工商管理系</a></div>
+												<div class="zwenlsl" style="width:90px;"><font>></font><a target="_blank" href="http://csxxx.cqcvc.com.cn">信息工程系</a></div>
+												<div class="zwenlsl" style="width:90px;"><font>></font><a target="_blank" href="http://jcb.cqcvc.com.cn">基础教学部</a></div>
+                                                <div class="zwenlsl" style="width:90px;"><font>></font><a target="_blank" href="http://jwc.cqcvc.com.cn">教学工作部</a></div>
+                                                <div class="zwenlsl" style="width:100px;"><font>></font><a target="_blank" href="http://zlgl.cqcvc.com.cn">质量管理中心</a></div>
+												<div class="zwenlsl" style="width:130px;"><font>></font><a target="_blank" href="http://kyc.cqcvc.com.cn">科研与发展规划中心</a></div>
+												<div class="zwenlsl" style="width:120px;"><font>></font><a target="_blank" href="http://jfzx.cqcvc.com.cn">图文信息技术中心</a></div>
+                                                <div class="zwenlsl"><font>></font><a target="_blank" href="http://pxzx.cqcvc.com.cn">继续教育学院</a></div>
+												</dd>
+											</dl>
+										</div>
+										<div style="clear:both;"></div>
+									</li>
+									<li class="li2">
+										<div class="fold">
+											<span class="img"><img src="http://www.cqcvc.com.cn/statics/images/img_2017/index_dhab.png"/></span>
+										</div>
+										<div class="unfold">
+											<dl>
+												<dt><img src="http://www.cqcvc.com.cn/statics/images/img_2017/index_dhab.png"/></dt>
+												<dd style="padding-top: 4px;">			
+												<div class="zwenlsl"><font>></font><a target="_blank" href="http://xzb.cqcvc.com.cn">党政办公室</a></div>
+												<div class="zwenlsl"><font>></font><a target="_blank" href="http://rsc.cqcvc.com.cn">组织统战与人事处</a></div>
+												<div class="zwenlsl"><font>></font><a target="_blank" href="http://dwb.cqcvc.com.cn">宣传部</a></div>
+                                                <div class="zwenlsl"><font>></font><a target="_blank" href="http://sjc.cqcvc.com.cn">纪检监察审计处</a></div>
+                                                <div class="zwenlsl"><font>></font><a target="_blank" href="http://xbc.cqcvc.com.cn">学生工作部</a></div>
+                                                <div class="zwenlsl"><font>></font><a target="_blank" href="http://bwc.cqcvc.com.cn/">保卫部</a></div>
+                                                <div class="zwenlsl"><font>></font><a target="_blank" href="http://cwc.cqcvc.com.cn">财务与资产处</a></div>
+												<!--<div class="zwenlsl"><font>></font><a target="_blank" href="http://jwc.cqcvc.com.cn">教学工作部</a></div>-->
+												<!--<div class="zwenlsl"><font>></font><a target="_blank" href="http://zsw.cqcvc.com.cn">招生处</a></div>-->
+												<div class="zwenlsl"><font>></font><a target="_blank" href="http://hqc.cqcvc.com.cn">基建后勤处</a></div>
+												<!--<div class="zwenlsl"><font>></font><a target="_blank" href="http://pxzx.cqcvc.com.cn">继续教育学院</a></div>-->
+												<!--<div class="zwenlsl"  style="width:120px;"><font>></font><a target="_blank" href="http://kyc.cqcvc.com.cn">科研与发展规划中心</a></div>-->
+												<!-- <div class="zwenlsl"><font>></font><a target="_blank" href="http://gh.cqcvc.com.cn">院工会 </a></div> -->
+												<!--<div class="zwenlsl"><font>></font><a target="_blank" href="http://xyh.cqcvc.com.cn">校友会 </a></div>-->
+												<!--<div class="zwenlsl"><font>></font><a target="_blank" href="http://jfzx.cqcvc.com.cn">图文信息技术中心</a></div>-->
+												<!-- <div class="zwenlsl"><font>></font><a target="_blank" href="http://bwc.cqcvc.com.cn/">督导办</a></div> -->
+												</dd>
+											</dl>
+										</div>
+									</li>
+									<li class="li3">
+										<div class="fold">
+											<span class="img"><img src="http://www.cqcvc.com.cn/statics/images/img_2017/index_dhac.png"/></span>
+										</div>
+										<div class="unfold">
+											<dl>
+												<dt><img src="http://www.cqcvc.com.cn/statics/images/img_2017/index_dhac.png"/></dt>
+												<dd style="padding-top: 4px;"> 
+												<div class="zwenlsl"><font>></font><a target="_blank" href="http://zsw.cqcvc.com.cn">招生网</a></div>
+												<div class="zwenlsl"><font>></font><a target="_blank" href="http://jyw.cqcvc.com.cn">就业网</a></div>
+												</dd>
+											</dl>
+										</div>
+									</li>
+									<li class="li4">
+										<div class="fold">
+											<span class="img"><img src="http://www.cqcvc.com.cn/statics/images/img_2017/index_dhad.png"/></span>
+										</div>
+										<div class="unfold">
+											<dl>
+												<dt><img src="http://www.cqcvc.com.cn/statics/images/img_2017/index_dhad.png"/></dt>
+												<dd style="padding-top: 4px;">						
+												<!--<div class="zwenlsl"><font>></font><a href="http://rcpy.cqcvc.com.cn/" target="_blank"> 评建专题网 </a></div>-->
+												<div class="zwenlsl"><font>></font><a href="http://rzxt.cqcvc.com.cn"  target="_blank"> 智慧校园 </a></div>
+												<div class="zwenlsl"><font>></font><a href="http://10.10.0.215:8080" target="_blank"> 电子图书资源 </a></div>
+												<div class="zwenlsl"><font>></font><a href="http://c.bookan.com.cn/cqcsxytsg" target="_blank"> 博看期刊资源 </a></div>
+												<div class="zwenlsl"><font>></font><a href="http://www.cnki.net" target="_blank"> CNKI资源 </a></div>
+												<div class="zwenlsl"><font>></font><a href="http://yytd.cqcvc.com.cn/" target="_blank"> 英语天地 </a></div>
+												<div class="zwenlsl"><font>></font><a href="http://dwb.cqcvc.com.cn/city/mtsc/" target="_blank"> 媒体视窗 </a></div>
+												</dd>
+											</dl>
+										</div>
+									</li>
+                                    <li class="li5">
+										<div class="fold">
+											<span class="img"><img src="http://www.cqcvc.com.cn/statics/images/img_2017/index_mtjj.png"/></span>
+										</div>
+										<div class="unfold">
+											<dl>
+												<dt><img src="http://www.cqcvc.com.cn/statics/images/img_2017/index_mtjj.png"/></dt>
+												<dd style="padding-top: 4px;"> 
+												<div class="zwenlsl"><font>></font><a target="_blank" href="http://dwb.cqcvc.com.cn/city/mtsc/">媒体视窗</a></div>
+												</dd>
+											</dl>
+										</div>
+									</li>
+									
+								</ul>         
+							</div>
+						</div>
+					</div>
+				
+					<script>window.jQuery || document.write('<script src="http://www.cqcvc.com.cn/statics/js//jquery-1.11.0.min.js"><\/script>')</script>
+					<script type="text/javascript">
+						$(function(){
+							$(".voice_2 ul li").each(function(){
+								var fold = $(this).find(".fold");
+								var unfold = $(this).find(".unfold");
+								if(fold.is(":hidden")){
+									$(this).width(550);
+								}else{
+									$(this).width(80);
+								}
+							})
+							$(".voice_2 ul li").click(function(){
+								var li_index = $(this).index();
+								$(this).animate({width:550},200);
+								$(this).find(".unfold").show();
+								$(this).find(".fold").hide();
+								$(this).siblings().animate({width:80},200);
+								$(this).siblings().find(".unfold").hide();
+								$(this).siblings().find(".fold").show();
+							})
+						})
+					</script>
+					
+              </div>
+              <div style="clear:both"></div>
+          </div>
+          <div class="index_right">
+              <div class="index_tupxw_right">
+            	<div class="index_tupxw_right_title"><span><a href="#">MORE>></a></span><font>信息导航</font></div>
+            	<div class="index_tupxw_right_bot">
+                	<ul>
+                    	<!--<li><a href="http://www.cqcvc.com.cn/city/xxgk/"><i class="icon iconfont">&#xe63e;</i><font>信息公开</font></a></li>-->
+                    	<li><a href="http://www.cnki.net/"><i class="icon iconfont">&#xe6db;</i><font>CNKI资源</font></a></li>
+                    	<li><a href="http://rzxt.cqcvc.com.cn/"><i class="icon iconfont">&#xe601;</i><font>智慧校园</font></a></li>
+                    	<li><a href="mailto:cqcvcsjyx@163.com"><i class="icon iconfont">&#xe677;</i><font>书记信箱</font></a></li>
+                    	<li><a href="http://edu.cqcvc.com.cn:800/"><i class="icon iconfont">&#xe600;</i><font>成绩查询</font></a></li>
+                    	<li><a href="mailto:cqcvcyzyx@163.com"><i class="icon iconfont">&#xe60b;</i><font>院长信箱</font></a></li>
+                    	<li><a href="http://lib.cquc.net/"><i class="icon iconfont">&#xe602;</i><font>市高校数字图书馆</font></a></li>
+                    	<li><a href="http://61.161.72.59/WeiKe/default.asp"><i class="icon iconfont">&#xe613;</i><font>微课平台</font></a></li>
+                    	<li><a href="http://dqlx.cqcvc.com.cn/"><i class="icon iconfont">&#xe633;</i><font>两学一做</font></a></li>
+                    	<li><a href="http://61.161.72.59/WeiKe/default.asp"><i class="icon iconfont">&#xe603;</i><font>精品课程</font></a></li>
+                    	<li><a href="http://61.161.72.60:30882/school/"><i class="icon iconfont">&#xe61d;</i><font>校园安心付</font></a></li>
+                    </ul>
+				<div style="clear:both"></div>
+                </div>
+            </div>
+              <div class="index_yqlj_right">
+            	<div class="index_yqlj_right_title"><font>友情链接</font></div>
+            	<div class="index_yqlj_right_bot">
+					<select onchange="window.open($(this).val())">
+													<option value="/">==请选择==</option>
+															<option value="http://www.moe.edu.cn/">|国家教育部|</option>
+							 								<option value="http://www.cqjw.gov.cn/">|重庆市教委|</option>
+							 								<option value="http://www.tech.net.cn/web/index.aspx">中国高职高专教育网</option>
+							 								<option value="http://www.gx211.com/">中国高校之窗</option>
+							 								<option value="http://www.szpt.edu.cn/">深圳职业技术学院</option>
+							 								<option value="http://www.niit.edu.cn/">南京工业职业技术学院</option>
+							 								<option value="http://www.qtc.edu.cn/">青岛职业技术学院</option>
+							 								<option value="http://www.whit.ah.cn/">芜湖职业技术学院</option>
+							 						    
+					</select>
+                </div>
+            </div>
+          </div>
+<div style="clear:both"></div>
+        </div>
+    </div>
+
+<style>
+#gg2 span{width:10px;height:10px;line-height:10px;text-align:center;background:#fff;position:absolute;top:0px;right:0px;cursor:pointer;}
+</style>
+<div id="pf_gg_1" style="clear:both;"></div>
+<div id="gg2" style="width:300px;height:150px;background-color:fff; z-index:99999; overflow:hidden; top:0px; left:0px;">
+    <a href="http://zsw.cqcvc.com.cn/city/2018/show-304-388-1.html" target="_blank"><img src="http://www.cqcvc.com.cn/statics/images/img/gg.jpg"></a>
+    <span>X</span>
+	</div>
+<script type="text/javascript">
+ var ad2=new AdMove("gg2");
+        ad2.Run(); 
+		$("#gg2 span").click(function(){
+	$("#gg2").hide();
+});
+</script>
+
+</div><!------------------>
+
+<style type="text/css">
+#leftDiv,#rightDiv{width:180px;height:280px;position:absolute;}
+.itemFloat{width:180px;height:auto;line-height:5px}
+</style>
+<div id="leftDiv" style="top:100px;left:10px">
+<div id="left2" class="itemFloat">
+<a href="http://zsw.cqcvc.com.cn/city/flks/" target="_blank"><img src="http://www.cqcvc.com.cn/statics/images/img_2017/gg3.jpg" width="180" /></a>
+<br><a href="javascript:close_left2();" title="关闭上面的广告">×</a>
+</div></div>
+<div id="rightDiv" style="top:100px;right:10px">
+<div id="right2" class="itemFloat">
+<a href="http://www.cqooc.com/university/detail?id=40" target="_blank"><img src="http://www.cqcvc.com.cn/statics/images/img_2017/gg5.jpg" width="180" /></a>
+<br><a href="javascript:close_right2();" title="关闭上面的广告">×</a>
+</div></div>
+<script type="text/javascript" src="http://www.cqcvc.com.cn/statics/js/ad.js"></script>
+
+<div class="index_bq">
+	<div class="index_bq_main">
+    	地址：重庆市永川区兴龙大道1099号  招生热线: 023-49578000 49579000 023-49578033(传真)  电子信箱：info@cqcvc.com.cn<br/>
+		渝ICP备16003649号 <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50011802010154" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://www.cqcvc.com.cn/statics/images/img_2017/ico.png" style="float:left; margin-right:2px;"/>渝公网安备 50011802010154号</a>   重庆城市职业学院 版权所有 © 2016 技术支持：<a href="http://www.rxcn.net">瑞秀中国</a>　<a href="http://webscan.360.cn/index/checkwebsite/url/www.cqcvc.com.cn" name="26ad1462202d0079a17f850b734f58d3" >360网站安全检测平台</a>　站长统计<br/>
+        <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/04/000/0000/60527566/CA040000000605275660001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+</div><!------------------>
+
+
+
+</body>
+</html>

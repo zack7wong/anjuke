@@ -1,0 +1,2054 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>河北辛集中学 </title>
+<meta name="Copyright" content="河北辛集中学" />
+<meta name="Description" content="" />
+<meta name="Keywords" content="河北辛集中学,辛中" />
+<style type="text/css">
+<!--
+  .style1 {
+	border-width: 1px;
+        }
+.STYLE4 {color: #FF7166}
+.STYLE5 {color: #FFFFFF}
+.STYLE6 {color: #87C73C}
+.STYLE7 {color: #FFFFFF}
+.STYLE8 {color: #BD66FF}
+.STYLE9 {color: #FF9900}
+.STYLE11 {color: #7365FF}
+.STYLE12 {color: #FFA200}
+.STYLE13 {color: #7BCFFF}
+.STYLE14 {color: #FF65B5}
+.STYLE15 {color: #FF7163}
+
+  /* 全局样式 */
+      ul,ol,li,div{margin:0;padding:0;border:0;}
+      ul,ol{list-style-type:none;}
+   /* 导航 */
+          .mav{width:960px; height:85px; overflow:hidden;top:0; }
+	.mav_1,.mav_2,.mav_3,.mav_4{overflow:hidden; _display:inline-block; float:left; padding-top:13px;}
+	.mav_1{width:180px; margin-left:3px;display:inline;}
+	.mav_2{width:260px; background:url(/skin/e897_V2.0/bdyz_shutiao.gif) no-repeat 300px -287px;margin-left:3px;display:inline;}
+	.mav_3{width:50px; background:url(/skin/e897_V2.0/bdyz_shutiao.gif) no-repeat 45px -287px;margin-left:3px;display:inline;}
+           .mav_4{width:70px;}
+	.mav ul{height:23px;clear:both;}
+	.mav li{float:left; padding:0 6px 0 6px; margin-left:3px; text-align:center; line-height:14px; background:url(/skin/e897_V2.0/bdyz_shutiao.gif) no-repeat 0 -250px;}
+	.mav .mav_1 li{padding:0 6px 0 7px;}
+	.mav a,.mav a:visited{color:#000; text-decoration:none;}
+	.mav a:hover{text-decoration:underline;color:#CC0000;},.mav a:active{color:#c00; text-decoration:none;}
+     
+
+
+-->
+</style>
+
+<link href='/Skin/DefaultSkin.css' rel='stylesheet' type='text/css'><script language='JavaScript' type='text/JavaScript' src='/js/menu.js'></script>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- 
+    function ResumeError() {
+    return true;
+}
+window.onerror = ResumeError;
+// -->
+</SCRIPT>
+
+<script language="javascript" type="text/javascript" >
+function formSubmit(){
+		if($("#userName").attr("value") == ""){
+			alert("用户姓名不能为空，请输入！");
+		}
+		else if($("#userPwd").attr("value") == ""){
+			alert("密码不能为空，请输入！");
+		}
+		else if($("#corpaccount").attr("value") == "")
+		{
+			alert("学校编码不能为空，请输入！");
+		}
+		else if($("#corpaccount").attr("value").length<9 & $("#corpaccount").attr("value")!="10000"){
+			alert("学校编码不正确！");
+		}
+		else
+		{
+			if($("#savebox").attr("checked") == true)
+			{
+				if($("#submitForm").attr("action") == "teacher_login.htm")
+				{
+					setCookie('staffAccount',$("#userName").attr("value"));
+				}
+				else
+				{
+					setCookie('mobile',$("#userName").attr("value"));
+				}
+				setCookie($("#corpaccount").attr("name"),$("#corpaccount").attr("value"));
+			}
+			
+			$('#submitForm').submit(0);
+		}
+		
+	}
+	
+
+</script> 
+
+<script language="javascript" type="text/javascript" src="/skin/e897_V2.0/plus.js"></script> 
+<script language="javascript" type="text/javascript" src="/Skin/e897_V2.0/Pic.js"></script> <LINK href="/favicon.ico" type=image/x-icon rel=icon><LINK href="/favicon.ico" type=image/x-icon rel="shortcut icon">
+<STYLE type=text/css>
+<style type="text/css">
+<!--
+*{
+	font-size:12px;
+}
+#menu ul{
+	padding:0;
+	border:0;
+	list-style:none;
+	line-height:150%;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 15px;
+           
+}
+/*主导航菜单*/
+#menu_out{
+	width:960PX;
+	padding-left:0px;
+	margin-left:auto;
+	margin-right:auto;
+	background:url(/skin/e897_v2.0/topcaid/menu_left.gif) no-repeat left top;
+}
+#menu_in{
+	background:url(/skin/e897_v2.0/topcaid/menu_right.gif) no-repeat right top;
+	padding-right:0px;
+}
+#menu{
+	background:url(/skin/e897_v2.0/topcaid/menu_bg.gif) repeat-x;
+	height:73px;
+}
+.menu_line{
+	background:url(/skin/e897_v2.0/topcaid/menu_line.gif) no-repeat center top;
+	width:6px;
+}
+.menu_line2{
+	background:url(/skin/e897_v2.0/topcaid/menu_line2.gif) no-repeat center top;
+	width:10px;
+}
+#nav{
+	padding-left:20px;
+}
+#nav li{
+	float:left;
+	height:35px;
+}
+#nav li a{
+	float:left;
+	display:block;
+	padding-left:6px;
+	height:35px;
+	background:url(/skin/e897_v2.0/topcaid/menu_on_left.gif) no-repeat left top;
+	cursor:pointer;
+	text-decoration:none;
+}
+#nav li a span{
+	float:left;
+	padding:11px 14px 10px 10px;
+	line-height:14px;
+	background:url(/skin/e897_v2.0/topcaid/menu_on_right.gif) no-repeat right top;
+	font-size:14px;
+	font-weight:bold;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#nav li .nav_on{   /*鼠标经过时变换背景，方便JS获取样式*/
+	background-position:left 100%;
+}
+#nav li .nav_on span{  /*鼠标经过时变换背景，方便JS获取样式*/
+	background-position:right 100%;
+	color:#333333;
+	text-decoration:none;
+	padding:14px 14px 7px 10px;
+}
+/*子栏目*/
+#menu_con{
+	text-align:left;
+	padding-left:150px;
+	clear:both;
+}
+#menu_con li{
+	float:left;
+	height:22px;
+	margin-top:8px;
+}
+#menu_con li a{
+	display:block;
+	float:left;
+	background:url(/skin/e897_v2.0/topcaid/menu_on_left2.gif) no-repeat left top;
+	cursor:pointer;
+	padding-left:3px;
+}
+#menu_con li a span{
+	float:left;
+	padding:6px 10px 4px 10px;
+	line-height:12px;
+	background:url(/skin/e897_v2.0/topcaid/menu_on_right2.gif) no-repeat right top;
+}
+#menu_con li a:hover{
+	text-decoration:none;
+	background:url(/skin/e897_v2.0/topcaid/menu_on_left2.gif) no-repeat left bottom;
+}
+#menu_con li a:hover span{
+	background:url(/skin/e897_v2.0/topcaid/menu_on_right2.gif) no-repeat right bottom;
+}
+#a {
+	width: 960px;
+	font-size: 14px;
+	text-align: center;
+	color: #000000;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.STYLE1 {color: #000000}
+-->
+</STYLE>
+<!--整体表格代码开始-->
+  <table width=960 align=center bgColor=#ffffff border=0 cellSpacing=0 cellPadding=0>
+    <tr>
+      <td>
+        <table cellSpacing=0 cellPadding=0 width=960 align=center border=0>
+          <tr>
+            <td>
+              <table width="100%" align=center border=0 cellSpacing=0 cellPadding=0>
+               <tr>
+              <td  bgcolor="#FCFCFA">
+<table>
+<tr>
+<td width=700>
+<div align="left"><font color="#000000" size=2>&nbsp;&nbsp;--欢迎浏览河北辛集中学网站  <SCRIPT language=JavaScript src="../inc/todayDate.js" 
+  type=text/javascript>  </SCRIPT></font>
+</div>
+</td>
+<td  bgcolor="#FCFCFA" width=260>
+
+<div align="right">
+
+<iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=99" width="160" height="36" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>    </td></tr></table>            <tr>
+                  <td>
+                    <table width="100%" border=0 cellSpacing=0 cellPadding=0>
+                      <tr>
+                        <td width=960 background=/Skin/e897_V2.0/xinzhong.jpg>
+
+<OBJECT id=obj1 codeBase=http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0 height=200 width=960 border=0 classid=clsid:D27CDB6E-AE6D-11CF-96B8-444553540000><PARAM NAME="_cx" VALUE="4763"><PARAM NAME="_cy" VALUE="1588"><PARAM NAME="FlashVars" VALUE=""><PARAM NAME="Movie" VALUE="/Skin/e897_V2.0/top1.swf"><PARAM NAME="Src" VALUE="/Skin/e897_V2.0/top1.swf"><PARAM NAME="WMode" VALUE="Transparent"><PARAM NAME="Play" VALUE="-1"><PARAM NAME="Loop" VALUE="-1"><PARAM NAME="Quality" VALUE="High"><PARAM NAME="SAlign" VALUE=""><PARAM NAME="Menu" VALUE="-1"><PARAM NAME="Base" VALUE=""><PARAM NAME="AllowScriptAccess" VALUE=""><PARAM NAME="Scale" VALUE="ShowAll"><PARAM NAME="DeviceFont" VALUE="0"><PARAM NAME="EmbedMovie" VALUE="0"><PARAM NAME="BGColor" VALUE=""><PARAM NAME="SWRemote" VALUE=""><PARAM NAME="MovieData" VALUE=""><PARAM NAME="SeamlessTabbing" VALUE="1"><PARAM NAME="Profile" VALUE="0"><PARAM NAME="ProfileAddress" VALUE=""><PARAM NAME="ProfilePort" VALUE="0"><PARAM NAME="AllowNetworking" VALUE="all"><PARAM NAME="AllowFullScreen" VALUE="false">
+																		
+                                                                                                                                                                                                                                                                                                                                                                                                                                                						<embed src="{$InstallDirSkin/e897_V2.0/top1.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="960" height="200" quality="High" wmode="transparent"></OBJECT>
+</td>
+                                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+<script language="javascript">
+	function qiehuan(num){
+		for(var id = 0;id<=9;id++)
+		{
+			if(id==num)
+			{
+				document.getElementById("qh_con"+id).style.display="block";
+				document.getElementById("mynav"+id).className="nav_on";
+			}
+			else
+			{
+				document.getElementById("qh_con"+id).style.display="none";
+				document.getElementById("mynav"+id).className="";
+			}
+		}
+	}
+    </script> 
+<div id=menu_out>
+<div id=menu_in>
+<div id=menu>
+<UL id=nav>
+<LI><A class=nav_on id=mynav0 onmouseover=javascript:qiehuan(0) href="/"><SPAN>首页</SPAN></A></LI>
+<LI class=menu_line></LI>
+<LI><A class=nav_off id=mynav1 onmouseover=javascript:qiehuan(1) href="/jrxz/Index.asp"><SPAN>今日辛中</SPAN></A></LI>
+<LI class=menu_line></LI>
+<LI><A class=nav_off id=mynav2 onmouseover=javascript:qiehuan(2) href="/Article/ShowClass.asp?ClassID=242"><SPAN>年级管理</SPAN></A></LI>
+<LI class=menu_line></LI>
+<LI><A class=nav_off id=mynav3 onmouseover=javascript:qiehuan(3) href="/Article/ShowClass.asp?ClassID=1"><SPAN>科研之窗</SPAN></A></LI>
+<LI class=menu_line></LI>
+<LI><A class=nav_off id=mynav4 onmouseover=javascript:qiehuan(4) href="/Article/ShowClass.asp?ClassID=8"><SPAN>辛中德育</SPAN></A></LI>
+<LI class=menu_line></LI>
+<LI><A class=nav_off id=mynav5 onmouseover=javascript:qiehuan(5) href="/Article/ShowClass.asp?ClassID=14"><SPAN>教学之窗</SPAN></A></LI>
+<LI class=menu_line></LI>
+<LI><A class=nav_off id=mynav6 onmouseover=javascript:qiehuan(6) href="/Article/ShowClass.asp?ClassID=20"><SPAN>学生频道</SPAN></A></LI>
+<LI class=menu_line></LI>
+<LI><A class=nav_off id=mynav7 onmouseover=javascript:qiehuan(7) href="/Article/ShowClass.asp?ClassID=27"><SPAN>高考中考</SPAN></A></LI>
+<LI class=menu_line></LI>
+<LI><A class=nav_off id=mynav8 onmouseover=javascript:qiehuan(8) href="/Article/ShowClass.asp?ClassID=31"><SPAN>校史校友</SPAN></A></LI>
+<LI class=menu_line></LI>
+<LI><A class=nav_off id=mynav9 onmouseover=javascript:qiehuan(9) href="/Article/ShowClass.asp?ClassID=256"><SPAN>大讨论</SPAN></A></LI>
+<LI class=menu_line></LI>
+</UL>
+<div id=menu_con>
+<div id=qh_con0 style="DISPLAY: block">
+</div>
+<div id=qh_con1 style="DISPLAY: none">
+<UL>
+<LI class=menu_line2></LI>
+<LI><A href="/jrxz/ShowClass.asp?ClassID=243"><SPAN>辛中简介</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/jrxz/ShowClass.asp?ClassID=43"><SPAN>校园新闻</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/jrxz/ShowClass.asp?ClassID=41"><SPAN>校园动态</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/photo/index.asp"><SPAN>校园风光</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/jrxz/ShowClass.asp?ClassID=42"><SPAN>现任领导</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/jrxz/ShowClass.asp?ClassID=44"><SPAN>上级文件</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/jrxz/ShowClass.asp?ClassID=45"><SPAN>公告栏</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/jrxz/ShowClass.asp?ClassID=46"><SPAN>视频点播</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="mailto:xjxzxx2011@163.com"><SPAN>校长信箱</SPAN></A></LI>
+<LI class=menu_line2></LI></UL></div>
+<div id=qh_con2 style="DISPLAY: none">
+<UL>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=226"><SPAN>高一年级组</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=227"><SPAN>高二年级组</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=228"><SPAN>高三年级组</SPAN></A></LI>
+<LI class=menu_line2></LI></UL></div>
+<div id=qh_con3 style="DISPLAY: none">
+<UL>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=3"><SPAN>课题研究</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=4"><SPAN>研训消息</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=5"><SPAN>论文论著</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=6"><SPAN>辛中校刊</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=7"><SPAN>校本培训</SPAN></A></LI>
+<LI class=menu_line2></LI></UL></div>
+<div id=qh_con4 style="DISPLAY: none">
+<UL>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=259"><SPAN>通知公告</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=255"><SPAN>德育新闻</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=260"><SPAN>生命教育</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=9"><SPAN>心海导航</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=10"><SPAN>班级管理</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=11"><SPAN>学生活动</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=12"><SPAN>升旗献词</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=13"><SPAN>家长连线</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=263"><SPAN>资助政策</SPAN></A></LI>
+<LI class=menu_line2></LI></UL></div>
+<div id=qh_con5 style="DISPLAY: none">
+<UL>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=233"><SPAN>教学动态</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=231"><SPAN>教研活动</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=16"><SPAN>教务管理</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=17"><SPAN>教学资源</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=15"><SPAN>教师风采</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=18"><SPAN>学法指导</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=19"><SPAN>课改专栏</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=253"><SPAN>《王者风》</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="http://hbxjzx.shengyaceping.com"><SPAN>生涯测评</SPAN></A></LI>
+<LI class=menu_line2></LI></UL></div>
+<div id=qh_con6 style="DISPLAY: none">
+<UL>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=21"><SPAN>学星风采</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=22"><SPAN>绿地文学社</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=23"><SPAN>校园生活</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=232"><SPAN>团委</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=24"><SPAN>学生会</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=26"><SPAN>中华美德教育</SPAN></A></LI>
+<LI class=menu_line2></LI></UL></div>
+<div id=qh_con7 style="DISPLAY: none">
+<UL>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=28"><SPAN>高考辉煌</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=29"><SPAN>高考资源</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=30"><SPAN>高考动态</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=261"><SPAN>中考招生</SPAN></A></LI>
+<LI class=menu_line2></LI></UL></div>
+<div id=qh_con8 style="DISPLAY: none">
+<UL>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=32"><SPAN>辛中校史</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=33"><SPAN>老照片</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=34"><SPAN>校友风采</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=35"><SPAN>校友会</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=36"><SPAN>博士长廊</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=37"><SPAN>同窗忆旧</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=38"><SPAN>校庆专栏</SPAN></A></LI>
+<LI class=menu_line2></LI></UL></div>
+<div id=qh_con9 style="DISPLAY: none">
+<UL>
+<LI class=menu_line2></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=258"><SPAN>群众路线专栏</SPAN></A></LI>
+<LI class=menu_line2></LI>
+<LI><A href="mailto:xzbgs@sohu.com"><SPAN>辛中之声信箱</SPAN></A></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=262"><SPAN>大讨论专栏</SPAN></A></LI>
+
+</UL></div></div></div></div></div></td>
+          </tr>
+<tr>
+            <td height=10>
+            <!--间隔代码开始-->
+              <table width="100%" border=0>
+                <tr>
+                  <td height=1></td>
+                </tr>
+              </table>
+              <!--间隔代码结束-->
+              <!-- 网页950广告代码位置开始 -->
+              <table style="BORDER-COLLAPSE: collapse" borderColor=#e7e7e7 cellSpacing=0 cellPadding=0 width=960 align=center border=1>
+                <tr>
+                  <td vAlign=top height=10>
+                  <!--左1内容控制代码-->
+                    <table cellSpacing=0 cellPadding=0 width="100%">
+                      <tr bgColor=#ffffff>
+                        <td height=20>
+                        <!--内容显示代码-->
+                       <img src="/skin/e897_v2.0/sanjingxinzhong.gif" width="960" height="100" border="0"  ></td>
+                      </tr>
+                    </table>
+                  <!--左1内容控制结束--></td>
+                </tr>
+              </table>
+              <!-- 网页950广告代码结束 -->
+              <!--间隔代码开始-->
+              <table width="100%" border=0>
+                <tr>
+                  <td height=1></td>
+                </tr>
+              </table>
+              <!--间隔代码结束-->
+              
+
+</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</head>
+
+<body>
+  <table border=0 width=960 align=center height=333>
+    <tr>
+      <td bgColor=#ffffff height=59>
+      <!--第一大表格代码开始-->
+        <table border=0 width=950 align=center>
+          <tr>
+            <td height=235 vAlign=top width=200>
+            <!--用户登录表格显示边框代码开始-->
+              <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=200>
+                <tr>
+                  <td height=82>
+                  <!--用户登录内容控制代码-->
+                    <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                      <tr>
+                        <td>
+                          <table cellSpacing=0 cellPadding=0 width="100%">
+                            <tr>
+                              <td style="BACKGROUND-IMAGE: url(/Skin/e897_v2.0/7025_bg2.gif)" height=25 width="38%"><IMG border=0 align=absMiddle src="/Skin/e897_v2.0/left_title2.gif" width=15 height=9><FONT color=#ffffff>用户登录</FONT></td>
+                              <td bgColor=#cccccc height=25 width="62%"></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align=middle>
+                        <!--用户登录显示代码--><IFRAME id=UserLogin height=102 src="/UserLogin.asp?ShowType=1" frameBorder=0 width=190 scrolling=no></IFRAME></td>
+                      </tr>
+                    </table>
+                  <!--用户登录内容控制结束--></td>
+                </tr>
+              </table>
+              <!--用户登录表格显示边框代码结束-->
+              <!--间隔代码开始-->
+              <table border=0 width="100%">
+                <tr>
+                  <td height=1></td>
+                </tr>
+              </table>
+              <!--间隔代码结束-->
+              <!--网站公告表格显示边框代码开始-->
+              <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=200>
+                <tr>
+                  <td height=135 vAlign=top>
+                  <!--网站公告内容控制代码-->
+                    <table cellSpacing=0 cellPadding=0 width="100%">
+                      <tr>
+                        <td style="BACKGROUND-IMAGE: url(/Skin/e897_v2.0/7025_bg2.gif)" height=25 width="38%"><IMG border=0 align=absMiddle src="/Skin/e897_v2.0/left_title2.gif" width=15 height=9><FONT color=#ffffff>网站公告</FONT></td>
+                        <td bgColor=#cccccc height=25 width="62%"></td>
+                      </tr>
+                      <tr>
+                        <td colSpan=2>
+                        <!--控制公告表格代码开始-->
+                          <table border=0 width="90%" align=center>
+                            <tr>
+                              <td>
+                              <!--网站公告显示代码-->
+<MARQUEE id=scrollarea onmouseover=this.stop(); onmouseout=this.start(); direction=up height=212 width=174 scrollAmount=2 scrollDelay=160>
+                              &nbsp;<a class="" href="/jrxz/ShowArticle.asp?ArticleID=5862" title="文章标题：河北辛集中学周工作安排(2018年5月28日至6月3日)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2018-5-27 20:46:11" target="_blank">河北辛集中学周工作安排(2018年5月28日至6月…</a>&nbsp;(2018-05-27)<br />&nbsp;<a class="" href="/jrxz/ShowArticle.asp?ArticleID=5861" title="文章标题：河北辛集中学周工作安排(2018年5月21日至27日)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2018-5-20 21:28:40" target="_blank">河北辛集中学周工作安排(2018年5月21日至27…</a>&nbsp;(2018-05-20)<br />&nbsp;<a class="" href="/jrxz/ShowArticle.asp?ArticleID=5854" title="文章标题：河北辛集中学周工作安排(2018年5月14日至20日)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2018-5-13 21:24:21" target="_blank">河北辛集中学周工作安排(2018年5月14日至20…</a>&nbsp;(2018-05-13)<br />&nbsp;<a class="" href="/jrxz/ShowArticle.asp?ArticleID=5834" title="文章标题：河北辛集中学周工作安排(2018年5月2日至6日)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2018-5-1 20:59:52" target="_blank">河北辛集中学周工作安排(2018年5月2日至6日…</a>&nbsp;(2018-05-01)<br />&nbsp;<a class="" href="/jrxz/ShowArticle.asp?ArticleID=5825" title="文章标题：河北辛集中学周工作安排(2018年4月23日至29日)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2018-4-22 21:57:45" target="_blank">河北辛集中学周工作安排(2018年4月23日至29…</a>&nbsp;(2018-04-22)<br />&nbsp;<a class="" href="/jrxz/ShowArticle.asp?ArticleID=5813" title="文章标题：河北辛集中学周工作安排(2018年4月16日至22日)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2018-4-15 20:36:30" target="_blank">河北辛集中学周工作安排(2018年4月16日至22…</a>&nbsp;(2018-04-15)<br />&nbsp;<a class="" href="/jrxz/ShowArticle.asp?ArticleID=5803" title="文章标题：河北辛集中学周工作安排(2018年4月9日至15日)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2018-4-8 21:51:03" target="_blank">河北辛集中学周工作安排(2018年4月9日至15日…</a>&nbsp;(2018-04-08)<br />&nbsp;<a class="" href="/jrxz/ShowArticle.asp?ArticleID=5794" title="文章标题：河北辛集中学周工作安排(2018年4月2日至8日)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2018-4-2 8:34:43" target="_blank">河北辛集中学周工作安排(2018年4月2日至8日…</a>&nbsp;(2018-04-02)<br />&nbsp;<a class="" href="/jrxz/ShowArticle.asp?ArticleID=5792" title="文章标题：河北辛集中学2017-2018学年度收费标准
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2018-3-28 11:16:17" target="_blank">河北辛集中学2017-2018学年度收费标准</a>&nbsp;(2018-03-28)<br /></MARQUEE></td>
+                            </tr>
+                          </table>
+                        <!--控制公告表格代码结束--></td>
+                      </tr>
+                    </table>
+                  <!--网站公告内容控制结束--></td>
+                </tr>
+              </table>
+              <!--网站公告表格显示边框代码结束-->
+              <!--间隔代码开始-->
+              <table border=0 width="100%">
+                <tr>
+                  <td height=1></td>
+                </tr>
+              </table>
+            <!--间隔代码结束--></td>
+            <td width=360>
+            <!--右部表格显示边框代码开始-->
+              <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=390 height=355>
+                <tr>
+                  <td height=246 vAlign=top>
+                  <!--内容控制代码-->
+                    <table border=0 width="100%" height=149>
+                      <tr>
+                        <td>
+                          <table bgColor=#0099ff>
+                            <tr>
+                              <td bgColor=#0099ff height=23 width=105><IMG src="/Skin/e897_v2.0/xd_01.gif" width=20 height=5><SPAN class=STYLE5> 最 新 文 章</SPAN></td>
+                              <td bgColor=#a6caff width=297 align=right><A href="/Article/index.asp"><IMG border=0 alt=更多 src="/Skin/e897_v2.0/more.gif" width=36 height=10></A> </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height=80 colSpan=3>
+                        <!--最新文章显示代码-->
+                        <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/jrxz/images/Article_ontop.gif" alt="固顶文章"></td><td class=""><a class="" href="/jrxz/ShowArticle.asp?ArticleID=5806" title="文章标题：关于为筹建辛中校史馆征集校史资料的公告
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2018-4-11 9:26:28" target="_blank">关于为筹建辛中校史馆征集校史资料的公告</a></td><td align="right" class="" width="40">04-11</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5623" title="文章标题：热烈祝贺我校运动员郭子琦在第十三届运动会夺得金牌
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教育处
+更新时间：2017-9-7 9:56:14" target="_blank">热烈祝贺我校运动员郭子琦在第十三届运动会夺得金牌</a></td><td align="right" class="" width="40">09-07</td></tr><tr><td width="10" valign="top" class=""><img src="/jrxz/images/Article_ontop.gif" alt="固顶文章"></td><td class=""><a class="" href="/jrxz/ShowArticle.asp?ArticleID=5619" title="文章标题：喜讯：我校被授予“河北省教育系统先进集体”
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2017-9-5 9:20:48" target="_blank">喜讯：我校被授予“河北省教育系统先进集体”</a></td><td align="right" class="" width="40">09-05</td></tr><tr><td width="10" valign="top" class=""><img src="/jrxz/images/Article_ontop.gif" alt="固顶文章"></td><td class=""><a class="" href="/jrxz/ShowArticle.asp?ArticleID=5526" title="文章标题：省委常委、市委书记邢国辉莅临我校视察指导工作
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2017-5-23 21:34:07" target="_blank">省委常委、市委书记邢国辉莅临我校视察指导工作</a></td><td align="right" class="" width="40">05-23</td></tr><tr><td width="10" valign="top" class=""><img src="/jrxz/images/Article_ontop.gif" alt="固顶文章"></td><td class=""><a class="" href="/jrxz/ShowArticle.asp?ArticleID=4815" title="文章标题：敬请关注我校微信公众号
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2015-9-29 10:10:55" target="_blank">敬请关注我校微信公众号</a></td><td align="right" class="" width="40">09-29</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5863" title="文章标题：崇尚英雄&nbsp;精忠报国——我校组织举行爱国教育班会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教育处
+更新时间：2018-5-27 22:45:54" target="_blank">崇尚英雄&nbsp;精忠报国——我校组织举行爱国教育班会</a></td><td align="right" class="" width="40">05-27</td></tr><tr><td width="10" valign="top" class=""><img src="/jrxz/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/jrxz/ShowArticle.asp?ArticleID=5862" title="文章标题：河北辛集中学周工作安排(2018年5月28日至6月3日)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2018-5-27 20:46:11" target="_blank">河北辛集中学周工作安排(2018年5月28日至6月3日)</a></td><td align="right" class="" width="40">05-27</td></tr><tr><td width="10" valign="top" class=""><img src="/jrxz/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/jrxz/ShowArticle.asp?ArticleID=5861" title="文章标题：河北辛集中学周工作安排(2018年5月21日至27日)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2018-5-20 21:28:40" target="_blank">河北辛集中学周工作安排(2018年5月21日至27日)</a></td><td align="right" class="" width="40">05-20</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5860" title="文章标题：我校孙剑波副校长参加江苏省校友会成立大会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-5-18 16:03:45" target="_blank">我校孙剑波副校长参加江苏省校友会成立大会</a></td><td align="right" class="" width="40">05-18</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5859" title="文章标题：我校召开新一届家长委员会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教育处
+更新时间：2018-5-15 9:37:19" target="_blank">我校召开新一届家长委员会</a></td><td align="right" class="" width="40">05-15</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5858" title="文章标题：河北辛集中学高一高二学生祝福高三学长学姐高考顺利
+作&nbsp;&nbsp;&nbsp;&nbsp;者：团委
+更新时间：2018-5-14 20:13:48" target="_blank">河北辛集中学高一高二学生祝福高三学长学姐高考顺利</a></td><td align="right" class="" width="40">05-14</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5857" title="文章标题：河北辛集中学“幸福传递”志愿服务队荣获“河北省教育系统优秀志愿服务组织”称号
+作&nbsp;&nbsp;&nbsp;&nbsp;者：团委
+更新时间：2018-5-14 20:10:06" target="_blank">河北辛集中学“幸福传递”志愿服务队荣获“河北省教育系</a></td><td align="right" class="" width="40">05-14</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5856" title="文章标题：家校互通&nbsp;共赢人生——高二年级B级部召开家长会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：高二年级组
+更新时间：2018-5-13 21:54:52" target="_blank">家校互通&nbsp;共赢人生——高二年级B级部召开家长会</a></td><td align="right" class="" width="40">05-13</td></tr><tr><td width="10" valign="top" class=""><img src="/jrxz/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/jrxz/ShowArticle.asp?ArticleID=5854" title="文章标题：河北辛集中学周工作安排(2018年5月14日至20日)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：办公室
+更新时间：2018-5-13 21:24:21" target="_blank">河北辛集中学周工作安排(2018年5月14日至20日)</a></td><td align="right" class="" width="40">05-13</td></tr><tr></tr></table></td>
+                      </tr>
+                    </table>
+                  <!--内容控制结束--></td>
+                </tr>
+              </table>
+              <!--右部表格显示边框代码结束-->
+              <!--中部表格显示边框代码开始-->
+            <!--中部表格显示边框代码结束--></td>
+            <td vAlign=top width=390>
+            <!--全站搜索代码开始-->
+              <table border=0 cellSpacing=0 cellPadding=0 width=350 align=center height=22>
+<FORM method=post name=search action=search.asp>
+                <tr>
+                  <td width=71 align=middle><IMG border=0 alt=全站搜索 src="/Skin/e897_v2.0/search.gif" width=67 height=20></td>
+                  <td width=176 align=middle>
+                    <Input style="BORDER-BOTTOM: #b3b3b3 1px solid; BORDER-LEFT: #b3b3b3 1px solid; WIDTH: 135px; HEIGHT: 20px; FONT-SIZE: 12px; BORDER-TOP: #b3b3b3 1px solid; BORDER-RIGHT: #b3b3b3 1px solid" id=Keyword name=Keyword></td>
+                  <td width=97 align=middle>
+<script language=javascript>
+                      function change_Search()
+                     {
+                      select_item=search.Channel.selectedIndex;
+                      field=""
+                      switch(select_item)
+                       {
+                       case 1:
+                       document.search.action="Article/search.asp";
+                       document.search.value="ArticleName";
+                       break;
+                       case 2:
+                       document.search.action="Photo/search.asp";
+                       document.search.value="PhotoName";
+                       break;
+                       case 3:
+                       document.search.action="Soft/search.asp";
+                       document.search.value="SoftName"; 
+                       break;
+                       case 4:
+                       document.search.action="Shop/search.asp";
+                       document.search.value="ShopName";
+                       break;
+                        }
+                       }
+                      </script> 
+<Select style="BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; BACKGROUND-COLOR: white; WIDTH: 86px; HEIGHT: 20px; FONT-SIZE: 12px; BORDER-TOP: 1px solid; BORDER-RIGHT: 1px solid" onchange=change_Search() name=Channel> 
+  <Option selected>- 请选择 -</Option> 
+  <Option value=ArticleName>文章中心</Option> 
+  <Option value=PhotoName>图片中心</Option> 
+  <Option value=SoftName>下载中心</Option>
+                  </Select> </td>
+                  <td vAlign=center width=46 align=middle>
+  <Input id=Field value=Title type=hidden name=Field> 
+                    <Input style="BORDER-BOTTOM: 0px solid; BORDER-LEFT: 0px solid; BORDER-TOP: 0px solid; BORDER-RIGHT: 0px solid" border=0 align=absMiddle src="/Skin/e897_v2.0/searchgo.gif" width=40 height=18 type=image name=imageField></td>
+                </tr>
+</FORM>
+              </table>
+              <!--全站搜索代码结束-->
+              <!--显示FLASH内容控制代码-->
+              <table border=0 width="100%" height=104>
+                <tr>
+                  <td width="100%">
+                  <!--显示FLASH代码--><!-- flash section -->
+<script language="javascript" type="text/javascript" src="/flash/flash.js"></script>
+<script language="javascript" type="text/javascript">
+var images="";
+var links="";
+var texts="";
+
+images=images+"|"+"/jrxz/UploadFiles/201710/2017101523390991.jpg";
+links=links+"|"+"/jrxz/ShowArticle.asp?ArticleID=5661";
+texts=texts+"|"+"我校举行“河北辛集中学2017级新华珍珠班开班典礼”"
+images=images+"|"+"/Article/UploadFiles/201709/2017090711042236.jpg";
+links=links+"|"+"/Article/ShowArticle.asp?ArticleID=5623";
+texts=texts+"|"+"热烈祝贺我校运动员郭子琦在第十三届运动会夺得金牌"
+images=images+"|"+"/Article/UploadFiles/201507/2015070211014976.jpg";
+links=links+"|"+"/Article/ShowArticle.asp?ArticleID=4718";
+texts=texts+"|"+"2017级高一新生宿舍床上用品图示"
+images=images+"|"+"/Article/UploadFiles/201608/2016082311195228.jpg";
+links=links+"|"+"/Article/ShowArticle.asp?ArticleID=5222";
+texts=texts+"|"+"以心迎新&nbsp;共赴征程——2016级高一新生迎新工作顺利完成"
+images=images+"|"+"/Article/UploadFiles/201608/2016081806360269.jpg";
+links=links+"|"+"/Article/ShowArticle.asp?ArticleID=5219";
+texts=texts+"|"+"勇往直前&nbsp;放飞梦想&nbsp;——雁行中国暑期公益宣讲团来我校…"
+images=images+"|"+"/jrxz/UploadFiles/201608/2016081117483525.jpg";
+links=links+"|"+"/jrxz/ShowArticle.asp?ArticleID=5216";
+texts=texts+"|"+"感恩的心&nbsp;感谢有你——我校珍珠生夏令营结营"
+images=images.substring(1, images.length );
+links=links.substring(1, links.length );
+texts=texts.substring(1, texts.length );
+var focus_width=353 //宽度
+var focus_height=220 //高度，focus_height text_height 相加之和最好是偶数,否则数字会出现模糊失真的问题
+var text_height=26 //标题高度
+cindx.home.flashNews("/flash/xman.swf", focus_width, focus_height, images, links, texts, text_height);
+</script>
+<!-- flash section --></td>
+                </tr>
+              </table>
+              <!--显示FLASH内容控制结束-->
+              <!--间隔代码开始-->
+              <table border=0 width="100%">
+                <tr>
+                  <td height=1></td>
+                </tr>
+              </table>
+              <!--间隔代码结束-->
+              <!--广告代码开始-->
+              <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=350>
+                <tr>
+                  <td height=60>
+<div align=center>
+<OBJECT codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" classid=clsid:D27CDB6E-AE6D-11cf-96B8-444553540000 width=355 height=94><PARAM NAME="_cx" VALUE="9392"><PARAM NAME="_cy" VALUE="2487"><PARAM NAME="FlashVars" VALUE=""><PARAM NAME="Movie" VALUE="/Skin/e897_V2.0/xiaoxun.swf"><PARAM NAME="Src" VALUE="/Skin/e897_V2.0/xiaoxun.swf"><PARAM NAME="WMode" VALUE="Transparent"><PARAM NAME="Play" VALUE="-1"><PARAM NAME="Loop" VALUE="-1"><PARAM NAME="Quality" VALUE="High"><PARAM NAME="SAlign" VALUE=""><PARAM NAME="Menu" VALUE="-1"><PARAM NAME="Base" VALUE=""><PARAM NAME="AllowScriptAccess" VALUE="always"><PARAM NAME="Scale" VALUE="ShowAll"><PARAM NAME="DeviceFont" VALUE="0"><PARAM NAME="EmbedMovie" VALUE="0"><PARAM NAME="BGColor" VALUE=""><PARAM NAME="SWRemote" VALUE=""><PARAM NAME="MovieData" VALUE=""><PARAM NAME="SeamlessTabbing" VALUE="1"><PARAM NAME="Profile" VALUE="0"><PARAM NAME="ProfileAddress" VALUE=""><PARAM NAME="ProfilePort" VALUE="0"><PARAM NAME="AllowNetworking" VALUE="all"><PARAM NAME="AllowFullScreen" VALUE="false"><PARAM NAME="AllowFullScreenInteractive" VALUE="false"><PARAM NAME="IsDependent" VALUE="0">
+      <embed src="/Skin/e897_V2.0/xiaoxun.swf" quality="high" 
+pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" 
+width="355" height="94"></embed>
+                                 </OBJECT>
+</div>
+                  </td>
+                </tr>
+              </table>
+            <!--广告代码结束--></td>
+          </tr>
+        </table>
+      <!--第一大表格代码结束--></td>
+    </tr>
+  </table>
+  <table border=0 width=960 align=center height=1>
+    <tr>
+      <td>
+      <script language="javascript" src="/AD/201008/1.js"></script> </td>
+    </tr>
+  </table>
+  <table border=0 width=960 align=center height=1>
+    <tr>
+<div class=mav>
+<div class=mav_2>
+<UL>
+<LI><A href="/jrxz/"><B>办公室</B></A></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=14"><B>教务处</B></A></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=8"><B>教育处</B></A></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=226"><B>高一年级组</B></A></LI></UL>
+<UL>
+<LI><A href="/Article/ShowClass.asp?ClassID=1"><B>研训处</B></A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=60"><B>电教室</B></A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=61"><B>图书馆</B></A></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=227"><B>高二年级组</B></A></LI></UL>
+<UL>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=53"><B>总务处</B></A></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=232"><B>团　委</B></A></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=24"><B>学生会</B></A></LI>
+<LI><A href="/Article/ShowClass.asp?ClassID=228"><B>高三年级组</B></A></LI></UL>
+</div>
+<div class=mav_1>
+<UL>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=62"><B>数学</B></A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=63">高一</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=64">高二</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=65">高三</A></LI></UL>
+<UL>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=66"><B>语文</B></A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=67">高一</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=68">高二</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=69">高三</A></LI></UL>
+<UL>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=70"><B>英语</B></A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=71">高一</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=72">高二</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=73">高三</A></LI></UL>
+</div>
+<div class=mav_1>
+<UL>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=74"><B>物理</B></A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=75">高一</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=76">高二</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=77">高三</A></LI></UL>
+<UL>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=78"><B>化学</B></A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=79">高一</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=80">高二</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=81">高三</A></LI></UL>
+<UL>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=82"><B>生物</B></A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=83">高一</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=84">高二</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=85">高三</A></LI></UL>
+</div>
+<div class=mav_1>
+<UL>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=86"><B>历史</B></A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=87">高一</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=88">高二</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=89">高三</A></LI></UL>
+<UL>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=90"><B>地理</B></A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=91">高一</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=92">高二</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=93">高三</A></LI></UL>
+<UL>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=94"><B>政治</B></A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=95">高一</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=96">高二</A></LI>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=97">高三</A></LI></UL>
+</div>
+<div class=mav_3>
+<UL>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=52"><B>音乐</B></A></LI></UL>
+<UL>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=244"><B>美术</B></A></LI></UL>
+<UL>
+<LI><A href="/xxdh/ShowClass.asp?ClassID=245"><B>心理</B></A></LI></UL>
+</div>
+<div class=mav_4>
+<UL>
+<LI><A href="http://ssvideo.chaoxing.com"><B>超星视频</B></A></LI></UL>
+<UL>
+<LI><A href="http://www.blyun.com"><B>文献检索</B></A></LI></UL>
+<UL>
+<LI><A href="http://www.sslibrary.com"><B>电子图书</B></A></LI></UL>
+</div>
+</div>
+  </td>
+</tr>
+</table>
+<!--第三大表格代码开始-->
+<!--表格代码开始-->
+<table border=0 width=950 align=center>
+  <tr>
+    <td height=100 vAlign=top width=180>
+    <!--左1表格显示边框代码开始-->
+      <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=200>
+        <tr>
+          <td height=278 vAlign=top>
+          <!--左1内容控制代码-->
+            <table cellSpacing=0 cellPadding=0 width="100%">
+              <tr bgColor=#ffa007>
+                <td style="BACKGROUND-IMAGE: url(/Skin/e897_v2.0/7025_bg2.gif)" height=25 width="38%"><IMG border=0 align=absMiddle src="/Skin/e897_v2.0/left_title2.gif" width=15 height=9><FONT color=#ffffff>校讯通</FONT></td>
+                <td bgColor=#cccccc height=25 width="62%"></td>
+              </tr>
+              <tr>
+                <td height=2></td>
+              </tr>
+              <tr>
+                <td height="100%" colSpan=2>
+                <!--***********************************************-->
+<div id=techSignIn class=login>
+                  <table style="MARGIN: 0px auto" border=0 cellSpacing=0 align=center>
+<FORM id=submitForm method=post action=http://www.hebxxt.com/hdxxt/teacher_login.htm>
+                    <tr vAlign=center center?>
+                      <td style="BORDER-BOTTOM: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid" bgColor=#ededed height=5 colSpan=2>教师登录:&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                    </tr>
+                    <tr vAlign=center align=middle bgColor=#ccff33>
+                      <td width=73 align=right>学校代码： </td>
+                      <td width=118>
+                        <Input id=corpaccount value=XXT914104 name=corpAccount default="XXT914104" readonlr="true"></td>
+                    </tr>
+                    <tr vAlign=center align=middle bgColor=#ccff33>
+                      <td align=right>用户名：</td>
+                      <td>
+                        <Input id=userName name=staffAccount></td>
+                    </tr>
+                    <tr vAlign=center align=middle bgColor=#ccff33>
+                      <td align=right>登录密码：</td>
+                      <td align=left>
+                        <Input id=userPwd type=password name=staffPwd></td>
+                    </tr>
+                    <tr vAlign=center align=middle bgColor=#ffcc99>
+                      <td colSpan=2 align=middle>
+                        <Input id=Login value=" 登 录 " type=submit name=Login> </td>
+                    </tr>
+</FORM>
+                  </table>
+</div>
+<div id=techSignIn class=login>
+                  <table style="MARGIN: 0px auto" border=0 cellSpacing=0 align=center>
+<FORM id=submitForm method=post action=http://www.hebxxt.com/hdxxt/pupil_login.htm>
+                    <tr vAlign=center center?>
+                      <td style="BORDER-BOTTOM: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid" bgColor=#ededed height=5 colSpan=2>家长及学生登录:&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                    </tr>
+                    <tr vAlign=center align=middle bgColor=#ccaa33>
+                      <td width=73 align=right>学校代码： </td>
+                      <td width=118>
+                        <Input id=corpaccount value=XXT914104 name=corpAccount default="XXT914104" readonlr="true"></td>
+                    </tr>
+                    <tr vAlign=center align=middle bgColor=#ccaa33>
+                      <td align=right>用户名：</td>
+                      <td>
+                        <Input id=userName name=mobile></td>
+                    </tr>
+                    <tr vAlign=center align=middle bgColor=#ccaa33>
+                      <td align=right>登录密码：</td>
+                      <td align=left>
+                        <Input id=userPwd type=password name=Pwd></td>
+                    </tr>
+                    <tr vAlign=center align=middle bgColor=#ffcc99>
+                      <td colSpan=2 align=middle>
+                        <Input id=Login value=" 登 录 " type=submit name=Login> </td>
+                    </tr>
+</FORM>
+                  </table>
+</div>
+                <!--***********************************************--></td>
+              </tr>
+              <tr>
+                <td height=2></td>
+              </tr>
+            </table>
+          <!--左1内容控制结束--></td>
+        </tr>
+      </table>
+    <!--左1表格显示边框代码结束--></td>
+    <td vAlign=top width=360>
+    <!--中部表格显示边框代码开始-->
+      <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=360 height=200>
+        <tr>
+          <td height=260 vAlign=top>
+          <!--内容控制代码-->
+            <table border=0 width="100%" height=183>
+              <tr>
+                <td>
+                  <table bgColor=#0099ff>
+                    <tr>
+                      <td bgColor=#0099ff height=21 width=110><IMG src="/Skin/e897_v2.0/xd_04.gif" width=20 height=5><SPAN class=STYLE5> 教 学 之 窗</SPAN></td>
+                      <td bgColor=#a6caff width=297 align=right><A href="/Article/ShowClass.asp?ClassID=14"><IMG border=0 alt=更多 src="/Skin/e897_v2.0/more.gif" width=36 height=10></A> </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td height=100 colSpan=3>
+                <!--显示内容代码-->
+                  <table id=table1 border=0 cellSpacing=0 cellPadding=0 width="100%">
+                    <tr>
+                      <td height=29>
+                      <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5810" title="文章标题：我校召开全体教师大会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2018-4-13 21:07:06" target="_blank">我校召开全体教师大会</a></td><td align="right" class="" width="40">04-13</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5791" title="文章标题：弘扬敬业爱生精神&nbsp;加强师德师风建设
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2018-3-26 21:59:31" target="_blank">弘扬敬业爱生精神&nbsp;加强师德师风建设</a></td><td align="right" class="" width="40">03-26</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5773" title="文章标题：我校召开全体教职工大会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2018-3-3 21:34:40" target="_blank">我校召开全体教职工大会</a></td><td align="right" class="" width="40">03-03</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5724" title="文章标题：我校举行期中教学工作总结大会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2017-12-13 21:48:18" target="_blank">我校举行期中教学工作总结大会</a></td><td align="right" class="" width="40">12-13</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5444" title="文章标题：我校举行西北工业大学优秀生源基地授牌仪式
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2017-3-29 18:16:12" target="_blank">我校举行西北工业大学优秀生源基地授牌仪式</a></td><td align="right" class="" width="40">03-29</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5284" title="文章标题：德润辛中&nbsp;爱浴中华——我校举行师德演讲比赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2016-9-28 13:19:56" target="_blank">德润辛中&nbsp;爱浴中华——我校举行师德演讲比赛</a></td><td align="right" class="" width="40">09-28</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5252" title="文章标题：我校召开青年教师座谈会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2016-9-13 22:45:55" target="_blank">我校召开青年教师座谈会</a></td><td align="right" class="" width="40">09-13</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5251" title="文章标题：我校召开庆祝第32个教师节暨优秀教师表彰大会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2016-9-13 12:56:20" target="_blank">我校召开庆祝第32个教师节暨优秀教师表彰大会</a></td><td align="right" class="" width="40">09-13</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5207" title="文章标题：2016年度空军飞行学员录取通知书颁发仪式
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2016-7-12 14:35:52" target="_blank">2016年度空军飞行学员录取通知书颁发仪式</a></td><td align="right" class="" width="40">07-12</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5116" title="文章标题：我校进行期中教学常规总结大会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2016-5-13 12:16:04" target="_blank">我校进行期中教学常规总结大会</a></td><td align="right" class="" width="40">05-13</td></tr><tr></tr></table></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          <!--内容控制结束--></td>
+        </tr>
+      </table>
+    <!--中部表格显示边框代码结束--></td>
+    <td width=396>
+    <!--右部表格显示边框代码开始-->
+      <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=390 height=260>
+        <tr>
+          <td height=246 vAlign=top>
+          <!--内容控制代码-->
+            <table border=0 width="100%" height=151>
+              <tr>
+                <td>
+                  <table bgColor=#0099ff>
+                    <tr>
+                      <td bgColor=#0099ff height=21 width=110><IMG src="/Skin/e897_v2.0/xd_03.gif" width=20 height=5><SPAN class=STYLE5>&nbsp;生&nbsp;命&nbsp;教 育</SPAN></td>
+                      <td bgColor=#a6caff width=297 align=right><A href="/Article/ShowClass.asp?ClassID=8"><IMG border=0 alt=更多 src="/Skin/e897_v2.0/more.gif" width=36 height=10></A> </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td height=100 colSpan=3>
+                <!--显示内容代码-->
+                  <table id=table1 border=0 cellSpacing=0 cellPadding=0 width="100%">
+                    <tr>
+                      <td height=29>
+                      <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5845" title="文章标题：我校班级篮球对抗赛圆满结束
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教育处
+更新时间：2018-5-9 22:34:12" target="_blank">我校班级篮球对抗赛圆满结束</a></td><td align="right" class="" width="40">05-09</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5826" title="文章标题：传统文化进校园——我校举行“神州神笔”文化讲座
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教育处
+更新时间：2018-4-23 12:21:31" target="_blank">传统文化进校园——我校举行“神州神笔”文化讲座</a></td><td align="right" class="" width="40">04-23</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5823" title="文章标题：第二十二届体育节系列报道之学生踢毽子比赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教育处
+更新时间：2018-4-19 20:57:39" target="_blank">第二十二届体育节系列报道之学生踢毽子比赛</a></td><td align="right" class="" width="40">04-19</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5822" title="文章标题：第二十二届体育节系列报道之高二拔河比赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教育处
+更新时间：2018-4-19 20:57:39" target="_blank">第二十二届体育节系列报道之高二拔河比赛</a></td><td align="right" class="" width="40">04-19</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5821" title="文章标题：第二十二届体育节系列报道之教师投球入筐比赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教育处
+更新时间：2018-4-18 21:55:47" target="_blank">第二十二届体育节系列报道之教师投球入筐比赛</a></td><td align="right" class="" width="40">04-18</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5820" title="文章标题：第二十二届体育节系列报道之教师托球接力比赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教育处
+更新时间：2018-4-18 21:55:47" target="_blank">第二十二届体育节系列报道之教师托球接力比赛</a></td><td align="right" class="" width="40">04-18</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5816" title="文章标题：第二十二届体育节系列报道之高一往返运球接力比赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教育处
+更新时间：2018-4-17 21:31:53" target="_blank">第二十二届体育节系列报道之高一往返运球接力比赛</a></td><td align="right" class="" width="40">04-17</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5812" title="文章标题：第二十二届体育节系列报道之高一拔河比赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教育处
+更新时间：2018-4-15 11:52:19" target="_blank">第二十二届体育节系列报道之高一拔河比赛</a></td><td align="right" class="" width="40">04-15</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5807" title="文章标题：第二十二届体育节系列报道之高二往返运球接力比赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教育处
+更新时间：2018-4-11 11:57:41" target="_blank">第二十二届体育节系列报道之高二往返运球接力比赛</a></td><td align="right" class="" width="40">04-11</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common7.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5805" title="文章标题：第二十二届体育节系列报道之教师投篮比赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教育处
+更新时间：2018-4-11 8:10:08" target="_blank">第二十二届体育节系列报道之教师投篮比赛</a></td><td align="right" class="" width="40">04-11</td></tr><tr></tr></table></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          <!--内容控制结束--></td>
+        </tr>
+      </table>
+    <!--右部表格显示边框代码结束--></td>
+  </tr>
+</table>
+</td>
+</tr>
+</table>
+<!--第三大表格代码结束-->
+<!--视觉欣赏显示边框大表格代码开始-->
+<table border=0 width=970 align=center height=172>
+  <tr>
+    <td bgColor=#ffffff height=59>
+    <!--第一大表格代码开始-->
+    <!--间隔代码开始-->
+      <table border=0 width="100%">
+      </table>
+      <!--间隔代码结束-->
+      <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=958 align=center>
+        <tr>
+          <td height=80>
+          <!--视觉欣赏表格代码开始-->
+            <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+              <tr>
+                <td>
+                  <table bgColor=#0099ff>
+                    <tr>
+                      <td bgColor=#0099ff height=23 width=105><IMG src="/Skin/e897_v2.0/xd_01.gif" width=20 height=5><SPAN class=STYLE5> 校 园 风 光</SPAN></td>
+                      <td bgColor=#a6caff width=853 align=right><A href="/photo/index.asp"><IMG border=0 alt=更多 src="/Skin/e897_v2.0/more.gif" width=36 height=10></A> </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgColor=#d4deeb height=2 width="100%"></td>
+              </tr>
+              <tr>
+                <td height=80 colSpan=2><div id=demo style="OVERFLOW: hidden; WIDTH: 948px; HEIGHT: 165px">
+  <table cellPadding=0 align=left border=0 cellspace="0">
+    <tr>
+      <td id=demo1 vAlign=top>
+      <table width='100%' cellpadding='0' cellspacing='5' border='0' align='center'><tr valign='top'><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=33" title="又是一年春来到" target="_blank"><img class='pic3' src='/Photo/UploadFiles_pic/201204/2012041209401108.jpg'  width='160' height='120' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=33" title="又是一年春来到" target="_blank">又是一年春来到</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=32" title="辛中校树——银杏" target="_blank"><img class='pic3' src='/Photo/UploadFiles_pic/201011/2010111415071173.jpg'  width='160' height='120' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=32" title="辛中校树——银杏" target="_blank">辛中校树——银杏</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=31" title="蓝天白云红旗飘" target="_blank"><img class='pic3' src='/Photo/UploadFiles_pic/201010/2010101220530515.jpg'  width='160' height='120' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=31" title="蓝天白云红旗飘" target="_blank">蓝天白云红旗飘</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=30" title="蓝天白云" target="_blank"><img class='pic3' src='/Photo/UploadFiles_pic/201009/2010092019475617.jpg'  width='160' height='120' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=30" title="蓝天白云" target="_blank">蓝天白云</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=29" title="美丽校园" target="_blank"><img class='pic3' src='/Photo/UploadFiles_pic/201009/2010092111145057.jpg'  width='160' height='120' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=29" title="美丽校园" target="_blank">美丽校园</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=28" title="国色天香" target="_blank"><img class='pic3' src='/Photo/UploadFiles_pic/201010/2010100916002390.jpg'  width='160' height='120' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=28" title="国色天香" target="_blank">国色天香</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=27" title="刺玫花开" target="_blank"><img class='pic3' src='/Photo/UploadFiles_pic/201010/2010100915580420.jpg'  width='160' height='120' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=27" title="刺玫花开" target="_blank">刺玫花开</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=26" title="一所红色的学校" target="_blank"><img class='pic3' src='/Photo/UploadFiles_pic/201010/2010100914371962.gif'  width='160' height='120' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=26" title="一所红色的学校" target="_blank">一所红色的学校</a></td></tr></table> </td>
+      <td id=demo2 vAlign=top></td>
+    </tr>
+  </table>
+</div><SCRIPT>
+var speed=20
+demo2.innerHTML=demo1.innerHTML
+function Marquee1(){
+if(demo2.offsetWidth-demo.scrollLeft<=0)
+demo.scrollLeft-=demo1.offsetWidth
+else{
+demo.scrollLeft++
+} }
+var MyMar1=setInterval(Marquee1,speed)
+demo.onmouseover=function() {clearInterval(MyMar1)}
+demo.onmouseout=function() {MyMar1=setInterval(Marquee1,speed)}
+</SCRIPT> 
+  <!--最新图片更新代码结束--></td>
+              </tr>
+            </table>
+          <!--视觉欣赏表格代码结束--></td>
+        </tr>
+      </table>
+      <!--间隔代码开始-->
+      <table style="WIDTH: 100%" border=0 cellSpacing=0 cellPadding=0 width="100%">
+        <tr>
+          <td height=1></td>
+        </tr>
+      </table>
+      <!--间隔代码结束-->
+      <!--间隔代码开始-->
+      <table border=0 width="100%">
+      </table>
+    <!--间隔代码结束--></td>
+  </tr>
+</table>
+<!--视觉欣赏显示边框表格代码结束-->
+<!--5555555555555555555555555-->
+<table border=0 width=960 align=center height=192>
+  <tr>
+    <td bgColor=#ffffff height=59>
+    <!--表格代码开始-->
+    <!--间隔代码开始-->
+      <table border=0 width="100%">
+        <tr>
+          <td height=1></td>
+        </tr>
+      </table>
+      <!--间隔代码结束-->
+      <table border=0 width=950 align=center>
+        <tr>
+          <td height=235 vAlign=top width=180>
+          <!--左3表格显示边框代码开始-->
+            <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=200>
+              <tr>
+                <td height=278 vAlign=top>
+                <!--左3内容控制代码-->
+                  <table cellSpacing=0 cellPadding=0 width="100%">
+                    <tr bgColor=#ffa007>
+                      <td style="BACKGROUND-IMAGE: url(/Skin/e897_v2.0/7025_bg2.gif)" height=25 width="38%"><IMG border=0 align=absMiddle src="/Skin/e897_v2.0/left_title2.gif" width=15 height=9><FONT color=#ffffff>成绩查询</FONT></td>
+                      <td bgColor=#cccccc height=25 width="62%"></td>
+                    </tr>
+                    <tr>
+                      <td height=20 colSpan=2>
+                        <table border=0 cellSpacing=0 cellPadding=0 width="98%">
+                          <tr>
+                          <tr>
+                            <td style="BORDER-BOTTOM: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid" bgColor=#ededed height=2>
+<div align=center>请输入相关信息查询成绩 
+</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height=26 width="100%">
+<FORM method=post name=form1 action=marks/searchinfo.asp>
+                              <table border=0 cellSpacing=0 cellPadding=0 width="100%" align=center height=93>
+                                <tr height=33 vAlign=center align=middle bgColor=#ccff33>
+                                  <td width="31%">
+<div align=center>用户名 
+</div>
+                                  </td>
+                                  <td width="69%">
+                                    <Input size=16 name=textfield> </td>
+                                </tr>
+                                <tr height=33 vAlign=center align=middle bgColor=#ccff33>
+                                  <td>班级</td>
+                                  <td width="69%">
+                                    <Input size=16 name=textfield3></td>
+                                </tr>
+                                <tr height=33 vAlign=center align=middle bgColor=#ccff33>
+                                  <td width="31%">
+<div align=center>密码 
+</div>
+                                  </td>
+                                  <td width="69%">
+                                    <Input size=16 type=password name=textfield2> </td>
+                                </tr>
+                                <tr>
+                                  <td height=2></td>
+                                </tr>
+                                <tr height=33 vAlign=center align=middle bgColor=#ffcc99>
+                                  <td colSpan=2>
+<div align=center>
+  <Input value=" 查询 " type=submit name=Submit> 
+  <Input value=" 重填 " type=reset name=Submit2> 
+</div>
+                                  </td>
+                                </tr>
+                                <tr align=middle>
+                                  <td colSpan=2><A href="/Dvbbs/index.asp"><IMG border=0 src="/Dvbbs/images/logolink.gif" height=80></A></td>
+                                </tr>
+                              </table>
+                            </FORM></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                <!--左3内容控制结束--></td>
+              </tr>
+            </table>
+          <!--左3表格显示边框代码结束--></td>
+          <td vAlign=top width=443>
+          <!--中部表格显示边框代码开始-->
+            <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=360 height=250>
+              <tr>
+                <td height=262 vAlign=top>
+                <!--内容控制代码-->
+                  <table border=0 width="100%" height=135>
+                    <tr>
+                      <td>
+                        <table bgColor=#0099ff>
+                          <tr>
+                            <td bgColor=#0099ff height=21 width=110><IMG src="/Skin/e897_v2.0/xd_06.gif" width=20 height=5><SPAN class=STYLE5> 科 研 之 窗</SPAN></td>
+                            <td bgColor=#a6caff width=297 align=right><A href="/Article/ShowClass.asp?ClassID=1"><IMG border=0 alt=更多 src="/Skin/e897_v2.0/more.gif" width=36 height=10></A> </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height=100 colSpan=3>
+                      <!--显示内容代码-->
+                        <table id=table1 border=0 cellSpacing=0 cellPadding=0 width="100%">
+                          <tr>
+                            <td height=29>
+                            <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=3668" title="文章标题：考生如何应对焦虑性失眠
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2013-4-19 8:25:52" target="_blank">考生如何应对焦虑性失眠</a></td><td align="right" class="" width="40">04-19</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=3669" title="文章标题：如何保持最佳备考心态？
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2013-4-17 17:33:16" target="_blank">如何保持最佳备考心态？</a></td><td align="right" class="" width="40">04-17</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=3671" title="文章标题：心理医生教你如何缓解考前心理压力
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2013-4-13 8:38:01" target="_blank">心理医生教你如何缓解考前心理压力</a></td><td align="right" class="" width="40">04-13</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=3670" title="文章标题：高考心理调节十大技巧
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2013-4-12 8:35:04" target="_blank">高考心理调节十大技巧</a></td><td align="right" class="" width="40">04-12</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=3635" title="文章标题：高考志愿填报指导：二本“压线”录取填报技巧
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2013-4-5 8:22:30" target="_blank">高考志愿填报指导：二本“压线”录取填报技巧</a></td><td align="right" class="" width="40">04-05</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=3634" title="文章标题：高考志愿填报指导：一本“压线”录取填报技巧
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2013-4-2 8:16:42" target="_blank">高考志愿填报指导：一本“压线”录取填报技巧</a></td><td align="right" class="" width="40">04-02</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=3603" title="文章标题：2012年政府工作报告（四）
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2013-3-25 17:50:23" target="_blank">2012年政府工作报告（四）</a></td><td align="right" class="" width="40">03-25</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=3602" title="文章标题：人大报告（三）
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2013-3-25 7:48:29" target="_blank">人大报告（三）</a></td><td align="right" class="" width="40">03-25</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=3579" title="文章标题：2012年政府工作报告（二）
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2013-3-19 9:29:26" target="_blank">2012年政府工作报告（二）</a></td><td align="right" class="" width="40">03-19</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=3578" title="文章标题：2012年政府工作报告（一）
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2013-3-18 9:26:32" target="_blank">2012年政府工作报告（一）</a></td><td align="right" class="" width="40">03-18</td></tr><tr></tr></table></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                <!--内容控制结束--></td>
+              </tr>
+            </table>
+          <!--中部表格显示边框代码结束--></td>
+          <td width=312>
+          <!--右部表格显示边框代码开始-->
+            <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=390 height=250>
+              <tr>
+                <td height=262 vAlign=top>
+                <!--内容控制代码-->
+                  <table border=0 width="100%" height=135>
+                    <tr>
+                      <td>
+                        <table bgColor=#0099ff>
+                          <tr>
+                            <td bgColor=#0099ff height=21 width=110><IMG src="/Skin/e897_v2.0/xd_05.gif" width=20 height=5><SPAN class=STYLE5> 学 生 频 道</SPAN></td>
+                            <td bgColor=#a6caff width=297 align=right><A href="/Article/ShowClass.asp?ClassID=20"><IMG border=0 alt=更多 src="/Skin/e897_v2.0/more.gif" width=36 height=10></A> </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height=100 colSpan=3>
+                      <!--文章显示代码-->
+                      <!--分栏显示控制代码开始-->
+                        <table id=table1 border=0 cellSpacing=0 cellPadding=0 width="100%">
+                          <tr>
+                            <td height=29>
+                            <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=2626" title="文章标题：曲，忆
+作&nbsp;&nbsp;&nbsp;&nbsp;者：剧尚卿
+更新时间：2011-8-25 10:20:59" target="_blank">曲，忆</a></td><td align="right" class="" width="40">08-25</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=2625" title="文章标题：忆
+作&nbsp;&nbsp;&nbsp;&nbsp;者：史超
+更新时间：2011-8-25 10:19:16" target="_blank">忆</a></td><td align="right" class="" width="40">08-25</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=2624" title="文章标题：流苏殇
+作&nbsp;&nbsp;&nbsp;&nbsp;者：李梦坤
+更新时间：2011-8-25 10:17:57" target="_blank">流苏殇</a></td><td align="right" class="" width="40">08-25</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=2623" title="文章标题：瞳冬
+作&nbsp;&nbsp;&nbsp;&nbsp;者：罗曾
+更新时间：2011-8-25 10:15:11" target="_blank">瞳冬</a></td><td align="right" class="" width="40">08-25</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=2350" title="文章标题：爱生要从人性角度出发
+作&nbsp;&nbsp;&nbsp;&nbsp;者：李丽
+更新时间：2011-4-22 15:37:46" target="_blank">爱生要从人性角度出发</a></td><td align="right" class="" width="40">04-22</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=2349" title="文章标题：新课程标准下语文教学中的德育渗透
+作&nbsp;&nbsp;&nbsp;&nbsp;者：曹放
+更新时间：2011-4-22 15:36:14" target="_blank">新课程标准下语文教学中的德育渗透</a></td><td align="right" class="" width="40">04-22</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=2348" title="文章标题：在高中化学教学中渗透环境教育
+作&nbsp;&nbsp;&nbsp;&nbsp;者：张曼
+更新时间：2011-4-22 15:35:05" target="_blank">在高中化学教学中渗透环境教育</a></td><td align="right" class="" width="40">04-22</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=2346" title="文章标题：挖掘生物学教学中的德育教育
+作&nbsp;&nbsp;&nbsp;&nbsp;者：孙敬彩
+更新时间：2011-4-22 15:33:10" target="_blank">挖掘生物学教学中的德育教育</a></td><td align="right" class="" width="40">04-22</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=2345" title="文章标题：生物学教学中的中华传统美德教育的渗透
+作&nbsp;&nbsp;&nbsp;&nbsp;者：徐东强
+更新时间：2011-4-22 15:31:52" target="_blank">生物学教学中的中华传统美德教育的渗透</a></td><td align="right" class="" width="40">04-22</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common3.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=2344" title="文章标题：如何在班级管理中渗透美德教育
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教育处 团委
+更新时间：2011-4-22 15:30:58" target="_blank">如何在班级管理中渗透美德教育</a></td><td align="right" class="" width="40">04-22</td></tr><tr></tr></table></td>
+                          </tr>
+                        </table>
+                      <!--分栏显示控制代码结束--------------------------------------------------------------------></td>
+                    </tr>
+                  </table>
+                <!--内容控制结束--></td>
+              </tr>
+            </table>
+          <!--右部表格显示边框代码结束--></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--5555555555555555555555555-->
+<!--7777777777777777777777777-->
+<table border=0 width=960 align=center height=192>
+  <tr>
+    <td bgColor=#ffffff height=59>
+    <!--表格代码开始-->
+      <table border=0 width=950 align=center>
+        <tr>
+          <td height=235 vAlign=top width=180>
+          <!--左3表格显示边框代码开始-->
+            <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=200>
+              <tr>
+                <td height=278 vAlign=top>
+                <!--左3内容控制代码-->
+                  <table cellSpacing=0 cellPadding=0 width="100%">
+                    <tr bgColor=#ffa007>
+                      <td style="BACKGROUND-IMAGE: url(/Skin/e897_v2.0/7025_bg2.gif)" height=25 width="38%"><IMG border=0 align=absMiddle src="/Skin/e897_v2.0/left_title2.gif" width=15 height=9><FONT color=#ffffff>辛中校刊</FONT></td>
+                      <td bgColor=#cccccc height=25 width="62%"></td>
+                    </tr>
+                    <tr>
+                      <td height=20 colSpan=2>
+                      <!--控制表格代码开始-->
+                        <table border=0 width="90%" align=center>
+                          <tr>
+                            <td>
+                            <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=1922" title="文章标题：辛中校刊10年第二期
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2010-11-21 15:40:58" target="_blank">辛中校刊10年第二期</a></td><td align="right" class="" width="40">11-21</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=1923" title="文章标题：辛中校刊10年第一期
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2010-11-21 13:09:30" target="_blank">辛中校刊10年第一期</a></td><td align="right" class="" width="40">11-21</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=1842" title="文章标题：辛中校刊09年第三期
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2010-10-31 14:38:20" target="_blank">辛中校刊09年第三期</a></td><td align="right" class="" width="40">10-31</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=1841" title="文章标题：辛中校刊09年第一期
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2010-10-31 14:31:41" target="_blank">辛中校刊09年第一期</a></td><td align="right" class="" width="40">10-31</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=1569" title="文章标题：喜讯
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2010-9-9 17:15:38" target="_blank">喜讯</a></td><td align="right" class="" width="40">09-09</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=128" title="文章标题：校刊第二十期
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2010-7-24 18:06:37" target="_blank">校刊第二十期</a></td><td align="right" class="" width="40">07-24</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=1305" title="文章标题：校刊封面
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2009-8-21" target="_blank">校刊封面</a></td><td align="right" class="" width="40">08-21</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=1304" title="文章标题：校刊部分栏目内容
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2009-8-21" target="_blank">校刊部分栏目内容</a></td><td align="right" class="" width="40">08-21</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=1303" title="文章标题：教育科研通讯第36期
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2009-8-21" target="_blank">教育科研通讯第36期</a></td><td align="right" class="" width="40">08-21</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=1302" title="文章标题：教育科研通讯第35期
+作&nbsp;&nbsp;&nbsp;&nbsp;者：研训处
+更新时间：2009-8-21" target="_blank">教育科研通讯第35期</a></td><td align="right" class="" width="40">08-21</td></tr><tr></tr></table></td>
+                          </tr>
+                        </table>
+                      <!--控制表格代码结束--></td>
+                    </tr>
+                  </table>
+                <!--左3内容控制结束--></td>
+              </tr>
+            </table>
+          <!--左3表格显示边框代码结束--></td>
+          <td width=443>
+          <!--中部表格显示边框代码开始-->
+            <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=360 height=250>
+              <tr>
+                <td height=260 vAlign=top>
+                <!--内容控制代码-->
+                  <table border=0 width="100%" height=135>
+                    <tr>
+                      <td>
+                        <table bgColor=#0099ff>
+                          <tr>
+                            <td bgColor=#0099ff height=21 width=110><IMG src="/Skin/e897_v2.0/xd_02.gif" width=20 height=5><SPAN class=STYLE5> 高 考 专 栏</SPAN></td>
+                            <td bgColor=#a6caff width=297 align=right><A href="/Article/ShowClass.asp?ClassID=27"><IMG border=0 alt=更多 src="/Skin/e897_v2.0/more.gif" width=36 height=10></A> </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height=100 colSpan=3>
+                      <!--显示内容代码-->
+                        <table id=table1 border=0 cellSpacing=0 cellPadding=0 width="100%">
+                          <tr>
+                            <td height=29>
+                            <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5680" title="文章标题：2018年河北省普通高校招生考试报名须知
+作&nbsp;&nbsp;&nbsp;&nbsp;者：招办
+更新时间：2017-11-8 17:07:34" target="_blank">2018年河北省普通高校招生考试报名须知</a></td><td align="right" class="" width="40">11-08</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5678" title="文章标题：河北省教育考试院关于做好2018年普通高校招生报名工作的通知
+作&nbsp;&nbsp;&nbsp;&nbsp;者：招办
+更新时间：2017-11-8 16:52:18" target="_blank">河北省教育考试院关于做好2018年普通高校招生报名</a></td><td align="right" class="" width="40">11-08</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5568" title="文章标题：河北辛集中学举办2017年高考志愿填报咨询会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2017-6-21 15:15:29" target="_blank">河北辛集中学举办2017年高考志愿填报咨询会</a></td><td align="right" class="" width="40">06-21</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5556" title="文章标题：关于调整2017年公安现役院校招生体检标准的补充通知
+作&nbsp;&nbsp;&nbsp;&nbsp;者：招办
+更新时间：2017-6-13 9:02:05" target="_blank">关于调整2017年公安现役院校招生体检标准的补充通</a></td><td align="right" class="" width="40">06-13</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5553" title="文章标题：关于开展空军招飞补充报考工作的通知
+作&nbsp;&nbsp;&nbsp;&nbsp;者：招办
+更新时间：2017-6-12 16:49:41" target="_blank">关于开展空军招飞补充报考工作的通知</a></td><td align="right" class="" width="40">06-12</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5552" title="文章标题：关于开展空军第11批女飞行学员招收工作的通知（河北）
+作&nbsp;&nbsp;&nbsp;&nbsp;者：招办
+更新时间：2017-6-12 16:47:19" target="_blank">关于开展空军第11批女飞行学员招收工作的通知（河</a></td><td align="right" class="" width="40">06-12</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5548" title="文章标题：2017年军校、武警计划-最新
+作&nbsp;&nbsp;&nbsp;&nbsp;者：招办
+更新时间：2017-6-10 8:56:14" target="_blank">2017年军校、武警计划-最新</a></td><td align="right" class="" width="40">06-10</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5547" title="文章标题：河北省教育厅转发教育部办公厅关于做好2017年中央财政支持中西部农村订单定向免费本科医学生招生培养工作的通知-冀教高〔2017〕15号
+作&nbsp;&nbsp;&nbsp;&nbsp;者：招办
+更新时间：2017-6-8 18:58:23" target="_blank">河北省教育厅转发教育部办公厅关于做好2017年中央</a></td><td align="right" class="" width="40">06-08</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5546" title="文章标题：关于做好2017年军队院校招收普通高中毕业生工作的通知
+作&nbsp;&nbsp;&nbsp;&nbsp;者：招办
+更新时间：2017-6-8 18:49:26" target="_blank">关于做好2017年军队院校招收普通高中毕业生工作的</a></td><td align="right" class="" width="40">06-08</td></tr><tr><td width="10" valign="top" class=""><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class=""><a class="" href="/Article/ShowArticle.asp?ArticleID=5544" title="文章标题：关于做好2017年公安普通高等院校和公安现役院校在我省的招生工作的通知
+作&nbsp;&nbsp;&nbsp;&nbsp;者：招办
+更新时间：2017-6-8 18:34:56" target="_blank">关于做好2017年公安普通高等院校和公安现役院校在</a></td><td align="right" class="" width="40">06-08</td></tr><tr></tr></table></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                <!--内容控制结束--></td>
+              </tr>
+            </table>
+          <!--中部表格显示边框代码结束--></td>
+          <td width=312>
+          <!--右部表格显示边框代码开始-->
+            <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=390 height=250>
+              <tr>
+                <td height=265 vAlign=top>
+                <!--内容控制代码-->
+                  <table border=0 width="100%" height=139>
+                    <tr>
+                      <td>
+                        <table bgColor=#0099ff>
+                          <tr>
+                            <td bgColor=#0099ff height=21 width=110><IMG src="/Skin/e897_v2.0/xd_01.gif" width=20 height=5><SPAN class=STYLE5> 下 载 中 心</SPAN></td>
+                            <td bgColor=#a6caff width=297 align=right><A href="/soft/ShowClass.asp?ClassID=212"><IMG border=0 alt=更多 src="/Skin/e897_v2.0/more.gif" width=36 height=10></A> </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td height=100 colSpan=3>
+                      <!--文章显示代码-->
+                        <table border=0 width="100%">
+                          <tr>
+                            <td width="73%">
+                            <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Soft/images/Soft_ontop.gif" alt="固顶软件"></td><td class=""><a class="" href="/Soft/ShowSoft.asp?SoftID=1" title="下载名称：解读高考平行志愿
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2010-7-25 8:57:07" target="_blank">解读高考平行志愿&nbsp;</a></td><td align="right" class="" width="40">07-25</td></tr><tr><td width="10" valign="top" class=""><img src="/Soft/images/Soft_common.gif" alt="普通软件"></td><td class=""><a class="" href="/Soft/ShowSoft.asp?SoftID=11" title="下载名称：河北辛集中学2011年元旦晚会（下）
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2011-1-21 8:50:37" target="_blank">河北辛集中学2011年元旦晚会（下）&nbsp;</a></td><td align="right" class="" width="40">01-21</td></tr><tr><td width="10" valign="top" class=""><img src="/Soft/images/Soft_common.gif" alt="普通软件"></td><td class=""><a class="" href="/Soft/ShowSoft.asp?SoftID=10" title="下载名称：河北辛集中学2011年元旦晚会（上）
+作&nbsp;&nbsp;&nbsp;&nbsp;者：电教中心
+更新时间：2011-1-4 16:10:24" target="_blank">河北辛集中学2011年元旦晚会（上）&nbsp;</a></td><td align="right" class="" width="40">01-04</td></tr><tr><td width="10" valign="top" class=""><img src="/Soft/images/Soft_common.gif" alt="普通软件"></td><td class=""><a class="" href="/Soft/ShowSoft.asp?SoftID=9" title="下载名称：高中信息技术选修教材配套光盘算法与程序设计
+作&nbsp;&nbsp;&nbsp;&nbsp;者：admin
+更新时间：2010-8-10 10:22:50" target="_blank">高中信息技术选修教材配套光盘算法与程序设计&nbsp;</a></td><td align="right" class="" width="40">08-10</td></tr><tr><td width="10" valign="top" class=""><img src="/Soft/images/Soft_common.gif" alt="普通软件"></td><td class=""><a class="" href="/Soft/ShowSoft.asp?SoftID=8" title="下载名称：算法与程序设计.ppt
+作&nbsp;&nbsp;&nbsp;&nbsp;者：admin
+更新时间：2010-8-10 10:14:04" target="_blank">算法与程序设计.ppt&nbsp;</a></td><td align="right" class="" width="40">08-10</td></tr><tr><td width="10" valign="top" class=""><img src="/Soft/images/Soft_common.gif" alt="普通软件"></td><td class=""><a class="" href="/Soft/ShowSoft.asp?SoftID=7" title="下载名称：通用技术课件.rar
+作&nbsp;&nbsp;&nbsp;&nbsp;者：admin
+更新时间：2010-8-10 10:13:24" target="_blank">通用技术课件.rar&nbsp;</a></td><td align="right" class="" width="40">08-10</td></tr><tr><td width="10" valign="top" class=""><img src="/Soft/images/Soft_common.gif" alt="普通软件"></td><td class=""><a class="" href="/Soft/ShowSoft.asp?SoftID=6" title="下载名称：信息技术课件.rar
+作&nbsp;&nbsp;&nbsp;&nbsp;者：admin
+更新时间：2010-8-10 10:06:52" target="_blank">信息技术课件.rar&nbsp;</a></td><td align="right" class="" width="40">08-10</td></tr><tr><td width="10" valign="top" class=""><img src="/Soft/images/Soft_common.gif" alt="普通软件"></td><td class=""><a class="" href="/Soft/ShowSoft.asp?SoftID=5" title="下载名称：光影魔术手(nEO&nbsp;iMAGING)&nbsp;V3.1.2.102&nbsp;正式版
+作&nbsp;&nbsp;&nbsp;&nbsp;者：admin
+更新时间：2010-8-10 10:05:19" target="_blank">光影魔术手(nEO&nbsp;iMAGING)&nbsp;V3.1.2.102&nbsp;正式版&nbsp;</a></td><td align="right" class="" width="40">08-10</td></tr><tr><td width="10" valign="top" class=""><img src="/Soft/images/Soft_common.gif" alt="普通软件"></td><td class=""><a class="" href="/Soft/ShowSoft.asp?SoftID=4" title="下载名称：搜狗拼音输入法&nbsp;V3.6&nbsp;正式版
+作&nbsp;&nbsp;&nbsp;&nbsp;者：admin
+更新时间：2010-8-10 10:03:39" target="_blank">搜狗拼音输入法&nbsp;V3.6&nbsp;正式版&nbsp;3.6</a></td><td align="right" class="" width="40">08-10</td></tr><tr><td width="10" valign="top" class=""><img src="/Soft/images/Soft_common.gif" alt="普通软件"></td><td class=""><a class="" href="/Soft/ShowSoft.asp?SoftID=3" title="下载名称：WinRAR&nbsp;简体中文版
+作&nbsp;&nbsp;&nbsp;&nbsp;者：admin
+更新时间：2010-8-10 10:01:59" target="_blank">WinRAR&nbsp;简体中文版&nbsp;3.93</a></td><td align="right" class="" width="40">08-10</td></tr><tr></tr></table></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                <!--内容控制结束--></td>
+              </tr>
+            </table>
+          <!--右部表格显示边框代码结束--></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--7777777777777777777777777-->
+<!--第四大表格代码开始-->
+<table border=0 width=960 align=center height=192>
+  <tr>
+    <td bgColor=#ffffff height=59>
+      <table border=0 width=950 align=center>
+        <tr>
+          <td height=200 vAlign=top width=180>
+          <!--左2表格显示边框代码开始-->
+            <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=200>
+              <tr>
+                <td height=230 vAlign=top>
+                <!--左2内容控制代码-->
+                  <table cellSpacing=0 cellPadding=0 width="100%">
+                    <tr bgColor=#ffa007>
+                      <td style="BACKGROUND-IMAGE: url(/Skin/e897_v2.0/7025_bg2.gif)" height=25 width="38%"><IMG border=0 align=absMiddle src="/Skin/e897_v2.0/left_title2.gif" width=15 height=9><FONT color=#ffffff>数据统计</FONT></td>
+                      <td bgColor=#cccccc height=25 width="62%"></td>
+                    </tr>
+                    <tr>
+                      <td height=270 colSpan=2>
+                      <!--左侧上广告开始-->今日辛中：1229 篇文章<br>文章中心：4278 篇文章<br>学校导航：145 篇文章<br>下载中心：11 个软件<br>图片中心：30 张图片<br>注册会员：656位<br> 
+                      <script src='/Count/CounterLink.asp?style=all'></script> </td>
+                    </tr>
+                  </table>
+                <!--左2内容控制结束--></td>
+              </tr>
+            </table>
+          <!--左2表格显示边框代码结束--></td>
+          <td>
+          <!--右大1边框大表格代码开始-->
+            <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=228 align=left>
+              <tr>
+                <td height=202 vAlign=top>
+                <!--右表格代码开始-->
+                  <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                    <tr>
+                      <td>
+                        <table bgColor=#0099ff>
+                          <tr>
+                            <td bgColor=#0099ff height=21 width=110><IMG src="/Skin/e897_v2.0/xd_01.gif" width=20 height=5><SPAN class=STYLE5> 教 师 风 采</SPAN></td>
+                            <td bgColor=#a6caff width=118 align=right><A href="//Article/ShowClass.asp?ClassID=15"><IMG border=0 alt=更多 src="/Skin/e897_v2.0/more.gif" width=36 height=10></A> </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td bgColor=#d4deeb height=2 width="100%"></td>
+                    </tr>
+                    <tr>
+                      <td height=130 colSpan=2><div id=demo000 style="FLOAT: right; OVERFLOW: hidden; WIDTH: 230px; MARGIN-RIGHT: 8px; HEIGHT: 275px">
+<div id=demo111 style="LINE-HEIGHT: 100px">
+<table width='100%' cellpadding='0' cellspacing='5' border='0' align='center'><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=1669" title="文章标题：地理教师——李康
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 17:42:22" target="_blank"><img class='pic1' src='/Article/UploadFiles/201009/2010092417441424.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=1669" title="文章标题：地理教师——李康
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 17:42:22" target="_blank">地理教师——李</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=1700" title="文章标题：生物教师——穆闯
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 20:35:26" target="_blank"><img class='pic1' src='/Article/UploadFiles/201009/2010092420365669.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=1700" title="文章标题：生物教师——穆闯
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 20:35:26" target="_blank">生物教师——穆</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3893" title="文章标题：优秀班主任李瑾
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 21:59:02" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100721593217.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3893" title="文章标题：优秀班主任李瑾
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 21:59:02" target="_blank">优秀班主任李瑾</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3879" title="文章标题：高考功勋教师张洪基
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:42:56" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718433810.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3879" title="文章标题：高考功勋教师张洪基
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:42:56" target="_blank">高考功勋教师张</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3846" title="文章标题：最受学生欢迎的好教师黄敬平
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 15:52:25" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100715524475.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3846" title="文章标题：最受学生欢迎的好教师黄敬平
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 15:52:25" target="_blank">最受学生欢迎的</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3886" title="文章标题：高考功勋教师朱俊茹
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:51:12" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718515103.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3886" title="文章标题：高考功勋教师朱俊茹
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:51:12" target="_blank">高考功勋教师朱</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3874" title="文章标题：高考功勋教师王志暖
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:36:12" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718365873.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3874" title="文章标题：高考功勋教师王志暖
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:36:12" target="_blank">高考功勋教师王</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=1682" title="文章标题：物理教师——刘宇辉
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 19:33:50" target="_blank"><img class='pic1' src='/Article/UploadFiles/201009/2010092419353800.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=1682" title="文章标题：物理教师——刘宇辉
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 19:33:50" target="_blank">物理教师——刘</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3926" title="文章标题：师德标兵朱俊茹
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:41:41" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722430178.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3926" title="文章标题：师德标兵朱俊茹
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:41:41" target="_blank">师德标兵朱俊茹</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3923" title="文章标题：师德标兵王诺
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:38:05" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722383453.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3923" title="文章标题：师德标兵王诺
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:38:05" target="_blank">师德标兵王诺</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3839" title="文章标题：市级优秀教师马永毅
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-11 15:20:40" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100715224549.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3839" title="文章标题：市级优秀教师马永毅
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-11 15:20:40" target="_blank">市级优秀教师马</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=1678" title="文章标题：物理教师——李丽
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 19:21:50" target="_blank"><img class='pic1' src='/Article/UploadFiles/201009/2010092419261126.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=1678" title="文章标题：物理教师——李丽
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 19:21:50" target="_blank">物理教师——李</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3902" title="文章标题：优秀班主任吴令津
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:10:57" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722114016.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3902" title="文章标题：优秀班主任吴令津
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:10:57" target="_blank">优秀班主任吴令</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3865" title="文章标题：高考功勋教师马永毅
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:25:22" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718260367.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3865" title="文章标题：高考功勋教师马永毅
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:25:22" target="_blank">高考功勋教师马</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3889" title="文章标题：优秀班主任艾海英
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 21:52:38" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100721533251.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3889" title="文章标题：优秀班主任艾海英
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 21:52:38" target="_blank">优秀班主任艾海</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3888" title="文章标题：最受学生欢迎的好教师崔银锁
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 21:48:49" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100721514828.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3888" title="文章标题：最受学生欢迎的好教师崔银锁
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 21:48:49" target="_blank">最受学生欢迎的</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3880" title="文章标题：高考功勋教师张建华
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:43:57" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718444222.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3880" title="文章标题：高考功勋教师张建华
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:43:57" target="_blank">高考功勋教师张</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3917" title="文章标题：师德标兵路永青
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:31:30" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722320998.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3917" title="文章标题：师德标兵路永青
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:31:30" target="_blank">师德标兵路永青</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3915" title="文章标题：师德标兵李颖
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:29:33" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722300374.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3915" title="文章标题：师德标兵李颖
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:29:33" target="_blank">师德标兵李颖</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3905" title="文章标题：优秀班主任张建华
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:14:30" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722150722.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3905" title="文章标题：优秀班主任张建华
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:14:30" target="_blank">优秀班主任张建</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3872" title="文章标题：高考功勋教师王诺
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:34:09" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718344542.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3872" title="文章标题：高考功勋教师王诺
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:34:09" target="_blank">高考功勋教师王</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3871" title="文章标题：高考功勋教师王会慈
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:32:51" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718333405.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3871" title="文章标题：高考功勋教师王会慈
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:32:51" target="_blank">高考功勋教师王</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3868" title="文章标题：高考功勋教师孙文斌
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:29:06" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718300510.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3868" title="文章标题：高考功勋教师孙文斌
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:29:06" target="_blank">高考功勋教师孙</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3844" title="文章标题：最受学生欢迎的好教师郭术红
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 15:46:41" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100715474198.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3844" title="文章标题：最受学生欢迎的好教师郭术红
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 15:46:41" target="_blank">最受学生欢迎的</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=1750" title="文章标题：生物教师——李玺曼
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2010-9-11 15:51:01" target="_blank"><img class='pic1' src='/Article/UploadFiles/201010/2010101115543674.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=1750" title="文章标题：生物教师——李玺曼
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2010-9-11 15:51:01" target="_blank">生物教师——李</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=1692" title="文章标题：心理教师——苏丽丽
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 20:05:57" target="_blank"><img class='pic1' src='/Article/UploadFiles/201009/2010092420080685.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=1692" title="文章标题：心理教师——苏丽丽
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 20:05:57" target="_blank">心理教师——苏</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=1689" title="文章标题：生物教师——曹察
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 19:55:26" target="_blank"><img class='pic1' src='/Article/UploadFiles/201009/2010092419595345.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=1689" title="文章标题：生物教师——曹察
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 19:55:26" target="_blank">生物教师——曹</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3921" title="文章标题：师德标兵孙敬彩
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 8:27:34" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722362180.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3921" title="文章标题：师德标兵孙敬彩
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 8:27:34" target="_blank">师德标兵孙敬彩</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3882" title="文章标题：高考功勋教师张欣
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:46:23" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718465576.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3882" title="文章标题：高考功勋教师张欣
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:46:23" target="_blank">高考功勋教师张</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3875" title="文章标题：高考功勋教师位征祥
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:38:53" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718391681.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3875" title="文章标题：高考功勋教师位征祥
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:38:53" target="_blank">高考功勋教师位</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3867" title="文章标题：高考功勋教师宋晓昆
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:27:49" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718284357.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3867" title="文章标题：高考功勋教师宋晓昆
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:27:49" target="_blank">高考功勋教师宋</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3854" title="文章标题：最受学生欢迎的好教师魏潇楠
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 16:11:41" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100716123742.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3854" title="文章标题：最受学生欢迎的好教师魏潇楠
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 16:11:41" target="_blank">最受学生欢迎的</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3852" title="文章标题：最受学生欢迎的好教师史丽丽
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 16:08:42" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100716093262.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3852" title="文章标题：最受学生欢迎的好教师史丽丽
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 16:08:42" target="_blank">最受学生欢迎的</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=1686" title="文章标题：生物教师——徐东强
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 19:48:11" target="_blank"><img class='pic1' src='/Article/UploadFiles/201009/2010092419501954.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=1686" title="文章标题：生物教师——徐东强
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 19:48:11" target="_blank">生物教师——徐</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3918" title="文章标题：师德标兵罗秀芳
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:32:22" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722325114.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3918" title="文章标题：师德标兵罗秀芳
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:32:22" target="_blank">师德标兵罗秀芳</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3897" title="文章标题：优秀班主任裴丙钊
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:03:55" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722044677.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3897" title="文章标题：优秀班主任裴丙钊
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:03:55" target="_blank">优秀班主任裴丙</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3890" title="文章标题：优秀班主任曹云霄
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 21:54:04" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100721550560.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3890" title="文章标题：优秀班主任曹云霄
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 21:54:04" target="_blank">优秀班主任曹云</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3881" title="文章标题：高考功勋教师张曼
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:45:00" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718454794.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3881" title="文章标题：高考功勋教师张曼
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:45:00" target="_blank">高考功勋教师张</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3845" title="文章标题：最受学生欢迎的好教师华艳茹
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 15:48:36" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100715494621.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3845" title="文章标题：最受学生欢迎的好教师华艳茹
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 15:48:36" target="_blank">最受学生欢迎的</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3922" title="文章标题：师德标兵田向军
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:36:40" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722373937.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3922" title="文章标题：师德标兵田向军
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:36:40" target="_blank">师德标兵田向军</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3911" title="文章标题：师德标兵耿百川
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:24:54" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722255093.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3911" title="文章标题：师德标兵耿百川
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:24:54" target="_blank">师德标兵耿百川</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3910" title="文章标题：师德标兵高妨
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:23:36" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722243805.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3910" title="文章标题：师德标兵高妨
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:23:36" target="_blank">师德标兵高妨</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3878" title="文章标题：高考功勋教师于盼
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:41:52" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718423774.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3878" title="文章标题：高考功勋教师于盼
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:41:52" target="_blank">高考功勋教师于</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3876" title="文章标题：高考功勋教师吴福增
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-11 8:39:36" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718402937.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3876" title="文章标题：高考功勋教师吴福增
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-11 8:39:36" target="_blank">高考功勋教师吴</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3864" title="文章标题：高考功勋教师马彦肖
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:24:14" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718245822.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3864" title="文章标题：高考功勋教师马彦肖
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:24:14" target="_blank">高考功勋教师马</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3859" title="文章标题：最受学生欢迎的好教师张欣
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-11 18:14:52" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718152940.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3859" title="文章标题：最受学生欢迎的好教师张欣
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-11 18:14:52" target="_blank">最受学生欢迎的</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3855" title="文章标题：最受学生欢迎的好教师吴福增
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 16:13:03" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100716141077.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3855" title="文章标题：最受学生欢迎的好教师吴福增
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 16:13:03" target="_blank">最受学生欢迎的</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3841" title="文章标题：市级优秀科研工作者薛吉辰
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-11 15:26:44" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100715284212.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3841" title="文章标题：市级优秀科研工作者薛吉辰
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-11 15:26:44" target="_blank">市级优秀科研工</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=1688" title="文章标题：物理教师——李跃旗
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 19:53:27" target="_blank"><img class='pic1' src='/Article/UploadFiles/201009/2010092419551588.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=1688" title="文章标题：物理教师——李跃旗
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 19:53:27" target="_blank">物理教师——李</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=1683" title="文章标题：语文教师——王丽慧
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 19:35:52" target="_blank"><img class='pic1' src='/Article/UploadFiles/201009/2010092419434440.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=1683" title="文章标题：语文教师——王丽慧
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 19:35:52" target="_blank">语文教师——王</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3936" title="文章标题：师德标兵王会英
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 11:37:26" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100811375836.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3936" title="文章标题：师德标兵王会英
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 11:37:26" target="_blank">师德标兵王会英</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3933" title="文章标题：师德标兵李康
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-11 10:56:54" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100810574033.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3933" title="文章标题：师德标兵李康
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-11 10:56:54" target="_blank">师德标兵李康</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3916" title="文章标题：师德标兵刘宗魁
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:30:22" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722311377.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3916" title="文章标题：师德标兵刘宗魁
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:30:22" target="_blank">师德标兵刘宗魁</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3912" title="文章标题：师德标兵耿媛媛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:26:06" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722264273.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3912" title="文章标题：师德标兵耿媛媛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:26:06" target="_blank">师德标兵耿媛媛</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3900" title="文章标题：优秀班主任王志暖
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:08:54" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722092155.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3900" title="文章标题：优秀班主任王志暖
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:08:54" target="_blank">优秀班主任王志</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3891" title="文章标题：优秀班主任冯少文
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 21:55:28" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100721561338.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3891" title="文章标题：优秀班主任冯少文
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 21:55:28" target="_blank">优秀班主任冯少</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3863" title="文章标题：高考功勋教师刘英
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:22:39" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100718233287.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3863" title="文章标题：高考功勋教师刘英
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 18:22:39" target="_blank">高考功勋教师刘</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3848" title="文章标题：最受学生欢迎的好教师马冬兰
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 15:55:08" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100715555872.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3848" title="文章标题：最受学生欢迎的好教师马冬兰
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 15:55:08" target="_blank">最受学生欢迎的</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3847" title="文章标题：最受学生欢迎的好教师纪光涛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 15:53:24" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100715541626.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3847" title="文章标题：最受学生欢迎的好教师纪光涛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 15:53:24" target="_blank">最受学生欢迎的</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=1687" title="文章标题：物理教师——高曙
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 19:51:53" target="_blank"><img class='pic1' src='/Article/UploadFiles/201009/2010092419530170.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=1687" title="文章标题：物理教师——高曙
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2010-8-24 19:51:53" target="_blank">物理教师——高</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3935" title="文章标题：高考功勋教师房保进
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 11:34:47" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100811353145.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3935" title="文章标题：高考功勋教师房保进
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 11:34:47" target="_blank">高考功勋教师房</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3934" title="文章标题：最受学生欢迎的好教师房保进
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 11:33:06" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100811335498.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3934" title="文章标题：最受学生欢迎的好教师房保进
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 11:33:06" target="_blank">最受学生欢迎的</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3909" title="文章标题：师德标兵杜海英
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:18:31" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722231797.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3909" title="文章标题：师德标兵杜海英
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:18:31" target="_blank">师德标兵杜海英</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=3898" title="文章标题：优秀班主任台慈
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:05:24" target="_blank"><img class='pic1' src='/Article/UploadFiles/201310/2013100722061109.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=3898" title="文章标题：优秀班主任台慈
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2013-9-10 22:05:24" target="_blank">优秀班主任台慈</a></td></tr></table> </div>
+<div id=demo222></div></div>
+<script>
+<!--
+  var speed  = 25;//滚动速度
+  var rows  = 273;//每行高度
+  var stim  = 131; //停留时间倍数 * speed
+  var stop  = 0; //初始化值，不管
+  demo222.innerHTML = demo111.innerHTML
+  function Marquee999(){
+    if(demo000.scrollTop%rows==0 && stop<=stim){
+      stop++;
+      return;
+    }
+    stop = 0;
+    if(demo222.offsetTop-demo000.scrollTop<=0)
+      demo000.scrollTop-=demo111.offsetHeight
+    else{
+      demo000.scrollTop++
+    }
+  }
+  var MyMar999    = setInterval(Marquee999,speed)
+  demo000.onmouseover = function() {clearInterval(MyMar999)}
+  demo000.onmouseout  = function() {MyMar999=setInterval(Marquee999,speed)}
+-->
+  </script> 
+<div></div>
+ 
+                      <!--内容表格代码结束--></td>
+                    </tr>
+                    <tr>
+                      <td height=9></td>
+                    </tr>
+                  </table>
+                <!--右表格代码结束--></td>
+              </tr>
+            </table>
+          <!--右大1边框表格代码结束--></td>
+          <td>
+          <!--右大1边框大表格代码开始-->
+            <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=228 align=left>
+              <tr>
+                <td height=202 vAlign=top>
+                <!--右表格代码开始-->
+                  <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                    <tr>
+                      <td>
+                        <table bgColor=#0099ff>
+                          <tr>
+                            <td bgColor=#0099ff height=21 width=110><IMG src="/Skin/e897_v2.0/xd_01.gif" width=20 height=5><SPAN class=STYLE5> 学 星 风 采</SPAN></td>
+                            <td bgColor=#a6caff width=118 align=right><A href="//Article/ShowClass.asp?ClassID=21"><IMG border=0 alt=更多 src="/Skin/e897_v2.0/more.gif" width=36 height=10></A> </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td bgColor=#d4deeb height=2 width="100%"></td>
+                    </tr>
+                    <tr>
+                      <td height=135 colSpan=2><div id=demo0000 style="FLOAT: right; OVERFLOW: hidden; WIDTH: 230px; MARGIN-RIGHT: 8px; HEIGHT: 275px">
+<div id=demo1111 style="LINE-HEIGHT: 100px">
+<table width='100%' cellpadding='0' cellspacing='5' border='0' align='center'><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=2093" title="文章标题：2010-2011年度高二年级第一学期期末考试光荣榜
+作&nbsp;&nbsp;&nbsp;&nbsp;者：高二年级组
+更新时间：2011-3-4 19:19:52" target="_blank"><img class='pic1' src='/Article/UploadFiles/201103/2011030419320136.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=2093" title="文章标题：2010-2011年度高二年级第一学期期末考试光荣榜
+作&nbsp;&nbsp;&nbsp;&nbsp;者：高二年级组
+更新时间：2011-3-4 19:19:52" target="_blank"><font color="#800000"><b>2010-2011年度高</b></font></a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=1760" title="文章标题：高二年级阶段考试光荣榜
+作&nbsp;&nbsp;&nbsp;&nbsp;者：高二年级组
+更新时间：2010-10-12 6:21:16" target="_blank"><img class='pic1' src='/Article/UploadFiles/201010/2010101310164874.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=1760" title="文章标题：高二年级阶段考试光荣榜
+作&nbsp;&nbsp;&nbsp;&nbsp;者：高二年级组
+更新时间：2010-10-12 6:21:16" target="_blank">高二年级阶段考</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=757" title="文章标题：第二届诺贝尔之星综合素质大赛获奖名单(一)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2009-4-6" target="_blank"><img class='pic1' src='/Article/UploadFiles/201008/20100808180513439.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=757" title="文章标题：第二届诺贝尔之星综合素质大赛获奖名单(一)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2009-4-6" target="_blank">第二届诺贝尔之</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=750" title="文章标题：第二届诺贝尔之星综合素质大赛获奖名单(二)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2009-4-6" target="_blank"><img class='pic1' src='/Article/UploadFiles/201008/20100808180156366.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=750" title="文章标题：第二届诺贝尔之星综合素质大赛获奖名单(二)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2009-4-6" target="_blank">第二届诺贝尔之</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=742" title="文章标题：第二届诺贝尔之星综合素质大赛获奖名单(三)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2009-4-6" target="_blank"><img class='pic1' src='/Article/UploadFiles/201008/20100808175750405.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=742" title="文章标题：第二届诺贝尔之星综合素质大赛获奖名单(三)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2009-4-6" target="_blank">第二届诺贝尔之</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=609" title="文章标题：第一届诺贝尔之星综合素质大赛获奖名单(三)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2008-8-25" target="_blank"><img class='pic1' src='/Article/UploadFiles/201008/20100808170107164.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=609" title="文章标题：第一届诺贝尔之星综合素质大赛获奖名单(三)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2008-8-25" target="_blank">第一届诺贝尔之</a></td></tr><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=606" title="文章标题：第一届诺贝尔之星综合素质大赛获奖名单(二)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2008-8-25" target="_blank"><img class='pic1' src='/Article/UploadFiles/201008/20100808165911722.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=606" title="文章标题：第一届诺贝尔之星综合素质大赛获奖名单(二)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2008-8-25" target="_blank">第一届诺贝尔之</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=603" title="文章标题：第一届诺贝尔之星综合素质大赛获奖名单(一)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2008-8-25" target="_blank"><img class='pic1' src='/Article/UploadFiles/201008/20100808165633179.jpg'  width='100' height='100' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=603" title="文章标题：第一届诺贝尔之星综合素质大赛获奖名单(一)
+作&nbsp;&nbsp;&nbsp;&nbsp;者：教务处
+更新时间：2008-8-25" target="_blank">第一届诺贝尔之</a></td></tr></table> </div>
+<div id=demo2222></div></div>
+<script>
+<!--
+  var speeds  = 25;//滚动速度
+  var rowss  = 273;//每行高度
+  var stims  = 131; //停留时间倍数 * speed
+  var stops  = 0; //初始化值，不管
+  demo2222.innerHTML = demo1111.innerHTML
+  function Marquee9999(){
+    if(demo0000.scrollTop%rowss==0 && stops<=stims){
+      stops++;
+      return;
+    }
+    stops = 0;
+    if(demo2222.offsetTop-demo0000.scrollTop<=0)
+      demo0000.scrollTop-=demo1111.offsetHeight
+    else{
+      demo0000.scrollTop++
+    }
+  }
+  var MyMar9999    = setInterval(Marquee9999,speeds)
+  demo0000.onmouseover = function() {clearInterval(MyMar9999)}
+  demo0000.onmouseout  = function() {MyMar9999=setInterval(Marquee9999,speeds)}
+-->
+  </script> 
+<div></div>
+ 
+                      <!--内容表格代码结束--></td>
+                    </tr>
+                    <tr>
+                      <td height=9></td>
+                    </tr>
+                  </table>
+                <!--右表格代码结束--></td>
+              </tr>
+            </table>
+          <!--右大1边框表格代码结束--></td>
+          <td>
+          <!--右大1边框大表格代码开始-->
+            <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=280 align=left>
+              <tr>
+                <td height=222 vAlign=top>
+                <!--右表格代码开始-->
+                  <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                    <tr>
+                      <td>
+                        <table bgColor=#0099ff>
+                          <tr>
+                            <td bgColor=#0099ff height=21 width=110><IMG src="/Skin/e897_v2.0/xd_01.gif" width=20 height=5><SPAN class=STYLE5> 精 彩 视 频</SPAN></td>
+                            <td bgColor=#a6caff width=170 align=right><A href="/jrxz/ShowClass.asp?ClassID=46"><IMG border=0 alt=更多 src="/Skin/e897_v2.0/more.gif" width=36 height=10></A> </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td bgColor=#d4deeb height=2 width="100%"></td>
+                    </tr>
+                    <tr>
+                      <td height=130 colSpan=2>
+<script language="javascript" src="/inc/jingcaishipin.js"></script> 
+                      <!--内容表格代码结束--></td>
+                    </tr>
+                    <tr>
+                      <td height=29></td>
+                    </tr>
+                  </table>
+                <!--右表格代码结束--></td>
+              </tr>
+            </table>
+          <!--右大1边框表格代码结束--></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--第四大表格代码结束-->
+<!--8888888888888888888888888-->
+<table border=0 width=960 align=center height=99>
+  <tr>
+    <td bgColor=#ffffff height=59>
+    <!--表格代码开始-->
+    <!--间隔代码开始-->
+      <table border=0 width="100%">
+        <tr>
+          <td height=1></td>
+        </tr>
+      </table>
+      <!--间隔代码结束-->
+      <!--表格代码开始--友情链接---->
+      <table border=0 width=960 align=center>
+        <tr>
+          <td height=50>
+          <!--左3表格显示边框代码开始-->
+            <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#e7e7e7 cellPadding=0 width=958>
+              <tr>
+                <td height=20 vAlign=top>
+                <!--左3内容控制代码-->
+                  <table cellSpacing=0 cellPadding=0 width="100%">
+                    <tr>
+                      <td height=20 width="97%">
+                      <!--友情链接显示代码-->
+<div align=center><table width="100%" cellSpacing="5"><tr align="center" class="tdbg"><td width='88'><a href="http://hbxj.wenming.cn/" target="_blank" title="网站名称：辛集文明网
+网站地址：http://hbxj.wenming.cn/
+网站简介："><img src='http://hbxj.wenming.cn/images/logo.jpg' width='88' height='31' border='0'></a></td><td width='88'><a href="http://www.nudt.edu.cn/" target="_blank" title="网站名称：国防科技大学招生
+网站地址：http://www.nudt.edu.cn/
+网站简介："><img src='/Article/UploadFiles/201007/2010072422285420.gif' width='88' height='31' border='0'></a></td><td width='88'><a href="http://bbs.xinji.net/" target="_blank" title="网站名称：辛集论坛
+网站地址：http://bbs.xinji.net/
+网站简介："><img src='/Article/UploadFiles/201007/2010072422285419.png' width='88' height='31' border='0'></a></td><td width='88'><a href="http://www.sjz15z.com/" target="_blank" title="网站名称：石家庄十五中
+网站地址：http://www.sjz15z.com/
+网站简介："><img src='/Article/UploadFiles/201007/2010072422285401.jpg' width='88' height='31' border='0'></a></td><td width='88'><a href="http://www.zhengzhong.cn/" target="_blank" title="网站名称：河北正定中学
+网站地址：http://www.zhengzhong.cn/
+网站简介："><img src='/Article/UploadFiles/201007/2010072422285468.gif' width='88' height='31' border='0'></a></td><td width='88'><a href="http://www.cuizimo.com/" target="_blank" title="网站名称：自默文化网
+网站地址：http://www.cuizimo.com/
+网站简介："><img src='/Article/UploadFiles/201007/2010072422285435.gif' width='88' height='31' border='0'></a></td><td width='88'><a href="http://www.hebxxt.com/" target="_blank" title="网站名称：校讯通
+网站地址：http://www.hebxxt.com/
+网站简介："><img src='/Article/UploadFiles/201007/2010072422401785.jpg' width='88' height='31' border='0'></a></td><td width='88'><a href="http://www.hbhz.net/index.asp" target="_blank" title="网站名称：河北衡水中学
+网站地址：http://www.hbhz.net/index.asp
+网站简介："><img src='/Article/UploadFiles/201007/2010072422401777.gif' width='88' height='31' border='0'></a></td><td width='88'><a href="http://hebnews.cn/" target="_blank" title="网站名称：河北新闻网
+网站地址：http://hebnews.cn/
+网站简介："><img src='/Article/UploadFiles/201007/2010072422422133.jpg' width='88' height='31' border='0'></a></td></tr><tr align='center' class='tdbg'><td width='88'><a href="http://www.sjy.net.cn/" target="_blank" title="网站名称：石家庄市教育城域网
+网站地址：http://www.sjy.net.cn/
+网站简介：石家庄市教育城域网"><img src='/Article/UploadFiles/201011/2010110311353359.jpg' width='88' height='31' border='0'></a></td><td width='88'><a href="http://www.sjz-edu.com/" target="_blank" title="网站名称：石家庄市教育资源网
+网站地址：http://www.sjz-edu.com/
+网站简介：石家庄市教育资源网"><img src='/Photo/UploadFiles_pic/201009/2010092109142539.jpg' width='88' height='31' border='0'></a></td><td width='88'><a href="http://www.sjzyz.net/" target="_blank" title="网站名称：石家庄市第一中学
+网站地址：http://www.sjzyz.net/
+网站简介："><img src='/Photo/UploadFiles_pic/201008/2010081011023315.jpg' width='88' height='31' border='0'></a></td><td width='88'><a href="http://www.hebeea.edu.cn/" target="_blank" title="网站名称：河北省教育考试院
+网站地址：http://www.hebeea.edu.cn/
+网站简介："><img src='/Photo/UploadFiles_pic/201008/2010081014524731.jpg' width='88' height='31' border='0'></a></td><td width='88'><a href="http://www.eol.cn/" target="_blank" title="网站名称：中国教育在线
+网站地址：http://www.eol.cn/
+网站简介："><img src='/Photo/UploadFiles_pic/201008/2010081015000634.jpg' width='88' height='31' border='0'></a></td><td width='88'><a href="http://www.gotonudt.cn" target="_blank" title="网站名称：国防科技大学招生信息网
+网站地址：http://www.gotonudt.cn
+网站简介："><img src='/jrxz/UploadFiles/201205/2012050908132271.jpg' width='88' height='31' border='0'></a></td><td width='88'><a href="http://www.sjzjyrc.com/" target="_blank" title="网站名称：石家庄教育人才网
+网站地址：http://www.sjzjyrc.com/
+网站简介："><img src='/Article/UploadFiles/201110/2011101814044692.gif' width='88' height='31' border='0'></a></td><td width='88'><a href="http://www.xiangpi.com/" target="_blank" title="网站名称：橡皮网
+网站地址：http://www.xiangpi.com/
+网站简介："><img src='http://www.xiangpi.com/images/logo.png' width='88' height='31' border='0'></a></td><td width='88'><a href="http://www.gaokao789.com" target="_blank" title="网站名称：高考资源网
+网站地址：http://www.gaokao789.com
+网站简介："><img src='http://www.gaokao789.com/images/logo.jpg' width='88' height='31' border='0'></a></td></tr><tr align='center' class='tdbg'></tr></table> 
+</div>
+                      </td>
+                    </tr>
+                  </table>
+                <!--左3内容控制结束--></td>
+              </tr>
+            </table>
+          <!--左3表格显示边框代码结束--></td>
+        </tr>
+      </table>
+      <!--表格代码结束--友情链接---->
+    <!-- ********网页底部代码开始******** --><table style="BORDER-COLLAPSE: collapse; WORD-BREAK: break-all" class=bottom_tdbgall border=1 cellSpacing=0 borderColor=#f4f4f4 cellPadding=0 width=958 bgColor=#ffffff align=center>
+    <tr>
+      <td class=Bottom_Adminlogo height=32 vAlign=bottom background=/Images/bottombg.gif colSpan=2 align=middle>| <A class=Bottom onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.hbxjzx.net.cn/index.asp');" href="/#">设为首页</A><a href="http://www.ichengfen.com" target="_blank" title="化妆品成分查询" style="display:none">化妆品成分查询</a> | <A class=Bottom href="javascript:window.external.addFavorite('http://www.hbxjzx.net.cn/index.asp','河北辛集中学');">加入收藏</A> | <A class=Bottom href="mailto:">联系站长</A> | <A class=Bottom href="/FriendSite/index.asp" target=_blank>友情链接</A> | <A class=Bottom href="/copyright.asp" target=_blank>版权申明</A> | <a class='Bottom' href='/Admin/Admin_Index.asp' target='_blank'>管理登录</a>&nbsp;|&nbsp;</td>
+    </tr>
+    <tr>
+      <td class=bottom_copyright height=60 width=960>
+        <table border=0 width="98%" align=center>
+          <tr>
+            <td>
+            <div align=center>学校地址：河北石家庄辛集市辛中路1号 <SPAN class=copyright>电话：031183387109&nbsp; 邮政编码：052360</SPAN></div></td>
+          </tr>
+          <tr>
+            <td><SPAN class=copyright>
+<div align=center>Copyright &copy; 2010 河北辛集中学 All Rights Reserved.</div>
+<div align=center>网站备案:<A href="http://www.miibeian.gov.cn/" target=_blank>冀ICP备12021380号</A></div>
+            <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/05/102/0000/41018882/CA051020000410188820002.js' type='text/javascript'%3E%3C/script%3E"));</script></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table> </td>
+  <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/05/102/0000/41018882/CA051020000410188820002.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</tr>
+</table>
+<!--8888888888888888888888888-->
+<!--整体大表格代码结束-->
+</body>
+</html>

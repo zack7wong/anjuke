@@ -6,5 +6,5 @@ import scrapy.spiderloader
 
 process = CrawlerProcess(get_project_settings())
 
-process.crawl('checkspider')
+process.crawl('companyspider')
 process.start()

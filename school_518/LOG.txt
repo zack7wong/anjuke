@@ -1,0 +1,873 @@
+2018-05-24 17:39:58 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: school)
+2018-05-24 17:39:58 [scrapy.utils.log] INFO: Versions: lxml 4.1.0.0, libxml2 2.9.5, cssselect 1.0.1, parsel 1.2.0, w3lib 1.18.0, Twisted 17.9.0, Python 3.5.2 (default, Nov 17 2016, 17:05:23) - [GCC 5.4.0 20160609], pyOpenSSL 17.3.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.3, Platform Linux-4.4.0-31-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-24 17:39:58 [scrapy.crawler] INFO: Overridden settings: {'HTTPCACHE_ENABLED': True, 'SPIDER_MODULES': ['school.spiders'], 'LOG_FILE': 'LOG.txt', 'NEWSPIDER_MODULE': 'school.spiders', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36', 'BOT_NAME': 'school', 'CONCURRENT_REQUESTS': 32}
+2018-05-24 17:39:58 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-05-24 17:39:58 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2018-05-24 17:39:58 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-24 17:39:59 [scrapy.middleware] INFO: Enabled item pipelines:
+['school.pipelines.SchoolPipeline']
+2018-05-24 17:39:59 [scrapy.core.engine] INFO: Spider opened
+2018-05-24 17:39:59 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-24 17:39:59 [scrapy.extensions.httpcache] DEBUG: Using filesystem cache storage in /home/python/Desktop/work_code/school_518/.scrapy/httpcache
+2018-05-24 17:39:59 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6026
+2018-05-24 17:39:59 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-24 17:39:59 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 24, 9, 39, 59, 137480),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 71983104,
+ 'memusage/startup': 71983104,
+ 'start_time': datetime.datetime(2018, 5, 24, 9, 39, 59, 128204)}
+2018-05-24 17:39:59 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-05-24 17:40:23 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: school)
+2018-05-24 17:40:23 [scrapy.utils.log] INFO: Versions: lxml 4.1.0.0, libxml2 2.9.5, cssselect 1.0.1, parsel 1.2.0, w3lib 1.18.0, Twisted 17.9.0, Python 3.5.2 (default, Nov 17 2016, 17:05:23) - [GCC 5.4.0 20160609], pyOpenSSL 17.3.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.3, Platform Linux-4.4.0-31-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-24 17:40:23 [scrapy.crawler] INFO: Overridden settings: {'CONCURRENT_REQUESTS': 32, 'NEWSPIDER_MODULE': 'school.spiders', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36', 'BOT_NAME': 'school', 'LOG_FILE': 'LOG.txt', 'SPIDER_MODULES': ['school.spiders'], 'HTTPCACHE_ENABLED': True}
+2018-05-24 17:40:23 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logstats.LogStats']
+2018-05-24 17:40:23 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2018-05-24 17:40:23 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-24 17:40:24 [scrapy.middleware] INFO: Enabled item pipelines:
+['school.pipelines.SchoolPipeline']
+2018-05-24 17:40:24 [scrapy.core.engine] INFO: Spider opened
+2018-05-24 17:40:24 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-24 17:40:24 [scrapy.extensions.httpcache] DEBUG: Using filesystem cache storage in /home/python/Desktop/work_code/school_518/.scrapy/httpcache
+2018-05-24 17:40:24 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6026
+2018-05-24 17:40:24 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-24 17:40:24 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 24, 9, 40, 24, 70299),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 71622656,
+ 'memusage/startup': 71622656,
+ 'start_time': datetime.datetime(2018, 5, 24, 9, 40, 24, 61309)}
+2018-05-24 17:40:24 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-05-24 17:40:48 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: school)
+2018-05-24 17:40:48 [scrapy.utils.log] INFO: Versions: lxml 4.1.0.0, libxml2 2.9.5, cssselect 1.0.1, parsel 1.2.0, w3lib 1.18.0, Twisted 17.9.0, Python 3.5.2 (default, Nov 17 2016, 17:05:23) - [GCC 5.4.0 20160609], pyOpenSSL 17.3.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.3, Platform Linux-4.4.0-31-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-24 17:40:48 [scrapy.crawler] INFO: Overridden settings: {'HTTPCACHE_ENABLED': True, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36', 'LOG_FILE': 'LOG.txt', 'SPIDER_MODULES': ['school.spiders'], 'NEWSPIDER_MODULE': 'school.spiders', 'CONCURRENT_REQUESTS': 32, 'BOT_NAME': 'school'}
+2018-05-24 17:40:48 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-05-24 17:40:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2018-05-24 17:40:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-24 17:40:49 [scrapy.middleware] INFO: Enabled item pipelines:
+['school.pipelines.SchoolPipeline']
+2018-05-24 17:40:49 [scrapy.core.engine] INFO: Spider opened
+2018-05-24 17:40:49 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-24 17:40:49 [scrapy.extensions.httpcache] DEBUG: Using filesystem cache storage in /home/python/Desktop/work_code/school_518/.scrapy/httpcache
+2018-05-24 17:40:49 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6026
+2018-05-24 17:40:49 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-24 17:40:49 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 5, 24, 9, 40, 49, 813723),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 7,
+ 'memusage/max': 71970816,
+ 'memusage/startup': 71970816,
+ 'start_time': datetime.datetime(2018, 5, 24, 9, 40, 49, 804495)}
+2018-05-24 17:40:49 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-05-24 17:48:50 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: school)
+2018-05-24 17:48:50 [scrapy.utils.log] INFO: Versions: lxml 4.1.0.0, libxml2 2.9.5, cssselect 1.0.1, parsel 1.2.0, w3lib 1.18.0, Twisted 17.9.0, Python 3.5.2 (default, Nov 17 2016, 17:05:23) - [GCC 5.4.0 20160609], pyOpenSSL 17.3.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.3, Platform Linux-4.4.0-31-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-05-24 17:48:50 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'school', 'LOG_FILE': 'LOG.txt', 'SPIDER_MODULES': ['school.spiders'], 'CONCURRENT_REQUESTS': 32, 'NEWSPIDER_MODULE': 'school.spiders', 'HTTPCACHE_ENABLED': True, 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'}
+2018-05-24 17:48:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-05-24 17:48:50 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2018-05-24 17:48:50 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-05-24 17:48:51 [scrapy.middleware] INFO: Enabled item pipelines:
+['school.pipelines.SchoolPipeline']
+2018-05-24 17:48:51 [scrapy.core.engine] INFO: Spider opened
+2018-05-24 17:48:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-24 17:48:51 [scrapy.extensions.httpcache] DEBUG: Using filesystem cache storage in /home/python/Desktop/work_code/school_518/.scrapy/httpcache
+2018-05-24 17:48:51 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6026
+2018-05-24 17:48:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bjsdschool.cn> (referer: None)
+2018-05-24 17:48:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bjsdschool.cn>
+{'url_index_doc': 1, 'title': '北京市师达中学', 'keywords2': '北京市师达中学', 'copyrt': '版权所有北京市师达中学   \xa0\xa0教务处:jwc@bjsdschool.cn  \xa0\xa0网络中心:website@bjschool.cn ', 'unique_words': ['学校概况', '校内新闻', '校园风采', '教师风貌', '教学成绩', '学生风采', '家长关注', '招生招聘', '国际教育'], 'url': 'http://www.bjsdschool.cn', 'keywords1': '北京市师达中学北京市师达中学', 'keywords3': '家长关注', 'description': None}
+2018-05-24 17:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bjjyxy.net> (referer: None)
+2018-05-24 17:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bjxbh.net> (referer: None)
+2018-05-24 17:48:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET http://www.bjxcsy.net/shtml/7/index.shtml> from <GET http://www.bjxcsy.net>
+2018-05-24 17:48:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.bowenedu.cn/w/Default.htm> from <GET http://www.bowenedu.cn>
+2018-05-24 17:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bnuwanning.com> (referer: None)
+2018-05-24 17:48:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bjjyxy.net>
+{'url_index_doc': 0, 'title': '宝鸡教育学院首页', 'keywords2': '学院学刊', 'copyrt': '版权所有：陕西省宝鸡教育学院\xa0\xa0 \r\n', 'unique_words': ['学院介绍', '机构设置', '远程教育', '教师培训', '学院学刊', '名师风采'], 'url': 'http://www.bjjyxy.net', 'keywords1': '宝鸡教育学院首页', 'keywords3': '名师风采', 'description': None}
+2018-05-24 17:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bowenedu.cn/w/Default.htm> (referer: None)
+2018-05-24 17:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bjxcsy.net/shtml/7/index.shtml> (referer: None)
+2018-05-24 17:48:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bjxbh.net>
+None
+2018-05-24 17:48:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bnuwanning.com>
+{'url_index_doc': 7, 'title': '北京师范大学万宁附属中学', 'keywords2': '体育园地', 'copyrt': None, 'unique_words': ['学校简介', '学校领导', '学校荣誉', '校园动态', '校园风光', '管理机构', '教师风采', '专业发展', '教师论坛', '课程改革', '课堂教学', '教学科研', '教学通报', '法纪教育', '家长园地', '体育园地', '学子风采', '初中招生', '高中招生', '在校学子', '招生专栏'], 'url': 'http://www.bnuwanning.com', 'keywords1': '北京师范大学万宁附属中学', 'keywords3': '课堂教学', 'description': '北京师范大学万宁附属中学'}
+2018-05-24 17:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.blhqzx.cn> (referer: None) ['partial']
+2018-05-24 17:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bjwgydxfszx.com> (referer: None)
+2018-05-24 17:48:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bowenedu.cn/w/Default.htm>
+{'url_index_doc': 8, 'title': '兰州交通大学博文学院', 'keywords2': '兰州交通大学博文学院', 'copyrt': '学院咨询电话：0931-5272605，0931-5272600    管理员信箱：bwxy@bowenedu.cn    地址：兰州市和平开发区    版权所有：兰州交通大学博文学院 ', 'unique_words': ['学院概况', '学院领导', '机构设置', '系部设置', '教育教学', '招生就业', '校园文化', '教学团队', '特色专业', '信息公开'], 'url': 'http://www.bowenedu.cn', 'keywords1': '网站首页', 'keywords3': '招生就业', 'description': None}
+2018-05-24 17:48:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bjxcsy.net/shtml/7/index.shtml>
+{'url_index_doc': 4, 'title': '北师大二附中西城实验学校', 'keywords2': '党建工会', 'copyrt': '版权所有 北师大二附中西城实验学校', 'unique_words': ['学校概况', '教学工作', '德育之窗', '党建工会', '教育科研', '学生风采', '招生咨询', '教育督导'], 'url': 'http://www.bjxcsy.net', 'keywords1': '北师大二附中西城实验学校', 'keywords3': '德育之窗', 'description': None}
+2018-05-24 17:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bsdcdsy.com> (referer: None)
+2018-05-24 17:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bszyz.cn> (referer: None)
+2018-05-24 17:48:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.blhqzx.cn>
+{'url_index_doc': 6, 'title': '博罗县华侨中学官方网站', 'keywords2': '惠州博罗华侨中学', 'copyrt': 'Copyright © 2012 Boluo Chinese High School. All rights reserved 版权所有 博罗县华侨中学 技术支持：', 'unique_words': ['学校概括', '德育工作', '党群建设', '新闻快递', '名师风采', '学科建设', '教学科研', '特色教育', '招生采贤', '学校管理', '教师作品', '宜春学院', '新余学院'], 'url': 'http://www.blhqzx.cn', 'keywords1': '华侨中学官方网站', 'keywords3': '招生采贤', 'description': None}
+2018-05-24 17:48:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bjwgydxfszx.com>
+{'url_index_doc': 2, 'title': '北京外国语大学附属中学', 'keywords2': '外国语大学附属中学', 'copyrt': '版权所有 © 2014 北京外国语大学附属中学', 'unique_words': ['学校概况', '校园新闻', '党团建设', '教育教学', '学生园地', '校园公告', '招生招聘', '教育督导'], 'url': 'http://www.bjwgydxfszx.com', 'keywords1': '北外附', 'keywords3': '北京外国语大学附属中学', 'description': '描述'}
+2018-05-24 17:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bsydzx.com> (referer: None)
+2018-05-24 17:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.btjz.net.cn> (referer: None)
+2018-05-24 17:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bt202zx.cn> (referer: None)
+2018-05-24 17:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.btyz.com.cn> (referer: None)
+2018-05-24 17:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bszyxy.com> (referer: None)
+2018-05-24 17:48:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bsdcdsy.com>
+{'url_index_doc': 9, 'title': '北京师范大学成都实验中学', 'keywords2': '中学', 'copyrt': '北京师范大学成都实验中学 版权所有 Copyright©2003-2013 All Rights Reserved ', 'unique_words': ['学校概况', '教改科研', '德育建设', '教师风采', '招生招聘', '访客留言'], 'url': 'http://www.bsdcdsy.com', 'keywords1': '成都', 'keywords3': '招生', 'description': None}
+2018-05-24 17:48:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bszyz.cn>
+{'url_index_doc': 13, 'title': '保山中医药高等专科学校', 'keywords2': '学校概况', 'copyrt': '版权所有 © 保山中医药高等专科学校（www.bszyz.cn） ', 'unique_words': ['学校概况', '机构设置', '教育教学', '招生信息', '就业信息', '思政教育'], 'url': 'http://www.bszyz.cn', 'keywords1': '保山中医药高等专科学校', 'keywords3': '机构设置', 'description': None}
+2018-05-24 17:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.byfz.bjedu.cn> (referer: None)
+2018-05-24 17:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bxez.com> (referer: None)
+2018-05-24 17:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bxait.cn> (referer: None)
+2018-05-24 17:48:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET http://817.dopa.com/?dm=bjy.ah.cn&acc=96F52E2F-2CB3-468B-900C-1A4B76552CAB&poprequest=1> from <GET http://www.bjy.ah.cn>
+2018-05-24 17:48:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bsydzx.com>
+None
+2018-05-24 17:48:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.btjz.net.cn>
+{'url_index_doc': 15, 'title': '内蒙古包头市第九中学', 'keywords2': '德育工作', 'copyrt': '版权所有:包头市第九中学现代教育技术中心', 'unique_words': ['学校概况', '党务公开', '校园动态', '教学教研', '德育工作'], 'url': 'http://www.btjz.net.cn', 'keywords1': '内蒙古包头市第九中学', 'keywords3': '校园动态', 'description': None}
+2018-05-24 17:48:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bt202zx.cn>
+{'url_index_doc': 14, 'title': '中学', 'keywords2': '青山区', 'copyrt': '\r\n\r\n                    版权所有：包头市202中学    ', 'unique_words': ['学校概况', '学校简介', '组织机构', '新闻资讯', '教育新闻', '党建工作', '党建园地', '教育科研', '教师队伍', '教学活动', '教师论文', '德育之窗', '便民服务', '学校微信', '招生考试', '招生专栏', '校园生活', '教育督导', '学校正门'], 'url': 'http://www.bt202zx.cn', 'keywords1': '中学', 'keywords3': '内蒙古包头市', 'description': '二○二中学始建于1963年，是青山区唯一的完全中学，包头市首批义务教育示范学校。53年来，培养了大批各类各级人才，近60人曾留学国外，200余人获得硕士以上学位，1978年纪宇生考出包头市第一个自治区理科状元。学校良好的教学业绩曾多次受到中国核工业集团公司、包头市政府、青山区政府和各级教育主管门的嘉奖和表彰，深受二0二厂职工家属及社会各界的好评和信任，是包头市级文明单位，包头市绿色学校，包头市实验教学先进学校、包头市信息技术先进学校、包头市高中教育教学工作先进学校，青山区德管理优秀学校。'}
+2018-05-24 17:48:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bszyxy.com>
+{'url_index_doc': 12, 'title': '百色职业学院', 'keywords2': '百色职业学院', 'copyrt': '版权所有 百色职业学院 桂ICP备16003112号', 'unique_words': ['信息公开', '学院概况', '学院简介', '学院荣誉', '校园风光', '机构设置', '新闻动态', '学院要闻', '图片新闻', '系部导航', '教学科研', '教育教学', '招生就业', '招生信息', '就业服务', '党建思政', '思政教育', '关于学院'], 'url': 'http://www.bszyxy.com', 'keywords1': '职业学院', 'keywords3': '百色职业培训', 'description': '百色职业学院是经广西壮族自治区人民政府批准，国家教育部备案的公办全日制普通高等学校，位于滇、黔、桂三省（区）交界的大西南出海通道枢纽、风景秀丽的百色市。'}
+2018-05-24 17:48:54 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET http://www.caepit.net/zhmain/zhdh/index.htm> from <GET http://www.caepit.net>
+2018-05-24 17:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bzvtc.com> (referer: None)
+2018-05-24 17:48:54 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.caschtzx.com.cn/eduweb/index.php> from <GET http://www.caschtzx.com.cn>
+2018-05-24 17:48:54 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.cbyzsc.cn/cbyz/> from <GET http://www.cbyzsc.cn>
+2018-05-24 17:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bzzyjsxy.cn> (referer: None)
+2018-05-24 17:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bzzhyz.com> (referer: None)
+2018-05-24 17:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bsnc.cn> (referer: None)
+2018-05-24 17:48:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.byfz.bjedu.cn>
+{'url_index_doc': 20, 'title': '北京医学院附属中学', 'keywords2': '北京医学院附属中学', 'copyrt': None, 'unique_words': ['学校介绍', '机构设置', '校园美景', '师资队伍', '图片新闻', '教育教学', '德育之窗', '德育教育', '党团建设', '心理教育', '主题教育', '艺美教育', '美术教育', '书法教育', '科技教育', '招生招聘', '招生考试', '教师招聘', '党建工会', '学校图片', '教育督导', '学校信箱', '学校论坛'], 'url': 'http://www.byfz.bjedu.cn', 'keywords1': '北医附中', 'keywords3': '北大附中承办北医附中', 'description': '北京医学院附属中学,北医附中,北大附中承办北医附中'}
+2018-05-24 17:48:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bxez.com>
+{'url_index_doc': 18, 'title': '山东省博兴第二中学', 'keywords2': '二中', 'copyrt': None, 'unique_words': ['校园新闻', '校园快讯', '学校概况', '学校简介', '学校领导', '组织机构', '校园风光', '教学科研', '教学资讯', '科研动态', '高考资讯', '教学案例', '招生问答', '德育之窗', '心旅导航', '专业发展', '教育案例', '园丁风采', '教师培训', '骨干教师', '名师档案', '莘莘学子', '学子风采', '校友信息', '校园活动', '群团建设', '校务公开', '学校收费', '安全教育'], 'url': 'http://www.bxez.com', 'keywords1': '博兴', 'keywords3': '博兴二中', 'description': '山东省博兴第二中学网站'}
+2018-05-24 17:48:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bxait.cn>
+{'url_index_doc': 17, 'title': '西安工业大学北方信息工程学院', 'keywords2': '学院风光', 'copyrt': None, 'unique_words': ['学院概况', '学院简介', '名师风采', '管理机构', '信息处', '院系设置', '商学院', '教育教学', '就业信息', '学院风光'], 'url': 'http://www.bxait.cn', 'keywords1': '西安工业大学北方信息工程学院', 'keywords3': '管理机构', 'description': '西安工业大学北方信息工程学院是由西安工业大学借助自己的行业、学科、地缘、管理等优势，面向陕西支柱产业国防、制造业需求，联合北方光电科技集团有限公司（原西安北方光电有限公司）和中国兵器工业西北管理局，经教育部2004年5月批准设立的普通高等学校独立学院（教发函[2004]72号）。'}
+2018-05-24 17:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cccz.cn> (referer: None)
+2018-05-24 17:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccswust.com.cn> (referer: None)
+2018-05-24 17:48:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET http://www.caepit.net/gxymain/index.htm> from <GET http://www.caepit.net/zhmain/zhdh/index.htm>
+2018-05-24 17:48:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bzvtc.com>
+{'url_index_doc': 21, 'title': '亳州职业技术学院', 'keywords2': '教辅机构', 'copyrt': None, 'unique_words': ['学院简介', '校园风光', '教学院系', '教辅机构', '专业建设', '教学资源', '成人教育', '学院要闻', '校园动态', '信息公开', '招标信息', '校内信息', '影像校园'], 'url': 'http://www.bzvtc.com', 'keywords1': '亳州职业技术学院', 'keywords3': '校园风光', 'description': None}
+2018-05-24 17:48:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bzzyjsxy.cn>
+{'url_index_doc': 23, 'title': '巴中职业技术学院', 'keywords2': '巴中职业技术学院', 'copyrt': '版权所有：Copyright (c) 2013-2014 All rights reserved \xa0巴中职业技术学院 蜀ICP备15002210号-1', 'unique_words': ['学院概况', '学院领导', '校园风光', '教学系部', '教育系', '行政机构', '科研处', '招生就业', '招生网', '新闻中心', '学院新闻', '海外教育', '招聘公告', '教育部'], 'url': 'http://www.bzzyjsxy.cn', 'keywords1': '职业技术学院', 'keywords3': '行政机构', 'description': None}
+2018-05-24 17:48:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bzzhyz.com>
+{'url_index_doc': 22, 'title': '山东省沾化县第一中学', 'keywords2': '园丁风采', 'copyrt': None, 'unique_words': ['校园风采', '党团建设', '德育之窗', '教师风采', '校务公开', '校园媒体', '健康教育', '教育资源', '校园新闻', '教育随笔', '德育动态', '校园之星', '园丁风采', '校园安全', '级部风采'], 'url': 'http://www.bzzhyz.com', 'keywords1': '山东省沾化县第一中学', 'keywords3': '党团建设', 'description': None}
+2018-05-24 17:48:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.bsnc.cn>
+{'url_index_doc': 10, 'title': '欢迎访问保山学院', 'keywords2': '保山师范高等专科学校', 'copyrt': None, 'unique_words': ['学校概况', '学校简介', '学校章程', '党群机构', '行政机构', '教学机构', '研究机构', '教育教学', '招生就业', '信息公开'], 'url': 'http://www.bsnc.cn', 'keywords1': '保山学院', 'keywords3': '保山学院官网', 'description': '保山学院'}
+2018-05-24 17:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cc29edu.com> (referer: None)
+2018-05-24 17:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cbyzsc.cn/cbyz/> (referer: None)
+2018-05-24 17:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.caschtzx.com.cn/eduweb/index.php> (referer: None)
+2018-05-24 17:48:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cccz.cn>
+{'url_index_doc': 29, 'title': '朝鲜族中学', 'keywords2': '长春市朝鲜族中学', 'copyrt': '\n\t版权所有：长春市朝鲜族中学', 'unique_words': ['学校概况', '学校简介', '师资力量', '学校荣誉', '党建工作', '教师风采', '教育科研', '校园公告', '校园新闻', '校园文化', '获奖教师', '职业教育'], 'url': 'http://www.cccz.cn', 'keywords1': '朝鲜族中学', 'keywords3': '优秀学校', 'description': '长春市朝鲜族中学始建于1956年9月1日，是吉林省重点中学、对外开放窗口学校。2004年为满足朝鲜族学子接受优质教育的需求，市政府投资五千多万元彻底改善朝中办学条件，就地翻建了教学楼、科技楼和学生公寓，同时改造了学校食堂、旧教学楼和操场，总建筑面积31689平方米，全部更新了理、化、生教学设备和办公设备，多媒体设施进班级，实现了班班通；绿化、美化和人文化相统一，艺术性与教育性相结合的校园文化基本到位。'}
+2018-05-24 17:48:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ccswust.com.cn>
+{'url_index_doc': 31, 'title': '西南科技大学城市学院', 'keywords2': '西南科技大学城市学院', 'copyrt': '版权所有 &copy 2012-2015 西南科技大学城市学院\xa0\xa0', 'unique_words': ['西城概况', '组织机构', '西城新闻', '鼎利学院', '土环学院', '通识学院', '经管学院', '工程学院', '师资队伍', '师资概况', '人才招聘', '继续教育', '科研动态', '科研成果', '招生就业', '招生在线', '精品课程', '网络服务'], 'url': 'http://www.ccswust.com.cn', 'keywords1': '城市学院', 'keywords3': '学校', 'description': '西南科技大学城市学院是经教育部批准成立的一所以工科为主，涵盖了工、经、管、文、艺多个学科协调发展的全日制普通高等学校。自开办以来，名校名企名城强强联合，高起点高水平贴近行业办学，短时间内实现了飞跃发展，在人才培养、专业建设、学术研究、科研孵化等多方面取得了令人瞩目的成绩，得到了广大学子和家长们的充分肯定，享有较高的社会声誉。'}
+2018-05-24 17:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://817.dopa.com/?dm=bjy.ah.cn&acc=96F52E2F-2CB3-468B-900C-1A4B76552CAB&poprequest=1> (referer: None)
+2018-05-24 17:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cdjnzx.com> (referer: None)
+2018-05-24 17:48:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.cdqzyc.com/index.html> from <GET http://www.cdqzyc.com>
+2018-05-24 17:48:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET http://www.cdnkxy.com/cdny2017/> from <GET http://www.cdnkxy.com>
+2018-05-24 17:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cdivtc.com> (referer: None)
+2018-05-24 17:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cdb.ac.cn> (referer: None)
+2018-05-24 17:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cd36z.com> (referer: None)
+2018-05-24 17:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cdartpro.cn> (referer: None)
+2018-05-24 17:48:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.ccesy.com/InfoPub25/default.htm> from <GET http://www.ccesy.com>
+2018-05-24 17:48:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET http://www.caepit.net/gxymain/gxy/index.htm> from <GET http://www.caepit.net/gxymain/index.htm>
+2018-05-24 17:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cdlqzx.cn> (referer: None)
+2018-05-24 17:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cddxfz.net> (referer: None)
+2018-05-24 17:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cdgmxy.com> (referer: None)
+2018-05-24 17:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cd33z.com> (referer: None)
+2018-05-24 17:48:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cc29edu.com>
+{'url_index_doc': 28, 'title': '长春市第二十九中学', 'keywords2': '教学管理', 'copyrt': None, 'unique_words': ['党建纵横', '德育园地', '教学管理', '名师风采'], 'url': 'http://www.cc29edu.com', 'keywords1': '长春市第二十九中学', 'keywords3': '名师风采', 'description': '长春市第二十九中学'}
+2018-05-24 17:48:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cbyzsc.cn/cbyz/>
+{'url_index_doc': 27, 'title': '川北幼儿师范高等专科学校官网', 'keywords2': '川北幼儿师范高等专科学校', 'copyrt': None, 'unique_words': ['学校概况', '机构设置', '专业介绍', '教学管理', '名师风采', '视觉校园', '校务公开', '快捷服务'], 'url': 'http://www.cbyzsc.cn', 'keywords1': '川北幼专', 'keywords3': '川北幼儿师范高等专科学校官网', 'description': '川北幼儿师范高等专科学校'}
+2018-05-24 17:48:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.caschtzx.com.cn/eduweb/index.php>
+{'url_index_doc': 25, 'title': '西安市航天中学网站', 'keywords2': '西安市航天中学网站', 'copyrt': '版权所有：西安市航天中学 联系电话：029-85615117  85206473 地址：西安国家民用航天产业基地凤栖东路', 'unique_words': ['学校概况', '学校介绍', '学校领导', '校园文化', '教学设施', '组织机构', '特色教育', '校园资讯', '校园新闻', '党建园地', '教师频道', '名师风采', '教学活动', '教学经验', '德育之窗', '德育活动', '招生信息', '宇花园地'], 'url': 'http://www.caschtzx.com.cn', 'keywords1': '航天中学', 'keywords3': '名师风采', 'description': '航天中学'}
+2018-05-24 17:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cazx.net> (referer: None)
+2018-05-24 17:48:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cdsslz.net/> from <GET http://www.cdsslz.net>
+2018-05-24 17:48:57 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://www.cdsslz.net/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-05-24 17:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.caepit.net/gxymain/gxy/index.htm> (referer: None)
+2018-05-24 17:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ccesy.com/InfoPub25/default.htm> (referer: None)
+2018-05-24 17:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cdnkxy.com/cdny2017/> (referer: None)
+2018-05-24 17:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cdqzyc.com/index.html> (referer: None)
+2018-05-24 17:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cd49.com> (referer: None)
+2018-05-24 17:48:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cdjnzx.com>
+{'url_index_doc': 40, 'title': '成都金牛中学官网', 'keywords2': '成都金牛中学', 'copyrt': '金牛中学版权所有Copyright © 2015 金牛中学', 'unique_words': ['学校概况', '校园文化', '新闻中心', '校园新闻', '教育新闻', '教学研究', '教学科研', '名师风采', '校园明星', '创作园地', '校园足球', '招生信息', '家长学校', '家校信息'], 'url': 'http://www.cdjnzx.com', 'keywords1': '金牛中学', 'keywords3': '成都金牛中学校', 'description': '成都金牛中学 金牛中学 成都金牛中学校'}
+2018-05-24 17:48:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cdivtc.com>
+{'url_index_doc': 39, 'title': '成都工业职业技术学院官网', 'keywords2': '成都市工业职业技术学校', 'copyrt': None, 'unique_words': ['学院概况', '学院简介', '学院领导', '机构设置', '学院标识', '校园风光', '新闻资讯', '学院新闻', '教育教学', '高职教育', '中职教育', '继续教育', '学术科研', '科研动态', '学生园地', '公告信息', '招生就业', '本馆概况', '读者服务', '部门新闻', '党务公开', '院务公开'], 'url': 'http://www.cdivtc.com', 'keywords1': '成都工业职业技术学院', 'keywords3': '院务公开', 'description': '成都工业职业技术学院,成都市工业职业技术学校'}
+2018-05-24 17:48:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cdb.ac.cn>
+{'url_index_doc': 36, 'title': '中国科学院成都分院', 'keywords2': '合作概况', 'copyrt': '版权所有：中国科学院成都分院 技术支持：中国科学院计算机网络信息中心', 'unique_words': ['继续教育', '分院概况', '党的建设', '园区建设', '信息公开', '机构简介', '合作概况', '科研成果', '党建工作', '人才概况', '班子建设', '基地概况', '园区概况', '后勤服务'], 'url': 'http://www.cdb.ac.cn', 'keywords1': '中国科学院成都分院', 'keywords3': '园区建设', 'description': None}
+2018-05-24 17:48:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cdartpro.cn>
+{'url_index_doc': 35, 'title': '成都艺术职业学院', 'keywords2': '竹艺学院', 'copyrt': None, 'unique_words': ['学院概况', '学院简介', '校园风光', '学院荣誉', '学院新闻', '舞蹈学院', '竹艺学院', '单独招生', '就业信息', '教学管理'], 'url': 'http://www.cdartpro.cn', 'keywords1': '成都艺术职业学院', 'keywords3': '学院新闻', 'description': None}
+2018-05-24 17:48:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cdlqzx.cn>
+{'url_index_doc': 41, 'title': '四川省成都市龙泉中学校', 'keywords2': '成都市龙泉中学', 'copyrt': None, 'unique_words': ['学校概况', '信息公开', '教师风采', '学校荣誉', '校园新闻', '德育常规', '德育论坛', '教学动态', '科研课题', '校本课程', '暑假课程', '民主建设', '法制建设', '廉洁建设', '安全教育'], 'url': 'http://www.cdlqzx.cn', 'keywords1': '龙泉中学', 'keywords3': '成都龙泉中学', 'description': '四川省成都市龙泉中学校是四川省一级示范性普通高中（国家级重点高中），位于成都市东大门、国家级成都经济技术开发区-龙泉驿区。'}
+2018-05-24 17:48:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cddxfz.net>
+{'url_index_doc': 37, 'title': '成都大学附属中学', 'keywords2': '学校地图', 'copyrt': None, 'unique_words': ['学校概况', '新闻动态', '教育科研', '德育星空', '师生风采', '招生招聘', '发布信息', '教育论坛', '学校地图'], 'url': 'http://www.cddxfz.net', 'keywords1': '成都大学附属中学', 'keywords3': '教育科研', 'description': None}
+2018-05-24 17:48:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cdgmxy.com>
+{'url_index_doc': 38, 'title': '成都工贸职业技术学院', 'keywords2': '招生信息', 'copyrt': '版权所有©成都工贸', 'unique_words': ['学院概况', '学院简介', '学院领导', '校园英才', '校园导游', '管理机构', '院系设置', '新闻中心', '学院要闻', '综合新闻', '图片新闻', '招生就业', '招生信息', '教育教学', '教学动态', '教学科研', '教学质量', '招生简章'], 'url': 'http://www.cdgmxy.com', 'keywords1': '成都工贸职业技术学院', 'keywords3': '图片新闻', 'description': None}
+2018-05-24 17:48:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cd33z.com>
+{'url_index_doc': 32, 'title': '成都', 'keywords2': '成都', 'copyrt': None, 'unique_words': ['学校概况', '学校简介', '校园风景', '校园文化', '校园视频', '学校动态', '校园公告', '校园动态', '教师中心', '教师风采', '教师培训', '禁毒教育', '教师活动', '学生风采', '校园之星', '教育科研', '教学研讨', '教学管理', '采购信息'], 'url': 'http://www.cd33z.com', 'keywords1': '成都市第三十三中学校', 'keywords3': '校园视频', 'description': '三十三中'}
+2018-05-24 17:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cdutetc.cn> (referer: None)
+2018-05-24 17:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cdtz.net> (referer: None)
+2018-05-24 17:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cdsdsy.net> (referer: None)
+2018-05-24 17:48:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cazx.net>
+{'url_index_doc': 26, 'title': '无锡市长安中学', 'keywords2': '党建园地', 'copyrt': '版权所有：无锡市长安中学', 'unique_words': ['教育督导', '社区教育', '学校概况', '校务公开', '党建园地', '学校文件', '德育园地', '教学研究', '教师园地', '学生园地', '校园动态', '政务公开', '党务公开', '党建动态', '安全教育', '社区新闻'], 'url': 'http://www.cazx.net', 'keywords1': '无锡市长安中学', 'keywords3': '校务公开', 'description': None}
+2018-05-24 17:48:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.caepit.net/gxymain/gxy/index.htm>
+{'url_index_doc': 24, 'title': '中国工程物理研究院职工工学院', 'keywords2': '校园一角', 'copyrt': '\r\n    版权所有 中国工程物理研究院职工工学院 @CopyRight 2010 by caepit.com All Rights Reserved', 'unique_words': ['学院概况', '学院简介', '校园一角', '院士风采', '教育教学', '专业建设', '技术服务', '服务项目', '培训信息', '公共服务', '班车信息', '学院位置', '维普资讯', '招生代码'], 'url': 'http://www.caepit.net', 'keywords1': '中国工程物理研究院职工工学院', 'keywords3': '技术服务', 'description': None}
+2018-05-24 17:49:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ccesy.com/InfoPub25/default.htm>
+{'url_index_doc': 30, 'title': '长春二实验中学', 'keywords2': '教师园地', 'copyrt': '版权所有 2011—2012 长春二实验中学 | 吉ICP备12000487号 ', 'unique_words': ['教师园地', '教学工作', '德育频道', '招生专栏'], 'url': 'http://www.ccesy.com', 'keywords1': '长春二实验中学', 'keywords3': '德育频道', 'description': None}
+2018-05-24 17:49:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cdnkxy.com/cdny2017/>
+{'url_index_doc': 42, 'title': '成都农业科技职业学院欢迎您', 'keywords2': '招生政策', 'copyrt': '成都农业科技职业学院版权所有 ©2002,2008,2010,2014,2017年\u3000', 'unique_words': ['数字校园', '二级学院', '管理机构', '学院概况', '学院简介', '机构设置', '校园地图', '招生政策', '高职教育', '继续教育', '专业建设', '招聘信息', '教师教育', '网络教学', '农院名师', '社会服务', '精品课程', '信息公开'], 'url': 'http://www.cdnkxy.com', 'keywords1': '成都农业科技职业学院欢迎您', 'keywords3': '学院概况', 'description': None}
+2018-05-24 17:49:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cdqzyc.com/index.html>
+None
+2018-05-24 17:49:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cd49.com>
+{'url_index_doc': 34, 'title': '成都四十九中', 'keywords2': '组织机构', 'copyrt': None, 'unique_words': ['学校概况', '组织机构', '校园文化', '校园新闻', '校园动态', '校务公开', '媒体新闻', '党建工作', '教育科研', '校本课程', '家长学校', '学校荣誉', '教师荣誉'], 'url': 'http://www.cd49.com', 'keywords1': '成都四十九中', 'keywords3': '媒体新闻', 'description': '成都四十九中'}
+2018-05-24 17:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cdzy.cn> (referer: None)
+2018-05-24 17:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cdyz.he.cn> (referer: None)
+2018-05-24 17:49:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cdutetc.cn>
+{'url_index_doc': 48, 'title': '成都理工大学工程技术学院', 'keywords2': '科研处', 'copyrt': None, 'unique_words': ['学院概况', '学院简介', '学院校史', '教师风采', '校园风光', '继续教育', '科研处', '学院党委', '学院纪委', '学院工会', '学院团委', '新闻中心', '信息公开'], 'url': 'http://www.cdutetc.cn', 'keywords1': '成都理工大学工程技术学院', 'keywords3': '教师风采', 'description': '成都理工大学工程技术学院是由中国核工业西南物理研究院与成都理工大学在“产、学、研”全面合作的基础上强强联合、于2000年在亚洲最大的受控核聚变实验基地创办的以工学为主,多学科协调发展的全日制普通高等学校（国有、公办），是国家教育部批准的第一批独立学院。'}
+2018-05-24 17:49:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cdtz.net>
+{'url_index_doc': 47, 'title': '成都市铁路中学', 'keywords2': '成都市铁路中学', 'copyrt': 'COPYRIGHT 2009 成都市铁路中学版权所有\xa0', 'unique_words': ['校园文化', '学校期刊', '教改科研', '校园风光', '招生资讯'], 'url': 'http://www.cdtz.net', 'keywords1': '成都铁中', 'keywords3': '成都铁路中学', 'description': '成都铁中,成都市铁路中学,成都铁路中学,四川成都铁路中学,四川省成都铁路中学,成都铁路中学'}
+2018-05-24 17:49:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cdsdsy.net>
+None
+2018-05-24 17:49:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cdzy.cn>
+{'url_index_doc': 50, 'title': '常德职业技术学院', 'keywords2': '留学生', 'copyrt': '常德职业技术学院版权所有 Copyright ©2003-2017 地址:常德市人民路4253号\xa0 ', 'unique_words': ['学院概况', '专业导航', '信息公开', '教育学院', '教育部'], 'url': 'http://www.cdzy.cn', 'keywords1': '常德职业技术学院', 'keywords3': '医学', 'description': '常德职业技术学院是坐落在桃花源里的城市－常德的一所湖南省级示范高职院校。现有护理系、医学系、药学系、经管系、机电系、汽车系、建筑系、农林工程系、现代教育技术中心等八系一部一中心等教学单位，有一所教育学院，两所附属医院，一所司法鉴定中心，现已获批招收留学生。'}
+2018-05-24 17:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.changliuzx.com> (referer: None)
+2018-05-24 17:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.changchun137.cn> (referer: None)
+2018-05-24 17:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.changqing.org.cn> (referer: None)
+2018-05-24 17:49:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.changliuzx.com>
+{'url_index_doc': 52, 'title': '海口市长流中学欢迎您', 'keywords2': '长流中学', 'copyrt': 'Copyright © 2013-2016 海口市长流中学 版权所有 ', 'unique_words': ['学校新闻', '教师风采', '教学科研', '菁菁校园', '莘莘学子', '招生招聘', '校园风光', '学生德育'], 'url': 'http://www.changliuzx.com', 'keywords1': '长流', 'keywords3': '海口市长流中学', 'description': '长流中学,长中，海口市长流中学，长流，'}
+2018-05-24 17:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.chaoshan.cn> (referer: None)
+2018-05-24 17:49:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.changchun137.cn>
+{'url_index_doc': 51, 'title': '长春市一三七中学网站', 'keywords2': '学校简介', 'copyrt': 'Copyright © 2016   长春市137中学 版权所有', 'unique_words': ['学校简介', '教学天地', '德育之窗', '党建视窗', '平安校园', '后勤服务'], 'url': 'http://www.changchun137.cn', 'keywords1': '长春市一三七中学网站', 'keywords3': '党建视窗', 'description': '长春市一三七中学原为长春铁路分局所属的长春铁路中学,始建于1952年,是首批吉林省重点高中,2006年与机车厂子弟中学合并而成为一三七中学,学校地处凯旋路11号,毗邻长春火车站,交通便利,校园环境优美,规模适中,配有先进的教学设施,雄厚的师资力量。'}
+2018-05-24 17:49:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.changqing.org.cn>
+{'url_index_doc': 53, 'title': '上海民办常青中学', 'keywords2': '校务公开', 'copyrt': '\n          版权所有：上海民办常青中学 沪ICP备12009324号-1', 'unique_words': ['校务公开', '教学频道', '德育频道'], 'url': 'http://www.changqing.org.cn', 'keywords1': '上海民办常青中学', 'keywords3': '德育频道', 'description': '上海民办常青中学'}
+2018-05-24 17:49:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.chaoshan.cn>
+{'url_index_doc': 54, 'title': '潮汕职业技术学院', 'keywords2': '职业技术学院', 'copyrt': None, 'unique_words': ['学院概况', '继续教育', '学院简介', '校园风光', '学院荣誉', '学院视频', '信息公开', '特色教育', '专业介绍', '招生简章', '招生计划', '创业学院', '教学督导', '党建动态', '党员风采', '学生党建', '新闻动态', '招聘信息', '招生专业', '校友新闻', '校友风采', '校友服务', '院内新闻', '创业新闻', '院外新闻', '校园一角', '教育部'], 'url': 'http://www.chaoshan.cn', 'keywords1': '潮汕', 'keywords3': '潮汕大学', 'description': '潮汕职业技术学院,职业技术学院,专科学校,专科学院,高职院校,潮汕,潮汕大学'}
+2018-05-24 17:49:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.chwedu.com> (referer: None)
+2018-05-24 17:49:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.chdxhxy.com> (referer: None)
+2018-05-24 17:49:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.chcedu.cn> (referer: None)
+2018-05-24 17:49:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.chdxhxy.com>
+None
+2018-05-24 17:49:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.chsdyzx.com> (referer: None)
+2018-05-24 17:49:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.chcedu.cn>
+{'url_index_doc': 55, 'title': '成都信息工程大学银杏酒店管理学院', 'keywords2': '银杏学院', 'copyrt': None, 'unique_words': ['科研处', '目标教育', '新生导航'], 'url': 'http://www.chcedu.cn', 'keywords1': '银杏酒店管理学院', 'keywords3': '新生导航', 'description': None}
+2018-05-24 17:49:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cjfrsy.com> (referer: None)
+2018-05-24 17:49:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cijizx.com> (referer: None)
+2018-05-24 17:49:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.chsdyzx.com>
+{'url_index_doc': 57, 'title': '巢湖第一中学', 'keywords2': '数字校园', 'copyrt': None, 'unique_words': ['党群园地', '德育天地', '教学教研', '年级风采', '创新教育', '数字校园'], 'url': 'http://www.chsdyzx.com', 'keywords1': '巢湖第一中学', 'keywords3': '党群园地', 'description': None}
+2018-05-24 17:49:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cjfrsy.com>
+None
+2018-05-24 17:49:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cijizx.com>
+{'url_index_doc': 59, 'title': '欢迎访问慈吉中学', 'keywords2': '欢迎访问慈吉中学', 'copyrt': '\r\n             ©2010-2012 慈溪市慈吉中学 版权所有 浙ICP备12021347号-1 ', 'unique_words': ['慈吉概况', '新闻动态', '教学科研', '党建工作'], 'url': 'http://www.cijizx.com', 'keywords1': '慈吉中学', 'keywords3': '党建工作', 'description': '慈吉中学'}
+2018-05-24 17:49:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.clxsyzx.net> (referer: None)
+2018-05-24 17:49:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cjbjedu.com> (referer: None)
+2018-05-24 17:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cjsyedu.com> (referer: None)
+2018-05-24 17:49:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.clxsyzx.net>
+{'url_index_doc': 65, 'title': '山东省昌乐县实验中学', 'keywords2': '昌乐教育', 'copyrt': '版权所有：', 'unique_words': ['学校概况', '学校新闻', '教育科研', '教师园地', '昌乐教育', '实中资讯'], 'url': 'http://www.clxsyzx.net', 'keywords1': '实验中学', 'keywords3': '初级中学', 'description': '昌乐县实验中学靠亲和凝心聚力、靠制度精细规范、靠创新突破提升，致力培养文质彬彬的阳光学子，打造尚礼致和的精品学校，办有内涵、有质量、人民满意的教育，使之成为打造现代教育名城征程上新的有力支撑。'}
+2018-05-24 17:49:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cjsyedu.com>
+{'url_index_doc': 64, 'title': '长沙市长郡双语实验中学', 'keywords2': '国际教育', 'copyrt': '2009 @ 长沙市长郡双语实验中学版权所有 湘ICP备13008653号\xa0\xa0', 'unique_words': ['学校概况', '党建纪检', '教学教研', '德育园地', '阳光服务', '国际教育', '教育督导', '后勤服务', '云校园'], 'url': 'http://www.cjsyedu.com', 'keywords1': '长沙市长郡双语实验中学', 'keywords3': '学校概况', 'description': '长沙市长郡双语实验中学'}
+2018-05-24 17:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cnsnvc.com> (referer: None)
+2018-05-24 17:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cjbjedu.com/?WebShieldSessionVerify=14yRfFteDvHhtxflOeyW> (referer: http://www.cjbjedu.com)
+2018-05-24 17:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cixiyucai.com> (referer: None)
+2018-05-24 17:49:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cnsnvc.com>
+{'url_index_doc': 66, 'title': '四川护理职业学院', 'keywords2': '四川护理职业学院', 'copyrt': '版权所有：四川护理职业学院\xa0|\xa0Copyright@2015-2018 All rights reserved', 'unique_words': ['信息公开', '综合服务', '学院概况', '学院简介', '组织机构', '学院标识', '校园风光', '学院新闻', '校园直观', '高教信息', '党建工作', '廉政建设', '教学工作', '师资队伍', '专科教育', '中职教育', '成人教育', '学科建设', '科研信息', '招生就业', '招生工作'], 'url': 'http://www.cnsnvc.com', 'keywords1': '护理职业学院', 'keywords3': '护理学院', 'description': None}
+2018-05-24 17:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cnu2school.bjedu.cn> (referer: None)
+2018-05-24 17:49:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cixiyucai.com>
+{'url_index_doc': 60, 'title': '浙江省慈溪育才中学', 'keywords2': '德育天地', 'copyrt': 'Copyright 1998-2012 | 浙江省慈溪育才中学（初中部） 版权所有 | ', 'unique_words': ['学校概况', '学校简介', '学校荣誉', '美丽校园', '文化建设', '校园动态', '校园新闻', '信息公告', '获奖信息', '教师频道', '名师风采', '育才园地', '家长学校', '家长留言', '招生专栏', '招生信息', '招生录取', '德育天地', '学科建设', '网站导航'], 'url': 'http://www.cixiyucai.com', 'keywords1': '浙江省慈溪育才中学', 'keywords3': '学校概况', 'description': '浙江省慈溪育才中学'}
+2018-05-24 17:49:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cnu2school.bjedu.cn>
+{'url_index_doc': 67, 'title': '首都师范大学第二附属中学', 'keywords2': '招聘信息', 'copyrt': '制作维护：信息化办公室     @2016 首都师范大学第二附属中学   版权所有', 'unique_words': ['学校概况', '校园快讯', '魅力教师', '校园生活', '教学科研', '招生招聘', '学校简介', '优秀教师', '俊美学子', '多彩课程', '教学动态', '科研基地', '招生信息', '招聘信息', '党建动态', '校园风景'], 'url': 'http://www.cnu2school.bjedu.cn', 'keywords1': '首都师范大学第二附属中学', 'keywords3': '优秀教师', 'description': '首都师范大学第二附属中学'}
+2018-05-24 17:49:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cnuschool.org> (referer: None)
+2018-05-24 17:49:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cnuschool.org>
+{'url_index_doc': 68, 'title': '首都师大附中', 'keywords2': '首都师大', 'copyrt': '版权所有 All Rights Reserved 京ICP备05027814号 京公网安备11010802010814号 \xa0\xa0地址:北京市海淀区北洼路33号 电话:(010)68902962 邮编:100048 ', 'unique_words': ['学校概况', '校园快讯', '教学科研', '课程活动', '招生信息', '招聘信息', '信息公开', '教学平台'], 'url': 'http://www.cnuschool.org', 'keywords1': '附中', 'keywords3': '首师大', 'description': '首都师范大学附中,首都师大,首师大,附中,附属中学,中学,师范大学附中,首师大附中,'}
+2018-05-24 17:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cjbjedu.com/?WebShieldSessionVerify=14yRfFteDvHhtxflOeyW/> (referer: http://www.cjbjedu.com/?WebShieldSessionVerify=14yRfFteDvHhtxflOeyW)
+2018-05-24 17:49:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.cpyz.org.cn/cpyz> from <GET http://www.cpyz.org.cn>
+2018-05-24 17:49:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.cpyz.org.cn/cpyz/> from <GET http://www.cpyz.org.cn/cpyz>
+2018-05-24 17:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cpsz.cn> (referer: None)
+2018-05-24 17:49:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cjbjedu.com/?WebShieldSessionVerify=14yRfFteDvHhtxflOeyW/>
+{'url_index_doc': 61, 'title': '长郡滨江中学', 'keywords2': '后勤服务', 'copyrt': '版权所有 ICP备案\xa0湘ICP备17004658号\xa0\xa0', 'unique_words': ['学校概况', '校园风貌', '新闻中心', '校园新闻', '集团新闻', '校园足球', '教师风采', '学校德育', '德育管理', '心理教育', '招生招聘', '招生信息', '招聘信息', '教师招聘', '后勤服务', '党建网站', '云校园'], 'url': 'http://www.cjbjedu.com', 'keywords1': '长郡滨江中学', 'keywords3': '招聘信息', 'description': None}
+2018-05-24 17:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cpyz.org.cn/cpyz/> (referer: None)
+2018-05-24 17:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cnzx.com.cn> (referer: None)
+2018-05-24 17:49:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cpsz.cn>
+{'url_index_doc': 71, 'title': '北京市昌平区第四中学', 'keywords2': '教育法规', 'copyrt': 'Copyright 2015 All 北京市昌平区第四中学 版权所有', 'unique_words': ['学校概况', '师资力量', '教学工作', '德育工作', '学校荣誉', '教师荣誉', '精彩教师', '招生政策', '教育法规', '招聘信息', '教育督导', '信息门户', '教育导航'], 'url': 'http://www.cpsz.cn', 'keywords1': '北京市昌平区第四中学', 'keywords3': '学校概况', 'description': None}
+2018-05-24 17:49:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cpyz.org.cn/cpyz/>
+{'url_index_doc': 72, 'title': '北京市昌平区第一中学', 'keywords2': '招生信息', 'copyrt': '版权所有：Copyrights Reserved©北京市昌平区第一中学    京公网安备1101140337号      京ICP备16036388号', 'unique_words': ['学校概况', '学校简介', '师资力量', '校园设施', '教学园地', '教学活动', '教学资源', '科研成果', '名师风采', '教师研修', '德育之窗', '德育活动', '党建园地', '团队建设', '主题教育', '特色教育', '国际教育', '科技教育', '体艺教育', '健康教育', '校本课程', '友好学校', '招生专栏', '美丽校园', '服务指南', '校园新闻', '教育动态', '师生风采', '招生信息'], 'url': 'http://www.cpyz.org.cn', 'keywords1': '北京市昌平区第一中学', 'keywords3': '德育活动', 'description': ''}
+2018-05-24 17:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cjmxhedu.com> (referer: None)
+2018-05-24 17:49:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cjmxhedu.com>
+{'url_index_doc': 63, 'title': '长郡梅溪湖中学', 'keywords2': '德育园地', 'copyrt': '邮编：410205 \xa0&nbsp；版权所有：长沙市长郡梅溪湖中学   湘ICP备14000697号-2 湘教QS7_201310_001628 \xa0\xa0\xa0\xa0\r\n\r\n\t\t                ', 'unique_words': ['学校概况', '阳光服务', '德育园地', '招生招聘', '党建工作', '云校园'], 'url': 'http://www.cjmxhedu.com', 'keywords1': '长郡梅溪湖中学', 'keywords3': '党建工作', 'description': '长郡梅溪湖中学'}
+2018-05-24 17:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cq18.cn> (referer: None)
+2018-05-24 17:49:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cq37.com.cn> (referer: None)
+2018-05-24 17:49:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cq18.cn>
+{'url_index_doc': 73, 'title': '重庆市第十八中学', 'keywords2': '新闻快报', 'copyrt': '重庆市第十八中学·版权所有 1949-2008\n\t\t\t', 'unique_words': ['学校概况', '学校简介', '校务指南', '学校荣誉', '校园动态', '学校掠影', '新闻快报', '校园生活', '校务公开', '校园广播', '教学科研', '砺新课程', '教学动态', '科研课题', '国际教育', '招生简章', '教师风采', '教师文苑', '学子风采', '党务公开', '党建动态', '招生招聘', '招聘启事', '招生咨询', '信息通知', '信息平台'], 'url': 'http://www.cq18.cn', 'keywords1': '重庆市第十八中学', 'keywords3': '学子风采', 'description': None}
+2018-05-24 17:49:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cq37.com.cn>
+{'url_index_doc': 75, 'title': '重庆市第三十七中学校', 'keywords2': '学科建设', 'copyrt': '重庆市第三十七中学校 版权所有 ', 'unique_words': ['学校首页', '学校概况', '学校沿革', '学校荣誉', '教师获奖', '党建园地', '组织建设', '党员风采', '德育立人', '德育动态', '队伍建设', '社团建设', '安全教育', '教学科研', '学科建设', '家庭教育', '课程设置', '书香校园', '学校史料', '校友风采', '校园服务', '校内机构'], 'url': 'http://www.cq37.com.cn', 'keywords1': '重庆市第三十七中学校', 'keywords3': '校园服务', 'description': None}
+2018-05-24 17:49:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cq42.com> (referer: None)
+2018-05-24 17:49:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cq68z.cn> (referer: None)
+2018-05-24 17:49:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cq42.com>
+{'url_index_doc': 76, 'title': '重庆市第四十二中学校', 'keywords2': '教师风采', 'copyrt': None, 'unique_words': ['学校概况', '新闻中心', '校园党建', '特色教育', '教学园地', '德育园地', '招生栏目', '校务公开', '党建动态', '招生公告', '学生园地', '教师风采'], 'url': 'http://www.cq42.com', 'keywords1': '重庆市第四十二中学校', 'keywords3': '招生栏目', 'description': None}
+2018-05-24 17:49:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cq68z.cn>
+None
+2018-05-24 17:49:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cq32zx.com> (referer: None)
+2018-05-24 17:49:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cq32zx.com>
+{'url_index_doc': 74, 'title': '重庆市第三十二中学', 'keywords2': '图片新闻', 'copyrt': '重庆市第三十二中学 版权所有  CopyRight 2014-2015 渝ICP备13007142号', 'unique_words': ['学校简介', '学校领导', '校园风貌', '师资团队', '校园新闻', '教育快讯', '图片新闻', '视频新闻', '教师论文', '校本课程', '教师培训', '建设动态', '校园安全', '学校荣誉'], 'url': 'http://www.cq32zx.com', 'keywords1': '重庆市第三十二中学', 'keywords3': '视频新闻', 'description': None}
+2018-05-24 17:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqbszx.com.cn> (referer: None)
+2018-05-24 17:49:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqbszx.com.cn>
+None
+2018-05-24 17:49:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.cqbxzx.com/web/index.asp> from <GET http://www.cqbxzx.com>
+2018-05-24 17:49:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.cqbxzx.com/web/Index.html> from <GET http://www.cqbxzx.com/web/index.asp>
+2018-05-24 17:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqbyxy.com> (referer: None)
+2018-05-24 17:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqbz.cn> (referer: None)
+2018-05-24 17:49:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqbyxy.com>
+{'url_index_doc': 80, 'title': '重庆房地产职业学院', 'keywords2': '校园手机', 'copyrt': '版权所有：重庆房地产职业学院\xa0\xa0技术支持：现代教育技术中心', 'unique_words': ['数字校园', '学校简介', '学校领导', '学校标示', '名师队伍', '校园新闻', '管理机构', '教学机构', '教学管理', '继续教育', '科研概况', '科研平台', '科研规定', '招聘信息', '信息公开', '校园手机'], 'url': 'http://www.cqbyxy.com', 'keywords1': '重庆房地产职业学院', 'keywords3': '教学机构', 'description': '重庆房地产职业学院'}
+2018-05-24 17:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqbxzx.com/web/Index.html> (referer: None)
+2018-05-24 17:49:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqbz.cn>
+None
+2018-05-24 17:49:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqbxzx.com/web/Index.html>
+{'url_index_doc': 79, 'title': '重庆市实验中学', 'keywords2': '巴中学子', 'copyrt': None, 'unique_words': ['学校概况', '名校名师', '学校简介', '学校历史', '学校荣誉', '校园一览', '巴中学子', '党建工作', '党务公开', '月度风采', '学习园地', '教学科研', '教学探索', '德育研究', '三我德育', '德育论文', '心理教育', '学生园地', '外籍教师', '校务公开', '德育处', '空飞招生', '科技教育', '济航招生', '德育活动', '课程资源', '学校校报', '校园邮箱', '基地建设'], 'url': 'http://www.cqbxzx.com', 'keywords1': '重庆市实验中学', 'keywords3': '党建工作', 'description': None}
+2018-05-24 17:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cnyjpt.cn> (referer: None)
+2018-05-24 17:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqcfe.com> (referer: None)
+2018-05-24 17:49:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cnyjpt.cn>
+{'url_index_doc': 69, 'title': '阳江职业技术学院欢迎您', 'keywords2': '职业教育', 'copyrt': '\r\n            地址:广东省阳江市江城区东山路213号 邮编:529566 招生专线：0662-3362800、0662-2239158  传真:0662-3316729 \r\n            粤ICP备17149655号 Copyright © 2015-2016 阳江职业技术学院 版权所有  设计维护:网络与教育技术中心\r\n           \r\n          ', 'unique_words': ['机构设置', '系部专业', '人事招聘', '学校概况', '精品课程', '学院领导', '学院寄语', '信息公开', '名师名教', '学院地图', '学院新闻', '视频新闻'], 'url': 'http://www.cnyjpt.cn', 'keywords1': '阳江', 'keywords3': '高等教育', 'description': '阳江职业技术学院是经广东省人民政府批准设立，国家教育部备案，阳江市人民政府举办的综合性普通高等学校。学院以“崇德远志，精艺博才”为校训，按照“立足地方，以区域发展需要的专业为主体；培养可持续发展的高技能实操型人才；建设为区域发展做出重要贡献的高等职业院校”的办学定位，办优师范、办强工科，突出优势，凝聚特色，注重实践能力的培养和人文素质的教育。培养人民满意、社会需要、具有持续竞争力的应用型职业技能人才。'}
+2018-05-24 17:49:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqcfe.com>
+{'url_index_doc': 82, 'title': '重庆财经职业学院', 'keywords2': '师资队伍', 'copyrt': None, 'unique_words': ['学院概况', '校园风景', '机构设置', '党建工作', '新闻中心', '系部新闻', '师资队伍', '教学团队', '教师培训', '人才招聘', '教师风采', '教学管理', '继续教育', '招生就业', '校园文化', '公共服务', '校园导游'], 'url': 'http://www.cqcfe.com', 'keywords1': '重庆财经职业学院', 'keywords3': '人才招聘', 'description': 'null'}
+2018-05-24 17:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqdd.cq.cn> (referer: None)
+2018-05-24 17:49:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cqcmxy.com/default.html> from <GET http://www.cqcmxy.com>
+2018-05-24 17:49:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqdd.cq.cn>
+{'url_index_doc': 85, 'title': '重庆广播电视大学', 'keywords2': '机构设置', 'copyrt': '重庆广播电视大学 版权所有 渝ICP备05003321号-1 ', 'unique_words': ['学校首页', '学校概况', '机构设置'], 'url': 'http://www.cqdd.cq.cn', 'keywords1': '重庆广播电视大学', 'keywords3': '学校概况', 'description': None}
+2018-05-24 17:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqcvc.com.cn> (referer: None)
+2018-05-24 17:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqcmxy.com/default.html> (referer: None)
+2018-05-24 17:49:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqcvc.com.cn>
+{'url_index_doc': 84, 'title': '重庆城市职业学院', 'keywords2': '教学团队', 'copyrt': None, 'unique_words': ['学院概况', '学院标识', '机构设置', '课程建设', '继续教育', '招生就业', '师资队伍', '教学团队', '教师培训', '教师风采', '人才招聘', '科研管理', '城职风采', '教学活动', '信息公开', '公共服务', '校园导航', '智慧校园'], 'url': 'http://www.cqcvc.com.cn', 'keywords1': '重庆城市职业学院', 'keywords3': '机构设置', 'description': '重庆城市职业学院'}
+2018-05-24 17:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqdxxy.com.cn> (referer: None)
+2018-05-24 17:49:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqcmxy.com/default.html>
+{'url_index_doc': 83, 'title': '重庆传媒职业学院', 'keywords2': '重庆传媒', 'copyrt': None, 'unique_words': ['新闻资讯', '学院新闻', '学院概况', '学院简介', '师资队伍', '校园风光', '招生就业', '继续教育', '创业教育', '机构设置', '院系设置', '教学团队', '精品课程', '学校校历', '校园文化', '党建之窗', '组织建设', '学风建设', '组织机构', '示范教育', '信息公开'], 'url': 'http://www.cqcmxy.com', 'keywords1': '传媒', 'keywords3': '重庆传媒职业学院', 'description': '重庆传媒职业学院是经重庆市人民政府批准、教育部备案设立的全日制普通高校（教育部代码：12756）联系信息：02345615799 重庆市铜粱区学府大道302号'}
+2018-05-24 17:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqdledu.com> (referer: None)
+2018-05-24 17:49:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqdxxy.com.cn>
+{'url_index_doc': 88, 'title': '重庆电讯职业学院', 'keywords2': '美丽校园', 'copyrt': '\r\n\t\t\t\tCopyRight 2014-2016 www.cqdxxy.com.cn 版权所有   |   备案编号:渝ICP备15000778  |    渝公网安备 50011602500208号\r\n\t\t\t', 'unique_words': ['信息公开', '学校概况', '学院简介', '学院领导', '校园文化', '名师风采', '美丽校园', '学院位置', '院系设置', '党建在线'], 'url': 'http://www.cqdxxy.com.cn', 'keywords1': '重庆电讯职业学院', 'keywords3': '学校概况', 'description': ''}
+2018-05-24 17:49:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.cqepc.cn/index.html> from <GET http://www.cqepc.cn>
+2018-05-24 17:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqdpzx.com> (referer: None)
+2018-05-24 17:49:10 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqdledu.com>
+{'url_index_doc': 86, 'title': '重庆电力职工大学', 'keywords2': '欢迎您', 'copyrt': None, 'unique_words': ['学校概况', '校园新闻', '管理机构', '教学工作', '招生就业', '教育新闻'], 'url': 'http://www.cqdledu.com', 'keywords1': '重庆电力职工大学', 'keywords3': '招生就业', 'description': None}
+2018-05-24 17:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqepc.com.cn> (referer: None)
+2018-05-24 17:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqeec.com> (referer: None)
+2018-05-24 17:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqepc.cn/index.html> (referer: None)
+2018-05-24 17:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqdpzx.com/?WebShieldSessionVerify=xh64K2p4T3B2RBkVXSHP> (referer: http://www.cqdpzx.com)
+2018-05-24 17:49:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqeec.com>
+{'url_index_doc': 90, 'title': '重庆信息技术职业学院', 'keywords2': '信息公开', 'copyrt': None, 'unique_words': ['学院简介', '学院领导', '组织机构', '校园风光', '软件学院', '经贸学院', '招生就业', '党建在线', '信息公开', '教学平台', '学院视频'], 'url': 'http://www.cqeec.com', 'keywords1': '重庆信息技术职业学院', 'keywords3': '经贸学院', 'description': '重庆信息技术职业学院是经重庆市人民政府批准 、教育部公布备案的全日制民办普通高等院校（教育部国标代码：12755），学院位于重庆市第二大城市、千古文化古都万州，有金龙、天城两个校区，占地近1000亩，在校生近10000人，面向全国招生。截至2017年10月，学院设有软件学院、电子工程学院、经贸学院、表演艺术学院、应用技术学院、继续教育学院6个二级学院，开设软件技术、会计、电子商务技术、动漫制作技术、舞蹈表演和现代流行音乐等35个专业。'}
+2018-05-24 17:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqfls.cn> (referer: None)
+2018-05-24 17:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqghnz.com> (referer: None)
+2018-05-24 17:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqfjzx.com.cn> (referer: None)
+2018-05-24 17:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqgcxy.com> (referer: None)
+2018-05-24 17:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqfudan.com> (referer: None)
+2018-05-24 17:49:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqepc.cn/index.html>
+{'url_index_doc': 91, 'title': '重庆航天职业技术学院', 'keywords2': '公共服务', 'copyrt': None, 'unique_words': ['学院概况', '学院简介', '机构设置', '校园风光', '校园文化', '士官学院', '师资队伍', '招生就业', '教改科研', '公共服务', '教学服务', '后勤服务', '学院公告', '党务公开', '综合信息', '校园动态', '信息公开', '院系导航', '精品课程'], 'url': 'http://www.cqepc.cn', 'keywords1': '重庆航天职业技术学院', 'keywords3': '机构设置', 'description': None}
+2018-05-24 17:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqepc.com.cn/default.html> (referer: http://www.cqepc.com.cn)
+2018-05-24 17:49:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqfls.cn>
+{'url_index_doc': 94, 'title': '重庆外国语学校', 'keywords2': '学校简介', 'copyrt': ' © 2015-2018 四川外国语大学附属外国语学校\u3000重外新闻团\u3000版权所有！\u3000校信息中心\u3000技术支持！', 'unique_words': ['学校简介', '新闻中心', '校园动态', '教学科研', '德育工作', '家长学校', '校园生活', '数字校园', '校园节目'], 'url': 'http://www.cqfls.cn', 'keywords1': '重庆外国语学校', 'keywords3': '数字校园', 'description': ''}
+2018-05-24 17:49:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqghnz.com>
+{'url_index_doc': 97, 'title': '重庆护士职业学校', 'keywords2': '重庆护士学校', 'copyrt': None, 'unique_words': ['学校简介', '新闻中心', '专业设置', '校园文化', '招生频道', '教育教学'], 'url': 'http://www.cqghnz.com', 'keywords1': '重庆卫校', 'keywords3': '重庆南丁卫校', 'description': '重庆护士职业学校是全国卫生系统先进单位、全国护理专业领域技能型紧缺人才培养培训基地,国家承认学位,毕业分配工作,实力雄厚的公办中等职业学校。开设专业:中级护理、高级护理、药学、临床医学等热门专业。'}
+2018-05-24 17:49:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqfjzx.com.cn>
+{'url_index_doc': 93, 'title': '重庆市奉节中学校', 'keywords2': '重庆市奉节中学校', 'copyrt': '版权所有：重庆市奉节中学校', 'unique_words': ['学校简介', '学校新闻', '德育天地', '教学教研', '党建群体', '教师风采', '校友风采', '体艺风采', '招生信息'], 'url': 'http://www.cqfjzx.com.cn', 'keywords1': '网站开发', 'keywords3': '教学教研', 'description': None}
+2018-05-24 17:49:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqgcxy.com>
+{'url_index_doc': 96, 'title': '重庆工程学院', 'keywords2': '机构设置', 'copyrt': 'Copyright 重庆工程学院   版权所有 渝ICP备09014106    招生咨询热线：023-62846626  023-62846636', 'unique_words': ['学校概况', '学校简介', '学校风光', '信息公开', '机构设置', '教育教学', '师资队伍', '学科科研', '招生就业', '就业服务', '公共服务', '后勤服务', '管理学院', '通识学院'], 'url': 'http://www.cqgcxy.com', 'keywords1': '重庆工程学院', 'keywords3': '学校简介', 'description': None}
+2018-05-24 17:49:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqfudan.com>
+{'url_index_doc': 95, 'title': '重庆复旦中学', 'keywords2': '队伍建设', 'copyrt': None, 'unique_words': ['学校简介', '校园风貌', '参考信息', '校园公告', '校园新闻', '德育规范', '队伍建设', '德育活动', '社团风采', '学子佳作', '学科设置', '教学管理', '课程培训', '教学活动', '科研管理', '科研课题', '名师骨干', '教师培训', '信息中心', '支部设置', '组织建设', '党建动态', '党员风采'], 'url': 'http://www.cqfudan.com', 'keywords1': '重庆复旦中学', 'keywords3': '科研管理', 'description': None}
+2018-05-24 17:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqie.cn> (referer: None)
+2018-05-24 17:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqdzyz.com> (referer: None)
+2018-05-24 17:49:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqepc.com.cn/default.html>
+{'url_index_doc': 92, 'title': '重庆电力高等专科学校官网', 'keywords2': '学校概况', 'copyrt': '\xa0\xa02003-2016 © 重庆电力高等专科学校 版权所有 ', 'unique_words': ['学校概况', '学校领导', '学校荣誉', '校园风景', '机构设置', '教学部门', '招生就业', '继续教育', '教学管理', '专业设置', '课程建设', '教务信息', '师资队伍', '科研动态', '科研成果', '学校学报', '学风建设', '校园文化', '数字校园', '公共服务', '就业招聘', '信息公开'], 'url': 'http://www.cqepc.com.cn', 'keywords1': '重庆电力高等专科学校官网', 'keywords3': '学风建设', 'description': '重庆电力高等专科学校是全国首批电力专业学校之一，教育部高职高专院校人才培养工作水平评估“优秀”学校，重庆市和电力行业内第一所国家骨干高职院校，也是全国第一所集国家骨干和省级示范称号为一体的高职院校。学校有电力工程学院、动力工程学院、信息工程学院、经济管理学院。学校坚持“立足电力，服务重庆，面向全国”的办学定位，充分发挥行业办学优势，坚定不移校企合作、产教融合、突出实战和应用的办学路子，努力为经济社会发展和行业转型升级做成更大的贡献'}
+2018-05-24 17:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqiss.com> (referer: None)
+2018-05-24 17:49:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.cqhgzy.com/?WebShieldDRSessionVerify=XAs3OiTRzmmn9dfNaPld> from <GET http://www.cqhgzy.com>
+2018-05-24 17:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqgyzy.com> (referer: None)
+2018-05-24 17:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqdpzx.com/?WebShieldSessionVerify=xh64K2p4T3B2RBkVXSHP/> (referer: http://www.cqdpzx.com/?WebShieldSessionVerify=xh64K2p4T3B2RBkVXSHP)
+2018-05-24 17:49:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqie.cn>
+{'url_index_doc': 102, 'title': '重庆科创职业学院门户网站', 'keywords2': '重庆科创学院', 'copyrt': '\r\n       \t重庆科创职业学院\u3000版权所有  |  ', 'unique_words': ['学校概况', '机构设置', '校园全景', '分类招生', '招生资格', '招生章程', '招生动态', '专业设置', '专业介绍', '精品课程', '新闻中心', '信息公开', '科研管理', '校园安全', '教学管理', '学风建设', '招生就业', '科研成果', '校园微博'], 'url': 'http://www.cqie.cn', 'keywords1': '科创学院', 'keywords3': '汽车专业', 'description': '重庆科创职业学院是重庆市人民政府批准教育部备案具有独立颁发国家学历文凭资格的全日制高职学院。学院始建于1993年，由重庆天长实业有限责任公司投资举办。学院以培养建筑、汽车、电子、机械、信息技术及现代管理人才为主。现有学生一万余人，在重庆是成立较早、规模较大、声誉较高的一所民办高校。'}
+2018-05-24 17:49:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqdzyz.com>
+None
+2018-05-24 17:49:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.cqhgzy.com/> from <GET http://www.cqhgzy.com/?WebShieldDRSessionVerify=XAs3OiTRzmmn9dfNaPld>
+2018-05-24 17:49:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.cqnpzx.cn/cqnpzx/News> from <GET http://www.cqnpzx.cn>
+2018-05-24 17:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqkjzyxy.com> (referer: None)
+2018-05-24 17:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqjjwtzx.com> (referer: None)
+2018-05-24 17:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqnczx.com> (referer: None)
+2018-05-24 17:49:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.cqivc.com/?WebShieldDRSessionVerify=EUxNbahJRHkXeQrJ2LZh> from <GET http://www.cqivc.com>
+2018-05-24 17:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqswxy.cn> (referer: None)
+2018-05-24 17:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqjjzx.com> (referer: None)
+2018-05-24 17:49:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.cqjy.com.cn/Index.shtml> from <GET http://www.cqjy.com.cn>
+2018-05-24 17:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqpec.com> (referer: None)
+2018-05-24 17:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqsdzy.com> (referer: None)
+2018-05-24 17:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqsxedu.com> (referer: None)
+2018-05-24 17:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqljzx.com> (referer: None)
+2018-05-24 17:49:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqiss.com>
+{'url_index_doc': 103, 'title': '重庆市工业学校', 'keywords2': '重庆市工业学校', 'copyrt': '版权所有：Copyright© 2011 \xa0\xa0', 'unique_words': ['学校概况', '教育教研', '招生就业', '信息公开', '校园文化', '数字校园', '学校地址'], 'url': 'http://www.cqiss.com', 'keywords1': '工业学校', 'keywords3': '重庆职工会计专科学校', 'description': '重庆市工业学校创建于1956年，是重庆市经济和信息化委员会主管的一所综合性重点中等专业学校。学校的前身是分别建校于1956年-1958年的重庆市城建校、重庆市化工校、重庆市机电校、重庆市科技校和重庆市煤炭校五所学校。1961年经重庆市委批准，五校合并成立一所新的学校，定名为重庆市工业学校。“文革”中，学校被迫停办。1973年学校恢复办学和招生以后，学校逐步发展壮大。1998年学校经市政府批准为“省部级重点中专”，2004年3月学校成为国家教育部首批公布的“国家级重点中职学校”。'}
+2018-05-24 17:49:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqgyzy.com>
+{'url_index_doc': 100, 'title': '重庆公共运输职业学院', 'keywords2': '院务公开', 'copyrt': '\r\n    渝ICP备14009339号 重庆公共运输职业学院 版权所有     招生咨询电话：023-47268005 47289907 47289908   地址：重庆市江津区双福街道祥福大道38号 \r\n\r\n    ', 'unique_words': ['学院概况', '学院简介', '学院领导', '学院荣誉', '校园风光', '机构设置', '党政机构', '教学机构', '其他机构', '新闻中心', '学院新闻', '图片新闻', '教育教学', '师资队伍', '学历教育', '继续教育', '实训建设', '招生就业', '招生网', '信息公开', '院务公开', '党务公开', '人才招聘', '校园生活', '后勤服务', '服务信息'], 'url': 'http://www.cqgyzy.com', 'keywords1': '重庆公共运输职业学院', 'keywords3': '校园生活', 'description': '重庆公共运输职业学院'}
+2018-05-24 17:49:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqdpzx.com/?WebShieldSessionVerify=xh64K2p4T3B2RBkVXSHP/>
+{'url_index_doc': 87, 'title': '重庆市大坪中学', 'keywords2': '重庆市中学', 'copyrt': None, 'unique_words': ['学校概况', '校园风光', '校园新闻', '校友风采', '招生信息', '科研兴校', '科研论文', '德育树人', '德育管理', '德育科研', '德育活动', '学科建设', '名师风采', '党团建设', '特色教育'], 'url': 'http://www.cqdpzx.com', 'keywords1': '重庆市重点中学', 'keywords3': '重庆中学网站', 'description': '重庆市大坪中学-官方网站欢迎您，重庆市中学，重庆市重点中学，重庆中学网站！ '}
+2018-05-24 17:49:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.cqnpzx.cn/cqnpzx/News/> from <GET http://www.cqnpzx.cn/cqnpzx/News>
+2018-05-24 17:49:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.cqivc.com/> from <GET http://www.cqivc.com/?WebShieldDRSessionVerify=EUxNbahJRHkXeQrJ2LZh>
+2018-05-24 17:49:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqszmz.com> (referer: None)
+2018-05-24 17:49:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqjy.com.cn/Index.shtml> (referer: None)
+2018-05-24 17:49:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqnvc.com> (referer: None)
+2018-05-24 17:49:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqsssqzxx.com> (referer: None)
+2018-05-24 17:49:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqshyzxx.com> (referer: None)
+2018-05-24 17:49:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqkjzyxy.com>
+{'url_index_doc': 109, 'title': '重庆科技职业学院官方网站', 'keywords2': '重庆科技职业学院', 'copyrt': None, 'unique_words': ['新闻资讯', '校情概况', '校园风貌', '机构设置', '院系导航', '教学科研', '校园风采', '学生风采', '校园活动', '人才招聘', '信息公开'], 'url': 'http://www.cqkjzyxy.com', 'keywords1': '科技职业学院', 'keywords3': '重庆科技学院', 'description': None}
+2018-05-24 17:49:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqjjwtzx.com>
+{'url_index_doc': 105, 'title': '重庆市江津吴滩中学', 'keywords2': '重庆市江津吴滩中学', 'copyrt': None, 'unique_words': ['学校简介', '学校荣誉', '学校管理', '学校动态', '学校新闻', '校园公告', '党建群团', '教师天地', '名师风采', '教师作品', '教师获奖', '教师培训', '博雅课程', '课程建设', '课程场景', '课程成果', '教学资源', '校园资源', '智慧校园'], 'url': 'http://www.cqjjwtzx.com', 'keywords1': '重庆市江津吴滩中学校', 'keywords3': '课程建设', 'description': '重庆市江津吴滩中学校'}
+2018-05-24 17:49:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqnczx.com>
+{'url_index_doc': 111, 'title': '重庆市南川中学校', 'keywords2': '名师风采', 'copyrt': None, 'unique_words': ['学校文化', '学校动态', '校园新闻', '学校喜报', '招生信息', '德育之窗', '德育动态', '德育科研', '教学科研', '科研动态', '科研成果', '科研管理', '党建之窗', '教师频道', '名师工程', '教师园地', '名师风采', '教师作品', '学生风采', '足球校园', '平安校园', '科技教育', '美丽校园', '校园之星'], 'url': 'http://www.cqnczx.com', 'keywords1': '重庆市南川中学校', 'keywords3': '招生信息', 'description': None}
+2018-05-24 17:49:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqswxy.cn>
+{'url_index_doc': 120, 'title': '重庆商务职业学院官方门户网站', 'keywords2': '重庆商务职业学院官方门户网站', 'copyrt': 'Copyright@2005-2014 版权所有：重庆商务职业学院 ', 'unique_words': ['信息门户', '学校要闻', '综合新闻', '学校概况', '学校领导', '校园风光', '机构设置', '教学机构', '教育教学', '专业建设', '实践教学', '教学改革', '招生录取', '就业服务', '科研动态', '校园文化', '党建文化', '师生风采', '学校荣誉', '信息公开', '新闻网', '校区建设'], 'url': 'http://www.cqswxy.cn', 'keywords1': '重庆商务职业学院', 'keywords3': '校园风光', 'description': None}
+2018-05-24 17:49:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqjjzx.com>
+None
+2018-05-24 17:49:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqpec.com>
+{'url_index_doc': 114, 'title': '重庆幼儿师范高等专科学校', 'keywords2': '重庆幼儿师范高等专科学校', 'copyrt': None, 'unique_words': ['学校概况', '学校简介', '幼专新闻', '图片新闻', '视频新闻', '专题新闻', '招生就业', '系部设置', '组织机构', '教育教学', '招生信息', '学校荣誉', '美丽校园', '学校校微', '招聘信息', '就业信息', '学风建设', '信息公开', '招标信息', '人才招聘'], 'url': 'http://www.cqpec.com', 'keywords1': '学前教育', 'keywords3': '师范学校', 'description': '重庆幼儿师范高等专科学校-官网官方网站《重庆幼儿师范高等专科学校-官网》栏目。重庆幼儿师范高等专科学校（简称“重庆幼专”）是重庆市人民政府批准建立的重庆唯一一所以培养培训学前教育师资为主的公办全日制普通高等专科学校。其前身为万县师范学校和万县幼儿师范学校合并组建的重庆市三峡师范学校。'}
+2018-05-24 17:49:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqsdzy.com>
+None
+2018-05-24 17:49:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqsxedu.com>
+{'url_index_doc': 121, 'title': '重庆三峡职业学院', 'keywords2': '继续教育', 'copyrt': 'Copyright@2017版权所有：重庆三峡职业学院 渝ICP备05013922 号 渝公网安备 50010102000191号', 'unique_words': ['学院简介', '学院领导', '校园风光', '学院新闻', '教学院系', '教务信息', '精品课程', '继续教育', '招生信息', '就业信息', '平安校园', '招生咨询', '学院要闻', '信息公开', '校园视频'], 'url': 'http://www.cqsxedu.com', 'keywords1': '重庆三峡职业学院', 'keywords3': '平安校园', 'description': None}
+2018-05-24 17:49:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqljzx.com>
+{'url_index_doc': 110, 'title': '重庆市礼嘉中学校', 'keywords2': '招考信息', 'copyrt': '版权所有@重庆礼嘉中学校\xa0| \xa0地址：重庆两江新区礼嘉街道礼智街22号', 'unique_words': ['学校简介', '校园风貌', '学校荣誉', '新闻中心', '校园播报', '党建工作', '党建活动', '德育工作', '情仪教育', '德育活动', '明星学子', '教学教研', '师资队伍', '名师风采', '教师荣誉', '招考信息', '招生信息', '教师招聘', '禁毒教育'], 'url': 'http://www.cqljzx.com', 'keywords1': '重庆市礼嘉中学校', 'keywords3': '教学教研', 'description': '重庆市礼嘉中学校官方网站'}
+2018-05-24 17:49:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqtcedu.com> (referer: None)
+2018-05-24 17:49:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqvcet.com> (referer: None)
+2018-05-24 17:49:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqvist.net> (referer: None)
+2018-05-24 17:49:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqqh.net> (referer: None)
+2018-05-24 17:49:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqnpzx.cn/cqnpzx/News/> (referer: None)
+2018-05-24 17:49:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqgmy.cn> (referer: None)
+2018-05-24 17:49:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqshzx.com.cn> (referer: None)
+2018-05-24 17:49:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqszmz.com>
+{'url_index_doc': 123, 'title': '重庆市石柱民族中学校', 'keywords2': '重庆市石柱民族中学校', 'copyrt': '重庆市石柱民族中学校 版权所有 渝ICP备08001895号', 'unique_words': ['走进校园', '新闻动态', '美丽校园', '党建之窗', '教学科研', '名师风采', '校园通知', '师资力量', '学子风采', '德育教育', '党建频道', '特色教育', '优质服务', '继续教育', '教学楼'], 'url': 'http://www.cqszmz.com', 'keywords1': '网站', 'keywords3': '师资力量', 'description': None}
+2018-05-24 17:49:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqjy.com.cn/Index.shtml>
+{'url_index_doc': 108, 'title': '重庆警察学院', 'keywords2': '学院介绍', 'copyrt': None, 'unique_words': ['学院介绍', '名人名师', '机构设置', '图片新闻', '校园新闻', '校园快讯', '教学工作', '科研工作', '招生就业', '信息公开', '校园风光'], 'url': 'http://www.cqjy.com.cn', 'keywords1': '重庆警察学院', 'keywords3': '招生就业', 'description': None}
+2018-05-24 17:49:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqnvc.com>
+{'url_index_doc': 113, 'title': '重庆护理职业学院', 'keywords2': '教育教学', 'copyrt': None, 'unique_words': ['学校概况', '新闻资讯', '信息公开', '机构设置', '教育教学', '师资队伍', '招生就业', '招生章程', '专业介绍', '招生计划', '人文校园'], 'url': 'http://www.cqnvc.com', 'keywords1': '重庆护理职业学院', 'keywords3': '人文校园', 'description': None}
+2018-05-24 17:49:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqsssqzxx.com>
+{'url_index_doc': 119, 'title': '重庆市松树桥中学校', 'keywords2': '重庆市松树桥中学', 'copyrt': None, 'unique_words': ['学校概况', '学校简介', '组织机构', '校园文化', '校园风光', '学校校徽', '学校校歌', '德育树人', '德育理念', '德育研究', '德育队伍', '德育活动', '德育故事', '教学科研', '课程改革', '精品课程', '特色教育', '教师风采', '名师风采', '党群建设', '党建工作', '招生招聘', '招生指南', '教师招聘', '花海校园'], 'url': 'http://www.cqsssqzxx.com', 'keywords1': '松树桥中学', 'keywords3': '重庆松树桥中学', 'description': '重庆市松树桥中学是重庆市重点中学，学校位于重庆都市功能拓展区渝北区，与江北、沙坪坝、两江新区接壤交汇，区位优势明显，交通便捷发达。重庆市松树桥中学共拥有松树桥、冉家坝两个校区，占地面积近100亩，建筑面积6万多平方米，教学班72个，学生近4000人，教职工329人，其中在岗专职教师323人，中学研究员2人，高级教师80人，国家级科研骨干教师2人，国家级优秀指导教师1人，重庆市名师1人、学科名师1人，重庆市学术带头人1人、学科带头人4人，重庆市优秀专业技术人才10人，重庆市特级教师2人，市级骨干教师10人，区级名师、骨干教师70余人，硕士以上学历及研究生课程班结业140人。有3名中青年教师被遴选到美国、英国、加拿大等国孔子学院任教交流。有近100名教职员工分别获得市、区劳动模范和先进个人荣誉称号。'}
+2018-05-24 17:49:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqshyzxx.com>
+{'url_index_doc': 117, 'title': '重庆市华蓥中学校', 'keywords2': '重庆市华蓥中学', 'copyrt': '\r\n\t\t\t\t版权所有：重庆市华蓥中学校\xa0\xa0 Copyright © 2009-2019\u3000All Rights Reserved.\xa0\xa0  网站备案号：渝ICP备14008702号', 'unique_words': ['学校概况', '学校简介', '学校荣誉', '学校领导', '校园风光', '平安校园', '教学工作', '教育科研', '年级风采', '华中新闻', '学校通知', '招聘启事'], 'url': 'http://www.cqshyzxx.com', 'keywords1': '华蓥中学', 'keywords3': '重庆市华蓥中学校', 'description': '重庆市华蓥中学校'}
+2018-05-24 17:49:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqvit.com> (referer: None)
+2018-05-24 17:49:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqyc.com> (referer: None)
+2018-05-24 17:49:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqtcedu.com>
+{'url_index_doc': 124, 'title': '重庆电信职业学院', 'keywords2': '重庆电信职业学院学院', 'copyrt': '渝ICP备14008160号 版权所有（C）重庆电信职业学院', 'unique_words': ['学校简介', '名师简介', '信息公开', '校务部', '教学部', '招生就业', '党的建设', '校园风光', '教育部'], 'url': 'http://www.cqtcedu.com', 'keywords1': '重庆电信职业学院', 'keywords3': '重庆电信职业学院校园环境', 'description': '重庆电信职业学院是经重庆市人民政府批准、教育部备案、面向全国招生的全日制普通高等院校（教育部代码：14369）。学校现自有校园占地面积500余亩，校舍面积16万平方米，数字化图书馆、标准化塑胶跑道田径场、标准化学生公寓、标准化学生食堂等一应俱全，校园网设施先进。学校在校学生6500余人，教职工312人，学校教学仪器设备4000万元，图书馆藏书36.2万册。...'}
+2018-05-24 17:49:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqvcet.com>
+{'url_index_doc': 125, 'title': '重庆经贸职业学院', 'keywords2': '校园风光', 'copyrt': '重庆经贸职业学院版权所有©2011-2017', 'unique_words': ['学院纵览', '学院简介', '校园风光', '学院章程', '学院文化', '新闻中心', '学院新闻', '机构设置', '教学单位', '管理服务', '教学科研', '教学管理', '师资队伍', '继续教育', '招生就业', '素质教育', '人才招聘', '信息公开'], 'url': 'http://www.cqvcet.com', 'keywords1': '重庆经贸职业学院', 'keywords3': '素质教育', 'description': '重庆经贸职业学院'}
+2018-05-24 17:49:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqvist.net>
+{'url_index_doc': 126, 'title': '重庆安全技术职业学院', 'keywords2': '机构设置', 'copyrt': '版权所有：重庆安全技术职业学院 ', 'unique_words': ['智慧校园', '学院概况', '新闻中心', '机构设置', '教育教学', '科技服务', '招生就业', '公共服务', '共建专业'], 'url': 'http://www.cqvist.net', 'keywords1': '重庆安全技术职业学院', 'keywords3': '教育教学', 'description': ''}
+2018-05-24 17:49:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqqh.net>
+{'url_index_doc': 115, 'title': '首页', 'keywords2': '校园视频', 'copyrt': None, 'unique_words': ['学校概况', '基本信息', '学校领导', '人文校园', '学校荣誉', '校园新闻', '校园动态', '校园视频', '教育教学', '教学活动', '教学资源', '教学成绩', '名师荟萃', '教学科研', '课程改革', '专业发展', '继续教育', '学生德育', '德育工作', '家长学校', '平安校园', '党建工作', '德语教学', '友好学校'], 'url': 'http://www.cqqh.net', 'keywords1': '首页', 'keywords3': '继续教育', 'description': None}
+2018-05-24 17:49:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqnpzx.cn/cqnpzx/News/>
+{'url_index_doc': 112, 'title': '重庆市南坪中学校', 'keywords2': '南岸区', 'copyrt': '重庆市南坪中学校 版权所有 渝ICP备13000578号', 'unique_words': ['学校简介', '校园图库', '机构设置', '新闻中心', '党群建设', '党建专栏', '教学科研', '教务公开', '校园生活', '教师园地', '名师风采', '教师培训', '教师博文', '魅力校园', '班级风采', '年级风采', '招生招聘', '招生资讯', '招聘资讯', '服务中心'], 'url': 'http://www.cqnpzx.cn', 'keywords1': '南坪中学', 'keywords3': '南坪中学校', 'description': None}
+2018-05-24 17:49:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqgmy.cn>
+{'url_index_doc': 98, 'title': '市级示范院校', 'keywords2': '重庆工贸职业技术学院', 'copyrt': None, 'unique_words': ['学院概况', '学校简介', '学院领导', '组织机构', '校园风光', '教学系部', '党政机构', '党群机构', '招生就业', '招生信息', '就业信息', '单独招生', '教学管理', '教学动态', '制度建设', '精品课程', '科研公告', '科技信息', '学报信息', '学风建设', '信息公开'], 'url': 'http://www.cqgmy.cn', 'keywords1': '工贸职业技术学院', 'keywords3': '工贸学院', 'description': None}
+2018-05-24 17:49:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqshzx.com.cn>
+{'url_index_doc': 118, 'title': '重庆市珊瑚中学', 'keywords2': '科研引领', 'copyrt': None, 'unique_words': ['珊中概况', '学校简介', '党建工作', '德育发展', '科研引领', '后勤服务', '校园资源', '招生招聘', '教师风采', '教育科研'], 'url': 'http://www.cqshzx.com.cn', 'keywords1': '重庆市珊瑚中学', 'keywords3': '招生招聘', 'description': '重庆市珊瑚中学 '}
+2018-05-24 17:49:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqysxy.com> (referer: None)
+2018-05-24 17:49:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqyti.com> (referer: None)
+2018-05-24 17:49:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqybzx.com.cn> (referer: None)
+2018-05-24 17:49:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqsyz.com.cn> (referer: None)
+2018-05-24 17:49:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqvit.com>
+{'url_index_doc': 127, 'title': '重庆旅游职业学院', 'keywords2': '教育教学', 'copyrt': 'Copyright 重庆旅游职业学院   版权所有 渝ICP备18004196号', 'unique_words': ['学校概况', '机构设置', '党团建设', '教育教学', '招生就业', '社会服务', '智慧校园', '教师服务', '学生服务'], 'url': 'http://www.cqvit.com', 'keywords1': '重庆旅游职业学院', 'keywords3': '机构设置', 'description': None}
+2018-05-24 17:49:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqyc.com>
+{'url_index_doc': 129, 'title': '重庆市育才中学校', 'keywords2': '育才中学', 'copyrt': '\r\n\t\t\t\t\t版权所有：重庆育才中学\xa0\xa0渝ICP备12000641号-1\xa0\xa0学校地址：重庆市九龙坡区谢家湾正街92号\xa0\xa0邮编：400050\xa0\xa0招生政策咨询室：86051111/86052356/68660284', 'unique_words': ['数字校园', '信息中心', '学校首页', '学校概况', '学校简介', '菁菁校园', '教学前沿', '课程建设', '教学成果', '学术科研', '师生风采', '德育之窗', '德育研究', '德育故事', '德育名师', '党建园地', '党员风采', '学习园地', '国际教育', '招考信息', '招生招聘', '招生信息', '招聘信息'], 'url': 'http://www.cqyc.com', 'keywords1': '育才', 'keywords3': '重庆育才', 'description': '重庆市育才中学于1939年7月由伟大的人民教育家陶行知先生创办，现在是重庆市教委直属重点中学，是全国著名的师陶圣地，育才摇篮。 '}
+2018-05-24 17:49:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqyxzx.com> (referer: None)
+2018-05-24 17:49:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqyygz.com> (referer: None)
+2018-05-24 17:49:19 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqysxy.com>
+{'url_index_doc': 130, 'title': '重庆艺术工程职业学院', 'keywords2': '党建网', 'copyrt': None, 'unique_words': ['教学资源', '学院简介', '名师简介', '学院视频', '美丽校园', '招生网', '教育教学', '教学诊改', '科研创作', '党建网', '后勤服务', '学院地图'], 'url': 'http://www.cqysxy.com', 'keywords1': '重庆艺术工程职业学院', 'keywords3': '教育教学', 'description': None}
+2018-05-24 17:49:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqyti.com>
+{'url_index_doc': 131, 'title': '重庆邮电大学移通学院', 'keywords2': '首页', 'copyrt': '重庆邮电大学移通学院  版权所有', 'unique_words': ['移通概况', '校园风光', '机构设置', '教学部', '招生就业', '招生网', '完满教育', '名师课堂', '公共服务', '学校校历', '信息公开'], 'url': 'http://www.cqyti.com', 'keywords1': '重庆邮电大学移通学院', 'keywords3': '公共服务', 'description': None}
+2018-05-24 17:49:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqybzx.com.cn>
+None
+2018-05-24 17:49:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqsyz.com.cn>
+{'url_index_doc': 122, 'title': '重庆市第十一中学校', 'keywords2': '创作园地', 'copyrt': '重庆市第十一中学校-版权所有  渝ICP备12001687号', 'unique_words': ['新闻动态', '学校概况', '师生风采', '教育教学', '招生招聘', '校园快讯', '优秀学子', '创作园地', '雷达新闻'], 'url': 'http://www.cqsyz.com.cn', 'keywords1': '重庆市第十一中学校', 'keywords3': '学校概况', 'description': None}
+2018-05-24 17:49:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqyyzy.com> (referer: None)
+2018-05-24 17:49:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqzhxy.cn> (referer: None)
+2018-05-24 17:49:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqyxzx.com>
+{'url_index_doc': 132, 'title': '重庆市渝西中学', 'keywords2': '学子风采', 'copyrt': '重庆市渝西中学\xa0 版权所有 2015－2018  \xa0渝ICP备15005814号', 'unique_words': ['学校简介', '组织机构', '师资队伍', '箐箐校园', '新闻中心', '党建园地', '组织建设', '党建活动', '党建学习', '党员风采', '教改科研', '教学研究', '教学信息', '师资培训', '教学资源', '教学成果', '德育之窗', '德育快讯', '德育管理', '班级建设', '德育期刊', '体艺风采', '德育科研', '特色建设', '制度建设', '文化建设', '学子风采', '学生风采', '招生招聘', '招生信息', '招生咨询', '招生联系', '人才招聘', '数字校园', '服务器', '校园新闻'], 'url': 'http://www.cqyxzx.com', 'keywords1': '重庆市渝西中学', 'keywords3': '教学信息', 'description': '重庆市渝西中学'}
+2018-05-24 17:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqyygz.com>
+{'url_index_doc': 133, 'title': '重庆医药高等专科学校', 'keywords2': '招生工作', 'copyrt': '版权所有 ：重庆医药高等专科学校 渝ICP备11007800号', 'unique_words': ['学校概况', '学校简介', '机构设置', '学院设置', '内设机构', '科研外事', '科研管理', '人事招聘', '师资队伍', '招生就业', '招生工作', '校园文化', '校园风光', '服务大厅', '校园地图', '教育网'], 'url': 'http://www.cqyygz.com', 'keywords1': '重庆医药高等专科学校', 'keywords3': '机构设置', 'description': None}
+2018-05-24 17:49:21 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.cqzxzx.com/web/index.php> from <GET http://www.cqzxzx.com>
+2018-05-24 17:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqyyzy.com>
+{'url_index_doc': 134, 'title': '重庆应用技术职业学院', 'keywords2': '科研成果', 'copyrt': '版权所有：重庆应用技术职业学院', 'unique_words': ['校园实景', '学院简介', '校园风光', '机构设置', '专业介绍', '师资队伍', '科研成果', '科研课题', '招生就业', '社会服务', '服务项目', '党建之窗'], 'url': 'http://www.cqyyzy.com', 'keywords1': '重庆应用技术职业学院', 'keywords3': '校园风光', 'description': '重庆应用技术职业学院是重庆市教育委员会主管的全日制普通高等学校，学院代码13968。学院具有悠久的办学历史，其前身是1946年陶行知创办并担任校长的社会大学。1985年复校，更名为“重庆社会大学”。2005年经重庆市人民政府批准、国家教育部审定备案，“重庆社会大学”转制为“重庆民生职业技术学院”，2014年更名为“重庆应用技术职业学院”。'}
+2018-05-24 17:49:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqzhxy.cn>
+{'url_index_doc': 135, 'title': '重庆资源与环境保护职业学院', 'keywords2': '官方门户网站', 'copyrt': '版权所有:重庆资源与环境保护职业学院         技术支持：现代教育技术中心', 'unique_words': ['学院简介', '学院领导', '名师队伍', '校园文化', '校园新闻', '机构设置', '教学管理', '继续教育', '科研概况', '科研平台', '科研规定', '人才招聘', '招聘信息', '学生风采', '信息公开', '招聘公告', '教育部'], 'url': 'http://www.cqzhxy.cn', 'keywords1': '重庆资源与环境保护职业学院', 'keywords3': '学生风采', 'description': '重庆资源与环境保护职业学院 官方门户网站'}
+2018-05-24 17:49:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cqzxzx.com/web/index.php> (referer: None)
+2018-05-24 17:49:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.csdaotian.com.cn> (referer: None)
+2018-05-24 17:49:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cs6zhong.com> (referer: None)
+2018-05-24 17:49:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cs21.com.cn> (referer: None)
+2018-05-24 17:49:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cqzxzx.com/web/index.php>
+None
+2018-05-24 17:49:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.csdaotian.com.cn>
+{'url_index_doc': 139, 'title': '首页', 'keywords2': '新闻资讯', 'copyrt': None, 'unique_words': ['新闻资讯', '校园生活', '稻田招聘'], 'url': 'http://www.csdaotian.com.cn', 'keywords1': '首页', 'keywords3': '校园生活', 'description': None}
+2018-05-24 17:49:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.csiic.com> (referer: None)
+2018-05-24 17:49:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cs6zhong.com>
+{'url_index_doc': 138, 'title': '长沙市第六中学', 'keywords2': '生活服务', 'copyrt': '\r\n        Copyright  2016-2026 长沙市第六中学 版权所有 网站备案号：湘ICP备15001026 湘教QS7-201501-002138号\r\n    ', 'unique_words': ['学校概况', '学校介绍', '学校文化', '学校荣誉', '校园掠影', '学校党建', '教育科研', '科研规划', '科研活动', '课程建设', '教师成长', '教育督导', '德育天地', '德育制度', '团队建设', '社团风采', '教学园地', '教学制度', '教学常规', '教学动态', '招生招聘', '招生工作', '招聘工作', '校友风采', '后勤服务', '校园建设', '生活服务', '教师申诉', '教育网'], 'url': 'http://www.cs6zhong.com', 'keywords1': '长沙市第六中学', 'keywords3': '后勤服务', 'description': ''}
+2018-05-24 17:49:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cs21.com.cn>
+{'url_index_doc': 137, 'title': '首页', 'keywords2': '党建专栏', 'copyrt': None, 'unique_words': ['学校概况', '校园新闻', '校务公开', '党建专栏', '阳光服务', '招生招聘', '教学管理', '教育科研', '教育督导', '团委风采', '教育处'], 'url': 'http://www.cs21.com.cn', 'keywords1': '首页', 'keywords3': '校园新闻', 'description': None}
+2018-05-24 17:49:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.csswz.com.cn> (referer: None)
+2018-05-24 17:49:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.csiic.com>
+{'url_index_doc': 142, 'title': '陕西国际商贸学院', 'keywords2': '陕西国际商贸学院', 'copyrt': None, 'unique_words': ['党建工作', '平安校园', '信息公开', '学院概况', '学院简介', '学院荣誉', '全景校园', '教育教学', '名师风采', '招生就业', '公共服务', '校园生活', '学院新闻', '后勤服务', '商学院', '医药学院', '珠宝学院', '创新学院'], 'url': 'http://www.csiic.com', 'keywords1': '陕西国际商贸', 'keywords3': '商学院', 'description': '陕西国际商贸学院'}
+2018-05-24 17:49:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.csswz.com.cn>
+{'url_index_doc': 143, 'title': '长沙市第十五中学', 'keywords2': '学校新闻', 'copyrt': '\r\n\r\nFai.top = window;\r\nvar _Global = {},\r\n\tbgmCloseToOpen = false,\r\n\tstatId = -1,\r\n\t_debug = false,\r\n\t_isPre = false,\r\n\t_devMode = false,\r\n\t_colOtherStyleData = {"independentList":[],"hh":false,"fh":false,"y":0,"h":0,"layout4Width":0,"layout5Width":0},\t\t\t\t\t\t// 当前页面的数据    \r\n\t_templateOtherStyleData = {"h":1209,"independentList":[],"hh":false,"fh":false,"y":0,"layout4Width":0,"layout5Width":0},\t\t\t// 全局的数据\r\n\t_allowedHtmlUrl = true,\r\n\t_openHtmlUrl = false,\r\n\t_advertType = 1,\r\n\t_isBUser = false,\r\n\tmanageClose = false,\r\n\t_proSiteQueryStr = \'\';//by jser\r\n\r\n\r\n\r\nvar _templateDefLayout = {BANNER_NAV:0,NAV_FLOAT:1,LEFT_NAV_BANNER_RIGHT_HIDE:3,LEFT_NAV_CENTER_BANNER_RIGHT_HIDE:4,LEFT_BANNER_NAV_RIGHT_HIDE:5,LEFT_NAV_EXPEND_CENTER_BANNER:6,CENTER_TOP_BANNER_RIGHT_HIDE:7,LEFT_HIDE_CENTER_TOP_BANNER:8,NAV_FLOAT_ON_BANNER:9,NAV_BANNER:10}; \r\n\r\n$(function() {\r\n\t\r\n\t\tSite.ajaxLoadModuleDom(2, 0, {"_ajaxLoadModuleList":[],"_partDomInfoList":[],"fullUrl":"http://www.csswz.com.cn/"});\r\n\t\t\r\n\r\n\tSite.loginSiteInit(\'zhongxue\',\'vip.webportal.top\', false,"");\r\n\r\n\t//topBarMember \r\n\t\r\n\t\r\n\r\n\t\r\n\r\n\tif(Fai.top._manageMode) {\r\n\t\tFai.top._bigAdOptions = {\r\n\t\t\t"sevenCelebration" : false,\r\n\t\t\t"sevenKnowMoreUrl" : "http://jz.faisco.com/alliance.html",\r\n\t\t\t"sevenQQUrl": "http://www.faisco.cn/count/agentCount.jsp?s=1",\r\n\t\t\t"dailyImgUrl": "http://i.fkw.com/portal.jsp#appId=shop&tab=0?fromPageId=3"\r\n\t\t}\r\n\t}\r\n\r\n\tif(false) {\r\n\t\tif(Fai.top.$(".drawLottery").length == 0){\r\n\t\t\tSite.popBigAdWindow();\t// 弹出免费版引导付费广告\r\n\t\t}\r\n\t}\r\n\r\n\t// 绑定退出事件\r\n\tSite.bindBeforeUnloadEvent(false, false, false);\r\n\r\n\tSite.initTemplateLayout(_templateDefLayout.NAV_FLOAT, true, false );\r\n\t// spider统计\r\n\t\r\n\r\n\r\n\r\n\t\r\n\t\r\n\t// ajax统计\r\n\tSite.total({colId:2, pdId:-1, ndId:-1, sc:0, rf:"", statId:statId});\r\n\t//保留旧用户的初始化版式区域4 和区域5 中，区域4的padding-right空间\r\n\tSite.colLayout45Width();\r\n\t//各个模块inc吐出脚本\r\n\r\n        Site.initCorpTitle();\nSite.initModuleSiteSearch(\'553\');\n\nSite.initBanner({"_open":true,"data":[{"title":"","desc":"","imgWidth":1920,"imgHeight":341,"ot":0,"src":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI.jpg","edgeLeft":"","edgeRight":""},{"title":"","desc":"","imgWidth":1920,"imgHeight":341,"ot":1,"src":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgrqyjxgUoora0sQEwgA841QI.jpg","edgeLeft":"","edgeRight":""}],"width":1920,"height":341,"playTime":4000,"animateTime":1500,"from":"banner","btnType":0,"wideScreen":false}, {"_open":false}, 4);\nSite.initSimpleTextContent( 567,0);\n\nSite.saveNoticeMarqueeProps({ id:\'709\', direction:\'left\', loop:\'infinite\', speed:\'normal\', moveout:true ,isScrolling : true ,noticeType : 1});Site.noticeMarquee({ id:\'709\', direction:\'left\', loop:\'infinite\', speed:\'normal\', moveout:true ,isScrolling : true ,noticeType : 1});\nSite.initModulePhotoSwitch(561, {"data":[{"name":"2018，让我们重启一场追梦无悔的旅程！","href":"","target":"_blank","src":"//12412594.s21i.faiusr.com/2/ABUIABACGAAg2NHz1AUop-errwEwgAg4qgU!600x600.jpg","width":543,"height":362,"widthOr":543,"heightOr":362,"pic":"ABUIABACGAAg2NHz1AUop-errwEwgAg4qgU"},{"name":"香港教育局\\u201C教师专业考察交流团\\u201D来我校参观交流","href":"","target":"_blank","src":"//12412594.s21i.faiusr.com/4/ABUIABAEGAAg-f2lyAUowPe8zwcwpQQ46gI.png","width":549,"height":362,"widthOr":549,"heightOr":362,"pic":"ABUIABAEGAAg-f2lyAUowPe8zwcwpQQ46gI"},{"name":"【幺五好声音】想唱就唱,我最响亮\\u2014\\u2014长沙市十五中第五届校园十佳歌手决赛","href":"nd.jsp?id=1093#_jcp=1","target":"_blank","src":"//12412594.s21i.faiusr.com/4/ABUIABAEGAAgsJyyxwUotLDlwQQwtAQ49gI.png","width":545,"height":362,"widthOr":545,"heightOr":362,"pic":"ABUIABAEGAAgsJyyxwUotLDlwQQwtAQ49gI"},{"name":"校运会盛大开幕","href":"nd.jsp?id=85#_jcp=1","target":"_blank","src":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgr4utxgUomKfwjgYwyQQ49wI.jpg","width":564,"height":361,"widthOr":564,"heightOr":361,"pic":"ABUIABACGAAgr4utxgUomKfwjgYwyQQ49wI"},{"name":"","href":"nd.jsp?id=1094#_jcp=1","target":"_blank","src":"//12412594.s21i.faiusr.com/4/ABUIABAEGAAgq5_yxwUotLy2vgQw3AY4pwQ!600x600.png","width":564,"height":361,"widthOr":564,"heightOr":361,"pic":"ABUIABAEGAAgq5_yxwUotLy2vgQw3AY4pwQ"}],"width":564,"height":362,"playTime":4000,"animateTime":1500,"showImageName":true,"switchWrapName":false,"moduleId":"photoSwitch561","cusPicSize":true,"picScale":0,"manuallyCarousel":false}, 1, \'carouselPhotos\');\n\nSite.loadNewsList(560, {"y":0,"s":0,"w":1}, true);\nSite.loadNewsNewStyle(560, false,false,false,true,false,false,false,false,true,false,false);\n\nSite.initMulColModuleInIE(\'#module559\');\n\n\nSite.loadNewsList(569, {"y":0,"s":0,"w":1}, true);\nSite.loadNewsNewStyle(569, false,false,false,true,false,false,false,false,true,false,false);\n\nSite.loadNewsList(568, {"y":0,"s":0,"w":1}, true);\nSite.loadNewsNewStyle(568, false,false,false,true,false,false,false,false,true,false,false);\n\nSite.loadNewsList(566, {"y":0,"s":0,"w":1}, true);\nSite.loadNewsNewStyle(566, false,false,false,true,false,false,false,false,true,false,false);\n\nSite.initMulColModuleInIE(\'#module565\');\n\n\n\n\n\nSite.initMulColModuleInIE(\'#module579\');\nSite.loadNewsList(587, {"y":0,"s":0,"w":1}, true);\nSite.loadNewsNewStyle(587, false,false,false,true,false,false,false,false,true,false,false);\n\nSite.loadNewsList(588, {"y":0,"s":0,"w":1}, true);\nSite.loadNewsNewStyle(588, false,false,false,true,false,false,false,false,true,false,false);\n\nSite.hoverChangeImage();Site.hoverStyle();\nSite.initMulColModuleInIE(\'#module586\');\nSite.initModulePhotoSwitch(707, {"data":[{"name":"","target":"_blank","src":"//12412594.s21i.faiusr.com/2/ABUIABACGAAg-8ijxgUoyZ-U6wMwpgk4qgE.jpg","width":1190,"height":170,"widthOr":1190,"heightOr":170,"pic":"ABUIABACGAAg-8ijxgUoyZ-U6wMwpgk4qgE"},{"name":"","target":"_blank","src":"//12412594.s21i.faiusr.com/2/ABUIABACGAAg2rK2xwUo2Nnh1AcwgCA4yAQ.jpg","width":1190,"height":169,"widthOr":1190,"heightOr":169,"pic":"ABUIABACGAAg2rK2xwUo2Nnh1AcwgCA4yAQ"}],"btnType":2,"width":1190,"height":170,"playTime":4000,"animateTime":1500,"showImageName":false,"switchWrapName":false,"moduleId":"photoSwitch707","picScale":0,"cusPicSize":true,"manuallyCarousel":false},2,\'carouselPhotos\');\n\nSite.loadNewsList(651, {"y":0,"s":0,"w":1}, true);\nSite.loadNewsNewStyle(651, false,false,false,true,false,false,false,false,true,false,false);\n\nSite.loadNewsList(653, {"y":0,"s":0,"w":1}, true);\nSite.loadNewsNewStyle(653, false,false,false,true,false,false,false,false,true,false,false);\n\nSite.initMulColModuleInIE(\'#module650\');\n\nFai.top.Photo659 = {};\nFai.top.Photo659.ieOpt = {"effType":1,"borderType":false,"borderColor":"#000","borderWidth":1,"borderStyle":1,"style":90,"fullMaskCusBg":false,"fullMaskCusDisc":false,"halfMaskCusBg":false,"halfMaskCusDisc":false,"fullMaskOpenDisc":false};\nFai.top.Photo659.tgOpt = {"nameHidden":false,"nameWordWrap":false,"targetParent":"photoMarqueeForm","target":"imgDiv","picScale":2};\nFai.top.Photo659.callbackArgs = [];\nSite.loadPhotoMarquee(659, 2, true, 0, \'listPhotos\');\nFai.top.photoSlideTmp659 = {};\nFai.top.photoSlideTmp659 = {"photoSlideId":"photoSlide_659","photoSlideType":0,"photoDataList":[{"id":0,"name":"","basic":"","pic":"ABUIABACGAAg_tmjxgUo0P_1IzDQDzjiCQ","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAg_tmjxgUo0P_1IzDQDzjiCQ.jpg","picWidth":2000,"picHeight":1250},{"id":1,"name":"","basic":"","pic":"ABUIABACGAAg-9mjxgUogLq0_QQw0A844gk","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAg-9mjxgUogLq0_QQw0A844gk.jpg","picWidth":2000,"picHeight":1250},{"id":2,"name":"","basic":"","pic":"ABUIABACGAAghNqjxgUooJazgAcw0A844gk","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAghNqjxgUooJazgAcw0A844gk.jpg","picWidth":2000,"picHeight":1250},{"id":3,"name":"","basic":"","pic":"ABUIABACGAAgidqjxgUokNK7ajDQDzjiCQ","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgidqjxgUokNK7ajDQDzjiCQ.jpg","picWidth":2000,"picHeight":1250},{"id":4,"name":"","basic":"","pic":"ABUIABACGAAgjtqjxgUo3tSdhgEw0A844gk","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgjtqjxgUo3tSdhgEw0A844gk.jpg","picWidth":2000,"picHeight":1250},{"id":5,"name":"","basic":"","pic":"ABUIABACGAAgk9qjxgUo_PO9qgcw0A844gk","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgk9qjxgUo_PO9qgcw0A844gk.jpg","picWidth":2000,"picHeight":1250},{"id":6,"name":"","basic":"","pic":"ABUIABACGAAgmdqjxgUouJiUwQQw0A844gk","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgmdqjxgUouJiUwQQw0A844gk.jpg","picWidth":2000,"picHeight":1250},{"id":7,"name":"","basic":"","pic":"ABUIABACGAAgndqjxgUotuPJjQIw0A844gk","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgndqjxgUotuPJjQIw0A844gk.jpg","picWidth":2000,"picHeight":1250},{"id":8,"name":"","basic":"","pic":"ABUIABACGAAgo9qjxgUoudKgygEw0A844gk","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgo9qjxgUoudKgygEw0A844gk.jpg","picWidth":2000,"picHeight":1250},{"id":9,"name":"","basic":"","pic":"ABUIABACGAAgqdqjxgUo3qm6-wUw0A84uxY","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgqdqjxgUo3qm6-wUw0A84uxY.jpg","picWidth":2000,"picHeight":2875},{"id":10,"name":"","basic":"","pic":"ABUIABACGAAgr9qjxgUopL2xswMw0A844gk","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgr9qjxgUopL2xswMw0A844gk.jpg","picWidth":2000,"picHeight":1250},{"id":11,"name":"","basic":"","pic":"ABUIABACGAAgs9qjxgUotu3McDDQDzjiCQ","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgs9qjxgUotu3McDDQDzjiCQ.jpg","picWidth":2000,"picHeight":1250},{"id":12,"name":"","basic":"","pic":"ABUIABACGAAguNqjxgUokJvspgIw0A844gk","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAguNqjxgUokJvspgIw0A844gk.jpg","picWidth":2000,"picHeight":1250},{"id":13,"name":"","basic":"","pic":"ABUIABACGAAgv9qjxgUojYX3_QQw0A844gk","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgv9qjxgUojYX3_QQw0A844gk.jpg","picWidth":2000,"picHeight":1250},{"id":14,"name":"","basic":"","pic":"ABUIABACGAAgw9qjxgUouPzcrQMw0A844gk","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgw9qjxgUouPzcrQMw0A844gk.jpg","picWidth":2000,"picHeight":1250},{"id":15,"name":"","basic":"","pic":"ABUIABACGAAgyNqjxgUo0Lib_gcw0A844gk","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgyNqjxgUo0Lib_gcw0A844gk.jpg","picWidth":2000,"picHeight":1250},{"id":16,"name":"","basic":"","pic":"ABUIABACGAAgz9qjxgUo7Mv3MDDQDzjiCQ","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgz9qjxgUo7Mv3MDDQDzjiCQ.jpg","picWidth":2000,"picHeight":1250},{"id":17,"name":"","basic":"","pic":"ABUIABACGAAg1NqjxgUonLjPjAcw0A844gk","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAg1NqjxgUonLjPjAcw0A844gk.jpg","picWidth":2000,"picHeight":1250},{"id":18,"name":"","basic":"","pic":"ABUIABACGAAg2dqjxgUouKL6swMw0A844gk","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAg2dqjxgUouKL6swMw0A844gk.jpg","picWidth":2000,"picHeight":1250},{"id":19,"name":"","basic":"","pic":"ABUIABACGAAg3dqjxgUopobCzgUw0A844gk","picPath":"//12412594.s21i.faiusr.com/2/ABUIABACGAAg3dqjxgUopobCzgUw0A844gk.jpg","picWidth":2000,"picHeight":1250}],"pluginsOptions":{"closeBtn":{"on":true,"arg":{}},"prevBtn":{"on":true,"arg":{}},"nextBtn":{"on":true,"arg":{}},"descPanel":{"on":true,"arg":{}}}};\nFai.top.changeMarquee659 = function(){Fai.stopInterval(\'marquee659\');Site.loadPhotoMarquee(659, 2, true, 0, \'listPhotos\');};\nFai.top.listPhotos659 = {id:659,style:90, data:{"cusPicSize":true,"picScale":2,"newMarqueeToward":0}};\n\n\nSite.initSimpleTextContent( 594,0);\nSite.initSimpleTextContent( 595,0);\nSite.initSimpleTextContent( 596,0);\nSite.initSimpleTextContent( 597,0);\nSite.initSimpleTextContent( 598,0);\nSite.initSimpleTextContent( 599,0);\n\nSite.initSimpleTextContent( 602,0);\nSite.initSimpleTextContent( 603,0);\n\nSite.setFullMeasureBgHightInIe6( 592);;$(function(){Site.inFullmeasueAnimation.animateFm(592,0,1,{"c":0,"d":4.0,"s":1.0});});\n\r\n\r\n\t//收集浏览器信息，统计dog\r\n\tSite.sendBrowerInfo(false);\r\n\r\n\t\r\n\t\r\n\r\n\t//如果有首页弹窗的话，需要先打开首页弹窗\r\n\t\r\n\r\n\tSite.initPage();\t// 这个要放在最后，因为模块组初始化时会把一些模块隐藏，导致没有高度，所以要放最后执行\r\n\t\r\n\t\r\n\r\n\t\r\n\t\r\n\tsetTimeout(afterModuleLoaded, 0);\r\n\r\n\t\r\n\r\n\t\r\n\t\r\n\t\t\tSite.loadCss("//2.ss.faisys.com/css/bannerAnimation.min.css?v=201708301449");\r\n\t\r\n\r\n\tSite.triggerGobalEvent("siteReadyLoad");\r\n\t\r\n\t\r\n\t\r\n\t\r\n\r\n});\r\n\r\nfunction afterModuleLoaded() {\r\n\t\r\n\tSite.initPage2();\r\nSite.initBackToTopTool(false,false,false,\'回到顶部\',\'null\');\n\t\r\n\r\n\t\r\n\t\r\n\t\r\n\t\r\n\t\r\n\t\r\n\r\n\t\r\n} // afterModuleLoaded end\r\n\r\nvar _lcid = 2052,\r\n\t_siteDomain = \'//www.csswz.com.cn\',\r\n\t_resRoot = \'//0.ss.faisys.com\',\r\n\t_colId = 2,\r\n\t_fromColId = -1,\r\n\t_designAuth = false,\r\n\t_manageMode = false,\r\n\t_oem = true,\r\n\t_siteVer = 150,\r\n\t_manageStatus = false;\r\n\r\nvar _jzProUrl = \'\';\r\nvar _flyerManageDomain = \'\';\r\nvar _siteAdmDomain = \'\',\r\n\t_jzHomeUrl = \'\';\r\n\t\r\n//多网站聚合页地址\r\nFai.top._jzAllSiteDomain = _oem ? \'i.vip.webportal.top\' : \'i.jz.fkw.com\';\r\n\r\n\r\n_Global._webRightBar = false;\r\nvar _isMemberLogin = false;// 会员是否登陆了\r\nvar _noCover = 0; \t\t\t// 隐藏弹窗遮罩层\r\n_Global._footerHidden = false;\t// 底部是否隐藏 原因：需要判断有些底部js方法是否运行 true:隐藏；false: 显示\r\n_Global._footerHiddenAllowed = true;\t\r\n\r\n\r\n\r\n\r\n\r\nvar _navPositionFixTop =  false;        \t\t  // 导航栏固定到顶部\r\n\r\nvar nav2SubMenu=[];\nvar nav102SubMenu=[{"hidden":false,"colId":114,"href":"/col.jsp?id=114","target":" target=\'_self\'","colName":"学校简介","html":"<span class=\'itemName0\'>学校简介<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":115,"href":"/col.jsp?id=115","target":" target=\'_self\'","colName":"领导班子","html":"<span class=\'itemName0\'>领导班子<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":116,"href":"/col.jsp?id=116","target":" target=\'_self\'","colName":"组织机构","html":"<span class=\'itemName0\'>组织机构<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":117,"href":"/col.jsp?id=117","target":" target=\'_self\'","colName":"发展历程","html":"<span class=\'itemName0\'>发展历程<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":118,"href":"/col.jsp?id=118","target":" target=\'_self\'","colName":"校长致辞","html":"<span class=\'itemName0\'>校长致辞<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":119,"href":"/col.jsp?id=119","target":" target=\'_self\'","colName":"通知公告","html":"<span class=\'itemName0\'>通知公告<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":120,"href":"/col.jsp?id=120","target":" target=\'_self\'","colName":"校园风光","html":"<span class=\'itemName0\'>校园风光<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":121,"href":"/col.jsp?id=121","target":" target=\'_self\'","colName":"学校新闻","html":"<span class=\'itemName0\'>学校新闻<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":122,"href":"/col.jsp?id=122","target":" target=\'_self\'","colName":"每周工作","html":"<span class=\'itemName0\'>每周工作<\\/span>","title":"","onclick":"return true;"}];\nvar nav103SubMenu=[{"hidden":false,"colId":123,"href":"/col.jsp?id=123","target":" target=\'_self\'","colName":"新闻报道","html":"<span class=\'itemName0\'>新闻报道<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":124,"href":"/col.jsp?id=124","target":" target=\'_self\'","colName":"政策文件","html":"<span class=\'itemName0\'>政策文件<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":125,"href":"/col.jsp?id=125","target":" target=\'_self\'","colName":"学习心得","html":"<span class=\'itemName0\'>学习心得<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":126,"href":"/col.jsp?id=126","target":" target=\'_self\'","colName":"党务公开","html":"<span class=\'itemName0\'>党务公开<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":127,"href":"/col.jsp?id=127","target":" target=\'_self\'","colName":"公开承诺","html":"<span class=\'itemName0\'>公开承诺<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":128,"href":"/col.jsp?id=128","target":" target=\'_self\'","colName":"党员风采","html":"<span class=\'itemName0\'>党员风采<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":129,"href":"/col.jsp?id=129","target":" target=\'_self\'","colName":"学习计划","html":"<span class=\'itemName0\'>学习计划<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":130,"href":"/col.jsp?id=130","target":" target=\'_self\'","colName":"典型推荐","html":"<span class=\'itemName0\'>典型推荐<\\/span>","title":"","onclick":"return true;"}];\nvar nav104SubMenu=[{"hidden":false,"colId":131,"href":"/col.jsp?id=131","target":" target=\'_self\'","colName":"课程建设","html":"<span class=\'itemName0\'>课程建设<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":132,"href":"/col.jsp?id=132","target":" target=\'_self\'","colName":"名师风采","html":"<span class=\'itemName0\'>名师风采<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":133,"href":"/col.jsp?id=133","target":" target=\'_self\'","colName":"课题研究","html":"<span class=\'itemName0\'>课题研究<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":134,"href":"/col.jsp?id=134","target":" target=\'_self\'","colName":"师资队伍","html":"<span class=\'itemName0\'>师资队伍<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":135,"href":"/col.jsp?id=135","target":" target=\'_self\'","colName":"双模教学","html":"<span class=\'itemName0\'>双模教学<\\/span>","title":"","onclick":"return true;"}];\nvar nav5SubMenu=[{"hidden":false,"colId":136,"href":"/col.jsp?id=136","target":" target=\'_self\'","colName":"团学会","html":"<span class=\'itemName0\'>团学会<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":137,"href":"/col.jsp?id=137","target":" target=\'_self\'","colName":"社团风采","html":"<span class=\'itemName0\'>社团风采<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":138,"href":"/col.jsp?id=138","target":" target=\'_self\'","colName":"党校团校","html":"<span class=\'itemName0\'>党校团校<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":139,"href":"/col.jsp?id=139","target":" target=\'_self\'","colName":"学生活动","html":"<span class=\'itemName0\'>学生活动<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":140,"href":"/col.jsp?id=140","target":" target=\'_self\'","colName":"德育项目","html":"<span class=\'itemName0\'>德育项目<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":141,"href":"/col.jsp?id=141","target":" target=\'_self\'","colName":"艺体特色","html":"<span class=\'itemName0\'>艺体特色<\\/span>","title":"","onclick":"return true;"}];\nvar nav101SubMenu=[{"hidden":false,"colId":142,"href":"/col.jsp?id=142","target":" target=\'_self\'","colName":"初中部","html":"<span class=\'itemName0\'>初中部<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":143,"href":"/col.jsp?id=143","target":" target=\'_self\'","colName":"高中部","html":"<span class=\'itemName0\'>高中部<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":144,"href":"/col.jsp?id=144","target":" target=\'_self\'","colName":"中外合作","html":"<span class=\'itemName0\'>中外合作<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":152,"href":"/col.jsp?id=152","target":" target=\'_self\'","colName":"招生动态","html":"<span class=\'itemName0\'>招生动态<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":145,"href":"/col.jsp?id=145","target":" target=\'_self\'","colName":"在线报名","html":"<span class=\'itemName0\'>在线报名<\\/span>","title":"","onclick":"return true;"}];\nvar nav111SubMenu=[];\nvar nav112SubMenu=[];\nvar nav113SubMenu=[{"hidden":false,"colId":146,"href":"/col.jsp?id=146","target":" target=\'_self\'","colName":"工会概况","html":"<span class=\'itemName0\'>工会概况<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":147,"href":"/col.jsp?id=147","target":" target=\'_self\'","colName":"教工活动","html":"<span class=\'itemName0\'>教工活动<\\/span>","title":"","onclick":"return true;"},{"hidden":false,"colId":148,"href":"/col.jsp?id=148","target":" target=\'_self\'","colName":"生殖健康","html":"<span class=\'itemName0\'>生殖健康<\\/span>","title":"","onclick":"return true;"}];\nvar nav160SubMenu=[];\n\r\n\r\nvar _useBannerVersionTwo = false; //使用横幅2.0的标志\r\nvar _customBackgroundData = {"styleDefault":true,"s":true,"h":false,"r":3,"ps":0,"o":"","sw":-1,"swt":0,"e":0,"wbh":-1,"wbw":-1,"clw":-1,"crw":-1,"wbws":-1,"wbs":0,"id":"","p":"","bBg":{"y":0,"r":3,"ps":0,"f":"","p":"","c":""},"cBg":{"y":0,"r":3,"ps":0,"f":"","p":"","c":""},"cmBg":{"y":0,"r":3,"ps":0,"f":"","p":"","c":""},"bm":{},"cm":{},"cp":{"y":0}};          //自定义的数据\r\nvar _templateBackgroundData = {"id":"ABUIABACGAAg1P3exQUoqpCoiwcwKjgq","bBg":{"y":1,"c":"#000","f":"","r":3,"p":"","ps":0},"cBg":{"c":"#000","f":"","r":3,"p":"","y":0,"ps":0},"cmBg":{"c":"#000","f":"","r":3,"p":"","y":0,"ps":0},"cp":{"y":0},"wbws":0,"s":false,"o":"#fff","e":1,"sw":1200,"h":false,"r":3,"ps":0,"swt":0,"wbh":-1,"wbw":-1,"clw":-1,"crw":-1,"wbs":0,"p":"//12412594.s21i.faiusr.com/2/ABUIABACGAAg1P3exQUoqpCoiwcwKjgq.jpg","bm":{},"cm":{}};// 模版的数据\r\nvar _resImageRoot = \'//2.ss.faisys.com\';\r\n\r\nvar _templateBannerData = {"t":2,"l":[{"i":"ABUIABACGAAgrqyjxgUoora0sQEwgA841QI","p":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgrqyjxgUoora0sQEwgA841QI.jpg","w":1920,"h":341,"tp":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgrqyjxgUoora0sQEwgA841QI!100x100.jpg","du":"//12412594.s21i.faiusr.com/0/ABUIABACGAAgrqyjxgUoora0sQEwgA841QI?f=ABUIABACGAAgrqyjxgUoora0sQEwgA841QI.jpg&v="},{"i":"ABUIABACGAAg4aujxgUoibqxswMwgA841QI","p":"//12412594.s21i.faiusr.com/2/ABUIABACGAAg4aujxgUoibqxswMwgA841QI.jpg","w":1920,"h":341,"tp":"//12412594.s21i.faiusr.com/2/ABUIABACGAAg4aujxgUoibqxswMwgA841QI!100x100.jpg","du":"//12412594.s21i.faiusr.com/0/ABUIABACGAAg4aujxgUoibqxswMwgA841QI?f=ABUIABACGAAg4aujxgUoibqxswMwgA841QI.jpg&v="},{"i":"ABUIABACGAAgrfLexQUovNrkmQEwgA841QI","p":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgrfLexQUovNrkmQEwgA841QI.jpg","w":1920,"h":341,"tp":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgrfLexQUovNrkmQEwgA841QI!100x100.jpg","du":"//12412594.s21i.faiusr.com/0/ABUIABACGAAgrfLexQUovNrkmQEwgA841QI?f=ABUIABACGAAgrfLexQUovNrkmQEwgA841QI.jpg&v="},{"i":"ABUIABACGAAgh_-exQUoyKu5lQcwgA841QI","p":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgh_-exQUoyKu5lQcwgA841QI.jpg","w":1920,"h":341,"tp":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgh_-exQUoyKu5lQcwgA841QI!100x100.jpg","du":"//12412594.s21i.faiusr.com/0/ABUIABACGAAgh_-exQUoyKu5lQcwgA841QI?f=ABUIABACGAAgh_-exQUoyKu5lQcwgA841QI.jpg&v="},{"i":"AD0IlKYEEAIYACCGkvK-BSj4lpRyMKALOPwC","p":"//70420.s61i.faiusr.com/2/AD0IlKYEEAIYACCGkvK-BSj4lpRyMKALOPwC.jpg","w":1440,"h":380,"tp":"//70420.s61i.faiusr.com/2/AD0IlKYEEAIYACCGkvK-BSj4lpRyMKALOPwC!100x100.jpg","du":"//70420.s61i.faiusr.com/0/AD0IlKYEEAIYACCGkvK-BSj4lpRyMKALOPwC?f=AD0IlKYEEAIYACCGkvK-BSj4lpRyMKALOPwC.jpg&v="},{"i":"ABUIABACGAAgnpyDwwUotOrauAYwgA841QI","p":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgnpyDwwUotOrauAYwgA841QI.jpg","w":1920,"h":341,"tp":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgnpyDwwUotOrauAYwgA841QI!100x100.jpg","du":"//12412594.s21i.faiusr.com/0/ABUIABACGAAgnpyDwwUotOrauAYwgA841QI?f=ABUIABACGAAgnpyDwwUotOrauAYwgA841QI.jpg&v="},{"i":"ABUIABACGAAgwvDexQUo76mUIDCADzjVAg","p":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgwvDexQUo76mUIDCADzjVAg.jpg","w":1920,"h":341,"tp":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgwvDexQUo76mUIDCADzjVAg!100x100.jpg","du":"//12412594.s21i.faiusr.com/0/ABUIABACGAAgwvDexQUo76mUIDCADzjVAg?f=ABUIABACGAAgwvDexQUo76mUIDCADzjVAg.jpg&v="},{"i":"ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI","p":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI.jpg","w":1920,"h":341,"tp":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI!100x100.jpg","du":"//12412594.s21i.faiusr.com/0/ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI?f=ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI.jpg&v="},{"i":"ABUIABACGAAgiayjxgUooNSrEjCADzjVAg","p":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgiayjxgUooNSrEjCADzjVAg.jpg","w":1920,"h":341,"tp":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgiayjxgUooNSrEjCADzjVAg!100x100.jpg","du":"//12412594.s21i.faiusr.com/0/ABUIABACGAAgiayjxgUooNSrEjCADzjVAg?f=ABUIABACGAAgiayjxgUooNSrEjCADzjVAg.jpg&v="}],"n":[{"t":1,"i":"ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI","ot":0,"e":0,"u":"","p":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI.jpg","w":1920,"h":341,"tp":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI!100x100.jpg","du":"//12412594.s21i.faiusr.com/0/ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI?f=ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI.jpg&v=","el":"","er":""},{"t":1,"i":"ABUIABACGAAgrqyjxgUoora0sQEwgA841QI","ot":1,"e":0,"u":"","p":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgrqyjxgUoora0sQEwgA841QI.jpg","w":1920,"h":341,"tp":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgrqyjxgUoora0sQEwgA841QI!100x100.jpg","du":"//12412594.s21i.faiusr.com/0/ABUIABACGAAgrqyjxgUoora0sQEwgA841QI?f=ABUIABACGAAgrqyjxgUoora0sQEwgA841QI.jpg&v=","el":"","er":""}],"ce":{"c1":"#000","c2":"#FFFFFF","sz1":"50","sz2":"30"},"s":4,"pl":0,"c":2,"bt":0,"at":1,"i":4000,"a":1500,"h":false,"o":false,"p":0,"pt":0,"ws2":false,"f":{},"tt":false,"ws":false};\t\t// 模版的数据\r\n\r\nvar _pageBannerData = {"s":0,"i":4000,"a":1500,"h":false,"o":false,"t":1,"p":0,"pt":0,"pl":0,"bt":1,"ws2":false,"l":[],"f":{},"ce":{},"n":[],"c":3,"at":0,"tt":false,"ws":false};\t\t\t\t\t// 当前页面的自定义数据（页面独立样式设置）\r\nvar _bannerData = _templateBannerData;\r\n\r\nvar _templateBannerV2Data = {"s":1,"bl":[{"t":1,"i":"ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI","ot":0,"e":0,"u":"","p":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI.jpg","w":1920,"h":341,"tp":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI!100x100.jpg","du":"//12412594.s21i.faiusr.com/0/ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI?f=ABUIABACGAAgn8yixgUo8sL2ngcwgA841QI.jpg&v=","el":"","er":""},{"t":1,"i":"ABUIABACGAAgrqyjxgUoora0sQEwgA841QI","ot":1,"e":0,"u":"","p":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgrqyjxgUoora0sQEwgA841QI.jpg","w":1920,"h":341,"tp":"//12412594.s21i.faiusr.com/2/ABUIABACGAAgrqyjxgUoora0sQEwgA841QI!100x100.jpg","du":"//12412594.s21i.faiusr.com/0/ABUIABACGAAgrqyjxgUoora0sQEwgA841QI?f=ABUIABACGAAgrqyjxgUoora0sQEwgA841QI.jpg&v=","el":"","er":""}],"bt":0,"at":1,"i":4000,"a":1500,"blh":{"t":0},"blw":{"t":0},"bzb":{"t":0},"bla":0,"ble":{"t":0,"at":0},"blpe":0};\t\t// 横幅2.0模版的数据\r\nvar _pageBannerV2Data = {"s":0,"bl":[],"bt":1,"at":0,"i":4000,"a":1500,"blh":{"t":0},"blw":{"t":0},"bzb":{"t":0},"bla":0,"ble":{"t":0,"at":0},"blpe":0};\t\t\t\t\t// 横幅2.0当前页面的自定义数据（页面独立样式设置）\r\nvar _bannerV2Data = _templateBannerV2Data;\r\n\r\nvar _closePhotoDetailEditSettings = false;\t// 针对全站搜索，判断是否要剔除三个搜索图片的功能\r\nvar _siteSeachRangeLength = 12;  // 全站搜索的搜索范围总数\r\n\r\nvar _useTemplateHeaderZone = true;\t\t\t\t// 是否使用全局模版\r\nvar _useTemplateFooterZone = true;\t\t\t\t// 是否使用全局模版\r\nvar _useTemplateBottomFloatLayer = true;\t\t\t\t// 是否使用全局模版\r\n\r\n\r\nvar _mallOpen = false;\r\nvar _couponOpen = false\r\n\r\nvar toolBoxShowView = false;\r\nvar toolBoxShowSet = false;\r\nvar toolBoxShowABTool = false;\r\nvar _wideBanner = true;\t\t\r\n\r\nvar _navStyleData = {"no":true,"s":0,"ns":{"w":1209,"h":-1},"cs":{"w":1209,"h":-1,"wy":0},"np":{},"ncp":{"y":1,"t":103,"r":-1,"b":-1,"l":1,"hl":0,"ht":-99},"cp":{"y":0,"t":-1,"l":-1},"nis":{"w":-1,"h":-1},"gt":{"y":1,"f":"微软雅黑","s":16,"w":0,"c":"#ffffff"},"ht":{"y":1,"c":"rgb(255, 255, 255)"},"nb":{"y":1,"c":"#000","f":"","r":0,"p":""},"cb":{"y":1,"c":"#000","f":"","r":0,"p":""},"nib":{"y":1,"c":"#000","r":0,"f":"","p":""},"nihb":{"y":1,"c":"#000","r":0,"f":"","p":""},"niss":{"w":-1,"h":-1},"nisb":{"y":1,"c":"#000","r":0,"f":"","p":""},"nsigt":{"f":"微软雅黑","s":12,"w":0,"c":"#000","y":0},"nsiht":{"c":"#000","y":0},"nsis":{"w":-1,"h":-1},"nsib":{"y":2,"c":"#2260a8","r":0,"f":"","p":""},"nsihb":{"y":2,"c":"#297bd9","r":0,"f":"","p":""},"nsiho":0,"nmove":1,"v":2,"ntf":{"t":0,"ht":0},"nsmt":{},"nsmb":{},"nrs":{"n":{"t":0},"c":{"t":0},"i":{"t":0},"smt":{"t":0},"smb":{"t":0},"si":{"t":0},"is":{"t":0},"sis":{"t":0},"tmt":{"t":0},"tmb":{"t":0},"ti":{"t":0},"tis":{"t":0}},"nsw":{"n":{"t":0},"c":{"t":0},"i":{"t":0},"sm":{"t":0},"si":{"t":0},"is":{"t":0},"sis":{"t":0}},"nbr":{"n":{"t":0},"i":{"t":0},"sm":{"t":0},"si":{"t":0},"is":{"t":0},"sis":{"t":0},"tm":{"t":0},"ti":{"t":0},"tis":{"t":0}},"ntmt":{},"ntmb":{}};\t\t\t\t      // 栏目导航样式\r\nvar _navStyleV2Data = {"no":true,"s":0,"snt":0,"ncb":false,"onft":false,"oinc":false,"nmove":0,"ns":{"y":0,"w":-1,"h":-1},"np":{"y":0},"nct":{"y":0},"nal":{"y":0},"nifc":{"y":0},"nif":{"y":0},"nis":{"y":0,"w":-1,"h":-1},"nisp":{"y":0},"nir":{"y":0},"nib":{"y":0,"t":true,"b":true,"l":true,"r":true},"snfc":{"y":0},"snf":{"y":0},"snr":{"y":0},"snb":{"y":0,"t":true,"b":true,"l":true,"r":true},"nbg":{"y":0}};\t\t\t\t  // 栏目导航2.0样式\r\nvar _useNavVersionTwo = false;\t\t\t\t\t  // 使用导航2.0\t\r\nvar _memberTopBar = false;                           // 开启顶部会员条\r\nvar _memberTopBar_versionTwo = false;     // 使用顶部会员条2.0\r\n_Global._navHidden =false;                                  //true:隐藏；flase：显示\r\n_Global._topBarV2 = false;                                  //true:隐藏；flase：显示\r\n_Global._stylePanelV1 = false;                                  //true:隐藏；flase：显示\r\n_Global._stylePanelV2 = false;                                  //true:隐藏；flase：显示\r\n\r\nvar _useFooterVersionTwo = false;\r\n\r\n_Global._oemHiddenSupport = false;\r\n_Global._hideSupportAllowed = true;\r\n_Global._hiddenSupport = false;\r\n_Global._hiddenLogin = false;\r\n_Global._hiddenMobile = false;\r\n_Global._ipcList = 1;\r\n_Global._hiddenICP = false;\r\n_Global._hiddenFooterInfo = true;\r\n_Global._footerInfoV2 = "©2018 长沙市第十五中学 版权所有";\r\n_defaultFooterInfo = "©2018 长沙市第十五中学 版权所有";\r\n\r\nvar _cityJsLink = "//1.ss.faisys.com/js/city2.min.js?v=201803221008";\r\nvar _majorColorData = "#1e50ae";\r\n//浮动按钮样式链接缓存\r\nvar _floatBtnCssLink = "//2.ss.faisys.com/css/floatBtn1.min.css?v=201712061746";\r\nvar _themeColorType = 256;\r\nvar _templateFrame = 1021;\r\nvar _siteDemo = false;\n\r\nvar _isRealDemo = false;\r\n_Global._backToTop = false;\r\nvar _aid = 12412594;\r\nvar _acctCreateTime = 1482734160000;\r\nvar _siteId = 0;\r\nvar _templateLayout = _templateDefLayout.NAV_FLOAT;\r\nvar _webBannerHeight = -1;\r\nvar _isTemplateVersion2 = true;\r\nvar _uiMode= false;\r\nvar _isNewUserForLayoutToNewVersion = false;\r\nvar _undo = {allow: {undo:0, redo:0} };\r\nvar _choiceCurrencyVal = "￥";\r\nvar _moduleAnimationPercent = -1;\r\nvar file_size_limit = parseInt("500");\r\n_Global.styleChangeNum = 0;\r\n_Global.showSaveGuide = false; \t\t\t\t// 大保存是否出现新手指引\r\n_Global.saveBtnState = 0; \t\t\t\t\t// 记录大保存按钮状态 已使用的状态： 0:未点击，1:已点击，2：保存成功 3：保存失败\r\n_Global.previewBtnState = 0; \t\t\t\t// 记录预览按钮状态 已使用的状态： 0:未点击，1:已点击，2：保存成功并预览 3：保存失败\r\n_Global.saveClickConut = 0;\t\t\t\t\t// 记录触发大保存的次数\r\n_Global._useTemplateBackground = true;\t\t// 是否使用模版\r\n\r\nvar _newUserGuide = false; \t\t//是否需要新手指引，false代表不需要\r\nif( false ){\t\t\t//本地环境，到时候测试完可以去掉\r\n\tif(_aid > 9855603 && !false){ \t\r\n\t\t_newUserGuide = true; \t\t\t\t\t\r\n\t}\r\n}else{\r\n\tif(_aid > 15971536 && !false){ \t// undefined and false\t\r\n\t\t_newUserGuide = true; \t\t\t\t\t//传到全局，当前\r\n\t}\r\n}\r\nvar _executedCountForUserGuide = 1; //用于新手指引\r\n\r\n\r\n\r\n_Global._siteAdvancedSetting = true;\r\n\r\n', 'unique_words': ['党建园地', '教学教研', '德育天地', '招生专栏', '教育督导', '学校简介', '组织机构', '校园风光', '学校新闻', '新闻报道', '党务公开', '公开承诺', '党员风采', '课程建设', '名师风采', '师资队伍', '双模教学', '社团风采', '德育项目', '招生动态', '工会概况'], 'url': 'http://www.csswz.com.cn', 'keywords1': '长沙市第十五中学', 'keywords3': '德育项目', 'description': '长沙市第十五中学'}
+2018-05-24 17:49:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cstjb.com> (referer: None)
+2018-05-24 17:49:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.cxms.net/index.aspx> from <GET http://www.cxms.net>
+2018-05-24 17:49:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cstjbsy.com> (referer: None)
+2018-05-24 17:49:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cxslg.com> (referer: None)
+2018-05-24 17:49:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cxmtc.net> (referer: None)
+2018-05-24 17:49:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cswszy.com> (referer: None)
+2018-05-24 17:49:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.csxyz.com> (referer: None)
+2018-05-24 17:49:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cxyz.net> (referer: None)
+2018-05-24 17:49:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.csdczx.com> (referer: None)
+2018-05-24 17:49:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cstjb.com>
+None
+2018-05-24 17:49:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cstjbsy.com>
+None
+2018-05-24 17:49:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cxslg.com>
+{'url_index_doc': 151, 'title': '山东曹县第一私立高中', 'keywords2': '学校教研', 'copyrt': None, 'unique_words': ['学校概况', '校园新闻', '校务公开', '招生招聘', '教学科研', '校园风采', '学生服务', '学校荣誉', '教学理念', '德育理念', '学校新闻', '教育新闻', '招生政策', '招生报名', '学校教研', '素质教育', '学校活动', '学校外景'], 'url': 'http://www.cxslg.com', 'keywords1': '山东曹县第一私立高中', 'keywords3': '教学科研', 'description': ''}
+2018-05-24 17:49:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cyschool.edu.sh.cn> (referer: None)
+2018-05-24 17:49:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cswszy.com>
+{'url_index_doc': 147, 'title': '长沙卫生职业学院欢迎您', 'keywords2': '长沙卫生职业学院欢迎您', 'copyrt': '长沙卫生职业学院版权所有 学校地址：长沙经济技术开发区灰埠路87号', 'unique_words': ['学院概况', '机构设置', '教育教学', '招生就业', '党建工作', '信息公开'], 'url': 'http://www.cswszy.com', 'keywords1': '长沙卫生职业学院', 'keywords3': '机构设置', 'description': None}
+2018-05-24 17:49:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.csxyz.com>
+{'url_index_doc': 148, 'title': '长沙县第一中学', 'keywords2': '古樟园地', 'copyrt': None, 'unique_words': ['学校概况', '名师风采', '教学管理', '招生专栏', '课程改革', '教育处', '德育活动', '德育科研', '服务指南', '古樟园地', '教师文苑', '咨询服务', '心理课程', '生涯课程', '党建党务', '组织机构', '党建动态', '学习园地'], 'url': 'http://www.csxyz.com', 'keywords1': '长沙县第一中学', 'keywords3': '课程改革', 'description': '长沙县第一中学'}
+2018-05-24 17:49:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cxyz.net>
+None
+2018-05-24 17:49:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.csdczx.com>
+{'url_index_doc': 140, 'title': '长沙市明达中学', 'keywords2': '达材中学', 'copyrt': '2013-2016 ©  长沙市明达中学（原长沙市达材中学） 版权所有', 'unique_words': ['学校介绍', '学校概况', '学校校训', '新闻信息', '校园新闻', '招生招聘', '教学科研', '德育心理', '师生风采', '名师介绍', '校园之星'], 'url': 'http://www.csdczx.com', 'keywords1': '明达中学', 'keywords3': '长沙复读', 'description': '百年名校明德中学托管，湖南民办学校知名品牌——长沙市明达中学（原长沙市达材中学）欢迎您。全国咨询电话：0731-88212358。'}
+2018-05-24 17:49:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cxmtc.net/default.html> (referer: http://www.cxmtc.net)
+2018-05-24 17:49:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cyschool.edu.sh.cn>
+{'url_index_doc': 155, 'title': '上海市朝阳中学', 'keywords2': '新闻系统', 'copyrt': None, 'unique_words': ['学校概况', '教学天地', '德育空间', '科研动态', '教师学习', '学生园地', '家长学校'], 'url': 'http://www.cyschool.edu.sh.cn', 'keywords1': '朝阳中学', 'keywords3': '朝阳中学新闻发布系统', 'description': '朝阳中学新闻发布系统，朝阳中学文章发布系统'}
+2018-05-24 17:49:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cxms.net/index.aspx> (referer: None)
+2018-05-24 17:49:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cyswszx.org.cn> (referer: None)
+2018-05-24 17:49:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cxmtc.net/default.html>
+{'url_index_doc': 150, 'title': '楚雄医药高等专科学校', 'keywords2': '信息中心', 'copyrt': None, 'unique_words': ['学校新闻', '就业信息', '校务公开', '学校机构', '学校概况', '人才招聘', '师资队伍', '校园文化', '信息中心', '护理学院'], 'url': 'http://www.cxmtc.net', 'keywords1': '楚雄医药高等专科学校', 'keywords3': '护理学院', 'description': '正方数字化校园标准版-1.0.0.0'}
+2018-05-24 17:49:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cxsz.net> (referer: None)
+2018-05-24 17:49:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czc.net.cn> (referer: None)
+2018-05-24 17:49:24 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.czbj.js.cn/index.html> from <GET http://www.czbj.js.cn>
+2018-05-24 17:49:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cz24.net> (referer: None)
+2018-05-24 17:49:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czczzx.com> (referer: None)
+2018-05-24 17:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cxms.net/index.aspx>
+None
+2018-05-24 17:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cyswszx.org.cn>
+{'url_index_doc': 156, 'title': '文山中学', 'keywords2': '昌邑市文山中学', 'copyrt': None, 'unique_words': ['学校简介', '校园文化', '教育督导', '学校荣誉', '生活服务', '校园资讯', '校园新闻', '校务管理', '后勤服务', '校园安全', '名师风采', '教育科研', '教师培训', '组织机构', '党员风采', '招生考试', '初中招生', '教育资源', '艺体教学', '课堂教学'], 'url': 'http://www.cyswszx.org.cn', 'keywords1': '文山中学', 'keywords3': '昌邑二中', 'description': None}
+2018-05-24 17:49:25 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET http://www.czlczx.net/webs/> from <GET http://www.czlczx.net>
+2018-05-24 17:49:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czhyzx.com> (referer: None)
+2018-05-24 17:49:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czfrcz.net> (referer: None)
+2018-05-24 17:49:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czdszx.com> (referer: None)
+2018-05-24 17:49:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czbj.js.cn/index.html> (referer: None)
+2018-05-24 17:49:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czez.com.cn> (referer: None)
+2018-05-24 17:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cxsz.net>
+{'url_index_doc': 153, 'title': '吴中区城西中学', 'keywords2': '教育技术', 'copyrt': '吴中区城西中学©版权所有 \xa0 \xa0ICP备案号：\xa0', 'unique_words': ['学校概况', '特色教育', '校园风貌', '队伍建设', '学校荣誉', '制度建设', '党建工作', '党建活动', '党建宣传', '党员风采', '德育天地', '德育新闻', '学子风采', '教育教学', '教师风采', '教育科研', '教师培训', '教育技术', '校务公开', '校园安全'], 'url': 'http://www.cxsz.net', 'keywords1': '吴中区城西中学', 'keywords3': '教育教学', 'description': '吴中区城西中学'}
+2018-05-24 17:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czc.net.cn>
+{'url_index_doc': 161, 'title': '滁州职业技术学院', 'keywords2': '学院章程', 'copyrt': '版权所有 滁州职业技术学院 皖ICP备06012098号 地址：安徽滁州丰乐大道2188号', 'unique_words': ['学院概况', '学院简介', '学院沿革', '学院章程', '校园风光', '学院视频', '学院校歌', '师生风采', '管理机构', '教学部门', '教学科研', '招生就业', '继续教育', '信息公开', '技师学院', '学院风采', '教学资源', '学校校历'], 'url': 'http://www.czc.net.cn', 'keywords1': '滁州职业技术学院', 'keywords3': '学院概况', 'description': None}
+2018-05-24 17:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cz24.net>
+None
+2018-05-24 17:49:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cznes.com> (referer: None)
+2018-05-24 17:49:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czgz.cn> (referer: None)
+2018-05-24 17:49:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czqtzx.com> (referer: None)
+2018-05-24 17:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czhyzx.com>
+None
+2018-05-24 17:49:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czfrcz.net>
+None
+2018-05-24 17:49:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czdszx.com>
+{'url_index_doc': 163, 'title': '常州市第四中学', 'keywords2': '教学管理', 'copyrt': 'Copyright @ 2002-2015\xa0 \xa0 常州市第四中学\xa0 \xa0 版权所有', 'unique_words': ['网站导航', '学校概况', '校园新闻', '德育经纬', '教学管理', '教育科研', '莘莘学子', '保障服务', '教育督导', '教育论坛'], 'url': 'http://www.czdszx.com', 'keywords1': '常州市第四中学', 'keywords3': '校园新闻', 'description': None}
+2018-05-24 17:49:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czbj.js.cn/index.html>
+{'url_index_doc': 160, 'title': '常州市北郊初级中学', 'keywords2': '论文导航', 'copyrt': None, 'unique_words': ['学校概况', '课程发展', '教师发展', '后勤服务', '教师风采', '课程通知', '学习园地', '专业发展', '论文导航'], 'url': 'http://www.czbj.js.cn', 'keywords1': '常州市北郊初级中学', 'keywords3': '课程通知', 'description': ''}
+2018-05-24 17:49:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czez.com.cn>
+{'url_index_doc': 164, 'title': '常州市第二中学', 'keywords2': '学校基建', 'copyrt': None, 'unique_words': ['校园首页', '校务公开', '校园新闻', '和谐党建', '党建活动', '课程管理', '年级风采', '教学动态', '教师发展', '专业发展', '学科建设', '教师获奖', '莘莘学子', '班级建设', '家长学校', '后勤服务', '学校基建', '二中教育'], 'url': 'http://www.czez.com.cn', 'keywords1': '常州市第二中学', 'keywords3': '党建活动', 'description': None}
+2018-05-24 17:49:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cztjbcz.cn> (referer: None)
+2018-05-24 17:49:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czsycz.com> (referer: None)
+2018-05-24 17:49:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czxzmzzx.cn> (referer: None)
+2018-05-24 17:49:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czyhzx.com> (referer: None)
+2018-05-24 17:49:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.cxstzx.com> (referer: None)
+2018-05-24 17:49:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czqyzx.com> (referer: None)
+2018-05-24 17:49:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cznes.com>
+None
+2018-05-24 17:49:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czgz.cn>
+{'url_index_doc': 166, 'title': '池州职业技术学院网站', 'keywords2': '教育', 'copyrt': None, 'unique_words': ['学院概况', '学院简介', '机构设置', '专业简介', '学院风景', '学院新闻', '学院要闻', '图片新闻', '招生就业', '招生信息', '招生网', '信息公开', '精品课程', '池州学院'], 'url': 'http://www.czgz.cn', 'keywords1': '职业', 'keywords3': '就业', 'description': None}
+2018-05-24 17:49:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czqtzx.com>
+{'url_index_doc': 171, 'title': '常州市清潭中学', 'keywords2': '学校荣誉', 'copyrt': None, 'unique_words': ['学校概况', '学校荣誉', '校园新闻', '校园掠影', '课程教学', '校本课程', '教育科研', '科研动态', '教育视野', '德育在线', '学校关工', '师生风采', '教师获奖', '体艺园地', '清中党建', '党建动态', '党务公开', '校务公开', '教学反思'], 'url': 'http://www.czqtzx.com', 'keywords1': '常州市清潭中学', 'keywords3': '教师获奖', 'description': None}
+2018-05-24 17:49:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czzx.sh.cn> (referer: None)
+2018-05-24 17:49:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czlczx.net/webs/> (referer: None)
+2018-05-24 17:49:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.cztjbcz.cn>
+None
+2018-05-24 17:49:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czsycz.com>
+None
+2018-05-24 17:49:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czxzmzzx.cn>
+{'url_index_doc': 176, 'title': '常州西藏民族中学', 'keywords2': '教学研究', 'copyrt': None, 'unique_words': ['学校概况', '校园新闻', '学校管理', '教学研究', '教师风采', '校园之星', '缤纷校园', '教学资源', '课程基地', '教育集团'], 'url': 'http://www.czxzmzzx.cn', 'keywords1': '常州西藏民族中学', 'keywords3': '教学资源', 'description': None}
+2018-05-24 17:49:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czyhzx.com>
+{'url_index_doc': 177, 'title': '颐和中学', 'keywords2': '沧州颐和中学', 'copyrt': None, 'unique_words': ['学校概况', '学校简介', '学校荣誉', '教师风采', '初中教师', '高中教师', '德育之窗', '德育活动', '教学之窗', '教学活动', '校本课程', '科研之窗', '科研课题', '创新教育', '学生园地', '校园之星', '家长园地', '家长学校', '招生招聘', '网络服务', '魅力校园'], 'url': 'http://www.czyhzx.com', 'keywords1': '颐和中学', 'keywords3': '初中教师', 'description': None}
+2018-05-24 17:49:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czqyzx.com>
+{'url_index_doc': 172, 'title': '常州市勤业中学', 'keywords2': '教师风采', 'copyrt': '常州市勤业中学 版权所有 ', 'unique_words': ['学校简介', '学校荣誉', '校园动态', '校务公开', '校园新闻', '教师风采', '教师获奖', '学生风采', '教学频道', '教学动态', '教学反思', '教学常规', '借阅服务', '教育科研', '校本课程', '公民教育', '常规建设', '资源建设', '艺体园地', '艺术风采', '后勤服务', '党建网', '校务信息', '招生工作', '学校收费'], 'url': 'http://www.czqyzx.com', 'keywords1': '常州市勤业中学', 'keywords3': '学校收费', 'description': None}
+2018-05-24 17:49:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czztxx.com> (referer: None)
+2018-05-24 17:49:28 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.czzy-edu.com/?WebShieldDRSessionVerify=oAeYsYAvBVBrgygSa0tl> from <GET http://www.czzy-edu.com>
+2018-05-24 17:49:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dandelionschool.org> (referer: None)
+2018-05-24 17:49:28 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.datong.xmedu.cn/default.do> from <GET http://www.datong.xmedu.cn>
+2018-05-24 17:49:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dbtzx.com> (referer: None)
+2018-05-24 17:49:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czzx.sh.cn>
+{'url_index_doc': 180, 'title': '上海市长征中学', 'keywords2': '工会建设', 'copyrt': None, 'unique_words': ['学校简介', '师资队伍', '新闻信息', '教学科研', '课程建设', '师资培训', '德育园地', '德育动态', '党建工会', '工会建设', '支部建设', '党务公开', '友好学校', '风采展示', '教育新闻', '普陀教育', '普教党建', '信息发布', '查询服务', '校务公开', '组织机构', '人才招聘'], 'url': 'http://www.czzx.sh.cn', 'keywords1': '上海市长征中学', 'keywords3': '教育新闻', 'description': '上海市长征中学'}
+2018-05-24 17:49:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czlczx.net/webs/>
+{'url_index_doc': 168, 'title': '常州市潞城中学', 'keywords2': '综合服务', 'copyrt': '版权所有：常州市潞城中学\xa0\xa0', 'unique_words': ['教师博客', '校园新闻', '学校管理', '教师发展', '教育科研', '综合服务', '网络课程', '新闻动态', '师德建设', '支部建设', '团队建设'], 'url': 'http://www.czlczx.net', 'keywords1': '常州市潞城中学', 'keywords3': '教育科研', 'description': None}
+2018-05-24 17:49:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.czzy-edu.com/> from <GET http://www.czzy-edu.com/?WebShieldDRSessionVerify=oAeYsYAvBVBrgygSa0tl>
+2018-05-24 17:49:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dcyz.cn> (referer: None)
+2018-05-24 17:49:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ddyz.net> (referer: None)
+2018-05-24 17:49:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.datong.xmedu.cn/default.do> (referer: None)
+2018-05-24 17:49:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czztxx.com>
+{'url_index_doc': 179, 'title': '常州市中天实验学校', 'keywords2': '教育教学', 'copyrt': '\r\n\r\n    版权所有：常州市中天实验学校\xa0\xa0', 'unique_words': ['新闻中心', '德育之窗', '教育科研', '教育教学', '中博教育', '学校概况', '学校荣誉', '学校风景', '名师风采', '校园快讯', '学校工作', '校务公开', '德育活动', '教师荣誉', '教师培训', '教学常规', '教学视频', '团队建设', '党员风采', '学习园地', '组织建设', '党建动态', '绿色学校', '法治学校', '生命教育', '心理教育', '校园雪景', '校园一角'], 'url': 'http://www.czztxx.com', 'keywords1': '常州市中天实验学校', 'keywords3': '德育活动', 'description': None}
+2018-05-24 17:49:29 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dandelionschool.org>
+{'url_index_doc': 182, 'title': '蒲公英中学', 'keywords2': '家长故事', 'copyrt': None, 'unique_words': ['捐方风采', '教师故事', '家长故事', '校园新闻', '家长会', '家长学校', '家长文章', '招生信息', '信息公开'], 'url': 'http://www.dandelionschool.org', 'keywords1': '蒲公英中学', 'keywords3': '校园新闻', 'description': '蒲公英中学是北京市第一所专门为农民工子女创办的中学，致力于解决农民工子女上中学难、上好中学更难的问题。蒲公英中学是一所民办非营利性的、公益性的平民学校，在社会爱心人士的捐助和奉献中诞生和成长。'}
+2018-05-24 17:49:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dbtzx.com>
+{'url_index_doc': 184, 'title': '无锡市东北塘中学', 'keywords2': '无锡市东北塘中学', 'copyrt': '\u30002016 版权所有 无锡市东北塘中学 网址：www.dbtzx.com', 'unique_words': ['学校简介', '美丽校园', '校园动态', '赛事信息', '教育科研', '学校历史', '学校荣誉', '教师频道', '名师风采', '教学论文', '教师论坛', '校园之星', '德育天地', '法制教育', '校务公开', '学校概况', '事务公开', '学校大事', '绿色学校', '教育督导', '督导信息', '校园文化', '无锡教育', '江苏教育', '锡山教育', '学校餐厅'], 'url': 'http://www.dbtzx.com', 'keywords1': '东北塘中学', 'keywords3': '无锡市锡山区青少年业余体育学校', 'description': '“和而不同，示素质教育之范；以文化人，奠美好人生之基。”无锡市东北塘中学（无锡市锡山区青少年业余体育学校）是一所以优异办学成绩饮誉乡里，以棋球教育特色称著国内，以弘毅笃行引为校园文化传统的现代化学校。'}
+2018-05-24 17:49:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dhez.cn> (referer: None)
+2018-05-24 17:49:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dhcc.cc> (referer: None)
+2018-05-24 17:49:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dcyz.cn>
+{'url_index_doc': 185, 'title': '常德市鼎城区第一中学', 'keywords2': '教育督导', 'copyrt': None, 'unique_words': ['名师空间', '教育督导'], 'url': 'http://www.dcyz.cn', 'keywords1': '常德市鼎城区第一中学', 'keywords3': '名师空间', 'description': '常德市鼎城区第一中学'}
+2018-05-24 17:49:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ddyz.net>
+{'url_index_doc': 186, 'title': '丹东一中', 'keywords2': '探险者地图', 'copyrt': None, 'unique_words': ['学校概况', '学校管理', '信息中心', '德育建设', '学生园地', '教育随笔', '爱的教育', '教学设计', '教学论文', '教学课件', '校园文化', '校园生活', '招生宣传'], 'url': 'http://www.ddyz.net', 'keywords1': '探险者', 'keywords3': '德育建设', 'description': '丹东一中网站'}
+2018-05-24 17:49:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.datong.xmedu.cn/default.do>
+None
+2018-05-24 17:49:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dhez.cn>
+None
+2018-05-24 17:49:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dhcc.cc>
+{'url_index_doc': 187, 'title': '泉州工艺美术职业学院', 'keywords2': '虚拟校园', 'copyrt': None, 'unique_words': ['服务大厅', '虚拟校园', '学院首页', '学院概况', '系部设置', '校园风光', '党建工作', '教育教学', '精品课程', '科研工作', '招生工作', '道德建设', '学生教育', '安全教育', '在线教学', '校园生活', '校园景观'], 'url': 'http://www.dhcc.cc', 'keywords1': '泉州工艺美术职业学院', 'keywords3': '精品课程', 'description': None}
+2018-05-24 17:49:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.djsyzx.com> (referer: None)
+2018-05-24 17:49:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dhtzx.com.cn> (referer: None)
+2018-05-24 17:49:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dhlz.net> (referer: None)
+2018-05-24 17:49:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dl23zx.com> (referer: None)
+2018-05-24 17:49:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.djsyzx.com>
+{'url_index_doc': 191, 'title': '垫江实验中学', 'keywords2': '党建信息', 'copyrt': None, 'unique_words': ['学校简介', '教师风采', '学校荣誉', '学校领导', '校园剪影', '新闻中心', '校园新闻', '招生招聘', '德育处', '教育科研', '科研论文', '党建之窗', '党建信息', '党务公开', '党建学习', '党建平台', '信息技术', '友好学校', '校园博客'], 'url': 'http://www.djsyzx.com', 'keywords1': '垫江实验中学', 'keywords3': '学校简介', 'description': None}
+2018-05-24 17:49:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dl35.com.cn> (referer: None)
+2018-05-24 17:49:31 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dhtzx.com.cn>
+{'url_index_doc': 190, 'title': '无锡市东湖塘中学', 'keywords2': '信息发布', 'copyrt': '版权所有：无锡市东湖塘中学\xa0 备案号：', 'unique_words': ['学校概况', '校园风光', '名师风采', '校园动态', '校园快讯', '校务公开', '校务动态', '德育天地', '德育动态', '家长学校', '心海导航', '教育教研', '教研信息', '信息发布', '校园之星', '教育督导'], 'url': 'http://www.dhtzx.com.cn', 'keywords1': '无锡市东湖塘中学', 'keywords3': '家长学校', 'description': ''}
+2018-05-24 17:49:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dhlz.net>
+{'url_index_doc': 189, 'title': '德化六中信息网', 'keywords2': '德化六中', 'copyrt': None, 'unique_words': ['六中风采', '学校管理', '德育园地', '教育科研', '党工建设', '校务公开', '名师风采', '有效教学', '教师博客', '教育资源', '校园风光', '最新信息', '学校新闻', '德育天地', '学校荣誉', '教育部', '信息时报', '科学教育', '教育论坛'], 'url': 'http://www.dhlz.net', 'keywords1': '教育', 'keywords3': '中学', 'description': '德化六中创办于2001年秋季，她坐落在德化城区浔东路，校舍依山而 建，高低错落，青松翠树，掩映其间，绿草如茵，环境幽雅，驰名中外的宋代古窑址更平添了几分神秘的气氛，是一处莘莘学子求学的理想场所。'}
+2018-05-24 17:49:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dl23zx.com>
+{'url_index_doc': 193, 'title': '大连市第二十三中学', 'keywords2': '新闻中心', 'copyrt': '版权所有 © ', 'unique_words': ['学校概况', '校园风光', '师资队伍', '名师风采', '新闻中心', '教学科研', '教育信息', '德育管理', '德育讲堂', '党团建设', '党员风采', '学子风采', '信息组', '德育处'], 'url': 'http://www.dl23zx.com', 'keywords1': '大连市第二十三中学', 'keywords3': '德育处', 'description': ''}
+2018-05-24 17:49:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dl103gz.com> (referer: None)
+2018-05-24 17:49:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dl35.com.cn>
+{'url_index_doc': 194, 'title': '大连市第三十五中学', 'keywords2': '教学科研', 'copyrt': None, 'unique_words': ['学校概况', '新闻资讯', '党建天地', '学生园地', '教学科研', '德育工作'], 'url': 'http://www.dl35.com.cn', 'keywords1': '大连市第三十五中学', 'keywords3': '学生园地', 'description': None}
+2018-05-24 17:49:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dl103gz.com>
+{'url_index_doc': 192, 'title': '大连市一', 'keywords2': '三中学', 'copyrt': None, 'unique_words': ['魅力校园', '校园公告', '学校文化', '美丽校园', '党建园地', '特色建设', '自主教育', '名师风采', '校园祝福', '学生园地', '校园之星', '教师专区', '大连教育'], 'url': 'http://www.dl103gz.com', 'keywords1': '大连市一', 'keywords3': '智慧校园', 'description': '大连市一0三中学 智慧校园'}
+2018-05-24 17:49:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dyyz.net.cn> (referer: None)
+2018-05-24 17:49:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dylzsc.net> (referer: None)
+2018-05-24 17:49:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dsms.info> (referer: None)
+2018-05-24 17:49:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dysyzx.net> (referer: None)
+2018-05-24 17:49:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dsfzcz.com> (referer: None)
+2018-05-24 17:49:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dyez.net> (referer: None)
+2018-05-24 17:49:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dlhs24.com.cn> (referer: None)
+2018-05-24 17:49:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dxdzx.cn> (referer: None)
+2018-05-24 17:49:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dl8z.com> (referer: None)
+2018-05-24 17:49:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dyqdszx.net> (referer: None)
+2018-05-24 17:49:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.dyyz.net/f> from <GET http://www.dyyz.net>
+2018-05-24 17:49:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dlhlzyxy.com> (referer: None)
+2018-05-24 17:49:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dyyz.net.cn>
+{'url_index_doc': 213, 'title': '大冶一中', 'keywords2': '网站系统', 'copyrt': '版权所有：', 'unique_words': ['学校概况', '新闻频道', '德育在线', '科研阵地', '招生专栏'], 'url': 'http://www.dyyz.net.cn', 'keywords1': '大冶一中', 'keywords3': '新闻系统', 'description': '大冶一中,dyyz.net.cn,新闻系统,网站系统'}
+2018-05-24 17:49:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dszx.net> (referer: None)
+2018-05-24 17:49:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dyyz.net/f> (referer: None)
+2018-05-24 17:49:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dzcnzx.com> (referer: None)
+2018-05-24 17:49:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dylzsc.net>
+{'url_index_doc': 207, 'title': '丹阳六中', 'keywords2': '党建工作', 'copyrt': None, 'unique_words': ['学校概况', '新闻中心', '教师风采', '学生园地', '教育科研', '党建工作', '德育天地', '学校特色', '校园文化', '课程基地'], 'url': 'http://www.dylzsc.net', 'keywords1': '丹阳六中', 'keywords3': '课程基地', 'description': None}
+2018-05-24 17:49:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dsms.info>
+{'url_index_doc': 201, 'title': '广东梅县东山中学', 'keywords2': '学校简介', 'copyrt': '版权所有：广东梅县东山中学    技术支持：泰鸿科技   ICP备案编号：粤ICP备11046755号-1', 'unique_words': ['学校简介', '招生信息', '教师风采'], 'url': 'http://www.dsms.info', 'keywords1': '广东梅县东山中学', 'keywords3': '教师风采', 'description': '广东梅县东山中学'}
+2018-05-24 17:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dysyzx.net>
+{'url_index_doc': 209, 'title': '东营市实验中学', 'keywords2': '工会建设', 'copyrt': '\xa0版权所有：东营市实验中学 Copyright(c)DongYing Experimental Junior Middle', 'unique_words': ['党建工作', '德育工作', '教学科研', '服务保障', '学校工会', '校园风光', '学校荣誉', '理论园地', '党员风采', '警示教育', '科研工作', '教师培训', '安全教育', '综合服务', '基础建设', '工会建设', '学校团史', '其他信息', '市教育局', '省教育厅', '教育部', '校园足球', '信息报送'], 'url': 'http://www.dysyzx.net', 'keywords1': '东营市实验中学', 'keywords3': '教学科研', 'description': None}
+2018-05-24 17:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dsfzcz.com>
+{'url_index_doc': 200, 'title': '东北师大附中明珠学校', 'keywords2': '师大附中初中部', 'copyrt': None, 'unique_words': ['学校概况', '生命教育', '学校德育', '教学管理', '教育科研', '名师风采', '招生资讯', '校园掠影', '教学设施', '学生风采', '教学活动'], 'url': 'http://www.dsfzcz.com', 'keywords1': '师大附中明珠校区', 'keywords3': '东北师范大学附属中学明珠学校', 'description': '东北师大附中明珠学校'}
+2018-05-24 17:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dyez.net>
+{'url_index_doc': 206, 'title': '黔南田家炳中学首页', 'keywords2': '教学科研', 'copyrt': None, 'unique_words': ['校园新闻', '教学科研', '招生招聘', '德育中心', '党建专栏', '科研信息', '师资培训', '招生动态', '招聘信息', '公示信息', '国防教育', '校园简介', '校园展示', '教学平台'], 'url': 'http://www.dyez.net', 'keywords1': '黔南田家炳中学首页', 'keywords3': '招生动态', 'description': None}
+2018-05-24 17:49:34 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dlhs24.com.cn>
+{'url_index_doc': 198, 'title': '大连市第二十四中学', 'keywords2': '科研信息', 'copyrt': None, 'unique_words': ['新闻资讯', '学校概况', '教师风采', '党建天地', '教育教学', '课程科研', '国际课程', '校务管理', '招考信息', '校园速递', '教育前沿', '校园公告', '学校简介', '组织机构', '校园风貌', '国际风采', '校园文化', '校务公开', '名师巡礼', '党务公开', '组织建设', '思想建设', '制度建设', '党员风采', '教学活动', '教学资源', '心理园地', '家长学校', '科研信息', '课程建设', '课程设置', '高考资讯', '校友风采', '学子风采'], 'url': 'http://www.dlhs24.com.cn', 'keywords1': '大连市第二十四中学', 'keywords3': '教学资源', 'description': ''}
+2018-05-24 17:49:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dxdzx.cn>
+{'url_index_doc': 204, 'title': '山东省蓬莱市大辛店中学', 'keywords2': '地理', 'copyrt': None, 'unique_words': ['学校德育', '学前教育', '校园新闻', '教师的美', '秀我风采', '教育宝典', '教育讲坛', '学校概', '学校简介', '制度建设', '新闻中心', '教育资讯', '校园文化', '教师之窗', '教师风采', '学生风采', '服务家长', '安全教育', '养成教育', '党团建设', '党建动态', '校园风光', '校园之春'], 'url': 'http://www.dxdzx.cn', 'keywords1': '大辛店中学', 'keywords3': '德育', 'description': '蓬莱市大辛店中学,大辛店中学,文章中心,资源中心,图片中心,在线留言'}
+2018-05-24 17:49:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dl8z.com>
+{'url_index_doc': 196, 'title': '大连市第八中学', 'keywords2': '特级教师', 'copyrt': 'Copyright© 大连市第八中学版权所有\u3000', 'unique_words': ['教学活动', '校园活动', '班级风采', '特长招生', '学校荣誉', '教师荣誉', '教师誓词', '特级教师', '骨干教师', '专任教师'], 'url': 'http://www.dl8z.com', 'keywords1': '大连市第八中学', 'keywords3': '学校荣誉', 'description': ''}
+2018-05-24 17:49:35 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dyqdszx.net>
+{'url_index_doc': 208, 'title': '东营区第三中学教育集团', 'keywords2': '学校概况', 'copyrt': '\r\n\t版权所有：东营区第三中学教育集团\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0鲁ICP备:09105435号\r\n\t', 'unique_words': ['学校概况', '校园信息', '教学教研', '德育之窗', '平安校园', '学校简介', '学校荣誉', '校务公开', '校园时讯', '校园公告', '校园视频', '教师风采', '教师论坛', '教学动态', '德育信息', '安全教育', '校园之星', '团队建设', '校本课程', '级部信息', '生命教育'], 'url': 'http://www.dyqdszx.net', 'keywords1': '东营区第三中学教育集团', 'keywords3': '德育信息', 'description': '东营区第三中学教育集团'}
+2018-05-24 17:49:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dyzx.net> (referer: None)
+2018-05-24 17:49:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dyerz.net> (referer: None)
+2018-05-24 17:49:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dongqzx.com> (referer: None)
+2018-05-24 17:49:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dysz.net.cn> (referer: None)
+2018-05-24 17:49:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dl40zx.com> (referer: None)
+2018-05-24 17:49:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.dywz.net.cn> (referer: None)
+2018-05-24 17:49:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.czxbwczx.com> (referer: None)
+2018-05-24 17:49:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dszx.net>
+{'url_index_doc': 203, 'title': '苏州市吴中区东山中学校园网站', 'keywords2': '苏州市平安校园', 'copyrt': '版权所有:CopyRight(C)®1999-2016 V7.0 All Rights Reserved.', 'unique_words': ['学校概况', '学校介绍', '学校简史', '组织机构', '校园简讯', '校务工作', '公开文件', '校务通知', '公示公开', '政务公开', '教务教学', '学科建设', '教学比赛', '德育教育', '德育通知', '德育简讯', '家长学校', '法制园地', '教育科研', '科研动态', '科研资源', '教育资讯', '教师培训', '教育技术', '信息化', '师生园地', '教师风采', '教师获奖', '教学心得', '学生风采', '党建园地', '团委资讯', '网站导航', '学校地图'], 'url': 'http://www.dszx.net', 'keywords1': '江苏省健康促进学校', 'keywords3': '苏州市德育先进学校', 'description': None}
+2018-05-24 17:49:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dyyz.net/f>
+None
+2018-05-24 17:49:36 [scrapy.crawler] INFO: Received SIG_SETMASK, shutting down gracefully. Send again to force 
+2018-05-24 17:49:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dzcnzx.com>
+{'url_index_doc': 215, 'title': '重庆市大足城南中学', 'keywords2': '学校领导', 'copyrt': '重庆市大足城南中学 版权所有 渝ICP备16005277号  技术支持:', 'unique_words': ['集团概况', '学校领导', '学校标识', '组织机构', '校园新闻', '校园之星', '教师风采', '校园文化', '校园文学', '校园风光', '以德育人', '平安校园'], 'url': 'http://www.dzcnzx.com', 'keywords1': '重庆市大足城南中学', 'keywords3': '教师风采', 'description': None}
+2018-05-24 17:49:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.fdcz.edu.sh.cn> (referer: None)
+2018-05-24 17:49:36 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.fafl.cn/?WebShieldDRSessionVerify=bK0hDU17L2P0aywPcOot> from <GET http://www.fafl.cn>
+2018-05-24 17:49:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.eedsyz.cn> (referer: None)
+2018-05-24 17:49:36 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-05-24 17:49:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dyzx.net>
+{'url_index_doc': 214, 'title': '重庆市开州区德阳初级中学', 'keywords2': '德阳初中', 'copyrt': None, 'unique_words': ['校园快讯', '校务公开', '德育风采', '教学教研', '德中概况', '校园风貌', '教师风采', '校园动态', '德育处', '德育获奖', '家长学校', '养成教育', '课程改革', '教师论文', '教学反思', '教学案例', '教师专栏', '家长专栏', '教师利益'], 'url': 'http://www.dyzx.net', 'keywords1': '德阳中学', 'keywords3': '德阳初级中学', 'description': None}
+2018-05-24 17:49:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dyerz.net>
+{'url_index_doc': 205, 'title': '东营市第二中学', 'keywords2': '学校简介', 'copyrt': '版权所有\xa02012-2018\xa0东营市第二中学\xa0推荐分辨率：1024*768以上\xa0推荐浏览器：谷歌\xa0火狐\xa0IE9\r', 'unique_words': ['学校简介', '学校文化', '校园新闻', '中考信息', '高考信息', '学考信息', '素质教育', '便民服务', '校园之星', '主题教育', '教学动态', '教学常规', '艺体教学', '科研成果', '课程改革', '教育培训', '教师风采', '师德建设', '组织建设', '社团建设', '服务动态', '饮食服务', '党建动态', '党员风采', '党务公开', '优秀学子', '优秀教师', '校园风光', '学校活动', '学校荣誉', '校园风景', '法制教育', '学校精神'], 'url': 'http://www.dyerz.net', 'keywords1': '东营市第二中学', 'keywords3': '优秀学子', 'description': '东营市第二中学'}
+2018-05-24 17:49:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dongqzx.com>
+{'url_index_doc': 199, 'title': '广州市黄埔区东区中学', 'keywords2': '广州市黄埔区东区中学', 'copyrt': None, 'unique_words': ['学校概况', '机构设置', '新闻动态', '教师风采', '党建工作', '德育建设', '家长学校'], 'url': 'http://www.dongqzx.com', 'keywords1': '学校', 'keywords3': '教师风采', 'description': '网站描述'}
+2018-05-24 17:49:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dysz.net.cn>
+{'url_index_doc': 210, 'title': '吕叔湘中学', 'keywords2': '新闻专栏', 'copyrt': 'CopyRight © 2014-2018 丹阳市吕叔湘中学. All rights reserved. 版权所有', 'unique_words': ['新闻专栏', '教育动态', '校园动态', '学校概况', '组织机构', '校园足球', '教师频道', '家长频道', '学校简介', '镇江教育', '丹阳教育', '江苏教育', '新闻动态'], 'url': 'http://www.dysz.net.cn', 'keywords1': '吕叔湘中学', 'keywords3': '镇江教育', 'description': None}
+2018-05-24 17:49:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dl40zx.com>
+None
+2018-05-24 17:49:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.dywz.net.cn>
+{'url_index_doc': 211, 'title': '丹阳市第五中学', 'keywords2': '校务公开', 'copyrt': '丹阳市第五中学 版权所有', 'unique_words': ['五中新闻', '校务公开', '教育科研', '特色教育', '党建园地', '师资队伍', '学生园地', '德育纵横', '校园新闻', '教育动态'], 'url': 'http://www.dywz.net.cn', 'keywords1': '丹阳市第五中学', 'keywords3': '校园新闻', 'description': None}
+2018-05-24 17:49:37 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.czxbwczx.com>
+{'url_index_doc': 175, 'title': '常州市新北区魏村中学', 'keywords2': '教学管理', 'copyrt': '版权所有：常州市新北区魏村中学\xa0 学校地址：江苏省常州市新北区魏村中学\xa0\xa0 邮编：213127\xa0\xa0\xa0 电话总机：0519-85472580', 'unique_words': ['学校概况', '学校简介', '学校掠影', '校园动态', '校园快讯', '德育天地', '队伍建设', '主题教育', '教学管理', '教学常规', '科研之窗', '教师发展', '学生风采', '党建工作', '团队建设', '教师考核', '页脚信息', '信息公开'], 'url': 'http://www.czxbwczx.com', 'keywords1': '常州市新北区魏村中学', 'keywords3': '学校概况', 'description': None}
+2018-05-24 17:49:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.fdkyzx.com> (referer: None)
+2018-05-24 17:49:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.fdfz.cn/> from <GET http://www.fdfz.cn>
+2018-05-24 17:49:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.fdsqzx.com> (referer: None)
+2018-05-24 17:49:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.fdzcxy.com/main> from <GET http://www.fdzcxy.com>
+2018-05-24 17:49:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.fjdfxy.com> (referer: None)
+2018-05-24 17:49:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://www.fj61.net/index.html> from <GET http://www.fj61.net>
+2018-05-24 17:49:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.fdcz.edu.sh.cn>
+{'url_index_doc': 218, 'title': '上海市复旦初级中学', 'keywords2': '复旦初级中学', 'copyrt': '\r\n版权所有：上海市复旦初级中学 Copyright © 2008 -2016 All Rights Reserved 网站制作：汪火辉 维护：网络中心', 'unique_words': ['招生招聘', '学校概况', '学校介绍', '学校荣誉', '校园风光', '信息专递', '校务公开', '诗意教师', '教师荣誉', '课程教学', '课程规划', '博雅课程', '党员风采', '党建活动', '学校招生', '学校校历'], 'url': 'http://www.fdcz.edu.sh.cn', 'keywords1': '复旦', 'keywords3': '上海市复旦初级中学', 'description': None}
+2018-05-24 17:49:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.eedsyz.cn>
+{'url_index_doc': 216, 'title': '鄂尔多斯市第一中学', 'keywords2': '教学育人', 'copyrt': '版权所有：鄂尔多斯市第一中学 \xa0 \xa0', 'unique_words': ['学校概况', '学校简介', '师资管理', '组织机构', '学校部门', '党员风采', '教学育人', '精品课程', '教学论文', '教学经验', '教务教学', '招生考试', '高考资讯', '德育天地', '德育之窗', '风采展示', '德育活动', '共青风采', '好友学校', '人员招聘', '数字校园', '视频服务', '校园博客', '信息采集', '教育部'], 'url': 'http://www.eedsyz.cn', 'keywords1': '鄂尔多斯市第一中学', 'keywords3': '德育之窗', 'description': '鄂尔多斯市第一中学'}
+2018-05-24 17:49:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.fjjyxy.com> (referer: None)
+2018-05-24 17:49:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.fdkyzx.com>
+{'url_index_doc': 220, 'title': '肥东凯悦中学', 'keywords2': '招生招聘', 'copyrt': '版权所有 2017 肥东凯悦中学\xa0\xa0\xa0\xa0地址：安徽省肥东县八斗路与唐杨路交汇处', 'unique_words': ['学校概况', '新闻中心', '教育教学', '德育工作', '招生招聘', '党建工作', '素质教育', '学校简介', '校园风貌', '管理机构', '教育新闻', '视频新闻', '学校动态', '校园聚焦', '教学资源', '教学成果', '招生信息', '招聘工作'], 'url': 'http://www.fdkyzx.com', 'keywords1': '肥东凯悦中学', 'keywords3': '学校概况', 'description': ''}
+2018-05-24 17:49:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.fdsqzx.com>
+{'url_index_doc': 221, 'title': '肥东圣泉中学', 'keywords2': '圣泉中学', 'copyrt': None, 'unique_words': ['学校简介', '校园荣誉', '学校管理', '校园风光', '校园新闻', '校园动态', '校园公告', '校园视频', '党建之窗', '党建动态', '党建论坛', '员工风采', '教育教学', '教学管理', '考试资讯', '教学成果', '教研风采', '继续教育', '名师风采', '德育平台', '校园文化', '专题教育', '学生园地', '学校交流', '家长学校', '招生招聘', '教师招聘', '招生政策'], 'url': 'http://www.fdsqzx.com', 'keywords1': '中学', 'keywords3': '肥东圣泉中学', 'description': '肥东圣泉中学---安徽省民办基础教育强校'}
+2018-05-24 17:49:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.fjdfxy.com>
+{'url_index_doc': 226, 'title': '福建农林大学东方学院', 'keywords2': '农林大学东方学院', 'copyrt': '福建农林大学东方学院版权所有\xa0©2016年\xa0\xa0\xa0闽ICP备07005638号', 'unique_words': ['学校概况', '校园影音', '新闻中心', '教育资讯', '学院要闻', '系部风采', '党建工作', '教学管理', '精品课程', '教学成果', '教师平台', '招生信息', '新闻通告', '系统导航', '信息公开'], 'url': 'http://www.fjdfxy.com', 'keywords1': '东方学院', 'keywords3': '福建农林大学东方学院', 'description': '福建农林大学东方学院于2002年由福建农林大学申办，2003年底经国家教育部首批批准为实施普通高等学校全日制本科教育的独立学院。学院实行董事会领导下的院长负责制，福建农林大学党委副书记赵捷兼任学院党委书记，硕士生导师景林教授任院长。学院设有现有外语系、人文艺术系、计算机系、管理系、经济系、会计系等六个系，学科专业涵盖管理学、工学、文学、经济学、农学、法学、艺术学等7大门类，24个本科专业互相支撑、协调发展的专业体系，现有在校生9000多人。'}
+2018-05-24 17:49:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.fjlzy.com> (referer: None)
+2018-05-24 17:49:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.fjjyxy.com>
+{'url_index_doc': 228, 'title': '福建教育学院', 'keywords2': '福建', 'copyrt': None, 'unique_words': ['学院概况', '组织机构', '师资队伍', '学院公告', '院务公开', '校园文化', '校园微博', '学院新闻', '廉政园地', '基地学校', '教育评论', '教师培训', '学历教育', '招生信息', '教学系统', '教育科研', '科研公告', '科研动态', '学院名师', '校园网', '信息反馈', '教育部', '龙岩学院', '莆田学院', '三明学院', '闽江学院', '武夷学院'], 'url': 'http://www.fjjyxy.com', 'keywords1': '教育学院', 'keywords3': '基础教育', 'description': '福建教育学院门户网站'}
+2018-05-24 17:49:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.fjlzy.com>
+{'url_index_doc': 229, 'title': '福建林业职业技术学院', 'keywords2': '信息公开', 'copyrt': None, 'unique_words': ['学院概况', '学院领导', '校园风光', '学院校标', '学院校训', '院士风采', '机构导航', '系部设置', '党团建设', '团的建设', '继续教育', '信息公开', '招生就业', '办公信息', '公众服务'], 'url': 'http://www.fjlzy.com', 'keywords1': '福建林业职业技术学院', 'keywords3': '机构导航', 'description': None}
+2018-05-24 17:49:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.fjipe.cn> (referer: None)
+2018-05-24 17:49:42 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.cyyz.com.cn> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.cyyz.com.cn.
+2018-05-24 17:49:44 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.czyz.com.cn> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.czyz.com.cn.
+2018-05-24 17:49:46 [scrapy.crawler] INFO: Received SIG_SETMASK twice, forcing unclean shutdown
+2018-05-24 17:49:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.cstyz.com> (failed 1 times): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+2018-05-24 17:49:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.fdzx.com.cn> (failed 1 times): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+2018-05-24 17:49:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.dsyz.net> (failed 1 times): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+2018-05-24 17:49:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.bxsyzx.com> (failed 1 times): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+2018-05-24 17:49:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.cqgyzx.com> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-05-24 17:49:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.cqjjwz.com> (failed 1 times): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+2018-05-24 17:49:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.cyyz.org> (failed 1 times): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+2018-05-24 17:49:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.csdfx.com.cn> (failed 1 times): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+2018-05-24 17:49:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.fenglin.org> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-05-24 17:49:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.cdszgdx.com> (failed 1 times): An error occurred while connecting: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion: Connection lost.
+].
+2018-05-24 17:49:46 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.czqsz.com> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-05-24 17:49:46 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 13,
+ 'downloader/exception_type_count/twisted.internet.error.ConnectError': 8,
+ 'downloader/exception_type_count/twisted.internet.error.DNSLookupError': 2,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 3,
+ 'downloader/request_bytes': 80207,
+ 'downloader/request_count': 265,
+ 'downloader/request_method_count/GET': 265,
+ 'downloader/response_bytes': 5761171,
+ 'downloader/response_count': 252,
+ 'downloader/response_status_count/200': 222,
+ 'downloader/response_status_count/301': 6,
+ 'downloader/response_status_count/302': 24,
+ 'dupefilter/filtered': 4,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 5, 24, 9, 49, 46, 601757),
+ 'httpcache/firsthand': 252,
+ 'httpcache/miss': 265,
+ 'httpcache/store': 252,
+ 'item_scraped_count': 199,
+ 'log_count/DEBUG': 467,
+ 'log_count/INFO': 9,
+ 'memusage/max': 71888896,
+ 'memusage/startup': 71888896,
+ 'request_depth_max': 2,
+ 'response_received_count': 215,
+ 'retry/count': 13,
+ 'retry/reason_count/twisted.internet.error.ConnectError': 8,
+ 'retry/reason_count/twisted.internet.error.DNSLookupError': 2,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 3,
+ 'scheduler/dequeued': 265,
+ 'scheduler/dequeued/memory': 265,
+ 'scheduler/enqueued': 284,
+ 'scheduler/enqueued/memory': 284,
+ 'start_time': datetime.datetime(2018, 5, 24, 9, 48, 51, 188670)}
+2018-05-24 17:49:46 [scrapy.core.engine] INFO: Spider closed (shutdown)

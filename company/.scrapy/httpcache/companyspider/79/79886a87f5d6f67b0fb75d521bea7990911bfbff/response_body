@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>广州市铁一中学</title>
+    <!--[if IE 6]>
+    <script type="text/javascript" src="DD_belatedPNG_0.0.8a.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('*');
+    </script>
+    <![endif]-->
+    <!--<script type="text/javascript" src="js/swfobject.js"></script>-->
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        img {
+            border: none;
+        }
+    </style>
+</head>
+<body style="min-width: 1003px; background: url(images/default/main123.jpg) repeat; ">
+    <div style="width: 100%;margin:0px; background: url(images/default/jingru_bg.jpg) no-repeat top center; ">
+        <div style="height:10px;line-height:10px;"></div>
+        <div style="width: 880px;margin:auto; background: url(images/default/jingru_bg.png) no-repeat top center; ">
+            <div style="width: 880px; margin: auto; padding-top: 146px; ">
+
+
+                <video id="example_video_1" class="video-js" width="880" height="495"
+                       preload="auto" autoplay="autoplay" poster="upload/Video/defaultvideo.jpg">
+                    <source src="upload/Video/tieyi.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+
+                    <object id="flash_fallback_1" class="vjs-flash-fallback" width="880" height="495" type="application/x-shockwave-flash"
+                            data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+                        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+                        <param name="allowfullscreen" value="true" />
+                        <param name="flashvars" value='config={"playlist":["http://222.16.80.77/upload/Video/defaultvideo.jpg", {"url":"http://222.16.80.77/upload/Video/tieyi.mp4","autoPlay":true,"autoBuffering":true}]}' />
+
+                        <img src="http://222.16.80.77/upload/Video/defaultvideo.jpg" width="880" height="495" alt="Poster Image"
+                             title="No video playback capabilities." />
+                    </object>
+                </video>
+
+
+               <!--<object classid="clsid27CDB6E-AE6D-11cf-96B8-444553540000"
+                        codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"
+                        width="880" height="495" align="center">
+                    <param name="movie" value="upload/Video/tieyi.swf">
+                    <param name="quality" value="high">
+                    <param name="wmode" value="transparent"> 
+                    <embed src="upload/Video/tieyi.swf" width="880" height="495"
+                           align="center" quality="high"
+                           pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>
+                </object>-->
+
+                <!--<div id="player">
+                    <asp:HiddenField ID="hfISBN" runat="server" />
+                </div>
+                <script type='text/javascript'>
+                    var so = new SWFObject('player.swf', 'mpl', '880', '495', '9');
+                    so.addParam('allowfullscreen', 'true');
+                    so.addParam('allowscriptaccess', 'always');
+                    so.addParam('wmode', 'Transparent');
+                    so.addParam('loop', 'true');
+                    so.addVariable('file', 'upload/Video/tieyi.mp4');
+                    so.addVariable('image', 'upload/Video/defaultvideo.jpg');
+                    so.addVariable('autostart', 'true');
+                    so.write('player');
+                </script>
+                -->
+                <br><center><a href="index.html"><img src="images/default/jingru_btn.png" style="border:none;" alt=""></a></center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,2387 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=8" />
+<meta name="keywords" content="八一中学,南昌八一,八一" />
+<meta name="description" content="南昌市八一中学"/>
+<title>南昌市八一中学</title>
+<link rel="shortcut icon" href="/dcyz/newWeb/images/w-logo-2.png?flag=2" type="image/x-icon" >
+<link href="/dcyz/newWeb/css/school.css?flag=5" rel="stylesheet" type="text/css">
+<link href="/dcyz/css/ad.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/dcyz/newWeb/js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" src="/dcyz/scripts/floatingAd.js"></script>
+<script type="text/javascript" src="/dcyz/newWeb/js/pq.js"></script>
+<script type="text/javascript">
+	function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+//设为首页 <a onclick="SetHome(this,window.location)">设为首页</a>
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+</script>
+<script language="JavaScript" type="text/JavaScript"> 
+function newFloatingWindow(){
+		$.ajax({
+            url: "/portlet/Fwlist.json",
+            success: function(data){
+              	var studentList= data.list;
+                $.each(studentList,function(i){
+                	var flag = this.flag;
+                	var fwurl = this.fwurl;
+                	var fwheight = this.fwheight;
+                	var fwwidth = this.fwwidth;
+                	var fwlink = this.fwlink;
+                	$(function(){
+						if(flag==0){
+							$.floatingAd({
+							//频率
+							delay: 60,
+							//超链接后是否关闭漂浮
+							isLinkClosed: false,
+							//漂浮内容
+							ad:	[{
+								'img': fwurl,
+								'imgHeight': fwheight,
+								'imgWidth': fwwidth,
+								//'linkUrl': '/portlet/dcdetailinfo.view?wf_ID=83&wf_Tag=0&id=348',
+								//'z-index': 101,
+								//'title': '丁三石',
+								//关闭按键图片
+								'closed-icon': '/dcyz/images/ad/close.png'
+							}],
+							//关闭事件
+							onClose: function(elem){
+								//alert('关闭');
+							}
+							});
+	
+							$("#aa").floatingAd({
+								onClose:function(elem){}
+							});
+						}else if(flag==1){
+							$.floatingAd({
+								//频率
+								delay: 60,
+								//超链接后是否关闭漂浮
+								isLinkClosed: false,
+								//漂浮内容
+								ad:	[{
+									'img': fwurl,
+									'imgHeight': fwheight,
+									'imgWidth': fwwidth,
+									'linkUrl': fwlink,
+									//'z-index': 101,
+									//'title': '丁三石',
+									//关闭按键图片
+									'closed-icon': '/dcyz/images/ad/close.png'
+								}],
+								//关闭事件
+								onClose: function(elem){
+									//alert('关闭');
+								}
+							});
+	
+							$("#aa").floatingAd({
+								onClose:function(elem){}
+							});
+						}
+					}); 
+                });
+            }
+        });
+	}
+
+ 
+function changeFocus()
+ 
+{
+ 
+  if(event.keyCode==13)
+ 
+  {    
+ 
+    submitForm();    
+ 
+  }
+ 
+}
+ 
+ 
+ 
+function initFocus() {
+ 
+        $("#userid").focus(function() {
+ 
+            var text_value = $(this).val();
+ 
+            if (text_value == this.defaultValue) {
+ 
+                $(this).val("");
+ 
+            }
+ 
+        });
+ 
+        $("#userid").blur(function() {
+ 
+            var text_value = $(this).val();
+ 
+            if (text_value == "") {
+ 
+                $(this).val(this.defaultValue);
+ 
+            }
+ 
+        });
+ 
+ 
+ 
+        $("#showPwd").focus(function() {
+ 
+            var text_value = $(this).val();
+ 
+            if (text_value == this.defaultValue) {
+ 
+                $("#showPwd").hide();
+ 
+                $("#password").show().focus();
+ 
+            }
+ 
+        });
+ 
+        $("#password").blur(function() {
+ 
+            var text_value = $(this).val();
+ 
+            if (text_value == "") {
+ 
+                $("#showPwd").show();
+ 
+                $("#password").hide();
+ 
+            }
+ 
+        });
+ 
+    }
+ 
+	
+ 
+	function validateForm() {
+ 
+        if($.trim($("#userid").val()) == "" || $("#userid").val() == "请输入登录姓名") {
+ 
+            alert("请输入用户名！");
+ 
+            $("#userid").focus();
+ 
+            return false;
+ 
+        }
+ 
+        if($.trim($("#password").val()) == "") {
+ 
+            alert("请输入密码！");
+ 
+            $("#password").focus();
+ 
+            return false;
+ 
+        }
+ 
+        return true;
+ 
+    }//end validateForm
+ 
+	
+ 
+	function submitForm() {
+ 
+		if(validateForm()) {
+ 
+			$("#userForm").submit();
+ 
+		}
+ 
+	}
+	
+	function getFriendshipLink(){
+		$.ajax({
+			url:"/portlet/FriendshipLinkList.json",
+			success:function(data){
+				var list = data.list;
+				$.each(list,function(i){
+					$("#friendshipLink").append("<a href='"+this.url+"' target='_blank'>"+this.name+"</a> ");
+				});
+			}
+		});
+	}
+ 
+	
+ 
+jQuery(document).ready(function(){
+ 
+        initFocus();
+        
+        //漂浮窗口
+ 	    newFloatingWindow();
+   
+		
+		//友情链接
+		getFriendshipLink();
+		 
+		$("#userForm").keydown(function(){
+ 
+            if(event.keyCode == 13) {
+ 
+                submitForm();
+ 
+            }
+ 
+        });
+ 
+    });
+ 
+ 
+ 
+ 
+function MM_preloadImages() { //v3.0
+ 
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+ 
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+ 
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+ 
+}
+ 
+ 
+ 
+function MM_swapImgRestore() { //v3.0
+ 
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+ 
+}
+ 
+ 
+ 
+function MM_findObj(n, d) { //v4.01
+ 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+ 
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+ 
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+ 
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+ 
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+ 
+}
+ 
+ 
+ 
+function MM_swapImage() { //v3.0
+ 
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+ 
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+ 
+}
+ 
+//-->
+ 
+</script>
+</head>
+
+<body>
+<div style="position:fixed;z-index:888;text-align:left;top:0px"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/15/223/0000/40815369/CA152230000408153690002.js' type='text/javascript'%3E%3C/script%3E"));</script></div>
+     
+    
+<div class="toper">
+	<div class="toper-mian">
+    	<div class="t-left">
+        	<span><img src="/dcyz/newWeb/images/top-icon.png"></span><em>欢迎进入南昌市八一中学</em>
+        </div>
+        <div class="t-right">
+        	<a  href="#" onclick="SetHome(this,window.location)" >设为首页</a>
+            <a  href="#"    onclick="AddFavorite(window.location,document.title)"  >加入收藏</a>
+            <a href="#">联系我们</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="head-bg">
+	<div class="head">
+    	<div class="logo"><a href="/index.view"><img src="/dcyz/newWeb/images/logo.png"></a></div>
+        <div class="t-phone">
+        	<span><img src="/dcyz/newWeb/images/phone-icon.png"></span>
+            <div class="phone-txt">
+            	<p>联系电话</p>
+                <h3>0791-86838086</h3>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="nav-bg">
+	<div class="nav">
+    	<ul  id="nav">
+        	<li class="on"><a href="/index.view">网站首页</a></li>
+        	
+				<li class="mainlevel" id="id130">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=130">名师工作室</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=131&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;高中语文&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=148&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;高中数学刘娟&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=147&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;高中英语&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=230&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;高中历史李娜&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=149&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;初中数学&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=151&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;初中美术&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id64">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=64">家校互动</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=129&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;专家讲座&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=97&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;心理健康&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=98&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;家长委员会&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id137">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=137">学校管理</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=146&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;学校简介&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=138&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;领导班子&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=144&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;发展历史&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=145&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;校长简介&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=140&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;规章制度&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=141&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;校务公开&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=142&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;学校荣誉&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=143&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;精神文明建设&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id58">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+						<a href="/portlet/dcinfotagpagelist.view?wf_ID=58">学校动态</a>
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+									<a href="/portlet/dcinfotagpagelist.view?wf_ID=72&wf_Tag=1"  class="underline">
+									
+									
+									
+										&nbsp;&nbsp;通知公告&nbsp;&nbsp;
+									
+									
+									</a>	
+								
+								
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=114&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;学校风采&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=115&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;学子风采&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+									<a href="/portlet/dcinfotagpagelist.view?wf_ID=74&wf_Tag=3"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;学校新闻&nbsp;&nbsp;
+											
+										
+									</a>	
+								
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=75&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;中、高考情况&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=116&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;六五普法&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id59">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=59">党团工作</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=76&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;党建工作&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=77&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;创先争优&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=78&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;党员风采&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=79&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;廉政文化&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=117&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;实践活动&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id60">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=60">教师风采</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=80&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;班主任博览&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=81&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;教师博览&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=82&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;骨干老师&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id61">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=61">招生专栏</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=84&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;招生信息&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=85&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;招生报名&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id62">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=62">视频新闻</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id65">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=65">专题学习</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=119&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;优秀文章&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=120&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;教学反思&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=121&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;教学设计&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=122&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;教学课程&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=123&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;其他&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=125&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;试卷&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=127&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;教案&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=128&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;内部资源&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id66">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=66">图书馆</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=99&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;电子图书&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=100&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;教室阅览&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=101&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;藏书室&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=102&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;学生阅览&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id103">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=103">国际学校</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=221&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;相关文件&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=217&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;学校信息&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id104">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=104">信箱留言</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=105&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;领导信箱&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=106&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;答疑解惑&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=107&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;在线受理&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=108&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;网上投诉&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=109&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;建言献策&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=110&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;社情民意&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+        </ul>
+    </div>
+</div>
+    
+    
+  <!--banner-s--> 
+	<div class="banner">
+    <div class="slide-main" id="touchMain">
+            <a class="prev" href="javascript:;" stat="prev1001"><img src="/dcyz/newWeb/images/l-btn.png" /></a>
+            <div class="slide-box" id="slideContent">
+                
+ 					
+ 						<div class="slide" id="bgstylec" style="background:url(http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000108/file/2016/05/banner81.jpg20160527150513f960.jpg) #56aaff center top no-repeat"></div> 
+ 					
+ 					
+ 				
+ 					
+ 						<div class="slide" id="bgstylec" style="background:url(http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000108/file/2016/05/banner81.jpg20160527150513f960.jpg) #56aaff center top no-repeat"></div> 
+ 					
+ 					
+ 				
+            <a class="next" href="javascript:;" stat="next1002"><img src="/dcyz/newWeb/images/r-btn.png" /></a>
+           <div class="item">
+                <a class="cur" stat="item1001" href="javascript:;"></a>
+                 
+                	<a href="javascript:;" stat="item1001"></a>  
+                
+             </div>
+        
+        </div>
+    </div>
+    
+  </div>
+  
+    
+ <!--banner-e-->   
+ 
+ 
+ 
+ <div class="top-news">
+<div class="news-focus">
+    	<div class="top-news-tit">
+    	<span><img src="/dcyz/newWeb/images/n-l.png"></span>
+        <b>新闻图片</b><em>/NEWS PICTURES</em>
+    	<span><img src="/dcyz/newWeb/images/n-r.png"></span>
+   	 	</div>
+    	<div id="slide" class="slide_wrap">
+            <ul class="slide_imglist">
+                
+                	
+    					<li><a title="南昌市八一中学迎市直属中..." href="/portlet/dcdetailinfo.view?wf_ID=58&id=429" target="_blank"><img src="http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000108/file/2018/05/2018052516245498ae.jpg" alt="南昌市八一中学迎市直属中小学校"></a></li>
+    				
+    				
+                
+                	
+    					<li><a title="南昌市八一中学积极开展招..." href="/portlet/dcdetailinfo.view?wf_ID=58&id=427" target="_blank"><img src="http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000108/file/2018/05/20180524141217361b.jpg" alt="南昌市八一中学积极开展招生政策"></a></li>
+    				
+    				
+                
+                	
+    					<li><a title="南昌市八一中学国际部参加..." href="/portlet/dcdetailinfo.view?wf_ID=58&id=426" target="_blank"><img src="http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000108/file/2018/05/2018052410191349be.jpg" alt="南昌市八一中学国际部参加“20"></a></li>
+    				
+    				
+                
+                	
+    					<li><a title="南昌市八一中学开展参观江..." href="/portlet/dcdetailinfo.view?wf_ID=58&id=425" target="_blank"><img src="http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000108/file/2018/05/2018052311141935fc.jpg" alt="南昌市八一中学开展参观江西省消"></a></li>
+    				
+    				
+                
+                	
+    					<li><a title="南昌市八一中学参观东湖消..." href="/portlet/dcdetailinfo.view?wf_ID=58&id=424" target="_blank"><img src="http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000108/file/2018/05/20180523111119bebd.jpg" alt="南昌市八一中学参观东湖消防大队"></a></li>
+    				
+    				
+                
+            </ul>
+            <div class="slide_title">
+                <h3><a href="#" target="_blank"></a></h3>
+                <dl class="slide_num"></dl>
+                <em></em>
+            </div>
+        </div>
+        <script type="text/javascript">
+       	 $('#slide').UISlide();
+        </script>
+    </div>
+     
+    <div class="focus-right">
+    	<div class="focus-r-top">
+    		<div class="top-news-tit">
+                <span><img src="/dcyz/newWeb/images/n-l.png"></span>
+                <b>视频新闻</b><em>/VIDEO NEWS</em>
+                <span><img src="/dcyz/newWeb/images/n-r.png"></span>
+            </div>
+        	<a href="/portlet/dcinfopagelist.view?wf_ID=62"><img style="width:242px;height:190px;" src="/dcyz/newWeb/images/mh2.png"></a>
+        </div>
+    </div>
+    <div class="focus-center">
+		<div class="top-news-tit">
+            <span><img src="/dcyz/newWeb/images/n-l.png"></span>
+            <b>学校新闻</b><em>/SCHOOL NEWS</em>
+            <span><img src="/dcyz/newWeb/images/n-r.png"></span>
+        </div>
+        <ul>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=0&id=429">
+    						
+    							南昌市八一中学迎市直属中小学校责任...
+    						
+    						
+    					</a>
+    					<span>05-25</span>
+        		</li>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=0&id=427">
+    						
+    							南昌市八一中学积极开展招生政策“双...
+    						
+    						
+    					</a>
+    					<span>05-24</span>
+        		</li>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=0&id=426">
+    						
+    							南昌市八一中学国际部参加“2018...
+    						
+    						
+    					</a>
+    					<span>05-24</span>
+        		</li>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=0&id=425">
+    						
+    							南昌市八一中学开展参观江西省消防博...
+    						
+    						
+    					</a>
+    					<span>05-23</span>
+        		</li>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=0&id=424">
+    						
+    							南昌市八一中学参观东湖消防大队渊明...
+    						
+    						
+    					</a>
+    					<span>05-23</span>
+        		</li>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=0&id=423">
+    						
+    							南昌市八一中学开展安全教育班会活动...
+    						
+    						
+    					</a>
+    					<span>05-22</span>
+        		</li>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=0&id=421">
+    						
+    							南昌市八一中学高中政治组接待实习指...
+    						
+    						
+    					</a>
+    					<span>05-21</span>
+        		</li>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=0&id=417">
+    						
+    							南昌市八一中学开展南昌市高三复习公...
+    						
+    						
+    					</a>
+    					<span>05-17</span>
+        		</li>
+        	
+        </ul>
+         
+    </div>
+    
+ </div>
+ 
+ 
+ <div class="news-main-bg">
+	<div class="news-main">
+  		<div class="news-main-l" id="tabmain">
+        	<div class="news-main-l-tit">
+            	<a href="#" class="curr ma_1">学校新闻</a>
+            	<a href="#">学校公告</a>
+            	<a href="#">最新动态</a>
+                
+            </div>
+            
+            <div class="news-main-l-con">
+            	<ul>
+                    
+                    	<li>
+                    		<h2>
+                    			<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=3&id=429">
+                    				
+    									南昌市八一中学迎市直属中小学校责任督学周美华到校督...
+    								
+    								
+                    			</a>
+                    		</h2>
+                        	<p>
+	 
+
+
+	
+
+
+	
+	
+		5月22日上午，南昌市直属中小学校责任督学周美华对八一中学教师师德和专业发展情况进行了专项督导检查，南昌市八一中学副校长周红、周文斌陪同督导。
+	
+	
+		首先，周美华督学与八一中学部分班主任代表进行了会谈交流，了解的主要问题有：在信息发达的当下，班主任如何面对来自家庭和社会带给学生的问题，如手机问题、不良现象及欺凌问题等；对照“中国学生核心素养（18个要点）”八一中学班主任有什么好的想法或做法 ？访谈及检查三维教学目标中的“情感态度与价值观”落实的情况。罗娟老师说：“学生的德育教育不仅仅是通过班会课，我会把德育教育融入语文教学中。作为班主任，对班级所有同学的家庭情况都进行了非常详细的了解和记录，如父母外出经商或务工的留守学生、单亲家庭的孩子等，便于发现问题能有效的及时沟通。”马晓赵老师说：“他在学生德育方面最主要做的是规范学生的行为，让他们做到自觉遵守校规校纪，特别是规范手机的使用问题，让其树立正确的人生观、价值观。”黄英霞老师虽然是教英语的，但是身为班主任，她时常把时政要闻分享给学生，让学生们结合当今实际，对时政要闻谈谈自己的观点，如积极响应校政教处组织全校师生观看《厉害了，我的国》、单独组织本班学生观看《红海行动》等，让学生写观后感或组织学生开展讨论会，让学生感受到祖国的强大，激发学生的爱国主义情怀，感知今天幸福生活的来之不易；也时常会用问卷形式了解学生的心理，及时的发现问题，解决问题。
+	
+	
+		周美华督学在座谈后，肯定了八一中学班主任们的师德和专业发展，建议学校对当今社会热点如叙利亚难民问题，可放在周会上，对学生进行德育教育，通过对比，让全体师生感知时代并不太平，但我们生活在和平的中国，八一学子应好好学习、珍惜光阴、勇于担当。随后，周美华督学还查看了学校青年教师的教案，建议教师教案在对三维教学目标尤其是“情感态度与价值观”的实施方面要加强。最后，副校长周红表示，八一中学的教师们会继续努力学习、积极探索，以实际行动促进自身师德和专业的发展。
+	
+
+
+
+	 
+
+
+	 
+
+
+	 
+
+
+	
+
+
+	
+
+
+	 
+
+
+	
+
+
+
+	
+
+
+	&nbsp;
+
+
+	
+</p>
+                        	<span>05/25</span>
+                    	</li>
+    				
+                    	<li>
+                    		<h2>
+                    			<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=3&id=427">
+                    				
+    								
+    									南昌市八一中学积极开展招生政策“双进”宣传活动
+    								
+                    			</a>
+                    		</h2>
+                        	<p>
+	
+
+
+	
+		为了落实上级要求，帮助市民更好了解招生动态和政策，5月24日上午，南昌市八一中学在所属豫章后街社区通过现场答疑、发放宣传册等方式开展了招生政策“双进”活动。学校副校长周文斌、政教处主任丁海洪和副主任卢小宁等向市民们积极宣传我市中小学招生入学有关政策，及时、准确、全面地解答群众疑惑，让社会、家长、学生全面了解我市中小学招生工作动态，提高了群众对政策的知晓率，使社区居民进一步了解了学校，同时也提升了学校在社区居民中的形象，招生政策咨询宣传活动取得了良好的效果。
+	
+	
+		
+		
+			
+		
+
+
+	
+</p>
+                        	<span>05/24</span>
+                    	</li>
+    				
+                    	<li>
+                    		<h2>
+                    			<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=3&id=426">
+                    				
+    									南昌市八一中学国际部参加“2018华中地区韩国语演...
+    								
+    								
+                    			</a>
+                    		</h2>
+                        	<p>
+	
+		
+	
+	
+		
+			5月22日下午，由韩国驻武汉总领事馆主办，江西师范大学承办的2018华中地区韩国语演讲比赛江西赛区预赛在南昌理工学院航天报告厅成功举行。
+		
+		
+			比赛分为本科组和专科组，各设一等奖1名、二等奖2名、三等奖3名，以及优秀奖若干名。
+		
+		
+			本次比赛我校国际部组织师生30余人前往观摩学习，并派出5名同学参与专科组角逐。比赛现场来自不同地区的27名选手在声情并茂地演讲中，充分展示了各自娴熟的韩国语演讲能力，同时也诠释了他们对韩文化的热爱与理解。
+		
+		
+			本次比赛在激烈的角逐下，胡晨彧同学荣获三等奖，陶筠婉、周静涵、刘心怡、杨冰倩荣获优秀奖。他们的精彩表现彰显出扎实的专业功底和我校韩语专业高超的教学水平。
+		
+		
+			
+			
+				
+			
+			
+				
+					
+				
+			
+
+
+		
+		
+			&nbsp;
+		
+		
+			
+		
+	
+	
+		&nbsp;
+	
+
+
+	 
+
+
+	
+
+
+	 
+
+
+	
+</p>
+                        	<span>05/24</span>
+                    	</li>
+    				
+                    	<li>
+                    		<h2>
+                    			<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=3&id=425">
+                    				
+    									南昌市八一中学开展参观江西省消防博物馆社会实践活动...
+    								
+    								
+                    			</a>
+                    		</h2>
+                        	<p>
+	
+
+
+	
+		
+			
+
+		
+		
+			5月21日下午，南昌市八一中学国际部在政教处余茜主任的带领下参观了江西省消防博物馆，在讲解员引导和生动有趣的讲解下，同学们开始了有意义的学习消防知识旅程。
+		
+		
+			消防博物馆向同学们展览了中国悠久的火文化与消防历史沿革，展现了从古至今科学防火的进步。里面的各种年代不同的消防器材、为消防战斗牺牲的战士、现场模拟的逃生方法、火灾以后留下的痕迹、复原的火灾现场，给同学们留下了深刻印象。讲解员以沙盘的灯光演示向同学们介绍了人口密集城市的消防理念和城市消防规划，建筑消防设备，火灾及地震应急处理知识。平常通过书本学习消防知识很抽象，不能亲身感受火灾现象那种危机的感觉，很难理解消防安全对同学们的重要性。
+		
+		
+			&nbsp; &nbsp; &nbsp; 本次活动通过同学们亲身体验，对消防安全知识有了更加全面和直观的了解，提高了同学们在火灾与突发灾害事故中的自救互救能力，为同学们以后安全的集体生活打下了坚实基础。
+		
+		
+			
+
+		
+	
+	
+		
+	
+</p>
+                        	<span>05/23</span>
+                    	</li>
+    				
+                </ul>
+            	<div class="news-more"><a href="/portlet/dcinfotagpagelist.view?wf_ID=74&wf_Tag=3">查看更多</a></div>
+            </div>
+            
+            <div class="news-main-l-con">
+				
+					<li>
+                    	<h2>
+                    		<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=1&id=386">
+                    			
+    							
+    								《全国学生资助管理中心致初、高中毕业生的一封信》
+    							
+                    		</a>
+                    	</h2>
+                        <p>  							
+						
+						</p>
+                        <span>04/11</span>
+                    </li>
+    			
+					<li>
+                    	<h2>
+                    		<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=1&id=377">
+                    			
+    								南昌市八一中学转发《南昌市学生资助管理中心致家长一...
+    							
+    							
+                    		</a>
+                    	</h2>
+                        <p>   
+
+	南昌市学生资助管理中心致家长一封信》
+
+ 
+
+	&nbsp;
+
+ 
+
+	尊敬的各位家长：
+
+ 
+
+	您好！
+
+ 
+
+	每当开学之际，也许经济困难的您正在为小孩上学的费用而烦恼。党和国家高度重视像您这样家庭经济困难家庭的小孩上学问题，国家已建立起覆盖学前教育至研究生教育的学生资助政策体系，从制度上保障不让一个学生因家庭经济困难而失学。现将从学前到高中等相关学生资助政策告知您，您可以向小孩就读的学校或市、县（区）学生资助管理中心了解具体情况。
+
+ 
+
+	一、学前教育资助政策
+
+ 
+
+	对经县级以上教育行政部门审批设立的普惠性幼儿园在园家庭经济困难儿童、孤儿和残疾儿童予以资助。资助标准每生每年不低于500元，建档立卡户子女每生每年不低于1500元（具体标准由各县区制定）。
+
+ 
+
+	二、义务教育阶段学生资助政策
+
+ 
+
+	1.寄宿生生活补助。城乡家庭经济困难寄宿生可以享受寄宿生生活费补助。补助标准为小学生每生每年1000元、初中生每生每年1250元，特殊教育的每人增加200元。
+
+ 
+
+	三、普通高中教育学生资助政策
+
+ 
+
+	1.免学杂费。免除公办普通高中建档立卡等家庭经济困难学生（含非建档立卡家庭经济困难残疾学生、农村低保家庭学生、农村特困救助供养学生）学杂费。对在政府教育行政管理部门依法批准的民办普通高中就读的符合免学杂费政策条件的学生，按照当地同类型公办普通高中免学杂费标准予以补助。
+
+ 
+
+	2.国家助学金。用于资助普通高中在校生中的家庭经济困难学生，平均资助标准为每生每年2000元，分三档资助分别为每生每年2500元、每生每年2000元、每生每年1500元。
+
+ 
+
+	3.高考政府入学资助金。用于资助当年考取大学的家庭经济困难学生，资助标准一次性每人5000元。
+
+ 
+
+	4. 高校家庭经济困难新生入学资助。用于解决学生家庭至录取大学学校间的路费及入校后短期生活费，省（区、市）内院校录取的新生每人资助500元，省（区、市）外院校录取的新生每人资助1000元。
+
+ 
+
+	四、中等职业教育学生资助政策
+
+ 
+
+	1.免学费。免除公办中等职业学校全日制正式学籍一、二、三年级在校生中所有农村（含县镇）学生、城市涉农专业学生和家庭经济困难学生学费。对在民办中等职业学校就读的一、二、三年级符合免学费政策条件的学生，按照当地同类型同专业公办中等职业学校免除学费标准给予补助。
+
+ 
+
+	2.国家助学金。资助全日制正式学籍一、二年级在校涉农专业学生和非涉农专业家庭经济困难学生，平均资助标准每生每年2000元。
+
+ 
+
+	五、生源地助学贷款政策。
+
+ 
+
+	由政府主导、金融机构向高校家庭经济困难学生提供的免担保、免抵押信用贷款。它用于解决在校期间的学费和住宿费，每学年不超过8000元。在校学习期间利息全部由财政贴付，毕业后的利息由借款学生负担。
+
+ 
+
+	&nbsp;
+
+ 
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;南昌市学生资助管理中心
+
+ </p>
+                        <span>03/30</span>
+                    </li>
+    			
+					<li>
+                    	<h2>
+                    		<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=1&id=271">
+                    			
+    							
+    								南昌市八一中学2017级高一新生分班名单
+    							
+                    		</a>
+                    	</h2>
+                        <p>  							
+						
+						</p>
+                        <span>08/17</span>
+                    </li>
+    			
+					<li>
+                    	<h2>
+                    		<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=1&id=256">
+                    			
+    							
+    								招标公告
+    							
+                    		</a>
+                    	</h2>
+                        <p>   
+
+	南昌市八一中学食堂需对外承包，食堂需要对有需求师生提供早、中、晚餐，欢迎有合作意向的餐饮公司前来报名。
+
+ 
+
+	1、招标单位地址：东湖区三经路41号。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+ 
+
+	2、食堂地址：三经路41号和叠山路469号。
+
+ 
+
+	3、报名条件：有独立法人资格且具有餐饮行业相关资格并与教育系统无任何司法纠纷的企业。
+
+ 
+
+	4、报名人员需持：
+
+ 
+
+	确立投标单位法律地位的原始文件及复印件（营业执照、食品卫生许可证等），复印件须加盖单位公章。
+
+ 
+
+	7、报名地址：东湖区三经路41号。 
+
+ 
+
+	8、报名时间：2017年6月26—2017年6月30日。
+
+ 
+
+	9、联系人：李俊
+
+ 
+
+	&nbsp;联系电话：13807051669
+
+ 
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;招标单位：南昌市八一中学
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二0一七年六月二十六日 </p>
+                        <span>06/26</span>
+                    </li>
+    			
+            	<div class="news-more"><a href="/portlet/dcinfotagpagelist.view?wf_ID=72&wf_Tag=1">查看更多</a></div>
+            </div>
+            
+            <div class="news-main-l-con">
+                
+    				<li>
+    					<h2>
+    						
+    							<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=0&id=429">
+    								
+    								
+    								
+    									
+    										[学校新闻]南昌市八一中学迎市直属中小学校责任督学周美华到校督...
+    									
+    									
+    								
+    							</a>
+    						
+    						
+    					</h2>
+    					<p> 
+	 
+
+
+	
+
+
+	
+	
+		5月22日上午，南昌市直属中小学校责任督学周美华对八一中学教师师德和专业发展情况进行了专项督导检查，南昌市八一中学副校长周红、周文斌陪同督导。
+	
+	
+		首先，周美华督学与八一中学部分班主任代表进行了会谈交流，了解的主要问题有：在信息发达的当下，班主任如何面对来自家庭和社会带给学生的问题，如手机问题、不良现象及欺凌问题等；对照“中国学生核心素养（18个要点）”八一中学班主任有什么好的想法或做法 ？访谈及检查三维教学目标中的“情感态度与价值观”落实的情况。罗娟老师说：“学生的德育教育不仅仅是通过班会课，我会把德育教育融入语文教学中。作为班主任，对班级所有同学的家庭情况都进行了非常详细的了解和记录，如父母外出经商或务工的留守学生、单亲家庭的孩子等，便于发现问题能有效的及时沟通。”马晓赵老师说：“他在学生德育方面最主要做的是规范学生的行为，让他们做到自觉遵守校规校纪，特别是规范手机的使用问题，让其树立正确的人生观、价值观。”黄英霞老师虽然是教英语的，但是身为班主任，她时常把时政要闻分享给学生，让学生们结合当今实际，对时政要闻谈谈自己的观点，如积极响应校政教处组织全校师生观看《厉害了，我的国》、单独组织本班学生观看《红海行动》等，让学生写观后感或组织学生开展讨论会，让学生感受到祖国的强大，激发学生的爱国主义情怀，感知今天幸福生活的来之不易；也时常会用问卷形式了解学生的心理，及时的发现问题，解决问题。
+	
+	
+		周美华督学在座谈后，肯定了八一中学班主任们的师德和专业发展，建议学校对当今社会热点如叙利亚难民问题，可放在周会上，对学生进行德育教育，通过对比，让全体师生感知时代并不太平，但我们生活在和平的中国，八一学子应好好学习、珍惜光阴、勇于担当。随后，周美华督学还查看了学校青年教师的教案，建议教师教案在对三维教学目标尤其是“情感态度与价值观”的实施方面要加强。最后，副校长周红表示，八一中学的教师们会继续努力学习、积极探索，以实际行动促进自身师德和专业的发展。
+	
+
+
+
+	 
+
+
+	 
+
+
+	 
+
+
+	
+
+
+	
+
+
+	 
+
+
+	
+
+
+
+	
+
+
+	&nbsp;
+
+
+	
+</p>
+    					<span>05/25</span>
+    				</li>
+    			
+    				<li>
+    					<h2>
+    						
+    							<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=0&id=427">
+    								
+    								
+    								
+    									
+    									
+    										[学校新闻]南昌市八一中学积极开展招生政策“双进”宣传活动
+    									
+    								
+    							</a>
+    						
+    						
+    					</h2>
+    					<p> 
+	
+
+
+	
+		为了落实上级要求，帮助市民更好了解招生动态和政策，5月24日上午，南昌市八一中学在所属豫章后街社区通过现场答疑、发放宣传册等方式开展了招生政策“双进”活动。学校副校长周文斌、政教处主任丁海洪和副主任卢小宁等向市民们积极宣传我市中小学招生入学有关政策，及时、准确、全面地解答群众疑惑，让社会、家长、学生全面了解我市中小学招生工作动态，提高了群众对政策的知晓率，使社区居民进一步了解了学校，同时也提升了学校在社区居民中的形象，招生政策咨询宣传活动取得了良好的效果。
+	
+	
+		
+		
+			
+		
+
+
+	
+</p>
+    					<span>05/24</span>
+    				</li>
+    			
+    				<li>
+    					<h2>
+    						
+    							<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=0&id=426">
+    								
+    								
+    								
+    									
+    										[学校新闻]南昌市八一中学国际部参加“2018华中地区韩国语演...
+    									
+    									
+    								
+    							</a>
+    						
+    						
+    					</h2>
+    					<p> 
+	
+		
+	
+	
+		
+			5月22日下午，由韩国驻武汉总领事馆主办，江西师范大学承办的2018华中地区韩国语演讲比赛江西赛区预赛在南昌理工学院航天报告厅成功举行。
+		
+		
+			比赛分为本科组和专科组，各设一等奖1名、二等奖2名、三等奖3名，以及优秀奖若干名。
+		
+		
+			本次比赛我校国际部组织师生30余人前往观摩学习，并派出5名同学参与专科组角逐。比赛现场来自不同地区的27名选手在声情并茂地演讲中，充分展示了各自娴熟的韩国语演讲能力，同时也诠释了他们对韩文化的热爱与理解。
+		
+		
+			本次比赛在激烈的角逐下，胡晨彧同学荣获三等奖，陶筠婉、周静涵、刘心怡、杨冰倩荣获优秀奖。他们的精彩表现彰显出扎实的专业功底和我校韩语专业高超的教学水平。
+		
+		
+			
+			
+				
+			
+			
+				
+					
+				
+			
+
+
+		
+		
+			&nbsp;
+		
+		
+			
+		
+	
+	
+		&nbsp;
+	
+
+
+	 
+
+
+	
+
+
+	 
+
+
+	
+</p>
+    					<span>05/24</span>
+    				</li>
+    			
+    				<li>
+    					<h2>
+    						
+    							<a href="/portlet/dcdetailinfo.view?wf_ID=58&wf_Tag=0&id=425">
+    								
+    								
+    								
+    									
+    										[学校新闻]南昌市八一中学开展参观江西省消防博物馆社会实践活动...
+    									
+    									
+    								
+    							</a>
+    						
+    						
+    					</h2>
+    					<p> 
+	
+
+
+	
+		
+			
+
+		
+		
+			5月21日下午，南昌市八一中学国际部在政教处余茜主任的带领下参观了江西省消防博物馆，在讲解员引导和生动有趣的讲解下，同学们开始了有意义的学习消防知识旅程。
+		
+		
+			消防博物馆向同学们展览了中国悠久的火文化与消防历史沿革，展现了从古至今科学防火的进步。里面的各种年代不同的消防器材、为消防战斗牺牲的战士、现场模拟的逃生方法、火灾以后留下的痕迹、复原的火灾现场，给同学们留下了深刻印象。讲解员以沙盘的灯光演示向同学们介绍了人口密集城市的消防理念和城市消防规划，建筑消防设备，火灾及地震应急处理知识。平常通过书本学习消防知识很抽象，不能亲身感受火灾现象那种危机的感觉，很难理解消防安全对同学们的重要性。
+		
+		
+			&nbsp; &nbsp; &nbsp; 本次活动通过同学们亲身体验，对消防安全知识有了更加全面和直观的了解，提高了同学们在火灾与突发灾害事故中的自救互救能力，为同学们以后安全的集体生活打下了坚实基础。
+		
+		
+			
+
+		
+	
+	
+		
+	
+</p>
+    					<span>05/23</span>
+    				</li>
+    			
+ 				<div class="news-more"><a href="/portlet/dcinfotagpagelist.view?wf_ID=2">查看更多</a></div>
+            </div>
+            
+        	
+        </div>
+        
+        
+        
+        
+  		<div class="news-main-r">
+  		 
+<!--             <div class="s-login">
+            	<form name="userForm" id="userForm" method="post" action="http://117.169.14.19:8084/isschool/commons/logindirect.view">
+            		<input name="userid" id="userid" type="text" class="login-name"  value="请输入IS平台登录账号"/>
+                	<input name="password" id="password" type="password"  style="display: none;">
+		  			<input name="showPwd" id="showPwd" type="text" class="login-psd"  value="请输入IS平台登录密码" onKeyDown="changeFocus()">
+                	<a href="javascript:void(0);" onClick="submitForm()">登&ensp;&ensp;&ensp;录</a>
+                	<input type="hidden" name="sl_id" id="sl_id" value="18"/>
+					<input type="hidden" name="tp" id="tp" value="1"/>
+                </form>
+            </div>
+             -->
+            <form name="userForm" id="userForm" method="post" action="http://edu1.ispt.com.cn:7085/isschool/commons/logindirect.view">
+	            <div class="s-login">
+	                <div class="s-login-input">
+		                    <label>
+		                    	<span class="login-user-icon"> </span>
+		                   		<input name="userid" id="userid" type="text" class="login-name"  value="请输入IS平台登录账号"/>
+		                    </label>
+		                    <label>
+		                    	<span class="login-pasd-icon"> </span>
+		                    	<input name="password" id="password" type="password"  style="display: none;">
+			  					<input name="showPwd" id="showPwd" type="text" class="login-psd"  value="请输入IS平台登录密码" onKeyDown="changeFocus()">
+			  					<input type="hidden" name="sl_id" id="sl_id" value="18"/>
+								<input type="hidden" name="tp" id="tp" value="1"/>
+		                   </label>
+	                </div>
+	                 <div class="s-login-r"><a target="_blank" href="http://edu1.ispt.com.cn:7085/isschool/getPassword.view?sl_id=18&url=000108" class="forget-pasd">找回密码？</a><a href="javascript:void(0);" onClick="submitForm()" class="login-btn">登&ensp;&ensp;&ensp;录</a></div>
+	            </div>
+            </form>
+        	<ul>
+            	<li>
+                	<a href="http://ispt.com.cn/000108/" target="_blank">
+                        <span class="n-r-icon1"> </span>
+                        <p>八一中学智慧校园平台</p> 
+                    </a>
+                </li>
+                <li>
+                	<a href="http://www.ispt.com.cn/" target="_blank">
+                        <span class="n-r-icon2"> </span>
+                        <p>信息服务平台联盟</p> 
+                    </a>
+                </li>
+                <li>
+                	<a href="http://www.islearn.cn/" target="_blank">
+                        <span class="n-r-icon3"> </span>
+                        <p>IS智慧资源平台</p> 
+                    </a>
+                </li>
+                <li>
+                	<a href="http://smart.ncedu.gov.cn/" target="_blank">
+                        <span class="n-r-icon4"> </span>
+                        <p>南昌市智慧校园平台</p> 
+                    </a>
+                </li>
+            </ul>
+           
+        </div>
+        
+	</div>
+ 	
+ </div>
+    
+    
+    
+    
+    
+    <div class="footer">
+    	<div class="foot">
+        	<div class="f-l">
+            	<span><img src="/dcyz/newWeb/images/w-logo-3.png"></span>
+                <p>地址：南昌市三经路41号  &ensp;  电话：0791-86838086</p>
+				<p>COPYRIGHT &copy;2015 版权所有:南昌市八一中学&nbsp;&nbsp;赣ICP备16005677号<br/>技术支持：<a href="http://www.xuechuankj.com" target="_blank">学川科技</a></p>
+            </div>
+            
+            <div class="f-qrcode"><img src="/dcyz/newWeb/images/ISqrcode2.jpg"></div>
+            
+            <div class="f-link">
+            	<li class="none"><a href="#"><span>校外友情站点导航</span><img src="/dcyz/newWeb/images/img10.jpg"></a>
+                	<div id="friendshipLink">
+                   	 	<a href="http://www.jxedu.gov.cn/" target="_blank">江西教育网</a>
+                   	 	<a href="http://www.ncu.edu.cn/" target="_blank">南昌大学</a>
+                   	 	<a href="http://jiangxi.schoolzs.com/" target="_blank">江西高招信息网</a> 
+                   	 	<a href="http://nc.wenming.cn" target="_blank">中国文明网南昌站</a>
+						<a href="http://www.ncwm.gov.cn/" target="_blank">南昌文明网</a> 
+                    </div>
+                </li>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+</body>
+</html>

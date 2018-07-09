@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>网站首页-华中科技大学附属中学</title>
+<link href="/Skin/Edu/hkfz/default.css" rel="stylesheet" type="text/css" />
+<link href="/Skin/Edu/hkfz/article.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="/JS/Common.js"></script>
+<script type="text/javascript">
+	<!-- 
+    function ShowTabs(ID) {
+        for (i = 0; i < 4; i++) {
+            if (i == ID) {
+                document.getElementById("TabTitle" + i).className = "titlemouseover";
+                document.getElementById("Tab" + i).style.display = "";
+            }
+            else {
+                document.getElementById("TabTitle" + i).className = "tabtitle";
+                document.getElementById("Tab" + i).style.display = "none";
+            }
+        }
+    }
+	//-->
+</script>
+
+
+
+</head>
+
+<body>
+
+<div class="wapper">
+<!--网站头部-->
+
+
+
+<div class="header">
+<div class="favorite"><a title="设为首页" style=" cursor:pointer" id="setForIndex" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://fz.hust.edu.cn')" class="s">设为首页</a><a href="javascript:if(document.all){window.external.addFavorite('http://fz.hust.edu.cn','华中科技大学附属中学');}else if(window.sidebar){window.sidebar.addPanel('华中科技大学附属中学', 'http://fz.hust.edu.cn','');}" title="加入收藏" class="j">加入收藏</a></div>
+<ul class="mainmenu"> <li id="topTabOn"><a href="/Default.aspx" target="_self"><span>网站首页</span></a></li>
+<li><a href="/Category_13/Index.aspx" target="_self"><span>学校概况</span></a></li>
+<li><a href="/Category_9/Index.aspx" target="_self"><span>师资队伍</span></a></li>
+<li><a href="/Category_19/Index.aspx" target="_self"><span>教学科研</span></a></li>
+<li><a href="/Category_33/Index.aspx" target="_self"><span>德育之窗</span></a></li>
+<li><a href="/Category_82/Index.aspx" target="_self"><span>党建工作</span></a></li>
+<li><a href="http://fzxq.hust.edu.cn:8080/index.jhtml" target="_blank"><span>附中校友会</span></a></li>
+</ul>
+</div>
+<!--网站头部结束-->
+<div class="content">
+<!--网站左侧-->
+<div class="sideBar">
+<!--搜索-->
+<div class="reseach">
+<h3><img src="/Skin/Edu/hkfz/images/reseach_title.jpg" width="135" height="23" /></h3>
+<input id="topTxtUserName" class="inputbox" onfocus="this.value='';" maxlength="100" size="30" value="请输入关键词" name="Keyword" />
+ <input id="Submit" class="inputbut" type="button" value=" " onclick="OnSearchCheckAndSubmit();" />
+ <script language="javascript" type="text/javascript">
+  function OnSearchCheckAndSubmit(){
+      var keyword = document.getElementById("topTxtUserName").value;
+      if (keyword == '' || keyword == null) {
+          alert("");
+          return;
+      }
+      else {
+          window.location = "/search.aspx?searchtype=0&Keyword=" + escape(keyword);
+      }
+  }
+</script>
+</div>
+<!--会员登录-->
+<div class="user_box">
+
+<script language="JavaScript" type="text/javascript">
+function Menu(id_num,num){
+for(var i=0;i<2;i++){document.getElementById("Con_"+id_num+i).style.display="none";}
+for(var i=0;i<2;i++){document.getElementById("Tab_"+id_num+i).className="";}
+document.getElementById("Tab_"+id_num+num).className="userTabsOn";
+document.getElementById("Con_"+id_num+num).style.display="block";
+}
+</script>
+  <div class="user_box">
+  <dl>
+    <dt>
+	<ul>
+	<li onmouseover="setTimeout('Menu(1,1)',200);" class="userTabsOn"><em>会员登录</em></li>
+	<li onmouseover="setTimeout('Menu(1,0)',200);" ><em><a href="http://mail.hust.edu.cn/" target="_blank">邮箱登录</a></em></li>
+	</ul>
+	</dt>
+    <dd>
+	
+	<div>
+      <div id="LoginFrom"  class="Login_ajax" onkeypress="javascript:return DefaultButton(event, 'BtnLogOn')">
+  <script type="text/javascript" language="JavaScript">
+  function RefreshValdisplayDateCodeImage(ValdisplayDateCodeImageControl){
+      ValdisplayDateCodeImageControl.src = ValdisplayDateCodeImageControl.src + '?code=' + RandomNum(10);
+  }
+
+  function RandomNum(n){
+      var rnd = '';
+      for (var i = 0; i < n; i++) 
+          rnd += Math.floor(Math.random() * 10);
+      return rnd;
+  }
+
+  function DefaultButton(event, linkOpenType){
+      if (event.keyCode == 13 && !(event.srcElement && (event.srcElement.tagName.toLowerCase() == "textarea"))) {
+          var defaultButton = $(linkOpenType);
+          if (defaultButton && typeof(defaultButton.click) != "undefined") {
+              defaultButton.click();
+              event.cancelBubble = true;
+              if (event.stopPropagation) 
+                  event.stopPropagation();
+              return false;
+          }
+      }
+      return true;
+  }
+  </script>
+  <ul>
+  <li>用户名：<input name="TxtUserName" type="text" maxlength="20" id="TxtUserName" class="inputtext" style="width: 85px;" /></li>
+  <li>密　码：<input name="TxtPassword" type="password" id="TxtPassword" class="inputtext" style="width: 85px;" /></li>
+  <li id="checkcode" style="display:none;">验证码：<input name="TxtValdisplayDateCode" type="text" maxlength="6" value="" id="TxtValdisplayDateCode" class="inputtext" onfocus="this.select();" style="width: 55px;" /><img id="VcodeLogOn" title="看不清楚，换一个" onclick="RefreshValdisplayDateCodeImage(this);" src="/Controls/ValidateCodeImage.aspx" align="absmiddle" style="border-width: 0px; cursor: hand;" /></li>
+    <li style="display:none;">Cookie：
+	<select name="DropExpiration" id="DropExpiration">
+          <option value="None">不保存</option>
+          <option value="Day">保存一天</option>
+          <option value="Month">保存一月</option>
+          <option value="Year">保存一年</option>
+    </select>
+    </li>
+  <li id="loginButton">
+<a href="/User/Register.aspx" linkOpenType="_top" class="zhuce"></a>
+  <input type="submit" name="BtnLogOn" value="" id="BtnLogOn" onclick="Login();" class="inputbutton" /></li>
+    <div class="clearbox"></div>
+    </ul>
+	</div>
+<div id="PnlLogOnStatus" class="Login_ajax"></div>
+<script language="javascript" type="text/javascript">
+CheckIsLogin();
+
+function Loginin(LoginString){
+    document.getElementById("LoginFrom").innerHTML = document.getElementById("LoginFrom").innerHTML + LoginString;
+}
+
+function CheckIsLogin(){
+    document.getElementById("PnlLogOnStatus").innerHTML = "<img src=\"/Skin/Edu/Images/loading.gif\" alt=\"\"/>";
+    var x = new AjaxRequest('XML', 'status');
+    x.para = [];
+    x.post('logincheck', '/ajax.aspx', function(s){
+        var xml = x.createXmlDom(s);
+        var status = xml.getElementsByTagName("status")[0].firstChild.data;
+        
+        if (status == 'ok') {
+            document.getElementById("PnlLogOnStatus").style.display = "";
+            document.getElementById("LoginFrom").style.display = "none";
+            document.getElementById("PnlLogOnStatus").innerHTML = GetUserInfo(xml);
+        }
+        else {
+            document.getElementById("PnlLogOnStatus").style.display = "none";
+            document.getElementById("LoginFrom").style.display = "";
+            CheckEnableValidCode();
+        }
+    });
+}
+
+function GetUserInfo(xml){
+    var userInfo = "<div class=\"u_login\">" + xml.getElementsByTagName("username")[0].firstChild.data + "，您好！您有：<br/>";
+    userInfo = userInfo + "待签文章：" + xml.getElementsByTagName("signincontent")[0].firstChild.data + " 篇<br/>";
+    userInfo = userInfo + "<div style=\"text-align: center\"><a href=\"/User/Default.aspx\" linkOpenType=\"_top\">会员中心</a>&nbsp;&nbsp;|&nbsp;&nbsp;";
+    userInfo = userInfo + "<a href=\"#\"  onclick=\"loginout()\" linkOpenType=\"_top\">退出登录</a></div>";
+    userInfo = userInfo + "</div>";
+    return userInfo;
+}
+
+function loginout(){
+    var x = new AjaxRequest('XML','');
+    x.post('userlogout', '/ajax.aspx', function(s) {
+    var xml = x.createXmlDom(s);
+        var status = xml.getElementsByTagName("status")[0].firstChild.data;
+        if (status == "ok") {
+                if (xml.getElementsByTagName("API_Enable")[0].firstChild.data == "1") {
+                    var LogOutString = xml.getElementsByTagName("LogOutString")[0].firstChild.data;
+                    Loginin(LogOutString);
+                }
+         }
+        document.getElementById("TxtUserName").value = '';
+        document.getElementById("TxtPassword").value = '';
+        CheckEnableValidCode();
+        var VcodeLogOn = document.getElementById("VcodeLogOn");
+        if(VcodeLogOn  != null)
+        {
+	RefreshValdisplayDateCodeImage(VcodeLogOn);
+        }
+        document.getElementById("DropExpiration").value = 'None';
+        document.getElementById("PnlLogOnStatus").style.display = "none";
+        document.getElementById("LoginFrom").style.display = "";
+    });
+}
+
+function CheckEnableValidCode(){
+    var x = new AjaxRequest('XML', 'status');
+    x.para = [];
+    x.post('EnableValidCode', '/ajax.aspx', function(s){
+        var xml = x.createXmlDom(s);
+        var status = xml.getElementsByTagName("status")[0].firstChild.data;
+        if (status == "yes") {
+            document.getElementById("checkcode").style.display = '';
+            document.getElementById("TxtValdisplayDateCode").value = '';
+        }
+    });
+}
+
+function Login(){
+    if (document.getElementById("TxtUserName").value == '') {
+        alert("请填写用户名！");
+        document.getElementById("TxtUserName").focus();
+        return;
+    }
+    if (document.getElementById("TxtPassword").value == '') {
+        alert("请填写密码！");
+        document.getElementById("TxtPassword").focus();
+        return;
+    }
+    
+    if(document.getElementById("checkcode").style.display=="")
+    {
+      if (document.getElementById("TxtValdisplayDateCode").value == '') {
+          alert("请填写验证码！");
+          document.getElementById("TxtValdisplayDateCode").focus();
+          return;
+      }
+    }
+    var x = new AjaxRequest('XML', 'status');
+    x.para = ['username=' + document.getElementById("TxtUserName").value, 'password=' + document.getElementById("TxtPassword").value, 'checkcode=' + document.getElementById("TxtValdisplayDateCode").value, 'expiration=' + document.getElementById("DropExpiration").value];
+    x.post('userlogin', '/ajax.aspx', function(s){
+        var xml = x.createXmlDom(s);
+        var status = xml.getElementsByTagName("status")[0].firstChild.data;
+        switch (status) {
+            case "ok":
+                if (xml.getElementsByTagName("API_Enable")[0].firstChild.data == "1") {
+                    var LoginString = xml.getElementsByTagName("LoginString")[0].firstChild.data;
+                    Loginin(LoginString);
+                }
+                CheckIsLogin();
+                break;
+            case "err":
+                var errorMessage = xml.getElementsByTagName("body")[0].firstChild.data;
+                alert(errorMessage);
+                break;
+        }
+        
+    });
+}
+</script>
+	</div>
+    </dd>
+  </dl>
+</div>
+</div>
+<!--校长信箱-->
+<h3 class="e_mail"><a href="mailto:fzbgs@mail.hust.edu.cn"><font color="white">校长信箱</font></a></h3>
+<!--书记信箱-->
+<h3 class="e_mail"><a href="mailto:fzbgs2@sina.com"><font color="white">书记信箱</font></a></h3>
+<!--快速链接-->
+<h3 class="title">快速链接</h3>
+<ul class="link">
+<li><a href="/Category_99/Index.aspx">年 级 组</a></li>
+<li><a href="/Category_100/Index.aspx">教 研 组</a></li>
+<li><a href="/Blog/Index.aspx" title="附中博客" target="_blank">附中博客</a></li>
+<li><a href="/Category_101/Index.aspx">国际交流</a></li>
+<li><a href="/Category_112/Index.aspx">教育资讯</a></li>
+<li><a href="/Category_113/Index.aspx">美育天地</a></li>
+<li><a href="/Category_102/Index.aspx">附中云盘</a></li>
+<li><a href="/Category_103/Index.aspx">内部平台</a></li>
+<li><a href="/Category_129/Index.aspx">学生天地</a></li>
+<li><a href="/Category_136/Index.aspx">教学资源</a></li>
+
+</ul>
+<!--相关链接-->
+<h3 class="title">相关链接</h3>
+<ul class="re_link">
+<!--<li><a href="/Category_104/Index.aspx">校本课程</a></li>-->
+<!--<li><a href="/Category_105/Index.aspx">文学社</a></li>-->
+<!--<li><a href="/Category_106/Index.aspx">社团活动</a></li>-->
+<!--<li><a href='http://59.175.227.242:9000/web/login.html' target='_blank'>华科附中云盘电信网入口</a></li>-->
+<!--<li><a href='http://115.156.204.5:9000/web/login.html' target='_blank'>华科附中云盘教育网入口</a></li>-->
+<li><a href='http://zjopinion007.blog.163.com/' target='_blank'>华科附中军训博客</a></li>
+<!--<li><a href='https://service.allinpay.com/usercenter/appcenter/EducationFee/studentInfoAuth.do?mId=201312100000085' target='_blank'  style="">附中网上缴费系统</a></li>-->
+<li><a href='http://www.whjyj.gov.cn/' target='_blank'>武汉市教育局</a></li>
+<li><a href='http://www.ggjyw.com/' target='_blank'>东湖开发区教育局</a></li>
+<li><a href='http://hbwh.wenming.cn/' target='_blank'>武汉文明网</a></li>
+<li><a href='http://wuhan.eduyun.cn/' target='_blank'>武汉教育资源公共服务平台</a></li>
+<li><a href="/Category_107/Index.aspx">学生电视台</a></li>
+<li><a href='http://www.hust.edu.cn/' target='_blank'>华中科技大学</a></li>
+<li><a href='http://ecard.hust.edu.cn/' target='_blank'>华中大校园卡服务平台</a></li>
+</ul>
+
+<!--访问统计-->
+<h3 class="title">访问统计</h3>
+<script src='/Analytics/CounterLink.aspx?Style=common'></script>
+
+</div>
+<!--右侧主体部分-->
+<div class="cont_r">
+<!--广告位-->
+<div class="ad"> <script  type="text/javascript" src='/IAA/201111/1.js'></script></div>
+<!--栏目框部分-->
+<div class="zt_content">
+<div class="area fl">
+<h3><a title="更多" target="_blank" href="/Category_84/Index.aspx"><img src="/Skin/Edu/hkfz/images/more.jpg" width="29" height="11" align="absmiddle" /></a><img src="/Skin/Edu/hkfz/images/xykx.gif" width="63" height="18" align="absmiddle" /></h3>
+          <ul>
+
+            <li><a href="/Item/3559.aspx" target="_blank" title="标题：勠力同心，真抓实干，再上附中教育新台阶--华科附中召开期中初中工作总结会议&#xD;点击数：221&#xD;发表时间：18年05月14日">勠力同心，真抓实干，再上附中教育新台阶--华…</a>[18-05-14]</li><li><a href="/Item/3557.aspx" target="_blank" title="标题：2018年武汉地区第三届中国中学生美式辩论联赛在我校圆满落幕&#xD;点击数：151&#xD;发表时间：18年05月14日">2018年武汉地区第三届中国中学生美式辩论联赛…</a>[18-05-14]</li><li><a href="/Item/3556.aspx" target="_blank" title="标题：青年教师同课异构，初中语文教研交流&#xD;点击数：137&#xD;发表时间：18年05月11日"><font style="color:#e5331c;font-weight:bold;font-style:normal;;">青年教师同课异构，初中语文教研交流</font></a>[18-05-11]</li><li><a href="/Item/3555.aspx" target="_blank" title="标题：媒体聚焦[楚天都市网]高中毕业生举办毕业典礼，提前体验“拨穗礼”&#xD;点击数：172&#xD;发表时间：18年05月08日">媒体聚焦[楚天都市网]高中毕业生举办毕业典礼…</a>[18-05-08]</li><li><a href="/Item/3554.aspx" target="_blank" title="标题：我校2018届PGA国际班毕业典礼圆满举行&#xD;点击数：173&#xD;发表时间：18年05月08日">我校2018届PGA国际班毕业典礼圆满举行</a>[18-05-08]</li><li><a href="/Item/3545.aspx" target="_blank" title="标题：保护小黄车，我们是认真的！&#xD;点击数：224&#xD;发表时间：18年05月02日">保护小黄车，我们是认真的！</a>[18-05-02]</li><li><a href="/Item/3552.aspx" target="_blank" title="标题：科技讲座，精彩纷呈&#xD;点击数：144&#xD;发表时间：18年05月02日">科技讲座，精彩纷呈</a>[18-05-02]</li>
+          
+          </ul>
+</div>
+<div class="area fr"><h3><a title="更多" target="_blank" href="/Category_85/Index.aspx"><img src="/Skin/Edu/hkfz/images/more.jpg" width="29" height="11" /></a><img src="/Skin/Edu/hkfz/images/xygg.gif" width="61" height="18" /></h3>
+          <ul>
+
+            <li><a href="/Item/3562.aspx" target="_blank" title="标题：2018级PGA中美国际班入学测试考场安排&#xD;点击数：111&#xD;发表时间：18年05月18日">2018级PGA中美国际班入学测试考场安排</a>[18-05-18]</li><li><a href="/Item/3553.aspx" target="_blank" title="标题：2018级PGA中美国际班入学测试安排&#xD;点击数：212&#xD;发表时间：18年05月07日">2018级PGA中美国际班入学测试安排</a>[18-05-07]</li><li><a href="/Item/3541.aspx" target="_blank" title="标题：2018年华科大附中分配生预录取名单&#xD;点击数：725&#xD;发表时间：18年04月24日">2018年华科大附中分配生预录取名单</a>[18-04-24]</li><li><a href="/Item/3531.aspx" target="_blank" title="标题：询价文件（华中科技大学附属中学一体化速印机租赁及耗材采购）&#xD;点击数：128&#xD;发表时间：18年04月19日">询价文件（华中科技大学附属中学一体化速印机…</a>[18-04-19]</li><li><a href="/Item/3530.aspx" target="_blank" title="标题：询价文件（华中科技大学附属中学校园绿化养护服务）&#xD;点击数：81&#xD;发表时间：18年04月19日">询价文件（华中科技大学附属中学校园绿化养护…</a>[18-04-19]</li><li><a href="/Item/3529.aspx" target="_blank" title="标题：华中科技大学附属中学2018年分配生考试安排&#xD;点击数：463&#xD;发表时间：18年04月18日">华中科技大学附属中学2018年分配生考试安排</a>[18-04-18]</li><li><a href="/Item/3522.aspx" target="_blank" title="标题：2017-2018学年学生评优评先填表须知&#xD;点击数：391&#xD;发表时间：18年04月11日">2017-2018学年学生评优评先填表须知</a>[18-04-11]</li>
+          
+          </ul></div>
+<div  class="clear"></div>
+<div class="area fl"><h3><a title="更多" target="_blank" href="/Category_86/Index.aspx"><img src="/Skin/Edu/hkfz/images/more.jpg" width="29" height="11" /></a><img src="/Skin/Edu/hkfz/images/zszp.gif" width="62" height="18" /></h3>
+          <ul>
+
+            <li><a href="/Item/3528.aspx" target="_blank" title="标题：体育特长生（小升初）信息登记表&#xD;点击数：423&#xD;发表时间：18年04月18日">体育特长生（小升初）信息登记表</a>[18-04-18]</li><li><a href="/Item/3526.aspx" target="_blank" title="标题：2018年招收体育特长生(小升初)简章&#xD;点击数：469&#xD;发表时间：18年04月17日">2018年招收体育特长生(小升初)简章</a>[18-04-17]</li><li><a href="/Item/3511.aspx" target="_blank" title="标题：招生简介&#xD;点击数：649&#xD;发表时间：18年04月02日">招生简介</a>[18-04-02]</li><li><a href="/Item/3509.aspx" target="_blank" title="标题：2018级PGA中美国际班报名登记表&#xD;点击数：302&#xD;发表时间：18年03月23日">2018级PGA中美国际班报名登记表</a>[18-03-23]</li><li><a href="/Item/3507.aspx" target="_blank" title="标题：2018级PGA中美国际班报名登记表&#xD;点击数：154&#xD;发表时间：18年03月23日">2018级PGA中美国际班报名登记表</a>[18-03-23]</li><li><a href="/Item/3506.aspx" target="_blank" title="标题：PGA中美国际班2018年招生简章&#xD;点击数：446&#xD;发表时间：18年03月23日">PGA中美国际班2018年招生简章</a>[18-03-23]</li><li><a href="/Item/3487.aspx" target="_blank" title="标题：华科大附中招收体育后备人才信息登记表&#xD;点击数：497&#xD;发表时间：18年03月06日">华科大附中招收体育后备人才信息登记表</a>[18-03-06]</li>
+          
+          </ul></div>
+<div class="area fr"><h3><a title="更多" target="_blank" href="/Category_87/Index.aspx"><img src="/Skin/Edu/hkfz/images/more.jpg" width="29" height="11" /></a><img src="/Skin/Edu/hkfz/images/ztzl.gif" width="60" height="17" /></h3>
+<div class="yslide1 fl">
+            <div class="pe_u_thumb"><a href="/Item/3176.aspx" target="_blank"><img src="/UploadFiles/2016/4/201604250947354317.png" alt="市文明办、市法院联合发布今年第二批失信黑名单" width="160" height="120" border="0"></a></div>
+<div class="pe_u_thumb_title"><a href="/Item/3176.aspx" target="_blank">市文明办、市法院</a><br></div>
+          </div>
+        <div class="ztlist">
+          <ul>
+
+            <li><a href="/Item/3424.aspx" target="_blank" title="标题：征兵宣传&#xD;点击数：287&#xD;发表时间：17年09月18日">征兵宣传</a></li><li><a href="/Item/3176.aspx" target="_blank" title="标题：市文明办、市法院联合发布今年第二批失信黑名单&#xD;点击数：879&#xD;发表时间：16年04月25日">市文明办、市法院联合发布今年第二…</a></li><li><a href="/Item/2923.aspx" target="_blank" title="标题：【文明创建-道德模范】助人为乐模范董明&#xD;点击数：502&#xD;发表时间：14年12月03日">【文明创建-道德模范】助人为乐模…</a></li><li><a href="/Item/2924.aspx" target="_blank" title="标题：【文明创建-道德模范】点滴铸就丰碑吴天祥&#xD;点击数：607&#xD;发表时间：14年12月03日">【文明创建-道德模范】点滴铸就丰…</a></li><li><a href="/Item/2922.aspx" target="_blank" title="标题：【文明创建-道德模范】“信义兄弟”孙东林&#xD;点击数：416&#xD;发表时间：14年12月03日">【文明创建-道德模范】“信义兄弟…</a></li><li><a href="/Item/2921.aspx" target="_blank" title="标题：【文明创建-道德模范】黄来女：孝老爱亲好女儿&#xD;点击数：434&#xD;发表时间：14年12月03日">【文明创建-道德模范】黄来女：孝…</a></li><li><a href="/Item/2920.aspx" target="_blank" title="标题：【文明创建-道德模范】特教杨小玲：无声世界的幸福使者&#xD;点击数：415&#xD;发表时间：14年12月03日">【文明创建-道德模范】特教杨小玲…</a></li>
+          
+          </ul>
+        </div></div>
+</div>
+<!--栏目框结束-->
+<!--滚动图片位置-->
+<div class="photo" style="clear:both">
+<div id="goleft">
+<div id="goleft1">
+<ul class="photo_bd">
+
+            <li>
+  <div class="pe_u_thumb"><a href="/Item/3557.aspx" target="_blank"><img src="/UploadFiles/2018/5/201805141021156105.jpg" alt="2018年武汉地区第三届中国中学生美式辩论联赛在我校圆满落幕" width="160" height="120" border="0"></a></div>
+</li>
+<li>
+  <div class="pe_u_thumb"><a href="/Item/3555.aspx" target="_blank"><img src="/UploadFiles/2018/5/201805080853172269.png" alt="媒体聚焦[楚天都市网]高中毕业生举办毕业典礼，提前体验“拨穗礼”" width="160" height="120" border="0"></a></div>
+</li>
+<li>
+  <div class="pe_u_thumb"><a href="/Item/3554.aspx" target="_blank"><img src="/UploadFiles/2018/5/201805080840489067.jpg" alt="我校2018届PGA国际班毕业典礼圆满举行" width="160" height="120" border="0"></a></div>
+</li>
+<li>
+  <div class="pe_u_thumb"><a href="/Item/3552.aspx" target="_blank"><img src="/UploadFiles/2018/5/201805021043528803.JPG" alt="科技讲座，精彩纷呈" width="160" height="120" border="0"></a></div>
+</li>
+<li>
+  <div class="pe_u_thumb"><a href="/Item/3549.aspx" target="_blank"><img src="/UploadFiles/2018/5/201805012028228510.png" alt="“细心谋划，颗粒归仓”——高三年级四月调考质量分析会" width="160" height="120" border="0"></a></div>
+</li>
+                                
+    </ul>
+    </div>    <div id="goleft2"> </div></div>
+     <script type="text/javascript">
+var speed2=20;
+var FGgoleft=document.getElementById('goleft');
+var FGgoleft1=document.getElementById('goleft1');
+var FGgoleft2=document.getElementById('goleft2');
+FGgoleft2.innerHTML=FGgoleft1.innerHTML
+function Marquee2(){
+if(FGgoleft2.offsetWidth-FGgoleft.scrollLeft<=0)
+FGgoleft.scrollLeft-=FGgoleft1.offsetWidth
+else{
+FGgoleft.scrollLeft++
+}
+}
+var MyMar2=setInterval(Marquee2,speed2)
+FGgoleft.onmouseover=function() {clearInterval(MyMar2)}
+FGgoleft.onmouseout=function() {MyMar2=setInterval(Marquee2,speed2)}
+</script>
+
+
+</div>
+</div>
+</div>
+
+
+<script  type="text/javascript" src='/IAA/201411/13.js'></script>
+<script  type="text/javascript" src='/IAA/201705/15.js'></script>
+
+
+<!--广告位-->
+
+
+<!--网站底部-->
+<div id="footer">
+<div class="bottom_nav"><a title="设为首页" style=" cursor:pointer" id="setForIndex" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://fz.hust.edu.cn')">设为首页</a>
+ |<a href="javascript:if(document.all){window.external.addFavorite('http://fz.hust.edu.cn','华中科技大学附属中学');}else if(window.sidebar){window.sidebar.addPanel('华中科技大学附属中学', 'http://fz.hust.edu.cn','');}" title="加入收藏">加入收藏</a> 
+ | <a href="/Category_109/Index.aspx">友情链接</a> | <a href="/Category_110/Index.aspx">版权申明</a> | <a href="http://t.qq.com/HUSTFZ" target="_blank">腾讯微博</a> | <a href="http://www.hustfz.cn" target="_blank">电信入口</a></div>
+<div class="copy">地址：武汉市东湖高新区喻家湖路3号<br />
+邮编：430074
+电话:027-87556844 传真:027-87543045<br />
+  版权所有 © 华中科技大学附属中学   鄂ICP备12007583号-1</div>
+</div>
+</div>
+</body>
+</html>

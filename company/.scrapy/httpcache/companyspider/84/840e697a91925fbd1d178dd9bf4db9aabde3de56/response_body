@@ -1,0 +1,1204 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"><!--禁止页面放大-->
+<meta name="format-detection" content="telephone=no"><!--使设备浏览网页时对数字不启用电话功能-->
+<title>宁波广播电视大学</title>
+<link rel="stylesheet" href="/Scripts/fatFlowLayout/ff.css" />
+<link rel="stylesheet" href="/Templates/Power_Default/css/index.css" />
+
+<script src="/Scripts/jquery/jquery-1.8.2.min.js" type="text/javascript"></script> 
+<link href="/Scripts/colorbox/colorbox.css" rel="stylesheet" />
+<script type="text/javascript" src="/Scripts/colorbox/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="/Scripts/colorbox/fat.colorbox-tools.js"></script> 
+<script type="text/javascript" src="/Scripts/fatAeFunctions.js"></script>
+
+<base target="_blank" />
+<script type="text/javascript" src="/Templates/Power_Default/Scripts/inTemplateFunctions.js"></script>
+<script type="text/javascript">
+
+
+$(function(){
+	//拉出子菜单
+	$(".main-menu-item").mouseenter(function(){
+		//$(".inAdBox").slideUp("fast");
+		$(".inAdBox").hide();
+		$("#" + $(this).attr("subid")).slideDown(500);
+		
+	});
+	
+	//子菜单回缩
+	$(".inAdBox").mouseleave(function(){$(this).slideUp("fast");});
+	
+	//首屏招生小图片变化效果
+	$("#inAdZs img").mouseenter(function(){
+		$(this).removeClass("alpha60");
+	});
+	$("#inAdZs img").mouseleave(function(){
+		$(this).addClass("alpha60");
+	});
+	
+	//学生活动背景改变效果
+	$(".studentActivity").mouseenter(function(){
+		$(this).find("a").addClass("alpha70b").addClass("active");
+	});
+	$(".studentActivity").mouseleave(function(){
+		$(this).find("a").removeClass("alpha70b").removeClass("active");
+	});
+	
+	//专题网站背景变化效果
+	$(".sp a").mouseenter(function(){
+		$(this).removeClass("alpha60b");
+		$(this).addClass("bgBlue");
+	});
+	$(".sp a").mouseleave(function(){
+		$(this).addClass("alpha60b");
+		$(this).removeClass("bgBlue");
+	});
+	
+	//面板事件
+	$("#inAdPanel").mouseleave(function(){ $(".p-subArea").hide("fast");});
+	$(".p-menu li").mouseenter(function(){
+		var I=$(this);
+		if(I.attr("data-id")!=undefined)
+			$(".p-subArea").html($("#" + I.attr("data-id")).html());
+		else
+			$(".p-subArea").load($(this).attr("data-url"));
+		$(".p-subArea").show();
+	});
+	
+	
+	//课程试学
+	$(".vl-name a").click(function(){
+		var data=$(this).attr("data-url");
+		var html="<iframe frameborder=\"no\" style=\" width:100%; height:305px;\" allowtransparency=\"true\" scrolling=\"auto\" src=\"http://www.nblll.cn/Player.aspx?play=1&URL=" + data + "\"></iframe>";
+		$("#v-box").html(html);
+		$("#v-name").html("正在播放：" + $(this).html());
+	});
+	
+	
+	//频道加载
+	if($(".channelLink").length>0)
+	{
+		loadChannel();
+	}
+	
+	//频道选择链接点击后的动作
+	$(".channelLink").click(function(){
+		var url="/Apps/PowerCMS/Channel.aspx?contents=true";
+		var id=$(this).attr("channel");
+		url=url + " #" + id;
+		
+		var cover=url + "-cover";
+		$("#coverbox").load(cover);
+		$("#channelbox").load(url);
+	})
+	
+	$(".helps-1").addClass("current");
+	switchHelps();
+	
+	
+	//新闻切换
+	$(".newsControlBar").click(function(){
+		var I=$(this);
+		if(!I.hasClass("Current")){
+			var boxname=I.attr("newsbox");
+			//隐藏原内容
+			$("#" + boxname + " h2 a").addClass("hide");
+			$("#" + boxname + " ul").addClass("hide");
+			//显示新内容
+			var more=I.attr("newsmore");
+			var list=I.attr("newslist");
+			$("#" + more).removeClass("hide");
+			$("#" + list).removeClass("hide");
+			//改变控制栏
+			$("#" + boxname + " div.newsControlBar").removeClass("Current");
+			I.addClass("Current");
+		}
+	});
+	
+	
+	//招生信息与服务最后一行边框隐掉
+	$("#b3ul1 li:last").addClass("last");
+	
+	//QQ在线查询
+	//腾讯接口改变，已无效
+	/*
+	qqq=new QQOnlineQuery
+	(
+		[
+			{Id:"QQ1",QQ:"472600499",Online:true,Descripting:"教务处咨询QQ",site:"www.nbtvu.net.cn"},
+			{Id:"QQ2",QQ:"42575498",Online:true,Descripting:"开放网络学院咨询QQ",site:"www.nbtvu.net.cn"},
+			{Id:"QQ3",QQ:"605013356",Online:true,Descripting:"成人教育学院咨询QQ",site:"www.nbtvu.net.cn"},
+			{Id:"QQ5",QQ:"5120902",Online:true,Descripting:"继续教育学院咨询QQ",site:"www.nbtvu.net.cn"},
+			{Id:"QQ6",QQ:"492400629",Online:true,Descripting:"文法系咨询QQ",site:"www.nbtvu.net.cn"},
+			{Id:"QQ7",QQ:"9481677",Online:true,Descripting:"外语系咨询QQ",site:"www.nbtvu.net.cn"},
+			{Id:"QQ8",QQ:"2351043670",Online:true,Descripting:"经管系咨询QQ",site:"www.nbtvu.net.cn"},
+			{Id:"QQ9",QQ:"809121501",Online:true,Descripting:"信息系咨询QQ",site:"www.nbtvu.net.cn"}
+		]
+	).Query();
+	*/
+	
+	//加载标识证书
+	$.getScript("http://dcs.conac.cn/js/12/187/1398/60417986/CA121871398604179860001.js");
+	
+	//漂浮广告
+	//flyingAdInit();
+	
+	
+});
+
+</script>
+
+<script type="text/javascript">
+/*
+    $(function () {
+        //浮动窗口
+        var demo = document.getElementById('demo');
+		var demo2 = document.getElementById('demo2');
+		var demo3 = document.getElementById('demo3');
+        var sx = 1;
+        var sy = 1;
+        var x = 0;
+        var y = 0;
+
+        function move() {
+            var isIE = myBrowser() == 'IE';
+
+            if (isIE && document.body.clientWidth - demo.clientWidth < x || window.innerWidth - demo.clientWidth < x || x < 0) {
+                sx = -sx;
+            }
+
+            if (isIE && document.body.clientHeight - demo.clientHeight < y || document.body.clientHeight - demo.clientHeight < y || y < 0) {
+                sy = -sy;
+            }
+
+            x = demo.offsetLeft + sx;
+            y = demo.offsetTop + sy;
+            //alert(x);
+            //alert(y);
+            demo.style.left = x + 'px';
+            demo.style.top = y + 'px';
+        }
+		
+		  function move2() {
+            var isIE = myBrowser() == 'IE';
+
+            if (isIE && document.body.clientWidth - demo2.clientWidth < x || window.innerWidth - demo2.clientWidth < x || x < 0) {
+                sx = -sx;
+            }
+
+            if (isIE && document.body.clientHeight - demo2.clientHeight < y || document.body.clientHeight - demo2.clientHeight < y || y < 0) {
+                sy = -sy;
+            }
+
+            x = demo2.offsetLeft + sx;
+            y = demo2.offsetTop + sy;
+            //alert(x);
+            //alert(y);
+            demo2.style.left = x + 'px';
+            demo2.style.top = y + 'px';
+
+        }
+		 function move3() {
+            var isIE = myBrowser() == 'IE';
+
+            if (isIE && document.body.clientWidth - demo3.clientWidth < x || window.innerWidth - demo3.clientWidth < x || x < 0) {
+                sx = -sx;
+            }
+
+            if (isIE && document.body.clientHeight - demo3.clientHeight < y || document.body.clientHeight - demo3.clientHeight < y || y < 0) {
+                sy = -sy;
+            }
+
+            x = demo3.offsetLeft + sx;
+            y = demo3.offsetTop + sy;
+            //alert(x);
+            //alert(y);
+            demo3.style.left = x + 'px';
+            demo3.style.top = y + 'px';
+
+        }
+
+
+        var timer = setInterval(move, 55);
+		var timer2 = setInterval(move2, 55);
+		var timer3 = setInterval(move3, 55);
+
+        demo.onmouseover = function () {
+            clearInterval(timer);
+        }
+		
+		demo2.onmouseover = function () {
+            clearInterval(timer2);
+        }
+
+		demo3.onmouseover = function () {
+            clearInterval(timer3);
+        }
+		
+        demo.onmouseout = function () {
+            timer = setInterval(move, 25);
+        }
+		
+		 demo2.onmouseout = function () {
+            timer2 = setInterval(move2, 25);
+        }
+		 demo3.onmouseout = function () {
+            timer3 = setInterval(move3, 25);
+        }
+    });
+	*/
+
+    function _boardSelectBack(contrl, cv, div, dv) {
+        $("#" + contrl).val(cv);
+        $("#" + div).html(dv);
+    }
+    //判断是否是ie
+    function myBrowser() {
+        var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+        var isOpera = userAgent.indexOf("Opera") > -1;
+        if (isOpera) {
+            return "Opera"
+        }; //判断是否Opera浏览器
+        if (userAgent.indexOf("Firefox") > -1) {
+            return "FF";
+        } //判断是否Firefox浏览器
+        if (userAgent.indexOf("Chrome") > -1) {
+            return "Chrome";
+        }
+        if (userAgent.indexOf("Safari") > -1) {
+            return "Safari";
+        } //判断是否Safari浏览器
+        if (userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera) {
+            return "IE";
+        }; //判断是否IE浏览器
+    }
+
+/*$(function(){
+	//2017年教师节AD
+	$.colorbox({
+        iframe: true, width: '707', height: '507', transition: "fade",fixed: true,
+        href: "Templates/Power_Default/images/teacher_day.jpg"
+    });
+});*/
+
+$(function(){
+	//2017年国庆中秋AD
+	/*$.colorbox({
+        iframe: true, width: '1066', height: '698', transition: "fade",fixed: true,
+        href: "Templates/Power_Default/images/2017zqgq.jpg"
+    });*/
+});
+
+function ﻿_boardSelectBack(contrl,cv,div,dv)
+{
+	$("#" + contrl).val(cv);
+	$("#" + div).html(dv);
+}
+</script>
+
+</head>
+
+<body>
+<div class="r100 lh30px fs12px ov-hide" id="topMenu">
+	<div class="r1200px">
+   	<div class="floatleft" id="tianqi">
+        <iframe width="280" scrolling="no" height="20" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=34&icon=1&num=3&color=%23FFFFFF"></iframe>
+    </div>
+        <div id="userToolbar" class="textright"><span id="TimeGreetings"></span><span class="UserToolbar"></span></div>
+    </div>
+    
+</div>
+
+<div class="r100" id="header">
+</div>
+
+<div id="menu" class="r100 bgEEE">
+    <div class="r1200px p0px">
+    	<a href="/">网站首页</a>
+    	<a href="#" class="main-menu-item" subid="sb1">学校概况</a>
+        <!--<a href="#" class="main-menu-item" subid="sb2">文化历史</a>-->
+        <a href="/Apps/Prof/Types.aspx" class="main-menu-item" subid="sb3">招生信息</a>
+        <a href="#" class="main-menu-item" subid="sb4">在线学习</a>
+        <a href="#" class="main-menu-item" subid="sb5">信息查询</a>
+        <a href="#" class="main-menu-item" subid="sb6">校园生活</a>
+        <a href="#" class="main-menu-item" subid="sb7">教学科研</a>
+        <a href="#" class="main-menu-item" subid="sb8">组织机构</a>
+        <a href="#" class="main-menu-item" subid="sb9">学院系部</a>
+        <a href="#" class="main-menu-item" subid="sb10">县市电大</a>
+    </div>
+</div>
+
+<div class="r100" id="AD">
+	<div class="r1200px">
+        <script type="text/javascript" src="/Scripts/Slideshow/skdslider/skdslider.js"></script><link rel="Stylesheet" type="text/css" href="/Scripts/Slideshow/skdslider/skdslider.css" /><ul id="skd-slider" delay="4000" buttons="false" class="ov-hide"><li>
+	<div class="slider-image" style="background-image:url(/UserFiles/2016/2/29/505924/images/AutoUpload/636565593988378607.jpg);"></div>
+    <div class="slide-desc">
+    	<p><a class="more" href="/Apps/PowerCMS/Show.aspx?id=13448">我校召开全体中层干部会议暨党委中心组（扩大）会议</a></p>
+    </div>
+</li><li>
+	<div class="slider-image" style="background-image:url(/UserFiles/2016/2/29/505924/images/AutoUpload/636523288830303717.jpg);"></div>
+    <div class="slide-desc">
+    	<p><a class="more" href="/Apps/PowerCMS/Show.aspx?id=13382">我校召开2017年度工作总结表彰大会</a></p>
+    </div>
+</li><li>
+	<div class="slider-image" style="background-image:url(/UserFiles/2015/9/23/505902/images/AutoUpload/636500765799793327.jpg);"></div>
+    <div class="slide-desc">
+    	<p><a class="more" href="/Apps/PowerCMS/Show.aspx?id=13290">国家开放大学宁波辅警学院成立</a></p>
+    </div>
+</li><li>
+	<div class="slider-image" style="background-image:url(/UserFiles/2016/2/29/505924/images/AutoUpload/636481671768924746.jpg);"></div>
+    <div class="slide-desc">
+    	<p><a class="more" href="/Apps/PowerCMS/Show.aspx?id=13220">“新时代·新媒体”论坛开讲</a></p>
+    </div>
+</li><li>
+	<div class="slider-image" style="background-image:url(/UserFiles/2016/3/24/505929/images/AutoUpload/636474646112939532.jpg);"></div>
+    <div class="slide-desc">
+    	<p><a class="more" href="/Apps/PowerCMS/Show.aspx?id=13167">全国首家微博城市新媒体学院成立 宁波电大网络传播学院成立</a></p>
+    </div>
+</li><li>
+	<div class="slider-image" style="background-image:url(/UserFiles/2016/2/29/505924/images/AutoUpload/636452400668586262.jpg);"></div>
+    <div class="slide-desc">
+    	<p><a class="more" href="/Apps/PowerCMS/Show.aspx?id=13029">市委教育工委朱达书记一行前来我校调研</a></p>
+    </div>
+</li></ul>
+	</div>
+</div>
+ 
+<div id="ADOver" class="rel h0 r1200px">
+
+    <div id="sb1" class="inAdBox abs alpha70w radius20px nrs-t-l nrs-t-r">
+        <div class="r100">
+        	<div class="w20"><img src="/Templates/Power_Default/images/contents-images/ddyj.jpg" width="200" height="142" class="radius10px" /></div>
+            <div class="w30">
+            	<p>宁波广播电视大学是一所独立设置的省级广播电视大学，由国家教育部批准，宁波市人民政府主办。学校创办于1979年，现校址位于宁波市区文教路1号，地处美丽的三江文化长廊之畔。</p>
+                <p>学校现下设余姚、慈溪、鄞州、宁海4个学院，象山、奉化、镇海、北仑4所分校，江北、东钱湖旅游度假区2个工作站。</p>
+            </div>
+            <div class="w50">
+            	<h3 class="font-yahei">基本校情</h3>
+                <ul>
+                	<li><a href="/Apps/PowerCMS/Show.aspx?id=10887">学校简介</a></li>
+					<li><a href="/Apps/PowerCMS/Show.aspx?id=10917">机构职能</a></li>
+                    <li><a href="/Apps/PowerCMS/Show.aspx?id=10919">师资队伍</a></li>
+                    <li><a href="/Templates/Power_Default/static-contents/network.html" class="colorbox">办学网络</a></li>
+                    <li><a href="/Templates/Power_Default/static-contents/xl/2017c.html" class="colorbox">学校校历</a></li>
+                </ul>
+<!--                <h3 class="font-yahei">建校方略</h3>-->
+                <ul>
+                    <li><a href="/Apps/PowerCMS/Show.aspx?id=10927">领导题词</a></li>
+                    <li><a href="/Apps/PowerCMS/Show.aspx?id=10928">现任领导</a></li>
+                    <li><a href="/Apps/PowerCMS/Show.aspx?id=10929">历任领导</a></li>
+                    <!--  <li><a href="/Apps/PowerCMS/fastshow.aspx?id=10935" class="colorbox">教育成果</a></li>
+                    <li><a href="/Apps/PowerCMS/fastshow.aspx?id=10930" class="colorbox">历史图册</a></li>
+                  <li><a href="/Apps/PowerCMS/fastshow.aspx?id=10931" class="colorbox">知名校友</a></li>-->
+            	</ul>                
+                <h3 class="font-yahei">大事纪要</h3>
+                <ul>
+                    <li><a href="/Apps/PowerCMS/fastshow.aspx?id=10888" class="colorbox">1979-1990</a></li>
+                    <li><a href="/Apps/PowerCMS/fastshow.aspx?id=10924" class="colorbox">1991-2000</a></li>
+                    <li><a href="/Apps/PowerCMS/fastshow.aspx?id=10925" class="colorbox">2001-2010</a></li>
+                    <li><a href="/Apps/PowerCMS/fastshow.aspx?id=10926" class="colorbox">2011-今</a></li>
+            	</ul>
+
+            </div>
+        </div>
+    </div>
+    
+
+  <div id="sb3" class="inAdBox abs alpha70w radius20px nrs-t-l nrs-t-r">
+        <div class="w20"><img src="/Templates/Power_Default/images/contents-images/f3.jpg" width="200" height="142" class="radius10px"  /></div>
+        <div class="w40">
+        	<p>宁波广播电视大学办学形式多样，本学期正在热招的办学类型如下：国家开放大学开放教育（本科、专科），宁波电大成人教育，著名高校网络远程教育，宁波社区大学老年教育，宁波电大非学历培训。</p>
+<!--            <p><a href="#">了解这些教育形式的区别</a></p>
+            <p><a href="#">帮我选择</a></p>-->
+        </div>
+        <div class="w40">
+          <h3 class="font-yahei">详细信息</h3>
+          <ul>
+                <li><a href="http://www.nbtvu.net.cn/Apps/PowerCMS/List.aspx?id=6">开放教育</a></li>
+                <li><a href="http://www.nbtvu.net.cn/Apps/PowerCMS/List.aspx?id=47">成人教育</a></li>
+                <li><a href="http://www.nbtvu.net.cn/Apps/PowerCMS/List.aspx?id=9">高职教育</a></li>
+                <li><a href="http://www.nbtvu.net.cn/Apps/PowerCMS/List.aspx?id=8">网络教育</a></li>
+                <li><a href="http://www.nbtvu.net.cn/Apps/PowerCMS/List.aspx?id=48">老年教育</a></li>
+                <li><a href="http://www.nbtvu.net.cn/Apps/PowerCMS/List.aspx?id=49">教育培训</a></li>
+                <li><a href="http://www.nbtvu.net.cn/Apps/PowerCMS/List.aspx?id=50">社区教育</a></li>
+          </ul>
+        </div>
+  </div>
+    <div id="sb4" class="inAdBox abs alpha70w radius20px nrs-t-l nrs-t-r">
+        <div class="w20"><img src="/Templates/Power_Default/images/contents-images/f2.jpg" width="200" height="142"  class="radius10px" /></div>
+        <div class="w40">
+        	<p>宁波广播电视大学学习形式多样，既有面授学习，也有网上在线学习，多个在线学习平台。</p>
+            <!--<p><a href="#">2015春学期课程总表</a></p>-->
+        </div>
+        <div class="w40">
+          <h3 class="font-yahei">我校学员</h3>
+          <ul>
+          		<li><a href="http://erc.nbtvu.net.cn">全媒体资源</a></li>
+                <li><a href="http://iclass.nbtvu.net.cn">网上课堂</a></li>
+                <li><a href="http://www.ouchn.cn">国开学习网</a></li>
+                <li><a href="http://www.openedu.com.cn/">中央电大电大在线</a></li>
+          </ul>
+          <h3 class="font-yahei">社会公众</h3>
+          <ul>
+                <li><a href="http://www.nblll.cn">宁波终身学习网</a></li>
+                <li><a href="http://www.nbsqjy.com">宁波社区教育网</a></li>
+          </ul>
+        </div>
+    </div>
+    <div id="sb5" class="inAdBox abs alpha70w radius20px nrs-t-l nrs-t-r">
+        <div class="w20"><img src="/Templates/Power_Default/images/contents-images/jxl.jpg" width="200" height="142"  class="radius10px" /></div>
+        <div class="w40">
+        	<h3 class="font-yahei">我校学员</h3>
+            <ul>
+                <li><a href="http://sis.nbtvu.net.cn">学生综合信息系统</a></li>
+                <li><a href="http://tsg.nbtvu.net.cn/dzwx/testpaper/index.htm">开放教育历年试卷库</a></li>
+            </ul>
+          <h3 class="font-yahei">社会公众</h3>
+          <ul>
+                <li><a href="/Scripts/baidumap.htm" class="colorbox">交通导航</a></li>
+                <li><a href="http://www.nbtvu.net.cn/Apps/PowerCMS/Show.aspx?id=10921">校园地图</a></li>
+                <li><a href="http://www.nbtvu.net.cn/Apps/PowerCMS/Show.aspx?id=10922">校内电话</a></li>
+                <li><a href="http://xgb.nbtvu.net.cn/board.asp?ID=112" class="colorbox">来校招聘</a></li>
+          </ul>
+        </div>
+        <div class="w40">
+          <h3 class="font-yahei">教职员工</h3>
+          <ul>
+                <li><a href="http://mail.nbtvu.net.cn/">电子邮局</a></li>
+                <li><a href="http://gh.nbtvu.net.cn/">教工之家</a></li>
+                <li><a href="http://www.nbtvu.net.cn/Apps/PowerCMS/List.aspx?id=38">校务公开（内网）</a></li>
+                <li><a href="http://wqs.nbtvu.net.cn/">工资查询（内网）</a></li>
+          </ul>
+        </div>
+    </div>
+    <div id="sb6" class="inAdBox abs alpha70w radius20px nrs-t-l nrs-t-r">
+       <div class="w20"><img src="/Templates/Power_Default/images/contents-images/tjc.jpg" width="200" height="142"  class="radius10px" /></div>
+        <div class="w40">
+        	<p>宁波广播电视大学学生类别众多，学员年龄跨度大，从二十来岁的普通高等教育学员到三四十岁的非学历培训学员再到六七十岁的老年教育学员共处一个校园，形成了一般高校所不具备的多元化校园生活圈和校园文化氛围。</p>
+        </div>
+        <div class="w40">
+          <h3 class="font-yahei">校园文化</h3>
+          <ul>
+                <li><a href="http://xgb.nbtvu.net.cn/">学工之窗</a></li>
+                <li><a href="http://ln.nbsqjy.com/">老有所学</a></li>
+                <!--<li><a href="#">海贝</a></li>-->
+                <li><a href="http://zwx.nbtvu.net.cn/Category_31/Index.aspx">新文人</a></li>
+                <li><a href="http://www.nblll.cn/TagSearch.aspx?key=%E5%AE%81%E6%B3%A2%E7%89%B9%E8%89%B2">宁波特色视频</a></li>
+                <!--<li><a href="#">活动图库</a></li>-->
+                
+          </ul>
+        </div>
+    </div>
+    
+    <div id="sb7" class="inAdBox abs alpha70w radius20px nrs-t-l nrs-t-r">
+    	<div class="w20"><img src="/Templates/Power_Default/images/contents-images/ky.jpg" width="200" height="142"  class="radius10px" /></div>
+        <div class="w40">
+            <p>宁波广播电视大学建立了一支专业化高素质的教师队伍、科研队伍和管理队伍。现全校有教职员工近200人，专职教师中高级职称占30%以上。学校科研水平也与时俱进，建立起精干的科研组织机构，教职工科研水平不断提升。宁波广播电视大学学报为公开出版发行的综合性学术刊物，国内统一刊号CN33—1300/Z，欢迎现代远程开放教育研究、终身教育研究、新媒体研究等高质量的来稿。学校还建立了高效的管理队伍所有教职员工齐心协力，为社会提供服务。</p>
+        </div>
+        <div class="w40">
+          <h3 class="font-yahei">教学</h3>
+          <ul>
+                <li><a href="http://www.ouchn.cn/">国开平台</a></li>
+                <li><a href="http://iclass.nbtvu.net.cn/">网上课堂</a></li>
+                <li><a href="http://mis.nbtvu.net.cn/">综合信息系统</a></li>                
+
+<!--                <li><a href="http://.nbtvu.net.cn/">教工之家</a></li>
+                <li><a href="http://ln.nbsqjy.com/">教师新闻</a></li>
+                <li><a href="#">每月明星教师</a></li>-->
+          </ul>
+          <h3 class="font-yahei">科研</h3>
+          <ul>
+                <li><a href="http://kyc.nbtvu.net.cn/">科研处</a></li>
+                <li><a href="http://www.nbtvu.net.cn/kyjfgk/index.asp">科研经费公开</a></li>
+				<li><a href="http://tsg.nbtvu.net.cn/dzwx/" target="_blank">电子文献</a></li>               
+          </ul>
+          <h3 class="font-yahei">学报</h3>
+          <ul>
+                <li><a href="http://kyc.nbtvu.net.cn/tougaoshuoming">学报</a></li>
+                <li><a href="mailto:nbddxb@nbtvu.net.cn">投稿邮箱</a></li>
+          </ul>
+        </div>
+    </div>
+    
+    <div id="sb8" class="inAdBox abs alpha70w radius20px nrs-t-l nrs-t-r">
+        <div class="w20"><img src="/Templates/Power_Default/images/contents-images/xz.jpg" width="200" height="142"  class="radius10px" /></div>
+        <div class="w80">
+          <ul>
+                        <a href="http://xb.nbtvu.net.cn" class="w33">党办校办宣传部</a>
+                        <a href="http://jw.nbtvu.net.cn" class="w33">纪委</a>
+                        <a href="http://rsc.nbtvu.net.cn/" class="w33">组织部人事处</a>
+                        <a href="http://jwc.nbtvu.net.cn/" class="w33">教务处</a>
+                        <a href="http://kyc.nbtvu.net.cn/" class="w33">科研处</a>
+                        <a href="http://xgb.nbtvu.net.cn/" class="w33">学工部学生处</a>
+                        <a href="http://zsjy.nbtvu.net.cn/" class="w33">终身教育处</a>
+                        <a href="http://bwc.nbtvu.net.cn/" class="w33">总务处保卫处</a>
+                        <a href="http://cwc.nbtvu.net.cn/" class="w33">财务处</a>
+                        <a href="http://center.nbtvu.net.cn/" class="w33">信息与教学资源中心</a>
+                        <a href="http://tsg.nbtvu.net.cn/" class="w33">图书馆</a>
+                        <a href="http://gh.nbtvu.net.cn/" class="w33">工会</a>
+                       
+          </ul>
+        </div>
+    </div>
+    
+    <div id="sb9" class="inAdBox abs alpha70w radius20px nrs-t-l nrs-t-r">
+       <div class="w20"><img src="/Templates/Power_Default/images/contents-images/xm.jpg" width="200" height="142"  class="radius10px" /></div>
+        <div class="w80">
+          <ul>
+                <a href="http://zwx.nbtvu.net.cn/" class="w33">文法系</a>
+                <a href="http://wyx.nbtvu.net.cn/" class="w33">外语外贸系</a>
+                <a href="http://jgx.nbtvu.net.cn/" class="w33">经济管理系</a>
+                <a href="http://its.nbtvu.net.cn/" class="w33">信息系基础教学部</a>              
+                <a href="http://kfxy.nbtvu.net.cn/" class="w33">开放教育学院</a>
+                <a href="http://wljyxy.nbtvu.net.cn/" class="w33">网络教育学院</a>
+                <a href="http://cjxy.nbtvu.net.cn/" class="w33">成人教育学院</a>
+                <a href="http://jjxy.nbtvu.net.cn/" class="w33">继续教育学院</a>             
+                <a href="http://ln.nbsqjy.com/" class="w33">老年教育学院</a>
+          </ul>
+        </div>
+    </div>
+    
+    <div id="sb10" class="inAdBox abs alpha70w radius20px nrs-t-l nrs-t-r">
+       <div class="w20"><img src="/Templates/Power_Default/images/contents-images/zst.jpg" width="200" height="142"  class="radius10px" /></div>
+        <div class="w80">
+          <ol class="r100">
+                <li class="w30">
+                	<h4><a href="http://www.nbyzdd.cn/" class="w33">鄞州学院</a></h4>
+                    <h5><a href="/Scripts/baidumap.htm?city=宁波市&title=宁波电大鄞州学院&address=宁波市学府路5号&phone=0574-88121069" class="colorbox">地图</a>，电话：0574-88121069</h5>
+               	</li>
+                <li class="w30">
+                	<h4><a href="http://www.yytvu.net/" class="w33">余姚学院</a></h4>
+                    <h5><a href="/Scripts/baidumap.htm?city=宁波市&title=宁波电大余姚学院&address=余姚市大黄桥南路438号&phone=0574-62782229" class="colorbox">地图</a>，电话：0574-62782229</h5>
+                </li>
+                <li class="w30">
+                	<h4><a href="http://www.cxdd.com/" class="w33">慈溪学院</a></h4>
+                    <h5><a href="/Scripts/baidumap.htm?city=宁波市&title=宁波电大慈溪学院&address=慈溪市文二路288号&phone=0574-63919106" class="colorbox">地图</a>，电话：0574-63919106</h5>
+                 </li>
+            </ol>
+            <ol class="r100">
+                <li class="w30"><a href="http://www.nhtvu.net.cn/" class="w33">宁海学院</a>
+                <h5><a href="/Scripts/baidumap.htm?city=宁波市&title=宁波电大宁海学院&address=宁海县跃龙街道银河路181号&phone=0574-65206393" class="colorbox">地图</a>，电话：0574-65206393</h5>
+                </li>
+                <li class="w30">
+                	<h4><a href="http://www.xstvu.com/" class="w33">象山分校</a></h4>
+                    <h5><a href="/Scripts/baidumap.htm?city=宁波市&title=象山分校&address=象山县丹阳路1111号&phone=0574-65766093" class="colorbox">地图</a>，电话：0574-65766093</h5>
+                </li>
+                <li class="w30">
+                	<h4><a href="http://www.fhtvu.net.cn/" class="w33">奉化分校</a></h4>
+                    <h5><a href="/Scripts/baidumap.htm?city=宁波市&title=奉化分校&address=奉化市桃源路110号&phone=0574-88958589" class="colorbox">地图</a>，电话：0574-88958589</h5>
+                </li>
+            </ol>
+            <ol class="r100">
+            	 <li class="w30">
+                	<h4><a href="http://zhdd.nbtvu.net.cn/" class="w33">镇海分校</a></h4>
+                    <h5><a href="/Scripts/baidumap.htm?city=宁波市&title=镇海分校&address=镇海区隧道北路555号&phone=0574-86267633" class="colorbox">地图</a>，电话：0574-86267633</h5>
+                </li>
+            	<li class="w30">
+                	<h4><a href="http://www.blhx.com.cn/" class="w33">北仑分校</a></h4>
+                    <h5><a href="/Scripts/baidumap.htm?city=宁波市&title=北仑分校&address=北仑区恒山路999号&phone=0574-27698590" class="colorbox">地图</a>，电话：0574-27698590</h5>
+                </li>
+               
+                
+                <li class="w30">
+                	<h4><a href="http://jbdd.nbtvu.net.cn/" class="w33">江北工作站</a></h4>
+                    <h5><a href="/Scripts/baidumap.htm?city=宁波市&title=宁波电大江北工作站&address=宁波市江北区慈城镇尚志路31号&phone=0574-87591850" class="colorbox">地图</a>，电话：0574-87591850</h5>
+                </li>
+            </ol>
+        </div>
+    </div>
+        
+    <div id="inAdPanel">
+    	<ul class="p-menu alpha70b colorFFF">
+        	<li class="panel-icons icon-2" data-id="open-edu">开放教育</li>
+            <li class="panel-icons icon-4" data-id="crjy-edu">成人教育</li>
+            <li class="panel-icons icon-5" data-id="gzjy-edu">高职教育</li>
+            <li class="panel-icons icon-3" data-id="wljy-edu">网络教育</li>
+            <li class="panel-icons icon-6" data-id="lnjy-edu">老年教育</li>
+            <li class="panel-icons icon-7" data-id="px-edu">教育培训</li>
+            <li class="panel-icons icon-1" data-id="sqjy-edu">社区教育</li>
+        </ul>
+        
+        <div class="p-subArea alpha80w color000">
+        </div>
+        
+        <div class="hide">
+        	<div id="open-edu">
+                <h2>国家开放大学开放教育</h2>
+<!--                <p>宁波电大开放教育是面向社会公众的学历教育，极有优势的学费标准，网上教学与面授教学相结合的教学形式，全国统一考试，毕业证书教育部电子注册，学历国际承认。</p>
+
+-->
+				<p><span style="font-size:14px;"><span style="color: rgb(0, 0, 0); font-family: simsun;">&nbsp; &nbsp; 本专科学历教育，无须参加成人高考即可报名入学，国家开放大学颁发学历证书，毕业证书教育部电子注册。&nbsp;&nbsp; &nbsp;</span></span></p>
+
+<p><span style="font-size:14px;"><span style="color: rgb(0, 0, 0); font-family: simsun;">&nbsp; &nbsp; 开放教育以现代信息技术为支撑，网上教学与面授教学相结合，主要面向成人开展学历教育。</span></span></p>
+
+                <li><a href="/Apps/PowerCMS/fastShow.aspx?id=11032" class="">2018年春季招生简章</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=11033" class="">开放教育专业列表</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=11" class="colorbox">毕业文凭、学位证书</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=12" class="colorbox">报名方式</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=14" class="colorbox">招生热点问题解答</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=10" class="colorbox">学习地点</a></li>
+                <h5 class="abs right15px bottom10px"><a href="/Apps/PowerCMS/List.aspx?id=6" class="more">更多信息 &gt;&gt;</a></h5>
+            </div>
+            <div id="crjy-edu">
+            	<h2>宁波广播电视大学成人教育</h2>
+                <p>我校成人教育采取全日制（寄宿）学习或业余学习二种方式的教育形式，学员通过国家成人高考后注册入学。</p>
+
+            	<li><a href="/Apps/PowerCMS/fastShow.aspx?id=11248" class="colorbox">2018年成人高等教育专科（业余）招生简章</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=11056" class="">成人高等学历教育简介</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=11042" class="">脱产学习专业列表</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=11041" class="">业余学习专业列表</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=11254" class="colorbox">关于2018春成人教育新生录取信息核对工作的通知</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=13556" class="colorbox">2018年成人高等教育专科学历+技能特色班（脱产）招生简章</a></li>
+                <h5 class="abs right15px bottom10px"><a href="/Apps/PowerCMS/List.aspx?id=47" class="more">更多信息 &gt;&gt;</a></h5>
+            </div>
+            <div id="gzjy-edu">
+            	<h2>宁波教育学院文教路校区高职教育</h2>
+                <p>&nbsp;&nbsp;&nbsp; 宁波教育学院文教路校区对外是一所师资齐全，设备先进，专业培养有特色的办学实体，学校设经济管理系、外语外贸系、文法系、信息系（基础教学部）等四个系部，拥有会计、新闻采编与制作、应用英语、计算机应用、国际经济与贸易5个专业。</p>
+
+            	<li><a href="/Apps/PowerCMS/fastShow.aspx?id=11057" class="">高职教育招生信息</a></li>
+                <h5 class="abs right15px bottom10px"><a href="/Apps/PowerCMS/List.aspx?id=9" class="more">更多信息 &gt;&gt;</a></h5>
+            </div>
+            <div id="wljy-edu">
+            	<h2>著名高校网络教育</h2>
+                <p>网络教育是以互联网为基本教学媒介的学历教育，学员可在方便的时间通过网络自主学习。宁波电大网络教育与国内著名高校合作办学，颁发合作高校文凭。</p>
+
+            	<li><a href="/Apps/PowerCMS/fastShow.aspx?id=11058" class="">网络教育招生信息</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=16" class="colorbox">北京大学：专升本</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=17" class="colorbox">浙江大学：高升专、专升本、专升第二本科</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=18" class="colorbox">东北财经大学：高升本、高起专、专升本</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=19" class="colorbox">南开大学：高升专、专升本</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=20" class="colorbox">中国医科大学：专升本</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=21" class="colorbox">电子科技大学：高升本、专升本</a></li>
+                <h5 class="abs right15px bottom10px"><a href="/Apps/PowerCMS/List.aspx?id=8" class="more">更多信息 &gt;&gt;</a></h5>
+            </div>
+            <div id="lnjy-edu">
+            	<h2>宁波社区大学老年教育中心</h2>
+                <p>我们坚持&ldquo;稳步发展，特色为主，服务为重&rdquo;的原则，以&ldquo;宜学、特色、安全、和谐&rdquo;为目标，办好老年教育，丰富老年生活，使老年人&ldquo;老有所教，老有所学，老有所乐，老有所为&rdquo;，为构建人人乐学、处处可学、时时能学的学习型社会作出积极的贡献。</p>
+
+                <li><a href="/Apps/PowerCMS/fastShow.aspx?id=11059" class="">老年教育2018学年招生简章</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=11243" class="colorbox">2018学年度课程总表</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=11484" class="">老年教育学院官网链接</a></li>
+                <h5 class="abs right15px bottom10px"><a href="/Apps/PowerCMS/List.aspx?id=48" class="more">更多信息 &gt;&gt;</a></h5>
+            </div>
+            <div id="px-edu">
+                <h2>宁波电大继续教育学院</h2>
+                <p>我校继续教育学院是专门从事继续教育、岗位培训和其它非学历继续教育，并负责组织和指导全市电大系统开展非学历继续教育工作的办学和管理机构。</p>
+
+	           <h4><a href="/Apps/PowerCMS/List.aspx?id=86" class="w33">相关网站</a></h4><p>
+               <h4><a href="/Apps/PowerCMS/List.aspx?id=87" class="w33">培训项目简介</a></h4>
+                <h5 class="abs right15px bottom10px"><a href="/Apps/PowerCMS/List.aspx?id=49" class="more">更多信息 &gt;&gt;</a></h5>
+            </div>
+            <div id="sqjy-edu">
+            	<h2>宁波社区教育</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size: 10.5pt; font-family: 宋体; mso-bidi-font-size: 11.0pt; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">为适应新时期宁波社区教育的新需要、终身教育的新发展，</span><span lang="EN-US" style="font-size: 10.5pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; mso-bidi-font-size: 11.0pt; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体">2009</span><span style="font-size: 10.5pt; font-family: 宋体; mso-bidi-font-size: 11.0pt; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">年</span><span lang="EN-US" style="font-size: 10.5pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; mso-bidi-font-size: 11.0pt; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体">10</span><span style="font-size: 10.5pt; font-family: 宋体; mso-bidi-font-size: 11.0pt; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">月，宁波社区大学依托宁波广播电视大学正式成立，确立了业务指导中心、社区培训中心、信息交流中心、资源开发中心、理论研究中心的基本职能，后又根据宁波老年教育的需要，建设了老年教育中心，形成了&ldquo;</span><span lang="EN-US" style="font-size: 10.5pt; font-family: &quot;Calibri&quot;,&quot;sans-serif&quot;; mso-bidi-font-size: 11.0pt; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-fareast-font-family: 宋体">5+1</span><span style="font-size: 10.5pt; font-family: 宋体; mso-bidi-font-size: 11.0pt; mso-ascii-font-family: Calibri; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-fareast; mso-hansi-font-family: Calibri; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: &quot;Times New Roman&quot;; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA">&rdquo;建设发展格局。宁波社区大学在工作中始终坚持&ldquo;立足六大中心建设，服务终身教育发展&rdquo;的理念和目标，不断加强内涵建设，努力提升指导服务能力，积极为完善终身教育体系、创建学习型社会贡献力量。</span></p>
+
+                <li><a href="/Apps/PowerCMS/fastShow.aspx?id=10938" class="">宁波社区教育网</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=10940" class="">宁波终身教育讲师团</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=10939" class="">宁波终身学习网</a></li><li><a href="/Apps/PowerCMS/fastShow.aspx?id=10941" class="">《宁波社区教育》杂志电子版</a></li>
+                <h5 class="abs right15px bottom10px"><a href="/Apps/PowerCMS/List.aspx?id=50" class="more">更多信息 &gt;&gt;</a></h5>
+            </div>
+        </div>
+    </div>
+    
+    <div id="inAdSearch" class="colorFFF radius10px nrs-t-l nrs-t-r alpha70b">
+    	<iframe allowtransparency="true" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" class=" r100" src="/Apps/PowerCMS/SearchBox_Small.aspx?key=宁波广播电视大学"></iframe>
+   </div>
+</div>
+
+
+<!-- 主体开始 -->
+<div id="main" class="r100">
+  
+
+  <!--图片漂浮广告代码开始-->
+<!-- 注释 by lihao on 20170928
+    <div id="demo" style="z-index: 10; left: 186px; position: absolute; top: 138px;" onMouseOver="fly_ctrl=false" onMouseOut="fly_ctrl=true">
+        <a href="" title="">
+            <img height="321" width="240" border="0" style="filter:chroma(color=#ffffff)" src="/Templates/Power_Default/images/flowimg.gif">
+        </a>
+
+        <a><span style="CURSOR:pointer;color:black;font-weight:bold;LEFT:240px; POSITION: absolute; TOP: 0px;" onClick="demo.style.visibility = 'hidden'">关闭</span></a>
+
+    </div>
+-->
+    <!--图片漂浮广告代码结束-->
+<!-- 注释 by lihao on 20170928
+    <div id="demo2" style="z-index: 10; left: 500px; position: absolute; top: 300px;" onMouseOver="fly_ctrl=false" onMouseOut="fly_ctrl=true">
+        <a href="" title="">
+            <img height="321" width="400" border="0" style="filter:chroma(color=#ffffff)" src="/Templates/Power_Default/images/value.jpg">
+        </a>
+
+        <a><span style="CURSOR:pointer;color:black;font-weight:bold;LEFT:400px; POSITION: absolute; TOP: 0px;" onClick="demo2.style.visibility = 'hidden'">关闭</span></a>
+    </div>
+--> 
+   
+   <!--   <div id="demo3" style="z-index: 10; left: 700px; position: absolute; top: 700px;" onMouseOver="fly_ctrl=false" onMouseOut="fly_ctrl=true">
+        <a href="" title="">
+            <img height="321" width="240" border="0" style="filter:chroma(color=#ffffff)" src="/Templates/Power_Default/images/nbwm.jpg">
+        </a>
+
+        <a><span style="CURSOR:pointer;color:black;font-weight:bold;LEFT:240px; POSITION: absolute; TOP: 0px;" onClick="demo3.style.visibility = 'hidden'">关闭</span></a>
+    </div>-->
+    <!--第一屏 新闻 开始-->
+    <div class="r1200px" id="box-1">
+    	<div class="r100 bgFFF floatleft">
+        
+            <div class="w40">
+            	<div class="newsbox" id="newsbox-1">
+                	<h2 class="rel clear r100">
+                    	<div class="newsControlBar Current" newsbox="newsbox-1" newslist="newslist-1" newsmore="newsmore-1">校园动态</div>
+                        	<div class="newsControlBar" newsbox="newsbox-1" newslist="newslist-6" newsmore="newsmore-6">专题聚焦</div>
+                        <div class="newsControlBar" newsbox="newsbox-1" newslist="newslist-2" newsmore="newsmore-2">校务公开</div>
+                        <a href="/Apps/PowerCMS/List.aspx?id=31" class="abs more" id="newsmore-1">更多&gt;&gt;</a>
+                         <a href="/Apps/PowerCMS/List.aspx?id=138" class="abs more hide" id="newsmore-6">更多&gt;&gt;</a>
+                        <a href="/Apps/PowerCMS/List.aspx?id=38" class="abs more hide" id="newsmore-2">更多&gt;&gt;</a>
+                    </h2>
+                    <ul id="newslist-1">
+                        <li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13764">经管系“求实”调查小组发布新作</a></div>
+    <div class="w25 textright">2018-5-25</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13767">文法系赴东钱湖新闻中心洽谈合作</a></div>
+    <div class="w25 textright">2018-5-25</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13766">我校举办“红五月”专场文艺晚会</a></div>
+    <div class="w25 textright">2018-5-25</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13765">文法系开展网络传播专业建设调研</a></div>
+    <div class="w25 textright">2018-5-25</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13762">教务处组织慕课资源建设培训会</a></div>
+    <div class="w25 textright">2018-5-24</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13761">科研处举办课题研究论证会</a></div>
+    <div class="w25 textright">2018-5-24</div>
+</li>
+                    </ul>
+                    <ul id="newslist-6" class="hide">
+                        <li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=12946">自主 自省 自励  宁海电大坚持“师德自我养成”教育七年</a></div>
+    <div class="w25 textright">2017-10-20</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=12930">【喜迎十九大】“始终同人民想在一起、干在一起”</a></div>
+    <div class="w25 textright">2017-10-18</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=12907">做一个红色的传道者——记宁波电大宁海学院院长童富军</a></div>
+    <div class="w25 textright">2017-10-12</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=12837">投身创建文明城市“五连冠”倡议书</a></div>
+    <div class="w25 textright">2017-10-11</div>
+</li>
+                    </ul>
+                    <ul id="newslist-2" class="hide">
+                        <li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13745">关于巡视整改情况的通报</a></div>
+    <div class="w25 textright">2018-5-18</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13744">关于公布基层党组织星级评定结果和民主评议优秀共产党员名单的通知</a></div>
+    <div class="w25 textright">2018-5-18</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13619">关于举办宁波广播电视大学第四届教师教学技能竞赛的通知</a></div>
+    <div class="w25 textright">2018-4-24</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13663">关于召开共青团宁波广播电视大学第十一次代表大会请示的批复</a></div>
+    <div class="w25 textright">2018-4-24</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13662">关于印发2018年反腐倡廉建设工作要点的通知</a></div>
+    <div class="w25 textright">2018-4-24</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13661">中共宁波广播电视大学委员会关于公布基层党组织星级评定结果和民主评议优秀共产党员名单的通知</a></div>
+    <div class="w25 textright">2018-4-24</div>
+</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="w40">
+            	<div class="newsbox" id="newsbox-2">
+                	<h2 class="rel clear r100">
+                    	<div class="newsControlBar Current" newsbox="newsbox-2" newslist="newslist-3" newsmore="newsmore-3">通知公告</div>
+                        <div class="newsControlBar" newsbox="newsbox-2" newslist="newslist-4" newsmore="newsmore-4">系统动态</div>
+                         <div class="newsControlBar" newsbox="newsbox-2" newslist="newslist-5" newsmore="newsmore-5">采购公告</div>
+                        <a href="/Apps/PowerCMS/List.aspx?id=37" class="abs more" id="newsmore-3">更多&gt;&gt;</a>
+                        <a href="/Apps/PowerCMS/List.aspx?id=30" class="abs more hide" id="newsmore-4">更多&gt;&gt;</a>
+                         <a href="/Apps/PowerCMS/List.aspx?id=88" class="abs more hide" id="newsmore-5">更多&gt;&gt;</a>
+                    </h2>
+                    <ul id="newslist-3">
+                <li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13700">[置顶]关于做好我校2018年高校教师专业技术职务评聘工作的预通知</a></div>
+    <div class="w25 textright">2018-5-16</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13749">关于做好2018年宁波市优秀教师人选推荐工作的通知</a></div>
+    <div class="w25 textright">2018-5-22</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13735">关于做好2019年度浙江省哲学社会科学规划课题申报工作的通知</a></div>
+    <div class="w25 textright">2018-5-16</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13736">关于做好2019年度省社科联研究课题申报工作的通知</a></div>
+    <div class="w25 textright">2018-5-16</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13734">关于申报2018年度统一战线理论招标 课题的通知</a></div>
+    <div class="w25 textright">2018-5-16</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13729">中共宁波电大党委理论学习中心组会议通知</a></div>
+    <div class="w25 textright">2018-5-16</div>
+</li>
+                <!--        <li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13700">关于做好我校2018年高校教师专业技术职务评聘工作的预通知</a></div>
+    <div class="w25 textright">2018-5-16</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13749">关于做好2018年宁波市优秀教师人选推荐工作的通知</a></div>
+    <div class="w25 textright">2018-5-22</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13735">关于做好2019年度浙江省哲学社会科学规划课题申报工作的通知</a></div>
+    <div class="w25 textright">2018-5-16</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13736">关于做好2019年度省社科联研究课题申报工作的通知</a></div>
+    <div class="w25 textright">2018-5-16</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13734">关于申报2018年度统一战线理论招标 课题的通知</a></div>
+    <div class="w25 textright">2018-5-16</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13729">中共宁波电大党委理论学习中心组会议通知</a></div>
+    <div class="w25 textright">2018-5-16</div>
+</li>-->
+                    </ul>
+                    <ul id="newslist-4" class="hide">
+                        <li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13768">国家开放大学召开土建水利类专业教学工作研讨会</a></div>
+    <div class="w25 textright">2018-5-26</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13750">余姚电大召开教学工作会议</a></div>
+    <div class="w25 textright">2018-5-22</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13738">“长者文化教育”主题论坛举办 国家开放大学介绍远程老年教育探索</a></div>
+    <div class="w25 textright">2018-5-17</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13732">“高等职业教育学习成果积累与转换试点”物流管理专业项目启动</a></div>
+    <div class="w25 textright">2018-5-16</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13731">国家开放大学搭建丰富资源服务老年学历教育</a></div>
+    <div class="w25 textright">2018-5-16</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13730">国家开放大学探讨机器人专业建设 助力新工科建设</a></div>
+    <div class="w25 textright">2018-5-16</div>
+</li>
+                    </ul>
+                     <ul id="newslist-5" class="hide">
+                        <li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13771">宁波广播电视大学财务收费管理系统定制开发项目采购公告</a></div>
+    <div class="w25 textright">2018-5-28</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13770">宁波广播电视大学照相机及镜头采购项目（DZJJ20180509-1388）网上竞价成交公告</a></div>
+    <div class="w25 textright">2018-5-28</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13701">宁波广播电视大学终身教育大楼工程设计、代建、旧房拆除招标代理机构招标项目中标公示</a></div>
+    <div class="w25 textright">2018-5-08</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13686">宁波广播电视大学非编网升级媒资存储设备采购（DZJJ20180417-1024）网上竞价成交公告</a></div>
+    <div class="w25 textright">2018-5-02</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13677">宁波广播电视大学 终身教育大楼工程设计、代建、旧房拆除 招标代理机构招标项目预中标公示</a></div>
+    <div class="w25 textright">2018-4-27</div>
+</li><li>
+	<div class="w75 ov-hide"><a href="/Apps/PowerCMS/Show.aspx?id=13612">学生宿舍脸盆架采购中标公示</a></div>
+    <div class="w25 textright">2018-4-20</div>
+</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="w20" id="channels">
+            	<div class="radius10px div-link channels-1" href="/Apps/PowerCMS/Channel.aspx?id=visitor"></div>
+                <div class="radius10px div-link channels-2" href="/Apps/PowerCMS/Channel.aspx?id=student"></div>
+                <div class="radius10px div-link channels-3" href="/Apps/PowerCMS/Channel.aspx?id=teacher"></div>
+            </div>
+        </div>
+    </div>
+    <!--第一屏 新闻 结束-->
+      <div class="r1200px">
+     <img src="/Templates/Power_Default/images/three.gif" width="1200" height="150">
+     </div>
+    <!--第二屏 教育类型 开始-->
+    <div class="r1200px bgEEE" id="box-2">
+    	<div id="edu-icons">
+        	<div class="edu-icon icon-1 msg cursorPointer" href="/Apps/PowerCMS/Apply.aspx?page=edutype-contents.htm #kfjy"><h4>开放教育</h4></div>
+            <div class="edu-icon icon-3 msg cursorPointer" href="/Apps/PowerCMS/Apply.aspx?page=edutype-contents.htm #crjy"><h4>成人教育</h4></div>
+            <div class="edu-icon icon-4 msg cursorPointer" href="/Apps/PowerCMS/Apply.aspx?page=edutype-contents.htm #gzjy"><h4>高职教育</h4></div>
+            <div class="edu-icon icon-2 msg cursorPointer" href="/Apps/PowerCMS/Apply.aspx?page=edutype-contents.htm #wlyj"><h4>网络教育</h4></div>
+            <div class="edu-icon icon-5 msg cursorPointer" href="/Apps/PowerCMS/Apply.aspx?page=edutype-contents.htm #lnjy"><h4>老年教育</h4></div>
+            <div class="edu-icon icon-6 msg cursorPointer" href="/Apps/PowerCMS/Apply.aspx?page=edutype-contents.htm #jypx"><h4>教育培训</h4></div>
+            <div class="edu-icon icon-7 msg cursorPointer" href="/Apps/PowerCMS/Apply.aspx?page=edutype-contents.htm #sqjy"><h4>社区教育</h4></div>
+        </div>
+        
+        <div id="edu-helps" class="w100 textcenter alpha70b colorFFF radius10px"><span>我的学习我选择:</span><span class="helpes helps-1"><a href="/Apps/Prof/Select.aspx?set=1" class="msg-iframe">上大学拿文凭</a></span><span class="helpes helps-2"><a href="/Apps/Prof/Select.aspx?set=2" class="msg-iframe">我要参加培训</a></span><span class="helpes helps-3"><a href="/Apps/Prof/Select.aspx?set=3" class="msg-iframe">我要读老年大学</a></span></div>
+    </div> 
+    <!--第二屏 教育类型 结束-->
+    
+    <!--第三屏 服务中心 开始-->
+    <div class="r1200px" id="box-3">
+    	<div class="r100 bgFFF floatleft p14px np-t np-l np-r">
+            <div class="w60">
+           		<h4 class="lh40px">招生信息与服务</h4>
+                <ul class="radius10px" id="b3ul1">
+                <li><a href="/Apps/PowerCMS/Show.aspx?id=11083">国家开放大学开放教育招生信息</a></li><li><a href="/Apps/PowerCMS/Show.aspx?id=11043">国家开放大学开放教育（白日班）招生信息</a></li><li><a href="/Apps/PowerCMS/Show.aspx?id=11052">宁波教育学院高等职业教育招生信息</a></li><li><a href="/Apps/PowerCMS/Show.aspx?id=11048">宁波电大成人高等教育专科招生信息</a></li><li><a href="/Apps/PowerCMS/Show.aspx?id=11047">著名高校网络教育招生(北京大学、浙江大学、对外经济贸易大学、东北财经大学、南开大学)</a></li><li><a href="/Apps/PowerCMS/Show.aspx?id=11044">宁波广播电视大学各类教育类型收费标准</a></li><li><a href="/Apps/PowerCMS/Show.aspx?id=11046">宁波社区大学老年教育招生信息</a></li><li><a href="/Apps/PowerCMS/Show.aspx?id=11045">宁波电大非学历培训项目介绍</a></li>
+                </ul>
+            </div>
+            
+          	<div class="w40">
+           		<h4 class="lh40px">咨询服务</h4>
+<ul class="radius10px">
+    <li>
+    	<span class="name">教务处[教学考试]：</span>
+        <span class="web"><a href="http://jwc.nbtvu.net.cn">主页</a></span>
+        <span class="phone">87211651</span>
+        <span class="mail" onClick="mailTo('jwc@nbtvu.net.cn');" title="向此部门发送邮件">&nbsp;</span>
+        <span class="qq" id="QQ1" onClick="tencentTo('472600499','www.nbtvu.net.cn');" title="通过QQ咨询"><img src="http://wpa.qq.com/pa?p=1:472600499:4" /></span>
+    </li>
+    <li>
+        <span class="name">开放网络学院[招生综合]：</span>
+        <span class="web"><a href="http://kfxy.nbtvu.net.cn">主页</a></span>
+        <span class="phone">87221247</span>
+        <span class="mail" onClick="mailTo('kfxy@nbtvu.net.cn');" title="向此部门发送邮件">&nbsp;</span>
+        <span class="qq" id="QQ1" onClick="tencentTo('42575498','www.nbtvu.net.cn');" title="通过QQ咨询"><img src="http://wpa.qq.com/pa?p=1:472600499:4" /></span>
+    </li>
+    <li>
+        <span class="name">成教学院[成人教育]：</span>
+        <span class="web"><a href="http://cjxy.nbtvu.net.cn">主页</a></span>
+        <span class="phone">87200027</span>
+        <span class="mail" onClick="mailTo('cjxy@nbtvu.net.cn');" title="向此部门发送邮件">&nbsp;</span>
+        <span class="qq" id="QQ1" onClick="tencentTo('605013356','www.nbtvu.net.cn');" title="通过QQ咨询"><img src="http://wpa.qq.com/pa?p=1:472600499:4" /></span>
+    </li>
+    <li>
+        <span class="name">继教学院[继教、老年]：</span>
+        <span class="web"><a href="http://jjxy.nbtvu.net.cn">主页</a></span>
+        <span class="phone">87220845</span>
+        <span class="mail" onClick="mailTo('jxjy@nbtvu.net.cn');" title="向此部门发送邮件">&nbsp;</span>
+        <span class="qq" id="QQ1" onClick="tencentTo('5120902','www.nbtvu.net.cn');" title="通过QQ咨询"><img src="http://wpa.qq.com/pa?p=1:472600499:4" /></span>
+    </li>
+    <li>
+        <span class="name">文法系[中文法学新闻]：</span>
+        <span class="web"><a href="http://zwx.nbtvu.net.cn">主页</a></span>
+        <span class="phone">87222378</span>
+        <span class="mail" onClick="mailTo('zwx@nbtvu.net.cn');" title="向此部门发送邮件">&nbsp;</span>
+        <span class="qq" id="QQ1" onClick="tencentTo('492400629','www.nbtvu.net.cn');" title="通过QQ咨询"><img src="http://wpa.qq.com/pa?p=1:472600499:4" /></span>
+    </li>
+    <li>
+        <span class="name">外语外贸系[外语类]：</span>
+        <span class="web"><a href="http://wyx.nbtvu.net.cn">主页</a></span>
+        <span class="phone">87226039</span>
+        <span class="mail" onClick="mailTo('zwx@nbtvu.net.cn');" title="向此部门发送邮件">&nbsp;</span>
+        <span class="qq" id="QQ1" onClick="tencentTo('9481677','www.nbtvu.net.cn');" title="通过QQ咨询"><img src="http://wpa.qq.com/pa?p=1:472600499:4" /></span>
+    </li>
+    <li>
+        <span class="name">经管系[经济类]：</span>
+        <span class="web"><a href="http://jgx.nbtvu.net.cn">主页</a></span>
+        <span class="phone">87225624</span>
+        <span class="mail" onClick="mailTo('jgx@nbtvu.net.cn');" title="向此部门发送邮件">&nbsp;</span>
+        <span class="qq" id="QQ1" onClick="tencentTo('2351043670','www.nbtvu.net.cn');" title="通过QQ咨询"><img src="http://wpa.qq.com/pa?p=1:472600499:4" /></span>
+    </li>
+    <li class="last">
+        <span class="name">信息系基础部[工科]：</span>
+        <span class="web"><a href="http://its.nbtvu.net.cn">主页</a></span>
+        <span class="phone">87200007</span>
+        <span class="mail" onClick="mailTo('lgb@nbtvu.net.cn');" title="向此部门发送邮件">&nbsp;</span>
+        <span class="qq" id="QQ1" onClick="tencentTo('809121501','www.nbtvu.net.cn');" title="通过QQ咨询"><img src="http://wpa.qq.com/pa?p=1:472600499:4" /></span>
+    </li>
+</ul>
+            </div>
+            
+       </div>
+    </div>
+    <!--第三屏 服务中心 结束-->
+    
+    <!--第五屏 学生频道 开始-->
+    <div class="r1200px" id="box-5">
+    	<div class="r100" id	="v-title"><h2>学校介绍与课程试学</h2><h3><a href="http://www.nbtvu.net.cn/Apps/PowerCMS/Course_more.aspx" target="_blank">更多课程资源&gt;&gt;</a></h3></div>
+    	<div id="v-left">
+        	<div id="v-box"><iframe frameborder="no" style=" width:100%; height:305px;" allowtransparency="true" scrolling="auto" src="http://www.nblll.cn/Player.aspx?play=0&URL=/UserFiles/nblllServices/国家开放大学宁波辅警学院成立.mp4&cover=http://video.nblll.cn:8722/UserFiles/nblllServices/国家开放大学宁波辅警学院成立.mp4.jpg"></iframe></div>
+            <div id="v-name">正在播放：国家开放大学宁波辅警学院成立</div>
+        </div>
+        <div id="v-right">
+        	<ul class="courses bgFFF radius10px ov-hide">
+<li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/国家开放大学宁波辅警学院成立.mp4" cover-url="http://video.nblll.cn:8722/UserFiles/nblllServices/国家开放大学宁波辅警学院成立.mp4.jpg">国家开放大学宁波辅警学院成立</a></span><span  class="vl-author" >宣传部</span></li>
+		<li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/宁波电大网络传播学院成立仪式视频新闻.mp4" cover-url="http://video.nblll.cn:8722/UserFiles/nblllServices/宁波电大网络传播学院成立仪式视频新闻.mp4.jpg">宁波电大网络传播学院成立</a></span><span class="vl-author">宣传部 信息中心</span></li>
+<li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/2012/12/11/505894/flash/开放课程2014/余先虎.mp4" cover-url="">开放教育自主学习导学</a></span><span class="vl-author">余先虎</span></li>
+            <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/宁波华侨学院成立.mp4" cover-url="http://video.nblll.cn:8722/UserFiles/nblllServices/宁波华侨学院成立.mp4.jpg">宁波华侨学院成立</a></span><span class="vl-author">宣传部 信息中心</span></li>
+            <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/01.mp4" cover-url="">市场营销学-市场营销基本概念</a></span><span class="vl-author">王荷琴</span></li>
+ <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/2012/12/11/505894/flash/2015培训/学校宣传片/学习支持网上服务平台.mp4" cover-url="http://video.nblll.cn:8722/UserFiles/2012/12/11/505894/flash/2015培训/学校宣传片/学习支持网上服务平台.mp4.jpg">宁波电大网上学习支持服务体系</a></span><span class="vl-author">信息中心</span></li>
+<li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/MicroCourse/Video/2015q/4/1.mp4" cover-url="">会声会影视频编辑入门</a></span><span class="vl-author">陈焕旦</span></li>
+ <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/2012/12/11/505894/flash/2015培训/学校宣传片/宁波终身学习公共服务平台.mp4" cover-url="">宁波终身学习公共服务平台</a></span><span class="vl-author">信息中心</span></li> 
+  <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/MicroCourse/Video/2015q/1/1.mp4" cover-url="">图的最短路径</a></span><span class="vl-author">冯姚震</span></li>
+            <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/MicroCourse/Video/gkdx/jr.mp4" cover-url="">如何进入国家开放大学学习平台</a></span><span class="vl-author">国开</span></li>
+        <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/2014/11/7/2340924/flash/终稿-苗会永.mp4" cover-url="">会计从业资格考试导学</a></span><span class="vl-author">苗会永</span></li>
+            <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/MicroCourse/Video/gkdx/hd.mp4" cover-url="">如何在国开学习平台上进行互动学习</a></span><span class="vl-author">国开</span></li>
+         <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/MicroCourse/Video/2015q/7/1.mp4" cover-url="">实用英语餐饮篇</a></span><span class="vl-author">李婷</span></li>
+              <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/成人教育学院宣传片.mp4" cover-url="">成人教育学院宣传片</a></span><span class="vl-author">成人教育学院</span></li>
+           <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/2014/11/7/2340924/flash/终稿-甘志军.mp4" cover-url="">《数控编程技术》复习备考指南</a></span><span class="vl-author">甘志军</span></li>
+            <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/会计专业招生宣传.mp4" cover-url="">会计专业招生宣传</a></span><span class="vl-author">经管系</span></li>
+   <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/MicroCourse/Video/2015q/27/1.mp4" cover-url="">﻿明朝的司法机关﻿</a></span><span class="vl-author">﻿﻿王彬</span></li>
+               <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/计算机应用专业招生宣传.mp4" cover-url="">计算机应用专业招生宣传</a></span><span class="vl-author">信息系</span></li>
+           <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/music/1.mp4" cover-url="">音乐欣赏[1]</a> <a href="javascript:;" data-url="/UserFiles/nblllServices/music/2.mp4" cover-url="">[2]</a> <a href="javascript:;" data-url="/UserFiles/nblllServices/music/3.mp4" cover-url="">[3]</a></span><span class="vl-author">白鹰</span></li>
+           <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/国际经济与贸易专业招生宣传.mp4" cover-url="">国际经济与贸易专业招生宣传</a></span><span class="vl-author">外语外贸系</span></li>
+             <li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/body/1.腿部练习.mp4" cover-url="">艺术健身[1]</a> <a href="javascript:;" data-url="/UserFiles/nblllServices/body/2.胸髋部练习.mp4" cover-url="">[2]</a> <a href="javascript:;" data-url="/UserFiles/nblllServices/body/3.气息形体.mp4" cover-url="">[3]</a></span><span class="vl-author">张斌</span></li>
+<li><span class="vl-name"><a href="javascript:;" data-url="/UserFiles/nblllServices/新闻采编与制作专业招生宣传.mp4" cover-url="">新闻采编与制作专业招生宣传</a></span><span class="vl-author">文法系</span></li>
+
+           
+            </ul>
+        </div>
+        
+    </div>
+    <!--第五屏 学生频道 结束--> 
+
+	<!--第六屏 网站导航 开始-->
+    <div class="r1200px" id="box-6">
+    	<div class="r100 bgFFF floatleft p10px np-l np-r">
+            <div class="w33">
+            	<h4 class="p5px">校园导航</h4>
+            	<ul class="radius5px">
+                    <!--<div id="snav1" class="snav radius5px"><a href="/Templates/Power_Default/3dmap.htm" class="w100 lh30px m0px alpha70b">校园地图</a></div>-->
+                    <div id="snav1" class="snav radius5px"><a href="http://www.nbtvu.net.cn/Templates/Power_Default/static-contents/network.html" class="w100 lh30px m0px alpha70b">办学网络</a></div>
+                    <div id="snav2" class="snav"><a href="/Scripts/baidumap.htm" class="w100 lh30px m0px alpha70b colorbox-small">我要去电大</a></div>
+                    <div id="snav3" class="snav radius5px nrs-t-l nrs-t-r"><a href="http://drc.nbtvu.net.cn/" class="w100 lh30px m0px radius5px nrs-t-l nrs-t-r alpha70b">远程接待中心</a></div>
+                </ul>
+            </div>
+            <div class="w34">
+           		<h4 class="p5px">部门网站</h4>
+            	<ul class=" bgEEE radius5px">
+                    <li>
+                        <a href="http://xb.nbtvu.net.cn" class="w34">党办校办宣传部</a>
+                    	<a href="http://jw.nbtvu.net.cn" class="w33">纪律检查委员会</a>
+                        <a href="http://rsc.nbtvu.net.cn/" class="w33">人事处</a>
+                    </li>
+                    <li>
+                    	<a href="http://jwc.nbtvu.net.cn/" class="w33">教务处</a>
+                        <a href="http://kyc.nbtvu.net.cn" class="w33">科研处</a>
+                        <a href="http://cwc.nbtvu.net.cn/" class="w33">财务处</a>
+                    </li>
+                    <li>
+                        <a href="http://bwc.nbtvu.net.cn/" class="w33">总务处保卫处</a>
+                        <a href="http://center.nbtvu.net.cn/" class="w34 fs12px">信息与教学资源中心</a>
+                        <a href="http://tsg.nbtvu.net.cn/" class="w33">图书馆</a>                        
+                    </li>
+                    <li>
+                        <a href="http://xgb.nbtvu.net.cn/" class="w34">学工部学生处团委</a>
+                        <a href="http://kfxy.nbtvu.net.cn/" class="w33">开放教育学院</a>
+                        <a href="http://wljyxy.nbtvu.net.cn/" class="w33">网络教育学院</a>
+                    </li>
+                    <li>
+                        <a href="http://cjxy.nbtvu.net.cn/" class="w33">成人教育学院</a>
+                        <a href="http://jjxy.nbtvu.net.cn/" class="w33">继续教育学院</a>
+                        <a href="http://ln.nbsqjy.com/" class="w34">老年教育学院</a>
+                    </li>
+                    <li>
+                        <a href="http://jgx.nbtvu.net.cn/" class="w33">经济管理系</a>
+                        <a href="http://wyx.nbtvu.net.cn/" class="w34">外语外贸系</a>
+                        <a href="http://zwx.nbtvu.net.cn/" class="w33">文法系</a>
+                    </li>
+                    <li class="last">
+                        <a href="http://its.nbtvu.net.cn/" class="w33 ">信息系基础教学部</a>
+                        <a href="http://gh.nbtvu.net.cn/" class="w33">工会</a>
+                          <a href="http://zsjy.nbtvu.net.cn/" class="w34">终身教育处</a>
+                    </li>
+                </ul>
+            </div>
+          <div class="w33" id="ServicesBox">
+           		<h4 class="p5px">信息系统</h4>
+            	<ul class=" bgEEE radius5px">
+                    <li>
+                        <a href="http://oeetmn.nbtvu.net.cn/" class="w33">入学测试</a>
+                        <a href="http://sis.nbtvu.net.cn/" class="w34">学生综合信息系统</a>
+                        <a href="http://mis.nbtvu.net.cn/" class="w33">MIS教师版</a>
+                    </li>
+                    <li>
+                        <a href="http://www.ouchn.cn/" class="w34">国开学习网</a>
+                        <a href="http://www.openedu.com.cn/" class="w33">中央电大电大在线</a>
+                    	<a href="http://iclass.nbtvu.net.cn/" class="w33">网上课堂</a>
+                     </li>
+                     <li>   <a href="http://erc.nbtvu.net.cn/" class="w33">全媒体资源平台</a>
+                    
+                    
+                        <a href="http://avol.nbtvu.net.cn:8080/" class="w33">双向视频</a>
+                        <a href="http://evod.nbtvu.net.cn/" class="w33">课件点播</a>                        
+ <!--                       <a href="http://tol.nbtvu.net.cn/" class="w34">语音答疑</a>-->
+  </li>
+                     <li>    <a href="http://old.nbtvu.net.cn/yxkj/" class="w33">网络课程</a>
+                   
+                   
+                        <a href="/Templates/Power_Default/jwSelect.html" class="w33 colorbox">教务管理</a>
+                        <a href="/Templates/Power_Default/jwSelect.html" class="w33 colorbox">教材管理</a>                  </li>
+                      <li>   <a href="http://tsg.nbtvu.net.cn/DZWX/index.asp" class="w33">电子文献</a>
+                   
+                   
+                    	<a href="http://mail.nbtvu.net.cn" class="w33">电子邮局</a>
+                        <a href="http://wqs.nbtvu.net.cn" class="w34">工资查询</a>
+                     </li>  <li> 
+                                       
+                    
+                        <a href="http://jwc.nbtvu.net.cn/gdsxxgl/userlogin.asp" class="w33">“两随”教务管理</a>
+                        <a href="http://jwc.nbtvu.net.cn/workload/userlogin_for_teachers.asp" class="w33">教师工作量</a>
+			 <a href="http://jwc.nbtvu.net.cn/workload/userlogin_wp.asp" class="w33">外聘教师信息库</a>
+                     </li>    <li class="last"> 
+                 
+                    
+                    	<a href="http://device.nbtvu.net.cn" class="w33">设备管理系统</a>
+                        <a href="http://jwc.nbtvu.net.cn/zsxxgl/userlogin.asp" class="w33">招生信息管理</a>
+<a href="http://i.nbtvu.net.cn" class="w33">数字校园（测试）</a>
+                    </li>
+                </ul>
+            </div>
+       </div>
+    </div>
+    <!--第六屏 网站导航 结束-->
+    
+   
+	<!--第七屏 专题网站 开始-->
+    <div class="r1200px" id="box-7">
+    	
+    	<div class="r100 bgFFF floatleft p10px np-l np-r" id="SpecialSites">
+        <div id="jumpLinks" class="r80">
+        	<div class="w25 textcenter"><script language="javascript">fx();</script></div>
+            <div class="w25 textcenter"><script language="javascript">listschool();</script></div>
+            <div class="w25 textcenter"><script language="javascript">site();</script></div>
+            <div class="w25 textcenter"><script language="javascript">edu();</script></div>
+        </div>
+        <div class="r100 p20px np-t np-b">
+        	<div class="sp radius10px" id="sp1"><a href="http://kyc.nbtvu.net.cn/tougaoshuoming" class="alpha60b">宁波电大学报</a></div>
+            <div class="sp radius10px" id="sp10"><a href="http://www.nbtvu.net.cn/kyjfgk/index_new.asp" class="alpha60b">科研经费公开</a></div>
+            <div class="sp radius10px" id="sp3"><a href="http://lxyz.nbtvu.net.cn/" class="alpha60b">“两学一做”学习教育</a></div>
+            <div class="sp radius10px" id="sp9"><a href="http://qzlx.nbtvu.net.cn/" class="alpha60b">党的群众路线教育</a></div>
+            <div class="sp radius10px" id="sp4"><a href="http://gh.nbtvu.net.cn" class="alpha60b">教工之家</a></div>
+        </div>
+        <div class="r100 p20px np-t">
+        	<div class="sp radius10px" id="sp12"><a href="http://wlaq.nbtvu.net.cn/" class="alpha60b">网络安全技术人员教育</a></div>
+            <!--<div class="sp radius10px" id="sp12"><a href="http://www.ouchn.edu.cn/" class="alpha60b">国家开放大学</a></div>-->
+            <div class="sp radius10px" id="sp6"><a href="http://jdjy.nbtvu.net.cn/" class="alpha60b">宁波市禁毒远程学习网</a></div>
+            <div class="sp radius10px" id="sp7"><a href="http://www.nbsqjy.com/" class="alpha60b">宁波社区教育网</a></div>
+            <div class="sp radius10px" id="sp8"><a href="http://www.nblll.cn/" class="alpha60b">宁波终身学习网</a></div>
+            <div class="sp radius10px" id="sp11"><a href="http://lndd.nblll.cn/" class="alpha60b">宁波市老年电视大学</a></div>
+        </div>
+        
+        
+       </div>
+    </div>
+    <!--第七屏 专题网站 结束-->
+    
+</div>
+<!--主体结束-->
+
+
+<div id="feeter" class="r100 rel">
+	<div class="r1200px textcenter lh30px color333 p10px">
+        <div class="colorFFF">Copyright © 2014-2018 宁波广播电视大学 版权所有</div>
+        <div class="colorFFF">浙ICP备05015663号-1 宁波广播电视大学信息与教学资源中心制作维护 地址：宁波市文教路1号（315016）</div>
+        <div class="colorFFF">﻿<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33020502000021" style="display:inline-block;text-decoration:none;"><img src="/Templates/Power_Default/images/gonganbeian.png" style="float:left; margin-top:5px;"/><p style="color:#FFF; width:240px;">浙公网安备 33020502000021号</p></a> 您是第 30548230 位访问者</div>
+        <div id="bszs"><span id="_ideConac"></span><span class="erweima"><img src="/Templates/Power_Default/images/erweima.jpg"></span></div>
+        
+    </div>
+    <div class=" alpha70b r100 abs bottom0 lh30px">
+    	<div class="r1200px colorEEE textcenter"><a href="mailto:xb@nbtvu.net.cn">校长信箱</a> | <a href="mailto:jxdd@crtvu.edu.cn">中央电大教学督导信箱</a> | <a href="mailto:webmaster@nbtvu.net.cn">网站管理员信箱</a> | <a href="http://old.nbtvu.net.cn">查看旧版</a> </div>
+    </div>
+</div>
+
+
+
+
+<!--
+<script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa74a68b40354bd4f5625b2b6ed0435b9' type='text/javascript'%3E%3C/script%3E")) </script>
+-->
+<style type="text/css">
+.skdslider .slide-desc{ left:60%; right:0px; bottom:60px;}
+</style>
+
+<div class="MsgLayer alpha60b">
+	<div class="MsgLayer-body radius10px alpha90w"></div>
+    ﻿<iframe allowtransparency="true" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" class="MsgLayer-iframe radius10px alpha90w" src="about:blank"></iframe>
+    <div class="MsgLayer-Btn radius10px alpha90b"></div>
+</div>
+
+</body>
+</html>

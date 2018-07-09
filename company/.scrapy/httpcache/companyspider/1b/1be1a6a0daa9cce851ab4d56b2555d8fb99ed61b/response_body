@@ -1,0 +1,1093 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>广西师范大学漓江学院首页</title>
+    <link href="/Templets/Gxljweb/css/style_index2.css" rel="stylesheet" type="text/css" />
+    <link href="/Templets/Gxljweb/css/base2.css" rel="stylesheet" type="text/css" />
+    <link href="/Templets/Gxljweb/css/font2.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/Templets/Gxljweb/js/jquery-latest.min.js"></script>
+
+    <script type="text/javascript" src="/Templets/Gxljweb/js/pptBox.js"></script>
+
+    <script type="text/javascript" src="/Templets/Gxljweb/js/hover.js"></script>
+
+    <script type="text/javascript">
+    <!--下拉菜单js-->
+    <!--
+    var timeout     = 500;
+    var closetimer  = 0;
+    var ddmenuitem  = 0;
+
+    // open hidden layer
+    function mopen(id)
+    {	
+	    // cancel close timer
+	    mcancelclosetime();
+
+	    // close old layer
+	    if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	    // get new layer and show it
+	    ddmenuitem = document.getElementById(id);
+	    ddmenuitem.style.visibility = 'visible';
+
+    }
+    // close showed layer
+    function mclose()
+    {
+	    if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+    }
+
+    // go close timer
+    function mclosetime()
+    {
+	    closetimer = window.setTimeout(mclose, timeout);
+    }
+
+    // cancel close timer
+    function mcancelclosetime()
+    {
+	    if(closetimer)
+	    {
+		    window.clearTimeout(closetimer);
+		    closetimer = null;
+	    }
+    }
+
+    // close layer when click-out
+    document.onclick = mclose; 
+    // -->
+
+    <!--加入搜藏-->
+
+    function show_confirm()
+    {
+        var r=confirm("是否加入收藏");
+        if (r==true)
+        {
+            alert("已添加");
+        }
+    }
+
+    </script>
+
+    <!--列表带有new样式-->
+
+    <script type="text/javascript">
+        function isnew(maxdays, addDate) {
+            var oldDate = new Date(addDate);
+            var newDate = new Date();
+            var maxdaysold = maxdays * 24 * 60 * 60 * 1000;
+            if ((newDate.getTime() - oldDate.getTime()) <= maxdaysold) {
+                return true;
+            }
+            return false;
+        }
+
+        window.onload = function bb() {
+            var ts = document.getElementById("zxxw1").getElementsByTagName("table");
+            for (var i = 0; i < ts.length; i++) {
+                var t = ts[i];
+                if (t.className == "table") {
+                    var tdimg = ts[i].rows[0].cells[1];
+                    var tempdate = ts[i].rows[0].cells[2].innerText.replace("-", "/");
+                    if (isnew(3, tempdate)) {
+                        tdimg.innerHTML += '<img src="/Templets/Gxljweb/images/News.gif"/>';
+                    }
+                }
+            }
+            var ts = document.getElementById("zxxw2").getElementsByTagName("table");
+            for (var i = 0; i < ts.length; i++) {
+                var t = ts[i];
+                if (t.className == "table") {
+                    var tdimg = ts[i].rows[0].cells[1];
+                    var tempdate = ts[i].rows[0].cells[2].innerText.replace("-", "/");
+                    if (isnew(3, tempdate)) {
+                        tdimg.innerHTML += '<img src="/Templets/Gxljweb/images/News.gif"/>';
+                    }
+                }
+            }
+        };
+    </script>
+
+</head>
+<script language="javascript" type="text/javascript" src="/jsfiles/js/jquery-1.8.0.min.js"></script>
+<script language="javascript" type="text/javascript" src="/jsfiles/js/input.js"></script>
+<script language="javascript" type="text/javascript" src="/jsfiles/js/jspublic.js"></script>
+<script language="javascript" type="text/javascript" src="/jsfiles/js/public.js"></script>
+<!-- Created by CisoftCMS v2.7 at 2018-5-29 10:08:44 -->
+<body>
+
+
+
+
+<!--漂浮广告
+<script type="text/javascript">
+function removeElement(id)
+{
+document.getElementById(id).style.display="none";
+}
+</script> 
+
+<!--漂浮广告 
+<div onclick="removeElement('roll')" id="roll"><a href="/www/zsb/index.html" target="_blank"></a><div class="guanbi" onclick="removeElement('bar1')"></div></div>  
+<script type="text/javascript">  
+var ggRoll = {  
+    roll : document.getElementById("roll"),  
+    speed : 20,  
+    statusX : 1,  
+    statusY : 1,  
+    x : 100,  
+    y : 300,  
+    winW : document.documentElement.clientWidth - document.getElementById("roll").offsetWidth,  
+    winH : document.documentElement.clientHeight - document.getElementById("roll").offsetHeight,  
+    Go : function(){  
+        this.roll.style.left=this.x+'px';  
+        this.roll.style.top=this.y+'px';  
+            
+        this.x = this.x + (this.statusX? -1: 1)  
+        if(this.x < 0) {this.statusX = 0}  
+        if(this.x > this.winW) {this.statusX = 1}  
+            
+        this.y = this.y + (this.statusY? -1: 1)  
+        if(this.y < 0) {this.statusY = 0}  
+        if(this.y > this.winH) {this.statusY = 1}  
+    }  
+}  
+var interval = setInterval("ggRoll.Go()", ggRoll.speed);  
+ggRoll.roll.onmouseover = function(){clearInterval(interval)};  
+ggRoll.roll.onmouseout = function(){interval = setInterval("ggRoll.Go()", ggRoll.speed)};  
+   
+</script>  
+漂浮广告-->   
+
+
+
+
+
+
+
+    <!--[if !IE]>网页开始<![endif]-->
+    <div class="box">
+        <!--[if !IE]>主体开始<![endif]-->
+        <div class="main">
+            <!--[if !IE]>头部开始<![endif]-->
+                      <script src="/Templets/Gxljweb/top.js"></script>
+          
+            <!--[if !IE]>头部结束<![endif]-->
+            <!--[if !IE]>中部开始<![endif]-->
+            <div class="content">
+                <!--[if !IE]>中部上开始<![endif]-->
+                <iframe src="/Templets/Gxljweb/content_top.html" width="100%" height="240px" scrolling="no"
+                    style="border: 0; padding: 0; margin: 0;"></iframe>
+                <!--[if !IE]>中部上结束<![endif]-->
+                <!--[if !IE]>中部滚动公告开始<![endif]-->
+
+                <!--<div class="gd">
+                    <div class="gd_con" style="margin-left: 40px;">
+                        <a href="html/2016-05/201605271127166188.html" title="广西师范大学漓江学校2016年宣传片" target="_blank">广西师范大学漓江学校2016年宣传片</a></div>
+                    <div class="gd_con" style="margin-left: 40px;">
+                        <a href="/www/qzlxjysjhdzt1/index.html" target="_blank">群众路线教育实践活动专题网</a></div>                
+                    <div class="gd_con" style="margin-left: 40px;">
+                        <a href="/www/zsb/index.html" title="广西师范大学漓江学校招生工作" target="_blank">广西师范大学漓江学校招生工作</a></div>
+<div class="gd_con" style="margin-left: 40px;">
+                        <a href="http://ljyx.gxljcollege.cn/yxpt/ww_GXLJ" title="广西师范大学漓江学校迎新系统" target="_blank">广西师范大学漓江学校迎新系统</a></div>
+                   </div>-->
+
+
+
+                <!--[if !IE]>中部滚动公告结束<![endif]-->
+                <!--[if !IE]>中部下开始<![endif]-->
+                <div class="content_bottom">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!--[if !IE]>漓校新闻开始<![endif]-->
+                    <div class="lyxw">
+                        <div class="lyxw_top">
+                            <div class="lyxw_top_con">
+                                <div id="lyxw" class="lyxw_title">
+                                    <a>学校新闻</a></div>
+                                <div id="xbdt" class="xbdt_title">
+                                    <a>系部动态</a></div>
+                                <div id="spxw" class="spxw_title">
+                                    <a>视频新闻</a></div>
+                            </div>
+                            <div class="more" id="lyxw_t">
+                                <a href="/html/lyxw/index.html" target="_blank" title="更多">查看更多 ></a>
+                            </div>
+                            <div class="more" id="xbdt_t">
+                                <a href="/html/xbdt/index.html" target="_blank" title="更多">查看更多 ></a>
+                            </div>
+                            <div class="more" id="spxw_t">
+                                <a href="/html/spxw/index.html" target="_blank" title="更多">查看更多 ></a>
+                            </div>
+                        </div>
+                        <div style="display: none" id="lyxw_con" class="lyxw_con">
+                            <div class="lyxw_con_con">
+                                <div id="zxxw1">
+                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805290820521885.html target="_blank" title="<span style='color: #FF0000;'>喜讯：我校在全国国际贸易专业技能大赛总决赛中喜获佳绩（图文）</span>" class="black12_link"><span style='color: #FF0000;'>喜讯：我校在全国国际贸易专业技能大赛总</span></a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-29</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805261037106089.html target="_blank" title="【校庆系列专题】心连母校.共谋发展——我校举行校友返校座谈会（图文）" class="black12_link">【校庆系列专题】心连母校.共谋发展——</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-26</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805290909328037.html target="_blank" title="<span style='color: #FF0000;'>喜讯：我校学子在第九届全国软件和信息技术专业人才大赛中再创佳绩（图文）</span>" class="black12_link"><span style='color: #FF0000;'>喜讯：我校学子在第九届全国软件和信息技</span></a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-29</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805281526067022.html target="_blank" title="<span style='color: #FF0000;'>喜讯：我校学生男子、女子篮球队分别斩获2018年桂林市大学生篮球联赛冠亚军（图文）</span>" class="black12_link"><span style='color: #FF0000;'>喜讯：我校学生男子、女子篮球队分别斩获</span></a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-28</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805251456485956.html target="_blank" title="【校庆系列专题】我校2018年“至善杯”教职工气排球比赛圆满结束（图文）" class="black12_link">【校庆系列专题】我校2018年“至善杯”教</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-25</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805290913056905.html target="_blank" title="我校成功举办第九届“珍爱生命，放飞梦想”5.25心理健康教育系列活动（图文）" class="black12_link">我校成功举办第九届“珍爱生命，放飞梦想</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-29</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805250854536977.html target="_blank" title="学校召开2017年度教学工作奖励申报项目审核及2018年上半年校级教改项目结题评审会（图文）" class="black12_link">学校召开2017年度教学工作奖励申报项目审</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-25</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805241738149595.html target="_blank" title="学校党委召开本学期第二次党建工作会议（图文）" class="black12_link">学校党委召开本学期第二次党建工作会议（</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-24</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805232331447791.html target="_blank" title="【校庆系列专题】喜迎校庆 “井”上添花" class="black12_link">【校庆系列专题】喜迎校庆 “井”上添花</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-23</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805232221176213.html target="_blank" title="【校庆系列专题】至善之路，漓院我们“17”同行——2018年校庆纪念日活动纪实（图文）" class="black12_link">【校庆系列专题】至善之路，漓院我们“17</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-23</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805222029075669.html target="_blank" title="<span style='color: #FF0000;'>喜讯：我校中文系基层党组织在第二届全国高校“两学一做”支部风采展示活动中喜获佳绩（图文）</span>" class="black12_link"><span style='color: #FF0000;'>喜讯：我校中文系基层党组织在第二届全国</span></a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-22</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+                                </div>
+                            </div>
+                            <div class="jdt">
+                                <script language="javascript" type="text/javascript">
+<!--
+var Flash_Width = 340;
+var Flash_Height = 240;
+var Txt_Height = 20;
+var Swf_Height = parseInt(Flash_Height + Txt_Height);
+var Pics_ = '/www/032298606832/files/789/合影留念_meitu_2.jpg|/files/0416_53175_qq截图20180416183720_副本.jpg|/files/0416_56612_主会场.jpg|/files/img_1754_副本.jpg|/files/0329_72769_20180328张葆全教授庆贺会-张葆全教授-蒙彦妃摄 (4).jpg';
+var Links_ = 'http://www.gxljcollege.cn/html/2018-05/201805152318369966.html|http://www.gxljcollege.cn/html/2018-04/201804161842166823.html|http://www.gxljcollege.cn/html/2018-04/201804161547209266.html|http://www.gxljcollege.cn/html/2018-03/201803291534101836.html|http://www.gxljcollege.cn/html/2018-03/201803282200104046.html';
+var Texts_ = '香港公开大学代表团一行到我校访问交流（图|【媒体漓院】杨树喆：期待再造新经典——桂|学校举行第三届教职工暨工会会员代表大会第|广西民办高校年检专家组莅临我校开展2017年|学校举办“不忘初心  桃李春晖遍八方”——';
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ Flash_Width +'" height="'+ Swf_Height +'">');
+document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="http://www.gxljcollege.cn/Flash.swf"><param name="quality" value="high"><param name="bgcolor" value="#FFFFFF">');
+document.write('<param name="menu" value="false"><param name="wmode" value="opaque">');
+document.write('<param name="FlashVars" value="pics='+Pics_+'&links='+Links_+'&texts='+Texts_+'&borderwidth='+Flash_Width+'&borderheight='+Flash_Height+'&textheight='+Txt_Height+'">');
+document.write('<embed src="http://www.gxljcollege.cn/Flash.swf" wmode="opaque" FlashVars="pics='+Pics_+'&links='+Links_+'&texts='+Texts_+'&borderwidth='+Flash_Width+'&borderheight='+Flash_Height+'&textheight='+Txt_Height+'" menu="false" bgcolor="#FFFFFF" quality="high" width="'+ Flash_Width +'" height="'+ Swf_Height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+document.write('</object>');
+//-->
+</script>
+
+                            </div>
+                        </div>
+                        <div style="display: none" id="xbdt_con" class="lyxw_con">
+                            <div class="lyxw_con_con">
+                                <div id="zxxw1">
+                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805290845303885.html target="_blank" title="实验信息中心组织参加广西高等教育学会现代信息技术专业委员会2018年全体会员大会暨学术年会（图文）" class="black12_link">实验信息中心组织参加广西高等教育学会现</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-29</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805281157024431.html target="_blank" title="音乐与教育系组织教师赴徐州幼儿师范高等专科学校考察调研（图文）" class="black12_link">音乐与教育系组织教师赴徐州幼儿师范高等</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-28</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805281010054608.html target="_blank" title="甲骨文（广西）OAEC人才产业基地在理工系开展课程实训（图文）" class="black12_link">甲骨文（广西）OAEC人才产业基地在理工系</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-28</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805280836214754.html target="_blank" title="外语系邀请广西师范学院外国语学院院长李晓教授开展专题讲座（图文）" class="black12_link">外语系邀请广西师范学院外国语学院院长李</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-28</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805280020000858.html target="_blank" title="艺术设计系党总支组织开展廉政教育主题党日活动（图文）" class="black12_link">艺术设计系党总支组织开展廉政教育主题党</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-28</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805251558422689.html target="_blank" title="我校至善讲堂及场馆预约系统投入使用（图文）" class="black12_link">我校至善讲堂及场馆预约系统投入使用（图</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-25</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805251501347496.html target="_blank" title="“寻访名人足迹、探索历史真相”——社会科学基础部举办课程实践学习成果展示大赛（图文）" class="black12_link">“寻访名人足迹、探索历史真相”——社会</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-25</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805250920046799.html target="_blank" title="【读书月】掌上资源，超星助力——图书馆举办'书香漓院"读书月电子资源推荐培训讲座（图文）" class="black12_link">【读书月】掌上资源，超星助力——图书馆</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-25</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805250846351107.html target="_blank" title="大学生社团联合会成功举办十佳优秀社团评比大会（图文）" class="black12_link">大学生社团联合会成功举办十佳优秀社团评</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-25</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805250834524096.html target="_blank" title="校团委成功举办“至善青春”三走系列活动（图文）" class="black12_link">校团委成功举办“至善青春”三走系列活动</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-25</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2018-05/201805241653324957.html target="_blank" title="【校企合作】“校所院”协同共育应用型法律人才（图文）" class="black12_link">【校企合作】“校所院”协同共育应用型法</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-24</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+                                </div>
+                            </div>
+                            <div class="jdt">
+                                <script language="javascript" type="text/javascript">
+<!--
+var Flash_Width = 340;
+var Flash_Height = 240;
+var Txt_Height = 20;
+var Swf_Height = parseInt(Flash_Height + Txt_Height);
+var Pics_ = '/www/032298606832/files/789/shuangfangheying.jpg|/www/438013903096/files/20170623 迎七一/标题院网.jpg|/www/396125950983/files/1/002图2：我校社科部教师与浙江师范大学马克思主义学院领导、老师合影.jpg|/www/396125950983/files/1/2017060302.jpg|/www/032298606832/files/项目/双方座谈（封面）_meitu_3.jpg';
+var Links_ = 'http://www.gxljcollege.cn/html/2017-09/201709081259309179.html|http://www.gxljcollege.cn/html/2017-06/201706241158144892.html|http://www.gxljcollege.cn/html/2017-06/201706140838509788.html|http://www.gxljcollege.cn/html/2017-06/201706051059143255.html|http://www.gxljcollege.cn/html/2017-05/201705232138243715.html';
+var Texts_ = '泰国南方大学代表团访问我校（图文）|迎七一  感党恩  话离别——理工系开展学生|我校社科部教师赴浙江师范大学等高校考察学|【实践教学】我校社科部组织学生代表开展社|马来西亚世纪大学代表到我校洽谈硕博项目合';
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ Flash_Width +'" height="'+ Swf_Height +'">');
+document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="http://www.gxljcollege.cn/Flash.swf"><param name="quality" value="high"><param name="bgcolor" value="#FFFFFF">');
+document.write('<param name="menu" value="false"><param name="wmode" value="opaque">');
+document.write('<param name="FlashVars" value="pics='+Pics_+'&links='+Links_+'&texts='+Texts_+'&borderwidth='+Flash_Width+'&borderheight='+Flash_Height+'&textheight='+Txt_Height+'">');
+document.write('<embed src="http://www.gxljcollege.cn/Flash.swf" wmode="opaque" FlashVars="pics='+Pics_+'&links='+Links_+'&texts='+Texts_+'&borderwidth='+Flash_Width+'&borderheight='+Flash_Height+'&textheight='+Txt_Height+'" menu="false" bgcolor="#FFFFFF" quality="high" width="'+ Flash_Width +'" height="'+ Swf_Height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+document.write('</object>');
+//-->
+</script>
+
+                            </div>
+                        </div>
+                        <div style="display: none" id="spxw_con" class="lyxw_con">
+                            <div class="lyxw_con_con">
+                                <div id="zxxw1">
+                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2017-04/201704282142572769.html target="_blank" title="【漓院新闻】《新闻时分》第6期" class="black12_link">【漓院新闻】《新闻时分》第6期</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2017-04-28</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2017-04/201704271055139237.html target="_blank" title="【漓院快讯】配出真我，音你精彩" class="black12_link">【漓院快讯】配出真我，音你精彩</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2017-04-27</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2017-04/201704271618506147.html target="_blank" title="【漓院身边人】桂花香两岸 中华一家亲" class="black12_link">【漓院身边人】桂花香两岸 中华一家亲</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2017-04-26</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2017-04/201704271619012746.html target="_blank" title="【漓院快讯】十年树木 百年树人----爱心支教月活动" class="black12_link">【漓院快讯】十年树木 百年树人----爱心</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2017-04-26</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2017-04/201704262214043968.html target="_blank" title="【漓院街采】直男直女" class="black12_link">【漓院街采】直男直女</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2017-04-26</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2017-04/201704242217304596.html target="_blank" title="【漓院快讯】观文馆来我校开展经典共读活动" class="black12_link">【漓院快讯】观文馆来我校开展经典共读活</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2017-04-24</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2017-04/201704242209573116.html target="_blank" title="【漓院风采】不一样的旅程——我校学子越泰实习之旅" class="black12_link">【漓院风采】不一样的旅程——我校学子越</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2017-04-24</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2017-04/201704242159451945.html target="_blank" title="【漓院快讯】书香漓院——读书月启动仪式暨阅读讲座" class="black12_link">【漓院快讯】书香漓院——读书月启动仪式</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2017-04-24</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2017-04/201704211138225857.html target="_blank" title="【漓院快讯】我校顺利召开第三届双代会第一次会议" class="black12_link">【漓院快讯】我校顺利召开第三届双代会第</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2017-04-21</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2017-04/201704111415376256.html target="_blank" title="【漓院快讯】我校大学生阅读情况调查" class="black12_link">【漓院快讯】我校大学生阅读情况调查</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2017-04-11</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="10" align="center" valign="middle" style="display:none;"></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;padding-top:4px;"><a href=http://www.gxljcollege.cn/html/2017-03/201703281526029046.html target="_blank" title="【漓院新闻】《新闻时分》第5期" class="black12_link">【漓院新闻】《新闻时分》第5期</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2017-03-28</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+                                </div>
+                            </div>
+                            <div class="jdt">
+                                <script language="javascript" type="text/javascript">
+<!--
+var Flash_Width = 340;
+var Flash_Height = 240;
+var Txt_Height = 20;
+var Swf_Height = parseInt(Flash_Height + Txt_Height);
+var Pics_ = '/www/687847991724/files/2017漓院电视台/20170428《新闻时分》第6期封面.jpg|/www/687847991724/files/2014谭子龙/0426_45344_20170420配出真我，音你精彩.jpg|/www/687847991724/files/2014谭子龙/20170426《桂花想两岸 中华一家亲》——李根宏.jpg|/www/687847991724/files/2014谭子龙/十年树木 百年树人----爱心支教月活动.jpg|/www/687847991724/files/2014谭子龙/0426_11298_20170410直男直女.jpg';
+var Links_ = 'http://www.gxljcollege.cn/html/2017-04/201704282142572769.html|http://www.gxljcollege.cn/html/2017-04/201704271055139237.html|http://www.gxljcollege.cn/html/2017-04/201704271618506147.html|http://www.gxljcollege.cn/html/2017-04/201704271619012746.html|http://www.gxljcollege.cn/html/2017-04/201704262214043968.html';
+var Texts_ = '【漓院新闻】《新闻时分》第6期|【漓院快讯】配出真我，音你精彩|【漓院身边人】桂花香两岸 中华一家亲|【漓院快讯】十年树木 百年树人----爱心支|【漓院街采】直男直女';
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ Flash_Width +'" height="'+ Swf_Height +'">');
+document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="http://www.gxljcollege.cn/Flash.swf"><param name="quality" value="high"><param name="bgcolor" value="#FFFFFF">');
+document.write('<param name="menu" value="false"><param name="wmode" value="opaque">');
+document.write('<param name="FlashVars" value="pics='+Pics_+'&links='+Links_+'&texts='+Texts_+'&borderwidth='+Flash_Width+'&borderheight='+Flash_Height+'&textheight='+Txt_Height+'">');
+document.write('<embed src="http://www.gxljcollege.cn/Flash.swf" wmode="opaque" FlashVars="pics='+Pics_+'&links='+Links_+'&texts='+Texts_+'&borderwidth='+Flash_Width+'&borderheight='+Flash_Height+'&textheight='+Txt_Height+'" menu="false" bgcolor="#FFFFFF" quality="high" width="'+ Flash_Width +'" height="'+ Swf_Height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+document.write('</object>');
+//-->
+</script>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--[if !IE]>漓校新闻结束<![endif]-->
+                    <!--[if !IE]>通知公告开始<![endif]-->
+                    <div class="tzgg_list">
+                        <div class="tzgg_list_top">
+                            <div id="gw" class="gw">
+                                <a>公 文</a></div>
+                            <div id="gg" class="gg">
+                                <a>公 告</a></div>
+                        </div>
+                        <!--[if !IE]>列表区域开始<![endif]-->
+                        <div class="tzgg_list_con">
+                            <div class="bb">
+                                <div class="bb_con">
+                                    <div class="gw_con" id="zxxw2">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/html/2018-05/201805221705419465.html target="_blank" title="关于印发《广西师范大学漓江学院会计电算化管理办法（试行）》的通知" class="black12_link">关于印发《广西师范大学漓江学院会计</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-22</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/content.aspx?id=123079824896 target="_blank" title=" 关于印发《广西师范大学漓江学院会计档案管理办法（试行）》的通知" class="black12_link"> 关于印发《广西师范大学漓江学院会</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-18</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/html/2018-05/201805161211406064.html target="_blank" title="关于印发《广西师范大学漓江学院首席教授聘任管理办法（试行）》的通知" class="black12_link">关于印发《广西师范大学漓江学院首席</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-16</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/html/2018-05/201805110918139528.html target="_blank" title=" 关于印发《中共广西师范大学漓江学院委员会2018年党风廉政建设和反腐败工作要点》的通知" class="black12_link"> 关于印发《中共广西师范大学漓江学</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-11</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/html/2018-03/201803210943217039.html target="_blank" title="关于印发《广西师范大学漓江学院学生诚信教育工作实施办法（试行）》的通知" class="black12_link">关于印发《广西师范大学漓江学院学生</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-03-21</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/content.aspx?id=020201682934 target="_blank" title="关于印发《中共广西师范大学漓江学院委员会2018年工作要点》的通知" class="black12_link">关于印发《中共广西师范大学漓江学院</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-03-20</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/content.aspx?id=966650638826 target="_blank" title="关于印发《广西师范大学漓江学院2018年行政工作要点》的通知" class="black12_link">关于印发《广西师范大学漓江学院2018</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-03-20</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/html/2017-12/201712120953094755.html target="_blank" title=" 关于印发《广西师范大学漓江学院学生奖学金评定实施细则》的通知" class="black12_link"> 关于印发《广西师范大学漓江学院学</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2017-12-12</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/html/2017-12/201712081608144920.html target="_blank" title="关于印发《广西师范大学漓江学院毕业论文（毕业设计、创作）管理办法》的通知" class="black12_link">关于印发《广西师范大学漓江学院毕业</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2017-12-08</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+</table>
+
+                                    </div>
+                                    <div class="gg_con" id="zxxw2">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/html/2018-03/201803091501296621.html target="_blank" title="<span style='color: #FF0000;'>漓江学院2018年全职辅导员及党政教辅工勤职位招聘启事</span>" class="black12_link"><span style='color: #FF0000;'>漓江学院2018年全职辅导员及党政教辅</span></a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-03-09</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/html/2018-03/201803091456374377.html target="_blank" title="<span style='color: #FF0000;'>漓江学院2018年全职教师职位招聘启事</span>" class="black12_link"><span style='color: #FF0000;'>漓江学院2018年全职教师职位招聘启事</span></a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-03-09</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/html/2018-05/201805281151250164.html target="_blank" title="【党政事务部】2018年春季学期第13周（5月28日－6月3日）全校性会议或活动及值周安排" class="black12_link">【党政事务部】2018年春季学期第13周</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-28</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/html/2018-05/201805290906202150.html target="_blank" title="【学生事务部】关于开展《至善2017》征稿活动的通知" class="black12_link">【学生事务部】关于开展《至善2017》</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-29</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/html/2018-05/201805280855049512.html target="_blank" title="【学生事务部】关于做好2018届毕业生离校工作的通知" class="black12_link">【学生事务部】关于做好2018届毕业生</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-28</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/html/2018-05/201805240856573373.html target="_blank" title="【校友总会秘书处】关于做好2018届毕业生校友班级理事聘任工作的通知" class="black12_link">【校友总会秘书处】关于做好2018届毕</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-24</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/html/2018-05/201805231148172719.html target="_blank" title="【党政事务部】关于做好2018届毕业生党员教育管理和组织关系转移工作的通知" class="black12_link">【党政事务部】关于做好2018届毕业生</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-23</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/html/2018-05/201805231120000045.html target="_blank" title="【教务与科研管理处】关于组织“深化‘课程思政’的路径与方法”网络专题培训的通知" class="black12_link">【教务与科研管理处】关于组织“深化</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-23</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" class="table" style="table-layout:fixed;width:265px;height:25px;float:left;display:inline;overflow:hidden;">
+              <tr>
+                <td width="25" align="center" valign="middle"><img src="/Templets/Gxljweb/images/20_03.jpg"/></td>
+                <td align="left" valign="middle" style="text-overflow:ellipsis;
+overflow:hidden;white-space:nowrap;"><a href=http://www.gxljcollege.cn/html/2018-05/201805230940442024.html target="_blank" title="【党政事务部】关于做好2018年广西高等学校教师资格教学技能考试工作的通知" class="black12_link">【党政事务部】关于做好2018年广西高</a></td>
+                <td width="10" align="center" valign="middle" style="display:none;"><span class="gray12">2018-05-23</span></td>
+
+              </tr>
+</table>
+</td>
+</tr>
+</table>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="gw_con" class="tzgg_list_bottom">
+                                <a href="/html/tzgg/index.html" target="_blank" title="更多">查看更多 ></a>
+                            </div>
+                            <div id="gg_con" class="tzgg_list_bottom">
+                                <a href="/html/gg/index.html" target="_blank" title="更多">查看更多 ></a>
+                            </div>
+                        </div>
+                        <!--[if !IE]>列表区域结束<![endif]-->
+                    </div>
+                    <!--[if !IE]>通知公告结束<![endif]-->
+                    <!--[if !IE]>漓校风光开始<![endif]-->
+                    <div class="glfc">
+                        <div class="glfc_left">
+                            校园风光
+                        </div>
+                        <div class="glfc_right">
+                            <iframe src="html/lyfg/index.html" width="100%" height="145" frameborder="0" scrolling="no">
+                            </iframe>
+                        </div>
+                    </div>
+                    <!--[if !IE]>漓校风光结束<![endif]-->
+                </div>
+                <!--[if !IE]>中部下结束<![endif]-->
+            </div>
+            <!--[if !IE]>中部结束<![endif]-->
+            <!--[if !IE]>尾部开始<![endif]-->
+            <div class="foot">
+                <iframe src="/html/wb/index.html" width="100%" height="125" frameborder="0" scrolling="no">
+                </iframe>
+
+                <script language="JavaScript" src="http://www.gxljcollege.cn/stat/mystat.aspx?code=2&id=776522405506"
+                    type="text/JavaScript"></script>
+
+            </div>
+            <!--[if !IE]>尾部结束<![endif]-->
+        </div>
+        <!--[if !IE]>主体结束<![endif]-->
+    </div>
+    <!--[if !IE]>网页结束<![endif]-->
+    <!--[if !IE]>360网站安全检测平台<![endif]-->
+    <a href="http://webscan.360.cn/index/checkwebsite/url/www.gxljcollege.cn" name="594ad1ef078eba3ef9e241adbd590935">
+    </a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

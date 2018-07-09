@@ -1,0 +1,780 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页 - 湖南师大附中梅溪湖中学</title>
+<meta http-equiv="keywords" content="湖南师大附中梅溪湖中学"/>
+<meta http-equiv="description" content="湖南师大附中梅溪湖中学"/>
+<link href="/r/cms/sdfzmxhzx/stpl2/css/base.css" rel="stylesheet" type="text/css" />
+<link href="/r/cms/sdfzmxhzx/stpl2/css/lrtk.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/r/cms/sdfzmxhzx/stpl2/js/jquery.js"></script>
+<script type="text/javascript" src="/r/cms/sdfzmxhzx/stpl2/js/lrtk.js"></script>
+<script type="text/javascript" src="/r/cms/jquery.KinSlideshow-1.2.1.min.js"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/belatedPNG.js"></script>
+<script type="text/javascript">
+    var __IE6=true;
+    DD_belatedPNG.fix('.logo img,.prev img,.next img,img');
+</script>
+<![endif]-->
+<script type="text/javascript">
+	$(function(){$("#KinSlideshow").KinSlideshow();})
+    function showContentDiv(id){
+      $(".Pop-layer").each(function(index,ob){
+         if(!$(ob).is(":hidden") && $(ob).attr('id')!=id){
+             $(ob).hide();
+          }
+         if($(ob).is(":hidden") && $(ob).attr('id')==id){
+             $(ob).slideDown();
+          }
+      });
+    }
+    
+    function showTab(){
+       $(".sub_nav .Sub-classification").toggle('fast');
+    }
+    
+    function hideContentDiv(obj){
+       $(obj).parents(".Pop-layer").slideUp();
+    }
+    
+    var count = 2;
+    function selectTag(num){
+       for(var i=0;i<count;i++){
+          if(i!=num){
+             $("#seltag_"+i).removeClass();
+             $("#moretag_"+i).hide();
+             $("#contenttag_"+i).hide();
+          }else{
+             $("#seltag_"+i).removeClass().addClass("clcik");
+             $("#moretag_"+i).show();
+             $("#contenttag_"+i).show();
+          }
+       }
+    }
+</script>
+</head>
+<body>
+<!--header_begin-->
+<script type="text/javascript" src="/r/cms/sdfzmxhzx/stpl2/js/jquery.hoverIntent.minified.js"></script>
+<script type="text/javascript">
+$(function(){
+	function megaHoverOver(){
+	    $(this).children(".down-menu").stop().fadeTo('fast', 1).show();
+        }
+        function megaHoverOut(){ 
+	  $(this).children(".down-menu").stop().fadeTo('fast', 0, function() {
+		  $(this).hide(); 
+	  });
+	}
+        function megaHoverOver2(){
+	    $(this).children(".down-Float").stop().fadeTo('fast', 1).show();
+        }
+        function megaHoverOut2(){ 
+	  $(this).children(".down-Float").stop().fadeTo('fast', 0, function() {
+		  $(this).hide(); 
+	  });
+	}
+        var config = {sensitivity: 2,interval:100,over: megaHoverOver,timeout: 500,out: megaHoverOut };
+        var config2 = {sensitivity: 2,interval:100,over: megaHoverOver2,timeout: 500,out: megaHoverOut2 };
+	$("ul.nav-left li").hoverIntent(config);
+	$("div.down-menu ul li").hoverIntent(config2);
+});
+</script>
+<div id="header">
+  <div class="header-t"></div>
+  <div id="header-nav">
+    <div class="logo"><a href="/"><img src="/r/cms/sdfzmxhzx/stpl2/images/logo.png" /></a></div>
+    <div class="nav">
+      <ul class="nav-left">
+        <li><a href="/">首页</a></li>
+        <li><a href="http://www.fzmxh.org:80/xxjs/index.jhtml" target="_blank">学校介绍</a>
+			<div class="down-menu">
+				<ul>
+					<li><a href="http://www.fzmxh.org:80/xxjj/index.jhtml" target="_blank">学校简介</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/ldtd/index.jhtml" target="_blank">领导团队</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/mlxy/index.jhtml" target="_blank">美丽校园</a>
+					<ul class="down-Float">
+							<li><a href="http://www.fzmxh.org:80/mlxy/index.jhtml" target="_blank">美丽校园</a>
+							<li><a href="http://www.fzmxh.org:80/xygc/index.jhtml" target="_blank">校园广场</a>
+							<li><a href="http://www.fzmxh.org:80/jxl/index.jhtml" target="_blank">教学楼</a>
+							<li><a href="http://www.fzmxh.org:80/kjl/index.jhtml" target="_blank">科技楼</a>
+							<li><a href="http://www.fzmxh.org:80/szhjs/index.jhtml" target="_blank">数字化教室</a>
+							<li><a href="http://www.fzmxh.org:80/xlzxs/index.jhtml" target="_blank">心理咨询室</a>
+							<li><a href="http://www.fzmxh.org:80/tsg/index.jhtml" target="_blank">图书馆</a>
+							<li><a href="http://www.fzmxh.org:80/dmgc/index.jhtml" target="_blank">东门广场</a>
+							<li><a href="http://www.fzmxh.org:80/tyg/index.jhtml" target="_blank">体艺馆</a>
+							<li><a href="http://www.fzmxh.org:80/wdy/index.jhtml" target="_blank">问对园</a>
+							<li><a href="http://www.fzmxh.org:80/tjc/index.jhtml" target="_blank">田径场</a>
+							<li><a href="http://www.fzmxh.org:80/xsss/index.jhtml" target="_blank">学生宿舍</a>
+							<li><a href="http://www.fzmxh.org:80/st/index.jhtml" target="_blank">食堂</a>
+							<li><a href="http://www.fzmxh.org:80/sssb/index.jhtml" target="_blank">设施设备</a>
+							<li><a href="http://www.fzmxh.org:80/rflss/index.jhtml" target="_blank">“软福利”设施</a>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</li>
+        <li><a href="http://www.fzmxh.org:80/xxbm/index.jhtml" target="_blank">学校部门</a>
+			<div class="down-menu">
+				<ul>
+					<li><a href="http://www.fzmxh.org:80/xb/index.jhtml" target="_blank">校办</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/db/index.jhtml" target="_blank">党办</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/jwc/index.jhtml" target="_blank">教务处</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/xgc/index.jhtml" target="_blank">学工处</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/jks/index.jhtml" target="_blank">教科室</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/dds/index.jhtml" target="_blank">督导室</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/tw/index.jhtml" target="_blank">团委</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/zws/index.jhtml" target="_blank">总务处</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/gh/index.jhtml" target="_blank">工会</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/bwc/index.jhtml" target="_blank">保卫处</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+        <li><a href="http://www.fzmxh.org:80/xsfc/index.jhtml" target="_blank">学生风采</a>
+			<div class="down-menu">
+				<ul>
+					<li><a href="http://www.fzmxh.org:80/tdgb/index.jhtml" target="_blank">团队干部</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/xyzx/index.jhtml" target="_blank">校园之星</a>
+					<ul class="down-Float">
+							<li><a href="http://www.fzmxh.org:80/gbzx/index.jhtml" target="_blank">干部之星</a>
+							<li><a href="http://www.fzmxh.org:80/yszx/index.jhtml" target="_blank">艺术之星</a>
+							<li><a href="http://www.fzmxh.org:80/tyzx/index.jhtml" target="_blank">体育之星</a>
+							<li><a href="http://www.fzmxh.org:80/lyzx/index.jhtml" target="_blank">礼仪之星</a>
+							<li><a href="http://www.fzmxh.org:80/mdzx/index.jhtml" target="_blank">美德之星</a>
+							<li><a href="http://www.fzmxh.org:80/xxzx/index.jhtml" target="_blank">学习之星</a>
+							<li><a href="http://www.fzmxh.org:80/qfzx/index.jhtml" target="_blank">勤奋之星</a>
+							<li><a href="http://www.fzmxh.org:80/stzx/index.jhtml" target="_blank">社团之星</a>
+							<li><a href="http://www.fzmxh.org:80/fwzx/index.jhtml" target="_blank">服务之星</a>
+							<li><a href="http://www.fzmxh.org:80/zyzx/index.jhtml" target="_blank"> 志愿之星</a>
+							<li><a href="http://www.fzmxh.org:80/hbzx/index.jhtml" target="_blank">环保之星</a>
+					</ul>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/xsry/index.jhtml" target="_blank">学生荣誉</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+        <li><a href="http://www.fzmxh.org:80/djgz/index.jhtml" target="_blank">党建工作</a>
+			<div class="down-menu">
+				<ul>
+					<li><a href="http://www.fzmxh.org:80/djdt/index.jhtml" target="_blank">党建动态</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/zzjg.jhtml" target="_blank">组织机构</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/zcwj/index.jhtml" target="_blank">政策文件</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/dwgk/index.jhtml" target="_blank">党务公开</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/dflz/index.jhtml" target="_blank">党风廉政</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/qtzc/index.jhtml" target="_blank">群团之窗</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/sdsf/index.jhtml" target="_blank">师德师风</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/dylt/index.jhtml" target="_blank">党员论坛</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/lxyz/index.jhtml" target="_blank">“两学一做”</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+        <li><a href="http://www.fzmxh.org:80/ztzl/index.jhtml" target="_blank">专题专栏</a>
+			<div class="down-menu">
+				<ul>
+					<li><a href="http://www.fzmxh.org:80/zszl/index.jhtml" target="_blank">招生专栏</a>
+					<ul class="down-Float">
+							<li><a href="http://www.fzmxh.org:80/zsdt/index.jhtml" target="_blank">招生动态</a>
+							<li><a href="http://www.fzmxh.org:80/student.jhtml" target="_blank">录取查询</a>
+					</ul>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/zpzl/index.jhtml" target="_blank">招聘专栏</a>
+					<ul class="down-Float">
+							<li><a href="http://www.fzmxh.org:80/zpdt/index.jhtml" target="_blank">招聘动态</a>
+							<li><a href="http://www.fzmxh.org:80/ypbmb.jhtml" target="_blank">应聘报名表</a>
+					</ul>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/wmcj/index.jhtml" target="_blank">文明创建</a>
+					</li>
+					<li><a href="http://www.fzmxh.org/ygfwpt/index.jhtml" target="_blank">阳光服务</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/lqxl/index.jhtml" target="_blank">漉泉心理</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/mskt/index.jhtml" target="_blank">名师课堂</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+        <li><a href="http://www.fzmxh.org:80/ygfwpt/index.jhtml" target="_blank">阳光服务平台</a>
+			<div class="down-menu">
+				<ul>
+					<li><a href="http://www.fzmxh.org:80/ygfwgk.jhtml" target="_blank">阳光服务概况</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/zcfg/index.jhtml" target="_blank">政策法规</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/sjwj/index.jhtml" target="_blank">上级文件</a>
+					</li>
+					<li><a href="http://www.fzmxh.org:80/xxgk/index.jhtml" target="_blank">信息公开</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+        <li><a href="http://cs.fzmxh.org/" target="_blank" style="color:#f00;">旧版入口</a></li>
+      </ul>
+      <div class="nav-right"> <img src="/r/cms/sdfzmxhzx/stpl2/images/code.png" /> <br />
+        官方微信 </div>
+    </div>
+  </div>
+</div>
+<!--header end--><!--header_end-->
+
+<!--Pop-layer 通知公告-->
+<div class="Pop-layer" style="display:none;" id="tzgg">
+<h4 class="Pop-layer-t">
+<a href="http://www.fzmxh.org:80/tzgg/index.jhtml" target="_blank"><span class="Pop-t">通知公告</a></span>
+<a href="javascript:void(0);" onclick="hideContentDiv(this)"; class="colse">&nbsp;</a></h4>
+<div class="Pop-layer-cont">
+<ul class="main-list">
+<li><a title="关于推荐选拔湖南省优秀师德典型的通知" href="http://www.fzmxh.org:80/tzgg/480799.jhtml"  target="_blank" class="main-list-cont">关于推荐选拔湖南省优秀师德典型的通知</a>
+    <span class="date">[2018-05-25]</span></li>
+<li><a title="长沙市师大附中梅溪湖中学校园信息化系统维护维保服务采购竞争性谈判邀请公告" href="http://www.fzmxh.org:80/tzgg/480797.jhtml"  target="_blank" class="main-list-cont">长沙市师大附中梅溪湖中学校园信息化系统维护维保...</a>
+    <span class="date">[2018-05-25]</span></li>
+<li><a title="湖南师大附中梅溪湖中学政府采购和建设工程招标代理机构比选公告" href="http://www.fzmxh.org:80/tzgg/480791.jhtml"  target="_blank" class="main-list-cont">湖南师大附中梅溪湖中学政府采购和建设工程招标代...</a>
+    <span class="date">[2018-05-24]</span></li>
+<li><a title="2018年学校二次供水检测报告" href="http://www.fzmxh.org:80/tzgg/480695.jhtml"  target="_blank" class="main-list-cont">2018年学校二次供水检测报告</a>
+    <span class="date">[2018-04-28]</span></li>
+</ul>
+<!--
+<div><a title="关于推荐选拔湖南省优秀师德典型的通知" target="_blank" href="http://www.fzmxh.org:80/tzgg/480799.jhtml"><strong style="line-height:60px;font-size:18px;color:#444;">关于推荐选拔湖南省优秀师德典型的通知</strong></a></div>
+<div style="text-indent: 0px;height:140px;font-size:14px;color:#333; line-height:28px;">
+<p><span style="font-size: 18px"><span style="font-family: 宋体">根据教育部、省教育厅文件和市教育局《关于印发长沙市中小学教师师德师风建设行动计划（2018-2020年）的通知》（长教通〔2018〕80号）精神，结合市教育局师德师风建设工作会议的要求，我校向市教育局推荐优秀师德典型，请有意向者请于5月28日前，下载附件，填写好《湖南省优秀师德典型推荐表》报送至督导室。联系电话：15111498118 邮箱</span></span><a href="mailto:78255160@qq.com"><span style="font-size: 18px"><span style="font-family: 宋体">78255160@qq.com</span></span></a><span style="font-size: 18px"><span style="font-family: 宋体"><br />
+</span></span></p>
+</div>
+-->
+</div>
+</div>
+<!--Pop-layer 通知公告 end-->
+
+<!--Pop-layer 学校新闻-->
+<div class="Pop-layer" style="display:none;" id="xxxw">
+<h4 class="Pop-layer-t">
+<a href="http://www.fzmxh.org:80/xxxw/index.jhtml" target="_blank"><span class="Pop-t">学校新闻</a></span>
+<a href="javascript:void(0);" onclick="hideContentDiv(this)"; class="colse">&nbsp;</a></h4>
+<div class="Pop-layer-cont">
+<ul class="main-list">
+<li><a title="湖南师大附中梅溪湖中学首届高三高考喜报" href="http://mp.weixin.qq.com/s/USZPr_OpmNDSu5s3PzQpig"  target="_blank" class="main-list-cont">湖南师大附中梅溪湖中学首届高三高考喜报</a>
+    <span class="date">[2017-06-25]</span></li>
+<li><a title="湖南师大附中梅溪湖中学首届初三中（会）考喜报" href="http://mp.weixin.qq.com/s/5PF6tBNmUfEVexFUZyy4sw"  target="_blank" class="main-list-cont">湖南师大附中梅溪湖中学首届初三中（会）考喜报</a>
+    <span class="date">[2017-07-05]</span></li>
+<li><a title="湖南师大附中2017年高考喜报" href="http://www.hnsdfz.org/a/fuzhongxinwen/20170624/3058.html"  target="_blank" class="main-list-cont">湖南师大附中2017年高考喜报</a>
+    <span class="date">[2017-06-25]</span></li>
+<li><a title="我校七年级召开2017-2018学年度下学期教育教学总结大会" href="http://www.fzmxh.org:80/xxxw/480800.jhtml"  target="_blank" class="main-list-cont">我校七年级召开2017-2018学年度下学期教育教学总...</a>
+    <span class="date">[2018-05-25]</span></li>
+</ul>
+</div>
+</div>
+<!--Pop-layer 学校新闻 end-->
+<!--Pop-layer 一周工作-->
+<div class="Pop-layer" style="display:none;" id="yzgz">
+<h4 class="Pop-layer-t">
+<a href="http://www.fzmxh.org:80/bzgz/index.jhtml" target="_blank"><span class="Pop-t">一周工作</a></span>
+<a href="javascript:void(0);" onclick="hideContentDiv(this)"; class="colse">&nbsp;</a></h4>
+<div class="Pop-layer-cont">
+<ul class="main-list">
+<li><a title="第22周：1月28日-2月3日" href="http://www.fzmxh.org:80/bzgz/480471.jhtml"  target="_blank" class="main-list-cont">第22周：1月28日-2月3日</a>
+    <span class="date">[2018-01-29]</span></li>
+<li><a title="第21周：1月15-21日" href="http://www.fzmxh.org:80/bzgz/480455.jhtml"  target="_blank" class="main-list-cont">第21周：1月15-21日</a>
+    <span class="date">[2018-01-23]</span></li>
+<li><a title="第20周：1月14-20日" href="http://www.fzmxh.org:80/bzgz/480443.jhtml"  target="_blank" class="main-list-cont">第20周：1月14-20日</a>
+    <span class="date">[2018-01-15]</span></li>
+<li><a title="第19周：1月7-13日" href="http://www.fzmxh.org:80/bzgz/480437.jhtml"  target="_blank" class="main-list-cont">第19周：1月7-13日</a>
+    <span class="date">[2018-01-08]</span></li>
+</ul>
+<!--
+<div class="schedule-left">
+<li><a title="第22周：1月28日-2月3日" href="http://www.fzmxh.org:80/bzgz/480471.jhtml"  target="_blank" class="main-list-cont">第22周：1月28日-2月3日</a>
+    <span class="date">[01-29]</span></li>
+<li><a title="第21周：1月15-21日" href="http://www.fzmxh.org:80/bzgz/480455.jhtml"  target="_blank" class="main-list-cont">第21周：1月15-21日</a>
+    <span class="date">[01-23]</span></li>
+<li><a title="第20周：1月14-20日" href="http://www.fzmxh.org:80/bzgz/480443.jhtml"  target="_blank" class="main-list-cont">第20周：1月14-20日</a>
+    <span class="date">[01-15]</span></li>
+<li><a title="第19周：1月7-13日" href="http://www.fzmxh.org:80/bzgz/480437.jhtml"  target="_blank" class="main-list-cont">第19周：1月7-13日</a>
+    <span class="date">[01-08]</span></li>
+</div>
+<div class="schedule-right">
+<p><a title="第22周：1月28日-2月3日" href="http://www.fzmxh.org:80/bzgz/480471.jhtml"  target="_blank">第22周：1月28日-2月3日</a></p>
+<p><a title="第21周：1月15-21日" href="http://www.fzmxh.org:80/bzgz/480455.jhtml"  target="_blank">第21周：1月15-21日</a></p>
+<p><a title="第20周：1月14-20日" href="http://www.fzmxh.org:80/bzgz/480443.jhtml"  target="_blank">第20周：1月14-20日</a></p>
+<p><a title="第19周：1月7-13日" href="http://www.fzmxh.org:80/bzgz/480437.jhtml"  target="_blank">第19周：1月7-13日</a></p>
+<p><a title="第18周：2017年12月31日-2018年1月6日" href="http://www.fzmxh.org:80/bzgz/480419.jhtml"  target="_blank">第18周：2017年12月31日-2018年1月6日</a></p>
+</div>
+-->
+
+</div>
+</div>
+<!--Pop-layer 一周工作 end-->
+
+<!--Pop-layer 天气预报-->
+<div class="Pop-layer" style="display:none;" id="tq">
+<h4 class="Pop-layer-t"><a href="javascript:void(0);" target="_blank"><span class="Pop-t">今日天气</a></span>
+<a href="javascript:void(0);" onclick="hideContentDiv(this)"; class="colse">&nbsp;</a></h4>
+<div class="Pop-layer-cont">
+<iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=83" width="515" height="178" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+</div>
+<!--Pop-layer 天气预报 end-->
+
+<div class="float-module">
+<div class="line-modeule1">
+<a href="javascript:void(0);" onclick="showContentDiv('tzgg');">
+<div class="modeule_Subclass c-red1 "><i class="icon-module">&nbsp;&nbsp;</i><span>通知通告</span></div>
+</a>
+<a href="javascript:void(0);" onclick="showContentDiv('xxxw');">
+<div class="modeule_Subclass1 c-red1 mg-l5"><i class="icon-module1">&nbsp;&nbsp;</i><span>学校新闻</span></div>
+</a>
+<!--<a href="http://www.hnsdfz.org/a/fuzhongxinwen/index.html" target="_blank">
+<div class="modeule_Subclass c-red1 mg-l5"><i class="icon-module11">&nbsp;&nbsp;</i><span>附中新闻</span></div>
+</a> end-->
+
+</div>
+<!--1-->
+<div class="line-modeule1">
+<a href="http://www.fzmxh.org:80/ygfwpt/index.jhtml" target="_blank">
+<div class="modeule_Subclass c-yellow "><i class="icon-module2">&nbsp;&nbsp;</i><span>阳光服务平台</span></div>
+</a>
+
+<a href="javascript:void(0);" onclick="showContentDiv('yzgz');">
+<div class="modeule_Subclass c-red1 mg-l5"><i class="icon-module3">&nbsp;&nbsp;</i><span>一周工作</span></div>
+</a>
+<a href="http://www.yunxiaoyuan.com/" target="_blank">
+<div class="modeule_Subclass c-green mg-l5"><i class="icon-module4">&nbsp;&nbsp;</i><span>云校园</span></div>
+</a>
+</div>
+<!--2-->
+<div class="line-modeule1">
+<a href="javascript:void(0);" onclick="showContentDiv('tq');">
+<div class="modeule_Subclass c-blue1 "><i class="icon-module5">&nbsp;&nbsp;</i><span>天气</span></div>
+</a>
+
+<a href="http://sdfzmxh.daydayup.com.cn" target="_blank">
+<div class="modeule_Subclass1 c-blue2 mg-l5"><i class="icon-module6">&nbsp;&nbsp;</i><span>人人通</span></div>
+</a>
+</div>
+<!--1-->
+<div class="line-modeule1">
+<a href="ftp://10.255.31.249/" target="_blank">
+<div class="modeule_Subclass c-red2 "><i class="icon-module7">&nbsp;&nbsp;</i><span>课件中心</span></div>
+</a>
+<a href="http://10.255.31.12:8088/login.html"  target="_blank">
+<div class="modeule_Subclass c-red2 mg-l5"><i class="icon-module8">&nbsp;&nbsp;</i><span>日常管理</span></div>
+</a>
+<a href="http://222.240.251.42/" target="_blank">
+<div class="modeule_Subclass c-red2 mg-l5"><i class="icon-module9">&nbsp;&nbsp;</i><span>数字图书馆</span></div>
+</a>
+</div>
+<!--2-->
+</div>
+
+<div class="slide-main" id="touchMain">
+	<div class="slide-box" id="slideContent">
+		<div class="slide" id="bgstylec"><img src="/r/cms/sdfzmxhzx/stpl2/images/baomi-k1.jpg" width="1900" height="960"/></div>
+		<div class="slide" id="bgstylea"><img src="/r/cms/sdfzmxhzx/stpl2/images/baomi-k2.jpg" width="1900" height="960"/></div>
+		<div class="slide" id="bgstyleb"><img src="/r/cms/sdfzmxhzx/stpl2/images/baomi-k3.jpg" width="1900" height="960"/></div>
+	</div>
+    <div class="item">
+		<span><a class="cur" stat="item1001" href="javascript:;"></a><a href="javascript:;" stat="item1002"></a><a href="javascript:;" stat="item1003"></a></span>
+	</div>
+</div>
+<!-- 焦点图 end -->
+
+<div class="main1">
+<div class="main-cont">
+<div class="main1-left">
+<!--学校新闻 begin-->
+<h2 class="main1-title">
+   <div class="title_left"><span class="main-i-icon">学校新闻</span><span class="main1-title-tab1">
+	<a title="附中新闻" href="http://www.hnsdfz.org/a/fuzhongxinwen/index.html"  target="_blank">附中新闻</a>
+	<a title="媒体报道" href="http://www.fzmxh.org/mtbd/index.jhtml"  target="_blank">媒体报道</a></span></div> 
+   <a href="http://www.fzmxh.org:80/xxxw/index.jhtml" class="more">更多>></a>
+</h2>
+<ul class="main-list">
+<li><a title="湖南师大附中梅溪湖中学首届高三高考喜报" href="http://mp.weixin.qq.com/s/USZPr_OpmNDSu5s3PzQpig"  target="_blank" class="main-list-cont">湖南师大附中梅溪湖中学首届高三高考喜报</a>
+    <span class="date">[2017-06-25]</span></li>
+<li><a title="湖南师大附中梅溪湖中学首届初三中（会）考喜报" href="http://mp.weixin.qq.com/s/5PF6tBNmUfEVexFUZyy4sw"  target="_blank" class="main-list-cont">湖南师大附中梅溪湖中学首届初三中（会）考喜报</a>
+    <span class="date">[2017-07-05]</span></li>
+<li><a title="湖南师大附中2017年高考喜报" href="http://www.hnsdfz.org/a/fuzhongxinwen/20170624/3058.html"  target="_blank" class="main-list-cont">湖南师大附中2017年高考喜报</a>
+    <span class="date">[2017-06-25]</span></li>
+<li><a title="我校七年级召开2017-2018学年度下学期教育教学总结大会" href="http://www.fzmxh.org:80/xxxw/480800.jhtml"  target="_blank" class="main-list-cont">我校七年级召开2017-2018学年度下学期教育教学总...</a>
+    <span class="date">[2018-05-25]</span></li>
+<li><a title="风雨同舟，快乐迎考——我校举行2018年高考减压心理户外拓展活动" href="http://www.fzmxh.org:80/xxxw/480786.jhtml"  target="_blank" class="main-list-cont">风雨同舟，快乐迎考——我校举行2018年高考减压心...</a>
+    <span class="date">[2018-05-24]</span></li>
+<li><a title=" 贵阳市教育系统领导和老师来我校交流访问" href="http://www.fzmxh.org:80/xxxw/480783.jhtml"  target="_blank" class="main-list-cont"> 贵阳市教育系统领导和老师来我校交流访问</a>
+    <span class="date">[2018-05-23]</span></li>
+<li><a title="喜报：我校李子祺、张子麓同学荣获第11届湖南省青少年机器人竞赛一等奖" href="http://www.fzmxh.org:80/xxxw/480772.jhtml"  target="_blank" class="main-list-cont">喜报：我校李子祺、张子麓同学荣获第11届湖南省青...</a>
+    <span class="date">[2018-05-22]</span></li>
+<li><a title="喜报：李慧敏老师获湖南师大附中教育集团第三届第二次青年教师教学竞赛一等奖" href="http://www.fzmxh.org:80/xxxw/480767.jhtml"  target="_blank" class="main-list-cont">喜报：李慧敏老师获湖南师大附中教育集团第三届第...</a>
+    <span class="date">[2018-05-21]</span></li>
+<li><a title="李娜老师主持的《STEM教育理念下信息技术与中学学科教学融合的实践研究》课题顺利开题" href="http://www.fzmxh.org:80/xxxw/480766.jhtml"  target="_blank" class="main-list-cont">李娜老师主持的《STEM教育理念下信息技术与中学学...</a>
+    <span class="date">[2018-05-21]</span></li>
+<li><a title="新华网：“创享·无界”2018人工智能与创新教育思享汇在长举行" href="http://www.hn.xinhuanet.com/2018-05/20/c_1122857951.htm?from=singlemessage#10006-weixin-1-52626-6b3bffd01fdde4900130bc5a2751b6d1"  target="_blank" class="main-list-cont">新华网：“创享·无界”2018人工智能与创新教育思...</a>
+    <span class="date">[2018-05-20]</span></li>
+</ul>
+<!--学校新闻 end-->
+
+<!--一周工作 start-->
+<h2 class="main1-title">
+   <div class="title_left"><span class="main-i-icon">一周工作</span></div> 
+   <a href="http://www.fzmxh.org:80/bzgz/index.jhtml" class="more">更多>></a>
+</h2>
+<ul class="main-list">
+<li><a title="第22周：1月28日-2月3日" href="http://www.fzmxh.org:80/bzgz/480471.jhtml"  target="_blank" class="main-list-cont">第22周：1月28日-2月3日</a>
+    <span class="date">[2018-01-29]</span></li>
+<li><a title="第21周：1月15-21日" href="http://www.fzmxh.org:80/bzgz/480455.jhtml"  target="_blank" class="main-list-cont">第21周：1月15-21日</a>
+    <span class="date">[2018-01-23]</span></li>
+<li><a title="第20周：1月14-20日" href="http://www.fzmxh.org:80/bzgz/480443.jhtml"  target="_blank" class="main-list-cont">第20周：1月14-20日</a>
+    <span class="date">[2018-01-15]</span></li>
+<li><a title="第19周：1月7-13日" href="http://www.fzmxh.org:80/bzgz/480437.jhtml"  target="_blank" class="main-list-cont">第19周：1月7-13日</a>
+    <span class="date">[2018-01-08]</span></li>
+</ul>
+<!--一周工作 end-->
+</div>
+
+
+<div class="main1-right">
+<!--通知公告 start-->
+<h2 class="main1-title">
+   <div class="title_left"><span class="main-i-icon">通知公告</span></div> 
+   <a href="http://www.fzmxh.org:80/tzgg/index.jhtml" class="more">更多>></a>
+</h2>
+<ul class="main-list">
+   <li>
+     <a title="关于推荐选拔湖南省优秀师德典型的通知" class="main-list-cont" href="http://www.fzmxh.org:80/tzgg/480799.jhtml"  target="_blank">关于推荐选拔湖南省优秀师德典型的通知</a>
+     <span class="date">[2018-05-25]</span>
+   </li>
+   <li>
+     <a title="长沙市师大附中梅溪湖中学校园信息化系统维护维保服务采购竞争性谈判邀请公告" class="main-list-cont" href="http://www.fzmxh.org:80/tzgg/480797.jhtml"  target="_blank">长沙市师大附中梅溪湖中学校园信息化系统维护维保...</a>
+     <span class="date">[2018-05-25]</span>
+   </li>
+   <li>
+     <a title="湖南师大附中梅溪湖中学政府采购和建设工程招标代理机构比选公告" class="main-list-cont" href="http://www.fzmxh.org:80/tzgg/480791.jhtml"  target="_blank">湖南师大附中梅溪湖中学政府采购和建设工程招标代...</a>
+     <span class="date">[2018-05-24]</span>
+   </li>
+   <li>
+     <a title="2018年学校二次供水检测报告" class="main-list-cont" href="http://www.fzmxh.org:80/tzgg/480695.jhtml"  target="_blank">2018年学校二次供水检测报告</a>
+     <span class="date">[2018-04-28]</span>
+   </li>
+</ul>
+<!--通知公告 end-->
+
+<!--图片新闻-->
+<div class="index_slide" id="KinSlideshow">
+        <a href="http://www.fzmxh.org:80/tpxw/480790.jhtml" target="_blank" title="喜报：我校李子祺、张子麓同学荣获第11届湖南省青少年机器人竞赛一等奖"><img src="/u/cms/sdfzmxhzx/201805/24160813m13e.jpg" width="475" height="305" alt="喜报：我校李子祺、张子麓同学荣获第11届湖南省青少年机器人竞赛一等奖"/></a>
+        <a href="http://www.fzmxh.org:80/tpxw/480788.jhtml" target="_blank" title="风雨同舟，快乐迎考——我校举行2018年高考减压心理户外拓展活动"><img src="/u/cms/sdfzmxhzx/201805/241605354h8k.jpg" width="475" height="305" alt="风雨同舟，快乐迎考——我校举行2018年高考减压心理户外拓展活动"/></a>
+        <a href="http://www.fzmxh.org:80/tpxw/480746.jhtml" target="_blank" title="“创享·无界”2018人工智能与创新教育思享汇科普活动在我校举行"><img src="/u/cms/sdfzmxhzx/201805/20223217dw9z.jpg" width="475" height="305" alt="“创享·无界”2018人工智能与创新教育思享汇科普活动在我校举行"/></a>
+        <a href="https://mp.weixin.qq.com/s/jXaJuDs224wDM6iXCAybJQ" target="_blank" title="初心不忘亮身份，三尺讲台当先锋 ——我校举行4月主题党日活动"><img src="/u/cms/sdfzmxhzx/201805/021728424jk0.jpg" width="475" height="305" alt="初心不忘亮身份，三尺讲台当先锋 ——我校举行4月主题党日活动"/></a>
+        <a href="http://www.fzmxh.org:80/tpxw/480707.jhtml" target="_blank" title="我校召开贯彻执行中央八项规定精神专项治理工作推进会"><img src="/u/cms/sdfzmxhzx/201805/021620297k3h.jpg" width="475" height="305" alt="我校召开贯彻执行中央八项规定精神专项治理工作推进会"/></a>
+</div>
+<!--图片新闻 end-->
+
+<!--师生作品-->
+<h2 class="main1-title"><div class="title_left">
+<span class="main-i-icon">师生作品</span>
+<span  class="main1-title-tab">
+<a href="javascript:void(0);" id="seltag_0" onclick="selectTag(0);" class="clcik">初中部</a>
+<a href="javascript:void(0);" id="seltag_1" onclick="selectTag(1);">高中部</a>
+</span>
+</div>
+<a href="http://www.fzmxh.org:80/czb/index.jhtml" id="moretag_0" class="more">更多>></a>
+<a href="http://www.fzmxh.org:80/gzb/index.jhtml" id="moretag_1" style="display:none" class="more">更多>></a>
+</h2>
+<ul class="main-list" id="contenttag_0">
+   <li>
+     <a title="原来春天在我身边" class="main-list-cont" href="http://www.fzmxh.org:80/czb/480724.jhtml"  target="_blank">原来春天在我身边</a>
+     <span class="date">[2018-05-08]</span>
+   </li>
+   <li>
+     <a title="写给20年后自己的一封信" class="main-list-cont" href="http://www.fzmxh.org:80/czb/480250.jhtml"  target="_blank">写给20年后自己的一封信</a>
+     <span class="date">[2017-11-16]</span>
+   </li>
+   <li>
+     <a title="我眼中的夏天" class="main-list-cont" href="http://www.fzmxh.org:80/czb/480173.jhtml"  target="_blank">我眼中的夏天</a>
+     <span class="date">[2017-10-25]</span>
+   </li>
+   <li>
+     <a title="每一次偶遇，都是必然" class="main-list-cont" href="http://www.fzmxh.org:80/czb/480171.jhtml"  target="_blank">每一次偶遇，都是必然</a>
+     <span class="date">[2017-10-25]</span>
+   </li>
+</ul>
+<ul class="main-list" id="contenttag_1" style="display:none;">
+   <li>
+     <a title="于无人处，需慎独" class="main-list-cont" href="http://www.fzmxh.org:80/gzb/480251.jhtml"  target="_blank">于无人处，需慎独</a>
+     <span class="date">[2017-11-16]</span>
+   </li>
+   <li>
+     <a title="走月亮" class="main-list-cont" href="http://www.fzmxh.org:80/gzb/480172.jhtml"  target="_blank">走月亮</a>
+     <span class="date">[2017-10-25]</span>
+   </li>
+   <li>
+     <a title="切忌走马观花——高1405班  黄嘉宇" class="main-list-cont" href="http://mp.weixin.qq.com/s/bos026T-VUgKWel5sGX11g"  target="_blank">切忌走马观花——高1405班  黄嘉宇</a>
+     <span class="date">[2017-05-09]</span>
+   </li>
+   <li>
+     <a title="书里的风景——高1601 刘雨婷" class="main-list-cont" href="http://mp.weixin.qq.com/s/p0ewmLpoT31oAACeReCmEw"  target="_blank">书里的风景——高1601 刘雨婷</a>
+     <span class="date">[2017-04-27]</span>
+   </li>
+</ul>
+</div>
+</div>
+</div>
+<!--main1 end-->
+
+<!--学生风采-->
+<div class="main3">
+<div class="main-cont">
+<div class="title-cont">
+<a href="http://www.fzmxh.org:80/xsfc/index.jhtml">
+  <span class="title-cont-t">Student&nbsp;style</span>
+  <span>学生风采</span></a>
+</div>
+<div class="main-cont" style="margin-bottom:30px;">
+ <div class="pic-left">
+   <a href="http://www.fzmxh.org:80/yszx/477678.jhtml"  target="_blank"><img src="/u/cms/sdfzmxhzx/201603/30154032yhxs.jpg" width="338" height="338" /></a>
+   <p class="pic-t1"><a href="http://www.fzmxh.org:80/yszx/477678.jhtml"  target="_blank">
+     <strong>高1506班 易烊千玺&nbsp;</strong><br />
+     <span></span>
+   </a></p>
+</div>
+   <div class="pic-right">
+     <div class="pic-right-t">
+       <div class="pic-module" style="width:150px;margin-left:18px !important;">
+	  <a href="http://www.fzmxh.org:80/hbzx/477676.jhtml"  target="_blank"><img src="/u/cms/sdfzmxhzx/201603/30145545cjf9.jpg" width="150"  height="152"/></a>
+	  <p class="pic-t2"  style="width:140px;"><a href="http://www.fzmxh.org:80/hbzx/477676.jhtml"  target="_blank"> 高1505 周轩&nbsp;</a></p>
+       </div>
+       <div class="pic-module" style="width:150px;margin-left:18px !important;">
+	  <a href="http://www.fzmxh.org:80/zyzx/477675.jhtml"  target="_blank"><img src="/u/cms/sdfzmxhzx/201603/30145437psta.jpg" width="150"  height="152"/></a>
+	  <p class="pic-t2" style="width:140px;"><a href="http://www.fzmxh.org:80/zyzx/477675.jhtml"  target="_blank">初1502 刘洪宇&nbsp;</a></p>
+       </div>
+       <div class="pic-module" style="width:150px;margin-left:18px !important;">
+	  <a href="http://www.fzmxh.org:80/zyzx/477674.jhtml"  target="_blank"><img src="/u/cms/sdfzmxhzx/201603/30145340qy21.jpg" width="150"  height="152"/></a>
+	  <p class="pic-t2" style="width:140px;"><a href="http://www.fzmxh.org:80/zyzx/477674.jhtml"  target="_blank">高1508班 文雅佳&nbsp;</a></p>
+       </div>
+       <div class="pic-module" style="width:150px;margin-left:18px !important;">
+	  <a href="http://www.fzmxh.org:80/fwzx/477673.jhtml"  target="_blank"><img src="/u/cms/sdfzmxhzx/201603/30145137lh4z.jpg" width="150"  height="152"/></a>
+	  <p class="pic-t2" style="width:140px;"><a href="http://www.fzmxh.org:80/fwzx/477673.jhtml"  target="_blank">初1512班 周仪雅&nbsp;</a></p>
+       </div>
+      </div>
+      <div class="pic-right-t mg_t40">
+        <div class="pic-module" style="width:150px;margin-left:18px !important;">
+	  <a href="http://www.fzmxh.org:80/fwzx/477672.jhtml" ><img src="/u/cms/sdfzmxhzx/201603/30144827ijlk.jpg" width="150"  height="152"/></a>
+	  <p class="pic-t2" style="width:140px;"><a href="http://www.fzmxh.org:80/fwzx/477672.jhtml" >高1509班 贺熠坤&nbsp;</a></p>
+       </div>
+       <div class="pic-module" style="width:150px;margin-left:18px !important;">
+	  <a href="http://www.fzmxh.org:80/stzx/477671.jhtml"  target="_blank"><img src="/u/cms/sdfzmxhzx/201603/30144615w0wc.jpg" width="150"  height="152"/></a>
+	  <p class="pic-t2" style="width:140px;"><a href="http://www.fzmxh.org:80/stzx/477671.jhtml"  target="_blank">高1508班 吴令珂&nbsp;</a></p>
+       </div>
+       <div class="pic-module" style="width:150px;margin-left:18px !important;">
+	  <a href="http://www.fzmxh.org:80/stzx/477670.jhtml"  target="_blank"><img src="/u/cms/sdfzmxhzx/201603/301445074lxj.jpg" width="150"  height="152"/></a>
+	  <p class="pic-t2" style="width:140px;"><a href="http://www.fzmxh.org:80/stzx/477670.jhtml"  target="_blank">高1502班 杨汉新&nbsp;</a></p>
+       </div>
+        <div class="pic-module" style="width:150px;margin-left:18px !important;">
+	  <a href="http://www.fzmxh.org:80/qfzx/477669.jhtml"  target="_blank"><img src="/u/cms/sdfzmxhzx/201603/3014373134ki.jpg" width="150"  height="152"/></a>
+	  <p class="pic-t2" style="width:140px;"><a href="http://www.fzmxh.org:80/qfzx/477669.jhtml"  target="_blank"> 高1505班 周健飞&nbsp;</a></p>
+        </div>
+       </div>
+      </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--main3 end-->
+
+<!--footer_begin-->
+<div class="main4">
+<div class="main4-link">
+    	<a href="http://www.hnedu.cn/" onclick="$.get('/friendlink_view.jspx?id=13')" target="_blank">湖南省教育厅</a> 
+         <span>|</span> 
+  	<a href="http://www.csedu.gov.cn/" onclick="$.get('/friendlink_view.jspx?id=14')" target="_blank">长沙市教育局</a> 
+         <span>|</span> 
+  	<a href="http://www.hunnu.edu.cn/" onclick="$.get('/friendlink_view.jspx?id=15')" target="_blank">湖南师范大学</a> 
+         <span>|</span> 
+  	<a href="http://www.hnsdfz.org" onclick="$.get('/friendlink_view.jspx?id=16')" target="_blank">湖南师大附中</a> 
+         <span>|</span> 
+  	<a href="http://www.hngyzx.org" onclick="$.get('/friendlink_view.jspx?id=17')" target="_blank">湖南广益实验中学</a> 
+         <span>|</span> 
+  	<a href="http://www.bcsyzx.com" onclick="$.get('/friendlink_view.jspx?id=18')" target="_blank">附中博才中学</a> 
+         <span>|</span> 
+  	<a href="http://www.fzxc.org" onclick="$.get('/friendlink_view.jspx?id=19')" target="_blank">附中星城中学</a> 
+         <span>|</span> 
+  	<a href="http://www.sdfzgx.org" onclick="$.get('/friendlink_view.jspx?id=20')" target="_blank">附中高新中学</a> 
+         <span>|</span> 
+  	<a href="http://www.hnsdfzlyfx.org" onclick="$.get('/friendlink_view.jspx?id=21')" target="_blank">附中耒阳分校</a> 
+         <span>|</span> 
+  	<a href="http://www.nncc626.com/" onclick="$.get('/friendlink_view.jspx?id=24')" target="_blank">中国禁毒网</a> 
+         <span>|</span> 
+  	<a href="http://www.hnjd.net/index.html" onclick="$.get('/friendlink_view.jspx?id=25')" target="_blank">湖南禁毒网</a> 
+        
+</div>
+<div class="main-cont">
+<div class="footer-l">
+联系电话：0731-89678811、89678833（咨询处设在图书馆一楼）<br />
+地址：长沙市湘江新区梅溪湖国际新城东南片区近湖一路1号（汽车西站正南边2公里，西二环转梅溪湖路1.5公里）<br />
+湘ICP备14019762号 湘教QS7-201411-002114&nbsp;&nbsp;技术支持：<a href="http://www.daydayup.com.cn">湖南天天向上信息科技有限公司</a>
+&nbsp;&nbsp;<a href="/mgr/login.do?returnUrl=/mgr/index.do" target="_blank">资料提交</a>
+<br />
+</div>
+<div class="footer-r">
+
+<img src="/r/cms/sdfzmxhzx/stpl2/images/code2.png" />
+<a href="http://webscan.360.cn/index/checkwebsite/url/www.fzmxh.org"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/b1d6f42ea72ea3a2d42373529c58c85a"/></a>
+</div>
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/19/282/0000/60566085/CA192820000605660850002.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+</div>
+</div>
+<!--main4 end-->
+<!--footer_end-->
+
+<!--
+<div style="z-index:9999999999999; position: absolute; top: 100px; left: 0px;" id="ad1">
+ <a href="http://www.fzmxh.org/lxyz/index.jhtml" target="_blank"><img src="/r/cms/sdfzmxhzx/stpl2/images/gundong.jpg"></a> 
+ <button id="hide" onclick="javascript:$('#ad1').hide();">x</button>
+</div>
+<script src="/r/cms/sdfzmxhzx/stpl2/js/gd.js" language="javascript"></script>
+<script type="text/javascript">
+var ad1=new AdMove("ad1"); 
+ad1.Run(); 
+</script>
+-->
+<script language="javascript" type="text/javascript"> 
+<!--//--><![CDATA[//><!-- 
+//图片滚动列表
+var Speed = 10; //速度(毫秒) 
+var Space = 5; //每次移动(px) 
+var PageWidth =230; //翻页宽度 
+var fill = 0; //整体移位 
+var MoveLock = false; 
+var MoveTimeObj; 
+var Comp = 0; 
+var AutoPlayObj = null; 
+GetObj("List2").innerHTML = GetObj("List1").innerHTML; 
+GetObj('ISL_Cont').scrollLeft = fill; 
+GetObj("ISL_Cont").onmouseover = function(){clearInterval(AutoPlayObj);} 
+GetObj("ISL_Cont").onmouseout = function(){AutoPlay();} 
+AutoPlay(); 
+function GetObj(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}} 
+function AutoPlay(){ //自动滚动 
+ clearInterval(AutoPlayObj); 
+ AutoPlayObj = setInterval('ISL_GoDown();ISL_StopDown();',2000); //间隔时间 
+} 
+function ISL_GoUp(){ //上翻开始 
+ if(MoveLock) return; 
+ clearInterval(AutoPlayObj); 
+ MoveLock = true; 
+ MoveTimeObj = setInterval('ISL_ScrUp();',Speed); 
+} 
+function ISL_StopUp(){ //上翻停止 
+ clearInterval(MoveTimeObj); 
+ if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0){ 
+  Comp = fill - (GetObj('ISL_Cont').scrollLeft % PageWidth); 
+  CompScr(); 
+ }else{ 
+  MoveLock = false; 
+ } 
+ AutoPlay(); 
+} 
+function ISL_ScrUp(){ //上翻动作 
+ if(GetObj('ISL_Cont').scrollLeft <= 0){GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft + GetObj('List1').offsetWidth} 
+ GetObj('ISL_Cont').scrollLeft -= Space ; 
+} 
+function ISL_GoDown(){ //下翻 
+ clearInterval(MoveTimeObj); 
+ if(MoveLock) return; 
+ clearInterval(AutoPlayObj); 
+ MoveLock = true; 
+ ISL_ScrDown(); 
+ MoveTimeObj = setInterval('ISL_ScrDown()',Speed); 
+} 
+function ISL_StopDown(){ //下翻停止 
+ clearInterval(MoveTimeObj); 
+ if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0 ){ 
+  Comp = PageWidth - GetObj('ISL_Cont').scrollLeft % PageWidth + fill; 
+  CompScr(); 
+ }else{ 
+  MoveLock = false; 
+ } 
+ AutoPlay(); 
+} 
+function ISL_ScrDown(){ //下翻动作 
+ if(GetObj('ISL_Cont').scrollLeft >= GetObj('List1').scrollWidth){GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft - GetObj('List1').scrollWidth;} 
+ GetObj('ISL_Cont').scrollLeft += Space ; 
+} 
+function CompScr(){ 
+ var num; 
+ if(Comp == 0){MoveLock = false;return;} 
+ if(Comp < 0){ //上翻 
+  if(Comp < -Space){ 
+   Comp += Space; 
+   num = Space; 
+  }else{ 
+   num = -Comp; 
+   Comp = 0; 
+  } 
+  GetObj('ISL_Cont').scrollLeft -= num; 
+  setTimeout('CompScr()',Speed); 
+ }else{ //下翻 
+  if(Comp > Space){ 
+   Comp -= Space; 
+   num = Space; 
+  }else{ 
+   num = Comp; 
+   Comp = 0; 
+  } 
+  GetObj('ISL_Cont').scrollLeft += num; 
+  setTimeout('CompScr()',Speed); 
+ } 
+} 
+//--><!]]> 
+
+
+function changeSub(obj,id){
+  var oid='';
+  $(obj).siblings().each(function(){
+     if($(this).attr("class")=="clcik"){
+       oid = $(this).attr("id");
+     }
+     $(this).attr("class",""); 
+  });
+  $(obj).attr("class","clcik"); 
+  if(oid){
+    $(".tchsub_"+oid).each(function(){
+       $(this).hide();
+    });
+  }
+  $(".tchsub_"+id).each(function(){
+    $(this).show();
+  });
+
+  if($("#List1 .tchsub_"+id).length>=4){
+    $("#List2").show();
+  }else{
+    $("#List2").hide();
+  }
+}
+</script> 
+</body>
+</html>

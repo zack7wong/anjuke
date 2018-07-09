@@ -1,0 +1,480 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+    <title>上海交通大学附属中学</title>
+    <link href="Css/website.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-1.4.4.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="top">
+    <div>
+        <a href="#" target="_blank">English</a><span>|</span><a href="map.aspx" target="_blank">网站地图</a><span>|</span><a href="http://mail.fz.sjtu.edu.cn" target="_blank">邮箱登录</a><span>|</span><a href="mailto:xuxiangdong@vip.163.com" target="_blank">校长信箱</a><span>|</span>
+
+        <img src="images/search.png" id="btnSearch" />
+        <input type="text" placeholder="输入内容" id="txtKeyWord" />
+    </div>
+</div>
+
+<div class="logo">
+    <div>
+        <img src="images/logo.png" />
+    </div>
+</div>
+
+<div class="top_menu">
+    <div>
+        <ul class="menuBar">
+            <li class="menu">
+                <a class="menuItem" href="index.aspx">首&nbsp;页</a>
+            </li>
+            <li><a href='articleList.aspx?typeId=2' title='交中概况'>交中概况</a><ul><li><a href='articleList.aspx?typeId=3' title='学校简介'>学校简介</a></li>
+<li><a href='articleList.aspx?typeId=4' title='校长寄语'>校长寄语</a></li>
+<li><a href='articleList.aspx?typeId=5' title='历史沿革'>历史沿革</a></li>
+<li><a href='articleList.aspx?typeId=6' title='现任领导'>现任领导</a></li>
+<li><a href='articleList.aspx?typeId=7' title='历任校长'>历任校长</a></li>
+<li><a href='articleList.aspx?typeId=8' title='学校大事'>学校大事</a></li>
+<li><a href='articleList.aspx?typeId=9' title='辉煌成就'>辉煌成就</a></li>
+<li><a href='articleList.aspx?typeId=10' title='发展规划'>发展规划</a></li>
+<li><a href='articleList.aspx?typeId=11' title='名人题词'>名人题词</a></li>
+<li><a href='articleList.aspx?typeId=12' title='对外交流'>对外交流</a></li>
+<li><a href='articleList.aspx?typeId=13' title='交中风貌'>交中风貌</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=14' title='交中党建'>交中党建</a><ul><li><a href='articleList.aspx?typeId=16' title='党委'>党委</a><ul><li><a href='articleList.aspx?typeId=17' title='党委概况'>党委概况</a></li>
+<li><a href='articleList.aspx?typeId=18' title='党建动态'>党建动态</a></li>
+<li><a href='articleList.aspx?typeId=22' title='党务公开'>党务公开</a></li>
+<li><a href='articleList.aspx?typeId=23' title='重要精神'>重要精神</a></li>
+<li><a href='articleList.aspx?typeId=24' title='理论学习'>理论学习</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=25' title='工会'>工会</a><ul><li><a href='articleList.aspx?typeId=26' title='工会介绍'>工会介绍</a></li>
+<li><a href='articleList.aspx?typeId=27' title='工会活动'>工会活动</a></li>
+<li><a href='articleList.aspx?typeId=28' title='制度法规'>制度法规</a></li>
+<li><a href='articleList.aspx?typeId=29' title='教代会'>教代会</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=30' title='团委'>团委</a><ul><li><a href='articleList.aspx?typeId=31' title='团委介绍'>团委介绍</a></li>
+<li><a href='articleList.aspx?typeId=32' title='团委计划总结'>团委计划总结</a></li>
+<li><a href='articleList.aspx?typeId=33' title='团委动态'>团委动态</a></li>
+</ul>
+</li>
+<li><a href='http://www.jdfz.sh.cn/jswm/index.aspx' target='_blank' title='文明在线'>文明在线</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=34' title='部门导航'>部门导航</a><ul><li><a href='articleList.aspx?typeId=35' title='校务办公室'>校务办公室</a><ul><li><a href='articleList.aspx?typeId=36' title='校务办公室介绍'>校务办公室介绍</a></li>
+<li><a href='articleList.aspx?typeId=37' title='信息公开'>信息公开</a></li>
+<li><a href='articleList.aspx?typeId=38' title='计划总结'>计划总结</a></li>
+<li><a href='articleList.aspx?typeId=39' title='行政会议'>行政会议</a></li>
+<li><a href='articleList.aspx?typeId=41' title='部门介绍'>部门介绍</a></li>
+<li><a href='articleList.aspx?typeId=42' title='师资招聘'>师资招聘</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=43' title='教务处'>教务处</a><ul><li><a href='articleList.aspx?typeId=44' title='部门介绍'>部门介绍</a></li>
+<li><a href='articleList.aspx?typeId=45' title='课程建设'>课程建设</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=46' title='学生处'>学生处</a><ul><li><a href='articleList.aspx?typeId=47' title='部门介绍'>部门介绍</a></li>
+<li><a href='articleList.aspx?typeId=49' title='评选奖励办法'>评选奖励办法</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=51' title='教研处'>教研处</a><ul><li><a href='articleList.aspx?typeId=52' title='部门介绍'>部门介绍</a></li>
+<li><a href='articleList.aspx?typeId=53' title='学校科研'>学校科研</a></li>
+<li><a href='articleList.aspx?typeId=54' title='计划总结'>计划总结</a></li>
+<li><a href='articleList.aspx?typeId=55' title='职称评聘'>职称评聘</a></li>
+<li><a href='articleList.aspx?typeId=56' title='教科研动态'>教科研动态</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=57' title='总务处'>总务处</a><ul><li><a href='articleList.aspx?typeId=58' title='部门介绍'>部门介绍</a></li>
+<li><a href='articleList.aspx?typeId=59' title='应急预案'>应急预案</a></li>
+<li><a href='articleList.aspx?typeId=60' title='学校收费'>学校收费</a></li>
+<li><a href='articleList.aspx?typeId=61' title='每周菜单'>每周菜单</a></li>
+<li><a href='articleList.aspx?typeId=236' title='规章制度'>规章制度</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=63' title='新疆部'>新疆部</a><ul><li><a href='articleList.aspx?typeId=64' title='部门介绍'>部门介绍</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=65' title='国际部'>国际部</a><ul><li><a href='articleList.aspx?typeId=66' title='部门介绍'>部门介绍</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=67' title='师资科研'>师资科研</a><ul><li><a href='articleList.aspx?typeId=68' title='师资概况'>师资概况</a></li>
+<li><a href='articleList.aspx?typeId=69' title='名师风范'>名师风范</a></li>
+<li><a href='articleList.aspx?typeId=70' title='学科建设'>学科建设</a><ul><li><a href='articleList.aspx?typeId=71' title='语文组'>语文组</a></li>
+<li><a href='articleList.aspx?typeId=72' title='数学组'>数学组</a></li>
+<li><a href='articleList.aspx?typeId=73' title='英语组'>英语组</a></li>
+<li><a href='articleList.aspx?typeId=74' title='物理组'>物理组</a></li>
+<li><a href='articleList.aspx?typeId=75' title='化学组'>化学组</a></li>
+<li><a href='articleList.aspx?typeId=76' title='政治组'>政治组</a></li>
+<li><a href='articleList.aspx?typeId=77' title='史地生组'>史地生组</a></li>
+<li><a href='articleList.aspx?typeId=78' title='信息劳技'>信息劳技</a></li>
+<li><a href='articleList.aspx?typeId=79' title='体艺组'>体艺组</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=80' title='教科研概况'>教科研概况</a></li>
+<li><a href='articleList.aspx?typeId=81' title='课题研究'>课题研究</a></li>
+<li><a href='articleList.aspx?typeId=82' title='教科研动态'>教科研动态</a></li>
+<li><a href='http://blog.sina.com.cn/u/2504775330' target='_blank' title='生命科学德育实训基地'>生命科学德育实训基地</a></li>
+<li><a href='articleList.aspx?typeId=85' title='物理学科高地'>物理学科高地</a></li>
+<li><a href='articleList.aspx?typeId=86' title='化学名师工作室'>化学名师工作室</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=87' title='教育科研'>教育科研</a></li>
+<li><a href='articleList.aspx?typeId=89' title='教育教学'>教育教学</a><ul><li><a href='articleList.aspx?typeId=90' title='课程设置'>课程设置</a></li>
+<li><a href='articleList.aspx?typeId=91' title='中高考信息'>中高考信息</a></li>
+<li><a href='articleList.aspx?typeId=92' title='语言文字'>语言文字</a></li>
+<li><a href='http://168.2.2.192/anmai/login.aspx' target='_blank' title='成绩管理'>成绩管理</a></li>
+<li><a href='articleList.aspx?typeId=99' title='实验中心'>实验中心</a></li>
+<li><a href='http://www.lib.sjtu.edu.cn/index.php?m=content&c=index&a=lists&catid=223' target='_blank' title='图书馆'>图书馆</a></li>
+<li><a href='articleList.aspx?typeId=102' title='学生德育'>学生德育</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=103' title='模拟社区'>模拟社区</a><ul><li><a href='articleList.aspx?typeId=104' title='社区概述'>社区概述</a></li>
+<li><a href='articleList.aspx?typeId=105' title='学生社团'>学生社团</a></li>
+<li><a href='articleList.aspx?typeId=106' title='生涯规划'>生涯规划</a><ul><li><a href='http://hs.careersky.com/Student/SignIn.aspx' target='_blank' title='北森系统'>北森系统</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=110' title='仰晖讲坛'>仰晖讲坛</a></li>
+<li><a href='articleList.aspx?typeId=121' title='帮困助学'>帮困助学</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=127' title='国际教育'>国际教育</a><ul><li><a href='http://www.jdfz.sh.cn:88/gjb/index.php/Login/index.html' target='_blank' title='国际课程班在线报名'>国际课程班在线报名</a></li>
+<li><a href='http://www.jdfz.sh.cn:88/jwxx2013/index.php/Login/index.html' target='_blank' title='教师测评'>教师测评</a></li>
+<li><a href='http://www.jdfz.sh.cn:88/ibxk/index.php?m=home&c=public&a=login' target='_blank' title='在线选课'>在线选课</a></li>
+</ul>
+</li>
+<li><a href='http://fz.sjtu.edu.cn/zsw' target='_blank' title='招生动态'>招生动态</a><ul><li><a href='http://fz.sjtu.edu.cn/zsw/' target='_blank' title='招生专网'>招生专网</a></li>
+<li><a href='articleList.aspx?typeId=155' title='招生信息'>招生信息</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=159' title='交中联盟'>交中联盟</a><ul><li><a href='articleList.aspx?typeId=161' title='交大附中教育联盟'>交大附中教育联盟</a></li>
+<li><a href='http://www.jzcj.sh.cn/' target='_blank' title='交中初级'>交中初级</a></li>
+<li><a href='http://www.jdfx.sh.cn/main/' target='_blank' title='嘉定分校'>嘉定分校</a></li>
+<li><a href='http://www.jdfzmh.sjtu.edu.cn' target='_blank' title='闵行分校'>闵行分校</a></li>
+<li><a href='http://www.hsjzsy.pudong-edu.sh.cn/homepage/default.aspx' target='_blank' title='浦东实验高中'>浦东实验高中</a></li>
+<li><a href='http://www.syun.edu.sh.cn/' target='_blank' title='少云中学'>少云中学</a></li>
+<li><a href='http://www.zyzx.edu.sh.cn/' target='_blank' title='中原中学'>中原中学</a></li>
+<li><a href='http://www.jd2fz.sjtu.edu.cn' target='_blank' title='交大二附中'>交大二附中</a></li>
+</ul>
+</li>
+<li><a href='articleList.aspx?typeId=190' title='校友会'>校友会</a></li>
+<li><a href='http://gzmooc.edu.sh.cn/mooc/schoolIndex.action?param=977&rsm=cc1aa436277138f61cda703991069eaf' target='_blank' title='交中慕课'>交中慕课</a></li>
+
+        </ul>
+    </div>
+</div>
+
+<script src="Scripts/menu.js" type="text/javascript"></script>
+<script src="Scripts/search.js" type="text/javascript"></script>
+<!--<script src="Scripts/login.js" type="text/javascript"></script>-->
+<script type="text/javascript">
+    $("#btnSearch").click(function () {
+        var word = $("#txtKeyWord").val();
+        search(word);
+    });
+
+    //$("#txtLogin").click(function () {
+    //    var url = 'http://www.foyoedu.com:8500/login.aspx';
+    //    var user = $("#txtUser").val();
+    //    var pwd = $("#txtPwd").val();
+
+    //    var stuType = "";
+    //    //if (type == "学 生")
+    //    //    stuType = 1;
+    //    //else if (type == "家 长")
+    //    //    stuType = 0; +
+
+    //    login(url, user, pwd, stuType);
+    //});
+</script>
+
+
+    <div class="cycle">
+        
+                <a href="http://fz.sjtu.edu.cn/zsw/" target="_blank">
+                    <img src="ImageFiles/20180119131335200.jpg" />
+                </a>
+            
+                <a href="articleList.aspx?typeId=218&id=8894" target="_blank">
+                    <img src="ImageFiles/20171222150634346.jpg" />
+                </a>
+            
+                <a href="articleList.aspx?typeId=218&id=8783" target="_blank">
+                    <img src="ImageFiles/20171214141015742.jpg" />
+                </a>
+            
+                <a href="articleList.aspx?typeId=218&id=8784" target="_blank">
+                    <img src="ImageFiles/20171214141050560.jpg" />
+                </a>
+            
+                <a href="http://www.jdfz.cn/articleList.aspx?typeId=171&id=14856" target="_blank">
+                    <img src="ImageFiles/20180404100942611.jpg" />
+                </a>
+            
+                <a href="http://www.jdfz.cn/articleList.aspx?typeId=170&id=14896" target="_blank">
+                    <img src="ImageFiles/20180404095540432.jpg" />
+                </a>
+            
+    </div>
+
+    <div class="column">
+        <div class="dynamic">
+            <div class="caption">最新动态</div>
+            <div class="list">
+                
+                        <p>
+                            <img src="images/icon.png" />
+                            <a href="articleList.aspx?typeId=170&id=14880" target="_blank" title="2018年上海交通大学附属中学体育特长生招生方案">
+                                2018年上海交通大学附属中学体育特长生招生方案
+                            </a>
+                        </p>
+                    
+                        <p>
+                            <img src="images/icon.png" />
+                            <a href="articleList.aspx?typeId=170&id=14841" target="_blank" title="2018上海交通大学附属中学校服采购项目招标公告">
+                                2018上海交通大学附属中学校服采购项目招标公告
+                            </a>
+                        </p>
+                    
+                        <p>
+                            <img src="images/icon.png" />
+                            <a href="articleList.aspx?typeId=170&id=8856" target="_blank" title="上海交通大学附属中学2018年招聘公告">
+                                上海交通大学附属中学2018年招聘公告
+                            </a>
+                        </p>
+                    
+                        <p>
+                            <img src="images/icon.png" />
+                            <a href="articleList.aspx?typeId=170&id=8855" target="_blank" title="上海交大附中招聘IB国际课程教师">
+                                上海交大附中招聘IB国际课程教师
+                            </a>
+                        </p>
+                    
+                        <p>
+                            <img src="images/icon.png" />
+                            <a href="articleList.aspx?typeId=170&id=15071" target="_blank" title="徐默凡专家作《语言知识如何用于语文教学》专题讲座">
+                                徐默凡专家作《语言知识如何用于语文教学》专题讲座
+                            </a>
+                        </p>
+                    
+                        <p>
+                            <img src="images/icon.png" />
+                            <a href="articleList.aspx?typeId=170&id=15065" target="_blank" title="第八十九期仰晖讲坛——“近视防控”">
+                                第八十九期仰晖讲坛——“近视防控”
+                            </a>
+                        </p>
+                    
+                        <p>
+                            <img src="images/icon.png" />
+                            <a href="articleList.aspx?typeId=170&id=15059" target="_blank" title="汤青教授来校作《学科单元教学设计与实施》专题讲座">
+                                汤青教授来校作《学科单元教学设计与实施》专题讲座
+                            </a>
+                        </p>
+                    
+                        <p>
+                            <img src="images/icon.png" />
+                            <a href="articleList.aspx?typeId=170&id=15047" target="_blank" title="见习教师教学汇报与评优活动顺利结束">
+                                见习教师教学汇报与评优活动顺利结束
+                            </a>
+                        </p>
+                    
+                <a href="articleList.aspx?typeId=170" target="_blank" class="more">更多</a>
+            </div>
+        </div>
+        <div class="focus">
+            <div class="caption">焦点新闻</div>
+            <div class="list">
+
+                
+                        <img src="ImageFiles/20180528082135319.jpg" />
+                        <span>
+                            2018-05-28
+                        </span>
+                        <div>
+                            <a href="articleList.aspx?typeId=171&id=15064" target="_blank" title="我校获OM头脑奥林匹克全球总决赛第五名">
+                                我校获OM头脑奥林匹克全球总决赛第五名
+                            </a>
+                        </div>
+                    
+
+                
+                        <p>
+                            <a href="articleList.aspx?typeId=171&id=15020" target="_blank" title="2020届致远英才班清北研学记">
+                                2020届致远英才班清北研学记
+                            </a>
+                        </p>
+                    
+                        <p>
+                            <a href="articleList.aspx?typeId=171&id=14863" target="_blank" title="交大附中2018年校园开放日顺利举行">
+                                交大附中2018年校园开放日顺利举行
+                            </a>
+                        </p>
+                    
+                        <p>
+                            <a href="articleList.aspx?typeId=171&id=14856" target="_blank" title="祝贺我校乐燎原老师入选第三批国家“万人计划”教学名师">
+                                祝贺我校乐燎原老师入选第三批国家“万人计划”教学名师
+                            </a>
+                        </p>
+                    
+                        <p>
+                            <a href="articleList.aspx?typeId=171&id=14765" target="_blank" title="上海交通大学任命万晓玲为附中党委书记">
+                                上海交通大学任命万晓玲为附中党委书记
+                            </a>
+                        </p>
+                    
+
+                <a href="articleList.aspx?typeId=171" target="_blank" class="more">更多</a>
+            </div>
+        </div>
+        <div class="person">
+            <div class="caption">交中人物</div>
+            <div class="list">
+                
+                        <img src="ImageFiles/20180524075025675.jpg" />
+                        <span>
+                            2018-05-24
+                        </span>
+                        <div>
+                            <a href="articleList.aspx?typeId=172&id=15054" target="_blank" title="思源数学奖获得者——刘文浩">
+                                思源数学奖获得者——刘文浩
+                            </a>
+                        </div>
+                    
+
+                
+                        <p>
+                            <a href="articleList.aspx?typeId=172&id=15038" target="_blank" title="思源数学奖获得者——曹欣蕾">
+                                思源数学奖获得者——曹欣蕾
+                            </a>
+                        </p>
+                    
+                        <p>
+                            <a href="articleList.aspx?typeId=172&id=15016" target="_blank" title="思源数学奖获得者——黄珺捷">
+                                思源数学奖获得者——黄珺捷
+                            </a>
+                        </p>
+                    
+                        <p>
+                            <a href="articleList.aspx?typeId=172&id=14993" target="_blank" title="思源数学奖获得者——邓逸骋">
+                                思源数学奖获得者——邓逸骋
+                            </a>
+                        </p>
+                    
+                        <p>
+                            <a href="articleList.aspx?typeId=172&id=14983" target="_blank" title="思源数学奖获得者——施嘉麒">
+                                思源数学奖获得者——施嘉麒
+                            </a>
+                        </p>
+                    
+                <a href="articleList.aspx?typeId=172" target="_blank" class="more">更多</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="link">
+    <a href="articleList.aspx?typeId=110" target="_blank">仰晖讲坛</a><span>|</span><a href="http://218.80.230.98:8882/cas/login?service=http%3A%2F%2F218.80.230.98%3A8089%2Fjdfz_school%2Fj_spring_cas_security_check%3Bjsessionid%3D4C0A944536F2651C14FE94C8FD2C4CFC" target="_blank">数字校园（校外）</a><span>|</span><a href="http://168.1.1.13:8080/ZhgProgram/frmLogin.aspx" target="_blank">心理测试</a><span>|</span><a href="articleList.aspx?typeId=175" target="_blank">信息公开</a><span>|</span><a href="http://www.shjdfz.com/" target="_blank">校内网站</a><span>|</span><a href="http://www.lib.sjtu.edu.cn/index.php?m=content&c=index&a=lists&catid=223" target="_blank">图书咨询</a><span>|</span><a href="http://www.shjdg.org/html/" target="_blank">禁毒科普教育馆</a><span>|</span><a href="http://168.1.1.12:8882/cas/login?service=http%3A%2F%2F168.1.1.16%3A8090%2Fjdfz_school%2Fj_spring_cas_security_check%3Bjsessionid%3D2032E3D1AA1D783270486BDA594ABB22" target="_blank">数字校园（校内）</a><span>|</span><a href="https://moor.shzhszpj.com/index" target="_blank">研究性学习</a><span>|</span><a href="http://www.moonride.cn" target="_blank">骑月网(第三方认证)</a><span>|</span>
+</div>
+<div class="down">
+    <img src="images/WeChat.png" />
+    <p>
+        Copyright &copy上海交通大学附属中学 沪ICP备10016824号<br />
+        地址：上海市殷高路42号 | 邮编：200439 | 联系电话：021-65911245 | 邮箱：<a href="mailto:jdfz@vip.163.com">jdfz@vip.163.com</a>
+    </p>
+    <select onchange="if(this.value!='')window.open(this.value)">
+        <option value="">友情链接</option>
+        <option value="http://www.zx110.org/">征信网</option><option value="http://www.shmec.gov.cn/">上海市教委</option><option value="http://www.sjtu.edu.cn/">上海交通大学</option><option value="http://www.hsjzsy.pudong-edu.sh.cn/">浦东实验高中</option><option value="http://www.jzcj.sh.cn/">浦东交中初级</option><option value="http://www.shmec.gov.cn/">上海教育考试院</option><option value="http://www.ks5u.com/">高考资源网</option><option value="http://www.yp.edu.sh.cn/">杨浦教育网</option><option value="http://192.168.5.6/museweb">图书馆书目检索</option><option value="http://www.cfed.cnki.net/cfed/index.html">CNKI中国知网</option><option value="http://www.shjdg.org/html/">上海市禁毒科普教育馆</option>
+    </select>
+</div>
+</body>
+<script type="text/javascript">
+    var slider = {
+        imgCnt: $(".cycle img").length
+        , index: $(".cycle img").length - 1
+        , distance: 50
+        , moveDistance: $(".cycle").outerWidth() - $(".cycle img").length * 50
+        , interval: 3000
+        , t: null
+        , moveState: false
+        , mouseOver: false
+        , autoMove: function () {
+            this.moveState = true;
+            this.index = (this.index + 1) % this.imgCnt;
+
+            if (this.index > 0)
+                $(".cycle img").eq(this.index).animate({ "left": (this.index * this.distance) + "px" }, function () {
+                    slider.moveState = false;
+                    if (!slider.mouseOver)
+                        slider.t = setTimeout("slider.autoMove()", slider.interval);
+                });
+            else {
+                for (var i = this.imgCnt - 1 ; i > 1 ; i--)
+                    $(".cycle img").eq(i).animate({ "left": this.moveDistance + (i * this.distance) + "px" });
+
+                $(".cycle img").eq(1).animate({ "left": this.moveDistance + this.distance + "px" }, function () {
+                    slider.moveState = false;
+                    if (!slider.mouseOver)
+                        slider.t = setTimeout("slider.autoMove()", slider.interval);
+                });
+            }
+        }
+        , manualMove: function (nextIndex) {
+            this.moveState = true;
+            var oldIndex = this.index;
+            this.index = nextIndex;
+
+            if (this.index > oldIndex) {
+                for (var i = oldIndex + 1; i < this.index; i++)
+                    $(".cycle img").eq(i).animate({ "left": (i * this.distance) + "px" });
+
+                $(".cycle img").eq(this.index).animate({ "left": (this.index * this.distance) + "px" }, function () {
+                    slider.moveState = false;
+                    if (!slider.mouseOver)
+                        slider.t = setTimeout("slider.autoMove()", slider.interval);
+                });
+            }
+            else {
+                for (var i = oldIndex; i > this.index + 1; i--)
+                    $(".cycle img").eq(i).animate({ "left": this.moveDistance + (i * this.distance) + "px" });
+
+                $(".cycle img").eq(this.index + 1).animate({ "left": this.moveDistance + ((this.index + 1) * this.distance) + "px" }, function () {
+                    slider.moveState = false;
+                    if (!slider.mouseOver)
+                        slider.t = setTimeout("slider.autoMove()", slider.interval);
+                });
+            }
+        }
+    };
+
+    $(".cycle img").each(function (i) {
+        $(this).css("left", i * slider.distance);
+        $(this).css("width", $(".cycle").outerWidth() - (slider.imgCnt - 1) * 50);
+    });
+    slider.t = setTimeout("slider.autoMove()", slider.interval);
+
+    $(".cycle").hover(function () {
+        slider.mouseOver = true;
+        clearTimeout(slider.t);
+
+    }, function () {
+        slider.mouseOver = false;
+        if (!slider.moveState)
+            slider.t = setTimeout("slider.autoMove()", slider.interval);
+    });
+
+    $(".cycle img").each(function (i) {
+        $(this).hover(function () {
+            if (slider.moveState)
+                return;
+
+            if (i == slider.index)
+                return;
+
+            slider.manualMove(i);
+        });
+    });
+</script>
+</html>

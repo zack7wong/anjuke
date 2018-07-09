@@ -1,0 +1,1359 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>哈尔滨市第九中学</title>
+    <link rel="stylesheet" type="text/css" href="/templets/blue/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/templets/blue/css/style.css" />
+    <script type="text/javascript" src="/templets/blue/js/koala.min.1.5.js"></script>
+    <script type="text/javascript" src="/templets/blue/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/templets/blue/js/superslide.2.1.js"></script>
+    <script type="text/javascript" src="/templets/blue/js/terminator2.2.min.js"></script>
+    <script type="text/javascript" src="/templets/blue/js/Marquee.js"></script>
+   
+    <script type="text/javascript">
+        $(function () {
+            //一次横向滚动一个
+            $('#marquee1').kxbdSuperMarquee({
+                isMarquee: true,
+                isEqual: false,
+                scrollDelay: 20,
+                controlBtn: { left: '#goL', right: '#goR' },
+                direction: 'left'
+            });
+        });
+    </script>
+</head>
+<body>
+    <span id="kk">  </span>
+    <script language="javascript" type ="text/javascript">
+        //点击量增加 
+        var xmlHttp;
+        if (window.ActiveXObject) {
+            xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        else if (window.XMLHttpRequest) {
+            xmlHttp = new XMLHttpRequest();
+        }
+        var now = new Date();
+
+        var url = "/Actions/AddBrow.ashx";
+        xmlHttp.open("GET", url, true);
+        xmlHttp.onreadystatechange = yang;
+        xmlHttp.send(null);
+
+        function yang() {
+            if (xmlHttp.readyState == 4) {
+                if (xmlHttp.status == 200) {
+                    var mes = xmlHttp.responseText;
+                    
+                }
+            }
+        }
+</script>
+    <div class="head_top">
+    <div class="head_top_content bc clearfix">
+        <div class="logo_left fl">
+            <a id="on" href="#">
+                <img src="/templets/blue/images/logo.png" /></a>
+        </div>
+        <div class="logo_right fr">
+            <div class="search">
+                <!--  class="search" -->
+                <input type="text" class="seatext" placeholder="站内搜索" onfocus="if(value==defaultValue){value='';this.style.color='#FFF'}" onblur="if(!value){value=defaultValue;this.style.color='#FFF'}" style="color: #FFFFFF">
+                <input name="serach_btn" type="image" value="搜索" class="seabtn" src="/templets/blue/images/search.png">
+
+                <!--<a id="A1" href="#" class="fr">
+                    <img src="/templets/blue/images/search.png" /></a>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 本例子代码 开始 ------------------------------------------->
+<div class="navBar">
+    <ul class="nav clearfix">
+        <li id="m1" class="m">
+            <h3><a target="_blank" href="/index.html">首页</a></h3>
+        </li>
+        
+            <li id="Li1" class="m">
+                <h3><a target="_blank" href='/html/XXGK/XXJJ/list.html'>学校概况</a></h3>
+                
+                <ul class="sub">
+                    
+                            <li><a href='/html/XXGK/XXJJ/list.html'>学校简介</a></li>
+                    
+                            <li><a href='/html/XXGK/LDGH/list.html'>领导关怀</a></li>
+                    
+                            <li><a href='/html/XXGK/JRYJ/list.html'>骄人业绩</a></li>
+                    
+                            <li><a href='/html/XXGK/DWJL/list.html'>对外交流</a></li>
+                    
+                            <li><a href='/html/XXGK/BXTS/list.html'>办学特色</a></li>
+                    
+                            <li><a href='/html/XXGK/XSCL/list.html'>校史长廊</a></li>
+                    
+                            <li><a href='/html/XXGK/JYZJS/list.html'>教研组介绍</a></li>
+                    
+                            <li><a href='/html/XXGK/JSFC/list.html'>教师风采</a></li>
+                    
+                            <li><a href='/html/XXGK/XZJY/list.html'>学子精英</a></li>
+                    
+                            <li><a href='/html/XXGK/MYJS/list.html'>名优教师</a></li>
+                    
+                            <li><a href='/html/XXZT/list.html'>学校专题</a></li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li id="Li2" class="m">
+                <h3><a target="_blank" href='/html/XYXW/TZTG/list.html'>校园新闻</a></h3>
+                
+                <ul class="sub">
+                    
+                            <li><a href='/html/XYXW/TZTG/list.html'>通知通告</a></li>
+                    
+                            <li><a href='/html/XYXW/XYKX/list.html'>校园快讯</a></li>
+                    
+                            <li><a href='/html/XYXW/ZXWZ/list.html'>最新文章</a></li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li id="Li3" class="m">
+                <h3><a target="_blank" href='/html/DYYD/DYHD/list.html'>德育园地</a></h3>
+                
+                <ul class="sub">
+                    
+                            <li><a href='/html/DYYD/DYHD/list.html'>德育活动</a></li>
+                    
+                            <li><a href='/html/DYYD/TSHD/list.html'>特色活动</a></li>
+                    
+                            <li><a href='/html/DYYD/GZZD/list.html'>规章制度</a></li>
+                    
+                            <li><a href='/html/DYYD/BZRFC/list.html'>班主任风采</a></li>
+                    
+                            <li><a href='/html/DYYD/DYCG/list.html'>德育成果</a></li>
+                    
+                            <li><a href='/html/DYYD/BZRPX/list.html'>班主任培训</a></li>
+                    
+                            <li><a href='/html/DYYD/XLDH/list.html'>心灵导航</a></li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li id="Li4" class="m">
+                <h3><a target="_blank" href='/html/JYJX/ZCFG/list.html'>教育教学</a></h3>
+                
+                <ul class="sub">
+                    
+                            <li><a href='/html/JYJX/ZCFG/list.html'>政策法规</a></li>
+                    
+                            <li><a href='/html/JYJX/JXHD/list.html'>教学活动</a></li>
+                    
+                            <li><a href='/html/JYJX/KSPJ/list.html'>考试评价</a></li>
+                    
+                            <li><a href='/html/JYJX/XBYX/list.html'>校本研修</a></li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li id="Li5" class="m">
+                <h3><a target="_blank" href='/html/ZSGK/ZSXX/list.html'>招生高考</a></h3>
+                
+                <ul class="sub">
+                    
+                            <li><a href='/html/ZSGK/ZSXX/list.html'>招生信息</a></li>
+                    
+                            <li><a href='/html/ZSGK/GKCJ/list.html'>高考成绩</a></li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li id="Li6" class="m">
+                <h3><a target="_blank" href='/html/KYXD/KYCG/list.html'>科研先导</a></h3>
+                
+                <ul class="sub">
+                    
+                            <li><a href='/html/KYXD/KYCG/list.html'>科研常规</a></li>
+                    
+                            <li><a href='/html/KYXD/KTYJ/list.html'>课题研究</a></li>
+                    
+                            <li><a href='/html/KYXD/KYHD/list.html'>科研活动</a></li>
+                    
+                            <li><a href='/html/KYXD/XDKYCG/list.html'>科研成果</a></li>
+                    
+                            <li><a href='/html/KYXD/KYDW/list.html'>科研队伍</a></li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li id="Li7" class="m">
+                <h3><a target="_blank" href='/html/XSYD/XSHD/list.html'>学生园地</a></h3>
+                
+                <ul class="sub">
+                    
+                            <li><a href='/html/XSYD/XSHD/list.html'>学生活动</a></li>
+                    
+                            <li><a href='/html/XSYD/XYZX/list.html'>校园之星</a></li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li id="Li8" class="m">
+                <h3><a target="_blank" href='/html/DJZC/DJHD/list.html'>文明校园</a></h3>
+                
+                <ul class="sub">
+                    
+                            <li><a href='/html/DJZC/XYFJ/list.html'>校园风景</a></li>
+                    
+                            <li><a href='/html/DJZC/XSHD/list.html'>学生活动</a></li>
+                    
+                            <li><a href='/html/DJZC/XYWH/list.html'>校园文化</a></li>
+                    
+                            <li><a href='/html/DJZC/SDSF/list.html'>师德师风</a></li>
+                    
+                            <li><a href='/html/DJZC/SHSJ/list.html'>社会实践</a></li>
+                    
+                            <li><a href='/html/DJZC/XSXX/list.html'>校史校训</a></li>
+                    
+                </ul>
+                
+            </li>
+        
+            <li id="Li9" class="m">
+                <h3><a target="_blank" href='/html/SBXQ/index.html'>松北校区</a></h3>
+                
+            </li>
+        
+            <li id="Li10" class="m">
+                <h3><a target="_blank" href='/html/TPPD/JYZ/list.html'>图片频道</a></h3>
+                
+                <ul class="sub">
+                    
+                            <li><a href='/html/TPPD/JYZ/list.html'>教研组</a></li>
+                    
+                            <li><a href='/html/TPPD/TSXY/list.html'>图说校园</a></li>
+                    
+                            <li><a href='/html/TPPD/XYFC/list.html'>校友风采</a></li>
+                    
+                            <li><a href='/html/TPPD/TPJSFC/list.html'>教师风采</a></li>
+                    
+                            <li><a href='/html/TPPD/TPDJZC/list.html'>党建之窗</a></li>
+                    
+                            <li><a href='/html/TPPD/YXXZ/list.html'>优秀学子</a></li>
+                    
+                </ul>
+                
+            </li>
+        
+        <li id="Li11" class="m">
+                <h3><a target="_blank" href="http://www.hrb9school.org/">国际部</a></h3>
+                
+            </li>
+    </ul>
+</div>
+<script type="text/javascript">
+    jQuery(".nav").slide({
+        type: "menu", //效果类型
+        titCell: ".m", // 鼠标触发对象
+        targetCell: ".sub", // 效果对象，必须被titCell包含
+        delayTime: 0, // 效果时间
+        triggerTime: 0, //鼠标延迟触发时间
+        returnDefault: true  //返回默认状态
+    });
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        $('.seabtn').click(function () {
+            var keyval = $('.seatext').val();
+            if (keyval == "") {
+                //Dialog.alert("请输入关键字");
+                $('.seatext').val('请输入关键字');
+                return;
+            }
+            if (keyval == "请输入关键字") {
+                //Dialog.alert("请输入关键字");
+                $('.seatext').val('请输入关键字');
+                return;
+            }
+            top.location.href = "/html/searclist.html?value=" + escape(keyval);
+          // top.location.href = "/html/searclist.html?value=" + escape(keyval);
+        })
+    })
+    jQuery(".picScroll-left").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "leftLoop", autoPlay: false, vis: 5, trigger: "click", prevCell: ".prev1", nextCell: ".next1" });
+
+</script>
+<!-- 本例子代码 结束 ------------------------------------------->
+<div class="Banner"></div>
+
+
+
+    <div class="slider">
+        <div class="bd">
+            <ul>
+                
+                <li>
+                    <a href='http://www.hrb9school.org.cn/' target="_blank">
+                        <img src='http://www.hrb9school.org.cn/UploadFiles/2018/首届文明校园.jpg' alt='首页大图' /></a>
+                </li>
+                
+                <li>
+                    <a href='http://www.hrb9school.org.cn/' target="_blank">
+                        <img src='http://www.hrb9school.org.cn/UploadFiles/2018/首页大图/banner4.jpg' alt='首页大图' /></a>
+                </li>
+                
+                <li>
+                    <a href='http://www.hrb9school.org.cn/' target="_blank">
+                        <img src='http://www.hrb9school.org.cn/UploadFiles/2018/首页大图/ppt3副本.jpg' alt='首页大图' /></a>
+                </li>
+                
+            </ul>
+            <div class="pnBtn prev">
+                <img class="left" src="/templets/blue/images/left.png" />
+                <a class="arrow" href="javascript:void(0)"></a>
+            </div>
+            <div class="pnBtn next">
+                <img class="right" src="/templets/blue/images/right.png" />
+                <a class="arrow" href="javascript:void(0)"></a>
+            </div>
+        </div>
+        <div class="hd">
+            <ul></ul>
+        </div>
+    </div>
+    <div class="content bc clearfix">
+        <div class="content_left fl">
+            <div class="content_left_one">
+                <div class="sub_banner fl">
+                    <div id="fsD1" class="focus">
+                        <div id="D1pic1" class="fPic">
+                            
+                            <div class="fcon">
+                                <a title='哈九中国际部2018届毕业生名校录取系列 (八) --英国布里斯托大学' href='/html/XYXW/XYKX/show-1133.html' target="_blank">
+                                    <img src='/UploadFiles/2018/5.9/%E8%8B%B1%E5%9B%BD%E5%B8%83%E9%87%8C%E6%96%AF%E6%89%98%E5%A4%A7%E5%AD%A6.jpg' width="660" height="380" /></a>
+                                <span class="shadow"><a title='哈九中国际部2018届毕业生名校录取系列 (八) --英国布里斯托大学' href='/html/XYXW/XYKX/show-1133.html' target="_blank">哈九中国际部2018届毕...</a></span>
+                            </div>
+                            
+                            <div class="fcon">
+                                <a title='崇尚真理 探索未知——哈九中化学教研组“创学科特色，培养关键能力”核心素养培育展示' href='/html/XYXW/XYKX/show-1132.html' target="_blank">
+                                    <img src='/UploadFiles/2018/5.9/%E5%8C%96%E5%AD%A6%E7%BB%84%E6%A0%B8%E5%BF%83%E7%B4%A0%E5%85%BB.jpg' width="660" height="380" /></a>
+                                <span class="shadow"><a title='崇尚真理 探索未知——哈九中化学教研组“创学科特色，培养关键能力”核心素养培育展示' href='/html/XYXW/XYKX/show-1132.html' target="_blank">崇尚真理 探索未知——...</a></span>
+                            </div>
+                            
+                            <div class="fcon">
+                                <a title='遵规守法明礼 安全文明出行' href='/html/XYXW/XYKX/show-1131.html' target="_blank">
+                                    <img src='/UploadFiles/2018/5.9/%E6%96%87%E6%98%8E%E5%87%BA%E8%A1%8C.jpg' width="660" height="380" /></a>
+                                <span class="shadow"><a title='遵规守法明礼 安全文明出行' href='/html/XYXW/XYKX/show-1131.html' target="_blank">遵规守法明礼 安全文明...</a></span>
+                            </div>
+                            
+                            <div class="fcon">
+                                <a title='国之重器  国之崛起——哈九中第十一期教师讲坛' href='/html/XYXW/XYKX/show-1130.html' target="_blank">
+                                    <img src='/UploadFiles/2018/20180528_110244_008.jpg' width="660" height="380" /></a>
+                                <span class="shadow"><a title='国之重器  国之崛起——哈九中第十一期教师讲坛' href='/html/XYXW/XYKX/show-1130.html' target="_blank">国之重器  国之崛起—...</a></span>
+                            </div>
+                            
+                            <div class="fcon">
+                                <a title='教育人才“组团式”援藏第二批赴黑龙江省跟岗培训工作调研座谈会在哈尔滨市第九中学隆重召开' href='/html/XYXW/XYKX/show-1129.html' target="_blank">
+                                    <img src='/UploadFiles/2018/5.9/20180524_090629_022.jpg' width="660" height="380" /></a>
+                                <span class="shadow"><a title='教育人才“组团式”援藏第二批赴黑龙江省跟岗培训工作调研座谈会在哈尔滨市第九中学隆重召开' href='/html/XYXW/XYKX/show-1129.html' target="_blank">教育人才“组团式”援...</a></span>
+                            </div>
+                             
+                        </div>
+                        <div class="fbg">
+                            <div class="D1fBt" id="D1fBt">
+                                
+                            
+                                <a href="javascript:void(0)" class="current">1</a>
+                                
+                        
+                            
+                                <a href="javascript:void(0)">2</a>
+                                
+                        
+                            
+                                <a href="javascript:void(0)">3</a>
+                                
+                        
+                            
+                                <a href="javascript:void(0)">4</a>
+                                
+                        
+                            
+                                <a href="javascript:void(0)">5</a>
+                                
+                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ones_right fr">
+                    <div class="ones_title">
+                        
+                        <p>校园新闻 <span>NEWS</span></p>
+                        <a id="A4" href='/html/XYXW/TZTG/list.html' target="_blank">更多 >></a>
+                        
+                    </div>
+                    <!--校园新闻-->
+                    <div class="ones_right_content1">
+                        
+                        <h2><a href='/html/XYXW/XYKX/show-1133.html' target="_blank" title='哈九中国际部2018届毕业生名校录取系列 (八) --英国布里斯托大学'>哈九中国际部2018届毕...</a></h2>
+                        <p>     布里斯托大学(University of Bristol),简称布大，始建于1876年，是位于英格兰西南部第一大城市布里斯托尔市。历年最高世界排名为全球第27名。在2017/18QS世界大学排名...</p>
+                         
+                    </div>
+                    <div class="lines bc"></div>
+                    <div class="ones_right_content2 clearfix">
+                        <ul>
+                            
+                            
+                        
+                            
+                            <li><a title='崇尚真理 探索未知——哈九中化学教研组“创学科特色，培养关键能力”核心素养培育展示' id="A5" href='/html/XYXW/XYKX/show-1132.html' target="_blank" class="clearfix">
+                                <p class="fl">崇尚真理 探索未知——哈九中化学教研组“创...</p>
+                                <span>2018.05.28</span></a></li>
+                            
+                        
+                            
+                            <li><a title='遵规守法明礼 安全文明出行' id="A5" href='/html/XYXW/XYKX/show-1131.html' target="_blank" class="clearfix">
+                                <p class="fl">遵规守法明礼 安全文明出行</p>
+                                <span>2018.05.28</span></a></li>
+                            
+                        
+                            
+                            <li><a title='国之重器  国之崛起——哈九中第十一期教师讲坛' id="A5" href='/html/XYXW/XYKX/show-1130.html' target="_blank" class="clearfix">
+                                <p class="fl">国之重器  国之崛起——哈九中第十一期教师...</p>
+                                <span>2018.05.28</span></a></li>
+                            
+                        
+                            
+                            <li><a title='教育人才“组团式”援藏第二批赴黑龙江省跟岗培训工作调研座谈会在哈尔滨市第九中学隆重召开' id="A5" href='/html/XYXW/XYKX/show-1129.html' target="_blank" class="clearfix">
+                                <p class="fl">教育人才“组团式”援藏第二批赴黑龙江省跟...</p>
+                                <span>2018.05.24</span></a></li>
+                            
+                        
+                            
+                            <li><a title='【教育心得】孩子，请放下沉重的心——身边的教育故事' id="A5" href='/html/XYXW/XYKX/show-1126.html' target="_blank" class="clearfix">
+                                <p class="fl">【教育心得】孩子，请放下沉重的心——身边...</p>
+                                <span>2018.05.24</span></a></li>
+                            
+                         
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content_left_two">
+                <div class="twos_left fl">
+                    <div class="content_sub_title">
+                    <!--招生高考-->
+                        
+                        <div class="left_blue fl">招生高考</div>
+                        <a id="A10" href='/html/ZSGK/ZSXX/list.html' target="_blank">更多>></a>
+                        
+                    </div>
+                    <div class="content_sub_content1 clearfix">
+                        
+                        <img src='/UploadFiles/2018/untitled.jpg' width="100" height="85" class="fl" />
+                        <h3 class="fl"><a href='/html/ZSGK/ZSXX/show-642.html' target="_blank" title='我校高三教师做客龙广《教子有方》栏目'>我校高三教师做客龙广...</a></h3>
+                        <p class="fl">      2018年2月1日至3月6日，我校高三教师连续参加龙广爱家...</p>
+                        <div style="clear: both;"></div>
+                         
+                    </div>
+                    <div class="content_sub_content2 bc">
+                        <ul>
+                            
+                            
+                            
+                            
+                            <li><a id="A11" href='/html/XXGK/XZJY/show-570.html' target="_blank" title='我校优秀校友李默研究员与北京大学第三医院乔杰院士在国际著名期刊《Cell Research》发表最新研究成果'>我校优秀校友李默研究员与北京...</a></li>
+                            
+                            
+                            
+                            <li><a id="A11" href='/html/XXGK/XSCL/show-569.html' target="_blank" title='祝贺我校学子在2017年全国中学生英语能力竞赛（NEPCS）中取得优异成绩'>祝贺我校学子在2017年全国中学...</a></li>
+                            
+                            
+                            
+                            <li><a id="A11" href='/html/XYXW/XYKX/show-924.html' target="_blank" title='我校国际部8位2018届毕业生被英国伦敦大学学院录取'>我校国际部8位2018届毕业生被英...</a></li>
+                            
+                            
+                            
+                            <li><a id="A11" href='/html/ZSGK/GKCJ/show-614.html' target="_blank" title='2017年高考600分以上光荣榜'>2017年高考600分以上光荣榜</a></li>
+                            
+                            
+                            
+                            <li><a id="A11" href='/html/ZSGK/GKCJ/show-615.html' target="_blank" title='2016届十名学生考入港澳名校'>2016届十名学生考入港澳名校</a></li>
+                            
+                             
+                        </ul>
+                    </div>
+                </div>
+                <div class="twos_right fr">
+                    <div class="content_sub_title">
+                    <!--松北快讯-->
+                        <div class="left_blue fl">松北快讯</div>
+                        <a id="A16" href="/html/SBXQ/stzgg/list.html" target="_blank">更多>></a>
+                    </div>
+                    <div class="content_sub_content1 clearfix">
+                        
+                        <img src='/UploadFiles/2018/55.jpg' width="100" height="85" class="fl" />
+                        <h3 class="fl"><a href='/html/SBXQ/stzgg/show-949.html' target="_blank" title='松北九中清明节参观萧红纪念馆'>松北九中清明节参观萧...</a></h3>
+                        <p class="fl"> 慎终追远 传承文明      清明节，是中华民族的传统节日，始于周代，已有二千五百多年的历史...</p>
+                        <div style="clear: both;"></div>
+                         
+                    </div>
+                    <div class="content_sub_content3 bc">
+                        <ul>
+                            
+                            
+                            
+                            
+                            <li><a id="A17" href='/html/SBXQ/stzgg/show-947.html' target="_blank" title='哈九中松北校区班主任例会'>哈九中松北校区班主任例会<span>2018.04.09</span></a></li>
+                            
+                            
+                            
+                            <li><a id="A17" href='/html/SBXQ/stzgg/show-917.html' target="_blank" title='与西藏培训教师篮球友谊赛'>与西藏培训教师篮球友谊赛<span>2018.04.02</span></a></li>
+                            
+                            
+                            
+                            <li><a id="A17" href='/html/SBXQ/stzgg/show-913.html' target="_blank" title='松北校区防火疏散演练及预防学生欺凌安全知识讲座'>松北校区防火疏散演练及预防学...<span>2018.03.30</span></a></li>
+                            
+                            
+                            
+                            <li><a id="A17" href='/html/SBXQ/stzgg/show-911.html' target="_blank" title='松北校区第十期教师讲坛'>松北校区第十期教师讲坛<span>2018.03.30</span></a></li>
+                            
+                            
+                            
+                            <li><a id="A17" href='/html/SBXQ/stzgg/show-899.html' target="_blank" title='松北校区召开学生安全员动员培训大会'>松北校区召开学生安全员动员培...<span>2018.03.26</span></a></li>
+                            
+                             
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content_banner">
+               
+                    <img src="/templets/blue/images/content_banner.jpg" width="758px" />
+            </div>
+            <div class="content_left_two">
+                <div class="twos_left fl">
+                    <div class="content_sub_title">
+                    <!--教育教学-->
+                        
+                        <div class="left_blue fl">教育教学</div>
+                        <a id="A23" href='/html/JYJX/ZCFG/list.html' target="_blank">更多>></a>
+                        
+                    </div>
+                    <div class="content_sub_content2 bc" style="border: 0;">
+                        <ul>
+                            
+                            <li><a id="A24" href='/html/XYXW/XYKX/show-964.html' target="_blank" title='我校国际部召开第三期班主任培训会'>我校国际部召开第三期班主任培...</a></li>
+                            
+                            <li><a id="A24" href='/html/JYJX/JXHD/show-921.html' target="_blank" title=' 我校召开全校班主任工作例会'> 我校召开全校班主任工作例会</a></li>
+                            
+                            <li><a id="A24" href='/html/JYJX/JXHD/show-851.html' target="_blank" title='江南校区高三学年召开一模总结大会'>江南校区高三学年召开一模总结...</a></li>
+                            
+                            <li><a id="A24" href='/html/JYJX/XBYX/show-894.html' target="_blank" title='哈尔滨市生物教研活动在我校举行'>哈尔滨市生物教研活动在我校举...</a></li>
+                            
+                            <li><a id="A24" href='/html/DYYD/DYHD/show-521.html' target="_blank" title='我校江南政教处举行新学期第一次班主任例会 '>我校江南政教处举行新学期第一...</a></li>
+                            
+                            <li><a id="A24" href='/html/JYJX/JXHD/show-528.html' target="_blank" title='中国人民大学“最佳生源基地”授牌仪式在我校举行'>中国人民大学“最佳生源基地”...</a></li>
+                            
+                            <li><a id="A24" href='/html/JYJX/XBYX/show-573.html' target="_blank" title='松北校区高三学年召开2017-2018年度下学期学年会议'>松北校区高三学年召开2017-201...</a></li>
+                            
+                            <li><a id="A24" href='/html/JYJX/JXHD/show-557.html' target="_blank" title='我校举办“2018年高考命题与备考策略研究”专家引领式校本研修活动'>我校举办“2018年高考命题与备...</a></li>
+                            
+                            <li><a id="A24" href='/html/JYJX/JXHD/show-531.html' target="_blank" title='我校开展“名校名师进校园”系列讲学活动 '>我校开展“名校名师进校园”系...</a></li>
+                             
+                        </ul>
+                    </div>
+                </div>
+                <div class="twos_right fr">
+                    <div class="content_sub_title">
+                    <!--德育园地-->
+                        
+                        <div class="left_blue fl">德育园地</div>
+                        <a id="A33" href='/html/DYYD/DYHD/list.html' target="_blank">更多>></a>
+                        
+                    </div>
+                    <div class="content_sub_content3 bc" style="border: 0;">
+                        <ul>
+                            
+                            <li><a id="A34" href='/html/XYXW/XYKX/show-1111.html' target="_blank" title='我校举行第十届纪念五四运动演讲比赛'>我校举行第十届纪念五四运动演... <span>2018.05.21</span></a></li>
+                            
+                            <li><a id="A34" href='/html/XYXW/XYKX/show-1112.html' target="_blank" title='我校被评为“创建全国文明城市工作先进单位”'>我校被评为“创建全国文明城市... <span>2018.05.21</span></a></li>
+                            
+                            <li><a id="A34" href='/html/XYXW/XYKX/show-1110.html' target="_blank" title='哈九中举行第27届体育节广播操比赛'>哈九中举行第27届体育节广播操... <span>2018.05.21</span></a></li>
+                            
+                            <li><a id="A34" href='/html/DYYD/TSHD/show-1088.html' target="_blank" title='我校心理组成功举办沙盘游戏教师专场互动活动'>我校心理组成功举办沙盘游戏教... <span>2018.05.17</span></a></li>
+                            
+                            <li><a id="A34" href='/html/DYYD/DYHD/show-1049.html' target="_blank" title='哈九中三月文明班级——江南校区高二·二班'>哈九中三月文明班级——江南校... <span>2018.04.25</span></a></li>
+                            
+                            <li><a id="A34" href='/html/XYXW/XYKX/show-960.html' target="_blank" title='我校举行以“文明校园 和谐发展”为主题的升旗校会'>我校举行以“文明校园 和谐发展... <span>2018.04.11</span></a></li>
+                            
+                            <li><a id="A34" href='/html/XYXW/XYKX/show-962.html' target="_blank" title='我校举行以“悼英魂，树新风”为主题的祭扫活动'>我校举行以“悼英魂，树新风”... <span>2018.04.11</span></a></li>
+                            
+                            <li><a id="A34" href='/html/DYYD/DYHD/show-903.html' target="_blank" title='拒绝校园暴力 共建阳光校园——哈九中学生欺凌知识宣传教育'>拒绝校园暴力 共建阳光校园——... <span>2018.03.28</span></a></li>
+                            
+                            <li><a id="A34" href='/html/DYYD/DYHD/show-799.html' target="_blank" title='我校国际部召开第二期班主任培训会'>我校国际部召开第二期班主任培... <span>2018.03.14</span></a></li>
+                             
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="content_left_two">
+                <div class="twos_left fl">
+                    <div class="content_sub_title">
+                    <!--党建之窗-->
+                        
+                        <div class="left_blue fl">文明校园</div>
+                        <a id="A43" href='/html/DJZC/DJHD/list.html' target="_blank">更多>></a>
+                        
+                    </div>
+                    <div class="content_sub_content1 clearfix">
+                        
+                        <img src='/UploadFiles/2018/九中外景大楼.jpg' width="100" height="85" class="fl" />
+                        <h3 class="fl"><a href='/html/DJZC/XYFJ/show-674.html' target="_blank" title='九中外景大楼'>九中外景大楼</a></h3>
+                        <p class="fl"></p>
+                        <div style="clear: both;"></div>
+                         
+                    </div>
+                    <div class="content_sub_content2 bc">
+                        <ul>
+                            
+                            
+                            
+                            
+                            <li><a id="A44" href='/html/DJZC/XYWH/show-667.html' target="_blank" title='九中精神、校训'>九中精神、校训</a></li>
+                            
+                            
+                            
+                            <li><a id="A44" href='/html/XXGK/XSCL/-981.html' target="_blank" title='哈九中历史沿革'>哈九中历史沿革</a></li>
+                            
+                            
+                            
+                            <li><a id="A44" href='/html/DJZC/XYFJ/show-680.html' target="_blank" title='图书角'>图书角</a></li>
+                            
+                            
+                            
+                            <li><a id="A44" href='/html/DJZC/XYFJ/show-679.html' target="_blank" title='图书馆'>图书馆</a></li>
+                            
+                            
+                            
+                            <li><a id="A44" href='/html/DJZC/XYFJ/show-678.html' target="_blank" title='新改造的操场'>新改造的操场</a></li>
+                            
+                             
+                        </ul>
+                    </div>
+                </div>
+                <div class="twos_right fr">
+                    <div class="content_sub_title">
+                    <!--心灵导航-->
+                        
+                        <div class="left_blue fl">学生园地</div>
+                        <a id="A49" href='/html/XSYD/XSHD/list.html' target="_blank">更多>></a>
+                        
+                    </div>
+                    <div class="content_sub_content1 clearfix">
+                        
+                        <img src='/UploadFiles/2018/微信图片_20180307094029.jpg' width="100" height="85" class="fl" />
+                        <h3 class="fl"><a href='/html/XSYD/XSHD/show-621.html' target="_blank" title='我校举行元宵节文化体验活动'>我校举行元宵节文...</a></h3>
+                        <p class="fl">     火树银花触目红，揭天鼓吹闹春风。值此佳节，哈尔滨市第九中学“闹元宵 猜灯谜”活动顺...</p>
+                        <div style="clear: both;"></div>
+                         
+                    </div>
+                    <div class="content_sub_content3 bc">
+                        <ul>
+                            
+                            
+                        
+                            
+                            <li><a id="A50" href='/html/XYXW/XYKX/show-1113.html' target="_blank" title='哈九中召开五四表彰大会暨体育节闭幕式'>哈九中召开五四表彰大会暨体育... <span>2018.05.21</span></a></li>
+                            
+                        
+                            
+                            <li><a id="A50" href='/html/XYXW/XYKX/show-1114.html' target="_blank" title='哈九中举行第27届体育节广播操比赛'>哈九中举行第27届体育节广播操... <span>2018.05.21</span></a></li>
+                            
+                        
+                            
+                            <li><a id="A50" href='/html/XYXW/XYKX/show-1115.html' target="_blank" title='我校举行第十届纪念五四运动演讲比赛'>我校举行第十届纪念五四运动演... <span>2018.05.21</span></a></li>
+                            
+                        
+                            
+                            <li><a id="A50" href='/html/XSYD/XSHD/show-830.html' target="_blank" title='精英社团培育兴趣，多彩活动陶冶情操——哈九中社团活动剪影'>精英社团培育兴趣，多彩活动陶... <span>2018.03.16</span></a></li>
+                            
+                        
+                            
+                            <li><a id="A50" href='/html/XSYD/XSHD/show-815.html' target="_blank" title='种植生命希望，迎接绿色三月——哈九中江南校区三月十二日升旗校会'>种植生命希望，迎接绿色三月—... <span>2018.03.15</span></a></li>
+                            
+                         
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="content_right fr">
+            <div class="right_blue_lines">
+                <a id="A55" href="/html/SBXQ/index.html">
+                    <img src="/templets/blue/images/right_lines1.jpg" class="fl" />
+                    <p class="fl" style="margin-left: 13px;">哈九中松北校区</p>
+                </a>
+            </div>
+            <div class="right_blue_lines">
+                <a id="A56" href="http://www.hrb9school.org/">
+                    <img src="/templets/blue/images/right_lines2.jpg" class="fl" />
+                    <p class="fl" style="margin-left: 18px;">哈九中国际部</p>
+                </a>
+            </div>
+            <div class="right_blue_lines">
+                <a id="A57" href="#">
+                    <img src="/templets/blue/images/right_lines3.jpg" class="fl" />
+                    <p class="fl" style="margin-left: 3px;">哈九中教学资源库</p>
+                </a>
+            </div>
+            <div class="right_notice">
+                <div class="right_notice_title clearfix">
+                    
+                    <img src="/templets/blue/images/notice.png" class="fl" /><h3 class="fl">通知通告</h3>
+                    <a id="A58" href='/html/XYXW/TZTG/list.html' class="fr">更多</a>
+                    
+                </div>
+                <ul class="notice_ul">
+                    
+                    <li class="clearfix"><a id="red" href='/html/DYYD/TSHD/show-659.html' target="_blank" title='我校召开争当“四有”好老师师德师风专题会'><span class="squre fl"></span>
+                        <p class="fl">我校召开争当“四有”...</p>
+                    </a><span class="notice_time fr">03-09</span></li>
+                    
+                    <li class="clearfix"><a id="red" href='/html/DJZC/DJHD/show-650.html' target="_blank" title='致九中家长们的一封信'><span class="squre fl"></span>
+                        <p class="fl">致九中家长们的一封信</p>
+                    </a><span class="notice_time fr">03-08</span></li>
+                    
+                    <li class="clearfix"><a id="red" href='/html/XXGK/XZJY/show-618.html' target="_blank" title='我校优秀校友李默研究员与北京大学第三医院乔杰院士在国际著名期刊《Cell Research》发表最新研究成果'><span class="squre fl"></span>
+                        <p class="fl">我校优秀校友李默研究...</p>
+                    </a><span class="notice_time fr">03-07</span></li>
+                    
+                    <li class="clearfix"><a id="red" href='/html/ZSGK/GKCJ/show-619.html' target="_blank" title='我校2017年高考600分以上光荣榜'><span class="squre fl"></span>
+                        <p class="fl">我校2017年高考600分以...</p>
+                    </a><span class="notice_time fr">03-07</span></li>
+                    
+                    <li class="clearfix"><a id="red" href='/html/JYJX/JXHD/show-620.html' target="_blank" title='我校教务处就“发展学生核心素养”再次召开工作促进会'><span class="squre fl"></span>
+                        <p class="fl">我校教务处就“发展学...</p>
+                    </a><span class="notice_time fr">03-07</span></li>
+                    
+                    <li class="clearfix"><a id="red" href='/html/XSYD/XSHD/show-616.html' target="_blank" title='我校女子篮球队在省中比赛中取得第四名佳绩'><span class="squre fl"></span>
+                        <p class="fl">我校女子篮球队在省中...</p>
+                    </a><span class="notice_time fr">03-07</span></li>
+                    
+                    <li class="clearfix"><a id="red" href='/html/XXGK/MYJS/show-617.html' target="_blank" title='我校被教育部评为“2017年国防教育特色学校”'><span class="squre fl"></span>
+                        <p class="fl">我校被教育部评为“20...</p>
+                    </a><span class="notice_time fr">03-07</span></li>
+                     
+                </ul>
+            </div>
+            
+            <!--     lx1017需求变更 轮换开始-->
+            <div class="right_notice">
+                <div class="right_notice_title clearfix">
+                    <!-- 学子精英 -->
+                    
+                    <img src="/templets/blue/images/prize_bottom.png" class="fl" style="margin-top: 7px;"  /><h3 class="fl">学子精英</h3>
+                    <a id="on" href='/html/XXGK/XZJY/list.html' target="_blank" class="fr">更多</a>
+                    
+                </div>
+                <div class="jingying2">
+                    
+                    <a href='/html/XXGK/XZJY/show-941.html' target="_blank" title='哈九中2017届高考状元'>
+                        <div class="zy">
+                            <img src='/UploadFiles/2018/%E5%AD%A6%E5%AD%90%E7%B2%BE%E8%8B%B1/%E5%93%88%E4%B9%9D%E4%B8%AD2017%E5%B1%8A.jpg' width="98" height="85" title='哈九中2017届高考状元' />
+                            <div class="zy_right">
+                                <h4>哈九中20...</h4>
+                                <p> </p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/XZJY/show-957.html' target="_blank" title='哈九中松北校区2017届学子精英 '>
+                        <div class="zy">
+                            <img src='/UploadFiles/2018/学子精英/江北2017.jpg' width="98" height="85" title='哈九中松北校区2017届学子精英 ' />
+                            <div class="zy_right">
+                                <h4>哈九中松...</h4>
+                                <p> </p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/XZJY/show-940.html' target="_blank" title='哈九中2016届高考状元'>
+                        <div class="zy">
+                            <img src='/UploadFiles/2018/%E5%AD%A6%E5%AD%90%E7%B2%BE%E8%8B%B1/%E5%93%88%E4%B9%9D%E4%B8%AD2016%E5%B1%8A.jpg' width="98" height="85" title='哈九中2016届高考状元' />
+                            <div class="zy_right">
+                                <h4>哈九中20...</h4>
+                                <p> </p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/XZJY/show-956.html' target="_blank" title='哈九中松北校区2016届学子精英 '>
+                        <div class="zy">
+                            <img src='/UploadFiles/2018/学子精英/江北2016.jpg' width="98" height="85" title='哈九中松北校区2016届学子精英 ' />
+                            <div class="zy_right">
+                                <h4>哈九中松...</h4>
+                                <p> </p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/XZJY/show-939.html' target="_blank" title='哈九中2015届高考状元'>
+                        <div class="zy">
+                            <img src='/UploadFiles/2018/%E5%AD%A6%E5%AD%90%E7%B2%BE%E8%8B%B1/%E5%93%88%E4%B9%9D%E4%B8%AD2015%E5%B1%8A.jpg' width="98" height="85" title='哈九中2015届高考状元' />
+                            <div class="zy_right">
+                                <h4>哈九中20...</h4>
+                                <p> </p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/XZJY/show-955.html' target="_blank" title='哈九中松北校区2015届学子精英 '>
+                        <div class="zy">
+                            <img src='/UploadFiles/2018/学子精英/江北2015.jpg' width="98" height="85" title='哈九中松北校区2015届学子精英 ' />
+                            <div class="zy_right">
+                                <h4>哈九中松...</h4>
+                                <p> </p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/XZJY/show-938.html' target="_blank" title='哈九中2014届高考状元'>
+                        <div class="zy">
+                            <img src='/UploadFiles/2018/%E5%AD%A6%E5%AD%90%E7%B2%BE%E8%8B%B1/%E5%93%88%E4%B9%9D%E4%B8%AD2014%E5%B1%8A.jpg' width="98" height="85" title='哈九中2014届高考状元' />
+                            <div class="zy_right">
+                                <h4>哈九中20...</h4>
+                                <p> </p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/XZJY/show-946.html' target="_blank" title='哈九中松北校区2014届学子精英'>
+                        <div class="zy">
+                            <img src='/UploadFiles/2018/学子精英/江北2014.jpg' width="98" height="85" title='哈九中松北校区2014届学子精英' />
+                            <div class="zy_right">
+                                <h4>哈九中松...</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/XZJY/show-937.html' target="_blank" title='哈九中2013届高考状元'>
+                        <div class="zy">
+                            <img src='/UploadFiles/2018/%E5%AD%A6%E5%AD%90%E7%B2%BE%E8%8B%B1/%E5%93%88%E4%B9%9D%E4%B8%AD2007%E5%B1%8A.jpg' width="98" height="85" title='哈九中2013届高考状元' />
+                            <div class="zy_right">
+                                <h4>哈九中20...</h4>
+                                <p> </p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/XZJY/show-945.html' target="_blank" title='哈九中松北校区2013届学子精英'>
+                        <div class="zy">
+                            <img src='/UploadFiles/2018/%E5%AD%A6%E5%AD%90%E7%B2%BE%E8%8B%B1/%E6%B1%9F%E5%8C%972013.jpg' width="98" height="85" title='哈九中松北校区2013届学子精英' />
+                            <div class="zy_right">
+                                <h4>哈九中松...</h4>
+                                <p> </p>
+                            </div>
+                        </div>
+                    </a>
+                     
+                </div>
+            </div>
+            <div class="right_notice">
+                <div class="right_notice_title clearfix">
+                    <!-- 名优教师 -->
+                    
+                    <img src="/templets/blue/images/notice.png" class="fl" style="margin-top: 7px;" /><h3 class="fl">名优教师</h3>
+                    <a id="on" href='/html/XXGK/MYJS/list.html' target="_blank" class="fr">更多</a>
+                    
+                </div>
+                <div class="jingying2">
+                    
+                    <a href='/html/XXGK/MYJS/show-563.html' target="_blank" title='姜胜民'>
+                        <div class="zy">
+                            <img title='姜胜民' src='/UploadFiles/2018/微信图片_20180228141016_small.jpg'width="98" height="85" /><div class="zy_right">
+                                <h4>姜胜民</h4>
+                                <p>           姜胜民老师现为哈九中物理组副组...</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/MYJS/show-776.html' target="_blank" title='秦凤云'>
+                        <div class="zy">
+                            <img title='秦凤云' src='/UploadFiles/2018/秦凤云.jpg'width="98" height="85" /><div class="zy_right">
+                                <h4>秦凤云</h4>
+                                <p>    秦凤云，中共党员，教育硕士，中国当代...</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/MYJS/show-770.html' target="_blank" title='申海英'>
+                        <div class="zy">
+                            <img title='申海英' src='/UploadFiles/2018/申海英.jpg'width="98" height="85" /><div class="zy_right">
+                                <h4>申海英</h4>
+                                <p>   教师简介        申海英，中学高级教师，...</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/MYJS/show-585.html' target="_blank" title='于晓凤'>
+                        <div class="zy">
+                            <img title='于晓凤' src='/UploadFiles/2018/微信图片_20180305131445.jpg'width="98" height="85" /><div class="zy_right">
+                                <h4>于晓凤</h4>
+                                <p>              于晓凤老师, 1989年毕业于齐...</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/MYJS/show-583.html' target="_blank" title='张拓新'>
+                        <div class="zy">
+                            <img title='张拓新' src='/UploadFiles/2018/微信图片_20180305105723.jpg'width="98" height="85" /><div class="zy_right">
+                                <h4>张拓新</h4>
+                                <p> 一：教师简介  张拓新，毕业于西南师范大学...</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/MYJS/show-586.html' target="_blank" title='李妍微'>
+                        <div class="zy">
+                            <img title='李妍微' src='/UploadFiles/2018/微信图片_20180305132109.jpg'width="98" height="85" /><div class="zy_right">
+                                <h4>李妍微</h4>
+                                <p>        李妍微同志，一位学校的宿舍管理主...</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/MYJS/show-682.html' target="_blank" title='吕波'>
+                        <div class="zy">
+                            <img title='吕波' src='/UploadFiles/2018/吕波.jpg'width="98" height="85" /><div class="zy_right">
+                                <h4>吕波</h4>
+                                <p>          吕波，2003年毕业于黑龙江大学英...</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/MYJS/show-765.html' target="_blank" title='卢忠杰'>
+                        <div class="zy">
+                            <img title='卢忠杰' src='/UploadFiles/2018/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20180313100234.jpg'width="98" height="85" /><div class="zy_right">
+                                <h4>卢忠杰</h4>
+                                <p>   教师简介        卢忠杰，中共党员，物理...</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/MYJS/show-564.html' target="_blank" title='高霞'>
+                        <div class="zy">
+                            <img title='高霞' src='/UploadFiles/2018/微信图片_20180228142755_small.jpg'width="98" height="85" /><div class="zy_right">
+                                <h4>高霞</h4>
+                                <p>       高霞老师自1999年大学毕业来到哈九中...</p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href='/html/XXGK/MYJS/show-768.html' target="_blank" title='刘英梅'>
+                        <div class="zy">
+                            <img title='刘英梅' src='/UploadFiles/2018/刘英梅.jpg'width="98" height="85" /><div class="zy_right">
+                                <h4>刘英梅</h4>
+                                <p>   教师简介        刘英梅，1993年工作，毕...</p>
+                            </div>
+                        </div>
+                    </a>
+                     
+                </div>
+            </div>
+            <script type="text/javascript">
+                jQuery(".right_notice").slide({ mainCell: ".jingying2", effect: "topLoop", vis:3, opp: true, autoPlay: true, delayTime: 600 });
+	</script>
+        <!--     lx1017需求变更 轮换结束-->
+            <div class="right_notice">
+                <div class="right_notice_title clearfix">
+                    <!-- 学校专题 -->
+                    
+                    <img src="/templets/blue/images/school.png" class="fl" style="margin-top: 7px;" /><h3 class="fl">学校专题</h3>
+                    <a id="A66" href='/html/XXZT/list.html' target="_blank" class="fr">更多</a>
+                    
+                </div>
+                <div class="jingying" style="height: 165px; padding-top: 8px;">
+                        
+                    <ul class="notice_ul" style="height: 40px; border: 0px;">
+                        
+                        <li class="clearfix"><a title='九中校史馆陈列物品征集令 | 那些有关九中的记忆' id="A67" href='/html/XXZT/show-759.html' target="_blank"><span class="squre fl"></span>
+                            <p class="fl">九中校史馆陈列物品征...</p>
+                        </a></li>
+                       
+                        <li class="clearfix"><a title='九中校友集结令 | 我以盛装，待你归来！' id="A67" href='/html/XXZT/show-758.html' target="_blank"><span class="squre fl"></span>
+                            <p class="fl">九中校友集结令 | 我以...</p>
+                        </a></li>
+                       
+                        <li class="clearfix"><a title='我校松北校区召开学生安全员动员与培训会议' id="A67" href='/html/XXZT/show-712.html' target="_blank"><span class="squre fl"></span>
+                            <p class="fl">我校松北校区召开学生...</p>
+                        </a></li>
+                       
+                        <li class="clearfix"><a title='我校松北校区团委学生干部培训' id="A67" href='/html/XXZT/show-711.html' target="_blank"><span class="squre fl"></span>
+                            <p class="fl">我校松北校区团委学生...</p>
+                        </a></li>
+                       
+                        <li class="clearfix"><a title='我校六次赴巴彦民乐村精准扶贫工作纪实' id="A67" href='/html/XXZT/show-653.html' target="_blank"><span class="squre fl"></span>
+                            <p class="fl">我校六次赴巴彦民乐村...</p>
+                        </a></li>
+                       
+                        <li class="clearfix"><a title='我校召开争当“四有”好老师师德师风专题会' id="A67" href='/html/DYYD/TSHD/show-658.html' target="_blank"><span class="squre fl"></span>
+                            <p class="fl">我校召开争当“四有”...</p>
+                        </a></li>
+                       
+                        <li class="clearfix"><a title='哈二十七中学毕业班师生到哈九中参观体验' id="A67" href='/html/XXGK/DWJL/show-655.html' target="_blank"><span class="squre fl"></span>
+                            <p class="fl">哈二十七中学毕业班师...</p>
+                        </a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="plc bc">
+        <div class="plc_title">
+            
+            <div class="plc_title_left">图片频道</div>
+            
+            <ul class="plc_ul clearfix">
+                
+                <li  title='优秀学子'><a href='/html/TPPD/YXXZ/list.html' target="_blank" title='优秀学子'>优秀学子</a><span>|</span></li>
+                
+                <li  title='党建之窗'><a href='/html/TPPD/TPDJZC/list.html' target="_blank" title='党建之窗'>党建之窗</a><span>|</span></li>
+                
+                <li  title='教师风采'><a href='/html/TPPD/TPJSFC/list.html' target="_blank" title='教师风采'>教师风采</a><span>|</span></li>
+                
+                <li  title='校友风采'><a href='/html/TPPD/XYFC/list.html' target="_blank" title='校友风采'>校友风采</a><span>|</span></li>
+                
+                <li  title='图说校园'><a href='/html/TPPD/TSXY/list.html' target="_blank" title='图说校园'>图说校园</a><span>|</span></li>
+                
+                <li  title='教研组'><a href='/html/TPPD/JYZ/list.html' target="_blank" title='教研组'>教研组</a><span>|</span></li>
+                
+            </ul>
+        </div>
+
+        <div class="demopage">
+            <div id="marquee1">
+                <ul>
+                    
+                    <li  title='松北九中清明节参观萧红纪念馆'><a href='/html/SBXQ/stzgg/show-949.html' title='松北九中清明节参观萧红纪念馆'>
+                        <img width="150" height="126" alt="11" src='/UploadFiles/2018/55.jpg' /><span>松北九中清明节参...</span></a></li>
+                    
+                    <li  title='哈九中松北校区班主任例会'><a href='/html/SBXQ/stzgg/show-947.html' title='哈九中松北校区班主任例会'>
+                        <img width="150" height="126" alt="11" src='/UploadFiles/2018/54.jpg' /><span>哈九中松北校区班...</span></a></li>
+                    
+                    <li  title='与西藏培训教师篮球友谊赛'><a href='/html/SBXQ/stzgg/show-917.html' title='与西藏培训教师篮球友谊赛'>
+                        <img width="150" height="126" alt="11" src='/UploadFiles/2018/53.jpg' /><span>与西藏培训教师篮...</span></a></li>
+                    
+                    <li  title='松北校区防火疏散演练及预防学生欺凌安全知识讲座'><a href='/html/SBXQ/stzgg/show-913.html' title='松北校区防火疏散演练及预防学生欺凌安全知识讲座'>
+                        <img width="150" height="126" alt="11" src='/UploadFiles/2018/52.jpg' /><span>松北校区防火疏散...</span></a></li>
+                    
+                    <li  title='松北校区第十期教师讲坛'><a href='/html/SBXQ/stzgg/show-911.html' title='松北校区第十期教师讲坛'>
+                        <img width="150" height="126" alt="11" src='/UploadFiles/2018/51.jpg' /><span>松北校区第十期教...</span></a></li>
+                    
+                    <li  title='松北校区召开学生安全员动员培训大会'><a href='/html/SBXQ/stzgg/show-899.html' title='松北校区召开学生安全员动员培训大会'>
+                        <img width="150" height="126" alt="11" src='/UploadFiles/2018/49.jpg' /><span>松北校区召开学生...</span></a></li>
+                    
+                    <li  title='哈尔滨市生物教研活动在我校举行'><a href='/html/JYJX/XBYX/show-898.html' title='哈尔滨市生物教研活动在我校举行'>
+                        <img width="150" height="126" alt="11" src='/UploadFiles/2018/生物教研活动5.jpg' /><span>哈尔滨市生物教研...</span></a></li>
+                    
+                    <li  title='我校松北校区2018届高三学年举行百日誓师大会'><a href='/html/DYYD/TSHD/show-845.html' title='我校松北校区2018届高三学年举行百日誓师大会'>
+                        <img width="150" height="126" alt="11" src='/UploadFiles/2018/微信图片_20180315075814.jpg' /><span>我校松北校区2018...</span></a></li>
+                    
+                    <li  title='我校松北校区召开学生安全员动员与培训会议'><a href='/html/XXZT/show-844.html' title='我校松北校区召开学生安全员动员与培训会议'>
+                        <img width="150" height="126" alt="11" src='/UploadFiles/2018/微信图片_20180312081609.jpg' /><span>我校松北校区召开...</span></a></li>
+                    
+                    <li  title='我校松北校区团委学生干部培训'><a href='/html/XXZT/show-843.html' title='我校松北校区团委学生干部培训'>
+                        <img width="150" height="126" alt="11" src='/UploadFiles/2018/微信图片_20180312143706.jpg' /><span>我校松北校区团委...</span></a></li>
+                    
+                    <li  title='哈九中松北校区2018春季开学式'><a href='/html/SBXQ/stzgg/show-834.html' title='哈九中松北校区2018春季开学式'>
+                        <img width="150" height="126" alt="11" src='/UploadFiles/2018/46.jpg' /><span>哈九中松北校区20...</span></a></li>
+                    
+                    <li  title='哈九中松北校区高三学年召开2017-2018年度下学期学年会议'><a href='/html/SBXQ/stzgg/show-810.html' title='哈九中松北校区高三学年召开2017-2018年度下学期学年会议'>
+                        <img width="150" height="126" alt="11" src='/UploadFiles/2018/45.jpg' /><span>哈九中松北校区高...</span></a></li>
+                     
+                </ul>
+            </div>
+            <div class="control"><a href="javascript:void(0);" id="goL"></a><a href="javascript:void(0);" id="goR"></a></div>
+        </div>
+
+    </div>
+    <div class="link">
+        <div class="link_left fl">友情链接</div>
+        <ul class="fl">
+            <li>
+                <select onchange="if(this.options[this.selectedIndex].value != ''){ window.open(this.options[this.selectedIndex].value)}">
+                    <option value="" selected="selected">政府网站</option>
+                    
+                 <option value='http://www.harbin.gov.cn/'>哈尔滨市人民政府</option>
+                    
+                 <option value='http://www.hlj.gov.cn/'>黑龙江省人民政府</option>
+                    
+                 <option value='http://www.ljxfw.gov.cn/'>龙江先锋网</option>
+                    
+                 <option value='http://www.cpcnews.cn/'>中国共产党新闻网</option>
+                    
+                </select>
+            </li>
+            <li>
+                <select onchange="if(this.options[this.selectedIndex].value != ''){ window.open(this.options[this.selectedIndex].value)}">
+                    <option value="" selected="selected">教育网站</option>
+                    
+                 <option value='http://www.hledu.net/'>哈尔滨市教育局</option>
+                    
+                 <option value='https://www.hljedu.gov.cn/'>黑龙江省教育厅</option>
+                    
+                </select>
+            </li>
+            <li>
+                <select onchange="if(this.options[this.selectedIndex].value != ''){ window.open(this.options[this.selectedIndex].value)}">
+                    <option value="" selected="selected">高校联盟</option>
+                    
+                 <option value='http://www.nenu.edu.cn/'>东北师范大学</option>
+                    
+                 <option value='http://www.ecnu.edu.cn/'>华东师范大学</option>
+                    
+                 <option value='http://www.fudan.edu.cn/2016/index.html'>复旦大学</option>
+                    
+                 <option value='http://www.nankai.edu.cn/'>天津大学</option>
+                    
+                 <option value='http://www.nankai.edu.cn/'>南开大学</option>
+                    
+                 <option value='http://www.muc.edu.cn/'>中央民族大学</option>
+                    
+                 <option value='http://www.cau.edu.cn/'>北京师范大学</option>
+                    
+                 <option value='http://www.cau.edu.cn/'>中国农业大学</option>
+                    
+                 <option value='http://www.bit.edu.cn/'>北京理工大学</option>
+                    
+                 <option value='http://www.buaa.edu.cn/'>北京航空航天大学</option>
+                    
+                 <option value='http://www.hit.edu.cn/'>哈尔滨工业大学</option>
+                    
+                 <option value='http://www.ruc.edu.cn/'>中国人民大学</option>
+                    
+                 <option value='http://http://www.tsinghua.edu.cn/publish/newthu/index.html'>清华大学</option>
+                    
+                 <option value='http://www.pku.edu.cn/'>北京大学</option>
+                    
+                </select>
+            </li>
+            <li style="margin-right: 0px;">
+                <select onchange="if(this.options[this.selectedIndex].value != ''){ window.open(this.options[this.selectedIndex].value)}">
+                    <option value="" selected="selected">常用网站</option>
+                    
+                </select>
+            </li>
+
+        </ul>
+    </div>
+    
+
+
+
+    
+
+<div class="footer">
+    <div class="footer_top bc">
+        <div class="footer_top_left">
+            <ul>
+                <li>走进九中</li>
+                
+                <li><a href='/html/XXGK/XXJJ/list.html' target="_blank" >> 学校简介</a></li>
+                
+                <li><a href='/html/XXGK/LDGH/list.html' target="_blank" >> 领导关怀</a></li>
+                
+                <li><a href='/html/XXGK/JRYJ/list.html' target="_blank" >> 骄人业绩</a></li>
+                
+                <li><a href='/html/XXGK/DWJL/list.html' target="_blank" >> 对外交流</a></li>
+                
+                <li><a href='/html/XXGK/BXTS/list.html' target="_blank" >> 办学特色</a></li>
+                
+                <li><a href='/html/XXGK/XSCL/list.html' target="_blank" >> 校史长廊</a></li>
+                
+                <!--<li><a href="#">> 领导关怀</a></li>
+                <li><a href="#">> 办学特色</a></li>
+                <li><a href="#">> 校史长廊</a></li>
+                <li><a href="#">> 对外交流</a></li>
+                <li><a href="#">> 骄人业绩</a></li>-->
+            </ul>
+            <ul>
+                
+                <li>教育教学</li>
+                
+                
+                <li><a href='/html/JYJX/ZCFG/list.html' target="_blank" >> 政策法规</a></li>
+                
+                <li><a href='/html/JYJX/JXHD/list.html' target="_blank" >> 教学活动</a></li>
+                
+                <li><a href='/html/JYJX/KSPJ/list.html' target="_blank" >> 考试评价</a></li>
+                
+                <li><a href='/html/JYJX/XBYX/list.html' target="_blank" >> 校本研修</a></li>
+                
+                <!--<li><a href="#">> 政策法规</a></li>
+                <li><a href="#">> 教学活动</a></li>
+                <li><a href="#">> 考试评价</a></li>
+                <li><a href="#">> 校本研修</a></li>-->
+            </ul>
+            <ul>
+                 
+                <li>招生高考</li>
+                
+                
+                <li><a href='/html/ZSGK/ZSXX/list.html' target="_blank" >> 招生信息</a></li>
+                
+                <li><a href='/html/ZSGK/GKCJ/list.html' target="_blank" >> 高考成绩</a></li>
+                
+                <!--<li><a href="#">> 招生信息</a></li>
+                <li><a href="#">> 高考成绩</a></li>-->
+            </ul>
+            <ul>
+                 
+                <li>图片频道</li>
+                
+                
+                <li><a href='/html/TPPD/JYZ/list.html' target="_blank" >> 教研组</a></li>
+                
+                <li><a href='/html/TPPD/TSXY/list.html' target="_blank" >> 图说校园</a></li>
+                
+                <li><a href='/html/TPPD/XYFC/list.html' target="_blank" >> 校友风采</a></li>
+                
+                <li><a href='/html/TPPD/TPJSFC/list.html' target="_blank" >> 教师风采</a></li>
+                
+                <li><a href='/html/TPPD/TPDJZC/list.html' target="_blank" >> 党建之窗</a></li>
+                
+                <li><a href='/html/TPPD/YXXZ/list.html' target="_blank" >> 优秀学子</a></li>
+                
+                <!--<li><a href="#">> 校友风采</a></li>
+                <li><a href="#">> 党建之窗</a></li>
+                <li style="text-align: left;"><a href="#">> 教研组</a></li>
+                <li><a href="#">> 图说校园</a></li>-->
+            </ul>
+        </div>
+        <div class="footer_top_right">
+            <h1>联系我们</h1>
+            <p>
+            江南校区：哈尔滨市香坊区和平路165号<br /><br />电话：0451-82801485             邮编：150040<br /><br />松北校区：哈尔滨市松北区世博路2088号世纪花园B区<br /><br />电话：0451-87163982          邮编：150028
+<br /><br />黑ICP备12000712
+                </p>
+            <p>
+            <img src='http://www.hrb9school.org.cn/UploadFiles/2018/首页大图/最新二维码.jpg' width="127" alt='二维码' />
+            </p>
+        </div>
+    </div>
+    <div class="footer_bottom bc clearfix">
+       
+            <p>Copyright 2006-2018 Harbin N0.9 School Aesthctic All Rights Reserved 哈尔滨市第九中学校版权所有    技术支持：银河天鼎
+             
+          </p>
+        
+            <p>  <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/10/160/0000/41062183/CA101600000410621830001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+          </p>
+        <div class="qq fr">
+         
+            <a href="#" class="a1"></a>
+            <a href="http://v.t.qq.com/share/share.php?url=http://www.shao-ming.com&title='分享内容'" target="_blank" class="a2"></a>
+            <a href="http://v.t.sina.com.cn/share/share.php?url=http://www.shao-ming.com&title='分享内容'" target="_blank" class="a3"></a>
+            <a href="http://v.t.qq.com/share/share.php?url=http://www.shao-ming.com&title='分享内容'" target="_blank" class="a4"></a>
+       
+        </div>
+    </div>
+ 
+   
+         
+     
+    <p class="footer_tj bc" >  今日访问量<span id="rfwl"> </span> 次>>总访问量<span id="kkhz"> </span> 次  </p>
+     <script language="javascript" type ="text/javascript">
+         //点击量增加 
+         var xmlHttp;
+         if (window.ActiveXObject) {
+             xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+         }
+         else if (window.XMLHttpRequest) {
+             xmlHttp = new XMLHttpRequest();
+         }
+         var now = new Date();
+
+         var url = "/Actions/ZDjl.ashx";
+         xmlHttp.open("GET", url, true);
+         xmlHttp.onreadystatechange = yang;
+         xmlHttp.send(null);
+
+         function yang() {
+             if (xmlHttp.readyState == 4) {
+                 if (xmlHttp.status == 200) {
+                     var mes = xmlHttp.responseText;
+                     var arr = mes.split('|');
+                     document.getElementById("kkhz").innerHTML = arr[0];
+                     document.getElementById("rfwl").innerHTML = arr[1];
+                 }
+             }
+         }
+</script>
+</div>
+
+            
+    <script type="text/javascript">
+        Qfast.add('widgets', { path: "templets/blue/js/terminator2.2.min.js", type: "js", requires: ['fx'] });
+        Qfast(false, 'widgets', function () {
+            K.tabs({
+                id: 'fsD1',   //焦点图包裹id  
+                conId: "D1pic1",  //** 大图域包裹id  
+                tabId: "D1fBt",
+                tabTn: "a",
+                conCn: '.fcon', //** 大图域配置class       
+                auto: 1,   //自动播放 1或0
+                effect: 'fade',   //效果配置
+                eType: 'click', //** 鼠标事件
+                pageBt: true,//是否有按钮切换页码
+                bns: ['.prev', '.next'],//** 前后按钮配置class                          
+                interval: 3000  //** 停顿时间  
+            })
+        })
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            /* 设置第一张图片 */
+            $(".slider .bd li").first().before($(".slider .bd li").last());
+
+            /* 鼠标悬停箭头按钮显示 */
+            $(".slider").hover(function () {
+                $(this).find(".arrow").stop(true, true).fadeIn(300)
+            }, function () {
+                $(this).find(".arrow").fadeOut(300)
+            });
+
+            /* 滚动切换 */
+            $(".slider").slide({
+                titCell: ".hd ul",
+                mainCell: ".bd ul",
+                effect: "leftLoop",
+                autoPlay: true,
+                vis: 3,
+                autoPage: true,
+                trigger: "click"
+            });
+
+        });
+    </script>
+</body>
+</html>

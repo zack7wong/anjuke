@@ -1,0 +1,533 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="九江职业大学" name="Keywords" />
+	<meta content="九江职业大学" name="Description"/>
+	<title>网站首页-九江职业大学</title>
+
+<!-- 	<link href="/Template/Default/Skin/module.css" rel="stylesheet" type="text/css" /> -->
+	<link href="/Template/Default/Skin/main/default.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+    var siteSetup = {sitePath: '/',ajaxPath: '/ajax.aspx',skinPath: '/Template/Default/Skin/'};
+</script>
+<script language="javascript" type="text/javascript" src="/JS/jquery.pack.js"></script>
+<script language="javascript" type="text/javascript" src="/JS/jquery.peex.js"></script>
+<script language="javascript" type="text/javascript" src="/Template/Default/Skin/js/jquery.SuperSlide.js"></script>
+<script language="javascript" type="text/javascript" src="/Template/Default/Skin/js/js.js"></script>
+ <!--[if IE 6]>
+<script type="text/javascript" src="/Template/Default/Skin/js/DD_belatedPNG.js"></script>
+<script>
+  DD_belatedPNG.fix('.png_bg');
+</script>
+<![endif]--> 
+
+
+<script  type="text/javascript" src='/IAA/201801/4.js'></script>
+</head>
+<body>
+	<div id="wrap">
+				<div id="header">
+			<div class="siteWidth">
+				<div class="top">
+					<div class="userPanel"><a class="a1" href="/User/Default.aspx">用户登录</a><a class="a2" href="javascript:SetHome('http://www.jjvu.jx.cn/')">设为首页</a><a class="a3" href="javascript:AddFavorite('http://www.jjvu.jx.cn/','九江职业大学')">加入收藏</a></div>
+				</div>
+				<div class="logoBar">
+					<div class="logo"><a href="http://www.jjvu.jx.cn/"><img src="/UploadFiles/201710161448522732.png" /></a></div>
+
+				</div>
+
+				<div id="slideBox" class="slideBox">
+					<div class="bannerTxt" id="bannerTxt1" ></div>
+				<div class="bannerTxt" id="bannerTxt2" ></div>
+
+					<div class="bd">
+						<ul>
+							<li class="li1">
+								<div class="pic">
+									<div class="pic_bg" style="background-image:url('/Template/Default/Skin/main/images/baifan.png') ;"></div>
+								</div>
+							</li>
+							<li class="li2">
+								<div class="pic">
+									<div class="pic_bg" style="background-image:url('/Template/Default/Skin/main/images/bangonglou.png') ;"></div>
+								</div>
+							</li>
+							<li class="li3">
+								<div class="pic">
+									<div class="pic_bg" style="background-image:url('/Template/Default/Skin/main/images/tushuguan.png') ;"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="hd">
+						<ul>
+							<li class="li1 png_fix"><span>1</span></li>
+							<li class="li2 png_fix"><span>2</span></li>
+							<li class="li3 png_fix"><span>3</span></li>
+						</ul>
+						<div class="hd_bg"></div>
+					</div>
+				</div>
+				<script language="javascript"> 
+			var txt1 = $("#bannerTxt1");
+			var txt2 = $("#bannerTxt2");
+			var sitv;
+			var bannerTxt = function(){ 
+				txt1.fadeIn(2000,function(){
+					txt2.fadeIn(1500).delay(3500).fadeOut(500);
+				}).delay(3500).fadeOut(500);
+			}
+
+					jQuery("#slideBox").slide({ mainCell:".bd ul",effect: "fade",autoPlay:true,interTime:9000,delayTime:9000});
+
+ bannerTxt();
+	setInterval("bannerTxt();",12000); 
+
+				</script>
+
+			</div>
+			<div class="nav"><ul id="mainNav" class="mainNav"><li class="li1 first1 on1" id="liID-2"><h4 class="h1" id="hID-2"><a class="a1" id="aID-2" href="/Default.aspx">网站首页</a></h4></li><li class="spe">|</li><li class="li1 hasUl1" id="liID414"><h4 class="h1" id="hID414"><a class="a1" id="aID414" href="/Category_414/Index.aspx">学校概况</a></h4><ul class="ul1" id="ulID414">
+				<li class="li2 first2" id="liID422">
+  <h4 class="h2" id="hID422"><a target="_blank2" class="a2" id="aID422" href="/Category_422/Index.aspx">学校简介</a></h4>
+</li>
+<li class="li2" id="liID423">
+  <h4 class="h2" id="hID423"><a target="_blank2" class="a2" id="aID423" href="/Category_423/Index.aspx">现任领导</a></h4>
+</li>
+<li class="li2" id="liID424">
+  <h4 class="h2" id="hID424"><a target="_blank2" class="a2" id="aID424" href="/Category_424/Index.aspx">校园风光</a></h4>
+</li>
+<li class="li2" id="liID425">
+  <h4 class="h2" id="hID425"><a target="_blank2" class="a2" id="aID425" href="/Category_425/Index.aspx">学校荣誉</a></h4>
+</li>
+<li class="li2 last2" id="liID426">
+  <h4 class="h2" id="hID426"><a target="_blank2" class="a2" id="aID426" href="/Category_426/Index.aspx">领导关怀</a></h4>
+</li>
+			</ul></li><li class="spe">|</li><li class="li1 hasUl1" id="liID415"><h4 class="h1" id="hID415"><a class="a1" id="aID415" href="/Category_415/Index.aspx">组织机构</a></h4><ul class="ul1" id="ulID415">
+				<li class="li2 first2" id="liID427">
+  <h4 class="h2" id="hID427"><a target="_blank2" class="a2" id="aID427" href="/Category_427/Index.aspx">党群部门</a></h4>
+</li>
+<li class="li2 last2" id="liID428">
+  <h4 class="h2" id="hID428"><a target="_blank2" class="a2" id="aID428" href="/Category_428/Index.aspx">行政部门</a></h4>
+</li>
+			</ul></li><li class="spe">|</li><li class="li1 hasUl1" id="liID416"><h4 class="h1" id="hID416"><a class="a1" id="aID416" href="/Category_416/Index.aspx">院部设置</a></h4><ul class="ul1" id="ulID416">
+				<li class="li2 first2" id="liID456">
+  <h4 class="h2" id="hID456"><a target="_blank2" class="a2" id="aID456" href="/Category_456/Index.aspx">师范学院</a></h4>
+</li>
+<li class="li2" id="liID457">
+  <h4 class="h2" id="hID457"><a target="_blank2" class="a2" id="aID457" href="/Category_457/Index.aspx">学前教育学院</a></h4>
+</li>
+<li class="li2" id="liID458">
+  <h4 class="h2" id="hID458"><a target="_blank2" class="a2" id="aID458" href="/Category_458/Index.aspx">艺术学院</a></h4>
+</li>
+<li class="li2" id="liID459">
+  <h4 class="h2" id="hID459"><a target="_blank2" class="a2" id="aID459" href="/Category_459/Index.aspx">机电工程学院</a></h4>
+</li>
+<li class="li2" id="liID460">
+  <h4 class="h2" id="hID460"><a target="_blank2" class="a2" id="aID460" href="/Category_460/Index.aspx">建筑工程学院</a></h4>
+</li>
+<li class="li2" id="liID461">
+  <h4 class="h2" id="hID461"><a target="_blank2" class="a2" id="aID461" href="/Category_461/Index.aspx">经济管理学院</a></h4>
+</li>
+<li class="li2" id="liID462">
+  <h4 class="h2" id="hID462"><a target="_blank2" class="a2" id="aID462" href="/Category_462/Index.aspx">文化旅游学院</a></h4>
+</li>
+<li class="li2" id="liID463">
+  <h4 class="h2" id="hID463"><a target="_blank2" class="a2" id="aID463" href="/Category_463/Index.aspx">信息工程学院</a></h4>
+</li>
+<li class="li2" id="liID464">
+  <h4 class="h2" id="hID464"><a target="_blank2" class="a2" id="aID464" href="/Category_464/Index.aspx">护理学院</a></h4>
+</li>
+<li class="li2" id="liID465">
+  <h4 class="h2" id="hID465"><a target="_blank2" class="a2" id="aID465" href="/Category_465/Index.aspx">农经学院</a></h4>
+</li>
+<li class="li2" id="liID466">
+  <h4 class="h2" id="hID466"><a target="_blank2" class="a2" id="aID466" href="/Category_466/Index.aspx">中专部</a></h4>
+</li>
+<li class="li2" id="liID467">
+  <h4 class="h2" id="hID467"><a target="_blank2" class="a2" id="aID467" href="/Category_467/Index.aspx">技师学院</a></h4>
+</li>
+<li class="li2 last2" id="liID918">
+  <h4 class="h2" id="hID918"><a target="_blank2" class="a2" id="aID918" href="http://ggkjxb.jjvu.jx.cn/">公共课教学部</a></h4>
+</li>
+			</ul></li><li class="spe">|</li><li class="li1 hasUl1" id="liID417"><h4 class="h1" id="hID417"><a class="a1" id="aID417" href="/Category_417/Index.aspx">教育科研</a></h4><ul class="ul1" id="ulID417">
+				<li class="li2 first2" id="liID468">
+  <h4 class="h2" id="hID468"><a target="_blank2" class="a2" id="aID468" href="/Category_468/Index.aspx">教务网站</a></h4>
+</li>
+<li class="li2" id="liID469">
+  <h4 class="h2" id="hID469"><a target="_blank2" class="a2" id="aID469" href="/Category_469/Index.aspx">学工在线</a></h4>
+</li>
+<li class="li2" id="liID470">
+  <h4 class="h2" id="hID470"><a target="_blank2" class="a2" id="aID470" href="/Category_470/Index.aspx">科研网站</a></h4>
+</li>
+<li class="li2 last2" id="liID925">
+  <h4 class="h2" id="hID925"><a target="_blank2" class="a2" id="aID925" href="/Category_925/Index.aspx">图书馆</a></h4>
+</li>
+			</ul></li><li class="spe">|</li><li class="li1 hasUl1" id="liID418"><h4 class="h1" id="hID418"><a class="a1" id="aID418" href="/Category_418/Index.aspx">招生就业</a></h4><ul class="ul1" id="ulID418">
+				<li class="li2 first2" id="liID471">
+  <h4 class="h2" id="hID471"><a target="_blank2" class="a2" id="aID471" href="/Category_471/Index.aspx">招生网站</a></h4>
+</li>
+<li class="li2 last2" id="liID472">
+  <h4 class="h2" id="hID472"><a target="_blank2" class="a2" id="aID472" href="/Category_472/Index.aspx">就业网站</a></h4>
+</li>
+			</ul></li><li class="spe">|</li><li class="li1" id="liID419"><h4 class="h1" id="hID419"><a class="a1" id="aID419" href="/Category_419/Index.aspx">合作交流</a></h4></li><li class="spe">|</li><li class="li1" id="liID420"><h4 class="h1" id="hID420"><a class="a1" id="aID420" href="http://jxjyxy.jjvu.jx.cn/index.aspx">继续教育</a></h4></li><li class="spe">|</li><li class="li1 last1 hasUl1" id="liID421"><h4 class="h1" id="hID421"><a class="a1" id="aID421" href="/Category_421/Index.aspx">专题网站</a></h4><ul class="ul1" id="ulID421">
+				<li class="li2 first2" id="liID473">
+  <h4 class="h2" id="hID473"><a target="_blank2" class="a2" id="aID473" href="/Category_473/Index.aspx">濂溪思政网</a></h4>
+</li>
+<li class="li2" id="liID474">
+  <h4 class="h2" id="hID474"><a target="_blank2" class="a2" id="aID474" href="/Category_474/Index.aspx">心理健康中心</a></h4>
+</li>
+<li class="li2" id="liID475">
+  <h4 class="h2" id="hID475"><a target="_blank2" class="a2" id="aID475" href="/Category_475/Index.aspx">主题教育活动网</a></h4>
+</li>
+<li class="li2 last2" id="liID929">
+  <h4 class="h2" id="hID929"><a target="_blank2" class="a2" id="aID929" href="/Category_929/Index.aspx">安全整治行动宣传工作</a></h4>
+</li>
+			</ul></li></ul><script type="text/javascript">
+			jQuery(function($){
+				var navST;
+				var name='mainNav';
+				var t=200;
+                               // var t=500;
+				var type='1';
+				var removeOn='false';
+				var effect='slide';
+				var appendItem = '#';
+				var li="#"+name+" li";
+
+				if( !$("#"+name+" .li1").hasClass("on1") ){ $("#"+name+" .li1").first().addClass("on1"); } //默认第一个加.on1类
+				if(type=='1'){ li="#"+name+" .li1"; }
+				if( appendItem!='#'){ //插入内容
+				var appendHtml = $(appendItem).html();  $(li).first().append( appendHtml );  $(appendItem).remove(); }
+
+				if(type=='3'){ $("#"+name+" .on1").find("ul").first().show(); }
+
+				$(li).hover(function(){
+					var curItem = $(this);
+					var onNum = (curItem.attr("class").split(" "))[0].replace("li","")
+					navST = setTimeout(function(){//延时触发
+					$(li).removeClass("on"+onNum); curItem.addClass("on"+onNum);
+					if( $("ul:first",curItem).css("display") !="block" ){ $(li+" .ul"+onNum).hide(); 
+						if( effect=='fade') $("ul:first",curItem).fadeIn(t);
+						else $("ul:first",curItem).slideDown(t);
+					};
+					navST = null;
+					},t);
+				}, function(){
+					if(navST!=null)clearTimeout(navST);
+					if(type=='1' || type=='2'){ 
+						if( effect=='fade') $(this).find("ul").first().fadeOut(t); 
+						else $(this).find("ul").first().slideUp(t); 
+					}
+					if (removeOn=='true') {  $(this).removeClass("on1"); }
+					},t); //end hover
+			});
+			</script></div>
+
+		</div>
+
+
+		<!-- 
+			<div class="banner" style=" background:url(/UploadFiles/UploadFiles/201705101550099446.jpg) no-repeat top center;">
+				<div class="picBanner">
+					<div class="focusBd">
+						<ul>
+							<li class="li1" style=" background:url(/UploadFiles/UploadFiles/201705101550099446.jpg) no-repeat top center;"></li>
+						</ul>
+					</div>
+				</div>
+			</div> -->
+
+
+
+
+			<div class="siteWidth">
+				<div class="ann">
+					<div class="weather">今天是：<script type="text/javascript" src="/Template/Default/Skin/js/show_date.js?type=1"></script>
+
+				</div>
+  <div class="weather">
+<!-- <iframe allowtransparency="true" frameborder="0" width="180" height="36" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=1&bd=0&k=&f=&q=1&e=0&a=0&c=58502&w=180&h=36&align=center"></iframe> -->
+</div>
+
+
+
+					<!-- siteSearch S-->
+					<div id="search" class="siteSearch">
+						<input type="text" class="keyword"  id="keyword" onfocus="value='';" value="请输入搜索关键字" id="keyword" />
+						<input type="submit" class="button" value="搜索" id="Submit"  onclick="gSearch();" />
+					</div>
+                 <script type="text/javascript">
+                    if( ''!='' ){ document.getElementById('keyword').value=''; }
+                    document.getElementById("keyword").onkeydown=function(e){
+                    e = e || window.event;
+                    if(e.keyCode==13) {gSearch();}
+                    }
+
+                    function gSearch(){
+                    var keyword = document.getElementById('keyword').value;
+                    if(keyword=='' || keyword=="请输入搜索关键字"){ alert("请输入搜索关键字"); }
+                    else{
+                    window.location = '/search/s.aspx?c=&f=0&wd='+encodeURI(keyword);
+                    }
+                    }
+                      $("#keyword").focus(function(){if($.trim($("#keyword").val())=='请输入搜索关键字'){$("#keyword").val("");}});
+                  $("#keyword").blur(function(){if($.trim($("#keyword").val())==''){$("#keyword").val("请输入搜索关键字");}});
+              
+                  </script>
+
+					<!-- siteSearch E-->
+
+
+
+
+
+				</div>
+			</div>
+			
+<!--    <script  type="text/javascript" src='/IAA/201710/2.js'></script> -->
+		<div id="content">
+           <div class="closeVis up" style="display:none;">我要收缩</div>
+			<div class="box clearfix" id="xyfj">				
+				<div class="hd">
+					<a href="/Category_480/Index.aspx" class="more">更多>></a>
+					<h3><a href="/Category_480/Index.aspx">校园风景</a></h3>
+				</div>
+				<div class="bd">
+					<!--<a class="prev"></a>
+					<a class="next"></a>-->
+					<ul class="picList">
+						
+                        <li>
+  <div class="pic"><img src="/UploadFiles/xxgk/2018/4/201804030912191113_300_190.jpg"></div>
+  <div class="title"><a title="校门" href="/Item/10003.aspx" target="_blank">校门</a></div>
+</li>
+<li>
+  <div class="pic"><img src="/UploadFiles/xxgk/2018/4/201804030927094905_300_190.jpg"></div>
+  <div class="title"><a title="校园全景" href="/Item/10011.aspx" target="_blank">校园全景</a></div>
+</li>
+<li>
+  <div class="pic"><img src="/UploadFiles/xxgk/2018/4/201804030926210192_300_190.jpg"></div>
+  <div class="title"><a title="食堂" href="/Item/10010.aspx" target="_blank">食堂</a></div>
+</li>
+<li>
+  <div class="pic"><img src="/UploadFiles/xxgk/2018/4/201804030925357988_300_190.jpg"></div>
+  <div class="title"><a title="宿舍" href="/Item/10009.aspx" target="_blank">宿舍</a></div>
+</li>
+<li>
+  <div class="pic"><img src="/UploadFiles/xxgk/2018/4/201804030924302018_300_190.jpg"></div>
+  <div class="title"><a title="宿舍群" href="/Item/10008.aspx" target="_blank">宿舍群</a></div>
+</li>
+<li>
+  <div class="pic"><img src="/UploadFiles/xxgk/2018/4/201804030923310794_300_190.jpg"></div>
+  <div class="title"><a title="实验实训中心" href="/Item/10007.aspx" target="_blank">实验实训中心</a></div>
+</li>
+<li>
+  <div class="pic"><img src="/UploadFiles/xxgk/2018/4/201804030917223194_300_190.jpg"></div>
+  <div class="title"><a title="校训" href="/Item/10006.aspx" target="_blank">校训</a></div>
+</li>
+<li>
+  <div class="pic"><img src="/UploadFiles/xxgk/2018/4/201804030913217201_300_190.jpg"></div>
+  <div class="title"><a title="体育馆" href="/Item/10005.aspx" target="_blank">体育馆</a></div>
+</li>
+<li class="last">
+  <div class="pic"><img src="/UploadFiles/xxgk/2018/4/201804030913004689_300_190.jpg"></div>
+  <div class="title"><a title="田径运动场" href="/Item/10004.aspx" target="_blank">田径运动场</a></div>
+</li>
+                    
+					</ul>
+				</div>
+				<script type="text/javascript">jQuery("#xyfj").slide({ mainCell:".bd ul",effect:"leftMarquee",vis:"4",autoPlay:true,interTime:"20",trigger:"click"});
+
+setTimeout("bannerEnter();",20000); 
+function bannerEnter () {
+	$(".closeVis").click();
+}
+
+			$(".closeVis").click(function(){
+				if($(this).hasClass("up")){
+					$(this).siblings("#xyfj").slideUp("fast");
+					$(".pnBtn").fadeIn();
+					$(this).removeClass("up");
+					//$(this).parents(".visual").css({
+					//	height: '205px',
+					//});
+					$(this).html('我要展开');
+				}else{
+					$(".closeVis").removeClass("up");
+					$(this).siblings("#xyfj").slideDown('fast');
+					$(".pnBtn").fadeOut();
+					$(this).addClass("up");
+					// $(this).parents(".visual").css({
+					// 	height: '',
+					// });
+					$(this).html('我要收缩');
+				}
+			});
+			// jQuery(".slider_wrap .bd li").first().before( jQuery(".slider_wrap .bd li").last() );
+			// jQuery(".slider_wrap").hover(function(){ jQuery(this).find(".arrow").stop(true,true).fadeIn(300) },function(){ jQuery(this).find(".arrow").fadeOut(300) });
+			// jQuery(".slider_wrap").slide({ titCell:".hd ul", mainCell:".bd ul", effect:"leftLoop",  autoPlay:true, vis:3, autoPage:true, trigger:"click"});
+
+			//jQuery(".visual").hover(function(){ jQuery(this).find(".visual_nexts,.visual_prevs").stop(true,true).fadeTo("show",1) },function(){ jQuery(this).find(".visual_nexts,.visual_prevs").fadeOut() });
+		
+				</script>
+			</div>
+          <div class="cont">
+          	 <div id="focusNews" class="focusBox">
+				
+                                   <div class="bd">
+  <ul>
+    <li class="li1">
+      <div class="pic"><a href="http://www.jjvu.jx.cn/Item/10335.aspx" target="_blank"><img src="/UploadFiles/UploadADPic/201805211031338999_600_343.jpg"></a></div>
+      <div class="con">
+        <div class="title"><a title="我校隆重举行“诵读红色家书 牢记时代使命”比赛活动" href="http://www.jjvu.jx.cn/Item/10335.aspx" target="_blank">我校隆重举行“诵读红色家书 牢记时代使命”比赛活动</a></div>
+        <div class="intro"><a href="http://www.jjvu.jx.cn/Item/10335.aspx" class="more">[详细]</a></div>
+        <div class="bg"></div>
+      </div>
+    </li>
+    <li class="li2">
+      <div class="pic"><a href="http://www.jjvu.jx.cn/Item/10304.aspx" target="_blank"><img src="/UploadFiles/UploadADPic/201805100956553996_600_343.jpg"></a></div>
+      <div class="con">
+        <div class="title"><a title="2018年党建和思想政治工作会议" href="http://www.jjvu.jx.cn/Item/10304.aspx" target="_blank">2018年党建和思想政治工作会议</a></div>
+        <div class="intro"><a href="http://www.jjvu.jx.cn/Item/10304.aspx" class="more">[详细]</a></div>
+        <div class="bg"></div>
+      </div>
+    </li>
+    <li class="li3">
+      <div class="pic"><a href="http://www.jjvu.jx.cn/Item/9124.aspx" target="_blank"><img src="/UploadFiles/UploadADPic/201711201616140874_600_343.jpg"></a></div>
+      <div class="con">
+        <div class="title"><a title="市委常委、宣传部长潘熙宁莅临我校宣讲党的十九大精神" href="http://www.jjvu.jx.cn/Item/9124.aspx" target="_blank">市委常委、宣传部长潘熙宁莅临我校宣讲党的十九大精神</a></div>
+        <div class="intro"><a href="http://www.jjvu.jx.cn/Item/9124.aspx" class="more">[详细]</a></div>
+        <div class="bg"></div>
+      </div>
+    </li>
+    <li class="li4">
+      <div class="pic"><a href="http://www.jjvu.jx.cn/Item/9115.aspx" target="_blank"><img src="/UploadFiles/UploadADPic/201711150846328164_600_343.jpg"></a></div>
+      <div class="con">
+        <div class="title"><a title="优秀校友、十九大党代表向东来校宣讲十九大精神新" href="http://www.jjvu.jx.cn/Item/9115.aspx" target="_blank">优秀校友、十九大党代表向东来校宣讲十九大精神新</a></div>
+        <div class="intro"><a href="http://www.jjvu.jx.cn/Item/9115.aspx" class="more">[详细]</a></div>
+        <div class="bg"></div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="hd">
+  <ul>
+    <li class="li1"><span>1</span></li>
+    <li class="li2"><span>2</span></li>
+    <li class="li3"><span>3</span></li>
+    <li class="li4"><span>4</span></li>
+  </ul>
+</div>
+                      
+			</div>
+				<!-- 焦点图 end -->
+               <script language="javascript"> jQuery("#focusNews").slide({ mainCell:".bd ul",effect: "fade",delayTime:800,interTime:2500,autoPlay:true});</script>
+			<!--<script language="javascript"> jQuery("#focusNews").slide({ mainCell:".bd ul",effect: "fade",autoPlay:true});</script>-->
+
+	           <div class="headcont">
+	           			 	<div class="box clearfix" id="headNews">
+						<div class="hd">
+							<ul>
+								<li><a href="/Category_476/Index.aspx">校园新闻</a></li>
+								<li><a href="/Category_478/Index.aspx">媒体聚焦</a></li>
+
+							</ul>
+						</div>
+						<div class="bd">
+							<ul class="infoList">
+								
+            <li><span class="date">2018-05-28</span><a href="/Item/10581.aspx" target="_blank" title="标题：我校第一届心理健康知识竞赛暨心理文化节闭幕式顺利举行&#xD;点击数：84&#xD;发表时间：18年05月28日">我校第一届心理健康知识竞赛暨心理文化节闭幕式顺利举行</a></li><li><span class="date">2018-05-26</span><a href="/Item/10578.aspx" target="_blank" title="标题：2018高雅艺术进校园——国家京剧院走进职大精彩上演程派名剧《锁麟囊》&#xD;点击数：146&#xD;发表时间：18年05月26日">2018高雅艺术进校园——国家京剧院走进职大精彩上演程…</a></li><li><span class="date">2018-05-25</span><a href="/Item/10575.aspx" target="_blank" title="标题：省教育厅副厅长杨慧文一行莅临我校调研指导工作&#xD;点击数：176&#xD;发表时间：18年05月25日">省教育厅副厅长杨慧文一行莅临我校调研指导工作</a></li><li><span class="date">2018-05-24</span><a href="/Item/10545.aspx" target="_blank" title="标题：副校长戴丽梅莅临就业处指导工作&#xD;点击数：289&#xD;发表时间：18年05月24日">副校长戴丽梅莅临就业处指导工作</a></li><li><span class="date">2018-05-24</span><a href="/Item/10543.aspx" target="_blank" title="标题：九江职业大学青年志愿者表彰大会圆满落幕&#xD;点击数：357&#xD;发表时间：18年05月24日">九江职业大学青年志愿者表彰大会圆满落幕</a></li><li><span class="date">2018-05-23</span><a href="/Item/10531.aspx" target="_blank" title="标题：我校召开作风建设攻坚工作会&#xD;点击数：239&#xD;发表时间：18年05月23日">我校召开作风建设攻坚工作会</a></li><li><span class="date">2018-05-21</span><a href="/Item/10484.aspx" target="_blank" title="标题：我校喜获2016-2017年度全省高校档案工作先进集体荣誉称号&#xD;点击数：239&#xD;发表时间：18年05月21日">我校喜获2016-2017年度全省高校档案工作先进集体荣誉…</a></li><li><span class="date">2018-05-18</span><a href="/Item/10470.aspx" target="_blank" title="标题：我校召开优秀校友许德珩先生生平事迹展工作事宜推进会&#xD;点击数：252&#xD;发表时间：18年05月18日">我校召开优秀校友许德珩先生生平事迹展工作事宜推进会</a></li><li><span class="date">2018-05-16</span><a href="/Item/10446.aspx" target="_blank" title="标题：鹤问湖校区开展作风建设大讨论活动&#xD;点击数：247&#xD;发表时间：18年05月16日">鹤问湖校区开展作风建设大讨论活动</a></li><li class="last"><span class="date">2018-05-16</span><a href="/Item/10410.aspx" target="_blank" title="标题：我校同濂溪区教育局开展教育合作&#xD;点击数：239&#xD;发表时间：18年05月16日">我校同濂溪区教育局开展教育合作</a></li>
+          
+							</ul>
+							<ul class="infoList">
+								
+            <li><span class="date">2018-05-28</span><a href="/Item/10583.aspx" target="_blank" title="标题：中国教育网——2018高雅艺术进校园——国家京剧院走进职大精彩上演程派名剧《锁麟囊》&#xD;点击数：8&#xD;发表时间：18年05月28日">中国教育网——2018高雅艺术进校园——国家京剧院走进…</a></li><li><span class="date">2018-05-28</span><a href="/Item/10582.aspx" target="_blank" title="标题：九江新闻网——2018高雅艺术进校园——国家京剧院走进九江职大精彩上演程派名剧《锁麟囊》&#xD;点击数：3&#xD;发表时间：18年05月28日">九江新闻网——2018高雅艺术进校园——国家京剧院走进…</a></li><li><span class="date">2018-05-25</span><a href="/Item/10576.aspx" target="_blank" title="标题：中国教育网——省教育厅副厅长杨慧文一行莅临九江职业大学调研指导工作&#xD;点击数：10&#xD;发表时间：18年05月25日">中国教育网——省教育厅副厅长杨慧文一行莅临九江职业…</a></li><li><span class="date">2018-05-23</span><a href="/Item/10539.aspx" target="_blank" title="标题：中国江西网——九江职业大学召开作风建设攻坚工作会&#xD;点击数：16&#xD;发表时间：18年05月23日">中国江西网——九江职业大学召开作风建设攻坚工作会</a></li><li><span class="date">2018-05-23</span><a href="/Item/10538.aspx" target="_blank" title="标题：中国教育网——九江职业大学召开作风建设攻坚工作会&#xD;点击数：13&#xD;发表时间：18年05月23日">中国教育网——九江职业大学召开作风建设攻坚工作会</a></li><li><span class="date">2018-05-23</span><a href="/Item/10537.aspx" target="_blank" title="标题：九江新闻网——九江职业大学召开作风建设攻坚工作会&#xD;点击数：10&#xD;发表时间：18年05月23日">九江新闻网——九江职业大学召开作风建设攻坚工作会</a></li><li><span class="date">2018-05-16</span><a href="/Item/10412.aspx" target="_blank" title="标题：九江新闻网——共同成长 协作互助 九江职业大学与濂溪区教育局签定院地教育合作&#xD;点击数：33&#xD;发表时间：18年05月16日">九江新闻网——共同成长 协作互助 九江职业大学与濂溪…</a></li><li><span class="date">2018-05-16</span><a href="/Item/10411.aspx" target="_blank" title="标题：中国江西网——九江职业大学与濂溪区开展教育合作 将共同打造一所市级名校&#xD;点击数：18&#xD;发表时间：18年05月16日">中国江西网——九江职业大学与濂溪区开展教育合作 将…</a></li><li><span class="date">2018-05-16</span><a href="/Item/10400.aspx" target="_blank" title="标题：中国江西网——九江职业大学召开2018年招生宣传工作经验交流及推进会&#xD;点击数：23&#xD;发表时间：18年05月16日">中国江西网——九江职业大学召开2018年招生宣传工作经…</a></li><li class="last"><span class="date">2018-05-16</span><a href="/Item/10399.aspx" target="_blank" title="标题：中国教育网——九江职业大学召开2018年招生宣传工作经验交流及推进会&#xD;点击数：11&#xD;发表时间：18年05月16日">中国教育网——九江职业大学召开2018年招生宣传工作经…</a></li>
+          
+							</ul>
+						
+
+						</div>
+						<script language="javascript">jQuery("#headNews").slide()</script>
+          </div>
+	           </div>
+	 </div>
+
+			<div class="column clearfix" id="column1">
+				<div class="side">
+					<div class="sideBox clearfix">
+						<div class="hd">
+							<a href="/Category_479/Index.aspx" class="more">更多>></a>
+							<h3><a href="/Category_479/Index.aspx">校内导航</a></h3>
+						</div>
+						<div class="bd">
+							<ul class="infoList">
+								
+            <li><i class="icon"></i><a href="/Item/839.aspx" target="_blank" title="标题：数字化校园&#xD;点击数：0&#xD;发表时间：17年03月27日">数字化校园</a></li><li><i class="icon"></i><a href="/Item/841.aspx" target="_blank" title="标题：校务公开&#xD;点击数：2&#xD;发表时间：17年03月27日">校务公开</a></li><li><i class="icon"></i><a href="/Item/845.aspx" target="_blank" title="标题：校园视频&#xD;点击数：3&#xD;发表时间：17年03月27日">校园视频</a></li><li><i class="icon"></i><a href="/Item/844.aspx" target="_blank" title="标题：心理健康中心&#xD;点击数：1&#xD;发表时间：17年03月27日">心理健康中心</a></li><li><i class="icon"></i><a href="/Item/843.aspx" target="_blank" title="标题：学籍查询&#xD;点击数：0&#xD;发表时间：17年03月27日">学籍查询</a></li><li><i class="icon"></i><a href="/Item/842.aspx" target="_blank" title="标题：成绩查询&#xD;点击数：0&#xD;发表时间：17年03月27日">成绩查询</a></li><li><i class="icon"></i><a href="/Item/840.aspx" target="_blank" title="标题：网络党支部&#xD;点击数：0&#xD;发表时间：17年03月27日">网络党支部</a></li><li class="last"><i class="icon"></i><a href="/Item/846.aspx" target="_blank" title="标题：下载专区&#xD;点击数：3&#xD;发表时间：17年03月27日">下载专区</a></li>
+          
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mainContent">
+                     <div class="tzgg clearfix">
+						<div class="hd">
+							<a href="/Category_477/Index.aspx" class="more">更多>></a>
+							<h3><a href="/Category_477/Index.aspx">通知公告</a></h3>
+						</div>
+						<div class="bd">
+							<ul class="infoList">
+								
+            <li><span class="date">2018-05-25</span><a href="/Item/10577.aspx" target="_blank" title="标题：全省师德建设长效机制贯彻落实情况学校及教师违反师德行为举报方式&#xD;点击数：145&#xD;发表时间：18年05月25日">全省师德建设长效机制贯彻落实情况学校及教师违反师德行为举报方式</a></li><li><span class="date">2018-05-22</span><a href="/Item/10513.aspx" target="_blank" title="标题：关于招聘暑期话务员的通知&#xD;点击数：331&#xD;发表时间：18年05月22日">关于招聘暑期话务员的通知</a></li><li><span class="date">2018-05-21</span><a href="/Item/10486.aspx" target="_blank" title="标题：关于组织师生参加江西省百万网民学人社法律法规专场竞赛活动的通知&#xD;点击数：739&#xD;发表时间：18年05月21日">关于组织师生参加江西省百万网民学人社法律法规专场竞赛活动的通知</a></li><li><span class="date">2018-05-14</span><a href="/Item/10350.aspx" target="_blank" title="标题：招标公告&#xD;点击数：402&#xD;发表时间：18年05月14日">招标公告</a></li><li><span class="date">2018-05-09</span><a href="/Item/10311.aspx" target="_blank" title="标题：关于参加2018年上半年全国大学英语四、六级考试相关事项和考前诚信教育的通知&#xD;点击数：273&#xD;发表时间：18年05月09日">关于参加2018年上半年全国大学英语四、六级考试相关事项和考前诚信教育的通知</a></li><li><span class="date">2018-05-07</span><a href="/Item/10283.aspx" target="_blank" title="标题：关于2017－2018学年（下）学期期末考试有关事项的通知&#xD;点击数：840&#xD;发表时间：18年05月07日">关于2017－2018学年（下）学期期末考试有关事项的通知</a></li><li><span class="date">2018-05-04</span><a href="/Item/10276.aspx" target="_blank" title="标题：关于开展”诵读红色家书 牢记时代使命“比赛活动的通知&#xD;点击数：535&#xD;发表时间：18年05月04日">关于开展”诵读红色家书 牢记时代使命“比赛活动的通知</a></li><li><span class="date">2018-05-03</span><a href="/Item/10263.aspx" target="_blank" title="标题：关于组织广大师生集中观看纪录影片《厉害了，我的国》的通知&#xD;点击数：482&#xD;发表时间：18年05月03日">关于组织广大师生集中观看纪录影片《厉害了，我的国》的通知</a></li><li class="last"><span class="date">2018-05-03</span><a href="/Item/10272.aspx" target="_blank" title="标题：关于认真组织收听收看纪念马克思诞辰200周年大会的通知&#xD;点击数：421&#xD;发表时间：18年05月03日">关于认真组织收听收看纪念马克思诞辰200周年大会的通知</a></li>
+          
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 头条&每周会议 end -->
+		  <!-- 友情链接 S-->
+    <div class="column" id="columnE">
+
+
+     <div class="bd" id="roll">
+
+       <div class="con"><ul>
+
+         
+            <li><a href="http://www.jxjob.net/jyzc/" target="_blank"><img src="/UploadFiles/2017/6/201706221038457779_195_49.jpg" border="0" alt="江西省大学生就业人才网"><em>江西省大学生就业人才网</em></a></li>
+<li><a href="http://www.zg114zs.com/" target="_blank"><img src="/UploadFiles/2017/6/201706221037425343_195_49.jpg" border="0" alt="中国114招生网"><em>中国114招生网</em></a></li>
+<li><a href="http://www.jjxw.cn/" target="_blank"><img src="/UploadFiles/2017/6/201706221034537271_195_49.jpg" border="0" alt="九江新闻网"><em>九江新闻网</em></a></li>
+<li><a href="http://www.jxnews.com.cn/" target="_blank"><img src="/UploadFiles/2017/6/201706221034012048_195_49.jpg" border="0" alt="中国江西网"><em>中国江西网</em></a></li>
+<li><a href="http://www.cyol.net/" target="_blank"><img src="/UploadFiles/2017/6/201706221032508365_195_49.jpg" border="0" alt="中国青年报"><em>中国青年报</em></a></li>
+<li><a href="http://www.jxedu.gov.cn/" target="_blank"><img src="/UploadFiles/2017/6/201706221031382914_195_49.jpg" border="0" alt="江西教育厅"><em>江西教育厅</em></a></li>
+<li><a href="http://www.moe.edu.cn/" target="_blank"><img src="http://www.jjvu.jx.cn/upload/090409/0904091411239770.gif" border="0" alt="教育部"><em>教育部</em></a></li>
+          
+
+       </ul>
+     </div>
+   </div>
+   <script type="text/javascript">
+     jQuery("#columnE .bd").slide({ mainCell:".con ul",effect:"leftMarquee",vis:"5",interTime:"400",autoPlay:true,trigger:"click" });
+
+   </script> 
+
+ </div>
+ <!-- 友情链接 E-->
+		</div>
+		
+		<div id="footer">
+			<div class="siteWidth">
+				<div class="copyright">
+          版权所有©九江职业大学 
+邮编：332000 联系电话：0792-8379969 传真：0792-8379969 
+地址：江西省九江市濂溪大道88号（濂溪校区） 江西省九江市九瑞大道91号（鹤问湖校区）
+        </div>
+			</div>
+		</div>
+	
+	</div>
+	<script type="text/javascript">jQuery("#column1 .sideBox li:odd").addClass("t");</script>
+</body>
+</html>

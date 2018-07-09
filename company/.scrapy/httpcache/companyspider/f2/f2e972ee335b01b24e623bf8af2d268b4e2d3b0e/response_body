@@ -1,0 +1,835 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/r/cms/www/default/css/main.css" rel="stylesheet" type="text/css">
+<link href="/r/cms/www/default/css/lrtk.css" rel="stylesheet" type="text/css">
+<!--<script type="text/javascript" src="/r/cms/www/default/js/jquery-1.8.2.min.js"></script>-->
+<script type="text/javascript" src="/r/cms/www/default/js/jquery.js"></script>
+<script type="text/javascript" src="/r/cms/www/default/js/front.js"></script>
+<script type="text/javascript" src="/r/cms/www/default/js/jquery.SuperSlide.js"></script>
+<title>首页 - 贵州轻工职业技术学院</title>
+ <script type="text/javascript" language="javascript">
+$(function(){
+     $(".sige").mouseover(function(){
+			  var i = $(".sige").index(this);	
+			  $(this).addClass("sigehs").siblings(".sige").removeClass("sigehs");
+			  $(".sigenr").eq(i).show().siblings(".sigenr").hide();
+			   $(".inthe_more").eq(i).show().siblings(".inthe_more").hide();				 
+			});
+     $(".dkrnw").mouseover(function(){
+			  var i = $(".dkrnw").index(this);	
+			  $(this).addClass("dkrnwde").siblings(".dkrnw").removeClass("dkrnwde");
+			  $(".dyt").eq(i).show().siblings(".dyt").hide();
+			   $(".erdr").eq(i).show().siblings(".erdr").hide();				 
+			});
+  $("#pfgsb").click(function(){
+    $("#drewd").hide();
+  })	
+  $("#dcwrd3").click(function(){
+    $("#img1").hide();
+  })
+});
+
+
+   //加入收藏
+       function AddFavorite(sURL, sTitle) {
+           sURL =encodeURI(sURL); 
+       try{   
+          window.external.addFavorite(sURL, sTitle);   
+       }catch(e) {   
+          try{   
+              window.sidebar.addPanel(sTitle, sURL, "");   
+           }catch (e){   
+              alert("您的浏览器不支持自动加入收藏功能，请使用Ctrl+D进行添加，或手动在浏览器里进行设置！");
+          }   
+       }
+   }
+   
+   //设为首页
+   function SetHome(url){
+       if (document.all) {
+          document.body.style.behavior='url(#default#homepage)';
+             document.body.setHomePage(url);
+       }else{
+           alert("您的浏览器不支持自动设置页面为首页功能，请您手动在浏览器里设置该页面为首页！");
+       }
+   }
+
+
+</script>
+<style>
+.main01-middle-top03-list{}
+.main01-middle-top03-list ul{overflow: hidden;}
+.main01-middle-top03-list ul li{float:none;}
+.drewd{position: fixed;right: 0;bottom: 0;}
+.drewd #pfgsb{background-color: #fff;color: #333;font-size: 12px;}
+.drewd .fxt{height: 175px;width: 200px;z-index: 100;}
+#img1{position:fixed;left:0;bottom:0;}
+#dcwrd3{font-size:12px;color:#333;float:right;}
+</style>
+</head>
+
+<body>
+<div id="img1" style="z-index: 9999;width: 207px; height: 345px;">
+   <a id="dcwrd3" href="javascript:void(0);">关闭</a>
+ <a target="_blank" href="http://www.gzqy.cn/qysp/23725.jhtml" style="color:#333;display: block;margin-bottom:4px;">
+     <img style="width:207px;height:151px;" src="/r/cms/www/default/img/float20180322.jpg" />
+  </a>
+  <a target="_blank" href="http://gkzy.gzszk.com/" style="color:#333;display: block;margin-bottom:4px;">
+     <img style="width:207px;height:151px;" src="/r/cms/www/default/img/float2018.jpg" />
+  </a>
+  <a target="_blank" href="#" style="color:#333;display: block;margin-bottom:4px;">
+     <img style="width:207px;height:151px;" src="/r/cms/www/default/img/float20180320.png" />
+  </a>
+</div>
+<script type="text/javascript" language="javascript">
+
+<!--
+		var ad1=new AdMove("floatAdd");
+		ad1.Run();
+var today=new Date();
+	var year=today.getFullYear();
+	var month=today.getMonth()+1;
+	var day=today.getDate();
+	var ss=today.getDay();
+	var hours=today.getHours();
+	var minutes=today.getMinutes();
+	var seconds=today.getSeconds();
+
+	var d = 0;
+	
+
+	if(month == 7){
+		d = 31 - day + 1;
+	}
+	else {
+		d = 0;
+	}
+	var sd1 = "开幕还有 " + d + " 天";
+	var sd2 = "Cooperation Week " + d + " Days";
+	document.getElementById("sdt1").innerHTML = sd1;
+	document.getElementById("sdt2").innerHTML = sd2;
+		//-->
+
+ </script>
+
+<!--右下角弹窗始-->
+<div id="drewd" class="drewd">
+   <a id="pfgsb" href="javascript:void(0);">关闭</a>
+  <div class="csr">
+    <a target="_blank" href="http://ddh.gzqy.cn/Category_28/Index.aspx"><img width="200" height="112" border="0" src="../../r/cms/www/default/img/index/tszlcxcy.jpg" /></a>
+  </div>
+  <div class="fxt">
+      <a target="_blank" href="http://ddh.gzqy.cn/Category_20/Index.aspx"><img width="200" height="175" border="0" src="../../r/cms/www/default/img/index/dfdw.jpg" /></a>
+   </div>
+</div>
+<!--右下角弹窗完-->
+
+<div class="banner01">
+ <div class="banner">
+  <div class="header">
+    <div class="header-list">
+      <div style="margin-top:83px;">
+      <ul>
+        <li><img src="../../r/cms/www/default/img/index/shouye.gif" height="10" width="9"><a onclick="SetHome(window.location)"href="javascript:void(0)">设为首页</a></li>
+        <li><img src="../../r/cms/www/default/img/index/shoucang.gif" height="10" width="9"><a onclick="AddFavorite(window.location,document.title)"href="javascript:void(0)">加入收藏</a></li>
+        <li><img src="../../r/cms/www/default/img/index/ditu.gif" height="10" width="9"><a href="/wzdt.jhtml" target="_blank">网站地图</a></li>
+        <li><img src="../../r/cms/www/default/img/index/ditu.gif" height="10" width="9"><a href="/search.jspx" target="_blank">高级搜索</a></li>
+      </ul>
+      </div>
+    </div>
+    <div class="search">
+        <div class="search-con" style="width:260px;">
+        <form action="/search.jspx" target="_blank" id="searchForm">
+        <input name="q" value="请输入搜索关键字" type="text" class="txtKey"  
+             onfocus="if(this.value=='请输入搜索关键字')this.value=''"  
+             onkeypress="qkeypress()" onblur="if(this.value=='')this.value='请输入搜索关键字'"  
+             maxlength="24" autocomplete="off" style="width:235px;"/>
+        </div>
+        <input type="submit" class="SearchMenu" value="搜索" style="color:#026cb8;"/> 
+        </form>
+      </div>
+  </div>
+ </div>
+</div><div class="nav">
+  <div class="nav-list">
+    <ul>
+            <li><a href="http://www.gzqy.cn:80/">首  页</a></li>
+      <li><p style="float:left; color:#6da7df; line-height:66px;">|</p><a href="http://www.gzqy.cn/qyjj.jhtml">轻院概况</a>              
+      </li>    
+      <li><p style="float:left; color:#6da7df; line-height:66px;">|</p><a href="http://www.gzqy.cn:80/zsjy/index.jhtml">招生就业</a>              
+      </li>    
+      <li><p style="float:left; color:#6da7df; line-height:66px;">|</p><a href="http://www.gzqy.cn:80/rcpy/index.jhtml">人才培养</a>              
+      </li>    
+      <li><p style="float:left; color:#6da7df; line-height:66px;">|</p><a href="http://www.gzqy.cn:80/xwgk/index.jhtml">校务公开</a>              
+      </li>    
+      <li><p style="float:left; color:#6da7df; line-height:66px;">|</p><a href="http://www.gzqy.cn:80/bxfw/index.jhtml">办学服务</a>              
+      </li>    
+      <li><p style="float:left; color:#6da7df; line-height:66px;">|</p><a href="http://www.gzqy.cn:80/gzhd/index.jhtml">公众互动</a>              
+      </li>    
+    <li><a href="http://www.gzqy.cn:80/English/index.jhtml" target="_blank">English</a></li>
+       <li><a href="http://221.13.19.246/" target="_blank">旧版回顾</a></li>
+       
+    </ul>
+  </div>
+</div><div class="mainbg" style="z-index:0;">
+ <div class="main" style="z-index:0;">
+  <div class="pic" style="z-index:0;">
+
+
+<script type="text/javascript">
+var width=997;var focus_height=384;var text_height=0;
+var swf_height=focus_height+text_height;
+var pics="";var links="";var texts="";
+pics+="/u/cms/www/201805/22142541dmah.jpg|";
+links+="http://www.gzqy.cn:80/sybt/25399.jhtml|";
+texts+="|";
+pics+="/u/cms/www/201805/22140139knya.jpg|";
+links+="http://www.gzqy.cn:80/sybt/25398.jhtml|";
+texts+="|";
+pics+="/u/cms/www/201805/14092031lbte.jpg|";
+links+="http://www.gzqy.cn:80/sybt/25139.jhtml|";
+texts+="|";
+pics+="/u/cms/www/201803/20091211yryn.jpg|";
+links+="http://www.gzqy.cn:80/sybt/23719.jhtml|";
+texts+="|";
+pics+="/u/cms/www/201803/04150944a158.jpg|";
+links+="http://www.gzqy.cn:80/sybt/23435.jhtml|";
+texts+="|";
+pics+="/u/cms/www/201712/20145048o72l.jpg|";
+links+="http://www.gzqy.cn:80/sybt/23124.jhtml|";
+texts+="|";
+pics=pics.substring(0,pics.length-1);
+links=links.substring(0,links.length-1);
+texts=texts.substring(0,texts.length-1);
+document.write('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="'+width+'" height="'+swf_height+'">');
+document.write('<param name="movie" value="/r/cms/focus1.swf"/>');
+document.write('<param name="quality" value="high"/><param name="bgcolor" value="#F0F0F0"/>');
+document.write('<param name="menu" value="false"/><param name="wmode" value="opaque"/>');
+document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+width+'&borderheight='+focus_height+'&textheight='+text_height+'"/>');
+document.write('<embed src="/r/cms/focus1.swf" width="'+width+'" height="'+swf_height+'" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" wmode="opaque" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>');
+document.write('</object>');
+</script>
+
+   <!--<embed transparent="ture" wmode="transparent" style="width:997px;height:384px;" src="../../r/cms/www/default/img/sysy.swf" quality="high" type="application/x-shockwave-flash"></embed>-->
+  </div>
+  <div class="main01">
+    <div class="main01-left">
+      <div class="main01-left-top01">
+        <div class="main01-left-top01-nav">
+          <div class="main01-left-top01-nav-list">
+            <ul>
+              <li class="sige sigehs"><a href="http://www.gzqy.cn:80/yxyw/index.jhtml"><span>学院要闻</span></a></li>
+              <li class="sige"><a href="http://www.gzqy.cn:80/bmdt/index.jhtml"><span>部门动态</span></a></li>
+              <li class="sige"><a href="http://www.gzqy.cn:80/qygs/index.jhtml"><span>轻院故事</span></a></li>
+            </ul>
+            <a href="http://www.gzqy.cn:80/yxyw/index.jhtml" style="font-size:12px; color:#545454; font-family:Arial, Helvetica, sans-serif; float:right; margin-top:10px;" class="inthe_more">更多>></a>
+            <a href="http://www.gzqy.cn:80/bmdt/index.jhtml" style="display:none;font-size:12px; color:#545454; font-family:Arial, Helvetica, sans-serif; float:right; margin-top:10px;" class="inthe_more">更多>></a>
+            <a href="http://www.gzqy.cn:80/qygs/index.jhtml" style="display:none;font-size:12px; color:#545454; font-family:Arial, Helvetica, sans-serif; float:right; margin-top:10px;" class="inthe_more">更多>></a>
+          </div>
+        </div>
+        <div class="sigenr">
+        <div class="main01-left-top01-pic">
+          <div class="left-top02-pic">
+
+
+<script type="text/javascript">
+var width=330;var focus_height=192;var text_height=20;
+var swf_height=focus_height+text_height;
+var pics="";var links="";var texts="";
+pics+="/u/cms/www/201803/20085210d15c.jpg|";
+links+="http://www.gzqy.cn:80/yxyw/23711.jhtml|";
+texts+="学院党委副书记、院长周杰率队赴剑河县调研并开展结对帮扶工作|";
+pics+="/u/cms/www/201803/12110048cbgr.jpg|";
+links+="http://www.gzqy.cn:80/yxyw/23553.jhtml|";
+texts+="职业教育助力精准脱贫  校农结合推动乡村振兴|";
+pics+="/u/cms/www/201712/15140614a315.jpg|";
+links+="http://www.gzqy.cn:80/yxyw/23021.jhtml|";
+texts+="学院隆重举行“牢记使命跟党走  青春启航谱新篇” 2017年学生表|";
+pics+="/u/cms/www/201712/05160321nytl.jpg|";
+links+="http://www.gzqy.cn:80/yxyw/22533.jhtml|";
+texts+="【学习宣传十九大专题（二十三）】党委副书记、院长周杰深入学院|";
+pics+="/u/cms/www/201711/270952083gjn.jpg|";
+links+="http://www.gzqy.cn:80/yxyw/22507.jhtml|";
+texts+="【学习宣传十九大专题（二十二）】学院党委副书记冯其毅带队到学|";
+pics+="/u/cms/www/201711/27095414ea72.jpg|";
+links+="http://www.gzqy.cn:80/yxyw/22481.jhtml|";
+texts+="【学习宣传十九大专题（二十一）】学院党外代表人士学习党的十九|";
+pics=pics.substring(0,pics.length-1);
+links=links.substring(0,links.length-1);
+texts=texts.substring(0,texts.length-1);
+document.write('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="'+width+'" height="'+swf_height+'">');
+document.write('<param name="movie" value="/r/cms/focus1.swf"/>');
+document.write('<param name="quality" value="high"/><param name="bgcolor" value="#F0F0F0"/>');
+document.write('<param name="menu" value="false"/><param name="wmode" value="opaque"/>');
+document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+width+'&borderheight='+focus_height+'&textheight='+text_height+'"/>');
+document.write('<embed src="/r/cms/focus1.swf" width="'+width+'" height="'+swf_height+'" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" wmode="opaque" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>');
+document.write('</object>');
+</script>
+
+          </div>
+        </div>
+        <div class="main01-left-top01-list">
+          <ul>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/yxyw/25579.jhtml" title="院长周杰带队深入精准扶贫点开展产业培扶及慰问工作">院长周杰带队深入精准扶贫点开展产业培扶及</a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-28）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/yxyw/25486.jhtml" title="学院2018年 “筑梦未来”创业训练营正式开班">学院2018年 “筑梦未来”创业训练营正式开班</a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-26）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/yxyw/25501.jhtml" title="学院副院长何亚平出席艺术设计系党政联席会议及组织学习中共巡视条例">学院副院长何亚平出席艺术设计系党政联席会</a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-25）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/yxyw/25470.jhtml" title="贵州省高校毕业生就业指导中心张华主任一行到学院调研创新创业总结宣传工作">贵州省高校毕业生就业指导中心张华主任一行</a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-24）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/yxyw/25459.jhtml" title="学院召开迎接教育部全国高校创新创业总结宣传工作实地调研动员会">学院召开迎接教育部全国高校创新创业总结宣</a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-24）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/yxyw/25440.jhtml" title="我院2018年“立业杯”校园足球联赛、三人篮球赛闭幕式颁奖仪式顺利举行">我院2018年“立业杯”校园足球联赛、三人篮</a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-23）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/yxyw/25414.jhtml" title="学院党委中心组专题传达学习全省国有企业和高等院校党的建设工作推进会会议精神">学院党委中心组专题传达学习全省国有企业和</a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-22）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/yxyw/25388.jhtml" title="学院院长周杰受邀参加苏州工业园区服务外包职业学院10周年纪念大会">学院院长周杰受邀参加苏州工业园区服务外包</a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-21）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/yxyw/25357.jhtml" title="职业教育活动周之“大手拉小手，跟着哥哥姐姐学技能” －剑河县学生参加活动">职业教育活动周之“大手拉小手，跟着哥哥姐</a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-21）</span>
+                    </li>
+          </ul>
+        </div>
+        </div>
+        <div class="sigenr" style="display:none;">
+        <div class="main01-left-top01-pic">
+          <div class="left-top02-pic">
+
+
+<script type="text/javascript">
+var width=330;var focus_height=192;var text_height=20;
+var swf_height=focus_height+text_height;
+var pics="";var links="";var texts="";
+pics+="/u/cms/www/201412/26203838qv8d.jpg|";
+links+="http://www.gzqy.cn:80/bmdt/864.jhtml|";
+texts+="省发改委付京主任一行莅临学院参观考察|";
+pics=pics.substring(0,pics.length-1);
+links=links.substring(0,links.length-1);
+texts=texts.substring(0,texts.length-1);
+document.write('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="'+width+'" height="'+swf_height+'">');
+document.write('<param name="movie" value="/r/cms/focus1.swf"/>');
+document.write('<param name="quality" value="high"/><param name="bgcolor" value="#F0F0F0"/>');
+document.write('<param name="menu" value="false"/><param name="wmode" value="opaque"/>');
+document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+width+'&borderheight='+focus_height+'&textheight='+text_height+'"/>');
+document.write('<embed src="/r/cms/focus1.swf" width="'+width+'" height="'+swf_height+'" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" wmode="opaque" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>');
+document.write('</object>');
+</script>
+
+          </div>
+        </div>
+        <div class="main01-left-top01-list">
+          <ul>
+                       <li>
+                    	   <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                             <a href="http://www.gzqy.cn:80/bmdt/25534.jhtml" title="“5.25”大学生心理健康日素质拓展活动">
+“5.25”大学生心理健康日素质拓展活动                             </a>
+                           <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-28）</span>
+                       </li>
+                       <li>
+                    	   <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                             <a href="http://www.gzqy.cn:80/bmdt/25499.jhtml" title="青春轻院新媒体工作室顺利举行2018年首届学生干部换届大会">
+青春轻院新媒体工作室顺利举行2018年首届...                             </a>
+                           <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-26）</span>
+                       </li>
+                       <li>
+                    	   <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                             <a href="http://www.gzqy.cn:80/bmdt/25491.jhtml" title="子谦国际创业教育学院创业导师廖芳老师为我院2018年“筑梦之旅”创业训练营学员作创业专题培训">
+子谦国际创业教育学院创业导师廖芳老师为...                             </a>
+                           <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-26）</span>
+                       </li>
+                       <li>
+                    	   <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                             <a href="http://www.gzqy.cn:80/bmdt/25472.jhtml" title="学院召开迎接2018年度全国高校创新创业总结宣传实地调研工作动员会">
+学院召开迎接2018年度全国高校创新创业总...                             </a>
+                           <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-24）</span>
+                       </li>
+                       <li>
+                    	   <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                             <a href="http://www.gzqy.cn:80/bmdt/25462.jhtml" title="“鹰击长空——当建筑遇上无人机”主题讲座">
+“鹰击长空——当建筑遇上无人机”主题讲座                             </a>
+                           <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-24）</span>
+                       </li>
+                       <li>
+                    	   <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                             <a href="http://www.gzqy.cn:80/bmdt/25460.jhtml" title="“ 3D建模打印与建筑施工的美丽邂逅” 主题讲座">
+“ 3D建模打印与建筑施工的美丽邂逅” 主...                             </a>
+                           <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-24）</span>
+                       </li>
+                       <li>
+                    	   <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                             <a href="http://www.gzqy.cn:80/bmdt/25457.jhtml" title="人文社科系学生到贵阳喜来登贵航酒店参观">
+人文社科系学生到贵阳喜来登贵航酒店参观                             </a>
+                           <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-24）</span>
+                       </li>
+                       <li>
+                    	   <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                             <a href="http://www.gzqy.cn:80/bmdt/25455.jhtml" title="人文社科系与大学城管委会开展“同心创造和谐社会，携手共建平安校园”安全知识教育活动">
+人文社科系与大学城管委会开展“同心创造...                             </a>
+                           <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-24）</span>
+                       </li>
+                       <li>
+                    	   <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                             <a href="http://www.gzqy.cn:80/bmdt/25448.jhtml" title="机电工程系召开汽车检测与维修技术赛项国赛赛前动员会">
+机电工程系召开汽车检测与维修技术赛项国...                             </a>
+                           <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（05-24）</span>
+                       </li>
+          </ul>
+        </div>
+        </div>
+          <div class="sigenr" style="display:none;">
+        <div class="main01-left-top01-pic">
+          <div class="left-top02-pic">
+
+
+<script type="text/javascript">
+var width=330;var focus_height=192;var text_height=20;
+var swf_height=focus_height+text_height;
+var pics="";var links="";var texts="";
+pics+="/u/cms/www/201610/12094452l576.jpg|";
+links+="http://www.gzqy.cn:80/qygs/15276.jhtml|";
+texts+="省教育厅职成教处正处级调研员胡晓同志一行莅临学院考察调研 |";
+pics=pics.substring(0,pics.length-1);
+links=links.substring(0,links.length-1);
+texts=texts.substring(0,texts.length-1);
+document.write('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="'+width+'" height="'+swf_height+'">');
+document.write('<param name="movie" value="/r/cms/focus1.swf"/>');
+document.write('<param name="quality" value="high"/><param name="bgcolor" value="#F0F0F0"/>');
+document.write('<param name="menu" value="false"/><param name="wmode" value="opaque"/>');
+document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+width+'&borderheight='+focus_height+'&textheight='+text_height+'"/>');
+document.write('<embed src="/r/cms/focus1.swf" width="'+width+'" height="'+swf_height+'" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" wmode="opaque" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>');
+document.write('</object>');
+</script>
+
+          </div>
+        </div>
+        <div class="main01-left-top01-list">
+          <ul>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/qygs/17984.jhtml" title="省发改委经贸处处长杨志伟一行应邀来学院考察交流">
+省发改委经贸处处长杨志伟一行应邀来学院...                        </a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（03-08）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/qygs/17985.jhtml" title="马来西亚南方大学学院张竣文主任一行到访我院">
+马来西亚南方大学学院张竣文主任一行到访...                        </a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（12-28）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/qygs/17986.jhtml" title="贵州广播电视大学贵州职业技术学院李皖院长一行赴学院考察参观">
+贵州广播电视大学贵州职业技术学院李皖院...                        </a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（12-23）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/qygs/17987.jhtml" title="新西兰怀卡托理工学院代表团到访我院">
+新西兰怀卡托理工学院代表团到访我院                        </a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（12-21）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/qygs/17988.jhtml" title="安顺市教育局、安顺市民族中等职业学校组团莅临我院考察交流">
+安顺市教育局、安顺市民族中等职业学校组...                        </a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（12-15）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/qygs/17989.jhtml" title="学院副院长陈秀娟率团赴新西兰怀卡托理工学院对接合作办学事宜">
+学院副院长陈秀娟率团赴新西兰怀卡托理工...                        </a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（12-14）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/qygs/17990.jhtml" title="黔东南民族职业技术学院到我院交流学习">
+黔东南民族职业技术学院到我院交流学习                        </a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（12-13）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/qygs/17991.jhtml" title="周杰院长做客《贵安热点》栏目  畅谈轻院职教发展">
+周杰院长做客《贵安热点》栏目  畅谈轻院...                        </a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（12-09）</span>
+                    </li>
+                    <li>
+                    	<span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                        <a href="http://www.gzqy.cn:80/qygs/17992.jhtml" title="黔东南民族职业技术学院莅临我院考察交流">
+黔东南民族职业技术学院莅临我院考察交流                        </a>
+                        <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（12-09）</span>
+                    </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div class="main01-left-top02">
+        <div class="gengduo"><a href="http://www.gzqy.cn:80/qysp/index.jhtml" style="font-size:12px; color:#545454; font-family:Arial, Helvetica, sans-serif; float:right; margin-top:22px; margin-right:28px;">更多>></a></div>
+        <div class="main01-left-top02-list">
+          <div style="margin-left:39px; margin-top:14px;">
+          <ul>
+                 <li><a href="http://www.gzqy.cn:80/qysp/23725.jhtml"><img src="/u/cms/www/201803/20141827ai68.png" width="136" height="99"></a></li>
+                 <li><a href="http://www.gzqy.cn:80/qysp/14458.jhtml"><img src="/u/cms/www/201608/301547399ugt.jpg" width="136" height="99"></a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main01-middle">
+      <div class="main01-middle-top01">
+        <div class="main01-middle-top01-nav">
+          <div class="main01-middle-top01-nav-list">
+            <ul>
+              <li><a>通知公告</a></li>
+            </ul>
+            <a href="http://www.gzqy.cn:80/tzgg/index.jhtml" style="font-size:12px; color:#545454; font-family:Arial, Helvetica, sans-serif; float:right; margin-top:10px; margin-right:10px;">更多>></a>
+          </div>
+        </div>
+        <div class="main01-middle-top01-list">
+          <ul>
+                       <li>
+                          <span style="font-family:'宋体'; font-size:12px;line-height:25px;">•</span>
+                    	      <a href="http://www.gzqy.cn:80/tzgg/25393.jhtml" title="贵州轻工职业技术学院2018年度政府采购类招标代理机构比选中标公示">贵州轻工职业技术学院2018年度政府</a>
+                          <span class="stime" style="font-family:'宋体'; font-size:12px;line-height:25px;">（05-22）</span>
+                       </li>
+                       <li>
+                          <span style="font-family:'宋体'; font-size:12px;line-height:25px;">•</span>
+                    	      <a href="http://www.gzqy.cn:80/tzgg/25340.jhtml" title="关于组织申报2018年度基础研究计划（软科学）项目的通知">关于组织申报2018年度基础研究计划</a>
+                          <span class="stime" style="font-family:'宋体'; font-size:12px;line-height:25px;">（05-18）</span>
+                       </li>
+                       <li>
+                          <span style="font-family:'宋体'; font-size:12px;line-height:25px;">•</span>
+                    	      <a href="http://www.gzqy.cn:80/tzgg/25325.jhtml" title="关于省教育厅2018年度高校人文社科研究项目评审结果公示的通知">关于省教育厅2018年度高校人文社科</a>
+                          <span class="stime" style="font-family:'宋体'; font-size:12px;line-height:25px;">（05-17）</span>
+                       </li>
+                       <li>
+                          <span style="font-family:'宋体'; font-size:12px;line-height:25px;">•</span>
+                    	      <a href="http://www.gzqy.cn:80/tzgg/24896.jhtml" title="关于2017-2018学年国家助学金推荐人选的公 示">关于2017-2018学年国家助学金推荐</a>
+                          <span class="stime" style="font-family:'宋体'; font-size:12px;line-height:25px;">（05-04）</span>
+                       </li>
+                       <li>
+                          <span style="font-family:'宋体'; font-size:12px;line-height:25px;">•</span>
+                    	      <a href="http://www.gzqy.cn:80/tzgg/24542.jhtml" title="竞争性谈判公告">竞争性谈判公告</a>
+                          <span class="stime" style="font-family:'宋体'; font-size:12px;line-height:25px;">（05-02）</span>
+                       </li>
+                       <li>
+                          <span style="font-family:'宋体'; font-size:12px;line-height:25px;">•</span>
+                    	      <a href="http://www.gzqy.cn:80/tzgg/24366.jhtml" title="贵州轻工职业技术学院关于谢春涛等12名同志因公 出国（境）任务公示">贵州轻工职业技术学院关于谢春涛等</a>
+                          <span class="stime" style="font-family:'宋体'; font-size:12px;line-height:25px;">（04-27）</span>
+                       </li>
+                       <li>
+                          <span style="font-family:'宋体'; font-size:12px;line-height:25px;">•</span>
+                    	      <a href="http://www.gzqy.cn:80/tzgg/24331.jhtml" title="2018年度政府采购类招标代理机构比选项目更正公告">2018年度政府采购类招标代理机构比</a>
+                          <span class="stime" style="font-family:'宋体'; font-size:12px;line-height:25px;">（04-26）</span>
+                       </li>
+                       <li>
+                          <span style="font-family:'宋体'; font-size:12px;line-height:25px;">•</span>
+                    	      <a href="http://www.gzqy.cn:80/tzgg/24310.jhtml" title="机电工程系机加工中心和电子创新实训室改造项目单一来源采购废标公告">机电工程系机加工中心和电子创新实</a>
+                          <span class="stime" style="font-family:'宋体'; font-size:12px;line-height:25px;">（04-25）</span>
+                       </li>
+                       <li>
+                          <span style="font-family:'宋体'; font-size:12px;line-height:25px;">•</span>
+                    	      <a href="http://www.gzqy.cn:80/tzgg/24275.jhtml" title="关于组织申报2019年度省级基础研究、科技支撑、科技成果应用及产业化项目的通知">关于组织申报2019年度省级基础研究</a>
+                          <span class="stime" style="font-family:'宋体'; font-size:12px;line-height:25px;">（04-23）</span>
+                       </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="main01-middle-top02">
+        <div class="main01-middle-top02-nav">
+          <div class="main01-middle-top02-nav-list">            
+            <ul>
+              <li class="dkrnw dkrnwde"><a>媒体轻院</a></li>
+              <li class="dkrnw"><a>多彩轻院</a></li>
+            </ul>
+            <a class="erdr" href="http://www.gzqy.cn:80/mtqy/index.jhtml" style="font-size:12px; color:#545454; font-family:Arial, Helvetica, sans-serif; float:right; margin-top:10px; margin-right:10px;">更多>></a>
+            <a class="erdr" href="http://www.gzqy.cn:80/dcqy/index.jhtml" style="display: none;font-size:12px; color:#545454; font-family:Arial, Helvetica, sans-serif; float:right; margin-top:10px; margin-right:10px;">更多>></a>            
+          </div>
+        </div>
+        <div class="main01-middle-top02-list dyt">
+          <ul>
+                <li>
+                    <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                    <a href="http://www.gzqy.cn:80/mtqy/19788.jhtml" title="【当代贵州】全国职业院校“大数据技术与应用”赛项在贵阳开赛">【当代贵州】全国职业院校“大数据</a>
+                    <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（06-09）</span>
+                </li> 
+                <li>
+                    <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                    <a href="http://www.gzqy.cn:80/mtqy/19782.jhtml" title="【贵州日报】75支职业院校代表队贵阳比拼">【贵州日报】75支职业院校代表队贵</a>
+                    <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（06-09）</span>
+                </li> 
+                <li>
+                    <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                    <a href="http://www.gzqy.cn:80/mtqy/19787.jhtml" title="【贵阳网】全国职业院校技能大赛开赛 400选手齐聚贵阳竞技">【贵阳网】全国职业院校技能大赛开</a>
+                    <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（06-09）</span>
+                </li> 
+                <li>
+                    <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                    <a href="http://www.gzqy.cn:80/mtqy/19780.jhtml" title="【人民网】全国“大数据技术与应用”职业院校技能大赛在贵阳启动">【人民网】全国“大数据技术与应用</a>
+                    <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（06-09）</span>
+                </li> 
+                <li>
+                    <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                    <a href="http://www.gzqy.cn:80/mtqy/19786.jhtml" title="【贵阳晚报】四百高职选手 齐聚贵阳竞技">【贵阳晚报】四百高职选手 齐聚贵</a>
+                    <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（06-09）</span>
+                </li> 
+          </ul>
+        </div>
+        <div class="main01-middle-top02-list dyt" style="display:none;">
+          <ul>
+                <li>
+                    <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                    <a href="http://www.gzqy.cn:80/dcqy/18016.jhtml" title="喜讯：我院成功入选教育部工业机器人职业教育项目合作院校">喜讯：我院成功入选教育部工业机器人职</a>
+                    <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（02-27）</span>
+                </li> 
+                <li>
+                    <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                    <a href="http://www.gzqy.cn:80/dcqy/18013.jhtml" title="喜讯：我院教师三项课题获批贵州省教育科学规划立项">喜讯：我院教师三项课题获批贵州省教育</a>
+                    <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（02-25）</span>
+                </li> 
+                <li>
+                    <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                    <a href="http://www.gzqy.cn:80/dcqy/18014.jhtml" title="喜讯：学院荣获“贵州省安全文明校园”称号">喜讯：学院荣获“贵州省安全文明校园”</a>
+                    <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（02-25）</span>
+                </li> 
+                <li>
+                    <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                    <a href="http://www.gzqy.cn:80/dcqy/18015.jhtml" title="喜讯：我院在第十一届全省大学生校园文化活动月中获佳绩">喜讯：我院在第十一届全省大学生校园文</a>
+                    <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（01-13）</span>
+                </li> 
+                <li>
+                    <span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span>
+                    <a href="http://www.gzqy.cn:80/dcqy/18011.jhtml" title="喜讯：我院两名干部获上级组织表彰">喜讯：我院两名干部获上级组织表彰</a>
+                    <span class="stime" style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">（01-03）</span>
+                </li> 
+          </ul>
+        </div>
+      </div>
+      <div class="main01-middle-top03">
+        <div class="main01-middle-top03-nav"><a href="http://221.13.19.246:8080/twb/index.jhtml" target="_blank" style="display:block" ><div style="float: left;height: 42px;margin-left: 28px;overflow: hidden;width: 102px;"></div></a>
+          <div style="width:166px; height:25px; margin-top:17px;float:right;">
+            <ul>
+              <li style="float:right;margin-right: 20px;"><span style="font-family:'宋体'; font-size:12px; color:#0a4ba5; line-height:25px;">></span><a href="http://www.gzqy.cn:80/twb/index.jhtml">图片版</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="main01-middle-top03-list">
+          <ul>
+            <li><span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span><a href="http://www.gzqy.cn:80/twb/23256.jhtml" title="院报第七十四期">院报第七十四期</a></li>
+            <li><span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span><a href="http://www.gzqy.cn:80/twb/22738.jhtml" title="院报第七十三期">院报第七十三期</a></li>
+            <li><span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span><a href="http://www.gzqy.cn:80/twb/22167.jhtml" title="院报第七十二期">院报第七十二期</a></li>
+            <li><span style="font-family:'宋体'; font-size:12px; color:#3a3a3a; line-height:25px;">•</span><a href="http://www.gzqy.cn:80/twb/22222.jhtml" title="院报第七十一期">院报第七十一期</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <div class="main01-right">
+        <div class="main01-right-list">
+          <div class="main01-right-top01">
+            <div class="main01-right-top01-nav">               
+              <a href="http://www.gzqy.cn:80/xyzt/index.jhtml" style="font-size:12px; color:#545454; font-family:Arial, Helvetica, sans-serif; float:right; margin-top:7px; margin-right:10px;">更多>></a>
+            </div>
+            <div class="main01-right-top01-list">
+              <div style="margin-left:20px; margin-top:10px; width:237px;">
+              <ul>
+                <li><a href="http://ddh.gzqy.cn/Category_20/Index.aspx">•&nbsp;两学一做网</a></li>
+                <li><a href="http://www.gzqy.cn:80/djw/index.jhtml">•&nbsp;党建网</a></li>
+                <li><a href="http://ddh.gzqy.cn/Category_28/Index.aspx">•&nbsp;一提两创网</a></li>
+                <li><a href="http://www.gzqy.cn:80/sxzx/index.jhtml">•&nbsp;实训中心</a></li>
+                <li><a href="http://ddh.gzqy.cn/Category_10/Index.aspx">•&nbsp;学生服务中心</a></li>
+                <li><a href="http://www.gzqy.cn:80/ysjndsn/index.jhtml">•&nbsp;技能大赛</a></li>
+                <li><a href="http://www.gzqy.cn:80/xqhzchannel/index.jhtml">•&nbsp;校企合作</a></li>
+                <li><a href="http://www.gzqy.cn:80/wxqy/index.jhtml">•&nbsp;创新创业服务网</a></li>
+               <!-- <li style="width:200px;"><a href="http://www.gzqy.cn/jxcg/index.jhtml">•&nbsp;2018年国家级教学成果奖申报</a></li>-->
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div class="main01-right-top02">
+            <div class="main01-right-top02-nav">
+              <a href="http://www.gzqy.cn:80/zlsc/index.jhtml" style="font-size:12px; color:#545454; font-family:Arial, Helvetica, sans-serif; float:right; margin-top:7px; margin-right:10px;">更多>></a>
+            </div>
+            <div class="main01-right-top02-list">
+              <div style="margin-left:5px; margin-top:5px;">
+              <ul>
+                <li><a href="https://218.201.202.225/" target="_blank"><img src="/u/cms/www/201501/051655161ipp.gif" width="122" height="39"></a></li>
+                <li><a href="http://www.gzqy.cn:80/jwzx/index.jhtml" target="_blank"><img src="/u/cms/www/201501/051655263fs6.gif" width="122" height="39"></a></li>
+                <li><a href="http://www.gzqy.cn/sxzzjy/index.jhtml" target="_blank"><img src="/u/cms/www/201501/05165559m7ne.gif" width="122" height="39"></a></li>
+                <li><a href="http://www.gzqy.cn/djw/index.jhtml" target="_blank"><img src="/u/cms/www/201501/051656071k5h.gif" width="122" height="39"></a></li>
+                <li><a href="http://www.gzqy.cn:80/pxjd/index.jhtml" target="_blank"><img src="/u/cms/www/201501/05165616319z.gif" width="122" height="39"></a></li>
+                <li><a href="http://www.gzqy.cn/xxqjs/index.jhtml" target="_blank"><img src="/u/cms/www/201501/051656267jkb.gif" width="122" height="39"></a></li>
+                <li><a href="http://www.gzqy.cn/bwc/index.jhtml" target="_blank"><img src="/u/cms/www/201501/05165634q2x7.gif" width="122" height="39"></a></li>
+                <li><a href="http://www.gzqy.cn:80/szzyk/index.jhtml" target="_blank"><img src="/u/cms/www/201501/051656432e3o.gif" width="122" height="39"></a></li>
+              </ul>   
+              </div>
+            </div>
+          </div>
+          <div class="main01-right-top03">
+            <div class="main01-right-top03-left">
+              <ul>
+                <li><a target="_blank" href="http://sjyzxx.gzqy.cn:8089/Government/Letter/Index.aspx"><img src="../../r/cms/www/default/img/index/sjxx.gif" width="121" height="72"></a></li>
+                <li style="margin-top:11px;"><a target="_blank" href="http://sjyzxx.gzqy.cn:8089/Government/Letter/Index.aspx"><img src="../../r/cms/www/default/img/index/yzxx.gif" width="121" height="72"></a></li>
+              </ul>
+            </div>
+            <div class="main01-right-top03-right">
+              <div class="flow">
+              <div style="width:109px; height:136px; overflow:auto; margin-top:10px;">
+                <ul>
+        <li>
+        <span style="font-family:'宋体'; font-size:12px; color:#004687; line-height:20px;">•</span>
+        <a href="/jjglx/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=7')" target="_blank">经济管理系</a>
+        </li>
+        <li>
+        <span style="font-family:'宋体'; font-size:12px; color:#004687; line-height:20px;">•</span>
+        <a href="/xxgcx/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=8')" target="_blank">信息工程系</a>
+        </li>
+        <li>
+        <span style="font-family:'宋体'; font-size:12px; color:#004687; line-height:20px;">•</span>
+        <a href="/yssjx/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=9')" target="_blank">艺术设计系</a>
+        </li>
+        <li>
+        <span style="font-family:'宋体'; font-size:12px; color:#004687; line-height:20px;">•</span>
+        <a href="/jdgcx/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=10')" target="_blank">机电工程系</a>
+        </li>
+        <li>
+        <span style="font-family:'宋体'; font-size:12px; color:#004687; line-height:20px;">•</span>
+        <a href="/qhgx/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=11')" target="_blank">轻工化工系</a>
+        </li>
+        <li>
+        <span style="font-family:'宋体'; font-size:12px; color:#004687; line-height:20px;">•</span>
+        <a href="/rwskx/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=12')" target="_blank">人文社科系</a>
+        </li>
+        <li>
+        <span style="font-family:'宋体'; font-size:12px; color:#004687; line-height:20px;">•</span>
+        <a href="/jzgcx/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=13')" target="_blank">建筑工程系</a>
+        </li>
+                </ul>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="main02">
+    <div class="main02-pic"><a href="http://222.85.160.47:6004/vrpano6/" target="_blank"><img src="../../r/cms/www/default/img/index/main02-pic.gif" width="952" height="230"></a></div>
+  </div>
+ </div>
+</div>
+<div class="friend-link">
+  <div class="select">
+  <ul>
+    <li><select name="select1" size="1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0" class="wipt" id="Select1" style="float:left; width:169px; height:31px;">
+<option selected="selected">--部门导航--</option>
+           <option value="/dzbgs/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=14')" >党政办公室</option>
+   <option value="/bwc/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=16')" >保卫处</option>
+   <option value="/dwzzb/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=18')" >党委组织部</option>
+   <option value="http://www.gzqy.cn/xctzb/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=95')" >宣传统战部</option>
+   <option value="/tuanwei/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=24')" >团委</option>
+   <option value="/cwc/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=28')" >财务处</option>
+   <option value="/gh/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=29')" >工会</option>
+   <option value="/gyzcglc/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=30')" >国有资产管理处</option>
+   <option value="/jjjc/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=31')" >纪检监察室</option>
+   <option value="http://www.gzqy.cn/jgdzz/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=105')" >机关党总支</option>
+   <option value="/jwc/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=32')" >教务处</option>
+   <option value="http://www.gzqy.cn/xdjy/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=57')" >现教中心</option>
+   <option value="/kyc/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=33')" >科研处</option>
+   <option value="/sjc/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=34')" >审计处</option>
+   <option value="/zzjxb/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=35')" >中职教学部</option>
+   <option value="/zwc/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=36')" >总务处</option>
+   <option value="/xsc/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=37')" >学生处</option>
+   <option value="/zzrsc/index.jhtml" onclick="$.get('/friendlink_view.jspx?id=38')" >人事处</option>
+       </select>
+    </li>
+    <li><select name="select1" size="1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0" class="wipt" id="Select1" style="float:left; width:169px; height:31px;">
+<option selected="selected">--主管部门--</option>
+   <option value="http://www.gzsjyt.gov.cn/" onclick="$.get('/friendlink_view.jspx?id=48')" >贵州省教育厅</option>
+ </select>
+    </li>
+    <li><select name="select1" size="1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0" class="wipt" id="Select1" style="float:left; width:169px; height:31px;">
+<option selected="selected">--教育资源--</option>
+   <option value="http://www.gzsedu.cn/" onclick="$.get('/friendlink_view.jspx?id=42')" >贵州教育网</option>
+   <option value="http://www.tech.net.cn/web/index.aspx" onclick="$.get('/friendlink_view.jspx?id=56')" >中国高职高专教育网</option>
+   <option value="http://www.cnki.net/" onclick="$.get('/friendlink_view.jspx?id=74')" >中国知网</option>
+   <option value="http://www.moe.gov.cn/" onclick="$.get('/friendlink_view.jspx?id=76')" >中华人民共和国教育部</option>
+   <option value="http://www.zzdjw.com/GB/179001/395178/" onclick="$.get('/friendlink_view.jspx?id=77')" >“三严三实”专题教育</option>
+   <option value="http://qzlx.people.com.cn/" onclick="$.get('/friendlink_view.jspx?id=78')" >群众路线网</option>
+  </select>
+    </li>
+    <li><select name="select1" size="1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0" class="wipt" id="Select1" style="float:left; width:169px; height:31px;">
+<option selected="selected">--职业院校--</option>
+   <option value="http://jgbm.trzy.cn/" onclick="$.get('/friendlink_view.jspx?id=49')" >铜仁职业技术学院</option>
+   <option value="http://www.gzjtzy.net/" onclick="$.get('/friendlink_view.jspx?id=50')" >贵州交通职业技术学院</option>
+   <option value="http://www.gzky.edu.cn/" onclick="$.get('/friendlink_view.jspx?id=52')" >贵州工业职业技术学院</option>
+   <option value="http://www.gdptc.cn/default.shtml" onclick="$.get('/friendlink_view.jspx?id=58')" >广东职业技术学院</option>
+   <option value="http://www.gyvtc.edu.cn/default.html" onclick="$.get('/friendlink_view.jspx?id=67')" >贵阳职业技术学院</option>
+   <option value="http://www.scetc.net/" onclick="$.get('/friendlink_view.jspx?id=69')" >四川工程职业技术学院</option>
+   <option value="http://www.gxjsxy.cn/" onclick="$.get('/friendlink_view.jspx?id=70')" >广西建设职业技术学院</option>
+   <option value="http://www.cavtc.cn/" onclick="$.get('/friendlink_view.jspx?id=71')" >长沙航空职业技术学院</option>
+   <option value="http://www.bjczy.edu.cn/" onclick="$.get('/friendlink_view.jspx?id=72')" >北京财贸职业学院</option>
+   <option value="http://www.cqcet.com/" onclick="$.get('/friendlink_view.jspx?id=73')" >重庆电子工程职业学院</option>
+       </select>
+    </li>
+    <li><select name="select1" size="1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0" class="wipt" id="Select1" style="float:left; width:169px; height:31px;">
+<option selected="selected">--其他链接--</option>
+   <option value="http://www.tute.edu.cn/" onclick="$.get('/friendlink_view.jspx?id=51')" >天津职业技术师范大学</option>
+   <option value="http://www.gzu.edu.cn/" onclick="$.get('/friendlink_view.jspx?id=53')" >贵州大学</option>
+   <option value="http://www.gzife.edu.cn/portal" onclick="$.get('/friendlink_view.jspx?id=54')" >贵州财经大学</option>
+   <option value="http://www.gznu.edu.cn/" onclick="$.get('/friendlink_view.jspx?id=55')" >贵州师范大学</option>
+   <option value="http://www.gzqy.cn/" onclick="$.get('/friendlink_view.jspx?id=60')" >贵州教育网</option>
+   <option value="http://mp.weixin.qq.com/s?__biz=MzA3NTU1MzgyOA==&mid=503985314&idx=1&sn=14071a06e2071ea7fc54038e303d343b&scene=23&srcid=0506PN2UJjIUYDHQDtGGRls8#rd" onclick="$.get('/friendlink_view.jspx?id=90')" >2016年职业教育活动周宣传片</option>
+      </select>
+    </li>
+  </ul>
+  </div>
+</div>﻿<div class="footer">
+  <div class="footer-list">
+    <div class="footer-list-left" style="width: 320px;">
+      <div style="margin-top:15px;">
+      <p><a href="http://www.gzqy.cn/">学院首页</a>&nbsp;|&nbsp;<a href="/lxwm.jhtml">联系我们</a>&nbsp;|&nbsp;<a href="http://www.gzqy.cn:80/yscl.jhtml">隐私策略</a>&nbsp;</br><a href="http://www.gzqy.cn:80/bqsm.jhtml">版权声明</a>&nbsp;|&nbsp;<a href="/dczj/index.jhtml">意见征集</a>&nbsp;|&nbsp;<a href="/jeeadmin/jeecms/index.do">后台登录</a></p>
+      <p>Copyright ©gzqy.cn. All Rights Reserved.</p>
+      <p>黔ICP备 10003953号  访问人数 <span id="visitor">8472</span>人</p>
+      </div>
+    </div>
+    <div class="footer-list-right" style="margin-left: 20px;">
+      <div style="margin-top:15px;">
+      <p>学院地址：贵州省花溪大学城</p>
+      <p>电话：0851-88506060传真:0851-88506060</p>
+      <p>邮编：550025   邮箱：qgzq@126.com</p>
+      <p>网站管理单位：贵州轻工职业技术学院</p>
+      </div>
+    </div>
+    <div style="float:left;margin-top: 30px;"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/24/000/0000/40707097/CA240000000407070970003.js' type='text/javascript'%3E%3C/script%3E"));</script></div>
+  </div>
+</div>
+</body>
+</html>

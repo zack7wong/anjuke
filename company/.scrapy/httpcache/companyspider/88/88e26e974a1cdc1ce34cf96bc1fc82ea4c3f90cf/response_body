@@ -1,0 +1,1222 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>广州市86中学初中部</title>
+    <meta name="keywords" content="中学,86中学,86中学初中部,广州市86中学初中部,广州市第八十六中学初中部" />
+    <meta name="description" content="86中学初中部学校网站" />
+    <link rel="stylesheet" href="css/Index111.css" type="text/css" />
+    <style type="text/css">
+        #msg_win
+        {
+            border: 1px solid #A67901;
+            background: #A5D0ED;
+            width: 300px;
+            position: absolute;
+            right: 0;
+            font-size: 12px;
+            font-family: Arial;
+            margin: 0px;
+            display: none;
+            overflow: hidden;
+            z-index: 99;
+        }
+        #msg_win .icos
+        {
+            position: absolute;
+            top: 2px;
+            top: 0px;
+            right: 2px;
+            z-index: 9;
+        }
+        .icos a
+        {
+            float: left;
+            color: #833B02;
+            margin: 1px;
+            text-align: center;
+            font-weight: bold;
+            width: 14px;
+            height: 22px;
+            line-height: 22px;
+            padding: 1px;
+            text-decoration: none;
+            font-family: webdings;
+        }
+        .icos a:hover
+        {
+            color: #fff;
+        }
+        #msg_title
+        {
+            background: #A5D0ED;
+            border-bottom: 1px solid #A67901;
+            border-top: 1px solid #FFF;
+            border-left: 1px solid #FFF;
+            color: #000;
+            height: 25px;
+            line-height: 25px;
+            text-indent: 5px;
+        }
+        #msg_content
+        {
+            margin: 5px;
+            margin-right: 0;
+            width: 300px;
+            height: 125px;
+            overflow: hidden;
+        }
+    </style>
+    <style type="text/css" media="all">
+        .d1
+        {
+            width: 360px;
+            height: auto;
+            overflow: hidden;
+            border: #666666 2px solid;
+            background-color: #000000;
+            position: relative;
+        }
+        .loading
+        {
+            width: 358px;
+            border: #666666 2px solid;
+            background-color: #000000;
+            color: #FFCC00;
+            font-size: 12px;
+            height: 224px;
+            text-align: center;
+            padding-top: 30px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-top: 0px;
+        }
+        .d2
+        {
+            width: 100%;
+            height: 240px;
+            vertical-align: bottom;
+            overflow: hidden;
+        }
+        .num_list
+        {
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            bottom: -1px;
+            background-color: #000000;
+            color: #FFFFFF;
+            font-size: 12px;
+            padding: 4px 0px;
+            height: 20px;
+            overflow: hidden;
+        }
+        .num_list span
+        {
+            display: inline-block;
+            height: 16px;
+            padding-left: 6px;
+        }
+        img
+        {
+            border: 0px;
+        }
+        ul
+        {
+            display: none;
+        }
+        .button
+        {
+            position: absolute;
+            z-index: 1000;
+            right: 0px;
+            bottom: 2px;
+            font-size: 13px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .b1, .b2
+        {
+            background-color: #666666;
+            display: block;
+            float: left;
+            padding: 2px 6px;
+            margin-right: 3px;
+            color: #FFFFFF;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .b2
+        {
+            color: #FFCC33;
+            background-color: #FF6633;
+        }
+        .style1
+        {
+            height: 16px;
+        }
+        .style5
+        {
+            width: 227px;
+        }
+        .style8
+        {
+            height: 37px;
+        }
+        .foot
+        {
+            margin-top: 20px;
+        }
+        .style9
+        {
+            height: 18px;
+        }
+        .style10
+        {
+            height: 16px;
+            width: 120px;
+        }
+  	.style22
+        {
+            height: 18px;
+            width: 100px;
+        }
+        .style11
+        {
+            height: 104px;
+        }
+        .style12
+        {
+            width: 66px;
+        }
+td{ font-family: 宋体;font-size: 12px;} 
+        </style>
+    <script src="js/getInfo.js" type="text/javascript"></script>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+        //主函数
+        var s = function () {
+            var interv = 3000; //切换间隔时间
+            var interv2 = 10; //切换速速
+            var opac1 = 80; //文字背景的透明度
+            var source = "fade_focus" //焦点轮换图片容器的id            名称
+            //获取对象
+            function getTag(tag, obj) {
+                if (obj == null) {
+
+                    return document.getElementsByTagName(tag)
+                } else {
+                    return                    obj.getElementsByTagName(tag)
+                }
+            }
+            function getid(id) {
+                return                document.getElementById(id)
+            };
+            var opac = 0, j = 0, t = 63, num, scton = 0,timer, timer2, timer3; var id = getid(source);            id.removeChild(getTag("div", id)[0]); var li = getTag("li",            id); var div = document.createElement("div"); var title =            document.createElement("div"); var span =            document.createElement("span"); var button =            document.createElement("div"); button.className = "button";            for (var i = 0; i < li.length; i++) {
+                var a =                document.createElement("a"); a.innerHTML = i + 1; a.onclick                = function () {
+                    clearTimeout(timer); clearTimeout(timer2);                    clearTimeout(timer3); j = parseInt(this.innerHTML) - 1;                    scton = 0; t = 63; opac = 0; fadeon();
+                }; a.className =                "b1"; a.onmouseover = function () { this.className = "b2" };                a.onmouseout = function () { this.className = "b1"; sc(j) };                button.appendChild(a);
+            }
+            //控制图层透明度
+            function alpha(obj, n) {
+                if (document.all) {
+
+                    obj.style.filter = "alpha(opacity=" + n + ")";
+                } else {
+
+                    obj.style.opacity = (n / 100);
+                }
+            }
+            //控制焦点按钮
+            function sc(n) {
+                for (var i = 0; i < li.length;    i++) { button.childNodes[i].className = "b1" }; try {
+
+        button.childNodes[n].className = "b2";
+    } catch (ewe) { }
+            }
+            title.className = "num_list"; title.appendChild(span); alpha(title, opac1); id.className = "d1";            div.className = "d2"; id.appendChild(div); id.appendChild            (title); id.appendChild(button);
+            //渐显
+            var fadeon = function () {
+                opac += 5; try {
+
+                    div.innerHTML = li[j].innerHTML;
+                } catch (we) { };                span.innerHTML = getTag("img", li[j])[0].alt; alpha(div,                opac); if (scton == 0) {
+                    sc(j); num = -2; scrolltxt(); scton                    = 1
+                }; if (opac < 100) {
+                    timer = setTimeout(fadeon, interv2)
+
+                } else { timer2 = setTimeout(fadeout, interv); };
+            }
+            //渐隐
+            var fadeout = function () {
+                opac -= 5; try {
+
+                    div.innerHTML = li[j].innerHTML;
+                } catch (we) { }; alpha                (div, opac); if (scton == 0) {
+                    num = 2; scrolltxt(); scton =                    1
+                }; if (opac > 0) { timer = setTimeout(fadeout, interv2) }                else {
+                    if (j < li.length - 1) { j++ } else { j = 0 };                    fadeon()
+                };
+            }
+            //滚动文字
+            var scrolltxt = function () {
+                t += num;                span.style.marginTop = t + "px"; if (num < 0 && t > 3) {
+
+                    timer3 = setTimeout(scrolltxt, interv2)
+                } else if (num > 0                && t < 62) { timer3 = setTimeout(scrolltxt, interv2) } else                { scton = 0 }
+            };
+            fadeon();
+        }
+        //初始化
+        window.onload = s;
+
+        //校长致辞的自动滚动
+        var start = 0;
+        var height = 0;
+        $(function () {
+
+            var d = $("#mst");
+            start = d.scrollTop();
+            height = d.height(); //DIV 高度           
+            setInterval(scol, 100);
+            function scol() {
+                if (start + height >=document.getElementById("mst").scrollHeight) {
+                    start = 0;
+                } else {
+                    var k = parseInt(start + 2);
+                    d.scrollTop(k);
+                    start = start + 2;
+                }
+            }
+        })
+
+    </script>
+</head>
+<body bgcolor="#039cfd" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+    <form method="post" action="./" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Ek2J7gacWOj6+WlGusX3FPCMo2nodsHTlG3eOwwn1ds07HUBIgrK1RyTMDDmkF1+GreVfTnpONupqko30ZdG6YUZRWJs2bvWUvQ8AhrXzpl/ZEwl+6fvXfOFs4g1rMaB18c2+dEcqBzMT66hSPLNqRCkjy4ngRocCXE/Mn0wgfrV0CwBAGWZj7vWm1O14MDE0BKHhA6CRoStVStieThLgJCOnIJhe40ZKHJQLW02/t+GYsSPfSpcd+P3/z1AB6xQkWB1UfP4TDKzdnKWZbLePNsx9pYAcfq7yyxeWewMUd7l0dGJoph1SgW7Rpum/17WF5E1eBtHsrrHomTFCBTzDh6isO+zd82j7JkyCrfpguE3SwNs5KHjEXf9EnHZzIXVkN5+rQXscw8SOOWo0P6HZQDfnBJMifi7b0k5YF1rZAmGThJfl6Dck9mPNic4P7Ug2uAOyyvV9U5iuuGx7zWY8/k51IUhbw+cClfKWQYE9jrgcbuyO9FFaPKhGHFeYp3cJZlxiX5aeSVantpo3u4z4WqUTJaMENLdV5kWyDM0zMCyzsKyNNA942BXjis2aA/7BS/iPXas4KiREM1siuMCw9IQ8pnEHYD4AR5kTlr8bl5x95Ay/qZAsMMrfakXdvlTtnQWe6Ya9lMRCG2Ugr1nk4FUwlP7noMsorDnp39A3f7C01YNV6y0wNms4hTVWFMsvNlBq1L1VEqaM8G8RUS4mGbh0r1yqErogPfueB9LN3L8xOMJnx/hH0vwaZtYqvJc7/9cx51a5146WVY/Q5uCZ8BZgNn9Gi77x0YgWSUQJmn2pjonPuYKUod0Y05xFfTG3nixx8N2S6KHD93bV6fVouFs+u7FhZebRVLRR/2vhmlW85djUDfpwvpWUVLE0AuMkk/eXz3CiABbzXLVcpkmxapNXgVjWxlD+MTm+FC4blkRtYsjmvUu2dOC+Oza4KMRtS/UZpOjxMC+YoQN9+v04dnpYRpS+pLAEkpJP6vcUOVXSZj1YfD4SeIeddGN8Xara6Lmhz67RTegxl4ZAZeaUY8Tzt4OJoxsa9MqKwFX+mIB2J4rOVPSXaRvhsp2c+x6GBg9gkxnqkwqncFi/eOKbHFHWqKnCyyNzUh2Pou1m9dzCKhmrrnIpHqRVlFuDf1vpclIOq8klRlYU3E0Nfu5Y4iO2ebzU3JV88WXSw9a/LiopG6StJod+A1ln2X+xuHXVlgK/QeMw+ayy5qiiLnzofOisjAD1l+2yTjew5AxfNMW6ims5jJ1V8vpF2PHei1RMAi7+vXnTGylYLFW/fkbt+CAkOra2vsX3FtIlYyrQfB4YT9WX+UC0W5lFWedo0FBvEg00aU4bmH9xw1fjGCr08Bdq3In4w1pYxvJ3Ha9jMRS8uPUBZwCe7lMLd2z/eYEH05zS0Dg6ukyb2HtKKlXyh7cTKNrFg1LwXJwnI1O7rjcpjgQz84Rp1SHk5N4x1sFvoAVdowE3P/+1I95IZDsXIASJfq4XIuv8s9QOV3rMkOOZTOMp6Mto1udh5oxKL8co08oZZvW97wXBsZVNK8rTEoUesmOVXy5P+JtTMQBB+H2rhtrbcLQqTOuJqPMbx1o7Ic47tV+uezmxO8QwKccVCzKI1RERGN2IHAFJMUaSdWHxDaxYMerdvYnoZzrlYfqYUkNH/LBp4ABmqIr2jwK02Of594jwmTsTJxUEFbQQ8kNYuAAC/y8gOR7B1PkyLoqODeX3fzNKfUxXc0bEFEHOtB4dcnI/ZmE3vR8yGwJgaz+S3Tpa/gYcQrWrXonKjsODuJF7Elk4yIzh8WC1Fx9fxrWopUoi1zY4ZCtmfgJcml8QCLymBhxIHFSJc9Hiq9NvoF+VfoedFA8BzLwNECmgfkE24dTI4UMy7iXJKCKrQ8b+BZNSH3NFk6SPZqT8B2V9ejTodW2ub2zlyNxlamJ2Ukwv7izySfj/GCDwBrqTDO5QFRPKWlLQ9qBF5OEsMgSJqWjW46Pjm1M+l2Lf/V1sR0z3w7khGk7MVIUUmZMDa9Ovs09miCkQKkntZbXekNb/rDFq/+pNAzuvEODA4yoU3PRrZibzenuaWLAf5RrA0MGfIguGGdNznrO7yRYjeSOnym+tweb62DeF8UtEeQLnHmhgXigd+T7kJ2VMny/MfkQ/w9fRYzGB27Ii+QSXz179kLIbAUFwBC9RwjErqX7v9jM1WbBevYDzYCSESQjDUDIT2nfHMmqwgph6ihIY6oJANpMpgkMVDad0nR5DYeqOvGh2JGoYEzj2LSQvj7zDRIUlI0ssLngX2/ozaJw35RR7JeieIvIcaMAYCBntJs3LrTw56RRx+nKFua0PR1CynbEfsv73hbKEk22U1URVxlkdYamwMS1ccIF1SJDWP+I2rKn32PELQv2+Fh364senEs3urh+10bPWiEgM4+CpjOr4ZRJl60Vir5/qLnOAA44dAbjJnIywuhCtZmZoOWnCYZdXlhytmbtcw1LHA+zox/cxQBxod5GjHNmayA7HuMQgonfbyPaDJS6ta5PsRTQ5VGqfm+bRAhfQ1dciFmA9ooCbfQat/WvtmLt1vFfhCT7F0aM7Xx7ddjKfw4gn/hGcoGMxuLYBwpXqgRGJsHWZINLYlXJ3ERkhy43DCedEbCpe4Sv+i9AabqpO/7wJz0TY3K7GMbB+g5O1H1uHNr5fCpJ41V8uUjI35jsTJkNU7SHV25DNZK7/z1O1ttM0ou54w9kyEa7QgVxEi4VIYLAhYHvl7nUoFhvJRcB+laHkZt/H/YQg2dTWGaZ55qI1CtItZ7vZBm2b+jubPGa/U30VgZMja8B7dv47f6FkB8LebBkiVxy11m3WA/xednf5hSE2mivEhJAPc3iDiQdDe4Tc/mhRpAk50u9iUOv7oXcirFdRuiUuyrTOYEt9mVHf4Bk7gEstcSLVg2zVmi+sfp+k8cc4xhrJIthl9ncR40lSsm1fSSCp1uQ4wjNUdsTPz/dlVmSpqWmAm4/Ych6BycCcPCTGhtKm89YwkPRUFJzK/2mfG2Kso+J6u3qn92AQxUwk3rhI/YrMEenrfd55kw+pQjMpl9RGVm3H5zipWXZAaoknxcBgFSdQwCwH2tmcjlxoMzrHczsVRuemNay0gkWY2JYDoX4dTKlUO146+rsHDUf+V3u5sxGQq2VRlkRML/8WtlZeVLCsTSVPCL3RG64qNWkM3v4VCj3FV7r2I7+LWyqsqmBNpbxDzq7g0wv1CZI8kpbqaPJy9I9ztSYgRLNvUaIoRDsJHQ6YyXoMNQVm+d8bNaADPgj2PbvzYvbGtYUs6AXv4GxPHVfmUAc3IglTeltM0+m+0uQzP606ovCX3gGzcPkBx5aO/DNiYRsWAbo3Z4tqnY8X9/LBV6g1IRZBmxN9eSiaPPWgn8lNaeOstTFUkx7B3FVka9/w2nEPhcRRov0IyWIZl/FBpr3JgE3CxIYdlMSvq3MTqhuG3D/cd64HSJrumL2YsE/N5jpGlbSe/RDMsiXclMx5BTsfnUsdL4AbGoAgfGHOPVixCddYBpHK7iIG7F93eqCVnCd2jiWhMxdHCxitFJqL1h6k2ayA5e4JbYQdzl/L2aCgpc/3sEl1ZYY06ynXoe/vIOtBxJcjiZkppll0HnRF6hnssUO85vf9Ptg3PywuYNLkKsRmwbDrLLXTn+GBYhlNBvSX4Kk6znWxYuI+BJ/EhbekhyQKu6r+7BAOku57BqYc8rSJwXQedRnuELKGVfF/+wOdTuJbODM6zoN4vEjQgkxBO8bfB2vLAaOqWzthcbWv9qxw16yLsLRRNUG2DrrLQ3peKd+5lmwlnkVpnYCmJF962nL6DpMzpFEZmx18VAr6pjahJ+N141y5IbvT0pPANloSBsju8dfkScIZO/07fDg6sa7LAdnUw6pWBTSAY/ryWZsCWCFPKylT8/a99YYZDLnsw8bSCCqqY51PshmAa8z4SPS5gl+cHojDCofLVkKEnOX64S3CUoluJZYR8IbcGNxqcVOTgtslni1y6nPjLV6urmPCJI8b8/BOaK+XZwb+RMh2DL6qxI9OHcEpm5kBUDqLUY43LTBZKgr1X1Qu+pMyUEgNXdWJLoFfxsxmbhUModEkYjJRWxaKAcX4QJ2CnE9MmiB3LA6nZ+Ps+wUxybGF8hjfgvjaiifwPSr5pD9LcHwSb/wiZ6kDN2lTeXb7T6Ht2C6AbIew6FaL2wFOkgWAS+B0f168QKAOA3bOt0c6zKHl1+c7NU+elXWUyvrtU73QW/EFM99lqe8VAwWzwuS4Swb5t6m5FD7Y6Sw2eCkfV5I+bnYBhZGC5fkXvbg7MhdyMJYCGSluppnwdnWbDgaxLS65GLzUvbdFmvSaZHL9QVSFSywP7Sw2MdkFeCMizmEm8xfdG9mnAkeh5b2Oxu/livNrJLy2ntBzM/Bz8OnTMfSIeUNMfvKqmwG/gJOvk1goGpzxlPH42wfhuLsOgmkrsPF7XA30MqYynEJQLtu6vsVXxSwipOfNJhyN6ctKACE2yDrEqS1o9HVlV0fgpYtetjekqV/JduJh8lVWnqPwzyBoKk6ArPwEeTngRULg7lcvVUfQypn4R80C4Wm2GSmdgPpoL6hKMwK4GhJf6M8L5AoQHrAtiZ1rNmoEFHSkUeXXdXCJg9XGinwp/ZV3YV4i7V3ud3lDAM+z627u8wvEo3f2YTuLzTZNJ/Bb49J0yF8tgDw3NkM5xEa8QY/nNzrZEHTooRXiIjPuwpu0r1hr8l12tm2grymIgWN57S9Eq2mxvBstjS1RYBVCkdYEOihd6V9tElBy9uUDXmW1nX3JGD5q7cWGRHjEkGSMov9SHeZyDX0qkl43CKNSBdfW0kpIlNYuq3v2d27oOld5zfaImWcLMQk5INCPMooo69dKmbMW+aW1BeK57C/o+ZLuprwkAds5GYJT0SGi5h+Wteb1AYjgqGrejG8TXGZBH4LlDg0L+mWQZe8XU6P77hnrFOnCUTv4ynO8VeI57vEitO5rOB2dejiVBmuBt5n0e6ran/oBYC5YVYOeKHFWTDWo0xbS+JhrjfPmx8bDUOSFPp231NtScQIROTPyMomi4izOB9OSnuq6Dqj+cgOlEhgcIqguPN7nl/1YwBLiXxIwFVAmqDG1YBkTLDvivgasfPAt0YrwbldWlxx0PYHcC3RFn/7iXjJcAPKCmkwsa0aq3ldootBJp2xobQ8rbUugNLyVpPpf4w3rF+JwFTruVTzP7RiN5wnROCxq3D8XYgPwJhGUAyu43GhoKJRDRUHYNvZ4ZEkOWWKYeQkGnxEApXgj9KNggnvFPDOVPrgYDWyIuNWyhc6NKmluVTZH2oR8Evoul/rZwaLp+yR1mt32PK+6zvuwpeQaldGyVjSRlHYtSndiAli/DXOSbfEWMDzZEJvyUe1EiSI++ISwdjq990ybbrnleRujDnfF+yMbJoi9E+SOOb4dN1v1A4usHGqTtTXFa4qDTVACjTFCx0jJ5aKJ/N48+mliH6YcAOXygYeHSndU7TUA036nHWJUg0hF4kkkeMvd2Qa/lerYFtx4ew5ECFh8oAZRLBZw17TuvypG5pceRMfvnRzQ1Oi04xlEdV3SjzP5IWr4ezTwN8/atb2RLrJzQmFYoyjOclzW2gib1BOX+CN9bJvwv9SNnD+nf6a61e++uxi5dExEaE+14Fj9nar757eZJnBNPFIgVq5hfd1O3OyfCbRhzFPSc0kOWbJPemO0ULs9mxSS+kZzda5PwBuCo3WIkBNjviEyP0y3vzZhLF3VOcVBpvOv8j1p+ax2lpidk7LzAAD6UDhf44GSC25xzXqxw9rqWT5ODuCKfMLWhMMI6Q531Y8DrSTC8EFwRpbqBfVfWzgiOOLlJMeMVeDjChQXvwoGPFzSdT2JkRzQCGipw4ecobUGjfkIS+L5UqRMednmUdrRF8m3OYDPI4NMh/nDWn749UVUqqGcaXPXbgY518RUXznGWTe7DGPac2xZIJx08EOeNh+FNV6TF5diW1jzjC3uSOcZV0Ny5auUEH8m+Q/ODbydU2QnA2bkejn1kLEkSLnmonU7Qe75yOl4jHGbJwvnxKDGO5IAJQX0r6yPhSpduWM9Endu72PXOdwzRaBNYby4KuBfjWuyuDPxPfoIuxKSKnJtBjurD/s2ZYaVw/EcL5KTClqE1FdyUYyUdDfiNUsKI793ag7nOAeRpFU4DgYqMm/6dZeFjYXe+YtD1Fz/HUiZOCoY02LPf0egQ0HgTtWLp/UA/CegQFcPnk1dpb0FmEy3tfSynIzoctuxYo4sCcWFAcUQih3X6G8wJGCMq0JBNftb1jwyDNnN6oHksqH5wV19mlAm9m9KVvf4I/a8xsesL5mjR/iwR8PFHcD3+A//oFoKNpRtXXZ/nJE/PDc4l8nrNIGwt/SmZLkHNKOkFd/oFtRSI9ggiDqJBFTwJVilT+Ov/S2Cj/T/RrwLfZWdPnEERVOTPl45Ec2UnYDUPCymLb/S00sRdjDw3FxIMCO6oYNX6AVc8UWTdSL25+9WGnD25VdOyX8JyDXp12wazKCOE8Sf69qQ6Rv6W0+5BdDCKuNgDa6sgA44vdjFN7UWb7xq5hRp3eyE8Y4B4dDNMLunfumWpCp/wbYSQyiJ9BVUdxBoWsbSL9Kn0movUFt0fHa5M3bAu6XGHR44lKKFKzflGO0vsOOTR3/IaJgTvUTfYlNdHgtVj7s8BjOq1tye+rxfv68AqX7RVWhK3pKYLPFPC0j0Ux3nJqZiLHKzJral3mCubZzIOltgHvhOXqz/UrmEW65J4w+JFVEGGma6zCsaLbXgjrZ1adlqb+8ICFq3iLgNdcwyp+SC+fBjepOCxm2BpuDHE0VNcttJAw0EA1b14Vg9IwhO72wPXVLzBERmtANms1+pMIott3exr/ToIOp5K+58spPIR0oZ4GDOzIBtr6ethOKPe0x3at33Q4YacJP+xIlgie9bLIXOvUP59ZeIroG3+RCyX8EiUoJlafEuEdDGb4jCggaMAq0BfwjqPaQm9I991G0CkYpcmYDpZPhJEpG7g31EGaQczLFNhpujXslxHSWwc5MLKLm3um2hLRhS/lXamZAoZGtL2BiMV1FtYbzDP3VG8ZHJxRx3PRMe2F14UZRkMRCIz3Z1xkqMQI1J4izkslZuSFxjT7/Guw/HzIYPkTbZiiRsLQjYrLlrj6nIDp49/qhqrDGyIJAZa3xMKgEfMRXWpKaNmOGC4xj9NKGZWcWDJBkcYGfX8n7k19tb582wpqtzFjkqLjFiYwPRD2vFWN2kEJa2qaPItlmUygAZX/H+NympX1yo9njwtANvPLWNmOJ9lcmaVqqXJUZolP3/s7/PqUocp6pU1BxOT4Mgk0no+4DsPE4vO6bSVnTWnxoieOlkCnRWs0LkXEEugSqeU3gTmEANn73ajy+AZxOrOeqh7iLss9T5kj7YxbXfQXGzNVBaLZqSce+DBLBGRD6iUVePydjCHY8YdSscJFmTKMyKZMQ/xE2nc7vw9ueFTwZ5Xz7P8GjvhkAEtE4NM/wdZZAEPf8uX0ypZ61ZDTVUfZPGwLvHoqhNaBSflebuQOg1uY56WX24pnq+1fztcB2Cjcs29+Oh/NZ59tkegChmGuVwj9CqP7jNJycsL0sJVDo2Hk/Vfya6vdPs2hKV7CAL7sEARq+TZEnWlguIw+s/hlaoRD+Zxn0vkrIHqJwtQcRFT2gFQ0HIRY8YR+4K8qR2oYUBKxmLTjd6NBGfjJKm0jwyniDsEjhbFw90i0SDKSOFWIlhQajquv88t20gDb5tCLMrxy4WzxOATTGeTpzt/cFkqsNkXnzqBXJYy8lepCpIvuDLHxGnC+SYHh5Osv/AALlf+srY0TNOUJw8yVcuQQ72CtqxmIJowBe2pZqAlJEqlClbKK7SRas69AIA/qSUyHV1ixfBEleA91f0Nq20f5/J9+EcM2sImH136DUShPOSQsql4bbVFfa4yPsGSwZ+FRmE0MaIENleK16G7tl+PClv7ww4Bbjv4NaBh2cqsOjIqdwd4JrX0ZkB7XJCu7ukWZ/zsd3shY1MFDdycSnM3vvx7YFIwCOASZcdHtW8U6/bbtbgO3cnl1/YMbbLBQbh2Og4dFC+A11IPXc07WSqwazXQSpgKMol4QEhO+BezVkbfdwEgXj/1xrI9zox/wex1/IQC0R9QVkRIfcmHuxDHq0ANYIi6z0WZBoT0Qwcs6ujS+xBCKbidUSuuPN/cqa5Zu4o4Id3AK//S4cJIHo6MZv8G0koCq9E7CKLI8oYS4iM+mN4NaK2MfVyiFANe9VWNiDwoAUItaOsl234TsPGfgTGUPnb1drGgtMqRz46Q+LFhn+iwI/kQ1ycdLW5WldFycXcdsY7rpygWAbi2O77Wrt4btDpTDqqwDjn69hOyx5B4BH7h4kVobY1VSxSOKGNi3qwP2geSUaLH79uAhwsHFQD7XN5FfiyOz/BGPxHPlaGAjFBGyhts5gkz4dJEzb+sXIumA8MVhBAVUsw5Be0zjeATefCRly6Gru6T444LpR2LHv1x5PhM5eVt+wd27p6BrxibPk327Z6klAoPAdzWJ80ABBMv03Q6mSzL5PBJCuO5639Txc4V8upQmxmQINmO3uppCeNLOOYVU0RRZoBD38A0cuc6pgvlsGg1VhTKx+kEcPBB1+Xy8/cSSgCh9T8WVR9CTc1pCUVYUhhlJbwoFmew5tMXubgAeKG+0j6K36aI5FOICVTl/LjvMQ0yBKzUSf0wyU1t3GvocXlmyVrL2ck6g9yVfISozfDcz83QxjQvULApbV3ApAwA5ZhncvPJ/93pFmftn/Iw/5GBDY2DL1LW5f9HxzaA38PGJsfCbLHob+nMn/VXWisoZOC5h33cpD+V8yTJ293p9Xfx1YkQY77034T4P5yBvxKt5fU2uzuOLeCIcJcD0BKNbtEmN5Z9k2z2NKPXQaRfqwFqOe3feUCmbjGLuQ/XKwQjcEy6zWnxmOskeGMm+fUN0g8SBL90TQd18hg6K9ExnrHS+Ea81wseS82gqGWEd2UvGs/siLRghOq52m05VkmirtlBBBn+jB7t2kbdNJFQLHpiB9kldMvn4wiRoVLoF2v00wwpqYOzC16unmRysQpcamWXwo1vaXclp843b8sT9ZBldt4RF424n2amoViOVIWDU9iGFS9XtDRPNyKoDMQt/auAFeq5cQyBvxXkegcOSODTDJCbh9Ic4uRqZfBMhBX1dtMP7GY0qRwzUQKYEo2qldLi7ahEOsEmzRgoT+SnFqsXgCFfE5RnySM3goHwBDSwUFRwjecqcK2qGkRfu+Tg6hsp0HNYcxADEL7c+eon92BQgKrTYvIRmwvxa+EwqwjA4XlL/cyG54gcI3xNb6kifeatxeNIzeEsZF6n1dXmrWqxoC6+E8FleWTG9bWivpDrPAykqHLzF/P2MXicuVqS8ED1vY6I47ds+nhyme8rM7gDLdUhg0O1QN6a5b32TWIA3BOW2DshzQa6qCvfW64PIJDA2lDO4Sh6C42/2M+KK71exxg2ePB8dF42jUrCb/YJEt7oQnSZLp2gmVdUX7Gx+G3COf+Ar8uKuOHJ53AMiMWDVPT/ZQqp6KoNRviuysEVfzEXSIoLhdF0Dvd7cRtD10ZHjTRj0fQN5kzQQkn8w+WcRxnXm2CM6uM7byZxvMJOxTmiSolm/orh5sT9HQ1nQ9/5vT+b40k1g71Sn7rpOVUOSK1MMqGIZujWbCjvfx3iw1lqDrEOo8XH00CMdLsO2esaOo/5TWGhGswiV3+QUofC9qqVTWqC5Cw1jbXhl6h/sBdMjZPeOkek3If9cdbYC1VxpdwwfyGgtr3ypzHF2unc4S8PqNfcS8tLb3baUTAYodMtvsWezQorcR1+cXvQlPdN/YVPBeWSHSF2TxoDXNzeLL6acIChypJJL5qP5RHbQqu4GMNukF6a4e6eYNh8C7AosGqhtLH/4efguZ4jGg6n9MizxGYx7rgnT85WeBf7//d+bOwRly9WuSQCJh1Ly0t83NBtREID8Xk451lhc2uOkXmzlhN9IR7oC6Su6m/DOYpOwDFhEKpfQvKlKAM/pVed/8noPY3JJIXTHENgsVqGKkFp7Y0AJjCLfEHVFMkzeRIopVfbYmUr2fHvStWe1Z04ANlxbwO8ZIeDwWtoPTGyUNoB4/ksTK3PlDzUPL09dA9QcY3H7BdYZdL5PWodyyUfCJMyx+Z0+zrcm8/UljjMnnRooOEetnqrG+Od4FOBLmzF8otuK+d11YA5GV5ZyFHXZqQJ7ColUlbGKtqX4iuKtrSyOYeAzng9ELx9grqC2NjoVi222MU1FQe4RgxiWnJEzu6BMpSWRKb3xsTbrHsETlb/pNrrbST2L5s0Wl5DBQ93v9NRYwz/igBGSXzSk5xLA1D33bFmRI9hYVY5zXChffbhMHubbMl+PHb7RUboI+ZQbGF1NwZ+KMDiC2T/UYEsUlDJAmIEXvIO5VAJ7Wdr0rcwMcm/q1f1TETFrK3fWCVTzpU0Lbql2nFpLdxMtijrPGsI8LMNgHnvym37aq2zKUqbMgI01jio43GZGWrMDasO6nib6PQXHGWLA9AtK4mU+S2pDjWjFxYiXnsfLqYG7DnFHeUqDQAuzKQ0qtKbzmjjWIPIZc9hCscFKQ09YyNHO/eC0spV8d7JJgz30d3GIvWXQVF8iJc5/I0J4nEb92IVcvdUY6TF5arSSMGYE31BWNTTWpNqgk9hh90wv0MQBxXWK4BAYi9IJrcw/8TxN0D9umPPYg/suIfJ0cslmI2NLEi4qarl24Pmz8JAah3SGQ8tQPXBfihlNTbx6+AHvsSDLF/sb2AmSqdJI157fKLFJu7ltb1ngZzlJEJzrOLa4H5IRVZxmyz1ifHPUbd0DF3e4qcI6qupfbQP2D9Ii1+EmTNAqYCG4GRWncFfu3LRkua+lvC/7ESsGwVvcb+SN6jv1vffygcpN4Ghx3o58xetAsy9cEtK8WfLCUwT8wHz3+xD7GRvJ9ODVwAKu33ijTmyw8O9DxQF+t5EOgDA61wN/Q7ZmeAbEnWaY2cAQDdc6apwgJlLPJR/MVD4OMhvL7mQG0fC3unMpy6CkKwKRdSU18oKsQ9+VHkeH/oQ6f+NhqasE1ptUvbZo4qMBLZg5gEaGnxCaKI72+5QYsSdlGrJW5LahxEvUOZ3+ksMNDJyW3V5Bpwu0ICoYjnY9Yd/F/r4W0KvoNh7+hslYw8bi3V2xpO5VNhs1KbKQUpfKCmwwcDinb2cq0XEis5O9CzYIWUt9crqa09usW0OrVKtkVVDmcH1tqULqpKnCsU5Y5FUgu91nXsuuH1cfkT9D5/kX90gJ0/2bZdEt8rGAwO5mQjaARfsaJP1KkNNAcWTYxB015QgcybFLAYcXfgOyEbTdzeIIjHnIwL95XwNZaGl3Ll25eVgnpeJQ9ONevnqLtSyTUZWH248os5hDuyOcb5YYaYdUVLpVceC1iA5CDAfYHoV3HPbP4G2BjMyRtep5PobYhArzhkde9T7VKZPXXFCOtC9BgekIGjxwy1pAPBB1riwEKKttXFbTEPDEv75H3Pl3dFh3lFZi9d0yQjoqHJuOuW5PCakUfTQcbv9fdzrX2kjYbPYFlZlhT0qt3n69x/YIBjw3JYOWxsZhTYS2pW+rdP7LIfOd/jR9HqEkhfjhGbCiPEvwmG5sG7nAOHleYv9EZI6s67ugH7RN9uprPNt70USlmUVlQ+fU4X+3aWbgeLRBz0PzPsIP5JLtyKSxpycSK1tKYVe+dbpFFNFdMrL+OXyWMIl4lTqlvm1xmOR03zr9TvJeBq3AAy3TfKZZkJykCiodqofapec1dQa2e62EP9f27YvvaR0mNoHOqFS9rTblFxxHk32ahH4fsdxqIZ3yY4b2ZYtwApj9Kga5UkG9vT1YmO/9sbuZFcfu27k7k4oBvy09KMMo7a3DC696QcuvgGIUDEiZOB+uuFumCHRm3/Q+cTE49nNR20rdGGznz7sydgY2E6Ah+2aPt7n9BRhw2vAqCpaF1fx7K58tmC5nDYTh08Olme7CZGgI5ez70XPXLxLrV7RHKRpn7zOfMOVKarbJwXEFbbCxwOMO+HZgOAx6CrPyh+3j17pZlY7roW/RkBoEMQxsyQl5kYfesi45Vr7QsOTxms9ju2WOtkSNM1c2JTMD4NccamN2PCMRbIlPVfP5ZzB9Klh7xI8cCs0ylKgCmRY1t4J6SXSSXilxlU8JzuhyLjqUz5sMJ2WaGo0jVxNicD3yj1d6veRb8q0EnttvOiIaS0jrJjcQDcZ9yNPMDQ/SRM2T62GYnZA4ce7mB5Z1OKjMJCq4cnQor+A6BNMB4L09VGtF0eTmFlLu/O5Vzuk1o6Q3VXf3AQf/TQ6QHNWRWdlJbKJMTxJXL2jVIyYOyi98t6q6NqSwDVSsinMW4IJpzC9LqBCNf63L/pxAEA9oNJEJuy3Tr4AMshNLCVijF0U7CLa4cguDZbBZsFH2eVIvqlqB6DyiciMDE7EJDrCnJwFdyXjIo7fo/C7cG9TmVErNGK0e9YjzI9PaZmrTuBfugFyqz99CCmMXfVKreYkYTbV/MTFlu2odIaj6zVlXlXiKwpeSm/qcdcWQ8GAGWAdoKS/kSkL94EVyCmuBBqH6cdiIqunENBdZSQUtq7Mp8B3mgrMx4cQMcmVS0+Ak5/IQ7wXbczaoYevAuxzOPSzv1qvhogVQeD2Lu8NIw6JRNSWE3IeelRKy5rK+qUOIOS7YzSS06DMUwyl2N4+Gj5iOWIlqt9n9R+TscZAgpVRm14+DtuxdmFrZY8C7MnytWmIRBhO/OKGyhQuMSlCJvD7lPkJ9zPYcuS3x8XCj4cLvu1i8CYJ6yOrEw1F6IOs2FxYyp49LEJVx3/m2ddDCjtn7EgvQVOMy/YnEP15Wvuin6Xl9JlH8eqOZCC1iRkXT7etHqSkEtsH4E5uVUJPsm3IrjKESdYPe2bnnAKCx1R8okHDAA6+trlhiPmCQ3VabfVAdQrQN408rGhG77zCJYAYx8z9BJmtQ1IA0ukURI/TPmw6sQtD0Txl3NHQdJduBjJPflA1WV4xv6es7MUqSVl02+3HovULH0HUwXBRYH9SzvL641Ox+N15vngMkOjgQwWZxPeJ/McMygQIviTcO/zkXYkh2pNy8mBAdHmJzASa6G/h4uc305aSouQ1z2MU8FeE4Ejlb8vQzzqFKNdBcRN7C8uAJNLY4w2jkysdz5GAfla1zGwXeAjnIOdD7S7IA+wEB5rPRnXJQ8pap8xWqe01+zl/SG9/tyreMZzMaq2PS197BlCZv9Lej/u1fpufaJzlaAziQ5gupmzcNDOOJq14thF6YXl878dq4R91K8+Je254sIsGbZMVEvWBnuuTk9UcxXz+nr0EGvxYbJF48GOyke1cQ+EC8H6SV/wrImxb/HRPqEYkGqzdfjhkj+pwDQXaTs9CN9Jgtv75xTQvku4VbPNg+ubrRZaS5O4pHWHtNir9yMtBDEK9UumluTSi3uiSu4En47/otXVG4HjmcBWwcumzDZ5icfvzTyOfxxJ5AKZQOlf8damQUace9RyVeKhsf2/8l+MBB0EdxIuTjW7ZD6Kfv09hHoiUd+65Nmm7Dqfgt8IBSV4q+9wDJkQKv2xiFjWfJ3PixtAtO2gDZR8YCWKLU1ji45MSNrKa31kyBQ3ZiZeGSJ7f4pmtmeUT4ZZZ5OhaUlAGJ87XbNKSqAfIsd6tmcyJ0NfNkIO7Me4IhuSLCNQoB/WEKDeGGAvMOKVMB4SehLK1vDlBKrv2/eH+HpXgRMuQfkjhvLcbaodCD9YDq80//wN624RWdRecJWL+M9MDPUJtaVnhSNih6Hom/rj167NNF1mwF/CfqDnHA16qujt9wZngGW89T6dgVsjDRCgtYS5EMEbT+4w5O0vX3E/LHhK5DRnWGmzl1DMyk9iqhsiaLjTZ8iBZsD/aSHzVgW6tAEDK+soL25cIhStwW4tpjKKB6SqSM7wpktO3vGUbOOc3dsdS3TGuVV7Urg/x60f5Z8/qQQJNgS5iEjd7gPXllqh1tWUjlAnUx59MEeBbCTLN4xy+SHJbD7qkDNA2qbqixmRHMS1f/p9XNLmO1r9YnAd5LhvRdM/3g5VR1nQ5xzRX7gii/d3LUK6/uteR/Se20z7QVThYwuPPIcW8DRlzIRgMWlxsPgiwFNa91o3R3+48g9QAyML1YVTVY5GnxpOeFLOCJpvek+ISlWZDXvvl8p7IR0oooDec08AWcDvhJYhpeSMqP4jW0OKhBK59NsSW8v1qDghelDfHtJ2jFQlLyXcY7+ZovorAQ5PUe/TmbQyNdvNv2yHbEy8mV0jVyO+IGIIWJ2I0CQVHMGxJe+gIOV9atqLy/RYnBe9S0CCc3RwruFmCBrAJgveLKkvfeeqv4T++2yKkR4UN0VXzmg7kB0IQXCQu4xtA9B8ua2O0JZ97PLfvSgOaO9RfAmfUcjfeH6r3myYQea30g3Q1WTOWWjjkG+gBE/MyObOpk7EKTUCGr8YPDMT2o9oEO45dXp6gkaNHtvDRywImjH6riZTolg0FRgtFRTaThHcAmNT9aeCfee8UGHu4pybCIJM28nhs8JZxLMrWlFeFQRX5fodp2eD93dvtc1s4/Req5uYQm15921IvqdlPEdIO4g/lyJB+nWVSuZcoKVxEXZVphnpj4Uu/RBpN2hkk5wZhFdnFgIvJC3WTNbh9aqIK+ifgmWUAgyBjcya8vm2b0XyB90fWRn71mcf+xojf0UDtnLAPZtFneOhvLr29aD3Gsxj5V3W0l4izXNePc99QMSq3+Hnid0cgCfaOyIm8WH62u81l/GYZJZjwJJzZRcwo7vvP4PCOvTxDpUP5SjYbRuh3PSZFYe50C/qIrNmS7OQSUr8N+B0yKS+uxgwGVIijgivfvImYr7IKamBSViMXu+SyCdjuQEYTHKzZL3/dd3LF3LJQ3JFp9aUqZ0oLDocNvqTuNwKPxidV6GEQp2V2Ech8hbErd1UhE2jr6r2kqN5xfxgMAH7EKof35sJJa06YwU4EbmJa7OhsuOn8bCTwTjRKUgzGHx7kl1w1xBDAS5P87cd+P7Uw75IWYFwnCKXIVfUbqr9fSO8uVU6qHRtCkX6bfRicw0bA0jjF5e8rcfw82/lOFFLrTKLO8ayjrUT7nu2w3h2K5TmRAStp/Mk7XA9ZdY6T8+anQf3WFegPREviHecVTNM2uU3WRdh+VDIA+EP4dzuComd2RJ8rgRpdCcGknXkV4Xx8J1DJZvCMvOn5JN7C7050XokgNA+FfJ1E7jmbEkilN2SSDiAowzzOl9UaYxF+qxjt8AuDWGLN5tmPbhtZ9QMbnnerugksBfkPLBDbHCXw8pYbsotQNGbifMahzT/Tm4PUr5nqLygK9KHEc54Cdf+BuCIBwcAV5paoAcpojNhhfiPe738XTqXY+OVotZABQjnSCEGebrmvkg16Dhyvs65XirwUn/vHLXsdNtufVfts6sNwhKvbDfTIXtyFEuNhug5Q2i/0LsogMUmgaOEW05Nv9ht8BSWV0xu5et9dGBlDiwtTjCBIRiKIXqpFgQZsDxGsuGrP6UB92MEPMJqqXFd0y/tiSE8AUifZhB9jHE+6RqQ6wZr3hyOUsAYxn7iKtCz8QDzev1U0JAo4Rlw49VicwvvkxXG7PGgAbh8147TetQZy9y5ZuLJjiP3R7cK0Ovxw0s33bbJEsUZMZmxDX6fB1x18PbpvaRhTTLgavKC8M4t3WotaS5PGKWxVPDwtGMTYoOw060LDn/r6A3WD+V1DMRg7DHcSG/E4cQIuU6/5Y8RlTQAZm8zOt6x5YxivDMrCS1SidMoNaUfx+hDRDvhZR5E9GXXamFQ/MKGbTCI7zwk5BboBkDtivH2zulmVPclvE8ORi8SmjVcOBaRrqybBSix+BirqkuPto7QFNi4Z4jwVMpAPYJMD42ng/D9ZsNvcEJ4ekDM9BRwikLrKurjurK7pkNWBMlY+Z72Xcmymq0yN3PzIhb2U5XoQKHJGLk7sS6N2jBcYfObC+I2VBexKg/oiDoK7FNLYB/evWZrlyW+uQT0Yu9YHj4LkGLXd+vKVD9bCuwOCI0KpjM1x8EKcf/nWOU/oKEb4Rspmzdum6IJfMU5oW+eYc9S6gZRXYgDNGxYwp3eULIwJidfH0F9B9C2X4AU111JRWXyOGm5dkyNJOpODpdC/BJlz1TdW+QXbvIa3yaoq/zVaCUxzIE0gXhAtd2FIBkz+tY4sCzZoM22sVZbBrJpgRJcN6gJOdaCbtgjNzxC32HoE5D2RL6Ch90RJHi+8ON9kXKu8hucVFpKRRLuvUIFDcgehGecMVIbyOdtoniaMYWcqteZ+MtSf3vwfU86YhKr3QU4PfDSXDSxv9oDirSvD0GSiMPWniHFRudwhaiGY5oomyb0aTEePhwPS0B/p3rR+nnOD02xYV7rcyFFAeX5Ho2y3cYJ7QZL4EUzuGv9qRw7vl7d+WggfYngt2jtxblmcdWruT/0UwdLxq/Qsm4zOx1j8GBg2Yz04EWphHrj23OUeY6ZxJBUGQ1Bwx8o7sHSgdBtBfuxNkAbLi6oCxpdL01V5qdZkBDt2GG0QbXILDlsPL2Beyg4jwu4de2ZZG/Vw7DwoZXREQfIXLQ6ftH+TFZ9w64UaOMCsVDo9UzqcmjvGueswxk8/wnNuTK+g8iAV1VIwqh/x5iw0I0MiQK+LfnuPpEXF+O6xPM8Lqe/Amsxxy1xIOQ2CugxtU9EM5vB6UCPmxI8WecL+m1FIexfTUp5tgqtFPudn2ao/xtf9OOW3JIdQxeLD0sr12QA+lwZpib9ulgvjg4uG/d33cIGwqcXF40FfkIATwHEEZzI8J+oA/SaSxgUoVUUaviXzHWwPfljLszIF9Krd2mikL+CCuvgDbo8j9vsX1jWagQbHmMga3smaP0An3+uTEvT/0MY9hf810RQkarlQiy2zzzCElfvAAdNITmYBEu2CsishMq+/+z4Pu7VqNpXZ21/SuiVYLYSgVA512GT9RJiCCS0H8z/ILonJ0d9/hLLZeKHYC7iG23ZNPH5TI5ebzYsCFn3fEQWD+1c3Qlk6BJWlp4YmxB1+HxS6IpyAs6TgVpyCx+D3HT12VjwdSGNmRU0pu/JlRvxEAA+IedmuWiuNUcWaOBH/UzSWZ3DUPvriYGc8HdhQI2YeOAno6rTRG6tXbsZlNjd+g1PqQeKW7IuhClRTxj0PZst81YbTPvM3zAov0O4rKDI4Qe0TLIgTEiVrBMcfQ6iv64yAUD2emvnvpk783MAkVUeqQMkrTRMTh8uDqd6qprvCHHi+NU+TasXSbd+IgR+sKgQSnXtJI0T6ImFP91APxfWr7BPWOSWKEJqNk+17dNni/fkYOlTFtwftDDn/ik3VTdRWguFqMvi082c295htYMrn4D7iAP9mD4j5uEb+84sHCzijrxSBQtW3vMTyVnSLSaOa6itch/8gYc3uHLuoa/uDSNoz5ay+fi5WNUB4qq9G5DLLtbKXUtzS42hkfL3fOFWO0N7O0F/GsHNphgiVqbWdSWEImRyqvLwADOEHrrEzVyi936AvpCqkeuzEttEj/w7zM86zZrql3xNJYX1BiQ9/tORC/Gx9sBHA8h/ULvhSIhUbwRgrpkMDDsjv8mVQUUipJdUFF6Ve9/PP/jna95P8TNiP+FbECNDsd4p7qunrYP31KHgC4erL5BMM0MBvskuKTseFLshgMqC/xdj+MD+8o8bXf4auwXShHGfl/C/ZGzsStaBdjoCzwYhTtvoiGsREAe2i3XbOqopQfZeZAnuVsr1NKQW4SoyJ3lTxstHr85ntGuX2XruKz11xLBzB1hHv18JmLpU6sBalZfbdV7W0IfZ8P/A2/+qknPka5wjammcrEYiDQkOo8z5+z02dANJVLpmVj8DtL3uomlCbmimOaBwp8IuX2ESY2N0sB+FAdXuCRkQE+K8McmjsFluruyX5Cb2t1J8xi9qQ2nGDSClKEkWo5hClnRRBTJceoNYqduFJQ8cI/Bts3yPVAuvRG+6nyVAIIaMe+UFu2bo3KnJWBWeqSntoyPdqmkCqdzeL7lAy4myXmlZ4raX0gOn0eDEvJ7LZW8/NgUEDi3LIcE2a/bsBxLrISg5DreB5nVvKbNt7wqabHxCfKV09fNlez4YHkDeU/idjmnZRiaUtWG1F42fCnKLtrpVPhmo8MqzCsLdU6VV988KUSveTiI4LO1b1li+a+Ao98ZVd4Y3/T9eIbFdGR1dXQMpUBUaUO6VsVJ+UDyZ1zDYFcfSrrOAEjqjeI86blZMItJqVHc1NorYK+foUJ8zWtDM0e1xw9213StD20MZiQPiWGsIV+f2q0SmBHgGYMxJfz9ziGczV3+1+d2b1euyIVNJRvMIpnVt+dwHqLbN3ecuzhgbz9xgLGs/7KLwYOnCemzY3PWfuoz0hVjAjfKa3nwtATH1vS3hNnE8c93ho9eiyIxvCk1wyg8I0skcABY5TUDX0phTYMmGsG6oGVfy0Rr+Xi1WxeciPnPIyZG2kAIn2+hdF4CPCtvACAoe5pEOiOfID2ZMpO1aOYnvR/DeEYlUJEMK70CvzdUDQBYx5PVKPlXU8+tU3lChCVnHlndR4TVEbH1Itqq6V6fIqIVY8oct9LOWxjJCzM3Blaft6v/lkNnItd8BMwQgkS4tEzDwcC5fi4aZmdk7vjiG26L+Jur7lUCXRWnfGY0sTpV50KCQh06wJtVbXe9j3+QK9X+w82rK+C9DybnjBsGY3B/kNdGH7ct8W+0E/Y4zCBdx3vW6ozUDT/UiSONY6JUytns+72iFQS36XvZtOgu4orqI0yaxB6Xo6h3Jhoqk03LbsRrFtKn2OzEg+WWc73x+V40+GAYSSoSCWQIqtiJ6M/9XTO0fcyknBhbIN41FIIsRPDWBBoCcRghLnC9idjESc0S17g8bS5dPwRBIxbawTowIVtOX+LXvJ7jAuXowJ6Fzgu9hUzKsuBTgN3f3LLsdK1WCC1rLTrBP9g1/J5lSWCPliozMYIBdfnJdTV9lWieEDR2hjsX2FlFsYe0meNBavBWqkHEYhsZUlrCKwxc8svhURyES2uvfbscOOM83qpBFj4kcm5M5/xv35fZXvorpp6UlVk74BQ1j83ASaasbbPqkvAxBmJP9Vwoi48yrK10b5BkQMAV3G1WaOXAf52GrB+Z3ZOxZci+p6aGflSgVXRFRViwh6jxVECK/D96SDqkxIs5ofRXRZb5nuD0FaXl6+h2M/5Moculwy/2qJpBiFpxGfpUlCYLr4bSUK6ZQCjwrFEV3qVf3x9KhF43eyC79SpzKzGS2M7O2mGbzGzZMK9WL30XfUb3X1bjmPyNOEvBKLCF+TfiYwLIgItOPgmhdxom3dU5vQXfqTV1t0tTW/mLd9nTUu1FwHpL4tsBYoLzJDYxuGgny8JbaSbRzIzRfyarXo8musscDZ0RmxdcTZ0q1yd7sF2acNbpP3o97ag4ZqHJzP+OE3yLPTrc5y3jok4ZeqTAwioqQTlQi3LNWONZ+l9b2j95kUC8thiecVxOSbGlmlM6KrLAEhveNsWmiFaaPqiFebfpWfw1qJycUSeAgEiS5S13Ki+i74Tls2WFqwD0AyY5LeoxCT0UmraiiehLk1HMyDkQfc0GOYQZB78OmZrKAhq98szfDlb+eVgSv1o8yVm0t4RhoiPOq8bJJyveDC3AHD5VQN4CYBOfeR4s7NQPXsOG17iu9kCf92lwCHOZf/b9rMlLEj2HUH2v91z7DkX4KCN1ebGKpyalQmh8CtGbpmoohhsW6FsC3wGnlQPrtpzeYNHa4e6IIClVFKO/o7fKYcsN1zQxi09fUnGOtMCFdtQ33alBNWzIndD3NsEXQYhm2PFp7yXZjirpZjZ+ObnYGI44b7AA3MQvjizcZEnn2Mz18uZiyImIZtBlCEtGmw4HZbTkRbAjrcjgI+OvRID+PTys6Sx49d8Ir+hsYxAUJXsu8y9LOnmIiYbWrqGXKaM4BL21KQTdTAh1/uD/MvBMEdsPqXue7dcxnu64G2+11SSuD2VSdiN1oVOmJhZysl+q25eoEZ7rb2Rzd4BN093InO44Q24pIoZzzwuSiGruraDLc/BCUUjNmDQrchLc6gq1JXrP7RiQDJ2AF4A61PjI22CCP7Z+vqgpx6Xnsau89SQXTtDT2Yr91EBY3gzJA9J7p57QxOXkD0HIL479qAMLk3J0m8gbrUCYT/0oP17pXseVvANjS+0xCYrbUSWIyd7TqcPImwBbleiVPA0CwNcT74NEE/m7ZJYhK+uEvgDGnruOwCjRK4FylpJxSjq6fbnYSEznGUI4KLSyW76a9U7lDGba4WIw2rRpJ6rKTIdB96cLMZmJNhn7wWTa7aVe27c4AWYXJG/Og4Hgl34zLhYxAERJCYnxghb/3s7ISZZWwa4KUH9fu1C4Zd5cSvOyd/4Un/DKmQYAkuxdwsjIfrymOZthZqZk7I7mTPmO5XowqleFz86c4AdHQbffWOR/viHGN4vw0opyRlqFhjZNo7Yvba2Km/bS/T1PK8BfURxu3IW79K1Fz8qpg+QE0ROk0mKm5yy6SB2itNVDLg8NBQpP0MzmH+JMG/N/RaKODc3mbh+qp9LMVQlA1XIZhOwwDdEEIp+4GqW/LNHTz5B8856Z0Soe3cdXvbEvpowCAzFurQFo/WLuFuTnFaHN8+7wTQywgYTEXeZmQhCVfjRK1cWdaDM8c7kLXi2fprHrYrGkzMzRGNKMuI9ijemn4vrkLi0TkvzzuoJaEemTPtwcOVJDEEJYpV8KrFGkTYuqCPStPOaLOYNU1mTi4/gKoqDN2wZJAvJAXh/B5vjrHNIJ6oXLRp4wxrbherzeFixJkzC8C5YnJ3m5m8qDTfG3djrdmRo52aiomEyMKaqgXDd3SWqYKQHNUSTL7q0y5E031KRKa7ZwQz0aWWI3/xSHJTLmo2IzX1VhEE35mLIsc0z8apdVpU/isGJExLULmlwTtYSePPyJgeWzd/LBEik0MAy/nIuNW/Iw732xnf+PB0EwYKvwuePSveLuhuGH6Zu0i/ZhZLHje1iMymJJ9Jim1coCIIWIHSihuUSlkLs5vBqutNSc7mZf9yJzplD3JcNmnq3n5ArU/yczBFsxH+zDk+JhQXC1U3G0MOuyfK46CwKS7VP5Ol22fjmQEz7Hb+IC7zlCYkbUwcpEswPBPjQ/Kfp/gWiWTQzWPS7NQEOd8mXjxoMurOmoLXFM98BGZXUFj1n93+b1nUnDV5I1SczPcQ/Y+sFH20JcdqHsrBjcCoXQZgOWox1socStDYfh1aUSdqnhJd3qai+wJYsBlPrBLcHqD9ATypkejS+IE6Hh6KVPEkoT0HwEoW8veUn3m+/EyJ+2v/fhD39ViO8PiZb+t1DCQDGrQXpE8nGNX8TCSOpn0fOiCCW9DBTvbFomQynl0xCnNw+bjoBTrG9DJHhhuUlRzalHalbaru8tFUJ1sDwxaPIzYQlBJSS68K+o6Sh2hmTl7A6ekGWM9nlVBvQX83AVyrp/y2j4isKVYE1LUII74L+pnxjls74PYcpppzlxM6feIqyJBDPV5xIkaUuNPvOfnUXA90LVAhjRKle1Q7DH785zGvw5GqoGDCL+t1rBFDPrsR45mklK4JRZBPpTQ4FRQR/9C5cn+5PTdJ6pCUqqmmtlmejonZRS1JVrey2me1nFPUtLOKOoH9IHDkXXvLtWcPWJD1dtOBBuEEsNs/28Ivo4QXf+wHR0vQFkPBfecy5czKrZJ+Ious7TnMYRB2BybqI28ctFOshBUrmIgpd3DWobxszZQT5oF3FGtWMCnOoIIaeKhC+N61neCsSj1Wy0pTPnDzS/cehKjpUqFFHJps5NrqK+doYdl9GDFrhHsHBaoxkh6fLAUKJjw/d5hd8TTDbRo2pEc4f9QeKh8T35A8g6mQ85eey6ydO5LuN3gnllN2uMqFTnuSpVe19CnaRDHghKQPVw2Ku4Qhg69UdW5JeWilp8P0OoMFCne2TCYZQgwD8CRdRNa5oJrfTJuwdGKcOBUgj92vj+L5yiEMLGFRjYpr2TUT4Q+6ihTf+hyTEMt7L1Zc9hTlPuR9mF4EC5DbobyTM0mm9hJqXGHiUF60bsaV1Zf7uXueoK3yItx2L7XhS8zf17x0fD151Q6mHYgZPinn4drHCA0etcTrdBB98Leflx0Eh2AtFnr/mNK2T80ehZcs3JlM0UiuQtMUYkeOswDt/1/dggr5x9B3jXH2Skm8h5kpiUegv38H2CbO2wtiXCW5s+ZEN9ughBZLBcRVw4f4MoDIfxZUZY7mdDySx1V+NfZAkxeaIEb1wb+tfcfLoEmqsgP/m4m/zf8UZsVPAF+wS/Opycbcwpd0uTJEuB8Dbl8YWQobScb9wknYXunAzahEHBBxyJmsy7obpETfHDh6t9Qai5o3TrNt3QGqV0fIARTSSBJ+VhW58dzRMaF8LjJRdpSaqG8YxRecezqL+CVC0eWLgMhN06mNbFxe30n2bCDzMfix3pFTmjWCf05fne5P8f089Az+mfMJEmpl+5utS0U/Lb5s/5HeO99EEWyXTVR/wJdiySQnYCdtx03UEfNpX/lf+suV/8FrpMZJxWJxj55nnITDin7Kh9Kztpe+1cZdaV8HwFIScY9qQRZcYXROLzmnS8JLyaTo0kcOQ9BFfF2bboZK5yid/OlSlt4Z1iVT2pYBgzgWKW+i4Lr/QG8E45R6RNrEw6PFJnImD0IdsmuzsKKQvn2FlPR2++gv0fMhzCnYMj47blDlYsS2d3+fIXwTaLZ3cLviMn0+UXHTuM7smhSCzdBEaPgTrW4Uriag+Jbo0xwVVqN4zeeWmg7NOC6S9iRbCH5d43fPJLvVhRMDaJV6BVArMU+7eOlsSZK2Gxl0RKwuu3x1EzMw0OCLoBIEM5MbSHCVF6btDq54L0q+E+YSaEGVeY7kR3xc4uZ1f4g4uQnOKFf4aNaoVef+Ck62TFs4JVPauTZUt9ummbLtRUJ+uSucuWf6891MvYJjdGtxv0j9G5ccnQHN5QHlAmw/Zx1WscJCmykxg+rl7XnQA2GGqmXK6k322uTofSLdeMn+layzm5byvRyrHsuCb7Rl+E9oGlJWCrxlZ6tPl5On8vSgNZ6+mX6vJ0Z0TcE59aOAKnYlqilq6gy9UbJ8ofmQPHcIYuUno6pLmqZ/ip3UfcnBSjhlA=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=dQQHDTr5H7q8hHyIInU56gIeEsfr3EmH53mOMBvHHshWApnLrXsRGqMMoCiw96dCgl7-qDjpgggHymEAqr0EZPDJ8jsq-W9EJCdkKBRfPx41&amp;t=636476407203255666" type="text/javascript"></script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="gPA03AMmrncii1ktfcaxYPt0H45Hh9fMT95TI59Ff_d5FJ87c0e3GUZx2pr22HGd_RNc4LOHmbT4z3aJKLVCmvMBna9HTPcPzV0LYAECFpE1" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="J+OHlwJ+A6i67dF8gr+Purjhv/cHheoNx8zx4Ug2eU1nxnRLWabe3e612kEkb7FKA+nTwdXozvTCF9vfRTCQ6T97hbXYuaqLXpp7px8bQdzzCKCubTY5coCG5VWr3juld3kLBv68Vr5qzfozVRIYFgzGqmIfWkyKheSAdtzyqPy8Pt0sjklSOSSPcy6SY4Od9KXHuLTFSVlGisnZttktE8x9+nDnY7WxDr/ujHxIOpBzlzMJ5RK/CXQgcO/a/Ecx" />
+</div>
+    <div style="background-color: #FFFFFF; width: 1003px; margin: auto;">
+        <div class="title">
+           
+
+<script src="js/getInfo.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/css/top.css" type="text/css" />
+    
+<div class="top1">  
+<!----------------系统时间--------------------->             
+                  
+                        <div class="time"><script language="JavaScript" type="text/javascript">
+                            getTime();
+			            </script></div>
+                 
+<!----------------访问人数--------------------->    
+                    <div class="people">
+                        历史访问人数：<font color="#FF0000"><strong>3249651</strong></font>&nbsp;今日访问：<font color="#FF0000"><strong>818</strong></font>
+                    </div>
+
+<!----------------搜索框--------------------->
+                    <div class="sosoall" >   
+                         <div class="soso1"><select name="FZYD_Top$DropDownList1" id="FZYD_Top_DropDownList1">
+	<option value="标题">标题</option>
+	<option value="作者">作者</option>
+	<option value="全文">全文</option>
+
+</select></div>
+                        <div class="soso2"><input name="FZYD_Top$TextBox3" type="text" id="FZYD_Top_TextBox3" style="width:200px;" /></div>
+                        <div class="soso3"><input type="image" name="FZYD_Top$ImageButton1" id="FZYD_Top_ImageButton1" src="/images/index_46.jpg" /></div>
+                      </div>  
+</div>  
+
+<!----------------flash--------------------->
+<div class="flashimg">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"  width="1003" height="243" align="top">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="/images/top86.swf" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#ffffff" />
+<embed src="/images/top86.swf" quality="high" width="1003" height="243" name="mymovie" align="middle" allowScriptAccess="sameDomain" 
+type="application/x-shockwave-flash" />
+</object>           
+ </div>   
+
+<!----------------导航--------------------->
+<div class="menu">
+        
+        	 <div class="menu2" ><a href="http://www.gz86zhong.net/">86高中部</a></div>     
+             <div class="menu1"><a href="/index.aspx">首页</a></div>
+             <div class="menu1"><a href="/Fzyd_Zhxx.aspx?sspid=9">学校概况</a></div>  
+             <div class="menu1"><a href="/Fzyd_Zhxx.aspx?sspid=25">教学科研</a></div> 
+             <div class="menu1"><a href="/Fzyd_Zhxx.aspx?sspid=35">德育天地</a></div> 
+             <div class="menu1"><a href="/Fzyd_Zhxx.aspx?sspid=38">团队活动</a></div> 
+		     <div class="menu1"><a href="/Fzyd_Zhxx.aspx?sspid=76">教学资源</a></div>        
+		     <div class="menu1"><a href="/Fzyd_Zhxx.aspx?sspid=77">党建之窗</a></div>   
+		     <div class="menu1" ><a href="/Fzyd_Zhxx.aspx?sspid=78">工会园地</a></div>    
+             <div class="menu1"><a href="/Fzyd_Zhxx.aspx?sspid=85">心灵驿站</a></div>    
+		     <div class="menu1" ><a href="/Fzyd_Zhxx.aspx?sspid=80">招生信息</a></div>   
+	           
+         
+</div>
+<!------------------导航下面的背景----------------->
+ <div style=" float:left; width:1003px; height:14px; background-image:url('/images/index_24.jpg');">       
+ </div>	
+        </div>
+        
+        <div class="sh">
+            <div class="sh_right">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr class="sh_right_l">
+                        <td style="text-align: left; padding-left: 0px; padding-top: 3px;">
+                            <font color="#ffffff"><strong>&nbsp;学校新闻</strong></font> <span style="text-align: left;"
+                                class="style10"><a href="Fzyd_Zhxx.aspx?sspid=81">更多</a></span>
+                        </td>
+                    </tr>
+                    <tr class="sh_right_c">
+                        <td colspan="2" valign="top">
+                            <div>
+	<table cellspacing="0" cellpadding="4" align="Center" id="GridView2" style="color:#333333;width:364px;border-collapse:collapse;">
+		<tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView2_HyperLink3_0" title="2018/5/24：初二年级召开学生思想教育大会" href="list.aspx?spid1=17726">初二年级召开学生思想教育大会</a>
+                                        </td><td align="right">2018-05-24</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView2_HyperLink3_1" title="2018/5/9：八十六中喜获广州市“明日之星”深度阅读一等奖" href="list.aspx?spid1=17723">八十六中喜获广州市“明日之星”深度阅读一等奖</a>
+                                        </td><td align="right">2018-05-09</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView2_HyperLink3_2" title="2018/4/12：【86 &amp;#183; 志远篇】玩转科技，创意无限 ——记我校初中部丰富多彩的第十四届科技活动月" href="list.aspx?spid1=17714">【86 &#183; 志远篇】玩转科技，…</a>
+                                        </td><td align="right">2018-04-12</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView2_HyperLink3_3" title="2018/4/9：缅怀先烈精神,弘扬传统文化" href="list.aspx?spid1=17712">缅怀先烈精神,弘扬传统文化</a>
+                                        </td><td align="right">2018-04-09</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView2_HyperLink3_4" title="2018/4/2：第三届“羊城学校美育节”舞蹈比赛黄埔区初赛获得两个一等奖。" href="list.aspx?spid1=17710">第三届“羊城学校美育节”舞蹈比赛黄埔区初…</a>
+                                        </td><td align="right">2018-04-02</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView2_HyperLink3_5" title="2018/4/2：真抓实干提高质量" href="list.aspx?spid1=17709">真抓实干提高质量</a>
+                                        </td><td align="right">2018-04-02</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView2_HyperLink3_6" title="2018/3/22：生命的春天" href="list.aspx?spid1=17706">生命的春天</a>
+                                        </td><td align="right">2018-03-22</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView2_HyperLink3_7" title="2018/3/22：教职工摄影作品展" href="list.aspx?spid1=17705">教职工摄影作品展</a>
+                                        </td><td align="right">2018-03-22</td>
+		</tr>
+	</table>
+</div>
+                        </td>
+                    </tr>
+                    <tr class="sh_right_r">
+                        <td>
+                        </td>
+                    </tr>          
+                </table>
+            </div>
+            <div class="sh_center">
+                <table class="style5" border="0" cellpadding="0" cellspacing="0">
+                    <tr class="sh_center_l">
+                        <td style="text-align: left; padding-left: 15px; padding-top: 3px;">
+                            <font color="#333300"><strong>通知公告</strong></font> <span style="text-align: left;"
+                                class="style10"><a href="Fzyd_Zhxx.aspx?sspid=82">更多</a></span>
+                        </td>
+                    </tr>
+                    <tr class="sh_center_c">
+                        <td colspan="2" valign="top">
+                            <div>
+	<table cellspacing="0" cellpadding="4" align="Center" id="GridView1" style="color:#333333;width:198px;border-collapse:collapse;">
+		<tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView1_HyperLink1_0" title="2018/5/3：2018年体育艺术特长生招生方案" href="list.aspx?spid1=17721">2018年体育艺…</a>
+                                        </td><td align="right">05-03</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView1_HyperLink1_1" title="2018/5/3：广州市黄埔区小学升初中体育艺术类特长生报名表" href="list.aspx?spid1=17720">广州市黄埔区小学…</a>
+                                        </td><td align="right">05-03</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView1_HyperLink1_2" title="2018/5/3：2018年体育艺术特长生技能测试办法" href="list.aspx?spid1=17719">2018年体育艺…</a>
+                                        </td><td align="right">05-03</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView1_HyperLink1_3" title="2018/4/19：关于我校2018年五一劳动节放假安排的通知" href="list.aspx?spid1=17715">关于我校2018…</a>
+                                        </td><td align="right">04-19</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView1_HyperLink1_4" title="2018/3/29：关于我校2018年清明节放假安排的通知" href="list.aspx?spid1=17707">关于我校2018…</a>
+                                        </td><td align="right">03-29</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView1_HyperLink1_5" title="2017/12/22：关于我校2018年元旦放假安排的通知" href="list.aspx?spid1=16691">关于我校2018…</a>
+                                        </td><td align="right">12-22</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView1_HyperLink1_6" title="2017/8/25：2017初一新生分班表" href="list.aspx?spid1=16680">2017初一新生…</a>
+                                        </td><td align="right">08-25</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView1_HyperLink1_7" title="2017/8/25：初一新生通知" href="list.aspx?spid1=16679">初一新生通知</a>
+                                        </td><td align="right">08-25</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView1_HyperLink1_8" title="2017/6/15：2017年初一实验班名单" href="list.aspx?spid1=16677">2017年初一实…</a>
+                                        </td><td align="right">06-15</td>
+		</tr>
+	</table>
+</div>
+                        </td>
+                    </tr>
+                    <tr class="sh_center_r">
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sh_left">
+                <div id="fade_focus" style="vertical-align: bottom; text-align: center; width: 358px; margin-left:2px;">
+                    <div class="loading">
+                        Loading...<br /><br /><br />
+                        <img src="images/loading.gif" tppabs="images/loading.gif" width="100" height="100" />
+                    </div>
+                    <ul>
+                        <table id="DataList1" cellspacing="0" style="border-collapse:collapse;">
+	<tr>
+		<td>
+                                <li><a href="list.aspx?spid1=17726" target="_blank">
+                                    <img src="http://teacher.gz86zfx.com/UploadFile/baibing/SchoolNockeditor/20180524123129.jpg" height="240"
+                                        width="360px;" alt="初二年级召开学生思想教育大会" /></a></li>
+                            </td>
+	</tr><tr>
+		<td>
+                                <li><a href="list.aspx?spid1=17723" target="_blank">
+                                    <img src="http://teacher.gz86zfx.com/UploadFile/baibing/SchoolNockeditor/20180516030221.jpg" height="240"
+                                        width="360px;" alt="八十六中喜获广州市“明日之星”深度阅读一等奖" /></a></li>
+                            </td>
+	</tr><tr>
+		<td>
+                                <li><a href="list.aspx?spid1=17705" target="_blank">
+                                    <img src="http://teacher.gz86zfx.com/UploadFile/baibing/SchoolNockeditor/20180322013541.jpg" height="240"
+                                        width="360px;" alt="教职工摄影作品展" /></a></li>
+                            </td>
+	</tr><tr>
+		<td>
+                                <li><a href="list.aspx?spid1=16697" target="_blank">
+                                    <img src="http://teacher.gz86zfx.com/UploadFile/baibing/SchoolNockeditor/20180105090616.jpg" height="240"
+                                        width="360px;" alt="英语活动月，活动特别FUN---记2017学年度英语活动月" /></a></li>
+                            </td>
+	</tr><tr>
+		<td>
+                                <li><a href="list.aspx?spid1=16694" target="_blank">
+                                    <img src="http://teacher.gz86zfx.com/UploadFile/baibing/SchoolNockeditor/20171229120345.jpg" height="240"
+                                        width="360px;" alt="86中初中部与大沙街家庭综合服务中心开展“我的未来我做主”青少年生涯规划小组圆满结束" /></a></li>
+                            </td>
+	</tr>
+</table>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ce">
+            <div class="ce_left">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" >
+                    <tr class="ce_left_t" style="padding-top: 0px;">
+                        <td style="text-align: left; padding-left: 0px; padding-top: 3px;" class="style9">
+                            <font color="#1e4cad"><strong>校长致辞</strong></font> <span   style="text-align: left;"  class="style10">
+<a href="Fzyd_Zhxx.aspx?sspid=24">更多</a>  &nbsp;&nbsp;</span>
+                        </td>
+                    </tr>
+                     <tr class="ce_left_c">
+                        <td  valign="top">
+                <!--  绑定校长致辞-->
+                <div id="mst" style="height: 220px; width: 170px; margin-left: 15px;
+                    overflow: hidden;">
+                    <span id="mstsa"><div style="text-align: right;"><span style="color: rgb(255， 255， 255);">.<br />.<br />.<br />.<br />.<br />.<br />.</span><span style="color: rgb(255， 255， 255);"><br /><br /><br type="_moz" /></span></div><div style="text-align: left; "><br /> </div><div class="text" style="margin: 0px; padding: 0px; word-wrap: break-word; -webkit-hyphens: auto; color: rgb(62， 62， 62); line-height: 1.5; width: 700px; font-size: medium; font-family: 宋体; -webkit-text-size-adjust: none; "><p style="margin: 0px; padding: 0px; max-width: 100％; min-height: 1.5em; white-space: pre-wrap; line-height: 2em; "><span style="color: rgb(0， 204， 255); ">我们追求的教育质量</span><br style="max-width: 100％; " />是强健与活力的体魄；<br style="max-width: 100％; " /><br style="max-width: 100％; " />我们追求的教育质量<br style="max-width: 100％; " />是积极与阳光的心态；<br /> <br style="max-width: 100％; " />我们追求的教育质量<br />是人文与科学<span style="line-height: 2em; ">的滋养；  </span></p><p style="margin: 0px; padding: 0px; max-width: 100％; min-height: 1.5em; white-space: pre-wrap; line-height: 2em; "><br />我们追求的教育质量<br style="max-width: 100％; " />是个性与特长的张扬； <br style="max-width: 100％; " /><br style="max-width: 100％; " />我们追求的教育质量<br style="max-width: 100％; " />是鲜活生命的成长。</p><p style="margin: 0px; padding: 0px; max-width: 100％; min-height: 1.5em; white-space: pre-wrap; line-height: 2em; "> <br /> </p><p style="margin: 0px; padding: 0px; min-height: 1.5em; white-space: pre-wrap; line-height: 2em; text-align: center;"><img src="http://mmbiz.qpic.cn/mmbiz/EAiasicibhKd88HLD4caShia4wdyl4qJicf8HqPxDU4AXNnEHDvvqBKlRFmicC1nezvWS0J2K5SSsPOicO5H4zspGxhSA/640?wx_fmt=jpeg&tp=webp&wxfrom=5" alt="" /></p><p style="margin: 0px; padding: 0px; max-width: 100％; min-height: 1.5em; white-space: pre-wrap; line-height: 2em; "><img src="file:///c:/documents and settings/administrator/application data/360se6/User Data/temp/640_wx_fmt=jpeg&tp=webp&wxfrom=5.webp.jpg" alt="" /><img src="file:///c:/documents and settings/administrator/application data/360se6/User Data/temp/640_wx_fmt=jpeg&tp=webp&wxfrom=5.webp.jpg" alt="" /></p></div></span>
+                         <div>
+                </div>
+                      </td></tr>
+                     <tr class="ce_left_b">
+                        <td>
+                        </td>
+                    </tr>
+              </table>
+            </div>
+
+            <div class="ce_center">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" >
+                    <tr class="ce_center_twidth" style="padding-top: 0px;">
+                        <td style="text-align: left; padding-left: 0px; padding-top: 3px;" class="style9">
+                            <font color="#ffffff"><strong>&nbsp;国旗下的讲话</strong></font> <span style="text-align: left;"
+                                class="style22"><a href="Fzyd_Zhxx.aspx?sspid=84">更多</a></span>
+                        </td>
+                    </tr>
+                    <tr class="ce_center_c">
+                        <td colspan="3" class="style11">
+                            <div>
+	<table cellspacing="0" cellpadding="4" align="Center" id="GridView7" style="color:#333333;width:364px;border-collapse:collapse;">
+		<tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView7_HyperLink3_0" title="2018/5/24：第十三周国旗下的讲话 公共财物要爱惜，共同维护可持续" href="list.aspx?spid1=17727">第十三周国旗下的讲话 公共财物要爱惜，共…</a>
+                                        </td><td align="right">2018-05-24</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView7_HyperLink3_1" title="2018/5/15：广州市第八十六中学初中部校内小花园征名活动" href="list.aspx?spid1=17725">广州市第八十六中学初中部校内小花园征名活动</a>
+                                        </td><td align="right">2018-05-15</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView7_HyperLink3_2" title="2018/5/15：第十二周国旗下的讲话 轻言细语创和谐，轻拿轻放防噪音" href="list.aspx?spid1=17724">第十二周国旗下的讲话 轻言细语创和谐，轻…</a>
+                                        </td><td align="right">2018-05-15</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView7_HyperLink3_3" title="2018/5/8：第十一周 让文明之花在校园内绽放" href="list.aspx?spid1=17722">第十一周 让文明之花在校园内绽放</a>
+                                        </td><td align="right">2018-05-08</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView7_HyperLink3_4" title="2018/4/24：第九周 国旗下讲话" href="list.aspx?spid1=17718">第九周 国旗下讲话</a>
+                                        </td><td align="right">2018-04-24</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView7_HyperLink3_5" title="2018/4/21：对2017年度优秀共青团干和优秀共青团员的表彰" href="list.aspx?spid1=17717">对2017年度优秀共青团干和优秀共青团员的表彰</a>
+                                        </td><td align="right">2018-04-21</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView7_HyperLink3_6" title="2018/4/21：第八周 雷锋活动月总结和倡议" href="list.aspx?spid1=17716">第八周 雷锋活动月总结和倡议</a>
+                                        </td><td align="right">2018-04-21</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView7_HyperLink3_7" title="2018/4/9：第七周 缅怀先烈精神,弘扬传统文化" href="list.aspx?spid1=17713">第七周 缅怀先烈精神,弘扬传统文化</a>
+                                        </td><td align="right">2018-04-09</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView7_HyperLink3_8" title="2018/4/3：第六周今天你微笑了吗" href="list.aspx?spid1=17711">第六周今天你微笑了吗</a>
+                                        </td><td align="right">2018-04-03</td>
+		</tr>
+	</table>
+</div>
+                        </td>
+                    </tr>
+                    <tr class="ce_center_b">
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="ce_center">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr class="ce_center_t" style="padding-top: 0px;">
+                        <td style="text-align: left; padding-left: 0px; padding-top: 3px;" class="style9">
+                            <font color="#ffffff"><strong>&nbsp;桃李芬芳</strong></font> <span style="text-align: left;"
+                                class="style10"><a href="Fzyd_Zhxx.aspx?sspid=83">更多</a></span>
+                        </td>
+                    </tr>
+                    <tr class="ce_center_c">
+                        <td colspan="3" valign="top">
+                            <div>
+	<table cellspacing="0" cellpadding="4" align="Center" id="GridView8" style="color:#333333;width:364px;border-collapse:collapse;">
+		<tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView8_HyperLink3_0" title="2016/9/27：我校获得市“中国汉字听写大会”总决赛一等奖" href="list.aspx?spid1=16613">我校获得市“中国汉字听写大会”总决赛一等奖</a>
+                                        </td><td align="right">2016-09-27</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView8_HyperLink3_1" title="2016/9/14：我校在黄埔区青少年3D打印创意设计大赛获佳绩" href="list.aspx?spid1=16605">我校在黄埔区青少年3D打印创意设计大赛获佳绩</a>
+                                        </td><td align="right">2016-09-14</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView8_HyperLink3_2" title="2016/9/7：86中学分校音乐剧在市级比赛中荣获一等奖" href="list.aspx?spid1=16602">86中学分校音乐剧在市级比赛中荣获一等奖</a>
+                                        </td><td align="right">2016-09-07</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView8_HyperLink3_3" title="2016/6/7：喜讯：我校参加广州市青少年科技创新大赛再获佳绩" href="list.aspx?spid1=16569">喜讯：我校参加广州市青少年科技创新大赛…</a>
+                                        </td><td align="right">2016-06-07</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView8_HyperLink3_4" title="2016/6/3：我校获2016年黄埔区中小学足球联赛冠军" href="list.aspx?spid1=16567">我校获2016年黄埔区中小学足球联赛冠军</a>
+                                        </td><td align="right">2016-06-03</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView8_HyperLink3_5" title="2016/5/13：我校在2016黄埔区艺术大赛上再创佳绩" href="list.aspx?spid1=16550">我校在2016黄埔区艺术大赛上再创佳绩</a>
+                                        </td><td align="right">2016-05-13</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView8_HyperLink3_6" title="2016/4/26：市86中学分校“博雅艺术社团”获得黄埔区优秀社团称号" href="list.aspx?spid1=16542">市86中学分校“博雅艺术社团”获得黄埔…</a>
+                                        </td><td align="right">2016-04-26</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                            <a id="GridView8_HyperLink3_7" title="2016/1/22：2015学年上学期评先名单" href="list.aspx?spid1=16491">2015学年上学期评先名单</a>
+                                        </td><td align="right">2016-01-22</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                            <a id="GridView8_HyperLink3_8" title="2015/12/7：市86中学分校获得2015年黄埔区首届中小学生田径运动会团体总分第二名" href="list.aspx?spid1=16477">市86中学分校获得2015年黄埔区首届…</a>
+                                        </td><td align="right">2015-12-07</td>
+		</tr>
+	</table>
+</div>
+                        </td>
+                    </tr>
+                    <tr class="ce_center_b">
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="xia">
+            <div class="xia_zuo">
+                <div class="kuaisudaohang">
+                    <div class="xia_zuo_sh">
+                        
+                               
+                                <div class="cell_title">
+                                    <font color="#1b5abc" style="font-size: 15px;"><strong>&nbsp;&nbsp;快速导航&nbsp;&nbsp;&nbsp;</strong></font>
+                                 </div>
+                      <div class="cell_content">
+                        <div class="xia_zuo_sh_cell1">
+                            <table height="48px">
+                                <tr>
+                                    <td width="70" class="style8">
+                                     
+                                    </td>
+                                    <td style="padding-left: 10px;" class="style12">
+                                        <a href="Fzyd_Zhxx.aspx?sspid=63">
+                                            <span id="lbmljy" style="color:#FFFF99;font-weight:bold;">特色教育</span></a>
+                                    </td>
+                                    <td width="17">
+                                   
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="xia_zuo_sh_cell2">
+                            <table height="48px">
+                                <tr>
+                                    <td width="70" class="style8">
+                                     
+                                    </td>
+                                    <td style="padding-left: 10px;" class="style12">
+                                        <a href="Fzyd_Zhxx.aspx?sspid=75">
+                                            <span id="lbxsst" style="color:#FFFF99;font-weight:bold;">学生作品</span></a>
+                                    </td>
+                                    <td width="17">
+                                      
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="xia_zuo_sh_cell3">
+                            <table height="48px">
+                                <tr>
+                                    <td width="70" class="style8">
+                                     
+                                    </td>
+                                    <td style="padding-left: 10px;" class="style12">
+                                        <a href="ClassEnter.aspx">
+                                            <span id="lbszbj" style="color:#FFFF99;font-weight:bold;">数字班级</span></a>
+                                    </td>
+                                    <td width="17">
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>       
+                        <div class="xia_zuo_sh_cell4">
+                            <table height="48px">
+                                <tr>
+                                    <td width="70" class="style8">
+                                     
+                                    </td>
+                                    <td style="padding-left: 10px;" class="style12">
+                                        <a href="Fzyd_Zhxx.aspx?sspid=120">
+                                            <span id="Label2" style="color:#FFFF99;font-weight:bold;">资源链接</span></a>
+                                    </td>
+                                    <td width="17">
+                                   
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="xia_zuo_sh_cell5">
+                            <table height="48px">
+                                <tr>
+                                    <td width="70" class="style8">
+                                     
+                                    </td>
+                                    <td style="padding-left: 10px;" class="style12">
+                                        <a href="mailto:gz86fx@sina.com">
+                                            <span id="Label3" style="color:#FFFF99;font-weight:bold;">校长信箱</span></a>
+                                    </td>
+                                    <td width="17">
+                                       
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="xia_zuo_sh_cell6">
+                            <table height="48px">
+                                <tr>
+                                    <td width="70" class="style8">
+                                     
+                                    </td>
+                                    <td style="padding-left: 10px;" class="style12">
+                                       <a href="Fzyd_Zhxx.aspx?sspid=35">
+                                            <span id="Label4" style="color:#FFFF99;font-weight:bold;">德育建设</span></a>
+                                    </td>
+                                    <td width="17">
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="xia_zuo_sh_cell7">
+                            <table height="48px">
+                                <tr>
+                                    <td width="70" class="style8">
+                                     
+                                    </td>
+                                    <td style="padding-left: 10px;" class="style12">
+                                        <a href="Fzyd_Zhxx.aspx?sspid=83">
+                                            <span id="Label5" style="color:#FFFF99;font-weight:bold;">桃李芬芳</span></a>
+                                    </td>
+                                    <td width="17">
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        </div>
+                        <div class="cell_bottom"></div>
+                    </div>
+                </div>
+                <div class="xia_zuo_xia2">
+                    <div class="xia_zuo_xia2_t"></div>
+                    <div class="xia_zuo_xia2_c">
+                    <table width="100%">
+                       
+                      
+                        <tr>
+                            <td style="text-align: center;" colspan="2">
+                                <input type="image" name="btn_commit" id="btn_commit" src="images/dengluoa.jpg" align="middle" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btn_commit&quot;, &quot;&quot;, false, &quot;&quot;, &quot;http://teacher.gz86zfx.com&quot;, false, false))" style="width:101px;" />
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="xia_zuo_xia2_b"></div>
+                </div>
+            </div>
+            <div class="xia_you">
+                <div class="ce_center">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr class="ce_center_t" style="padding-top: 0px;">
+                            <td style="text-align: left; padding-left: 0px; padding-top: 3px;" class="style9">
+                                <font color="#ffffff"><strong>&nbsp;教师风采</strong></font> <span style="text-align: left;"
+                                    class="style10"><a href="Fzyd_Zhxx.aspx?sspid=74">更多</a></span>
+                            </td>
+                        </tr>
+                        <tr class="ce_center_c">
+                            <td colspan="3" valign="top">
+                                <div>
+	<table cellspacing="0" cellpadding="4" align="Center" id="GridView9" style="color:#333333;width:364px;border-collapse:collapse;">
+		<tr style="background-color:#EFF3FB;">
+			<td>
+                                                <a id="GridView9_HyperLink3_0" title="2014/4/11：语文科组——马立红个人简介" href="list.aspx?spid1=14950">语文科组——马立红个人简介</a>
+                                            </td><td align="right">2014-04-11</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                                <a id="GridView9_HyperLink3_1" title="2014/4/11：体育科组——顾荣生个人简介" href="list.aspx?spid1=14949">体育科组——顾荣生个人简介</a>
+                                            </td><td align="right">2014-04-11</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                                <a id="GridView9_HyperLink3_2" title="2014/4/11：英语科组——韦吴丹个人简介" href="list.aspx?spid1=14948">英语科组——韦吴丹个人简介</a>
+                                            </td><td align="right">2014-04-11</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                                <a id="GridView9_HyperLink3_3" title="2014/4/11：语文科组——郭嘉帆个人简介" href="list.aspx?spid1=14947">语文科组——郭嘉帆个人简介</a>
+                                            </td><td align="right">2014-04-11</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                                <a id="GridView9_HyperLink3_4" title="2014/4/11：政治科组——邢晓红个人简介" href="list.aspx?spid1=14946">政治科组——邢晓红个人简介</a>
+                                            </td><td align="right">2014-04-11</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                                <a id="GridView9_HyperLink3_5" title="2014/4/11：地理科组——汪淑雯个人简介" href="list.aspx?spid1=14945">地理科组——汪淑雯个人简介</a>
+                                            </td><td align="right">2014-04-11</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                                <a id="GridView9_HyperLink3_6" title="2014/4/11：体育科组——赖志杰个人简介" href="list.aspx?spid1=14944">体育科组——赖志杰个人简介</a>
+                                            </td><td align="right">2014-04-11</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                                <a id="GridView9_HyperLink3_7" title="2014/4/11：历史科组——谢金秀个人简介" href="list.aspx?spid1=14943">历史科组——谢金秀个人简介</a>
+                                            </td><td align="right">2014-04-11</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                                <a id="GridView9_HyperLink3_8" title="2014/4/11：语文科组——谢翠芳个人简介" href="list.aspx?spid1=14942">语文科组——谢翠芳个人简介</a>
+                                            </td><td align="right">2014-04-11</td>
+		</tr>
+	</table>
+</div>
+                            </td>
+                        </tr>
+                        <tr class="ce_center_b">
+                            <td>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="ce_center" >
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr class="ce_center_t" style="padding-top: 0px;">
+                            <td style="text-align: left; padding-left: 0px; padding-top: 3px;" class="style9">
+                                <font color="#ffffff"><strong>&nbsp;教学科研</strong></font> <span style="text-align: left;"
+                                    class="style10"><a href="Fzyd_Zhxx.aspx?sspid=26">更多</a></span>
+                            </td>
+                        </tr>
+                        <tr class="ce_center_c">
+                            <td colspan="3" valign="top">
+                                <div>
+	<table cellspacing="0" cellpadding="4" align="Center" id="GridView10" style="color:#333333;width:364px;border-collapse:collapse;">
+		<tr style="background-color:#EFF3FB;">
+			<td>
+                                                <a id="GridView10_HyperLink3_0" title="2015/12/21：曲天立学术创新团队公开课观摩研讨活动圆满举行" href="list.aspx?spid1=16479">曲天立学术创新团队公开课观摩研讨活动圆满举行</a>
+                                            </td><td align="right">2015-12-21</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                                <a id="GridView10_HyperLink3_1" title="2015/11/27：市86中分校开展语文创新学习形式" href="list.aspx?spid1=16468">市86中分校开展语文创新学习形式</a>
+                                            </td><td align="right">2015-11-27</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                                <a id="GridView10_HyperLink3_2" title="2015/5/5：理化生科组科技活动月——“水火箭比赛”活动报道" href="list.aspx?spid1=16328">理化生科组科技活动月——“水火箭比赛”…</a>
+                                            </td><td align="right">2015-05-05</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                                <a id="GridView10_HyperLink3_3" title="2015/1/9：2014学年英语活动月落下帷幕" href="list.aspx?spid1=16279">2014学年英语活动月落下帷幕</a>
+                                            </td><td align="right">2015-01-09</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                                <a id="GridView10_HyperLink3_4" title="2014/7/8：姚春霞/语文微课/阅读名著启迪人生" href="list.aspx?spid1=15152">姚春霞/语文微课/阅读名著启迪人生</a>
+                                            </td><td align="right">2014-07-08</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                                <a id="GridView10_HyperLink3_5" title="2014/5/28：体育科组获奖情况" href="list.aspx?spid1=15069">体育科组获奖情况</a>
+                                            </td><td align="right">2014-05-28</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                                <a id="GridView10_HyperLink3_6" title="2014/5/14：郭建瑞老师/生物微课堂" href="list.aspx?spid1=15059">郭建瑞老师/生物微课堂</a>
+                                            </td><td align="right">2014-05-14</td>
+		</tr><tr style="background-color:White;">
+			<td>
+                                                <a id="GridView10_HyperLink3_7" title="2014/5/12：８６中分校管乐队花絮" href="list.aspx?spid1=15050">８６中分校管乐队花絮</a>
+                                            </td><td align="right">2014-05-12</td>
+		</tr><tr style="background-color:#EFF3FB;">
+			<td>
+                                                <a id="GridView10_HyperLink3_8" title="2014/5/12：86中分校美术特长班教学花絮" href="list.aspx?spid1=15048">86中分校美术特长班教学花絮</a>
+                                            </td><td align="right">2014-05-12</td>
+		</tr>
+	</table>
+</div>
+                            </td>
+                        </tr>
+                        <tr class="ce_center_b">
+                            <td>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="xia_you_xia">
+                   <div class="xia_you_xia_t">
+                            
+                                <a href="Fzyd_pic.aspx?sspid=98">
+                                    <img src="images/index_more.png" alt="" /></a>
+                            
+                       
+                    </div>
+                    <div class="xia_you_xia_c">
+                    <div align='center' id='demo' style='margin-left: 10px; overflow: hidden; height: 137px;
+                        width: 750px; vertical-align: top'>
+                        <table>
+                            <tr>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="demo1" align="center" valign="top">
+                                    <div align='center' id='Div1' style='margin-left: 20px; margin-top:0px; overflow: hidden;
+                                        height: 137px; width: 735px; vertical-align: top'>
+                                        <table id="DataList2" cellspacing="5" cellpadding="0" align="Right" style="width:137px;vertical-align: top">
+	<tr>
+		<td>
+                                                <a href="list.aspx?spid1=17714" target="_blank" title="【86 &#183; 志远篇】玩转科技，创意无限 ——记我校初中部丰富多彩的第十四届科技活动月"> 
+  <img src="http://teacher.gz86zfx.com/UploadFile/baibing/SchoolNockeditor/20180412102443.jpg" border="0"      width="135" height="110" /></a><br />
+                                                <span id="DataList2_Label1_0" title="【86 &amp;#183; 志远篇】玩转科技，创意无限 ——记我校初中部丰富多彩的第十四届科技活动月">【86 &#183…</span>
+                                            </td><td>
+                                                <a href="list.aspx?spid1=16642" target="_blank" title="市86中学分校开展共青团团知识课程培训"> 
+  <img src="http://teacher.gz86zfx.com/UploadFile/baibing/SchoolNockeditor/20161230085207.jpg" border="0"      width="135" height="110" /></a><br />
+                                                <span id="DataList2_Label1_1" title="市86中学分校开展共青团团知识课程培训">市86中学分校开展…</span>
+                                            </td><td>
+                                                <a href="list.aspx?spid1=16637" target="_blank" title="2016年英语活动月之“天籁之音”圆满落幕"> 
+  <img src="http://teacher.gz86zfx.com/UploadFile/baibing/SchoolNockeditor/20161223082643.jpg" border="0"      width="135" height="110" /></a><br />
+                                                <span id="DataList2_Label1_2" title="2016年英语活动月之“天籁之音”圆满落幕">2016年英语活动…</span>
+                                            </td><td>
+                                                <a href="list.aspx?spid1=16556" target="_blank" title="市86中学分校举行“争当优秀团员，发扬团员先进性”的纪念“五四”青年节暨新团员入团宣誓仪式"> 
+  <img src="http://teacher.gz86zfx.com/UploadFile/baibing/SchoolNockeditor/20160523091621.jpg" border="0"      width="135" height="110" /></a><br />
+                                                <span id="DataList2_Label1_3" title="市86中学分校举行“争当优秀团员，发扬团员先进性”的纪念“五四”青年节暨新团员入团宣誓仪式">市86中学分校举行…</span>
+                                            </td><td>
+                                                <a href="list.aspx?spid1=16550" target="_blank" title="我校在2016黄埔区艺术大赛上再创佳绩"> 
+  <img src="http://teacher.gz86zfx.com/UploadFile/baibing/SchoolNockeditor/20160513035454.jpg" border="0"      width="135" height="110" /></a><br />
+                                                <span id="DataList2_Label1_4" title="我校在2016黄埔区艺术大赛上再创佳绩">我校在2016黄埔…</span>
+                                            </td>
+	</tr><tr>
+		<td>
+                                                <a href="list.aspx?spid1=16549" target="_blank" title="八十六中学分校开展以“分享阳光，体验成长”为主题的户外体验式培训活动"> 
+  <img src="http://teacher.gz86zfx.com/UploadFile/baibing/SchoolNockeditor/20160505033213.jpg" border="0"      width="135" height="110" /></a><br />
+                                                <span id="DataList2_Label1_5" title="八十六中学分校开展以“分享阳光，体验成长”为主题的户外体验式培训活动">八十六中学分校开展…</span>
+                                            </td><td>
+                                                <a href="list.aspx?spid1=16542" target="_blank" title="市86中学分校“博雅艺术社团”获得黄埔区优秀社团称号"> 
+  <img src="http://teacher.gz86zfx.com/UploadFile/baibing/SchoolNockeditor/20160426115709.jpg" border="0"      width="135" height="110" /></a><br />
+                                                <span id="DataList2_Label1_6" title="市86中学分校“博雅艺术社团”获得黄埔区优秀社团称号">市86中学分校“博…</span>
+                                            </td><td>
+                                                <a href="list.aspx?spid1=16519" target="_blank" title="市86中学分校开展争做时代小雷锋志愿服务活动"> 
+  <img src="http://teacher.gz86zfx.com/UploadFile/baibing/SchoolNofckeditor/20160315094013.jpg" border="0"      width="135" height="110" /></a><br />
+                                                <span id="DataList2_Label1_7" title="市86中学分校开展争做时代小雷锋志愿服务活动">市86中学分校开展…</span>
+                                            </td><td>
+                                                <a href="list.aspx?spid1=16327" target="_blank" title="86中分校科技活动月"> 
+  <img src="http://teacher.gz86zfx.com/UploadFile/baibing/SchoolNofckeditor/20150505114218.jpg" border="0"      width="135" height="110" /></a><br />
+                                                <span id="DataList2_Label1_8" title="86中分校科技活动月">86中分校科技活动…</span>
+                                            </td><td>
+                                                <a href="list.aspx?spid1=16237" target="_blank" title="新的场室，新的训练，新的起飞！"> 
+  <img src="http://teacher.gz86zfx.com/UploadFile/baibing/SchoolNofckeditor/20141125121327.jpg" border="0"      width="135" height="110" /></a><br />
+                                                <span id="DataList2_Label1_9" title="新的场室，新的训练，新的起飞！">新的场室，新的训练…</span>
+                                            </td>
+	</tr>
+</table>
+                                    </div>
+                                </td>
+                                <td id="demo2">
+                                </td>
+                            </tr>
+                        </table>
+                    </div></div>
+                    <div class="xia_you_xia_b"></div>
+                </div>
+                <div class="fri_nei">
+                            <div class="fri_nei_t">      
+                            </div>
+                            <div class="fri_nei_c">
+                                
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="20">&nbsp;
+                                    </td>
+                                <td width="20">&nbsp;
+                                    </td>
+                                <td>
+                                    <table id="FZYD_Link_DataList2" cellspacing="0" style="border-collapse:collapse;">
+	<tr>
+		<td>
+                                            <table border="0" cellspacing="0" cellpadding="3">
+                                                <tr>
+                                                    <td>
+                                                        <a href="http://www.moe.edu.cn/">
+                                                            <img src="Law_Frame_Page/replace/../UploadFiles/Logo/2011101814364444.jpg" width="137" height="29" alt=""
+                                                                border="0" /></a></td>
+                                                </tr>
+                                            </table>
+                                        </td><td>
+                                            <table border="0" cellspacing="0" cellpadding="3">
+                                                <tr>
+                                                    <td>
+                                                        <a href="http://emic.moe.edu.cn/edoas2/website18/index.jsp">
+                                                            <img src="Law_Frame_Page/replace/../UploadFiles/Logo/2011101814421270.jpg" width="137" height="29" alt=""
+                                                                border="0" /></a></td>
+                                                </tr>
+                                            </table>
+                                        </td><td>
+                                            <table border="0" cellspacing="0" cellpadding="3">
+                                                <tr>
+                                                    <td>
+                                                        <a href="http://www.gdhed.edu.cn/main/index.html">
+                                                            <img src="Law_Frame_Page/replace/../UploadFiles/Logo/2011101814353448.jpg" width="137" height="29" alt=""
+                                                                border="0" /></a></td>
+                                                </tr>
+                                            </table>
+                                        </td><td>
+                                            <table border="0" cellspacing="0" cellpadding="3">
+                                                <tr>
+                                                    <td>
+                                                        <a href="http://www.gzedu.gov.cn/">
+                                                            <img src="Law_Frame_Page/replace/../UploadFiles/Logo/2011101814344953.jpg" width="137" height="29" alt=""
+                                                                border="0" /></a></td>
+                                                </tr>
+                                            </table>
+                                        </td><td>
+                                            <table border="0" cellspacing="0" cellpadding="3">
+                                                <tr>
+                                                    <td>
+                                                        <a href="http://www.guangztr.edu.cn/">
+                                                            <img src="Law_Frame_Page/replace/../UploadFiles/Logo/2011101814340669.jpg" width="137" height="29" alt=""
+                                                                border="0" /></a></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <table border="0" cellspacing="0" cellpadding="3">
+                                                <tr>
+                                                    <td>
+                                                        <a href="http://www.gzeic.com.cn/">
+                                                            <img src="Law_Frame_Page/replace/../UploadFiles/Logo/2011101814332659.jpg" width="137" height="29" alt=""
+                                                                border="0" /></a></td>
+                                                </tr>
+                                            </table>
+                                        </td><td>
+                                            <table border="0" cellspacing="0" cellpadding="3">
+                                                <tr>
+                                                    <td>
+                                                        <a href="http://www.gzjkw.net/">
+                                                            <img src="Law_Frame_Page/replace/../UploadFiles/Logo/2011101814324172.jpg" width="137" height="29" alt=""
+                                                                border="0" /></a></td>
+                                                </tr>
+                                            </table>
+                                        </td><td>
+                                            <table border="0" cellspacing="0" cellpadding="3">
+                                                <tr>
+                                                    <td>
+                                                        <a href="http://www.hpedu.gov.cn/Article/Index.asp">
+                                                            <img src="Law_Frame_Page/replace/../UploadFiles/Logo/2013010810482821.jpg" width="137" height="29" alt=""
+                                                                border="0" /></a></td>
+                                                </tr>
+                                            </table>
+                                        </td><td>
+                                            <table border="0" cellspacing="0" cellpadding="3">
+                                                <tr>
+                                                    <td>
+                                                        <a href="mailto:gz86fx@sina.com">
+                                                            <img src="Law_Frame_Page/replace/../UploadFiles/Logo/2011101814302398.jpg" width="137" height="29" alt=""
+                                                                border="0" /></a></td>
+                                                </tr>
+                                            </table>
+                                        </td><td>
+                                            <table border="0" cellspacing="0" cellpadding="3">
+                                                <tr>
+                                                    <td>
+                                                        <a href="http://www.moretop.com.cn">
+                                                            <img src="Law_Frame_Page/replace/../UploadFiles/Logo/2011101814292625.jpg" width="137" height="29" alt=""
+                                                                border="0" /></a></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+	</tr>
+</table>
+                                </td>
+                                <td width="20">
+                                    </td>
+                            </tr>
+                        </table>
+
+                             </div>
+                            <div class="fri_nei_b">      
+                            </div>
+                </div>
+            </div>
+            <script>
+                var speed = 30
+                demo2.innerHTML = demo1.innerHTML
+                demo.scrollLeft = demo.scrollWidth
+                function Marquee1() {
+                    if (demo.scrollLeft <= 0)
+                        demo.scrollLeft += demo2.offsetWidth
+                    else {
+                        demo.scrollLeft--
+                    }
+                }
+                var MyMar = setInterval(Marquee1, speed)
+                demo.onmouseover = function () {
+
+                    clearInterval(MyMar)
+                }
+                demo.onmouseout = function () {
+                    MyMar =    setInterval(Marquee1, speed)
+                }
+            </script>
+
+
+
+        </div>
+        <div class="foot">
+            <table>
+                <tr>
+                    <td colspan="42" background="" width="1002" height="120" valign="middle" align="center"
+                        style="font-size: 12px; color: #1B5ABC">
+                        广州市86中学初中部 Copyright &copy; 2011-2020&nbsp;&nbsp;广州86中学初中部版权所有<br />
+                        联系方式 电话：020-82383362&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email
+                        :gz86fx@sina.com<br />
+                        <br />
+                        地址：黄埔区丰乐北路泰景中街121号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;备案号：粤ICP备15060660号-2
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- SqlDataSource1每周安排  -->
+    
+    <!-- loading 图片  -->
+    
+    <!--通知公告 = loading图片  -->
+    
+    <!-- 社团活动  -->
+    
+    <!-- 桃李芬芳  -->
+    
+    <!-- 教师风采   -->
+    
+    <!-- 学生作品  -->
+    
+    <!-- 左到右滚动学生作品  -->
+    
+    
+
+
+
+</form>
+
+
+</body>
+</html>

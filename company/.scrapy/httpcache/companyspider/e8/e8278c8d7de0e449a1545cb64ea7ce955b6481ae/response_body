@@ -1,0 +1,1051 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>首页 福建教育学院</title>
+    <meta name="keywords" content="福建 教育学院 基础教育" />
+    <meta name="description" content="福建教育学院门户网站" />
+    <meta name="renderer" content="ie-comp">
+    <link href="/Content/FJEDUwww/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/Scripts/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+        var url = '';
+        if (url != '')
+            window.location.href = url;
+    </script>
+    <script type="text/javascript">
+        if ((window.screen.width + window.screen.height) < 850) {
+            window.location.href = 'http://m.fjjyxy.com/';
+        }
+    </script>
+    
+    <style type="text/css">
+        .aTitleHover {
+            background-color: rgb(25, 136, 92);
+            color: white;
+            padding: 4px;
+        }
+
+            .aTitleHover:hover {
+                color: white;
+            }
+    </style>
+
+    <script type="text/javascript">
+        function showCollegebulletinOrInstitutestuff(tag) {
+            if (tag == 1) {
+                $("#div_collegebulletin").show();
+                $("#div_institutestuff").hide();
+                $("#a_collegebulletin").addClass("aTitleHover");
+                $("#a_institutestuff").removeClass("aTitleHover");
+            }
+            else {
+                $("#div_collegebulletin").hide();
+                $("#div_institutestuff").show();
+                $("#a_institutestuff").addClass("aTitleHover");
+                $("#a_collegebulletin").removeClass("aTitleHover");
+            }
+        }
+    </script>
+
+	
+
+    <script type="text/javascript">
+        var menu_timer = 0;
+        $(function () {
+            //导航栏自适应分布算法
+            var li_size = $("#menu>li").size();
+            var menu_width = $("#menu").width();
+            var li_width = 0;
+            $("#menu>li").each(function (i) {
+                li_width = li_width + $(this).width();
+            });
+            pa = (Math.floor((menu_width - li_width) / (li_size * 2)) - 0);
+            $("#menu>li").css("padding", "3px " + pa + "px");
+
+            //绑定事件
+            $("#menu li a").not($("#menu li ul li a")).mouseover(function () {
+                show_sub_menu($(this));
+            });
+            $("#menu li a").not($("#menu li ul li a")).click(function () {
+                show_sub_menu($(this));
+            });
+            $("#menu li a").not($("#menu li ul li a")).mouseout(function () {
+                hide_sub_menu();
+            });
+            $(".dropdown_pane").mouseover(function () {
+                show_sub_menu($(this).prev());
+            });
+            $(".dropdown_pane").mouseout(function () {
+                hide_sub_menu();
+            });
+        });
+        function show_sub_menu(el) {
+            clearTimeout(menu_timer);
+            $(".dropdown_pane").hide();
+            el.next().show();
+        }
+        function hide_sub_menu() {
+            menu_timer = setTimeout(function () { $(".dropdown_pane").hide() }, 30);
+        }
+
+        function setTab(name, cursel, n) {
+            for (i = 1; i <= n; i++) {
+                var menu = document.getElementById(name + i);
+                var con = document.getElementById("con_" + name + "_" + i);
+                menu.className = i == cursel ? "hover" : "";
+                con.style.display = i == cursel ? "block" : "none";
+            }
+        }
+		
+		function changeword1(){
+			var kw=document.getElementById("textfield");
+			if(kw.value=="请输入关键字查询")
+				{kw.value="";}
+		}
+		
+		function changeword2(){
+			var kw=document.getElementById("textfield");
+			if(kw.value=="")
+				{kw.value="请输入关键字查询";}
+		}		
+		
+    </script>
+</head>
+<body>
+
+
+
+
+    <div class="wrap">
+        <!--广告栏-->
+        <div class="banner">
+            <div class="tip">
+                <p>
+                    <span>
+                        <a href="javascript:window.external.AddFavorite('http://www.fjjyxy.com/','福建教育学院')">
+                            加入收藏</a></span> <span>
+                                <a href="javascript:void(0);" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.fjjyxy.com/');">
+                                    设为首页</a></span>
+                </p>
+            </div>
+            <object type="application/x-shockwave-flash" data="/Content/FJEDUwww/banner.swf"
+                width="970" height="195" id="b">
+                <param name="wmode" value="opaque" />
+                <param name="movie" value="/Content/FJEDUwww/banner.swf" />
+            </object>
+        </div>
+        <!--end 广告栏-->
+        <!--主导航/搜索/滚动新闻/时间-->
+        <div class="navbox">
+            <!--主导航-->
+            <div class="nav">
+                <ul id="menu">
+                        <li>
+                            <a href="http://www.fjjyxy.com/" >首页</a>
+                        </li>
+                        <li>
+                            <a href="/info" >学院概况</a>
+                                <ul class="dropdown_pane">
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/info" >学院简介</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/info/历史沿革" >历史沿革</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/info/班子成员" >班子成员</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/info/历任领导" >历任领导</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/info/组织机构" >组织机构</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/info/师资队伍" >师资队伍</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/collegebulletin" >学院公告</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/institutestuff" >院务公开</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/info/校园文化" >校园文化</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/info/weibo" >校园微博</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/info/联系方式" >联系方式</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/info/地理位置" >地理位置</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/info/zhuangti" >专题</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.fjjyxy.com/news" >学院新闻</a>
+                        </li>
+                        <li>
+                            <a href="http://www.fjjyxy.com/lzyd" >廉政园地</a>
+                                <ul class="dropdown_pane">
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/lzyd/gzdt" >工作动态</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/lzyd/zcfg" >政策法规</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/lzyd/jzcm" >警钟长鸣</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/lzyd/lzlt" >廉政论坛</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/lzyd/lzgy" >廉政格言</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/lzyd/lzsh" >廉政书画</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/lzyd/jdjb" >监督举报</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.fjjyxy.com/leadertrain" >校长培训</a>
+                                <ul class="dropdown_pane">
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/leadertrain/培训通知/list_prj_id=04cf582c36094826a63cfbaade25fd28" >培训通知</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/leadertrain/培训动态/list_prj_id=d7386e26d4084a14add826cd32d9e2dc" >培训动态</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/leadertrain/教育与培训政策/list_prj_id=2fce180e23c74e828dcc3540b0094339" >教育与培训政策</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/leadertrain/培训资源/list_prj_id=5a27e009318d45b1a9782a7b2059e15d" >培训资源</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/leadertrain/八闽教育动态/list_prj_id=e55834310a8043a4932c1311e706bbec" >八闽教育动态</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/leadertrain/校长故事/list_prj_id=7afd7a0bec604b5daf2984b39e0c07a4" >校长故事</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/leadertrain/培训团队/list_prj_id=5d0b7433abea4c7fae3328f9962faa9d" >培训团队</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/leadertrain/基地学校/list_prj_id=d9d3fff18fef4d589fb8a6fdf27340e3" >基地学校</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/leadertrain/校长访谈/list_prj_id=8d07afd9601b408ba23784c0cb6584af" >校长论坛、校长访谈</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/leadertrain/教育评论/list_prj_id=db786de9fac24429a0d5f0133726d044" >教育评论</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.fjjyxy.com/teachertrain" >教师培训</a>
+                                <ul class="dropdown_pane">
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/teachertrain/培训通知" >培训通知</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/teachertrain/培训文件/list_prj_id=795250eeeabb45a494e53d25cbcb4f9b" >培训文件</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/teachertrain/培训动态/list_prj_id=e823bba02c3244dd9d60d73ee54534f5" >培训动态</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/teachertrain/培训研究/list_prj_id=0c756d51d8e44362842c01d62e6ebee7" >培训研究</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/teachertrain/node5/list_prj_id=5f92507c783949d0b935d038eb97fbb9" >培训政策</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.fjjyxy.com/trainningquality" >培训质量</a>
+                        </li>
+                        <li>
+                            <a href="http://www.fjjcjy.com/webjcjy/everysubj2.aspx?prj_id=074354d3f87f46bf8948fe726b06e45c" target=_blank>院校联盟</a>
+                        </li>
+                        <li>
+                            <a href="http://www.fjjyxy.com/education" target=_blank>学历教育</a>
+                                <ul class="dropdown_pane">
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/education/规章制度" >规章制度</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/education/招生信息" >招生信息</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/education/培训中心" >培训中心</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/education/教务管理" >教务管理</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/education/函授面授" >函授面授</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/education/自学考试" >自学考试</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com:8383/" >教学系统</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.fjjyxy.com/research" >教育科研</a>
+                                <ul class="dropdown_pane">
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/research/科研动态" >科研公告</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/research/管理制度" >管理制度</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/research/科研公告" >科研动态</a></li>
+                                        <li>
+                                            <a href="http://www.fjjcjy.com/webjcjy/everysubj2.aspx?prj_id=a5fa67d727104b7fb9303b899d79ef77" >台湾基础教育研究所</a></li>
+                                        <li>
+                                            <a href="http://mpjyyjs.fjjyxy.com" >闽派特色教育研究所</a></li>
+                                        <li>
+                                            <a href="http://lib.fjjyxy.com/zlpjyjs/index.asp" >福建基础教育质量评价研究所</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/research/项目管理" >项目管理</a></li>
+                                        <li>
+                                            <a href="http://www.fjjyxy.com/research/办事指南" >办事指南</a></li>
+                                        <li>
+                                            <a href="http://www.fjjcjy.com/webjcjy/showlast.aspx?new_id=35920011454a4f538b7268bd0bce8754&amp;usr_id=9f7ca4dd1f554baeb0f0f847fc9e8663" target=_blank>成果展示</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="http://fjjcjyyj.fjjyxy.com" target=_blank>学术刊物</a>
+                        </li>
+                        <li>
+                            <a href="http://www.fjjyxy.com/famousteacher" >学院名师</a>
+                        </li>
+                        <li>
+                            <a href="http://lib.fjjyxy.com" target=_blank>图书馆</a>
+                        </li>
+                        <li>
+                            <a href="http://www.fjjcjy.com" target=_blank>基教网</a>
+                        </li>
+                        <li>
+                            <a href="http://fjtyh.fjjyxy.com" target=_blank>省陶研会</a>
+                        </li>
+                        <li>
+                            <a href="http://fjse.fjjyxy.com" target=_blank>省教育学会</a>
+                        </li>
+                </ul>
+            </div>
+            <!--end 主导航-->
+            <div class="searchbox">
+                <!--搜索-->
+                <div class="search">
+                    <p>
+                        站内搜索<span><input style="border: none; border-width: 0;" class="input_search" name="textfield"
+                            type="text" id="textfield" value="请输入关键字查询" onfocus="changeword1()"
+                            onblur="changeword2()" /></span><input name="提交" type="submit"
+                                class="input_schbtn" value=" " onclick="javascript:baidusearch()" /></p>
+                </div>
+                <script type="text/javascript" language="javascript">
+                    function baidusearch() {
+                        var wd = document.getElementById("textfield").value;
+                        var link = "http://www.baidu.com/s?si=www.fjjyxy.com&cl=3&ct=2097152&tn=baidulocal&word=" + wd;
+                        window.open(link);
+                    }
+                </script>
+                <!--end 搜索-->
+                <!--滚动新闻-->
+                <div class="gdnews">
+                    <p>
+                        滚动新闻&gt;<span><a id="HotNews" href=""></a>
+                            <script type="text/javascript">
+
+                                var NewsTime = 2000;	//每条新闻的停留时间
+                                var TextTime = 50;		//新闻标题文字出现等待时间，越小越快
+
+                                var newsi = 0;
+                                var txti = 0;
+                                var txttimer;
+                                var newstimer;
+
+                                var newstitle = new Array();	//新闻标题
+                                var newshref = new Array();		//新闻链接
+
+
+
+                                 newstitle[0] ="福建教育学院关工委编书回眸岁月";newshref[0] ="http://www.fjjyxy.com/news/SzqyW8f.htm";newstitle[1] ="我省3名校长入选成为第二期“国培计划” 中小学名校长领航班学员";newshref[1] ="http://www.fjjyxy.com/news/wPiZ9LF.htm";newstitle[2] ="我省4名教师入选成为首期“国培计划” 中小学名师领航班学员";newshref[2] ="http://www.fjjyxy.com/news/jG4BHsx.htm";newstitle[3] ="教育部公布“国培计划”中小学名师领航班培养基地名单";newshref[3] ="http://www.fjjyxy.com/news/r5dp6aG.htm";newstitle[4] ="2018年全省教师进修院校校长培训班结业";newshref[4] ="http://www.fjjyxy.com/news/VXLm2P3.htm";;
+                                //newstitle[0] = "教育学院滚动新闻01！";
+                                //newshref[0] = "javascript:;";
+
+                                //newstitle[1] = "教育学院滚动新闻02!";
+                                //newshref[1] = "javascript:;";
+
+                                //newstitle[2] = "教育学院滚动新闻03！";
+                                //newshref[2] = "javascript:;";
+
+                                //newstitle[3] = "教育学院滚动新闻04！";
+                                //newshref[3] = "javascript:;";
+
+                                //newstitle[4] = "教育学院滚动新闻05";
+                                //newshref[4] = "javascript:;";
+
+                                function shownew() {
+                                    var endstr = "_"
+                                    hwnewstr = newstitle[newsi];
+                                    newslink = newshref[newsi];
+                                    if (txti == (hwnewstr.length - 1)) { endstr = ""; }
+                                    if (txti >= hwnewstr.length) {
+                                        clearInterval(txttimer);
+                                        clearInterval(newstimer);
+                                        newsi++;
+                                        if (newsi >= newstitle.length) {
+                                            newsi = 0
+                                        }
+                                        newstimer = setInterval("shownew()", NewsTime);
+                                        txti = 0;
+                                        return;
+                                    }
+                                    clearInterval(txttimer);
+                                    document.getElementById("HotNews").href = newslink;
+                                    document.getElementById("HotNews").innerHTML = hwnewstr.substring(0, txti + 1) + endstr;
+                                    txti++;
+                                    txttimer = setInterval("shownew()", TextTime);
+                                }
+                                shownew();
+
+                            </script>
+                        </span>
+                    </p>
+                </div>
+                <!--end 滚动新闻-->
+                <!--时间显示-->
+                <div class="time">
+                    <script type="text/javascript">
+
+                        var enabled = 0; today = new Date();
+                        var day; var date;
+                        if (today.getDay() == 0) day = " 星期日"
+                        if (today.getDay() == 1) day = " 星期一"
+                        if (today.getDay() == 2) day = " 星期二"
+                        if (today.getDay() == 3) day = " 星期三"
+                        if (today.getDay() == 4) day = " 星期四"
+                        if (today.getDay() == 5) day = " 星期五"
+                        if (today.getDay() == 6) day = " 星期六"
+                        document.fgColor = "000000";
+                        date = "今天是：2018年" + (today.getMonth() + 1) + "月" + today.getDate() + "日" + day + "";
+                        document.write(date);
+
+                    </script>
+                </div>
+                <!--end 时间显示-->
+            </div>
+        </div>
+        <!--end 主导航/搜索/滚动新闻/时间-->
+        
+
+
+
+
+<div class="content">
+    <table style="width: 100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td style="" valign="top">
+                <!--公告信息-->
+                <div style="height: 268px;">
+                    <div class="maincolumn">
+                        <h3><a class="aTitleHover" id="a_collegebulletin" target="_blank" href="/collegebulletin" onmousemove="showCollegebulletinOrInstitutestuff(1)">学院公告</a>&nbsp; <a id="a_institutestuff" target="_blank" href="/institutestuff" onmousemove="showCollegebulletinOrInstitutestuff(2);">院务公开</a></h3>
+                        <div style="margin: -3px;">
+                            <div id="div_collegebulletin">
+                                
+<div>
+    <div class="maincolumn" style="margin: 3px;">
+        <div class="mct_list">
+            <dl>
+                    <dd><a target="_blank" title="中标公告：“窗帘加工维护”项目竞争性谈判结果公告" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/collegebulletin/yfjHAUv.htm">中标公告：“窗帘加工维护”项目竞争性谈判...</a><span>[2018-05-17]</span></dd>
+                    <dd><a target="_blank" title="中标公告：“办公用茶采购资格”项目竞争性谈判结果公告" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/collegebulletin/cOXgSbu.htm">中标公告：“办公用茶采购资格”项目竞争性...</a><span>[2018-05-15]</span></dd>
+                    <dd><a target="_blank" title="中标公告：“图书定点采购资格” 项目竞争性谈判结果公告" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/collegebulletin/Nf0ZuCx.htm">中标公告：“图书定点采购资格” 项目竞争...</a><span>[2018-05-11]</span></dd>
+                    <dd><a target="_blank" title="中标公告：“植物租用及养护” 项目竞争性谈判结果公告" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/collegebulletin/TMnkScs.htm">中标公告：“植物租用及养护” 项目竞争性...</a><span>[2018-05-11]</span></dd>
+                    <dd><a target="_blank" title="重新招标：“窗帘加工维护” 项目谈判邀请函" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/collegebulletin/9fmUbrC.htm">重新招标：“窗帘加工维护” 项目谈判邀请...</a><span>[2018-05-07]</span></dd>
+                    <dd><a target="_blank" title="重新招标：“办公用茶定点采购资格”项目谈判邀请函" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/collegebulletin/TYjK5A3.htm">重新招标：“办公用茶定点采购资格”项目谈...</a><span>[2018-05-04]</span></dd>
+                    <dd><a target="_blank" title="重新招标：“植物租用并养护” 项目谈判邀请函" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/collegebulletin/9CGYj2a.htm">重新招标：“植物租用并养护” 项目谈判邀...</a><span>[2018-05-03]</span></dd>
+                    <dd><a target="_blank" title="招标：“图书定点采购资格”项目谈判邀请函" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/collegebulletin/fBLZulE.htm">招标：“图书定点采购资格”项目谈判邀请函</a><span>[2018-05-02]</span></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+                            </div>
+                            <div id="div_institutestuff" style="display: none;">
+                                
+<div>
+    <div class="maincolumn" style="margin: 3px;">
+        <div class="mct_list">
+            <dl>
+                    <dd><a target="_blank" title="关于《绩效工资实施办法（试行）》的决议" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/institutestuff/0MmzYba.htm">关于《绩效工资实施办法（试行）》的决议</a><span>[2018-05-28]</span></dd>
+                    <dd><a target="_blank" title="关于《教师等专业技术岗位晋升管理办法（试行）》的决议" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/institutestuff/JYIty9a.htm">关于《教师等专业技术岗位晋升管理办法（试...</a><span>[2018-05-28]</span></dd>
+                    <dd><a target="_blank" title="关于《教师等专业技术职务聘期考核管理办法（试行）》的决议" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/institutestuff/EJBaOdj.htm">关于《教师等专业技术职务聘期考核管理办法...</a><span>[2018-05-28]</span></dd>
+                    <dd><a target="_blank" title="关于学院工作报告的决议" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/institutestuff/UMSFgqZ.htm">关于学院工作报告的决议</a><span>[2018-05-28]</span></dd>
+                    <dd><a target="_blank" title="2018年度福建教育学院预算说明" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/institutestuff/fDIrq0d.htm">2018年度福建教育学院预算说明</a><span>[2018-03-19]</span></dd>
+                    <dd><a target="_blank" title="关于我院&quot;福州地区大学新校区教师生活区限价商品住房A区A13#-A20#楼享有优先申购权人员”名单的公示" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/institutestuff/SJANQ2K.htm">关于我院"福州地区大学新校区教师生活区限...</a><span>[2018-03-06]</span></dd>
+                    <dd><a target="_blank" title="关于公布福建教育学院2017年改革发展 十件大事评选结果的通知" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/institutestuff/MxXruoN.htm">关于公布福建教育学院2017年改革发展 ...</a><span>[2018-01-31]</span></dd>
+                    <dd><a target="_blank" title="福建教育学院2016-2017学年度信息公开工作报告" style="width:162px; font-weight:normal;" href="http://www.fjjyxy.com/institutestuff/UAQMXNZ.htm">福建教育学院2016-2017学年度信息...</a><span>[2017-10-30]</span></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                        <!--临时十八大
+                        <div>
+                            <a target="_blank" href="http://www.fjsen.com/zhuanti/xy18d.htm">
+                                <img alt="" style="border: none;width:240px;margin-top:3px;margin-left:5px;" src="/attachment/201211/002.jpg" /></a>
+                        </div>
+                    </div>
+                </div>
+                         -->
+
+                        <!--end 公告信息-->
+                        <!--最新专题-->
+                        <div class="maincolumn">
+                            <h3><a target="_blank" href="http://www.fjjyxy.com/info/zhuangti" >最新专题</a></h3>
+
+                            <div>
+                                
+                               <marquee behavior="scroll" direction="up" behavior="alternate" scrollamount="2" height="130" onmouseover="this.stop()" onmouseout="this.start()">
+                                <ul>
+                                        <li style="margin: 5px 0; text-align: center;">
+                                            <a target="_blank" href="http://zt.fjjyxy.com/19da">
+                                                <img alt="迎接中国共产党第十九次全国代表大会" src="http://www.fjjyxy.com/attachment/ewebfiles/20171207052851334.jpg" /></a></li>
+                                        <li style="margin: 5px 0; text-align: center;">
+                                            <a target="_blank" href="http://www.fjjcjy.com/WebJcjy/ShowLast.aspx?new_id=35920011454a4f538b7268bd0bce8754&amp;usr_id=9f7ca4dd1f554baeb0f0f847fc9e8663">
+                                                <img alt="2017年福建省职业教育教学成果奖申报推荐材料展示" src="Content\FJEDUwww\images\heng.jpg" /></a></li>
+                                        <li style="margin: 5px 0; text-align: center;">
+                                            <a target="_blank" href="http://zt.fjjyxy.com/lxyz/">
+                                                <img alt="福建教育学院“两学一做”" src="http://zt.fjjyxy.com/lxyz/lxyz_s2.jpg" /></a></li>
+                                        <li style="margin: 5px 0; text-align: center;">
+                                            <a target="_blank" href="http://zt.fjjyxy.com/lxcj/">
+                                                <img alt="两项创建" src="\Content\FJEDUwww\images\2016lxcj.jpg" /></a></li>
+                                        <li style="margin: 5px 0; text-align: center;">
+                                            <a target="_blank" href="http://zt.fjjyxy.com/wmjs/">
+                                                <img alt="文明建设" src="http://zt.fjjyxy.com/wmjs/wmjs.jpg" /></a></li>
+                                        <li style="margin: 5px 0; text-align: center;">
+                                            <a target="_blank" href="http://www.fjjcjy.com/WebJcjy/ImageList.aspx?prj_id=05cb38cebf8343788bd25c2734d80198">
+                                                <img alt="福建省教师优秀摄影作品展" src="\Content\FJEDUwww\images\201603-syzpz.jpg" /></a></li>
+                                        <li style="margin: 5px 0; text-align: center;">
+                                            <a target="_blank" href="http://www.fjjyxy.com/jcjyjxcgzs">
+                                                <img alt="基础教育成果展" src="/Content/fjeduwww/images/gdjycg.jpg" /></a></li>
+                                        <li style="margin: 5px 0; text-align: center;">
+                                            <a target="_blank" href="http://lib.fjjyxy.com/wlzg_zgxg1.asp?id=14">
+                                                <img alt="福建教育学院院史展" src="/Content/fjeduwww/images/ysz.jpg" /></a></li>
+                                        <li style="margin: 5px 0; text-align: center;">
+                                            <a target="_blank" href="http://zt.fjjyxy.com/msld/">
+                                                <img alt="梦山论道" src="/Content/fjeduwww/images/msld.jpg" /></a></li>
+                                        <li style="margin: 5px 0; text-align: center;">
+                                            <a target="_blank" href="http://www.fjjcjy.com/WebJcjy/ImageList.aspx?prj_id=ee6b62a60c534162a36a3a44a3e78f05">
+                                                <img alt="书法展" src="/Content/fjeduwww/images/sf.jpg" /></a></li>
+                                        <li style="margin: 5px 0; text-align: center;">
+                                            <a target="_blank" href="http://www.fjjcjy.com/WebJcjy/ImageList.aspx?prj_id=e1d3d548ef444635a6a225440faeb960">
+                                                <img alt="美术展" src="/Content/fjeduwww/images/mszpz.jpg" /></a></li>
+                                        <li style="margin: 5px 0; text-align: center;">
+                                            <a target="_blank" href="http://gxpx1.ceat.edu.cn/">
+                                                <img alt="干部在线学习中心" src="/Content/fjeduwww/images/131737599113976900.jpg" /></a></li>
+                                </ul>
+                               </marquee>
+                            </div>
+                        </div>
+                        <!--end 最新专题-->
+            </td>
+            <td style="width: 345px; padding-top: 5px;" valign="top">
+                <!--焦点图-->
+                <div style="width: 60px; height: 20px; color: white; position: absolute; top: 290px; z-index: 99; left: 55%; margin-left: 5px;">
+                    <a style="color: white;" target="_blank" href="/news/picnews">更多>></a>
+                </div>
+                <div class="fours" style="margin-top: 0;">
+                    <object type="application/x-shockwave-flash" data="/Content/FJEDUwww/bcastr4.swf?xml=/z/bcaster_xml.aspx?r=2018/5/29 10:15:34>"
+                        width="340" height="255" id="vcastr3">
+                        <param name="wmode" value="opaque" />
+                        <param name="movie" value="/Content/FJEDUwww/bcastr4.swf?xml=/z/bcaster_xml.aspx?r=2018/5/29 10:15:34" />
+                    </object>
+                </div>
+                <!--end 焦点图-->
+                <!--科研动态-->
+                <div style="margin: 8px 7px;">
+                    
+<div>
+    <div class="maincolumn" style="margin: 3px;">
+            <h3>科研公告
+<p><a target="_blank" href="http://www.fjjyxy.com/research/科研动态">更多&gt;&gt;</a></p>            </h3>
+        <div class="mct_list">
+            <dl>
+                    <dd><a target="_blank" title="（院内）关于转发《福建省教育厅关于做好2018年福建省中青年教师教育科研项目（高校外语教改科研专项）申报工作的通知》的通知（闽教院科〔2018〕14号）" style="width:238px; font-weight:normal;" href="http://www.fjjyxy.com/research/科研动态/iwqjD53.htm">（院内）关于转发《福建省教育厅关于做好2018年福建省中青年...</a><span>[2018-05-22]</span></dd>
+                    <dd><a target="_blank" title="（院外）关于开展2018年基础教育研究课题申报工作的通知（闽教院〔2018〕97号）" style="width:238px; font-weight:normal;" href="http://www.fjjyxy.com/research/科研动态/4tsk5yO.htm">（院外）关于开展2018年基础教育研究课题申报工作的通知（闽...</a><span>[2018-05-17]</span></dd>
+                    <dd><a target="_blank" title="（院内）转发省社科联关于公开征集2018年度福建省社会科学普及出版资助项目的通知（闽教院科〔2018〕11号）" style="width:238px; font-weight:normal;" href="http://www.fjjyxy.com/research/科研动态/RFrkabX.htm">（院内）转发省社科联关于公开征集2018年度福建省社会科学普...</a><span>[2018-05-10]</span></dd>
+                    <dd><a target="_blank" title="关于做好福建省科学技术厅2019年度省科技计划项目申报工作的通知（闽教院科〔2018〕13号）" style="width:238px; font-weight:normal;" href="http://www.fjjyxy.com/research/科研动态/H4yYaxK.htm">关于做好福建省科学技术厅2019年度省科技计划项目申报工作的...</a><span>[2018-05-10]</span></dd>
+                    <dd><a target="_blank" title="（院内）关于申报2018年度福建教育学院基础教育研究课题的通知（闽教院〔2018〕95号）" style="width:238px; font-weight:normal;" href="http://www.fjjyxy.com/research/科研动态/J3AP4WT.htm">（院内）关于申报2018年度福建教育学院基础教育研究课题的通...</a><span>[2018-05-09]</span></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+                </div>
+                <!--end 科研动态-->
+            </td>
+            <td style="width: 345px" valign="top">
+                <!--学院新闻-->
+                <div style="margin: -3px;">
+                    
+<div>
+    <div class="maincolumn" style="margin: 3px;">
+            <h3>学院新闻
+<p><a target="_blank" href="http://www.fjjyxy.com/news">更多&gt;&gt;</a></p>            </h3>
+        <div class="mct_list">
+            <dl>
+                    <dd><a target="_blank" title="福建教育学院关工委编书回眸岁月" style="width:260px; font-weight:normal;" href="http://www.fjjyxy.com/news/SzqyW8f.htm">福建教育学院关工委编书回眸岁月</a><span>[2018-05-11]</span></dd>
+                    <dd><a target="_blank" title="我省3名校长入选成为第二期“国培计划” 中小学名校长领航班学员" style="width:260px; font-weight:normal;" href="http://www.fjjyxy.com/news/wPiZ9LF.htm">我省3名校长入选成为第二期“国培计划” 中小学名校长领航班学员</a><span>[2018-04-28]</span></dd>
+                    <dd><a target="_blank" title="我省4名教师入选成为首期“国培计划” 中小学名师领航班学员" style="width:260px; font-weight:normal;" href="http://www.fjjyxy.com/news/jG4BHsx.htm">我省4名教师入选成为首期“国培计划” 中小学名师领航班学员</a><span>[2018-04-28]</span></dd>
+                    <dd><a target="_blank" title="教育部公布“国培计划”中小学名师领航班培养基地名单" style="width:260px; font-weight:normal;" href="http://www.fjjyxy.com/news/r5dp6aG.htm">教育部公布“国培计划”中小学名师领航班培养基地名单</a><span>[2018-04-28]</span></dd>
+                    <dd><a target="_blank" title="2018年全省教师进修院校校长培训班结业" style="width:260px; font-weight:normal;" href="http://www.fjjyxy.com/news/VXLm2P3.htm">2018年全省教师进修院校校长培训班结业</a><span>[2018-04-28]</span></dd>
+                    <dd><a target="_blank" title="我院出台进一步贯彻落实中央八项规定精神实施办法" style="width:260px; font-weight:normal;" href="http://www.fjjyxy.com/news/QuN3x8o.htm">我院出台进一步贯彻落实中央八项规定精神实施办法</a><span>[2018-04-28]</span></dd>
+                    <dd><a target="_blank" title="我院连续六年竞标承办校长国培项目" style="width:260px; font-weight:normal;" href="http://www.fjjyxy.com/news/MImq8Oz.htm">我院连续六年竞标承办校长国培项目</a><span>[2018-04-28]</span></dd>
+                    <dd><a target="_blank" title="郭春芳院长对名校长培养工作提出要求" style="width:260px; font-weight:normal;" href="http://www.fjjyxy.com/news/dZjgWoE.htm">郭春芳院长对名校长培养工作提出要求</a><span>[2018-04-28]</span></dd>
+                    <dd><a target="_blank" title="名师培养人选和学科带头人共话中学语文教学" style="width:260px; font-weight:normal;" href="http://www.fjjyxy.com/news/H0FNd2y.htm">名师培养人选和学科带头人共话中学语文教学</a><span>[2018-04-28]</span></dd>
+                    <dd><a target="_blank" title="学院举行2018年第二次教师“岗位练兵”活动" style="width:260px; font-weight:normal;" href="http://www.fjjyxy.com/news/JNouT4x.htm">学院举行2018年第二次教师“岗位练兵”活动</a><span>[2018-04-28]</span></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+                </div>
+                <!--end 学院新闻-->
+                <!--快速通道/校园服务-->
+                <div class="kstdsever" style="margin-top: 15px;">
+                    <ul>
+                        <dl>
+                            <dt>快速通道</dt>
+                            <dd>
+                                <span>
+                                    <a target="_blank" href="/quickpath/trainning">培训学员</a></span><span><a target="_blank"
+                                        href="/quickpath/correspondence">成考(函授)生</a></span><span><a target="_blank" href="/quickpath/autoditacte">自考生</a></span><span><a
+                                            target="_blank" href="/quickpath/cee">高考生</a></span><span><a target="_blank" href="/quickpath/teachers">教职工</a></span></dd>
+                        </dl>
+                        <dl>
+                            <dt>校园服务</dt>
+
+                            <dd style="line-height:120%;">
+                                    <span><a target="_blank" href="http://inside.fjjyxy.com/i">校园网</a></span>           
+                                    <span><a target="_blank" href="http://222.76.112.82:17912">OA 办公</a></span>           
+                                    <span><a target="_blank" href="info/联系方式">电话查询</a></span>           
+                                    <span><a target="_blank" href="/info/weibo">校园微博</a></span>           
+                                    <span><a target="_blank" href="/leaveword">信息反馈</a></span>           
+                                    <span><a target="_blank" href="http://degree.qingshuxuetang.com/fjjy/Home?schoolCategory=1">教学系统</a></span>           
+                                    <span><a target="_blank" href="/education/自学考试">自学中心</a></span>           
+                            </dd>
+                        </dl>
+                    </ul>
+                </div>
+                <!--end 快速通道/校园服务-->
+            </td>
+        </tr>
+    </table>
+
+
+	
+
+
+    <!--友情链接-->
+    <div class="yqlink">
+        <style type="text/css">
+            .indexOutLink {
+                display: block;
+                min-width: 149px;
+                _width: 145px;
+                float: left;
+                text-align: left;
+                margin: 5px;
+            }
+        </style>
+        <div class="maincolumn">
+            <h3>友情链接
+                <ul>
+                    <a target="_blank" href="http://www.moe.gov.cn/"><span id="one1" onmouseover="setTab('one',1,8)"
+                        class="hover">教育部</span></a>
+                    <a target="_blank" href="http://www.naea.edu.cn/"><span id="one2" onmouseover="setTab('one',2,8)">国家教育行政学院</span></a>
+                    <a target="_blank" href="http://www.fjedu.gov.cn/"><span id="one3" onmouseover="setTab('one',3,8)">福建省教育厅</span></a>
+                    <span id="one4" onmouseover="setTab('one',4,8)">全国教育学院联盟机构</span>
+                    <span id="one8" onmouseover="setTab('one',8,8)">海西20城教师培训机构</span>
+                    <span id="one5" onmouseover="setTab('one',5,8)">市、县(区)进修学校</span> <span id="one6" onmouseover="setTab('one',6,8)">省内高校</span>
+                    <span id="one7" onmouseover="setTab('one',7,8)">教育资源</span>
+                </ul>
+            </h3>
+            <div class="tabcontbox">
+                <div id="con_one_1" class="linklist">
+                </div>
+                <div id="con_one_2" class="linklist" style="display: none;">
+                </div>
+                <div id="con_one_3" class="linklist" style="display: none;">
+                </div>
+                <div id="con_one_8" class="linklist" style="display: none;">
+
+<div>
+    <div>
+            <a target="_blank" class="indexOutLink" href="http://gae.edugd.cn">广东省教育研究院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.gzsjks.com/">广州市教育科学研究所</a>
+            <a target="_blank" class="indexOutLink" href="http://www.gdei.edu.cn/">广东第二师范学院	</a>
+            <a target="_blank" class="indexOutLink" href="http://www.gdmxjy.com/">梅州市教育局	</a>
+            <a target="_blank" class="indexOutLink" href="http://www.mxjsjx.com">梅县教师进修学校	</a>
+            <a target="_blank" class="indexOutLink" href="http://www.xnsjx.com">兴宁市教师进修学校	</a>
+            <a target="_blank" class="indexOutLink" href="http://www.gdczedu.net/">潮州市教育局	</a>
+            <a target="_blank" class="indexOutLink" href="http://www.gdjyedu.com:8080/">揭阳市教育局	</a>
+            <a target="_blank" class="indexOutLink" href="http://www.jxjy.com.cn">嘉兴教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.zsjyxy.cn/">舟山教育学院	</a>
+            <a target="_blank" class="indexOutLink" href="http://www.wzer.net/">温州市教育局	</a>
+            <a target="_blank" class="indexOutLink" href="http://www.wzpx.cn/">温州市教师教育院	</a>
+            <a target="_blank" class="indexOutLink" href="http://www.rajsjx.cn/">瑞安市教师进修学校</a>
+            <a target="_blank" class="indexOutLink" href="http://www.yqjsjx.cn/">乐清市教师进修学校</a>
+            <a target="_blank" class="indexOutLink" href="http://www.qzedu.net/">衢州市教育局</a>
+            <a target="_blank" class="indexOutLink" href="http://www.jsjjx.com/">江山市教师进修学校</a>
+            <a target="_blank" class="indexOutLink" href="http://www.zjlsedu.org/">丽水市教育局	</a>
+            <a target="_blank" class="indexOutLink" href="http://xxfw.jxie.edu.cn:8080/jxie">江西教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.lctts.com/">临川教师进修学校</a>
+            <a target="_blank" class="indexOutLink" href="http://www.srjyw.com">上饶市教育局</a>
+            <a target="_blank" class="indexOutLink" href="http://www.yteduy.gov.cn/">鹰潭市教育局</a>
+            <a target="_blank" class="indexOutLink" href="http://www.jxgzedu.gov.cn/">赣州市教育局</a>
+            <a target="_blank" class="indexOutLink" href="http://www.jxfze.gov.cn/">抚州市教育局</a>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+</div>
+                <div id="con_one_4" class="linklist" style="display: none;">
+
+<div>
+    <div>
+            <a target="_blank" class="indexOutLink" href="http://www.bjie.ac.cn">北京教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.fjjyxy.com">福建教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.hljy.cn/">黑龙江省教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.jledu.net/main/index.shtml">吉林省教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.xjei.cn/">新疆教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.haie.edu.cn">河南教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.gdei.edu.cn">广东第二师范学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.cdnu.edu.cn/">成都师范学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.ccjyxy.net/jyxy/16/tindex.shtml">长春教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.cque.edu.cn/">重庆第二师范学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.dlteacher.com/">大连教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.gxec.net.cn">广西教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.gznc.edu.cn/">贵州师范学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.hue.edu.cn/">湖北第二师范学院</a>
+            <a target="_blank" class="indexOutLink" href="http://xxfw.jxie.edu.cn:8080/jxie">江西教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.imnu.edu.cn/">内蒙古师范大学</a>
+            <a target="_blank" class="indexOutLink" href="http://www.ncjyxy.cn/new_index.aspx">南昌教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.nbei.net">宁波教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://jyxy.nxu.edu.cn/">宁夏大学教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.qlnu.edu.cn/">齐鲁师范学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.qhnu.edu.cn/index.html">青海师范大学成人教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.snie.edu.cn/">陕西学前师范学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.synu.edu.cn/">沈阳师范大学</a>
+            <a target="_blank" class="indexOutLink" href="http://www.tynu.edu.cn/">太原师范学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.ynnu.edu.cn/">云南师范大学</a>
+            <a target="_blank" class="indexOutLink" href="http://www.zisu.edu.cn/">浙江外国语学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.jsie.edu.cn/">江苏教育学院</a>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+</div>
+                <div id="con_one_5" class="linklist" style="display: none;">
+                    <h4>福州地区进修院校</h4>
+                    
+
+<div>
+    <div>
+            <a target="_blank" class="indexOutLink" href="http://www.fzjyxy.com/">福州教育学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.gledu.gov.cn/html/index.html">鼓楼区教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="#">福清市教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.mhjsjx.com/">闽侯县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.cljxx.com/">长乐市教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="#">闽清县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.fzljedu.com/">连江县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.lyjyw.gov.cn/html/index.html">罗源县教师进修学校 </a>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+
+                    <br />
+                    <h4>厦门地区进修院校</h4>
+                    
+
+<div>
+    <div>
+            <a target="_blank" class="indexOutLink" href="http://www.smjy.net/data/www/publish/103.jsp/">思明区教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.xmedu.gov.cn/hlqjsjxxx">湖里区教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.xmedu.gov.cn/jmjxxx">集美区教师进修学校</a>
+            <a target="_blank" class="indexOutLink" href="http://jxxx.tajyw.com/">同安区教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.xmhcedu.gov.cn/">海沧区教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.xaqwjxxw.cn/index.do">翔安区教师进修学校</a>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+
+                    <br />
+                    <h4>泉州地区进修院校</h4>
+                    
+
+<div>
+    <div>
+            <a target="_blank" class="indexOutLink" href="http://www.qzlcjsjx.com/">鲤城区教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.ljjsjx.com/">洛江区教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.fzjsjx.com/index.asp">丰泽区教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.fjqgedu.com:84/">泉港区教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.jjjxxx.com.cn/jjjxxx/">晋江市教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.najsjx.com/">南安市教师进修校</a>
+            <a target="_blank" class="indexOutLink" href="http://edu.shishi.gov.cn/programs/JXZX/Index.asp?School_Id=1">石狮市教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.fjycjs.com/">永春县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://hajx.30edu.com.cn/">惠安县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.dhjsjx.com/">德化县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.axjxxx.com/">安溪县教师进修学校</a>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+
+                    <br />
+                    <h4>莆田地区进修院校</h4>
+                    
+
+<div>
+    <div>
+            <a target="_blank" class="indexOutLink" href="http://www.ptjxxy.com/">莆田市教师进修学院 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.cxjsedu.cn">城厢区教师进修学校</a>
+            <a target="_blank" class="indexOutLink" href="http://web.ptjy.com/web/usersitetemplate/001/default.aspx?UserName=xyxjsjx">仙游县教师进修学校</a>
+            <a target="_blank" class="indexOutLink" href="http://www.hjqjy.com/">涵江区教师进修学校</a>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+
+                    <br />
+                    <h4>南平地区进修院校</h4>
+                    
+
+<div>
+    <div>
+            <a target="_blank" class="indexOutLink" href="http://www.npjy.net/">南平市教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.wysjx.com/">武夷山市教师进修学校</a>
+            <a target="_blank" class="indexOutLink" href="http://www.swjsjx.com/">邵武市教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.jojy.net/cgi-bin/cgi061/index.asp?Username=jsjx">建瓯市教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.jyjxxx.cn/">建阳教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="#">浦城县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://gzjxx.fjgzjy.com/">光泽县教师进修学校 </a>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+
+                    <br />
+                    <h4>三明地区进修院校</h4>
+                    
+
+<div>
+    <div>
+            <a target="_blank" class="indexOutLink" href="http://www.smmljy.com/">三明市梅列区教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://jxxx.fjyajy.com/">永安市教师进修学校</a>
+            <a target="_blank" class="indexOutLink" href="http://jljx.fjjljy.com/">将乐县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://jsjxxx.fjjnjy.com.cn/">建宁县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://jxxx.mxxjyj.net/index.aspx">明溪县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.qledu.gov.cn/web/usersitetemplate/001/default.aspx?UserName=jxx">清流县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://jxxx.yxjy.net/index.aspx?pkId=2862">尤溪县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.dtjsjx.com/">大田县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.fjsxjx.com/">沙县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://jxxx.fjtnjy.com/">泰宁县教师进修学校 </a>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+
+                    <br />
+                    <h4>宁德地区进修院校</h4>
+                    
+
+<div>
+    <div>
+            <a target="_blank" class="indexOutLink" href="http://www.ndjxxy.com/">宁德市焦城区教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://fdjsjxxx.fdjyw.com/">福鼎市教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.fajsw.com/">福安市教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.fjxpjs.com/">霞浦县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.znjy.net/cnet/dynamic/presentation/net_5/index.jsp">周宁县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.zrjy.com/cnet/dynamic/presentation/net_11/index.jsp?unitid=24&amp;unitid=24&amp;clazz=14455414">柘荣县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.snjxx.net/">寿宁县教师进修学校 </a>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+
+                    <br />
+                    <h4>漳州地区进修院校</h4>
+                    
+
+<div>
+    <div>
+            <a target="_blank" class="indexOutLink" href="http://www.zzxcjy.com/cgi-bin/cgi007/index.asp?Username=jsjx">漳州市教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.fjhajy.net/cgi-bin/cgi036/index.asp?username=jsjx">华安县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.njjsjx.com/">南靖县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://jsjxxx.zajy.net/">诏安县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.dsjsjx.com/">东山县教师进修学校</a>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+
+                    <br />
+                    <h4>龙岩地区进修院校</h4>
+                    
+
+<div>
+    <div>
+            <a target="_blank" class="indexOutLink" href="http://www.lyxljx.net/cms/">新罗区教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://jsjxxx.ydxedu.com/index.aspx">永定县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://www.ctjs.cn/">长汀县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://jsjxxx.lcjyw.net/index.aspx?pkId=2456">连城县教师进修学校 </a>
+            <a target="_blank" class="indexOutLink" href="http://jsjxxx.shanghang.gov.cn/">上杭县教师进修学校 </a>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+
+                </div>
+                <div id="con_one_6" class="linklist" style="display: none;">
+
+<div>
+    <div>
+            <a target="_blank" class="indexOutLink" href="http://www.fzu.edu.cn/">福州大学</a>
+            <a target="_blank" class="indexOutLink" href="http://www.fjau.edu.cn/">福建农林大学</a>
+            <a target="_blank" class="indexOutLink" href="http://www.fjnu.edu.cn/">福建师范大学</a>
+            <a target="_blank" class="indexOutLink" href="http://www.fjmu.edu.cn/">福建医科大学</a>
+            <a target="_blank" class="indexOutLink" href="http://www.fjtcm.edu.cn/">福建中医药大学</a>
+            <a target="_blank" class="indexOutLink" href="http://www.fjut.edu.cn/">福建工程学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.qztc.edu.cn/">泉州师范学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.fjzs.edu.cn/">漳州师范学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.jmu.edu.cn/">集美大学</a>
+            <a target="_blank" class="indexOutLink" href="http://www.hqu.edu.cn/">华侨大学</a>
+            <a target="_blank" class="indexOutLink" href="http://web.yeu.edu.cn/">仰恩大学</a>
+            <a target="_blank" class="indexOutLink" href="http://www.lyun.edu.cn/">龙岩学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.ptu.edu.cn/2.htm">莆田学院</a>
+            <a target="_blank" class="indexOutLink" href="http://218.5.241.16/">三明学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.mju.edu.cn/">闽江学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.nptc.edu.cn/">武夷学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.jxxyc.cn/jxxy/index.aspx">福建江夏学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.ndsz.net/">宁德师范学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.xmut.edu.cn/">厦门理工学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.mnust.cn/">闽南理工学院</a>
+            <a target="_blank" class="indexOutLink" href="http://210.34.112.11/main/">福建警察学院</a>
+            <a target="_blank" class="indexOutLink" href="http://www.xmu.edu.cn/">厦门大学</a>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+</div>
+                <div id="con_one_7" class="linklist" style="display: none;">
+
+<div>
+    <div>
+            <a target="_blank" class="indexOutLink" href="http://www.edu.cn/">中国教育科研网</a>
+            <a target="_blank" class="indexOutLink" href="http://www.cern.net.cn/">中国教育资源网</a>
+            <a target="_blank" class="indexOutLink" href="http://www.neea.edu.cn/">中国教育考试网</a>
+            <a target="_blank" class="indexOutLink" href="http://www.cbe21.com/">中国基础教育网</a>
+            <a target="_blank" class="indexOutLink" href="http://www.chinaedu.edu.cn/">中国教育信息网</a>
+            <a target="_blank" class="indexOutLink" href="http://www.eol.cn/">中国教育热线</a>
+            <a target="_blank" class="indexOutLink" href="http://www.cnteachersblog.com/">中国教师博客网</a>
+            <a target="_blank" class="indexOutLink" href="http://www.ceat.edu.cn/">中国教育干部培训网</a>
+            <a target="_blank" class="indexOutLink" href="http://www.cersp.com/">中国教育资源服务平台</a>
+            <a target="_blank" class="indexOutLink" href="http://www.k12.com.cn/">K12中国中小学教育教学网</a>
+            <a target="_blank" class="indexOutLink" href="http://www.teacher.com.cn/">全国中小学教师继续教育网</a>
+            <a target="_blank" class="indexOutLink" href="http://www.jingpinke.com/">国家精品课程资源网</a>
+            <a target="_blank" class="indexOutLink" href="http://www.ncet.edu.cn/">教育部基础教育资源中心</a>
+            <a target="_blank" class="indexOutLink" href="http://www.ncct.gov.cn/">基础教育课程教材发展中心</a>
+            <a target="_blank" class="indexOutLink" href="http://www.sinoss.net/">中国社科网</a>
+            <a target="_blank" class="indexOutLink" href="http://www.fjskl.com.cn/">福建省社科联</a>
+            <a target="_blank" class="indexOutLink" href="http://www.fjkx.org">福建省科学技术协会</a>
+            <a target="_blank" class="indexOutLink" href="http://kj.fjedu.gov.cn">福建省高校科技(推介)网</a>
+            <a target="_blank" class="indexOutLink" href="http://www.fj51e.cn/">福建终身学习在线</a>
+            <a target="_blank" class="indexOutLink" href="http://211.143.182.133/resource/">福州市基础教育资源库</a>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+</div>
+            </div>
+            <div style="height: 10px; overflow: hidden;">
+            </div>
+        </div>
+    </div>
+    <!--end 友情链接-->
+</div>
+
+<div style="font-size: 12px; margin-top: 15px; font-weight: bold;">
+    <a href="/wwwnewdoc">今日更新<span style='color:red;'>0</span>篇 &nbsp; 一周内更新<span style='color:red;'>11</span>篇</a>
+</div>
+
+<!-- 左侧广告位模块 -->
+<!-- 广告位：院外右侧广告 -->
+<script>
+(function() {
+    var s = "_" + Math.random().toString(36).slice(2);
+    document.write('<div id="' + s + '"></div>');
+    (window.slotbydup=window.slotbydup || []).push({
+        id: '2438418',
+        container: s,
+        size: '120,270',
+        display: 'float'
+    });
+})();
+</script>
+<script src="http://dup.baidustatic.com/js/os.js"></script>
+
+
+
+<!-- 右侧飘窗广告 -->
+<!--
+<script type="text/javascript" language="JavaScript">
+	lastScrollY=0;
+	function heartBeat(){ 
+	var diffY;
+	if (document.documentElement && document.documentElement.scrollTop)
+	   diffY = document.documentElement.scrollTop;
+	else if (document.body)
+	   diffY = document.body.scrollTop
+	else
+	 {/*Netscape stuff*/}
+	percent=.1*(diffY-lastScrollY); 
+	if(percent>0)percent=Math.ceil(percent); 
+	else percent=Math.floor(percent); 
+	//document.getElementById("lovexin12").style.top=parseInt(document.getElementById("lovexin12").style.top)+percent+"px";
+	document.getElementById("lovexin14").style.top=parseInt(document.getElementById("lovexin12").style.top)+percent+"px";
+	lastScrollY=lastScrollY+percent; 
+	}
+	//suspendcode12="<DIV id='lovexin12' style='left:22px;POSITION:absolute;TOP:250px;'><a href='http://www.fjjcjy.com' target='_blank'><img border=0 src='http://lob.fjlearning.com/DownLoadFile.aspx?BlbId=3b7501891dc045c0bf7b39887b9c07cb&ThumbnailType=2&DownLoadFileType=0' /></a><br><a  onclick=\"lovexin12.style.visibility='hidden'\" ><img border=0 src='http://res.fjlearning.com/Style/WebJcjy/close.gif' /></a></div>";
+	suspendcode14="<DIV id='lovexin14' style='right:22px;POSITION:absolute;TOP:200px;'><a href='http://www.fjjcjy.com' target='_blank'><img border=0 src='yx2y.jpg' /></a><br><a   onclick=\"lovexin14.style.display = 'none'\"><img border=0 src='http://res.fjlearning.com/Style/WebJcjy/close.gif' /></div>";
+	//document.write(suspendcode12); 
+	document.write(suspendcode14); 
+	window.setInterval("heartBeat()",1);
+	if(1==0)
+	   lovexin12.style.visibility='hidden';
+	if(1==0)
+	  lovexin14.style.visibility='hidden';
+</script>
+-->
+        <!--底部-->
+        
+        <div class="footer">
+            <dl>
+                
+                
+                <dd>
+                    <script language="javascript" type="text/javascript" src="http://js.users.51.la/3394349.js"></script>
+                    <noscript>
+                        <a href="http://www.51.la/?3394349" target="_blank">
+                            <img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/3394349.asp"
+                                style="border: none" /></a></noscript>
+
+		  <script language="javascript" type="text/javascript" src="http://js.users.51.la/2972343.js"></script>
+		  <noscript>
+			<a href="http://www.51.la/?2972343" target="_blank">
+			    <img alt="&#x621Q1;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/2972343.asp" style="border:none" /></a></noscript>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2f00cc7e1ff32ed6defcab7270bf8e92";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a1253d8024b0794a2362f5449cf1d9e8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+                    版权所有：福建教育学院 &copy;2012　<a href="http://www.miibeian.gov.cn/">闽ICP备05027793号</a><br/><br/><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/14/000/0000/41408361/CA140000000414083610001.js' type='text/javascript'%3E%3C/script%3E"));</script></dd>
+                <dd>联系我们：<img src='/content/fjeduwww/images/webmastermail.gif' />　地址：福州市鼓楼区梦山路73号　邮编：350001</dd>
+		<dd style='margin-top:90px;margin-bottom:20px;'>
+		<table  style='width:100%;'>
+		<tr>
+		<td style="width:330px;"></td>
+		<td style="line-height:35px;"><img style='width:100px;height:100px;' src='/attachment/201509/jj-w.jpg'><br/>福建基础教育网微信</td>
+		<td style="line-height:35px;"><img style='width:100px;height:100px;'  src='/attachment/201509/jy-w.jpg'><br/>福建教育学院微信</td>
+		<td style="width:330px;"></td>
+		</tr>
+		</table>
+</dd>
+            </dl>
+	    <br/><br/><br/>
+        </div>
+        <!--end 底部-->
+    </div>
+</body>
+</html>

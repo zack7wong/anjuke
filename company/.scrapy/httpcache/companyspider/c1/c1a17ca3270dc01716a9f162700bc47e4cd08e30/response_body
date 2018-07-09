@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<title>广州东华职业学院,广州职业学院</title>
+<meta name="keywords" content="广州东华职业学院,广州职业学院">
+<meta name="description" content="广州东华职业学院,广州职业学院">
+<link href="http://www.gzdhxy.com/phpcms/templates/default/images/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.gzdhxy.com/statics/js/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+function displaySubMenu(li) {
+	var subMenu = li.getElementsByTagName("ul")[0];
+	subMenu.style.display = "block";
+}
+function hideSubMenu(li) {
+	var subMenu = li.getElementsByTagName("ul")[0];
+	subMenu.style.display = "none";
+}
+</script>
+<script  type="text/javascript">
+//设为首页
+function SetHome(obj,url){
+    try{
+        obj.style.behavior='url(#default#homepage)';
+        obj.setHomePage(url);
+    }catch(e){
+        if(window.netscape){
+            try{
+                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+            }catch(e){
+                alert("抱歉，此操作被浏览器拒绝！");
+            }
+        }else{
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+        }
+    }
+}
+//收藏本站
+function AddFavorite(title, url) {
+    try {
+        window.external.addFavorite(url, title);
+    }
+    catch (e) {
+        try {
+            window.sidebar.addPanel(title, url, "");
+        }
+        catch (e) {
+            alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+</script>
+
+</head>
+<body>
+<div id="head">
+    <div id="head_top">
+		<div id="head_top_daima">学院代码:14362  录取批次:普通类专科</div>
+		<div id="head_top_fav">
+			<a href="javascript:void(0);" onclick="SetHome(this,'http://www.gzdhxy.com/');" style="margin-right:37px">设为首页</a>
+			<a href="javascript:void(0);" onclick="AddFavorite('广州东华职业学院',location.href)" style="margin-right:10px">收藏本站</a>
+		</div>
+	</div>
+    <div id="head_logo"></div>
+    <div id="head_nav">
+		<ul id="navigation">
+			<li><a href="http://www.gzdhxy.com">网站首页</a></li>
+				                        
+		    <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="http://www.gzdhxy.com/html/xygk/" target="_blank" >学院概况</a>
+			 						  <ul>
+						  						   
+							 <li><a href="http://www.gzdhxy.com/html/xygk/yxjj/" target="_blank" class="secmenulink">学院简介</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/index.php?m=content&c=index&a=lists&catid=115" target="_blank" class="secmenulink">领导班子</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/xygk/xuexizuanye/" target="_blank" class="secmenulink">办学思想</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/index.php?m=content&c=index&a=lists&catid=116" target="_blank" class="secmenulink">组织机构</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/index.php?m=content&c=index&a=lists&catid=117" target="_blank" class="secmenulink">专业设置</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/index.php?m=content&c=index&a=lists&catid=107" target="_blank" class="secmenulink">师资队伍</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/xygk/xyfj/" target="_blank" class="secmenulink">校园风光</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/xygk/xyvideo/" target="_blank" class="secmenulink">校园视频</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/index.php?m=content&c=index&a=lists&catid=118" target="_blank" class="secmenulink">交通指南</a></li>
+						  						  						  </ul>
+			 		                        
+		    <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="http://www.gzdhxy.com/html/zsjy/" target="_blank" >招生就业</a>
+			 						  <ul>
+						  						   
+							 <li><a href="http://job.gzdhxy.com" target="_blank" class="secmenulink">就业网站</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/zsb01/" target="_blank" class="secmenulink">招生信息</a></li>
+						  						  						  </ul>
+			 		                        
+		    <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="http://www.gzdhxy.com/html/zzjg01/" target="_blank" >组织机构</a>
+			 						  <ul>
+						  						   
+							 <li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/" target="_blank" class="secmenulink">行政部门</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/zzjg01/jxbm/" target="_blank" class="secmenulink">教学机构</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/zzjg01/jfjg01/" target="_blank" class="secmenulink">教辅机构</a></li>
+						  						  						  </ul>
+			 		                        
+		    <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="http://www.gzdhxy.com/html/jwgl/" target="_blank" >教学管理</a>
+			 						  <ul>
+						  						   
+							 <li><a href="http://www.gzdhxy.com/html/jwgl/rcpy/" target="_blank" class="secmenulink">人才培养</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/jwgl/xjgl/" target="_blank" class="secmenulink">学籍管理</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/jwgl/kwgl/" target="_blank" class="secmenulink">考务管理</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/jwgl/jxgl/" target="_blank" class="secmenulink">教务管理</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/jwgl/zljd/" target="_blank" class="secmenulink">教学督导</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/index.php?m=content&c=index&a=lists&catid=98" target="_blank" class="secmenulink">技能鉴定</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/jwgl/sxsx/" target="_blank" class="secmenulink">实训实习</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/jwgl/jxjy/" target="_blank" class="secmenulink">继续教育</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/jwgl/xzzy/" target="_blank" class="secmenulink">新增专业</a></li>
+						  						  						  </ul>
+			 		                        
+		    <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="http://www.gzdhxy.com/html/xqhz01/" target="_blank" >校企合作</a>
+			 						  <ul>
+						  						   
+							 <li><a href="http://www.gzdhxy.com/html/xqhz01/hzqy01/" target="_blank" class="secmenulink">合作企业</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/xqhz01/dtxx/" target="_blank" class="secmenulink">动态信息</a></li>
+						  						  						  </ul>
+			 		                        
+		    <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="http://www.gzdhxy.com/html/xxyd/" target="_blank" >学生工作</a>
+			 						  <ul>
+						  						   
+							 <li><a href="http://www.gzdhxy.com/html/xxyd/ggl/" target="_blank" class="secmenulink">思想教育</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/xxyd/stactive/" target="_blank" class="secmenulink">团学工作</a></li>
+						   
+							 <li><a href="http://xlzx.gzdhxy.com/" target="_blank" class="secmenulink">心灵驿站</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/xxyd/xysg/" target="_blank" class="secmenulink">动态新闻</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/xxyd/xjsj/" target="_blank" class="secmenulink">奖助贷</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/xysh01/" target="_blank" class="secmenulink">校园生活</a></li>
+						  						  						  </ul>
+			 		                        
+		    <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="http://www.gzdhxy.com/html/dqgz/" target="_blank" >党建工作</a>
+			 						  <ul>
+						  						   
+							 <li><a href="http://www.gzdhxy.com/html/dqgz/dwbm01/" target="_blank" class="secmenulink">组织机构</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/dqgz/dyzz/" target="_blank" class="secmenulink">组织发展</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/dqgz/dyjy/" target="_blank" class="secmenulink">党员教育</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/dqgz/dnxc/" target="_blank" class="secmenulink">宣传统战</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/dqgz/ghgz/" target="_blank" class="secmenulink">工会工作</a></li>
+						   
+							 <li><a href="http://www.gzdhxy.com/html/dqgz/sjdbdzl/" target="_blank" class="secmenulink">十九大专栏</a></li>
+						  						  						  </ul>
+			 		                        
+		    <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="http://www.gzdhxy.com/html/newcenter/mtkdh/" target="_blank" >媒体看东华</a>
+			 		                        
+		    <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="http://library.gzdhxy.com" target="_blank" >图书馆</a>
+			 		                        
+		    <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="http://pj.gzdhxy.com" target="_blank" >评建工作</a>
+			 						</ul>
+	
+	</div>
+</div><div id="main">
+	<div id="main_flash">
+		<link href="http://www.gzdhxy.com/phpcms/templates/default/images/simplefoucs_lrtk.css" rel="stylesheet" type="text/css" />
+		<script src="http://www.gzdhxy.com/phpcms/templates/default/images/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="http://www.gzdhxy.com/phpcms/templates/default/images/simplefoucs.js" type="text/javascript"></script>
+		<div class="bannerbox">
+			<div id="focus">
+				<ul>
+				   				   					  <li><a href="javascript:void(0);" ><img src="http://www.gzdhxy.com/uploadfile/2014/0827/20140827024304751.jpg"></a></li>
+				   					  <li><a href="javascript:void(0);" ><img src="http://www.gzdhxy.com/uploadfile/2014/0827/20140827024323738.jpg"></a></li>
+				   					  <li><a href="javascript:void(0);" ><img src="http://www.gzdhxy.com/uploadfile/2014/0827/20140827024359630.jpg"></a></li>
+				   					  <li><a href="javascript:void(0);" ><img src="http://www.gzdhxy.com/uploadfile/2014/0827/20140827024417109.jpg"></a></li>
+				   				                       
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="line1">
+		<div id="main_line1_news">
+			<div id="main_line1_news_more"><a href="http://www.gzdhxy.com/html/newcenter/xynews/" target="_blank">MORE>></a></div>
+			<div id="main_line1_news_flash"><script type="text/javascript">
+	//<![CDATA[
+	var interval_time=0;
+	var focus_width=300;
+	var focus_height=200;
+	var text_height=0;
+	var text_align="center";
+	var swf_height=focus_height+text_height;
+				  
+			  
+			  
+			  
+			  
+				var pics="http://www.gzdhxy.com/uploadfile/2018/0528/20180528034001430.png|http://www.gzdhxy.com/uploadfile/2018/0525/20180525050142250.png|http://www.gzdhxy.com/uploadfile/2018/0525/20180525114750205.png|http://www.gzdhxy.com/uploadfile/2018/0524/20180524030454877.png|http://www.gzdhxy.com/uploadfile/2018/0522/20180522113300270.png";
+	var links="http://www.gzdhxy.com/html/2018/xynews_0528/2691.html|http://www.gzdhxy.com/html/2018/xynews_0525/2683.html|http://www.gzdhxy.com/html/2018/xynews_0525/2680.html|http://www.gzdhxy.com/html/2018/xynews_0524/2678.html|http://www.gzdhxy.com/html/2018/xynews_0522/2677.html";
+	var texts="我校在2018年广东省大学生舞龙舞狮锦标赛中斩获两座奖杯|新党章解读——我校顺利举办第一期发展对象培训班第二讲|第二届商务谈判模拟大赛圆满成功|白云区政府现场协调解决我校用电问题|我校举行无人机相关专业校企合作洽谈会";
+	document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">');
+	document.write('<param name="allowScriptAccess" value="sameDomain" /><param name="movie" value="/donghua/swf/focus.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#F0F0F0">');
+	document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+	document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+	document.write('<embed src="/donghua/swf/focus.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" bgcolor="#F0F0F0" quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+	document.write('</object>');
+	//]]>
+</script> </div>
+			<div id="main_line1_news_list">
+                  <ul>
+				                                        <li><a href="http://www.gzdhxy.com/html/2018/xynews_0528/2691.html" target="_blank" title="我校在2018年广东省大学生舞龙舞狮锦标赛中斩获两座奖杯" >我校在2018年广东省大学生舞龙舞狮锦标赛中斩获...</a></li>
+                                       <li><a href="http://www.gzdhxy.com/html/2018/xynews_0525/2683.html" target="_blank" title="新党章解读——我校顺利举办第一期发展对象培训班第二讲" >新党章解读&mdash;&mdash;我校顺利举办第一期发展对象培训...</a></li>
+                                       <li><a href="http://www.gzdhxy.com/html/2018/xynews_0525/2680.html" target="_blank" title="第二届商务谈判模拟大赛圆满成功" >第二届商务谈判模拟大赛圆满成功</a></li>
+                                       <li><a href="http://www.gzdhxy.com/html/2018/xynews_0524/2678.html" target="_blank" title="白云区政府现场协调解决我校用电问题" >白云区政府现场协调解决我校用电问题</a></li>
+                                       <li><a href="http://www.gzdhxy.com/html/2018/xynews_0522/2677.html" target="_blank" title="我校举行无人机相关专业校企合作洽谈会" >我校举行无人机相关专业校企合作洽谈会</a></li>
+                                       <li><a href="http://www.gdhed.edu.cn/business/htmlfiles/gdjyt/gdjy/201805/518430.html" target="_blank" title="[广东省教育厅]广州东华职业学院举行第四届宿舍文化节暨“小红旗标兵宿舍”创建活动启动仪式" >[广东省教育厅]广州东华职业学院举行第四届宿舍...</a></li>
+                                       <li><a href="http://www.gzdhxy.com/html/2018/xynews_0521/2674.html" target="_blank" title="我校举行第四届宿舍文化节暨“小红旗标兵宿舍”创建活动启动仪式" >我校举行第四届宿舍文化节暨&ldquo;小红旗标兵宿舍&rdquo;...</a></li>
+                                       
+                  </ul>
+			</div>
+		</div>
+		<div id="main_line1_notice">
+			<div id="main_line1_notice_more"><a href="http://www.gzdhxy.com/html/newcenter/xytz/" target="_blank">MORE>></a></div>
+			<div id="main_line1_notice_list">
+                  <ul>
+                                                        <li><a href="http://www.gzdhxy.com/html/2018/xytz_0427/2617.html" target="_blank" title="“学会感恩、与爱同行”征文比赛活动" >“学会感恩、与爱同行”征文比赛活动</a></li>
+                                       <li><a href="http://www.gzdhxy.com/html/2018/xytz_0426/2614.html" target="_blank" title="广州东华职业学院教学科研仪器采购招标(竞价)公告" >广州东华职业学院教学科研仪器采购招标(竞价)公告</a></li>
+                                       <li><a href="http://www.gzdhxy.com/html/2018/xytz_0425/2611.html" target="_blank" title="关于2018年五一劳动节放假的通知" >关于2018年五一劳动节放假的通知</a></li>
+                                       <li><a href="http://www.gzdhxy.com/html/2018/xytz_0420/2600.html" target="_blank" title="我院依据学考成绩招生录取21日开始征集志愿" >我院依据学考成绩招生录取21日开始征集志愿</a></li>
+                                       <li><a href="http://www.gzdhxy.com/html/2018/xytz_0413/2598.html" target="_blank" title="关于报送省教育厅2017年度工作检查材料的公示" >关于报送省教育厅2017年度工作检查材料的公示</a></li>
+                                       <li><a href="http://www.gzdhxy.com/html/2018/xytz_0410/2566.html" target="_blank" title="关于校园视频监控项目的招标公告" >关于校园视频监控项目的招标公告</a></li>
+                                       <li><a href="http://www.gzdhxy.com/html/2018/xytz_0409/2565.html" target="_blank" title="关于学生新食堂项目的招标公告" >关于学生新食堂项目的招标公告</a></li>
+                                       
+                  </ul>
+			</div>
+		
+		
+		</div>
+	</div>
+    <div class="clearfloat"></div>
+	
+	<div id="line2">
+		<div id="main_line2_xinxi">
+                  <ul>
+                    <li><a href="http://www.gzdhxy.com/html/xxgk/banshidh" target="_blank">办事流程</a></li>
+                    <li><a href="http://www.gzdhxy.com/html/xxgk/ndbg" target="_blank">质量年报</a></li>
+                    <li><a href="http://www.gzdhxy.com/html/xxgk/zsksxxzl/" target="_blank">学院概况</a></li>
+                    <li><a href="http://www.gzdhxy.com/html/xxgk/rsszxxzl/" target="_blank">规章制度</a></li>
+                    <li><a href="http://www.gzdhxy.com/html/jwgl/" target="_blank">教学管理</a></li>
+                    <li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/xsc01/" target="_blank">学生工作</a></li>
+                    <li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/rsc01/" target="_blank">人事工作</a></li>
+                    <li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/cwc01/" target="_blank">财务管理</a></li>
+                    <li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/zwc01/" target="_blank">后勤管理</a></li>
+                    <li><a href="http://job.gzdhxy.com" target="_blank">就业指导</a></li>
+                    <li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/bwc01/" target="_blank">平安校园</a></li>
+                    <li><a href="http://www.gzdhxy.com/html/xxgk/qtxx/" target="_blank">招生工作</a></li>
+                    <li><a href="http://www.gzdhxy.com/html/xxgk/xxjbxxzl/" target="_blank">规划计划</a></li>
+                    <li><a href="http://www.gzdhxy.com/html/xxgk/synlzpbg" target="_blank">适应能力</a></li>
+                    <li><a href="http://www.gzdhxy.com/html/yzxx/" title="Mailto:DHXY363@163.com" target="_blank">校长信箱</a></li>
+                  </ul>
+		</div>
+		<div id="main_line2_bumen">
+	  <ul>
+			<li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/yb01/" target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/dep01.png"><br/>院&nbsp;&nbsp;办</a></li>
+			<li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/jwc01/" target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/dep02.png"><br/>教务处</a></li>
+			<li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/xsc01/" target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/dep03.png"><br/>学生处</a></li>
+			<li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/rsc01/" target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/dep04.png"><br/>人事处</a></li>
+			<li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/zsb01/" target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/dep05.png"><br/>招生办</a></li>
+			<li><a href="http://job.gzdhxy.com" target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/dep06.png"><br/>就业办</a></li>
+			<li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/cwc01/" target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/dep07.png"><br/>财务处</a></li>
+			<li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/zwc01/" target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/dep08.png"><br/>总务处</a></li>
+			<li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/bwc01/" target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/dep09.png"><br/>保卫处</a></li>
+			<li><a href="http://pj.gzdhxy.com" target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/dep10.png"><br/>评建办</a></li>
+	  </ul>
+		</div>
+		<div id="main_line2_xiaoyuan">
+                  <ul>
+				<li><a href="http://192.168.9.190:83/"  target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/zt01.jpg"><br/>用电查询</a></a></li>
+				<li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/zsb01/" target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/zt02.jpg"><br/>招生信息</a></a></li>
+				<li><a href="http://job.gzdhxy.com/" target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/zt03.jpg"><br/>就业信息</a></a></li>
+				<li><a href="http://www.gzdhxy.com/html/zzjg01/xzjg/rsc01/rczp/" target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/zt04.jpg"><br/>人才招聘</a></a></li>
+				<li><a href="http://jwc.gzdhxy.com/" target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/zt05.jpg"><br/>教务系统</a></a></li>
+				<li><a href="http://192.168.9.190:86/" target="_blank" ><img src="http://www.gzdhxy.com/phpcms/templates/default/images/zt06.jpg"><br/>图书馆</a></a></li>
+                  </ul>
+		</div>
+	</div>
+    <div class="clearfloat"></div>
+	
+	<div id="line3">
+		<div id="main_line3_yuanxi">
+                  <ul>
+					<li><a href="http://xxgcx.gzdhxy.com/" target="_blank"><img src="http://www.gzdhxy.com/phpcms/templates/default/images/icon01.jpg" /><br />信息工程学院</a></li>
+					<li><a href="http://kjx.gzdhxy.com/" target="_blank"><img src="http://www.gzdhxy.com/phpcms/templates/default/images/icon02.jpg" /><br />财经学院</a></li>
+					<li><a href="http://glx.gzdhxy.com/" target="_blank"><img src="http://www.gzdhxy.com/phpcms/templates/default/images/icon03.jpg" /><br />管理学院</a></li>
+					<li><a href="http://jzysx.gzdhxy.com/" target="_blank"><img src="http://www.gzdhxy.com/phpcms/templates/default/images/icon04.jpg" /><br />建筑工程学院</a></li>
+					<li><a href="http://jdgcx.gzdhxy.com/" target="_blank"><img src="http://www.gzdhxy.com/phpcms/templates/default/images/icon05.jpg" /><br />机电工程学院</a></li>
+					<li><a href="http://jcb.gzdhxy.com/" target="_blank"><img src="http://www.gzdhxy.com/phpcms/templates/default/images/icon06.jpg" /><br />公共理论学院</a></li>
+                  </ul>
+		</div>
+		<div id="main_line3_video">
+				  
+			<div id="main_line3_video_more"><a href="http://www.gzdhxy.com/html/xygk/xyfj/" target="_blank"></a></div>
+			<div id="main_line3_video_pic">
+				<ul>
+					<li><a href="http://www.gzdhxy.com/html/xygk/xyvideo/"  target="_blank"  ><img src="http://www.gzdhxy.com/html/video/xyvideo.jpg" style="width: 270px; height: 160px" /></a></li>
+	
+				</ul>	
+			</div>
+				  
+		</div>
+		<div id="main_line3_zhuanti">
+                  <ul>
+					<li><a href="http://www.gzdhxy.com/html/dqgz/sjdbdzl/"  target="_blank" class="STYLE2" style='color:red'><strong>十九大专栏</strong></a></li>
+                                        <li><a href="http://www.gzdhxy.com/html/2017/xywzztjs_0614/2109.html"  target="_blank" >信息公开网</a></li>
+					<li><a href="http://www.gzdhxy.com/html/2017/xywzztjs_0614/2109.html"  target="_blank" >创新创业专题网</a></li>
+					<li><a href="http://www.gzdhxy.com/wlaq"  target="_blank" >网络安全宣传专栏</a></li>
+
+					
+                  </ul>
+		
+		
+		</div>
+	</div>
+
+
+	
+    <div class="clearfloat"></div>
+	<div id="main_roll">
+		<div id="main_roll_more"><a href="http://www.gzdhxy.com/html/xygk/xyfj/" target="_blank">MORE>></a></div>
+		<div id="main_roll_pic">
+			<ul>
+												<li><a href="http://www.gzdhxy.com/html/2018/xyfj_0528/126.html"  target="_blank"  ><img src="http://www.gzdhxy.com/uploadfile/2018/0528/20180528093756215.png" /></a></li>
+								<li><a href="http://www.gzdhxy.com/html/2018/xyfj_0528/2686.html"  target="_blank"  ><img src="http://www.gzdhxy.com/uploadfile/2018/0528/20180528111952153.png" /></a></li>
+								<li><a href="http://www.gzdhxy.com/html/2018/xyfj_0528/120.html"  target="_blank"  ><img src="http://www.gzdhxy.com/uploadfile/2018/0330/20180330014923286.jpeg" /></a></li>
+								<li><a href="http://www.gzdhxy.com/html/2018/xyfj_0528/2094.html"  target="_blank"  ><img src="http://www.gzdhxy.com/uploadfile/2018/0330/20180330014152329.jpeg" /></a></li>
+								<li><a href="http://www.gzdhxy.com/html/2018/xyfj_0528/2685.html"  target="_blank"  ><img src="http://www.gzdhxy.com/uploadfile/2018/0528/20180528095641873.png" /></a></li>
+								<li><a href="http://www.gzdhxy.com/html/2018/xyfj_0527/2105.html"  target="_blank"  ><img src="http://www.gzdhxy.com/uploadfile/2018/0528/20180528101357346.png" /></a></li>
+									
+			</ul>	
+		</div>
+	</div>
+</div>
+<div class="clearfloat"></div>
+
+<script language="javascript" src="http://www.gzdhxy.com/index.php?m=poster&c=index&a=show_poster&id=13"></script>
+
+<!-- WPA Button Begin -->
+<script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php?key=XzgwMDAzMDY5OF8xNTM5MjZfODAwMDMwNjk4Xw"></script>
+<!-- WPA Button End -->
+
+<div id="foot">
+    <div id="foot_content">
+		<div id="foot_content_center">
+			<div id="foot_content_center_left">
+									   						 <p>学院地址：广州市白云区太和镇穗丰水均田路363号 邮政编码：510540<br />
+招生电话：020-87470138 22693188 22693288&nbsp;&nbsp; 学院QQ：800030698<br />
+网站维护：广州东华职业学院信息中心&nbsp;&nbsp; ICP备案号：粤ICP备16042645号</p>
+      
+					   							</div>
+			<div id="foot_content_center_right"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+
+

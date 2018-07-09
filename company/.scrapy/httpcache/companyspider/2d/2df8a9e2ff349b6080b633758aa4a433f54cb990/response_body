@@ -1,0 +1,566 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>南京九龙中学</title>
+    <link href="/_skins/jlzx/style.css?636631857594602510" rel="stylesheet" type="text/css" />
+    <link href="/_skins/jlzx/Swiper/css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <script src="/_skins/jlzx/jquery.min.js" type="text/javascript"></script>
+    <script src="/_skins/jlzx/Swiper/js/swiper.min.js" type="text/javascript"></script>
+</head>
+<body>
+    
+<style type="text/css">
+    .intro-link-circle
+    {
+        word-wrap: break-word;
+        word-break: break-all;
+        height: 110px;
+        line-height: normal;
+        padding-top: 50px;
+    }
+</style>
+
+<div class="header">
+    <div class="center">
+        <div class="logo f-left">
+        </div>
+        <div class="f-right">
+            <div class="search">
+                <input id="txtKey" class="search-box" type="text" placeholder="搜索关键词..." />
+                <a id="lnkSearch" class="search-bar"></a>
+            </div>
+        </div>
+        <div class="f-right" style="color: White; text-align: left; font-size: 20px; margin-top: 10px;">
+            <div><span style="font-weight: bold;">阳光体育监督电话</span><span style="margin-left: 24px;">校&nbsp;&nbsp;&nbsp;&nbsp;长&nbsp;&nbsp;&nbsp;室 025-68138612</span></div>
+            <div>
+                <span style="font-weight: bold;">学校防欺凌监督电话</span>
+                <span>学生发展处 025-68138607</span>
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+</div>
+<div class="nav-container">
+    <div class="center">
+        <ul class="nav">
+            <li class="nav-item"><a href="/">网站首页</a></li>
+            <li class="nav-item"><a class="dropdown" href="/xxgk/">学校概况</a></li>
+            <li class="sublinks">
+                <a href="/xxgk/lsyg/">历史沿革</a>
+<a href="/xxgk/fzgh/">发展规划</a>
+<a href="/xxgk/jgsz/">机构设置</a>
+<a href="/xxgk/xxjs/">学校介绍</a>
+<a href="/xxgk/lxwm/">联系我们</a>
+<a href="/xxgk/zcwj/">政策文件</a>
+
+            </li>
+            <li class="nav-item"><a class="dropdown" href="/xxdt/">学校动态</a></li>
+            <li class="sublinks">
+                <a href="/xxdt/tsxy/">特色校园</a>
+<a href="/xxdt/xnxw/">校内新闻</a>
+<a href="/xxdt/zxbs/">在线办事</a>
+<a href="/xxdt/mzap/">每周安排</a>
+<a href="/xxdt/tzgg/">通知公告</a>
+<a href="/xxdt/xxzs/">学校招生</a>
+
+            </li>
+            <li class="nav-item"><a class="dropdown" href="http://wx.jlms.cn/">学习园地</a></li>
+            <li class="nav-item"><a class="dropdown" href="/tsxy/">智慧校园</a></li>
+            <li class="sublinks">
+                <a href="/tsxy/jsfc/">教师风采</a>
+<a href="/tsxy/jphd/">精品活动</a>
+<a href="/tsxy/xshd/">学生活动</a>
+<a href="/tsxy/zdyj/">制度研究</a>
+
+            </li>
+            <li class="nav-item"><a href="http://oa.jlms.cn/cs/forum/default.aspx" target="_blank">家校合育</a></li>
+            <li class="nav-item"><a class="dropdown" href="/jydd/">学校督导</a></li>
+            <li class="sublinks">
+                <a href="/jydd/gpdd/">挂牌督导</a>
+<a href="/jydd/dddt/">督导动态</a>
+<a href="/jydd/ddwj/">督导文件</a>
+<a href="/jydd/ddbg/">督导报告</a>
+<a href="/jydd/tpxw/">图片新闻</a>
+<a href="/jydd/yqlj/">友情链接</a>
+
+            </li>
+            <li class="nav-item"><a class="dropdown" href="/xyzq/">校园足球</a></li>
+            <li class="sublinks">
+                <a href="/xyzq/zzld/">组织领导</a>
+<a href="/xyzq/tjbz/">条件保障</a>
+<a href="/xyzq/kcjs/">课程建设</a>
+<a href="/xyzq/jshd/">竞赛活动</a>
+<a href="/xyzq/cxyx/">成效影响</a>
+<a href="/xyzq/jiaf/">加分项目</a>
+
+            </li>
+        </ul>
+        <div style="clear: both;">
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $("#lnkSearch").click(function () {
+        var keyWords = $("#txtKey").val();
+        if (keyWords == "") {
+            alert("请输入搜索关键词");
+            return;
+        }
+        document.location = "/Search.aspx?keywords=" + encodeURIComponent(keyWords);
+    });
+    var timeoutID;
+    $(function () {
+        $('.dropdown').mouseenter(function () {
+            $('.sublinks').stop(false, true).hide();
+            window.clearTimeout(timeoutID);
+            var submenu = $(this).parent().next();
+            if (!submenu.hasClass("sublinks")) {
+                return;
+            }
+            submenu.css({
+                position: 'absolute',
+                top: $(this).offset().top + $(this).height() + 'px',
+                left: $(this).offset().left + 'px',
+                zIndex: 1000
+            });
+
+            submenu.stop().slideDown(300);
+
+            submenu.mouseleave(function () {
+                $(this).slideUp(300);
+            });
+
+            submenu.mouseenter(function () {
+                window.clearTimeout(timeoutID);
+            });
+        });
+        $('.dropdown').mouseleave(function () {
+            timeoutID = window.setTimeout(function () { $('.sublinks').stop(false, true).slideUp(300); }, 250);  // slide up
+        });
+    });
+</script>
+
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url(/_skins/jlzx/images/slider/tl1.jpg)">
+        </div>
+        <div class="swiper-slide" style="background-image: url(/_skins/jlzx/images/slider/tl2.jpg)">
+        </div>
+    </div>
+    <div class="swiper-pagination swiper-pagination-white">
+    </div>
+    <div class="swiper-button-next swiper-button-white">
+    </div>
+    <div class="swiper-button-prev swiper-button-white">
+    </div>
+</div>
+<script type="text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 30,
+        effect: 'fade',
+        autoplay: 3000
+    });
+</script>
+
+<div class="main-center" style="padding: 40px 0px;">
+
+<div id="FlAD" style="position: absolute; z-index: 10; left: 100px; top: 100px">
+                <p style="color: black; float: right; font-size: 25px; cursor: pointer;" onclick="img.style.visibility = 'hidden'"></p>
+               
+                    <a href="http://www.jlms.cn/xxdt/xxzs/"><img src="/_skins/jlzx/images/zq1.jpg" style="height:68px;width:310px" alt="" width="160" border="0" /></a>
+            </div>
+    <div class="xyxw-left">
+        <div>
+            <span class="f-left xyxw-left-title">校园新闻</span> <span class="f-right">
+                <img src="/_skins/jlzx/images/gd.png" style="vertical-align: middle;" /><a href="/xxdt/xnxw/"
+                    style="vertical-align: middle; font-size: 12px;">更多</a></span>
+            <div style="clear: both;">
+            </div>
+        </div>
+        <div>
+            <div class="f-left xyxw-box" style="height:359px;">
+                <div style="height:250px;"><img src="/_data/2018/04/26/84B77A1A_473D_41E4_A80C_E3F8FB9D029C/20180426191656713_sytp.jpg" /></div>
+<div class="xyxw-left-subtitle"><a href="/xxdt/xnxw/2018-04-26-712.aspx" target="_blank">九龙中学接待四川绵阳教育代表团，分享智慧教育</a></div>
+<div class="xyxw-intro" style="width:auto;margin-right:10px;"> 2018年4月26日，四川绵阳安州地区教育管理部门领导一行17人来九龙中学参观智慧校园建设...</div>
+
+            </div>
+            <div class="f-left xyxw-box xyxw-box-margin">
+                <div class="xyxw-box-line" style="">
+<div class="f-left"><img src="/_data/2018/04/26/4C2BF478_A831_46C3_AC1D_8FC1878C9189/8888_gdtp.jpg" /></div>
+<div class="f-left xyxw-subtitle"><a href="/xxdt/xnxw/2018-04-26-702.aspx" target="_blank">九龙中学获2018年“风雅杯”全国校园陶笛艺术大赛“金笛奖”</a></div>
+<div class="f-left xyxw-intro"></div>
+<div style="clear:both;"></div>
+</div>
+<div class="xyxw-box-line" style="">
+<div class="f-left"><img src="/_data/2018/04/26/A2BF601E_315D_47A6_8AB3_E7D6CECF9A21/20180426135104905001_gdtp.png" /></div>
+<div class="f-left xyxw-subtitle"><a href="/xxdt/xnxw/2018-04-26-700.aspx" target="_blank">九龙中学名师大讲堂第二场：九龙中学诚邀洪超老师做作文讲座</a></div>
+<div class="f-left xyxw-intro">
+4月21日下午，在中考即将来临之际，九龙中学诚邀南京市教科所洪超主任为初三学生做作文专题讲座，初...</div>
+<div style="clear:both;"></div>
+</div>
+<div class="xyxw-box-line" style="border-bottom:none;">
+<div class="f-left"><img src="/_data/2018/04/26/27580276_2859_4F92_94BD_820991AE9DC6/20180425214549831_s_gdtp.jpg" /></div>
+<div class="f-left xyxw-subtitle"><a href="/xxdt/xnxw/2018-04-26-697.aspx" target="_blank">金陵中学仙林分校参访九龙智慧教育</a></div>
+<div class="f-left xyxw-intro">2018年4月25日下午，南京市金陵仙林分校一行十几人至九龙中学考察学习智慧校园建设及智慧教育开展。...</div>
+<div style="clear:both;"></div>
+</div>
+
+            </div>
+            <div class="f-left xyxw-box xyxw-box-margin">
+                <div class="xyxw-box-line" style="">
+<div class="f-left"><img src="/_data/2018/04/25/EB9B7895_367D_418A_AD9A_E048C8853A8F/20180425085146626_gdtp.jpg" /></div>
+<div class="f-left xyxw-subtitle"><a href="/xxdt/xnxw/2018-04-25-695.aspx" target="_blank">九龙中学承办第九届南京市先进教研组评比江北片现场评审活动</a></div>
+<div class="f-left xyxw-intro">思维的碰撞，智慧的凝聚
+
+                        ——九龙中学承办第九届...</div>
+<div style="clear:both;"></div>
+</div>
+<div class="xyxw-box-line" style="">
+<div class="f-left"><img src="/_data/2018/04/23/079263BC_7270_46A8_8A9D_0B8ECC72675A/20180423141033227_gdtp.jpg" /></div>
+<div class="f-left xyxw-subtitle"><a href="/xxdt/xnxw/2018-04-23-693.aspx" target="_blank">南京市九龙中学获市2018年冬锻比赛初中组壹等奖</a></div>
+<div class="f-left xyxw-intro"></div>
+<div style="clear:both;"></div>
+</div>
+<div class="xyxw-box-line" style="">
+<div class="f-left"><img src="/_data/2018/04/20/19F94F9B_CB1E_45A9_8516_B8233B4C4887/20180420180120637_gdtp.jpg" /></div>
+<div class="f-left xyxw-subtitle"><a href="/xxdt/xnxw/2018-04-20-691.aspx" target="_blank">李李老师的论文发表在《教育界》上</a></div>
+<div class="f-left xyxw-intro"></div>
+<div style="clear:both;"></div>
+</div>
+
+            </div>
+            <div style="clear: both;">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="scroll">
+    <div class="main-center">
+        <div class="scroll-title">
+            <span style="float: left;">校园掠影</span><a href="/xxdt/tsxy/" style="float: right;">更多</a>
+            <div style="clear: both;">
+            </div>
+        </div>
+        <div>
+            <div class="demo" style="overflow: hidden;">
+                <div id="indemo" style="width: 5000%; float: left;">
+                    <div id="demo1" style="float: left;">
+                        <ul>
+                            
+                                    <li class="scroll-item"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=134">
+                                        <img alt="南京市“十二五”规划课题“网络环境下丰富学生学习方式的课例群研究”结题证书" src='/_data/honor/title01_134_gdtp.jpg'></a>
+                                        <span class="scroll-item-title"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=134">
+                                            南京市“十二五”规划课题“网络环境下丰富学生学习方式的课例群研究”结题证书</a></span>
+                                    </li>
+                                
+                                    <li class="scroll-item"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=128">
+                                        <img alt="2018江北新区中小学生校园排球比赛（初中男子组）" src='/_data/honor/title01_128_gdtp.jpg'></a>
+                                        <span class="scroll-item-title"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=128">
+                                            2018江北新区中小学生校园排球比赛（初中男子组）</a></span>
+                                    </li>
+                                
+                                    <li class="scroll-item"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=127">
+                                        <img alt="2018江北新区中小学生校园排球比赛（初中女子组）" src='/_data/honor/title01_127_gdtp.jpg'></a>
+                                        <span class="scroll-item-title"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=127">
+                                            2018江北新区中小学生校园排球比赛（初中女子组）</a></span>
+                                    </li>
+                                
+                                    <li class="scroll-item"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=121">
+                                        <img alt="2018年“风雅杯”全国校园陶笛艺术大赛“金笛奖”" src='/_data/honor/title01_121_gdtp.jpg'></a>
+                                        <span class="scroll-item-title"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=121">
+                                            2018年“风雅杯”全国校园陶笛艺术大赛“金笛奖”</a></span>
+                                    </li>
+                                
+                                    <li class="scroll-item"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=109">
+                                        <img alt="市2018年冬锻体育道德风尚奖" src='/_data/honor/title01_109_gdtp.jpg'></a>
+                                        <span class="scroll-item-title"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=109">
+                                            市2018年冬锻体育道德风尚奖</a></span>
+                                    </li>
+                                
+                                    <li class="scroll-item"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=108">
+                                        <img alt="市2018年冬锻壹等奖" src='/_data/honor/title01_108_gdtp.jpg'></a>
+                                        <span class="scroll-item-title"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=108">
+                                            市2018年冬锻壹等奖</a></span>
+                                    </li>
+                                
+                                    <li class="scroll-item"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=99">
+                                        <img alt="区前瞻性项目结题" src='/_data/2018/02/02/A433F458_DEED_4B36_8074_9676DF334CFE/1_gdtp.jpg'></a>
+                                        <span class="scroll-item-title"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=99">
+                                            区前瞻性项目结题</a></span>
+                                    </li>
+                                
+                                    <li class="scroll-item"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=80">
+                                        <img alt="“网络与数字化环境下的教学实验项目”先进集体" src='/_data/2018/01/19/4F65F3CD_B4C3_439A_BD0F_A3A1463E6D5F/2_gdtp.jpg'></a>
+                                        <span class="scroll-item-title"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=80">
+                                            “网络与数字化环境下的教学实验项目”先进集体</a></span>
+                                    </li>
+                                
+                                    <li class="scroll-item"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=79">
+                                        <img alt="南京市智慧校园示范校" src='/_data/2018/01/18/C14D8E41_CFAE_40BA_A7F4_37CDD49FAB76/3_gdtp.jpg'></a>
+                                        <span class="scroll-item-title"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=79">
+                                            南京市智慧校园示范校</a></span>
+                                    </li>
+                                
+                                    <li class="scroll-item"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=49">
+                                        <img alt="2017年南京市“市长杯”校园足球联赛初中女子组" src='/_data/2017/12/29/77E857C4_15FF_45D3_8AE5_5322081B793C/title01_49_gdtp.jpg'></a>
+                                        <span class="scroll-item-title"><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=49">
+                                            2017年南京市“市长杯”校园足球联赛初中女子组</a></span>
+                                    </li>
+                                
+                        </ul>
+                    </div>
+                    <div id="demo2" style="float: left;">
+                    </div>
+                </div>
+                <div style="clear: both;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-center" style="padding-top: 40px;">
+    <div class="news-box f-left">
+        <div class="news-box-header">
+            <span class="news-title f-left">一周安排</span> <span class="f-right" style="margin-top: 5px;">
+                <img src="/_skins/jlzx/images/gd.png" style="vertical-align: middle;" /><a href="/xxdt/mzap/"
+                    style="vertical-align: middle; font-size: 12px;">更多</a></span>
+            <div style="clear: both;">
+            </div>
+        </div>
+        <ul>
+            <li><span class="point f-left"></span><a href="/xxdt/mzap/2018-05-25-794.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">2017-2018学年第二...</span></a><span class="f-right">2018-05-25</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/mzap/2018-05-18-778.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">2017-2018学年第二...</span></a><span class="f-right">2018-05-18</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/mzap/2018-05-18-777.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">2017-2018学年第二...</span></a><span class="f-right">2018-05-18</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/mzap/2018-05-18-776.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">2017-2018学年第二...</span></a><span class="f-right">2018-05-18</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/mzap/2018-05-11-761.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">2017-2018学年第二...</span></a><span class="f-right">2018-05-11</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/mzap/2018-05-11-760.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">2017-2018学年第二...</span></a><span class="f-right">2018-05-11</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/mzap/2018-05-04-725.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">2017-2018学年第二...</span></a><span class="f-right">2018-05-04</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/mzap/2018-04-27-714.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">2017-2018学年第二...</span></a><span class="f-right">2018-04-27</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/mzap/2018-04-13-661.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">2017-2018学年第二...</span></a><span class="f-right">2018-04-13</span><div style="clear:both;"></div></li>
+
+        </ul>
+    </div>
+    <div class="news-box f-left" style="margin-left: 40px;">
+        <div class="news-box-header">
+            <span class="news-title f-left">通知公告</span> <span class="f-right" style="margin-top: 5px;">
+                <img src="/_skins/jlzx/images/gd.png" style="vertical-align: middle;" /><a href="/xxdt/tzgg/"
+                    style="vertical-align: middle; font-size: 12px;">更多</a></span>
+            <div style="clear: both;">
+            </div>
+        </div>
+        <ul>
+            <li><span class="point f-left"></span><a href="/xxdt/tzgg/2018-05-25-793.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">九龙中学2018年足球特长...</span></a><span class="f-right">2018-05-25</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/tzgg/2018-05-24-790.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">南京市第五初级中学教育信息...</span></a><span class="f-right">2018-05-24</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/tzgg/2018-05-22-785.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">关于填报教师志愿者联盟相关...</span></a><span class="f-right">2018-05-22</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/tzgg/2018-05-21-783.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">九龙中学2018年足球特长...</span></a><span class="f-right">2018-05-21</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/tzgg/2018-05-20-779.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">关于公开遴选教育系统校级后...</span></a><span class="f-right">2018-05-20</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/tzgg/2018-05-18-773.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">科研信息中心第十三周主要工...</span></a><span class="f-right">2018-05-18</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/tzgg/2018-05-11-762.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">关于举办2018年南京市中...</span></a><span class="f-right">2018-05-11</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/tzgg/2018-05-11-759.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">科研信息中心第十二周主要工...</span></a><span class="f-right">2018-05-11</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/xxdt/tzgg/2018-05-07-737.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">南京市九龙中学2018级初...</span></a><span class="f-right">2018-05-07</span><div style="clear:both;"></div></li>
+
+        </ul>
+    </div>
+    <div class="news-box f-left" style="margin-left: 40px;">
+        <div class="news-box-header">
+            <span class="news-title f-left">智慧校园</span> <span class="f-right" style="margin-top: 5px;">
+                <img src="/_skins/jlzx/images/gd.png" style="vertical-align: middle;" /><a href="/tsxy/"
+                    style="vertical-align: middle; font-size: 12px;">更多</a></span>
+            <div style="clear: both;">
+            </div>
+        </div>
+        <ul>
+            <li><span class="point f-left"></span><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=133" target="_blank"><span class="f-left" style="margin-left:15px;">2016级2班 - 区先进...</span></a><span class="f-right">2018-05-07</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=132" target="_blank"><span class="f-left" style="margin-left:15px;">李知熏 - 区优秀团员</span></a><span class="f-right">2018-05-07</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=131" target="_blank"><span class="f-left" style="margin-left:15px;">张燕 - 区优秀团干部</span></a><span class="f-right">2018-05-07</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=130" target="_blank"><span class="f-left" style="margin-left:15px;">安刚长 - 区“青年岗位能...</span></a><span class="f-right">2018-05-07</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=129" target="_blank"><span class="f-left" style="margin-left:15px;">马骊 - 2018年南京市...</span></a><span class="f-right">2018-05-07</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="/tsxy/xshd/2018-05-07-728.aspx" target="_blank"><span class="f-left" style="margin-left:15px;">九龙中学机器人团队勇夺20...</span></a><span class="f-right">2018-05-07</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=126" target="_blank"><span class="f-left" style="margin-left:15px;">贺家麟 - 市23届“国际...</span></a><span class="f-right">2018-05-03</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=125" target="_blank"><span class="f-left" style="margin-left:15px;">吴彤 - 市23届“国际科...</span></a><span class="f-right">2018-05-03</span><div style="clear:both;"></div></li>
+<li><span class="point f-left"></span><a href="http://www.jlms.cn/OA/enesp/honor/desktop/honor_view.aspx?id=124" target="_blank"><span class="f-left" style="margin-left:15px;">范晶瑾 - 省29届“国际...</span></a><span class="f-right">2018-05-03</span><div style="clear:both;"></div></li>
+
+        </ul>
+    </div>
+    <div style="clear: both;">
+    </div>
+</div>
+<script type="text/javascript">
+    $(".demo").each(function () {
+        var speed = 50;
+        var tab = $(this)[0];
+        var tab1 = $(this).find("#demo1")[0];
+        var tab2 = $(this).find("#demo2")[0];
+        tab.scrollLeft = 1;
+        tab2.innerHTML = tab1.innerHTML;
+        function Marquee() {
+            if (tab2.offsetWidth - tab.scrollLeft <= 0)
+                tab.scrollLeft -= tab1.offsetWidth
+            else {
+                tab.scrollLeft = tab.scrollLeft + 1;
+            }
+        }
+        var MyMar = setInterval(Marquee, speed);
+        tab.onmouseover = function () { clearInterval(MyMar) };
+        tab.onmouseout = function () { MyMar = setInterval(Marquee, speed) };
+    });  
+</script>
+<div class="intro">
+    <div class="main-center">
+        <div>
+            <a class="intro-link-circle intro-link-lfjt" href="http://wx.jlms.cn" target="_blank">
+                智慧校园<br />
+                平台</a> <a class="intro-link-circle intro-link-oa" href="http://www.njedu.gov.cn/" target="_blank">
+                    南京市<br />
+                    教育局</a> <a class="intro-link-circle intro-link-forum" href="http://www.njnaedu.cn/"
+                        target="_blank">新区教育<br />
+                        信息网</a> <a class="intro-link-circle intro-link-email" href="http://www.ncipedu.gov.cn/Default.aspx?tabid=708">
+                            新区教师<br />
+                            发展中心</a> <a class="intro-link-circle intro-link-dudao" href="http://web.jiangsuedu.net/educloud2/ucenter/user/toLogin "
+                                target="_blank">江苏和<br />
+                                教育</a> <a class="intro-link-circle intro-link-duxue intro-link-circle-last" href="http://192.168.0.8"
+                                    target="_blank">内网<br />
+                                    视频点播</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function openLink(target) {
+        var url = $(target).val();
+        if (url != "") {
+            var deviceAgent = navigator.userAgent;
+            var ios = deviceAgent.toLowerCase().match(/(iphone|ipod|ipad)/);
+            if (ios) {
+                document.location = url;
+            }
+            else {
+                window.open(url);
+            }
+        }
+    }
+</script>
+<div class="footer-link form-inline">
+    <div class="main-center">
+        <select onchange="openLink(this)" class="form-control" style="margin-right: 40px;">
+            <option value="0" disabled="disabled" selected="selected">友情链接</option>
+            <option value="http://jyj.changzhou.gov.cn/">常州教育局</option>
+            <option value="http://www.szjyj.gov.cn/">苏州市教育局</option>
+            <option value="http://jyj.zhenjiang.gov.cn/">镇江教育</option>
+            <option value="http://jyj.yangzhou.gov.cn/">扬州市教育局</option>
+            <option value="http://jyj.nantong.gov.cn/">南通市教育局</option>
+        </select>
+        <select onchange="openLink(this)" class="form-control" style="margin-right: 40px;">
+            <option value="0" disabled="disabled" selected="selected">专题网站</option>
+            <option value="http://wmdw.wmnj.gov.cn/">南京市文明单位在线</option>
+            <option value="http://wmdw.jswmw.com/wmdw.asp">江苏文明在线单位</option>
+        </select>
+        <select onchange="openLink(this)" class="form-control" style="margin-right: 40px;">
+            <option value="0" disabled="disabled" selected="selected">教育网站</option>
+            <option value="http://jydd.nje.cn/">南京教育督导网</option>
+            <option value="http://www.moe.gov.cn/">教育部网站</option>
+        </select>
+        <select onchange="openLink(this)" class="form-control">
+            <option value="0" disabled="disabled" selected="selected">资源网站</option>
+            <option value="http://nj.jse.edu.cn/">南京市基础教育公共服务平台</option>
+            <option value="http://psp.nje.cn/acommonapp/chome/mindex.do">南京智慧教育云服务平台</option>
+            <option value="http://cnki.nje.cn/Default.aspx">教育期刊库</option>
+            <option value="http://ipub.exuezhe.com/index.html">人大复印资料</option>
+        </select>
+    </div>
+</div>
+<div class="footer">
+    <div class="main-center">
+        <div class="footer-top">
+            <div class="statistics">
+                <span>总访问量：59845人次</span> <span>总浏览量：813153人次</span> <span>今日访问：155人次</span>
+            </div>
+        </div>
+        <div class="footer-right">
+            版权归南京九龙中学所有 电话：025-57053873 <a href="http://www.miitbeian.gov.cn/" target="_blank">工信部备案号：苏ICP备05084665号</a> <a href="http://oa.jlms.cn/">怀旧版</a>
+            <a href="/admin/">后台管理</a> 技术支持：联澳科技
+        </div>
+        <div class="footer-img">
+            <a href="//bszs.conac.cn/sitename?method=show&amp;id=25BD1CE1B8846FB0E053012819AC1741"
+                target="_blank">
+                <img id="imgConac" vspace="0" hspace="0" border="0" src="//dcs.conac.cn/image/blue_error.png"
+                    data-bd-imgshare-binded="1"></a>
+        </div>
+        <div style="text-align: center;">
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011202000030"
+                style="color: White;">
+                <img src="http://www.beian.gov.cn/img/beianbgs.png" style="width: 16px; height: 16px;" />苏公网安备
+                32011202000030号</a>
+        </div>
+    </div>
+</div>
+
+
+ <script type="text/javascript">
+     var img = document.getElementById('FlAD');
+     var xPos = 200;
+     var yPos = 200;
+     var step = 1;
+     var delay = 40;
+     var height = 0;
+     var Hoffset = 0;
+     var Woffset = 0;
+     var yon = 0;
+     var xon = 0;
+     var pause = true;
+     var interval;
+     img.style.top = yPos;
+     function changePos() {
+         width = document.documentElement.clientWidth || document.body.clientWidth;
+         height = document.documentElement.clientHeight || document.body.clientHeight;
+         scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft;
+         scrollTop = document.documentElement.scrollLeft || document.body.scrollTop;
+         Hoffset = img.offsetHeight;
+         Woffset = img.offsetWidth;
+         img.style.left = xPos + scrollLeft + 'px';
+         img.style.top = yPos + scrollTop + 'px';
+         if (yon) {
+             yPos = yPos + step;
+         } else {
+             yPos = yPos - step;
+         }
+         if (yPos < 0) {
+             yon = 1;
+             yPos = 0;
+         }
+         if (yPos >= (height - Hoffset)) {
+             yon = 0;
+             yPos = (height - Hoffset);
+         }
+         if (xon) {
+             xPos = xPos + step;
+         } else {
+             xPos = xPos - step;
+         }
+         if (xPos < 0) {
+             xon = 1;
+             xPos = 0;
+         }
+         if (xPos >= (width - Woffset)) {
+             xon = 0;
+             xPos = (width - Woffset);
+         }
+     }
+     function start() {
+         img.visibility = "visible";
+         interval = setInterval('changePos()', delay);
+     }
+     start();
+    </script>
+
+</body>
+</html>

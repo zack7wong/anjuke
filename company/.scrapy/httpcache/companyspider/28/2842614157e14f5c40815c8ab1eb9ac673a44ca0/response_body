@@ -1,0 +1,883 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="象贤中学" name="Keywords" />
+<meta content="广州市番禺区象贤中学" name="Description"/>
+<title>欢迎光临广州市番禺区象贤中学</title>
+<link href="/Skin/Education/index.css" rel="stylesheet" type="text/css" />
+
+<script language="javascript" type="text/javascript" src="/js/common.js"></script>
+<!--以下是公告滚动相关JS-->
+<script  type="text/javascript" src='/IAA/200907/3.js'></script>
+<script  type="text/javascript" src='/IAA/201110/6.js'></script>
+<script  type="text/javascript" src='/IAA/201110/5.js'></script>
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+function startmarquee(lh,speed,delay) {
+var p=false;
+var t;
+var o=document.getElementById("marqueebox");
+o.innerHTML+=o.innerHTML;
+o.style.marginTop=0;
+o.onmouseover=function(){p=true;}
+o.onmouseout=function(){p=false;}
+function start(){
+t=setInterval(scrolling,speed);
+if(!p) o.style.marginTop=parseInt(o.style.marginTop)-1+"px";
+}
+function scrolling(){
+if(parseInt(o.style.marginTop)%lh!=0){
+o.style.marginTop=parseInt(o.style.marginTop)-1+"px";
+if(Math.abs(parseInt(o.style.marginTop))>=o.scrollHeight/2) o.style.marginTop=0;
+}else{
+clearInterval(t);
+setTimeout(start,delay);
+}
+}
+setTimeout(start,delay);
+}
+
+//]]>
+</script>
+
+</head>
+<body>
+
+
+<div class="wrap">
+
+<!--头部定义开始-->
+<div id="header" class="main">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="872" height="250" id="FlashID" title="象贤中学">
+  <param name="movie" value="/Skin/Education/flash/top.swf" />
+  <param name="quality" value="high" />
+  <param name="wmode" value="opaque" />
+  <param name="swfversion" value="6.0.65.0" />
+  <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+  <param name="expressinstall" value="Scripts/expressInstall.swf" />
+  <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+  <!--[if !IE]>-->
+  <object type="application/x-shockwave-flash" data="/Skin/Education/flash/top.swf" width="872" height="250">
+    <!--<![endif]-->
+    <param name="quality" value="high" />
+    <param name="wmode" value="opaque" />
+    <param name="swfversion" value="6.0.65.0" />
+    <param name="expressinstall" value="Scripts/expressInstall.swf" />
+    <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+    <div>
+      <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+    </div>
+    <!--[if !IE]>-->
+  </object>
+  <!--<![endif]-->
+</object>
+<ul id="globalNav">
+<li id="topTabOn"><a href="/Default.aspx" target="_self"><span>网站首页</span></a></li>
+<li><a href="/Category_13/Index.aspx" target="_self"><span>学校概况</span></a></li>
+<li><a href="/Category_9/Index.aspx" target="_self"><span>校园新闻</span></a></li>
+<li><a href="/Category_33/Index.aspx" target="_self"><span>办事指南</span></a></li>
+<li><a href="/Category_19/Index.aspx" target="_self"><span>教学科研</span></a></li>
+<li><a href="/Category_37/Index.aspx" target="_self"><span>年级管理</span></a></li>
+<li><a href="/Category_52/Index.aspx" target="_self"><span>德育天地</span></a></li>
+<li><a href="/Category_42/Index.aspx" target="_self"><span>桃李芬芳</span></a></li>
+<li><a href="/Category_51/Index.aspx" target="_self"><span>科组风采</span></a></li>
+<li><a href="/Category_27/Index.aspx" target="_self"><span>党团建设</span></a></li>
+<li><a href="/Category_311/Index.aspx" target="_self"><span>校务公开</span></a></li>
+<li><a href="http://www.gzxxjy.org.cn/Blog" target="_blank"><span>象贤博客</span></a></li>
+</ul>
+</div>
+<!--头部定义结束-->
+
+
+<!--中部内容定义开始-->
+<div class="main">
+<!--右侧内容定义-->
+
+<div class="mainContent">
+<div class="boxTop"></div>
+<div class="r_navigation"><span class="nodeName">荣誉宝盒</span><div  id="marqueebox"></div></div>
+<script>startmarquee(30,60,2000)</script>
+<div class="c_spacing"></div>
+<div id="column1">
+<div id="flashNews">
+        <style type="text/css">
+.texttitle { color: #C10001; }
+.texttitle a:link { color: #C10001; text-decoration: none; }
+.texttitle a:visited { color: #C10001; text-decoration: none; }
+.texttitle a:hover { color: #C10001; text-decoration: underline; }
+.texttitle a:active { color: #C10001; text-decoration: none; }
+#imgTitle { filter: Alpha(opacity=70); left: 0px; overflow: hidden; position: relative; text-align: left; }
+#imgTitle_up { left: 0px; height: 1px; text-align: left; }
+#imgTitle_down { left: 0px; text-align: right; }
+.imgClass { border-right: #fff 1px solid; border-top: #fff 1px solid; border-left: #fff 1px solid; border-bottom: #fff 1px solid; }
+#txtFrom { vertical-align: middle; padding-top: 2px; text-align: center; }
+.button { padding-right: 7px; padding-left: 7px; background: #7b7b63; padding-bottom: 2px; margin: 0px; font: bold 9px sans-serif; border-left: #fff 1px solid; padding-top: 2px; text-decoration: none; }
+a.button { color: #ffffff; font-family: sans-serif; background-color: #000000; text-decoration: none; }
+a.button:link { color: #ffffff; font-family: sans-serif; background-color: #000000; text-decoration: none; }
+a.button:visited { color: #ffffff; font-family: sans-serif; background-color: #000000; text-decoration: none; }
+a.button:hover { background: #fff; color: #fff; font-family: sans-serif; text-decoration: none; }
+.buttonDiv { background: #000000; float: left; vertical-align: middle; width: 21px; height: 1px; text-align: center; }
+.trans { filter: progid:DXImageTransform.Microsoft.Alpha(startX=0, startY=0, finishX=100, finishY=100,style=1,opacity=0,finishOpacity=40); width: 90px; background-color: #000; }
+</style><script type="text/javascript">
+var imgWidth = 250;
+var imgHeight = 180;
+var textFromHeight = 21;
+var textStyle = "texttitle";
+var textLinkStyle = "texttitle";
+var buttonLineOn = "#f60";
+var buttonLineOff = "#000";
+var TimeOut = 5000;
+var imgUrl = new Array();
+var imgLink = new Array();
+var imgtext = new Array();
+var imgAlt = new Array();
+var adNum = 0;
+document.write('<style type="text/css">');
+document.write('#focuseFrom{width:' + (imgWidth + 2) + ';margin: 0px; padding:0px;height:' + (imgHeight + textFromHeight) + 'px; overflow:hidden;}');
+document.write('#txtFrom{height:' + textFromHeight + 'px;line-height:' + textFromHeight + 'px;width:' + imgWidth + 'px;overflow:hidden;}');
+document.write('#imgTitle{width:' + imgWidth + ';top:-' + (textFromHeight + 14) + 'px;height:18px}');
+document.write('</style>');
+document.write('<div id="focuseFrom">');
+
+imgUrl[1] = '/UploadFiles/event/2018/4/2018423174622_S.png';
+imgtext[1] = '<a href="/Item/1210.aspx" target="_blank" class="linkblack">自强不息耀象贤 化育才俊臻卓绝</a>';
+imgLink[1] = '/Item/1210.aspx';
+imgAlt[1] = '自强不息耀象贤 化育才俊臻卓绝';
+
+imgUrl[2] = '/UploadFiles/event/2017/12/20171227173631_S.jpg';
+imgtext[2] = '<a href="/Item/1201.aspx" target="_blank" class="linkblack">培养基干力量　筑牢消防安全防…</a>';
+imgLink[2] = '/Item/1201.aspx';
+imgAlt[2] = '培养基干力量　筑牢消防安全防火墙';
+
+imgUrl[3] = '/UploadFiles/event/2017/12/2017121410614_S.jpg';
+imgtext[3] = '<a href="/Item/1198.aspx" target="_blank" class="linkblack">学习十九大，结伴勇向前—— …</a>';
+imgLink[3] = '/Item/1198.aspx';
+imgAlt[3] = '学习十九大，结伴勇向前—— 民盟象贤支部学习十九大座谈会';
+
+imgUrl[4] = '/UploadFiles/event/2017/12/2017121310714_S.jpg';
+imgtext[4] = '<a href="/Item/1197.aspx" target="_blank" class="linkblack">听她讲故事《一碗粥中的香浓家…</a>';
+imgLink[4] = '/Item/1197.aspx';
+imgAlt[4] = '听她讲故事《一碗粥中的香浓家风》';
+
+imgUrl[5] = '/UploadFiles/event/2017/9/201794154135_S.jpg';
+imgtext[5] = '<a href="/Item/1174.aspx" target="_blank" class="linkblack">奖学激励象贤学子，大爱抒写何…</a>';
+imgLink[5] = '/Item/1174.aspx';
+imgAlt[5] = '奖学激励象贤学子，大爱抒写何氏乡情 ——象贤中学举行2017年“何氏三姐妹奖学金”颁奖典礼';
+
+
+function changeimg(n){
+    adNum = n;
+    window.clearInterval(theTimer);
+    adNum = adNum - 1;
+    nextAd();
+}
+
+function goUrl(){
+    window.open(imgLink[adNum], '_blank');
+}
+
+if (navigator.appName == "Netscape") {
+    document.write('<style type="text/css">');
+    document.write('.buttonDiv{height:4px;width:21px;}');
+    document.write('</style>');
+    function nextAd(){
+        if (adNum < (imgUrl.length - 1)) 
+            adNum++;
+        else 
+            adNum = 1;
+        theTimer = setTimeout("nextAd()", TimeOut);
+        document.images.imgInit.src = imgUrl[adNum];
+        document.images.imgInit.alt = imgAlt[adNum];
+        $('focustext').innerHTML = imgtext[adNum];
+        $('imgLink').href = imgLink[adNum];
+    }
+    document.write('<a id="imgLink" href="' + imgLink[1] + '" target=_blank class="p1"><img src="' + imgUrl[1] + '" name="imgInit" width=' + imgWidth + ' height=' + imgHeight + ' border=1 alt="' + imgAlt[1] + '" class="imgClass"></a><div id="txtFrom"><span id="focustext" class="' + textStyle + '">' + imgtext[1] + '</span></div>')
+    document.write('<div id="imgTitle">');
+    document.write('<div id="imgTitle_down">');
+    for (var i = 1; i < imgUrl.length; i++) {
+        document.write('<a href="javascript:changeimg(' + i + ')" class="button" style="cursor:hand" title="' + imgAlt[i] + '">' + i + '</a>');
+    }
+
+    document.write('</div>');
+    document.write('</div>');
+    document.write('</div>');
+    nextAd();
+}
+
+else {
+    var count = 0;
+    for (i = 1; i < imgUrl.length; i++) {
+        if ((imgUrl[i] != "") && (imgLink[i] != "") && (imgtext[i] != "") && (imgAlt[i] != "")) {
+            count++;
+        }
+        else {
+            break;
+        }
+    }
+    function playTran(){
+        if (document.all) 
+            imgInit.filters.revealTrans.play();
+    }
+    var key = 0;
+    function nextAd(){
+        if (adNum < count) 
+            adNum++;
+        else 
+            adNum = 1;
+        if (key == 0) {
+            key = 1;
+        }
+        else 
+            if (document.all) {
+                imgInit.filters.revealTrans.Transition = 23;
+                imgInit.filters.revealTrans.apply();
+                playTran();
+            }
+        document.images.imgInit.src = imgUrl[adNum];
+        document.images.imgInit.alt = imgAlt[adNum];
+        $('link' + adNum).style.background = buttonLineOn;
+        for (var i = 1; i <= count; i++) {
+            if (i != adNum) {
+                $('link' + i).style.background = buttonLineOff;
+            }
+        }
+        focustext.innerHTML = imgtext[adNum];
+        theTimer = setTimeout("nextAd()", TimeOut);
+    }
+    document.write('<a target=_self href="javascript:goUrl()"><img style="FILTER: revealTrans(duration=1,transition=5);" src="javascript:nextAd()" width=' + imgWidth + ' height=' + imgHeight + ' border=0 vspace="0" name=imgInit class="imgClass"></a><br>');
+    document.write('<div id="txtFrom"><span id="focustext" class="' + textStyle + '"></span></div>');
+    document.write('<div id="imgTitle">');
+    document.write('<div id="imgTitle_down"> <a class="trans"></a>');
+    for (var i = 1; i < imgUrl.length; i++) {
+        document.write('<a id="link' + i + '"  href="javascript:changeimg(' + i + ')" class="button" style="cursor:hand" title="' + imgAlt[i] + '" onFocus="this.blur()">' + i + '</a>');
+    }
+    document.write('</div>');
+    document.write('</div>');
+    document.write('</div>');
+}
+</script>
+      
+</div>
+
+<div class="newsList tzgg">
+<ul class="listStyle1 listStyle2">
+            <li><a href="/Item/1103.aspx" target="">展象贤风采，扬象贤神威</a></li><li><a href="/Item/986.aspx" target="">祝贺钟秋琴老师在第十七届全国教育教学信息化大奖赛获一等奖</a></li><li><a href="/Item/860.aspx" target="">热烈祝贺我校获得2012届广州市普通高中工作一等奖</a></li><li><a href="/Item/802.aspx" target="">祝贺我校八个科组在区第九届中学优秀学科教研组评比获得一等奖</a></li><li><a href="/Item/787.aspx" target="">祝贺林佳媚、梁韵诗在第27届广东省青少年科技创新大赛获二等奖</a></li><li><a href="/Item/761.aspx" target="">我校足球队在2012中国中学生足球协会杯高中足球比赛获第三名</a></li><li><a href="/Item/760.aspx" target="">我校学生在2012年第六届ABC全国青少年英语口语大赛获得佳绩</a></li><li><a href="/Item/759.aspx" target="">我校高二学生在2011年广州市高中化学竞赛中勇获佳绩</a></li>
+          </ul>
+</div>
+<div class="clearbox"></div>
+</div>
+<div class="c_spacing"></div>
+
+<div id="schoolIntro" class="steelBlue">
+<dl>
+<dt><a href="/Category_9/index.aspx" title="通知公告"><em>通知公告</em></a></dt>
+<dd class="tzgg">
+
+            <li><a href="/Item/1214.aspx" target=""><font style="&#xD;&#xA;                            color:#FF3300;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">象贤欢迎你</font></a></li><li><a href="/Item/1210.aspx" target=""><font style="&#xD;&#xA;                            color:#FF0000;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">自强不息耀象贤 化育才俊臻卓绝</font></a></li><li><a href="/Item/1209.aspx" target=""><font style="&#xD;&#xA;                            color:#FF3300;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">纵观时事新闻、感知人文天下</font></a></li><li><a href="/Item/1201.aspx" target=""><font style="&#xD;&#xA;                            color:#FF3300;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">培养基干力量　筑牢消防安全防火墙</font></a></li><li><a href="/Item/1198.aspx" target=""><font style="&#xD;&#xA;                            color:#FF3300;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">学习十九大，结伴勇向前—— 民盟象贤支部学习十九大座谈会</font></a></li><li><a href="/Item/1197.aspx" target=""><font style="&#xD;&#xA;                            color:#FF6600;&#xD;&#xA;                          ">听她讲故事《一碗粥中的香浓家风》</font></a></li><li><a href="/Item/1193.aspx" target=""><font style="&#xD;&#xA;                            color:#FF3300;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">广东省教育厅 广东省招生委员会关于2018年深入推进普通高等学校考试招生改革的通知</font></a></li><li><a href="/Item/1174.aspx" target=""><font style="&#xD;&#xA;                            color:#FF3300;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">奖学激励象贤学子，大爱抒写何氏乡情 ——象贤中学举行2017年“何氏三姐妹奖学金”颁奖典礼</font></a></li>
+          </ul>
+<div class="clearbox"></div>
+</dd>
+</dl>
+</div>
+<div class="c_spacing"></div>
+
+<!--教学科研-->
+<div id="instructionalResearch" class="mediumTurquoise">
+<dl>
+<dt><em><a href="/Category_19/index.aspx" title="教学科研">教学科研</a></em><ul class="colChildNav"><li><a href="/Category_26/Index.aspx">文件通知</a></li>
+<li><a href="/Category_137/Index.aspx">成绩分析</a></li>
+<li><a href="/Category_22/Index.aspx">课题论文</a></li>
+<li><a href="/Category_20/Index.aspx">课程建设</a></li>
+<li><a href="/Category_21/Index.aspx">教改专栏</a></li>
+<li><a href="/Category_24/Index.aspx">教研通讯</a></li>
+<li><a href="/Category_38/Index.aspx">名师工程</a></li></ul></dt>
+<dd>
+<div class="col2">
+<ul class="thumbListStlye3">
+            <li>
+  <div class="pe_u_thumb"><a href="/Item/1125.aspx" target="_blank"><img src="/UploadFiles/upload/20172794259_S.jpg" alt="春天里的温馨话语 -----广州市名班主任何爱莲老师新学期的讲话" width="80" height="50" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/1125.aspx" target="_blank">春天里的温馨话语 -----广州市…</a><br> 尊敬的老师们、亲爱的师弟师妹们
+（因我也是象贤…</div>
+</li>
+          </ul>
+
+<ul class="listStyle1">
+            <li><a href="/Item/1127.aspx" target=""><font style="&#xD;&#xA;                            color:#FF0000;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">迎接新挑战  实现新突破</font></a>
+                  [02-07]
+                </li><li><a href="/Item/1125.aspx" target=""><font style="&#xD;&#xA;                            color:#FF9900;&#xD;&#xA;                          ">春天里的温馨话语 -----广州市名班主…</font></a>
+                  [02-07]
+                </li><li><a href="/Item/1112.aspx" target="">有关“两学一做”学习教育</a>
+                  [10-11]
+                </li><li><a href="/Item/1107.aspx" target=""><font style="&#xD;&#xA;                            color:#2B91D5;&#xD;&#xA;                          ">《一个灵魂唤醒一个灵魂》象贤中学办…</font></a>
+                  [10-09]
+                </li><li><a href="/Item/1099.aspx" target="">象贤中学李伟老师</a>
+                  [05-27]
+                </li><li><a href="/Item/1098.aspx" target="">象贤中学王芳老师</a>
+                  [05-27]
+                </li><li><a href="/Item/1095.aspx" target="">广州市优秀教师何爱莲教师简介</a>
+                  [05-23]
+                </li><li><a href="/Item/1091.aspx" target="">广州市番禺区教育局关于开展番禺区第…</a>
+                  [05-03]
+                </li>
+          
+<div class="clearbox"></div>
+</ul>
+</div>
+<div class="col2">
+<ul class="thumbListStlye1">
+            <li>
+  <div class="pe_u_thumb"><a href="/Item/1101.aspx" target="_blank"><img src="/UploadFiles/event/2016/6/20166283628.jpg" alt="展象贤风采，扬象贤神威" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/1101.aspx" target="_blank">展象贤风采，扬象贤神威</a><br>             2016年5月28日，第十三届广东省中小学…</div>
+</li>
+          
+</ul>
+<div class="c_spacing"></div>
+<ul class="listStyle1">
+            <li><a href="/Item/1101.aspx" target="">展象贤风采，扬象贤神威</a>
+                  [06-02]
+                </li><li><a href="/Item/1096.aspx" target="">广州市优秀教师何爱莲教师简介</a>
+                  [05-23]
+                </li><li><a href="/Item/1014.aspx" target="">2014年番禺区初中男子足球技能比赛竞…</a>
+                  [04-04]
+                </li><li><a href="/Item/789.aspx" target="">热烈祝贺我校学子在2011学年度青少年…</a>
+                  [04-17]
+                </li><li><a href="/Item/676.aspx" target="">2010学年第一学期语文科组工作计划</a>
+                  [05-13]
+                </li><li><a href="/Item/675.aspx" target="">2010学年第一学期政治科组工作计划</a>
+                  [05-13]
+                </li><li><a href="/Item/480.aspx" target="">热烈祝贺谢燕云老师荣获区中小学阅读…</a>
+                  [11-03]
+                </li><li><a href="/Item/479.aspx" target="">祝贺我校综合实践活动科送全国第八届…</a>
+                  [11-03]
+                </li>
+          </ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="c_spacing"></div>
+<!--德育天地板块-->
+<div id="moralEduSpace" class="lightGreen">
+<dl>
+<dt><em><a href="/Category_52/index.aspx" title="德育天地">德育天地</a></em><ul class="colChildNav"><li><a href="/Category_53/Index.aspx">象贤之声</a></li>
+<li><a href="/Category_57/Index.aspx">贤文化专题</a></li>
+<li><a href="/Category_55/Index.aspx">文化艺术节</a></li>
+<li><a href="/Category_56/Index.aspx">团委工作</a></li>
+<li><a class="fly" href="/Category_60/Index.aspx">资源收集</a></li>
+<li><a href="/Category_54/Index.aspx">国旗下讲话</a></li>
+<li><a href="/Category_58/Index.aspx">校园故事</a></li>
+<li><a href="/Category_59/Index.aspx">反邪促和</a></li></ul></dt>
+<dd>
+<ul class="thumbListStlye1">
+
+            <li>
+  <div class="pe_u_thumb"><a href="/Item/1175.aspx" target="_blank"><img src="/UploadFiles/schoolLife/2017/9/2017911152014_S.jpg" alt="师恩" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/1175.aspx" target="_blank">师恩</a><br> 
+ 
+尊敬的各位领导、老师，亲爱的同学们：
+ 
+…</div>
+</li>
+<li>
+  <div class="pe_u_thumb"><a href="/Item/1159.aspx" target="_blank"><img src="/UploadFiles/schoolLife/2017/6/2017629175156_S.png" alt="高举团旗跟党走 风华正茂创辉煌" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/1159.aspx" target="_blank">高举团旗跟党走 风华正茂创辉煌</a><br>高举团旗跟党走 风华正茂创辉煌
+ 
+              …</div>
+</li>
+          
+</ul>
+<ul class="listStyle1">
+            <li><a href="/Item/1208.aspx" target=""><font style="&#xD;&#xA;                            color:#FF3300;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">纵观时事新闻、感知人文天下</font></a>
+                  [04-23]
+                </li><li><a href="/Item/1207.aspx" target=""><font style="&#xD;&#xA;                            color:#FF6600;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">读经典名著 树文化自信</font></a>
+                  [04-20]
+                </li><li><a href="/Item/1189.aspx" target=""><font style="&#xD;&#xA;                            color:#F73809;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">学会感恩</font></a>
+                  [11-22]
+                </li><li><a href="/Item/1175.aspx" target=""><font style="&#xD;&#xA;                            color:#FF6600;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">师恩</font></a>
+                  [09-11]
+                </li><li><a href="/Item/1163.aspx" target=""><font style="&#xD;&#xA;                            color:#FF6600;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">广州市第38届“羊城之夏” 青少年暑…</font></a>
+                  [07-05]
+                </li><li><a href="/Item/1159.aspx" target=""><font style="&#xD;&#xA;                            color:#FF3300;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">高举团旗跟党走 风华正茂创辉煌</font></a>
+                  [06-29]
+                </li><li><a href="/Item/1148.aspx" target=""><font style="&#xD;&#xA;                            color:#FF0000;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">选择象贤成就梦想</font></a>
+                  [05-23]
+                </li><li><a href="/Item/1144.aspx" target=""><font style="&#xD;&#xA;                            color:#FF9900;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">书籍点亮人生 书香洋溢象贤</font></a>
+                  [05-11]
+                </li><li><a href="/Item/1134.aspx" target=""><font style="&#xD;&#xA;                            color:#E66B1A;&#xD;&#xA;                          ">沙湾</font></a>
+                  [04-10]
+                </li><li><a href="/Item/1132.aspx" target=""><font style="&#xD;&#xA;                            color:#E66B1A;&#xD;&#xA;                          font-weight:bold;font-style:normal;;&#xD;&#xA;                          ">像雷锋那样</font></a>
+                  [03-09]
+                </li>
+          </ul>
+<div class="clearbox"></div>
+</dd>
+</dl>
+</div>
+<div class="c_spacing"></div>
+<!--桃李芬芳-->
+<div id="moralEduSpace" class="goldenrod">
+<dl>
+<dt><em><a href="/Category_42/index.aspx" title="桃李芬芳">桃李芬芳</a></em><ul class="colChildNav"><li><a href="/Category_45/Index.aspx">学科竞赛</a></li>
+<li><a href="/Category_44/Index.aspx">高考金榜</a></li>
+<li><a href="/Category_47/Index.aspx">校友风采</a></li>
+<li><a href="/Category_46/Index.aspx">校园之星</a></li>
+<li><a href="/Category_48/Index.aspx">校运会</a></li>
+<li><a href="/Category_49/Index.aspx">社团活动</a></li>
+<li><a href="/Category_50/Index.aspx">文化艺术</a></li>
+<li><a href="/Category_43/Index.aspx">班级主页</a></li>
+<li><a href="/Category_308/Index.aspx">安全管理</a></li></ul></dt>
+<dd>
+<ul class="thumbListStlye2">
+
+            <li>
+  <div class="pe_u_thumb"><a href="/Item/1119.aspx" target="_blank"><img src="/UploadFiles/event/2016/11/2016111611447_S.jpg" alt="青春飞扬    个性张扬    执着梦想    收获佳绩" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/1119.aspx" target="_blank">青春飞扬    个性张扬  …</a><br></div>
+</li>
+<li>
+  <div class="pe_u_thumb"><a href="/Item/1110.aspx" target="_blank"><img src="file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002_S.jpg" alt="齐心协力, 永不言弃   学霸班的足球逆袭" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/1110.aspx" target="_blank">齐心协力, 永不言弃   …</a><br></div>
+</li>
+<li>
+  <div class="pe_u_thumb"><a href="/Item/1102.aspx" target="_blank"><img src="/UploadFiles/event/2016/6/20166283628.jpg" alt="展象贤风采，扬象贤神威" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/1102.aspx" target="_blank">展象贤风采，扬象贤神威</a><br></div>
+</li>
+<li>
+  <div class="pe_u_thumb"><a href="/Item/801.aspx" target="_blank"><img src="/UploadFiles/event/2012/4/201241795628.jpg" alt="热烈祝贺我校学子在2011学年度青少年科技创新大赛获奖" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/801.aspx" target="_blank">热烈祝贺我校学子在2011…</a><br></div>
+</li>
+          
+</ul>
+<ul class="listStyle1">
+            <li><a href="/Item/1119.aspx" target="">青春飞扬    个性张扬    执着梦想  …</a>
+                  [11-16]
+                </li><li><a href="/Item/1110.aspx" target="">齐心协力, 永不言弃   学霸班的足球…</a>
+                  [10-10]
+                </li><li><a href="/Item/1102.aspx" target="">展象贤风采，扬象贤神威</a>
+                  [06-02]
+                </li><li><a href="/Item/801.aspx" target="">热烈祝贺我校学子在2011学年度青少年…</a>
+                  [04-17]
+                </li><li><a href="/Item/731.aspx" target="">象贤中学周边交通路线图</a>
+                  [09-30]
+                </li><li><a href="/Item/730.aspx" target="">象贤中学校内道路交通管理规定 (试行)</a>
+                  [09-30]
+                </li><li><a href="/Item/729.aspx" target="">象贤中学关于学生往返学校的交通安全…</a>
+                  [09-30]
+                </li><li><a href="/Item/533.aspx" target="">象贤中学“感恩的心”主题教育演讲会…</a>
+                  [12-16]
+                </li><li><a href="/Item/523.aspx" target="">我校参加全国基础教育课程改革实验区…</a>
+                  [11-04]
+                </li><li><a href="/Item/519.aspx" target="">象贤中学社团活动报名原始表格及注意…</a>
+                  [11-04]
+                </li><li><a href="/Item/518.aspx" target="">象贤中学学生成立社团申请表</a>
+                  [11-04]
+                </li>
+          </ul>
+<div class="clearbox"></div>
+
+</dd>
+</dl>
+</div>
+
+<div class="c_spacing"></div>
+<!--科组风采-->
+<div id="moralEduSpace" class="goldenrod">
+<dl>
+<dt><em><a href="/Category_37/index.aspx" title="园丁风采">年级管理</a></em><ul class="colChildNav">
+  <li><a class="fly" href="/Category_138/Index.aspx">高一中心</a></li>
+<li><a class="fly" href="/Category_145/Index.aspx">高二中心</a></li>
+<li><a class="fly" href="/Category_146/Index.aspx">高三中心</a></li>
+</ul></dt>
+<dd>
+<ul class="thumbListStlye2">
+
+            <li>
+  <div class="pe_u_thumb"><a href="/Item/1074.aspx" target="_blank"><img src="/UploadFiles/staff/2015/10/201510208512_S.jpg" alt="张汝如老师在区高三历史教研中做经验介绍" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/1074.aspx" target="_blank">张汝如老师在区高三历史…</a><br></div>
+</li>
+<li>
+  <div class="pe_u_thumb"><a href="/Item/989.aspx" target="_blank"><img src="/UploadFiles/event/2013/9/20139615169.jpg" alt="2014届高三级外聘社会人士讲座报道" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/989.aspx" target="_blank">2014届高三级外聘社会人…</a><br></div>
+</li>
+          
+</ul>
+<ul class="listStyle1">
+            <li><a href="/Item/1077.aspx" target="">改变  适应  突破  提升</a>
+                  [10-28]
+                </li><li><a href="/Item/1074.aspx" target="">张汝如老师在区高三历史教研中做经验…</a>
+                  [10-20]
+                </li><li><a href="/Item/989.aspx" target="">2014届高三级外聘社会人士讲座报道</a>
+                  [09-06]
+                </li><li><a href="/Item/968.aspx" target="">2014届高三开学典礼</a>
+                  [09-02]
+                </li><li><a href="/Item/888.aspx" target="">我校街舞队在演出比赛勇获二等奖</a>
+                  [05-09]
+                </li><li><a href="/Item/887.aspx" target="">2012学年高二级第二学期家长会</a>
+                  [05-09]
+                </li><li><a href="/Item/880.aspx" target="">高一年级举行“贤润心田、歌炫青春”…</a>
+                  [04-01]
+                </li><li><a href="/Item/877.aspx" target="">高二年级举行“贤传经典，颂承文明”…</a>
+                  [03-15]
+                </li><li><a href="/Item/858.aspx" target="">象贤中学高二级迎接区大课间评比报道</a>
+                  [10-19]
+                </li><li><a href="/Item/851.aspx" target="">2015届高一新生军训学生感想录</a>
+                  [10-10]
+                </li>
+          </ul>
+<div class="clearbox"></div>
+</dd>
+</dl>
+</div>
+</div>
+<!--侧边栏-->
+<div id="sideBar">
+  <div class="user_box">
+  <dl>
+     <dt><em>用户登录</em></dt>
+  	<dd><div id="LoginFrom"  class="Login_ajax" onkeypress="javascript:return DefaultButton(event, 'BtnLogOn')">
+  <script type="text/javascript" language="JavaScript">
+  function RefreshValdisplayDateCodeImage(ValdisplayDateCodeImageControl){
+      ValdisplayDateCodeImageControl.src = ValdisplayDateCodeImageControl.src + '?code=' + RandomNum(10);
+  }
+
+  function RandomNum(n){
+      var rnd = '';
+      for (var i = 0; i < n; i++) 
+          rnd += Math.floor(Math.random() * 10);
+      return rnd;
+  }
+
+  function DefaultButton(event, linkOpenType){
+      if (event.keyCode == 13 && !(event.srcElement && (event.srcElement.tagName.toLowerCase() == "textarea"))) {
+          var defaultButton = $(linkOpenType);
+          if (defaultButton && typeof(defaultButton.click) != "undefined") {
+              defaultButton.click();
+              event.cancelBubble = true;
+              if (event.stopPropagation) 
+                  event.stopPropagation();
+              return false;
+          }
+      }
+      return true;
+  }
+  </script>
+  <ul>
+  <li>用户名：<input name="TxtUserName" type="text" maxlength="20" id="TxtUserName" class="inputtext" style="width: 100px;" /></li>
+  <li>密　码：<input name="TxtPassword" type="password" id="TxtPassword" class="inputtext" style="width: 100px;" /></li>
+  <li id="checkcode">验证码：<input name="TxtValdisplayDateCode" type="text" maxlength="6" value="" id="TxtValdisplayDateCode" class="inputtext" onfocus="this.select();" style="width: 55px;" /><br/><img id="VcodeLogOn" title="看不清楚，换一个" onclick="RefreshValdisplayDateCodeImage(this);" src="/Controls/ValidateCodeImage.aspx" align="absmiddle" style="border-width: 0px; cursor: hand;" /></li>
+    <li style="display:none;">Cookie：
+	<select name="DropExpiration" id="DropExpiration">
+          <option value="None">不保存</option>
+          <option value="Day">保存一天</option>
+          <option value="Month">保存一月</option>
+          <option value="Year">保存一年</option>
+    </select>
+    </li>
+  <li id="loginButton">
+  <a href="/User/Register.aspx" linkOpenType="_top">注册</a>&nbsp;&nbsp;
+  <a href="/User/GetPassword.aspx" linkOpenType="_top">忘记密码</a>
+  <input type="submit" name="BtnLogOn" value="登　录" id="BtnLogOn" onclick="Login();" class="inputbutton" /></li>
+    <div class="clearbox"></div>
+    </ul>
+	</div>
+<div id="PnlLogOnStatus" class="Login_ajax"></div>
+<script language="javascript" type="text/javascript">
+CheckIsLogin();
+
+function Loginin(LoginString){
+    document.getElementById("LoginFrom").innerHTML = document.getElementById("LoginFrom").innerHTML + LoginString;
+}
+
+function CheckIsLogin(){
+    document.getElementById("PnlLogOnStatus").innerHTML = "<img src=\"/Skin/Education/Images/loading.gif\" alt=\"\"/>";
+    var x = new AjaxRequest('XML', 'status');
+    x.para = [];
+    x.post('logincheck', '/ajax.aspx', function(s){
+        var xml = x.createXmlDom(s);
+        var status = xml.getElementsByTagName("status")[0].firstChild.data;
+        
+        if (status == 'ok') {
+            document.getElementById("PnlLogOnStatus").style.display = "";
+            document.getElementById("LoginFrom").style.display = "none";
+            document.getElementById("PnlLogOnStatus").innerHTML = GetUserInfo(xml);
+        }
+        else {
+            document.getElementById("PnlLogOnStatus").style.display = "none";
+            document.getElementById("LoginFrom").style.display = "";
+            CheckEnableValidCode();
+        }
+    });
+}
+
+function GetUserInfo(xml){
+    var userInfo = "<div class=\"u_login\">" + xml.getElementsByTagName("username")[0].firstChild.data + "，您好！您有：<br/>";
+    userInfo = userInfo + "资金余额：" + xml.getElementsByTagName("balance")[0].firstChild.data + " 元<br/>";
+    userInfo = userInfo + "经验积分：" + xml.getElementsByTagName("exp")[0].firstChild.data + " 分<br/>";
+    userInfo = userInfo + "待阅短信：" + xml.getElementsByTagName("msg")[0].firstChild.data + " 条<br/>";
+    userInfo = userInfo + "登录次数：" + xml.getElementsByTagName("logintimes")[0].firstChild.data + " 次<br/>";
+    userInfo = userInfo + "可用点券：" + xml.getElementsByTagName("point")[0].firstChild.data + " " + xml.getElementsByTagName("pointunit")[0].firstChild.data + "<br/>";
+    userInfo = userInfo + "待签文章：" + xml.getElementsByTagName("signincontent")[0].firstChild.data + " 篇<br/>";
+    userInfo = userInfo + "<div style=\"text-align: center\"><a href=\"/User/Default.aspx\" linkOpenType=\"_top\">会员中心</a>&nbsp;&nbsp;|&nbsp;&nbsp;";
+    userInfo = userInfo + "<a href=\"/User/Logout.aspx\" linkOpenType=\"_top\">退出登录</a></div>";
+    userInfo = userInfo + "</div>";
+    return userInfo;
+}
+
+function CheckEnableValidCode(){
+    var x = new AjaxRequest('XML', 'status');
+    x.para = [];
+    x.post('EnableValidCode', '/ajax.aspx', function(s){
+        var xml = x.createXmlDom(s);
+        var status = xml.getElementsByTagName("status")[0].firstChild.data;
+        if (status == "yes") {
+            document.getElementById("checkcode").style.display = '';
+            document.getElementById("TxtValdisplayDateCode").value = '';
+        }
+    });
+}
+
+function Login(){
+    if (document.getElementById("TxtUserName").value == '') {
+        alert("请填写用户名！");
+        document.getElementById("TxtUserName").focus();
+        return;
+    }
+    if (document.getElementById("TxtPassword").value == '') {
+        alert("请填写密码！");
+        document.getElementById("TxtPasssword").focus();
+        return;
+    }
+    if (document.getElementById("TxtValdisplayDateCode").value == '') {
+        alert("请填写验证码！");
+        document.getElementById("TxtValdisplayDateCode").focus();
+        return;
+    }
+    var x = new AjaxRequest('XML', 'status');
+    x.para = ['username=' + document.getElementById("TxtUserName").value, 'password=' + document.getElementById("TxtPassword").value, 'checkcode=' + document.getElementById("TxtValdisplayDateCode").value, 'expiration=' + document.getElementById("DropExpiration").value];
+    x.post('userlogin', '/ajax.aspx', function(s){
+        var xml = x.createXmlDom(s);
+        var status = xml.getElementsByTagName("status")[0].firstChild.data;
+        switch (status) {
+            case "ok":
+                if (xml.getElementsByTagName("API_Enable")[0].firstChild.data == "1") {
+                    var LoginString = xml.getElementsByTagName("LoginString")[0].firstChild.data;
+                    Loginin(LoginString);
+                }
+                CheckIsLogin();
+                break;
+            case "err":
+                alert("用户名或者密码错误！");
+                break;
+        }
+        
+    });
+}
+</script></dd>
+	<dd class="bottom"></dd>
+  </dl>
+  </div>
+<div class="left_box">
+<dl>
+<dt><em>办事指南</em></dt>
+<dd><ul class="channelList">
+          <li>
+  <h5><a href="/Category_133/Index.aspx">校长办公室</a></h5>
+  <ul class="subItemList">
+    <li><a href="/Item/501.aspx" target="_self">激情与人本共舞，文化与超越同辉——记广州市番禺区象贤中学谭…</a></li>
+    <li><a href="/Item/500.aspx" target="_self">象贤中学历任校长名单</a></li>
+    <div class="clearbox"></div>
+  </ul>
+</li>
+        
+          <li>
+  <h5><a href="/Category_114/Index.aspx">校长信箱</a></h5>
+  <ul class="subItemList">
+    <li><a href="/Item/894.aspx" target="_self">2013年象贤中学招生资料</a></li>
+    <li><a href="/Item/893.aspx" target="_self">2013年国际教育实验班招生材料</a></li>
+    <div class="clearbox"></div>
+  </ul>
+</li>
+        
+          <li>
+  <h5><a href="/Category_34/Index_1.aspx">计划安排</a></h5>
+  <ul class="subItemList">
+    <li><a href="/Item/907.aspx" target="_self">2012学年第二学期象贤中学第14周工作安排</a></li>
+    <li><a href="/Item/906.aspx" target="_self">2012学年第二学期象贤中学第13周工作安排</a></li>
+    <div class="clearbox"></div>
+  </ul>
+</li>
+        
+          <li>
+  <h5><a href="/Category_36/Index.aspx">医疗卫生</a></h5>
+  <ul class="subItemList">
+    <li><a href="/Item/765.aspx" target="_self">丙型病毒性肝炎防治知识要点</a></li>
+    <li><a href="/Item/504.aspx" target="_self">关于印发广州市2010年麻疹疫苗强化免疫活动实施方案的通知</a></li>
+    <div class="clearbox"></div>
+  </ul>
+</li>
+        
+          <li>
+  <h5><a href="/Category_161/Index_1.aspx">在线办事</a></h5>
+  <ul class="subItemList">
+    <li><a href="/Item/1061.aspx" target="_self">广东省国家通用语言文字规定</a></li>
+    <li><a href="/Item/1060.aspx" target="_self">语言文字政策法规知识问答</a></li>
+    <div class="clearbox"></div>
+  </ul>
+</li>
+        
+          <li>
+  <h5><a href="/Category_35/Index.aspx">招生招聘</a></h5>
+  <ul class="subItemList">
+    <li><a href="/Item/1171.aspx" target="_self">2017广东广州市番禺区教育局招聘公办中小学临聘教师216人公告</a></li>
+    <li><a href="/Item/1170.aspx" target="_self">广州市番禺区象贤中学关于2017学年 公开招聘临聘教师的信息</a></li>
+    <div class="clearbox"></div>
+  </ul>
+</li>
+        
+          <li>
+  <h5><a href="/Category_309/Index_1.aspx">象贤校报</a></h5>
+  <ul class="subItemList">
+    <li><a href="/Item/909.aspx" target="_self">象贤中学校报《象•贤》第七期</a></li>
+    <li><a href="/Item/908.aspx" target="_self">象贤中学校报《象•贤》第六期</a></li>
+    <div class="clearbox"></div>
+  </ul>
+</li>
+        </ul></dd>
+<dd class="bottom"></dd>
+</dl>
+</div>
+
+<div class="left_box">
+<dl>
+<dt><em>学科资源</em></dt>
+<dd>
+<ul class="subjectList"><li><a href="/Category_61/Index_1.aspx">语文科</a></li>
+<li><a href="/Category_62/Index_1.aspx">数学科</a></li>
+<li><a href="/Category_63/Index_1.aspx">英语科</a></li>
+<li><a href="/Category_64/Index_1.aspx">物理科</a></li>
+<li><a href="/Category_65/Index_1.aspx">化学科</a></li>
+<li><a href="/Category_66/Index.aspx">政治科</a></li>
+<li><a href="/Category_67/Index_1.aspx">历史科</a></li>
+<li><a href="/Category_68/Index_1.aspx">地理科</a></li>
+<li><a href="/Category_69/Index_1.aspx">生物科</a></li>
+<li><a href="/Category_70/Index_1.aspx">体育科</a></li>
+<li><a href="/Category_71/Index_1.aspx">音乐科</a></li>
+<li><a href="/Category_72/Index_1.aspx">美术科</a></li>
+<li><a href="/Category_73/Index_1.aspx">信息技术科</a></li>
+<li><a href="/Category_81/Index.aspx">综合实践科</a></li>
+<li><a href="/Category_84/Index_1.aspx">通用技术科</a></li>
+<div class="clearbox"></div>
+</ul>
+
+</dd>
+<dd class="bottom"></dd>
+</dl>
+</div>
+
+<script language="JavaScript" type="text/javascript">
+function Menu(id_num,num){
+for(var i=0;i<2;i++){document.getElementById("Con_"+id_num+i).style.display="none";}
+for(var i=0;i<2;i++){document.getElementById("Tab_"+id_num+i).className="";}
+document.getElementById("Tab_"+id_num+num).className="userTabsOn";
+document.getElementById("Con_"+id_num+num).style.display="block";
+}
+</script>
+  <div class="left_box">
+  <dl>
+    <dt><em>查询系统(成绩/分班)</em></dt>
+    <dd>
+	<ul>
+	<li>学　号：<input name="TxtStudentNum" type="text" maxlength="20" id="TxtStudentNum" class="inputtext" style="width: 100px;" /></li>
+	<li>姓　名：<input name="TxtStudentName" type="text" maxlength="20" id="TxtStudentName" class="inputtext" style="width: 100px;" /></li>
+	<li>入　学：<input name="TxtBirthday" type="text" maxlength="20" id="TxtBirthday" class="inputtext" style="width: 100px;" title="格式如'2008-08-08'" /></li>
+	<li id="loginButton">
+<input id="StuLogOn" class="inputbutton" type="submit" onclick="ScoreLogin();" value="进入查询" name="BtnLogOn"/>
+</li>
+	</ul>
+	<div class="clearbox"></div>
+  <script language="javascript" type="text/javascript">
+  function ScoreLogin()
+  {
+    var stuentNum = document.getElementById("TxtStudentNum").value;
+    var stuentName = document.getElementById("TxtStudentName").value;
+    var birthday = document.getElementById("TxtBirthday").value;
+    if (stuentNum == '') {
+        alert("请填写学号！");
+        document.getElementById("TxtStudentNum").focus();
+        return;
+    }
+    if (stuentName == '') {
+        alert("请填写姓名！");
+        document.getElementById("TxtStudentName").focus();
+        return;
+    }
+    if (birthday == '') {
+        alert("请填写生日！");
+        document.getElementById("TxtBirthday").focus();
+        return;
+    }
+    window.location.href = "/Ssms/ScoreQuery.aspx?num="+escape(stuentNum)+"&name="+escape(stuentName)+"&birthday="+birthday;
+  }
+  </script>
+    </dd>
+	<dd class="bottom"></dd>
+  </dl>
+  
+</div>
+<div class="left_box"><a title="课程管理系统" target="_blank" href="/Ssms/ScheduleMain.aspx"><img alt="课程管理系统" src="/Skin/Education/Images/courseManage.png" /></a></div>
+<div class="left_box"><a title="学生课程选修系统" target="_blank" href="http://www.gzxxjy.org.cn/course/StuLogin.aspx"><img alt="学生课程选修系统" src="/Skin/Education/Images/courseChooseManage.png" /></a></div>
+<div class="left_box"><a title="K12资源库" target="_blank" href="http://192.168.10.2/naga/"><img alt="K12资源库" src="/Skin/Education/Images/K12.png" /></a></div>
+<div class="left_box"><a title="心理健康预警系统" target="_blank" href="http://192.168.10.2:88"><img alt="心理健康预警系统" src="/Skin/Education/Images/xinli.gif" /></a></div>
+<div class="left_box"><a title="电子图书" target="_blank" href="http://192.168.10.2:8089"><img alt="电子图书" src="/Skin/Education/Images/eBook.png" /></a></div>
+<div class="left_box"><a title="象贤校内FTP" target="_blank" href="ftp://192.168.10.2"><img alt="象贤校内FTP" src="/Skin/Education/Images/ftp.png" /></a></div>
+<div class="left_box"><a title="象贤网络硬盘" target="_blank" href="http://ys.ys168.com/?7887k"><img alt="象贤网络硬盘" src="/Skin/Education/Images/webDisk.png" /></a></div>
+
+<!--<div class="left_box"><a title="校级公开课申报系统" target="_blank" href="http://kcsb.gzxxjy.org.cn"><img alt="校级公开课申报系统" src="/Skin/Education/Images/gkk1.png" /></a></div>-->
+<div class="left_box"><a title="电子档案资料库管理系统" target="_blank" href="http://dagl.gzxxjy.org.cn"><img alt="电子档案资料库管理系统" src="/Skin/Education/Images/dak1.png" /></a></div>
+
+<div class="left_box" id="partyBuilding">
+<dl>
+
+<dt><em>友情链接</em></dt>
+<dd>
+<ul>
+
+          <li><a href="http://www.pyedu.cn/" target="_blank"><img src="http://www.gzxxjy.org.cn/Skin/images/pyjytri3.jpg" border="0" alt="番禺教育信息网"></a></li>
+<li><a href="http://old.pyedu.cn/publish09/jyjy/" target="_blank"><img src="http://www.gzxxjy.org.cn/images/pytri.jpg" border="0" alt="番禺教研"></a></li>
+<li><a href="http://www.guangztr.edu.cn/" target="_blank"><img src="http://www.gzxxjy.org.cn/images/gztri.jpg" border="0" alt="广州市教研网"></a></li>
+<li><a href="http://www.gzjkw.net/" target="_blank"><img src="http://www.gzxxjy.org.cn/images/gzjyky.jpg" border="0" alt="广州市教育科研网"></a></li>
+<li><a href="http://www.gzedu.gov.cn/" target="_blank"><img src="http://www.gzxxjy.org.cn/images/gzjyj.jpg" border="0" alt="广州市教育局"></a></li>
+         
+
+</ul></dd>
+
+<dd class="bottom"></dd>
+</dl>
+</div>
+<div class="clearbox"></div>
+</div>
+<!--中部内容定义结束-->
+
+<div class="clearbox"></div>
+  <div class="main" id="footer">
+  <dl>
+    <dt> <a href="mailto:pengleo2008@163.com?subject=给象贤中学网站的意见">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="/category_7/index.aspx">网站留言</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="/category_6/index.aspx">友情链接</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="/Category_8/index.aspx">版权声明</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="/Search/Default.aspx">全文搜索</a>
+&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="/pengleo2008/Index.aspx" target="_blank">管理登录</a> </dt>
+	<dt>单位地址:广州市番禺区沙湾镇亚中坊路15号&nbsp;&nbsp;邮编:511483 &nbsp;&nbsp;联系电话:020-34877920&nbsp;&nbsp;E-mail:xxzxxzc@21cn.com </dt>
+
+    <dd> 广州市番禺区象贤中学&nbsp;&nbsp;版权所有©2003-2014&nbsp;&nbsp;粤ICP备09173996号&nbsp;&nbsp;&nbsp;&nbsp;</dd><br><script src='/Analytics/CounterLink.aspx?Style=simple'></script>&nbsp;&nbsp;网部维护部门:信息技术科组&nbsp;<script language="javascript" <!--src=" http://count10.51yes.com/click.aspx?id=108876123&logo=9"--> charset="gb2312"></script>
+
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/20/296/0912/45000879/CA202960912450008790001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+
+  </dl>
+</div>
+
+</body>
+</html>

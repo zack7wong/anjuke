@@ -1,0 +1,763 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/r/cms/sanshijiuzhongxue/default/css/lynn.css" type="text/css" rel="stylesheet" />
+<script src="/r/cms/sanshijiuzhongxue/default/js/MSClass.js" language="javascript"></script>
+<script type="text/javascript" src="/r/cms/sanshijiuzhongxue/default/js/jquery-1.3.2.min.js"></script>
+<script src="/r/cms/sanshijiuzhongxue/default/js/jquery.soChange-min.js" type="text/javascript"></script>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript">
+    
+        function AutoScroll(obj) {
+
+            $(obj).find("ul:first").animate({
+                marginTop: "-42px"
+            }, 1000, function() {
+                $(this).css({ marginTop: "0px" }).find("li:first").appendTo(this);
+            });
+        }
+        $(document).ready(function() {
+            var myar = setInterval('AutoScroll("#scrollDiv")', 1000)
+            $("#scrollDiv").hover(function() { clearInterval(myar); }, function() { myar = setInterval('AutoScroll("#scrollDiv")', 1000) }); //当鼠标放上去的时候，滚动停止，鼠标离开的时候滚动开始
+        });
+    </script>
+<title>武汉市第三十九中学</title>
+</head>
+
+<body>
+<!-- --------------------------top----------------------- -->
+<div id="top">
+
+<!--<img src="/r/cms/sanshijiuzhongxue/default/images/FLASHBG.jpg" width="1217" height="253" />-->
+
+<div class="banflash">
+ <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="1217" height="253">
+   <param name="movie" value="/r/cms/sanshijiuzhongxue/default/flash/banner.swf" />
+   <param name="quality" value="high" />
+   <param name="wmode" value="transparent" />
+   <embed src="/r/cms/sanshijiuzhongxue/default/flash/banner.swf" quality="high" wmode="transparent" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="1217" height="253"></embed>
+ </object>
+</div>
+
+</div>
+
+<!-- ------------------------nav---------------------- -->
+<script src="/r/cms/sanshijiuzhongxue/default/js/base.js" type="text/javascript"></script>
+<div id="navmain">
+  <div id="nav">
+    <ul>
+      <li onMouseOver="setNav(11,1)" onMouseOut="setOut('con_nav_01')"><a href="/">首页</a>
+        <ul id="con_nav_01" style="text-align:left;">
+          
+        </ul>
+      </li>
+      
+                  <li onMouseOver="setNav(11,2)" onMouseOut="setOut('con_nav_02')">
+                  <a href="/jianjie001.jhtml" id="nav2" >学校概况</a>
+                        <ul id="con_nav_02">
+                              <li><a href="/jianjie001.jhtml">学校简介</a></li>
+                              <li><a href="/schoolpic001/index.jhtml">学校图片</a></li>
+                              <li><a href="/banzichengyuan001/index.jhtml">班子成员</a></li>
+                              <li><a href="/zclying001/index.jhtml">中层掠影</a></li>
+                        </ul>
+                  </li>
+                  <li onMouseOver="setNav(11,3)" onMouseOut="setOut('con_nav_03')">
+                  <a href="/schoolnews001/index.jhtml" id="nav3" >新闻热点</a>
+                        <ul id="con_nav_03">
+                              <li><a href="/schoolnews001/index.jhtml">校园新闻</a></li>
+                              <li><a href="/meiti001/index.jhtml">媒体报道</a></li>
+                              <li><a href="/tongzhi001/index.jhtml">通知公告</a></li>
+                        </ul>
+                  </li>
+                  <li onMouseOver="setNav(11,4)" onMouseOut="setOut('con_nav_04')">
+                  <a href="/dangjiandongtai002/index.jhtml" id="nav4" >总支建设</a>
+                        <ul id="con_nav_04">
+                              <li><a href="/dangjiandongtai002/index.jhtml">党建动态</a></li>
+                              <li><a href="/yifazhixiao002/index.jhtml">依法治校</a></li>
+                              <li><a href="/shidejianshe002/index.jhtml">师德建设         举报电话:88071944</a></li>
+                              <li><a href="/wenmingchuangjian002/index.jhtml">文明创建</a></li>
+                              <li><a href="/tongzhanlaogan002/index.jhtml">统战老干</a></li>
+                              <li><a href="/xueshengdangxiao002/index.jhtml">学生党校</a></li>
+                              <li><a href="/qunzhong002.jhtml">群众之声</a></li>
+                        </ul>
+                  </li>
+                  <li onMouseOver="setNav(11,5)" onMouseOut="setOut('con_nav_05')">
+                  <a href="/changguiguanli002/index.jhtml" id="nav5" >教学教研</a>
+                        <ul id="con_nav_05">
+                              <li><a href="/changguiguanli002/index.jhtml">常规管理</a></li>
+                              <li><a href="/jiaoxuehuodong002/index.jhtml">教学活动</a></li>
+                              <li><a href="/xiaobenkecheng002/index.jhtml">校本课程</a></li>
+                              <li><a href="/jiaoyanchengguo002/index.jhtml">教研成果</a></li>
+                              <li><a href="/keyanzixun002/index.jhtml">科研资讯</a></li>
+                              <li><a href="/jiaoxueziyuan002/index.jhtml">教学资源</a></li>
+                              <li><a href="/yuyanwenz002/index.jhtml">语言文字</a></li>
+                        </ul>
+                  </li>
+     
+                  <li onMouseOver="setNav(11,6)" onMouseOut="setOut('con_nav_06')">
+                  <a href="/deyutese002/index.jhtml" id="nav6" >德育天地</a>
+                        <ul id="con_nav_06" style="width:400px;">
+                              <li><a href="/deyutese002/index.jhtml">德育特色</a></li>
+                              <li><a href="/banjiguanli002/index.jhtml">班级管理</a></li>
+                              <li><a href="/xueshenghuodong002/index.jhtml">学生活动</a></li>
+                              <li><a href="/xinlijiankang002/index.jhtml">心理健康</a></li>
+                              <li><a href="/duxuedudao002/index.jhtml">督学督导</a></li>
+                        </ul>
+                  </li>
+                  <li onMouseOver="setNav(11,7)" onMouseOut="setOut('con_nav_07')">
+                  <a href="/jiaoshifengcai002/index.jhtml" id="nav7" >师生展台</a>
+                        <ul id="con_nav_07" style="width:400px;">
+                              <li><a href="/jiaoshifengcai002/index.jhtml">教师风采</a></li>
+                              <li><a href="/xinxinxuezi002/index.jhtml">莘莘学子</a></li>
+                        </ul>
+                  </li>
+                  <li onMouseOver="setNav(11,8)" onMouseOut="setOut('con_nav_08')">
+                  <a href="/tuanweidongtai002/index.jhtml" id="nav8" >团旗飘飘</a>
+                        <ul id="con_nav_08" style="width:400px;">
+                              <li><a href="/tuanweidongtai002/index.jhtml">团委动态 </a></li>
+                              <li><a href="/xiaoxueshenghui002/index.jhtml">校学生会</a></li>
+                              <li><a href="/xueshengshetuan002/index.jhtml">学生社团</a></li>
+                              <li><a href="/guoqixiajainghua002/index.jhtml">国旗下讲话</a></li>
+                        </ul>
+                  </li>
+
+                  <li onMouseOver="setNav(11,9)" onMouseOut="setOut('con_nav_09')">
+                  <a href="/gonghuidongtai002/index.jhtml" id="nav9" >工会活动</a>
+                        <ul id="con_nav_09" style="width:250px;">
+                              <li><a href="/gonghuidongtai002/index.jhtml">工会动态</a></li>
+                              <li><a href="/mingzhuguanli002/index.jhtml">民主管理</a></li>
+                              <li><a href="/zhigonzhijia002/index.jhtml">职工之家</a></li>
+                        </ul>
+                  </li>
+                  <li onMouseOver="setNav(11,10)" onMouseOut="setOut('con_nav_010')">
+                  <a href="/houqinghuod001/index.jhtml" id="nav10" >后勤服务</a>
+                        <ul id="con_nav_010" style="width:250px;">
+                        </ul>
+                  </li>
+
+
+      
+      
+      
+      <!--<li onMouseOver="setNav(11,3)" onMouseOut="setOut('con_nav_03')"><a href="">新闻热点</a>
+        <ul id="con_nav_03">
+          <li><a href="">三十九中学</a></li>
+          <li><a href="">三十九中学</a></li>
+        </ul>
+      </li>
+      <li onMouseOver="setNav(11,4)" onMouseOut="setOut('con_nav_04')"><a href="">总支建设</a>
+        <ul id="con_nav_04">
+          <li><a href="">三十九中学</a></li>
+          <li><a href="">三十九中学</a></li>
+        </ul>
+      </li>
+      <li onMouseOver="setNav(11,5)" onMouseOut="setOut('con_nav_05')"><a href="">教学教研</a>
+        <ul id="con_nav_05">
+          <li><a href="">三十九中学</a></li>
+          <li><a href="">三十九中学</a></li>
+        </ul>
+      </li>
+      <li onMouseOver="setNav(11,6)" onMouseOut="setOut('con_nav_06')"><a href="">德育天地</a>
+        <ul id="con_nav_06">
+          <li><a href="">三十九中学</a></li>
+          <li><a href="">三十九中学</a></li>
+        </ul>
+      </li>
+      <li onMouseOver="setNav(11,7)" onMouseOut="setOut('con_nav_07')"><a href="">师生展台</a>
+        <ul id="con_nav_07">
+          <li><a href="">三十九中学</a></li>
+          <li><a href="">三十九中学</a></li>
+        </ul>
+      </li>
+      <li onMouseOver="setNav(11,8)" onMouseOut="setOut('con_nav_08')"><a href="">团旗飘飘</a>
+        <ul id="con_nav_08" style="width:250px;">
+          <li><a href="">三十九中学</a></li>
+          <li><a href="">三十九中学</a></li>
+        </ul>
+      </li>
+      <li onMouseOver="setNav(11,9)" onMouseOut="setOut('con_nav_09')"><a href="">工会活动</a>
+        <ul id="con_nav_09" style="width:250px;">
+          <li><a href="">三十九中学33</a></li>
+          <li><a href="">三十九中学</a></li>
+        </ul>
+      </li>
+      <li onMouseOver="setNav(11,10)" onMouseOut="setOut('con_nav_010')"><a href="">后勤服务</a>
+        <ul id="con_nav_010" style="width:250px;">
+          <li><a href="">三十九中学22</a></li>
+          <li><a href="">三十九中学</a></li>
+        </ul>
+      </li>-->
+    </ul>
+  </div>
+</div>
+
+
+<div id="gongg">
+  <div class="gongg">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="69%" align="left" valign="middle"><div class="fleft">最新消息：</div>
+        <div class="fright" style="padding-right:180px;"><a href="http://www.hbksw.com/college/index/101" target="_blank">校园数据库</a></div>
+           <form id="form1" runat="server" class="fleft"> 
+            <div id="scrollDiv">
+                <ul>
+                    <li><a href="/tongzhi001/6651.jhtml">初中艺术特长生专业能力测试安排</a></li>
+                    <li><a href="/tongzhi001/6652.jhtml">武汉市第三十九中学2016年招生简章</a></li>
+                </ul>
+            </div>
+         </form>
+        
+        </td>
+<script src="/r/cms/sanshijiuzhongxue/default/js/jquery.js" type="text/javascript"></script>
+<script src="/r/cms/sanshijiuzhongxue/default/js/front.js" type="text/javascript"></script>	
+<!--<form action="/search.jspx" target="_blank">
+        <td width="23%" align="right" valign="middle">
+          <input type="text" class="inptxt" name="q" value="请输入关键词"    id="txtKey" onfocus="if(this.value=='请输入关键词')this.value=''" onblur="if(this.value=='')this.value='请输入关键词'" maxlength="10" autocomplete="off" />       
+        </td>
+        <td width="8%" align="right" valign="middle">
+          <input type="submit" value="" id="btnSearch" class="inpsubm" /> 
+        </td>
+</form> -->      
+        
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+
+
+<!-- ----------------------main------------------------- -->
+<div id="main">
+<table width="100%" height="612" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="293" align="left" valign="top">
+    
+      
+    
+      <div class="m_newjs">
+        
+
+
+<script type="text/javascript">
+var width=276;var focus_height=200;var text_height=25;
+var swf_height=focus_height+text_height;
+var pics="";var links="";var texts="";
+pics+="/u/cms/sanshijiuzhongxue/201805/26132802ft47.jpg|";
+links+="/schoolnews001/7084.jhtml|";
+texts+="风华正茂、青春无悔|";
+pics+="/u/cms/sanshijiuzhongxue/201805/16122802vj9f.jpg|";
+links+="/schoolnews001/7082.jhtml|";
+texts+="再谱百年老校特色发展新篇章|";
+pics+="/u/cms/sanshijiuzhongxue/201804/161111194i9j.jpg|";
+links+="/schoolnews001/7055.jhtml|";
+texts+="我校召开学校发展规划讨论会|";
+pics=pics.substring(0,pics.length-1);
+links=links.substring(0,links.length-1);
+texts=texts.substring(0,texts.length-1);
+document.write('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="'+width+'" height="'+swf_height+'">');
+document.write('<param name="movie" value="/r/cms/focus1.swf"/>');
+document.write('<param name="quality" value="high"/><param name="bgcolor" value="#F0F0F0"/>');
+document.write('<param name="menu" value="false"/><param name="wmode" value="opaque"/>');
+document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+width+'&borderheight='+focus_height+'&textheight='+text_height+'"/>');
+document.write('<embed src="/r/cms/focus1.swf" width="'+width+'" height="'+swf_height+'" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" wmode="opaque" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>');
+document.write('</object>');
+</script>
+
+
+      </div>
+      
+      
+      
+      
+      
+      <div class="m_zxgtit"><img src="/r/cms/sanshijiuzhongxue/default/images/ind_34.jpg" width="278" height="35" /></div>
+      
+      <div class="m_zxgnew">
+      <div class="mlgun01" id="marqueediv6">
+        <ul>
+        
+        
+          <li><a href="/tongzhi001/7085.jhtml">·  第十四周大事安排</a>/2018-05-26</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/7075.jhtml">·  第九周大事安排</a>/2018-04-23</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/7073.jhtml">·  第八周大事安排</a>/2018-04-16</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/7065.jhtml">·  第五周大事安排</a>/2018-03-26</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/7058.jhtml">·  第三周大事安排</a>/2018-03-09</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/7057.jhtml">·  第二周大事安排</a>/2018-03-06</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/7054.jhtml">·  第一周大事安排</a>/2018-02-26</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/7044.jhtml">·  期末工作及下学期开学工作安排</a>/2018-01-22</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/7043.jhtml">·  第二十周大事安排</a>/2018-01-15</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/7039.jhtml">·  第十九周大事安排</a>/2018-01-09</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/7032.jhtml">·  第十七周大事安排</a>/2017-12-25</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/7028.jhtml">·  第十六周大事安排</a>/2017-12-18</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/7024.jhtml">·  第十五周大事安排</a>/2017-12-11</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/7019.jhtml">·  第十四周大事安排</a>/2017-12-04</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/7011.jhtml">·  第十二周大事安排</a>/2017-11-20</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/6999.jhtml">·  第十一周大事安排</a>/2017-11-13</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/6983.jhtml">·  第八周大事安排</a>/2017-10-26</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/6974.jhtml">·  校服招标结果公示</a>/2017-09-25</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/6972.jhtml">·  第四周大事安排</a>/2017-09-25</li>
+          
+          
+        
+        
+          <li><a href="/tongzhi001/6965.jhtml">·  武汉市第三十九中学2017年校服招</a>/2017-09-19</li>
+          
+          
+       
+        </ul>
+      </div>
+      </div>
+      <script>new Marquee("marqueediv6",0,1,270,140,100,0,0)</script>
+      
+      
+      <div class="m_zbtit"><img src="/r/cms/sanshijiuzhongxue/default/images/ind_45.jpg" width="278" height="40" /></div>
+      <div class="m_zbdate">
+
+<script language="javascript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = " 星期日"
+if(today.getDay()==1) day = " 星期一"
+if(today.getDay()==2) day = " 星期二"
+if(today.getDay()==3) day = " 星期三"
+if(today.getDay()==4) day = " 星期四"
+if(today.getDay()==5) day = " 星期五"
+if(today.getDay()==6) day = " 星期六"
+document.fgColor = "000000";
+date = "今天是：" + (today.getFullYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日" + day +"";
+document.write(date);
+// -->
+
+</script>
+
+      </div>
+      <div class="m_zbpp">
+        <div class="m_zbpline">值班校级领导：<span class="f_gb">魏凯旋</span></div>
+        <div class="m_zbpline">值班干部：<span class="f_gb">邱慧琳   杜晓丽</span></div>
+        <div class="m_zbphone">值班电话：<span class="f_yb">15207139750</span></div>
+      </div>
+    </td>
+    <td align="left" valign="top">
+          <div class="newstit"><span class="mn_more"><a href="/schoolnews001/index.jhtml"><img src="/r/cms/sanshijiuzhongxue/default/images/ind_37.jpg" width="44" height="13" /></a></span>校园新闻</div>
+      <div class="nes1con">
+           <ul>
+              <li><span class="fright mr12">2018-05-26</span><a href="/tongzhi001/7085.jhtml">第十四周大事安排</a></li>
+              <li><span class="fright mr12">2018-05-26</span><a href="/schoolnews001/7084.jhtml">风华正茂、青春无悔</a></li>
+              <li><span class="fright mr12">2018-05-21</span><a href="/schoolnews001/7083.jhtml">我校圆满召开湖北省重点课题研究会，取得丰硕成</a></li>
+              <li><span class="fright mr12">2018-05-16</span><a href="/schoolnews001/7082.jhtml">再谱百年老校特色发展新篇章</a></li>
+              <li><span class="fright mr12">2018-05-16</span><a href="/dangjiandongtai002/7081.jhtml">为何如此相爱相杀</a></li>
+              <li><span class="fright mr12">2018-05-07</span><a href="/dangjiandongtai002/7079.jhtml">三十九中2018年5月党润童心系列讲话</a></li>
+              <li><span class="fright mr12">2018-05-07</span><a href="/guoqixiajainghua002/7078.jhtml">第十一周国旗下讲话</a></li>
+          </ul>
+      </div>
+       
+	 
+      <div class="newstit mt10"><span class="mn_more"><a href="/jiaoyanchengguo002/index.jhtml"><img src="/r/cms/sanshijiuzhongxue/default/images/ind_37.jpg" width="44" height="13" /></a></span>教研成果</div>
+      <div class="nes3con">
+        <ul>
+          <li><span class="fright mr12">2017-11-15</span><a href="/jiaoyanchengguo002/7006.jhtml">我校喜获高考质量优胜奖</a></li>
+          <li><span class="fright mr12">2015-12-21</span><a href="/jiaoyanchengguo002/6524.jhtml">我校连续12年获得高考质量一等奖</a></li>
+          <li><span class="fright mr12">2015-01-15</span><a href="/jiaoyanchengguo002/6313.jhtml">我校召开研究性学习成果评审会</a></li>
+          <li><span class="fright mr12">2014-12-05</span><a href="/jiaoyanchengguo002/6248.jhtml">湖北省高中课程改革综合实践课程教研活动在我校</a></li>
+          <li><span class="fright mr12">2014-12-01</span><a href="/jiaoyanchengguo002/6243.jhtml">我校教师个人课题《艺术特长班数学高效课堂策略</a></li>
+          <li><span class="fright mr12">2014-10-17</span><a href="/jiaoyanchengguo002/6195.jhtml">搞好继续教育，落实远程培训</a></li>
+        </ul>
+      </div>
+      
+      <div class="newstit mt10"><span class="mn_more"><a href="/dangjiandongtai002/index.jhtml"><img src="/r/cms/sanshijiuzhongxue/default/images/ind_37.jpg" width="44" height="13" /></a></span>党建动态</div>
+      <div class="nes2con">
+        <ul>
+          <li><span class="fright mr12">2018-05-16</span><a href="/dangjiandongtai002/7081.jhtml">为何如此相爱相杀</a></li>
+          <li><span class="fright mr12">2018-05-07</span><a href="/dangjiandongtai002/7079.jhtml">三十九中2018年5月党润童心系列讲话</a></li>
+          <li><span class="fright mr12">2018-05-04</span><a href="/dangjiandongtai002/7077.jhtml">共驻共建树典范 同心同德促和谐</a></li>
+          <li><span class="fright mr12">2018-04-13</span><a href="/dangjiandongtai002/7070.jhtml">“冒名顶替上大学”用宪法判案</a></li>
+        </ul>
+      </div>
+    </td>
+    
+    <td width="285" align="left" valign="top">
+       <div class="mlefttit">校长寄语</div>
+       <div class="mleft001">
+           <div class="mlpic01">
+           <a href="/xiaozjiyu.jhtml"><img src="/u/cms/sanshijiuzhongxue/201702/10140202ioua.jpg" width="208" height="143" class="bor"/></a></div>
+           <div class="mlpic02"><img src="/r/cms/sanshijiuzhongxue/default/images/zi.jpg" width="219" height="50"/></div>
+       </div>
+       <div class="mlefttit">校长专栏</div>
+       <div class="mleft002">
+           <div class="mlgun" id="marqueediv5">
+               <div class="gun">
+                    <ul>
+                        <li>
+                            <p class="col01"><span class="collan fontbold">2016-02-23/</span><a href="/xiaozhangzhaunlan001/6565.jhtml">充实自我 让生命闪光</a></p>
+                            <p><span class="pl25"></span></p>
+                        </li>
+                        <li>
+                            <p class="col01"><span class="collan fontbold">2015-09-01/</span><a href="/xiaozhangzhaunlan001/6437.jhtml">不 忘 初 心，  执 着 前 行...</a></p>
+                            <p><span class="pl25"></span></p>
+                        </li>
+                        <li>
+                            <p class="col01"><span class="collan fontbold">2015-03-02/</span><a href="/xiaozhangzhaunlan001/6328.jhtml">做真实的自我—2015年春季开...</a></p>
+                            <p><span class="pl25"></span></p>
+                        </li>
+                        <li>
+                            <p class="col01"><span class="collan fontbold">2015-01-09/</span><a href="/xiaozhangzhaunlan001/6308.jhtml">抓住机遇   务实工作</a></p>
+                            <p><span class="pl25"></span></p>
+                        </li>
+                        <li>
+                            <p class="col01"><span class="collan fontbold">2014-12-08/</span><a href="/xiaozhangzhaunlan001/6294.jhtml">且学      且思      且行</a></p>
+                            <p><span class="pl25"></span></p>
+                        </li>
+                        <li>
+                            <p class="col01"><span class="collan fontbold">2014-09-01/</span><a href="/xiaozhangzhaunlan001/6154.jhtml">2014秋季开学典礼讲话——让...</a></p>
+                            <p><span class="pl25"></span></p>
+                        </li>
+                        <li>
+                            <p class="col01"><span class="collan fontbold">2014-05-26/</span><a href="/xiaozhangzhaunlan001/6117.jhtml">用勤奋追逐你们的幸福</a></p>
+                            <p><span class="pl25"></span></p>
+                        </li>
+                        <li>
+                            <p class="col01"><span class="collan fontbold">2014-03-03/</span><a href="/xiaozhangzhaunlan001/5779.jhtml">2014春季开学典礼讲话稿</a></p>
+                            <p><span class="pl25"></span></p>
+                        </li>
+                        <li>
+                            <p class="col01"><span class="collan fontbold">2013-09-11/</span><a href="/xiaozhangzhaunlan001/5669.jhtml">用激情点亮我们的岁月</a></p>
+                            <p><span class="pl25"></span></p>
+                        </li>
+                    </ul>  
+             </div>
+         </div>
+       </div>
+      <script>new Marquee("marqueediv5",0,1,252,285,100,0,0)</script>
+    </td>
+  </tr>
+</table>
+
+<div class="school">
+    <div class="schooltit"><div class="mn_more"><a href="/schoolpic001/index.jhtml"><img src="/r/cms/sanshijiuzhongxue/default/images/ind_37.jpg" width="44" height="13" /></a></div>学校图片</div>
+    <div class="schoolin">
+       <div class="hfcases">
+          <table width="980" height="157" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+          <td>
+           <table>
+              <tr>
+                <td valign="top" width="980">
+                <div id="MarqueeDiv3" style="width:940px; height:160px;overflow:hidden; margin:0 auto;">
+                  <table style="display:inline;" cellspacing="0" cellpadding="0" align="center" border="0">
+                    <tr>
+                      <td align="center" width="158" ><a href="/schoolpic001/6256.jhtml" title="生物实验室" ><img src="/u/cms/sanshijiuzhongxue/201412/09100805gvlp.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/6256.jhtml" title="生物实验室" >生物实验室</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/6255.jhtml" title="音乐教室1" ><img src="/u/cms/sanshijiuzhongxue/201412/09100633qr4d.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/6255.jhtml" title="音乐教室1" >音乐教室1</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/6254.jhtml" title="音乐教室2" ><img src="/u/cms/sanshijiuzhongxue/201412/09100514mbvi.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/6254.jhtml" title="音乐教室2" >音乐教室2</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/6253.jhtml" title="化学实验室" ><img src="/u/cms/sanshijiuzhongxue/201412/09100237h0nq.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/6253.jhtml" title="化学实验室" >化学实验室</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5849.jhtml" title="篮球场" ><img src="/u/cms/sanshijiuzhongxue/201403/18153807blz5.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5849.jhtml" title="篮球场" >篮球场</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5848.jhtml" title="行政楼" ><img src="/u/cms/sanshijiuzhongxue/201403/18153711k3ah.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5848.jhtml" title="行政楼" >行政楼</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5847.jhtml" title="教学大楼" ><img src="/u/cms/sanshijiuzhongxue/201403/18153602cyve.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5847.jhtml" title="教学大楼" >教学大楼</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5846.jhtml" title="教学大楼" ><img src="/u/cms/sanshijiuzhongxue/201403/18153502is68.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5846.jhtml" title="教学大楼" >教学大楼</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5845.jhtml" title="大操场" ><img src="/u/cms/sanshijiuzhongxue/201403/18153337jdoq.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5845.jhtml" title="大操场" >大操场</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5844.jhtml" title="学术报告厅一" ><img src="/u/cms/sanshijiuzhongxue/201403/181532173cnw.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5844.jhtml" title="学术报告厅一" >学术报告厅一</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5843.jhtml" title="学术报告厅二" ><img src="/u/cms/sanshijiuzhongxue/201403/181531147ug3.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5843.jhtml" title="学术报告厅二" >学术报告厅二</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5842.jhtml" title="学生书吧一" ><img src="/u/cms/sanshijiuzhongxue/201403/1815295664mf.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5842.jhtml" title="学生书吧一" >学生书吧一</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5841.jhtml" title="学生书吧二" ><img src="/u/cms/sanshijiuzhongxue/201403/181528208xgq.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5841.jhtml" title="学生书吧二" >学生书吧二</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5840.jhtml" title="教工书吧一" ><img src="/u/cms/sanshijiuzhongxue/201403/18152642gdtb.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5840.jhtml" title="教工书吧一" >教工书吧一</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5839.jhtml" title="教工书吧二" ><img src="/u/cms/sanshijiuzhongxue/201403/181524224d5p.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5839.jhtml" title="教工书吧二" >教工书吧二</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5838.jhtml" title="艺术成果展" ><img src="/u/cms/sanshijiuzhongxue/201403/18143644cade.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5838.jhtml" title="艺术成果展" >艺术成果展</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5837.jhtml" title="校园文化墙" ><img src="/u/cms/sanshijiuzhongxue/201403/18143541nd5h.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5837.jhtml" title="校园文化墙" >校园文化墙</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5836.jhtml" title="教书育人" ><img src="/u/cms/sanshijiuzhongxue/201403/18143446o69g.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5836.jhtml" title="教书育人" >教书育人</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5835.jhtml" title="行政楼" ><img src="/u/cms/sanshijiuzhongxue/201403/18143322qn6n.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5835.jhtml" title="行政楼" >行政楼</a></td>
+                      <td align="center" width="158" ><a href="/schoolpic001/5743.jhtml" title="报告厅" ><img src="/u/cms/sanshijiuzhongxue/201312/241513456f8p.jpg" width="202" height="136" border="0"/></a><br/>
+                        <a href="/schoolpic001/5743.jhtml" title="报告厅" >报告厅</a></td>
+                    </tr>
+                  </table>
+                </div>
+                </td>
+              </tr>
+            </table>
+            </td>
+          </tr>
+        </table>
+        <script type="text/javascript">
+        function gg(id){return document.getElementById(id)};
+          </script>
+	     <script type="text/javascript">
+            var MarqueeDiv3Control=new Marquee("MarqueeDiv3");		//箭头控制滚动方向、加速及鼠标拖动实例
+            MarqueeDiv3Control.Direction="left";
+            MarqueeDiv3Control.Step=1;
+            MarqueeDiv3Control.Width=940;
+            MarqueeDiv3Control.Height=160;
+            MarqueeDiv3Control.Timer=20;
+            MarqueeDiv3Control.WaitTime=0;
+            MarqueeDiv3Control.DelayTime=0;
+            MarqueeDiv3Control.ScrollStep=1;				//若为-1则禁止鼠标控制实例
+            MarqueeDiv3Control.Start();
+            MarqueeDiv3Control.BakStep=MarqueeDiv3Control.Step;
+            gg("LeftButton2").onmouseover=function(){MarqueeDiv3Control.Direction=2};
+            gg("LeftButton2").onmouseout=gg("LeftButton2").onmouseup=function(){MarqueeDiv3Control.Step=MarqueeDiv3Control.BakStep};
+            gg("LeftButton2").onmousedown=gg("RightButton2").onmousedown=function(){MarqueeDiv3Control.Step=MarqueeDiv3Control.BakStep+3};
+            gg("RightButton2").onmouseover=function(){MarqueeDiv3Control.Direction=3};
+            gg("RightButton2").onmouseout=gg("RightButton2").onmouseup=function(){MarqueeDiv3Control.Step=MarqueeDiv3Control.BakStep};
+          </script>
+      </div>
+    </div>
+</div>
+    
+
+
+    <table width="100%"  border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="318" align="left" valign="top">
+                <div class="studenttit"><span class="mn_more"><a href="/xueshenghuodong002/index.jhtml"><img src="/r/cms/sanshijiuzhongxue/default/images/ind_37.jpg" width="44" height="13" /></a></span>学生活动</div>
+                <div class="studentin">
+                    <ul>
+                        <li><span class="fright mr12">2018-01-05</span><a href="/xueshenghuodong002/7036.jhtml">武汉市第三十九中学第十八届艺术节圆满</a></li>
+                        <li><span class="fright mr12">2018-01-05</span><a href="/xueshenghuodong002/7037.jhtml">光影幻化，歌舞飞扬，凝成名片，凝成期</a></li>
+                        <li><span class="fright mr12">2017-11-01</span><a href="/xueshenghuodong002/6991.jhtml">我校学生秋游活动圆满落幕</a></li>
+                        <li><span class="fright mr12">2017-10-12</span><a href="/xueshenghuodong002/6980.jhtml">我校2017年秋季田径运动会圆满落幕</a></li>
+                        <li><span class="fright mr12">2017-03-28</span><a href="/xueshenghuodong002/6880.jhtml">我校高一高二年级学生春游活动如期举行</a></li>
+                        <li><span class="fright mr12">2016-11-21</span><a href="/xueshenghuodong002/6790.jhtml">我校参加武汉市第三届校园合唱节</a></li>
+                    </ul>
+                </div>
+            </td>
+            <td  width="342" align="left" valign="top">
+                <div class="studenttit"><span class="mn_more"><a href="/deyutese002/index.jhtml"><img src="/r/cms/sanshijiuzhongxue/default/images/ind_37.jpg" width="44" height="13" /></a></span>德育特色</div>
+                <div class="studentin">
+                    <ul>
+                        <li><span class="fright mr12">2017-11-11</span><a href="/deyutese002/6996.jhtml">新时代 新思想 新征程</a></li>
+                        <li><span class="fright mr12">2017-11-10</span><a href="/deyutese002/6995.jhtml">狠抓消防安全不松懈，筑牢平安校园</a></li>
+                        <li><span class="fright mr12">2017-10-26</span><a href="/deyutese002/6984.jhtml">运动员代表讲话稿</a></li>
+                        <li><span class="fright mr12">2017-10-15</span><a href="/deyutese002/6982.jhtml">武汉市第三十九中学组织收看《法制</a></li>
+                        <li><span class="fright mr12">2017-09-22</span><a href="/deyutese002/6969.jhtml">做智慧家长，让孩子主动高效学习</a></li>
+                        <li><span class="fright mr12">2017-09-09</span><a href="/deyutese002/6951.jhtml">我校杨婷老师荣获武昌区“十佳班主</a></li>
+                    </ul>
+                </div>
+            </td>
+            <td width="318" align="left" valign="top">
+                <div class="studenttit"><span class="mn_more"><a href="/banzichengyuan001/index.jhtml"><img src="/r/cms/sanshijiuzhongxue/default/images/ind_37.jpg" width="44" height="13" /></a></span>班子成员</div>
+                <div class="studentin01">
+                    <ul>
+                        <li>
+                            <div class="fleft bor p1"><a href="/banzichengyuan001/5992.jhtml"><img src="/u/cms/sanshijiuzhongxue/201801/12155910sgbd.jpg" width="113" height="102"/></a></div>
+                            <div class="sturig">
+                                <p class="collan fontbold"><a href="/banzichengyuan001/5992.jhtml">班子成员</a></p>
+                                <p></p>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+                    </ul>
+                </div>
+            
+            </td>
+        </tr>
+    </table>
+<div class="teacher">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td width="373" align="left" valign="top">
+                    <div class="teachertit"><span class="mn_more"><a href="/shidejianshe002/index.jhtml"><img src="/r/cms/sanshijiuzhongxue/default/images/ind_37.jpg" width="44" height="13" /></a></span>师德建设         举报电话:88071944</div>
+                    <div class="teacherin">
+                        <div class="teain001">
+                            <div class="teain001top">
+                                <div class="fleft bor p1"><a href="/shidejianshe002/6230.jhtml"><img src="/u/cms/sanshijiuzhongxue/201411/240953422q17.jpg" width="113" height="102"/></a></div>
+                                <div class="teain001toprig">
+                                    <p class=" fontbold"><span class="collan">[推荐]</span><a href="/shidejianshe002/6230.jhtml">武汉市中小学教师职业道德</a></p>
+                                    <p><p>&nbsp;<span style="color: rgb(51, 51, 51); font-family...</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            
+                            <ul>
+                                <li><span class="fright mr12">2014-11-22</span><a href="/shidejianshe002/6230.jhtml">武汉市中小学教师职业道德考核办法（试行）</a></li>
+                                <li><span class="fright mr12">2014-11-22</span><a href="/shidejianshe002/6229.jhtml">武汉市中小学教师违反职业道德行为处理办法实施</a></li>
+                                <li><span class="fright mr12">2014-11-21</span><a href="/shidejianshe002/6228.jhtml">三十九中全校教师认真学习市局加强师德建设的两</a></li>
+                                <li><span class="fright mr12">2014-11-21</span><a href="/shidejianshe002/6286.jhtml">三十九中全校教师认真学习市局加强师德建设的两</a></li>
+                                <li><span class="fright mr12">2012-03-07</span><a href="/shidejianshe002/5880.jhtml">武汉市教师职业道德规范（试行）</a></li>
+                                <li><span class="fright mr12">2013-09-02</span><a href="/shidejianshe002/5873.jhtml">武汉市第三十九中学教师师德规范</a></li>
+                                <li><span class="fright mr12">2012-03-20</span><a href="/shidejianshe002/5872.jhtml">永不言弃，一路艰辛一路歌</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+                
+                <td width="590" align="left" valign="top">
+                    <div class="tearihtit"><span class="mn_more"><a href="/jiaoshifengcai002/index.jhtml"><img src="/r/cms/sanshijiuzhongxue/default/images/ind_37.jpg" width="44" height="13" /></a></span>教师风采</div>
+                    <div class="tearihin">
+                        <ul>
+                            <li>
+                                <div class="p3 bor"><a href="/jiaoshifengcai002/6891.jhtml"><img src="/u/cms/sanshijiuzhongxue/201704/11160845gbx2.jpg" width="128" height="130"/></a></div>
+                                <div class="teaname"><a href="/jiaoshifengcai002/6891.jhtml">骨干教师</a></div>
+                            </li>
+                            <li>
+                                <div class="p3 bor"><a href="/jiaoshifengcai002/7040.jhtml"><img src="/u/cms/sanshijiuzhongxue/201801/1216244370f3.jpg" width="128" height="130"/></a></div>
+                                <div class="teaname"><a href="/jiaoshifengcai002/7040.jhtml">魏凯旋</a></div>
+                            </li>
+                            <li>
+                                <div class="p3 bor"><a href="/jiaoshifengcai002/6457.jhtml"><img src="/u/cms/sanshijiuzhongxue/201510/09172354b6da.jpg" width="128" height="130"/></a></div>
+                                <div class="teaname"><a href="/jiaoshifengcai002/6457.jhtml">王留</a></div>
+                            </li>
+                            <li>
+                                <div class="p3 bor"><a href="/jiaoshifengcai002/6004.jhtml"><img src="/u/cms/sanshijiuzhongxue/201404/0415560805if.jpg" width="128" height="130"/></a></div>
+                                <div class="teaname"><a href="/jiaoshifengcai002/6004.jhtml">谭荣</a></div>
+                            </li>
+                            <li>
+                                <div class="p3 bor"><a href="/jiaoshifengcai002/6003.jhtml"><img src="/u/cms/sanshijiuzhongxue/201404/04155144j30h.jpg" width="128" height="130"/></a></div>
+                                <div class="teaname"><a href="/jiaoshifengcai002/6003.jhtml">童世清</a></div>
+                            </li>
+                            <li>
+                                <div class="p3 bor"><a href="/jiaoshifengcai002/5957.jhtml"><img src="/u/cms/sanshijiuzhongxue/201403/25102621gqpx.jpg" width="128" height="130"/></a></div>
+                                <div class="teaname"><a href="/jiaoshifengcai002/5957.jhtml">秦曼丽</a></div>
+                            </li>
+                            <li>
+                                <div class="p3 bor"><a href="/jiaoshifengcai002/5967.jhtml"><img src="/u/cms/sanshijiuzhongxue/201403/25114726khcz.jpg" width="128" height="130"/></a></div>
+                                <div class="teaname"><a href="/jiaoshifengcai002/5967.jhtml">陈永红</a></div>
+                            </li>
+                            <li>
+                                <div class="p3 bor"><a href="/jiaoshifengcai002/6006.jhtml"><img src="/u/cms/sanshijiuzhongxue/201404/04160002h97a.jpg" width="128" height="130"/></a></div>
+                                <div class="teaname"><a href="/jiaoshifengcai002/6006.jhtml">尹在翠</a></div>
+                            </li>
+                            <div class="clear"></div>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="lianjie">
+        <div class="ljtit">友情链接</div>
+        <div class="ljin">
+            <div class="ljin001">
+                              <ul>
+                    <li><a href="http://zzjy.whjy.net/"><img src="/u/cms/sanshijiuzhongxue/201412/02143201kx2m.jpg" width="102" height="46"/></a></li>
+                    <li><a href="http://www.626china.org/"><img src="/u/cms/sanshijiuzhongxue/201709/21122620o9ra.png" width="102" height="46"/></a></li>
+                    <li><a href="http://www.21train.cn/"><img src="/u/cms/sanshijiuzhongxue/201403/18114500379c.jpg" width="102" height="46"/></a></li>
+                    <li><a href="http://www.whjyj.gov.cn/"><img src="/u/cms/sanshijiuzhongxue/201403/181146403nda.jpg" width="102" height="46"/></a></li>
+                    <li><a href="http://www.hbe.gov.cn/"><img src="/u/cms/sanshijiuzhongxue/201403/18114801zfzp.jpg" width="102" height="46"/></a></li>
+                    <li><a href="http://www.moe.gov.cn/"><img src="/u/cms/sanshijiuzhongxue/201403/18114908ph4k.jpg" width="102" height="46"/></a></li>
+                    <li><a href="http://www.zxxk.com/"><img src="/u/cms/sanshijiuzhongxue/201403/18115030hrx5.jpg" width="102" height="46"/></a></li>
+                    <li><a href="http://www.whptc.org/"><img src="/u/cms/sanshijiuzhongxue/201412/25104448d2vm.jpg" width="102" height="46"/></a></li>
+                    <li><a href="http://jxjy.whjy.net/ehr/sy/201101050905420009.html"><img src="/u/cms/sanshijiuzhongxue/201412/251041276kqe.jpg" width="102" height="46"/></a></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/18/269/1743/60219986/CA182691743602199860001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+  
+<!-- --------------------bottom---------------------- -->
+<div id="bottom">
+    <p>地址：武汉市武昌区首义路116号<span style="padding-left:15px;"></span>邮编：430060<span style="padding-left:15px;"></span>电话：027-88071942(人事室)  027-88071944(校办)
+</p>
+    <p>版权所有：武汉市第三十九中学<span style="padding-left:15px;"></span>All right seivice<span style="padding-left:15px;"></span><span style="padding-left:15px;"></span>技术支持：捷讯技术</p>
+
+         <div style="width:300px;margin:0 auto; padding:0px 0;">
+		 		<a target="_blank" 
+href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42010602000359" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+<img src="/r/cms/sanshijiuzhongxue/default/images/batb.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">鄂公网安备 42010602000359号</p></a>
+		 	</div>
+		 
+</div>
+
+
+
+    <script type="text/javascript">
+swfobject.registerObject("FlashID");
+    </script>
+</body>
+</html>

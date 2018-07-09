@@ -1,0 +1,766 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>贵州盛华职业学院</title>
+    <meta name="keywords" content="贵州盛华职业学院,贵州盛华学院,贵州职业学院,贵州学院" />
+    <meta name="description" content="贵州盛华职业学院,贵州盛华学院,贵州职业学院,贵州学院" />
+    <link href="./App_Themes/Default/Css/css.css" rel="stylesheet" type="text/css" />
+    <script src="./App_Themes/Default/Script/loadflash.js" type="text/javascript"></script>
+    <style type="text/css">
+
+.homewrapper .flashAD
+{
+    display: inline;
+    float: left;
+    height: 280px;
+    width: 600px;
+    
+}
+
+.newhomelink
+{
+   font-size:20px; 
+   text-decoration:underline; 
+   color:#0054A8;
+    
+ }
+
+        #banner {position:relative; width:600px; height:280px; margin:0 auto;}
+        #banner_list img {border:0px;}
+        #banner_bg {position:absolute; bottom:0;background-color:#000;height:35px;filter: Alpha(Opacity=30);opacity:0.3;z-index:1000;
+        cursor:pointer; width:600px; }
+        #banner_info{position:absolute; bottom:0; left:9px;height:25px;color:#fff;z-index:1001;cursor:pointer;font-weight:bold;}
+        #banner_text {position:absolute;width:120px;z-index:1002; right:3px; bottom:3px;}
+        #banner ul {position:absolute;list-style-type:none;filter: Alpha(Opacity=80);opacity:0.8; z-index:1002;
+        margin:0; padding:0; bottom:8px; right:10px;}
+        #banner ul li {margin:1px; font-weight:bold; font-size:9pt; font-family: Arial, Helvetica, sans-serif; padding:1px 5px;float:left;display:block;color:#333; background:#fff;cursor:pointer;
+            height: 15px;
+        }
+
+        #banner ul li.on { background:#900; color:#fff}
+        #banner_list a{position:absolute;} <!-- 让四张图片都可以重叠在一起-->
+
+        .style1
+        {
+            width: 10px;
+        }
+        
+        .jiaodian
+        { position:absolute;left:860px; top:212px;}
+    </style>
+    <script src="App_Themes/Default/js/jquery-1.4.2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var t = n = 0, count;
+        $(document).ready(function () {
+            count = $("#banner_list a").length;
+            $("#banner_list a:not(:first-child)").hide();
+            $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+            $("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_self")});
+            $("#banner li").click(function () {
+                var i = $(this).text() - 1; //获取Li元素内的值，即1，2，3，4
+                n = i;
+                if (i >= count) return;
+                $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+                $("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_self")})
+                $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+                document.getElementById("banner").style.background = "";
+                $(this).toggleClass("on");
+                $(this).siblings().removeAttr("class");
+            });
+            t = setInterval("showAuto()", 4000);
+            $("#banner").hover(function () { clearInterval(t) }, function () { t = setInterval("showAuto()", 4000); });
+        })
+
+        function showAuto() {
+            n = n >= (count - 1) ? 0 : ++n;
+            $("#banner li").eq(n).trigger('click');
+        }
+    </script>
+
+        <script type="text/javascript">
+            function openup() {
+                openwin("openup.html", "", "900px", "440px");
+            }
+
+
+            function openwin(url, title, width, height) {
+                window.open(url, title, "width=" + width + " ,height=" + height + " , toolbar =no, menubar=no, scrollbars=no, resizable=no, location=no, status=no") //写成一行
+            }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var duilian = $("div.duilian");
+            var duilian_close = $("a.duilian_close");
+
+            var window_w = $(window).width();
+            if (window_w > 1000) { duilian.show(); }
+            $(window).scroll(function () {
+                var scrollTop = $(window).scrollTop();
+                duilian.stop().animate({ top: scrollTop + 200 });
+            });
+            duilian_close.click(function () {
+                $(this).parent().hide();
+                return false;
+            });
+
+
+        });
+</script>
+
+<style>
+/*下面是对联广告的css代码*/
+.duilian{top:200px;position:absolute; width:200px; overflow:hidden; z-index:99999}
+.duilian_left{left:16px;z-index:99999}
+.duilian_right{right:6px;z-index:99999}
+.duilian_con{border:#CCC solid 0px; width:198px; height:423px; overflow:hidden;z-index:99999}
+.duilian_close{ width:100%; height:24px; line-height:24px; text-align:right; display:block; font-size:13px; color:#555555; text-decoration:none;z-index:99999}
+</style>
+</head>
+<body  >
+    <form name="form1" method="post" action="default.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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pKnkvb/ln7rph5FkAgYPZBYCZg8VAhFNZW51cy5hc3B4P2lkPTUzMwznlKjlj4vlhazlj7hkAgcPZBYCZg8VAhVodHRwOi8vdm9hLml5dWJhLmNvbS8PVk9B5a2m5Lmg5bmz5Y+wZAIFDxYCHwACHBY4Zg9kFgJmDxUBIC9VcExvYWQvMjAxMjA1MTUwMzI4MTA2Mjg4NzUuanBnZAIBD2QWAmYPFQEgL1VwTG9hZC8yMDEyMDUxNTAzMzg0MDA1MDc1MC5qcGdkAgIPZBYCZg8VASAvVXBMb2FkLzIwMTIwNTE1MDY0MDQ0Mzc4ODc1LnBuZ2QCAw9kFgJmDxUBIC9VcExvYWQvMjAxMjA1MTUwNjQxNTc5NzI2MjUuanBnZAIED2QWAmYPFQEgL1VwTG9hZC8yMDEyMDUxNTA2NDYxNzEyODg3NS5qcGdkAgUPZBYCZg8VASAvVXBMb2FkLzIwMTIwNTE1MDY0NjMzMDAzODc1LmpwZ2QCBg9kFgJmDxUBIC9VcExvYWQvMjAxMjA1MTUwNzUzMzA1MzUxMjUuanBnZAIHD2QWAmYPFQEgL1VwTG9hZC8yMDEyMDUxNjA5MTUyMjMxNjM3NS5qcGdkAggPZBYCZg8VASAvVXBMb2FkLzIwMTIwNTMwMTAwMDE0MDAwMDAwLmpwZ2QCCQ9kFgJmDxUBIC9VcExvYWQvMjAxMjEyMjgwMzIzMTE3MDMxMjUuanBnZAIKD2QWAmYPFQEgL1VwTG9hZC8yMDEyMTIyODAzMjMyODEwOTM3NS5qcGdkAgsPZBYCZg8VASAvVXBMb2FkLzIwMTIxMjI4MDMyNDE5MTA5Mzc1LmpwZ2QCDA9kFgJmDxUBIC9VcExvYWQvMjAxMjEyMjgwMzI0NTcwMTU2MjUuanBnZAIND2QWAmYPFQEgL1VwTG9hZC8yMDEyMTIyODAzMjUxMDU0Njg3NS5qcGdkAg4PZBYCZg8VASAvVXBMb2FkLzIwMTIxMjI4MDMyNTMwNTAwMDAwLmpwZ2QCDw9kFgJmDxUBIC9VcExvYWQvMjAxMjEyMjgwMzI1NDk4MjgxMjUuanBnZAIQD2QWAmYPFQEgL1VwTG9hZC8yMDEyMTIyODAzMzk0NjgyODEyNS5qcGdkAhEPZBYCZg8VASAvVXBMb2FkLzIwMTIxMjI4MDM0MDA1NDA2MjUwLmpwZ2QCEg9kFgJmDxUBIC9VcExvYWQvMjAxMjEyMjgwMzQwMjU1MzEyNTAuanBnZAITD2QWAmYPFQEgL1VwTG9hZC8yMDEyMTIyODAzNDA0MDU2MjUwMC5qcGdkAhQPZBYCZg8VASAvVXBMb2FkLzIwMTIxMjI4MDM0MDUzMDE1NjI1LmpwZ2QCFQ9kFgJmDxUBIC9VcExvYWQvMjAxMjEyMjgwMzQxMDc4NzUwMDAuanBnZAIWD2QWAmYPFQEgL1VwTG9hZC8yMDEyMTIyODAzNDEzMDQ2ODc1MC5qcGdkAhcPZBYCZg8VASAvVXBMb2FkLzIwMTIxMjI4MDM0MTQ1ODQzNzUwLmpwZ2QCGA9kFgJmDxUBIC9VcExvYWQvMjAxMjEyMjgwMzQxNTg2NDA2MjUuanBnZAIZD2QWAmYPFQEgL1VwTG9hZC8yMDEyMTIyODAzNDIxNzM3NTAwMC5qcGdkAhoPZBYCZg8VASAvVXBMb2FkLzIwMTIxMjI4MDM0MjQzMTQwNjI1LmpwZ2QCGw9kFgJmDxUBIC9VcExvYWQvMjAxMjEyMjgwMzQzMTA5MjE4NzUuanBnZGQLOBKpwJetfPVAYZFBpz552gQMMA==" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAwLQ5PDlBwLs0fbZDAK7q7GGCOzpCAk1Dn1f8qhCHvakxIWvyBXJ" />
+</div>
+    <!--对联广告的html代码结构 开始-->
+        
+        <div class="duilian duilian_left">
+        <!--<a href="#" class="duilian_close"><img  alt="关闭图片浮动" src="images/delete.jpg"></a>  -->
+           <div style=" height:150px;"></div>
+	       <div class="duilian_con">  <img alt="" src="images/weixinerweima.jpg" /> </div>
+        </div>
+      
+        <div class="duilian duilian_right">
+            <a href="#" class="duilian_close"><img  alt="关闭图片浮动" src="images/delete.jpg"></a>
+	        <div class="duilian_con">
+            <img alt="" src="images/zhaoshengpiaofu_new.jpg" border="0" usemap="#Map2" />
+                            <map name="Map2" id="Map2">
+                             <area shape="rect" coords="16, 30, 183, 102" href="Olapply.aspx" />
+                             <area shape="rect" coords="18, 134, 185, 206" href="AdmissionEnter.aspx" />
+                             <area shape="rect" coords="42, 324, 162, 412"  href="#"  style="CURSOR: pointer" onclick="javascript:window.open('http://b.qq.com/webc.htm?new=0&sid=800121578&o=www.forerunnercollege.com&q=7', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');" 
+                       />
+                              
+                           </map>
+
+			</div>
+			 <div class="duilian_con">
+			<!-- WPA Button Begin -->
+<script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php?key=XzgwMDEyMTU3OF8zNzU3NDZfODAwMTIxNTc4Xw"></script>
+<!-- WPA Button End -->
+
+			</div>
+   
+        </div>
+        <!--对联广告的html代码结构 结束-->
+
+    <div class="homewrapper">
+        <div class="jiaodian">
+           <a href="Menus.aspx?id=18"><img src="images/jiaodian2.jpg" /></a> </div>
+        <div class="hometop">
+        <!--
+            <div id="Div1"  style="position: absolute; top: 190px;  left:-20px; z-index:10000;" >
+        
+        <table id="__01" width="900" height="446" border="0" cellpadding="0" cellspacing="0">
+         <tr align="right">
+                    <td>
+                        <img onclick="deletediv1();" alt="关闭图片浮动" src="images/delete.jpg">
+                    </td>
+                </tr>
+	<tr>
+		<td>
+			<img src="images/1330931892719_01.jpg" width="900" height="106" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/1330931892719_02.jpg" width="900" height="114" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/1330931892719_03.jpg" width="900" height="90" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/1330931892719_04.jpg" width="900" height="92" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/1330931892719_05.jpg"  onclick="deletediv1();" width="900" height="44" alt=""></td>
+	</tr>
+</table>
+    </div>
+
+    -->
+            <!--
+            <div  style="text-align: right"><a style=" line-height:30px;border-bottom-width: 0; padding-left: 14px;
+                background: url(App_Themes/Default/newimages/e.jpg) 0 5px no-repeat; color: #a9a7a7; font-weight:bold"
+                href="en/Default.aspx">English Version </a>
+            </div>
+            -->
+            <div class="logo">
+                <img src="images/shouyemini.jpg"  usemap="#Map" />
+              
+
+                <table width="860px"  style="height:35px">
+                <tr>
+                <td align="left" valign="bottom">
+                <a href="PublicEnter.aspx" class="newhomelink">校园资讯栏</a>
+                </td>
+                <td align="left" valign="bottom">
+                <a href="AdmissionEnter.aspx" class="newhomelink">招生信息站</a>
+                </td>
+                <td align="left" valign="bottom">
+                <a href="StudentEnter.aspx" class="newhomelink">多彩学生风</a>
+                </td>
+               
+                <td align="left" valign="bottom">
+                <a href="VolunteerEnter.aspx" class="newhomelink">国际化盛华</a>
+                </td>
+                <td align="left" valign="bottom">
+                <a href="Love.aspx" class="newhomelink">爱心捐赠榜</a>
+                </td>
+                <td align="center" valign="bottom">
+                <a href="PicNewEnter.aspx" class="newhomelink">图片说盛华</a>
+                
+                </td>
+                <td align="right" valign="bottom">
+                <a href="en/Default.aspx"  class="newhomelink">English</a>
+                </td>
+          
+                </tr>
+                
+                </table>
+            </div>
+        </div>
+        <div class="home_content">
+            <div class="flashAD">
+                <div id="banner">
+                    <div id="banner_bg"></div>
+                    <div id="banner_info"></div>
+                    <ul>
+                    
+                    <li class="on">1</li>
+                    
+
+                      <li>2</li>
+                    
+
+                      <li>3</li>
+                    
+
+                      <li>4</li>
+                    
+
+                      <li>5</li>
+                    
+
+                      <li>6</li>
+                    
+                        
+                    </ul>
+                    <div id="banner_list">
+                        
+                                <a href="#">
+                                    <img src="/UpLoad\20171018044229377717.jpg" title="" alt="喜迎十九大" width="600px" height="280px" /></a>
+                            
+                                <a href="#">
+                                    <img src="/UpLoad\20160831100345252074.jpg" title="" alt="国务院副总理汪洋：盛华学院能够紧紧围绕贵州进行贫困帮扶，这件事值得鼓励。" width="600px" height="280px" /></a>
+                            
+                                <a href="#">
+                                    <img src="/UpLoad\20160826053516088677.jpg" title="" alt="陈敏尔书记：盛华学院，职教创新，助学生“弱鸟先飞、展翅翱翔”" width="600px" height="280px" /></a>
+                            
+                                <a href="#">
+                                    <img src="/UpLoad\20160826053622372048.jpg" title="" alt="孙志刚省长：学校就应该要这么办！" width="600px" height="280px" /></a>
+                            
+                                <a href="#">
+                                    <img src="/UpLoad\20160826053721108302.jpg" title="" alt="董事长王雪红、陈文琦、孙伟校长为新成立的“VIVE虚拟现实产业发展学院”揭牌" width="600px" height="280px" /></a>
+                            
+                                <a href="#">
+                                    <img src="/UpLoad\20160826053736858806.jpg" title="" alt="志愿者被授予志愿者徽章" width="600px" height="280px" /></a>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="home_news">
+                <div class="news_m">
+                    
+                            <div class="home_pic">
+                                <a href="NewsInfo.aspx?id=4661">
+                                    <img alt="" src="/UpLoad\20180528035737045198.jpg" width="90" height="55" />
+                                </a>
+                                <p >
+                                   
+                                    05/27
+                                    <a href="NewsInfo.aspx?id=4661">
+                                        国家开发大学校长杨志坚一行莅临我校考察交...
+                                    </a>
+                                   
+                                   
+                                </p>
+                                <!--<span style=" position:absolute;right:13px; bottom:13px;" > <a style="color: #E05B10;" href="NewsInfo.aspx?id=4661">more</a></span>-->
+                            </div>
+                        
+                            <div class="home_pic">
+                                <a href="NewsInfo.aspx?id=4658">
+                                    <img alt="" src="/UpLoad\20180524035224060961.jpg" width="90" height="55" />
+                                </a>
+                                <p >
+                                   
+                                    05/24
+                                    <a href="NewsInfo.aspx?id=4658">
+                                        贵州省2018年思想政治教育工作检查组莅...
+                                    </a>
+                                   
+                                   
+                                </p>
+                                <!--<span style=" position:absolute;right:13px; bottom:13px;" > <a style="color: #E05B10;" href="NewsInfo.aspx?id=4658">more</a></span>-->
+                            </div>
+                        
+                            <div class="home_pic">
+                                <a href="NewsInfo.aspx?id=4645">
+                                    <img alt="" src="/UpLoad\20180521053952255809.jpg" width="90" height="55" />
+                                </a>
+                                <p >
+                                   
+                                    05/19
+                                    <a href="NewsInfo.aspx?id=4645">
+                                        贵州盛华职业学院党委班子召开2017年度...
+                                    </a>
+                                   
+                                   
+                                </p>
+                                <!--<span style=" position:absolute;right:13px; bottom:13px;" > <a style="color: #E05B10;" href="NewsInfo.aspx?id=4645">more</a></span>-->
+                            </div>
+                        
+                            <div class="home_pic">
+                                <a href="NewsInfo.aspx?id=4644">
+                                    <img alt="" src="/UpLoad\20180521022540028038.jpg" width="90" height="55" />
+                                </a>
+                                <p >
+                                   
+                                    05/19
+                                    <a href="NewsInfo.aspx?id=4644">
+                                        四川省妇联绣梦扶贫考察团到我校考察交流 
+                                    </a>
+                                   
+                                   
+                                </p>
+                                <!--<span style=" position:absolute;right:13px; bottom:13px;" > <a style="color: #E05B10;" href="NewsInfo.aspx?id=4644">more</a></span>-->
+                            </div>
+                        
+                </div>
+            </div>
+            <!--news end-->
+            <!-- flash end-->
+            <div class="home_link">
+            </div>
+
+   
+            <div class="home_center_icon_div">
+                 <a href="Olapply.aspx" style="vertical-align:bottom;" ><img src="images/home_online_apply1.jpg" style="vertical-align:bottom;" />在线报名</a>&nbsp;<a href="http://weibo.com/shenghuaxueyuan" style="vertical-align:bottom;" ><img src="images/home_weibo1.jpg" style="vertical-align:bottom;" />学校微博</a>&nbsp;<a href="Menus.aspx?id=187" style="vertical-align:bottom;" ><img src="images/home_media1.jpg" style="vertical-align:bottom;" />媒体关注</a>&nbsp;<a href="#" style="vertical-align:bottom;" onclick="javascript:window.open('http://b.qq.com/webc.htm?new=0&sid=800121578&o=www.forerunnercollege.com&q=7', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');" >
+                  <img src="images/home_qq1.jpg" style="vertical-align:bottom;"  />学校QQ</a>&nbsp;<a href="Menus.aspx?id=314" style="vertical-align:bottom;" ><img src="images/home_video1.jpg" style="vertical-align:bottom;" />视频锦集</a>&nbsp;<a href="MailEnter.aspx"  style="vertical-align:bottom;"><img src="images/mail/mail1.png"  width="35px" height="35px" style="vertical-align:bottom;" />校长信箱</a>&nbsp;<a href="MailPost.aspx?type=1"  style="vertical-align:bottom;"><img src="images/mail/mail2.png" width="35px" height="35px" style="vertical-align:bottom;" />书记信箱</a>         
+
+                          
+            </div>
+
+            
+                    <div class="home_link">
+                        教学成果:&nbsp;
+                        
+                            <a href="http://www.forerunnercollege.com/FilesInfo.aspx?id=122">“公益兴学，扶农育人”项目</a>&nbsp;
+                            
+                            <a href="http://www.forerunnercollege.com/FilesInfo.aspx?id=123">“扶贫助盲，变弱为强”项目</a>&nbsp;
+                            
+                            <a href="http://www.forerunnercollege.com/FilesInfo.aspx?id=124">“非遗文化教育”项目        </a>&nbsp;
+                            
+                     </div>
+                
+                    <div class="home_link">
+                        学校概况:&nbsp;
+                        
+                            <a href="http://www.forerunnercollege.com/Menus.aspx?id=34">学校简介</a>&nbsp;
+                            
+                            <a href="Menus.aspx?id=459">办学理念</a>&nbsp;
+                            
+                            <a href="http://www.forerunnercollege.com/Menus.aspx?id=521">校长寄语</a>&nbsp;
+                            
+                            <a href="Menus.aspx?id=38">美丽校园</a>&nbsp;
+                            
+                     </div>
+                
+                    <div class="home_link">
+                        院系设置:&nbsp;
+                        
+                            <a href="SInternet.aspx">互联网营销学院</a>&nbsp;
+                            
+                            <a href="SBusiness.aspx">工商管理学院</a>&nbsp;
+                            
+                            <a href="SComputer.aspx">虚拟现实产业发展学院</a>&nbsp;
+                            
+                            <a href="STea.aspx">茶学院</a>&nbsp;
+                            
+                            <a href="SCulture.aspx">唐人坊非遗学院</a>&nbsp;
+                            
+                            <a href="SBright.aspx">盲人学院</a>&nbsp;
+                            
+                     </div>
+                
+                    <div class="home_link">
+                        师资介绍:&nbsp;
+                        
+                            <a href="Teacher.aspx?id=171">教学名师</a>&nbsp;
+                            
+                            <a href="Teacher.aspx?id=445">骨干教师</a>&nbsp;
+                            
+                            <a href="Teacher.aspx?id=151">欧美外教</a>&nbsp;
+                            
+                            <a href="Teacher.aspx?id=60">企业高级培训师</a>&nbsp;
+                            
+                     </div>
+                
+                    <div class="home_link">
+                        合作企业:&nbsp;
+                        
+                            <a href="Menus.aspx?id=505">万豪国际集团</a>&nbsp;
+                            
+                            <a href="Menus.aspx?id=506">百度公司</a>&nbsp;
+                            
+                            <a href="Menus.aspx?id=507">HTC公司</a>&nbsp;
+                            
+                            <a href="Menus.aspx?id=508">多彩贵州公司</a>&nbsp;
+                            
+                            <a href="Menus.aspx?id=509">北京唐人坊公司</a>&nbsp;
+                            
+                            <a href="Menus.aspx?id=510">中国红十字基金会光明天使基金</a>&nbsp;
+                            
+                            <a href="Menus.aspx?id=533">用友公司</a>&nbsp;
+                            
+                            <a href="http://voa.iyuba.com/">VOA学习平台</a>&nbsp;
+                            
+                     </div>
+                
+
+             <div class="home_link">
+                快速链接:&nbsp;&nbsp;<a href="http://www.gfcedu.com:9098">数字化校园</a>&nbsp;&nbsp;&nbsp;<!--<a href="OA登录地址.htm">办公系统</a>&nbsp;&nbsp;-->
+                <a href="FilesList.aspx?type=2">校内刊物</a>&nbsp;&nbsp;
+               <a href="WorkGuide.aspx">办事指南</a>&nbsp;&nbsp;&nbsp;<a href="http://10.10.10.30/library/">图书馆</a>&nbsp;&nbsp;
+               <a href="http://h38626.w70.zndns.net/">教务信息</a>&nbsp;&nbsp;
+                <input name="TextBox2" type="text" id="TextBox2" class="input_solid_border" />
+                <input type="submit" name="Button2" value="搜索" id="Button2" class="noborder_nobg_bt" />
+            </div>
+	    
+
+            <div class="picbannerbg">
+            <div class="picbanner">
+                <div class="pichead">
+                    <div id="demo" style="overflow: hidden; width: 680px;">
+                        <table border="0" align="center" cellpadding="0" cellspacing="0" cellspace="0">
+                            <tr>
+                                <td valign="top" id="marquePic1">
+                                    <table width='100%' border='0' cellspacing='0'>
+                                        <tr>
+                                            
+                                                    <td>
+                                                        <img src="/UpLoad/20120515032810628875.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20120515033840050750.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20120515064044378875.png" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20120515064157972625.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20120515064617128875.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20120515064633003875.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20120515075330535125.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20120516091522316375.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20120530100014000000.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228032311703125.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228032328109375.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228032419109375.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228032457015625.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228032510546875.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228032530500000.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228032549828125.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228033946828125.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228034005406250.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228034025531250.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228034040562500.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228034053015625.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228034107875000.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228034130468750.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228034145843750.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228034158640625.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228034217375000.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228034243140625.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                                    <td>
+                                                        <img src="/UpLoad/20121228034310921875.jpg" width="30" height="30"
+                                                            onmouseover="picshow(this.src)" onmousemove="picmove(this.src)" onmouseout="pichide(this.src)" />
+                                                    </td>
+                                                
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td id="marquePic2" valign="top" class="style1">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <script type="text/javascript">
+                        var speed = 50
+                        marquePic2.innerHTML = marquePic1.innerHTML
+                        function Marquee() {
+                            if (demo.scrollLeft >= marquePic1.scrollWidth) {
+                                demo.scrollLeft = 0;
+
+                            } else {
+                                demo.scrollLeft = demo.scrollLeft + 2;
+
+                            }
+                        }
+
+
+                        var MyMar = setInterval(Marquee, speed)
+                        demo.onmouseover = function () { clearInterval(MyMar); }
+                        demo.onmouseout = function () { MyMar = setInterval(Marquee, speed) } 
+                            
+                    </script>
+                </div>
+                <div class="picwx">
+                    <a href="SmileEnter.aspx">微笑行动</a> | <a href="PicNewEnter.aspx">图说盛华</a>
+                </div>
+            </div>
+            <!-- end picbanner -->
+
+                <div id="m" style="position: absolute; top: 0; left: 0; width:150px; height:150px; visibility: hidden; padding: 3px;
+                    border: 1px solid #FFB9A2; background-color: #ffdfd0; overflow: hidden;"><img id="hiddenpic" src="/uploads/common/images/p5.jpg" width="150px" height="150px">
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                function picshow(src) {
+                    var a = document.getElementById("m");
+                    a.style.visibility = 'visible';
+                    a.style.top = "-170px";
+                    a.style.left = "702px"
+                    document.images.hiddenpic.src = src;
+                }
+                function picmove(src) {
+                    var b = document.getElementById("m");
+                    b.style.top = "-170px";
+                    b.style.left = "702px";
+                    document.images.hiddenpic.src = src;
+                }
+                function pichide(src) {
+                    var c = document.getElementById("m");
+                    c.style.visibility = 'hidden';
+                    document.images.hiddenpic.src = src;
+                }
+                function trfunc() {
+                    var d = document.getElementsByTagName("tr");
+                    d[1].attachEvent("onmouseover", picshow);
+                    d[1].attachEvent("onmousemove", picmove);
+                    d[1].attachEvent("onmouseout", pichide);
+                }
+            </script>
+            
+        </div>
+
+
+
+        <div class="home_bottom_t">
+           <!-- <a href="old/Default.aspx">旧版入口</a>&nbsp;&nbsp; --><a href="Menus.aspx?id=285">联系我们</a>&nbsp;&nbsp; <a href="Menus.aspx?id=102">招聘启事</a>&nbsp;&nbsp;
+            <a href="http://www.gzsjyt.gov.cn/">友情链接</a>&nbsp;&nbsp; <a href="FilesList.aspx">下载中心</a>&nbsp;&nbsp; 
+        </div>
+        <div class="home_bottom_b">
+            <p>
+                学校地址：中国 贵州 惠水 百鸟河景区 基金会地址：北京市海淀区中关村东路1号院7号楼威盛中国芯大厦</p>
+            <p style="white-space: nowrap">
+               版权所有 @2009-2013 贵州盛华职业学院 黔ICP备13001734号 </p> 
+                 <p style="white-space: nowrap">
+                    <a href="Menus.aspx?id=454">隐私说明</a>  <a href="Menus.aspx?id=455">版权声明</a>
+                  </p> 
+             
+                <p style="white-space: nowrap"><script
+                    src="http://s25.cnzz.com/stat.php?id=4042605&web_id=4042605&show=pic1" language="JavaScript"></script>
+            </p>
+        </div>
+    </div>
+    <!--wrapper end-->
+
+    </form>
+
+    <!--
+    <div id="FloatDiv20" onmouseover="floatdivstop20()" style="left: 0px; position: absolute;
+        top: 0px" onmouseout="floatdivstart20()">
+        <table height="100" cellspacing="0" cellpadding="0" width="100" border="0">
+            <tbody>
+                <tr align="right">
+                    <td>
+                        <img onclick="deleteFloatDiv20();" alt="关闭图片浮动" src="images/delete.jpg">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                            <tbody>
+                                <tr>
+                                    <td width="100%" height="1">
+                                        <table cellspacing="0" cellpadding="0" width="100%" align="center">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="middle">
+                                                        <center>
+                                                            <img alt="" src="images/piaoonline_new.png" border="0" usemap="#Map2" />
+                                                            <map name="Map2" id="Map2">
+                                                                <area shape="rect" coords="9, 42, 164, 105" href="Templete.aspx?id=30" />
+                                                                <area shape="rect" coords="7, 111, 170, 135" href="Menus.aspx?id=318" />
+                                                                <area shape="rect" coords="15, 2, 254, 144" href="Olapply.aspx" />
+                                                            </map>
+                                                        </center>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="100%" height="10">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script language="javascript">        var canmove20 = 1; var vmin20 = 2; var vmax20 = 5; var vr20 = 2; var timer120; function Chip20(chipname, width, height) { this.named = chipname; this.vx = vmin20 + vmax20 * Math.random(); this.vy = vmin20 + vmax20 * Math.random(); this.w = width; this.h = height; this.xx = 0; this.yy = 0; this.timer1 = null; } function movechip20(chipname) { if (canmove20 == 1) { chip = FloatDiv20; pageX = window.document.body.scrollLeft; pageW = window.document.body.offsetWidth - 8; pageY = window.document.body.scrollTop; pageH = window.document.body.clientHeight; ; chip.xx = chip.xx + chip.vx; chip.yy = chip.yy + chip.vy; chip.vx += vr20 * (Math.random() - 0.5); chip.vy += vr20 * (Math.random() - 0.5); if (chip.vx > (vmax20 + vmin20)) { chip.vx = (vmax20 + vmin20) * 1 - chip.vx; } if (chip.vx < (-vmax20 - vmin20)) { chip.vx = (-vmax20 - vmin20) * 1 - chip.vx; } if (chip.vy > (vmax20 + vmin20)) { chip.vy = (vmax20 + vmin20) * 1 - chip.vy; } if (chip.vy < (-vmax20 - vmin20)) { chip.vy = (-vmax20 - vmin20) * 1 - chip.vy; } if (chip.xx <= pageX) { chip.xx = pageX; chip.vx = vmin20 + vmax20 * Math.random(); } if (chip.xx >= pageX + pageW - chip.w) { chip.xx = pageX + pageW - chip.w; chip.vx = -vmin20 - vmax20 * Math.random(); } if (chip.yy <= pageY) { chip.yy = pageY; chip.vy = vmin20 + vmax20 * Math.random(); } if (chip.yy >= pageY + pageH - chip.h) { chip.yy = pageY + pageH - chip.h; chip.vy = -vmin20 - vmax20 * Math.random(); } var a = 'document.getElementById("' + chip.named + '").style.left=chip.xx;'; var b = 'document.getElementById("' + chip.named + '").style.top=chip.yy;'; eval(a); eval(b); } chip.timer1 = setTimeout('movechip20(' + chip.named + ')', 100); }</script>
+    <script language="JavaScript">        var FloatDiv20; function FloatDiv20() { FloatDiv20 = new Chip20('FloatDiv20', 100, 100); movechip20('FloatDiv20'); } FloatDiv20();</script>
+    <script language="JavaScript">        function deleteFloatDiv20() { document.getElementById('FloatDiv20').style.display = 'none'; }</script>
+    <script language="javascript">        function floatdivstop20() { canmove20 = 0; } function floatdivstart20() { canmove20 = 1; }</script>
+    -->
+
+
+ 
+
+
+
+    <script language="JavaScript">        function deletediv1() { document.getElementById('Div1').style.display = 'none'; }</script>
+    
+	<SCRIPT type=text/javascript src="js/piao.js"></SCRIPT>
+<script src="http://api.microyan.com/sidebar?id=5001"></script>
+</body>
+</html>
+
+

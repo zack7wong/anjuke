@@ -1,0 +1,60 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>江津中学</title>
+<style type="text/css">
+body {
+	background-image: url(/webschool/News/images/main_02.jpg);
+	background-repeat: repeat;
+	margin:0;
+}
+</style>
+<script type="text/javascript">
+function mouseOver(id,img){
+	document.getElementById(id).src ="/webschool/News/images/"+img;
+}
+function mouseOut(id,img){
+	document.getElementById(id).src ="/webschool/News/images/"+img;
+}
+</script>
+</head>
+
+<body>
+<table width="1200" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="168" valign="top"><img src="/webschool/News/images/main_01.jpg" width="1200" height="129" /></td>
+  </tr>
+  <tr>
+    <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="35"> <img src="/webschool/News/images/main_03.jpg" width="35"  height="256" /></td>
+       
+	    <td><a href="/webschool/News" onmouseover="mouseOver('b4','main04.jpg')" onmouseout="mouseOut('b4','main_04.jpg')"><img src="/webschool/News/images/main_04.jpg" id="b4" border="0"/></a></td>
+        
+		<td> <a href="/webschool/MySpace" onmouseover="mouseOver('b5','main05.jpg')" onmouseout="mouseOut('b5','main_05.jpg')"><img src="/webschool/News/images/main_05.jpg" id="b5" border="0"/></a></td>
+        
+		<td> <a href="/webschool/News/cmw.jsp" onmouseover="mouseOver('b6','main06.jpg')" onmouseout="mouseOut('b6','main_06.jpg')"><img src="/webschool/News/images/main_06.jpg" id="b6" border="0"/></a></td>
+        
+		<td> <a href="http://www.iwener.com/jjzx" onmouseover="mouseOver('b7','main07.jpg')" onmouseout="mouseOut('b7','main_07.jpg')"><img src="/webschool/News/images/main_07.jpg" id="b7" border="0"/></a></td>
+        
+		<td> <a href="/webschool/News/jyw.jsp" onmouseover="mouseOver('b8','main08.jpg')" onmouseout="mouseOut('b8','main_08.jpg')"><img src="/webschool/News/images/main_08.jpg" id="b8" border="0"/></a></td>
+        
+		<td> <a href="/webschool/News/xlwz/" onmouseover="mouseOver('b9','main09.jpg')" onmouseout="mouseOut('b9','main_09.jpg')"><img src="/webschool/News/images/main_09.jpg" id="b9" border="0"/></a></td>
+        
+		<td> <a href="http://www.cqjjzx.com:87/moodle2/" onmouseover="mouseOver('b10','main10.jpg')" onmouseout="mouseOut('b10','main_10.jpg')"><img src="/webschool/News/images/main_10.jpg" id="b10" border="0"/></a></td>
+        
+		<td> <a href="/webschool/News/nrzwz/" onmouseover="mouseOver('b11','main11.jpg')" onmouseout="mouseOut('b11','main_11.jpg')"><img src="/webschool/News/images/main_11.jpg" id="b11" border="0"/></a></td>
+        <td><img src="/webschool/News/images/main_12.jpg" width="28" height="256" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><img src="/webschool/News/images/main_03-13.jpg" width="1200" height="176" /></td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=8" />
+
+
+
+<script language="javascript">
+var __exp_path = "index";
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>南京市第三十九中学</title>
+<meta name="keywords" content="南京市第三十九中学"/>
+<meta name="description" content="南京市第三十九中学"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link type="text/css" href="css/zzsc.css" rel="stylesheet" />
+<script src="js/jquery-1.4a2.min.js" type="text/javascript"></script>
+<script src="js/jquery.KinSlideshow-1.2.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/zzsc.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#KinSlideshow").KinSlideshow({
+                btn:{
+						 btn_bgColor:"#FFFFFF",
+						 btn_fontColor:"#000000",
+						 btn_fontHoverColor:"#FFFFFF",
+						 btn_borderWidth:1,
+						 btn_bgAlpha:1
+					 }
+        });
+})
+</script>
+</head>
+
+
+<body>
+<div class="main">
+    
+ 
+ <script>
+ 
+ function login(){
+		var username = document.getElementById('user').value;
+		var pwd = document.getElementById('password').value;
+		var url = "/simas/newhome/login.jsp?agentid=0&username="+username+"&pwd="+pwd;
+		window.open(url);
+		
+	}
+ </script>
+ 
+ <div class="header">
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1165" height="195" id="FlashID" title="top">
+          <param name="movie" value="flash/top.swf">
+          <param name="quality" value="high">
+          <param name="wmode" value="opaque">
+          <param name="swfversion" value="11.0.0.0">
+          <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+          <param name="expressinstall" value="Scripts/expressInstall.swf">
+          <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+          <!--[if !IE]>-->
+          <object type="application/x-shockwave-flash" data="flash/top.swf" width="1165" height="195">
+            <!--<![endif]-->
+            <param name="quality" value="high">
+            <param name="wmode" value="opaque">
+            <param name="swfversion" value="11.0.0.0">
+            <param name="expressinstall" value="Scripts/expressInstall.swf">
+            <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+            <div>
+              <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+              <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+            </div>
+            <!--[if !IE]>-->
+          </object>
+          <!--<![endif]-->
+      </object>
+        <div class="nav">
+        	<ul>
+            	<li><a href="index.jsp">首页</a></li>
+       				
+						<li><a href="list.jsp?chntypeid=3740"> 走进39中 </a></li>
+						
+						<li><a href="list.jsp?chntypeid=3741"> 新闻聚焦 </a></li>
+						
+						<li><a href="list.jsp?chntypeid=3742"> 党建之窗 </a></li>
+						
+						<li><a href="list.jsp?chntypeid=3743"> 教学工作 </a></li>
+						
+						<li><a href="list.jsp?chntypeid=3744"> 德育工作 </a></li>
+						
+						<li><a href="list.jsp?chntypeid=3745"> 后勤服务 </a></li>
+						
+						<li><a href="list.jsp?chntypeid=3746"> 办学特色 </a></li>
+						
+						<li><a href="list.jsp?chntypeid=3747"> 团队之家 </a></li>
+						
+						<li><a href="list.jsp?chntypeid=3748"> 工会工作 </a></li>
+						
+						<li><a href="list.jsp?chntypeid=3749"> 招生招聘 </a></li>
+						 
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="serbox">
+        	<form name="searchfrm" method="post" action="search.jsp?actionName=doPage" class="header-search-form" >
+        	<div class="search">
+            	<font style="font-size:16px;">内容检索：</font><input type="text" id="keywords" name="searchkey" />
+                <input type="submit" id="serbtn" name="serbtn" value="搜索" />
+            </div>
+            </form>
+            
+            
+            <div class="login">
+            	用户名：<input type="text" id="user" name="username" />&nbsp;&nbsp;&nbsp;&nbsp;
+                密码：<input type="password" id="password" name="password" />&nbsp;&nbsp;
+                <input type="button" id="login" name="login" value="登录" onclick="login();" />
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+	
+    <div class="main_mid">
+    	<div class="left">
+        	<div class="lbox">
+            	<h2 class="httl1"><a href="list.jsp?chntypeid=3750">通知公告 | NOTICE</a></h2>
+                <ul class="notlist">
+                	
+						<li><a href="content.jsp?chnid=3750&cntid=9640" target="_blank" title="第14周学校工作安排">第14周学校工作安排</a></li>
+					 
+						<li><a href="content.jsp?chnid=3750&cntid=9600" target="_blank" title="关于在全区教育系统开展师德评选活动的通知（转）">关于在全区教育系统开展师德评选...</a></li>
+					 
+						<li><a href="content.jsp?chnid=3750&cntid=9561" target="_blank" title="南京市第三十九中学（小升初）击剑特长生测试成绩公示">南京市第三十九中学（小升初）击...</a></li>
+					 
+						<li><a href="content.jsp?chnid=3750&cntid=9560" target="_blank" title="第13周学校工作安排">第13周学校工作安排</a></li>
+					 
+						<li><a href="content.jsp?chnid=3750&cntid=9500" target="_blank" title="第12周学校工作安排">第12周学校工作安排</a></li>
+					 
+						<li><a href="content.jsp?chnid=3750&cntid=9460" target="_blank" title="第11周学校工作安排">第11周学校工作安排</a></li>
+					 
+						<li><a href="content.jsp?chnid=3750&cntid=9400" target="_blank" title="第10周学校工作安排">第10周学校工作安排</a></li>
+					 
+						<li><a href="content.jsp?chnid=3750&cntid=9300" target="_blank" title="2018年南京市第三十九中学体育特长生招生简章">2018年南京市第三十九中学体...</a></li>
+					 
+						<li><a href="content.jsp?chnid=3750&cntid=9260" target="_blank" title="第9周学校工作安排">第9周学校工作安排</a></li>
+					 
+						<li><a href="content.jsp?chnid=3750&cntid=9242" target="_blank" title="2018年“行知杯”评审通知及相关文件">2018年“行知杯”评审通知及...</a></li>
+					     
+                </ul>
+            </div>
+            <div class="lbox">
+            	<h2 class="httl2"><a href="#">应用链接 | APPLICATION</a></h2>
+                <ul class="application">
+
+                	 <li class="appbg1"><a href="list.jsp?chntypeid=4080">校长专栏</a></li>
+                    <li class="appbg2"><a href="http://10.250.8.50/photo">校园图片库</a></li>
+                    <li class="appbg3"><a href="#">校务委员会</a></li>
+                    <li class="appbg4"><a href="#">校园合作交流</a></li>
+                    <li class="appbg5"><a href="#">教育法律法规</a></li>
+                  <li class="appbg6"><a href="http://10.250.8.50:5000">校园存储系统</a></li>
+                    <li class="appbg7"><a href="#">书记信箱</a></li>
+                    <li class="appbg8"><a href="#">校长信箱</a></li>
+                    <li class="appbg9"><a href="#">视频交流</a></li>
+                    <li class="appbg10"><a href="http://www.nj39.com:8900">旧版网站</a></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            <div class="lbox">
+            	<h2 class="httl3"><a href="list.jsp?chntypeid=3759">校关工委 | COMMITTEE</a></h2>
+                <ul class="notlist">
+                	    
+                </ul>
+            </div>
+            <div class="lbox">
+            	<h2 class="httl4"><a href="list.jsp?chntypeid=3760">工会、退协 | RETREAT</a></h2>
+                <ul class="notlist">
+                	    
+                </ul>
+            </div>
+            <div class="lbox">
+            	<h2 class="httl5"><a href="#">班级空间 | CLASS BLOG</a></h2>
+                <div class="calssblog">
+                	<h3><a href="#">最新日志</a></h3>
+                    <ul class="bloglist">
+	                        
+                	</ul>
+                    <div class="clear"></div>
+                    <h4><a href="list.jsp?chntypeid=3801">初一年级</a></h4>
+                    <h4><a href="list.jsp?chntypeid=3802">初二年级</a></h4>
+                    <h4><a href="list.jsp?chntypeid=3803">初三年级</a></h4>
+                </div>
+            </div>
+            <div class="lbox">
+            	<h2 class="httl6"><a href="#">网站信息 | STATISTICS</a></h2>
+                <p class="siteinfo">
+                
+                	站长统计<br />
+                	
+                    总访问人数:<span>367843</span><br />
+                    今日访问人数:<span>194</span><br /> 
+                    昨日访问人数:<span>408</span><br /> 
+                    文章数统计:<span>849</span><br /> 
+                    <!-- 评论数统计：<span>347</span><br /> -->
+                </p>
+            </div>
+        </div>
+        <div class="right">
+        	<div class="rbox">
+            	<h2 class="rttl"><span><a href="list.jsp?chntypeid=3741">更多>></a></span><a href="list.jsp?chntypeid=3741">校园新闻 | NEWS</a></h2>
+                <div class="newspic">
+                	<div id="KinSlideshow" style="visibility:hidden;">
+                		
+							<a href="content.jsp?chnid=3628&cntid=9620"><img alt="家校共进促成长 心理护航育希望" src="/attaches/1299/20180523/20180523093803116_s.jpg" width="450" height="280" /></a>
+						 
+							<a href="content.jsp?chnid=3628&cntid=9562"><img alt="与科学家对话 ——中科院李世杰博士到我校作科普报告" src="/attaches/1299/20180521/20180521111814197_s.JPG" width="450" height="280" /></a>
+						 
+							<a href="content.jsp?chnid=3628&cntid=9540"><img alt="探索前沿 智慧共建  ——我校参观第74届全国教育装备展示会" src="/attaches/1299/20180518/20180518085033449_s.jpg" width="450" height="280" /></a>
+						 
+							<a href="content.jsp?chnid=3628&cntid=9320"><img alt="<font color='#FF0000'>诚开双臂迎远客   交感共鸣凝智慧 ——39中迎接四川、浙江两省教育访问团</font>" src="/attaches/1299/20180426/20180426095514449_s.JPG" width="450" height="280" /></a>
+						 
+							<a href="content.jsp?chnid=3628&cntid=9180"><img alt="三十九中青少年普法教育 ——法律咨询会" src="/attaches/1299/20180415/20180415094635612001.jpg" width="450" height="280" /></a>
+						 
+							<a href="content.jsp?chnid=3628&cntid=9060"><img alt="学校膳食委员会前往食堂食材供货商厂家实地考察" src="/attaches/1299/20180410/20180410152332934_s.jpg" width="450" height="280" /></a>
+						 
+                    </div>
+                </div>
+                <div class="newlist">
+                	<ul class="news">
+	                	
+							<li><span>18-05-23</span><a href="content.jsp?chnid=3628&cntid=9620" target="_blank" title="家校共进促成长 心理护航育希望">家校共进促成长 心理护航育希望</a></li>
+						 
+							<li><span>18-05-21</span><a href="content.jsp?chnid=3628&cntid=9562" target="_blank" title="与科学家对话 ——中科院李世杰博士到我校作科普报告">与科学家对话 ——中科院李世杰博士到我校作科普报告</a></li>
+						 
+							<li><span>18-05-18</span><a href="content.jsp?chnid=3628&cntid=9540" target="_blank" title="探索前沿 智慧共建  ——我校参观第74届全国教育装备展示会">探索前沿 智慧共建  ——我校参观第74届全国教育...</a></li>
+						 
+							<li><span>18-04-26</span><a href="content.jsp?chnid=3630&cntid=9340" target="_blank" title="三十九中校歌">三十九中校歌</a></li>
+						 
+							<li><span>18-04-26</span><a href="content.jsp?chnid=3630&cntid=9321" target="_blank" title="校园民谣——《三十九》">校园民谣——《三十九》</a></li>
+						 
+							<li><span>18-04-26</span><a href="content.jsp?chnid=3628&cntid=9320" target="_blank" title="诚开双臂迎远客   交感共鸣凝智慧 ——39中迎接四川、浙江两省教育访问团"><font color='#FF0000'>诚开双臂迎远客   交感共鸣凝智慧 ——39中迎接...</font></a></li>
+						 
+							<li><span>18-04-15</span><a href="content.jsp?chnid=3628&cntid=9180" target="_blank" title="三十九中青少年普法教育 ——法律咨询会">三十九中青少年普法教育 ——法律咨询会</a></li>
+						 
+							<li><span>18-04-10</span><a href="content.jsp?chnid=3628&cntid=9060" target="_blank" title="学校膳食委员会前往食堂食材供货商厂家实地考察">学校膳食委员会前往食堂食材供货商厂家实地考察</a></li>
+						 
+							<li><span>18-04-10</span><a href="content.jsp?chnid=3628&cntid=9040" target="_blank" title="优化设计 提高复习课效率 ————记鼓楼区物理中考复习课教学研究在我校举行">优化设计 提高复习课效率 ————记鼓楼区物理中考...</a></li>
+						 
+							<li><span>18-04-02</span><a href="content.jsp?chnid=3628&cntid=8961" target="_blank" title="三十九中团委喜报频传,创佳绩">三十九中团委喜报频传,创佳绩</a></li>
+						     
+                    	
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="rbox2">
+            	<div class="rboxl">
+                	<h2 class="rttl"><span><a href="list.jsp?chntypeid=3751">更多>></a></span><a href="list.jsp?chntypeid=3751">党委</a></h2>
+                    <ul class="news">
+                    	
+							<li><span>18-05-08</span><a href="content.jsp?chnid=3751&cntid=9482" target="_blank" title="务实创新求发展  精铸优品谋未来"><font color='#FF0000'>务实创新求发展  精铸优品谋未来</font></a></li>
+						 
+							<li><span>18-05-08</span><a href="content.jsp?chnid=3751&cntid=9480" target="_blank" title="顶天立地的伟人 有血有肉的常人">顶天立地的伟人 有血有肉的常人</a></li>
+						 
+							<li><span>18-04-23</span><a href="content.jsp?chnid=3751&cntid=9282" target="_blank" title="中兴危机启示----我国的最大危机（转摘）">中兴危机启示----我国的最大危机（转摘）</a></li>
+						 
+							<li><span>18-04-02</span><a href="content.jsp?chnid=3751&cntid=8940" target="_blank" title="《中小学教师违反职业道德行为处理办法》">《中小学教师违反职业道德行为处理办法》</a></li>
+						 
+							<li><span>18-03-20</span><a href="content.jsp?chnid=3751&cntid=8860" target="_blank" title="“四个统一”是师德师风建设的时代要求">“四个统一”是师德师风建设的时代要求</a></li>
+						 
+							<li><span>18-03-09</span><a href="content.jsp?chnid=3751&cntid=8801" target="_blank" title="金一南：中共的另一面令所有敌人胆寒！（转摘）">金一南：中共的另一面令所有敌人胆寒！（转摘）</a></li>
+						 
+							<li><span>18-02-28</span><a href="content.jsp?chnid=3751&cntid=8740" target="_blank" title="《中国教育沉思》 (转载）">《中国教育沉思》 (转载）</a></li>
+						     
+                    </ul>
+                </div>
+                <div class="rboxr">
+                	<h2 class="rttl"><span><a href="list.jsp?chntypeid=3752">更多>></a></span><a href="list.jsp?chntypeid=3752">教务处</a></h2>
+                    <ul class="news">
+                    	
+							<li><span>18-05-02</span><a href="content.jsp?chnid=3752&cntid=9401" target="_blank" title="摘金揽银夺双魁   市区两级创佳绩 ——39中击剑俱乐部载誉归来">摘金揽银夺双魁   市区两级创佳绩 ——39中击剑...</a></li>
+						 
+							<li><span>18-04-10</span><a href="content.jsp?chnid=3752&cntid=9040" target="_blank" title="优化设计 提高复习课效率 ————记鼓楼区物理中考复习课教学研究在我校举行">优化设计 提高复习课效率 ————记鼓楼区物理中考...</a></li>
+						 
+							<li><span>18-01-11</span><a href="content.jsp?chnid=3752&cntid=8463" target="_blank" title="和而不同倍精彩   聚力凝心研教学 记南京市第三十九中学2017—2018学年第一学期教研组工作交流">和而不同倍精彩   聚力凝心研教学 记南京市第三十...</a></li>
+						 
+							<li><span>18-01-11</span><a href="content.jsp?chnid=3752&cntid=8461" target="_blank" title="携手共进   教研互动 ——记39中与浦口区石桥中学互动共研">携手共进   教研互动 ——记39中与浦口区石桥中...</a></li>
+						 
+							<li><span>17-12-28</span><a href="content.jsp?chnid=3752&cntid=8320" target="_blank" title="构建三重“实”境界,提升教学有效性">构建三重“实”境界,提升教学有效性</a></li>
+						 
+							<li><span>17-12-15</span><a href="content.jsp?chnid=3752&cntid=8163" target="_blank" title="鼓楼区中学语文学科 曹茂昌名师工作室初中语文工作坊成立揭牌仪式在我校举行">鼓楼区中学语文学科 曹茂昌名师工作室初中语文工作坊...</a></li>
+						 
+							<li><span>17-11-29</span><a href="content.jsp?chnid=3752&cntid=7920" target="_blank" title="扎实诊断促稳步提升 ——39中阶段性学情诊断活动圆满结束">扎实诊断促稳步提升 ——39中阶段性学情诊断活动圆...</a></li>
+						     
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="rbox2">
+            	<img src="images/xiaoxun.jpg" height="171">
+            </div>
+            <div class="rbox2">
+            	<div class="rboxl">
+                	<h2 class="rttl"><span><a href="list.jsp?chntypeid=3753">更多>></a></span><a href="list.jsp?chntypeid=3753">德育处</a></h2>
+                    <ul class="news">
+                    	
+							<li><span>18-05-28</span><a href="content.jsp?chnid=3753&cntid=9641" target="_blank" title="《为中考加油》主题晨会">《为中考加油》主题晨会</a></li>
+						 
+							<li><span>18-05-21</span><a href="content.jsp?chnid=3753&cntid=9580" target="_blank" title="《保护生物从我做起》主题晨会">《保护生物从我做起》主题晨会</a></li>
+						 
+							<li><span>18-05-14</span><a href="content.jsp?chnid=3753&cntid=9520" target="_blank" title="《感恩母亲》主题晨会">《感恩母亲》主题晨会</a></li>
+						 
+							<li><span>18-05-08</span><a href="content.jsp?chnid=3753&cntid=9481" target="_blank" title="《微笑是最美的语言》主题晨会">《微笑是最美的语言》主题晨会</a></li>
+						 
+							<li><span>18-04-23</span><a href="content.jsp?chnid=3753&cntid=9280" target="_blank" title="《满怀信心赢考试》主题晨会">《满怀信心赢考试》主题晨会</a></li>
+						 
+							<li><span>18-04-16</span><a href="content.jsp?chnid=3753&cntid=9220" target="_blank" title="《弘扬法治精神,争做合格中学生》主题晨会">《弘扬法治精神,争做合格中学生》主题晨会</a></li>
+						 
+							<li><span>18-04-09</span><a href="content.jsp?chnid=3753&cntid=9020" target="_blank" title="《保持校园清洁,从我做起》主题晨会">《保持校园清洁,从我做起》主题晨会</a></li>
+						    
+                    </ul>
+                </div>
+                <div class="rboxr">
+                	<h2 class="rttl"><span><a href="list.jsp?chntypeid=3754">更多>></a></span><a href="list.jsp?chntypeid=3754">总务处</a></h2>
+                    <ul class="news">
+                    	
+							<li><span>18-04-27</span><a href="content.jsp?chnid=3754&cntid=9360" target="_blank" title="派出所来校安全检查">派出所来校安全检查</a></li>
+						 
+							<li><span>18-04-10</span><a href="content.jsp?chnid=3754&cntid=9060" target="_blank" title="学校膳食委员会前往食堂食材供货商厂家实地考察">学校膳食委员会前往食堂食材供货商厂家实地考察</a></li>
+						 
+							<li><span>18-03-26</span><a href="content.jsp?chnid=3754&cntid=8900" target="_blank" title="学校建设装备工作小组成立">学校建设装备工作小组成立</a></li>
+						 
+							<li><span>17-04-12</span><a href="content.jsp?chnid=3754&cntid=6414" target="_blank" title="2016/2017年总务处工作计划">2016/2017年总务处工作计划</a></li>
+						 
+							<li><span>17-04-12</span><a href="content.jsp?chnid=3754&cntid=6413" target="_blank" title="体育场所对外开放工作突发事件应急预案">体育场所对外开放工作突发事件应急预案</a></li>
+						 
+							<li><span>17-04-12</span><a href="content.jsp?chnid=3754&cntid=6412" target="_blank" title="南京市第三十九中学体育场保洁员岗位职责">南京市第三十九中学体育场保洁员岗位职责</a></li>
+						 
+							<li><span>17-04-12</span><a href="content.jsp?chnid=3754&cntid=6411" target="_blank" title="南京市第三十九中学门卫安全目标责任书">南京市第三十九中学门卫安全目标责任书</a></li>
+						  
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="rbox2">
+            	<h2 class="rttl"><span><a href="list.jsp?chntypeid=3755">更多>></a></span><a href="list.jsp?chntypeid=3755">校园美景 | CAMPUS SCENERY</a></h2>
+                <div id="demo_3">
+                	<div id="indemo_3">
+                		<div id="demo1_3">
+                            	
+										<a href="content.jsp?chnid=3755&cntid=4097"><img alt="全自动录播教室" src="/attaches/1299/20160301/20160301130302302_s.JPG" width="227" height="161" /></a>
+									 
+										<a href="content.jsp?chnid=3755&cntid=4096"><img alt="标本室" src="/attaches/1299/20160301/20160301130241571_s.jpg" width="227" height="161" /></a>
+									 
+										<a href="content.jsp?chnid=3755&cntid=4095"><img alt="校门" src="/attaches/1299/20160301/20160301130218403_s.JPG" width="227" height="161" /></a>
+									 
+										<a href="content.jsp?chnid=3755&cntid=4094"><img alt="校园美景" src="/attaches/1299/20160301/20160301130154201_s.JPG" width="227" height="161" /></a>
+									 
+										<a href="content.jsp?chnid=3755&cntid=4093"><img alt="计算机教室" src="/attaches/1299/20160301/20160301130131627_s.JPG" width="227" height="161" /></a>
+									 
+										<a href="content.jsp?chnid=3755&cntid=4092"><img alt="校园美景" src="/attaches/1299/20160301/20160301130109115_s.JPG" width="227" height="161" /></a>
+									 
+										<a href="content.jsp?chnid=3755&cntid=4091"><img alt="实验室" src="/attaches/1299/20160301/20160301130045415_s.jpg" width="227" height="161" /></a>
+									 
+										<a href="content.jsp?chnid=3755&cntid=4090"><img alt="实验室" src="/attaches/1299/20160301/20160301130020866_s.JPG" width="227" height="161" /></a>
+									 
+                            
+                           	<div id="demo2_3"></div>
+                        </div>
+                </div>
+                
+                <div class="clear"></div>
+                <script>
+					<!--
+					var speed3=30;
+					var tab_3=document.getElementById("demo_3");
+					var tab1_3=document.getElementById("demo1_3");
+					var tab2_3=document.getElementById("demo2_3");
+					tab2_3.innerHTML=tab1_3.innerHTML;
+					function Marquee3(){
+					if(tab2_3.offsetWidth-tab_3.scrollLeft<=0)
+					tab_3.scrollLeft-=tab1_3.offsetWidth
+					else{
+					tab_3.scrollLeft++;
+					}
+					}
+					var MyMar3=setInterval(Marquee3,speed3);
+					tab_3.onmouseover=function() {clearInterval(MyMar3)};
+					tab_3.onmouseout=function() {MyMar3=setInterval(Marquee3,speed3)};
+					-->
+                </script>
+            </div>
+            <div class="rbox2">
+            	<div class="rboxl">
+                	<h2 class="rttl"><span><a href="list.jsp?chntypeid=3747">更多>></a></span><a href="list.jsp?chntypeid=3747">团队之家</a></h2>
+                    <ul class="news">
+                    	
+							<li><span>18-04-15</span><a href="content.jsp?chnid=3662&cntid=9180" target="_blank" title="三十九中青少年普法教育 ——法律咨询会">三十九中青少年普法教育 ——法律咨询会</a></li>
+						 
+							<li><span>18-04-02</span><a href="content.jsp?chnid=3659&cntid=8961" target="_blank" title="三十九中团委喜报频传,创佳绩">三十九中团委喜报频传,创佳绩</a></li>
+						 
+							<li><span>18-04-02</span><a href="content.jsp?chnid=3659&cntid=8960" target="_blank" title="《爱护公物从我做起》主题晨会">《爱护公物从我做起》主题晨会</a></li>
+						 
+							<li><span>18-02-26</span><a href="content.jsp?chnid=3662&cntid=8720" target="_blank" title="《有梦想一起飞》开学典礼">《有梦想一起飞》开学典礼</a></li>
+						 
+							<li><span>18-02-10</span><a href="content.jsp?chnid=3747&cntid=8664" target="_blank" title="志愿社区行  携手谱希望">志愿社区行  携手谱希望</a></li>
+						 
+							<li><span>18-02-02</span><a href="content.jsp?chnid=3661&cntid=8601" target="_blank" title="青春暖夕阳——志愿走进敬老院">青春暖夕阳——志愿走进敬老院</a></li>
+						 
+							<li><span>18-02-02</span><a href="content.jsp?chnid=3660&cntid=8601" target="_blank" title="青春暖夕阳——志愿走进敬老院">青春暖夕阳——志愿走进敬老院</a></li>
+						  
+                    </ul>
+                </div>
+                <div class="rboxr">
+                	<h2 class="rttl"><span><a href="list.jsp?chntypeid=3749">更多>></a></span><a href="list.jsp?chntypeid=3749">招生招聘</a></h2>
+                    <ul class="news">
+                    	
+							<li><span>18-05-28</span><a href="content.jsp?chnid=3749&cntid=9640" target="_blank" title="第14周学校工作安排">第14周学校工作安排</a></li>
+						 
+							<li><span>18-05-21</span><a href="content.jsp?chnid=3749&cntid=9560" target="_blank" title="第13周学校工作安排">第13周学校工作安排</a></li>
+						 
+							<li><span>18-05-14</span><a href="content.jsp?chnid=3749&cntid=9500" target="_blank" title="第12周学校工作安排">第12周学校工作安排</a></li>
+						 
+							<li><span>18-05-07</span><a href="content.jsp?chnid=3749&cntid=9460" target="_blank" title="第11周学校工作安排">第11周学校工作安排</a></li>
+						 
+							<li><span>18-05-02</span><a href="content.jsp?chnid=3749&cntid=9400" target="_blank" title="第10周学校工作安排">第10周学校工作安排</a></li>
+						 
+							<li><span>18-04-23</span><a href="content.jsp?chnid=3749&cntid=9260" target="_blank" title="第9周学校工作安排">第9周学校工作安排</a></li>
+						 
+							<li><span>18-04-16</span><a href="content.jsp?chnid=3749&cntid=9200" target="_blank" title="第8周学校工作安排">第8周学校工作安排</a></li>
+						  
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="rbox2">
+            	<div class="rboxl">
+                	<h2 class="rttl"><span><a href="list.jsp?chntypeid=3757">更多>></a></span><a href="list.jsp?chntypeid=3757">教学研究</a></h2>
+                    <ul class="news">
+                    	
+							<li><span>18-05-02</span><a href="content.jsp?chnid=3757&cntid=9401" target="_blank" title="摘金揽银夺双魁   市区两级创佳绩 ——39中击剑俱乐部载誉归来">摘金揽银夺双魁   市区两级创佳绩 ——39中击剑...</a></li>
+						 
+							<li><span>18-04-26</span><a href="content.jsp?chnid=3757&cntid=9320" target="_blank" title="诚开双臂迎远客   交感共鸣凝智慧 ——39中迎接四川、浙江两省教育访问团"><font color='#FF0000'>诚开双臂迎远客   交感共鸣凝智慧 ——39中迎接...</font></a></li>
+						 
+							<li><span>18-04-10</span><a href="content.jsp?chnid=3757&cntid=9040" target="_blank" title="优化设计 提高复习课效率 ————记鼓楼区物理中考复习课教学研究在我校举行">优化设计 提高复习课效率 ————记鼓楼区物理中考...</a></li>
+						 
+							<li><span>18-01-11</span><a href="content.jsp?chnid=3757&cntid=8463" target="_blank" title="和而不同倍精彩   聚力凝心研教学 记南京市第三十九中学2017—2018学年第一学期教研组工作交流">和而不同倍精彩   聚力凝心研教学 记南京市第三十...</a></li>
+						 
+							<li><span>18-01-11</span><a href="content.jsp?chnid=3757&cntid=8461" target="_blank" title="携手共进   教研互动 ——记39中与浦口区石桥中学互动共研">携手共进   教研互动 ——记39中与浦口区石桥中...</a></li>
+						 
+							<li><span>18-01-11</span><a href="content.jsp?chnid=3757&cntid=8460" target="_blank" title="携手共进   教研互动 ——记39中与浦口区石桥中学互动共研">携手共进   教研互动 ——记39中与浦口区石桥中...</a></li>
+						 
+							<li><span>17-12-28</span><a href="content.jsp?chnid=3757&cntid=8320" target="_blank" title="构建三重“实”境界,提升教学有效性">构建三重“实”境界,提升教学有效性</a></li>
+						  
+                    </ul>
+                </div>
+                <div class="rboxr">
+                	<h2 class="rttl"><span><a href="list.jsp?chntypeid=3746">更多>></a></span><a href="list.jsp?chntypeid=3746">办学特色</a></h2>
+                    <ul class="news">
+                    	
+							<li><span>18-05-21</span><a href="content.jsp?chnid=3656&cntid=9562" target="_blank" title="与科学家对话 ——中科院李世杰博士到我校作科普报告">与科学家对话 ——中科院李世杰博士到我校作科普报告</a></li>
+						 
+							<li><span>18-05-21</span><a href="content.jsp?chnid=5481&cntid=9562" target="_blank" title="与科学家对话 ——中科院李世杰博士到我校作科普报告">与科学家对话 ——中科院李世杰博士到我校作科普报告</a></li>
+						 
+							<li><span>18-03-21</span><a href="content.jsp?chnid=3746&cntid=8880" target="_blank" title="智力碰撞展风采——我校师生参加2018鼓楼区首届中小学生机器人能力挑战赛勇获佳绩">智力碰撞展风采——我校师生参加2018鼓楼区首届中...</a></li>
+						 
+							<li><span>18-03-21</span><a href="content.jsp?chnid=3656&cntid=8880" target="_blank" title="智力碰撞展风采——我校师生参加2018鼓楼区首届中小学生机器人能力挑战赛勇获佳绩">智力碰撞展风采——我校师生参加2018鼓楼区首届中...</a></li>
+						 
+							<li><span>18-01-29</span><a href="content.jsp?chnid=3746&cntid=8560" target="_blank" title="暴雪预警响 应急通信忙 —— 三十九中开展野外应急通信演练活动">暴雪预警响 应急通信忙 —— 三十九中开展野外应急...</a></li>
+						 
+							<li><span>17-11-09</span><a href="content.jsp?chnid=3656&cntid=7720" target="_blank" title="快乐创造,分享智慧 —我校15件作品在南京市第二届中小学创客大赛中获奖">快乐创造,分享智慧 —我校15件作品在南京市第二届...</a></li>
+						 
+							<li><span>17-09-08</span><a href="content.jsp?chnid=3656&cntid=7240" target="_blank" title="无线触摸,无界探索——三十九中无线电小组参加日本第41届业余无线电节活动">无线触摸,无界探索——三十九中无线电小组参加日本第...</a></li>
+						  
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="rbox2">
+            	<h2 class="rttl"><span><a href="list.jsp?chntypeid=3758">更多>></a></span><a href="list.jsp?chntypeid=3758">名师风采 | TEACHER STYLE</a></h2>
+                <div id="demo_2">
+                	<div id="indemo_2">
+                		<div id="demo1_2">
+                            	
+										<a href="content.jsp?chnid=3758&cntid=3876"><img alt="盛伟民" src="http://www.nj39.com/resource/upload/2012/12/04/20121204095950585.jpg" width="108" height="158"/><p>盛伟民</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3875"><img alt="朱春兰" src="http://www.nj39.com/resource/upload/2012/12/04/20121204095655342.jpg" width="108" height="158"/><p>朱春兰</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3874"><img alt="何灿平" src="http://www.nj39.com/resource/upload/2012/12/04/20121204114752695.jpg" width="108" height="158"/><p>何灿平</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3873"><img alt="陆萍" src="http://www.nj39.com/resource/upload/2012/12/04/20121204095224196.jpg" width="108" height="158"/><p>陆萍</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3872"><img alt="程月华" src="http://www.nj39.com/resource/upload/2012/12/04/20121204095200453.jpg" width="108" height="158"/><p>程月华</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3870"><img alt="沈昱" src="http://www.nj39.com/resource/upload/2012/12/04/20121204095101386.jpg" width="108" height="158"/><p>沈昱</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3869"><img alt="杨宇" src="http://www.nj39.com/resource/upload/2012/12/04/20121204095039488.jpg" width="108" height="158"/><p>杨宇</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3868"><img alt="姜荷莉" src="http://www.nj39.com/resource/upload/2012/12/13/20121213124732322.jpg" width="108" height="158"/><p>姜荷莉</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3867"><img alt="刘原" src="http://www.nj39.com/resource/upload/2012/12/04/20121204094929937.jpg" width="108" height="158"/><p>刘原</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3866"><img alt="冷蔚玲" src="http://www.nj39.com/resource/upload/2012/12/04/20121204094904494.jpg" width="108" height="158"/><p>冷蔚玲</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3865"><img alt="王丹丹" src="http://www.nj39.com/resource/upload/2012/12/04/20121204094834766.jpg" width="108" height="158"/><p>王丹丹</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3864"><img alt="马晓庆" src="http://www.nj39.com/resource/upload/2012/12/04/20121204094802825.jpg" width="108" height="158"/><p>马晓庆</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3863"><img alt="许峰" src="http://www.nj39.com/resource/upload/2012/12/10/20121210113614562.jpg" width="108" height="158"/><p>许峰</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3862"><img alt="邬建霞" src="http://www.nj39.com/resource/upload/2012/12/04/20121204094639711.jpg" width="108" height="158"/><p>邬建霞</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3861"><img alt="杨绵春" src="http://www.nj39.com/resource/upload/2012/12/04/20121204100050446.jpg" width="108" height="158"/><p>杨绵春</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3841"><img alt="朱红英" src="http://www.nj39.com/resource/upload/2012/12/04/20121204095752393.jpg" width="108" height="158"/><p>朱红英</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3840"><img alt="夏鸣" src="http://www.nj39.com/resource/upload/2012/12/04/20121204123128181.jpg" width="108" height="158"/><p>夏鸣</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3839"><img alt="郑艾文" src="http://www.nj39.com/resource/upload/2012/12/04/20121204123053300.jpg" width="108" height="158"/><p>郑艾文</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3838"><img alt="蔡新农" src="http://www.nj39.com/resource/upload/2012/12/04/20121204095517924.jpg" width="108" height="158"/><p>蔡新农</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3836"><img alt="张彤" src="http://www.nj39.com/resource/upload/2012/12/04/20121204123013269.jpg" width="108" height="158"/><p>张彤</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3842"><img alt="宋冬梅" src="http://www.nj39.com/resource/upload/2012/12/04/20121204095725357.jpg" width="108" height="158"/><p>宋冬梅</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3835"><img alt="周玉福" src="/attaches/1299/20180507/20180507174556132001.jpg" width="108" height="158"/><p>周玉福</p></a>
+									 
+										<a href="content.jsp?chnid=3758&cntid=3822"><img alt="蒋芳" src="http://www.nj39.com/resource/upload/2012/12/13/20121213124349635.jpg" width="108" height="158"/><p>蒋芳</p></a>
+									 
+                            </div>
+                            <div id="demo2_2"></div>
+                        </div>
+                </div>
+        <div class="clear"></div>
+                <script>
+					<!--
+					var speed2=30;
+					var tab_2=document.getElementById("demo_2");
+					var tab1_2=document.getElementById("demo1_2");
+					var tab2_2=document.getElementById("demo2_2");
+					tab2_2.innerHTML=tab1_2.innerHTML;
+					function Marquee2(){
+					if(tab2_2.offsetWidth-tab_2.scrollLeft<=0)
+					tab_2.scrollLeft-=tab1_2.offsetWidth
+					else{
+					tab_2.scrollLeft++;
+					}
+					}
+					var MyMar2=setInterval(Marquee2,speed2);
+					tab_2.onmouseover=function() {clearInterval(MyMar2)};
+					tab_2.onmouseout=function() {MyMar2=setInterval(Marquee2,speed2)};
+					-->
+                </script>
+    		</div>
+</div></div></div><div class="clear"></div>
+    <div class="picflow">
+                <h2>友情<br>链接</h2> 
+                <div id="demo">
+                	<div id="indemo">
+                		<div id="demo1">
+                			
+							<a href="http://yun.njgljy.cn/oa/" target="_blank"><img src="/attaches/1299/162/95afbc6c46bd85230d91a9fb8c801e50.jpg" alt="鼓楼OA管理平台" width="200" height="60" /></a>
+							
+							<a href="http://www.njjspx.com/njtrcms/" target="_blank"><img src="/attaches/1299/162/f6c26d08ea6c847391da269ee285b3a1.jpg" alt="南京教师培训网" width="200" height="60" /></a>
+							
+							<a href="http://www.njsjys.cn/" target="_blank"><img src="/attaches/1299/162/5198e56d3dfd58b0b3c0d78ec38ecf9b.jpg" alt="南京教研" width="200" height="60" /></a>
+							
+							<a href="http://www.njgljy.com/" target="_blank"><img src="/attaches/1299/162/a6c3991a163faad8f2c91d50e07bda72.jpg" alt="鼓楼教育天地" width="200" height="60" /></a>
+							
+							<a href="http://www.njjyzb.cn" target="_blank"><img src="/attaches/1299/162/f069a53ad63018dd83a5ca66e2aefcda.jpg" alt="南京教育装备网" width="200" height="60" /></a>
+							
+							<a href="http://lib.njgljy.cn/GuLou/Account/Login" target="_blank"><img src="/attaches/1299/184/5bdd63ed2d48198e3f057c70ef682760.png" alt="鼓楼区教育系统读者服务平台" width="200" height="60" /></a>
+							
+							<a href="http://www.nje.cn" target="_blank"><img src="/attaches/1299/162/d1f5d89ba9e043950a529d4742266e9a.jpg" alt=" 南京教育" width="200" height="60" /></a>
+							
+                		</div>
+                		<div id="demo2"></div>
+                	</div>
+                </div>
+                <div class="clear"></div>
+                <script>
+					<!--
+					var speed=30;
+					var tab=document.getElementById("demo");
+					var tab1=document.getElementById("demo1");
+					var tab2=document.getElementById("demo2");
+					tab2.innerHTML=tab1.innerHTML;
+					function Marquee(){
+					if(tab2.offsetWidth-tab.scrollLeft<=0)
+					tab.scrollLeft-=tab1.offsetWidth
+					else{
+					tab.scrollLeft++;
+					}
+					}
+					var MyMar=setInterval(Marquee,speed);
+					tab.onmouseover=function() {clearInterval(MyMar)};
+					tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+					-->
+                </script>
+            </div>
+			
+			 
+<div class="footer">
+				<div class="footinfo">
+					Copyright &copy; 2011   南京市第三十九中学  All Rights<br>
+<a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action"> <font color="white">苏ICP备10076602号</a> 技术支持:  江苏微网信息科技有限公司
+				</div>
+				<div class="erma">微信号:<br>Nanjing39<br>扫码关注</div>
+				<div class="clear"></div>
+			</div>
+</div>
+
+<!--移动图标-->
+<!--
+<div class="baseAdMove" id="baseAdMove_1" style="position:absolute; left: 2px; top: 150px;z-index:5000;">
+ <div id="img1">
+ 
+</div>
+<div id='imgclose1' style='position:absolute; left: 2px; top: 2px;display:block'><img src='images/close.gif' border=0 onclick="getElementById('baseAdMove_1').style.display='none';" style='cursor:pointer' /></div></div><div class="baseAdMove" id="baseAdMove_2" style="position:absolute; left: 2px; top: 150px;z-index:5000;">
+</div>
+
+
+<script type="text/javascript" src="js/base.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".fixediv a").click(function(){
+		
+		$(".fixediv").fadeOut(400);
+		
+	});
+	
+	$(".fixediv").floatadv();
+	
+});
+
+jQuery.fn.floatadv = function(loaded) {
+	var obj = this;
+	body_height = parseInt($(window).height());
+	block_height = parseInt(obj.height());
+	
+	top_position = parseInt((body_height/2) - (block_height/2) + $(window).scrollTop());
+	if (body_height<block_height) { top_position = 0 + $(window).scrollTop(); };
+	
+	if(!loaded) {
+		obj.css({'position': 'absolute'});
+		obj.css({ 'top': top_position });
+		$(window).bind('resize', function() { 
+			obj.floatadv(!loaded);
+		});
+		$(window).bind('scroll', function() { 
+			obj.floatadv(!loaded);
+		});
+	} else {
+		obj.stop();
+		obj.css({'position': 'absolute'});
+		obj.animate({ 'top': top_position }, 400, 'linear');
+	}
+}
+</script>
+-->
+<div id="img" style="position:absolute;z-index:9999999;">
+			<a href="http://nj39.xicp.net" ><img src="images/pic.jpg" onClick="pause_resume();" border="0" alt='img' onload="return imgzoom(this,600);" onclick="javascript:window.open(this.src);" style="cursor:pointer;" /></a>
+			
+			<div onclick="my();" style="width:50px;height:50px;position: absolute;top: 0;right: 0;cursor: pointer;z-index:10000;"></div>
+		</div>
+<script>
+
+var xPos = document.body.clientWidth-20;
+var yPos = document.body.clientHeight/2;
+var step = 1;
+var delay = 5; 
+var height = 0;
+var Hoffset = 0;
+var Woffset = 0;
+var yon = 0;
+var xon = 0;
+var pause = true;
+var interval;
+var img = document.getElementById("img");
+img.style.top = yPos;
+function changePos() {
+	width = document.body.clientWidth;
+	height = document.body.clientHeight;
+	Hoffset = img.offsetHeight;
+	Woffset = img.offsetWidth;
+	img.style.left = xPos + document.body.scrollLeft;
+	img.style.top = yPos + document.body.scrollTop;
+	if (yon) {
+		yPos = yPos + step;
+	}else {
+		yPos = yPos - step;
+	}
+	if (yPos < 0) {
+		yon = 1;
+		yPos = 0;
+	}
+	if (yPos >= (height - Hoffset)) {
+		yon = 0;
+		yPos = (height - Hoffset);
+	}
+	if (xon) {
+		xPos = xPos + step;
+	}else {
+		xPos = xPos - step;
+	}
+	if (xPos < 0) {
+		xon = 1;
+		xPos = 0;
+	}
+	if (xPos >= (width - Woffset)) {
+		xon = 0;
+		xPos = (width - Woffset);
+	}
+}
+function start() {
+	img.visibility = "visible";
+	interval = setInterval('changePos()', delay);
+}
+function pause_resume() {
+	if(pause) {
+		clearInterval(interval);
+		pause = false;
+	}else {
+		interval = setInterval('changePos()',delay);
+	pause = true;
+	}
+}
+function pause_resume2() {
+	if(pause) {
+		clearInterval(interval);
+		pause = false;
+	}else {
+		interval = setInterval('changePos()',delay);
+	pause = true;
+	}
+}
+start();
+//  End -->
+function my(){
+				img.style.display="none";
+			}
+</script>
+</body>
+</html>

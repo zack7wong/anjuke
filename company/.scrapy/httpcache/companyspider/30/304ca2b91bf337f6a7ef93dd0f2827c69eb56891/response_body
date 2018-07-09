@@ -1,0 +1,1800 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	湖南外国语职业学院
+</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/kefu.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/lanrenzhijia.css" /><link href="iCss/SSl.css" type="text/css" rev="Stylesheet" rel="Stylesheet" />
+    <style type="text/css">
+        .lf {
+            position: absolute;
+            top: 200px;
+            left: 60px;
+        }
+
+            .lf a img {
+                border: 1px solid #000;
+            }
+
+        .rf {
+            position: absolute;
+            top: 200px;
+            right: 60px;
+        }
+
+            .rf a img {
+                border: 1px solid #000;
+            }
+    </style>
+    <SCRIPT type="text/javascript"> 
+        function addEvent(obj,evtType,func,cap){ 
+            cap=cap||false; 
+            if(obj.addEventListener){ 
+                obj.addEventListener(evtType,func,cap); 
+                return true; 
+            }else if(obj.attachEvent){ 
+                if(cap){ 
+                    obj.setCapture(); 
+                    return true; 
+                }else{ 
+                    return obj.attachEvent("on" + evtType,func); 
+                } 
+            }else{ 
+                return false; 
+            } 
+        } 
+        function getPageScroll(){ 
+            var xScroll,yScroll; 
+            if (self.pageXOffset) { 
+                xScroll = self.pageXOffset; 
+            } else if (document.documentElement && document.documentElement.scrollLeft){ 
+                xScroll = document.documentElement.scrollLeft; 
+            } else if (document.body) { 
+                xScroll = document.body.scrollLeft; 
+            } 
+            if (self.pageYOffset) { 
+                yScroll = self.pageYOffset; 
+            } else if (document.documentElement && document.documentElement.scrollTop){ 
+                yScroll = document.documentElement.scrollTop; 
+            } else if (document.body) { 
+                yScroll = document.body.scrollTop; 
+            } 
+            arrayPageScroll = new Array(xScroll,yScroll); 
+            return arrayPageScroll; 
+        } 
+        function GetPageSize(){ 
+            var xScroll, yScroll; 
+            if (window.innerHeight && window.scrollMaxY) { 
+                xScroll = document.body.scrollWidth; 
+                yScroll = window.innerHeight + window.scrollMaxY; 
+            } else if (document.body.scrollHeight > document.body.offsetHeight){ 
+                xScroll = document.body.scrollWidth; 
+                yScroll = document.body.scrollHeight; 
+            } else { 
+                xScroll = document.body.offsetWidth; 
+                yScroll = document.body.offsetHeight; 
+            } 
+            var windowWidth, windowHeight; 
+            if (self.innerHeight) { 
+                windowWidth = self.innerWidth; 
+                windowHeight = self.innerHeight; 
+            } else if (document.documentElement && document.documentElement.clientHeight) { 
+                windowWidth = document.documentElement.clientWidth; 
+                windowHeight = document.documentElement.clientHeight; 
+            } else if (document.body) { 
+                windowWidth = document.body.clientWidth; 
+                windowHeight = document.body.clientHeight; 
+            } 
+            if(yScroll < windowHeight){ 
+                pageHeight = windowHeight; 
+            } else { 
+                pageHeight = yScroll; 
+            } 
+            if(xScroll < windowWidth){ 
+                pageWidth = windowWidth; 
+            } else { 
+                pageWidth = xScroll; 
+            } 
+            arrayPageSize = new Array(pageWidth,pageHeight,windowWidth,windowHeight) 
+            return arrayPageSize; 
+        } 
+
+        var AdMoveConfig=new Object(); 
+        AdMoveConfig.IsInitialized=false; 
+        AdMoveConfig.ScrollX=0; 
+        AdMoveConfig.ScrollY=0; 
+        AdMoveConfig.MoveWidth=0; 
+        AdMoveConfig.MoveHeight=0; 
+        AdMoveConfig.Resize=function(){ 
+            var winsize=GetPageSize(); 
+            AdMoveConfig.MoveWidth=winsize[2]; 
+            AdMoveConfig.MoveHeight=winsize[3]; 
+            AdMoveConfig.Scroll(); 
+        } 
+        AdMoveConfig.Scroll=function(){ 
+            var winscroll=getPageScroll(); 
+            AdMoveConfig.ScrollX=winscroll[0]; 
+            AdMoveConfig.ScrollY=winscroll[1]; 
+        } 
+        addEvent(window,"resize",AdMoveConfig.Resize); 
+        addEvent(window,"scroll",AdMoveConfig.Scroll); 
+        function AdMove(id){ 
+            if(!AdMoveConfig.IsInitialized){ 
+                AdMoveConfig.Resize(); 
+                AdMoveConfig.IsInitialized=true; 
+            } 
+            var obj=document.getElementById(id); 
+            obj.style.position="absolute"; 
+            var W=AdMoveConfig.MoveWidth-obj.offsetWidth; 
+            var H=AdMoveConfig.MoveHeight-obj.offsetHeight; 
+            var x = W*Math.random(),y = H*Math.random(); 
+            var rad=(Math.random()+1)*Math.PI/6; 
+            var kx=Math.sin(rad),ky=Math.cos(rad); 
+            var dirx = (Math.random()<0.5?1:-1), diry = (Math.random()<0.5?1:-1); 
+            var step = 1; 
+            var interval; 
+            this.SetLocation=function(vx,vy){x=vx;y=vy;} 
+            this.SetDirection=function(vx,vy){dirx=vx;diry=vy;} 
+            obj.CustomMethod=function(){ 
+                obj.style.left = (x + AdMoveConfig.ScrollX) + "px"; 
+                obj.style.top = (y + AdMoveConfig.ScrollY) + "px"; 
+                rad=(Math.random()+1)*Math.PI/6; 
+                W=AdMoveConfig.MoveWidth-obj.offsetWidth; 
+                H=AdMoveConfig.MoveHeight-obj.offsetHeight; 
+                x = x + step*kx*dirx; 
+                if (x < 0){dirx = 1;x = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+                if (x > W){dirx = -1;x = W;kx=Math.sin(rad);ky=Math.cos(rad);} 
+                y = y + step*ky*diry; 
+                if (y < 0){diry = 1;y = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+                if (y > H){diry = -1;y = H;kx=Math.sin(rad);ky=Math.cos(rad);} 
+            } 
+            this.Run=function(){ 
+                var delay = 10; 
+                interval=setInterval(obj.CustomMethod,delay); 
+                obj.onmouseover=function(){clearInterval(interval);} 
+                obj.onmouseout=function(){interval=setInterval(obj.CustomMethod, delay);} 
+            } 
+        } 
+</SCRIPT> 
+</head>
+<body>
+    <form method="post" action="" id="frm_Main">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['frm_Main'];
+if (!theForm) {
+    theForm = document.frm_Main;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=NhIM6NQhDIJNId-e-_Moyy3k6V6YpJzSgUEmFGzqvMnBkgZLr3f0SUkWg8JXUX7QLxZsWWvmBUizDLuTO-fkRM9c4GYeh6gbDW5legNAMp81&amp;t=635786962865000000" type="text/javascript"></script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E61F0CA6" />
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="YojyoTlx2DQZGF_cf6Dku06QQnKXFnpe9LskYxMHrvHptC95E5MGhETRKuWlSoNukZJRpm4zcArMF-z9RZJy7EAkK2D5jDsBJcud79vlFKw1" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWaQKKoejwAwLM1dX8CAKqq4TzBALL9Z2uBwKj5ZMKApqKhfYKAqiC1OoPApHr8c8JArnT+/0LAsCq5cgIAsbXsqgBAt/LjvsJAt+F8bUMAq7MjaMBArSW4tcDAoXAgdILAtWak9ENAqSBrMoEArL3kZ8FAqOhnPwBAqux14gMAonLg/gIApHL0fAEAojry6kHAoqF4QcC1/+y8QoCj6Kh6A8CzuCfywkCoPPI+wsC/Z+TxAgCrff/pQECnMG89gkCxqW+swwC68G7ngECm7av1QMCwrWvzQsCvLrgzg0C4fbZxQQCmZffnAUC4JbK9wECktGkhgwCyrm/9wgC0MqN8gQCydmHqQcCyYSdCQKY7u7wCgLOod3pDwKPz9vKCQLf8oT9CwK+js/DCALs9runAQLdr/j1CQKFpfq0DAKssPedAQLatevWAwKDpOvMCwL7uZzQDQLY05eTCQLm5ZXeBALX89/EBwLfn6X1DwKmiMeMCwLkvOXVDwKd6bPmCQL1jY3pCwLMqKffCAKCksSTAQKPqev2CALn7dHxBAKOybOoBwLgp+EIAt3dmvAKAuXEoekPAtS+h8oJAvaVyfwLAoP++sIIAoOagKcBAtXKg/IIAo2Nwu8EAtTqy6MHAobH0QYCo/+y6woCi+SR5w8CmuCfxQkCnLW5+gsCyZ+TvggCqbnwpAEC6MC88AkCwueusgwClru/8QgCzIz+7gQClduHowcCxcaNBgLk7+7qCgLK483mDwLb0NvECQLbtPX5CwKKkM+9CALouKykAQKpsfjvCQKB5+qxDAL4sfeXAQLW99vTAwLPpevGCwL3+4zNDX5k9c5caU5GsSt54S/NC2qUdfWVPJJ25BWp55dptk4p" />
+</div>
+        <center>
+            <div id="head">
+                <table width="880" height="150" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="140">
+                            <img src="images/index_logo.png" width="135" />
+                        </td>
+                        <td class="logo_right">
+                            <img src="images/index_logo_str.png" />
+                        </td>
+                        <td>
+                            <div style="height: 40px; border-left: 1px dashed #ccc; padding: 20px; text-align: left; line-height: 20px;">
+                                <a href="javascript:SetHome(this.window.location,'http://www.hnflc.cn')" class="top_link">设为首页</a><br />
+                                <a href="javascript:AddFavorite(window.location,document.title)" class="top_link">加入收藏</a><br />
+                                <a href="index.htm" class="top_link">English</a><br />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="menu_place">
+                <center>
+                    <div id="menu">
+                        ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?9a79e3ac7db93367c0a5d88d4885eee3";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+            function AddFavorite(sURL, sTitle) {
+                try {
+                    window.external.addFavorite(sURL, sTitle);
+                }
+                catch (e) {
+                    try {
+                        window.sidebar.addPanel(sTitle, sURL, "");
+                    }
+                    catch (e) {
+                        alert("加入收藏失败，请使用Ctrl+D进行添加");
+                    }
+                }
+            }
+            function SetHome(obj, vrl) {
+                try {
+                    obj.style.behavior = 'url(#default#homepage)'; obj.setHomePage(vrl);
+                }
+                catch (e) {
+                    if (window.netscape) {
+                        try {
+                            netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                            alert("此操作被浏览器拒绝。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage', vrl);
+                    }
+                }
+            } 
+    </script>
+</head>
+<body>
+<ul id="bar" >
+<li id="start" class="index"><a href="index_home_index.aspx" target="_blank">首页</a></li>
+<li class="line">&nbsp;</li>
+<li class="title" ><a href="jigou.aspx" target="_blank">湖外简介</a>
+<ul class="downmenu" >
+<li><a href="jigou.aspx?id=2" target="_blank">&diams;&nbsp;学院概况</a></li>
+<li><a href="jigou.aspx?id=27" target="_blank">&diams;&nbsp;董事长致辞</a></li>
+<li><a href="jigou.aspx?id=21" target="_blank">&diams;&nbsp;现任领导</a></li>
+<li><a href="jigou.aspx?id=24" target="_blank">&diams;&nbsp;学院荣誉</a></li>
+</ul>
+</li>
+<li class="line">&nbsp;</li>
+<li class="title"><a href="party.aspx" target="_blank">党建工作</a></li>
+<li class="line">&nbsp;</li>
+<li class="title"><a href="" target="_blank">系部设置</a>
+<ul class="downmenu">
+<li><a href="english.aspx" target="_blank">&diams;&nbsp;英语系</a></li>
+<li><a href="EastSchool.aspx" target="_blank">&diams;&nbsp;东语系</a></li>
+<li><a href="West.aspx" target="_blank">&diams;&nbsp;西语系</a></li>
+<li><a href="shewai.aspx" target="_blank">&diams;&nbsp;涉外经济管理系</a></li>
+<li><a href="hulixueyuan.aspx" target="_blank">&diams;&nbsp;涉外护理系</a></li>
+<li><a href="gonggongjichukebu.aspx" target="_blank">&diams;&nbsp;公共课部</a></li>
+<li><a href="sxzzll.aspx" target="_blank">&diams;&nbsp;思想政治理论课部</a></li>
+</ul>
+</li>
+<li class="line">&nbsp;</li>
+<li class="title"><a href="" target="_blank">机构设置</a>
+<ul class="downmenu">
+<li><a href="dangzhengbang.aspx" target="_blank">&diams;&nbsp;党政办</a></li>
+<li><a href="renshichu.aspx" target="_blank">&diams;&nbsp;人事处</a></li>
+<li><a href="cw.aspx" target="_blank">&diams;&nbsp;财务处</a></li>
+<li><a href="international.aspx" target="_blank">&diams;&nbsp;国际交流合作处</a></li>
+<li><a href="jiaoyujishu.aspx" target="_blank">&diams;&nbsp;现代教育技术中心</a></li>
+<li><a href="zichangguanli.aspx" target="_blank">&diams;&nbsp;后勤处</a></li>
+<li><a href="baiweichu.aspx" target="_blank">&diams;&nbsp;保卫处</a></li>
+<li><a href="gonghui.aspx" target="_blank">&diams;&nbsp;工会</a></li>
+</ul>
+</li>
+<li class="line">&nbsp;</li>
+<li class="title"><a href="" target="_blank">教学管理</a>
+<ul class="downmenu">
+<li><a href="instruction.aspx" target="_blank">&diams;&nbsp;教务处</a></li>
+<li><a href="http://222.240.174.82:8990/(nrcxgu45cctgaf550wgpq5uo)/Default2.aspx" target="_blank">&diams;&nbsp;教务管理系统</a></li>
+<li><a href="http://hnflc.tsk1.erya100.com/studentLogin" target="_blank">&diams;&nbsp;网络课程</a></li>
+<li><a href="http://www.chsi.com.cn/" target="_blank">&diams;&nbsp;学信网</a></li>
+<li><a href="http://dgnew.worldve.com//flex/dgsx.html?xxdm=14072" target="_blank">&diams;&nbsp;顶岗实习</a></li>
+<li><a href="jxhzd.aspx" target="_blank">&diams;&nbsp;教学合作点管理</a></li>
+</ul>
+</li>
+<li class="line">&nbsp;</li>
+<li class="title"><a href="research.aspx" target="_blank">科学研究</a></li>
+<li class="line">&nbsp;</li>
+<li class="title"><a href="" target="_blank">招生与就业</a>
+<ul class="downmenu">
+<li><a href="http://zhaosheng.hnflc.cn/" target="_blank">&diams;&nbsp;招生处</a></li>
+<li><a href="http://jyb.hnflc.cn/" target="_blank">&diams;&nbsp;就业处</a></li>
+</ul>
+</li>
+<li class="line">&nbsp;</li>
+<li class="title"><a href="Student.aspx" target="_blank">学生工作</a></li>
+<li class="line">&nbsp;</li>
+<li class="title"><a href="tushu.aspx" target="_blank">图书馆</a></li>
+<li class="line">&nbsp;</li>
+<li class="title"><a href="jixujiaoyu.aspx" target="_blank">继续教育</a></li>
+</ul>
+</body>
+</html>
+
+                    </div>
+                </center>
+            </div>
+            <div id="imgbox">
+                <div class="left inline">
+                    <ul>
+                        <li><a href="javascript: play(3)">机构平台总站&nbsp;&raquo;<br />
+                            <span class="eng">Worlduc.com</span></a></li>
+                        <li><a href="javascript: play(2)">阳光工程平台&nbsp;&raquo;<br />
+                            <span class="eng">Sunshine&nbsp;Project</span></a></li>
+                        <li><a href="javascript: play(5)">湖南教育政务网-湖外站&nbsp;&raquo;<br />
+                            <span class="eng">HNEDU-GOV</span></a></li>
+                        <li><a href="javascript: play(1)">管理平台&nbsp;&raquo;<br>
+                            <span class="eng">Management&nbsp;Platform</span></a></li>
+                        <li><a href="javascript: play(4)">下载中心&nbsp;&raquo;<br />
+                            <span class="eng">DownLoad</span></a></li>
+                        <li><a href="http://120.26.164.134:8033/Home/item/9" target="_blank" >湖外网络自助缴费平台&nbsp;&raquo;<br />
+                            <span class="eng">Self-assistant Payment</span></a></li>
+                    </ul>
+                </div>
+                <div class="right inline">
+                    <img id="box" src="" width="827" height="350" /><div id="content" style="height: 350px;">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+            <div id="Main" style="height: auto; vertical-align: top;">
+                <div class="inline" style="width: 357px; margin-right: 4px;">
+                    <div style="border: 1px solid #ccc; padding: 4px;">
+                        <table cellpadding="0" cellspacing="0" width="100%" height="30" style="border-bottom: 1px dashed #ccc;">
+                            <tr>
+                                <td width="160">&nbsp;<a id="a_news" class="title" href="javascript:ToUrl('学院新闻')" onmouseover="DisPlay(this,'News')"
+                                    style="color:#043779;"><lable>新闻中心</lable>&nbsp;College&nbsp;News</a>
+                                </td>
+                                <td width="2">|
+                                </td>
+                                <td style="text-align: left;">&nbsp;<a id="a_media" class="title" href="javascript:ToUrl('媒体关注')" onmouseover="DisPlay(this,'Media')"><lable>媒体关注</lable>&nbsp;Media&nbsp;Foucs</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="News" style="margin-top: 5px; margin-bottom: 5px;">
+                            <table id="DataList1" cellspacing="0" cellpadding="0" style="width:357px;border-collapse:collapse;">
+	<tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList1$ctl00$HiddenField1" id="DataList1_HiddenField1_0" value="N" />
+                                            <a id="DataList1_LinkButton1_0" title="建设国际人才资源梯队 中冶国际赴湖外招贤纳才" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList1$ctl00$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180528104550547344&quot;, false, true))">建设国际人才资源梯队 中冶国际赴湖外</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList1_Label1_0" class="title">05-28</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList1$ctl01$HiddenField1" id="DataList1_HiddenField1_1" value="N" />
+                                            <a id="DataList1_LinkButton1_1" title="学院顺利举办习近平新时代中国特色社会主义思想" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList1$ctl01$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180525092438549981&quot;, false, true))">学院顺利举办习近平新时代中国特色社会</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList1_Label1_1" class="title">05-25</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList1$ctl02$HiddenField1" id="DataList1_HiddenField1_2" value="N" />
+                                            <a id="DataList1_LinkButton1_2" title="学院执行院长鲁平做客湖南教育政务网在线访谈" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList1$ctl02$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180523224031945240&quot;, false, true))">学院执行院长鲁平做客湖南教育政务网在</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList1_Label1_2" class="title">05-23</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList1$ctl03$HiddenField1" id="DataList1_HiddenField1_3" value="N" />
+                                            <a id="DataList1_LinkButton1_3" title="不容小觑的能量！学院成功举办第一届“湖外杰出青年”评选活动" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList1$ctl03$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180523102014625357&quot;, false, true))">不容小觑的能量！学院成功举办第一届“</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList1_Label1_3" class="title">05-23</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList1$ctl04$HiddenField1" id="DataList1_HiddenField1_4" value="N" />
+                                            <a id="DataList1_LinkButton1_4" title="湖南教育台：未毕业先上岗 打通现代学徒制“最后一公里”" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList1$ctl04$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180516144310126912&quot;, false, true))">湖南教育台：未毕业先上岗 打通现代学</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList1_Label1_4" class="title">05-16</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList1$ctl05$HiddenField1" id="DataList1_HiddenField1_5" value="N" />
+                                            <a id="DataList1_LinkButton1_5" title="“湖外大讲堂”职教宣传周开坛讲学  将企业运营理念引入高职院校素质教育体系" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList1$ctl05$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180514132005681965&quot;, false, true))">“湖外大讲堂”职教宣传周开坛讲学  </a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList1_Label1_5" class="title">05-14</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList1$ctl06$HiddenField1" id="DataList1_HiddenField1_6" value="N" />
+                                            <a id="DataList1_LinkButton1_6" title="【2018湖南省职教宣传周系列活动】湖外护理人的坚韧职守  在“南丁格尔誓言”中闪现职业荣光" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList1$ctl06$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180513180547292628&quot;, false, true))">【2018湖南省职教宣传周系列活动】</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList1_Label1_6" class="title">05-13</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList1$ctl07$HiddenField1" id="DataList1_HiddenField1_7" value="N" />
+                                            <a id="DataList1_LinkButton1_7" title="【2018湖南省职教宣传周系列活动】湖外学子就“环金订单班”初探跨境电商企业的奥妙" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList1$ctl07$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180509193322327220&quot;, false, true))">【2018湖南省职教宣传周系列活动】</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList1_Label1_7" class="title">05-09</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList1$ctl08$HiddenField1" id="DataList1_HiddenField1_8" value="N" />
+                                            <a id="DataList1_LinkButton1_8" title="学院考察组赴长沙职业技术学院开展调研活动" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList1$ctl08$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180507173245343017&quot;, false, true))">学院考察组赴长沙职业技术学院开展调研</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList1_Label1_8" class="title">05-07</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList1$ctl09$HiddenField1" id="DataList1_HiddenField1_9" value="N" />
+                                            <a id="DataList1_LinkButton1_9" title="【2018湖南省职教宣传周系列活动】经管系“走进名著，诵读经典”" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList1$ctl09$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=2018042720535660345&quot;, false, true))">【2018湖南省职教宣传周系列活动】</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList1_Label1_9" class="title">04-27</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr>
+</table>
+                        </div>
+                        <div id="Media" style="margin-top: 5px; display: none; margin-bottom: 5px;">
+                            <table id="DataList2" cellspacing="0" cellpadding="0" style="width:357px;border-collapse:collapse;">
+	<tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList2$ctl00$HiddenField1" id="DataList2_HiddenField1_0" value="N" />
+                                            <a id="DataList2_LinkButton1_0" title="湖南教育政务网：湖南外国语职业学院执行院长鲁平访谈" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList2$ctl00$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=2018052817294146467&quot;, false, true))">湖南教育政务网：湖南外国语职业学院执</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList2_Label1_0" class="title">05-28</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList2$ctl01$HiddenField1" id="DataList2_HiddenField1_1" value="N" />
+                                            <a id="DataList2_LinkButton1_1" title="湖南教育新闻网：建设外语人才资源梯队 中冶国际赴湖南外国语职院招贤纳才" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList2$ctl01$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180528172422318902&quot;, false, true))">湖南教育新闻网：建设外语人才资源梯队</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList2_Label1_1" class="title">05-28</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList2$ctl02$HiddenField1" id="DataList2_HiddenField1_2" value="N" />
+                                            <a id="DataList2_LinkButton1_2" title="湖南教育新闻网：做时代的有为青年" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList2$ctl02$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180524220557776896&quot;, false, true))">湖南教育新闻网：做时代的有为青年</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList2_Label1_2" class="title">05-24</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList2$ctl03$HiddenField1" id="DataList2_HiddenField1_3" value="N" />
+                                            <a id="DataList2_LinkButton1_3" title="湖南教育新闻网：小语种人才订单班初探跨境电商企业的奥妙" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList2$ctl03$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180521171532807487&quot;, false, true))">湖南教育新闻网：小语种人才订单班初探</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList2_Label1_3" class="title">05-21</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList2$ctl04$HiddenField1" id="DataList2_HiddenField1_4" value="N" />
+                                            <a id="DataList2_LinkButton1_4" title="湖南教育网：高职校小语种人才跨境电商企业初体验" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList2$ctl04$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180516193928815180&quot;, false, true))">湖南教育网：高职校小语种人才跨境电商</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList2_Label1_4" class="title">05-16</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList2$ctl05$HiddenField1" id="DataList2_HiddenField1_5" value="N" />
+                                            <a id="DataList2_LinkButton1_5" title="湖南教育网：在“南丁格尔誓言”中恪尽职院护理人的职守" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList2$ctl05$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180516193339840708&quot;, false, true))">湖南教育网：在“南丁格尔誓言”中恪尽</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList2_Label1_5" class="title">05-16</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList2$ctl06$HiddenField1" id="DataList2_HiddenField1_6" value="N" />
+                                            <a id="DataList2_LinkButton1_6" title="湖南教育台：未毕业先上岗 打通现代学徒制“最后一公里”" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList2$ctl06$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180516144342705401&quot;, false, true))">湖南教育台：未毕业先上岗 打通现代学</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList2_Label1_6" class="title">05-16</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList2$ctl07$HiddenField1" id="DataList2_HiddenField1_7" value="N" />
+                                            <a id="DataList2_LinkButton1_7" title="【2018湖南省职教宣传周系列活动】湖南教育网：湖南外国语职院举办经典诵读比赛" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList2$ctl07$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180507090900719999&quot;, false, true))">【2018湖南省职教宣传周系列活动】</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList2_Label1_7" class="title">05-07</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList2$ctl08$HiddenField1" id="DataList2_HiddenField1_8" value="N" />
+                                            <a id="DataList2_LinkButton1_8" title="【2018湖南省职教宣传周系列活动】湖南教育新闻网：道法先贤 文化寻根  湖南外国语职业学院举办经典诵读比赛" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList2$ctl08$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180507085709840734&quot;, false, true))">【2018湖南省职教宣传周系列活动】</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList2_Label1_8" class="title">05-07</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList2$ctl09$HiddenField1" id="DataList2_HiddenField1_9" value="N" />
+                                            <a id="DataList2_LinkButton1_9" title="湖南教育网：外语类考生激增 湖外单招规模创历史之最" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList2$ctl09$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180425094412230867&quot;, false, true))">湖南教育网：外语类考生激增 湖外单招</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList2_Label1_9" class="title">04-25</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr>
+</table>
+                        </div>
+                    </div>
+                    <div style="border: 1px solid #ccc; padding: 4px; margin-top: 4px;">
+                        <table cellpadding="0" cellspacing="0" width="100%" height="30" style="border-bottom: 1px dashed #ccc;">
+                            <tr>
+                                <td width="357" align="left">&nbsp;<a id="a1" class="title" href="international.aspx" style="color:#043779;">&nbsp;<lable>国际合作与交流</lable>&nbsp;International&nbsp;Exchanges</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="Div1" style="margin-top: 5px; margin-bottom: 5px;">
+                            <table id="DataList3" cellspacing="0" cellpadding="0" style="width:357px;border-collapse:collapse;">
+	<tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList3$ctl00$HiddenField1" id="DataList3_HiddenField1_0" value="N" />
+                                            <a id="DataList3_LinkButton1_0" title="13国外教湖外开坛讲学  哪一场是你的“天菜”？" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList3$ctl00$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;interdetail.aspx?nid=20171224231134740785&quot;, false, true))">13国外教湖外开坛讲学  哪一场是你</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList3_Label1_0" class="title">12-24</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList3$ctl01$HiddenField1" id="DataList3_HiddenField1_1" value="N" />
+                                            <a id="DataList3_LinkButton1_1" title="学院外籍专家代表受邀参加“2018年湖南海内外专家迎新春联谊会”" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList3$ctl01$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;interdetail.aspx?nid=20171224183855757667&quot;, false, true))">学院外籍专家代表受邀参加“2018年</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList3_Label1_1" class="title">12-24</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList3$ctl02$HiddenField1" id="DataList3_HiddenField1_2" value="N" />
+                                            <a id="DataList3_LinkButton1_2" title="高能！湖外又多了一批超优国际合作院校" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList3$ctl02$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;interdetail.aspx?nid=20171203183109678356&quot;, false, true))">高能！湖外又多了一批超优国际合作院校</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList3_Label1_2" class="title">12-03</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList3$ctl03$HiddenField1" id="DataList3_HiddenField1_3" value="N" />
+                                            <a id="DataList3_LinkButton1_3" title="湖外带你步入“青年梦想最优秀大学”——又松大学" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList3$ctl03$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;interdetail.aspx?nid=20171117143519631958&quot;, false, true))">湖外带你步入“青年梦想最优秀大学”—</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList3_Label1_3" class="title">11-17</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList3$ctl04$HiddenField1" id="DataList3_HiddenField1_4" value="N" />
+                                            <a id="DataList3_LinkButton1_4" title="学院召开新学期外籍教师工作会议" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList3$ctl04$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;interdetail.aspx?nid=20170919143138504820&quot;, false, true))">学院召开新学期外籍教师工作会议</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList3_Label1_4" class="title">09-19</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList3$ctl05$HiddenField1" id="DataList3_HiddenField1_5" value="N" />
+                                            <a id="DataList3_LinkButton1_5" title="湖南外国语职院荣登2016全国高职院校国际影响力50强榜单" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList3$ctl05$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;interdetail.aspx?nid=20170730161939707151&quot;, false, true))">湖南外国语职院荣登2016全国高职院</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList3_Label1_5" class="title">07-30</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList3$ctl06$HiddenField1" id="DataList3_HiddenField1_6" value="N" />
+                                            <a id="DataList3_LinkButton1_6" title="湖外涉外护理（日本方向）国际就业班介绍" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList3$ctl06$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;interdetail.aspx?nid=2017032119104160427&quot;, false, true))">湖外涉外护理（日本方向）国际就业班介</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList3_Label1_6" class="title">06-20</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="357" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList3$ctl07$HiddenField1" id="DataList3_HiddenField1_7" value="N" />
+                                            <a id="DataList3_LinkButton1_7" title="湖外涉外护理（德国方向）定向就业班介绍" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList3$ctl07$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;interdetail.aspx?nid=2017032119033329256&quot;, false, true))">湖外涉外护理（德国方向）定向就业班介</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList3_Label1_7" class="title">06-20</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr>
+</table>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline" style="width: 337px; margin-right: 4px;">
+                    <div style="border: 1px solid #ccc; padding: 4px;">
+                        <table cellpadding="0" cellspacing="0" width="100%" height="30" style="border-bottom: 1px dashed #ccc;">
+                            <tr>
+                                <td width="337" align="left">&nbsp;<a id="a3" class="title" href="javascript:ToUrl('视频新闻')" style="color:#043779;">&nbsp;<lable>视频新闻</lable>&nbsp;Campus&nbsp;Video&nbsp;Toury</a></td>
+                            </tr>
+                        </table>
+                        <div id="Div3" style="margin-top: 5px; margin-bottom: 5px;">
+                            <table id="DataList5" cellspacing="0" cellpadding="0" style="width:337px;border-collapse:collapse;">
+	<tr>
+		<td>
+                                <table width="337" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList5$ctl00$HiddenField1" id="DataList5_HiddenField1_0" value="N" />
+                                            <a id="DataList5_LinkButton1_0" title="湖南教育台：未毕业先上岗 打通现代学徒制“最后一公里”" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList5$ctl00$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=2018051614440787431&quot;, false, true))">湖南教育台：未毕业先上岗 打通现代学</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList5_Label1_0" class="title">05-16</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="337" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList5$ctl01$HiddenField1" id="DataList5_HiddenField1_1" value="N" />
+                                            <a id="DataList5_LinkButton1_1" title="湖南教育电视台：校企合作培养跨境电商人才" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList5$ctl01$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180327101333370884&quot;, false, true))">湖南教育电视台：校企合作培养跨境电商</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList5_Label1_1" class="title">03-27</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="337" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList5$ctl02$HiddenField1" id="DataList5_HiddenField1_2" value="N" />
+                                            <a id="DataList5_LinkButton1_2" title="湖南教育电视台：高职单招观察——多所院校首开特色专业" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList5$ctl02$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180320093949836176&quot;, false, true))">湖南教育电视台：高职单招观察——多所</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList5_Label1_2" class="title">03-20</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="337" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList5$ctl03$HiddenField1" id="DataList5_HiddenField1_3" value="N" />
+                                            <a id="DataList5_LinkButton1_3" title="湖南教育电视台：湖南外国语职业学院热门专业加大投放量 面试成绩占比60%" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList5$ctl03$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180320093417809656&quot;, false, true))">湖南教育电视台：湖南外国语职业学院热</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList5_Label1_3" class="title">03-20</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="337" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList5$ctl04$HiddenField1" id="DataList5_HiddenField1_4" value="N" />
+                                            <a id="DataList5_LinkButton1_4" title="湖南教育电视台《湖南招考》：湖外2017国际文化节暨校运会开幕" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList5$ctl04$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20171128161517453287&quot;, false, true))">湖南教育电视台《湖南招考》：湖外20</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList5_Label1_4" class="title">11-28</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr>
+</table>
+                        </div>
+                    </div>
+                    <div style="border: 1px solid #ccc; padding: 4px; margin-top: 4px;">
+                        <table cellpadding="0" cellspacing="0" width="100%" height="30" style="border-bottom: 1px dashed #ccc;">
+                            <tr>
+                                <td width="337" align="left">&nbsp;<a id="a2" class="title" href="javascript:ToUrl('重要公告')" style="color:#043779;">&nbsp;<lable>重要公告</lable>&nbsp;Notice</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="Div2" style="margin-top: 5px; margin-bottom: 5px;">
+                            <table id="DataList4" cellspacing="0" cellpadding="0" style="width:300px;border-collapse:collapse;">
+	<tr>
+		<td>
+                                <table width="337" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList4$ctl00$HiddenField1" id="DataList4_HiddenField1_0" value="N" />
+                                            <a id="DataList4_LinkButton1_0" title="湖南外国语职业学院新校区食堂招标公告" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList4$ctl00$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180509215810352217&quot;, false, true))">湖南外国语职业学院新校区食堂招标公告</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList4_Label1_0" class="title">05-09</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="337" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList4$ctl01$HiddenField1" id="DataList4_HiddenField1_1" value="N" />
+                                            <a id="DataList4_LinkButton1_1" title="2018年湖南外国语职业学院单独招生考试 成绩复核工作的流程" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList4$ctl01$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180418201008592230&quot;, false, true))">2018年湖南外国语职业学院单独招生</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList4_Label1_1" class="title">04-18</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="337" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList4$ctl02$HiddenField1" id="DataList4_HiddenField1_2" value="N" />
+                                            <a id="DataList4_LinkButton1_2" title="关于规范学院单招招生资格审查的通知" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList4$ctl02$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20180327171010594167&quot;, false, true))">关于规范学院单招招生资格审查的通知</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList4_Label1_2" class="title">03-27</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="337" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList4$ctl03$HiddenField1" id="DataList4_HiddenField1_3" value="N" />
+                                            <a id="DataList4_LinkButton1_3" title="教育部关于公布《高等学校信息公开事项清单》的通知（教办函[2014]23号）" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList4$ctl03$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20171128113331432938&quot;, false, true))">教育部关于公布《高等学校信息公开事项</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList4_Label1_3" class="title">11-28</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="337" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList4$ctl04$HiddenField1" id="DataList4_HiddenField1_4" value="N" />
+                                            <a id="DataList4_LinkButton1_4" title="高等学校信息公开办法（教育部令29号）" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList4$ctl04$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=2017112811320568576&quot;, false, true))">高等学校信息公开办法（教育部令29号</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList4_Label1_4" class="title">11-28</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr>
+</table>
+                        </div>
+                    </div>
+                    <div style="border: 1px solid #ccc; padding: 4px; margin-top: 4px;">
+                        <table cellpadding="0" cellspacing="0" width="100%" height="30" style="border-bottom: 1px dashed #ccc;">
+                            <tr>
+                                <td width="337" align="left">&nbsp;<a id="a4" class="title" href="javascript:ToUrl('湖外院报')" style="color:#043779;">&nbsp;<lable>湖外院报</lable>&nbsp;Newspaper</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="Div4" style="margin-top: 5px; margin-bottom: 5px;">
+                            <table width="337" height="28" cellpadding="0" cellspacing="1">
+                                <tr>
+                                    <td width="90" style="border-right: 1px dashed #ccc;">
+                                        <img src="images/index_13.png" width="79" style="border: 1px solid #000;">
+                                    </td>
+                                    <td>
+                                        <table id="DataList6" cellspacing="0" cellpadding="0" style="width:210px;border-collapse:collapse;">
+	<tr>
+		<td>
+                                            <table width="210" height="28" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td width="20px">
+                                                        <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                                    </td>
+                                                    <td align="left">
+                                                        <input type="hidden" name="DataList6$ctl00$HiddenField1" id="DataList6_HiddenField1_0" value="N" />
+                                                        <a id="DataList6_LinkButton1_0" title="湖外院报第77期" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList6$ctl00$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20171218131324787352&quot;, false, true))">湖外院报第77期</a>
+                                                    </td>
+                                                    <td width="60px" align="center">
+                                                        <span id="DataList6_Label1_0" class="title">12-18</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <table width="210" height="28" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td width="20px">
+                                                        <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                                    </td>
+                                                    <td align="left">
+                                                        <input type="hidden" name="DataList6$ctl01$HiddenField1" id="DataList6_HiddenField1_1" value="N" />
+                                                        <a id="DataList6_LinkButton1_1" title="湖外院报第76期" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList6$ctl01$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=2017060612024889349&quot;, false, true))">湖外院报第76期</a>
+                                                    </td>
+                                                    <td width="60px" align="center">
+                                                        <span id="DataList6_Label1_1" class="title">06-06</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <table width="210" height="28" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td width="20px">
+                                                        <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                                    </td>
+                                                    <td align="left">
+                                                        <input type="hidden" name="DataList6$ctl02$HiddenField1" id="DataList6_HiddenField1_2" value="N" />
+                                                        <a id="DataList6_LinkButton1_2" title="湖外院报第75期" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList6$ctl02$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20170509132739480160&quot;, false, true))">湖外院报第75期</a>
+                                                    </td>
+                                                    <td width="60px" align="center">
+                                                        <span id="DataList6_Label1_2" class="title">05-09</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <table width="210" height="28" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td width="20px">
+                                                        <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                                    </td>
+                                                    <td align="left">
+                                                        <input type="hidden" name="DataList6$ctl03$HiddenField1" id="DataList6_HiddenField1_3" value="N" />
+                                                        <a id="DataList6_LinkButton1_3" title="湖外院报第74期" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList6$ctl03$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20080409012128895757&quot;, false, true))">湖外院报第74期</a>
+                                                    </td>
+                                                    <td width="60px" align="center">
+                                                        <span id="DataList6_Label1_3" class="title">04-01</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <table width="210" height="28" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td width="20px">
+                                                        <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                                    </td>
+                                                    <td align="left">
+                                                        <input type="hidden" name="DataList6$ctl04$HiddenField1" id="DataList6_HiddenField1_4" value="N" />
+                                                        <a id="DataList6_LinkButton1_4" title="湖外院报第73期" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList6$ctl04$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20170105111845738773&quot;, false, true))">湖外院报第73期</a>
+                                                    </td>
+                                                    <td width="60px" align="center">
+                                                        <span id="DataList6_Label1_4" class="title">01-05</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+	</tr><tr>
+		<td>
+                                            <table width="210" height="28" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td width="20px">
+                                                        <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                                    </td>
+                                                    <td align="left">
+                                                        <input type="hidden" name="DataList6$ctl05$HiddenField1" id="DataList6_HiddenField1_5" value="N" />
+                                                        <a id="DataList6_LinkButton1_5" title="湖外院报第72期" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList6$ctl05$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20161128150638367531&quot;, false, true))">湖外院报第72期</a>
+                                                    </td>
+                                                    <td width="60px" align="center">
+                                                        <span id="DataList6_Label1_5" class="title">11-28</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+	</tr>
+</table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline" style="width: 321px;">
+                    <div style="border: 1px solid #ccc; padding: 4px;">
+                        <table cellpadding="0" cellspacing="0" width="100%" height="30" style="border-bottom: 1px dashed #ccc;">
+                            <tr>
+                                <td width="321" align="left">&nbsp;<a id="a7" class="title" href="javascript:ToUrl('图片新闻')" style="color:#043779;">&nbsp;<lable>图片新闻</lable>&nbsp;News&nbsp;in&nbsp;Pictures</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="pic" style="margin-top: 5px; width: 308px; height: 150px; text-align: center; overflow: hidden; border: 1px solid #000;">
+                            <div style="width: auto; height: 150px; margin: 0px; padding: 0px;">
+                                <table id="DataList8" cellspacing="0" cellpadding="0" style="width:150px;border-collapse:collapse;">
+	<tr>
+		<td>
+                                    <a href="NewsDetail.aspx?nid=20171123170434406008" style="margin: 0px; padding: 0px;
+                                        border: none;">
+                                        <img id="t" class="inline" src="newsimages/20171123170434406008.jpg" width="308" height="150"
+                                            style="border: none; margin: 0px; padding: 0px;" /></a>
+                                </td>
+	</tr><tr>
+		<td>
+                                    <a href="NewsDetail.aspx?nid=20171106151826612716" style="margin: 0px; padding: 0px;
+                                        border: none;">
+                                        <img id="t" class="inline" src="newsimages/2017110615242950804.png" width="308" height="150"
+                                            style="border: none; margin: 0px; padding: 0px;" /></a>
+                                </td>
+	</tr><tr>
+		<td>
+                                    <a href="NewsDetail.aspx?nid=20171106152757679775" style="margin: 0px; padding: 0px;
+                                        border: none;">
+                                        <img id="t" class="inline" src="newsimages/20171106152757679775.png" width="308" height="150"
+                                            style="border: none; margin: 0px; padding: 0px;" /></a>
+                                </td>
+	</tr><tr>
+		<td>
+                                    <a href="NewsDetail.aspx?nid=20171106153316999498" style="margin: 0px; padding: 0px;
+                                        border: none;">
+                                        <img id="t" class="inline" src="newsimages/20171106153316999498.png" width="308" height="150"
+                                            style="border: none; margin: 0px; padding: 0px;" /></a>
+                                </td>
+	</tr><tr>
+		<td>
+                                    <a href="NewsDetail.aspx?nid=20171109092113207464" style="margin: 0px; padding: 0px;
+                                        border: none;">
+                                        <img id="t" class="inline" src="newsimages/20171109092139464119.png" width="308" height="150"
+                                            style="border: none; margin: 0px; padding: 0px;" /></a>
+                                </td>
+	</tr><tr>
+		<td>
+                                    <a href="NewsDetail.aspx?nid=20171106153134920615" style="margin: 0px; padding: 0px;
+                                        border: none;">
+                                        <img id="t" class="inline" src="newsimages/20171106153134920615.png" width="308" height="150"
+                                            style="border: none; margin: 0px; padding: 0px;" /></a>
+                                </td>
+	</tr><tr>
+		<td>
+                                    <a href="NewsDetail.aspx?nid=20171106153445225358" style="margin: 0px; padding: 0px;
+                                        border: none;">
+                                        <img id="t" class="inline" src="newsimages/20171106153445225358.png" width="308" height="150"
+                                            style="border: none; margin: 0px; padding: 0px;" /></a>
+                                </td>
+	</tr><tr>
+		<td>
+                                    <a href="NewsDetail.aspx?nid=2017110616044023133" style="margin: 0px; padding: 0px;
+                                        border: none;">
+                                        <img id="t" class="inline" src="newsimages/2017110616044023133.png" width="308" height="150"
+                                            style="border: none; margin: 0px; padding: 0px;" /></a>
+                                </td>
+	</tr>
+</table>
+                            </div>
+                        </div>
+                        <div id="tishi">
+                            <a href="javascript:LunZhuan.down()" style="color: #fff; font-size: 14px; text-decoration: none;">&lsaquo;</a>&nbsp;<span id="tupian">&nbsp;</span>&nbsp;<a href="javascript:LunZhuan.up()"
+                                style="color: #fff; font-size: 14px; text-decoration: none;">&rsaquo;</a>
+                        </div>
+                        <table id="DataList7" cellspacing="0" cellpadding="0" style="width:321px;border-collapse:collapse;">
+	<tr>
+		<td>
+                                <table width="321" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList7$ctl00$HiddenField1" id="DataList7_HiddenField1_0" value="N" />
+                                            <a id="DataList7_LinkButton1_0" title="精彩纷呈的国际化元素  这样的校运会可不一般" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList7$ctl00$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20171123170434406008&quot;, false, true))">精彩纷呈的国际化元素  这样的校运会</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList7_Label1_0" class="title">11-23</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="321" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList7$ctl01$HiddenField1" id="DataList7_HiddenField1_1" value="N" />
+                                            <a id="DataList7_LinkButton1_1" title="十九大党代表走进湖外校园" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList7$ctl01$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20171106151826612716&quot;, false, true))">十九大党代表走进湖外校园</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList7_Label1_1" class="title">11-01</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="321" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList7$ctl02$HiddenField1" id="DataList7_HiddenField1_2" value="N" />
+                                            <a id="DataList7_LinkButton1_2" title="学院顺利举行新校区建设指挥部落成仪式" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList7$ctl02$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20171106152757679775&quot;, false, true))">学院顺利举行新校区建设指挥部落成仪式</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList7_Label1_2" class="title">10-26</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="321" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList7$ctl03$HiddenField1" id="DataList7_HiddenField1_3" value="N" />
+                                            <a id="DataList7_LinkButton1_3" title="湖外志愿者助力2017湖南—非洲地方产业合作对接会" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList7$ctl03$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20171106153316999498&quot;, false, true))">湖外志愿者助力2017湖南—非洲地方</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList7_Label1_3" class="title">10-26</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="321" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList7$ctl04$HiddenField1" id="DataList7_HiddenField1_4" value="N" />
+                                            <a id="DataList7_LinkButton1_4" title="学院举办深圳龙岗区南湾街道办2017“百校行”专场招聘会" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList7$ctl04$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20171109092113207464&quot;, false, true))">学院举办深圳龙岗区南湾街道办2017</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList7_Label1_4" class="title">10-20</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="321" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList7$ctl05$HiddenField1" id="DataList7_HiddenField1_5" value="N" />
+                                            <a id="DataList7_LinkButton1_5" title="学院党校举办第18期入党积极分子培训班举行开班典礼" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList7$ctl05$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20171106153134920615&quot;, false, true))">学院党校举办第18期入党积极分子培训</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList7_Label1_5" class="title">10-19</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="321" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList7$ctl06$HiddenField1" id="DataList7_HiddenField1_6" value="N" />
+                                            <a id="DataList7_LinkButton1_6" title="学院召开新学期外籍教师工作会议" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList7$ctl06$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=20171106153445225358&quot;, false, true))">学院召开新学期外籍教师工作会议</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList7_Label1_6" class="title">09-14</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr><tr>
+		<td>
+                                <table width="321" height="28" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td width="20px">
+                                            <font style="font-size: 12px; color: #990000; padding-left: 2px;">&bull;</font>
+                                        </td>
+                                        <td align="left">
+                                            <input type="hidden" name="DataList7$ctl07$HiddenField1" id="DataList7_HiddenField1_7" value="N" />
+                                            <a id="DataList7_LinkButton1_7" title="洋教师在星城体验别样教师节" class="title" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;DataList7$ctl07$LinkButton1&quot;, &quot;&quot;, false, &quot;&quot;, &quot;NewsDetail.aspx?nid=2017110616044023133&quot;, false, true))">洋教师在星城体验别样教师节</a>
+                                        </td>
+                                        <td width="60px" align="center">
+                                            <span id="DataList7_Label1_7" class="title">09-10</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+	</tr>
+</table>
+                        </div>
+                    <div style="border: 1px solid #ccc; padding: 4px; clear: both; margin-top: 4px;">
+                        <table cellpadding="0" cellspacing="0" width="100%" height="30" style="border-bottom: 1px dashed #ccc;">
+                            <tr>
+                                <td width="321" align="left">&nbsp;<a id="a6" class="title" href="#" style="color:#043779;">&nbsp;<lable>专题</lable>&nbsp;Theme</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="Div6" style="margin-top: 5px; margin-bottom: 5px; padding-top: 4px;">
+                            <table style="width: 100%; margin-top: 10px;">
+                                <tr>
+                                    <td>
+                                        <a href="ydyl.aspx" style="text-decoration: none;">
+                                            <img src="images/01.png" style="width: 130px; border: none; margin: 2px; border: 1px solid #000;" /></a>
+                                    </td>
+                                    <td>
+                                        <a href="jjzs.aspx" style="text-decoration: none;">
+                                            <img src="images/02.png" style="width: 130px; border: none; margin: 2px; border: 1px solid #000;" /></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="gjwh.aspx" style="text-decoration: none;">
+                                            <img src="images/03.png" style="width: 130px; border: none; margin: 2px; border: 1px solid #000;" /></a>
+                                    </td>
+                                    <td>
+                                        <a href="bszt.aspx" style="text-decoration: none;">
+                                            <img src="images/04.png" style="width: 130px; border: none; margin: 2px; border: 1px solid #000;" /></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline" style="width: 1024px;">
+                    <div style="border: 1px solid #ccc; padding: 4px; margin-top: 4px;">
+                        <table cellpadding="0" cellspacing="0" width="100%" height="30" style="border-bottom: 1px dashed #ccc;">
+                            <tr>
+                                <td width="1024" align="left">&nbsp;<a id="a5" class="title" href="#" style="color:#043779;">&nbsp;<lable>友情链接</lable>&nbsp;Links</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="Div5" style="text-align: left; line-height: 60px;">
+                            &nbsp;&nbsp;<select style="width: 200px; height: 20px; line-height: 20px;" onchange="window.open(this.options[this.options.selectedIndex].value); this.selectedIndex=0;"
+                                name="select1">
+                                <option selected>---请选择---</option>
+                                <option value="http://www.hnvedu.com/index.html">湖南职成教育网</option>
+                                <option value="http://www.hnedu.gov.cn/index.html">湖南教育政务网 </option>
+                                <option value="http://www.hneeb.com">湖南招生考试信息港</option>
+                                <option value="http://www.hn12333.com/pub/hnjbw">湖南劳动保障公共服务网</option>
+                                <option value="http://www.hnrst.gov.cn">湖南人事编制网</option>
+                                <option value="http://www.hnrlzysc.com">湖南人力资源网</option>
+                                <option value="http://www.hunanpta.com">湖南人事考试网</option>
+                            </select>
+                            <a href="http://www.hnedu.cn/" target="_blank">
+                                <img src="images/index_16.png" width="100" height="35" align="middle" style="margin: 2px; border: 1px solid #000;" /></a> <a href="http://www.hnedu.gov.cn/" target="_blank">
+                                    <img src="images/index_15.png" width="100" height="35" align="middle" style="margin: 2px; border: 1px solid #000;" /></a> <a href="http://www.hnjy.com.cn/" target="_blank">
+                                        <img src="images/bj_19.png" width="100" height="35" align="middle" style="margin: 2px; border: 1px solid #000;" /></a> <a href="http://news.hnjy.com.cn/" target="_blank">
+                                            <img src="images/bj_20.png" width="100" height="35" align="middle" style="margin: 2px; border: 1px solid #000;" /></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+ <!--<div style=" width:200px;height:auto; background-color:red; position:absolute;top:300px;  padding:15px; vertical-align:middle; left:10%;z-index:3; text-align:center; word-break:break-all;">
+                <a href="http://222.240.174.83:8060/" style="font-family:微软雅黑; font-size:1.8em; text-align:center; color:#FFF;  text-decoration:none;">2018年湖南外国语职业学院单独招生考试成绩查询入口</a>
+                </div>-->
+            <div id="end">
+                <div style="width: 1024px; margin-top: 10px;">
+                    <p style="line-height: 25px; margin-left: 15px; font-size: 12px; text-align: center; color: #fff;">
+                        版权所有:Copyright Hunan College of Foreign Studies All Rights Reserved &copy;2003-2010
+                    湖南外国语职业学院 版权所有<br />
+                        备案:<a style="text-decoration: none; font-size: 12px; color: #fff;" href="http://beian.hnedu.cn"
+                            target="_blank">湘教QS4_201211_010007</a> <a style="text-decoration: none; font-size: 12px; color: #fff;"
+                                href="http://www.miibeian.gov.cn/" target="_blank">湘 ICP 备 10000747号</a><br />
+                        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43011102000240"
+                            style="text-decoration: none; color: #fff;">
+                            <img src="images/备案图标.png" align="middle" style="border: none;" />湘公网安备 43011102000240号</a>
+                        <br />
+                        学院地址：湖南长沙市中意路324号 招生电话：0731-82646629 传真：0731-82646580
+                    </p>
+                </div>
+            </div>
+          
+          
+          
+        </center>
+        <script language="javscript" type="text/javascript">
+
+            var ToUrl=function(word)
+            {
+                window.location.href="NewsList.aspx?word="+escape(word);
+            }
+            var LunZhuan = {
+                index: 0,
+                t: null,
+                timeout: null,
+                Select: function (index) {
+                    if (typeof this.timeout) {
+                        clearTimeout(this.timeout);
+                    }
+                    var range = 150 * (index - 1);
+                    if (document.getElementById("pic").scrollTop < range) {
+                        document.getElementById("pic").scrollTop = document.getElementById("pic").scrollTop + Math.ceil((range - document.getElementById("pic").scrollTop) / 3);
+                        this.timeout = setTimeout(function () { LunZhuan.Select(index);}, 50);
+                    } else if (document.getElementById("pic").scrollTop > range) {
+                        document.getElementById("pic").scrollTop = document.getElementById("pic").scrollTop - Math.ceil((document.getElementById("pic").scrollTop - range) /3);
+                        this.timeout = setTimeout(function () { LunZhuan.Select(index);}, 50);
+                    }
+                    else {
+                        clearTimeout(this.timeout);
+                    }
+                },
+                init: function (idx) {
+                    if (typeof LunZhuan.t) {
+                        clearTimeout(LunZhuan.t);
+                    }
+                    LunZhuan.index=idx;
+                    if(8>0)
+                        {
+                            if (LunZhuan.index<=1) {
+                                LunZhuan.index=1;
+                                document.getElementById("tupian").innerHTML=LunZhuan.index+"/"+8;
+                            LunZhuan.Select(LunZhuan.index);
+                            LunZhuan.t = setTimeout(function () {  LunZhuan.index++;LunZhuan.init(LunZhuan.index); }, 6000);
+                        }
+                        else if (LunZhuan.index <=8&&LunZhuan.index>1) {
+                            document.getElementById("tupian").innerHTML=LunZhuan.index+"/"+8;
+                            LunZhuan.Select(LunZhuan.index);
+                            LunZhuan.t = setTimeout(function () {LunZhuan.index++; LunZhuan.init(LunZhuan.index); }, 6000);
+                        }
+                        else if (LunZhuan.index>8) {
+                            LunZhuan.index = 1;
+                    document.getElementById("tupian").innerHTML=LunZhuan.index+"/"+8;
+                            LunZhuan.Select(LunZhuan.index);
+                           
+                            LunZhuan.t = setTimeout(function () {  LunZhuan.index++; LunZhuan.init(LunZhuan.index); }, 6000);
+                        }else
+                        {
+                            document.getElementById("tupian").innerHTML="0/0";
+                        }
+                    }
+                },
+                    up:function()
+                    {
+                        if (typeof LunZhuan.t) {
+                            clearTimeout(LunZhuan.t);
+                        }
+                        LunZhuan.index++;
+                        LunZhuan.init(LunZhuan.index);
+                    },
+                down:function()
+                {
+                    if (typeof LunZhuan.t) {
+                        clearTimeout(LunZhuan.t);
+                    }
+                    LunZhuan.index--;
+                    LunZhuan.init(LunZhuan.index);
+                }
+                }
+                
+
+                var DisPlay = function (Obj, index_str) {
+                    document.getElementById("a_news").style.color = "#043779";
+                    document.getElementById("a_media").style.color = "#403F41";
+                    document.getElementById("News").style.display = "none";
+                    document.getElementById("Media").style.display = "none";
+                    if (typeof Obj) {
+                        Obj.style.color = "#043779";
+                        document.getElementById(index_str).style.display = "block";
+                    }
+
+                }
+                var imgbox = {
+                    index_tm:null,
+
+                    tm: null,
+
+                    lingpai: false,
+
+                    status: 0,
+
+                    imagelist: [
+                    { url:"32.jpg",content: "<ul class='top_ul'><li><a href=http://www.worlduc.com/SpaceShow/Index.aspx?uid=396802 target=_blank >人才培养工作评估平台</a></li><li><a href=http://www.worlduc.com/e/lcb.aspx?eid=5395&tid=88262 target=_blank >特色专业建设平台</a></li><li><a href=http://www.worlduc.com/SpaceShow/index.aspx?uid=396818 target=_blank >课程资源库管理平台</a></li><li><a href=http://hnflc.tsk1.erya100.com/studentLogin target=_blank >网络共享课程运行平台</a></li><li><a href=http://222.240.174.82:8990/(cjcgwv45qled2r2i55sqoi55)/Default2.aspx target=_blank >教务管理平台</a></li><li><a href=http://www.worlduc.com/e/lcb.aspx?eid=5395&tid=89620 target=_blank >师资队伍管理平台</a></li><li><a href=http://www.worlduc.com/e/blog.aspx?bid=25632329 target=_blank >教研活动管理平台</a></li><li><a href=http://www.worlduc.com/SpaceShow/index.aspx?uid=396835 target=_blank >教改科研管理平台</a></li><li><a href=http://www.worlduc.com/SpaceShow/index.aspx?uid=396805 target=_blank >专业技能检测与竞赛管理平台</a></li><li><a href=http://www.worlduc.com/e/blog.aspx?bid=25583865 target=_blank >顶岗实习管理平台</a></li><li><a href=http://www.worlduc.com/e/lcb.aspx?eid=5395&tid=88261 target=_blank >毕业设计管理平台</a></li><li><a href=http://www.hnflc.cn/Cam.aspx target=_blank >教学视频监控平台</a></li></ul>" },
+                     { url:"50.JPG",content: "<ul class='top_ul'><li><a href=http://222.240.174.83:8070 target=_blank >阳光工程</a></li></ul>" },
+                     { url:"index_233.png",content: "<ul class='top_ul'><li><a href=http://www.worlduc.com/e/default.aspx?eid=5395 target=_blank >机构平台总站</a></li></ul>" }, 
+                     { url:"index_44.jpg",content: "<ul class='top_ul'><li><a href=http://www.hnflc.cn/download.aspx target=_blank >下载中心</a></li></ul>"},
+                     { url:"index_45.jpg",content:"<div style='margin-top:20px;'><a href='http://wgyzy.gov.hnedu.cn/index.html'><img style='border:none;' src ='images/index_28.png' /></a></div>"},
+{ url:"index_46.jpg",content:""}
+                    ], 
+
+                    ISiexplor: function () {
+                        if ((navigator.userAgent.indexOf('MSIE') >= 0)){
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    },
+                    open: function (b, c, sta, index) {
+                        if(this.ISiexplor())
+                        {
+                            b.src = "images/" + imgbox.imagelist[index]["url"];
+                            b.style.filter ="alpha(opacity=40)";
+                        }
+                       
+                        imgbox.tm = setTimeout(function () {imgbox.opac(b, c, sta, index); }, 10);
+                    },
+
+                    TurnAround:function (index)
+                    {
+                        var box = document.getElementById("box");
+                        var content = document.getElementById("content");
+                        if(typeof imgbox.index_tm)
+                        {
+                            clearTimeout(imgbox.index_tm);
+                        }
+                        if(index<(imgbox.imagelist.length-1)&&index>=0)
+                        {
+                            if(index==0)
+                            {
+                                this.open(box,content,1,index);
+                            }else
+                            {
+                                this.open(box,content,1,index);
+                            }
+                            index++;
+                            imgbox.index_tm = setTimeout(function(){imgbox.TurnAround(index);},6000);
+                        }else
+                        {
+                    
+                            this.open(box,content,1,index);
+                            index=0;
+                            imgbox.index_tm = setTimeout(function(){imgbox.TurnAround(index);},6000);
+                        }
+
+                    },
+
+                    opac: function (b, c, sta, index) {
+                        if (imgbox.tm != null) {
+                            clearTimeout(imgbox.tm);
+                        } 
+                        if (sta == 1) {
+                            if (!imgbox.lingpai) {
+                         
+                                if(this.ISiexplor())
+                                {
+                                    if(b.filters[0].Opacity>60)
+                                    {
+                                        b.style.filter="alpha(opacity="+(b.filters[0].Opacity-2)+")";
+                                        imgbox.lingpai = false;
+                                        imgbox.tm = setTimeout(function () { imgbox.opac(b, c, sta, index); }, 1);
+                                    }else
+                                    {
+                                        clearInterval(imgbox.tm);
+                                        imgbox.lingpai = true;
+                                        b.style.filter="alpha(opacity=50)";
+                                        b.src = "images/" + imgbox.imagelist[index]["url"];
+                                        imgbox.tm = setTimeout(function () { imgbox.opac(b, c, sta, index); }, 1);
+                                    }
+                                }
+                                else
+                                {
+                                    if ((b.style.opacity * 100) > 60) 
+                                    {
+                                        b.style.opacity = ((b.style.opacity * 100) - 1) / 100;
+                                        imgbox.lingpai = false;
+                                        imgbox.tm = setTimeout(function () {imgbox.opac(b, c, sta, index);},1);
+                                    }
+                                    else 
+                                    {
+                                        clearInterval(imgbox.tm);
+                                        imgbox.lingpai = true;
+                                        b.style.opacity = 50 / 100;
+                                        b.src = "images/" + imgbox.imagelist[index]["url"];
+                                        imgbox.tm = setTimeout(function () {imgbox.opac(b, c, sta, index);},1);
+                                    }
+                                }
+
+                            } 
+                            else 
+                            {
+                                if(this.ISiexplor())
+                                {
+                                    if(b.filters[0].Opacity<100)
+                                    {
+                                        b.style.filter="alpha(opacity="+(b.filters[0].Opacity+2)+")";
+                                        imgbox.lingpai = true;
+                                        imgbox.tm = setTimeout(function () {imgbox.opac(b, c, sta, index);},1);
+                                    }
+                                    else
+                                    {
+                                        clearTimeout(imgbox.tm);
+                                        imgbox.lingpai = false;
+                                    }
+                                }
+                                else
+                                {
+                                    if ((b.style.opacity * 100) < 100) {
+                                        b.style.opacity = ((b.style.opacity * 100) + 1) / 100;
+                                        imgbox.lingpai = true;
+                                        imgbox.tm = setTimeout(function () { imgbox.opac(b, c, sta, index); }, 1);
+                                    } else {
+                                        clearTimeout(imgbox.tm);
+                                        imgbox.lingpai = false;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                };
+
+                var play = function (index) {
+                    var box = document.getElementById("box");
+                    var content = document.getElementById("content");
+                    var arr = box.src.toString().split('/');
+
+                    move.Init(content,index);
+                }
+
+                var move = {
+                    tim: null,
+                    Init: function (c,index) {
+                        if (typeof c) {
+                            c.style.zIndex = 1;
+                            c.style.position = "relative";
+                            c.style.top = "-350px";
+                            c.style.left = "-160px";
+                            c.innerHTML=imgbox.imagelist[index-1]["content"];
+                            move.tim = setInterval(function () { move.offset(c); }, 50);
+                        }
+                    },
+                    offset: function (c) {
+                        var index = c.style.left.indexOf("px");
+                        var left = c.style.left.substring(0, index);
+                        if (left < 0) {
+                            c.style.left = (parseInt(left) / 3 + 1) + "px";
+
+                        } else {
+                            clearInterval(move.tim);
+                        }
+                    }
+                }
+                LunZhuan.init(1);
+                imgbox.TurnAround(0);
+
+                function clearVideo()
+                { 
+                    var cl=document.getElementById("cl");
+                    if(cl!=null){cl.style.display="none";
+                    }
+                }
+        </script>
+    </form>
+      <!--<div id="floatTools" class="float0831">
+                <div class="floatL">
+                    <a style="DISPLAY: none" id="aFloatTools_Show" class="btnOpen"
+                        title="查看在线客服"
+                        onclick="javascript:$('#divFloatToolsView').animate({width: 'show', opacity: 'show'}, 'normal',function(){ $('#divFloatToolsView').show();kf_setCookie('RightFloatShown', 0, '', '/', 'www.istudy.com.cn'); });$('#aFloatTools_Show').attr('style','display:none');$('#aFloatTools_Hide').attr('style','display:block');"
+                        href="javascript:void(0);">展开</a> <a id="aFloatTools_Hide" class="btnCtn"
+                            title="关闭在线客服"
+                            onclick="javascript:$('#divFloatToolsView').animate({width: 'hide', opacity: 'hide'}, 'normal',function(){ $('#divFloatToolsView').hide();kf_setCookie('RightFloatShown', 1, '', '/', 'www.istudy.com.cn'); });$('#aFloatTools_Show').attr('style','display:block');$('#aFloatTools_Hide').attr('style','display:none');"
+                            href="javascript:void(0);">收缩</a>
+                </div>
+                <div id="divFloatToolsView" class="floatR">
+                    <div class="tp"></div>
+                    <div class="cn">
+                        <ul>
+                            <li class="top">
+                                <h3 class="titZx">QQ咨询</h3>
+                            </li>
+                            <li><span class="icoZx">在线咨询</span> </li>
+                            <li><a class="icoTc" href="tencent://message/?uin=3398151071&Site=湖南外国语职业学院&Menu=yes"  target="_blank">A老师</a> </li>
+                            <li><a class="icoTc" href="tencent://message/?uin=3237559360&Site=湖南外国语职业学院&Menu=yes"  target="_blank">B老师</a> </li>
+                           
+                        </ul>
+                        <ul class="webZx">
+                            <li class="webZx-in"><a href="http://zhaosheng.hnflc.cn" target="_blank" style="FLOAT: left">
+                                <img src="images/right_float_web.png" border="0px"></a> </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h3 class="titDh">电话咨询</h3>
+                            </li>
+                            <li><span class="icoTl">0731-82646629</span> </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>-->
+
+</body>
+</html>

@@ -1,0 +1,2507 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=8" />
+<meta name="keywords" content="莲塘,莲塘一中,一中">
+<meta name="description" content="莲塘一中创办于1956年春，1995年被评为江西省优秀重点中学，2003年被评为南昌市首批十大名校。学校以其学风浓厚、教风严谨、办学有方、人才辈出在社会上享有很高的声誉，是莘莘学子实现梦想的摇篮，是教学精英施展才华的沃土。">
+<title>莲塘一中</title>
+<link rel="shortcut icon" href="/newWeb/images/w-logo.png?flag=0" type="image/x-icon" >
+<link href="/newWeb/css/school.css?flag=4" rel="stylesheet" type="text/css">
+<link href="/newWeb/css/ad.css?flag=0" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/newWeb/js/jquery-1.10.2.min.js"></script> 
+<script type="text/javascript" src="/newWeb/js/pq.js?flag=1"></script>
+<script type="text/javascript" src="/newWeb/js/floatingAd.js?flag=1"></script>
+<script type="text/javascript">
+function AddFavorite(sURL, sTitle){
+   	try{
+       	window.external.addFavorite(sURL, sTitle);
+   	}catch (e){
+       	try{
+           	window.sidebar.addPanel(sTitle, sURL, "");
+       	}catch (e){
+           	alert("加入收藏失败，请使用Ctrl+D进行添加");
+       	}
+   	}
+}
+//设为首页 <a onclick="SetHome(this,window.location)">设为首页</a>
+function SetHome(obj,vrl){
+	try{
+		obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+	}catch(e){
+	    if(window.netscape) {
+	    	try{
+	        	netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+	        }catch (e){
+	        	alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+	        }
+	        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+	        prefs.setCharPref('browser.startup.homepage',vrl);
+	   }
+	}
+}
+</script>
+<script language="JavaScript" type="text/JavaScript"> 
+
+/* 漂浮窗口 */
+function newFloatingWindow(){
+	$.ajax({
+    	url: "/portlet/Fwlist.json",
+        success: function(data){
+        	var studentList= data.list;
+            $.each(studentList,function(i){
+            	var flag = this.flag;
+            	var fwurl = this.fwurl;
+            	var fwheight = this.fwheight;
+            	var fwwidth = this.fwwidth;
+            	var fwlink = this.fwlink;
+                $(function(){
+					if(flag==0){
+						$.floatingAd({
+						//频率
+						delay: 60,
+						//超链接后是否关闭漂浮
+						isLinkClosed: false,
+						//漂浮内容
+						ad:	[{
+							'img': fwurl,
+							'imgHeight': fwheight,
+							'imgWidth': fwwidth,
+							//关闭按键图片
+							'closed-icon': '/newWeb/images/close.png'
+						}],
+						//关闭事件
+						onClose: function(elem){
+							//alert('关闭');
+						}
+						});
+	
+						$("#aa").floatingAd({
+							onClose:function(elem){}
+						});
+					}else if(flag==1){
+						$.floatingAd({
+							//频率
+							delay: 60,
+							//超链接后是否关闭漂浮
+							isLinkClosed: false,
+							//漂浮内容
+							ad:	[{
+								'img': fwurl,
+								'imgHeight': fwheight,
+								'imgWidth': fwwidth,
+								'linkUrl': fwlink,
+								//'z-index': 101,
+								//'title': '丁三石',
+								//关闭按键图片
+								'closed-icon': '/newWeb/images/close.png'
+							}],
+							//关闭事件
+							onClose: function(elem){
+								//alert('关闭');
+							}
+						});
+						$("#aa").floatingAd({
+							onClose:function(elem){}
+						});
+					}
+				}); 
+        	});
+    	}
+	});
+} 
+ 
+function changeFocus(){
+	if(event.keyCode==13){    
+    	submitForm();    
+  	}
+}
+ 
+function initFocus() {
+	$("#userid").focus(function() {
+	    var text_value = $(this).val();
+	    if (text_value == this.defaultValue) {
+	        $(this).val("");
+	    }
+	});
+    $("#userid").blur(function() {
+        var text_value = $(this).val();
+        if (text_value == "") {
+            $(this).val(this.defaultValue);
+        }
+    });
+    $("#showPwd").focus(function() {
+        var text_value = $(this).val();
+        if (text_value == this.defaultValue) {
+            $("#showPwd").hide();
+            $("#password").show().focus();
+        }
+    });
+    $("#password").blur(function() {
+        var text_value = $(this).val();
+        if (text_value == "") {
+            $("#showPwd").show();
+            $("#password").hide();
+        }
+    });
+}
+ 
+function validateForm() {
+	if($.trim($("#userid").val()) == "" || $("#userid").val() == "请输入登录姓名") {
+		alert("请输入用户名！");
+	    $("#userid").focus();
+	    return false;
+	}
+    if($.trim($("#password").val()) == "") {
+        alert("请输入密码！");
+        $("#password").focus();
+        return false;
+    }
+    return true;
+}//end validateForm
+ 
+function submitForm() {
+	if(validateForm()) {
+		$("#userForm").submit();
+	}
+}
+ 
+jQuery(document).ready(function(){
+	initFocus();
+	
+	//漂浮窗
+	newFloatingWindow();
+	
+	$("#userForm").keydown(function(){
+	    if(event.keyCode == 13) {
+	        submitForm();
+	    }
+    });
+});
+ 
+function MM_preloadImages() { //v3.0
+	var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+ 
+function MM_swapImgRestore() { //v3.0
+	var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+ 
+function MM_findObj(n, d) { //v4.01
+	var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  	if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  	for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  	if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+ 
+function MM_swapImage() { //v3.0
+	var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   	if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<script>
+/* 	
+倒计时功能
+function count_down(year,month,day,div) 
+	{ 
+		var now = new Date(); 
+		var endDate = new Date(year,month-1, day); 
+		var leftTime=endDate.getTime()-now.getTime(); 
+		var leftsecond = parseInt(leftTime/1000); 
+		//var day1=parseInt(leftsecond/(24*60*60*6)); 
+		var day1=Math.floor(leftsecond/(60*60*24)); 
+		var hour=Math.floor((leftsecond-day1*24*60*60)/3600); 
+		var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); 
+		var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); 
+		var cc = document.getElementById(div); 
+		cc.innerHTML = day1; 
+	} 
+	window.setInterval(function(){
+		count_down(2016,12,19,'AngelIce');
+	}, 1000); 
+ */
+</script>
+<script type="text/javascript">
+	/* 搜索 */
+	function findAllLike(){
+		var val = document.getElementById("findVal").value;
+		if(val==null||val==""){
+			alert("请输入搜索关键字");
+			return false;
+		}
+		var url = encodeURI("/portlet/findAllLike.view?title="+val);
+		window.location=url;
+	}
+</script>
+
+</head>
+
+<body>
+	<div class="head-bg">
+		<div class="head">
+	    	<div class="logo"><a href="/index.view"><img src="/newWeb/images/logo.png"></a></div>
+	        <div class="t-phone">
+	        	<span><img src="/newWeb/images/phone-icon.png"></span>
+	            <div class="phone-txt">
+	            	<p>联系电话</p>
+	                <h3>0791-85761902</h3>
+	            </div>
+	            <div class="t-right">
+		        	<a  href="#" onclick="SetHome(this,window.location)" >设为首页</a>
+		            <a  href="#"    onclick="AddFavorite(window.location,document.title)"  >加入收藏</a>
+		            <a href="#">联系我们</a>
+		            
+		            <div class="search-box">
+	                    <label class="search-label"><input type="text" id="findVal" class="search-input" placeholder="搜索关键字"><i class="s-input-icon"></i></label>
+	                    <input type="button" class="search-btn" onclick="findAllLike()" value="搜索">
+                	</div>
+	        	</div>
+	        </div>
+	    </div>
+	</div>
+	<div class="nav-bg">
+		<div class="nav" id="menu">
+	    	<ul id="nav">
+	        	<li class="mainlevel on" id="mainlevel_01"><a href="/index.view">网站首页</a></li>
+				
+					<li class="mainlevel" id="mainlevel_02">
+						
+							
+							
+								<a href="/portlet/dcinfotagpagelist.view?wf_ID=4&wf_FID=-1&wf_Tag=4">一中新闻</a>
+							
+						
+						
+						<ul id="sub_02">
+		                    
+		                    	<li>
+		                    	
+									
+									
+										<a href="/portlet/dcinfotagpagelist.view?wf_ID=14&wf_FID=4&wf_Tag=3">学校快讯</a>
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=15&wf_FID=4">校园视频</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=16&wf_FID=4">校园广角</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=17&wf_FID=4">青荷基金</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=18&wf_FID=4">国际教育</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+									
+										<a href="/portlet/dcinfotagpagelist.view?wf_ID=19&wf_FID=4&wf_Tag=1">教育新闻</a>
+									
+								
+								
+								</li>
+		                    
+		                </ul>
+					</li>
+				
+					<li class="mainlevel" id="mainlevel_02">
+						
+							
+								<a href="/portlet/dcinfopagelist.view?wf_ID=5&wf_FID=-1">一中概况</a>
+							
+							
+						
+						
+						<ul id="sub_02">
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=20&wf_FID=5">学校简介</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=21&wf_FID=5">校园风景</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=22&wf_FID=5">学校简史</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=23&wf_FID=5">校庆特辑</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=24&wf_FID=5">历任领导</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=25&wf_FID=5">现任领导</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=26&wf_FID=5">校园文化</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                </ul>
+					</li>
+				
+					<li class="mainlevel" id="mainlevel_02">
+						
+							
+								<a href="/portlet/dcinfopagelist.view?wf_ID=7&wf_FID=-1">校务公开</a>
+							
+							
+						
+						
+						<ul id="sub_02">
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=27&wf_FID=7">党总支</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=28&wf_FID=7">校工会</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=29&wf_FID=7">校办室</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=30&wf_FID=7">党办室</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=31&wf_FID=7">教务处</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=32&wf_FID=7">总务处</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=33&wf_FID=7">政教处</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=34&wf_FID=7">综治办</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=35&wf_FID=7">财务处</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=36&wf_FID=7">教科处</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=37&wf_FID=7">校团委</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=38&wf_FID=7">现代教育技术</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=39&wf_FID=7">图书信息</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=40&wf_FID=7">校本教材研发</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=41&wf_FID=7">民族工作</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=42&wf_FID=7">网络宣传中心</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=43&wf_FID=7">资助中心</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                </ul>
+					</li>
+				
+					<li class="mainlevel" id="mainlevel_02">
+						
+							
+								<a href="/portlet/dcinfopagelist.view?wf_ID=8&wf_FID=-1">教学沙龙</a>
+							
+							
+						
+						
+						<ul id="sub_02">
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=44&wf_FID=8">教学活动</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=45&wf_FID=8">教学探讨</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=46&wf_FID=8">校本课程</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=47&wf_FID=8">课题研究</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=48&wf_FID=8">校内期刊</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=49&wf_FID=8">精彩课堂</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                </ul>
+					</li>
+				
+					<li class="mainlevel" id="mainlevel_02">
+						
+							
+								<a href="/portlet/dcinfopagelist.view?wf_ID=9&wf_FID=-1">德育天地</a>
+							
+							
+						
+						
+						<ul id="sub_02">
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=50&wf_FID=9">精神文明建设专栏</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=51&wf_FID=9">国旗下讲话</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=52&wf_FID=9">班主任工作</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=53&wf_FID=9">心天地</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=54&wf_FID=9">社团活动</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=55&wf_FID=9">身边好人榜</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=56&wf_FID=9">青荷校报</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=57&wf_FID=9">校园故事</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=58&wf_FID=9">团委动态</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                </ul>
+					</li>
+				
+					<li class="mainlevel" id="mainlevel_02">
+						
+							
+								<a href="/portlet/dcinfopagelist.view?wf_ID=10&wf_FID=-1">园丁风采</a>
+							
+							
+						
+						
+						<ul id="sub_02">
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=59&wf_FID=10">管理团队</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=60&wf_FID=10">高级教师</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=61&wf_FID=10">荣誉集锦</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=62&wf_FID=10">教师主页</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=63&wf_FID=10">名师工作室</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                </ul>
+					</li>
+				
+					<li class="mainlevel" id="mainlevel_02">
+						
+							
+								<a href="/portlet/dcinfopagelist.view?wf_ID=11&wf_FID=-1">学科资源</a>
+							
+							
+						
+						
+						<ul id="sub_02">
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=78&wf_FID=11">语文组</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=79&wf_FID=11">数学组</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=80&wf_FID=11">英语组</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=81&wf_FID=11">物理组</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=82&wf_FID=11">化学组</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=83&wf_FID=11">政治组</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=84&wf_FID=11">历史组</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=85&wf_FID=11">生物组</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=86&wf_FID=11">地理组</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=87&wf_FID=11">体育组</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=88&wf_FID=11">音乐组</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=89&wf_FID=11">美术组</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=90&wf_FID=11">电教实验</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=91&wf_FID=11">行政组</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=92&wf_FID=11">班主任</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                </ul>
+					</li>
+				
+					<li class="mainlevel" id="mainlevel_02">
+						
+							
+								<a href="/portlet/dcinfopagelist.view?wf_ID=12&wf_FID=-1">党政建设</a>
+							
+							
+						
+						
+						<ul id="sub_02">
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=64&wf_FID=12">学习动态</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=65&wf_FID=12">活动简报</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=66&wf_FID=12">学习心得</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=67&wf_FID=12">学校党员</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                </ul>
+					</li>
+				
+					<li class="mainlevel" id="mainlevel_02">
+						
+							
+								<a href="/portlet/dcinfopagelist.view?wf_ID=13&wf_FID=-1">校庆专栏</a>
+							
+							
+						
+						
+						<ul id="sub_02">
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=68&wf_FID=13">校庆新闻</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=69&wf_FID=13">校庆通知</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=70&wf_FID=13">校庆动态</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=71&wf_FID=13">学校风采</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=72&wf_FID=13">活动安排</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=73&wf_FID=13">一中沿革</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=74&wf_FID=13">校友捐赠</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=75&wf_FID=13">校友名录</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=76&wf_FID=13">历任校领导</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                    	<li>
+		                    	
+									
+										<a href="/portlet/dcinfopagelist.view?wf_ID=77&wf_FID=13">校庆视频</a>
+									
+									
+								
+								
+								</li>
+		                    
+		                </ul>
+					</li>
+				
+					<li class="mainlevel" id="mainlevel_02">
+						
+							
+								<a href="/portlet/dcinfopagelist.view?wf_ID=93&wf_FID=-1">校长专栏</a>
+							
+							
+						
+						
+						<ul id="sub_02">
+		                    
+		                </ul>
+					</li>
+				
+	        </ul>
+	    </div>
+	</div>
+  <!--banner-s--> 
+	<div class="banner">
+        <div class="slide-main" id="touchMain">
+            <a class="prev" href="javascript:;" stat="prev1001"><img src="/newWeb/images/l-btn.png" /></a>
+            <div class="slide-box" id="slideContent"> 
+                
+ 					
+ 						<div class="slide" id="bgstylec" style="background:url(http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000196/file/2016/10/banner2.jpg201610241429386b06.jpg) #fff center top no-repeat"></div> 
+ 					
+ 					
+ 				
+ 					
+ 						<div class="slide" id="bgstylec" style="background:url(http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000196/file/2016/10/banner3.jpg20161024142949321f.jpg) #fff center top no-repeat"></div> 
+ 					
+ 					
+ 				
+ 					
+ 						<div class="slide" id="bgstylec" style="background:url(http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000196/file/2016/12/banner8.jpg2016121611130275ee.jpg) #fff center top no-repeat"></div> 
+ 					
+ 					
+ 				
+ 					
+ 						<div class="slide" id="bgstylec" style="background:url(http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000196/file/2016/11/banner7.jpg201611111715259781.jpg) #fff center top no-repeat"></div> 
+ 					
+ 					
+ 				
+ 					
+ 						<div class="slide" id="bgstylec" style="background:url(http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000196/file/2016/12/banner9.jpg201612191034027234.jpg) #fff center top no-repeat"></div> 
+ 					
+ 					
+ 				
+            	<a class="next" href="javascript:;" stat="next1002"><img src="/newWeb/images/r-btn.png" /></a>
+            	<div class="item">
+                	<a class="cur" stat="item1001" href="javascript:;"></a> 
+                	
+	                	<a href="javascript:;" stat="item1001"></a>  
+	                
+	                	<a href="javascript:;" stat="item1002"></a>  
+	                
+	                	<a href="javascript:;" stat="item1003"></a>  
+	                
+	                	<a href="javascript:;" stat="item1004"></a>  
+	                
+            	</div>
+        	</div>
+    	</div> 
+  	</div>
+ <!--banner-e-->   
+	<div class="top-news">
+		<div class="news-focus">
+		  	<div class="top-news-tit"> <span><img src="/newWeb/images/n-l.png"></span> <b>新闻图片</b><em>/NEWS PICTURES</em> <span><img src="/newWeb/images/n-r.png"></span></div>
+		    <div id="slide" class="slide_wrap">
+		    	<ul class="slide_imglist">
+			        
+			        	
+			        	
+			        		<!-- notice数据 -->
+			        		<li><a title="喜报！莲塘一中学生篮球队和排球队获得2018年南昌市“滕王阁杯”青少年体育联赛（南昌县赛区）第一名！" href="/portlet/dcdetailinfo.view?id=886" target="_blank"><img src="http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000196/file/2018/05/20180528095825b278.jpg" alt="" /></a></li>
+			        	
+			        
+			        	
+			        	
+			        		<!-- notice数据 -->
+			        		<li><a title="城乡手牵手 赣疆心连心——新疆克州班社会实践活动基地揭牌暨莲塘一中与剑霞小学结对仪式" href="/portlet/dcdetailinfo.view?id=885" target="_blank"><img src="http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000196/file/2018/05/20180528095325cc9d.jpg" alt="" /></a></li>
+			        	
+			        
+			        	
+			        	
+			        		<!-- notice数据 -->
+			        		<li><a title="新疆阿克陶县“双语”骨干教师第四批赴赣跟岗研修提高班学员顺利完成学业返疆" href="/portlet/dcdetailinfo.view?id=884" target="_blank"><img src="http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000196/file/2018/05/201805280949216298.jpg" alt="" /></a></li>
+			        	
+			        
+			        	
+			        	
+			        		<!-- notice数据 -->
+			        		<li><a title="省教育考试院副院长余芳霖一行莅临我校视察高考准备工作" href="/portlet/dcdetailinfo.view?id=883" target="_blank"><img src="http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000196/file/2018/05/20180528094653dafb.jpg" alt="" /></a></li>
+			        	
+			        
+			        	
+			        	
+			        		<!-- notice数据 -->
+			        		<li><a title="我校教师参加南昌县教育局举办的美丽昌南 幸福家园“5.20感恩有你”无偿献血活动" href="/portlet/dcdetailinfo.view?id=882" target="_blank"><img src="http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000196/file/2018/05/201805220754510c0d.jpg" alt="" /></a></li>
+			        	
+			        
+		        </ul>
+		      	<div class="slide_title">
+		        	<h3><a href="#" target="_blank"></a></h3>
+		        	<dl class="slide_num" style="width: 108px;"></dl>
+		         	<em></em>
+		        </div>
+		    </div>
+		    <script type="text/javascript">
+		    	$('#slide').UISlide();
+		    </script> 
+	 	</div>
+
+	      <div class="focus-right">
+		  	<div class="focus-r-top">
+		    	<div class="top-news-tit"> <span><img src="/newWeb/images/n-l.png"></span> <b>校长专栏</b><em>/PRINCIPAL PAGE</em> <span><img src="/newWeb/images/n-r.png"></span> </div>
+
+		     	<div class="xzjs-con">
+		            <div href="#" class="xzjs-con-top">
+			             <div id="slide2" class="slide_wrap slide_wrap2">
+					     	<ul class="slide_imglist slide_imglist2" >
+				 	            
+				 	            	<li><a title="徐校长在2018届高三百日迎考动员大会上的讲话" href="/portlet/dctopicdetailinfo.view?wt_ID=414" target="_blank"><img src="http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000196/file/2018/03/2018030409403650ae.jpg" alt="" /></a></li>
+				 	            
+				 	            	<li><a title="徐小平校长在2017年秋季开学典礼上的讲话" href="/portlet/dctopicdetailinfo.view?wt_ID=407" target="_blank"><img alt="" src="http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000196/file/2017/09/20170913071852c5cf.jpg" /></a></li>
+				 	            
+				 	            	<li><a title="徐小平校长在2017级高一新生军训汇报表演大会上的讲话" href="/portlet/dctopicdetailinfo.view?wt_ID=406" target="_blank"><img alt="" src="http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000196/file/2017/08/20170827100225027c.jpg" /></a></li>
+				 	            
+				 	            	<li><a title="徐小平校长在2017级高一新生军训动员大会上的讲话" href="/portlet/dctopicdetailinfo.view?wt_ID=405" target="_blank"><img alt="" src="http://edu1.ispt.com.cn:7085/isschool/data/isschooldb000196/file/2017/07/201707011111542ccc.jpg" /></a></li>
+				 	            
+					        </ul>
+					        <div class="slide_title slide_title2">
+					        	<h3><a href="javascript:;" target="_blank"></a></h3>
+					         	<dl class="slide_num slide_num2"  > </dl>
+					         	<em></em> 
+					        </div>
+					     </div>
+					     <script type="text/javascript">
+					       	 $('#slide2').UISlide();
+					     </script>  
+			             <span style="padding-left:10px;"><a href="/portlet/dcinfopagelist.view?wf_ID=93&wf_FID=-1">徐小平，男，南昌县莲塘一中党总支书记、校长。</a></span>
+		           </div>
+		           <ul class="xzjs-con-list">
+		            	
+		            		<li><a href="/portlet/dctopicdetailinfo.view?wt_ID=414">徐校长在2018届高三百日迎考动员大会上的讲话</a><span>02-27</span></li>
+		            	
+		            		<li><a href="/portlet/dctopicdetailinfo.view?wt_ID=407">徐小平校长在2017年秋季开学典礼上的讲话</a><span>09-13</span></li>
+		            	
+		            		<li><a href="/portlet/dctopicdetailinfo.view?wt_ID=406">徐小平校长在2017级高一新生军训汇报表演大会上的讲话</a><span>08-27</span></li>
+		            	
+		            		<li><a href="/portlet/dctopicdetailinfo.view?wt_ID=405">徐小平校长在2017级高一新生军训动员大会上的讲话</a><span>08-19</span></li>
+		            	
+		           </ul>
+		       </div>
+		    </div>
+		  </div>
+	    
+	  	<div class="focus-center">
+	    	<div class="top-news-tit"> <span><img src="/newWeb/images/n-l.png"></span> <b>最新动态</b><em>/LATEST NEWS</em> <span><img src="/newWeb/images/n-r.png"></span> </div>
+	    	<ul>
+	      		
+	      			
+	      			
+	      				<!-- notice信息 -->
+	      				<li> <a href="/portlet/dcdetailinfo.view?id=886" title="喜报！莲塘一中学生篮球队和排球队获得2018年南昌市“滕王阁杯”青少年体育联赛（南昌县赛区）第一名！">喜报！莲塘一中学生篮球队和排球队获得2018年南昌市“滕王阁杯”青少年体育联赛（南昌县赛区）第一名！</a> <span>05-28</span> </li>
+	      			
+	      		
+	      			
+	      			
+	      				<!-- notice信息 -->
+	      				<li> <a href="/portlet/dcdetailinfo.view?id=885" title="城乡手牵手 赣疆心连心——新疆克州班社会实践活动基地揭牌暨莲塘一中与剑霞小学结对仪式">城乡手牵手 赣疆心连心——新疆克州班社会实践活动基地揭牌暨莲塘一中与剑霞小学结对仪式</a> <span>05-26</span> </li>
+	      			
+	      		
+	      			
+	      			
+	      				<!-- notice信息 -->
+	      				<li> <a href="/portlet/dcdetailinfo.view?id=884" title="新疆阿克陶县“双语”骨干教师第四批赴赣跟岗研修提高班学员顺利完成学业返疆">新疆阿克陶县“双语”骨干教师第四批赴赣跟岗研修提高班学员顺利完成学业返疆</a> <span>05-25</span> </li>
+	      			
+	      		
+	      			
+	      			
+	      				<!-- notice信息 -->
+	      				<li> <a href="/portlet/dcdetailinfo.view?id=883" title="省教育考试院副院长余芳霖一行莅临我校视察高考准备工作">省教育考试院副院长余芳霖一行莅临我校视察高考准备工作</a> <span>05-24</span> </li>
+	      			
+	      		
+	      			
+	      			
+	      				<!-- notice信息 -->
+	      				<li> <a href="/portlet/dcdetailinfo.view?id=882" title="我校教师参加南昌县教育局举办的美丽昌南 幸福家园“5.20感恩有你”无偿献血活动">我校教师参加南昌县教育局举办的美丽昌南 幸福家园“5.20感恩有你”无偿献血活动</a> <span>05-19</span> </li>
+	      			
+	      		
+	      			
+	      			
+	      				<!-- notice信息 -->
+	      				<li> <a href="/portlet/dcdetailinfo.view?id=881" title="省民宗局领导莅临我校指导工作">省民宗局领导莅临我校指导工作</a> <span>05-18</span> </li>
+	      			
+	      		
+	      			
+	      			
+	      				<!-- notice信息 -->
+	      				<li> <a href="/portlet/dcdetailinfo.view?id=880" title="我校召开2018年上半年普通高中学业水平考试（机考）培训会">我校召开2018年上半年普通高中学业水平考试（机考）培训会</a> <span>05-17</span> </li>
+	      			
+	      		
+	      			
+	      			
+	      				<!-- notice信息 -->
+	      				<li> <a href="/portlet/dcdetailinfo.view?id=878" title="莲塘一中2018年“青荷杯”竞赛获奖名单">莲塘一中2018年“青荷杯”竞赛获奖名单</a> <span>05-16</span> </li>
+	      			
+	      		
+	    	</ul>
+	   	</div>
+	</div> 
+	<div class="news-main-bg">
+		<div class="news-main">
+	  		<div class="news-main-l example-b" id="tabmain">
+	        	<div class="news-main-l-tit">
+	            	
+            			<a href="#" class="ma_1">学校快讯</a>
+            		
+            			<a href="#" class="ma_1">教育新闻</a>
+            		
+            			<a href="#" class="ma_1">校长专栏</a>
+            		
+	            </div>
+	            
+	            	
+            		 
+	            		<div class="news-main-l-con">
+							
+								<li>
+			                    	<h2>
+			                    		
+			                    			<a href="/portlet/dcdetailinfo.view?id=886" title="喜报！莲塘一中学生篮球队和排球队获得2018年南昌市“滕王阁杯”青少年体育联赛（南昌县赛区）第一名！">
+			                    		
+			                    		
+			                    			
+			    								喜报！莲塘一中学生篮球队和排球队获得2018年南昌...
+			    							
+			    							
+			                    		</a>
+			                    	</h2>
+			                        <p>  
+	为了丰富中小学生的课余生活，提高学生的综合素质，增强团队精神和凝聚力，展现学生积极向上的精神风貌，由南昌县教育科技体育局举办的2018年南昌市“滕王阁杯”青少年体育联赛（南昌县赛区）暨南昌县第四届“校园杯”中小学生篮球、足球、排球比赛于5月21日至24日在我县举行。 
+
+
+	此次比赛我校共派出足球、篮球、排球三支队伍参加高中组比赛，经过三天的激烈角逐，最终我校篮球队和排球队分别获得南昌县高中组第一名。本次比赛我校学生顽强拼搏，赛出风格，赛出水平，充分展现我校学生良好的精神面貌和优秀的身体素质；此次比赛的举办，为我校体育工作提供了一次与兄弟学校相互交流学习的机会，促进了我校体育竞技水平的提升。 
+
+
+	
+
+
+	 
+
+
+	闵员根副县长亲临比赛现场指导工作
+
+
+	 
+
+
+	校领导现场观看比赛，为学生加油鼓劲！
+
+
+	 
+
+ 
+
+	莲塘一中排球队获得高中组冠军
+
+
+
+	 
+
+
+	莲塘一中篮球队获得高中组冠军 
+</p>
+			                        <span>05/28</span>
+			                    </li>
+			    			
+								<li>
+			                    	<h2>
+			                    		
+			                    			<a href="/portlet/dcdetailinfo.view?id=885" title="城乡手牵手 赣疆心连心——新疆克州班社会实践活动基地揭牌暨莲塘一中与剑霞小学结对仪式">
+			                    		
+			                    		
+			                    			
+			    								城乡手牵手 赣疆心连心——新疆克州班社会实践活动基...
+			    							
+			    							
+			                    		</a>
+			                    	</h2>
+			                        <p>  
+	 
+
+
+	（出席仪式的领导和嘉宾） 
+
+
+	实践喜迎十九大，青春奋发建新功。为响应党中央多层次、多方面开展学生实践活动的号召，建设定位准确，影响持续的社会实践基地。同时也为了延伸学校教育，为新疆克州班学生提供社会实践平台，提升他们的社会实践素养，促进学生全面发展。2018年5月25日上午，新疆克州班社会实践活动基地揭牌暨我校与剑霞小学结对仪式在剑霞小学举行。原省发改委副巡视员、江西引路人志愿者服务社发起人陈朗如，省援疆办李庆处长，县委常委、向塘镇党委书记陈伟峰，莲塘一中党总支书记、校长徐小平以及邓必慧副书记，原市纠风办主任、江西引路人志愿者服务社发起人徐友根，剑霞村村支书刘伟平，全体新疆克州班师生以及剑霞小学师生等人参加仪式。剑霞小学校长主持揭牌仪式。 
+
+
+	 
+
+
+	
+
+
+	
+
+
+	  
+
+
+	 
+
+
+	（活动现场） 
+
+
+	 
+
+
+	  
+
+
+	 
+
+ 
+
+	省援疆办李庆处长
+
+
+
+	  
+
+
+	 
+
+ 
+
+	莲塘一中徐小平校长
+
+
+
+	  
+
+
+	 
+
+ 
+
+	剑霞村支书刘伟平
+
+
+
+	  
+
+
+	 
+
+
+	新疆克州班学生代表 
+
+
+	仪式上，剑霞小学和新疆克州班学生代表发言，刘伟平书记、徐小平校长等相继致辞。随后徐小平校长和刘伟平书记一起揭牌，“莲塘一中新疆克州班社会实践活动基地”正式成立。揭牌结对仪式圆满结束后，全体师生一起参观剑霞村进士大道，近距离感受社会主义新农村新气象与深厚的历史文化底蕴。 
+
+
+	  
+
+
+	 
+
+
+	 
+
+
+	 
+
+
+	&nbsp;（参观剑霞村）
+
+
+	剑霞村有1000多年的历史，风景秀美、人文鼎盛、民风淳朴。自古就重学兴教、崇文尚武、忠孝为基、仁义为怀。据明史记载，剑霞村仅梓溪刘氏就有相国一人、尚书四人、进士四十余人、举人上百余人。发展到当代，也是精彩纷呈、人才辈出。2017年，剑霞村被光荣的评为“全国文明村镇”“全国民主法治示范村”。 
+
+
+	  
+
+
+	 
+
+
+	（徐校长与剑霞村领导交流） 
+
+
+	在参观的同时，徐小平校长还提议秋收时节，让新疆克州班孩子们来亲身体验收割稻子的农作乐趣，村校携手、校校合作开展社会实践活动非常有意义，要珍惜这一难得的机会，利用好这一平台，让学生在实践过程中充分感受学习生活的快乐。此提议顿时赢得了全场热烈的掌声。 
+
+
+	
+</p>
+			                        <span>05/26</span>
+			                    </li>
+			    			
+								<li>
+			                    	<h2>
+			                    		
+			                    			<a href="/portlet/dcdetailinfo.view?id=884" title="新疆阿克陶县“双语”骨干教师第四批赴赣跟岗研修提高班学员顺利完成学业返疆">
+			                    		
+			                    		
+			                    			
+			    								新疆阿克陶县“双语”骨干教师第四批赴赣跟岗研修提高...
+			    							
+			    							
+			                    		</a>
+			                    	</h2>
+			                        <p>  
+	为贯彻好中共江西省委组织部《关于实施2017年新疆阿克陶县干部人才“551”培训计划的通知》，根据省教育厅的指示和县教体局的安排，阿克陶县第四批赴赣研修的“双语”骨干教师一行13人在我校进行了为期十个月的跟岗学习。&nbsp;&nbsp;&nbsp;
+
+
+	&nbsp;我校挑选了教学水平高、经验丰富的老师作为指导老师，从2017年9月至2018年6月期间，13位阿克陶县的老师跟随我校选派的指导老师参加学校的教育教学研究活动，跟班听课，协助指导老师做好班级管理工作，圆满的完成了跟岗研修学习。在5月23日的结业典礼上，指导老师代表李鸿斌和学员代表买买提?吾肉孜分别作了发言，徐小平校长和邓必慧副书记为学员颁发结业证书，与学员及指导老师合影，并鼓励他们把学到的知识和经验带回阿克陶，不断地提高教育教学水平。
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	徐小平校长
+
+
+	
+
+
+	
+
+
+	
+
+
+	邓必慧副书记
+
+
+	
+		
+	
+
+
+	买买提?吾肉孜老师
+
+
+	
+		
+	
+
+
+	校领导与指导老师
+
+
+	
+		
+	
+
+
+	新疆阿克陶县教师
+
+
+	
+		
+	
+
+
+	校领导为培训学员颁发证书
+
+
+	
+	
+		
+	
+
+
+
+	校领导、指导老师与培训学员合影
+</p>
+			                        <span>05/25</span>
+			                    </li>
+			    			
+								<li>
+			                    	<h2>
+			                    		
+			                    			<a href="/portlet/dcdetailinfo.view?id=883" title="省教育考试院副院长余芳霖一行莅临我校视察高考准备工作">
+			                    		
+			                    		
+			                    			
+			    								省教育考试院副院长余芳霖一行莅临我校视察高考准备工...
+			    							
+			    							
+			                    		</a>
+			                    	</h2>
+			                        <p>  
+	
+		
+	
+
+
+	（余院长一行视察高考视频监控）
+
+
+	5月24日上午，省教育考试院副院长余芳霖一行在县教科体局局长胡金金的陪同下来到我校，对高考准备工作进行检查。
+
+
+	
+		
+	
+
+
+	（座谈会）
+
+
+	在学校综合楼二楼会议室，余院长等一行与县教科体局领导及我校领导就南昌县考区各考点的准备工作进行座谈。在听取了胡金金局长和徐小平校长对考点准备工作的介绍后，余院长对我县考点的各项准备工作表示满意，并要求各考点在考前对考务工作特别是广播设备、视频监控再进行一次全面检查,保证各项工作准确无误，确保今年高考工作圆满完成。
+
+
+	
+		
+	
+
+
+	（省考试院余芳霖副院长）
+
+
+	余院长表示，今年全省高考将继续以严字当头,从细处着手，各考点要牢固树立“高考无小事，小事即大事”的思想观念，做到工作更细化、监管更严格、追责更严厉，进一步提升责任意识，努力打造平安、诚信、规范、和谐的高考。
+</p>
+			                        <span>05/24</span>
+			                    </li>
+			    			
+								<li>
+			                    	<h2>
+			                    		
+			                    			<a href="/portlet/dcdetailinfo.view?id=882" title="我校教师参加南昌县教育局举办的美丽昌南 幸福家园“5.20感恩有你”无偿献血活动">
+			                    		
+			                    		
+			                    			
+			    								我校教师参加南昌县教育局举办的美丽昌南 幸福家园“...
+			    							
+			    							
+			                    		</a>
+			                    	</h2>
+			                        <p>  
+	&nbsp; &nbsp; 为响应南昌县教体局发出的共建“美丽昌南、幸福家园”的号召，进一步发挥莲塘一中省文明单位的示范带头作用，履行社会责任，莲塘一中组织教师到洪州小学报告厅参加志愿献血活动。
+
+
+	&nbsp; &nbsp; 自县教体局的无偿献血活动方案发至莲塘一中，校团委的江波书记就在莲塘一中教师QQ群和微信群里大力宣传。江波书记第一个带头报名，接着教务处熊保国主任等老师纷纷响应号召，报名参加本次献血活动。
+
+
+	&nbsp; &nbsp; 5月18日上午8点始莲塘一中熊保国、龚德华、江波、毛蕾、吴新兵、舒清、曾剑平、周继红、罗兰、王芳等一行30多个老师陆陆续续到达献血现场。本次献血活动，除了几位老师因特殊原因暂时不能献血外，其他24名教师成功献出了自己的爱心。他们伸手的一刹那，我们看到的是无私与奉献，他们文明的举动和温暖的爱心让我们感动，他们献出的是热血，温暖的是人心。
+
+
+	&nbsp; &nbsp; 无偿献血即是给他人的一份关爱，也是给自己和家人的一份保障。血液是献血者给受血者最珍贵的挽救生命的礼物，一次献血的决定可以挽救一个甚至多个人的生命。健康成人定期适量献血，不仅无损于健康，而且能促进新陈代谢，促进造血功能，提高人体免疫力。采血时所采用的全部耗材都是经国家卫生部门批准的一次性器材，不会重复使用，因此，献血绝对不会感染疾病。另外，无偿献血者及其配偶、相关亲属均可享受用血减免的优惠待遇：自献血之日起4年内累计免费使用血血量按献血量的3倍计算，4年后累计免费使用血量按献血量等算；无偿献血累计1000毫升以上的，本人终身享受无限量免费用血待遇；无偿献血的配偶和直系亲属临床需要用血时，其累计免费使用血量按献血者献血量血费等量计算。因此，无偿献血是利他利己的好事，学校鼓励青年教师积极参加义务献血，既为他们献一份爱心，也为学校创建文明单位出一份力量，也为自己和家人谋一份保障。
+
+
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		
+	
+	
+		献血中
+	
+
+
+
+	
+	
+		
+	
+	
+		
+			
+		
+献血后
+	
+	
+		
+	
+	
+		部分献血教师合影
+	
+
+
+</p>
+			                        <span>05/19</span>
+			                    </li>
+			    			
+	            			<div class="news-more"><a href="/portlet/dcinfotagpagelist.view?wf_ID=14&wf_FID=4&wf_Tag=3">查看更多</a></div>
+	            		</div>
+            		
+            	
+	            	
+            		 
+	            		<div class="news-main-l-con">
+							
+								<li>
+			                    	<h2>
+			                    		
+			                    		
+			                    			<a href="/portlet/dctopicdetailinfo.view?wt_ID=395" title="省委教育工委书记、省教育厅厅长致全省中小学学生家长的一封信 ">
+			                    		
+			                    			
+			    								省委教育工委书记、省教育厅厅长致全省中小学学生家长...
+			    							
+			    							
+			                    		</a>
+			                    	</h2>
+			                        <p>  
+	各位学生家长： 
+
+
+	&emsp;&emsp;你们好！ 
+
+
+	&emsp;&emsp;我省夏季高温持续时期长，境内河流、水库、山塘密布，开放性水域广阔，中小学生亲水、玩水的机会多，发生溺水事故的几率高。对此，省委、省政府高度重视，鹿心社书记、刘奇省长、姚增科副书记、李利副省长先后就预防学生溺水事故作出重要批示，提出明确要求。各级教育行政部门和学校认真贯彻省委、省政府工作要求，从去年起每年在全省中小学校开展为期200天的预防学生溺水专项行动，从加强学生在校期间管理，加强学校安全知识教育，加强与家长的沟通联系，加强部门之间协作等方面采取了一系列工作措施，努力把学生溺水事故降到最低。 
+
+
+	&emsp;&emsp;随着暑期到来，学生溺水事故进入易发多发期。调查显示，我省学生溺水事故基本都发生在周末、节假日或上下学途中等学生脱离学校监管的时段；造成多人溺水事故的主要原因是盲目施救。对此，我们希望各位家长切实履行好法定监护责任，加强对孩子的日常管理，强化防溺水安全教育。要反复教育孩子做到“六不”：即，不私自下水游泳；不擅自与他人结伴游泳；不在无家长或教师带领的情况下游泳；不到无安全设施、无救援人员的水域游泳；不到不熟悉的水域游泳；不熟悉水性的学生不擅自下水施救。尤其要教育孩子遇到有人溺水时要科学、智慧救援，立即寻求成人帮助，切忌盲目下水施救和手拉手施救。因客观原因，不能履行监护责任的监护人，应当向当地乡镇人民政府、街道办事处提出关爱申请。 
+
+
+	&emsp;&emsp;省委教育工委、省教育厅将进一步加强对预防学生溺水工作的部署、指导和检查。通过组织开展专项督查，明查暗访，检查各地教育行政部门和学校的履职情况，抽查学生防溺水安全教育开展、家访及致家长一封信的落实情况。 
+
+
+	&emsp;&emsp;各位家长，青少年学生是祖国的未来、民族的希望，也承载着每个家庭对美好生活的向往。预防学生溺水需要各方尽责，密切配合，齐抓共管。让我们携起手来，克服麻痹侥幸心理，共同为孩子平安成长撑起一片蓝天。
+
+
+	
+
+
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;中共江西省委教育工委书记     黄小华 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;江西省教育厅厅长        叶仁荪
+
+
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2017年5月17日 
+</p>
+			                        <span>05/22</span>
+			                    </li>
+			    			
+								<li>
+			                    	<h2>
+			                    		
+			                    			<a href="/portlet/dcdetailinfo.view?id=53" title="江西省第24期高（完）中校长培训班学员到我校参观指导">
+			                    		
+			                    		
+			                    			
+			    								江西省第24期高（完）中校长培训班学员到我校参观指...
+			    							
+			    							
+			                    		</a>
+			                    	</h2>
+			                        <p>  
+	 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp; 10月26日上午，江西省第24期高（完）中校长培训班近一百位学员到南昌县莲塘一中参观指导。莲塘一中校长徐小平热情迎接了培训班学员。
+&nbsp;&nbsp;&nbsp; 在莲塘一中青荷讲堂，徐小平校长代表莲塘一中欢迎来自全省各地的校长莅临莲塘一中参观指导。首先，徐小平校长从校园建设、教学研究、文体生活、主要成绩这四个方面对莲塘一中的基本情况作了简要的介绍。他表示莲塘一中具有丰厚的历史积淀和鲜明的办学特色。学校一直秉持着“以人为本，以德治校，可持续发展”的办学理念，始终坚持“学校为社会、为家长服务，领导为教职工服务，教师为学生服务”的大服务观，弘扬“爱岗敬业，团结协作，开拓创新，拼争一流”的莲塘一中精神。随后，培训班的学员就学校教学模式、青年教师培养、优秀学生培养等问题交换了意见。
+&nbsp;&nbsp;&nbsp; 在简短的座谈之后，徐小平校长带领培训班学员在校园内走访参观，感受莲塘一中的校园文化。 
+
+
+	 
+
+
+	徐校长介绍莲塘一中基本情况 
+
+
+	 
+
+
+	&nbsp;参加校长培训班的学员 
+
+
+	 
+
+
+	徐校长带领学员参观校园 
+
+
+	 
+
+
+	校长培训班学员参观校园 
+
+
+	&nbsp;
+
+
+	文字：陈慧娴 
+
+
+	图片：邓江辉 
+
+
+	编辑：陈慧娴 
+
+
+	审核：邱俊 邓江辉
+
+
+	
+</p>
+			                        <span>11/01</span>
+			                    </li>
+			    			
+								<li>
+			                    	<h2>
+			                    		
+			                    			<a href="/portlet/dcdetailinfo.view?id=56" title="关于征集莲塘一中60周年校庆祝福视频的公告">
+			                    		
+			                    		
+			                    			
+			    							
+			    								关于征集莲塘一中60周年校庆祝福视频的公告
+			    							
+			                    		</a>
+			                    	</h2>
+			                        <p>  
+	
+		2016年12月18日，江西省莲塘一中将迎来60周年华诞。匆匆岁月，留下我们青春的身影，菁菁校园，铭记我们奋斗的足迹。值母校60年华诞来临之际，为了让更多的一中人以不同的方式参与校庆，祝福母校，怀念母校，追忆一段激情燃烧的青春岁月。经学校研究决定，特面向海内外莲塘一中校友，广泛征集校庆祝福视频，欢迎广大校友踊跃参与，为母校60周年校庆献礼。
+	
+	
+		&nbsp;
+	
+	
+		一、征集范围：
+	
+	
+		&nbsp;
+	
+	
+		莲塘一中全球校友、在校师生、关心莲塘一中的社会团体和人士。可以个人名义或团体名义参加。
+	
+	
+		&nbsp;
+	
+	
+		二、征集内容及要求：
+	
+	
+		&nbsp;
+	
+	
+		1.视频内容积极健康向上，画面清晰稳定，语言通顺流畅。
+	
+	
+		（1）为便于我们在视频中对您有个基本的了解，请先做简单的自我介绍，如：我是莲塘一中××届××班的×××，我在××大学（公司）学习（工作）。
+	
+	
+		（2）表达对母校60周年校庆的祝福，如：祝母校莲塘一中60周年生日快乐。
+	
+	
+		（3）表达对母校，恩师，以及在莲塘一中的美好生活的回忆，以及对未来的憧憬。大家可以尽情抒发自己的情感。
+	
+	
+		&nbsp;
+	
+	
+		2.视频的拍摄地点建议在工作、学习有关的地点，如单位或学校大门口，或在标志性建筑前，也可以选择所在城市的地标性景点前；
+	
+	
+		&nbsp;
+	
+	
+		3.建议大学在读学生成立“某某大学莲塘一中校友会”，召集所在大学的一中校友集体参与，团体拍摄建议有策划，既有个人单独的祝福，又有集体的的画面，可大胆发挥想象，尽情发挥创意，不拘一格，使得视频有创意有特色。
+	
+	
+		&nbsp;
+	
+	
+		4.为保证画面质量和效果，建议使用较专业的视频录制设备，或找专业人员录制，录制时请使用支架固定拍摄，视频宽高比为16:9（宽屏），分辨率须大于等于1280*720，手机录制请使用横屏拍摄。
+	
+	
+		&nbsp;
+	
+	
+		5.质量较高的校庆祝福视频将在学校官网、微信公众号（jxsltyz）播放，也作为校庆庆典大会现场播放。
+	
+	
+		&nbsp;
+	
+	
+		6.截止时间：2016年11月18日
+	
+	
+		&nbsp;
+	
+	
+		三、投稿方式：
+	
+	
+		&nbsp;
+	
+	
+		1.电子邮件：58267245@qq.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+	
+	
+		2.联系电话：邓江辉：13767092526 王兆庆：13077977081 
+	
+	
+		3.qq讨论群：455720225（请各位负责人加入qq群）&nbsp;
+	
+	
+		4.提交视频素材的同时，请附上文字材料一份。具体内容为参与人员的：学校（单位）、届别、班级、姓名，完整的台词脚本、拍摄地点及时间。
+
+
+
+	
+	
+		&nbsp;
+	
+	
+		莲塘一中
+	
+	
+		2016/9/22
+	
+</p>
+			                        <span>09/26</span>
+			                    </li>
+			    			
+								<li>
+			                    	<h2>
+			                    		
+			                    			<a href="/portlet/dcdetailinfo.view?id=57" title="莲塘一中六十周年校庆公告（2016年9月22日发布）">
+			                    		
+			                    		
+			                    			
+			    								莲塘一中六十周年校庆公告（2016年9月22日发布...
+			    							
+			    							
+			                    		</a>
+			                    	</h2>
+			                        <p>  </p>
+			                        <span>09/22</span>
+			                    </li>
+			    			
+								<li>
+			                    	<h2>
+			                    		
+			                    			<a href="/portlet/dcdetailinfo.view?id=20" title="我校举行2015年秋季开学典礼暨“青荷基金”高考贡献奖发放仪式">
+			                    		
+			                    		
+			                    			
+			    								我校举行2015年秋季开学典礼暨“青荷基金”高考贡...
+			    							
+			    							
+			                    		</a>
+			                    	</h2>
+			                        <p>  
+	
+&nbsp;&nbsp; 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp; 2015年9月10日，为了庆祝我国第31个教师节，我校全体师生迎着清晨的第一缕阳光，在青荷广场隆重集会，举行2015年秋季开学典礼暨“青荷基金”高考贡献奖发放仪式。 
+
+
+	开学典礼在雄壮的国歌和激情飞扬的校歌声中拉开了帷幕。首先，徐校长作了热情洋溢的新学期致辞。张荣惠副校长宣读了《关于表彰2015届“高考贡献奖”先进集体和先进个人的决定》，并由徐校长分别对获得“高考特别贡献奖”、“高考贡献奖”的20位老师亲自颁奖。随后，张荣惠副校长宣读了关于我校7位同志被评为县教体局先进个人的喜报。最后，徐校长作总结讲话，对全体师生提出了新学期新要求，鼓励全体师生要再接再砺，再创辉煌！开学典礼在热烈的掌声中落幕。 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;此次开学典礼意义重大。一方面通过奖励先进，鼓励全体教师继续发扬“爱岗敬业、团结协作、开拓创新、争拼一流”的莲塘一中精神，强化师风师德，为新学期顺利开展教育教学工作打下坚实的基础，也激励全体教师赶超先进，为我校教育教学事业的可持续发展贡献自己的力量！另一方面使学生通过在教师节对老师的感恩，树立“尊师重道”的意识，同时通过“青荷基金”激励全体学生刻苦学习，实现梦想！&nbsp; 
+
+
+	
+&nbsp;开学典礼升旗仪式
+&nbsp;
+&nbsp;李文辉副校长主持开学典礼
+&nbsp;
+&nbsp;徐小平校长在开学典礼上讲话
+&nbsp;
+&nbsp;张荣惠副校长宣读
+《关于表彰2015年高考作出贡献的教师和集体的决定》
+&nbsp;
+&nbsp;廖旗保副校长和方艳红副校长给获奖教师致颁奖辞
+&nbsp;
+&nbsp;获奖个人（李萍老师）
+&nbsp;
+&nbsp;获奖集体（2015届高三年级组）
+&nbsp;
+&nbsp;获奖教师合影 《关于表彰2015年高考作出贡献的教师和集体的决定》 
+</p>
+			                        <span>01/14</span>
+			                    </li>
+			    			
+	            			<div class="news-more"><a href="/portlet/dcinfotagpagelist.view?wf_ID=19&wf_FID=4&wf_Tag=1">查看更多</a></div>
+	            		</div>
+            		
+            	
+	            	
+		            	<div class="news-main-l-con">
+						
+							<li>
+		                    	<h2>
+		                    		<a href="/portlet/dctopicdetailinfo.view?wt_ID=414" title="徐校长在2018届高三百日迎考动员大会上的讲话">
+		                    			
+		    							
+		    								徐校长在2018届高三百日迎考动员大会上的讲话
+		    							
+		                    		</a>
+		                    	</h2>
+		                        <p>  
+	在2018届高三百日迎考动员大会上的讲话
+
+
+	
+
+
+	
+		
+	
+
+
+	校党总支书记、校长&nbsp;徐小平
+
+
+	
+
+
+	尊敬的2018届老师们，亲爱的同学们：
+
+
+	&nbsp; &nbsp; 大家好！
+
+
+	&nbsp; &nbsp; 伴随着春天的脚步，2018年高考也渐渐走来。在每一个初春的季节，青荷广场都会响起激扬的誓言，一批批优秀的一中学子将从这里出发，踏上青春飞扬的征程。在距离高考100天的时刻，我们在此举行百日迎考动员大会，我谨代表校党总支、校行政向奋战在教学第一线的爱岗敬业、无私奉献的高三全体老师致以亲切的问候和诚挚的谢意！向勤奋攻读、积极备考的全体同学致以美好的祝愿！
+
+
+	&nbsp; &nbsp; 刚才，文科学生代表万心怡同学在发言中谈到学习上要有“野心”与“梦想”，理科学生代表张泽华同学谈到了学习上要“勤勉”“谨慎”“灵活”，罗智强老师代表全体高三老师表达了和同学们共同奋斗的决心和勇气，从老师和同学的发言中，我们感觉到了千帆竞发、百舸争流的气势，感受到了三军过后尽开颜的喜悦。为了让每一位同学都信心满满地把握每一天，让每一位同学都收获满满地拥有每一天。在这里我向你们提出几点希望。
+
+
+	&nbsp; &nbsp; 一、不忘初心、坚定信念
+
+
+	&nbsp; &nbsp; 同学们，“初心”是什么？是孔子“居之无倦，行之以忠”的勤勉忠诚，是毛泽东主席“埋骨何须桑梓地，人生无处不青山”的豪情壮志，是习近平总书记“为人民谋幸福”的宏大理想，当然也是你们跨入莲塘一中大门时确立的人生理想。初心纯洁、热烈、美好，她是人生起点的希冀与梦想，事业开端的承诺与信念，迷途困挫中的责任与担当，铅华尽染时的恪守与坚持。弹指一挥间，你们已经走过了懵懂纯真、初生牛犊的高一，度过了体现自我，追求卓越的高二。回眸你们那既洒满汗水又充满阳光的成长足迹，无不让我动容和欣慰！一千个日日夜夜，你们坚守着“我心一片磁针石，不指高考不肯休”的信念，攀登书山，跋涉学海。书山上留下你们奋笔疾书的身影，学海中展示着你们顽强拼搏的勇气。希望同学们在这最后100天里，排除干扰、克服杂念，不忘初心，坚定信念，砥砺前行，实现自己美好的人生理想。
+
+
+	&nbsp; &nbsp; 二、厚积薄发、迎难而上
+
+
+	&nbsp; &nbsp; 同学们，十年磨一剑，百日试锋芒。希望同学们把每次考试当作高考一样对待，限时作答，规范训练，充分利用试卷评价结果及时订正，认真反思，在丢分中查找原因，在失误中吸取教训。百日时间非常宝贵，希望同学们统筹安排，科学规划，既要突出自己的优势学科，又要兼顾弱势学科的提升，从而实现学科均衡的发展。在未来的100天里，老师对你们的要求会更严格，训练的难度强度会更大，遇到的困难会更多，希望同学们以“舍我其谁”的勇气，“披荆斩棘”的意志去面对挑战，以革命乐观主义精神为自己每一刻的努力加油，为自己每一分的进步喝彩。
+
+
+	&nbsp; &nbsp; 三、胸怀祖国、志存高远
+
+
+	&nbsp; &nbsp; “立德树人”是学校的根本任务，培养德智体美全面发展的社会主义建设者和接班人是学校的责任和使命。希望同学们把自己的理想和中华民族伟大复兴的事业紧紧联系在一起，胸怀祖国，志存高远，无论学习多么紧张，都要想到我是一中人，时刻都要关注学校的发展，养成尊敬老师、热爱集体、团结同学、助人为乐的优良品质，做到讲文明、懂礼貌、守纪律，唯有这样，你们才能走得更远，飞得更高。
+
+
+	&nbsp; &nbsp; 老师们，爱生如子，爱校如家，无私奉献是学校的优良传统；步调一致，团结协作，群策群力是高考的制胜法宝；分层推进，因材施教，从严从难是我们取得优异成绩的宝贵经验。在未来的100天里，希望老师们要把三年朝昔相处的学生当作自己的孩子、弟妹一样对待，多一份关爱，多一份包容，多一份鼓励，营造温馨和谐、紧张有序的学习环境，让同学们面向未来更加自信，面对困难更加坚强，面朝目标更加执着。
+
+
+	&nbsp; &nbsp; 老师们，在高考竞争越来越激烈的今天，提高效率，争取高分才是硬道理，希望老师们在未来的100里深入分析《考试说明》，潜心钻研高考真题，努力摸索命题规律，认真拓宽信息渠道，精心汇编复习资料，做到人无我有、人有我优、人优我先，掌握高考复习主动性，落实好复习中的每一个环节，确保学校各项指标圆满完成，巩固学校在全省第一集团的地位。
+
+
+	&nbsp; &nbsp; 老师们，同学们，百日冲刺的号角已经吹响。让我们齐心协力奋斗100天，用拼搏铸就莲塘一中的新辉煌，用行动谱写人生的新篇章！
+
+
+	
+</p>
+		                        <span>02/27</span>
+		                    </li>
+		    			
+							<li>
+		                    	<h2>
+		                    		<a href="/portlet/dctopicdetailinfo.view?wt_ID=407" title="徐小平校长在2017年秋季开学典礼上的讲话">
+		                    			
+		    							
+		    								徐小平校长在2017年秋季开学典礼上的讲话
+		    							
+		                    		</a>
+		                    	</h2>
+		                        <p>    
+
+	  
+
+
+	
+
+
+	莲塘一中党总支书记、校长&nbsp;&nbsp;&nbsp; 徐小平 
+
+  
+
+	2017年9月11日 
+
+  
+
+	
+
+
+
+	敬爱的老师们、亲爱的同学们： 
+
+
+	&nbsp; &nbsp; 早上好！ 
+
+  
+
+	昨天是第三十三个教师节，一条条温馨的短信让老师们再次感受到来自社会、家长、学生的衷心祝福和美好祝愿，一捧捧灿烂的鲜花让老师们再次体会到作为一名人民教师的幸福和自豪。今天，我们在这里隆重集会，迎接一个充满希望的新学年。首先，请允许我代表校党总支、校行政，向新老师、新同学，特别是不远万里、告别亲人来到我校学习和生活的新疆克州班2017级新同学表示最热烈的欢迎！向努力工作、勤奋学习的全校师生致以新学年最诚挚的问候！向今天即将获得2017年高考贡献奖的老师们表示最衷心的祝贺！ 
+
+  
+
+	过去的这一学年，全校师生发扬艰苦奋斗的实干精神，学校发展再创辉煌。这是我校发展史上值得铭记的一年。这一年，我们承办了第十三届东南地区数学奥林匹克竞赛，成功举办了建校六十周年庆典活动；这一年，我们以创建全国文明县城为契机，对教学楼、办公楼、会议室、食堂等重新装修，对运动场、园林绿化全面改造提升，为学生提供了更加舒适、更加温馨、更加人文的学习生活环境；这一年，我校高考一举囊括全市理科一、二、三名，7名同学录取北大、清华，136名同学录取985名校，一本上线910人，本科以上录取2458人。这一优异成绩，再次唱响了“学在莲一”的青荷品牌，为我县经济社会的发展、为实现县委县政府“全市当龙头、全省树标杆”的目标作出了应有的贡献。由于成绩突出，我校获得第七届“中国百强中学”、江西省第十四届“文明单位”、南昌市首届德育优秀示范学校等荣誉称号。廖小文、梅家瑞、廖桂兰等老师还分别获得了“感动江西十大教育年度人物”“南昌市十大榜样人物”“南昌市师德标兵”等光荣称号。 
+
+  
+
+	新的学年，新的任务，新的目标，新的征程。学校的发展，关键在于高素质的教师。在此，我向老师们提几点希望。 
+
+  
+
+	一、希望教师心中始终装着学生。教育是一门“仁而爱人”的事业，爱是教育的灵魂，没有爱就没有教育。一位好老师心中要装着学生，要平等对待每一位学生，尊重学生的个性，理解学生的情感，包容学生的缺点和不足，善于发现每一位学生的长处和闪光点，让所有学生都成长为有用之才。在严爱相济的前提下晓之以理、动之以情，让学生“亲其师”“信其道”。让每一位学生都健康成长，让每一位学生都享受成功的喜悦。
+
+  
+
+	二、希望教师心中始终注重质量。教育教学质量是学校的生命线，不讲求质量的教师不是一位合格的老师，不注重质量的学校不是一所好的学校。在全面推进素质教育的今天，仍然要把教育教学质量作为中心工作来抓。教师们要在提高课堂效率、提升教学质量上下功夫，倡导终身学习，加强研究，确保一流的教学质量，确保学校可持续发展。
+
+  
+
+	三、希望教师心中始终坚持创新。创新是学校发展的不竭动力。唯有创新，才能发展。本学期在高一探索平行编班、择优组班，在克州班实行与本地生混合编班等新的管理模式，目的就是为师生创造更加公平、更加科学的竞争环境。我们还将在绩效工资考核、职称评定、高考奖励等方面进行改革，进一步调动广大教师教书育人的积极性。2018年新课程改革将在我省全面铺开，面对这些前所未有的挑战，教师们要未雨绸缪，提前应对，积极创新教学方法和手段，达到教育的最佳效果。
+
+  
+
+	同学们，学校发展的最终落脚点是关注每一位学生的成长。不同年级的同学，要明确自己当前的目标和任务。在此，我也向同学们提出几点希望。
+
+  
+
+	高一的新同学，在八月酷暑的军训中经受了考验，表现出了顽强的意志力和严明的纪律观念。希望你们把军训的收获带到今后的学习和生活中去，树立远大理想，规划人生目标，养成良好习惯，刻苦学习，发愤图强，在“荷文化”的熏陶下，努力成长为有理想、守纪律、讲文明、能吃苦、懂感恩、敢担当的一中人。 
+
+  
+
+	高二年级的同学，经历了高一的历练，又经历了文理分科的选择，你们要找准自己努力的方向。高二年级是高中学段至关重要的环节。希望你们继续注重良好习惯的养成，在学习中既要文理兼修，又要发挥特长，既要突出优势，又要均衡发展，努力使自己成长为知识全面、兴趣广泛、举止文明、学有专长的高素质人才。为今后全面复习奠定基础，为高三最后冲刺积蓄力量。 
+
+  
+
+	高三的同学们，你们是最受关注的特殊群体。在未来的200多天时间里，你们要有破釜沉舟、背水一战的决心，要有吃苦耐劳、顽强拼搏的精神，要有不屈不挠、永不言败的意志，要有严谨求实、精益求精的作风。相信老师、配合老师、服从老师，严抓基础，严格训练，严谨规范，向基础要分，向速度抢分，向规范争分。我相信，经过你们的刻苦努力，顽强拼搏，经过老师的悉心指导，辛勤培育，你们一定能取得令人满意的成绩，实现你们心中的目标和理想！ 
+
+  
+
+	“千淘万漉虽辛苦，吹尽狂沙始到金。”莲塘一中是一个团结奋进、拼搏创新的集体。我坚信，在全校师生的共同努力下，莲塘一中在新的学年里一定能取得更加辉煌的成绩！ 
+
+  
+
+	从今天开始，本周是争创全国文明县城的迎检周。国检人员将对我县乡镇、社区、学校、医院、集市等展开全面检查。这是对百万昌南人民文明素质的一次大检验。我在这里再次向全校师生发出战斗号令：全校师生积极行动起来，为使命而战，为荣誉而战，为尊严而战！以舍我其谁的勇气，为确保我县夺取全国文明县城金字奖牌而奋力拼搏！ 
+
+  
+
+	谢谢大家！ 
+
+ </p>
+		                        <span>09/13</span>
+		                    </li>
+		    			
+							<li>
+		                    	<h2>
+		                    		<a href="/portlet/dctopicdetailinfo.view?wt_ID=406" title="徐小平校长在2017级高一新生军训汇报表演大会上的讲话">
+		                    			
+		    								徐小平校长在2017级高一新生军训汇报表演大会上的...
+		    							
+		    							
+		                    		</a>
+		                    	</h2>
+		                        <p>  
+	 
+
+
+	
+
+
+	莲塘一中党总支书记、校长&nbsp;&nbsp;&nbsp; 徐小平 
+
+
+	2017年8月25日 
+
+
+	  
+
+
+	尊敬的94833部队郭副政委和各位教官，敬爱的家长、老师和亲爱的同学们： 
+
+
+	  
+
+
+	大家早上好！ 
+
+
+	历时七天的军训活动就要结束了。同学们的汇报表演，表现了新时代青年学子良好的精神风貌，令人振奋。在此，我代表校党总支、校行政向全体同学表示热烈的祝贺！这些成绩的取得，首先应该归功于94833部队的各位教官。我代表全体参训同学向94833部队的教官们表示崇高的敬意和衷心的感谢！向即将受到表彰的“优秀带队老师”、“优秀辅导老师”和“军训积极分子”表示热烈的祝贺！ 
+
+
+	一周以来，同学们能以教官为榜样，顶烈日，冒酷暑，严格训练，对每一种军姿都认真领会，反复训练，做到队列整齐，步调一致，口号嘹亮。尽管这期间有的同学身体不适，但他们仍然咬紧牙关，坚持训练，保质保量地完成了军训任务。通过七天的军训，同学们的精神面貌发生了可喜的变化，同学们的文明素质、纪律观念、协作精神有了明显的提高。这正应了我们中国的一句古话：“士别三日，当刮目相看。”同学们在军训中的表现，初步展现了一名莲塘一中学生的精神风貌，这是步入高中生活的一个良好开端，我相信，这次军训的心得和体会，对同学们今后的学习和生活必将产生深远而积极的影响。同学们，为你们自己的成长和进步感到自豪吧！ 
+
+
+	军训期间，我们可爱的教官们尽职尽责，以坚定的政治信念、出色的组织能力、严明的组织纪律和过硬的军事素质，展示了人民子弟兵文明之师、威武之师的良好形象。在训练中，他们坚持严肃而活泼的训练原则，白天顶着烈日严格训练，晚上不顾疲劳教唱军歌，与同学们建立了深厚的友谊，受到了同学们和老师们的一致称赞，成为全体同学学习的楷模。在此，我建议，让我们把最最热烈的掌声献给我们最可爱的教官们！ 
+
+
+	同学们，几天来，带队老师和辅导老师始终陪伴在你们身边，陪伴你们度过了这难忘而又充实的军训生活。是老师们给了你们战胜困难的勇气，培养了你们团结协作的精神。他们在纪律上对你们严格要求，在生活上对你们关怀备至。他们爱生如子，爱校如家，体现着“爱岗敬业，团结协作，开拓创新，拼争一流”的莲塘一中精神，这是我们将来取得成功的保障。“人生规划”的指导，“养成教育”的学习，校史馆的参观，学校、老师、家长对你们的殷切期望，使你们初步确立了自己的奋斗目标。接下来的三年，请跟随老师，勤奋学习，努力奋斗，争取更大更辉煌的胜利吧！ 
+
+
+	同学们，这个热情如火的8月，这个硕果累累的8月，一定会深深留在你们的记忆里。再过一段时间，你们的高中学习生活就要正式开始了。希望你们在军训期间表现出来的顽强拼搏的精神、持之以恒的毅力、永不言弃的信念，能够在你们的高中时代乃至整个人生阶段发挥积极作用。希望你们将这些宝贵的人生财富有机地融合到你们的学习和生活中去，努力成为有理想、守纪律、讲文明、懂感恩、敢担当、能吃苦的莲一中优秀学子，为父母争光，为学校增光。 
+
+
+	在2017年新生军训结束之际，让我们再次以热烈的掌声向我们可爱的教官们表示崇高的敬意和诚挚的感谢！向每天陪伴你们，无微不至地关怀着你们的带队老师和辅导老师表示衷心的感谢！同时，再次祝贺我校2017年高一新生军训活动取得圆满成功！ 
+
+
+	  
+
+
+	谢谢大家！ 
+
+
+	  
+
+
+	
+</p>
+		                        <span>08/27</span>
+		                    </li>
+		    			
+							<li>
+		                    	<h2>
+		                    		<a href="/portlet/dctopicdetailinfo.view?wt_ID=405" title="徐小平校长在2017级高一新生军训动员大会上的讲话">
+		                    			
+		    								徐小平校长在2017级高一新生军训动员大会上的讲话...
+		    							
+		    							
+		                    		</a>
+		                    	</h2>
+		                        <p>  
+	
+		
+	
+</p>
+		                        <span>08/19</span>
+		                    </li>
+		    			
+							<li>
+		                    	<h2>
+		                    		<a href="/portlet/dctopicdetailinfo.view?wt_ID=399" title="徐校长在2018届高三誓师动员大会上的讲话">
+		                    			
+		    							
+		    								徐校长在2018届高三誓师动员大会上的讲话
+		    							
+		                    		</a>
+		                    	</h2>
+		                        <p>  
+	
+		
+	
+
+
+	&nbsp;
+
+
+	
+		莲塘一中党总支书记、校长 徐小平
+	
+	
+		
+	
+	
+		亲爱的同学们：
+	
+	
+		
+	
+	
+		大家上午好!
+	
+	
+		今天，注定是一个将会被铭记的日子。2017年六月的硝烟刚刚散去，我们在这里隆重举行高三誓师动员大会，为已经踏入高三、即将奔赴高考战场的你们鼓劲加油、呐喊助威。我相信，这次的大会，将会在你们的内心烙下永久的印迹，也必会给你们在莲塘一中的最后一段拼搏岁月留下更加难忘的回忆。
+	
+	
+		时光荏苒，岁月如歌。当年，你们背负着父母和老师殷切的期望，头顶着同伴少年们羡慕的目光，怀揣着报效祖国的远大理想，从四面八方汇集于这个充满生机的美丽校园。眨眼之间，两年多的时间匆匆而过，老师们的教诲，同学们的努力，使大家在校园生活中不断成长、不断进步。我相信，你们两年充实的积淀，必将为最后的冲刺积蓄坚实的力量！
+	
+	
+		同学们，高考是你们人生道路上遇到的第一次具有重要意义的挑战，也是一次跨越人生高度的难得机遇。知识改变命运，奋斗成就人生。高考不仅仅是知识的比拼，更是意志、毅力和耐力的较量。十年磨一剑，现在，到了我们奋力拼搏的时候，我们在思想上和心理上必须做好充分的准备，去迎接这一伟大时刻的到来，我们所有人也都要为这场可能会改变我们命运的考试而竭尽全力！
+	
+	
+		此时此刻，我想对同学们提几点建议和要求。
+	
+	
+		一、明确目标，做坚守理想的奋斗者
+	
+	
+		对于我们备战高考，确立目标是一件极其重要的事，因为目标是方向，指引着我们前行；目标是动力，推动我们进步成长。我们需要正确地认识自我，根据实际情况，冷静地思考自己的高考目标、未来目标和人生目标。为了实现目标，我们必须科学合理地做好学习计划，将目标化大为小，一步一个脚印扎扎实实地干。坚守住这份目标与理想，不因成功忘乎所以，不因挫折丧失信心，不因外界影响动摇意志。
+	
+	
+		二、树立信心，做不畏困难的勇敢者
+	
+	
+		在走向高考的过程中同学们不可避免地会遇到很多困难，成绩的波动、思想的起伏、外界的诱惑都可能带来各种各样的困扰。为了克服这些困难，我们要鼓足勇气，树立信心，迎难而上，做思想上的强者，做生活上的强者，做学习上的强者。 “我行！我成功！我能实现我的目标！因为我是一中人！”这些富有激情的话大家要常挂心中，时刻提醒自己，点燃信心，点燃热情。请一定要相信，付出必有收获，每一点的积累都将增加你的高度。
+	
+	
+		三、求真务实，做脚踏实地的耕耘者
+	
+	
+		计划和口号都不是空谈，必须付诸实践，脚踏实地。在高三这一年，同学们要一如既往地跟上老师的节奏，加强训练，学会总结，同时要根据自身的学习特点，摸索出适合自己的一套复习方法。专注学习，默默耕耘，塑造出一份积极上进的心境和一个内心强大的自我。耐得住寂寞，经得起考验，要力争在以后的每次考试中，都能让自己的实际水平再上一个新的台阶，为高考做好心理上和知识上的足够储备。
+	
+	
+		四、率先垂范，做莲一精神的传承者
+	
+	
+		莲塘一中是一所有着优良传统的学校，艰苦奋斗、拼争一流是莲一中人坚持不懈的精神追求。2017年我校高考捷报频传，三位同学分别取得江西省理科第八名、第九名、第十五名的佳绩，一举囊括南昌市理科前三名。一本和本科上线人数，再创历史新高。你们的学长学姐们就为大家树立了一个好榜样。今天，高考的接力棒已经交到了你们的手上。希望同学们能凭着坚苦卓绝的努力、超乎寻常的付出和背水一战的决心，朝着目标，拼尽全力，也能为你们的学弟学妹树立一个激人奋进的榜样，将艰苦奋斗、拼争一流的莲塘一中精神传承弘扬。
+	
+	
+		同学们，在最后的关键一年，我们要充分信任我们老师的能力。我们的老师团队是一支精良的队伍，他们满怀热情、用心尽力、认真负责、忘我工作，曾经帮助无数学子取得佳绩、实现梦想。正是这么多老师的无私奉献、辛勤付出，才造就了莲塘一中今日的辉煌。大家一定要按照老师的要求和安排，严格做到复习安排有谋划、复习内容讲方法、复习过程讲心态。坚决杜绝自由主义，要在老师的指导下，有条不紊的进行复习备考工作。在对知识进行记忆、整理、消化和熟练的过程中，我们也要注意锻炼和提升自己的意志。因为这，才是我们在高中阶段收获的、最终会让我们受益终身的精神财富！
+	
+	
+		同学们，你们正值意气风发、风华正茂之时，此时不搏，更待何时？希望你们能扎实苦干，用青春的汗水铸就人生新的高度，给莲塘一中谱写新的辉煌篇章！
+	
+	
+		最后，预祝同学们学习愉快，高考必胜！
+	
+</p>
+		                        <span>07/01</span>
+		                    </li>
+		    			
+		            	<div class="news-more"><a href="/portlet/dcinfopagelist.view?wf_ID=93&wf_FID=-1">查看更多</a></div>
+		            	</div>
+	            	 
+            		 
+            	
+	         </div>
+	  		 <div class="news-main-r">
+	            <form name="userForm" id="userForm" method="post" action="http://edu1.ispt.com.cn:7085/isschool/commons/logindirect.view">
+		            <div class="s-login">
+		                <div class="s-login-input">
+			                    <label>
+			                    	<span class="login-user-icon"> </span>
+			                   		<input name="userid" id="userid" type="text" class="login-name"  value="请输入IS平台登录账号"/>
+			                    </label>
+			                    <label>
+			                    	<span class="login-pasd-icon"> </span>
+			                    	<input name="password" id="password" type="password"  style="display: none;">
+				  					<input name="showPwd" id="showPwd" type="text" class="login-psd"  value="请输入IS平台登录密码" onKeyDown="changeFocus()">
+				  					<input type="hidden" name="sl_id" id="sl_id" value="1151"/>
+									<input type="hidden" name="tp" id="tp" value="1"/>
+			                   </label>
+		                </div>
+		                 <div class="s-login-r"><a target="_blank" href="http://edu1.ispt.com.cn:7085/isschool/getPassword.view?sl_id=1151&url=000196" class="forget-pasd">找回密码？</a><a href="javascript:void(0);" onClick="submitForm()" class="login-btn">登&ensp;&ensp;&ensp;录</a></div>
+		            </div>
+            	</form>
+	        	<ul>
+	            	<li><a href="http://ispt.com.cn/000196" target="_blank"><span class="n-r-icon1"> </span><p>莲塘一中智慧校园平台</p> </a></li>
+	              	<li><a href="http://www.islearn.cn/" target="_blank"><span class="n-r-icon2"> </span><p>IS在线学习网</p></a></li>
+	              <!--     <li><a href="http://www.ispt.com.cn/" target="_blank"><span class="n-r-icon2"> </span><p>信息服务平台联盟</p> </a></li>
+	                <li><a href="javascript:;"><span class="n-r-icon4"> </span><p>校内图书馆</p></a></li> -->
+	                
+	                	<li>
+	                	
+	                	
+	                		<a style="widht:175px;height:145px;" href="javascript:;"><embed src="http://player.youku.com/player.php/sid/XMTg1NDc1ODM4MA==/v.swf" type="application/x-shockwave-flash" allowFullScreen="true" "280" "200" quality="high" width="175" height="145" /></a>
+	                	
+	                	</li>
+                	
+	                	<li>
+	                	
+	                	
+	                		<a style="widht:175px;height:145px;" href="javascript:;"><embed src="http://player.youku.com/player.php/sid/XMTg1NDgwNzQ0OA==/v.swf" type="application/x-shockwave-flash" allowFullScreen="true" "280" "200" quality="high" width="175" height="145" /></a>
+	                	
+	                	</li>
+                	
+	            </ul>
+			 </div>
+		</div>
+	</div>   
+    <div class="footer">
+    	<div class="foot">
+        	<div class="f-l">
+            	<span><img src="/newWeb/images/f-logo3.png"></span>
+                <p>地址：江西省南昌县莲塘镇澄湖西路   &ensp;  电话：0791-85761902</p>
+				<p>COPYRIGHT &copy;2015 版权所有:莲塘一中&nbsp;&nbsp;赣ICP备09002269号</p>
+				<p>技术支持：<a href="http://www.xuechuankj.com" target="_blank">学川科技</a></p>
+            </div>
+            <div class="f-l2"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/15/223/0812/41149426/CA152230812411494260001.js' type='text/javascript'%3E%3C/script%3E"));</script></div>
+            <div class="f-qrcode"><img src="/newWeb/images/qrcode.jpg"><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is智慧校园</div>
+            <div class="f-qrcode"><img src="/newWeb/images/weixin_gzh.jpg">
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;微信公众号
+            </div>
+            
+            <div class="f-link">
+            	<li class="none"><a href="#"><span>校外友情站点导航</span><img src="/newWeb/images/img10.jpg"></a>
+                	<div>
+                   	 	
+                   	 		<a href="http://jiangxi.schoolzs.com/" target="_blank">江西高招信息网</a> 
+                   	 	
+                   	 		<a href="http://www.jxeea.cn/" target="_blank">江西省教育考试院</a> 
+                   	 	
+                    </div>
+                </li>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

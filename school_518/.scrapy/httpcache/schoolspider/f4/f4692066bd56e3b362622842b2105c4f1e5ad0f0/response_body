@@ -1,0 +1,1518 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<base href="http://www.czez.com.cn:80/News/"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=5; IE=8" /> 
+<title>常州市第二中学</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="font/css/thuicon.css" rel="stylesheet" type="text/css">
+<script src="Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="Scripts/fous.js" type="text/javascript"></script>
+<script src="Scripts/common.js" type="text/javascript"></script>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script src="/js/pub-fun.js"></script> 
+<!--[if lt IE 9]>
+<script src="Scripts/html5.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" href="font/css/thuicon-ie7.css">
+<![endif]-->
+<script>
+   function searchFun(obj){
+        if(checkForm(obj)==false) return;
+        else obj.submit();
+   } 
+  
+    
+    //网站访问量
+	$(function(){
+	 	//设置并得到访问量
+			$.getJSON("/News/PortalWebsiteVisitStatServlet?actionTo=addOrUpdateAndGetVisitCt", function(data){
+ 			if(data!=null){
+ 				 
+ 			}
+ 		});	 
+	});
+    
+    /////////////初始化数据/////
+   
+       
+    CURRENTSERVERDATE = "2018-05-18";
+    LIMITDATE = "2015-04-02";
+    MAXIMGNUM = "131"; //图片总数
+    dateRandom = 130;
+    dateArray = new Array(131);
+    
+       dateArray[0] = "2015-04-02";
+       
+       dateArray[1] = "2015-04-07";
+       
+       dateArray[2] = "2015-04-09";
+       
+       dateArray[3] = "2015-04-10";
+       
+       dateArray[4] = "2015-04-11";
+       
+       dateArray[5] = "2015-04-15";
+       
+       dateArray[6] = "2015-04-17";
+       
+       dateArray[7] = "2015-04-18";
+       
+       dateArray[8] = "2015-04-20";
+       
+       dateArray[9] = "2015-04-21";
+       
+       dateArray[10] = "2015-04-23";
+       
+       dateArray[11] = "2015-04-24";
+       
+       dateArray[12] = "2015-04-27";
+       
+       dateArray[13] = "2015-05-04";
+       
+       dateArray[14] = "2015-05-11";
+       
+       dateArray[15] = "2015-05-19";
+       
+       dateArray[16] = "2015-05-20";
+       
+       dateArray[17] = "2015-05-26";
+       
+       dateArray[18] = "2015-06-02";
+       
+       dateArray[19] = "2015-06-06";
+       
+       dateArray[20] = "2015-08-13";
+       
+       dateArray[21] = "2015-08-26";
+       
+       dateArray[22] = "2015-09-01";
+       
+       dateArray[23] = "2015-09-10";
+       
+       dateArray[24] = "2015-09-29";
+       
+       dateArray[25] = "2015-10-14";
+       
+       dateArray[26] = "2015-10-19";
+       
+       dateArray[27] = "2015-10-20";
+       
+       dateArray[28] = "2015-11-03";
+       
+       dateArray[29] = "2015-11-23";
+       
+       dateArray[30] = "2015-11-27";
+       
+       dateArray[31] = "2015-11-30";
+       
+       dateArray[32] = "2015-12-04";
+       
+       dateArray[33] = "2015-12-08";
+       
+       dateArray[34] = "2015-12-09";
+       
+       dateArray[35] = "2015-12-16";
+       
+       dateArray[36] = "2015-12-24";
+       
+       dateArray[37] = "2015-12-28";
+       
+       dateArray[38] = "2015-12-30";
+       
+       dateArray[39] = "2015-12-31";
+       
+       dateArray[40] = "2016-01-01";
+       
+       dateArray[41] = "2016-01-05";
+       
+       dateArray[42] = "2016-01-08";
+       
+       dateArray[43] = "2016-01-20";
+       
+       dateArray[44] = "2016-02-14";
+       
+       dateArray[45] = "2016-02-20";
+       
+       dateArray[46] = "2016-02-22";
+       
+       dateArray[47] = "2016-03-01";
+       
+       dateArray[48] = "2016-03-07";
+       
+       dateArray[49] = "2016-04-05";
+       
+       dateArray[50] = "2016-04-21";
+       
+       dateArray[51] = "2016-05-05";
+       
+       dateArray[52] = "2016-05-11";
+       
+       dateArray[53] = "2016-08-27";
+       
+       dateArray[54] = "2016-09-01";
+       
+       dateArray[55] = "2016-09-02";
+       
+       dateArray[56] = "2016-09-05";
+       
+       dateArray[57] = "2016-09-08";
+       
+       dateArray[58] = "2016-09-09";
+       
+       dateArray[59] = "2016-09-14";
+       
+       dateArray[60] = "2016-09-18";
+       
+       dateArray[61] = "2016-09-30";
+       
+       dateArray[62] = "2016-10-14";
+       
+       dateArray[63] = "2016-10-16";
+       
+       dateArray[64] = "2016-10-25";
+       
+       dateArray[65] = "2016-10-28";
+       
+       dateArray[66] = "2016-11-02";
+       
+       dateArray[67] = "2016-11-15";
+       
+       dateArray[68] = "2016-11-22";
+       
+       dateArray[69] = "2016-11-23";
+       
+       dateArray[70] = "2016-11-25";
+       
+       dateArray[71] = "2016-12-02";
+       
+       dateArray[72] = "2016-12-12";
+       
+       dateArray[73] = "2016-12-14";
+       
+       dateArray[74] = "2016-12-31";
+       
+       dateArray[75] = "2017-01-01";
+       
+       dateArray[76] = "2017-01-12";
+       
+       dateArray[77] = "2017-01-13";
+       
+       dateArray[78] = "2017-01-14";
+       
+       dateArray[79] = "2017-01-19";
+       
+       dateArray[80] = "2017-02-12";
+       
+       dateArray[81] = "2017-02-20";
+       
+       dateArray[82] = "2017-02-28";
+       
+       dateArray[83] = "2017-03-10";
+       
+       dateArray[84] = "2017-03-17";
+       
+       dateArray[85] = "2017-03-30";
+       
+       dateArray[86] = "2017-04-14";
+       
+       dateArray[87] = "2017-04-17";
+       
+       dateArray[88] = "2017-04-21";
+       
+       dateArray[89] = "2017-04-22";
+       
+       dateArray[90] = "2017-04-29";
+       
+       dateArray[91] = "2017-05-12";
+       
+       dateArray[92] = "2017-05-17";
+       
+       dateArray[93] = "2017-05-19";
+       
+       dateArray[94] = "2017-05-26";
+       
+       dateArray[95] = "2017-05-26";
+       
+       dateArray[96] = "2017-05-29";
+       
+       dateArray[97] = "2017-06-23";
+       
+       dateArray[98] = "2017-06-30";
+       
+       dateArray[99] = "2017-07-01";
+       
+       dateArray[100] = "2017-07-02";
+       
+       dateArray[101] = "2017-07-09";
+       
+       dateArray[102] = "2017-07-18";
+       
+       dateArray[103] = "2017-08-28";
+       
+       dateArray[104] = "2017-09-01";
+       
+       dateArray[105] = "2017-09-01";
+       
+       dateArray[106] = "2017-09-07";
+       
+       dateArray[107] = "2017-09-09";
+       
+       dateArray[108] = "2017-09-11";
+       
+       dateArray[109] = "2017-09-15";
+       
+       dateArray[110] = "2017-10-26";
+       
+       dateArray[111] = "2017-10-30";
+       
+       dateArray[112] = "2017-11-01";
+       
+       dateArray[113] = "2017-11-06";
+       
+       dateArray[114] = "2017-11-08";
+       
+       dateArray[115] = "2017-11-10";
+       
+       dateArray[116] = "2017-11-27";
+       
+       dateArray[117] = "2017-12-08";
+       
+       dateArray[118] = "2017-12-08";
+       
+       dateArray[119] = "2017-12-15";
+       
+       dateArray[120] = "2017-12-29";
+       
+       dateArray[121] = "2017-12-31";
+       
+       dateArray[122] = "2018-01-09";
+       
+       dateArray[123] = "2018-02-03";
+       
+       dateArray[124] = "2018-02-04";
+       
+       dateArray[125] = "2018-02-23";
+       
+       dateArray[126] = "2018-02-26";
+       
+       dateArray[127] = "2018-04-12";
+       
+       dateArray[128] = "2018-04-16";
+       
+       dateArray[129] = "2018-05-12";
+       
+       dateArray[130] = "2018-05-18";
+       
+    jdata = {
+      
+              "2015-04-02":
+      {"id":"1","title":"把握新常态 助力新高考——常州市高三政治研讨会纪实","img":"http://www.czez.com.cn/xheditor/upload/10001911/201504/jy693/News/img/4yue1ri副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1059"}
+         ,
+
+              "2015-04-07":
+      {"id":"2","title":"府学舌战试啼声，各路英豪显风采——常州二中第二届校园辩论赛侧记","img":"http://www.czez.com.cn/xheditor/upload/10001911/201505/jy693/News/img/辩论赛.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1202"}
+         ,
+
+              "2015-04-09":
+      {"id":"3","title":"苦练功，赛技能，促专业发展——我校地理组举行青年教师三板教学技能比赛","img":"http://www.czez.com.cn/xheditor/upload/10001911/201504/jy693/News/img/5.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1067"}
+         ,
+
+              "2015-04-10":
+      {"id":"4","title":"我们这样长大记——2015高一年级生命情景剧展演","img":"http://www.czez.com.cn/xheditor/upload/10001911/201504/zl676/News/img/1.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1071"}
+         ,
+
+              "2015-04-11":
+      {"id":"5","title":"境外友人踏春太湖湾","img":"http://www.czez.com.cn/xheditor/upload/10001911/201504/wdx651/News/img/13.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1171"}
+         ,
+
+              "2015-04-15":
+      {"id":"6","title":"同馨书院进小学——黄安老师赴怀德苑小学作科普讲座","img":"http://www.czez.com.cn/xheditor/upload/10001911/201504/zl676/News/img/4副本1.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1131"}
+         ,
+
+              "2015-04-17":
+      {"id":"7","title":"登高望远 乐在常州——我校交流生参观常州现代传媒中心","img":"http://www.czez.com.cn/xheditor/upload/10001911/201504/jy693/News/img/20150417_152032.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1142"}
+         ,
+
+              "2015-04-18":
+      {"id":"8","title":"缅怀先烈承遗志，璀璨馆藏耀长河——纪念抗日战争胜利70周年常州二中党日活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/201504/jy693/News/img/未命名.png","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1144"}
+         ,
+
+              "2015-04-20":
+      {"id":"9","title":"专家把脉引领，聚焦优质课堂——江苏人民教育家培养对象专家组来我校指导教学工作","img":"http://www.czez.com.cn/xheditor/upload/10001911/201504/jy693/News/img/未标题-1副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1136"}
+         ,
+
+              "2015-04-21":
+      {"id":"10","title":"通往幸福的教育教学研究——听杨九俊教授我们怎样做教育教学研究有感","img":"http://www.czez.com.cn/xheditor/upload/10001911/201504/jy693/News/img/杨九俊.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1135"}
+         ,
+
+              "2015-04-23":
+      {"id":"11","title":"随行随拍，随思随写————读与写的领悟","img":"http://www.czez.com.cn/xheditor/upload/10001911/201504/jy693/News/img/130225xkd867zuoxx6okoy副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1183"}
+         ,
+
+              "2015-04-24":
+      {"id":"12","title":"深入到每一个细节——江苏省第27期高中校长影子培训在我校进行","img":"http://www.czez.com.cn/xheditor/upload/10001911/201504/jy693/News/img/300000876508130223304255878_950.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1176"}
+         ,
+
+              "2015-04-27":
+      {"id":"13","title":"诗歌永存——二中高一年级学生诗歌作品选","img":"http://www.czez.com.cn/xheditor/upload/10001911/201504/jy693/News/img/致敬汪国真2副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1186"}
+         ,
+
+              "2015-05-04":
+      {"id":"14","title":"我校在2015年教育系统五四表彰大会中喜获硕果","img":"http://www.czez.com.cn/xheditor/upload/10001911/201505/jy693/News/img/共同的青春副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1191"}
+         ,
+
+              "2015-05-11":
+      {"id":"15","title":"府学舌战试啼声，各路英豪显风采——常州二中第二届校园辩论赛侧记","img":"http://www.czez.com.cn/xheditor/upload/10001911/201505/jy693/News/img/辩论赛1.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1204"}
+         ,
+
+              "2015-05-19":
+      {"id":"16","title":"两年聪一别，五月喜再逢——美国外教乐聪访问交流侧记","img":"http://www.czez.com.cn/xheditor/upload/10001911/201505/wdx651/News/img/DSC_7694v副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1234"}
+         ,
+
+              "2015-05-20":
+      {"id":"17","title":"培养兴趣   注重实践  追求创新——我校2015年度高一年级通用技术实训课程蓬勃开展","img":"http://www.czez.com.cn/xheditor/upload/10001911/201505/wdx651/News/img/通用技术副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1232"}
+         ,
+
+              "2015-05-26":
+      {"id":"18","title":"毕业季  诉感恩  铸内心  定辉煌","img":"http://www.czez.com.cn/xheditor/upload/10001911/201505/jy693/News/img/1200_副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1252"}
+         ,
+
+              "2015-06-02":
+      {"id":"19","title":"贴着地面扎实行走  心怀梦想坚定前行——我校数字化学习中期评估现场会顺利召开","img":"http://www.czez.com.cn/xheditor/upload/10001911/201506/jy693/News/img/贴着地面飞翔副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1261"}
+         ,
+
+              "2015-06-06":
+      {"id":"20","title":"中国教育学会外语教学专业委员会十二五规划课题结题鉴定会","img":"http://www.czez.com.cn/xheditor/upload/10001911/201506/jy693/News/img/DSC_85271200.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1264"}
+         ,
+
+              "2015-08-13":
+      {"id":"21","title":"参政议政 从我先行——我校学生参加常州市首届青少年模拟政协展评活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/201509/jy693/News/img/2015071321.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1349"}
+         ,
+
+              "2015-08-26":
+      {"id":"22","title":"展开友谊的翅膀——2015少年之翼日本石川县青少年友好访华团访问我校","img":"http://www.czez.com.cn/xheditor/upload/10001911/201509/jy693/News/img/11.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1348"}
+         ,
+
+              "2015-09-01":
+      {"id":"23","title":"儒礼进学承传统  精神明亮显特色","img":"http://www.czez.com.cn/xheditor/upload/10001911/201509/admin/News/img/111.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1340"}
+         ,
+
+              "2015-09-10":
+      {"id":"24","title":"千年府学Q老师——记常州二中教师Q版形象设计、四格漫画创作大赛","img":"http://www.czez.com.cn/xheditor/upload/10001911/201509/jy693/News/img/Q.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1344"}
+         ,
+
+              "2015-09-29":
+      {"id":"25","title":"诵国学经典 扬青春风采——纪念孔子诞辰2566年二中国学经典诵读大赛","img":"http://www.czez.com.cn/xheditor/upload/10001911/201509/jy693/News/img/国学大图副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1378"}
+         ,
+
+              "2015-10-14":
+      {"id":"26","title":"一年一度秋风劲，军营丹桂分外香————常州二中2015级新生军训开营","img":"http://www.czez.com.cn/xheditor/upload/10001911/201510/jy693/News/img/2015军训副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1387"}
+         ,
+
+              "2015-10-19":
+      {"id":"27","title":"乘风破浪会有时，直挂风帆济沧海——记常州市第二中学2015年度高一新生军训结营式","img":"http://www.czez.com.cn/xheditor/upload/10001911/201510/jy693/News/img/IMG_1504datu.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1393"}
+         ,
+
+              "2015-10-20":
+      {"id":"28","title":"尊重个性发展  培养创新精神——我校2015年度高二年级通用技术实训课程蓬勃开展","img":"http://www.czez.com.cn/xheditor/upload/10001911/201510/jy693/News/img/datu副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1392"}
+         ,
+
+              "2015-11-03":
+      {"id":"29","title":"兴孝为善 修身慎行——记常州二中道德讲堂活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/201511/jy693/News/img/DSC_2151大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1406"}
+         ,
+
+              "2015-11-23":
+      {"id":"30","title":"满满的爱心 深深的感动——记常州市第二中学2015年爱心义卖活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/201512/zl676/News/img/义卖大图副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1461"}
+         ,
+
+              "2015-11-27":
+      {"id":"31","title":"融入技术手段  提升人文素养  创生绿色课堂——常州二中常州三中联合公开课","img":"http://www.czez.com.cn/xheditor/upload/10001911/201512/zl676/News/img/gongkaike副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1446"}
+         ,
+
+              "2015-11-30":
+      {"id":"32","title":"记我校金玮同学参加E视界小主播选拔大赛","img":"http://www.czez.com.cn/xheditor/upload/10001911/201512/zl676/News/img/e视界主播选拔副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1451"}
+         ,
+
+              "2015-12-04":
+      {"id":"33","title":"建立教育信息化公共服务体系 以教育信息化带动教育现代化--常州教育信息化工作会议在我校召开","img":"http://www.czez.com.cn/xheditor/upload/10001911/201512/jy693/News/img/大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1466"}
+         ,
+
+              "2015-12-08":
+      {"id":"34","title":"弘扬传统文化 品味文学经典——记常州市第二中学第31届校园艺术节系列活动之课本剧展演","img":"http://www.czez.com.cn/xheditor/upload/10001911/201512/zl676/News/img/大图1副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1463"}
+         ,
+
+              "2015-12-09":
+      {"id":"35","title":"构建特色课程体系 打造幸福和谐校园——常州二中迎接三年主动发展规划总结性评估暨第四轮规划论证","img":"http://www.czez.com.cn/xheditor/upload/10001911/201512/zl676/News/img/三年主动发展副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1469"}
+         ,
+
+              "2015-12-16":
+      {"id":"36","title":"感受名师风采  点拨作文技巧","img":"http://www.czez.com.cn/xheditor/upload/10001911/201512/zl676/News/img/P51212-152824副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1474"}
+         ,
+
+              "2015-12-24":
+      {"id":"37","title":"用昨天的知识教今天的学生面对明天的挑战？？——记数字化学习专项培训","img":"http://www.czez.com.cn/xheditor/upload/10001911/201512/jy693/News/img/1.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1482"}
+         ,
+
+              "2015-12-28":
+      {"id":"38","title":"以烙铁为笔，绘美丽人生","img":"http://www.czez.com.cn/xheditor/upload/10001911/201512/jy693/News/img/缩.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1484"}
+         ,
+
+              "2015-12-30":
+      {"id":"39","title":"常州二中综合性体育场馆胜利竣工","img":"http://www.czez.com.cn/xheditor/upload/10001911/201512/jy693/News/img/未标题-1副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1490"}
+         ,
+
+              "2015-12-31":
+      {"id":"40","title":"告别2015，拥抱2016，一起跨年嗨！","img":"http://www.czez.com.cn/xheditor/upload/10001911/201601/jy693/News/img/新-快乐-54210568.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1494"}
+         ,
+
+              "2016-01-01":
+      {"id":"41","title":"让每一句歌声里有我，让每一片掌声里有你","img":"http://www.czez.com.cn/xheditor/upload/10001911/201601/jy693/News/img/DSC_4107c.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1492"}
+         ,
+
+              "2016-01-05":
+      {"id":"42","title":"十八而志，青春万岁！——记常州市第二中学2016届十八岁成人仪式暨期末动员大会","img":"http://www.czez.com.cn/xheditor/upload/10001911/201601/jy693/News/img/DSC_4234c副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1495"}
+         ,
+
+              "2016-01-08":
+      {"id":"43","title":"专家把脉 引路课题——我校召开省十二五规划课题开题论证会","img":"http://www.czez.com.cn/xheditor/upload/10001911/201601/jy693/News/img/论证会副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1496"}
+         ,
+
+              "2016-01-20":
+      {"id":"44","title":"常州二中2015年度十件大事，等你来投票！","img":"http://www.czez.com.cn/xheditor/upload/10001911/201601/jy693/News/img/1200副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1506"}
+         ,
+
+              "2016-02-14":
+      {"id":"45","title":"玫瑰飘香   爱心传递——记常州二中情人节爱心玫瑰义卖","img":"http://www.czez.com.cn/xheditor/upload/10001911/201602/jy693/News/img/玫瑰飘香爱心传递.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1528"}
+         ,
+
+              "2016-02-20":
+      {"id":"46","title":"诗意人生  诗性教育——苏州十中柳袁照校长来我校作新学期专题讲座","img":"http://www.czez.com.cn/xheditor/upload/10001911/201602/jy693/News/img/柳袁照讲座副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1529"}
+         ,
+
+              "2016-02-22":
+      {"id":"47","title":"一年一度元宵至，小小灯谜总关情——常州二中举行元宵节灯谜会迎接新学期","img":"http://www.czez.com.cn/xheditor/upload/10001911/201602/jy693/News/img/元宵节猜灯谜副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1532"}
+         ,
+
+              "2016-03-01":
+      {"id":"48","title":"青春诗社——记高一、二年级诗歌黑板报展","img":"http://www.czez.com.cn/xheditor/upload/10001911/201603/jy693/News/img/QQ图片201602291613171.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1561"}
+         ,
+
+              "2016-03-07":
+      {"id":"49","title":"聆听老教师故事 学习雷锋精神","img":"http://www.czez.com.cn/xheditor/upload/10001911/201603/jy693/News/img/3月5日殷德明书记副本.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1562"}
+         ,
+
+              "2016-04-05":
+      {"id":"50","title":"珍爱生命  关爱心灵——2016高一年级生命情景剧展演活动圆满落幕","img":"http://www.czez.com.cn/xheditor/upload/10001911/201604/jy693/News/img/DSC_5559c.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1579"}
+         ,
+
+              "2016-04-21":
+      {"id":"51","title":"府学文化课程基地徐州淘宝行","img":"http://www.czez.com.cn/xheditor/upload/10001911/201604/jy693/News/img/QQ图片20160421150554c.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1610"}
+         ,
+
+              "2016-05-05":
+      {"id":"52","title":"慷慨陈词抒己论   唇枪舌战决弈时","img":"http://www.czez.com.cn/xheditor/upload/10001911/201605/jy693/News/img/DSC_6417c.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1640"}
+         ,
+
+              "2016-05-11":
+      {"id":"53","title":"党培养了我，为祖国贡献一生——1958届校友回校相聚散记","img":"http://www.czez.com.cn/xheditor/upload/10001911/201605/jy693/News/img/同学.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1649"}
+         ,
+
+              "2016-08-27":
+      {"id":"54","title":"读万卷书，行万里路，成栋梁材——记常州二中、安顺民族中学2016年人文之旅优秀学生干部夏令营","img":"http://www.czez.com.cn/xheditor/upload/10001911/201608/jy693/News/img/datu.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1713"}
+         ,
+
+              "2016-09-01":
+      {"id":"55","title":"开学第一讲——李振亚校长新学期开学典礼致辞","img":"http://www.czez.com.cn/xheditor/upload/10001911/201609/jy693/News/img/开学第一讲.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1729"}
+         ,
+
+              "2016-09-02":
+      {"id":"56","title":"营造幸福校园，成就栋梁之才——常州二中举行2016—2017学年新生进学仪式暨开学典礼","img":"http://www.czez.com.cn/xheditor/upload/10001911/201609/jy693/News/img/DSC_9147datu.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1728"}
+         ,
+
+              "2016-09-05":
+      {"id":"57","title":"中韩师生聚一堂 共享欢乐增友谊——韩国南杨州市教育代表团访问我校","img":"http://www.czez.com.cn/xheditor/upload/10001911/201609/jy693/News/img/datu.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1731"}
+         ,
+
+              "2016-09-08":
+      {"id":"58","title":"定格快乐时光、凝刻美丽瞬间","img":"http://www.czez.com.cn/xheditor/upload/10001911/201609/jy693/News/img/大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1743"}
+         ,
+
+              "2016-09-09":
+      {"id":"59","title":"教师节的爱心指印树","img":"http://www.czez.com.cn/xheditor/upload/10001911/201609/jy693/News/img/指印.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1744"}
+         ,
+
+              "2016-09-14":
+      {"id":"60","title":"新队伍，新平台，新思路——常州二中召开新学期宣传工作会议","img":"http://www.czez.com.cn/xheditor/upload/10001911/201609/jy693/News/img/宣传工作会议1.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1755"}
+         ,
+
+              "2016-09-18":
+      {"id":"61","title":"我校学生会荣获2015—2016年度江苏省十佳学生会称号","img":"http://www.czez.com.cn/xheditor/upload/10001911/201609/jy693/News/img/学生会12001.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1758"}
+         ,
+
+              "2016-09-30":
+      {"id":"62","title":"享受运动的快乐吧！——常州二中2016年秋季运动会掠影","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2016/0930/News/img/2016运动会datu.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1789"}
+         ,
+
+              "2016-10-14":
+      {"id":"63","title":"诵明月之诗，歌窈窕之章——记二中高一年级国学经典诵读大赛","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2016/1017/News/img/DSC_1148c.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1806"}
+         ,
+
+              "2016-10-16":
+      {"id":"64","title":"与生命赛跑——我校举办急救知识讲座","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2016/1017/News/img/11.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1810"}
+         ,
+
+              "2016-10-25":
+      {"id":"65","title":"用风雨和汗水炼就祖国的栋梁——记常州市第二中学2016年高一学生军训","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2016/1025/News/img/datu.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1819"}
+         ,
+
+              "2016-10-28":
+      {"id":"66","title":"让学习成为一种诱惑——我校房宏校长教育思想汇报会纪实","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2016/1028/News/img/DSC_3715c.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1835"}
+         ,
+
+              "2016-11-02":
+      {"id":"67","title":"文化的碰撞  智慧的结晶——记高二（7）班中外节日之我见主题班会活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2016/1102/News/img/datu.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1847"}
+         ,
+
+              "2016-11-15":
+      {"id":"68","title":"16岁少女的欧洲穷游经 ——2015届的钱雨青","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2016/1115/News/img/-363378777557317d1.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1875"}
+         ,
+
+              "2016-11-22":
+      {"id":"69","title":"精益求精——徐展名师工作室首次观摩课","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2016/1122/News/img/datu.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1889"}
+         ,
+
+              "2016-11-23":
+      {"id":"70","title":"2016年长三角城市群教育科研常州论坛议程","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2016/1123/News/img/长三角3：1.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1890"}
+         ,
+
+              "2016-11-25":
+      {"id":"71","title":"且行且思——记第四期青果子课题观摩活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2016/1125/News/img/青果.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1891"}
+         ,
+
+              "2016-12-02":
+      {"id":"72","title":"潇潇秋雨迎远客  簌簌初雪送友归","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2016/1202/News/img/DSC_4091da.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1913"}
+         ,
+
+              "2016-12-12":
+      {"id":"73","title":"草原勇士各路健儿 庆贺胜利赞歌高唱——我校男教工合唱团获市教育系统直属单位小合唱比赛一等奖","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2016/1212/News/img/大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1935"}
+         ,
+
+              "2016-12-14":
+      {"id":"74","title":"培养兴趣 注重实践 追求创新——我校高二年级通用技术实训课程蓬勃开展","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2016/1214/News/img/通用技术大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1943"}
+         ,
+
+              "2016-12-31":
+      {"id":"75","title":"文学构造世界，舞台演绎人生——记高二年级课本剧展演暨迎新大会","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0103/News/img/课本剧.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1968"}
+         ,
+
+              "2017-01-01":
+      {"id":"76","title":"你好，2017","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0103/News/img/你好2017.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1967"}
+         ,
+
+              "2017-01-12":
+      {"id":"77","title":"迎新春、金鸡纳福——二中书法社师生送福啦！","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0114/News/img/1.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1980"}
+         ,
+
+              "2017-01-13":
+      {"id":"78","title":"喜报：我校朱丽锋、张珩老师被评为第十二批常州市学科带头人，杨二群、张元宵老师被评为第十二批常州市骨干教师！","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0114/News/img/热烈祝贺1200.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1979"}
+         ,
+
+              "2017-01-14":
+      {"id":"79","title":"2017年艺术省统考成绩揭晓，我校艺术类考生取得优异成绩！","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0114/News/img/2017艺术类统考1200.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1977"}
+         ,
+
+              "2017-01-19":
+      {"id":"80","title":"常州二中2016年度十件大事，等你来投票","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0124/News/img/201610件大事.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1985"}
+         ,
+
+              "2017-02-12":
+      {"id":"81","title":"一年一度元宵至，小小灯谜总关情","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0212/News/img/大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1992"}
+         ,
+
+              "2017-02-20":
+      {"id":"82","title":"行走的格桑花公益活动——青海同仁县民族中学来校活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0220/News/img/大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=1997"}
+         ,
+
+              "2017-02-28":
+      {"id":"83","title":"青春无悔，舍我其谁，破釜沉舟，展翅高飞，奋战百日，六月夺魁——2017届高考百日誓师大会","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0303/News/img/DSC_6105datu.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2020"}
+         ,
+
+              "2017-03-10":
+      {"id":"84","title":"挑战高考极限  拼搏成就未来——知名励志演说家杨青松老师来我校做励志演讲","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0310/News/img/励志演讲大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2035"}
+         ,
+
+              "2017-03-17":
+      {"id":"85","title":"荆溪闪话诗˙青春不言败－－「为你读诗」＆常州市第二中学世界诗歌日特别活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0317/News/img/荆溪闪话诗˙青春不言败.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2041"}
+         ,
+
+              "2017-03-30":
+      {"id":"86","title":"打太极、做汉服、包饺子，丹麦友好校AGS高中师生感受中国传统文化","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0330/News/img/DSC_7126大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2049"}
+         ,
+
+              "2017-04-14":
+      {"id":"87","title":"打˙开音乐与心灵的对话——体验式音乐放松工作坊在我校首次活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0418/News/img/音乐与心灵的对话1200.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2067"}
+         ,
+
+              "2017-04-17":
+      {"id":"88","title":"画笔下的皖南风韵——高二年级艺术班宏村写生画展","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0418/News/img/宏村写生.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2070"}
+         ,
+
+              "2017-04-21":
+      {"id":"89","title":"一个中国老师眼里的澳大利亚——第四期二中府学讲堂开讲啦","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0424/News/img/杨伟成讲座.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2079"}
+         ,
+
+              "2017-04-22":
+      {"id":"90","title":"回顾党的征程 重温铁军精神——常州二中党员教师赴新四军江南指挥部纪念馆参观学习","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0424/News/img/党员活动.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2076"}
+         ,
+
+              "2017-04-29":
+      {"id":"91","title":"唇枪舌剑 思维碰撞——记常州二中第四届校园辩论赛总决赛","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0429/News/img/大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2101"}
+         ,
+
+              "2017-05-12":
+      {"id":"92","title":"岁月如火，青春如歌——记常州市第二中学高一年级大合唱比赛","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0519/News/img/DSC_8142.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2120"}
+         ,
+
+              "2017-05-17":
+      {"id":"93","title":"校园开放日——一份来自二中的邀请函","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0519/News/img/DSC_6902.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2130"}
+         ,
+
+              "2017-05-19":
+      {"id":"94","title":"让智能手机进课堂的黑科技——府学讲坛又开讲","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0519/News/img/让智能手机进课堂的“黑科技”大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2129"}
+         ,
+
+              "2017-05-26":
+      {"id":"95","title":"多元、实践、创新——常州二中高一年级通用技术实训课程蓬勃开展","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0526/News/img/通用技术1.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2133"}
+         ,
+
+              "2017-05-26":
+      {"id":"96","title":"我校音乐教师纪荣平放歌北京音乐厅","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0527/News/img/纪荣平老师1200.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2134"}
+         ,
+
+              "2017-05-29":
+      {"id":"97","title":"常州晚报看校团来校寻宝啦！","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0529/News/img/看校团1.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2137"}
+         ,
+
+              "2017-06-23":
+      {"id":"98","title":"青春的足迹 ——记常州市第二中学2017届高三学生毕业典礼","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0623/News/img/毕业季.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2143"}
+         ,
+
+              "2017-06-30":
+      {"id":"99","title":"旗帜鲜明讲政治  争当优秀勇担当——记我校纪念中国共产党成立96周年道德讲堂活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0701/News/img/DSC_9852c.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2157"}
+         ,
+
+              "2017-07-01":
+      {"id":"100","title":"向专家取经，为假期充电——记常州二中暑期教师培训","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0702/News/img/DSC_2479大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2159"}
+         ,
+
+              "2017-07-02":
+      {"id":"101","title":"2017级高一新生领取录取通知书啦","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0702/News/img/IMG_20170702_094307.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2158"}
+         ,
+
+              "2017-07-09":
+      {"id":"102","title":"一场美丽的聚会，一次高端的培训——我校骨干教师参加浙江大学管理能力提升班暑期培训","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0709/News/img/浙大培训大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2160"}
+         ,
+
+              "2017-07-18":
+      {"id":"103","title":"二中学生荣获常州市第三届模拟政协展评活动优秀团队奖","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0901/News/img/未标题-2.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2173"}
+         ,
+
+              "2017-08-28":
+      {"id":"104","title":"不忘教育初心 锤炼育人技能——2017年校班主任基本功竞赛掠影","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0901/News/img/班主任基本功.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2167"}
+         ,
+
+              "2017-09-01":
+      {"id":"105","title":"弘扬传统府学文化，开启校园崭新篇章——常州二中举行2017—2018学年新生进学仪式","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0901/News/img/datu.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2172"}
+         ,
+
+              "2017-09-01":
+      {"id":"106","title":"新学期，新征程——记常州二中新学期第一次升旗仪式暨开学典礼","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0901/News/img/大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2174"}
+         ,
+
+              "2017-09-07":
+      {"id":"107","title":"十年相约 情谊永恒——二中师生赴美国友好校Oak Hall school交流掠影","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0907/News/img/大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2194"}
+         ,
+
+              "2017-09-09":
+      {"id":"108","title":"我们的节日，我们的故事  ——常州二中庆祝第33个教师节暨府学道德讲堂活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/0912/News/img/大图2.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2196"}
+         ,
+
+              "2017-09-11":
+      {"id":"109","title":"浓情教师节，感恩义卖会——记常州市第二中学迎接第33个教师节爱心义卖","img":"http://www.czez.com.cn/xheditor/upload/10001911/wyq909/2017/0911/News/img/大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2197"}
+         ,
+
+              "2017-09-15":
+      {"id":"110","title":"携手并进，共谱华章——常州二中举行2017-2018学年师徒结对仪式","img":"http://www.czez.com.cn/xheditor/upload/10001911/wyq909/2017/0915/News/img/DSC_0796.JPG","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2205"}
+         ,
+
+              "2017-10-26":
+      {"id":"111","title":"二中萌妹纸的一组军训漫画，保证逗乐你！","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/1101/News/img/a.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2254"}
+         ,
+
+              "2017-10-30":
+      {"id":"112","title":"王赟老师荣获江苏省中小学教师中华经典诵写讲比赛一等奖","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/1101/News/img/王赟中华经典诵写讲能力展示活动.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2272"}
+         ,
+
+              "2017-11-01":
+      {"id":"113","title":"许鸢飞同学荣获全国中学生奥林匹克物理竞赛江苏省一等奖","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/1101/News/img/许鸢飞.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2270"}
+         ,
+
+              "2017-11-06":
+      {"id":"114","title":"省赛传捷报  沃土促成长——记常州二中吴敏老师喜获江苏省高中物理评优课一等奖","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/1108/News/img/吴敏大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2278"}
+         ,
+
+              "2017-11-08":
+      {"id":"115","title":"在诵读中品悟，在品悟中传承——记常州二中高一年级国学经典诵读展演","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/1110/News/img/DSC_5207大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2291"}
+         ,
+
+              "2017-11-10":
+      {"id":"116","title":"课程改革和校园文化——常州二中李振亚校长在中小学校长国际交流与协作美国分论坛交流发言","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/1110/News/img/1.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2292"}
+         ,
+
+              "2017-11-27":
+      {"id":"117","title":"体验农耕文化，实践田间劳作——记常州二中高三年级佳农探趣生态休闲园社会实践活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/1127/News/img/大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2303"}
+         ,
+
+              "2017-12-08":
+      {"id":"118","title":"同题异构各展风采，交流研讨共促成长——记我校与常州三中同题异构对外公开课活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/1222/News/img/2.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2347"}
+         ,
+
+              "2017-12-08":
+      {"id":"119","title":"常州市第二中学塑胶跑道和篮排球场硅PU面层施工项目顺利验收","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/1222/News/img/1.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2348"}
+         ,
+
+              "2017-12-15":
+      {"id":"120","title":"在道德讲堂演穿越大戏——记常州市第二中学道德讲堂活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/1222/News/img/DSC_5809C.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2355"}
+         ,
+
+              "2017-12-29":
+      {"id":"121","title":"常州市第二中学首届迎新狂欢节","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2017/1229/News/img/狂欢节1200.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2373"}
+         ,
+
+              "2017-12-31":
+      {"id":"122","title":"上下一心，团结奋斗——记常州市第二中学校园首届狂欢节之拔河比赛","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2018/0102/News/img/大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2374"}
+         ,
+
+              "2018-01-09":
+      {"id":"123","title":"十八而志  青春万岁——常州二中2018届高三年级举办十八岁成人仪式","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2018/0110/News/img/img-6b62f447a1aee3fdd8085166c1be461d.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2384"}
+         ,
+
+              "2018-02-03":
+      {"id":"124","title":"2017年梅特勒.托利多教育奖励基金颁奖大会在我校举行","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2018/0205/News/img/大图1.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2404"}
+         ,
+
+              "2018-02-04":
+      {"id":"125","title":"德育构建  智慧共享——记常州二中2018年班级建设沙龙活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2018/0205/News/img/大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2405"}
+         ,
+
+              "2018-02-23":
+      {"id":"126","title":"二中学生参加寒假微公益活动纪实","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2018/0228/News/img/大图1.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2414"}
+         ,
+
+              "2018-02-26":
+      {"id":"127","title":"勇往直前  无问西东——李振亚校长2017-2018学年第二学期开学第一讲","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2018/0228/News/img/大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2415"}
+         ,
+
+              "2018-04-12":
+      {"id":"128","title":"和青春同台 与生命同行——2018常州市第二中学高一年级生命情景剧展演","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2018/0513/News/img/datu.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2452"}
+         ,
+
+              "2018-04-16":
+      {"id":"129","title":"继承红船精神，培育新时代建设者——二中党员的国家安全教育日特殊党课","img":"http://www.czez.com.cn/xheditor/upload/10001911/wyq909/2018/0416/News/img/DSC_8943.JPG","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2456"}
+         ,
+
+              "2018-05-12":
+      {"id":"130","title":"一幕善恶一幕丑，戏罢仍有情长流——记常州二中2018年高二课本剧展演活动","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2018/0513/News/img/大图.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2472"}
+         ,
+
+              "2018-05-18":
+      {"id":"131","title":"知行合一，全面发展——常州二中高一年级参加通用技术实训课程","img":"http://www.czez.com.cn/xheditor/upload/10001911/jy693/2018/0521/News/img/通用.jpg","swf":"","url":"http://www.czez.com.cn/News/news_detail.jsp?newsId=2480"}
+          
+     }
+    
+</script>
+</head>
+
+<body>
+
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0" id="header">
+  <tr>
+    <td><object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1003" height="150">
+      <param name="movie" value="images/header.swf" />
+      <param name="quality" value="high" />
+      <param name="wmode" value="transparent" />
+      <param name="swfversion" value="6.0.65.0" />
+      <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+      <param name="expressinstall" value="Scripts/expressInstall.swf" />
+      <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+      <!--[if !IE]>-->
+      <object type="application/x-shockwave-flash" data="images/header.swf" width="1003" height="150">
+        <!--<![endif]-->
+        <param name="quality" value="high" />
+        <param name="wmode" value="transparent" />
+        <param name="swfversion" value="6.0.65.0" />
+        <param name="expressinstall" value="Scripts/expressInstall.swf" />
+        <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+        <div>
+          <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+          <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+        </div>
+        <!--[if !IE]>-->
+      </object>
+      <!--<![endif]-->
+    </object></td>
+  </tr>
+</table>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td id="nav">
+    
+     <ul id="navigation">
+     
+       
+                <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"> <a href="/News/">校园首页</a>
+                 
+                </li>
+      			
+       
+                 <li><img src="images/nav_line.gif" width="1" height="47" /></li>
+                 
+       
+                <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"> <a href="/News/news_list.jsp?typeId=news01">校务公开</a>
+                 
+                    <ul>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0101">校园新闻</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0102">公示公告</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0103">喜报专栏</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0107">装备管理</a>
+                           
+                           	 
+                           </li>
+                       
+                    </ul>
+                 
+                </li>
+      			
+       
+                 <li><img src="images/nav_line.gif" width="1" height="47" /></li>
+                 
+       
+                <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"> <a href="/News/news_list.jsp?typeId=news02">和谐党建</a>
+                 
+                    <ul>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0203">文件通知</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0201">党建活动</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0202">学习材料</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0204">他山之石</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0205">关工委</a>
+                           
+                           	 
+                           </li>
+                       
+                    </ul>
+                 
+                </li>
+      			
+       
+                 <li><img src="images/nav_line.gif" width="1" height="47" /></li>
+                 
+       
+                <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"> <a href="/News/news_list.jsp?typeId=news03">课程管理</a>
+                 
+                    <ul>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0301">年级风采</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0302">教学动态</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0303">高考高招</a>
+                           
+                           	 
+                           </li>
+                       
+                    </ul>
+                 
+                </li>
+      			
+       
+                 <li><img src="images/nav_line.gif" width="1" height="47" /></li>
+                 
+       
+                <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"> <a href="/News/news_list.jsp?typeId=news04">教师发展</a>
+                 
+                    <ul>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0406">政策文件</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0401">专业发展</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0402">课题研究</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0403">学科建设</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0404">教研动态</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0405">百家讲坛</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0407">教师获奖</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0409">培训感悟</a>
+                           
+                           	 
+                           </li>
+                       
+                    </ul>
+                 
+                </li>
+      			
+       
+                 <li><img src="images/nav_line.gif" width="1" height="47" /></li>
+                 
+       
+                <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"> <a href="/News/news_list.jsp?typeId=news05">莘莘学子</a>
+                 
+                    <ul>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0501">主题活动</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0502">文体艺术</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0503">班级建设</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0504">家长学校</a>
+                           
+                           	 
+                           </li>
+                       
+                    </ul>
+                 
+                </li>
+      			
+       
+                 <li><img src="images/nav_line.gif" width="1" height="47" /></li>
+                 
+       
+                <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"> <a href="/News/news_list.jsp?typeId=news06">后勤服务</a>
+                 
+                    <ul>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0604">通知公告</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0601">每周菜谱</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0602">财务之窗</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0603">学校基建</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0605">爱水节水</a>
+                           
+                           	 
+                           </li>
+                       
+                    </ul>
+                 
+                </li>
+      			
+       
+                 <li><img src="images/nav_line.gif" width="1" height="47" /></li>
+                 
+       
+                <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"> <a href="/News/news_list.jsp?typeId=news07">团旗飘飘</a>
+                 
+                    <ul>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0701">升旗仪式</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0702">经典活动</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0703">团校党校</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0704">学生社团</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0705">学生会</a>
+                           
+                           	 
+                           </li>
+                       
+                           <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"><a href="/News/news_list.jsp?typeId=news0706">教工团支部</a>
+                           
+                           	 
+                           </li>
+                       
+                    </ul>
+                 
+                </li>
+      			
+       
+                 <li><img src="images/nav_line.gif" width="1" height="47" /></li>
+                 
+       
+                <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"> <a href="/News/news_list.jsp?typeId=news08">教工之家</a>
+                 
+                </li>
+      			
+       
+                 <li><img src="images/nav_line.gif" width="1" height="47" /></li>
+                 
+       
+                <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"> <a href="/News/news_list.jsp?typeId=news09">国际理解</a>
+                 
+                </li>
+      			
+       
+                 <li><img src="images/nav_line.gif" width="1" height="47" /></li>
+                 
+       
+                <li onMouseOver="displaySubMenu(this)" onMouseOut="hideSubMenu(this)"> <a href="/News/news_list.jsp?typeId=news52">二中教育</a>
+                 
+                </li>
+      			
+       
+    </ul>
+    
+    </td>
+  </tr>
+  <tr>
+    <td id="nav_bottom"></td>
+  </tr>
+</table>
+
+<article class="content">
+<section class="thuimg">
+      <div class="thuimgWrap" id="thuimgWrap" style="height:400px;" >
+             <a class="thuimga thua" href="">
+                 <img src="" class="mainImg">
+             </a>
+</div>
+         <section class="mainWrap relative">
+          <a class="imgarrow imgarrowleft thuicon-angle-left" id="thuimgPre"></a><a class="imgarrow imgarrowright thuicon-angle-right" id="thuimgNext"></a>
+         <div class="imgTitle">
+             <span class="bg"></span>
+             <a class="txt yahei thua" id="thuImgTitle"></a>
+            <span class="day today" id="calendarToday">Today</span>
+           </div>
+           <div class="month clearfix">
+             <a class="thuicon-angle-left arrowleft arrow" id="calendarMonthpre"></a><a class="thuicon-angle-right arrowright arrow"  id="calendarMonthnext"></a>
+             <div class="monthTxt"><span id="calendarYear"></span><span id="calendarMonth"></span>月</div>
+             <ul class="day clearfix" id="calendarDay">
+                </ul>
+            </div>
+    </section>
+  </section>
+</article>
+  
+ <div class="clearfix"></div>
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="222" align="left" valign="top">
+    <form action="/Search/result.jsp" method="post" name="rearchForm" onsubmit="return false;" target="_blank">
+	<input type="hidden" name="schoolId" value="10001911"/>
+	<input type="hidden" name="annexFlg" value="0"/>
+	<input type="hidden" name="typeIdList" value="news"/>
+    <table width="222" border="0" cellspacing="0" cellpadding="0" id="index_search">
+      <tr>
+        <td width="170" align="center"><input type="text" name=searchValue class="index_search_input" value="请输入关键字" onFocus="if(this.value==defaultValue) {this.value='';}" onBlur="if(!value) {value=defaultValue;}"></td>
+        <td width="52" align="center"><input type="button"  onclick="searchFun(rearchForm)" name="button" class="index_search_button" value=" "></td>
+      </tr>
+    </table>
+    </form>
+    <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="20">&nbsp;</td>
+      </tr>
+    </table>
+    <table width="222" border="0" align="center" cellpadding="0" cellspacing="0">
+       
+      <tr>
+        <td><a href="zt1/" target="_blank"><img onerror="this.src='img/noImg.gif'" src="/xheditor/upload/ShortIcon/23a88b78-781c-4c18-9fa5-d96a3d7b93cf-firstimg.jpg" width="219" height="59" border="0"></a></td>
+      </tr>
+     
+      <tr>
+        <td><a href="mailto:czerzhong@163.com" target="_blank"><img onerror="this.src='img/noImg.gif'" src="/xheditor/upload/ShortIcon/ec6e27fa-173a-4ffa-9677-4b141192994c-firstimg.jpg" width="219" height="59" border="0"></a></td>
+      </tr>
+     
+      <tr>
+        <td><a href="http://58.241.60.52:8081/cas/login?service=http%3A%2F%2F58.241.60.52%3A81%2F" target="_blank"><img onerror="this.src='img/noImg.gif'" src="/xheditor/upload/ShortIcon/ca2e7ba0-e00f-42b5-890e-b4ceac84abf0-firstimg.jpg" width="219" height="59" border="0"></a></td>
+      </tr>
+     
+    </table></td>
+    <td width="21"></td>
+    <td width="504" align="left" valign="top">
+    
+    <table width="504" border="0" cellspacing="0" cellpadding="0" id="news">
+      <tr>
+        <td width="25" valign="top">
+        <table width="27" border="0" align="center" cellpadding="0" cellspacing="1" class="news">
+      <tr>
+        <td id="one1" onclick="javascript:location.href='/News/news_list.jsp?typeId=news0101'" onmouseover="setTab('one',1,3)" class="hover">校<br />园<br />新<br />闻</td>
+        </tr>
+        <tr>
+        <td id="one2" onclick="javascript:location.href='/News/news_list.jsp?typeId=news0102'" onmouseover="setTab('one',2,3)">公<br />示<br />公<br />告</td>
+        </tr>
+        <tr>
+        <td id="one3" onclick="javascript:location.href='/News/news_list.jsp?typeId=news0103'" onmouseover="setTab('one',3,3)">喜<br />报<br />专<br />栏</td>
+      </tr>
+    </table>
+        </td>
+        <td width="477" valign="top">
+        
+  <div id="con_one_1">
+    <table width="94%" border="0" align="center" cellpadding="0" cellspacing="0" class="news_list">
+      <tr>
+        <td width="83%">&nbsp;</td>
+        <td width="17%">&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2485" target="_blank">赢在高考 成功在我——常州二中2018届高┈</a>
+		                
+                        <img src="/News/img/news.gif"/>
+                        </td>
+        <td align="center" class="news_date">2018-05-23</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2484" target="_blank">AFS国际交流学生在二中感受中国文化</a>
+		                </td>
+        <td align="center" class="news_date">2018-05-21</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2480" target="_blank">知行合一，全面发展——常州二中高一年级参加┈</a>
+		                </td>
+        <td align="center" class="news_date">2018-05-18</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2479" target="_blank">又是一年高考季，聆听、探究、展望——市青年┈</a>
+		                </td>
+        <td align="center" class="news_date">2018-05-18</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2478" target="_blank">不忘初心，牢记使命；学习讲话，交流心得——┈</a>
+		                </td>
+        <td align="center" class="news_date">2018-05-17</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2477" target="_blank">科学分析   积极交流    共攀新高——┈</a>
+		                </td>
+        <td align="center" class="news_date">2018-05-14</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2476" target="_blank">赛出水平 赛出风采 赛出友谊——常州二中举┈</a>
+		                </td>
+        <td align="center" class="news_date">2018-05-14</td>
+      </tr>
+      
+    </table>
+  </div>
+ <div id="con_one_2" style="display:none;">
+ <table width="94%" border="0" align="center" cellpadding="0" cellspacing="0" class="news_list">
+      <tr>
+        <td width="83%">&nbsp;</td>
+        <td width="17%">&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2466" target="_blank">2017-2018学年第二学期第11周校级┈</a>
+		                </td>
+        <td align="center" class="news_date">2018-05-07</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2465" target="_blank">常州公开课第80讲  马伯庸：历史的另一种┈</a>
+		                </td>
+        <td align="center" class="news_date">2018-05-03</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2462" target="_blank">2017-2018学年第二学期第9周校级研┈</a>
+		                </td>
+        <td align="center" class="news_date">2018-04-23</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2458" target="_blank">转发关于“常州市第十二届教师学术沙龙”具体┈</a>
+		                </td>
+        <td align="center" class="news_date">2018-04-18</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2454" target="_blank">2017-2018学年第二学期第8周校级研┈</a>
+		                </td>
+        <td align="center" class="news_date">2018-04-16</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2450" target="_blank">常州公开课78讲   红色火星的蓝色星球梦</a>
+		                </td>
+        <td align="center" class="news_date">2018-04-10</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2448" target="_blank">2017-2018学年第二学期第7周校级研┈</a>
+		                </td>
+        <td align="center" class="news_date">2018-04-08</td>
+      </tr>
+      
+    </table>
+ </div>
+ <div id="con_one_3" style="display:none;">
+ <table width="94%" border="0" align="center" cellpadding="0" cellspacing="0" class="news_list">
+      <tr>
+        <td width="83%">&nbsp;</td>
+        <td width="17%">&nbsp;</td>
+      </tr>
+     
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2419" target="_blank">我校团委荣获“江苏省十佳中学共青团组织”称┈</a>
+		                </td>
+        <td align="center" class="news_date">2018-02-28</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2418" target="_blank">袁丁老师在江苏省共青团辅导员基本功展示中荣┈</a>
+		                </td>
+        <td align="center" class="news_date">2018-02-28</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2401" target="_blank">关于表彰2017-2018学年第一学期“二┈</a>
+		                </td>
+        <td align="center" class="news_date">2018-02-01</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2369" target="_blank">祝贺我校学生在2017年常州市通用技术作品┈</a>
+		                </td>
+        <td align="center" class="news_date">2017-12-22</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2368" target="_blank">李燕峰老师被评为常州市第八批中小学教学能手</a>
+		                </td>
+        <td align="center" class="news_date">2017-12-22</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2367" target="_blank">任玮老师被评为常州市第八批中小学教坛新秀</a>
+		                </td>
+        <td align="center" class="news_date">2017-12-22</td>
+      </tr>
+      
+      <tr>
+        <td height="30">· <a href="news_detail.jsp?newsId=2366" target="_blank">张珩老师被评为“首批常州市青年教师英才培养┈</a>
+		                </td>
+        <td align="center" class="news_date">2017-12-22</td>
+      </tr>
+      
+    </table>
+ </div>
+ 
+        </td>
+      </tr>
+    </table>
+    
+    </td>
+    <td width="21"></td>
+    <td width="235" align="left" valign="top">
+    
+    <iframe id="loginIframe" name="loginIframe" src="/News/login.jsp" width="100%" height="100%" scrolling="no" frameborder="no"></iframe>
+    
+    <table width="235" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+         
+        <td><a href="http://www.czez.com.cn/webschool/News/news_list_child.jsp?typeId=news0405" target="_blank"><img onerror="this.src='img/noImg.gif'" src="/xheditor/upload/10001911/201504/admin/News/img/right_link_a.jpg" width="82" height="100" border="0"></a></td>
+ 
+      
+        <td><a href="http://www.czez.com.cn" target="_blank"><img onerror="this.src='img/noImg.gif'" src="/xheditor/upload/10001911/201504/admin/News/img/right_link_b.jpg" width="82" height="100" border="0"></a></td>
+ 
+      
+        <td><a href="http://www.czez.com.cn" target="_blank"><img onerror="this.src='img/noImg.gif'" src="/xheditor/upload/10001911/201504/admin/News/img/right_link_c.jpg" width="82" height="100" border="0"></a></td>
+ 
+      
+      </tr>  
+    </table></td>
+  </tr>
+</table>
+ <table width=1003 border=0 align=center cellpadding=0 cellspacing=0><tr > 
+                   <td width="25%" height="60" valign="middle">
+                    <select onchange='window.open(this.value)' class='link_select' >
+                    <option>教育类网站</option>
+                    
+                        <option value="http://www.czedu.gov.cn/Default.aspx">常州教育</option>
+                    
+                        <option value="http://www.jseea.cn/">江苏省考试院</option>
+                    
+                        <option value="http://czjs.czedu.gov.cn/home/">常州市教师师培中心</option>
+                    
+                        <option value="http://zk.czedu.gov.cn/">常州市招考信息网</option>
+                    
+                        <option value="http://www.jste.net.cn/cmsplus/index.jsp">江苏教师教育</option>
+                    
+                        <option value="http://www.626china.org/">中国禁毒数字展览馆</option>
+                    
+                        <option value="http://www.nncc626.com">中国禁毒网</option>
+                    
+                    </select>
+                    </td>  
+                    
+                    
+                   <td width="25%" height="60" valign="middle">
+                    <select onchange='window.open(this.value)' class='link_select' >
+                    <option>教育教学资源网站</option>
+                    
+                        <option value="http://www.zxxk.com/">中学学科网</option>
+                    
+                        <option value="http://www.gkxx.com/">高考学习网</option>
+                    
+                        <option value="http://www.cnki.net/">中国知网</option>
+                    
+                    </select>
+                    </td>  
+                    
+                    
+                   <td width="25%" height="60" valign="middle">
+                    <select onchange='window.open(this.value)' class='link_select' >
+                    <option>国际友好学校</option>
+                    
+                        <option value="http://www.ags.dk/">alssund high school</option>
+                    
+                        <option value="http://www.oakhall.org/">oak hall school</option>
+                    
+                    </select>
+                    </td>  
+                    
+                    
+                   <td width="25%" height="60" valign="middle">
+                    <select onchange='window.open(this.value)' class='link_select' >
+                    <option>其它推荐网站</option>
+                    
+                        <option value="http://news.sina.com.cn/">新浪网</option>
+                    
+                        <option value="http://www.zhong5.cn/">中吴网</option>
+                    
+                    </select>
+                    </td>  
+                    
+                   </tr></table>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" id="copyright">
+  <tr>
+    <td>
+    地址：江苏省常州市钟楼区西横街32号 邮编：213003 电话：0519-86682843 传真：0519-86801389 邮箱：<a href="/xheditor/mailto:czerzhong@163.com">czerzhong@163.com</a> <br />Address:32 Xiheng Street, Zhonglou District, Changzhou 213003 Jiangsu, P.R. China <br />Tel: 86-519-86682843 Fax: 86-519-86801389 E-mail: <a href="/xheditor/mailto:czerzhong@163.com">czerzhong@163.com</a><br /><a href="http://www.miitbeian.gov.cn">苏ICP备 06015891号</a> 
+    <br/>
+    <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/11/180/0000/60359530/CA111800000603595300003.js' type='text/javascript'%3E%3C/script%3E"));</script>
+    </td>
+  </tr>
+</table>
+
+
+<div id="erzhong_wxin" class="erzhong_wxin"><a href="javascript:void(0)">微信<div class="erzhong_wxinh"></div></a></div>
+<div id="erzhong_wbo" class="erzhong_wbo"><a href="http://weibo.com/czerzhong" target="_blank">微博<div class="erzhong_wboh"></div></a></div>
+<a id="erzhong_top" href="javascript:void(0)"></a>
+
+</body>
+</html>

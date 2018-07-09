@@ -1,0 +1,836 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="keywords" content="毕节幼儿师范高等专科学校">
+	<meta name="description" content="毕节幼儿师范高等专科学校">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<title>
+	毕节幼儿师范高等专科学校
+	</title>
+	<link rel="stylesheet" type="text/css" href="/Public/Css/public.css" />
+	<link rel="stylesheet" type="text/css" href="/Public/Css/header.css" />
+	<link rel="stylesheet" type="text/css" href="/Public/Css/index.css" />
+	
+	
+	
+	
+	<script language="javascript" type="text/javascript" src="/Public/Js/jquery-1.7.2.js"></script>
+	<script language="javascript" type="text/javascript" src="/Public/Js/public.js"></script>
+	<script language="javascript" type="text/javascript" src="/Public/Js/scroll.js"></script>
+    
+	<script type="text/javascript">
+	//收藏本页代码 keleyi.com
+	jQuery.fn.addFavorite = function(l, h) {
+		return this.click(function() {
+		var t = jQuery(this);
+		if(jQuery.browser.msie) {
+		window.external.addFavorite(h, l);
+		} else if (jQuery.browser.mozilla || jQuery.browser.opera) {
+		t.attr("rel", "sidebar");
+		t.attr("title", l);
+		t.attr("href", h);
+		} else {
+		alert("请使用Ctrl+D将本页加入收藏夹！");
+		}
+		});
+		};
+		$(function(){
+		$('#keleyi').addFavorite(document.title,location.href);
+		});
+	
+	 function SetHome(obj,vrl){
+		try{
+		obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+		}
+		catch(e){
+		if(window.netscape) {
+		try {
+		netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+		}
+		catch (e) {
+		alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+		}
+		var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+		prefs.setCharPref('browser.startup.homepage',vrl);
+		}else{
+		alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。");
+		}
+		}
+		} 
+   </script>
+	</head>
+<body>
+	
+	
+	<div class="layout">
+        <div class="header">
+        	<div class="top">
+            	<div class="topC">
+                	<div class="date">
+                		今天是：
+						<span>
+		        			<a id="localtime"><script language="JavaScript" type="text/javascript">tick("Y年m月d日 星期D");</script></a>&nbsp;
+						</span>	
+					</div>
+                	<div class="weather">
+                		<!--iframe style="margin-top:2px;"  width="260" scrolling="no" height="20" frameborder="0" marginheight="0" marginwidth="0" src="http://cache.xixik.com.cn/10/bijie/" allowtransparency="true" name="weather_inc"></iframe-->
+						</iframe>
+					</div>
+                	<div class="login_register">
+                    	<a href="/User/login.html" title="登录">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<a href="/User/register.html" title="注册">注册</a>
+                    </div>
+                	<div class="smallmenu">
+                    	<a href="javascript:void(0)" onclick="SetHome(this,window.location)" title="设为首页">设为首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a target="_self" href="" title="加入收藏" id="keleyi">加入收藏</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="/Content/index/type/16.html" title="联系我们">联系我们</a>
+                    </div>
+                	<div class="clear"></div>
+                </div>
+            </div>
+        	<div class="logo">
+        		<!--<img alt="" src="/Public/Images/public/img/bjys_logo.png"/>-->
+				<embed src="/Public/Uploads/advert/20150706181101.swf" width="1024" height="138" autostart="true" loop="true" wmode="opaque" data-original="/Public/Uploads/advert/20150706181101.swf" style="/*position:absolute;z-index:1;*/"/>
+            	<div class="search">
+            		<form action="/Index/search.html" method="get">
+						<table border="0" height="29" cellpadding="0" cellspacing="0">
+	                    	<tr>
+	                        	<td><input class="search_txt" name="search" type="text" value="请输入关键字"  onclick="if(this.value=='请输入关键字') this.value=''"/></td>
+	                        		
+	                            <td>
+	                            	<a title="搜索"><input name="Submit" type="image" src="/Public/Images/public/bjys_search_btn.png" border="0" id="Submit" alt="搜索" class="surch_botton" /></a>
+	                            </td>
+	                        </tr>
+	                    </table>
+					<input type="hidden" name="__hash__" value="6666cd76f96956469e7be39d750cc7d9_23acb580cfc2744f4c626ea9f935c5d6" /></form>
+                </div>
+            </div>
+        	<div class="nav">
+            	<div class="navC">
+                    <ul>
+                    	<li class='nav_font'><a class='firstNav' href='http://www.gzbjyz.com/Index/index.html'>网站首页</a></li><li class='nav_line'><img alt='竖线' src='/Public/Images/public/bjys_nav_line.png' /></li><li class='nav_font' onmouseover='showhide(this,1,1)' onmouseout='showhide(this,1,2)' ><a class='firstNav' href='http://www.gzbjyz.com/Content/index/type/1.html'>幼专导航</a><!--<div class="nav_two" id="cnu_1" style="display:none;">--><ul style="margin-left:-55px;*margin-left:-100px;background:#fff;position:absolute;z-index:1002;display:none;" id="cmenu_1"><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/17.html'>学校概况</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/18.html'>领导班子</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/19.html'>机构设置</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/20.html'>专业设置</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/21.html'>一训三风</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/22.html'>校歌传唱</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/23.html'>优秀学子</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/24.html'>校园地图</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/25.html'>联系我们</a></li></ul></li><li class='nav_line'><img alt='竖线' src='/Public/Images/public/bjys_nav_line.png' /></li><li class='nav_font' onmouseover='showhide(this,2,1)' onmouseout='showhide(this,2,2)' ><a class='firstNav' href='http://www.gzbjyz.com/Content/index/type/2.html'>新闻资讯</a><!--<div class="nav_two" id="cnu_2" style="display:none;">--><ul style="margin-left:-55px;*margin-left:-100px;background:#fff;position:absolute;z-index:1002;display:none;" id="cmenu_2"><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/26.html'>校园动态</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/27.html'>通知公告</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/28.html'>视频点播</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/29.html'>媒体报道</a></li></ul></li><li class='nav_line'><img alt='竖线' src='/Public/Images/public/bjys_nav_line.png' /></li><li class='nav_font' onmouseover='showhide(this,3,1)' onmouseout='showhide(this,3,2)' ><a class='firstNav' href='http://www.gzbjyz.com/Content/index/type/3.html'>校务公开</a><!--<div class="nav_two" id="cnu_3" style="display:none;">--><ul style="margin-left:-55px;*margin-left:-100px;background:#fff;position:absolute;z-index:1002;display:none;" id="cmenu_3"><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/30.html'>党建工作</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/31.html'>团委工作</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/32.html'>思想学习</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/33.html'>工会工作</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/34.html'>后勤保障</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/35.html'>安全工作</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/36.html'>规章制度</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Download/index/type/37.html'>文件下载</a></li></ul></li><li class='nav_line'><img alt='竖线' src='/Public/Images/public/bjys_nav_line.png' /></li><li class='nav_font' onmouseover='showhide(this,4,1)' onmouseout='showhide(this,4,2)' ><a class='firstNav' href='http://www.gzbjyz.com/Content/index/type/4.html'>教育教学</a><!--<div class="nav_two" id="cnu_4" style="display:none;">--><ul style="margin-left:-55px;*margin-left:-100px;background:#fff;position:absolute;z-index:1002;display:none;" id="cmenu_4"><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/14.html'>教务动态</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/15.html'>特色专业</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/38.html'>课程设置</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/39.html'>教务工作</a></li><li><a href='/Score/index.html'>成绩查询</a></li><li><a href='/Course/index.html'>课表查询</a></li></ul></li><li class='nav_line'><img alt='竖线' src='/Public/Images/public/bjys_nav_line.png' /></li><li class='nav_font' onmouseover='showhide(this,5,1)' onmouseout='showhide(this,5,2)' ><a class='firstNav' href='http://www.gzbjyz.com/Content/index/type/5.html'>教学科研</a><!--<div class="nav_two" id="cnu_5" style="display:none;">--><ul style="margin-left:-55px;*margin-left:-100px;background:#fff;position:absolute;z-index:1002;display:none;" id="cmenu_5"><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/42.html'>教研动态</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/43.html'>科研项目</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/44.html'>科研成果</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/45.html'>精品课程</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/46.html'>专题讲座</a></li></ul></li><li class='nav_line'><img alt='竖线' src='/Public/Images/public/bjys_nav_line.png' /></li><li class='nav_font' onmouseover='showhide(this,6,1)' onmouseout='showhide(this,6,2)' ><a class='firstNav' href='http://www.gzbjyz.com/Content/index/type/6.html'>师资建设</a><!--<div class="nav_two" id="cnu_6" style="display:none;">--><ul style="margin-left:-55px;*margin-left:-100px;background:#fff;position:absolute;z-index:1002;display:none;" id="cmenu_6"><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/47.html'>师资队伍</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/48.html'>教师风采</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/49.html'>人才招聘</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/50.html'>职称评定</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/51.html'>职教名师</a></li></ul></li><li class='nav_line'><img alt='竖线' src='/Public/Images/public/bjys_nav_line.png' /></li><li class='nav_font' onmouseover='showhide(this,7,1)' onmouseout='showhide(this,7,2)' ><a class='firstNav' href='http://www.gzbjyz.com/Content/index/type/7.html'>招生就业</a><!--<div class="nav_two" id="cnu_7" style="display:none;">--><ul style="margin-left:-55px;*margin-left:-100px;background:#fff;position:absolute;z-index:1002;display:none;" id="cmenu_7"><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/52.html'>招生简章</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/53.html'>招生计划</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/54.html'>招生动态</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/55.html'>专业介绍</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/56.html'>报读指南</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/57.html'>招生解答</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/58.html'>就业动态</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/59.html'>就业指南</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/60.html'>在线报名</a></li></ul></li><li class='nav_line'><img alt='竖线' src='/Public/Images/public/bjys_nav_line.png' /></li><li class='nav_font' onmouseover='showhide(this,8,1)' onmouseout='showhide(this,8,2)' ><a class='firstNav' href='http://www.gzbjyz.com/Content/index/type/8.html'>特色办学</a><!--<div class="nav_two" id="cnu_8" style="display:none;">--><ul style="margin-left:-55px;*margin-left:-100px;background:#fff;position:absolute;z-index:1002;display:none;" id="cmenu_8"><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/61.html'>集团办学</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/62.html'>实习实训</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/63.html'>继续教育</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/64.html'>校企合作</a></li></ul></li><li class='nav_line'><img alt='竖线' src='/Public/Images/public/bjys_nav_line.png' /></li><li class='nav_font' onmouseover='showhide(this,9,1)' onmouseout='showhide(this,9,2)' ><a class='firstNav' href='http://www.gzbjyz.com/Content/index/type/9.html'>校园文化</a><!--<div class="nav_two" id="cnu_9" style="display:none;">--><ul style="margin-left:-55px;*margin-left:-100px;background:#fff;position:absolute;z-index:1002;display:none;" id="cmenu_9"><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/66.html'>核心文化</a></li><li class='li_a' onmouseover='this.className="bgs"' onmouseout='this.className="grays"'><a href='http://www.gzbjyz.com/Content/index/type/65.html'>学生社团</a></li></ul></li><li class='nav_line'><img alt='竖线' src='/Public/Images/public/bjys_nav_line.png' /></li><li class='nav_font' onmouseover='showhide(this,69,1)' onmouseout='showhide(this,69,2)' ><a class='firstNav' href='http://www.gzbjyz.com/Content/index/type/69.html'>五城同创</a><a style="display:none;" id="cmenu_69"></a></li><li class='nav_line'><img alt='竖线' src='/Public/Images/public/bjys_nav_line.png' /></li><li class='nav_font' onmouseover='showhide(this,12,1)' onmouseout='showhide(this,12,2)' ><a class='firstNav' href='http://www.gzbjyz.com/Content/index/type/12.html'>通知公告</a><a style="display:none;" id="cmenu_12"></a></li>
+						<li class="nav_line"><img alt="竖线" src="/Public/Images/public/bjys_nav_line.png"></li>
+						<li class="nav_font" onmouseover="showhide(this,11,1)" onmouseout="showhide(this,11,2)">
+							<a class="firstNav" href="/Guestbook/index.html">互动留言</a>
+						</li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>           
+            </div>
+        	<div class="banner">
+        		<!--<img alt="" src="/Public/Images/public/img/bjys_04.png"/>-->
+            	<!--图片轮播 开始-->
+				<script type="text/javascript" src="/Public/Js/jquery.js"></script>
+				<script type="text/javascript" src="/Public/Js/jquery_002.js"></script>
+				<style type="text/css">
+					.FocusPic{width:1024px;zoom:1;position:relative;z-index:1; overflow:hidden}
+					.FocusPic .content{overflow:hidden}
+					.FocusPic .changeDiv a{display:block;width:100%;height:100%;position:absolute;top:0px;left:0px;display:none;}
+					.FocusPic .title-bg,.FocusPic .title{position:absolute;left:0px;bottom:0;width:1024px;height:30px;line-height:30px;overflow:hidden}
+					.FocusPic .title-bg{/*background:#000;filter:alpha(opacity=50);opacity:0.5;*/}
+					.FocusPic .title a{display:block;padding-left:15px;color:#fff; font-size:14px;}
+					.FocusPic .change{bottom:4px;height:20px;margin-left:500px;*margin-left:500px;position:absolute;text-align:right;display:none;}
+					.FocusPic .change i {background:#fff;border-radius:6px;color:#FFF;cursor:pointer;font-family:Arial;font-size:0px;line-height:6px;margin-right:4px;padding:2px 6px; font-style:normal;width:2px; height:8px;display:inline-block;display:-moz-inline-stack;zoom:1;*display:inline;}
+					.FocusPic .change i.cur {background:#FF7700;}
+				</style>
+				
+			    <div class="Banner01">
+			    	<div id="by_top_flash">
+			    		<div id="flashcontent01">
+							<div class="FocusPic">
+								<div style="width: 1024px; height:308px;" class="content" id="main-slide">
+									<div class="changeDiv">
+							    	<ul class="rslides f426x240" style="padding:0px;margin:0px;">
+										<li><a target="_blank" href=""><img src="/Public/Uploads/advert/20180316092957.jpg" data-original="/Public/Uploads/advert/20180316092957.jpg" width="1024" height="308" border="0"/></a></li><li><a target="_blank" href=""><img src="/Public/Uploads/advert/20170503164221.jpg" data-original="/Public/Uploads/advert/20170503164221.jpg" width="1024" height="308" border="0"/></a></li><li><a target="_blank" href=""><img src="/Public/Uploads/advert/20150814102949.jpg" data-original="/Public/Uploads/advert/20150814102949.jpg" width="1024" height="308" border="0"/></a></li><li><a target="_blank" href="http://www.baidu.com"><img src="/Public/Uploads/advert/20150814102935.jpg" data-original="/Public/Uploads/advert/20150814102935.jpg" width="1024" height="308" border="0"/></a></li><li><a target="_blank" href=""><img src="/Public/Uploads/advert/20150814102920.jpg" data-original="/Public/Uploads/advert/20150814102920.jpg" width="1024" height="308" border="0"/></a></li>	
+									</ul>
+									</div>
+								</div>						 						 
+								<script type="text/javascript">
+									new slide("#main-slide","cur",1024,308,1);
+								</script>
+								 
+							</div>
+			    		</div>
+					</div>
+			    </div>
+			    <!--banner结束-->
+				
+				<div class="welcome">——欢迎访问毕节幼儿师范高等专科学校官网！</div>
+            </div>
+        </div>
+        <div class="content">
+			<div style="width:1024px;height:100%;margin:0px auto;padding:0px;">
+				<div class="content1">
+    	<div class="pic_news">
+    		<!--<img alt="" src="/Public/Images/public/img/bjys_07.png"/>-->
+			<script type="text/javascript" src="/Public/Js/swfobject.js"></script>
+			<script language="javascript" type="text/javascript">
+					var focus_width  = 202;
+					var focus_height = 182;
+					var text_height  = 0;
+					var swf_height   = focus_height + text_height;
+					var pics         = '/Public/Uploads/image/20180525/20180525030715_42700.jpg|/Public/Uploads/image/20180511/20180511064204_76294.jpg|/Public/Uploads/image/20180511/20180511063542_26932.jpg|/Public/Uploads/image/20180523/20180523013333_34178.jpg|/Public/Uploads/image/20180501/20180501031719_18706.png';
+					var links        = '/Content/details/id/600.html|/Content/details/id/596.html|/Content/details/id/595.html|/Content/details/id/598.html|/Content/details/id/584.html';
+					var texts        = '贵州省高校思想政治教育工作检查组到我校检查工作|我校2018年第三期三德讲堂 德高为师·身正为范|毕节幼专五四青年节“不忘初心跟党走”新团员入团仪式|中共毕节幼儿师范高等专科学校机关委员会 第一届一次党员代表大会召开|开展“校农合作”，助力脱贫攻坚';
+					var PspperPicViewer = '/Public/Images/PspperPicViewer.swf';
+					document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">');
+					document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="'+PspperPicViewer+'"><param name="quality" value="high"><param name="bgcolor" value="#fff">');
+					document.write('<param name="menu" value="false"><param name="wmode" value="opaque">');
+					document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+					document.write('<embed src="'+PspperPicViewer+'" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" bgcolor="#fff"quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+					document.write('</object>');
+			</script>
+		</div>
+			
+    	<div class="font_news">
+        	<div class="font_news_tit">                    	
+				<script language="javascript" type="text/javascript">
+                    function news_notice(obj, id, num) {
+                        $(".font_news_tit .news_notice_tit li").children().attr("style", "");
+                        obj.style.color = "#fff";
+                        obj.style.backgroundImage = "url(/Public/Images/public/bjys_card.png)";
+                        obj.style.cackgroundRepeat ="no-repeat";
+                        $(".details_conL3_conC").hide();
+                        $("#" + id).show();
+						$(".new_more a").attr("href","/Content/index/type/" + num + ".html");
+                    }
+                </script>
+            	<div class="news_notice_tit">
+                	<ul>
+                        <li><a href="JavaScript:void(0);" onmousemove="news_notice(this,'NNone',2);" style="background-image:url(/Public/Images/public/bjys_card.png); background-repeat:no-repeat; color:#fff;" title="新闻资讯">新闻资讯</a></li>
+                        <!--<li><a href="JavaScript:void(0);" onmousemove="news_notice(this,'NNtwo',12);" title="通知公告">通知公告</a></li>-->
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="more new_more">
+                	<a href="/Content/index/type/2.html" title="更多">更多&gt;&gt;</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        	<div class="font_news_con">
+            	<div id="NNone" class="details_conL3_conC">                        	
+                    <ul>
+                    	<li>
+                            <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                            <div class="news_title">
+                                <A href="/Content/details/id/600.html" style="color:#000000">贵州省高校思想政治教育工作检查组到我校检查工作</A>
+                            </div>
+                            <div class="list_date">[2018-05-24]</div>
+                            <div class="clear"></div>
+                        </li><li>
+                            <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                            <div class="news_title">
+                                <A href="/Content/details/id/596.html" style="color:#000">我校2018年第三期三德讲堂 德高为师·身正为范</A>
+                            </div>
+                            <div class="list_date">[2018-05-07]</div>
+                            <div class="clear"></div>
+                        </li><li>
+                            <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                            <div class="news_title">
+                                <A href="/Content/details/id/595.html" style="color:#000">毕节幼专五四青年节“不忘初心跟党走”新团员入团仪式</A>
+                            </div>
+                            <div class="list_date">[2018-05-04]</div>
+                            <div class="clear"></div>
+                        </li><li>
+                            <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                            <div class="news_title">
+                                <A href="/Content/details/id/598.html" style="color:#f00">中共毕节幼儿师范高等专科学校机关委员会 第一届一次党员代表大会召开</A>
+                            </div>
+                            <div class="list_date">[2018-05-04]</div>
+                            <div class="clear"></div>
+                        </li><li>
+                            <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                            <div class="news_title">
+                                <A href="/Content/details/id/584.html" style="color:#000000">开展“校农合作”，助力脱贫攻坚</A>
+                            </div>
+                            <div class="list_date">[2018-04-22]</div>
+                            <div class="clear"></div>
+                        </li><li>
+                            <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                            <div class="news_title">
+                                <A href="/Content/details/id/594.html" style="color:#000">我校2018年第二期三德讲堂 依道而行·以德处世——如何做一个有道德之人</A>
+                            </div>
+                            <div class="list_date">[2018-04-17]</div>
+                            <div class="clear"></div>
+                        </li>                       
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div id="NNtwo" class="details_conL3_conC" style="display: none;">                       	
+                    <ul>
+                    	<li>
+                            <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                            <div class="notice_title">
+                                <A href="/Content/details/id/545.html" style="color:#000000">毕节幼儿师范高等专科学校2018年分类考试（综合评价）招生艺术类专业职业技能测试须知</A>
+                            </div>
+                            <div class="list_date">[2018-03-09]</div>
+                            <div class="clear"></div>
+                        </li><li>
+                            <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                            <div class="notice_title">
+                                <A href="/Content/details/id/535.html" style="color:#f00">毕节幼儿师范高等专科学校 美术设计类专业实训室建设方案征集公告</A>
+                            </div>
+                            <div class="list_date">[2018-02-23]</div>
+                            <div class="clear"></div>
+                        </li><li>
+                            <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                            <div class="notice_title">
+                                <A href="/Content/details/id/533.html" style="color:#000000">毕节幼儿师范高等专科学校 2018年分类考试（高职综合评价）招生章程</A>
+                            </div>
+                            <div class="list_date">[2018-02-07]</div>
+                            <div class="clear"></div>
+                        </li><li>
+                            <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                            <div class="notice_title">
+                                <A href="/Content/details/id/531.html" style="color:#000000">毕节幼儿师范高等专科学校2018年中职推优招生面试通知</A>
+                            </div>
+                            <div class="list_date">[2018-01-21]</div>
+                            <div class="clear"></div>
+                        </li><li>
+                            <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                            <div class="notice_title">
+                                <A href="/Content/details/id/445.html" style="color:#ed008c">函授学员摄像通知</A>
+                            </div>
+                            <div class="list_date">[2017-06-06]</div>
+                            <div class="clear"></div>
+                        </li><li>
+                            <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                            <div class="notice_title">
+                                <A href="/Content/details/id/444.html" style="color:#000000">毕节幼儿师范高等专科学校 2017年引进高层次人才面试成绩公示</A>
+                            </div>
+                            <div class="list_date">[2017-06-01]</div>
+                            <div class="clear"></div>
+                        </li>                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    	<div class="JXKY">
+        	<div class="JXKY_tit" title="通知公告">
+            	<a href="/Content/index/type/12.html" title="更多">更多&gt;&gt;</a>
+            </div>
+        	<div class="JXKY_con">
+            	<ul>
+            		<li>
+                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                        <div class="JXKY_title">
+                            <A href="/Content/details/id/545.html" style="color:#000000">毕节幼儿师范高等专科学校2018年分类考试（综合评价）招生艺术类专业职业技能测试须知</A>
+                        </div>
+                        <div class="list_date">[2018-03-09]</div>
+                        <div class="clear"></div>
+                    </li><li>
+                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                        <div class="JXKY_title">
+                            <A href="/Content/details/id/535.html" style="color:#f00">毕节幼儿师范高等专科学校 美术设计类专业实训室建设方案征集公告</A>
+                        </div>
+                        <div class="list_date">[2018-02-23]</div>
+                        <div class="clear"></div>
+                    </li><li>
+                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                        <div class="JXKY_title">
+                            <A href="/Content/details/id/533.html" style="color:#000000">毕节幼儿师范高等专科学校 2018年分类考试（高职综合评价）招生章程</A>
+                        </div>
+                        <div class="list_date">[2018-02-07]</div>
+                        <div class="clear"></div>
+                    </li><li>
+                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                        <div class="JXKY_title">
+                            <A href="/Content/details/id/531.html" style="color:#000000">毕节幼儿师范高等专科学校2018年中职推优招生面试通知</A>
+                        </div>
+                        <div class="list_date">[2018-01-21]</div>
+                        <div class="clear"></div>
+                    </li><li>
+                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                        <div class="JXKY_title">
+                            <A href="/Content/details/id/445.html" style="color:#ed008c">函授学员摄像通知</A>
+                        </div>
+                        <div class="list_date">[2017-06-06]</div>
+                        <div class="clear"></div>
+                    </li><li>
+                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                        <div class="JXKY_title">
+                            <A href="/Content/details/id/444.html" style="color:#000000">毕节幼儿师范高等专科学校 2017年引进高层次人才面试成绩公示</A>
+                        </div>
+                        <div class="list_date">[2017-06-01]</div>
+                        <div class="clear"></div>
+                    </li>                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    	<div class="functionBtn">
+        	<div class="mailbox">
+            	<a href="/Mailbox/index.html" title="校长信箱"><img alt="校长信箱" src="/Public/Images/public/bjys_XZXX_btn.png" border="0" /></a>
+            </div>
+        	<div class="online_registration">
+            	<a href="/OnlineReg/index.html" title="在线报名"><img alt="在线报名" src="/Public/Images/public/bjys_ZXBM_btn.png" border="0" /></a>
+            </div>
+        	<div class="resource_center">
+            	<a href="/Score/index.html" title="成绩查询"><img alt="成绩查询" src="/Public/Images/public/bjys_ZYZX_btn.png" border="0" /></a>
+            </div>
+        	<div class="leave_words">
+            	<a href="/Course/index.html" title="课表查询"><img alt="课表查询" src="/Public/Images/public/bjys_HDLY_btn.png" border="0" /></a>
+            </div>
+        </div>
+    	<div class="clear"></div>
+    </div>
+	<div class="content2">
+    	<div class="JYJX">
+        	<div class="JYJX_tit" title="教育教学">
+            	<a href="/Content/index/type/4.html" title="更多">更多&gt;&gt;</a>
+            </div>
+        	<div class="JYJX_con">
+            	<ul>
+            		<li>
+                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                        <div class="JYJX_title">
+                            <A href="/Content/details/id/436.html" style="color:#2f3192">教育部专家李晓艳教授莅临我校指导思政教学工作</A>
+                        </div>
+                        <div class="list_date">[2017-05-24]</div>
+                        <div class="clear"></div>
+                    </li><li>
+                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                        <div class="JYJX_title">
+                            <A href="/Content/details/id/424.html" style="color:#000000">教务科组织召开2015级大专班学生见习实习动员大会</A>
+                        </div>
+                        <div class="list_date">[2017-05-05]</div>
+                        <div class="clear"></div>
+                    </li><li>
+                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                        <div class="JYJX_title">
+                            <A href="/Content/details/id/214.html" style="color:#000000">冯维祥副校长到省教育厅参加全省高职高专开放实训基地会议</A>
+                        </div>
+                        <div class="list_date">[2016-01-07]</div>
+                        <div class="clear"></div>
+                    </li><li>
+                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                        <div class="JYJX_title">
+                            <A href="/Content/details/id/176.html" style="color:#00f">我校二十三名教师在幼儿园上汇报课</A>
+                        </div>
+                        <div class="list_date">[2015-12-16]</div>
+                        <div class="clear"></div>
+                    </li><li>
+                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                        <div class="JYJX_title">
+                            <A href="/Content/details/id/98.html" style="color:#000000">本学期第三次教务科工作会议顺利召开</A>
+                        </div>
+                        <div class="list_date">[2015-10-17]</div>
+                        <div class="clear"></div>
+                    </li><li>
+                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                        <div class="JYJX_title">
+                            <A href="/Content/details/id/97.html" style="color:#000000">本学期第二次教务科工作会议圆满召开</A>
+                        </div>
+                        <div class="list_date">[2015-10-17]</div>
+                        <div class="clear"></div>
+                    </li><li>
+                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+                        <div class="JYJX_title">
+                            <A href="/Content/details/id/96.html" style="color:#000000">幼儿园跟岗调研学习活动启动实施</A>
+                        </div>
+                        <div class="list_date">[2015-10-17]</div>
+                        <div class="clear"></div>
+                    </li>                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+		<!--教学科研     start-->
+    	<div class="XWGK_ZSJY">
+        	<div class="XWGK_ZSJY_tit">                    	
+				<script language="javascript" type="text/javascript">
+                    function xwgk_zsjy(obj, id, num) {
+                        $(".XWGK_ZSJY_tit .XW_ZS_tit li").children().attr("style", "");
+                        obj.style.color = "#fff";
+                        obj.style.backgroundImage = "url(/Public/Images/public/bjys_card.png)";
+                        obj.style.cackgroundRepeat ="no-repeat";
+                        $(".details_conL4_conC").hide();
+                        $("#" + id).show();
+						$(".xwzs_more a").attr("href","/Content/index/type/" + num + ".html");
+                    }
+                </script>
+            	<div class="XW_ZS_tit">
+                	<ul>
+                        <li><a href="JavaScript:void(0);" onmousemove="xwgk_zsjy(this,'XZone',5);" style="background-image:url(/Public/Images/public/bjys_card.png); background-repeat:no-repeat; color:#fff;" title="教学科研">教学科研</a></li>
+                        <!--<li><a href="JavaScript:void(0);" onmousemove="xwgk_zsjy(this,'XZtwo',7);" title="招生就业">招生就业</a></li>-->
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="more xwzs_more">
+                	<a href="/Content/index/type/3.html" title="更多">更多&gt;&gt;</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        	<div class="XWGK_ZSJY_con">
+            	<div id="XZone" class="details_conL4_conC">
+                	<div class="XWGK_L">
+                		<A href="/Content/details/id/585.html"><img alt="毕节市社科联征文活动通知" src="/Public/Uploads/image/20180503/20180503013630_45826.png" width="182" height="153" border="0"/></A>                    </div>
+                	<div class="XWGK_R">
+                        <ul>
+                        	<li>
+		                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+		                        <div class="XWGK_title">
+		                            <A href="/Content/details/id/597.html" style="color:#000000">科研喜讯</A>
+		                        </div>
+		                        <div class="list_date">[2018-05-16]</div>
+		                        <div class="clear"></div>
+		                    </li><li>
+		                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+		                        <div class="XWGK_title">
+		                            <A href="/Content/details/id/585.html" style="color:#000000">毕节市社科联征文活动通知</A>
+		                        </div>
+		                        <div class="list_date">[2018-05-03]</div>
+		                        <div class="clear"></div>
+		                    </li><li>
+		                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+		                        <div class="XWGK_title">
+		                            <A href="/Content/details/id/561.html" style="color:#000000">关于组织申报2018年贵州省教育科学规划课题的通知</A>
+		                        </div>
+		                        <div class="list_date">[2018-03-22]</div>
+		                        <div class="clear"></div>
+		                    </li><li>
+		                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+		                        <div class="XWGK_title">
+		                            <A href="/Content/details/id/554.html" style="color:#000000">关于组织申报2018年度贵州省教育厅高等学校人文社会科学研究项目的通知</A>
+		                        </div>
+		                        <div class="list_date">[2018-03-15]</div>
+		                        <div class="clear"></div>
+		                    </li><li>
+		                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+		                        <div class="XWGK_title">
+		                            <A href="/Content/details/id/552.html" style="color:#000000">关于组织2018年基础教育国家级教学成果奖申报工作的通知</A>
+		                        </div>
+		                        <div class="list_date">[2018-03-15]</div>
+		                        <div class="clear"></div>
+		                    </li><li>
+		                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+		                        <div class="XWGK_title">
+		                            <A href="/Content/details/id/543.html" style="color:#000000">关于组织申报2018年度毕节市社科理论研究课题的通知</A>
+		                        </div>
+		                        <div class="list_date">[2018-03-09]</div>
+		                        <div class="clear"></div>
+		                    </li><li>
+		                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+		                        <div class="XWGK_title">
+		                            <A href="/Content/details/id/540.html" style="color:#000000">省教育厅办公室关于组织参加教育部高校人文社科研究思想政治工作有关项目申报工作的通知</A>
+		                        </div>
+		                        <div class="list_date">[2018-03-05]</div>
+		                        <div class="clear"></div>
+		                    </li>                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                	<div class="clear"></div>                            
+                </div>
+                <div id="XZtwo" class="details_conL4_conC" style="display: none;">                        	
+                	<div class="ZSJY_L">
+                		<A href="/Content/details/id/602.html"><img alt="贵州省教育厅关于印发贵州省2018年农村义务教育阶段学校教师特设岗位计划招聘办法的通知" src="/Public/Uploads/image/20180526/20180526034231_61893.jpg" width="182" height="153" border="0"/></A>                    </div>
+                	<div class="ZSJY_R">
+                        <ul>
+                        	<li>
+		                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+		                        <div class="ZSJY_title">
+		                            <A href="/Content/details/id/602.html" style="color:#000000">贵州省教育厅关于印发贵州省2018年农村义务教育阶段学校教师特设岗位计划招聘办法的通知</A>
+		                        </div>
+		                        <div class="list_date">[2018-05-26]</div>
+		                        <div class="clear"></div>
+		                    </li><li>
+		                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+		                        <div class="ZSJY_title">
+		                            <A href="/Content/details/id/601.html" style="color:#000000">关于印发《贵州省2018年农村义务教育阶段学校教师特设岗位计划实施方案》的通知</A>
+		                        </div>
+		                        <div class="list_date">[2018-05-26]</div>
+		                        <div class="clear"></div>
+		                    </li><li>
+		                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+		                        <div class="ZSJY_title">
+		                            <A href="/Content/details/id/587.html" style="color:#000000">高校毕业生就业创业政策百问（2018年版）</A>
+		                        </div>
+		                        <div class="list_date">[2018-05-09]</div>
+		                        <div class="clear"></div>
+		                    </li><li>
+		                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+		                        <div class="ZSJY_title">
+		                            <A href="/Content/details/id/586.html" style="color:#000000">省教育厅办公室关于举办贵州省2018年 普通高校毕业生就业网上招聘周活动的通知</A>
+		                        </div>
+		                        <div class="list_date">[2018-05-09]</div>
+		                        <div class="clear"></div>
+		                    </li><li>
+		                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+		                        <div class="ZSJY_title">
+		                            <A href="/Content/details/id/581.html" style="color:#000000">招考信息</A>
+		                        </div>
+		                        <div class="list_date">[2018-04-19]</div>
+		                        <div class="clear"></div>
+		                    </li><li>
+		                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+		                        <div class="ZSJY_title">
+		                            <A href="/Content/details/id/580.html" style="color:#000000">黔南州2018年统一招聘州直事业单位工作人员140人简章(4月23日至27日报名)</A>
+		                        </div>
+		                        <div class="list_date">[2018-04-19]</div>
+		                        <div class="clear"></div>
+		                    </li><li>
+		                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+		                        <div class="ZSJY_title">
+		                            <A href="/Content/details/id/579.html" style="color:#000000">毕节幼专关于2018年第二次分类考试招生高中毕业生职业技能测试的通知</A>
+		                        </div>
+		                        <div class="list_date">[2018-04-17]</div>
+		                        <div class="clear"></div>
+		                    </li>                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                	<div class="clear"></div>    
+                </div>                    
+            </div>
+        </div>
+		<!--教学科研     end-->
+    	<div class="video">
+        	<div class="video_tit" title="视频中心">
+            	<a href="/Video/index/type/13.html" title="更多">更多&gt;&gt;</a>
+            </div>
+        	<div class="video_con">
+        		<!--<img alt="" src="/Public/Images/public/img/bjys_31.png"/>-->
+				<object class id="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="211" height="164">
+					<param name="movie" value="/Public/Images/flvplayer.swf">
+					<param name="quality" value="high">
+					<param name="allowFullScreen" value="true">
+					<param name="FlashVars" value="vcastr_file=http://www.gzbjyz.com/Public/Uploads/video/20151016083638.flv&BufferTime=3&IsAutoPlay=0">
+					<embed src="/Public/Images/flvplayer.swf" allowfullscreen="true" flashvars="vcastr_file=http://www.gzbjyz.com/Public/Uploads/video/20151016083638.flv&IsAutoPlay=0" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="211" height="164"></embed>
+				</object>
+			</div>
+        </div>
+    	<div class="clear"></div>
+	</div>	
+	
+	<div class="content4">
+		<!--校务公开-->
+		<div class="xwgk">
+			<div class="xwgk_tit">
+				<a href="/Content/index/type/3.html" title="更多">更多&gt;&gt;</a>
+			</div>
+			<div class="xwgk_con">
+				<div class="xwgk_tp">
+            		<A href="/Content/details/id/425.html"><img alt="我校开展消防安全知识讲座及灭火演练活动" src="http://www.gzbjyz.com/Public/Uploads/image/20170519/20170519030133_93960.jpg" width="120" height="150" border="0"/></A>                </div>
+            	<div class="xwgk_list">
+                    <ul>
+                    	<li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="xwgk_title">
+	                            <A href="/Content/details/id/550.html" style="color:#000000">毕节幼儿师范高等专科学校学生申诉处理办法</A>
+	                        </div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="xwgk_title">
+	                            <A href="/Content/details/id/548.html" style="color:#000000">毕节幼儿师范高等专科学校学生纪律处分办法</A>
+	                        </div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="xwgk_title">
+	                            <A href="/Content/details/id/547.html" style="color:#000000">毕节幼儿师范高等专科学校学生管理规定</A>
+	                        </div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="xwgk_title">
+	                            <A href="/Content/details/id/546.html" style="color:#000000">毕节幼儿师范高等专科学校学籍管理办法</A>
+	                        </div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="xwgk_title">
+	                            <A href="/Content/details/id/425.html" style="color:#000000">我校开展消防安全知识讲座及灭火演练活动</A>
+	                        </div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="xwgk_title">
+	                            <A href="/Content/details/id/389.html" style="color:#f00">2017年政府工作报告【全文】</A>
+	                        </div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="xwgk_title">
+	                            <A href="/Content/details/id/378.html" style="color:#f00">毕节幼儿师范高等专科学校2017年招聘编外合同制人员方案</A>
+	                        </div>
+	                        <div class="clear"></div>
+	                    </li>                    </ul>
+                    <div class="clear"></div>
+                </div>
+            	<div class="clear"></div> 
+			</div>
+		</div>
+		<!--招生就业-->
+		<div class="zsjy">
+			<div class="zsjy_tit">
+				<a href="/Content/index/type/7.html" title="更多">更多&gt;&gt;</a>
+			</div>
+			<div class="zsjy_con">
+				<div class="zsjy_list">
+	            	<ul>
+	            		<li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="zsjy_title">
+	                            <A href="/Content/details/id/602.html" style="color:#000000">贵州省教育厅关于印发贵州省2018年农村义务教育阶段学校教师特设岗位计划招聘办法的通知</A>
+	                        </div>
+	                        <div class="list_date">[2018-05-26]</div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="zsjy_title">
+	                            <A href="/Content/details/id/601.html" style="color:#000000">关于印发《贵州省2018年农村义务教育阶段学校教师特设岗位计划实施方案》的通知</A>
+	                        </div>
+	                        <div class="list_date">[2018-05-26]</div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="zsjy_title">
+	                            <A href="/Content/details/id/587.html" style="color:#000000">高校毕业生就业创业政策百问（2018年版）</A>
+	                        </div>
+	                        <div class="list_date">[2018-05-09]</div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="zsjy_title">
+	                            <A href="/Content/details/id/586.html" style="color:#000000">省教育厅办公室关于举办贵州省2018年 普通高校毕业生就业网上招聘周活动的通知</A>
+	                        </div>
+	                        <div class="list_date">[2018-05-09]</div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="zsjy_title">
+	                            <A href="/Content/details/id/581.html" style="color:#000000">招考信息</A>
+	                        </div>
+	                        <div class="list_date">[2018-04-19]</div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="zsjy_title">
+	                            <A href="/Content/details/id/580.html" style="color:#000000">黔南州2018年统一招聘州直事业单位工作人员140人简章(4月23日至27日报名)</A>
+	                        </div>
+	                        <div class="list_date">[2018-04-19]</div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="zsjy_title">
+	                            <A href="/Content/details/id/579.html" style="color:#000000">毕节幼专关于2018年第二次分类考试招生高中毕业生职业技能测试的通知</A>
+	                        </div>
+	                        <div class="list_date">[2018-04-17]</div>
+	                        <div class="clear"></div>
+	                    </li>	                </ul>
+	                <div class="clear"></div>
+	            </div>
+			</div>
+		</div>
+		<!--特色办学-->
+		<div class="tsbx">
+			<div class="tsbx_tit">
+				<a href="/Content/index/type/8.html" title="更多">更多&gt;&gt;</a>
+			</div>
+			<div class="tsbx_con">
+				<div class="tsbx_list">
+	            	<ul>
+	            		<li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="tsbx_title">
+	                            <A href="/Content/details/id/382.html" style="color:#f00">喜 讯</A>
+	                        </div>
+	                        <div class="list_date">[2017-03-03]</div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="tsbx_title">
+	                            <A href="/Content/details/id/263.html" style="color:#000000">素质教育篇</A>
+	                        </div>
+	                        <div class="list_date">[2016-03-30]</div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="tsbx_title">
+	                            <A href="/Content/details/id/260.html" style="color:#000000">特色办学篇</A>
+	                        </div>
+	                        <div class="list_date">[2016-03-29]</div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="tsbx_title">
+	                            <A href="/Content/details/id/212.html" style="color:#00f">我校合唱节目在2015年贵省第五届中小学生 艺术展演暨新春晚会上精彩亮相</A>
+	                        </div>
+	                        <div class="list_date">[2015-12-31]</div>
+	                        <div class="clear"></div>
+	                    </li><li>
+	                        <div class="list_pic"><img alt="" src="/Public/Images/public/bjys_list_pic.png"/></div>
+	                        <div class="tsbx_title">
+	                            <A href="/Content/details/id/22.html" style="color:#000000">学前教师教育集团“五项全能大赛”在工校举行</A>
+	                        </div>
+	                        <div class="list_date">[2015-07-16]</div>
+	                        <div class="clear"></div>
+	                    </li>	                </ul>
+	                <div class="clear"></div>
+	            </div>
+			</div>
+		</div>
+	</div>	
+		
+	<div class="content3">	
+    	<!-----专题栏目----->
+		<div class="ztlm">
+			<div class="ztlm_tit"><span>专题栏目</span></div>
+			<div class="ztlm_con">
+				<ul>
+					<li>
+					<a title="职业院校管理水平提升行动计划" href="http://www.gzbjyz.com" target="_blank">
+						<img alt="职业院校管理水平提升行动计划" data-original="/Public/Uploads/friendlink/20170313170923.png" src="/Public/Uploads/friendlink/20170313170923.png" width="190" height="54"/>
+					</a>
+					</li><li>
+					<a title="创建平安校园" href="http://www.baidu.com" target="_blank">
+						<img alt="创建平安校园" data-original="/Public/Uploads/friendlink/20150703151104.png" src="/Public/Uploads/friendlink/20150703151104.png" width="190" height="54"/>
+					</a>
+					</li><li>
+					<a title="党的群众路线" href="" target="_blank">
+						<img alt="党的群众路线" data-original="/Public/Uploads/friendlink/20150703151127.png" src="/Public/Uploads/friendlink/20150703151127.png" width="190" height="54"/>
+					</a>
+					</li><li>
+					<a title="精品课程" href="" target="_blank">
+						<img alt="精品课程" data-original="/Public/Uploads/friendlink/20150703151140.png" src="/Public/Uploads/friendlink/20150703151140.png" width="190" height="54"/>
+					</a>
+					</li>				</ul>
+			</div>
+			<div class="ztlm_more">
+				<a href="/OfficeOA/index.html"><img src="/Public/Images/public/ztlm_more.png" alt="更多"></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+
+
+
+			</div>
+        </div>
+        <div class="footer">
+        	<div class="friendlink">
+        		<div class="frindlink_content"><select name="jumpMenu1" id="jumpMenu1" onchange="friendlinkjump(this)"><option>--教师资源网站--</option><option value="http://www.baidu.com">重庆大学</option><option value="http://www.baidu.com">友情链接6</option><option value="http://www.baidu.com">友情链接1</option></select><select name="jumpMenu2" id="jumpMenu2" onchange="friendlinkjump(this)"><option>--兄弟学校网站--</option><option value="http://www.baidu.com">友情链接5</option></select><select name="jumpMenu3" id="jumpMenu3" onchange="friendlinkjump(this)"><option>--教育博客链接--</option><option value="http://www.baidu.com">友情链接4</option></select><select name="jumpMenu4" id="jumpMenu4" onchange="friendlinkjump(this)"><option>--教师主页链接--</option><option value="http://www.baidu.com">友情链接3</option></select><!--<div class="frindlink_bom"><div class="yqlj_img" id="jtmiens1" style="overflow:hidden; width:100%;"><table border="0" cellspacing="0" cellpadding="0" style=" margin-top:-2px;"><tr><td><div id="jtmiens2"><table width="100%" border="0" cellspacing="0" cellpadding="0"style=" margin-top:0px;"><tr class="friendlink_img"><td><a href="http://www.baidu.com" target="_blank"><img name="friendlink" alt="" src="/Public/Uploads/friendlink/20150505164331.png"></a></td><td><a href="http://www.baidu.com" target="_blank"><img name="friendlink" alt="" src="/Public/Uploads/friendlink/20141201133121.png"></a></td><td><a href="http://www.baidu.com" target="_blank"><img name="friendlink" alt="" src="/Public/Uploads/friendlink/20141201133101.png"></a></td><td><a href="http://www.baidu.com" target="_blank"><img name="friendlink" alt="" src="/Public/Uploads/friendlink/20141201133048.png"></a></td><td><a href="http://www.baidu.com" target="_blank"><img name="friendlink" alt="" src="/Public/Uploads/friendlink/20141201133030.png"></a></td><td><a href="http://www.baidu.com" target="_blank"><img name="friendlink" alt="" src="/Public/Uploads/friendlink/20141201133009.png"></a></td><td><a href="http://www.baidu.com" target="_blank"><img name="friendlink" alt="" src="/Public/Uploads/friendlink/20141201132950.png"></a></td></tr></table></div></td><td><div id="jtmiens3"></div></td></tr></table></div></div> -->	</div><script language="javascript" type="text/javascript">picturescroll('jtmiens',50,1);</script>
+            </div>
+            <div class="footerC">
+            	<div class="foot_logo"><img alt="" src="/Public/Images/public/bjys_foot_logo.png"/></div>
+            	<div class="copyright">
+                	Copyright @ 2015-2025 毕节幼儿师范高等专科学校 All Rights Reserved&nbsp;&nbsp;
+			                    黔ICP备:17000257号<br/>
+			                    电话：0857-7627534&nbsp;&nbsp;
+			                    邮箱：bjyesfgdzkxx@163.com&nbsp;&nbsp;
+			                    地址：毕节市金海湖新区职教城<br/>
+			                    技术支持：<a href="http://www.cqhaojue.com" target="_blank">豪崛科技</a>&nbsp;&nbsp;
+			                    建议使用IE7.0及以上浏览器 1024*768的分辨率浏览本站
+                </div>
+            	<div class="clear"></div>
+            </div>
+        </div>
+    </div>
+	
+	
+				
+
+</body>
+</html>

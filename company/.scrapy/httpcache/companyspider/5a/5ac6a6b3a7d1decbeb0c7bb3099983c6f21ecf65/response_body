@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><title>佳木斯五中</title><script src="js/jquery-1.7.2.min.js" type="text/javascript"> </script><script src="js/jcarousellite_1.0.1c4.js" type="text/javascript"> </script><script src="js/jquery.textshadow.js" type="text/javascript"> </script><script src="js/jquery.showcase.2.0.js" type="text/javascript"> </script><script type="text/javascript">
+$(document).ready(function() {
+
+	$("#navigation ul li").hover(function() {
+		$(this).addClass("other").textShadow();
+	}, function() {
+		$(this).removeClass("other");
+	});
+	$("#navigation ul li#home").hover(function() {
+			$(this).addClass("home");
+		}, function() {
+			$(this).removeClass("home");
+		});
+    $("#showcase").showcase({
+		
+        animation: {
+            type: "fade"
+        },
+        titleBar: {
+            autoHide: true,
+            cssClass: "focusimage_titleBar",
+            css:{
+                height:"25px",
+                opacity: "0.76"
+            }
+            },
+        //navigator: { autoHide: true },
+        navigator: {
+            position:"top-right",
+            orientation:"vertical",
+            showNumber:true,
+            item: {
+                css: {
+                    width: "17px",
+                    height:"14px",
+                    "line-height": "13px",
+                    backgroundColor: "#EEDA2D",
+                    borderColor: "#E1CD23",
+                    "font-weight": "normal"
+                },
+                cssHover: {
+                    backgroundColor: "#F4F376",
+                    borderColor: "#EBE95F"
+                },
+                cssSelected: {
+                    backgroundColor: "#F4973C",
+                    borderColor: "#EC711F",
+                    "font-weight": "bold"
+                }
+            }
+		
+        }
+    });
+$("#piccase").showcase({
+        // css:{ width: "630px", height: "180px" },
+        animation: {
+            type: "fade"
+        },
+        titleBar: {
+            autoHide: true,
+            cssClass: "focusimage_titleBar",
+            css:{
+                height:"25px",
+                opacity: "0.76"
+            }
+            },
+        // navigator: { autoHide: true },
+        navigator: {
+            position:"top-right",
+            orientation:"horizontal",
+            showNumber:false,
+            item: {
+                css: {
+                    width: "10px",
+                    height:"10px",
+                    "line-height": "13px",
+                    backgroundColor: "#EEDA2D",
+                    borderColor: "#E1CD23",
+                    "font-weight": "normal"
+                },
+                cssHover: {
+                    backgroundColor: "#F4F376",
+                    borderColor: "#EBE95F"
+                },
+                cssSelected: {
+                    backgroundColor: "#F4973C",
+                    borderColor: "#EC711F",
+                    "font-weight": "bold"
+                }
+            }
+    
+        }
+    });
+});
+</script><script language="javascript">
+$(function() {
+    if (window.PIE) {
+        $('.rounded').each(function() {
+            PIE.attach(this);
+        });
+    }
+});
+</script><link type="text/css" rel="stylesheet" href="css/index.css" /></head><body><div id="outer_wrapper"><div id="wrapper"><div id="header"> </div><div id="navigation"><ul><li id="home"><a href="/index.html">五中首页</a></li><li><a href="/second.html?classid=13">德育天地</a></li><li><a href="/second.html?classid=14">教学研究</a></li><li><a href="/second.html?classid=15">科研导航</a></li><li><a href="/second.html?classid=16">党建专栏</a></li><li><a href="/second.html?classid=17">学生园地</a></li><li><a href="/second.html?classid=18">工会之家</a></li><li><a href="/english/index.html">English</a></li></ul></div><div id="showpicmsg"><div class="rounded-corners showpic"><div style="width:632px;height:180px; overflow:hidden;" id="piccase"><a href="?id=52" target="_blank"><img alt="2013中国梦共享人生出彩的机会" src="/upload/images/2013/04/18/115351378.jpg" /></a><a href="?id=51" target="_blank"><img alt="2013中国梦共享人生出彩的机会" src="/upload/images/2013/04/18/114956114.jpg" /></a><a href="?id=44" target="_blank"><img alt="2013中国梦共享人生出彩的机会" src="/upload/images/2013/04/10/085443261.jpg" /></a></div></div><div class="rounded-corners showmsg"><div style="width:278px;height:36px;" class="title"><h4>公告通知</h4><span class="more"><a href="second.html?classid=1">更多</a></span></div><div class="msgbox rounded"><ul class="list"><li><a title="第五中学“四零”服务创建公开承诺事项" href="2018/05/28/090703597.html" target="_blank">第五中学“四零”服务创建公开承诺事项</a><span class="data">05/28</span></li><li><a title="2017运动会通知和时间表" href="2017/09/13/084659221.html" target="_blank">2017运动会通知和时间表</a><span class="data">09/13</span></li><li><a title="关于印发《黑龙江省破格晋升高级职称实施办法（试行）》的通知" href="2017/08/22/140417070.html" target="_blank">关于印发《黑龙江省破格晋升高级职称实施办法（试行）》的通知</a><span class="data">08/22</span></li><li><a title="佳教办10号关于进一步做好黑龙江省教育厅 佳木斯市" href="2017/05/10/142307145.html" target="_blank">佳教办10号关于进一步做好黑龙江省教育厅 佳木斯市</a><span class="data">05/10</span></li><li><a title="新的新的《全国教师管理信息系统》填写指南和教师用户初始管理" href="2016/11/01/082246834.html" target="_blank">新的新的《全国教师管理信息系统》填写指南和教师用户初始管理</a><span class="data">11/01</span></li></ul></div></div></div><div class="leftCon"><div class="columnA rounded-corners"><div style="width:276px;height:36px;" class="title"><h4>校园管理平台登录</h4></div><div style="width:256px;" class="conBox rounded"><ul class="list2"><li><a href="http://192.168.5.2/web">校园考试分析系统</a></li><li><a href="http://61.167.23.114/web">学生考卷查询系统</a></li><li><a href="http://192.168.6.16">教师考试评卷系统</a></li><li><a href="http://61.167.23.115">学校考勤查询系统</a></li></ul></div></div><div class="columnA rounded-corners"><div style="width:265px;height:36px;" class="title"><h4>日程安排</h4><span class="more"><a href="second.html?classid=12">更多</a></span></div><div style="background:url(images/temp1.jpg) no-repeat;width:256px;height:68px;_height:80px;" class="conBox rounded"><ul style="margin-left:80px;" class="list5"><li><a title="七月工作日程安排" href="2013/03/29/075000766.html" target="_blank">七月工作日程安排</a></li><li><a title="六月工作日程安排" href="2013/03/29/134349801.html" target="_blank">六月工作日程安排</a></li><li><a title="五月工作日程安排" href="2013/03/29/134217966.html" target="_blank">五月工作日程安排</a></li></ul></div></div><div class="columnA rounded-corners"><div style="width:265px;height:36px;" class="title"><h4>学校概况</h4><span class="more"> </span></div><div style="width:256px;height:108px" class="conBox rounded"><div style="margin-left:16px; " class="list3"><a href="/2013/03/19/140522445.html">学校简介</a><a href="/2013/03/19/141511774.html">办学特色</a><a href="/2013/03/19/135718764.html">学校发展</a><a href="/2013/03/19/141849905.html">校史长廊</a><a href="/2013/03/19/140518641.html">教学设施</a><a href="/2013/03/19/142130490.html">校园环境</a><a href="/2013/03/19/143320935.html">机构设置</a><a href="/2013/03/19/143400795.html">师资队伍</a></div></div></div><div class="columnA rounded-corners"><div style="width:265px;height:36px;" class="title"><h4>国旗下讲话</h4><span class="more"><a href="second.html?classid=4">更多</a></span></div><div style="width:256px;height:220px;" class="conBox rounded"><div class="infoBoxA"><div class="pic"><a target="_blank" href="http://www.jmswz.com/2018/05/23/094035292.html"><img height="110" width="90" src="/upload/images/2018/05/23/094139836.JPG" /></a></div><div class="text"><h5><strong style=" color:#CC0000;">学会告别</strong></h5><span style="text-indent: 2em; font-size:12px;">尊敬的老师，亲爱的同学们，大家好！今天我演讲的题目是“学会告别”。伴着夏日炎热的气息，中考已经来到了最后的冲刺阶段，在最后这三十多天的时间里，</span></div><div class="clear"> </div><div style="text-align:right; font-size:12px; line-height: 24px;" class="bt_line"><a class="redLink" target="_blank" href="http://www.jmswz.com/2018/05/23/094035292.html">
+                  演讲内容&gt;&gt;</a></div></div><div class="infolist"><ul class="list6"><li><a title="国旗下演讲2018.5.21." href="2018/05/23/094035292.html" target="_blank">国旗下演讲2018.5.21.</a><span class="data">05/23</span></li><li><a title="国旗下演讲2018.5.14." href="2018/05/15/100219830.html" target="_blank">国旗下演讲2018.5.14.</a><span class="data">05/15</span></li><li><a title="国旗下演讲2018.4.23." href="2018/04/24/144323469.html" target="_blank">国旗下演讲2018.4.23.</a><span class="data">04/24</span></li></ul></div></div></div><div class="columnA rounded-corners"><div style="width:265px;height:36px;" class="title"><h4>荣誉室</h4><span class="more"><a href="second.html?classid=5">更多</a></span></div><div style="width:256px;height:220px;" class="conBox rounded"><ul class="list7"><li><a title="李兴艳老师荣获教育系统十佳女教师光荣称号" href="2016/03/09/121306890.html" target="_blank">李兴艳老师荣获教育系统十佳女教师光荣称号</a><span class="data">03/09</span></li><li><a title="张弋获教育局师德师风先进个人" href="2015/07/03/071212057.html" target="_blank">张弋获教育局师德师风先进个人</a><span class="data">07/03</span></li><li><a title="马欣获教育局十佳女教师" href="2015/07/03/071039381.html" target="_blank">马欣获教育局十佳女教师</a><span class="data">07/03</span></li><li><a title="张洪珠获得黑龙江省模范教师" href="2014/09/24/093546315.html" target="_blank">张洪珠获得黑龙江省模范教师</a><span class="data">09/24</span></li><li><a title="李静（语）老师荣获省第二届班主任专业能力大赛单项组一等奖的荣誉" href="2013/03/22/062130809.html" target="_blank">李静（语）老师荣获省第二届班主任专业能力大赛单项组一等奖的荣誉</a><span class="data">03/22</span></li><li><a title="郑岩老师荣获省第二届班主任专业能力大赛综合组一等奖的荣誉" href="2013/03/22/062030375.html" target="_blank">郑岩老师荣获省第二届班主任专业能力大赛综合组一等奖的荣誉</a><span class="data">03/22</span></li><li><a title="张玉丽老师荣获市教育系统“十佳女教师”称号的荣誉" href="2013/03/22/061946025.html" target="_blank">张玉丽老师荣获市教育系统“十佳女教师”称号的荣誉</a><span class="data">03/22</span></li><li><a title="孙俊娣老师荣获省“十二五”课题研究经验交流一等奖课例示范观摩的荣誉" href="2013/03/22/061902745.html" target="_blank">孙俊娣老师荣获省“十二五”课题研究经验交流一等奖课例示范观摩的荣誉</a><span class="data">03/22</span></li></ul></div></div></div><div class="rightCon"><div class="xynews rounded-corners"><div style="width:640px;height:36px;" class="title"><h4>校园新闻</h4><span class="more"><a href="second.html?classid=2">更多</a></span></div><div class="jiyu"><img height="37" width="579" src="images/jiyu.png" /></div><div class="newsInfo rounded"><div class="picnew"><div id="showcase"><a href="http://www.jmswz.com/2017/09/12/162218336.html?id=172" target="_blank"><img alt="初一学年队列比赛圆满结束" src="/upload/images/2017/09/12/162622240.JPG" /></a><a href="http://www.jmswz.com/2017/09/01/095534903.html?id=171" target="_blank"><img alt="开学第一天领导班子迎接师生" src="/upload/images/2017/09/01/095725093.JPG" /></a><a href="http://www.jmswz.com/2017/06/13/094414289.html?id=170" target="_blank"><img alt="毕业学年“母校情怀”活动激情满怀" src="/upload/images/2017/06/13/094538142.JPG" /></a></div></div><div class="newslist"><ul class="list"><li><a title="军事科学家走进第五中学进行国防科普讲座" href="2018/05/09/155616903.html" target="_blank">军事科学家走进第五中学进行国防科普讲座</a><span class="data">05/09</span></li><li><a title="初一学年进行2017届初一学生会就职仪式" href="2018/04/27/155910948.html" target="_blank">初一学年进行2017届初一学生会就职仪式</a><span class="data">04/27</span></li><li><a title="我校选手在机器人比赛中取得佳绩" href="2018/04/18/110104781.html" target="_blank">我校选手在机器人比赛中取得佳绩</a><span class="data">04/18</span></li><li><a title="初一各班召开国家安全教育日主题班会" href="2018/04/16/163443982.html" target="_blank">初一各班召开国家安全教育日主题班会</a><span class="data">04/16</span></li><li><a title="初二学年“为了放飞的梦想”辩论赛圆满收官" href="2018/04/13/213344535.html" target="_blank">初二学年“为了放飞的梦想”辩论赛圆满收官</a><span class="data">04/13</span></li><li><a title="佳五中进行“缅怀革命先烈、创造美好明天”清明节祭扫活动" href="2018/04/04/113129350.html" target="_blank">佳五中进行“缅怀革命先烈、创造美好明天”清明节祭扫活动</a><span class="data">04/04</span></li><li><a title="初一学年进行《核心素养导向的课堂教学》读书交流会" href="2018/03/29/095024530.html" target="_blank">初一学年进行《核心素养导向的课堂教学》读书交流会</a><span class="data">03/29</span></li></ul></div></div><div class="clearfix"> </div></div><div class="columnB rounded-corners"><div style="width:280px;height:36px;" class="title"><h4>中考信息</h4><span class="more"><a href="second.html?classid=7">更多</a></span></div><div style="height:108px;" class="conBox rounded"><ul class="list"><li><a title="2013年中考成绩" href="2013/07/06/161048336.html" target="_blank">2013年中考成绩</a><span class="data">07/06</span></li><li><a title="2012年中考成绩" href="2013/03/22/070657389.html" target="_blank">2012年中考成绩</a><span class="data">03/22</span></li><li><a title="2011年中考成绩" href="2013/03/22/070444570.html" target="_blank">2011年中考成绩</a><span class="data">03/22</span></li><li><a title="2010年中考成绩" href="2013/03/22/070347344.html" target="_blank">2010年中考成绩</a><span class="data">03/22</span></li></ul></div></div><div class="columnC rounded-corners"><div style="width:350px;height:36px;" class="title"><h4>教师纵览</h4></div><div style="height:108px;" class="conBox rounded"><div class="picInfo"><img height="100" width="90" src="images/Penguins.jpg" /></div><div class="txtInfo"><ul class="list4"><a href="/2013/04/10/061154829.html">领导班子</a><a href="/2013/04/10/072248356.html">班主任</a><a href="/2013/04/10/064826224.html">教研组</a><a href="/2013/04/10/064336201.html">名师风采</a><a href="/2013/04/10/062143018.html">处室主任</a><a href="/2013/04/10/072326202.html">青年教师</a></ul></div></div></div><div style="margin-top:10px;" class="columnB rounded-corners"><div style="width:280px;height:36px;" class="title"><h4>家长学校</h4><span class="more"><a href="second.html?classid=8">更多</a></span></div><div style="height:220px;" class="conBox rounded"><div class="infoBoxB"><div class="pic"><a target="_blank" href="http://www.jmswz.com/2014/10/22/143529531.html"><img height="80" width="80" src="/upload/images/2014/10/22/144546255.JPG" /></a></div><div class="text"><h5>教育33条，学会和孩子一起成长</h5><span style="text-indent: 2em; font-size:12px;">1.影响孩子成绩的主要因素不是学校，而是家庭 2.如果家庭教育出了问题，孩子在学校就可能会过的比 较辛苦，</span></div><div style="text-align:right; font-size:12px; line-height: 24px;" class="bt_line"><a class="redLink" target="_blank" href="http://www.jmswz.com/2014/10/22/143529531.html">
+                  [详细阅读]</a></div><div class="infolist"><ul class="list5"><li><a title="教育33条，学会和孩子一起成长！" href="2014/10/22/143529531.html" target="_blank">教育33条，学会和孩子一起成长！</a><span class="data">10/22</span></li><li><a title="让孩子一生幸福的15个好习惯" href="2014/10/22/143340898.html" target="_blank">让孩子一生幸福的15个好习惯</a><span class="data">10/22</span></li><li><a title="怎样培养孩子学习的主动性？" href="2014/10/22/143039601.html" target="_blank">怎样培养孩子学习的主动性？</a><span class="data">10/22</span></li><li><a title="梁继璋给儿子的一封信" href="2014/10/22/142917878.html" target="_blank">梁继璋给儿子的一封信</a><span class="data">10/22</span></li></ul></div></div></div></div><div style="margin-top:10px;" class="columnC rounded-corners"><div style="width:350px;height:36px;" class="title"><h4>精品推荐</h4><span class="more"><a href="second.html?classid=9">更多</a></span></div><div style="height:220px;" class="conBox rounded"><div class="infoBoxC"><div class="pic"><a target="_blank" href="http://www.jmswz.com/2014/03/20/112530292.html"><img height="80" width="80" src="/upload/images/2014/03/20/114404587.jpg" /></a></div><div class="text"><h5>在党的群众路线教育实践活动工作会议上的讲话 习近平</h5><span style="text-indent: 2em; font-size:12px;">围绕保持党的先进性和纯洁性，在全党深入开展以为民务实清廉为主要内容的党的群众路线教育实践活动，是党的十八大作出的一项重大部署.</span></div><div style="text-align:right; font-size:12px; line-height: 24px;" class="bt_line"><a class="redLink" target="_blank" href="http://www.jmswz.com/2014/03/20/112530292.html">
+                  [详细阅读]</a></div><div class="infolist"><ul class="list8"><li><a title="习近平：做党和人民满意的好老师" href="2014/10/13/070129103.html" width="240px" target="_blank">习近平：做党和人民满意的好老师</a><span class="data">10/13</span></li><li><a title="吴志宏_翻转课堂_基础教育变革新标杆" href="2014/09/19/095355723.html" width="240px" target="_blank">吴志宏_翻转课堂_基础教育变革新标杆</a><span class="data">09/19</span></li><li><a title="黑龙江省九项规定" href="2014/03/20/113106511.html" width="240px" target="_blank">黑龙江省九项规定</a><span class="data">03/20</span></li><li><a title="关于改进工作作风、密切联系群众的八项规定" href="2014/03/20/113013426.html" width="240px" target="_blank">关于改进工作作风、密切联系群众的八项规定</a><span class="data">03/20</span></li></ul></div></div></div></div><div style="margin-top:10px;" class="columnB rounded-corners"><div style="width:280px;height:36px;" class="title"><h4>校务公开</h4><span class="more"><a href="second.html?classid=6">更多</a></span></div><div style="height:220px;" class="conBox rounded"><div class="infoBoxB"><div class="pic"><a target="_blank" href="/2013/04/10/073338623.html"><img height="80" width="80" src="/upload/images/2013/04/03/090636696.jpg" /></a></div><div class="text"><h5>关于进一步加强师德师风建设的意见</h5><span style="text-indent: 2em; font-size:12px;">进一步加强师德师风建设是全面贯彻党的教育方针的根本保证，也是进一步加强和改进青少年学生思想道德建设和思想政治教育的迫切要求。</span></div><div style="text-align:right; font-size:12px; line-height: 24px;" class="bt_line"><a class="redLink" target="_blank" href="/2013/04/10/073338623.html">
+                  [详细阅读]</a></div><div class="infolist"><ul class="list5"><li><a title="佳木斯市第五中学2018年部门预算公开" href="2018/02/09/201842709.html" target="_blank">佳木斯市第五中学2018年部门预算公开</a><span class="data">02/09</span></li><li><a title="第五中学2016年部门预算公开" href="2016/11/01/073210434.html" target="_blank">第五中学2016年部门预算公开</a><span class="data">11/01</span></li><li><a title="第五中学2015年度部门决算公开" href="2016/09/26/125706430.html" target="_blank">第五中学2015年度部门决算公开</a><span class="data">09/26</span></li><li><a title="第五中学2014年度部门决算（补充公开）" href="2016/05/18/131928948.html" target="_blank">第五中学2014年度部门决算（补充公开）</a><span class="data">05/18</span></li></ul></div></div></div></div><div style="margin-top:10px;" class="columnC rounded-corners"><div style="width:350px;height:36px;" class="title"><h4>经典美文</h4><span class="more"><a href="second.html?classid=10">更多</a></span></div><div style="height:220px;" class="conBox rounded"><div class="infoBoxC"><div class="pic"><a target="_blank" href="http://www.jmswz.com/2013/05/06/102957672.html"><img height="80" width="80" src="/upload/images/2013/05/06/105012692.jpg" /></a></div><div class="text"><h5>读书三味</h5><span style="text-indent: 2em; font-size:12px;">古人读书有“三味”：“读经味如稻粱，读史味如肴馔，读诸子百家味如醯醢”。我们耳熟能详的鲁迅的三味书屋就是因此而得名。古人读书异常勤奋，珍惜光阴，“</span></div><div style="text-align:right; font-size:12px; line-height: 24px;" class="bt_line"><a class="redLink" target="_blank" href="http://www.jmswz.com/2013/05/06/102957672.html">
+                  [详细阅读]</a></div><div class="infolist"><ul class="list8"><li><a title="我读诸葛亮《诫子书》" href="2015/04/20/151019609.html" width="240px" target="_blank">我读诸葛亮《诫子书》</a><span class="data">04/20</span></li><li><a title="读书三味" href="2013/05/06/102957672.html" width="240px" target="_blank">读书三味</a><span class="data">05/06</span></li><li><a title="我们要学会让自己快乐" href="2013/05/06/101951145.html" width="240px" target="_blank">我们要学会让自己快乐</a><span class="data">05/06</span></li><li><a title="好的家庭教育可以浓缩为六句话" href="2013/03/25/160818577.html" width="240px" target="_blank">好的家庭教育可以浓缩为六句话</a><span class="data">03/25</span></li></ul></div></div></div></div></div><div id="footer"><p class="copyright"> 2002－2012 佳木斯第五中学版权所有 <a href="http://www.miibeian.gov.cn">黑ICP备07502195</a> | <span class="email">Email: <a href="mailto:hjmswz@163.com">hjmswz@163.com</a></span></p><p style="float:left;height:24px;padding-top:7px;">学校地址：黑龙江省佳木斯市前进区保卫路92号 邮编：154002</p><script src="js/sydw.js" type="text/javascript"> </script></div></div></div></body></html>

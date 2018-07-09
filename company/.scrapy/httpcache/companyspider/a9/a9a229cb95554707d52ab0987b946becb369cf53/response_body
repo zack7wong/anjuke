@@ -1,0 +1,961 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<LINK href="../../../css/style.asp" rel=stylesheet type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+</HEAD>
+
+<SCRIPT language="JavaScript">
+		function onColor(TD)
+		{
+		TD.style.backgroundColor='#DCDCDC';
+		}
+		function offColor(TD)
+		{
+		TD.style.backgroundColor='';
+		}
+		</SCRIPT>
+
+
+<script language=javascript>
+function yn(s)
+{
+     if(!  confirm(s) )
+     {
+     	window.event.returnValue = false
+	return false
+     }
+     return true
+}
+
+</script>
+
+<script language=javascript>
+function yn_del()
+{
+     if(!  confirm('是否删除所选数据') )
+     {
+     	window.event.returnValue = false
+	return false
+     }
+     document.jcrj.act.value='del';document.jcrj.action='../../../table/table/table/del.asp';document.jcrj.submit()
+}
+
+</script>
+
+
+
+<html>
+<head>
+<title>贵州航天职业技术学院</title>
+<meta http-equiv="Content-Type" content="text/html" charset="gb2312">
+<LINK rev=stylesheet  href="style.css" type=text/css rel=stylesheet>
+<script type="text/javascript"  src="SwitchTabMenu.js"></script>
+</head>
+<style type=text/css>
+.active{}
+.activehover{background:url(images/navbgbb.gif) no-repeat;}
+</style>
+
+<body style="background:#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" align="center">
+<center>
+<!-- ImageReady Slices (index.psd) -->
+<table id="__01" width="986" height="198" border="0" leftmargin="0" cellpadding="0" cellspacing="0" align="center"> 
+	<tr>
+		<td background="../web/images/head.jpg" width="986" height="168" >
+		<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+		<tr height="58">
+		<td width="96"></td>
+		<td width="360"></td>
+        <td width="530">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="1">
+            <tr>
+              <td width="150"></td>
+			  <td align="left" valign="top" width="280"> | <a href="Javascript:window.external.addFavorite(document.location.href,document.title)">加入收藏</a> | <a href="../../web/home/index">网站管理</a> | <a href="../eng/index">English</a> | <a href="http://old.gzhtzy.com">旧版</a> |  </td>
+			  <td width="100"></td>
+            </tr>
+			<!--
+			 <tr>
+              <td width="30"></td>
+			  <td align="center" valign="top" width="280"> | <a href="http://old.gzhtzy.com">旧版入口</a> | </td>
+			  <td width="220"></td>
+            </tr>  -->
+            </table> 
+		</td>
+		</tr>
+		<tr height="100">
+		<td width="96"></td>
+		<td width="360">
+		<object 
+                  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" 
+                  height="100" width="350" 
+                  classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+                      <param name="movie" value="../web/images/top1.swf" />
+                      <param name="quality" value="high" />
+                      <param name="wmode" value="transparent" />
+                      <embed 
+                  src="../web/images/332.swf" 
+                  quality="high" wmode="transparent"  width="350" height="100" 
+                  align="" type="application/x-shockwave-flash" 
+                  pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+                  </object>
+		</td>
+		<td width="530"></td>
+		</tr>
+	
+	   		</table>
+		</td>
+	</tr>
+	<tr>
+		<td background="../web/images/menuBg.gif" width="986" height="30" >
+		<style type="text/css">
+/* common styling */
+/* set up the overall width of the menu div, the font and the margins */
+.menu {
+width:986px;
+margin:0;
+margin:0 0;
+}
+/* remove the bullets and set the margin and padding to zero for the unordered list */
+.menu ul {
+padding:0;
+margin:0;
+list-style-type: none;
+}
+/* float the list so that the items are in a line and their position relative so that the drop down list will appear in the right place underneath each list item */
+.menu ul li {
+float:left;
+position:relative;
+}
+/* style the links to be 104px wide by 30px high with a top and right border 1px solid white. Set the background color and the font size. */
+.menu ul li a, .menu ul li a:visited {
+display:block;
+text-align:center;
+text-decoration:none;
+width:87px;
+height:30px;
+border-width:0 0 0 0;
+line-height:30px;
+}
+/* make the dropdown ul invisible */
+.menu ul li ul {
+display: none;
+}
+/* specific to non IE browsers */
+/* set the background and foreground color of the main menu li on hover */
+.menu ul li:hover a {
+background:url(images/navbgbb.gif) no-repeat; background-position: center center;
+}
+/* make the sub menu ul visible and position it beneath the main menu list item */
+.menu ul li:hover ul {
+display:block;
+position:absolute;
+top:31px;
+line-height: 27px; 
+left:0;
+width:87px;
+}
+/* style the background and foreground color of the submenu links */
+.menu ul li:hover ul li a {
+display:block;
+background:#CCCCCC;
+color:#000;
+}
+/* style the background and forground colors of the links on hover */
+.menu ul li:hover ul li a:hover {
+background:url(images/navbgbb.gif) no-repeat; background-position: center center; 
+color:#000;
+}
+</style>
+<!--[if lte IE 6]>
+<style type="text/css">
+/* styling specific to Internet Explorer IE5.5 and IE6. Yet to see if IE7 handles li:hover */
+/* Get rid of any default table style */
+table {
+border-collapse:collapse;
+margin:0;
+padding:0;
+}
+/* ignore the link used by 'other browsers' */
+.menu ul li a.hide, .menu ul li a:visited.hide {
+display:none;
+}
+/* set the background and foreground color of the main menu link on hover */
+.menu ul li a:hover {
+color:#fff;
+background:#b3ab79;
+}
+/* make the sub menu ul visible and position it beneath the main menu list item */
+.menu ul li a:hover ul {
+display:block;
+position:absolute;
+top:32px;
+left:0;
+width:105px;
+}
+/* style the background and foreground color of the submenu links */
+.menu ul li a:hover ul li a {
+background:#faeec7;
+color:#000;
+}
+/* style the background and forground colors of the links on hover */
+.menu ul li a:hover ul li a:hover {
+background:#dfc184;
+color:#000;
+}
+</style>
+<![endif]-->
+</head>
+<body>
+<div class="menu">
+<ul>
+<li><a class="hide" href="/">首页</a> 
+<!--[if lte IE 6]>
+<a href="../web/index">首页
+<table><tr><td>
+<![endif]-->
+<ul></ul>
+<!--[if lte IE 6]>
+</td></tr></table>
+</a>
+<![endif]-->
+</li>
+
+     <li><a class="hide"   href='./showIntro.asp?lmmc=LDUxLDUx'>学院概况</a>
+    <ul>
+<li><a href='show.asp?fxmc=LDU0' title="学院概况">&nbsp学院概况</a></li> 
+    <li><a href='show.asp?fxmc=LDQ5LDQ5LDU2' title="院长致词">&nbsp院长致词</a></li> 
+    <li><a href='show.asp?fxmc=LDUzLDUx' title="机构设置">&nbsp机构设置</a></li> 
+    <li><a href='show.asp?fxmc=LDU2' title="领导介绍">&nbsp领导介绍</a></li> 
+    
+</ul>
+<!--[if lte IE 6]>
+</td></tr></table>
+</a>
+<![endif]-->
+</li>
+
+     <li><a class="hide"   href='./showIntro.asp?lmmc=LDUxLDU2'>教学部门</a>
+    <ul>
+<li><a href='http://www.gzhtzy.com:8003/jwc/' title="教务处">&nbsp教务处</a></li> 
+    <li><a href='http://www.gzhtzy.com:8003/jxx/' title="机械工程系">&nbsp机械工程系</a></li> 
+    <li><a href='http://www.gzhtzy.com:82/jsj/' title="计算机科学系">&nbsp计算机科学系</a></li> 
+    <li><a href='http://www.gzhtzy.com:8003/dzx' title="电子工程系">&nbsp电子工程系</a></li> 
+    <li><a href='http://www.gzhtzy.com:8003/jjglx/' title="经济管理系">&nbsp经济管理系</a></li> 
+    <li><a href='http://www.gzhtzy.com:8003/jckxx_jzgcx/' title="基础科学系">&nbsp基础科学系</a></li> 
+    <li><a href='http://www.gzhtzy.com:8003/jckxx_jzgcx/' title="建筑工程管理系">&nbsp建筑工程管理系</a></li> 
+    <li><a href='http://www.gzhtzy.com:8003/qcgcx/' title="汽车工程系">&nbsp汽车工程系</a></li> 
+    <li><a href='http://www.gzhtzy.com:8003/kxb/' title="社会科学教学部">&nbsp社会科学教学部</a></li> 
+    <li><a href='./showIntro.asp?lmmc=LDU2LDUz' title="培训部">&nbsp培训部</a></li> 
+    
+</ul>
+<!--[if lte IE 6]>
+</td></tr></table>
+</a>
+<![endif]-->
+</li>
+
+     <li><a class="hide"   href='./showIntro.asp?lmmc=LDUyLDU1'>校园文化</a>
+    <ul>
+<li><a href='show.asp?fxmc=LDUwLDU1LDU3' title="心灵鸡汤">&nbsp心灵鸡汤</a></li> 
+    <li><a href='show.asp?fxmc=LDUxLDQ5' title="校标校训">&nbsp校标校训</a></li> 
+    <li><a href='show.asp?fxmc=LDUzLDUy' title="学院校歌">&nbsp学院校歌</a></li> 
+    <li><a href='show.asp?fxmc=LDUwLDUyLDU0' title="资质荣誉">&nbsp资质荣誉</a></li> 
+    <li><a href='show.asp?fxmc=LDUxLDUx' title="校园掠影">&nbsp校园掠影</a></li> 
+    <li><a href='show.asp?fxmc=LDUxLDUy' title="先模风采">&nbsp先模风采</a></li> 
+    <li><a href='show.asp?fxmc=LDU3LDQ5' title="优秀作品">&nbsp优秀作品</a></li> 
+    <li><a href='show.asp?fxmc=LDUwLDUyLDUw' title="学生活动">&nbsp学生活动</a></li> 
+    <li><a href='show.asp?fxmc=LDUwLDUyLDUx' title="魅力社团">&nbsp魅力社团</a></li> 
+    <li><a href='show.asp?fxmc=LDUwLDUyLDUz' title="思政教育">&nbsp思政教育</a></li> 
+    <li><a href='show.asp?fxmc=LDQ5LDUyLDU3' title="新校区规划">&nbsp新校区规划</a></li> 
+    <li><a href='show.asp?fxmc=LDUwLDU0LDU3' title="教学点滴">&nbsp教学点滴</a></li> 
+    
+</ul>
+<!--[if lte IE 6]>
+</td></tr></table>
+</a>
+<![endif]-->
+</li>
+
+     <li><a class="hide"   href='./showIntro.asp?lmmc=LDUyLDQ5'>招生就业</a>
+    <ul>
+<li><a href='http://www.gzhtzy.com:8003/ncfem/' title="招生快递">&nbsp招生快递</a></li> 
+    <li><a href='http://www.gzhtzy.com:8003/ncfem/' title="就业服务">&nbsp就业服务</a></li> 
+    <li><a href='./showIntro.asp?lmmc=LDU2LDUw' title="大学生创业平台">&nbsp大学生创业平台</a></li> 
+    
+</ul>
+<!--[if lte IE 6]>
+</td></tr></table>
+</a>
+<![endif]-->
+</li>
+
+     <li><a class="hide"   href='./showIntro.asp?lmmc=LDU0LDU3'>科学研究</a>
+    <ul>
+<li><a href='show.asp?fxmc=LDU3LDUz' title="科研概况">&nbsp科研概况</a></li> 
+    <li><a href='show.asp?fxmc=LDU3LDU0' title="科研公告">&nbsp科研公告</a></li> 
+    <li><a href='show.asp?fxmc=LDQ5LDUxLDU0' title="项目申报流程">&nbsp项目申报流程</a></li> 
+    <li><a href='show.asp?fxmc=LDU3LDU2' title="科研成果展">&nbsp科研成果展</a></li> 
+    
+</ul>
+<!--[if lte IE 6]>
+</td></tr></table>
+</a>
+<![endif]-->
+</li>
+
+     <li><a class="hide"   href='./showIntro.asp?lmmc=LDU1LDQ4'>人事评聘</a>
+    <ul>
+<li><a href='show.asp?fxmc=LDQ5LDQ4LDQ4' title="招聘公告">&nbsp招聘公告</a></li> 
+    <li><a href='show.asp?fxmc=LDQ5LDQ4LDQ5' title="职称工作">&nbsp职称工作</a></li> 
+    <li><a href='show.asp?fxmc=LDU3LDU3' title="工作动态">&nbsp工作动态</a></li> 
+    <li><a href='show.asp?fxmc=LDQ5LDQ4LDUw' title="政策法规">&nbsp政策法规</a></li> 
+    
+</ul>
+<!--[if lte IE 6]>
+</td></tr></table>
+</a>
+<![endif]-->
+</li>
+
+     <li><a class="hide"   href='./showIntro.asp?lmmc=LDUyLDUx'>学生之家</a>
+    <ul>
+<li><a href='show.asp?fxmc=LDUwLDUzLDU1' title="通知公告">&nbsp通知公告</a></li> 
+    <li><a href='show.asp?fxmc=LDUwLDU0LDQ4' title="评优评奖">&nbsp评优评奖</a></li> 
+    <li><a href='show.asp?fxmc=LDUwLDU0LDQ5' title="学工动态">&nbsp学工动态</a></li> 
+    <li><a href='show.asp?fxmc=LDUwLDU0LDUw' title="违纪通告">&nbsp违纪通告</a></li> 
+    <li><a href='show.asp?fxmc=LDUxLDUz' title="学生管理">&nbsp学生管理</a></li> 
+    <li><a href='show.asp?fxmc=LDUxLDU0' title="共青团">&nbsp共青团</a></li> 
+    <li><a href='show.asp?fxmc=LDUxLDUxLDUw' title="社团组织">&nbsp社团组织</a></li> 
+    <li><a href='show.asp?fxmc=LDUxLDU3' title="资助中心">&nbsp资助中心</a></li> 
+    <li><a href='show.asp?fxmc=LDUyLDQ5' title="心理健康专栏">&nbsp心理健康专栏</a></li> 
+    <li><a href='show.asp?fxmc=LDUwLDU3LDUy' title="宿管中心">&nbsp宿管中心</a></li> 
+    
+</ul>
+<!--[if lte IE 6]>
+</td></tr></table>
+</a>
+<![endif]-->
+</li>
+
+     <li><a class="hide"   href='./showIntro.asp?lmmc=LDUyLDU2'>办事指南</a>
+    <ul>
+<li><a href='show.asp?fxmc=LDUyLDU0' title="教学服务">&nbsp教学服务</a></li> 
+    <li><a href='show.asp?fxmc=LDU1LDQ5' title="考生专区">&nbsp考生专区</a></li> 
+    <li><a href='show.asp?fxmc=LDU1LDUx' title="在校生专区">&nbsp在校生专区</a></li> 
+    <li><a href='show.asp?fxmc=LDU1LDU0' title="员工专区">&nbsp员工专区</a></li> 
+    <li><a href='./wsbsdt.asp' title="网上办事大厅">&nbsp网上办事大厅</a></li> 
+    <li><a href='show.asp?fxmc=LDQ5LDUwLDUw' title="学院校历">&nbsp学院校历</a></li> 
+    
+</ul>
+<!--[if lte IE 6]>
+</td></tr></table>
+</a>
+<![endif]-->
+</li>
+
+     <li><a class="hide"   href='./showIntro.asp?lmmc=LDU0LDU0'>信息公开</a>
+    <ul>
+<li><a href='show.asp?fxmc=LDU2LDQ5' title="规章制度">&nbsp规章制度</a></li> 
+    <li><a href='show.asp?fxmc=LDU2LDUw' title="计划规划">&nbsp计划规划</a></li> 
+    <li><a href='show.asp?fxmc=LDU2LDUx' title="学校采购">&nbsp学校采购</a></li> 
+    <li><a href='show.asp?fxmc=LDU2LDUy' title="经费管理">&nbsp经费管理</a></li> 
+    <li><a href='show.asp?fxmc=LDU2LDUz' title="应急管理">&nbsp应急管理</a></li> 
+    <li><a href='show.asp?fxmc=LDQ5LDQ4LDU0' title="依申请公开">&nbsp依申请公开</a></li> 
+    
+</ul>
+<!--[if lte IE 6]>
+</td></tr></table>
+</a>
+<![endif]-->
+</li>
+
+     <li><a class="hide"   href='./showIntro.asp?lmmc=LDQ5LDQ4LDUy'>技师学院 成教</a>
+    <ul>
+<li><a href='./showIntro.asp?lmmc=LDUxLDUy' title="技师学院">&nbsp技师学院</a></li> 
+    <li><a href='./showIntro.asp?lmmc=LDQ5LDQ4LDUx' title="成人教育">&nbsp成人教育</a></li> 
+    
+</ul>
+<!--[if lte IE 6]>
+</td></tr></table>
+</a>
+<![endif]-->
+</li>
+
+</ul>
+<!-- clear the floats if required -->
+<div class="clear">&nbsp;</div>
+</div>
+</body>
+</html>
+		</td>
+	</tr>
+</table>
+
+<table id="__01" width="956" height="393" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr>
+		<td width="100%" height="353">
+		<table id="__01" width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="260" height="393" valign=top>
+		  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+     <tr height="100%">
+	 <td width="13"></td>
+	 <td width="235" valign=top>
+	     <table width="100%"  border="0" cellpadding="0" cellspacing="0" align="center">
+		      
+			   <tr height="40">
+			   <td width="235" align="center" style="background-image:url(images/left_menu.gif);background-repeat:no-repeat;background-position: center middle;" class="kxdh">快速导航</td>
+			   </tr>
+			   
+			   <tr >
+			   <td width="235" align="center" >
+			    <table width="100%" height="100%"  border=0 style="border-collapse: collapse;" cellpadding="0" cellspacing="0" align="center">
+				
+				<tr height="30" style="background-image:url(images/left_menu_bg.gif);background-repeat:no-repeat;background-position: center middle;BORDER-BOTTOM: #c3c3c3 1px solid;"><td width="100" align="center" style="BORDER-BOTTOM: #c3c3c3 1px solid;"><img src="images/dir.gif" width="23" height="23" alt=""></td>
+				<td align="left" style="BORDER-BOTTOM: #c3c3c3 1px solid;"> <a href="./showIntro.asp?lmmc=LDU1LDU0" target="" class="kxlj"  style="FONT-SIZE:16px; font-weight:bold; color:black; TEXT-DECORATION: none;" title="党务公开">党务公开</a></td></tr>
+				
+				<tr height="30" style="background-image:url(images/left_menu_bg.gif);background-repeat:no-repeat;background-position: center middle;BORDER-BOTTOM: #c3c3c3 1px solid;"><td width="100" align="center" style="BORDER-BOTTOM: #c3c3c3 1px solid;"><img src="images/dir.gif" width="23" height="23" alt=""></td>
+				<td align="left" style="BORDER-BOTTOM: #c3c3c3 1px solid;"> <a href="http://www.gzhtzy.com:8003/gjjy/" target="_blank" class="kxlj"  style="FONT-SIZE:16px; font-weight:bold; color:black; TEXT-DECORATION: none;" title="思政教育">思政教育</a></td></tr>
+				
+				<tr height="30" style="background-image:url(images/left_menu_bg.gif);background-repeat:no-repeat;background-position: center middle;BORDER-BOTTOM: #c3c3c3 1px solid;"><td width="100" align="center" style="BORDER-BOTTOM: #c3c3c3 1px solid;"><img src="images/dir.gif" width="23" height="23" alt=""></td>
+				<td align="left" style="BORDER-BOTTOM: #c3c3c3 1px solid;"> <a href="http://www.gzhtzy.com:8003/ncfem/" target="" class="kxlj"  style="FONT-SIZE:16px; font-weight:bold; color:black; TEXT-DECORATION: none;" title="招生就业">招生就业</a></td></tr>
+				
+				<tr height="30" style="background-image:url(images/left_menu_bg.gif);background-repeat:no-repeat;background-position: center middle;BORDER-BOTTOM: #c3c3c3 1px solid;"><td width="100" align="center" style="BORDER-BOTTOM: #c3c3c3 1px solid;"><img src="images/dir.gif" width="23" height="23" alt=""></td>
+				<td align="left" style="BORDER-BOTTOM: #c3c3c3 1px solid;"> <a href="http://www.gzhtzy.com/web/web/lib/index.asp" target="_blank" class="kxlj"  style="FONT-SIZE:16px; font-weight:bold; color:black; TEXT-DECORATION: none;" title="图书资源">图书资源</a></td></tr>
+				
+				<tr height="30" style="background-image:url(images/left_menu_bg.gif);background-repeat:no-repeat;background-position: center middle;BORDER-BOTTOM: #c3c3c3 1px solid;"><td width="100" align="center" style="BORDER-BOTTOM: #c3c3c3 1px solid;"><img src="images/dir.gif" width="23" height="23" alt=""></td>
+				<td align="left" style="BORDER-BOTTOM: #c3c3c3 1px solid;"> <a href="./showIntro.asp?lmmc=LDU0LDU1" target="" class="kxlj"  style="FONT-SIZE:16px; font-weight:bold; color:black; TEXT-DECORATION: none;" title="互动交流">互动交流</a></td></tr>
+				
+				<tr height="30" style="background-image:url(images/left_menu_bg.gif);background-repeat:no-repeat;background-position: center middle;BORDER-BOTTOM: #c3c3c3 1px solid;"><td width="100" align="center" style="BORDER-BOTTOM: #c3c3c3 1px solid;"><img src="images/dir.gif" width="23" height="23" alt=""></td>
+				<td align="left" style="BORDER-BOTTOM: #c3c3c3 1px solid;"> <a href="./showIntro.asp?lmmc=LDU2LDU3" target="_self" class="kxlj"  style="FONT-SIZE:16px; font-weight:bold; color:black; TEXT-DECORATION: none;" title="新校区建设">新校区建设</a></td></tr>
+				
+				<tr height="30" style="background-image:url(images/left_menu_bg.gif);background-repeat:no-repeat;background-position: center middle;BORDER-BOTTOM: #c3c3c3 1px solid;"><td width="100" align="center" style="BORDER-BOTTOM: #c3c3c3 1px solid;"><img src="images/dir.gif" width="23" height="23" alt=""></td>
+				<td align="left" style="BORDER-BOTTOM: #c3c3c3 1px solid;"> <a href="./showIntro.asp?lmmc=LDU3LDQ4" target="" class="kxlj"  style="FONT-SIZE:16px; font-weight:bold; color:black; TEXT-DECORATION: none;" title="重点专业建设">重点专业建设</a></td></tr>
+				
+				<tr height="30" style="background-image:url(images/left_menu_bg.gif);background-repeat:no-repeat;background-position: center middle;BORDER-BOTTOM: #c3c3c3 1px solid;"><td width="100" align="center" style="BORDER-BOTTOM: #c3c3c3 1px solid;"><img src="images/dir.gif" width="23" height="23" alt=""></td>
+				<td align="left" style="BORDER-BOTTOM: #c3c3c3 1px solid;"> <a href="../iso/index.asp" target="" class="kxlj"  style="FONT-SIZE:16px; font-weight:bold; color:black; TEXT-DECORATION: none;" title="质量管理体系">质量管理体系</a></td></tr>
+				
+				</table>
+			   </td>
+			   </tr>
+			    <tr height="2">
+			   <td width="235" align="center" ></td>
+			   </tr>
+			   <tr height="41"><!-- 综合管理系统 -->
+			   <td width="235" style="text-align:center;"><a href="http://www.gzhtzy.com:8201/web/web/zhgl/" target='_blank'><img src="images/jw.gif" width="235" height="41" alt="" border="0" align="absmiddle"></a></td>
+			   </tr>
+			   <tr height="41"><!-- 邮件服务器 -->
+			   <td width="235" style="text-align:center;"><a href="http://mail.gzhtzy.com:6080" target='_blank'><img src="images/email3.jpg" width="235" height="41" alt="" border="0" align="absmiddle"></a></td>
+			   </tr>
+			   <!-- 数据采集平台 -->
+			   <!--
+			   <tr height="41">
+			   <td width="235" style="text-align:center;"><a href="http://220.172.104.98:8080/pfw/" target='_blank'><img src="images/data3.jpg" width="235" height="41" alt="" border="0" align="absmiddle"></a></td>
+			   </tr>
+			   -->
+			   <tr height="2">
+			   <td width="235" align="center" ></td>
+			   <!-- <tr>
+			    <tr height="41">
+			 	   <td width="235" style="text-align:center;"><a href="../zzweb/index"><img src="images/zz.gif" width="235" height="41" alt="" border="0" align="absmiddle"></a></td>
+			   </tr>
+
+
+			   <tr height="2">
+			   <td width="235" align="center" ></td>
+			   <tr>
+			   <tr height="41">
+			    <td width="235" style="text-align:center;"><a href="../cjweb/index"><img src="images/cj.gif" width="235" height="41" alt="" border="0" align="absmiddle"></a></td>
+			   </tr> -->
+			   <tr height="2">
+			   <td width="235" align="center" ></td>
+			   </tr>
+
+			   <tr>
+			   <td align="center" style="background-image:url(images/dh.gif);background-repeat:no-repeat;background-position: center center;">
+				<select style="width:172px" name="menu1" onchange="MM_jumpMenu('parent',this,0)">
+	<option value="#" selected="selected" >--------校内导航--------</option>
+	
+	<option value="sjxx.asp">书记信箱</option>
+	
+	<option value="yzxx.asp">院长信箱</option>
+	
+	<option value="qqjl.asp">交流平台</option>
+	
+	<option value="xyzj.asp">校园征集</option>
+	
+	<option value="http://www.gzhtzy.com/new/web/web/szw/index.asp">思政教育网</option>
+	
+	<option value="wszxList.asp">咨询问答</option>
+	
+	<option value="http://www.gzhtzy.com/web/web/zhgl/">教务管理系统</option>
+	
+	<option value="http://www.gzhtzy.com/new/web/web/lib/">学院图书馆</option>
+	
+	<option value="http://www.gzhtzy.com/new/web/web/iso/index.asp">ISO9000</option>
+	
+	<option value="http://www.gzhtzy.com/new/web/web/newweb/2/学院首页设计初稿2.html">新网站首页（二）</option>
+	
+	<option value="http://www.gzhtzy.com/new/web/web/newweb/1/学院首页设计（初稿）.html">新网站首页（一）</option>
+	
+	<option value="http://mail.gzhtzy.com:6080/">邮件系统</option>
+	
+	<option value="http://www.gzhtzy.com/new/web/web/xy/index.asp?fxmc=LC0xNzQxNCwtMTIxMDcsLTE4MDEyLC0xOTUwOCwtMTIzNjM">机械工程系</option>
+	
+	<option value="http://www.gzhtzy.com:82/jsj/">计算机科学系</option>
+	
+	<option value="http://www.gzhtzy.com/new/web/web/xy/index.asp?fxmc=LC0xODk2OSwtMTAyODUsLTE4MDEyLC0xOTUwOCwtMTIzNjM">电子工程系</option>
+	
+	<option value="http://www.gzhtzy.com/new/web/web/xy/index.asp?fxmc=LC0xNjcyMywtMTcyMTMsLTE3OTU2LC0xNjE0NywtMTIzNjM">经济管理系</option>
+	
+	<option value="http://www.gzhtzy.com/new/web/web/xy/index.asp?fxmc=LC0xNzQxNSwtMTkyOTUsLTE2NDQyLC0xMTg2NSwtMTIzNjM">基础科学系</option>
+	
+	<option value="http://www.gzhtzy.com/new/web/web/xy/index.asp?fxmc=LC0xNDU5NywtMTk1MzEsLTE4MDEyLC0xOTUwOCwtMTIzNjM">汽车工程系</option>
+	
+	<option value="http://www.gzhtzy.com/new/web/web/xy/index.asp?fxmc=LC0xMzg0OSwtMTc0MzksLTE2NDQyLC0xMTg2NSwtMTY5NDgsLTExODY1LC0xOTc3Nw">社会科学教学部</option>
+	
+	<option value="http://www.gzhtzy.com/new/web/web/web/showIntro.asp?lmmc=LDU2LDUz">成人教育部</option>
+	
+	<option value="http://www.gzhtzy.com:8099/zs/index.asp">招生网</option>
+	
+	<option value="http://www.gzhtzy.com/web/web/jy/index.asp">就业网</option>
+	
+	<option value="http://www.gzhtzy.com:83/zzjy/">中等职业教育部</option>
+	
+  </select>
+			   </td>
+			   </tr>
+			   <tr>
+			   <td align="center" style="background-image:url(images/dh.gif);background-repeat:no-repeat;background-position: center center;">
+					<select name="select2" class="textbox" onchange="MM_jumpMenu('parent',this,0)">
+                  
+				  <option selected="selected">--------校外导航--------</option>
+				  
+				   <option value="http://www.asu.edu.cn">安顺学院 </option>
+				  
+				   <option value="http://gzbjzy.jincin.com">毕节职业技术学院 </option>
+				  
+				   <option value="http://www.gmc.edu.cn">贵阳医学院 </option>
+				  
+				   <option value="http://www.gzu.edu.cn">贵州大学 </option>
+				  
+				   <option value="http://www.gzeic.com/">贵州电子信息职业技术学院 </option>
+				  
+				   <option value="http://www.gzky.edu.cn">贵州工业职业技术学院 </option>
+				  
+				   <option value="http://www.gzjtzy.net/">贵州交通职业技术学院 </option>
+				  
+				   <option value="http://www.gznu.edu.cn">贵州师范大学 </option>
+				  
+				   <option value="http://www.gzytvc.cn">贵州亚泰职业学院 </option>
+				  
+				   <option value="http://www.kluniv.cn">凯里学院 </option>
+				  
+				   <option value="http://www.trzy.cn/">铜仁职业技术学院 </option>
+				  
+				   <option value="http://www.zmc.edu.cn/">遵义医学院 </option>
+				  
+				   <option value="http://mts.zmc.edu.cn">遵义医学院与科技学院 </option>
+				  
+				   <option value="http://www.zunyiyizhuan.com/">遵义医学专科学院 </option>
+				  
+                </select>
+			   </td>
+			   </tr>
+			   <tr height="46">
+			   <td width="235" align="center" style="background-image:url(images/dh.gif);background-repeat:no-repeat;background-position: center center;">
+			   <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+			   <tr>
+			     <form method=get action="http://www.google.com/search">
+					<td width="35" ><img src="images/search.gif" width="20" height="20"></td>
+                    <td width="120">
+					<input type=text name=q style="width:100px;" value="计算机">
+					</td>
+					<td width="60"> 
+					<input type=submit name=btnG  value="站内检索">
+					</td>					
+					<input type=hidden name=as_qdr value=y> <!-- 只搜索1年内 -->
+					<input type=hidden name=ie value=GB2312>
+					<input type=hidden name=oe value=GB2312>
+					<input type=hidden name=hl value=zh-CN>	
+					<input type=hidden name=sort value="date-sdate">
+					<input type=hidden name=domains value="www.gzhtzy.com">
+					<input type=hidden name=sitesearch value="www.gzhtzy.com">
+					</form>
+<!--百度站内搜索 <form action="http://www.baidu.com/baidu">
+<input type=text name=word>
+<input type="submit" value="搜索">
+<input name=tn type=hidden value="bds">
+<input name=cl type=hidden value="3">
+<input name=ct type=hidden value="2097152">
+<input name=si type=hidden value="www.gzhtzy.com">
+</form> -->
+			   <!--
+			   <td align="center" width="49%" class="focus"><a href="showDh.asp?lei=LC0xMTMxMSwtMTQzNTksLTE1OTQ4LC0xNjk0MQ" class="dh">网络导航</a></td><td width="2%"><img src="images/line.gif" width="3" height="22" alt=""></td><td align="center" width="49%" class="focus"><a href="showDh.asp?lei=LC0xMjgwOCwtMTA4MTgsLTE4OTg0LC0xMjg2OA" class="dh">网站地图</a></td>
+			   -->
+			   </tr>  
+
+			   </table>
+			   </td>
+			   </tr>
+          </table>
+	 </td>
+	 <td width="12"></td>
+ </table>
+ <script type="text/JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+			</script>
+	    </td>
+		<td width="726" height="393"  valign=top>
+			<style type=text/css>
+td {font-size:12px;}
+.kxdh {font-size:14px;font-family:Gungsuh;color:white; TEXT-DECORATION: none}
+</style> 
+
+<table border="0" id="__right" width="726" height="100%"  cellpadding="0" cellspacing="0" style="TABLE-LAYOUT: fixed;">
+	<tr>
+		<td width="726" height="135">
+	    
+<TABLE cellSpacing=0 cellPadding=0 width="98%" height="100%" border=0 align="center" valign="top">
+
+<tr height="30">
+<td width="100%" colspan="2">
+<table cellSpacing=0 cellPadding=0 width="98%" height="100%" border=0>
+<tr height="30">
+<td id="AD2m1"  class="AD2MenuOn"  onmouseover="SwitchTabMenu(1,2,3);" align="center" style="font-size:12px;">图片新闻一</td>
+<td id="AD2m2"  class="AD2MenuOff"  onmouseover="SwitchTabMenu(2,2,3);" align="center" style="font-size:12px;">图片新闻二</td>
+<td id="AD2m3"  class="AD2MenuOff"   onmouseover="SwitchTabMenu(3,2,3);" align="center" style="font-size:12px;">图片新闻三</td>
+<td width="420" align="right"><a href=show_xw.asp?lei=LC0xMjg2OCwtMTQ2NzYsLTEyMDk0LC0xMjYwMw><font size=2 >更多</font>>>&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr height="115" valign="top">
+<td valign="top">
+    
+	
+	<div id="AD2con1" > 
+    <table width="100%" height="100%" align="center" border="0" valign="top">
+	<tr>
+	<td width="100%" valign=top align="left">
+	<!--
+	<a href='show_xbxw.asp?id=LDQ5LDQ5LDU2LDUxLDU0'><img src="http://www.gzhtzy.com/word/LDExOSwxMjIsLTEyMzYzLC0xOTc3NywtMTgwMDUsLTE4MjAyLDk1LC0xMzYwOSwtMTE1OTcsLTEyODY4LC0xNDY3Niw5NSw0OSw0OSw1Niw1MSw1NA.jpg" width="177" height="102"  alt="" border=0></a> -->
+		<a href='show_xbxw.asp?id=LDQ5LDQ5LDU2LDUxLDU0'><img src="http://www.gzhtzy.com/word/LDExOSwxMjIsLTEyMzYzLC0xOTc3NywtMTgwMDUsLTE4MjAyLDk1LC0xMzYwOSwtMTE1OTcsLTEyODY4LC0xNDY3Niw5NSw0OSw0OSw1Niw1MSw1NA.jpg" width="250" height="150"  alt="" border=0></a>
+	</td>
+	</tr>
+    </table>
+	</div>
+	
+	<div id="AD2con2" style="display:none;"> 
+    <table width="100%" height="100%" align="center" border="0" valign="top">
+	<tr>
+	<td width="100%" valign=top align="left">
+	<!--
+	<a href='show_xbxw.asp?id=LDQ5LDQ5LDU2LDUxLDUz'><img src="http://www.gzhtzy.com/word/LDExOSwxMjIsLTEyMzYzLC0xOTc3NywtMTgwMDUsLTE4MjAyLDk1LC0xMzYwOSwtMTE1OTcsLTEyODY4LC0xNDY3Niw5NSw0OSw0OSw1Niw1MSw1Mw.jpg" width="177" height="102"  alt="" border=0></a> -->
+		<a href='show_xbxw.asp?id=LDQ5LDQ5LDU2LDUxLDUz'><img src="http://www.gzhtzy.com/word/LDExOSwxMjIsLTEyMzYzLC0xOTc3NywtMTgwMDUsLTE4MjAyLDk1LC0xMzYwOSwtMTE1OTcsLTEyODY4LC0xNDY3Niw5NSw0OSw0OSw1Niw1MSw1Mw.jpg" width="250" height="150"  alt="" border=0></a>
+	</td>
+	</tr>
+    </table>
+	</div>
+	
+	<div id="AD2con3" style="display:none;"> 
+    <table width="100%" height="100%" align="center" border="0" valign="top">
+	<tr>
+	<td width="100%" valign=top align="left">
+	<!--
+	<a href='show_xbxw.asp?id=LDQ5LDQ5LDU2LDUxLDUx'><img src="http://www.gzhtzy.com/word/LDExOSwxMjIsLTEyMzYzLC0xOTc3NywtMTgwMDUsLTE4MjAyLDk1LC0xMzYwOSwtMTE1OTcsLTEyODY4LC0xNDY3Niw5NSw0OSw0OSw1Niw1MSw1MQ.jpg" width="177" height="102"  alt="" border=0></a> -->
+		<a href='show_xbxw.asp?id=LDQ5LDQ5LDU2LDUxLDUx'><img src="http://www.gzhtzy.com/word/LDExOSwxMjIsLTEyMzYzLC0xOTc3NywtMTgwMDUsLTE4MjAyLDk1LC0xMzYwOSwtMTE1OTcsLTEyODY4LC0xNDY3Niw5NSw0OSw0OSw1Niw1MSw1MQ.jpg" width="250" height="150"  alt="" border=0></a>
+	</td>
+	</tr>
+    </table>
+	</div>
+	
+
+</td>
+<td valign="top" align="left" width=100%>
+ <div id="AD2conT1" >  
+   <table width="100%" align="center" border="0" valign="top">
+   <tr><td width="10">&nbsp;</td><td align="center" class="pict"><b>学院组织全体职工观看《大国重器》</b></td></tr>
+   <tr><td width="10">&nbsp;</td><td align="left" style="font-size:12px;">  5 月25  日下午，学院工会组织新蒲校区全体教职工在8101  多功能厅观看了专题纪录片《大国重器》第一、二集。        
+       
+       &nbsp;    
+   该纪录片从 C919 大飞机的设计、系统集成说起，全景式展现中国制造的实力与魅力。观看过程中，大家被纪录片中宏大的场面和真实的细节深深震撼。作为一个有担当的大国，只有装备制造业发展上去，才能够铸就大国重器，中国才能挺起脊梁，真正的成为大国。全体教职工对影片中介绍的工程师们专注、专业的精神所折服，纷纷表示要认真学习大国重器中工匠们精益求精的优秀品质、坚韧不拔的...</td></tr>
+   </table>
+ </div>
+  <div id="AD2conT2" style="display:none;">  
+  <table width="100%" align="center" border="0" valign="top">
+  <tr><td width="10">&nbsp;</td><td align="center" class="pict"><b>学院召开2018年大型校园招聘会工作部署会</v></td></tr>
+   <tr><td width="10">&nbsp;</td><td align="left" style="font-size:12px;">  5 月24  日上午，由学院招生就业处处长陈兰芬主持的2018  年大型校园招聘会工作部署会在一号会议室召开。    学院    院长唐明华、副院长张亚军、各系    （    部门    ）    负责人出席本次会议。        
+       
+       
+    &nbsp;   
+   首先，招生就业处处长助理王文涛就 2018 年大型校园招聘会作了介绍，并做了相应的工作安排。相关部门负责人根据自己的工作安排提出问题并讨论。       
+    &nbsp;   
+   张亚军在听取各方意见后，指出：第一， 2016 级...</td></tr>
+   </table>
+ </div>
+  <div id="AD2conT3" style="display:none;">  
+  <table width="100%" align="center" border="0" valign="top">
+  <tr><td width="10">&nbsp;</td><td align="center" class="pict"><b>学院副院长冯伟为虾子校区学生作专题讲座</b></td></tr>
+   <tr><td width="10">&nbsp;</td><td align="left" style="font-size:12px;">  5月18日，中职部邀请学院副院长冯伟为虾子校区学生作“如何防范网络成瘾”专题讲座，学生科副科长桂清亮、干事梁乾刚、各班班主任及2017级酒店管理、幼儿教育、机电一体化、计算机广告、会计班全体学生聆听了讲座。       
+    &nbsp;   
+   冯院长就网络的利弊、迷恋网游毒害身心、网络诈骗的危害、网络犯罪、如何有效防范网络诱惑、如何规范中职学生行为等方面作讲座。他以通俗易懂的语言、形象生动的案例、深入浅出的剖析作了全面细致的讲解，同学们专心致志地聆听着冯院长精彩有趣的讲座。   
+       
+   &nbsp; &nbsp; ...</td></tr>
+   </table>
+  </div>
+</td> 
+</tr>
+</table>
+		</td>
+	</tr>
+	
+	<tr height="192">
+		<td width="726" valign=top>
+        <table  width="98%" height="100%" border="0" cellpadding="0" cellspacing="0">
+		<tr height="34">
+		<td width="50%"  style="background-image:url(images/noticeMenuBg.gif);background-repeat:no-repeat;background-position:center;" class="kxdh">&nbsp;&nbsp;&nbsp;学院新闻&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=show_xw.asp?lei=LC0xMjM2MywtMTk3NzcsLTEyMDk0LC0xMjYwMw><font size=2 color=white>更多>></font></a></td>
+		<td width="50%"  style="background-image:url(images/noticeMenuBg.gif);background-repeat:no-repeat;background-position:center;" class="kxdh">&nbsp;&nbsp;&nbsp;通知公告&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href=show_xw.asp?lei=LC0xMjg4OCwtMTA1ODIsLTE4MDA1LC0xODIwMg><font size=2 color=white >更多>></font></a></td>
+		</tr>
+		<tr height="150">
+		
+		<td width="48%" valign="top" align="center">
+		<TABLE cellSpacing=0 cellPadding=0 width="98%" height="100%"  border=0 align="center" valign="top" style="table-layout:fixed;background-image:url(images/noticeBg2.gif);background-repeat:no-repeat;background-position: left middle;">
+    <TR valign="top" height=15>
+      <td width="10">&nbsp;</td>
+	  <TD width="200" >&nbsp;</td>
+      <TD width="51" >&nbsp;</TD>
+    </TR>
+ 
+   
+    <TR valign="top" height=25>
+	  <td width="10">&nbsp;</td>
+      <TD align=left width="250" valign="top"><a href='show_xbxw.asp?id=LDQ5LDQ5LDU2LDUxLDU2'><font color=black>经济管理系创新创业大师工作室开展大学生创</font></a></td>
+      <TD align=right width="51" valign="top" style="font-size:12px;">2018.5.28&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    </TR>
+ 
+    <TR valign="top" height=25>
+	  <td width="10">&nbsp;</td>
+      <TD align=left width="250" valign="top"><a href='show_xbxw.asp?id=LDQ5LDQ5LDU2LDUxLDQ5'><font color=black>机械工程系举办3D建模比赛</font></a></td>
+      <TD align=right width="51" valign="top" style="font-size:12px;">2018.5.25&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    </TR>
+ 
+    <TR valign="top" height=25>
+	  <td width="10">&nbsp;</td>
+      <TD align=left width="250" valign="top"><a href='show_xbxw.asp?id=LDQ5LDQ5LDU2LDUwLDU2'><font color=black>机械工程系组织开展公开课听评教研活动</font></a></td>
+      <TD align=right width="51" valign="top" style="font-size:12px;">2018.5.24&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    </TR>
+ 
+    <TR valign="top" height=25>
+	  <td width="10">&nbsp;</td>
+      <TD align=left width="250" valign="top"><a href='show_xbxw.asp?id=LDQ5LDQ5LDU2LDUwLDU3'><font color=black>第九届大学生心理健康日延安路校区系列活动</font></a></td>
+      <TD align=right width="51" valign="top" style="font-size:12px;">2018.5.24&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    </TR>
+ 
+    <TR valign="top" height=25>
+	  <td width="10">&nbsp;</td>
+      <TD align=left width="250" valign="top"><a href='show_xbxw.asp?id=LDQ5LDQ5LDU2LDUwLDUx'><font color=black>学院汽车工程系举行学生“一对一结对子”帮</font></a></td>
+      <TD align=right width="51" valign="top" style="font-size:12px;">2018.5.23&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    </TR>
+ 
+    <TR valign="top" height=25>
+	  <td width="10">&nbsp;</td>
+      <TD align=left width="250" valign="top"><a href='show_xbxw.asp?id=LDQ5LDQ5LDU2LDUwLDUy'><font color=black>基础科学系、建筑工程管理系举办大学生心理</font></a></td>
+      <TD align=right width="51" valign="top" style="font-size:12px;">2018.5.23&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    </TR>
+ 
+	
+    
+</TABLE>
+		</td>
+		
+		<td width="48%" valign="top" align="center">
+		<TABLE cellSpacing=0 cellPadding=0 width="98%" height="100%"  border=0 align="center" valign="top" style="table-layout:fixed;background-image:url(images/noticeBg2.gif);background-repeat:no-repeat;background-position: left middle;">
+    <TR valign="top" height=15>
+      <td width="10">&nbsp;</td>
+	  <TD width="200" >&nbsp;</td>
+      <TD width="51" >&nbsp;</TD>
+    </TR>
+ 
+   
+    <TR valign="top" height=25>
+	  <td width="10">&nbsp;</td>
+      <TD align=left width="250" valign="top"><a href='show_xbxw.asp?id=LDQ5LDQ5LDU1LDQ5LDUz'><font color=black>关于加强五一、端午期间廉洁自律工作的通知</font></a></td>
+      <TD align=right width="51" valign="top" style="font-size:12px;">2018.4.27&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    </TR>
+ 
+    <TR valign="top" height=25>
+	  <td width="10">&nbsp;</td>
+      <TD align=left width="250" valign="top"><a href='show_xbxw.asp?id=LDQ5LDQ5LDU1LDQ5LDQ5'><font color=black>关于2018年“五一节”放假的通知</font></a></td>
+      <TD align=right width="51" valign="top" style="font-size:12px;">2018.4.25&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    </TR>
+ 
+    <TR valign="top" height=25>
+	  <td width="10">&nbsp;</td>
+      <TD align=left width="250" valign="top"><a href='show_xbxw.asp?id=LDQ5LDQ5LDU1LDQ5LDUx'><font color=black>学院五·四表彰名单公示（2017—201</font></a></td>
+      <TD align=right width="51" valign="top" style="font-size:12px;">2018.4.25&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    </TR>
+ 
+    <TR valign="top" height=25>
+	  <td width="10">&nbsp;</td>
+      <TD align=left width="250" valign="top"><a href='show_xbxw.asp?id=LDQ5LDQ5LDU0LDUzLDU3'><font color=black>关于国家职业资格技能鉴定考试的通知</font></a></td>
+      <TD align=right width="51" valign="top" style="font-size:12px;">2018.4.12&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    </TR>
+ 
+    <TR valign="top" height=25>
+	  <td width="10">&nbsp;</td>
+      <TD align=left width="250" valign="top"><a href='show_xbxw.asp?id=LDQ5LDQ5LDU0LDUyLDUw'><font color=black>关于办理2018年度教师教龄荣誉证书工作</font></a></td>
+      <TD align=right width="51" valign="top" style="font-size:12px;">2018.4.10&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    </TR>
+ 
+    <TR valign="top" height=25>
+	  <td width="10">&nbsp;</td>
+      <TD align=left width="250" valign="top"><a href='show_xbxw.asp?id=LDQ5LDQ5LDU0LDUyLDUx'><font color=black>关于2018年申报高校教师资格的有关通知</font></a></td>
+      <TD align=right width="51" valign="top" style="font-size:12px;">2018.4.10&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+    </TR>
+ 
+	
+    
+</TABLE>
+		</td>
+		</tr>
+<!--显示常用链接部分数据-->
+			
+	    <tr height="62">
+		<td align="center" width="100%" colspan="2">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+			<td width="5"></td>
+			<td width="716">
+			<div align="left"><img src="images/index&#x6539;_03.gif" width="699" height="62" alt="" border="0" usemap="#Map"></div>
+			</td>
+			</tr>
+			</table>
+		</td>
+		</tr>
+
+		</table>
+		</td>
+	</tr>
+
+
+	<table>
+			</td>
+	</tr>
+</table>
+
+<map name="Map">
+<area shape="circle" coords="56,24,24" href="yzxxList.asp" target="_new">
+<area shape="circle" coords="156,24,24" href="qqjl.asp" target="_new">
+<area shape="circle" coords="255,24,24" href="showDh.asp?lei=LC0xMTMxMSwtMTQzNTksLTE1OTQ4LC0xNjk0MQ" target="_new">
+<area shape="circle" coords="357,24,24" href="showDh.asp?lei=LC0xMjgwOCwtMTA4MTgsLTE4OTg0LC0xMjg2OA" target="_new">
+<area shape="circle" coords="458,24,24" href="show.asp?fxmc=LDU2LDU3" target="_new">
+<area shape="circle" coords="555,24,24" href="show.asp?fxmc=LDQ5LDQ5LDU0" target="_new">
+<area shape="circle" coords="652,24,24" href="mailto:100187@gzhtzy.com">
+</map>
+		</td>
+	</tr>
+	
+</table>
+		</td>
+	</tr>
+        <tr>
+	  <td width="100%" height="50">
+	      	<style type="text/css">
+
+
+
+.newFoot {
+	font-family: "宋体";
+	font-size: 12px;
+	text-decoration: none;
+	color: #616161;
+}
+</style>
+
+<table width="100%" height="40" align="center" border="0" style="background-image:url(../web/images/foot.gif);background-repeat:no-repeat;background-position: center center;" >
+		<tr height="24">
+		<td class="foot" align="center" ><span class="newFoot" style="line-height:20px"><br>Copyright:2003版权所有：贵州航天职业技术学院 电话:(0851)28612760 传真:(0851)28612143 招办:0851-28612782
+维护：信息中心 <br>黔ICP备05001716号 最佳显示分辩率：1024*768 通信地址： 贵州省遵义市红花岗区延安路314号    邮编：563000</span> <a href="./show.asp?fxmc=LDQ5LDQ4LDU2" target=_blank>隐私说明</a>&nbsp;&nbsp;<a href="./show.asp?fxmc=LDQ5LDQ4LDU3" target=_blank>版权声明</a>
+
+<span class="newFoot" style="line-height:20px">访问量:<a href="fwl_tj.asp"><font color=red>3570255</font></a> 今日访问:<a href="fwl_tj.asp?jt=yes"><font color=red>868</font></a> </span>
+
+</td>
+		</tr>
+</table>
+          </td>
+	</tr>
+</table>
+</center>
+</body>
+</html>
+<!-- 网站访问量统计 -->
+<div id="swfDiv" style="position:absolute; top:0; left:0; z-index:99; border:solid 0px;" border=0><!-- 飘的CSS开始 -->
+ <!-- <a href="http://www.gzhtzy.com:82/jsj/Direct/index.html" target="_new101"> -->
+   <div class="slides"><!-- 切换的CSS 开始 -->
+      <div class="ico"></div>  <a href="http://www.gzhtzy.com:82/jsj/Direct/index.html" target="_blank"><img src="images/1-1.jpg" ></a>
+       <a href="http://www.eduknowhow.com"  target="_blank"><img src="images/1-2.jpg" ></a>      
+   </div><!-- 切换的CSS 结束  -->
+</div><!-- 飘的CSS 结束  -->
+<script language="javascript" src="jquery-1.4.2.min.js"></script>
+
+<!-- 以下JS是 图片切换的代码 -->
+<script language="javascript">
+$(function(){
+ var _img=$('.slides img');
+ var _len=_img.length;
+ var _index=0;
+ var _moving;
+ var _ul='<ul>'
+ for(var i=1; i<=_len; i++){
+  _ul=_ul+'<li>'+'</li>';
+ }
+ _ul=_ul+'</ul>';
+ $('div.ico').append(_ul);
+ var _ico=$('.ico li');
+ _ico.mouseover(function(){
+  _index=_ico.index(this);
+  _img.filter(':visible').fadeOut(10,function(){
+   _img.eq(_index).fadeIn(10); //规定图片间的间隔
+  })
+  $(this).addClass('high').siblings().removeClass('high');
+ }).eq(0).mouseover();
+ _moving=setInterval(autoShow,2000);  //规定每张图片的间隔
+ _img.hover(function(){clearInterval(_moving)},function(){
+  _moving=setInterval(autoShow,2000);
+ })
+ function autoShow(){
+  _index++;
+  if(_index==_len) _index=0;
+  _ico.eq(_index).trigger('mouseover');
+ };
+});
+</script>
+
+
+<!-- 以下是飘的JS代码 -->
+
+<script>    
+    var dx=1,dy=1;    
+    var interval=50;    
+    var intervalID=window.setInterval('moveDiv()',interval);    
+    function moveDiv()    {
+        if(window.closed)        {clearInterval(intervalID);}
+        window.status=document.getElementById('swfDiv').style.posLeft+dx;
+        //(window.screen.availWidth-160)   (window.screen.availHeight-80)
+        if(((document.getElementById('swfDiv').style.posLeft+dx)>1200)||((document.getElementById('swfDiv').style.posLeft+dx)<0))//宽度
+        {dx=-dx; }
+        if(((document.getElementById('swfDiv').style.posTop+dy)>745)||((document.getElementById('swfDiv').style.posTop+dy)<0)) //高度
+        {dy=-dy;}
+        document.getElementById('swfDiv').style.posLeft += dx;
+        document.getElementById('swfDiv').style.posTop += dy;    
+		}
+</script>

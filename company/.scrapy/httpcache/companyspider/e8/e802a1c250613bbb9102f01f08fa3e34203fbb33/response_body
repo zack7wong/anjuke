@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>广州涉外经济职业技术学院</title>
+<style type="text/css">
+#logo{
+  margin:80px auto 0 auto;
+  width:330px;
+  height:310px;
+  background-image:url(images/logo_f2.gif) no-repeat;
+  }
+#title {
+	height: 52px;
+	width: 200px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#bottom {
+    background:url(images/logo.gif) no-repeat center center;
+	height: 481px;
+	width: 100%;
+	margin-top:80px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#select {
+	height: 90px;
+	width: 290px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+}
+</style>
+
+<script language="javascript">
+   var c=6;
+   var t;
+   function goUrl()
+    {
+	  t=setTimeout("goUrl()",1000);
+	  c-=1;
+	  if(c==0)
+	  {
+		location.href="index.aspx";
+	  }
+    }    window.onload=goUrl;
+   </script>
+</head>
+
+<body>
+<!--
+<div id="bottom"></div>
+<div id="select"><img src="images/select.jpg" width="290" height="90" border="0" usemap="#Map" />
+<map name="Map" id="Map"><area shape="rect" coords="11,3,75,86" href="index.aspx" />
+<area shape="rect" coords="112,3,179,85" href="http://www.gziec.org" />
+<area shape="rect" coords="216,3,288,85" href="zsxx/index.aspx" /></map></div>
+-->
+    <div style="width:100%; height:481px; background:url(images/logo.gif) no-repeat 50% 0;margin:50px 0 auto;">
+    </div>
+    <div style="margin:0 auto; width:343px; height:122px;"><img src="images/select.gif" alt="" border="0" usemap="#Map" />
+      <map name="Map" id="Map">
+        <area shape="rect" coords="36,16,114,103" href="index.aspx" />
+        <area shape="rect" coords="142,12,214,104" href="http://www.gziec.org" />
+        <area shape="rect" coords="237,13,322,105" href="zsxx/index.aspx" />
+      </map>
+    </div>
+</body>
+</html>

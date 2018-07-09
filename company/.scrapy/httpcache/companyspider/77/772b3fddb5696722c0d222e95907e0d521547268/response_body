@@ -1,0 +1,664 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link href="App_Themes/default/flexslider.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/icomoon-fonts.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/jcarousel.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/mediaelementplayer.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/mediaelementplayer.min.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/mejs-skins.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/mosaic.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/prettyPhoto.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/style.css" type="text/css" rel="stylesheet" /><link href="App_Themes/default/tipsy.css" type="text/css" rel="stylesheet" /><title>
+	上海民办华二初级中学
+</title><meta name="keywords" content="jdxccz;hsefz;hecz;华师大,二附中,华东师范大学,华师二附中,华二初中,嘉定新城,初中,民办,名校,竞赛,中考,全市招生,择校,小升初,初级中学" /><meta http-equiv="refresh" content="1000" /><meta name="description" content="jdxccz;hsefz;hecz;华师大,二附中,华东师范大学,华师二附中,华二初中,嘉定新城,初中,民办,名校,竞赛,中考,全市招生,择校,小升初,初级中学" /><meta name="author" content="unionstars Software" /><meta name="copyright" content="unionstars Software" /><meta name="robots" content="ALL" /><meta name="revisit-after" content="1 days" /><meta name="document-class" content="Published" /><meta name="document-classification" content="Computers" /><meta name="document-rights" content="Copyrighted Work" /><meta name="document-type" content="Public" /><meta name="document-distribution" content="Global" /><meta name="document-state" content="Static" /><meta name="cache-control" content="Public" /><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><link rel="shortcut icon" type="image/x-icon" href="images/hecz2.ico" media="screen" />
+
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+    <!--mediaqueries-->
+    <script type="text/javascript" src="js/modernizr-1.7.min.js"></script>
+    <!--modernizr-->
+    <script type="text/javascript" src="js/ddsmoothmenu.js"> </script>
+    <script type="text/javascript" src="js/menu.js"> </script>
+    <!--menu-->
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"> </script>
+    <!-- list_work -->
+    <script type="text/javascript" src="js/mosaic.1.0.1.js"></script>
+    <!-- mosaic -->
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
+    <!-- prettyPhoto -->
+    <script type="text/javascript" src="js/jquery.tipsy.js"></script>
+    <!--tooltip-->
+    <script type="text/javascript" src="js/grayscale-image.js"></script>
+   <!-- Grayscale Image -->
+    <script src="js/mediaelement-and-player.min.js"></script>
+
+<link type="text/css" rel="stylesheet" href="/Portal/WebResource.axd?d=o5cerx6VrZuw39GGL-ybk5xo8-hdLdpH30LYkdP-CzmkS6ON0aFl46YkRdw6QvhbnMyA5wiAYDaQ4zpN60CCuPr8V3umhj8JOcmF3T6qELbG74NiLb36yDxX6bNnWWXYba4UyGvv7qqZiV68h1bDLqLGwicpFdK0HZ1x1W9NEMHsoeHr7Nd1pqL2Gryydrcf0&amp;t=635139986549492855" /><link type="text/css" rel="stylesheet" href="/Portal/WebResource.axd?d=o5cerx6VrZuw39GGL-ybk5xo8-hdLdpH30LYkdP-CzmkS6ON0aFl46YkRdw6QvhbnMyA5wiAYDaQ4zpN60CCuPr8V3umhj8JOcmF3T6qELbG74NiLb36yDxX6bNnWWXYba4UyGvv7qqZiV68h1bDLqLGwicpFdK0HZ1x1W9NEMHsoeHr7Nd1pqL2Gryydrcf0&amp;t=635139986549492855" /><link type="text/css" rel="stylesheet" href="/Portal/WebResource.axd?d=o5cerx6VrZuw39GGL-ybk5xo8-hdLdpH30LYkdP-CzmkS6ON0aFl46YkRdw6QvhbnMyA5wiAYDaQ4zpN60CCuPr8V3umhj8JOcmF3T6qELbG74NiLb36yDxX6bNnWWXYba4UyGvv7qqZiV68h1bDLqLGwicpFdK0HZ1x1W9NEMHsoeHr7Nd1pqL2Gryydrcf0&amp;t=635139986549492855" /></head>
+<body>
+    <form name="aspnetForm" method="post" action="./main.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+    function pageGoctl00_cphContent_CategoryInfos3_Pager1()
+    {
+        var page=document.all['ctl00_cphContent_CategoryInfos3_Pager1_page'];
+        var r=new RegExp('^\\s*(\\d+)\\s*$');
+        if(r.test(page.value))
+        {
+            if(RegExp.$1<1||RegExp.$1>149)
+            {
+                alert('页数必须介于 1 和 149 之间！');
+                page.select();
+                return false;
+            }
+            __doPostBack('ctl00$cphContent$CategoryInfos3$Pager1','Page$' + (document.all['ctl00_cphContent_CategoryInfos3_Pager1_page'].value));
+            return false;
+        }
+        alert('输入页码无效！');
+        page.select();
+        return false;
+    }
+    function pageGoctl00_cphContent_CategoryInfos1_Pager1()
+    {
+        var page=document.all['ctl00_cphContent_CategoryInfos1_Pager1_page'];
+        var r=new RegExp('^\\s*(\\d+)\\s*$');
+        if(r.test(page.value))
+        {
+            if(RegExp.$1<1||RegExp.$1>40)
+            {
+                alert('页数必须介于 1 和 40 之间！');
+                page.select();
+                return false;
+            }
+            __doPostBack('ctl00$cphContent$CategoryInfos1$Pager1','Page$' + (document.all['ctl00_cphContent_CategoryInfos1_Pager1_page'].value));
+            return false;
+        }
+        alert('输入页码无效！');
+        page.select();
+        return false;
+    }
+    function pageGoctl00_cphContent_CategoryInfos4_Pager1()
+    {
+        var page=document.all['ctl00_cphContent_CategoryInfos4_Pager1_page'];
+        var r=new RegExp('^\\s*(\\d+)\\s*$');
+        if(r.test(page.value))
+        {
+            if(RegExp.$1<1||RegExp.$1>47)
+            {
+                alert('页数必须介于 1 和 47 之间！');
+                page.select();
+                return false;
+            }
+            __doPostBack('ctl00$cphContent$CategoryInfos4$Pager1','Page$' + (document.all['ctl00_cphContent_CategoryInfos4_Pager1_page'].value));
+            return false;
+        }
+        alert('输入页码无效！');
+        page.select();
+        return false;
+    }//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6F491722" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAL4kRJ0SmI/gKnIFR4O7XGD+JAdZPR6PJW2yFwVlgBHaEwXceKJXkmHqkgjXjyVu/9K5t2fypqkajU9Zf0oojKq" />
+</div>
+        
+<script language="javascript" type="text/javascript">
+    function changePassword() {
+        var iWidth = 500; //窗口宽度
+        var iHeight = 260; //窗口高度
+        var iTop = (window.screen.height - iHeight) / 2;
+        var iLeft = (window.screen.width - iWidth) / 2;
+        window.showModalDialog("ChangePass.aspx", window, "dialogHeight: " + iHeight + "px; dialogWidth: " + iWidth + "px;dialogTop: " + iTop + "; dialogLeft: " + iLeft + "; resizable: no; status: no;scroll:no");
+    }
+</script>
+<div class="top noPrint">
+    <div id="menu-wrap">
+        <nav id="menu" class="menu" style="margin-top: 0px;">
+            <ul>
+                <li><a href="ZXXS.aspx">在校学生</a></li>
+                <li><a href="WLXS.aspx">未来学生</a></li>
+                <li><a href="JZYG.aspx">教职员工</a> </li>
+                <li><a href="WLJZG.aspx">未来教职工</a> </li>
+                <li><a href="xyh.aspx">华二校友</a></li>
+                <li><a href="/PortalOld/Default.aspx">旧版网站</a></li>
+            </ul>
+        </nav>
+        <span style="float: right;">
+            <span id="ctl00_Nav1_username"></span>
+            <input type="submit" name="ctl00$Nav1$btnLogin" value="登  录" id="ctl00_Nav1_btnLogin" class="toploginbutton" />
+            
+            
+        </span>
+    </div>
+</div>
+
+        
+
+<div class="logo">
+    <a href="main.aspx">
+        <img class="png" src="images/logo.gif"></a>
+</div>
+<div id="header_wrap">
+    <nav id="smoothmenu1" class="ddsmoothmenu">
+        <ul>
+            
+            <li><a href="main.aspx" class="current no-border-left">学校首页</a></li>
+            
+
+            <li><a href="#">学校概况</a>
+                <ul>
+                    <li class="no-border-top"><a href="xzzc.aspx"><i class="icon-m-school-1"></i>&nbsp;&nbsp;校长致辞</a></li>
+                    <li><a href="xxjs.aspx"><i class="icon-m-school-2"></i>&nbsp;&nbsp;学校介绍</a></li>
+                    <li><a href="bxln.aspx"><i class="icon-m-school-3"></i>&nbsp;&nbsp;办学理念</a></li>
+                    <li><a href="xxts.aspx"><i class="icon-m-school-4"></i>&nbsp;&nbsp;学校特色</a></li>
+                    <li><a href="jgsz.aspx"><i class="icon-m-school-5"></i>&nbsp;&nbsp;机构设置</a></li>
+                    <li><a href="xxdl.aspx"><i class="icon-m-school-6"></i>&nbsp;&nbsp;学校导览</a></li>
+                    <li><a href="fpv/index.asp"><i class="icon-m-school-7"></i>&nbsp;&nbsp;学校图库</a></li>
+                </ul>
+            </li>
+            <li><a href="xyxw.aspx">校园新闻</a>
+
+            </li>
+            <li><a href="#">校园生活</a>
+                <ul>
+                    <li class="no-border-top"><a href="ydsr.aspx"><i class="icon-m-life-1"></i>&nbsp;&nbsp;育德树人</a></li>
+                    <li><a href="tdhd.aspx"><i class="icon-m-life-2"></i>&nbsp;&nbsp;团队活动</a></li>
+                    <li><a href="sthd.aspx"><i class="icon-m-life-3"></i>&nbsp;&nbsp;社团活动</a></li>
+                    <li><a href="bjzx.aspx"><i class="icon-m-school-2"></i>&nbsp;&nbsp;班级在线</a></li>
+                    <li><a href="xsry.aspx"><i class="icon-m-life-4"></i>&nbsp;&nbsp;学生荣誉</a></li>
+                    <li><a href="fwzn.aspx"><i class="icon-m-life-5"></i>&nbsp;&nbsp;服务指南</a></li>
+                    <li><a href="xl.aspx"><i class="icon-m-life-6"></i>&nbsp;&nbsp;校历（近期安排）</a></li>
+                </ul>
+            </li>
+            <li><a href="#">教育教学</a>
+                <ul>
+                    <li class="no-border-top"><a href="JSTD.aspx"><i class="icon-m-edu-2"></i>&nbsp;&nbsp;教师团队</a></li>
+                    <li><a href="dyjd.aspx"><i class="icon-m-edu-4"></i>&nbsp;&nbsp;德育基地</a></li>
+                    <li><a href="hzjt.aspx"><i class="icon-m-edu-1"></i>&nbsp;&nbsp;合作讲坛</a></li>
+                    <li><a href="tsyj.aspx"><i class="icon-m-info-3"></i>&nbsp;&nbsp;探索研究</a></li>
+                    <li><a href="kcjh.aspx"><i class="icon-m-edu-3"></i>&nbsp;&nbsp;课程计划</a></li>
+                    <li><a href="tzk.aspx"><i class="icon-m-edu-5"></i>&nbsp;&nbsp;拓展课</a></li>
+                </ul>
+            </li>
+            <li><a href="#">信息公开</a>
+                <ul>
+                    <li class="no-border-top"><a href="flfg.aspx"><i class="icon-m-info-1"></i>&nbsp;&nbsp;法律法规</a></li>
+                    <li><a href="xxzc.aspx"><i class="icon-m-info-2"></i>&nbsp;&nbsp;学校章程</a></li>
+                    <li><a href="xxgh.aspx"><i class="icon-m-info-3"></i>&nbsp;&nbsp;学校规划</a></li>
+                    <li><a href="dwgk.aspx"><i class="icon-m-info-4"></i>&nbsp;&nbsp;党务公开</a></li>
+                    <li><a href="zszx.aspx"><i class="icon-m-info-5"></i>&nbsp;&nbsp;招生咨询</a></li>
+                    <li><a href="sfgs.aspx"><i class="icon-m-info-6"></i>&nbsp;&nbsp;收费公示</a></li>
+                    <li><a href="xygg.aspx"><i class="icon-m-info-7"></i>&nbsp;&nbsp;校园公告</a></li>
+                    <li><a href="yjya.aspx"><i class="icon-m-info-8"></i>&nbsp;&nbsp;应急预案</a></li>
+                </ul>
+            </li>
+            <li><a href="xxss.aspx">搜索栏</a></li>
+        </ul>
+    </nav>
+</div>
+<!--end:header-->
+
+
+        <div id="page_wrap">
+            
+                
+<!--featured slider-->
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('.flexslider').flexslider();
+    });
+</script>
+<div id="featured">
+
+    <div class="flexslider clearfix">
+        <ul class="slides">
+            <li><a href="javascript:void();">
+                <img src="images/1.jpg" alt="Image" /></a></li>
+            <li><a href="javascript:void();">
+                <img src="images/2.jpg" alt="Image" /></a></li>
+            <li><a href="/portal/Info.aspx?categoryId=23&InfoId=3272">
+                <img src="images/3.jpg" alt="Image" /></a></li>
+            <li><a href="http://www.xinhuanet.com/politics/2018lh/index.htm" target="_blank">
+                <img src="images/4.jpg" alt="Image" /></a></li>
+            <li><a href="javascript:void();">
+                <img src="images/5.jpg" alt="Image" /></a></li>
+        </ul>
+    </div>
+
+</div>
+<!--end:flexslider-->
+
+            
+
+            
+    <div class="intro">
+        <div class="one-third">
+            <div style="width: 100%; height: 34px; font-size: 16px; background-color: #a62f0f; color: #ffffff; float: left; line-height: 36px;">
+                <img style="padding: 5px; float: left" src="images/shouye/icon_star.png"><span style="float: left;">最新消息</span><span style="float: right; margin-right: 10px; color: #ffffff;"><a href="xyxw.aspx" style="color: white;">more</a></span>
+            </div>
+            <div class="new">
+                <table id="ctl00_cphContent_CategoryInfos3_DataList1" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+	<tr>
+		<td class="info3">
+        <div id="title">
+            <a id="ctl00_cphContent_CategoryInfos3_DataList1_ctl00_hlTitle" title="校长寄语 传承大学文化 追求卓越品质" href="/portal/Info.aspx?categoryId=13&amp;InfoId=988"><img src="images/hot.gif" border="0">&nbsp;<font color='#000000'>校长寄语 传承大学文化 追求卓越品质</font></a>
+        </div>
+        <div id="content">
+            <a id="ctl00_cphContent_CategoryInfos3_DataList1_ctl00_hlContent" title="这是大学附中的校园，崇尚科学和艺术，洒满生命阳光，充满创新活力。生活在这里的师生员工是最亮丽的风景，他们享受学习、工作的每一天。这里没有绝对权威，有的是彼此尊重。学会学习，学会合作，卓然独立，越而胜己，这是每一位同学的努力目标；关爱学生、敬畏职业，以自己的智慧成就学生的辉煌，这是每一位教师的庄严承诺。我坚信：大学附中文化能够让学生的潜能得到最充分的发展，让教师享受事业成功的幸福，让我们的学校成为品质卓越的一流名校。" href="/portal/Info.aspx?categoryId=13&amp;InfoId=988">这是大学附中的校园，崇尚科学和艺术，洒满生命阳光，充满创新活力。生活在这里的师生员工是...</a>
+        </div>
+        <div id="createDate">
+            <a id="ctl00_cphContent_CategoryInfos3_DataList1_ctl00_hlDate" href="/portal/Info.aspx?categoryId=13&amp;InfoId=988">2012-6-30</a>
+        </div>
+    </td>
+	</tr><tr>
+		<td class="info3">
+        <div id="title">
+            <a id="ctl00_cphContent_CategoryInfos3_DataList1_ctl01_hlTitle" title="“深固难徙，更壹志兮”——记初三年级种橘树" href="/portal/Info.aspx?categoryId=13&amp;InfoId=5689"><img src="images/new.gif" border="0">&nbsp;<font color='#000000'>“深固难徙，更壹志兮”——记初三年级种橘树</font></a>
+        </div>
+        <div id="content">
+            <a id="ctl00_cphContent_CategoryInfos3_DataList1_ctl01_hlContent" title="2018年5月28日早上，我们全体初三学生相约在学校美丽的花园里，种下了属于我们的橘树。
+晨光熹微，每个人的身上都被镀上了淡淡的金色。平日里吵吵闹闹的我们被浸润在这一永恒的时刻中，都不约而同合上了嘴。如顾城笔下&amp;mdash;&amp;mdash;草在结它的种子，风在摇它的叶子的十分美好。
+橘树青涩的果实在风中晃动，枝干内却流动着生命的汁浆，就像当初的我们一样。青涩小苗，茁壮成长。曾经咿呀唱出的校歌已然成了事实。我们像树木似的成熟，不勉强挤它的汁液，满怀信心地立在春日中，等待夏天来到。
+我们把手搭上铲子，为我们的橘树牢固根..." href="/portal/Info.aspx?categoryId=13&amp;InfoId=5689">2018年5月28日早上，我们全体初三学生相约在学校美丽的花园里，种下了属于我们的橘树。
+晨光...</a>
+        </div>
+        <div id="createDate">
+            <a id="ctl00_cphContent_CategoryInfos3_DataList1_ctl01_hlDate" href="/portal/Info.aspx?categoryId=13&amp;InfoId=5689">2018-5-29</a>
+        </div>
+    </td>
+	</tr><tr>
+		<td class="info3">
+        <div id="title">
+            <a id="ctl00_cphContent_CategoryInfos3_DataList1_ctl02_hlTitle" title="学习与欢乐同行——记我校学生2018社会实践活动" href="/portal/Info.aspx?categoryId=13&amp;InfoId=5676"><img src="images/new.gif" border="0">&nbsp;<font color='#000000'>学习与欢乐同行——记我校学生2018社会实践活动</font></a>
+        </div>
+        <div id="content">
+            <a id="ctl00_cphContent_CategoryInfos3_DataList1_ctl02_hlContent" title="五月的微风和煦，吹拂过杨柳，也吹拂过少年的心，就是这么美好的季节。为了使华二学子更加热爱生活，挑战自己，超越自己；培养华二学子团队协作意识，在活动中学习，在体验中获得快乐，在实践中得到成长，5月22日我校预备、初一师生前往上海欢乐谷开展社会实践活动。
+
+早上八点半，师生们在校门口集合整队，大家整装待发，只等大巴缓缓停稳，学子们欢呼雀跃地上车，大巴载着一车兴冲冲的我们在满怀期待中出发。
+
+
+
+经过约一个小时的路程，终于抵达目的地。惊险刺激的跳楼机极速降落，失重感使人尖叫连连，由木头搭建起的谷木游龙..." href="/portal/Info.aspx?categoryId=13&amp;InfoId=5676">五月的微风和煦，吹拂过杨柳，也吹拂过少年的心，就是这么美好的季节。为了使华二学子更加热...</a>
+        </div>
+        <div id="createDate">
+            <a id="ctl00_cphContent_CategoryInfos3_DataList1_ctl02_hlDate" href="/portal/Info.aspx?categoryId=13&amp;InfoId=5676">2018-5-23</a>
+        </div>
+    </td>
+	</tr>
+</table>
+
+
+                <table id="ctl00_cphContent_CategoryInfos1_DataList1" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+	<tr>
+		<td class="info3">
+        <div id="title">
+            <a id="ctl00_cphContent_CategoryInfos1_DataList1_ctl00_hlTitle" title="我校学生在 “2018年上海市初中英语竞赛”中获得好成绩" href="/portal/Info.aspx?categoryId=20&amp;InfoId=5591"><img src="images/hot.gif" border="0">&nbsp;<font color='red'>我校学生在 “2018年上海市初中英语竞赛”中...</font></a>
+        </div>
+        <div id="content">
+            <a id="ctl00_cphContent_CategoryInfos1_DataList1_ctl00_hlContent" title="在刚刚结束的2018年上海市初中英语竞赛中，我校初三同学再创佳绩，23人次闯入决赛，并最终摘得个人一等奖2名、三等奖2名的佳绩，向以下获奖同学和他们的辅导教师表示热烈祝贺！
+
+2018年上海市初中英语竞赛市级获奖名单
+
+一等奖
+范思罕曹雨芊
+三等奖
+郭俊贤朱欣瑜
+
+
+2018年上海市初中英语竞赛区级获奖名单
+一等奖" href="/portal/Info.aspx?categoryId=20&amp;InfoId=5591">在刚刚结束的2018年上海市初中英语竞赛中，我校初三同学再创佳绩，23人次闯入决赛，并最终摘...</a>
+        </div>
+        <div id="createDate">
+            <a id="ctl00_cphContent_CategoryInfos1_DataList1_ctl00_hlDate" href="/portal/Info.aspx?categoryId=20&amp;InfoId=5591">2018-4-9</a>
+        </div>
+    </td>
+	</tr><tr>
+		<td class="info3">
+        <div id="title">
+            <a id="ctl00_cphContent_CategoryInfos1_DataList1_ctl01_hlTitle" title="热烈祝贺我校学生在市十七届初中生科普英语竞赛中获佳绩" href="/portal/Info.aspx?categoryId=20&amp;InfoId=5526"><img src="images/hot.gif" border="0">&nbsp;<font color='red'>热烈祝贺我校学生在市十七届初中生科普英语竞...</font></a>
+        </div>
+        <div id="content">
+            <a id="ctl00_cphContent_CategoryInfos1_DataList1_ctl01_hlContent" title="由上海市科技艺术教育中心组织和举办的上海市第十七届初中学生科普英语竞赛近日落下帷幕。我校学生在竞赛中表现优异、成绩喜人。
+
+低年级组
+一等奖姜天
+二等奖曾智睿李奕楷王忆瑗滕丹亮
+三等奖孙康宇陈书涵周弈成应弘周齐天
+伍斯宇胡嘉伟周煜阳赵小涛龚以恒
+陈默田地汪子涵杨焱博
+
+高年级组
+一等奖陶乐阳范融融
+二等奖范思罕唐彦舟周子霖栾昊洋林书旸
+李继韬周孙祺戴思晗叶子
+三等奖杨邱宇乐周时骏司昊璇
+龚子添陆昕宸沈庆元
+薛亦琦高恺易贺东方
+沈嘉贝张甘霖
+
+学校向获得优异成绩的同学们和他们的指导教师们表示热..." href="/portal/Info.aspx?categoryId=20&amp;InfoId=5526">由上海市科技艺术教育中心组织和举办的上海市第十七届初中学生科普英语竞赛近日落下帷幕。我...</a>
+        </div>
+        <div id="createDate">
+            <a id="ctl00_cphContent_CategoryInfos1_DataList1_ctl01_hlDate" href="/portal/Info.aspx?categoryId=20&amp;InfoId=5526">2018-3-8</a>
+        </div>
+    </td>
+	</tr>
+</table>
+
+
+
+            </div>
+        </div>
+
+        <div class="one-third2">
+
+            
+
+<script>
+    $('.videoInfo ul')
+    $(function () {
+        $('#videoInfo ul').click(function () {
+            $(this).css("background-color", "#000");
+        });
+    });
+
+    function showVideo(mp4File, wmvFile) {
+        var html = "\
+            <video width='352' height='196' class='mejs-wmp' controls='controls' autoplay='autoplay' preload='auto'>\
+            <source type='video/mp4' src='video/mp4File' />\
+           <embed mediatype='0' type='application/x-mplayer2' pluginspage='http://microsoft.com/windows/mediaplayer/en/download/' src='video/wmvFile' autostart='true' enabled='true' enablecontextmenu='true' fullscreen='false' invokeurls='true' mute='false' stretchtofit='true' windowlessvideo='true' width='352' height='196' palette='black|transparent'></embed>\
+</video>\
+            ";
+        html = html.replace(/mp4File/g, mp4File).replace(/wmvFile/g, wmvFile);
+        $('#videoInfo').html(html);
+
+        if (!($.browser.msie && ($.browser.version == '6.0' || $.browser.version == '7.0' || $.browser.version == '8.0'))) {
+            $('audio,video').mediaelementplayer({
+                success: function (player, node) {
+                    $('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+                }
+            });
+        }
+    }
+    
+
+</script>
+<div class="third" style="width: 352px">
+    <div style="width: 100%; height: 34px; font-size: 16px; background-color: #df8e01; color: #fff; float: left; line-height: 36px;">
+        <img style="padding: 8px 5px 5px; float: left" src="images/shouye/icon_vd.png"><span style="float: left;">华二视野</span><span style="float: right; margin-right: 10px; color: #ffffff;"><a href="HESY.ASPX" style="color: #FFF;">more</a></span>
+    </div>
+
+
+
+        <div id="videoInfo">
+        <ul onclick="window.location.href='Info.aspx?categoryId=74&InfoId=2574';" style="cursor:pointer;">
+            <li class="liImg">
+                <img src="images/ymzg.png" /></li>
+            <li class="liTitle" style="background-color: #736F3C;"><span style="margin: 35px auto; line-height: 24px; display: inline-block;">圆梦中国<img src="images/xiaoplay.png"  style="margin-bottom:15px;cursor:pointer"></span></li>
+        </ul>
+        <ul onclick="window.location.href='Info.aspx?categoryId=74&InfoId=2538';" style="cursor:pointer;">
+            <li class="liImg">
+                <img src="images/hfqb.png" /></li>
+            <li class="liTitle" style="background-color:#a62f0f;"><span style="margin: 15px auto; line-height: 24px; display: inline-block;">辉煌从<br />
+                这里起步<img src="images/xiaoplay.png"   style="padding-bottom:25px;cursor:pointer"></span></li>
+        </ul>
+    </div>
+</div>
+
+
+            <div class="third" style="float: right;">
+                <div style="width: 100%; height: 34px; font-size: 16px; background-color: #736F3C; color: #FFFFFF; float: left; line-height: 36px;">
+                    <img style="padding: 8px 5px 5px; float: left" src="images/shouye/icon_line.png"><span style="float: left;">快速链接</span>
+                </div>
+                <div class="line">
+                    
+<div class="line noPrint">
+    <ul>
+        <li id="ctl00_cphContent_CategoryInfos2_liSC">
+            <img src="images/chart.png" />
+            <a id="ctl00_cphContent_CategoryInfos2_HyperLink1" href="SSO.aspx?APP=sc">学业评价系统</a>
+        </li>
+        <li id="ctl00_cphContent_CategoryInfos2_liHomeWorkQuery">
+            <img src="images/exercise.png" />
+            <a id="ctl00_cphContent_CategoryInfos2_HyperLink8" href="SSO.aspx?APP=HomeWorkQuery">作业反馈系统</a>
+        </li>
+        <li id="ctl00_cphContent_CategoryInfos2_liSNS">
+            <img src="images/sns.png" />
+            <a id="ctl00_cphContent_CategoryInfos2_HyperLink9" href="SSO.aspx?APP=sns">校园智库</a>
+        </li>
+        <li id="ctl00_cphContent_CategoryInfos2_liBBS">
+            <img src="images/bbs.png" />
+            <a id="ctl00_cphContent_CategoryInfos2_hlBBS" href="SSO.aspx?APP=bbs">校园论坛</a>
+        </li>
+        <li id="ctl00_cphContent_CategoryInfos2_liTSG">
+            <img src="images/icon.png" />
+            <a id="ctl00_cphContent_CategoryInfos2_hlTSG" href="BGJJ.aspx">图书馆</a>
+        </li>
+        <li id="ctl00_cphContent_CategoryInfos2_liXK">
+            <img src="images/book.png" />
+            <a id="ctl00_cphContent_CategoryInfos2_hlXK" href="SSO.aspx?APP=el">网上选课系统</a>
+        </li>
+        <li id="ctl00_cphContent_CategoryInfos2_liDC">
+            <img src="images/food.png" />
+            <a id="ctl00_cphContent_CategoryInfos2_hlDC" href="SSO.aspx?APP=dc">点餐系统</a>
+        </li>
+        
+
+        <li id="ctl00_cphContent_CategoryInfos2_liXF">
+            <img src="images/card.png" />
+            <a id="ctl00_cphContent_CategoryInfos2_hlXF" href="SSO.aspx?APP=xf">一卡通平台</a>
+        </li>
+        <li id="ctl00_cphContent_CategoryInfos2_liMail">
+            <img src="images/email.png" />
+            <a id="ctl00_cphContent_CategoryInfos2_HyperLink5" href="https://mail.hecz.net" target="_blank">邮件系统</a>
+        </li>
+        <li id="ctl00_cphContent_CategoryInfos2_liBJZX">
+            <img src="images/class.png" />
+            <a id="ctl00_cphContent_CategoryInfos2_HyperLink11" href="bjzx.aspx">班级在线</a>
+        </li>
+        <li id="ctl00_cphContent_CategoryInfos2_liZSZX">
+            <img src="images/zszx.png" />
+            <a id="ctl00_cphContent_CategoryInfos2_HyperLink12" href="zszx.aspx">招生咨询</a>
+        </li>
+        
+
+        <li id="ctl00_cphContent_CategoryInfos2_liHSEFZ">
+            <img src="images/hsefz.png" />
+            <a id="ctl00_cphContent_CategoryInfos2_HyperLink10" href="http://www.hsefz.cn" target="_blank">华师大二附中</a>
+        </li>
+
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+</div>
+
+                </div>
+            </div>
+            <div class="third" style="width: 100%; margin-top: 26px">
+                <div style="width: 100%; height: 34px; font-size: 16px; background-color: #CFCFC0; color: #a62f0f; float: left; line-height: 36px;">
+                    <img style="padding: 8px 5px 5px; float: left" src="images/shouye/icon_xiao.png"><span style="float: left;">校园公告</span><span style="float: right; margin-right: 10px; color: #ffffff;"><a href="XYGG.ASPX" style="color: #a62f0f;">more</a></span>
+                </div>
+                <div class="xiao">
+                    <table id="ctl00_cphContent_CategoryInfos4_DataList1" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+	<tr>
+		<td class="info4">
+        <div>
+            <div id="title">
+                <a id="ctl00_cphContent_CategoryInfos4_DataList1_ctl00_hlTitle" title="本周点餐通知（2018.5.19）" href="/portal/Info.aspx?categoryId=23&amp;InfoId=5668"><img src="images/new.gif" border="0">&nbsp;<span style='color:'#000000;float:left;'>本周点餐通知（2018.5.19）</span></a>
+            </div>
+            <div id="createDate">
+                <a id="ctl00_cphContent_CategoryInfos4_DataList1_ctl00_hlDate" href="/portal/Info.aspx?categoryId=23&amp;InfoId=5668">2018-5-17</a>
+            </div>
+        </div>
+        <span id="content">
+            <a id="ctl00_cphContent_CategoryInfos4_DataList1_ctl00_hlContent" title="各位家长，同学：大家好！因下周二（5月22日）春游，以下针对22日当天点餐请注意几点：
+1.为预备、初一年级准备的中午简餐在早餐里显示，有需要的同学可以点选并在早晨领取。
+2.预备、初一年级不要点课间餐与午餐，如有误点导致无法领取将不予退款（因食堂已将食材加工），请大家谅解。
+3.初二、初三年级点餐不受影响。
+大家点餐时请注意并相互告知，谢谢！" href="/portal/Info.aspx?categoryId=23&amp;InfoId=5668">各位家长，同学：大家好！因下周二（5月22日）春游，以下针对22日当天点餐请注意几点：
+1.为预备...</a>
+        </span>
+
+    </td>
+	</tr><tr>
+		<td class="info4">
+        <div>
+            <div id="title">
+                <a id="ctl00_cphContent_CategoryInfos4_DataList1_ctl01_hlTitle" title="上海民办华二初级中学2018年预初新生&quot;面谈&quot;公告" href="/portal/Info.aspx?categoryId=23&amp;InfoId=5663"><img src="images/new.gif" border="0">&nbsp;<img src="images/hot.gif" border="0">&nbsp;<span style='color:'#000000;float:left;'>上海民办华二初级中学2018年预初新生"面谈"公告</span></a>
+            </div>
+            <div id="createDate">
+                <a id="ctl00_cphContent_CategoryInfos4_DataList1_ctl01_hlDate" href="/portal/Info.aspx?categoryId=23&amp;InfoId=5663">2018-5-11</a>
+            </div>
+        </div>
+        <span id="content">
+            <a id="ctl00_cphContent_CategoryInfos4_DataList1_ctl01_hlContent" title="面谈通知：
+我校已通过上海市义务教育入学报名系统发放了面谈通知，请收到通知的同学由一位家长陪同在指定时间到校，请携电子学生证进校参加面谈。
+面谈时本市户籍的学生请带好户口簿，外省市户籍的学生请带好居住证积分证明（满120分且在有效期内），四、五年级学生成长手册（原件），将上述资料统一装在一个文件袋内，以免丢失。
+
+学校地址：上海市嘉定区宝塔路1166号
+咨询电话：59102511；59102500转8511
+咨询时间：周一至周五8:00-16:00
+联系人：陈老师、郭老师
+学校周边停车不便，希望大家绿色出行，地铁11号线白银路站或..." href="/portal/Info.aspx?categoryId=23&amp;InfoId=5663">面谈通知：
+我校已通过上海市义务教育入学报名系统发放了面谈通知，请收到通知的同学由一位家长陪...</a>
+        </span>
+
+    </td>
+	</tr><tr>
+		<td class="info4">
+        <div>
+            <div id="title">
+                <a id="ctl00_cphContent_CategoryInfos4_DataList1_ctl02_hlTitle" title="本周点餐通知（2018.4.29）" href="/portal/Info.aspx?categoryId=23&amp;InfoId=5609"><img src="images/info.gif" border="0">&nbsp;<span style='color:'#000000;float:left;'>本周点餐通知（2018.4.29）</span></a>
+            </div>
+            <div id="createDate">
+                <a id="ctl00_cphContent_CategoryInfos4_DataList1_ctl02_hlDate" href="/portal/Info.aspx?categoryId=23&amp;InfoId=5609">2018-4-28</a>
+            </div>
+        </div>
+        <span id="content">
+            <a id="ctl00_cphContent_CategoryInfos4_DataList1_ctl02_hlContent" title="各位家长，同学：大家好！因五一小长假，本周点餐时间定于4.29（周日）上午10:00至4.30（周一）下午18:00，请大家按时点餐并相互告知，谢谢！" href="/portal/Info.aspx?categoryId=23&amp;InfoId=5609">各位家长，同学：大家好！因五一小长假，本周点餐时间定于4.29（周日）上午10:00至4.30（周一）下...</a>
+        </span>
+
+    </td>
+	</tr>
+</table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--div id="floatDiv" style=" z-index:10000;position:fixed;">
+        <img src="images/kfr.png" style="cursor: pointer;" onclick="window.location.href='http://www.hecz.net/portal/KFRDJ.aspx'" /></div>
+
+    <script type="text/javascript">
+        var step = 1; // 移动的像素
+        var y = -1; // 垂直移动的方向，-1表示向上，1表示向下
+        var x = 1; // 水平移动的方向，-1表示向左，1表示向右
+        function myFloat() {
+            var img = document.getElementById("floatDiv");
+            // 获取图片和当前浏览器窗口上边距，由于img.style.top获取的值带px单位
+            var top = img.style.top.replace("px", "");
+            // 获取图片和当前浏览器窗口左边距
+            var left = img.style.left.replace("px", "");
+            // 上下移动
+            if (top <= 0) {
+                y = 1;
+            }
+            if (top >= window.screen.height) {
+                y = -1;
+            }
+            top = (top * 1) + (step * y);
+            img.style.top = top + "px";
+            // 左右移动
+            if (left <= 0) {
+                x = 1;
+            }
+            if (left >= (window.screen.width - img.clientWidth)) {
+                x = -1;
+            }
+            left = (left * 1) + (step * x);
+            img.style.left = left + "px";
+            setTimeout("myFloat()", 20);
+        }
+
+        myFloat();
+</script-->  
+
+
+            
+
+<div class="linej noPrint">
+    <div style="width: 100%; height: 100%; margin-top: 5px; margin-bottom: 5px; font-size: 14px;">
+        <span class="youq">友情链接：</span>
+        <div class="lineimg">
+             <a href="http://www.moe.edu.cn/">  <img style="float: left; margin: 0 5px 5px 0;" src="images/moe.jpg"></a> 
+             <a href="http://www.shmec.gov.cn/">  <img style="float: left; margin: 0 5px 5px 0;" src="images/shjy.jpg"></a> 
+             <a href="http://www.jd.edu.sh.cn/jdjyw/">  <img style="float: left; margin: 0 5px 5px 0;" src="images/edu.jpg"></a> 
+             <a href="http://www.ecnu.edu.cn/">  <img style="float: left; margin: 0 5px 5px 0;" src="images/ecnu.jpg"></a> 
+             <a href="http://www.hsefz.cn/">  <img style="float: left; margin: 0 5px 5px 0;" src="images/hsefz.jpg"></a> 
+        </div>
+    </div>
+</div>
+
+
+
+
+            
+<div class="footer noPrint">
+    <div align="center" style="padding-left:30px; float:left;">
+        <b>微信公众号</b><br />
+        <img src="images/weixin.jpg" />
+        </div>
+    <div align="center" style="padding: 20px; ">
+        上海民办华二初级中学 Copyright©2015, 未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任.
+        <br />
+        地址：上海市嘉定新城宝塔路1166号 邮编：201821 电话：021-59102500 网络中心：59102500*8537 夏老师 技术支持：<a href="http://www.unionstars.com.cn/" style="color:#FFC000">上海星联信息技术有限公司</a><br />
+        今日点击： <span>
+            <span id="ctl00_Foot1_lblToday">
+                <span id="ctl00_Foot1_lblToday">2004</span></span></span>次 昨日点击：
+        <span>
+            <span id="ctl00_Foot1_lblYestoday">
+                <span id="ctl00_Foot1_lblYestoday">10311</span></span></span>次
+        最高日点击数： <span>
+            <span id="ctl00_Foot1_lblMasDay">
+                <span id="ctl00_Foot1_lblMasDay">152723</span></span></span>次 总共点击：
+        <span>
+            <span id="ctl00_Foot1_lblAll">
+                <span id="ctl00_Foot1_lblAll">19469210</span></span></span>次      推荐使用IE9及以上版本浏览器
+    </div>
+</div>
+
+
+        </div>
+    </form>
+</body>
+</html>

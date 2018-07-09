@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="stylesheet" type="text/css" href="http://www.dylzsc.net/images/v7/style.css">
+<link rel="stylesheet" type="text/css" href="http://www.dylzsc.net/images/v7/cms.css">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+<title>丹阳六中</title>
+<link href="http://www.dylzsc.net/images/dylz/images/css.css" type="text/css" rel="Stylesheet">
+<link href="images/dylz/images/css.css" type="text/css" rel="Stylesheet">
+<script type="text/javascript" src="images/dylz/images/js.js"></script>
+<script type="text/javascript" src="http://www.dylzsc.net/images/dylz/images/js.js"></script>
+<script type="text/javascript" src="images/dylz/images/speed.js"></script>
+<script type="text/javascript" src="http://www.dylzsc.net/images/dylz/images/speed.js"></script>
+
+<script type="text/javascript" src="images/dylz/images/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="http://www.dylzsc.net/images/dylz/images/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="images/dylz/images/jcarousellite.js"></script>
+<script type="text/javascript" src="http://www.dylzsc.net/images/dylz/images/jcarousellite.js"></script>
+<base target="_self" />
+<body>
+<div class="banner">
+<img src='http://www.dylzsc.net/upload_files/label/1_20140924140936_qzcv3.jpg'  width='1002'   border='0' />
+</div>
+
+<div id="Mainmenu">
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" class=over>
+        <dt><a id="id_1" href="http://www.dylzsc.net/"  >网站首页</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a id="id_2" href="http://www.dylzsc.net/list.php?fid-98-page-1.htm"  >校长专栏</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a id="id_3" href="http://www.dylzsc.net/list.php?fid-6-page-1.htm"  >学校概况</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a id="id_4" href="http://www.dylzsc.net/list.php?fid-7-page-1.htm"  >新闻中心</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a id="id_5" href="http://www.dylzsc.net/list.php?fid-8-page-1.htm"  >教师风采</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a id="id_6" href="http://www.dylzsc.net/list.php?fid-9-page-1.htm"  >学生园地</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a id="id_7" href="http://www.dylzsc.net/list.php?fid-10-page-1.htm"  >教育科研</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a id="id_8" href="http://www.dylzsc.net/list.php?fid-71-page-1.htm"  >处室部门</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a id="id_9" href="http://www.dylzsc.net/list.php?fid-11-page-1.htm"  >党建工作</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a id="id_10" href="http://www.dylzsc.net/list.php?fid-12-page-1.htm"  >德育天地</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a id="id_11" href="http://www.dylzsc.net/list.php?fid-222-page-1.htm"  >名师工作室</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a id="id_12" href="http://www.dylzsc.net/list.php?fid-14-page-1.htm"  >学校特色</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a id="id_13" href="http://www.dylzsc.net/list.php?fid-16-page-1.htm"  >校园文化</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a id="id_14" href="http://www.dylzsc.net/list.php?fid-141-page-1.htm"  >课程基地</a></dt>
+
+    </dl>
+
+    
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var obj=document.getElementById("Mainmenu").getElementsByTagName("dl");
+function SubOn(theDl){		
+	for(var i=0;i< obj.length;i++ ){
+		obj[i].className='';
+	}
+	theDl.className='choose';
+	return ;;
+	document.getElementById("searchselect").style.display='none';
+}
+function SubOut(theDl){
+	for(var i=0;i< obj.length;i++ ){
+		obj[i].className='';
+	}
+	theDl.className='over';
+	document.getElementById("searchselect").style.display='';
+}
+//-->
+</SCRIPT>
+<script>
+document.getElementById("id_14").style.background='none';
+</script>
+</div>
+<div class="Tws">
+ <div class="time">
+<script type="text/javascript">
+function GetDateT()
+{
+var d,s,str,num,day;
+d = new Date();
+mum=d.getDay();
+switch (mum) {
+case 0:
+day = "日";
+break;
+case 1:
+day= "一";
+break;
+case 2:
+day = "二";
+break;
+case 3:
+day = "三";
+break;
+case 4:
+day = "四";
+break;
+case 5:
+day = "五";
+break;
+case 6:
+day = "六";
+break;
+}
+s = d.getFullYear() + " 年 ";
+s = s+(d.getMonth() +1) + " 月 ";
+s +=d.getDate() + " 日 ";
+s =s+" 星期"+day+" ";
+s+=d.getHours()+":"+d.getMinutes();
+return(s);
+}
+myDate=GetDateT();
+document.write(myDate) ;
+</script>
+ </div>
+ <div class="wear" style="width:250px;">
+<!--<iframe width="200" scrolling="no" height="15" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=11&icon=1&py=danyang"></iframe> -->
+<td tyle="width:280px;float:left;line-height:15px;">
+   <marquee style="width:280px;float:left;height:28px;font-size:14px;color:red;line-height:28px;" 
+
+direction=left height=28 id=helpor_net onmouseout=helpor_net.start() 
+
+onmouseover=helpor_net.stop() scrollamount=2 scrollDelay=50 behavior=scroll >
+<a href="list.php?fid-268-page-1.htm" style="color:red;width:280px;">社会主义核心价值观：富强、民主、文明、和谐，自由、平等、公正、法治，爱国、敬业、诚信、友善。八礼”为仪表之礼、餐饮之礼、言谈之礼、待人之礼、行走之礼、观赏之礼、游览之礼、仪式之礼。“四仪”主要是在学生7岁、10岁、14岁、18岁时，学校要为其组织入学仪式、成长仪式、青春仪式、成人仪式，以此教育引导未成年人强化文明礼仪素养</a>
+   </marquee></td>
+ </div>
+ <div class="search">
+ <form name="form1" method="post" action="do/search.php" onsubmit="return cksearch();">   
+<input id="keyword_s" type="text" name="keyword" value="&nbsp;&nbsp;请输入关键字" onblur="if(this.value=='')this.value='&nbsp;&nbsp;请输入关键字';" onfocus="if(this.value=='&nbsp;&nbsp;请输入关键字')this.value='';">
+<input type="submit" name="Submit" value="搜索" id="submit">
+      </form><script type="text/javascript">
+<!--
+function cksearch(){
+	if (document.getElementById("keyword_s").value=='')
+	{
+		alert('关键字不能为空!');
+		return false;
+	}
+}
+//-->
+</script>
+ </div>
+</div>
+<!--
+-->
+<style>
+a.Ajiang{color:#de4545}
+</style>
+<!--<div style="float:right;position:fixed;top:50px;right:10px;">
+<a href="http://www.dylzsc.net/list.php?fid-232-page-1.htm" target="_blank"><img src="upload_files/other/1_20151030101046_rgj0q.gif" style="width:130px;height:44px;"></a>
+</div>-->
+<div class="index">
+ <div class="left">
+  <div class="xzzl">
+   <div class="xzzl_t">
+   校长专栏
+   </div>
+   <div class="xzzl_b">
+    <li><img src='http://www.dylzsc.net/upload_files/label/1_20140924160944_oygat.jpg'    border='0' /></li>
+    <p style="color:#000;">校长：姜丹敏</p>
+    <p>倾心为学生发展着想</p>
+    <p>顷情为教师发展服务&nbsp;<a href="list.php?fid-98-page-1.htm">更多》</a></p>
+   </div>
+  </div>
+  <div class="new">
+   <div class="new_t">
+    <li style="margin-left:15px;display:inline;"  class="hover" onmousemove="setTab
+
+('doc',1,2)" id="doc1">校园快讯</li>
+    <li onmousemove="setTab('doc',2,2)" id="doc2">学校概况</li>
+   </div>
+   <div id="con_doc_1" class="ul">
+    <div><li class="more" style="float:right;"><a href="list.php?fid-23-page-1.htm">更多》
+
+</a></li></div>
+   <div class="new_b">
+       <li class="lisTop">
+     <a href="http://www.dylzsc.net/bencandy.php?fid-23-id-4616-page-1.htm"><img src="http://www.dylzsc.net/upload_files/article/23/26_20180522090523_jmfuv.jpg" width="188" height="180"></a>
+     <p>丹阳六中举行先进教师（党员..</p>
+    </li>
+
+<li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-79-id-4629-page-1.htm">喜报</a>[05-24]</li><li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-39-id-4628-page-1.htm">争做“教书育人党员模范”</a>[05-24]</li><li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-39-id-4627-page-1.htm">争做“教书育人党员模范”</a>[05-24]</li><li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-165-id-4626-page-1.htm">丹阳六中扎实推进争做“教</a>[05-24]</li><li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-165-id-4625-page-1.htm">六中党支部开展以“推动高</a>[05-24]</li><li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-89-id-4623-page-1.htm"> &nbsp;  &nbsp;  &nbsp;  </a>[05-22]</li><li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-140-id-4622-page-1.htm"> &nbsp;  &nbsp;  &nbsp;  </a>[05-22]</li><li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-89-id-4621-page-1.htm">数学生本活动报道</a>[05-22]</li>
+   </div>
+   </div>
+  <div id="con_doc_2" style="display:none;" class="ul">
+   <div><li class="more" style="float:right;"><a href="list.php?fid-6-page-1.htm">更多》
+
+</a></li></div>
+   <div class="new_b">
+       <li class="lisTop">
+     <a href="http://www.dylzsc.net/bencandy.php?fid-93-id-1718-page-1.htm"><img src="http://www.dylzsc.net/upload_files/article/93/1_20140926140947_1pnny.jpg"></a>
+     <p>文化石：觉悟</p>
+    </li>
+    
+    
+   <li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-121-id-3695-page-1.htm">姜丹敏校长简介</a>[05-24]</li><li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-127-id-3386-page-1.htm">我校朱万喜校长获评江苏省</a>[11-11]</li><li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-127-id-3385-page-1.htm">朱万喜校长再度荣获“镇江</a>[11-11]</li><li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-127-id-3384-page-1.htm">特级教师朱万喜走进江苏省</a>[11-11]</li><li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-127-id-3383-page-1.htm">丹阳六中朱万喜荣获“全国</a>[11-11]</li><li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-127-id-3382-page-1.htm">朱万喜校长进入“江苏人民</a>[11-11]</li><li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-127-id-3381-page-1.htm">朱万喜校长参加第十一届全</a>[11-11]</li><li class="lisBom"><a href="http://www.dylzsc.net/bencandy.php?fid-127-id-3380-page-1.htm">朱万喜校长在省“名师团送</a>[11-11]</li>
+   </div>
+   </div>
+  </div>
+  <div class="henf">
+  <!--滚动-->
+   <div class="blk_18">
+                                  <div class="nav_LeftBotton" style="width:50px;"><a class="LeftBotton" 
+
+onmousedown="ISL_GoDown_1()" onmouseup="ISL_StopDown_1()" onmouseout="ISL_StopDown_1()" 
+
+href="javascript:void(0);" target="_self" onfocus="this.blur()"></a></div>
+                                    <div class="pcont" id="ISL_Cont_1">
+                                        <div class="ScrCont">
+                                            <div id="List1_1">
+                                                <ul class="gundong_ul">
+ <li><a style="float:left" href="http://www.dylzsc.net/do/showsp.php?fid-4-id-27-page-1.htm" title="女
+
+足专题"><img src="images/dylz/images/henf.jpg"  width="746" height="163"></a></li>          
+
+                                     
+ <li><a style="float:left" href="http://www.dylzsc.net/do/showsp.php?fid-4-id-27-page-1.htm" title="女
+
+足专题"><img src="images/dylz/images/henf1.jpg" width="746" height="163"></a></li>
+
+                                                </ul>
+                                            </div>
+                                            <div id="List2_1">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nav_RightBotton" style="width:50px; left: 696px;"><a class="RightBotton" 
+
+onmousedown="ISL_GoUp_1()" onmouseup="ISL_StopUp_1()" onmouseout="ISL_StopUp_1()" 
+
+href="javascript:void(0);" target="_self" onfocus="this.blur()">
+                                    </a></div>
+                                </div>
+                                <script type="text/javascript">
+                                    picrun_ini()
+                                </script>
+                                <!--滚动结束-->
+   
+  </div>
+  <div class="gt">
+   <div class="gt_t">
+   <li class="gt1">教育科研</li>
+   <li class="more1" style="float:right;"><a href="list.php?fid-10-page-1.htm">更多》</a></li>
+   </div>
+   <div class="gt_b">
+   <li><a href="http://www.dylzsc.net/bencandy.php?fid-34-id-4435-page-1.htm">《高中主题班会设计技巧与案例》课题阶..</a>2017-12-18</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-34-id-4434-page-1.htm">《高中主题班会设计技巧与案例》课题阶..</a>2017-12-18</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-34-id-4433-page-1.htm">《高中主题班会设计技巧与案例》课题阶..</a>2017-12-18</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-34-id-4432-page-1.htm">《高中主题班会设计技巧与案例》课题开..</a>2017-12-18</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-34-id-4431-page-1.htm">《高中主题班会设计技巧与案例》课题申..</a>2017-12-18</li>
+
+   </div>
+  </div>
+    <div class="gt" style="float:right">
+   <div class="gt_t">
+   <li class="gt1">学生园地</li>
+   <li class="more1" style="float:right;"><a href="list.php?fid-9-page-1.htm">更多》</a></li>
+   </div>
+   <div class="gt_b">
+<li><a href="http://www.dylzsc.net/bencandy.php?fid-29-id-4601-page-1.htm">高一期中表彰大会</a>2018-05-14</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-29-id-4578-page-1.htm">我校高一陈若灵同学在丹阳中学组演讲比..</a>2018-04-25</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-29-id-4574-page-1.htm">高一清明扫墓活动</a>2018-04-24</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-29-id-4567-page-1.htm">高一励志青春演讲比赛</a>2018-04-24</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-29-id-4547-page-1.htm">六中高一励志青春幸福人生演讲评分细则</a>2018-04-08</li>
+   </div>
+  </div>
+    <div class="gt">
+   <div class="gt_t">
+   <li class="gt1">德育天地</li>
+   <li class="more1" style="float:right;"><a href="list.php?fid-12-page-1.htm">更多》</a></li>
+   </div>
+   <div class="gt_b">
+<li><a href="http://www.dylzsc.net/bencandy.php?fid-40-id-4566-page-1.htm">你为什么一直没有成就——教务处孔主任..</a>2018-04-24</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-40-id-4545-page-1.htm">常规非凡—钱校国旗下讲话</a>2018-04-08</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-40-id-4542-page-1.htm">教务处周主任国旗下讲话</a>2018-04-03</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-40-id-4526-page-1.htm">王雅琴家长讲座——做最好的家长</a>2018-03-28</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-40-id-3975-page-1.htm">国旗下讲话：让我们与文明同行</a>2017-04-11</li>
+   </div>
+  </div>
+    <div class="gt" style="float:right">
+   <div class="gt_t">
+   <li class="gt1">处室部门</li>
+   <li class="more1" style="float:right;"><a href="list.php?fid-71-page-1.htm">更多》</a></li>
+   </div>
+   <div class="gt_b">
+   <li><a href="http://www.dylzsc.net/bencandy.php?fid-79-id-4629-page-1.htm">喜报</a>2018-05-24</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-89-id-4623-page-1.htm"> &nbsp;  &nbsp;  &nbsp;  &nbsp;  英语..</a>2018-05-22</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-89-id-4621-page-1.htm">数学生本活动报道</a>2018-05-22</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-79-id-4618-page-1.htm">2018年青年教师课堂教学比赛文科组</a>2018-05-22</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-79-id-4617-page-1.htm">2018年青年教师课堂教学比赛理科组</a>2018-05-22</li>
+
+   </div>
+  </div>
+  
+</div>
+
+ <div class="right">
+  <div class="Notice">
+   <div class="Notice_t">
+       <li class="more1" style="float:right;"><a style="color:#245dab;" href="list.php?
+
+fid=25">更多》</a></li>
+
+   </div>
+   <div class="Notice_b">
+   <li><a href="http://www.dylzsc.net/bencandy.php?fid-25-id-4586-page-1.htm">2018年体艺特长生报名表</a>18-04-28</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-25-id-4585-page-1.htm">2018年体艺特长生招生简章</a>18-04-28</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-25-id-4557-page-1.htm">丹阳六中2017年政府绩效..</a>18-04-11</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-25-id-4517-page-1.htm">关于参加丹阳市2018年青..</a>18-03-27</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-25-id-4509-page-1.htm">江苏省四星级高中复评自..</a>18-03-19</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-25-id-4504-page-1.htm">丹阳六中省普通高中星级..</a>18-03-19</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-25-id-4487-page-1.htm">丹阳六中获得“2017年度..</a>18-03-05</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-25-id-4468-page-1.htm">2017年度考核优公示</a>18-01-17</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-25-id-4441-page-1.htm">教师岗位等级调整情况公..</a>17-12-25</li>
+   </div>
+  </div>
+  <div class="login">
+   <div class="login_t"> 
+   </div>
+   <div class="login_b">
+     <script language="JavaScript" src="http://www.dylzsc.net/do/hack.php?hack=login&job=js&styletype=0"></script>
+   </div>
+  </div>
+  <div class="Software">
+     <li><a href="http://www.sslibrary.com/" target="_blank"><img src="images/dylz/images/r1.jpg"></a></li>
+   <li><a href="list.php?fid-13-page-1.htm" target="_blank"><img src="images/dylz/images/r2.jpg"></a></li>
+   <li><a href="http://www.jiangsuedu.net/jswx/js/index.jsp" target="_blank"><img src="images/dylz/images/r3.jpg"></a></li>
+   <li><a href="http://zj.eamn.net/am/login.jsf" target="_blank"><img src="images/dylz/images/r4.jpg"></a></li>
+   <li><a href="http://khpt.dyedu.cn/khpt/" target="_blank"><img src="images/dylz/images/r5.jpg"></a></li>
+   <li><a href="list.php?fid-166-page-1.htm" target="_blank"><img src="images/dylz/images/r6.jpg"></a></li>
+
+
+  </div>
+ </div>
+ <div class="culture">
+  <div class="carousel">
+		<a href="javascript:void(0);" class="prev" id="prev-02">&nbsp; </a>
+		<div class="jCarouselLite" id="demo-02">
+			<ul>
+                        <li><a href="http://www.dylzsc.net/bencandy.php?fid-83-id-4614-page-1.htm" target="_blank"><img height="104" width="133" alt="" src="http://www.dylzsc.net/upload_files/article/83/27_20180518180512_yftwm.jpg"></a></li>            <li><a href="http://www.dylzsc.net/bencandy.php?fid-83-id-4596-page-1.htm" target="_blank"><img height="104" width="133" alt="" src="http://www.dylzsc.net/upload_files/article/83/27_20180504190505_ehrkv.jpg"></a></li>            <li><a href="http://www.dylzsc.net/bencandy.php?fid-83-id-4594-page-1.htm" target="_blank"><img height="104" width="133" alt="" src="http://www.dylzsc.net/upload_files/article/83/27_20180504100501_jve62.jpg"></a></li>            <li><a href="http://www.dylzsc.net/bencandy.php?fid-83-id-4592-page-1.htm" target="_blank"><img height="104" width="133" alt="" src="http://www.dylzsc.net/upload_files/article/83/27_20180504100522_mvmis.jpg"></a></li>            <li><a href="http://www.dylzsc.net/bencandy.php?fid-83-id-4589-page-1.htm" target="_blank"><img height="104" width="133" alt="" src="http://www.dylzsc.net/upload_files/article/83/27_20180504100558_hf36h.jpg"></a></li>            <li><a href="http://www.dylzsc.net/bencandy.php?fid-83-id-4584-page-1.htm" target="_blank"><img height="104" width="133" alt="" src="http://www.dylzsc.net/upload_files/article/83/27_20180427150411_uxlog.jpg"></a></li>            <li><a href="http://www.dylzsc.net/bencandy.php?fid-83-id-4581-page-1.htm" target="_blank"><img height="104" width="133" alt="" src="http://www.dylzsc.net/upload_files/article/83/27_20180426170437_okels.jpg"></a></li>            <li><a href="http://www.dylzsc.net/bencandy.php?fid-83-id-4533-page-1.htm" target="_blank"><img height="104" width="133" alt="" src="http://www.dylzsc.net/upload_files/article/83/27_20180328170304_hpbje.jpg"></a></li>            <li><a href="http://www.dylzsc.net/bencandy.php?fid-83-id-4512-page-1.htm" target="_blank"><img height="104" width="133" alt="" src="http://www.dylzsc.net/upload_files/article/83/27_20180321160346_da9g1.jpg"></a></li>            <li><a href="http://www.dylzsc.net/bencandy.php?fid-83-id-4494-page-1.htm" target="_blank"><img height="104" width="133" alt="" src="http://www.dylzsc.net/upload_files/article/90/27_20180309200331_et9bm.jpg"></a></li>
+
+</ul>
+		</div>
+		<a href="javascript:void(0);" class="next" id="next-02">&nbsp; </a>
+		<div class="clear"></div>   
+	</div><!--carousel end-->
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#demo-02').jCarouselLite({
+			btnPrev: '#prev-02',
+			btnNext: '#next-02',
+			auto: 800,
+    		speed: 1000
+		});		
+	});
+	</script>
+
+ 
+ </div>
+    <div class="gt">
+   <div class="gt_t">
+   <li class="gt1">制度规划</li>
+   <li class="more1" style="float:right;"><a href="list.php?fid-13-page-1.htm">更多》</a></li>
+   </div>
+   <div class="gt_b">
+   <li><a href="http://www.dylzsc.net/bencandy.php?fid-83-id-4614-page-1.htm">新疆班开展“弘扬红十字精神”黑板报评比</a>2018-05-18</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-83-id-4596-page-1.htm">我校新疆班举行“英语课本剧”比赛</a>2018-05-04</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-83-id-4594-page-1.htm">我校新疆班举行“庆五一”篮球比赛</a>2018-05-04</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-83-id-4592-page-1.htm">我校新疆班举行“庆五一”足球比赛</a>2018-05-04</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-83-id-4589-page-1.htm">我校新疆班举行大学生回访母校经验交流会</a>2018-05-04</li>
+
+   </div>
+  </div>
+    <div class="gt" style="float:left;margin-left:10px;display:inline;">
+   <div class="gt_t">
+   <li class="gt1">课程基地</li>
+   <li class="more1" style="float:right;"><a href="list.php?fid-141-page-1.htm">更多》</a></li>
+   </div>
+   <div class="gt_b">
+   <li><a href="http://www.dylzsc.net/bencandy.php?fid-141-id-4047-page-1.htm">课程基地校外实践活动——海昌篇</a>2017-05-06</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-141-id-4046-page-1.htm">课程基地校外实践活动——万新篇</a>2017-05-06</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-141-id-4045-page-1.htm">课程基地校外实践活动——在路上</a>2017-05-06</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-141-id-4018-page-1.htm">青春梦想在路上</a>2017-04-27</li><li><a href="http://www.dylzsc.net/bencandy.php?fid-141-id-4017-page-1.htm">“好眼睛，好视界”课程基地社会实践活动</a>2017-04-27</li>
+   </div>
+  </div>
+  <div class="Inves">
+   <div class="Inves_t">
+    <li>调查反馈</li>
+   </div>
+   <div class="Inves_b">
+    <SCRIPT src='http://www.dylzsc.net/vote/vote.php?job=js&cid=13'></SCRIPT>
+   </div>
+  </div>
+
+
+</div>
+<!--
+-->
+<div style="width:1002px;margin:0 auto;">
+  <div class="bot">
+   <div class="bot_l">
+    <div class="bot_ll">
+     友情链接：
+    </div>
+    <div class="bot_lr">
+        <select name="friend" onChange="if(this.options[this.selectedIndex].value != ''){window.open(this.options[this.selectedIndex].value,'_blank');}">
+					
+<option >---教育门户网站---</option>
+<option value="http://www.moe.edu.cn">中国教育部网站</option><option value="http://www.ec.js.edu.cn/">江苏教育</option><option value="http://www.zje.net.cn">镇江市教育局</option><option value="www.dyedu.cn">丹阳市教育局</option>	</select>
+<select name="friend" onChange="if(this.options[this.selectedIndex].value != ''){window.open(this.options[this.selectedIndex].value,'_blank');}">
+					
+<option >---兄弟学校链接---</option>
+<option value="http://www.dywz.net.cn/">丹阳五中</option><option value="http://www.dysz.net.cn/">吕淑湘中学</option><option value="http://www.sdz.net.cn/">省丹中</option><option value="http://www.dylcgz.cn/">吕城高中</option><option value="http://www.dyelgz.cn/">珥陵高中</option></select>
+<select name="friend" onChange="if(this.options[this.selectedIndex].value != ''){window.open(this.options[this.selectedIndex].value,'_blank');}">
+					
+<option >---教育资源网站---</option>
+<option value="http://www.dyedu.cn/index_6432.html/">丹阳教育资源网</option><option value="http://www.dyjywx.com/">丹阳教育网校</option><option value="http://www.zxxk.com/">中学学科网</option><select>    
+    </div>
+   </div>
+   <div class="cnzz">
+    <li><div style="display:none"><script language="javascript" type="text/javascript" src="http://js.users.51.la/17408080.js"></script>
+<noscript><a href="http://www.51.la/?17408080" target="_blank"><img alt="& # x6211;& # x8981;& # x5566;& # x514D;& # x8D39;& # x7EDF;& # x8BA1;" src="http://img.users.51.la/17408080.asp" style="border:none" /></a></noscript></div>21<script language="javascript" type="text/javascript" src="http://quote.51.la/?id=17408080&mb=1"></script></li>
+   </div>
+  </div>
+ </div> 
+<div class="foot">
+ <ul>
+  主办单位：丹阳市第六中学 地址：丹阳市西门镇丹路1号 电话：0511-86580857   <br>
+<a href="http://www.miitbeian.gov.cn" target="_blank" style="color:#fff">苏ICP备13005094</a> 邮箱：dylz@dylzsc.net<br>
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/11/174/1369/60356860/CA111741369603568600001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+ </ul>
+
+</div>
+
+</body>
+</html>

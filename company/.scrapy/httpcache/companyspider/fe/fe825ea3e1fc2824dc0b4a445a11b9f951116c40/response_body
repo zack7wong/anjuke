@@ -1,0 +1,382 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>合肥市第四十七中学</title>
+<meta name="keywords" content="合肥市第四十七中学">
+<meta name="description" content="合肥市第四十七中学">
+<link rel="stylesheet" type="text/css" href="/TMP/css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<SCRIPT type="text/javascript" src="/TMP/js/jquery-1.10.2.min.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="/TMP/js/main_jquery.js"></SCRIPT>
+<script type="text/javascript" src="/TMP/jslib/myfocus.js"></script>
+<script type="text/javascript" src="/TMP/js/marquee.js"></script>
+<SCRIPT type="text/javascript" src="/TMP/js/xxk.js"></SCRIPT>
+<script type="text/javascript" src="/TMP/js/movead.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="/TMP/js/iepng.js"></script>
+<script type="text/javascript"> 
+EvPNG.fix('img,.bg,.topbg'); </script>
+<![endif]-->
+
+<script type="text/javascript">
+//添加事件响应函数的函数，与本效果无关
+function addEventSimple(obj,evt,fn){
+ if(obj.addEventListener){
+  obj.addEventListener(evt,fn,false);
+ }else if(obj.attachEvent){
+  obj.attachEvent('on'+evt,fn);
+ }
+}
+addEventSimple(window,'load',initScrolling);
+//保存想要滚动的容器
+var scrollingBox;
+var scrollingInterval;
+//用于记录是否"滚到头"过一次
+var reachedBottom=false;
+//记录第一次滚到头时候的scrollTop
+var bottom;
+//初始化滚动效果
+function initScrolling(){
+ scrollingBox = document.getElementById("scrollText");
+ //样式设置，与滚动基本无关，应该用CSS设置。
+ scrollingBox.style.height = "234px";
+ scrollingBox.style.overflow = "hidden";
+ //滚动
+ scrollingInterval = setInterval("scrolling()",50);
+ //鼠标划过停止滚动效果
+ scrollingBox.onmouseover = over;
+ //鼠标划出回复滚动效果
+ scrollingBox.onmouseout = out; 
+}
+//滚动效果
+function scrolling(){
+ //开始滚动,origin是原来scrollTop
+ var origin = scrollingBox.scrollTop++;
+ //如果到头了
+ if(origin == scrollingBox.scrollTop){
+  //如果是第一次到头
+  if(!reachedBottom){
+   scrollingBox.innerHTML+=scrollingBox.innerHTML;
+   reachedBottom=true;
+   bottom=origin;
+  }else{
+   //已经到头过，只需回复头接尾的效果
+   scrollingBox.scrollTop=bottom;
+  }
+ }
+}
+function over(){
+ clearInterval(scrollingInterval);
+}
+function out(){
+ scrollingInterval = setInterval("scrolling()",50);
+}
+</script>
+</head>
+
+<body>
+<div id="Move_12" style=" z-index:9999"><a href="http://www.hf47.net/"  target="_blank"><img src="/system/LinkImages/2018/3/22/201832293642708.jpg" border="0" ></a><div style='font-size:12px;text-align:right;cursor:pointer;color:red;padding-right:5px;' ><span onclick="document.getElementById('Move_12').style.display='none';">关闭</span></div></div><script>var ad1=new AdMove("Move_12");ad1.Run();</script>
+<div class="pagebody">
+<!--[if IE 6]>
+	<script src="/TMP/js/IE6PNG.js"></script>
+	<script type="text/javascript">
+		IE6PNG.fix('*');
+	</script>
+<![endif]-->
+<SCRIPT language=javascript> 
+<!-- 
+window.onerror=function(){return true;} 
+// --> 
+</SCRIPT>
+<div class="header">
+ <div class="topbox">
+   <div class="left logo"><a href="/index.html" target="_blank"><img src="/tmp/images/logo.png" width="280" height="67" /></a></div>
+   <div class="right Select">
+  <form action="/TMP/search.asp" method="get" name="SearchDoc" id="SearchDoc">
+     
+           <ul>
+        <li class="sec"><input name="SearchWords" type="text" id="SearchWords"   onFocus="javascript:if (this.value=='请输入关键字搜索') this.value='';" onBlur="javascript:if (this.value=='') {this.value='请输入关键字搜索';}" value="请输入关键字搜索"/></li>
+        <li class="btn"><input name="submit" type="submit" value="" /></li>
+        <div class="clear"></div>
+      </ul>
+     </form>
+   </div>
+   <div class="clear"></div>
+ </div>
+ <div class="menubox f_yh">
+  <ul>
+   <li id="sy"  class="on"><a href="/index.html">首页</a></li>
+   <li ><a href="/UserData/SortHtml/366030662.html">学校概况</a></li>
+   <li ><a href="/UserData/SortHtml/817568743.html">新闻动态</a></li>
+   <li ><a href="/UserData/SortHtml/381411524.html">党建专栏</a></li>
+   <li ><a href="/UserData/SortHtml/666726465.html">教育教学</a></li>
+   <li ><a href="/UserData/SortHtml/964195037.html">平安校园</a></li>
+   <li ><a href="/UserData/SortHtml/560406276.html">团队讯息</a></li>
+   <li id="last" ><a href="/tmp/Nav_lanmu.asp?ss_id=33">请您留言</a></li>
+   <div class="clear"></div>
+  </ul>
+ </div>
+ <div class="banner"><table border="0" cellspacing="0" cellpadding="0" align="center"><tr bgcolor=""><td><img src="/system/LinkImages/2015/7/7/20157795952584.jpg" border="0" alt="banner"></td></tr></table></div>
+</div>
+
+
+
+      
+
+
+<div class="contain_top"></div>
+<div class="container">
+<div class="contain"> 
+      <!--上面左右大板块-->
+      <div class="mainer">
+        <div class="left leftbox">
+          <div class="xw_top f_yh"> <span class="ico"></span> <a class="tit" href="/UserData/SortHtml/2426679314.html">校园新闻</a> <a class="lm" href="/UserData/SortHtml/8702481910.html">校园介绍</a> <a class="lm" href="/UserData/SortHtml/8257810211.html">规章规划</a> <a class="lm" href="/UserData/SortHtml/9631513213.html">校友感言</a> <a class="more" href="/UserData/SortHtml/2426679314.html">MORE+</a>
+            <div class="clear"></div>
+          </div>
+          <div class="xwconbox mt15">
+            <div class="left twbox">
+          <div id="myFocus" style="width:330px!important; height:258px;"><div class="pic"><ul><li><a href="/UserData/DocHtml/2018/5/16/894898761631.html" target="_blank"><img src="/UserData/UploadFile/2018/5/21/201852127646462.jpg" alt="专家走进教室  把脉..." width="330" height="218" /></a></li><li><a href="/UserData/DocHtml/2018/5/15/945957721628.html" target="_blank"><img src="/UserData/UploadFile/2018/5/16/201851689492623.jpg" alt="当青春期遇上更年期" width="330" height="218" /></a></li><li><a href="/UserData/DocHtml/2018/5/10/174799881614.html" target="_blank"><img src="/UserData/UploadFile/2018/5/11/201851175989052.jpg" alt="合肥47中与合肥市公..." width="330" height="218" /></a></li><li><a href="/UserData/DocHtml/2018/5/8/590604941613.html" target="_blank"><img src="/UserData/UploadFile/2018/5/11/201851198863961.jpg" alt="庐阳区教体局督学专..." width="330" height="218" /></a></li></ul></div></div><script type="text/javascript">
+	myFocus.set({
+	id:'myFocus',
+	pattern:'mF_expo2010'
+});
+</script>
+
+    
+            </div>
+            <div class="right xwbox">
+              <div class="ttbox">
+              <div class="dbt"><a href='/UserData/DocHtml/2018/5/17/121832051632.html' target='_blank' title='增效提质举措施    砥砺奋进攀高峰'><font color=''>增效提质举措施    砥砺奋进攀高峰</font></a></div><div class="xxcon">&nbsp;&nbsp;&nbsp; 2018年5月16日下午5:00，合肥四十七中毕业班第二次中考模拟考试质量分析会如期进行，全体九年级任课老师及所有行政人员参会。...</div>
+                
+              </div>
+              <div class="xw_list">
+              <ul><li><a href="/UserData/DocHtml/2018/5/16/894898761631.html" target="_blank" title="专家走进教室  把脉复习课堂" style="float:left;">专家走进教室  把脉复习课堂</a><span style="float:right;">&nbsp;05-16</span></li><li><a href="/UserData/DocHtml/2018/5/15/945957721628.html" target="_blank" title="当青春期遇上更年期" style="float:left;">当青春期遇上更年期</a><span style="float:right;">&nbsp;05-15</span></li><li><a href="/UserData/DocHtml/2018/5/10/174799881614.html" target="_blank" title="合肥47中与合肥市公安局警令部举行党建共建签约仪式" style="float:left;">合肥47中与合肥市公安局警令部举行党建共建签约仪...</a><span style="float:right;">&nbsp;05-10</span></li><li><a href="/UserData/DocHtml/2018/5/8/590604941613.html" target="_blank" title="庐阳区教体局督学专项督导四十七师德师风建设" style="float:left;">庐阳区教体局督学专项督导四十七师德师风建设</a><span style="float:right;">&nbsp;05-08</span></li><li><a href="/UserData/DocHtml/2018/5/8/565240251612.html" target="_blank" title="探寻徽州文化，品位人文山水" style="float:left;">探寻徽州文化，品位人文山水</a><span style="float:right;">&nbsp;05-08</span></li><li><a href="/UserData/DocHtml/2018/5/4/376399011611.html" target="_blank" title="我校开展微课培训活动" style="float:left;">我校开展微课培训活动</a><span style="float:right;">&nbsp;05-04</span></li><li><a href="/UserData/DocHtml/2018/4/27/315136491609.html" target="_blank" title="合肥47中举行家长委员会培训" style="float:left;">合肥47中举行家长委员会培训</a><span style="float:right;">&nbsp;04-27</span></li></ul>
+                
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="rybox mt15">
+            <div class="left ry_tit"><a href="/UserData/SortHtml/4487577112.html"><img src="/tmp/images/ry_title.jpg" width="73" height="62" alt="荣誉殿堂"/></a></div>
+            <div class="right ry_con">
+              <ul class="ry_imglb">
+               <li><div class="li_div"><a href="/UserData/DocHtml/2018/1/27/554377521527.html" target="_blank" title="2017合肥市经典文学知识挑战赛合肥47中喜获佳绩"><img width="106" height="62" src="/UserData/UploadFile/2018/4/4/20184452733742.jpg" style="border-color:0;" border="0" alt="2017合肥市经典文学知识挑战赛合肥47中喜获佳绩"></a> <div class="con_imgname"><a href="/UserData/DocHtml/2018/1/27/554377521527.html" target="_blank" title="2017合肥市经典文...">2017合肥市经典文...</a></div></div></li><li><div class="li_div"><a href="/UserData/DocHtml/2017/12/5/332810751497.html" target="_blank" title="合肥47中啦啦操队再获佳绩"><img width="106" height="62" src="/UserData/UploadFile/2018/4/4/20184494538094.jpg" style="border-color:0;" border="0" alt="合肥47中啦啦操队再获佳绩"></a> <div class="con_imgname"><a href="/UserData/DocHtml/2017/12/5/332810751497.html" target="_blank" title="合肥47中啦啦操队...">合肥47中啦啦操队...</a></div></div></li><li><div class="li_div"><a href="/UserData/DocHtml/2017/10/14/433239521446.html" target="_blank" title="合肥四十七中杨鹏教师喜获合肥市体育教师基本功赛一等奖"><img width="106" height="62" src="/UserData/UploadFile/2018/4/4/20184497393166.jpg" style="border-color:0;" border="0" alt="合肥四十七中杨鹏教师喜获合肥市体育教师基本功赛一等奖"></a> <div class="con_imgname"><a href="/UserData/DocHtml/2017/10/14/433239521446.html" target="_blank" title="合肥四十七中杨鹏...">合肥四十七中杨鹏...</a></div></div></li><li><div class="li_div"><a href="/UserData/DocHtml/2017/1/6/772579731260.html" target="_blank" title="我校刘海军老师的课例被评为“部级学科德育精品课程”"><img width="106" height="62" src="/UserData/UploadFile/2018/4/4/20184482589089.jpg" style="border-color:0;" border="0" alt="我校刘海军老师的课例被评为“部级学科德育精品课程”"></a> <div class="con_imgname"><a href="/UserData/DocHtml/2017/1/6/772579731260.html" target="_blank" title="我校刘海军老师的...">我校刘海军老师的...</a></div></div></li><li><div class="li_div"><a href="/UserData/DocHtml/2016/8/26/506875381125.html" target="_blank" title="我校篮球代表队在合肥市第十一届全民运动会篮球比赛中再获佳绩"><img width="106" height="62" src="/UserData/UploadFile/2016/9/18/201691893126351.jpg" style="border-color:0;" border="0" alt="我校篮球代表队在合肥市第十一届全民运动会篮球比赛中再获佳绩"></a> <div class="con_imgname"><a href="/UserData/DocHtml/2016/8/26/506875381125.html" target="_blank" title="我校篮球代表队在...">我校篮球代表队在...</a></div></div></li><li><div class="li_div"><a href="/UserData/DocHtml/2015/7/26/40137917611.html" target="_blank" title="我校在“区第七届经典诵读展演”中获得一等奖"><img width="106" height="62" src="/UserData/UploadFile/2015/7/26/201572649378792.jpg" style="border-color:0;" border="0" alt="我校在“区第七届经典诵读展演”中获得一等奖"></a> <div class="con_imgname"><a href="/UserData/DocHtml/2015/7/26/40137917611.html" target="_blank" title="我校在“区第七届...">我校在“区第七届...</a></div></div></li>
+              </ul>
+            </div>
+            <script>
+     $(function(){
+      $(".li_div").each(function(i, target){
+        $(target).mouseenter(function(e){
+            //stop current animation
+            $(target).stop();
+            $(target).find(".con_imgname").stop(false, true);
+            $(target).parent().addClass("cur");
+            $(".li_div").not($(target)).addClass("not_cur");
+            $(target).find(".con_imgname").animate({bottom:"1px"}, "normal");
+            $(target).animate({width:"156px", height:"91px",top:"-17px",left:"-25px"},"normal");
+        });
+        $(target).mouseleave(function(e){
+            $(target).stop();
+            $(target).find(".con_imgname").stop(false, true);
+            $(target).parent().removeClass("cur");
+            $(".li_div").not($(target)).removeClass("not_cur");
+            $(target).find(".con_imgname").animate({bottom:"-27px"}, "normal");
+            $(target).animate({ width:"106px", height:"62px", top:"0", left:"2px"}, "normal");
+        });
+    });
+});
+</script>
+            <div class="clear"></div>
+          </div>
+          <div class="leftban mt15">
+            <div class="left bkbox">
+              <div class="bk_xxktop f_yh">
+          <span class="ico3"></span>
+          <a class="sec2" id="1td0" onMouseOver="javascript:secBoard_more('1td','1tr',3,0,'sec1','sec2','A1','/UserData/SortHtml/7879880615.html|/UserData/SortHtml/8442929916.html|	/UserData/SortHtml/6566190417.html')" href="/UserData/SortHtml/7879880615.html">班级新闻</a>
+          <a class="sec1" id="1td1" onMouseOver="javascript:secBoard_more('1td','1tr',3,1,'sec1','sec2','A1','/UserData/SortHtml/7879880615.html|/UserData/SortHtml/8442929916.html|	/UserData/SortHtml/6566190417.html')" href="/UserData/SortHtml/8442929916.html">中考资讯</a>
+          <a class="sec1" id="1td2" onMouseOver="javascript:secBoard_more('1td','1tr',3,2,'sec1','sec2','A1','/UserData/SortHtml/7879880615.html|/UserData/SortHtml/8442929916.html|	/UserData/SortHtml/6566190417.html')" href="/UserData/SortHtml/6566190417.html">教育动态</a>
+          <a class="more" id="A1" href="/UserData/SortHtml/7879880615.html">MORE+</a>
+          <div class="clear"></div>
+        </div>
+              <div class="bk_nr" id="1tr0">
+                 <ul><li><a href="/UserData/DocHtml/2018/3/14/672178421553.html" target="_blank" title="增强意识，防微杜渐， 强身健体" >增强意识，防微杜渐， 强身健体</a> <img src="/System/SysImage/new.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2018/3/6/303779381554.html" target="_blank" title="新学期  新气象  新征程" >新学期  新气象  新征程</a> <img src="/System/SysImage/new.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2018/3/13/936385881545.html" target="_blank" title="不忘初心  挑战中考" >不忘初心  挑战中考</a> <img src="/System/SysImage/new.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2018/2/7/485108721533.html" target="_blank" title="合肥47中八（3）班举办寒假“读书日”活动" >合肥47中八（3）班举办寒假“读书日”活动</a> <img src="/System/SysImage/new.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2018/1/2/194904861520.html" target="_blank" title="领航" >领航</a> <img src="/System/SysImage/new.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2017/12/11/375369041511.html" target="_blank" title="合肥市禁毒知识竞赛" >合肥市禁毒知识竞赛</a> <img src="/System/SysImage/new.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2017/12/8/728730551510.html" target="_blank" title="八年级集体班会圆满结束" >八年级集体班会圆满结束</a> <img src="/System/SysImage/new.gif" align="absmiddle"></li></ul>
+              </div>
+              <div class="bk_nr" id="1tr1" style="display:none">
+                 <ul><li><a href="/UserData/DocHtml/2018/2/8/502439651556.html" target="_blank" title="2018年中考理科实验考试实施方案" >2018年中考理科实验考试实施方案</a></li><li><a href="/UserData/DocHtml/2018/3/28/237875141555.html" target="_blank" title="2018年中考体育考试实施方案" >2018年中考体育考试实施方案</a></li></ul>
+              </div>
+              <div class="bk_nr" id="1tr2" style="display:none">
+                 <ul><li><a href="/UserData/DocHtml/2016/8/22/719062581124.html" target="_blank" title="教育部《大纲》指定中学生课外文学名著必读书目" >教育部《大纲》指定中学生课外文学名著必读书目</a></li><li><a href="/UserData/DocHtml/2016/6/13/700317161098.html" target="_blank" title="庐阳区荣获全国社区教育示范区" >庐阳区荣获全国社区教育示范区</a></li><li><a href="/UserData/DocHtml/2015/9/18/80152871688.html" target="_blank" title="美国的“超级教师”什么样？" >美国的“超级教师”什么样？</a></li><li><a href="/UserData/DocHtml/2015/9/18/94582039687.html" target="_blank" title="翻出自己的新花样" >翻出自己的新花样</a></li><li><a href="http://www.hfly.net/DocHtml/1/2015/9/9/30350472101623.html" target="_blank" title="用师德力量推动首善教育新发展" >用师德力量推动首善教育新发展</a></li><li><a href="/UserData/DocHtml/2015/9/7/97115761633.html" target="_blank" title="《新安晚报》庐阳区义务教育经费保障全覆盖" >《新安晚报》庐阳区义务教育经费保障全覆盖</a></li></ul>
+              </div>
+            </div>
+            <div class="right bkbox">
+              <div class="bk_xxktop f_yh"> <span class="ico4"></span> <a class="sec2" id="2td0" onMouseOver="javascript:secBoard_more('2td','2tr',3,0,'sec1','sec2','A2','/UserData/SortHtml/5215833320.html|/UserData/SortHtml/8865354221.html|	/UserData/SortHtml/2399213424.html')" href="/UserData/SortHtml/5215833320.html">教学管理</a> <a class="sec1" id="2td1" onMouseOver="javascript:secBoard_more('2td','2tr',3,1,'sec1','sec2','A2','/UserData/SortHtml/5215833320.html|/UserData/SortHtml/8865354221.html|	/UserData/SortHtml/2399213424.html')" href="/UserData/SortHtml/8865354221.html">教育科研</a> <a class="sec1" id="2td2" onMouseOver="javascript:secBoard_more('2td','2tr',3,2,'sec1','sec2','A2','/UserData/SortHtml/5215833320.html|/UserData/SortHtml/8865354221.html|	/UserData/SortHtml/2399213424.html')" href="/UserData/SortHtml/2399213424.html">家庭教育</a> <a class="more" id="A2" href="/UserData/SortHtml/5215833320.html">MORE+</a>
+                <div class="clear"></div>
+              </div>
+              <div class="bk_nr" id="2tr0">
+                 <ul><li><a href="/UserData/DocHtml/2018/3/22/207607811550.html" target="_blank" title="人勤春早    天道酬勤" >人勤春早    天道酬勤</a></li><li><a href="/UserData/DocHtml/2017/11/23/997689591484.html" target="_blank" title="我校召开期中总结表彰大会" >我校召开期中总结表彰大会</a></li><li><a href="/UserData/DocHtml/2016/5/10/747324911052.html" target="_blank" title="携手家长，助推学生成长" >携手家长，助推学生成长</a> <img src="/System/SysImage/new.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2015/11/16/52636238776.html" target="_blank" title="找问题 寻对策 出实招 抓细节" >找问题 寻对策 出实招 抓细节</a> <img src="/System/SysImage/new.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2015/7/8/84839140441.html" target="_blank" title="我校进行微课制作培训" >我校进行微课制作培训</a></li><li><a href="/UserData/DocHtml/2015/7/4/18991199439.html" target="_blank" title="做最好的自己——我校举行校本培训专家讲座" >做最好的自己——我校举行校本培训专家讲座</a></li><li><a href="/UserData/DocHtml/2015/7/4/59804490438.html" target="_blank" title="我校召开2015年暑期校本培训动员会" >我校召开2015年暑期校本培训动员会</a></li></ul>
+              </div>
+              <div class="bk_nr" id="2tr1" style="display:none"><ul><li><a href="/UserData/DocHtml/2018/5/16/846655051629.html" target="_blank" title="构建高效复习课堂" >构建高效复习课堂</a></li><li><a href="/UserData/DocHtml/2018/5/3/440627831610.html" target="_blank" title="合肥47中开展微课培训活动" >合肥47中开展微课培训活动</a></li><li><a href="/UserData/DocHtml/2018/3/16/306086511549.html" target="_blank" title="找出差距，扬帆起航" >找出差距，扬帆起航</a></li><li><a href="/UserData/DocHtml/2018/3/8/202499161540.html" target="_blank" title="合肥47中召开2017-2018学年度第二学期教科研工作会议" >合肥47中召开2017-2018学年度第二学期教科研工作会议</a></li><li><a href="/UserData/DocHtml/2018/3/8/961146321539.html" target="_blank" title="析数据促反思     举措施上台阶" >析数据促反思     举措施上台阶</a></li><li><a href="/UserData/DocHtml/2017/11/30/727906571491.html" target="_blank" title="以质量求生存，以管理促发展" >以质量求生存，以管理促发展</a></li><li><a href="/UserData/DocHtml/2017/11/23/225323261482.html" target="_blank" title="以生为本科学施教     凝心聚力砥砺奋进" >以生为本科学施教     凝心聚力砥砺奋进</a></li></ul>
+</div>
+              <div class="bk_nr" id="2tr2" style="display:none"> <ul><li><a href="/UserData/DocHtml/2015/12/7/36235024864.html" target="_blank" title="家校携手  共育英才" >家校携手  共育英才</a></li><li><a href="/UserData/DocHtml/2015/9/29/99991433712.html" target="_blank" title="父母如何教育孩子的四大方法" >父母如何教育孩子的四大方法</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2015/4/27/82716917416.html" target="_blank" title="携手同心，共育英才——我校召开家长代表座谈会" >携手同心，共育英才——我校召开家长代表座谈会</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2015/4/27/14508476415.html" target="_blank" title="家校沟通凝聚合力　全面总结促进发展——我校召开期中家长会" >家校沟通凝聚合力　全面总结促进发展——我校召...</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2015/3/19/35597457392.html" target="_blank" title="家访永远在路上(47中）" >家访永远在路上(47中）</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2015/2/28/42749766381.html" target="_blank" title="家 访 随 想" >家 访 随 想</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2015/2/28/42197773380.html" target="_blank" title="一份“沉甸甸”的收获" >一份“沉甸甸”的收获</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li></ul>
+</div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="left leftbox">
+            <div class="left bkbox">
+              <div class="bk_xxktop f_yh"> <span class="ico1"></span> <a class="sec2" id="3td0" onMouseOver="javascript:secBoard_more('3td','3tr',3,0,'sec1','sec2','A3','/UserData/SortHtml/7893888118.html|/UserData/SortHtml/9484571119.html|	/UserData/SortHtml/3829358730.html')" href="/UserData/SortHtml/7893888118.html">支部建设</a> <a class="sec1" id="3td1" onMouseOver="javascript:secBoard_more('3td','3tr',3,1,'sec1','sec2','A3','/UserData/SortHtml/7893888118.html|/UserData/SortHtml/9484571119.html|	/UserData/SortHtml/3829358730.html')" href="/UserData/SortHtml/9484571119.html">党工活动</a> <a class="sec1" id="3td2" onMouseOver="javascript:secBoard_more('3td','3tr',3,2,'sec1','sec2','A3','/UserData/SortHtml/7893888118.html|/UserData/SortHtml/9484571119.html|	/UserData/SortHtml/3829358730.html')" href="/UserData/SortHtml/3829358730.html">法制教育</a> <a class="more" id="A3" href="/UserData/SortHtml/7893888118.html">MORE+</a>
+                <div class="clear"></div>
+              </div>
+              <div class="bk_nr" id="3tr0">
+              <ul><li><a href="/UserData/DocHtml/2017/3/2/916500631280.html" target="_blank" title="合肥47中党支部召开专题组织生活会暨民主评议党员大会" >合肥47中党支部召开专题组织生活会暨民主评议党员...</a></li><li><a href="/UserData/DocHtml/2016/7/14/168208091119.html" target="_blank" title="中共合肥市第四十七中学支部委员会换届选举工作圆满完成" >中共合肥市第四十七中学支部委员会换届选举工作圆...</a></li><li><a href="/UserData/DocHtml/2016/5/31/952288591082.html" target="_blank" title="关于中国共产党党费收缴、使用和管理的规定" >关于中国共产党党费收缴、使用和管理的规定</a></li><li><a href="/UserData/DocHtml/2015/12/8/18757149870.html" target="_blank" title="中国共产党廉洁自律准则和纪律处分条例" >中国共产党廉洁自律准则和纪律处分条例</a></li><li><a href="/UserData/DocHtml/2015/11/25/21539437790.html" target="_blank" title="中国共产党章程" >中国共产党章程</a></li><li><a href="/UserData/DocHtml/2015/11/25/26435219791.html" target="_blank" title="中国共产党党费收缴标准" >中国共产党党费收缴标准</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2015/11/25/64347664792.html" target="_blank" title="党的组织生活" >党的组织生活</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2015/11/24/86019570793.html" target="_blank" title="合肥47中党支部委员会职责" >合肥47中党支部委员会职责</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li></ul>
+              </div>
+              <div class="bk_nr" id="3tr1" style="display:none"><ul><li><a href="/UserData/DocHtml/2017/10/19/811320271453.html" target="_blank" title="合肥四十七中党支部组织党员教师观看《榜样》专题片" >合肥四十七中党支部组织党员教师观看《榜样》...</a> <img src="/System/SysImage/new.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2018/3/23/916157311552.html" target="_blank" title="合肥47中党支部召开2017年度组织生活会和民主评议党员大会" >合肥47中党支部召开2017年度组织生活会和民主评议...</a></li><li><a href="/UserData/DocHtml/2018/1/29/507699361529.html" target="_blank" title="鲜红的党旗在白雪中高高飘扬" >鲜红的党旗在白雪中高高飘扬</a></li><li><a href="/UserData/DocHtml/2017/12/12/589533771512.html" target="_blank" title="合肥47中组织党员赴庐江重温“入党誓词”" >合肥47中组织党员赴庐江重温“入党誓词”</a></li><li><a href="/UserData/DocHtml/2017/12/8/222150961508.html" target="_blank" title="读懂关键词     学习十九大" >读懂关键词     学习十九大</a></li><li><a href="/UserData/DocHtml/2016/10/18/652883691166.html" target="_blank" title="我校组织党员进行习近平总书记系列重要讲话知识测试" >我校组织党员进行习近平总书记系列重要讲话知识测...</a></li><li><a href="/UserData/DocHtml/2016/6/22/187255631101.html" target="_blank" title="我校党支部开展党章知识测试活动" >我校党支部开展党章知识测试活动</a></li><li><a href="/UserData/DocHtml/2016/6/17/427526631100.html" target="_blank" title="合肥47中开展党章知识测试活动" >合肥47中开展党章知识测试活动</a></li></ul></div>
+              <div class="bk_nr" id="3tr2" style="display:none"><ul><li><a href="/UserData/DocHtml/2016/5/24/726478351075.html" target="_blank" title="我校积极开展法制教育宣传月活动" >我校积极开展法制教育宣传月活动</a></li><li><a href="/UserData/DocHtml/2015/12/15/86774880915.html" target="_blank" title="我校开展法制教育系列活动" >我校开展法制教育系列活动</a></li><li><a href="/UserData/DocHtml/2015/12/14/12308174911.html" target="_blank" title="我校开展法制教育系列活动" >我校开展法制教育系列活动</a> <img src="/System/SysImage/new.gif" align="absmiddle"> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2015/12/3/68118721842.html" target="_blank" title="学法，懂法，守法" >学法，懂法，守法</a> <img src="/System/SysImage/new.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2014/12/31/11999484353.html" target="_blank" title="我校开展“做一个有道德的人”演讲比赛" >我校开展“做一个有道德的人”演讲比赛</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2014/12/11/92067490351.html" target="_blank" title="我校开展“宪法进课堂”宣讲活动" >我校开展“宪法进课堂”宣讲活动</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2014/11/24/28843719348.html" target="_blank" title="我校在全国青少年普法教育评比中获殊荣" >我校在全国青少年普法教育评比中获殊荣</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2013/12/5/92098115310.html" target="_blank" title="在学生心中播下法制的种子" >在学生心中播下法制的种子</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li></ul></div>
+            </div>
+            <div class="right bkbox">
+              <div class="bk_xxktop f_yh"> <span class="ico2"></span> <a class="sec2" id="4td0" onMouseOver="javascript:secBoard_more('4td','4tr',3,0,'sec1','sec2','A4','/UserData/SortHtml/2489576029.html|/UserData/SortHtml/7557981131.html|	/UserData/SortHtml/9838468232.html')" href="/UserData/SortHtml/2489576029.html">安全教育</a> <a class="sec1" id="4td1" onMouseOver="javascript:secBoard_more('4td','4tr',3,1,'sec1','sec2','A4','/UserData/SortHtml/2489576029.html|/UserData/SortHtml/7557981131.html|	/UserData/SortHtml/9838468232.html')" href="/UserData/SortHtml/7557981131.html">健康知识</a> <a class="sec1" id="4td2" onMouseOver="javascript:secBoard_more('4td','4tr',3,2,'sec1','sec2','A4','/UserData/SortHtml/2489576029.html|/UserData/SortHtml/7557981131.html|	/UserData/SortHtml/9838468232.html')" href="/UserData/SortHtml/9838468232.html">心理咨询</a> <a class="more" id="A4" href="/UserData/SortHtml/2489576029.html">MORE+</a>
+                <div class="clear"></div>
+              </div>
+              <div class="bk_nr" id="4tr0"><ul><li><a href="/UserData/DocHtml/2018/5/16/244727861630.html" target="_blank" title="预防溺水！教育部致全国中小学生家长的一封信" >预防溺水！教育部致全国中小学生家长的...</a> <img src="/System/SysImage/new.gif" align="absmiddle"> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2017/5/19/569607321328.html" target="_blank" title="别样的地震体验，充盈的校园生活" >别样的地震体验，充盈的校园生活</a></li><li><a href="/UserData/DocHtml/2017/5/16/753669511326.html" target="_blank" title="合肥47中开展防震减灾应急疏散演练" >合肥47中开展防震减灾应急疏散演练</a></li><li><a href="/UserData/DocHtml/2016/10/8/868916101156.html" target="_blank" title="我校学生积极参加“向国旗敬礼”网上寄语签名主题活动" >我校学生积极参加“向国旗敬礼”网上寄语签名主题...</a></li><li><a href="/UserData/DocHtml/2016/9/19/952934041139.html" target="_blank" title="我校开展“九&#8226一八”防空应急疏散演练活动" >我校开展“九&#8226一八”防空应急疏散演练活动</a></li><li><a href="/UserData/DocHtml/2016/9/18/268774191136.html" target="_blank" title="合肥47中开展“九&#8226一八”防空应急疏散演练活动" >合肥47中开展“九&#8226一八”防空应急疏散演...</a> <img src="/System/SysImage/new.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2016/7/9/950750511111.html" target="_blank" title="我校积极深化师生的安全教育工作" >我校积极深化师生的安全教育工作</a></li><li><a href="/UserData/DocHtml/2016/5/20/104803241067.html" target="_blank" title="我校举行防震应急疏散演练" >我校举行防震应急疏散演练</a></li></ul></div>
+              <div class="bk_nr" id="4tr1" style="display:none"> <ul><li><a href="/UserData/DocHtml/2018/3/9/814396441541.html" target="_blank" title="春季传染病预防小知识" >春季传染病预防小知识</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2016/5/31/269474571089.html" target="_blank" title="如何将健身贯穿于工作忙碌的一天" >如何将健身贯穿于工作忙碌的一天</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2016/5/31/329789511088.html" target="_blank" title="十条健康教育知识" >十条健康教育知识</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2016/5/31/928805321087.html" target="_blank" title="健康基本知识与技能" >健康基本知识与技能</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2016/5/31/515554581086.html" target="_blank" title="常见的传染病" >常见的传染病</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2016/5/31/178494041085.html" target="_blank" title="狂犬病、流感、艾滋病的防治" >狂犬病、流感、艾滋病的防治</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2016/5/31/875686421084.html" target="_blank" title="春季防病知识" >春季防病知识</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2016/5/31/990589681083.html" target="_blank" title="健康的含义" >健康的含义</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li></ul></div>
+              <div class="bk_nr" id="4tr2" style="display:none"> <ul><li><a href="/UserData/DocHtml/2016/6/6/225446861095.html" target="_blank" title="中考生四种不良心态需要克服" >中考生四种不良心态需要克服</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2016/1/8/45091378949.html" target="_blank" title="中学生早恋怎么办?" >中学生早恋怎么办?</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2015/3/24/75111525574.html" target="_blank" title="张静心理测试指导" >张静心理测试指导</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2013/3/7/10490356279.html" target="_blank" title="让我们拥有阳光的心态" >让我们拥有阳光的心态</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2010/10/18/54536879268.html" target="_blank" title="我的幸福我做主（心理健康讲座）" >我的幸福我做主（心理健康讲座）</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2010/4/21/28325651573.html" target="_blank" title="异常心理" >异常心理</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2010/4/21/42540785572.html" target="_blank" title="我国青少年心理健康" >我国青少年心理健康</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li><li><a href="/UserData/DocHtml/2010/4/21/44389626572.html" target="_blank" title="心理健康" >心理健康</a> <img src="/System/SysImage/gif-0493.gif" align="absmiddle"></li></ul> </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="right rightbox">
+          <div class="gg_top f_yh"> <span class="ico"></span> <a class="tit" href="/UserData/SortHtml/205039751.html">校务公告</a> <a class="more" href="/UserData/SortHtml/205039751.html">MORE+</a>
+            <div class="clear"></div>
+          </div>
+          <div class="right_top"></div>
+          <div class="gg_nr">
+            <div id="marqueebox0" style="width:209px;height:205px;overflow:hidden;">
+             <ul><li><span>&nbsp;05-25</span><a href="/UserData/DocHtml/2018/5/25/956586991637.html" target="_blank" title="中招相关内容公示2" >中招相关内容公示2</a></li><li><span>&nbsp;05-25</span><a href="/UserData/DocHtml/2018/5/20/791750871636.html" target="_blank" title="中招相关内容公示1" >中招相关内容公示1</a></li><li><span>&nbsp;05-23</span><a href="/UserData/DocHtml/2018/5/23/151920861635.html" target="_blank" title="关于2018年庐阳区八年级地理、生物学科学业考试及生物实验操作考试的通知" >关于2018年庐阳区八年级...</a></li><li><span>&nbsp;02-01</span><a href="/UserData/DocHtml/2018/2/1/290513391532.html" target="_blank" title="合肥市市区2018年初中学业水平体育与健康学科考试实施方案" >合肥市市区2018年初中学...</a></li><li><span>&nbsp;01-31</span><a href="/UserData/DocHtml/2018/1/31/195193261530.html" target="_blank" title="春季开学考试日程安排" >春季开学考试日程安排</a></li><li><span>&nbsp;01-12</span><a href="/UserData/DocHtml/2018/1/12/384899681522.html" target="_blank" title="庐阳区第二批名师工作室“精英荟萃，课堂亮剑”展示活动的通知" >庐阳区第二批名师工作室...</a></li><li><span>&nbsp;01-02</span><a href="http://www.hfly.net/DocHtml/285/17/12/00163972.html" target="_blank" title="2018年庐阳区中小学、幼儿园放寒假的通知" >2018年庐阳区中小学、幼...</a></li></ul>
+            </div>
+          </div>
+          <div class="right_bot"></div>
+          <div class="jdanbox"><table border="0" cellspacing="0" cellpadding="0" align="center"><tr bgcolor=""><td><a href="/System/sys0_inc_link_hit.asp?AI_ID=2&url=/UserData/SortHtml/8907788923.html" target="_blank"><img src="/system/LinkImages/2015/9/28/201592855992562.gif" border="0" alt="化学教师培训基地"></a></td></tr></table></div>
+          <div class="right_top mt15"></div>
+          <div class="jsbox">
+            <div class="js_top f_yh"> <span class="ico"></span> <a class="tit" href="/UserData/SortHtml/4331159222.html">教师风采</a> <a class="more" href="/UserData/SortHtml/4331159222.html">MORE+</a>
+              <div class="clear"></div>
+            </div>
+            <iframe src="/TMP/fcimg.asp" width="214" height="240" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" allowTransparency="true"></iframe>
+          </div>
+        <div class="right_bot"></div>
+        
+         <div class="right_top mt15"></div>
+          <div class="jsbox">
+            <div class="js_top f_yh"> <span class="ico1"></span> <a class="tit" href="/UserData/SortHtml/4903958928.html">学生表彰</a> <a class="more" href="/UserData/SortHtml/4903958928.html">MORE+</a>
+              <div class="clear"></div>
+            </div>
+            <iframe src="/TMP/xsimg.asp" width="214" height="240" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" allowTransparency="true"></iframe>
+          </div>
+        <div class="right_bot"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="hfbox mt15"><table border="0" cellspacing="0" cellpadding="0" align="center"><tr bgcolor=""><td><img src="/system/LinkImages/2015/7/7/20157760152260.jpg" border="0" alt="富强明主文明"></td></tr></table></div>
+      <!--中间左右大板块-->
+      <div class="mainer mt15">
+        <div class="left leftbox">
+          <div class="left bkbox">
+            <div class="bk_xxktop f_yh"> <span class="ico5"></span> <a class="sec2" id="6td0" onMouseOver="javascript:secBoard_more('6td','6tr',3,0,'sec1','sec2','A6','/UserData/SortHtml/6692258525.html|/UserData/SortHtml/3822492326.html|/UserData/SortHtml/7926984427.html')" href="/UserData/SortHtml/6692258525.html">团队活动</a> <a class="sec1" id="6td1" onMouseOver="javascript:secBoard_more('6td','6tr',3,1,'sec1','sec2','A6','/UserData/SortHtml/6692258525.html|/UserData/SortHtml/3822492326.html|/UserData/SortHtml/7926984427.html')" href="/UserData/SortHtml/3822492326.html">国旗下演讲</a> <a class="sec1" id="6td2" onMouseOver="javascript:secBoard_more('6td','6tr',3,2,'sec1','sec2','A6','/UserData/SortHtml/6692258525.html|/UserData/SortHtml/3822492326.html|/UserData/SortHtml/7926984427.html')" href="/UserData/SortHtml/7926984427.html">学生作品</a><a class="more" id="A6" href="/UserData/SortHtml/6692258525.html">MORE+</a>
+              <div class="clear"></div>
+            </div>
+            <div class="bk_nr" style="height:232px;" id="6tr0"><div class="list1"><ul><li><span></span><a href="/UserData/DocHtml/2018/4/11/413931051581.html" target="_blank" title="合肥47中学生积极参加“清明祭英烈”网上签名寄语活动">合肥47中学生积极参加“清明祭英烈”网上签名寄语...</a></li><li><span></span><a href="/UserData/DocHtml/2018/4/3/985247581559.html" target="_blank" title="合肥47中第三届校园辩论赛圆满结束">合肥47中第三届校园辩论赛圆满结束</a></li><li><span></span><a href="/UserData/DocHtml/2018/3/9/805593651560.html" target="_blank" title="合肥47中少年宫活动课开课了">合肥47中少年宫活动课开课了</a></li><li><span></span><a href="/UserData/DocHtml/2017/10/30/882978601463.html" target="_blank" title="唇枪舌剑，辩世间百态；妙语连珠，展青春风采(47中)">唇枪舌剑，辩世间百态；妙语连珠，展青春风采(47...</a></li><li><span></span><a href="/UserData/DocHtml/2017/7/7/183039631371.html" target="_blank" title="合肥47中暑期少年宫开课了">合肥47中暑期少年宫开课了</a></li><li><span></span><a href="/UserData/DocHtml/2017/1/5/618592611258.html" target="_blank" title="我校团委举行新团员入团仪式">我校团委举行新团员入团仪式</a></li></ul></div></div>
+            <div class="bk_nr" style="height:232px;display:none;" id="6tr1"><div class="list1"><ul><li><span></span><a href="/UserData/DocHtml/2016/10/26/312637101190.html" target="_blank" title="和为贵">和为贵</a></li><li><span></span><a href="/UserData/DocHtml/2016/10/26/331684651189.html" target="_blank" title="宽容">宽容</a></li><li><span></span><a href="/UserData/DocHtml/2016/10/26/202155841187.html" target="_blank" title="做文明青少年">做文明青少年</a></li><li><span></span><a href="/UserData/DocHtml/2016/10/26/417103351186.html" target="_blank" title="守住心灵的一方净土">守住心灵的一方净土</a></li><li><span></span><a href="/UserData/DocHtml/2016/10/26/967999041185.html" target="_blank" title="让读书成为一种生活方式">让读书成为一种生活方式</a></li><li><span></span><a href="/UserData/DocHtml/2016/10/26/297324911183.html" target="_blank" title="从今天起，做勤俭节约的好少年">从今天起，做勤俭节约的好少年</a></li></ul></div></div>
+            <div class="bk_nr" style="height:232px;display:none;" id="6tr2"><div class="list1"><ul><li><span></span><a href="/UserData/DocHtml/2015/10/28/50874306757.html" target="_blank" title="工业游所感">工业游所感</a></li><li><span></span><a href="/UserData/DocHtml/2015/10/9/18765389727.html" target="_blank" title="我最喜爱的老师-----俞婷">我最喜爱的老师-----俞婷</a></li><li><span></span><a href="/UserData/DocHtml/2015/10/9/34717537726.html" target="_blank" title="我所喜爱的老师-------王方柱">我所喜爱的老师-------王方柱</a></li><li><span></span><a href="/UserData/DocHtml/2015/10/9/23181893725.html" target="_blank" title="我所喜爱的老师-------罗志明">我所喜爱的老师-------罗志明</a></li><li><span></span><a href="/UserData/DocHtml/2015/9/17/73338600686.html" target="_blank" title="游安徽省博物馆有感">游安徽省博物馆有感</a></li><li><span></span><a href="/UserData/DocHtml/2015/9/9/25969673655.html" target="_blank" title="一次难忘的旅行">一次难忘的旅行</a></li></ul></div></div>
+          </div>
+		  
+          <div class="left bkbox">
+            <div class="bk_xxktop f_yh"> <span class="ico6"></span> <a class="sec2" id="7td0" onMouseOver="javascript:secBoard_more('7td','7tr',2,0,'sec1','sec2','A7','/UserData/SortHtml/7523648935.html|/UserData/SortHtml/7330976136.html')" href="/UserData/SortHtml/7523648935.html">课题专区</a> <a class="sec1" id="7td1" onMouseOver="javascript:secBoard_more('7td','7tr',2,1,'sec1','sec2','A7','/UserData/SortHtml/6692258525.html|/UserData/SortHtml/7330976136.html')" href="/UserData/SortHtml/7330976136.html">教育督导</a> <a class="sec1" id="7td2" href="/UserData/SortHtml/7523648935.html">MORE+</a>
+              <div class="clear"></div>
+            </div>
+            <div class="bk_nr" style="height:232px;" id="7tr0"><div class="list1"><ul><li><span></span><a href="/UserData/DocHtml/2016/10/19/875205771169.html" target="_blank" title="《在主题活动中促进学生良好习惯的养成》课题研究分工">《在主题活动中促进学生良好习惯的养成》课题研究...</a></li><li><span></span><a href="/UserData/DocHtml/2016/10/19/665421831168.html" target="_blank" title="《在主题活动中促进学生良好习惯的养成》开题报告">《在主题活动中促进学生良好习惯的养成》开题报告</a></li><li><span></span><a href="/UserData/DocHtml/2016/10/19/305344931167.html" target="_blank" title="《在主题活动中促进学生良好习惯的养成》实施方案">《在主题活动中促进学生良好习惯的养成》实施方案</a></li><li><span></span><a href="/UserData/DocHtml/2016/10/18/514126361164.html" target="_blank" title="合肥四十七中“一月一习惯，一习惯一主题”系列养成教育活动">合肥四十七中“一月一习惯，一习惯一主题”系列养...</a></li><li><span></span><a href="/UserData/DocHtml/2016/10/26/597100601211.html" target="_blank" title="养成教育之教师教研">养成教育之教师教研</a></li><li><span></span><a href="/UserData/DocHtml/2016/10/26/309684531196.html" target="_blank" title="养成教育之健好体">养成教育之健好体</a></li></ul></div></div>
+            <div class="bk_nr" style="height:232px;display:none;" id="7tr1"><div class="list1"><ul><li><span></span><a href="/UserData/DocHtml/2016/7/20/342382591120.html" target="_blank" title="庐阳教育督导网页链接">庐阳教育督导网页链接</a></li><li><span></span><a href="/UserData/DocHtml/2017/10/27/733976521461.html" target="_blank" title="庐阳区积极开展义教改薄学校办学条件专项督导工作">庐阳区积极开展义教改薄学校办学条件专项督导工作</a></li><li><span></span><a href="/UserData/DocHtml/2017/10/27/781300131460.html" target="_blank" title="督导室2017年10月份重点工作">督导室2017年10月份重点工作</a></li><li><span></span><a href="/UserData/DocHtml/2017/10/27/885491721459.html" target="_blank" title="庐阳区第六督学责任区2017年下半年工作计划">庐阳区第六督学责任区2017年下半年工作计划</a></li><li><span></span><a href="/UserData/DocHtml/2017/10/27/381356591458.html" target="_blank" title="庐阳区召开2017年度上半年教育督导工作总结会">庐阳区召开2017年度上半年教育督导工作总结会</a></li><li><span></span><a href="/UserData/DocHtml/2017/10/27/897192161457.html" target="_blank" title="庐阳区积极准备创建全国中小学校责任督学挂牌督导创新县（市、区）材料上传工作">庐阳区积极准备创建全国中小学校责任督学挂牌督导...</a></li></ul></div></div>
+          </div>
+		  
+          <div class="clear"></div>
+        </div>
+        <div class="right rightbox">
+          <div class="right_top"></div>
+          <div class="dcbox">
+            <div class="dc_xxktop f_yh"> <a class="sec2" id="5td0" onMouseOver="javascript:secBoard_more('5td','5tr',2,0,'sec1','sec2','A5','/tmp/Nav_lanmu.asp?ss_id=34|/tmp/Nav_lanmu.asp?ss_id=33')" href="/tmp/Nav_lanmu.asp?ss_id=34">网上调查</a> <a class="sec1" id="5td1" onMouseOver="javascript:secBoard_more('5td','5tr',2,1,'sec1','sec2','A5','/tmp/Nav_lanmu.asp?ss_id=34|/tmp/Nav_lanmu.asp?ss_id=33')" href="/tmp/Nav_lanmu.asp?ss_id=33">在线留言</a> <a class="more" id="A5" href="/tmp/Nav_lanmu.asp?ss_id=33">MORE+</a>
+              <div class="clear"></div>
+            </div>
+            <div class="dc_con" id="5tr0">
+              <div class="dc_nrcon">
+              <dl><script language="JavaScript" type="text/JavaScript">
+function windowOpener(loadpos) { 
+newWindow = window.open(loadpos,'vote','toolbar,resizable=no,scrollbars=yes,status=no,toolbar=no,location=no,menu=no,left=1,top=1,width=228,height=165');
+newWindow.focus();}
+</script>
+<form name="voteform1" method="post" action="/System/sys0_inc_voteresult.asp" target="vote" onSubmit="windowOpener('')"><dt>在家做作业如果遇到问题，我会</dt><dd><input type="radio" name="vote" value="2" style="border: none;" id="v11"><label for="v11">打电话问同学</label></dd><dd><input type="radio" name="vote" value="3" style="border: none;" id="v12"><label for="v12">询问家长</label></dd><dd><input type="radio" name="vote" value="4" style="border: none;" id="v13"><label for="v13">等老师来讲解</label></dd><dd><input type="radio" name="vote" value="5" style="border: none;" id="v14"><label for="v14">等明天问同学</label></dd><dd><input type="radio" name="vote" value="6" style="border: none;" id="v15"><label for="v15">抄同学的作业</label></dd><dd><input type="radio" name="vote" value="7" style="border: none;" id="v16"><label for="v16">上网搜索答案</label></dd><dd><input type="radio" name="vote" value="8" style="border: none;" id="v17"><label for="v17">自己动脑筋想</label></dd><div class="btn_dc"><input name="action" type="hidden" id="action" value="add"><input name="VoteID" type="hidden" id="VoteID" value="1"><input type="submit" name="Submit"  class="btn_dc01" value="  "> <input type="button" name="view" class="btn_dc02" value="  " onClick="windowOpener('/System/sys0_inc_voteresult.asp?VoteID=1')"></div> </form></dl>
+              </div>
+            </div>
+            <div class="ly_list" id="5tr1" style="display:none">
+           <ul><li class="s2"><a href="/system/sys0_message_show.asp?m_ID=41"  title="小升初" target="_blank">小升初</a></li><li class="s2"><a href="/system/sys0_message_show.asp?m_ID=40"  title="小升初报名时间" target="_blank">小升初报名时间</a></li><li class="s2"><a href="/system/sys0_message_show.asp?m_ID=39"  title="小升初咨询" target="_blank">小升初咨询</a></li><li class="s2"><a href="/system/sys0_message_show.asp?m_ID=34"  title="想让儿子到贵校学习篮球" target="_blank">想让儿子到贵校学习篮球</a></li><li class="s2"><a href="/system/sys0_message_show.asp?m_ID=30"  title="回报师恩" target="_blank">回报师恩</a></li><li class="s2"><a href="/system/sys0_message_show.asp?m_ID=24"  title="美丽校园" target="_blank">美丽校园</a></li></ul>
+            </div>
+          </div>
+          <div class="right_bot"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <!--图片风采--> 
+      
+      <!--友情链接-->
+      <div class="linkbox">
+        <ul>
+        <li class="tit f_yh">友情链接</li>
+        <li><select name="flink74" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0") window.open(this.options(this.selectedIndex).value);">
+<option value="#" style="">-- 教育部门网站 --</option>
+<option value="/System/sys0_inc_link_hit.asp?AI_ID=8" style="">庐阳教育体育网</option>
+<option value="/System/sys0_inc_link_hit.asp?AI_ID=4" style="">合肥教育信息网</option>
+</select>
+</li>
+	    <li><select name="flink14" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0") window.open(this.options(this.selectedIndex).value);">
+<option value="#" style="">-- 区属中学网站 --</option>
+<option value="/System/sys0_inc_link_hit.asp?AI_ID=5" style="">合肥第四十五中学</option>
+</select>
+</li>
+        <li> <select name="flink52" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0") window.open(this.options(this.selectedIndex).value);">
+<option value="#" style="">-- 区属小学网站 --</option>
+<option value="/System/sys0_inc_link_hit.asp?AI_ID=6" style="">合肥虹桥小学</option>
+</select>
+</li>
+        <li class="last"><select name="flink34" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0") window.open(this.options(this.selectedIndex).value);">
+<option value="#" style="">-- 友情链接 --</option>
+<option value="/System/sys0_inc_link_hit.asp?AI_ID=11" style="">安徽禁毒</option>
+<option value="/System/sys0_inc_link_hit.asp?AI_ID=10" style="">中国禁毒网</option>
+<option value="/System/sys0_inc_link_hit.asp?AI_ID=7" style="">中华家庭教育网</option>
+</select>
+</li>
+        <div class="clear"></div>
+        </ul>
+      </div>
+    </div>
+</div>
+<div class="contain_bot"></div>
+<div class="bg" style="display:none;">
+<div class="footer">
+<span>Copyright &copy; 2015</span>&nbsp;合肥西乡（锥子岗）赵氏宗族网&nbsp;<span>All rights reserved.</span>&nbsp;技术支持：<a href="http://www.lonsun.cn/" target="_blank">龙讯科技</a><br/>
+联系电话：<span>0551-68937357</span>&nbsp;<a href="http://www.miibeian.gov.cn/s" style="text-decoration:underline; font-family:Arial, Helvetica, sans-serif; color:#b07936;">皖ICP备15005983号-1</a>
+</div>
+</div>
+
+
+
+<div class="bottom">
+  <div class="foot"><span>Copyright &copy; 2015</span>&nbsp;合肥市第四十七中学&nbsp;版权所有&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn/" target="_blank" class="beian">皖ICP备10000608号</a>&nbsp;&nbsp;教育网站编JXQZ075号&nbsp;&nbsp;技术支持：<a href="http://www.lonsun.cn" target="_blank">龙讯科技</a>
+  <br />地址：合肥市庐阳区五河路<span>227</span>号&nbsp;&nbsp;电话：<span>0551-5600799</span>&nbsp;&nbsp;邮编：<span>230041</span><div class="bot_ico"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/13/197/1473/40639689/CA131971473406396890001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+  </div>
+  <div class="foot"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34010002000149" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/tmp/images/batb.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">皖公网安备34010002000149号</p></a>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

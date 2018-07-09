@@ -1,0 +1,380 @@
+<!doctype html>
+<html>
+<head>
+<title>重庆工程学院</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="Author" content="redheart47@163.com" />
+<meta name="Keywords" content="重庆工程学院" />
+<meta name="Description" content="重庆工程学院" />
+<link rel="stylesheet" type="text/css" href="/templates/site/css/default.css"/>
+<link rel="stylesheet" type="text/css" href="/templates/site/css/index.css"/>
+<script src="/script/common.js" type="text/javascript"></script>
+<script src="/script/jquery.min.js" type="text/javascript"></script>
+<script src="/script/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="/script/jquery.SuperSlide.js" type="text/javascript"></script>
+
+<script src="/script/move.js" type="text/javascript"></script>
+<script src="/script/YlFloat.js" type="text/javascript"></script>
+<script src="/script/MSClass.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="/templates/site/css/idangerous.swiper.css"/>
+<script type="text/javascript" src="/templates/site/js/idangerous.swiper.min.js"></script>
+<!-- 公用头部 -->
+
+<div id="top_w">
+  <div class="top_t cen">
+    <div class="top_logo"><a href="/"><img src="/templates/site/images/top_logo.png"></a></div>
+    <div class="top_r"> 
+      <!-- 中英切换 -->
+      <div class="top_right_qh">
+        <div class="lanBox">
+          <h3>language</h3>
+          <ul>
+            <li><a href="http://www.cqie.edu.cn/">-中文版-</a></li>
+            <li><a href="http://eng.cqie.edu.cn/">-English-</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 口号 -->
+      <div class="top_kh"><img src="/templates/site/images/top_kh.png"></div>
+    </div>
+  </div>
+  <!-- 导航  -->
+  <div class="navBar_w">
+    <div class="navBar cen">
+      <ul class="nav_top clearfix">
+        <li class="m">
+          <h3><a href="/">首页</a></h3>
+        </li>
+        <li class="m">
+          <h3><a target="_blank" href="/html/xygk/">学校概况</a></h3>
+          <ul class="sub">
+            <li><a href="/html/xygk/Index.shtml">学校简介</a></li>
+            <li><a href="/html/xygk/Index_11.shtml">校长寄语</a></li>
+            <li><a href="/html/xygk/Index_12.shtml">现任领导</a></li>
+            <li><a href="/html/xygk/xyfg/">学校风光</a></li>
+            <li><a href="/html/xygk/xxgk/">信息公开</a></li>
+          </ul>
+        </li>
+        <li class="m">
+          <h3><a target="_blank" href="/html/jgsz">机构设置</a></h3>
+          
+        </li>
+        <li class="m">
+          <h3><a target="_blank" href="/html/21/Index.shtml">教育教学</a></h3>
+        </li>
+        <li class="m">
+          <h3><a target="_blank" href="/html/3/Index.shtml">师资队伍</a></h3>
+          <ul class="sub">
+          </ul>
+        </li>
+        <li class="m">
+          <h3><a target="_blank" href="/html/6/Index.shtml">学科科研</a></h3>
+        </li>
+        <li class="m">
+          <h3><a target="_blank" href="/html/5/">学生工作</a></h3>
+          <ul class="sub">
+            <li><a href="/html/5/">学工在线</a></li>
+            <li><a href="/html/4/">共青团在线</a></li>
+          </ul>
+        </li>
+        <li class="m">
+          <h3><a target="_blank" href="http://zs.cqie.edu.cn">招生就业</a></h3>
+          <ul class="sub">
+            <li><a href="http://zs.cqie.edu.cn">阳光招生</a></li>
+            <li><a href="http://jy.cqie.edu.cn">就业服务</a></li>
+          </ul>
+        </li>
+        <li class="m">
+          <h3><a target="_blank" href="/html/18/Index.shtml">国际合作</a></h3>
+        </li>
+        <li class="m">
+          <h3><a target="_blank" href="/html/ggfw/Index.shtml">公共服务</a></h3>
+          <ul class="sub">
+            <li><a href="/html/ggfw/Index.shtml">常用电话</a></li>
+            <li><a href="/html/ggfw/Index_15.shtml">后勤服务</a></li>
+            <li><a href="/html/ggfw/Index_16.shtml">校长信箱</a></li>
+            <li><a href="/html/ggfw/Index_17.shtml">交通线路</a></li>
+          </ul>
+        </li>
+        <li class="block"></li>
+      </ul>
+      <!-- 搜索 -->
+      <form name="searchform" action="/search.asp" method="post" target="_blank">
+        <ul id="search">
+          <li class="ipt">
+            <input class="keyword" name="key" type="text" value="Search..." onfocus="if (value =='Search...'){value =''}" onblur="if (value ==''){value='Search...'}"  />
+          </li>
+          <li class="btn">
+            <input type="submit" style="background:none; border:none; width:29px; height:32px;" value=" " border="0" width="29" height="32" />
+          </li>
+        </ul>
+      </form>
+    </div>
+    <script type="text/javascript">
+    (function(){
+            var ind = 0; //初始位置
+            var nav= jQuery(".nav_top");
+            var init = jQuery(".nav_top .m").eq(ind);
+            var block = jQuery(".nav_top .block"); //滑块
+            block.css({"left":init.position().left-1}); //初始化滑块位置
+    
+            jQuery(".nav_top").slide({ 
+                    type:"menu", //效果类型
+                    titCell:".m", // 鼠标触发对象
+                    targetCell:".sub", // 效果对象，必须被titCell包含
+                    delayTime:100, // 效果时间
+                    triggerTime:0, //鼠标延迟触发时间
+                    returnDefault:false,//on返回初始位置
+                    defaultIndex:ind,//初始位置
+                    startFun:function(i,c,s,tit){ //控制当前滑块位置
+                        block.animate({"left":tit.eq(i).position().left-1},100);
+                    }
+                });
+    })()
+    </script> 
+  </div>
+</div>
+<!-- banner -->
+<div id="banner_pc" class="focusBox swiper-container hidden-sm hidden-xs" style="margin:0 auto">
+			<ul class="pic swiper-wrapper">
+				<li class="banner-slide">
+					<a href="#"><img src="/templates/site/images/banner01.jpg" /></a>
+				</li>
+				<li class="banner-slide">
+					<a href="#"><img src="/templates/site/images/banner02.jpg" /></a>
+				</li>
+				<li class="banner-slide">
+					<a href="#"><img src="/templates/site/images/banner03.jpg" /></a>
+				</li>
+			</ul>
+			<div class="bannerpc-pagination"></div>
+</div>
+<script type="text/javascript">
+$('.focusBox li').css('width',$(window).width());
+  var bannerpcSwiper = new Swiper('#banner_pc',{
+  	pagination : '.bannerpc-pagination',
+		speed:400,
+		paginationClickable :true,
+		autoplay : 5000,
+		loop:true,
+		calculateHeight : true,
+		autoplayDisableOnInteraction : false,
+		slideClass : 'banner-slide',
+		slideActiveClass : 'banner-slide-active',
+	});
+</script>
+
+<!-- 主体 -->
+<div class="bk01 cen">    
+    <!-- 头条 -->
+    <div class="tt_new">
+      <img src="/templates/site/images/tt_bt.png">
+      <a href="/html/2/content/18/05/18685.shtml" target="_blank" title="重庆市教委专家组对我校2017年度办学情况进行全面检查"><h3>重庆市教委专家组对我校2017年度办学情况进行全面检查</h3>
+<p>本网讯（文/黄莉、大学生记者团图/陶思言）5月21日下午，重庆市教委组织2017年度民办本科高校年检工作专家..[详情]</p>
+</a>
+    </div>
+    <!-- 图片新闻 -->
+    <div class="pic_new">
+     <!-- 大图列表 --><UL class="pic">
+<LI><A href="/html/2/content/18/05/18797.shtml" target=_blank><IMG src="/upfiles/201805/20180528160224217.jpg"></A> </LI>
+<LI><A href="/html/2/content/18/05/18796.shtml" target=_blank><IMG src="/upfiles/201805/20180528155611585.png"></A> </LI>
+<LI><A href="/html/2/content/18/05/18795.shtml" target=_blank><IMG src="/upfiles/201805/20180528144946488.png"></A> </LI>
+<LI><A href="/html/2/content/18/05/18761.shtml" target=_blank><IMG src="/upfiles/201805/20180525163953475.jpg"></A> </LI>
+<LI><A href="/html/2/content/18/05/18759.shtml" target=_blank><IMG src="/upfiles/201805/20180525150845918.png"></A> </LI>
+</ul>
+<!-- 文字说明列表 --> <DIV class=txt-bg></DIV>
+<DIV class=txt><UL>
+<LI><A href="/html/2/content/18/05/18797.shtml" target=_blank>“正大杯”重庆市大学生软件设..</A> </LI>
+<LI><A href="/html/2/content/18/05/18796.shtml" target=_blank>我校在第九届全国高校市场营销..</A> </LI>
+<LI><A href="/html/2/content/18/05/18795.shtml" target=_blank>我校软件学院获第九届全国软件..</A> </LI>
+<LI><A href="/html/2/content/18/05/18761.shtml" target=_blank>学校与苏宁易购签署校企合作订..</A> </LI>
+<LI><A href="/html/2/content/18/05/18759.shtml" target=_blank>学校开展地震应急疏散演练活动..</A> </LI>
+</ul></DIV>
+<!-- 数字序号 --> <UL class=num>
+<li><A>1</A><SPAN></SPAN></li>
+<li><A>2</A><SPAN></SPAN></li>
+<li><A>3</A><SPAN></SPAN></li>
+<li><A>4</A><SPAN></SPAN></li>
+<li><A>5</A><SPAN></SPAN></li>
+</ul>
+ 
+    </div>
+  <script type="text/javascript">
+    jQuery(".pic_new").slide({ titCell:".num li", mainCell:".pic",effect:"fold", autoPlay:true,trigger:"click",
+      //下面startFun代码用于控制文字上下切换
+      startFun:function(i){
+           jQuery(".pic_new .txt li").eq(i).animate({"bottom":0}).siblings().animate({"bottom":-75});
+      }
+      });
+    </script> 
+    
+    <!-- 科技动态 -->
+    <div class="pic_lb">  
+      <div class="pic_lb_bt"><h3>校园动态</h3><a href="/html/2/xydt/" target="_blank">更多+</a></div>
+      <ul>
+            <li> <a href="/html/2/content/18/05/18797.shtml" target="_blank" title="“正大杯”重庆市大学生软件设计大赛在我校举行">
+  <h3>“正大杯”重庆市大学生软件设计大赛在我校举行..</h3>
+  <p>本网讯（文/党委宣传部李晗 图/林新凯）着眼为重庆市IT产业发展遴选和培育优秀人才..</p>
+  </a>
+  <h4>28<span>2018.05</span></h4>
+</li>
+<li> <a href="/html/2/content/18/05/18796.shtml" target="_blank" title="我校在第九届全国高校市场营销大赛中取得新突破，共获得包括一等奖2项在内的9项全国大奖">
+  <h3>我校在第九届全国高校市场营销大赛中取得新突破..</h3>
+  <p>本网讯（文/管理学院傅翔 大学生记者团） 从5月26日在杭州举行的“社科奖第九届全..</p>
+  </a>
+  <h4>28<span>2018.05</span></h4>
+</li>
+<li> <a href="/html/2/content/18/05/18795.shtml" target="_blank" title="我校软件学院获第九届全国软件和信息技术专业人才大赛三等奖">
+  <h3>我校软件学院获第九届全国软件和信息技术专业人..</h3>
+  <p>本网讯(文/图&amp;nbsp;软件学院彭娟) &amp;nbsp;从5月27日在中国农大举行的第九届..</p>
+  </a>
+  <h4>28<span>2018.05</span></h4>
+</li>
+<li> <a href="/html/2/content/18/05/18761.shtml" target="_blank" title="学校与苏宁易购签署校企合作订单班人才培养协议">
+  <h3>学校与苏宁易购签署校企合作订单班人才培养协议..</h3>
+  <p>本网讯(文/图王燕楠、大学生记者团)&#160;为进一步深化校企合作，提高人才质量，5..</p>
+  </a>
+  <h4>25<span>2018.05</span></h4>
+</li>
+
+      </ul>
+    </div>
+    
+</div>
+
+
+<!-- bk02 -->
+<div class="bk02_w">    
+  <div class="bk02 cen">
+    <!-- 媒体聚焦 -->
+    <div class="bk02_list01">
+      <div class="bk02_list_bt"><h3>媒体聚焦</h3><a href="/html/2/mtjj/" target="_blank">更多+</a></div>
+      <ul>
+          <li><a href="/html/2/content/18/05/18781.shtml" target="_blank" title="【第1眼-重庆广电】2018“正大杯”重庆市大学生软件设计大赛落幕">
+  <h4>05月
+    <p>28日</p>
+  </h4>
+  <h3>【第1眼-重庆广电】2018“正大杯”重庆市大学生..</h3>
+  </a></li>
+<li><a href="/html/2/content/18/05/18779.shtml" target="_blank" title="【上游新闻】大学生为“穷游”开发“沙发客”系统获重庆市大学生软件设计大赛一等奖">
+  <h4>05月
+    <p>28日</p>
+  </h4>
+  <h3>【上游新闻】大学生为“穷游”开发“沙发客”系..</h3>
+  </a></li>
+<li><a href="/html/2/content/18/05/18689.shtml" target="_blank" title="【华龙网】祝贺！重庆工程学院喜获全国高校创新创意创业跨平台动漫游设计大赛多项大奖">
+  <h4>05月
+    <p>23日</p>
+  </h4>
+  <h3>【华龙网】祝贺！重庆工程学院喜获全国高校创新..</h3>
+  </a></li>
+<li><a href="/html/2/content/18/05/18645.shtml" target="_blank" title="【上游新闻】以书为媒 重庆体彩520“以旧换新”传递微公益">
+  <h4>05月
+    <p>21日</p>
+  </h4>
+  <h3>【上游新闻】以书为媒 重庆体彩520“以旧换新”..</h3>
+  </a></li>
+
+      </ul>
+    </div>
+    
+    <!-- 通知公告 -->
+    <div class="bk02_list02">
+      <div class="bk02_list_bt"><h3>通知公告</h3><a href="/html/2/tzgg/" target="_blank">更多+</a></div>
+      <ul>
+      <li><span>2018-04-16</span><a href="/html/2/content/18/04/17769.shtml" target="_blank" title="2018年分类招生志愿征集公告（专科批）">2018年分类招生志愿征集公告（专科批）</a></li><li><span>2018-04-10</span><a href="/html/2/content/18/04/17590.shtml" target="_blank" title="关于2018-2019学年度第一学期韩国明知大学交换生项目报名的通知">关于2018-2019学年度第一学期韩国明知大学交换..</a></li><li><span>2018-04-04</span><a href="/html/2/content/18/04/17465.shtml" target="_blank" title="2018年重庆市高职分类招生录取最低控制分数线">2018年重庆市高职分类招生录取最低控制分数线</a></li><li><span>2018-03-11</span><a href="/html/2/content/18/03/16820.shtml" target="_blank" title="2018年高职分类考试招生专业代码及志愿填报书籍页码">2018年高职分类考试招生专业代码及志愿填报书籍..</a></li><li><span>2018-03-27</span><a href="/html/2/content/18/03/17179.shtml" target="_blank" title="重庆工程学院2018年招生简章">重庆工程学院2018年招生简章</a></li><li><span>2018-02-11</span><a href="/html/2/content/18/02/16317.shtml" target="_blank" title="重庆工程学院2018年高职分类考试招生章程">重庆工程学院2018年高职分类考试招生章程</a></li><li><span>2018-03-28</span><a href="/html/2/content/18/03/17217.shtml" target="_blank" title="党的十九大报告学习资料">党的十九大报告学习资料</a></li><li><span>2018-03-26</span><a href="/html/2/content/18/03/17172.shtml" target="_blank" title="“四问”结核病的防与治">“四问”结核病的防与治</a></li>
+      </ul>
+    
+    </div>
+    
+    <!-- 院系导航 -->
+      <div class="bk02_list03">
+      <h3>院系导航</h3>
+      <ul>
+        <li class="bk02_list03_ts"><a href="http://rj.cqie.edu.cn/">软件与计算机学院</a></li>
+        <li><a href="http://dz.cqie.edu.cn/">电子与物联网学院</a></li>
+        <li class="bk02_list03_ts"><a href="http://dh.cqie.edu.cn/">动画与数字影视学院</a></li>
+        <li><a href="http://tm.cqie.edu.cn/">土木工程与建筑学院</a></li>
+        <li class="bk02_list03_ts"><a href="http://zdh.cqie.edu.cn/">智能与自动化学院</a></li>
+        <li><a href="http://gl.cqie.edu.cn/">管理学院</a></li>
+        <li class="bk02_list03_ts"><a href="http://ts.cqie.edu.cn/">通识学院</a></li>
+      </ul>
+    </div>
+  
+  </div>    
+</div>
+
+<!-- bk03 -->
+<div class="bk03_w">    
+  <div class="bk03 cen">
+			<div class="hd">
+				<a class="next"></a>
+				<a class="prev"></a>
+			</div>
+			<div class="bd">
+				<ul class="picList">
+                  <li><a href="http://222.178.152.79:8088/" target="_blank"><img src="/templates/site/images/zt_pic01.jpg" alt=""></a></li>
+                  <li><a href="http://zs.cqie.edu.cn/" target="_blank"><img src="/templates/201801/20180122105358777.jpg"></a></li>
+                  <li><a href="/html/8/Index.shtml" target="_blank"><img src="/templates/site/images/zt_pic03.jpg" alt=""></a></li>
+				</ul>
+			</div>
+  </div>
+  <script type="text/javascript">
+     jQuery(".bk03").slide({mainCell:".bd ul",autoPlay:true,effect:"leftLoop",vis:3,});
+  </script> 
+</div>
+
+<!-- mhxx -->
+<div class="mhxx_w">    
+  <div class="mhxx cen">
+    <h3><img src="/templates/site/images/mhxx_bt.jpg"></h3>
+    <ul>
+      <li><a href="http://oa.cqie.edu.cn/" class="mhxx_ico01"><p></p><span>OA办公系统</span></a></li>
+      <li><a href="http://jw.cqie.edu.cn/" class="mhxx_ico02"><p></p><span>教务管理系统</span></a></li>
+      <li><a href="http://xs.cqie.edu.cn/" class="mhxx_ico03"><p></p><span>学生综合管理系统</span></a></li>
+      <li><a href="http://wj.cqie.edu.cn" class="mhxx_ico04"><p></p><span>网络教学平台</span></a></li>
+      <li><a href="http://www.cqgcxy.com:806/" class="mhxx_ico06"><p></p><span>图书馆藏</span></a></li>
+      <li><a href="http://jy.cqie.edu.cn/" class="mhxx_ico05"><p></p><span>就业管理系统</span></a></li>
+    </ul>
+    <div class="mhxx_more"><a href="/html/mhxx/Index.shtml" target="_blank"></a></div>
+  </div>
+</div>
+
+<!-- 底部 -->
+<div class="foot_w">
+  <div class="foot cen">
+    <div class="foot_logo"><a href="#"><img src="/templates/site/images/foot_logo.png"></a></div>
+    <div class="foot_xq">
+      <h3>南泉校区</h3>
+      <p>地址：重庆市巴南区南泉街道白鹤林16号<br>
+        电话：023-62846626<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 023-62846636<br>
+        邮编：400056</p>
+    </div>
+    <div class="foot_xq">
+      <h3>双桥校区</h3>
+      <p>地址：重庆市双桥经济开发区龙水湖西湖大道76号<br>
+        电话：023-62846626<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 023-62846636<br>
+        邮编：400900</p>
+    </div>
+    <div class="foot_ewm"><img src="/templates/site/images/ewm.jpg">
+      <p>官方二维码</p>
+    </div>
+  </div>
+    <div class="copyright cen">
+    <p>Copyright 重庆工程学院   版权所有 渝ICP备09014106    招生咨询热线：023-62846626  023-62846636</p>
+    <div class="copyright_nr"><a  target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50011302000724"><img src="/templates/201804/20180402173549679.png">渝公网安备 50011302000724号</a><span>(建议使用IE9以上浏览器)</span></div> 
+  </div>
+
+  
+</div>
+ 
+
+<script src="/html/iaa/1/index.js"></script>
+</body>
+</html>

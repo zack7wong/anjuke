@@ -1,0 +1,525 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>常州市第四中学</title>
+<link href="/efs_img/adminupload/css/index.css" rel="stylesheet" type="text/css" />
+<script src="/SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<link href="/SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+<script src="/efs_img/adminupload/js/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="/efs_ajax/efs_czsz.js" type="text/javascript"></script>
+<script type="text/javascript">
+var $nAdminId = '0';//管理员ID号，如果未登录则为0
+var $sAdminNickName = '';//管理员账号（昵称），如果未登录则为空
+var $sAdminPass = '';//管理员密码（经加密）
+</script>
+</head>
+
+<body>
+<div id="login">
+<div class="table">
+<table id="efs_table_login" style="display:none;" width="500" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="right">用户名：</td>
+      <td><input type="text" id="efs_login_name" name="efs_login_name" /></td>
+      <td align="right">密码：</td>
+      <td><input type="password" id="efs_login_pass" name="efs_login_pass" /></td>
+      <td><input type="button" id="efs_login_login" name="efs_login_login" value="登录" /></td>
+    </tr>
+</table>
+<table id="efs_table_loged" style="display:none;" width="500" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="right">欢迎您：&nbsp; &nbsp;</td> 
+      <td><a href="/admin/frame.aspx" target="_self">进入后台</a></td>
+      <td><input type="button" id="efs_login_logout" name="efs_login_logout" value="退出" /></td>
+    </tr>
+</table>
+</div>
+<div class="topright"><a href="http://czsz.qqedu.net:3000/default.asp">怀念旧版</a>｜<a href="daohang.htm">网站导航</a></div> 
+</div>
+<div id="top">
+<script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','1000','height','200','src','/images/banner','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','/images/banner' ); //end AC code
+</script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="1000" height="200">
+    <param name="movie" value="/images/banner.swf" />
+    <param name="quality" value="high" />
+    <embed src="/images/banner.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="1000" height="200"></embed>
+  </object>
+</noscript>
+</div><div id="center">
+  <div id="menu">
+    <ul>
+      <li><a href="/index.htm">首&nbsp; &nbsp; 页</a></li>
+      <li><a href="/news/8.htm">学校概况</a></li>
+      <li><a href="/news/2.htm">校园新闻</a></li>
+      <li><a href="/news/15.htm">吾爱吾师</a></li>
+      <li><a href="/news/26.htm">德育经纬</a></li>
+      <li><a href="/news/34.htm">教学管理</a></li>
+      <li><a href="/news/46.htm">教育科研</a></li>
+      <li><a href="/news/54.htm">莘莘学子</a></li>
+      <li><a href="/news/63.htm">保障服务</a></li>
+      <li><a href="/news/70.htm">党旗飘扬</a></li>
+      <li><a href="/news/77.htm">职工之家</a></li>
+      <li><a href="http://wmdw.jswmw.com/home/?lid=12439">文明单位</a></li>
+      <li><a href="http://112.21.191.229:84/ac7c671cb8124b2cab6b8d623cc039c8/Organization/Index.aspx">教育督导</a></li>
+ 
+    </ul>
+  </div>
+  <div style="width: 1000px; margin: 5px auto"><img src="/images/tbtj.jpg" border="0" usemap="#Map" />
+<map name="Map" id="Map">
+  <area shape="rect" coords="53,10,234,110" href="/xwc.htm" />
+  <area shape="rect" coords="239,8,420,112" href="/news/491.htm" />
+  <area shape="rect" coords="424,8,607,112" href="/news/54.htm" />
+  <area shape="rect" coords="613,8,796,112" href="/news/504.htm" />
+  <area shape="rect" coords="800,9,981,111" href="/news/507.htm" />
+</map></div>
+  <div id="left">
+    <div class="xngg">    
+      <div id="TabbedPanels1" class="TabbedPanels">
+        <ul class="TabbedPanelsTabGroup">
+          <li class="TabbedPanelsTab" tabindex="0">校内公告</li>
+          <li class="TabbedPanelsTab" tabindex="0">一周安排</li>
+        </ul>
+        <div class="TabbedPanelsContentGroup">
+          <div class="TabbedPanelsContent">
+            <div class="news">
+             <ul>
+          
+          <li><a href="http://www.wjedu.net/node/zgwk_1/2018-3-29/CFEE1FEFD179353.html" title="转发：关于深化集团化办学，开展义务教育学校城乡结对共进活动的实施意见">转发：关于深化集团化办学，开展义务教…<img src="/efs_img/adminupload/images/new.gif" width="28" height="11" /></a></li>
+          
+          <li><a href="/news/201805/9462.htm" title="关于举办毕业班作文、心理讲座的通知">关于举办毕业班作文、心理讲座的通知</a></li>
+          
+          <li><a href="/news/201805/9424.htm" title="关于举办体育、艺术工作培训的通知">关于举办体育、艺术工作培训的通知</a></li>
+          
+          <li><a href="/news/201805/9419.htm" title="常州市第四中学2018年自主招生学校推荐实施方案">常州市第四中学2018年自主招生学校推荐…</a></li>
+          
+          <li><a href="/news/201805/9416.htm" title="常州市第四中学2018年自主招生学校推荐实施方案">常州市第四中学2018年自主招生学校推荐…</a></li>
+          
+           </ul>
+      </div>
+      <div class="more"><a href="/news/474.htm">更多&lt;&lt;</a></div>
+          </div>
+          <div class="TabbedPanelsContent">
+               <div class="news">
+          <ul>
+          
+          <li><a href="/news/201805/9484.htm" title="第14周工作安排">第14周工作安排<img src="/efs_img/adminupload/images/new.gif" width="28" height="11" /></a></li>
+          
+          <li><a href="/news/201805/9174.htm" title="第13周工作安排">第13周工作安排</a></li>
+          
+          <li><a href="/news/201805/9150.htm" title="第12周工作安排">第12周工作安排</a></li>
+          
+          <li><a href="/news/201805/9135.htm" title="第11周工作安排">第11周工作安排</a></li>
+          
+          <li><a href="/news/201804/9109.htm" title="第10周工作安排">第10周工作安排</a></li>
+          
+        </ul>
+      </div>
+      <div class="more"><a href="/news/7.htm">更多&lt;&lt;</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="img">
+      <ul>
+        <li style="padding-right: 5px;"><a href="guestbook.htm"><img src="/images/index_r7_c4.jpg" /></a></li>
+        <li><a href="/news/5.htm"><img src="/images/index_r7_c6.jpg" /></a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="right">
+   <div class="xyjj_bt">
+     <p><a href="/news/4.htm">更多&lt;&lt;</a></p>   
+    </div>
+   <div class="xyjj">
+     <div class="left">
+       <div style="width: 306px; margin: 8px auto;">
+             <script type="text/javascript">
+				
+				var pics = "", links = "", texts = "";
+				//
+				pics += (pics == "" ? "" : "|"); pics += "/efs_img/adminupload/20/images/201805/1323270.jpg";
+				texts += (texts == "" ? "" : "|"); texts += "市四中国际象棋队在市运动会青少年部棋类比赛中获佳绩";
+				links += (links == "" ? "" : "|"); links += escape("/news/201805/9485.htm");
+				//
+				pics += (pics == "" ? "" : "|"); pics += "/efs_img/adminupload/20/images/201805/1554520.jpg";
+				texts += (texts == "" ? "" : "|"); texts += "市第四中学开展希沃教学软件操作培训";
+				links += (links == "" ? "" : "|"); links += escape("/news/201805/9479.htm");
+				//
+				pics += (pics == "" ? "" : "|"); pics += "/efs_img/adminupload/20/images/201805/1552280.jpg";
+				texts += (texts == "" ? "" : "|"); texts += "星辰实验与常州四中举行城乡共进活动";
+				links += (links == "" ? "" : "|"); links += escape("/news/201805/9478.htm");
+				//
+				pics += (pics == "" ? "" : "|"); pics += "/efs_img/adminupload/20/images/201805/1336030.jpg";
+				texts += (texts == "" ? "" : "|"); texts += "常州四中接受区义务教育现场水平考核";
+				links += (links == "" ? "" : "|"); links += escape("/news/201805/9474.htm");
+				//
+				pics += (pics == "" ? "" : "|"); pics += "/efs_img/adminupload/20/images/201805/0823380.jpg";
+				texts += (texts == "" ? "" : "|"); texts += "常州四中顺利召开八届三次教职工大会";
+				links += (links == "" ? "" : "|"); links += escape("/news/201805/9433.htm");
+				//                
+                var focus_width=306
+                var focus_height=230
+                var text_height=25
+
+                var swf_height = focus_height+text_height
+                
+                document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">');
+                document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="/images/focus1.swf"><param name="quality" value="high"><param name="bgcolor" value="#F0F0F0">');
+                document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+                document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+                document.write('<embed src="/images/focus1.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" bgcolor="#f0f0f0" quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); 
+                document.write('</object>');
+                </script>
+            </div>
+     </div>
+     <div class="right">
+       <div class="news">
+         <ul>
+           
+           <li><span>(2018-05-28)</span><a href="/news/201805/9485.htm" title="市四中国际象棋队在市运动会青少年部棋类比赛中获佳绩">市四中国际象棋队在市运动会青少年部…<img src="/efs_img/adminupload/images/new.gif" width="28" height="11" /></a></li>
+          
+           <li><span>(2018-05-25)</span><a href="/news/201805/9479.htm" title="市第四中学开展希沃教学软件操作培训">市第四中学开展希沃教学软件操作培训<img src="/efs_img/adminupload/images/new.gif" width="28" height="11" /></a></li>
+          
+           <li><span>(2018-05-25)</span><a href="/news/201805/9478.htm" title="星辰实验与常州四中举行城乡共进活动">星辰实验与常州四中举行城乡共进活动<img src="/efs_img/adminupload/images/new.gif" width="28" height="11" /></a></li>
+          
+           <li><span>(2018-05-25)</span><a href="/news/201805/9474.htm" title="常州四中接受区义务教育现场水平考核">常州四中接受区义务教育现场水平考核<img src="/efs_img/adminupload/images/new.gif" width="28" height="11" /></a></li>
+          
+           <li><span>(2018-05-24)</span><a href="/news/201805/9433.htm" title="常州四中顺利召开八届三次教职工大会">常州四中顺利召开八届三次教职工大会</a></li>
+          
+           <li><span>(2018-05-22)</span><a href="/news/201805/9336.htm" title="常州市第四中学学生羽毛球赛圆满结束">常州市第四中学学生羽毛球赛圆满结束</a></li>
+          
+           <li><span>(2018-05-17)</span><a href="/news/201805/9172.htm" title="市四中航模社团参加区航模比赛创佳绩">市四中航模社团参加区航模比赛创佳绩</a></li>
+          
+           <li><span>(2018-05-17)</span><a href="/news/201805/9170.htm" title="区教师发展中心来市四中调研九年级政史教学">区教师发展中心来市四中调研九年级政…</a></li>
+          
+           <li><span>(2018-05-17)</span><a href="/news/201805/9169.htm" title="市四中部分师生赴戚墅堰街道观摩主题演讲比赛">市四中部分师生赴戚墅堰街道观摩主题…</a></li>
+          
+           <li><span>(2018-05-17)</span><a href="/news/201805/9168.htm" title="武进区初中英语校长学科基地活动在市四中举行">武进区初中英语校长学科基地活动在市…</a></li>
+          
+         </ul>
+       </div>
+     </div>
+   </div>
+  </div>
+  <div class="clear"></div>
+
+
+  <div id="banner"><a href="http://wmdw.jswmw.com/home/?lid=12439" title="文明单位"><img src="/images/index_r12_c21.jpg" /></a></div>
+
+
+
+
+
+  <div id="dyzc">
+    <div id="left01">
+
+
+      <div class="news">
+        <ul>
+          <ol><span><a href="/news/29.htm">更多&gt;&gt;</a></span>常规管理</ol>
+          
+          <li><a href="/news/201709/8190.htm" title="常州市第四中学大课间课程实施方案">常州市第四中学大课间课程实…</a></li>
+          
+          <li><a href="/news/201709/8171.htm" title="学生会各部门人员公示">学生会各部门人员公示</a></li>
+          
+          <li><a href="/news/201709/8144.htm" title="常州市第四中学学生会组建方案">常州市第四中学学生会组建方案</a></li>
+          
+          <li><a href="/news/201706/8022.htm" title="16-17学年第二学期第十七周班级常规管理情况反馈（值周班级初二2班）">16-17学年第二学期第十七周…</a></li>
+          
+          <li><a href="/news/201706/7982.htm" title="16-17学年第二学期第十六周班级常规管理情况反馈（值周班级初二1班）">16-17学年第二学期第十六周…</a></li>
+          
+          <li><a href="/news/201705/7981.htm" title="16-17学年第二学期第十五周班级常规管理情况反馈（值周班级初一5班）">16-17学年第二学期第十五周…</a></li>
+          
+        </ul>
+      </div>
+
+
+
+      <div class="news">
+        <ul>
+          <ol><span><a href="/news/27.htm">更多&gt;&gt;</a></span>家校桥梁</ol>
+          
+          <li><a href="/news/201712/8887.htm" title="关于召开2017—2018学年家长委员会座谈会通知">关于召开2017—2018学年家长委…</a></li>
+          
+          <li><a href="/news/201611/7264.htm" title="家校沟通，造就孩子精彩人生 ">家校沟通，造就孩子精彩人生 </a></li>
+          
+          <li><a href="/news/201609/7265.htm" title="市四中：融心汇智谋发展，凝和共济提质量 ">市四中：融心汇智谋发展，凝和…</a></li>
+          
+          <li><a href="/news/201505/4815.htm" title="市四中初一年级召开新学期家长会">市四中初一年级召开新学期家长会</a></li>
+          
+          <li><a href="/news/201505/4673.htm" title="2014-2015年常州市第四中学 家长委员会成员名单">2014-2015年常州市第四中学 家…</a></li>
+          
+          <li><a href="/news/201505/4672.htm" title="常州市第四中学家长委员会章程">常州市第四中学家长委员会章程</a></li>
+          
+        </ul>
+      </div>
+
+
+
+
+
+      <div class="news">
+        <ul>
+          <ol><span><a href="/news/28.htm">更多&gt;&gt;</a></span>国旗下讲话</ol>
+          
+          <li><a href="/news/201805/9470.htm" title="初一1班《小满未满》">初一1班《小满未满》</a></li>
+          
+          <li><a href="/news/201805/9471.htm" title="市四中部分师生赴戚墅堰街道观摩主题演讲比赛">市四中部分师生赴戚墅堰街道观…</a></li>
+          
+          <li><a href="/news/201804/9472.htm" title="“世界读书日”常州四中开展系列活动">“世界读书日”常州四中开展系…</a></li>
+          
+          <li><a href="/news/201803/9469.htm" title="常州四中18公里徒步远足祭扫革命先烈">常州四中18公里徒步远足祭扫革…</a></li>
+          
+          <li><a href="/news/201803/9473.htm" title="书香致远 情溢校园">书香致远 情溢校园</a></li>
+          
+          <li><a href="/news/201803/9033.htm" title="初三3班 《世界那么大  你凭什么去看看》">初三3班 《世界那么大  你凭什…</a></li>
+          
+        </ul>
+      </div>
+
+<div class="clear"></div>
+
+
+      <div class="news">
+        <ul>
+        <ol><span><a href="/news/471.htm">更多&gt;&gt;</a></span>德育活动</ol>
+          
+          <li><a href="/news/201803/9173.htm" title="磨练意志 缅怀先辈 关注公益 从我做起——清明远足公益活动方案">磨练意志 缅怀先辈 关注公益…</a></li>
+          
+          <li><a href="/news/201803/9132.htm" title="寒假各项比赛结果公示">寒假各项比赛结果公示</a></li>
+          
+          <li><a href="/news/201712/8888.htm" title="关于召开2017—2018学年家长委员会座谈会通知">关于召开2017—2018学年家长…</a></li>
+          
+          <li><a href="/news/201709/8241.htm" title="常州市第四中学“最美班级”评比结果公示">常州市第四中学“最美班级”…</a></li>
+          
+          <li><a href="/news/201709/8197.htm" title="远离校园霸凌，共创和谐校园">远离校园霸凌，共创和谐校园</a></li>
+          
+          <li><a href="/news/201709/8194.htm" title="常州第四中学校运会“精神文明奖”评奖方案">常州第四中学校运会“精神文…</a></li>
+          
+        </ul>
+      </div>
+
+
+      <div class="news">
+        <ul>
+          <ol><span><a href="/news/472.htm">更多&gt;&gt;</a></span>学生表彰</ol>
+          
+          <li><a href="/news/201803/9133.htm" title="寒假各项比赛结果公示">寒假各项比赛结果公示</a></li>
+          
+          <li><a href="/news/201802/8959.htm" title="关于表彰2017——2018学年度第一学期校“单项积极分子”的决定 ">关于表彰2017——2018学年度…</a></li>
+          
+          <li><a href="/news/201802/8958.htm" title="关于表彰2017——2018学年度第一学期校“三好学生”的决定 ">关于表彰2017——2018学年度…</a></li>
+          
+          <li><a href="/news/201701/7625.htm" title="关于表彰2016——2017学年度第一学期校“三好学生”、 “单项积极分子”的决定">关于表彰2016——2017学年度…</a></li>
+          
+          <li><a href="/news/201612/7210.htm" title="2016-2017学年“新五常之星”展（初三年级）">2016-2017学年“新五常之星…</a></li>
+          
+          <li><a href="/news/201612/7206.htm" title="2016-2017学年“新五常之星”展（初二年级）">2016-2017学年“新五常之星…</a></li>
+          
+        </ul>
+      </div>
+
+
+      <div class="news">
+        <ul>
+          <ol><span><a href="/news/76.htm">更多&gt;&gt;</a></span>团队活动</ol>
+          
+          <li><a href="/news/201805/9409.htm" title="市四中“区诗文赏读大赛”初赛">市四中“区诗文赏读大赛”初赛</a></li>
+          
+          <li><a href="/news/201805/9408.htm" title="市四中“区航模比赛”获奖">市四中“区航模比赛”获奖</a></li>
+          
+          <li><a href="/news/201805/9410.htm" title="市四中“书香校园建设”好书推荐卡评选获奖">市四中“书香校园建设”好书…</a></li>
+          
+          <li><a href="/news/201805/9407.htm" title="市四中“五四运动表彰”">市四中“五四运动表彰”</a></li>
+          
+          <li><a href="/news/201804/9406.htm" title="市四中“书香校园图书角建设”捐书细目表">市四中“书香校园图书角建设…</a></li>
+          
+          <li><a href="/news/201803/9399.htm" title="市四中“清明远足拉练”活动">市四中“清明远足拉练”活动</a></li>
+          
+        </ul>
+      </div>
+
+
+
+
+    </div>
+    <div id="right01">
+      <div class="img">            
+        <ul>
+          <li><a href="/news/496.htm" title="教学观察"><img src="/images/pic_r14_c2.jpg" /></a></li>
+          <li><a href="/ktwy.htm" title="四中课题网页"><img src="/images/pic_r10_c2.jpg" /></a></li>
+          <li><a href="/tbloglist.htm" title="教师博客"><img src="/images/pic_r12_c2.jpg" /></a></li>
+         <li><a href="/bjwy.htm" target="_blank" title="班级网页"><img src="/images/pic_r8_c2.jpg" /></a></li>
+          <li><a href="/news/31.htm" title="心灵之约"><img src="/images/pic_r2_c2.jpg" /></a></li>
+          <li><a href="/news/84.htm" title="图书馆"><img src="/images/pic_r4_c2.jpg" /></a></li>
+          <li><a href="/news/88.htm" title="实验室"><img src="/images/pic_r6_c2.jpg" /></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="banner"><a href="/news/34.htm" title="教学管理"><img src="/images/index_r12_c3.jpg" /></a></div>
+  <div id="jyzl">
+    <div class="jyzlbt">
+      <ul>
+        <li><a href="/news/484.htm">教育论坛</a>&nbsp;&nbsp;|</li>
+     </ul>
+    </div>
+    <div class="clear"></div>
+    <div class="news">
+       <ul>
+         <ol>教研动态</ol>
+         
+         <li><a href="/news/201805/9491.htm" title="5月30日公开课通知">5月30日公开课通知<img src="/efs_img/adminupload/images/new.gif" width="28" height="11" /></a></li>
+           
+         <li><a href="/news/201805/9425.htm" title="关于举办体育、艺术工作培训的通知">关于举办体育、艺术工作培训的通知</a></li>
+           
+         <li><a href="/news/201805/9310.htm" title="5月22日公开课通知">5月22日公开课通知</a></li>
+           
+         <li><a href="/news/201805/9171.htm" title="关于举行星辰实验与常州四中“城乡共进”活动 暨区初中化学“校长学科基地”联合教研活动的通知">关于举行星辰实验与常州四中“城乡共进”…</a></li>
+           
+         <li><a href="/news/201805/9165.htm" title="转发：关于开展常州市教育科学“十三五”规划第二期课题">转发：关于开展常州市教育科学“十三五”…</a></li>
+           
+          <div class="more"><a href="/news/49.htm">更多&lt;&lt;</a></div>
+       </ul>
+    </div>
+    <div class="news">
+       <ul>
+           <ol>校本科研</ol>
+           
+         <li><a href="/news/201706/8110.htm" title="英语教研组2016-2017学年第二学期教研组工作总结">英语教研组2016-2017学年第二学期教研组…</a></li>
+           
+         <li><a href="/news/201706/8108.htm" title="语文教研组2016——2017学年第二学期工作总结">语文教研组2016——2017学年第二学期工作…</a></li>
+           
+         <li><a href="/news/201706/8107.htm" title="信息教研组2016—2017学年第二学期工作总结">信息教研组2016—2017学年第二学期工作总结</a></li>
+           
+         <li><a href="/news/201706/8106.htm" title="物理教研组2016~2017学年第二学期工作总结">物理教研组2016~2017学年第二学期工作总结</a></li>
+           
+         <li><a href="/news/201706/8105.htm" title="政史地教研组2016-2017学年第二学期工作总结">政史地教研组2016-2017学年第二学期工作…</a></li>
+           
+         <div class="more"><a href="/news/483.htm">更多&lt;&lt;</a></div>
+       </ul>
+    </div>
+    <div class="news">
+       <ul>
+           <ol>教育成果</ol>
+           
+         <li><a href="/news/201505/4573.htm" title="浅谈初中数学课上问题创设策略的思考">浅谈初中数学课上问题创设策略的思考</a></li>
+           
+         <li><a href="/news/201505/4572.htm" title="反思文化建设 建设优秀班级">反思文化建设 建设优秀班级</a></li>
+           
+         <li><a href="/news/201505/4571.htm" title="初中物理综合实践活动教学的几点思考">初中物理综合实践活动教学的几点思考</a></li>
+           
+         <li><a href="/news/201505/4570.htm" title="利用本校与周边特色资源，实施我校综合实践活动课程">利用本校与周边特色资源，实施我校综合实…</a></li>
+           
+       <div class="more"><a href="/news/485.htm">更多&lt;&lt;</a></div>
+       </ul>
+    </div>
+  </div>
+  <div id="banner">
+    <ul>
+      <li><a href="/news/15.htm" title="吾爱吾师"><img src="/images/index_r18_c2.jpg" width="230" height="75" /></a></li>
+      <li style="padding-left: 2px;"><a href="/wsbx.htm" title="网上报修"><img src="/images/index_r18_c11.jpg" width="230" height="75" /></a></li>
+       <li style="padding-left: 1px;"><a href="/news/467.htm" title="网络资源"><img src="/images/wlzy.jpg" width="230" height="75" /></a></li>
+       <li><a href="/news/67.htm" title="E学习"><img src="/images/exx.jpg" width="245" height="80" /></a></li></ul>
+  </div>
+  <div class="clear"></div>
+  <div id="link">
+    <ul>
+      <li>
+            <select name="link0" id="link0" onchange="javascript:if(this.value!='0') {window.location=this.value;}">
+		<option value="0">省级教育网站</option>
+		
+		<option value="http://www.nncc626.com">中国禁毒网</option>
+		
+		<option value="http://www.jse.edu.cn">省智慧教育云计算平台</option>
+		
+		<option value="http://www.jsjyxh.com/">江苏省教育协会</option>
+		
+		<option value="http://www.js-seism.gov.cn/">江苏防震减灾网</option>
+		
+		<option value="http://www.jsenews.com/site/boot/">江苏教育新闻网</option>
+		
+		<option value="http://www.chineseall.cn/org/orgReadingRoom.jsps?orgCode=100300130060">书香江苏</option>
+		
+		<option value="http://www.etec.edu.cn/etec/">江苏教育资料网</option>
+		
+	 </select>
+            </li>
+             <li>
+            <select name="link1" id="link1" onchange="javascript:if(this.value!='0') {window.location=this.value;}">
+		<option value="0">市区教育网站</option>
+		
+		<option value="http://www.qqedu.net/">戚区教育信息网</option>
+		
+		<option value="http://www.czedu.gov.cn/Default.aspx">常州教育信息网</option>
+		
+		<option value="http://czjs.czedu.gov.cn/home/">常州教师培训中心网站</option>
+		
+	 </select>
+            </li>
+               <li>
+            <select name="link2" id="link2" onchange="javascript:if(this.value!='0') {window.location=this.value;}">
+		<option value="0">其他学校网站</option>
+		
+		<option value="http://www.czqsz.com/">戚区实验中学</option>
+		
+		<option value="http://www.czlczx.net/">潞城中学</option>
+		
+		<option value="http://dfxx.qqedu.net/webs/">戚区东方小学</option>
+		
+		<option value="http://qsx.qqedu.net/">戚区实验小学</option>
+		
+		<option value="http://dyxx.qqedu.net/">丁堰小学</option>
+		
+		<option value="http://lcxx.qqedu.net/">潞城小学</option>
+		
+		<option value="http://www.czqsyyey.com/index.html">戚区幼儿园</option>
+		
+	 </select>
+            </li>
+               <li>
+            <select name="link3" id="link3" onchange="javascript:if(this.value!='0') {window.location=this.value;}">
+		<option value="0">校内学科网站</option>
+		
+		<option value="http://192.168.0.3">《信息技术》课程</option>
+		
+	 </select>
+            </li>
+              <li>
+            <select name="link4" id="link4" onchange="javascript:if(this.value!='0') {window.location=this.value;}">
+		<option value="0">其它资源网站</option>
+		
+		<option value="http://www.czerc.com/">春晖工程网</option>
+		
+		<option value="http://www.zxyq.com.cn">自主学习中心</option>
+		
+		<option value="http://zyk.jse.edu.cn/portal/frame.jsp">中央电化教育馆教学资源库</option>
+		
+		<option value="http://jsjy.vip.qikan.com/index.aspx">江苏教育电子期刊阅览室</option>
+		
+	 </select>
+            </li>
+    </ul>
+  </div>
+</div>
+<div class="clear"></div>
+<div id="bottom">Copyright @ 2002-2015&nbsp; &nbsp; 常州市第四中学&nbsp; &nbsp; 版权所有<br />
+联系地址：常州市劳动东路5号&nbsp; &nbsp; 电话/传真：0519-88771003&nbsp; &nbsp; 邮编：213011 &nbsp; &nbsp; 网站备案号：<a href='http://www.miibeian.gov.cn/' target="_blank">苏ICP备16063720号</a><p><script src="http://s25.cnzz.com/stat.php?id=4033939&web_id=4033939&online=1&show=line" language="JavaScript"></script>
+</p>
+
+
+
+
+</div>
+</body>
+<script type="text/javascript">
+<!--
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+//-->
+</script>
+</html>

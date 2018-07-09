@@ -1,0 +1,605 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+	花都实验中学
+</title><meta charset="UTF-8" /><link href="css/index.css" rel="stylesheet" type="text/css" /><link href="css/style-i.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+        function AddFavorite(sURL, sTitle) {
+            try {
+                window.external.addFavorite(sURL, sTitle);
+            }
+            catch (e) {
+                try {
+                    window.sidebar.addPanel(sTitle, sURL, "");
+                }
+                catch (e) {
+                    alert("抱歉，您所使用的浏览器无法完成此操作，请使用Ctrl+D进行添加。");
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/css">
+        .new_li
+        {
+            height:189px;
+        }
+    </style>
+    <script src="js/jquery.kinMaxShow-1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#kinMaxShow").kinMaxShow
+                        ({
+                            button: {
+                                showIndex: false,
+                                normal: { background: '#fff', marginRight: '5px', border: '0', right: '0%', bottom: '30px' },
+                                focus: { background: '#005861', border: '0' }
+
+                            }
+                        })
+        });
+    </script>
+    <script type="text/javascript" src="js/superslide.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <div class="header">
+        <div class="w1030">
+            <div class="top_box">
+                <div class="logo">
+                    <img src="images/logo.png" />
+                </div>
+                <div class="launge">
+                    <a href="javaScript:void(0);" onclick="AddFavorite('#','花都实验中学');">加入收藏</a>
+                </div>
+            </div>
+            <div class="nav">
+                <ul class="navli">
+                    <li><a href="index.aspx">网站首页</a></li>
+                    
+                    <li><a href="articleMore.aspx?cid=1">学校简介</a></li>
+                    
+                    <li><a href="articleMore.aspx?cid=6">校园新闻</a></li>
+                    
+                    <li><a href="articleMore.aspx?cid=7">教学教研</a></li>
+                    
+                    <li><a href="articleMore.aspx?cid=8">德育建设</a></li>
+                    
+                    <li><a href="articleMore.aspx?cid=9">党团工作</a></li>
+                    
+                    <li><a href="articleMore.aspx?cid=10">师生家园</a></li>
+                    
+                    <li><a href="articleMore.aspx?cid=11">考试招生</a></li>
+                    
+                    <li><a href="articleMore.aspx?cid=12">家校互通</a></li>
+                    
+                    <li><a href="articleMore.aspx?cid=13">教师博客</a></li>
+                    
+                    <li><a href="articleMore.aspx?cid=14">通知公告</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!--banner-->
+    <div class="banner">
+        <div class="AdIMG">
+            <div id="kinMaxShow">
+                <div>
+                    <img src="images/banner.jpg" />
+                </div>
+                <div>
+                    <img src="images/banner1.jpg" />
+                </div>
+                <div>
+                    <img src="images/banner2.jpg" />
+                </div>
+                <div>
+                    <img src="images/banner3.jpg" />
+                </div>
+                <div>
+                    <img src="images/banner4.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--内容-->
+    <div class="Content">
+        <!--公告-->
+        <div class="notice">
+            <div class="w1250">
+                <span>通知公告</span>
+                <div id="nedemo" class="qimo8">
+                    <div class="qimo">
+                        <div id="nedemo1">
+                            <ul>
+                                
+                            </ul>
+                        </div>
+                        <div id="nedemo2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end-->
+        
+    <div class="w1250">
+        <div class="new_box">
+            <div class="new_incont">
+                <h2>
+                    <img src="images/tit1.png" /></h2>
+                <div class="newli_top">
+                    
+                    <a href="details.aspx?id=271">
+                        <img src="images/news/88f2c1e752e54217acd137d6b4cb9dbc.jpg" />
+                        <div class="new_l_info">
+                            <p>我校开展“校园安全事故预防及应对”专题讲座</p>
+                            <span>2018/05/25</span>
+                        </div>
+                    </a>
+                    
+                </div>
+                <ul class="new_li">
+                    
+                    <li><a href="details.aspx?id=270">
+                        <p>广州市花都区实验中学2018年体育特长生拟定录取名...<span>2018/05/19</span></p>
+                    </a></li>
+                    
+                    <li><a href="details.aspx?id=266">
+                        <p>广州市花都区实验中学2018年体育特长生资格审核结...<span>2018/05/14</span></p>
+                    </a></li>
+                    
+                    <li><a href="details.aspx?id=264">
+                        <p>花都区实验中学应对恶劣天气停课（复课）制度<span>2018/05/11</span></p>
+                    </a></li>
+                    
+                </ul>
+                <div class="more">
+                    <a href="articleMore.aspx?cid=6">
+                        <img src="images/more.png" /></a>
+                </div>
+            </div>
+            <div class="new_incont ml115">
+                <h2>
+                    <img src="images/tit2.png" /></h2>
+                <div class="newli_top">
+                    
+                    <a href="details.aspx?id=196">
+                        <img src="images/news/993853b0d80e4ab7a2eefe14293fa463.jpg" />
+                        <div class="new_l_info">
+                            <p>花都区实验中学党支部组织生活</p>
+                            <span>2017/09/26</span>
+                        </div>
+                    </a>
+                    
+                </div>
+                <ul class="new_li">
+                    
+                    <li><a href="details.aspx?id=113">
+                        <p>[喜讯]我校初中男子足球队在花都区校园足球联赛中获...<span>2015/10/30</span></p>
+                    </a></li>
+                    
+                    <li><a href="details.aspx?id=114">
+                        <p>2015年广州市花都区实验中学少先队离队仪式暨入团...<span>2015/10/30</span></p>
+                    </a></li>
+                    
+                    <li><a href="details.aspx?id=109">
+                        <p>2015年广州市花都区实验中学成人宣誓仪式<span>2015/10/22</span></p>
+                    </a></li>
+                    
+                </ul>
+                <div class="more">
+                    <a href="articleMore.aspx?cid=9">
+                        <img src="images/more.png" /></a>
+                </div>
+            </div>
+            <div class="new_incont fr">
+                <h2>
+                    <img src="images/tit3.png" /></h2>
+                <div class="newli_top">
+                    
+                    <a href="details.aspx?id=122">
+                        <img src="images/news/c286bae91f5e421488db0673ed39bb2b.jpg" />
+                        <div class="new_l_info">
+                            <p>首席教师梁汉强校长简介</p>
+                            <span>2016/08/24</span>
+                        </div>
+                    </a>
+                    
+                </div>
+                <ul class="new_li">
+                    
+                    <li><a href="details.aspx?id=118">
+                        <p>花都区实验中学第二届功勋教师<span>2014/10/08</span></p>
+                    </a></li>
+                    
+                    <li><a href="details.aspx?id=123">
+                        <p>热烈祝贺我校李浩维等三位同学获奖<span>2014/03/26</span></p>
+                    </a></li>
+                    
+                    <li><a href="details.aspx?id=117">
+                        <p>热烈祝贺我校冼春秋老师获奖<span>2014/03/18</span></p>
+                    </a></li>
+                    
+                </ul>
+                <div class="more">
+                    <a href="articleMore.aspx?cid=10">
+                        <img src="images/more.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w1250">
+        <div class="conts">
+            <script>
+                $(document).ready(function (e) {
+                    $(".ddle_list li:last-child").css("border-right", "none")
+                });
+            </script>
+            <div class="top_ing">
+                <div class="l_title">
+                    <h2>
+                        <img src="images/l_tit1.png" /></h2>
+                </div>
+                <div class="r_link">
+                    <ul class="link_list">
+                        
+                        <li>
+                            <a href="login.aspx">
+                                <div class="link_img">
+                                    <img src="images/link_li1.png" />
+                                </div>
+                                <span>用户登入</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="http://10.132.119.246/login.aspx">
+                                <div class="link_img">
+                                    <img src="images/link_li2.png" />
+                                </div>
+                                <span>学校办公系统</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                                <div class="link_img">
+                                    <img src="images/link_li3.png" />
+                                </div>
+                                <span>成绩查询系统</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">
+                                <div class="link_img">
+                                    <img src="images/link_li4.png" />
+                                </div>
+                                <span>档案管理系统</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="ddle_ing">
+                <ul class="ddle_list">
+                    <li class="on">
+                        <a href="articleMore.aspx?cid=7">
+                            <span>花<br />
+                                实<br />
+                                ·<br />
+                                教<br />
+                                学<br />
+                                教<br />
+                                研</span>
+                            <img src="images/ddle1.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="articleMore.aspx?cid=8">
+                            <span>花<br />
+                                实<br />
+                                ·<br />
+                                德<br />
+                                育<br />
+                                建<br />
+                                設</span>
+                            <img src="images/ddle2.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="articleMore.aspx?cid=9">
+                            <span>花<br />
+                                实<br />
+                                ·<br />
+                                党<br />
+                                团<br />
+                                工<br />
+                                作</span>
+                            <img src="images/ddle3.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="articleMore.aspx?cid=10">
+                            <span>花<br />
+                                实<br />
+                                ·<br />
+                                师<br />
+                                生<br />
+                                家<br />
+                                园</span>
+                            <img src="images/ddle4.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="articleMore.aspx?cid=12">
+                            <span>花<br />
+                                实<br />
+                                ·<br />
+                                家<br />
+                                校<br />
+                                互<br />
+                                通</span>
+                            <img src="images/ddle5.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="articleMore.aspx?cid=11">
+                            <span>花<br />
+                                实<br />
+                                ·<br />
+                                考<br />
+                                试<br />
+                                招<br />
+                                生</span>
+                            <img src="images/ddle6.jpg" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gecin">
+                <div class="fullSlide">
+                    <div class="bd">
+                        <ul>
+                            <li><a>
+                                <div class="bot_ing">
+                                    <div class="l_title2">
+                                        <h2>
+                                            <img src="images/l_tit10.png" /></h2>
+                                    </div>
+                                    <div class="ge_font">
+                                        <h3>
+                                            <img src="images/gesize10.png" /></h3>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a>
+                                <div class="bot_ing">
+                                    <div class="l_title2">
+                                        <h2>
+                                            <img src="images/l_tit11.png" /></h2>
+                                    </div>
+                                    <div class="ge_font">
+                                        <h3>
+                                            <img src="images/gesize11.png" /></h3>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a>
+                                <div class="bot_ing">
+                                    <div class="l_title2">
+                                        <h2>
+                                            <img src="images/l_tit12.png" /></h2>
+                                    </div>
+                                    <div class="ge_font">
+                                        <h3>
+                                            <img src="images/gesize12.png" /></h3>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a>
+                                <div class="bot_ing">
+                                    <div class="l_title2">
+                                        <h2>
+                                            <img src="images/l_tit13.png" /></h2>
+                                    </div>
+                                    <div class="ge_font">
+                                        <h3>
+                                            <img src="images/gesize13.png" /></h3>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a>
+                                <div class="bot_ing">
+                                    <div class="l_title2">
+                                        <h2>
+                                            <img src="images/l_tit14.png" /></h2>
+                                    </div>
+                                    <div class="ge_font">
+                                        <h3>
+                                            <img src="images/gesize14.png" /></h3>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a>
+                                <div class="bot_ing">
+                                    <div class="l_title2">
+                                        <h2>
+                                            <img src="images/l_tit15.png" /></h2>
+                                    </div>
+                                    <div class="ge_font">
+                                        <h3>
+                                            <img src="images/gesize15.png" /></h3>
+                                    </div>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="hd">
+                        <ul>
+                            <li class="">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w1250">
+        <div class="scenery">
+            <div class="scen_title">
+                <div class="scen_tit">
+                    <h2>
+                        <img src="images/l_tit3.png" /></h2>
+                </div>
+                <a href="articleMore.aspx?cid=15">查看更多</a>
+            </div>
+            <div class="Exhibitor">
+                <div class="hl_main5_content">
+                    <div class="hl_scrool_leftbtn"></div>
+                    <div class="hl_scrool_rightbtn"></div>
+                    <div class="hl_main5_content1">
+                        <ul id="demo2" class="demoList">
+                            
+                            <li><a href="details.aspx?id=43">
+                                <img src="images/news/65b67d52d9544472a93dc43d9f2bec67.jpg"><span>校园风光---师生风貌</span></a></li>
+                            
+                            <li><a href="details.aspx?id=42">
+                                <img src="images/news/abc1ee8542b7400dbd4303b8ff89579f.jpg"><span>校园风光---文化</span></a></li>
+                            
+                            <li><a href="details.aspx?id=41">
+                                <img src="images/news/2156387e983c4219a8a22143c792821e.jpg"><span>校园风光---体育运动</span></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!--底部-->
+    <div class="bottom">
+        <div class="w1030">
+            
+    <div class="links">
+        <div class="link_tit">
+            <h2>
+                <img src="images/l_tit4.png" /></h2>
+        </div>
+        <div class="links_r">
+            <ul>
+                
+                <li><font>| </font><a href="http://www.gzteacher.com" target="_blank">广州市中小学教师继续教育</a></li>
+                
+                <li><font>| </font><a href="http://guangdong.zxxk.com/" target="_blank">广州教研·中学学科网</a></li>
+                
+                <li><font>| </font><a href="http://blog.sina.com.cn/hanqiang020" target="_blank">梁汉强工作室</a></li>
+                
+                <li><font>| </font><a href="http://gz.jxt189.com/hd/Login.aspx" target="_blank">花都家校通</a></li>
+                
+                <li><font>| </font><a href="http://edu.gd.chinamobile.com/" target="_blank">广东省校讯通</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+            <div class="bot_info">
+                <p>粤ICP备13043387号.Copyright 2009-2020 花都区实验中学 Government All Rights Reserved 地址：花都区新华街商业大道35号 </p>
+                <p>邮编：510800 电话：020-36835932 邮箱: 14497390@qq.com QQ:14497390    <a href="http://www.joyoedu.cn" target="_blank">技术支持：深圳市继尧信息技术有限公司</a></p>
+                <div class="bot_img">
+                    <img src="images/bot1.png" />
+                    <img src="images/bot2.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        $(".fullSlide").hover(function () {
+            $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+        },
+        function () {
+            $(this).find(".prev,.next").fadeOut()
+        });
+        $(".fullSlide").slide({
+            titCell: ".hd ul",
+            mainCell: ".bd ul",
+            effect: "fold",
+            autoPlay: true,
+            autoPage: true,
+            trigger: "click",
+            startFun: function (i) {
+                var curLi = jQuery(".fullSlide .bd li").eq(i);
+                if (!!curLi.attr("_src")) {
+                    curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+                }
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        var flag = "left";
+        function DY_scroll(wraper, prev, next, img, imga, speed, or) {
+            var wraper = $(wraper);
+            var prev = $(prev);
+            var next = $(next);
+            var img = $(img).find('ul');
+            var imga = $(imga).find('ul li');
+            var w = img.find('li').outerWidth(true);
+            var s = speed;
+            next.click(function () {
+                img.animate({ 'margin-left': -w }/*,1500,'easeOutBounce'*/, function () {
+                    img.find('li').eq(0).appendTo(img);
+                    img.css({ 'margin-left': 0 });
+                });
+                flag = "left";
+            });
+            prev.click(function () {
+                img.find('li:last').prependTo(img);
+                img.css({ 'margin-left': -w });
+                img.animate({ 'margin-left': 0 }/*,1500,'easeOutBounce'*/);
+                flag = "right";
+            });
+            if (imga.length > 4) {
+                if (or == true) {
+                    ad = setInterval(function () { flag == "left" ? next.click() : prev.click() }, s * 1000);
+                    wraper.hover(function () { clearInterval(ad); }, function () { ad = setInterval(function () { flag == "left" ? next.click() : prev.click() }, s * 1000); });
+                }
+            }
+
+        }
+        DY_scroll('.hl_main5_content', '.hl_scrool_leftbtn', '.hl_scrool_rightbtn', '.hl_main5_content1', '.hl_main5_content1', 2, true);// true为自动播放，不加此参数或false就默认不自动 
+    </script>
+
+    <script type="text/javascript">
+        var demo = document.getElementById("nedemo");
+        var demo1 = document.getElementById("nedemo1");
+        var demo2 = document.getElementById("nedemo2");
+        demo2.innerHTML = document.getElementById("nedemo1").innerHTML;
+        function Marquee() {
+            if (demo.scrollLeft - demo2.offsetWidth >= 0) {
+                demo.scrollLeft -= demo1.offsetWidth;
+            }
+            else {
+                demo.scrollLeft++;
+            }
+        }
+        var myvar = setInterval(Marquee, 30);
+        demo.onmouseout = function () { myvar = setInterval(Marquee, 30); }
+        demo.onmouseover = function () { clearInterval(myvar); }
+    </script>
+</body>
+</html>

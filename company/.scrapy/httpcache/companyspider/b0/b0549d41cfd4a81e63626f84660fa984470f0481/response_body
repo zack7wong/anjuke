@@ -1,0 +1,851 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=GBK" >
+	<meta http-equiv="Content-Language" content="zh-CN" >
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" >
+	<meta content="robots" name="index, follow" >
+	<meta content="googlebot" name="index, follow" >
+	<meta name="author" content="广西国际商务学院" >
+	<meta name="Copyright" content="广西国际商务学院" >
+	<meta name="description" content="广西国际商务职业技术学院门户网站" >
+	<meta name="keywords" content="null" >
+	<meta http-equiv="P3P" content='CP="CAO PSA OUR"' >
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<title>广西国际商务职业技术学院</title>
+	<link rel="stylesheet" id="cssLink" href="http://www.gxibvc.net//style/default.css" type="text/css" media="all"  />
+	<script language="javascript" src="http://www.gxibvc.net//dwr/util.js"></script>
+	<script language="javascript" src="http://www.gxibvc.net//dwr/engine.js"></script>
+	<script type="text/javascript" src="http://www.gxibvc.net//js/commanFunction.js"></script>
+	<script type="text/javascript" src="http://www.gxibvc.net//js/comman.js"></script>
+<script type="text/javascript" src="http://www.gxibvc.net//js/ajax-pushlet-client.js"></script>
+<script type="text/javascript">
+	<!-- js得到参数   -->
+	function querystring(strName){
+		var strHref =location.href;
+		var intPos = strHref.indexOf("?");
+		var strRight = strHref.substr(intPos + 1);
+		var arrTmp = strRight.split("&");
+			 for(var i = 0; i < arrTmp.length; i++){
+		var arrTemp = arrTmp[i].split("=");
+		if(arrTemp[0].toUpperCase() == strName.toUpperCase()) return arrTemp[1];}
+		return "";}
+		</script>
+	</head>
+	<script>
+	$(function(){
+	$(".silde_menu_drown>li").hover(function(){
+	$(this).children('ul').stop(true,true).fadeIn();
+	},function(){
+	$(this).children('ul').stop(true,true).fadeOut();
+	})
+	$(".navli2").hover(function(){
+	$(this).children('dl').stop(true,true).fadeIn();
+	},function(){
+	$(this).children('dl').stop(true,true).fadeOut();
+	})
+	})
+	</script><body>
+	<div id="container" class="body_main">
+	<div id="150891752732892503" class="topframe">
+	<div id="150891752736324104" class="topframe_94">
+	<div id="150891752738359533" class="topframe_89">
+	<div id="141948705566140867" class="htmldisplay_141948705566140867" >
+<div class="con" id="htmlcontent" style="font-size:12px"><script type="text/javascript"> 
+			  // 设置为主页 
+			  function SetHome(obj,vrl){ 
+			  try{ 
+			  obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl); 
+			  } 
+			  catch(e){ 
+			  if(window.netscape) { 
+			  try { 
+			  netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect"); 
+			  } 
+			  catch (e) { 
+			  alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。"); 
+			  } 
+			  var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch); 
+			  prefs.setCharPref('browser.startup.homepage',vrl); 
+			  }else{ 
+			  alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入："+vrl+"点击确定。"); 
+			  } 
+			  } 
+			  } 
+			  // 加入收藏 兼容360和IE6 
+			  function shoucang(sTitle,sURL) 
+			  { 
+			  try 
+			  { 
+			  window.external.addFavorite(sURL, sTitle); 
+			  } 
+			  catch (e) 
+			  { 
+			  try 
+			  { 
+			  window.sidebar.addPanel(sTitle, sURL, ""); 
+			  } 
+			  catch (e) 
+			  { 
+			  alert("加入收藏失败，请使用Ctrl+D进行添加"); 
+			  } 
+			  } 
+			  } 
+			  </script>
+<ul>
+    <li class="fore1" style="text-align: left"><a onclick="SetHome(this,window.location)" href="javascript:void(0)">设为首页</a></li>
+    <li class="fore2" style="text-align: left"><a onclick="shoucang(document.title,window.location)" href="javascript:void(0)">加入收藏</a></li>
+</ul>
+<p>&nbsp;</p></div>
+<div class="bar">
+<button onclick=javascript:window.opener=null;window.close();> 关 闭 </button>
+</div>
+</div></div>
+	<div id="150891752739642117" class="topframe_92">
+	<div id="141948726900619977" class="WebsiteSearch_141948726900619977" >
+<h3><span>站点搜索</span><a href=""></a></h3><dl>
+
+<dt>
+
+
+<span class="gjz"><label>请输入关键字</label><input onkeydown="if(event.keyCode == 13)searchnews()" type="text" name="query" id="query" value="" maxlength="50"></span> <span class="lanm"><label>栏目</label><select id="lmdm">
+<option value="">全部</option>
+</select></span></dt>
+<dd><button id="search" onclick="searchnews()">搜索</button>
+</dd>
+<input type="hidden" id="RsCount" value=""/>
+</dl>
+<script type="text/javascript">
+window.onload=new function(){
+var ele = document.getElementById("lmdm");var xmlDoc = loadConfigXml("http://www.gxibvc.net//xml/newstype_0101.xml");
+var i = 0;
+var allele = "";
+var allnode = xmlDoc.selectNodes("list/lmlist");
+var text="";var value="";
+for(i=0;i<allnode.length;i++) {
+if(typeof window.ActiveXObject != 'undefined'){
+text = allnode[i].selectSingleNode("lmmc").text;
+value = allnode[i].selectSingleNode("lmdm").text;
+}else{
+text = allnode[i].selectSingleNode("lmmc/text()").nodeValue;
+value = allnode[i].selectSingleNode("lmdm/text()").nodeValue;
+}if(text != "") {
+ele.options[ele.options.length] = new Option(text , value);
+allele += value +",";
+}
+}
+allele = KillCharValue(allele,',');
+ele.options[0].value = allele;
+}
+function searchnews() {
+if(document.getElementById("query").value != "" || document.getElementById("lmdm").value != "") {
+window.open("http://www.gxibvc.net//search.html?query="+escape(escape(document.getElementById("query").value))+"&lmdm="+escape(escape(document.getElementById("lmdm").value)));
+} else {
+return false;
+}
+}
+</script>
+</div></div>
+	<div id="150891752740727410" class="topframe_93">
+	<div id="141948732029678943" class="navigation_141948732029678943" >
+<h3 class="title"><span>
+</span></h3>
+<ul class="nav" id="nav_141948732029678943">
+<li class ="" onMouseOver="showsonnav('navi_010101')" onMouseOut="hiddensonnav('navi_010101')">
+<a class="topname"  href="http://www.gxibvc.net//default.html" target="_self">
+<span>首页</span></a>
+</li>
+<li class ="" onMouseOver="showsonnav('navi_01010202')" onMouseOut="hiddensonnav('navi_01010202')">
+<a class="topname"  href="http://www.gxibvc.net//type/01010202.html" target="_self">
+<span>学院概况</span></a>
+<ul class="sub" id="navi_01010202" name="navi_01010202" style="display:none" onMouseOver="showsonnav('navi_01010202')" onMouseOut="hiddensonnav('navi_01010202')">
+<!--[if lte IE 6]><iframe class='navbug'></iframe><![endif]-->
+<li id="navson_0101020201"  onMouseOver="showsonnav('navi_0101020201')" onMouseOut="hiddensonnav('navi_0101020201')">
+<a href="http://www.gxibvc.net//type/0101020201.html" target="_self">学院简介</a></li>
+<li id="navson_0101020207"  onMouseOver="showsonnav('navi_0101020207')" onMouseOut="hiddensonnav('navi_0101020207')">
+<a href="http://www.gxibvc.net//type/0101020207.html" target="_self">学院章程</a></li>
+<li id="navson_0101020202"  onMouseOver="showsonnav('navi_0101020202')" onMouseOut="hiddensonnav('navi_0101020202')">
+<a href="http://organ.gxibvc.net/gov/leaders/index.html" target="_blank">学院领导</a></li>
+<li id="navson_144827010931960284"  onMouseOver="showsonnav('navi_144827010931960284')" onMouseOut="hiddensonnav('navi_144827010931960284')">
+<a href="http://wwww.gxibvc.net/xq/index.asp#viscms/jtxy/" target="_blank">商院春秋</a></li>
+<li id="navson_0101020203"  onMouseOver="showsonnav('navi_0101020203')" onMouseOut="hiddensonnav('navi_0101020203')">
+<a href="http://www.gxibvc.net//type/0101020203.html" target="_self">校园风光</a></li>
+<li id="navson_0101020206"  onMouseOver="showsonnav('navi_0101020206')" onMouseOut="hiddensonnav('navi_0101020206')">
+<a href="http://www.gxibvc.net//type/0101020206.html" target="_self">校训、校标、校徽、校旗</a></li>
+<li id="navson_0101020204"  onMouseOver="showsonnav('navi_0101020204')" onMouseOut="hiddensonnav('navi_0101020204')">
+<a href="http://www.gxibvc.net//type/0101020204.html" target="_self">获奖情况</a></li>
+<li id="navson_0101020205"  onMouseOver="showsonnav('navi_0101020205')" onMouseOut="hiddensonnav('navi_0101020205')">
+<a href="http://www.gxibvc.net//type2/0101020205.html" target="_self">大事记</a></li>
+</ul>
+</li>
+<li class ="" onMouseOver="showsonnav('navi_01010201')" onMouseOut="hiddensonnav('navi_01010201')">
+<a class="topname"  href="http://gljg.gxibvc.net:999" target="_blank">
+<span>管理机构</span></a>
+<ul class="sub" id="navi_01010201" name="navi_01010201" style="display:none" onMouseOver="showsonnav('navi_01010201')" onMouseOut="hiddensonnav('navi_01010201')">
+<!--[if lte IE 6]><iframe class='navbug'></iframe><![endif]-->
+<li id="navson_0101020101"  onMouseOver="showsonnav('navi_0101020101')" onMouseOut="hiddensonnav('navi_0101020101')">
+<a href="http://organ.gxibvc.net/gov/index.html" target="_blank">党务院务管理机构</a><ul class="subsub" style="display:none" id="navi_0101020101">
+<li><a href="http://wwww.gxibvc.net/bgs/index.asp" target="_blank">党委(学院)办公室、党委宣传部</a></li><li><a href="http://organ.gxibvc.net/Renshi/" target="_blank">组织部（人事处）、党委统战部</a></li><li><a href="http://organ.gxibvc.net/Jishen/Index.asp" target="_blank">纪检监察审计室</a></li><li><a href="http://organ.gxibvc.net/jwky/" target="_blank">教务科研处</a></li><li><a href="http://zzzx.gxibvc.net/Zizhu/Index.asp" target="_blank">学生工作处 、党委学生工作部、党委武装部、大学生资助中心</a></li><li><a href="http://zsjyc.gxibvc.net:98/" target="_blank">招生就业处</a></li><li><a href="http://wwww.gxibvc.net/hqgl/Index.asp" target="_blank">后勤管理处</a></li><li><a href="http://www2.gxibvc.net/caiwc/" target="_blank">财务处</a></li><li><a href="http://wsb.gxibvc.net/" target="_blank">国际交流处</a></li><li><a href="http://organ.gxibvc.net/Keyan/Index.asp" target="_blank">教务科研处 （科研）</a></li><li><a href="http://organ.gxibvc.net/zcc/" target="_blank">资产管理处</a></li><li><a href="http://www.gxibvc.net//#" target="_blank">工会</a></li><li><a href="http://gqt.gxibvc.net/" target="_blank">团委</a></li><li><a href="http://ddb.gxibvc.net/" target="_blank">教学督导室</a></li></ul></li>
+<li id="navson_0101020102"  onMouseOver="showsonnav('navi_0101020102')" onMouseOut="hiddensonnav('navi_0101020102')">
+<a href="http://organ.gxibvc.net/gov/index.html" target="_blank">教学教辅机构</a><ul class="subsub" style="display:none" id="navi_0101020102">
+<li><a href="http://gjmyx.gxibvc.net:89/" target="_blank">国际贸易系</a></li><li><a href="http://afd.gxibvc.net/" target="_blank">应用外语系</a></li><li><a href="http://ckjr.gxibvc.net/" target="_blank">会计系</a></li><li><a href="http://sclt.gxibvc.net/" target="_blank">市场流通系</a></li><li><a href="http://lyglx.gxibvc.net:91/" target="_blank">旅游管理系</a></li><li><a href="http://xxgc.gxibvc.net/index.asp" target="_blank">信息工程系</a></li><li><a href="http://fina.gxibvc.net/" target="_blank">金融系</a></li><li><a href="http://gjsk.gxibvc.net/" target="_blank">公共基础教学部</a></li><li><a href="http://gjsk.gxibvc.net/" target="_blank">社会科学教学部</a></li><li><a href="http://cjc.gxibvc.net/" target="_blank">继续教育中心</a></li><li><a href="http://lib.gxibvc.net/" target="_blank">图书馆</a></li><li><a href="http://192.168.100.147:100/xxzx/home/index.php" target="_blank">信息网络中心</a></li></ul></li>
+</ul>
+</li>
+<li class ="" onMouseOver="showsonnav('navi_01010321')" onMouseOut="hiddensonnav('navi_01010321')">
+<a class="topname"  href="http://organ.gxibvc.net/xxq/" target="_blank">
+<span>新校区</span></a>
+</li>
+<li class ="" onMouseOver="showsonnav('navi_010103')" onMouseOut="hiddensonnav('navi_010103')">
+<a class="topname"  href="http://www2.gxibvc.net/dwgk/" target="_blank">
+<span>信息公开</span></a>
+</li>
+<li class ="" onMouseOver="showsonnav('navi_010104')" onMouseOut="hiddensonnav('navi_010104')">
+<a class="topname"  href="http://kz.gxibvc.net/" target="_blank">
+<span>考证中心</span></a>
+</li>
+<li class ="" onMouseOver="showsonnav('navi_01010310')" onMouseOut="hiddensonnav('navi_01010310')">
+<a class="topname"  href="http://csqc.gxibvc.net/" target="_blank">
+<span>赤水清川</span></a>
+</li>
+<li class ="" onMouseOver="showsonnav('navi_01010311')" onMouseOut="hiddensonnav('navi_01010311')">
+<a class="topname"  href="http://zsjyc.gxibvc.net:98/" target="_blank">
+<span>招生就业</span></a>
+<ul class="sub" id="navi_01010311" name="navi_01010311" style="display:none" onMouseOver="showsonnav('navi_01010311')" onMouseOut="hiddensonnav('navi_01010311')">
+<!--[if lte IE 6]><iframe class='navbug'></iframe><![endif]-->
+<li id="navson_0101031101"  onMouseOver="showsonnav('navi_0101031101')" onMouseOut="hiddensonnav('navi_0101031101')">
+<a href="http://zsjyc.gxibvc.net:98/Zsxx/" target="_blank">招生信息</a></li>
+<li id="navson_0101031102"  onMouseOver="showsonnav('navi_0101031102')" onMouseOut="hiddensonnav('navi_0101031102')">
+<a href="http://jyxx.gxibvc.net/" target="_blank">就业信息</a></li>
+</ul>
+</li>
+<li class ="" onMouseOver="showsonnav('navi_01010312')" onMouseOut="hiddensonnav('navi_01010312')">
+<a class="topname"  href="http://cxcy.gxibvc.net" target="_blank">
+<span>创新创业</span></a>
+</li>
+<li class ="" onMouseOver="showsonnav('navi_01010322')" onMouseOut="hiddensonnav('navi_01010322')">
+<a class="topname"  href="http://jpkc.gxibvc.net:888/" target="_blank">
+<span>精品课程</span></a>
+</li>
+<li class ="" onMouseOver="showsonnav('navi_10108')" onMouseOut="hiddensonnav('navi_10108')">
+<a class="topname"  href="http://www.gxibvc.net//type/010108.html" target="_self">
+<span>商务指南</span></a>
+<ul class="sub" id="navi_10108" name="navi_10108" style="display:none" onMouseOver="showsonnav('navi_10108')" onMouseOut="hiddensonnav('navi_10108')">
+<!--[if lte IE 6]><iframe class='navbug'></iframe><![endif]-->
+<li id="navson_1010801"  onMouseOver="showsonnav('navi_1010801')" onMouseOut="hiddensonnav('navi_1010801')">
+<a href="http://www.gxibvc.net//type/1010801.html" target="_self">护照办理</a></li>
+<li id="navson_1010802"  onMouseOver="showsonnav('navi_1010802')" onMouseOut="hiddensonnav('navi_1010802')">
+<a href="http://www.gxibvc.net//type/1010802.html" target="_self">出国签证</a></li>
+<li id="navson_1010803"  onMouseOver="showsonnav('navi_1010803')" onMouseOut="hiddensonnav('navi_1010803')">
+<a href="http://www.gxibvc.net//type/1010803.html" target="_self">微企创业</a></li>
+<li id="navson_1010804"  onMouseOver="showsonnav('navi_1010804')" onMouseOut="hiddensonnav('navi_1010804')">
+<a href="http://www.gxibvc.net//type/1010804.html" target="_self">货运代理</a></li>
+<li id="navson_1010805"  onMouseOver="showsonnav('navi_1010805')" onMouseOut="hiddensonnav('navi_1010805')">
+<a href="http://www.gxibvc.net//type/1010805.html" target="_self">报关手续</a></li>
+</ul>
+</li>
+<li class ="" onMouseOver="showsonnav('navi_010109')" onMouseOut="hiddensonnav('navi_010109')">
+<a class="topname"  href="http://www.gxibvc.net//type/010109.html" target="_self">
+<span>快速链接</span></a>
+<ul class="sub" id="navi_010109" name="navi_010109" style="display:none" onMouseOver="showsonnav('navi_010109')" onMouseOut="hiddensonnav('navi_010109')">
+<!--[if lte IE 6]><iframe class='navbug'></iframe><![endif]-->
+<li id="navson_01010901"  onMouseOver="showsonnav('navi_01010901')" onMouseOut="hiddensonnav('navi_01010901')">
+<a href="http://fesco-gx.gxibvc.net/" target="_blank">广西经贸对外服务公司</a></li>
+<li id="navson_01010902"  onMouseOver="showsonnav('navi_01010902')" onMouseOut="hiddensonnav('navi_01010902')">
+<a href="http://www.qspfw.edu.cn/" target="_blank">全国青少年普法网</a></li>
+<li id="navson_01010907"  onMouseOver="showsonnav('navi_01010907')" onMouseOut="hiddensonnav('navi_01010907')">
+<a href="http://www.gxiets.com/" target="_blank">广西国贸学会</a></li>
+<li id="navson_01010903"  onMouseOver="showsonnav('navi_01010903')" onMouseOut="hiddensonnav('navi_01010903')">
+<a href="http://cjc.gxibvc.net/" target="_self">贸大专升本</a></li>
+<li id="navson_01010904"  onMouseOver="showsonnav('navi_01010904')" onMouseOut="hiddensonnav('navi_01010904')">
+<a href="http://mall.gxibvc.net:81/" target="_blank">新学商网上商城</a></li>
+<li id="navson_01010905"  onMouseOver="showsonnav('navi_01010905')" onMouseOut="hiddensonnav('navi_01010905')">
+<a href="http://xlzx.gxibvc.net/" target="_blank">心理咨询</a></li>
+<li id="navson_01010906"  onMouseOver="showsonnav('navi_01010906')" onMouseOut="hiddensonnav('navi_01010906')">
+<a href="http://txl.gxibvc.net/" target="_blank">校友录</a></li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">
+function showsonnav(str) {
+if(document.getElementById(str)) {
+document.getElementById(str).style.display="";
+}
+}
+function hiddensonnav(str) {
+if(document.getElementById(str)) {
+document.getElementById(str).style.display="none";
+}
+}
+</script>
+</div></div>
+	</div>
+	</div>
+	<div id="150891752743176010" class="mainframe">
+	<div id="150891752742078800" class="topframe_94_1">
+	<div id="152651931433826032" class="picChange_152651931433826032" >
+<h3><span>导航下图片切换</span></h3><bannerad><a id="data_152651931433826032" href="javascript:jump2url152651931433826032()" onMouseOver="displayStatusMsg152651931433826032();return document.returnValue"><img src="http://www.gxibvc.net//images/152651934162857972.jpg"  width="1100px" height="200px" name="bannerADrotator152651931433826032" tilte="" style="filter:revealTrans(duration=2,transition=20)" border=0></a></bannerad><script>
+ var bannerAD152651931433826032=new Array();
+ var bannerADlink152651931433826032=new Array();
+ var bannerADtitle152651931433826032=new Array();
+ var adNum152651931433826032=0;
+bannerAD152651931433826032[0] = "http://www.gxibvc.net//images/152651934162857972.jpg";
+bannerADlink152651931433826032[0] = "http://www.moe.edu.cn/jyb_xwfb/xw_zt/moe_357/s7865/s8417/";
+bannerADtitle152651931433826032[0] = "null";
+bannerAD152651931433826032[1] = "http://www.gxibvc.net//images/152651937482086207.jpg";
+bannerADlink152651931433826032[1] = "http://school.gxrc.com/PagesPC/MeetingPagesPC/InvitationDetails?meetingID=1166";
+bannerADtitle152651931433826032[1] = "null";
+var preloadedimages152651931433826032=new Array(); 
+ for (i=1;i<bannerAD152651931433826032.length;i++){ 
+ 	preloadedimages152651931433826032[i]=new Image(); 
+      	preloadedimages152651931433826032[i].src=bannerAD152651931433826032[i]; 
+ } 
+  
+ function setTransition152651931433826032(){ 
+ if (document.all){ 
+ 	bannerADrotator152651931433826032.filters.revealTrans.Transition=Math.floor(Math.random()*23); 
+ bannerADrotator152651931433826032.filters.revealTrans.apply(); 
+  } 
+ } 
+ function playTransition152651931433826032(){ 
+ 	if (document.all) 
+ 		 bannerADrotator152651931433826032.filters.revealTrans.play(); 
+ } 
+  
+ function nextAd152651931433826032(){ 
+    	if(adNum152651931433826032<bannerAD152651931433826032.length-1)
+ adNum152651931433826032++ ; 
+    	else 
+ adNum152651931433826032=0; 
+    	setTransition152651931433826032(); 
+   	document.images.bannerADrotator152651931433826032.src=bannerAD152651931433826032[adNum152651931433826032]; 
+  document.images.bannerADrotator152651931433826032.title=bannerADtitle152651931433826032[adNum152651931433826032]; 
+ 	playTransition152651931433826032(); 
+    	theTimer=setTimeout('nextAd152651931433826032()', 5 * 1000); 
+ } 
+  
+ function jump2url152651931433826032(){ 
+ 	jumpUrl=bannerADlink152651931433826032[adNum152651931433826032]; 
+ 	jumpTarget="_self"; 
+ 	if (jumpUrl != ''){ 
+ 		if (jumpTarget != '')window.open(jumpUrl,jumpTarget); 
+ 	else location.href=jumpUrl; 
+ 	 } 
+ } 
+ function displayStatusMsg152651931433826032() {  
+ 	status=bannerADlink152651931433826032[adNum152651931433826032]; 
+ 	document.returnValue = true; 
+ } 
+ nextAd152651931433826032();</script></div></div>
+	<div id="150891752748096896" class="mainframe_71">
+	<div id="150891752749488903" class="mainframe_71_1">
+	<div id="141948737029088283" class="newslist_141948737029088283" >
+<h3><span>通知公告</span>
+<a href=http://www.gxibvc.net//type/01010314.html target=_blank>more</a></h3>
+<div class="con">
+<ul>
+<li><a href="http://www.gxibvc.net//news/152749725680955564.html" target="_blank" title=2018年度零星维修工程定点施工单位采购招标公告>2018年度零星维修工程定...</a><span class="time">
+2018-05-28</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152697456861589179.html" target="_blank" title=2018级新生入学体检竞争性磋商公告>2018级新生入学体检竞争...</a><span class="time">
+2018-05-22</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152643533962567928.html" target="_blank" title=2018年多媒体设备运维服务外包竞争性磋商公告>2018年多媒体设备运维服...</a><span class="time">
+2018-05-16</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152628091868619409.html" target="_blank" title=广西国际商务职业技术学院2018届毕业生高职升本公示(一)>广西国际商务职业技术学院2...</a><span class="time">
+2018-05-14</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152594088152368854.html" target="_blank" title=“民族文化项目铜鼓三维动画制作”竞争性磋商公告>“民族文化项目铜鼓三维动画...</a><span class="time">
+2018-05-10</span>
+</li>
+</ul></div>
+</div></div>
+	<div id="150891752750540324" class="mainframe_71_2">
+	<div id="141948750354076667" class="picurlportlet_141948750354076667" >
+<h3><span>快速导航</span></h3><ul> 
+<div id="showpages_141948750354076667" >
+</div>
+<div id="showimags_141948750354076667" >
+</div>
+<li><a id="141948795482643797" djsl="0" href="http://ca.gxibvc.net/zfca/login" target="_blank">	<img  height="34px" width="218px" src="http://www.gxibvc.net///images/142000690222664816.gif" alt="null"/></a></li>
+<li><a id="141948780634374553" djsl="0" href="http://oa.gxibvc.net:88/" target="_blank">	<img  height="34px" width="218px" src="http://www.gxibvc.net///images/142000675732170977.gif" alt="null"/></a></li>
+<li><a id="142104994845045811" djsl="0" href="http://gxibvc.fanya.chaoxing.com/portal" target="_blank">	<img  height="34px" width="218px" src="http://www.gxibvc.net///images/146604838369688017.jpg" alt="null"/></a></li>
+<li><a id="141948787470928684" djsl="0" href="http://cjxk.gxibvc.net:91/" target="_blank">	<img  height="34px" width="218px" src="http://www.gxibvc.net///images/142000681764033852.gif" alt="null"/></a></li>
+<li><a id="141948775265411871" djsl="0" href="http://organ.gxibvc.net/jwky/xmys/index.html" target="_blank">	<img  height="34px" width="218px" src="http://www.gxibvc.net///images/152724428319787718.jpg" alt="null"/></a></li>
+<li><a id="142000701021980650" djsl="0" href="http://www2.gxibvc.net/leaders/Email_files/Index.html" target="_blank">	<img  height="34px" width="218px" src="http://www.gxibvc.net///images/142042926343072258.gif" alt="null"/></a></li>
+<script language="javascript" src="http://www.gxibvc.net//dwr/interface/dropNumAjax.js"></script><script type="text/javascript">function openlink(obj){
+dropNumAjax.urlDropNum(obj.id,obj.djsl);
+}
+</script>
+<script type="text/javascript">
+function showFwpl_141948750354076667(obj){
+var url = "fwplb.jsp?FwId="+obj.id;
+showTopWin(url,800,600,"Y");
+}
+</script>
+<script type="text/javascript">
+function showFwjs_141948750354076667(obj){
+var url = "yzs/fwjs.action?id="+obj.id;
+showTopWin(url,800,600,"Y");
+}
+</script>
+</ul></div></div>
+	</div>
+	<div id="150891752751481424" class="mainframe_73">
+	<div id="150891752754242801" class="mainframe_73_7">
+	<div id="150891752755531218" class="mainframe_73_7_1">
+	<div id="141948823985419790" class="newsPicControl_141948823985419790" >
+<style type="text/css">
+	.newsPic{width:400px;height:275px;text-align:left;background:#C8DC91;}
+	.newsPic ul{position:relative}
+	.newsPic li{list-style:none;}
+	.newsPic em{font-style:normal;}
+	.newsPic a{color:#555;text-decoration:none;outline:none;blr:this.onFocus=this.blur();}
+	.newsPic a:hover{color:#000;text-decoration:underline;}
+	.newsPic .clear{height:0;overflow:hidden;clear:both;}
+	.newsPic .textbg{margin-top:275px;z-index:1;filter:alpha(opacity=60);opacity:0.6;width:400px;position:absolute;height:0px;background:#000;}
+	.newsPic .text{margin-top:275px;width:400px;z-index:2;font-size:12px;color:#fff;line-height:0px; overflow:hidden;position:absolute;cursor:pointer;text-align: center;}
+	.newsPic .num{margin:257px 5px 0 auto;z-index:3;position:absolute;right: 0px;height:20px;}
+	.newsPic .num span{width:17px;height:15px;font-size:10px;line-height:15px;cursor:pointer;color:#fff;padding:0 4px;background:#B84545;text-align:center}
+	.newsPic .num span.on{background:#666;color:#fff;filter:alpha(opacity=80);opacity:0.8;}
+	.newsPic .num span.on2{background:#B84545;color:#fff;}
+	.newsPic .content img{width:400px;height:275px;border:none;}
+</style>
+<div class="newsPic">
+	<ul>
+        <li class="textbg"></li>
+        <li class="text"></li>
+        <li class="num">
+        	<span>1</span>
+        	<span>2</span>
+        	<span>3</span>
+        	<span>4</span>
+        	<span>5</span>
+        	<span>6</span>
+        </li>
+        <li class="content">
+            <a href="http://www.gxibvc.net//news/152747586125321460.html" target="_blank"><img src="http://www.gxibvc.net//UserFiles/Image/20180528/20180528104516_340.jpg" alt="??????????????????..." /></a> 
+            <a href="http://www.gxibvc.net//news/152723940097717305.html" target="_blank"><img src="http://www.gxibvc.net//UserFiles/Image/20180525/20180525172128_442.jpg" alt="??????2018?????..." /></a> 
+            <a href="http://www.gxibvc.net//news/152698588260746104.html" target="_blank"><img src="http://www.gxibvc.net//UserFiles/Image/20180522/20180522184231_904.jpg" alt="?????????????????..." /></a> 
+            <a href="http://www.gxibvc.net//news/152687188270955937.html" target="_blank"><img src="http://www.gxibvc.net//UserFiles/Image/20180521/20180521110313_409.jpg" alt="?????2018????..." /></a> 
+            <a href="http://www.gxibvc.net//news/152661604034573047.html" target="_blank"><img src="http://www.gxibvc.net//UserFiles/Image/20180518/20180518115835_927.jpg" alt="??????й???????????..." /></a> 
+            <a href="http://www.gxibvc.net//news/152654528685634774.html" target="_blank"><img src="http://www.gxibvc.net//UserFiles/Image/20180517/20180517161025_293.jpg" alt="??????????????..." /></a> 
+        </li>
+    </ul>
+</div>
+<script type=text/javascript>
+	var t = n = 0, count = jQuery(".content a").size();
+	jQuery(function(){
+		var newsPic = ".newsPic";
+		var newsPicText = ".newsPic .text";
+		var newsPicNum = ".newsPic .num span";
+		var newsPicConcent = ".newsPic .content a";
+		
+		jQuery(newsPicConcent + ":not(:first)").hide();
+		jQuery(newsPicText).html(jQuery(newsPicConcent + ":first").find("img").attr("alt"));
+		jQuery(newsPicNum + ":first").addClass("on");
+		jQuery(newsPicText).click(function(){window.open(jQuery(newsPicConcent + ":first").attr('href'), "_blank")});
+		jQuery(newsPicNum).click(function() {
+		   var i = jQuery(this).text() - 1;
+		   n = i;
+		   if (i >= count)
+		   	return;
+		   jQuery(newsPicText).html(jQuery(newsPicConcent).eq(i).find("img").attr('alt'));
+		   jQuery(newsPicText).unbind().click(function(){window.open(jQuery(newsPicConcent).eq(i).attr('href'), "_blank")})
+		   jQuery(newsPicConcent).filter(":visible").hide().parent().children().eq(i).fadeIn(1200);
+		   jQuery(this).removeClass("on").siblings().removeClass("on");
+		   jQuery(this).removeClass("on2").siblings().removeClass("on2");
+		   jQuery(this).addClass("on").siblings().addClass("on2");
+		});
+		t = setInterval("showNewsPic()", 5000);
+		//jQuery(newsPic).hover(function(){clearInterval(t)}, function(){t = setInterval("showNewsPic()", 5000);});
+	})
+	function showNewsPic(){
+		n = n >= (count - 1) ? 0 : ++n;
+		jQuery(".num span").eq(n).trigger('click');
+	}
+</script><div class="newsList"><ul><li><a href="http://www.gxibvc.net//news/152747516485678436.html" target="_blank" title="新华网、人民网、广西电视台等新闻媒体报道我院东盟文化周" >新华网、人民网、广西电视台等新闻媒体报道...</a><span class="time">
+2018-05-25</span>
+</li>
+<li><a href="http://www.gxibvc.net//news/152747586125321460.html" target="_blank" title="我院召开民主党派成员和党外知识分子代表座谈会" >我院召开民主党派成员和党外知识分子代表座...</a><span class="pic"></span><span class="time">
+2018-05-28</span>
+</li>
+<li><a href="http://www.gxibvc.net//news/152723940097717305.html" target="_blank" title="我院召开2018年上半年基层党组织建设工作推进会" >我院召开2018年上半年基层党组织建设工...</a><span class="pic"></span><span class="time">
+2018-05-25</span>
+</li>
+<li><a href="http://www.gxibvc.net//news/152703977242026617.html" target="_blank" title="喜讯：我院吴涛等6位同志分别荣获2016-2017年度河池市、南丹县脱贫攻坚工作先进个人和优秀工作队员称号" >喜讯：我院吴涛等6位同志分别荣获2016...</a><span class="time">
+2018-05-23</span>
+</li>
+<li><a href="http://www.gxibvc.net//news/152703972703193355.html" target="_blank" title="喜讯：我院2017年度全区脱贫摘帽帮扶工作获自治区通报表扬" >喜讯：我院2017年度全区脱贫摘帽帮扶工...</a><span class="time">
+2018-05-23</span>
+</li>
+<li><a href="http://www.gxibvc.net//news/152698588260746104.html" target="_blank" title="喜讯：我院信息工程系教工党支部微党课作品荣获第二届全国高校“两学一做”支部风采展示活动精品微党课" >喜讯：我院信息工程系教工党支部微党课作品...</a><span class="pic"></span><span class="time">
+2018-05-22</span>
+</li>
+<li><a href="http://www.gxibvc.net//news/152687188270955937.html" target="_blank" title="学院召开2018年职业教育活动周暨商咖大会及首届中国-东盟电竞校际联赛工作总结会" >学院召开2018年职业教育活动周暨商咖大...</a><span class="pic"></span><span class="time">
+2018-05-21</span>
+</li>
+<li><a href="http://www.gxibvc.net//news/152663012136920843.html" target="_blank" title="我院与广东德律信用管理股份有限公司举行校企合作揭牌暨订单班开班仪式" >我院与广东德律信用管理股份有限公司举行校...</a><span class="pic"></span><span class="time">
+2018-05-18</span>
+</li>
+<li><a href="http://www.gxibvc.net//news/152661604034573047.html" target="_blank" title="我院与中国平安财产保险股份有限公司举行校企合作签约暨订单班开班仪式" >我院与中国平安财产保险股份有限公司举行校...</a><span class="pic"></span><span class="time">
+2018-05-18</span>
+</li>
+<li><a href="http://www.gxibvc.net//news/152654528685634774.html" target="_blank" title="我院成功举办第九届东盟文化周暨东盟青年文化交流营活动" >我院成功举办第九届东盟文化周暨东盟青年文...</a><span class="pic"></span><span class="time">
+2018-05-17</span>
+</li>
+</ul></div></div></div>
+	<div id="150891752756331309" class="mainframe_73_7_2">
+	<div id="141948837119461381" class="newslist_141948837119461381" >
+<h3><span>学院要闻</span>
+<a href=http://www.gxibvc.net//type/01010315.html target=_blank>more</a></h3>
+<div class="con">
+<ul>
+<li class="xwzd"><a href="http://www.gxibvc.net//news/152747516485678436.html" target="_blank" title=新华网、人民网、广西电视台等新闻媒体报道我院东盟文化周>新华网、人民网、广西电视台等新闻媒体报道我院东盟...</a><span class="time">
+2018-05-25</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152747586125321460.html" target="_blank" title=我院召开民主党派成员和党外知识分子代表座谈会>我院召开民主党派成员和党外知识分子代表座谈会</a><span class="pic"></span><span class="time">
+2018-05-28</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152723940097717305.html" target="_blank" title=我院召开2018年上半年基层党组织建设工作推进会>我院召开2018年上半年基层党组织建设工作推进会...</a><span class="pic"></span><span class="time">
+2018-05-25</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152703977242026617.html" target="_blank" title=喜讯：我院吴涛等6位同志分别荣获2016-2017年度河池市、南丹县脱贫攻坚工作先进个人和优秀工作队员称号>喜讯：我院吴涛等6位同志分别荣获2016-201...</a><span class="time">
+2018-05-23</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152703972703193355.html" target="_blank" title=喜讯：我院2017年度全区脱贫摘帽帮扶工作获自治区通报表扬>喜讯：我院2017年度全区脱贫摘帽帮扶工作获自治...</a><span class="time">
+2018-05-23</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152698588260746104.html" target="_blank" title=喜讯：我院信息工程系教工党支部微党课作品荣获第二届全国高校“两学一做”支部风采展示活动精品微党课>喜讯：我院信息工程系教工党支部微党课作品荣获第二...</a><span class="pic"></span><span class="time">
+2018-05-22</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152687188270955937.html" target="_blank" title=学院召开2018年职业教育活动周暨商咖大会及首届中国-东盟电竞校际联赛工作总结会>学院召开2018年职业教育活动周暨商咖大会及首届...</a><span class="pic"></span><span class="time">
+2018-05-21</span>
+</li>
+</ul></div>
+</div></div>
+	</div>
+	<div id="150891752757295403" class="mainframe_73_8">
+	<div id="150891752758554644" class="mainframe_73_8_1">
+	<div id="142586563619658427" class="newslist_142586563619658427" >
+<h3><span>时政要闻</span>
+<a href=http://www.gxibvc.net//type/01010319.html target=_blank>more</a></h3>
+<div class="con">
+<ul>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjE0NDgxNg==&mid=2649042349&idx=1&sn=20b2a2a9b72a4df815cd74ab8945482b&chksm=8f3799f2b84010e4ec9c78337d83a3fa91fd093152ec384da28536b933292b91835c1373ac3e&mpshare=1&scene=23&srcid=0504kte9F4uZ5wxNGyuM0Yc5#rd" target="_blank" title=习近平在纪念马克思诞辰200周年大会上的讲话（全文）>习近平在纪念马克思诞辰2...</a><span class="time">
+2018-05-04</span>
+</li>
+
+<li><a href="http://www.12371.cn/special/jjmks/" target="_blank" title=给你讲讲马克思>给你讲讲马克思</a><span class="time">
+2018-05-04</span>
+</li>
+
+<li><a href="http://www.360doc.com/content/18/0224/07/36803757_731882728.shtml" target="_blank" title=@全体党员 重温《共产党宣言》>@全体党员 重温《共产党...</a><span class="time">
+2018-04-27</span>
+</li>
+
+<li><a href="http://news.12371.cn/2018/04/19/ARTI1524094485007921.shtml" target="_blank" title=习近平布局新时代国家安全工作>习近平布局新时代国家安全...</a><span class="time">
+2018-04-23</span>
+</li>
+
+<li><a href="https://www.tech.net.cn/web/articleview.aspx?id=20180410091322819&cata_id=N007" target="_blank" title=要以质量文化促高职诊改>要以质量文化促高职诊改</a><span class="time">
+2018-04-16</span>
+</li>
+
+<li><a href="http://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/jyzt_2018n/2018_zt08/" target="_blank" title=学习钟杨先进事迹>学习钟杨先进事迹</a><span class="time">
+2018-04-11</span>
+</li>
+
+<li><a href="http://www.12371.cn/special/xxzd/" target="_blank" title=学习习近平新时代中国特色社会主义思想>学习习近平新时代中国特色...</a><span class="time">
+2018-04-08</span>
+</li>
+</ul></div>
+</div></div>
+	<div id="150891752759550716" class="mainframe_73_8_2">
+	<div id="141948851315877422" class="newslist_141948851315877422" >
+<h3><span>系部动态</span>
+<a href=http://www.gxibvc.net//type/01010324.html target=_blank>more</a></h3>
+<div class="con">
+<ul>
+<li><a href="http://www.gxibvc.net//news/152724080521523975.html" target="_blank" title=会计系举办全国第27个税法宣传月系列活动之税法宣传讲座>会计系举办全国第27个税...</a><span class="pic"></span><span class="time">
+2018-05-25</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152724027512457236.html" target="_blank" title=会计系开展全国第27个税法宣传月系列活动之走进江南地税局>会计系开展全国第27个税...</a><span class="pic"></span><span class="time">
+2018-05-25</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152720896247041819.html" target="_blank" title=党员干部应如何向党组织报告有关事项>党员干部应如何向党组织报...</a><span class="pic"></span><span class="time">
+2018-05-25</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152686310788143129.html" target="_blank" title=参观学习 借鉴经验 积极推进新校区建设工作>参观学习 借鉴经验 积极...</a><span class="pic"></span><span class="time">
+2018-05-21</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152655214336437836.html" target="_blank" title=信息工程系与老挝代表团举行项目洽谈会>信息工程系与老挝代表团举...</a><span class="pic"></span><span class="time">
+2018-05-17</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152654887336256789.html" target="_blank" title=信息工程系启动2018年“5·25”大学生心理健康教育活动月系列活动>信息工程系启动2018年...</a><span class="pic"></span><span class="time">
+2018-05-17</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152654681758557983.html" target="_blank" title=信息工程系举办“悦纳自我 拥抱青春”大学生生理健康教育讲座>信息工程系举办“悦纳自我...</a><span class="pic"></span><span class="time">
+2018-05-17</span>
+</li>
+</ul></div>
+</div></div>
+	<div id="150891752760467100" class="mainframe_73_8_3">
+	<div id="141956441226784148" class="newslist_141956441226784148" >
+<h3><span>校园文化</span>
+<a href=http://www.gxibvc.net/type/01010320.html target=_blank>more</a></h3>
+<div class="con">
+<ul>
+<li><a href="http://www.gxibvc.net//news/152749982264597137.html" target="_blank" title=我院举办“大学生与诚信”专题教育讲座>我院举办“大学生与诚信”...</a><span class="pic"></span><span class="time">
+2018-05-28</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152747978113022124.html" target="_blank" title=图书馆成功举办文艺学堂——品味茶相>图书馆成功举办文艺学堂—...</a><span class="pic"></span><span class="time">
+2018-05-28</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152687509796516784.html" target="_blank" title=学院举行“优秀文化进校园”第三十三期——中国杂技艺术>学院举行“优秀文化进校园...</a><span class="pic"></span><span class="time">
+2018-05-21</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152594754743938758.html" target="_blank" title=图书馆成功举办第二届“阅读·感悟”演讲比赛>图书馆成功举办第二届“阅...</a><span class="pic"></span><span class="time">
+2018-05-10</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152565798264458708.html" target="_blank" title=图书馆举办世界名画微展>图书馆举办世界名画微展</a><span class="pic"></span><span class="time">
+2018-05-07</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152482552070687619.html" target="_blank" title=学院举行“优秀文化进校园”第三十二期——民族音乐的当代表达>学院举行“优秀文化进校园...</a><span class="pic"></span><span class="time">
+2018-04-27</span>
+</li>
+
+<li><a href="http://www.gxibvc.net//news/152376362368244034.html" target="_blank" title=“挥洒激情 拼搏奋进”学院第七届教职工气排球比赛圆满结束>“挥洒激情 拼搏奋进”学...</a><span class="pic"></span><span class="time">
+2018-04-15</span>
+</li>
+</ul></div>
+</div></div>
+	</div>
+	</div>
+	<div id="152695577073895318" class="mainframe_77">
+	<div id="152695580951589256" class="iframeintegration_152695580951589256" >
+<h3><span>纪检监察举报平台</span></h3><p id="p_152695580951589256"> 
+<iframe  name="iframe_152695580951589256" id="iframe_152695580951589256" allowTransparency="true" src="/jwjc/jwjc.html" frameborder="0" marginwidth="0"marginheight="0" scrolling="no" style="height:140px;width:1100px"></iframe></p></div></div>
+	<div id="150891752761495035" class="mainframe_74">
+	<div id="142036283074618589" class="picScrollMoreControl_142036283074618589" >
+<h3><span>图片滚动连接</span>
+</h3>
+<div id="marquee_142036283074618589" style="overflow: hidden; width: 1070px;">
+<div style="width:3132px">
+<ul style="width:1566px;float:left;" id="marquee1_142036283074618589">
+<li style="float:left;margin:0px 2px 0px 2px">
+<a href="http://cpc.people.com.cn/19th/index.html" target="_blank" title="1" >
+<img src="http://www.gxibvc.net///images/150961564583359905.jpg" width= "170px" height= "57px" alt="中国共产党第十九次全国代表大会"/></a>
+</li>
+<li style="float:left;margin:0px 2px 0px 2px">
+<a href="http://www.xinhuanet.com/politics/2017lh/" target="_blank" title="1" >
+<img src="http://www.gxibvc.net///images/149023773933066407.png" width= "170px" height= "57px" alt="null"/></a>
+</li>
+<li style="float:left;margin:0px 2px 0px 2px">
+<a href="http://www.gxibvc.net/zt/xfjs/index.html" target="_blank" title="1" >
+<img src="http://www.gxibvc.net///images/142036612965329728.gif" width= "170px" height= "57px" alt="null"/></a>
+</li>
+<li style="float:left;margin:0px 2px 0px 2px">
+<a href="http://www2.gxibvc.net/aqwm/index.asp" target="_blank" title="1" >
+<img src="http://www.gxibvc.net///images/142036592005460274.gif" width= "170px" height= "57px" alt="null"/></a>
+</li>
+<li style="float:left;margin:0px 2px 0px 2px">
+<a href="http://syss.12371.cn/" target="_blank" title="1" >
+<img src="http://www.gxibvc.net///images/143269559756438289.png" width= "170px" height= "57px" alt="null"/></a>
+</li>
+<li style="float:left;margin:0px 2px 0px 2px">
+<a href="http://www2.gxibvc.net/lxyz/index.asp" target="_blank" title="1" >
+<img src="http://www.gxibvc.net///images/146520359987863964.jpg" width= "170px" height= "57px" alt="“两学一做”学习教育"/></a>
+</li>
+<li style="float:left;margin:0px 2px 0px 2px">
+<a href="http://www2.gxibvc.net/zjjt/index.asp" target="_blank" title="1" >
+<img src="http://www.gxibvc.net///images/142897424388520621.png" width= "170px" height= "57px" alt="null"/></a>
+</li>
+<li style="float:left;margin:0px 2px 0px 2px">
+<a href="http://www.gxjjw.gov.cn/zt/qlby/index.shtml" target="_blank" title="1" >
+<img src="http://www.gxibvc.net///images/150354359268469508.jpg" width= "170px" height= "57px" alt="null"/></a>
+</li>
+<li style="float:left;margin:0px 0px 0px 2px">
+<a href="http://www2.gxibvc.net/dwzx/index.asp" target="_blank" title="1" >
+<img src="http://www.gxibvc.net///images/143590616786211749.png" width= "170px" height= "57px" alt="null"/></a>
+</li>
+</ul>
+<ul style="width:1566px;float:left;" id="marquee2_142036283074618589"></ul>
+</div>
+</div>
+<script type="text/javascript">
+var marquee_142036283074618589 = document.getElementById("marquee_142036283074618589");
+var marquee1_142036283074618589 = document.getElementById("marquee1_142036283074618589");
+var marquee2_142036283074618589 = document.getElementById("marquee2_142036283074618589");
+var speed=50;//控制移动的速度,数越大越慢
+marquee2_142036283074618589.innerHTML=marquee1_142036283074618589.innerHTML;//把marquee1的内容复制到marquee2里面
+function leftMarquee_142036283074618589(){ //向左
+if(marquee_142036283074618589.scrollLeft>=marquee1_142036283074618589.scrollWidth){
+marquee_142036283074618589.scrollLeft=0;
+}else{
+marquee_142036283074618589.scrollLeft++;
+}
+}
+var MyMar_142036283074618589=setInterval(leftMarquee_142036283074618589,50);
+marquee_142036283074618589.onmouseover=function() {clearInterval(MyMar_142036283074618589)} //鼠标移到上面停止并清除计数
+marquee_142036283074618589.onmouseout=function() {
+MyMar_142036283074618589=setInterval(leftMarquee_142036283074618589,50)//鼠标离开重新计数
+}
+</script>
+</div></div>
+	<div id="150891752762445854" class="mainframe_76">
+	<div id="143581690446056359" class="textdisplay_143581690446056359" >
+<h3><span>专题更多</span></h3>
+<div class="con"><a href="/type_pic/01010325.html" target="_blank">更多</a></div>
+</div></div>
+	<div id="150891752763299897" class="mainframe_75">
+	<div id="141956484175948220" class="urlportlet_141956484175948220" >
+<h3><span>友情链接</span></h3><script language="javascript" src="http://www.gxibvc.net//dwr/interface/dropNumAjax.js"></script><ul> 
+<li class="urlportlet_li_0"><a class="urlportlet_a_0" href="http://www.xinhuanet.com" id="141956486794682891" djsl="72" onclick="openlink(this)" title="" target="_blank">	新华网</a></li>
+<li class="urlportlet_li_1"><a class="urlportlet_a_1" href="http://www.moe.gov.cn" id="141956491140360525" djsl="114" onclick="openlink(this)" title="" target="_blank">	中国教育部</a></li>
+<li class="urlportlet_li_2"><a class="urlportlet_a_2" href="http://www.mofcom.gov.cn" id="141956493032274326" djsl="79" onclick="openlink(this)" title="" target="_blank">	中国商务部</a></li>
+<li class="urlportlet_li_3"><a class="urlportlet_a_3" href="http://www.gxzf.gov.cn/" id="142528495163836363" djsl="83" onclick="openlink(this)" title="" target="_blank">	广西区政府</a></li>
+<li class="urlportlet_li_4"><a class="urlportlet_a_4" href="http://www.gxswt.gov.cn/" id="142528498170998194" djsl="962" onclick="openlink(this)" title="" target="_blank">	广西商务厅</a></li>
+<li class="urlportlet_li_5"><a class="urlportlet_a_5" href="http://www.gxedu.gov.cn" id="141956494998125143" djsl="1851" onclick="openlink(this)" title="" target="_blank">	广西教育厅</a></li>
+<li class="urlportlet_li_6"><a class="urlportlet_a_6" href="http://www.tech.net.cn/web/index.aspx" id="142586647932313654" djsl="1297" onclick="openlink(this)" title="" target="_blank">	中国高职高专网</a></li>
+<li class="urlportlet_li_7"><a class="urlportlet_a_7" href="http://incovefert.gxibvc.net:99 " id="141956496833294445" djsl="806" onclick="openlink(this)" title="" target="_blank">	外经贸行指委</a></li>
+<li class="urlportlet_li_8"><a class="urlportlet_a_8" href="http://www.gxiets.com/" id="142528501237090765" djsl="89" onclick="openlink(this)" title="" target="_blank">	广西国贸学会</a></li>
+<li class="urlportlet_li_9"><a class="urlportlet_a_9" href="http://jyzd.gxibvc.net/" id="141956498577153475" djsl="2988" onclick="openlink(this)" title="" target="_blank">	招聘求职</a></li>
+<script type="text/javascript">function openlink(obj){
+dropNumAjax.urlDropNum(obj.id,obj.djsl);
+}
+</script>
+<script type="text/javascript">
+function showFwpl_141956484175948220(obj){
+var url = "fwplb.jsp?FwId="+obj.id;
+showTopWin(url,800,600,"Y");
+}
+</script>
+<script type="text/javascript">
+function showFwjs_141956484175948220(obj){
+var url = "yzs/fwjs.action?id="+obj.id;
+showTopWin(url,800,600,"Y");
+}
+</script>
+</ul></div></div>
+	</div>
+	<div id="150891752764279316" class="botframe">
+	<div id="150891752766946553" class="botframe_22">
+	<div id="150891752768939804" class="botframe_22_3">
+	<div id="141956529605062966" class="textdisplay_141956529605062966" >
+<div class="con"><p>Copyright:@2015 广西国际商务职业技术学院 桂ICP备05005727号</p>
+<p>地址：广西南宁市大学东路168号 &nbsp;邮编：530007</p>
+<p>联系电话：0771－3279176（院办）0771－3241618（招生咨询） 0771－3244696（就业信息）0771-3244221（继续教育、社会培训）</p></div>
+</div></div>
+	<div id="150891752770087435" class="botframe_22_1">
+	<div id="143566000169453307" class="textdisplay_143566000169453307" >
+<div class="con"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/21/000/0000/60424649/CA210000000604246490002.js' type='text/javascript'%3E%3C/script%3E"));</script></div>
+</div></div>
+	<div id="150891752771151038" class="botframe_22_2">
+	<div id="143107756815677860" class="picShowMoreControl_143107756815677860" >
+<h3><span>二维码图片</span>
+</h3>
+<ul>
+<li><a target="_blank" href="#"><img src="http://www.gxibvc.net///images/151996406820618324.jpg" height="100px" width="100px" alt="1"/></a></li>
+</ul>
+</div></div>
+	<div id="150891752772221557" class="botframe_22_4">
+	</div>
+	</div>
+	<div id="150891752772814224" class="botframe_24">
+	<div id="145879764637474613" class="picFloatMoreControl_145879764637474613" >
+</div></div>
+	<div id="150891752773764339" class="botframe_25">
+	</div>
+	<div id="150891752774462047" class="botframe_26">
+	</div>
+	</div>
+	<div id="150891752775087696" class="otherframe">
+	<div id="143107788878768515" class="flowControl_143107788878768515" >
+<div id="img_152755704303846374" style="position:absolute; z-index:9999;width: 80px; height: 80px;" class="control">
+<SCRIPT type="text/javascript">
+<!-- Begin
+	var xPos = 40;  
+	var yPos = 40;//document.documentElement.clientHeight;
+	var step = 2;var delay = 100; 
+	var height = 0; 
+	var Hoffset = 0;
+	var Woffset = 0;
+	var yon = 0;
+	var xon = 0;
+	var pause = false;
+	var interval;
+	document.getElementById("img_152755704303846374").style.top = yPos;
+	function changePos() {
+	width = document.documentElement.clientWidth;
+	height = document.documentElement.clientHeight;
+	Hoffset = document.getElementById("img_152755704303846374").offsetHeight;
+	Woffset = document.getElementById("img_152755704303846374").offsetWidth;
+	document.getElementById("img_152755704303846374").style.left = xPos + document.documentElement.scrollLeft+"px";
+	document.getElementById("img_152755704303846374").style.top = yPos + document.documentElement.scrollTop+"px";
+	if (yon) {
+	yPos = yPos + step;
+	}else {
+	yPos = yPos - step;
+	}
+	if (yPos < 0) {
+	yon = 1;
+	yPos = 0;
+	}
+	if (yPos >= (height - Hoffset)) {
+	yon = 0;
+	yPos = (height - Hoffset);
+	}
+	if (xon) {
+	xPos = xPos + step;
+	}
+	else {
+	xPos = xPos - step;
+	}
+	if (xPos < 0) {
+	xon = 1;
+	xPos = 0;
+	}
+	if (xPos >= (width - Woffset)) {
+	xon = 0;
+	xPos = (width - Woffset);
+	}
+	}
+	function start() {
+	document.getElementById("img_152755704303846374").visibility = "visible";
+	interval = setInterval('changePos()', delay);
+	}
+	function closeDiv(closedivid){
+	document.getElementById(closedivid).style.display="none";
+	}
+	start();
+	document.getElementById("img_152755704303846374").onmouseover=function() {clearInterval(interval)} //????????????
+	document.getElementById("img_152755704303846374").onmouseout=function() {start();} //????????????
+	// End -->
+</script></div></div>
+	</div>
+	</body>
+	
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="幼高专，福建幼高专，幼儿师范，福建专科，高等专科，幼教"/>
+    <meta name="description" content="学高为师，身正为范，系福建省教育厅直属公办师范类高等专科院校，位于福建福州，拥有仓山和白马两个校区，校园占地面积207.38亩。"/>
+    <meta name="author" content="Chenliang(930225) | 2016-12-14">
+    <meta name="editor" content="Chenliang(930225) | 2016-12-14">
+    <title>福建幼儿师范高等专科学校</title>
+    <link rel="stylesheet" href="/templets/fjys/css/pano.css">
+</head>
+<body>
+<div id="pano"></div>
+<a class="enter-website" href="/fjys/">进入官网</a>
+<div class="school-bage">
+    <img src="/templets/fjys/img/welcome-logo1.png" alt="">
+</div>
+<div class="school-motto">
+    <img src="/templets/fjys/img/welcome-logo2.png" alt="">
+</div>
+<div class="mouse-contorl">
+    <i class="xguide-down"></i>
+    <p>通过鼠标进行上下左右、放大/缩小查看</p>
+</div>
+<ul class="qrcode-box clearfix">
+    <li>
+        <div class="mark"></div>
+        <div class="qr-main">
+            <img src="/templets/fjys/img/wx2.jpg" alt="">
+            <p>公众号</p>
+        </div>
+    </li>
+    <li>
+        <a href="http://xiaoyou.101.com/yougaozhuan/index.shtml" title="福幼通" target="_blank">
+        <div class="mark"></div>
+        <div class="qr-main">
+            <img src="/templets/fjys/img/fyt20170313.jpg" alt="">
+            <p>福幼通</p>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="http://ppt.101.com/" title="101教育PPT" target="_blank">
+            <div class="mark"></div>
+            <div class="qr-main">
+                <img class="ppt" src="/templets/fjys/img/101logo.png" alt="">
+                <p>101教育PPT</p>
+            </div>
+        </a>
+    </li>
+</ul>
+<div class="loading">
+    <div class="logo"><img src="/templets/fjys/img/index-logo.png" alt=""></div>
+    <div class="tit">0%</div>
+</div>
+<script src="/templets/fjys/js/jquery-1.8.3.min.js"></script>
+<script src="/templets/fjys/js/resLoader.js"></script>
+<script src="/templets/fjys/js/tour.js"></script>
+<script>
+    // 判断ie9版本
+    function ieVersion() {
+        var isIE = navigator.userAgent.toLocaleLowerCase().indexOf('msie') !== -1;
+        if (isIE) {
+            // 判断是否为IE6、7、8
+            var isLteIE8 = isIE && !+[1,],
+                    ieVer = 6,
+            // 用于防止因通过IE8+的文档兼容性模式设置文档模式，导致版本判断失效
+                    dm = document.documentMode;
+            if (dm) {
+                switch (dm) {
+                    case 6 :
+                        ieVer = 6;
+                        break;
+                    case 7 :
+                        ieVer = 7;
+                        break;
+                    case 8 :
+                        ieVer = 8;
+                        break;
+                    case 9 :
+                        ieVer = 9;
+                        break;
+                    case 10 :
+                        ieVer = 10;
+                        break;
+                    case 11 :
+                        ieVer = 11;
+                        break;
+                }
+            } else {
+                // 判断是否为IE6，IE7开始有XMLHttpRequest对象
+                if (isLteIE8 && !XMLHttpRequest) {
+                    ieVer = 6;
+
+                    // 判断是否为IE7，IE8开始有document.documentMode属性
+                } else if (isLteIE8 && !document.documentMode) {
+                    ieVer = 7;
+                }
+
+                // 判断是否IE8
+                if (isLteIE8 && document.documentMode) {
+                    ieVer = 8;
+                }
+
+                //判断IE9，IE10开始支持严格模式，严格模式中函数内部this为undefined
+                if (!isLteIE8 && (function () {
+                            "use strict";
+                            return !!this;
+                        }())) {
+                    ieVer = 9;
+                }
+
+                // 判断IE10，IE11开始移除了attachEvent属性
+                if (isIE && !!document.attachEvent && (function () {
+                            "use strict";
+                            return !this;
+                        }())) {
+                    ieVer = 10;
+                }
+
+                if (isIE && !document.attachEvent) {
+                    ieVer = 11;
+                }
+            }
+
+            return ieVer;
+        } else {
+            return false;
+        }
+    }
+    /* 加载百分比*/
+    var loader = new resLoader({
+        resources: [
+            '/templets/fjys/img/index-logo.png',
+            '/templets/fjys/img/waves.png',
+            '/templets/fjys/img/welcome-logo1.png',
+            '/templets/fjys/img/welcome-logo2.png',
+            '/templets/fjys/img/wx2.jpg',
+            '/templets/fjys/img/sprite.png',
+            '/templets/fjys/img/sy.png',
+            '/templets/fjys/img/gyzh_03.png',
+            '/templets/fjys/img/yhjxlzs_03.png',
+            '/templets/fjys/tourresoure/panos/06-1.tiles/thumb.jpg',
+            '/templets/fjys/tourresoure/panos/06-1.tiles/preview.jpg',
+//             '/templets/fjys/tourresoure/panos/06-1.tiles/mobile_b.jpg',
+//             '/templets/fjys/tourresoure/panos/06-1.tiles/mobile_d.jpg',
+//             '/templets/fjys/tourresoure/panos/06-1.tiles/mobile_f.jpg',
+//             '/templets/fjys/tourresoure/panos/06-1.tiles/mobile_l.jpg',
+//             '/templets/fjys/tourresoure/panos/06-1.tiles/mobile_r.jpg',
+             '/templets/fjys/tourresoure/panos/06-1.tiles/mobile_u.jpg'
+//             '/templets/fjys/tourresoure/panos/06-1.tiles/pano_b.jpg',
+//             '/templets/fjys/tourresoure/panos/06-1.tiles/pano_d.jpg',
+//             '/templets/fjys/tourresoure/panos/06-1.tiles/pano_f.jpg',
+//             '/templets/fjys/tourresoure/panos/06-1.tiles/pano_l.jpg',
+//             '/templets/fjys/tourresoure/panos/06-1.tiles/pano_r.jpg',
+//             '/templets/fjys/tourresoure/panos/06-1.tiles/pano_u.jpg'
+        ],
+        onStart: function (total) {
+        },
+        onProgress: function (current, total) {
+            /*加载后百分比*/
+            var percent = current / total * 100;
+            $('.tit').html(parseInt(percent) + ' %');
+        },
+        onComplete: function (total) {
+            setTimeout(function () {
+                $('.loading').animate({
+                    left: '-100%'
+                }, 500);
+                var medal = $('.school-bage');
+                var medals = $('.school-motto');
+                medal.addClass('zoomin');
+                medals.addClass('zoomin');
+                medal.on('animationend webkitAnimationEnd', function () {
+                    medal.removeClass('zoomin').addClass('bounceOutLeft');
+                });
+                medals.on('animationend webkitAnimationEnd', function () {
+                    medals.removeClass('zoomin').addClass('bounceOutright');
+                });
+
+                function crateaction() {
+                    var isIELower = ieVersion() && ieVersion() < 10;
+                    if (isIELower) {
+                        $(".school-bage").css({
+                            'width': '380px',
+                            'height': '106px',
+                            'left': '0',
+                            'top': '0',
+                            'marginLeft': '0',
+                            'marginTop': '0'
+                        })
+                        $(".school-motto").css({
+                            'width': '395px',
+                            'height': '106px',
+                            'right': '0',
+                            'top': '0',
+                            'marginRight': '0',
+                            'marginTop': '0'
+                        })
+                        $(".school-bage")
+                    }
+                }
+
+                crateaction();
+            });
+        }
+    });
+    /*加载图片开始*/
+    loader.start();
+    var panoSetting = {
+        swf: "/templets/fjys/tourresoure/krpano.swf",
+        xml: "/templets/fjys/tourresoure/index.xml",
+        target: "pano",
+        html5: "auto",
+        mobilescale: 1.0,
+        wmode: 'opaque',
+        passQueryParameters: true
+    }
+
+    function change() {
+        var isIELower = ieVersion() && ieVersion() < 11;
+        if (isIELower) {
+            panoSetting.html5="fallback";
+        }
+    }
+    change();
+
+    embedpano(panoSetting);
+</script>
+</body>
+</html>

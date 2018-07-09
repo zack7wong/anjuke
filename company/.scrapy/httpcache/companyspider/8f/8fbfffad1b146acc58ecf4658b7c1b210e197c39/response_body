@@ -1,0 +1,3641 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=8" />
+<meta name="keywords" content="南大附中,附中,南大,南昌大学附中,IS,智慧校园">
+<meta name="description" content="南昌大学附属中学是江西省唯一一所“211工程”大学的附属中学。创办于1960年。学校占地面积140余亩，坐落在文风鼎盛、学术氛围浓厚、校园环境优美的南昌大学青山湖区校园内，是首批全国百所数字校园示范校、全国教育信息化创新应用先锋学校、江西省重点中学、南昌市名校、江西省现代教育技术示范校先进单位、江西省优质高中建设工程首批学校，江西省高中新课程实验样本校">
+<title>南昌大学附属中学</title>
+<link rel="shortcut icon" href="/newWeb/images/w-logo.png?flag=3" type="image/x-icon" >
+<link href="/newWeb/css/school.css?flag=1" rel="stylesheet" type="text/css">
+<link href="/dcyz/css/ad.css?flag=3" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/newWeb/js/jquery-1.10.2.min.js"></script> 
+<script type="text/javascript" src="/dcyz/scripts/floatingAd.js?flag=1"></script>
+<script type="text/javascript" src="/newWeb/js/pq.js?flag=6"></script>
+<script type="text/javascript">
+
+var schools;
+    var district;
+    //初始化下拉框数据
+    var seconds = 0;
+    var water;
+    var filename;
+    var dt_2 = (new Date()).getTime();
+    
+	$.ajax({
+        url : "/showqrc_1.json?_dt="+dt_2,
+        dataType: "json",
+        success: function(data){
+        
+      water=data.water;
+      
+      filename=data.filename;
+      document.getElementById('showpng').innerHTML="<img border='1' src='/images/qrcimage/"+filename+".png'  >";
+       interval=setInterval(function(){
+    seconds += 1;
+    document.getElementById('span').innerHTML = 300-seconds;
+    var dt_1 = (new Date()).getTime();
+    
+	$.ajax({
+        url : "/getqrc.json?_dt="+dt_1+"&waterid="+water+"&filename="+filename,
+        dataType: "json",
+        success: function(data){
+        
+        if(data.succes=="0"){
+        
+         return;
+        }
+        else{
+         if($("#sl_id").val()!=data.sl_id){
+        alert('请选择正确的学校！');
+         return;
+        }
+       // $("#tp").val('1')
+        $("#password").val(data.password)
+       // alert($("#sl_id").val());
+		//$("#sl_id").val(data.sl_id);
+	//	 $("#sl_id").append("<option value='"+data.sl_id+"' > </option>");
+	//	$("#sl_id").get(0).options[1].selected = true; 
+	//	$("#sl_id").val(data.sl_id);
+		$("#userid").val(data.userid)
+		//alert( $("#password").val());
+		//alert( $("#sl_id").val());
+		//alert( $("#userid").val());
+		submitForm();
+    	}
+        }
+        })
+    
+    
+    if(seconds == 300){
+    
+      document.getElementById('qrcodeshow').innerHTML = '二维码失效';
+      document.getElementById('showpng').innerHTML="<img border='1' src='/images/losttime.png' width='200' height='200' >";
+        clearInterval(interval); 
+
+    }
+  },1000);
+        }
+        })
+
+
+	function AddFavorite(sURL, sTitle)
+{
+    try
+    {
+        window.external.addFavorite(sURL, sTitle);
+    }
+    catch (e)
+    {
+        try
+        {
+            window.sidebar.addPanel(sTitle, sURL, "");
+        }
+        catch (e)
+        {
+            alert("加入收藏失败，请使用Ctrl+D进行添加");
+        }
+    }
+}
+//设为首页 <a onclick="SetHome(this,window.location)">设为首页</a>
+function SetHome(obj,vrl){
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+                                alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }
+        }
+}
+</script>
+<script language="JavaScript" type="text/JavaScript"> 
+function newFloatingWindow(){
+		$.ajax({
+            url: "/portlet/Fwlist.json",
+            success: function(data){
+              	var studentList= data.list;
+                $.each(studentList,function(i){
+                	var flag = this.flag;
+                	var fwurl = this.fwurl;
+                	var fwheight = this.fwheight;
+                	var fwwidth = this.fwwidth;
+                	var fwlink = this.fwlink;
+                	$(function(){
+						if(flag==0){
+							$.floatingAd({
+							//频率
+							delay: 60,
+							//超链接后是否关闭漂浮
+							isLinkClosed: false,
+							//漂浮内容
+							ad:	[{
+								'img': fwurl,
+								'imgHeight': fwheight,
+								'imgWidth': fwwidth,
+								//'linkUrl': '/portlet/dcdetailinfo.view?wf_ID=83&wf_Tag=0&id=348',
+								//'z-index': 101,
+								//'title': '丁三石',
+								//关闭按键图片
+								'closed-icon': '/newWeb/images/close.png'
+							}],
+							//关闭事件
+							onClose: function(elem){
+								//alert('关闭');
+							}
+							});
+	
+							$("#aa").floatingAd({
+								onClose:function(elem){}
+							});
+						}else if(flag==1){
+							$.floatingAd({
+								//频率
+								delay: 60,
+								//超链接后是否关闭漂浮
+								isLinkClosed: false,
+								//漂浮内容
+								ad:	[{
+									'img': fwurl,
+									'imgHeight': fwheight,
+									'imgWidth': fwwidth,
+									'linkUrl': fwlink,
+									//'z-index': 101,
+									//'title': '丁三石',
+									//关闭按键图片
+									'closed-icon': '/newWeb/images/close.png'
+								}],
+								//关闭事件
+								onClose: function(elem){
+									//alert('关闭');
+								}
+							});
+	
+							$("#aa").floatingAd({
+								onClose:function(elem){}
+							});
+						}
+					}); 
+                });
+            }
+        });
+	}
+
+ 
+function changeFocus()
+ 
+{
+ 
+  if(event.keyCode==13)
+ 
+  {    
+ 
+    submitForm();    
+ 
+  }
+ 
+}
+ 
+ 
+ 
+function initFocus() {
+ 
+        $("#userid").focus(function() {
+ 
+            var text_value = $(this).val();
+ 
+            if (text_value == this.defaultValue) {
+ 
+                $(this).val("");
+ 
+            }
+ 
+        });
+ 
+        $("#userid").blur(function() {
+ 
+            var text_value = $(this).val();
+ 
+            if (text_value == "") {
+ 
+                $(this).val(this.defaultValue);
+ 
+            }
+ 
+        });
+ 
+ 
+ 
+        $("#showPwd").focus(function() {
+ 
+            var text_value = $(this).val();
+ 
+            if (text_value == this.defaultValue) {
+ 
+                $("#showPwd").hide();
+ 
+                $("#password").show().focus();
+ 
+            }
+ 
+        });
+ 
+        $("#password").blur(function() {
+ 
+            var text_value = $(this).val();
+ 
+            if (text_value == "") {
+ 
+                $("#showPwd").show();
+ 
+                $("#password").hide();
+ 
+            }
+ 
+        });
+ 
+    }
+ 
+	
+ 
+	function validateForm() {
+ 
+        if($.trim($("#userid").val()) == "" || $("#userid").val() == "请输入登录姓名") {
+ 
+            alert("请输入用户名！");
+ 
+            $("#userid").focus();
+ 
+            return false;
+ 
+        }
+ 
+        if($.trim($("#password").val()) == "") {
+ 
+            alert("请输入密码！");
+ 
+            $("#password").focus();
+ 
+            return false;
+ 
+        }
+ 
+        return true;
+ 
+    }//end validateForm
+ 
+	
+ 
+	function submitForm() {
+ 
+		if(validateForm()) {
+ 
+			$("#userForm").submit();
+ 
+		}
+ 
+	}
+ 
+	
+ 
+jQuery(document).ready(function(){
+ 
+        initFocus();
+        
+        newFloatingWindow();
+ 
+		$("#userForm").keydown(function(){
+ 
+            if(event.keyCode == 13) {
+ 
+                submitForm();
+ 
+            }
+ 
+        });
+ 
+    });
+ 
+ 
+ 
+ 
+function MM_preloadImages() { //v3.0
+ 
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+ 
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+ 
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+ 
+}
+ 
+ 
+ 
+function MM_swapImgRestore() { //v3.0
+ 
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+ 
+}
+ 
+ 
+ 
+function MM_findObj(n, d) { //v4.01
+ 
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+ 
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+ 
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+ 
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+ 
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+ 
+}
+ 
+ 
+ 
+function MM_swapImage() { //v3.0
+ 
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+ 
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+ 
+}
+ 
+//-->
+ 
+</script>
+<style type="text/css">
+
+embed{z-index:-2;}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="head-bg">
+	<div class="head">
+    	<div class="logo"><a href="/index.view"><img src="/newWeb/images/logo.png"></a></div>
+        <div class="t-phone">
+        	<span><img src="/newWeb/images/phone-icon.png"></span>
+            <div class="phone-txt">
+            	<p>联系电话</p>
+                <h3>0791-82020888</h3>
+            </div>
+			<div class="t-right">
+        		<a  href="#" onclick="SetHome(this,window.location)" >设为首页</a>
+            	<a  href="#"    onclick="AddFavorite(window.location,document.title)"  >加入收藏</a>
+            	<a href="http://www.ncdxfzhgt.cn/">红谷滩分校</a>
+        	</div>
+        </div>
+    </div>
+</div>
+
+<div class="nav-bg">
+	<div class="nav">
+    	<ul  id="nav">
+        	<li class="on"><a href="/index.view">网站首页</a></li>
+        	
+				<li class="mainlevel" id="id1">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=1">学校概览</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=80&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;学校简介&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=16&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;学校领导&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=42&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;教师风采&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=14&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;校园风光&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=15&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;校史长廊&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=64&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;办学成就&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=12&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;领导关怀&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id2">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+						<a href="/portlet/dcinfotagpagelist.view?wf_ID=2">信息快递</a>
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+									<a href="/portlet/dcinfotagpagelist.view?wf_ID=44&wf_Tag=3"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;附中新闻&nbsp;&nbsp;
+											
+										
+									</a>	
+								
+								
+								
+							</li>
+						
+							<li>
+								
+								
+									<a href="/portlet/dcinfotagpagelist.view?wf_ID=72&wf_Tag=1"  class="underline">
+									
+									
+									
+										&nbsp;&nbsp;附中公告&nbsp;&nbsp;
+									
+									
+									</a>	
+								
+								
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id3">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=3">组织机构</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=19&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;办公室&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=110&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;综治办&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=111&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;数学研究中心&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=24&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;教务处&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=28&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;政教处&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=25&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;教研处&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=29&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;总务处&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=22&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;工会&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=26&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;团委&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=23&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;国际部&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=101&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;信息服务（IS）中心&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=103&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;电教与实验中心&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id4">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=4">党建工作</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=30&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;政治学习制度 &nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=31&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;党总支文件及会议纪要 &nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=43&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;学习资料&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=65&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;开展活动&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=66&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;党建资源&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id5">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=5">教育教学</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=35&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;教学成绩 &nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=36&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;教学活动 &nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=37&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;教学资源&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=38&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;选修课程&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=40&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;校内期刊&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=69&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;家庭教育&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id6">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=6">学生工作</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=60&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;学生风采&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=73&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;学生会&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=74&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;志愿者&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=104&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;团委&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id7">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=7">职工之家</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=41&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;教工代表大会规定&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=59&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;职工学习园地&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id8">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=8">招生专栏</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=34&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;名师风采&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=81&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;师资介绍&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=83&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;高考成绩&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=84&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;招生章程&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=85&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;招生方案&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=86&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;招生问答&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=88&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;招生动态&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id9">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=9">校友会</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=13&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;校史&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=47&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;校友风采&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=53&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;校友捐赠&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id10">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=10">学校特色</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=27&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;信息化特色&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=109&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;艺术团&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=112&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;校园足球&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id11">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=11">国际交流</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+					</ul>
+				</li>
+			
+				<li class="mainlevel" id="id105">
+					<!-- 标志位为0,,加载topic信息进入二级菜单 -->
+					
+						<a href="/portlet/dcinfopagelist.view?wf_ID=105">名师讲堂</a>
+						
+			
+					<!-- 标志位为1,加载新闻通告通知 -->
+					
+					<!-- 标志位为2,加载本身的url地址 -->	
+						
+					<ul>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=107&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;海报&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+							<li>
+								
+								
+								
+								
+									<a href="/portlet/dcinfopagelist.view?wf_ID=108&tag=0"  class="underline">
+										
+											
+											
+												&nbsp;&nbsp;名师讲堂录像课&nbsp;&nbsp;
+											
+											
+									</a>
+								
+								
+							</li>
+						
+					</ul>
+				</li>
+			
+        </ul>
+    </div>
+</div>
+    
+    
+  <!--banner-s--> 
+	<div class="banner">
+        
+    <!--    <div class="slide-main" id="touchMain">
+            <a class="prev" href="javascript:;" stat="prev1001"><img src="/newWeb/images/l-btn.png" /></a>
+            <div class="slide-box" id="slideContent">
+                <div class="slide" id="bgstylec" style="background:url(/newWeb/images/banner.png) #56aaff center top no-repeat"></div>
+                <div class="slide" id="bgstylec" style="background:url(/newWeb/images/banner1.png) #56aaff center top no-repeat"></div> 
+                
+            <a class="next" href="javascript:;" stat="next1002"><img src="/newWeb/images/r-btn.png" /></a>
+            <div class="item">
+                <a class="cur" stat="item1001" href="javascript:;"></a>
+                <a href="javascript:;" stat="item1002"></a>  
+             </div>
+        </div>
+    	
+    </div>
+    -->
+    <div class="slide-main" id="touchMain">
+            <a class="prev" href="javascript:;" stat="prev1001"><img src="/newWeb/images/l-btn.png" /></a>
+            <div class="slide-box" id="slideContent">
+                
+ 					
+ 						<div class="slide" id="bgstylec" style="background:url(http://ispt.com.cn:7085/isschool/data/isschooldb000008/file/2018/04/校门.png20180428164203f2ff.png) #fff center top no-repeat"></div> 
+ 					
+ 					
+ 				
+ 					
+ 						<div class="slide" id="bgstylec" style="background:url(http://182.106.215.231:60881/isschool/data/isschooldb000008/file/2016/06/ban2.jpg201606241004320b3f.jpg) #fff center top no-repeat"></div> 
+ 					
+ 					
+ 				
+            <a class="next" href="javascript:;" stat="next1002"><img src="/newWeb/images/r-btn.png" /></a>
+           <div class="item">
+                <a class="cur" stat="item1001" href="javascript:;"></a>
+                 
+                	<a href="javascript:;" stat="item1001"></a>  
+                
+             </div>
+        
+        </div>
+    </div>
+    
+  </div>
+  
+    
+ <!--banner-e-->   
+ 
+ <div class="top-news">
+<div class="news-focus">
+    	<div class="top-news-tit">
+    	<span><img src="/newWeb/images/n-l.png"></span>
+        <b>新闻图片</b><em>/NEWS PICTURES</em>
+    	<span><img src="/newWeb/images/n-r.png"></span>
+   	 	</div>
+    	<div id="slide" class="slide_wrap">
+            <ul class="slide_imglist">
+                
+                	
+    				
+    					<li><a title="喜报" href="/portlet/dcdetailinfo.view?wf_ID=2&id=2995" target="_blank"><img src="http://ispt.com.cn:7085/isschool/data/isschooldb000008/file/2018/05/20180528130813cb6b.png" alt="喜报"></a></li>
+    				
+                
+                	
+    					<li><a title="火红的五月，火红的青春—..." href="/portlet/dcdetailinfo.view?wf_ID=2&id=2989" target="_blank"><img src="http://ispt.com.cn:7085/isschool/data/isschooldb000008/file/2018/05/20180527120911f582.jpg" alt="火红的五月，火红的青春——记“"></a></li>
+    				
+    				
+                
+                	
+    					<li><a title="2018年南昌市足球嘉年..." href="/portlet/dcdetailinfo.view?wf_ID=2&id=2988" target="_blank"><img src="http://ispt.com.cn:7085/isschool/data/isschooldb000008/file/2018/05/201805251647371835.jpg" alt="2018年南昌市足球嘉年华在我"></a></li>
+    				
+    				
+                
+                	
+    					<li><a title="我校隆重举行2018年新..." href="/portlet/dcdetailinfo.view?wf_ID=2&id=2977" target="_blank"><img src="http://ispt.com.cn:7085/isschool/data/isschooldb000008/file/2018/05/201805242056225ee5.jpg" alt="我校隆重举行2018年新团员入"></a></li>
+    				
+    				
+                
+                	
+    					<li><a title="程晓杰校长应邀为江西省教..." href="/portlet/dcdetailinfo.view?wf_ID=2&id=2969" target="_blank"><img src="http://ispt.com.cn:7085/isschool/data/isschooldb000008/file/2018/05/20180524090708f11c.jpg" alt="程晓杰校长应邀为江西省教育厅第"></a></li>
+    				
+    				
+                
+            </ul>
+            <div class="slide_title">
+                <h3><a href="#" target="_blank"></a></h3>
+                <dl class="slide_num"></dl>
+                <em></em>
+            </div>
+        </div>
+        <script type="text/javascript">
+       	 $('#slide').UISlide();
+        </script>
+    </div>
+     
+    <div class="focus-right">
+    	<div class="focus-r-top">
+    		<div class="top-news-tit">
+                <span><img src="/newWeb/images/n-l.png"></span>
+                <b style="font-size:14px;">五色相曜描画卷，开拓创新谱华章</b>
+                <span><img src="/newWeb/images/n-r.png"></span>
+            </div>
+        	
+        	<!-- <embed id="tenvideo_flash_player_1487818315598" wmode="direct" flashvars="vid=m0377u6a2zd&tpid=0&showend=1&showcfg=1&searchbar=1&pic=//shp.qpic.cn/qqvideo_ori/0/m0377u6a2zd_496_280/0&skin=http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf&shownext=1&list=2&autoplay=0" src="http://imgcache.qq.com/tencentvideo_v1/player/TPout.swf?max_age=86400&v=20140714" quality="high" name="tenvideo_flash_player_1487818315598" bgcolor="#000000" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" pluginspage="http://get.adobe.com/cn/flashplayer/" height="190px" width="240px" align="middle"> -->
+        	<embed src="https://imgcache.qq.com/tencentvideo_v1/playerv3/TPout.swf?max_age=86400&v=20161117&vid=v0377l6vi7z&auto=0&flag=11" wmode="transparent" allowFullScreen="true" quality="high" width="240" height="190" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+        	
+        </div>
+    </div>
+    <div class="focus-center">
+		<div class="top-news-tit">
+            <span><img src="/newWeb/images/n-l.png"></span>
+            <b>学校新闻</b><em>/SCHOOL NEWS</em>
+            <span><img src="/newWeb/images/n-r.png"></span>
+        </div>
+        <ul>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=0&id=2995">
+    						
+    						
+    							喜报
+    						
+    					</a>
+    					<span>05-28</span>
+        		</li>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=0&id=2989">
+    						
+    							火红的五月，火红的青春——记“红五...
+    						
+    						
+    					</a>
+    					<span>05-27</span>
+        		</li>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=0&id=2988">
+    						
+    							2018年南昌市足球嘉年华在我校顺...
+    						
+    						
+    					</a>
+    					<span>05-25</span>
+        		</li>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=0&id=2977">
+    						
+    							我校隆重举行2018年新团员入团仪...
+    						
+    						
+    					</a>
+    					<span>05-24</span>
+        		</li>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=0&id=2969">
+    						
+    							程晓杰校长应邀为江西省教育厅第八期...
+    						
+    						
+    					</a>
+    					<span>05-24</span>
+        		</li>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=0&id=2967">
+    						
+    						
+    							学校召开教职工大会
+    						
+    					</a>
+    					<span>05-23</span>
+        		</li>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=0&id=2952">
+    						
+    							喜讯：校足球队勇夺全省第二名为南昌...
+    						
+    						
+    					</a>
+    					<span>05-21</span>
+        		</li>
+        	
+        		<li>
+    					<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=0&id=2947">
+    						
+    							排球撩动激情  赛场放飞真我   ...
+    						
+    						
+    					</a>
+    					<span>05-18</span>
+        		</li>
+        	
+        </ul>
+         
+    </div>
+    
+ </div>
+ 
+ <div class="news-main-bg">
+	<div class="news-main">
+  		<div class="news-main-l" id="tabmain">
+        	<div class="news-main-l-tit">
+            	<a href="#" class="ma_1">最新动态</a>
+            	<a href="#" class="curr">学校公告</a>
+            	<a href="#">学校新闻</a>
+                
+            </div>
+            
+            <div class="news-main-l-con">
+                
+    				<li>
+    					<h2>
+    						
+    							<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=0&id=2995">
+    								
+    								
+    								
+    									
+    									
+    										[学校新闻]喜报
+    									
+    								
+    							</a>
+    						
+    						
+    					</h2>
+    					<p> 
+	
+		
+			
+				
+			
+		
+	
+	
+		
+	
+</p>
+    					<span>05/28</span>
+    				</li>
+    			
+    				<li>
+    					<h2>
+    						
+    							<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=0&id=2989">
+    								
+    								
+    								
+    									
+    										[学校新闻]火红的五月，火红的青春——记“红五月”校园社团文化...
+    									
+    									
+    								
+    							</a>
+    						
+    						
+    					</h2>
+    					<p> 
+	本网讯（学生记者褚嘉雯）人间四月芳菲尽，火红五月情更浓。走进五月，如同走进熊熊燃烧的火焰，如同走进火红的世界，如同走进火红的青春。根据我校2018年红五月校园文化艺术节活动精神，校团委于5月21日至25日开展了“红五月”社团文化活动周。
+
+
+	此次展示活动分别由汉文化社、动漫社、广播社、流行音乐社、航模社、钢琴社、志愿者协会、街舞社等承担。他们带来了图书展示、动漫人物cosplay、现场live表演、海报展板、趣味活动等主题多样的展示。这些展示不仅让同学们大饱眼福，了解到了许多知识，观赏了一场场视听盛宴，还通过一些小游戏让同学亲身参与到活动之中，极大丰富了我们的校园文化，展示了我们的社团风采。在这些校园社团的带领下，在这个火红的青春里，我们留下了火红的记忆！
+
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+		
+	
+
+
+
+	
+
+</p>
+    					<span>05/27</span>
+    				</li>
+    			
+    				<li>
+    					<h2>
+    						
+    							<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=0&id=2988">
+    								
+    								
+    								
+    									
+    									
+    										[学校新闻]2018年南昌市足球嘉年华在我校顺利举办
+    									
+    								
+    							</a>
+    						
+    						
+    					</h2>
+    					<p> 
+	
+		&nbsp;&nbsp;&nbsp; 本网讯（校足球办）为更好贯彻落实南昌市教育局关于开展南昌市首届中小学生“三大球”嘉年华活动，弘扬足球文化精神，发挥足球育人功能，丰富学生校园生活，我校承办了2018年南昌市足球嘉年华活动。
+	
+	
+		&nbsp;&nbsp;&nbsp; 本次活动共计八个游戏项目，团队项目四个，包括绿茵好拍档、极速前进、2v2斗牛赛、机器人世界杯；个人项目四个，包括过人我最溜、挑战不可能、VR搞笑空间、挑战磁悬浮等。
+	
+	
+		&nbsp;&nbsp;&nbsp; 在校领导和老师们的带领下，我校学生踊跃报名，积极响应，参加的同学在场上都发挥出了自己的技战术水平，表现优秀。一天的活动时间过去了，同学们还意犹未尽。
+	
+	
+		&nbsp;&nbsp;&nbsp; 活动充分展现了我校作为全国青少年校园足球特色学校的良好足球氛围，以及学校对学生课余兴趣爱好的重视，展示了附中学子良好的精神风貌。 
+	
+	
+		
+	
+	
+		 
+		
+			 
+		
+		
+			
+
+		
+		
+			 
+		
+		
+			
+
+		
+		
+			 
+		
+		
+			
+
+		
+		
+			 
+		
+		
+			
+
+		
+		
+			
+				&nbsp;
+&nbsp;
+			
+		</p>
+    					<span>05/25</span>
+    				</li>
+    			
+    				<li>
+    					<h2>
+    						
+    							<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=0&id=2977">
+    								
+    								
+    								
+    									
+    										[学校新闻]我校隆重举行2018年新团员入团仪式暨“五四”评优...
+    									
+    									
+    								
+    							</a>
+    						
+    						
+    					</h2>
+    					<p> 
+	本网讯（团委）为促进团员队伍建设，增强共青团团员对团组织的神圣感、荣誉感、归属感，5月24日下午，我校在202多媒体教室举行2018年新团员入团仪式暨“五四”评优表彰活动。南昌大学团委副书记熊宁佳，南昌大学附属中小学党总支副书记吴银枝，杜秋华副校长，团委书记葛春华，团委副书记周华荣、黄丹和团委付祎、周开财老师以及部分新老团员参加了本次仪式。仪式由付祎老师主持。 
+
+
+	  
+	
+		 
+	
+	
+		
+	
+	
+		仪式在嘹亮的国歌声中开始。首先，南昌大学团委副书记熊宁佳代表南昌大学团委对新团员表示祝贺。她引用习近平总书记在十九大会议上强调的“青年兴则国家兴，青年强则国家强”，告诫广大团员青年要刻苦学习，树立高尚情操，用实际行动为团旗增添色彩，为祖国的发展而努力奋斗。 
+	
+	
+		  
+		
+			 
+		
+		
+			
+		
+		
+			 
+		
+		
+			
+		
+		
+			接着，附中团委副书记周华荣宣读新团员名单。各位领导和老团员代表为新团员佩戴闪耀夺目的团徽，在高二（9）班闵芮同学的带领下，新团员面向鲜红团旗，紧握右拳，庄严宣誓，老团员跟着一起重温入团誓词。大家坚定的目光和铮铮的誓言展现出共青团员积极向上的活力和朝气。 
+		
+		
+			  
+			
+				 
+			
+			
+				
+			
+			
+				
+			
+			
+				  
+				
+					 
+				
+				
+					
+				
+				
+					  
+					
+						 
+					
+					
+						
+					
+					
+						  
+						
+							 
+						
+						
+							
+						
+						
+							宣誓完毕，新团员代表高一（6）班段博文发言。他表示今后要时刻以一名优秀共青团员的标准要求自己，要以大无畏的姿态去攻坚克难，更加努力向上，全面发展，用实际行动践行自己的誓言。 
+						
+						
+							  
+							
+								 
+							
+							
+								
+							
+							
+								老团员代表高二（9）班单艺发言。她代表老团员欢迎新团员的加入，告诉新团员应在团组织的领导下，努力学习，以身作则，为班级和学校努力争光，为社会和国家做出自己的贡献。 
+							
+							
+								  
+								
+									 
+								
+								
+									
+								
+								
+									之后，附中团委书记葛春华宣布优秀团员、优秀团干和优秀团支部的名单。各位领导给获奖者代表颁发荣誉证书并对他们表示祝贺和鼓励。 
+								
+								
+									  
+									
+										 
+									
+									
+										
+									
+									
+										  
+										
+											 
+										
+										
+											
+										
+										
+											 
+										
+										
+											
+										
+										
+											
+												 
+											
+											
+												
+											
+											
+												仪式最后，杜秋华副校长讲话。他首先对新团员和获奖同学表示祝贺，对南昌大学团委的关心表示感谢。接着对全体团员提出了要求和殷切期望。他希望新团员能更加卓尔不凡，做一个努力学习的人、有理想的人、有道德的人。全体团员要坚决遵守团的章程，遵守校规校纪，感恩父母和老师，热爱班级和学校，培养健全人格和高尚情操，做一个好公民，做一个真正的共青团员。 
+											
+											
+												  
+												
+													 
+												
+												
+													
+ 
+												
+												
+													&nbsp;
+												
+												
+													在雄浑的团歌《光荣啊，中国共青团》中，我校2018年新团员入团仪式落下了帷幕。希望新团员以入团为新的起点，发挥先锋楷模作用，努力学习，不负期望，让胸前的团徽熠熠生辉。 
+												</p>
+    					<span>05/24</span>
+    				</li>
+    			
+    				<li>
+    					<h2>
+    						
+    							<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=0&id=2969">
+    								
+    								
+    								
+    									
+    										[学校新闻]程晓杰校长应邀为江西省教育厅第八期高中校长高级研修...
+    									
+    									
+    								
+    							</a>
+    						
+    						
+    					</h2>
+    					<p> 
+	本网讯（校办）5月23日下午，校长、正高级特级教师程晓杰应邀前往南昌师范学院，为江西省教育厅第八期高中校长高级研修班作了《更新观念与时俱进，开拓创新铸造品牌》精彩专题讲座。来自全省十七个地市县的50余位高中校长学员聆听了讲座。 
+
+
+	程校长在讲座中深入阐述了自己对校长角色的思考认识，详尽论述了校长的职责使命、方向目标和工作方法，提出“校长要懂得与时俱进，善于因地制宜，找准本校的发展突破口，打造学校办学特色，实现弯道超车”的观点，给大家以深刻的启发。随后，程校长结合我校信息化特色发展的实际案例，介绍了我校更新观念因地制宜选择信息化特色发展之路的历史背景和实践过程，重点分享了我校信息化“良好的氛围”“核心成果IS平台”“开放共享”等三点特色和取得的显著效果，给大家提供了切实的指导。 
+
+
+	讲座间隙，程校长还与校长学员们进行了深入的互动交流，分享了自己的几点心得体会，引起了大家深深的共鸣。一是更新观念，与时俱进；二是因地制宜，找准方向；三是创新作为，打造特色；四是完善制度，规范管理；五是重视学习，提高修为。整场讲座，既有校长管理智慧和领导艺术的理论阐述，又有学校特色发展的经验交流，内容丰富，紧贴实际，务实而具有指导性。
+
+
+	江西省高中校长高级研修班由江西省教育厅举办、江西省教育干部培训中心承办，培训对象为全省已经取得相应培训合格证书的高中校长。研修班旨在提升高中校长贯彻执行党和国家教育方针政策、组织实施素质教育的能力，造就一批政治坚定、业务精湛、作风过硬的高水平、专业化高中校长队伍，促进我省高中教育的改革和发展。 
+
+ 
+
+	 
+
+
+	
+
+
+	
+		 
+	
+	
+		
+	
+ 
+	
+		
+ 
+	</p>
+    					<span>05/24</span>
+    				</li>
+    			
+    				<li>
+    					<h2>
+    						
+    							<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=0&id=2967">
+    								
+    								
+    								
+    									
+    									
+    										[学校新闻]学校召开教职工大会
+    									
+    								
+    							</a>
+    						
+    						
+    					</h2>
+    					<p> 
+	本网讯（校办）5月22日下午，学校在202召开全校教工大会。会议组织开展了师德师风专题学习，部分教师作了经验分享，相关部门作了工作总结和布置。程晓杰校长作总结讲话，杜秋华副校长主持会议。 
+
+
+	党总支副书记吴银枝在会上传达了江西省教育厅（赣教办字【2018】18号文件——《关于印发〈全省师德建设长效机制贯彻落实专项督查工作方案〉的通知》文件精神，并带领大家认真学习了《江西省教育系统“红包”治理“十不准”》和《江西省中小学教师违反职业道德行为处理实施办法（试行）》。吴银枝同志强调，全体教职工要进一步统一思想，提高认识，严格遵守教师职业道德规范，爱岗敬业，规范从教，严禁参与有偿家教，严禁收受红包，严禁体罚、或变相体罚学生行为，消除慵懒散现象，并强调：接下来学校会开展师德师风自查自纠工作，如发现教师有违纪行为，严格按相关文件加以处理。 
+
+
+	紧接着刚评选出的南昌大学附属中学2018年度教师乐盛民、年度教师提名奖获得者付祎、赵静辉等三位教师分别发言，分享了自己对教育之美的认识。三位老师或正面抒发对教育美的认识，慷慨激昂；或讲述自己对教育美的执着求索历程，娓娓道来；或阐述教育“不美”成就教育大美的观点，独辟蹊径。精彩分享给大家以深刻的触动和启发。 
+
+
+	教务处周加丰主任和政教处葛春华主任分别就本部门新学期以来的常规工作作了总结和通报，并就后续工作提出要求。 
+
+
+	程晓杰校长作总结讲话。他细致梳理总结了本学期以来全校取得的各项成绩和所做的大量创新工作，充分肯定了全体老师的爱岗敬业和学校各项管理工作的日趋规范。他强调，学校的发展已经得到了社会各界的高度肯定。在南昌大学进入部省合建大学行列的新的历史时期，大家要充分认清形势和机遇，牢记职责和使命，全体干部要进一步发挥带头作用形成“头雁效应”，全体教职工要进一步加强团结协作形成合力，上下一心，鼓足干劲，以强烈的主人翁意识，发扬南昌大学附属中学多年来形成的“团结、纪律、科学、吃苦”的优良传统，在机遇和挑战并存的历史过程中，做好每一件平凡的事情，成就南昌大学附属中学源源不断的新辉煌。 
+
+ 
+
+	 
+
+
+	
+
+
+	 
+
+
+	
+
+
+	 
+
+
+	
+
+
+	 
+
+
+	
+
+
+	 
+
+
+	
+
+
+	 
+
+
+	
+
+
+	 
+
+
+	
+
+
+	
+		 
+	
+	
+		
+	
+ 
+	
+		
+	</p>
+    					<span>05/23</span>
+    				</li>
+    			
+ 				<div class="news-more"><a href="/portlet/dcinfotagpagelist.view?wf_ID=2">查看更多</a></div>
+            </div>
+            
+            <div class="news-main-l-con">
+				
+					<li>
+                    	<h2>
+                    		<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=1&id=2929">
+                    			
+    								2018年南昌大学教职工子女就读附中高一年级摸底登...
+    							
+    							
+                    		</a>
+                    	</h2>
+                        <p>  
+	2018年南昌大学教职工子女就读附中高一年级摸底登记通告
+
+
+	&nbsp;
+
+
+	在南昌大学与南昌市教育局、教育考试院的共同关心与协调下，遵照南昌市2018年中招政策，南昌大学教职工子女可继续享有优惠政策就读我校2018级高一。为做好此项工作，现对今年秋季南昌大学教职工子女就读我校高一情况进行摸底登记。现将有关事项通告如下：
+
+
+	一、登记对象
+
+
+	1.南昌大学本部正式在编教职工子女；
+
+
+	2.南昌大学一附院、二附院、四附院、口腔医院、眼科医院、医科院正式在编职工和在省人社厅备案的聘用医护人员子女；
+
+
+	3.南昌大学校有企业（南昌客车厂、江南化工厂、江西电子仪器厂、江南电子仪器厂）正式在编职工子女；
+
+
+	4.与南昌大学人事处签订了正式聘用合同的校本部聘用制教职工子女；
+
+
+	5.南昌大学科技学院、软件学院、共青学院、附属中学、附属小学正式聘用且已在南昌大学人事处备案的合同制教职工子女；
+
+
+	6.南昌大学引进的高层次人才子女。
+
+
+	二、网上摸底登记
+
+
+	请上述登记对象务必在5月16日至5月31日18:00前，登录南昌大学附属中学官网进行网上摸底登记，操作如下：
+
+
+	1.登录附中网站：http：//www.ncdxfz.com，点击首页“初升高摸底登记”（浮动图标）。
+
+
+	2.按要求填写登记表、将所需材料原件拍成清晰照片上传、确认并提交登记表。
+
+
+	3.所需照片材料如下：
+
+
+	（1）户口本上教职工姓名所在页及孩子姓名所在页。
+
+
+	（2）若教职工户口与孩子的户口不在同一本户口本上的，必须提供户口所在地的派出所开具的关系证明材料。
+
+
+	（3）大学本部在编教职工及附属单位在编的教职工还需提供工作证，如无工作证则需提供南昌大学人事处开具的工作证明。
+
+
+	（4）上述登记对象中涉及到聘用制的教职工还需提供聘用合同、省人社厅或南昌大学人事处备案的证明材料以及半年以上的工资流水账单（需银行盖章）。
+
+
+	（5）南昌大学引进的高层次人才还需提供南昌大学人事处的证明材料。
+
+
+	三、召开家长会
+
+
+	6月19日晚7:00在附中综合楼一楼多功能厅照开家长会，通报相关政策，请家长准时参加。
+
+
+	四、预报名及材料审核
+
+
+	凡是网上登记并通过了审核的家长，请于7月10日、11日两天的上班时间（上午8:30—11:30；下午2:30—5:30）带好学生中考准考证、分数条及上述上传照片材料的原件及复印件到我校综合楼一楼政教处办公室进行现场材料审核，同时进行现场预报名登记。
+
+
+	五、注意事项
+
+
+	1.请家长保证所登记手机处于开通状态，以便接听学校电话或接收短信通知。
+
+
+	2.如上述登记对象未在我校规定时间上交材料登记报名，则视为自动放弃，南昌市教育考试院将不予录取，无法办理学籍档案，后果由家长自己承担。
+
+
+	3.请家长们互相转告，切勿耽误。
+
+
+	六、联系电话
+
+
+	政教处：0791—88327515
+
+
+	葛老师：13755790503
+
+
+	罗老师：13627097296
+
+
+	&nbsp;
+
+
+	&nbsp;
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;南昌大学附属中学
+
+
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;2018年5月15日
+
+
+	&nbsp;
+
+
+	&nbsp;
+</p>
+                        <span>05/15</span>
+                    </li>
+    			
+					<li>
+                    	<h2>
+                    		<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=1&id=2931">
+                    			
+    								南昌大学附属中学2018级高一年级名师团队家长见面...
+    							
+    							
+                    		</a>
+                    	</h2>
+                        <p>  
+	尊敬的家长：
+
+
+	南昌大学附属中学是江西省唯一一所部省合建大学的附属中学，是江西省重点中学、南昌市名校、南昌市第一批次省级重点中学。2012年以来，学校有近10位学生考取北京大学、清华大学，100多位学生考取复旦大学、上海交通大学、中国科技大学、南京大学、中国人民大学、香港中文大学等一流名校。
+
+
+	为了方便您更全面地了解南昌大学附属中学，我们将于6月1日晚上7点在学校举行2018级新高一年级名师团队家长见面会。热诚欢迎您报名参加！
+
+
+	
+		
+			
+				
+					
+						会议时间
+					
+				
+				
+					
+						6月1日19：00
+					
+				
+			
+			
+				
+					
+						会议地点
+					
+				
+				
+					
+						南昌大学附属中学高中楼202多媒体教室
+					
+				
+			
+			
+				
+					
+						报名条件
+					
+					
+						&nbsp;
+					
+				
+				
+					
+						认可南昌大学附属中学办学理念、孩子成绩有希望达到南昌大学附属中学高中录取线的初三家长。
+					
+				
+			
+			
+				
+					
+						报名方式
+					
+				
+				
+					
+						到政教处现场报名，领取入场券，凭入场券参加见面会。报名截止时间为5月31日17:00。
+					
+				
+			
+			
+				
+					
+						联系电话
+					
+				
+				
+					
+						政教处：0791—88327515&nbsp;&nbsp;&nbsp;13755790503&nbsp;&nbsp;
+					
+				
+			
+			
+				
+					
+						主要议程
+					
+				
+				
+					
+						1.校长、正高级特级教师程晓杰全面介绍学校。
+					
+					
+						2.教务处主任介绍新高一名师团队。
+					
+					
+						3.新高一年级部分优秀教师自我介绍。
+					
+					
+						4.年级组长介绍新高一年级规划、设想、做法、要求。
+					
+					
+						5.政教处主任解读南昌大学附属中学招生政策。
+					
+				
+			
+		
+	
+</p>
+                        <span>05/14</span>
+                    </li>
+    			
+					<li>
+                    	<h2>
+                    		<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=1&id=2851">
+                    			
+    							
+    								2018年南昌大学附属中学体育特长生招生简章
+    							
+                    		</a>
+                    	</h2>
+                        <p>  
+	南昌大学附属中学是江西省唯一一所部省合建大学的附属中学，是江西省重点中学、南昌市名校。学校坐落在学术氛围浓厚、校园环境优美的南昌大学青山湖区校园内。近十年来，南昌大学附中高考成绩不断创造辉煌，已有6位同学考入清华大学和北京大学，已连续十年荣获南昌市高中教学质量管理奖。 
+
+
+	近年来，南昌大学附属中学体育生在国家及省市各类中学生体育赛事中取得了辉煌的成绩，并为全国各大高校输送了一大批优秀的体育后备人才。为培养更多的体育人才，充分发挥我校体育教育资源的辐射能力，根据市教育局2018年关于特长生招生的有关文件精神，我校今年继续招收有篮球、田径、跆拳道、足球特长的2018年初三毕业学生。 
+
+
+	一、招生类别和计划 
+
+
+	今年计划招收20名体育特长生，具体招收以下专业：男子篮球6名、田径3名、跆拳道3名、男子足球8人。 
+
+
+	二、报考条件 
+
+
+	1.2018年南昌市区初三毕业生。 
+
+
+	2.报考篮球特长生的学生身高不低于175cm。 
+
+
+	三、报名时间、地点和流程 
+
+
+	1.报名时间：2018年4月16日至5月16日下午5:00； 
+
+
+	2.报名地点：南昌大学附属中学政教处； 
+
+
+	3.报名流程：考生报名时，需上交以下材料： 
+
+
+	&nbsp;&nbsp;&nbsp;（1）《南昌市2018年普通高中特长班（生）招生报名表》一式二份（见附件），自行到南昌大学附属中学官网下载填写，贴好一寸免冠近期照片； 
+
+
+	&nbsp;&nbsp;&nbsp;（2）运动员等级证书、所报项目相关成绩证书原件及复印件（没有则不交）； 
+
+
+	&nbsp;&nbsp;&nbsp;（3）身份证或户口的原件（检查）和复印件（上交）； 
+
+
+	&nbsp;&nbsp;&nbsp;（4）《2018年南昌大学附属中学体育特长生考生承诺书》（见附件）。 
+
+
+	四、专业测试时间、安排和要求 
+
+
+	（一）测试内容 &nbsp;&nbsp;&nbsp; 
+
+
+	篮 &nbsp;球：1.助跑摸高；2.往返运球上篮；3.定点投篮；4.实战技术； 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;田 &nbsp;径：1.往返跑；2.100米；3.立定跳远；4.800米； 
+
+
+	跆拳道：1.双飞；2.脚靶技术；3.身体素质；4.实战技术； 
+
+
+	足 &nbsp;球：1.传接球；2.绕杆射门；3.传准；4.实战技术。 
+
+
+	（二）测试安排与要求 
+
+
+	1.测试时间：5月20日上午8：00（田径、跆拳道），下午2:00（篮球、足球）。具体项目测试时间根据《考试手册》安排进行； 
+
+
+	2.测试地点：南昌大学附属中学田径场、足球场，南大南区室内篮球馆； 
+
+
+	3.在市考试院的领导下，由南昌大学附属中学具体组织实施专项考试，测试方法和标准详见《2018年南昌大学附属中学体育特长生测试方法和评分标准》。 
+
+
+	五、专业测试结果认定和公示 
+
+
+	（1）测试完毕考生需立即到结果认定区对测试结果签字认定； 
+
+
+	（2）在市考试院的指导下，测试结果将会在测试结束后一周内公示。 
+
+
+	六、志愿填报要求 
+
+
+	志愿填报时在第一批次重点中学特长生一栏填中写“南昌大学附属中学”。 
+
+
+	七、中考分数要求 
+
+
+	中考成绩不低于南昌大学附属中学2018年统招录取分数线的60%，且中考体育成绩不得低于45分。 
+
+
+	八、录取办法 
+
+
+	以中考成绩不低于南昌大学附属中学2018年统招录取分数线的60%，且中考体育成绩不得低于45分为合格标准，在合格考生中按专业测试成绩从高到低依次排列，篮球录取前6名、田径录取前3名，跆拳道录取前3名，男子足球录取前8名。 
+
+
+	九、其他注意事项 
+
+
+	1.报考田径特长生的考生允许加报单项，但所加报的单项须以上一年省、市中学生田径运动会的比赛项目为准。 
+
+
+	2.我校于5月19日下午5：00将在南昌大学附属中学高中楼二楼202多媒体会议室召开考生及家长会，并发放《2018年南昌大学附属中学体育特长生考试手册》，请考生及家长务必准时参加。 
+
+
+	3.被我校录取后，考生在入校报名时，学校将与考生及家长签定《2018年南昌大学附属中学自主招生管理协议书》，考生入学后如有违反其中相关规定，学校将严格按协议中有关规定进行处理。 
+
+
+	4.本招生简章的最终解释权归属南昌大学附属中学政教处。 
+
+
+	十、联系人及联系方式 
+
+
+	1.学校地址：南昌市青山湖区南京东路236号； 
+
+
+	2.邮编:330047； 
+
+
+	3.网址：http://www.ncdxfz.com/ ； 
+
+
+	4.政教处电话:0791-88327515；  
+
+
+	5.联系人：葛老师：13755790503。&nbsp; 
+
+
+	详情见附件。 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;南昌大学附属中学 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018年4月20日 
+</p>
+                        <span>04/21</span>
+                    </li>
+    			
+					<li>
+                    	<h2>
+                    		<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=1&id=2833">
+                    			
+    							
+    								2018年南昌大学附属中学高一管乐特长生招生简章
+    							
+                    		</a>
+                    	</h2>
+                        <p>  
+	2018年南昌大学附属中学高一管乐特长生招生简章 
+
+
+	&nbsp; 
+
+
+	
+	
+		南昌大学附属中学是江西省唯一一所部省合建大学的附属中学，是江西省重点中学、南昌市名校。学校坐落在学术氛围浓厚、校园环境优美的南昌大学青山湖区校园内。近十年来，南昌大学附中高考成绩不断创造辉煌，已有6位同学考入清华大学和北京大学，已连续十年荣获南昌市高中教学质量管理奖。
+	
+ 
+
+
+	南昌大学附属中学管乐团作为南昌大学附中实施素质教育和艺术教育的核心阵地，致力于增强学生的艺术素养，提高学生的综合素质，一直深受学生的喜爱和家长的推崇。凭借卓尔不凡的成绩和实力，管乐团已经成为全省乃至全国中学艺术教育领域的一颗璀璨的明珠。2014年管乐团获得南昌市中学生艺术大赛器乐类一等奖,2015年获得江西省中学生艺术大赛一等奖第一名，2016年获得全国第五届全国中学生艺术展演二等奖，2017年获得南昌市中学生“魅力校园”比赛舞台器乐一等奖第一名。 
+
+
+	为了培养更多的管乐特长方面的人才，充分发挥我校管乐特长教育资源的辐射能力，根据市教育局2018年关于特长生招生的有关文件精神，我校今年继续招收有管乐特长的2018年初三毕业学生。 
+
+
+	一、招生类别和计划 
+
+
+	根据交响管乐团编制要求,今年计划招收20名管乐特长生，具体招收以下专业：长笛2人、单簧管2人、巴松管2人、萨克斯3人、小号2人、圆号2人、次中音号1人、长号2人、大号1人、打击乐3人。&nbsp; 
+
+
+	二、报考条件 
+
+
+	南昌市2018年初三毕业生。 
+
+
+	三、报名时间、地点和流程 
+
+
+	1. 报名时间：发布之日起至5月25日。 &nbsp;&nbsp;&nbsp; 
+
+
+	2. 报名地点：南昌大学附属中学政教处。 
+
+
+	3. 报名流程：考生报名时，需上交以下材料： 
+
+
+	（1）《2018年南昌大学附属中学管乐特长生招生报名表》一式二份（见附件2）。自行到南昌大学附属中学官网下载填写，贴好2张一寸免冠近期彩色照片。同时还需将电子报名表发至284353136@qq.com邮箱。 
+
+
+	（2）身份证或户口本的原件和复印件。 
+
+
+	（3）《2018年南昌南昌大学附属中学管乐特长生协议书》（见附件3）。 
+
+
+	四、专业测试时间、安排和要求 
+
+
+	1.&nbsp;测试时间：5月26日（星期六）上午8点。 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+
+	2.&nbsp;测试地点：南昌大学附属中学高中楼四楼音乐教室。 
+
+
+	3.&nbsp;测试安排： 
+
+
+	在市考试院的领导下，由南昌大学附属中学具体组织实施专项测试，测试内容和评分标准详见附件1《2018年南昌大学附属中学管乐特长生招生专业测试内容和评分标准》。 
+
+
+	4.&nbsp;测试要求： 
+
+
+	（1）考生需携带准考证入场。 
+
+
+	（2）除马林巴、木琴我校提供外，其他乐器需自行准备。 
+
+
+	（3）考试过程中，考官允许方可发出声音，违规取消测试资格。 
+
+
+	五、专业测试结果认定和公示 
+
+
+	（1）测试完毕考生需立即到结果认定区对测试结果签字认定。 
+
+
+	（2）在市考试院的指导下，测试结果将会在测试结束后一周内公示。 
+
+
+	六、志愿填报要求 
+
+
+	志愿填报时在第一批次重点中学特长生一栏填中写“南昌大学附属中学”。 
+
+
+	七、中考分数要求 
+
+
+	中考成绩不低于我校统招线下100分。 
+
+
+	八、录取办法 
+
+
+	1.以专业测试成绩不低于60分（满分100分），中考成绩不低于我校统招线下100分为合格标准，在合格考生中按专业测试成绩从高到低依次进行录取。 &nbsp;&nbsp;&nbsp;&nbsp; 
+
+
+	2.单项专业未招满时再按专业测试成绩（不分专业）从高到低进行调剂录取，直到录满为止。 
+
+
+	九、其他注意事项 
+
+
+	1.我校于5月25日下午5:30将在南昌大学附属中学高中楼一楼多功能厅召开考生及家长会，请考生及家长务必准时参加。 
+
+
+	2.本招生简章的最终解释权归属南昌大学附属中学政教处。 
+
+
+	十、联系人及联系方式 
+
+
+	1.学校地址：南昌市上海北路与南京东路交界口往北200米。 
+
+
+	2.邮 &nbsp;编:330047。 
+
+
+	3.网址：http://www.ncdxfz.com/ 
+
+
+	4.政教处电话:0791-88327515 &nbsp; 
+
+
+	5.联系人：葛老师：13755790503（政教处） &nbsp;&nbsp;&nbsp; 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp; 
+
+
+	&nbsp; 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+
+	南昌大学附属中学 
+
+
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2018年3月 
+
+
+	
+
+
+	&nbsp; 
+
+
+	附件1 
+
+
+	2018年南昌大学附属中学管乐特长生招生 
+
+
+	专业测试内容和评分标准 
+
+
+	
+ 
+
+
+	一、考试乐器种类：长笛、单簧管、低音单簧管、巴松管、中音萨克斯、次中音萨克斯、低音萨克斯、小号、圆号、次中音号、长号、低音长号、大号、打击乐（小军鼓 马林巴 木琴 爵士鼓） 
+
+
+	二、考试内容 
+
+
+	1.&nbsp;单音模唱（两个八度以内，模唱三个音，需要唱出音名） 
+
+
+	2.&nbsp;音程模唱两个（只需唱出音高即可） 
+
+
+	3.&nbsp;节奏模仿（4/4、4/3、4/2拍节奏型三小节） 
+
+
+	4.&nbsp;现场视奏作品一首，三升、降号以内。 
+
+
+	5.&nbsp;现场口述回答基本乐理一题，内容为交响管乐团排练基础知识或基础音乐理论。 
+
+
+	&nbsp; &nbsp; &nbsp; &nbsp;6.器乐演奏： 
+
+
+	（1）管乐类：不同风格的练习曲、乐曲各一首。（乐器自备） 
+
+
+	（2）打击乐类：小军鼓练习曲一首，马林巴、木琴、爵士鼓三选一乐曲一首。（小军鼓、爵士鼓自备，马林巴、木琴我校提供） 
+
+
+	注：音阶、乐曲必须参照中央音乐学院、上海音乐学院、中国音乐学院考级教材。考试总时长不超过8分钟。 
+
+
+	&nbsp; 
+
+
+	三、评分标准：（满分100分） 
+
+
+	（1）单音模唱（9分）：模唱三个音，每个音3分 
+
+
+	（2）音程模唱（6分）：模唱两组音，每组3分 
+
+
+	（3）节奏模仿（9分）：共模仿三个小节，每个小节3分。 
+
+
+	（4）视奏（8分）：四个小节的乐队片段，每小节2分。 
+
+
+	（5）基本乐理（3分）：口述回答一道问题 
+
+
+	（6）器乐演奏（65分）： 
+
+
+	58－65分：演奏的曲目难度大，演奏方法正确，能自如地掌握好较高的演奏技巧，音准、节奏正确，作品演绎完整、富有感染力。 
+
+
+	46－57分：演奏的曲目难度较大，演奏方法正确，能较好地掌握演奏技巧，音准、节奏正确，作品演绎较完整、富有一定感染力。 
+
+
+	26－45分：演奏的曲目难度一般，演奏方法正确，掌握了一定的演奏技巧，音准、节奏尚好，作品演绎基本完整、具有一定的表现力。 
+
+
+	10－25分：演奏的曲目难度一般，演奏方法基本正确，基本能运用一定的演奏技巧，音准、节奏存在不足，作品演绎尚流畅。 
+
+
+	10分以下：曲目简单，演奏方法不正确，音准、节奏差，不能较完整地演奏一首乐曲。 
+
+
+	&nbsp; 
+
+
+	&nbsp;
+</p>
+                        <span>04/17</span>
+                    </li>
+    			
+					<li>
+                    	<h2>
+                    		<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=1&id=2801">
+                    			
+    								2018年南昌大学教职工子女就读附中初一年级预报名...
+    							
+    							
+                    		</a>
+                    	</h2>
+                        <p>  
+	2018年南昌大学教职工子女就读附中初一年级预报名登记通告
+
+
+	&nbsp;
+
+
+	根据教育部《关于进一步做好小学升入初中免试就近入学工作的实施意见》、《江西省义务教育条例》和《南昌市实施义务教育若干规定》的有关精神以及中共南昌大学委员会办公室、南昌大学校长办公室[2018]15号专题会议纪要，为了做好2018年我校初一年级新生招生工作，按照南昌市教育考试院的具体部署，对今年秋季准备进入我校初一年级就读的教职工子女进行预报名登记，现将有关事项通知如下：
+
+
+	一、登记对象
+
+
+	1.南昌大学本部正式在编教职工子女。
+
+
+	2.南昌大学一附院、二附院、四附院、口腔医院、眼科医院、医科院正式在编职工和在省人社厅备案的聘用医护人员子女。
+
+
+	3.南昌大学校有企业（南昌客车厂&lt;不含下属修理厂&gt;、江南化工厂、江西电子仪器厂、江南电子仪器厂）正式在编职工子女。
+
+
+	4.与南昌大学人事处签订了正式聘用合同的校本部聘用制教职工子女。
+
+
+	5.南昌大学科技学院、软件学院、共青学院、附属中学、附属小学正式聘用且已在南昌大学人事处备案的合同制教职工子女。
+
+
+	6.南昌大学引进的高层次人才子女。
+
+
+	7.南昌大学本部在编教职工（含离退休）第三代。
+
+
+	二、网上预报名登记
+
+
+	上述所有登记对象务必在通告发布一周内登录南昌大学附中官网进行网上摸底登记，操作如下：
+
+
+	1.登录附中网站：http：//www.ncdxfz.com，点击首页“小升初摸底登记”（浮动图标）。
+
+
+	2.按要求填写登记表、将所需材料原件拍成清晰照片上传、确认并提交登记表。
+
+
+	3.所需照片材料如下：
+
+
+	（1）户口本上教职工姓名所在页及孩子姓名所在页。
+
+
+	（2）若教职工户口与孩子的户口不在同一本户口本上的，必须提供户口所在地的派出所开具的关系证明材料。
+
+
+	（3）大学本部在编教职工及附属单位在编的教职工还需提供工作证，如无工作证则需提供南昌大学人事处开具的工作证明。
+
+
+	（4）上述登记对象中涉及到聘用制的教职工还需提供聘用合同、省人社厅或南昌大学人事处备案的证明材料以及半年以上的工资流水账单（需银行盖章）。
+
+
+	（5）南昌大学引进的高层次人才还需提供南昌大学人事处的证明材料。
+
+
+	（6）南昌大学本部在编教职工（含离退休）第三代还需提供工作证或南昌大学退休办开具的职工证明材料。
+
+
+	三、注意事项
+
+
+	1.南昌大学本部在编教职工（含离退休）第三代因受招生政策限制，附中只能先进行摸底登记，积极向上争取政策，努力做好服务工作。
+
+
+	2.如上述登记对象有因户口或房产所在地可选择其它学校就读的，则请家长务必考虑清楚，是否确定通过南昌大学教职工子女身份的途径进入我校学习。如果确定通过地段选择其他学校就读，则不能交材料到我校登记报名，因为我校报名登记的数据一旦确认上报了教育局就不能选择其它学校。
+
+
+	3.如上述登记对象未在我校规定时间上交材料登记报名，南昌市教育考试院将不予录取，无法办理学籍档案，后果由家长自己承担。
+
+
+	4.请家长保证所登记手机处于开通状态，以便接听学校电话或接收短信通知。
+
+
+	四、材料审核
+
+
+	1.南昌大学本部正式在编教职工子女：
+
+
+	请家长于4月23日持户口本的原件及复印件、打印的学生全国电子学籍（需加盖毕业学校公章）的原件及复印件以及工作证的原件及复印件到附中高中楼一楼政教处审核材料。
+
+
+	2.上述登记对象中的第2、3、5类的教职工子女：
+
+
+	（1）先在本单位报名，再由单位统一于4月24日下午15点将汇总名单（需加盖南昌大学人事处公章）交附中政教处。
+
+
+	（2）请各单位有关负责人于4月24日下午15点准时到附中高中楼四楼会议室参加招生工作会议。
+
+
+	（3）请家长于4月25日持户口本的原件及复印件、打印的学生全国电子学籍（需加盖毕业学校公章）的原件及复印件、工作证的原件及复印件；聘用合同、省人社厅或南昌大学人事处备案的证明材料以及半年以上的工资流水账单（需银行盖章）到附中高中楼一楼政教处审核材料。
+
+
+	3.与南昌大学人事处签订了正式聘用合同的校本部聘用制教职工子女：
+
+
+	请家长于4月25日持户口本的原件及复印件、打印的学生全国电子学籍（需加盖毕业学校公章）的原件及复印件，聘用合同、南昌大学人事处备案的证明材料以及半年以上的工资流水账单（需银行盖章）到附中高中楼一楼政教处审核材料。
+
+
+	4.南昌大学引进的高层次人才子女：
+
+
+	请家长于4月25日持户口本的原件及复印件、打印的学生全国电子学籍（需加盖毕业学校公章）的原件及复印件以及南昌大学人事处的证明材料到附中高中楼一楼政教处审核材料。
+
+
+	5.南昌大学本部在编教职工（含离退休）第三代：
+
+
+	（1）请家长于4月26日上午8点持户口本的原件及复印件、打印的学生全国电子学籍（需加盖毕业学校公章）的原件及复印件以及工作证或退休办开据的职工证明材料到附中高中楼一楼政教处审核材料。
+
+
+	（2）请家长于4月26日上午10点准时到附中高中楼二楼202多媒体教室参加家长会。
+
+
+	五、联系电话
+
+
+	政教处：88327515
+
+
+	葛老师：13755790503
+
+
+	周老师：15979052378
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+	&nbsp;
+
+
+	南昌大学附属中学
+
+
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 2018年4月11日
+</p>
+                        <span>04/11</span>
+                    </li>
+    			
+					<li>
+                    	<h2>
+                    		<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=1&id=2666">
+                    			
+    							
+    								招聘启事
+    							
+                    		</a>
+                    	</h2>
+                        <p>  
+	招聘启事
+
+
+	因学校发展需要，经校班子会研究决定，现面向社会公开招聘一名课堂教学录播、编辑技术人员。
+
+
+	一、应聘条件：
+
+
+	1.熟悉常见课堂教学录制软件，能胜任后期编辑工作。
+
+
+	2.熟悉教育部“一师一优课”“一课一名师”活动课堂录制以及省市骨干教师评选课堂教学录制要求，并能完成相关录制及编辑工作。
+
+
+	3.同等条件下，有教师资格证者优先。
+
+
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;二、应聘方式：
+
+
+	报名者请将个人简历及相关资料（身份证、毕业证、教师资格证、职称证、获奖证书等复印件）面投至南昌大学附属中学一楼校办。
+
+
+	外地应聘者可将以上电子资料发至电子邮箱634441027@qq.com或者邮寄至学校。
+
+
+	三、应聘程序：
+
+
+	1.报名时间：2018年2月6日—2018年3月16日
+
+
+	2.录用程序：报名时间截止后，学校将统一组织现场课堂录制考核竞聘。考核通过后，试用半年。
+
+
+	3.试用期后考核办法：学校组织“一师一优课”“一课一名师”活动录课教师以及各类评选活动录课教师评价，获多数好评者，报校班子会研究决定正式录用。
+
+
+	&nbsp;四、待遇：
+
+
+	&nbsp;试用期内享受学校代课老师待遇；试用期后经考核合格者签订学校A类合同，享受A类合同教职工待遇。
+
+
+	&nbsp;五、联系方式：
+
+
+	1.联系电话：邓老师 &nbsp;18676859523 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;胡老师 &nbsp;13672227268
+
+
+	2.邮寄地址：南昌市南京东路235号南昌大学附属中学校办 &nbsp; &nbsp; &nbsp;邮编：330027
+
+
+	&nbsp;
+
+
+	南昌大学附属中学
+
+
+	2018年2月6日
+</p>
+                        <span>02/06</span>
+                    </li>
+    			
+            	<div class="news-more"><a href="/portlet/dcinfotagpagelist.view?wf_ID=72&wf_Tag=1">查看更多</a></div>
+            </div>
+            
+            <div class="news-main-l-con">
+            	<ul>
+                    
+                    	<li>
+                    		<h2>
+                    			<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=3&id=2995">
+                    				
+    								
+    									喜报
+    								
+                    			</a>
+                    		</h2>
+                        	<p>
+	
+		
+			
+				
+			
+		
+	
+	
+		
+	
+</p>
+                        	<span>05/28</span>
+                    	</li>
+    				
+                    	<li>
+                    		<h2>
+                    			<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=3&id=2989">
+                    				
+    									火红的五月，火红的青春——记“红五月”校园社团文化...
+    								
+    								
+                    			</a>
+                    		</h2>
+                        	<p>
+	本网讯（学生记者褚嘉雯）人间四月芳菲尽，火红五月情更浓。走进五月，如同走进熊熊燃烧的火焰，如同走进火红的世界，如同走进火红的青春。根据我校2018年红五月校园文化艺术节活动精神，校团委于5月21日至25日开展了“红五月”社团文化活动周。
+
+
+	此次展示活动分别由汉文化社、动漫社、广播社、流行音乐社、航模社、钢琴社、志愿者协会、街舞社等承担。他们带来了图书展示、动漫人物cosplay、现场live表演、海报展板、趣味活动等主题多样的展示。这些展示不仅让同学们大饱眼福，了解到了许多知识，观赏了一场场视听盛宴，还通过一些小游戏让同学亲身参与到活动之中，极大丰富了我们的校园文化，展示了我们的社团风采。在这些校园社团的带领下，在这个火红的青春里，我们留下了火红的记忆！
+
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+		
+	
+
+
+
+	
+
+</p>
+                        	<span>05/27</span>
+                    	</li>
+    				
+                    	<li>
+                    		<h2>
+                    			<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=3&id=2988">
+                    				
+    								
+    									2018年南昌市足球嘉年华在我校顺利举办
+    								
+                    			</a>
+                    		</h2>
+                        	<p>
+	
+		&nbsp;&nbsp;&nbsp; 本网讯（校足球办）为更好贯彻落实南昌市教育局关于开展南昌市首届中小学生“三大球”嘉年华活动，弘扬足球文化精神，发挥足球育人功能，丰富学生校园生活，我校承办了2018年南昌市足球嘉年华活动。
+	
+	
+		&nbsp;&nbsp;&nbsp; 本次活动共计八个游戏项目，团队项目四个，包括绿茵好拍档、极速前进、2v2斗牛赛、机器人世界杯；个人项目四个，包括过人我最溜、挑战不可能、VR搞笑空间、挑战磁悬浮等。
+	
+	
+		&nbsp;&nbsp;&nbsp; 在校领导和老师们的带领下，我校学生踊跃报名，积极响应，参加的同学在场上都发挥出了自己的技战术水平，表现优秀。一天的活动时间过去了，同学们还意犹未尽。
+	
+	
+		&nbsp;&nbsp;&nbsp; 活动充分展现了我校作为全国青少年校园足球特色学校的良好足球氛围，以及学校对学生课余兴趣爱好的重视，展示了附中学子良好的精神风貌。 
+	
+	
+		
+	
+	
+		 
+		
+			 
+		
+		
+			
+
+		
+		
+			 
+		
+		
+			
+
+		
+		
+			 
+		
+		
+			
+
+		
+		
+			 
+		
+		
+			
+
+		
+		
+			
+				&nbsp;
+&nbsp;
+			
+		</p>
+                        	<span>05/25</span>
+                    	</li>
+    				
+                    	<li>
+                    		<h2>
+                    			<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=3&id=2977">
+                    				
+    									我校隆重举行2018年新团员入团仪式暨“五四”评优...
+    								
+    								
+                    			</a>
+                    		</h2>
+                        	<p>
+	本网讯（团委）为促进团员队伍建设，增强共青团团员对团组织的神圣感、荣誉感、归属感，5月24日下午，我校在202多媒体教室举行2018年新团员入团仪式暨“五四”评优表彰活动。南昌大学团委副书记熊宁佳，南昌大学附属中小学党总支副书记吴银枝，杜秋华副校长，团委书记葛春华，团委副书记周华荣、黄丹和团委付祎、周开财老师以及部分新老团员参加了本次仪式。仪式由付祎老师主持。 
+
+
+	  
+	
+		 
+	
+	
+		
+	
+	
+		仪式在嘹亮的国歌声中开始。首先，南昌大学团委副书记熊宁佳代表南昌大学团委对新团员表示祝贺。她引用习近平总书记在十九大会议上强调的“青年兴则国家兴，青年强则国家强”，告诫广大团员青年要刻苦学习，树立高尚情操，用实际行动为团旗增添色彩，为祖国的发展而努力奋斗。 
+	
+	
+		  
+		
+			 
+		
+		
+			
+		
+		
+			 
+		
+		
+			
+		
+		
+			接着，附中团委副书记周华荣宣读新团员名单。各位领导和老团员代表为新团员佩戴闪耀夺目的团徽，在高二（9）班闵芮同学的带领下，新团员面向鲜红团旗，紧握右拳，庄严宣誓，老团员跟着一起重温入团誓词。大家坚定的目光和铮铮的誓言展现出共青团员积极向上的活力和朝气。 
+		
+		
+			  
+			
+				 
+			
+			
+				
+			
+			
+				
+			
+			
+				  
+				
+					 
+				
+				
+					
+				
+				
+					  
+					
+						 
+					
+					
+						
+					
+					
+						  
+						
+							 
+						
+						
+							
+						
+						
+							宣誓完毕，新团员代表高一（6）班段博文发言。他表示今后要时刻以一名优秀共青团员的标准要求自己，要以大无畏的姿态去攻坚克难，更加努力向上，全面发展，用实际行动践行自己的誓言。 
+						
+						
+							  
+							
+								 
+							
+							
+								
+							
+							
+								老团员代表高二（9）班单艺发言。她代表老团员欢迎新团员的加入，告诉新团员应在团组织的领导下，努力学习，以身作则，为班级和学校努力争光，为社会和国家做出自己的贡献。 
+							
+							
+								  
+								
+									 
+								
+								
+									
+								
+								
+									之后，附中团委书记葛春华宣布优秀团员、优秀团干和优秀团支部的名单。各位领导给获奖者代表颁发荣誉证书并对他们表示祝贺和鼓励。 
+								
+								
+									  
+									
+										 
+									
+									
+										
+									
+									
+										  
+										
+											 
+										
+										
+											
+										
+										
+											 
+										
+										
+											
+										
+										
+											
+												 
+											
+											
+												
+											
+											
+												仪式最后，杜秋华副校长讲话。他首先对新团员和获奖同学表示祝贺，对南昌大学团委的关心表示感谢。接着对全体团员提出了要求和殷切期望。他希望新团员能更加卓尔不凡，做一个努力学习的人、有理想的人、有道德的人。全体团员要坚决遵守团的章程，遵守校规校纪，感恩父母和老师，热爱班级和学校，培养健全人格和高尚情操，做一个好公民，做一个真正的共青团员。 
+											
+											
+												  
+												
+													 
+												
+												
+													
+ 
+												
+												
+													&nbsp;
+												
+												
+													在雄浑的团歌《光荣啊，中国共青团》中，我校2018年新团员入团仪式落下了帷幕。希望新团员以入团为新的起点，发挥先锋楷模作用，努力学习，不负期望，让胸前的团徽熠熠生辉。 
+												</p>
+                        	<span>05/24</span>
+                    	</li>
+    				
+                    	<li>
+                    		<h2>
+                    			<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=3&id=2969">
+                    				
+    									程晓杰校长应邀为江西省教育厅第八期高中校长高级研修...
+    								
+    								
+                    			</a>
+                    		</h2>
+                        	<p>
+	本网讯（校办）5月23日下午，校长、正高级特级教师程晓杰应邀前往南昌师范学院，为江西省教育厅第八期高中校长高级研修班作了《更新观念与时俱进，开拓创新铸造品牌》精彩专题讲座。来自全省十七个地市县的50余位高中校长学员聆听了讲座。 
+
+
+	程校长在讲座中深入阐述了自己对校长角色的思考认识，详尽论述了校长的职责使命、方向目标和工作方法，提出“校长要懂得与时俱进，善于因地制宜，找准本校的发展突破口，打造学校办学特色，实现弯道超车”的观点，给大家以深刻的启发。随后，程校长结合我校信息化特色发展的实际案例，介绍了我校更新观念因地制宜选择信息化特色发展之路的历史背景和实践过程，重点分享了我校信息化“良好的氛围”“核心成果IS平台”“开放共享”等三点特色和取得的显著效果，给大家提供了切实的指导。 
+
+
+	讲座间隙，程校长还与校长学员们进行了深入的互动交流，分享了自己的几点心得体会，引起了大家深深的共鸣。一是更新观念，与时俱进；二是因地制宜，找准方向；三是创新作为，打造特色；四是完善制度，规范管理；五是重视学习，提高修为。整场讲座，既有校长管理智慧和领导艺术的理论阐述，又有学校特色发展的经验交流，内容丰富，紧贴实际，务实而具有指导性。
+
+
+	江西省高中校长高级研修班由江西省教育厅举办、江西省教育干部培训中心承办，培训对象为全省已经取得相应培训合格证书的高中校长。研修班旨在提升高中校长贯彻执行党和国家教育方针政策、组织实施素质教育的能力，造就一批政治坚定、业务精湛、作风过硬的高水平、专业化高中校长队伍，促进我省高中教育的改革和发展。 
+
+ 
+
+	 
+
+
+	
+
+
+	
+		 
+	
+	
+		
+	
+ 
+	
+		
+ 
+	</p>
+                        	<span>05/24</span>
+                    	</li>
+    				
+                    	<li>
+                    		<h2>
+                    			<a href="/portlet/dcdetailinfo.view?wf_ID=2&wf_Tag=3&id=2967">
+                    				
+    								
+    									学校召开教职工大会
+    								
+                    			</a>
+                    		</h2>
+                        	<p>
+	本网讯（校办）5月22日下午，学校在202召开全校教工大会。会议组织开展了师德师风专题学习，部分教师作了经验分享，相关部门作了工作总结和布置。程晓杰校长作总结讲话，杜秋华副校长主持会议。 
+
+
+	党总支副书记吴银枝在会上传达了江西省教育厅（赣教办字【2018】18号文件——《关于印发〈全省师德建设长效机制贯彻落实专项督查工作方案〉的通知》文件精神，并带领大家认真学习了《江西省教育系统“红包”治理“十不准”》和《江西省中小学教师违反职业道德行为处理实施办法（试行）》。吴银枝同志强调，全体教职工要进一步统一思想，提高认识，严格遵守教师职业道德规范，爱岗敬业，规范从教，严禁参与有偿家教，严禁收受红包，严禁体罚、或变相体罚学生行为，消除慵懒散现象，并强调：接下来学校会开展师德师风自查自纠工作，如发现教师有违纪行为，严格按相关文件加以处理。 
+
+
+	紧接着刚评选出的南昌大学附属中学2018年度教师乐盛民、年度教师提名奖获得者付祎、赵静辉等三位教师分别发言，分享了自己对教育之美的认识。三位老师或正面抒发对教育美的认识，慷慨激昂；或讲述自己对教育美的执着求索历程，娓娓道来；或阐述教育“不美”成就教育大美的观点，独辟蹊径。精彩分享给大家以深刻的触动和启发。 
+
+
+	教务处周加丰主任和政教处葛春华主任分别就本部门新学期以来的常规工作作了总结和通报，并就后续工作提出要求。 
+
+
+	程晓杰校长作总结讲话。他细致梳理总结了本学期以来全校取得的各项成绩和所做的大量创新工作，充分肯定了全体老师的爱岗敬业和学校各项管理工作的日趋规范。他强调，学校的发展已经得到了社会各界的高度肯定。在南昌大学进入部省合建大学行列的新的历史时期，大家要充分认清形势和机遇，牢记职责和使命，全体干部要进一步发挥带头作用形成“头雁效应”，全体教职工要进一步加强团结协作形成合力，上下一心，鼓足干劲，以强烈的主人翁意识，发扬南昌大学附属中学多年来形成的“团结、纪律、科学、吃苦”的优良传统，在机遇和挑战并存的历史过程中，做好每一件平凡的事情，成就南昌大学附属中学源源不断的新辉煌。 
+
+ 
+
+	 
+
+
+	
+
+
+	 
+
+
+	
+
+
+	 
+
+
+	
+
+
+	 
+
+
+	
+
+
+	 
+
+
+	
+
+
+	 
+
+
+	
+
+
+	 
+
+
+	
+
+
+	
+		 
+	
+	
+		
+	
+ 
+	
+		
+	</p>
+                        	<span>05/23</span>
+                    	</li>
+    				
+                </ul>
+            	<div class="news-more"><a href="/portlet/dcinfotagpagelist.view?wf_ID=44&wf_Tag=3">查看更多</a></div>
+            </div>
+            
+        	
+        </div>
+        
+        
+        
+        
+  		<div class="news-main-r">
+  		   <div class="s-login"  id="tabmain4">
+            	<div class="login-before"> 
+                      <div class="s-login-tit">
+                           <span class="curr">二维码登录</span>
+                           <span class="">IS平台登录</span>
+                      </div>
+		              <form name="userForm" id="userForm" method="post" action="http://ispt.com.cn:7085/isschool/commons/logindirect.view">
+			     	  		<div class="s-login-con" >
+				            	<div class="login-qrcode"><div id="showpng"></div> <div id="qrcodeshow"><p style=" margin-top:5px;">手机端扫描二维码登录</p><p><span id="span">300</span>秒之后失效</p></div></div> 
+				            </div>
+			                <div class="s-login-con" >
+			                	<div class="login-left">
+					            	 <div class="s-login-input">
+					                    <label>
+					                    	<span class="login-user-icon"> </span>
+					                   		<input name="userid" id="userid" type="text" class="login-name"  value="请输入IS平台登录账号"/>
+					                    </label>
+					                    <label>
+					                    	<span class="login-pasd-icon"> </span>
+					                    	<input name="password" id="password" type="password"  style="display: none;">
+						  					<input name="showPwd" id="showPwd" type="text" class="login-psd"  value="请输入IS平台登录密码" onKeyDown="changeFocus()">
+						  					<input type="hidden" name="sl_id" id="sl_id" value="9"/>
+											<input type="hidden" name="tp" id="tp" value="1"/>
+					                   </label>
+				                	</div>
+			                 		<div class="s-login-r"><a target="_blank" href="http://ispt.com.cn:7085/isschool/getPassword.view?sl_id=9&url=000008" class="forget-pasd">找回密码？</a><a href="javascript:void(0);" onClick="submitForm()" class="login-btn">登&ensp;&ensp;&ensp;录</a></div>
+			                 	</div>
+			                 	<div class="login-right">
+                                 	<div class="login-code">
+                                        <img src="/newWeb/images/ewm3.png" width="115" height="115">
+                                        <p>下载IS平台手机端</p>
+                                        <span onclick="window.open('http://ispt.com.cn/APP/computer.html','_blank')"><i><img src="/newWeb/images/download.png">点击下载 </i></span> 
+                                     </div>
+                                 </div>
+			               </div>
+		             </form>
+            	</div>
+            </div>
+        	<ul>
+            	<li>
+                	<a href="http://ispt.com.cn/000008/" target="_blank">
+                        <span class="n-r-icon1"> </span>
+                        <p>南大附中智慧校园平台</p> 
+                    </a>
+                </li>
+                <li>
+                	<a href="/portlet/dcinfopagelist.view?wf_ID=105">
+                        <span class="n-r-icon2"> </span>
+                        <p>名师讲堂</p> 
+                    </a>
+                </li>
+                <li>
+                	<a href="http://www.islearn.cn/" target="_blank">
+                        <span class="n-r-icon3"> </span>
+                        <p>IS在线学习网</p> 
+                    </a>
+                </li>
+                <li>
+                	<a href="http://lib.ncu.edu.cn/" target="_blank">
+                        <span class="n-r-icon4"> </span>
+                        <p>校内图书馆</p> 
+                    </a>
+                </li>
+            </ul>
+            
+        
+        </div>
+        
+	</div>
+ 	
+ </div>
+    
+    
+    
+    
+    
+    <div class="footer">
+    	<div class="foot">
+        	<div class="f-l">
+            	<span><img src="/newWeb/images/f-logo.png"></span>
+                <p>地址：南昌市南京东路236号  &ensp;  电话：0791-82020888</p>
+				<p>COPYRIGHT &copy;<script>document.write( new Date().getFullYear() );</script> 版权所有:南昌大学附属中学&nbsp;&nbsp;技术支持：<a href="http://www.xuechuankj.com" target="_blank">学川科技</a></p>
+            </div>
+            
+            <div class="f-qrcode"><img src="/newWeb/images/qrcode.jpg"></div>
+            
+            <div class="f-link">
+            	<li class="none"><a href="#"><span>校外友情站点导航</span><img src="/newWeb/images/img10.jpg"></a>
+                	<div>
+                   	 	<a href="http://www.jxedu.gov.cn/" target="_blank">江西教育网</a>
+                   	 	<a href="http://www.ncu.edu.cn/" target="_blank">南昌大学</a>
+                        <a href="http://oa.ncu.edu.cn/" target="_blank">南昌大学OA系统</a>
+                   	 	<a href="http://jiangxi.schoolzs.com/" target="_blank">江西高招信息网</a> 
+                    </div>
+                </li>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+</body>
+</html>

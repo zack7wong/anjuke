@@ -1,0 +1,666 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>大连市第二十三中学</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--[if lte IE 6]>
+<script>
+	window.location.href = 'ie6.html';
+</script>
+<![endif]-->
+<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script><!--焦点图js-->
+<script type="text/javascript" src="/js/koala.min.1.5.js"></script><!--焦点图js-->
+<script type="text/javascript" src="/js/jsx.js"></script><!--焦点图js-->
+
+	<!--图片轮播js-->
+	<script src="/js/jquery.img_silder.js"></script>
+	<script>
+		$(function(){
+			$('#silder').imgSilder({
+				s_width:288, //容器宽度
+				s_height:246, //容器高度
+				is_showTit:true, // 是否显示图片标题 false :不显示，true :显示
+				s_times:3000, //设置滚动时间
+				css_link:'/css/style.css'
+			});
+		});
+	</script>
+</head>
+<body>
+  <div id="img1" style="Z-INDEX: 10000; LEFT: 2px; WIDTH: 59px; POSITION: absolute; TOP: 43px; HEIGHT: 61px; 
+visibility: visible;">
+   <a href="http://www.dl23zx.com:8686/Pharos/InfomationRegistration" target="_blank"><img src="/d/file/xwzx/tzgg/2017-03-26/1e187088646ff70f0eae9b9bd742f058.png" width="228" height="128" border="0" /></a>
+  </div>
+<script> 
+var xPos = 0; 
+var yPos = 0; 
+var step = 1; 
+var delay = 30; 
+var height = 0; 
+var Hoffset = 0; 
+var Woffset = 0; 
+var yon = 0; 
+var xon = 0; 
+var pause = true; 
+var interval; 
+img1.style.top = yPos; 
+function changePos() 
+{ 
+width = document.body.clientWidth; 
+height = document.body.clientHeight; 
+Hoffset = img1.offsetHeight; 
+Woffset = img1.offsetWidth; 
+img1.style.left = xPos + document.body.scrollLeft; 
+img1.style.top = yPos + document.body.scrollTop; 
+if (yon) 
+{yPos = yPos + step;} 
+else 
+{yPos = yPos - step;} 
+if (yPos < 0) 
+{yon = 1;yPos = 0;} 
+if (yPos >= (height - Hoffset)) 
+{yon = 0;yPos = (height - Hoffset);} 
+if (xon) 
+{xPos = xPos + step;} 
+else 
+{xPos = xPos - step;} 
+if (xPos < 0) 
+{xon = 1;xPos = 0;} 
+if (xPos >= (width - Woffset)) 
+{xon = 0;xPos = (width - Woffset); } 
+} 
+
+function start() 
+{ 
+img1.visibility = "visible"; 
+interval = setInterval('changePos()', delay); 
+} 
+function pause_resume() 
+{ 
+if(pause) 
+{ 
+clearInterval(interval); 
+pause = false;} 
+else 
+{ 
+interval = setInterval('changePos()',delay); 
+pause = true; 
+} 
+} 
+start(); 
+</script>  
+
+
+
+	<!--top开始-->
+<div class="top">
+	<!-- 代码 开始 -->
+<div id="fsD1" class="focus">  
+	<div id="D1pic1" class="fPic">
+		
+<div class="fcon" style="display: none;"><a href="javascript:void(0)"><img src="/d/file/banner/2015-03-02/a6f8eeb30c080260837c016c7cdddbd3.jpg"/></a></div>
+
+<div class="fcon" style="display: none;"><a href="javascript:void(0)"><img src="/d/file/banner/2015-03-02/a0672ed92abe7231741307cf22e87657.jpg"/></a></div>
+
+<div class="fcon" style="display: none;"><a href="javascript:void(0)"><img src="/d/file/banner/2015-03-02/5a38d661170ae1d3c0893791c0f340c8.jpg"/></a></div>
+	</div>
+	<div class="fbg" style="display:none;">  
+		<div class="D1fBt" id="D1fBt">  
+		<a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>1</i></a>  
+		<a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a>  
+		<a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>3</i></a>  
+		<a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a>  
+		</div>  
+	</div>  
+</div> 
+<!--焦点图js--> 
+<script type="text/javascript">
+	Qfast.add('widgets', { path: "/js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+	Qfast(false, 'widgets', function () {
+		K.tabs({
+			id: 'fsD1',   //焦点图包裹id  
+			conId: "D1pic1",  //** 大图域包裹id  
+			tabId:"D1fBt",  
+			tabTn:"a",
+			conCn: '.fcon', //** 大图域配置class       
+			auto: 1,   //自动播放 1或0
+			effect: 'fade',   //效果配置
+			eType: 'click', //** 鼠标事件
+			pageBt:true,//是否有按钮切换页码
+			bns: ['.prev', '.next'],//** 前后按钮配置class                          
+			interval: 5000  //** 停顿时间  
+		}) 
+	})  
+</script>
+<div class="top_1">
+	<div class="logo"><img src="/images/logo.png" width="707" height="94" /></div>
+	<div class="t_right">
+		<ul>
+			<li><script src="/e/member/login/loginjs.php"></script></li>
+			<li><a href="javascript:void(0)" title="设为首页" onclick="SetHome(window.location)">设为首页</a></li>
+			<li><a href="javascript:void(0)" title="加入收藏" onclick="AddFavorite(window.location,document.title)">加入收藏</a></li>
+		</ul>
+	</div>
+</div>
+	<link href="/css/zzsc.css" rel="stylesheet" type="text/css" /><!--导航css-->
+<script language="javascript" type="text/javascript" src="/js/zzsc.js"></script><!--导航js-->
+<div id="menu">
+<ul id="nav">
+    <li class="mainlevel">
+    <span class="note"><a href="/" title="">网站首页</a></span></li> 
+    <li class="mainlevel" id="mainlevel_01"><a href="/xxgk/1.html">学校概况</a>
+    	<ul>
+    		<span class="Triangle_con"></span>
+    		<li><a href="/xxgk/1.html">校长寄语</a></li>
+    		<li><a href="/ldtd">领导团队</a></li>
+    		<li><a href="/xxgk/3.html">办学理念</a></li>
+    		<li><a href="/xxgk/6.html">办学特色</a></li>
+    		<li><a href="/xyfg">校园风光</a></li>
+    		</ul>
+    </li>
+    <li class="mainlevel" id="mainlevel_02"><a href="/szdw/msfc">师资队伍</a>
+    	<ul>
+    		<span class="Triangle_con"></span>
+    		<li><a href="/szdw/jyz">教研组建设</a></li>
+    		<li><a href="/szdw/msfc/">名师风采</a></li>
+    	</ul>
+    </li> 
+    <li class="mainlevel"><a href="/xwzx/xysd">新闻中心</a>
+    	<ul>
+    		<span class="Triangle_con"></span>
+    			<li><a href="/xwzx/xysd">校园速递</a></li>
+    			<li><a href="/xwzx/tzgg">通知公告</a></li>
+    	</ul>
+    </li>
+    <li class="mainlevel"><a href="/zkzl/zkzx">招考专栏</a><!--input an em tag as a space,IE is gread need-->
+    	<ul>
+    		<span class="Triangle_con"></span>
+    			<li><a href="/zkzl/zkzx">中考咨询</a></li>
+    			<li><a href="/zkzl/gkzx">高考咨询</a></li>
+    	</ul>
+    </li>
+    <li class="mainlevel"><a href="/jxky/xkjx">教学科研</a>
+    	<ul>
+    		<span class="Triangle_con"></span>
+    		<li><a href="/jxky/xkjx">学科教学</a></li>
+    		<li><a href="/jxky/jyhd">教研活动</a></li>
+    		<li><a href="/jxky/stbk">试题宝库</a></li>
+    		<li><a href="/jxky/jyxx">教育信息</a></li>
+    	</ul>
+    </li>
+    <li class="mainlevel"><a href="/a/bzrgz">德育管理</a>
+    	<ul>
+    		<span class="Triangle_con"></span>
+    		<li><a href="/a/bzrgz">班主任工作</a></li>
+    		<li><a href="/a/zzgl">自主管理</a></li>
+    		<li><a href="/a/dyjt">德育讲堂</a></li>
+    		<li><a href="/a/cggl">常规管理</a></li>
+    	</ul>
+    </li>
+    <li class="mainlevel"><a href="/dtjs/djgz">党团建设</a>
+    	<ul>
+    		<span class="Triangle_con"></span>
+    		<li><a href="/dtjs/djgz">党建工作</a></li>
+    		<li><a href="/dtjs/dyfc">党员风采</a></li>
+            <li><a href="/dtjs/gqt">共青团</a></li>
+    		<li><a href="/dtjs/ghhd">工会活动</a></li>
+    	</ul>
+    </li>
+    <li class="mainlevel"><a href="/xxpd/tshd">学生频道</a>
+    	<ul>
+    		<span class="Triangle_con"></span>
+    		<li><a href="/xxpd/tshd">特色活动</a></li>
+    		<li><a href="/xxpd/shjy">生活剪影</a></li>
+            <li><a href="/xxpd/xzfc">学子风采</a></li>
+    		<li><a href="/xxpd/wymb">文苑漫步</a></li>
+    	</ul>
+    </li>
+    <li class="mainlevel"><a href="/e/tool/gbook/?bid=1">家校互联</a>
+    	<ul>
+    		<span class="Triangle_con"></span>
+    		<li><a href="/e/tool/gbook/?bid=1">留言</a></li>
+    	</ul>
+    </li>
+</ul>
+</div>
+</div>
+<!--top全部结束-->
+<div class="clera"></div>
+	<!--middle开始-->
+	<div class="middle">
+		<!--middle_b开始-->
+		<div class="middle_b">
+			<div class="b_left">
+				<div class="silder" id="silder" style="position:relative;">
+					<ul class="silder_list" id="silder_list">
+						
+<li><a href="http://test.dl23zx.com/xyfg/"><img src="/d/file/xwzx/slide/2015-04-03/f8eae4383bceb16577c25cea46b3d461.jpg" border="0" alt="春意盎然的校园" width="287" height="244"></a></li>
+
+<li><a href="http://test.dl23zx.com/xyfg/"><img src="/d/file/xwzx/slide/2015-04-03/04838f53af27e6fda8303e80e3362692.jpg" border="0" alt="博学而笃志，切问而近思" width="287" height="244"></a></li>
+					</ul>
+					<div style="width:100%; height:30px; position:absolute; bottom:0px; background:rgba(255,255,255,0.2); z-index:9999;"></div>
+				</div>
+			</div>
+			<div class="b_center">
+				<div id="tab">
+			<h3 class="up" id="two1" onmouseover="setContentTab('two',1,4)"><a href="/xwzx/xysd">校园速递</a></h3>
+			<div class="block" id="con_two_1">
+				<ul>
+					
+<li><a class="tab_title" href="/xwzx/xysd/2073.html" title="梦想启航，青春绽放——记2018届高三成人仪式暨拓展活动">梦想启航，青春绽放——记2018届高三成人仪式暨拓展</a><span>[05-21]</span></li>
+
+<li><a class="tab_title" href="/xwzx/xysd/2071.html" title="【特别策划】本周六我校将召开初升高招生公益讲座，欢迎大家参观、咨询">【特别策划】本周六我校将召开初升高招生公益讲座</a><span>[05-15]</span></li>
+
+<li><a class="tab_title" href="/xwzx/xysd/2067.html" title="2018年23中学艺术特长生招生方案">2018年23中学艺术特长生招生方案</a><span>[05-15]</span></li>
+
+<li><a class="tab_title" href="/xwzx/xysd/2065.html" title="2018大连市第二十三中体育特长生方案">2018大连市第二十三中体育特长生方案</a><span>[05-15]</span></li>
+
+<li><a class="tab_title" href="/xwzx/xysd/2063.html" title="高三，一定要笑到最后，笑得最美！">高三，一定要笑到最后，笑得最美！</a><span>[05-14]</span></li>
+
+<li><a class="tab_title" href="/xwzx/xysd/2060.html" title="【喜报】我校学子在第二届全国中小学生经典阅读行动决赛中喜获佳绩">【喜报】我校学子在第二届全国中小学生经典阅读行</a><span>[05-14]</span></li>
+
+<li><a class="tab_title" href="/xwzx/xysd/2058.html" title="【国旗下的演讲】用思辩精神做人，用辩论方式做事 校辩论社">【国旗下的演讲】用思辩精神做人，用辩论方式做事 </a><span>[05-14]</span></li>
+				</ul>
+			</div>
+			<h3 id="two2" onmouseover="setContentTab('two',2,4)"><a href="/xxpd/tshd">特色活动</a></h3>
+			<div id="con_two_2">
+				<ul>
+					
+<li><a class="tab_title" href="/xxpd/tshd/1955.html" title="【人生规划课】不管世界怎么变，我要做个好人——国家一级导演杨道立教授为我校师生作专题报告">【人生规划课】不管世界怎么变，我要做个好人——国</a><span>[11-27]</span></li>
+
+<li><a class="tab_title" href="/xxpd/tshd/1909.html" title="【精彩瞬间第二弹】记大连市第二十三中学2017年秋季运动会">【精彩瞬间第二弹】记大连市第二十三中学2017年秋</a><span>[10-12]</span></li>
+
+<li><a class="tab_title" href="/xxpd/tshd/1905.html" title="【精彩瞬间第一弹】记大连市第二十三中学2017年秋季运动会">【精彩瞬间第一弹】记大连市第二十三中学2017年秋</a><span>[10-08]</span></li>
+
+<li><a class="tab_title" href="/xxpd/tshd/1832.html" title="激扬青春，放飞梦想——2017届高三成人礼暨减压活动">激扬青春，放飞梦想——2017届高三成人礼暨减压活动</a><span>[05-25]</span></li>
+
+<li><a class="tab_title" href="/xxpd/tshd/1695.html" title="大连理工大学教授马震岳为我校学生做题为从三峡工程看认识自然和改造自然的人生规划课">大连理工大学教授马震岳为我校学生做题为从三峡工</a><span>[11-03]</span></li>
+
+<li><a class="tab_title" href="/xxpd/tshd/1637.html" title="秋季运动会？精彩不容错过！">秋季运动会？精彩不容错过！</a><span>[10-08]</span></li>
+
+<li><a class="tab_title" href="/xxpd/tshd/1447.html" title="【考前独白】 任性画在纸上  高三八班 李玥姗">【考前独白】 任性画在纸上  高三八班 李玥姗</a><span>[06-06]</span></li>
+				</ul>
+			</div>
+			<h3 id="two3" onmouseover="setContentTab('two',3,4)"><a href="/jxky/jyxx">教育信息</a></h3>
+			<div id="con_two_3">
+				<ul>
+					
+<li><a class="tab_title" href="/jxky/jyxx/1687.html" title="第九届全国高中英语教师赛课观课有感">第九届全国高中英语教师赛课观课有感</a><span>[10-31]</span></li>
+
+<li><a class="tab_title" href="/jxky/jyxx/1686.html" title=" 省实验年会之行"> 省实验年会之行</a><span>[10-31]</span></li>
+
+<li><a class="tab_title" href="/jxky/jyxx/1685.html" title=" 北上取经心得"> 北上取经心得</a><span>[10-31]</span></li>
+
+<li><a class="tab_title" href="/jxky/jyxx/1684.html" title="“探索价值引领的高效课堂”心得体会">“探索价值引领的高效课堂”心得体会</a><span>[10-31]</span></li>
+
+<li><a class="tab_title" href="/jxky/jyxx/1683.html" title=" 北京四中听课学习体会  林琳"> 北京四中听课学习体会  林琳</a><span>[10-31]</span></li>
+
+<li><a class="tab_title" href="/jxky/jyxx/1682.html" title="且 学 且 行">且 学 且 行</a><span>[10-31]</span></li>
+
+<li><a class="tab_title" href="/jxky/jyxx/1681.html" title="东北四市教研协作体高考备考研讨会心得">东北四市教研协作体高考备考研讨会心得</a><span>[10-31]</span></li>
+				</ul>
+			</div>
+		
+		</div>
+	<!--tab标签js-->	
+	<script type="text/javascript">
+	function setContentTab(name, curr, n) {
+		for (i = 1; i <= n; i++) {
+			var menu = document.getElementById(name + i);
+			var cont = document.getElementById("con_" + name + "_" + i);
+			menu.className = i == curr ? "up" : "";
+			if (i == curr) {
+				cont.style.display = "block";
+			} else {
+				cont.style.display = "none";
+			}
+		}
+	}
+	</script>
+
+			</div>
+			<div class="b_right">
+				<div class="b_r_top"><span class="zxgg_wz">最新公告</span></div>
+				<div class="zxgg">
+					<ul>
+						
+<li><a href="/xwzx/tzgg/1608.html" title="大连市第二十三中学第十二周工作计划">大连市第二十三中学第十二周工作</a></li>
+
+<li><a href="/xwzx/tzgg/2070.html" title="2018大连市第二十三中体育特长生方案.">2018大连市第二十三中体育特长生</a></li>
+
+<li><a href="/xwzx/tzgg/2069.html" title="2018年23中学艺术特长生招生方案">2018年23中学艺术特长生招生方案</a></li>
+
+<li><a href="http://www.dl23zx.com:8686/Pharos/InfomationList" title="2018年海军航空实验班定选体检入围名单"><strong><font color='red'>2018年海军航空实验班定选体检入</font></strong></a></li>
+
+<li><a href="/xwzx/tzgg/2035.html" title="2018年海军航空实验班入围成绩名单">2018年海军航空实验班入围成绩名</a></li>
+
+<li><a href="/xwzx/tzgg/2026.html" title="2018年辽宁省海军航空实验班初选合格名单">2018年辽宁省海军航空实验班初选</a></li>
+
+<li><a href="/xwzx/tzgg/2018.html" title="大连市第二十三中学现已开通2018年中考咨询群，欢迎加入咨询！">大连市第二十三中学现已开通2018</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--middle_b全部结束-->
+		<!--middle_c开始-->
+		<div class="middle_b">
+			<div class="c_left">
+				<div class="c_l_top">
+					<div class="c_top_1"><span class="zkzl_wz">招考专栏</span><a href="/zkzl/zkzx"><img src="images/more.jpg" width="29" height="10" class="more_1"/></a></div>
+				   
+				</div>
+				<div class="zkzl">
+					<ul>
+						
+<li><a href="/zkzl/gkzx/2074.html" title="梦想启航，青春绽放——记2018届高三成人仪式暨拓展活动">梦想启航，青春绽放——记2018届高三</a></li>
+
+<li><a href="/zkzl/zkzx/2072.html" title="【特别策划】本周六我校将召开初升高招生公益讲座，欢迎大家参观、咨询">【特别策划】本周六我校将召开初升</a></li>
+
+<li><a href="/zkzl/zkzx/2068.html" title="2018年23中学艺术特长生招生方案">2018年23中学艺术特长生招生方案</a></li>
+
+<li><a href="/zkzl/zkzx/2066.html" title="2018大连市第二十三中体育特长生方案">2018大连市第二十三中体育特长生方</a></li>
+
+<li><a href="/zkzl/gkzx/2064.html" title="高三，一定要笑到最后，笑得最美！">高三，一定要笑到最后，笑得最美！</a></li>
+
+<li><a href="/zkzl/zkzx/2057.html" title="【特别策划】大连市第二十三中学对中考学生及家长全面开放，欢迎大家参观、咨询">【特别策划】大连市第二十三中学对</a></li>
+
+<li><a href="/zkzl/zkzx/2047.html" title="向祖国海军献礼！——海军航空实验班召开庆祝中国海军建军69周年主题班会">向祖国海军献礼！——海军航空实验班</a></li>
+
+<li><a href="/zkzl/gkzx/2010.html" title="2018年高考誓师大会—— 遇见更优秀的自己 杜彦副校长">2018年高考誓师大会—— 遇见更优</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="c_left">
+				<div class="c_l_top">
+					<div class="c_top_1"><span class="zkzl_wz">德育管理</span><a href="/dygl/bzr"><img src="images/more.jpg" width="29" height="10" class="more_1"/></a></div>
+				</div>
+				<div class="zkzl">
+					<ul>
+						
+<li><a href="/dygl/dyjt/1982.html" title="“教师德育大讲堂”系列讲座 —— 第二课《坚持》 方艳梅老师">“教师德育大讲堂”系列讲座 —— </a></li>
+
+<li><a href="/dygl/dyjt/1954.html" title="【人生规划课】不管世界怎么变，我要做个好人——国家一级导演杨道立教授为我校师生作专题报告">【人生规划课】不管世界怎么变，我要</a></li>
+
+<li><a href="/dygl/dyjt/1923.html" title="“教师德育大讲堂”系列讲座开讲啦 —— 第一课《信任》 孔祥辉老师">“教师德育大讲堂”系列讲座开讲啦</a></li>
+
+<li><a href="/dygl/cggl/1744.html" title="人生由习惯和信念决定——月总结分享">人生由习惯和信念决定——月总结分</a></li>
+
+<li><a href="/dygl/dyjt/1745.html" title="人生由习惯和信念决定——月总结分享">人生由习惯和信念决定——月总结分</a></li>
+
+<li><a href="/dygl/bzr/1317.html" title="北大才女“不作恶”的演讲——年轻人能为世界做些什么，值得每一个人观看和思考">北大才女“不作恶”的演讲——年轻</a></li>
+
+<li><a href="/dygl/bzr/1359.html" title="大连第二十三中学拟任新高一班主任介绍（一）">大连第二十三中学拟任新高一班主任</a></li>
+
+<li><a href="/dygl/bzr/1367.html" title="大连第二十三中学拟任新高一班主任介绍（二）">大连第二十三中学拟任新高一班主任</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="c_left" style="margin-right:0;">
+				<div class="c_l_top">
+					<div class="c_top_1"><span class="zkzl_wz">教学科研</span><a href="/jxky/xkjx"><img src="images/more.jpg" width="29" height="10" class="more_1"/></a></div>
+				</div>
+				<div class="zkzl">
+					<ul>
+						
+<li><a href="/jxky/jyhd/884.html" title="【高效课堂论坛】——合作探究  物理组  方艳梅">【高效课堂论坛】——合作探究  物</a></li>
+
+<li><a href="/jxky/jyhd/697.html" title="储校长做《高效课堂实施方案的说明》发言"><strong>储校长做《高效课堂实施方案的说明</strong></a></li>
+
+<li><a href="/jxky/jyhd/696.html" title="【教师论坛】高效课堂与学案导学">【教师论坛】高效课堂与学案导学</a></li>
+
+<li><a href="/jxky/jyhd/695.html" title="【教师论坛】浅谈对高效课堂的理解、认识和贯彻落实">【教师论坛】浅谈对高效课堂的理解</a></li>
+
+<li><a href="/jxky/jyhd/694.html" title="【教师论坛】水尝无华，相荡乃生涟漪，石本无火，相击才生灵光">【教师论坛】水尝无华，相荡乃生涟漪</a></li>
+
+<li><a href="/e/action/ShowInfo.php?classid=48&id=441" title="大连市第二十三中学校本研训制度">大连市第二十三中学校本研训制度</a></li>
+
+<li><a href="/e/action/ShowInfo.php?classid=48&id=440" title="校本培训之复习课教学模式的总结">校本培训之复习课教学模式的总结</a></li>
+
+<li><a href="/jxky/kyxm/436.html" title="“双向五环节”高效课堂教学模式研究">“双向五环节”高效课堂教学模式研</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--middle_c全部结束-->
+		<div class="midde_a">
+			<div class="a_1">
+				<div id="demo_w" style="overflow:hidden; width:1024px"; align=center>
+						<table border=0 align=center cellpadding=1 cellspacing=1 cellspace=0 >
+							<tr><td valign=top id="marquePic13">
+						<table width="1024" border='0' cellspacing='0' height="100">
+							<tr>
+							<td><a href='#'><img src="images/xs_1.jpg" width="79" height="100"></a></td>
+							<td><a href='#'><img src="images/xs_2.jpg" width="79" height="100"></a></td>
+							<td><a href='#'><img src="images/xs_3.jpg" width="79" height="100"></a></td>
+							<td><a href='#'><img src="images/xs_4.jpg" width="79" height="100"></a></td>
+							<td><a href='#'><img src="images/xs_5.jpg" width="79" height="100"></a></td>
+							<td><a href='#'><img src="images/xs_6.jpg" width="79" height="100"></a></td>
+							<td><a href='#'><img src="images/xs_7.jpg" width="79" height="100"></a></td>
+							<td><a href='#'><img src="images/xs_8.jpg" width="79" height="100"></a></td>
+							<td><a href='#'><img src="images/xs_9.jpg" width="79" height="100"></a></td>
+							<td><a href='#'><img src="images/xs_10.jpg" width="79" height="100"></a></td>
+							</tr></table>
+							</td><td id="marquePic23" valign=top></td></tr>
+						</table>
+					</div>
+	<!--向左滚动js-->
+	<script type="text/javascript">
+	var speed=50 
+	marquePic23.innerHTML=marquePic13.innerHTML 
+	function Marquee1(){ 
+	if(demo_w.scrollLeft>=marquePic13.scrollWidth){ 
+	demo_w.scrollLeft=0 
+	}else{ 
+	demo_w.scrollLeft++ 
+	} 
+	} 
+	var MyMar1=setInterval(Marquee1,speed) 
+	demo_w.onmouseover=function() {clearInterval(MyMar1)} 
+	demo_w.onmouseout=function() {MyMar1=setInterval(Marquee1,speed)} 
+	</script>
+			</div>
+		</div>
+		<!--middle_a结束-->
+		<!--middle_d开始-->
+		<div class="middle_b">
+			<div class="d_left">
+				<div class="d_l_top"><span class="zxjy_wz">校长寄语</span></div>
+				
+				<div class="xz_tp"><img src="/e/data/images/notimg.gif" width="235" height="158" /></div>
+				<div class="zxjy">
+					<p>校长：储校长</p>
+					<p>介绍：二十三中的校园崇尚读书，因为读书可以使人摆脱平庸...<a href="/xxgk/1.html" title="详情">【详情】</a></p>
+				</div>
+			</div>
+			<div class="d_center">
+				<div class="d_c_top">骄子回眸<a href="/jzhm"><img src="images/more.jpg" width="29" height="10"  class="more_2"/></a></div>
+				<div class="jzhm">
+					<ul>
+						
+<li><a href="/jzhm/1958.html" title="助力你的每一次精彩">助力你的每一次精彩</a></li>
+
+<li><a href="/jzhm/1631.html" title="情系母校，传递爱心——老校友捐助母校毕业学子">情系母校，传递爱心——老校友捐助母</a></li>
+
+<li><a href="/jzhm/1612.html" title="我校毕业生曲延骐在全球食品科学技术家协会年会上获奖">我校毕业生曲延骐在全球食品科学技</a></li>
+
+<li><a href="/jzhm/1505.html" title="就命运而言，休论公道——2012届毕业生 李树仁">就命运而言，休论公道——2012届毕业</a></li>
+
+<li><a href="/jzhm/958.html" title="乡愁—— 1997级毕业生 徐亮 兼具文科生情怀的理科男">乡愁—— 1997级毕业生 徐亮 兼具</a></li>
+
+<li><a href="/jzhm/935.html" title="二十三中，我们永远的家--刘晓琪">二十三中，我们永远的家--刘晓琪</a></li>
+
+<li><a href="/jzhm/916.html" title="二十三中，遇见你真好——沈心怡">二十三中，遇见你真好——沈心怡</a></li>
+
+<li><a href="/jzhm/907.html" title="一名段子手的自白-芮世豪">一名段子手的自白-芮世豪</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="d_center">
+				<div class="d_c_top">文苑漫步<a href="/xxpd/wymb"><img src="images/more.jpg" width="29" height="10"  class="more_2"/></a></div>
+				<div class="jzhm">
+					<ul>
+						
+<li><a href="/xxpd/wymb/2040.html" title="这世界，我们有话说——高二八班 王梓豪 李靖泉">这世界，我们有话说——高二八班 王</a></li>
+
+<li><a href="/xxpd/wymb/2042.html" title="【海航专栏】如今的我，和当初的他 高一十二班 徐鑫宇">【海航专栏】如今的我，和当初的他 </a></li>
+
+<li><a href="/xxpd/wymb/1952.html" title="愿所有人的内心都能保有一丝光明">愿所有人的内心都能保有一丝光明</a></li>
+
+<li><a href="/xxpd/wymb/1943.html" title="你在朋友圈屏蔽老爸老妈吗？——看高二十班赵心怡怎么说">你在朋友圈屏蔽老爸老妈吗？——看高</a></li>
+
+<li><a href="/xxpd/wymb/1871.html" title="脑残粉“雄健”的志气与决心——高二八班 李靖泉">脑残粉“雄健”的志气与决心——高</a></li>
+
+<li><a href="/xxpd/wymb/1875.html" title="学习的境界——新学期，与同学们共勉">学习的境界——新学期，与同学们共勉</a></li>
+
+<li><a href="/xxpd/wymb/1858.html" title="我们 —— 高三十一班 某某同学">我们 —— 高三十一班 某某同学</a></li>
+
+<li><a href="/xxpd/wymb/1640.html" title="今日重阳——重阳节是在过什么？">今日重阳——重阳节是在过什么？</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="d_right">
+				<div class="d_r_top">教研组</div>
+				<div class="dyz">
+					<ul>
+						<li><a href="/jyz/ywz" target="_blank">语文组</a></li>
+						<li><a href="/jyz/sxz" target="_blank">数学组</a></li>
+						<li><a href="/jyz/wyz" target="_blank">外语组</a></li>
+						<li><a href="/jyz/wlz" target="_blank">物理组</a></li>
+						<li><a href="/jyz/hxz" target="_blank">化学组</a></li>
+						<li><a href="/jyz/swz" target="_blank">生物组</a></li>
+					
+					</ul>
+					<ul>
+						<li><a href="/jyz/zzz" target="_blank">政治组</a></li>
+						<li><a href="/jyz/lsz" target="_blank">历史组</a></li>
+						<li><a href="/jyz/dlz" target="_blank">地理组</a></li>
+						<li><a href="/jyz/tyz" target="_blank">体育组</a></li>
+						<li><a href="/jyz/xxz" target="_blank">信息组</a></li>
+						<li><a href="/jyz/xmy" target="_blank">心音美</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--middle_d全部结束-->
+		<!--middle_e开始-->
+		<script type="text/javascript" src="js/js.js"></script><!--教师风采滚动js-->
+		<script type="text/javascript" src="js/ScrollPic.js"></script><!--教师风采滚动js-->
+		<div class="middle_b">
+			<Div class="Main">
+				<div class="Main1">
+					 <div class="chanpin">
+						<dd>
+							<div class="left" id="left"><img src="images/gd_jt.png" /></div>
+							<div class="dik_hrgd" id="center">
+								
+<li class="hui"><span><a href="/szdw/msfc/218.html"><img src="/d/file/szdw/msfc/2015-03-14/436e988374c99ef9bedc4a8f9b7c8b54.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/218.html">于金翠</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/219.html"><img src="/d/file/szdw/msfc/2015-03-14/61a64c50731485370c7565e38fa41dfb.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/219.html">牛国霞</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/220.html"><img src="/d/file/szdw/msfc/2015-03-14/87909a84137a5893e4be37b7c409f5a0.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/220.html">王田丰</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/221.html"><img src="/d/file/szdw/msfc/2015-03-14/14e7951822911d98d21e9c449500d3d8.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/221.html">李述良</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/249.html"><img src="/d/file/szdw/msfc/2018-03-23/f1569d94697bf16ec905fef3387a5149.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/249.html">郭锋</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/130.html"><img src="/d/file/szdw/msfc/2015-03-14/dc595b75afa54030a7a11cdadb66efca.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/130.html">孟祥利</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/200.html"><img src="/d/file/szdw/msfc/2015-03-14/9c3a494a51656991c9599af6a7aa8bec.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/200.html">李凤红</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/201.html"><img src="/d/file/szdw/msfc/2015-03-14/731f35a6ddc0116c6ac82c149f6168d0.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/201.html">刘文峰</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/202.html"><img src="/d/file/szdw/msfc/2015-03-14/71df16364c3e3259a5d4f8555a388961.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/202.html">何春艳</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/203.html"><img src="/d/file/szdw/msfc/2015-03-14/68ae5cebc0af8999ea62e80d40b75195.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/203.html">周 晶</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/204.html"><img src="/d/file/szdw/msfc/2015-03-14/0c1b6a1208f3c7aa5f0d75239c55be45.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/204.html">林琳</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/205.html"><img src="/d/file/szdw/msfc/2015-03-14/1115cfccfa9edbc2c8c67c16e0f84e80.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/205.html">孔祥辉</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/206.html"><img src="/d/file/szdw/msfc/2015-03-14/1cd20c43fa18c7f433b35eba900336cd.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/206.html">张任飞</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/207.html"><img src="/d/file/szdw/msfc/2015-03-14/ef9c8732a96515269179c15801593dd2.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/207.html">路志祥</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/208.html"><img src="/d/file/szdw/msfc/2015-03-14/9a9df71b3751c35984186e1823ca6ef4.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/208.html">姜同英</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/209.html"><img src="/d/file/szdw/msfc/2015-03-14/6429f6e8f10c9e363359c8c6cf640137.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/209.html">张德山</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/210.html"><img src="/d/file/szdw/msfc/2015-03-14/43506321486fef31ebabfdce7175099d.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/210.html">张莉莉</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/211.html"><img src="/d/file/szdw/msfc/2015-03-14/fd98c63495e639bcde62c2f130b88b24.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/211.html">闵炜</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/212.html"><img src="/d/file/szdw/msfc/2015-10-15/28e1485fb6e51fe320154842cf494173.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/212.html">苏丽晶</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/213.html"><img src="/d/file/szdw/msfc/2015-03-14/b47330cf149ee520556fbbc64e4af39f.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/213.html">安刚</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/214.html"><img src="/d/file/szdw/msfc/2015-03-14/966c56f14d6e672dc40538a7d69bdde9.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/214.html">郭卫强</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/215.html"><img src="/d/file/szdw/msfc/2015-04-29/9bf36a6490a18bf437f36e1d48238cdb.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/215.html">方艳梅</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/216.html"><img src="/d/file/szdw/msfc/2015-03-14/0f5f5735739b94d44cdf68dc13d5c54c.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/216.html">刘旭</a></p></li>
+
+<li class="hui"><span><a href="/szdw/msfc/217.html"><img src="/d/file/szdw/msfc/2015-03-14/2cd3ac1fabb264a7f109348ed54e92a8.jpg" width="108" height="125"/></a></span><p><a href="/szdw/msfc/217.html">丛莉</a></p></li>
+							</div>
+							<div class="right" id="right"><img src="images/gd_jt.png" /></div>
+	<!--教师风采滚动js-->                        
+	<script language="javascript">
+		var aebiz = new ScrollPic();
+		aebiz.scrollContId   = "center"; //内容容器ID
+		aebiz.arrLeftId      = "left";//左箭头ID
+		aebiz.arrRightId     = "right"; //右箭头ID
+		aebiz.listEvent      = "onmouseover"; //切换事件
+		aebiz.frameWidth     = 890;//显示框宽度
+		aebiz.pageWidth      = 179; //翻页宽度
+		aebiz.upright        = false; //垂直滚动
+		aebiz.speed          = 30; //移动速度(单位毫秒，越小越快)
+		aebiz.space          = 10; //每次移动像素(单位px，越大越快)
+		aebiz.autoPlay       = true; //自动播放
+		aebiz.upright        = false; //垂直滚动
+		aebiz.autoPlayTime   = 3; //自动播放间隔时间(秒)
+		aebiz.initialize(); //初始化
+	</script>			
+						</dd>
+					</div>
+				</div>
+			</Div>
+		</div>
+		<!--middle_e全部结束-->
+	</div>
+	<!--middle全部结束-->
+	<div class="clera"></div>
+<!--bottom开始-->
+<div class="bottom">
+	<div class="bottom_1">
+		<div class="yqlj">
+			<span class="yqlj_wz">友情链接</span>
+			
+<span class="jldx_wz"><a href="http://www.lnen.cn/" target="_blank">辽宁省教育局</a></span>
+
+<span class="jldx_wz"><a href="http://www.dledu.com/?COLLCC=910874025&" target="_blank">大连市教育局</a></span>
+
+<span class="jldx_wz"><a href="http://www.tsinghua.edu.cn/publish/newthu/index.html" target="_blank">清华大学</a></span>
+
+<span class="jldx_wz"><a href="http://www.pku.edu.cn/" target="_blank">北京大学</a></span>
+		</div>
+	</div>
+	<div class="bottom_2">
+		<div class="bot_logo"><img src="/images/logo_db.jpg" width="84" height="83" /></div>
+		<div class="bot_center">
+			<ul>
+				<li style="background:0;"><a href="/cs/xzs" target="_blank">校长室</a></li>
+				<li><a href="/cs/dzz" target="_blank">党总支</a></li>
+				<li><a href="/cs/jwc" target="_blank">教务处</a></li>
+				<li><a href="/cs/dyc" target="_blank">德育处</a></li>
+				<li><a href="/cs/zwc" target="_blank">总务处</a></li>
+				<li><a href="/cs/gh" target="_blank">工会</a></li>
+				<li><a href="/cs/tw" target="_blank">团委</a></li>
+				<li><a href="#" title="Top↑">TOP ↑</a></li>
+			</ul>
+			<p>版权所有 &copy; <a href="/" title="">大连第二十三中学 </a> <a href="/e/hswl" target="_blank">管理登录</a><br/>地址：大连市甘井子区华东路校园街3号 邮政编码：116031<br/>  电话：0411-86530181 86532258 86530778<br/> 辽ICP备05022052号</p>
+		</div>
+		<div class="bot_right"><img src="/images/weixin.jpg" width="100" height="100" /></div>
+	</div>
+</div>
+</body>
+</html>

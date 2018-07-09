@@ -1,0 +1,1036 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	成都工贸职业技术学院
+</title><link href="css/default.css" rel="stylesheet" />
+    <script src="js/jquery-1.8.1.min.js" type="text/javascript"></script>
+    <script src="js/index_menu.js" type="text/javascript"></script>
+    <script src="js/jquery.KinSlideshow-1.2.1.min.js"></script>
+
+</head>
+<body>
+    <form method="post" action="./" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE2MTY3NDA2OThkZF+V4y7NCQ5uJXf/vHkpDPFJpcV9zTLWSllDrBm3XwJg" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+</div>
+		<div id="left_layer" style="display:none; position: fixed; top: 106px; left: 0px;">
+			<a href="sjdcg.aspx" target="_blank">
+            <img src="image/welcome3.png" style="border: solid 1px #e6e6e6; width: 150px; height: 520px;"><br />
+            </a>
+            
+        </div>
+        <div id="right_layer" style="position: fixed; top: 106px; right: 0px;">
+            <a href="http://222.209.208.37:9100/SAS/login.jsp" target="_blank">
+                <img src="image/dzjs/icon-z.png" style="border: solid 1px #e6e6e6; width: 200px;"><br />
+            </a>
+            
+        </div>
+        <div id="page-container">
+            
+<link href="../css/menu.css" rel="stylesheet" />
+
+<script type="text/javascript">
+    $(function () {
+        $("#menu ul li").hover(function () {
+            $(this).children("ul").stop(true, true).slideDown(300);
+        }, function () {
+            $(this).children("ul").stop(true, true).slideUp(300);
+        });
+
+        //过滤URL非法SQL字符
+        var sUrl = location.search.toLowerCase();
+        
+        if (location.href.indexOf("search") > 0)
+            return;
+	    else{
+             var sQuery = sUrl.substring(sUrl.indexOf("=") + 1);
+             re = /select|update|delete|truncate|join|union|exec|insert|drop|count|&|@|CR|LF|\|$|'|"|\|\'|\"|;|>|<|%/i;
+             if (re.test(sQuery)) {
+                 alert("请勿输入非法字符");
+                 location.href = sUrl.replace(sQuery, "");
+            }
+	    }
+    })
+
+    function search() {
+        var type = "0";//$("#newstype").val();
+        var key = $("#Key").val();
+        if (key != "请输入关键字") {
+            window.location.href = "search.aspx?type=" + type + "&key=" + encodeURI(key);
+        } else { alert('请输入关键字！'); return false }
+    }
+</script>
+
+<div id="top">
+    <div class="logo">
+        <div class="divSearch">
+            <input class="txtSearch" id="Key" type="text" onkeypress="if(event.keyCode==13) {search();return false;}" />
+            <input class="btnSearch" onclick="search();" type="button" />
+        </div>
+    </div>
+    <div id="menu">
+        <ul class="firstul">
+            <li class="liFirst liParentHover"><a href="/">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+            <li class="liParent"><a href="../second.aspx?tid=e715962f88d7483a868e9f745f87a240">学院概况</a><img
+                src="image/downicon.png">
+                <input type="hidden" name="top$rptTopMenu$ctl00$hidPid" id="top_rptTopMenu_hidPid_0"
+                    value="e715962f88d7483a868e9f745f87a240" />
+                <ul class="submenu">
+                    <li><a target="_blank" href="http://www.cdgmxy.com/third.aspx?id=241">学院简介</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://www.cdgmxy.com/third.aspx?id=242">学院领导</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="../second.aspx?tid=c020f1958d0443db9452c1e5c7029cc0">校园英才</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="../second.aspx?tid=a220c965a1a34f0c800d2f981fca3a74">荣誉展台</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="../second.aspx?tid=ca6e19057b1b4ff1b894f4f2aace5c45">校园导游</a></li>
+                    <li class="limenusplit"></li>
+                </ul>
+            </li>
+            <li class="liParent"><a href="../second.aspx?tid=9cbca3061e254e39affaf62509c61975">管理机构</a><img
+                src="image/downicon.png">
+                <input type="hidden" name="top$rptTopMenu$ctl01$hidPid" id="top_rptTopMenu_hidPid_1"
+                    value="9cbca3061e254e39affaf62509c61975" />
+                <ul class="submenu">
+                    <li><a target="_blank" href="http://db.cdsjs.com/info/">党政办公室</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://rsc.cdsjs.com/info/">组织人事处</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://jsc.cdsjs.com/">纪检监察审计处</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://cwc.cdsjs.com">计划财务处</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://jwc.cdgmxy.com/">教务处</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://xsc.cdsjs.com/">学生工作及保卫处</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://hq.cdsjs.com/">后勤管理处</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://cj.cdsjs.com/">培训鉴定管理处</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://metc.cdsjs.com/info/">现代教育技术中心</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://zjc.cdgmxy.com/">招生就业指导处</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://gjc.cdgmxy.com/">教学设备管理中心</a></li>
+                    <li class="limenusplit"></li>
+                </ul>
+            </li>
+            <li class="liParent"><a href="../second.aspx?tid=25503a5f6e9543dfb84e7edba40a8bbb">院系设置</a><img
+                src="image/downicon.png">
+                <input type="hidden" name="top$rptTopMenu$ctl02$hidPid" id="top_rptTopMenu_hidPid_2"
+                    value="25503a5f6e9543dfb84e7edba40a8bbb" />
+                <ul class="submenu">
+                    <li><a target="_blank" href="http://jxx.cdsjs.com">机械工程系</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://dzx.cdsjs.com/info/">信息工程系</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://dqx.cdsjs.com/info/">电气工程与自动化系</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://xdfw.cdsjs.com/info/">经贸管理系</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://qcx.cdsjs.com/info/">汽车工程系</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://wlx.cdsjs.com">轨道交通系</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://jcb.cdsjs.com/info/">基础教学与成教中心</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://www.czts.net/">南校区</a></li>
+                    <li class="limenusplit"></li>
+					<li><a target="_blank" href="http://www.cdtlgcxx.com/">西校区</a></li>
+                    <li class="limenusplit"></li>
+                </ul>
+            </li>
+            <li class="liParent"><a href="../second.aspx?tid=1f5a43704e9f43c88716165447e5d221">新闻中心</a><img
+                src="image/downicon.png">
+                <input type="hidden" name="top$rptTopMenu$ctl03$hidPid" id="top_rptTopMenu_hidPid_3"
+                    value="1f5a43704e9f43c88716165447e5d221" />
+                <ul class="submenu">
+                    <li><a target="_blank" href="../second.aspx?tid=7b5c378f0d574ca7ab68339ee01b6374">学院要闻</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="../second.aspx?tid=09ee53e1d4904935b30dc0d3c904e90c">综合新闻</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="../second.aspx?tid=195ca5bcbfae4154a7244c8f9a465a2c">图片新闻</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="../second.aspx?tid=457aa6afc2d3420bbb4fb804609cd8ba">专题报道</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="../second.aspx?tid=d44da73ec0dc44a2bf9f4fcad9d50428">通知公告</a></li>
+                    <li class="limenusplit"></li>
+                </ul>
+            </li>
+            <li class="liParent"><a href="../second.aspx?tid=72698080f9af41f8969ec8e72db893e6">招生就业</a><img
+                src="image/downicon.png">
+                <input type="hidden" name="top$rptTopMenu$ctl04$hidPid" id="top_rptTopMenu_hidPid_4"
+                    value="72698080f9af41f8969ec8e72db893e6" />
+                <ul class="submenu">
+                    <li><a target="_blank" href="http://zjc.cdgmxy.com/Page/198.jhtml">招生信息</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://222.209.208.177:1222/home/index/index.html">实训就业</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="http://zjc.cdgmxy.com/Page/208.jhtml">校企合作</a></li>
+                    <li class="limenusplit"></li>
+                </ul>
+            </li>
+            <li class="liParent"><a href="../second.aspx?tid=1af3bf48cee945b0a92b8f85842e9876">教育教学</a><img
+                src="image/downicon.png">
+                <input type="hidden" name="top$rptTopMenu$ctl05$hidPid" id="top_rptTopMenu_hidPid_5"
+                    value="1af3bf48cee945b0a92b8f85842e9876" />
+                <ul class="submenu">
+                    <li><a target="_blank" href="../second.aspx?tid=5bc4d88e1166411cae62ca828a6dae3e">教学动态</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="../second.aspx?tid=16680ddf41b24578b29ad9c698e6fb4c">教学科研</a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="../second.aspx?tid=289c2d5c134546098f251b661fc8ea71">师资队伍建设
+                    </a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="../second.aspx?tid=a9d2a50881dd4df6a605303ffaff0b9c">政策法规
+                    </a></li>
+                    <li class="limenusplit"></li>
+                    <li><a target="_blank" href="../second.aspx?tid=b641c5bb8fda4d6f9f49fbfd801aafae">教学质量
+                    </a></li>
+                    <li class="limenusplit"></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="firstul2" style="display: none;">
+            <li class="liFirst liParentHover" display='none'><a href="/">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+            
+<link href="../css/scroll.css" rel="stylesheet" />
+<script type="text/javascript">
+    $(function () {
+
+        var aPage = $('#main .page a');		//分页按钮
+        var aImg = $('#main .box img');		//图像集合
+        var iSize = aImg.size();		//图像个数
+        var index = 0;		//切换索引
+        var t;
+        $('#btnLeft').click(function () {		//左边按钮点击
+            index--;
+            if (index < 0) {
+                index = iSize - 1
+            }
+            change(index)
+        })
+        $('#btnRight').click(function () {    //右边按钮点击
+            index++;
+            if (index > iSize - 1) {
+                index = 0
+            }
+            change(index)
+        })
+        //分页按钮点击
+        aPage.click(function () {
+            index = $(this).index();
+            change(index)
+        });
+        //切换过程
+        function change(index) {
+            aPage.removeClass('active');
+            aPage.eq(index).addClass('active');
+            aImg.stop();
+            //隐藏除了当前元素，所以图像
+            aImg.eq(index).siblings().animate({
+                opacity: 0
+            }, 1000)
+            //显示当前图像
+            aImg.eq(index).animate({
+                opacity: 1
+            }, 1000)
+        }
+
+
+        function autoshow() {
+            index = index + 1;
+            if (index <= iSize - 1) {
+                change(index);
+            } else {
+                index = 0;
+                change(index);
+            }
+
+        }
+        int = setInterval(autoshow, 3000);
+        function clearInt() {
+            $('#btnLeft,#btnRight,.page a').mouseover(function () {
+                clearInterval(int);
+            })
+
+        }
+        function setInt() {
+            $('#btnLeft,#btnRight,.page a').mouseout(function () {
+                int = setInterval(autoshow, 3000);
+            })
+        }
+        clearInt();
+        setInt();
+    })
+</script>
+<div id="scroll">
+    <div class="picscroll">
+        <div id="main">
+            <a class="btnLeft" id="btnLeft" href="javascript:void(0);"></a>
+            <a class="btnRight" id="btnRight" href="javascript:void(0);"></a>
+            <div class="box">
+                <img style="opacity: 1; filter: alpha(opacity=100);" src="../image/banner_img/1.jpg" />
+                <img alt="xxx" class="cubeRandom" width="810px" height="370px" src="../image/banner_img/2.jpg" />
+                <img alt="xxx" class="cubeRandom" width="810px" height="370px" src="../image/banner_img/3.jpg" />
+                <img alt="xxx" class="cubeRandom" width="810px" height="370px" src="../image/banner_img/4.jpg" />
+            </div>
+            <div class="page">
+                <a class="active" href="javascript:void(0);"></a>
+                <a href="javascript:void(0);"></a>
+                <a href="javascript:void(0);"></a>
+                <a class="active" href="javascript:void(0);"></a>
+                <a href="javascript:void(0);"></a>
+                <a href="javascript:void(0);"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div id="content">
+                
+<link href="../css/picnews.css" rel="stylesheet" />
+<script src="../js/newsRoll.js"></script>
+<div class="divRow1">
+    <div class="divNEWS">
+        <div class="divTitle">
+            <span class="spanTitle">学院要闻</span>
+        </div>
+        <div class="divFirstNew">
+            <div class="divDate">
+                <div class="divDay">
+                    29
+                </div>
+                <div class="divYM">
+                    2018.05
+                </div>
+            </div>
+            <div class="divFirstTitle">
+                <a href='third.aspx?id=2641'>学院纪委组织召开2018年纪检监察工作会议</a>
+            </div>
+            <div class="divFirstCntent">
+                
+	
+
+
+	&nbsp;
+
+
+	&nbsp;&nbsp;（本网消息纪检监察审计处
+供稿）5月28日下午，学院纪委组织召开2018年纪检监察工作会议。学院党委副书记、纪委书记庄永辉同志出席会议。学院纪委委员、各党总支（直属党支部）纪检委员、各部门纪检员和纪检监察审计处全体工作人员参加。会议由纪检监察审计处负责人主持。
+
+
+	&nbsp;
+
+
+	
+
+
+	&nbsp;
+
+
+	&nbsp;&nbsp;
+会议传达了十九届中央纪委二次全会精神、省纪委十一届二次全会精神、市纪委十三届三次全会精神及全省教育系统全面从严治党工作视频会议精神；组织学习了《中华人民共和国监察法》《中央八项规定实施细则》等法律法规；总结了2017年学院纪检监察审计工作，对2018年的工作进行了安排部署；开展了身边的反面典型警示教育学习；各党总支（直属党支部）纪检委员、各部门纪检员结合工作实际，对开展监督工作的情况进行了交流发言。
+
+
+	&nbsp;
+
+
+	
+
+
+	&nbsp;
+
+
+	&nbsp;&nbsp;
+会上，庄书记强调：全体纪检监察干部要坚持履职担当，推动全面从严治党；加强监督检查，推动制度机制建设；严格监督执纪，保持反腐高压态势；强化纪律教育，发挥震慑警示作用；加强自身建设，铸造纪检监察铁军。采取环节参与、督查督导、审计监督和紧盯“关键”等措施，加强履职监督。&nbsp;
+
+            </div>
+            <div class="divMore">
+                <span id="mainContent_lblYWMore"><a href='third.aspx?id=2641'>详情》</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="divNEWSecond">
+        <div class="divTitle">
+            <span class="spanTitle">&nbsp;</span>
+        </div>
+        <div class="divTitleList">
+            <ul class="ulNewTitle">
+                
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2641">
+                                <div class="divNewsTitle">
+                                    学院纪委组织召开2018年纪检监察工作会议
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2637">
+                                <div class="divNewsTitle">
+                                    学院召开2019年度预算编制工作会
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2636">
+                                <div class="divNewsTitle">
+                                    学院召开巡察整改动员大会
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2635">
+                                <div class="divNewsTitle">
+                                    超儒书记实地调研校企合作企业
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2634">
+                                <div class="divNewsTitle">
+                                    学院召开2019年度预算编制工作会
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2633">
+                                <div class="divNewsTitle">
+                                    匠心筑梦 赢在技能 ——机械系第七届“技能节”活动取得圆满成功
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2619">
+                                <div class="divNewsTitle">
+                                    任忠副院长深入培训鉴定中心开展党建工作大调研
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2611">
+                                <div class="divNewsTitle">
+                                    杜海成副院长深入电气系调研重点工作推进情况
+                            </a></div></span>
+                        </li>
+                    
+            </ul>
+        </div>
+        <div class="divMore">
+            <a href="second.aspx?tid=7b5c378f0d574ca7ab68339ee01b6374">更多》</a>
+        </div>
+    </div>
+    <div class="divNEWSecond">
+        <div class="divZHTitle">
+            <span class="spanOtherTitle">图片新闻</span>
+        </div>
+        <div class="divTitleList">
+            
+            <div class="roll-news-keleyi-com">
+                <div class="roll-news-image">
+                    
+                            <img src="/UploadFIle/image/20180315/20180315101546_2862.jpg">
+                        
+                            <img src="/UploadFIle/image/20171101/20171101103200_3917.jpg">
+                        
+                            <img src="/UploadFIle/image/20171030/20171030145953_5464.jpg">
+                        
+                            <img src="/UploadFIle/image/20170926/20170926101244_8056.jpg">
+                        
+                            <img src="/UploadFIle/image/20170913/20170913102855_9171.jpg">
+                        
+                </div>
+                <div class="roll-news-index">
+                    <ul><li class='roll-news-index-hover'>1</li><li class='roll-news-index-hover'>2</li><li class='roll-news-index-hover'>3</li><li class='roll-news-index-hover'>4</li><li class='roll-news-index-hover'>5</li></ul>
+                </div>
+                <div class="roll-news-title">
+                    <a href='third.aspx?id=2178'><div>学院受邀参加中国工程建设焊接协会职业教育培训工作委员会成立大会</div></a><a href='third.aspx?id=1915'><div>和谐校园，青春绽放 学院举行2017校园迎新晚会</div></a><a href='third.aspx?id=1902'><div>副省长杨兴平一行莅临学院调研</div></a><a href='third.aspx?id=1771'><div> 接受检阅，展示风貌 ---学院举行2017级学生军训结业典礼暨表彰大会</div></a><a href='third.aspx?id=1742'><div>学院隆重举行2017级新生开学典礼</div></a>
+                </div>
+            </div>
+        </div>
+        <div class="divPicTitle">
+        </div>
+    </div>
+</div>
+<div class="divRow1">
+    <div class="divNEWS">
+        <div class="divTitle">
+            <span class="spanOtherTitle">综合新闻</span>
+        </div>
+        <div class="divFirstNew">
+            <div class="divFirstZHTop">
+                <div class="divSubtitle">
+                    <a href='third.aspx?id=2642'>共话汽车未来，畅想前沿科技 ——汽车工程系举办“畅想未来汽车技术”系列沙龙活动</a>
+                </div>
+                <div class="divSubContent">
+                    
+	
+
+
+	
+
+
+	&nbsp;&nbsp;（本网消息汽车工程系总院办公室供稿）以2018年校园科技文化艺术节为契机，我系在技能月中连续开展了四期以“共话汽车未来，畅想前沿科技”为主题的未来汽车技术畅想沙龙。系列沙龙活动特邀嘉宾全是来自我系教学一线的专业教师们，有成都市汽车维修大师工作室廖新华大师，汽车专业带头人、骨干老师阎俊旭、王黎明、武晓斌等老师。汽车师生齐聚一堂，共同畅想我们的未来汽车。
+
+
+	
+
+
+
+	&nbsp;&nbsp;未来的汽车到底应该是怎样的？未来的科技会有多发达呢？带着对未来汽车的憧憬与向往，沙龙采取面对面的形式，气氛轻松而活跃。师生就汽车专业知识、理念、经验、信息、技术等方面展开了无障碍地交流，未来汽车的个性化、网络化、轻量化、信息化、终端化、电动化、共享化、智能化成为了沙龙话题的热点，师生们脑洞大开的设想与创意交织在整个活动现场。
+
+
+	&nbsp;&nbsp;通过组织专业沙龙活动，增进了师生的互动，不同年龄不同层次的思维碰撞，激发了师生的创意灵感，开阔了学生的视野，增强了学生学习技能的兴趣和信心，同时也推动了我系汽车专业建设及专业教学水平的整体提升。
+
+
+	
+
+
+	
+
+
+	
+
+                </div>
+            </div>
+            <div class="divSubTitleList">
+                <ul class="ulNewTitle">
+                    
+                            <li>
+                                <span class="index_right_news_point">
+                                    <img src="image/index_news_poing.gif"></span>
+                                <span class="index_right_news_title"><a href="third.aspx?id=2642">
+                                    <div class="divNewsTitle">
+                                        共话汽车未来，畅想前沿科技 ——汽车工程系举办“畅想未来汽车技术”系列沙龙活动
+                                </a></div></span>
+                            </li>
+                        
+                            <li>
+                                <span class="index_right_news_point">
+                                    <img src="image/index_news_poing.gif"></span>
+                                <span class="index_right_news_title"><a href="third.aspx?id=2640">
+                                    <div class="divNewsTitle">
+                                        汽车工程系党总支三支部开展大学习活动
+                                </a></div></span>
+                            </li>
+                        
+                            <li>
+                                <span class="index_right_news_point">
+                                    <img src="image/index_news_poing.gif"></span>
+                                <span class="index_right_news_title"><a href="third.aspx?id=2639">
+                                    <div class="divNewsTitle">
+                                        思想政治教育中心开展“大学习、大讨论、大调研”专题教研活动
+                                </a></div></span>
+                            </li>
+                        
+                            <li>
+                                <span class="index_right_news_point">
+                                    <img src="image/index_news_poing.gif"></span>
+                                <span class="index_right_news_title"><a href="third.aspx?id=2638">
+                                    <div class="divNewsTitle">
+                                        我院教师顺利进入四川省第六届“导航名师”大学生创新创业指导课程教学大赛决赛
+                                </a></div></span>
+                            </li>
+                        
+                </ul>
+            </div>
+            <div class="divMore">
+                <a href="second.aspx?tid=09ee53e1d4904935b30dc0d3c904e90c">更多》</a>
+            </div>
+        </div>
+    </div>
+    <div class="divNEWSecond">
+        <div class="divZHTitle">
+            <span class="spanOtherTitle">实训基地</span>
+        </div>
+        <div class="divTitleList">
+            <img src="image/picsjidi.png" height="139px" width="300px">
+            <div class="divSXJDSum">
+                
+	&nbsp;
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;成都工贸职业技术学院实训基地，系四川省高新技术公共实训基地、成都市模具软件公共技术平台，为成都市支柱产业提供技能人才支持，为国家及省市技能鉴定、技能竞赛提供高水平的硬件保证。
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;实训基地位于高新西区模具工业园内，配备数控车床、慢走丝电火花数控加工机床、立式加工中心、四轴卧式加工中心、三坐标测量机等国际、国内一流的设备和检测仪器100余台（套），各类专业设备总价值3000余万元，有300余个实习、实训工位。
+
+
+	&nbsp;&nbsp;&nbsp;实训基地具备研发、实训、考核、鉴定四位一体的职业技能实训功能，实现了“六合一”的技能型人才培养模式：即基地与教室合一、学生与学徒合一、教师与师傅合一、作品与产品合一、理论与实践合一、育人与创新合一。为学生提供了全真的训练场所。
+
+
+	&nbsp;&nbsp;&nbsp;实训基地引企入院，与多家企业进行深层次的合作，实施工学结合、院企合作的教学、实训、生产一体化教学，培养学生超前适应企业。
+
+
+	&nbsp;
+
+            </div>
+        </div>
+        <div class="divSXJDMore">
+            <span id="mainContent_lblSXJDMore"><a href='third.aspx?id=18'>详情</a></span>
+        </div>
+    </div>
+    <div class="divNEWSecond">
+        <div class="divTZGGTitle">
+            <span class="spanOtherTitle">通知公告</span>
+        </div>
+        <div class="divTitleList">
+            <ul class="ulNewTitle">
+                
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2616">
+                                <div class="divNewsTitle">
+                                    （招标公告）成都工贸职业技术学院创新创业训练营活动采购项目校内自主招标公告
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2576">
+                                <div class="divNewsTitle">
+                                    （招标公告）成都市技师学院（成都工贸职业技术学院）教学专用材料采购项目竞争性磋商结果公告
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2471">
+                                <div class="divNewsTitle">
+                                    成都市技师学院工会教职工生日蛋糕慰问券采购项目
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2231">
+                                <div class="divNewsTitle">
+                                    关于学习《教育部党组书记、部长陈宝生<关于进一步加强学生资助工作>的文章》的通知
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2216">
+                                <div class="divNewsTitle">
+                                    2018年成都市人力资源和社会保障局 所属2家事业单位公开招聘30名 工作人员的公告
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2215">
+                                <div class="divNewsTitle">
+                                    2018年成都市人力资源和社会保障局所属2家事业单位公开招聘30名工作人员岗位表
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2217">
+                                <div class="divNewsTitle">
+                                    单位收费公示表
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2200">
+                                <div class="divNewsTitle">
+                                    成都工贸职业技术学院招生简章设计制作供应商服务采购项目(第二次）结果
+                            </a></div></span>
+                        </li>
+                    
+            </ul>
+        </div>
+        <div class="divTZGGMore">
+            <a href="second.aspx?tid=d44da73ec0dc44a2bf9f4fcad9d50428">更多》</a>
+        </div>
+    </div>
+</div>
+<div class="divRow1">
+    <div class="divNEWSecond2">
+        <div class="divXTHDTopTitle">
+            <span class="spanOtherTitle">文明校园</span>
+        </div>
+        <div class="divTitleList">
+            <img src="image/picxthd.png" height="139px" width="300px">
+            <div class="divXTHDTitleList">
+                <ul class="ulXTHDNewTitle">
+                    
+                            <li>
+                                <span class="index_right_news_point">
+                                    <img src="image/index_news_poing.gif"></span>
+                                <span class="index_right_news_title"><a href="third.aspx?id=1479">
+                                    <div class="divNewsTitle">
+                                        成都工贸职业技术学院党委行政办公室关于创建四川省文明校园任务分解的通知
+                                </a></div></span>
+                            </li>
+                        
+                            <li>
+                                <span class="index_right_news_point">
+                                    <img src="image/index_news_poing.gif"></span>
+                                <span class="index_right_news_title"><a href="third.aspx?id=699">
+                                    <div class="divNewsTitle">
+                                        大学生心理健康月刊（4月）
+                                </a></div></span>
+                            </li>
+                        
+                            <li>
+                                <span class="index_right_news_point">
+                                    <img src="image/index_news_poing.gif"></span>
+                                <span class="index_right_news_title"><a href="third.aspx?id=673">
+                                    <div class="divNewsTitle">
+                                        工贸第一届校园科技文化艺术节专刊（变废为宝）
+                                </a></div></span>
+                            </li>
+                        
+                </ul>
+            </div>
+        </div>
+        <div class="divXTHDMore">
+            <a href="second.aspx?tid=8672005296964384ba99d505802c8ba8">更多》</a>
+        </div>
+    </div>
+    <div class="divNEWSecond">
+        <div class="divJYJXTopTitle">
+            <span class="spanOtherTitle">教育教学</span>
+        </div>
+        <div class="divTitleList">
+            <ul class="ulNewTitle">
+                
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2418">
+                                <div class="divNewsTitle">
+                                    聚焦现代学徒制 创新机制育人才
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=2165">
+                                <div class="divNewsTitle">
+                                    学院组织召开院级科研课题结题答辩会
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=1764">
+                                <div class="divNewsTitle">
+                                    学院召开教育部2017年产学合作育人项目申报培训会
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=1613">
+                                <div class="divNewsTitle">
+                                    学院“双百”工程进入集中实施阶段
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=1432">
+                                <div class="divNewsTitle">
+                                    我院课题获得2017年成都市哲学社会科学规划研究项目立项
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=1399">
+                                <div class="divNewsTitle">
+                                    中华人民共和国网络安全法
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=1326">
+                                <div class="divNewsTitle">
+                                    学院召开2017年度院级科研课题立项答辩会
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=1314">
+                                <div class="divNewsTitle">
+                                    职业院校管理水平提升行动计划图解
+                            </a></div></span>
+                        </li>
+                    
+            </ul>
+        </div>
+        <div class="divJYJXMore">
+            <a href="second.aspx?tid=1af3bf48cee945b0a92b8f85842e9876">更多》</a>
+        </div>
+    </div>
+    <div class="divNEWSecond">
+        <div class="divZSJYTopTitle">
+            <span class="spanOtherTitle">招生就业</span>
+        </div>
+        <div class="divTitleList">
+            <ul class="ulNewTitle">
+                
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=1474">
+                                <div class="divNewsTitle">
+                                    2017招生简章
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=1212">
+                                <div class="divNewsTitle">
+                                    成都工贸职业技术学院2017年单独招生章程
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=1205">
+                                <div class="divNewsTitle">
+                                    成都工贸职业技术学院2017年单独招生方案
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=782">
+                                <div class="divNewsTitle">
+                                    关于2016年我院增加招生咨询QQ群的公告?
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=762">
+                                <div class="divNewsTitle">
+                                    成都工贸职业技术学院2016年招生章程
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=712">
+                                <div class="divNewsTitle">
+                                    成都工贸职业技术学院 2016年五年制高职招生计划
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=637">
+                                <div class="divNewsTitle">
+                                    2016年招生简章
+                            </a></div></span>
+                        </li>
+                    
+                        <li>
+                            <span class="index_right_news_point">
+                                <img src="image/index_news_poing.gif"></span>
+                            <span class="index_right_news_title"><a href="third.aspx?id=636">
+                                <div class="divNewsTitle">
+                                    2016年招收专业介绍
+                            </a></div></span>
+                        </li>
+                    
+            </ul>
+        </div>
+        <div class="divJYJXMore">
+            <a href="second.aspx?tid=72698080f9af41f8969ec8e72db893e6">更多》</a>
+        </div>
+    </div>
+</div>
+
+            </div>
+            
+
+
+<div id="link">
+    <div class="divLink">
+        <div class="divLinkLeft">
+            <div>
+                <div style="float: left; text-align: center; margin: 20px auto auto auto;">
+                    <img style="width: 80px; height: 80px;" src="../image/工贸微博.png" />
+                    <br />
+                    工贸微博
+                </div>
+                <div style="float: left; text-align: center; margin: 17px auto auto 10px;">
+                    <img style="width: 80px; height: 80px;" src="../image/工贸微信.jpg" /><br />
+                    工贸微信
+                </div>
+            </div>
+        </div>
+        <div class="divLinkRight">
+
+            <div class="divLinkItem1">
+                <a href="http://www.moe.gov.cn/" target="_blank">
+                    <img src="image/Link1.png"></a>
+                <a href="http://www.scedu.net/" target="_blank">
+                    <img src="image/Link2.png"></a>
+                <a href="http://www.cdedu.gov.cn/" target="_blank">
+                    <img src="image/Link3.png"></a>
+                <a href="/faids.aspx" target="_blank">
+                    <img src="image/fazt/LinkFA.png"></a>
+            </div>
+            <div class="divLinkItem2">
+                <a href="/xzfc.aspx" target="_blank">
+                    <img src="image/Linkxzfc.png" style="width: 206px; height: 71px;"></a>
+				<!-- <a href="/lxyz.aspx">
+                    <img src="image/Link4.png" style="width: 206px; height: 71px;"></a>-->
+                <a href="http://jsc.cdsjs.com/" target="_blank">
+                    <img src="image/Link5.png"></a>
+            </div>
+            <div class="divLinkItem3">
+				<a href="/sjdzt.aspx" target="_blank">
+                    <img src="image/Linksjdjs.png" style="width: 206px; height: 71px;"></a>
+                <!--<a href="http://portal.cdsjs.com">
+                    <img src="image/Link7.png" style="width: 206px; height: 71px;"></a>-->
+                <a href="http://portal.cdsjs.com" target="_blank">
+                    <img src="image/Link7.png" style="width: 206px; height: 75px;"></a>
+				<!--a href="innovate.aspx" target="_blank">
+                    <img src="image/Link8.png" style="width: 206px; height: 75px;"></a-->
+                
+            </div>
+            <div class="divLinkItem4">
+                <a href="ssdb.aspx" target="_blank">
+                    <img src="../image/ssdb/ssdbicon.jpg" style="height:71px; width:118px" /></a>
+                <a href="sxzz.aspx" target="_blank">
+                    <img src="../image/sxzz/sxzzjy.jpg" style="height:75px; width:118px"/></a>
+            </div>
+            <div class="divLinkItem5">
+                <a href="http://db.cdsjs.com/info/list.jsp?categoryId=B000000013" target="_blank">
+                    <img src="../image/sjxx.jpg" /></a>
+                <a href="http://db.cdsjs.com/info/list.jsp?categoryId=B000000014" target="_blank">
+                    <img src="../image/yzxx.jpg" /></a>
+            </div>
+        </div>
+        <div style="float: left; width: 1003px; text-align: right; margin: 38px auto auto auto;">
+            <ul style="list-style: none;">
+                <li>
+                    <a href="#">服务指南》</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">学院地图》</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">行车路线》</a>
+                    <a href="#">校园导游》</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">常用电话》</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">联系我们》</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="divContactInfo">
+        <ul>
+            <li><span>学院地址：成都市郫县红光镇广场路北三段188号</span> <span style="float: right;">蜀ICP备12003857号</span> </li>
+
+            <li style="color: #cecece">
+                <span>版权所有&copy;成都工贸</span>
+                <div style="float: right">
+                    <div style="height: 20px;">
+                        <marquee scrollamount="2" width="220">今日访客：<span id="footer_lblToday" style="color:White;font-weight:bold;">2392</span>&nbsp;&nbsp; 流量(PV)：<span id="footer_lblPV" style="color:White;">476008</span></marquee>
+                    </div>
+                    <div style="height: 30px; text-align: right;">
+                        您是第&nbsp;<span id="footer_lblBrowserNum" style="color:White;font-weight:bold;">0005159517</span>&nbsp;位访客
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div style="text-align: center; margin-top:40px;">
+        <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/23/333/0000/60470514/CA233330000604705140003.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</div>
+
+
+         </div>
+        
+        <div id="img1" style="z-index: 9999; width: 229px; height: 81px; position: absolute; visibility: visible;">
+            <a target="_blank" href="/enroll.aspx?tid=00371e3ae06145e2ad106604237c19ff">
+                <img src="image/banner_img/move.png" /></a>
+			<a target="_blank" href="sjdzt.aspx" style="display: none">
+                <img src="image/dj03.jpg" /></a>
+        </div>
+        <script src="js/ad.js"></script>
+        
+       
+        <div class="keifu" style="display:none;">
+            <div class="keifu_tab">
+                <div class="icon_keifu"></div>
+                <div class="keifu_box">
+                    <div class="keifu_head"><a href="javascript:void(0)" class="keifu_close"></a></div>
+                    <ul class="keifu_con">
+                        <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=488203339&amp;site=qq&amp;menu=yes">
+                            <img src="image/kefu_img/qq0.gif" /></a></li>
+                        <li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2807372353&amp;site=qq&amp;menu=yes">
+                            <img src="image/kefu_img/qq1.gif" /></a></li>
+                        <li><a target="_blank" href="http://222.209.208.139:88/webreg/">
+                            <img src="image/kefu_img/qq2.gif" /></a></li>
+                        <li class="weixin">
+                            <img src="image/kefu_img/qrcode.jpg" width="96px" height="127px" alt="官方微信" /></li>
+                    </ul>
+                    <div class="keifu_bot"></div>
+                </div>
+            </div>
+        </div>
+        <script src="js/kefu.js"></script>
+    </form>
+</body>
+</html>

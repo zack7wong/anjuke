@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="重庆市江津第五中学校,江津五中" name="Keywords" />
+<meta content="重庆市江津第五中学校" name="Description"/>
+<title>网站首页-重庆市江津第五中学校</title>
+<link href="/Template/Default/Skin/default.css" rel="stylesheet" type="text/css" />
+<link href="/Template/Default/Skin/index.css" rel="stylesheet" type="text/css" />
+<link href="/Template/Default/Skin/module.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    var siteSetup = {sitePath: '/',ajaxPath: '/ajax.aspx',skinPath: '/Template/Default/Skin/'};
+</script>
+<script language="javascript" type="text/javascript" src="/JS/jquery.pack.js"></script>
+<script language="javascript" type="text/javascript" src="/JS/jquery.peex.js"></script>
+<script language="javascript" type="text/javascript" src="/Template/Default/Skin/js/jquery.SuperSlide.js"></script>
+<script language="javascript" type="text/javascript" src="/Template/Default/Skin/js/js.js"></script>
+ <!--[if IE 6]>
+<script type="text/javascript" src="/Template/Default/Skin/js/DD_belatedPNG.js"></script>
+<script>
+  DD_belatedPNG.fix('.png_bg');
+</script>
+<![endif]--> 
+
+
+</head>
+<body>
+<div class="warp">
+   <script>
+$(document).ready(function() {
+  $(".side_T .bd li").hover(function(){
+     $(this).addClass("liHover");
+	 $(".side_T .bd li.on a").css({"color":"#666","background-position":"35px -2000px"});
+	 $(".side_T .bd li.liHover a").css({"color":"#640000","background-position":"35px -288px"});
+	 if($(this).hasClass("on")){
+		 $(this).children("a").css({"color":"#640000","background-position":"35px -288px"});
+	  }
+  },function(){
+	 $(this).removeClass("liHover"); 
+	 $(".side_T .bd li a").css({"color":"#666","background-position":"35px -2000px"});
+	 $(".side_T .bd li.on a").css({"color":"#640000","background-position":"35px -288px"});
+  });	
+ 
+});
+</script>
+<!--[if IE 6]>
+<script type="text/javascript" src="/Template/Default/Skin/js/DD_belatedPNG.js"></script>
+<script>
+  DD_belatedPNG.fix('.ul1,.top_rt');
+</script>
+<![endif]--> 
+
+<div class="header">
+      <div class="top">
+          <div class="sw">
+              <div class="top_l logo">
+              <a href="http://www.cqjjwz.com"><img src="/Template/Default/Skin/images/PE/logo.png" /></a> 
+              </div>
+              <div class="top_r">
+                 <div class="top_rt">
+                 
+                    <a href="javascript:SetHome('http://www.cqjjwz.com')">设为首页</a> <i>|</i>
+                    <a href="javascript:AddFavorite('http://www.cqjjwz.com','江津五中')">加入收藏</a>
+                 </div>
+                 <div class="blank"></div>
+                 <div class="siteSearch">
+	<a href="javascript:gSearch()" class="searchBtn">搜索</a>
+	<input type="text" maxlength="50" id="topKeyWord" class="keyWord" value="请输入搜索关键字" onfocus="this.value='';this.style.color='#333'" />
+</div>
+
+<script type="text/javascript">
+	if( ''!='' ){ document.getElementById('topKeyWord').value=''; }
+	document.getElementById("topKeyWord").onkeydown=function(e){
+	 e = e || window.event;
+	if(e.keyCode==13) {gSearch();}
+}
+
+function gSearch(){
+	var keyword = document.getElementById('topKeyWord').value;
+	if(keyword=='' || keyword=="请输入搜索关键字"){ alert("请输入搜索关键字"); }
+	else{
+		window.location = '/search.aspx?searchtype=0&fieldOption=title&Keyword='+encodeURI(keyword);
+	}
+}
+</script>
+              </div>
+          </div>       
+      </div>
+      <div class="nav">
+          <ul id="mainNav" class="mainNav"><li class="li1 first1 on1" id="liID-2"><h4 class="h1" id="hID-2"><a class="a1" id="aID-2" href="/Default.aspx">首页</a></h4></li><li class="li1 hasUl1" id="liID164"><h4 class="h1" id="hID164"><a class="a1" id="aID164" href="/Category_164/Index.aspx">五中介绍</a></h4><ul class="ul1" id="ulID164">
+				<li class="li2 first2" id="liID22">
+  <h4 class="h2" id="hID22"><a class="a2" id="aID22" href="/Category_22/Index.aspx">学校介绍</a></h4>
+</li>
+<li class="li2" id="liID23">
+  <h4 class="h2" id="hID23"><a class="a2" id="aID23" href="/Category_23/Index.aspx">领导关怀</a></h4>
+</li>
+<li class="li2" id="liID24">
+  <h4 class="h2" id="hID24"><a class="a2" id="aID24" href="/Category_24/Index.aspx">办学历史</a></h4>
+</li>
+<li class="li2 last2" id="liID26">
+  <h4 class="h2" id="hID26"><a class="a2" id="aID26" href="/Category_26/Index.aspx">辉煌成就</a></h4>
+</li>
+			</ul></li><li class="li1 hasUl1" id="liID1176"><h4 class="h1" id="hID1176"><a class="a1" id="aID1176" href="/Category_1176/Index.aspx">新闻资讯</a></h4><ul class="ul1" id="ulID1176">
+				<li class="li2 first2" id="liID36">
+  <h4 class="h2" id="hID36"><a class="a2" id="aID36" href="/Category_36/Index.aspx">教育新闻</a></h4>
+</li>
+<li class="li2" id="liID37">
+  <h4 class="h2" id="hID37"><a class="a2" id="aID37" href="/Category_37/Index.aspx">通知公告</a></h4>
+</li>
+<li class="li2 last2" id="liID1182">
+  <h4 class="h2" id="hID1182"><a class="a2" id="aID1182" href="/Category_1182/Index.aspx">外媒看五中</a></h4>
+</li>
+			</ul></li><li class="li1 hasUl1" id="liID72"><h4 class="h1" id="hID72"><a class="a1" id="aID72" href="/Category_72/Index.aspx">五中党建</a></h4><ul class="ul1" id="ulID72">
+				<li class="li2 first2" id="liID1202">
+  <h4 class="h2" id="hID1202"><a class="a2" id="aID1202" href="/Category_1202/Index.aspx">组织机构</a></h4>
+</li>
+<li class="li2" id="liID1203">
+  <h4 class="h2" id="hID1203"><a class="a2" id="aID1203" href="/Category_1203/Index.aspx">支部活动</a></h4>
+</li>
+<li class="li2" id="liID73">
+  <h4 class="h2" id="hID73"><a class="a2" id="aID73" href="/Category_73/Index.aspx">五中团建</a></h4>
+</li>
+<li class="li2 last2" id="liID1204">
+  <h4 class="h2" id="hID1204"><a class="a2" id="aID1204" href="/Category_1204/Index.aspx">学习资料</a></h4>
+</li>
+			</ul></li><li class="li1 hasUl1" id="liID1185"><h4 class="h1" id="hID1185"><a class="a1" id="aID1185" href="/Category_1185/Index.aspx">德育频道</a></h4><ul class="ul1" id="ulID1185">
+				<li class="li2 first2" id="liID161">
+  <h4 class="h2" id="hID161"><a class="a2" id="aID161" href="/Category_161/Index.aspx">德育动态</a></h4>
+</li>
+<li class="li2" id="liID1187">
+  <h4 class="h2" id="hID1187"><a class="a2" id="aID1187" href="/Category_1187/Index.aspx">心理与健康</a></h4>
+</li>
+<li class="li2" id="liID163">
+  <h4 class="h2" id="hID163"><a class="a2" id="aID163" href="/Category_163/Index.aspx">德育科研</a></h4>
+</li>
+<li class="li2 last2" id="liID1188">
+  <h4 class="h2" id="hID1188"><a class="a2" id="aID1188" href="/Category_1188/Index.aspx">德育资源</a></h4>
+</li>
+			</ul></li><li class="li1 hasUl1" id="liID1178"><h4 class="h1" id="hID1178"><a class="a1" id="aID1178" href="/Category_1178/Index.aspx">教育科研</a></h4><ul class="ul1" id="ulID1178">
+				<li class="li2 first2" id="liID48">
+  <h4 class="h2" id="hID48"><a class="a2" id="aID48" href="/Category_48/Index.aspx">教育教学</a></h4>
+</li>
+<li class="li2 last2" id="liID49">
+  <h4 class="h2" id="hID49"><a class="a2" id="aID49" href="/Category_49/Index.aspx">科研信息</a></h4>
+</li>
+			</ul></li><li class="li1 hasUl1" id="liID1177"><h4 class="h1" id="hID1177"><a class="a1" id="aID1177" href="/Category_1177/Index.aspx">教师风采</a></h4><ul class="ul1" id="ulID1177">
+				<li class="li2 first2" id="liID42">
+  <h4 class="h2" id="hID42"><a class="a2" id="aID42" href="/Category_42/Index.aspx">管理核心</a></h4>
+</li>
+<li class="li2" id="liID43">
+  <h4 class="h2" id="hID43"><a class="a2" id="aID43" href="/Category_43/Index.aspx">精英中层</a></h4>
+</li>
+<li class="li2" id="liID44">
+  <h4 class="h2" id="hID44"><a class="a2" id="aID44" href="/Category_44/Index.aspx">名师选录</a></h4>
+</li>
+<li class="li2 last2" id="liID71">
+  <h4 class="h2" id="hID71"><a class="a2" id="aID71" href="/Category_71/Index.aspx">教工活动</a></h4>
+</li>
+			</ul></li><li class="li1 hasUl1" id="liID1183"><h4 class="h1" id="hID1183"><a class="a1" id="aID1183" href="/Category_1183/Index.aspx">部门简报</a></h4><ul class="ul1" id="ulID1183">
+				<li class="li2 first2" id="liID84">
+  <h4 class="h2" id="hID84"><a class="a2" id="aID84" href="/Category_84/Index.aspx">学生处</a></h4>
+</li>
+<li class="li2" id="liID76">
+  <h4 class="h2" id="hID76"><a class="a2" id="aID76" href="/Category_76/Index.aspx">办公室</a></h4>
+</li>
+<li class="li2" id="liID78">
+  <h4 class="h2" id="hID78"><a class="a2" id="aID78" href="/Category_78/Index.aspx">教导处</a></h4>
+</li>
+<li class="li2" id="liID83">
+  <h4 class="h2" id="hID83"><a class="a2" id="aID83" href="/Category_83/Index.aspx">总务处</a></h4>
+</li>
+<li class="li2" id="liID1199">
+  <h4 class="h2" id="hID1199"><a class="a2" id="aID1199" href="/Category_1199/Index.aspx">年级组</a></h4>
+</li>
+<li class="li2 last2" id="liID1200">
+  <h4 class="h2" id="hID1200"><a class="a2" id="aID1200" href="/Category_1200/Index.aspx">工会</a></h4>
+</li>
+			</ul></li><li class="li1 last1 hasUl1" id="liID1215"><h4 class="h1" id="hID1215"><a class="a1" id="aID1215" href="/Category_1215/Index.aspx">校园足球</a></h4><ul class="ul1" id="ulID1215">
+				<li class="li2 first2" id="liID1216">
+  <h4 class="h2" id="hID1216"><a class="a2" id="aID1216" href="/Category_1216/Index.aspx">组织领导</a></h4>
+</li>
+<li class="li2" id="liID1217">
+  <h4 class="h2" id="hID1217"><a class="a2" id="aID1217" href="/Category_1217/Index.aspx">教学与训练</a></h4>
+</li>
+<li class="li2" id="liID1218">
+  <h4 class="h2" id="hID1218"><a class="a2" id="aID1218" href="/Category_1218/Index.aspx">竞赛与交流</a></h4>
+</li>
+<li class="li2 last2" id="liID1219">
+  <h4 class="h2" id="hID1219"><a class="a2" id="aID1219" href="/Category_1219/Index.aspx">条件保障</a></h4>
+</li>
+			</ul></li></ul><script type="text/javascript">
+			jQuery(function($){
+				var navST;
+				var name='mainNav';
+				var t=200;
+				var type='2';
+				var removeOn='false';
+				var effect='fade';
+				var appendItem = '#';
+				var li="#"+name+" li";
+
+				if( !$("#"+name+" .li1").hasClass("on1") ){ $("#"+name+" .li1").first().addClass("on1"); } //默认第一个加.on1类
+				if(type=='1'){ li="#"+name+" .li1"; }
+				if( appendItem!='#'){ //插入内容
+				var appendHtml = $(appendItem).html();  $(li).first().append( appendHtml );  $(appendItem).remove(); }
+
+				if(type=='3'){ $("#"+name+" .on1").find("ul").first().show(); }
+
+				$(li).hover(function(){
+					var curItem = $(this);
+					var onNum = (curItem.attr("class").split(" "))[0].replace("li","")
+					navST = setTimeout(function(){//延时触发
+					$(li).removeClass("on"+onNum); curItem.addClass("on"+onNum);
+					if( $("ul:first",curItem).css("display") !="block" ){ $(li+" .ul"+onNum).hide(); 
+						if( effect=='fade') $("ul:first",curItem).fadeIn(t);
+						else $("ul:first",curItem).slideDown(t);
+					};
+					navST = null;
+					},t);
+				}, function(){
+					if(navST!=null)clearTimeout(navST);
+					if(type=='1' || type=='2'){ 
+						if( effect=='fade') $(this).find("ul").first().fadeOut(t); 
+						else $(this).find("ul").first().slideUp(t); 
+					}
+					if (removeOn=='true') {  $(this).removeClass("on1"); }
+					},t); //end hover
+			});
+			</script>
+      </div>
+   </div>
+
+
+   <!--大焦点图 S-->
+   <div id="focusBox_b" class="focusBox">		         
+         
+         <div class="bd">
+  <ul>
+    <li class="li1">
+      <div class="pic"><img src="/UploadFiles/UploadADPic/201711031730571916_1600_400.jpg"></div>
+      <div class="con">
+        <div class="title"><a title="运动乐趣" href="http://" target="_blank">运动乐趣</a></div>
+        <div class="bg"></div>
+      </div>
+    </li>
+    <li class="li2">
+      <div class="pic"><img src="/UploadFiles/UploadADPic/201711031725286021_1600_400.jpg"></div>
+      <div class="con">
+        <div class="title"><a title="金龙风采" href="http://" target="_blank">金龙风采</a></div>
+        <div class="bg"></div>
+      </div>
+    </li>
+    <li class="li3">
+      <div class="pic"><img src="/UploadFiles/UploadADPic/201711031726200838_1600_400.jpg"></div>
+      <div class="con">
+        <div class="title"><a title="校园绿荫" href="http://" target="_blank">校园绿荫</a></div>
+        <div class="bg"></div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="hd">
+  <ul>
+    <li class="li1"><span>1</span></li>
+    <li class="li2"><span>2</span></li>
+    <li class="li3"><span>3</span></li>
+  </ul>
+</div>
+
+      <script language="javascript"> jQuery("#focusBox_b").slide({ mainCell:".bd ul",effect: "fade",delayTime:800,interTime:3500,autoPlay:true});</script>
+   </div>
+   <!--大焦点图 S-->
+ 
+   <div class="content sw">
+       <div id="clounmA" class="cloumn">
+           <div class="side">
+               <div class="introduc common_side">
+                  <div class="hd">
+                     <h3><a href="/Category_22/Index.aspx">学校介绍</a></h3>
+                  </div>
+                  <div class="bd">
+
+<div>
+
+<embed allowfullscreen="true" autostart="false" flashvars="file=/UploadFiles/jjwzxc.flv&amp;showplayer=always&amp;showiconplay=true&amp;usefullscreen=true" height="200" src="/Editor/plugins/media/swf/player_flv_maxi.swf" width="250"></embed>
+
+
+
+</div>
+
+              <div> <p>       江津五中位于长江之滨，环境优雅，设施一流，质量一流，是江津区直属高完中。办学历史可上溯到清代乾隆年间杜氏家政书院（1777年），至今已有230多年。从1942年开办中学以来，培养了高初中毕业生3万多人…</p></div>
+
+ 
+
+                            </div>
+               </div>
+               <div class="common_side">
+                   <div class="hd">
+                       <h3><a href="/Category_42/Index.aspx">管理核心</a></h3>
+                       <a class="more" href="/Category_42/Index.aspx">>>MORE</a>
+                   </div>
+                   <div class="bd">
+
+               <ul class="topicList topicHasPic">                             
+            <li class="t"><div class="pic"><a title="牟长贵" href="/Item/2003.aspx" target="_blank"><img src="http://www.cqjjwz.com/UploadFiles/jsfc/2012/9/2012916133051.jpg"></a></div>
+          <div class="con"><div class="title"><a class="tit" href="/Item/2003.aspx" target="_blank" title="牟长贵">牟长贵</a></div>
+         <div class="intro">重庆市江津第五中学校 校长兼党委副书记…<a class="more" href="/Item/2003.aspx" target="_blank">[详细]
+										</a></div></div></li>
+         <li class="t"><div class="pic"><a title="刘祥" href="/Item/630.aspx" target="_blank"><img src="http://www.cqjjwz.com/UploadFiles/jsfc/2012/9/201291613333.jpg"></a></div>
+          <div class="con"><div class="title"><a class="tit" href="/Item/630.aspx" target="_blank" title="刘祥">刘祥</a></div>
+         <div class="intro">重庆市江津第五中学校 党委书记 副校长…<a class="more" href="/Item/630.aspx" target="_blank">[详细]
+										</a></div></div></li>          
+                          </ul>
+
+
+                   </div>
+               </div>
+           </div>
+           
+           <div class="clounmA_l">
+              <div class="clounmA_lt">
+                 <div class="Thd">
+                    <h3><a href="/Category_36/Index.aspx">教育新闻</a></h3>
+                 </div>
+                 <div class="Tbd">
+                     <!--小焦点图 S-->
+                     <div id="focusBox_s" class="focusBox">	
+                        
+            <div class="bd">
+  <ul>
+    <li>
+      <div class="pic"><a href="/Item/3887.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/5/201852811335_320_240.jpg"></a></div>
+      <div class="con">
+        <div class="bg"></div>
+        <div class="title"><a href="/Item/3887.aspx" target="_blank">初2018级：砥砺奋发 载梦前行</a></div>
+      </div>
+    </li>
+    <li>
+      <div class="pic"><a href="/Item/3885.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/5/201852384044_320_240.jpg"></a></div>
+      <div class="con">
+        <div class="bg"></div>
+        <div class="title"><a href="/Item/3885.aspx" target="_blank">江津五中敬老志愿服务接力启动</a></div>
+      </div>
+    </li>
+    <li>
+      <div class="pic"><a href="/Item/3883.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/5/2018521153729_320_240.jpg"></a></div>
+      <div class="con">
+        <div class="bg"></div>
+        <div class="title"><a href="/Item/3883.aspx" target="_blank">五中离退休支部、五中退协组织开展学习教育…</a></div>
+      </div>
+    </li>
+    <li>
+      <div class="pic"><a href="/Item/3882.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/5/201852194219_320_240.JPG"></a></div>
+      <div class="con">
+        <div class="bg"></div>
+        <div class="title"><a href="/Item/3882.aspx" target="_blank">江津五中：30学子公益游学 感悟知识力量逐…</a></div>
+      </div>
+    </li>
+    <li>
+      <div class="pic"><a href="/Item/3878.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/5/20185148236_320_240.jpg"></a></div>
+      <div class="con">
+        <div class="bg"></div>
+        <div class="title"><a href="/Item/3878.aspx" target="_blank">五中志愿者培训总结及换届活动</a></div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="hd">
+  <ul>
+    <li class="li1"><span>1</span></li>
+    <li class="li2"><span>2</span></li>
+    <li class="li3"><span>3</span></li>
+    <li class="li4"><span>4</span></li>
+    <li class="li5"><span>5</span></li>
+  </ul>
+</div>
+          
+                        <script language="javascript"> jQuery("#focusBox_s").slide({ mainCell:".bd ul",effect: "fade",delayTime:800,interTime:3500,autoPlay:true});</script>
+                     </div>
+                     <!--小焦点图 E-->
+                     <div class="clounmA_ltr">
+                         <div class="hd">
+                            <ul>
+                            
+                               <li><a href="/Category_36/Index.aspx">教育新闻</a></li>
+                               <li><a href="/Category_1182/Index.aspx">外媒看五中</a></li> 
+                           </ul>
+                         </div>
+                         <div class="bd">
+                             
+                             <ul class="infoList">
+                                
+            <li><span class="date">2018-05-28</span><a href="/Item/3887.aspx" target="_blank" title="标题：初2018级：砥砺奋发 载梦前行&#xD;点击数：9&#xD;发表时间：18年05月28日">初2018级：砥砺奋发 载梦前行</a></li><li><span class="date">2018-05-23</span><a href="/Item/3885.aspx" target="_blank" title="标题：江津五中敬老志愿服务接力启动&#xD;点击数：5&#xD;发表时间：18年05月23日">江津五中敬老志愿服务接力启动</a></li><li><span class="date">2018-05-22</span><a href="/Item/3884.aspx" target="_blank" title="标题：四月工作信息综述&#xD;点击数：13&#xD;发表时间：18年05月22日">四月工作信息综述</a></li><li><span class="date">2018-05-21</span><a href="/Item/3883.aspx" target="_blank" title="标题：五中离退休支部、五中退协组织开展学习教育活动&#xD;点击数：33&#xD;发表时间：18年05月21日">五中离退休支部、五中退协组织开展学习教育活动</a></li><li><span class="date">2018-05-21</span><a href="/Item/3882.aspx" target="_blank" title="标题：江津五中：30学子公益游学 感悟知识力量逐梦未来&#xD;点击数：135&#xD;发表时间：18年05月21日">江津五中：30学子公益游学 感悟知识力量逐梦未来</a></li><li><span class="date">2018-05-14</span><a href="/Item/3879.aspx" target="_blank" title="标题：江津五中：成功举行校园师生十佳歌手赛&#xD;点击数：27&#xD;发表时间：18年05月14日">江津五中：成功举行校园师生十佳歌手赛</a></li><li><span class="date">2018-05-14</span><a href="/Item/3878.aspx" target="_blank" title="标题：五中志愿者培训总结及换届活动&#xD;点击数：16&#xD;发表时间：18年05月14日">五中志愿者培训总结及换届活动</a></li><li class="last"><span class="date">2018-05-07</span><a href="/Item/3876.aspx" target="_blank" title="标题：江津五中：校园十佳歌手赛唱响新时代青春华音&#xD;点击数：50&#xD;发表时间：18年05月07日">江津五中：校园十佳歌手赛唱响新时代青春华音</a></li>
+          
+                             </ul>
+                             <ul class="infoList">
+                                
+            <li><span class="date">2018-04-23</span><a href="/Item/3866.aspx" target="_blank" title="标题：江津网——江津五中：600学生研学旅行 在快乐中感受乡村巨变&#xD;点击数：32&#xD;发表时间：18年04月23日">江津网——江津五中：600学生研学旅行 在快乐中…</a></li><li><span class="date">2018-04-03</span><a href="/Item/3852.aspx" target="_blank" title="标题：江津网——江津五中：师生祭扫革命烈士墓 缅怀先烈&#xD;点击数：76&#xD;发表时间：18年04月03日">江津网——江津五中：师生祭扫革命烈士墓 缅怀…</a></li><li><span class="date">2018-03-22</span><a href="/Item/3838.aspx" target="_blank" title="标题：区教委网：江津五中：校园掀起球类运动热潮&#xD;点击数：84&#xD;发表时间：18年03月22日">区教委网：江津五中：校园掀起球类运动热潮</a></li><li><span class="date">2018-01-02</span><a href="/Item/3802.aspx" target="_blank" title="标题：江津网——江津五中：青春活力爱国时尚 3000师生“闹翻了”！&#xD;点击数：353&#xD;发表时间：18年01月02日">江津网——江津五中：青春活力爱国时尚 3000师…</a></li><li><span class="date">2017-12-18</span><a href="/Item/3787.aspx" target="_blank" title="标题：区教委网——江津五中：七校教研“串门子” 助力教学“拓路子”&#xD;点击数：381&#xD;发表时间：17年12月18日">区教委网——江津五中：七校教研“串门子” 助…</a></li><li><span class="date">2017-12-13</span><a href="/Item/3782.aspx" target="_blank" title="标题：区教委网——加强法治教育 为学生撑起保护伞&#xD;点击数：409&#xD;发表时间：17年12月13日">区教委网——加强法治教育 为学生撑起保护伞</a></li><li><span class="date">2017-11-27</span><a href="/Item/3763.aspx" target="_blank" title="标题：江津网-[点赞江津·敬业]一位60后教师的“三无人生”&#xD;点击数：446&#xD;发表时间：17年11月27日">江津网-[点赞江津·敬业]一位60后教师的“三无…</a></li><li class="last"><span class="date">2017-11-27</span><a href="/Item/3762.aspx" target="_blank" title="标题：江津网-【点赞江津】必须点赞！为这群&quot;丁卯春晖&quot;江津人&#xD;点击数：446&#xD;发表时间：17年11月27日">江津网-【点赞江津】必须点赞！为这群"丁卯春晖…</a></li>
+          
+                             </ul>
+                         </div>
+                         <script type="text/javascript">jQuery(".clounmA_ltr").slide()</script>
+                     </div>
+                 </div>
+              </div> 
+              <div class="clounmA_lm mat">
+                  <div class="notice">
+                      <div class="hd">
+                         <h3><a href="/Category_37/Index.aspx">通知公告</a></h3> 
+                         <a class="more" href="/Category_37/Index.aspx">>>MORE</a>
+                      </div>
+                      <div class="bd">	
+                         <ul class="infoList">
+                           
+            <li><span class="date"><i class="year">2018</i><i>05-28</i></span><a href="/Item/3888.aspx" target="_blank" title="标题：2018年春季教职工球类赛结果&#xD;点击数：7&#xD;发表时间：18年05月28日">2018年春季教职工球类赛结果</a></li><li><span class="date"><i class="year">2018</i><i>05-28</i></span><a href="/Item/3886.aspx" target="_blank" title="标题：第十四周工作安排&#xD;点击数：7&#xD;发表时间：18年05月28日">第十四周工作安排</a></li><li><span class="date"><i class="year">2018</i><i>05-21</i></span><a href="/Item/3881.aspx" target="_blank" title="标题：第十三周工作安排&#xD;点击数：18&#xD;发表时间：18年05月21日">第十三周工作安排</a></li><li><span class="date"><i class="year">2018</i><i>05-14</i></span><a href="/Item/3877.aspx" target="_blank" title="标题：第十二周工作安排&#xD;点击数：24&#xD;发表时间：18年05月14日">第十二周工作安排</a></li><li class="last"><span class="date"><i class="year">2018</i><i>05-06</i></span><a href="/Item/3875.aspx" target="_blank" title="标题：第十一周工作安排&#xD;点击数：29&#xD;发表时间：18年05月06日">第十一周工作安排</a></li>
+          
+                         </ul>
+                      </div>
+                  </div>
+                  <div class="administrative">
+                      <div class="hd">
+                         <h3><a href="/Category_72/Index.aspx">五中党建</a></h3> 
+                         <a class="more" href="/Category_72/Index.aspx">>>MORE</a>
+                      </div>
+                      <div class="bd">
+                          <ul class="topicList topicHasPic">
+                             
+            <li class="t"><div class="pic"><a title="江津五中开展5月主题党日活动" href="/Item/3880.aspx" target="_blank"><img src="/UploadFiles/wzdj/2018/5/201851611251_170_126.JPG"></a></div><div class="con"><div class="title"><a class="tit" href="/Item/3880.aspx" target="_blank" title="标题：江津五中开展5月主题党日活动&#xD;点击数：15&#xD;发表时间：18年05月16日">江津五中开展5月主题党日活动</a></div><div class="intro"> 
+										 
+				
+						江津五中开展5月主题党日活动
+				
+		
+ 
+5月11日上午，江津五中党委组织全体党员、入党积极分子开展5月主题党日活动。
+
+区委…
+										<a class="more" href="/Item/3880.aspx" target="_blank">[详细]
+										</a></div></div></li><li class="n"><span class="date">2018-04-11</span><a class="tit" href="/Item/3854.aspx" target="_blank" title="标题：江津五中开展4月主题党日活动&#xD;点击数：45&#xD;发表时间：18年04月11日">江津五中开展4月主题党日活动</a></li><li class="n"><span class="date">2018-04-03</span><a class="tit" href="/Item/3848.aspx" target="_blank" title="标题：校党委：召开3月教师政治学习会&#xD;点击数：73&#xD;发表时间：18年04月03日">校党委：召开3月教师政治学习会</a></li><li class="n"><span class="date">2018-04-02</span><a class="tit" href="/Item/3847.aspx" target="_blank" title="标题：二支部：开展批评与自我批评 发挥党员先锋模范作用&#xD;点击数：49&#xD;发表时间：18年04月02日">二支部：开展批评与自我批评 发挥党员先锋模范作用</a></li><li class="n"><span class="date">2018-03-29</span><a class="tit" href="/Item/3845.aspx" target="_blank" title="标题：江津五中第一支部召开民主测评会&#xD;点击数：30&#xD;发表时间：18年03月29日">江津五中第一支部召开民主测评会</a></li><li class="n last"><span class="date">2018-03-29</span><a class="tit" href="/Item/3844.aspx" target="_blank" title="标题：江津五中第一支部召开组织生活会&#xD;点击数：27&#xD;发表时间：18年03月29日">江津五中第一支部召开组织生活会</a></li>
+          
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+           </div>
+       </div>
+       
+       <div class="blank"></div>
+       
+       <div id="cloumnB" class="cloumn pic_campus">
+           <div class="hd">
+               <h3>
+<a href="/Category_1176/Index.aspx">新闻资讯</a>
+
+               </h3>
+           </div>
+           <!--<a class="sPrev" href="javascript:void(0)"></a>-->
+           <div class="bd">
+               <ul class="txtPicListB">
+                  
+                <li class="t"><div class="pic"><a title="初2018级：砥砺奋发 载梦前行" href="/Item/3887.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/5/201852811335_200_140.jpg"></a></div><div class="con"><div class="title"><span class="date">05-28</span><a class="tit" href="/Item/3887.aspx" target="_blank" title="标题：初2018级：砥砺奋发 载梦前行&#xD;点击数：9&#xD;发表时间：18年05月28日">初2018级：砥砺奋…</a></div></div></li><li class="t"><div class="pic"><a title="江津五中敬老志愿服务接力启动" href="/Item/3885.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/5/201852384044_200_140.jpg"></a></div><div class="con"><div class="title"><span class="date">05-23</span><a class="tit" href="/Item/3885.aspx" target="_blank" title="标题：江津五中敬老志愿服务接力启动&#xD;点击数：5&#xD;发表时间：18年05月23日">江津五中敬老志愿…</a></div></div></li><li class="t"><div class="pic"><a title="五中离退休支部、五中退协组织开展学习教育活动" href="/Item/3883.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/5/2018521153729_200_140.jpg"></a></div><div class="con"><div class="title"><span class="date">05-21</span><a class="tit" href="/Item/3883.aspx" target="_blank" title="标题：五中离退休支部、五中退协组织开展学习教育活动&#xD;点击数：33&#xD;发表时间：18年05月21日">五中离退休支部、…</a></div></div></li><li class="t"><div class="pic"><a title="江津五中：30学子公益游学 感悟知识力量逐梦未来" href="/Item/3882.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/5/201852194219_200_140.JPG"></a></div><div class="con"><div class="title"><span class="date">05-21</span><a class="tit" href="/Item/3882.aspx" target="_blank" title="标题：江津五中：30学子公益游学 感悟知识力量逐梦未来&#xD;点击数：135&#xD;发表时间：18年05月21日">江津五中：30学子…</a></div></div></li><li class="t"><div class="pic"><a title="江津五中开展5月主题党日活动" href="/Item/3880.aspx" target="_blank"><img src="/UploadFiles/wzdj/2018/5/201851611251_200_140.JPG"></a></div><div class="con"><div class="title"><span class="date">05-16</span><a class="tit" href="/Item/3880.aspx" target="_blank" title="标题：江津五中开展5月主题党日活动&#xD;点击数：15&#xD;发表时间：18年05月16日">江津五中开展5月…</a></div></div></li><li class="t"><div class="pic"><a title="五中志愿者培训总结及换届活动" href="/Item/3878.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/5/20185148236_200_140.jpg"></a></div><div class="con"><div class="title"><span class="date">05-14</span><a class="tit" href="/Item/3878.aspx" target="_blank" title="标题：五中志愿者培训总结及换届活动&#xD;点击数：16&#xD;发表时间：18年05月14日">五中志愿者培训总…</a></div></div></li><li class="t"><div class="pic"><a title="江津五中：校园十佳歌手赛唱响新时代青春华音" href="/Item/3876.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/5/201857211822_200_140.JPG"></a></div><div class="con"><div class="title"><span class="date">05-07</span><a class="tit" href="/Item/3876.aspx" target="_blank" title="标题：江津五中：校园十佳歌手赛唱响新时代青春华音&#xD;点击数：50&#xD;发表时间：18年05月07日">江津五中：校园十…</a></div></div></li><li class="t"><div class="pic"><a title="初2018级：开展节前安全教育 确保学生人身安全" href="/Item/3874.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/5/201851205922_200_140.jpg"></a></div><div class="con"><div class="title"><span class="date">05-01</span><a class="tit" href="/Item/3874.aspx" target="_blank" title="标题：初2018级：开展节前安全教育 确保学生人身安全&#xD;点击数：38&#xD;发表时间：18年05月01日">初2018级：开展节…</a></div></div></li><li class="t"><div class="pic"><a title="江津五中：600学生研学旅行 在快乐中感受乡村巨变" href="/Item/3865.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/4/20184238751_200_140.jpg"></a></div><div class="con"><div class="title"><span class="date">04-23</span><a class="tit" href="/Item/3865.aspx" target="_blank" title="标题：江津五中：600学生研学旅行 在快乐中感受乡村巨变&#xD;点击数：65&#xD;发表时间：18年04月23日">江津五中：600学…</a></div></div></li><li class="t"><div class="pic"><a title="江津五中：走学团课 让革命精神“入眼、入心、入脑”" href="/Item/3863.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/4/20184201542581_200_140.JPG"></a></div><div class="con"><div class="title"><span class="date">04-20</span><a class="tit" href="/Item/3863.aspx" target="_blank" title="标题：江津五中：走学团课 让革命精神“入眼、入心、入脑”&#xD;点击数：82&#xD;发表时间：18年04月20日">江津五中：走学团…</a></div></div></li><li class="t"><div class="pic"><a title="江津五中：获区“圆梦杯”教工男子篮球赛二等奖" href="/Item/3862.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/4/201842010637_200_140.jpg"></a></div><div class="con"><div class="title"><span class="date">04-20</span><a class="tit" href="/Item/3862.aspx" target="_blank" title="标题：江津五中：获区“圆梦杯”教工男子篮球赛二等奖&#xD;点击数：63&#xD;发表时间：18年04月20日">江津五中：获区“…</a></div></div></li><li class="t"><div class="pic"><a title="初2018级：倾听学生心声 促进教育教学水平提高" href="/Item/3861.aspx" target="_blank"><img src="/UploadFiles/xwzx/2018/4/2018419154523_200_140.jpg"></a></div><div class="con"><div class="title"><span class="date">04-19</span><a class="tit" href="/Item/3861.aspx" target="_blank" title="标题：初2018级：倾听学生心声 促进教育教学水平提高&#xD;点击数：35&#xD;发表时间：18年04月19日">初2018级：倾听学…</a></div></div></li>
+              
+
+               </ul>
+           </div>
+           <!--<a class="sNext" href="javascript:void(0)"></a>-->
+           <script type="text/javascript">jQuery(".pic_campus").slide({ mainCell:".bd ul",vis:4,prevCell:".sPrev",nextCell:".sNext",effect:"leftMarquee",interTime:50,autoPlay:true,trigger:"click"});</script>
+       </div>
+
+       <div id="cloumnC" class="cloumn friendship">
+           <div class="hd">
+               <h3><a href="/Category_1186/Index.aspx">友情链接</a></h3> 
+               <a class="more" href="/Category_1186/Index.aspx">>>MORE</a>
+           </div>
+           <div class="bd">
+               <ul>
+                <li><a href="" target="_self">江津网</a></li>
+<li><a href="" target="_self">石门镇人民政府</a></li>
+<li><a href="" target="_self">重庆教师研修网</a></li>
+<li><a href="" target="_self">江津教育委员会</a></li>
+<li><a href="" target="_self">重庆教研网</a></li>
+<li><a href="" target="_self">重庆德育网</a></li>
+              </ul>
+           </div>
+       </div>
+       
+   </div>
+   
+   <div class="footer">
+       <div class="sw">
+         <!--<div class="footer_l"></div>-->
+         <div class="footer_l">Copyright 2013 Powereasy Goverment All Rights Reserved  重庆市江津第五中学校｜版权所有 <br/>
+          地址：重庆市江津区石门镇金龙街　邮政编码：402292  联系电话：023-47371107　传 真：023-47371107<br/>
+          渝ICP备09009993号 教育网站前置审批号：<A href="http://wzmis.ctbu.edu.cn" target=_blank>CQJY2012135</a>
+          <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50011602500203" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://www.cqjjwz.com/UploadFiles/UploadADPic/201606160937433055.png" style="float:left;"/>公安备案号:50011602500203</a>
+         </div>
+<div class="footer_r"><img src="/Template/Default/Skin/images/PE/ewm.png" /></div>
+         
+       </div>
+   </div>
+   
+</div>
+</body>
+</html>

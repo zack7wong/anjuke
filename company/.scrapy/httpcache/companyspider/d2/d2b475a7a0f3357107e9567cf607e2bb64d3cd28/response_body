@@ -1,0 +1,2405 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--上面的代码是操作缓存的-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<iframe src="../moduls/popwindow/openpopwindowsfragment.jsp" style="display:none"></iframe>
+<html>
+ <head>
+<title>南京二十九中教育集团初级中学</title>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<script src="../../../common/util.js"></script>
+<script src="../../../system/openfun.js"></script>
+<link href="0/infotdefault.css" rel="stylesheet" type="text/css">
+</head>
+<body text="#000000" leftmargin="0" topmargin="0">
+<table width="776" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td><table width="776" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td height="5"></td>
+  </tr>
+</table>
+<table width="776" border="0" cellpadding="0" cellspacing="0" align="CENTER">
+  <tr>
+    <td align="left">
+      
+
+
+
+
+
+
+
+<script>
+var logoFilePath = new Array();
+var bannerFilePath = new Array();
+
+	logoFilePath[0] = '1476686005968.jpg';
+
+
+	bannerFilePath[0] = '1447721160844.swf';
+
+	bannerFilePath[1] = '1400141093659.swf';
+
+var logoFileCount = logoFilePath.length;
+var bannerFileCount = bannerFilePath.length;
+var logoFileCurrentIndex = 0;
+var bannerFileCurrentIndex = 0;
+
+function getLogoBannerFilePath(isBanner){
+	if(!isBanner){
+	  if(logoFileCurrentIndex > logoFileCount - 1){
+		logoFileCurrentIndex -= logoFileCount;
+	  }
+	  return logoFilePath[logoFileCurrentIndex++];
+	}
+	else {
+	  if(bannerFileCurrentIndex > bannerFileCount - 1){
+		bannerFileCurrentIndex -= bannerFileCount;
+	  }
+	  return bannerFilePath[bannerFileCurrentIndex++];
+	}
+
+}
+
+
+
+function displayLogo(){
+var jsStr='';
+
+	
+	var logoBannerFilePath = '/cnet/dynamic/maintain/banner/photo/'+getLogoBannerFilePath(false);
+
+
+jsStr +=     '    <td width="250" align="left" height="145" valign="top">';
+if(logoBannerFilePath.toLowerCase().search(".swf$") != -1) {
+jsStr +=     '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"  width="250" height="145" >                                                                    ';
+jsStr +=     '  <param name="movie" value="' + logoBannerFilePath +'">                                                                                                                                                                                                                                                               ';
+jsStr +=     '  <param name="quality" value="high">';
+
+jsStr +=     '  <embed src="'+ logoBannerFilePath +'"  width="250" height="145" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="250" height="145" ></embed></object>';
+
+ }else {
+
+jsStr +=     '<img src="'+ logoBannerFilePath +'"  width="250" height="145" >';
+}
+
+jsStr +=     '</td>';
+
+	document.all('logoofunit').innerHTML = jsStr;
+}
+
+
+function displayBanner(){
+var jsStr='';
+
+
+	
+	var logoBannerFilePath = '/cnet/dynamic/maintain/banner/photo/'+getLogoBannerFilePath(true);
+
+
+jsStr +=     '    <td width="450" align="left" height="145" valign="top">';
+if(logoBannerFilePath.toLowerCase().search(".swf$") != -1) {
+jsStr +=     '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"  width="450" height="145" >                                                                    ';
+jsStr +=     '  <param name="movie" value="' + logoBannerFilePath +'">                                                                                                                                                                                                                                                               ';
+jsStr +=     '  <param name="quality" value="high">';
+
+jsStr +=     '  <embed src="'+ logoBannerFilePath +'"  width="450" height="145" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="450" height="145" ></embed></object>';
+
+ }else {
+
+jsStr +=     '<img src="'+ logoBannerFilePath +'"  width="450" height="145" >';
+}
+
+jsStr +=     '</td>';
+
+
+	document.all('bannerofunit').innerHTML = jsStr;
+}
+</script>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+
+<span id="logoofunit">
+&nbsp;
+</span>&nbsp;
+<span id="bannerofunit">
+&nbsp;
+</span>
+<script>
+
+displayLogo();
+displayBanner();
+
+setInterval("displayLogo();",600000);
+setInterval("displayBanner();", 600000);
+
+</script>
+  </tr>
+</table>
+</td>
+    <td width="15%" align="center">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td height="18">
+·<a href="#" onclick='window.external.AddFavorite(window.location.href,"南京二十九中教育集团初级中学")'>加入收藏
+</a></td></tr>
+<tr><td height="18">
+·<a href="#" onclick="this.style.behavior='url(#default#homepage)';this.sethomepage(window.location.href);return false;">设为主页
+</a></td></tr>
+<tr><td height="18">·<a href="mailto:fail2000@163.com">联系我们</a></td>
+</tr></table>
+
+	  </td>
+  </tr>
+</table>
+<table width="776" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td height="5"></td>
+  </tr>
+  <tr> 
+    <td height="34" class="menu"> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="">
+  <tr>
+ 
+
+</tr>
+<tr>
+ 
+
+  
+    
+    
+    <td  class="td_list_menu"    ><a href="index.jsp?unitid=1" title="&nbsp;主页" target="_blank" class="a_menu">&nbsp;主页</a></td>
+    
+    
+    <td  class="td_list_menu"    ><a href="subclasslist.do?unitid=1&clazz=291&branch=" title="学校概况" target="_self" class="a_menu">学校概况</a></td>
+    
+    
+    <td  class="td_list_menu"    ><a href="subclasslist.do?unitid=1&clazz=462&branch=" title="学校党建" target="_self" class="a_menu">学校党建</a></td>
+    
+    
+    <td  class="td_list_menu"    ><a href="subclasslist.do?unitid=1&clazz=292&branch=" title="新闻中心" target="_self" class="a_menu">新闻中心</a></td>
+    
+    
+    <td  class="td_list_menu"    ><a href="subclasslist.do?unitid=1&clazz=293&branch=" title="教师频道" target="_self" class="a_menu">教师频道</a></td>
+    
+    
+    <td  class="td_list_menu"    ><a href="subclasslist.do?unitid=1&clazz=294&branch=" title="学生频道" target="_self" class="a_menu">学生频道</a></td>
+    
+    
+    <td  class="td_list_menu"    ><a href="subclasslist.do?unitid=1&clazz=295&branch=" title="家长学校" target="_self" class="a_menu">家长学校</a></td>
+    
+    
+    <td  class="td_list_menu"    ><a href="subclasslist.do?unitid=1&clazz=296&branch=" title="教育科研" target="_self" class="a_menu">教育科研</a></td>
+    
+    
+    <td  class="td_list_menu"    ><a href="subclasslist.do?unitid=1&clazz=409&branch=" title="图书馆" target="_self" class="a_menu">图书馆</a></td>
+    
+    
+    <td  class="td_list_menu"    ><a href="subclasslist.do?unitid=1&clazz=364&branch=" title="网络应用" target="_self" class="a_menu">网络应用</a></td>
+    
+    
+    <td  class="td_list_menu"    ><a href="subclasslist.do?unitid=1&clazz=298&branch=" title="政策法规" target="_self" class="a_menu">政策法规</a></td>
+    
+    
+    <td  class="td_list_menu"    ><a href="mailto:jyfz29@vip.163.com" title="校长信箱" target="_blank" class="a_menu">校长信箱</a></td>
+    
+
+
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+</td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table> 
+
+<table width="778" border="0" cellspacing="0" cellpadding="0" align="CENTER" bgcolor="#FFFFFF">
+<tr> 
+<td align="center"> <marquee direction=left onMouseOut=this.start()
+onMouseOver=this.stop() scrollamount=8 scrolldelay=100 width=100%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0">
+  
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>     
+
+
+<table border="0" cellspacing="2">
+  <tr>
+    
+    
+
+    
+       
+
+    
+       
+    
+    <td>
+      <div align="left"><a class="a" href="itemviewer.do?unitid=1&id=4391&classifytype=importance&ignoreclassinformation=false&branch=" title="寒假工作公开承诺" target="_blank">
+            
+            <img src="/cnet/dynamic/maintain/item/accessory/1517545249849.jpg" alt="寒假工作公开承诺" width="120" height="90"  class="img_border_class">
+
+            
+
+</a>
+	
+</div>
+    </td>
+    
+
+    
+       
+    
+    <td>
+      <div align="left"><a class="a" href="itemviewer.do?unitid=1&id=4366&classifytype=importance&ignoreclassinformation=false&branch=" title="南京市第二十九中学初中部推优入团公示" target="_blank">
+            
+            <img src="/cnet/dynamic/maintain/item/accessory/1512105603827.jpg" alt="南京市第二十九中学初中部推优入团公示" width="120" height="90"  class="img_border_class">
+
+            
+
+</a>
+	
+</div>
+    </td>
+    
+
+    
+       
+    
+    <td>
+      <div align="left"><a class="a" href="itemviewer.do?unitid=1&id=4365&classifytype=importance&ignoreclassinformation=false&branch=" title="南京市第二十九中学初中部团员发展公示（2017/2018学年第一学期）" target="_blank">
+            
+            <img src="/cnet/dynamic/maintain/item/accessory/1512105536499.jpg" alt="南京市第二十九中学初中部团员发展公示（2017/2018学年第一学期）" width="120" height="90"  class="img_border_class">
+
+            
+
+</a>
+	
+</div>
+    </td>
+    
+
+    
+       
+    
+    <td>
+      <div align="left"><a class="a" href="itemviewer.do?unitid=1&id=4361&classifytype=importance&ignoreclassinformation=false&branch=" title="“正青春”志愿者服务队2017秋季招募啦" target="_blank">
+            
+            <img src="/cnet/dynamic/maintain/item/accessory/1511277857288.png" alt="“正青春”志愿者服务队2017秋季招募啦" width="120" height="90"  class="img_border_class">
+
+            
+
+</a>
+	
+</div>
+    </td>
+    
+
+    
+       
+
+    
+       
+    
+    <td>
+      <div align="left"><a class="a" href="itemviewer.do?unitid=1&id=3901&classifytype=importance&ignoreclassinformation=false&branch=" title="欢迎关注我校微信公众号" target="_blank">
+            
+            <img src="/cnet/dynamic/maintain/item/accessory/1443053857296.jpg" alt="欢迎关注我校微信公众号" width="120" height="90"  class="img_border_class">
+
+            
+
+</a>
+	
+</div>
+    </td>
+    
+  </tr>
+</table>
+
+ 
+ </td>
+  </tr>
+     <!--importance\segment\submoreitemsegment-->
+  <tr>
+    <td height="22"  colspan="8" align="right" valign="middle">
+      <a href="importanceitem.do?unitid=1&importance=58&branch=" target="_blank">更多...</a>
+    </td>
+  </tr> 
+</table>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</marquee></td>
+</tr>
+</table>
+
+
+<table width="776" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF" style="border-left:1px solid #3F413E;">
+  <tr>
+    <td width="173" valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="lefttop"></td>
+        </tr>
+        <tr>
+          <td class="leftbg">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="lefttitle1">校园公告</td>
+              </tr>
+              <tr>
+                <td class="pad">
+            <marquee height="120px" direction="up" scrollamount="1">
+			
+			
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+  	<td>
+  	    
+
+
+<table width="" border="0" cellpadding="0" cellspacing="2">
+  <tr>
+    
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4424&classifytype=clazz&ignoreclassinformation=false&branch=" title="2018年我校足球（男足）特长生招生工作方案" target="_self">2018年我校足球（男足）特长...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4423&classifytype=clazz&ignoreclassinformation=false&branch=" title="2018年我校武术特长生（小升初）招生工作方案" target="_self">2018年我校武术特长生（小升...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4422&classifytype=clazz&ignoreclassinformation=false&branch=" title="2018年我校艺术（管乐）特长生招生工作方案" target="_self">2018年我校艺术（管乐）特长...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4421&classifytype=clazz&ignoreclassinformation=false&branch=" title="管乐器材询价公告" target="_self">管乐器材询价公告</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4415&classifytype=clazz&ignoreclassinformation=false&branch=" title="体育服装询价公告" target="_self">体育服装询价公告</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+  </tr>
+</table>
+
+ 
+
+
+  	</td>
+  </tr>
+    <!--class\segment\submoreitemsegment-->
+  <tr>
+    <td height="22"  colspan="8" align="right" valign="middle">
+      <a href="classitem.do?unitid=1&clazz=417&ignoreclassinformation=false&branch=
+" target="_self">更多...</a>
+    </td>
+  </tr>
+
+</table>
+
+
+
+
+
+			
+			
+			
+			
+			
+			</marquee>
+				</td></tr></table>
+		  </td>
+        </tr>
+        <tr>
+          <td class="leftmiddle"></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="lefttop"></td>
+        </tr>
+        <tr>
+          <td class="leftbg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="lefttitle">在线调查</td>
+              </tr>
+              <tr>
+                <td align="center" class="pad">
+                  
+                  
+					
+					
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript">
+<!--
+function check_vote(the_form){
+	var surveyids = the_form.surveyids.value;
+	var surveyid_array = surveyids.split(",");
+
+	for (var i = 0; i < surveyid_array.length; i++){
+		vote = eval("the_form.vote"+surveyid_array[i]);
+		if(!check_radio(vote)) {alert("请填写完整的调查列表 ！");return false}
+	}
+	return true;
+}
+
+function check_radio(radioarray){
+	if(radioarray==null){
+		return true;
+	}else{
+		if(isNaN(radioarray.length)){//只有一个值得时候
+			if(radioarray.checked == true)
+				return true;
+		}else{
+			for(var i=0; i<radioarray.length; i++){
+				if(radioarray[i].checked == true)
+					return true;
+			}
+		}
+		return false;
+	}
+}
+-->
+</script>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+
+</table>
+<table width="100%" cellpadding="0" border="0" cellspacing="0">
+  <form action="surveyvoteresult.do?surveygroup=3&branch=&submitvote=true" method="post" name="form_survey" target="survey" id="" onSubmit="return check_vote(this);">
+    <tr>
+      <td>
+        
+        <table border="0" cellpadding="0" cellspacing="1" width="100%">
+		  <tr>
+		    <td class="td_title_survey" style="text-align:center" >网站升级</td>
+		  </tr>
+		  <tr>
+		    <td height="0" class="td_list_survey">你对校园网站升级、改版是否满意 
+
+ 
+</td>
+		  </tr>
+          <tr>
+			
+            
+          </tr>
+          <tr>
+            
+            <td height="22" class="td_list_survey" style="padding-left:10px;padding-right:10px">
+              
+              <input type="radio" value="61" name="vote35">
+               1.满意</td>
+			  <input type="hidden" value=" 1.满意" name="votevalue35_61">
+            
+            
+          </tr>
+          <tr>
+            
+            <td height="22" class="td_list_survey" style="padding-left:10px;padding-right:10px">
+              
+              <input type="radio" value="62" name="vote35">
+               2.不满意</td>
+			  <input type="hidden" value=" 2.不满意" name="votevalue35_62">
+            
+			<!--文本项-->
+			
+            
+          </tr>
+          <tr>
+            
+            <td height="22" class="td_list_survey" style="padding-left:10px;padding-right:10px">
+              <input type="text" value="" name="answer35" style="width:90%">
+			</td>
+            
+			<!--文本项end-->
+          </tr>
+        </table>
+        	
+        
+      </td>
+    </tr>
+
+    <tr>
+      <td align="center" height="40">
+        <input name="submit" type="submit" class="input_button_survey" value="提交">
+		        
+		&nbsp;&nbsp;
+        <input name="view" type="button" class="input_button_survey" id="view" onClick="OpenWindowCentered('surveyvoteresult.do?surveygroup=3&branch=','surveyvoteresult',windowFeaturesMajor)" value="查看" >
+		
+		<input name="surveyids" type="hidden" value="35">
+      </td>
+    </tr>
+
+  </form>
+</table>
+
+
+
+
+
+
+
+
+
+					
+                  
+                </td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td class="leftmiddle"></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="lefttop"></td>
+        </tr>
+        <tr>
+          <td class="leftbg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="lefttitle">信息查询</td>
+              </tr>
+              <tr>
+                <td align="center" class="pad">
+                  
+
+
+
+
+
+
+<table width="" border="0" cellpadding="0" cellspacing="2">
+  <form action="itemsearchresult.do" method="post" name="" target="_blank" id="">
+    <input name="branch" type="hidden" id="branch" value="">
+    <input name="forward" type="hidden" id="forward" value="/查询">
+    
+    
+    <tr>
+      <td class="td_list" height="25">
+<input name="keyword" type="text" class="input_text" id="keyword2" style="width='130';height:20px" onFocus="if(this.value=='请输入关键字'){this.value='';}" value="请输入关键字">
+      </td>
+    
+	</tr>
+    <tr>
+	
+      <td  class="td_list">
+        <select name="position" class="input_select" id="select" style="WIDTH='130';">
+          <option value="title" selected>查询标题</option>
+          <option value="brief">查询简介</option>
+          <option value="content">查询内容</option>
+          <option value="source">查询来源</option>
+          <option value="author">查询作者</option>
+        </select> </td>
+    
+	</tr>
+    <tr>
+	
+      <td class="td_list">
+        <select name="classof" class="input_select" id="select2" style="WIDTH='130';">
+          <option >所有栏目</option>
+          
+          <option value="418">资源上传下载</option>
+          
+          <option value="465">青奥宣传</option>
+          
+          <option value="473">社会主义核心价值观</option>
+          
+          <option value="474">国家公祭日</option>
+          
+          <option value="475">阳光体育与校园足球</option>
+          
+          <option value="477">法制教育</option>
+          
+          <option value="300">校园文化</option>
+          
+          <option value="301">历史沿革</option>
+          
+          <option value="460">领导班子</option>
+          
+          <option value="303">学校管理</option>
+          
+          <option value="304">办学特色</option>
+          
+          <option value="305">交流合作</option>
+          
+          <option value="427">招生宣传</option>
+          
+          <option value="306">图片新闻</option>
+          
+          <option value="307">教育新闻</option>
+          
+          <option value="308">上级发文</option>
+          
+          <option value="416">工作动态</option>
+          
+          <option value="417">要事公告</option>
+          
+          <option value="428">创建文明城市</option>
+          
+          <option value="429">赴川支教</option>
+          
+          <option value="432">行风评议</option>
+          
+          <option value="381">市区教研</option>
+          
+          <option value="316">会议通知</option>
+          
+          <option value="456">养生保健</option>
+          
+          <option value="317">教工活动</option>
+          
+          <option value="318">教师风采</option>
+          
+          <option value="319">教师主页</option>
+          
+          <option value="311">社团活动</option>
+          
+          <option value="312">班级主页</option>
+          
+          <option value="313">学生习作</option>
+          
+          <option value="314">学生风采</option>
+          
+          <option value="332">心理健康</option>
+          
+          <option value="433">家教百科</option>
+          
+          <option value="434">专家咨询</option>
+          
+          <option value="435">信息通报</option>
+          
+          <option value="436">推荐网站</option>
+          
+          <option value="328">教研论文</option>
+          
+          <option value="329">教研组网站</option>
+          
+          <option value="425">校本培训</option>
+          
+          <option value="472">社会主义核心价值观</option>
+          
+          <option value="481">语言文字工作</option>
+          
+          <option value="321">国家法规</option>
+          
+          <option value="322">地方法规</option>
+          
+          <option value="323">上级文件</option>
+          
+          <option value="324">校内规章</option>
+          
+          <option value="395">校办</option>
+          
+          <option value="396">教务处</option>
+          
+          <option value="400">教科室</option>
+          
+          <option value="397">学生处</option>
+          
+          <option value="398">总务处</option>
+          
+          <option value="399">信息处</option>
+          
+          <option value="426">通知</option>
+          
+          <option value="412">新书推荐</option>
+          
+          <option value="414">报刊目录</option>
+          
+          <option value="411">非智力课题研究</option>
+          
+          <option value="420">课改动态</option>
+          
+          <option value="421">校本课程</option>
+          
+          <option value="422">研究性学习</option>
+          
+          <option value="443">地理类</option>
+          
+          <option value="444">生物类</option>
+          
+          <option value="445">历史类</option>
+          
+          <option value="446">政治类</option>
+          
+          <option value="447">物理类</option>
+          
+          <option value="448">语文类</option>
+          
+          <option value="449">数学类</option>
+          
+          <option value="450">英语类</option>
+          
+          <option value="470">群众路线教育实践活动</option>
+          
+          <option value="471">组织生活</option>
+          
+          <option value="463">聚焦十八大</option>
+          
+          <option value="479">喜迎十九大</option>
+          
+        </select> </td>
+    
+	</tr>
+    <tr>
+      <td class="td_list"><input name="showpicurl" type="checkbox" id="showpicurl" value="TRUE">
+        列出文章的附件链接 </td>
+	</tr>
+    <tr>
+	
+      <td align="center" height="28">
+        <input name="Submit3" type="submit" class="input_button" value="查询">
+        
+        &nbsp;
+        <input name="Submit2" type="reset" class="input_button" value="重选">
+        
+      </td>
+    </tr>
+  </form>
+</table>
+
+
+
+                </td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td class="leftmiddle"></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="lefttop"></td>
+        </tr>
+        <tr>
+          <td class="leftbg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="lefttitle">友情链接</td>
+              </tr>
+              <tr>
+                <td align="center" class="pad">
+                  
+                  
+                  
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1">
+  
+  <tr>
+    <td>
+      
+<table border="0" cellpadding="0" cellspacing="2">
+  <tr>
+    <td class="td_list"><select name="select" style="WIDTH:130" onChange="if(this.selectedIndex > 0){window.open(this.options[this.selectedIndex].value,'_blank')}"  class="input_select" >
+        <option>--校内网络应用--</option>
+        
+        <option value="ftp://192.168.1.3">FTP服务</option>
+        
+      </select></td>
+  </tr>
+</table>
+
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      
+<table border="0" cellpadding="0" cellspacing="2">
+  <tr>
+    <td class="td_list"><select name="select" style="WIDTH:130" onChange="if(this.selectedIndex > 0){window.open(this.options[this.selectedIndex].value,'_blank')}"  class="input_select" >
+        <option>--推荐学科教学网站--</option>
+        
+        <option value="http://www.nje.cn">南京教育信息网</option>
+        
+        <option value="http://gljy.nje.cn/">鼓楼区教育天地</option>
+        
+      </select></td>
+  </tr>
+</table>
+
+    </td>
+  </tr>
+  
+</table>
+
+
+
+                </td>
+              </tr>
+              <tr>
+                <td height="60" align="center"><a href="showguestbooklistpagination.jsp?unitid=1" target="_blank"><img src="0/images/guest.gif" width="164" height="46" border="0"></a></td>
+              </tr>
+				<tr>
+				  <td align="center" height="60"><a href="../moduls/homepage/index.jsp" target="_blank"><img src="0/images/homepage.gif" width="164" height="46" border="0"></a></td>
+				</tr>
+              <tr>
+                <td height="60" align="center" class="line_h" style="padding-top:5px;"><a href="http://www.edu88.com" target="_blank"><img src="0/images/edu_logo.gif" width="120" height="50" border="0"></a></td>
+              </tr>
+              <tr>
+                <td height="40" class="line_h" style="padding-top:5px;"> <iframe frameborder="0" width="99%" height="40" src="indexframe_count.jsp?unitid=1"></iframe>
+                </td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td class="leftbottom"></td>
+        </tr>
+      </table>
+    </td>
+    <td valign="top" style="padding-top:4px;padding-left:5px;padding-right:5px;">
+<iframe frameborder="0" width="100%" height="35" src="indexframe_welcome.jsp?unitid=1&forwardurl=/cnet/dynamic/presentation/net_11/index.jsp"></iframe>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img src="0/images/spacer.gif" width="1" height="5"></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="maintitle">图片新闻</td>
+</tr>
+<tr>
+<td class="pad">
+  		    
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td>     
+
+
+<table border="0" cellspacing="2">
+  <tr>
+    
+    
+
+    
+       
+
+    
+       
+
+    
+       
+    
+  </tr>
+  <tr>
+    
+    <td>
+      <div align="left"><a class="a" href="itemviewer.do?unitid=1&id=4391&classifytype=clazz&ignoreclassinformation=false&branch=" title="寒假工作公开承诺" target="_blank">
+            
+            <img src="/cnet/dynamic/maintain/item/accessory/1517545249849.jpg" alt="寒假工作公开承诺" width="200" height="120"  class="img_border_class">
+
+            
+
+</a><br><a class="a" href="itemviewer.do?unitid=1&id=4391&classifytype=clazz&ignoreclassinformation=false&branch=" title="寒假工作公开承诺" target="_blank">寒假工作公开承诺</a>
+	
+</div>
+    </td>
+    
+  </tr>
+</table>
+
+ 
+
+ </td>
+    
+    <td>     
+
+
+<table width="" border="0" cellpadding="0" cellspacing="2">
+  <tr>
+    
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4425&classifytype=clazz&ignoreclassinformation=false&branch=" title="2017-2018学年第二学期团校结业名单" target="_blank">2017-2018学年第二学期团校结业名单</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4395&classifytype=clazz&ignoreclassinformation=false&branch=" title="2017-2018学年第二学期团校推荐电子表" target="_blank">2017-2018学年第二学期团校推荐电子表</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4392&classifytype=clazz&ignoreclassinformation=false&branch=" title="2018校园民族文化节“传统节日”研究性学习汇报书" target="_blank">2018校园民族文化节“传统节日”研究性学习汇报书...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4391&classifytype=clazz&ignoreclassinformation=false&branch=" title="寒假工作公开承诺" target="_blank">寒假工作公开承诺</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4389&classifytype=clazz&ignoreclassinformation=false&branch=" title="2018年南京市中小学电脑制作活动大赛" target="_blank">2018年南京市中小学电脑制作活动大赛</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4366&classifytype=clazz&ignoreclassinformation=false&branch=" title="南京市第二十九中学初中部推优入团公示" target="_blank">南京市第二十九中学初中部推优入团公示</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4365&classifytype=clazz&ignoreclassinformation=false&branch=" title="南京市第二十九中学初中部团员发展公示（2017/2018学年第一学期）" target="_blank">南京市第二十九中学初中部团员发展公示（2017/20...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4361&classifytype=clazz&ignoreclassinformation=false&branch=" title="“正青春”志愿者服务队2017秋季招募啦" target="_blank">“正青春”志愿者服务队2017秋季招募啦</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+  </tr>
+</table>
+
+ 
+
+ </td>
+  </tr>
+    <!--class\segment\submoreitemsegment-->
+  <tr>
+    <td height="22"  colspan="8" align="right" valign="middle">
+      <a href="classitem.do?unitid=1&clazz=306&ignoreclassinformation=false&branch=
+" target="_blank">更多...</a>
+    </td>
+  </tr>
+
+</table>
+
+
+
+
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		  </td>
+        </tr>
+      </table>
+
+			</td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="49%" valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="maintitle">工作动态</td>
+              </tr>
+              <tr>
+                <td class="pad">
+                  
+			
+			
+			
+            
+			
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+  	<td>
+  	    
+
+
+<table width="" border="0" cellpadding="0" cellspacing="2">
+  <tr>
+    
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4439&classifytype=clazz&ignoreclassinformation=false&branch=" title="关于在全区教育系统开展开展师德评选活动的通知" target="_blank">关于在全区教育系统开展开展...</a>&nbsp;<font color="#999999"> </font> <img src='/cnet/dynamic/presentation/component/private/segment/images/new.gif'>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4438&classifytype=clazz&ignoreclassinformation=false&branch=" title="南京市第二十九中学初中部2018年体艺特长生加试合格名单" target="_blank">南京市第二十九中学初中部2...</a>&nbsp;<font color="#999999"> </font> <img src='/cnet/dynamic/presentation/component/private/segment/images/new.gif'>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4428&classifytype=clazz&ignoreclassinformation=false&branch=" title="关于做好南京市2018年高中阶段学校招生政策性照顾加分申报和审核工作的通知" target="_blank">关于做好南京市2018年高中阶...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4427&classifytype=clazz&ignoreclassinformation=false&branch=" title="南京市高中阶段学校招生特长生报名系统使用说明（学生端）" target="_blank">南京市高中阶段学校招生特长...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4426&classifytype=clazz&ignoreclassinformation=false&branch=" title="关于做好南京市2018年高中阶段学校" target="_blank">关于做好南京市2018年高中阶...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4417&classifytype=clazz&ignoreclassinformation=false&branch=" title="2017-2018学年第二学期第六周工作日程" target="_blank">2017-2018学年第二学期第六...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+  </tr>
+</table>
+
+ 
+
+
+  	</td>
+  </tr>
+    <!--class\segment\submoreitemsegment-->
+  <tr>
+    <td height="22"  colspan="8" align="right" valign="middle">
+      <a href="classitem.do?unitid=1&clazz=416&ignoreclassinformation=false&branch=
+" target="_blank">更多...</a>
+    </td>
+  </tr>
+
+</table>
+
+
+
+
+
+			
+			
+            
+			
+			
+			
+				</td>
+              </tr>
+            </table></td>
+          <td valign="top" style="padding-left:5px;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="maintitle">阳光体育与校园足球</td>
+              </tr>
+              <tr>
+                <td class="pad">
+                  
+			
+			
+			
+            
+			
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+  	<td>
+  	    
+
+
+<table width="" border="0" cellpadding="0" cellspacing="2">
+  <tr>
+    
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4420&classifytype=clazz&ignoreclassinformation=false&branch=" title="2017年度足球绩效评估材料" target="_blank">2017年度足球绩效评估材料</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4419&classifytype=clazz&ignoreclassinformation=false&branch=" title="我校参加鼓楼区2017年度冬季三项比赛掠影" target="_blank">我校参加鼓楼区2017年度冬季...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4418&classifytype=clazz&ignoreclassinformation=false&branch=" title="2017~2018年度大课间实施方案" target="_blank">2017~2018年度大课间实施方...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4138&classifytype=clazz&ignoreclassinformation=false&branch=" title="花球舞动“中国范”，青春激扬勇夺冠！" target="_blank">花球舞动“中国范”，青春激...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4103&classifytype=clazz&ignoreclassinformation=false&branch=" title="多家媒体报道我校2016校园足球班级联赛" target="_blank">多家媒体报道我校2016校园足...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4102&classifytype=clazz&ignoreclassinformation=false&branch=" title="2016“金阳光杯”校园足球班级联赛开幕" target="_blank">2016“金阳光杯”校园足球班...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+  </tr>
+</table>
+
+ 
+
+
+  	</td>
+  </tr>
+    <!--class\segment\submoreitemsegment-->
+  <tr>
+    <td height="22"  colspan="8" align="right" valign="middle">
+      <a href="classitem.do?unitid=1&clazz=475&ignoreclassinformation=false&branch=
+" target="_blank">更多...</a>
+    </td>
+  </tr>
+
+</table>
+
+
+
+
+
+			
+			
+            
+			
+			
+			
+				</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="49%" valign="top"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="maintitle">校园文化建设</td>
+              </tr>
+              <tr>
+                <td class="pad">
+                  
+			
+			
+			
+            
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+  	<td>
+  	    
+
+
+<table width="" border="0" cellpadding="0" cellspacing="2">
+  <tr>
+    
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4397&classifytype=clazz&ignoreclassinformation=false&branch=" title="南京市第二十九中学章程" target="_blank">南京市第二十九中学章程</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=1954&classifytype=clazz&ignoreclassinformation=false&branch=" title="守师道 正师表 履师职 铸师魂" target="_blank">守师道 正师表 履师职 铸师...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=1953&classifytype=clazz&ignoreclassinformation=false&branch=" title="我国教师职业道德规范体系和内容" target="_blank">我国教师职业道德规范体系和...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+  </tr>
+</table>
+
+ 
+
+
+  	</td>
+  </tr>
+    <!--class\segment\submoreitemsegment-->
+  <tr>
+    <td height="22"  colspan="8" align="right" valign="middle">
+      <a href="classitem.do?unitid=1&clazz=300&ignoreclassinformation=false&branch=
+" target="_blank">更多...</a>
+    </td>
+  </tr>
+
+</table>
+
+
+
+
+
+			
+			
+            
+			
+			
+			
+				</td>
+              </tr>
+            </table></td>
+          <td valign="top" style="padding-left:5px;"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="maintitle">社会主义核心价值观</td>
+              </tr>
+              <tr>
+                <td class="pad">
+                  
+			
+			
+			
+            
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+  	<td>
+  	    
+
+
+<table width="" border="0" cellpadding="0" cellspacing="2">
+  <tr>
+    
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=3666&classifytype=clazz&ignoreclassinformation=false&branch=" title="践行价值观  树立好榜样" target="_blank">践行价值观  树立好榜样</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=3662&classifytype=clazz&ignoreclassinformation=false&branch=" title="迎青奥 学礼仪 展风采" target="_blank">迎青奥 学礼仪 展风采</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=3660&classifytype=clazz&ignoreclassinformation=false&branch=" title="“八礼四仪”走进课堂" target="_blank">“八礼四仪”走进课堂</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=3656&classifytype=clazz&ignoreclassinformation=false&branch=" title="社会主义核心价值观宣传大屏" target="_blank">社会主义核心价值观宣传大屏</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=3654&classifytype=clazz&ignoreclassinformation=false&branch=" title="“八礼四仪”主题教育月系列活动之晨会讲话" target="_blank">“八礼四仪”主题教育月系列...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=3653&classifytype=clazz&ignoreclassinformation=false&branch=" title="社会主义核心价值观宣传橱窗" target="_blank">社会主义核心价值观宣传橱窗</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+  </tr>
+</table>
+
+ 
+
+
+  	</td>
+  </tr>
+    <!--class\segment\submoreitemsegment-->
+  <tr>
+    <td height="22"  colspan="8" align="right" valign="middle">
+      <a href="classitem.do?unitid=1&clazz=473&ignoreclassinformation=false&branch=
+" target="_blank">更多...</a>
+    </td>
+  </tr>
+
+</table>
+
+
+
+
+
+			
+			
+            
+			
+			
+			
+				</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="49%" valign="top"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="maintitle">市区教研</td>
+              </tr>
+              <tr>
+                <td class="pad">
+                  
+			
+			
+			
+            
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+  	<td>
+  	    
+
+
+<table width="" border="0" cellpadding="0" cellspacing="2">
+  <tr>
+    
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4437&classifytype=clazz&ignoreclassinformation=false&branch=" title="区第十一周教研活动通知" target="_blank">区第十一周教研活动通知</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4436&classifytype=clazz&ignoreclassinformation=false&branch=" title="南京市第11-14周教研活动通知" target="_blank">南京市第11-14周教研活动通...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4435&classifytype=clazz&ignoreclassinformation=false&branch=" title="区第十周教研活动通知" target="_blank">区第十周教研活动通知</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4434&classifytype=clazz&ignoreclassinformation=false&branch=" title="区第九周教研活动通知" target="_blank">区第九周教研活动通知</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4433&classifytype=clazz&ignoreclassinformation=false&branch=" title="区第八周教研活动通知" target="_blank">区第八周教研活动通知</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4432&classifytype=clazz&ignoreclassinformation=false&branch=" title="区第七周教研活动通知" target="_blank">区第七周教研活动通知</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+  </tr>
+</table>
+
+ 
+
+
+  	</td>
+  </tr>
+    <!--class\segment\submoreitemsegment-->
+  <tr>
+    <td height="22"  colspan="8" align="right" valign="middle">
+      <a href="classitem.do?unitid=1&clazz=381&ignoreclassinformation=false&branch=
+" target="_blank">更多...</a>
+    </td>
+  </tr>
+
+</table>
+
+
+
+
+
+			
+			
+            
+			
+			
+			
+				</td>
+              </tr>
+            </table></td>
+          <td valign="top" style="padding-left:5px;"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="maintitle">校本培训</td>
+              </tr>
+              <tr>
+                <td class="pad">
+                  
+			
+			
+			
+            
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+  	<td>
+  	    
+
+
+<table width="" border="0" cellpadding="0" cellspacing="2">
+  <tr>
+    
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4266&classifytype=clazz&ignoreclassinformation=false&branch=" title="第九届市优青评选资料" target="_blank">第九届市优青评选资料</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4265&classifytype=clazz&ignoreclassinformation=false&branch=" title="鼓楼区开展2016年职初教师专业基本素养培训与考核的活动安排" target="_blank">鼓楼区开展2016年职初教师专...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4264&classifytype=clazz&ignoreclassinformation=false&branch=" title="第二十九中学初中部江苏省中小学教师健康知识网络竞赛活动" target="_blank">第二十九中学初中部江苏省中...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4262&classifytype=clazz&ignoreclassinformation=false&branch=" title="关于继续教育公共课培训的通知" target="_blank">关于继续教育公共课培训的通知</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4261&classifytype=clazz&ignoreclassinformation=false&branch=" title="关于集中开展2017年暑期教师专项培训的通知" target="_blank">关于集中开展2017年暑期教师...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+    
+  </tr>
+  <tr>
+    
+    <td  class="td_list" height="18"    >·<a class="a" href="itemviewer.do?unitid=1&id=4260&classifytype=clazz&ignoreclassinformation=false&branch=" title="关于组织2017年暑期教师培训报到及开班典礼的通知" target="_blank">关于组织2017年暑期教师培训...</a>&nbsp;<font color="#999999"> </font>
+    
+	
+	
+	</td>
+
+    
+  </tr>
+</table>
+
+ 
+
+
+  	</td>
+  </tr>
+    <!--class\segment\submoreitemsegment-->
+  <tr>
+    <td height="22"  colspan="8" align="right" valign="middle">
+      <a href="classitem.do?unitid=1&clazz=425&ignoreclassinformation=false&branch=
+" target="_blank">更多...</a>
+    </td>
+  </tr>
+
+</table>
+
+
+
+
+
+			
+			
+            
+			
+			
+			
+				</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<div align="left">
+  <table width="776" align="center">
+
+<tr bgcolor="#eeeeee">
+            <td colspan="7" height="22" width="659"><b><font size=2 class=f12 color=#333333>　实用查询</font></b></td>
+          </tr>
+          <tr> 
+            <td width="78" height="30" valign="top" align="left">
+·<a class="middle" href="http://www.52car.net/weather.aspx" target="_blank">南京天气</a><br>
+·<a class="middle" href="http://nanjing.8684.cn" target="_blank">南京公交</a> 
+ </td><td width="75" valign="top" align="left">
+·<a class="middle" href="http://maps.go2map.com/city/?mapservice=EntireMap&appid=1138" target="_blank">网上地图</a><br>
+·<a class="middle" href="http://www.post.com.cn/spec-serv/pcsearch.htm" target="_blank">邮编查询</a> 
+ </td><td width="103" valign="top" align="left">
+·<a class="middle" href="http://www.ctrip.com/smartlink/smartlink.asp?c=ctrphao1" target="_blank">宾馆查询</a><br>
+·<a class="middle" href="http://www.ip138.com/sj/" target="_blank">手机号码查询</a> 
+ </td><td width="86" valign="top" align="left"> <div align="left">
+·<a class="middle" href="http://flight.goldenholiday.com/et-goldenholiday/" target="_blank">飞机航班</a><br>
+·<a class="middle" href="http://www.5179.com/tr/chaxun1.htm" target="_blank">列车时刻表</a> 
+              </div></td>
+            <td width="79" valign="top" align="left"> <div align="left">
+·<a class="middle" target="_blank" href="http://www.dict.cn/">在线词典</a><br>
+·<a class="middle" href="http://www.165net.com/trans/chinese/instant.htm">在线翻译</a></div></td>
+            <td width="108" valign="top" align="left">
+·<a class="middle" href="http://telecode.027.net/" target="_blank"> 
+              电话区号查询<br>
+              </a>
+·<a class="middle" href="http://tool.cidu.net/tv/" target="_blank">电视节目预报</a>  
+            </td>
+            <td width="94" valign="top" align="left">
+·<a class="middle" href="http://www.baidu.com/" target="_blank">IP查询<br> 
+              </a>
+·<a class="middle" href="http://site.baidu.com/list/wannianli.htm" target="_blank">万年历</a></td> 
+          </tr>
+  </table>
+</div>
+
+<table width="776" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td><img src="0/images/spacer.gif" width="1" height="5"></td>
+  </tr>
+</table>
+<table width="776" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      
+
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td class="footbg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="100%" align="center" class="footfont">Copyright &copy;&nbsp;2003-2006&nbsp;南京市二十九中教育集团初级中学 版权所有</td>
+<tr> 
+<td width="100%" align="center" class="footfont">学校现更名为：南京市第二十九中学初中部 </td>
+  </tr>
+  </tr>
+
+<tr> 
+    <td width="100%" align="center" class="footfont"> <a href="http://www.miitbeian.gov.cn">苏ICP备05009756号 </a> </td>
+  </tr>
+
+</table>
+    </td>
+  </tr>
+</table>
+
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

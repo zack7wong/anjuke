@@ -1,0 +1,618 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+
+<!-- PageList -->
+
+<!-- End -->
+
+<!-- CallBack -->
+
+<!-- End -->
+
+<script language="javascript">
+function ShowHiden(obj){
+	if(document.getElementById(obj)){
+		document.getElementById(obj).style.display=="none"?
+			document.getElementById(obj).style.display="block":
+			document.getElementById(obj).style.display="none";
+		}
+	}
+</script>
+
+
+<title>南昌市实验中学</title>
+<meta name="keywords" content="中学│初中│高中" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<link rel="stylesheet" type="text/css" href="css/second.css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.litenav.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+<LINK href="css/floatPic.css" type=text/css rel=Stylesheet>
+<SCRIPT language=javascript src="js/floatPic.js" type=text/javascript></SCRIPT>
+<style type="text/css">
+body {
+	background-color:#FFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+</style>
+<script>
+//初始化
+var def="1";
+function mover(object){
+  //主菜单
+  var mm=document.getElementById("m_"+object);
+  mm.className="m_li_a";
+  //初始主菜单先隐藏效果
+  if(def!=0){
+    var mdef=document.getElementById("m_"+def);
+    mdef.className="m_li";
+  }
+  //子菜单
+  var ss=document.getElementById("s_"+object);
+  ss.style.display="block";
+  //初始子菜单先隐藏效果
+  if(def!=0){
+    var sdef=document.getElementById("s_"+def);
+    sdef.style.display="none";
+  }
+}
+
+function mout(object){
+  //主菜单
+  var mm=document.getElementById("m_"+object);
+  mm.className="m_li";
+  //初始主菜单还原效果
+  if(def!=0){
+    var mdef=document.getElementById("m_"+def);
+    mdef.className="m_li_a";
+  }
+  //子菜单
+  var ss=document.getElementById("s_"+object);
+  ss.style.display="none";
+  //初始子菜单还原效果
+  if(def!=0){
+    var sdef=document.getElementById("s_"+def);
+    sdef.style.display="block";
+  }
+}
+</script>
+<script language=Javascript> 
+  function time(){
+    //获得显示时间的div
+    t_div = document.getElementById('showtime');
+   var now=new Date()
+    //替换div内容 
+   t_div.innerHTML = "现在是"+now.getFullYear()
+    +"年"+(now.getMonth()+1)+"月"+now.getDate()
+    +"日"+now.getHours()+"时"+now.getMinutes()
+    +"分"+now.getSeconds()+"秒";
+    //等待一秒钟后调用time方法，由于settimeout在time方法内，所以可以无限调用
+   setTimeout(time,1000);
+  }
+</script>
+</head>
+<body  onload="time()">
+
+
+
+
+
+
+<div class="toptiao">
+  <div class="tiaocenter">
+    <div class="tiaoleft"><img src="img/2.jpg" width="24" height="34" />
+      <marquee direction=left class="youzouzi">
+      欢迎来到实验中学官方网站！
+      </marquee>
+    </div>
+    <div id="showtime"></div>
+    <div class="tiaoright">
+    
+    <div style="float:right; line-height:34px;">
+      
+        <a href="login.asp" style="float:right;">教师登陆</a>
+      
+      <a href="admin/login.asp" style="float:right; width:100px; text-align: center;">管理员登陆</a>
+      </div>
+    
+<div class="bdsharebuttonbox" style="width:160px;float:right;"><a class="bds_more" href="#" data-cmd="more"></a><a class="bds_qzone" title="分享到QQ空间" href="#" data-cmd="qzone"></a><a class="bds_tsina" title="分享到新浪微博" href="#" data-cmd="tsina"></a><a class="bds_tqq" title="分享到腾讯微博" href="#" data-cmd="tqq"></a><a class="bds_renren" title="分享到人人网" href="#" data-cmd="renren"></a><a class="bds_weixin" title="分享到微信" href="#" data-cmd="weixin"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+    </div>
+  </div>
+</div>
+<!--<下面是banner图》-->
+<div class="banner">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="1000" height="200">
+    <param name="movie" value="top.swf" />
+    <param name="quality" value="high" />
+    <param name="wmode" value="opaque" />
+    <embed src="top.swf" quality="high" wmode="opaque" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="1000" height="200"></embed>
+  </object>
+</div>
+<!--<下面是导航》-->
+<div id="menu">
+  <ul>
+    <li class="m_line"><img src="img/line1.gif" width="1" height="13" /></li>
+    <li id="m_1" class='m_li_a'><a href="/">首页</a></li>
+    <li class="m_line"><img src="img/line1.gif" width="1" height="13" /></li>
+    <li id="m_2" class='m_li' onmouseover='mover(2);' onmouseout='mout(2);'><a href="List.asp?dir=320&classid=321">学校概况</a></li>
+    <li class="m_line"><img src="img/line1.gif" width="1" height="13" /></li>
+    <li id="m_3" class='m_li' onmouseover='mover(3);' onmouseout='mout(3);'><a href="javascript:">党建工作</a></li>
+    <li class="m_line"><img src="img/line1.gif" width="1" height="13" /></li>
+    <li id="m_4" class='m_li' onmouseover='mover(4);' onmouseout='mout(4);'><a href="javascript:">学校管理</a></li>
+    <li class="m_line"><img src="img/line1.gif" width="1" height="13" /></li>
+    <li id="m_5" class='m_li' onmouseover='mover(5);' onmouseout='mout(5);'><a href="javascript:">艺术天地</a></li>
+    <li class="m_line"><img src="img/line1.gif" width="1" height="13" /></li>
+    <li id="m_6" class='m_li' onmouseover='mover(6);' onmouseout='mout(6);'><a href="List.asp?dir=333&classid=333">校际交流</a></li>
+    <li class="m_line"><img src="img/line1.gif" width="1" height="13" /></li>
+    <li id="m_7" class='m_li' onmouseover='mover(7);' onmouseout='mout(7);'><a href="List.asp?dir=431&classid=432">资源中心</a></li>
+    <li class="m_line"><<img src="img/line1.gif" width="1" height="13" /></li>
+  </ul>
+</div>
+<div class="erji">
+  <div class="smenu">
+    <ul>
+      <li style="padding-left:0px;" id="s_1" class='s_li_a'></li>
+      <li style="padding-left:50px;" id="s_2" class='s_li' onmouseover='mover(2);' onmouseout='mout(2);'>
+        
+		<p><a href="List.asp?dir=321&classid=321" title="学校简介" target="_blank">学校简介</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=322&classid=322" title="学校荣誉" target="_blank">学校荣誉</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=339&classid=339" title="管理网络图" target="_blank">管理网络图</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=328&classid=328" title="校园风景" target="_blank">校园风景</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=340&classid=340" title="现任领导" target="_blank">现任领导</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=341&classid=341" title="发展规划" target="_blank">发展规划</a>&nbsp;&nbsp;</p>
+        
+      </li>
+      <li style="padding-left:200px;" id="s_3" class='s_li' onmouseover='mover(3);' onmouseout='mout(3);'>
+        
+		<p><a href="List.asp?dir=324&classid=324" title="总支工作" target="_blank">总支工作</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=325&classid=325" title="工会工作" target="_blank">工会工作</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=329&classid=329" title="团委工作" target="_blank">团委工作</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=342&classid=342" title="统战工作" target="_blank">统战工作</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=343&classid=343" title="离退协工作" target="_blank">离退协工作</a>&nbsp;&nbsp;</p>
+        
+      </li>
+      <li style="padding-left:350px;" id="s_4" class='s_li' onmouseover='mover(4);' onmouseout='mout(4);'>
+        
+		<p><a href="List.asp?dir=327&classid=327" title="行政管理" target="_blank">行政管理</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=344&classid=344" title="德育管理" target="_blank">德育管理</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=345&classid=345" title="教学管理" target="_blank">教学管理</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=346&classid=346" title="总务管理" target="_blank">总务管理</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=347&classid=347" title="综治管理" target="_blank">综治管理</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=389&classid=389" title="教育科研" target="_blank">教育科研</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=475&classid=475" title="名师工作室" target="_blank">名师工作室</a>&nbsp;&nbsp;</p>
+        
+      </li>
+      <li style="padding-left:490px;" id="s_5" class='s_li' onmouseover='mover(5);' onmouseout='mout(5);'>
+        
+		<p><a href="List.asp?dir=332&classid=332" title="专业教师" target="_blank">专业教师</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=331&classid=331" title="艺术教学" target="_blank">艺术教学</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=348&classid=348" title="艺术作品" target="_blank">艺术作品</a>&nbsp;&nbsp;</p>
+        
+		<p><a href="List.asp?dir=349&classid=349" title="艺术活动" target="_blank">艺术活动</a>&nbsp;&nbsp;</p>
+        
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="da" id="da">
+  <div class="one">
+    <!--<下面是图片新闻》-->
+    <div class="news">
+      <div  class="newsimg"align="center">
+        <!-- 代码 开始 -->
+        <!--    <div id="hotpic">
+        <div id="NewsPic">
+          
+          
+        <a target="_blank" href="Content.asp?dir=0&classid=335&id=2292" style="visibility: visible; display: block;">
+          <img width="317px" height="239px" src="/upload/pic/2018042549108233.JPG" class="Picture" title="南昌市实验中学召开“不忘初心 立德树人”师德师风主题教育活动" /></a>
+		
+        <a target="_blank" href="Content.asp?dir=0&classid=335&id=2199" style="visibility: visible; display: block;">
+          <img width="317px" height="239px" src="/upload/pic/2018012457418013.JPG" class="Picture" title="南昌市实验中学第三党支部召开民主生活会" /></a>
+		
+        <a target="_blank" href="Content.asp?dir=0&classid=335&id=2188" style="visibility: visible; display: block;">
+          <img width="317px" height="239px" src="/upload/pic/2018011659497033.jpg" class="Picture" title="2018“实 验 之 声”艺术节文艺汇演评比结果" /></a>
+		
+        <a target="_blank" href="Content.asp?dir=0&classid=335&id=2065" style="visibility: visible; display: block;">
+          <img width="317px" height="239px" src="/upload/pic/2017110958990917.jpg" class="Picture" title="南昌市实验中学召开十九大精神宣讲主题会" /></a>
+		
+        <a target="_blank" href="Content.asp?dir=0&classid=335&id=2030" style="visibility: visible; display: block;">
+          <img width="317px" height="239px" src="/upload/pic/2017110146912133.png" class="Picture" title="实验中学欢迎您" /></a>
+		
+        <a target="_blank" href="Content.asp?dir=0&classid=335&id=2027" style="visibility: visible; display: block;">
+          <img width="317px" height="239px" src="/upload/pic/2017110303378710.jpg" class="Picture" title="2017届高三学子毕业感言" /></a>
+		
+        <a target="_blank" href="Content.asp?dir=0&classid=335&id=1840" style="visibility: visible; display: block;">
+          <img width="317px" height="239px" src="/upload/pic/2016121039667137.jpg" class="Picture" title="南昌市实验中学成为江西省唯一一家意大利语等级考试授权单位" /></a>
+		
+           
+            <div class="Nav">
+            
+		  <span class="Normal">7</span>
+		
+		  <span class="Normal">6</span>
+		
+		  <span class="Normal">5</span>
+		
+		  <span class="Normal">4</span>
+		
+		  <span class="Normal">3</span>
+		
+		  <span class="Normal">2</span>
+		
+          <span class="Cur">1</span>
+        
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('#hotpic').liteNav(3000);
+    </script>-->
+        <DIV class=auto_2_left_1_2 style=" float:left; WIDTH: 317px; HEIGHT:239px"> <SPAN id=focuspic>
+          <DIV id=NewsPic>
+            
+        <a target="_blank" href="Content.asp?dir=0&classid=335&id=2292" style="visibility: visible; display: block;">
+          <img width="317px" height="239px" src="/upload/pic/2018042549108233.JPG" class="Picture" title="南昌市实验中学召开“不忘初心 立德树人”师德师风主题教育活动" /></a>
+		
+        <a target="_blank" href="Content.asp?dir=0&classid=335&id=2199" style="visibility: visible; display: block;">
+          <img width="317px" height="239px" src="/upload/pic/2018012457418013.JPG" class="Picture" title="南昌市实验中学第三党支部召开民主生活会" /></a>
+		
+        <a target="_blank" href="Content.asp?dir=0&classid=335&id=2188" style="visibility: visible; display: block;">
+          <img width="317px" height="239px" src="/upload/pic/2018011659497033.jpg" class="Picture" title="2018“实 验 之 声”艺术节文艺汇演评比结果" /></a>
+		
+        <a target="_blank" href="Content.asp?dir=0&classid=335&id=2065" style="visibility: visible; display: block;">
+          <img width="317px" height="239px" src="/upload/pic/2017110958990917.jpg" class="Picture" title="南昌市实验中学召开十九大精神宣讲主题会" /></a>
+		
+        <a target="_blank" href="Content.asp?dir=0&classid=335&id=2030" style="visibility: visible; display: block;">
+          <img width="317px" height="239px" src="/upload/pic/2017110146912133.png" class="Picture" title="实验中学欢迎您" /></a>
+		
+        <a target="_blank" href="Content.asp?dir=0&classid=335&id=2027" style="visibility: visible; display: block;">
+          <img width="317px" height="239px" src="/upload/pic/2017110303378710.jpg" class="Picture" title="2017届高三学子毕业感言" /></a>
+		
+        <a target="_blank" href="Content.asp?dir=0&classid=335&id=1840" style="visibility: visible; display: block;">
+          <img width="317px" height="239px" src="/upload/pic/2016121039667137.jpg" class="Picture" title="南昌市实验中学成为江西省唯一一家意大利语等级考试授权单位" /></a>
+		
+          </DIV>
+          <DIV id=NewsPicTxt style="DISPLAY: none; VISIBILITY: hidden"></DIV>
+          </SPAN>
+          <SCRIPT language=javascript>init();</SCRIPT>
+        </DIV>
+      </div>
+    </div>
+    <!--<下面是新闻中心》-->
+    <div class="newss">
+      <div class="newsszi">&nbsp;&nbsp;|&nbsp;最新动态</div>
+      <div class="more"><a href="List.asp?dir=335&classid=335">更多>></a></div>
+      
+		<div class="newsszitwo">
+          <p style=" line-height:35px; font-size:14px; color:#1279bc;text-align:center;"><b >追求艺术之路，我们一直在前行</b>
+          <p style="text-indent:2em;"><a href="Content.asp?dir=0&classid=335&id=2324" >【详细】</a> </p>
+        </div>
+        <div class="newsszithree">
+          
+          <p><a href="Content.asp?dir=0&classid=335&id=2323" title="有朋自远方来" >有朋自远方来 <span style="float:right;margin:0 10px 0 0;">(2018-5-28)</span></a></p>
+          
+          <p><a href="Content.asp?dir=0&classid=335&id=2322" title="意大利帕维亚音乐学院Cinzia Piccini 院长实验中学讲学" >意大利帕维亚音乐学院Cinzia Piccini  <span style="float:right;margin:0 10px 0 0;">(2018-5-28)</span></a></p>
+          
+          <p><a href="Content.asp?dir=0&classid=335&id=2321" title="艺术之花在此绽放 ——迎接南昌市督学迎检摘记" >艺术之花在此绽放 ——迎接南昌市督学迎检摘记 <span style="float:right;margin:0 10px 0 0;">(2018-5-28)</span></a></p>
+          
+          <p><a href="Content.asp?dir=0&classid=335&id=2320" title="艺术处2018年 要发到校园网上艺术天地  所有新闻稿和新闻照片" >艺术处2018年 要发到校园网上艺术天地  所有新 <span style="float:right;margin:0 10px 0 0;">(2018-5-28)</span></a></p>
+          
+          <p><a href="Content.asp?dir=0&classid=335&id=2319" title="一年一季荷花香——实验中学张立老师参加全国舞蹈创作高级研修班活动" >一年一季荷花香——实验中学张立老师参加全国舞蹈创作 <span style="float:right;margin:0 10px 0 0;">(2018-5-28)</span></a></p>
+          
+        </div>
+		
+    </div>
+    <!--<下面是校园风光》-->
+    <div class="xiaoyuan">
+      <div class="xiaoyuanone">
+        <div class="more"><a href="List.asp?dir=320&classid=328">更多>></a></div>
+      </div>
+      <div class="xiaoyuantwo">
+        <div class="clear"></div>
+        <div id=demo style="overflow:hidden;" align=center>
+          <table border=0 align=center cellpadding=1 cellspacing=1 cellspace=0 >
+            <tr>
+              <td valign=top id=marquePic1><table width='100%' border='0' cellspacing='0'>
+                  <tr>
+                    
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=320&classid=328&id=1058" title="校园风景5"  style="line-height:30px;" ><img src="/upload/pic/2014070837758365.jpg" width="164" height="98" class="gg1_p" border="0"/>校园风景5</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=320&classid=328&id=553" title="校园风景4"  style="line-height:30px;" ><img src="/upload/pic/2014051840151145.jpg" width="164" height="98" class="gg1_p" border="0"/>校园风景4</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=320&classid=328&id=552" title="校园风景3"  style="line-height:30px;" ><img src="/upload/pic/2014051840134565.jpg" width="164" height="98" class="gg1_p" border="0"/>校园风景3</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=320&classid=328&id=551" title="校园风景2"  style="line-height:30px;" ><img src="/upload/pic/2014051840119185.jpg" width="164" height="98" class="gg1_p" border="0"/>校园风景2</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=320&classid=328&id=550" title="校园风景1"  style="line-height:30px;" ><img src="/upload/pic/2014051840103073.jpg" width="164" height="98" class="gg1_p" border="0"/>校园风景1</a></td>
+		
+                  </tr>
+                </table></td>
+              <td id=marquePic2 valign=top></td>
+            </tr>
+          </table>
+        </div>
+        <script type="text/javascript">
+var speed=15 
+marquePic2.innerHTML=marquePic1.innerHTML 
+function Marquee(){ 
+if(demo.scrollLeft>=marquePic1.scrollWidth+10){ 
+demo.scrollLeft=0 
+}else{ 
+demo.scrollLeft++ 
+} 
+} 
+var MyMar=setInterval(Marquee,speed) 
+demo.onmouseover=function() {clearInterval(MyMar)} 
+demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)} 
+</script>
+      </div>
+    </div>
+    <!--<下面是教师风采》-->
+    <div class="jiaoshi" style="overflow:hidden;">
+      <div class="mores"><a href="List.asp?dir=336&classid=336">更多>></a></div>
+      
+		<a href="Content.asp?dir=0&classid=336&id=2067" title="南昌市优秀校长——黄凌云"  class="img"><img src="/upload/pic/2017111051292289.jpg" style="width:164px;height:98px;margin:10px 10px 0 0;" /></a>
+        
+        </p>
+        <p style="margin:10px 0 0 0;"> <a href="Content.asp?dir=0&classid=336&id=2067" > 详情></a> </p>
+        <div style="clear:both;"></div>
+		
+    </div>
+    <div class="xuesheng" style="overflow:hidden;">
+      <div class="mores"><a href="List.asp?dir=337&classid=337">更多>></a></div>
+      
+		<a href="Content.asp?dir=0&classid=337&id=1915" title="南昌市实验中学第三届“十佳美德少年”评选活动入围候选名单"  class="img"><img src="" style="width:164px;height:98px;margin:10px 10px 0 0;" /></a>
+        
+        </p>
+        <p style="margin:10px 0 0 0;"> <a href="Content.asp?dir=0&classid=337&id=1915" > 详情></a> </p>
+        <div style="clear:both;"></div>
+		
+    </div>
+    <div class="youtu">
+      <table width="750" height="130" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td><table width="375" height="130" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                
+		<td width="164" height="98" align="center" valign="top" ><a href="Content.asp?dir=0&classid=336&id=1215" title="江西省中小学优秀校长——赵明析"  style="line-height:30px;" ><img src="/upload/pic/2014111937752917.jpg"  class="gg1_p" border="0" width="164" height="98"/><p>江西省中小学优秀校长</p></a></td>
+		
+		<td width="164" height="98" align="center" valign="top" ><a href="Content.asp?dir=0&classid=336&id=1229" title="省劳模、市学科带头人 巫诚红"  style="line-height:30px;" ><img src="/upload/pic/2014112436907529.jpg"  class="gg1_p" border="0" width="164" height="98"/><p>省劳模、市学科带头人</p></a></td>
+		
+              </tr>
+            </table></td>
+          <td><table width="375" height="130" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                
+		<td width="164" height="98" align="center" valign="top" ><a href="Content.asp?dir=0&classid=337&id=964" title="第四届“校环保形象大使”"  style="line-height:30px;" ><img src="/upload/pic/2014061558674561.jpg"  class="gg1_p" border="0" width="164" height="98"/><p>第四届“校环保形象大</p></a></td>
+		
+		<td width="164" height="98" align="center" valign="top" ><a href="Content.asp?dir=0&classid=337&id=958" title="第四届环保形象大使候选人"  style="line-height:30px;" ><img src="/upload/pic/2014061551635397.jpg"  class="gg1_p" border="0" width="164" height="98"/><p>第四届环保形象大使候</p></a></td>
+		
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+    </div>
+    <!--<下面是教研组》-->
+    <div class="jiaoyanzu">
+      <div class="jiaoyanzuone">
+        <div class="more"><a href="List.asp?dir=394&classid=394">更多>></a></div>
+      </div>
+      <div class="jiaoyanzutwo">
+        <div class="clear"></div>
+        <div id=demo2 align=left>
+          <table border=0 align=center cellpadding=1 cellspacing=1 cellspace=0 >
+            <tr>
+              <td valign=top id=marquePic3><table width='100%' border='0' cellspacing='0'>
+                  <tr>
+                    
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=0&classid=394&id=971" title="体育组博客"  style="line-height:30px;" ><img src="/upload/pic/2014061636849889.jpg" width="164" height="98" class="gg1_p" border="0"/>体育组博客</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=0&classid=394&id=970" title="英语组博客"  style="line-height:30px;" ><img src="/upload/pic/2014061635959269.jpg" width="164" height="98" class="gg1_p" border="0"/>英语组博客</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=0&classid=394&id=952" title="美术组博客"  style="line-height:30px;" ><img src="/upload/pic/2014061336777173.jpg" width="164" height="98" class="gg1_p" border="0"/>美术组博客</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=0&classid=394&id=951" title="音乐组博客"  style="line-height:30px;" ><img src="/upload/pic/2014061336484209.jpg" width="164" height="98" class="gg1_p" border="0"/>音乐组博客</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=0&classid=394&id=950" title="生物组博客"  style="line-height:30px;" ><img src="/upload/pic/2014122926517881.jpg" width="164" height="98" class="gg1_p" border="0"/>生物组博客</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=0&classid=394&id=949" title="化学组博客"  style="line-height:30px;" ><img src="/upload/pic/2014061335956917.jpg" width="164" height="98" class="gg1_p" border="0"/>化学组博客</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=0&classid=394&id=948" title="物理组博客"  style="line-height:30px;" ><img src="/upload/pic/2014061335672481.jpg" width="164" height="98" class="gg1_p" border="0"/>物理组博客</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=0&classid=394&id=947" title="地理组博客"  style="line-height:30px;" ><img src="/upload/pic/2014061335329417.jpg" width="164" height="98" class="gg1_p" border="0"/>地理组博客</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=0&classid=394&id=945" title="历史组博客"  style="line-height:30px;" ><img src="/upload/pic/2014061334940973.jpg" width="164" height="98" class="gg1_p" border="0"/>历史组博客</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=0&classid=394&id=944" title="政治组博客"  style="line-height:30px;" ><img src="/upload/pic/2014061334659565.jpg" width="164" height="98" class="gg1_p" border="0"/>政治组博客</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=0&classid=394&id=943" title="数学组博客"  style="line-height:30px;" ><img src="/upload/pic/2014061333685817.jpg" width="164" height="98" class="gg1_p" border="0"/>数学组博客</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=0&classid=394&id=942" title="语文组博客"  style="line-height:30px;" ><img src="/upload/pic/2014061333496193.jpg" width="164" height="98" class="gg1_p" border="0"/>语文组博客</a></td>
+		
+		<td width="164" height="98" align="center" valign="top" style="margin-right:10px;"><a href="Content.asp?dir=0&classid=394&id=953" title="信息组博客"  style="line-height:30px;" ><img src="/upload/pic/2014061336946237.jpg" width="164" height="98" class="gg1_p" border="0"/>信息组博客</a></td>
+		
+                  </tr>
+                </table></td>
+              <td id=marquePic4 valign=top></td>
+            </tr>
+          </table>
+        </div>
+        <script type="text/javascript">
+var speed2=15
+marquePic4.innerHTML=marquePic3.innerHTML 
+function Marquee2(){ 
+if(demo2.scrollLeft>=marquePic3.scrollWidth){ 
+demo2.scrollLeft=0 
+}else{ 
+demo2.scrollLeft++ 
+} 
+} 
+var MyMar2=setInterval(Marquee2,speed2) 
+demo2.onmouseover=function() {clearInterval(MyMar2)} 
+demo2.onmouseout=function() {MyMar2=setInterval(Marquee2,speed2)} 
+</script>
+      </div>
+    </div>
+  </div>
+  <div id="ScrollTop" style="float:right;width:240px;"> <img src="img/weixin.jpg" width="240" height="142" />
+    <!--<下面是专题专栏》-->
+    <div class="zhuanti"><div class="more"><a href="zhuanti.asp">更多>></a></div>
+  <div class="zhuantione">
+    <marquee scrollamount="1" scrolldelay="2" direction="up" onMouseOver="this.stop()"  height="360" width="240" onMouseOut="this.start()">
+    
+		<div class="zhuanti_a"><a href="zt/index.asp?classid=465" title="实验中学身边好人榜" ><img src="/upload/pic/2014120962328289.jpg" width="230" height="43" /></a></div>
+		
+		<div class="zhuanti_a"><a href="zt/index.asp?classid=392" title="精神文明建设专栏" ><img src="/upload/pic/2014062564728557.jpg" width="230" height="43" /></a></div>
+		
+		<div class="zhuanti_a"><a href="zt/index.asp?classid=470" title="师德师风" ><img src="/upload/pic/2014122949993769.jpg" width="230" height="43" /></a></div>
+		
+		<div class="zhuanti_a"><a href="zt/index.asp?classid=373" title="党的群众路线教育实践活动" ><img src="/upload/pic/2014061054708877.jpg" width="230" height="43" /></a></div>
+		
+		<div class="zhuanti_a"><a href="zt/index.asp?classid=374" title="廉政文化进校园" ><img src="/upload/pic/2014052753923833.jpg" width="230" height="43" /></a></div>
+		
+    <!--<div class="zhuanti_a"><img src="img/za.png" width="200" height="43" /></div>
+    <div class="zhuanti_a"><img src="img/zb.png" width="200" height="43" /></div>
+    <div class="zhuanti_a"><img src="img/zc.png" width="200" height="44" /></div>
+    <div class="zhuanti_a"><img src="img/zd.png" width="200" height="42" /></div>
+    <div class="zhuanti_a"><img src="img/ze.png" width="200" height="44" /></div>
+    <div class="zhuanti_a"><img src="img/zf.png" width="200" height="40" /></div>-->
+    </marquee>
+  </div>
+</div>
+    <!--<下面是通知公告》-->
+    <div class="tongzhi">
+      <div class="more"><a href="list.asp?dir=338&classid=338">更多>></a></div>
+      <div class="clear"></div>
+      <div class="ind_news">
+        <marquee scrollamount="1" scrolldelay="2" height="180" direction="up" onMouseOver="this.stop()" onMouseOut="this.start()">
+        <ul>
+          
+		<li><a href="Content.asp?dir=0&classid=338&id=1918" title="南昌市实验中学“八一军旗红”主题读书活动方案" > · 南昌市实验中学“八一军旗红”... </a></li>
+		
+		<li><a href="Content.asp?dir=0&classid=338&id=1917" title="南昌市文明祭祀通告" > · 南昌市文明祭祀通告... </a></li>
+		
+		<li><a href="Content.asp?dir=0&classid=338&id=1628" title="江西省中小学教师职称评价标准条件" > · 江西省中小学教师职称评价标准... </a></li>
+		
+		<li><a href="Content.asp?dir=0&classid=338&id=1610" title="洪教科文卫体工发〔2015〕17号《关于做好市教科文卫体系统推荐评选南昌市劳动模范和先进工作者工作的通知》" > · 洪教科文卫体工发〔2015〕... </a></li>
+		
+		<li><a href="Content.asp?dir=0&classid=338&id=1604" title="洪教纪字〔2015〕12号  关于转发市纪委《关于我市4起违反中央八项规定精神问题的通报》的通知" > · 洪教纪字〔2015〕12号 ... </a></li>
+		
+		<li><a href="Content.asp?dir=0&classid=338&id=1603" title="洪教办字〔2015〕12号《关于加强教育系统“红包”问题常态化治理工作的实施办法（试行）》" > · 洪教办字〔2015〕12号《... </a></li>
+		
+		<li><a href="Content.asp?dir=0&classid=338&id=1597" title="《义务教育学校管理标准（试行）》" > · 《义务教育学校管理标准（试行... </a></li>
+		
+		<li><a href="Content.asp?dir=0&classid=338&id=1594" title="南昌市教育局关于推荐申报全市“学雷锋活动示范点”和“岗位学雷锋标兵”的通知" > · 南昌市教育局关于推荐申报全市... </a></li>
+		
+		<li><a href="Content.asp?dir=0&classid=338&id=1593" title="南昌市中小学幼儿园教师师德师风承诺宣誓词" > · 南昌市中小学幼儿园教师师德师... </a></li>
+		
+		<li><a href="Content.asp?dir=0&classid=338&id=1590" title="关于公布南昌市中小学教师有偿家教监督举报电话的公告" > · 关于公布南昌市中小学教师有偿... </a></li>
+		
+        </ul>
+        </marquee>
+      </div>
+    </div>
+    <!--<下面是留言板》-->
+    <div class="liuyanban"><a href="Message.asp"><img src="img/liuy.png" width="240" height="43" /></a>
+      <div class="ind_newsb">
+        <ul>
+          
+		<li><a href="Message.asp?list=1"> 不忘母校 </a></li>
+		
+        </ul>
+      </div>
+    </div>
+    <!--<下面是阅卷》-->
+    <div class="yuejuan"><a href="http://218.64.63.169:8998" target="_blank"><img src="img/yj.png" width="240" height="60" /></a></div>
+  </div>
+  <script language="javascript">
+    var BodyHeight=document.body.scrollHeight;
+    function ScrollTop(){
+		var top=document.getElementById("da").offsetTop;
+		var scrollHeight=document.documentElement.scrollTop;
+		if(scrollHeight>top){
+			document.getElementById("ScrollTop").setAttribute("style","position:absolute;top:"+(scrollHeight-top)+"px;right:0px;");
+			}
+		else
+			document.getElementById("ScrollTop").setAttribute("style","position:absolute;top:0px;right:0px;");
+		}
+	//window.onscroll=function(){ScrollTop();};
+  </script>
+  <div class="youqinglj">
+    <div class="youqinglj_zi">
+      <p>
+        
+		<a href="http://www.jxedu.gov.cn" title="《江西教育网》" >《江西教育网》</a>
+		
+		<a href="http://www.ncjy.cn:90" title="《南昌教研网》" >《南昌教研网》</a>
+		
+		<a href="http://www.cbe21.com/" title="《中国基础教育网》" >《中国基础教育网》</a>
+		
+		<a href="http://www.moe.edu.cn/" title="《中华人民共和国教育部》" >《中华人民共和国教育部》</a>
+		
+		<a href="http://www.xflive.net.cn/" title="《江西高招信息网》" >《江西高招信息网》</a>
+		
+		<a href="http://www.jxdjg.gov.cn/" title="《江西省电教馆》" >《江西省电教馆》</a>
+		
+		<a href="http://ncsy.blog.ncnews.com.cn/index.html" title="《实验党总支博客》" >《实验党总支博客》</a>
+		
+		<a href="http://www.ncedu.gov.cn/index.htm" title="《南昌教育信息网》" >《南昌教育信息网》</a>
+		
+		<a href="http://www.ncedu.gov.cn/ztpd/lyrk/" title="《电子期刊》" >《电子期刊》</a>
+		
+		<a href="http://ceb.apabi.com/tiyan/Main.aspx?cult=CN&libid=16&OrgIdentifier=tiyan&Token=556A92C584" title="《数字图书》" >《数字图书》</a>
+		
+		<a href="http://nc.wenming.cn/" title="《中国文明网南昌站》" >《中国文明网南昌站》</a>
+		
+		<a href="http://www.ncwm.gov.cn/" title="《南昌文明网》" >《南昌文明网》</a>
+		
+		<a href="http://www.isw7.cn" title=" 	《代刷网》" > 	《代刷网》</a>
+		
+      </P>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="di" style="margin-top:30px;">
+  <div class="di_zi">
+  
+
+   版权所有：南昌市实验中学   赣ICP备10001707号</br>
+    地 址：江西省南昌市南京西路166号  电 话：0791-88695093   邮 箱:ncsyschool@163.com
+    <div align="right" style="margin-top:-70px;"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/15/223/0000/40826262/CA152230000408262620002.js' type='text/javascript'%3E%3C/script%3E"));</script>
+  </div></div>
+</div>
+
+
+
+<!--  <div id='LeftAd1' style='width:190px;left:8px; position:fixed;top:350px;z-index:1000'><a href="apply1.asp" target="_blank"><img src='images/pf.gif' style='width:190px;' /></a></div>-->
+</div>
+</body>
+</html>

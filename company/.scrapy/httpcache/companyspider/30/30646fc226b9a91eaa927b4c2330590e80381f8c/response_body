@@ -1,0 +1,896 @@
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>广东建华职业学院-官方网站
+</title>
+<meta name="keywords" content="广东建华职业学院" />
+<meta name="description" content="广东建华职业学院经广东省人民政府批准而正式挂牌成立,教育部同意备案,这宣示着一所新型的具有学历教育的省属普通高等院校。" />
+<link href="images/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+body {
+	background-color: #009999;
+}
+-->
+</style></head>
+<body>
+
+
+<table width="1000" border="0" height="174" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF" style="background-image:url(../images/topbg.jpg)">
+  <tr>
+    <td><img src="images/logo.jpg" width="1000" height="174" /></td>
+  </tr>
+</table>
+
+
+
+ 
+<SCRIPT language=javascript> 
+mtDropDown.spacerGif = "../images/Menu_x.gif"; 
+mtDropDown.dingbatOn = "../images/Menu_expand-1.gif"; 
+mtDropDown.dingbatOff = "../images/Menu_expand-0.gif"; 
+mtDropDown.dingbatSize = 14; 
+mtDropDown.menuPadding = 1; 
+mtDropDown.itemPadding = 4; 
+mtDropDown.shadowSize = 2; 
+mtDropDown.shadowOffset = 3; 
+mtDropDown.shadowColor = "#c3e5ff"; 
+mtDropDown.shadowPng = "../images/005.png"; 
+mtDropDown.backgroundColor = "#c3e5ff"; 
+mtDropDown.backgroundPng = "../images/004.png"; 
+mtDropDown.hideDelay = 200; 
+mtDropDown.slideTime = 200; 
+ 
+mtDropDown.reference = {topLeft:1,topRight:2,bottomLeft:3,bottomRight:4};
+mtDropDown.direction = {down:1,right:2};
+mtDropDown.registry = [];
+mtDropDown._maxZ = 100;
+ 
+mtDropDown.isSupported = function() {
+if (typeof mtDropDown.isSupported.r == "boolean") 
+return mtDropDown.isSupported.r;
+var ua = navigator.userAgent.toLowerCase();
+var an = navigator.appName;
+var r = false;
+if (ua.indexOf("gecko") > -1) r = true; 
+else if (an == "Microsoft Internet Explorer") {
+if (document.getElementById) r = true; 
+}
+mtDropDown.isSupported.r = r;
+return r;
+}
+ 
+mtDropDown.initialize = function() {
+for (var i = 0, menu = null; menu = this.registry[i]; i++) {
+menu.initialize();
+}
+}
+ 
+mtDropDown.renderAll = function() {
+var aMenuHtml = [];
+for (var i = 0, menu = null; menu = this.registry[i]; i++) {
+aMenuHtml[i] = menu.toString();
+}
+document.write(aMenuHtml.join(""));
+}
+ 
+function mtDropDown(oActuator, iDirection, iLeft, iTop, iReferencePoint, parentMenuSet) {
+ 
+this.addItem = addItem;
+this.addMenu = addMenu;
+this.toString = toString;
+this.initialize = initialize;
+this.isOpen = false;
+this.show = show;
+this.hide = hide;
+this.items = [];
+ 
+this.onactivate = new Function(); 
+this.ondeactivate = new Function(); 
+this.onmouseover = new Function(); 
+this.onqueue = new Function(); 
+ 
+this.index = mtDropDown.registry.length;
+mtDropDown.registry[this.index] = this;
+var id = "mtDropDown" + this.index;
+var contentHeight = null;
+var contentWidth = null;
+var childMenuSet = null;
+var animating = false;
+var childMenus = [];
+var slideAccel = -1;
+var elmCache = null;
+var ready = false;
+var _this = this;
+var a = null;
+var pos = iDirection == mtDropDown.direction.down ? "top" : "left";
+var dim = null;
+ 
+function addItem(sText, sUrl) {
+var item = new mtDropDownItem(sText, sUrl, this);
+item._index = this.items.length;
+this.items[item._index] = item;
+}
+function addMenu(oMenuItem) {
+if (!oMenuItem.parentMenu == this) throw new Error("Cannot add a menu here");
+if (childMenuSet == null) childMenuSet = new mtDropDownSet(mtDropDown.direction.right, -5, 2, mtDropDown.reference.topRight);
+var m = childMenuSet.addMenu(oMenuItem);
+childMenus[oMenuItem._index] = m;
+m.onmouseover = child_mouseover;
+m.ondeactivate = child_deactivate;
+m.onqueue = child_queue;
+return m;
+}
+function initialize() {
+initCache();
+initEvents();
+initSize();
+ready = true;
+}
+function show() {
+ 
+if (ready) {
+_this.isOpen = true;
+animating = true;
+setContainerPos();
+elmCache["clip"].style.visibility = "visible";
+elmCache["clip"].style.zIndex = mtDropDown._maxZ++;
+ 
+slideStart();
+_this.onactivate();
+}
+}
+function hide() {
+if (ready) {
+_this.isOpen = false;
+animating = true;
+for (var i = 0, item = null; item = elmCache.item[i]; i++) 
+dehighlight(item);
+if (childMenuSet) childMenuSet.hide();
+slideStart();
+_this.ondeactivate();
+}
+}
+function setContainerPos() {
+var sub = oActuator.constructor == mtDropDownItem; 
+var act = sub ? oActuator.parentMenu.elmCache["item"][oActuator._index] : oActuator; 
+var el = act;
+var x = 0;
+var y = 0;
+var minX = 0;
+var maxX = (window.innerWidth ? window.innerWidth : document.body.clientWidth) - parseInt(elmCache["clip"].style.width);
+var minY = 0;
+var maxY = (window.innerHeight ? window.innerHeight : document.body.clientHeight) - parseInt(elmCache["clip"].style.height);
+ 
+while (sub ? el.parentNode.className.indexOf("mtDropdownMenu") == -1 : el.offsetParent) {
+x += el.offsetLeft;
+y += el.offsetTop;
+if (el.scrollLeft) x -= el.scrollLeft;
+if (el.scrollTop) y -= el.scrollTop;
+el = el.offsetParent;
+}
+if (oActuator.constructor == mtDropDownItem) {
+x += parseInt(el.parentNode.style.left);
+y += parseInt(el.parentNode.style.top);
+}
+switch (iReferencePoint) {
+case mtDropDown.reference.topLeft:
+break;
+case mtDropDown.reference.topRight:
+x += act.offsetWidth;
+break;
+case mtDropDown.reference.bottomLeft:
+y += act.offsetHeight;
+break;
+case mtDropDown.reference.bottomRight:
+x += act.offsetWidth;
+y += act.offsetHeight;
+break;
+}
+x += iLeft;
+y += iTop;
+x = Math.max(Math.min(x, maxX), minX);
+y = Math.max(Math.min(y, maxY), minY);
+elmCache["clip"].style.left = x + "px";
+elmCache["clip"].style.top = y + "px";
+}
+function slideStart() {
+var x0 = parseInt(elmCache["content"].style[pos]);
+var x1 = _this.isOpen ? 0 : -dim;
+if (a != null) a.stop();
+a = new Accelimation(x0, x1, mtDropDown.slideTime, slideAccel);
+a.onframe = slideFrame;
+a.onend = slideEnd;
+a.start();
+}
+function slideFrame(x) {
+elmCache["content"].style[pos] = x + "px";
+}
+function slideEnd() {
+if (!_this.isOpen) elmCache["clip"].style.visibility = "hidden";
+animating = false;
+}
+function initSize() {
+ 
+var ow = elmCache["items"].offsetWidth;
+var oh = elmCache["items"].offsetHeight;
+var ua = navigator.userAgent.toLowerCase();
+ 
+elmCache["clip"].style.width = ow + mtDropDown.shadowSize + 2 + "px";
+elmCache["clip"].style.height = oh + mtDropDown.shadowSize + 2 + "px";
+ 
+elmCache["content"].style.width = ow + mtDropDown.shadowSize + "px";
+elmCache["content"].style.height = oh + mtDropDown.shadowSize + "px";
+contentHeight = oh + mtDropDown.shadowSize;
+contentWidth = ow + mtDropDown.shadowSize;
+dim = iDirection == mtDropDown.direction.down ? contentHeight : contentWidth;
+ 
+elmCache["content"].style[pos] = -dim - mtDropDown.shadowSize + "px";
+elmCache["clip"].style.visibility = "hidden";
+ 
+if (ua.indexOf("mac") == -1 || ua.indexOf("gecko") > -1) {
+ 
+elmCache["background"].style.width = ow + "px";
+elmCache["background"].style.height = oh + "px";
+elmCache["background"].style.backgroundColor = mtDropDown.backgroundColor;
+ 
+elmCache["shadowRight"].style.left = ow + "px";
+elmCache["shadowRight"].style.height = oh - (mtDropDown.shadowOffset - mtDropDown.shadowSize) + "px";
+elmCache["shadowRight"].style.backgroundColor = mtDropDown.shadowColor;
+ 
+ 
+ 
+elmCache["shadowBottom"].style.top = oh + "px";
+elmCache["shadowBottom"].style.width = ow - mtDropDown.shadowOffset + "px";
+elmCache["shadowBottom"].style.backgroundColor = mtDropDown.shadowColor;
+}
+ 
+else {
+ 
+elmCache["background"].firstChild.src = mtDropDown.backgroundPng;
+elmCache["background"].firstChild.width = ow;
+elmCache["background"].firstChild.height = oh;
+ 
+elmCache["shadowRight"].firstChild.src = mtDropDown.shadowPng;
+elmCache["shadowRight"].style.left = ow + "px";
+elmCache["shadowRight"].firstChild.width = mtDropDown.shadowSize;
+elmCache["shadowRight"].firstChild.height = oh - (mtDropDown.shadowOffset - mtDropDown.shadowSize);
+ 
+ 
+ 
+elmCache["shadowBottom"].firstChild.src = mtDropDown.shadowPng;
+elmCache["shadowBottom"].style.top = oh + "px";
+elmCache["shadowBottom"].firstChild.height = mtDropDown.shadowSize;
+elmCache["shadowBottom"].firstChild.width = ow - mtDropDown.shadowOffset;
+}
+}
+function initCache() {
+var menu = document.getElementById(id);
+var all = menu.all ? menu.all : menu.getElementsByTagName("*"); 
+elmCache = {};
+elmCache["clip"] = menu;
+elmCache["item"] = [];
+for (var i = 0, elm = null; elm = all[i]; i++) {
+switch (elm.className) {
+case "items":
+case "content":
+case "background":
+case "shadowRight":
+case "shadowBottom":
+elmCache[elm.className] = elm;
+break;
+case "item":
+elm._index = elmCache["item"].length;
+elmCache["item"][elm._index] = elm;
+break;
+}
+}
+ 
+_this.elmCache = elmCache;
+}
+function initEvents() {
+ 
+for (var i = 0, item = null; item = elmCache.item[i]; i++) {
+item.onmouseover = item_mouseover;
+item.onmouseout = item_mouseout;
+item.onclick = item_click;
+}
+ 
+if (typeof oActuator.tagName != "undefined") {
+oActuator.onmouseover = actuator_mouseover;
+oActuator.onmouseout = actuator_mouseout;
+}
+ 
+elmCache["content"].onmouseover = content_mouseover;
+elmCache["content"].onmouseout = content_mouseout;
+}
+function highlight(oRow) {
+oRow.className = "item hover";
+if (childMenus[oRow._index]) 
+oRow.lastChild.firstChild.src = mtDropDown.dingbatOn;
+}
+function dehighlight(oRow) {
+oRow.className = "item";
+if (childMenus[oRow._index]) 
+oRow.lastChild.firstChild.src = mtDropDown.dingbatOff;
+}
+function item_mouseover() {
+if (!animating) {
+highlight(this);
+if (childMenus[this._index]) 
+childMenuSet.showMenu(childMenus[this._index]);
+else if (childMenuSet) childMenuSet.hide();
+}
+}
+function item_mouseout() {
+if (!animating) {
+if (childMenus[this._index])
+childMenuSet.hideMenu(childMenus[this._index]);
+else 
+dehighlight(this);
+}
+}
+function item_click() {
+if (!animating) {
+if (_this.items[this._index].url) 
+location.href = _this.items[this._index].url;
+}
+}
+function actuator_mouseover() {
+parentMenuSet.showMenu(_this);
+}
+function actuator_mouseout() {
+parentMenuSet.hideMenu(_this);
+}
+function content_mouseover() {
+if (!animating) {
+parentMenuSet.showMenu(_this);
+_this.onmouseover();
+}
+}
+function content_mouseout() {
+if (!animating) {
+parentMenuSet.hideMenu(_this);
+}
+}
+function child_mouseover() {
+if (!animating) {
+parentMenuSet.showMenu(_this);
+}
+}
+function child_deactivate() {
+for (var i = 0; i < childMenus.length; i++) {
+if (childMenus[i] == this) {
+dehighlight(elmCache["item"][i]);
+break;
+}
+}
+}
+function child_queue() {
+parentMenuSet.hideMenu(_this);
+}
+function toString() {
+var aHtml = [];
+var sClassName = "mtDropdownMenu" + (oActuator.constructor != mtDropDownItem ? " top" : "");
+for (var i = 0, item = null; item = this.items[i]; i++) {
+aHtml[i] = item.toString(childMenus[i]);
+}
+return '<div id="' + id + '" class="' + sClassName + '">' + 
+'<div class="content"><table class="items" cellpadding="0" cellspacing="0" border="0">' + 
+'<tr><td colspan="2"><img src="' + mtDropDown.spacerGif + '" width="1" height="' + mtDropDown.menuPadding + '"></td></tr>' + 
+aHtml.join('') + 
+'<tr><td colspan="2"><img src="' + mtDropDown.spacerGif + '" width="1" height="' + mtDropDown.menuPadding + '"></td></tr></table>' + 
+'<div class="shadowBottom"><img src="' + mtDropDown.spacerGif + '" width="1" height="1"></div>' + 
+'<div class="shadowRight"><img src="' + mtDropDown.spacerGif + '" width="1" height="1"></div>' + 
+'<div class="background"><img src="' + mtDropDown.spacerGif + '" width="1" height="1"></div>' + 
+'</div></div>';
+}
+}
+ 
+mtDropDownSet.registry = [];
+function mtDropDownSet(iDirection, iLeft, iTop, iReferencePoint) {
+ 
+this.addMenu = addMenu;
+this.showMenu = showMenu;
+this.hideMenu = hideMenu;
+this.hide = hide;
+ 
+var menus = [];
+var _this = this;
+var current = null;
+this.index = mtDropDownSet.registry.length;
+mtDropDownSet.registry[this.index] = this;
+ 
+function addMenu(oActuator) {
+var m = new mtDropDown(oActuator, iDirection, iLeft, iTop, iReferencePoint, this);
+menus[menus.length] = m;
+return m;
+}
+function showMenu(oMenu) {
+if (oMenu != current) {
+ 
+if (current != null) hide(current); 
+ 
+current = oMenu;
+ 
+oMenu.show();
+}
+else {
+ 
+cancelHide(oMenu);
+}
+}
+function hideMenu(oMenu) {
+ 
+if (current == oMenu && oMenu.isOpen) {
+ 
+if (!oMenu.hideTimer) scheduleHide(oMenu);
+}
+}
+function scheduleHide(oMenu) {
+ 
+oMenu.onqueue();
+oMenu.hideTimer = window.setTimeout("mtDropDownSet.registry[" + _this.index + "].hide(mtDropDown.registry[" + oMenu.index + "])", mtDropDown.hideDelay);
+}
+function cancelHide(oMenu) {
+ 
+if (oMenu.hideTimer) {
+window.clearTimeout(oMenu.hideTimer);
+oMenu.hideTimer = null;
+}
+}
+function hide(oMenu) { 
+if (!oMenu && current) oMenu = current;
+if (oMenu && current == oMenu && oMenu.isOpen) {
+ 
+cancelHide(oMenu);
+current = null;
+oMenu.hideTimer = null;
+oMenu.hide();
+}
+}
+}
+ 
+function mtDropDownItem(sText, sUrl, oParent) {
+this.toString = toString;
+this.text = sText;
+this.url = sUrl;
+this.parentMenu = oParent;
+function toString(bDingbat) {
+var sDingbat = bDingbat ? mtDropDown.dingbatOff : mtDropDown.spacerGif;
+var iEdgePadding = mtDropDown.itemPadding + mtDropDown.menuPadding;
+var sPaddingLeft = "padding:" + mtDropDown.itemPadding + "px; padding-left:" + iEdgePadding + "px;"
+var sPaddingRight = "padding:" + mtDropDown.itemPadding + "px; padding-right:" + iEdgePadding + "px;"
+return '<tr class="item"><td nowrap style="' + sPaddingLeft + '">' + 
+sText + '</td><td width="14" style="' + sPaddingRight + '">' + 
+'<img src="' + sDingbat + '" width="14" height="14"></td></tr>';
+}
+}
+ 
+function Accelimation(from, to, time, zip) {
+if (typeof zip == "undefined") zip = 0;
+if (typeof unit == "undefined") unit = "px";
+this.x0 = from;
+this.x1 = to;
+this.dt = time;
+this.zip = -zip;
+this.unit = unit;
+this.timer = null;
+this.onend = new Function();
+this.onframe = new Function();
+}
+ 
+Accelimation.prototype.start = function() {
+this.t0 = new Date().getTime();
+this.t1 = this.t0 + this.dt;
+var dx = this.x1 - this.x0;
+this.c1 = this.x0 + ((1 + this.zip) * dx / 3);
+this.c2 = this.x0 + ((2 + this.zip) * dx / 3);
+Accelimation._add(this);
+}
+ 
+Accelimation.prototype.stop = function() {
+Accelimation._remove(this);
+}
+ 
+Accelimation.prototype._paint = function(time) {
+if (time < this.t1) {
+var elapsed = time - this.t0;
+this.onframe(Accelimation._getBezier(elapsed/this.dt,this.x0,this.x1,this.c1,this.c2));
+}
+else this._end();
+}
+ 
+Accelimation.prototype._end = function() {
+Accelimation._remove(this);
+this.onframe(this.x1);
+this.onend();
+}
+ 
+Accelimation._add = function(o) {
+var index = this.instances.length;
+this.instances[index] = o;
+ 
+if (this.instances.length == 1) {
+this.timerID = window.setInterval("Accelimation._paintAll()", this.targetRes);
+}
+}
+ 
+Accelimation._remove = function(o) {
+for (var i = 0; i < this.instances.length; i++) {
+if (o == this.instances[i]) {
+this.instances = this.instances.slice(0,i).concat( this.instances.slice(i+1) );
+break;
+}
+}
+ 
+if (this.instances.length == 0) {
+window.clearInterval(this.timerID);
+this.timerID = null;
+}
+}
+ 
+Accelimation._paintAll = function() {
+var now = new Date().getTime();
+for (var i = 0; i < this.instances.length; i++) {
+this.instances[i]._paint(now);
+}
+}
+ 
+Accelimation._B1 = function(t) { return t*t*t }
+Accelimation._B2 = function(t) { return 3*t*t*(1-t) }
+Accelimation._B3 = function(t) { return 3*t*(1-t)*(1-t) }
+Accelimation._B4 = function(t) { return (1-t)*(1-t)*(1-t) }
+ 
+Accelimation._getBezier = function(percent,startPos,endPos,control1,control2) {
+return endPos * this._B1(percent) + control2 * this._B2(percent) + control1 * this._B3(percent) + startPos * this._B4(percent);
+}
+ 
+Accelimation.instances = [];
+Accelimation.targetRes = 10;
+Accelimation.timerID = null;
+ 
+</SCRIPT>
+ 
+<SCRIPT language=javascript> 
+		var preloaded = [];
+ 
+		// here is a lame preloading script i am putting in just for demonstration
+		for (var i = 1; i <= 8; i++) {
+			preloaded[i] = [loadImage(i + "-0.gif"), loadImage(i + "-1.gif")];
+		}
+ 
+		function init() {
+			if (mtDropDown.isSupported()) {
+				mtDropDown.initialize();
+			}
+		}
+ 
+		// this is a crappy example preloader. Use whichever one you want.
+		function loadImage(sFilename) {
+			var img = new Image();
+			img.src ="../images/" + sFilename;
+			return img;
+		}
+</SCRIPT>
+
+
+ 
+<table width="1000" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+  <tr>
+    <td>
+    
+    <table border=0 cellpadding=0 cellspacing=0 width="968" align="center" style=" background-color:#FFF;background-image:url(../images/menu.gif)">
+<tbody> 
+<tr> 
+	<td class="top" height="37" style="padding-left:20px">
+
+<span style=' height:14px; color=#FFFFFF;FONT-WEIGHT: bold;FONT-SIZE:14px'>&nbsp;&nbsp;&nbsp;&nbsp;<a class=MenuType href='../index.asp' id=menu1 title='首页'>首&nbsp;&nbsp;页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span style=' height:14px;color=#FFFFFF;FONT-WEIGHT: bold;FONT-SIZE:14px'><a class=MenuType href='../About.asp?id=8' id=menu2 title='学院概况'>学院概况</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span style=' height:14px;color=#FFFFFF;FONT-WEIGHT: bold;FONT-SIZE:14px'><a class=MenuType href='../news.asp' id=menu3 title='新闻动态'>新闻动态</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span style=' height:14px;color=#FFFFFF;FONT-WEIGHT: bold;FONT-SIZE:14px'><a class=MenuType href='../Subject.asp' id=menu4 title='专业设置'>院系设置</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span style=' height:14px;color=#FFFFFF;FONT-WEIGHT: bold;FONT-SIZE:14px'><a class=MenuType href='../NewsMore.asp?id=9' id=menu5 title='名师风采'>教育教学</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span style=' height:14px;color=#FFFFFF;FONT-WEIGHT: bold;FONT-SIZE:14px'><a class=MenuType href='../Applyr.asp' id=menu6 title='网上报名'>网上报名</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span style=' height:14px;color=#FFFFFF;FONT-WEIGHT: bold;FONT-SIZE:14px'><a class=MenuType href='../company.asp' id=menu7 title='校企合作'>校企合作</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span style=' height:14px;color=#FFFFFF;FONT-WEIGHT: bold;FONT-SIZE:14px'><a class=MenuType href='../Employment.asp' id=menu8 title='就业信息'>就业信息</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span style=' height:14px;color=#FFFFFF;FONT-WEIGHT: bold;FONT-SIZE:14px'><a class=MenuType href='../Admissions.asp' id=menu9 title='招生信息'>招生信息</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span style=' height:14px;color=#FFFFFF;FONT-WEIGHT: bold;FONT-SIZE:14px'><a class=MenuType href='../xxsearch/index.asp' id=menu10 title='学校视频'>信息查询</a>&nbsp;</span>
+<SCRIPT LANGUAGE=javascript> 
+if (mtDropDown.isSupported()) {
+	var ms = new mtDropDownSet(mtDropDown.direction.down, 110, 0, mtDropDown.reference.bottomLeft);
+ 
+ 
+	var menu2 = ms.addMenu(document.getElementById('menu2'));
+	menu2.addItem('学院介绍','../About.asp?id=8'); 
+	menu2.addItem('院长致辞','../About.asp?id=5'); 
+	menu2.addItem('院系设置','../About.asp?id=7'); 
+	menu2.addItem('师资力量','../About.asp?id=6'); 
+	menu2.addItem('校园风采','../xyfc.asp'); 
+ 
+	var menu3 = ms.addMenu(document.getElementById('menu3'));
+	menu3.addItem('通知公告','../NewsMore.asp?id=1'); 
+	menu3.addItem('学院新闻','../NewsMore.asp?id=2'); 
+	menu3.addItem('教学动态','../NewsMore.asp?id=3'); 
+	menu3.addItem('媒体关注','../NewsMore.asp?id=4'); 
+
+	var menu4 = ms.addMenu(document.getElementById('menu4'));
+	menu4.addItem('现代移动通讯系','../SubjectMore.asp?id=1'); 
+	menu4.addItem('建筑工程系','../SubjectMore.asp?id=2'); 
+	menu4.addItem('机电工程系','../SubjectMore.asp?id=3'); 
+	menu4.addItem('经济管理系','../SubjectMore.asp?id=4'); 
+	menu4.addItem('环境艺术系','../SubjectMore.asp?id=6'); 
+	menu4.addItem('计算机系','../SubjectMore.asp?id=7'); 
+	menu4.addItem('医学系','../SubjectMore.asp?id=8'); 
+	menu4.addItem('能源工程系','../SubjectMore.asp?id=9'); 
+	menu4.addItem('汽车工程系','../SubjectMore.asp?id=10'); 
+	
+	var menu9 = ms.addMenu(document.getElementById('menu9'));
+	menu9.addItem('招生简章','../Admissions.asp');
+	menu9.addItem('常见问题','../FAQ.ASP');
+
+	mtDropDown.renderAll();
+	}
+</SCRIPT>
+ 
+	</td>
+</tr>
+</tbody> 
+</table>
+    </td>
+  </tr>
+</table>
+
+
+<table width="1000" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" align="center">
+  <tr>
+    <td>
+      <table width="1000" height="400" border="0" align="center" cellpadding="0" cellspacing="0" background="images/0321.jpg">
+      <tr>
+        <td>&nbsp;</td>
+        <td width="407" valign="top" bgcolor="#FFFFFF"><table width="108%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><a href="NewsMore.asp?id=3"><img src="images/title_dongtai.gif" width="407" height="41" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+          
+          <tr>
+            <td>
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+
+                  <td><table width="100%" border="0" cellpadding="2" cellspacing="1">
+                    <tr>
+                      <td align="left"><img src="images/inc4.gif" border="0" />&nbsp;<a href="Shownews.asp?id=35" style="font-size:12px">我院团委组织部分学生赴西安革命烈士陵园扫</a></td>
+                      <td align="right">&nbsp;</td>
+                    </tr>
+                  </table></td>
+                  <tr>
+                  <td><table width="100%" border="0" cellpadding="2" cellspacing="1">
+                    <tr>
+                      <td align="left"><img src="images/inc4.gif" border="0" />&nbsp;<a href="Shownews.asp?id=59" style="font-size:12px">制定复习方案 迎接期末考试</a></td>
+                      <td align="right">&nbsp;</td>
+                    </tr>
+                  </table></td>
+                  <tr>
+                  <td><table width="100%" border="0" cellpadding="2" cellspacing="1">
+                    <tr>
+                      <td align="left"><img src="images/inc4.gif" border="0" />&nbsp;<a href="Shownews.asp?id=70" style="font-size:12px">我院举行“让世界充满爱”主题晚会</a></td>
+                      <td align="right">&nbsp;</td>
+                    </tr>
+                  </table></td>
+                  <tr>
+                  <td><table width="100%" border="0" cellpadding="2" cellspacing="1">
+                    <tr>
+                      <td align="left"><img src="images/inc4.gif" border="0" />&nbsp;<a href="Shownews.asp?id=71" style="font-size:12px">经济管理系开展心理素质拓展活动</a></td>
+                      <td align="right">&nbsp;</td>
+                    </tr>
+                  </table></td>
+                  <tr>
+                  <td><table width="100%" border="0" cellpadding="2" cellspacing="1">
+                    <tr>
+                      <td align="left"><img src="images/inc4.gif" border="0" />&nbsp;<a href="Shownews.asp?id=72" style="font-size:12px">我院管理科学系召开2010届毕业生教育大会</a></td>
+                      <td align="right">&nbsp;</td>
+                    </tr>
+                  </table></td>
+                  <tr>
+                </tr>
+              </table></td>
+          </tr>
+        </table></td>
+          </tr>
+          <tr>
+            <td><a href="NewsMore.asp?id=1"><img src="images/title_gg.gif" width="407" height="41" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+          
+          <tr>
+            <td>
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+
+                  <td><table width="100%" border="0" cellpadding="2" cellspacing="1">
+                    <tr>
+                      <td align="left"><img src="images/inc4.gif" border="0" />&nbsp;<a href="Shownews.asp?id=51" style="font-size:12px">高考录取新政策出台</a></td>
+                      <td align="right">&nbsp;</td>
+                    </tr>
+                  </table></td>
+                  <tr>
+                  <td><table width="100%" border="0" cellpadding="2" cellspacing="1">
+                    <tr>
+                      <td align="left"><img src="images/inc4.gif" border="0" />&nbsp;<a href="Shownews.asp?id=52" style="font-size:12px">2008年我省成人高校招生录取最低控制分数线</a></td>
+                      <td align="right">&nbsp;</td>
+                    </tr>
+                  </table></td>
+                  <tr>
+                  <td><table width="100%" border="0" cellpadding="2" cellspacing="1">
+                    <tr>
+                      <td align="left"><img src="images/inc4.gif" border="0" />&nbsp;<a href="Shownews.asp?id=53" style="font-size:12px">由团委组织开展“文明宿舍”评比仪式拉开帷</a></td>
+                      <td align="right">&nbsp;</td>
+                    </tr>
+                  </table></td>
+                  <tr>
+                  <td><table width="100%" border="0" cellpadding="2" cellspacing="1">
+                    <tr>
+                      <td align="left"><img src="images/inc4.gif" border="0" />&nbsp;<a href="Shownews.asp?id=74" style="font-size:12px">关于培训预备党员的通知</a></td>
+                      <td align="right">&nbsp;</td>
+                    </tr>
+                  </table></td>
+                  <tr>
+                  <td><table width="100%" border="0" cellpadding="2" cellspacing="1">
+                    <tr>
+                      <td align="left"><img src="images/inc4.gif" border="0" />&nbsp;<a href="Shownews.asp?id=91" style="font-size:12px">第四届“大学地球科学课程报告论坛”隆重召</a></td>
+                      <td align="right">&nbsp;</td>
+                    </tr>
+                  </table></td>
+                  <tr>
+                </tr>
+              </table></td>
+          </tr>
+        </table></td>
+          </tr>
+        </table></td>
+        <td width="35"></td>
+        </tr>
+    </table>
+    <table width="94%" border="0" cellspacing="0" cellpadding="0" align="center" style="background-image:url(images/bg_bb.gif); background-repeat:repeat-x">
+  <tr>
+    <td height="25">&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center">
+    
+ <DIV id=demo style="OVERFLOW: hidden; WIDTH: 920px; align: center">
+<TABLE cellSpacing=0 cellPadding=0 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD id=marquePic1 vAlign=top>
+      <TABLE height=130 cellSpacing=0 cellPadding=0 width=660 border=0>
+        <TBODY>
+        <TR>
+          <TD align=middle width=103><table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+      		
+		<td>
+        <table width="100%" border="0" cellpadding="5" cellspacing="1">
+          <tr>
+            <td width="104"><a href="xyfc.asp" class="img" title="逸夫科技楼"><img src="/uploadfile/201408/20140810090510217.jpg" width="120" height="110" /></a></td>
+            </tr>
+        </table>
+		</td>
+      		
+		<td>
+        <table width="100%" border="0" cellpadding="5" cellspacing="1">
+          <tr>
+            <td width="104"><a href="xyfc.asp" class="img" title="艺术活动中心"><img src="/uploadfile/201408/20140810090442965.jpg" width="120" height="110" /></a></td>
+            </tr>
+        </table>
+		</td>
+      		
+		<td>
+        <table width="100%" border="0" cellpadding="5" cellspacing="1">
+          <tr>
+            <td width="104"><a href="xyfc.asp" class="img" title="学术报告厅"><img src="/uploadfile/201408/20140810090256946.jpg" width="120" height="110" /></a></td>
+            </tr>
+        </table>
+		</td>
+      		
+		<td>
+        <table width="100%" border="0" cellpadding="5" cellspacing="1">
+          <tr>
+            <td width="104"><a href="xyfc.asp" class="img" title="学生公寓"><img src="/uploadfile/201408/20140810090152394.jpg" width="120" height="110" /></a></td>
+            </tr>
+        </table>
+		</td>
+      		
+		<td>
+        <table width="100%" border="0" cellpadding="5" cellspacing="1">
+          <tr>
+            <td width="104"><a href="xyfc.asp" class="img" title="图书馆"><img src="/uploadfile/201408/20140810090125837.jpg" width="120" height="110" /></a></td>
+            </tr>
+        </table>
+		</td>
+      		
+		<td>
+        <table width="100%" border="0" cellpadding="5" cellspacing="1">
+          <tr>
+            <td width="104"><a href="xyfc.asp" class="img" title="室内游泳馆"><img src="/uploadfile/201408/20140810090028872.jpg" width="120" height="110" /></a></td>
+            </tr>
+        </table>
+		</td>
+      		
+		<td>
+        <table width="100%" border="0" cellpadding="5" cellspacing="1">
+          <tr>
+            <td width="104"><a href="xyfc.asp" class="img" title="实验室"><img src="/uploadfile/201408/20140810090006622.jpg" width="120" height="110" /></a></td>
+            </tr>
+        </table>
+		</td>
+      		
+		<td>
+        <table width="100%" border="0" cellpadding="5" cellspacing="1">
+          <tr>
+            <td width="104"><a href="xyfc.asp" class="img" title="篮球场"><img src="/uploadfile/201408/20140810085839469.jpg" width="120" height="110" /></a></td>
+            </tr>
+        </table>
+		</td>
+      		
+		<td>
+        <table width="100%" border="0" cellpadding="5" cellspacing="1">
+          <tr>
+            <td width="104"><a href="xyfc.asp" class="img" title="广东建华职业学院教学楼"><img src="/uploadfile/201408/20140810085747243.jpg" width="120" height="110" /></a></td>
+            </tr>
+        </table>
+		</td>
+      
+        </tr>
+      </table></TD></TR>
+</TBODY></TABLE></TD>
+    <TD id=marquePic2 vAlign=top></TD></TR></TBODY></TABLE></DIV>
+	<SCRIPT type=text/javascript> 
+var speed=30 
+marquePic2.innerHTML=marquePic1.innerHTML 
+function Marquee(){ 
+if(demo.scrollLeft>=marquePic1.scrollWidth){ 
+demo.scrollLeft=0 
+}else{ 
+demo.scrollLeft++ 
+}} 
+var MyMar=setInterval(Marquee,speed) 
+demo.onmouseover=function() {clearInterval(MyMar)} 
+demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)} 
+</SCRIPT>	
+    
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+    </table>
+
+    
+    
+    </td>
+  </tr>
+</table>
+
+<table width="1000" height="101" border="0" align="center" cellpadding="0" cellspacing="0" background="images/201304181000463.jpg" bgcolor="#FFFFFF">
+  
+  <tr>
+    <td align="center"" valign="middle"  background-repeat:repeat-x;>版权所有：广东建华职业学院  办学许可证：教民1100001103546号   联系电话：0755-42352233　0755-42352323　<br>
+地址：广东省深圳市公明镇将石新围 邮编：518106<br/>
+      访问量：330801      &nbsp;&nbsp;
+      <a href="http://www.miibeian.gov.cn"  target="_blank">粤ICP备0214021101号</a></td>
+  </tr>
+  
+</table>
+
+</script>
+
+
+</body>
+</html>

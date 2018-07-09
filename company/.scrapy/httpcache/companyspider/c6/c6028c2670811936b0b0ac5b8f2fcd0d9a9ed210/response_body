@@ -1,0 +1,481 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>江西经济管理干部学院</title>
+<meta content="江西经济管理干部学院" name="keywords" />
+<meta content="江西经济管理干部学院" name="description" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<link href="/skin/jiea/default/css/style.css" rel="stylesheet"/>
+<script src="/skin/jiea/default/js/jquery-1.8.3.min.js"></script>
+<!--[if IE]><script src="/skin/jiea/default/js/html5.js"></script><![endif]-->
+</head>
+
+<body>
+<!--header-->
+<header>
+	<!--top-->
+	<div id="top">
+        <div class="top-wrap s b">
+			<div class="fl">江西经济管理干部学院欢迎您！</div>
+            <div class="date fl">
+				<script type='text/javascript'>var now=new Date();</script>
+                <script language=javascript>
+                var lunarinfo=new Array(0x04bd8,0x04ae0,0x0a570,0x054d5,0x0d260,0x0d950,0x16554,0x056a0,0x09ad0,0x055d2,
+                0x04ae0,0x0a5b6,0x0a4d0,0x0d250,0x1d255,0x0b540,0x0d6a0,0x0ada2,0x095b0,0x14977,
+                0x04970,0x0a4b0,0x0b4b5,0x06a50,0x06d40,0x1ab54,0x02b60,0x09570,0x052f2,0x04970,
+                0x06566,0x0d4a0,0x0ea50,0x06e95,0x05ad0,0x02b60,0x186e3,0x092e0,0x1c8d7,0x0c950,
+                0x0d4a0,0x1d8a6,0x0b550,0x056a0,0x1a5b4,0x025d0,0x092d0,0x0d2b2,0x0a950,0x0b557,
+                0x06ca0,0x0b550,0x15355,0x04da0,0x0a5d0,0x14573,0x052d0,0x0a9a8,0x0e950,0x06aa0,
+                0x0aea6,0x0ab50,0x04b60,0x0aae4,0x0a570,0x05260,0x0f263,0x0d950,0x05b57,0x056a0,
+                0x096d0,0x04dd5,0x04ad0,0x0a4d0,0x0d4d4,0x0d250,0x0d558,0x0b540,0x0b5a0,0x195a6,
+                0x095b0,0x049b0,0x0a974,0x0a4b0,0x0b27a,0x06a50,0x06d40,0x0af46,0x0ab60,0x09570,
+                0x04af5,0x04970,0x064b0,0x074a3,0x0ea50,0x06b58,0x055c0,0x0ab60,0x096d5,0x092e0,
+                0x0c960,0x0d954,0x0d4a0,0x0da50,0x07552,0x056a0,0x0abb7,0x025d0,0x092d0,0x0cab5,
+                0x0a950,0x0b4a0,0x0baa4,0x0ad50,0x055d9,0x04ba0,0x0a5b0,0x15176,0x052b0,0x0a930,
+                0x07954,0x06aa0,0x0ad50,0x05b52,0x04b60,0x0a6e6,0x0a4e0,0x0d260,0x0ea65,0x0d530,
+                0x05aa0,0x076a3,0x096d0,0x04bd7,0x04ad0,0x0a4d0,0x1d0b6,0x0d250,0x0d520,0x0dd45,
+                0x0b5a0,0x056d0,0x055b2,0x049b0,0x0a577,0x0a4b0,0x0aa50,0x1b255,0x06d20,0x0ada0);
+                //==== 传回农历 y年的总天数
+                function lyeardays(y) {
+                var i, sum = 348
+                for(i=0x8000; i>0x8; i>>=1) sum += (lunarinfo[y-1900] & i)? 1: 0
+                return(sum+leapdays(y))
+                }
+                //==== 传回农历 y年闰月的天数
+                function leapdays(y) {
+                if(leapmonth(y))  return((lunarinfo[y-1900] & 0x10000)? 30: 29)
+                else return(0)
+                }
+                //==== 传回农历 y年闰哪个月 1-12 , 没闰传回 0
+                function leapmonth(y) { return(lunarinfo[y-1900] & 0xf)}
+                //====================================== 传回农历 y年m月的总天数
+                function monthdays(y,m) { return( (lunarinfo[y-1900] & (0x10000>>m))? 30: 29 )}
+                //==== 算出农历, 传入日期物件, 传回农历日期物件
+                //     该物件属性有 .year .month .day .isleap .yearcyl .daycyl .moncyl
+                function lunar(objdate) {
+                var i, leap=0, temp=0;
+                var basedate = new Date(1900,0,31);
+                var offset   = (objdate - basedate)/86400000;
+                var day='';
+                var myweekday='';
+                mydate=new Date();
+                myweekday=mydate.getDay();
+                if(myweekday == 0)
+                weekday=' 星期日 ';
+                else if(myweekday == 1)
+                weekday=' 星期一 ';
+                else if(myweekday == 2)
+                weekday=' 星期二 ';
+                else if(myweekday == 3)
+                weekday=' 星期三 ';
+                else if(myweekday == 4)
+                weekday=' 星期四 ';
+                else if(myweekday == 5)
+                weekday=' 星期五 ';
+                else if(myweekday == 6)
+                weekday=' 星期六 ';
+                this.daycyl = offset + 40;
+                this.moncyl = 14;
+                for(i=1900; i<2050 && offset>0; i++) {
+                temp = lyeardays(i);
+                offset -= temp;
+                this.moncyl += 12;
+                }
+                if(offset<0) {
+                offset += temp;
+                i--;
+                this.moncyl -= 12;
+                }
+                this.year = i;
+                this.yearcyl = i-1864;
+                leap = leapmonth(i); //闰哪个月
+                this.isleap = false
+                for(i=1; i<13 && offset>0; i++) {
+                //闰月
+                if(leap>0 && i==(leap+1) && this.isleap==false)
+        
+                { --i; this.isleap = true; temp = leapdays(this.year); }
+                else
+                { temp = monthdays(this.year, i); }
+                //解除闰月
+                if(this.isleap==true && i==(leap+1)) this.isleap = false
+                offset -= temp
+                if(this.isleap == false) this.moncyl ++
+                }
+                if(offset==0 && leap>0 && i==leap+1)
+                if(this.isleap)
+                { this.isleap = false; }
+                else
+                { this.isleap = true; --i; --this.moncyl;}
+                if(offset<0){ offset += temp; --i; --this.moncyl; }
+                this.month = i
+                this.day = offset + 1
+                }
+                function cday(m,d){
+                var nstr1 = new Array('日','一','二','三','四','五','六','七','八','九','十');
+                var nstr2 = new Array('初','十','廿','卅','　');
+                var s;
+                if (m>10){s = '十'+nstr1[m-10]} else {s = nstr1[m]} s += '月'
+                if (s=='十二月') s = '腊月';
+                if (s=='一月') s = '正月';
+                switch (d) {
+                case 10:s += '初十'; break;
+                case 20:s += '二十'; break;
+                case 30:s += '三十'; break;
+                default:s += nstr2[Math.floor(d/10)]; s += nstr1[d%10];
+                }
+                return(s);
+                }
+                function solarday2(){
+                var sdobj = new Date(now.getFullYear(),now.getMonth(),now.getDate());
+                var ldobj = new lunar(sdobj);
+                var cl = '';
+        
+                //农历bb'+(cld[d].isleap?'闰 ':' ')+cld[d].lmonth+' 月 '+cld[d].lday+' 日
+                var tt = cday(ldobj.month,ldobj.day);
+                document.write('今天是：'+now.getFullYear()+'年'+(now.getMonth()+1)+'月'+now.getDate()+'日'+ weekday + '  农历'+tt+'');
+                }
+                solarday2();
+                function keepSession() {
+                    $.ajax("/session.servlet");
+                }
+                setInterval("keepSession()",600000);
+                </script>
+            </div>
+			<div class="fr">
+            	<a href="javascript:void(0);" onclick="SetHome(this,window.location)">设为首页</a>|<a href="javascript:void(0);" onclick="AddFavorite(window.location,document.title)">加入收藏</a>
+			</div>
+        </div>
+	</div>    <!--/top-->
+    
+    <!--logo-->
+	<div id="logo" class="s b">    	
+    	<h1><a href="/" title="江西经济管理干部学院">江西经济管理干部学院</a></h1>
+        <h2>江西省领导干部经济管理知识培训基地</h2>
+        <ul class="vtype">
+        	<li class="t1"><a href="/ks/index.jsp">考生</a></li>
+        	<li class="t2"><a href="/zxs/index.jsp">在校生</a></li>
+        	<li class="t3"><a href="/jzg/index.jsp">教职工</a></li>
+        	<li class="t4"><a href="/xy/index.jsp">校友</a></li>
+        	<li class="t5"><a href="/fk/index.jsp">访客</a></li>
+        </ul>
+    </div>    <!--/logo-->
+
+	<!-- nav -->
+	<nav>
+    			<ul class="multiUl">
+            <li id="chnl_0"><a class="go" href="/">学院首页</a></li>
+            <li id="chnl_1"><a class="go" href="/xyjj/index.jsp">学院概况</a>
+                <blockquote><div class="ChildNavIn"><a class="First" href="/xyjj/index.jsp">学院简介</a><a href="/lsyg/index.jsp">历史沿革</a><a href="/xrld/index.jsp">现任领导</a><a href="/lrld/index.jsp">历任领导</a><a href="/xyfc/index.jsp">校园风采</a><a href="/jgzg/index.jsp">经管之歌</a><a href="/xh/index.jsp">校徽</a><a href="/xx/index.jsp">校训</a><a href="/xydt/index.jsp">校园地图</a></div></blockquote>
+            </li>
+            <li id="chnl_2"><a class="go" href="/tzgg/index.jsp">新闻中心</a>
+                <blockquote><div class="ChildNavIn"><a class="First" href="/tzgg/index.jsp">通知公告</a><a href="/xyyw/index.jsp">学院要闻</a><a href="/xbcxw/index.jsp">系部处新闻</a><a href="/mtbd/index.jsp">媒体报道</a><a href="/spxw/index.jsp">视频新闻</a></div></blockquote>
+            </li>
+            <li id="chnl_3"><a class="go" href="/znbm/index.jsp">组织机构</a>
+                <blockquote><div class="ChildNavIn"><a class="First" href="/znbm/index.jsp">职能部门</a><a href="/jxdw/index.jsp">教学单位</a><a href="/kyjg/index.jsp">科研机构</a></div></blockquote>
+            </li>
+            <li id="chnl_4"><a class="go" href="http://pxc.jiea.cn" target="_blank">干部培训</a>
+            </li>
+            <li id="chnl_224"><a class="go" href="http://jwc.jiea.cn" target="_blank">人才培养</a>
+            </li>
+            <li id="chnl_225"><a class="go" href="http://kyc.jiea.cn/" target="_blank">科学研究</a>
+            </li>
+            <li id="chnl_243"><a class="go" href="/zsjy/index.jsp" target="_blank">招生就业</a>
+                <blockquote><div class="ChildNavIn"><a class="First" href="http://zsb.jiea.cn/" target="_blank">招生信息</a><a href="http://jyk.jiea.cn/" target="_blank">就业服务</a></div></blockquote>
+            </li>
+            <li id="chnl_246"><a class="go" href="/xxfw/index.jsp" target="_blank">信息服务</a>
+                <blockquote><div class="ChildNavIn"><a class="First" href="http://oa.jiea.cn:8003/Office/" target="_blank">办公自动化</a><a href="http://111.75.164.148/jiaowu_system/" target="_blank">教务管理系统</a><a href="http://192.168.201.11/homeLogin.action" target="_blank">校园一卡通</a><a href="/xxmh/index.jsp" target="_blank">信息门户</a><a href="http://tsg.jiea.cn" target="_blank">图书资源</a><a href="http://xxfw.jiea.cn/" target="_blank">上网服务</a></div></blockquote>
+            </li>
+		</ul>
+	</nav>
+
+	<script type="text/javascript">
+        var mst;
+        jQuery(".multiUl li").hover(function(){
+            var curItem = jQuery(this);
+            mst = setTimeout(function(){//延时触发
+                curItem.find("blockquote").slideDown('fast');
+                mst = null;
+            });
+        }, function(){
+            if(mst!=null)clearTimeout(mst);
+                jQuery(this).find("blockquote").slideUp('fast');
+        });			
+    </script>    <!-- /nav -->
+</header>
+<!--/header-->
+
+<!--banner-->
+<div class="yx-rotaion">
+	<ul class="rotaion_list">                
+                 <!--<li><img src="/skin/jiea/default/img/ad/ad-20181.jpg" width="1000" height="320"></li>-->                 
+                <li><a href="http://www.jiea.cn/doc/9330.jsp" target="_blank"><img src="/skin/jiea/default/img/banner/2018newyear.jpg" width="1000" height="320"></a></li>
+		<li><a href="http://www.jiea.cn/19dzl/index.jsp" target="_blank"><img src="/skin/jiea/default/img/xx19djs.jpg" width="1000" height="320"></a></li>
+		<li><img src="/skin/jiea/default/img/ad-20171.jpg" width="1000" height="320"></li>
+		<li><a href="javascript:"><img src="/skin/jiea/default/img/ad-20172.jpg" width="1000" height="320"></a></li>
+		<li><a href="javascript:"><img src="/skin/jiea/default/img/ad-2.jpg" width="1000" height="320"></a></li>
+		<li><a href="javascript:"><img src="/skin/jiea/default/img/ad-3.jpg" width="1000" height="320"></a></li>
+		<!--<li><a href="javascript:"><img src="/skin/jiea/default/img/ad-4.jpg" width="1000" height="320"></a></li>-->
+	</ul>
+</div>
+
+<script type="text/javascript" src="/skin/jiea/default/js/jquery.yx_rotaion.js"></script>
+<script type="text/javascript">
+$(".yx-rotaion").yx_rotaion({btn:true,focus:true,title:false,auto:true});
+</script><!--/banner-->
+
+<!--main-->
+<div class="mt10 s b">
+	<div class="ml">
+		<!--jdt-->        
+		<div id="jdt">
+			<a href="/doc/9468.jsp" title="学院召开2018年全面从严治党工作会议" target="_blank"><img src="/member/upload/jiea/201804/04135637g0v4.jpg" alt="学院召开2018年全面从严治党工作会议"/></a>
+			<a href="/doc/9445.jsp" title="学院召开会议传达学习贯彻全国两会精神" target="_blank"><img src="/member/upload/jiea/201804/04131950priv.jpg" alt="学院召开会议传达学习贯彻全国两会精神"/></a>
+			<a href="/doc/8080.jsp" title="省政协主席姚增科来学院听思政课" target="_blank"><img src="/member/upload/jiea/201804/04131229pba3.png" alt="省政协主席姚增科来学院听思政课"/></a>
+			<a href="/doc/8941.jsp" title="省委常委、常务副省长毛伟明莅临学院视察指导工作" target="_blank"><img src="/member/upload/jiea/201804/04140436oog4.jpg" alt="省委常委、常务副省长毛伟明莅临学院视察&hellip;"/></a>
+			<a href="/doc/8596.jsp" title="学院召开全院领导干部会议传达学习十九大精神" target="_blank"><img src="/member/upload/jiea/201804/041346133xi4.jpg" alt="学院召开全院领导干部会议传达学习十九大&hellip;"/></a>
+			<a href="/doc/261.jsp" title="省委常委、组织部长赵爱明为省出资监管企业管理人员授课" target="_blank"><img src="/member/upload/jiea/201804/04115152ypos.jpg" alt="省委常委、组织部长赵爱明为省出资监管企&hellip;"/></a>
+		</div>
+		<!--/jdt-->
+        
+		<div class="tit mt10">
+        	<h2>快速通道</h2><span></span>
+        </div>
+		<div class="cont b">
+			<ul class="tongdao">
+            	<li class="c1"><a href="http://oa.jiea.cn:8003/Office/" target="_blank">办公自动化</a></li>
+            	<li class="c2"><a href="http://newjwglxt.jiea.cn/jiaowu_system
+/" target="_blank">教务系统</a></li>
+            	<li class="c3"><a href="http://kycgsb.jiea.cn/" target="_blank">科研管理</a></li>
+            	<li class="c4"><a href="http://192.168.201.11/homeLogin.action" target="_blank">老一卡通查询</a></li>
+<li class="c5"><a href="http://192.168.201.101/SelfSearch/login.aspx" target="_blank">新一卡通查询</a></li>
+<li class="c6"><a href="http://jiea.jxjygh.com/" target="_blank">工会信息系统</a></li>
+<li class="c7"><a href="http://tsg.jiea.cn/" target="_blank">数字图书馆</a></li>
+<li class="c8"><a href="http://192.168.22.155/sbweb/" target="_blank">设备管理系统</a></li>
+<li class="c9"><a href="http://jiea.fanya.chaoxing.com" target="_blank">网络教学平台</a></li>
+<li class="c10"><a href="http://mail.jiea.cn" target="_blank">邮件系统</a></li>
+<!--<li class="c9"><a href="http://survey.jiea.cn" target="_blank">在线投票系统</a></li>-->
+            </ul>
+    	</div>
+    </div>
+    
+	<div class="mc">        
+		<ul class="xxk">
+        	<li id="xxk_11" onMouseOver="xxk(1,1);" class="curr"><a href="/xyyw/index.jsp" target="_blank">学院要闻</a></li>
+        	<li id="xxk_12" onMouseOver="xxk(1,2);" class="normal"><a href="/xbcxw/index.jsp" target="_blank">系部处新闻</a></li>
+        	<li id="xxk_13" onMouseOver="xxk(1,3);" class="normal"><a href="/mtbd/index.jsp" target="_blank">媒体报道</a></li>
+        	<li id="xxk_14" onMouseOver="xxk(1,4);" class="normal"><a href="/spxw/index.jsp" target="_blank">视频新闻</a></li>
+        </ul>
+		<div class="cont">
+			<ul id="xxkc_11" class="nlist mt5 w96">
+                <li><a href="/doc/9792.jsp" title="学院召开网络安全和信息化工作领导小组会议" target="_blank"><span>学院召开网络安全和信息化工作领导小组会议</span></a><em>05-25</em></li>
+                <li><a href="/doc/9789.jsp" title="学院开展2018年教师教学竞赛活动" target="_blank"><span>学院开展2018年教师教学竞赛活动</span></a><em>05-25</em></li>
+                <li><a href="/doc/9755.jsp" title="2018年江西省装配式建筑发展高峰论坛开幕" target="_blank"><span>2018年江西省装配式建筑发展高峰论坛开幕</span></a><em>05-18</em></li>
+                <li><a href="/doc/9754.jsp" title="学院召开2018年第5次党委中心组（扩大）学习会" target="_blank"><span>学院召开2018年第5次党委中心组（扩大）学习会</span></a><em>05-18</em></li>
+                <li><a href="/doc/9750.jsp" title="学院组织学生开展普法宣传进社区活动" target="_blank"><span>学院组织学生开展普法宣传进社区活动</span></a><em>05-17</em></li>
+                <li><a href="/doc/9742.jsp" title="学院召开中层干部会议传达学习全省作风建设工作会议精神  部署作风建设工作" target="_blank"><span>学院召开中层干部会议传达学习全省作风建设工作会&hellip;</span></a><em>05-14</em></li>
+                <li><a href="/doc/9740.jsp" title="学院召开2018年党政工作要点落实推进会" target="_blank"><span>学院召开2018年党政工作要点落实推进会</span></a><em>05-14</em></li>
+                <li><a href="/doc/9712.jsp" title="秦夏明会见美国国际医药大学来宾" target="_blank"><span>秦夏明会见美国国际医药大学来宾</span></a><em>05-08</em></li>
+                <li><a href="/doc/9708.jsp" title="学院开展思想政治理论课专题教研活动" target="_blank"><span>学院开展思想政治理论课专题教研活动</span></a><em>05-08</em></li>
+			</ul>
+            
+			<ul id="xxkc_12" class="nlist mt5 w96 off">
+                <li><span class="red">【外语系】</span><a href="http://wyx.jiea.cn/doc/9793.jsp" title="外语系前往武汉厚溥企业集团调研" target="_blank"><span>外语系前往武汉厚溥企业集团调研</span></a><em>05-28</em></li>
+                <li><span class="red">【基础课部】</span><a href="http://jckb.jiea.cn/doc/9787.jsp" title="基础课部党支部赴小平小道为党员庆祝“政治生日”" target="_blank"><span>基础课部党支部赴小平小道为党员&hellip;</span></a><em>05-25</em></li>
+                <li><span class="red">【外语系】</span><a href="http://wyx.jiea.cn/doc/9786.jsp" title="外语系专外教研室积极开展“一人一讲”教研活动" target="_blank"><span>外语系专外教研室积极开展“一人&hellip;</span></a><em>05-25</em></li>
+                <li><span class="red">【外语系】</span><a href="http://wyx.jiea.cn/doc/9785.jsp" title="外语系前往江西旅游商贸职业学院调研" target="_blank"><span>外语系前往江西旅游商贸职业学院&hellip;</span></a><em>05-25</em></li>
+                <li><span class="red">【外语系】</span><a href="http://wyx.jiea.cn/doc/9781.jsp" title="公外教研室开展“一人一讲”教研活动" target="_blank"><span>公外教研室开展“一人一讲”教研&hellip;</span></a><em>05-24</em></li>
+                <li><span class="red">【外语系】</span><a href="http://wyx.jiea.cn/doc/9780.jsp" title="外语系教师积极参加学院2018年教师教学竞赛" target="_blank"><span>外语系教师积极参加学院2018年教&hellip;</span></a><em>05-24</em></li>
+                <li><span class="red">【培训处】</span><a href="http://pxc.jiea.cn/doc/9778.jsp" title="培训处召开贯彻落实作风建设工作会议" target="_blank"><span>培训处召开贯彻落实作风建设工作&hellip;</span></a><em>05-24</em></li>
+                <li><span class="red">【信息工程系】</span><a href="http://jsjx.jiea.cn/doc/9774.jsp" title="信工系首届“微贷网杯”“互联网+”创业大赛圆满落幕" target="_blank"><span>信工系首届“微贷网杯”“互联&hellip;</span></a><em>05-24</em></li>
+                <li><span class="red">【会计系】</span><a href="http://kjx.jiea.cn/doc/9773.jsp" title="会计系在学院2018年教师教学竞赛中荣获佳绩" target="_blank"><span>会计系在学院2018年教师教学竞赛&hellip;</span></a><em>05-24</em></li>
+			</ul>
+            
+			<ul id="xxkc_13" class="nlist mt5 w96 off">
+                <li><a href="/doc/9772.jsp" title="多家媒体报道2018年江西省装配式建筑发展高峰论坛" target="_blank"><span>多家媒体报道2018年江西省装配式建筑发展&hellip;</span></a><em>05-23</em></li>
+                <li><a href="/doc/9753.jsp" title="人民网等多家媒体报道学院组织学生开展普法宣传进社区活动" target="_blank"><span>人民网等多家媒体报道学院组织学生开展普&hellip;</span></a><em>05-18</em></li>
+                <li><a href="/doc/9728.jsp" title="中国江西网、江西手机报报道学院举办“五四”学习交流座谈会" target="_blank"><span>中国江西网、江西手机报报道学院举办“五&hellip;</span></a><em>05-07</em></li>
+                <li><a href="/doc/9727.jsp" title="人民网等多家媒体报道学院第六届青年论坛" target="_blank"><span>人民网等多家媒体报道学院第六届青年论坛</span></a><em>05-07</em></li>
+                <li><a href="/doc/9587.jsp" title="多家媒体报道学院召开总支（支部）书记会议 " target="_blank"><span>多家媒体报道学院召开总支（支部）书记会&hellip;</span></a><em>04-19</em></li>
+                <li><a href="/doc/9579.jsp" title="多家媒体报道学院启动“全民国家安全教育日”宣传教育活动" target="_blank"><span>多家媒体报道学院启动“全民国家安全教育&hellip;</span></a><em>04-18</em></li>
+                <li><a href="/doc/9571.jsp" title="江西卫视、江西教育台报道学院启动“全民国家安全教育日”宣传教育活动" target="_blank"><span>江西卫视、江西教育台报道学院启动“全民&hellip;</span></a><em>04-17</em></li>
+                <li><a href="/doc/9570.jsp" title="人民网、中国江西网报道学院启动“全民国家安全教育日”宣传教育活动" target="_blank"><span>人民网、中国江西网报道学院启动“全民国&hellip;</span></a><em>04-17</em></li>
+                <li><a href="/doc/9559.jsp" title="江西日报微博直播学院财贸系“学习习近平新时代中国特色社会主义思想‘十个一’活动”启动仪式暨学习十九大精神专题辅导讲座" target="_blank"><span>江西日报微博直播学院财贸系“学习习近平&hellip;</span></a><em>04-17</em></li>
+			</ul>
+
+            <div id="xxkc_14" class="w96 mt5 off">
+            <div class="twlist">
+              <a href="/doc/9569.jsp" title="江西卫视、江西教育台报道学院启动“全民国家安全教育日”宣传教育活动" target="_blank" class="video"><img src=""/><i></i></a>
+              <div class="in_text">
+                <h2><a href="/doc/9569.jsp" title="江西卫视、江西教育台报道学院启动“全民国家安全教育日”宣传教育活动" target="_blank">江西卫视、江西教育台报道学院启动“全民&hellip;</a></h2>
+                <p><a href="/doc/9569.jsp" target="_blank" class="blue">[详情]</a></p>
+              </div>
+            </div>
+            <ul class="nlist2 pb5">
+                <li class="m4"><a href="/doc/9572.jsp" title="江西卫视、江西教育电视台报道学院举办第二期省属国有企业领导人员学习贯彻党的十九大精神专题研讨班" target="_blank">江西卫视、江西教育电视台报道&hellip;</a><em>01-09</em></li>
+                <li class="m4"><a href="/doc/9576.jsp" title="江西卫视报道学院举办2018届毕业生洽谈会" target="_blank">江西卫视报道学院举办2018届毕&hellip;</a><em>11-27</em></li>
+                <li class="m4"><a href="/doc/9574.jsp" title="中国教育电视台采访报道学院师生收听收看十九大开幕式" target="_blank">中国教育电视台采访报道学院师&hellip;</a><em>10-23</em></li>
+                <li class="m4"><a href="/doc/9573.jsp" title="江西教育台“校长约吧”栏目专访学院院长秦夏明" target="_blank">江西教育台“校长约吧”栏目专&hellip;</a><em>10-12</em></li>
+            </ul>
+        	</div>
+        </div>
+        
+		<div class="tit mt10">
+        	<h2>通知公告</h2><span></span><em><a href="/tzgg/index.jsp" target="_blank">更多 &raquo;</a></em>
+        </div>		
+		<div class="cont">
+        	<ul class="nlist w96">   
+              <li><a href="http://zzrs.jiea.cn/doc/9655.jsp" title="2018年公开招聘硕士研究生人才公告(031 ）" target="_blank"><span class="red">2018年公开招聘硕士研究生人才公告(031 ）</span></a><em>04-29</em></li>
+            
+                <li><a href="http://www.jiea.cn/doc/6372.jsp" title="关于公布省纪委驻省工信委纪检组联系方式的通告" target="_blank">关于公布省纪委驻省工信委纪检组联系方式的通告</a><em>06-15</em></li>
+                <li><a href="http://jwc.jiea.cn/doc/9784.jsp" title="江西经济管理干部学院教材采购项目（采购编号：DTY18045L38）公开比选公告" target="_blank">江西经济管理干部学院教材采购项目（采购编号：DT&hellip;</a><em>05-25</em></li>
+                <li><a href="http://zwc.jiea.cn/doc/9764.jsp" title="江西经济管理干部学院自来水蓄水池围墙项目招标公告" target="_blank">江西经济管理干部学院自来水蓄水池围墙项目招标公告</a><em>05-22</em></li>
+                <li><a href="http://jwc.jiea.cn/doc/9751.jsp" title="关于下达2018—2019学年第一学期2016、2017级教学任务的相关通知" target="_blank">关于下达2018—2019学年第一学期2016、2017级教学&hellip;</a><em>05-17</em></li>
+                <li><a href="http://zwc.jiea.cn/doc/9749.jsp" title="关于申请江西省独生子女死亡的计划生育特殊家庭发放一次性抚慰金的通知" target="_blank">关于申请江西省独生子女死亡的计划生育特殊家庭发&hellip;</a><em>05-16</em></li>
+                <li><a href="http://jwc.jiea.cn/doc/9720.jsp" title="2018年江西经济管理干部学院转专业学生名单公示" target="_blank">2018年江西经济管理干部学院转专业学生名单公示</a><em>05-10</em></li>
+                <li><a href="http://jwc.jiea.cn/doc/9711.jsp" title="关于举行2018年教师教学竞赛的通知" target="_blank">关于举行2018年教师教学竞赛的通知</a><em>05-08</em></li>
+                <li><a href="http://zwc.jiea.cn/doc/9665.jsp" title="江西经济管理干部学院高压开闭所及配电房维修改造项目招标公告" target="_blank">江西经济管理干部学院高压开闭所及配电房维修改造&hellip;</a><em>05-03</em></li>
+			</ul>
+            
+    	</div>
+    </div>
+    
+	<div class="mr">
+		<div class="tit">
+        	<h2>特别专题</h2><span></span><em><a href="/topic/index.jsp" target="_blank">更多 &raquo;</a></em>
+        </div>
+		<div class="topic mt5 b">
+			<div id="s1">
+                <a class="abtn aleft" href="#left" title="左移"></a>
+                <div class="imglist_w">
+                    <ul class="imglist">
+                        <li>
+                            <a href="/19dzl/index.jsp" target="_blank"><img src="/member/upload/jiea/201711/08200138q4xe.jpg"/></a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="abtn aright" href="#right" title="右移"></a>
+            </div>
+    	</div>   
+        <div class="search">
+			<form action="/query.jsp" name="search" id="search" method="post" onsubmit="return checkval();">				
+                <input type="text" value="请输入关键词" onfocus="if(this.value=='请输入关键词')this.value=''" onblur="if(this.value=='')this.value='请输入关键词'" autocomplete="off" class="sinput" name="q"/>
+                <input type="image" src="/skin/jiea/default/img/sbtn.jpg" class="sbtn" value=""/>
+			</form>
+		</div>
+		<div class="tit mt10">
+        	<h2>服务专区</h2><span></span>
+        </div>
+		<ul class="service">
+			<li class="ser1"><a href="mailto:yzxx@jiea.cn" target="_blank">院长信箱</a></li>
+			<li class="ser2"><a href="/bgdh/index.jsp" target="_blank">办公电话</a></li>
+			<li class="ser3"><a href="/jtzn/index.jsp" target="_blank">交通指南</a></li>
+			<li class="ser4"><a href="/xyxl/index.jsp" target="_blank">学院校历</a></li>
+			<li class="ser1 long"><a href="mailto:jzzz2016@jiea.cn" target="_blank">集中整治监督信箱</a></li>
+    	</ul>
+		<div class="tit mt10">
+        	<h2>友情链接</h2><span></span><!--<em><a href="/flink/index.html" target="_blank">更多 &raquo;</a></em>-->
+        </div>
+		<div class="flink b">
+        <div class="a1">
+        <a href="http://lxyz.12371.cn" title="中央“两学一做”教育学习网" target="_blank">中央“两学一做”教育学习网</a>
+        </div>
+        
+        <div class="a1">
+        <a href="http://www.sizhengwang.cn/" title="全国高校思想政治工作网" target="_blank">全国高校思想政治工作网</a>
+        </div>
+        
+        
+        <a href="http://www.jxgbwlxy.gov.cn/portal/index!index.action" title="江西干部网络学院" target="_blank">江西干部网络学院</a>
+        
+        |
+        
+        <a href="http://www.jiangxi.gov.cn" title="江西省人民政府" target="_blank">江西省人民政府</a>
+        
+        |
+        
+        <a href="http://www.moe.gov.cn" title="教育部" target="_blank">教育部</a>
+        
+        |
+        
+        <a href="http://www.jxedu.gov.cn" title="江西省教育厅" target="_blank">江西省教育厅</a>
+        
+        
+    	</div>
+		<ul class="weibo">
+			<li class="w1"><a href="http://weibo.com/u/3972867782" target="_blank">学院官方微博</a></li>
+			<!--<li class="w2"><a href="#" target="_blank">学院官方微信</a></li>-->
+    	</ul>
+    </div>
+</div>
+<!--/main-->
+
+<!--footer--> 
+<footer>
+    <div class="s fmsg o">
+       <div style="width:190px;float:left;text-align:right;">
+       <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/15/000/0000/60421171/CA150000000604211710001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+       </div>
+       <div style="width:670px;float:left;margin:10px 0 0 10px;">
+      校址：南昌市红角洲卧龙路269号(330088) TEL:0791-83956600 FAX:0791-83956600 网站备案号:赣ICP备05006252号 <br/>
+    Copy Rights 2008-2015 © www.jiea.cn 网络维护：经管院信息中心 E-mail: xxzx@jiea.cn  <a href="http://www.anquan.org/s/www.jiea.cn" name="pGDt3Rlw06qYP56wprtcSJ0WU4kfsTQeeLOurV7cJJbAzsO8m3" class="white">安全联盟</a><br/>
+       </div>
+      <div style="width:300px;margin:0 auto; padding:20px 0;">
+<a target="_blank" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=36010802000178" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+<img src="/skin/jiea/default/img/babh.png" style="float:left;"/>
+<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#ffffff;">赣公网安备 36010802000178号</p></a>
+	</div> 
+    </div>
+</footer>
+<script type="text/javascript">
+  document.write(unescape("%3Cscript src='/visitViews.jsp%3Furl%3D")+document.location.href+unescape("' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!--/footer-->
+
+<script src="/skin/jiea/default/js/com.js"></script>
+<script src="/skin/jiea/default/js/jquery.KinSlideshow-1.2.1.min.js"></script>
+<script src="/skin/jiea/default/js/slider.js"></script>
+<script src="/skin/jiea/default/js/xslider.js"></script>	
+<script src="/skin/jiea/default/js/admove.js"></script>
+
+
+
+<script language="javascript">
+$(function() {
+	$("#chnl_0").addClass("curr");
+	
+	$('#banner').flexslider({
+		animation: "fade",
+		direction:"horizontal",
+		animationDuration: 600, 
+		easing:"swing"
+	});	
+	
+	$("#jdt").KinSlideshow({
+	  btn:{
+		btn_bgColor:"#7c7c7c",
+	  	btn_bgHoverColor:"#ff0000",
+	  	btn_fontColor:"#ffffff",
+	  	btn_fontHoverColor:"#ffffff",
+	 	btn_fontFamily:"Verdana",
+	  	btn_borderColor:"#999999",
+	  	btn_borderHoverColor:"#FF0000",
+	  	btn_borderWidth:0,btn_bgAlpha:0.7
+	  }   
+	});
+
+$("#ban").KinSlideshow({		
+		isHasTitleBar:false,
+		btn:{btn_bgColor:"#7c7c7c",btn_bgHoverColor:"#ff0000",btn_fontColor:"#ffffff",btn_fontHoverColor:"#ffffff",btn_fontFamily:"Verdana",btn_borderColor:"#999999",btn_borderHoverColor:"#FF0000",btn_borderWidth:0,btn_bgAlpha:0.7}   
+});	
+	$("#s1").xslider({
+		unitdisplayed:1,
+		movelength:1,
+		unitlen:165,
+		autoscroll:5000
+	});
+});
+</script>
+</body>
+</html>

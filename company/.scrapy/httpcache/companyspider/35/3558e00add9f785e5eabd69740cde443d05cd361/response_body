@@ -1,0 +1,834 @@
+﻿﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 页面头部【start】 -->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="灵台县中小企业服务网,灵台服务网,灵台中小企业网" />
+<meta name="description" content="灵台县中小企业服务网" />
+<script type="text/javascript" src="script/tree.js"></script>
+<link rel="stylesheet" type="text/css" href="template/gszc-110402-a47/css/style.css" />
+<script type="text/javascript" language="javascript" src="script/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="script/popup/jquery.ui.custom.min.js"></script>
+<script type="text/javascript" language="javascript" src="script/droppy.js"></script>
+<script type="text/javascript" language="javascript" src="script/thickbox.js"></script>
+<script type="text/javascript" language="javascript" src="script/helper.js?v=1"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" language="javascript" src="script/png.js"></script>
+<![endif]--> 
+<link rel="stylesheet" type="text/css" href="script/thickbox.css" />
+<link rel="stylesheet" type="text/css" href="script/popup/theme/jquery.ui.core.css" />
+<link rel="stylesheet" type="text/css" href="script/popup/theme/jquery.ui.dialog.css" />
+<link rel="stylesheet" type="text/css" href="script/popup/theme/jquery.ui.theme.css" />
+<link rel="stylesheet" type="text/css" href="script/popup/theme/jquery.ui.resizable.css" /><script type="text/javascript">
+window.PHPSESSID="62cfdc1942f8f78a9f55b8219b1da465";
+function parseToURL(){
+	return "admin/"}
+function operate_logo(dis,id){
+	if(dis==0){//点击传过来是0，则表示已经隐藏，现在应该做显示处理
+		$.post("index.php?_m=mod_media&_a=operate_logo",{id:id,display:dis},function(data){
+			reloadPage();
+		})	
+		
+	}else{
+		$.post("index.php?_m=mod_media&_a=operate_logo",{id:id,display:dis},function(data){
+			reloadPage();
+		});
+	}
+}
+function operate_banner(dis,id,url){
+	if(dis==0){//点击传过来是0，则表示已经隐藏，现在应该做显示处理
+		$.post("index.php?_m=mod_media&_a=operate_banner",{id:id,display:dis,url:url},function(data){
+			reloadPage();
+		})	
+		
+	}else{
+		$.post("index.php?_m=mod_media&_a=operate_banner",{id:id,display:dis,url:url},function(data){
+//			alert(data);
+			reloadPage();
+		});
+	}
+}
+</script>
+
+<title>首页--甘肃财贸职业学院</title>
+</head>
+<!--  页面头部【end】 -->
+<body class="body1" style="">
+<div id="getValues" value="index" style="display:none;"></div>
+<div id="getParams" value='a:0:{}' style="display:none;"></div>
+<!--main_div-->
+<div id="main_div1">
+<div id="main_div">
+    
+<!--nav-->
+ 
+<!--nav end-->
+
+<!--mainmain-->
+
+    <div id="nav">
+        <div id="MODBLK_225" class="mod_block mb_56YrvV58_block">
+
+
+			<div class="nav_l"></div>
+        	<ul id="nav_kjc4SK" class="navigation">
+			    <li>
+        <a href="index.php?_m=frontpage&_a=index" target='_self'>
+    网站首页</a>
+        </li>
+        <li>
+        <span><a href="index.php?_m=mod_article&_a=fullist&caa_id=62" target='_self'>
+    学院概况</a>
+    <ul>
+            <li>
+        <a href="index.php?_m=mod_static&_a=view&sc_id=2" target='_self'>
+    学院简介</a>
+        </li>
+        <li>
+        <span><a href="index.php?_m=mod_product&_a=prdlist&cap_id=239" target='_self'>
+    学院展示</a>
+    <ul>
+            <li>
+        <a href="index.php?_m=mod_product&_a=prdlist&cap_id=245" target='_self'>
+    校园环境</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_product&_a=prdlist&cap_id=246" target='_self'>
+    学院资质</a>
+        </li>
+        </ul></span>
+        </li>
+        <li>
+        <span><a href="index.php?_m=mod_article&_a=fullist&caa_id=78" target='_self'>
+    各校简介</a>
+    <ul>
+            <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=79" target='_self'>
+    甘肃省经济学校</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=80" target='_self'>
+    甘肃银行学校</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=81" target='_self'>
+    甘肃省财贸学校</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=82" target='_self'>
+    甘肃省经济贸易学校</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=83" target='_self'>
+    甘肃省商业学校</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=84" target='_self'>
+    甘肃省艺术设计学校</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=85" target='_self'>
+    甘肃省工商行政管理学校</a>
+        </li>
+        </ul></span>
+        </li>
+        </ul></span>
+        </li>
+        <li>
+        <span><a href="index.php?_m=mod_article&_a=fullist&caa_id=77" target='_self'>
+    新闻动态</a>
+    <ul>
+            <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=108" target='_self'>
+    学院新闻</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=72" target='_self'>
+     通知公告</a>
+        </li>
+        </ul></span>
+        </li>
+        <li>
+        <span><a href="index.php?_m=mod_article&_a=fullist&caa_id=92" target='_self'>
+    教育教学</a>
+    <ul>
+            <li>
+        <span><a href="index.php?_m=mod_article&_a=fullist&caa_id=73" target='_self'>
+    专业设置</a>
+    <ul>
+            <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=87" target='_self'>
+    物流管理</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=88" target='_self'>
+    会计</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=89" target='_self'>
+    金融管理</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=90" target='_self'>
+    电子商务</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=91" target='_self'>
+    环境艺术设计</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=article_content&article_id=483" target='_self'>
+    报关与国际货运</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=article_content&article_id=482" target='_self'>
+    财务管理</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=article_content&article_id=481" target='_self'>
+    粮油储藏与检测技术</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=article_content&article_id=480" target='_self'>
+    信息安全与管理</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=article_content&article_id=479" target='_self'>
+    服装设计与工艺</a>
+        </li>
+        </ul></span>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=94" target='_self'>
+     技能比赛</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=95" target='_self'>
+    资格取证</a>
+        </li>
+        </ul></span>
+        </li>
+        <li>
+        <span><a href="index.php?_m=mod_article&_a=fullist&caa_id=74" target='_self'>
+    招生就业</a>
+    <ul>
+            <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=75" target='_self'>
+    招生信息</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=76" target='_self'>
+    就业信息</a>
+        </li>
+        </ul></span>
+        </li>
+        <li>
+        <span><a href="index.php?_m=mod_article&_a=fullist&caa_id=96" target='_self'>
+     党群建设</a>
+    <ul>
+            <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=97" target='_self'>
+     党委工作</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=98" target='_self'>
+    支部活动</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=99" target='_self'>
+    工青妇工作</a>
+        </li>
+        </ul></span>
+        </li>
+        <li>
+        <span><a href="index.php?_m=mod_article&_a=fullist&caa_id=100" target='_self'>
+    团学在线</a>
+    <ul>
+            <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=101" target='_self'>
+    团委工作</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=102" target='_self'>
+    学生管理</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=103" target='_self'>
+    学生资助</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=104" target='_self'>
+    学生社团</a>
+        </li>
+        </ul></span>
+        </li>
+        <li>
+        <span><a href="index.php?_m=mod_article&_a=fullist&caa_id=105" target='_self'>
+    后勤工作</a>
+    <ul>
+            <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=106" target='_self'>
+     后勤管理</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=107" target='_self'>
+    餐饮服务</a>
+        </li>
+        </ul></span>
+        </li>
+                </ul>
+			<div class="nav_r"></div>
+
+		
+<script type="text/javascript">
+//$(".navigation li:first").css("background-image","none");
+var topMenuNum = 0;
+$("#nav_kjc4SK li span").hover(
+	function(){
+		topMenuNum++;
+		$(this).attr("id","kindMenuHover"+topMenuNum);
+		$("#kindMenuHover" + topMenuNum + " > ul").show();
+		$(this).parent().addClass("hover");
+	},
+	function(){
+		$("#"+$(this).attr("id")+" > ul").hide();
+		$(this).attr("id","");
+		$(this).parent().removeClass("hover");
+	}
+);
+</script>
+<script type="text/javascript" language="javascript" defer="defer">
+		$(function(){
+			
+		});
+	</script>	
+	
+	
+</div>
+    </div>
+<!--header-->
+<div id="header">
+		<div id="logo" ><div id="MODBLK_222" class="mod_block media_image mb_logo_block">
+
+<div class="flash_image">
+<img src="upload/image/banner_GIF-2.jpg" alt="甘肃财贸职业学院" width="980" height="286" />
+</div>
+
+</div>
+            </div> 
+                        <!-- 站点语言模块Start -->
+            <div class="switch_langbar">
+            
+            </div>
+            <!-- 站点语言模块End -->      
+
+            
+</div>
+
+<!--header end-->	
+	<!--
+   <div id="banner">
+	<div class="flash_image">
+&nbsp;&nbsp;</div>
+	</div>-->
+ <div id="web_bg">
+<div id="mainmain">
+	 <div id="main_con" class="web_bg">
+    		<div id="i_left"><div id="MODBLK_1512" class="mod_block mb_OwJ7UhOZ_block">
+<h3 class="blk_t">学院概况</h3>
+
+
+<div class="list_main category">
+	<div class="prod_type">
+	<div id="pro_type_oXfCZ1">
+		<ul>
+			    <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=78">
+    各校简介</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=62">
+    学院概况</a>
+        </li>
+    			<div class="blankbar1"></div>
+		</ul>
+	</div>
+	</div>
+	<div class="list_bot"></div>
+</div>
+<div class="blankbar"></div>
+
+
+<script type="text/javascript" language="javascript">
+/**
+ * for menu-drop type
+ */
+var type = "slide";
+if (type == 'click') {
+	$(function(){
+		$('#pro_type_oXfCZ1 li:has(ul)').click(function(event){
+	    	if (this == event.target) {
+	        	if ($(this).children().is(':hidden')) {
+	                $(this).css({background:'url(template/gszc-110402-a47/images/minus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
+	                .children().show();
+	                
+	              	$(this).siblings().each(function (){
+	              		$(this).find("ul").hide();
+	              		if ($(this).children().is("ul")){
+	              			$(this).css({background:'url(template/gszc-110402-a47/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
+	              	    }
+	              	});
+	            } else {
+	                $(this).css({background:'url(template/gszc-110402-a47/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
+	                .find("ul").hide();
+	            }  
+	        }
+		}).css('cursor','pointer');
+	          
+	    $('#pro_type_oXfCZ1 li:has(ul)').css({background:'url(template/gszc-110402-a47/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
+	        	
+	    $('#pro_type_oXfCZ1 li:not(:has(ul))').css({cursor: 'pointer','list-style-image':'none'});
+	});
+} else {
+	$("#pro_type_oXfCZ1 > ul").droppy();
+	$("#pro_type_oXfCZ1 ul ul li:last-child").css("border","0px");
+}
+</script>
+
+</div>
+<div id="MODBLK_1510" class="mod_block mb_XQFWTndI_block">
+<h3 class="blk_t">教育教学</h3>
+
+
+<div class="list_main category">
+	<div class="prod_type">
+	<div id="pro_type_dAeQEY">
+		<ul>
+			    <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=73">
+    专业设置</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=92">
+    教育教学</a>
+        </li>
+    			<div class="blankbar1"></div>
+		</ul>
+	</div>
+	</div>
+	<div class="list_bot"></div>
+</div>
+<div class="blankbar"></div>
+
+
+<script type="text/javascript" language="javascript">
+/**
+ * for menu-drop type
+ */
+var type = "slide";
+if (type == 'click') {
+	$(function(){
+		$('#pro_type_dAeQEY li:has(ul)').click(function(event){
+	    	if (this == event.target) {
+	        	if ($(this).children().is(':hidden')) {
+	                $(this).css({background:'url(template/gszc-110402-a47/images/minus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
+	                .children().show();
+	                
+	              	$(this).siblings().each(function (){
+	              		$(this).find("ul").hide();
+	              		if ($(this).children().is("ul")){
+	              			$(this).css({background:'url(template/gszc-110402-a47/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
+	              	    }
+	              	});
+	            } else {
+	                $(this).css({background:'url(template/gszc-110402-a47/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
+	                .find("ul").hide();
+	            }  
+	        }
+		}).css('cursor','pointer');
+	          
+	    $('#pro_type_dAeQEY li:has(ul)').css({background:'url(template/gszc-110402-a47/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
+	        	
+	    $('#pro_type_dAeQEY li:not(:has(ul))').css({cursor: 'pointer','list-style-image':'none'});
+	});
+} else {
+	$("#pro_type_dAeQEY > ul").droppy();
+	$("#pro_type_dAeQEY ul ul li:last-child").css("border","0px");
+}
+</script>
+
+</div>
+<div id="MODBLK_1507" class="mod_block mb_u7OuhDfq_block">
+<h3 class="blk_t">招生就业</h3>
+<div class="list_main">
+	<div class="list_con">
+	<ul class="titlelist">
+	<li><a href="index.php?_m=mod_article&_a=article_content&article_id=571 "title="2018年甘肃财贸学院综合评价预录取名单"> 2018年甘肃财贸学院综合评价...</a></li>
+<li><a href="index.php?_m=mod_article&_a=article_content&article_id=570 "title="甘肃财贸职业学院2018年学前教育专业面试名单"> 甘肃财贸职业学院2018年学前...</a></li>
+<li><a href="index.php?_m=mod_article&_a=article_content&article_id=560 "title="关于2018年综合评价招生面试事宜的重要通知"> 关于2018年综合评价招生面试...</a></li>
+<li><a href="index.php?_m=mod_article&_a=article_content&article_id=552 "title="甘肃财贸职业学院2018年综合评价招生报考通知"> 甘肃财贸职业学院2018年综合...</a></li>
+<li><a href="index.php?_m=mod_article&_a=article_content&article_id=428 "title="甘肃财贸职业学院2016年招生简章"> 甘肃财贸职业学院2016年招生...</a></li>
+	</ul>
+    <div class="list_more"><a href="index.php?_m=mod_article&_a=fullist"><img src="template/gszc-110402-a47/images/more_37.jpg" width="32" height="9" border="0" /></a></div>
+	
+	</div>
+	<div class="list_bot"></div>
+</div>
+<div class="blankbar"></div>
+</div>
+<div id="MODBLK_1466" class="mod_block mb_QVRybNt5_block">
+
+</div>
+</div>
+        <div id="center"><div id="MODBLK_1518" class="mod_block mb_Ei7jnrnC_block">
+<h3 class="blk_t">学院新闻</h3>
+<div class="recent">
+<div class="recent_top"></div>
+<div class="recent_con">
+	
+
+<div class="recent_list">
+<a href="index.php?_m=mod_article&_a=article_content&article_id=574" title="世界银行甘肃职业教育发展项目专家团来我院进行世行贷款甘肃财贸职业学院子项目执行情况中期检查">世界银行甘肃职业教育发展项目专家团来我院进行世行贷款甘肃财贸职业学院子项目执行情况中期检查</a>
+<a href="index.php?_m=mod_article&_a=article_content&article_id=574" title="世界银行甘肃职业教育发展项目专家团来我院进行世行贷款甘肃财贸职业学院子项目执行情况中期检查"><img src="template/gszc-110402-a47/images/more_37.jpg" width="32" height="9" border="0" /></a></div>
+
+					
+	
+	
+
+<div class="recent_list">
+<a href="index.php?_m=mod_article&_a=article_content&article_id=573" title="学院召开世界银行贷款项目工作领导小组推进会">学院召开世界银行贷款项目工作领导小组推进会</a>
+<a href="index.php?_m=mod_article&_a=article_content&article_id=573" title="学院召开世界银行贷款项目工作领导小组推进会"><img src="template/gszc-110402-a47/images/more_37.jpg" width="32" height="9" border="0" /></a></div>
+
+					
+	
+	
+
+<div class="recent_list">
+<a href="index.php?_m=mod_article&_a=article_content&article_id=551" title="职教园区管委会何泳忠主任来我院 检查调研春季开学准备工作">职教园区管委会何泳忠主任来我院 检查调研春季开学准备工作</a>
+<a href="index.php?_m=mod_article&_a=article_content&article_id=551" title="职教园区管委会何泳忠主任来我院 检查调研春季开学准备工作"><img src="template/gszc-110402-a47/images/more_37.jpg" width="32" height="9" border="0" /></a></div>
+
+					
+	
+	
+
+<div class="recent_list">
+<a href="index.php?_m=mod_article&_a=article_content&article_id=547" title="“校园文明月”创建活动总结暨表彰大会隆重召开">“校园文明月”创建活动总结暨表彰大会隆重召开</a>
+<a href="index.php?_m=mod_article&_a=article_content&article_id=547" title="“校园文明月”创建活动总结暨表彰大会隆重召开"><img src="template/gszc-110402-a47/images/more_37.jpg" width="32" height="9" border="0" /></a></div>
+
+					
+	
+	
+
+<div class="recent_list">
+<a href="index.php?_m=mod_article&_a=article_content&article_id=546" title="甘肃财贸职业学院2017年国家奖助学政策宣传周启动仪式">甘肃财贸职业学院2017年国家奖助学政策宣传周启动仪式</a>
+<a href="index.php?_m=mod_article&_a=article_content&article_id=546" title="甘肃财贸职业学院2017年国家奖助学政策宣传周启动仪式"><img src="template/gszc-110402-a47/images/more_37.jpg" width="32" height="9" border="0" /></a></div>
+
+					
+	
+	
+
+<div class="recent_list">
+<a href="index.php?_m=mod_article&_a=article_content&article_id=544" title="学院召开世界银行贷款项目教学改革会议">学院召开世界银行贷款项目教学改革会议</a>
+<a href="index.php?_m=mod_article&_a=article_content&article_id=544" title="学院召开世界银行贷款项目教学改革会议"><img src="template/gszc-110402-a47/images/more_37.jpg" width="32" height="9" border="0" /></a></div>
+
+					
+	
+	
+
+<div class="recent_list">
+<a href="index.php?_m=mod_article&_a=article_content&article_id=543" title="甘肃财贸职业学院校园文明成果展及书画展顺利举办">甘肃财贸职业学院校园文明成果展及书画展顺利举办</a>
+<a href="index.php?_m=mod_article&_a=article_content&article_id=543" title="甘肃财贸职业学院校园文明成果展及书画展顺利举办"><img src="template/gszc-110402-a47/images/more_37.jpg" width="32" height="9" border="0" /></a></div>
+
+					
+	
+	
+
+<div class="recent_list">
+<a href="index.php?_m=mod_article&_a=article_content&article_id=537" title="学院召开世界银行贷款项目启动会">学院召开世界银行贷款项目启动会</a>
+<a href="index.php?_m=mod_article&_a=article_content&article_id=537" title="学院召开世界银行贷款项目启动会"><img src="template/gszc-110402-a47/images/more_37.jpg" width="32" height="9" border="0" /></a></div>
+
+					
+	
+	
+
+<div class="recent_list">
+<a href="index.php?_m=mod_article&_a=article_content&article_id=535" title="兰州市妇女联合会“百场法律讲堂” 走进甘肃财贸职业学院">兰州市妇女联合会“百场法律讲堂” 走进甘肃财贸职业学院</a>
+<a href="index.php?_m=mod_article&_a=article_content&article_id=535" title="兰州市妇女联合会“百场法律讲堂” 走进甘肃财贸职业学院"><img src="template/gszc-110402-a47/images/more_37.jpg" width="32" height="9" border="0" /></a></div>
+
+					
+	
+</div>
+<div class="list_bot"></div>
+</div>
+<div class="blankbar"></div>
+</div>
+<div id="MODBLK_1450" class="mod_block mb_kSOGOoAI_block">
+<h3 class="blk_t">通知公告</h3>
+<div class="list_main">
+	<div class="list_con">
+	<ul class="titlelist">
+	<li><a href="index.php?_m=mod_article&_a=article_content&article_id=558 "title="甘肃省商业学校2017年度事业单位法人年度报告书公示"> 甘肃省商业学校2017年度事业...</a></li>
+<li><a href="index.php?_m=mod_article&_a=article_content&article_id=557 "title="甘肃省艺术设计学校2017年度事业单位法人年度报告书公示"> 甘肃省艺术设计学校2017年度...</a></li>
+<li><a href="index.php?_m=mod_article&_a=article_content&article_id=556 "title="甘肃省经贸学校2017年度事业单位法人年度报告书公示"> 甘肃省经贸学校2017年度事业...</a></li>
+<li><a href="index.php?_m=mod_article&_a=article_content&article_id=555 "title="甘肃省财贸学校2017年度事业单位法人年度报告书公示"> 甘肃省财贸学校2017年度事业...</a></li>
+<li><a href="index.php?_m=mod_article&_a=article_content&article_id=554 "title="甘肃银行学校法人年度报告书"> 甘肃银行学校法人年度报告书</a></li>
+<li><a href="index.php?_m=mod_article&_a=article_content&article_id=550 "title="甘肃省商业学校教师公寓（周转房）工程造价咨询项目中标公示"> 甘肃省商业学校教师公寓（周转房...</a></li>
+<li><a href="index.php?_m=mod_article&_a=article_content&article_id=549 "title="甘肃省商业学校教师公寓（周转房）工程造价咨询项目招标公告"> 甘肃省商业学校教师公寓（周转房...</a></li>
+<li><a href="index.php?_m=mod_article&_a=article_content&article_id=507 "title="甘肃财贸职业学院学生宿舍窗帘 招标结果公示"> 甘肃财贸职业学院学生宿舍窗帘 ...</a></li>
+<li><a href="index.php?_m=mod_article&_a=article_content&article_id=506 "title="甘肃财贸职业学院食堂承包经营招标结果公示"> 甘肃财贸职业学院食堂承包经营招...</a></li>
+<li><a href="index.php?_m=mod_article&_a=article_content&article_id=505 "title="甘肃财贸职业学院学生公寓楼窗帘项目招标公告"> 甘肃财贸职业学院学生公寓楼窗帘...</a></li>
+<li><a href="index.php?_m=mod_article&_a=article_content&article_id=504 "title="学院食堂承包经营招标公告"> 学院食堂承包经营招标公告</a></li>
+	</ul>
+    <div class="list_more"><a href="index.php?_m=mod_article&_a=fullist&caa_id=72"><img src="template/gszc-110402-a47/images/more_37.jpg" width="32" height="9" border="0" /></a></div>
+	
+	</div>
+	<div class="list_bot"></div>
+</div>
+<div class="blankbar"></div>
+</div>
+</div>
+        <div id="i_right"><div id="MODBLK_1515" class="mod_block mb_0NWNtsmt_block">
+<h3 class="blk_t">党群建设</h3>
+
+
+<div class="list_main category">
+	<div class="prod_type">
+	<div id="pro_type_5Rbbfh">
+		<ul>
+			    <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=97">
+    党委工作</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=98">
+    支部活动</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=99">
+    工青妇工作</a>
+        </li>
+    			<div class="blankbar1"></div>
+		</ul>
+	</div>
+	</div>
+	<div class="list_bot"></div>
+</div>
+<div class="blankbar"></div>
+
+
+<script type="text/javascript" language="javascript">
+/**
+ * for menu-drop type
+ */
+var type = "slide";
+if (type == 'click') {
+	$(function(){
+		$('#pro_type_5Rbbfh li:has(ul)').click(function(event){
+	    	if (this == event.target) {
+	        	if ($(this).children().is(':hidden')) {
+	                $(this).css({background:'url(template/gszc-110402-a47/images/minus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
+	                .children().show();
+	                
+	              	$(this).siblings().each(function (){
+	              		$(this).find("ul").hide();
+	              		if ($(this).children().is("ul")){
+	              			$(this).css({background:'url(template/gszc-110402-a47/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
+	              	    }
+	              	});
+	            } else {
+	                $(this).css({background:'url(template/gszc-110402-a47/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
+	                .find("ul").hide();
+	            }  
+	        }
+		}).css('cursor','pointer');
+	          
+	    $('#pro_type_5Rbbfh li:has(ul)').css({background:'url(template/gszc-110402-a47/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
+	        	
+	    $('#pro_type_5Rbbfh li:not(:has(ul))').css({cursor: 'pointer','list-style-image':'none'});
+	});
+} else {
+	$("#pro_type_5Rbbfh > ul").droppy();
+	$("#pro_type_5Rbbfh ul ul li:last-child").css("border","0px");
+}
+</script>
+
+</div>
+<div id="MODBLK_1516" class="mod_block mb_GaCiykXg_block">
+<h3 class="blk_t">学团在线</h3>
+
+
+<div class="list_main category">
+	<div class="prod_type">
+	<div id="pro_type_5v7dou">
+		<ul>
+			    <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=101">
+    团委工作</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=103">
+    学生资助</a>
+        </li>
+        <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=104">
+    学生社团</a>
+        </li>
+    			<div class="blankbar1"></div>
+		</ul>
+	</div>
+	</div>
+	<div class="list_bot"></div>
+</div>
+<div class="blankbar"></div>
+
+
+<script type="text/javascript" language="javascript">
+/**
+ * for menu-drop type
+ */
+var type = "slide";
+if (type == 'click') {
+	$(function(){
+		$('#pro_type_5v7dou li:has(ul)').click(function(event){
+	    	if (this == event.target) {
+	        	if ($(this).children().is(':hidden')) {
+	                $(this).css({background:'url(template/gszc-110402-a47/images/minus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
+	                .children().show();
+	                
+	              	$(this).siblings().each(function (){
+	              		$(this).find("ul").hide();
+	              		if ($(this).children().is("ul")){
+	              			$(this).css({background:'url(template/gszc-110402-a47/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
+	              	    }
+	              	});
+	            } else {
+	                $(this).css({background:'url(template/gszc-110402-a47/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
+	                .find("ul").hide();
+	            }  
+	        }
+		}).css('cursor','pointer');
+	          
+	    $('#pro_type_5v7dou li:has(ul)').css({background:'url(template/gszc-110402-a47/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
+	        	
+	    $('#pro_type_5v7dou li:not(:has(ul))').css({cursor: 'pointer','list-style-image':'none'});
+	});
+} else {
+	$("#pro_type_5v7dou > ul").droppy();
+	$("#pro_type_5v7dou ul ul li:last-child").css("border","0px");
+}
+</script>
+
+</div>
+<div id="MODBLK_1517" class="mod_block mb_lYNDA2c9_block">
+<h3 class="blk_t">联系我们</h3>
+
+
+<div class="list_main category">
+	<div class="prod_type">
+	<div id="pro_type_6Y1bV9">
+		<ul>
+			    <li>
+        <a href="index.php?_m=mod_article&_a=fullist&caa_id=86">
+    联系我们</a>
+        </li>
+    			<div class="blankbar1"></div>
+		</ul>
+	</div>
+	</div>
+	<div class="list_bot"></div>
+</div>
+<div class="blankbar"></div>
+
+
+<script type="text/javascript" language="javascript">
+/**
+ * for menu-drop type
+ */
+var type = "slide";
+if (type == 'click') {
+	$(function(){
+		$('#pro_type_6Y1bV9 li:has(ul)').click(function(event){
+	    	if (this == event.target) {
+	        	if ($(this).children().is(':hidden')) {
+	                $(this).css({background:'url(template/gszc-110402-a47/images/minus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
+	                .children().show();
+	                
+	              	$(this).siblings().each(function (){
+	              		$(this).find("ul").hide();
+	              		if ($(this).children().is("ul")){
+	              			$(this).css({background:'url(template/gszc-110402-a47/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
+	              	    }
+	              	});
+	            } else {
+	                $(this).css({background:'url(template/gszc-110402-a47/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
+	                .find("ul").hide();
+	            }  
+	        }
+		}).css('cursor','pointer');
+	          
+	    $('#pro_type_6Y1bV9 li:has(ul)').css({background:'url(template/gszc-110402-a47/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
+	        	
+	    $('#pro_type_6Y1bV9 li:not(:has(ul))').css({cursor: 'pointer','list-style-image':'none'});
+	});
+} else {
+	$("#pro_type_6Y1bV9 > ul").droppy();
+	$("#pro_type_6Y1bV9 ul ul li:last-child").css("border","0px");
+}
+</script>
+
+</div>
+</div>
+        
+ 		       
+        <div class="blankbar"></div>
+	</div>
+        </div>
+ <!--mainmain end-->   
+</div>
+</div>
+</div>
+</div>
+<!--main_div end-->  
+<div id="footermain">
+
+<!-- 页脚【start】 -->
+<div id="footer" style="display:block;">
+<div style="margin-left:150px; padding:5px 10px;"></div>
+	<div class="copyright"  style="display:block;">
+	<style type="text/css">
+		.mb_foot_block {position:relative;}
+		.mb_foot_block a{display:inline;}
+	
+.copyright .list_bot{display:none;}
+</style>
+	<div id="MODBLK_224" class="mod_block mb_foot_block">
+<style type="text/css">
+.copyright .list_bot{display:none;}
+</style>
+<div class="com_con"> Copyright © 2015-2016,gscmzyxy.net.xb-cloud.com,All rights reserved
+
+版权所有 © 甘肃财贸职业学院  未经许可 严禁复制 建议使用1024X768分辨率浏览本站
+
+
+
+
+
+
+</div><div class="list_bot"></div>
+</div>
+		<div class="com_con"><a target="_blank" href="http://www.miitbeian.gov.cn">陇ICP备16001923号</a><div class="list_bot"></div></div>
+	</div>
+</div>
+<script type="text/javascript" language="javascript" src="script/picAutoZoom.js"></script>
+<script type="text/javascript" language="javascript">
+<!--
+    $.ajaxSetup({
+        timeout: 300000
+    });
+//-->
+</script>
+<!-- 页脚【end】 -->
+</body>
+</html></div>

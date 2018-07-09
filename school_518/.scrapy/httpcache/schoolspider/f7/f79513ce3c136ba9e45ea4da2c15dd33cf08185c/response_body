@@ -1,0 +1,1595 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<base href="http://www.czqtzx.com:80/News/"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>常州市清潭中学</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="Scripts/jquery.min.js" type="text/javascript"></script>
+<script src="Scripts/common.js" type="text/javascript"></script>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/jquery/jquery.min.js" ></script>
+<script src="/js/pub-fun.js"></script>
+<script>
+	//网站访问量
+	$(function(){
+	 	//设置并得到访问量
+			$.getJSON("/News/PortalWebsiteVisitStatServlet?actionTo=addOrUpdateAndGetVisitCt", function(data){
+ 			if(data!=null){
+ 				 
+ 			}
+ 		});	 
+	});
+	function searchFun(obj){
+        if(checkForm(obj)==false) return;
+        else obj.submit();
+    } 
+    //登录检测
+    function checkLoginInfo(){
+        if(checkForm(loginForm)==false)return;
+        loginForm.submit();
+    }
+    //切换
+    function setTabPage(typeId1,typeId2){
+        document.getElementById(typeId1+"Div").style.display = "";
+        document.getElementById(typeId2+"Div").style.display = "none";
+        document.getElementById("tabpageDiv").innerHTML = '<a href="news_list.jsp?typeId='+typeId1+'"><img src="images/more.gif" width="36" height="17" border="0" /></a>';
+        //news07Span
+        document.getElementById(typeId1+"Span").style.color="#000000";
+        document.getElementById(typeId2+"Span").style.color="";
+    }
+</script>
+</head>
+<body>
+
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" id="body_bg" >
+  <tr>
+    <td valign="top">
+     
+<table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="259" colspan="3"><object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="960" height="259">
+              <param name="movie" value="images/header.swf" />
+              <param name="quality" value="high" />
+              <param name="wmode" value="transparent" />
+              <param name="swfversion" value="6.0.65.0" />
+              <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+              <param name="expressinstall" value="Scripts/expressInstall.swf" />
+              <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+              <!--[if !IE]>-->
+              <object type="application/x-shockwave-flash" data="images/header.swf" width="960" height="259">
+                <!--<![endif]-->
+                <param name="quality" value="high" />
+                <param name="wmode" value="transparent" />
+                <param name="swfversion" value="6.0.65.0" />
+                <param name="expressinstall" value="Scripts/expressInstall.swf" />
+                <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+                <div>
+                  <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+                  <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+                </div>
+                <!--[if !IE]>-->
+              </object>
+              <!--<![endif]-->
+            </object></td>
+        </tr>
+        <tr>
+          <td class="index_nav_left">&nbsp;</td>
+          <td class="index_nav_bg"><div class="topNav">
+           <ul>
+            
+             
+                <li class="current"><a href="/News/"><span>首页</span></a>
+                  <div class="sub home_sub">
+                    <div class="weater"> <iframe style="padding-top:10px;" allowTransparency="true" name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=10" width="300" height="25" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe></div>
+                    <div class="search" valign="middle">
+                    <table border="0">
+                       <tr><td valign="middle">
+
+ 
+                  <form action="/login" method="post"name="loginForm">
+					<input type="hidden" name="targetURL" value="/News/">
+					<input type="hidden" name="loginUrl" value="/News/"/>
+					<input type="hidden" name="schoolId" value="10001027" />
+					<input type="hidden" name="isInnerIp" value="true" />
+					<input type="hidden" name="loginStatus" value="1" />
+                    
+                    
+					  用户名 <input type="text" name="userName" title="用户名" class="nav_login_input" MUST="1" maxlength="20"   onfocus="if(this.value==defaultValue) {this.value='';}" onblur="if(!value) {value=defaultValue;}"/>
+                         密码 <input type="password" name="userPwd" class="nav_login_input" title="密码"  MUST="1" maxlength="20"  onfocus="if(this.value==defaultValue) {this.value='';this.type='password'}" onblur="if(!value) {value=defaultValue; this.type='text';}"/>
+					  <input type="button" name="button3" class="nav_search_button" value="登录" onclick="checkLoginInfo()"/>
+                   
+                    </form>
+                  </td>
+                     <td style="padding-left:10px;">
+                    <form action="/Search/result.jsp" method="post" name="rearchForm" onsubmit="return false;" target="_blank">
+					<input type="hidden" name="schoolId" value="10001027"/>
+					<input type="hidden" name="annexFlg" value="0"/>
+					<input type="hidden" name="typeIdList" value="news"/>
+                      <input type="text" name="searchValue" class="nav_search_input" value="请输入关键字" onfocus="if(this.value==defaultValue) {this.value='';}" onblur="if(!value) {value=defaultValue;}"/>
+                      <input type="button" name="button" class="nav_search_button" value="搜索"  onclick="searchFun(rearchForm)"/>
+                      </form>
+                      </td></tr>
+                      </table>
+                    </div>
+                  </div>
+                </li>
+                     
+                <li class=""><a  href="/News/news_list.jsp?typeId=news01"><span>走进清中</span></a>
+                  <div class="sub"> 
+                  
+                         <a  href="/News/news_list.jsp?typeId=news0101">学校概况</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0102">领导简介</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0103">学校荣誉</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0106">校园新闻</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0104">校园掠影</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0105">依法治校</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0107">清中影像</a>
+                         
+                  </div>
+                </li>
+                
+                <li class=""><a  href="/News/news_list.jsp?typeId=news02"><span>课程教学</span></a>
+                  <div class="sub"> 
+                  
+                         <a  href="/News/news_list.jsp?typeId=news0201">聚焦课堂</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0202">教研组建设</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0203">校本课程</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0204">综合实践</a>
+                         
+                  </div>
+                </li>
+                
+                <li class=""><a  href="/News/news_list.jsp?typeId=news03"><span>教育科研</span></a>
+                  <div class="sub"> 
+                  
+                         <a  href="/News/news_list.jsp?typeId=news0301">科研动态</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0302">教育视野</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0303">课题研究</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0304">展评课堂</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0306">微课欣赏</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0305">外出培训</a>
+                         
+                  </div>
+                </li>
+                
+                <li class=""><a  href="/News/news_list.jsp?typeId=news04"><span>德育在线</span></a>
+                  <div class="sub"> 
+                  
+                         <a  href="/News/news_list.jsp?typeId=news0401">国旗下讲话</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0402">主题活动</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0403">班主任沙龙</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0404">班队活动</a>
+                         |
+
+                         <a  href="/webschool/News/news_list.jsp?typeId=news0406">学校关工</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0407">节水专栏</a>
+                         
+                  </div>
+                </li>
+                
+                <li class=""><a  href="/News/news_list.jsp?typeId=news05"><span>师生风采</span></a>
+                  <div class="sub"> 
+                  
+                         <a  href="/News/news_list.jsp?typeId=news0501">教师获奖</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0502">学生获奖</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0503">社团活动</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0504">体艺园地</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0505">国际交流</a>
+                         
+                  </div>
+                </li>
+                
+                <li class=""><a  href="/News/news_list.jsp?typeId=news06"><span>团队天地</span></a>
+                  <div class="sub"> 
+                  
+                         <a  href="/News/news_list.jsp?typeId=news0601">团队快讯</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0602">志愿者掠影</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0603">网上团校</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0604">活动通知</a>
+                         
+                  </div>
+                </li>
+                
+                <li class=""><a  href="/News/news_list.jsp?typeId=news07"><span>教工之家</span></a>
+                  <div class="sub"> 
+                  
+                         <a  href="/News/news_list.jsp?typeId=news0701">工会快报</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0702">教工小家</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0703">师德师风</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0704">民主管理</a>
+                         
+                  </div>
+                </li>
+                
+                <li class=""><a  href="/News/news_list.jsp?typeId=news08"><span>清中党建</span></a>
+                  <div class="sub"> 
+                  
+                         <a  href="/News/news_list.jsp?typeId=news0801">党建动态</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0802">党务公开</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0803">专题活动</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0804">网上党校</a>
+                         
+                  </div>
+                </li>
+                
+                <li class=""><a  href="/News/news_list.jsp?typeId=news09"><span>校务公开</span></a>
+                  <div class="sub"> 
+                  
+                         <a  href="/News/news_list.jsp?typeId=news0901">公示公告</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0903">学期课表</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0904">作息时间</a>
+                         |
+
+                         <a  href="/News/news_list.jsp?typeId=news0905">一周菜单</a>
+                         
+                  </div>
+                </li>
+                
+                <li class=""><a  href=""><span>数字校园</span></a>
+                  <div class="sub"> 
+                  
+                         <a target='_blank' href="/MySpace">学校OA</a>
+                         |
+
+                         <a target='_blank' href="BlogNews">清中博客</a>
+                         |
+
+                         <a target='_blank' href="http://old.czqtzx.com/">旧版回顾</a>
+                         
+                  </div>
+                </li>
+                
+              </ul>
+            </div>
+            <script type="text/javascript">
+jQuery(function($){
+	$(".topNav li").hover(function(e){
+		setLeft($(this));
+		$(this).addClass("current").siblings().removeClass("current");
+	}).filter(".current").each(function(){
+		setLeft($(this));
+	});
+	
+	function setLeft(obj) {
+		var pw  = obj.parent().width(),
+			sub = obj.find(".sub"),
+			pos = obj.position(),
+			padding = 0;
+		if( sub.length ){
+			if( (sub.width()/2-width(obj)/2) > (pos.left-padding) ){
+				sub.css("left", padding + "px");
+			}else if( (pos.left + (sub.width()/2+width(obj)/2)) > (pw-padding) ){
+				sub.css("right", padding + "px");
+			}else{
+				sub.css("left", pos.left - (sub.width()/2-width(obj)/2));
+			}
+			sub.show().parent().siblings().find(".sub").hide();
+		}
+	}
+	function css(el, prop) {
+		return parseInt($.css(el[0], prop)) || 0;
+	};
+	function width(el) {
+		return  el[0].offsetWidth + css(el, 'marginLeft') + css(el, 'marginRight');
+	};
+})
+</script></td>
+          <td class="index_nav_right">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="index_nav_bottom_left">&nbsp;</td>
+          <td class="index_nav_bottom_bg">&nbsp;</td>
+          <td class="index_nav_bottom_right">&nbsp;</td>
+        </tr>
+      </table>  
+ 
+</form>
+                  
+      <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="10"></td>
+        </tr>
+      </table>
+      <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="title_b_left"></td>
+          <td valign="bottom" class="title_b_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="9%" height="30" class="title_b">校园新闻</td>
+                <td width="*" align="center" class="title_border">&nbsp;</td>
+                <td width="8%" align="right" class="title_border"><a href="news_list.jsp?typeId=news0106"><img src="images/more.gif" width="36" height="17" border="0" /></a></td>
+              </tr>
+            </table></td>
+          <td class="title_b_right"></td>
+        </tr>
+        <tr>
+          <td class="left_bg"></td>
+          <td height="235" valign="top" class="bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="10" colspan="3"></td>
+              </tr>
+              <tr>
+                <td width="*" height="332" align="left" valign="middle">
+                     <script>
+          var focus_width=500;
+          var focus_height=332;
+          var text_height=25;
+          var swf_height = focus_height+text_height;
+          document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">');
+          document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="/News/img/pixviewer.swf"><param name="quality" value="high"><param name="bgcolor" value="#E4E4E4">');
+          document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+          document.write('<param name="FlashVars" value="pics=/xheditor/upload/ShortIcon/da900c54-4764-4370-ae6f-608df6b728be-firstimg.jpg|/xheditor/upload/ShortIcon/e0d197e6-e16f-4f28-badc-ae0f0a4e9296-firstimg.jpg|/xheditor/upload/ShortIcon/55c5e807-5e5a-43ab-8082-f89ece9d34fd-firstimg.png|/xheditor/upload/ShortIcon/70a2cc75-16c9-40bf-bff6-4acde76c0034-firstimg.jpg|/xheditor/upload/ShortIcon/83c4f26b-16b4-48e1-9e02-11696139afc3-firstimg.jpg&links=%2FNews%2Fnews_detail.jsp%3FsiteId%3D%26newsId%3D1925|%2FNews%2Fnews_detail.jsp%3FsiteId%3D%26newsId%3D1923|%2FNews%2Fnews_detail.jsp%3FsiteId%3D%26newsId%3D1921|%2FNews%2Fnews_detail.jsp%3FsiteId%3D%26newsId%3D1919|%2FNews%2Fnews_detail.jsp%3FsiteId%3D%26newsId%3D1916&texts=常州市清潭中学召开“解放思想大讨论活动”动员大会|留住乡音，记住乡愁——清潭中学七年级开展传统文化进校园活动|有关常州市五四红旗团委喜报|体育工作喜报|学习身边榜样 绽放自我风采&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+          document.write('<embed src="/News/img/pixviewer.swf" wmode="opaque" FlashVars="pics=/xheditor/upload/ShortIcon/da900c54-4764-4370-ae6f-608df6b728be-firstimg.jpg|/xheditor/upload/ShortIcon/e0d197e6-e16f-4f28-badc-ae0f0a4e9296-firstimg.jpg|/xheditor/upload/ShortIcon/55c5e807-5e5a-43ab-8082-f89ece9d34fd-firstimg.png|/xheditor/upload/ShortIcon/70a2cc75-16c9-40bf-bff6-4acde76c0034-firstimg.jpg|/xheditor/upload/ShortIcon/83c4f26b-16b4-48e1-9e02-11696139afc3-firstimg.jpg&links=%2FNews%2Fnews_detail.jsp%3FsiteId%3D%26newsId%3D1925|%2FNews%2Fnews_detail.jsp%3FsiteId%3D%26newsId%3D1923|%2FNews%2Fnews_detail.jsp%3FsiteId%3D%26newsId%3D1921|%2FNews%2Fnews_detail.jsp%3FsiteId%3D%26newsId%3D1919|%2FNews%2Fnews_detail.jsp%3FsiteId%3D%26newsId%3D1916&texts=常州市清潭中学召开“解放思想大讨论活动”动员大会|留住乡音，记住乡愁——清潭中学七年级开展传统文化进校园活动|有关常州市五四红旗团委喜报|体育工作喜报|学习身边榜样 绽放自我风采&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" bgcolor="#F0EFEF" quality="high" width="'+ focus_width +'" height="'+ focus_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+          document.write('</object>');
+        </script>
+   </td>
+                <td width="10"></td>
+                <td width="421" valign="top">
+                
+                   <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+                   
+                          <tr>
+		                      <td  colspan="2" class="news_bg"><span><a href="news_detail.jsp?newsId=1925" target="_blank">常州市清潭中学召开“解放思想大讨论活┈</a></span> 
+
+	
+
+
+
+	
+
+
+
+	
+
+
+	
+		5月22日上午，清潭中学召开解放思想大讨论活动动员大…</td>
+		                    </tr>
+		                    <tr>
+		                      <td height="15" colspan="2" class="line"></td>
+		                    </tr>
+                          
+                          <tr class="news_list">
+		                      <td width="86%" height="28" align="left">· <a href="news_detail.jsp?newsId=1923" target="_blank">留住乡音，记住乡愁——清潭中学七年级开展传统文化进┈</a>
+		                        
+		                      </td>
+		                      <td width="14%" align="center" class="index_news_time">05-21</td>
+		                    </tr>
+                          
+                          <tr class="news_list">
+		                      <td width="86%" height="28" align="left">· <a href="news_detail.jsp?newsId=1921" target="_blank">有关常州市五四红旗团委喜报</a>
+		                        
+		                      </td>
+		                      <td width="14%" align="center" class="index_news_time">05-17</td>
+		                    </tr>
+                          
+                          <tr class="news_list">
+		                      <td width="86%" height="28" align="left">· <a href="news_detail.jsp?newsId=1919" target="_blank">体育工作喜报</a>
+		                        
+		                      </td>
+		                      <td width="14%" align="center" class="index_news_time">05-16</td>
+		                    </tr>
+                          
+                          <tr class="news_list">
+		                      <td width="86%" height="28" align="left">· <a href="news_detail.jsp?newsId=1916" target="_blank">学习身边榜样 绽放自我风采</a>
+		                        
+		                      </td>
+		                      <td width="14%" align="center" class="index_news_time">05-14</td>
+		                    </tr>
+                          
+                          <tr class="news_list">
+		                      <td width="86%" height="28" align="left">· <a href="news_detail.jsp?newsId=1910" target="_blank">常州市学生志愿服务联盟“学雷锋月”表彰喜报</a>
+		                        
+		                      </td>
+		                      <td width="14%" align="center" class="index_news_time">05-07</td>
+		                    </tr>
+                          
+                          <tr class="news_list">
+		                      <td width="86%" height="28" align="left">· <a href="news_detail.jsp?newsId=1908" target="_blank">常州市教育系统“五四”表彰喜报</a>
+		                        
+		                      </td>
+		                      <td width="14%" align="center" class="index_news_time">05-07</td>
+		                    </tr>
+                          
+                          <tr class="news_list">
+		                      <td width="86%" height="28" align="left">· <a href="news_detail.jsp?newsId=1906" target="_blank">和谐奋进 青春先行 ——常州市清潭中学五四表彰大会</a>
+		                        
+		                      </td>
+		                      <td width="14%" align="center" class="index_news_time">05-07</td>
+		                    </tr>
+                          
+                          <tr class="news_list">
+		                      <td width="86%" height="28" align="left">· <a href="news_detail.jsp?newsId=1902" target="_blank">奋斗拼搏时，遇见未来的自己</a>
+		                        
+		                      </td>
+		                      <td width="14%" align="center" class="index_news_time">05-04</td>
+		                    </tr>
+                          
+                          <tr class="news_list">
+		                      <td width="86%" height="28" align="left">· <a href="news_detail.jsp?newsId=1898" target="_blank">感动于心  温暖于行</a>
+		                        
+		                      </td>
+		                      <td width="14%" align="center" class="index_news_time">05-03</td>
+		                    </tr>
+                           
+                  </table></td>
+              </tr>
+            </table></td>
+          <td class="right_bg"></td>
+        </tr>
+        <tr>
+          <td class="bottom_left_bg"></td>
+          <td class="bottom_bg"></td>
+          <td class="bottom_right_bg"></td>
+        </tr>
+      </table>
+      <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="5"></td>
+        </tr>
+      </table>
+      <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="288" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="title_a_left"></td>
+                <td valign="bottom" class="title_a_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="180" height="30">
+                      <ul class="news_tag">
+                          <li id="a1" onmouseover="setTab('a',1,2)" class="hover">校务公开</li>
+                          <li id="a2" onmouseover="setTab('a',2,2)">清友博文</li>
+                        </ul>
+                        
+                      </td>
+                      <td width="*" align="right" class="title_border" id="a"><a href="news_list.jsp?typeId=news09"><img src="images/more.gif" width="36" height="17" border="0" /></a></td>
+                    </tr>
+                  </table></td>
+                <td class="title_a_right"></td>
+              </tr>
+              <tr>
+                <td class="left_bg"></td>
+                <td height="258" valign="top" class="bg">
+                <div id="con_a_1">
+                
+                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td height="10"></td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="news_detail.jsp?newsId=1922" target="_blank">第十三周菜单</a>
+		                        </td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="news_detail.jsp?newsId=1913" target="_blank">第十二周菜单</a>
+		                        </td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="news_detail.jsp?newsId=1904" target="_blank">第十一周菜单</a>
+		                        </td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="news_detail.jsp?newsId=1892" target="_blank">第十周菜单</a>
+		                        </td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="news_detail.jsp?newsId=1871" target="_blank">教育系统优秀共青团员、团干部、五四支┈</a>
+		                        </td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="news_detail.jsp?newsId=1870" target="_blank">2018年自主招生推荐名单公示</a>
+		                        </td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="news_detail.jsp?newsId=1869" target="_blank">第九周菜单</a>
+		                        </td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="news_detail.jsp?newsId=1866" target="_blank">常州市清潭中学2018自主招生方案</a>
+		                        </td>
+                    </tr>
+                    
+                  </table>
+                  </div>
+                  <div id="con_a_2" style="display:none;">
+                  
+                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td height="10"></td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="BlogNews/news_detail.jsp?newsId=54" target="_blank">教学反思</a></td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="BlogNews/news_detail.jsp?newsId=53" target="_blank">随笔 （一）</a></td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="BlogNews/news_detail.jsp?newsId=50" target="_blank">我的一堂思想品德课</a></td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="BlogNews/news_detail.jsp?newsId=49" target="_blank">我最得意的一堂课</a></td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="BlogNews/news_detail.jsp?newsId=48" target="_blank">构建感性语文课堂——用生命体验解读文┈</a></td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="BlogNews/news_detail.jsp?newsId=47" target="_blank">《建网之旅，始于足下》教学反思</a></td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="BlogNews/news_detail.jsp?newsId=46" target="_blank">建网之旅，始于规划</a></td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="31">·<a href="BlogNews/news_detail.jsp?newsId=45" target="_blank">我追求这样的课堂</a></td>
+                    </tr>
+                    
+                  </table>
+                  </div>
+                  </td>
+                <td class="right_bg"></td>
+              </tr>
+              <tr>
+                <td class="bottom_left_bg"></td>
+                <td class="bottom_bg"></td>
+                <td class="bottom_right_bg"></td>
+              </tr>
+            </table>
+            <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="5"></td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="title_a_left"></td>
+                <td valign="bottom" class="title_a_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="34%" height="30" class="title_a">快速通道</td>
+                      <td width="66%" align="right" class="title_border">&nbsp;</td>
+                    </tr>
+                  </table></td>
+                <td class="title_a_right"></td>
+              </tr>
+              <tr>
+                <td class="left_bg"></td>
+                <td height="258" valign="top" class="bg"><table width="234" border="0" align="center" cellpadding="0" cellspacing="0">
+                    
+                    
+					<tr>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.jste.net.cn/cmsplus/index.jsp" target="_blank"><img src="/xheditor/upload/ShortIcon/df6dfddc-6382-4e56-a822-e2d382feb456-firstimg.jpg" width="234" height="50" border="0" /></a></td>
+                    </tr> 
+                    
+					<tr>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.czqtzx.com/Elective/" target="_blank"><img src="/xheditor/upload/ShortIcon/06a38ee8-d74c-4629-b0c1-18bf79e84ddd-firstimg.jpg" width="234" height="50" border="0" /></a></td>
+                    </tr> 
+                    
+					<tr>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.baidu.com" target="_blank"><img src="/xheditor/upload/ShortIcon/46240898-cfb2-4cbb-b65a-2ca11edf8dd4-firstimg.jpg" width="234" height="50" border="0" /></a></td>
+                    </tr> 
+                    
+					<tr>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td><a href="http://www.czqtzx.com/News/BlogNews/" target="_blank"><img src="/xheditor/upload/ShortIcon/17e5d07f-2475-4951-8b13-78da718985f8-firstimg.jpg" width="234" height="50" border="0" /></a></td>
+                    </tr> 
+                    
+                    <tr>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </table></td>
+                <td class="right_bg"></td>
+              </tr>
+              <tr>
+                <td class="bottom_left_bg"></td>
+                <td class="bottom_bg"></td>
+                <td class="bottom_right_bg"></td>
+              </tr>
+            </table></td>
+          <td width="5">&nbsp;</td>
+          <td width="677" valign="top"><table width="677" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="336" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td class="title_b_left"></td>
+                      <td valign="bottom" class="title_b_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="32%" height="30" class="title_b">课程教学</td>
+                            <td width="68%" align="right" class="title_border"><a href="news_list.jsp?typeId=news02"><img src="images/more.gif" width="36" height="17" border="0" /></a></td>
+                          </tr>
+                        </table></td>
+                      <td class="title_b_right"></td>
+                    </tr>
+                    <tr>
+                      <td class="left_bg"></td>
+                      <td height="258" valign="top" class="bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="35%">&nbsp;</td>
+                            <td width="65%">&nbsp;</td>
+                          </tr>
+                          
+                          <tr>
+                            <td align="center"><img src="/xheditor/upload/ShortIcon/01fed98b-2f9b-4551-83f5-c9e8393318cc-firstimg.jpg" width="94" height="61" /></td>
+                            <td align="left" valign="top" class="list_news_bg"><span><a href="news_detail.jsp?newsId=1829" target="_blank">探寻宇宙的奥秘 ——记八年级┈</a></span> 
+
+	 
+
+
+
+	 
+
+
+
+	 
+
+…</td>
+                          </tr>
+                          
+                        </table>
+                        
+                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+                          <tr>
+                            <td height="5" colspan="2" ></td>
+                          </tr>
+                           
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1829" target="_blank">探寻宇宙的奥秘 ——记八年级学生┈</a>
+                            
+	                        <img src="/News/img/park_top.gif"/>
+	                        
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">03-19</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1815" target="_blank">教贵以专、道贵以真、腹笥尽奇谋、┈</a>
+                            
+	                        <img src="/News/img/park_top.gif"/>
+	                        
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">03-07</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1887" target="_blank">以课程创新为肥 开学生成长之花 ——┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-26</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1885" target="_blank">美食与美景--记清潭中学生物组校本课┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-26</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1859" target="_blank">亲近大自然  感受佛文化——清潭中学┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-04</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1711" target="_blank">栉风沐雨，玉汝于成——记常州市初高中┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">12-18</td>
+                          </tr>
+                          
+                        </table></td>
+                      <td class="right_bg"></td>
+                    </tr>
+                    <tr>
+                      <td class="bottom_left_bg"></td>
+                      <td class="bottom_bg"></td>
+                      <td class="bottom_right_bg"></td>
+                    </tr>
+                  </table></td>
+                <td width="5"></td>
+                <td width="336" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td class="title_b_left"></td>
+                      <td valign="bottom" class="title_b_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="32%" height="30" class="title_b">德育在线</td>
+                            <td width="68%" align="right" class="title_border"><a href="news_list.jsp?typeId=news04"><img src="images/more.gif" width="36" height="17" border="0" /></a></td>
+                          </tr>
+                        </table></td>
+                      <td class="title_b_right"></td>
+                    </tr>
+                    <tr>
+                      <td class="left_bg"></td>
+                      <td height="258" valign="top" class="bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="35%">&nbsp;</td>
+                            <td width="65%">&nbsp;</td>
+                          </tr>
+                          
+                          <tr>
+                            <td align="center"><img src="/xheditor/upload/ShortIcon/add8fa70-4cd6-42f4-878f-966e835361cf-firstimg.jpg" width="94" height="61" /></td>
+                            <td align="left" valign="top" class="list_news_bg"><span><a href="news_detail.jsp?newsId=1914" target="_blank">学习身边榜样 绽放自我风采—┈</a></span> 
+	
+
+
+
+	
+
+
+
+	
+
+
+
+	…</td>
+                          </tr>
+                          
+                        </table>
+                        
+                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+                          <tr>
+                            <td height="5" colspan="2" ></td>
+                          </tr>
+                           
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1914" target="_blank">学习身边榜样 绽放自我风采——感动清┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">05-14</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1901" target="_blank">奋斗拼搏时，遇见未来的自己</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">05-04</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1889" target="_blank">家校共育，做智慧父母   专家引领，┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-27</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1883" target="_blank">“红领巾”进清中</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-26</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1860" target="_blank">追寻伟人足迹   传承革命理想</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-04</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1857" target="_blank">抚今追昔颂英烈   齐心奋斗中国梦</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-03</td>
+                          </tr>
+                          
+                        </table></td>
+                      <td class="right_bg"></td>
+                    </tr>
+                    <tr>
+                      <td class="bottom_left_bg"></td>
+                      <td class="bottom_bg"></td>
+                      <td class="bottom_right_bg"></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+            <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="5"></td>
+              </tr>
+            </table>
+            <table width="677" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="336" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td class="title_b_left"></td>
+                      <td valign="bottom" class="title_b_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="32%" height="30" class="title_b">教育科研</td>
+                            <td width="68%" align="right" class="title_border"><a href="news_list.jsp?typeId=news03"><img src="images/more.gif" width="36" height="17" border="0" /></a></td>
+                          </tr>
+                        </table></td>
+                      <td class="title_b_right"></td>
+                    </tr>
+                    <tr>
+                      <td class="left_bg"></td>
+                      <td height="258" valign="top" class="bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="35%">&nbsp;</td>
+                            <td width="65%">&nbsp;</td>
+                          </tr>
+                         
+                          <tr>
+                            <td align="center"><img src="/xheditor/upload/ShortIcon/db2405f5-63f3-439a-a047-b5ea5f8e7cc2-firstimg.jpg" width="94" height="61" /></td>
+                            <td align="left" valign="top" class="list_news_bg"><span><a href="news_detail.jsp?newsId=1879" target="_blank">增强责任意识，提升育人能力</a></span> 
+
+
+	
+
+
+
+	
+
+
+
+	
+
+…</td>
+                          </tr>
+                          
+                        </table>
+                        
+                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+                          <tr>
+                            <td height="5" colspan="2" ></td>
+                          </tr>
+                           
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1879" target="_blank">增强责任意识，提升育人能力</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-25</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1872" target="_blank">深度学习   有效教学</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-20</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1867" target="_blank">陪伴 耐心 策略 ——九年级举行新课┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-18</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1864" target="_blank">课题中期汇报材料</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-12</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1858" target="_blank">培养学生使用信息化手段自主学习的研究┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-04</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1853" target="_blank">指向中学生自得成长的学校课程体系研究</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-02</td>
+                          </tr>
+                          
+                        </table></td>
+                      <td class="right_bg"></td>
+                    </tr>
+                    <tr>
+                      <td class="bottom_left_bg"></td>
+                      <td class="bottom_bg"></td>
+                      <td class="bottom_right_bg"></td>
+                    </tr>
+                  </table></td>
+                <td width="5"></td>
+                <td width="336" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td class="title_b_left"></td>
+                      <td valign="bottom" class="title_b_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="32%" height="30" class="title_b">师生风采</td>
+                            <td width="68%" align="right" class="title_border"><a href="news_list.jsp?typeId=news05"><img src="images/more.gif" width="36" height="17" border="0" /></a></td>
+                          </tr>
+                        </table></td>
+                      <td class="title_b_right"></td>
+                    </tr>
+                    <tr>
+                      <td class="left_bg"></td>
+                      <td height="258" valign="top" class="bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="35%">&nbsp;</td>
+                            <td width="65%">&nbsp;</td>
+                          </tr>
+                          
+                          <tr>
+                            <td align="center"><img src="/xheditor/upload/ShortIcon/70a2cc75-16c9-40bf-bff6-4acde76c0034-firstimg.jpg" width="94" height="61" /></td>
+                            <td align="left" valign="top" class="list_news_bg"><span><a href="news_detail.jsp?newsId=1918" target="_blank">体育工作喜报</a></span> 
+
+
+	
+
+
+	
+
+
+	
+	
+		
+…</td>
+                          </tr>
+                          
+                        </table>
+                        
+                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+                          <tr>
+                            <td height="5" colspan="2" ></td>
+                          </tr>
+                           
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1918" target="_blank">体育工作喜报</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">05-16</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1903" target="_blank">喜报：防震减灾知识竞赛我校获江苏省第┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">05-07</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1895" target="_blank">关于常州市第六届中小学教师校本培训优┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">05-03</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1878" target="_blank">喜报：2018年省五四杯初中青年教师┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-24</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1834" target="_blank">巾帼耕耘结硕果 桃李不言自成蹊</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">03-21</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1817" target="_blank">与梅相遇，与美相约-----    ┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">03-09</td>
+                          </tr>
+                          
+                        </table></td>
+                      <td class="right_bg"></td>
+                    </tr>
+                    <tr>
+                      <td class="bottom_left_bg"></td>
+                      <td class="bottom_bg"></td>
+                      <td class="bottom_right_bg"></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+      <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="5"></td>
+        </tr>
+      </table>
+      <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="top_left_bg"></td>
+          <td class="top_bg">&nbsp;</td>
+          <td class="top_right_bg"></td>
+        </tr>
+        <tr>
+          <td class="left_bg"></td>
+          <td valign="top" class="bg"><table width="940" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="45"><img src="images/photo_title.jpg" width="37" height="162" /></td>
+                <td width="895"><div id="index_photo" style="overflow:hidden;width:845px;padding:0 10px 0 10px; margin:10px 15px 0 15px;">
+                    
+                    <table align="left" cellpadding="0" cellspace="0" border="0">
+                      <tr>
+                        <td id="index_photo1" valign="top"><table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                            
+                              <td align="center"><img src="/xheditor/upload/ShortIcon/25b1ac28-17d3-4cff-9287-3cfc69eb144d-firstimg.jpg" hspace="10" width="179" height="118" style="padding:2px; border:#896769 1px solid;background:#FFF;" /><br/><br/><a href="news_detail.jsp?newsId=62" target="_blank">立诚守信石</a></td>
+                              <td width="20"></td>
+                            
+                              <td align="center"><img src="/xheditor/upload/ShortIcon/d2fb8c86-07c6-4f5f-bbdc-95fee14c1ff5-firstimg.jpg" hspace="10" width="179" height="118" style="padding:2px; border:#896769 1px solid;background:#FFF;" /><br/><br/><a href="news_detail.jsp?newsId=103" target="_blank">综合楼</a></td>
+                              <td width="20"></td>
+                            
+                              <td align="center"><img src="/xheditor/upload/ShortIcon/6faafc60-e788-4e9b-a85a-8a7f20664eea-firstimg.jpg" hspace="10" width="179" height="118" style="padding:2px; border:#896769 1px solid;background:#FFF;" /><br/><br/><a href="news_detail.jsp?newsId=63" target="_blank">常州名人长廊</a></td>
+                              <td width="20"></td>
+                            
+                              <td align="center"><img src="/xheditor/upload/ShortIcon/458fe3bc-0795-47b0-b0b5-09eb8f9e9b9f-firstimg.jpg" hspace="10" width="179" height="118" style="padding:2px; border:#896769 1px solid;background:#FFF;" /><br/><br/><a href="news_detail.jsp?newsId=64" target="_blank">南校区操场</a></td>
+                              <td width="20"></td>
+                            
+                              <td align="center"><img src="/xheditor/upload/ShortIcon/99d901b3-793d-4727-a2f7-59107ba0c60f-firstimg.jpg" hspace="10" width="179" height="118" style="padding:2px; border:#896769 1px solid;background:#FFF;" /><br/><br/><a href="news_detail.jsp?newsId=59" target="_blank">书法长廊</a></td>
+                              <td width="20"></td>
+                            
+                              <td align="center"><img src="/xheditor/upload/ShortIcon/05d8e6da-73af-4497-be13-caaa135d26bd-firstimg.jpg" hspace="10" width="179" height="118" style="padding:2px; border:#896769 1px solid;background:#FFF;" /><br/><br/><a href="news_detail.jsp?newsId=58" target="_blank">折桂亭</a></td>
+                              <td width="20"></td>
+                            
+                              <td align="center"><img src="/xheditor/upload/ShortIcon/53ed0d94-c242-4ba0-ba9b-761789a48b34-firstimg.jpg" hspace="10" width="179" height="118" style="padding:2px; border:#896769 1px solid;background:#FFF;" /><br/><br/><a href="news_detail.jsp?newsId=56" target="_blank">知行恒一园</a></td>
+                              <td width="20"></td>
+                            
+                              <td align="center"><img src="/xheditor/upload/ShortIcon/8e2d6890-33e8-4370-9dfb-696082a0c485-firstimg.jpg" hspace="10" width="179" height="118" style="padding:2px; border:#896769 1px solid;background:#FFF;" /><br/><br/><a href="news_detail.jsp?newsId=55" target="_blank">南校区教学楼</a></td>
+                              <td width="20"></td>
+                            
+                              <td align="center"><img src="/xheditor/upload/ShortIcon/03ce0e49-b3ab-4d21-ad6b-86c94d01ffc2-firstimg.jpg" hspace="10" width="179" height="118" style="padding:2px; border:#896769 1px solid;background:#FFF;" /><br/><br/><a href="news_detail.jsp?newsId=54" target="_blank">校训石</a></td>
+                              <td width="20"></td>
+                            
+                            </tr> 
+                          </table></td>
+                        <td id="index_photo2" valign="top"></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <script>
+  var speed=20//速度数值越大速度越慢
+  index_photo2.innerHTML=index_photo1.innerHTML
+  function Marquee(){
+  if(index_photo2.offsetWidth-index_photo.scrollLeft<=0)
+  index_photo.scrollLeft-=index_photo1.offsetWidth
+  else{
+  index_photo.scrollLeft++
+  }
+  }
+  var MyMar=setInterval(Marquee,speed)
+  index_photo.onmouseover=function() {clearInterval(MyMar)}
+  index_photo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+  </script></td>
+              </tr>
+            </table></td>
+          <td class="right_bg"></td>
+        </tr>
+        <tr>
+          <td class="bottom_left_bg"></td>
+          <td class="bottom_bg"></td>
+          <td class="bottom_right_bg"></td>
+        </tr>
+      </table>
+      <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="288" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="title_a_left"></td>
+                <td valign="bottom" class="title_a_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="45%" height="30" ><img src="images/xzyx_title.png" width="95" height="32" alt=""/></td>
+                      <td width="55%" align="right" ><a href="news_list_child.jsp?typeId=news0107"><img src="images/more.gif" width="36" height="17" border="0" /></a></td>
+                    </tr>
+                  </table></td>
+                <td class="title_a_right"></td>
+              </tr>
+              <tr>
+                <td class="left_bg"></td>
+                <td height="258" valign="top" class="bg">
+                
+                <table width="220" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td height="10"></td>
+                  </tr>
+                  <tr>
+                    <td><a href="news_list_child.jsp?typeId=news0107"><img src="images/qzyx.jpg" width="220" height="110" border="0" /></a></td>
+                  </tr>
+                  <tr>
+                    <td height="10"></td>
+                  </tr>
+                </table>
+                  <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td width="29%" height="50" align="center"><img src="images/search_icon.jpg" width="50" height="50" /></td>
+                      <td width="71%" align="center"><div class="search_border">
+                           <form action="/Search/result.jsp" method="post" name="rearchLoginForm" onsubmit="return false;" target="_blank">
+							<input type="hidden" name="schoolId" value="10001027"/>
+							<input type="hidden" name="annexFlg" value="0"/>
+							<input type="hidden" name="typeIdList" value="news"/>
+                          <input type="text" name="searchValue" class="search_input" value="请输入关键字" onfocus="if(this.value==defaultValue) {this.value='';}" onblur="if(!value) {value=defaultValue;}" />
+                          <input type="button" name="button2" class="search_button" value=" "  onclick="searchFun(rearchLoginForm)"/>
+                       </form>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td height="70" align="center"><img src="images/report_icon.jpg" width="50" height="50" /></td>
+                      <td class="report"><span>投诉建议</span><br />
+                        邮箱：czsqtzx@sina.com</td>
+                    </tr>
+                  </table></td>
+                <td class="right_bg"></td>
+              </tr>
+              <tr>
+                <td class="bottom_left_bg"></td>
+                <td class="bottom_bg"></td>
+                <td class="bottom_right_bg"></td>
+              </tr>
+            </table></td>
+          <td width="5">&nbsp;</td>
+          <td width="677" valign="top"><table width="677" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="336" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td class="title_b_left"></td>
+                      <td valign="bottom" class="title_b_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="32%" height="30" class="title_b">清中党建</td>
+                            <td width="68%" align="right" class="title_border"><a href="news_list.jsp?typeId=news08"><img src="images/more.gif" width="36" height="17" border="0" /></a></td>
+                          </tr>
+                        </table></td>
+                      <td class="title_b_right"></td>
+                    </tr>
+                    <tr>
+                      <td class="left_bg"></td>
+                      <td height="258" valign="top" class="bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="35%">&nbsp;</td>
+                            <td width="65%">&nbsp;</td>
+                          </tr>
+                          
+                          <tr>
+                            <td align="center"><img src="/xheditor/upload/ShortIcon/da900c54-4764-4370-ae6f-608df6b728be-firstimg.jpg" width="94" height="61" /></td>
+                            <td align="left" valign="top" class="list_news_bg"><span><a href="news_detail.jsp?newsId=1924" target="_blank">常州市清潭中学召开“解放思想┈</a></span> 
+
+	
+
+
+
+	
+
+
+
+	
+
+
+	…</td>
+                          </tr>
+                          
+                        </table>
+                        
+                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+                          <tr>
+                            <td height="5" colspan="2" ></td>
+                          </tr>
+                           
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1924" target="_blank">常州市清潭中学召开“解放思想大讨┈</a>
+                            
+	                        <img src="/News/img/news.gif"/>
+	                        
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">05-23</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1894" target="_blank">感动于心  温暖于行</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">05-03</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1847" target="_blank">清潭中学召开民主党派负责人座谈会</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">03-30</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1844" target="_blank">关于2017年度党员民主评议结果的通┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">03-28</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1825" target="_blank">丰富的革命传统教育，深刻的党员聚力践┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">03-13</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1705" target="_blank">不忘初心，牢记使命，永远奋斗——记学┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">12-14</td>
+                          </tr>
+                          
+                        </table></td>
+                      <td class="right_bg"></td>
+                    </tr>
+                    <tr>
+                      <td class="bottom_left_bg"></td>
+                      <td class="bottom_bg"></td>
+                      <td class="bottom_right_bg"></td>
+                    </tr>
+                  </table></td>
+                <td width="5"></td>
+                <td width="336" align="left" valign="top">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td class="title_b_left"></td>
+                      <td valign="bottom" class="title_b_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="70%" height="30" class="title_b" align="left">
+                            <span id="news06Span" onmouseover="javascript:setTabPage('news06','news07')" style="color:#000000">团队天地</span>
+                            <span id="news07Span" onmouseover="javascript:setTabPage('news07','news06')">教工之家</span>
+                            &nbsp;&nbsp;
+                            </td>
+                            <td width="30%" align="right" class="title_border" id="tabpageDiv"><a href="news_list.jsp?typeId=news06"><img src="images/more.gif" width="36" height="17" border="0" /></a></td>
+                          </tr>
+                        </table></td>
+                      <td class="title_b_right"></td>
+                    </tr>
+                    <tr>
+                      <td class="left_bg"></td>
+                      <td height="258" valign="top" class="bg">
+                         <div id="news07Div" style="display:none">
+                           <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="35%">&nbsp;</td>
+                            <td width="65%">&nbsp;</td>
+                          </tr>
+                          
+                          <tr>
+                            <td align="center"><img src="/xheditor/upload/ShortIcon/5999f20b-0451-49ca-a37d-55fea8c24cdb-firstimg.jpg" width="94" height="61" /></td>
+                            <td align="left" valign="top" class="list_news_bg"><span><a href="news_detail.jsp?newsId=1835" target="_blank">巾帼耕耘结硕果 桃李不言自成┈</a></span> 
+
+	
+
+
+	
+
+
+
+	
+
+
+
+	…</td>
+                          </tr>
+                          
+                        </table>
+                        
+                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+                          <tr>
+                            <td height="5" colspan="2" ></td>
+                          </tr>
+                           
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1835" target="_blank">巾帼耕耘结硕果 桃李不言自成蹊</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">03-21</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1818" target="_blank">与梅相遇，与美相约-----    ┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">03-09</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1718" target="_blank">喜   报 热烈祝贺我校荣获常州市教┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">12-21</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1721" target="_blank">喜   报 热烈祝贺我校荣获常州市教┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">12-21</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1680" target="_blank">让爱在血液中传递          ┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">11-24</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1653" target="_blank">昔日育桃李，今朝乐晚年</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">10-27</td>
+                          </tr>
+                          
+                        </table>
+                         </div>
+                         <div id="news06Div">
+                           <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="35%">&nbsp;</td>
+                            <td width="65%">&nbsp;</td>
+                          </tr>
+                          
+                          <tr>
+                            <td align="center"><img src="/xheditor/upload/ShortIcon/55c5e807-5e5a-43ab-8082-f89ece9d34fd-firstimg.png" width="94" height="61" /></td>
+                            <td align="left" valign="top" class="list_news_bg"><span><a href="news_detail.jsp?newsId=1920" target="_blank">有关常州市五四红旗团委喜报</a></span> 
+	
+
+
+	
+
+
+	一年来，常州市清潭中学团委…</td>
+                          </tr>
+                          
+                        </table>
+                        
+                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+                          <tr>
+                            <td height="5" colspan="2" ></td>
+                          </tr>
+                           
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1920" target="_blank">有关常州市五四红旗团委喜报</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">05-17</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1911" target="_blank">常州市学生志愿服务联盟“学雷锋月”表┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">05-07</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1909" target="_blank">常州市教育系统“五四”表彰喜报</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">05-07</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1907" target="_blank">和谐奋进 青春先行 ——常州市清潭中┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">05-07</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1881" target="_blank">共青团 我来了——清潭中学第68期团┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-26</td>
+                          </tr>
+                          
+                          <tr class="news_list">
+                            <td width="84%" height="28" align="left">· <a href="news_detail.jsp?newsId=1875" target="_blank">探污水治理，携环保同行——记清潭中学┈</a>
+                            
+                            </td>
+                            <td width="16%" align="center" class="index_news_time">04-22</td>
+                          </tr>
+                          
+                        </table>
+                         </div>
+                      </td>
+                      <td class="right_bg"></td>
+                    </tr>
+                    <tr>
+                      <td class="bottom_left_bg"></td>
+                      <td class="bottom_bg"></td>
+                      <td class="bottom_right_bg"></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+      <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+      <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>
+      <div id="index_link" style="overflow:hidden;width:950px; margin:0 auto;">
+                     
+                    <table align="left" cellpadding="0" cellspace="0" border="0">
+                      <tr>
+                        <td id="index_link1" valign="top"><table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                            
+                              <td align="center"><a href="news_detail.jsp?newsId=1703" target="_blank"><img src="/xheditor/upload/ShortIcon/86a36b9c-b710-4f5e-8680-ba95fb5299b0-firstimg.png"  width="152" height="42" border="0"/></a></td>
+                              <td width="20"></td>
+                            
+                              <td align="center"><a href="news_detail.jsp?newsId=4" target="_blank"><img src="/xheditor/upload/ShortIcon/a31066bf-9b5f-4a83-beb0-dfd66aac6524-firstimg.jpg"  width="152" height="42" border="0"/></a></td>
+                              <td width="20"></td>
+                            
+                            </tr> 
+                          </table>
+                          </td>
+                        <td id="index_link2" valign="top"></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <script>
+  var speed=20//速度数值越大速度越慢
+  index_link2.innerHTML=index_link1.innerHTML
+  function Marquee(){
+  if(index_link2.offsetWidth-index_link.scrollLeft<=0)
+  index_link.scrollLeft-=index_link1.offsetWidth
+  else{
+  index_link.scrollLeft++
+  }
+  }
+  var MyMar=setInterval(Marquee,speed)
+  index_link.onmouseover=function() {clearInterval(MyMar)}
+  index_link.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+  </script>
+  </td>
+        </tr>
+      </table>
+      <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="244">&nbsp;</td>
+          <td width="240">&nbsp;</td>
+          <td width="242">&nbsp;</td>
+          <td width="244">&nbsp;</td>
+        </tr>
+        <tr>
+        
+				    <td align="center">
+								<select onchange="javascript:window.open(this.value)" class="link_select">
+								<option>-----兄弟学校----</option>
+								
+			                        	<option value="http://www.sina.com">兄弟学校1</option>
+			                        
+		                        </select>
+		            </td>
+				    
+				    <td align="center">
+								<select onchange="javascript:window.open(this.value)" class="link_select">
+								<option>-----教育资源----</option>
+								
+			                        	<option value="http://old.czqtzx.com/">旧版网站</option>
+			                        
+		                        </select>
+		            </td>
+				     
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+      
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td id="copyright_link"><a href="/News/BlogNews" target="_blank">清友博客</a> | <a href="/MySpace" target="_blank">平台管理</a> | <a href="/NewsMng" target="_blank">网站管理</a></td>
+        </tr>
+        <tr>
+          <td id="copyright">常州市清潭中学&nbsp;<a style="TEXT-DECORATION: none; HEIGHT: 20px; COLOR: #939393; DISPLAY: inline-block; LINE-HEIGHT: 20px" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32040402000132" target="_blank"><img border="0" alt="" src="/News/images/batb.png" />苏公网安备 32040402000132号</a>&nbsp;&nbsp;<a style="COLOR: #939393" href="http://www.miitbeian.gov.cn" target="_blank">苏ICP备10204267号</a><br />地址：清潭路232号 入学咨询：86997936 投诉建议：86997592<br />
+          <br/>
+          <span>总访问人数：<strong>161941</strong></span>
+           <br/>
+	   <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/11/180/0000/60658540/CA111800000606585400003.js' type='text/javascript'%3E%3C/script%3E"));</script>
+	  
+          </td>
+        </tr>
+      </table> 
+
+      </td>
+  </tr>
+</table>
+</body>
+</html>

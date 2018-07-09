@@ -1,0 +1,694 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--北大附中集团校网站管理系统-->
+<!--路漫漫其修远兮，吾将上下而求索
+--2016年4月
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>北京医学院附属中学</title>
+<meta name="keywords" content="北京医学院附属中学,北医附中,北大附中承办北医附中,beiyifuzhong,byfz" />
+<meta name="description" content="北京医学院附属中学,北医附中,北大附中承办北医附中" />
+<link rel="stylesheet" type="text/css" href="http://www.byfz.bjedu.cn/skin/byfz/cms/../core/header/common.css" />
+<link rel="stylesheet" type="text/css" href="http://www.byfz.bjedu.cn/skin/byfz/cms/../core/header/header.css" />
+<link rel="stylesheet" type="text/css" href="http://www.byfz.bjedu.cn/skin/label/label.css" />
+<script type="text/javascript" src="http://www.byfz.bjedu.cn/js/config.js"></script>
+<script type="text/javascript" src="http://www.byfz.bjedu.cn/js/util.js"></script>
+
+<script type="text/javascript" src="http://www.byfz.bjedu.cn/js/lang/core/zh-cn.js"></script>
+<script type="text/javascript" src="http://www.byfz.bjedu.cn/js/lang/cms/zh-cn.js"></script>
+
+<script type="text/javascript">
+BYFZCONFIG.RESOURCE = 'http://www.byfz.bjedu.cn';
+var SYSTEM = 'cms',
+MODULE = '',
+ACTION = 'main',
+LABEL_URL = 'http://www.byfz.bjedu.cn/index.php/cms?',
+$this_router = BYFZCONFIG.URI[SYSTEM][MODULE].controller,
+$this_url = $this_router +'-'+ ACTION,
+SKIN = 'http://www.byfz.bjedu.cn/skin/byfz/cms/',
+TEMPLATE = 'byfz';document.base_domain = '';
+</script>
+
+</head>
+<body>
+<div class="wrap wrap960">
+<div class="header">
+<div class="logo">
+<a href="/index.php">&nbsp;</a>
+</div>
+<div class="top_right">
+<div class="top_right_top" id="header_t">
+<span id="header_login">	
+</span>
+<script type="text/javascript" src="http://www.byfz.bjedu.cn/byfz.php/core/member-login?style=byfz01&id=header_login"></script></span>
+</div>
+</div>
+</div>
+</div>
+<div class="wrap">
+<div  class="nav_menu clearfix">
+<div class="home_link"><a href="http://www.byfz.bjedu.cn/index.php" title="北医附中主页">&nbsp; </a></div>
+<ul id="menu_nav">
+<li><a href="http://www.byfz.bjedu.cn/freshman/jieshao.html" target="">学校介绍</a>
+<dl style="display:none">
+<dt><a href="http://www.byfz.bjedu.cn/freshman/jieshao.html" target="">学校概况</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/core/page-view-id-2" target="">办学理念</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/core/page-view-id-3" target="">北医校训</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/core/page-view-id-4" target="">机构设置</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-1" target="">校园美景</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/core/page-view-id-5" target="">师资队伍</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/core/page-view-id-6" target="">校史荣誉</a></dt>
+</dl>
+</li>
+<li><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-1" target="">新闻信息</a>
+<dl style="display:none">
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-3" target="">校内快讯</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-4" target="">图片新闻</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-13" target="">行政管理</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-14" target="">制度汇编</a></dt>
+</dl>
+</li>
+<li><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-6" target="">教育教学</a>
+<dl style="display:none">
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-1" target="">周工作安排</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-7" target="">教务</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-8" target="">教研组</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-9" target="">教研组</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-10" target="">备课组</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-11" target="">校本培训</a></dt>
+</dl>
+</li>
+<li><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-15" target="">德育之窗</a>
+<dl style="display:none">
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-16" target="">德育教育</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-17" target="">党团建设</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-18" target="">学生天地</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-19" target="">心理教育</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-20" target="">主题教育</a></dt>
+</dl>
+</li>
+<li><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-21" target="">艺美教育</a>
+<dl style="display:none">
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-22" target="">美术教育</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-23" target="">工艺美术</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-24" target="">书法教育</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-24" target="">音乐教育</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-26" target="">摄影小组</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-27" target="">电脑美术</a></dt>
+</dl>
+</li>
+<li><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-28" target="">科技教育</a>
+<dl style="display:none">
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-29" target="">数码绘画</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-30" target="">无线电测向</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-31" target="">智能单片机</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-32" target="">智能机器人</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-33" target="">模型制作</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-34" target="">金鹏科技论坛</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-35" target="">头脑奥林匹克</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-36" target="">电子技术</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-37" target="">DI团队</a></dt>
+</dl>
+</li>
+<li><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-38" target="">招生招聘</a>
+<dl style="display:none">
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-39" target="">招生考试</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-624.shtml" target="">教师招聘</a></dt>
+</dl>
+</li>
+<li><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-48" target="">党建工会</a>
+<dl style="display:none">
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-48" target="">党建园地</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-40" target="">工会家园</a></dt>
+</dl>
+</li>
+<li><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-56" target="">图片视频</a>
+<dl style="display:none">
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-56" target="">学校视频</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-61" target="">学校图片</a></dt>
+</dl>
+</li>
+<li><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-66" target="">教育督导</a>
+<dl style="display:none">
+<dt><a href="http://www.byfz.bjedu.cn/index.php/cms/item-list-category-66" target="">教育督导</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/letter-list" target="">学校信箱</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/opinion-list" target="">意见征集</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/survey-list" target="">问卷调查</a></dt>
+<dt><a href="http://www.byfz.bjedu.cn/index.php/core/guestbook" target="">留言咨询</a></dt>
+<dt><a href="http://bbs.byfz.xyz/" target="">学校论坛</a></dt>
+</dl>
+</li>		
+</ul>
+</div>			
+
+<script type="text/javascript">
+var USERNAME = get_username();
+$(document).ready(function(){
+//**show_edit**//					   
+init_labelshows('header_t');
+//**menu**//
+$('#menu_nav li>dl').hide();
+$("#menu_nav li:first").addClass('over');
+$("#menu_nav li").each(function () {
+$(this).hover(
+function(){
+$('#menu_nav li').removeClass();
+$('#menu_nav li>dl').hide();
+$(this).addClass('over');
+$(this).find('dl').show();
+$(this).find('dl').css({left: parseInt($(this).position().left) + 'px'});
+},
+function(){
+$(this).find('dl').hide();
+}
+)
+});	
+})
+</script>
+<div class="wrap wrap960"><link rel="stylesheet" type="text/css" href="http://www.byfz.bjedu.cn/skin/byfz/cms/style.css" /><link rel="stylesheet" type="text/css" href="http://www.byfz.bjedu.cn/skin/byfz/cms/../cms/index/index.css" />
+<div class="index_left">
+<!--左侧板块-->
+<div class="login_box common_mbottom">
+<!--校网登录-->
+<div class="login_header"><span class="login_title">师生登录</span></div>
+<div class="login_con" id="login_com">
+<script type="text/javascript" src="http://www.byfz.bjedu.cn/byfz.php/core/member-login?style=byfz&id=login_com"></script>
+</div>
+</div>
+<!--登录框结束-->
+<!--学校领导介绍-->
+<div class="liftstud">
+<div class="login_header" style><span class="login_title">学校领导</span><span class="more"><span style="font-family:微软雅黑;"><a href="http://www.byfz.bjedu.cn/index.php/page-view-id-5" target="_blank"><span style="color: rgb(240, 248, 255);">师资队伍</span></a></span></span></div>
+<div class="lingdaojieshao">
+<style type="text/css">
+#banner_index_143{height:141px;overflow:hidden;width: 209px; position:relative; margin:auto;}
+#banner_index_143 .btn,.banner_pro .bBtn{position: absolute;top:160px;width:40px;height: 46px;display: block;z-index: 3;}
+#banner_index_143 .btnPre,.banner_pro .bPre{background: url(http://www.byfz.bjedu.cn/skin/label/left_btnOUT.png) no-repeat 0 0;left:20px;}
+#banner_index_143 .btnNext,.banner_pro .bNext{background: url(http://www.byfz.bjedu.cn/skin/label/right_btnOUT.png) no-repeat 0 0;right: 20px;}
+#banner_index_143 .btnPre:hover,.banner_pro .bPre:hover{background: url(http://www.byfz.bjedu.cn/skin/label/left_btn.png) no-repeat 0 0;left:20px;}
+#banner_index_143 .btnNext:hover,.banner_pro .bNext:hover{background: url(http://www.byfz.bjedu.cn/skin/label/right_btn.png) no-repeat 0 0;right: 20px;}
+#banner_index_143 .banner_wrap{position: absolute;left:0px;top: 0px; z-index: 2;}
+#banner_index_143 .banner_wrap li{width: 209px;float: left;}
+</style>
+<div id="banner_index_143">
+<a href="javascript:void(0);" class="btn btnPre" alt="left"></a>
+<a href="javascript:void(0);" class="btn btnNext" alt="right"></a>
+<ul class="banner_wrap">
+<li><a href="index.php/forms-view-id-16" target="_blank"><img src="http://www.byfz.bjedu.cn/attachment/core/label/2015_05/29_21/dd8f9029b4e5acb8.jpg" width="209" height="141" alt="北医附中校长"></a></li>
+<li><a href="index.php/forms-view-id-17" target="_blank"><img src="http://www.byfz.bjedu.cn/attachment/core/label/2015_05/30_00/fb4864aaa9ad1bd1.jpg" width="209" height="141" alt="党委书记"></a></li>
+<li><a href="index.php/forms-view-id-18" target="_blank"><img src="http://www.byfz.bjedu.cn/attachment/core/label/2015_05/30_00/76cc86eb9fea725a.jpg" width="209" height="141" alt="副校长"></a></li>
+<li><a href="index.php/forms-view-id-20" target="_blank"><img src="http://www.byfz.bjedu.cn/attachment/core/label/2015_05/30_00/c77b787fd680cc12.jpg" width="209" height="141" alt="德育副校长"></a></li>
+<li><a href="index.php/forms-view-id-21" target="_blank"><img src="http://www.byfz.bjedu.cn/attachment/core/label/2015_05/30_00/2a93862f47eedf9b.jpg" width="209" height="141" alt="行政副校长"></a></li> 
+</ul>
+</div> 
+
+
+<script type="text/javascript">
+(function(){
+var c = $('#banner_index_143 .banner_wrap li').length,w = 209,d = -c*w, temp = $('#banner_index_143 .banner_wrap').html();timer =  setInterval(move_anti, 5000);
+$('#banner_index_143 .banner_wrap').css({width:7*c*w });
+$(temp).appendTo($('#banner_index_143 .banner_wrap'));
+$(temp).prependTo($('#banner_index_143 .banner_wrap'));
+$('#banner_index_143 .banner_wrap').css({left:d});
+$('#banner_index_143 .btn').click(function(){ clearInterval(timer);timer = null; move_anti($(this).attr('alt'))});
+
+function move_anti(a){
+if(a=='left'){ d +=w;	}else{	d -= w;	} 
+$("#banner_index_143 .banner_wrap").animate({left:d+'px'},	function(){ if(d>=0) d=-(2*c)*w; else if (d <= -(3*c-1)*w) d=-(c-1)*w;	$('#banner_index_143 .banner_wrap').css({left:d}); if(!timer)timer =  setInterval(move_anti, 5000);} );	
+}
+})();
+</script></div>
+</div>
+<!--领导介绍END-->
+<div class="clear"></div>
+<div class="quicknav"><span class="search_a"><strong><a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-539" target="_blank">学生菜单</a></strong></span><span><a href="dianjiao.htm" target="_blank">电教预约</a></span><div class="clear"></div>
+<span class="search_a"><a href="http://www.hdyxw.org/" target="_blank">海淀教研</a></span><span><strong><a href="http://www.kuaxue.com/IPublic/byfz/index.html" target="_blank"><span style="color: #ff0000">教学资源库</span></a></strong></span></div>
+<div class="clear"></div>
+
+<div class="life_con">
+<ul>
+<li><a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-1" target="_blank" title="北医附中周工作安排" style="text-decoration:none;"><img width="226" height="53" border="none" alt="北医附中周工作安排" src="http://www.byfz.bjedu.cn/attachment/core/label/2015_05/03_18/bc572c3197e799d2.png" /></a></li>
+<li><a href="index.php/cms/item-list-category-48" target="_blank" title="党建园地" style="text-decoration:none;"><img width="226" height="53" border="none" alt="党建园地" src="http://www.byfz.bjedu.cn/attachment/core/label/2015_05/03_18/e8f268047f732974.jpg" /></a></li>
+<li><a href="index.php/letter-list" target="_blank" title="学校信箱" style="text-decoration:none;"><img width="226" height="53" border="none" alt="学校信箱" src="http://www.byfz.bjedu.cn/attachment/core/label/2015_05/03_18/732787f03e3ab93b.png" /></a></li>
+<li><a href="/xuanke.htm" target="_blank" title="初中部选课系统" style="text-decoration:none;"><img width="226" height="53" border="none" alt="初中部选课系统" src="http://www.byfz.bjedu.cn/attachment/core/label/2016_12/06_22/0a38f06c762ec027.jpg" /></a></li>
+
+</ul>
+<div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+<div class="liftstud">
+<div class="login_header"><span class="more"></span><span class="login_title"><a href="/index.php/cms/item-list-category-66" target="_blank"><span style="color:#FFFFFF;">教育督导</span></a></span></div>
+<div class="liftstud_con"><a href="http://www.hdjydd.org/" target="_blank" title="海淀教育督导网" style="text-decoration:none;"><img width="200" height="106" border="none" alt="海淀教育督导网" src="http://www.byfz.bjedu.cn/attachment/core/label/2015_11/21_20/21c864a460a206c4.jpg" /></a></div>
+</div>
+<!--<div class="clear"></div>
+<div class="adv"></div>
+<div class="clear"></div>
+<div class="adv"></div>
+<div class="clear"></div>
+<div class="adv"></div>-->
+
+</div>
+<!--左侧结束-->
+<!--中间框架开始-->
+<div class="index_middle">
+<div class="index_flashnews common_mbottom">
+
+
+<style type="text/css">
+#play_8{margin:0;float:left;width:505px;height:342px; overflow:hidden; border:#ccc 1px solid;}
+#play_8 .playShow{height:342px;}
+#play_8 .playBg{margin:0;float:left;margin-top:-30px;z-index:1;filter:alpha(opacity=70);opacity:0.7;width:505px;position:absolute;height:30px;background:#000;}
+#play_8 .playText{ margin:0;float:left;text-indent:10px;width:505px;margin-top:-30px;z-index:2;overflow:hidden;font-size:14px;font-weight:bold;color:#fff;line-height:30px; overflow:hidden;position:absolute;cursor:pointer;}
+#play_8 .playNum{width:505px;overflow:hidden;margin:-30px 5px 0 0px;z-index:3; text-align:right;position:absolute;height:25px;}
+#play_8 .playNum a{margin:5px 2px;width:15px;height:15px;font-size:14px; display:inline-block;  font-weight:bold;line-height:15px;cursor:pointer;color:#000;background:#D7D6D7;text-align:center; }
+#play_8 .playShow img{width:505px;height:342px;}
+</style>
+<div id="play_8">
+<ul>
+<li class="playShow">
+<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-963?verified=1" target="_blank"><img src="http://www.byfz.bjedu.cn/attachment/cms/item/2018_05/22_12/92e993383437d45f.jpg" alt="弘扬五四精神 践行青春誓言"></a> 
+<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-960.shtml" target="_blank"><img src="http://www.byfz.bjedu.cn/attachment/cms/item/2018_05/21_13/4a66bed58ab51964.jpg" alt="缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动..."></a> 
+<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-957.shtml" target="_blank"><img src="http://www.byfz.bjedu.cn/attachment/cms/item/2018_05/21_13/7a22f2fdffea60ab.jpg" alt="北医附中第三届科技嘉年华活动圆满成功！"></a> 
+<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-954.shtml" target="_blank"><img src="http://www.byfz.bjedu.cn/attachment/cms/item/2018_05/10_12/e3848912d525ce91.jpg" alt="科技嘉年华精彩纷呈"></a> 
+<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-951?verified=1" target="_blank"><img src="http://www.byfz.bjedu.cn/attachment/cms/item/2018_04/20_12/e76ff4d303dae3eb.jpg" alt="树立安全意识，确保校园平安 ——记北医附中安全教育日..."></a> 
+</li>
+<li class="playBg"></li>
+<li class="playText"></li>
+<li class="playNum"></li>
+</ul>
+</div>
+<script type=text/javascript>
+(function(){
+var playdiv = $('#play_8');
+var t = i = 0, c = clas("playShow").find('a').size();
+for(ii=1;ii<=c;ii++){
+clas("playNum").append('<a>'+ii+'</a>');
+}
+showImg();
+clas('playNum').find('a').click(function(){
+i =   clas('playNum').find('a').index(this);
+showImg();									 									 
+});
+t = setInterval(showImg, 5000);
+playdiv.hover( function(){ clearInterval(t);}, function(){ t = setInterval(showImg, 5000);});
+function clas(className){
+return playdiv.find('.'+className);
+}
+function showImg(){
+clas('playNum').find('a').eq(i).siblings().css({"background":"#D7D6D7",'color':'#000'}).end().css({"background":"#FFD116",'color':'#A8471C'});
+clas("playText").html(clas("playShow").find('a').eq(i).find('img').attr('alt'));
+clas("playShow").find('a').eq(i).siblings().hide().end().fadeIn(1200);
+
+i++;
+if(i==c){i =0;}
+}
+
+})();
+</script>
+</div>
+<div class="clear"></div>
+<div class="index_tabnew01 common_mbottom">
+<table width="100%" cellspacing="0" border="0" id="tab_menu_title" class="tab_menu_title">
+<tbody><tr>
+<!-- <td  id="tab_menu_title_1" onmouseover="changeTabMenu(1)" class="choose"><span class="word">学校通知</span>&nbsp;</td>
+<td  width="10px">&nbsp;</td>
+-->
+<td  id="tab_menu_title_2" onmouseover="changeTabMenu(2)" class="choose"><span class="word">校园快讯</span>&nbsp;</td>
+<td  width="10px">&nbsp;</td>
+<!--<td  id="tab_menu_title_3" onmouseover="changeTabMenu(3)" class="unchoose"><span class="word"></span>&nbsp;</td>
+<td  width="10px">&nbsp;</td>-->
+<td class="xline" style="text-align:right"></td>
+<td  width="10px">&nbsp;</td>
+</tr>
+</tbody></table>
+<div class="clear"></div>
+<div class="index_tab_content">
+<div id="index_tab_content_1" style="display: block;">
+<ul class="label_dotlist_7 label_ul_s" style="font-size:12px;color:#454545;">
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-05-22]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-964.shtml" target="_blank" title="弘扬五四精神 践行青春誓言">弘扬五四精神 践行青春誓言</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-05-21]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-962.shtml" target="_blank" title="缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道">缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-05-21]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-958.shtml" target="_blank" title="北医附中第三届科技嘉年华活动圆满成功！">北医附中第三届科技嘉年华活动圆满成功！</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-05-10]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-955.shtml" target="_blank" title="科技嘉年华精彩纷呈">科技嘉年华精彩纷呈</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-04-20]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-952.shtml" target="_blank" title="树立安全意识，确保校园平安 ——记北医附中安全教育日防恐疏散演习暨法制副校长聘任仪式">树立安全意识，确保校园平安 ——记北医附中安全教育日防恐疏散演...</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-04-17]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-949.shtml" target="_blank" title="北医附中第三届科技嘉年华开幕了">北医附中第三届科技嘉年华开幕了</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-04-17]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-946.shtml" target="_blank" title="奋斗百天，吹响冲锋的号角 ——记2018届中考誓师大会">奋斗百天，吹响冲锋的号角 ——记2018届中考誓师大会</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-04-16]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-943.shtml" target="_blank" title="拼搏正当时——记北医附中2018高考誓师大会">拼搏正当时——记北医附中2018高考誓师大会</a>
+</li>
+<li class="clear"></li>
+</ul></div>
+<div id="index_tab_content_2" style="display: none;" >
+<ul class="label_dotlist_13 label_ul_s" style="font-size:12px;color:#454545;">
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-05-22]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-964.shtml" target="_blank" title="弘扬五四精神 践行青春誓言">弘扬五四精神 践行青春誓言</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-05-21]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-962.shtml" target="_blank" title="缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道">缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-05-21]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-958.shtml" target="_blank" title="北医附中第三届科技嘉年华活动圆满成功！">北医附中第三届科技嘉年华活动圆满成功！</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-05-10]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-955.shtml" target="_blank" title="科技嘉年华精彩纷呈">科技嘉年华精彩纷呈</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-04-20]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-952.shtml" target="_blank" title="树立安全意识，确保校园平安 ——记北医附中安全教育日防恐疏散演习暨法制副校长聘任仪式">树立安全意识，确保校园平安 ——记北医附中安全教育日防恐疏散演...</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-04-17]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-949.shtml" target="_blank" title="北医附中第三届科技嘉年华开幕了">北医附中第三届科技嘉年华开幕了</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-04-17]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-946.shtml" target="_blank" title="奋斗百天，吹响冲锋的号角 ——记2018届中考誓师大会">奋斗百天，吹响冲锋的号角 ——记2018届中考誓师大会</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-04-16]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-943.shtml" target="_blank" title="拼搏正当时——记北医附中2018高考誓师大会">拼搏正当时——记北医附中2018高考誓师大会</a>
+</li>
+<li class="clear"></li>
+</ul></div>
+<!--<div id="index_tab_content_3" style="display: none;" ></div>-->
+</div>
+<script language="javascript">
+function changeTabMenu(me){
+for(var i=1;i<=2;i++){
+document.getElementById('tab_menu_title_'+i).className='unchoose';	
+document.getElementById('index_tab_content_'+i).style.display='none';	
+}
+document.getElementById('tab_menu_title_'+me).className='choose';
+document.getElementById('index_tab_content_'+me).style.display='block';		
+}
+</script>
+</div>
+<div class="index_tabnew02 common_mbottom">
+<table width="100%" cellspacing="0" border="0" id="tab_menu2_title" class="tab_menu_title">
+<tbody><tr>
+<td  id="tab_menu2_title_1" onmouseover="changeTabMenu2(1)" class="choose"><span class="word">德育教育</span>&nbsp;</td>
+<td  width="10px">&nbsp;</td>
+<td  id="tab_menu2_title_2" onmouseover="changeTabMenu2(2)" class="unchoose"><span class="word">教学天地</span>&nbsp;</td>
+<td  width="10px">&nbsp;</td>
+<!--<td  id="tab_menu2_title_3" onmouseover="changeTabMenu2(3)" class="unchoose"><span class="word"></span>&nbsp;</td>-->
+<td  width="10px">&nbsp;</td>
+<td class="xline" style="text-align:right"></td>
+<td  width="10px">&nbsp;</td>
+</tr>
+</tbody></table>
+<div class="index_tab_content">
+<div id="index_tab2_content_1" style="display: block;">
+<ul class="label_dotlist_37 label_ul_s" style="font-size:12px;color:#454545;">
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-05-22]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-963.shtml" target="_blank" title="弘扬五四精神 践行青春誓言">弘扬五四精神 践行青春誓言</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-05-21]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-957.shtml" target="_blank" title="北医附中第三届科技嘉年华活动圆满成功！">北医附中第三届科技嘉年华活动圆满成功！</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-05-21]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-960.shtml" target="_blank" title="缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道">缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-05-10]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-954.shtml" target="_blank" title="科技嘉年华精彩纷呈">科技嘉年华精彩纷呈</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-04-20]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-951.shtml" target="_blank" title="树立安全意识，确保校园平安 ——记北医附中安全教育日防恐疏散演习暨法制副校长聘任仪式">树立安全意识，确保校园平安 ——记北医附中安全教育日防恐疏散</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-04-17]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-948.shtml" target="_blank" title="北医附中第三届科技嘉年华开幕了">北医附中第三届科技嘉年华开幕了</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-04-17]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-945.shtml" target="_blank" title="奋斗百天，吹响冲锋的号角 ——记2018届中考誓师大会">奋斗百天，吹响冲锋的号角 ——记2018届中考誓师大会</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-04-16]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-941.shtml" target="_blank" title="拼搏正当时——记北医附中2018高考誓师大会">拼搏正当时——记北医附中2018高考誓师大会</a>
+</li>
+<li class="clear"></li>
+</ul></div>
+<div id="index_tab2_content_2" style="display: none;" >
+<ul class="label_dotlist_95 label_ul_s" style="font-size:12px;color:#454545;">
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-03-21]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-929.shtml" target="_blank" title="学习与收获 ——记北医附中“风采杯”教学论文写作培训">学习与收获 ——记北医附中“风采杯”教学论文写作培训</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2018-01-02]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-905.shtml" target="_blank" title="寒冬悦读时 ——记北医附中语文教研组“《边城》悦读研讨会”活动">寒冬悦读时 ——记北医附中语文教研组“《边城》悦读研讨会”活动</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2017-12-25]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-902.shtml" target="_blank" title="北医附中向着“新优质”学校迈进！——海淀区“新优质”学校建设项目专家走进北医附中调研指导">北医附中向着“新优质”学校迈进！——海淀区“新优质”学校建设</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2017-12-15]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-900.shtml" target="_blank" title="北大附中教育集团双螺旋杯中学生生化实验竞赛决赛帷幕已拉开，就等你来！">北大附中教育集团双螺旋杯中学生生化实验竞赛决赛帷幕已拉开，就</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2017-12-06]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-887.shtml" target="_blank" title="《数学好玩，玩好数学》 多校联动 专家引领 共促师生成长 --北大附中特级教师张思明老师课堂教学开放活动">《数学好玩，玩好数学》 多校联动 专家引领 共促师生成长 --北大</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2017-12-04]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-886.shtml" target="_blank" title="等 你 来 参 加——北大附中教育集团双螺旋杯生化实验竞赛热线报名中">等 你 来 参 加——北大附中教育集团双螺旋杯生化实验竞赛热线报</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2017-11-07]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-848.shtml" target="_blank" title="医学影像诊断仪器的秘密——“化学与生物全景探索”校本课程系列讲座">医学影像诊断仪器的秘密——“化学与生物全景探索”校本课程系列</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#666;font-size:12px;">[2017-07-07]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-813.shtml" target="_blank" title="感悟皇家建筑的魅力与大气---“文化魔方·少年行”综合实践活动系列报道之“皇城遗存”项目">感悟皇家建筑的魅力与大气---“文化魔方·少年行”综合实践活动系</a>
+</li>
+<li class="clear"></li>
+</ul></div>
+<!--<div id="index_tab2_content_3" style="display: none;" ></div>-->
+</div>
+<script language="javascript">
+function changeTabMenu2(me){
+for(var i=1;i<=2;i++){
+document.getElementById('tab_menu2_title_'+i).className='unchoose';	
+document.getElementById('index_tab2_content_'+i).style.display='none';	
+}
+document.getElementById('tab_menu2_title_'+me).className='choose';
+document.getElementById('index_tab2_content_'+me).style.display='block';		
+}
+</script>
+</div>
+</div>
+<!--中间框架结束-->
+
+<!--右侧框架开始-->
+<div class="index_right">
+<div class="notice common_mbottom">
+<div class="sb1_head">
+<span class="tt_h3_title">校园动态</span>
+</div>
+<div class="sb1_main">
+<div class="inner"><div class="txt">
+<ul class="label_dotlist_6 label_ul_s" style="font-size:12px;color:#454545;">
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#656668;font-size:12px;">[05-22]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-964.shtml" target="_blank" title="弘扬五四精神 践行青春誓言">弘扬五四精神 践行青春誓</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#656668;font-size:12px;">[05-22]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-963.shtml" target="_blank" title="弘扬五四精神 践行青春誓言">弘扬五四精神 践行青春誓</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#656668;font-size:12px;">[05-21]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-962.shtml" target="_blank" title="缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道">缅怀先烈，追忆长征 ——</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#656668;font-size:12px;">[05-21]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-958.shtml" target="_blank" title="北医附中第三届科技嘉年华活动圆满成功！">北医附中第三届科技嘉年华</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#656668;font-size:12px;">[05-21]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-957.shtml" target="_blank" title="北医附中第三届科技嘉年华活动圆满成功！">北医附中第三届科技嘉年华</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#656668;font-size:12px;">[05-21]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-960.shtml" target="_blank" title="缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道">缅怀先烈，追忆长征 ——</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#656668;font-size:12px;">[05-10]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-955.shtml" target="_blank" title="科技嘉年华精彩纷呈">科技嘉年华精彩纷呈</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#656668;font-size:12px;">[05-10]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-954.shtml" target="_blank" title="科技嘉年华精彩纷呈">科技嘉年华精彩纷呈</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#656668;font-size:12px;">[04-20]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-952.shtml" target="_blank" title="树立安全意识，确保校园平安 ——记北医附中安全教育日防恐疏散演习暨法制副校长聘任仪式">树立安全意识，确保校园平</a>
+</li>
+<li class="label_dottitle">
+<span class="label_datatime" style="color:#656668;font-size:12px;">[04-20]</span>·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-951.shtml" target="_blank" title="树立安全意识，确保校园平安 ——记北医附中安全教育日防恐疏散演习暨法制副校长聘任仪式">树立安全意识，确保校园平</a>
+</li>
+<li class="clear"></li>
+</ul></div></div>
+</div>
+</div>
+<div class="index_box_1 common_mbottom">
+<div class="sb1_head">
+<span class="more"></span><span class="learning_title">党建工会</span>
+</div>
+<div class="sb1_main">
+<div class="inner"><div class="txt">
+<ul class="label_dotlist_97 label_ul_s" style="font-size:12px;color:#454545;">
+<li class="label_dottitle">
+·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-918.shtml" target="_blank" title="“3.8”节让女教师遇见更美的自己">“3.8”节让女教师遇见更美的自己</a>
+</li>
+<li class="label_dottitle">
+·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-845.shtml" target="_blank" title="用“甜蜜的行动”喜迎十九大——记北医附中工会活动">用“甜蜜的行动”喜迎十九大——</a>
+</li>
+<li class="label_dottitle">
+·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-810.shtml" target="_blank" title="用心  用情  用智——高二工会小组活动盘点">用心  用情  用智——高二工会小</a>
+</li>
+<li class="label_dottitle">
+·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-808.shtml" target="_blank" title="教务处工会小组活动">教务处工会小组活动</a>
+</li>
+<li class="label_dottitle">
+·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-806.shtml" target="_blank" title="关爱和工作两不误_——初二工会小组活动纪实">关爱和工作两不误_——初二工会小</a>
+</li>
+<li class="label_dottitle">
+·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-807.shtml" target="_blank" title="“快乐工作  健康生活”——行政工会小组活动侧记">“快乐工作  健康生活”——行政</a>
+</li>
+<li class="label_dottitle">
+·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-800.shtml" target="_blank" title="“我在城市低碳出行，树在西北快快长成”——高一工会小组活动">“我在城市低碳出行，树在西北快</a>
+</li>
+<li class="label_dottitle">
+·<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-797.shtml" target="_blank" title="北医附中2017女人节系列活动特别报道——最美的花献给最美的你">北医附中2017女人节系列活动特别</a>
+</li>
+<li class="clear"></li>
+</ul></div></div>
+</div>
+</div>
+
+<div class="ad_box common_mbottom">
+<a href="http://www.bjwmb.gov.cn/zt/2014/hdhxjzg" target="_blank" title="社会主义核心价值观" style="text-decoration:none;"><img width="222" height="132" border="none" alt="社会主义核心价值观" src="http://www.byfz.bjedu.cn/attachment/core/label/2015_05/03_18/1a53a523c7e0ca32.jpg" /></a>
+</div>
+<div class="index_box_1 common_mbottom">
+<div class="sb1_head">
+<span class="more"></span><span class="learning_title">北医附中微信公众号</span>
+</div>
+<div class="sb1_main">
+<div class="inner"><div class="txt"><div style="text-align: center"><img alt="微信公众号.jpg" src="http://www.byfz.bjedu.cn/attachment/core/label/2015_06/29_00/3e53019dc2d5b326.jpg" style="height: 108px; width: 108px" /></div></div></div>
+</div>
+</div>
+</div>
+<!--右侧框架结束-->
+
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+
+<!--下侧滚动图片-->
+<div class="index_tab_pic common_mbottom">
+<div class="photo_header">
+<div class="photo_header1">
+<div id="tab_menu3_title" class="photo_header2">
+<div class="more1"></div>
+<div id="tab_menu3_title_1" class="choose"><span class="word">学校图片</span>&nbsp;</div>
+<!--<div id="tab_menu3_title_2" onmouseover="changeTabMenu3(2)" class="unchoose"><span class="word">]</span>&nbsp;</div>
+<div id="tab_menu3_title_3" onmouseover="changeTabMenu3(3)" class="unchoose"><span class="word"></span>&nbsp;</div>
+<div id="tab_menu3_title_4" onmouseover="changeTabMenu3(4)" class="unchoose"><span class="word"></span>&nbsp;</div>-->
+</div>
+
+</div>
+</div>
+<div class="clear"></div>
+
+<div class="index_tab_content">
+<div id="index_tab3_content_1" style="display: block;">
+<div class="layer" style="height:160px;width:960px;overflow:hidden" id="pingpaibox_9">
+<div id="scroll_9" style="width:800%">
+<ul class="label_pic_ul" id="pingpai_9" style="float:left;height:160px;">
+<li style="float:left;display:inline-block; margin-right:5px">
+<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-963?verified=1" target="_blank" title="弘扬五四精神 践行青春誓言"><img width="160" height="160" alt="弘扬五四精神 践行青春誓言" onload="this.height=this.width-30" src="http://www.byfz.bjedu.cn/attachment/cms/item/2018_05/22_12/92e993383437d45f.jpg" /></a>
+<p class="label_pic_title2 center" style="width:160px;"><a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-963?verified=1" target="_blank" title="弘扬五四精神 践行青春誓言">弘扬五四精神 践行青春誓</a></p>
+</li>
+<li style="float:left;display:inline-block; margin-right:5px">
+<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-964.shtml" target="_blank" title="弘扬五四精神 践行青春誓言"><img width="160" height="160" alt="弘扬五四精神 践行青春誓言" onload="this.height=this.width-30" src="http://www.byfz.bjedu.cn/attachment/cms/item/2018_05/22_12/1d74faa5c940f607.jpg.cthumb.jpg" /></a>
+<p class="label_pic_title2 center" style="width:160px;"><a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-964.shtml" target="_blank" title="弘扬五四精神 践行青春誓言">弘扬五四精神 践行青春誓</a></p>
+</li>
+<li style="float:left;display:inline-block; margin-right:5px">
+<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-963.shtml" target="_blank" title="弘扬五四精神 践行青春誓言"><img width="160" height="160" alt="弘扬五四精神 践行青春誓言" onload="this.height=this.width-30" src="http://www.byfz.bjedu.cn/attachment/cms/item/2018_05/22_12/1d74faa5c940f607.jpg.cthumb.jpg" /></a>
+<p class="label_pic_title2 center" style="width:160px;"><a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-963.shtml" target="_blank" title="弘扬五四精神 践行青春誓言">弘扬五四精神 践行青春誓</a></p>
+</li>
+<li style="float:left;display:inline-block; margin-right:5px">
+<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-962.shtml" target="_blank" title="缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道"><img width="160" height="160" alt="缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道" onload="this.height=this.width-30" src="http://www.byfz.bjedu.cn/attachment/cms/item/2018_05/21_13/f9be77f1f57353cd.jpg.cthumb.jpg" /></a>
+<p class="label_pic_title2 center" style="width:160px;"><a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-962.shtml" target="_blank" title="缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道">缅怀先烈，追忆长征 ——</a></p>
+</li>
+<li style="float:left;display:inline-block; margin-right:5px">
+<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-960.shtml" target="_blank" title="缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道"><img width="160" height="160" alt="缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道" onload="this.height=this.width-30" src="http://www.byfz.bjedu.cn/attachment/cms/item/2018_05/21_13/4a66bed58ab51964.jpg" /></a>
+<p class="label_pic_title2 center" style="width:160px;"><a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-960.shtml" target="_blank" title="缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道">缅怀先烈，追忆长征 ——</a></p>
+</li>
+<li style="float:left;display:inline-block; margin-right:5px">
+<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-960.shtml" target="_blank" title="缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道"><img width="160" height="160" alt="缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道" onload="this.height=this.width-30" src="http://www.byfz.bjedu.cn/attachment/cms/item/2018_05/21_13/f9be77f1f57353cd.jpg.cthumb.jpg" /></a>
+<p class="label_pic_title2 center" style="width:160px;"><a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-960.shtml" target="_blank" title="缅怀先烈，追忆长征 ——北医附中高二年级一日研学活动报道">缅怀先烈，追忆长征 ——</a></p>
+</li>
+<li style="float:left;display:inline-block; margin-right:5px">
+<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-957.shtml" target="_blank" title="北医附中第三届科技嘉年华活动圆满成功！"><img width="160" height="160" alt="北医附中第三届科技嘉年华活动圆满成功！" onload="this.height=this.width-30" src="http://www.byfz.bjedu.cn/attachment/cms/item/2018_05/21_13/7a22f2fdffea60ab.jpg" /></a>
+<p class="label_pic_title2 center" style="width:160px;"><a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-957.shtml" target="_blank" title="北医附中第三届科技嘉年华活动圆满成功！">北医附中第三届科技嘉年华</a></p>
+</li>
+<li style="float:left;display:inline-block; margin-right:5px">
+<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-958.shtml" target="_blank" title="北医附中第三届科技嘉年华活动圆满成功！"><img width="160" height="160" alt="北医附中第三届科技嘉年华活动圆满成功！" onload="this.height=this.width-30" src="http://www.byfz.bjedu.cn/attachment/cms/item/2018_05/21_13/5fbb079d5deda321.jpg.cthumb.jpg" /></a>
+<p class="label_pic_title2 center" style="width:160px;"><a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-958.shtml" target="_blank" title="北医附中第三届科技嘉年华活动圆满成功！">北医附中第三届科技嘉年华</a></p>
+</li>
+<li style="float:left;display:inline-block; margin-right:5px">
+<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-957.shtml" target="_blank" title="北医附中第三届科技嘉年华活动圆满成功！"><img width="160" height="160" alt="北医附中第三届科技嘉年华活动圆满成功！" onload="this.height=this.width-30" src="http://www.byfz.bjedu.cn/attachment/cms/item/2018_05/21_13/5fbb079d5deda321.jpg.cthumb.jpg" /></a>
+<p class="label_pic_title2 center" style="width:160px;"><a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-957.shtml" target="_blank" title="北医附中第三届科技嘉年华活动圆满成功！">北医附中第三届科技嘉年华</a></p>
+</li>
+<li style="float:left;display:inline-block; margin-right:5px">
+<a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-954.shtml" target="_blank" title="科技嘉年华精彩纷呈"><img width="160" height="160" alt="科技嘉年华精彩纷呈" onload="this.height=this.width-30" src="http://www.byfz.bjedu.cn/attachment/cms/item/2018_05/10_12/e3848912d525ce91.jpg" /></a>
+<p class="label_pic_title2 center" style="width:160px;"><a href="http://www.byfz.bjedu.cn/index.php/cms/item-view-id-954.shtml" target="_blank" title="科技嘉年华精彩纷呈">科技嘉年华精彩纷呈</a></p>
+</li>
+</ul>
+<ul class="fleft" id="pingpaicopy_9"  style="float:left;height:160px;"></ul>
+</div>
+<script type="text/javascript">
+(function(){
+var ln = $('#pingpai_9').find('li').length;
+var w = ln*2*(160+10);
+$('#scroll_9').width(w);
+$('#pingpaicopy_9').html($('#pingpai_9').html());
+var MyMar=setInterval(Marquee,20); 
+$('#scroll_9').hover( function(){ clearInterval(MyMar) }, function(){ MyMar=setInterval(Marquee,20) } );
+function Marquee(){var tab=$('#pingpaibox_9')[0], tab1=$('#pingpai_9')[0],tab2=$('#pingpaicopy_9')[0];
+if(tab2.offsetWidth-tab.scrollLeft<=0)tab.scrollLeft-= tab1.offsetWidth;else{tab.scrollLeft++;}
+$('#tab').html(tab.scrollLeft);
+$('#tab1').html(tab1.offsetWidth);
+$('#tab2').html(tab2.offsetWidth);
+}
+})()
+</script>
+</div></div>
+<!--<div id="index_tab3_content_2" style="display: none;" ></div>
+<div id="index_tab3_content_3" style="display: none;" ></div>
+<div id="index_tab3_content_4" style="display: none;" ></div>-->
+
+</div>
+<div class="photo_bot"></div>
+<script language="javascript">
+function changeTabMenu3(me){
+for(var i=1;i<=4;i++){
+document.getElementById('tab_menu3_title_'+i).className='unchoose';	
+document.getElementById('index_tab3_content_'+i).style.display='none';	
+}
+document.getElementById('tab_menu3_title_'+me).className='choose';
+document.getElementById('index_tab3_content_'+me).style.display='block';		
+}
+</script>
+</div>
+<div class="clear"></div><div class="frindlink">
+<a target="_blank" href="http://www.byfz.bjedu.cn/index.php/forms-post?mid=1">电教预约</a><span>&nbsp;|&nbsp;</span><a target="_blank" href="http://58.118.80.210">照片视频库</a><span>&nbsp;<span>|&nbsp;</span><a target="_blank" href="ftp://58.118.80.1">学校FTP系统</a><span>&nbsp;</span></span><span>|&nbsp;</span><a target="_blank" href="http://58.118.80.5/cmis40">CMIS校级平台</a><span>&nbsp;</span><span>|&nbsp;</span><a target="_blank" href="http://58.118.80.5/qasss">高中综合素质评价</a><span>&nbsp;|&nbsp;</span><a target="_blank" href="http://cmis.bjedu.cn/">CMIS云平台</a><span>&nbsp;|&nbsp;</span><a target="_blank" href="http://www.hdyxw.org/">海淀教研网</a><span>&nbsp;|&nbsp;</span><a target="_blank" href="http://www.zxxk.com/">中学学科网 </a><span>&nbsp;|&nbsp;</span><a target="_blank" href="http://www.byfz.bjedu.cn/byfz.php">校园网系统</a>
+</div>
+<div id="footer">
+<ul>
+<li>北京医学院附属中学（北大附中承办） 地址：北京市海淀区花园北路40号 电话：62017327 网管邮箱：beiyifuzhong@126.com</li>
+<li>北医附中网站管理系统</li>
+<li><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254873745'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254873745%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/01/008/0000/60735420/CA010080000607354200005.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</li>
+</ul>
+</div>
+</div>
+<script type="text/javascript" src="http://www.byfz.bjedu.cn/modules/46/js/0/1.js.php"></script>
+</body></html>

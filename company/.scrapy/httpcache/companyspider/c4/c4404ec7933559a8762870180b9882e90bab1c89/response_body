@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<title>江西旅游商贸职业学院</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<!--header开始-->
+<header class="wraq_header">
+  <div class="header_Collection">
+    <div class="header_CollectionIn">
+      <div class="Propaganda"> 
+ <span>江西省示范性高职院校</span><span>国家优质高职立项建设院校</span><span>江西省人民政府与国家部委省部共建院校</span><span>中华全国供销合作总社示范性高职院校    江西省唯一旅游商贸类高职院校</span>
+ </div>
+      <div class="Collection">
+        <ul>
+          <li><a href="http://202.109.191.11/" target="_blank">旧版入口</a></li>
+          <li><a href="#">统一门户</a></li>
+          <li><a href="#">收藏主页</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header  pr">
+    <div class="logo"><a href="index.htm"><img src="images/logo_03.png"></a></div>
+    <div class="ser pa" id="ser">
+      <form name="dataForm" class="search" action="/cms/search/searchResults.jsp" target="_blank" method="post" accept-charset="utf-8" onSubmit="document.charset='utf-8';">
+        <input name="siteID" value="4" type ="hidden">
+        <input class="notxt" value="请输入关键字" name="query" type="text" id="keywords" onFocus="if(value==defaultValue){value='';}" onBlur="if(!value){value=defaultValue;}"
+                             onclick="if(this.value==''){this.value='';this.form.keywords.style.color='#444'}">
+        <input class="notxt1" name="Submit" type="submit" value="" />
+      </form>
+    </div>
+    <div class="top_link">
+      <ul>
+        <li class="li01"><a href="ks/index.htm" target="_blank">考生</a></li>
+        <li class="li02"><a href="zxs/index.htm" target="_blank">在校生</a></li>
+        <li class="li03"><a href="jzg/index.htm" target="_blank">教职工</a></li>
+        <li class="li04"><a href="xy/index.htm" target="_blank">校友</a></li>
+        <li class="li05"><a href="mh/index.htm" target="_blank">门户</a></li>
+      </ul>
+    </div>
+    <!-- 移动端主导航 -->
+    <section class="snav pa">
+      <section id="mbtn" class="mbtn pa"><img src="images/btn01.jpg" /><span>导航</span></section>
+      <div class="links01"> <a class="btn_ser01"> <img src="images/sea_btn.png" id="btn_ser01">
+        <div class="ser01 pa" id="ser01">
+          <form name="dataForm" class="search" action="/cms/search/searchResults.jsp" target="_blank" method="post" accept-charset="utf-8" onSubmit="document.charset='utf-8';">
+            <input name="siteID" value="4" type ="hidden">
+            <input class="notxt" value="请输入关键字" name="query" type="text" id="keywords" onFocus="if(value==defaultValue){value='';}" onBlur="if(!value){value=defaultValue;}"
+                             onclick="if(this.value==''){this.value='';this.form.keywords.style.color='#444'}">
+            <input class="notxt1" name="Submit" type="submit" value="" />
+          </form>
+        </div>
+        </a> </div>
+      <div class="navm pa">
+        <ul>
+          <li class="sub_has"><a href="index.htm">首页</a></li>
+                              <li><a href="xxgk/index.htm" >学校概况</a>
+            <div class="subNav">
+              <dl>
+                                <dd><a href="xxgk/xxjj/index.htm">学校简介</a></dd>
+                                <dd><a href="xxgk/xrld/index.htm">现任领导</a></dd>
+                                <dd><a href="xxgk/xyfm/index.htm">校园风貌</a></dd>
+                                <dd><a href="xxgk/dzdt/index.htm">电子地图</a></dd>
+                                <dd><a href="xxgk/xxxzp/index.htm">学校宣传片</a></dd>
+                                <dd><a href="xxgk/lssn/index.htm">旅商十年</a></dd>
+                              </dl>
+            </div>
+          </li>
+                                        <li><a href="jgsz/index.htm" >机构设置</a>
+            <div class="subNav">
+              <dl>
+                                <dd><a href="jgsz/dqbm/index.htm">党群部门</a></dd>
+                                <dd><a href="jgsz/xzbm/index.htm">行政部门</a></dd>
+                                <dd><a href="jgsz/jxbm/index.htm">教学部门</a></dd>
+                              </dl>
+            </div>
+          </li>
+                                        <li><a href="djsc/index.htm" >党建视窗</a>
+            <div class="subNav">
+              <dl>
+                                <dd><a href="http://202.109.191.4/jc">纪检监察</a></dd>
+                                <dd><a href="http://xcb.jxlsxy.com/">党委宣传</a></dd>
+                                <dd><a href="http://rsc.jxlsxy.com/">组织人事</a></dd>
+                                <dd><a href="http://www.jxlsxy.com/lxyz/index.asp">两学一做</a></dd>
+                                <dd><a href="djsc/1/index.htm"> </a></dd>
+                              </dl>
+            </div>
+          </li>
+                                        <li><a href="jxky/index.htm" >教学科研</a>
+            <div class="subNav">
+              <dl>
+                                <dd><a href="http://202.109.191.4/jwc/Html/Main.asp">教务处</a></dd>
+                                <dd><a href="http://kyc.jxlsxy.com/">科研处</a></dd>
+                                <dd><a href="http://jxlj.jxlsxy.com/">旅游职教集团</a></dd>
+                                <dd><a href="http://202.109.191.4/lyfzyjs">旅游发展研究所</a></dd>
+                                <dd><a href="http://202.109.191.4/xb/">职教研究所</a></dd>
+                                <dd><a href="http://202.109.191.4/jxdd/">教学监督委员会</a></dd>
+                                <dd><a href="http://202.109.191.4/szjxb/">思想品德教学部</a></dd>
+                                <dd><a href="http://modernedu.jxlsxy.com/">现代教育技术中心</a></dd>
+                                <dd><a href="jxky/gxxzw/index.htm">供销行指委</a></dd>
+                                <dd><a href="jxky/zyfwcyzl/index.htm">专业服务产业专栏</a></dd>
+                                <dd><a href="http://">精品课程</a></dd>
+                                <dd><a href="jxky/jxzyk/index.htm">教学资源库</a></dd>
+                              </dl>
+            </div>
+          </li>
+                                        <li><a href="zsjy/index.htm" >招生就业</a>
+            <div class="subNav">
+              <dl>
+                                <dd><a href="http://zsb.jxlsxy.com">招生在线</a></dd>
+                                <dd><a href="http://xgxt.jxlsxy.com/JYXX/Index.html">就业信息</a></dd>
+                                <dd><a href="http://202.109.191.4/jxjy/">继续教育</a></dd>
+                                <dd><a href="zsjy/2/index.htm">  </a></dd>
+                              </dl>
+            </div>
+          </li>
+                                        <li><a href="xytd/index.htm" >学院通道</a>
+            <div class="subNav">
+              <dl>
+                                <dd><a href="http://lyfy.jxlsxy.com/">旅游学院</a></dd>
+                                <dd><a href="http://jgfy.jxlsxy.com/">经济管理学院</a></dd>
+                                <dd><a href="http://kjfy.jxlsxy.com/">会计金融学院</a></dd>
+                                <dd><a href="http://jd.jxlsxy.com/">机电与建筑工程学院</a></dd>
+                                <dd><a href="http://gjsw.jxlsxy.com">国际商务学院</a></dd>
+                                <dd><a href="http://tyxy.jxlsxy.com">体育学院</a></dd>
+                                <dd><a href="http://art.jxlsxy.com/">艺术传媒与计算机学院</a></dd>
+                                <dd><a href="xytd/3/index.htm"> </a></dd>
+                              </dl>
+            </div>
+          </li>
+                                        <li><a href="xyk/index.htm" >校友会</a></li>
+                                        <li><a href="cxcyjy/index.htm" >创新创业教育</a></li>
+                                        <li><a href="xxfw/index.htm" >信息服务</a>
+            <div class="subNav">
+              <dl>
+                                <dd><a href="xxfw/ldxx/index.htm">领导信箱</a></dd>
+                                <dd><a href="http://modernedu.jxlsxy.com/">网络服务</a></dd>
+                                <dd><a href="http://tsg.jxlsxy.com/">图书馆</a></dd>
+                                <dd><a href="xxfw/lxfs/index.htm">联系方式</a></dd>
+                                <dd><a href="xxfw/xlcx/index.htm">校历查询</a></dd>
+                                <dd><a href="xxfw/xjlx/index.htm">校车路线</a></dd>
+                                <dd><a href="xxfw/glcx/index.htm">各类查询</a></dd>
+                                <dd><a href="xxfw/zllj/index.htm">专栏链接</a></dd>
+                              </dl>
+            </div>
+          </li>
+                            </ul>
+      </div>
+    </section>
+  </div>
+  <div class="nav01 pa">
+    <ul id="nav">
+      <li><a href="index.htm">首页</a></li>
+                  <li><a href="xxgk/index.htm" >学校概况</a>
+        <div class="subNav">
+          <dl>
+                        <dd><a href="xxgk/xxjj/index.htm">学校简介</a></dd>
+                        <dd><a href="xxgk/xrld/index.htm">现任领导</a></dd>
+                        <dd><a href="xxgk/xyfm/index.htm">校园风貌</a></dd>
+                        <dd><a href="xxgk/dzdt/index.htm">电子地图</a></dd>
+                        <dd><a href="xxgk/xxxzp/index.htm">学校宣传片</a></dd>
+                        <dd><a href="xxgk/lssn/index.htm">旅商十年</a></dd>
+                      </dl>
+        </div>
+      </li>
+                        <li><a href="jgsz/index.htm" >机构设置</a>
+        <div class="subNav">
+          <dl>
+                        <dd><a href="jgsz/dqbm/index.htm">党群部门</a></dd>
+                        <dd><a href="jgsz/xzbm/index.htm">行政部门</a></dd>
+                        <dd><a href="jgsz/jxbm/index.htm">教学部门</a></dd>
+                      </dl>
+        </div>
+      </li>
+                        <li><a href="djsc/index.htm" >党建视窗</a>
+        <div class="subNav">
+          <dl>
+                        <dd><a href="http://202.109.191.4/jc">纪检监察</a></dd>
+                        <dd><a href="http://xcb.jxlsxy.com/">党委宣传</a></dd>
+                        <dd><a href="http://rsc.jxlsxy.com/">组织人事</a></dd>
+                        <dd><a href="http://www.jxlsxy.com/lxyz/index.asp">两学一做</a></dd>
+                        <dd><a href="djsc/1/index.htm"> </a></dd>
+                      </dl>
+        </div>
+      </li>
+                        <li><a href="jxky/index.htm" >教学科研</a>
+        <div class="subNav">
+          <dl>
+                        <dd><a href="http://202.109.191.4/jwc/Html/Main.asp">教务处</a></dd>
+                        <dd><a href="http://kyc.jxlsxy.com/">科研处</a></dd>
+                        <dd><a href="http://jxlj.jxlsxy.com/">旅游职教集团</a></dd>
+                        <dd><a href="http://202.109.191.4/lyfzyjs">旅游发展研究所</a></dd>
+                        <dd><a href="http://202.109.191.4/xb/">职教研究所</a></dd>
+                        <dd><a href="http://202.109.191.4/jxdd/">教学监督委员会</a></dd>
+                        <dd><a href="http://202.109.191.4/szjxb/">思想品德教学部</a></dd>
+                        <dd><a href="http://modernedu.jxlsxy.com/">现代教育技术中心</a></dd>
+                        <dd><a href="jxky/gxxzw/index.htm">供销行指委</a></dd>
+                        <dd><a href="jxky/zyfwcyzl/index.htm">专业服务产业专栏</a></dd>
+                        <dd><a href="http://">精品课程</a></dd>
+                        <dd><a href="jxky/jxzyk/index.htm">教学资源库</a></dd>
+                      </dl>
+        </div>
+      </li>
+                        <li><a href="zsjy/index.htm" >招生就业</a>
+        <div class="subNav">
+          <dl>
+                        <dd><a href="http://zsb.jxlsxy.com">招生在线</a></dd>
+                        <dd><a href="http://xgxt.jxlsxy.com/JYXX/Index.html">就业信息</a></dd>
+                        <dd><a href="http://202.109.191.4/jxjy/">继续教育</a></dd>
+                        <dd><a href="zsjy/2/index.htm">  </a></dd>
+                      </dl>
+        </div>
+      </li>
+                        <li><a href="xytd/index.htm" >学院通道</a>
+        <div class="subNav">
+          <dl>
+                        <dd><a href="http://lyfy.jxlsxy.com/">旅游学院</a></dd>
+                        <dd><a href="http://jgfy.jxlsxy.com/">经济管理学院</a></dd>
+                        <dd><a href="http://kjfy.jxlsxy.com/">会计金融学院</a></dd>
+                        <dd><a href="http://jd.jxlsxy.com/">机电与建筑工程学院</a></dd>
+                        <dd><a href="http://gjsw.jxlsxy.com">国际商务学院</a></dd>
+                        <dd><a href="http://tyxy.jxlsxy.com">体育学院</a></dd>
+                        <dd><a href="http://art.jxlsxy.com/">艺术传媒与计算机学院</a></dd>
+                        <dd><a href="xytd/3/index.htm"> </a></dd>
+                      </dl>
+        </div>
+      </li>
+                        <li><a href="xyk/index.htm" >校友会</a></li>
+                  <li><a href="cxcyjy/index.htm" >创新创业教育</a></li>
+            				<li><a href="xxfw/index.htm" >信息服务</a>
+				 <div class="subNav pos_left">
+                       	  <dl>
+														<dd><a href="xxfw/ldxx/index.htm">领导信箱</a></dd>
+														<dd><a href="http://modernedu.jxlsxy.com/">网络服务</a></dd>
+														<dd><a href="http://tsg.jxlsxy.com/">图书馆</a></dd>
+														<dd><a href="xxfw/lxfs/index.htm">联系方式</a></dd>
+														<dd><a href="xxfw/xlcx/index.htm">校历查询</a></dd>
+														<dd><a href="xxfw/xjlx/index.htm">校车路线</a></dd>
+														<dd><a href="xxfw/glcx/index.htm">各类查询</a></dd>
+														<dd><a href="xxfw/zllj/index.htm">专栏链接</a></dd>
+													</dl>
+				 </div>
+				</li>
+                </ul>
+  </div>
+</header>
+<!--header结束 -->
+<!--banner开始-->
+<article class="banner">
+  <div class="slide_container">
+    <ul class="rslides" id="slider">
+            <li> <a href="sydt/1790.htm"><img src="images/content/2018-04/20180408095326583175.png"/></a></li>
+            <li> <a href="sydt/1577.htm"><img src="images/content/2018-03/20180321160226554205.png"/></a></li>
+            <li> <a href="sydt/1576.htm"><img src="images/content/2018-03/20180316110828162430.png"/></a></li>
+          </ul>
+  </div>
+</article>
+<!--banner结束 -->
+<!--content开始-->
+<article class="content">
+  <div class="row mode01">
+    <section class="news">
+      <div class="title01"> <span class="more01"><a href="xwtz/index.htm"><img src="images/more_04.png" alt=""></a></span>
+        <h2>旅商要闻 </h2>
+      </div>
+      <div class="newsInfo pr">
+        <div class="news_pic">
+          <div class="flexslider pr">
+            <ul class="slides">
+
+
+ <li><a href="tpxw/20294.htm" title="团校举办第三届丁香花开青年文化艺术节舞蹈风采大赛" style="background-image:url(images/content/2018-05/20180528183751074435.jpg);background-position:left center;" target="_blank">
+                           <span class="til_slides">            团校举办第三届丁香花开青年文化艺术节... 
+    <span class="date">05/28</span></span></a></li>
+
+ <li><a href="tpxw/20204.htm" title="赵恒伯书记赴扶贫点走访慰问贫困户" style="background-image:url(images/content/2018-05/20180525110040500156.jpg);background-position:left center;" target="_blank">
+                           <span class="til_slides">            赵恒伯书记赴扶贫点走访慰问贫困户 
+    <span class="date">05/25</span></span></a></li>
+
+ <li><a href="tpxw/19159.htm" title="国际商务学院获全省高校“亿学杯”商务英语实践技能大赛一等奖" style="background-image:url(images/content/2018-05/20180521164039916342.jpg);background-position:left center;" target="_blank">
+                           <span class="til_slides">            国际商务学院获全省高校“亿学杯”商务... 
+    <span class="date">05/21</span></span></a></li>
+
+ <li><a href="tpxw/19080.htm" title="国家级非物质文化遗产“夏布绣”工作室落户我校" style="background-image:url(images/content/2018-05/20180516115152278624.jpg);background-position:left center;" target="_blank">
+                           <span class="til_slides">            国家级非物质文化遗产“夏布绣”工作室... 
+    <span class="date">05/16</span></span></a></li>
+
+ <li><a href="tpxw/13507.htm" title="体育学院获第三届江西省体育舞蹈锦标赛19金" style="background-image:url(images/content/2018-05/20180509093229091989.jpg);background-position:left center;" target="_blank">
+                           <span class="til_slides">            体育学院获第三届江西省体育舞蹈锦标赛... 
+    <span class="date">05/09</span></span></a></li>
+
+			
+            </ul>
+          </div>
+        </div>
+        <ul class="news_list">
+                         	<li><span>05/28</span><a href="xwtz/lsyw/20293.htm" title="【媒体报道】：江西旅游商贸职院党委书记赴扶贫点走访慰问贫困户" target="_blank">            【媒体报道】：江西旅游商贸职院党委书记赴扶贫... 
+    </a></li>
+					                	<li><span>05/28</span><a href="xwtz/lsyw/20292.htm" title="学校召开信息化建设工作专题会" target="_blank">            学校召开信息化建设工作专题会 
+    </a></li>
+					                	<li><span>05/28</span><a href="xwtz/lsyw/20291.htm" title="心理健康教育与咨询中心开展“健康从心开始，生命因你绽放”心理健康文化节主题活动" target="_blank">            心理健康教育与咨询中心开展“健康从心开始，生... 
+    </a></li>
+					                	<li><span>05/28</span><a href="xwtz/lsyw/20272.htm" title="团委举办第三届丁香花开青年文化艺术节舞蹈风采大赛" target="_blank">            团委举办第三届丁香花开青年文化艺术节舞蹈风采... 
+    </a></li>
+					                	<li><span>05/28</span><a href="xwtz/lsyw/20271.htm" title="学校召开校园环境综合整治工作专题会" target="_blank">            学校召开校园环境综合整治工作专题会 
+    </a></li>
+					                	<li><span>05/25</span><a href="xwtz/lsyw/20203.htm" title="赵恒伯书记赴扶贫点走访慰问贫困户" target="_blank">            赵恒伯书记赴扶贫点走访慰问贫困户 
+    </a></li>
+					                	<li><span>05/24</span><a href="xwtz/lsyw/20201.htm" title="学校召开2018年党委理论学习中心组第6次学习（扩大）会" target="_blank">            学校召开2018年党委理论学习中心组第6次学... 
+    </a></li>
+					                	<li><span>05/24</span><a href="xwtz/lsyw/20200.htm" title="学校获全省高校“诵读红色家书 牢记时代使命”比赛三等奖" target="_blank">            学校获全省高校“诵读红色家书 牢记时代使命”... 
+    </a></li>
+					                	<li><span>05/24</span><a href="xwtz/lsyw/20199.htm" title="学校召开双创大楼规划设计专题交流会" target="_blank">            学校召开双创大楼规划设计专题交流会 
+    </a></li>
+					        </ul>
+      </div>
+      <div> </div>
+    </section>
+    <aside class="notice">
+      <div class="title01"> <span class="more01"><a href="xwtz/index.htm"><img src="images/more_04.png" alt=""></a></span>
+        <h2>通知公告</h2>
+      </div>
+      <ul class="notice_list">
+                        	<li><span>05-28</span><a href="xwtz/tzgg/20287.htm" title="关于学生宿舍墙面维修项目的招标公告" >            关于学生宿舍墙面维修项目的招标公告 
+    </a></li>
+					                	<li><span>05-28</span><a href="xwtz/tzgg/20288.htm" title="关于商业街外墙维修项目的招标公告" >            关于商业街外墙维修项目的招标公告 
+    </a></li>
+					                	<li><span>05-28</span><a href="xwtz/tzgg/20289.htm" title="关于“紫阳楼”增加围挡项目的招标公告" >            关于“紫阳楼”增加围挡项目的招标公告 
+    </a></li>
+					                	<li><span>05-22</span><a href="xwtz/tzgg/19220.htm" title="学生宿舍区修建晾衣架项目的第二次采购公告" >            学生宿舍区修建晾衣架项目的第二次采购公告 
+    </a></li>
+					                	<li><span>05-17</span><a href="xwtz/tzgg/19154.htm" title="学生宿舍区修建晾衣架项目的采购公告" >            学生宿舍区修建晾衣架项目的采购公告 
+    </a></li>
+					                	<li><span>05-15</span><a href="xwtz/tzgg/17907.htm" title="校内生活垃圾外运项目第二次招标公告" >            校内生活垃圾外运项目第二次招标公告 
+    </a></li>
+					                	<li><span>05-11</span><a href="xwtz/tzgg/15172.htm" title="图书馆2019年度中文期刊采购项目招标公告" >            图书馆2019年度中文期刊采购项目招标公... 
+    </a></li>
+					                	<li><span>05-07</span><a href="xwtz/tzgg/8880.htm" title="关于招生移动互联端宣传升级以及网络推广项目的采购公告" >            关于招生移动互联端宣传升级以及网络推广项... 
+    </a></li>
+					                	<li><span>05-04</span><a href="xwtz/tzgg/8168.htm" title="校内生活垃圾外运项目招标公告" >            校内生活垃圾外运项目招标公告 
+    </a></li>
+					      </ul>
+    </aside>
+  </div>
+  <div class="mode02_wrap">
+    <div class="mode02">
+      <section class="car">
+        <div class="title01">
+          <h2>专题专栏</h2>
+        </div>
+        <ul class="carInfo">
+          <li class="message"><img src="images/zhuanlan01_04.png" alt=""><a href="aqsc/index.htm">安全生产</a></li>
+          <li class="talk"><img src="images/zhuanlan02_02.png" alt=""><a href="http://202.109.191.4/jxcg/default.html">国家教学成果奖申报</a></li>
+          <li class="bbs"><img src="images/zhuanlan03_01.png" alt=""><a href="http://xcb.jxlsxy.com/bmzz/20209.htm">师风师德建设</a></li>
+        </ul>-
+      </section>
+      <aside class="topic">
+        <ul class="topicInfo">
+          <li class="t01"><a class="cur01" href="http://lyfy.jxlsxy.com/" style="background-image:url(images/img01_04.png);background-position:center center;" target="_blank"></a><span><a href="http://lyfy.jxlsxy.com/" target="_blank">旅游学院</a></span></li>
+          <li class="t02"><a target="_blank" class="cur01" href="http://jgfy.jxlsxy.com/" style="background-image:url(images/img02_04.png);background-position:center center;"></a><span><a target="_blank" href="http://jgfy.jxlsxy.com/">经济管理学院</a></span></li>
+          <li class="t03"><a target="_blank" class="cur01" href="http://kjfy.jxlsxy.com/" style="background-image:url(images/img03_04.png);background-position:center center;"></a><span><a target="_blank" href="http://kjfy.jxlsxy.com/">会计金融学院</a></span></li>
+          <li class="t04"><a target="_blank" class="cur01" href="http://gjsw.jxlsxy.com/" style="background-image:url(images/img04_04.png);background-position:center center;"></a><span><a target="_blank" href="http://gjsw.jxlsxy.com/">国际商务学院</a></span></li>
+          <li class="t05"><a class="cur01" href="http://jd.jxlsxy.com/" style="background-image:url(images/img05_04.png);background-position:center center;"></a><span><a href="http://jd.jxlsxy.com/">机电与建筑工程学院</a></span></li>
+          <li class="t06"><a  ctarget="_blank" lass="cur01" href="http://art.jxlsxy.com/" style="background-image:url(images/img06_04.png);background-position:center center;"></a><span><a target="_blank" href="http://art.jxlsxy.com/">艺术传媒与计算机学院</a></span></li>
+          <li class="t07"><a target="_blank" class="cur01" href="http://tyxy.jxlsxy.com/" style="background-image:url(images/img07_04.png);background-position:center center;"></a><span><a target="_blank" href="http://tyxy.jxlsxy.com/">体育学院</a></span></li>
+          <li class="t08"><a target="_blank" class="cur01" href="http://zsb.jxlsxy.com/" style="background-image:url(images/img08_04.png);background-position:center center;"></a><span><a target="_blank" href="http://zsb.jxlsxy.com/">招生就业处</a></span></li>
+          <li class="t09"><a class="cur01" href="http://202.109.191.4/jwc/Html/Main.asp" style="background-image:url(images/img09_04.png);background-position:center center;"></a><span><a href="http://202.109.191.4/jwc/Html/Main.asp">教务处</a></span></li>
+          <li class="t10"><a target="_blank" class="cur01" href="http://xgc.jxlsxy.com/" style="background-image:url(images/img10_04.png);background-position:center center;"></a><span><a target="_blank" href="http://xgc.jxlsxy.com/">学工处</a></span></li>
+          <li class="t11"><a target="_blank" class="cur01" href="http://tw.jxlsxy.com/" style="background-image:url(images/img11_04.png);background-position:center center;"></a><span><a target="_blank" href="http://tw.jxlsxy.com/">团委</a></span></li>
+          <li class="t12"><a target="_blank" class="cur01" href="http://dzsw.jxlsxy.com" style="background-image:url(images/img12_04.png);background-position:center center;"></a><span><a target="_blank" href="http://dzsw.jxlsxy.com">电子商务技校</a></span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</article>
+<!--content结束-->
+<!--footer开始-->
+<article class="fooer_wrap">
+  
+<article class="fooer_wrap">
+	<div class="footer">
+      <div class="footer_left_middle">
+          <div class="footer_left">
+            <div class="footer_erweima">
+              <img src="images/erweima_04.png" alt=""><p>旅商官微，享受不一样的精彩</p>
+            </div>
+           
+        </div>
+        <div class="footer_logo"> <ul class="footer_img">
+               <li><a href="http://bszs.conac.cn/sitename?method=show&id=13D32B6FD9212F65E053022819AC8CAA" target="_blank"><img src="images/footerImg_04.png" alt=""></a></li>
+          <li><a href="http://117.40.91.39/wzba_search.asp" target="_blank"><img src="images/footerImg01_04.png" alt=""></a></li>
+          <li><a href="http://117.40.91.39/" target="_blank"><img src="images/footerImg02_04.png" alt=""></a></li>
+            </ul></div>
+      </div>
+      
+        
+        <div class="footer_right">
+          <h2>友情链接</h2>
+            <ul>
+
+                               	<li><a href="http://202.109.191.4/zgw/" title="江西省高职教学诊改网" target="_blank">            江西省高职教学诊改网 
+    </a></li>
+					                	<li><a href="http://dzsw.jxlsxy.com/" title="电子商务技工学校" target="_blank">            电子商务技工学校 
+    </a></li>
+					                	<li><a href="http://jxunivs.wxtree.com/" title="江西大学生在线" target="_blank">            江西大学生在线 
+    </a></li>
+					        </div>
+        
+    </div>
+    <div class="footer_bottom">
+    	 版权所有：江西旅游商贸职业学院    |    地址：南昌经济技术开发区丁香路江西旅游商贸职业学院    |    赣ICP备10004216号-2</span>
+    </div>
+</article></article>
+<!--footer结束-->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<!-- 通用JS -->
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script type="text/javascript">
+Nav('#nav');;//导航
+navMin();  //手机端下拉菜单
+Menu('.in_mbtn','.navm');//手机版导航
+ImgHeight();
+$(function () {
+    $("#slider").responsiveSlides({
+    auto: true,
+    pager: true,
+    timeout: 6000,
+    nav: true,
+    speed: 500,
+    // 对应外层div的class : slide_container
+    namespace: "slide"
+    });
+});
+ $(function() {     
+        $(".flexslider").flexslider({
+            pauseOnHover: true,
+            slideshowSpeed: 4000,
+            animationSpeed: 400,
+            touch: true 
+        });
+    }); 
+SerMax();  //搜索框弹出效果
+navMax();  //PC端主导航下拉菜单效果
+
+
+</script>
+<script src="http://mt.sjytech.com:8080/wm/api/visit/write/site?siteID=d3b984645f4e45da8f5cc179adc6f7ca" ></script>
+<SCRIPT id="gpgatherclickinfojs" src="http://mt.sjytech.com:8080/wm/resource/js/heatmapdynamic/gatherclickinfo.js"></SCRIPT>
+
+</body></html>

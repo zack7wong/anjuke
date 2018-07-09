@@ -1,0 +1,1570 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html>
+<head>
+    <meta name="renderer" content="ie-comp"/>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <title>江苏省怀仁中学</title>
+   <link href="/webschool/News/T/1/css/style.css" rel="stylesheet" type="text/css" />
+   <link href="/webschool/News/css/style.css" rel="stylesheet" type="text/css" /> 
+   <script src="/webschool/News/script/common.js" type="text/javascript"></script>
+   <script src="/webschool/News/script/jquery.min.js" type="text/javascript"></script>
+   <script src="/webschool/News/script/right.js"></script>
+   <script src="/webschool/js/pub-fun.js"></script>
+   <link href="/webschool/News/script/layer/skin/layer.css" rel="stylesheet" type="text/css" />
+   <link href="/webschool/News/css/lrtk.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="/webschool/News/script/layer/layer.js"></script> 
+   <script type="text/javascript" src="/webschool/News/script/lrtk.js"></script>   
+   <script>
+       //看不清，换图
+       function chgImage(obj){
+         if(obj.src.indexOf("2.jsp")!=-1)
+           obj.src = "/webschool/inc/img.jsp";
+         else
+           obj.src = "/webschool/inc/img2.jsp";
+       }
+       //登录检测
+       function checkLoginInfo(){
+           if(checkForm(loginForm)==false)return;
+           loginForm.submit();
+       }
+
+       //加载初始化
+       window.onload = function(){
+           
+           if(loginForm.userName!=null)loginForm.userName.focus();
+           
+       }
+	   
+	   
+	   
+	   
+	   
+jQuery(function($){
+	$(".topNav li").hover(
+	function(e){
+		setLeft($(this));
+		$(this).addClass("current").siblings().removeClass("current");
+	}
+	,function () {  //鼠标移出事件 
+        $("#first").addClass("current").siblings().removeClass("current");
+		setLeft($("#first"));
+    }
+	).filter(".current").each(function(){
+		setLeft($(this));
+	}
+	);
+
+	
+	function setLeft(obj) {
+		var pw  = obj.parent().width(),
+			sub = obj.find(".sub"),
+			pos = obj.position(),
+			padding = 0;
+		if( sub.length ){
+			if( (sub.width()/2-width(obj)/2) > (pos.left-padding) ){
+				sub.css("left", padding + "px");
+			}else if( (pos.left + (sub.width()/2+width(obj)/2)) > (pw-padding) ){
+				sub.css("right", padding + "px");
+			}else{
+				sub.css("left", pos.left - (sub.width()/2-width(obj)/2));
+			}
+			sub.show().parent().siblings().find(".sub").hide();
+		}
+	}
+	function css(el, prop) {
+		return parseInt($.css(el[0], prop)) || 0;
+	};
+	function width(el) {
+		return  el[0].offsetWidth + css(el, 'marginLeft') + css(el, 'marginRight');
+	};
+})
+    </script>
+ <Script language="javascript">
+<!--
+window.onload = getMsg;
+window.onresize = resizeDiv;
+window.onerror = function(){}
+var divTop,divLeft,divWidth,divHeight,docHeight,docWidth,objTimer,i = 0;
+function getMsg()
+{
+try{
+divTop = parseInt(document.getElementById("eMeng").style.top,10)
+divLeft = parseInt(document.getElementById("eMeng").style.left,10)
+divHeight = parseInt(document.getElementById("eMeng").offsetHeight,10)
+divWidth = parseInt(document.getElementById("eMeng").offsetWidth,10)
+docWidth = document.documentElement.clientWidth;
+docHeight = document.documentElement.clientHeight;
+document.getElementById("eMeng").style.top = parseInt(document.documentElement.scrollTop,10) + docHeight + 10;// divHeight
+document.getElementById("eMeng").style.left = parseInt(document.documentElement.scrollLeft,10) + docWidth - divWidth
+document.getElementById("eMeng").style.visibility="visible"
+objTimer = window.setInterval("moveDiv()",10)
+}
+catch(e){}
+}
+
+function resizeDiv()
+{
+i+=1
+//if(i>1300) closeDiv() //客户想不用自动消失由用户来自己关闭所以屏蔽这句
+try{
+divHeight = parseInt(document.getElementById("eMeng").offsetHeight,10)
+divWidth = parseInt(document.getElementById("eMeng").offsetWidth,10)
+docWidth = document.documentElement.clientWidth;
+docHeight = document.documentElement.clientHeight;
+document.getElementById("eMeng").style.top = docHeight - divHeight + parseInt(document.documentElement.scrollTop,10);
+document.getElementById("eMeng").style.left = docWidth - divWidth + parseInt(document.documentElement.scrollLeft,10)
+}
+catch(e){}
+}
+
+function moveDiv()
+{
+try
+{
+if(parseInt(document.getElementById("eMeng").style.top,10) <= (docHeight - divHeight + parseInt(document.documentElement.scrollTop,10)))
+{
+window.clearInterval(objTimer)
+objTimer = window.setInterval("resizeDiv()",1)
+}
+divTop = parseInt(document.getElementById("eMeng").style.top,10)
+document.getElementById("eMeng").style.top = divTop - 1
+}
+catch(e){}
+}
+function closeDiv()
+{
+document.getElementById('eMeng').innerHTML='';
+document.getElementById('eMeng').style.visibility='hidden';
+if(objTimer) window.clearInterval(objTimer)
+}
+-->
+</Script>
+
+
+</head>
+<body>
+ 
+ 		<script language="javascript">
+		lastScrollY=0;
+		function heartBeat(){
+		var diffY;
+		if (document.documentElement && document.documentElement.scrollTop)
+		diffY = document.documentElement.scrollTop;
+		else if (document.documentElement)
+		diffY = document.documentElement.scrollTop
+		else
+		{/*Netscape stuff*/}
+		//alert(diffY);
+		percent=.1*(diffY-lastScrollY);
+		if(percent>0)percent=Math.ceil(percent);
+		else percent=Math.floor(percent);
+		
+		document.getElementById("webAdLeft").style.top=parseInt(document.getElementById("webAdLeft").style.top)+percent+"px";
+		
+		document.getElementById("webAdRight").style.top=parseInt(document.getElementById("webAdRight").style.top)+percent+"px";
+		
+		lastScrollY=lastScrollY+percent;
+		//alert(lastScrollY);
+		}
+		var webAdLeft = "<DIV id=\"webAdLeft\" style='left:20px;POSITION:absolute;TOP:69px;'>&nbsp;<a href=\"/webschool/News/news_detail.jsp?newsId=100007555&amp;pnType=\" target=\"_blank\"><img alt=\"\" src=\"/webschool/xheditor/upload/10001970/201707/admin5/News/img/创建全国文明城市2.jpg\" /></a><a href=\"/webschool/News/news_detail.jsp?newsId=100007555&amp;pnType=\"></a><a href=\"/webschool/News/news_detail.jsp?newsId=100007143&amp;siteId=0&amp;pnType=news34\"></a><a href=\"/webschool/News/news_detail.jsp?newsId=100007143&amp;siteId=0&amp;pnType=news34\"></a><br><a href=JavaScript:; onclick=\"document.getElementById('webAdLeft').style.display = 'none'\"><img border=0 src=/webschool/News/img/ad_close.gif></a></div>";
+		var webAdRight = "<DIV id=\"webAdRight\" style='right:18px;POSITION:absolute;TOP:69px;'><p><a href=\"/webschool/News/news_detail.jsp?newsId=100007654\" target=\"_blank\"><img alt=\"\" src=\"/webschool/xheditor/upload/10001970/201712/admin5/News/img/80校庆.jpg\" /></a><a href=\"/webschool/News/news_detail.jsp?newsId=100007621\"></a></p><br><a href=JavaScript:; onclick=\"document.getElementById('webAdRight').style.display = 'none'\"><img border=0 src=/webschool/News/img/ad_close.gif></a></div>";
+		
+		document.write(webAdLeft);
+		
+		document.write(webAdRight);
+		
+		window.setInterval("heartBeat()",1);
+		</script>
+		 		
+ 
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" id="pagehead">
+  <tr>
+    <td valign="top">
+    <table width="980" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="491" height="25" align="left">&nbsp;&nbsp;今天是2018年05月29日 星期二&nbsp;</td>
+        <td width="489" align="right">&nbsp;&nbsp;</td>
+      </tr>
+    </table> 
+      <table width="980" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img src="/webschool/News/T/1/images/stripe.jpg" width="980" height="12" /></td>
+        </tr>
+    </table>
+      <table width="980" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="229" height="153" id="logo">
+          <object id="FlashID4" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="229" height="153">
+            <param name="movie" value="/webschool/News/T/1/images/logo.swf" />
+            <param name="quality" value="high" />
+            <param name="wmode" value="opaque" />
+            <param name="swfversion" value="6.0.65.0" />
+            <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+            <param name="expressinstall" value="/webschool/News/scripts/expressInstall.swf" />
+            <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+            <!--[if !IE]>-->
+            <object type="application/x-shockwave-flash" data="/webschool/News/T/1/images/logo.swf" width="229" height="153">
+              <!--<![endif]-->
+              <param name="quality" value="high" />
+              <param name="wmode" value="opaque" />
+              <param name="swfversion" value="6.0.65.0" />
+              <param name="expressinstall" value="/webschool/News/scripts/expressInstall.swf" />
+              <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+              <div>
+                <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+                <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" /></a></p>
+              </div>
+              <!--[if !IE]>-->
+            </object>
+            <!--<![endif]-->
+          </object></td>
+          <td width="751" height="153">
+          <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="751" height="153">
+            <param name="movie" value="/webschool/News/T/1/images/top.swf" />
+            <param name="quality" value="high" />
+            <param name="wmode" value="opaque" />
+            <param name="swfversion" value="6.0.65.0" />
+            <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+            <param name="expressinstall" value="/webschool/News/scripts/expressInstall.swf" />
+            <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+            <!--[if !IE]>-->
+            <object type="application/x-shockwave-flash" data="/webschool/News/T/1/images/top.swf" width="751" height="153">
+              <!--<![endif]-->
+              <param name="quality" value="high" />
+              <param name="wmode" value="opaque" />
+              <param name="swfversion" value="6.0.65.0" />
+              <param name="expressinstall" value="/webschool/News/scripts/expressInstall.swf" />
+              <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+              <div>
+                <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+                <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+              </div>
+              <!--[if !IE]>-->
+            </object>
+            <!--<![endif]-->
+          </object></td>
+        </tr>
+    </table>
+
+    
+
+    </td>
+  </tr>
+</table>
+
+
+
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" >
+  
+  <tr>
+    <td  class="index_nav">
+    
+    <table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="34" valign="top">
+     <div class="topNav">
+	<ul>
+		<li class="current" id="first"><a href="/webschool/"><span>网站首页</span></a>
+            <div class="sub home_sub">
+                <div class="notice">     
+    <span class="notice_title"><img src="/webschool/News/images/notice_title.jpg" width="100" height="42" /></span> 
+    
+    
+    <marquee  id="scrollArea" height="30" width="680" border="0"  loop="-1" scrollamount="1" scrolldelay="50" direction="left" onMouseOver=scrollArea.stop() onMouseOut=scrollArea.start() >
+    
+    
+    
+    
+    · <span  href="javascript:void(0)" onClick="window.location.href='/webschool/News/news_detail.jsp?newsId=100007774&siteId='">心怀母校 自是团圆—致心系怀仁80周年校...</span> [2018-05-24]   
+    
+    
+    
+    · <span  href="javascript:void(0)" onClick="window.location.href='/webschool/News/news_detail.jsp?newsId=100007773&siteId='">怀仁80周年校庆系列活动之校友论坛|⑧ ...</span> [2018-05-23]   
+    
+    
+    
+    · <span  href="javascript:void(0)" onClick="window.location.href='/webschool/News/news_detail.jsp?newsId=100007772&siteId='">高考考前辅导系列活动  遇见更好的自己</span> [2018-05-23]   
+    
+    
+    
+    · <span  href="javascript:void(0)" onClick="window.location.href='/webschool/News/news_detail.jsp?newsId=100007771&siteId='">关注新高考，提高新认知</span> [2018-05-22]   
+    
+    
+    
+    · <span  href="javascript:void(0)" onClick="window.location.href='/webschool/News/news_detail.jsp?newsId=100007770&siteId='">十八而志，青春放歌</span> [2018-05-22]   
+    
+    
+    
+    · <span  href="javascript:void(0)" onClick="window.location.href='/webschool/News/news_detail.jsp?newsId=100007769&siteId='">好的改变 什么时候都不嫌晚</span> [2018-05-14]   
+    
+    
+        
+    
+    </marquee>
+    </div>
+    
+                 <form name="searchForm" action="/webschool/News/news_list.jsp" method="post"  >
+    <div class="search"><input type="text" name="findInfo" class="search_input" value="站内搜索" onfocus="if(this.value==defaultValue) {this.value='';}" onblur="if(!value) {value=defaultValue;}"/><input type="button" name="button" class="search_button" onClick="searchInfo()" value=" " />
+    </div>
+     </form>
+            </div>
+        </li>
+        
+       
+		
+		<li><a href="/webschool/News/news_list.jsp?typeId=news01"><span>怀仁概况</span></a>
+		    	
+                 
+					<div class="sub">
+					 
+					   <a href="/webschool/News/news_list.jsp?typeId=news0101&moreType=1 ">学校介绍</a> 
+					  |
+					   <a href="/webschool/News/news_list.jsp?typeId=news0102&moreType=1 ">领导风采</a> 
+					  |
+					   <a href="/webschool/News/news_list.jsp?typeId=news0103&moreType=1 ">学校荣誉</a> 
+					  | 
+					   <a href="/webschool/News/image_detail.jsp?typeId=news0104&moreType=1" target="_blank">美丽校园</a> 
+					   
+					</div>  
+                
+                
+		
+		
+		</li>
+		<li><a href="/webschool/News/news_list.jsp?typeId=news03"><span>怀仁动态</span></a>
+		    	
+                 
+					<div class="sub">
+					 		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0301&moreType=1 ">校务办公室</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0302&moreType=1 ">政教处</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0303&moreType=1 ">教务处</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0304&moreType=1 ">教科室</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0305&moreType=1 ">总务处</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0306&moreType=1 ">工会</a> 
+	
+					  
+					</div>  
+                
+                
+		
+		</li>
+		<li><a href="/webschool/News/news_list.jsp?typeId=news02"><span>校务公开</span></a>
+		  	
+                 
+					<div class="sub">
+					 		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0201&moreType=1 ">荣誉奖励</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0205&moreType=1 ">规章制度</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0206&moreType=1 ">行风建设</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0207&moreType=1 ">通知公告</a> 
+	
+					  
+					</div>  
+                
+                
+		</li>
+		<li><a href="/webschool/News/news_list.jsp?typeId=news04"><span>德育管理</span></a>
+		   	
+                 
+					<div class="sub">
+					 		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0401&moreType=1 ">班主任园地</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0403&moreType=1 ">学生天地</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0407&moreType=1 ">家长学校</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0408&moreType=1 ">校园安全</a> 
+	
+					  
+					</div>  
+                
+                
+		</li>
+		<li><a href="/webschool/News/news_list.jsp?typeId=news05"><span>教学管理</span></a>
+		     	
+                 
+					<div class="sub">
+					 
+					   <a href="/webschool/News/news_list.jsp?typeId=news0501&moreType=1 ">学科天地</a> 
+					  |
+					   <a href="/webschool/News/news_list.jsp?typeId=news0503&moreType=1 ">教学常规</a> 
+					  |
+					   <a href="/webschool/News/news_list.jsp?typeId=news0505&moreType=1 ">阅读园地</a> 
+					   
+					</div>  
+                
+                
+		</li>
+		<li><a href="/webschool/News/news_list.jsp?typeId=news06"><span>教研管理</span></a>
+		   	
+                 
+					<div class="sub">
+					 		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0601&moreType=1 ">教研动态</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0603&moreType=1 ">科研课题</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0604&moreType=1 ">教研论文</a> 
+	
+					  
+					</div>  
+                
+                
+		</li>
+		<li><a href="/webschool/News/news_list.jsp?typeId=news07"><span>后勤服务</span></a>
+		    	
+                 
+					<div class="sub">
+					 		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0701&moreType=1 ">节水专栏</a> 
+	
+					  
+					</div>  
+                
+                
+		</li>
+		<li><a href="/webschool/News/news_list.jsp?typeId=news09"><span>怀仁特色</span></a>
+		   	
+                 
+					<div class="sub">
+					 		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0902&moreType=1 ">名师工作室</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0903&moreType=1 ">学生生涯规划</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0904&moreType=1 ">三动课堂和教学案一体化</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0905&moreType=1 ">校本课程和社团活动</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0906&moreType=1 ">艺术教育</a> 
+	
+					 |		  
+					   <a href="/webschool/News/news_list.jsp?typeId=news0907&moreType=1 ">特色怀仁</a> 
+	
+					  
+					</div>  
+                
+                
+		</li>
+        <li><a href="/webschool/News/news_list.jsp?typeId=news43"><span>教育督导</span></a>
+		   
+		</li>
+        
+	</ul>
+</div>
+
+<script type="text/javascript">
+jQuery(function($){
+	$(".topNav li").hover(
+	function(e){
+		setLeft($(this));
+		$(this).addClass("current").siblings().removeClass("current");
+	}
+	,function () {  //鼠标移出事件 
+        $("#first").addClass("current").siblings().removeClass("current");
+		setLeft($("#first"));
+    }
+	).filter(".current").each(function(){
+		setLeft($(this));
+	}
+	);
+
+	
+	function setLeft(obj) {
+		var pw  = obj.parent().width(),
+			sub = obj.find(".sub"),
+			pos = obj.position(),
+			padding = 0;
+		if( sub.length ){
+			if( (sub.width()/2-width(obj)/2) > (pos.left-padding) ){
+				sub.css("left", padding + "px");
+			}else if( (pos.left + (sub.width()/2+width(obj)/2)) > (pw-padding) ){
+				sub.css("right", padding + "px");
+			}else{
+				sub.css("left", pos.left - (sub.width()/2-width(obj)/2));
+			}
+			sub.show().parent().siblings().find(".sub").hide();
+		}
+	}
+	function css(el, prop) {
+		return parseInt($.css(el[0], prop)) || 0;
+	};
+	function width(el) {
+		return  el[0].offsetWidth + css(el, 'marginLeft') + css(el, 'marginRight');
+	};
+})
+function searchInfo(){
+		if(searchForm.findInfo.value==''){
+			alert("请输入关键字查询！");
+		}else{
+			searchForm.submit();
+		}
+	}
+</script>
+
+    </td>
+  </tr>
+</table>
+    
+    
+    </td>
+  </tr>
+</table>
+
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" class="index_nav_bottom">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+<table width="980" border="0" cellspacing="0" cellpadding="0" class="pattern">
+        <tr>
+          <td></td>
+        </tr>
+    </table>
+
+
+
+<table width="982" border="0" align="center" cellpadding="0" cellspacing="0" id="pagebody">
+  <tr>
+  
+    <td width="980" valign="top">
+    <table width="980" border="0" cellspacing="0" cellpadding="0" id="login">
+      <tr>
+        <td align="left" width="650px">
+        <form action="/webschool/login" method="post" name="loginForm"  style="margin-bottom: 15px;">
+         <input type="hidden" name="targetURL" value="/News/"/>
+         <input type="hidden" name="loginUrl" value="/News/"/>
+         <input type="hidden" name="schoolId" value="10001970"/>
+         <input type="hidden" name="isInnerIp" value="false"/>
+         <input type="hidden" name="loginStatus" value=""/>
+           
+          &nbsp;&nbsp;用户名：<input name="userName" MUST="1" title="用户名" type="text" class="login_input" size="8" maxlength="20" onfocus="this.select()" onKeyDown="if(event.keyCode==13)event.keyCode=9" />
+          密码：<input type="password" name="userPwd" MUST="1" title="密码" class="login_input" size="8" maxlength="20" onfocus="this.select()" onKeyDown="if(event.keyCode==13)event.keyCode=9"/>
+           
+            验证码：<input type="text" name="confirmCode" MUST="1" title="验证码" class="login_input" size="3" maxlength="4" onfocus="this.select()" onKeyDown="if(event.keyCode==13)checkLoginInfo();"/>
+            <img src="/webschool/inc/img2.jsp" border="0" onclick="chgImage(this)" alt="看不清,换一张,请点击" style="cursor:hand" align="middle" />
+            
+            <a href="javascript:checkLoginInfo()"><img src="/webschool/News/T/1/images/login_button.jpg" width="62" height="25" border="0" align="middle" /></a>&nbsp;
+            
+        </form> 
+        </td>
+        <td align="center" width="100px">
+          <img src="/webschool/News/images/message.gif" style="vertical-align:middle;"/>&nbsp;<a href="/webschool/News/Message/index.jsp?typeId=mess01" target="_blank" style="vertical-align:bottom;">留言板</a>
+        </td>
+      </tr>
+    </table>
+
+	
+	<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td valign="top">
+		    <table width="740" border="0" align="center" cellpadding="0" cellspacing="0">
+		<tr>
+		   <td colspan="2">
+		        <table width="720" border="0" align="left" cellpadding="0" cellspacing="0" class="title_1">
+      <tr>
+        <td width="264" align="left">&nbsp;<img src="/webschool/News/T/1/images/title_xykx.jpg" width="88" height="29" align="absmiddle" /></td>
+        <td width="263" align="right"><a href="/webschool/News/news_list.jsp?typeId=news03&moreType=1">更多</a> <img src="/webschool/News/T/1/images/title_1_more.jpg" width="29" height="27" align="absmiddle" />&nbsp;</td>
+      </tr>
+    </table>
+		   </td>
+		</tr>	
+      <tr>
+	    <td width="250" height="250" align="center" valign="middle" >
+            <script>
+          var focus_width=370;
+          var focus_height=250;
+          var text_height=22;
+          var swf_height = focus_height+text_height;
+          document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">');
+          document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="/webschool/News/img/pixviewer.swf"><param name="quality" value="high"><param name="bgcolor" value="#f2e3d2">');
+          document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+		  //附加如下一行代码，目的使浮动窗口不会被flash组件遮住
+		  document.write('<param name="wmode" value="transparent" />');
+          document.write('<param name="FlashVars" value="pics=/webschool/xheditor/upload/ShortIcon/373272c1-7c4a-42e4-8233-544fed405034-firstimg.png|/webschool/xheditor/upload/ShortIcon/d8f96911-98e8-4238-ba7d-0af9b08ae6c1-firstimg.png|/webschool/xheditor/upload/ShortIcon/37323d92-6a7e-466c-8914-f51d73f6f9e3-firstimg.png|/webschool/xheditor/upload/ShortIcon/e7288f40-04c9-4fde-a4a0-6a7064a3c02a-firstimg.png|/webschool/xheditor/upload/ShortIcon/e993d485-b09d-40b9-9748-783e8f8949b2-firstimg.png&links=%2Fwebschool%2FNews%2Fnews_detail.jsp%3FnewsId%3D100007774|%2Fwebschool%2FNews%2Fnews_detail.jsp%3FnewsId%3D100007773|%2Fwebschool%2FNews%2Fnews_detail.jsp%3FnewsId%3D100007772|%2Fwebschool%2FNews%2Fnews_detail.jsp%3FnewsId%3D100007771|%2Fwebschool%2FNews%2Fnews_detail.jsp%3FnewsId%3D100007770&texts=心怀母校 自是团圆—致心系怀仁…|怀仁80周年校庆系列活动之校友…|高考考前辅导系列活动  遇见更…|关注新高考，提高新认知|十八而志，青春放歌&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+          document.write('<embed src="/webschool/News/img/pixviewer.swf" wmode="transparent" FlashVars="pics=/webschool/xheditor/upload/ShortIcon/373272c1-7c4a-42e4-8233-544fed405034-firstimg.png|/webschool/xheditor/upload/ShortIcon/d8f96911-98e8-4238-ba7d-0af9b08ae6c1-firstimg.png|/webschool/xheditor/upload/ShortIcon/37323d92-6a7e-466c-8914-f51d73f6f9e3-firstimg.png|/webschool/xheditor/upload/ShortIcon/e7288f40-04c9-4fde-a4a0-6a7064a3c02a-firstimg.png|/webschool/xheditor/upload/ShortIcon/e993d485-b09d-40b9-9748-783e8f8949b2-firstimg.png&links=%2Fwebschool%2FNews%2Fnews_detail.jsp%3FnewsId%3D100007774|%2Fwebschool%2FNews%2Fnews_detail.jsp%3FnewsId%3D100007773|%2Fwebschool%2FNews%2Fnews_detail.jsp%3FnewsId%3D100007772|%2Fwebschool%2FNews%2Fnews_detail.jsp%3FnewsId%3D100007771|%2Fwebschool%2FNews%2Fnews_detail.jsp%3FnewsId%3D100007770&texts=心怀母校 自是团圆—致心系怀仁…|怀仁80周年校庆系列活动之校友…|高考考前辅导系列活动  遇见更…|关注新高考，提高新认知|十八而志，青春放歌&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" bgcolor="#F0EFEF" quality="high" width="'+ focus_width +'" height="'+ focus_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+          document.write('</object>');
+        </script>
+    
+        </td>
+        <td height="282" valign="top" width="60%"><table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+          
+       <table width='92%' align='center' border='0' cellpadding='0' cellspacing='0'>
+          
+                 <tr >
+                     <td colspan="3" align="center" class="news_title">
+                       
+					  <a href="/webschool/News/news_detail.jsp?newsId=100007774" target="_blank"><b>心怀母校 自是团圆—致心系怀仁80…</b></a>
+					 
+                     </td>
+                 </tr>
+                 <tr><td colspan="3" height="2"></td></tr>
+                 <tr >
+                     <td colspan="3" class="top_news_content" height="50" align="left" >
+                     <p>
+	
+
+
+	
+
+ 
+
+	
+
+ 
+
+	亲爱的校友： 
+
+ 
+
+	怀仁八…</p>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td colspan="3" height="2" class="line"></td>
+                 </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='81%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007773" target="_blank">怀仁80周年校庆系列活动之校友论坛…</a>
+					 </td><td width='18%' align='center'>[05-23]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='81%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007772" target="_blank">高考考前辅导系列活动  遇见更好的…</a>
+					 </td><td width='18%' align='center'>[05-23]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='81%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007771" target="_blank">关注新高考，提高新认知</a>
+					 </td><td width='18%' align='center'>[05-22]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='81%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007770" target="_blank">十八而志，青春放歌</a>
+					 </td><td width='18%' align='center'>[05-22]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='81%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007769" target="_blank">好的改变 什么时候都不嫌晚</a>
+					 </td><td width='18%' align='center'>[05-14]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='81%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007768" target="_blank">掀起你的盖头来</a>
+					 </td><td width='18%' align='center'>[05-11]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='81%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007766" target="_blank">共建平台，资源共享</a>
+					 </td><td width='18%' align='center'>[05-11]</td>
+              </tr>
+              
+        </table>
+
+          </td>
+        
+      </tr>
+    </table>
+		</td>
+		<td width="209" height="242" align="center" valign="middle" class="viewer">
+                 
+       <table width="204" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+					  <td><a href="/webschool/News/news_list.jsp?typeId=news44"><img src="/webschool/News/images/a9.jpg" width="204" height="61" border="0" /></a></td>
+					</tr>
+	   </table>        
+	   <table width="204" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td><a href="/webschool/News/Message/index.jsp?typeId=mess01"><img src="/webschool/News/images/mail.jpg" width="204" height="61" border="0" /></a></td>
+        </tr>
+       </table>
+
+				  <table width="204" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+					  <td><a href="/webschool/News/news_detail.jsp?typeId=news0801"><img src="/webschool/News/images/history.jpg" width="204" height="61" border="0" /></a></td>
+					</tr>
+				</table>
+				 
+			
+			
+				<table width="204" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+					  <td><a href="/webschool/News/news_list.jsp?typeId=news21"><img src="/webschool/News/images/a7.jpg" width="204" height="61" border="0" /></a></td>
+					</tr>
+				</table>
+				<table width="204" border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+					  <td><a href="/webschool/News/news_list.jsp?typeId=news40"><img src="/webschool/News/images/a8.jpg" width="204" height="61" border="0" /></a></td>
+					</tr>
+				</table>
+				
+			   
+			   
+			   
+			   
+        </td>
+      </tr>
+    </table>
+
+    
+
+    <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+
+    <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+	 
+		
+		<td width="309" valign="top">
+
+        <table width="309" border="0" align="" cellpadding="0" cellspacing="0" class="title_1">
+          <tr>
+            <td width="364" align="left">&nbsp;<img src="/webschool/News/images/title_xwgk.jpg" width="88" height="27" align="absmiddle" /></td>
+            <td width="363" align="right"><a href="/webschool/News/news_list.jsp?typeId=news02">更多</a> <img src="/webschool/News/T/1/images/title_1_more.jpg" width="29" height="27" align="absmiddle" />&nbsp;</td>
+          </tr>
+        </table>
+
+          <table width="309" border="0" cellspacing="0" cellpadding="0" class="title_1_border">
+          <tr></tr>
+          <tr>
+            <td height="175" valign="top">
+
+            <table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+             
+			  
+			    
+       <table width='92%' align='center' border='0' cellpadding='0' cellspacing='0'>
+          
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007730" target="_blank">喜报</a>
+					 </td><td width='20%' align='center'>[03-20]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007680" target="_blank">喜报</a>
+					 </td><td width='20%' align='center'>[12-26]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007677" target="_blank">喜报</a>
+					 </td><td width='20%' align='center'>[12-22]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007676" target="_blank">喜报</a>
+					 </td><td width='20%' align='center'>[12-21]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007670" target="_blank">江苏省怀仁中学喜获省级节水…</a>
+					 </td><td width='20%' align='center'>[12-18]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007653" target="_blank">喜报：曾颖红老师喜获无锡市…</a>
+					 </td><td width='20%' align='center'>[12-04]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007642" target="_blank">喜报：阚小圣老师喜获无锡市高…</a>
+					 </td><td width='20%' align='center'>[11-28]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007641" target="_blank">无锡市锡山区教育局公开招聘…</a>
+					 </td><td width='20%' align='center'>[11-24]</td>
+              </tr>
+              
+        </table>
+
+
+              </td>
+          </tr>
+          </table>
+
+          </td>
+        <td width="309" valign="top">
+
+        <table width="309" border="0" align="" cellpadding="0" cellspacing="0" class="title_1">
+          <tr>
+            <td width="364" align="left">&nbsp;<img src="/webschool/News/images/title_dygl.jpg" width="88" height="27" align="absmiddle" /></td>
+            <td width="363" align="right"><a href="/webschool/News/news_list.jsp?typeId=news04">更多</a> <img src="/webschool/News/T/1/images/title_1_more.jpg" width="29" height="27" align="absmiddle" />&nbsp;</td>
+          </tr>
+        </table>
+
+          <table width="309" border="0" cellspacing="0" cellpadding="0" class="title_1_border">
+          <tr></tr>
+          <tr>
+            <td height="175" valign="top">
+
+            <table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+             
+			  
+			    
+       <table width='92%' align='center' border='0' cellpadding='0' cellspacing='0'>
+          
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007779" target="_blank">十八而志，青春放歌</a>
+					 </td><td width='20%' align='center'>[05-24]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007777" target="_blank">高考考前辅导系列活动  遇…</a>
+					 </td><td width='20%' align='center'>[05-24]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007669" target="_blank">加强校园安保培训  打造过…</a>
+					 </td><td width='20%' align='center'>[12-18]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007668" target="_blank">勿忘国耻  牢记使命</a>
+					 </td><td width='20%' align='center'>[12-18]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007646" target="_blank">怀仁学子分阶段享听生涯讲座</a>
+					 </td><td width='20%' align='center'>[11-28]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007644" target="_blank">我校组织观看消防安全教育电…</a>
+					 </td><td width='20%' align='center'>[11-28]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007563" target="_blank">迷彩军训  骄阳无惧</a>
+					 </td><td width='20%' align='center'>[08-21]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007561" target="_blank">江苏省怀仁中学举行2017…</a>
+					 </td><td width='20%' align='center'>[08-20]</td>
+              </tr>
+              
+        </table>
+
+
+              </td>
+          </tr>
+          </table>
+
+          </td>
+		  <td width="309" valign="top">
+
+        <table width="309" border="0" align="" cellpadding="0" cellspacing="0" class="title_1">
+          <tr>
+            <td width="364" align="left">&nbsp;<img src="/webschool/News/images/studentsky.jpg" width="88" height="27" align="absmiddle" /></td>
+            <td width="363" align="right"><a href="/webschool/News/news_list.jsp?typeId=news0903">更多</a> <img src="/webschool/News/T/1/images/title_1_more.jpg" width="29" height="27" align="absmiddle" />&nbsp;</td>
+          </tr>
+        </table>
+
+          <table width="309" border="0" cellspacing="0" cellpadding="0" class="title_1_border">
+          <tr></tr>
+          <tr>
+            <td height="175" valign="top">
+
+            <table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+             
+			  
+			    
+       <table width='92%' align='center' border='0' cellpadding='0' cellspacing='0'>
+          
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007781" target="_blank">掀起你的盖头来</a>
+					 </td><td width='20%' align='center'>[05-24]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007696" target="_blank">创新教学实践  培养“关键…</a>
+					 </td><td width='20%' align='center'>[01-22]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007673" target="_blank">成就学生，发展自己</a>
+					 </td><td width='20%' align='center'>[12-18]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007635" target="_blank">怀仁生涯骨干教师集体备课在…</a>
+					 </td><td width='20%' align='center'>[11-20]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007633" target="_blank">共话生涯规划 探寻生长方向</a>
+					 </td><td width='20%' align='center'>[11-20]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007552" target="_blank">高考志愿填报说明</a>
+					 </td><td width='20%' align='center'>[06-25]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007521" target="_blank">怀仁生涯规划课程基地阶段性…</a>
+					 </td><td width='20%' align='center'>[05-31]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007417" target="_blank">江苏省课程基地建设评估专家…</a>
+					 </td><td width='20%' align='center'>[04-12]</td>
+              </tr>
+              
+        </table>
+
+
+              </td>
+          </tr>
+          </table>
+
+          </td>
+      </tr>
+    </table>
+
+    <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+
+    <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="81" valign="middle" align="center">
+           <p align="left"><embed style="WIDTH: 980px; HEIGHT: 138px" height="138" type="application/x-shockwave-flash" width="980" src="/webschool/xheditor/upload/1/admin2/News/flash/bannerCS32.swf" allowfullscreen="true" loop="true" play="true" menu="false" quality="high" wmode="opaque" classid="clsid:d27cdb6e-ae6d-11cf-96b8-4445535400000" /></p>
+
+        </td>
+      </tr>
+    </table>
+
+    <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  
+  <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+	 
+		
+		<td width="309" valign="top">
+
+        <table width="309" border="0" align="" cellpadding="0" cellspacing="0" class="title_1">
+          <tr>
+            <td width="364" align="left">&nbsp;<img src="/webschool/News/T/1/images/title_jxgl.jpg" width="88" height="27" align="absmiddle" /></td>
+            <td width="363" align="right"><a href="/webschool/News/news_list.jsp?typeId=news05">更多</a> <img src="/webschool/News/T/1/images/title_1_more.jpg" width="29" height="27" align="absmiddle" />&nbsp;</td>
+          </tr>
+        </table>
+
+          <table width="309" border="0" cellspacing="0" cellpadding="0" class="title_1_border">
+          <tr></tr>
+          <tr>
+            <td height="175" valign="top">
+
+            <table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+             
+			  
+			    
+       <table width='92%' align='center' border='0' cellpadding='0' cellspacing='0'>
+          
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007780" target="_blank">好的改变 什么时候都不嫌晚</a>
+					 </td><td width='20%' align='center'>[05-24]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007778" target="_blank">关注新高考，提高新认知</a>
+					 </td><td width='20%' align='center'>[05-24]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007672" target="_blank">英语工作室组织赴延安教学交…</a>
+					 </td><td width='20%' align='center'>[12-18]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007671" target="_blank">怀仁中学理化组赴宁波学习纪…</a>
+					 </td><td width='20%' align='center'>[12-18]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007657" target="_blank">江苏省怀仁中学开展“问题.…</a>
+					 </td><td width='20%' align='center'>[12-07]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007650" target="_blank">梦想在这里起航</a>
+					 </td><td width='20%' align='center'>[12-01]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007649" target="_blank">回顾 携手 展望</a>
+					 </td><td width='20%' align='center'>[12-01]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007613" target="_blank">区教研室来我校教学调研</a>
+					 </td><td width='20%' align='center'>[10-19]</td>
+              </tr>
+              
+        </table>
+
+
+              </td>
+          </tr>
+          </table>
+
+          </td>
+        <td width="309" valign="top">
+
+        <table width="309" border="0" align="" cellpadding="0" cellspacing="0" class="title_1">
+          <tr>
+            <td width="364" align="left">&nbsp;<img src="/webschool/News/images/title_kygl.jpg" width="88" height="27" align="absmiddle" /></td>
+            <td width="363" align="right"><a href="/webschool/News/news_list.jsp?typeId=news06">更多</a> <img src="/webschool/News/T/1/images/title_1_more.jpg" width="29" height="27" align="absmiddle" />&nbsp;</td>
+          </tr>
+        </table>
+
+          <table width="309" border="0" cellspacing="0" cellpadding="0" class="title_1_border">
+          <tr></tr>
+          <tr>
+            <td height="175" valign="top">
+
+            <table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+             
+			  
+			    
+       <table width='92%' align='center' border='0' cellpadding='0' cellspacing='0'>
+          
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007689" target="_blank">无锡市教育学会2017年度…</a>
+					 </td><td width='20%' align='center'>[01-08]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007688" target="_blank">2017年度中学“四优”作…</a>
+					 </td><td width='20%' align='center'>[01-05]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007636" target="_blank">怀仁团队，精彩纷呈</a>
+					 </td><td width='20%' align='center'>[11-20]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007605" target="_blank">高中数学教材阅读教学策略浅…</a>
+					 </td><td width='20%' align='center'>[09-25]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007604" target="_blank">核心素养下的英语课外阅读教…</a>
+					 </td><td width='20%' align='center'>[09-25]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007603" target="_blank">乘词汇之风，破阅读之浪，行…</a>
+					 </td><td width='20%' align='center'>[09-25]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007602" target="_blank">班主任如何转变自己的教育方…</a>
+					 </td><td width='20%' align='center'>[09-25]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007601" target="_blank">让我们，谈一谈——一个年轻…</a>
+					 </td><td width='20%' align='center'>[09-25]</td>
+              </tr>
+              
+        </table>
+
+
+              </td>
+          </tr>
+          </table>
+
+          </td>
+		  <td width="309" valign="top">
+
+        <table width="309" border="0" align="" cellpadding="0" cellspacing="0" class="title_1">
+          <tr>
+            <td width="364" align="left">&nbsp;<img src="/webschool/News/images/title_hqfw.jpg" width="88" height="27" align="absmiddle" /></td>
+            <td width="363" align="right"><a href="/webschool/News/news_list.jsp?typeId=news07">更多</a> <img src="/webschool/News/T/1/images/title_1_more.jpg" width="29" height="27" align="absmiddle" />&nbsp;</td>
+          </tr>
+        </table>
+
+          <table width="309" border="0" cellspacing="0" cellpadding="0" class="title_1_border">
+          <tr></tr>
+          <tr>
+            <td height="175" valign="top">
+
+            <table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+             
+			  
+			    
+       <table width='92%' align='center' border='0' cellpadding='0' cellspacing='0'>
+          
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007726" target="_blank">江苏省怀仁中学获“2017…</a>
+					 </td><td width='20%' align='center'>[03-20]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007659" target="_blank">江苏省怀仁中学喜获省级节水…</a>
+					 </td><td width='20%' align='center'>[12-11]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007515" target="_blank">节水宣传走进社区</a>
+					 </td><td width='20%' align='center'>[05-27]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007514" target="_blank">江苏省怀仁中学节水教育计划</a>
+					 </td><td width='20%' align='center'>[05-27]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007513" target="_blank">江苏省怀仁中学节水教育活动…</a>
+					 </td><td width='20%' align='center'>[05-27]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007512" target="_blank">节水工作领导小组名单及分工</a>
+					 </td><td width='20%' align='center'>[05-27]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007511" target="_blank">江苏省怀仁中学节水工作规划</a>
+					 </td><td width='20%' align='center'>[05-27]</td>
+              </tr>
+              
+		      <tr >
+                <td height='25' width="6" nowrap> .</td>
+                <td height='25' width='77%'>
+					   <a href="/webschool/News/news_detail.jsp?newsId=100007510" target="_blank">江苏省怀仁中学节水岗位责任…</a>
+					 </td><td width='20%' align='center'>[05-27]</td>
+              </tr>
+              
+        </table>
+
+
+              </td>
+          </tr>
+          </table>
+
+          </td>
+      </tr>
+    </table>
+
+    <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+
+    <table width="950" border="0" align="center" cellpadding="0" cellspacing="0" class="title_1">
+      <tr>
+        <td width="364" align="left">&nbsp;<img src="/webschool/News/images/title_xyjg.jpg" width="88" height="29" align="absmiddle" /></td>
+        <td width="363" align="right"><a href="/webschool/News/image_detail.jsp?typeId=news0104&moreType=1">更多</a> <img src="/webschool/News/T/1/images/title_1_more.jpg" width="29" height="27" align="absmiddle" />&nbsp;</td>
+      </tr>
+    </table>
+
+    <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="left">
+		
+		<div id="index_photo">
+        <table align="left" cellpadding="0" cellspace="0" border="0">
+          <tr>
+            <td id="index_photo1" valign="top">
+             
+            <table border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                 
+                 
+                
+                <td><a href="/webschool/News/image_detail.jsp?typeId=news0104&moreType=1&newsId=100007720" target="_blank"><img src="/webschool/xheditor/upload/ShortIcon/fcfcc2d1-75d9-4836-a376-a3a68120feed-firstimg.jpg" hspace="10"  width="141" height="97"/></a></td>
+               
+                
+						  <td width="20"></td>
+					
+                 
+                
+                <td><a href="/webschool/News/image_detail.jsp?typeId=news0104&moreType=1&newsId=100007721" target="_blank"><img src="/webschool/xheditor/upload/ShortIcon/868bfd54-dfcd-4512-a87d-ebddaea5d15d-firstimg.jpg" hspace="10"  width="141" height="97"/></a></td>
+               
+                
+						  <td width="20"></td>
+					
+                 
+                
+                <td><a href="/webschool/News/image_detail.jsp?typeId=news0104&moreType=1&newsId=100007722" target="_blank"><img src="/webschool/xheditor/upload/ShortIcon/ad009c1a-7a92-4e35-ac19-08d1931b1cb0-firstimg.jpg" hspace="10"  width="141" height="97"/></a></td>
+               
+                
+						  <td width="20"></td>
+					
+                 
+                
+                <td><a href="/webschool/News/image_detail.jsp?typeId=news0104&moreType=1&newsId=100007717" target="_blank"><img src="/webschool/xheditor/upload/ShortIcon/5cbb8279-45aa-4fb6-9ddb-1c3f0490d358-firstimg.jpg" hspace="10"  width="141" height="97"/></a></td>
+               
+                
+						  <td width="20"></td>
+					
+                 
+                
+                <td><a href="/webschool/News/image_detail.jsp?typeId=news0104&moreType=1&newsId=100007718" target="_blank"><img src="/webschool/xheditor/upload/ShortIcon/d54dcd48-ec41-40a5-92d2-205b317a19e3-firstimg.jpg" hspace="10"  width="141" height="97"/></a></td>
+               
+                
+						  <td width="20"></td>
+					
+                 
+                
+                <td><a href="/webschool/News/image_detail.jsp?typeId=news0104&moreType=1&newsId=100007719" target="_blank"><img src="/webschool/xheditor/upload/ShortIcon/8f1e471d-4113-404e-bacb-76da183fda3c-firstimg.jpg" hspace="10"  width="141" height="97"/></a></td>
+               
+                
+						  <td width="20"></td>
+					
+                 
+                
+                <td><a href="/webschool/News/image_detail.jsp?typeId=news0104&moreType=1&newsId=100007716" target="_blank"><img src="/webschool/xheditor/upload/ShortIcon/5e1d23b8-cfce-4bd3-83d7-8eebbf2131d2-firstimg.jpg" hspace="10"  width="141" height="97"/></a></td>
+               
+                
+						  <td width="20"></td>
+					
+                 
+                
+                <td><a href="/webschool/News/image_detail.jsp?typeId=news0104&moreType=1&newsId=100007715" target="_blank"><img src="/webschool/xheditor/upload/ShortIcon/dd243517-b93d-48d4-a7d8-e4abe51e05c6-firstimg.jpg" hspace="10"  width="141" height="97"/></a></td>
+               
+                
+              </tr>
+             
+              
+            </table>
+            
+            </td>
+            <td id="index_photo2" valign="top"></td>
+          </tr>
+        </table>
+        
+      </div>
+               <script>
+  var speed=20//速度数值越大速度越慢
+  index_photo2.innerHTML=index_photo1.innerHTML
+  function Marquee(){
+  if(index_photo2.offsetWidth-index_photo.scrollLeft<=0)
+  index_photo.scrollLeft-=index_photo1.offsetWidth
+  else{
+  index_photo.scrollLeft++
+  }
+  }
+  var MyMar=setInterval(Marquee,speed)
+  index_photo.onmouseover=function() {clearInterval(MyMar)}
+  index_photo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+  </script>
+        </td>
+      </tr>
+    </table>
+     <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table> 
+	
+	
+	
+	 <table width="950" border="0" align="center" cellpadding="0" cellspacing="0" class="title_1">
+      <tr>
+        <td width="364" align="left">&nbsp;<img src="/webschool/News/images/link_title.jpg" width="198" height="29" align="absmiddle" /></td>
+        <td width="363" align="right">&nbsp;</td>
+      </tr>
+    </table>
+    <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+     <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="left">
+			 
+			 
+			 <table>
+			   
+			    <Tr>
+				   
+
+				       <td><a href="http://xishan.qgjydd.cn" target="_blank"><img src="/webschool/xheditor/upload/ShortIcon/3b6e9d6e-7796-44a3-bbf4-dc8c46048c44-firstimg.png" width="140" height="32"/></a></td>
+				   
+					    <td width="10">&nbsp;</td>
+					  
+
+				       <td><a href="http://www.xsjyxxw.cn/web/index.aspx" target="_blank"><img src="/webschool/xheditor/upload/ShortIcon/d0ca7c5b-f8ce-45d0-a1dd-cff5e8b5a122-firstimg.jpg" width="140" height="32"/></a></td>
+				   
+					    <td width="10">&nbsp;</td>
+					  
+
+				       <td><a href="http://www.wxjy.com.cn" target="_blank"><img src="/webschool/xheditor/upload/ShortIcon/67994290-41d6-4c80-a2c7-0fb67bd27bb8-firstimg.jpg" width="140" height="32"/></a></td>
+				   
+					    <td width="10">&nbsp;</td>
+					  
+
+				       <td><a href="http://www.xsqwx.net" target="_blank"><img src="/webschool/xheditor/upload/ShortIcon/1-20131107102358.jpg" width="140" height="32"/></a></td>
+				   
+					    <td width="10">&nbsp;</td>
+					  
+
+				       <td><a href="http://www.ec.js.edu.cn/" target="_blank"><img src="/webschool/xheditor/upload/ShortIcon/31029366-8c2f-4e14-9615-3aff72bdc71d-firstimg.png" width="140" height="32"/></a></td>
+				   
+					    <td width="10">&nbsp;</td>
+					  
+
+				       <td><a href="http://s.wxjy.com.cn/" target="_blank"><img src="/webschool/xheditor/upload/ShortIcon/987bbfe1-431d-4238-9a77-daca669329ad-firstimg.png" width="140" height="32"/></a></td>
+				   
+				</Tr>
+				
+			 </table>
+			 
+        </td>
+      </tr>
+    </table>
+     <table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table> 
+	
+	
+	
+	
+    </td>
+  </tr>
+</table>
+
+<table width="982" border="0" align="center" cellpadding="0" cellspacing="0" id="pagefoot">
+  <tr>
+    <td valign="top">
+    <table width="980" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img src="/webschool/News/T//images/stripe.jpg" width="980" height="12" /></td>
+        </tr>
+    </table>
+
+    <table width="980" border="0" cellspacing="0" cellpadding="0" class="pattern">
+        <tr>
+          <td></td>
+        </tr>
+    </table>
+
+    <table width="980" border="0" cellspacing="0" cellpadding="0" id="copyright">
+      <tr>
+	    
+        <td align="center">
+
+		<table>
+		<tr>
+		<td align="left"><img src="/webschool/News/images/ewm.jpg" width="150" height="180" /></td>
+				<td><div align="left"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/11/178/1293/60498274/CA111781293604982740004.js' type='text/javascript'%3E%3C/script%3E"));</script></div></td>
+						<td> Copyright 2009 All Rights Reserved 江苏省怀仁中学 版权所有&nbsp; <a href="http://www.miibeian.gov.cn" target="_blank"><span style="color:#0000ff;">苏ICP备05047640号</span></a><br /><p>建议使用1024*768以上的屏幕分辨率和6.0以上版本的IE来访问本站</p><p>地址：江苏省无锡市锡山区东港镇东港路88号&nbsp; 电话：051088791510<br /></p>
+
+	 <p> 今日访问量：<b>558</b> 次&nbsp;&nbsp;&nbsp;当月访问量：<b>158201</b> 次&nbsp;&nbsp;&nbsp;总访问量：<b>1612256</b> 次</p>
+	 </td>
+		</tr>
+		</table>
+     </td>
+      </tr>
+	 
+    </table>
+    </td>
+  </tr>
+</table>
+
+
+<div id="main">
+  <div id="pop" style="display:none;">
+    <div id="popHead">
+        <a id="popClose" title="关闭">关闭</a>
+    </div>
+    <div id="popContent">
+   &nbsp;<a href="/webschool/News/news_detail.jsp?newsId=5371"><img alt="" src="/webschool/xheditor/upload/1/admin5/News/img/2011中招(1)1.jpg" /></a> 
+    </div>
+  </div>
+<script>
+    var popad=new Pop();
+</script>
+</div>
+
+</body>
+</html>

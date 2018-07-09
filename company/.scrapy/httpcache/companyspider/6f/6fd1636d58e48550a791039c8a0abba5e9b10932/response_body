@@ -1,0 +1,689 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=gb2312" /><link href="css/base.css" rel="stylesheet" type="text/css" /><link href="css/cssint.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="js/jquery.pack.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.peex.js"></script>
+
+<meta name="keywords" content="杭州市余杭区临平第一中学,临平一中" /><meta name="description" content="浙江省杭州市余杭区临平第一中学，始建于1978年，2013年5月整体搬迁至余杭区南苑街道南苑街501号，学校占地面积121.73亩，建筑面积4.9万平方米，设施设备一流，教室全面多媒体化，现有班级42个，在校学生1764人。" />
+<title>
+	杭州市余杭区临平第一中学
+</title></head>
+<body>
+    <div>
+     
+   
+    <div class="head">
+	<div class="head_top">
+    	<p><a href="javascript:void(0)"><script src="JS/Date.js"></script></a><a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.lpyz.com');" href="#">设为首页</a><a href="javascript:window.external.addFavorite('http://www.lpyz.com','临平第一中学');">加入收藏</a></p> <a href="/systestcomjun/Login.aspx" target="_blank">用户登陆</a><a href="http://www.114school.com/sso/" target="_blank">家校通</a><a href="http://old.lpyz.com" target="_blank">旧版回顾</a><a href="http://www.lpyz.com/Index.html" target="_blank">省资源网</a>
+   	 </div>
+
+	<div class="flash">
+	
+	<object height="246" width="980" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+        <param value="images/top.swf" name="movie" />
+        <param value="high" name="quality" />
+        <param value="transparent" name="wmode" /> 
+        <embed height="246" width="980" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" src="images/top.swf" wmode="transparent" ></embed>
+      </object>
+
+	</div>
+    <ul class="nav">
+    	<li><a href="index.aspx">网站首页</a></li>
+        <li><a href="/classinfo.aspx?classid=12">走进一中</a></li>
+        <li><a href="list.aspx?classid=2">校园动态</a></li>
+        <li><a href="list.aspx?classid=3">校务公开</a></li>
+        <li><a href="list.aspx?classid=5">教学教研</a></li>
+	<li><a href="list.aspx?classid=4">教育时空</a></li>
+        <li><a href="list.aspx?classid=6">党工园地</a></li>
+	<li><a href="/list2.aspx?classid=9">师生风采</a></li>
+        <li><a href="list.aspx?deep=1&classid=58">家校共建</a></li>
+        <li><a href="message.aspx?classid=11">校长信箱</a></li>
+    </ul>
+</div>
+        
+    <div class="mid">
+        <div style="clear: both">
+        </div>
+        <div class="marque">
+            <!-- 搜索 -->
+            <form action="list.aspx" method="get">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr>
+                        <td align="right">
+                            最新导读：
+                        </td>
+                        <td>
+                            <!-- 文字滚动 -->
+                            <div id="demo" class="qimo8">
+                                <div class="qimo">
+                                    <div id="demo1">
+                                        <ul>
+                                            
+                                                    <li><a href="/newshow.aspx?artid=4165&classid=48"
+                                                        target="_blank" title="市委常委、区委书记毛溪浩走访一中">
+                                                        市委常委、区委书记毛溪浩走访一中</a></li>
+                                                
+                                                    <li><a href="http://www.lpyz.com/ebook/index.html"
+                                                        target="_blank" title="请您欣赏：临平一中宣传画册">
+                                                        请您欣赏：临平一中宣传画册</a></li>
+                                                
+                                                    <li><a href="http://www.lpyz.com/classinfo.aspx?classid=14"
+                                                        target="_blank" title="请您欣赏：临平一中形象宣传片">
+                                                        请您欣赏：临平一中形象宣传片</a></li>
+                                                
+                                                    <li><a href="http://www.lpyz.com/newshow.aspx?artid=2921&classid=31"
+                                                        target="_blank" title="聚焦：临平一中课改宣传片">
+                                                        聚焦：临平一中课改宣传片</a></li>
+                                                
+                                        </ul>
+                                    </div>
+                                    <div id="demo2">
+                                    </div>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+                                var demo = document.getElementById("demo");
+                                var demo1 = document.getElementById("demo1");
+                                var demo2 = document.getElementById("demo2");
+                                demo2.innerHTML = document.getElementById("demo1").innerHTML;
+                                function Marquee() {
+                                    if (demo.scrollLeft - demo2.offsetWidth >= 0) {
+                                        demo.scrollLeft -= demo1.offsetWidth;
+                                    }
+                                    else {
+                                        demo.scrollLeft++;
+                                    }
+                                }
+                                var myvar = setInterval(Marquee, 100);
+                                demo.onmouseout = function () { myvar = setInterval(Marquee, 100); }
+                                demo.onmouseover = function () { clearInterval(myvar); }
+                            </script>
+                            <!-- 文字滚动 结束 -->
+                        </td>
+                        <td>
+                        </td>
+                        <td style="font-size: 12px;">
+                            站内搜索：
+                        </td>
+                        <td>
+                            <input id="search" name="filterkeyword" type="text" value="请输入关键字" style="border: #ccc solid 1px;
+                                height: 18px; width: 160px;">
+                        </td>
+                        <td>
+                            <input type="image" src="images/search_03.jpg">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <script language="JavaScript" type="text/javascript">
+                function addListener(element, e, fn) {
+                    if (element.addEventListener) {
+                        element.addEventListener(e, fn, false);
+                    } else {
+                        element.attachEvent("on" + e, fn);
+                    }
+                }
+                var values = document.getElementById("search");
+                addListener(values, "click", function () {
+                    if (values.value == "请输入关键字") { values.value = ""; }
+                })
+                addListener(values, "blur", function () {
+                    if (values.value == '') { values.value = "请输入关键字"; }
+                }) 
+                </script>
+            </form>
+            <div style="clear: both">
+            </div>
+        </div>
+        <!-- 搜索 结束 -->
+        <div style="clear: both">
+        </div>
+        <div class="bj ml">
+            <div class="tzgg">
+                <p class="t1">
+                    <a href="list.aspx?classid=18" id="more"></a>
+                    <img src="images/t1.gif" /></p>
+                <ul>
+                    
+            	<li><a href="newshow.aspx?artid=4191&classid=18">致家长的一封信:关注食品安全 共...</a></li>
+
+            	<li><a href="newshow.aspx?artid=4152&classid=18">喜迎余杭百姓日 共享教育硕果时</a></li>
+
+            	<li><a href="newshow.aspx?artid=4149&classid=18">关于2018年五一劳动节放假安排的...</a></li>
+
+            	<li><a href="newshow.aspx?artid=4148&classid=18">首届“余杭百姓日”临平一中“六...</a></li>
+
+            	<li><a href="newshow.aspx?artid=4127&classid=18">“垃圾不落地 校园更美丽”倡议书</a></li>
+
+            	<li><a href="newshow.aspx?artid=4123&classid=18">清明放假致家长一封信</a></li>
+
+            	<li><a href="newshow.aspx?artid=4121&classid=18">关于2018年清明节放假安排的通知</a></li>
+
+            	<li><a href="newshow.aspx?artid=4088&classid=18">关于开展余杭区100名“美德少年（...</a></li>
+
+
+                </ul>
+            </div>
+            <a href="/list2.aspx?classid=9" class="b1">
+                <img src="images/btn1.gif" /></a> <a href="list.aspx?deep=1&classid=58" class="b1">
+                    <img src="images/btn2.gif" /></a>  <a href="list.aspx?deep=1&classid=117" class="b1">
+                            <img src="images/btn5.gif" /></a><a href="list.aspx?classid=138" class="b1" target="_blank">
+                        <img src="images/btn_jydd.gif" /></a>
+            <div class="xzjy">
+                <div class="jy"> <a style="cursor:default" class="b2"><img src="images/tjq2015.jpg" border="0"/></a>
+                    
+                    <p style="line-height:25px;"><span>校长：</span>唐建强<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（任职：2015年8月——）<br />
+                      <span>寄语：</span>教育思想的产生来自于追求，教育水平的提高源于责任，教育教学成绩的攀升需要勤奋耕耘。因为每一个学生都是珍贵地存在，所以我们有义务引知识之泉，叩心灵之门，启智慧之锁，用爱心去浇灌、用真情去感化、用智慧去启迪、用人格去熏陶、用理想去塑造这一个个充满希...<a href="http://www.lpyz.com/newshow.aspx?artid=967&classid=27" target="_blank" style="color:#F00;">更多寄语&gt;&gt;</a><br />
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bj mr">
+            <div class="xydt">
+                <div class="t1">
+                    <table border="0" cellspacing="0" cellpadding="0" style="float: left;">
+                        <tbody>
+                            <tr>
+                                <td width="117">
+                                    <img src="images/t3.gif">
+                                </td>
+                                <td width="430">
+                                    <img src="images/shan.jpg">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="list.aspx?classid=2" id="more"></a>
+                </div>
+                <script language="JavaScript" type="text/javascript">
+                    function addListener(element, e, fn) {
+                        if (element.addEventListener) {
+                            element.addEventListener(e, fn, false);
+                        } else {
+                            element.attachEvent("on" + e, fn);
+                        }
+                    }
+                    var values = document.getElementById("search");
+                    addListener(values, "click", function () {
+                        if (values.value == "请输入关键字") { values.value = ""; }
+                    })
+                    addListener(values, "blur", function () {
+                        if (values.value == '') { values.value = "请输入关键字"; }
+                    }) 
+                </script>
+                <div class="bj2">
+                    <div class="fl" style="padding: 15px 22px 10px 20px;">
+                        
+ <embed height="210" width="270" pluginspage="http://www.macromedia.com/go/getflashplayer"  type="application/x-shockwave-flash" quality="high" menu="false" flashvars="borderwidth=270&amp;borderheight=180&amp;textheight=28&amp;interval_time=6&amp;pics=/files/TitlePics/76f9990a-1054-439f-8283-b8587bc1fc7c/s_20180528105422.jpg|/files/TitlePics/6ad58569-cc90-4e16-80cb-061037826d1a/s_20180528105743.jpg|/files/TitlePics/73ee9277-3e45-462a-85fe-540071ff7b20/s_20180525145927.jpg|/files/TitlePics/804d4684-208b-4891-bed8-6e4b4614e05b/lADPBbCc1crBOJ_NAfHNAfE_497_497.jpg|/files/TitlePics/df61601e-0670-4894-88b4-2ea542ef4fe1/s_20180525085713.jpg&amp;links=newshow.aspx?artid=4214|newshow.aspx?artid=4212|newshow.aspx?artid=4210|newshow.aspx?artid=4209|newshow.aspx?artid=4208&amp;texts=八公里野外拉练，累并快乐着——八年级国防教育系列...|不负青春 不负梦——八年级国防教育开营仪式|心理健康教育活动月之心理手抄报与心理漫画评比活动|临平一中第五届“新城·乐毅杯”校园足球赛拉开帷幕|我校积极开展“崇尚英雄 精忠报国”主题班会活动&amp;" wmode="opaque" src="swf/focus.swf">
+
+                    </div>
+                    <ul>
+                        <p><a href='newshow.aspx?artid=4161&classid=17'><span>市委常委、区委书记毛溪浩走访一中</span>五月的临平一中，草木葱翠，鲜花盛开，生机...</a></p>
+
+        <li><a href="newshow.aspx?artid=4214&classid=17" target="_blank"><span>05-28</span>八公里野外拉练，累并快乐着——八...</a><img src='/images/new.gif' border='0' /><a href='#' style='display:none;'></a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4212&classid=17" target="_blank"><span>05-27</span>不负青春 不负梦——八年级国防教育开营...</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4210&classid=17" target="_blank"><span>05-25</span>心理健康教育活动月之心理手抄报与心理...</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4209&classid=17" target="_blank"><span>05-25</span>临平一中第五届“新城·乐毅杯”校园足...</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4208&classid=17" target="_blank"><span>05-25</span>我校积极开展“崇尚英雄 精忠报国”主题...</a></li>
+        
+    
+
+                    </ul>
+                </div>
+            </div>
+            <div class="xwgk mr20">
+                <p class="t1">
+                    <a href="list.aspx?classid=3" id="more"></a>
+                    <img src="images/t4.gif" /></p>
+                <ul>
+                    
+
+        <li><a href="newshow.aspx?artid=4211&classid=19" target="_blank"><span>05-25</span>2017学年第二学期第十三周工作安排</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4192&classid=19" target="_blank"><span>05-18</span>2017学年第二学期第十二周工作安排</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4181&classid=19" target="_blank"><span>05-12</span>2017学年第二学期第十一周工作安排</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4164&classid=19" target="_blank"><span>05-04</span>2017学年第二学期第十周工作安排</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4150&classid=19" target="_blank"><span>04-28</span>2017学年第二学期第九周工作安排</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4147&classid=19" target="_blank"><span>04-20</span>2017学年第二学期第八周工作安排</a></li>
+        
+    
+
+                </ul>
+            </div>
+            <div class="jyjx">
+                <p class="t1">
+                    <a href="list.aspx?classid=5" id="more"></a>
+                    <img src="images/t5.gif" /></p>
+                <ul>
+                    
+
+        <li><a href="newshow.aspx?artid=4206&classid=32" target="_blank"><span>05-24</span>临平、塘栖学区初中信息技术课堂教学研讨</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4184&classid=32" target="_blank"><span>05-14</span>临平一中社政组组内教研活动</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4176&classid=32" target="_blank"><span>05-09</span>课堂展示亮风采 集思广益促发展</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4162&classid=32" target="_blank"><span>05-04</span>余杭区五月教研安排</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4144&classid=32" target="_blank"><span>04-20</span>课堂展风采，专业促成长</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4141&classid=32" target="_blank"><span>04-19</span>集思广益，备战中考——余杭区九年级英...</a></li>
+        
+    
+
+                </ul>
+            </div>
+            <div class="ad">
+                
+  <a href=""><img src="/files/adimg/adhxjz.jpg"></a>
+
+
+            </div>
+            <div class="ygxz mr20">
+                <p class="t1">
+                    <a href="list.aspx?classid=4" id="more"></a>
+                    <img src="images/t9.gif" /></p>
+                <ul>
+                    
+
+        <li><a href="newshow.aspx?artid=4213&classid=27" target="_blank"><span>05-28</span>诚信考试主题讲话</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4201&classid=27" target="_blank"><span>05-22</span>2017学年第二学期三项竞赛公示（第十一...</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4200&classid=27" target="_blank"><span>05-22</span>2017学年第二学期三项竞赛公示（第十周）</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4199&classid=27" target="_blank"><span>05-22</span>2017学年第二学期三项竞赛公示（第九周）</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4197&classid=52" target="_blank"><span>05-21</span>防溺水安全知识——珍爱生命,安全第一</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4196&classid=52" target="_blank"><span>05-21</span>致家长的一封信(预防登革热)</a></li>
+        
+    
+
+                </ul>
+            </div>
+            <div class="ygxz">
+                <p class="t1">
+                    <a href="list.aspx?classid=6" id="more"></a>
+                    <img src="images/t10.gif" /></p>
+                <ul>
+                    
+
+        <li><a href="newshow.aspx?artid=4154&classid=35" target="_blank"><span>04-28</span>加强作风建设，推进全面从严治党</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4134&classid=35" target="_blank"><span>04-11</span>我校党委开展“弘扬红船精神，争当时代...</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4104&classid=35" target="_blank"><span>03-26</span>党员教师赴陈家木桥社区开展活动</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4049&classid=35" target="_blank"><span>02-03</span>临平一中党委专题组织生活会暨民主评议...</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4041&classid=35" target="_blank"><span>01-25</span>临平一中固定主题党日暨冬训春训集中学...</a></li>
+        
+    
+        <li><a href="newshow.aspx?artid=4001&classid=35" target="_blank"><span>12-25</span>党风廉政专题教育</a></li>
+        
+    
+
+                </ul>
+            </div>
+            <div class="xyfg">
+                <p class="t1">
+                    <a href="pic.aspx?classid=15" id="more"></a>
+                    <img src="images/t8.gif" /></p>
+                <div class="rollBox bj3">
+                    <a class="LeftBotton" onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()" onmouseout="ISL_StopUp()">
+                    </a>
+                    <div class="Cont" id="ISL_Cont">
+                        <div class="ScrCont">
+                            <ul id="List1">
+                                <!-- 图片列表 begin -->
+                                
+<li class="pic"><a class="imgBorder" href="newshow.aspx?artid=3788&classid=15" target="_blank">
+    <img height="98" alt="又是一年枇杷季" src="/files/TitlePics/89897888-3db4-4279-8813-54271a4ee961/s_20170517142126.jpg" width="129" border="0"></a>
+    <p>
+        <a href="newshow.aspx?artid=3788&classid=15" target="_blank">又是一年枇杷季</a></p>
+</li>
+
+<li class="pic"><a class="imgBorder" href="newshow.aspx?artid=3152&classid=15" target="_blank">
+    <img height="98" alt="校园里生机勃勃，春意盎然。" src="/files/TitlePics/fae0737b-1da1-4aaf-9d4d-f9af4d6e703e/s_20160329091514.jpg" width="129" border="0"></a>
+    <p>
+        <a href="newshow.aspx?artid=3152&classid=15" target="_blank">校园里生机勃勃，春意...</a></p>
+</li>
+
+<li class="pic"><a class="imgBorder" href="newshow.aspx?artid=2787&classid=15" target="_blank">
+    <img height="98" alt="临平一中第35届运动会精彩瞬间回顾" src="/files/TitlePics/0d45e0b7-cd3d-4a7d-adbc-255bdb3b832e/s_20151020200748.jpg" width="129" border="0"></a>
+    <p>
+        <a href="newshow.aspx?artid=2787&classid=15" target="_blank">临平一中第35届运动会...</a></p>
+</li>
+
+<li class="pic"><a class="imgBorder" href="newshow.aspx?artid=2609&classid=15" target="_blank">
+    <img height="98" alt="党员活动中心" src="/files/TitlePics/a3aebc65-88c7-453a-86f5-ecc7bbe466ad/s_20150709213949.jpg" width="129" border="0"></a>
+    <p>
+        <a href="newshow.aspx?artid=2609&classid=15" target="_blank">党员活动中心</a></p>
+</li>
+
+<li class="pic"><a class="imgBorder" href="newshow.aspx?artid=2515&classid=15" target="_blank">
+    <img height="98" alt="雨后校园" src="/files/TitlePics/57b240bb-b2d7-4b6b-b225-868760b7a609/s_20150616162242.jpg" width="129" border="0"></a>
+    <p>
+        <a href="newshow.aspx?artid=2515&classid=15" target="_blank">雨后校园</a></p>
+</li>
+
+<li class="pic"><a class="imgBorder" href="newshow.aspx?artid=2400&classid=15" target="_blank">
+    <img height="98" alt="花儿开了，果子熟了" src="/files/TitlePics/e29c39b6-e383-45da-99c3-279b187a07d2/s_20150519182339.jpg" width="129" border="0"></a>
+    <p>
+        <a href="newshow.aspx?artid=2400&classid=15" target="_blank">花儿开了，果子熟了</a></p>
+</li>
+
+<li class="pic"><a class="imgBorder" href="newshow.aspx?artid=751&classid=15" target="_blank">
+    <img height="98" alt="春天的校园" src="/files/TitlePics/ed0ddac5-39bf-42c2-af50-6a8b03ee0b98/20140401144137.jpg" width="129" border="0"></a>
+    <p>
+        <a href="newshow.aspx?artid=751&classid=15" target="_blank">春天的校园</a></p>
+</li>
+
+<li class="pic"><a class="imgBorder" href="newshow.aspx?artid=401&classid=15" target="_blank">
+    <img height="98" alt="翁梅桥" src="/files/TitlePics/266c0e8b-a659-4192-ad7f-f72ab2f2bd29/s_20140114204741.jpg" width="129" border="0"></a>
+    <p>
+        <a href="newshow.aspx?artid=401&classid=15" target="_blank">翁梅桥</a></p>
+</li>
+
+<li class="pic"><a class="imgBorder" href="newshow.aspx?artid=400&classid=15" target="_blank">
+    <img height="98" alt="荷塘桥" src="/files/TitlePics/da0869dd-ab42-4f2a-92d3-a8b5112b14c3/s_20140114204658.jpg" width="129" border="0"></a>
+    <p>
+        <a href="newshow.aspx?artid=400&classid=15" target="_blank">荷塘桥</a></p>
+</li>
+
+<li class="pic"><a class="imgBorder" href="newshow.aspx?artid=399&classid=15" target="_blank">
+    <img height="98" alt="景星桥" src="/files/TitlePics/74aba458-83e1-4551-bfb3-3630eb0172d5/s_20140114204621.jpg" width="129" border="0"></a>
+    <p>
+        <a href="newshow.aspx?artid=399&classid=15" target="_blank">景星桥</a></p>
+</li>
+
+
+
+                                <!-- 图片列表 end -->
+                            </ul>
+                            <div id="List2">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="RightBotton" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()">
+                    </a>
+                    <script src="js/rollbox1.js" type="text/javascript"></script>
+                </div>
+            </div>
+        </div>
+        <div class="mm bj">
+            <div class="links2">
+                <table width="100%" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        
+<tr align="center">
+
+          <td width="10%"><a href="http://www.yhjy.gov.cn                                                                                                                                                                                                                                         " target="_blank" title="网站名称：余杭教育网                         
+        网站地址：http://www.yhjy.gov.cn                                                                                                                                                                                                                                         
+        网站简介："><img src="/files/images/yhjyw.gif                                                                                                                                                                                                                                        " width="88" height="31" border="0"></a></td>
+        
+          <td width="10%"><a href="http://www.ebooo.cn/                                                                                                                                                                                                                                           " target="_blank" title="网站名称：智慧校园                          
+        网站地址：http://www.ebooo.cn/                                                                                                                                                                                                                                           
+        网站简介："><img src="/files/images/xpd_logo.jpg                                                                                                                                                                                                                                     " width="88" height="31" border="0"></a></td>
+        
+          <td width="10%"><a href="http://zzw.hzedu.net/                                                                                                                                                                                                                                          " target="_blank" title="网站名称：杭州市学生资助网                      
+        网站地址：http://zzw.hzedu.net/                                                                                                                                                                                                                                          
+        网站简介："><img src="/files/images/hzxszzw.gif                                                                                                                                                                                                                                      " width="88" height="31" border="0"></a></td>
+        
+          <td width="10%"><a href="http://www.teacher.com.cn/                                                                                                                                                                                                                                     " target="_blank" title="网站名称：中小学教师培训                       
+        网站地址：http://www.teacher.com.cn/                                                                                                                                                                                                                                     
+        网站简介："><img src="/files/images/zxxjspx.gif                                                                                                                                                                                                                                      " width="88" height="31" border="0"></a></td>
+        
+          <td width="10%"><a href="http://www.zjedu.gov.cn                                                                                                                                                                                                                                        " target="_blank" title="网站名称：浙江省教育厅                        
+        网站地址：http://www.zjedu.gov.cn                                                                                                                                                                                                                                        
+        网站简介："><img src="/files/images/zjjyt.jpg                                                                                                                                                                                                                                        " width="88" height="31" border="0"></a></td>
+        
+          <td width="10%"><a href="http://www.hzedu.gov.cn/sites/main/default.aspx                                                                                                                                                                                                                " target="_blank" title="网站名称：杭州教育网                         
+        网站地址：http://www.hzedu.gov.cn/sites/main/default.aspx                                                                                                                                                                                                                
+        网站简介："><img src="/files/images/hzjycyw2.jpg                                                                                                                                                                                                                                     " width="88" height="31" border="0"></a></td>
+        
+          <td width="10%"><a href="http://www.zjjd.org                                                                                                                                                                                                                                            " target="_blank" title="网站名称：浙江禁毒网                         
+        网站地址：http://www.zjjd.org                                                                                                                                                                                                                                            
+        网站简介："><img src="/files/images/02.jpg                                                                                                                                                                                                                                           " width="88" height="31" border="0"></a></td>
+        
+          <td width="10%"><a href="http://www.yuhang.gov.cn/                                                                                                                                                                                                                                      " target="_blank" title="网站名称：余杭区政府网                        
+        网站地址：http://www.yuhang.gov.cn/                                                                                                                                                                                                                                      
+        网站简介："><img src="/files/images/yhzf.jpg                                                                                                                                                                                                                                         " width="88" height="31" border="0"></a></td>
+        
+          <td width="10%"><a href="http://pxglpt.zjedu.gov.cn                                                                                                                                                                                                                                     " target="_blank" title="网站名称：教师培训管理平台                      
+        网站地址：http://pxglpt.zjedu.gov.cn                                                                                                                                                                                                                                     
+        网站简介："><img src="/files/images/20130624110121703.jpg                                                                                                                                                                                                                            " width="88" height="31" border="0"></a></td>
+        
+          <td width="10%"><a href="http://www.21cnjy.com                                                                                                                                                                                                                                          " target="_blank" title="网站名称：21教育网（教案、课件、习题、试卷资源下载）        
+        网站地址：http://www.21cnjy.com                                                                                                                                                                                                                                          
+        网站简介："><img src="/files/images/logo.gif                                                                                                                                                                                                                                         " width="88" height="31" border="0"></a></td>
+        
+        
+            </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="links">
+                
+
+<select name="select" size="1" onchange='javascript:if(this.value!=""){window.open(this.options[this.selectedIndex].value);}'>
+    <option value="">
+        余杭区内学校                        </option>
+    
+            <option value="http://www.zjhzyg.net/                                                                                                                                                                                                                                         ">
+                余杭高级中学</option>
+        
+            <option value="http://www.yerg.net/                                                                                                                                                                                                                                           ">
+                余杭第二高级中学</option>
+        
+            <option value="http://www.hzyhzhx.com/                                                                                                                                                                                                                                        ">
+                余杭中学</option>
+        
+            <option value="http://www.tqzx.com.cn/                                                                                                                                                                                                                                        ">
+                塘栖中学</option>
+        
+            <option value="http://www.hzpyzx.net/                                                                                                                                                                                                                                         ">
+                瓶窑中学</option>
+        
+            <option value="http://www.qszz.net                                                                                                                                                                                                                                            ">
+                乔司中学</option>
+        
+            <option value="http://www.yhsyzx.cn/                                                                                                                                                                                                                                          ">
+                余杭实验中学</option>
+        
+            <option value="http://www.lpzg.com/                                                                                                                                                                                                                                           ">
+                临平职高</option>
+        
+            <option value="http://www.yhrtvu.com/                                                                                                                                                                                                                                         ">
+                社区学院</option>
+        
+            <option value="http://www.hzlzzg.com/                                                                                                                                                                                                                                         ">
+                良渚职高</option>
+        
+            <option value="http://www.hzqszg.com/                                                                                                                                                                                                                                         ">
+                乔司职高</option>
+        
+            <option value="http://www.hzxlzg.com/                                                                                                                                                                                                                                         ">
+                闲林职高</option>
+        
+            <option value="http://www.lpcdzx.com                                                                                                                                                                                                                                          ">
+                临平城东中学</option>
+        
+            <option value="http://www.yhlpwz.com/                                                                                                                                                                                                                                         ">
+                临平第五中学</option>
+        
+            <option value="http://www.lpsz.net                                                                                                                                                                                                                                            ">
+                临平三中</option>
+        
+            <option value="http://www.tqez.net                                                                                                                                                                                                                                            ">
+                塘栖二中</option>
+        
+            <option value="http://www.zjyhsx.com/                                                                                                                                                                                                                                         ">
+                实验小学</option>
+        
+            <option value="http://www.lpyx.net/                                                                                                                                                                                                                                           ">
+                临平一小</option>
+        
+</select>
+
+                
+
+<select name="select" size="1" onchange='javascript:if(this.value!=""){window.open(this.options[this.selectedIndex].value);}'>
+    <option value="">
+        余杭区内网站                        </option>
+    
+            <option value="http://www.yuhang.gov.cn/                                                                                                                                                                                                                                      ">
+                余杭门户网</option>
+        
+            <option value="http://www.yu-tu.com/                                                                                                                                                                                                                                          ">
+                余杭图书馆</option>
+        
+            <option value="http://www.eyh.cn                                                                                                                                                                                                                                              ">
+                余杭网</option>
+        
+            <option value="http://www.yhjy.net/                                                                                                                                                                                                                                           ">
+                余杭教育网</option>
+        
+            <option value="http://yhcb.eyh.cn/html/2015-03/26/node_1.htm                                                                                                                                                                                                                  ">
+                余杭晨报</option>
+        
+</select>
+
+                
+
+<select name="select" size="1" onchange='javascript:if(this.value!=""){window.open(this.options[this.selectedIndex].value);}'>
+    <option value="">
+        国内教育网站                        </option>
+    
+            <option value="http://www.moe.gov.cn/                                                                                                                                                                                                                                         ">
+                中华人民共和国教育部</option>
+        
+            <option value="http://www.shmec.gov.cn/                                                                                                                                                                                                                                       ">
+                上海教育</option>
+        
+            <option value="http://www.zjjys.org/                                                                                                                                                                                                                                          ">
+                浙江教研网</option>
+        
+            <option value="http://www.newywedu.net/                                                                                                                                                                                                                                       ">
+                新语文教育网</option>
+        
+            <option value="http://www.hzedu.gov.cn/sites/main/default.aspx                                                                                                                                                                                                                ">
+                杭州教育网</option>
+        
+            <option value="http://www.daonan.com/                                                                                                                                                                                                                                         ">
+                在线繁体字转换</option>
+        
+            <option value="http://res.hzedu.net/derup/gate/res.index.php                                                                                                                                                                                                                  ">
+                教学资源库</option>
+        
+            <option value="http://www.zgpy.com.cn/                                                                                                                                                                                                                                        ">
+                浙江省教育技术中心</option>
+        
+            <option value="http://www.yhjy.gov.cn                                                                                                                                                                                                                                         ">
+                余杭教育网</option>
+        
+            <option value="http://www.pep.com.cn/                                                                                                                                                                                                                                         ">
+                人民教育出版社</option>
+        
+            <option value="http://www.chinateacher.com.cn/                                                                                                                                                                                                                                ">
+                中国教师报</option>
+        
+</select>
+
+                
+
+<select name="select" size="1" onchange='javascript:if(this.value!=""){window.open(this.options[this.selectedIndex].value);}'>
+    <option value="">
+        教师培训网站                        </option>
+    
+            <option value="http://pxglpt.zjedu.gov.cn/                                                                                                                                                                                                                                    ">
+                浙江省师训平台</option>
+        
+            <option value="http://jyjs.zjedu.org/                                                                                                                                                                                                                                         ">
+                教师教育技术能力培训</option>
+        
+            <option value="http://www.zjer.cn/                                                                                                                                                                                                                                            ">
+                浙江教育资源网</option>
+        
+            <option value="http://train.teacherclub.com.cn/                                                                                                                                                                                                                               ">
+                中国教师研修网</option>
+        
+            <option value="http://yun.zjer.cn                                                                                                                                                                                                                                             ">
+                一师一课晒课网</option>
+        
+            <option value="http://www.jspxedu.cn                                                                                                                                                                                                                                          ">
+                中国教师教育视频网</option>
+        
+</select>
+
+            </div>
+        </div>
+    </div>
+    <script src="/ad/duilian_jr.js"></script>
+    <!--start 节庆统一对联JS-->
+	<script src="http://www.netover.net/ad/duilian_all.js"></script>
+    <script src="/ad/piaoes.js" type="text/javascript"></script> 
+    <!--end-->
+
+		
+        <div class="foot">
+		<table width="100%" border="0">
+		  <tr>
+			<td width="20%"><span style="float:left; padding-left:20px;"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/12/186/1390/41356542/CA121861390413565420002.js' type='text/javascript'%3E%3C/script%3E"));</script> </span></td>
+			<td width="60%" align="left"><span style="padding-left:50px;">Copyright &copy; 2004-2020 杭州市余杭区临平第一中学 版权所有  浙ICP备11053664号</span><br /><span style="padding-left:30px;">学校总机：0571-86225898　学校地址：杭州市余杭区临平南苑街501号 邮政编码：311100</span><br /><span style="padding-left:50px;">
+<!--公安备案代码开始-->
+<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002010792">浙公网安备33011002010792号</a>
+<!--公安备案代码结束-->
+设计制作及技术支持：<a href="http://www.netover.net" target="_blank">杭州网尽信息科技有限公司</a></span><script language="JavaScript"> 
+     var __cc_uid="lpyz"; 
+</script><script language="JavaScript" 
+    src="http://count.311100.com/count.js"> 
+</script> </td>
+		  </tr>
+		</table>
+				
+		
+		</div>
+    </div>
+<!--script src="/ad/couplet/couplet.js" type="text/javascript"></script-->
+
+</body>
+</html>
+

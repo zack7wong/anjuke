@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    	<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    	<title>湖南农业大学东方科技学院欢迎您! Orient Science & Technology College of Hunan Agricultural Unive</title>
+    	<link rel="stylesheet" type="text/css" href="./images/bootstrap.min.css">
+    	<link rel="stylesheet" type="text/css" href="./images/pgwslider.min.css">
+		<link rel="stylesheet" type="text/css" href="./images/common.css">
+		<link rel="stylesheet" type="text/css" href="./images/index.css"> 
+		<script src="./images/jquery.min.js"></script>
+		<script src="./images/bootstrap.min.js"></script>
+		<script src="./images/pgwslider.min.js"></script>
+		<!--[if lte IE 9]>
+		    <script src="./images/respond.min.js"></script>
+		    <script src=./images/html5shiv.min.js"></script>
+		<![endif]--> 
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(document).ready(function() {
+			    	$('.pgwSlider').pgwSlider();
+				});
+			});
+		</script>
+<style>
+.addr p a{color:#fff;}
+</style>
+</head>
+<body>
+	<header>	
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"> 
+						<span class="sr-only">Toggle navigation</span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+					</button>
+					<h1>
+						<a class="logo" href="/">
+							<img src="./images/logo.png" title="东方科技学院" alt="东方科技学院" />
+						</a>	
+					</h1>	 								
+				</div>
+				<div class="col-lg-3 col-md-5 pull-right search">
+                <div class="search-form form-inline">
+					<div class="form-group head-search">
+                        <input name="q" id="search" class="form-control" placeholder="" value="" type="text" />
+					</div>
+					 <a id="tongyongsoso" target="_blank" style="cursor: pointer;"><button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search" aria-hidden="true"></i></button></a>
+                  </div>
+          <script>
+          var tongyongsoso = document.getElementById("tongyongsoso");
+          tongyongsoso.onclick=function(){ 
+          var judge = $(".form-control")[0];
+          var val = judge.value;
+           if(val.indexOf("请输入关键词")!=-1){
+             val = "*";
+            }
+            val = encodeURI(val);
+            window.location.href="http://10.8.9.28:8080/pub/search/?keywords="+val ;
+            }
+          </script>
+				</div>
+				
+				<div id="navbar" class="collapse navbar-collapse menu">
+					<ul class="nav navbar-nav ">
+						<li class="active"><a href="./">首　　页</a></li>
+			
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown">学院概况<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+                        
+                          <li><a href="./xygk/xyjj/">学院简介</a></li>
+                        
+                          <li><a href="./xygk/yhyx/">院徽院训</a></li>
+                        
+                          <li><a href="./xygk/ldbz/">领导班子</a></li>
+                        
+                          <li><a href="./xygk/jgsz/">机构设置</a></li>
+                        
+                          <li><a href="./xygk/bgdh/">办公电话</a></li>
+                        
+					</ul>
+            </li>
+            
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown">科学研究<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+                        
+                          <li><a href="./kxyj/sjyj/">大创计划</a></li>
+                        
+					</ul>
+            </li>
+            
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown">党的建设<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+                        
+                          <li><a href="./ddjs/djxw/">党建新闻</a></li>
+                        
+                          <li><a href="./ddjs/zczd/">政策制度</a></li>
+                        
+					</ul>
+            </li>
+            
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown">招生就业<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+                        
+                          <li><a href="./zsjy/zsw/">招生网</a></li>
+                        
+                          <li><a href="./zsjy/jyw/">就业网</a></li>
+                        
+                          <li><a href="./zsjy/cyw/">创业网</a></li>
+                        
+					</ul>
+            </li>
+            
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown">人才培养<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+                        
+                          <li><a href="./rcpy/bkjy/">本科教育</a></li>
+                        
+                          <li><a href="./rcpy/jpkc/">精品课程</a></li>
+                        
+					</ul>
+            </li>
+            
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown">团学工作<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+                        
+                          <li><a href="./txgz/xsgzb/">学生工作部</a></li>
+                        
+                          <li><a href="./txgz/tw/">团委</a></li>
+                        
+                          <li><a href="./txgz/xljkjy/">心理健康教育</a></li>
+                        
+					</ul>
+            </li>
+            
+            
+					</ul>
+				</div>
+				<div id="myCarousel" class="carousel slide">
+				    <div class="carousel-inner">
+                        
+				        <div class="item active">
+				            <img src="./qtdh/sydt/201805/W020180503593055483247.jpg" alt="<a href="./qtdh/sydt/201805/t20180503_227481.html">五四青年节</a>" width="1190" height="416" />
+				           
+				        </div>
+                      
+                        
+				        <div class="item">
+				            <img src="./qtdh/sydt/201804/W020180429543418696402.jpg" alt="<a href="./qtdh/sydt/201804/t20180429_226760.html">五一劳动节</a>" width="1190" height="416" />
+				            
+				        </div>
+                        
+				        <div class="item">
+				            <img src="./qtdh/sydt/201804/W020180426299066665071.jpg" alt="<a href="./qtdh/sydt/201804/t20180426_226519.html">心理健康月</a>" width="1190" height="416" />
+				            
+				        </div>
+                        
+				    </div>
+				    <!-- 轮播（Carousel）导航 -->
+				    <a class="carousel-control left" href="#myCarousel" data-slide="prev"><i class="prev"></i></a>
+				    <a class="carousel-control right" href="#myCarousel"  data-slide="next"><i class="next"></i></a>
+				</div>
+			</div>		
+		</nav>
+</header>
+	<section>
+		<div class="container">
+			<div class="graphic lwrap ">
+				<h4 class="icon">图文东方</h4>
+				<div class="row">
+					<div class="col-md-7 col-xs-12">
+						<div class="m">
+							<ul class="pgwSlider">
+                            
+								<li><img src="./xyxw/201805/W020180525333235706673.jpg" /><span><a href="./xyxw/201805/t20180525_229757.html" target="_blank">米正华教授为学院党员作学习贯彻十九大精神专题培训</a></span></li>
+                             
+								<li><img src="./xyxw/201805/W020180522312199563529.jpg" /><span><a href="./xyxw/201805/t20180522_229534.html" target="_blank">爱聚千龙  “益”起同行——学院开展爱心助残公益活动</a></span></li>
+                             
+								<li><img src="./xyxw/201805/W020180521417540780754.jpg" /><span><a href="./xyxw/201805/t20180521_229499.html" target="_blank">学院举行2018年课堂教学竞赛</a></span></li>
+                             
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-5 col-xs-12">
+					  <div class="article-lwrap">
+                          
+							<h5 class="item-title">学院召开“马工程”重点教材统一使用工作推进会</h5>
+							<span class="item-time"><time class="pull-right">2018-05-28</time></span>
+							<p class="item-txt"><br/>　　本网讯（教务部  魏坚）5月25日，学院在九教南209室召开马克思主义理论研究与建设工程重点教材统一使用工作推进会，学院党委书记周其林、副院长刘湘辉及教务部负责人、公共课部负责人、思政教研室全体教师参...</p>
+							<div class="item-info pull-right"><a href="./xyxw/201805/t20180528_229865.html" target="_blank">详细内容<i class="glyphicon glyphicon-triangle-right"></i></a></div>
+                          
+						</div>
+					</div>
+				</div>	
+			</div>
+
+			<div class="lwrap">
+				<div class="row">
+					<div class="col-md-6 col-xs-12">
+						<h4 class="icon">学院新闻<span class="pull-right pgr20"><a href="./xyxw/">更多&gt;&gt;</a></span></h4>
+						<ul class="news-list">
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./xyxw/201805/t20180525_229794.html" target="_blank" title="2018年“腾讯王卡杯”湖南省大学生电子商务大赛湖南农业大学东方科技学院选拔赛圆满结束">2018年“腾讯王卡杯”湖南省大学生电子商务大赛湖...</a>
+								</div>
+							</li>
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./xyxw/201805/t20180525_229757.html" target="_blank" title="米正华教授为学院党员作学习贯彻十九大精神专题培训">米正华教授为学院党员作学习贯彻十九大精神专题培训</a>
+								</div>
+							</li>
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./xyxw/201805/t20180522_229534.html" target="_blank" title="爱聚千龙  “益”起同行——学院开展爱心助残公益活动">爱聚千龙  “益”起同行——学院开展爱心助残公益活动</a>
+								</div>
+							</li>
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./xyxw/201805/t20180521_229499.html" target="_blank" title="学院举行2018年课堂教学竞赛">学院举行2018年课堂教学竞赛</a>
+								</div>
+							</li>
+                        
+						</ul>
+					</div>
+					<div class="col-md-6 col-xs-12">
+				    <h4 class="icon">通知公告<span class="pull-right pgr20"><a href="./tzgg/">更多&gt;&gt;</a></span></h4>
+						<ul class="news-list">
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./tzgg/201805/t20180523_229644.html" target="_blank" title="2018年湖南农业大学东方科技学院外聘兼职教师公开招聘信息">2018年湖南农业大学东方科技学院外聘兼职教师公开...</a>
+								</div>
+							</li>
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./tzgg/201805/t20180521_229498.html" target="_blank" title="关于学院2018年课堂教学竞赛结果的公示">关于学院2018年课堂教学竞赛结果的公示</a>
+								</div>
+							</li>
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./tzgg/201805/t20180516_228746.html" target="_blank" title="毕业生安全注意事项">毕业生安全注意事项</a>
+								</div>
+							</li>
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./tzgg/201805/t20180516_228747.html" target="_blank" title="关于毕业生文明离校的公告">关于毕业生文明离校的公告</a>
+								</div>
+							</li>
+                        
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="lwrap">
+				<div class="row">
+					<div class="col-md-6 col-xs-12">
+						<h4 class="icon">学部新闻<span class="pull-right pgr20"><a href="./xbxw/">更多&gt;&gt;</a></span></h4>
+						<ul class="news-list">
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./xbxw/201805/t20180525_229793.html" target="_blank" title="经管学部与工学院宣传工作交流会成功举行">经管学部与工学院宣传工作交流会成功举行</a>
+								</div>
+							</li>
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./xbxw/201805/t20180525_229792.html" target="_blank" title="人文学部召开全体学生党员大会">人文学部召开全体学生党员大会</a>
+								</div>
+							</li>
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./xbxw/201805/t20180525_229791.html" target="_blank" title="人文学部召开期中考试动员暨学风警示大会">人文学部召开期中考试动员暨学风警示大会</a>
+								</div>
+							</li>
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./xbxw/201805/t20180524_229727.html" target="_blank" title="经管学部赴海顺证券投资咨询有限公司开拓就业市场">经管学部赴海顺证券投资咨询有限公司开拓就业市场</a>
+								</div>
+							</li>
+                        
+						</ul>
+					</div>
+					<div class="col-md-6 col-xs-12">
+				    <h4 class="icon">学术活动<span class="pull-right pgr20"><a href="./xshd/">更多&gt;&gt;</a></span></h4>
+						<ul class="news-list">
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./xshd/201805/t20180525_229772.html" target="_blank" title="空间意识流——湖南省博物馆空间展示设计">空间意识流——湖南省博物馆空间展示设计</a>
+								</div>
+							</li>
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./xshd/201805/t20180524_229739.html" target="_blank" title="食品安全相关纳米生物传感检测技术与仪器">食品安全相关纳米生物传感检测技术与仪器</a>
+								</div>
+							</li>
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./xshd/201805/t20180524_229738.html" target="_blank" title="土壤入渗测量方法">土壤入渗测量方法</a>
+								</div>
+							</li>
+                        
+							<li>
+								<div class="news-link">
+									<i class="glyphicon glyphicon-menu-right"></i>
+									<a href="./xshd/201805/t20180523_229675.html" target="_blank" title="The role of auxin oxidation in plant growth and development">The role of auxin oxidation in plant growth and...</a>
+								</div>
+							</li>
+                        
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="lwrap">
+				<div class="row">
+					<div class="col-md-3">
+						<ul id="myTab" class="nav nav-sets ">
+							<li class="active department">
+								<a href="#department" data-toggle="tab">
+									<i class="glyphicon glyphicon-education"></i>
+									<b>学部设置</b>
+								</a>
+							</li>
+							<li class="faculty">
+								<a href="#faculty" data-toggle="tab">
+									<i class="glyphicon glyphicon-home"></i>
+									<b>部门设置</b>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-9">
+					 <div id="myTabContent" class="tab-content sets-item text-center">
+							<div class="tab-pane fade in active" id="department">
+								<ul class="list-inline">
+									<li><a>公共课部</a></li>
+									<li><a>经济管理学部</a></li>
+									<li><a>人文社会科学学部</a></li>
+									<li><a>理工学部</a></li>	
+									<li><a>生命科学学部</a></li>
+								</ul>		
+							</div>
+							<div class="tab-pane fade faculty-content" id="faculty">
+								<div class="row">
+									<div class="col-md-4">
+										<ul class="text-left">
+											<li><a>党政办公室</a></li>
+											<li><a href="./xygk/jgsz/jwb/" target="_blank">教务部</a></li>
+											<li><a href="./xygk/jgsz/zsjycyzdzx/" target="_blank">招生就业创业指导中心</a></li>
+											<li><a>心理健康教育与职业辅导中心</a></li>	
+										</ul>
+									</div>
+									<div class="col-md-4">
+										<ul class="text-left">
+											<li><a>学生工作部</a></li>
+											<li><a>人力资源部</a></li>
+											<li><a>资产管理与后勤保卫部</a></li>
+											<li><a>培训与对外交流中心</a></li>	
+										</ul>
+									</div>
+									<div class="col-md-4">
+										<ul class="text-left">
+											<li><a>团委</a></li>
+											<li><a href="./xygk/jgsz/cwb/" target="_blank">财务部</a></li>
+											<li><a>公共课部</a></li>	
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>		
+			</div>
+			<div class="lwrap page-link">
+				<div class="row">
+					<div class="col-md-offset-1 col-md-2 col-xs-4 text-center">
+						<a class="page-bottom-1 page-bottom" href="http://oa.hunau.cn/" target="_blank"><b>农大OA</b></a>
+					</div>
+					<div class="col-md-2 col-xs-4 text-center">
+						<a class="page-bottom-2 page-bottom" href="./qtdh/xyoa/" target="_blank"><b>学院OA</b></a>
+				  </div>
+					<div class="col-md-2 col-xs-4 text-center">
+						<a class="page-bottom-3 page-bottom" href="./qtdh/yzxx/" target="_blank"><b>院长信箱</b></a>
+				  </div>
+					<div class="col-md-2 col-xs-4 text-center">
+						<a class="page-bottom-4 page-bottom" href="./qtdh/xyrl/" target="_blank"><b>校园日历</b></a>
+				  </div>
+					<div class="col-md-2 col-xs-4 text-center">
+						<a class="page-bottom-5 page-bottom" href="./qtdh/dsj/" target="_blank"><b>大事记</b></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-offset-1 col-md-2 col-xs-4 text-center">
+						<a class="page-bottom-6 page-bottom" href="./xygk/bgdh/" target="_blank"><b>办公电话</b></a>
+					</div>
+					<div class="col-md-2 col-xs-4 text-center">
+						<a class="page-bottom-7 page-bottom" href="./qtdh/xydt/" target="_blank"><b>校园地图</b></a>
+				  </div>
+					<div class="col-md-2 col-xs-4 text-center">
+						<a class="page-bottom-8 page-bottom" href="./qtdh/xyfg/" target="_blank"><b>校园风光</b></a>
+				  </div>
+					<div class="col-md-2 col-xs-4 text-center">
+						<a class="page-bottom-9 page-bottom" href="./qtdh/cma/" target="_blank"><b>CMA</b></a>
+				  </div>
+					<div class="col-md-2 col-xs-4 text-center">
+						<a class="page-bottom-10 page-bottom" href="./qtdh/cfa/" target="_blank"><b>CFA</b></a>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-xs-3 share">
+					<img src="./images/wx.png" class="img-responsive center-block" alt="湖南农业大学东方科技学院官方微信公众号" />
+					<span class="text-center">微信公众号</span>
+				</div>
+				<div class="col-md-4 col-xs-9 addr">
+			    <p>版权：Copyright © 2017 湖南农业大学东方科技学院</p>
+					<p>电话：0731-84673790（党政办） 84673942（招生办）</p>
+					<p>传真：0731-84673815</p>
+					<p>地址：湖南省长沙市芙蓉区人民东路</p>
+					<p>邮编：410128</p>
+					<p><a href="http://beian.hnedu.cn/" target="_blank">湘教QS4-201405-010071</a>|<a href="http://www.miibeian.gov.cn/" target="_blank">湘ICP备06002880号</a></p>
+				</div>
+				<div class="col-md-4 footer-logo">
+					<img src="./images/footer-logo.png" class="img-responsive center-block" alt="" />
+			  </div>	
+				<div class="col-md-2 footer-link text-center">
+					<select name="select"  onchange="window.open(this.options[this.selectedIndex].value)"> 
+	                  <option selected="selected">---系统服务---</option>
+                            <option value="http://jwc.hunau.edu.cn/xsxk/">教务管理系统</option>
+                            <option value="http://dfbylw.hnis.org/login.aspx">毕业论文管理系统</option>
+                            <option value="http://www.chsi.com.cn/">学籍学历查询系统</option>
+  	                </select>
+					<select name="select" class="text-center"  onchange="window.open(this.options[this.selectedIndex].value)"> 
+	                  <option selected="selected">---友情链接---</option>
+	                  <option value="http://www.moe.gov.cn/">中华人民共和国教育部</option> 
+	                  <option value="http://gov.hnedu.cn/zwgk.jsp">湖南教育政务网</option>
+	                  <option value="http://www.hnedu.cn/index.html">湖南教育网</option>
+	                  <option value="http://www.worlduc.com/e/default.aspx?eid=589013">湖南教育新干线</option>
+	                  <option value="http://www.hunau.edu.cn/">湖南农业大学</option>
+	                </select>
+				</div>
+			</div>
+		</div>
+	</footer>		
+</body>
+</html>

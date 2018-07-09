@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>在位置 0 处没有任何行。</title>
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Lucida Console";font-size: .9em}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>“/”应用程序中的服务器错误。<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>在位置 0 处没有任何行。</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> 说明: </b>执行当前 Web 请求期间，出现未处理的异常。请检查堆栈跟踪信息，以了解有关该错误以及代码中导致错误的出处的详细信息。
+
+            <br><br>
+
+            <b> 异常详细信息: </b>System.IndexOutOfRangeException: 在位置 0 处没有任何行。<br><br>
+
+            <b>源错误:</b> <br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code>
+
+执行当前 Web 请求期间生成了未处理的异常。可以使用下面的异常堆栈跟踪信息确定有关异常原因和发生位置的信息。</code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b>堆栈跟踪:</b> <br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+[IndexOutOfRangeException: 在位置 0 处没有任何行。]
+   System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex) +2556141
+   System.Data.RBTree`1.get_Item(Int32 index) +16
+   System.Data.DataRowCollection.get_Item(Int32 index) +16
+   Lanall.Web.WebSite.Controls.Survey_Vote.BindData() +587
+   Lanall.Web.WebSite.Controls.Survey_Vote.AttachChildControls() +731
+   LanallWeb.Controls.TemplatedWebControl.CreateChildControls() +1837
+   System.Web.UI.Control.EnsureChildControls() +146
+   LanallWeb.Controls.TemplatedWebControl.DataBind() +58
+   Lanall.Web.WebSite.Controls.Survey_Vote.OnLoad(EventArgs e) +184
+   System.Web.UI.Control.LoadRecursive() +66
+   System.Web.UI.Control.LoadRecursive() +191
+   System.Web.UI.Control.LoadRecursive() +191
+   System.Web.UI.Control.LoadRecursive() +191
+   System.Web.UI.Control.LoadRecursive() +191
+   System.Web.UI.Control.LoadRecursive() +191
+   System.Web.UI.Control.AddedControl(Control control, Int32 index) +350
+   LanallWeb.Controls.TemplatedWebControl.CreateChildControls() +873
+   System.Web.UI.Control.EnsureChildControls() +146
+   System.Web.UI.Control.PreRenderRecursiveInternal() +61
+   System.Web.UI.Control.PreRenderRecursiveInternal() +224
+   System.Web.UI.Control.PreRenderRecursiveInternal() +224
+   System.Web.UI.Control.PreRenderRecursiveInternal() +224
+   System.Web.UI.Control.PreRenderRecursiveInternal() +224
+   System.Web.UI.Control.PreRenderRecursiveInternal() +224
+   System.Web.UI.Control.PreRenderRecursiveInternal() +224
+   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +3394
+</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <hr width=100% size=1 color=silver>
+
+            <b>版本信息:</b>&nbsp;Microsoft .NET Framework 版本:2.0.50727.8762; ASP.NET 版本:2.0.50727.8762
+
+            </font>
+
+    </body>
+</html>
+<!-- 
+[IndexOutOfRangeException]: 在位置 0 处没有任何行。
+   在 System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   在 System.Data.RBTree`1.get_Item(Int32 index)
+   在 System.Data.DataRowCollection.get_Item(Int32 index)
+   在 Lanall.Web.WebSite.Controls.Survey_Vote.BindData()
+   在 Lanall.Web.WebSite.Controls.Survey_Vote.AttachChildControls()
+   在 LanallWeb.Controls.TemplatedWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 LanallWeb.Controls.TemplatedWebControl.DataBind()
+   在 Lanall.Web.WebSite.Controls.Survey_Vote.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   在 LanallWeb.Controls.TemplatedWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Control.PreRenderRecursiveInternal()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+[HttpUnhandledException]: 引发类型为“System.Web.HttpUnhandledException”的异常。
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.index_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework64\v2.0.50727\Temporary ASP.NET Files\root\51db7f0f\9abb68a0\App_Web_bv3igejw.5.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+--><!-- 
+此错误页可能包含敏感信息，因为 ASP.NET 通过 &lt;customErrors mode="Off"/&gt; 被配置为显示详细错误消息。请考虑在生产环境中使用 &lt;customErrors mode="On"/&gt; 或 &lt;customErrors mode="RemoteOnly"/&gt;。-->

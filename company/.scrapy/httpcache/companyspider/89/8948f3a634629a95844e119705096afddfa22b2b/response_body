@@ -1,0 +1,761 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>江西工业工程职业技术学院</title>
+<meta name="keywords" content="校园网  江西 工业 工程 职业 职业技术 学院 计算机 电子 机电 采矿 建筑 经济 会计" />
+<meta name="description" content="校园网  江西 工业 工程 职业 职业技术 学院 计算机 电子 机电 采矿 建筑 经济 会计" />
+
+<link href="css/style.css" tppabs="css/style.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/lanrenzhijia1.css" />
+
+        <SCRIPT type=text/javascript> 
+function addEvent(obj,evtType,func,cap){ 
+cap=cap||false; 
+if(obj.addEventListener){ 
+obj.addEventListener(evtType,func,cap); 
+return true; 
+}else if(obj.attachEvent){ 
+if(cap){ 
+obj.setCapture(); 
+return true; 
+}else{ 
+return obj.attachEvent("on" + evtType,func); 
+} 
+}else{ 
+return false; 
+} 
+} 
+function getPageScroll(){ 
+var xScroll,yScroll; 
+if (self.pageXOffset) { 
+xScroll = self.pageXOffset; 
+} else if (document.documentElement && document.documentElement.scrollLeft){ 
+xScroll = document.documentElement.scrollLeft; 
+} else if (document.body) { 
+xScroll = document.body.scrollLeft; 
+} 
+if (self.pageYOffset) { 
+yScroll = self.pageYOffset; 
+} else if (document.documentElement && document.documentElement.scrollTop){ 
+yScroll = document.documentElement.scrollTop; 
+} else if (document.body) { 
+yScroll = document.body.scrollTop; 
+} 
+arrayPageScroll = new Array(xScroll,yScroll); 
+return arrayPageScroll; 
+} 
+function GetPageSize(){ 
+var xScroll, yScroll; 
+if (window.innerHeight && window.scrollMaxY) { 
+xScroll = document.body.scrollWidth; 
+yScroll = window.innerHeight + window.scrollMaxY; 
+} else if (document.body.scrollHeight > document.body.offsetHeight){ 
+xScroll = document.body.scrollWidth; 
+yScroll = document.body.scrollHeight; 
+} else { 
+xScroll = document.body.offsetWidth; 
+yScroll = document.body.offsetHeight; 
+} 
+var windowWidth, windowHeight; 
+if (self.innerHeight) { 
+windowWidth = self.innerWidth; 
+windowHeight = self.innerHeight; 
+} else if (document.documentElement && document.documentElement.clientHeight) { 
+windowWidth = document.documentElement.clientWidth; 
+windowHeight = document.documentElement.clientHeight; 
+} else if (document.body) { 
+windowWidth = document.body.clientWidth; 
+windowHeight = document.body.clientHeight; 
+} 
+if(yScroll < windowHeight){ 
+pageHeight = windowHeight; 
+} else { 
+pageHeight = yScroll; 
+} 
+if(xScroll < windowWidth){ 
+pageWidth = windowWidth; 
+} else { 
+pageWidth = xScroll; 
+} 
+arrayPageSize = new Array(pageWidth,pageHeight,windowWidth,windowHeight) 
+return arrayPageSize; 
+} 
+
+var AdMoveConfig=new Object(); 
+AdMoveConfig.IsInitialized=false; 
+AdMoveConfig.ScrollX=0; 
+AdMoveConfig.ScrollY=0; 
+AdMoveConfig.MoveWidth=0; 
+AdMoveConfig.MoveHeight=0; 
+AdMoveConfig.Resize=function(){ 
+var winsize=GetPageSize(); 
+AdMoveConfig.MoveWidth=winsize[2]; 
+AdMoveConfig.MoveHeight=winsize[3]; 
+AdMoveConfig.Scroll(); 
+} 
+AdMoveConfig.Scroll=function(){ 
+var winscroll=getPageScroll(); 
+AdMoveConfig.ScrollX=winscroll[0]; 
+AdMoveConfig.ScrollY=winscroll[1]; 
+} 
+addEvent(window,"resize",AdMoveConfig.Resize); 
+addEvent(window,"scroll",AdMoveConfig.Scroll); 
+function AdMove(id){ 
+if(!AdMoveConfig.IsInitialized){ 
+AdMoveConfig.Resize(); 
+AdMoveConfig.IsInitialized=true; 
+} 
+var obj=document.getElementById(id); 
+obj.style.position="absolute"; 
+var W=AdMoveConfig.MoveWidth-obj.offsetWidth; 
+var H=AdMoveConfig.MoveHeight-obj.offsetHeight; 
+var x = W*Math.random(),y = H*Math.random(); 
+var rad=(Math.random()+1)*Math.PI/6; 
+var kx=Math.sin(rad),ky=Math.cos(rad); 
+var dirx = (Math.random()<0.5?1:-1), diry = (Math.random()<0.5?1:-1); 
+var step = 1; 
+var interval; 
+this.SetLocation=function(vx,vy){x=vx;y=vy;} 
+this.SetDirection=function(vx,vy){dirx=vx;diry=vy;} 
+obj.CustomMethod=function(){ 
+obj.style.left = (x + AdMoveConfig.ScrollX) + "px"; 
+obj.style.top = (y + AdMoveConfig.ScrollY) + "px"; 
+rad=(Math.random()+1)*Math.PI/6; 
+W=AdMoveConfig.MoveWidth-obj.offsetWidth; 
+H=AdMoveConfig.MoveHeight-obj.offsetHeight; 
+x = x + step*kx*dirx; 
+if (x < 0){dirx = 1;x = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+if (x > W){dirx = -1;x = W;kx=Math.sin(rad);ky=Math.cos(rad);} 
+y = y + step*ky*diry; 
+if (y < 0){diry = 1;y = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+if (y > H){diry = -1;y = H;kx=Math.sin(rad);ky=Math.cos(rad);} 
+} 
+this.Run=function(){ 
+var delay = 10; 
+interval=setInterval(obj.CustomMethod,delay); 
+obj.onmouseover=function(){clearInterval(interval);} 
+obj.onmouseout=function(){interval=setInterval(obj.CustomMethod, delay);} 
+} 
+} 
+</SCRIPT> 
+</head>
+<body>
+<div class="page_style lanmupage page_l61"><script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/dropmenu.css" tppabs="css/dropmenu.css" /><script>var submenu_style=1;</script>
+<link rel="stylesheet" type="text/css" href="css/lanrenzhijia.css" />
+<div class="top_box">
+ <div class="top_box_inner">
+   
+   <div class="logo"><a href="index.htm"><img src="images/logo.png" tppabs="images/logo.png" border="0" alt="江西工业工程职业技术学院"></a></div>
+   <div class="topcontent"><p>
+	<a onClick="SetHome('http://www.pageadmin.net/')" style="cursor:pointer;" href="#">设为首页</a><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><a onClick="AddFavorite('http://www.pageadmin.net/', 'pageadmin网站管理系统')" style="cursor:pointer;" href="#">收藏本站</a> 
+</p>
+<div class="search_bar">
+	
+</div></div><div class="clear"></div>
+   <div class="menu_box" id="Menu"><ul>
+<li class="menu_style_homepage menu_current" id="MenuItem61" name="MenuItem"><a href="index.aspx.htm" tppabs="http://localhost:29386/index.aspx" class="menu">首页</a></li>
+<li class="menu_style" id="MenuItem62" name="MenuItem"><a href="#" class="menu">学校概况</a><ul>
+     <li><a href="About-1.html" target="_blank">学院简介</a></li>
+                <li><a href="About-3.html" target="_blank">现任领导</a></li>
+               <li><a href="About-10.html" target="_blank">学院章程</a></li>
+                 <li><a href="About-7.html" target="_blank">名师风采</a></li>
+                <li><a href="About-4.html" target="_blank">校园风景</a></li>
+                <li><a href="About-5.html" target="_blank">组织机构</a></li>
+</ul></li>
+<li class="menu_style" id="MenuItem77" name="MenuItem"><a href="#" class="menu">教学在线</a><ul>
+  <li><a href="http://sys.jxgcxy.net:8181/login2.asp" target="_blank">教务管理</a></li>
+                <li><a href="http://other.jxgcxy.net/wljx" target="_blank">网上教学</a></li>
+               
+              <li><a href="http://other.jxgcxy.net/sjjx" target="_blank">实训安排</a></li>
+               <li><a href="http://wlkc.jxgcxy.net" target="_blank">精品资源共享课</a></li>
+               <li><a href="http://www.jxgcxy.net/About-8.html" target="_blank">专业介绍</a></li>
+               <li><a href="http://other.jxgcxy.net/tsg" target="_blank">图书馆</a></li>
+               <li><a href="http://other.jxgcxy.net/xfjs" target="_blank">学风建设</a></li>
+<li><a href="About-2.html" target="_blank">精品课程资源库</a></li>
+</ul></li>
+<li class="menu_style" id="MenuItem63" name="MenuItem"><a href="#" class="menu">院系设置</a><ul>
+     <li><a href="http://other.jxgcxy.net/jjxy" target="_blank">经济管理学院</a></li>
+      <li><a href="http://other.jxgcxy.net/gsxy" target="_blank">工商管理学院</a></li>
+                <li><a href="http://other.jxgcxy.net/nyxy" target="_blank">能源工程学院</a></li>
+                <li><a href="http://223.82.185.152:85/dzjsj"  target="_blank">信息工程学院</a></li>
+                 <li><a href="http://other.jxgcxy.net/jxxy" target="_blank">机械工程学院</a></li>
+                 
+                <li><a href="http://other.jxgcxy.net/jcxy" target="_blank">基础教育学院</a></li>
+                <li><a href="http://other.jxgcxy.net/cjb"  target="_blank">成人教育学院</a></li>
+              
+			  <li><a href="InfoClass-30-1.html" target="_blank">思政部</a></li>
+</ul></li>
+<li class="menu_style" id="MenuItem78" name="MenuItem"><a href="#" class="menu">学团之窗</a><ul>
+  <li><a href="http://other.jxgcxy.net/xgc" target="_blank">学生工作处</a></li>
+                <li><a href="http://other.jxgcxy.net/tuanwei" target="_blank">学院团委</a></li>
+                <li><a href="http://223.82.185.152:85" target="_blank">学生考勤</a></li>
+          <li><a href="http://other.jxgcxy.net/xlzx" target="_blank">心理咨询中心</a></li>
+</ul></li>
+<li class="menu_style" id="MenuItem79" name="MenuItem"><a href="#" class="menu">教学科研</a><ul>
+ <li><a href="http://other.jxgcxy.net/kyc" target="_blank">科研网</a></li>
+                 <li><a href="http://jpkc.jxgcxy.net/sxjm" target="_blank">数学建模</a></li>
+</ul></li>
+<li class="menu_style" id="MenuItem80" name="MenuItem"><a href="#" class="menu">招生就业</a><ul>
+ <li><a href="http://other.jxgcxy.net/zsw" target="_blank">招生信息网</a></li>
+                <li><a href="http://other.jxgcxy.net/zjw/zyb" target="_blank">就业信息网</a></li>
+                <li><a href="http://other.jxgcxy.net/zsw/LQCX" target="_blank">录取结果查询</a></li>
+</ul></li>
+<li class="menu_style" id="MenuItem81" name="MenuItem"><a href="#" class="menu">新闻中心</a><ul>
+  <li><a href="http://www.jxgcxy.net/NewClass-2-1.html" target="_blank">学院要闻</a></li>
+                 <li><a href="http://www.jxgcxy.net/NewClass-3-1.html" target="_blank">系部新闻</a></li>
+                <li><a href="http://www.jxgcxy.net/NewClass-4-1.html" target="_blank">校园公告</a></li>
+                <li><a href="http://www.jxgcxy.net/NewClass-5-1.html" target="_blank">政策法规</a></li>
+               <li><a href="http://other.jxgcxy.net/gytv" target="_blank">视频新闻</a></li>
+</ul></li>
+<li class="menu_style" id="MenuItem82" name="MenuItem"><a href="#" class="menu">内部办公</a><ul>
+     <li><a href="http://other.jxgcxy.net/gzcx" target="_blank">工资查询</a></li>
+             <li><a href="http://other.jxgcxy.net/tzgg" target="_blank">校内公文</a></li>
+                <li><a href="About-9.html" target="_blank">文件下载</a></li>
+</ul></li>
+<li class="menu_style" id="MenuItem83" name="MenuItem"><a href="#" class="menu">思政建设</a><ul>
+    <li><a href="http://other.jxgcxy.net/szw" target="_blank">思政网</a></li>
+               
+                <li><a href="http://other.jxgcxy.net/xcb" target="_blank">宣传教育</a></li>
+</ul></li>
+<li class="menu_style" id="MenuItem84" name="MenuItem"><a href="#" class="menu">党风廉政</a><ul>
+      <li><a href="http://other.jxgcxy.net/lzjs" target="_blank">党风廉政网</a></li>
+                <li><a href="http://other.jxgcxy.net/dyzxxx/index.asp" target="_blank">党员廉政学习平台</a></li>
+</ul></li>
+<li class="menu_style" id="MenuItem84" name="MenuItem"><a href="http://other.jxgcxy.net/tsg" class="menu">图书馆</a></li>
+</ul></div>
+ </div>
+</div>
+
+
+
+<div class="banner"><div class="main">
+	<div class="pro-switch">
+		<div class="slider">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<div class="img"><img src="images/ad_home.jpg" height="400" width"1200" alt="" /></div>
+					</li>
+					<li>
+						<div class="img"><img src="images/ad_yuetu.jpg" height="400" width"1200" alt="" /></div>
+					</li>
+					<li>
+						<div class="img"><img src="images/ad_nba.jpg" height="400" width"1200" alt="" /></div>
+					</li>
+					<li>
+						<div class="img"><img src="images/ad_stock.jpg" height="400" width"1200" alt="" /></div>
+					</li>
+					<li>
+						<div class="img"><img src="images/ad_auto.jpg" height="400" width"1200" alt="" /></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<script defer src="js/lanrenzhijia.js"></script> 
+<script type="text/javascript">
+    $(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+<div class="main_box main_box_style">
+  <div class="main_box_inner">
+    <div id="module_165" style="width:640px;" class="module_box_layout_left">
+      <div id="cntR">
+        <div id="NewsTop">
+          <div id="NewsTop_tit">
+            <p class="topTit">新闻中心</p>
+            <p class="topC0 ">学院要闻</p>
+            <p class="topC0">综合新闻</p>
+            <p class="topC0">招生就业</p>
+            <p class="topC0">政策法规</p>
+          </div>
+          <div id="NewsTop_cnt"> <span title="Don't delete me"></span><table width="600" height="197" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="268" align="center" valign="top">  <div style="width:240px; height:180px; padding:0px;" class="zjimg">
+          <script type="text/javascript">
+<!--
+
+var swf_width=240	
+var swf_height=180
+
+						var files='../uploadfile/20180412/20180412163148583.jpg|../uploadfile/20180412/20180412163325869.jpg|../uploadfile/20180205/20180205132031687.jpg|../uploadfile/20180205/20180205131827335.jpg|../uploadfile/20180205/20180205131912805.jpg'
+
+
+						var links='New-3693.html|New-3690.html|New-3585.html|New-3575.html|New-3569.html'  
+
+
+						var texts='学院党委书记付春生、院长谢志勇一行赴江西理工大学等高校学习交流|我院学生参加清明祭英烈活动|走访慰问贫困户  浓浓关怀暖人心|我院党委召开专题会议学习贯彻习总书记回信重要精神|我院举办全院教职工学习贯彻落实十九大精神学习班'
+						document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+						document.write('<param name="movie" value="images/focus.swf"><param name="quality" value="high">');
+						document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+						document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'">');
+						document.write('<embed src="images/focus.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'& menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>')
+//-->
+
+            </script>
+        </div></td>
+    <td width="332" valign="top"><span>  <table width="350" border="0" cellspacing="0" cellpadding="0"  align="left">
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3773.html" target="_blank">学院成功举办信息化教学大赛暨全省信息化…</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-25</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3772.html" target="_blank">学院召开“优质校”建设推进会</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-25</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3771.html" target="_blank">我院组织教职工聆听党风廉政建设警示教育…</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-24</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3770.html" target="_blank">我院召开本科班期中教学检查座谈会</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-22</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3769.html" target="_blank">党委委员、党办主任刘志宏一行走访精准扶…</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-22</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3767.html" target="_blank">我院2018年新团员入团仪式暨表彰大会隆重…</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-21</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3766.html" target="_blank">我院辅导员余继江荣获全省辅导员素质能力…</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-21</td>
+        </tr>
+        <tr>
+          <td width="350" height="25">&nbsp;</td>
+          <td width="60" align="right" height="25"><a href="NewClass-2-1.html" target="_blank">更多&hellip;&hellip;</a></td>
+        </tr>
+      </table>
+ </span> <span>  <table width="350" border="0" cellspacing="0" cellpadding="0"  align="left">
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3775.html" target="_blank">能源工程学院党总支开展讲党课活动</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-25</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3774.html" target="_blank">不忘初心，牢记使命——成教支部赴甘祖昌将…</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-25</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3768.html" target="_blank">吉利、大众班订单班产教融合实训顺利进行…</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-22</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3760.html" target="_blank">能源工程学院开展爱心助学活动</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-15</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3755.html" target="_blank">机械工程学院党总支开展党日活动</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-07</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3754.html" target="_blank">院团委举办“我与改革开放共成长”主题团…</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-07</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3753.html" target="_blank">信息工程学院党总支开展“诵读红色家书，牢…</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-07</td>
+        </tr>
+        <tr>
+          <td width="350" height="25">&nbsp;</td>
+          <td width="60" align="right" height="25"><a href="NewClass-3-1.html" target="_blank">更多&hellip;&hellip;</a></td>
+        </tr>
+      </table>
+ </span> <span> <table width="350" border="0" cellspacing="0" cellpadding="0"  align="left">
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3661.html" target="_blank">我院单独招生考试工作圆满结束</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;03-28</td>
+        </tr>
+        <tr>
+          <td width="350" height="25">&nbsp;</td>
+          <td width="60" align="right" height="25"><a href="NewClass-6-1.html" target="_blank">更多&hellip;&hellip;</a></td>
+        </tr>
+      </table>
+ </span> <span> <table width="350" border="0" cellspacing="0" cellpadding="0"  align="left">
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-1851.html" target="_blank">国家鼓励大学生应征入伍服义务兵役政策四…</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;06-28</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-1850.html" target="_blank">关于加强和改进高校青年教师思想政治工作…</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-28</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-1849.html" target="_blank">江西省财政厅转发“关于加快推进公务卡制…</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;11-22</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-1848.html" target="_blank">公务卡强制结算目录的通知</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;11-22</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-1847.html" target="_blank">江西省专业技术人员继续教育登记考核管理…</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;09-05</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-1846.html" target="_blank">公务卡实施管理办法</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;12-08</td>
+        </tr>
+        <tr >
+          <td width="280" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-1845.html" target="_blank">江西工业工程职业技术学院先进基层党组织…</a></td>
+          <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;06-01</td>
+        </tr>
+        <tr>
+          <td width="350" height="25">&nbsp;</td>
+          <td width="60" align="right" height="25"><a href="NewClass-5-1.html" target="_blank">更多&hellip;&hellip;</a></td>
+        </tr>
+      </table>
+ </span></td>
+  </tr>
+</table>
+ </div>
+          <script>
+var Tags=document.getElementById('NewsTop_tit').getElementsByTagName('p'); 
+var TagsCnt=document.getElementById('NewsTop_cnt').getElementsByTagName('span'); 
+var len=Tags.length; 
+var flag=1;//淇敼榛樿鍊?
+for(i=1;i<len;i++){
+Tags[i].value = i;
+Tags[i].onmouseover=function(){changeNav(this.value)}; 
+TagsCnt[i].className='undis'; 
+}
+Tags[flag].className='topC1';
+TagsCnt[flag].className='dis';
+function changeNav(v){ 
+Tags[flag].className='topC0';
+TagsCnt[flag].className='undis';
+flag=v; 
+Tags[v].className='topC1';
+TagsCnt[v].className='dis';
+}
+</script>
+        </div>
+      </div>
+    </div>
+    <div id="module_177" style="width:320px;" class="module_box_layout_center">
+<DIV id="cntR1">
+  <DIV id="NewsTop1">
+    <DIV id="NewsTop_tit1">
+      <P class="topTit1"></P>
+      <P class="topC2">通知公告</P>
+      <P class="topC2">教学科研</P>
+      <P class="topC2">招标公告</P>     
+    </DIV>
+    <DIV id="NewsTop_cnt1"> <SPAN title="Don't delete me"></SPAN> <span>  <table width="300" border="0" cellspacing="0" cellpadding="0"  align="left">
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3758.html" target="_blank">招聘公告</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-15</td>
+        </tr>
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3757.html" target="_blank">关于2019届毕业生图像信息采集的…</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-09</td>
+        </tr>
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3749.html" target="_blank">学院招标确定的定点供应商名单公…</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-03</td>
+        </tr>
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3743.html" target="_blank">2017-2018学年第二学期艺术节期间…</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-02</td>
+        </tr>
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3739.html" target="_blank">关于做好全省2018年普通高校专升…</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;04-28</td>
+        </tr>
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3730.html" target="_blank">2018年五一放假通知</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;04-25</td>
+        </tr>
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3705.html" target="_blank">关于转发《关于开展文明校园“大…</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;04-17</td>
+        </tr>
+        <tr>
+          <td width="300" height="25">&nbsp;</td>
+          <td width="60" align="right" height="25"><a href="NewClass-4-1.html" target="_blank">更多&hellip;&hellip;</a></td>
+        </tr>
+      </table>
+ </span> <span>  <table width="300" border="0" cellspacing="0" cellpadding="0"  align="left">
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3718.html" target="_blank">2018年职业教育国家级教学成果奖…</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;04-20</td>
+        </tr>
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3647.html" target="_blank">关于开展2017年度科研成果统计工…</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;03-26</td>
+        </tr>
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3627.html" target="_blank">关于积极申报2018年职业教育国家…</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;03-19</td>
+        </tr>
+        <tr>
+          <td width="300" height="25">&nbsp;</td>
+          <td width="60" align="right" height="25"><a href="NewClass-7-1.html" target="_blank">更多&hellip;&hellip;</a></td>
+        </tr>
+      </table>
+ </span> <span> <table width="300" border="0" cellspacing="0" cellpadding="0"  align="left">
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3779.html" target="_blank">学院工会会员2018年端午节福利品…</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-27</td>
+        </tr>
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3778.html" target="_blank">学院2018年7月至2020年6月教材供…</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-25</td>
+        </tr>
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3777.html" target="_blank">学院新建11#、12#学生公寓楼全自…</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-25</td>
+        </tr>
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3776.html" target="_blank">学院绿色建筑设计项目招标活动终…</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-25</td>
+        </tr>
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3765.html" target="_blank">学院新建11#、12#学生公寓楼全自…</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-18</td>
+        </tr>
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3764.html" target="_blank">学院新建11#、12#学生公寓楼直饮…</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-18</td>
+        </tr>
+        <tr >
+          <td width="300" height="25" style="border-bottom: #999999 dotted 1px" >&nbsp;&nbsp;<a href="New-3763.html" target="_blank">学院400米塑胶运动场及球场工程设…</a></td>
+        <td width="60" align="right" height="25" style="border-bottom: #999999 dotted 1px">&nbsp;&nbsp;05-17</td>
+        </tr>
+        <tr>
+          <td width="300" height="25">&nbsp;</td>
+          <td width="60" align="right" height="25"><a href="NewClass-8-1.html" target="_blank">更多&hellip;&hellip;</a></td>
+        </tr>
+      </table>
+ </span></DIV>
+    <SCRIPT>
+   
+var Tagsw=document.getElementById('NewsTop_tit1').getElementsByTagName('p'); 
+var TagsCntw=document.getElementById('NewsTop_cnt1').getElementsByTagName('span'); 
+var lenw=Tagsw.length; 
+var flagw=1;//修改默认值
+for(i=1;i<lenw;i++){
+Tagsw[i].value = i;
+Tagsw[i].onmouseover=function(){changeNavw(this.value)}; 
+TagsCntw[i].className='undis'; 
+}
+Tagsw[flagw].className='topC3';
+TagsCntw[flagw].className='dis';
+function changeNavw(v){ 
+Tagsw[flagw].className='topC2';
+TagsCntw[flagw].className='undis';
+flagw=v; 
+Tagsw[v].className='topC3';
+TagsCntw[v].className='dis';
+}
+</SCRIPT>
+  </DIV>
+</DIV>
+</DIV>
+<div id="module_180" style="width:160px;" class="module_box_layout_center">
+          <div id="NewsTop">
+          <div id="NewsTop_tit">
+            <p class="topTit55">公共平台</p>
+          </div>
+          <div id="module_content_180" class="module_content">
+            <table width="160" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="50" align="center" ><img src="images/email.png" /><a href="#" target=_blank>书记信箱</a>&nbsp; </td>
+                <td align="center"><img src="images/email.png" /><a href="#" target=_blank>院长信箱</a>&nbsp; </td>
+              </tr>
+              <tr>  
+                <td height="50" align="center"><img src="images/OA.png" /><a href="http://sys.jxgcxy.net:8181/login2.asp" target="_blank">教务管理</a></td>
+                <td height="50" align="center"><img src="images/yqlj.gif" /><a href="http://other.jxgcxy.net/tzgg" target=_blank>校内公文</a>&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="50" align="center" ><img src="images/down.gif" /><a href="About-9.html" target=_blank>文件下载</a>&nbsp; </td>
+                <td align="center"><img src="images/xwzx.gif" width="16" height="16"/><a href="http://other.jxgcxy.net/gzcx" target=_blank>工资查询</a>&nbsp; </td>
+              </tr>
+              <tr>
+                <td height="50" align="center"><img src="images/weibo.png" /><a href="http://192.168.100.18/wldst/" target="_blank">网络电视台</a></td>
+                <td height="50" align="center"><img src="images/xxgk.png" /><a href="#" target="_blank">一卡通</a>&nbsp;</td>
+              </tr>
+            </table>
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  
+  
+<div class="main_box main_box_style">
+<div class="main_box_inner">
+    <div id="module_178" style="width:300px;" class="module_box_layout_left1">
+        <div id="NewsTop">
+          <div id="NewsTop_tit">
+            <p class="topTit55">快速通道</p>
+          </div>
+        
+        <div id="module_content_178" class="module_content">
+       <table width="280" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">办公系统</td> 
+    <td align="center"><a href="http://sys.jxgcxy.net:8181/login2.asp" target="_blank">教务管理</a></td>
+    <td align="center"><a href="http://www.jxgcxy.net/About-13.html" target="_blank">违反师德举报</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="http://other.jxgcxy.net/wljx" target="_blank">网上教学</a></td>
+    <td align="center"><a href="#" target="_blank">招标采购</a></td>
+    <td align="center"><a href="http://other.jxgcxy.net/gytv" target="_blank">学院视频</a></td>
+  </tr>
+
+</table>
+</div>
+      </div>
+      
+    </div>
+    
+    <div id="module_179" style="width:680px;" class="module_box_layout_center">
+      <div class="module_box_inner">
+        <div id="module_content_179" class="module_content module_content_introduct"> <table cellpadding="0" cellspacing="0" align="center">
+  <tr>
+    <td><table cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="center" height="60"><a href="http://theory.people.com.cn/GB/40557/120709/" target="_blank"><img src="../uploadfile/20140604/20140604112043637.gif" alt="社会主义核心价值观" width="90" height="40" border="0" /></a></td>
+        </tr>
+      </table></td>
+    <td width="8"></td>
+    <td><table cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="center" height="60"><a href="http://www.jxgcxy.net/About-12.html" target="_blank"><img src="../uploadfile/20170920/20170920141144638.jpg" alt="高等学校学生守则" width="90" height="40" border="0" /></a></td>
+        </tr>
+      </table></td>
+    <td width="8"></td>
+    <td><table cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="center" height="60"><a href="http://www.jxgcxy.net/About-11.html" target="_blank"><img src="../uploadfile/20170920/20170920141157607.jpg" alt="高等学校学生行为准则" width="90" height="40" border="0" /></a></td>
+        </tr>
+      </table></td>
+    <td width="8"></td>
+    <td><table cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="center" height="60"><a href="http://www.zg114zs.com/Article-List.asp?cCodName=%B1%A8%BF%BC%D6%B8%C4%CF&cCode=103" target="_blank"><img src="../uploadfile/20150114/20150114082321112.gif" alt="中国114招生网" width="90" height="40" border="0" /></a></td>
+        </tr>
+      </table></td>
+    <td width="8"></td>
+    <td><table cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="center" height="60"><a href="http://other.jxgcxy.net/gjaqr/index.html" target="_blank"><img src="../uploadfile/20170411/20170411152002911.gif" alt="全民国家安全教育日" width="90" height="40" border="0" /></a></td>
+        </tr>
+      </table></td>
+    <td width="8"></td>
+    <td><table cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="center" height="60"><a href="http://www.jy0799.com/" target="_blank"><img src="../uploadfile/20160322/20160322161812485.jpg" alt="萍乡市就业创业网" width="90" height="40" border="0" /></a></td>
+        </tr>
+      </table></td>
+    <td width="8"></td>
+    <td><table cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="center" height="60"><a href="http://www.jxjyfw.com/enter_graduate.jspx" target="_blank"><img src="../uploadfile/20131120/20131120083400849.jpg" alt="毕业生就业登记" width="90" height="40" border="0" /></a></td>
+        </tr>
+      </table></td>
+    <td width="8"></td>
+  </tr>
+</table>
+ </div>
+        <div class="module_footer"><span class="l"></span><span class="r"></span></div>
+      </div>
+    </div>
+    <div id="module_180" style="width:160px;" class="module_box_layout_center">
+          <div id="NewsTop">
+        
+          <div id="module_content_180" class="module_content">
+            <table width="160" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="50" align="center" >  <select 
+                  			style="FONT-SIZE: 9pt; BACKGROUND-COLOR: #e8ecf5" 
+                  			onChange="javascript:window.open(this.options[this.selectedIndex].value)" 
+                  			name="select">
+                            <option selected="selected">&nbsp;&nbsp;&nbsp;分  院  系  部&nbsp;&nbsp;&nbsp;</option>
+                            <option value="http://other.jxgcxy.net/jjglxy">经济管理学院</option>
+                            <option value="http://other.jxgcxy.net/gsglxy">工商管理学院</option>
+                            <option value="http://other.jxgcxy.net/nygcxy">能源工程学院</option>
+                            <option value="http://223.82.185.152:85/dzjsj">信息工程学院</option>
+                            <option value="http://other.jxgcxy.net/jxgcxy">机械工程学院</option>
+                            <option value="InfoClass-30-1.html">思政部</option>
+                            <option value="http://other.jxgcxy.net/cjb">成人教育学院</option>
+                            <option value="http://other.jxgcxy.net/jcxy">基础教育学院</option>
+                            
+                                         </select></td></tr><tr>
+
+                <td align="center">  <select 
+                  			style="FONT-SIZE: 9pt; BACKGROUND-COLOR: #e8ecf5" 
+                  			onChange="javascript:window.open(this.options[this.selectedIndex].value)" 
+                  			name="select">
+                            <option selected="selected">&nbsp;&nbsp;&nbsp;快  速  链  接&nbsp;&nbsp;&nbsp;</option>
+                            <option value="http://www.jxedu.gov.cn">江西教育网</option>
+                            <option value="http://jxzcj.jxedu.gov.cn/">江西职教信息网</option>
+                            <option value="http://www.moe.edu.cn/">中国教育部</option>
+                            <option value="http://www.pingxiang.gov.cn">萍乡市政府</option>
+                            <option value="http://px.jxcn.cn/">萍乡新闻网</option>
+                            <option value="http://www.pxwww.net">安源在线</option>
+                            <option value="http://www.sina.com.cn">新浪网</option>
+                            <option value="http://www.sohu.com">搜狐网</option>
+                            <option value="http://www.163.com">网易</option>
+                            
+                    </select> </td>
+              </tr>
+       
+            
+            </table>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="clear main_box_inner_bottom"></div>
+<div class="bottom_box"><p>&nbsp;</p>
+  <table width="1200" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="200" align="right"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript  src='http://dcs.conac.cn/js/15/000/0000/41139748/CA150000000411397480001.js' type='text/javascript'%3E%3C/script%3E"));</script></td>
+      <td align="center"><span style="color:#000000; line-height:25px; ">Copyright&nbsp;2011-2018&nbsp;江西工业工程职业技术学院　版权所有&nbsp;&nbsp;地址: 江西省萍乡市经济开发区玉湖东路106号</span><br /> 
+       <span style="color:#000000;line-height:25px; "> 联系电话:0799-7062005(院办）7062207(招办） 备案：赣ICP备14000244号</span></td>
+      <td width="200" align="left"><img src="images/wx.png" width="114" height="131" /></td>
+    </tr>
+  </table>
+</div></body></html>
+<DIV id=ad1 style="Z-INDEX: 5"> 
+<!--漂浮开始-->
+<A href="http://www.jxgcxy.net/About-13.html" 
+target=_blank><IMG src="images/sd.jpg"></A> 
+
+</DIV>
+<!--漂浮结束
+<DIV id=ad2 style="Z-INDEX: 5"> 
+漂浮开始
+<A href="http://other.jxgcxy.net/qzjxdc/" 
+target=_blank><IMG src="images/dc.png"></A> 
+漂浮结束
+</DIV> 
+-->
+<SCRIPT type=text/javascript><!-- 
+var ad1=new AdMove("ad1"); 
+ad1.Run(); 
+        //多组漂浮 
+        //var ad1=new AdMove("ad2"); 
+//ad2.Run(); 
+//--> 
+</SCRIPT></body></html>

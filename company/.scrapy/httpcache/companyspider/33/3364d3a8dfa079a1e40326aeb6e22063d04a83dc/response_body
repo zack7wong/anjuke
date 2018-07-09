@@ -1,0 +1,949 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="baidu-site-verification" content="jEoWbBvxzY" />
+<title>广州华商职业学院</title>
+<link rel="SHORTCUT ICON" href="Images/favicon.ico" />
+<link rel= "Bookmark " href= "Images/favicon.ico " />
+<link rel="alternate" type="application/rss+xml" href="http://www.gzhsvc.com/RssFeed.asp" title="广州华商职业学院" />
+
+
+<SCRIPT LANGUAGE="JavaScript">
+ function mobile_device_detect(url)
+ {
+        var thisOS=navigator.platform;
+        var os=new Array("iPhone","iPod","iPad","android","Nokia","SymbianOS","Symbian","Windows Phone","Phone","Linux armv71","MAUI","UNTRUSTED/1.0","Windows CE","BlackBerry","IEMobile");
+ for(var i=0;i<os.length;i++)
+        {
+ if(thisOS.match(os[i]))
+        {  
+  window.location=url;
+ }
+          
+ }
+ //因为相当部分的手机系统不知道信息,这里是做临时性特殊辨认
+ if(navigator.platform.indexOf('iPad') != -1)
+        {
+  window.location=url;
+ }
+ //做这一部分是因为Android手机的内核也是Linux
+ //但是navigator.platform显示信息不尽相同情况繁多,因此从浏览器下手，即用navigator.appVersion信息做判断
+  var check = navigator.appVersion;
+  if( check.match(/linux/i) )
+          {
+   //X11是UC浏览器的平台 ，如果有其他特殊浏览器也可以附加上条件
+   if(check.match(/mobile/i) || check.match(/X11/i))
+                 {
+   window.location=url;
+   } 
+ }
+ //类in_array函数
+ Array.prototype.in_array = function(e)
+ {
+  for(i=0;i<this.length;i++)
+  {
+   if(this[i] == e)
+   return true;
+  }
+  return false;
+ }
+ }
+mobile_device_detect("http://www.gzhsvc.com/wap.asp");
+</SCRIPT>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?761804e4b535f81b5a2d4de9328c5b46";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<script type="text/javascript">
+var step = 1; // 移动的像素
+var y = -1; // 垂直移动的方向，-1表示向上，1表示向下
+var x = 1; // 水平移动的方向，-1表示向左，1表示向右
+function myFloat()
+{
+var img = document.getElementById("myImg");
+// 获取图片和当前浏览器窗口上边距，由于img.style.top获取的值带px单位
+var top = img.style.top.replace("px", "");
+// top = top - 100;
+// img.style.top = top + "px";
+// 获取图片和当前浏览器窗口左边距
+var left = img.style.left.replace("px", "");
+// left = left - 100;
+// img.style.left = left + "px";
+// 上下移动
+if(top <= 0)
+{
+y = 1;
+}
+if(top >= document.body.clientHeight)
+{
+y = -1;
+}
+top = (top*1) + (step * y);
+img.style.top = top + "px";
+// 左右移动
+if(left <= 0)
+{
+x = 1;
+}
+// alert(img.clientWidth);
+if(left >= (document.body.clientWidth - img.clientWidth))
+{
+x = -1;
+}
+left = (left*1) + (step * x);
+img.style.left = left + "px";
+setTimeout("myFloat()", 20);
+}
+</script>
+
+
+<link rel="stylesheet" href="css/zzsc.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/zzsc.js"></script>
+
+
+<script type="text/javascript" src="Script/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="Script/jquery.pngFix.pack.js"></script>
+<script type="text/javascript" src="Script/jquery.imgFloat.js"></script>
+<script type="text/javascript" src="Script/swfobject.js"></script>
+<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript" src="Script/float.js"></script>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb535d01847720b7eda49c233c73198be' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<link href="Style/Global.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript"> 
+    $(document).ready(function(){ 
+        $(document).pngFix(); 
+        $("a#ad20111024").fancybox();
+		$("a#zcap").fancybox();
+    }); 
+</script> 
+<style type="text/css">
+#banner{
+	height: 285px;
+	background: url('Images/Banner.jpg') no-repeat top;
+}
+#flash {
+	height: 280px;
+}
+#banner .splitLine{
+	height: 5px;
+	background: url('Images/Banner_SplitLine.gif') repeat-x;
+	overflow:hidden;
+}
+#Container{
+	margin-top: 10px;
+}
+#leftSidebar{
+	width: 200px;
+	float: left ;
+}
+#growthDiv{
+	height:116px;
+	width:192px;
+	margin:0 auto;
+	background: url('zs_Ad.jpg');
+	cursor:pointer;
+}
+#organDiv{
+	
+}
+#organDiv .top{
+	height:10px;
+	overflow:hidden;
+	background: url('Images/organ_Top.gif');
+}
+#organDiv .Content{
+	background: url('Images/organ_Content.gif');
+	margin: 0;
+	background-repeat: repeat-y;
+}
+.organ_Dt{
+	width: 180px;
+	height: 36px;
+	margin: 0 0 0 10px;
+	background: url('Images/organ_Dt.gif');
+}
+.organ_Dt p{
+	font: normal normal bold 14px 宋体;
+	color: #8a211c;
+	margin: 0;
+	line-height: 25px;
+	margin-left: 28px;
+	letter-spacing: 2px;
+}
+.organ_Ul{
+	list-style: none ;
+	width: 180px;
+	height:110px;
+	margin: 0;padding: 0;
+	margin-left: 20px;
+}
+.organ_Ul li{
+	width: 90px;
+	float: left ;
+	letter-spacing: 1px;
+	height: 22px;
+	line-height: 22px;
+	
+}
+#organDiv .bottom{
+	height:10px;
+	overflow:hidden;
+	background: url('Images/organ_Bottom.gif');
+}
+
+.center{
+	width: 590px;
+	float: left ;
+	margin: 0 5px;
+}
+#focusContainer {
+	height: 178px;
+}
+#focusContainer div {
+	height:100%;
+}
+#focusContainer h2{
+	background:url("images/hot.png") no-repeat;
+	padding-left:38px;
+
+}
+#focusContainer .left{
+	width:230px;
+	background:url("images/focus_lpBg.png") no-repeat;
+	margin:0;
+	padding:0;
+}
+#focusContainer .left img{
+	margin:8px;
+	width:210px;
+	height:156px;
+}
+#focusContainer .right{
+	width:355px;
+}
+#focusContainer p{
+	line-height:23px;
+	padding:0;
+	margin:0;
+}
+#focusContainer p em {
+	font-style:normal;
+	color:#FF6600;
+}
+#focusContainer a:hover{
+	text-decoration:none;
+	color:#FF9933;
+}
+#splitLine {
+	background: url('Images/centerSplitLine.gif');
+	height:12px;
+	overflow:hidden;
+	margin: 10px 0 0 0;
+}
+#newsContainer {
+	float: left;
+	width: 370px;
+}
+#newsContainer #news_Nav {
+	height: 25px;
+	margin:0;
+	padding:0;
+	border-bottom: 1px solid #cccccc;
+	letter-spacing:2px;
+}
+#newsContainer #news_Nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float:left;
+	width: 80%;
+	height: 25px;
+}
+#newsContainer #news_Nav ul li{
+	display: block;
+	float:left;
+	line-height:25px;
+	width:80px;
+	font-size:13px;
+	text-align:center;
+}
+#newsContainer #news_Nav ul li a{
+	text-decoration: none;
+	color: #8a211c;
+	border-bottom: none;
+}
+#newsContainer #news_Nav ul li a:hover{
+	 color: #8a211c;
+}
+#newsContainer #news_Nav .selected{
+	font-weight: bold;
+	color:#FFAE00;
+    border-bottom: 1px solid #8a211c;
+}
+#newsContainer #news_Nav span{
+	height:25px;
+	margin-top:8px;
+}
+#newsContainer #news_Nav .more{
+	float: right;
+	width: 39px;
+	height: 11px;
+	background-image: url('Images/news_more.gif');
+	background-repeat: no-repeat;
+	cursor:pointer;
+}
+#news_List{
+	color: #FFF;
+	font-size: 13px;
+	margin-top:3px;
+	overflow:hidden;
+	height:200px;
+	
+}
+#news_List ul
+{
+	list-style-type: none;
+	margin: 0px 0px 0px 3px;
+	padding:0px;
+}
+#news_List ul li
+{
+	margin:0 0 0 2px;
+	padding:0;
+	height:25px;
+	background-image: url('Images/newsList_Line.gif');
+	background-repeat: repeat-x;
+	line-height: 22px; /*垂直居中,高度与父层容器一致*/;
+	vertical-align: bottom; /*解决IE下li元素产生间距的BUG*/
+}
+/* 列表前几位高光 */
+#news_List .Lightness{
+	
+}
+#news_List ul li b{
+	width:7px;
+	height: 7px;
+	font-size:0;
+	float: left;
+	margin: 8px 5px 0 2px;
+	background-image: url('Images/arraw.gif');
+}
+#news_List ul li a{
+	float: left;
+	text-decoration: none;
+	color: #333;
+}
+#news_List ul li a:hover{
+	color: #8a211b;
+	text-decoration: underline;
+}
+#news_List ul li span{
+	float: right;
+	color: #333;
+	margin-right:5px;
+	font-size:12px;
+}
+
+#sceneContainer {
+	float: right;
+	width: 212px;
+	height: 210px;
+	background: url('Images/View_Bg.gif') no-repeat;
+}
+.scene{
+	margin-top:34px;
+	width:22px;
+	text-align: center;
+	line-height:60px;
+}
+#rightSidebar{
+	float: right ;
+	margin: 0;
+}
+#masterDiv {
+	height: 170px;
+	margin-bottom:5px;
+}
+#wayGuideDiv {
+	text-align: center;
+	margin-bottom:8px;
+}
+#wayGuideDiv img{
+	
+}
+#wayGuideDiv p{
+	color: #89221a;
+	margin: 8px 0 0 0;
+}
+#topicsWrap {
+	margin-top:10px;
+}
+
+.menuContent {
+	margin:0;
+}
+.menuContent img{
+	margin-bottom:12px;
+	display:inline;
+}
+.menuContent ul{
+	list-style: none ;
+	letter-spacing:1px;
+	font-size:12px;
+	margin:0px;
+	padding:0;
+	margin-left:25px;
+
+}
+.menuContent ul li{
+	height:20px;
+	line-height:20px;
+}
+#sceneContainer{
+	height:204px;
+	background-image:url('Images/View_Bg.gif');
+	background-repeat:no-repeat;
+	margin-top: 20px;
+	margin-right: 0;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+#hostTitle{
+	height:33px;line-height:33px;margin:0;padding:0; margin-bottom:5px;
+}
+#hostTitle span{
+	font-size:13px;color:#6c6c6c; margin-left:20px;
+}
+#sceneContainer .btn{
+	width:14px;height:27px; margin-top:58px; cursor:pointer;float:left;
+}
+#hostLBtn{
+	background-image:url('Images/View_Left.gif');background-position:0 0;margin-left:8px;
+	/* display:inline 解决IE6下 margin加倍问题 */ 
+	display:inline;
+}
+#hostRBtn{
+	background-image:url('Images/View_Right.gif');background-position:14px 0; 
+}
+#sceneContainer .Cont {width: 160px; height:143px;float: left;overflow:hidden;margin:0 4px;}
+#sceneContainer .ScrCont {width: 1342177.27px}
+#sceneContainer #List1,#hostC #List2 {float: left}
+
+</style>
+<script language="javascript"  type="text/javascript">
+///自动滚动TAB脚本
+var CurrentTab = 0;
+var AutoScroll = true;
+
+function tab(n){
+	var titles = document.getElementById("newsTab").getElementsByTagName("li");
+	var contents = document.getElementById("main" + n);	
+	for(i=0;i<titles.length;i++){
+		 titles[i].className = (i==n?"selected":"");
+ 		  document.getElementById("main" + i).style.display = (i == n?"block":"none");
+	}
+	CurrentTab  = n;
+}
+onload=init;
+function init(){
+	tab(CurrentTab);
+	setTimeout(Next,60000);
+}
+function Next(){
+	if(AutoScroll)
+	{
+		CurrentTab = (CurrentTab++ >= document.getElementById("newsTab").getElementsByTagName("li").length-1 ? 0 :CurrentTab++);
+		tab(CurrentTab);
+	}
+	setTimeout(Next,60000)
+}
+function startScroll(k){ AutoScroll = true; }
+function stopScroll(k){ AutoScroll = false; }
+function linkMore()
+{
+	var link = "";
+	switch(CurrentTab)
+	{
+		case 0:
+			link = "/NewsList.asp?c=1";
+			break;
+		case 1:
+			link = "/NewsList.asp?c=2";
+			break;
+		case 2:
+			link = "/NewsList.asp?c=3";
+			break;
+	}
+	window.open(link)
+}
+
+</script>
+
+
+<link rel="stylesheet" href="dist/pageSwitch.min.css">
+<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	html,body{
+		height: 100%;
+	}
+	#container {
+			width: 100%;
+			height: 500px;
+			overflow: hidden;
+	}
+	.sections,.section {
+		height:100%;
+	}
+	#container,.sections {
+		position: relative;
+	}
+	.section {
+		background-color: #000;
+		background-size: cover;
+		background-position: 50% 50%;
+		text-align: center;
+		color: white;
+	}
+	#section0 {
+		background-image: url('images/1.jpg');
+	}
+	#section1 {
+		background-image: url('images/2.jpg');
+	}
+	#section2 {
+		background-image: url('images/3.jpg');
+	}
+	
+</style>
+
+<link rel="stylesheet" href="dist/pageSwitch.min.css">
+<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	html,body{
+		height: 100%;
+	}
+	#container {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	}
+	.sections,.section {
+		height:100%;
+	}
+	#container,.sections {
+		position: relative;
+	}
+	.section {
+		background-color: #000;
+		background-size: cover;
+		background-position: 50% 50%;
+		text-align: center;
+		color: white;
+	}
+	#section0 {
+		background-image: url('images/1.jpg');
+	}
+	#section1 {
+		background-image: url('images/2.jpg');
+	}
+	#section2 {
+		background-image: url('images/3.jpg');
+	}
+	
+a:link {
+	color: #000;
+}
+</style>
+
+
+<link href="images/style.css" rel="stylesheet">
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/gotop.js"></script>
+
+</head>
+
+<body>
+<div id=duilian01 style="POSITION: absolute; TOP: 200px; HEIGHT: 300px; width: 100px; left: 6px;"></div>
+<script language=JavaScript src="js/scrolljs.js" type=text/javascript></script>
+
+<div id="warp">
+<div id="header">
+	<div id="logo">广州华商职业学院</div>
+	<div id="navWrap">
+		<div id="tag"><span><a href="http://zsb.gzhsvc.com" target="_blank">学院代码:14266&nbsp;&nbsp;录取批次:专科第三批B线</a></span></div>
+		<div id="mainNav">
+        	<div id="Nav_Left"></div>
+			<ul>
+				<li class="index"><a href="/"><span>首页</span></a></li>
+					<li class="line"></li>
+					<li><a href="/intro/Intro.htm"><span>学院概况</span></a></li>
+					<li class="line"></li>
+	    <li><a href="zcap/20180521.png" target="_blank" id="zcap"><span>周程安排</span></a></li>
+					<li class="line"></li>
+					<li><a href="http://zsjy.gzhsvc.com" target="_blank"><span>招生就业</span></a></li>
+					<li class="line"></li>
+					<li><a href="http://jwc.gzhsvc.com" target="_blank"><span>教学教育</span></a></li>
+					<li class="line"></li>
+					<li><a href="http://gqt.gzhsvc.com" target="_blank"><span>校园文化</span></a></li>
+					<li class="line"></li>
+					<li><a href="http://rsc.gzhsvc.com" target="_blank"><span>人才招聘</span></a></li>
+					<li class="line"></li>
+              <li><a href="http://llc.gzhsvc.com" target="_blank"><span>国际交流</span></a></li>
+					<li class="line"></li>
+					<li><a href="http://xxgk.gzhsvc.com" target="_blank"><span>信息公开</span></a></li>
+					
+			</ul>
+            <div id="Nav_Right"></div>
+		</div>
+	</div>
+</div>
+
+<div id="container">
+	<div id="header">
+  <div class="wrap">
+   <div id="slide-holder">
+		<div id="slide-runner">			<img id="slide-img-1" src="images/1.jpg" class="slide" alt="" />			<img id="slide-img-2" src="images/2.jpg" class="slide" alt="" />
+			<img id="slide-img-3" src="images/3.jpg" class="slide" alt="" />
+			
+			<div id="slide-controls">
+			 <p id="slide-client" class="text"><strong></strong><span></span></p>
+			 <p id="slide-desc" class="text"></p>
+			 <p id="slide-nav"></p>
+			</div>
+		</div>
+   </div>
+   <script type="text/javascript">
+    if(!window.slider) {
+		var slider={};
+	}
+
+	slider.data= [
+    {
+        "id":"slide-img-1", // 与slide-runner中的img标签id对应
+        "client":"",
+        "desc":" " //这里修改描述
+    },
+    {
+        "id":"slide-img-2",
+        "client":"",
+        "desc":""
+    },
+    {
+        "id":"slide-img-3",
+        "client":"",
+        "desc":""
+    }
+   
+	];
+   </script>
+  </div>
+</div>
+</div>
+
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="dist/pageSwitch.min.js"></script>
+<script>
+	$("#container").PageSwitch({
+		direction:'horizontal',
+		easing:'ease-in',
+		duration:1000,
+		autoPlay:true,
+		loop:'false'
+	});
+</script>
+
+<div id="Container">
+	<div id="leftSidebar" class="left">
+	  <div align="center"><a href="http://zsb.gzhsvc.com/" target="_blank"><img src="zs_Ad1.jpg" width="192" height="55" align="middle" /></a></div>
+		<div id="organDiv">
+			<div class="top"></div>
+			<div class="Content">
+				<div class="organ_Dt"><p>行政部门</p></div>
+				<ul class="organ_Ul" style="height:160px">
+					<li><a href="http://yb.gzhsvc.com" target="_blank">学院办公室</a></li>
+					<li><a href="http://jwc.gzhsvc.com" target="_blank" >教务处</a></li>
+                    <li><a href="http://dw.gzhsvc.com" target="_blank">党委办公室</a></li>
+					<li><a href="http://rsc.gzhsvc.com" target="_blank">人事处</a></li>
+					<li><a href="http://zsjy.gzhsvc.com" target="_blank">招生就业处</a></li>
+                    <li><a href="http://xsc.gzhsvc.com" target="_blank">学生处</a></li>
+					<li><a href="http://llc.gzhsvc.com" target="_blank">对外联络处</a></li>
+				    <li><a href="http://kys.gzhsvc.com" target="_blank">科研所</a></li>
+					<li><a href="http://pjb.gzhsvc.com" target="_blank">评建督导办</a></li>
+                    <li><a href="http://lib.gzhsvc.com" target="_blank">图书馆</a></li>
+                    <li><a href="http://jjc.gzhsvc.com" target="_blank">继续教育处</a></li>
+                    <li><a href="http://cwc.gzhsvc.com" target="_blank">财务处</a></li>
+                    <li><a href="http://labs.gzhsvc.com" target="_blank">实训中心</a></li>
+                      <li><a href="http://gqt.gzhsvc.com/" target="_blank">院团委</a></li>
+				</ul>
+				<div class="organ_Dt"><p>教学部门</p></div>
+				<ul class="organ_Ul" style="height:140px">
+					<li><a href="http://dzx.gzhsvc.com" target="_blank">信息工程系</a></li>
+					<li><a href="http://kjx.gzhsvc.com" target="_blank">会计系</a></li>
+                    <li><a href="http://gmx.gzhsvc.com" target="_blank">国际贸易系</a></li>
+					<li><a href="http://jrx.gzhsvc.com" target="_blank">金融系</a></li>
+                    <li><a href="http://ggx.gzhsvc.com" target="_blank">工商管理系</a></li>
+					<li><a href="http://szb.gzhsvc.com" target="_blank">思政部</a></li>
+					<li><a href="http://dqx.gzhsvc.com" target="_blank">机电工程系</a></li>
+					<li><a href="http://jcb.gzhsvc.com" target="_blank">基础教学部</a></li>
+                    <li><a href="http://jzx.gzhsvc.com" target="_blank">建筑工程系</a></li>
+					<li><a href="http://qcx.gzhsvc.com/" target="_blank">汽车工程学院</a></li>
+					<li><a href="http://xqjy.gzhsvc.com/" target="_blank">学前教育系</a></li>
+						<li><a href="http://jdxy.gzhsvc.com/" target="_blank">酒店管理学院</a></li>
+				</ul>
+
+			</div>
+			<div class="bottom"></div>
+		</div>
+	</div>
+	<div class="center">
+		<div id="focusContainer">
+			
+			<div class="left">
+				<img src="UploadFile/New_Thumb_20185231891262.jpg" />
+			</div>
+	  <div class="right">
+  <h2 class="cDRed f14 fb">我院召开教育思想观念大讨论交流研讨会</h2>
+
+				<p >　　为全面贯彻落实党的十九大精神，进一步提升全体教职工的教育思想观念，打造我院人才培养的亮点，5月22日下午，我院在博C101召开了教育思想观念大讨论交流研讨会。学院王乐夫院长、张毕西常务副院长、詹业宏副院长、张武华副院长和全体教职工参加了会议。会议由詹业宏副院长主持。
+　　会上，王院长作了题为“高等职业教育与应用...<a href="/news.asp?id=1856&c=1"><em>[查看全文]</em></a></p>
+		  </div>
+		</div>
+		<div id="splitLine"></div>
+		<div id="newsContainer" onmouseover="stopScroll()" onmouseout="startScroll()">
+			<div id="news_Nav">
+					<ul id="newsTab">
+						<li id="Art_mt" onmousemove="tab(0)"><a href="NewsList.asp?c=1" title="查看更多学院资讯" onfocus="this.blur()">
+						学院资讯</a></li>
+						<li id="Art_zx" onmousemove="tab(1)"><a href="NewsList.asp?c=2" title="查看更多院内通知" onfocus="this.blur()">
+						校内通知</a></li>
+						<li id="Art_zx" onmousemove="tab(2)"><a href="NewsList.asp?c=3" title="查看更多媒体关注" onfocus="this.blur()">
+						媒体关注</a></li>
+					</ul>
+					<span id="news_NavMore" class="more" onclick="linkMore()" title="查看更多"></span>
+		  </div>
+				<div id="news_List">
+					<ul id="main0" style="display:block">
+						<li><b></b><a href='news.asp?id=1856&c=1' title='我院召开教育思想观念大讨论交流研讨会'>我院召开教育思想观念大讨论交流研讨会</a><span>2018-05-23</span></li><li><b></b><a href='news.asp?id=1855&c=1' title='扬传统文化   展青春芳华——会计系举行2018年五四表彰大会暨文艺汇演'>扬传统文化   展青春芳华——会计系举...</a><span>2018-05-22</span></li><li><b></b><a href='news.asp?id=1854&c=1' title='我院隆重举行“中餐繁荣基地”揭牌仪式'>我院隆重举行“中餐繁荣基地”揭牌仪式</a><span>2018-05-21</span></li><li><b></b><a href='news.asp?id=1857&c=1' title='院团委组织第十三期学生干部培训班学员外出参观学习'>院团委组织第十三期学生干部培训班学员外...</a><span>2018-05-20</span></li><li><b></b><a href='news.asp?id=1853&c=1' title='院团委举办第五届“金话筒”主持人大赛'>院团委举办第五届“金话筒”主持人大赛</a><span>2018-05-17</span></li><li><b></b><a href='news.asp?id=1852&c=1' title='喜讯：CCAT授权考试中心正式落户我院'>喜讯：CCAT授权考试中心正式落户我院</a><span>2018-05-16</span></li><li><b></b><a href='news.asp?id=1851&c=1' title='我院召开2018年春季学期期中教学工作总结大会'>我院召开2018年春季学期期中教学工作...</a><span>2018-05-16</span></li><li><b></b><a href='news.asp?id=1850&c=1' title='喜讯：我院黄泽栋老师荣获“全国民办高校优秀辅导员”称号'>喜讯：我院黄泽栋老师荣获“全国民办高校...</a><span>2018-05-14</span></li>
+					</ul>
+					<ul id="main1" style="display:none">
+						<li><b></b><a href='news.asp?id=1839&c=2' title='广州华商职业学院关于2018年劳动节及“五四”青年节放假调休的通知'>广州华商职业学院关于2018年劳动节及...</a><span>2018-04-17</span></li><li><b></b><a href='news.asp?id=1829&c=2' title='关于2018年清明节放假调休的通知'>关于2018年清明节放假调休的通知</a><span>2018-03-22</span></li><li><b></b><a href='news.asp?id=1824&c=2' title='关于加强流感等呼吸道传染病防控工作的通知'>关于加强流感等呼吸道传染病防控工作的通知</a><span>2018-03-14</span></li><li><b></b><a href='news.asp?id=1810&c=2' title='广东省教育厅办公室转发关于教育部办公厅进一步做好学校传染病防控与食品安全工作的通知'>广东省教育厅办公室转发关于教育部办公厅...</a><span>2018-01-04</span></li><li><b></b><a href='news.asp?id=1797&c=2' title='关于2018年寒假放假的通知'>关于2018年寒假放假的通知</a><span>2017-12-07</span></li><li><b></b><a href='news.asp?id=1756&c=2' title='关于2017年国庆、中秋节放假的通知'>关于2017年国庆、中秋节放假的通知</a><span>2017-09-28</span></li><li><b></b><a href='news.asp?id=1737&c=2' title='关于2017年暑期放假的通知'>关于2017年暑期放假的通知</a><span>2017-06-29</span></li><li><b></b><a href='news.asp?id=1717&c=2' title='关于2017年端午节放假的通知'>关于2017年端午节放假的通知</a><span>2017-05-17</span></li>
+
+					</ul>
+					<ul id="main2" style="display:none">
+						<li><b></b><a href='news.asp?id=1858&c=3' title='首届广州“职教杯”创新创业大赛'>首届广州“职教杯”创新创业大赛</a><span>2018-05-29</span></li><li><b></b><a href='news.asp?id=1633&c=3' title='广州电视台报道我院第六届田径运动会'>广州电视台报道我院第六届田径运动会</a><span>2016-12-08</span></li><li><b></b><a href='news.asp?id=1505&c=3' title='《增城日报》报道华商汽车工程学院成立'>《增城日报》报道华商汽车工程学院成立</a><span>2016-03-30</span></li><li><b></b><a href='news.asp?id=1504&c=3' title='羊城晚报-金羊网报道华商汽车工程学院庆典'>羊城晚报-金羊网报道华商汽车工程学院庆典</a><span>2016-03-30</span></li><li><b></b><a href='news.asp?id=1365&c=3' title='《增城日报》报道我院学生深入社区服务居民'>《增城日报》报道我院学生深入社区服务居民</a><span>2015-05-18</span></li><li><b></b><a href='news.asp?id=1374&c=3' title='《增城日报》报道学院附属旅游酒店学院揭牌'>《增城日报》报道学院附属旅游酒店学院揭牌</a><span>2014-12-30</span></li><li><b></b><a href='news.asp?id=1303&c=3' title='南方网报道我院附属旅游酒店学院揭牌仪式'>南方网报道我院附属旅游酒店学院揭牌仪式</a><span>2014-12-30</span></li><li><b></b><a href='news.asp?id=1275&c=3' title='广州电视台报道我院2014届新生迎新晚会'>广州电视台报道我院2014届新生迎新晚会</a><span>2014-12-04</span></li>
+					</ul>
+				</div>
+		</div>
+		<div id="sceneContainer">
+			<div id="hostTitle"><span>校园剪影</span></div>
+			<div id="hostLBtn" class="btn" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()" onmousedown="ISL_GoDown()" title="左移"></div>
+			<div id="ISL_Cont"  class="Cont">
+				<div class="ScrCont">
+					<div id="List1"><a href="/Intro/scene.htm" target="_blank" title="华商职院校园风光"><img src="hostImg/01.jpg" /><img src="hostImg/02.jpg" /><img src="hostImg/03.jpg" /><img src="hostImg/04.jpg" /><img src="hostImg/10.jpg" /><img src="hostImg/05.jpg" /><img src="hostImg/06.jpg" /><img src="hostImg/07.jpg" /><img src="hostImg/08.jpg" /><img src="hostImg/11.jpg" /><img src="hostImg/12.jpg" /></a></div>
+					<div id="List2"></div>
+				</div>
+			</div>
+			<div id="hostRBtn" class="btn" onmouseup="ISL_StopUp()" onmouseout="ISL_StopUp()" onmousedown="ISL_GoUp()" title="右移"></div>
+		</div>
+	</div>
+	<div id="rightSidebar" class="right">
+		<!--<div id="lxDiv"><a href="http://121.33.188.47:22996/lylx" target="_blank" title="电子离校系统" ><img alt="电子离校系统" src="Images/lx.gif" /></a></div>-->
+		<div id="masterDiv"><img src="Images/ycdh.jpg" border="0" usemap="#Map" / >
+          <map name="Map" id="Map">
+            <area shape="rect" coords="9,4,184,41" href="mailto:admin@gzhsvc.com" />
+            <area shape="rect" coords="7,47,186,84" href="http://pjb.gzhsvc.com/" target="_blank" />
+            <area shape="rect" coords="9,90,187,125" href="http://www.gzhsvc.com/360C/index.htm" target="_blank" />
+            <area shape="rect" coords="10,130,186,166"  onclick="javascript:window.open('http://121.33.188.59')"   target="_blank" />
+          </map>
+		</div
+    ><div id="newspagerDiv"></div>
+		
+<!--<a id="ad20111024" href="images/zhenggaoqishi.gif" ><img src="images/zhenggao.gif" alt="征稿" style="margin-bottom:5px; width:190px;overflow:hidden" /></a>-->
+		<a href="http://photo.gzhsvc.com" target="_blank" ><img src="ADD.jpg" alt="" style="margin-bottom:5px; width:190px;overflow:hidden;display:none" /></a>
+		<div id="topicsWrap" style="margin-bottom:5px; " class="menuContent"><img src="Images/tWeb_title.gif" alt="专题网站" />
+			<ul>
+				<li><a href="http://zcjd.gzhsvc.com/" target="_blank">中餐繁荣基地</a></li>
+                <li><a href="/广州华商职业学院高等职业教育质量年度报告2018.swf" target="_blank">高等职业教育质量年度报告</a></li>
+              <li><a href="http://ly.gzhsvc.com/" target="_blank"  >省高等职业教育重点专业验收</a></li>
+				<li><a href="http://ppzy.gzhsvc.com/" target="_blank"  >二类品牌专业申报</a></li>
+				<li><a href="http://cwkj.gzhsvc.com/" target="_blank" >财务会计实务精品课程</a></li>
+			
+			  <li><a href="http://robot.gzhsvc.com/" target="_blank" >工业机器人技术应用实训中心</a></li>
+				
+				
+				
+				
+		  </ul>
+    </div>
+		<br>
+        <div id="LinksWrap" class="menuContent"><img src="Images/FriendLinks_title.gif" alt="友情链接" />
+			<ul>
+				<li><a href="http://llc.gzhsvc.com/" target="_blank">对外合作交流中心</a></li>
+				<li><a href="http://www.gdhsc.edu.cn" target="_blank">广东财经大学华商学院</a></li>
+				<li><a href="http://www.huashangts.com" target="_blank">广东华商技工学校</a></li>
+				<li><a href="http://www.gdhed.edu.cn" target="_blank">广东省教育厅</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="qrcode"></div>
+	<div class="copyright">
+		<p align="center">地址：广东省广州市增城荔城街华商路一号 | 邮政编码：511300 <br />
+		  招生热线：020-32882222 &copy;2010广州华商职业学院 All Rights 
+		Reserved | <a href='http://www.miitbeian.gov.cn' target="_blank" style='color:#000;'>粤ICP备12007829号</a> | <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011802000041" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="images/beian.png" />粤公网安备 44011802000041号</a>	</p>
+	</div>
+	<div><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260987868'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1260987868%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></div>
+</div>
+</div>
+<script language="javascript" type="text/javascript">
+//校园风光图片滚动列表
+var Speed = 10; //速度(毫秒)
+var Space = 10; //每次移动(px)
+var PageWidth = 160; //翻页宽度
+var fill = 0; //整体移位
+var MoveLock = false;
+var MoveTimeObj;
+var Comp = 0;
+var AutoPlayObj = null;
+GetObj("List2").innerHTML = GetObj("List1").innerHTML;
+GetObj('ISL_Cont').scrollLeft = fill;
+GetObj("ISL_Cont").onmouseover = function(){clearInterval(AutoPlayObj);}
+GetObj("ISL_Cont").onmouseout = function(){AutoPlay();}
+AutoPlay();
+function GetObj(objName){
+	if(document.getElementById){
+		return eval('document.getElementById("'+objName+'")')
+	}else{
+	return eval('document.all.'+objName)
+	}
+}
+function AutoPlay(){ //自动滚动
+	clearInterval(AutoPlayObj);
+	AutoPlayObj = setInterval('ISL_GoDown();ISL_StopDown();',5000); //间隔时间
+}
+function ISL_GoUp(){ //上翻开始
+	if(MoveLock) return;
+	clearInterval(AutoPlayObj);
+	MoveLock = true;
+	MoveTimeObj = setInterval('ISL_ScrUp();',Speed);
+}
+function ISL_StopUp(){ //上翻停止
+	clearInterval(MoveTimeObj);
+	if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0){
+		Comp = fill - (GetObj('ISL_Cont').scrollLeft % PageWidth);
+		CompScr();
+	}else{
+		MoveLock = false;
+	}
+	AutoPlay();
+}
+function ISL_ScrUp(){ //上翻动作
+	if(GetObj('ISL_Cont').scrollLeft <= 0){GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft + GetObj('List1').offsetWidth}
+	GetObj('ISL_Cont').scrollLeft -= Space ;
+}
+function ISL_GoDown(){ //下翻
+	clearInterval(MoveTimeObj);
+	if(MoveLock) return;
+	clearInterval(AutoPlayObj);
+	MoveLock = true;
+	ISL_ScrDown();
+	MoveTimeObj = setInterval('ISL_ScrDown()',Speed);
+}
+function ISL_StopDown(){ //下翻停止
+	clearInterval(MoveTimeObj);
+	if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0 ){
+	Comp = PageWidth - GetObj('ISL_Cont').scrollLeft % PageWidth + fill;
+	CompScr();
+	}else{
+	MoveLock = false;
+	}
+	AutoPlay();
+}
+function ISL_ScrDown(){ //下翻动作
+	if(GetObj('ISL_Cont').scrollLeft >= GetObj('List1').scrollWidth){
+		GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft - GetObj('List1').scrollWidth;
+	}
+	GetObj('ISL_Cont').scrollLeft += Space ;
+}
+function CompScr(){
+	var num;
+	if(Comp == 0){
+		MoveLock = false;
+		return;
+	}
+	if(Comp < 0){ //上翻
+		if(Comp < -Space){
+		   Comp += Space;
+		   num = Space;
+		}else{
+		   num = -Comp;
+		   Comp = 0;
+		}
+		GetObj('ISL_Cont').scrollLeft -= num;
+		setTimeout('CompScr()',Speed);
+	}else{ //下翻
+		if(Comp > Space){
+		   Comp -= Space;
+		   num = Space;
+		}
+		else{
+		   num = Comp;
+		   Comp = 0;
+		}
+		GetObj('ISL_Cont').scrollLeft += num;
+		setTimeout('CompScr()',Speed);
+	}
+}
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?3a5a51b2149c29f6997d21fecf83dd6c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+});
+</script>
+<!--
+<div id='lv_ad3' style='width:220px;height:130px;z-index:9999;position: absolute;background: url(http://www.gzhsvc.com/lxyz.png) no-repeat !important; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="http://www.gzhsvc.com/lxyz.png");_background:none;'>
+</div>
+<script type='text/javascript'>lv_float('3','http://www.gzhsvc.com/News.asp?id=1549&c=1');</script>
+
+<div style="width:166px; height:200px; z-index:999;display: block; position: fixed;left:8px ;right: auto; margin-left: 0px;top: 50%; bottom: auto;margin-top: -75px;">
+<a href ="http://www.gzhsvc.com/gjb/index.htm" target="_blank"><img src="http://www.gzhsvc.com/GBCA.gif"  style="border:0" /></a>
+<a href ="http://www.gzhsvc.com/gjb/Brandon.htm" target="_blank"><img src="http://www.gzhsvc.com/brandon.gif"  style="border:0; margin-top:10px;" /></a>
+-->
+
+<div id="code"></div>
+<div id="code_img"></div>
+<a id="gotop" href="javascript:void(0)"></a>
+
+</body>
+</html>

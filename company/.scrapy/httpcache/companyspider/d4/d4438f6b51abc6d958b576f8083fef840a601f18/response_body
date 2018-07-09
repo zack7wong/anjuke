@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>中央民族大学附属中学</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords" content="中央民族大学附属中学" />
+<meta name="description" content="中央民族大学附属中学" />
+    <meta name="application-name" content="mdfz.com">
+    <!-- Le styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/skin/mdfz/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/skin/mdfz/css/main.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="/skin/mdfz/css/font-awesome.min.css">
+    <!-- slide样式 -->
+    <link rel="stylesheet" type="text/css" href="/skin/mdfz/images/slideshow3/img/slide.css">
+    <link rel="stylesheet" type="text/css" href="/skin/mdfz/images/slideshow3/img/actives.css">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="/skin/mdfz/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <script src="/skin/mdfz/js/jquery.min.js"></script>
+    <script src="/skin/mdfz/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.6.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+<!--AD-->
+ <script type="text/javascript">
+ <!--
+//公共脚本文件 main.js
+function addEvent(obj,evtType,func,cap){
+    cap=cap||false;
+ if(obj.addEventListener){
+     obj.addEventListener(evtType,func,cap);
+  return true;
+ }else if(obj.attachEvent){
+        if(cap){
+         obj.setCapture();
+         return true;
+     }else{
+      return obj.attachEvent("on" + evtType,func);
+  }
+ }else{
+  return false;
+    }
+}
+function getPageScroll(){
+    var xScroll,yScroll;
+ if (self.pageXOffset) {
+  xScroll = self.pageXOffset;
+ } else if (document.documentElement && document.documentElement.scrollLeft){
+  xScroll = document.documentElement.scrollLeft;
+ } else if (document.body) {
+  xScroll = document.body.scrollLeft;
+ }
+ if (self.pageYOffset) {
+  yScroll = self.pageYOffset;
+ } else if (document.documentElement && document.documentElement.scrollTop){
+  yScroll = document.documentElement.scrollTop;
+ } else if (document.body) {
+  yScroll = document.body.scrollTop;
+ }
+ arrayPageScroll = new Array(xScroll,yScroll);
+ return arrayPageScroll;
+}
+function GetPageSize(){
+    var xScroll, yScroll;
+    if (window.innerHeight && window.scrollMaxY) { 
+        xScroll = document.body.scrollWidth;
+        yScroll = window.innerHeight + window.scrollMaxY;
+    } else if (document.body.scrollHeight > document.body.offsetHeight){
+        xScroll = document.body.scrollWidth;
+        yScroll = document.body.scrollHeight;
+    } else {
+        xScroll = document.body.offsetWidth;
+        yScroll = document.body.offsetHeight;
+    }
+    var windowWidth, windowHeight;
+    if (self.innerHeight) {
+        windowWidth = self.innerWidth;
+        windowHeight = self.innerHeight;
+    } else if (document.documentElement && document.documentElement.clientHeight) {
+        windowWidth = document.documentElement.clientWidth;
+        windowHeight = document.documentElement.clientHeight;
+    } else if (document.body) {
+        windowWidth = document.body.clientWidth;
+        windowHeight = document.body.clientHeight;
+    } 
+    if(yScroll < windowHeight){
+        pageHeight = windowHeight;
+    } else { 
+        pageHeight = yScroll;
+    }
+    if(xScroll < windowWidth){ 
+        pageWidth = windowWidth;
+    } else {
+        pageWidth = xScroll;
+    }
+    arrayPageSize = new Array(pageWidth,pageHeight,windowWidth,windowHeight) 
+    return arrayPageSize;
+}
+//广告脚本文件 AdMove.js
+/*
+例子
+<div id="Div2">
+    ***** content ******
+</div>
+var ad=new AdMove("Div2");
+ad.Run();
+*/
+////////////////////////////////////////////////////////
+var AdMoveConfig=new Object();
+AdMoveConfig.IsInitialized=false;
+AdMoveConfig.ScrollX=0;
+AdMoveConfig.ScrollY=0;
+AdMoveConfig.MoveWidth=0;
+AdMoveConfig.MoveHeight=0;
+AdMoveConfig.Resize=function(){
+    var winsize=GetPageSize();
+    AdMoveConfig.MoveWidth=winsize[2];
+    AdMoveConfig.MoveHeight=winsize[3];
+    AdMoveConfig.Scroll();
+}
+AdMoveConfig.Scroll=function(){
+    var winscroll=getPageScroll();
+    AdMoveConfig.ScrollX=winscroll[0];
+    AdMoveConfig.ScrollY=winscroll[1];
+}
+addEvent(window,"resize",AdMoveConfig.Resize);
+addEvent(window,"scroll",AdMoveConfig.Scroll);
+function AdMove(id){
+    if(!AdMoveConfig.IsInitialized){
+        AdMoveConfig.Resize();
+        AdMoveConfig.IsInitialized=true;
+    }
+    var obj=document.getElementById(id);
+    obj.style.position="absolute";
+    var W=AdMoveConfig.MoveWidth-obj.offsetWidth;
+    var H=AdMoveConfig.MoveHeight-obj.offsetHeight;
+    var x = W*Math.random(),y = H*Math.random();
+    var rad=(Math.random()+1)*Math.PI/6;
+    var kx=Math.sin(rad),ky=Math.cos(rad);
+    var dirx = (Math.random()<0.5?1:-1), diry = (Math.random()<0.5?1:-1);
+    var step = 1;
+    var interval;
+    this.SetLocation=function(vx,vy){x=vx;y=vy;}
+    this.SetDirection=function(vx,vy){dirx=vx;diry=vy;}
+    obj.CustomMethod=function(){
+        obj.style.left = (x + AdMoveConfig.ScrollX) + "px";
+        obj.style.top = (y + AdMoveConfig.ScrollY) + "px";
+        rad=(Math.random()+1)*Math.PI/6;
+        W=AdMoveConfig.MoveWidth-obj.offsetWidth;
+        H=AdMoveConfig.MoveHeight-obj.offsetHeight;
+        x = x + step*kx*dirx;
+        if (x < 0){dirx = 1;x = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+        if (x > W){dirx = -1;x = W;kx=Math.sin(rad);ky=Math.cos(rad);}
+        y = y + step*ky*diry;
+        if (y < 0){diry = 1;y = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+        if (y > H){diry = -1;y = H;kx=Math.sin(rad);ky=Math.cos(rad);}
+    }
+    this.Run=function(){
+        var delay = 10;
+        interval=setInterval(obj.CustomMethod,delay);
+        obj.onmouseover=function(){clearInterval(interval);}
+        obj.onmouseout=function(){interval=setInterval(obj.CustomMethod, delay);}
+    }
+}
+ //-->
+ </script>
+
+  </head>
+
+<body>
+<!--AD-->
+    <!--<div id="gg1" style="position:absolute;z-index:1200">
+     <a href="http://112.124.8.125:81" target="_blank"><img src="/skin/mdfz/images/zs2.jpg" /></a>
+    </div>
+    <script type="text/javascript">
+
+       
+ var ad1=new AdMove("gg1");
+        ad1.Run();
+  
+    </script>  -->
+<!--AD end-->
+ <div class="container"><div id="gg2" style="position:absolute;z-index:1200">
+     <a href="http://www.mdfz.com.cn/rencaizhaopin/" target="_blank"><img src="/skin/mdfz/images/zp.jpg" /></a>
+    </div>
+    <script type="text/javascript">
+    //<!--
+       
+ var ad2=new AdMove("gg2");
+        ad2.Run();
+    //-->
+    </script>
+<!--AD end-->
+ <div class="container">
+    <div class="topbox">
+      <div class="topbox_l"><img src="/skin/mdfz/images/logo.png" /></div>
+      <div class="topbox_r">
+        <div class="qzone"><a href="http://1723917602.qzone.qq.com" target="_blank"><img src="/skin/mdfz/images/qqzone.jpg" /></a></div>
+        <div class="sina"><a href="http://weibo.com/mdfz" target="_blank"><img src="/skin/mdfz/images/sina.jpg" /></a></div>
+        <div class="clear"></div>
+        <div class="search">
+
+<!--<form action='/e/search/index.php' method="post" name="search_news" id="search_news">
+							<table width="60%" border="0" cellspacing="6" cellpadding="0">
+								<input type="hidden" name="show" value="title" />
+								<tr>
+									<td>
+										<input name="keyboard" type="text" id="keyboard" value="[!--keyboard--]" class="form-control" />
+                                                                        </td>
+									<td><input type="submit" name="submit" value="搜 索" class="btn btn-primary" /></td>
+								</tr>
+							</table>
+						</form>-->
+        
+<form class="form-inline" role="form" action='/e/search/index.php' method="post" name="search_news" id="search_news">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail2">search key</label>
+    <input type="hidden" name="show" value="title">
+    <input name="keyboard" type="text" id="keyboard" class="form-control" placeholder="输入关键词搜索">
+  </div>
+  <input type="submit" name="submit" value="搜 索" class="btn btn-primary" />
+</form>
+        
+        </div>
+      </div>
+      <div class="topbox_qcode"><img src="/skin/mdfz/images/qcode.jpg" /></div>
+    </div>
+
+<script>
+$(function () {
+	var navLi=$(".menubg .nav1 li");
+	navLi.mouseover(function () {
+		$(this).find("a").addClass("current");
+		$(this).find(".sbox").stop().slideDown();
+	})
+	navLi.mouseleave(function(){
+		$(this).find("a").removeClass("current");
+		$(this).find(".sbox").stop().slideUp();
+	})
+})
+</script>   
+	<div class="menubg">
+		<ul class="nav1">
+			<li>
+				<a href="/">首 页</a>
+			</li>
+			<li class="vest"><a href="/xueyuanjianjie/">学校简介</a>
+				<div class="sbox">
+                    <a href="/xueyuanjianjie/fuzhonggaikuang/">附中概况</a>
+					<a href="/xueyuanjianjie/zhici.html">校长致辞</a>
+					<a href="/xueyuanjianjie/lingdaobanzi/">领导班子</a>
+                    <a href="/xueyuanjianjie/zuzhijigou/">组织机构</a>
+					<a href="/xueyuanjianjie/lingdaoguanhuai/">领导关怀</a>
+                    <a href="/xueyuanjianjie/guangronglishi/">光荣历史</a>
+                    <a href="/xueyuanjianjie/xiaoyuanhuanjing/">校园环境</a>
+				</div>
+            </li>
+			<li class="vest"><a href="/dangtuanjianshe/">党团建设</a>
+				<div class="sbox">
+					<a href="/dangtuanjianshe/zongzhigaikuang/">总支概况</a>
+					<a href="/dangtuanjianshe/tuanweigaikuang/">团委概况</a>
+                    <a href="/dangtuanjianshe/lilunxuexi/">理论学习</a>
+                    <a href="/dangtuanjianshe/dangtuanhuodong/">党团活动</a>
+                    <a href="/dangtuanjianshe/gongguihuodong/">工会活动</a>
+                    <a href="/dangtuanjianshe/rudangdaohang/">入党导航</a>
+				</div>
+            </li>
+			<li class="vest"><a href="/jiaoxuekeyan/">教学科研</a>
+				<div class="sbox">
+					<a href="/jiaoxuekeyan/jiaoshiduiwu/">教师队伍</a>
+					<a href="/jiaoxuekeyan/keyanchengguo/">科研成果</a>
+                    <a href="/jiaoxuekeyan/xueshengbiaozhang/">学生表彰</a>
+                    <a href="/jiaoxuekeyan/kechenggaige/">课程改革</a>
+					<a href="/jiaoxuekeyan/jiaoxueziyuan/">教学资源</a>
+                    <a href="/jiaoxuekeyan/ketiyanjiu/">课题研究</a>
+                    <a href="/jiaoxuekeyan/likefudao/">理科辅导</a>
+					<a href="/jiaoxuekeyan/wenkefudao/">文科辅导</a>
+				</div>
+            </li>
+            <li class="vest"><a href="/xiaoyuanshenghuo/">校园生活</a>
+				<div class="sbox">
+					<a href="/xiaoyuanshenghuo/keyuhuodong/">课余活动</a>
+					<a href="/xiaoyuanshenghuo/xueshengzuopin/">学生作品</a>
+                    <a href="/xiaoyuanshenghuo/xueshengrongyu/">学生荣誉</a>
+					<a href="/xiaoyuanshenghuo/shetuandongtai/">社团动态</a>
+                    <a href="/xiaoyuanshenghuo/xiaoguixiaoji/">校规校纪</a>
+				</div>
+            </li>
+            <li class="vest"><a href="/zhaoshengzhuanlan/">招生专栏</a>
+				<div class="sbox">
+					<a href="/zhaoshengzhuanlan/zhaoshengwenjian/">招生文件</a>
+					<a href="/zhaoshengzhuanlan/zhaoshengjianzhang/">招生简章</a>
+                    <a href="/zhaoshengzhuanlan/zhaoshengwenda/">招生问答</a>
+                    <a href="/zhaoshengzhuanlan/beijingzhaosheng/">北京招生</a>
+					<a href="http://112.124.8.125:81">网上报名</a>
+                    <a href="/zhaoshengzhuanlan/liaojiefuzhong/">了解附中</a>
+                    <a href="/zhaoshengzhuanlan/lishishijuan/">历年试卷</a>
+				</div>
+            </li>
+            <li class="vest"><a href="/minzutuanjie/">民族团结</a>
+				<div class="sbox">
+					<a href="/minzutuanjie/minzujianjie/">民族简介</a>
+					<a href="/minzutuanjie/minzufengqing/">民族风情</a>
+                    <a href="/minzutuanjie/youhaowanglai/">友好往来</a>
+					<a href="/minzutuanjie/zhuantijingcui/">专题集锦</a>
+				</div>
+            </li>
+            <li><a href="/rencaizhaopin/">人才招聘</a></li>
+            <li class="vest"><a href="/xiaoyouhui/">校友会</a>
+				<div class="sbox">
+					<a href="/xiaoyouhui/xiaoyouhuijianjie/">校友会简介</a>
+					<a href="/xiaoyouhui/xinwendongtai/">新闻动态</a>
+                    <a href="/xiaoyouhui/goengmeijiayuan/">共美家园</a>
+					<a href="/xiaoyouhui/xiaoyoufengcai/">校友风采</a>
+                    <a href="/xiaoyouhui/bainianmuxiao/">百年母校</a>
+                    <a href="/xiaoyouhui/gongmeitonggen/">共美同根</a>
+                    <a href="/xiaoyouhui/882.html">加入我们</a>
+				</div>
+            </li>
+			<li class="vest"><a href="/jijinhui/">基金会</a>
+				<div class="sbox">
+					<a href="/jijinhui/jijinhuijianjie/">基金会简介</a>
+					<a href="/jijinhui/gongyixiangmujieshao/">公益项目介绍</a>
+                    <a href="/jijinhui/gongyixiangmujianzhan/">公益项目进展</a>
+					<a href="/jijinhui/gongzuodongtai/">工作动态</a>
+				</div>
+            </li>
+			<li class="vest"><a href="#">分校</a>
+				<div class="sbox">
+					<a href="http://www.mdfzhn.com/" target="_blank">海南分校</a>
+					<a href="http://www.bjwzxx.com/" target="_blank">丰台实验</a>
+                    <a href="#">昌平分校</a>
+				</div>   
+            </li>
+		</ul>
+	</div>
+ 
+   <div class="menuer_bg">
+ <SCRIPT language=JavaScript>                                                          
+ <!-- Begin                                                                            
+    var enable=0; today=new Date();                                                           
+    var day; var date;                                                           
+    var time_start = new Date();                                                            
+    var clock_start = time_start.getTime();                                                          
+    if(today.getDay()==0)  day="星期日"                                                                                
+    if(today.getDay()==1)  day="星期一"                                                                                    
+    if(today.getDay()==2)  day="星期二"                                                          
+    if(today.getDay()==3)  day="星期三"                                                          
+    if(today.getDay()==4)  day="星期四"                                                          
+    if(today.getDay()==5)  day="星期五"                                                           
+    if(today.getDay()==6)  day="星期六"                                                           
+ yr = today.getYear();                                                          
+ if (yr < 1000)                                                          
+ yr+=1900;                                                                       
+    date=yr+"年"+(today.getMonth()+1)+"月"+today.getDate()+"日 ";                                                           
+ document.write("<span style='font-size: 14px;color: #666;padding-top:6px;'>"+date);
+ document.write(day+"</font></span>");                                                           
+// -->                                                                                
+</SCRIPT>
+   </div>
+
+ <!-- 幻灯区域开始 --> 
+
+  <link href="/skin/mdfz/images/slideshow/css/fotorama.css" rel="stylesheet">
+  <script src="/skin/mdfz/images/slideshow/js/fotorama.js"></script>
+<div class="fotorama" data-width="1140" data-ratio="1140/356" data-max-width="100%" data-autoplay="3000">
+<img src="/d/file/p/2014-05-31/51f48c876a1658781d6d66044abbe888.jpg">
+</div>
+
+  <!-- 幻灯区域结束 -->
+
+<div class="bbox_bg">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="infobox">
+            <div class="infobox_t">
+              <div class="infobox_t_l"><a href="/xinwendongtai/gonggaolan/" target="_blank">公告栏</a></div>
+              <div class="infobox_t_r"><a href="/xinwendongtai/gonggaolan/" target="_blank">+ 更多</a></div>
+            </div>
+
+<!--滚动文字-->
+<script type="text/javascript" src="/skin/mdfz/js/textSlider_jquery.js"></script>
+<script type="text/javascript" src="/skin/mdfz/js/jQuery.textSlider.js"></script>
+<div id="scrollDiv">
+<div class="scrollText">
+            <ul class="news">
+                                    <li><i class="icon-angle-right"></i> <a href="/xinwendongtai/gonggaolan/1381.html" target="_blank">周历5月7日至5月12日</a><span class="datetime">18-05-07</span></li>
+                                    <li><i class="icon-angle-right"></i> <a href="/xinwendongtai/gonggaolan/1358.html" target="_blank">教研活动周计划表2017</a><span class="datetime">18-03-12</span></li>
+                                    <li><i class="icon-angle-right"></i> <a href="/xinwendongtai/gonggaolan/1357.html" target="_blank">十项重点工作2017-201</a><span class="datetime">18-03-12</span></li>
+                                    <li><i class="icon-angle-right"></i> <a href="/xinwendongtai/gonggaolan/1354.html" target="_blank">“走·北京”活动课安</a><span class="datetime">18-03-10</span></li>
+                                    <li><i class="icon-angle-right"></i> <a href="/xinwendongtai/gonggaolan/1353.html" target="_blank">校历2017—2018学年度</a><span class="datetime">18-03-10</span></li>
+                              </ul>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#scrollDiv").textSlider({line:6,speed:500,timer:3000});
+});
+</script>
+
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="infobox">
+            <div class="infobox_t">
+              <div class="infobox_t_l"><a href="/xinwendongtai/zuijinxinwen/" target="_blank">新闻动态</a></div>
+              <div class="infobox_t_r"><a href="/xinwendongtai/zuijinxinwen/" target="_blank">+ 更多</a></div>
+            </div>
+            <div class="infobox_coon_l">
+            
+              <div class="jcarousel">
+                <ul>
+  <li>
+    <a href="/xinwendongtai/zuijinxinwen/847.html" title="田琳校长受到习近平总书记亲切接见" target="_blank" class="portfolio-item">
+    <img class="img-responsive" src="/d/file/p/2014-09-30/95a9bac48b3e87c00de1157fe2398b76.jpg" alt="田琳校长受到习近平总书记亲切接见">
+    </a>
+    <div class="figure">
+    <span><a href="/xinwendongtai/zuijinxinwen/847.html" target="_blank">田琳校长受到习近平总</a></span>
+    </div>
+  </li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="infobox_coon_r">
+            <ul class="news">
+                                    <li><i class="icon-angle-right"></i> <a href="/xinwendongtai/zuijinxinwen/1384.html" target="_blank">北京共美民族教育发展基金会举办帮</a><span class="datetime">18-05-16</span></li>
+                                    <li><i class="icon-angle-right"></i> <a href="/xinwendongtai/zuijinxinwen/1383.html" target="_blank">“新时代 新教育 新思考”全国民族</a><span class="datetime">18-05-16</span></li>
+                                    <li><i class="icon-angle-right"></i> <a href="/xinwendongtai/zuijinxinwen/1382.html" target="_blank">民大附中师生收看并学习习近平总书</a><span class="datetime">18-05-07</span></li>
+                                    <li><i class="icon-angle-right"></i> <a href="/xinwendongtai/zuijinxinwen/1380.html" target="_blank">民大附中第25届春季田径运动会开幕</a><span class="datetime">18-05-02</span></li>
+                                    <li><i class="icon-angle-right"></i> <a href="/xinwendongtai/zuijinxinwen/1378.html" target="_blank">庆祝民大附中建校105周年系列活动</a><span class="datetime">18-04-24</span></li>
+                                    <li><i class="icon-angle-right"></i> <a href="/xinwendongtai/zuijinxinwen/1373.html" target="_blank">我校与内蒙古自治区呼和浩特市赛罕</a><span class="datetime">18-04-18</span></li>
+                              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-12">
+          <div class="infobox_t">
+            <div class="infobox_t_l"><a href="/minzutuanjie/zhuantijingcui/" target="_blank">专题集锦</a></div>
+            <div class="infobox_t_r"><a href="/minzutuanjie/zhuantijingcui/" target="_blank">+ 更多</a></div>
+          </div>
+
+
+   
+          <div class="col-xs-12 col-sm-6 col-md-3 zhuanti">
+              <div class="jcarousel2">
+                <ul>
+  <li>
+    <a href="http://www.mdfz.com.cn/xiaoneizhuanti/zhongguomeng/" title="中国梦" target="_blank" class="portfolio-item">
+    <img class="img-responsive" src="/d/file/p/2016-10-21/3aede579302221a0ad66d2e4c20f0772.jpg" alt="中国梦">
+    </a>
+    <div class="figure">
+    <span><a href="http://www.mdfz.com.cn/xiaoneizhuanti/zhongguomeng/" target="_blank">中国梦</a></span>
+    </div>
+  </li>
+                </ul>
+              </div>
+          </div>
+   
+          <div class="col-xs-12 col-sm-6 col-md-3 zhuanti">
+              <div class="jcarousel2">
+                <ul>
+  <li>
+    <a href="http://www.mdfz.com.cn/xiaoneizhuanti/meidechuansong/" title="美德传颂" target="_blank" class="portfolio-item">
+    <img class="img-responsive" src="/d/file/p/2016-10-21/4b5bd7e8eea1c3d644d05a0f910ad4c7.jpg" alt="美德传颂">
+    </a>
+    <div class="figure">
+    <span><a href="http://www.mdfz.com.cn/xiaoneizhuanti/meidechuansong/" target="_blank">美德传颂</a></span>
+    </div>
+  </li>
+                </ul>
+              </div>
+          </div>
+   
+          <div class="col-xs-12 col-sm-6 col-md-3 zhuanti">
+              <div class="jcarousel2">
+                <ul>
+  <li>
+    <a href="http://www.mdfz.com.cn/xiaoneizhuanti/wenzhangduihua/" title="文章讲话" target="_blank" class="portfolio-item">
+    <img class="img-responsive" src="/d/file/p/2016-10-21/8521b631aba586900251d25fe21f9e10.jpg" alt="文章讲话">
+    </a>
+    <div class="figure">
+    <span><a href="http://www.mdfz.com.cn/xiaoneizhuanti/wenzhangduihua/" target="_blank">文章讲话</a></span>
+    </div>
+  </li>
+                </ul>
+              </div>
+          </div>
+   
+          <div class="col-xs-12 col-sm-6 col-md-3 zhuanti">
+              <div class="jcarousel2">
+                <ul>
+  <li>
+    <a href="http://www.mdfz.com.cn/xiaoneizhuanti/xiaokantanqiu/" title="校刊《探求》" target="_blank" class="portfolio-item">
+    <img class="img-responsive" src="/d/file/p/2016-10-21/71cd831dd712641857e6d509199d22aa.jpg" alt="校刊《探求》">
+    </a>
+    <div class="figure">
+    <span><a href="http://www.mdfz.com.cn/xiaoneizhuanti/xiaokantanqiu/" target="_blank">校刊《探求》</a></span>
+    </div>
+  </li>
+                </ul>
+              </div>
+          </div>
+   
+          <div class="col-xs-12 col-sm-6 col-md-3 zhuanti">
+              <div class="jcarousel2">
+                <ul>
+  <li>
+    <a href="/minzutuanjie/zhuantijingcui/780.html" title="友好往来" target="_blank" class="portfolio-item">
+    <img class="img-responsive" src="/d/file/p/2014-06-25/1af52153173e882ec02db7a023788b55.jpg" alt="友好往来">
+    </a>
+    <div class="figure">
+    <span><a href="/minzutuanjie/zhuantijingcui/780.html" target="_blank">友好往来</a></span>
+    </div>
+  </li>
+                </ul>
+              </div>
+          </div>
+   
+          <div class="col-xs-12 col-sm-6 col-md-3 zhuanti">
+              <div class="jcarousel2">
+                <ul>
+  <li>
+    <a href="/minzutuanjie/zhuantijingcui/770.html" title="民附青年" target="_blank" class="portfolio-item">
+    <img class="img-responsive" src="/d/file/p/2014-06-25/96ed69654315312c7a7e3d8bb11f8d8c.jpg" alt="民附青年">
+    </a>
+    <div class="figure">
+    <span><a href="/minzutuanjie/zhuantijingcui/770.html" target="_blank">民附青年</a></span>
+    </div>
+  </li>
+                </ul>
+              </div>
+          </div>
+   
+          <div class="col-xs-12 col-sm-6 col-md-3 zhuanti">
+              <div class="jcarousel2">
+                <ul>
+  <li>
+    <a href="http://www.mdfz.com.cn/xiaoyuanshenghuo/keyuhuodong/" title=""走北京"大课堂" target="_blank" class="portfolio-item">
+    <img class="img-responsive" src="/d/file/p/2014-06-25/4bc2fb649f57aa8422426fac3ff45b8b.jpg" alt=""走北京"大课堂">
+    </a>
+    <div class="figure">
+    <span><a href="http://www.mdfz.com.cn/xiaoyuanshenghuo/keyuhuodong/" target="_blank">&quot;走北京&quot;大课堂</a></span>
+    </div>
+  </li>
+                </ul>
+              </div>
+          </div>
+   
+          <div class="col-xs-12 col-sm-6 col-md-3 zhuanti">
+              <div class="jcarousel2">
+                <ul>
+  <li>
+    <a href="/minzutuanjie/zhuantijingcui/768.html" title="百年校庆" target="_blank" class="portfolio-item">
+    <img class="img-responsive" src="/d/file/p/2014-06-25/9bfc0fab2cc0f5f2527f4c4d7c849523.jpg" alt="百年校庆">
+    </a>
+    <div class="figure">
+    <span><a href="/minzutuanjie/zhuantijingcui/768.html" target="_blank">百年校庆</a></span>
+    </div>
+  </li>
+                </ul>
+              </div>
+          </div>
+          
+
+
+         
+        </div><!--col-md-12-->
+      </div><!--row-->
+      
+    </div><!--col-md-9-->
+    <div class="col-md-3">
+      <div class="infobox_t">
+        <div class="infobox_t_l"><a href="#">数字化校园平台</a></div>
+        <div class="infobox_t_r"><a href="#">+ 更多</a></div>
+      </div>
+      <div class="camp_zs">
+        <a href="http://112.124.8.125:81" target="_blank"><img src="/skin/mdfz/images/zhaosheng_bg.png" /></a>
+      </div>
+      <div class="camp_menu">
+        <ul>
+          <li><a href="http://in.mdfz.com.cn/Login1.aspx?url=hs" target="_blank">家校直通</a></li>
+          <li><a href="http://in.mdfz.com.cn" target="_blank">教师入口</a></li>
+          <li><a href="http://in.mdfz.com.cn/Login1.aspx?url=class" target="_blank">课程选修</a></li>
+          <li><a href="http://pj.mdfz.com.cn/qasss" target="_blank">综合评价</a></li>
+          <li><a href="#" target="_blank">共美教育基金会</a></li>
+          <li><a href="#" target="_blank">数字化校园平台</a></li>
+         <li><a href="http://172.16.2.25" target="_blank">民附印象(校内访问)</a></li>
+         <li><a href="http://yx.mdfz.com.cn" target="_blank">民附印象(校外访问)</a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!--row-->
+  
+  <div class="linkbg">
+  <div class="row">
+    <div class="col-md-1">
+      <div class="link_l">相关链接</div>
+    </div>
+    <div class="col-md-11">
+      <div class="link_r">
+        <ul>
+<li><a href="http://www.seac.gov.cn/gjmw/index.htm" target="_blank" >国家民族事务委员会</a></li>
+<li><a href="http://www.moe.gov.cn/" target="_blank" >教育部</a></li>
+<li><a href="http://www.bjeea.cn" target="_blank" >北京教育考试院</a></li>
+<li><a href="http://www.muc.edu.cn" target="_blank" >中央民族大学</a></li>
+<li><a href="http://www.pku.edu.cn" target="_blank" >北京大学</a></li>
+<li><a href="http://www.tsinghua.edu.cn/qhdwzy/index.jsp" target="_blank" >清华大学</a></li>
+<li><a href="http://www.ruc.edu.cn" target="_blank" >中国人民大学</a></li>
+<li><a href="http://www.fudan.edu.cn" target="_blank" >复旦大学</a></li>
+<li><a href="http://www.sjtu.edu.cn" target="_blank" >上海交通大学</a></li>
+<li><a href="http://www.hdks.com.cn" target="_blank" >海淀区招生考试中心</a></li>
+<li><a href="http://www.hdsyzx.com" target="_blank" >海淀实验中学</a></li>
+<li><a href="http://www.aolongedu.com" target="_blank" >北京奥龙飞腾科技</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+</div><!--bbox_bg-->
+
+ <div class="footer">
+   <div class="row">
+     <div class="col-md-10">
+版权所有 © <a href="#" target="_blank">中央民族大学附属中学</a>&nbsp;&nbsp;&nbsp;&nbsp;京ICP备07003115号-1&nbsp;&nbsp;&nbsp;&nbsp;北京公安局海淀分局 110108007665<br/>
+邮编：100081&nbsp;&nbsp;&nbsp;&nbsp;地址：北京市海淀区法华寺甲5号<br/>
+招生专线：010-68934800&nbsp;&nbsp;&nbsp;&nbsp;传真：010-68938228&nbsp;&nbsp;&nbsp;&nbsp;学校办公室电话：010-68932088<br/>
+技术支持：<a href="http://www.aolongsoft.com" target="_blank">北京奥龙软件</a>
+     </div>
+     <div class="col-md-2">
+       <div class="logo_black"><img src="/skin/mdfz/images/logo_black.jpg" /></div>
+     </div>
+   </div>
+ </div>
+ <div class="footerline"></div>
+
+
+ </div><!--这个是container结束标签-->
+</body>
+</html>

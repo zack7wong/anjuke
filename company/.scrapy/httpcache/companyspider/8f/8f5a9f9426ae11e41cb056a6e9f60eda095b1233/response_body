@@ -1,0 +1,296 @@
+﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>网站首页 - 泉州华光职业学院</title>
+    <meta name="keywords" content="摄影入门教程,摄影作品分析,泉州摄影,摄影入门教程,摄影作品,摄影作品,吴印咸,艺术学院" />
+    <meta name="Copyright" content="版权所有2001－2013，泉州华光摄影艺术学院" />
+    <meta name="description" content="" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <script src="/Scripts/jquery.min.js"></script>
+    <link href="/Content/style.css" rel="stylesheet" />
+    
+    <script>
+        var s = "请输入搜索关键词";
+        function search() {
+            var key = $("#key").val();
+            if (key == "" || key == s) return false;
+            return true;
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="header" class="page">
+        <div id="logo">
+            <img src="/images/logo.gif" alt="LOGO" title="泉州华光职业学院">
+        </div>
+        <div id="search">
+            <form name="searchform" id="searchform" action="/search" method="get" onsubmit="return search();">
+                <input type="text"
+         value="请输入搜索关键词"  class="key" name="key" id="key"
+         onfocus="if(this.value==s)this.value='';" onblur="if(this.value=='')this.value=s;" title="输入关键词后按下Enter键执行搜索"/>
+            </form>
+
+        </div>
+        <div id="menu">
+            <ul>
+<li class='li first' id='i0'><a href='/' target='_self'>首页</a></li>
+<li class='li' id='i4'><a href='/lanmu/4.html'>学院概况</a>
+<ul>
+<li><a href='/lanmu/24.html'>学院简介</a></li>
+<li><a href='/article/536.html'>校级领导</a></li>
+<li><a href='/album/73.html'>校园风光</a></li>
+<li><a href='/lanmu/51.html'>基础设施</a></li>
+<li><a href='/lanmu/71.html'>学院大事记</a></li>
+<li><a href='/lanmu/84.html'>学院公告</a></li>
+</ul>
+</li>
+<li class='li' id='i3'><a href='/lanmu/3.html'>机构设置</a>
+<ul>
+<li><a href='/lanmu/31.html'>科研机构</a></li>
+<li><a href='http://twh.hgu.cn'>团委网站</a></li>
+<li><a href='http://hq.hgu.cn'>后勤管理处</a></li>
+<li><a href='http://xsc.hgu.cn'>学生管理处</a></li>
+<li><a href='http://jwc.hgu.cn'>教务处</a></li>
+<li><a href='/lanmu/16.html'>院系介绍</a></li>
+</ul>
+</li>
+<li class='li' id='i95'><a href='#'>院系设置</a>
+<ul>
+<li><a href='http://syxy.hgu.cn'>摄影学院</a></li>
+<li><a href='http://jjgl.hgu.cn'>商学院</a></li>
+<li><a href='http://ydkj.hgu.cn'>运动科技学院</a></li>
+<li><a href='http://jgxy.hgu.cn'>建工学院</a></li>
+<li><a href='http://sjxy.hgu.cn'>艺术设计学院</a></li>
+<li><a href='http://jkyl.hgu.cn'>健康养老学院</a></li>
+<li><a href='http://jxjy.hgu.cn/'>继续教育学院</a></li>
+<li><a href='http://zhly.hgu.cn/'>中婚旅游学院</a></li>
+</ul>
+</li>
+<li class='li' id='i2'><a href='/lanmu/2.html'>科学研究</a>
+<ul>
+<li><a href='/lanmu/107.html'>学术委员会</a></li>
+<li><a href='/lanmu/29.html'>学术论坛</a></li>
+<li><a href='/lanmu/27.html'>学术成果</a></li>
+<li><a href='/lanmu/114.html'>社会服务</a></li>
+<li><a href='/lanmu/115.html'>课题研究</a></li>
+</ul>
+</li>
+<li class='li' id='i7'><a href='/lanmu/7.html'>招生信息</a>
+<ul>
+<li><a href='/lanmu/80.html'>留学深造</a></li>
+<li><a href='/lanmu/42.html'>招生信息</a></li>
+<li><a href='/App/Baoming'>在线报名</a></li>
+<li><a href='/lanmu/45.html'>培训中心</a></li>
+</ul>
+</li>
+<li class='li' id='i85'><a href='http://jy.hgu.cn'>就业创业</a>
+<ul>
+</ul>
+</li>
+<li class='li' id='i5'><a href='http://dwjl.hgu.cn'>对外交流</a></li>
+<li class='li' id='i6'><a href='/lanmu/6.html'>数字华光</a>
+<ul>
+<li><a href='http://www.hgu.cn/hxyy'>海峡影艺</a></li>
+<li><a href='/lanmu/70.html'>华光学院报</a></li>
+<li><a href='http://hgtv.hgu.cn'>华光电视台</a></li>
+<li><a href='/lanmu/58.html'>学生作品</a></li>
+<li><a href='/ALBUM'>网上展厅</a></li>
+<li><a href='http://www.hgu.cn/ZTList/1.html'>重走海丝路</a></li>
+</ul>
+</li>
+<li class='li' id='i116'><a href='/home/zt2018'>教学成果奖</a></li>
+<li class='li' id='i109'><a href='http://wby.hgu.cn'>华光文博园</a></li>
+</ul>
+
+        </div>
+        <script>
+            $("#menu ul > .li").hover(
+                function () {
+                    $(this).addClass("focus");
+                    $(this).find("ul").addClass("visibled");
+                },
+                function () {
+                    $(this).find("ul").removeClass("visibled");
+                    $(this).removeClass("focus");
+                });
+        </script>
+    </div>
+
+    <!--页面主体开始-->
+    
+
+<style>
+a img{
+	border: 0;
+}
+.float_ad{
+	position:absolute;width:150px;height:300px;z-index:10001
+}
+.btn_close{
+	position:absolute;top:1px;right:1px;color:#666;font-size: 12px;text-decoration: none;background-color:#fff;display:block;padding:0 5px;
+}
+.float_ad img{
+	width:150px;height:300px;
+}
+</style>
+<script src="/scripts/redirect.js" type="text/javascript"></script>
+
+<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+<div id="focus" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#focus" data-slide-to="0" class="active"></li>
+    <li data-target="#focus" data-slide-to="1"></li>
+    <li data-target="#focus" data-slide-to="2"></li>
+    <li data-target="#focus" data-slide-to="3"></li>
+    <li data-target="#focus" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+   <div class="active item"><img src='/images/banner0.jpg'/></div>
+    <div class="item"><img src='/images/banner2.jpg'/></div>
+    <div class="item"><img src='/images/banner3.jpg'/></div>
+    <div class="item"><img src='/images/banner4.jpg'/></div>
+    <div class="item"><img src='/images/banner5.jpg'/></div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#focus" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#focus" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<script type="text/javascript">    
+    $("#i0").addClass("cur");
+</script>
+
+<div id="bar">
+<div id="bar_cont" class="page">
+<strong>学院公告：</strong><a href="/article/3907.html">关于中标单位放弃其中标资格的公告</a>
+</div>
+</div>
+
+<div class="page">
+<div class="box b1">
+	<div class="tt">
+	<div class="left">招生信息</div>
+	<div class="more"><a href="/lanmu/42.html">更多>></a></div>
+	</div>
+		<ul class="cont">        
+            <li ><a href="/article/3851.html" title="2018年省内外各地区招生负责人联系方式">2018年省内外各地区招生负责人联系方式</a></li>
+            <li ><a href="/article/3850.html" title="泉州华光职业学院2018年高职招考招生章程">泉州华光职业学院2018年高职招考招生章程</a></li>
+            <li ><a href="/article/3848.html" title="泉州华光职业学院2018年福建省高职招考招生计划">泉州华光职业学院2018年福建省高职招考招生计划</a></li>
+            <li  class="sty1"><a href="/article/3832.html" title="[视频]2018年华光学院宣传片">[视频]2018年华光学院宣传片</a></li>
+            <li ><a href="/article/3640.html" title="泉州华光职业学院2017年招生章程">泉州华光职业学院2017年招生章程</a></li>
+            <li ><a href="/article/3634.html" title="2017年秋季泉州华光职业学院各省招生计划汇总">2017年秋季泉州华光职业学院各省招生计划汇总</a></li>
+            <li ><a href="/article/3576.html" title="2017泉州华光职业学院征求计划表">2017泉州华光职业学院征求计划表</a></li>
+            <li  class="sty3"><a href="/article/3556.html" title="[视频]2017年华光学院宣传片">[视频]2017年华光学院宣传片</a></li>
+            <li ><a href="/article/3537.html" title="2017年福建省高等职业教育入学考试 分专业招生计划表（院校代码：4029）">2017年福建省高等职业教育入学考试 分专业招生计</a></li>
+            <li ><a href="/article/3536.html" title="泉州华光职业学院2017年高职招考招生章程">泉州华光职业学院2017年高职招考招生章程</a></li>
+            <li ><a href="/article/3493.html" title="2016年泉州华光职业学院  毕业生就业质量年度报告">2016年泉州华光职业学院  毕业生就业质量年度报</a></li>
+		</ul>
+    <div class="img1"><a href="/ZTList/4.html"><img src="/images/shifan1.jpg" /></a></div>
+</div>
+
+<div class="box b2">
+    <div class="tt">
+        <div class="left">新闻中心</div>
+        <div class="more"><a href="/lanmu/11.html">更多>></a></div>
+    </div>
+    <div class="intro">
+        <div class="img"><a href="/article/3896.html"><img src="/uploads/ArticlePic/3896.jpg" /></a></div>
+        <h3><a href="/article/3896.html" title="泉州华光职业学院2018年职业教育活动周开幕">泉州华光职业学院2018年职业教育活动周</a></h3>
+        <p class="txt">5月14日上午，我校在教学楼展厅隆重举行2018年职业教育活动周启动仪式，我校已成功举办两届职业教育活动周，本届的主题是“职教改革40年，产 ..</p>
+    </div>
+    <ul class="cont">
+            <li ><a href="/article/3911.html" title="泉州市教育工会和市直机关工会联合在我校举办单身青年联谊活动">泉州市教育工会和市直机关工会联合在我校举办单身青年联谊活动</a></li>
+            <li ><a href="/article/3910.html" title="我校校长陈雅芳担任2018年全国职业院校技能大赛（高职组）学前教育专业技能赛项专家组组长">我校校长陈雅芳担任2018年全国职业院校技能大赛（高职组）学</a></li>
+            <li ><a href="/article/3909.html" title="“微摄力”泉州站摄影交流会在我校隆重举行">“微摄力”泉州站摄影交流会在我校隆重举行</a></li>
+            <li ><a href="/article/3908.html" title="台湾玄奘大学曾光荣校长一行莅校参观交流">台湾玄奘大学曾光荣校长一行莅校参观交流</a></li>
+            <li ><a href="/article/3906.html" title="泉州市政协调研组莅临我校开展专题调研工作">泉州市政协调研组莅临我校开展专题调研工作</a></li>
+    </ul>
+    <div class="img2"><a href="http://www.icve.com.cn/xlsjygy" target="_blank"><img src="/images/pcyt.jpg" /></a></div>
+</div>
+<div class="box b3">
+	<div class="tt">
+	<div class="left">快速通道</div>
+	</div>
+	<ul class="link">		
+        <li><a href="/app" target="_blank">录取查询</a></li>
+        <li><a href="http://jkyl.hgu.cn" target="_blank">健康养老产业学院</a></li>
+        <li><a href="http://portals.zhihuishu.com/school/hgu" target="_blank">华光学院网络教学平台</a></li>
+        <li><a href="http://jjgl.hgu.cn" target="_blank">商学院</a></li>
+        <li><a href="http://syxy.hgu.cn" target="_blank">摄影学院</a></li>
+        <li><a href="http://ydkj.hgu.cn" target="_blank">运动科技学院</a></li>
+        <li><a href="http://jgxy.hgu.cn" target="_blank">建工学院</a></li>
+        <li><a href="http://sjxy.hgu.cn" target="_blank">艺术设计学院</a></li>
+        <li><a href="http://dj.hgu.cn" target="_blank">华光学院党委办公室</a></li>
+        <li><a href="http://xszz.hgu.cn/" target="_blank">学生资助管理中心</a></li>
+        <li><a href="http://hgtv.hgu.cn" target="_blank">华光学院电视台</a></li>
+        <li><a href="http://twh.hgu.cn" target="_blank">团委会网站</a></li>
+	</ul>
+</div>
+<div class="box b4">
+	<div class="tt">
+		<div class="left">网上展厅</div>
+		<div class="more"><a href="/album">更多>></a></div>
+	</div>
+	<ul class="piclist">
+
+        <li class="first"><a href="/album/92.html" title="第十三届田径运动会"><img src='/uploads/album/92/s23150348713.jpg' /></a><a href="#"><span title="第十三届田径运动会">第十三届田径运动会</span></a></li>
+        <li ><a href="/album/90.html" title="学生作品转化产品"><img src='/uploads/album/90/s23145744450.jpg' /></a><a href="#"><span title="学生作品转化产品">学生作品转化产品</span></a></li>
+        <li ><a href="/album/89.html" title="17级新生军训花絮"><img src='/uploads/album/89/s20092653083.jpg' /></a><a href="#"><span title="17级新生军训花絮">17级新生军训花絮</span></a></li>
+        <li ><a href="/album/88.html" title="六化育人"><img src='/uploads/album/88/s03150450943.jpg' /></a><a href="#"><span title="六化育人">六化育人</span></a></li>
+        <li ><a href="/album/85.html" title="第十二届田径运动会"><img src='/uploads/album/85/s21154043604.jpg' /></a><a href="#"><span title="第十二届田径运动会">第十二届田径运动会</span></a></li>
+        <li ><a href="/album/81.html" title="运动科技学院作品"><img src='/uploads/album/81/s24152753511.jpg' /></a><a href="#"><span title="运动科技学院作品">运动科技学院作品</span></a></li>
+	</ul>
+</div>
+	<div class="clear"></div>
+<div id="bottom">
+<div class="d1">
+<a href="/app/baoming" title="在线报名"><img src="images/d1.gif"></a>
+</div>
+<div class="d2">
+<a href="/home/map" title="学院街景地图"><img src="images/d2.gif"></a>
+</div>
+<div class="d3">
+<a href="http://jwc.hgu.cn" title="华光学院教务处" target="_blank"><img src="images/d3.gif"></a>
+</div>
+</div>
+</div>
+    <!--页面主体结束-->
+    
+    <div id="footer">
+        <div id="flink" class="page">
+            <span>友情链接：</span>
+            <a href='http://www.hgu.cn' target='_blank' title='泉州华光学院'>泉州华光学院</a>|<a href='http://www.moe.gov.cn/' target='_blank' title='国家教育部'>国家教育部</a>|<a href='http://www.fjedu.gov.cn/' target='_blank' title='福建省教育厅'>福建省教育厅</a>|<a href='http://www.qzedu.cn/' target='_blank' title='泉州市教育局'>泉州市教育局</a>|<a href='http://www.gfbzb.gov.cn' target='_blank' title='全国征兵网'>全国征兵网</a>|<a href='http://www.haixiart.com' target='_blank' title='海西艺术网'>海西艺术网</a>|<a href='http://www.wmf.com.cn' target='_blank' title='福建文明风网'>福建文明风网</a>|<a href='http://www.qqzh.org' target='_blank' title='全球粥会网'>全球粥会网</a>
+        </div>
+        <div id="copyright" class="page">
+            <div class="text">
+                <p>© Copyright 2001-2014 HGU.CN All Rights Reserved.　版权所有©  <a href="http://www.hgu.cn/">泉州华光职业学院</a> </p>
+                <p>地址：福建 泉州 台商投资区 洛阳桥北　 邮编:362121　联系电话：400-6963-558　0595-87354000　87354001　87354002</p>
+                <p>
+                    <a href="http://www.miibeian.gov.cn/" target="_blank">闽ICP备16019751号-1</a>
+                    <script src="http://s137.cnzz.com/stat.php?id=833926&web_id=833926" type="text/javascript"></script>
+                    <a href="/Guest/New">访客留言</a>
+                </p>
+            </div>
+            <div class="qr">
+                <img src="/images/qrcode86.png" width="86" height="86" alt="" title="扫一扫，立即关注“泉州华光职业学院”微信公众平台" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

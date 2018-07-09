@@ -1,0 +1,1009 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+<head><meta charset="utf-8"><title>
+	
+        杭州市余杭中学－首页
+</title><meta name="description" content="浙大万朋-中国教育信息化专家"><meta name="keywords" content="ZDSoft网站生成系统,zdsoft,浙大万朋,中国教育信息化专家"><link href="Css/public.css" type="text/css" rel="stylesheet" /><link href="Images/CSS/bigClass.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/Common.js"></script>
+    <script src="js/Login.js"></script>
+    <script src="js/MSClass.js"></script>
+    <script src="js/jQuery.js"></script>
+</head>
+<body  onkeydown="keyDown();">
+<!--[if  IE 6]>   
+  <div id="ie6-warning">
+        您正在使用低版本的IE浏览器，部分页面可能显示不正常，建议您升级到更高版本。 <a href="http://www.microsoft.com/china/windows/internet-explorer/"
+            target="_blank">点击下载</a> <a id="ie6-close" href="javascript:void(0)">关闭</a> 
+    </div>
+    <script type="text/javascript">
+	    $body=$('body');
+	    $('#ie6-close').click(function(){
+		    $body.removeClass('ie6');
+		    document.body.style.backgroundPositionY=0;
+		    $('#ie6-warning').hide();
+	    })
+	$body.addClass('ie6');
+    </script>
+<![endif]-->
+    <form name="nsy" method="post" action="index.aspx" id="nsy">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="3KwyVPaCZPR4mUW9I1+LpWW0APXoFEBAOpAzXmADsv9RaTMU0xZcOedynH9ImcH/" />
+
+
+<script src="/ScriptResource.axd?d=vJmjwChdVyTZDFRgPQDxbVYhVWxbVxm6A4Lp_XHbazAnBnBs-J-QuFUE5Yjxp7UB0&amp;t=634862552000000000" type="text/javascript"></script>
+<script src="Service/CanlendarService.asmx/js" type="text/javascript"></script>
+<script src="Service/LoginService.asmx/js" type="text/javascript"></script>
+    
+    <!--nsy start-->
+    <link rel="stylesheet" href="/Images/pageItem/template/css/mystyle.css" /> 
+<div class="wrapper wrapper-index">
+	<!--=S 页头库模版 -->
+<!-- nsy-library begin --><div class="header">
+	<a class="logo" href="index.aspx"> 
+	<h1 class="fn-altxt">
+		余杭中学
+	</h1>
+</a> 
+	<div class="nav">
+		<ul class="nsy-menuNav clearfix">
+			<li>
+				<a href="index.aspx"><span>网站首页</span></a> 
+			</li>
+			<li>
+				<a href="index.aspx?pkId=1728"><span>学校概况</span></a> 
+				<div class="nsy-subNavDiv">
+					<ul class="nsy-subNav">
+						<li>
+							<a href="newsInfo.aspx?pkId=6692"><span>学校简介</span></a> 
+						</li>
+						<li>
+							<a href="newsInfo.aspx?pkId=6693"><span>办学理念</span></a> 
+						</li>
+						<li>
+							<a href="newsInfo.aspx?pkId=6691"><span>办学历史</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=257&bigClassPkId=787"><span>现任领导</span></a> 
+						</li>
+						<li>
+							<a href="newsInfo.aspx?pkId=6728"><span>历任校长</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=257&bigClassPkId=372"><span>校园风光</span></a> 
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="index.aspx?pkId=1730"><span>校务公开</span></a> 
+				<div class="nsy-subNavDiv">
+					<ul class="nsy-subNav">
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=258&bigClassPkId=337"><span>招生信息</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=258&bigClassPkId=790"><span>学校收费</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=258&bigClassPkId=324"><span>规章制度</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=258&bigClassPkId=359"><span>后勤服务</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=258&bigClassPkId=791"><span>工作安排</span></a> 
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="index.aspx?pkId=1731"><span>德育之窗</span></a> 
+				<div class="nsy-subNavDiv">
+					<ul class="nsy-subNav">
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=259&bigClassPkId=792"><span>国旗讲话</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=259&bigClassPkId=793"><span>安全法制</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=259&bigClassPkId=794"><span>家校合作</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=259&bigClassPkId=795"><span>绿色环保</span></a> 
+						</li><li>
+							<a href="moreinfo.aspx?layoutTemplateId=259&bigClassPkId=816"><span>卫生工作</span></a> 
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="index.aspx?pkId=1729"><span>教务科研</span></a> 
+				<div class="nsy-subNavDiv">
+					<ul class="nsy-subNav">
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=260&bigClassPkId=796"><span>学科教学</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=260&bigClassPkId=797"><span>教学科研</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=260&bigClassPkId=798"><span>高考相关</span></a> 
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="index.aspx?pkId=5382"><span>对外交流</span></a> 
+				<div class="nsy-subNavDiv">
+					<ul class="nsy-subNav">
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=261&bigClassPkId=338"><span>对外交流</span></a> 
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="index.aspx?pkId=5381"><span>教师专栏</span></a> 
+				<div class="nsy-subNavDiv">
+					<ul class="nsy-subNav">
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=264&bigClassPkId=799"><span>职称评优</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=264&bigClassPkId=800"><span>名优教师</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=264&bigClassPkId=801"><span>学科团队</span></a> 
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="index.aspx?pkId=1733"><span>学生天地</span></a> 
+				<div class="nsy-subNavDiv">
+					<ul class="nsy-subNav">
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=262&bigClassPkId=349"><span>校园之星</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=262&bigClassPkId=350"><span>社团活动</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=262&bigClassPkId=802"><span>社会实践</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=262&bigClassPkId=353"><span>心灵旅程</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=262&bigClassPkId=803"><span>学生风采</span></a> 
+						</li><li>
+							<a href="moreinfo.aspx?layoutTemplateId=262&bigClassPkId=817"><span>体艺活动</span></a> 
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="index.aspx?pkId=1734"><span>党建工会</span></a> 
+				<div class="nsy-subNavDiv">
+					<ul class="nsy-subNav">
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=263&bigClassPkId=354"><span>党建工作</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=263&bigClassPkId=355"><span>教工之家</span></a> 
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="index.aspx?pkId=5380"><span>校史长廊</span></a> 
+				<div class="nsy-subNavDiv">
+					<ul class="nsy-subNav">
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=378&bigClassPkId=804"><span>余中史话</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=378&bigClassPkId=805"><span>文化传承</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=378&bigClassPkId=806"><span>余中学子</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=378&bigClassPkId=327"><span>知名校友</span></a> 
+						</li>
+						<li>
+							<a href="moreinfo.aspx?layoutTemplateId=378&bigClassPkId=807"><span>最新动态</span></a> 
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+<!--/header-->
+</div><!-- nsy-library end -->
+ 
+	<div class="content">
+		<div class="row01 clearfix">
+			<div class="tpfd module">
+				<div class="model">
+					
+<!-- nsy-scrollFlashNews begin -->
+<div id="sfn_ctl8" class="nsy-scrollFlashNews" style="width:334px;">
+    <div class="nsy-scrollFlashNews-box" style="width:334px;">
+        
+            <div class="nsy-scrollFlashNews-slide">
+                <a href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7481" title="看外教如何上英语概要写作课" target="_blank"><img src="http://www.hzyhzhx.com/images/uploadfiles/201703/20170316172057_6221.jpg" alt="" width="334" height="234" /></a>
+                <div class="nsy-scrollFlashNews-title">
+                    <p>看外教如何上英语概要写作课</p>
+                </div>
+            </div>
+            
+            <div class="nsy-scrollFlashNews-slide">
+                <a href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7480" title="争分夺秒 凌云壮志" target="_blank"><img src="http://www.hzyhzhx.com/images/uploadfiles/201703/20170316172415_9658.jpg" alt="" width="334" height="234" /></a>
+                <div class="nsy-scrollFlashNews-title">
+                    <p>争分夺秒 凌云壮志</p>
+                </div>
+            </div>
+            
+            <div class="nsy-scrollFlashNews-slide">
+                <a href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6755" title="10.24-25学军中学老师来我校听课指导" target="_blank"><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217145113_8965.jpg" alt="" width="334" height="234" /></a>
+                <div class="nsy-scrollFlashNews-title">
+                    <p>10.24-25学军中学老师来我校听课指导</p>
+                </div>
+            </div>
+            
+            <div class="nsy-scrollFlashNews-slide">
+                <a href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6757" title="求同存异，共话教育——中美文化、教育交流会" target="_blank"><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217151850_0215.jpg" alt="" width="334" height="234" /></a>
+                <div class="nsy-scrollFlashNews-title">
+                    <p>求同存异，共话教育——中美文化、教育交流会</p>
+                </div>
+            </div>
+            
+            <div class="nsy-scrollFlashNews-slide">
+                <a href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6758" title="携手教育园地，盛开友谊之花——记美国友校回访" target="_blank"><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217152026_8652.jpg" alt="" width="334" height="234" /></a>
+                <div class="nsy-scrollFlashNews-title">
+                    <p>携手教育园地，盛开友谊之花——记美国友校回访</p>
+                </div>
+            </div>
+            
+            <div class="nsy-scrollFlashNews-slide">
+                <a href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6760" title="余杭中学党总支换届选举大会顺利召开" target="_blank"><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217152810_9590.jpg" alt="" width="334" height="234" /></a>
+                <div class="nsy-scrollFlashNews-title">
+                    <p>余杭中学党总支换届选举大会顺利召开</p>
+                </div>
+            </div>
+                    
+    </div>
+    
+</div>
+
+<script src="js/slides.min.jquery.js" type="text/javascript"></script> 
+<script type="text/javascript">
+    $('#sfn_ctl8').slides({
+        container: 'nsy-scrollFlashNews-box',
+        play: 5566,
+        hoverPause: true,
+        pause: 3322 
+    });
+</script>
+<!-- nsy-scrollFlashNews end --> 
+				</div>
+			</div>
+			<div class="xyxw module">
+				<div class="hd">
+					<h3 class="module-title fn-altxt">
+						校园新闻
+					</h3>
+<a class="module-more" href="moreInfo.aspx?layoutTemplateId=135&bigClassPkId=370" target="_blank">更多&gt;&gt;</a> 
+				</div>
+				<div class="bd">
+					<div class="model">
+						
+<!-- nsy-picnews2 begin -->
+<div class="nsy-picnews2 " data-nsyname="校园新闻" style="width:360px;"><ul class="nsy-picnews2-ul" >
+<li class="nsy-picnews2-li1">
+<span class="nsy-picnews2-img"><a target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7518" title="重方法、讲技巧、提升班级管理工作实效性" ><img src="../images/uploadfiles/nopic.gif" width="100" height="140" /></a></span>
+<a class="nsy-picnews2Title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7518" title="重方法、讲技巧、提升班级管理工作实效性" >重方法、讲技巧、提升班级管理工作实效性</a>
+<p class="nsy-picnews2-summary">2018年4月22日晚，我校在行政楼接待教室召开4月份班主任会议。会议由政教处主持，德育副校长汪韻青、各年级组长及全体班主任均准时参会。<a class="nsy-picNews2-link" href="newsInfo.aspx?pkId=7518" target="_blank">[详细]</a></p>
+<p class="nsy-picnews2-meta"><span class="nsy-newsTime">2018-04-24</span></p>
+</li>
+
+<li class="nsy-picnews2-li2">
+<span class="nsy-picnews2-img"><a target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7514" title="余杭中学2018届美术生55人参加浙江省美术联考和全国各大艺术高校校考获得佳绩！" ><img src="../images/uploadfiles/nopic.gif" width="100" height="140" /></a></span>
+<a class="nsy-picnews2Title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7514" title="余杭中学2018届美术生55人参加浙江省美术联考和全国各大艺术高校校考获得佳绩！" >余杭中学2018届美术生55人参加浙江省美术联考和全国各大艺术高校校考获得佳绩！</a>
+<p class="nsy-picnews2-summary">余杭中学2018届美术生55人参加浙江省美术联考和全国各大艺术高校校考获得佳绩！联考平均分达85.7.近日部分校考成绩出炉，我校有21位同学参加了各类学校的校考，成绩优异，特此祝贺！<a class="nsy-picNews2-link" href="newsInfo.aspx?pkId=7514" target="_blank">[详细]</a></p>
+<p class="nsy-picnews2-meta"><span class="nsy-newsTime">2018-04-12</span></p>
+</li>
+
+<li class="nsy-picnews2-li3">
+<span class="nsy-picnews2-img"><a target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7511" title="杭州市余杭中学2018年自主招生（励志生）实施方案" ><img src="../images/uploadfiles/nopic.gif" width="100" height="140" /></a></span>
+<a class="nsy-picnews2Title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7511" title="杭州市余杭中学2018年自主招生（励志生）实施方案" >杭州市余杭中学2018年自主招生（励志生）实施方案</a>
+<p class="nsy-picnews2-summary">为进一步推进普通高中深化课程改革，创新尖优学生培养模式,根据省市中考改革的指导意见和《余杭区教育局关于做好2018年普通高中自主招生工作的通知》的有关政策和规定，制定我校2018年自主招生（励志生）实施方案。具体如下：<a class="nsy-picNews2-link" href="newsInfo.aspx?pkId=7511" target="_blank">[详细]</a></p>
+<p class="nsy-picnews2-meta"><span class="nsy-newsTime">2018-03-22</span></p>
+</li>
+
+<li class="nsy-picnews2-li4">
+<span class="nsy-picnews2-img"><a target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7510" title="人民日报：进一步加强学生资助工作" ><img src="../images/uploadfiles/nopic.gif" width="100" height="140" /></a></span>
+<a class="nsy-picnews2Title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7510" title="人民日报：进一步加强学生资助工作" >人民日报：进一步加强学生资助工作</a>
+<p class="nsy-picnews2-summary">习近平总书记指出，保障贫困地区办学经费，健全家庭困难学生资助体系。要推进教育精准脱贫，重点帮助贫困人口子女接受教育，阻断贫困代际传递，让每一个孩子都对自己有信心、对未来有希望。站在新的历史起点上，我们必须进一步深入学习领会总书记重要指示精神，深刻认识新时代做好学生资助工作的重要意义。<a class="nsy-picNews2-link" href="newsInfo.aspx?pkId=7510" target="_blank">[详细]</a></p>
+<p class="nsy-picnews2-meta"><span class="nsy-newsTime">2018-03-06</span></p>
+</li>
+</ul></div><!-- nsy-picnews2 end --> 
+					</div>
+<!--/model-->
+				</div>
+			</div>
+<!--module-->
+			<div class="tzgg style01 module">
+				<div class="hd">
+					<h3 class="module-title">
+						通知公告
+					</h3>
+<a class="module-more" href="moreInfo.aspx?layoutTemplateId=135&bigClassPkId=371" target="_blank">更多&gt;&gt;</a> 
+				</div>
+				<div class="bd">
+					<div class="model">
+						
+<!-- nsy-scrollUpNews begin -->
+<div id="scrolldemo_ctl10" class="nsy-scrollUpNews " data-nsyname="" style="width: 228px;height:84px; position:relative;">
+<ul class="nsy-scrollUpNews-ul">
+<li class="nsy-scrollUpNews-li1
+">
+<a class="nsy-scrollUpNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7517" title="2018年余杭中学自主招生（励志生）拟录取学生名单公示" >2018年余杭中学自主招生（励志生）拟录取学生名单公示</a>
+<p class="nsy-scrollUpNews-meta"><span class="nsy-newsTime">2018-04-24</span></p>
+</li>
+
+<li class="nsy-scrollUpNews-li2
+">
+<a class="nsy-scrollUpNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7513" title="杭州市余杭中学2018年特长生招生实施办法" >杭州市余杭中学2018年特长生招生实施办法</a>
+<p class="nsy-scrollUpNews-meta"><span class="nsy-newsTime">2018-04-02</span></p>
+</li>
+
+<li class="nsy-scrollUpNews-li3
+">
+<a class="nsy-scrollUpNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7512" title="杭州市余杭中学2018年自主招生（励志生）实施方案" >杭州市余杭中学2018年自主招生（励志生）实施方案</a>
+<p class="nsy-scrollUpNews-meta"><span class="nsy-newsTime">2018-03-22</span></p>
+</li>
+
+<li class="nsy-scrollUpNews-li4
+">
+<a class="nsy-scrollUpNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7470" title="2017年11号喜报——市作文比赛获奖" >2017年11号喜报——市作文比赛获奖</a>
+<p class="nsy-scrollUpNews-meta"><span class="nsy-newsTime">2017-02-22</span></p>
+</li>
+
+<li class="nsy-scrollUpNews-li5
+">
+<a class="nsy-scrollUpNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7469" title="2017年10号喜报——物理组被评为市级学科基地" >2017年10号喜报——物理组被评为市级学科基地</a>
+<p class="nsy-scrollUpNews-meta"><span class="nsy-newsTime">2017-02-21</span></p>
+</li>
+
+<li class="nsy-scrollUpNews-li6
+">
+<a class="nsy-scrollUpNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7468" title="2017年09号喜报——省电子制作比赛获奖" >2017年09号喜报——省电子制作比赛获奖</a>
+<p class="nsy-scrollUpNews-meta"><span class="nsy-newsTime">2017-02-17</span></p>
+</li>
+
+<li class="nsy-scrollUpNews-li7
+">
+<a class="nsy-scrollUpNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7467" title="2017年08号喜报——区教科研先进集体和个人获奖" >2017年08号喜报——区教科研先进集体和个人获奖</a>
+<p class="nsy-scrollUpNews-meta"><span class="nsy-newsTime">2017-01-20</span></p>
+</li>
+</ul>
+
+</div>
+<script type="text/javascript">
+$(function(){
+		var ul_id=$('#scrolldemo_ctl10 .nsy-scrollUpNews-ul');
+		var ul_len=ul_id.height(),
+			all_len=$('#scrolldemo_ctl10').height(),
+			len=all_len-ul_len+2;	
+		if(len>2){
+			ul_id.append('<li style="height:'+len+'px"></li>');
+		}
+		
+	})
+    var Marqueescrolldemo_ctl10 = new Marquee('scrolldemo_ctl10',0,1,228,84,50,0,0);
+</script>
+
+<!-- nsy-scrollUpNews end --> 
+					</div>
+<!--/model-->
+				</div>
+			</div>
+<!--module-->
+		</div>
+		<div class="main fn-fl">
+			<div class="style02 clearfix module">
+				<div class="items fn-fl">
+					<div class="hd">
+						<h3 class="module-title">
+							校务公开
+						</h3>
+					</div>
+					<div class="bd">
+						<div class="model">
+							
+<!-- nsy-latestNews begin -->
+<div class="nsy-latestNews " data-nsyname="校务公开" style="width:340px;"><ul class="nsy-latestNews-ul">
+<li class="nsy-latestNews-li1">
+<span class="nsy-latestNews-lm">[招生信息]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7519" title="2018年余杭中学特长生招生术科合格人员名单公示" >2018年余杭中学特长生招生术…</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2018-05-18</span></p>
+</li>
+
+<li class="nsy-latestNews-li2">
+<span class="nsy-latestNews-lm">[招生信息]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7516" title="2018年余杭中学自主招生（励志生）拟录取学生名单公示" >2018年余杭中学自主招生（励…</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2018-04-24</span></p>
+</li>
+
+<li class="nsy-latestNews-li3">
+<span class="nsy-latestNews-lm">[招生信息]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7515" title="2018年余杭中学自主招生（励志生）进入面试学生名单公示" >2018年余杭中学自主招生（励…</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2018-04-17</span></p>
+</li>
+</ul><div class="nsy-newsMore" style="width:340px;" ><a class="nsy-aMore" target="_blank" href="http://www.hzyhzhx.com/moreInfo.aspx?layoutTemplateId=135&bigClassPkId=808" >更多&gt;&gt;</a></div></div>
+
+<!-- nsy-latestNews end --> 
+						</div>
+<!--/model-->
+					</div>
+				</div>
+<!--module-->
+				<div class="items fn-fr">
+					<div class="hd">
+						<h3 class="module-title">
+							教务科研
+						</h3>
+					</div>
+					<div class="bd">
+						<div class="model">
+							
+<!-- nsy-latestNews begin -->
+<div class="nsy-latestNews " data-nsyname="教务科研" style="width:340px;"><ul class="nsy-latestNews-ul">
+<li class="nsy-latestNews-li1">
+<span class="nsy-latestNews-lm">[教学科研]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7492" title="勤交流互分享  探索2018年高考之路" >勤交流互分享  探索2018年高…</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2017-06-16</span></p>
+</li>
+
+<li class="nsy-latestNews-li2">
+<span class="nsy-latestNews-lm">[学科教学]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7388" title="余杭区高二英语教研活动在我校举行" >余杭区高二英语教研活动在我…</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2016-04-16</span></p>
+</li>
+
+<li class="nsy-latestNews-li3">
+<span class="nsy-latestNews-lm">[教学科研]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7375" title="区教研室来我校深入课堂调研指导" >区教研室来我校深入课堂调研…</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2016-03-30</span></p>
+</li>
+</ul><div class="nsy-newsMore" style="width:340px;" ><a class="nsy-aMore" target="_blank" href="http://www.hzyhzhx.com/moreInfo.aspx?layoutTemplateId=135&bigClassPkId=809" >更多&gt;&gt;</a></div></div>
+
+<!-- nsy-latestNews end --> 
+						</div>
+<!--/model-->
+					</div>
+				</div>
+<!--module-->
+				<div class="items items02 fn-fl">
+					<div class="hd">
+						<h3 class="module-title">
+							教师专栏
+						</h3>
+					</div>
+					<div class="bd">
+						<div class="model">
+							
+<!-- nsy-latestNews begin -->
+<div class="nsy-latestNews " data-nsyname="教师专栏" style="width:340px;"><ul class="nsy-latestNews-ul">
+<li class="nsy-latestNews-li1">
+<span class="nsy-latestNews-lm">[职称评优]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7267" title="展新秀风采  树余中新风" >展新秀风采  树余中新风</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2015-11-04</span></p>
+</li>
+
+<li class="nsy-latestNews-li2">
+<span class="nsy-latestNews-lm">[名优教师]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7182" title="张彬老师简介" >张彬老师简介</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2015-06-02</span></p>
+</li>
+
+<li class="nsy-latestNews-li3">
+<span class="nsy-latestNews-lm">[名优教师]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7181" title="孙吉凤老师简介" >孙吉凤老师简介</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2015-06-02</span></p>
+</li>
+</ul><div class="nsy-newsMore" style="width:340px;" ><a class="nsy-aMore" target="_blank" href="http://www.hzyhzhx.com/moreInfo.aspx?layoutTemplateId=135&bigClassPkId=813" >更多&gt;&gt;</a></div></div>
+
+<!-- nsy-latestNews end --> 
+						</div>
+<!--/model-->
+					</div>
+				</div>
+<!--module-->
+				<div class="items items02  fn-fr">
+					<div class="hd">
+						<h3 class="module-title">
+							德育之窗
+						</h3>
+					</div>
+					<div class="bd">
+						<div class="model">
+							
+<!-- nsy-latestNews begin -->
+<div class="nsy-latestNews " data-nsyname="德育之窗" style="width:340px;"><ul class="nsy-latestNews-ul">
+<li class="nsy-latestNews-li1">
+<span class="nsy-latestNews-lm">[家校合作]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7392" title="精抓艺考工作 注重个性发展杭州市余杭中学召开高二艺术类考生家长会" >精抓艺考工作 注重个性发展…</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2016-04-16</span></p>
+</li>
+
+<li class="nsy-latestNews-li2">
+<span class="nsy-latestNews-lm">[绿色环保]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7382" title="师生同欢，其乐融融 ——记12班班会课" >师生同欢，其乐融融 ——记12班…</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2016-04-12</span></p>
+</li>
+
+<li class="nsy-latestNews-li3">
+<span class="nsy-latestNews-lm">[安全法制]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7260" title="杭州市余杭中学禁毒教育学习材料" >杭州市余杭中学禁毒教育学习…</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2015-11-03</span></p>
+</li>
+</ul><div class="nsy-newsMore" style="width:340px;" ><a class="nsy-aMore" target="_blank" href="http://www.hzyhzhx.com/moreInfo.aspx?layoutTemplateId=135&bigClassPkId=812" >更多&gt;&gt;</a></div></div>
+
+<!-- nsy-latestNews end --> 
+						</div>
+<!--/model-->
+					</div>
+				</div>
+			</div>
+			<div class="szlj module">
+				<div class="hd">
+					<h3 class="module-title">
+						数字链接
+					</h3>
+				</div>
+				<div class="bd">
+					<a href="#" target="_blank"><img alt="班级主页" src="/Images/pageItem/template/images/bjzy.jpg" /></a> <a href="#" target="_blank"><img alt="教师博客" src="/Images/pageItem/template/images/jsbk.jpg" /></a> 
+				</div>
+			</div>
+			<div class="style02 clearfix module">
+				<div class="items fn-fl">
+					<div class="hd">
+						<h3 class="module-title">
+							对外交流
+						</h3>
+					</div>
+					<div class="bd">
+						<div class="model">
+							
+<!-- nsy-news begin -->
+<div class="nsy-news " data-nsyname="对外交流" style="width:340px;"><ul class="nsy-news-ul" >
+<li class="nsy-news-li1"><a class="nsy-newsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7394" title="拓国际合作项目  行特色办学之路---杭州市余杭中学与浙江外国语学院涉外学院国际教育项目战略合作签约仪式" >拓国际合作项目  行特色办学之路--…</a>
+<p class="nsy-news-meta"><span class="nsy-newsTime">2016-04-19</span></p>
+</li>
+
+<li class="nsy-news-li2"><a class="nsy-newsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7391" title="找准不足 以评促建---市、区领导来我校考察指导创建省一级特色示范学校工作" >找准不足 以评促建---市、区领导来…</a>
+<p class="nsy-news-meta"><span class="nsy-newsTime">2016-04-16</span></p>
+</li>
+
+<li class="nsy-news-li3"><a class="nsy-newsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7272" title="加强校际合作  拓展教育共同体建设" >加强校际合作  拓展教育共同体建设…</a>
+<p class="nsy-news-meta"><span class="nsy-newsTime">2015-11-06</span></p>
+</li>
+</ul><div class="nsy-newsMore" style="width:340px;" ><a class="nsy-aMore" target="_blank" href="http://www.hzyhzhx.com/moreInfo.aspx?layoutTemplateId=135&bigClassPkId=338" >更多&gt;&gt;</a></div></div>
+<!-- nsy-news end --> 
+						</div>
+<!--/model-->
+					</div>
+				</div>
+<!--module-->
+				<div class="items fn-fr">
+					<div class="hd">
+						<h3 class="module-title">
+							学生天地
+						</h3>
+					</div>
+					<div class="bd">
+						<div class="model">
+							
+<!-- nsy-latestNews begin -->
+<div class="nsy-latestNews " data-nsyname="学生天地" style="width:340px;"><ul class="nsy-latestNews-ul">
+<li class="nsy-latestNews-li1">
+<span class="nsy-latestNews-lm">[社团活动]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7278" title="余杭中学创意社手工模型展" >余杭中学创意社手工模型展</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2015-11-09</span></p>
+</li>
+
+<li class="nsy-latestNews-li2">
+<span class="nsy-latestNews-lm">[社团活动]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7277" title="谁是余中好声音？" >谁是余中好声音？</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2015-11-09</span></p>
+</li>
+
+<li class="nsy-latestNews-li3">
+<span class="nsy-latestNews-lm">[社会实践]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7034" title="长乐林场社会实践活动闭营式发言稿" >长乐林场社会实践活动闭营式…</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2014-11-18</span></p>
+</li>
+</ul><div class="nsy-newsMore" style="width:340px;" ><a class="nsy-aMore" target="_blank" href="http://www.hzyhzhx.com/moreInfo.aspx?layoutTemplateId=135&bigClassPkId=810" >更多&gt;&gt;</a></div></div>
+
+<!-- nsy-latestNews end --> 
+						</div>
+<!--/model-->
+					</div>
+				</div>
+				<div class="items items02 fn-fl">
+					<div class="hd">
+						<h3 class="module-title">
+							党建工会
+						</h3>
+					</div>
+					<div class="bd">
+						<div class="model">
+							
+<!-- nsy-latestNews begin -->
+<div class="nsy-latestNews " data-nsyname="党建工会" style="width:340px;"><ul class="nsy-latestNews-ul">
+<li class="nsy-latestNews-li1">
+<span class="nsy-latestNews-lm">[党建工作]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7508" title="快过年啦，看看邻居，访访民情" >快过年啦，看看邻居，访访民情…</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2018-01-15</span></p>
+</li>
+
+<li class="nsy-latestNews-li2">
+<span class="nsy-latestNews-lm">[党建工作]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7507" title="访民情  办实事" >访民情  办实事</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2018-01-15</span></p>
+</li>
+
+<li class="nsy-latestNews-li3">
+<span class="nsy-latestNews-lm">[党建工作]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=7506" title="党校学习第一课：学党史、跟党走！" >党校学习第一课：学党史、跟党…</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2018-01-15</span></p>
+</li>
+</ul><div class="nsy-newsMore" style="width:340px;" ><a class="nsy-aMore" target="_blank" href="http://www.hzyhzhx.com/moreInfo.aspx?layoutTemplateId=135&bigClassPkId=814" >更多&gt;&gt;</a></div></div>
+
+<!-- nsy-latestNews end --> 
+						</div>
+<!--/model-->
+					</div>
+				</div>
+<!--module-->
+				<div class="items items02 fn-fr">
+					<div class="hd">
+						<h3 class="module-title">
+							校史长廊
+						</h3>
+					</div>
+					<div class="bd">
+						<div class="model">
+							
+<!-- nsy-latestNews begin -->
+<div class="nsy-latestNews " data-nsyname="校史长廊" style="width:340px;"><ul class="nsy-latestNews-ul">
+<li class="nsy-latestNews-li1">
+<span class="nsy-latestNews-lm">[文化传承]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6921" title="余杭中学八首" >余杭中学八首</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2014-05-07</span></p>
+</li>
+
+<li class="nsy-latestNews-li2">
+<span class="nsy-latestNews-lm">[知名校友]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6920" title="校友余元钱先生特奉四律以贺余杭中学七十周年校庆" >校友余元钱先生特奉四律以贺…</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2014-05-07</span></p>
+</li>
+
+<li class="nsy-latestNews-li3">
+<span class="nsy-latestNews-lm">[文化传承]</span><a class="nsy-latestNewsTitle" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6674" title="余杭中学的太炎精神" >余杭中学的太炎精神</a>
+<p class="nsy-latestNews-meta"><span class="nsy-newsTime">2013-10-23</span></p>
+</li>
+</ul><div class="nsy-newsMore" style="width:340px;" ><a class="nsy-aMore" target="_blank" href="http://www.hzyhzhx.com/moreInfo.aspx?layoutTemplateId=135&bigClassPkId=815" >更多&gt;&gt;</a></div></div>
+
+<!-- nsy-latestNews end --> 
+						</div>
+<!--/model-->
+					</div>
+				</div>
+<!--module-->
+			</div>
+		</div>
+		<div class="side fn-fr">
+			<div class="dl style01 module">
+				<div class="hd">
+					<h3 class="module-title">
+						用户登录
+					</h3>
+				</div>
+				<div class="bd">
+					<div class="model">
+						
+<!-- nsy-library begin --><!-- nsy-passport begin -->
+<div id="passportlogin" class="nsy-login">
+	<div id="loginContainer" class="nsy-login-nologin">
+		<div class="nsy-login-username">
+			<label for="passportname">用户名：</label> <input id="passportname" name="passportname" /> 
+		</div>
+		<div class="nsy-login-pwd">
+			<label for="passportpwd">密 码：</label> <input id="passportpwd" name="passportpwd" type="password" /> 
+		</div>
+		<div style="display:none;" id="verifyField" class="nsy-login-verify">
+			<label for="verifyCode">验证码：</label> <input class="text_input" name="verifyCode" maxlength="4" /> <img id="verifyImage" alt="" align="absMiddle" src="../Images/System/yzm.jpg" /> 
+		</div>
+		<div class="nsy-login-group">
+			<input value="登录" type="button" onclick="ppllogin();" /> <a class="nsy-login-forgot" href="#" target="_blank">忘记密码</a> 
+		</div>
+	</div>
+	<div style="display:none;" id="logoutContainer" class="nsy-login-islogin">
+		<p>
+			您好,<span id="pusername" class="nsy-login-loginname"></span>,登录成功!
+		</p>
+<a href="http://218.75.105.28:8888/office" target="_blank">办公中心</a> <a onclick="ppllogout()">安全退出</a> 
+	</div>
+<script type="text/javascript" src="../Js/passport_v130609.js"></script>
+<script type="text/javascript" src="../Js/md5.js"></script>
+<script type="text/javascript" src="../Js/sha1.js"></script>
+<script language="javascript" type="text/javascript">
+var p_passporturl="http://218.75.105.28:8888/passport";
+var p_officeurl="http://218.75.105.28:8888/office";
+var p_memberurl="http://218.75.105.28:8888/member";
+var p_serverid="153301";
+var p_weburl="http://www.hzyhzhx.com";
+var p_root="1";
+var p_username="";
+function ppllogin()
+{
+     var username = ppltrim(pplgettextvalue('passportname', null)); // 用户名
+     var password = ppltrim(pplgettextvalue('passportpwd', ''));// 密码
+     var verifycode = ppltrim(pplgettextvalue('verifyCode', ''));// 验证码
+     var auto_login = pplgetcheckvalue('auto_login', false);// 自动登录
+     if(username == '' || password == '')
+     {
+        processError('请输入用户名和密码!');                    
+     }
+     else
+     {
+        passportset(username, password, verifycode, auto_login);
+     }
+}
+//发起登录请求
+function passportset(username/*用户名*/, password/*密码*/, verifycode/*验证码*/, auto_login/*是否自动登录*/)
+{
+   var src = p_passporturl + "/scriptLogin?action=login" +
+                    "&username=" + encodeURIComponent(username) +
+                    "&server=" + p_serverid +
+                    "&root=" + p_root +
+                    "&multiAccount=1" +
+                    "&cookieSaveType=" + (auto_login ? "3" : "2") +
+                    "&password=" + hex_md5(password) + hex_sha1(password) +
+                    "&verifyCode=" + verifycode +
+                    "&charset=utf-8" +
+                    "&dynamicVerifyURL=0" +
+                    "&url=" + encodeURIComponent(p_weburl) +
+                    "&v=" + new Date().getTime();
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.language = "javascript";
+    script.src = src;
+    pplsetcookie("__redirect", "true");
+    //如果选择了自动登录,则保存相应值和用户名密码
+    if (auto_login) {
+        pplsetcookie('__userName', username, new Date("June 3, 2020"));
+        pplsetcookie('__password', password, new Date("June 3, 2020"));
+    }
+    document.body.appendChild(script);
+}
+//登录成功
+function pp_init() {  
+    var __redirect = pplgetcookie("__redirect");   
+    if (__redirect == "true") {   
+        pplclearcookie("__redirect");   
+        if (account.fixedType == 1 || account.fixedType == 3 || (account.fixedType == 2 && !hasCheckServerType["5"])) 
+        {   
+            //登录是否自动跳转
+            //parent.location.href = p_officeurl;
+        }   
+        else if (hasCheckServerType["5"]) {   
+            //登录是否自动跳转
+            //parent.location.href = p_officeurl;
+        }
+    }
+    var logincontainer = document.getElementById("loginContainer"); 
+    var logoutcontainer = document.getElementById("logoutContainer"); 
+    logincontainer.style.display = "none";
+    logoutcontainer.style.display = ""; 
+    var pplusername = document.getElementById("pusername");
+    pplusername.innerHTML=""+p_username+"";
+}
+//安全退出
+function ppllogout() {
+    var auto_login = pplgetcookie('__redirect');
+    if (auto_login) {
+        pplclearcookie('__redirect');
+        pplclearcookie('__userName');
+        pplclearcookie('__password');
+    }
+    location.href = "http://218.75.105.28:8888/member/user/logout.htm?url=" + encodeURIComponent(location.href);
+}
+    //提示错误信息
+    function processError(loginError) {  
+        if (loginError) {   
+            loginError = loginError.toString();   
+            var index = loginError.indexOf(':');   
+            var errorCode = loginError.substr(0, index);   
+            // 用户名不存在   
+            if (errorCode == '301') {   
+            //debugger;  
+            } 
+            loginError = loginError.substr(index + 1, loginError.length - index - 1);   
+            alert(loginError);
+        }  
+    }
+</script>
+<script language="javascript" type="text/javascript">
+pplcheck();
+</script>
+<script language="javascript" type="text/javascript">
+ppllogininit();
+</script>
+</div>
+<!-- nsy-passport end --><!-- nsy-library end -->
+ 
+					</div>
+<!--/model-->
+				</div>
+			</div>
+<!--图片链接-->
+			<div class="imgLinks module">
+				<a href="http://218.75.105.28:8888/office" target="_blank"><img alt="数字化校园" src="/Images/pageItem/template/images/images_01.jpg" /></a> <a href="http://218.75.105.28:8888/eis/system/homepage/index.action?appId=72" target="_blank"><img alt="教务成绩" src="/Images/pageItem/template/images/images_02.jpg" /></a> <a href="http://218.75.105.28:8888/eis/system/homepage/index.action?appId=11" target="_blank"><img alt="人事管理" src="/Images/pageItem/template/images/images_03.jpg" /></a> <a href="http://free.hzyhzhx.com/" target="_blank"><img alt="公物报修" src="/Images/pageItem/template/images/images_04.jpg" /></a> <a href="http://disk.hzyhzhx.com/" target="_blank"><img alt="视频点播" src="/Images/pageItem/template/images/images_05.jpg" /></a> <a href="#" target="_blank"><img alt="学校图书管理" src="/Images/pageItem/template/images/images_06.jpg" /></a> <a href="#" target="_blank"><img alt="网络存储" src="/Images/pageItem/template/images/images_07.jpg" /></a> <a href="#" target="_blank"><img alt="物品公示频道" src="/Images/pageItem/template/images/images_08.jpg" /></a> 
+			</div>
+<!--/module-->
+		</div>
+<!--校园风光-->
+		<div class="xyfg module">
+			<h3 class="module-title fn-altxt">
+				校园风光
+			</h3>
+			<div class="model">
+				
+<!-- nsy-scrollPicNews begin -->
+<table border="0" cellpadding="0" cellspacing="0" class="nsy-scrollPicNews-table">
+<tr>
+<td><a href="javascript:void(0);" id='LeftButton_ctl20' class="nsy-leftbtn">&lt;</td>
+<td>
+<div id="scrolldemo_ctl20" class="nsy-scrollPicNews " data-nsyname="校园风光" style="width: 820px;">
+<table class="nsy-scrollPicNews-table"><tr>
+<td class="nsy-scrollPicNews-td1">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6754" title="学校全景" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217143228_0058.jpg" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6754" title="学校全景" >学校全景</a>
+</td>
+
+<td class="nsy-scrollPicNews-td2">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6683" title="学校正大门" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131206142647_6620.png" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6683" title="学校正大门" >学校正大门</a>
+</td>
+
+<td class="nsy-scrollPicNews-td3">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6753" title="校园广场和综合楼" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217143149_4590.jpg" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6753" title="校园广场和综合楼" >校园广场和综合楼</a>
+</td>
+
+<td class="nsy-scrollPicNews-td4">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6752" title="教学楼" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217143112_0527.jpg" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6752" title="教学楼" >教学楼</a>
+</td>
+
+<td class="nsy-scrollPicNews-td5">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6751" title="艺术楼和图书馆" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217143040_8027.jpg" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6751" title="艺术楼和图书馆" >艺术楼和图书馆</a>
+</td>
+
+<td class="nsy-scrollPicNews-td6">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6750" title="学生宿舍" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217142937_0527.jpg" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6750" title="学生宿舍" >学生宿舍</a>
+</td>
+
+<td class="nsy-scrollPicNews-td7">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6749" title="春意盎然的校" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217142903_9121.jpg" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6749" title="春意盎然的校" >春意盎然的校</a>
+</td>
+
+<td class="nsy-scrollPicNews-td8">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6748" title="生机勃勃的校园" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217142828_5527.jpg" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6748" title="生机勃勃的校园" >生机勃勃的校园</a>
+</td>
+
+<td class="nsy-scrollPicNews-td9">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6747" title="悠然清静的校园" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217142744_9433.jpg" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6747" title="悠然清静的校园" >悠然清静的校园</a>
+</td>
+
+<td class="nsy-scrollPicNews-td10">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6746" title="宣传栏" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217142652_5996.jpg" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6746" title="宣传栏" >宣传栏</a>
+</td>
+
+<td class="nsy-scrollPicNews-td11">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6745" title="新生军训开营式" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217142615_5996.jpg" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6745" title="新生军训开营式" >新生军训开营式</a>
+</td>
+
+<td class="nsy-scrollPicNews-td12">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6744" title="感动校园之星" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217142516_4433.jpg" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6744" title="感动校园之星" >感动校园之星</a>
+</td>
+
+<td class="nsy-scrollPicNews-td13">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6743" title="学生成人礼宣誓" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217142431_1621.jpg" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6743" title="学生成人礼宣誓" >学生成人礼宣誓</a>
+</td>
+
+<td class="nsy-scrollPicNews-td14">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6742" title="校运动会" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217142350_6777.jpg" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6742" title="校运动会" >校运动会</a>
+</td>
+
+<td class="nsy-scrollPicNews-td15">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6741" title="校园文化艺术节" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217142309_0840.jpg" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6741" title="校园文化艺术节" >校园文化艺术节</a>
+</td>
+
+<td class="nsy-scrollPicNews-td16">
+<a class="nsy-scrollPicNews-img" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6740" title="学生讲座" ><img src="http://www.hzyhzhx.com/images/uploadfiles/201312/20131217142212_7715.jpg" width="180" height="132" /></a>
+<a class="nsy-scrollPicNews-title" target="_blank" href="http://www.hzyhzhx.com/newsInfo.aspx?pkId=6740" title="学生讲座" >学生讲座</a>
+</td>
+</tr></table></div>
+</td>
+<td>
+<a href="javascript:void(0);" id='RightButton_ctl20' class="nsy-rightbtn">&gt;</a>
+</td>
+</tr>
+</table>
+<script type="text/javascript">
+
+    function byId(id){return document.getElementById(id)};
+	/*********箭头控制滚动方向、加速及鼠标拖动***************/
+	var MarqueeDiv2Control=new Marquee('scrolldemo_ctl20');		//箭头控制滚动方向、加速及鼠标拖动实例
+	MarqueeDiv2Control.Direction="left";
+	MarqueeDiv2Control.Step=1;
+	MarqueeDiv2Control.Width=820;
+	MarqueeDiv2Control.Timer=20;
+	MarqueeDiv2Control.ScrollStep=1;				//若为-1则禁止鼠标控制实例
+	MarqueeDiv2Control.Start();
+	MarqueeDiv2Control.BakStep=MarqueeDiv2Control.Step;
+	byId('LeftButton_ctl20').onmouseover=function(){MarqueeDiv2Control.Direction=2};
+	byId('LeftButton_ctl20').onmouseout=byId('LeftButton_ctl20').onmouseup=function(){MarqueeDiv2Control.Step=MarqueeDiv2Control.BakStep};
+	byId('LeftButton_ctl20').onmousedown=byId('RightButton_ctl20').onmousedown=function(){MarqueeDiv2Control.Step=MarqueeDiv2Control.BakStep+3};
+	byId('RightButton_ctl20').onmouseover=function(){MarqueeDiv2Control.Direction=3};
+	byId('RightButton_ctl20').onmouseout=byId('RightButton_ctl20').onmouseup=function(){MarqueeDiv2Control.Step=MarqueeDiv2Control.BakStep};
+	
+
+</script>
+
+<!-- nsy-scrollPicNews end --> 
+			</div>
+<!--/model-->
+		</div>
+<!--module-->
+<!-- nsy-library begin --><div class="friendLink">
+	<strong>友情链接：</strong><a href="http://www.yhjy.gov.cn/" target=" _blank">余杭教育网</a><a href="http://www.moe.edu.cn/" target=" _blank">中华人民共和国教育部</a><a href="http://www.zjedu.org/" target=" _blank">浙江省教育技术中心</a><a href="http://www.hzjsjy.com/cms/" target=" _blank">杭州教师教育网</a><a href="http://zzw.hzedu.net/" target="_blank">杭州市学生资助网</a> 
+</div><!-- nsy-library end -->
+ 
+	</div>
+<!--/content-->
+	<div class="footer">
+		<!--=S 页尾库模版 -->
+<!-- nsy-library begin --><p>
+	copyright&copy; 2011-2012 杭州市余杭中学。管理：qiqizhu
+</p>
+<p>
+	地址：杭州市余杭区余杭镇文一西路2228号。电话/传真：0571-88661750 邮编：311121
+</p>
+<p>
+	电子信箱：yhzx1944@163.com；teacherjl@163.com
+</p>
+<p>
+	ICP备案:浙ICP备07007511号
+</p><!-- nsy-library end -->
+ 
+	</div>
+<!--/footer-->
+</div>
+<!--/wrapper-->
+<!-- nsy-ad begin --><!-- nsy-ad end -->  
+<script type="text/javascript" src="/Images/pageItem/template/js/myscript.js"></script>
+    <!--nsy end-->
+    
+
+<script type="text/javascript">
+<!--
+Sys.Application.initialize();
+// -->
+</script>
+</form>
+</body>
+</html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>广西工程职业学院- 欢迎你</title>
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="keywords" content="广西工程职业学院,广西高职高专,广西,平果风光,平果大学城,广西工程职业学院网址，广西职业教育，校企合作，博才投资公司" />
+<meta name="description" content="　　广西工程职业学院(代码14127)是2007年经广西壮族自治区人民政府批准设立、教育部核准备案，面向全国招生的一所全日制普通高等职业学校。学院设有南宁、平果两个校区。占地面积566.84 亩，校舍建筑面积16万多平方米。南宁校区坐落在中国-东盟博览会永久会址、广西壮族自治区首府南宁市；平果校区坐落在广西平果县大学城，离南宁市40分钟动车。" />
+<link rel="stylesheet" type="text/css" href="/skin/gxgcedu/css/global.css" />
+<link rel="stylesheet" type="text/css" href="/skin/gxgcedu/css/home.css" />
+<script type="text/javascript" src="/skin/gxgcedu/js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="/skin/gxgcedu/js/menu.js"></script>
+<style type="text/css">
+.float li{list-style:none;float:left;margin:0 10px 10px 8px;heigt:20px;line-height:20px;}
+.float li a:hover{color:red;}
+</style>
+</head>
+<body>
+<SCRIPT LANGUAGE="JavaScript">
+ function mobile_device_detect(url)
+ {
+        var thisOS=navigator.platform;
+        var os=new Array("iPhone","iPod","iPad","android","Nokia","SymbianOS","Symbian","Windows Phone","Phone","Linux armv71","MAUI","UNTRUSTED/1.0","Windows CE","BlackBerry","IEMobile");
+ for(var i=0;i<os.length;i++)
+        {
+ if(thisOS.match(os[i]))
+        {  
+  window.location=url;
+ }
+          
+ }
+ //因为相当部分的手机系统不知道信息,这里是做临时性特殊辨认
+ if(navigator.platform.indexOf('iPad') != -1)
+        {
+  window.location=url;
+ }
+ //做这一部分是因为Android手机的内核也是Linux
+ //但是navigator.platform显示信息不尽相同情况繁多,因此从浏览器下手，即用navigator.appVersion信息做判断
+  var check = navigator.appVersion;
+  if( check.match(/linux/i) )
+          {
+   //X11是UC浏览器的平台 ，如果有其他特殊浏览器也可以附加上条件
+   if(check.match(/mobile/i) || check.match(/X11/i))
+                 {
+   window.location=url;
+   } 
+ }
+ //类in_array函数
+ Array.prototype.in_array = function(e)
+ {
+  for(i=0;i<this.length;i++)
+  {
+   if(this[i] == e)
+   return true;
+  }
+  return false;
+ }
+ }
+mobile_device_detect("http://m.gxgcedu.com");
+</SCRIPT> 
+<!--header-->
+<script type="text/javascript">
+	
+$(function(){
+	$('#index_menu li').hover(function(){
+		$(this).children('.box').slideDown("fast");
+	},function(){
+		$(this).children('.box').hide();
+	});
+});
+</script>
+<script type='text/javascript' src='http://chat.53kf.com/kf.php?arg=gxgcedu&style=3'></script>
+
+<div class="header">  
+  <!--head_back-->
+  <div id="head_back"> 
+    <!--logo-->
+    <div id="logo">
+      <h1>广西工程职业学院</h1>
+    </div>
+    <!--/logo-->
+    <div id="head_box">
+      <div id="blox"> 
+        <script type="text/javascript">
+<!--
+ var interval_time=5;
+ var focus_width=1000;
+ var focus_height=260;
+ var text_height=0;
+ var text_align="center";
+ var swf_height = focus_height+text_height;
+ var swfpath="/skin/gxgcedu/focus.swf";
+ var swfpatha="/skin/gxgcedu/focus.swf";
+ 
+ var pics="/skin/gxgcedu/images/slide1.jpg|/skin/gxgcedu/images/slide4.jpg|/skin/gxgcedu/images/slide3.jpg|/skin/gxgcedu/images/slide7.jpg";
+ var links="/intro.html|/intro.html|/College_introduction/notices/2017-04-07/5549.html|/xsgz/";
+ var texts="||||";
+ 
+ document.write('<object title="广西工程职业学院-图片切换" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">');
+ document.write('<param name="movie" value="'+swfpath+'"><param name="quality" value="high"><param name="bgcolor" value="#ffffff">');
+ document.write('<param name="index_menu" value="false"><param name=wmode value="opaque">');
+ document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'&text_align='+text_align+'&interval_time='+interval_time+'">');
+ document.write('<embed src="'+swfpath+'" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'&text_align='+text_align+'&interval_time='+interval_time+'" index_menu="false" bgcolor="#ffffff" quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+ document.write('</object>');
+//-->
+</script> 
+      </div>
+    </div>
+    
+  </div>
+  <!--/head_back--> 
+  
+  <!--index_menu--->
+  <ul id="index_menu" class="first-menu">
+  <li><a href="/">首页</a></li>
+  <li><a href="/College_introduction/">学院概况</a>
+      <div  id="box1" class="box">
+        <!--Music start -->
+        <ul id="subMusic" class="second-menu doted">
+          <li><a href="/College_introduction/intro/2017-06-03/5816.html">学院简介</a></li>
+          <li><a href="/College_introduction/lingdao/" title="领导班子"><span>领导班子</span></a></li>        </ul>		
+        </div>
+  </li>
+  <li><a href="/departments">行政机构</a>
+  	  <div id="box3" class="box">
+    <!--Music start -->
+    <ul id="subMusic" class="second-menu doted">
+		  <li><a href="/departments/yuanban/" title="学院办公室"><span>学院办公室</span></a></li><li><a href="/departments/renshi/" title="人力资源处"><span>人力资源处</span></a></li><li><a href="/departments/xuegong/" title="学工处"><span>学工处</span></a></li><li><a href="/departments/tuanwei/" title="团委"><span>团委</span></a></li><li><a href="/departments/caiwu/" title="财务处"><span>财务处</span></a></li><li><a href="/departments/dudao/" title="督导室"><span>督导室</span></a></li><li><a href="/departments/bwc/" title="保卫处"><span>保卫处</span></a></li><li><a href="/departments/jijian/" title="基建处"><span>基建处</span></a></li><li><a href="/departments/shenben/" title="申本办"><span>申本办</span></a></li><li><a href="/departments/houqin/" title="后勤管理中心"><span>后勤管理中心</span></a></li>          <li><a href="/jiaogai/jiaowuchu/">教务处</a></li> 
+          <li><a href="/kykj/kyc/">科研处</a></li> 
+          <li><a href="/College_introduction/news/">新闻中心</a></li> 
+          <li><a href="/cutural_Center/">校园文化建设与发展中心</a></li>
+    </ul>
+    <!--Music end -->
+    </div>
+  </li>
+  <li><a href="/xibu">教学教辅</a>
+  	<div  id="box3" class="box">
+    <!--Music start -->
+    <ul id="subMusic" class="second-menu doted">
+      	<li><a href="/xibu/jianzhu/" title="土木工程学院"><span>土木工程学院</span></a></li><li><a href="/xibu/yishu/" title="工程与艺术设计学院"><span>工程与艺术设计学院</span></a></li><li><a href="/xibu/jidian/" title="材料与机电工程学院"><span>材料与机电工程学院</span></a></li><li><a href="/xibu/jingguan/" title="经济管理学院"><span>经济管理学院</span></a></li><li><a href="/xibu/tiedao/" title="铁道与航空管理学院"><span>铁道与航空管理学院</span></a></li><li><a href="/xibu/peixun/" title="继续教育与培训学院"><span>继续教育与培训学院</span></a></li><li><a href="/xibu/sizheng/" title="思政课教学部"><span>思政课教学部</span></a></li><li><a href="/xibu/Foundation/" title="公共基础课教学部"><span>公共基础课教学部</span></a></li>          <li style="position:relative;left:7px;"><a href="/xibu/library/">图书馆</a></li>
+    </ul>
+    <!--Music end -->
+    </div>
+  </li>
+  <li><a href="/jiaogai">教学教改</a>
+  	<div  id="box1" class="box">
+    <!--Music start -->
+    <ul id="subMusic" class="second-menu doted">
+          <li><a href="/jiaogai/jiaowuchu/" title="教务处"><span>教务处</span></a></li>    </ul>
+       <!--Music end -->
+    </div>
+  </li>
+    <li><a href="/kykj">科研科技</a>
+    	<div  id="box1" class="box">
+        <!--Music start -->
+        <ul id="subMusic" class="second-menu doted">
+          	<li><a href="/kykj/kyc/" title="科研处"><span>科研处</span></a></li>        </ul>		
+        </div>
+    </li>
+    <li><a href="/xsgz">党政机构</a>
+    	<div  id="box2" class="box">
+        <!--Music start -->
+        <ul id="subMusic" class="second-menu doted">
+          <li><a href="/xsgz/dangban/" title="党委办公室"><span>党委办公室</span></a></li>          <li style="position:relative;left:7px;"><a href="/xsgz/dangban/">纪委办公室</a></li>
+          <li style="position:relative;left:7px;"><a href="/xsgz/dangban/">组织部</a></li>
+          <li style="position:relative;left:7px;"><a href="/xsgz/dangban/">宣传部</a></li>
+          <li style="position:relative;left:7px;"><a href="/xsgz/dangban/">统战部</a></li>
+          <li style="position:relative;left:7px;"><a href="/xsgz/dangban/">工会</a></li>
+        </ul>		
+        </div>
+    </li>
+    <li><a href="/zsjy">招就办</a>
+    	<div  id="box2" class="box">
+        <!--Music start -->
+        <ul id="subMusic" class="second-menu doted">
+          <li><a href="/zsjy/zsb/" title="招生信息网"><span>招生信息网</span></a></li><li><a href="/zsjy/jyb/" title="就业信息网"><span>就业信息网</span></a></li>        </ul>		
+        </div>
+    </li>
+    <li><a href="/xqhz">校企合作</a>
+    	<div  id="box2" class="box">
+        <!--Music start -->
+        <ul id="subMusic" class="second-menu doted">
+          <li><a href="/xqhz/hzzl/xsszs/" title="学生双证书"><span>学生双证书</span></a></li><li><a href="/xqhz/hzzl/stury/" title="学生荣誉"><span>学生荣誉</span></a></li><li><a href="/xqhz/hzzl/jiuye/" title="就业之星"><span>就业之星</span></a></li><li><a href="/xqhz/hzzl/caydx/" title="创业典型"><span>创业典型</span></a></li>        </ul>		
+        </div>
+    </li>
+  <li><a href="/cutural_Center">校园文化</a>
+  	<div  id="box2" class="box">
+        <!--Music start -->
+        <ul id="subMusic" class="second-menu doted">
+          <li><a href="/cutural_Center/intro/" title="简介"><span>简介</span></a></li><li><a href="/cutural_Center/files/" title="各级文件"><span>各级文件</span></a></li><li><a href="/cutural_Center/notices/" title="通知"><span>通知</span></a></li><li><a href="/cutural_Center/rules/" title="规章制度"><span>规章制度</span></a></li><li><a href="/cutural_Center/guide/" title="办事指南"><span>办事指南</span></a></li><li><a href="/cutural_Center/corridor/" title="文化长廊"><span>文化长廊</span></a></li><li><a href="/cutural_Center/activity/" title="文化活动"><span>文化活动</span></a></li>        </ul>		
+        </div>
+  </li>
+  <li><a href="/nnxq">南宁校区</a>
+  	<div  id="box1" class="box">
+        <!--Music start -->
+        <ul id="subMusic" class="second-menu doted">
+          <li><a href="/nnxq/xyhj/" title="校园环境"><span>校园环境</span></a></li>        </ul>		
+        </div>
+  </li>
+</ul>
+  <!--index_menu--> 
+  
+  <!--QQ--> 
+  <script language="JavaScript" type="text/javascript">
+lastScrollY=0;
+function heartBeat(){
+var diffY;
+if (document.documentElement && document.documentElement.scrollTop)
+diffY = document.documentElement.scrollTop;
+else if (document.body)
+diffY = document.body.scrollTop
+else
+{/*Netscape stuff*/}
+
+//alert(diffY);
+percent=.1*(diffY-lastScrollY);
+if(percent>0)percent=Math.ceil(percent);
+else percent=Math.floor(percent);
+document.getElementById("ALayer1").style.top=parseInt(document.getElementById("ALayer1").style.top)+percent+"px";
+lastScrollY=lastScrollY+percent;
+//alert(lastScrollY);
+}
+suspendcode12="<DIV id='ALayer1' style='left:0px;PosITION:fixed;z-index:100;bottom:250px;FILTER: alpha(opacity=100); left:0px;'><br/><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=879856138&site=qq&index_menu=yes'><img border='0' src='http://wpa.qq.com/pa?p=2:879856138:41' alt='学院招生办老师' title='学院招生办老师'></a><br /s><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=844891856&site=qq&index_menu=yes'><img border='0' src='http://wpa.qq.com/pa?p=2:844891856:41' alt='学院招生办老师' title='学院招生办老师'></a><br /><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=2631677896&site=qq&index_menu=yes'><img border='0' src='http://wpa.qq.com/pa?p=2:2631677896:41' alt='学院招生办老师' title='学院招生办老师'></a><br/><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=2632672836&site=qq&index_menu=yes'><img border='0' src='http://wpa.qq.com/pa?p=2:2632672836:41' alt='学院招生办老师' title='学院招生办老师'></a><br/><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=2326700883&site=qq&index_menu=yes'><img border='0' src='http://wpa.qq.com/pa?p=2:2326700883:41' alt='学院招生办老师' title='学院招生办老师'></a><br/><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=2172566267&site=qq&index_menu=yes'><img border='0' src='http://wpa.qq.com/pa?p=2:2172566267:41' alt='学院招生办老师' title='学院招生办老师'></a><br/><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=2642679994&site=qq&index_menu=yes'><img border='0' src='http://wpa.qq.com/pa?p=2:2642679994:41' alt='学院招生办老师' title='学院招生办老师'></a><br/><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=3407784280&site=qq&index_menu=yes'><img border='0' src='http://wpa.qq.com/pa?p=2:3407784280:41' alt='学院招生办老师' title='学院招生办老师'></a><br/><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=2632672836&site=qq&index_menu=yes'><img border='0' src='http://wpa.qq.com/pa?p=2:2632672836:41' alt='学院招生办老师' title='学院招生办老师'></a></div>"
+document.write(suspendcode12);
+window.setInterval("heartBeat()",1);
+</script> 
+  <!--QQ--> 
+</div>
+<!--header-->  
+<!--banner--> 
+<script language="JavaScript" type="text/javascript">
+lastScrollY=0;
+function heartBeat(){
+var diffY;
+if (document.documentElement && document.documentElement.scrollTop)
+diffY = document.documentElement.scrollTop;
+else if (document.body)
+diffY = document.body.scrollTop
+else
+{/*Netscape stuff*/}
+
+//alert(diffY);
+percent=.1*(diffY-lastScrollY);
+if(percent>0)percent=Math.ceil(percent);
+else percent=Math.floor(percent);
+document.getElementById("ALayer2").style.top=parseInt(document.getElementById("ALayer2").style.top)+percent+"px";
+lastScrollY=lastScrollY+percent;
+//alert(lastScrollY);
+}
+suspendcode12="<DIV id='ALayer2' style='right:0px;PosITION:absolute;z-index:100;TOP:294px;FILTER: alpha(opacity=100); right:0px;'><br/><a target='_parent' href='http://lib.gxgcedu.com/index.php/home/enroll/dzluqu'><img border='0' src='/skin/gxgcedu/images/banner.png' alt='就读报名' title='就读报名'></a><br/></div>"
+document.write(suspendcode12);
+window.setInterval("heartBeat()",1);
+</script> 
+<!--banner--> 
+
+<!--contain-->
+<div id="contain">
+<!--float-->
+<marquee style="WIDTH: 1000px; HEIGHT: 20px" scrollamount="2" direction="left"  onmouseover=this.stop() onmouseout=this.start()>
+</div >
+<ul class="float">
+    <li><a href="/College_introduction/board/2018-04-06/7464.html" target="_blank">
+    材料加工物理与数值模似国际联合会专业网站报道我校成功承办全国高层论坛 http://www.ifpns.net/    </a>
+  
+  <li> </ul>
+</marquee >
+<!--float--> 
+
+<!--leftside-->
+<div id="leftside"> 
+  <!--tab1-->
+  <div class="tab1">
+    
+    <div class="news_pic"><script type="text/javascript">
+<!--
+ var interval_time=0;
+ var focus_width=380;
+ var focus_height=255;
+ var text_height=22;
+ var text_align="center";
+ var swf_height = focus_height+text_height;
+ var swfpath="/e/data/images/pixviewer.swf";
+ var swfpatha="/e/data/images/pixviewer.swf";
+ 
+ var pics="http%3A%2F%2Fgxgcedu.com%2Fd%2Ffile%2FCollege_introduction%2Fnews%2F2018-05-25%2Fadc4f7372227b234a7887f6d85b07cc6.jpg%7Chttp%3A%2F%2Fgxgcedu.com%2Fd%2Ffile%2FCollege_introduction%2Fnews%2F2018-05-24%2Fabf3d2453d738f038d7474abc6b4ccfa.jpg%7Chttp%3A%2F%2Fgxgcedu.com%2Fd%2Ffile%2FCollege_introduction%2Fnews%2F2018-05-24%2F77f88f19287dc49ad76d9ee868c6b753.jpg%7Chttp%3A%2F%2Fgxgcedu.com%2Fd%2Ffile%2FCollege_introduction%2Fnews%2F2018-05-23%2F03fc07787caee46712417f31eb8d2713.jpg%7Chttp%3A%2F%2Fgxgcedu.com%2Fd%2Ffile%2FCollege_introduction%2Fnews%2F2018-05-22%2F0751f373b29a631f15b157c6529fc76a.jpg";
+ var links="%2FCollege_introduction%2Fnews%2F2018-05-25%2F7569.html%7C%2FCollege_introduction%2Fnews%2F2018-05-24%2F7567.html%7C%2FCollege_introduction%2Fnews%2F2018-05-24%2F7566.html%7C%2FCollege_introduction%2Fnews%2F2018-05-23%2F7562.html%7C%2FCollege_introduction%2Fnews%2F2018-05-22%2F7559.html";
+ var texts="广西工程职业学院2018纪检监察工作会议|我校师生参加平果县提升群众安全感满意度宣|南宁校区“爱自我，给心里一片晴空”5?25心理|征兵宣传进校园 携笔从戎砺青春| 我校举行“不忘初心·牢记使命” 主题教育";
+ 
+ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">');
+ document.write('<param name="movie" value="'+swfpath+'"><param name="quality" value="high"><param name="bgcolor" value="#ffffff">');
+ document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+ document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'&text_align='+text_align+'&interval_time='+interval_time+'">');
+ document.write('<embed src="'+swfpath+'" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'&text_align='+text_align+'&interval_time='+interval_time+'" menu="false" bgcolor="#ffffff" quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+ document.write('</object>');
+//-->
+</script>
+</div>
+    <div class="news_text">
+    <h2>新闻中心<span class="more"><a href="/College_introduction/news" target="_parent">更多</a></span></h2>
+    <ul>
+            <li><a style="color:red;" href="/College_introduction/news/2017-05-31/5792.html" target="_parent" title="熔炼工匠精神,铸就一流技艺——广西工程职业学院十年校庆宣传片">
+        熔炼工匠精神,铸就一流技艺——广西工程        </a><span class="time">
+        2017-05-31        </span></li>
+                  <li><a href="/College_introduction/news/2018-05-25/7569.html" target="_parent" title="广西工程职业学院2018纪检监察工作会议">
+        广西工程职业学院2018纪检监察工作会议        </a><span class="time">
+        2018-05-25        </span></li>
+            <li><a href="/College_introduction/news/2018-05-24/7567.html" target="_parent" title="我校师生参加平果县提升群众安全感满意度宣传暨“神剑”系列专项行动退脏大会">
+        我校师生参加平果县提升群众安全感满意        </a><span class="time">
+        2018-05-24        </span></li>
+            <li><a href="/College_introduction/news/2018-05-24/7566.html" target="_parent" title="南宁校区“爱自我，给心里一片晴空”5?25心理活动月开幕">
+        南宁校区“爱自我，给心里一片晴空”5?25        </a><span class="time">
+        2018-05-24        </span></li>
+            <li><a href="/College_introduction/news/2018-05-23/7562.html" target="_parent" title="征兵宣传进校园 携笔从戎砺青春">
+        征兵宣传进校园 携笔从戎砺青春        </a><span class="time">
+        2018-05-23        </span></li>
+            <li><a href="/College_introduction/news/2018-05-22/7559.html" target="_parent" title=" 我校举行“不忘初心·牢记使命” 主题教育暨扶贫知识竞赛">
+         我校举行“不忘初心·牢记使命” 主题        </a><span class="time">
+        2018-05-22        </span></li>
+            <li><a href="/College_introduction/news/2018-05-22/7555.html" target="_parent" title="我校举行“不忘初心，砥砺前行”大合唱比赛">
+        我校举行“不忘初心，砥砺前行”大合唱比        </a><span class="time">
+        2018-05-21        </span></li>
+            <li><a href="/College_introduction/news/2018-05-18/7550.html" target="_parent" title="我校两校区分别开展教学听课评课活动">
+        我校两校区分别开展教学听课评课活动        </a><span class="time">
+        2018-05-18        </span></li>
+          </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!--tab1--> 
+  
+  <!--tab2-->
+  <div class="tab2"> 
+    <!--news_wrapper-->
+    <div  class="stu">
+      <h2 class="h2_list">通知公告<span class="more"><a href="/College_introduction/notices" target="_parent">更多</a></span></h2>
+      <ul>
+                <li><a class="title" href="/College_introduction/notices/2018-05-07/7515.html" target="_parent" title="关于开展2015—2017届毕业生评价的通知">
+          关于开展2015—2017届毕业生评价的通知          </a><span class="time">
+          2018-05-07          </span></li>
+                <li><a class="title" href="/College_introduction/notices/2018-03-22/7437.html" target="_parent" title="关于承办全国材料物理与数值模拟专业委员会年会暨铝加工新技术高层论坛的通知">
+          关于承办全国材料物理与数值模拟专业委          </a><span class="time">
+          2018-03-22          </span></li>
+                <li><a class="title" href="/College_introduction/notices/2018-03-16/7430.html" target="_parent" title="关于做好2018年申本工作的通知">
+          关于做好2018年申本工作的通知          </a><span class="time">
+          2018-03-16          </span></li>
+                <li><a class="title" href="/College_introduction/notices/2018-03-13/7420.html" target="_parent" title="关于组织申报2018年度广西科协“提质增效”项目的通知">
+          关于组织申报2018年度广西科协“提质增          </a><span class="time">
+          2018-03-13          </span></li>
+                <li><a class="title" href="/College_introduction/notices/2018-01-16/7183.html" target="_parent" title="关于召开广西工程职业学院科学技术协会成立暨第一次代表大会的通知">
+          关于召开广西工程职业学院科学技术协会          </a><span class="time">
+          2018-01-16          </span></li>
+              </ul>
+    </div>
+    <!--/news_wrapper--> 
+    
+    <!--job-->
+    <div  class="job">
+      <h2 class="h2_list">师生风采<span class="more"><a href="/College_introduction/ldgh" target="_parent">更多</a></span></h2>
+      <ul>
+                <li><a class="title" href="/College_introduction/ldgh/2018-05-21/7552.html" target="_parent" title=" 校园“521·我爱你”表白墙活动">
+           校园“521·我爱你”表白墙活动          </a><span class="time">
+          2018-05-21          </span></li>
+                <li><a class="title" href="/College_introduction/ldgh/2018-05-22/7554.html" target="_parent" title=" “不忘初心，砥砺前行”大合唱，歌唱奋斗的青春">
+           “不忘初心，砥砺前行”大合唱，歌唱奋斗          </a><span class="time">
+          2018-05-21          </span></li>
+                <li><a class="title" href="/College_introduction/ldgh/2018-05-22/7553.html" target="_parent" title="第三届“工程杯”气排球决赛完美落幕，尽显学生风采">
+          第三届“工程杯”气排球决赛完美落幕，尽          </a><span class="time">
+          2018-05-17          </span></li>
+                <li><a class="title" href="/College_introduction/ldgh/2018-05-22/7558.html" target="_parent" title=" 我校举行2017年度迎检促建先进集体先进个人表彰大会">
+           我校举行2017年度迎检促建先进集体先          </a><span class="time">
+          2018-04-05          </span></li>
+                <li><a class="title" href="/College_introduction/ldgh/2018-05-22/7557.html" target="_parent" title=" 我校举行缅怀先烈主题教育暨新党员入党宣誓活动">
+           我校举行缅怀先烈主题教育暨新党员入          </a><span class="time">
+          2018-04-04          </span></li>
+              </ul>
+    </div>
+    <!--/job-->
+    <div class="clear"></div>
+  </div>
+  <!--tab2--> 
+  
+</div>
+<!--leftside--> 
+
+<!--right_side-->
+<div id="rightside">
+	<h2 class="qlink_h2"><a target="_blank" href="/College_introduction/">快速通道</a></h2>
+	<!--qlink-->
+	<ul class="qlink_left">
+    	<!--<li id="signup"><a href="/news/index.php/home/gaokao">录取报名</a></li>-->        
+        <!--<li id="query"><a href="http://lib.gxgcedu.com/index.php/enroll/dzluqu">报名查询</a></li>-->
+        <li id="query"><a href="http://lib.gxgcedu.com/index.php/home/enroll/dzluqu">录取查询</a></li>
+        <li id="email"><a href="http://lib.gxgcedu.com/index.php/admin/mail">院长信箱</a></li>
+        <li id="vido"><a href="http://v.youku.com/v_show/id_XMjY4MDA5NDMyOA==.html?from=s1.8-1-1.2&spm=a2h0k.8191407.0.0&qq-pf-to=pcqq.c2c">宣传视频</a></li>
+    </ul>
+    <ul class="qlink_right">
+       <!-- <li id="plan"><a href="/zsjy/zsb/dkks/">对口考试</a></li>-->
+       <!--<li id="plan"><a href="/zsjy/zsb/zsjh/">招生计划</a></li>-->
+        <li id="plan"><a href="/zsjy/">招生网</a></li>
+        <li id="plan"><a href="/zsjy/jyb/">就业网</a></li>
+        <li><a style="color:red" href="http://lib.gxgcedu.com/index.php/home/users/login">2018单招考试</a></li>
+    </ul>	
+    <div class="clear"></div>
+<!--        <div class="danzhao"><a target="_parent" title="2017广西工程职业学院（高职）单独招生、对口考试报名" href="/zsjy/zsb/dkks/">2017普高招生、对口考试报名</a></div>-->
+        <div class="danzhao"><a target="_parent" title="2017百色工程职业技术学校（中职）网上报名" href="http://lib.gxgcedu.com/index.php/home/enroll/zhongzhi">百色工程职业技术学校 网上报名</a></div>
+
+    <!--qlink-->
+    <div id="wx_wb">
+    	<div class="wx"><a href="http://lib.gxgcedu.com/index.php/home/enroll/danzhao"><img src="/skin/gxgcedu/images/timg.jpg" /></a><p><a href="http://lib.gxgcedu.com/index.php/home/enroll/danzhao">2018单招、对口报名</a></p></div>
+        <div class="wb"><img src="/skin/gxgcedu/images/wx_dy.png" /><p>微信订阅号</p></div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="out_link">
+    <h2 >友情链接</h2>
+    <table width="212" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td valign="top"><select class="output_link" id="margin_T" name="select" size="1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0" id="select" class="wipt">
+        <option selected="selected">----- 校内快速通道 -----</option>
+
+          <option value="http://lib.gxgcedu.com/index.php/home/enroll/query">单招成绩查询</option>
+          <option value="http://lib.gxgcedu.com/index.php/home/enroll/danzhao">单招报名</option>
+          <option value="http://lib.gxgcedu.com/index.php/home/enroll/danzhao">对口考试报名</option>
+          <option value="http://lib.gxgcedu.com/index.php/home/repair">网络报修</option>
+          <option value="http://lib.gxgcedu.com/index.php/home/enroll/zhongzhi">中职就读报名</option>          
+          </select></td></tr>
+          
+        <tr>
+        <td ><select class="output_link" name="select" size="1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0" id="select" class="wipt">
+          <option selected="selected"> ----- 教育机关单位 ----- </option>
+          <option value="http://www.moe.gov.cn/">中华人民共和国教育部</option>
+          <option value="http://www.most.gov.cn/">中华人民共和国科学技术部</option>
+          <option value="http://www.most.gov.cn/">广西壮族自治区教育厅</option>
+          <option value="http://www.gxeea.cn/">广西招生考试院</option>	
+          </select></td></tr>
+          
+          <tr>
+        <td ><select class="output_link" name="select" size="1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0" id="select" class="wipt">
+          <option selected="selected">----- 教育资源网站 -----</option>
+          <option value="http://www.eol.cn/">中国教育在线</option>
+          <option value="http://www.edu.cn/">中国教育和科研计算机网</option>
+          <option value="http://www.eol.cn/">中国教育在线</option>
+          <option value="http://www.jyb.cn/">中国教育新闻网</option>
+          <option value="http://edu.people.com.cn/">人民网教育</option>
+          <option value="http://edu.china.com.cn/">中国网教育</option>
+          <option value="http://edu.gmw.cn/">光明网教育</option>
+          <option value="http://www.gx211.com/">中国高校之窗</option>
+          </select></td></tr>
+
+          <tr>
+        <td ><select class="output_link" name="select" size="1" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0" id="select" class="wipt">
+          <option selected="selected">----- 就业信息网站 -----</option>
+          <option value="http://www.gxbys.com">广西毕业生就业网</option>
+          <option value="http://www.gradjob.com.cn/">广东毕业生就业信息网</option>
+          <option value="http://www.jsbys.com.cn/index.aspx">江苏毕业生就业信息网</option>
+          <option value="http://bys.zjedu.org">浙江毕业生就业信息网</option>
+          <option value="http://www.sdbys.cn">山东毕业生就业信息网</option>
+          <option value="http://www.bjbys.net.cn">北京毕业生就业信息网</option>
+          <option value="http://www.tjbys.com">天津毕业生就业信息网</option>
+          <option value="http://students.educast.cn">河北毕业生就业信息网</option>
+          <option value="http://www.sxbys.com.cn">山西毕业生就业信息网</option>
+          <option value="http://www.nmbys.com">内蒙毕业生就业信息网</option>
+          <option value="http://www.lnbys.com.cn">辽宁毕业生就业信息网</option>
+          <option value="http://www.ybrc.gov.cn/graduate/link/jiling.htm">吉林毕业生就业信息网</option>
+          <option value="http://www.work.gov.cn">黑龙江毕业生就业信息</option>
+          <option value="http://www.ahbys.com">安徽毕业生就业信息网</option>
+          <option value="http://www.fjbys.gov.cn">福建毕业生就业信息网</option>
+          <option value="http://www.jxbys.net.cn">江西毕业生就业信息网</option>
+          <option value="http://www.hunbys.com">湖南毕业生就业信息网</option>
+          <option value="http://biyesheng.hadoe.edu.cn">河南毕业生就业信息网</option>
+          <option value="http://job.e21.edu.cn">湖北毕业生就业信息网</option>
+          <option value="http://www.cqbys.com/index.aspx">重庆毕业生就业信息网</option>
+          <option value="http://www.hnbys.net">海南毕业生就业信息网</option>
+          <option value="http://jiuye.swjtu.edu.cn">四川毕业生就业信息网</option>
+          <option value="http://jyzx.gznc.edu.cn">贵州毕业生就业信息网</option>
+          <option value="http://www.ynjy.cn/officeall/xs/">云南毕业生就业信息网</option>
+          <option>西藏毕业生就业信息网</option>
+          <option value="http://61.185.221.109/Shxbys/main.aspx">陕西毕业生就业信息网</option>
+          <option value="http://www.gsedu.cn/edoas/website/index.htm">甘肃毕业生就业信息网</option>
+          <option value="http://www.nxbys.com">宁夏毕业生就业信息网</option>
+          <option value="http://www.qhbys.com">青海毕业生就业信息网</option>
+          <option value="http://www.xjbys.cn">新疆毕业生就业信息网</option>
+          </select></td></tr>
+
+
+    </table>
+    </div>
+    <div class="clear"></div>
+</div>
+<!--right_side-->
+<div class="clear"></div>
+
+<!--tab3-->
+<div class="roll_pic" >
+  <h2><a target="_parent" href="/College_introduction/xiaoyuan/">校园环境</a></h2>
+  <!--下面是向左滚动代码-->
+  <div id="colee_left" style="overflow:hidden;width:960px; margin:0 auto;">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td id="colee_left1" valign="top" align="center"><table cellpadding="2" cellspacing="0" border="0">
+            <tr align="center">               <td><p><a href="/College_introduction/xiaoyuan/2018-01-22/7202.html" target="_parent" title="鲁班大道" ><img alt="鲁班大道-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2018-01-22/6c0b82b436fd749b9c613102ef1f1a69.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2018-01-22/7202.html" target="_parent"  title="鲁班大道" >
+                  鲁班大道                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2018-01-22/7201.html" target="_parent" title="詹天佑亭" ><img alt="詹天佑亭-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2018-01-22/9014fb41b007e969d7c34ae1a7359b06.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2018-01-22/7201.html" target="_parent"  title="詹天佑亭" >
+                  詹天佑亭                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2018-01-22/7200.html" target="_parent" title="鲁班铜像" ><img alt="鲁班铜像-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2018-01-22/196cd036e69e2ecda0cf4c99d630962e.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2018-01-22/7200.html" target="_parent"  title="鲁班铜像" >
+                  鲁班铜像                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2018-01-22/7199.html" target="_parent" title="孔子铜像" ><img alt="孔子铜像-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2018-01-22/6b2d4de885598f2e244e4b9d8262c284.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2018-01-22/7199.html" target="_parent"  title="孔子铜像" >
+                  孔子铜像                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2018-01-22/7198.html" target="_parent" title="鲁班广场一景" ><img alt="鲁班广场一景-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2018-01-22/6f0cf2f819748a5ca0f4f3176d8eaee6.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2018-01-22/7198.html" target="_parent"  title="鲁班广场一景" >
+                  鲁班广场一                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2018-01-22/7197.html" target="_parent" title="体育馆" ><img alt="体育馆-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2018-01-22/3e2df1806d75ec88d8ace7758619cd01.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2018-01-22/7197.html" target="_parent"  title="体育馆" >
+                  体育馆                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2018-01-22/7196.html" target="_parent" title="詹天佑铜像" ><img alt="詹天佑铜像-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2018-01-22/f4a1ba9c25c3ce1932afc2201f46b72f.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2018-01-22/7196.html" target="_parent"  title="詹天佑铜像" >
+                  詹天佑铜像                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2018-01-22/7195.html" target="_parent" title="校园冬景" ><img alt="校园冬景-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2018-01-22/4ae39be3cf1ae3277cdafbddca28ae4f.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2018-01-22/7195.html" target="_parent"  title="校园冬景" >
+                  校园冬景                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2018-01-22/7194.html" target="_parent" title="大国工匠（二）" ><img alt="大国工匠（二）-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2018-01-22/64b6941ebb38c5fc69bf81f4a8e0f8c3.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2018-01-22/7194.html" target="_parent"  title="大国工匠（二）" >
+                  大国工匠（二                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2018-01-22/7193.html" target="_parent" title="学海求索" ><img alt="学海求索-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2018-01-22/ced0f72c4169a1ac188589bdb60fbd46.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2018-01-22/7193.html" target="_parent"  title="学海求索" >
+                  学海求索                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2018-01-22/7192.html" target="_parent" title="学无止境" ><img alt="学无止境-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2018-01-22/78df4ffa03866420bbf3826af2ff4371.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2018-01-22/7192.html" target="_parent"  title="学无止境" >
+                  学无止境                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2018-01-22/7191.html" target="_parent" title="厚德博学" ><img alt="厚德博学-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2018-01-22/5cba777e3b2b4232e0b2ae4331ed2f64.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2018-01-22/7191.html" target="_parent"  title="厚德博学" >
+                  厚德博学                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2018-01-22/7190.html" target="_parent" title="大国工匠（一）" ><img alt="大国工匠（一）-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2018-01-22/85a5fda5349b4e1cec0a70054eaebd12.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2018-01-22/7190.html" target="_parent"  title="大国工匠（一）" >
+                  大国工匠（一                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2017-02-21/5133.html" target="_parent" title="学院俯瞰图" ><img alt="学院俯瞰图-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2018-01-12/77570abed8f64e1371f9637c1903c05a.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2017-02-21/5133.html" target="_parent"  title="学院俯瞰图" >
+                  学院俯瞰图                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2017-02-21/5132.html" target="_parent" title="骏达驾校" ><img alt="骏达驾校-广西工程职业学院图片" src="/d/file/College_introduction/xiaoyuan/2017-02-21/c88e12e91e0b785a181ea66e84d78d09.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2017-02-21/5132.html" target="_parent"  title="骏达驾校" >
+                  骏达驾校                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2016-12-08/4693.html" target="_parent" title="花香满道" ><img alt="花香满道-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2016-12-08/9889ed01e6a46bc552d60f4d9a7e070b.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2016-12-08/4693.html" target="_parent"  title="花香满道" >
+                  花香满道                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2016-12-08/4692.html" target="_parent" title="学校喷泉" ><img alt="学校喷泉-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2018-01-12/f468d9ee9faa5e628fd749e7118a44a7.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2016-12-08/4692.html" target="_parent"  title="学校喷泉" >
+                  学校喷泉                  </a></p></td>
+                            <td><p><a href="/College_introduction/xiaoyuan/2016-12-08/4691.html" target="_parent" title="塑胶跑道" ><img alt="塑胶跑道-广西工程职业学院图片" src="http://gxgcedu.com/d/file/College_introduction/xiaoyuan/2016-12-08/c2e76e6f8668be532629bce14c408456.jpg"></a></p>
+                <p class="text_B"><a href="/College_introduction/xiaoyuan/2016-12-08/4691.html" target="_parent"  title="塑胶跑道" >
+                  塑胶跑道                  </a></p></td>
+               </tr>
+          </table></td>
+        <td id="colee_left2" valign="top"></td>
+      </tr>
+    </table>
+  </div>
+  <script> 
+//使用div时，请保证colee_left2与colee_left1是在同一行上. 
+var speed=30//速度数值越大速度越慢 
+var colee_left2=document.getElementById("colee_left2"); 
+var colee_left1=document.getElementById("colee_left1"); 
+var colee_left=document.getElementById("colee_left"); 
+colee_left2.innerHTML=colee_left1.innerHTML 
+function Marquee3(){ 
+if(colee_left2.offsetWidth-colee_left.scrollLeft<=0)//offsetWidth 是对象的可见宽度 
+colee_left.scrollLeft-=colee_left1.offsetWidth//scrollWidth 是对象的实际内容的宽，不包边线宽度 
+else{ 
+colee_left.scrollLeft++ 
+} 
+} 
+var MyMar3=setInterval(Marquee3,speed) 
+colee_left.onmouseover=function() {clearInterval(MyMar3)} 
+colee_left.onmouseout=function() {MyMar3=setInterval(Marquee3,speed)} 
+</script> 
+
+  
+  <!--向左滚动代码结束--> 
+</div>
+<!--tab2--> 
+
+<!--out_link-->
+<!--<div class="out_link" > <table width=100% border=0 cellpadding=3 cellspacing=0><tr><td align=center><a href='/e/public/GotoSite/?lid=15&url=http%3A%2F%2Fwww.moe.edu.cn%2F' target=_blank><img src='/d/file/p/2013-09-25/019612c3f00a8d92bdd5dce4b26e61de.jpg' alt='国家教育部' border=0 width='150' height='52'></a></td><td align=center><a href='/e/public/GotoSite/?lid=16&url=http%3A%2F%2Fwww.gxedu.gov.cn%2F' target=_blank><img src='/d/file/p/2013-09-25/5d7e01de8d685e9eb0c18d087160ac57.jpg' alt='广西壮族自治区教育厅' border=0 width='150' height='52'></a></td><td align=center><a href='/e/public/GotoSite/?lid=17&url=http%3A%2F%2Fwww.gxeea.cn%2Fview%2F' target=_blank><img src='/d/file/p/2013-09-25/1e79d362adc22017cc43ea74c29704c3.jpg' alt='广西招生考试网' border=0 width='150' height='52'></a></td><td align=center><a href='/e/public/GotoSite/?lid=20&url=http%3A%2F%2Fjcyk.myclub2.com%2FSecNetworkCulture' target=_blank><img src='/d/file/p/2014-05-29/2f0d93cfe7b786137fdba5c8cecdb438.jpg' alt='第二届广西高校网络文化活动节' border=0 width='150' height='52'></a></td><td align=center><a href='/e/public/GotoSite/?lid=18&url=http%3A%2F%2Fwww.univs.cn%2F' target=_blank><img src='/d/file/p/2014-04-15/06cddca9789ad3136f5375a604080339.gif' alt='中国大学生在线' border=0 width='150' height='52'></a></td><td align=center><a href='/e/public/GotoSite/?lid=19&url=http%3A%2F%2Fwww.gxu.edu.cn%2F' target=_blank><img src='/d/file/p/2014-04-15/fce05a2e77df4dccf195eade652efc67.jpg' alt='广西大学' border=0 width='150' height='52'></a></td><td></td></tr></table>  <div class="clear"></div>
+</div>-->
+<!--out_link-->
+
+<!--漂浮窗口-->
+
+</div>
+<!--/contain-->  
+<!--footer-->
+
+
+<div id="foot_outer"> 
+<div id="foot_inner">
+  <!--goTop-->
+  <DIV style="DISPLAY: none" id=goTopBtn><IMG border=0 src="/skin/gxgcedu/images/lanren_top.jpg"></DIV>
+  <SCRIPT type=text/javascript>goTopEx();</SCRIPT> 
+  <!--goTop-->
+  <p>Copyright&#169;  2007.4-2019.4 版权所有 <a href="/" target="_blank"  title="广西工程职业学院">广西工程职业学院</a> &nbsp;&nbsp;网站备案/许可证号:桂ICP备08102409号-1&nbsp;&nbsp;桂公网安备45102302000022&nbsp;&nbsp;维护:网电中心</p>
+  <p style="padding-top:5px;"><a href="/nnxq/" target="_parent"  title="广西工程职业学院-南宁校区">南宁校区</a>：广西壮族自治区南宁市邕武路16号 电话：0771-3832689 ，0771-3832389   <a href="/college_library/" target="_parent"  title="广西工程职业学院-平果校区">平果校区</a>:广西平果大学城大学路1号 电话:0776-2635666</p>
+  <p>  院办电话:0776-2635668&nbsp;&nbsp;流量统计：
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_471879'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/stat.php%3Fid%3D471879%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>   <div class="foot_gt"><a target="_blank" title="广西区公安厅互联网违法犯罪活动报警网站" href="http://www.gx.cyberpolice.cn/NewsCategory/lstNewCate.do"><img id="aa" src="/skin/gxgcedu/images/gt.gif" />    &nbsp;&nbsp; <img id="cc" src="/skin/gxgcedu/images/jubao.gif"/>   &nbsp;&nbsp; <img  id="dd" src="/skin/gxgcedu/images/police2.gif" /> </a></div>
+</div></div><!--footer-->
+<a href="http://webscan.360.cn/index/checkwebsite/url/gxgcedu.com"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/95dd1feef5396977046de93b2aa42ec5"/></a>
+</body>
+</html>

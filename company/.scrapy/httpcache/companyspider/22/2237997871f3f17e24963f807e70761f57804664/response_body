@@ -1,0 +1,1148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <!--滚动字幕用的-->
+<style>
+    .k{display:block;font-size:15px;line-height:18px;text-decoration:none;color:#333;font-family:Arial;font-size:14px;}
+    .shell{ 
+     width:190px;
+     padding:3px 2px 2px 5px; 
+     }
+     #div1{
+     height:230px;
+     overflow:hidden;
+     }
+   </style>  <!--滚动字幕用的-->
+
+<script  type="text/javascript" src='/IAA/201107/4.js'></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content='' name="Keywords" />
+    <meta content='' name="Description" />
+    <title>网站首页-淮南一中</title>
+    <link href="/Skin/OceanStar/default.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+    var siteSetup = {sitePath: '/',ajaxPath: '/ajax.aspx',skinPath: '/Skin/OceanStar/'};
+</script>
+<script language="javascript" type="text/javascript" src="/js/jquery.pack.js"></script>
+<script language="javascript" type="text/javascript" src="/js/jquery.peex.js"></script>
+</head>
+<body>
+    <!--网站顶部开始-->
+    <div id="header">
+    <div class="wrapper">
+        <div class="top">
+     <div class="web_tip ">
+                    <img id="loginStatusSign" src="/Skin/OceanStar/Images/loading.gif" alt="正在加载数据..." align="absmiddle" />
+                    <a href="javascript:void(0)" id="loginAnchor" class="reg">会员登录</a><a href="javascript:void(0)" class="home">设为首页</a> <a href="javascript:void(0)" class="fav">加入收藏</a></div>
+<div id="loginedUserInfo" style="display: none;">
+                    <ul>
+                        <li class="user_out"><a href="/User/Default.aspx">会员中心</a> <span>|</span> <a id="logout" href="javascript:void(0)">退出登录</a> </li>
+                        <li class="money">资金余额：{balances} 元</li>
+                        <li>可用{pointName}：{point} {pointUnit}</li>
+                        <li>经验积分：{experience} 分</li>
+                        <li>待阅短信：{message} 条</li>
+                        <li>待签文章：{signinArticle} 篇</li>
+                        <li>登录次数：{loginCount} 次</li>
+                    </ul>
+                </div>
+
+
+
+
+            <div id="logo">
+                <a href="/">
+                    <img src="/Skin/OceanStar/images/logo.jpg" alt="淮南一中" /></a>
+
+
+
+            </div>
+               </div>
+        <div class="menu">
+            <link rel="stylesheet" type="text/css" href="/Skin/OceanStar/nav/nav_huadong/SpryTabbedPanels.css&#xD;&#xA;   "><script type="text/javascript" src="/Skin/OceanStar/nav/nav_huadong/SpryTabbedPanels.js&#xD;&#xA;  "></script><div id="nav_huadong" class="TabbedPanels">
+  <ul class="TabbedPanelsTabGroup">
+    <li class="TabbedPanelsTab"><a href="/Default.aspx" target="_blank"><span><em>首页</em></span></a></li>
+    <li class="TabbedPanelsTab"><a href="/Category_1/Index.aspx" target="_self"><span><em>学校概况</em></span></a></li>
+    <li class="TabbedPanelsTab"><a href="/Category_36/Index.aspx" target="_self"><span><em>校园资讯</em></span></a></li>
+    <li class="TabbedPanelsTab"><a href="/Category_2/Index.aspx" target="_self"><span><em>教学动态</em></span></a></li>
+    <li class="TabbedPanelsTab"><a href="/Category_32/Index.aspx" target="_self"><span><em>教学督导</em></span></a></li>
+    <li class="TabbedPanelsTab"><a href="/Category_23/Index.aspx" target="_self"><span><em>德育天地</em></span></a></li>
+    <li class="TabbedPanelsTab"><a href="/Category_60/Index.aspx" target="_self"><span><em>校务公开</em></span></a></li>
+    <li class="TabbedPanelsTab"><a href="/Category_3/Index.aspx" target="_self"><span><em>后勤服务</em></span></a></li>
+    <li class="TabbedPanelsTab"><a href="/Category_34/Index.aspx" target="_self"><span><em>党建工作</em></span></a></li>
+    <li class="TabbedPanelsTab"><a href="/Category_22/Index.aspx" target="_self"><span><em>安全保卫</em></span></a></li>
+    <li class="TabbedPanelsTab"><a href="/Category_27/Index.aspx" target="_self"><span><em>风采展示</em></span></a></li>
+    <li class="TabbedPanelsTab"><a href="/Category_33/Index.aspx" target="_self"><span><em>团委工作</em></span></a></li>
+    <li class="TabbedPanelsTab"><a href="/Category_45/Index.aspx" target="_self"><span><em>招生专栏</em></span></a></li>
+  </ul>
+  <div class="TabbedPanelsContentGroup">
+    <div class="TabbedPanelsContent">
+      <ul>
+        <div class="noimg"></div><span>淮南一中欢迎您的到来！</span></ul>
+    </div>
+    <div class="TabbedPanelsContent">
+      <ul>
+        <div class="noimg"></div><li><a href="/Category_41/Index.aspx" target="_self">学校领导</a></li>
+<li><a href="/Category_13/Index.aspx" target="_self">机构设置</a></li>
+<li><a href="/Category_14/Index.aspx" target="_self">历史沿革</a></li></ul>
+    </div>
+    <div class="TabbedPanelsContent">
+      <ul>
+        <div class="noimg"></div><span>淮南一中欢迎您的到来！</span></ul>
+    </div>
+    <div class="TabbedPanelsContent">
+      <ul>
+        <div class="noimg"></div><li><a href="/Category_20/Index.aspx" target="_self">教务管理</a></li>
+<li><a href="/Category_21/Index.aspx" target="_self">教学研究</a></li>
+<li><a href="/Category_55/Index.aspx" target="_self">实验室专栏</a></li></ul>
+    </div>
+    <div class="TabbedPanelsContent">
+      <ul>
+        <div class="noimg"></div><span>淮南一中欢迎您的到来！</span></ul>
+    </div>
+    <div class="TabbedPanelsContent">
+      <ul>
+        <div class="noimg"></div><li><a href="/Category_44/Index.aspx" target="_self">德育咨讯</a></li>
+<li><a href="/Category_64/Index.aspx" target="_self">校园文化</a></li>
+<li><a href="/Category_54/Index.aspx" target="_self">班级工作</a></li>
+<li><a href="/Category_58/Index.aspx" target="_self">学生资助</a></li>
+<li><a href="/Category_59/Index.aspx" target="_self">心理咨询室</a></li></ul>
+    </div>
+    <div class="TabbedPanelsContent">
+      <ul>
+        <div class="noimg"></div><li><a href="/Category_62/Index.aspx" target="_self">党务公开</a></li>
+<li><a href="/Category_61/Index.aspx" target="_self">政务公开</a></li>
+<li><a href="/Category_63/Index.aspx" target="_self">监督平台</a></li></ul>
+    </div>
+    <div class="TabbedPanelsContent">
+      <ul>
+        <div class="noimg"></div><li><a href="/Category_18/Index.aspx" target="_self">服务信息</a></li>
+<li><a href="/Category_40/Index.aspx" target="_self">学生食宿</a></li></ul>
+    </div>
+    <div class="TabbedPanelsContent">
+      <ul>
+        <div class="noimg"></div><li><a href="/Category_48/Index.aspx" target="_self">组织机构</a></li>
+<li><a href="/Category_46/Index.aspx" target="_self">党组活动</a></li>
+<li><a href="/Category_47/Index.aspx" target="_self">两学一做</a></li>
+<li><a href="/Category_71/Index.aspx" target="_self">党员风采</a></li>
+<li><a href="/Category_76/Index.aspx" target="_self">双争工作</a></li>
+<li><a href="/Category_77/Index.aspx" target="_self">十九大精神在江淮</a></li></ul>
+    </div>
+    <div class="TabbedPanelsContent">
+      <ul>
+        <div class="noimg"></div><span>淮南一中欢迎您的到来！</span></ul>
+    </div>
+    <div class="TabbedPanelsContent">
+      <ul>
+        <div class="noimg"></div><li><a href="/Category_28/Index.aspx" target="_self">特级教师</a></li>
+<li><a href="/Category_29/Index.aspx" target="_self">学科带头人</a></li>
+<li><a href="/Category_30/Index.aspx" target="_self">骨干教师</a></li>
+<li><a href="/Category_31/Index.aspx" target="_self">教坛新星</a></li>
+<li><a href="/Category_43/Index.aspx" target="_self">校友之窗</a></li></ul>
+    </div>
+    <div class="TabbedPanelsContent">
+      <ul>
+        <div class="noimg"></div><li><a href="/Category_78/Index.aspx" target="_self">文明创建</a></li></ul>
+    </div>
+    <div class="TabbedPanelsContent">
+      <ul>
+        <div class="noimg"></div><span>淮南一中欢迎您的到来！</span></ul>
+    </div>
+  </div>
+</div><script type="text/javascript">var TabbedPanels1 = new Spry.Widget.TabbedPanels("nav_huadong", {defaultTab:0});</script></div>
+    </div>
+</div>
+
+
+
+<!--弹出登录开始-->
+<div id="loginField" class="quick_login" style="display: none">
+    <div class="quick_login_content">
+        <h3 class="close">
+            <img src="/Skin/OceanStar/images/close.gif" class="overlay_header_close" alt="关闭" align="absmiddle" />会员登录</h3>
+        <div class="quick_login_info">
+            <ul>
+                <li><label>用户名：</label><input name="username" type="text" /></li>
+                <li><label>密&nbsp;&nbsp;码：</label><input name="userpass" type="password" /></li>
+                <li style="display: none" id="validateField"><label>验证码：</label><input name="validate" id="validateCode" type="text" /><span><img style="display:none" class="validateSign" id="validateSign" src="" title="换一个" align="absmiddle" /></span></li>
+                <li class="check"><label><input name="saveinfo" type="checkbox" /><span>保持登录状态</span></label></li>
+                <li class="login">
+                    <img id="login" src="/Skin/OceanStar/images/login.gif" alt="登录" align="absmiddle" /></li>
+            </ul>
+        </div>
+        <div class="reg_info">
+            <ul>
+                <li>没有帐号？<a href="/User/Register.aspx" target="_blank" title="点此注册">点此注册</a></li>
+                <li><a href="/User/GetPassword.aspx" target="_blank" title="忘记密码？">忘记密码？</a></li>
+            </ul>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+</div>
+<!--弹出登录结束-->
+<script type="text/javascript">
+    $(function () {
+        $('a[class="fav"]').addFavorite();
+        $('a[class="home"]').setHomePage();
+
+        $('#change_search_model').click(function () {
+            if($('.model_list').css('display') != 'block')
+            {
+              $('.model_list').slideDown(500);
+              try { clearTimeout(timer); } catch (e) { }
+            }else{
+              $('.model_list').mouseleave();
+            };
+        })
+
+        $('.model_list').mouseleave(function () {
+            timer = setTimeout(function () {
+                $('.model_list').slideUp(100);
+            }, 500);
+        })
+
+        $('.model_list a').click(function () {
+            $('#change_search_model').text($(this).text())
+            $('.model_list').slideUp(100);
+            try { clearTimeout(timer); } catch (e) { }
+        })
+
+        $('.model_search_click').click(function () {
+            var model = checkSearchModel();
+            doModelSearch(model[0],model[1]);
+        })
+
+        $('#model_adv_search').click(function () {
+            var model = checkSearchModel();
+            doModelSearch(model[0],2);
+        })
+        
+        var checkSearchModel = function(){
+        var model = $('#change_search_model').text();
+            switch (model) {
+                case '文章':
+                    return[1, 1];
+                case '图片':
+                    return[2, 1];
+                case '软件':
+                    return[3, 1];
+                default:
+                    return[0, 2];
+            }
+        }
+
+        var doModelSearch = function (modelId, searchType) {
+            var searchValue = $('.model_search').val();
+            if (searchType != 2 && (searchValue == null || searchValue == '')) {
+                alert('请输入要搜索的关键词');
+                $('.model_search').focus();
+                return;
+            }
+            if(searchType == 2 && modelId == 0){
+                location.href = '/search.aspx?searchType=0&Keyword=' + searchValue;
+                return;
+            }
+            switch (modelId) {
+                case 1:
+                    location.href = '/search.aspx?searchtype=1&modelId=' + modelId + '&nodeId=1&fieldOption=title&Keyword=' + searchValue;
+                    break;
+                case 2:
+                    location.href = '/search.aspx?searchType=1&modelId=' + modelId + '&nodeId=2&fieldOption=title&Keyword=' + searchValue;
+                    break;
+                default:
+                    location.href = '/search.aspx?searchtype=1&modelId=' + modelId + '&nodeId=3&fieldOption=title&Keyword=' + searchValue;
+                    break;
+            }
+        }
+
+        var checkUserLogin = function () {
+            $.pe.ajax('checkUserLogin', { success: function (response) {
+                var _response = $(response);
+                if (_response.find('status').text() == 'ok') {
+                    var _loginedUserInfo = $('#loginedUserInfo'), _loginAnchor = $('#loginAnchor');
+                    _loginedUserInfo.html($.pe.replaceUserInfoVariable(_loginedUserInfo.html(), _response));
+                    $('#loginedUserInfo,#loginAnchor').bind({
+                        'mouseenter': function () {
+                            _loginedUserInfo.slideDown(500);
+                            try { clearTimeout(timer); } catch (e) { }
+                        },
+                        'mouseleave': function () {
+                            timer = setTimeout(function () {
+                                _loginedUserInfo.slideUp(500);
+                            }, 500);
+                        }
+                    });
+                    _loginAnchor.html('尊敬的<a  class="login_poping" href="/user/default.aspx"><span>' + _response.find('username').text() + "</span></a>您好！").fadeIn();
+                    $('#loginStatusSign').hide();
+                    $('#logout').click(function () {
+                        $.pe.ajax('logout', { success: function (response) {
+                            if ($(response).find('status').text() == 'ok') {
+                                $('#loginField input[name="username"]').val('');
+                                $('#loginField input[name="userpass"]').val('');
+                                $('#loginField input[name="validate"]').val('');
+                                $('#loginField input[name="saveinfo"]').attr("checked", false);
+                                location.reload();
+                            }
+                        }
+                        });
+                    })
+                } else {
+                    $.pe.ajax('checkLoginValidate', { success: function (response) {
+                        if ($(response).find('status').text() == 'yes') {
+                            $('#validateSign').click(function () { $.pe.refreshValidateCode($('.validateSign')); });
+                            $('#validateField').show();
+                        }
+                    }
+                    });
+                    $('#validateCode').focus(function(){$('#validateSign').click();$('#validateSign').show();})
+                    $('#loginAnchor').text('会员登录').click(function () {
+                        $('#loginField').overlay({ api: true, expose: true }).load(); return false;
+                    }).fadeIn();
+                    $('#login').click(function () {
+                        var username = $('#loginField input[name="username"]');
+                        var userpass = $('#loginField input[name="userpass"]');
+                        var saveinfo = $('#loginField input[name="saveinfo"]');
+                        var validate = $('#loginField input[name="validate"]');
+
+                        if (username.val() == '') {
+                            alert('请填写用户名！');
+                            username.focus();
+                            return;
+                        }
+                        if (userpass.val() == '') {
+                            alert('请填写密码！');
+                            userpass.focus();
+                            return;
+                        }
+                        if ($('#validateField').css("display") != 'none') {
+                            if (validate.val() == '') {
+                                alert("请填写验证码！");
+                                validate.focus();
+                                return;
+                            }
+                        }
+                        $.pe.ajax('userLogin', {
+                            params: {
+                                username: username.val(),
+                                password: userpass.val(),
+                                checkcode: validate.val(),
+                                expiration: saveinfo.attr("checked") ? 'Month' : 'None'
+                            }, success: function (response) {
+                                var _response = $(response)
+                                switch (_response.find('status').text()) {
+                                    case "ok":
+                                        location.reload();
+                                        break;
+                                    case "err":
+                                        alert(_response.find('body').text());
+                                        $.pe.refreshValidateCode($('.validateSign'));
+                                        break;
+                                }
+                            }
+                        })
+                    })
+                    $('#loginStatusSign').hide();
+                    $('#loginField').keypress(function (e) {
+                        if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+                            $('#login').click();
+                            return false;
+                        }
+                        return true;
+                    })
+                }
+            }
+            })
+        }
+        checkUserLogin();
+    })
+    
+</script>
+ 
+    <!--网站顶部结束-->
+    <!--网站中部定义开始-->
+    <div class="wrapper1">
+        <!--网站广告开始-->
+  <!-- <div class="web_ad">-->
+      <script type="text/javascript">var swf_width = 960;var swf_height = 100;var config = '0xFFFFFF|0x2|0099FF|10|0xFFFFFF|0x0099FF|0x000000|6|3|1|_blank';var files = '/UploadFiles/UploadADPic/201805150854249212.png|/UploadFiles/UploadADPic/201405070926374311.jpg';var links = 'http://|http://';var texts = '|';document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="' + swf_width + '" height="' + swf_height + '">');document.write('<param name="movie" value="/images/advFocus.swf" />');document.write('<param name="quality" value="high" />');document.write('<param name="menu" value="false" />');document.write('<param name="wmode" value="opaque" />');document.write('<param name="FlashVars" value="bcastr_config=' + config + '&amp;bcastr_file=' + files + '&amp;bcastr_link=' + links + '&amp;bcastr_title=' + texts + '" />');document.write('<embed src="/images/advFocus.swf" wmode="opaque" FlashVars="bcastr_config=' + config + '&amp;bcastr_file=' + files + '&amp;bcastr_link=' + links + '&amp;bcastr_title=' + texts + '" menu="false" quality="high" width="' + swf_width + '" height="' + swf_height + '" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>'); </script>
+<!--</div> -->
+        <!--网站广告结束-->
+    </div>
+    <!--网站中部定义结束-->
+    <!--网站中部定义一开始-->
+    
+
+ <div class="wrapper mtop10">
+     
+
+        <!--侧栏开始-->
+        <div class="sidebar">
+            <!--公告开始-->
+            <div class="notice ">
+                <h3><a href='/Category_5/Index.aspx' title="更多公告" target="_blank"><img src="/Skin/OceanStar/images/more.gif" alt="更多公告"  align="absmiddle"/></a>通知公告</h3>
+               <div id="div1"> 
+ <ul>                           
+   
+                        
+<li>
+  <a href="/Item/2713.aspx" target="_blank">第十四周  工作计划(2017-20…</a>
+</li>
+<li>
+  <a href="/Item/2703.aspx" target="_blank">第十三周  工作计划(2017-20…</a>
+</li>
+<li>
+  <a href="/Item/2699.aspx" target="_blank">第十二周  工作计划(2017-20…</a>
+</li>
+<li>
+  <a href="/Item/2691.aspx" target="_blank">第十一周  工作计划(2017-20…</a>
+</li>
+<li>
+  <a href="/Item/2682.aspx" target="_blank">第九、十周  工作计划(2017-…</a>
+</li>
+<li>
+  <a href="/Item/2676.aspx" target="_blank">第八周  工作计划(2017-2018…</a>
+</li>
+<li>
+  <a href="/Item/2670.aspx" target="_blank">第七周  工作计划(2017-2018…</a>
+</li>
+<li>
+  <a href="/Item/2659.aspx" target="_blank">第五、六周  工作计划(2017-…</a>
+</li>
+<li>
+  <a href="/Item/2656.aspx" target="_blank">第四周  工作计划(2017-2018…</a>
+</li>
+<li>
+  <a href="/Item/2652.aspx" target="_blank">第三周  工作计划(2017-2018…</a>
+</li>
+                                    
+   </ul>  </div>
+<script>
+var box=document.getElementById("div1"),can=true;
+box.innerHTML+=box.innerHTML;
+box.onmouseover=function(){can=false};
+box.onmouseout=function(){can=true};
+new function (){
+var stop=box.scrollTop%145==0&&!can;
+if(!stop)box.scrollTop==parseInt(box.scrollHeight/2)?box.scrollTop=0:box.scrollTop++;
+setTimeout(arguments.callee,box.scrollTop%145?10:1500);
+};
+</script>
+
+                <div class="underline">
+                </div>
+            </div>
+
+
+            <!--公告结束-->
+        </div>
+
+
+
+        <!--侧栏结束-->
+        <!--内容块开始-->
+            <div class="news_flash" >
+                    
+                        
+<embed height="240" width="280" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" quality="high" menu="false" flashvars="borderwidth=280&amp;borderheight=220&amp;textheight=20&amp;interval_time=6&amp;pics=/UploadFiles/2018/5/201805241217369320.JPG|/UploadFiles/dytd/2018/5/201805211114058242.jpg|/UploadFiles/2018/5/201805211055126388.jpg|/UploadFiles/2018/5/201805171123442663.png&amp;links=/Item/2712.aspx|/Item/2705.aspx|/Item/2704.aspx|/Item/2702.aspx&amp;texts=我校召开教师演讲技能交…|学习雷锋，拾金不昧——…|高二（17）班夏新麒获得…|第二届上海交大黑客马拉…" wmode="opaque" src="/Skin/OceanStar/swf/usualfocus.swf" />
+                    </div>
+               <div class="contents">
+            <div class="news">
+               <ul>
+                    <li><a href="javascript:void(0)">新闻动态</a></li>
+                </ul>
+            </div>
+           
+<div class="news_list">
+                <!--区块一开始-->
+                          
+                <div class="news_list_01">
+
+                    <ul class="list_01">
+                        
+                <div class="head_news"><h3><a href="/Item/2716.aspx" target="&#xD;&#xA;                                                        _blank&#xD;&#xA;                                                    ">高考在即，高效学习方法get下</a></h3><p>一、就是运动
+运动会释…<em class="more_content"><a href="/Item/2716.aspx">[详细内容]
+</a></em></p></div><li><span class="datetime">05-28</span><a href="/Item/2715.aspx" target="_blank">应对高考紧张焦虑，可以这样做</a></li><li><span class="datetime">05-28</span><a href="/Item/2714.aspx" target="_blank">你好5.25，遇见更好的自己</a></li><li><span class="datetime">05-25</span><a href="/Item/2713.aspx" target="_self ">第十四周  工作计划(2017-2018学年第二学…</a></li><li><span class="datetime">05-24</span><a href="/Item/2712.aspx" target="_blank">我校召开教师演讲技能交流研讨会</a></li><li><span class="datetime">05-24</span><a href="/Item/2708.aspx" target="_blank">关于在全市中小学、幼儿园中开展“小手拉…</a></li>
+              
+                    </ul>
+                               </div>
+                <!--区块一结束-->
+                 <div class="clear">
+
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    $("div.news ul").tabs("div.news_list_01 ul", { tabs: 'li', current: 'on', event: 'mouseover' });
+                })
+            </script>
+            <div class="news_list_bottom">
+            </div>
+        </div>
+        <!--内容块结束-->
+        <div class="clear_all">
+        </div>
+    </div>
+    <!--网站中部定义一结束-->
+    <!--网站中部定义二开始-->
+    <div class="wrapper">
+        <!--侧栏开始-->
+        <div class="sidebar mtop10">
+                <!--邮件订阅-->
+            <div class="notice mail">
+                <h3>网络服务</h3>
+               <ul>
+                  <!--图片工具栏开始-->
+ <div class="pic_tool mtop10">
+
+<a href="http://edu.adc.ah.chinamobile.com/" target="_blank"  title="家长网校"><img src="/Skin/OceanStar/images/pic_news.jpg" alt="匿名投稿" align="absmiddle" /></a>
+<a href="http://www.ks5u.com/" target="_blank"  title="高考资源"><img src="/Skin/OceanStar/images/link_us.jpg" alt="联系我们" align="absmiddle" /></a> 	
+<a href="http://www.huainan.gov.cn/public/column/4971677?type=4&action=list" target="_blank"  title="信息服务"><img src="/Skin/OceanStar/images/sitemap.jpg" alt="信息服务" align="absmiddle" /></a>		   
+ <a href="http://www.hnyz.com.cn/Category_74/Index.aspx" target="_blank"  title="人才招聘"><img src="/Skin/OceanStar/images/rencaizhaopin.jpg" alt="人才招聘" align="absmiddle" /></a>					 
+  </div>       
+               </ul>
+                <div class="underline">
+                </div>
+            </div>
+            <!--邮件结束-->
+                 <div class="vote mtop10">
+ <h3>专题栏目</h3>
+<div class="vote_content">
+<a href="http://www.hnyz.com.cn/Category_77/Index.aspx" target="_blank"  title="十九大"><img src="/Skin/OceanStar/images/sjdjszjh.jpg" alt="联系我们" align="absmiddle" /></a> 
+<a href="http://www.hnyz.com.cn/Category_34/Index.aspx" target="_blank"  title="保持党的纯洁性"><img src="/Skin/OceanStar/images/lxyz.jpg" alt="联系我们" align="absmiddle" /></a> 
+<a href="http://www.hnyz.com.cn/Category_70/Index.aspx" target="_blank"  title="创先争优"><img src="/Skin/OceanStar/images/ddcjx.jpg" alt="匿名投稿" align="absmiddle" /></a>
+<a href="http://www1.ahedu.gov.cn/chuangxianzhengyou/school.asp?sid=hnyz" target="_blank"  title="高考资源"><img src="/Skin/OceanStar/images/cxzyhd.jpg" alt="联系我们" align="absmiddle" /></a> 	
+	
+	
+<a href="http://www.hnyz.com.cn/Category_59/Index.aspx" target="_blank"  title="科学发展观"><img src="/Skin/OceanStar/images/xljk.jpg" alt="网站地图" align="absmiddle" /></a>
+<a href="http://www.ahedu.cn" target="_blank"  title="高考资源"><img src="/Skin/OceanStar/images/jcjyzy.jpg" alt="联系我们" align="absmiddle" /></a> 
+<a href="http://www.hnyz.com.cn/Category_73/Index.aspx" target="_blank"  title="廉洁发展"><img src="/Skin/OceanStar/images/ddqzlx.jpg" alt="联系我们" align="absmiddle" /></a> 
+
+
+</div>
+						 		<div class="underline"></div>		 
+					   </div>
+					                     
+ <!--会员中心开始-->
+            <div class="user mtop10 ">
+    <h3>
+        会员中心</h3>
+    <div class="user_info">
+        <div class="user_login">
+            <img id="loginStatusSign2" src="/Skin/OceanStar/Images/loading.gif" alt="正在加载数据..." align="absmiddle" />
+            <ul id="loginField2" style="display: none" class="userlogin">
+                <li>用户名：<input id="username" name="username" type="text" maxlength="20" class="inputtext" /></li>
+                <li>密&nbsp;&nbsp;码：<input name="userpass" type="password" class="inputtext" /></li>
+                <li id="validateField2" style="display: none">验证码：<input id="validationCode2" name="validate" type="text" maxlength="6" class="inputtext" style="width: 50px;" /><img style="display:none" class="validateSign" id="validateSign2" title="换一个" src="" align="absmiddle" align="absmiddle" /></li>
+                <li class="save"><label><input name="saveinfo" type="checkbox" />下次自动登录</label></li>
+                <li class="reg_user"><input id="login2" type="submit" value="" class="user_login_submit" />&nbsp;&nbsp;</li>
+				<li class="reg" ><a href="/User/GetPassword.aspx" title="忘记密码" class="reg_password">忘记密码？</a>&nbsp;&nbsp;<a href="/User/Register.aspx" title="立即注册">立即注册</a></li>
+
+            </ul>
+            <ul id="loginedUserInfo2" class="loginedinfo" style="display: none">
+                <li>{username}，您好！您有：</li>
+                <li>资金余额：{balances} 元</li>
+                <li>可用{pointName}：{point} {pointUnit}</li>
+                <li>经验积分：{experience} 分</li>
+                <li>待阅短信：{message} 条</li>
+                <li>待签文章：{signinArticle} 篇</li>
+                <li>登录次数：{loginCount} 次</li>
+                <li><a href="/User/Default.aspx">会员中心</a>|<a id="logout2" name="logout" href="javascript:void(0)">退出登录</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="underline">
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function() {
+        $('#username').click(function() { $('.user_info').expose({ api: true }).load(); });
+        var checkUserLogin2 = function() {
+            $.pe.ajax('checkUserLogin', { success: function(response) {
+                var _response = $(response);
+                if (_response.find('status').text() == 'ok') {
+                    var _loginedUserInfo = $('#loginedUserInfo2');
+                    _loginedUserInfo.html($.pe.replaceUserInfoVariable(_loginedUserInfo.html(), _response)).fadeIn();
+                    $('#loginStatusSign2').hide();
+                    $('#logout2').click(function() {
+                        $.pe.ajax('logout', { success: function(response) {
+                            if ($(response).find('status').text() == 'ok') {
+                                $('#loginField2 input[name="username"]').val('');
+                                $('#loginField2 input[name="userpass"]').val('');
+                                $('#loginField2 input[name="validate"]').val('');
+                                $('#loginField2 input[name="saveinfo"]').attr("checked", false);
+                                location.reload();
+                            }
+                        }
+                        });
+                    })
+                } else {
+                    $.pe.ajax('checkLoginValidate', { success: function(response) {
+                        if ($(response).find('status').text() == 'yes') {
+                            $('#validateSign2').click(function() { $.pe.refreshValidateCode('.validateSign'); });
+                            $('#validateField2').show();
+                        }
+                    }
+                    });
+                    $('#validationCode2').focus(function(){$('#validateSign2').click();$('#validateSign2').show();})
+                    $('#login2').click(function() {
+                        var username = $('#loginField2 input[name="username"]');
+                        var userpass = $('#loginField2 input[name="userpass"]');
+                        var saveinfo = $('#loginField2 input[name="saveinfo"]');
+                        var validate = $('#loginField2 input[name="validate"]');
+
+                        if (username.val() == '') {
+                            alert('请填写用户名！');
+                            username.focus();
+                            return;
+                        }
+                        if (userpass.val() == '') {
+                            alert('请填写密码！');
+                            userpass.focus();
+                            return;
+                        }
+                        if ($('#validateField2').css("display") != 'none') {
+                            if (validate.val() == '') {
+                                alert("请填写验证码！");
+                                validate.focus();
+                                return;
+                            }
+                        }
+                        $.pe.ajax('userLogin', {
+                            params: {
+                                username: username.val(),
+                                password: userpass.val(),
+                                checkcode: validate.val(),
+                                expiration: saveinfo.attr("checked") ? 'Month' : 'None'
+                            }, success: function(response) {
+                                var _response = $(response)
+                                switch (_response.find('status').text()) {
+                                    case "ok":
+                                        location.reload();
+                                        break;
+                                    case "err":
+                                        alert(_response.find('body').text());
+                                        $.pe.refreshValidateCode($('.validateSign'));
+                                        break;
+                                }
+                            }
+                        })
+                    })
+                    $('#loginStatusSign2').hide();
+                    $('#loginField2').fadeIn();
+                    $('#loginField2').keypress(function(e) {
+                        if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+                            $('#login2').click();
+                            return false;
+                        }
+                        return true;
+                    })
+                }
+            }
+            })
+        }
+        checkUserLogin2();
+    })
+</script>
+            <!--会员中心结束-->
+
+
+                   </div>
+        <!--侧栏结束-->
+        <!--内容块开始-->
+        <div class="content">
+            <!--模块一开始-->
+         <div class="area left">
+                <h3><span><em>校园资讯</em></span><a href='/Category_36/Index.aspx' target="_blank" title="更多"><img src="/Skin/OceanStar/images/more.gif" alt="更多" align="absmiddle" /></a></h3>
+                <div class="tv_center">
+                        <ul >
+                        
+                        
+<li>
+  <span class="datetime">05-21</span>
+  <a href="/Item/2704.aspx" target="_blank">高二（17）班夏新麒获得爱国主义读书活动…</a>
+</li>
+<li>
+  <span class="datetime">05-17</span>
+  <a href="/Item/2702.aspx" target="_blank">第二届上海交大黑客马拉松 HACKxSJTU 2018</a>
+</li>
+<li>
+  <span class="datetime">05-10</span>
+  <a href="/Item/2697.aspx" target="_blank">我校举行2018年防灾减灾疏散演习</a>
+</li>
+<li>
+  <span class="datetime">05-08</span>
+  <a href="/Item/2695.aspx" target="_blank">淮南东方集团总院专家莅临我校助力高考</a>
+</li>
+<li>
+  <span class="datetime">05-07</span>
+  <a href="/Item/2694.aspx" target="_blank">潘书记为获得“优秀志愿者标兵”称号的同…</a>
+</li>
+<li>
+  <span class="datetime">05-07</span>
+  <a href="/Item/2692.aspx" target="_blank">新一届学生会干部竞选演讲顺利举行</a>
+</li>
+<li>
+  <span class="datetime">05-03</span>
+  <a href="/Item/2689.aspx" target="_blank">立德树人砥砺奋进  身残志坚不忘初心——…</a>
+</li>
+<li>
+  <span class="datetime">05-03</span>
+  <a href="/Item/2688.aspx" target="_blank">四月春风拂杨柳，草长莺飞少年行</a>
+</li>
+                    
+                            </ul>
+                </div>
+                <div class="underline_area">
+                </div>
+            </div>
+            <!--模块一结束-->
+            <!--模块二开始-->
+  <div class="area right">
+                <h3><span><em>教学动态</em></span><a href='/Category_2/Index.aspx' target="_blank" title="更多"><img src="/Skin/OceanStar/images/more.gif" alt="更多" align="absmiddle" /></a></h3>
+                <div class="tv_center">
+                        <ul >
+                        
+                        
+<li>
+  <span class="datetime">04-09</span>
+  <a href="/Item/2673.aspx" target="_blank">浅谈高中物理实验在教学中的作用</a>
+</li>
+<li>
+  <span class="datetime">03-26</span>
+  <a href="/Item/2662.aspx" target="_blank">第五周、第六周、第七周物理实验安排</a>
+</li>
+<li>
+  <span class="datetime">03-14</span>
+  <a href="/Item/2655.aspx" target="_blank">蘑菇云（淮南站）创客空间会员备战2018科…</a>
+</li>
+<li>
+  <span class="datetime">03-01</span>
+  <a href="/Item/2638.aspx" target="_blank">转发《安徽省教育厅关于开展2018年国家级…</a>
+</li>
+<li>
+  <span class="datetime">12-28</span>
+  <a href="/Item/2609.aspx" target="_blank">课题与课堂共生  教研与教学相成</a>
+</li>
+<li>
+  <span class="datetime">12-06</span>
+  <a href="/Item/2589.aspx" target="_blank">淮南一中刘全全老师在2017年全国高中地理…</a>
+</li>
+<li>
+  <span class="datetime">12-05</span>
+  <a href="/Item/2586.aspx" target="_blank">关于表彰淮南一中第三届“三成杯”教学比…</a>
+</li>
+<li>
+  <span class="datetime">11-27</span>
+  <a href="/Item/2576.aspx" target="_blank">立足岗位早成才  争做“四有”好教师——…</a>
+</li>
+                    
+                            </ul>
+                </div>
+                <div class="underline_area">
+                </div>
+            </div>
+            <!--模块二结束-->
+            <!--模块广告开始-->
+            <div class="clear">
+            </div>
+            <div class="area_ad mtop10">
+                <script type="text/javascript">var swf_width = 730;var swf_height = 80;var config = '0xFFFFFF|0x2|0099FF|10|0xFFFFFF|0x0099FF|0x000000|6|3|1|_blank';var files = '/UploadFiles/UploadADPic/201706141527515191.png';var links = 'http://www.ahedu.gov.cn';var texts = '';document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="' + swf_width + '" height="' + swf_height + '">');document.write('<param name="movie" value="/images/advFocus.swf" />');document.write('<param name="quality" value="high" />');document.write('<param name="menu" value="false" />');document.write('<param name="wmode" value="opaque" />');document.write('<param name="FlashVars" value="bcastr_config=' + config + '&amp;bcastr_file=' + files + '&amp;bcastr_link=' + links + '&amp;bcastr_title=' + texts + '" />');document.write('<embed src="/images/advFocus.swf" wmode="opaque" FlashVars="bcastr_config=' + config + '&amp;bcastr_file=' + files + '&amp;bcastr_link=' + links + '&amp;bcastr_title=' + texts + '" menu="false" quality="high" width="' + swf_width + '" height="' + swf_height + '" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>'); </script>
+            </div>
+            <!--模块广告结束-->
+            <!--模块三开始-->
+            <div class="area left">
+                <h3><span><em>德育天地</em></span><a href='/Category_23/Index.aspx' target="_blank" title="更多"><img src="/Skin/OceanStar/images/more.gif" alt="更多" align="absmiddle" /></a></h3>
+                <ul>
+                    
+                        
+<li>
+  <span class="datetime">05-28</span>
+  <a href="/Item/2716.aspx" target="_blank">高考在即，高效学习方法get下</a>
+</li>
+<li>
+  <span class="datetime">05-28</span>
+  <a href="/Item/2715.aspx" target="_blank">应对高考紧张焦虑，可以这样做</a>
+</li>
+<li>
+  <span class="datetime">05-28</span>
+  <a href="/Item/2714.aspx" target="_blank">你好5.25，遇见更好的自己</a>
+</li>
+<li>
+  <span class="datetime">05-21</span>
+  <a href="/Item/2705.aspx" target="_blank">学习雷锋，拾金不昧——学雷锋活动系列报道（五）</a>
+</li>
+<li>
+  <span class="datetime">04-25</span>
+  <a href="/Item/2686.aspx" target="_blank">我校召开中考实验体育考试学生志愿者培训会</a>
+</li>
+<li>
+  <span class="datetime">04-20</span>
+  <a href="/Item/2681.aspx" target="_blank">我校举行2018年春季学期校内资助金发放仪式</a>
+</li>
+<li>
+  <span class="datetime">04-18</span>
+  <a href="/Item/2680.aspx" target="_blank">学习雷锋，拾金不昧——学雷锋活动系列报道（四）</a>
+</li>
+<li>
+  <span class="datetime">03-13</span>
+  <a href="/Item/2654.aspx" target="_blank">我校组织学生参加义务劳动——学雷锋活动系列报…</a>
+</li>
+                    
+                </ul>
+                <div class="underline_area">
+                </div>
+            </div>
+            <!--模块三结束-->
+            <!--模块四开始-->
+            <div class="area right">
+             <h3><span><em>教学督导</em></span><a href='/Category_32/Index.aspx' target="_blank" title="更多"><img src="/Skin/OceanStar/images/more.gif" alt="更多" align="absmiddle" /></a></h3>
+                <ul>
+                    
+                        
+<li>
+  <span class="datetime">05-24</span>
+  <a href="/Item/2712.aspx" target="_blank">我校召开教师演讲技能交流研讨会</a>
+</li>
+<li>
+  <span class="datetime">05-14</span>
+  <a href="/Item/2700.aspx" target="_blank">淮南一中2017年—2018学年第二学期 期中教学检…</a>
+</li>
+<li>
+  <span class="datetime">05-11</span>
+  <a href="/Item/2698.aspx" target="_blank">市本级挂牌督学陈自明赴淮南一中开展随访督导</a>
+</li>
+<li>
+  <span class="datetime">05-02</span>
+  <a href="/Item/2687.aspx" target="_blank">关于开展2017-2018学年度第二学期 期中教学检查…</a>
+</li>
+<li>
+  <span class="datetime">03-07</span>
+  <a href="/Item/2650.aspx" target="_blank">我校召开2018年春季学期教学工作会议</a>
+</li>
+<li>
+  <span class="datetime">03-07</span>
+  <a href="/Item/2645.aspx" target="_blank">淮南一中教学督导室2018年春季开学教学设计检查…</a>
+</li>
+<li>
+  <span class="datetime">11-28</span>
+  <a href="/Item/2575.aspx" target="_blank">2017-2018学年度第一学期期中教学检查情况通报</a>
+</li>
+<li>
+  <span class="datetime">05-19</span>
+  <a href="/Item/2490.aspx" target="_blank">淮南一中2016年—2017学年第二学期期中教学检查…</a>
+</li>
+                    
+                </ul>
+                <div class="underline_area">
+                </div                </div>
+            </div>
+            <!--模块四结束-->
+            <div class="clear">
+            </div>
+            <div class="area_ad mtop10">
+                     <script type="text/javascript">var swf_width = 780;var swf_height = 100;var config = '0xFFFFFF|0x2|0099FF|10|0xFFFFFF|0x0099FF|0x000000|6|3|1|_blank';var files = '/UploadFiles/UploadADPic/201805240905089569.png';var links = 'http://www.hnyz.com.cn/Category_78/Index.aspx';var texts = '';document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="' + swf_width + '" height="' + swf_height + '">');document.write('<param name="movie" value="/images/advFocus.swf" />');document.write('<param name="quality" value="high" />');document.write('<param name="menu" value="false" />');document.write('<param name="wmode" value="opaque" />');document.write('<param name="FlashVars" value="bcastr_config=' + config + '&amp;bcastr_file=' + files + '&amp;bcastr_link=' + links + '&amp;bcastr_title=' + texts + '" />');document.write('<embed src="/images/advFocus.swf" wmode="opaque" FlashVars="bcastr_config=' + config + '&amp;bcastr_file=' + files + '&amp;bcastr_link=' + links + '&amp;bcastr_title=' + texts + '" menu="false" quality="high" width="' + swf_width + '" height="' + swf_height + '" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>'); </script>
+            </div>
+            <!--模块五开始-->
+<div class="area left">
+                <h3><span><em>两学一做</em></span><a href='/Category_47/Index.aspx' target="_blank" title="更多"><img src="/Skin/OceanStar/images/more.gif" alt="更多" align="absmiddle" /></a></h3>
+                <ul>
+                    
+                        
+<li>
+  <span class="datetime">07-12</span>
+  <a href="/Item/2552.aspx" target="_blank">市教育局“两学一做”学习教育督导组莅临我校检…</a>
+</li>
+<li>
+  <span class="datetime">07-08</span>
+  <a href="/Item/2547.aspx" target="_blank">淮南一中召开“重规矩，我们怎么做”专题讨论会</a>
+</li>
+<li>
+  <span class="datetime">07-07</span>
+  <a href="/Item/2545.aspx" target="_blank">淮南一中第二党支部召开全体党员大会</a>
+</li>
+<li>
+  <span class="datetime">07-01</span>
+  <a href="/Item/2536.aspx" target="_blank">我校举行庆祝建党96周年演讲比赛</a>
+</li>
+<li>
+  <span class="datetime">06-21</span>
+  <a href="/Item/2521.aspx" target="_blank">运动随心  健康随行  全民健身  乐享健康      …</a>
+</li>
+<li>
+  <span class="datetime">06-18</span>
+  <a href="/Item/2520.aspx" target="_blank">淮南一中第三党支部羽毛球大赛</a>
+</li>
+<li>
+  <span class="datetime">05-24</span>
+  <a href="/Item/2489.aspx" target="_blank">我校参加市教育局基层党组织书记培训活动</a>
+</li>
+<li>
+  <span class="datetime">05-12</span>
+  <a href="/Item/2477.aspx" target="_blank">淮南一中第三党支部推进“两学一做”学习教育活动</a>
+</li>
+                    
+                </ul>
+                <div class="underline_area">
+                </div>
+            </div>
+            
+
+
+
+
+
+            <!--模块五结束-->
+            <!--模块六开始-->
+            <div class="area right">
+                <h3><span><em>国旗下演讲</em></span><a href='/Category_10/Index.aspx' target="_blank" title="更多"><img src="/Skin/OceanStar/images/more.gif" alt="更多" align="absmiddle" /></a></h3>
+                <ul>
+                    
+                        
+<li>
+  <span class="datetime">05-22</span>
+  <a href="/Item/2706.aspx" target="_blank">2017-2018年度第二学期第十三周国旗下演讲稿</a>
+</li>
+<li>
+  <span class="datetime">05-16</span>
+  <a href="/Item/2701.aspx" target="_blank">2017-2018年度第二学期第十二周国旗下演讲稿</a>
+</li>
+<li>
+  <span class="datetime">05-09</span>
+  <a href="/Item/2696.aspx" target="_blank">2017-2018年度第二学期第十一周国旗下演讲稿</a>
+</li>
+<li>
+  <span class="datetime">05-03</span>
+  <a href="/Item/2690.aspx" target="_blank">2017-2018年度第二学期第十周国旗下演讲稿</a>
+</li>
+<li>
+  <span class="datetime">04-25</span>
+  <a href="/Item/2685.aspx" target="_blank">2017-2018年度第二学期第九周国旗下演讲稿</a>
+</li>
+<li>
+  <span class="datetime">04-17</span>
+  <a href="/Item/2679.aspx" target="_blank">2017-2018年度第二学期第八周国旗下演讲稿</a>
+</li>
+<li>
+  <span class="datetime">04-11</span>
+  <a href="/Item/2674.aspx" target="_blank">2017-2018年度第二学期第七周国旗下演讲稿</a>
+</li>
+<li>
+  <span class="datetime">04-03</span>
+  <a href="/Item/2668.aspx" target="_blank">2017-2018年度第二学期第六周国旗下演讲稿</a>
+</li>
+                    
+                </ul>
+                <div class="underline_area">
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--模块六结束-->
+
+
+
+
+
+
+  <!--模块七开始-->
+<div class="area left">
+                <h3><span><em>招生专栏</em></span><a href='/Category_45/Index.aspx' target="_blank" title="更多"><img src="/Skin/OceanStar/images/more.gif" alt="更多" align="absmiddle" /></a></h3>
+                <ul>
+                    
+                        
+<li>
+  <span class="datetime">07-16</span>
+  <a href="/Item/2561.aspx" target="_blank">淮南一中2017年中招录取寿县考生名单</a>
+</li>
+<li>
+  <span class="datetime">07-14</span>
+  <a href="/Item/2560.aspx" target="_blank">
+    <span style="color:#e5030a;">2017年淮南一中录取名单及淮南市省级示范高中录…</span>
+  </a>
+</li>
+<li>
+  <span class="datetime">07-14</span>
+  <a href="/Item/2558.aspx" target="_blank">2017年淮南一中录取名单</a>
+</li>
+<li>
+  <span class="datetime">07-13</span>
+  <a href="/Item/2556.aspx" target="_blank">淮南一中2017级高一新生报到通知</a>
+</li>
+<li>
+  <span class="datetime">07-04</span>
+  <a href="/Item/2543.aspx" target="_blank">2017年淮南一中国际教育班预录取考生名单</a>
+</li>
+<li>
+  <span class="datetime">07-01</span>
+  <a href="/Item/2537.aspx" target="_blank">淮南一中2017级国际教育班招生面试通知</a>
+</li>
+<li>
+  <span class="datetime">05-31</span>
+  <a href="/Item/2499.aspx" target="_blank">淮南一中2017年高中国际教育班招生简章</a>
+</li>
+<li>
+  <span class="datetime">05-31</span>
+  <a href="/Item/2498.aspx" target="_blank">淮南一中2017年高中招生简章</a>
+</li>
+                    
+                </ul>
+                <div class="underline_area">
+                </div>
+            </div>
+            
+
+
+
+
+
+            <!--模块七结束-->
+            <!--模块八开始-->
+            <div class="area right">
+                <h3><span><em>校务公开</em></span><a href='/Category_60/Index.aspx' target="_blank" title="更多"><img src="/Skin/OceanStar/images/more.gif" alt="更多" align="absmiddle" /></a></h3>
+                <ul>
+                    
+                        
+<li>
+  <span class="datetime">03-07</span>
+  <a href="/Item/2651.aspx" target="_blank">关于表彰2017年度“优秀生活辅导员”的决定</a>
+</li>
+<li>
+  <span class="datetime">01-16</span>
+  <a href="/Item/2626.aspx" target="_blank">关于表彰2017—2018学年度第一学期“学生自我管…</a>
+</li>
+<li>
+  <span class="datetime">01-15</span>
+  <a href="/Item/2622.aspx" target="_blank">关于表彰2017—2018学年度第一学期“卫生工作先…</a>
+</li>
+<li>
+  <span class="datetime">01-15</span>
+  <a href="/Item/2620.aspx" target="_blank">关于表彰2017年度优秀共产党员的决定</a>
+</li>
+<li>
+  <span class="datetime">12-27</span>
+  <a href="/Item/2608.aspx" target="_blank">淮南一中2017年度班级文化建设检查评比 优胜班…</a>
+</li>
+<li>
+  <span class="datetime">11-29</span>
+  <a href="/Item/2570.aspx" target="_blank">淮南一中第30届科技艺术节各项比赛、评比 获奖…</a>
+</li>
+<li>
+  <span class="datetime">06-23</span>
+  <a href="/Item/2524.aspx" target="_blank">关于表彰2016—2017学年度第二学期“卫生工作先…</a>
+</li>
+<li>
+  <span class="datetime">04-06</span>
+  <a href="/Item/2425.aspx" target="_blank">关于表彰淮南一中第三届教师“三成杯”教学比赛…</a>
+</li>
+                    
+                </ul>
+                <div class="underline_area">
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--模块八结束-->
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+function TxtMarquee(marqueeBox, delaytime, direction, itemCell){
+if(delaytime == undefined)delaytime = 50;
+if(direction == undefined)direction = "up";
+if(itemCell == undefined)itemCell = "ul";
+var oMarquee = jQuery(marqueeBox);
+var oMarqueeCon = oMarquee.find(itemCell);
+var oMarqueeCopy = oMarqueeCon.clone(true).insertAfter(oMarqueeCon);
+var ScrollUp = function(){
+if(oMarqueeCopy[0].offsetHeight-oMarquee[0].scrollTop<=0){
+oMarquee[0].scrollTop = 0;
+}else{
+oMarquee[0].scrollTop++;
+}
+}
+var ScrollLeft = function(){
+if(oMarqueeCopy[0].offsetWidth-oMarquee[0].scrollLeft<=0){
+oMarquee[0].scrollLeft = 0;
+}else{
+oMarquee[0].scrollLeft++;
+}
+}
+switch(direction){
+case "left":
+var oScroll=setInterval(ScrollLeft, delaytime);
+oMarquee.hover(function(){
+clearInterval(oScroll);
+}, function(){
+oScroll=setInterval(ScrollLeft, delaytime);
+});
+break;
+case "up":
+default:
+var oScroll = setInterval(ScrollUp, delaytime);
+oMarquee.hover(function(){
+clearInterval(oScroll);
+}, function(){
+oScroll=setInterval(ScrollUp, delaytime);
+});
+}
+}
+
+jQuery(document).ready(function() {
+TxtMarquee("#ZENroll", 50, "left");
+});
+</script>
+<div class="picScroll"> 
+<div id="ZENroll">
+<div class="Rollcontent">
+        <ul id="pe100_通用带图片的信息列表" class="picList">
+                        <li><a href="/Item/1867.aspx" class="pe_u_thumb" target="_blank"><img src="/UploadFiles/2015/9/201509171125285232_S.jpg" alt="通用实验追光猎手" width="160" height="120"></a><span><a href="/Item/1867.aspx" target="_blank">通用实验追光猎手</a></span></li>
+<li><a href="/Item/1712.aspx" class="pe_u_thumb" target="_blank"><img src="/UploadFiles/2015/3/201503251802273934.jpg" alt="广播操汇演" width="160" height="120"></a><span><a href="/Item/1712.aspx" target="_blank">广播操汇演</a></span></li>
+<li><a href="/Item/1711.aspx" class="pe_u_thumb" target="_blank"><img src="/UploadFiles/2015/3/201503251801423966.jpg" alt="校园生活" width="160" height="120"></a><span><a href="/Item/1711.aspx" target="_blank">校园生活</a></span></li>
+<li><a href="/Item/1710.aspx" class="pe_u_thumb" target="_blank"><img src="/UploadFiles/2015/3/201503251801160300.jpg" alt="创意活动" width="160" height="120"></a><span><a href="/Item/1710.aspx" target="_blank">创意活动</a></span></li>
+<li><a href="/Item/1709.aspx" class="pe_u_thumb" target="_blank"><img src="/UploadFiles/2015/3/201503251800421036.jpg" alt="领导访问" width="160" height="120"></a><span><a href="/Item/1709.aspx" target="_blank">领导访问</a></span></li>
+<li><a href="/Item/1708.aspx" class="pe_u_thumb" target="_blank"><img src="/UploadFiles/2015/3/201503251754136385.JPG" alt="淮南一中国际部美国夏令营" width="160" height="120"></a><span><a href="/Item/1708.aspx" target="_blank">淮南一中国际部…</a></span></li>
+<li><a href="/Item/1707.aspx" class="pe_u_thumb" target="_blank"><img src="/UploadFiles/2015/3/201503251752052966.jpg" alt="高考状元" width="160" height="120"></a><span><a href="/Item/1707.aspx" target="_blank">高考状元</a></span></li>
+                    </ul>
+</div>
+</div>
+<div class="clearbox"> </div>
+ </div>
+            <div class="pic_article mtop10">
+                        </div>
+
+            </div>
+              <!--内容块结束-->
+        <div class="clear">
+        </div>
+    </div>
+
+
+
+    <!--网站中部定义二结束-->
+    <!--网站中部定义四开始-->
+        <!--网站中部定义四结束-->
+        <!--网站底部开始-->
+<div id="footer">
+    <div class="wrapper">
+        <div class="service">
+            <a href="javascript:void(0)" title="联系我们">联系我们</a> | <a href='/Category_7/Index.aspx' target="_blank" title="网站留言">网站留言</a> | <a href='/Category_6/Index.aspx' target="_blank" title="友情链接">友情链接</a> | <a href='/Category_8/Index.aspx' target="_blank" title="版权声明">版权声明</a> | <a href="javascript:void(0)" title="关于我们">关于我们</a> | <a href="/Admin/Index.aspx" target="_blank" title="管理登录">管理登录</a>
+        </div>
+        <div class="clear">
+   <center>安徽省淮南第一中学 The No.1 Middle School Ah HuaiNan　05546662619 皖ICP备08000027号 皖公网安备 34040302000177号</center>
+        </div>
+        <div class="copyright">
+            
+        </div>
+    </div>
+</div>
+<!--网站底部结束-->
+</body>
+</html>

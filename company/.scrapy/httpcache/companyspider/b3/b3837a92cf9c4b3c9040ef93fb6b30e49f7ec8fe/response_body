@@ -1,0 +1,811 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>福建水利电力职业技术学院-学院首页</title>
+<script type="text/JavaScript">
+	var baseUrl;
+	function writeBase() {
+		var theUrl = location.href;
+		baseUrl = theUrl;
+		var siteStr = "/www2/www.fjsdxy.com";
+ 		var indexNum = theUrl.indexOf(siteStr);
+	 	if (indexNum > 0) { // 如果从后台预览进入
+	 	baseUrl = theUrl.substring(0, indexNum + siteStr.length) + "/"; // 最后一个斜杠很重要
+		 }else {
+	 	indexNum = theUrl.indexOf("/", 7);  	// 7 = "http://".length
+	 	baseUrl = theUrl.substring(0, indexNum) + "/"; // 最后一个斜杠很重要
+	 }
+ 		document.writeln("<base href=\"" + baseUrl + "\"></base>");
+	}
+ 	writeBase();
+</script>
+<link href="res/css/shuili.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="res/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="res/js/koala.min.1.5.js"></script>
+<script type="text/javascript" src="res/js/mosaic.1.0.1.js"></script>
+<script src="res/js/public.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="res/js/ss.js"></script>
+<script language="javascript" type="text/javascript" src="res/js/constant.js"></script>
+<script type="text/javascript">  
+var browser={  
+    versions:function(){   
+           var u = navigator.userAgent, app = navigator.appVersion;   
+           return {//移动终端浏览器版本信息   
+                trident: u.indexOf('Trident') > -1, //IE内核  
+                presto: u.indexOf('Presto') > -1, //opera内核  
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核  
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核  
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端  
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端  
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器  
+                iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器  
+                iPad: u.indexOf('iPad') > -1, //是否iPad
+		iPod: u.indexOf('iPod') > -1, //是否iPod  
+                webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部  
+                weixin: u.indexOf('MicroMessenger') > -1, //是否微信   
+                qq: u.match(/\sQQ/i) == " qq" //是否QQ  
+            };  
+         }(),  
+         language:(navigator.browserLanguage || navigator.language).toLowerCase()  
+}   
+  
+  if(browser.versions.mobile || browser.versions.ios || browser.versions.android ||   
+    browser.versions.iPhone){        
+        window.location = "http://www.fjsdxy.com/wap";      
+  }
+</script> 
+</head>
+
+<body>
+<script src="res/style/js/jquery-lasted.min.js"></script>
+<script src="res/style/js/swfobject.js"></script>
+
+<!--top begin-->
+<div class="Top">
+  <p><img src="res/images/logo.png" /></p>
+
+ <dl>
+   
+				<dt><input name="title" class="text1" id="keyword" type="text"value="请输入关键字" onfocus="if( value=='请输入关键字'){value=''}" onblur="if(value==''){value='请输入关键字'}" /></dt>
+				<dd><a href="javascript:void(0);" id="submit" onclick="mySearch();" >搜索</a></dd>
+				<script language='JavaScript' type="text/javascript">
+             document.onkeydown=function(){
+			     if(event.keyCode==13){
+			     	if(document.activeElement.id=="keyword"){
+			         	mySearch();  
+			         }
+			      }
+			  };
+        	String.prototype.trim = function(){
+				    return this.replace(/(^\s*)|(\s*$)/g, "");    
+				  }  
+			function mySearch(){
+				var key =document.getElementById("keyword").value.trim();
+				if(key.length <=0){
+					alert("关键字必填");
+				}else{
+					/* var url = appPath + "lwgl/common/result!allSearch.action?keyword="+key+"&lwSiteId=402881e65964160a0159641b08770002"; */
+					var url = appPath + "lwgl/common/result!allSearch.action?keyword="+key; 
+					url = encodeURI(encodeURI(url));
+					window.open(url);
+				}
+			}
+	 	</script>
+
+	 </form>
+  </dl>
+
+</div>
+<div class="Menu">
+
+	 <div class="One Dq"">
+    <div class="Block">
+		<a href="index.html" target="_blank" class="mosaic-overlay">学院首页</a>
+        <p><a href="index.html" target="_blank">学院首页</a></p>
+    </div>
+  </div>
+	 <div class="One "">
+    <div class="Block">
+		<a href="xygk/index.html" target="_blank" class="mosaic-overlay">学院概况</a>
+        <p><a href="xygk/index.html" target="_blank">学院概况</a></p>
+    </div>
+  </div>
+	 <div class="One "">
+    <div class="Block">
+		<a href="jgsz/index.html" target="_blank" class="mosaic-overlay">机构设置</a>
+        <p><a href="jgsz/index.html" target="_blank">机构设置</a></p>
+    </div>
+  </div>
+	 <div class="One "">
+    <div class="Block">
+      <a href="javascript:void(0);"  class="mosaic-overlay">招生就业</a>
+      <p><a href="javascript:void(0);" >招生就业</a></p>
+      		<div class="Two"><ul>
+      		<li><a href="http://www.fjsdxy.com/zs"  target="_blank">招生信息</a></li>
+      		<li><a href="http://www.fjsdxy.com/jyxx"  target="_blank">就创信息</a></li><li>
+      		</ul></div>
+    </div>
+  </div>
+	 <div class="One "">
+    <div class="Block">
+		<a href="jyjx/index.html" target="_blank" class="mosaic-overlay">教育教学</a>
+        <p><a href="jyjx/index.html" target="_blank">教育教学</a></p>
+    </div>
+  </div>
+	 <div class="One "">
+    <div class="Block">
+      <a href="http://www.fjsdxy.com/kyc/" target="_blank" class="mosaic-overlay">科研服务</a>
+      <p><a href="http://www.fjsdxy.com/kyc/" target="_blank">科研服务</a></p>
+    </div>
+  </div>
+	 <div class="One "">
+    <div class="Block">
+		<a href="jxjy/index.html" target="_blank" class="mosaic-overlay">继续教育</a>
+        <p><a href="jxjy/index.html" target="_blank">继续教育</a></p>
+    </div>
+  </div>
+	 <div class="One "">
+    <div class="Block">
+      <a href="http://www.fjsdxy.com/xyw/" target="_blank" class="mosaic-overlay">校友天地</a>
+      <p><a href="http://www.fjsdxy.com/xyw/" target="_blank">校友天地</a></p>
+    </div>
+  </div>
+	 <div class="One "">
+    <div class="Block">
+      	<a href="ldxx/index.html" target="_blank" class="mosaic-overlay" style="left:-40px;">领导信箱</a>
+        <p><a href="ldxx/index.html" target="_blank">领导信箱</a></p>
+    </div>
+  </div>
+    
+</div>
+<!--top end-->
+
+<div class="Clear"></div>
+
+
+<div class="gund">
+<div class="tit-mp">学院名片 : </div>
+<div class="nnr">
+<div id="demo" style="OVERFLOW: hidden; WIDTH: 840px; height: 30px;align: left">
+  <table cellspacing="0" cellpadding="0" border="0" align="center">
+    <tbody>
+      <tr>
+        <td id="marquePic1" valign="top">
+ <table width="1000" height="30" cellspacing="0" cellpadding="0" border="0">
+	<tbody><tr>
+    <td nowrap="nowrap">　
+            <img src="res/images/dott.jpg"> <font class="cssTitleColor" style="width:540px;height:30px;"><b>福建省示范性现代职业院校2018年重点建设院校</b></font>
+            <img src="res/images/dott.jpg"> <font class="cssTitleColor" style="width:540px;height:30px;"><b>全国“职业院校数字校园建设实验校”</b></font>
+            <img src="res/images/dott.jpg"> <font class="cssTitleColor" style="width:540px;height:30px;"><b>福建省职业教育先进单位</b></font>
+            <img src="res/images/dott.jpg"> <font class="cssTitleColor" style="width:540px;height:30px;"><b>全国水利系统先进单位</b></font>
+            <img src="res/images/dott.jpg"> <font class="cssTitleColor" style="width:540px;height:30px;"><b>福建省首批公办示范性高等职业院校</b></font>
+            <img src="res/images/dott.jpg"> <font class="cssTitleColor" style="width:540px;height:30px;"><b>福建省首届文明学校标兵</b></font>
+            <img src="res/images/dott.jpg"> <font class="cssTitleColor" style="width:540px;height:30px;"><b>全国水利行业技能人才培育突出贡献奖</b></font>
+            <img src="res/images/dott.jpg"> <font class="cssTitleColor" style="width:540px;height:30px;"><b>福建省就业评估优秀高校</b></font>
+            <img src="res/images/dott.jpg"> <font class="cssTitleColor" style="width:540px;height:30px;"><b>福建省平安校园</b></font>
+  </tr>
+</tbody></table>        
+        </td>
+        <td id="marquePic2" valign="top">
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  <script type="text/javascript"> 
+var speed=30
+marquePic2.innerHTML=marquePic1.innerHTML 
+function Marquee(){ 
+if(demo.scrollLeft>=marquePic1.scrollWidth){ 
+demo.scrollLeft=0 
+}else{ 
+demo.scrollLeft++ 
+}} 
+var MyMar=setInterval(Marquee,speed) 
+demo.onmouseover=function() {clearInterval(MyMar)} 
+demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)} 
+</script>
+</div></div>
+
+<!--幻灯片开始-->
+<div class="Hdp">
+<div id="fsD1" class="focus">  
+    <div id="D1pic1" class="fPic">
+		<div class="fcon">
+            <a href="javascript:void(0);"><img src="upload/AttachImage/20180521153114LcDp.jpg"></a>
+        </div>
+		<div class="fcon">
+            <a href="javascript:void(0);"><img src="upload/AttachImage/20180520093626W8jO.jpg"></a>
+        </div>
+		<div class="fcon">
+            <a href="javascript:void(0);"><img src="upload/AttachImage/201804231741314IHn.jpg"></a>
+        </div>
+		<div class="fcon">
+            <a href="javascript:void(0);"><img src="upload/AttachImage/201805151054260Voq.jpg"></a>
+        </div>
+		<div class="fcon">
+            <a href="javascript:void(0);"><img src="upload/AttachImage/20180508100946zv3l.jpg"></a>
+        </div>
+    </div>
+    <div class="fbg">  
+    <div class="D1fBt" id="D1fBt">  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>1</i></a>  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a>  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>3</i></a>  
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a>   
+	  <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>5</i></a>
+    </div>  
+    </div>     
+</div>  
+<script type="text/javascript">
+	Qfast.add('widgets', { path: "res/js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+	Qfast(false, 'widgets', function () {
+		K.tabs({
+			id: 'fsD1',   //焦点图包裹id  
+			conId: "D1pic1",  //** 大图域包裹id  
+			tabId:"D1fBt",  
+			tabTn:"a",
+			conCn: '.fcon', //** 大图域配置class       
+			auto: 1,   //自动播放 1或0
+			effect: 'fade',   //效果配置
+			eType: 'click', //** 鼠标事件
+			pageBt:true,//是否有按钮切换页码
+			bns: ['.prev', '.next'],//** 前后按钮配置class                          
+			interval: 3000  //** 停顿时间  
+		}) 
+	})  
+</script> 
+</div>
+<!--幻灯片结束-->
+<div class="Clear"></div>
+<!--新闻开始-->
+<div class="Box">
+  <div class="News">
+    <div class="Ti">
+      <ul>
+	  <!--
+        <li class="Out" id="Sl1" onclick=Sl(1)><a href="javascript:;">学院要闻</a></li>
+        <li class="Over" id="Sl2" onclick=Sl(2)><a href="javascript:;">校园动态</a></li>
+        <li class="Over" id="Sl3" onclick=Sl(3)><a href="javascript:;">信息公开</a></li>
+        <li class="Over" id="Sl4" onclick=Sl(4)><a href="javascript:;">公告通知</a></li>
+        <li class="Over" id="Sl5" onclick=Sl(5)><a href="javascript:;">媒体水院</a></li>
+		-->
+		 <li class="Out" id="Sl1" onmouseover=StronClickProGa(1)><a href="javascript:;">学院要闻</a></li>
+        <li class="Over" id="Sl2" onmouseover=StronClickProGa(2)><a href="javascript:;">校园动态</a></li>
+        <li class="Over" id="Sl3" onmouseover=StronClickProGa(3)><a href="javascript:;">信息公开</a></li>
+        <li class="Over" id="Sl4" onmouseover=StronClickProGa(4)><a href="javascript:;">公告通知</a></li>
+        <li class="Over" id="Sl5" onmouseover=StronClickProGa(5)><a href="javascript:;">媒体水院</a></li>
+
+      </ul>
+      <span><a href="xwsd/index.html" target="_blank">更多>></a></span>
+    </div>
+    <div class="Mc">
+      <div class="Left">
+<div id="fsD2" class="picFocus">  
+    <div id="D2pic1" class="bd">  
+    	<ul>
+        <li class="fcon">
+            <a target="_blank" href="xyyw/201805/28165002cpkw.html"><img src="upload/20180528164911179001.png"></a>
+            <p><a href="xyyw/201805/28165002cpkw.html" target="_blank">我院喜获2018年全国职业院校...</a></p>
+        </li> 
+        <li class="fcon">
+            <a target="_blank" href="xyyw/201805/27164300kso0.html"><img src="upload/image/20180527163955884.png"></a>
+            <p><a href="xyyw/201805/27164300kso0.html" target="_blank">学院举办2018年校园励志之星...</a></p>
+        </li> 
+        <li class="fcon">
+            <a target="_blank" href="xyyw/201805/271621391q9m.html"><img src="upload/image/20180527162014870.jpg"></a>
+            <p><a href="xyyw/201805/271621391q9m.html" target="_blank">学院举行“宁化思政社会实践基地...</a></p>
+        </li> 
+         
+        </ul>
+        <span class="prev"></span>   
+        <span class="next"></span>  
+    </div>
+    <div class="hd">  
+    <ul>
+        <li><a href="javascript:void(0)" hidefocus="true" target="_self"><img src="upload/20180528164911179001.png"  /></a></li> 
+        <li><a href="javascript:void(0)" hidefocus="true" target="_self"><img src="upload/image/20180527163955884.png"  /></a></li> 
+        <li><a href="javascript:void(0)" hidefocus="true" target="_self"><img src="upload/image/20180527162014870.jpg"  /></a></li> 
+    </ul>  
+    </div>  
+      
+</div>
+
+<script type="text/javascript">jQuery(".picFocus").slide({ mainCell:".bd ul",effect:"left",autoPlay:true });</script>       
+      </div>
+      <div class="Right" id="SlMc1">
+        <ul>
+            <li>
+			<a href="xyyw/201805/28165002cpkw.html" title="我院喜获2018年全国职业院校技能大赛高职组“建筑工程识图”竞赛二等奖" target="_blank">
+			<font color=red><b>			我院喜获2018年全国职业院校技能大赛高职组“...
+			</b></font>
+		   </a>
+                   <span>
+		   2018-05-28
+		 </span></li>  
+            <li>
+			<a href="xyyw/201805/27164300kso0.html" title="学院举办2018年校园励志之星“幸福是奋斗出来的”评选活动" target="_blank">
+			学院举办2018年校园励志之星“幸福是奋斗出来...
+		   </a>
+                   <span>
+		   2018-05-26
+		 </span></li>  
+            <li>
+			<a href="xyyw/201805/271621391q9m.html" title="学院举行“宁化思政社会实践基地”揭牌暨首次思政社会实践活动周启动仪式" target="_blank">
+			学院举行“宁化思政社会实践基地”揭牌暨首次思政...
+		   </a>
+                   <span>
+		   2018-05-26
+		 </span></li>  
+            <li>
+			<a href="xyyw/201805/25102516p23b.html" title="省教育纪工委审查调查安全工作落实情况检查组来校开展专项检查" target="_blank">
+			省教育纪工委审查调查安全工作落实情况检查组来校...
+		   </a>
+                   <span>
+		   2018-05-25
+		 </span></li>  
+            <li>
+			<a href="xyyw/201805/2411180322s7.html" title="学院院长到图书馆和现代教育技术中心调研指导" target="_blank">
+			学院院长到图书馆和现代教育技术中心调研指导
+		   </a>
+                   <span>
+		   2018-05-23
+		 </span></li>  
+            <li>
+			<a href="xyyw/201805/22153942k5zw.html" title="院长荐书，助推学院书香校园建设" target="_blank">
+			院长荐书，助推学院书香校园建设
+		   </a>
+                   <span>
+		   2018-05-22
+		 </span></li>  
+            <li>
+			<a href="xyyw/201805/2209092695w0.html" title="我院承办全国电力教指委水力发电专委会2018年工作会议" target="_blank">
+			我院承办全国电力教指委水力发电专委会2018年...
+		   </a>
+                   <span>
+		   2018-05-22
+		 </span></li>  
+            <li>
+			<a href="xyyw/201805/220817156jqh.html" title="三明市科技局领导到我院调研指导科研工作" target="_blank">
+			三明市科技局领导到我院调研指导科研工作
+		   </a>
+                   <span>
+		   2018-05-22
+		 </span></li>  
+            <li>
+			<a href="xyyw/201805/21111536sgbu.html" title="我院成功举办第十一届创新创业大赛决赛" target="_blank">
+			我院成功举办第十一届创新创业大赛决赛
+		   </a>
+                   <span>
+		   2018-05-18
+		 </span></li>  
+        </ul>
+      </div>
+      <div class="Right" id="SlMc2" style="display:none">
+        <ul>        
+            <li>
+			<a href="xwsd/201805/282344352llw.html" title="学院开展职业教育活动周之高职专业教育宣讲活动" target="_blank">
+			学院开展职业教育活动周之高职专业教育宣讲活动
+		   </a>
+		 <span>
+		   2018-05-28
+		 </span>
+		</li>  
+            <li>
+			<a href="xwsd/201805/23175654w4ek.html" title="马克思主义学院召开形势与政策报告会" target="_blank">
+			马克思主义学院召开形势与政策报告会
+		   </a>
+		 <span>
+		   2018-05-23
+		 </span>
+		</li>  
+            <li>
+			<a href="xwsd/201805/23102344o9ld.html" title="信息工程系开展“微信小程序开发”技术培训" target="_blank">
+			信息工程系开展“微信小程序开发”技术培训
+		   </a>
+		 <span>
+		   2018-05-23
+		 </span>
+		</li>  
+            <li>
+			<a href="xwsd/201805/21145406n0vr.html" title="信息工程系举办《培育创新文化，厚植创业沃土》创新创业讲座" target="_blank">
+			信息工程系举办《培育创新文化，厚植创业沃土》创...
+		   </a>
+		 <span>
+		   2018-05-21
+		 </span>
+		</li>  
+            <li>
+			<a href="xwsd/201805/20224440zo91.html" title="学院关工委举办《如何看待中美贸易战》知识讲座 " target="_blank">
+			学院关工委举办《如何看待中美贸易战》知识讲座 
+		   </a>
+		 <span>
+		   2018-05-19
+		 </span>
+		</li>  
+            <li>
+			<a href="xwsd/201805/202256361spu.html" title="我院志愿者助创永安市文明城市建设" target="_blank">
+			我院志愿者助创永安市文明城市建设
+		   </a>
+		 <span>
+		   2018-05-18
+		 </span>
+		</li>  
+            <li>
+			<a href="xwsd/201805/20225346fo4q.html" title="我院承办三明市大学生职业技能竞赛建筑CAD项目" target="_blank">
+			我院承办三明市大学生职业技能竞赛建筑CAD项目
+		   </a>
+		 <span>
+		   2018-05-17
+		 </span>
+		</li>  
+            <li>
+			<a href="xwsd/201805/202210524zit.html" title="建筑工程系各支部开展主题党日活动" target="_blank">
+			建筑工程系各支部开展主题党日活动
+		   </a>
+		 <span>
+		   2018-05-17
+		 </span>
+		</li>  
+            <li>
+			<a href="xwsd/201805/20222230kdwp.html" title="我院到福建信息职业技术学院交流IEET认证工作" target="_blank">
+			我院到福建信息职业技术学院交流IEET认证工作
+		   </a>
+		 <span>
+		   2018-05-16
+		 </span>
+		</li>  
+        </ul>
+      </div>
+      <div class="Right" id="SlMc3" style="display:none">
+        <ul>
+            <li>
+			<a href="xxgk/201805/281628111lc3.html" title="福建水利电力职业技术学院医务室药品货物类采购项目结果公告" target="_blank">
+			福建水利电力职业技术学院医务室药品货物类采购项...
+		   </a>
+			<span>
+		   2018-05-28
+		 </span>
+			</li>  
+            <li>
+			<a href="xxgk/201805/28103348rwbp.html" title="福建高考信息平台刊登广告项目邀请招标公告（二次招标）" target="_blank">
+			福建高考信息平台刊登广告项目邀请招标公告（二次...
+		   </a>
+			<span>
+		   2018-05-28
+		 </span>
+			</li>  
+            <li>
+			<a href="xxgk/201805/25171718qhme.html" title="福建高考信息平台刊登广告邀请招标项目流标公告" target="_blank">
+			福建高考信息平台刊登广告邀请招标项目流标公告
+		   </a>
+			<span>
+		   2018-05-25
+		 </span>
+			</li>  
+            <li>
+			<a href="xxgk/201805/23144407u4v1.html" title="学院1#、3#楼学生公寓架空层改造工程（图书馆读者沙龙活动中心）工程类采购项目采购公告" target="_blank">
+			学院1#、3#楼学生公寓架空层改造工程（图书馆...
+		   </a>
+			<span>
+		   2018-05-23
+		 </span>
+			</li>  
+            <li>
+			<a href="xxgk/201805/2208234013s2.html" title="学院移动机器人采购项目中标公告" target="_blank">
+			学院移动机器人采购项目中标公告
+		   </a>
+			<span>
+		   2018-05-22
+		 </span>
+			</li>  
+            <li>
+			<a href="xxgk/201805/181807172qn0.html" title="学院悬浮式拼装运动地板建设工程（后勤处）工程类采购项目结果公告" target="_blank">
+			学院悬浮式拼装运动地板建设工程（后勤处）工程类...
+		   </a>
+			<span>
+		   2018-05-18
+		 </span>
+			</li>  
+            <li>
+			<a href="xxgk/201805/18150448xh5u.html" title="福建高考信息平台刊登广告项目邀请招标公告" target="_blank">
+			福建高考信息平台刊登广告项目邀请招标公告
+		   </a>
+			<span>
+		   2018-05-18
+		 </span>
+			</li>  
+            <li>
+			<a href="xxgk/201805/17150740ev4d.html" title="2018年批复预算" target="_blank">
+			2018年批复预算
+		   </a>
+			<span>
+		   2018-05-17
+		 </span>
+			</li>  
+            <li>
+			<a href="xxgk/201805/14162805hta6.html" title="移动机器人采购项目邀请招标公告" target="_blank">
+			移动机器人采购项目邀请招标公告
+		   </a>
+			<span>
+		   2018-05-14
+		 </span>
+			</li>  
+        </ul>
+      </div>
+      <div class="Right" id="SlMc4" style="display:none">
+        <ul>
+            <li>
+			<a href="ggtz/201805/04112450ao0f.html" title="福建水利电力职业技术学院公开招聘非在编辅导员拟聘人选公示" target="_blank">
+			福建水利电力职业技术学院公开招聘非在编辅导员拟...
+		   </a>
+			<span>
+		   2018-05-04
+		 </span>
+		</li>  
+            <li>
+			<a href="ggtz/201804/041446332ynp.html" title="福建水利电力职业技术学院2018年公开招聘非在编辅导员考试公告" target="_blank">
+			福建水利电力职业技术学院2018年公开招聘非在...
+		   </a>
+			<span>
+		   2018-04-04
+		 </span>
+		</li>  
+            <li>
+			<a href="ggtz/201803/221706411nho.html" title="关于组织开展2018年春季职业资格鉴定的通知" target="_blank">
+			关于组织开展2018年春季职业资格鉴定的通知
+		   </a>
+			<span>
+		   2018-03-22
+		 </span>
+		</li>  
+            <li>
+			<a href="ggtz/201803/04081848myzg.html" title="福建水利电力职业技术学院公开招聘非在编辅导员方案" target="_blank">
+			福建水利电力职业技术学院公开招聘非在编辅导员方...
+		   </a>
+			<span>
+		   2018-03-04
+		 </span>
+		</li>  
+            <li>
+			<a href="ggtz/201801/12171328r2mm.html" title="学院公开招聘非在编工作人员拟聘人选公示" target="_blank">
+			学院公开招聘非在编工作人员拟聘人选公示
+		   </a>
+			<span>
+		   2018-01-12
+		 </span>
+		</li>  
+            <li>
+			<a href="ggtz/201712/08164428sllk.html" title="福建水利电力职业技术学院公开招聘非在编工作人员方案" target="_blank">
+			福建水利电力职业技术学院公开招聘非在编工作人员...
+		   </a>
+			<span>
+		   2017-12-08
+		 </span>
+		</li>  
+            <li>
+			<a href="ggtz/201712/08151652kza6.html" title="2017年福建水利电力职业技术学院公开招聘工作人员拟聘人选公示" target="_blank">
+			2017年福建水利电力职业技术学院公开招聘工作...
+		   </a>
+			<span>
+		   2017-12-06
+		 </span>
+		</li>  
+            <li>
+			<a href="ggtz/201710/09203833xlwe.html" title="学院2017年公开招聘考试试讲、面试工作安排" target="_blank">
+			学院2017年公开招聘考试试讲、面试工作安排
+		   </a>
+			<span>
+		   2017-10-09
+		 </span>
+		</li>  
+            <li>
+			<a href="ggtz/201709/201726552adi.html" title="福建省水利电力职业技术学院2017年公开招聘工作人员考试笔试成绩查询" target="_blank">
+			福建省水利电力职业技术学院2017年公开招聘工...
+		   </a>
+			<span>
+		   2017-09-20
+		 </span>
+		</li>  
+        </ul>
+      </div>
+      <div class="Right" id="SlMc5" style="display:none">
+        <ul>
+            <li>
+			<a href="mtsy/201805/24212704ggus.html" title="【福建省教育厅】福建水院举办青年教职工思政素质大比武" target="_blank">
+			【福建省教育厅】福建水院举办青年教职工思政素质...
+		   </a>
+		<span>
+		   2018-05-22
+		 </span>
+</li>  
+            <li>
+			<a href="mtsy/201805/09164906gb4i.html" title="【福建省教育厅】福建水院慰问省首届“最美学生”姚为君烈士家属" target="_blank">
+			【福建省教育厅】福建水院慰问省首届“最美学生”...
+		   </a>
+		<span>
+		   2018-05-09
+		 </span>
+</li>  
+            <li>
+			<a href="mtsy/201805/09164600w1tc.html" title="【福建省教育厅】福建水院“2018年职业教育活动周”启动" target="_blank">
+			【福建省教育厅】福建水院“2018年职业教育活...
+		   </a>
+		<span>
+		   2018-05-08
+		 </span>
+</li>  
+            <li>
+			<a href="mtsy/201805/071639094ri1.html" title="【福建省教育厅】福建水院举行“五四”表彰暨星级团支部创建评选大会" target="_blank">
+			【福建省教育厅】福建水院举行“五四”表彰暨星级...
+		   </a>
+		<span>
+		   2018-05-01
+		 </span>
+</li>  
+            <li>
+			<a href="mtsy/201804/28223226djrw.html" title="【福建省教育厅】福建水院首批现代学徒制学生即将走上工作岗位" target="_blank">
+			【福建省教育厅】福建水院首批现代学徒制学生即将...
+		   </a>
+		<span>
+		   2018-04-27
+		 </span>
+</li>  
+            <li>
+			<a href="mtsy/201804/28223001gnq7.html" title="【福建省教育厅】福建水院八位老师获得AOPA无人机驾驶员执照" target="_blank">
+			【福建省教育厅】福建水院八位老师获得AOPA无...
+		   </a>
+		<span>
+		   2018-04-26
+		 </span>
+</li>  
+            <li>
+			<a href="mtsy/201804/28222728biwn.html" title="【福建省教育厅】福建体职院领导带队赴福建水院考察学习" target="_blank">
+			【福建省教育厅】福建体职院领导带队赴福建水院考...
+		   </a>
+		<span>
+		   2018-04-25
+		 </span>
+</li>  
+            <li>
+			<a href="mtsy/201804/28222250mx64.html" title="【福建省教育厅】福建水院“闽王战鼓队”走进畲乡文化节" target="_blank">
+			【福建省教育厅】福建水院“闽王战鼓队”走进畲乡...
+		   </a>
+		<span>
+		   2018-04-22
+		 </span>
+</li>  
+            <li>
+			<a href="mtsy/201804/28004349ica5.html" title="【福建省教育厅】福建水院与宁夏建院“闽宁筑梦班”正式开班" target="_blank">
+			【福建省教育厅】福建水院与宁夏建院“闽宁筑梦班...
+		   </a>
+		<span>
+		   2018-04-11
+		 </span>
+</li>  
+        </ul>
+      </div>
+	  <script type="text/javascript">
+	function StronClickProGa(sid)
+	{
+		for (var i=1;i<6;i++)
+		{
+			if(parseInt(sid)==parseInt(i))
+			{
+				document.getElementById("SlMc"+i).style.display="block";
+				document.getElementById("Sl"+i).className="Out";
+			}
+			else
+			{
+				document.getElementById("SlMc"+i).style.display="none";
+				document.getElementById("Sl"+i).className="Over";
+			}
+		}
+	}
+</script> 
+    </div>
+  </div>
+  <!--快速通道-->
+  <div class="Kstd">
+    <h2>快速通道</h2>
+    <ul>
+      
+      <li>
+        <p class="A"><a href="http://i.fjsdxy.com/portal/index" target="_blank"></a></p>
+        <span><a href="http://i.fjsdxy.com/portal/index" target="_blank">信息门户</a></span>
+      </li>
+      <li>
+        <p class="B"><a href="http://10.120.0.161" target="_blank"></a></p>
+        <span><a href="http://10.120.0.161" target="_blank">教务管理</a></span>
+      </li>
+      <li>
+        <p class="F"><a href="http://10.120.0.10" target="_blank"></a></p>
+        <span><a href="http://10.120.0.10" target="_blank">OA办公</a></span>
+      </li>
+      <li>
+        <p class="E"><a href="http://www.fjsdxy.com/lib" target="_blank"></a></p>
+        <span><a href="http://www.fjsdxy.com/lib" target="_blank">图书资源</a></span>
+      </li>
+      <li>
+        <p class="G"><a href="http://www.fjsdxy.com:2089/edumis/DGSX/DGSXLogin.aspx" target="_blank"></a></p>
+        <span><a href="http://www.fjsdxy.com:2089/edumis/DGSX/DGSXLogin.aspx" target="_blank">顶岗实习</a></span>
+      </li>
+      <li>
+        <p class="H"><a href="http://10.120.0.30/xlwz/" target="_blank"></a></p>
+        <span><a href="http://10.120.0.30/xlwz/" target="_blank">心理咨询</a></span>
+      </li>
+      <li>
+        <p class="D"><a href="http://www.yiban.cn/school/index/id/5376746" target="_blank"></a></p>
+        <span><a href="http://www.yiban.cn/school/index/id/5376746" target="_blank">易 班 网</a></span>
+      </li>
+      <li>
+        <p class="C"><a href="http://www.fjsdxy.com/xwzy/index.html" target="_blank"></a></p>
+        <span><a href="http://www.fjsdxy.com/xwzy/index.html" target="_blank">教学资源</a></span>
+      </li>
+      
+      <li>
+        <p class="I"><a href="http://10.120.0.50/edumis/login.aspx" target="_blank"></a></p>
+        <span><a href="http://10.120.0.50/edumis/login.aspx" target="_blank">教育信息</a></span>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--新闻结束-->
+<div class="Clear"></div>
+<!--专题开始-->
+<div class="Zt">
+  <div class="A">
+    <h2><img src="res/images/Zt.jpg" /></h2>
+  <div class="SyUl">
+    <ul>
+      <li><a href="http://www.fjsdxy.com/dgb/sjd/index.html" target="_blank"><img src="res/images/Temporary/19d.jpg" /></a></li>
+  <li><a href="http://lxyz.12371.cn/" target="_blank"><img src="res/images/Temporary/10.jpg" /></a></li>
+      <li><a href="http://www.fjsdxy.com/sfb" target="_blank"><img src="res/images/Temporary/sfx.jpg" /></a></li>
+ <li><a href="http://www.fjsdxy.com/dwgz/sjjx/" target="_blank"><img src="res/images/Temporary/xcsp.jpg" /></a></li>
+ <!--      <li><a href="http://10.120.0.30:83/" target="_blank"><img src="res/images/Temporary/8.jpg" /></a></li>  -->
+      <li><a href="http://720yun.com/t/44djkptwOw9?from=timeline&pano_id=3847047" target="_blank"><img src="res/images/Temporary/3d.jpg" /></a></li>
+    
+     
+  <li><a href="http://www.fjsdxy.com/dwgz/xzzq/index.html" target="_blank"><img src="res/images/Temporary/vis.jpg" /></a></li>
+
+    </ul>
+  </div>
+  <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+  <a class="prev" href="javascript:void(0)"></a>
+  <a class="next" href="javascript:void(0)"></a>
+  </div>
+  <div class="Clear"></div>
+  <script language="javascript">
+
+jQuery(".A").slide({titCell:"",mainCell:".SyUl ul",autoPage:true,effect:"leftLoop",autoPlay:true,vis:4});
+</script>
+</div>
+<!--专题结束-->
+<div class="Clear"></div>
+
+
+<!--foot begin-->
+<div class="Foot">
+  <ul>
+    <li><a href="http://www.xinhuanet.com/" target="_blank">·新华网</a></li>
+    <li><a href="http://www.ya.gov.cn/" target="_blank">·永安市人民政府网</a></li>
+    <li><a href="http://www.fujian.gov.cn/" target="_blank">·福建省人民政府网</a></li>
+    <li><a href="http://www.fjedu.gov.cn/" target="_blank">·福建省教育厅</a></li>
+    <li><a href="http://www.fjwater.gov.cn/" target="_blank">·福建水利信息网</a></li>
+    <li><a href="http://www.moe.edu.cn/" target="_blank">·中华人民共和国教育部</a></li>
+    <li><a href="http://www.mwr.gov.cn/" target="_blank">·中华人民共和国水利部</a></li>
+    <li><a href="http://www.fjrs.gov.cn/" target="_blank">·福建省公务员局</a></li>
+  </ul>
+  <dl>
+    <dt style="width:100px;"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/14/000/0000/41532854/CA140000000415328540001.js' type='text/javascript'%3E%3C/script%3E"));</script></dt>
+    <dt style="width:300px;padding-top: 15px;">版权所有:福建水利电力职业技术学院(2016-2018)<br /> 联系地址:福建省永安市巴溪大道2199号 366000 </dt>
+    <dd style="padding-top: 15px;">0598-8823856/8823857（招生）传真:0598-3634273 电话:0598-8823835（党政办）<br /> 网站备案号:闽ICP备 05010200 号 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1263079827'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1263079827%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> </dd>
+	<dt style="width:100px;"><img src="res/images/xygzh.jpg" style="width:70px; height:70px; margin-left: 15px;"/></dt>
+  </dl>
+</div>
+<!--foot end-->
+<script type="text/javascript" src="res/js/lrtk.js"></script>
+</body>
+</html>

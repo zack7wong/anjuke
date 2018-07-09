@@ -1,0 +1,766 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="动易网络,网站管理系统,内容管理系统(CMS),网上商店管理系统,网站建设" name="Keywords" />
+<meta content="动易（PowerEasy）是国内最大的网站应用软件提供商，涉及政府、教育科研、企业、新闻媒体等多个领域，现有用户数量62万，占据国内四分之一市场份额。公司现有SiteFactory™ 内容管理系统、BizIdea™ 电子商务管理系统、SmartGov™ 政府网站管理系统、SmartSchool™ 学校网站管理系统、SiteGroup™ 站群管理系统 五大产品线，是网站应用软件领域的创新者和领导者。" name="Description"/>
+<title>网站首页-济宁学院附属中学校园网</title>
+<link href="/Skin/Edu/index.css" rel="stylesheet" type="text/css" />
+<script  type="text/javascript" src='/IAA/201712/1.js'></script>
+<script language="javascript" type="text/javascript" src="/js/common.js"></script>
+<!--以下是公告滚动相关JS-->
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+function startmarquee(lh,speed,delay) {
+var p=false;
+var t;
+var o=document.getElementById("marqueebox");
+o.innerHTML+=o.innerHTML;
+o.style.marginTop=0;
+o.onmouseover=function(){p=true;}
+o.onmouseout=function(){p=false;}
+function start(){
+t=setInterval(scrolling,speed);
+if(!p) o.style.marginTop=parseInt(o.style.marginTop)-1+"px";
+}
+function scrolling(){
+if(parseInt(o.style.marginTop)%lh!=0){
+o.style.marginTop=parseInt(o.style.marginTop)-1+"px";
+if(Math.abs(parseInt(o.style.marginTop))>=o.scrollHeight/2) o.style.marginTop=0;
+}else{
+clearInterval(t);
+setTimeout(start,delay);
+}
+}
+setTimeout(start,delay);
+}
+
+//]]>
+</script>
+
+</head>
+<body>
+<div class="wrap">
+
+<!--头部定义开始-->
+<div id="header" class="main">
+<div id="location">
+<a title="设为首页" style=" cursor:pointer" id="setForIndex" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.jnxyfz.jinedu.cn')">设为首页</a> |
+<a href="javascript:if(document.all){window.external.addFavorite('http://www.jnxyfz.jinedu.cn','济宁学院附属中学');}else if(window.sidebar){window.sidebar.addPanel('济宁学院附属中学', 'http://www.jnxyfz.jinedu.cn','');}" title="加入收藏">加入收藏</a> |
+<a href="/qa/index.aspx" title="问答中心">问答中心</a> |
+<a href="/Search/Default.aspx" title="全文检索">全文检索</a>|
+<a href="/Blog/Index.aspx" title="教育博客">教育博客</a>
+</div>
+
+<ul id="globalNav">
+<li id="topTabOn"><a href="/Default.aspx" target="_self"><span>网站首页</span></a></li>
+<li><a href="/Category_13/Index.aspx" target="_self"><span>学校概况</span></a></li>
+<li><a href="/Category_9/Index.aspx" target="_self"><span>校园新闻</span></a></li>
+<li><a href="/Category_167/Index.aspx" target="_self"><span>文明校园</span></a></li>
+<li><a href="/Category_27/Index.aspx" target="_self"><span>党政建设</span></a></li>
+<li><a href="/Category_33/Index.aspx" target="_self"><span>对外交流</span></a></li>
+<li><a href="/Category_19/Index.aspx" target="_self"><span>教学科研</span></a></li>
+<li><a href="/Category_37/Index.aspx" target="_self"><span>园丁风采</span></a></li>
+<li><a href="/Category_104/Index.aspx" target="_self"><span>学生园地</span></a></li>
+<li><a href="/Category_96/Index.aspx" target="_self"><span>校庆专栏</span></a></li>
+<li><a href="/Category_172/Index.aspx" target="_self"><span>教育信息化</span></a></li>
+</ul>
+</div>
+<!--头部定义结束-->
+
+
+<!--中部内容定义开始-->
+<div class="main">
+<!--右侧内容定义-->
+<div class="mainContent">
+<div class="r_navigation">公告：<div  id="marqueebox"><a href="/Item/2317.aspx" target="_blank">济宁学院附属中学信息公开</a><br><a href="/Item/455.aspx" target="_blank">山东省对违规从事普通中小学办学行为责任追究办法</a><br><a href="/Item/168.aspx" target="_blank">管理员发布文章注意事项</a><br></div></div>
+<script>startmarquee(30,60,2000)</script>
+<div class="c_spacing"></div>
+<div id="column1">
+<div id="flashNews">
+        <script type="text/javascript">
+          var swf_width = 342;
+          var swf_height = 210 + 20;
+          var title_height = 20;
+          var focus_height = swf_height + title_height;
+          var interval_time = 4;
+          var config = '6|0xffffff|0x0099FF|20|0xffffff|0x0099FF|0x000000';//config 设置分别为: 自动播放时间(秒)|文字颜色|文字背景色|文字背景透明度|按键数字色|当前按键色|普通按键色
+          var files = '/UploadFiles/2018/5/201805231508071215.jpg|/UploadFiles/2018/5/201805180943438847.jpg|/UploadFiles/2018/5/201805110855037931.jpg|/UploadFiles/2018/5/201805040956335687.jpg|/UploadFiles/2018/5/201805040829117369.jpg';
+          var links = '/Item/2673.aspx|/Item/2672.aspx|/Item/2664.aspx|/Item/2656.aspx|/Item/2655.aspx';
+          var texts = '学校举行“重温《共产党宣言》，坚定信仰信念”主题…|我校与梁山韩垓镇初级中学结成友好联谊校|同圣贤为伴、与智慧同行|万众一心谋创建，众志成城创文明|“高举团旗跟党走”济宁市示范入团仪式在我校隆重举行';
+          document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="' + swf_width + '" height="' + focus_height + '">');
+          document.write('<param name="movie" value="/Skin/Edu/swf/focus_1.swf">');
+          document.write('<param name="quality" value="high">');
+          document.write('<param name="menu" value="false">');
+          document.write('<param name="wmode" value="opaque">');
+          document.write('<param name="FlashVars" value="borderwidth=' + swf_width + '&amp;borderheight=' + swf_height + '&amp;textheight=' + title_height + '&amp;interval_time=' + interval_time + '&amp;pics=' + files + '&amp;links=' + links + '&amp;texts=' + texts + '">');
+          document.write('<embed src="/Skin/Edu/swf/focus_1.swf" wmode="opaque" FlashVars="borderwidth=' + swf_width + '&amp;borderheight=' + swf_height + '&amp;textheight=' + title_height + '&amp;interval_time=' + interval_time + '&amp;pics=' + files + '&amp;links=' + links + '&amp;texts=' + texts + '" menu="false" quality="high" width="' + swf_width + '" height="' + focus_height + '" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>');
+          document.write('</object>');
+        </script>
+      
+</div>
+
+<div class="newsList">
+<ul class="listStyle1">
+            <li><a href="/Item/2673.aspx" target="_blank"><font style="color:#e51905;font-weight:bold;font-style:normal;">学校举行“重温《共产党宣言》，坚定信仰信念”…</font></a>
+                            [2018-05-18]
+                        </li><li><a href="/Item/2672.aspx" target="_blank"><font style="color:#e50000;">我校与梁山韩垓镇初级中学结成友好联谊校</font></a>
+                            [2018-05-18]
+                        </li><li><a href="/Item/2664.aspx" target="_blank"><font style="color:#ff0000;font-weight:bold;font-style:normal;">同圣贤为伴、与智慧同行</font></a>
+                            [2018-05-11]
+                        </li><li><a href="/Item/2657.aspx" target="_blank">五月份工作要点</a>
+                            [2018-05-04]
+                        </li><li><a href="/Item/2656.aspx" target="_blank"><font style="color:#e50000;font-weight:bold;font-style:normal;">万众一心谋创建，众志成城创文明</font></a>
+                            [2018-05-04]
+                        </li><li><a href="/Item/2655.aspx" target="_blank"><font style="color:#e50000;font-weight:bold;font-style:normal;">“高举团旗跟党走”济宁市示范入团仪式在我校隆…</font></a>
+                            [2018-05-04]
+                        </li><li><a href="/Item/2654.aspx" target="_blank"><font style="color:#ff0000;font-weight:bold;font-style:normal;">我校党委参观市交警一大队党建与思政教育基地</font></a>
+                            [2018-04-28]
+                        </li><li><a href="/Item/2652.aspx" target="_blank">2018年五一劳动节放假通知</a>
+                            [2018-04-24]
+                        </li><li><a href="/Item/2638.aspx" target="_blank"><font style="color:#ff0000;font-weight:bold;font-style:normal;">党委理论中心组（扩大）召开“大学习、大调研、…</font></a>
+                            [2018-04-13]
+                        </li><li><a href="/Item/2634.aspx" target="_blank">四月份工作要点</a>
+                            [2018-04-03]
+                        </li>
+          </ul>
+</div>
+<div class="clearbox"></div>
+</div>
+<div class="c_spacing"></div>
+<div class="ADBanner">
+
+<!--
+<a href="/Category_126/Index.aspx">
+<img src="/Skin/Edu/Images/ADBanner1.gif" alt="济宁学院附属中学" longdesc="http://www.jnxyfz.jinedu.cn" />
+-->
+
+
+<p><map name="FPMap0">
+<area  coords="5, 4, 250, 127" shape="rect" href="/Category_154/Index.aspx">
+<area coords="250, 4, 500, 127" shape="rect" href="/Category_165/Index.aspx">
+<area coords="500, 4, 745, 127" shape="rect" href="/Category_155/Index.aspx">
+</map>
+<img border="0" src="/Skin/Edu/Images/ADBanner1.gif" width="750" height="130" usemap="#FPMap0"></p>
+
+
+</a>
+
+
+</div>
+<div class="c_spacing"></div>
+
+<!--
+<div id="schoolIntro" class="steelBlue">
+<dl>
+<dt><em>学校简介</em></dt>
+<dd>
+<img src="/Skin/Edu/Images/schoolIntroPics.jpg"/>
+<div class="schoolIntroText">
+<p> </p>
+<p> </p>
+<p>　　济宁学院附中地处孔孟之乡、运河之滨，她秉承了数千年儒家文化之风范，汲取了悠远绵长的运河文化之精华，形成了自己浓厚的文化特色。其前身是清华洞小学、实验小学、济宁市第七中学、济宁市第四中学。1991年9月经济宁市人民政府批准，更名为济宁师范专科学校附属中学，隶属于济宁师范专科学校。2000年6月原济宁市第十中学并入附中，2003年7月1日，原济宁市第六中学并入附中。目前，学校已形成一校三区的格局。 </p>
+</div>
+<div class="clearbox"></div>
+</dd>
+</dl>
+</div>
+<div class="c_spacing"></div>
+-->
+
+<!--党政建设-->
+<div id="moralEduSpace" class="steelBlue">
+<dl>
+<dt><em><a href="/Category_27/index.aspx" title="党政建设">党政建设</a></em><ul class="colChildNav"><li><a href="/Category_28/Index.aspx" target="_self">党委动态</a></li>
+<li><a href="/Category_29/Index.aspx" target="_self">党员活动</a></li>
+<li><a href="/Category_30/Index.aspx" target="_self">党支部建设</a></li>
+<li><a href="/Category_32/Index.aspx" target="_self">学习园地</a></li></ul></dt>
+<dd>
+<ul class="thumbListStlye1">
+
+            <li>
+  <div class="pe_u_thumb"><a href="/Item/2675.aspx" target="_blank"><img src="/UploadFiles/partyBuilding/2018/5/201805221507321667.jpg" alt="我校开展入党积极分子、预备党员上党课活动" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/2675.aspx" target="_blank">我校开展入党积极分子、预备党…</a><br> 
+5月17日，在校本部教学楼一楼会议室，我校召开入党积极分子、预备党员专题党课培训。
+培训会上，行政…</div>
+</li>
+<li>
+  <div class="pe_u_thumb"><a href="/Item/2658.aspx" target="_blank"><img src="/UploadFiles/2018/5/201805071613064078.jpg" alt="我校党委组织收看纪念马克思诞辰200周年大会现场直播" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/2658.aspx" target="_blank">我校党委组织收看纪念马克思诞…</a><br>5月4日上午10时，学校党委在校本部办公楼四楼多媒体报告厅组织收看纪念马克思诞辰200周年大会现场直播，…</div>
+</li>
+          
+</ul>
+<ul class="listStyle1">
+            <li><a href="/Item/2675.aspx" target="_blank"><font style="color:#ff0000;font-weight:bold;font-style:normal;">我校开展入党积极分子、预备党员上党课活动</font></a>
+                            [2018-05-18]
+                        </li><li><a href="/Item/2670.aspx" target="_blank"><font style="color:#ff0000;">共产党宣言(全文)</font></a>
+                            [2018-05-15]
+                        </li><li><a href="/Item/2669.aspx" target="_blank"><font style="color:#ff0000;">关于全面深化新时代教师队伍建设改革的意见</font></a>
+                            [2018-05-14]
+                        </li><li><a href="/Item/2663.aspx" target="_blank"><font style="color:#e50000;font-weight:bold;font-style:normal;">扎扎实实把乡村振兴战略实施好——习近平…</font></a>
+                            [2018-05-09]
+                        </li><li><a href="/Item/2662.aspx" target="_blank"><font style="color:#e50000;font-weight:bold;font-style:normal;">在山东省全面展开新旧动能转换重大工程动…</font></a>
+                            [2018-05-09]
+                        </li><li><a href="/Item/2661.aspx" target="_blank"><font style="color:#e50303;font-weight:bold;font-style:normal;">全市干部作风建设大会召开 王艺华出席会…</font></a>
+                            [2018-05-09]
+                        </li><li><a href="/Item/2660.aspx" target="_blank"><font style="color:#e50000;font-weight:bold;font-style:normal;">山东新旧动能转换综合试验区建设总体方案</font></a>
+                            [2018-05-09]
+                        </li><li><a href="/Item/2659.aspx" target="_blank"><font style="color:#ff0000;font-weight:bold;font-style:normal;">习近平在纪念马克思诞辰200周年大会上讲…</font></a>
+                            [2018-05-07]
+                        </li>
+          </ul>
+<div class="clearbox"></div>
+</dd>
+</dl>
+</div>
+<div class="c_spacing"></div>
+
+<!--教学科研-->
+<div id="instructionalResearch" class="mediumTurquoise">
+<dl>
+<dt><em><a href="/Category_19/index.aspx" title="教学科研">教学科研</a></em><ul class="colChildNav"><li><a href="/Category_112/Index.aspx" target="_self">教学常规</a></li>
+<li><a href="/Category_20/Index.aspx" target="_self">校本课程</a></li>
+<li><a href="/Category_113/Index.aspx" target="_self">学科建设</a></li>
+<li><a href="/Category_114/Index.aspx" target="_self">素质拓展</a></li>
+<li><a href="/Category_22/Index.aspx" target="_self">课题研究</a></li>
+<li><a href="/Category_108/Index.aspx" target="_self">理论学习</a></li>
+<li><a href="/Category_24/Index.aspx" target="_self">教研通讯</a></li></ul></dt>
+<dd>
+<div class="col2">
+<ul class="listStyle1">
+            <li><a href="/Item/2681.aspx" target="_blank"><font style="color:#ff0000;">认识自我——心理健康教育专题研讨课</font></a>
+                            [2018-05-28]
+                        </li><li><a href="/Item/2678.aspx" target="_blank"><font style="color:#ff0000;">名师讲坛——青年教师教学业务培训会</font></a>
+                            [2018-05-25]
+                        </li><li><a href="/Item/2677.aspx" target="_blank"><font style="color:#ff0000;">让复习课走出枯燥、走向生动</font></a>
+                            [2018-05-23]
+                        </li><li><a href="/Item/2671.aspx" target="_blank"><font style="color:#ff0000;">携手并进，共赢未来——初一年级家长课堂…</font></a>
+                            [2018-05-15]
+                        </li><li><a href="/Item/2647.aspx" target="_blank"><font style="color:#ff0000;">影视作品在心理健康教育中的应用----心理…</font></a>
+                            [2018-04-19]
+                        </li><li><a href="/Item/2646.aspx" target="_blank"><font style="color:#ff0000;">让创客教育在学校扎根发芽——信息技术学…</font></a>
+                            [2018-04-19]
+                        </li><li><a href="/Item/2645.aspx" target="_blank"><font style="color:#ff0000;">体育学科智慧讲堂活动报道</font></a>
+                            [2018-04-18]
+                        </li><li><a href="/Item/2644.aspx" target="_blank"><font style="color:#ff0000;">七弦为益友  两耳是知音 ---.刘琪古琴艺…</font></a>
+                            [2018-04-18]
+                        </li>
+          </ul>
+</div>
+<div class="col1">
+<ul class="thumbListStlye1">
+
+            <li>
+  <div class="pe_u_thumb"><a href="/Item/2681.aspx" target="_blank"><img src="/UploadFiles/teachingAndResearch/2018/5/201805281600170603.jpg" alt="认识自我——心理健康教育专题研讨课" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/2681.aspx" target="_blank">认识自我——心理健康教育专题…</a><br> 
+为促进心理健康教育课程的进一步发展，5月23日上午时香玲老师在本部初一、一班讲授了一节以《认识自我…</div>
+</li>
+<li>
+  <div class="pe_u_thumb"><a href="/Item/2678.aspx" target="_blank"><img src="/UploadFiles/teachingAndResearch/2018/5/201805251616217536.jpg" alt="名师讲坛——青年教师教学业务培训会" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/2678.aspx" target="_blank">名师讲坛——青年教师教学业务…</a><br> 
+ 
+5月24日下午，在校本部一楼会议室召开名师讲坛暨青年教师教学业务培训会。学校王红静副校长，主讲…</div>
+</li>
+          </ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="c_spacing"></div>
+
+<!--德育天地板块-->
+<div id="moralEduSpace" class="lightGreen">
+<dl>
+<dt><em><a href="/Category_52/index.aspx" title="德育天地">德育天地</a></em><ul class="colChildNav"><li><a href="/Category_105/Index.aspx" target="_self">班集体建设</a></li>
+<li><a href="/Category_103/Index.aspx" target="_self">安全教育</a></li>
+<li><a href="/Category_106/Index.aspx" target="_self">家庭教育</a></li>
+<li><a href="/Category_56/Index.aspx" target="_self">社团活动</a></li>
+<li><a href="/Category_57/Index.aspx" target="_self">本校校刊</a></li>
+<li><a href="/Category_102/Index.aspx" target="_self">网上团校</a></li>
+<li><a href="/Category_50/Index.aspx" target="_self">艺术节</a></li>
+<li><a href="mailto:jnfzxinyu@163.com" target="_blank">心理咨询</a></li></ul></dt>
+<dd>
+<ul class="thumbListStlye1">
+
+            <li>
+  <div class="pe_u_thumb"><a href="/Item/2622.aspx" target="_blank"><img src="/UploadFiles/schoolLife/2018/3/201803280920531902.jpg" alt="我校开展“第23个全国中小学生安全教育日”主题教育活动" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/2622.aspx" target="_blank">我校开展“第23个全国中小学生…</a><br>今年的3月26日是&amp;ldquo;第23个全国中小学生安全教育日&amp;rdquo;，为深入推进师生的安全教育工作，我校开展…</div>
+</li>
+<li>
+  <div class="pe_u_thumb"><a href="/Item/2616.aspx" target="_blank"><img src="/UploadFiles/schoolLife/2018/3/201803260946029864.jpg" alt="我校举行2018年度“青年班主任论坛”" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/2616.aspx" target="_blank">我校举行2018年度“青年班主任…</a><br>&lt;!--[if gte mso 9]&gt;
+ 
+  Normal
+  0
+  
+  7.8 磅
+  0
+  2
+  
+  false
+  false
+  false
+  
+…</div>
+</li>
+          
+</ul>
+<ul class="listStyle1">
+            <li><a href="/Item/2622.aspx" target="_blank"><font style="color:#e51609;">我校开展“第23个全国中小学生安全教育日…</font></a>
+                            [2018-03-28]
+                        </li><li><a href="/Item/2616.aspx" target="_blank"><font style="color:#150be5;">我校举行2018年度“青年班主任论坛”</font></a>
+                            [2018-03-26]
+                        </li><li><a href="/Item/2608.aspx" target="_blank"><font style="color:#000200;">我校召开新学期学生社团指导教师工作会议</font></a>
+                            [2018-03-20]
+                        </li><li><a href="/Item/2581.aspx" target="_blank"><font style="color:#ed2e0d;">社团风采展示之3D打印社团</font></a>
+                            [2018-01-23]
+                        </li><li><a href="/Item/2562.aspx" target="_blank"><font style="color:#ed2e0d;">社团风采展示之“魅力附中”校园电视台</font></a>
+                            [2018-01-02]
+                        </li><li><a href="/Item/2522.aspx" target="_blank"><font style="color:#e51609;">济宁学院附属中学开展“学宪法-宪法伴我…</font></a>
+                            [2017-12-04]
+                        </li><li><a href="/Item/2485.aspx" target="_blank"><font style="color:#ed2e0d;">社团风采展示之国旗班</font></a>
+                            [2017-11-09]
+                        </li><li><a href="/Item/2484.aspx" target="_blank"><font style="color:#e5200d;">我校开展“119消防宣传日”冬季紧急疏散…</font></a>
+                            [2017-11-08]
+                        </li>
+          </ul>
+<div class="clearbox"></div>
+</dd>
+</dl>
+</div>
+<div class="c_spacing"></div>
+<!--部门动态-->
+<div id="teacherShow" class="goldenrod">
+<dl>
+<dt><em><a href="/Category_85/index.aspx" title="部门动态">部门动态</a></em><ul class="colChildNav"><li><a href="/Category_86/Index.aspx" target="_self">工会</a></li>
+<li><a href="/Category_87/Index.aspx" target="_self">人事处</a></li>
+<li><a href="/Category_88/Index.aspx" target="_self">团委</a></li>
+<li><a href="/Category_166/Index.aspx" target="_self">教育处</a></li>
+<li><a href="/Category_89/Index.aspx" target="_self">总务处</a></li>
+<li><a href="/Category_124/Index.aspx" target="_self">信息技术管理科</a></li>
+<li><a href="/Category_125/Index.aspx" target="_self">心理教育处</a></li>
+<li><a href="/Category_135/Index.aspx" target="_self">资产管理科</a></li>
+<li><a href="/Category_137/Index.aspx" target="_self">艺体教育中心</a></li></ul></dt>
+<dd>
+<ul class="thumbListStlye2">
+
+            <li>
+  <div class="pe_u_thumb"><a href="/Item/2640.aspx" target="_blank"><img src="/UploadFiles/bmdt/2018/4/201804131825539624.jpg" alt="3月黑板报展评" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/2640.aspx" target="_blank">3月黑板报展评</a><br>…</div>
+</li>
+<li>
+  <div class="pe_u_thumb"><a href="/Item/2637.aspx" target="_blank"><img src="/UploadFiles/bmdt/2018/4/201804120830311434.jpg" alt="用文字温暖人生——丁立梅讲座在我校举行" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/2637.aspx" target="_blank">用文字温暖人生——…</a><br>…</div>
+</li>
+<li>
+  <div class="pe_u_thumb"><a href="/Item/2611.aspx" target="_blank"><img src="/UploadFiles/bmdt/2018/3/201803211648037799.jpg" alt="我校开展植树节主题手抄报活动" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/2611.aspx" target="_blank">我校开展植树节主题…</a><br>…</div>
+</li>
+<li>
+  <div class="pe_u_thumb"><a href="/Item/2609.aspx" target="_blank"><img src="/UploadFiles/bmdt/2018/3/201803201639046962.jpg" alt="新学期 新形象 新征程——我校召开本学期第一次团队干部会议" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/2609.aspx" target="_blank">新学期 新形象 新征…</a><br>…</div>
+</li>
+          
+</ul>
+<ul class="listStyle1">
+            <li><a href="/Item/2640.aspx" target="_blank"><font style="color:#000200;">3月黑板报展评</font></a>
+                            [2018-04-13]
+                        </li><li><a href="/Item/2637.aspx" target="_blank"><font style="color:#000200;">用文字温暖人生——丁立梅讲座在我校举行</font></a>
+                            [2018-04-12]
+                        </li><li><a href="/Item/2632.aspx" target="_blank">我校关于组织信息化交流展示活动的通知</a>
+                            [2018-04-09]
+                        </li><li><a href="/Item/2611.aspx" target="_blank"><font style="color:#000200;">我校开展植树节主题手抄报活动</font></a>
+                            [2018-03-21]
+                        </li><li><a href="/Item/2609.aspx" target="_blank"><font style="color:#000200;">新学期 新形象 新征程——我校召开本学期…</font></a>
+                            [2018-03-20]
+                        </li><li><a href="/Item/2604.aspx" target="_blank">关于拟推荐济宁市教育信息化工作先进个人…</a>
+                            [2018-03-16]
+                        </li><li><a href="/Item/2602.aspx" target="_blank">关于举办我校创客大赛活动的通知</a>
+                            [2018-03-14]
+                        </li><li><a href="/Item/2585.aspx" target="_blank"><font style="color:#000200;">济宁学院附中关于开展2018年中学生寒假社…</font></a>
+                            [2018-01-29]
+                        </li><li><a href="/Item/2580.aspx" target="_blank"><font style="color:#000200;">我校同学在山东省第六届地科杯国土资源征…</font></a>
+                            [2018-01-23]
+                        </li><li><a href="/Item/2561.aspx" target="_blank"><font style="color:#000200;">我校举行“践行新思想  拥抱新时代”主题…</font></a>
+                            [2018-01-02]
+                        </li><li><a href="/Item/2543.aspx" target="_blank"><font style="color:#000200;">我校举行第五届心理健康教育活动周启动仪式</font></a>
+                            [2017-12-19]
+                        </li>
+          </ul>
+<div class="clearbox"></div>
+
+</dd>
+</dl>
+</div>
+</div>
+
+<!--侧边栏-->
+  
+  <div id="sideBar">
+
+<script language="JavaScript" type="text/javascript">
+function Menu(id_num,num){
+for(var i=0;i<2;i++){document.getElementById("Con_"+id_num+i).style.display="none";}
+for(var i=0;i<2;i++){document.getElementById("Tab_"+id_num+i).className="";}
+document.getElementById("Tab_"+id_num+num).className="userTabsOn";
+document.getElementById("Con_"+id_num+num).style.display="block";
+}
+</script>
+  <div class="user_box">
+  <dl>
+    <dt>
+	<ul>
+	<!--
+           <li id="Tab_10" onmouseover="setTimeout('Menu(1,0)',200);" class="userTabsOn"><em>成绩查询</em></li>
+          	<li id="Tab_11" onmouseover="setTimeout('Menu(1,1)',200);"><em>用户中心</em></li>
+           -->
+
+           <li id="Tab_11"><em>用户中心</em></li>
+	</ul>
+	</dt>
+    <dd>
+	
+
+<!--
+<div id="Con_10">
+	<ul>
+	<li>学　号：<input name="TxtStudentNum" type="text" maxlength="50" id="TxtStudentNum" class="inputtext" style="width: 125px;" /></li>
+	<li>姓　名：<input name="TxtStudentName" type="text" maxlength="20" id="TxtStudentName" class="inputtext" style="width: 125px;" /></li>
+	<li id="loginButton">
+<input id="StuLogOn" class="inputbutton" type="submit" onclick="ScoreLogin();" value="成绩查询" name="BtnLogOn"/>
+</li>
+	</ul>
+	<div class="clearbox"></div>
+	</div>
+  <script language="javascript" type="text/javascript">
+  function ScoreLogin()
+  {
+    var stuentNum = document.getElementById("TxtStudentNum").value;
+    var stuentName = document.getElementById("TxtStudentName").value;
+    if (stuentNum == '') {
+        alert("请填写学号！");
+        document.getElementById("TxtStudentNum").focus();
+        return;
+    }
+    if (stuentName == '') {
+        alert("请填写姓名！");
+        document.getElementById("TxtStudentName").focus();
+        return;
+    }
+    window.location.href = "/Ssms/ScoreQuery.aspx?num="+escape(stuentNum)+"&name="+escape(stuentName);
+  }
+  </script>
+-->
+
+	<div id="Con_11" style.display = ''>
+      <div id="LoginFrom" style="display: none" class="Login_ajax" onkeypress="javascript:return DefaultButton(event, 'BtnLogOn')">
+  <script type="text/javascript" language="JavaScript">
+  //2008-9-22 20:51:35 modified by lewi
+  function RefreshValdisplayDateCodeImage(ValdisplayDateCodeImageControl){
+      ValdisplayDateCodeImageControl.src = ValdisplayDateCodeImageControl.src + '?code=' + RandomNum(10);
+  }
+
+  function RandomNum(n){
+      var rnd = '';
+      for (var i = 0; i < n; i++) 
+          rnd += Math.floor(Math.random() * 10);
+      return rnd;
+  }
+
+  function DefaultButton(event, linkOpenType){
+      if (event.keyCode == 13 && !(event.srcElement && (event.srcElement.tagName.toLowerCase() == "textarea"))) {
+          var defaultButton = $(linkOpenType);
+          if (defaultButton && typeof(defaultButton.click) != "undefined") {
+              defaultButton.click();
+              event.cancelBubble = true;
+              if (event.stopPropagation) 
+                  event.stopPropagation();
+              return false;
+          }
+      }
+      return true;
+  }
+  </script>
+  <table cellspacing="0" cellpadding="0" border="0" width="100%">
+    <tr>
+      <td>
+        用户名：
+      </td>
+      <td>
+        <input name="TxtUserName" type="text" maxlength="20" id="TxtUserName" class="inputtext" style="width: 125px;" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        密 码：
+      </td>
+      <td>
+        <input name="TxtPassword" type="password" id="TxtPassword" class="inputtext" style="width: 125px;" />
+      </td>
+    </tr>
+    <tr id="checkcode" style="display: none">
+      <td>
+        验证码：
+      </td>
+      <td>
+        <input name="TxtValdisplayDateCode" type="text" maxlength="6" value="no" id="TxtValdisplayDateCode" class="inputtext" onfocus="this.select();" style="width: 50px;" /><img id="VcodeLogOn" title="看不清楚，换一个" onclick="RefreshValdisplayDateCodeImage(this);" src="/Controls/ValidateCodeImage.aspx" align="absmiddle" style="border-width: 0px; cursor: hand;" />
+      </td>
+    </tr>
+ 
+  <tr>
+      <td>
+        Cookie：
+      </td>
+      <td>
+        <select name="DropExpiration" id="DropExpiration">
+          <option value="None">不保存</option>
+          <option value="Day">保存一天</option>
+          <option value="Month">保存一月</option>
+          <option value="Year">保存一年</option>
+        </select>
+      </td>
+    </tr>
+
+  </table>
+  <div class="bt_login_list">
+&nbsp;&nbsp;<a class="registerButton" href="/User/Register.aspx" linkOpenType="_top">注册</a>&nbsp;&nbsp;&nbsp;
+
+<a class="findbackPassword" href="/User/GetPassword.aspx" linkOpenType="_top">忘记密码</a>&nbsp;&nbsp;&nbsp;
+
+<input type="submit" name="BtnLogOn" value="登&nbsp;&nbsp;录" id="BtnLogOn" onclick="Login();" class="inputbutton" />  
+</div>
+  <div class="textNote"></div>
+  <div class="clearbox"></div>
+<!--  
+<div class="bt_login_fun_list">
+  <a class="bt_login" href="/User/Content/AnonymousContent.aspx" target="_blank">匿名投稿</a><a class="bt_login" href="/shop/OrderForm.aspx" target="_blank">订单查询</a></div>
+  <div class="clearbox">
+  </div>
+-->
+</div>
+<div id="PnlLogOnStatus" class="Login_ajax">
+</div>
+<script language="javascript" type="text/javascript">
+CheckIsLogin();
+
+function Loginin(LoginString){
+    document.getElementById("LoginFrom").innerHTML = document.getElementById("LoginFrom").innerHTML + LoginString;
+}
+
+function CheckIsLogin(){
+    document.getElementById('PnlLogOnStatus').innerHTML = "<img src=\"/Skin/Edu/Images/loading.gif\" alt=\"\"/>";
+    var x = new AjaxRequest('XML', 'status');
+    x.para = [];
+    x.post('logincheck', '/ajax.aspx', function(s){
+        var xml = x.createXmlDom(s);
+        var status = xml.getElementsByTagName("status")[0].firstChild.data;
+        
+        if (status == 'ok') {
+            document.getElementById('PnlLogOnStatus').style.display = "";
+            document.getElementById('LoginFrom').style.display = "none";
+            document.getElementById('PnlLogOnStatus').innerHTML = GetUserInfo(xml);
+        }
+        else {
+            document.getElementById('PnlLogOnStatus').style.display = "none";
+            document.getElementById('LoginFrom').style.display = "";
+            CheckEnableValidCode();
+        }
+    });
+}
+
+function GetUserInfo(xml){
+    var userInfo = "<div class=\"u_login\">" + xml.getElementsByTagName("username")[0].firstChild.data + "，您好！您有：<br/>";
+   <!-- userInfo = userInfo + "资金余额：" + xml.getElementsByTagName("balance")[0].firstChild.data + " 元<br/>";-->
+   <!-- userInfo = userInfo + "经验积分：" + xml.getElementsByTagName("exp")[0].firstChild.data + " 分<br/>";-->
+    userInfo = userInfo + "待阅短信：" + xml.getElementsByTagName("msg")[0].firstChild.data + " 条<br/>";
+    <!--userInfo = userInfo + "登录次数：" + xml.getElementsByTagName("logintimes")[0].firstChild.data + " 次<br/>";-->
+    <!--userInfo = userInfo + "可用" + xml.getElementsByTagName("pointname")[0].firstChild.data + "：" + xml.getElementsByTagName("point")[0].firstChild.data + " " + xml.getElementsByTagName("pointunit")[0].firstChild.data + "<br/>";-->
+    userInfo = userInfo + "待签文章：" + xml.getElementsByTagName("signincontent")[0].firstChild.data + " 篇<br/>";
+    userInfo = userInfo + "<div style=\"text-align: center\"><a href=\"/User/Default.aspx\" linkOpenType=\"_top\">会员中心</a>&nbsp;&nbsp;|&nbsp;&nbsp;";
+    userInfo = userInfo + "<a href=\"/User/Logout.aspx\" linkOpenType=\"_top\">退出登录</a></div>";
+    userInfo = userInfo + "</div>";
+    return userInfo;
+}
+
+function CheckEnableValidCode(){
+    var x = new AjaxRequest('XML', 'status');
+    x.para = [];
+    x.post('EnableValidCode', '/ajax.aspx', function(s){
+        var xml = x.createXmlDom(s);
+        var status = xml.getElementsByTagName("status")[0].firstChild.data;
+        if (status == "yes") {
+            document.getElementById("checkcode").style.display = '';
+            document.getElementById("TxtValdisplayDateCode").value = '';
+        }
+    });
+}
+
+function Login(){
+    if (document.getElementById("TxtUserName").value == '') {
+        alert("请填写用户名！");
+        document.getElementById("TxtUserName").focus();
+        return;
+    }
+    if (document.getElementById("TxtPassword").value == '') {
+        alert("请填写密码！");
+        document.getElementById("TxtPassword").focus();
+        return;
+    }
+    if(document.getElementById("checkcode").style.display=="")
+    {
+      if (document.getElementById("TxtValdisplayDateCode").value == '') {
+          alert("请填写验证码！");
+          document.getElementById("TxtValdisplayDateCode").focus();
+          return;
+      }
+    }
+    var x = new AjaxRequest('XML', 'status');
+    x.para = ['username=' + document.getElementById("TxtUserName").value, 'password=' + document.getElementById("TxtPassword").value, 'checkcode=' + document.getElementById("TxtValdisplayDateCode").value, 'expiration=' + document.getElementById("DropExpiration").value];
+    x.post('userlogin', '/ajax.aspx', function(s){
+        var xml = x.createXmlDom(s);
+        var status = xml.getElementsByTagName("status")[0].firstChild.data;
+        switch (status) {
+            case "ok":
+                if (xml.getElementsByTagName("API_Enable")[0].firstChild.data == "1") {
+                    var LoginString = xml.getElementsByTagName("LoginString")[0].firstChild.data;
+                    Loginin(LoginString);
+                }
+                CheckIsLogin();
+                break;
+            case "err":
+                alert("用户名或者密码错误！");
+                break;
+        }
+        
+    });
+}
+</script>
+	</div>
+    </dd>
+  </dl>
+</div>
+<div class="left_box"><a title="数字校园系统" href="http://10.0.0.167" target="_blank"><img alt="数字校园系统" src="/Skin/Edu/Images/szhxy.png" /></a></div>
+<div class="left_box"><a title="教育办公自动化平台" href="http://10.0.0.51/jyoaxxb" target="_blank"><img alt="教育办公自动化平台" src="/Skin/Edu/Images/ssgmjyoa.png" /></a></div>
+
+<div class="left_box"><a title="网络教研平台" href="http://10.0.0.161:8000" target="_blank"><img alt="网络教研平台" src="/Skin/Edu/Images/wljypt.png" /></a></div>
+<div class="left_box"><a title="课程资源平台" href="http://10.0.0.162:8600" target="_blank"><img alt="课程资源平台" src="/Skin/Edu/Images/kczypt.png" /></a></div>
+<div class="left_box"><a title="网上办公系统" href="http://10.0.0.162/oa" target="_blank"><img alt="网上办公系统" src="/Skin/Edu/Images/wsbgxt.png" /></a></div>
+<div class="left_box"><a title="电子图书系统" href="http://10.0.0.51:8000" target="_blank"><img alt="电子图书系统" src="/Skin/Edu/Images/dztsxt.png" /></a></div>
+<div class="left_box"><a title="自动录播系统" href="http://192.168.7.7" target="_blank"><img alt="自动录播系统" src="/Skin/Edu/Images/zdlbxt.png" /></a></div>
+
+
+<!--
+<div class="left_box"><a title="课程管理系统" href="/Ssms/ScheduleMain.aspx"><img alt="课程管理系统" src="/Skin/Edu/Images/courseManage.png" /></a></div>
+<div class="left_box"><a title="招生管理系统" href="/Ssms/CourseList.aspx"><img alt="招生管理系统" src="/Skin/Edu/Images/onlineReg.png" /></a></div>
+-->
+
+
+
+<div class="left_box" id="partyBuilding">
+<dl>
+<dt><em><a href="/Category_147/Index.aspx">南校区</a></em></dt>
+
+<dd>
+<ul>
+
+
+            <li>
+  <div class="pe_u_thumb"><a href="/Item/2674.aspx" target="_blank"><img src="/UploadFiles/nxq/2018/5/201805211427544780.jpg" alt="我校小学部荣获济宁市小学教育教学工作先进学校" width="160" height="120" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/2674.aspx" target="_blank">我校小学部荣获济宁市小…</a><br>…</div>
+</li>
+          
+
+            <li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/2674.aspx" target="_blank"><font style="color:#e50e01;">我校小学部荣获济宁市小学…</font></a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/2606.aspx" target="_blank"><font style="color:#e52909;">济宁市教科院领导来我校小…</font></a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/2560.aspx" target="_blank"><font style="color:#e50c05;">南校区举办“庆元旦，迎中…</font></a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/2539.aspx" target="_blank"><font style="color:#e51f05;">初四毕业班召开第二次月考…</font></a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/2464.aspx" target="_blank"><font style="color:#e51f05;">我爱附中，风雨同行</font></a></li>
+          
+</ul></dd>
+
+
+</dl>
+</div>
+
+<div class="left_box" id="partyBuilding">
+<dl>
+<dt><em><a href="/Category_138/Index.aspx">分校区</a></em></dt>
+
+<dd>
+<ul>
+
+            <li>
+  <div class="pe_u_thumb"><a href="/Item/2676.aspx" target="_blank"><img src="/UploadFiles/fzfxq/2018/5/201805221749070621.jpg" alt="创城创森同行动，师生家校共参与" width="160" height="120" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/2676.aspx" target="_blank">创城创森同行动，师生家…</a><br>…</div>
+</li>
+          
+
+            <li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/2676.aspx" target="_blank"><font style="color:#e51501;font-weight:bold;font-style:normal;">创城创森同行动，师生家校…</font></a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/2648.aspx" target="_blank">2018年附中分校区第二届足…</a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/2630.aspx" target="_blank">2018年济宁学院附中分校区…</a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/2624.aspx" target="_blank">加拿大埃德蒙顿奥华中学师…</a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/2623.aspx" target="_blank"><font style="color:#e50f09;font-weight:bold;font-style:normal;">附中分校区开展第23个“全…</font></a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/2610.aspx" target="_blank"><font style="color:#e51e0b;font-weight:bold;font-style:normal;">分校区召开2017-2018学年…</font></a></li>
+          
+</ul></dd>
+
+</dl>
+</div>
+
+<div class="left_box" id="partyBuilding">
+<dl>
+<dt><em><a href="http://www.xyfzgxqxq.jinedu.cn/">高新区校区</a></em></dt>
+<dd>
+<ul>
+
+            <li>
+  <div class="pe_u_thumb"><a href="/Item/1064.aspx" target="_blank"><img src="/UploadFiles/gxqxq/2013/12/201312131127220860.jpg" alt="济宁市教研室领导到我校督导听课" width="160" height="120" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/1064.aspx" target="_blank">济宁市教研室领导到我校…</a><br>…</div>
+</li>
+          
+
+            <li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/1184.aspx" target="_blank"><font style="color:#e53b7f;">高新区校区文明办公室量化…</font></a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/1064.aspx" target="_blank"><font style="color:#e5246c;">济宁市教研室领导到我校督…</font></a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/1063.aspx" target="_blank"><font style="color:#e5226b;">我校举行家长开放周活动</font></a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/1060.aspx" target="_blank">文明办公室评比第15周评比…</a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/1059.aspx" target="_blank"><font style="color:#e5175e;">喜 讯</font></a></li>
+          
+</ul></dd>
+</dl>
+</div>
+
+<!--
+<div class="left_box" id="teacherShow">
+<dl>
+<dt><em>园丁风采</em></dt>
+<dd>
+<ul>
+
+            <li>
+  <div class="pe_u_thumb"><a href="/Item/496.aspx" target="_blank"><img src="/UploadFiles/staff/2013/3/201303251141368760.jpg" alt="第三届附中名师——康磊" width="160" height="120" border="0"></a></div>
+  <div class="pe_u_thumb_title"><a href="/Item/496.aspx" target="_blank">第三届附中名师——康磊</a><br>…</div>
+</li>
+          
+
+            <li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/1760.aspx" target="_blank"><font style="color:#e51135;font-weight:bold;font-style:normal;">转发《省教育厅关于开展学…</font></a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/788.aspx" target="_blank"><font style="color:#e5072d;font-weight:bold;font-style:normal;">转发济宁市教育局关于开展…</font></a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/497.aspx" target="_blank">第三届附中名师——何元秋</a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/496.aspx" target="_blank">第三届附中名师——康磊</a></li><li><img src="/images/ontop1.gif&#xD;&#xA;                                        " alt="热门"><a href="/Item/495.aspx" target="_blank">第三届附中名师——孔超</a></li>
+          
+</ul>
+</dd>
+</dl>
+</div>
+-->
+
+
+</div>
+  
+  
+  
+<div class="clearbox"></div>
+</div>
+<!--中部内容定义结束-->
+
+<DIV class=clearbox></DIV>
+<DIV id=footer class=main>
+  <DL>
+    <DT> 
+      <div align="center"><A href="mailto:sdjnxyfz@163.com">联系我们</A>&nbsp;&nbsp;|&nbsp;&nbsp;<A href="/category_7/index.aspx">网站留言</A>&nbsp;&nbsp;|&nbsp;&nbsp;<A href="/category_6/index.aspx">友情链接</A>&nbsp;&nbsp;|&nbsp;&nbsp;<A href="/Category_8/index.aspx">版权声明</A>&nbsp;&nbsp;|&nbsp;&nbsp;<A href="/Admin_xyfz/Index.aspx" target=_blank>管理登录</A> 
+        <hr noshade color="#3399FF">
+      </div>
+    </DT>
+    <dd> 
+      <div align="center"><a href="http://www.jnxyfz.jinedu.cn/">济宁学院附属中学</a> 
+        信息技术管理科制作 鲁ICP备06016166号 鲁公网安备37080202000244号<br>
+        地址：济宁市市中区太白中路9号 邮编：272000</div>
+    </dd>
+  </DL>
+</DIV>
+
+</body>
+</html>

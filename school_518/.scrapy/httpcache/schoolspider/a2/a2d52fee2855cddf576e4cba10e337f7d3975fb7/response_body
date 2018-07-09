@@ -1,0 +1,248 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=gb2312" /><title>成都市铁路中学</title><meta name="Keywords" content="成都铁中,成都市铁路中学,成都铁路中学,四川成都铁路中学,四川省成都铁路中学,成都铁路中学" /><meta name="description" content="成都铁中,成都市铁路中学,成都铁路中学,四川成都铁路中学,四川省成都铁路中学,成都铁路中学" /><link href="Images/css.css" rel="stylesheet" type="text/css" /><script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script><script type="text/javascript" src="JS/jquery.SuperSlide.2.1.1.js"></script><script type="text/javascript"><!--
+		var timeout         = 500;
+		var closetimer		= 0;
+		var ddmenuitem      = 0;
+		// open hidden layer
+		function mopen(id)
+		{	
+			// cancel close timer
+			mcancelclosetime();
+			// close old layer
+			if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+		
+			// get new layer and show it
+			ddmenuitem = document.getElementById(id);
+			ddmenuitem.style.visibility = 'visible';
+		}
+		// close showed layer
+		function mclose()
+		{
+			if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+		}
+		// go close timer
+		function mclosetime()
+		{
+			closetimer = window.setTimeout(mclose, timeout);
+		}
+		// cancel close timer
+		function mcancelclosetime()
+		{
+			if(closetimer)
+			{
+				window.clearTimeout(closetimer);
+				closetimer = null;
+			}
+		}
+		// close layer when click-out
+		document.onclick = mclose; 
+		// --></script></head><body><!-- 以下代码必须加  开始 --><div id="img_school" style="position:absolute;left:620px;top:1115px;z-index:99998">
+<img src="AD/2015062516504754027837901301.jpg" border="0" /></div>
+<script language="javascript">
+<!--
+var xPos_school=620;
+var yPos_school=document.body.clientHeight;
+var step_school=1;
+var delay_school=30;
+var height_school=0;
+var Hoffset_school=0;
+var Woffset_school=0;
+var yon_school=0;
+var xon_school=0;
+var pause_school=true;
+var interval_school;
+img_school.style.top=yPos_school;
+function changePos_school(){
+width_school=document.body.clientWidth;
+height_school=document.body.clientHeight;
+Hoffset_school=img_school.offsetHeight;
+Woffset_school=img_school.offsetWidth;
+img_school.style.left=xPos_school + document.body.scrollLeft;
+img_school.style.top=yPos_school + document.body.scrollTop;
+if(yon_school){yPos_school=yPos_school + step_school;}
+else{yPos_school=yPos_school - step_school;}
+if(yPos_school < 0){yon_school=1;yPos_school=0;}
+if(yPos_school >=(height_school - Hoffset_school)){yon_school=0;yPos_school=(height_school - Hoffset_school);}
+if(xon_school){xPos_school=xPos_school + step_school;}
+else{xPos_school=xPos_school - step_school;}
+if(xPos_school < 0){xon_school=1;xPos_school=0;}
+if(xPos_school >=(width_school - Woffset_school)){xon_school=0;xPos_school=(width_school - Woffset_school);}}
+function start_school(){
+img_school.visibility='visible';
+interval_school=setInterval('changePos_school()', delay_school);}
+start_school();
+//-->
+</script>
+<script language="javascript">
+<!--
+var imgheight_left_school=250;
+var imgleft_left_school=50;
+function myload_left_school(){
+myleft_left_school.style.top=document.body.scrollTop+imgheight_left_school;
+myleft_left_school.style.left=imgleft_left_school;
+leftmove_left_school();}
+function leftmove_left_school(){
+myleft_left_school.style.top=document.body.scrollTop+imgheight_left_school;
+myleft_left_school.style.left=imgleft_left_school;
+setTimeout('leftmove_left_school();',50)}
+document.write("<div id='myleft_left_school' style='position:absolute;visibility:visible;z-index:999'>");
+document.write('<img src="AD/201609271029205816102340201.jpg" width="200" border="0" />');document.write("</div>");
+myload_left_school();
+//-->
+</script>
+<script language="javascript">
+<!--
+var imgheight_right_school=250;
+var imgright_right_school=50;
+function myload_right_school(){
+myright_right_school.style.top=document.body.scrollTop+imgheight_right_school;
+myright_right_school.style.right=imgright_right_school;
+rightmove_right_school();}
+function rightmove_right_school(){
+myright_right_school.style.top=document.body.scrollTop+imgheight_right_school;
+myright_right_school.style.right=imgright_right_school;
+setTimeout('rightmove_right_school();',50)}
+document.write("<div id='myright_right_school' style='position:absolute;visibility:visible;z-index:999'>");
+document.write('<img src="AD/201609271028336285498249301.jpg" width="200" border="0" />');document.write("</div>");
+myload_right_school();
+//-->
+</script>
+<!-- 以上代码必须加  结束 --><!--网页头部开始--><table width="100%" height="146" border="0" cellspacing="0" cellpadding="0" class="header_table"><tr><td><table width="1200" height="146" border="0" align="center" cellpadding="0" cellspacing="0" class="header_bg"><tr align="right"><td><embed src="images/logo.swf" type="application/x-shockwave-flash" width="540" height="140" wmode="transparent"></embed></td></tr></table></td></tr></table><!--网页头部结束--><!--导航栏开始--><table width="100%" height="60" border="0" cellspacing="0" cellpadding="0" class="nav_table"><tr><td align="center"><ul id="sddm"><li style="width:100px;"><a href="index.html">首页<br /><span>Home</span></a></li><li><img src="images/point.png" border="0" width="6" height="49" /></li><li style="width:100px;"><a href="article.aspx?id=1">校长寄语<br /><span>Head's Welcome</span></a></li><li><img src="images/point.png" border="0" width="6" height="49" /></li><li style="width:100px;"><a href="column.aspx?id=22" onMouseOver="mopen('m3')" onMouseOut="mclosetime()">校园文化<br /><span>School culture</span></a><div id="m3" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()" style="width:110px;"><a href="articleMore.aspx?id=9">学生社团<br /><!--Student organizations--></a><!-- <a href="articleMore.aspx?id=20">广播电台<br/>Broadcasting station</a>--><a href="articleMore.aspx?id=26">对外交流<br /><!--Foreign exchange--></a><a href="articleMore.aspx?id=40">学校期刊<br /><!--School Journal--></a><a href="http://www.cdtz.net/articleMore.aspx?id=56">心语小屋<br /></a></div></li><li><img src="images/point.png" border="0" width="6" height="49" /></li><li style="width:100px;"><a href="articleMore.aspx?id=54">课改动态<br /><span>Curriculum reform info</span></a></li><li><img src="images/point.png" border="0" width="6" height="49" /></li><li style="width:100px;"><a href="column.aspx?id=44" onMouseOver="mopen('m5')" onMouseOut="mclosetime()">教改科研<br /><span>Teaching research</span></a><div id="m5" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()" style="width:100px;"><a href="articleMore.aspx?id=17">教研论文<br /><!--The research of literary theory--></a><a href="articleMore.aspx?id=29">学术交流<br /><!--Academic exchange--></a><a href="articleMore.aspx?id=37">课题研究<br /><!--Research--></a></div></li><li><img src="images/point.png" border="0" width="6" height="49" /></li><li style="width:100px;"><a href="column.aspx?id=32" onMouseOver="mopen('m6')" onMouseOut="mclosetime()">硕果展示<br /><span>Achievement display</span></a><div id="m6" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()" style="width:100px;"><a href="articleMore.aspx?id=10">高考龙虎榜<br /><!--College entrance examination with uniqueness--></a><a href="articleMore.aspx?id=19">优生群英谱<br /><!--Eugenic heroes spectrum--></a><a href="articleMore.aspx?id=27">竞赛天骄录<br /><!--Tianjiao Book contest--></a><a href="articleMore.aspx?id=39">特长尖子生<br /><!--Specialty Top student--></a><a href="articleMore.aspx?id=43">累累硕果<br /><!--Fruitful--></a></div></li><li><img src="images/point.png" border="0" width="6" height="49" /></li><li style="width:100px;"><a href="articleMore.aspx?id=55">党风廉政<br /><span>Incorrupt Gov</span></a></li><li><img src="images/point.png" border="0" width="6" height="49" /></li><li style="width:100px;"><a href="articleMore.aspx?id=47">校园风光<br /><span>School Scenery</span></a></li><li><img src="images/point.png" border="0" width="6" height="49" /></li><li style="width:100px;"><a href="articleMore.aspx?id=53">招生资讯<br /><span>Admission</span></a></li><li><img src="images/point.png" border="0" width="6" height="49" /></li><li style="width:100px;"><a href="articleMore.aspx?id=58">督学责任区<br /><span>Responsibility</span></a></li></ul></td></tr></table><!--导航栏结束--><!--主体内容开始--><table width="100%" height="1204" border="0" cellspacing="0" cellpadding="0" class="content_table"><tr><td valign="top"><table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" class="content_middle_bg"><!--banner开始--><tr><td align="center" valign="middle"><div id="slideBox" class="slideBox"><div class="hd"><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul></div><div class="bd"><ul><li><a><img src="images/flashad/banner_image01.png" border="0" /></a></li><li><a><img src="images/flashad/banner_image02.png" border="0" /></a></li><li><a><img src="images/flashad/banner_image03.png" border="0" /></a></li><li><a><img src="images/flashad/banner_image04.png" border="0" /></a></li><li><a><img src="images/flashad/banner_image05.png" border="0" /></a></li></ul></div><!-- 下面是前/后按钮代码，如果不需要删除即可 --><a class="prev" href="javascript:void(0)"></a><a class="next" href="javascript:void(0)"></a></div><script type="text/javascript">
+		    //jQuery(".slideBox").slide({ mainCell: ".bd ul", effect: "fold", autoPlay: true, easing: "easeInQuint", delayTime: 1000 });
+			jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true, delayTime: 2000});
+		</script></td></tr><!--banner结束--><!--四个按钮开始--><tr><td><table width="1000" border="0" cellspacing="0" cellpadding="0" class="content_button_bg"><tr><td align="center"><a href="articleMore.aspx?id=3" target="_blank"><img src="images/button_image01.png" border="0" width="208" height="102" /></a></td><td align="center"><a href="column.aspx?id=33" target="_blank"><img src="images/button_image02.png" border="0" width="208" height="102" /></a></td><td align="center"><a href="column.aspx?id=48" target="_blank"><img src="images/button_image03.png" border="0" width="208" height="102" /></a></td><td align="center"><a href="articleMore.aspx?id=26" target="_blank"><img src="images/button_image04.png" border="0" width="208" height="102" /></a></td></tr></table></td></tr><!--四个按钮结束--><!--学校概况开始--><tr><td><table width="1000" border="0" cellspacing="0" cellpadding="0"><tr><td><img src="images/title01.png" width="972" height="22" border="0" style="margin: 18px 0px 0px 18px;" /></td></tr><tr><td><table width="1000" border="0" cellspacing="0" cellpadding="0"><tr><td width="230" style="padding: 10px 0px 0px 18px;"><span style=" text-align:center; line-height:170px;display:block;border:1px solid;width:210px;height:170px;">请在栏目【学校简介】下发表文章且上传图片宽：【210px】高：【170px】并设置为推荐文章！</span></td><td valign="top" align="center"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0"><tr align="center"><td valign="top"><span title="学校简介" class="span01">学校简介</span></td></tr><tr><td><span class="span02">&nbsp;&nbsp;&nbsp;&nbsp;“锦江春色来天地，玉垒浮云变古今”。铁中远望，锦江河水滔滔东去，百舸争流。自然景观与人文景观水乳相融，传统文化与现代文明交相辉映，历来为求学治学佳境。锦江河北岸的成都铁中各项建设成绩突出，不仅建成了“花园式”校园环境，教学质量更是突飞猛进，先后荣获四川省校风示范学校、四川省示范家长学校，四川省艺术教育特色学校，四川省阳光体育示范校，成都市德育工作先进集体、成都市校长实训基地学校、成都市教师发展基地学校、成都市普通高中课程改革样本校、成都市国际理解教育课程实验学校，成都市心理健康教育特色学校等荣誉称号。从铁路重点学校，到地方重点学校，铁中的“名校”之路不断延伸。如果没有学校始终如一的人文传承，没有继往开来的创新精神，铁中的成长，不会如此一片坦途：1962年，成都铁中成立。学校前身是成都铁路局子弟学校，曾经是西南乃至全国知名的铁路重点学校；1982年被命名为四川省首批办好的省重点学校；2004年，铁路改制，铁中由成都市金牛区教育局直接管理，成为地方学校；2008年，学校与一墙之隔的成都市31中成功合并，办学规模进一步扩大；2016年，学校顺利通过四川省一级示范性普通高中验收，正式跨入“国重...</span></td></tr><tr align="right"><td><a href="article.aspx?id=1077" target="_blank"><span title="学校简介" class="">『详细内容』</span></a></td></tr></table></td></tr></table></td></tr></table></td></tr><!--学校概况开始--><tr><td><table width="1000" border="0" cellspacing="0" cellpadding="0"><tr><!--最新新闻开始--><td valign="top"><table width="500" border="0" cellspacing="0" cellpadding="0"><tr><td style="padding-left:18px;"><img src="images/title02.png" width="500" height="30" border="0" /></td></tr><tr><td><table width="500" border="0" cellspacing="0" cellpadding="0"><tr><td width="230" style="padding: 10px 0px 0px 18px;"><!--轮换图片开始--><embed id="focus_flash" src="images/pixviewer.swf" wmode="opaque" bgcolor="#cccccc" FlashVars="pics=/ArtImgs/image/20180522/thumb/20180522092747_8914.jpg|/ArtImgs/image/20180508/thumb/20180508084503_9612.jpg|/ArtImgs/image/20180508/thumb/20180508084013_5035.jpg|/ArtImgs/image/20180507/thumb/20180507162555_7800.jpg|/ArtImgs/image/20180507/thumb/20180507150758_9185.jpg&links=article.aspx?id=1079|article.aspx?id=1076|article.aspx?id=1075|article.aspx?id=1074|article.aspx?id=1073&texts=教育情怀 实验引领|“诗意海棠，青春激昂”（第三话）|“诗意海棠，青春激昂”（第四话）|十八岁，奔跑吧|跟着时代进步，规划你的人生&borderwidth=210&borderheight=150&textheight=20" menu="false" quality="high" width="210" height="170" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /><!--轮换图片结束--></td><td valign="top" align="center"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="table_001"><tr><td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr bgcolor="">
+<td width="20" height="25" align="center" valign="middle"><img src="images/ico.png" width="19" height="16" /></td>
+<td title="教育情怀 实验引领" width="" nowrap><a href="article.aspx?id=1079" target="_blank"><span style="color:;">教育情怀 实验引领</span></a></td>
+<td><span style="color:;">[05-22]</span></td>
+</tr>
+<tr bgcolor="">
+<td width="20" height="25" align="center" valign="middle"><img src="images/ico.png" width="19" height="16" /></td>
+<td title="“诗意海棠，青春激昂”（第三话）" width="" nowrap><a href="article.aspx?id=1076" target="_blank"><span style="color:;">“诗意海棠，青春激昂”（第...</span></a></td>
+<td><span style="color:;">[05-08]</span></td>
+</tr>
+<tr bgcolor="">
+<td width="20" height="25" align="center" valign="middle"><img src="images/ico.png" width="19" height="16" /></td>
+<td title="“诗意海棠，青春激昂”（第四话）" width="" nowrap><a href="article.aspx?id=1075" target="_blank"><span style="color:;">“诗意海棠，青春激昂”（第...</span></a></td>
+<td><span style="color:;">[05-08]</span></td>
+</tr>
+<tr bgcolor="">
+<td width="20" height="25" align="center" valign="middle"><img src="images/ico.png" width="19" height="16" /></td>
+<td title="十八岁，奔跑吧" width="" nowrap><a href="article.aspx?id=1074" target="_blank"><span style="color:;">十八岁，奔跑吧</span></a></td>
+<td><span style="color:;">[05-07]</span></td>
+</tr>
+<tr bgcolor="">
+<td width="20" height="25" align="center" valign="middle"><img src="images/ico.png" width="19" height="16" /></td>
+<td title="跟着时代进步，规划你的人生" width="" nowrap><a href="article.aspx?id=1073" target="_blank"><span style="color:;">跟着时代进步，规划你的人生</span></a></td>
+<td><span style="color:;">[05-07]</span></td>
+</tr>
+<tr bgcolor="">
+<td width="20" height="25" align="center" valign="middle"><img src="images/ico.png" width="19" height="16" /></td>
+<td title="我校组队，勇夺成都市第五届初中生综合运动会武术比赛第一名" width="" nowrap><a href="article.aspx?id=1072" target="_blank"><span style="color:;">我校组队，勇夺成都市第五届...</span></a></td>
+<td><span style="color:;">[05-07]</span></td>
+</tr>
+<tr bgcolor="">
+<td width="20" height="25" align="center" valign="middle"><img src="images/ico.png" width="19" height="16" /></td>
+<td title="加强学校安全，共建平安校园" width="" nowrap><a href="article.aspx?id=1069" target="_blank"><span style="color:;">加强学校安全，共建平安校园</span></a></td>
+<td><span style="color:;">[04-28]</span></td>
+</tr>
+</table>
+</td></tr><tr align="right"><td><a href="articleMore.aspx?id=3" target="_blank"><span style="color:#666666;">更多...</span></a></td></tr></table></td></tr></table></td></tr></table></td><!--最新新闻结束--><!--校园公告开始--><td valign="top"><table width="460" border="0" cellspacing="0" cellpadding="0"><tr><td><img src="images/title05.png" width="460" height="30" border="0" /></td></tr><tr><td><table width="460" border="0" cellspacing="0" cellpadding="0"><tr><td valign="top" align="center"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0" class="table_001"><tr><td align="center"><!-- 滚动公告开始 //-->
+<div style="OVERFLOW:hidden;WIDTH:420;">
+<div id="marquees_gg">
+<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+<tr><td>&nbsp;</td></tr>
+<tr><td align='center' style='font-size:14px;color:#000000;word-break:break-all;'><b>2018年成都铁中高中自主招生工作公告</b></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td style='font-size:12px;word-break:break-all;'><a href="Article.aspx?id=1082">经四川省教育厅、成都市教育局批准，成都铁中2018年面向全省招收外地生招生报名工作于5月20日正式启动。现在相关情况说明如下：一、招生计划一个班，50人二、报名时间及登陆报名网址：1、报名时间：2018年5月20日上午10：00-6月15日上午12：002、报名网址：zkzx.cdzk.netwww.cdzk.orgwww.cdzk.com点“中考网络应用服务平台”先进行注册，再进行报名。三、报名条件：1、凡未在成都市“5+2”区域（包括成都天府新区指纳入中心城区招生范围的区、成都高新区不含成都天府空港国际新城、锦江区、青羊区、金牛区、武侯区、成华区）参加高中阶段教育学校统一招生考试报名的2018届初三毕业（含成都市中心城区户籍、非成都市中心城区户籍）学生，均可参加本次网上报名。2、有较强的学习能力和生活自理能力，在校期间能够遵守学校相关规定。3、全面发展，身体和心理健康，有一定的人文素养和科学素养。四、考试时间、科目1、考试日期：6月17日星期日2、考试科目及具体时间：上午：9：30-11：00数学下午：14：00-15：30物理16：00-17：30英语五、其他说明：1、网上报名：考生在网上报名时，务必上传本人1寸近期免冠照片(无照片不审核)。2、现场确认：已网上报名的考生或家长在法定工作日时间的上午9：00-11：30，下午2：30-5：00带上二代身份证原件（如无二代身份证，请务必携带临时身份证）、网上报名审核成功后的表格打印件，到成都铁中招生办公室（白马寺北顺街）现场确认资格，领取准考证。3、请参考考生于考试当日携带二代身份证原件（未办理身份证的应持有临时身份证原件）、《成都铁中外地生招生考试准考证》到成都铁中相应考场参考。4、考试成绩可在成都铁中官网查询（具体查询时间和方式见考试当日说明），预录名单将挂成都铁中官网公告，正式录取名单以成都市招办审核通过为准。5、初中阶段有数学、物理竞赛获奖者，在录取时可享受加分。6、咨询电话：（028）8318009186439272-8408成都市铁路中学校2018年5月20日</a></td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td align='right' style='color:color:#000000;'>2018年5月23日</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr bgcolor="">
+<td width="20" height="25" align="center" valign="middle"><img src="images/ico.png" width="19" height="16" /></td>
+<td title="2018年成都铁中高中自主招生工作公告" width="" nowrap><a href="article.aspx?id=1082" target="_blank"><span style="color:#000000;">2018年成都铁中高中自主招生工作公告</span></a><span style="color:#bbbbbb;">(05-23)</span></td>
+</tr>
+<tr bgcolor="">
+<td width="20" height="25" align="center" valign="middle"><img src="images/ico.png" width="19" height="16" /></td>
+<td title="区级优秀公示（第三榜）" width="" nowrap><a href="article.aspx?id=1063" target="_blank"><span style="color:#000000;">区级优秀公示（第三榜）</span></a><span style="color:#bbbbbb;">(03-21)</span></td>
+</tr>
+<tr bgcolor="">
+<td width="20" height="25" align="center" valign="middle"><img src="images/ico.png" width="19" height="16" /></td>
+<td title="区级优秀公示（第二榜）" width="" nowrap><a href="article.aspx?id=1062" target="_blank"><span style="color:#000000;">区级优秀公示（第二榜）</span></a><span style="color:#bbbbbb;">(03-16)</span></td>
+</tr>
+<tr bgcolor="">
+<td width="20" height="25" align="center" valign="middle"><img src="images/ico.png" width="19" height="16" /></td>
+<td title="市级评优公示（第三榜）" width="" nowrap><a href="article.aspx?id=1059" target="_blank"><span style="color:#000000;">市级评优公示（第三榜）</span></a><span style="color:#bbbbbb;">(03-16)</span></td>
+</tr>
+<tr bgcolor="">
+<td width="20" height="25" align="center" valign="middle"><img src="images/ico.png" width="19" height="16" /></td>
+<td title="市级优秀评选公示" width="" nowrap><a href="article.aspx?id=1058" target="_blank"><span style="color:#000000;">市级优秀评选公示</span></a><span style="color:#bbbbbb;">(03-12)</span></td>
+</tr>
+<tr bgcolor="">
+<td width="20" height="25" align="center" valign="middle"><img src="images/ico.png" width="19" height="16" /></td>
+<td title="区级优秀公示（第一榜）" width="" nowrap><a href="article.aspx?id=1061" target="_blank"><span style="color:#000000;">区级优秀公示（第一榜）</span></a><span style="color:#bbbbbb;">(03-10)</span></td>
+</tr>
+<tr bgcolor="">
+<td width="20" height="25" align="center" valign="middle"><img src="images/ico.png" width="19" height="16" /></td>
+<td title="成都市铁路中学校市级评优领导小组及一榜公示" width="" nowrap><a href="article.aspx?id=1056" target="_blank"><span style="color:#000000;">成都市铁路中学校市级评优领导小组及一榜公示</span></a><span style="color:#bbbbbb;">(03-08)</span></td>
+</tr>
+</table>
+
+</div>
+<div id="hidden_gg" style="Z-INDEX:1;VISIBILITY:hidden;POSITION:absolute"></div>
+</div>
+<script language='javascript'>
+<!--
+var MarqueeLayer_gg = document.all.marquees_gg;
+scrollwidth_gg=420;
+scrollheight_gg=170;
+stopscroll_gg=false;
+MarqueeLayer_gg.scrollTop=0;
+with(MarqueeLayer_gg){
+style.width=scrollwidth_gg;
+style.height=scrollheight_gg;
+style.overflowX='hidden';
+style.overflowY='hidden';
+noWrap=true;
+onmouseover=new Function('stopscroll_gg=true');
+onmouseout=new Function('stopscroll_gg=false');
+}
+HiddenLayer_gg = document.all.hidden_gg;
+function init_gg(){
+while(HiddenLayer_gg.offsetHeight<scrollheight_gg){
+HiddenLayer_gg.innerHTML+=MarqueeLayer_gg.innerHTML;}
+MarqueeLayer_gg.innerHTML=HiddenLayer_gg.innerHTML+HiddenLayer_gg.innerHTML;
+setInterval('scrollUp_gg()',40);
+}
+window.attachEvent('onload',init_gg);
+preTop_gg=0;
+function scrollUp_gg(){
+if(stopscroll_gg==true) return;
+preTop_gg=MarqueeLayer_gg.scrollTop;
+MarqueeLayer_gg.scrollTop+=1;
+if(preTop_gg==MarqueeLayer_gg.scrollTop){
+MarqueeLayer_gg.scrollTop=HiddenLayer_gg.offsetHeight-scrollheight_gg+1;}
+}
+//-->
+</script>
+<!-- 滚动公告结束 //-->
+</td></tr><tr align="right"><td><a href="articleMore.aspx?id=1" target="_blank"><span style="color:#666666;">更多...</span></a></td></tr></table></td></tr></table></td></tr></table></td><!--校园公告结束--></tr></table></td></tr><tr><td valign="top"><table width="1000" border="0" cellspacing="0" cellpadding="0"><tr><!--友情链接开始--><td><table width="500" border="0" cellspacing="0" cellpadding="0"><tr align="center"><td><img src="images/title03.png" border="0" width="487" height="39" style="margin: 10px 0px 0px 0px;" /></td></tr><tr><td height="33" style="padding-left:10px;"><table border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td align="center" nowrap><a href="http://jnjydd.jnei.cn" target="_blank"><img src="Fellowship/2015120711134635155936966901.jpg" style="border:solid #000000 1px" width="85" height="23" alt="金牛教育督导网" /></a></td>
+</tr>
+</table>
+</td></tr></table></td><!--友情链接结束--><!--联系我们开始--><td><table width="500" border="0" cellspacing="0" cellpadding="0"><tr align="center"><td><img src="images/title04.png" border="0" width="487" height="39" style="margin: 10px 0px 0px 0px;" /></td></tr><tr><td><table border="0" cellspacing="0" cellpadding="0"><tr><td><img src="images/ico_phone.png" border="0" width="36" height="33" style="margin: 5px 0px 5px 20px;" /></td><td><a>028-83180373</a></td><td><img src="images/ico_email.png" border="0" width="36" height="33" style="margin: 5px 0px 5px 50px;" /></td><td>
+                                                                cdtz@qq.com
+                                                            </td></tr></table></td></tr></table></td><!--联系我们结束--></tr><tr height="10"><td></td></tr></table></td></tr></table></td></tr><!--网页底部信息开始--><tr><td valign="top" align="center"><a href="Manage/index.htm" target="_blank">管理登录</a><table cellSpacing="0" cellPadding="0" width="100%" border="0">
+<tr>
+<td align="center">COPYRIGHT 2009 成都市铁路中学版权所有&nbsp;<span class="font2">成都市铁路中学</span>和<a href="http://www.8211.com/" target="_blank"><span class="font2">8211</span></a>联合设计制作</td>
+</tr>
+<tr>
+<td align="center">地址：成都市一环路北二段34号（人北十字路口向西500米一环路侧)&nbsp;备案序号：蜀ICP备05011934号&nbsp;邮政编码：610081</td>
+</tr>
+<tr>
+<td align="center">Email：<a href="mailto:cdtz@8211.com">cdtz@8211.com</a>&nbsp;联系电话：(028)83180373  83180761</td>
+</tr>
+</table>
+<script type="text/javascript" src="http://dcs.conac.cn/js/23/333/1993/40354800/CA233331993403548000001.js"></script></td></tr><!--网页底部信息结束--></table><!--主体内容结束--></body></html>

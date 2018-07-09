@@ -1,0 +1,524 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+
+  <head>
+
+   
+
+    <title>福州一中欢迎您！</title>
+
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+	<meta http-equiv="pragma" content="no-cache"/>
+
+	<meta http-equiv="cache-control" content="no-cache"/>
+
+	<meta http-equiv="expires" content="0"/>    
+
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3"/>
+
+	<meta http-equiv="description" content="This is my page"/>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+
+	<style type="text/css">
+
+		.alert{filter:alpha(opacity=80); /* IE */ -moz-opacity:0.8; /* Moz + FF */ z-index:99; }
+
+	    #msg_win{position:absolute;right:0px;display:none;overflow:hidden;z-index:99;border:1px solid gray;background:#F9EFFC;width:340px;font-size:12px;margin:0px;}
+
+	    #msg_win .icos{position:absolute;top:2px;*top:0px;right:2px;z-index:9;}
+
+	    .icos a{float:left;color:#FFFFFF;margin:1px;text-align:center;font-weight:bold;width:14px;height:22px;line-height:22px;padding:1px;text-decoration:none;font-family:webdings;}
+
+	    .icos a:hover{color:#FFCC00;}
+
+	    #msg_title{background:rgb(186,12,13);border-bottom:1px solid #710B97;border-top:1px solid #FFF;border-left:1px solid #FFF;color:#FFFFFF;height:25px;line-height:25px;text-indent:5px;font-weight:bold;}
+
+	    #msg_content{float:right;margin:1px;width:315px;height:178px;overflow:hidden;} 
+
+	    #msg_videotab{background-image:url(images/msg_videotab.png); background-repeat:repeat-y;float:left;margin:1px;width:19px;height:178px;overflow:hidden;} 
+
+	  
+
+	    #videotag1{overflow:hidden; width:18px;height:55px;float:left; text-align:center; line-height:55px; font-size:12px; color:#333738; margin-top:1px; margin-left:1px;-margin-left:0px; border-left:#082B41 1px solid; border-right: #082B41 1px solid; border-top:#082B41 1px solid; background-color:#FFE1AF}
+
+		#videotag2{overflow:hidden;width:18px;height:64px;float:left; text-align:center; line-height:64px; font-size:12px; color:#FFFFFF; margin-top:1px;}
+
+		
+
+		.con99:link {color: #000000;	text-decoration: none;}
+
+		.con99:visited {color: #000000;text-decoration: none;}
+
+		.con99:hover {color:#f96843;text-decoration: underline;}/*灰色字体链接样式*/
+
+		
+
+		.con100:link {color: #FFFFFF;	text-decoration: none;}
+
+		.con100:visited {color: #FFFFFF;text-decoration: none;}
+
+		.con100:hover {color: #FFFFFF;text-decoration: underline;}/*白色字体链接样式*/ 
+
+	</style>
+
+	<script type="text/javascript" src="flowplayer/flowplayer-3.2.12.min.js"></script>
+
+	<script type="text/javascript" src="sys/js/jquery.js"></script>
+
+  </head>
+
+	<body margintop="0" marginleft="0" style="margin:0;padding:0">
+
+	
+
+		<iframe src="index.jsp" frameborder="0" style="margin: 0px;padding: 0px;" id="iframepage" name="iframepage" onload="this.height=300" width="100%" scrolling="auto"></iframe>
+
+	    <div id="msg_win" class="alert" style="display:block;visibility:visible;opacity:1;"> 
+
+		    <div class="icos"><a id="msg_min" title="最小化" href="javascript:void 0">_</a><a id="msg_close" title="关闭" href="javascript:closeVideo();">×</a></div>
+
+		    <div id="msg_title">福州第一中学欢迎您!</div> 
+
+		    <div   id="msg_videotab">
+
+			   	  <div class="videotag1" id="videotag1">
+
+                   <a href="javascript:showvideo(1);" class="con99" id="myvideotag1">[1]</a>
+
+                  </div>
+
+			      <div   id="videotag2">
+
+			       <a href="javascript:showvideo(2);" class="con100" id="myvideotag2">[2]</a>
+
+			      </div>
+
+			</div>   
+
+		    <div id="msg_content">
+
+				<a href="upload/newsvideos/VTS_01_2.mp4"
+
+					 style="display:block;width:100%;height:100%"  
+
+					 id="player"> 
+
+				</a>
+
+			</div> 
+
+	    </div>
+
+	     <input type="hidden"  name="video_type" id="video_type" value="1"/>   
+
+		<script language="javascript"  type="text/javascript">
+
+			//视屏切换按钮
+
+			function showvideo(videoid){ 
+
+				if(videoid=="1"){   
+
+                      document.getElementById("video_type").value=videoid;  
+
+					  $("#player").attr("href","upload/newsvideos/VTS_01_2.mp4");//改变页面的链接     
+
+						//重新初始化播放器  
+
+						 flowplayer("player", "flowplayer/flowplayer-3.2.16.swf",{
+
+							clip: {
+
+						        onFinish: function() {//播放完自动关闭窗口
+
+					               closeVideo();
+
+					            }
+
+						    }
+
+						 }); 
+
+						 window.setInterval("reinitIframe()", 200);  
+
+						  document.getElementById("msg_videotab").innerHTML ='';
+
+						   document.getElementById("msg_videotab").innerHTML = '<div   id="videotag1"><a href="javascript:showvideo(1);" class="con99" id="myvideotag1">[1]</a></div><div  id="videotag2"><a href="javascript:showvideo(2);" class="con100" id="myvideotag2">[2]</a></div>';
+
+		                  player.play(); 
+
+		         }   
+
+				if(videoid=="2"){  
+
+				     //if(player!= null) {
+
+				    	//player.stop();  
+
+				     //} 
+
+                     document.getElementById("video_type").value=videoid;  
+
+					  $("#player").attr("href","upload/newsvideos/sys_4.mp4");//改变页面的链接    
+
+						//重新初始化播放器  
+
+						 flowplayer("player", "flowplayer/flowplayer-3.2.16.swf",{
+
+							clip: {
+
+						        onFinish: function() {//播放完自动关闭窗口
+
+					               closeVideo();
+
+					            }
+
+						    }
+
+						 }); 
+
+						 window.setInterval("reinitIframe()", 200);  
+
+						 document.getElementById("msg_videotab").innerHTML ='';
+
+						 document.getElementById("msg_videotab").innerHTML = '<div   id="videotag2"><a href="javascript:showvideo(1);" class="con100" id="myvideotag2">[1]</a></div><div   id="videotag1"><a href="javascript:showvideo(2);" class="con99" id="myvideotag1">[2]</a></div>';
+
+		                  player.play(); 
+
+				}   
+
+			}   
+
+		
+
+		
+
+			//关闭视频窗口
+
+			function closeVideo(){
+
+				Message.close();
+
+				player.stop();
+
+			}
+
+			
+
+			//最小化与恢复状态切换 视频播放与暂停
+
+			function minVideo(status){
+
+				if(status==1){
+
+					player.pause();
+
+				}else if(status==0){
+
+					player.play();
+
+				}
+
+			}
+
+
+
+			//iframe 高度自适应
+
+			function reinitIframe(){
+
+				var iframe = document.getElementById("iframepage");
+
+				try{
+
+					var bHeight = iframe.contentWindow.document.body.scrollHeight;
+
+					var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+
+					var height = Math.max(bHeight, dHeight);
+
+					iframe.height =  height;
+
+				}catch (ex){}
+
+			}
+
+			
+
+			var Message = {
+
+				set : function() {//最小化与恢复状态切换
+
+					var set = this.minbtn.status == 1 ? [ 0, 1, 'block',
+
+							this.char[0], '最小化' ] : [ 1, 0, 'none',
+
+							this.char[1], '恢复' ];
+
+					this.minbtn.status = set[0];
+
+					this.win.style.borderBottomWidth = set[1];
+
+					this.content.style.display = set[2]; 
+
+					this.videotab.style.display = set[2]; 
+
+					this.minbtn.innerHTML = set[3];
+
+					this.minbtn.title = set[4];
+
+					this.win.style.top = this.getY().top;
+
+					minVideo(this.minbtn.status);
+
+				},
+
+				close : function() {//关闭
+
+					this.win.style.display = 'none';
+
+					window.onscroll = null;
+
+				},
+
+				setOpacity : function(x) {//设置透明度
+
+					var v = x >= 100 ? '' : 'Alpha(opacity=' + x + ')';
+
+					this.win.style.visibility = x <= 0 ? 'hidden' : 'visible';//IE有绝对或相对定位内容不随父透明度变化的bug
+
+					this.win.style.filter = v;
+
+					this.win.style.opacity = x / 100;
+
+				},
+
+				show : function() {//渐显
+
+					clearInterval(this.timer2);
+
+					var me = this, fx = this.fx(0, 100, 0.1), t = 0;
+
+					this.timer2 = setInterval(function() {
+
+						t = fx();
+
+//						me.setOpacity(t[0]);
+
+						if (t[1] == 0) {
+
+							clearInterval(me.timer2);
+
+						}
+
+					}, 6);//10 to 6
+
+				},
+
+				fx : function(a, b, c) {//缓冲计算
+
+					var cMath = Math[(a - b) > 0 ? "floor" : "ceil"], c = c || 0.1;
+
+					return function() {
+
+						return [ a += cMath((b - a) * c), a - b ];
+
+					};
+
+				},
+
+				getY : function() {//计算移动坐标
+
+					var d = document, b = document.body, e = document.documentElement;
+
+					var s = Math.max(b.scrollTop, e.scrollTop);
+
+					var h = /BackCompat/i.test(document.compatMode) ? b.clientHeight
+
+							: e.clientHeight;
+
+					var h2 = this.win.offsetHeight;
+
+					return {
+
+						foot : s + h + h2 + 2 + 'px',
+
+						top : s + h - h2 - 2 + 'px'
+
+					};
+
+				},
+
+				moveTo : function(y) {//移动动画
+
+					clearInterval(this.timer);
+
+					var me = this, a = parseInt(this.win.style.top) || 0;
+
+					var fx = this.fx(a, parseInt(y));
+
+					var t = 0;
+
+					this.timer = setInterval(function() {
+
+						t = fx();
+
+						me.win.style.top = t[0] + 'px';
+
+						if (t[1] == 0) {
+
+							clearInterval(me.timer);
+
+							me.bind();
+
+						}
+
+					}, 6);//10 to 6
+
+				},
+
+				bind : function() {//绑定窗口滚动条与大小变化事件
+
+					var me = this, st, rt;
+
+					window.onscroll = function() {
+
+						clearTimeout(st);
+
+						clearTimeout(me.timer2);
+
+	//					me.setOpacity(0);
+
+						st = setTimeout(function() {
+
+							me.win.style.top = me.getY().top;
+
+							me.show();
+
+						}, 100);//600 mod 100
+
+					};
+
+					window.onresize = function() {
+
+						clearTimeout(rt);
+
+						rt = setTimeout(function() {
+
+							me.win.style.top = me.getY().top;
+
+						}, 100);
+
+					};
+
+				},
+
+				init : function() {//创建HTML
+
+					function $(id) {
+
+						return document.getElementById(id);
+
+					}
+
+					;
+
+					this.win = $('msg_win');
+
+					var set = {
+
+						minbtn : 'msg_min',
+
+						closebtn : 'msg_close',
+
+						title : 'msg_title',
+
+						content : 'msg_content',
+
+						videotab: 'msg_videotab'
+
+					};
+
+					for ( var Id in set) {
+
+						this[Id] = $(set[Id]);
+
+					}
+
+					;
+
+					var me = this;
+
+					this.minbtn.onclick = function() {
+
+						me.set();
+
+						this.blur();
+
+					};
+
+					this.closebtn.onclick = function() {
+
+						me.close();
+
+					};
+
+					this.char = navigator.userAgent.toLowerCase().indexOf(
+
+							'firefox') + 1 ? [ '_', '::', '×' ] : [ '0', '2',
+
+							'r' ];//FF不支持webdings字体
+
+					this.minbtn.innerHTML = this.char[0];
+
+					this.closebtn.innerHTML = this.char[2];
+
+					setTimeout(function() {//初始化最先位置
+
+						me.win.style.display = 'block';
+
+						me.win.style.top = me.getY().foot;
+
+						me.moveTo(me.getY().top);
+
+					}, 0);
+
+					return this;
+
+				}
+
+			};
+
+			Message.init();
+
+		</script>
+
+		<script>
+
+			var player = flowplayer("player", "flowplayer/flowplayer-3.2.16.swf",{
+
+				clip: {
+
+			        onFinish: function() {//播放完自动关闭窗口
+
+		               closeVideo();
+
+		            }
+
+			    }
+
+			});
+
+			window.setInterval("reinitIframe()", 200);
+
+		</script>
+
+	</body>
+
+</html>
+

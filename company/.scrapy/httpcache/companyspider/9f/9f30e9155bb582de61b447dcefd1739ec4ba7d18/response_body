@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>福建生物工程职业技术学院</title>
+        <meta name="keywords" content="福建生物工程职业技术学院" />
+        <meta name="description" content="福建生物工程职业技术学院" />
+        <script language="javascript">
+        <!--
+            timeRest = 5;
+            oldUrl = "http://www.fjyyxx.com";
+            oldUrl2 = "http://www.fjswgcxy.cn";
+            newUrl = "http://www.fjvcb.cn";
+            homeUrl = "/home/";
+            
+            function checkUrl()
+            {
+                if(window.location.href.toLowerCase().indexOf(newUrl)>=0)
+                {
+                    //alert(0);
+                    return 0;
+                }
+                else if(window.location.href.toLowerCase().indexOf(oldUrl)>=0
+                      ||window.location.href.toLowerCase().indexOf(oldUrl2)>=0
+                    )
+                {
+                    //alert(1);
+                    return 1;
+                }
+                else
+                {
+                    //alert(2);
+                    return 2;
+                }
+            }
+            
+            function showTimespan() 
+            {
+                if(checkUrl() == 1)
+                {
+                    if(timeRest == 0)
+                        turnUrl();
+                        
+                    document.getElementById("showtimerest").innerHTML = "等待" + timeRest + "秒后自动跳转";
+                    timeRest--;
+                    timerID = setTimeout("showTimespan()", 1000);
+                    
+                    timerRunning = true;
+                }
+                else
+                {
+                    turnUrl();
+                }
+            }
+
+            function turnUrl()
+            {
+                //window.document.URL = "/home/indexnow.asp";
+                if(window.location.href.toLowerCase().indexOf("www")>=0)
+                    window.location.href = newUrl + homeUrl;
+                else
+                    window.location.href = homeUrl;    
+            }       
+         -->
+        </script>
+    </head>
+<script language="javascript">
+if(checkUrl() != 1 )
+{
+    //alert("yes 2");
+    turnUrl();
+}    
+</script>
+    <body>
+    <center>
+    <table border="0">
+        <tr><td height="500" valign="middle">
+            <div id="desp">学院已启用新网址：<a href="http://www.fjvcb.cn">www.fjvcb.cn</a></div>
+            <div id="showtimerest"></div>
+            </td>
+        </tr> 
+    </table>
+    </center>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F14da95f7fcbb597e15533abca9394769' type='text/javascript'%3E%3C/script%3E"));
+</script>    
+    </body>
+</html>
+<script language="javascript">
+showTimespan();
+</script>
+

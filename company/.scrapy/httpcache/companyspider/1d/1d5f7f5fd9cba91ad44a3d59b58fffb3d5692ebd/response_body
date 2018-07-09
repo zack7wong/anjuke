@@ -1,0 +1,536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<script>document.title='浦口第十七中学';</script>
+
+<!--
+<link rel="stylesheet" type="text/css" href="/images/v7/style.css">
+<link rel="stylesheet" type="text/css" href="/images/v7/cms.css">
+-->
+
+<link href="/images/sqzx/css/sqzx.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+</head>
+<SCRIPT LANGUAGE="JavaScript">
+//屏蔽可忽略的js脚本错误
+function killErr(){
+	return true;
+}
+window.onerror=killErr;
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript" src="/images/default/inc.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" src="/images/default/default.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" src="/images/default/swfobject.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" src="/images/default/jquery-1.2.6.min.js"></SCRIPT>
+<script type="text/javascript" src="/images/sqzx/js/index.js"></script>
+<script type="text/javascript" src="/images/sqzx/js/jquery-1.8.0.js"></script>
+
+</head>
+
+<body>
+	<div class="boDy">
+        <div id="logo" class="main"></div>
+        <div id="nav" class="main">
+            <a href="/" style="padding: 0 15px;">首页</a>
+            <a href="list.php?fid=211" style="padding: 0 15px;">全景校园</a>
+            <a href="list.php?fid=191" style="padding: 0 15px;">校务公开</a>
+            <a href="list.php?fid=197" style="padding: 0 15px;">共生课堂</a>
+            <a href="list.php?fid=229" style="padding: 0 15px;">德育经纬</a>
+            <a href="list.php?fid=235" style="padding: 0 15px;">教育科研</a>
+            <a href="list.php?fid=242" style="padding: 0 15px;">博雅空间</a>
+            <a href="list.php?fid=251" style="padding: 0 15px;">真爱地带</a>
+            <a href="list.php?fid=256" style="padding: 0 15px;">党工建设</a>
+            <a href="list.php?fid=278" style="padding: 0 15px;">教育督导</a>
+            <a href="list.php?fid=284" style="padding: 0 15px;">校园足球</a>
+        </div>    
+
+<!--
+-->
+
+<script type="text/javascript">
+ <!--
+    //公共脚本文件 main.js
+    function addEvent(obj, evtType, func, cap) {
+        cap = cap || false;
+        if (obj.addEventListener) {
+            obj.addEventListener(evtType, func, cap);
+            return true;
+        } else if (obj.attachEvent) {
+            if (cap) {
+                obj.setCapture();
+                return true;
+            } else {
+                return obj.attachEvent("on" + evtType, func);
+            }
+        } else {
+            return false;
+        }
+    }
+    function getPageScroll() {
+        var xScroll, yScroll;
+        if (self.pageXOffset) {
+            xScroll = self.pageXOffset;
+        } else if (document.documentElement && document.documentElement.scrollLeft) {
+            xScroll = document.documentElement.scrollLeft;
+        } else if (document.body) {
+            xScroll = document.body.scrollLeft;
+        }
+        if (self.pageYOffset) {
+            yScroll = self.pageYOffset;
+        } else if (document.documentElement && document.documentElement.scrollTop) {
+            yScroll = document.documentElement.scrollTop;
+        } else if (document.body) {
+            yScroll = document.body.scrollTop;
+        }
+        arrayPageScroll = new Array(xScroll, yScroll);
+        return arrayPageScroll;
+    }
+    function GetPageSize() {
+        var xScroll, yScroll;
+        if (window.innerHeight && window.scrollMaxY) {
+            xScroll = document.body.scrollWidth;
+            yScroll = window.innerHeight + window.scrollMaxY;
+        } else if (document.body.scrollHeight > document.body.offsetHeight) {
+            xScroll = document.body.scrollWidth;
+            yScroll = document.body.scrollHeight;
+        } else {
+            xScroll = document.body.offsetWidth;
+            yScroll = document.body.offsetHeight;
+        }
+        var windowWidth, windowHeight;
+        if (self.innerHeight) {
+            windowWidth = self.innerWidth;
+            windowHeight = self.innerHeight;
+        } else if (document.documentElement && document.documentElement.clientHeight) {
+            windowWidth = document.documentElement.clientWidth;
+            windowHeight = document.documentElement.clientHeight;
+        } else if (document.body) {
+            windowWidth = document.body.clientWidth;
+            windowHeight = document.body.clientHeight;
+        }
+        if (yScroll < windowHeight) {
+            pageHeight = windowHeight;
+        } else {
+            pageHeight = yScroll;
+        }
+        if (xScroll < windowWidth) {
+            pageWidth = windowWidth;
+        } else {
+            pageWidth = xScroll;
+        }
+        arrayPageSize = new Array(pageWidth, pageHeight, windowWidth, windowHeight)
+        return arrayPageSize;
+    }
+    var AdMoveConfig = new Object();
+    AdMoveConfig.IsInitialized = false;
+    AdMoveConfig.ScrollX = 0;
+    AdMoveConfig.ScrollY = 0;
+    AdMoveConfig.MoveWidth = 0;
+    AdMoveConfig.MoveHeight = 0;
+    AdMoveConfig.Resize = function () {
+        var winsize = GetPageSize();
+        AdMoveConfig.MoveWidth = winsize[2];
+        AdMoveConfig.MoveHeight = winsize[3];
+        AdMoveConfig.Scroll();
+    }
+    AdMoveConfig.Scroll = function () {
+        var winscroll = getPageScroll();
+        AdMoveConfig.ScrollX = winscroll[0];
+        AdMoveConfig.ScrollY = winscroll[1];
+    }
+    addEvent(window, "resize", AdMoveConfig.Resize);
+    addEvent(window, "scroll", AdMoveConfig.Scroll);
+    function AdMove(id) {
+        if (!AdMoveConfig.IsInitialized) {
+            AdMoveConfig.Resize();
+            AdMoveConfig.IsInitialized = true;
+        }
+        var obj = document.getElementById(id);
+        obj.style.position = "absolute";
+        var W = AdMoveConfig.MoveWidth - obj.offsetWidth;
+        var H = AdMoveConfig.MoveHeight - obj.offsetHeight;
+        var x = W * Math.random(), y = H * Math.random();
+        var rad = (Math.random() + 1) * Math.PI / 6;
+        var kx = Math.sin(rad), ky = Math.cos(rad);
+        var dirx = (Math.random() < 0.5 ? 1 : -1), diry = (Math.random() < 0.5 ? 1 : -1);
+        var step = 1;
+        var interval;
+        this.SetLocation = function (vx, vy) { x = vx; y = vy; }
+        this.SetDirection = function (vx, vy) { dirx = vx; diry = vy; }
+        obj.CustomMethod = function () {
+            obj.style.left = (x + AdMoveConfig.ScrollX) + "px";
+            obj.style.top = (y + AdMoveConfig.ScrollY) + "px";
+            rad = (Math.random() + 1) * Math.PI / 6;
+            W = AdMoveConfig.MoveWidth - obj.offsetWidth;
+            H = AdMoveConfig.MoveHeight - obj.offsetHeight;
+            x = x + step * kx * dirx;
+            if (x < 0) { dirx = 1; x = 0; kx = Math.sin(rad); ky = Math.cos(rad); }
+            if (x > W) { dirx = -1; x = W; kx = Math.sin(rad); ky = Math.cos(rad); }
+            y = y + step * ky * diry;
+            if (y < 0) { diry = 1; y = 0; kx = Math.sin(rad); ky = Math.cos(rad); }
+            if (y > H) { diry = -1; y = H; kx = Math.sin(rad); ky = Math.cos(rad); }
+        }
+        this.Run = function () {
+            var delay = 20;
+            interval = setInterval(obj.CustomMethod, delay);
+            obj.onmouseover = function () { clearInterval(interval); }
+            obj.onmouseout = function () { interval = setInterval(obj.CustomMethod, delay); }
+        }
+    }
+ //-->
+ </script>
+
+
+ 		
+ 		<div id="gg2" style="z-index:9999">
+<div id="closeP">关闭</div>
+                    <img src="http://www.nj17z.cn/upload_files/article/258/1_1500254327_4392395.jpg"style=" width:200px; "/>
+                      </div>
+                    <script type="text/javascript">
+                        var ad1 = new AdMove("gg2");
+                        ad1.Run();
+                        var close=document.getElementById("closeP");
+                        var gg1=document.getElementById("gg2");                        
+                        close.onclick=function(){
+                        gg1.style.display="none";                   
+                        }
+                    </script>
+
+<div id="gg3" style="z-index:9999">
+<div id="closeP3">关闭</div>
+                    <img src="http://www.nj17z.cn/upload_files/article/58/1_1509532469_5223389.jpg"style=" width:200px; "/>
+                      </div>
+                    <script type="text/javascript">
+                        var ad3 = new AdMove("gg3");
+                        ad3.Run();
+                        var close3=document.getElementById("closeP3");
+                        var gg3=document.getElementById("gg3");                        
+                        close3.onclick=function(){
+                        gg3.style.display="none";                   
+                        }
+                    </script>
+<div id="gg4" style="z-index:9999">
+<div id="closeP4">关闭</div>
+                    <img src="http://www.nj17z.cn/upload_files/article/241/1_1524825364_8864441.png"style=" width:200px; "/>
+                      </div>
+                    <script type="text/javascript">
+                        var ad4 = new AdMove("gg4");
+                        ad4.Run();
+                        var close4=document.getElementById("closeP4");
+                        var gg4=document.getElementById("gg4");                        
+                        close4.onclick=function(){
+                        gg4.style.display="none";                   
+                        }
+                    </script>
+
+
+<!--<link rel="stylesheet" type="text/css" href="/images/v7/index.css">-->
+<script type="text/javascript" src="/images/v7/sliding.js"></script>
+        <div id="search" class="main">
+            <div class="tongZhi fl">
+                <span>站内公告:</span>
+                
+                <!--<li><em></em><a href="#">十七中荣获球联赛冠军</a></li>-->
+            </div>
+            <div class="fl">
+                <!--
+                用户名:<input id="theName" type="text" />
+                密码:<input id="thePass"  type="text" />
+                <input id="theSubmit" type="submit"  value="登录" />
+                <input id="theZhuce" type="submit"  value="注册" />
+                -->
+                <img src="/images/sqzx/images/FangDa.jpg" />
+                <span>站内搜索:&nbsp;     			
+                    <form name="form1" method="post" action="/do/search.php" onsubmit="return cksearch();">          		
+                        <input id="keyword_s" type="text" name="keyword" placeholder="请输入关键字">
+                        <input type="submit" name="Submit" value="" id="submit">
+                    </form>
+                    <script type="text/javascript">
+                        <!--
+                        function cksearch(){
+                            if (document.getElementById("keyword_s").value=='')
+                            {
+                                alert('关键字不能为空!');
+                                return false;
+                            }
+                        }
+                    //-->
+                    </script>            
+                </span>
+
+            </div>
+        </div>
+        <div id="index" class="main">
+        	<div class="L">
+            	<div id="part1" class="partL"></div>
+            	<div id="part2" class="partL">
+                	<div class="LL">
+                        <div id="news">
+                            <div id="newsPart" class="part">
+                                <div class="newsContain">
+                                    <div class="newsBig">
+                                        <ul style="background:none;">
+                                        <li><a href="/bencandy.php?fid=19&id=2989"><img src="/upload_files/article/19/22_1527038916_8785095.jpg" border=0/><strong>南京市第十七中学举行防灾紧急安全疏散..</strong></a></li>
+<li><a href="/bencandy.php?fid=220&id=2988"><img src="/upload_files/article/220/28_1526985214_1589966.png" border=0/><strong>2018年南京市第十七中学特长生招生专业..</strong></a></li>
+<li><a href="/bencandy.php?fid=19&id=2987"><img src="/upload_files/article/19/24_1526952495_5656128.jpg" border=0/><strong>优先发展，合力落实，罗群调研南京市第..</strong></a></li>
+<li><a href="/bencandy.php?fid=19&id=2986"><img src="/upload_files/article/19/24_1526870988_1921692.jpg" border=0/><strong>南京市第十七中学2018年招生工作实施方案</strong></a></li>
+<li><a href="/bencandy.php?fid=283&id=2984"><img src="/upload_files/article/283/24_1526436076_2032471.jpg" border=0/><strong>5月14日我校督导对我校进行教学检查</strong></a></li>
+<li><a href="/bencandy.php?fid=19&id=2982"><img src="/upload_files/article/19/24_1525429062_1725769.jpg" border=0/><strong>南京基础教育前瞻性项目生态写作研讨会..</strong></a></li>
+<li><a href="/bencandy.php?fid=19&id=2981"><img src="/upload_files/article/19/24_1525427332_5498047.jpg" border=0/><strong>在春光中起航 ——江北新区袁爱国工作室..</strong></a></li>
+<li><a href="/bencandy.php?fid=241&id=2979"><img src="/upload_files/article/241/1_1524825364_8864441.png" border=0/><strong>飘窗4</strong></a></li>
+
+                                          <!--<li><a href="#"><img src="/images/sqzx/images/btn4-2.png" border=0/><strong>这是题目</strong></a></li>-->
+                                        </ul>
+                                    </div>
+                        
+                                    <div id="newsDemo">
+                                        <div id="inner">                    
+                                            <div id="newsDemo1">
+                                            <a href="/bencandy.php?fid=19&id=2989"><img src="/upload_files/article/19/22_1527038916_8785095.jpg" border=0 /></a>
+<a href="/bencandy.php?fid=220&id=2988"><img src="/upload_files/article/220/28_1526985214_1589966.png" border=0 /></a>
+<a href="/bencandy.php?fid=19&id=2987"><img src="/upload_files/article/19/24_1526952495_5656128.jpg" border=0 /></a>
+<a href="/bencandy.php?fid=19&id=2986"><img src="/upload_files/article/19/24_1526870988_1921692.jpg" border=0 /></a>
+<a href="/bencandy.php?fid=283&id=2984"><img src="/upload_files/article/283/24_1526436076_2032471.jpg" border=0 /></a>
+<a href="/bencandy.php?fid=19&id=2982"><img src="/upload_files/article/19/24_1525429062_1725769.jpg" border=0 /></a>
+<a href="/bencandy.php?fid=19&id=2981"><img src="/upload_files/article/19/24_1525427332_5498047.jpg" border=0 /></a>
+<a href="/bencandy.php?fid=241&id=2979"><img src="/upload_files/article/241/1_1524825364_8864441.png" border=0 /></a>
+
+                                             <!--<a href="#"><img src="/images/sqzx/images/btn4-2.png" border=0 /></a>-->
+                                            </div>
+                                            <div id="newsDemo2"></div>
+                                        </div>
+                                    </div>        
+                                </div>
+                            </div>
+                    	</div>
+                    </div>
+                    <div class="LR">
+						<div id="XXXW" class="section">
+                            <div class="sectionHead"><strong>校园新闻</strong><a href="list.php?fid=191"></a></div>
+                            <div class="sectionMiddle">
+                                <div class="introduce">
+                                <img src="/images/sqzx/images/sanJiao.jpg" />
+                                                                    <strong>南京市第十七中学举行防灾紧急</strong>
+                                    <h5>
+	南京市第十七中学举行防灾紧急安全疏散演练
+5月23日上午7时45分钟，南京市第十.. <a class="more" href="/bencandy.php?fid=19&id=2989">[详细]</a></h5>
+
+                                    <!--<strong>技术推动学习</strong>
+                                    <h5>江苏省江苏省江苏省江苏省江苏省江苏省江苏省江苏省江苏省江苏省江苏省江苏省江省江苏省江苏省江苏省江苏省江苏省江省江苏省江苏省江苏省江苏省江苏省江。。。 <a class="more" href="#">[详细]</a></h5>
+                                    -->
+                                </div>
+                                <ul>
+                                <li><em></em><a href="/bencandy.php?fid=19&id=2989">南京市第十七中学举行防灾紧急安全疏散演练</a><span>[2018-05-23 09:31:17]</span></li><li><em></em><a href="/bencandy.php?fid=19&id=2987">优先发展，合力落实，罗群调研南京市第十</a><span>[2018-05-22 09:30:38]</span></li><li><em></em><a href="/bencandy.php?fid=19&id=2986">南京市第十七中学2018年招生工作实施方案</a><span>[2018-05-21 11:02:57]</span></li><li><em></em><a href="/bencandy.php?fid=19&id=2982">南京基础教育前瞻性项目生态写作研讨会在</a><span>[2018-05-04 18:20:00]</span></li><li><em></em><a href="/bencandy.php?fid=19&id=2981">在春光中起航 ——江北新区袁爱国工作室第</a><span>[2018-05-04 18:11:01]</span></li>
+                                    <!--<li><em></em><a href="#">碧水蓝天沐清风，欢歌笑语踏秋行</a><span>[2015-10-24]</span></li>-->
+                                </ul>
+                            </div>
+	                    </div>
+                     
+                    </div>
+                </div>
+                <div id="part3" class="partL">
+                	<div class="LL">
+                   		<div id="JXGL" class="section">
+                        	<div class="sectionHead"><a href="list.php?fid=197"></a></div>
+                            <div class="sectionMiddle">
+                            	                                <ul>
+                                             			<li><em></em><a href="/bencandy.php?fid=225&id=2941">共生课堂展示课在校录播室开展</a><span>[2018-03-23]</span></li><li><em></em><a href="/bencandy.php?fid=228&id=2854">南京市第十七中学开展课改示范课活动</a><span>[2017-09-07]</span></li><li><em></em><a href="/bencandy.php?fid=225&id=2708">2016-2017学年第2学期主备试教安排</a><span>[2017-02-22]</span></li><li><em></em><a href="/bencandy.php?fid=226&id=2702">共生课堂第十五周简报 第11期</a><span>[2017-02-15]</span></li><li><em></em><a href="/bencandy.php?fid=226&id=2701">共生课堂第十四周简报 第10期</a><span>[2017-02-15]</span></li><li><em></em><a href="/bencandy.php?fid=226&id=2700">共生课堂第十三周简报 第9期</a><span>[2017-02-15]</span></li><li><em></em><a href="/bencandy.php?fid=226&id=2699">共生课堂第十二周简报 第8期</a><span>[2017-02-15]</span></li><li><em></em><a href="/bencandy.php?fid=226&id=2698">共生课堂第十周简报 第7期</a><span>[2017-02-15]</span></li>                   
+                                    <!--<li><em></em><a href="#">碧水蓝天沐清风，欢歌笑语踏秋行</a><span>[2015-10-24]</span></li>-->
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+                	<div class="LR">
+                   		<div id="DYJW" class="section">
+                        	<div class="sectionHead"><a href="list.php?fid=229"></a></div>
+                            <div class="sectionMiddle">
+                            	                                <ul>
+                                                             <li><em></em><a href="/bencandy.php?fid=234&id=2947">第三届学生会第一次会议</a><span>[2018-04-03]</span></li><li><em></em><a href="/bencandy.php?fid=234&id=2944">第三届学生会竞聘大会顺利落幕！</a><span>[2018-03-28]</span></li><li><em></em><a href="/bencandy.php?fid=277&id=2870">十七中秋游：是游学，也是课程</a><span>[2017-09-28]</span></li><li><em></em><a href="/bencandy.php?fid=231&id=2861">践行社会主义核心价值观和八礼四仪(国旗..</a><span>[2017-09-12]</span></li><li><em></em><a href="/bencandy.php?fid=234&id=2851">十七中学 喜迎秋季开学典礼</a><span>[2017-09-04]</span></li><li><em></em><a href="/bencandy.php?fid=230&id=2829">参观青少年法制基地观后感评比结果</a><span>[2017-06-06]</span></li><li><em></em><a href="/bencandy.php?fid=234&id=2828">课本剧决赛剪影！</a><span>[2017-06-05]</span></li><li><em></em><a href="/bencandy.php?fid=234&id=2826">十佳歌手大赛选手风采！</a><span>[2017-06-05]</span></li>
+                                    <!--<li><em></em><a href="list.php?fid=229">碧水蓝天沐清风，欢歌笑语踏秋行</a><span>[2015-10-24]</span></li>-->
+                                </ul>
+                            </div>
+                        </div> 
+                    
+                    
+                    
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="R">
+            	<div id="login" class="partR">
+                	<div class="loginC">
+                    <script language="JavaScript" src="/do/hack.php?hack=login&job=js&styletype=0"></script>
+                   <!-- 
+                   	<input id="theName" type="text" /><input id="theSubmit" type="submit"  value="登录" />
+                    <input id="thePass"  type="text" /><input id="theZhuce" type="submit"  value="注册" />
+                    -->
+                    </div>
+                </div>
+				<div id="XXJJ" class="partR">
+                	<div class="XXJJC">
+          			  南京市第十七中学创建于1941年11月11日，是浦口区历史最悠久的一所中学，创办之初定名为“浦镇私立育才学校”。其后几度易名..<a class="more" href="/bencandy.php?fid=212&id=2395">[详情]</a>
+   	<!--南京市第十七中学创建于1941年11月11日，是浦口区历史最悠久的一所中学，创办之初定名为“浦镇私立育才学校”。其后几度易名，先后用名为“私立育才学校”...<a class="more" href="#">[详情]</a>-->
+                    </div>
+                </div>
+				<div id="TZGG" class="section partR">
+                	<div class="sectionHead"><a href="list.php?fid=220"></a></div>
+                    <div class="sectionMiddle">
+                        <ul>
+                        	<li><em></em><a href="/bencandy.php?fid=220&id=2988">2018年南京市第十七中学..</a><span>[2018-05-22]</span></li><li><em></em><a href="/bencandy.php?fid=220&id=2985">南京市第十七中学第13周..</a><span>[2018-05-18]</span></li><li><em></em><a href="/bencandy.php?fid=220&id=2983">南京市第十七中学第十一..</a><span>[2018-05-07]</span></li><li><em></em><a href="/bencandy.php?fid=220&id=2980">南京市第十七中学第十周..</a><span>[2018-05-02]</span></li><li><em></em><a href="/bencandy.php?fid=220&id=2972">南京市第十七中学第七周..</a><span>[2018-04-10]</span></li>
+                            <!--<li><em></em><a href="#">碧水蓝天沐清</a><span>[2015-10-24]</span></li>-->
+                        </ul>
+                    </div>	
+                </div>
+				<a href="#" id="YXRK" class="partR"></a>
+                <a href="#" id="JSBK" class="partR"></a>
+            </div>
+          
+            <div class="XX2" class="main" style="background:none;"><object type='application/x-shockwave-flash' data='/upload_files/label/1_20161229151258_ym3j4.swf'  width='979'  height='91' wmode='transparent'><param name='movie' value='/upload_files/label/1_20161229151258_ym3j4.swf' /><param name='wmode' value='transparent' /></object></div>
+          
+          	<div class="L">
+            	<div id="part4" class="partL">
+                	<div class="LL">
+                   		<div id="JSPD" class="section">
+                        	<div class="sectionHead"><a href="list.php?fid=235"></a></div>
+                            <div class="sectionMiddle">
+                            	                                <ul>
+                                     <li><em></em><a href="/bencandy.php?fid=241&id=2979">飘窗4</a><span>[2018-04-27]</span></li><li><em></em><a href="/bencandy.php?fid=236&id=2945">南京市、区部分学科研训员到我校指导教..</a><span>[2018-03-30]</span></li><li><em></em><a href="/bencandy.php?fid=236&id=2942">南京市鼓楼区教研室到我校指导中考复习</a><span>[2018-03-23]</span></li><li><em></em><a href="/bencandy.php?fid=236&id=2917">2017-2018第一学期校本研修纲要</a><span>[2018-01-03]</span></li><li><em></em><a href="/bencandy.php?fid=236&id=2916">2017-2018第一学期校本研修目录</a><span>[2018-01-03]</span></li><li><em></em><a href="/bencandy.php?fid=241&id=2865">喜报——我校多名教师在“一师一优课、..</a><span>[2017-09-22]</span></li><li><em></em><a href="/bencandy.php?fid=236&id=2837">2016-2017第二学期校本研修纲要及目录</a><span>[2017-06-27]</span></li><li><em></em><a href="/bencandy.php?fid=236&id=2818">天下文宗 神枢鬼藏</a><span>[2017-05-26]</span></li>                           
+                                    <!--<li><em></em><a href="#">碧水蓝天沐清风，欢歌笑语踏秋行</a><span>[2015-10-24]</span></li>-->
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+                	<div class="LR">
+                   		<div id="XSYD" class="section">
+                        	<div class="sectionHead"><a href="list.php?fid=242"></a></div>
+                            <div class="sectionMiddle">
+                            	                                <ul>
+                                                                <li><em></em><a href="/bencandy.php?fid=244&id=2820">2016—2017年度第二学期初一年级5月月考..</a><span>[2017-05-27]</span></li><li><em></em><a href="/bencandy.php?fid=246&id=2770">2017年春季社会实践活动学生摄影作品展2</a><span>[2017-04-11]</span></li><li><em></em><a href="/bencandy.php?fid=246&id=2769">2017年春季社会实践活动学生摄影作品展1</a><span>[2017-04-11]</span></li><li><em></em><a href="/bencandy.php?fid=244&id=2753">2016-3017-2初二年级3月月考获奖名单</a><span>[2017-03-28]</span></li><li><em></em><a href="/bencandy.php?fid=244&id=2752">2016-2017-2初二年级3月月考“博雅之星..</a><span>[2017-03-28]</span></li><li><em></em><a href="/bencandy.php?fid=244&id=2751">2016—2017年度第二学期初一年级3月月考..</a><span>[2017-03-28]</span></li><li><em></em><a href="/bencandy.php?fid=244&id=2750">2016—2017年度第二学期初一年级3月月考..</a><span>[2017-03-28]</span></li><li><em></em><a href="/bencandy.php?fid=249&id=2737">我校在江苏省中小学生“金钥匙”科普知..</a><span>[2017-03-16]</span></li>
+                                    <!--<li><em></em><a href="#">碧水蓝天沐清风，欢歌笑语踏秋行</a><span>[2015-10-24]</span></li>-->
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div id="part5" class="partL">
+                        <div class="LL">
+                            <div id="BXTS" class="section">
+                                <div class="sectionHead"><a href="list.php?fid=251"></a></div>
+                                <div class="sectionMiddle">
+                                                                    <ul>
+                                            <li><em></em><a href="/bencandy.php?fid=253&id=2553">经典：人生永远的风景——袁爱国</a><span>[2016-07-11]</span></li><li><em></em><a href="/bencandy.php?fid=253&id=2552">翰墨缘&#8226;千千结——袁爱国</a><span>[2016-07-11]</span></li><li><em></em><a href="/bencandy.php?fid=254&id=2551">真爱教师——童林</a><span>[2016-07-11]</span></li><li><em></em><a href="/bencandy.php?fid=254&id=2550">真爱教师——金兰平</a><span>[2016-07-11]</span></li><li><em></em><a href="/bencandy.php?fid=254&id=2549">真爱教师——解自荣</a><span>[2016-07-11]</span></li><li><em></em><a href="/bencandy.php?fid=254&id=2524">五月份真爱教师</a><span>[2016-06-27]</span></li><li><em></em><a href="/bencandy.php?fid=254&id=2523">四月份真爱教师</a><span>[2016-06-27]</span></li><li><em></em><a href="/bencandy.php?fid=255&id=2515">南京市第十七中学校园欺凌专项治理工作..</a><span>[2016-06-12]</span></li>
+                                       <!--<li><em></em><a href="#">碧水蓝天沐清风，欢歌笑语踏秋行</a><span>[2015-10-24]</span></li>-->
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="LR">
+                            <div id="DTGH" class="section">
+                                <div class="sectionHead"><a href="list.php?fid=176"></a></div>
+                                <div class="sectionMiddle">
+                                                                    <ul>
+                                        <li><em></em><a href="/bencandy.php?fid=258&id=2840">社会主义核心价值观</a><span>[2017-07-17]</span></li><li><em></em><a href="/bencandy.php?fid=259&id=2812">观赏现代京剧，感受国粹魅力</a><span>[2017-05-22]</span></li><li><em></em><a href="/bencandy.php?fid=259&id=2794">春游、踏青</a><span>[2017-05-05]</span></li><li><em></em><a href="/bencandy.php?fid=259&id=2743">女教工活动剪影</a><span>[2017-03-24]</span></li><li><em></em><a href="/bencandy.php?fid=258&id=2647">初二党小组活动成功开展</a><span>[2016-11-29]</span></li><li><em></em><a href="/bencandy.php?fid=259&id=2646">十七中学组织教师外出郊游</a><span>[2016-11-29]</span></li><li><em></em><a href="/bencandy.php?fid=259&id=2624">十七中学为老教师庆生</a><span>[2016-10-10]</span></li><li><em></em><a href="/bencandy.php?fid=258&id=2621">初一党小组活动成功开展</a><span>[2016-10-01]</span></li>
+                                        <!--<li><em></em><a href="#">碧水蓝天沐清风，欢歌笑语踏秋行</a><span>[2015-10-24]</span></li>-->
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+            </div>
+            <div class="R">
+            	<div id="SZHXY" class="partR"><a class="gengDuo fr"></a></div>
+				<div id="SZHXYC">	
+                	<a href="#"></a>
+                		
+                        <a href="http://oa.pkedu.cn/"></a>
+                		
+                        	<a href="http://www.pkedu.cn/"></a>
+                		
+                        <a href="#"></a>
+                	
+                    <a href="#"></a>
+                </div>
+            	<div id="ZXTJ" class="partR"></div>
+                <div id="YQLJ" class="partR">
+                	<select onChange="if(this.options[this.selectedIndex].value != ''){window.open(this.options[this.selectedIndex].value,'_blank');}" name=friend><option selected="">-------友情学校-----</option>
+                    <option value=http://www.njnhez.net/>南湖二中</option>
+                    <option value=http://www.njpksz.cn/>浦口四中</option>
+                       <option value=http://www.njnaedu.cn/Default.aspx?tabid=1082&ID=138>江北新区教育信息网-教育督导</option>
+</select>
+                	<select><option value="" selected="">------教育资源推荐-----</option>             
+                        </select>
+                       
+                </div>
+            </div>
+ 
+ 			<div class="XYFG section">
+                <div class="sectionHead"><strong>校园风光</strong><a href="list.php?fid=211"></a></div>
+                <div class="sectionMiddle">
+                    <ul>
+                        <div id="photo">
+                            <div id="photoDemo">
+                                <div id="photoIndemo">
+                                    <div id="photoDemo1">
+																				
+                                        <!--<a href="#"><img class="suoLv" src="/images/sqzx/images/deYu.jpg" /></a>-->
+                                    </div>
+                                    <div id="photoDemo2"></div>
+                                </div>
+                            </div>
+                            <script type="text/javascript">
+									var photoSpeed=100; //数字越大速度越慢
+									var photoTab=document.getElementById("photoDemo");
+									var photoTab1=document.getElementById("photoDemo1");
+									var photoTab2=document.getElementById("photoDemo2");
+									photoTab2.innerHTML=photoTab1.innerHTML;
+									function photoMarquee(){
+									
+									if(photoTab2.offsetWidth-photoTab.scrollLeft<=0)
+									photoTab.scrollLeft-=photoTab1.offsetWidth;
+									else{
+									photoTab.scrollLeft++;
+									
+									}
+									}
+									var photoMyMar=setInterval(photoMarquee,photoSpeed);
+									photoTab.onmouseover=function() {clearInterval(photoMyMar)};
+									photoTab.onmouseout=function() {photoMyMar=setInterval(photoMarquee,photoSpeed)};
+                            </script>
+                            
+                        </div>
+                    </ul>
+                </div>
+            
+
+
+<div style="margin-top: 129px;margin-left: 363px;">
+<script language="javascript" type="text/javascript" src="http://js.users.51.la/18658573.js"></script>
+<noscript><a href="http://www.51.la/?18658573" target="_blank"><img alt="& # x6211;& # x8981;& # x5566;& # x514D;& # x8D39;& # x7EDF;& # x8BA1;" src="http://img.users.51.la/18658573.asp" style="border:none" /></a></noscript>
+</div>
+<!--
+-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--//目的是为了做风格方便
+document.write('</div>');
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+clickEdit.init();
+//-->
+</SCRIPT>
+
+			<div id="cor">
+            	<p>备案号：<a href="http://www.miitbeian.gov.cn/">苏ICP备10212105号-1</a></p>
+            	<p>版权所有：南京市第十七中学    地址：南京市浦口区泰山新村桥北路85号    电话：025-85045610</p>
+            	<p>开发单位：南京冠邦网络技术有限责任公司    维护：南京冠邦网络技术有限责任公司    邮箱：njcai@163.com</p>
+            </div>
+      </div>     
+</div>
+<a href="http://bszs.conac.cn/sitename?method=show&id=0DD4C8137C8F0B32E053012819ACB0F4"><img id="imgConac" vspace="0" hspace="0" border="0" src="//dcs.conac.cn/image/blue.png" data-bd-imgshare-binded="1" style="position: absolute; margin-top:-96px; right:286px;"></a>
+</body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE HTML>
+<!-- 标准头部引入 START Date:2k101229 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 标准头部引入 END-->
+<html>
+<head>
+<meta content="" name="keywords">
+<meta content="" name="description">
+<meta charset="UTF-8">
+<title>北京市昌平区第一中学</title>
+<link href="/cpyz/tpl/css/css.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/cpyz/tpl/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/cpyz/tpl/js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript" src="/cpyz/tpl/js/index.js"></script>
+
+
+<!--[if lte IE 6]>
+<script type="text/javascript" src="/cpyz/tpl/js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+    DD_belatedPNG.fix('.png_bb');
+</script>
+<![endif]-->
+
+<style type="text/css">
+html{ background:#b3becb url(/cpyz/tpl/img/beijing.png) repeat-x;}
+</style>
+
+
+<!--飘窗广告开始-->
+<SCRIPT type=text/javascript>
+function addEvent(obj,evtType,func,cap){
+    cap=cap||false;
+if(obj.addEventListener){
+     obj.addEventListener(evtType,func,cap);
+   return true;
+}else if(obj.attachEvent){
+        if(cap){
+         obj.setCapture();
+         return true;
+     }else{
+      return obj.attachEvent("on" + evtType,func);
+   }
+}else{
+   return false;
+    }
+}
+function getPageScroll(){
+    var xScroll,yScroll;
+if (self.pageXOffset) {
+   xScroll = self.pageXOffset;
+} else if (document.documentElement && document.documentElement.scrollLeft){
+   xScroll = document.documentElement.scrollLeft;
+} else if (document.body) {
+   xScroll = document.body.scrollLeft;
+}
+if (self.pageYOffset) {
+   yScroll = self.pageYOffset;
+} else if (document.documentElement && document.documentElement.scrollTop){
+   yScroll = document.documentElement.scrollTop;
+} else if (document.body) {
+   yScroll = document.body.scrollTop;
+}
+arrayPageScroll = new Array(xScroll,yScroll);
+return arrayPageScroll;
+}
+function GetPageSize(){
+    var xScroll, yScroll;
+    if (window.innerHeight && window.scrollMaxY) { 
+        xScroll = document.body.scrollWidth;
+        yScroll = window.innerHeight + window.scrollMaxY;
+    } else if (document.body.scrollHeight > document.body.offsetHeight){
+        xScroll = document.body.scrollWidth;
+        yScroll = document.body.scrollHeight;
+    } else {
+        xScroll = document.body.offsetWidth;
+        yScroll = document.body.offsetHeight;
+    }
+    var windowWidth, windowHeight;
+    if (self.innerHeight) {
+        windowWidth = self.innerWidth;
+        windowHeight = self.innerHeight;
+    } else if (document.documentElement && document.documentElement.clientHeight) {
+        windowWidth = document.documentElement.clientWidth;
+        windowHeight = document.documentElement.clientHeight;
+    } else if (document.body) {
+        windowWidth = document.body.clientWidth;
+        windowHeight = document.body.clientHeight;
+    } 
+    if(yScroll < windowHeight){
+        pageHeight = windowHeight;
+    } else { 
+        pageHeight = yScroll;
+    }
+    if(xScroll < windowWidth){ 
+        pageWidth = windowWidth;
+    } else {
+        pageWidth = xScroll;
+    }
+    arrayPageSize = new Array(pageWidth,pageHeight,windowWidth,windowHeight) 
+    return arrayPageSize;
+}
+
+var AdMoveConfig=new Object();
+AdMoveConfig.IsInitialized=false;
+AdMoveConfig.ScrollX=0;
+AdMoveConfig.ScrollY=0;
+AdMoveConfig.MoveWidth=0;
+AdMoveConfig.MoveHeight=0;
+AdMoveConfig.Resize=function(){
+    var winsize=GetPageSize();
+    AdMoveConfig.MoveWidth=winsize[2];
+    AdMoveConfig.MoveHeight=winsize[3];
+    AdMoveConfig.Scroll();
+}
+AdMoveConfig.Scroll=function(){
+    var winscroll=getPageScroll();
+    AdMoveConfig.ScrollX=winscroll[0];
+    AdMoveConfig.ScrollY=winscroll[1];
+}
+addEvent(window,"resize",AdMoveConfig.Resize);
+addEvent(window,"scroll",AdMoveConfig.Scroll);
+function AdMove(id){
+    if(!AdMoveConfig.IsInitialized){
+        AdMoveConfig.Resize();
+        AdMoveConfig.IsInitialized=true;
+    }
+    var obj=document.getElementById(id);
+    obj.style.position="absolute";
+    var W=AdMoveConfig.MoveWidth-obj.offsetWidth;
+    var H=AdMoveConfig.MoveHeight-obj.offsetHeight;
+    var x = W*Math.random(),y = H*Math.random();
+    var rad=(Math.random()+1)*Math.PI/6;
+    var kx=Math.sin(rad),ky=Math.cos(rad);
+    var dirx = (Math.random()<0.5?1:-1), diry = (Math.random()<0.5?1:-1);
+    var step = 1;
+    var interval;
+    this.SetLocation=function(vx,vy){x=vx;y=vy;}
+    this.SetDirection=function(vx,vy){dirx=vx;diry=vy;}
+    obj.CustomMethod=function(){
+        obj.style.left = (x + AdMoveConfig.ScrollX) + "px";
+        obj.style.top = (y + AdMoveConfig.ScrollY) + "px";
+        rad=(Math.random()+1)*Math.PI/6;
+        W=AdMoveConfig.MoveWidth-obj.offsetWidth;
+        H=AdMoveConfig.MoveHeight-obj.offsetHeight;
+        x = x + step*kx*dirx;
+        if (x < 0){dirx = 1;x = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+        if (x > W){dirx = -1;x = W;kx=Math.sin(rad);ky=Math.cos(rad);}
+        y = y + step*ky*diry;
+        if (y < 0){diry = 1;y = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+        if (y > H){diry = -1;y = H;kx=Math.sin(rad);ky=Math.cos(rad);}
+    }
+    this.Run=function(){
+        var delay = 15;
+        interval=setInterval(obj.CustomMethod,delay);
+        obj.onmouseover=function(){clearInterval(interval);}
+        obj.onmouseout=function(){interval=setInterval(obj.CustomMethod, delay);}
+    }
+}
+</SCRIPT>
+<!--飘窗广告结束-->
+
+
+</head>
+<body>
+<div class="section" id="nav">
+
+<!--nav start-->
+<!-- 标准头部引入  START Date:2k101229 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 标准头部引入  END-->
+
+<div class="nav">
+  <a href="/cpyz">首页</a>
+  <a href="/cpyz/catalog.jhtml?viewId=11"  >学校概况</a>
+    <div class="sec_nav">
+        <a href="/cpyz/catalog.jhtml?viewId=12">学校简介</a>
+        <a href="/cpyz/catalog.jhtml?viewId=13">师资力量</a>
+        <a href="/cpyz/catalog.jhtml?viewId=14">校园设施</a>
+        <a href="/cpyz/catalog.jhtml?viewId=15">荣誉一中</a>
+    </div>
+    <a href="/cpyz/catalog.jhtml?viewId=31" >教学园地</a>
+    <div class="sec_nav" style="width:350px; left:80px;">
+        <a href="/cpyz/catalog.jhtml?viewId=32">教学活动</a>
+        <a href="/cpyz/catalog.jhtml?viewId=33">教学资源</a>
+        <a href="/cpyz/catalog.jhtml?viewId=34">科研成果</a>
+        <a href="/cpyz/catalog.jhtml?viewId=35">名师风采</a>
+        <a href="/cpyz/catalog.jhtml?viewId=36">教师研修</a>
+    </div>
+    <a href="/cpyz/catalog.jhtml?viewId=25" >德育之窗</a>
+    <div class="sec_nav" style="width:350px; left:100px;">
+        <a href="/cpyz/catalog.jhtml?viewId=26">德育活动</a>
+        <a href="/cpyz/catalog.jhtml?viewId=27">班级管理</a>
+        <a href="/cpyz/catalog.jhtml?viewId=28">班主任风采</a>
+        <a href="/cpyz/catalog.jhtml?viewId=29">国旗下讲话</a>
+    </div>
+    <a href="/cpyz/catalog.jhtml?viewId=40" >党团工会</a>
+    <div class="sec_nav" style=" width:280px; left:220px;">
+        <a href="/cpyz/catalog.jhtml?viewId=41">党建园地</a>
+        <a href="/cpyz/catalog.jhtml?viewId=42">团队建设</a>
+        <a href="/cpyz/catalog.jhtml?viewId=43">主题教育</a>
+        <a href="/cpyz/catalog.jhtml?viewId=44">教工之家</a>
+    </div>
+    <a href="/cpyz/catalog.jhtml?viewId=45" >特色教育</a>
+    <div class="sec_nav" style="width:600px; left:70px;">
+    	<a href="/cpyz/catalog.jhtml?viewId=46">国际教育</a>
+                     <a href="/cpyz/catalog.jhtml?viewId=58">科技教育</a>
+                     <a href="/cpyz/catalog.jhtml?viewId=59">体艺教育</a>
+                     <a href="/cpyz/catalog.jhtml?viewId=60">健康教育</a>
+                     <a href="/cpyz/catalog.jhtml?viewId=61">校本课程</a>
+                     <a href="/cpyz/catalog.jhtml?viewId=62">综合实践</a>
+                     <a href="/cpyz/catalog.jhtml?viewId=63">学生社团</a>
+                    <a href="/cpyz/catalog.jhtml?viewId=81" style="width:80px;">创新人才培养</a>
+    </div>
+    <a href="/cpyz/catalog.jhtml?viewId=47" >合作交流</a>
+    <div class="sec_nav" style="width:220px; left:400px;">
+        <a href="/cpyz/catalog.jhtml?viewId=48">友好学校</a>
+        <a href="/cpyz/catalog.jhtml?viewId=49">交流互访</a>
+    </div>
+    <a href="/cpyz/catalog.jhtml?viewId=37" >招生专栏</a>
+    <div class="sec_nav" style="width:700px; left:141px;">
+        <a href="/cpyz/catalog.jhtml?viewId=82">校长寄语</a>
+        <a href="/cpyz/catalog.jhtml?viewId=83">师资力量</a>
+        <a href="/cpyz/catalog.jhtml?viewId=84">辉煌一中</a>
+        <a href="/cpyz/catalog.jhtml?viewId=85">多彩生活</a>
+        <a href="/cpyz/catalog.jhtml?viewId=86">国际交流</a>
+        <a href="/cpyz/catalog.jhtml?viewId=87">美丽校园</a>
+        <a href="/cpyz/catalog.jhtml?viewId=88">成长感悟</a>
+        <a href="/cpyz/catalog.jhtml?viewId=89">精彩视频</a>
+    </div>
+    <a href="/cpyz/catalog.jhtml?viewId=51" >图书馆</a>
+    <div class="sec_nav" style="width:400px; left:350px;">
+    <a href="/cpyz/catalog.jhtml?viewId=52">馆藏资源</a> 
+    <a href="/cpyz/catalog.jhtml?viewId=53">特色资源</a> 
+    <a href="/cpyz/catalog.jhtml?viewId=54">读书活动</a>
+<a href="/cpyz/catalog.jhtml?viewId=64">新书速递</a>
+<a href="/cpyz/catalog.jhtml?viewId=65">服务指南</a>
+    </div>
+    <a href="/cpyz/catalog.jhtml?viewId=19" >天通苑校</a>
+    <div class="sec_nav" style="width:400px; left:330px;">
+        <a href="/cpyz/catalog.jhtml?viewId=20">校区简介</a>
+        <a href="/cpyz/catalog.jhtml?viewId=21">校园新闻</a>
+        <a href="/cpyz/catalog.jhtml?viewId=22">教育动态</a>
+        <a href="/cpyz/catalog.jhtml?viewId=23">师生风采</a>
+        <a href="/cpyz/catalog.jhtml?viewId=24">招生信息</a>
+    </div>
+
+  </div>
+<!--nav end-->
+
+  <div class="logo png_bb"></div>
+</div>
+<div class="section w">
+  <div class="banner" id="slideshow">
+    <ul>
+      <li><img src="/cpyz/tpl/img/index_banner1.png" /></li>
+      <li><img src="/cpyz/tpl/img/index_banner2.png" /></li>
+      <li><img src="/cpyz/tpl/img/index_banner3.png" /></li>
+      <li><img src="/cpyz/tpl/img/index_banner4.png" /></li>
+      <li><img src="/cpyz/tpl/img/index_banner5.png" /></li>
+    </ul>
+<div class="yin2 png_bb"></div>
+    <div class="yin png_bb">
+      <div style="width:80px; float:right;" id="slideshow_nav"> </div>
+    </div>
+  </div>
+</div>
+<div class="section bai png_bb">
+  <div class="">
+    <div class="zi png_bb"><b>热门阅读</b></div>
+  </div>
+  <div class="xiao" id="auto">
+  <ul>
+   <li>
+  <a href="/cpyz/document.jhtml?viewId=828" title="学校简介">
+
+  学校简介</a>
+  </li>
+ </ul>
+
+  </div>
+  <div class="lianjie">
+    <p><a href="http://117.117.200.2/dc/em/stu/studentPort!index.action" target="_blank"><b>新生报名入口>></b></a> | <a href="http://117.117.200.1/cpyz/login.jsp" target="_blank"><b>信息员入口>></b></a> | <a href="http://117.117.200.2" target="_blank"><b>数字校园平台>></b></a> 
+  </div>
+</div>
+<div class="section">
+  <div class="mei png_bb"></div>
+</div>
+<div class="section" style="height:270px;">
+  <div class="xinwen">
+    <div class="index_tu" id="news_pic">
+      <div class="xw png_bb"></div>
+
+<ul>
+        <li><a href="/cpyz/document.jhtml?viewId=4021"><img src="http://117.117.200.1/cpyz/UploadFiles/image/2018/4/21/18/20180421181429130437123886125464.jpg" width="292" height="193" alt="内蒙古阿鲁科尔沁旗领导来.."  /></a></li>
+        <li><a href="/cpyz/document.jhtml?viewId=4018"><img src="http://117.117.200.1/cpyz/UploadFiles/image/2018/4/21/18/20180421180414489191501423948266.jpg" width="292" height="193" alt="昌平一中本校区支部参观科.."  /></a></li>
+        <li><a href="/cpyz/document.jhtml?viewId=3995"><img src="http://117.117.200.1/cpyz/UploadFiles/image/2018/4/18/11/20180418114200416434532592566509.jpg" width="292" height="193" alt="昌平一中夺得北京市中小学.."  /></a></li>
+        <li><a href="/cpyz/document.jhtml?viewId=3993"><img src="http://117.117.200.1/cpyz/UploadFiles/image/2018/4/18/11/20180418113710053015073240318924.jpg" width="292" height="193" alt="昌平区教育系统档案工作培.."  /></a></li>
+        <li><a href="/cpyz/document.jhtml?viewId=3950"><img src="http://117.117.200.1/cpyz/UploadFiles/image/2018/4/1/15/20180401153625618059103956407684.jpg" width="292" height="193" alt="昌平德育一中协作组研讨交.."  /></a></li>
+    </ul>
+ 
+
+
+     
+      <div class="baitao png_bb"></div>
+      <div id="shuoming"></div>
+      <div id="count"></div>
+    </div>
+  </div>
+  <div class="xinwengle">
+    <div class="xiwneebnhe png_bb"> </div>
+    <div class="fuhao"></div>
+    <div class="kais">
+  <ul>
+<li class="red_dain">
+
+<a href="#">
+<a href="/cpyz/document.jhtml?viewId=4077">
+昌平一中举行2018届高三学生成人仪式</a></li>
+<li class="red_dain">
+
+<a href="#">
+<a href="/cpyz/document.jhtml?viewId=4074">
+昌平一中数学教研组举办“基于数学核心素养教学研..</a></li>
+<li class="red_dain">
+
+<a href="#">
+<a href="/cpyz/document.jhtml?viewId=4075">
+我校在北京市校园足球特色校联赛中晋级四强</a></li>
+<li class="red_dain">
+
+<a href="#">
+<a href="/cpyz/document.jhtml?viewId=4071">
+昌平一中举行校园模拟招聘活动</a></li>
+<li class="red_dain">
+
+<a href="#">
+<a href="/cpyz/document.jhtml?viewId=4062">
+2018年昌平一中初升高特长生招生测试成绩公示</a></li>
+</ul>
+    </div>
+    <div class="gengduo"><a href="/cpyz/catalog.jhtml?viewId=66"><img src="/cpyz/tpl/img/gengduo.png"></a></div>
+  </div>
+  <div class="gang">
+    <div class="tongzhi">
+      <div class="tongzhide png_bb png_bb2"> </div>
+      <div class="toz_ul">
+      <ul>
+    <li><a href="/cpyz/document.jhtml?viewId=4087" title="昌平一中教师获2018年“创先杯”课堂教学大赛奖">昌平一中教师获2018年“创先杯”课堂教学大赛..</a></li>
+    <li><a href="/cpyz/document.jhtml?viewId=4079" title="关于转发《昌平区“我与改革开放”故事  征集活动方案》的通知">关于转发《昌平区“我与改革开放”故事  征集活..</a></li>
+    <li><a href="/cpyz/document.jhtml?viewId=4078" title="昌平一中教师参加北京市“聚焦核心素养与信息技术应用策略交流展示活动”">昌平一中教师参加北京市“聚焦核心素养与信息技术..</a></li>
+    <li><a href="/cpyz/document.jhtml?viewId=4048" title="昌平一中承担的《基于大数据下的创新教学应用模式研究》课题顺利开题">昌平一中承担的《基于大数据下的创新教学应用模式..</a></li>
+    <li><a href="/cpyz/document.jhtml?viewId=4043" title="海淀进修学校2018.5进修活动表">海淀进修学校2018.5进修活动表</a></li>
+  </ul>
+
+      </div>
+      <div class="gengduo"><a href="/cpyz/catalog.jhtml?viewId=56"><img src="/cpyz/tpl/img/gengduo.png"></a></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--footer 开始 -->
+<!-- 标准头部引入  START Date:2k101229 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 标准头部引入  END-->
+<div class="section">
+
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/01/013/0000/60688606/CA010130000606886060003.js' type='text/javascript'%3E%3C/script%3E"));</script>
+  <div class="dibu">
+    <div class="dutu">
+      <select style="width:200px" onChange="window.open(this.value)">
+      <option value="http://www.626china.org">中国禁毒展览馆</option>
+           <option value="http://cpjydd.chpedu.net">昌平区教育督导网</option>
+           <option value="http://www.bjeea.cn/">北京教育考试院</option>
+           <option value="http://www.edures.bjedu.cn/edures/">北京教育资源网</option>
+           <option value="http://1s1k.eduyun.cn">一师一优课 一课一名师</option>
+           <option value="http://www.chpedu.bjchp.gov.cn/">昌平教育信息网</option>
+           <option value="http://www.bjcpjx.net/">昌平区进修学校</option>
+           <option value="http://www.esdinchina.org/">中国可持续发展（ESD）项目</option>
+           <option value="http://zbzx.chpedu.net">昌平区教育技术装备中心</option>
+           <option value="http://www.cfed.cnki.net">中国知网</option>
+         </select>
+
+    </div>
+    <p><a href="#">版权所有：Copyrights Reserved©北京市昌平区第一中学    京公网安备1101140337号      京ICP备16036388号</a></p>
+  </div>
+</div>
+
+
+
+<!--footer 结束-->
+
+
+<DIV id="ad1" class="tc_ad">
+ <center><h3>昌平一中艺术特长生、冰雪项目特长生、体育..</h3></center>
+<div class="tc_summary">
+<a href="/cpyz/document.jhtml?viewId=4011">
+昌平一中2018年招收艺术特长生工作方案根据北京市教委《关于做好2018年高级中等学校招收体育艺术科技特长生工作的通知》京教体艺〔2018〕3号文件要求，为完善学校特长生..
+</a>
+</div>
+<p align="right">
+<a href="/cpyz/document.jhtml?viewId=4011">查看详细>></a>
+</p>
+
+</DIV>
+<SCRIPT type=text/javascript>
+        var ad1=new AdMove("ad1");
+        ad1.Run();
+</SCRIPT>
+
+</body>
+</html>

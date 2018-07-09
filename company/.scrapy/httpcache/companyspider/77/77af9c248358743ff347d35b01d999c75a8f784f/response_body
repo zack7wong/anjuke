@@ -1,0 +1,690 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>宁德师范学院</title><META Name="keywords" Content="宁德师范学院" />
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.10.custom.min.js"></script>
+    <script type="text/javascript" src="js/banner.js"></script>
+    
+    <script type="text/javascript">
+        function scrollDoor(){
+        }
+        scrollDoor.prototype = {
+            sd : function(menus,divs,openClass,closeClass){
+                var _this = this;
+                if(menus.length != divs.length)
+                {
+                    alert("菜单层数量和内容层数量不一样!");
+                    return false;
+                }
+                for(var i = 0 ; i < menus.length ; i++)
+                {
+                    _this.$(menus[i]).value = i;
+                    _this.$(menus[i]).onmouseover = function(){
+
+                        for(var j = 0 ; j < menus.length ; j++)
+                        {
+                            _this.$(menus[j]).className = closeClass;
+                            _this.$(divs[j]).style.display = "none";
+                        }
+                        _this.$(menus[this.value]).className = openClass;
+                        _this.$(divs[this.value]).style.display = "block";
+                    }
+                }
+            },
+            $ : function(oid){
+                if(typeof(oid) == "string")
+                    return document.getElementById(oid);
+                return oid;
+            }
+        }
+        window.onload = function(){
+            var SDmodel = new scrollDoor();
+            SDmodel.sd(["mx101","mx102"],["cx101","cx102"],"sdx101","sdx102","sdx103");
+            SDmodel.sd(["mx201","mx202"],["cx201","cx202"],"sdx201","sdx202");
+            SDmodel.sd(["mx301","mx302"],["cx301","cx302"],"sdx301","sdx302");
+        }
+    </script>
+<!--Announced by Visual SiteBuilder 9-->
+<link rel="stylesheet" type="text/css" href="_sitegray/_sitegray_d.css" />
+<script language="javascript" src="_sitegray/_sitegray.js"></script>
+<!-- CustomerNO:7765626265723230777847575353574a03060000 -->
+<link rel="stylesheet" type="text/css" href="index.vsb.css" />
+<script type="text/javascript" src="/system/resource/js/vsbscreen.min.js" id="_vsbscreen" devices="pc|pad"></script>
+<script type="text/javascript" src="/system/resource/js/counter.js"></script>
+<script type="text/javascript">_jsq_(1001,'/index.jsp',-1,1302211163)</script>
+</head>
+<body onselect="document.selection.empty()" onselectstart="return false" oncopy="document.selection.empty()" onbeforecopy="return false" ondragstart="return false">
+<div class="header_top">
+    <div class=" width">
+        <div class=" header_top_l"><!--#begineditable name="文本日历" viewid="1001" tagname="文本日历" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""--><script language="javascript" src="/system/resource/js/calendar/simple.js"></script>               
+<script language="JavaScript">
+//阳历
+var c_Calendar1001EnDateString;
+
+var c_Calendar1001WeekDayString;
+
+//阴历
+var c_Calendar1001CnDateString;
+//节气
+var c_Calendar1001JQString;
+//年
+var c_Calendar1001YearString;
+//月
+var c_Calendar1001MonthString;
+//日
+var c_Calendar1001DayString;
+//周
+var c_Calendar1001WeekString;
+function RunGLNL1001()
+{          
+    var  sc =new Simple_Calendar ();
+    sc.init();
+    c_Calendar1001CnDateString=sc.getCnDateString();
+    c_Calendar1001WeekDayString=sc.getCalendarWeekString();
+    c_Calendar1001JQString=sc.getJQString();
+    c_Calendar1001EnDateString=sc.getEnDateString();
+    c_Calendar1001YearString=sc.getYearString();
+    c_Calendar1001MonthString=sc.getMonthString();
+    c_Calendar1001DayString=sc.getDayString();
+    c_Calendar1001WeekString=sc.getWeekString();
+}
+RunGLNL1001();
+document.write('<div id="c_lunar1001"   class="fontstyle1001"  >');       
+document.write(c_Calendar1001EnDateString);
+document.write("&nbsp;&nbsp;"+c_Calendar1001WeekDayString);
+
+
+
+document.write("</div>");
+
+</script>
+<!--#endeditable--></div>
+        <div class="header_top_l header_top_r"><!--#begineditable name="顶部链接" viewid="1002" tagname="顶部链接" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""--><script language="javascript" src="/system/resource/js/dynclicks.js"></script><script language="javascript" src="/system/resource/js/openlink.js"></script><a href="http://en.ndnu.edu.cn">ENGLISH</a> |
+<a href="#">繁体</a> |
+<a href="#">手机版</a> |
+<a href="http://720yun.com/t/f05jt5ynru9?from=timeline&amp;isappinstalled=0&amp;pano_id=9256161">宁师全景</a> 
+<!--#endeditable--></div>
+    </div>
+</div>
+<div class="head">
+    <div class="width">
+        <div class="logo"><a href=""><img src="images/logo.png"> </a> </div>
+        <div class="head_r">
+            <div class="ss">
+            <!--#begineditable name="全文检索" viewid="1003" tagname="全文检索" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""--><script type="text/javascript">
+    function _nl_ys_check(){
+        
+        var keyword = document.getElementById('showkeycode1003').value;
+        if(keyword==null||keyword==""){
+            alert("请输入你要检索的内容！");
+            return false;
+        }
+        if(window.toFF==1)
+        {
+            document.getElementById("lucenenewssearchkeyword1003").value = Simplized(keyword );
+        }else
+        {
+            document.getElementById("lucenenewssearchkeyword1003").value = keyword;            
+        }
+        var  base64 = new Base64();
+        document.getElementById("lucenenewssearchkeyword1003").value = base64.encode(document.getElementById("lucenenewssearchkeyword1003").value);
+        new VsbFormFunc().disableAutoEnable(document.getElementById("showkeycode1003"));
+        return true;
+    } 
+</script>
+
+
+
+<form action="ss_list.jsp?wbtreeid=1001" method="post" id="au2a" name="au2a" onsubmit="return _nl_ys_check()" style="display: inline">
+ <input type="hidden" id="lucenenewssearchkeyword1003" name="lucenenewssearchkeyword" value=""><input type="hidden" id="_lucenesearchtype1003" name="_lucenesearchtype" value="1"><input type="hidden" id="searchScope1003" name="searchScope" value="0">
+                    <input name="showkeycode" id="showkeycode1003" type="text" class="ss_k" onfocus="if(this.value=='请输入关键词'){this.value='';}" onblur="if(this.value==''){this.value='请输入关键词';}" value="请输入关键词" />
+
+                   
+
+<input type="image" src="images/ss_ss.png">
+                </form><script language="javascript" src="/system/resource/js/base64.js"></script><script language="javascript" src="/system/resource/js/formfunc.js"></script>
+<!--#endeditable-->
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div class="nav">
+    <div id="menu">
+      <!--#begineditable name="网站导航" viewid="1004" tagname="网站导航" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->  <ul class="menu">
+        
+            <li><a href="index.htm" class="parent"><span>网站首页</span></a>
+            </li>
+        
+            <li><a href="xxgk1/xxjj.htm" class="parent"><span>学校概况</span></a>
+  <div><ul>
+                    <li><a href="xxgk1/xxjj.htm" target="_blank"><span>学校简介</span></a></li>
+                    <li><a href="xxgk1/xrld.htm" target="_blank"><span>现任领导</span></a></li>
+                    <li><a href="xxgk1/jsfc.htm" target="_blank"><span>教授风采</span></a></li>
+                    <li><a href="xxgk1/ldgh.htm" target="_blank"><span>领导关怀</span></a></li>
+                </ul></div>
+
+            </li>
+        
+            <li><a href="gljg.htm" class="parent"><span>管理机构</span></a>
+
+
+            </li>
+        
+            <li><a href="jxjg.htm" class="parent"><span>教学机构</span></a>
+
+
+            </li>
+        
+            <li><a href="jyjx/jxdt.htm" class="parent"><span>教育教学</span></a>
+  <div><ul>
+                    <li><a href="jyjx/jxdt.htm" target="_blank"><span>教学动态</span></a></li>
+                    <li><a href="jyjx/jwgl.htm" target="_blank"><span>教务管理</span></a></li>
+                    <li><a href="jyjx/jxcg.htm" target="_blank"><span>教学成果</span></a></li>
+                </ul></div>
+
+            </li>
+        
+            <li><a href="kxyj/kydt.htm" class="parent"><span>科学研究</span></a>
+  <div><ul>
+                    <li><a href="kxyj/kydt.htm" target="_blank"><span>科研动态</span></a></li>
+                    <li><a href="kxyj/jggl.htm" target="_blank"><span>机构管理</span></a></li>
+                    <li><a href="http://ky.ndnu.edu.cn/" target="_blank"><span>科研成果</span></a></li>
+                    <li><a href="http://xb.ndnu.edu.cn/" target="_blank"><span>宁师学报</span></a></li>
+                </ul></div>
+
+            </li>
+        
+            <li><a href="#" class="parent"><span>招生就业</span></a>
+  <div><ul>
+                    <li><a href="http://zsb.ndnu.edu.cn/" target="_blank"><span>招生专栏</span></a></li>
+                    <li><a href="http://career.ndnu.edu.cn:81/" target="_blank"><span>就业指导</span></a></li>
+                </ul></div>
+
+            </li>
+        
+            <li><a href="http://rsc.ndnu.edu.cn/rczp/rczp.htm" class="parent"><span>人才招聘</span></a>
+
+
+            </li>
+        
+            <li><a href="http://xxgk.ndnu.edu.cn/" class="parent"><span>信息公开</span></a>
+
+
+            </li>
+        
+            <li><a href="yzgz.jsp?urltype=tree.TreeTempUrl&wbtreeid=1044" class="parent"><span>办公信息</span></a>
+  <div><ul>
+                    <li><a href="yzgz.jsp?urltype=tree.TreeTempUrl&wbtreeid=1044" target="_blank"><span>一周工作</span></a></li>
+                    <li><a href="list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1118" target="_blank"><span>通知文件</span></a></li>
+                    <li><a href="list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1075" target="_blank"><span>会议纪要</span></a></li>
+                    <li><a href="list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1102" target="_blank"><span>统计资料</span></a></li>
+                    <li><a href="http://oa.ndnu.edu.cn/index.php?app=main&func=passport&action=login" target="_blank"><span>OA办公</span></a></li>
+                    <li><a href="http://mail.ndnu.edu.cn/" target="_blank"><span>邮件系统</span></a></li>
+                </ul></div>
+
+            </li>
+</ul>
+<!--#endeditable-->
+    </div>
+</div>
+<div class="main">
+    <div class="width mian_bg">
+        <div class="banner">
+            <div class="wrapper">
+                <div id="focus">
+                    <ul>
+                      <!--#begineditable name="banner" viewid="1005" tagname="banner" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->        
+   
+  <li><a href="" target="_blank"><img src="images/11111.jpg"></a></li>    <li><a href="" target="_blank"><img src="images/18/02/04/12w26txd5h/1.jpg"></a></li>    <li><a href="" target="_blank"><img src="images/js.jpg"></a></li>    
+   
+  <li><a href="" target="_blank"><img src="images/xs1.jpg"></a></li>    <li><a href="" target="_blank"><img src="images/ggkf.jpg"></a></li>    
+<!--#endeditable-->
+                    </ul>
+                    <div class="btnBg" style="opacity:1"></div>
+                    <div class="preNext pre" style="opacity: 0.7;display:none"></div>
+                    <div class="preNext next" style="opacity: 0.7;display:none"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mian">
+            <div class="main_l">
+                <div class="main_a" style="height: 289px">
+                    <div class="szxw">
+                        <div class="szxw_top">
+                           <!--#begineditable name="最新文章" viewid="1006" tagname="最新文章" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""--> <span>[ 时政新闻+ ]</span><a href="http://www.moe.gov.cn/srcsite/A13/s7061/201805/t20180511_335724.html">中共教育部党组关于教育系统深...</a><script>_showDynClickBatch(['dynclicks_u5_4703'],[4703],"wbnews", 1302211163)</script>
+<!--#endeditable-->
+                        </div>
+                        <div class="news_img"><!--#begineditable name="变换图片文章" viewid="1042" tagname="变换图片文章" action="" layout="" contype="news" stylesysid="" template="" tplstyle="" clone="" istemp=""-->
+<LINK href="/system/resource/style/component/news/list/imagechangenews.css" type="text/css" rel="stylesheet">
+<script language="javascript" src="/system/resource/js/news/imagechangenews.js"></script><script language="JavaScript">
+var u_u6_icn = new ImageChangeNews("u_u6_", 400, 230, 4, 2.0, false, false, false, true);
+
+//初始化图片, 并启动定时
+function u_u6_init_img()
+{
+
+    u_u6_icn.addimg("\/__local\/7\/6D\/0B\/2B3E07BC83F3A487D8DD2CA1445_FC0C9ECC_97DE.jpg", "info\/1026\/4720.htm", "", "");
+
+    u_u6_icn.addimg("\/__local\/A\/6A\/0B\/0980E343971AA4D1389D5F75D35_F704EC56_8202.jpg", "info\/1026\/4717.htm", "", "");
+
+    u_u6_icn.addimg("\/__local\/8\/29\/98\/C41C522F6EFDC37D9098C388D41_82420365_87A4.jpg", "info\/1026\/4706.htm", "", "");
+
+    u_u6_icn.addimg("\/__local\/C\/D9\/46\/1B54819CBD06B21D563F50DC44C_5EF999AD_A2EF.jpg", "info\/1026\/4715.htm", "", "");
+
+    u_u6_icn.addimg("\/__local\/D\/95\/F0\/7FB93CC0CBF9CAB063564DD03D3_24E2260E_7E83.png", "info\/1026\/4690.htm", "", "");
+
+    u_u6_icn.addimg("\/__local\/C\/D3\/04\/86781E88369829423D74290B0B6_202BB7A9_A058.jpg", "info\/1026\/4685.htm", "", "");
+
+    u_u6_icn.changeimg(0);
+}
+</script><table cellspacing="0" cellpadding="0" border="0" style="padding:0px margin:0px; border:0px">
+    <tr><td>
+        <div style="OVERFLOW: hidden;height:230px;width:400px">
+            <div id="u_u6_div" align="center" style="padding:0px;margin:0px;border:0px solid black;background-color:#000000;FILTER: progid:DXImageTransform.Microsoft.RevealTrans (duration=2.0,transition=23);height:230px;width:400px">
+                <div id="u_u6_imgdiv" style="padding:0px;border:0px;"><a id="u_u6_url" target="_blank"><img id="u_u6_pic" border="0" width="400" height="230" src="/system/resource/images/space.gif"></a></div>
+            </div>
+            <div style="filter:alpha(style=1,opacity=10,finishOpacity=80);width:400px;height:19px;text-align:right;top:-19px;position:relative;padding:0px;margin:0px;border:0px;">
+<a href="javascript:u_u6_icn.changeimg(0)" ; id="u_u6_selectNode0" class="imagechangenews_pnode" target="_self">1</a><a href="javascript:u_u6_icn.changeimg(1)" ; id="u_u6_selectNode1" class="imagechangenews_pnode" target="_self">2</a><a href="javascript:u_u6_icn.changeimg(2)" ; id="u_u6_selectNode2" class="imagechangenews_pnode" target="_self">3</a><a href="javascript:u_u6_icn.changeimg(3)" ; id="u_u6_selectNode3" class="imagechangenews_pnode" target="_self">4</a><a href="javascript:u_u6_icn.changeimg(4)" ; id="u_u6_selectNode4" class="imagechangenews_pnode" target="_self">5</a><a href="javascript:u_u6_icn.changeimg(5)" ; id="u_u6_selectNode5" class="imagechangenews_pnode" target="_self">6</a>
+            </div></div></td></tr>
+<div align="center" display="none" style="overflow:hidden;text-overflow:ellipsis;height:0px;width:400px;"><a target="_blank" class="titlestyle1042" id="u_u6_newstitle"></a></div><div align="left" display="none" style="overflow:hidden;text-overflow:ellipsis;height:0px;width:400px;padding-left:2px;padding-right:2px"><a target="_blank" class="summarystyle1042" id="u_u6_newssummary"></a></div>   
+</table><SCRIPT language="JavaScript">u_u6_init_img();</SCRIPT><!--#endeditable--></div>
+                    </div>
+                    <div class="lsyw">
+                        <div class="lsyw_top"><a href="index/nsyw.htm" target="_blank"> 宁师要闻 +</a></div>
+                        <div class="lsyw_nr">
+                           <!--#begineditable name="宁事要闻" viewid="1008" tagname="宁事要闻" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->
+ <ul>
+                                <li><span>2018/05/21</span><a href="info/1026/4720.htm">我校召开学习习近平总书记在北京大学师生座谈会...</a></li>
+                                <li><span>2018/05/22</span><a href="info/1026/4741.htm">我校吉兵老师获得中国红十字会嘉奖</a></li>
+                                <li><span>2018/05/21</span><a href="info/1026/4722.htm">喜讯：我校桥牌队在福建省第十六届运动会（大学...</a></li>
+                                <li><span>2018/05/21</span><a href="info/1026/4721.htm">我校举办2018届毕业生夏季校园招聘会暨宁德地区...</a></li>
+                                <li><span>2018/05/17</span><a href="info/1026/4717.htm">加强校地产学研合作助力生物医药产业发展</a></li>
+                                <li><span>2018/05/17</span><a href="info/1026/4716.htm">深化产教融合  助力地方发展</a></li>
+                                <li><span>2018/05/15</span><a href="info/1026/4707.htm">校党委召开纪念马克思诞辰200周年专题学习扩大会...</a></li>
+                                <li><span>2018/05/15</span><a href="info/1026/4706.htm">马来西亚马来亚大学领导一行来访我校</a></li>
+                                <li><span>2018/05/14</span><a href="info/1026/4715.htm">首期“心手相连·挽救生命”心肺复苏公益培训开班</a></li>
+</ul><script>_showDynClickBatch(['dynclicks_u7_4720','dynclicks_u7_4741','dynclicks_u7_4722','dynclicks_u7_4721','dynclicks_u7_4717','dynclicks_u7_4716','dynclicks_u7_4707','dynclicks_u7_4706','dynclicks_u7_4715'],[4720,4741,4722,4721,4717,4716,4707,4706,4715],"wbnews", 1302211163)</script>
+<!--#endeditable-->
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="main_b" style="height: 265px">
+                    <div class="lsyw left tzgg">
+                        <div class="lsyw_top"><a href="index/tzgg.htm" target="_blank"> 通知公告 +</a></div>
+                        <div class="lsyw_nr tzgg_nr">
+                           <!--#begineditable name="通知头条" viewid="1009" tagname="通知头条" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->
+
+ <a href="info/1027/4756.htm" target="_blank"><h1>宁德师范学院景观工程（一阶段）招标公告的补充通知1</h1></a><script>_showDynClickBatch(['dynclicks_u8_4756'],[4756],"wbnews", 1302211163)</script>
+<!--#endeditable-->
+                           <!--#begineditable name="通知公告" viewid="1010" tagname="通知公告" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->
+
+
+ <ul>
+                                <li><span>2018/05/28</span><a href="info/1027/4756.htm">宁德师范学院景观工程（一阶段）招标公...</a></li>                                <li><span>2018/05/25</span><a href="info/1027/4746.htm">招标公告（绿化景观一阶段）</a></li>                                <li><span>2018/05/23</span><a href="info/1027/4742.htm">招标公告</a></li>                                <li><span>2018/05/22</span><a href="info/1027/4731.htm">茶产业与文化研究所装修项目设计单位比...</a></li>                                <li><span>2018/05/18</span><a href="info/1027/4718.htm">茶产业与文化研究所装修项目设计比选公告</a></li>                                <li><span>2018/04/28</span><a href="info/1027/4662.htm">宁德师范学院2018届夏季校园招聘会暨宁...</a></li>                                <li><span>2018/04/28</span><a href="info/1027/4661.htm">关于加强“五一”节期间廉洁自律的通知</a></li>
+</ul><script>_showDynClickBatch(['dynclicks_u9_4756','dynclicks_u9_4746','dynclicks_u9_4742','dynclicks_u9_4731','dynclicks_u9_4718','dynclicks_u9_4662','dynclicks_u9_4661'],[4756,4746,4742,4731,4718,4662,4661],"wbnews", 1302211163)</script>
+<!--#endeditable-->
+                        </div>
+                    </div>
+                    <div class="mtns">
+                        <div class="lsyw_top"><a href="index/mtns.htm" target="_blank"> 媒体宁师 +</a></div>
+                        <div class="mtns_nr">
+                            <div class="mtns_nr_img">
+                                <ul>
+                                  <!--#begineditable name="媒体宁师图" viewid="1011" tagname="媒体宁师图" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""--><script language="javascript" src="/system/resource/js/jquery/jquery-latest.min.js"></script>
+
+  <li><a href="http://www.fj.xinhuanet.com/yuanchuang/2018-04/20/c_1122717164.htm"><img src="/__local/E/47/D2/B1C20CA02F14FDFC8468B1EBECF_D4A590F8_C7965.png"> </a> </li>  <li><a href="http://fj.people.com.cn/n2/2018/0419/c181466-31484456.html"><img src="/__local/5/C2/E3/693569EDCCD5305FC24E6E8EB35_0797D24F_502E8.png"> </a> </li>
+  <li><a href="http://www.eol.cn/fujian/campus/201804/t20180426_1597306.shtml"><img src="/__local/7/F6/CE/4E662364846A7049A68B52D6E85_3518A77E_54DDB.png"> </a> </li>
+<script>_showDynClickBatch(['dynclicks_u10_4605','dynclicks_u10_4597','dynclicks_u10_4620'],[4605,4597,4620],"wbnews", 1302211163)</script>
+<!--#endeditable-->
+                                    <div class="clear"></div>
+                                </ul>
+                            </div>
+                            <div class="lsyw_nr">
+                              <!--#begineditable name="媒体宁师" viewid="1012" tagname="媒体宁师" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""--> <ul>
+                                <li><span>2018/04/21</span><a href="http://www.fj.xinhuanet.com/yuanchuang/2018-04/20/c_1122717164.htm">【新华网】福建省方志委实施“开门修志” 在全国...</a></li>
+                                <li><span>2018/04/20</span><a href="http://fj.people.com.cn/n2/2018/0419/c181466-31484456.html">【人民网】全国首个地方志系统培训基地落户福建宁德</a></li>
+                                <li><span>2018/04/26</span><a href="http://www.eol.cn/fujian/campus/201804/t20180426_1597306.shtml">【中国教育在线】不忘初心·缅怀先烈——闽东红色...</a></li>
+                                <li><span>2018/04/26</span><a href="http://www.gx211.com/news/20180426/n15247087608199.html">【中国高校之窗】不忘初心·缅怀先烈——闽东红色...</a></li>
+</ul><script>_showDynClickBatch(['dynclicks_u11_4605','dynclicks_u11_4597','dynclicks_u11_4620','dynclicks_u11_4622'],[4605,4597,4620,4622],"wbnews", 1302211163)</script>
+<!--#endeditable-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="main_b" style="height: 250px">
+                    <div class="kxyj">
+                        <div class="kxyj_top"><a href="kxyj/kydt.htm" target="_blank"> 科学研究  +</a></div>
+                        <div class="kxyj_nr">
+                            <div class="kxyj_nr_img"><a><img src="images/kxyj_bg1.png"> </a> </div>
+                            <div class="kxyj_nr_wzlb">
+                                <!--#begineditable name="科学研究" viewid="1013" tagname="科学研究" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->
+
+
+<ul>
+                                   <li><a href="info/1016/4730.htm">喜讯：我校两个省教育厅高校工程研</a></li>                                   <li><a href="info/1016/4719.htm">专家来我校指导2018年省社科规划项</a></li>                                   <li><a href="info/1016/4704.htm">宁德市电机电器产业发展专家咨询组</a></li>                                   <li><a href="info/1016/4701.htm">我校应邀参加福建师范大学硕士生联</a></li>                                   <li><a href="info/1016/4696.htm">省科技平台建设项目“福建省闽东海</a></li>                                   <li><a href="info/1016/4683.htm">宁德市科学技术局关于开展第一批市</a></li>                                   <li><a href="info/1016/4671.htm">我校协办2018年全国青年摩擦学学术</a></li>                                   <li><a href="info/1016/4667.htm">我校41名学生考取国内高校硕士研究</a></li>
+</ul><script>_showDynClickBatch(['dynclicks_u12_4730','dynclicks_u12_4719','dynclicks_u12_4704','dynclicks_u12_4701','dynclicks_u12_4696','dynclicks_u12_4683','dynclicks_u12_4671','dynclicks_u12_4667'],[4730,4719,4704,4701,4696,4683,4671,4667],"wbnews", 1302211163)</script>
+<!--#endeditable-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jyjw">
+                        <div class="kxyj_top"><a href="jyjx/jxdt.htm" target="_blank"> 教育教学  +</a></div>
+                        <div class="jyjw_nr">
+                        <div class="scrolldoorFramex1">
+                        <ul class="scrollUlx1">
+                            <li class="sdx101" id="mx101"><a href="jyjx/jxdt.htm" target="_blank">教学动态 </a></li>
+                            <li class="sdx102" id="mx102"><a href="jyjx/jwgl.htm" target="_blank">教务管理</a></li>
+                        </ul>
+                        <div class="bor03 cont">
+                            <div id="cx101">
+                                <div class="lsyw_nr">
+                                   <!--#begineditable name="教学动态" viewid="1014" tagname="教学动态" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->
+ <ul>
+                                <li><span>2018/05/07</span><a href="info/1047/4682.htm">魏远竹校长一行莅临化学与材料学院开展教学工作调研</a></li>
+                                <li><span>2018/05/04</span><a href="info/1047/4695.htm">我校新增3个闽台高校联合培养人才项目</a></li>
+                                <li><span>2018/04/28</span><a href="info/1047/4686.htm">第九届“教学质量月”教学开放周活动圆满结束</a></li>
+                                <li><span>2018/04/21</span><a href="info/1047/4649.htm">我校邀请林素川调研员莅校指导教学质量月活动</a></li>
+                                <li><span>2018/04/12</span><a href="info/1047/4542.htm">我校开展2018年度普通高等教育学校师范类专业认...</a></li>
+                                <li><span>2018/04/09</span><a href="info/1047/4538.htm">我校第九届“教学质量月”活动正式启动</a></li>
+</ul><script>_showDynClickBatch(['dynclicks_u13_4682','dynclicks_u13_4695','dynclicks_u13_4686','dynclicks_u13_4649','dynclicks_u13_4542','dynclicks_u13_4538'],[4682,4695,4686,4649,4542,4538],"wbnews", 1302211163)</script>
+<!--#endeditable-->
+                                </div>
+                            </div>
+                            <div id="cx102" class="hidden">
+                                <div class="lsyw_nr">
+                                   <!--#begineditable name="教务管理" viewid="1028" tagname="教务管理" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->
+ <ul>
+                                <li><span>2018/02/28</span><a href="info/1048/4441.htm">关于开展2017-2018学年第二学期期初教学工作检查...</a></li>
+                                <li><span>2018/01/17</span><a href="info/1048/4367.htm">宁德师范学院关于2017级学生转专业报名情况的公...</a></li>
+                                <li><span>2018/01/08</span><a href="info/1048/4372.htm">关于开展2017-2018学年第一学期教师课堂教学质量...</a></li>
+                                <li><span>2017/12/29</span><a href="info/1048/4319.htm">关于开展2017-2018学年第一学期期末教学检查的通...</a></li>
+                                <li><span>2017/11/27</span><a href="info/1048/4184.htm">我校关于开展网络教学平台、移动教学工具及慕课...</a></li>
+                                <li><span>2017/11/09</span><a href="info/1048/4113.htm">关于开展2017-2018学年第一学期期中教学教学检查...</a></li>
+</ul><script>_showDynClickBatch(['dynclicks_u14_4441','dynclicks_u14_4367','dynclicks_u14_4372','dynclicks_u14_4319','dynclicks_u14_4184','dynclicks_u14_4113'],[4441,4367,4372,4319,4184,4113],"wbnews", 1302211163)</script>
+<!--#endeditable-->
+                                </div>
+                            </div>
+                          
+                        </div>
+
+                    </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                 <div class="main_b" style="height: 251px">
+                    <div class="xywh">
+                        <div class="kxyj_top"><a href="xttd/xttd.htm" target="_blank"> 校园文化  +</a></div>
+                        <div class="jyjw_nr">
+                        <div class="scrolldoorFramex2">
+                        <ul class="scrollUlx2">
+                            <li class="sdx201" id="mx201"><a href="xttd/xttd.htm" target="_blank">学团天地 </a></li>
+                            <li class="sdx202" id="mx202"><a href="xttd/nswh.htm" target="_blank">宁师文化</a></li>
+                        </ul>
+                        <div class="bor03 cont">
+                            <div id="cx201">
+                                <div class="lsyw_nr">
+                                   <!--#begineditable name="学团天地" viewid="1016" tagname="学团天地" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->
+ <ul>
+                                <li><span>2018/05/23</span><a href="info/1060/4743.htm">我校第四期团校培训班顺利开班</a></li>
+                                <li><span>2018/05/21</span><a href="info/1060/4725.htm">教育与艺术学院团校深入学习习近平总书...</a></li>
+                                <li><span>2018/05/21</span><a href="info/1060/4724.htm">教育与艺术学院举办“春风颂”2018音乐...</a></li>
+                                <li><span>2018/05/16</span><a href="info/1060/4710.htm">“凝心聚力 携手共进”心理素质拓展顺利...</a></li>
+                                <li><span>2018/05/09</span><a href="info/1060/4694.htm">“凝心聚力，再创辉煌”我校举办第五届...</a></li>
+                                <li><span>2018/04/25</span><a href="info/1060/4618.htm">花开手语的社举办第四届手语知识竞赛</a></li>
+</ul><script>_showDynClickBatch(['dynclicks_u15_4743','dynclicks_u15_4725','dynclicks_u15_4724','dynclicks_u15_4710','dynclicks_u15_4694','dynclicks_u15_4618'],[4743,4725,4724,4710,4694,4618],"wbnews", 1302211163)</script>
+<!--#endeditable-->
+                                </div>
+                            </div>
+                            <div id="cx202" class="hidden">
+                                <div class="lsyw_nr">
+                                   <!--#begineditable name="宁师文化" viewid="1030" tagname="宁师文化" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->
+ <ul>
+                                <li><span>2018/05/09</span><a href="info/1061/4689.htm">宁德师范学院校徽、校标规范化标准及使...</a></li>
+                                <li><span>2018/05/09</span><a href="info/1061/4688.htm">宁德师范学院PPT模板下载</a></li>
+                                <li><span>2018/05/08</span><a href="info/1061/1219.htm">宁师校标</a></li>
+                                <li><span>2018/05/06</span><a href="info/1061/1223.htm">宁师校歌</a></li>
+                                <li><span>2018/05/06</span><a href="info/1061/1271.htm">宁师印象</a></li>
+                                <li><span>2018/05/06</span><a href="info/1061/1081.htm">宁师校训</a></li>
+</ul><script>_showDynClickBatch(['dynclicks_u16_4689','dynclicks_u16_4688','dynclicks_u16_1219','dynclicks_u16_1223','dynclicks_u16_1271','dynclicks_u16_1081'],[4689,4688,1219,1223,1271,1081],"wbnews", 1302211163)</script>
+<!--#endeditable-->
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                        </div>
+                    </div>
+                    <div class="xbdt">
+                    <div class="kxyj_top"><a href="ybdt.htm" target="_blank"> 院部动态  +</a></div>
+                    <div class="xbdt_nr">
+                        <div class="xbdt_nr_top">
+                        <!--#begineditable name="系统动态图" viewid="1017" tagname="系统动态图" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->
+ 
+	<div class="xbdt_nr_top_img"><a href="info/1036/4755.htm"><img src="/__local/3/CA/1C/F7F228896C1978F70B3E632305F_D10260CB_40150.jpg"></a></div>
+                            <div class="xbdt_nr_top_wz">5月26日上午，生命科学学院于行政楼三楼会议室举行宁德师范学院生命科学学院首届专场招聘会暨求职精英挑战赛，活动由学院团委学生会主办，共邀请安...<a href="info/1036/4755.htm">[详细]</a></div><script>_showDynClickBatch(['dynclicks_u17_4755'],[4755],"wbnews", 1302211163)</script>
+<!--#endeditable-->
+                            <div class="clear"></div>
+                        </div>
+                        <div class="lsyw_nr xbdt_nr_lb">
+                               <!--#begineditable name="系部动态" viewid="1018" tagname="系部动态" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->
+ <ul>
+                                <li><span>2018/05/28</span><a href="info/1036/4758.htm">我校第十一届5·25校园心理情景剧大赛暨心理健康...</a></li>
+                                <li><span>2018/05/28</span><a href="info/1036/4755.htm">展现自我才能，塑造精彩人生——生科院专场招聘...</a></li>
+                                <li><span>2018/05/28</span><a href="info/1036/4752.htm">诵读行知经典，践行行知精神——教育与艺术学院...</a></li>
+                                <li><span>2018/05/28</span><a href="info/1036/4751.htm">学思践悟争做新青年，家校互动普教育新篇</a></li>
+</ul><script>_showDynClickBatch(['dynclicks_u18_4758','dynclicks_u18_4755','dynclicks_u18_4752','dynclicks_u18_4751'],[4758,4755,4752,4751],"wbnews", 1302211163)</script>
+<!--#endeditable-->
+                            </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+                </div>
+                 <div class="main_b" style="height: 234px">
+                    <div class="wbwx">
+                        <div class="kxyj_top"><a> 微博微信  +</a></div>
+                        <div class="wbwx_nr">
+                            <!--#begineditable name="微博微信" viewid="1019" tagname="微博微信" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->    
+    
+<div class="wbwx_nr_img"><img src="images/wx.jpg"><h1>扫一扫<br />进入学院微信</h1></div>
+                              <div class="wbwx_nr_img"><img src="images/tuanweiweixin.jpg"><h1>扫一扫<br />进入团委微信</h1></div>
+                              <div class="wbwx_nr_img"><img src="images/20161010163241.jpg"><h1>扫一扫<br />进入学生会微博</h1></div>
+                                <!--#endeditable-->
+                        </div>
+                    </div>
+                    <div class="yxns">
+                        <div class="kxyj_top"><a href="index/yxns.htm" target="_blank"> 印象宁师  +</a></div>
+                        <div class="mtns_nr">
+                            <div class="mtns_nr_img">
+                                <ul>
+                                   <!--#begineditable name="印象宁师图" viewid="1020" tagname="印象宁师图" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->
+
+
+ <li><a href="info/1099/4745.htm"><img src="/__local/E/A0/4C/DAFBD9F66F4E5E7FA11732FD433_9549BDF5_14F06.png"> </a> </li>
+
+ <li><a href="info/1099/4635.htm"><img src="/__local/9/95/22/02E448501E42F3E9264920929EC_4B628F90_10ECA.jpg"> </a> </li>
+
+
+ <li><a href="info/1099/4679.htm"><img src="/__local/1/9F/0E/B542A91BCC0606D2F171E8DEAAF_D6CEDDB9_18F87.png"> </a> </li>
+<script>_showDynClickBatch(['dynclicks_u20_4745','dynclicks_u20_4635','dynclicks_u20_4679'],[4745,4635,4679],"wbnews", 1302211163)</script>
+<!--#endeditable-->
+                                    <div class="clear"></div>
+                                </ul>
+                            </div>
+                            <div class="lsyw_nr">
+                              <!--#begineditable name="印象宁师" viewid="1021" tagname="印象宁师" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->
+ <ul>
+                                <li><span>2018/05/25</span><a href="info/1099/4745.htm">学院赴寿宁县下党乡开展现场教学活动暨党性教育...</a></li>
+                                <li><span>2018/04/26</span><a href="info/1099/4635.htm">首家全国地方志系统培训基地落户我校（航拍版）</a></li>
+                                <li><span>2018/04/23</span><a href="info/1099/4679.htm">首家全国地方志系统培训基地落户我校</a></li>
+</ul><script>_showDynClickBatch(['dynclicks_u21_4745','dynclicks_u21_4635','dynclicks_u21_4679'],[4745,4635,4679],"wbnews", 1302211163)</script>
+<!--#endeditable-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                </div>
+            <div class="main_r">
+                <div class="ksdh">
+                    <div class="ksdh_top">快速导航</div>
+                    <div class="ksdh_nr">
+                      <!--#begineditable name="快速导航" viewid="1022" tagname="快速导航" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->    
+
+  <ul>
+    
+                   
+                            <li class="ksdh_nr_b"><a href="index/sjzc.htm"><img src="images/ksdh_tb1.png"><br>上级政策</a></li>
+                                                  
+                            <li class="ksdh_nr_b"><a href="http://library.ndnu.edu.cn/"><img src="images/ksdh_tb3.png"><br>数字图书</a></li>
+                                                  
+                            <li class="ksdh_nr_b"><a href="http://oa.ndnu.edu.cn/index.php?app=main&func=passport&action=login"><img src="images/ksdh_tb4.png"><br>校内OA</a></li>
+                                    
+                   
+                            <li class="ksdh_nr_b"><a href="http://xq.ndnu.edu.cn/"><img src="images/ksdh_tb5.png"><br>校庆专栏</a></li>
+                                                  
+                            <li class="ksdh_nr_b"><a href="http://pjw.ndnu.edu.cn/"><img src="images/ksdh_tb6.png"><br>评建信息</a></li>
+                                                  
+                            <li class="ksdh_nr_b"><a href="http://210.34.24.7"><img src="images/liuyan.png"><br>教务系统</a></li>
+                                   
+                        </ul><!--#endeditable-->
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="xyfw">
+                    <div class="ksdh_top xyfw_top">学院服务</div>
+                    <div class="xyfw_nr">
+                      <!--#begineditable name="学院服务" viewid="1023" tagname="学院服务" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->    
+   
+  <a href="xyfw/xsjz.htm"><img src="images/xyfw_img2.png"> </a>
+                              
+  <a href="http://el.ndnu.edu.cn/portal"><img src="images/xyfw_img3.png"> </a>
+                              
+  <a href="http://www.yiban.cn/school/index/id/5000203"><img src="images/xyfw_img4.png"> </a>
+                              
+  <a href="ly_list.jsp?urltype=tree.TreeTempUrl&wbtreeid=1072"><img src="images/ztniwd.png"> </a>
+                              
+  <a href="info/1098/3337.htm"><img src="images/xyfw_img5.png"> </a>
+                              <!--#endeditable-->
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="xyfw">
+                    <div class="ksdh_top ztzl_top">专题专栏</div>
+                    <div class="ztzl_nr">
+                      <!--#begineditable name="专题专栏" viewid="1024" tagname="专题专栏" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""-->       
+
+  <a href="sjdzl.htm"><img src="images/shijiuda_zl.jpg"> </a>
+                              
+
+  <a href="http://lxyzw.ndnu.edu.cn/"><img src="images/16/09/28/1fg9wce43x/ztzl_img1.png"> </a>
+                              
+
+  <a href="http://xxbtpk.ndnu.edu.cn/" target="_blank"><img src="images/16/09/28/1fg9wce43x/ztzl_img2.png"> </a>
+                              
+
+  <a href="http://szyjs.ndnu.edu.cn/"><img src="images/16/09/28/1fg9wce43x/ztzl_img3.png"> </a>
+                              
+
+  <a href="tsns/xdyy.htm"><img src="images/16/10/17/1snjf4134x/zt_xdfc.jpg"> </a>
+                              
+
+  <a href="tsns/xyfc.htm"><img src="images/16/10/17/1snjf4134x/zt_xyfc.jpg"> </a>
+                              <!--#endeditable-->
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="sy_lj">
+                    <div class="scrolldoorFramex3">
+                        <ul class="scrollUlx3">
+                            <li class="sdx301" id="mx301"><a>常用链接 +</a></li>
+                            <li class="sdx302" id="mx302"><a>高校链接 +</a></li>
+                        </ul>
+                        <div class="bor03 cont">
+                            <div id="cx301">
+                                <div class="sy_lj_nr">
+                                   <!--#begineditable name="常用链接" viewid="1025" tagname="常用链接" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""--> <a href="http://www.moe.gov.cn/">教育部</a>
+ <a href="http://www.wenming.cn/ziliao/wenjian/jigou/zhongxuanbu/">中宣部</a>
+ <a href="http://www.fjedu.gov.cn/">福建省教育厅</a>
+ <a href="http://www.ndedu.gov.cn/">宁德市教育局</a>
+ <a href="http://www.xinhuanet.com/">新华网</a>
+ <a href="http://www.people.com.cn/">人民网</a>
+ <a href="http://www.cnki.net/">中国知网</a>
+ <a href="http://www.chinahr.com/ningde/">中华英才网</a>
+ <a href="http://www.626china.org/">中国禁毒展览馆</a>
+ <a href="http://www.zhaopin.com/">智联招聘</a>
+ <a href="http://www.eol.cn/">中国教育在线</a>
+ <a href="http://www.xinhuanet.com/edu/jyxw.htm">新华教育</a>
+ <a href="http://www.hujiang.com/">沪江英语</a>
+ <a href="http://www.icourses.cn/home/">爱课程</a>
+ <a href="http://www.cnmooc.org">好大学在线</a>
+ <a href="http://www.163.com">网易</a>
+ <a href="http://www.qq.com">腾讯</a>
+ <a href="http://www.sina.com.cn">新浪</a>
+ <a href="http://www.cnjyky.com/">中国教育科研网</a>
+ <a href="http://www.ndkx.cn/">宁德市科协</a>
+ <a href="http://www.chsi.com.cn/">学信网</a>
+ <a href="http://tea.91open.com/">海峡茶学港</a>
+ <a href="http://www.chinanews.com/">中国新闻网</a>
+ <a href="http://www.ifeng.com/">凤凰资讯</a>
+<!--#endeditable-->
+                                </div>
+                            </div>
+                            <div id="cx302" class="hidden">
+                                <div class="sy_lj_nr">
+                                  <!--#begineditable name="高校链接" viewid="1026" tagname="高校链接" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""--> <a href="http://www.xmu.edu.cn/">厦门大学</a>
+ <a href="http://www.hqu.edu.cn/">华侨大学</a>
+ <a href="http://www.fzu.edu.cn/">福州大学</a>
+ <a href="https://www.fjnu.edu.cn/">福建师范大学</a>
+ <a href="http://www.fafu.edu.cn/">福建农林大学</a>
+ <a href="http://www.jmu.edu.cn/">集美大学</a>
+ <a href="http://www.mnnu.edu.cn/">闽南师范大学</a>
+ <a href="http://www.qztc.edu.cn/">泉州师范学院</a>
+ <a href="http://www.fjut.edu.cn/">福建工程学院</a>
+ <a href="http://www.mju.edu.cn/">闽江学院</a>
+ <a href="http://www.xmut.edu.cn/">厦门理工学院</a>
+ <a href="http://www.smxy.cn/">三明学院</a>
+ <a href="http://www.lyun.edu.cn/">龙岩学院</a>
+ <a href="http://www.wuyiu.edu.cn">武夷学院</a>
+ <a href="http://www.fjjxu.edu.cn/">福建江夏学院</a>
+ <a href="http://www.fjrtvu.edu.cn/">福建电大</a>
+ <a href="http://www.fjmu.edu.cn/">福建医科大学</a>
+ <a href="http://www.fjtcm.edu.cn/">福建中医药大学</a>
+ <a href="http://www.ptu.edu.cn/">莆田学院</a>
+ <a href="http://www.fjpsc.edu.cn/">福建警察学院</a>
+ <a href="http://www.fjjyxy.com/">福建教育学院</a>
+ <a href="http://www.bnu.edu.cn/">北京师范大学</a>
+ <a href="http://www.ecnu.edu.cn/">华东师范大学</a>
+ <a href="http://www.shnu.edu.cn/">上海师范大学</a>
+<!--#endeditable-->
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    </div>
+<div class="f">
+    <div class="width">
+        <em><a href="http://bszs.conac.cn/sitename?method=show&id=0719CD3A1E556B65E053022819AC5AE3" target="_blank"><img src="images/dzjg.png"></a></em>
+       <!--#begineditable name="版权" viewid="1027" tagname="版权" action="" layout="" contype="" stylesysid="" template="" tplstyle="" clone="" istemp=""--><!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+<p>Copyright © 2016 All Rights Reserved &nbsp;| &nbsp;版权所有 :宁德师范学院<br />信息产业部ICP备案：闽ICP备10024257号 &nbsp;| &nbsp;制作维护:宁德师范学院网络中心</p><!--#endeditable-->
+    </div>
+</div>
+</body>
+</html>

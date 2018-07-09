@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>乐山职业技术学院</title>
+<link href="../index/css/newindex.css" rel="stylesheet" type="text/css" />
+<script src="index/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	$('#dh-box-tab #dh-title span').hover(function(){
+			$('#dh-box-tab #dh-title span').removeClass('select');
+			$(this).addClass('select');
+			$('#dh-box-tab #tab-info ul').removeClass('on');
+			$('#dh-box-tab #tab-info ul').eq($('#dh-box-tab #dh-title span').index(this)).addClass('on')
+	});
+});
+</script>
+<script type="text/javascript">
+$(function(){
+	$('#dh-box-2 #dh-title2 span').hover(function(){
+			$('#dh-box-2 #dh-title2 span').removeClass('select');
+			$(this).addClass('select');
+			$('#dh-box-2 #tab-info2 ul').removeClass('on');
+			$('#dh-box-2 #tab-info2 ul').eq($('#dh-box-2 #dh-title2 span').index(this)).addClass('on')
+	});
+});
+</script>
+</head>
+<body>
+<div class="header">
+	<div class="logo"><h1><a href="http://www.lszyxy.edu.cn/" title="乐山职业技术学院">乐山职业技术学院</a></h1></div>
+    <div class="language"><a href="http://www.lszyxy.edu.cn/public/" title="信息公开" target="_blank">信息公开</a><p>|</p><a href="#" title="服务指南" target="_blank">服务指南</a><p>|</p><a href="javascript:window.external.AddFavorite('http://http://www.lszyxy.edu.cn/','乐山职业技术学院')">加入收藏</a></div>
+    <div class="time"><span id="localtime"></span></div>
+<script type="text/javascript" src="index/js/newindex/clock.time.js"></script>
+    
+<div class="navBar">
+	<ul class="nav clearfix">
+		<li class="m">
+			<h3><a href="http://www.lszyxy.edu.cn">网站首页</a></h3>
+		</li>
+		<li class="m">
+			<h3><a href="http://www.lszyxy.edu.cn/?u=aboutus">学院概况</a></h3>
+			<ul class="sub">
+				<li><a href="http://www.lszyxy.edu.cn/?u=aboutus">学院简介</a></li>
+				<li><a href="http://www.lszyxy.edu.cn/?u=lingdao">现任领导</a></li>
+				<li><a href="http://www.lszyxy.edu.cn/">成果展示</a></li>
+				<li><a href="http://www.lszyxy.edu.cn/?u=constitution">学院章程</a></li>
+			</ul>
+		</li>
+		<li class="m">
+			<h3><a href="http://www.lszyxy.edu.cn/?u=jigou">机构设置</a></h3>
+		</li>
+		<li class="m">
+			<h3><a href="http://www.lszyxy.edu.cn/?u=news">新闻中心</a></h3>
+		</li>
+		<li class="m">
+			<h3><a href="http://zsw.lszyxy.edu.cn/" target="_blank">招生就业</a></h3>
+			<ul class="sub" style="display: none;">
+				<li><a href="http://zsw.lszyxy.edu.cn/" target="_blank">招生信息网</a></li>
+				<li><a href="http://www.lszyxy.edu.cn/jy/" target="_blank">就业信息网</a></li>
+				<li><a href="http://jy.lszyxy.edu.cn:60002" target="_blank">就业信息管理系统</a></li>
+			</ul>
+		</li>
+		<li class="m">
+			<h3><a href="#" target="_blank">教学科研</a></h3>
+			<ul class="sub" style="display: none;">
+				<li><a href="http://www.lszyxy.edu.cn/jw/" target="_blank">教育教学</a></li>
+				<li><a href="http://www.lszyxy.edu.cn/kyc/" target="_blank">科学研究</a></li>
+				<li><a href="http://192.168.100.4:8080/markbook/GetIndex.jsp" target="_blank">图书馆</a></li>
+			</ul>
+		</li>
+		<li class="m">
+			<h3><a href="http://www.lszyxy.edu.cn/xs" target="_blank">学生工作</a></h3>
+		</li>
+		<li class="m">
+			<h3><a href="http://www.lszyxy.edu.cn/szk/" target="_blank">思政教育</a></h3>
+		</li>
+		<li class="m">
+			<h3><a href="http://www.lszyxy.edu.cn/wsb/" target="_blank">合作交流</a></h3>
+			<ul class="sub" style="display: none;">
+				<li><a href="http://www.lszyxy.edu.cn/wsb/" target="_blank">国际交流</a></li>
+				<li><a href="http://www.lszyxy.edu.cn/">校企合作</a></li>
+				<li><a href="http://www.lszyxy.edu.cn/gcljt/">乐山硅材料职业教育集团</a></li>
+			</ul>
+		</li>
+		<li class="m">
+			<h3><a href="#">社会服务</a></h3>
+			<ul class="sub" style="display: none;">
+				<li><a href="http://www.lszyxy.edu.cn/jjc/" target="_blank">国家职业技能鉴定所</a></li>
+				<li><a href="http://www.lszyxy.edu.cn/jxjy/" target="_blank">继续教育处</a></li>
+				<li><a href="http://ht.lszyxy.edu.cn/" target="_blank">海天公司</a></li>
+				<li><a href="http://www.lsfykj.com/" target="_blank">丰野农科</a></li>
+			</ul>
+		</li>
+		<li class="m">
+			<h3><a href="http://hospital.lszyxy.edu.cn">附属医院</a></h3>
+			<!--
+			<ul class="sub" style="display: none;">
+				<li><a href="http://www.lszyxy.edu.cn/?u=jgdh" target="_blank">信息导航</a></li>
+				<li><a href="http://www.lszyxy.edu.cn/jw/NewsList.aspx?act=list&type=TeachingCalendar" target="_blank">教学行事历</a></li>
+			</ul> -->
+		</li>
+		<li class="m">
+			<h3><a href="http://www.lszyxy.edu.cn/plus/guestbook/index.php" target="_blank">留言反馈</a></h3>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript" src="index/js/newindex/SuperSlide.2.1.js"></script>
+<script type="text/javascript" src="index/js/newindex/nav.js"></script>
+</div>
+<div class="banner-all">
+    <div id="slider" class="banner"> 
+    	<!-- 大图片 big image -->
+    	<a style="cursor:auto" target="_blank" href="#"><img src="index/images/jzg.jpg" /></a> 
+        <a style="cursor:auto" target="_blank" href="#"><img src="index/images/yh.jpg" /></a>
+	<a style="cursor:auto" target="_blank" href="#"><img src="index/images/xsd.jpg" /></a>
+        !-- <a style="cursor:auto" target="_blank" href="#"><img src="index/images/newschool.jpg" /></a>  -->	
+        !-- <a style="cursor:auto" target="_blank" href="http://www.lszyxy.edu.cn/html/ztjs/sjd/"><img src="index/images/xuxie19.jpg" /></a>  -->       
+    </div>
+    <script type="text/javascript" src="index/js/jquery.nivo.slider.pack.js"></script> 
+    <script type="text/javascript">
+		$(window).load(function() {
+			$('#slider').nivoSlider();
+		});
+    </script>
+</div>
+<div class="content">
+    <div class="notice">
+        <div class="notice1"><p>校园公告</p><a href="http://www.lszyxy.edu.cn/?u=list" target="_blank" title="更多">更多</a></div>
+        <div class="notice2">
+            <ul><li><a href="/zw/cs_showgg.asp?id=677&act=show" title="乐山职业技术学院工会端午节粽子、盐蛋采购（第二次）招标结果公告" target="_blank">乐山职业技术学院工会端午节粽子、盐蛋采购（第二次）招标结果公告</a></li><li><a href="/bg/cs_showgg.asp?id=1270&act=show" title="第13周（5月28日—6月3日）会议和活动安排" target="_blank">第13周（5月28日—6月3日）会议和活动安排</a></li><li><a href="/jw/NewsList.aspx?act=show&mid=83af4979-b485-4173-bd51-71dc93a48f74" title="关于梁梦霞同学专业变更审查结果的公示" target="_blank">关于梁梦霞同学专业变更审查结果的公示</a></li><li><a href="/jw/NewsList.aspx?act=show&mid=c5722af9-d7ca-4771-8967-fce78d4f9d72" title="关于开展2018年乐山职业技术学院创新发展行动计划建设项目立项工作的通知" target="_blank">关于开展2018年乐山职业技术学院创新发展行动计划建设项目立项工作的通知</a></li><li><a href="/zw/cs_showgg.asp?id=676&act=show" title="乐山职业技术学院工会端午节粽子、盐蛋采购公告（第二次）" target="_blank">乐山职业技术学院工会端午节粽子、盐蛋采购公告（第二次）</a></li><li><a href="/zw/cs_showgg.asp?id=675&act=show" title="乐山职业技术学院工会端午节粽子、盐蛋采购招标结果公告" target="_blank">乐山职业技术学院工会端午节粽子、盐蛋采购招标结果公告</a></li><li><a href="/jw/NewsList.aspx?act=show&mid=d727f781-ff8b-435b-9a7c-ec6b826f7625" title="成都工业学院的 “专升本”考试加分情况公示" target="_blank">成都工业学院的 “专升本”考试加分情况公示</a></li><li><a href="/bg/cs_showgg.asp?id=1269&act=show" title="第12周（5月21日—5月27日）会..." target="_blank">第12周（5月21日—5月27日）会...</a></li></ul>
+        </div>
+    </div>
+    <div class="news">
+        <div class="news1"><p>学院要闻</p><a href="./?u=news" target="_blank" title="更多">更多</a></div>
+        <div class="news2"><div class="hot"><p><a href="http://www.lszyxy.edu.cn/?u=infopage&id=20454&tid=0" title="" target="_blank"><img src="http://www.lszyxy.edu.cn/upimg/userup/1805/2PU3115058_lit.jpg" width="121" height="72" alt="" /></a></p><strong><a href="http://www.lszyxy.edu.cn/?u=infopage&id=20454&tid=0" title="乐山云计算与物联网创新发展大会在我院召开" target="_blank">乐山云计算与物联网创新发展大会在我院召开</a></strong><span>为推进我市物联网应用发展，由市经信委主办，乐山职业技术学院、中国电信乐山分公司、四川金互通科技股份有限公司承办的，乐山云计算与物联网创新发展大会于2018年5月25日14点，在我院学术交流中心召开。 乐山职业技术学院院长刘忠、乐山市经济和信息化委员会副主任林..<a href="http://www.lszyxy.edu.cn/?u=infopage&id=20454&tid=0" title="更多" target="_blank">更多>></a></span></div>
+                
+        <ul>
+        <li><p><a href="http://www.lszyxy.edu.cn/?u=infopage&id=20454&tid=0" title="乐山云计算与物联网创新发展大会在我院召开" target="_blank">乐山云计算与物联网创新发展大会在我院召开</a></p><span>2018-05-28</span></li>
+        <li><p><a href="http://www.lszyxy.edu.cn/?u=infopage&id=20453&tid=0" title="学院组织开展防震减灾应急疏散演练" target="_blank">学院组织开展防震减灾应急疏散演练</a></p><span>2018-05-28</span></li>
+        <li><p><a href="http://www.lszyxy.edu.cn/?u=infopage&id=20451&tid=0" title="学院各党支部开展“弘扬以爱国主义为核心的民族精神”主题党日活动" target="_blank">学院各党支部开展“弘扬以爱国主义为核心的民族精神”主题党日活动</a></p><span>2018-05-28</span></li>
+        <li><p><a href="http://www.lszyxy.edu.cn/?u=infopage&id=20450&tid=0" title="我院圆满完成全国卫生专业技术资格考试考务工作" target="_blank">我院圆满完成全国卫生专业技术资格考试考务工作</a></p><span>2018-05-28</span></li>
+        <li><p><a href="http://www.lszyxy.edu.cn/?u=infopage&id=20447&tid=0" title="艺术设计系学生在四川省大学生数字艺术作品大赛获一等奖" target="_blank">艺术设计系学生在四川省大学生数字艺术作品大赛获一等奖</a></p><span>2018-05-28</span></li>
+        </div>
+    </div>
+    
+    <div class="dh-box-tab dh-box-2" id="dh-box-2">
+    	<div class="dh-title dh-title2" id="dh-title2"><span>系部动态</span><span class="select">媒体关注</span></div>
+        <div class="tab-info tab-info2" id="tab-info2">
+		
+			
+            <ul>
+           
+      <li><p><a href="http://www.lszyxy.edu.cn/hl/?u=info&id=5806" title="医护系针灸推拿社在成都理工大学工程技术学院开展中医养生交流活动" target="_blank">医护系针灸推拿社在成都理工大学工程技术学院开展中医养生交流活动</a></p><span>2018-05-29</span></li>
+        <li><p><a href="http://www.lszyxy.edu.cn/hl/?u=info&id=5805" title="医护系参加乐山职业技术学院防震减灾应急疏散演练活动" target="_blank">医护系参加乐山职业技术学院防震减灾应急疏散演练活动</a></p><span>2018-05-29</span></li>
+        <li><p><a href="http://www.lszyxy.edu.cn/?u=infopage&id=20452&tid=0" title="学院气排球队与省运动技术学院老年队比赛交流" target="_blank">学院气排球队与省运动技术学院老年队比赛交流</a></p><span>2018-05-28</span></li>
+        <li><p><a href="http://www.lszyxy.edu.cn/gk/?u=info&id=949" title="体育系开展2018年防范非法集资宣传月活动总结" target="_blank">体育系开展2018年防范非法集资宣传月活动总结</a></p><span>2018-05-28</span></li>
+        <li><p><a href="http://www.lszyxy.edu.cn/gk/?u=info&id=948" title="体育系教师参加四川省高职高专中青年体育教师第二教学技能培训" target="_blank">体育系教师参加四川省高职高专中青年体育教师第二教学技能培训</a></p><span>2018-05-28</span></li>
+        <li><p><a href="http://www.lszyxy.edu.cn/ly/?u=info&id=2083" title="旅游艺术系开展学生干部骨干培训" target="_blank">旅游艺术系开展学生干部骨干培训</a></p><span>2018-05-28</span></li>
+        <li><p><a href="http://www.lszyxy.edu.cn/cl/?u=info&id=2854" title="新能源工程系开展“以物换物”环保活动" target="_blank">新能源工程系开展“以物换物”环保活动</a></p><span>2018-05-28</span></li>
+        <li><p><a href="http://www.lszyxy.edu.cn/dx/info_Show.asp?InfoId=1615&ClassId=25&Topid=0" title="电信系参加防震减灾应急疏散演练" target="_blank">电信系参加防震减灾应急疏散演练</a></p><span>2018-05-28</span></li>
+        
+     </ul>
+     
+        	<ul class="on" >
+           <li><p><a href="http://www.scedu.net/_wx/_wx_home_news_i.aspx?iid=636626836915576848" title="四川教育网：乐山职业技术学院挖掘特色亮点 讲好“七彩草原故事”" target="_blank">四川教育网：乐山职业技术学院挖掘特色亮点 讲好“七彩草原故事”</a></p><span>2018-05-24</span></li>
+        <li><p><a href="http://www.leshan.cn/html/list-lsxw/view_491C9411DA97FC42.html" title="乐山新闻网：乐职院赴甘孜州炉霍县推进定点扶贫帮扶项目" target="_blank">乐山新闻网：乐职院赴甘孜州炉霍县推进定点扶贫帮扶项目</a></p><span>2018-05-23</span></li>
+        <li><p><a href="http://leshan.scol.com.cn/jy/201805/56219721.html" title="四川在线：乐职院定点帮扶宗塔讲好“七彩草原故事”" target="_blank">四川在线：乐职院定点帮扶宗塔讲好“七彩草原故事”</a></p><span>2018-05-23</span></li>
+        <li><p><a href="http://www.ganzixinwen.com/jj/dongtai/n18882.html" title="甘孜新闻网：挖掘特色亮点，讲好“七彩草原故事”" target="_blank">甘孜新闻网：挖掘特色亮点，讲好“七彩草原故事”</a></p><span>2018-05-22</span></li>
+        <li><p><a href="https://mp.weixin.qq.com/s/_y8WOlvbJLlo87hl6zUz9A" title="乐山发布：这套除霾系统，研发人是7个乐山职业技术学院学生" target="_blank">乐山发布：这套除霾系统，研发人是7个乐山职业技术学院学生</a></p><span>2018-05-22</span></li>
+        <li><p><a href="http://leshan.scol.com.cn/jy/201805/56216600.html" title="四川在线网：桥牌文化大讲堂走进乐山职业技术学院" target="_blank">四川在线网：桥牌文化大讲堂走进乐山职业技术学院</a></p><span>2018-05-22</span></li>
+        <li><p><a href="http://www.leshan.cn/html/list-lsxw/view_92D71EED79538EE9.html" title="乐山新闻网：2018桥牌文化大讲堂走进乐职院" target="_blank">乐山新闻网：2018桥牌文化大讲堂走进乐职院</a></p><span>2018-05-21</span></li>
+        <li><p><a href="http://www.ccba.org.cn/Express/ExpressInfo.aspx?expressID=16130" title="中国桥牌网：精彩回顾---桥牌文化大讲堂乐山职业技术学院站活动" target="_blank">中国桥牌网：精彩回顾---桥牌文化大讲堂乐山职业技术学院站活动</a></p><span>2018-05-21</span></li>
+        
+            </ul>
+        </div>
+    </div>
+    
+   
+    <div class="student">
+        <div class="student1"><p>学生工作</p><a href="http://www.lszyxy.edu.cn/xs/index.asp" target="_blank" title="更多">更多</a></div>
+        <div class="student2">
+            	<ul><li><p><a href="http://www.lszyxy.edu.cn/xs/cs_showgg.asp?id=241&act=show" title="关于2018年高校毕业生就业困难帮扶经费评" target="_blank">关于2018年高校毕业生就业困难帮扶经费评</a></p><span>2018-05-17</span></li><li><p><a href="http://www.lszyxy.edu.cn/xs/cs_showgg.asp?id=236&act=show" title="关于开展2019年高校毕业生求职创业补贴评" target="_blank">关于开展2019年高校毕业生求职创业补贴评</a></p><span>2018-05-15</span></li><li><p><a href="http://www.lszyxy.edu.cn/?u=infopage&id=20175&tid=0" title="不倒的旗帜" target="_blank">不倒的旗帜</a></p><span>2018-05-09</span></li><li><p><a href="http://www.lszyxy.edu.cn/?u=infopage&id=20122&tid=0" title="学院举办“乐享青春”师生音乐会" target="_blank">学院举办“乐享青春”师生音乐会</a></p><span>2018-05-07</span></li><li><p><a href="http://www.lszyxy.edu.cn/?u=infopage&id=20119&tid=0" title="学院团委召开“五四”表彰大会（多图）" target="_blank">学院团委召开“五四”表彰大会（多图）</a></p><span>2018-05-07</span></li><li><p><a href="http://www.lszyxy.edu.cn/?u=infopage&id=20023&tid=0" title="学院第十五届春季田径运动会圆满落幕" target="_blank">学院第十五届春季田径运动会圆满落幕</a></p><span>2018-05-07</span></li><li><p><a href="http://www.lszyxy.edu.cn/?u=infopage&id=20022&tid=0" title="乐山职业技术学院春季田径运动会系列报道（四" target="_blank">乐山职业技术学院春季田径运动会系列报道（四</a></p><span>2018-05-07</span></li></ul>
+        </div>
+    </div> 
+
+    <div class="work">
+        <div class="work1"><p>教学工作</p><a href="http://www.lszyxy.edu.cn/jw/" target="_blank" title="更多">更多</a></div>
+        <div class="work2">
+            <ul><li><p><a href="http://www.lszyxy.edu.cn/jw/NewsList.aspx?act=show&mid=83af4979-b485-4173-bd51-71dc93a48f74" title="关于梁梦霞同学专业变更审查结果的公示" target="_blank">关于梁梦霞同学专业变更审查结果的公示</a></p><span>2018-05-23</span></li><li><p><a href="http://www.lszyxy.edu.cn/jw/NewsList.aspx?act=show&mid=c5722af9-d7ca-4771-8967-fce78d4f9d72" title="关于开展2018年乐山职业技术学院创新发展行动计划建设项目立项工作的通知" target="_blank">关于开展2018年乐山职业技术学院创新发展行动计划建设项目立项工作的通知</a></p><span>2018-05-23</span></li><li><p><a href="http://www.lszyxy.edu.cn/jw/NewsList.aspx?act=show&mid=d727f781-ff8b-435b-9a7c-ec6b826f7625" title="成都工业学院的 “专升本”考试加分情况公示" target="_blank">成都工业学院的 “专升本”考试加分情况公示</a></p><span>2018-05-21</span></li><li><p><a href="http://www.lszyxy.edu.cn/jw/NewsList.aspx?act=show&mid=ec8d21b9-b185-4d73-a536-cfbb90319bc1" title="关于同意学生陈焱冰转学（转出）的公示" target="_blank">关于同意学生陈焱冰转学（转出）的公示</a></p><span>2018-05-18</span></li><li><p><a href="http://www.lszyxy.edu.cn/jw/NewsList.aspx?act=show&mid=15db2e68-af67-47b2-8aac-8e66da00f683" title="2018年参加专升本报名考试信息公示" target="_blank">2018年参加专升本报名考试信息公示</a></p><span>2018-05-11</span></li><li><p><a href="http://www.lszyxy.edu.cn/jw/NewsList.aspx?act=show&mid=c0267586-1f0f-466b-91a1-6898d776d307" title="乐院教【2018】号—关于2018年选拔优秀专科应届毕业生报考“跨校专升本”的通知" target="_blank">乐院教【2018】号—关于2018年选拔优秀专科应届毕业生报考“跨校专升本”的通知</a></p><span>2018-05-06</span></li><li><p><a href="http://www.lszyxy.edu.cn/jw/NewsList.aspx?act=show&mid=e5b5d4aa-7e5e-4726-b04c-726853b0abdc" title="关于2018年3月教学工作完成情况及4至5月主要教学工作安排的通知" target="_blank">关于2018年3月教学工作完成情况及4至5月主要教学工作安排的通知</a></p><span>2018-04-25</span></li><li><p><a href="http://www.lszyxy.edu.cn/jw/NewsList.aspx?act=show&mid=d809c825-8138-4031-b899-c4d792b51bed" title="关于2017-2018年第二学期重修交费及考试的通知" target="_blank">关于2017-2018年第二学期重修交费及考试的通知</a></p><span>2018-04-16</span></li></ul>
+        </div>
+    </div>
+    <div class="xb-class">
+        <div class="title"><p>快捷导航</p></div>
+        <div class="info">
+            <ul>
+               <li><a href="http://jxgl.lszyxy.edu.cn/" title="老版教学管理系统" target="_blank">老版教学管理系统</a></li>
+               <li><a href="http://jpk.lszyxy.com/G2S/ShowSystem/Index.aspx" title="G2School 网络教学平台" target="_blank">网络教学平台</a></li>
+               <li><a href="http://jwgl.lszyxy.edu.cn:8002/" title="新版教学管理系统" target="_blank">新版教学管理系统</a></li>
+               <li><a href="http://www.lszyxy.edu.cn/ky/kyxmgl/login.asp" title="科研项目管理平台" target="_blank">科研项目管理平台</a></li>
+               <li><a href="http://www.lszyxy.edu.cn/dgsx/" title="顶岗实习管理系统" target="_blank">顶岗实习管理系统</a></li>
+               <li><a href="https://www.scxszz.com/pros/identity/indexgx.action" title="三金在线申请系统" target="_blank">“三金”在线申请系统</a></li>	
+               <li><a href="http://lszyxy.fanya.chaoxing.com/portal" title="乐山职业技术学院数字学习中心" target="_blank">数字学习中心</a></li>
+               <li><a href="http://pay.lszyxy.edu.cn/" title="工资查询系统" target="_blank">职工工资查询系统</a></li>	   
+               <li><a href="http://mt.lszyxy.edu.cn/" title="心理健康与职业测评系统" target="_blank">心理健康与职业测评系统</a></li>
+               <li><a href="http://gzjyyj.cbpt.cnki.net/" title="《高职教育研究》在线投稿系统" target="_blank">《高职教育研究》在线投稿系统</a></li>
+               <li><a href="http://www.zhihuishu.com/" title="智慧树网络课程" target="_blank">智慧树网络课程</a></li>
+               <li><a href="http://www.lszyxy.edu.cn/yxw/LoginPage.aspx" title="迎新系统（新生信息采集）" target="_blank">迎新系统（新生信息采集）</a></li>
+               <li><a href="http://pay.lszyxy.edu.cn:8048/school/" target="_blank">乐职院校园安心付</a></li>
+               <li><a href="http://www.wanfangdata.com.cn/" title="文献信息服务中心" target="_blank">文献信息服务中心</a></li>               			
+               
+              <!-- <li><a href="http://www.lszyxy.edu.cn/PwdRetrieve/default.aspx" title="应用系统密码服务" target="_blank">应用系统密码服务</a></li> -->
+               <li><a href="http://www.lszyxy.edu.cn/jw/NewsList.aspx?act=show&mid=0daff800-f0d2-443c-9483-1f08b6466245" target="_blank">校园网认证上网客户端</a></li>
+               <li><a href="http://online.enetedu.com/lszyxy/Index/Index" title="教师在线学习中心" target="_blank">教师在线学习中心</a></li>
+            </ul>
+        </div>
+	</div>
+    <div class="dh-box-tab" id="dh-box-tab">
+        <div class="dh-title" id="dh-title"><span>处室导航</span><span class="select">系部导航</span></div>
+        <div class="tab-info" id="tab-info">
+        	  <ul>
+        	  	   <li><a href="/zz/" target="_blank">组织部</a></li>
+                <li><a href="/xs/" target="_blank">学生工作部</a></li>
+                <li><a href="/xc/" target="_blank">宣传部</a></li>
+                <li><a href="/jyddc/" target="_blank">教育督导处</a></li>
+                <li><a href="/lzjs/" target="_blank">监察审计处</a></li>
+                <li><a href="/kyc/" target="_blank">科研处</a></li>
+                <li><a href="/bg/" target="_blank">学院办公室</a></li>
+                <li><a href="/gz/" target="_blank">国资处(基建处)</a></li>
+                <li><a href="/rs/" target="_blank">人事处</a></li>
+                <li><a href="/tsg/" target="_blank">图书馆</a></li>
+                <li><a href="/jc/" target="_blank">计划财务处</a></li>
+                <li><a href="/gh/" target="_blank">工会</a></li>
+                <li><a href="/jw/" target="_blank">教务处</a></li>
+                <li><a href="/wl/" target="_blank" class="xxzx">信息中心</a></li>
+                <li><a href="/bw/" target="_blank">保卫处</a></li>
+                <li><a href="http://zsw.lszyxy.edu.cn" target="_blank">招生就业处</a></li>
+                <li><a href="/lw/" target="_blank">后勤服务中心</a></li>
+                <li><a href="/jxjy/" target="_blank">继续教育处</a></li>
+                <li><a href="http://fgc.lszyxy.edu.cn/" target="_blank">发展规划处</a></li>
+            </ul>
+            <ul class="on">
+            	   <li><a href="http://www.lszyxy.edu.cn/cl/" target="_blank">新能源工程系</a></li>
+                <li><a href="http://cj.lszyxy.edu.cn/" target="_blank">财经管理系</a></li>
+                <li><a href="http://www.lszyxy.edu.cn/ly/" target="_blank">旅游系</a></li>
+                <li><a href="http://www.lszyxy.edu.cn/ys/" target="_blank">艺术设计系</a></li>
+                <li><a href="http://www.lszyxy.edu.cn/jd/" target="_blank">机电工程系</a></li>
+                <li><a href="http://www.lszyxy.edu.cn/dx/" target="_blank">电子信息工程</a></li>
+                <li><a href="http://www.lszyxy.edu.cn/hl/" target="_blank">护理系</a></li>
+                <li><a href="http://yxx.lszyxy.edu.cn/" target="_blank">医学系</a></li>
+                <li><a href="http://yx.lszyxy.edu.cn/" target="_blank">药学系</a></li>
+                <li><a href="http://www.lszyxy.edu.cn/gk/" target="_blank">体育系</a></li>
+                <li><a href="http://www.lszyxy.edu.cn/gk/" target="_blank">基础公共课程部</a></li>
+                <!-- <li><a href="http://nx.lszyxy.edu.cn/" target="_blank">农学系</a></li> -->
+                
+            </ul>   
+           <!-- <ul>
+            	  <li><a href="http://hospital.lszyxy.edu.cn/" target="_blank">乐山职业技术学院附属医院</a></li>
+                <li><a href="http://lnbzk.com/ttk.html" target="_blank">财经管理系</a></li>
+                <li><a href="#" target="_blank">信息中心</a></li>
+                <li><a href="/jjc/" target="_blank">职业技能鉴定所</a></li>
+                <li><a href="h#" target="_blank">后勤服务中心</a></li>
+                <li><a href="#" target="_blank">乐山太阳能研究院</a></li>
+                <li><a href="#" target="_blank">乐山市老年病专科医院(非直属)</a></li>
+            </ul>         
+            -->
+        </div>
+    </div>
+    <div class="xq-panler">
+        <div class="title"><p>校企合作</p></div>
+        <div class="xq-info">
+        	<ul>
+                <li><a href="http://www.lszyxy.edu.cn/lszx/" target="_blank">中兴通讯电信学院</a></li>
+               <!-- <li><a href="#" target="_blank">东方领航学院</a></li>  -->
+                
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 四大链接 -->
+<div class="footer1">
+    <ul>
+      <li><a href="/html/ztjs/sjd/" title="19大专题" target="_blank"><img src="index/images/19.jpg" width="237" height="89" /></a></li>   
+    	<li><a href="http://www.lszyxy.edu.cn/yzsb/" title="优质高等职业院校申报" target="_blank"><img src="index/images/newindex/yzsb.jpg" width="237" height="89" alt="" /></a></li>
+      <li class="other"><a href="http://www.lszyxy.edu.cn/html/ztjs/hxjz/" title="" target="_blank"><img src="index/images/newindex/twostudy.jpg" width="237" height="89" alt="两学一做" /></a></li>
+      <li><a href="http://www.lszyxy.edu.cn/html/ztjs/tsjh/" title="" target="_blank"><img src="index/images/newindex/A03.jpg" width="237" height="89" alt="" /></a></li>        	
+      <li><a href="http://www.lszyxy.edu.cn/html/ztjs/lvhua/" title="我为全川绿化植棵树" target="_blank"><img src="index/images/newindex/lvhua.jpg" width="237" height="89" alt="" /></a></li>
+      <li><a href="http://www.lszyxy.edu.cn/html/ztjs/yfzx/index.html" title="" target="_blank"><img src="index/images/newindex/A05.jpg" width="237" height="89" alt="" /></a></li>
+      <li class="other"><a href="http://www.lszyxy.edu.cn/html/ztjs/hxjz/" title="" target="_blank"><img src="index/images/newindex/hxjz.jpg" width="237" height="89" alt="培育和践行社会主义核心价值观" /></a></li>
+      <li><a href="/html/ztjs/fpgj/index.html" title="扶贫攻坚" target="_blank"><img src="index/images/newindex/fpgj.jpg" width="237" height="89" /></a></li>
+      
+      <!-- <li><a href="/html/ztjs/xfjs/index.html" title="" target="_blank"><img src="index/images/newindex/xfjs.jpg" width="237" height="89" /></a></li>        -->
+    </ul>
+</div>
+<!--临时添加友情链接 --> 
+<div class="friend">
+	<div class="title"><p>友情链接</p></div>
+  <div class="xbs">
+     <ul>
+        <li><a href="http://www.moe.gov.cn/" target="_blank">&nbsp;国家教育部</a></li>
+        <li><a href="http://www.scedu.net/" target="_blank">四川省教育厅</a></li>
+        <li><a href="http://www.tech.net.cn/web/index.aspx" target="_blank">中国高职高专网</a></li>
+        <li><a href="http://www.scskl.cn/" target="_blank">四川省社科联</a></li>
+        <li><a href="http://www.sclsedu.gov.cn/index.aspx" target="_blank">乐山市教育网</a></li>
+        <li><a href="http://www.leshan.gov.cn/skjj/" target="_blank">乐山市科技局</a></li>            
+        <li><a href="http://leshan.scol.com.cn/" target="_blank">四川在线</a></li>
+        <li><a href="http://www.leshan.cn/" target="_blank">乐山新闻网</a></li>
+        <li><a href="http://www.kaiwind.com/" target="_blank">崇尚科学 反对邪教</a></li>
+     </ul>        
+  </div>
+</div>
+<div class="footer">
+    <div class="footer2">
+    	<div class="footer3">招生热线：0833-2152600</div>
+    	<div class="biaoshi" style="float:left;width:100px; height:72px;overflow:hidden;"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/23/342/0000/40715504/CA233420000407155040002.js' type='text/javascript'%3E%3C/script%3E"));</script></div>
+    	<ul>
+        	<li>Copyright 2014-2017 www.lszyxy.com All Rights Reserved.乐山职业技术学院  版权所有  蜀ICP备10022843号</li>
+            <li>学校地址：四川省乐山市市中区青江路中段1336号  办公室电话:0833-2273213  </li>
+        </ul>
+    </div>
+</div>
+<a href="http://www.anquan.org/s/www.lszyxy.com" name="PSycvBH0tZrzidJU1RKcRCSxTuSeadfuKhFLF7fwq0IPb66fvi" >安全联盟</a>
+
+
+<!-- 左右广告 -->
+
+<div class="fixediv leftadv">
+	<a href="https://www.gfbzb.gov.cn" target="_blank"><img src="index/images/newindex/zb.jpg" width="161" height="404" alt="2018单招指南" /></a>
+	<a class="close" href="javascript:void(0);">关闭</a>
+</div>
+
+
+
+<!--
+<div class="fixediv rightadv">
+	<a href="http://dzbm.lszyxy.edu.cn:8600/" target="_blank"><img src="index/images/newindex/new2016_2.jpg" width="161" height="404" alt="2018单招指南" /></a> 
+	<a class="close" href="javascript:void(0);">关闭</a>
+</div> 
+-->
+
+<script type="text/javascript" src="index/js/newindex/float.main.js"></script>
+
+</body>
+</html>

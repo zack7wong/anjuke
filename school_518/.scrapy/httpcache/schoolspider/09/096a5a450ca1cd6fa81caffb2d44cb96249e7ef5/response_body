@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />    
+<meta name="keywords" content="长沙市田家炳实验中学" />
+<meta name="description" content="长沙市田家炳实验中学" />
+<title>长沙市田家炳实验中学</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/koala.min.1.5.js"></script>
+<style type="text/css">
+html,body{height:100%}
+</style>
+       
+</head>
+
+<body>
+<div class="home_bj">
+    <div class="page321">
+        <div  class="focus1" id="fsD1">  
+            <div id="D1pic1" class="fPic">
+                <div class="fcon" style="display: none;">
+                    <a target="_blank" href="javascript:void(0)"><img src="images/pic1_03.jpg" style="opacity: 1; "></a>
+                </div>
+                
+                <div class="fcon" style="display: none;">
+                    <a target="_blank" href="javascript:void(0)"><img src="images/pic2_03.jpg" style="opacity: 1; "></a>
+                </div>
+                
+                <div class="fcon" style="display: none;">
+                    <a target="_blank" href="javascript:void(0)"><img src="images/pic3_03.jpg" style="opacity: 1; "></a>
+                </div>
+                
+                <div class="fcon" style="display: none;">
+                    <a target="_blank" href="javascript:void(0)"><img src="images/pic4_03.jpg" style="opacity: 1; "></a>
+                </div>
+            </div>
+            <div class="fbg">  
+                <div class="D1fBt" id="D1fBt">
+                    <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>1</i></a>  
+                    <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a>  
+                    <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>3</i></a>  
+                    <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a>
+                </div>
+            </div>
+            <div class="jrwz"><a href="goHome"><img src="images/jran_07.jpg"  /></a></div>   
+            <div class="jrnw"><a href="gologin"><img src="images/jran_077.jpg"  /></a></div>   
+        </div>
+        
+    </div>
+</div>
+<script type="text/javascript">
+	Qfast.add('widgets', { path: "js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+	Qfast(false, 'widgets', function () {
+		K.tabs({
+			id: 'fsD1',   //焦点图包裹id  
+			conId: "D1pic1",  //** 大图域包裹id  
+			tabId:"D1fBt",  
+			tabTn:"a",
+			conCn: '.fcon', //** 大图域配置class       
+			auto: 1,   //自动播放 1或0
+			effect: 'fade',   //效果配置
+			eType: 'click', //** 鼠标事件
+			pageBt:true,//是否有按钮切换页码
+			//bns: ['.prev', '.next'],//** 前后按钮配置class                          
+			interval: 3000  //** 停顿时间  
+		}) 
+	})  
+</script>
+</body>
+</html>

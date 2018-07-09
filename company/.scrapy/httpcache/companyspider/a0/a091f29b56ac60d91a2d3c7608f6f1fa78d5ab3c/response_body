@@ -1,0 +1,1808 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="合肥市第十七中学"/>
+<meta name="description" content="合肥市第十七中学"/>
+<title>合肥市第十七中学</title>
+
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="css/photo-info.css">
+
+<link rel="stylesheet" href="css/main.css">
+<script type="text/javascript" src="js/fn.js"></script>
+<script src="js/hashtabber.js"></script>
+</head>
+<script language="javascript">
+function Sethome(){//设为首页
+	var strHref=window.location.href;
+	document.getElementById("homebtn").style.behavior='url(#default#homepage)';
+	document.getElementById("homebtn").setHomePage('http://');
+	}
+function SC_home(){//加为收藏
+	window.external.AddFavorite("http://",'合肥市第十七中学')
+	}
+</script>
+<script language="javascript" src="js/common.js"></script>
+<script language="javascript" src="js/onimgjs.js"></script>
+<script language="javascript" src="js/MSClass.js"></script>
+<script language="javascript" src="js/swfobject.js"></script>
+
+
+<body>
+
+<script language="javascript" src="js/jquery.soChange.js"></script>
+<script language="javascript" src="js/jquery.min.js"></script>
+
+
+<script language="javascript" type="text/javascript">
+var server_add;
+var titlemsg_companyname;
+server_add=""
+titlemsg_companyname="十七中学"
+
+function ksearch()
+{
+	key_txt = document.getElementById("key_txt").value
+	
+	if(key_txt=="")
+	{
+		alert("请填写关键字，谢谢合作！");	
+		document.getElementById("key_txt").focus();
+		return false;
+	}
+}
+
+</script>
+<script language="javascript" type="text/javascript">
+function showMenu(i)
+{
+	showobj1 = document.getElementById("a"+i)
+	showobj2 = document.getElementById("ul"+i)
+	
+	showobj1.className="navCurrent";
+	showobj2.style.display="block";
+}
+function showDiv(obj){
+		var ul = obj.getElementsByTagName("ul");
+		if(ul[0].style.display == "" || ul[0].style.display == "none"){
+			ul[0].style.display = "block";
+		}else{
+			ul[0].style.display = "none";
+		}
+	}
+
+
+function showdiv(obj)
+{
+		if(obj==1){
+			$("d1").src = "images/lt2.jpg";
+			$("d2").src = "images/lt1.jpg";
+			$("div1").style.display = "block";
+			$("div2").style.display = "none";
+			
+		}else{
+			$("d1").src = "images/lt22.jpg";
+			$("d2").src = "images/lt11.jpg";
+			$("div1").style.display = "none";
+			$("div2").style.display = "block";
+		}
+}
+function hiddMenu(i)
+{
+	showobj1 = document.getElementById("a"+i)
+	showobj2 = document.getElementById("ul"+i)
+	
+	showobj1.className="nav";
+	showobj2.style.display="none";
+}
+function showDiv(obj){
+		var ul = obj.getElementsByTagName("ul");
+		if(ul[0].style.display == "" || ul[0].style.display == "none"){
+			ul[0].style.display = "block";
+		}else{
+			ul[0].style.display = "none";
+		}
+	}
+function showdv(i)
+{
+	for(var n=1;n<=7;n++)
+	{
+		sw1 = document.getElementById("dd" + i)	
+		sw2 = document.getElementById("dd" + n)	
+		
+		if(i==n)
+		{
+			sw1.style.display="block"
+		}
+		else
+		{
+			sw2.style.display="none"
+		}
+	}	
+}
+function unshowdv()
+{
+	for(var n=1;n<=7;n++)
+	{
+		document.getElementById("dd"+n).style.display="none";	
+	}
+}
+
+function showmenu(i)
+{
+	for(var n=1;n<=3;n++)
+	{
+		cc_1 = document.getElementById("menu"+i)
+		cc_2 = document.getElementById("menu"+n)
+		cc_3 = document.getElementById("a"+i)
+		cc_4 = document.getElementById("a"+n)
+		
+		if(i==n)
+		{
+			cc_1.style.display="block";
+			cc_3.className="nav1Current";
+		}
+		else
+		{
+			cc_2.style.display="none";
+			cc_4.className="nav1";
+		}
+	}
+}
+function ushowmenu(i)
+{
+		cc_2 = document.getElementById("menu"+i)
+		cc_4 = document.getElementById("a"+i)
+		
+		cc_2.style.display="none";
+		cc_4.className="nav1";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="background:#16aa66;box-shadow: 5px 5px 3px #888888;">
+<table width="1150" height="105" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+
+    <td align="left" ><img src="images/shiqi_02.png" width="150" height="105" /></td>
+    
+        <td  align="right"><table width="1020" cellspacing="0" cellpadding="0" align="center" id="bbtn">
+          <tr>
+             <td width="75" onmouseover="shmen(6)" onmouseout="ushmen(6)"><a href="index.asp" id="ar6" class="nav1">首页</a>
+           
+            </td>
+            
+            <td width="75" onmouseover="shmen(1)" onmouseout="ushmen(1)"><a href="about.asp?keyno=31" id="ar1" class="nav1">走进十七中</a>
+            <ul id="u_1" class="menu">
+            	<table width="100%" cellspacing="0" cellpadding="0">
+                  
+                  <tr>
+                    <td><a href="about.asp?keyno=31" class="nav3">校长寄语</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="about.asp?keyno=204" class="nav3">学校简介</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="about.asp?keyno=364" class="nav3">师资力量</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="product_list.asp?keyno=365" class="nav3">校园风貌</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=366" class="nav3">组织机构</a></td>
+                  </tr>
+                  
+                </table>
+            </ul>
+            </td>
+            
+            <td width="75" onmouseover="shmen(5)" onmouseout="ushmen(5)"><a href="news.asp?keyno=308" id="ar5" class="nav1">校务公开</a>
+            <ul id="u_5" class="menu">
+            	<table width="100%" cellspacing="0" cellpadding="0">
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=308" class="nav3">通知公告</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=353" class="nav3">工作安排</a></td>
+                  </tr>
+                  
+                </table>
+            </ul>
+            </td>
+            <td width="75" onmouseover="shmen(8)" onmouseout="ushmen(8)"><a href="news.asp?keyno=313" id="ar8" class="nav1">党团工会</a>
+            <ul id="u_8" class="menu">
+            	<table width="100%" cellspacing="0" cellpadding="0">
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=313" class="nav3">党建园地</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=343" class="nav3">共青团</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=344" class="nav3">教工之家</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=345" class="nav3">学生会</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=346" class="nav3">学生社团</a></td>
+                  </tr>
+                  
+                </table>
+            </ul>
+            </td>
+            
+            
+            
+            
+            
+            
+            
+                       
+            <td width="75" onmouseover="shmen(2)" onmouseout="ushmen(2)"><a href="news.asp?keyno=29" id="ar2" class="nav1"> 教育科研</a>
+            <ul id="u_2" class="menu">
+            	<table width="100%" cellspacing="0" cellpadding="0">
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=29" class="nav3">教育文汇</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=354" class="nav3">学科建设</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=355" class="nav3">课题管理</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="about.asp?keyno=356" class="nav3">教育资源</a></td>
+                  </tr>
+                  
+                </table>
+            </ul>
+            </td>
+            
+            <td width="75" onmouseover="shmen(4)" onmouseout="ushmen(4)"><a  href="news.asp?keyno=330" id="ar4" class="nav1">教学管理</a>
+            <ul id="u_4" class="menu">
+            	<table width="100%" cellspacing="0" cellpadding="0">
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=330" class="nav3">课程管理</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="product_list.asp?keyno=331" class="nav3">教务动态</a></td>
+                  </tr>
+                  
+                </table>
+            </ul>
+            </td>
+          <td width="75" onmouseover="shmen(7)" onmouseout="ushmen(7)"><a  href="news.asp?keyno=338" id="ar7" class="nav1">德育园地</a>
+            <ul id="u_7" class="menu">
+            	<table width="100%" cellspacing="0" cellpadding="0">
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=338" class="nav3">德育队伍</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=357" class="nav3">心理驿站</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=358" class="nav3">班级管理</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=359" class="nav3">家校交流</a></td>
+                  </tr>
+                  
+                </table>
+            </ul>
+            </td>
+            
+            
+            <td width="75" onmouseover="shmen(9)" onmouseout="ushmen(9)"><a href="news.asp?keyno=317" id="ar9" class="nav1">招生频道</a>
+            <ul id="u_9" class="menu">
+            	<table width="100%" cellspacing="0" cellpadding="0">
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=317" class="nav3">招生政策</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="about.asp?keyno=360" class="nav3">招生问答</a></td>
+                  </tr>
+                  
+                </table>
+            </ul>
+            </td>
+            
+            
+            
+            <td width="75" onmouseover="shmen(3)" onmouseout="ushmen(3)"><a href="news.asp?keyno=323" id="ar3" class="nav1">学生资助</a>
+            <ul id="u_3" class="menu">
+            	<table width="100%" cellspacing="0" cellpadding="0">
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=323" class="nav3">资助管理</a></td>
+                  </tr>
+                  
+                </table>
+            </ul>
+            </td>
+            
+            
+            <td width="75" onmouseover="shmen(16)" onmouseout="ushmen(16)"><a href="news.asp?keyno=380" id="ar16" class="nav1">校园安全</a>
+            <ul id="u_16" class="menu">
+            	<table width="100%" cellspacing="0" cellpadding="0">
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=380" class="nav3">安全教育</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=381" class="nav3">安全动态</a></td>
+                  </tr>
+                  
+                </table>
+            </ul>
+            </td>
+            
+            <td width="75" onmouseover="shmen(18)" onmouseout="ushmen(18)"><a href="news.asp?keyno=362" id="ar18" class="nav1">教育督导</a>
+            <ul id="u_18" class="menu">
+            	<table width="100%" cellspacing="0" cellpadding="0">
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=362" class="nav3">政策解读</a></td>
+                  </tr>
+                  
+                  <tr>
+                    <td><a href="news.asp?keyno=363" class="nav3">督导新闻</a></td>
+                  </tr>
+                  
+                </table>
+            </ul>
+            </td>
+
+          </tr>
+        </table> <script language="javascript">
+        function shmen(i)
+		{
+			document.getElementById("ar"+i).className="nav1Current";
+			document.getElementById("u_"+i).style.display="block";
+		}
+		function ushmen(i)
+		{
+			document.getElementById("u_"+i).style.display="none";
+			document.getElementById("ar"+i).className="nav1";
+		}
+        </script></td>
+  </tr>
+  </table>
+  </td></tr></table>
+  
+
+
+ <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+ 
+  <tr>
+  <td align="center" valign="top">
+<div id="flashpic">
+    <script type="text/javascript">
+        // <![CDATA[
+        var so = new SWFObject("mainflash/bcastr3.swf", "sotester", "100%","463", "8.0.19.0", "#000000", true);
+        so.addVariable("flashVarText", "this is passed in via FlashVars"); 
+        so.addParam("scale","nocale");
+        so.addParam("menu","false");
+        so.addParam("wmode","transparent");
+        so.addVariable("bcastr_file","uppics/2018522154216530.jpg|uppics/200251083540266.jpg|uppics/200251084839935.jpg");//图片地址
+        //so.addVariable("bcastr_link","");//图片链接
+        //so.addVariable("bcastr_title", "");//图片文字
+        so.write("flashpic");
+        // ]]>
+    </script>
+</div>
+</td>
+  </tr>
+</table>
+
+ 
+
+
+<script>
+var weekdays = ["天","一","二","三","四","五","六"];
+/*
+1.显示当前时间
+设置一秒后再调用 getTimes()
+2.显示当前时间
+设置一秒后再调用 getTimes()
+*/
+window.onload = getTimes;
+function getTimes(){
+var d = new Date();
+var yy = d.getFullYear();
+var mo = d.getMonth()+ 1;
+var dd = d.getDate();
+var hh = d.getHours();
+var mi = d.getMinutes();
+var ss = d.getSeconds();
+if (mo<10)
+{
+mo = '0' + mo;
+}
+if (dd<10)
+{
+dd = '0' + dd;
+}
+if (hh<10)
+{
+hh = '0' + hh;
+}
+if (mi<10)
+{
+mi = '0' + mi;
+}
+if (ss<10)
+{
+ss = '0' + ss;
+}
+var str =yy + "年" + mo + "月" + dd + "星期" + weekdays[d.getDay()];
+str += " " + hh + ":" + mi + ":" + ss;
+document.getElementById("time").innerHTML = str;
+setTimeout("getTimes()",1000);
+}
+function getWeekDay(day){
+switch(day)
+{
+case 0:
+return "天"
+case 1:
+return "一"
+case 2:
+return "二"
+case 3:
+return "三"
+case 4:
+return "四"
+case 5:
+return "五"
+case 6:
+return "六"
+}
+}
+</script>
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/lrtk.css" rel="stylesheet" type="text/css" />
+<!-- 自适应图片css -->
+<link rel='stylesheet' href='css/justifiedgallery.min.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/swipebox.css' type='text/css' media='screen' />
+<!-- 自适应图片css 结束-->
+<!-- 友情链接css -->
+<link href="css/lrtk2.css" rel="stylesheet" type="text/css" />
+<!-- 友情链接css jishui -->
+<!-- 自适应图片js -->
+<script src='js/jquery.min2.js'></script>
+<script src='js/justifiedgallery.js'></script>
+<script src='js/jquery.swipebox.min.js'></script>
+<!-- 自适应图片js 结束 -->
+
+<!-- 图片新闻 -->
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/koala.min.1.5.js"></script>
+<!-- 图片新闻 -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+<script src="js/modernizr.custom.97074.js"></script>
+<!-- 友情链接js -->
+
+<script type=text/javascript src="js/jquery-1.4.1.min.js"></script>
+<!-- 友情链接结束 -->
+<style>
+#demoy {
+overflow:hidden;
+height:0px;
+width:0px;
+background:#;
+}
+
+#demo {
+overflow:hidden;
+width:1150px;
+}
+#demo img {
+}
+#indemo {
+float: left;
+width: 800%;
+}
+#demo1 {
+float: left;
+}
+#demo2 {
+float: left;
+}
+
+a{
+color:#ff9900;
+text-decoration:none;
+}
+a:hover {
+color:#FFF;
+text-decoration:underline;
+}
+ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+.main{
+clear:both;
+padding:20px;
+text-align:center;
+}
+#tabs0 {
+height: 378px;
+width: 315px;
+margin:0 auto;
+background-color:0;
+border:1px solid #ccc;
+}
+
+
+.menu0{
+height:0px;width: 315px;
+margin:0 auto;
+}
+.menu0 li{
+	
+display:block;
+float:left;
+margin-bottom:10px;
+margin:0 6px;
+text-align: center;
+cursor:pointer;
+color:#16a764;
+font-family: "微软雅黑";
+ font-size:18px;
+ font-weight:bold;
+ padding-top:5px;}
+.menu0 li.hover{font-family: "微软雅黑"; font-size:18px; color:#186cbf;
+
+font-weight:bold;}
+#main0 ul{
+display: none;
+}
+#main0 ul.block{
+display: block;
+}
+.hidden{ display:none; }
+.hidden li{ float:left; padding:0 20px; width:276px; }
+
+
+
+.block li{ float:left; padding:0 20px; width:276px; }
+ 
+-->
+</style>
+
+<script>
+<!--
+/*第一种形式 第二种形式 更换显示样式*/
+function setTab(m,n){
+var tli=document.getElementById("menu"+m).getElementsByTagName("li");
+var mli=document.getElementById("main"+m).getElementsByTagName("ul");
+for(i=0;i<tli.length;i++){
+   tli[i].className=i==n?"hover":"";
+   mli[i].style.display=i==n?"block":"none";
+}
+}
+//-->
+</script>
+
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr><td align="center" style=" padding-top:20px;">
+<table  width="1150" cellpadding="0" cellspacing="0">
+<tr><td align="left">
+<table width="425"  border="0" cellpadding="0" cellspacing="0" align="left">
+<tr> <td align="center" style="padding-top:10px;"> <table width="100%"  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="8%" align="left"><img src="images/shiqi_09.png" width="181" height="36" /></td>
+    
+    <td width="28%" align="right"><a href="product_list.asp?keyno=369" style=" font-size:12px; font-family:'微软雅黑'; color:#aba8a8;"> MORE+</a></td>
+  </tr> 
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td align="center" style=" padding-bottom:16px; padding-top:5px;"><img src="images/shiqi_20.png" width="420" height="2" /></td></tr>
+</table>
+
+</td></tr>
+<tr><td>
+
+<table width="100%" >
+  <tr>
+  
+<td   align="right" valign="top"><div id="fsD1" class="focus" >  
+    <div id="D1pic1" class="fPic"> 
+    
+     
+
+        <div class="fcon" style="display: none;">
+            <a href="pview.asp?prono=1514" target="_blank" ><img src="uppics/20020510015510459.jpg" width="420" height="280" border="0"/  style="opacity: 1; "></a>
+            
+            <p class="shadow"><a href="pview.asp?prono=1514">17中接访英国德比市 </a></p> 
+        </div>
+             
+
+        <div class="fcon" style="display: none;">
+            <a href="pview.asp?prono=1515" target="_blank" ><img src="uppics/20020510015511560.jpg" width="420" height="280" border="0"/  style="opacity: 1; "></a>
+            
+            <p class="shadow"><a href="pview.asp?prono=1515">17中接访英国德比市 </a></p> 
+        </div>
+            
+        </div>
+        
+        
+        
+        
+        
+            
+    </div>
+    <div class="fbg">  
+    <div class="D1fBt" id="D1fBt">  
+       
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i></i></a>  
+       
+        <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i></i></a>  
+       
+
+    </div>  
+    </div>  
+      
+</div></td>
+</tr>
+</table>
+</td>
+
+<tr>
+
+
+
+
+
+
+
+
+
+
+
+</table>
+</td>
+<td align="center" valign="top"><table width="344"  border="0" cellpadding="0" cellspacing="0" align="left">
+<tr> <td align="center" style="padding-top:10px;" valign="top"> <table width="100%"  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="8%" align="left" valign="top"><img src="images/shiqi_12.png" width="253" height="33" /></td>
+    
+    <td width="28%" align="right"><a href="news.asp?keyno=368" style=" font-size:12px; font-family:'微软雅黑'; color:#aba8a8;"> MORE+</a></td>
+  </tr> 
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td align="center" style=" padding-bottom:16px; padding-top:5px;"><img src="images/shiqi_20.png" width="344" height="2" /></td></tr>
+</table>
+<table width="100%"border="0" cellpadding="0" cellspacing="0">
+ 
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:38px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1868"  style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">学习三峡精神感悟荆楚文化</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2018-5-10]</td>
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:38px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1865"  style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">合肥十七中举行“时刻听党...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2018-4-20]</td>
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:38px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1864"  style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">合肥市第十七中学召开师德...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2018-4-20]</td>
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:38px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1862"  style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">面对新高考，十七中未雨绸...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2018-4-11]</td>
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:38px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1861"  style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">合肥十七中举行2018届...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2018-4-11]</td>
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:38px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1860"  style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">合肥十七中承办蜀山区“中...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2018-4-11]</td>
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:38px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1858"  style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">合肥市17中接访英国德比...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2017-11-17]</td>
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:38px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1857"  style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">合肥十七中在区团委“我的...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:38px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2017-12-7]</td>
+  </tr>
+  
+   
+</table>
+
+
+</td></tr>
+<tr><td>
+
+
+</td>
+
+<tr>
+
+</table> </td>
+<td align="right" valign="top"><table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><div id="tabs0">
+			<ul class="menu0" id="menu0">
+			   <li style=" margin-top:0px;"><img src="images/shiqi_15.png" width="27" height="27" /></li>
+                 <li onClick="setTab(0,0)" class="hover">校务公开 </li>
+			   <li onClick="setTab(0,1)"> 招生频道</li>
+               
+			 <span><img src="images/shiqi_20.png" width="315" height="2"  style=" margin-top:5px;"/></span>
+			  
+                
+			</ul>
+            
+			<div class="main" id="main0">
+            
+			   <ul class="block">
+             <table width="100%"border="0" cellpadding="0" cellspacing="0">
+ 
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed;  text-align:center; height:53px; padding-bottom:10px;" valign="top"><img src="images/shiqi_24.png" width="8" height="8"  /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:53px; text-align:left; padding-left:12px;"> <a href="view.asp?keyno=1867" style=" font-family:'微软雅黑'; font-size:14px; color:#080808; line-height:24px;">关于开展蜀山区“品质提升年”动员部署暨“美丽校园”创建推...</a> <span style="font-family:'微软雅黑'; font-size:12px; color:#b2adad; display:block; float:right"> [2018-5-10] </span></td>
+      
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed;  text-align:center; height:53px; padding-bottom:10px;" valign="top"><img src="images/shiqi_24.png" width="8" height="8"  /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:53px; text-align:left; padding-left:12px;"> <a href="view.asp?keyno=1866" style=" font-family:'微软雅黑'; font-size:14px; color:#080808; line-height:24px;">转发《关于开展“百县（市、区）千校”地震应急安全教育暨演...</a> <span style="font-family:'微软雅黑'; font-size:12px; color:#b2adad; display:block; float:right"> [2018-5-10] </span></td>
+      
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed;  text-align:center; height:53px; padding-bottom:10px;" valign="top"><img src="images/shiqi_24.png" width="8" height="8"  /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:53px; text-align:left; padding-left:12px;"> <a href="view.asp?keyno=1863" style=" font-family:'微软雅黑'; font-size:14px; color:#080808; line-height:24px;">蜀山区2018年度“一师一优课、一课一名师”活动实施方案</a> <span style="font-family:'微软雅黑'; font-size:12px; color:#b2adad; display:block; float:right"> [2018-4-11] </span></td>
+      
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed;  text-align:center; height:53px; padding-bottom:10px;" valign="top"><img src="images/shiqi_24.png" width="8" height="8"  /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:53px; text-align:left; padding-left:12px;"> <a href="view.asp?keyno=857" style=" font-family:'微软雅黑'; font-size:14px; color:#080808; line-height:24px;">转发:合肥市中小学“美丽校园”创建活动实施方案</a> <span style="font-family:'微软雅黑'; font-size:12px; color:#b2adad; display:block; float:right"> [2017-9-30] </span></td>
+      
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed;  text-align:center; height:53px; padding-bottom:10px;" valign="top"><img src="images/shiqi_24.png" width="8" height="8"  /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:53px; text-align:left; padding-left:12px;"> <a href="view.asp?keyno=856" style=" font-family:'微软雅黑'; font-size:14px; color:#080808; line-height:24px;">转发:关于组织开展2017年全市普通高级中学教育教学质量评...</a> <span style="font-family:'微软雅黑'; font-size:12px; color:#b2adad; display:block; float:right"> [2018-4-1] </span></td>
+      
+  </tr>
+  
+   
+</table>
+              
+			 </ul>
+            
+	         <ul class="hidden">
+            <table width="100%"border="0" cellpadding="0" cellspacing="0">
+ 
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed;  text-align:center; height:53px; padding-bottom:10px;" valign="top"><img src="images/shiqi_24.png" width="8" height="8"  /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:53px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1003" style=" font-family:'微软雅黑'; font-size:14px; color:#080808; line-height:24px;">心连心，士气旺！精管理，十七强！——合肥十七中南区高考成...</a> <span style="font-family:'微软雅黑'; font-size:12px; color:#b2adad; display:block; float:right"> [2017-6-20] </span></td>
+      
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed;  text-align:center; height:53px; padding-bottom:10px;" valign="top"><img src="images/shiqi_24.png" width="8" height="8"  /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:53px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1002" style=" font-family:'微软雅黑'; font-size:14px; color:#080808; line-height:24px;">合肥十七中在“2017年新媒体新技术教学应用研讨会暨第十...</a> <span style="font-family:'微软雅黑'; font-size:12px; color:#b2adad; display:block; float:right"> [2017-4-26] </span></td>
+      
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed;  text-align:center; height:53px; padding-bottom:10px;" valign="top"><img src="images/shiqi_24.png" width="8" height="8"  /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:53px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1001" style=" font-family:'微软雅黑'; font-size:14px; color:#080808; line-height:24px;">让跃动的青春在活动课程中轻舞飞扬----合肥十七中201...</a> <span style="font-family:'微软雅黑'; font-size:12px; color:#b2adad; display:block; float:right"> [2017-3-13] </span></td>
+      
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed;  text-align:center; height:53px; padding-bottom:10px;" valign="top"><img src="images/shiqi_24.png" width="8" height="8"  /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:53px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1000" style=" font-family:'微软雅黑'; font-size:14px; color:#080808; line-height:24px;">合肥十七中学生在全国中学生学科竞赛中喜获佳绩</a> <span style="font-family:'微软雅黑'; font-size:12px; color:#b2adad; display:block; float:right"> [2016-12-30] </span></td>
+      
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed;  text-align:center; height:53px; padding-bottom:10px;" valign="top"><img src="images/shiqi_24.png" width="8" height="8"  /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:53px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=999" style=" font-family:'微软雅黑'; font-size:14px; color:#080808; line-height:24px;">翰墨丹青点缀新年校园——合肥十七中举行迎新年书画摄影作品...</a> <span style="font-family:'微软雅黑'; font-size:12px; color:#b2adad; display:block; float:right"> [2016-12-29] </span></td>
+      
+  </tr>
+  
+   
+</table>
+             </ul>
+       
+			</div>
+		</div></td>
+  </tr>
+</table>
+
+
+</td>
+
+</tr>
+
+</table>
+
+</td></tr>
+</table>
+
+<table width="100%"  cellpadding="0" cellspacing="0" border="0" >
+  <tr>
+    <td align="center"><table width="1150" cellpadding="0" cellspacing="0" border="0" style="background:#f1f4f6; margin-top:30px; height:150px;" >
+  <tr>
+    <td align="center"><div id="demo">
+<div id="indemo">
+<div id="demo1"><table width="1150" cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+<td style=""><table cellpadding="0" cellspacing="0"  style="position:relative;"><tr><td valign="top"><a href="pview.asp?prono=1520" target="_blank" ><img src="uppics/20020510020129386.png" width="200" height="115" border="0"/></a>
+</td></tr>
+</table></td>
+<td style=""><table cellpadding="0" cellspacing="0"  style="position:relative;"><tr><td valign="top"><a href="pview.asp?prono=1521" target="_blank" ><img src="uppics/20020510020129657.jpg" width="200" height="115" border="0"/></a>
+</td></tr>
+</table></td>
+<td style=""><table cellpadding="0" cellspacing="0"  style="position:relative;"><tr><td valign="top"><a href="pview.asp?prono=1522" target="_blank" ><img src="uppics/20020510020129376.jpg" width="200" height="115" border="0"/></a>
+</td></tr>
+</table></td>
+<td style=""><table cellpadding="0" cellspacing="0"  style="position:relative;"><tr><td valign="top"><a href="pview.asp?prono=1523" target="_blank" ><img src="uppics/20020510020129154.jpg" width="200" height="115" border="0"/></a>
+</td></tr>
+</table></td>
+<td style=""><table cellpadding="0" cellspacing="0"  style="position:relative;"><tr><td valign="top"><a href="pview.asp?prono=1524" target="_blank" ><img src="uppics/20020510020130540.jpg" width="200" height="115" border="0"/></a>
+</td></tr>
+</table></td> </tr>
+</table></div>
+<div id="demo2"></div></div>
+</div></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+
+
+<table width="100%"cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td align="center"><table width="1150" cellpadding="0" cellspacing="0" border="0" style=" margin-top:20px;">
+  <tr>
+    <td align="left"><table width="406"  border="0" cellpadding="0" cellspacing="0" align="left">
+<tr> <td align="center" style="padding-top:10px;" valign="top"> <table width="100%"  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="8%" align="left" valign="top"><img src="images/shiqi_40.png" width="283" height="25" /></td>
+    
+    <td width="28%" align="right"><a href="news.asp?keyno=29" style=" font-size:12px; font-family:'微软雅黑'; color:#aba8a8;"> MORE+</a></td>
+  </tr> 
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td align="center" style=" padding-bottom:16px; padding-top:5px;"><img src="images/shiqi_20.png" width="406" height="2" /></td></tr>
+</table>
+<table width="100%"border="0" cellpadding="0" cellspacing="0">
+ 
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:39px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1278" style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">蜀山区高中语文教研活动在...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2017-3-17]</td>
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:39px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1276" style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">合肥市教育局语文教研室到...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2017-3-14]</td>
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:39px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1274" style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">合肥十七中召开高三“一模...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2017-2-16]</td>
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:39px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1272" style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">骨干示范聚焦课堂——十七...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2016-12-12]</td>
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:39px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1271" style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">他山之石，可以攻玉——合...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2016-12-5]</td>
+  </tr>
+  
+   
+</table>
+
+
+</td></tr>
+<tr><td>
+
+
+</td>
+
+<tr>
+
+</table></td>
+      <td align="center"><table width="343"  border="0" cellpadding="0" cellspacing="0" align="left">
+<tr> <td align="center"  valign="top"> <table width="100%"  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="8%" align="left" valign="top"><img src="images/shiqi_35.png" width="245" height="36" /></td>
+    
+    <td width="28%" align="right"><a href="news.asp?keyno=357" style=" font-size:12px; font-family:'微软雅黑'; color:#aba8a8;"> MORE+</a></td>
+  </tr> 
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td align="center" style=" padding-bottom:16px; padding-top:5px;"><img src="images/shiqi_20.png" width="343" height="2" /></td></tr>
+</table>
+<table width="100%"border="0" cellpadding="0" cellspacing="0">
+ 
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:39px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1017"  style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">合肥十七中第二十二届校园...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2015-12-28]</td>
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:39px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1016"  style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">唱响青春放飞梦想——合肥...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2015-12-18]</td>
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:39px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1015"  style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">十七中研学旅行：游中有学...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2015-5-26]</td>
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:39px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1014"  style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">十七中家校携手共筑美好明...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2015-5-11]</td>
+  </tr>
+  
+  
+
+  <tr>
+    <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center;"><img src="images/shiqi_24.png" width="8" height="8" /></td>
+     <td align="left" style="border-bottom:1px #cccccc dashed; height:39px; text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1013"  style=" font-family:'微软雅黑'; font-size:14px; color:#080808;">圆梦十七中——高三百日冲...</a></td>
+      <td style=" border-bottom:1px #cccccc dashed; height:39px; text-align:center; font-family:'微软雅黑'; font-size:12px; color:#b2adad;">[2015-4-16]</td>
+  </tr>
+  
+   
+</table>
+
+
+</td></tr>
+<tr><td>
+
+
+</td>
+
+<tr>
+
+</table></td>
+        <td align="right"><table width="315"  border="0" cellpadding="0" cellspacing="0" align="left">
+<tr> <td align="center" style="padding-top:10px;" valign="top"> <table width="100%"  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="8%" align="left" valign="top"><img src="images/shiqi_37.png" width="172" height="28" /></td>
+    
+    <td width="28%" align="right"><a href="product_list.asp?keyno=212" style=" font-size:12px; font-family:'微软雅黑'; color:#aba8a8;"> MORE+</a></td>
+  </tr> 
+</table>
+
+
+<table width="315" height="2" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td align="center" style=" padding-top:13px;"><img src="images/shiqi_20.png" width="315" height="2"  style="display:block; "/></td></tr>
+</table>
+
+<table width="100%" >
+<tr> <td height="18"></td></tr>
+  <tr>
+  
+<td   align="right" valign="bottom">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td align="center" valign="bottom">
+<div align="center" style="position:relative;">
+<DIV id=gyjimg align=center  ><img alt=焦点图 src="uppics/no.jpg" width=314 height=199 border="0">
+</DIV>
+
+
+</div>
+<script language="javascript">
+<!--
+var focus_width=314 //图片宽度
+var focus_height=199//图片高度
+var text_height=0//文字高度
+var swf_height = focus_height+text_height
+var pics='uppics/20020510070250549.jpg|uppics/20020510070250218.jpg|uppics/20020510070248917.jpg|uppics/20020510070247652.jpg|uppics/20020510070242488.jpg|uppics/20020510070242475.jpg'
+//图片必须和swf文件放在一个文件夹里面
+var links="index.asp?prono=1544|index.asp?prono=1543|index.asp?prono=1542|index.asp?prono=1541|index.asp?prono=1540|index.asp?prono=1539"
+var text="蜀山区教育创新团队|十七中顺利通过省级示范高中预评估|合肥市五一劳动奖状集体奖|合肥市示范高中|合肥市德育工作“先进集体”|安徽省绿色学校"
+var FocusFlash = new SWFObject("mainflash/pixviewer.swf", "focusflash", focus_width, swf_height, "7", "#ffffff", false, "High");
+FocusFlash.addParam("allowScriptAccess", "sameDomain");
+FocusFlash.addParam("menu", "false");
+FocusFlash.addParam("wmode", "opaque");
+FocusFlash.addVariable("pics", pics);
+FocusFlash.addVariable("links", links);
+FocusFlash.addVariable("texts",text);
+FocusFlash.addVariable("borderwidth", focus_width);
+FocusFlash.addVariable("borderheight", focus_height);
+FocusFlash.addVariable("textheight", text_height);
+FocusFlash.write("gyjimg");
+//-->
+</script></td>
+  </tr>
+</table>
+
+      
+      
+</td>
+</tr>
+</table>
+
+</td></tr>
+<tr><td>
+
+
+</td>
+
+<tr>
+
+</table></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+
+
+<table width="100%" cellpadding="0" cellspacing="0" style=" margin-top:30px;">
+  <tr>
+    <td align="center"><table width="1150" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><table width="100%"  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td  align="left" valign="top"><img src="images/shiqi_03.png" width="252" height="29" /></td>
+    
+    <td width="28%" align="right"><a href="news.asp?keyno=29" style=" font-size:12px; font-family:'微软雅黑'; color:#aba8a8;"> MORE+</a></td>
+  </tr> 
+</table>
+
+     <table width="100%" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td align="center" style=" padding-bottom:16px; padding-top:7px;"><img src="images/shiqi121_03.png" width="1150" height="2" /></td></tr>
+</table>
+
+</td>
+  </tr>
+  
+  <tr> <td align="center"> <table width="1150"  cellpadding="0" cellspacing="0" style="border:1px solid #ccc;" >
+  <tr>
+    <td ><section class="example" >
+    
+   
+	<section >
+    <ol class="hashTabber-nav hashTabber-sandstone" data-hashtabber-id="dinosaurs" data-hashtabber-default="pterosaur" style="float:left;">
+    
+    <div style="width:170px;  ">
+       
+            <li data-hashtabber-pair="trilobite" class="" style="height:90px; border-bottom:1px solid #acaaaa; " >
+                <a href="#dinosaurs=trilobite" style=" color:#030303; font-size:18px; font-family:'微软雅黑'; display:block; margin-left:30px; margin-top:20px; padding-bottom:3px;">学生风采 <br/>
+                <span style=" color:#186cbf; font-size:14px; font-family:'微软雅黑'; display:block; width:125px;">Student mien</span></a>
+              <a href="#" style="float:left; padding-left:35px; display:block; padding-top:3px;"><img src="images/shiqi01_03.png" width="22" height="17" /></a>
+            </li>
+            <li data-hashtabber-pair="velociraptor" class="" style="height:90px; border-bottom:1px solid #acaaaa; margin:0 auto;">
+                <a href="#dinosaurs=velociraptor" style=" color:#030303; font-size:18px; font-family:'微软雅黑'; display:block;  margin-left:30px; margin-top:20px; padding-bottom:3px;">校园文化 <br/>
+                <span style=" color:#186cbf; font-size:14px; font-family:'微软雅黑'; display:block; width:125px; ">campus culture</span></a>
+                <a href="#" style="float:left; padding-left:32px; display:block; padding-top:3px; padding-top:3px;"><img src="images/shiqi01_03.png" width="22" height="17" /></a>
+            </li>
+            
+            <li data-hashtabber-pair="lambeosaurus" class="" style="height:90px; ">
+                <a href="#dinosaurs=lambeosaurus" style=" color:#030303; font-size:18px; font-family:'微软雅黑';  display:block;  margin-left:30px; margin-top:20px; padding-bottom:3px;">校园风光<br/>
+                <span style=" color:#186cbf; font-size:14px; font-family:'微软雅黑'; display:block; width:125px; ">campus culture</span></a>
+                <a href="#" style="float:left; padding-left:32px; display:block; padding-top:3px; padding-top:3px;"><img src="images/shiqi01_03.png" width="22" height="17" /></a>
+            </li>
+            
+                       
+            </div>
+            
+    </ol><!--
+ --><ol class="hashTabber-data hashTabber-sandstone" data-hashtabber-id="dinosaurs" style="float:left; vertical-align:top;">
+            <li data-hashtabber-pair="trilobite" class="active">
+                <article >
+                  
+                    
+                    <div class="swipeboxEx" style="width:970px; height:325px; margin-top:10px;"  align="center">
+                    
+                    
+    <a href="pview.asp?prono=1538">
+        <img  src="uppics/20020510045148484.jpg" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1537">
+        <img  src="uppics/20020510045147726.jpg" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1536">
+        <img  src="uppics/20020510045147965.jpg" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1535">
+        <img  src="uppics/20020510045147605.jpg" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1534">
+        <img  src="uppics/20020510044903636.jpg" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1533">
+        <img  src="uppics/20020510044903909.jpg" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1532">
+        <img  src="uppics/20020510044903866.jpg" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1531">
+        <img  src="uppics/20020510044617432.jpg" border="0"  height="157"/>
+    </a>
+   
+      
+</div>
+                    
+                </article>
+            </li>
+            <li data-hashtabber-pair="velociraptor" class="">
+                <article>
+                    
+                    <div class="swipeboxEx" style="width:970px; height:325px; margin-top:10px;"  align="center">
+                     
+                    
+    <a href="pview.asp?prono=1554">
+        <img  src="uppics/2018518171417553.png" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1513">
+        <img  src="uppics/20020509061525855.jpg" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1512">
+        <img  src="uppics/20020509061525152.jpg" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1511">
+        <img  src="uppics/20020509061525433.jpg" border="0"  height="157"/>
+    </a>
+   
+      
+                        
+</div>
+                </article>
+            </li>
+        
+            
+            
+            <li data-hashtabber-pair="lambeosaurus" class="">
+                <article>
+                   
+                  
+                    
+                    <div class="swipeboxEx" style="width:970px; height:325px; margin-top:10px;"  align="center">
+                    
+                    
+    <a href="pview.asp?prono=1552">
+        <img  src="uppics/2018518170442774.jpg" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1551">
+        <img  src="uppics/2018518170352131.jpg" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1550">
+        <img  src="uppics/2018518170135702.jpg" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1549">
+        <img  src="uppics/2018518165749829.jpg" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1548">
+        <img  src="uppics/2018518165301617.jpg" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1547">
+        <img  src="uppics/2018518165118397.jpg" border="0"  height="157"/>
+    </a>
+   
+     
+                    
+    <a href="pview.asp?prono=1527">
+        <img  src="uppics/20020510030755523.jpg" border="0"  height="157"/>
+    </a>
+   
+      
+                    </div>
+                </article>
+            </li>
+            
+            
+            
+           
+        
+            
+            
+           
+    </ol>
+	</section>
+    </div>
+</section> </td>
+    
+     
+  </tr>
+</table>
+</td>
+  
+  
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+
+
+
+
+<table width="100%" height="50" >
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+
+<table width="100%" cellpadding="0" cellspacing="0" height="60" style=" background:#16a764;" >
+  <tr>
+    <td align="center"> <img src="images/shiqi_07.png" width="577" height="34" /></td>
+  </tr>
+</table>
+
+
+<table width="100%" cellpadding="0" cellspacing="0" align="center"  height="332"style="background:url(images/shiqi_10.png)">
+  <tr>
+    <td align="center"><table width="1150" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><table width="255" cellpadding="0" cellspacing="0" style=" position:relative;">
+  <tr>
+    <td align="center" style="position:absolute; bottom:185px; left:93px;"><img src="images/shiqi_46.png" width="60" height="60" /></td>
+  </tr>
+  <tr>
+    <td align="center"><table width="100%" style="background:#fff;">
+    
+    <tr>
+    <td height="25"></td>
+    
+  </tr>
+  <tr>
+    <td style=" color:#16a764; font-size:15px; font-family:'微软雅黑'; font-weight:bold; text-align:center; line-height:46px;">党团工会</td>
+    
+  </tr>
+  <tr>
+    <td align="center"><table width="182"border="0" cellpadding="0" cellspacing="0">
+ 
+
+  <tr>
+    <td  valign="top" style=" padding-bottom:17px;"><img src="images/shiqi11_03.png" width="4" height="4"/></td>
+     <td align="left" style=" text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1177" style=" font-family:'微软雅黑'; font-size:14px; color:#545454; line-height:26px;">共产党员网</a></td>
+     
+  </tr>
+  
+   
+</table></td>
+    
+  </tr>
+  <tr>
+    <td align="center"> <a  href="news.asp?keyno=313" style=" font-family:'微软雅黑'; font-size:12px; color:#545454; line-height:50px;">更多>></a></td>
+    
+  </tr>
+   <tr>
+    <td align="center" height="30"> </td>
+    
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</td>
+    <td>
+    
+         <table width="255" cellpadding="0" cellspacing="0" style=" position:relative;">
+  <tr>
+    <td align="center" style="position:absolute; bottom:185px; left:93px;"><img src="images/shiqi_48.png" width="60" height="60" /></td>
+  </tr>
+  <tr>
+    <td align="center"><table width="100%" style="background:#fff;">
+    
+    <tr>
+    <td height="25"></td>
+    
+  </tr>
+  <tr>
+    <td style=" color:#16a764; font-size:15px; font-family:'微软雅黑'; font-weight:bold; text-align:center; line-height:46px;">德育园地</td>
+    
+  </tr>
+  <tr>
+    <td align="center"><table width="182" border="0" cellpadding="0" cellspacing="0">
+ 
+
+  <tr>
+    <td  valign="top" style=" padding-bottom:17px;"><img src="images/shiqi11_03.png" width="4" height="4"/></td>
+     <td align="left" style=" text-align:left; padding-left:12px;"> <a  href="view.asp?keyno=1017" style=" font-family:'微软雅黑'; font-size:14px; color:#545454; line-height:26px;">合肥十七中第二十二届校园文化艺术...</a></td>
+     
+  </tr>
+  
+   
+</table></td>
+    
+  </tr>
+  <tr>
+    <td align="center"> <a  href="news.asp?keyno=338" style=" font-family:'微软雅黑'; font-size:12px; color:#545454; line-height:50px;">更多>></a></td>
+    
+  </tr>
+   <tr>
+    <td align="center" height="30"> </td>
+    
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+
+       </td>
+    <td>
+         <table width="255" cellpadding="0" cellspacing="0" style=" position:relative;">
+  <tr>
+    <td align="center" style="position:absolute; bottom:185px; left:93px;"><img src="images/shiqi_50.png" width="60" height="60" /></td>
+  </tr>
+  <tr>
+    <td align="center"><table width="100%" style="background:#fff;">
+    
+    <tr>
+    <td height="25"></td>
+    
+  </tr>
+  <tr>
+    <td style=" color:#16a764; font-size:15px; font-family:'微软雅黑'; font-weight:bold; text-align:center; line-height:46px;">教育科研</td>
+    
+  </tr>
+  <tr>
+    <td align="center"><table width="182"border="0" cellpadding="0" cellspacing="0">
+  
+</table></td>
+    
+  </tr>
+  <tr>
+    <td align="center"> <a  href="news.asp?keyno=29" style=" font-family:'微软雅黑'; font-size:12px; color:#545454; line-height:50px;">更多>></a></td>
+    
+  </tr>
+   <tr>
+    <td align="center" height="30"> </td>
+    
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+    
+          </td>
+    <td>
+       <table width="255" cellpadding="0" cellspacing="0" style=" position:relative;">
+  <tr>
+    <td align="center" style="position:absolute; bottom:185px; left:93px;"><img src="images/shiqi_52.png" width="61" height="60" /></td>
+  </tr>
+  <tr>
+    <td align="center"><table width="100%" style="background:#fff;">
+    
+    <tr>
+    <td height="25"></td>
+    
+  </tr>
+  <tr>
+    <td style=" color:#16a764; font-size:15px; font-family:'微软雅黑'; font-weight:bold; text-align:center; line-height:46px;"> 师生园地</td>
+    
+  </tr>
+  <tr>
+    <td align="center"><table width="182"border="0" cellpadding="0" cellspacing="0">
+  
+</table></td>
+    
+  </tr>
+  <tr>
+    <td align="center"> <a  href="news.asp?keyno=330" style=" font-family:'微软雅黑'; font-size:12px; color:#545454; line-height:50px;">更多>></a></td>
+    
+  </tr>
+   <tr>
+    <td align="center" height="30"> </td>
+    
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+      </td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+<script>
+/*自适应图片js*/
+	$(document).ready(function () {
+		$('.swipeboxEx').each(function (i, el) {
+			$(el).justifiedGallery({rel: 'gal' + i}).on('jg.complete', function () {
+				if (i == 1) $('.swipeboxEx a').swipebox(); //如果想调用1个相册对应i值为0，同理3个相册，i值为2。
+			});
+		});
+	});
+</script>
+<!-- 代码 结束 -->
+
+
+
+<script>
+/*第三种形式 利用一个背景层定位*/
+var m3={0:"",1:"评论内容",2:"技术内容",3:"点评内容"}
+function nowtab(m,n){
+if(n!=0&&m3[0]=="")m3[0]=document.getElementById("main2").innerHTML;
+document.getElementById("tip"+m).style.left=n*130+'px';
+document.getElementById("main2").innerHTML=m3[n];
+}
+//-->
+</script>
+
+
+<!-- 图片新闻 -->
+<script type="text/javascript">
+	Qfast.add('widgets', { path: "js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+	Qfast(false, 'widgets', function () {
+		K.tabs({
+			id: 'fsD1',   //焦点图包裹id  
+			conId: "D1pic1",  //** 大图域包裹id  
+			tabId:"D1fBt",  
+			tabTn:"a",
+			conCn: '.fcon', //** 大图域配置class       
+			auto: 1,   //自动播放 1或0
+			effect: 'fade',   //效果配置
+			eType: 'click', //** 鼠标事件
+			pageBt:true,//是否有按钮切换页码
+			bns: ['.prev', '.next'],//** 前后按钮配置class                          
+			interval: 2000  //** 停顿时间  
+		}) 
+	})  
+</script>
+<!-- 图片新闻 -->
+
+
+
+
+<script type="text/javascript">
+			$(function() {
+			
+				$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+			});
+		</script>
+        
+        
+<script>
+var tabber = new HashTabber();
+tabber.run();
+</script>
+
+
+
+<script>
+	
+<!--
+
+
+var speed=20;
+var tab=document.getElementById("demo");
+var tab1=document.getElementById("demo1");
+var tab2=document.getElementById("demo2");
+tab2.innerHTML=tab1.innerHTML;
+function Marquee(){
+if(tab2.offsetWidth-tab.scrollLeft<=0)
+tab.scrollLeft-=tab1.offsetWidth
+else{
+tab.scrollLeft++;
+}
+}
+var MyMar=setInterval(Marquee,speed);
+tab.onmouseover=function() {clearInterval(MyMar)};
+tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+
+
+
+
+
+-->
+</script>
+
+
+
+
+
+<style type="text/css">
+.navBottom tr td table tr td a {
+	color: #000;
+}
+
+</style>
+
+
+
+<table width="100%" height="80" border="0" cellpadding="0" cellspacing="0" style="background:#16a764;">
+
+<tr><td height="20"></td></tr>
+
+
+  <tr>
+    <td align="center"><table width="1150"  border="0" cellpadding="0" cellspacing="0" style="background:#188441;">
+  <tr>
+    <td style=" width:100px; height:45px; background:#1b510e; color:#fff; font-size:14px; text-align:center; font-family:'微软雅黑';  ">友情链接</td>
+    
+     <td align="left" style="padding-left:20px;">
+     <div class=footer-select>
+     
+  <select id=FriendLink class=footer_sel style="width:200px; height:27px;">
+  
+    <option selected value=" http://hfjy.hefei.gov.cn/" style="text-align:center">----合肥市教育局 ----</option>
+    
+    
+    
+    <option selected value=" http://jtj.hfss.gov.cn" style="text-align:center">----蜀山区教体局 ----</option>
+    
+    
+    
+  </select>
+</div></td>
+
+
+<td>
+     <div class=footer-select>
+     
+  <select id=FriendLink class=footer_sel style="width:200px; height:27px;">
+  
+    <option selected value=" http://anhui.eol.cn" style="text-align:center">----安徽省教育在线 ----</option>
+    
+    
+    
+    <option selected value=" http://www.eol.cn/" style="text-align:center">----中国教育在线 ----</option>
+    
+    
+    
+  </select>
+</div></td>
+
+<td>
+<div class=footer-select>
+     
+  <select id=FriendLink class=footer_sel style="width:200px; height:27px;">
+  
+  </select>
+</div></td>
+<td>
+<div class=footer-selectq>
+     
+  <select id=FriendLinkq class=footer_selq style="width:200px; height:27px;">
+  
+    <option selected value=" http://www.shushannews.cn/" style="text-align:center">----蜀山新闻网 ----</option>
+    
+    
+    
+  </select>
+</div></td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr><td align="center"><table width="1150">
+  <tr>
+    <td width="980"><table width="830" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td style=" font-size:14px; color:#fff; font-family:'微软雅黑'; line-height:50px;" align="left">安徽省合肥市第十七中学</td>
+  </tr>
+  <tr>
+    <td height="10"></td>
+  </tr>
+  <tr>
+    <td style=" font-size:14px; color:#fff; font-family:'微软雅黑'; line-height:30px;" align="left">（校本部）望江西路与东至路交口 校长室：65143727； 教务处（招生办）： 65133145、65120103；办公室（传真）65113473<br/>
+（南校区）金寨路与习友路交口 校长室：65120283；总务处：65120225 传真：0551-63655222    E-mail：hfdsqzx@163.com</td>
+
+  </tr>
+</table></td>
+<td width="200" align="right"><table width="90">
+  <tr>
+    <td><img src="images/fs5_07.png" width="90" height="90" /></td>
+    <td width="120"></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+
+  
+  
+  
+</td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+      
+ 
+<script type=text/javascript src="js/newbase.js"></script>
+ 
+  </body>
+</html>

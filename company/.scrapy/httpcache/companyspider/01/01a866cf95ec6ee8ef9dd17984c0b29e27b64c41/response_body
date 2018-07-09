@@ -1,0 +1,949 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gb2312">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>肥东凯悦中学</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <link rel="stylesheet" href="public/css/common.css" type="text/css"/>
+    <link rel="stylesheet" href="public/css/inner.css" type="text/css"/>
+	<link rel="stylesheet" href="public/css/slick.css"/>
+    <link rel="stylesheet" href="public/css/style.css"/>
+    <script src="public/js/jquery.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="public/css/ad.css" />
+	<script type="text/javascript" src="public/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="public/js/floatingAd.js"></script>
+    <script type="text/javascript" src="swfobject.js"></script>
+
+</head>
+<body>
+<!--头部-->
+<div class="w100 headWrap" id="menuindex" menuindex="index" style="margin-top:-24px;">
+    <div class="top">
+        <div class="w1200 clearfix" style="padding-top: 5px;">
+          <div class="top-right fr"></div>
+        </div>
+    </div>
+    <div class="bggreen pt15">
+        <div class="w1200 clearfix">
+            <div class="logo fl"><a href=""><img src="public/images/logo.jpg" alt=""/></a></div>
+            <div class="fr search-wrap">
+                <form name="searchform" id="searchform" method="get" action="search.shtml">
+                    <a href="mail.shtml" target="_blank" class="head-mail dinb" style="color:#fff">校长信箱</a>
+                    <span class="search-bar">
+						<input  id="button" type="submit" value="" class="search-btn"/>
+						<input type="text" name="k" class="search-ipt" value=""/>
+					</span>
+                </form>
+				
+            </div>
+        </div>
+		<div class="nav-wrap">
+			<div class="w1200">
+                <ul class="clearfix nav">
+					<li class="homeindex"><a href='/' menuid="index">网站首页</a></li>
+                    <li><a href='aboutus.shtml'  rel='dropmenu24'>学校概况</a></li>
+                    <li><a href='news.shtml?BigClassName=新闻中心'  rel='dropmenu33'>新闻中心</a></li>
+                    <li><a href='news.shtml?BigClassName=教育教学'  rel='dropmenu40'>教育教学</a></li>
+                    <li><a href='news.shtml?BigClassName=德育工作'  rel='dropmenu46'>德育工作</a></li>
+                    <li><a href='news.shtml?BigClassName=招生招聘'  rel='dropmenu54'>招生招聘</a></li>                    
+                    <li><a href='news.shtml?BigClassName=党建工作'  rel='dropmenu58'>党建工作</a></li>
+                    <li><a href='news.shtml?BigClassName=团委工作'  rel='dropmenu60'>团委工作</a></li>
+                    <li><a href='news.shtml?BigClassName=素质教育'  rel='dropmenu69'>素质教育</a></li>
+                </ul>
+            </div> 			
+            <div class="w100 subnav-wrap">
+                <div class="w1200 clearfix">
+					<div class="subnav-cont">
+                        <div class="subnav-left fl"><img src="public/images/1.jpg" alt=""/><div class="subnav-motto"><p>以生为本，为学生终生幸福奠基</p><p class="tr">——办学理念</p></div></div>
+                        <ul class="clearfix subnav fr">
+            
+                            <li><a href="aboutus.shtml?id=1">学校简介</a></li>
+			
+                            <li><a href="aboutus.shtml?id=2">现任领导</a></li>
+			
+                            <li><a href="aboutus.shtml?id=3">校园风貌</a></li>
+			
+                            <li><a href="aboutus.shtml?id=4">办学理念</a></li>
+			
+                            <li><a href="news.shtml?BigClassName=管理机构">管理机构</a></li>
+                        </ul>
+                    </div>
+                    <div class="subnav-cont">
+                        <div class="subnav-left fl"><img src="public/images/1.jpg" alt=""/><div class="subnav-motto"><p>以生为本，为学生终生幸福奠基</p><p class="tr">——办学理念</p></div></div>
+                        <ul class="clearfix subnav fr">
+           
+                            <li><a href="news.shtml?BigClassName=新闻中心&SmallClassName=教育新闻">教育新闻</a></li>
+		 
+                            <li><a href="news.shtml?BigClassName=新闻中心&SmallClassName=视频新闻">视频新闻</a></li>
+		 
+                            <li><a href="news.shtml?BigClassName=新闻中心&SmallClassName=中考动态">中考动态</a></li>
+		 
+                            <li><a href="news.shtml?BigClassName=新闻中心&SmallClassName=高考动态">高考动态</a></li>
+		 
+                            <li><a href="news.shtml?BigClassName=新闻中心&SmallClassName=学校动态">学校动态</a></li>
+		 
+                            <li><a href="news.shtml?BigClassName=新闻中心&SmallClassName=校园聚焦">校园聚焦</a></li>
+		 
+                        </ul>
+                    </div>
+                    <div class="subnav-cont">
+                        <div class="subnav-left fl"><img src="public/images/1.jpg" alt=""/><div class="subnav-motto"><p>以生为本，为学生终生幸福奠基</p><p class="tr">——办学理念</p></div></div>
+                        <ul class="clearfix subnav fr">
+           
+                            <li><a href="news.shtml?BigClassName=教育教学&SmallClassName=教学资源">教学资源</a></li>
+		 
+                            <li><a href="news.shtml?BigClassName=教育教学&SmallClassName=教研项目">教研项目</a></li>
+		 
+                            <li><a href="news.shtml?BigClassName=教育教学&SmallClassName=教学成果">教学成果</a></li>
+		 
+                            <li><a href="news.shtml?BigClassName=教育教学&SmallClassName=工作计划">工作计划</a></li>
+		 
+                            <li><a href="news.shtml?BigClassName=教育教学&SmallClassName=工作总结">工作总结</a></li>
+		 
+                            <li><a href="news.shtml?BigClassName=教育教学&SmallClassName=学术论文">学术论文</a></li>
+		 
+                        </ul>
+                    </div>
+                    <div class="subnav-cont">
+                        <div class="subnav-left fl"><img src="public/images/1.jpg" alt=""/><div class="subnav-motto"><p>以生为本，为学生终生幸福奠基</p><p class="tr">——办学理念</p></div></div>
+                        <ul class="clearfix subnav fr">
+                            
+                            <li><a href="news.shtml?BigClassName=德育工作">德育工作</a></li>
+						
+                        </ul>
+                    </div>
+                    <div class="subnav-cont">
+                        <div class="subnav-left fl"><img src="public/images/1.jpg" alt=""/><div class="subnav-motto"><p>以生为本，为学生终生幸福奠基</p><p class="tr">——办学理念</p></div></div>
+                        <ul class="clearfix subnav fr">
+           
+                            <li><a href="news.shtml?BigClassName=招生招聘&SmallClassName=招生信息">招生信息</a></li>
+		 
+                            <li><a href="news.shtml?BigClassName=招生招聘&SmallClassName=招聘工作">招聘工作</a></li>
+		 
+                        </ul>
+                    </div>
+                    <div class="subnav-cont">
+                        <div class="subnav-left fl"><img src="public/images/1.jpg" alt=""/><div class="subnav-motto"><p>以生为本，为学生终生幸福奠基</p><p class="tr">——办学理念</p></div></div>
+                        <ul class="clearfix subnav fr">
+                            
+                            <li><a href="news.shtml?BigClassName=%B5%B3%BD%A8%B9%A4%D7%F7">党建工作</a></li>
+							
+                        </ul>
+                    </div>
+                    <div class="subnav-cont">
+                        <div class="subnav-left fl"><img src="public/images/1.jpg" alt=""/><div class="subnav-motto"><p>以生为本，为学生终生幸福奠基</p><p class="tr">——办学理念</p></div></div>
+                        <ul class="clearfix subnav fr">
+                            
+                            <li><a href="news.shtml?BigClassName=团委工作">团委工作</a></li>
+							
+                        </ul>
+                    </div>
+                    <div class="subnav-cont">
+                        <div class="subnav-left fl"><img src="public/images/1.jpg" alt=""/><div class="subnav-motto"><p>以生为本，为学生终生幸福奠基</p><p class="tr">——办学理念</p></div></div>
+                        <ul class="clearfix subnav fr">
+                            
+                            <li><a href="news.shtml?BigClassName=%CB%D8%D6%CA%BD%CC%D3%FD">素质教育</a></li>
+							
+                        </ul>
+                    </div>
+                    
+                                        
+
+					
+                </div>
+            </div>
+		</div>
+    </div>
+</div>
+<!--头部 end-->
+
+
+<!--内容-->
+<div class="">
+    <!--banner-->
+    <div class="banner">
+        <div><div class="ban-item" style="background-image: url('public/images/banner4.jpg');"></div></div>
+        <div><div class="ban-item" style="background-image: url('public/images/banner9.jpg');"></div></div>
+        <div><div class="ban-item" style="background-image: url('public/images/banner6.jpg');"></div></div>
+        <div><div class="ban-item" style="background-image: url('public/images/banner10.jpg');"></div></div>
+        <div><div class="ban-item" style="background-image: url('public/images/banner8.jpg');"></div></div>
+
+    </div>
+    <!--banner end-->
+    <div class="w1200 mt20" >
+        <!-- 快速链接-->
+        <div class="quicklink-wrap"></div>
+        <!-- 快速链接 end-->
+
+        <!--浙科要闻 -->
+        <!-- 标题-->
+        <h4 class="i-newstitle"><a href="news.shtml?BigClassName=%D0%C2%CE%C5%D6%D0%D0%C4" class="dinb" >more<i>&gt;</i></a>凯悦要闻<em class="tu"> News</em></h4>
+        <div class="clearfix mt10">
+            <div class="i-news fl">
+
+		<div class="i-newsitem"><a href="show.shtml?ID=815" ><img src="/kindeditor/attached/image/20170626/20170626171188428842.JPG"  width="520" height="346"/></a></div>
+
+		<div class="i-newsitem"><a href="show.shtml?ID=816" ><img src="/kindeditor/attached/image/20170626/20170626171253675367.JPG"  width="520" height="346"/></a></div>
+
+		<div class="i-newsitem"><a href="show.shtml?ID=817" ><img src="/kindeditor/attached/image/20170626/2017062617140550550.JPG"  width="520" height="346"/></a></div>
+
+		<div class="i-newsitem"><a href="show.shtml?ID=818" ><img src="/kindeditor/attached/image/20170626/20170626171535943594.JPG"  width="520" height="346"/></a></div>
+
+		<div class="i-newsitem"><a href="show.shtml?ID=819" ><img src="/kindeditor/attached/image/20170626/20170626171777237723.JPG"  width="520" height="346"/></a></div>
+
+		<div class="i-newsitem"><a href="show.shtml?ID=820" ><img src="/kindeditor/attached/image/20170626/20170626171836363636.JPG"  width="520" height="346"/></a></div>
+
+            </div>
+			
+            <!-- 新闻列表-->
+            <div class="i-newsinfo fr">
+
+				 <ul class="i-newslist">
+		
+					<li>
+                        <h7><a href="show.shtml?ID=1563" ><b>肥东凯悦中学第四届校园文化艺术节文艺汇演隆重开幕</b></a><div style="float: right; margin-top:32px; font-size: 14px;"><em class="i-newsline"></em>2018-5-15</div></h7>
+                       <p class="i-newsdesc" style="width: 540px;">
+	2018年5月10日晚，灯火阑珊，歌声如潮。肥东凯悦中学第四届校园文化艺术节文艺汇演隆重开幕! 
+
+
+	校董事会吴林青、韦兵、张伟琴、校长室梁厚本、何毅、吴伟、熊先文、郝山峰等校领导以及全体师生、部分家长代表出席了文艺汇演开幕式。 
+
+
+	开幕式异彩纷呈、高潮迭...</p><div> <a href="show.shtml?ID=1563" target="_blank" style="float: right; color: #078b88; margin-top: -20px;">more</a></div>
+                    </li>
+
+					<li>
+                        <h7><a href="show.shtml?ID=1558" ><b>肥东凯悦中学招聘简章</b></a><div style="float: right; margin-top:32px; font-size: 14px;"><em class="i-newsline"></em>2018-4-23</div></h7>
+                       <p class="i-newsdesc" style="width: 540px;">
+	招聘学前教育专业和市场营销专业教师各2名
+学前教育专业教师主要工作内容：儿童讲故事和案例分析。
+市场营销专业教师主要工作内容：财务与税收和统计基础。
+要求：本科学历，对待工作认真负责，有教师资格证者优先，学前教育专业教师善于表达、沟通。  
+
+
+	地址：肥东县店...</p><div> <a href="show.shtml?ID=1558" target="_blank" style="float: right; color: #078b88; margin-top: -20px;">more</a></div>
+                    </li>
+
+					<li>
+                        <h7><a href="show.shtml?ID=1556" ><b>家校联手&nbsp;共促教育&nbsp;&nbsp;肥东凯</b></a><div style="float: right; margin-top:32px; font-size: 14px;"><em class="i-newsline"></em>2018-4-22</div></h7>
+                       <p class="i-newsdesc" style="width: 540px;">
+	
+		2017—2018学年度第二学期家长会
+	
+	
+		为了进一步加强学校与家庭、教师与家长之间的密切联系，真正达到家校携手共同培养孩子的目标，2018年4月15日下午，肥东凯悦中学召开2017—2018学年度第二学期家长会。
+	
+	
+		本次家长会共分主会...</p><div> <a href="show.shtml?ID=1556" target="_blank" style="float: right; color: #078b88; margin-top: -20px;">more</a></div>
+                    </li>
+
+					<li>
+                        <h7><a href="show.shtml?ID=1554" ><b>肥东凯悦中学举办青年党校开学典礼</b></a><div style="float: right; margin-top:32px; font-size: 14px;"><em class="i-newsline"></em>2018-4-22</div></h7>
+                       <p class="i-newsdesc" style="width: 540px;">
+	
+		4月18日下午，在全国上下认真学习贯彻党的十九大精神的热潮中，安徽省肥东县凯悦中学第1期青年党校开学典礼在学校大会议室隆重举行。教体局党委李家珍主任、教体局组干科科长林松科长、凯悦中学校长梁厚本校长、校党支部书记陈一飞书记和30名党校学员一起参加了本次开学典礼。典礼...</p><div> <a href="show.shtml?ID=1554" target="_blank" style="float: right; color: #078b88; margin-top: -20px;">more</a></div>
+                    </li>
+
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="ad mt40"  onClick="javascript:window.location.href='specialTopic.shtml';">“创建合肥市素质教育示范校”专题
+        </div>
+        <div class="niticevideo ">
+            <div class="i-themewrap nitice" style="float:left;">
+                <div class="i-themetop clearfix">
+                    <span class="i-themetitle">校园通知<em class="tu">Notice</em><em class="tumore"><a href="news.shtml?BigClassName=校园通知" >more&nbsp;&nbsp;&gt;</a></em></span>
+                    
+                </div>
+               <!-- 专题列表-->
+                <div class="i-newsinfo">
+
+				 <ul class="i-newslist">
+	
+                        
+                         <li><h7><a href="show.shtml?id=1562" >肥东凯悦中学2018春季学期第六大周主要工作行事历<div style="float:right; margin-right:50px;font-size: 14px; ">2018-5-14</div></a></h7></li>
+
+                        
+                         <li><h7><a href="show.shtml?id=1561" >肥东凯悦中学2018春季学期第五大周主要工作行事历<div style="float:right; margin-right:50px;font-size: 14px; ">2018-5-2</div></a></h7></li>
+
+                        
+                         <li><h7><a href="show.shtml?id=1560" >肥东凯悦中学2018春季学期第四大周主要工作行事历<div style="float:right; margin-right:50px;font-size: 14px; ">2018-4-23</div></a></h7></li>
+
+                        
+                         <li><h7><a href="show.shtml?id=1551" >肥东凯悦中学2018春季学期第三大周主要工作行事历<div style="float:right; margin-right:50px;font-size: 14px; ">2018-4-7</div></a></h7></li>
+
+                        
+                         <li><h7><a href="show.shtml?id=1546" >肥东凯悦中学2018春季学期第二大周主要工作行事历<div style="float:right; margin-right:50px;font-size: 14px; ">2018-3-18</div></a></h7></li>
+
+                        
+                         <li><h7><a href="show.shtml?id=1543" >肥东凯悦中学2018春季学期第一大周主要工作行事历<div style="float:right; margin-right:50px;font-size: 14px; ">2018-3-7</div></a></h7></li>
+
+                        
+                         <li><h7><a href="show.shtml?id=1539" >肥东凯悦中学2017--2018学年度第二学期工作行事历<div style="float:right; margin-right:50px;font-size: 14px; ">2018-3-4</div></a></h7></li>
+
+                        
+                         <li><h7><a href="show.shtml?id=1523" >肥东凯悦中学2017秋季学期第十大周主要工作行事历<div style="float:right; margin-right:50px;font-size: 14px; ">2018-1-12</div></a></h7></li>
+
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="i-themewrap nitice" style="float:right; ">
+                <div class="i-themetop clearfix">
+                    <span class="i-themetitle">卓越凯悦<em class="tu">Video</em><em class="tumore"><a href="news.shtml?BigClassName=%D0%C2%CE%C5%D6%D0%D0%C4&SmallClassName=%CA%D3%C6%B5%D0%C2%CE%C5" >more&nbsp;&nbsp;&gt;</a></em></span>
+                    
+                </div>
+               <!-- 专题列表-->
+                <div class="video">
+                    <p id="player1"><a href="http://www.macromedia.com/go/getflashplayer">Get the Flash Player</a> to see this player.</p>
+                    <script type="text/javascript">
+                      var s1 = new SWFObject("flvplayer.swf","single","594","347","7");
+                      s1.addParam("allowfullscreen","true");
+                      s1.addVariable("file","http://www.fdkyzx.com/v.flv");
+                      s1.addVariable("image","public/images/v.jpg");
+                      s1.addVariable("width","594");
+                      s1.addVariable("height","347");
+                      s1.addVariable("autostart","false");
+                      s1.write("player1");
+                    </script>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="i-dynamicwrap overh" style="clear:both">
+            <ul class="i-tab clearfix">
+                <li class="active"><a href="news.shtml?BigClassName=%D0%C2%CE%C5%D6%D0%D0%C4&SmallClassName=%D0%A3%D4%B0%BE%DB%BD%B9">校园聚焦<em class="tu">Focus</em></a><i class="icon"></i></li>
+                <li><a href="news.shtml?BigClassName=党委工作">党团工作<em class="tu">Party</em></a><i class="icon"></i></li>
+                <li><a href="news.shtml?BigClassName=教育教学">教育教学<em class="tu">Teach</em></a><i class="icon"></i></li>
+                <li><a href="news.shtml?BigClassName=素质教育">素质教育<em class="tu">Quality</em></a><i class="icon"></i></li>
+            </ul>
+            <div class="i-dynamicCont">
+                <div class="i-dynamic" style="display: block;">
+                    <ul class="i-dynlist clearfix">
+	
+                    
+						<li>
+                            <div class="i-dynimg"><a href="show.shtml?ID=1564" target="_blank"><img src="" alt="" width="173" height="134"/></a></div>
+                            <div class="i-dynrig">
+                                <h4><a href="show.shtml?ID=1564" target="_blank">肥东凯悦中学第四届校园文化艺术节文艺汇演隆重开幕</a></h4>
+                                <p><a href="show.shtml?ID=1564" target="_blank">
+	2018年5月10日晚，灯火阑珊，歌声如潮。肥东凯悦中学第四届校园文化艺术节文艺汇演隆重开幕!
+
+
+	校董事会吴林青、韦兵、张伟琴、校长室梁厚本、何毅、吴伟、熊先文、郝山峰等校领导以及全体师生、部分家长代表出席了文艺汇演开幕式。
+
+
+	开幕式异彩纷呈、高潮迭起，掌声、欢呼声、笑声此起彼伏，整个校园成了艺术的殿堂、欢乐的海洋！舞蹈、戏曲、合唱、朗诵、小品、脱口秀、器乐等各类艺术精湛...</a></p>
+                                <a href="show.shtml?ID=1564" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                    
+						<li>
+                            <div class="i-dynimg"><a href="show.shtml?ID=1559" target="_blank"><img src="" alt="" width="173" height="134"/></a></div>
+                            <div class="i-dynrig">
+                                <h4><a href="show.shtml?ID=1559" target="_blank">肥东凯悦中学招聘简章</a></h4>
+                                <p><a href="show.shtml?ID=1559" target="_blank">
+	招聘学前教育专业和市场营销专业教师各2名
+学前教育专业教师主要工作内容：儿童讲故事和案例分析。
+市场营销专业教师主要工作内容：财务与税收和统计基础。
+要求：本科学历，对待工作认真负责，有教师资格证者优先，学前教育专业教师善于表达、沟通。
+
+
+	地址：肥东县店埠镇八斗路桥东北（从合肥火车站北广场乘坐40路公交车直达）
+
+
+	联系人：宣老师：13966745270、宋老师：18...</a></p>
+                                <a href="show.shtml?ID=1559" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                    
+						<li>
+                            <div class="i-dynimg"><a href="show.shtml?ID=1557" target="_blank"><img src="" alt="" width="173" height="134"/></a></div>
+                            <div class="i-dynrig">
+                                <h4><a href="show.shtml?ID=1557" target="_blank">家校联手&#160;共促教育&#160;&#160;肥东凯悦中学召开</a></h4>
+                                <p><a href="show.shtml?ID=1557" target="_blank">
+	2017—2018学年度第二学期家长会 
+
+
+	为了进一步加强学校与家庭、教师与家长之间的密切联系，真正达到家校携手共同培养孩子的目标，2018年4月15日下午，肥东凯悦中学召开2017—2018学年度第二学期家长会。 
+
+
+	本次家长会共分主会场家长会和分会场家长会两项议程。主会场家长会由校长助理、政教处主任郝山峰主持，校长助理、教务处主任熊先文首先对各位家长的到来表示热烈的欢...</a></p>
+                                <a href="show.shtml?ID=1557" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                    
+						<li>
+                            <div class="i-dynimg"><a href="show.shtml?ID=1555" target="_blank"><img src="" alt="" width="173" height="134"/></a></div>
+                            <div class="i-dynrig">
+                                <h4><a href="show.shtml?ID=1555" target="_blank">肥东凯悦中学举办青年党校开学典礼</a></h4>
+                                <p><a href="show.shtml?ID=1555" target="_blank">
+	4月18日下午，在全国上下认真学习贯彻党的十九大精神的热潮中，安徽省肥东县凯悦中学第1期青年党校开学典礼在学校大会议室隆重举行。教体局党委李家珍主任、教体局组干科科长林松科长、凯悦中学校长梁厚本校长、校党支部书记陈一飞书记和30名党校学员一起参加了本次开学典礼。典礼由校团委书记杜炎主持。
+
+
+	开学典礼在庄严肃穆的国歌声中拉开序幕。首先陈一飞书记发言，明确了本期青年党校的目的、青年党校...</a></p>
+                                <a href="show.shtml?ID=1555" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="i-dbmorewrap"><a href="news.shtml?BigClassName=%D0%C2%CE%C5%D6%D0%D0%C4&SmallClassName=%D0%A3%D4%B0%BE%DB%BD%B9" target="_blank" class="i-dbmore">more&nbsp;&nbsp;&gt;</a></div>
+                </div>
+                <div class="i-dynamic">
+                    <ul class="i-dynlist clearfix">
+	
+                     
+						<li>
+                            <div class="i-dynrig2">
+                                <h4><a href="show.shtml?ID=995" target="_blank">共青团肥东凯悦中学委员会隆重举行校学生会成立大会</a></h4>
+                                <p><a href="show.shtml?ID=995" target="_blank">
+	&nbsp; &nbsp; 为推进学校综合改革，逐步实现学生自主学习、自主生活、自主管理。共青团肥东凯悦中学委员会在原有年级学生会基础上成立校学生会，目的在于实现全校学生会工作的一致性、连贯性、完整性。3月7日晚6时40分，校团委在大会议室隆重举行校学生会成立大会。
+
+
+	&nbsp; ...</a></p>
+                                <a href="show.shtml?ID=995" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                     
+						<li>
+                            <div class="i-dynrig2">
+                                <h4><a href="show.shtml?ID=832" target="_blank">我校隆重举行新学期第一次升旗仪式</a></h4>
+                                <p><a href="show.shtml?ID=832" target="_blank">
+	&nbsp; &nbsp; “一年之计在于春。”新学期伊始，全体凯悦人又将怀着新的梦想和希望，迈向新的征程。2月13日早晨，全体师生隆重集会，举行新学期第一次升旗仪式。 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;校团委祝虎城书记主持升旗仪式。校长室梁厚本校长发表国旗下重要讲...</a></p>
+                                <a href="show.shtml?ID=832" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                     
+						<li>
+                            <div class="i-dynrig2">
+                                <h4><a href="show.shtml?ID=761" target="_blank">凯悦中学胜利举办2016“迎国庆”初高中篮球友谊赛</a></h4>
+                                <p><a href="show.shtml?ID=761" target="_blank">
+	&nbsp; &nbsp; 9月27日下午5时，凯悦中学胜利举办2016迎国庆初高中篮球友谊赛。 
+
+
+	&nbsp; &nbsp; 本次比赛由校团委主办，校体训中心协办。校董事会吴林青董事长亲临比赛现场，并为比赛开球；董事会高校长，校长室梁校长、何校长，督导室邵主任，政教处郝主任，教务...</a></p>
+                                <a href="show.shtml?ID=761" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                     
+						<li>
+                            <div class="i-dynrig2">
+                                <h4><a href="show.shtml?ID=754" target="_blank">凯悦中学隆重举办本学期第二次升旗仪式</a></h4>
+                                <p><a href="show.shtml?ID=754" target="_blank">
+	&nbsp; &nbsp; 9月19日早上7时，凯悦中学全体师生员工隆重集会举行本学期第二次升旗仪式。
+
+
+	&nbsp; &nbsp; 校团委祝虎城书记主持了仪式。仪式共分四项议程：一、迎国旗。伴随《歌唱祖国》的音乐，校国旗仪仗队完成了有九年级旗手向七年级旗手的交旗仪式；二、升国旗，唱...</a></p>
+                                <a href="show.shtml?ID=754" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="i-dbmorewrap"><a href="news.shtml?BigClassName=党委工作" target="_blank"  class="i-dbmore">more&nbsp;&nbsp;&gt;</a></div>
+                </div>
+                <div class="i-dynamic">
+                    <ul class="i-dynlist clearfix">
+	
+                    
+						<li>
+                            <div class="i-dynimg"><a href="#" target="_blank"><img src="" alt="" width="173" height="134"/></a></div>
+                            <div class="i-dynrig">
+                                <h4><a href="show.shtml?ID=1532" target="_blank">述职报告</a></h4>
+                                <p><a href="show.shtml?ID=1532" target="_blank">
+	肥东凯悦中学校长&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 梁厚本
+
+
+	
+
+
+	&nbsp;述职人：梁厚本，中共党员，大学本科学历，中学高级教师&nbsp; 现任肥东凯悦中学校长。
+
+
+	过去的一年，因为吴总审时度势，英明决策，开拓创新，学校实现了可持续性发展。这一年，在董事会的正确领导下，我恪守职责，履职尽责，基本完成了董事会交给我的任务，...</a></p>
+                                <a href="show.shtml?ID=1532" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                    
+						<li>
+                            <div class="i-dynimg"><a href="#" target="_blank"><img src="" alt="" width="173" height="134"/></a></div>
+                            <div class="i-dynrig">
+                                <h4><a href="show.shtml?ID=1412" target="_blank">淮南师范学院与凯悦中学签订共建生源基地合作协议</a></h4>
+                                <p><a href="show.shtml?ID=1412" target="_blank">
+	&nbsp; &nbsp; 二〇一七年五月十六日上午，淮南师范学院与凯悦中学签订共建生源基地合作协议。
+
+
+	&nbsp;&nbsp;&nbsp; 协议指出：淮南师范学院充分利用大学资源优势，为凯悦中学教育、教学管理等方面提供支持；凯悦中学支持淮南师范学院教师、教育类学生实践能力的培养。
+
+
+	&nbsp;&nbsp;&nbsp; 淮南师范学院体育学院院长应力代表院方向凯悦中学颁...</a></p>
+                                <a href="show.shtml?ID=1412" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                    
+						<li>
+                            <div class="i-dynimg"><a href="#" target="_blank"><img src="" alt="" width="173" height="134"/></a></div>
+                            <div class="i-dynrig">
+                                <h4><a href="show.shtml?ID=1002" target="_blank">初三梁露露同学2017中考百日誓师大会发言稿</a></h4>
+                                <p><a href="show.shtml?ID=1002" target="_blank">
+	尊敬的领导、老师、亲爱的同学们：
+
+
+	&nbsp;大家下午好！
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;春风得意，艳阳高照，又是一年誓师日。中考的舞台已经搭就，冲锋的号角已经吹响，我们多彩的初中生活仅仅剩只剩100天。100天的挥汗如雨，可以滋润一片大地；100天的全力拼搏，可以让我们一生受益。只要志存高远，就能创造奇迹，达成梦想，铸就辉煌。
+
+
+	蒙田曾说...</a></p>
+                                <a href="show.shtml?ID=1002" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                    
+						<li>
+                            <div class="i-dynimg"><a href="#" target="_blank"><img src="" alt="" width="173" height="134"/></a></div>
+                            <div class="i-dynrig">
+                                <h4><a href="show.shtml?ID=1001" target="_blank">高三学生代表邬菊萍2017百日誓师大会发言稿</a></h4>
+                                <p><a href="show.shtml?ID=1001" target="_blank">
+	尊敬的的学校领导、老师，亲爱的同学们：
+
+
+	大家下午好。非常荣幸能够作为高三的学生代表在这里讲话。
+
+
+	时光飞逝，现在我们已经站在了离高考不到一百天的冲刺线上。此时此刻，我们面对的，将是我们12年来的学习生活中最重要的抉择。
+
+
+	12年的时间，足以让我们从蹒跚学步的孩子成长成现在脚步坚定的成年人。回想这12年的历程中，我们首先要反思，在这12年里，我们到底错过了多少机...</a></p>
+                                <a href="show.shtml?ID=1001" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="i-dbmorewrap"><a  href="news.shtml?BigClassName=教育教学" target="_blank"  class="i-dbmore">more&nbsp;&nbsp;&gt;</a></div>
+                </div>
+                <div class="i-dynamic">
+                    <ul class="i-dynlist clearfix">
+	
+                    
+						<li>
+                            <div class="i-dynimg"><a href="#" target="_blank"><img src="" alt="" width="173" height="134"/></a></div>
+                            <div class="i-dynrig">
+                                <h4><a href="show.shtml?ID=1405" target="_blank">点燃青春激情&#160;放飞凯悦梦想</a></h4>
+                                <p><a href="show.shtml?ID=1405" target="_blank">
+	夜色阑珊，流光溢彩；美景良宵，歌舞升平。2017年5月11日晚，我校第三届校园文化艺术节文艺晚会在校运动场隆重举行，4000多名师生员工和近600名家长代表、媒体朋友共同观赏了这场文艺盛会。
+晚8点整，晚会在开场舞《张灯结彩》的喜庆音乐中开始，学校法人代表吴林青董事长隆重宣布第三届文化艺术节开幕。校长室梁厚本校长致以热情洋溢的开幕词。 
+
+
+	本次晚会内容丰富，形式多样，融思想性、艺...</a></p>
+                                <a href="show.shtml?ID=1405" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                    
+						<li>
+                            <div class="i-dynimg"><a href="#" target="_blank"><img src="" alt="" width="173" height="134"/></a></div>
+                            <div class="i-dynrig">
+                                <h4><a href="show.shtml?ID=996" target="_blank">共青团肥东凯悦中学委员会隆重举行校学生会成立大会</a></h4>
+                                <p><a href="show.shtml?ID=996" target="_blank">
+	&nbsp; &nbsp; 为推进学校综合改革，逐步实现学生自主学习、自主生活、自主管理。共青团肥东凯悦中学委员会在原有年级学生会基础上成立校学生会，目的在于实现全校学生会工作的一致性、连贯性、完整性。3月7日晚6时40分，校团委在大会议室隆重举行校学生会成立大会。
+
+
+	&nbsp; &nbsp; 校团委祝虎城书记主持大会。校长室梁厚本校长出席大会并讲话，他对校学生会的成立表示祝贺并...</a></p>
+                                <a href="show.shtml?ID=996" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                    
+						<li>
+                            <div class="i-dynimg"><a href="#" target="_blank"><img src="" alt="" width="173" height="134"/></a></div>
+                            <div class="i-dynrig">
+                                <h4><a href="show.shtml?ID=833" target="_blank">我校隆重举行新学期第一次升旗仪式</a></h4>
+                                <p><a href="show.shtml?ID=833" target="_blank">
+	&nbsp; &nbsp; “一年之计在于春。”新学期伊始，全体凯悦人又将怀着新的梦想和希望，迈向新的征程。2月13日早晨，全体师生隆重集会，举行新学期第一次升旗仪式。 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;校团委祝虎城书记主持升旗仪式。校长室梁厚本校长发表国旗下重要讲话。梁校长讲话的题目是“仰望星空与脚踏实地”。他用生动的事例深入浅出的诠释了“理想”与“实干”的关系...</a></p>
+                                <a href="show.shtml?ID=833" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                    
+						<li>
+                            <div class="i-dynimg"><a href="#" target="_blank"><img src="" alt="" width="173" height="134"/></a></div>
+                            <div class="i-dynrig">
+                                <h4><a href="show.shtml?ID=821" target="_blank">肥东县迎接素质教育示范学校评估认定动员会在凯悦中学召开</a></h4>
+                                <p><a href="show.shtml?ID=821" target="_blank">
+	&nbsp; &nbsp; 1月12日下午3时，肥东县迎接素质教育示范学校评估认定动员会在凯悦中学召开。
+
+
+	&nbsp;&nbsp;&nbsp; 王兴才督学主持会议。路口学区中心学校、凯悦中学、桥头集学校、八斗学校四位校长分别就肥东县素质教育示范学校专家考评组到校评估提出反馈意见后，本学校整改情况进行了汇报。接下来夏英明主任就资料整理、自评报告整改报告的规范性对在座各校领导进行了培...</a></p>
+                                <a href="show.shtml?ID=821" target="_blank" class="i-dynmore"> more</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="i-dbmorewrap"><a href="news.shtml?BigClassName=素质教育" target="_blank" class="i-dbmore">more&nbsp;&nbsp;&gt;</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- 动态新闻 end-->
+        <!-- 专题网站-->
+        <div class="i-themewrap">
+            <div class="i-themetop clearfix">
+                <span class="i-themetitle">校园风貌<em class="tu">Campus Scenery</em></span>
+                
+            </div>
+                         <div id="demo">
+                        <div id="indemo">
+                        <div id="demo1">
+           <!-- 专题列表-->
+            <div class="overh">
+                <ul class="i-theme clearfix">
+			
+					
+                     <li><a href="photo.shtml" ><img src="UploadFiles/2017120172345198.jpg" alt="" width="277" height="153"/><p>武术操比赛</p></a></li>
+ 
+					
+                     <li><a href="photo.shtml" ><img src="UploadFiles/2017120172250532.jpg" alt="" width="277" height="153"/><p>获得奖项</p></a></li>
+ 
+					
+                     <li><a href="photo.shtml" ><img src="UploadFiles/2017120172117250.jpg" alt="" width="277" height="153"/><p>获得奖项</p></a></li>
+ 
+					
+                     <li><a href="photo.shtml" ><img src="UploadFiles/2017120172011925.jpg" alt="" width="277" height="153"/><p>获得奖项</p></a></li>
+ 
+					
+                     <li><a href="photo.shtml" ><img src="UploadFiles/2017120171921948.jpg" alt="" width="277" height="153"/><p>获得奖项</p></a></li>
+ 
+					
+                     <li><a href="photo.shtml" ><img src="UploadFiles/201712017190487.jpg" alt="" width="277" height="153"/><p>获得奖项</p></a></li>
+ 
+					
+                     <li><a href="photo.shtml" ><img src="UploadFiles/2017120171829545.jpg" alt="" width="277" height="153"/><p>获得奖项</p></a></li>
+ 
+					
+                     <li><a href="photo.shtml" ><img src="UploadFiles/2017120171631683.jpg" alt="" width="277" height="153"/><p>展现凯悦风</p></a></li>
+ 
+                    
+                </ul>
+            </div>
+                        </div>
+                        <div id="demo2"></div>
+                        </div>
+                        </div>            
+     <script>
+                        <!--
+                        var speed=10; //数字越大速度越慢
+                        var tab=document.getElementById("demo");
+                        var tab1=document.getElementById("demo1");
+                        var tab2=document.getElementById("demo2");
+                        tab2.innerHTML=tab1.innerHTML;
+                        function Marquee(){
+                        if(tab2.offsetWidth-tab.scrollLeft<=0)
+                        tab.scrollLeft-=tab1.offsetWidth
+                        else{
+                        tab.scrollLeft++;
+                        }
+                        }
+                        var MyMar=setInterval(Marquee,speed);
+                        tab.onmouseover=function() {clearInterval(MyMar)};
+                        tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+                        -->
+                        </script>
+                        
+                                   
+            
+            
+        </div>
+        <!-- 专题网站 end-->
+        <div class="ad2 mt40"  >
+            <div class="ad2li1 "  onClick="window.open('http://www.ahedu.cn/search//index.php?m=Search&c=Index&a=index');">资源平台</div>
+            <div class="ad2li2 "  onClick="window.open('http://www.fdjyw.net/');">肥东县教体局</div>
+            <div class="ad2li3 "  onClick="window.open('http://www.ziyuanku.com/');">中华资源库</div>
+            <div class="ad2li4 "  onClick="window.open('http://www.zxxk.com/');">中学学科网</div>
+        </div>
+    </div>
+
+<div id="footer">
+    <div class="quicklink">
+      <ul>
+  <li>
+  <select class="link" onchange="window.open(this.options[this.options.selectedIndex].value)">
+         <option value="#">
+             教育网站
+         </option>
+         
+            <option value='http://www.moe.edu.cn/' target="_blank">
+                  中国教育部
+            </option>
+         
+            <option value='http://www.jyb.com.cn/' target="_blank">
+                  中国教育报
+            </option>
+         
+            <option value='http://www.g12e.com/' target="_blank">
+                  中国中小学教育网
+            </option>
+         
+            <option value='http://www.ahedu.gov.cn/' target="_blank">
+                  安徽教育网
+            </option>
+         
+</select>
+  </li>
+  <li>
+  <select class="link" onchange="window.open(this.options[this.options.selectedIndex].value)">
+         <option value="#">
+             县(市)区教育部门
+         </option>
+         
+            <option value='http://www.cfjy.net/' target="_blank">
+                  长丰县教体局
+            </option>
+         
+            <option value='http://chjyw.chaohu.gov.cn/' target="_blank">
+                  巢湖市教育局
+            </option>
+         
+            <option value='http://www.hfyhjy.gov.cn/' target="_blank">
+                  瑶海区教体局
+            </option>
+         
+            <option value='http://www.hfly.net/' target="_blank">
+                  庐阳区教体局
+            </option>
+         
+            <option value='http://www.hfssjt.gov.cn/index.html' target="_blank">
+                  蜀山区教体局
+            </option>
+         
+            <option value='http://edu.baohe.gov.cn/' target="_blank">
+                  包河区教体局
+            </option>
+         
+</select>
+  </li>
+  <li>
+  <select class="link" onchange="window.open(this.options[this.options.selectedIndex].value)">
+             <option value="#">
+                 合肥教育网子网
+         	 </option>
+             
+                <option value='http://jsjy.hfjyyun.net.cn/App.Tuanteacher/' target="_blank">
+                      合肥教师教育网
+                </option>
+             
+                <option value='http://www.hfgyy.com/' target="_blank">
+                      合肥学生工业游
+                </option>
+             
+                <option value='http://www.hfsygxl.com' target="_blank">
+                      合肥市阳光心理e站
+                </option>
+             
+                <option value='http://www.hfzk.net.cn/' target="_blank">
+                      合肥招考信息网
+                </option>
+             
+                <option value='http://hfyw.hfjyyun.net.cn' target="_blank">
+                      合肥语言文字网
+                </option>
+             
+                <option value='http://demo.xj2001.com/' target="_blank">
+                      合肥德育网
+                </option>
+             
+                <option value='http://tw.hfjy.net.cn/' target="_blank">
+                      共青团合肥市教育局委员会
+                </option>
+             
+</select>
+  </li>
+  <li>
+  <select class="link" onchange="window.open(this.options[this.options.selectedIndex].value)">
+     	 <option value="#">
+             兄弟学校
+         </option>
+         
+            <option value='http://www.hfyz.net/' target="_blank">
+                  合肥市第一中学
+            </option>
+         
+            <option value='http://www.ahhfez.com/' target="_blank">
+                  合肥市第二中学
+            </option>
+         
+            <option value='http://www.ahhfsz.com/' target="_blank">
+                  合肥市第三中学
+            </option>
+         
+            <option value='http://www.hfwz.net/' target="_blank">
+                  合肥市第五中学
+            </option>
+         
+            <option value='http://www.hflz.com/' target="_blank">
+                  合肥市第六中学
+            </option>
+         
+            <option value='http://www.hfqz.net.cn/index.html' target="_blank">
+                  合肥市第七中学
+            </option>
+         
+            <option value='http://www.hfbz.com/' target="_blank">
+                  合肥市第八中学
+            </option>
+         
+            <option value='http://www.hfjz.com/' target="_blank">
+                  合肥市第九中学
+            </option>
+         
+            <option value='http://www.hfshz.com/' target="_blank">
+                  合肥市第十中学
+            </option>
+         
+            <option value='http://www.hf35zh.com/' target="_blank">
+                  合肥市第三十五中学
+            </option>
+         
+            <option value='http://www.hfsjmlyxx.com/' target="_blank">
+                  合肥市经贸旅游学校
+            </option>
+         
+            <option value='http://www.chhlsf.com/' target="_blank">
+                  黄麓师范学校
+            </option>
+         
+  </select>
+  </li>
+  </ul></div>
+  </div>
+</div>
+
+<!--内容 end-->
+
+<!--尾部-->
+<div class="w100 footWrap"><div class="w1200 overh">
+    <p>版权所有 2017 肥东凯悦中学&nbsp;&nbsp;&nbsp;&nbsp;地址：安徽省肥东县八斗路与唐杨路交汇处</p>
+        <p>电话：0551-67709090 邮箱：<a href="mailto:www.alex5385322@yahoo.com">www.alex5385322@yahoo.com</a></p>
+        <p><a href="http://www.miitbeian.gov.cn" target="_blank">皖ICP备11003519号</a> <div style="width:300px;margin:0 auto; padding:20px 0;">
+		 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34012202340216" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="public/images/ba.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">皖公网安备 34012202340216号</p></a>
+		 	</div></p>
+    </div>
+<div class="backTop" onclick="backTop()"><img src="public/images/backtop.png" alt=""/></div>
+</div>
+<script type="text/javascript">
+    setTimeout(function(){
+        scrollHeight();
+        $(window).scroll(function(){
+            scrollHeight();
+        })
+    },100)
+    function scrollHeight(){
+        var winH = $(window).height();
+        var scrollTop = $(window).scrollTop();
+        if(scrollTop >= winH){
+            $('.backTop').fadeIn();
+        }else{
+            $('.backTop').fadeOut();
+        }
+    }
+    function backTop(){
+        $('body,html').animate({'scrollTop':'0px'},1000);
+    }
+</script>
+<script>
+    setTimeout(function(){
+        scrollHeight();
+        $(window).scroll(function(){
+            scrollHeight();
+        })
+    },100)
+    function scrollHeight(){
+        var winH = $(window).height();
+        var scrollTop = $(window).scrollTop();
+        if(scrollTop >= winH){
+            $('.backTop').fadeIn();
+        }else{
+            $('.backTop').fadeOut();
+        }
+    }
+    function backTop(){
+        $('body,html').animate({'scrollTop':'0px'},1000);
+    }
+</script>
+<!--尾部 end-->
+<script src="public/js/myCommon.js"></script>
+
+<script src="public/js/slick.min.js"></script>
+<script>
+    $(function(){
+        //合作伙伴切换
+        $('.ban-item,.i-newsitem').css('display','block');
+        $('.banner,.i-news').slick({
+            arrows:false,
+            dots:true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000
+			
+        });
+       //动态新闻切换
+        $('.i-tab li').each(function(i,v){
+            $(this).hover(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                $('.i-dynamicCont .i-dynamic').eq(i).show().siblings().hide();
+            })
+        })
+        var auto = 1;  //等于1则自动切换，其他任意数字则不自动切换
+        if(auto ==1){
+            var number = 0;
+            var maxNumber = $('.i-tab li').length;
+            function autotab(){
+                number++;
+                number == maxNumber? number = 0 : number;
+                $('.i-tab li:eq('+number+')').addClass('active').siblings().removeClass('active');
+                $('.i-dynamicCont .i-dynamic:eq('+number+')').show().siblings().hide();
+            }
+            var tabChange = setInterval(autotab,3000);
+            //鼠标悬停暂停切换
+            $('.i-dynamicwrap').mouseover(function(){
+                clearInterval(tabChange);
+            });
+            $('.i-dynamicwrap').mouseout(function(){
+                tabChange = setInterval(autotab,3000);
+            });
+        }
+        //专题网站
+       $('.i-themetab').slick({
+		    arrows:true,
+		    slidesToShow: 4,
+		    slidesToScroll: 1,
+		    autoplay: true,
+		    autoplaySpeed: 3000,
+		});
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>贵州农业职业学院</title>
+  <link rel="stylesheet" type="text/css" href="css/css.css" />
+  <style>
+     .articleList_pmd_pic_txt{display: none}
+     .articleList_pmd_pic {
+    padding-left: 8px;}
+
+   </style>
+ </head>
+ <body>
+  <div class="ydybg">
+   <div class="ydy_mid">
+    <div class="ydy_logo">
+     <a href="index.jsp"> <img src="images/ydy1.png" /></a>
+    </div>
+    <div class="ydy_11">
+     <div class="ydy_bit">
+      <a href="index.jsp"><img src="images/ydy2.jpg" /></a>
+     </div>
+    </div>
+    </a>
+    <div class="clear"></div>
+
+    <div class="ydy_tup bsjCss" id="dhy" style="" type="ArticleCollect">
+    <div id="p2089" align="center"
+					style="overflow: hidden; width: 1190px; height: 160px;">
+					<div style="width: 800%;">
+						<div id="p2089_1" align="center" style="float: left;">
+							<div style="float: left;" class='articleList_pmd_pic'>
+								<div class='articleList_pmd_pic_img'>
+									<img width="193" height="140" src='images/ydyt1.png' />
+
+								</div>
+
+							</div>
+							<div style="float: left;" class='articleList_pmd_pic'>
+								<div class='articleList_pmd_pic_img'>
+									<img width="193" height="140" src='images/ydyt2.png' />
+
+								</div>
+
+							</div>
+							<div style="float: left;" class='articleList_pmd_pic'>
+								<div class='articleList_pmd_pic_img'>
+									<img width="193" height="140" src='images/ydyt3.png' />
+
+								</div>
+
+							</div>
+							<div style="float: left;" class='articleList_pmd_pic'>
+								<div class='articleList_pmd_pic_img'>
+									<img width="193" height="140" src='images/ydyt4.png' />
+
+								</div>
+
+							</div>
+							<div style="float: left;" class='articleList_pmd_pic'>
+								<div class='articleList_pmd_pic_img'>
+									<img width="193" height="140" src='images/ydyt5.png' />
+
+								</div>
+
+							</div>
+							<div style="float: left;" class='articleList_pmd_pic'>
+								<div class='articleList_pmd_pic_img'>
+									<img width="193" height="140" src='images/ydyt6.png' />
+
+								</div>
+
+							</div>
+						</div>
+						<div id="p2089_2" align="center" style="float: left;"></div>
+					</div>
+				</div>
+				<script>
+					var p2089 = document.getElementById("p2089");
+					var p2089_1 = document.getElementById("p2089_1");
+					var p2089_2 = document.getElementById("p2089_2");
+					p2089_2.innerHTML = p2089_1.innerHTML;
+					var p2089_MyMar = setInterval(p2089_Marquee, 50);
+					p2089.onmouseover = function() {
+						clearInterval(p2089_MyMar)
+					};
+					p2089.onmouseout = function() {
+						p2089_MyMar = setInterval(p2089_Marquee, 50)
+					};
+					function p2089_Marquee() {
+						if (p2089_2.offsetWidth - p2089.scrollLeft <= 0) {
+							p2089.scrollLeft -= p2089_1.offsetWidth;
+						} else {
+							p2089.scrollLeft += 1;
+						}
+					}
+				</script>
+
+			</div>
+    <div class="clear"></div>
+   </div>
+  </div>
+ </body>
+</html>

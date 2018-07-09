@@ -1,0 +1,430 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>东北师大附中明珠学校</title>
+<meta name="keywords" content="东北师范大学附属中学明珠学校，师大附中初中部，师大附中明珠校区">
+<meta name="description" content="东北师大附中明珠学校">
+<link href="images/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	jQuery.jqtab = function(tabtit,tab_conbox,shijian) {
+		$(tab_conbox).find("li").hide();
+		$(tabtit).find("li:first").addClass("thistab").show(); 
+		$(tab_conbox).find("li:first").show();
+	
+		$(tabtit).find("li").bind(shijian,function(){
+		  $(this).addClass("thistab").siblings("li").removeClass("thistab"); 
+			var activeindex = $(tabtit).find("li").index(this);
+			$(tab_conbox).children().eq(activeindex).show().siblings().hide();
+			return false;
+		});
+	
+	};
+	/*调用方法如下：*/
+	$.jqtab("#tabs","#tab_conbox","click");
+	
+	$.jqtab("#tabs2","#tab_conbox2","mouseenter");
+	
+});
+</script>
+<script>window.onerror=function(){return true;};</script>
+</head>
+<body>
+<div class="header"> 
+  <object id="sf" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="960" height="172">
+      <param name="movie" value="images/top.swf" />
+      <param name="quality" value="high" />
+      <param name="wmode" value="opaque" />
+      <param name="swfversion" value="8.0.35.0" />
+      <param name="expressinstall" value="Scripts/expressInstall.swf" />
+    </object>
+</div>
+<div class="nav">
+	<ul>
+    	<li id="nobg"><a href="index.asp">首 页</a></li>
+        <li><a href="newsshow.asp?zlid=38&id=123">学校概况</a></li>
+        <li><a href="newsshow.asp?zlid=39&id=113">生命教育</a></li>
+        <li><a href="newslist.asp?zlid=48">党务之窗</a></li>
+        <li><a href="newslist.asp?zlid=41&dlid=121">学校德育</a></li>
+        <li><a href="newslist.asp?zlid=40">教学管理</a></li>
+        <li><a href="newslist.asp?zlid=42">教育科研</a></li>
+        <li><a href="newsshow.asp?zlid=43&id=628">名师风采</a></li>
+        <li><a href="newslist.asp?zlid=50">招生资讯</a></li>
+        <li><a href="bgdh.asp">办公电话</a></li>
+        <li><a href="xzxx.asp">校长信箱</a></li>
+        <li><a href="http://xinli.dsfzcz.com/" target="_blank">心理健康</a></li>
+	</ul>
+</div>
+<script language="javascript" type="text/javascript">
+function CheckReviewGQ()
+{
+	if(document.ReviewGQ.content.value=="我来说两句" || document.ReviewGQ.content.value=="")
+	{
+		alert("请输入留言内容！");
+		document.ReviewGQ.content.focus();
+		return false;
+	}
+}
+</script>
+<div class="center">
+  <div class="leftimg">
+<SCRIPT src="js/swfobject_source.js" type=text/javascript></SCRIPT>
+<DIV id=dplayer2 style="WIDTH: 668px;HEIGHT: 267px;"></DIV>
+<SCRIPT language=javascript type=text/javascript>
+
+var titles = '初二年级大合唱|初二年级大合唱|初二年级大合唱|初二年级大合唱';
+var imgs='/uploadfile/2018539542273499.jpg|/uploadfile/2018539544373499.jpg|/uploadfile/201853955473499.jpg|/uploadfile/2018539552073499.jpg';
+var urls='无|#|#|http://www.gov.cn/gzdt/2013-03/28/content_2364477.htm';
+var pw = 668;
+var ph = 267;
+var sizes = 14;
+var Times = 4000;
+var umcolor = 0xFFFFFF;
+var btnbg =0xFF7E00;
+var txtcolor =0xFFFFFF;
+var txtoutcolor = 0x000000;
+var flash = new SWFObject('flash/focus1.swf', 'mymovie', pw, ph, '7', '');
+flash.addParam('allowFullScreen', 'true');
+flash.addParam('allowScriptAccess', 'always');
+flash.addParam('quality', 'high');
+flash.addParam('wmode', 'Transparent');
+flash.addVariable('pw', pw);
+flash.addVariable('ph', ph);
+flash.addVariable('sizes', sizes);
+flash.addVariable('umcolor', umcolor);
+flash.addVariable('btnbg', btnbg);
+flash.addVariable('txtcolor', txtcolor);
+flash.addVariable('txtoutcolor', txtoutcolor);
+flash.addVariable('urls', urls);
+flash.addVariable('Times', Times);
+flash.addVariable('titles', titles);
+flash.addVariable('imgs', imgs);
+flash.write('dplayer2');
+</SCRIPT>
+  </div>
+ 
+  <div class="szhxy"><a href="http://122.139.62.219:8000" target="_blank"><img src="images/index_04.jpg" width="280" height="60" align="absmiddle" border="0" /></a></div>
+  <div class="tz">
+    <div class="title"><img class="imgstyle" src="images/index_23.jpg" width="16" height="16" align="absmiddle" />
+      <h1>通知</h1>
+      <span><a href="newslist.asp?zlid=56">更多>></a></span></div>
+    <div class="contert">
+      <ul>
+	   
+        <li><a href="newsshow.asp?zlid=56&id=1778" target="_blank" title="通    告">通    告</a><span>5-20</span></li>
+       
+        <li><a href="newsshow.asp?zlid=56&id=1773" target="_blank" title="通  告">通  告</a><span>5-2</span></li>
+       
+        <li><a href="newsshow.asp?zlid=56&id=1569" target="_blank" title="东北师大附中明珠校区学校微信公号开通啦">东北师大附中明珠校区学校微信公号</a><span>9-27</span></li>
+       
+        <li><a href="newsshow.asp?zlid=56&id=1568" target="_blank" title="东北师大附中关于强化正风肃纪确保国庆中秋廉洁过节的通知">东北师大附中关于强化正风肃纪确保</a><span>9-25</span></li>
+       
+        <li><a href="newsshow.asp?zlid=56&id=1555" target="_blank" title="东北师大附中明珠校区班车线路表">东北师大附中明珠校区班车线路表</a><span>8-25</span></li>
+       
+        <li><a href="newsshow.asp?zlid=56&id=1549" target="_blank" title="8月15日新初一报到安排">8月15日新初一报到安排</a><span>8-14</span></li>
+      
+      </ul>
+    </div>
+  </div>
+  <div class="xykx">
+    <div class="title"><img class="imgstyle" src="images/index_26.jpg" width="16" height="16" align="absmiddle" />
+      <h1>校园快讯</h1>
+      <span><a href="newslist.asp?zlid=53">更多>></a></span></div>
+    <div class="ltbstyle">
+      <div class="textimg">
+	   
+	  <a href="newsshow.asp?zlid=53&id=1772" target="_blank" title="东北师大附中明珠校区“红领巾相约中国梦”少先队主题队日集中展示"><img src="/uploadfile/2018539584573499.jpg" width="254" height="190" border="0"></a>
+	  
+	  </div>
+      <div class="contert">
+        <ul>
+		 
+          <li><a href="newsshow.asp?zlid=53&id=1779" target="_blank" title="播种爱&#8226;积聚爱&#8226;传递爱——明珠校区“爱心义卖&#8226;情暖校园”义卖活动侧记" >播种爱&#8226;积聚爱&#8226;传递</a><span>5-21</span></li>
+         
+          <li><a href="newsshow.asp?zlid=53&id=1775" target="_blank" title="同心山成玉  厚积斩殊荣——第七届全国初中语文教师教学基本功展评暨教学观摩研讨会纪要" >同心山成玉  厚积斩殊荣——第七届全国初中语</a><span>5-16</span></li>
+         
+          <li><a href="newsshow.asp?zlid=53&id=1774" target="_blank" title="浓浓母校情 殷殷学子心——1991届师大附中初中部校友为母校捐赠云杉树" >浓浓母校情 殷殷学子心——1991届师大附中</a><span>5-4</span></li>
+         
+          <li><a href="newsshow.asp?zlid=53&id=1772" target="_blank" title="东北师大附中明珠校区“红领巾相约中国梦”少先队主题队日集中展示" >东北师大附中明珠校区“红领巾相约中国梦”少先</a><span>5-2</span></li>
+         
+          <li><a href="newsshow.asp?zlid=53&id=1771" target="_blank" title="不败之师，轻松卫冕——东北师大附中明珠校区篮球队实现“体彩杯”三连冠" >不败之师，轻松卫冕——东北师大附中明珠校区篮</a><span>4-27</span></li>
+         
+          <li><a href="newsshow.asp?zlid=53&id=1768" target="_blank" title="灼灼花正开   飏飏燕新乳——语文学科文化节暨校园读书节“作家进校园”活动简报" >灼灼花正开   飏飏燕新乳——语文学科文化节</a><span>4-19</span></li>
+         
+          <li><a href="newsshow.asp?zlid=53&id=1767" target="_blank" title="邂逅春光，遇见美——语文学科文化节暨校园读书节之“在银幕中成长”活动简报" >邂逅春光，遇见美——语文学科文化节暨校园读书</a><span>4-18</span></li>
+         
+          <li><a href="newsshow.asp?zlid=53&id=1766" target="_blank" title="一纸墨痕探芳华——语文学科文化节之“清风雅怀”初二学生书法展活动纪要" >一纸墨痕探芳华——语文学科文化节之“清风雅怀</a><span>4-18</span></li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="gqxjh">
+    <div class="title"><img class="imgstyle" src="images/index_24.jpg" width="16" height="16" align="absmiddle" />
+      <h1>核心价值观活动展</h1>
+      <span><a href="newslist.asp?zlid=51">更多>></a></span></div>
+    <div class="contert">
+    	<div class="textline">
+		 
+		<a href="newsshow.asp?zlid=51&id=1420" target="_blank" title="2016“爱心志愿者行动”主题教育活动-班级活动展1"><img src="/uploadfile/20163309102973499.png" width="120" height="90" align="left" border="0" /><h1>2016“爱心志愿者</h1><p>牵手希望 分享书香——东北师大附中明珠校区2015级5班与龙子心希<span>[详细]</span></p></a>
+		
+        </div>
+		<form name="ReviewGQ" id="ReviewGQ" action="gdly.asp?act=add&newsid=1420" method="post" onSubmit="return CheckReviewGQ();">
+        <div class="formtext">
+            <textarea name="content" id="content"  rows="3"  class="wbystyle" onClick="this.value=''">我来说两句</textarea>
+        </div>
+        <div class="rightbtn">
+        	<p><a href="gdly.asp">+更多留言</a></p>
+            <input name="gdly" type="image" src="images/index_07.jpg" align="absmiddle" />
+        </div>
+        </form>
+    </div>
+  </div>
+  <div class="imgbhj" id="divspacerank">
+    <div class="title"><img class="imgstyle" src="images/index_25.jpg" width="16" height="16" align="absmiddle" />
+      <h1><a href="picztlist.asp?zlid=57&dlid=163">校园图片快讯</a></h1>
+      <div>
+      	<ul class="tabs" id="tabs2">
+        	<li><a href="picztlist.asp?zlid=57&dlid=164">校园掠影</a></li>
+       	    <li><a href="picztlist.asp?zlid=57&dlid=165">教学设施</a></li>
+       	    <li><a href="picztlist.asp?zlid=57&dlid=166">学生风采</a></li>
+        	<li><a href="picztlist.asp?zlid=57&dlid=167">教学活动</a></li>
+        </ul>
+      </div>
+	</div>
+    <div class="content1">
+        <ul class="tab_conbox" id="tab_conbox2">
+            <li class="tab_con"><DIV id="demo" style="overflow:hidden;"><table border="0" cellpadding="0" cellspacing="0"><tr><td id="demo1"><table border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+  
+    <td align="center"><a href="newsshow.asp?zlid=57&id=1271" target="_blank" title="新学期全校教职工开学大会"><img src="/uploadfile/20183239193573499.jpg" width="160" height="120" border="0" /></a><div style="height:6px"></div><a href="newsshow.asp?zlid=57&id=1271" target="_blank" title="新学期全校教职工开学大会">新学期全校教职工开学大会</a></td>
+  
+    <td align="center"><a href="newsshow.asp?zlid=57&id=1270" target="_blank" title="金育辉副省长我校视察食品安全"><img src="/uploadfile/20183239204573499.jpg" width="160" height="120" border="0" /></a><div style="height:6px"></div><a href="newsshow.asp?zlid=57&id=1270" target="_blank" title="金育辉副省长我校视察食品安全">金育辉副省长我校视察食品安全</a></td>
+  
+    <td align="center"><a href="newsshow.asp?zlid=57&id=1269" target="_blank" title="初一年级开学典礼"><img src="/uploadfile/20183239214173499.jpg" width="160" height="120" border="0" /></a><div style="height:6px"></div><a href="newsshow.asp?zlid=57&id=1269" target="_blank" title="初一年级开学典礼">初一年级开学典礼</a></td>
+  
+    <td align="center"><a href="newsshow.asp?zlid=57&id=1268" target="_blank" title="初二年级开学典礼"><img src="/uploadfile/20183239222673499.jpg" width="160" height="120" border="0" /></a><div style="height:6px"></div><a href="newsshow.asp?zlid=57&id=1268" target="_blank" title="初二年级开学典礼">初二年级开学典礼</a></td>
+  
+    <td align="center"><a href="newsshow.asp?zlid=57&id=1267" target="_blank" title="初三年级中考百日誓师大会"><img src="/uploadfile/20183239231173499.jpg" width="160" height="120" border="0" /></a><div style="height:6px"></div><a href="newsshow.asp?zlid=57&id=1267" target="_blank" title="初三年级中考百日誓师大会">初三年级中考百日誓师大会</a></td>
+  
+    <td align="center"><a href="newsshow.asp?zlid=57&id=1266" target="_blank" title="刘丽君校长等为获奖学生颁奖"><img src="/uploadfile/2018323924173499.jpg" width="160" height="120" border="0" /></a><div style="height:6px"></div><a href="newsshow.asp?zlid=57&id=1266" target="_blank" title="刘丽君校长等为获奖学生颁奖">刘丽君校长等为获奖学生颁奖</a></td>
+  
+  </tr>
+            </table></td><td id="demo2"></td></tr></table></DIV></li>
+        </ul>
+    </div>
+  </div>
+<SCRIPT>
+  var speed1=25//速度数值越大速度越慢
+  document.getElementById("demo2").innerHTML=document.getElementById("demo1").innerHTML
+  function Marquee1(){
+  if(document.getElementById("demo2").offsetWidth-document.getElementById("demo").scrollLeft<=0)
+  document.getElementById("demo").scrollLeft-=document.getElementById("demo1").offsetWidth
+  else{
+  document.getElementById("demo").scrollLeft++
+  }
+  }
+  var MyMar1=setInterval(Marquee1,speed1)
+  document.getElementById("demo").onmouseover=function () {clearInterval(MyMar1)}
+  document.getElementById("demo").onmouseout=function () {MyMar1=setInterval(Marquee1,speed1)}
+</SCRIPT>  
+  <div class="dwzc">
+    <div class="title"><img class="imgstyle" src="images/index_33.jpg" width="16" height="16" align="absmiddle" />
+      <h1>党务之窗</h1>
+    <span><a href="newslist.asp?zlid=48">更多>></a></span></div>
+    <div class="content">
+    	<div class="textzuoyou">
+		 
+       	  <a href="newsshow.asp?zlid=48&id=1770" target="_blank" title="十年树木践行绿色发展理念 百年树人弘扬附中师德风尚——记中共东北师大附中党委党员主题活动日公益植树活动"><img src="/uploadfile/20184271265373499.jpg" width="106" height="80" align="left" border="0" /><h2>十年树木践行绿色发展理念 </h2><p>
+
+
+ 植树造林功在当代，利在千秋。习近平总书记曾指出要“像保护眼睛一样保...</p></a>
+		
+      </div>
+      	<div class="list">
+        	<ul>
+			 
+                <li><a href="newsshow.asp?zlid=48&id=1763" target="_blank" title="2016-2017学年度下学期党委工作计划">2016-2017学年度下学期党委工</a><span>4-12</span></li>
+             
+                <li><a href="newsshow.asp?zlid=48&id=1591" target="_blank" title="学校召开新学期党员大会">学校召开新学期党员大会</a><span>10-9</span></li>
+             
+                <li><a href="newsshow.asp?zlid=48&id=1590" target="_blank" title="弘扬传统 砥砺奋进——东师附中党委庆祝建党96周年暨评优表彰大会胜利召开">弘扬传统 砥砺奋进——东师附中党委庆</a><span>10-9</span></li>
+             
+                <li><a href="newsshow.asp?zlid=48&id=1589" target="_blank" title="东北师大附中党委组织全校党员集体学习">东北师大附中党委组织全校党员集体学习</a><span>10-9</span></li>
+            
+            </ul>
+        </div>
+    </div>
+  </div>
+  
+  <div class="dwzc">
+    <div class="title"><img class="imgstyle" src="images/index_33.jpg" width="16" height="16" align="absmiddle" />
+      <h1>学校德育</h1>
+    <span><a href="newslist.asp?zlid=41&dlid=121">更多>></a></span></div>
+    <div class="content">
+    	<div class="textzuoyou">
+       	 
+       	  <a href="newsshow.asp?zlid=41&id=1776" target="_blank" title="收获家庭教育法宝，攻克习惯养成难关——记我校初一年级专场家长课堂"><img src="/uploadfile/201851614112573499.jpg" width="106" height="80" align="left" border="0" /><h2>收获家庭教育法宝，攻克习惯</h2><p>5月16日下午，我校于小礼堂召开初一年级专场家长课堂讲座，共计近300名家长前来...</p></a>
+		
+        </div>
+      	<div class="list">
+        	<ul>
+             
+                <li><a href="newsshow.asp?zlid=41&id=1769" target="_blank" title="助力成长花开，共育阳光英才——记我校初二年级专场家长课堂讲座">助力成长花开，共育阳光英才——记我校</a><span>4-20</span></li>
+             
+                <li><a href="newsshow.asp?zlid=41&id=1765" target="_blank" title="安全教育常抓不懈，安全技能牢记心间——东北师大附中明珠校区开展第23个“全国中小学安全教育日”系列活动">安全教育常抓不懈，安全技能牢记心间—</a><span>4-13</span></li>
+             
+                <li><a href="newsshow.asp?zlid=41&id=1758" target="_blank" title="领悟亲情·圆梦芳华 ——东北师大附中明珠校区第三届校级主题班会观摩活动侧记">领悟亲情·圆梦芳华 ——东北师大附中</a><span>4-4</span></li>
+             
+                <li><a href="newsshow.asp?zlid=41&id=1753" target="_blank" title="百德孝为首，百善孝当先——记我校首次“大德育，小先生”之“孝道”主题学生德育论坛活动">百德孝为首，百善孝当先——记我校首次</a><span>3-29</span></li>
+            
+            </ul>
+        </div>
+    </div>
+  </div>
+  
+  <div class="xnzt">
+    <div class="title"><img class="imgstyle" src="images/index_29.jpg" width="16" height="16" align="absmiddle" />
+      <h1>校内专题</h1>
+      <span><a href="newslist.asp?zlid=58">更多>></a></span></div>
+    <div class="contert">
+      <ul>
+	   
+        <li><a href="newsshow.asp?zlid=58&id=822" target="_blank" title="名师工作室专题网站">名师工作室专题网站</a></li>
+       
+        <li><a href="newsshow.asp?zlid=58&id=821" target="_blank" title="王江春老师名师工作室揭牌启动 纪实">王江春老师名师工作室揭牌启动 纪实</a></li>
+       
+        <li><a href="newsshow.asp?zlid=58&id=819" target="_blank" title="祝贺我校王上宁同学获“21世纪杯”演讲比赛一等奖">祝贺我校王上宁同学获“21世纪杯”演</a></li>
+       
+        <li><a href="newsshow.asp?zlid=58&id=656" target="_blank" title="教师新秀展风采 听课评课共提高">教师新秀展风采 听课评课共提高</a></li>
+       
+        <li><a href="newsshow.asp?zlid=58&id=655" target="_blank" title="坚持校本研修 实现自我超越">坚持校本研修 实现自我超越</a></li>
+       
+        <li><a href="newsshow.asp?zlid=58&id=654" target="_blank" title="东北师大附中明珠学校初一年级举行隆重的军训开营仪式">东北师大附中明珠学校初一年级举行隆重</a></li>
+       
+        <li><a href="newsshow.asp?zlid=58&id=644" target="_blank" title="喜报--吉林省国防科技体育竞赛">喜报--吉林省国防科技体育竞赛</a></li>
+       
+        <li><a href="newsshow.asp?zlid=58&id=643" target="_blank" title="学校举行第七次青年教师专业成长报告会">学校举行第七次青年教师专业成长报告会</a></li>
+      
+      </ul>
+    </div>
+  </div>
+
+  <div class="dwzc">
+    <div class="title"><img class="imgstyle" src="images/index_33.jpg" width="16" height="16" align="absmiddle" />
+      <h1>教学管理</h1>
+    <span><a href="newslist.asp?zlid=40">更多>></a></span></div>
+    <div class="content">
+    	<div class="textzuoyou">
+       	 
+       	  <a href="newsshow.asp?zlid=40&id=1764" target="_blank" title="基于学科核心素养的化学课堂教学"><img src="/uploadfile/20184131333473499.jpg" width="106" height="80" align="left" border="0" /><h2>基于学科核心素养的化学课堂</h2><p>基于学科核心素养的化学课堂教学
+——记初中部化学学科专题培训
+
+ 为提升我...</p></a>
+		
+        </div>
+      	<div class="list">
+        	<ul>
+             
+                <li><a href="newsshow.asp?zlid=40&id=1759" target="_blank" title="科学管理促进常规教学 严密组织注重命题质量">科学管理促进常规教学 严密组织注重命</a><span>4-8</span></li>
+             
+                <li><a href="newsshow.asp?zlid=40&id=1750" target="_blank" title="用课程建设引领学校内涵发展">用课程建设引领学校内涵发展</a><span>3-27</span></li>
+             
+                <li><a href="newsshow.asp?zlid=40&id=1749" target="_blank" title="规范管理促发展 检查评比共进步">规范管理促发展 检查评比共进步</a><span>3-27</span></li>
+             
+                <li><a href="newsshow.asp?zlid=40&id=1748" target="_blank" title="科学规划重细节 凝心聚力促发展">科学规划重细节 凝心聚力促发展</a><span>3-27</span></li>
+            
+            </ul>
+        </div>
+    </div>
+  </div>
+  
+  <div class="dwzc">
+    <div class="title"><img class="imgstyle" src="images/index_33.jpg" width="16" height="16" align="absmiddle" />
+      <h1>教育科研</h1>
+    <span><a href="newslist.asp?zlid=42">更多>></a></span></div>
+    <div class="content">
+    	<div class="textzuoyou">
+       	 
+       	  <a href="newsshow.asp?zlid=42&id=1780" target="_blank" title="引进国内外优质教育资源  促进国际间教育教学交流"><img src="/uploadfile/20185248345773499.jpg" width="106" height="80" align="left" border="0" /><h2>引进国内外优质教育资源  </h2><p>
+引进国内外优质教育资源促进国际间教育教学交流
+——第五届东西方教育互惠学习...</p></a>
+		
+        </div>
+      	<div class="list">
+        	<ul>
+             
+                <li><a href="newsshow.asp?zlid=42&id=1757" target="_blank" title="锤炼教师基本功 打造教学实践力——师大附中明珠校区新教师汇报课纪实">锤炼教师基本功 打造教学实践力——师</a><span>4-4</span></li>
+             
+                <li><a href="newsshow.asp?zlid=42&id=1756" target="_blank" title="VR技术彰显教学魅力 科技成就优质教育">VR技术彰显教学魅力 科技成就优质教</a><span>3-29</span></li>
+             
+                <li><a href="newsshow.asp?zlid=42&id=1755" target="_blank" title="新学期学科主任工作研讨会纪实">新学期学科主任工作研讨会纪实</a><span>3-29</span></li>
+             
+                <li><a href="newsshow.asp?zlid=42&id=1754" target="_blank" title="传承文化 启迪智慧 引领人生——青年教师入职之初岗位培训讲座">传承文化 启迪智慧 引领人生——青年</a><span>3-29</span></li>
+            
+            </ul>
+        </div>
+    </div>
+  </div>
+  
+  <div class="bktj">
+    <div class="title"><img class="imgstyle" src="images/index_29.jpg" width="16" height="16" align="absmiddle" />
+      <h1>行政后勤</h1>
+      <span><a href="newslist.asp?zlid=59">更多>></a></span></div>
+    <div class="contert">
+	  <div class="textzuoyou1">
+		 
+       	  <a href="newsshow.asp?zlid=59&id=1570" target="_blank" title="宣传凝练力量    责任成就品质————明珠校区宣传工作会议纪实"><img src="/uploadfile/20179279104473499.jpg" width="106" height="80" align="left" border="0" /><h2>宣传凝练力量    </h2><p> 为规范和强化学校内外新闻宣传报道工作，及时、准确、全面宣...</p></a>
+		
+      </div>
+	  <div class="list1">
+      <ul>
+	   
+        <li style="background:url(images/index_05.jpg) no-repeat 0 8px;"><a href="newsshow.asp?zlid=59&id=1761" target="_blank" title="我校举行全校信息员培训会">我校举行全校信息员培训会</a></li>
+       
+        <li style="background:url(images/index_05.jpg) no-repeat 0 8px;"><a href="newsshow.asp?zlid=59&id=1600" target="_blank" title="安全重于泰山  稳定压倒一切——学校召开迎接十九大安全稳定工作会议">安全重于泰山  稳定压倒一切——学校</a></li>
+       
+        <li style="background:url(images/index_05.jpg) no-repeat 0 8px;"><a href="newsshow.asp?zlid=59&id=1237" target="_blank" title="东北师大附中召开新任职领导干部就职大会">东北师大附中召开新任职领导干部就职大</a></li>
+       
+        <li style="background:url(images/index_05.jpg) no-repeat 0 8px;"><a href="newsshow.asp?zlid=59&id=1085" target="_blank" title="学校举行全校教职员工大会">学校举行全校教职员工大会</a></li>
+      
+      </ul>
+	  </div>
+    </div>
+  </div>
+
+<div class="links">
+    <div class="title"><img class="imgstyle" src="images/index_25.jpg" width="16" height="16" align="absmiddle" />
+      <h1>友情链接</h1>
+   </div>
+    <div class="content1">
+      <ul>
+	  
+        <li><a href="http://www.jyb.cn/" target="_blank" title="中国教育新闻网"><img src="/uploadfile/2012103114352573499.gif" width="153" height="57" border="0" /></a></li>
+      
+        <li><a href="http://www.zxxk.com/" target="_blank" title="学科网"><img src="/uploadfile/2012103114332273499.gif" width="153" height="57" border="0" /></a></li>
+      
+        <li><a href="http://www.eee.cn" target="_blank" title="三易数字校园"><img src="/uploadfile/2012103114314773499.png" width="153" height="57" border="0" /></a></li>
+      
+        <li><a href="http://www.msannu.cn" target="_blank" title="中考资源网"><img src="/uploadfile/2012103114205873499.jpg" width="153" height="57" border="0" /></a></li>
+      
+        <li><a href="http://www.thenews.cn/" target="_blank" title="华科网"><img src="/uploadfile/201311182773499.jpg" width="153" height="57" border="0" /></a></li>
+      
+        <li><a href="http://www.nenu.edu.cn" target="_blank" title="东北师范大学"><img src="/uploadfile/2012103114181573499.jpg" width="153" height="57" border="0" /></a></li>
+      
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+<div class="footleft"></div>
+    <div class="footright">高中部：自由校区（吉林长春市自由大路506号 电话：0431-85608927）青华校区（吉林长春市清华路818号 电话：0431-85677272）<br />
+      初中部：明珠校区（吉林省长春市人民大街9000号 电话：0431-85375369）<br>初中部、小学部：净月校区（吉林省长春市净月经济开发区博学路377号 电话：0431-86173008）<br />
+  技术支持：<a href="http://www.huihai.net.cn" target="_blank">吉林省慧海科技信息有限公司</a>    <a href='http://www.miitbeian.gov.cn' target='_blank'>吉ICP备10002462号</a></div>
+</div>
+</body>
+</html>

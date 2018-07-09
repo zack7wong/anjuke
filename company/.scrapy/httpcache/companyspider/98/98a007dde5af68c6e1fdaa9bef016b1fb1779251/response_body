@@ -1,0 +1,617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>宁波教育学院欢迎你</title>
+<link rel="stylesheet" type="text/css" href="./images/global_v1.0.0.css" />
+<link rel="stylesheet" type="text/css" href="./images/index.css" />
+<style>
+	.z{ width: 1000px; height:77px; background-color: #FFF; margin: 0 auto;}
+	.z_li1{ position:relative;}
+	.z_pic1{ display:none; position: absolute; left: 0; bottom: 77px;}
+	.z_li1:hover .z_pic1{ display:block;}
+</style>
+</head>
+
+<body class="warp">
+<!-- 飘浮图片 -->
+<div id=img1 style="Z-INDEX:100; LEFT:2px; WIDTH:59px; POSITION:absolute; TOP:43px; HEIGHT:61px; visibility: visible;">
+
+</div>
+
+
+<script language="javascript">
+var xPos = 300;
+var yPos = 200; 
+var step = 1;
+var delay = 30; 
+var height = 0;
+var Hoffset = 0;
+var Woffset = 0;
+var yon = 0;
+var xon = 0;
+var pause = true;
+var interval;
+img1.style.top = yPos;
+function changePos() 
+{
+width = document.body.clientWidth;
+height = document.body.clientHeight;
+Hoffset = img1.offsetHeight;
+Woffset = img1.offsetWidth;
+img1.style.left = xPos + document.body.scrollLeft;
+img1.style.top = yPos + document.body.scrollTop;
+if (yon) 
+   {yPos = yPos + step;}
+else 
+   {yPos = yPos - step;}
+if (yPos < 0) 
+   {yon = 1;yPos = 0;}
+if (yPos >= (height - Hoffset)) 
+   {yon = 0;yPos = (height - Hoffset);}
+if (xon) 
+   {xPos = xPos + step;}
+else 
+   {xPos = xPos - step;}
+if (xPos < 0) 
+   {xon = 1;xPos = 0;}
+if (xPos >= (width - Woffset)) 
+   {xon = 0;xPos = (width - Woffset);   }
+}
+
+function start()
+{
+img1.visibility = "visible";
+   interval = setInterval('changePos()', delay);
+}
+function pause_resume() 
+{
+   if(pause) 
+   {
+    clearInterval(interval);
+    pause = false;}
+   else 
+   {
+    interval = setInterval('changePos()',delay);
+    pause = true; 
+    }
+   }
+img1.onmouseover=function(){clearInterval(interval);} 
+img1.onmouseout=function(){interval=setInterval("changePos()", delay);}
+start();
+</script> 
+<!-- 飘浮图片 -->
+
+<div class="w g-bg">
+<script type="text/javascript">
+
+function change(id){
+
+	for (var i=1;i<=2;i++){
+	
+		if(i==id){
+		//alert(id+'data'+flog);
+		document.getElementById("qh"+id).className='on';
+		
+		document.getElementById('qhmore'+id).style.display='block';
+		document.getElementById('qhlist'+id).style.display='block';
+		}else{
+		
+		document.getElementById('qh'+i).className='aaaa';
+		document.getElementById('qhmore'+i).style.display='none';
+		document.getElementById('qhlist'+i).style.display='none';
+		}
+		//alert(id+'data'+flog);
+	}
+}
+function yc(id){
+document.getElementById("zlm"+id).style.display='none';
+}
+function showzlm(id){
+
+	for (var i=1;i<=9;i++){
+	
+		if(i==id){
+		//alert(id+'data'+flog);
+		document.getElementById("lm"+id).className='on';
+		
+		document.getElementById('zlm'+id).style.display='block';
+		} else if(0==id){
+		//alert(id+'data'+flog);
+		document.getElementById("lm"+id).className='on';
+		
+		document.getElementById('lm'+i).className='';
+		document.getElementById('zlm'+i).style.display='none';
+		
+		}else if(4==id){
+		//alert(id+'data'+flog);
+		document.getElementById("lm"+id).className='on';
+		
+		document.getElementById('lm'+i).className='';
+		document.getElementById('zlm'+i).style.display='none';
+		
+		}else if(8==id){
+		//alert(id+'data'+flog);
+		document.getElementById("lm"+id).className='on';
+		
+		document.getElementById('lm'+i).className='';
+		document.getElementById('zlm'+i).style.display='none';
+		
+		}else{
+		
+		document.getElementById('lm'+i).className='';
+		document.getElementById('zlm'+i).style.display='none';
+		}
+	
+		//alert(id+'data'+flog);
+	}
+document.getElementById('zlm4').style.display='none';
+
+		
+//document.getElementById('zlm8').style.display='none';
+
+}
+</script>
+<style>
+.w2 {
+	width:1000px;
+	background:#FFF;
+	margin:0 auto;
+}
+.m-pf{ position:relative; width:100px; background:#FFFFFF; padding:10px 0; text-align:center; top:0; z-index:99;}
+.m-pf li a {
+  color:#000;
+  font-size:14px;
+}
+.u-ipt{color:#000;}
+</style>
+
+  <div class="u-top">
+     <div class="u-topbg"></div>
+     <div class="u-logo"></div>
+
+
+<form name="searchform" action="http://www.nbei.net/was5/web/search" method="post" target="_blank" onsubmit="return checkInput();">
+                        <input type="hidden" name="channelid" value="230793" />
+     
+   <div class="u-sh"><input type="text" class="u-ipt" id="word" name="searchword" /></div>
+<a class="u-btn" href="javascript:void();" onclick="onsub()"></a>
+     </form>
+	   <script> 
+function onsub() {
+var blog=checkInput() ;
+if(blog){
+document.searchform.submit();
+}
+}
+function checkInput() {	
+	var SQL,pword,kong;
+	var sqlword = new Array();
+	    SQL=pword=kong=" ";		
+	    pword=document.searchform.word.value;
+		pword = pword.replace(/^\s*/g,"");
+		pword = pword.replace(/\s*$/g,"");
+		pword = pword.replace(/\s+/g," "); 	
+	pword = pword.replace(/\'/g, "\\'");
+                pword = pword.split( kong );			
+                sqlword[0] = pword[0];
+	        SQL = sqlword[0];
+	for(var j=1;j<pword.length;j++)
+	    {
+	    sqlword[j] = " or "  + pword[j];
+		SQL += sqlword[j];
+		
+		}
+	document.searchform.searchword.value=SQL;	
+	if(SQL=="")
+	{
+		alert("检索词不能为空!");
+		return false;
+	}
+	//alert(document.FieldSearchForm.searchword.value);
+	return true;
+}
+ 
+</script>
+
+        
+     <a href="#" class="u-study"></a>
+     <a href="#" class="u-teacher"></a>  
+	 <a href="../../jyky/kyjfgk/" class="u-funds"></a>
+  
+  </div>
+  
+  <div class="g-lk">
+       <div class="g-lkbg"></div>
+       <ul class="g-lkcnt">          <li class="on" onmouseover="showzlm('0');" id="lm0"><a href="/">首页</a></li>
+          <li onmouseover="showzlm('1');" id="lm1" onmouseout="yc('1');" ><a href="../../xqzl/" >校情总览</a>
+<ul class="m-pf " style="display:none;" id="zlm1">
+  
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="../../xqzl/xxjj/" target="_blank">学校简介</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="../../xqzl/xrld/" target="_blank">现任领导</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="../../xqzl/jgsz/" target="_blank">机构设置</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="../../xqzl/xsg/" target="_blank">学校简史</a></li>
+	    
+
+     
+  </ul>
+
+</li>
+          <li onmouseover="showzlm('2');" id="lm2" onmouseout="yc('2');" ><a href="../../sxgx/">师训干训</a>
+ <ul class="m-pf " style="display:none;width:120px" id="zlm2">
+	
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;width:120px"><a href="../../sxgx/pxjg/" target="_blank">培训机构</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;width:120px"><a href="../../sxgx/pxts/" target="_blank">培训特色</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;width:120px"><a href="http://www.nbjy.net/main/Default.aspx" target="_blank">宁波市教师教育网</a></li>
+	    
+
+  </ul>
+
+</li>
+          <li onmouseover="showzlm('3');" id="lm3" onmouseout="yc('3');" ><a href="../../gzjy/">高职教育</a>
+ <ul class="m-pf " style="display:none;" id="zlm3">
+	
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="http://www.nbei.net/gzjy/#1" target="_blank">学前教育学院</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="http://www.nbei.net/gzjy/#2" target="_blank">高职教育学院</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="http://www.nbei.net/gzjy/#3" target="_blank">公共教学部</a></li>
+	    
+ 
+  </ul>
+
+</li>
+          <li onmouseover="showzlm('4');" id="lm4" onmouseout="yc('4');" ><a target="_blank" href="http://www.nbei.net/cjweb/index.html">成人教育</a>
+ <ul class="m-pf " style="display:none;" id="zlm4">
+	 
+
+  </ul>
+
+</li>
+          <li onmouseover="showzlm('5');" id="lm5" onmouseout="yc('5');" ><a >招生就业</a>
+ <ul class="m-pf " style="display:none;" id="zlm5">
+	
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="http://zsw.nbei.net/" target="_blank">招生网</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="http://web.nbei.net/home/nbeijyw/index.asp" target="_blank">就业网</a></li>
+	    
+
+  </ul>
+
+</li>
+          <li onmouseover="showzlm('6');" onmouseout="yc('6');" id="lm6"><a href="../../shfw/">社会服务</a>
+ <ul class="m-pf " style="display:none;width:140px" id="zlm6">
+	
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;width:140px"><a href="http://pgy.nbedu.gov.cn/Home/Index" target="_blank">宁波教育评估院</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;width:140px"><a href="http://www.nbei.net/shfw" target="_blank">宁波骏腾出国留学中心</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;width:140px"><a href="http://www.nbei.net/shfw/" target="_blank">宁教培训学校</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;width:140px"><a href="http://www.nbei.net/shfw/" target="_blank">音像服务中心</a></li>
+	    
+
+  </ul>
+
+
+</li>
+          <li onmouseover="showzlm('7');" id="lm7" onmouseout="yc('7');" ><a href="../../jyky/">教育科研</a>
+<ul class="m-pf " style="display:none;" id="zlm7">
+	
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="../../jyky/yjzx/" target="_blank">研究机构</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="../../jyky/kyjfgk/" target="_blank">科研经费公开</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="http://lbjx.cbpt.cnki.net/WKA2/WebPublication/index.aspx?mid=lbjx" target="_blank">学报</a></li>
+	    
+
+  </ul>
+
+</li>
+          <li onmouseover="showzlm('8');"id="lm8" onmouseout="yc('8');" ><a href="../../xywh/">校园文化</a>
+<ul class="m-pf " style="display:none;width:140px" id="zlm8">
+	
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;width:140px"><a href="../../xywh/xssztsgc/" target="_blank">学生综合素质提升工程</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;width:140px"><a href="../../xywh/lj/" target="_blank">“学生双节”</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;width:140px"><a href="../../xywh/yyyp/" target="_blank">“一院一品”</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;width:140px"><a href="../../xywh/xnwsj/" target="_blank">校内外实践</a></li>
+	    
+
+  </ul>
+
+</li>
+          <li onmouseover="showzlm('9');" id="lm9" onmouseout="yc('9');" ><a href="../../xxfw/">信息服务</a>
+<ul class="m-pf " id="zlm9" style="display:none">
+	
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="../../xxfw/jyqy/" target="_blank">教育前沿</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="http://tsg.nbei.net/libweb/" target="_blank">图书馆</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="http://njyxb.cuepa.cn/index.php?release_id=63749" target="_blank">电子校报</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="../../xxfw/cydh/" target="_blank">常用电话</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="../../xxfw/xlyzx/" target="_blank">校历与作息</a></li>
+	   
+        <li  style="line-height:30px;background: #FFFFFF;color:#000;"><a href="../../xxfw/dzxb_133/" target="_blank">电子地图</a></li>
+	    
+
+  </ul>
+</li>
+       
+       </ul>
+  </div>  
+  <!--star 鼠标经过效果-->
+                                      <!--end 鼠标经过效果-->
+</div>	
+</div>
+<div class="w pt10">
+   <div class="mr10 g-l">
+      <div class="u-sld">
+	  <SCRIPT language=javascript>
+		 var focus_width = 315
+                        var focus_height = 244
+                        var text_height = 18
+                        var swf_height = focus_height + text_height
+	
+		var pics = '';
+		var links = '';
+		var texts = '';
+	
+		function ati(url, img, title)
+		{
+			if(pics != '')
+			{
+				pics = pics+"|"  ;
+				links =links+ "|"  ;
+				texts = texts+"|" ;
+			}
+	
+			pics = pics+escape(img) ;
+			links = links+escape(url);
+			texts = texts+title ;
+		}
+	</SCRIPT>
+    <SCRIPT language=javascript>
+                   
+
+				ati('./xxxw/201805/t20180529_14091.shtml', './xxxw/201805/W020180529333806589654.jpg', '学校开展“信息技术与课堂教学深度融...');
+		
+
+				ati('./xxxw/201805/t20180523_14070.shtml', './xxxw/201805/W020180523336421816944.jpg', '省市小学校长“课程领导力与综合实践...');
+		
+
+				ati('./xxxw/201805/t20180523_14069.shtml', './xxxw/201805/W020180523330292610969.jpg', '立足生活  追求实效');
+		
+
+				ati('./xxxw/201805/t20180516_14054.shtml', './xxxw/201805/W020180516317833018103.jpg', '视觉设计专业举行精微素描课程汇报展');
+		
+
+				ati('./xxxw/201805/t20180514_14050.shtml', './xxxw/201805/W020180514300029584669.jpg', '我校教师获省高校辅导员素质能力大赛...');
+		
+document.write('<embed src="./images/pixviewer.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" bgcolor="#DADADA" quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" />');
+	</SCRIPT>
+         
+        
+      </div>
+      
+   </div>
+   <div class="mr10 g-c">
+                  <div class="m-tt"> 
+                     <ul class="m-ttcnt">
+				  
+				  
+				  <li class="on"><a href='http://www.nbei.net/xxxw/' >学校新闻</a></li>
+                     </ul>
+                     <a href='http://www.nbei.net/xxxw/' class="u-more"></a>
+                  </div>
+                  <ul class="m-lst">
+				  
+
+  <li> <span style="float:right">05-29</span> <a href="./xxxw/201805/t20180529_14091.shtml" target="_blank" title="学校开展“信息技术与课堂教学深度融合”教学实录观摩及微讲座活动">学校开展“信息技术与课堂教学深...</a><img src="./images/new02.gif" />  </li>
+  
+
+  <li> <span style="float:right">05-28</span> <a href="./xxxw/201805/t20180528_14087.shtml" target="_blank" title="市档案局、人文与经贸学院共同走访文秘专业实习单位">市档案局、人文与经贸学院共同走...</a><img src="./images/new02.gif" />  </li>
+  
+
+  <li> <span style="float:right">05-23</span> <a href="./xxxw/201805/t20180523_14070.shtml" target="_blank" title="省市小学校长“课程领导力与综合实践活动课程建设”专题培训班回眸">省市小学校长“课程领导力与综合...</a><img src="./images/new02.gif" />  </li>
+  
+ 
+
+  <li> <span style="float:right">05-23</span> <a href="./xxxw/201805/t20180523_14069.shtml" target="_blank" title="立足生活  追求实效">立足生活  追求实效</a>  </li>
+  
+
+  <li> <span style="float:right">05-18</span> <a href="./xxxw/201805/t20180518_14056.shtml" target="_blank" title="高起点 新要求 新希望">高起点 新要求 新希望</a>  </li>
+  
+
+  <li> <span style="float:right">05-18</span> <a href="./xxxw/201805/t20180518_14055.shtml" target="_blank" title="扬帆可远航  耕耘可收获">扬帆可远航  耕耘可收获</a>  </li>
+  
+
+  <li> <span style="float:right">05-16</span> <a href="./xxxw/201805/t20180516_14054.shtml" target="_blank" title="视觉设计专业举行精微素描课程汇报展">视觉设计专业举行精微素描课程汇报展</a>  </li>
+  
+
+  <li> <span style="float:right">05-15</span> <a href="./xxxw/201805/t20180515_14053.shtml" target="_blank" title="聚焦核心素养  促进学校教育变革">聚焦核心素养  促进学校教育变革</a>  </li>
+  
+
+  </ul>
+   </div>
+   <div class="g-r">
+                 <div class="m-tt"> 
+                     <ul class="m-ttcnt">
+					   <li class="on" id="qh1"><a href='http://www.nbei.net/xxgg/' onmouseover="change('1')">学校公告</a></li>
+                      <li id="qh2"><a href='http://www.nbei.net/pxkd/' onmouseover="change('2')">培训快递</a></li>
+                     </ul>
+                     <a href='http://www.nbei.net/xxgg/'  class="u-more" id="qhmore1"></a>
+                     <a href='http://www.nbei.net/pxkd/'  class="u-more" id="qhmore2" style="display:none"></a>
+                  </div>
+				   <div class="g-rm" id="qhlist1">
+                      <ul class="m-lst2">
+                           
+
+  <li><span style="float:right;margin-right:5px">05-09</span><a href="./xxgg/201805/t20180509_14048.shtml" target="_blank" title="宁波教育学院面向社会招聘非事业编制人员的公告">宁波教育学院面向社会招聘非事业...</a>  </li>
+  
+
+  <li><span style="float:right;margin-right:5px">05-04</span><a href="./xxgg/201805/t20180504_14042.shtml" target="_blank" title="宁波教育学院公开招聘事业编制工作人员公告">宁波教育学院公开招聘事业编制工...</a>  </li>
+  
+
+  <li><span style="float:right;margin-right:5px">05-04</span><a href="./xxgg/201805/t20180504_14039.shtml" target="_blank" title="关于2019届本科生申报浙江师范大学学士学位的通知">关于2019届本科生申报浙江师范大...</a>  </li>
+  
+
+  <li><span style="float:right;margin-right:5px">04-23</span><a href="./xxgg/201804/t20180423_14022.shtml" target="_blank" title="关于开展浙江省高校毕业生职业发展情况与人才培养质量跟踪调查的公告">关于开展浙江省高校毕业生职业发...</a>  </li>
+  
+
+  <li><span style="float:right;margin-right:5px">03-30</span><a href="./xxgg/201803/t20180330_14008.shtml" target="_blank" title="宁波教育学院2018年上半年函授课表">宁波教育学院2018年上半年函授课表</a>  </li>
+  
+
+  <li><span style="float:right;margin-right:5px">11-29</span><a href="./xxgg/201711/t20171129_13873.shtml" target="_blank" title="宁波教育学院转发省教育考试院《关于做好2018年选拔高职高专毕业生进入本科学习工作的通知》">宁波教育学院转发省教育考试院《...</a>  </li>
+  
+
+  <li><span style="float:right;margin-right:5px">09-30</span><a href="./xxgg/201709/t20170930_13806.shtml" target="_blank" title="宁波教育学院2017年下半年函授课表">宁波教育学院2017年下半年函授课表</a>  </li>
+  
+                      </ul>
+                  </div>
+                  <div class="g-rm" id="qhlist2" style="display:none">
+                      <ul class="m-lst2">
+                           
+
+  <li><a href="./pxkd/201804/t20180423_14023.shtml" target="_blank" title="2018年4月培训班级一览表">2018年4月培训班级一览表</a>  </li>
+  
+
+  <li><a href="./pxkd/201711/t20171129_13874.shtml" target="_blank" title="2017年12月培训班级一览表">2017年12月培训班级一览表</a>  </li>
+  
+
+  <li><a href="./pxkd/201706/t20170601_11883.shtml" target="_blank" title="2017年6-7月培训班级一览表">2017年6-7月培训班级一览表</a>  </li>
+  
+
+  <li><a href="./pxkd/201705/t20170504_11842.shtml" target="_blank" title="2017年5月培训班级一览表">2017年5月培训班级一览表</a>  </li>
+  
+
+  <li><a href="./pxkd/201704/t20170405_11790.shtml" target="_blank" title="2017年4月培训班级一览表">2017年4月培训班级一览表</a>  </li>
+  
+
+  <li><a href="./pxkd/201703/t20170315_11766.shtml" target="_blank" title="2017年3月培训班级一览表">2017年3月培训班级一览表</a>  </li>
+  
+
+  <li><a href="./pxkd/201611/t20161128_11654.shtml" target="_blank" title="2016年12月培训班级一览表">2016年12月培训班级一览表</a>  </li>
+  
+                      </ul>
+
+                  </div>
+   </div>
+</div>
+
+<div class="z pt10">
+   <ul class="m-img">
+      <li><a href="http://oa.nbei.net/"><img src="./images/u-img1.gif" /></a></li>
+      <li><a href="mailto:njyxiaozhang@163.com "><img src="./images/u-img2.gif" /></a></li>
+      <li class="z_li1"><img class="z_pic1" src="./images/mmexport1474978557586.jpg" />
+<a href="http://weibo.com/nbjyxy"><img src="./images/u-img3.gif" /></a></li>
+      <li><a href='http://www.nbei.net/wlzy/'><img src="./images/u-img4.gif" /></a></li>
+      <li><a href='http://www.nbei.net/yqlj/'><img src="./images/u-img5.gif" /></a></li>
+   </ul>
+</div>
+
+<div class="w pt10">
+ <div class="m-chl">
+     <div class="m-chl-l"><a href="#"><img src="./images/u-ico4.gif" /></a></div>
+     <div class="m-chl-c">
+	 
+	 	<DIV  style="WIDTH:770px;HEIGHT: 80px;CLEAR: both; OVERFLOW: hidden;border:1px solid #D2D2D2; float:right;" id=demo>
+          <table width="770px" height="80"border="0" cellpadding="0" cellspacing="0" bgcolor="#effafe" style="BORDER: #d0ddfd 1px solid">
+            <tr>
+                 
+              <td width="770" id=demo1>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+				 
+<td width="7">&nbsp;</td>
+                 <td align="center" width="150">
+                   <a href='http://www.nbjy.net/main/Default.aspx' target="_blank"><img src='./kstd/201507/W020151020368848350130.jpg' width="148" height="80" /></a>
+                 </td><td width="7">&nbsp;</td>
+
+                
+<td width="7">&nbsp;</td>
+                 <td align="center" width="150">
+                   <a href='http://pgy.nbedu.gov.cn/Home/Index' target="_blank"><img src='./kstd/201507/W020151020368980781482.jpg' width="148" height="80" /></a>
+                 </td><td width="7">&nbsp;</td>
+
+                
+<td width="7">&nbsp;</td>
+                 <td align="center" width="150">
+                   <a href='http://jsjy.nbei.net/' target="_blank"><img src='./kstd/201507/W020151020369177607409.jpg' width="148" height="80" /></a>
+                 </td><td width="7">&nbsp;</td>
+
+                
+<td width="7">&nbsp;</td>
+                 <td align="center" width="150">
+                   <a href='http://xszx.nbei.net/' target="_blank"><img src='./kstd/201507/W020151020369307211159.jpg' width="148" height="80" /></a>
+                 </td><td width="7">&nbsp;</td>
+
+                
+<td width="7">&nbsp;</td>
+                 <td align="center" width="150">
+                   <a href='http://www.nbei.net/cjweb/index.html' target="_blank"><img src='./kstd/201507/W020151020369457630729.jpg' width="148" height="80" /></a>
+                 </td><td width="7">&nbsp;</td>
+
+                
+
+                  <!--<td align="center">
+                    <a href="./kstd/lyj/"><img class="pic" src="./images/11.jpg" /></a>
+                  </td> -->             
+                </tr>
+              </table>
+             </td>
+
+             <td id="demo2"></td>  
+               
+            </tr>
+          </table>
+              </div>
+			  
+<SCRIPT>
+	var speed=20;
+	var demo=document.getElementById("demo");
+          	
+           var demo1=document.getElementById("demo1");
+         var demo2=document.getElementById("demo2");
+	    demo2.innerHTML=demo1.innerHTML;     
+    	
+
+	var MyMar=setInterval(Marquee,speed);
+	demo.onmouseover=function() {clearInterval(MyMar);}
+	demo.onmouseout=function() {
+               MyMar=setInterval(Marquee,speed);
+         }
+
+	function Marquee(){
+		if(demo2.offsetWidth-demo.scrollLeft<=0){
+                        demo.scrollLeft-=demo1.offsetWidth;
+                     }
+		else {
+                        demo.scrollLeft++;
+                    }
+	}
+          </SCRIPT>
+       
+     </div>
+     <div class="m-chl-l"><a href="#"><img src="./images/u-ico5.gif" /></a></div>
+ </div>
+</div>
+
+<div class="w pt10">
+  <div class="foot">
+        版权所有：宁波教育学院 地址：宁波市环城北路西段625号 邮编：315016 联系电话：0574-87226433  <!-- <a href="http://old.nbei.net" target="_blank">【旧版入口】</a>
+        <a href="#" class="u-ewm"><img src="../../images/u-ico6.gif" /></a>-->
+  </div> 
+</div>
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/12/187/0000/41410680/CA121870000414106800001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

@@ -1,0 +1,1116 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>广西政法管理干部学院</title>
+<meta name="generator" content="" />
+<meta name="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="templates/default/style/webstyle.css" type="text/css" rel="stylesheet" />
+<link href="templates/default/style2/webstyle.css" type="text/css" rel="stylesheet" />
+<link rel="shortcut icon" href="favicon2.ico" />
+
+<!--wgf20160830 s-->
+<link type="text/css" href="templates/default/_css/_system/system.css" rel="stylesheet"/>
+<link href="templates/default/_css/tpl2/default/portlet/dtjt/9/dtjt9.css" type="text/css" rel="stylesheet">
+<link href="templates/default/_css/tpl2/system.css" type="text/css" rel="stylesheet"> 
+<link href="templates/default/_css/tpl2/default/default.css" type="text/css" rel="stylesheet"> 
+<link type="text/css" href="templates/default/_js/_portletPlugs/simpleNews/css/simplenews.css" rel="stylesheet" />
+<link type="text/css" href="templates/default/_js/_portletPlugs/datepicker/css/datepicker.css" rel="stylesheet" />
+<link type="text/css" href="templates/default/_js/_portletPlugs/sudyNavi/css/sudyNav.css" rel="stylesheet" />
+<!--wgf20160830 e-->
+
+
+<script type="text/javascript" src="templates/default/js/jquery.min.js"></script>
+<script type="text/javascript" src="templates/default/js/slideplay.js"></script>
+<script type="text/javascript" src="templates/default/js/srcollimg.js"></script>
+<script type="text/javascript" src="templates/default/js/loadimage.js"></script>
+<script type="text/javascript" src="templates/default/js/top.js"></script>
+<script type="text/javascript">
+$(function(){
+    $(".imgwrap li img").LoadImage({width:60,height:45});
+	$(".newsfocus div img").LoadImage({width:60,height:60});
+});
+</script>
+
+<!--wgf20160830 s-->
+<script language="javascript" src="templates/default/_js/jquery.min.js"></script>
+<script language="javascript" src="templates/default/_js/jquery.sudy.wp.visitcount.js"></script>
+<script type="text/javascript" src="templates/default/_js/_portletPlugs/datepicker/js/jquery.datepicker.js"></script>
+<script type="text/javascript" src="templates/default/_js/_portletPlugs/datepicker/js/datepicker_lang_HK.js"></script>
+<script type="text/javascript" src="templates/default/_js/_portletPlugs/sudyNavi/jquery.sudyNav.js"></script>
+<link rel="stylesheet" type="text/css" href="templates/default/_upload/tpl/00/4a/74/template74/css/foundation.css" />
+<link rel="stylesheet" type="text/css" href="templates/default/_upload/tpl/00/4a/74/template74/css/zoombox.css" />
+<link rel="shortcut icon" type="image/x-icon" href="templates/default/_upload/tpl/00/4a/74/template74/images/xiaoh.jpg"/>
+<link rel="stylesheet" href="templates/default/_upload/tpl/00/4a/74/template74/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="templates/default/_upload/tpl/00/4a/74/template74/extends/extends.css" type="text/css" media="all" />
+<script src="templates/default/_upload/tpl/00/4a/74/template74/extends/extends.js"></script>
+<script type="text/javascript">
+$(function(){
+	// 文章日历
+	$(".rili1").sudyPubdate({
+		target:"td:eq(0)",		// 日期元素
+		lang: "num",				//	月份语言，支持"en"英文，"cn"中文, "num"数字，默认为数字
+		separator:"-",			// 文章日期之间分隔符的，默认是后台输出的"-"号
+		format:"年月日",			// 文章日期格式，默认为年月日
+		tpl: '<div class="sudy-pubdate"><span class="pubdate-month">%d%</span><span class="pubdate-day">%Y%.%m%</span></div>'   // 自定义输出格式  %Y%代表年，%m%代表月, %d%代表日, %w%代表星期, %M%代表翻译后月份，%W%代表翻译后星期
+	});
+});
+</script>
+<script type="text/javascript">
+$(function(){
+	// 文章日历
+	$(".rili2").sudyPubdate({
+		target:"td:eq(0)",		// 日期元素
+		lang: "num",				//	月份语言，支持"en"英文，"cn"中文, "num"数字，默认为数字
+		separator:"-",			// 文章日期之间分隔符的，默认是后台输出的"-"号
+		format:"年月日",			// 文章日期格式，默认为年月日
+		tpl: '<div class="zdy-sj"><span>%m%.%d%&nbsp;|&nbsp;</span></div>'   // 自定义输出格式  %Y%代表年，%m%代表月, %d%代表日, %w%代表星期, %M%代表翻译后月份，%W%代表翻译后星期
+	});
+});
+</script>
+
+<script type="text/javascript">
+$(function(){
+	$(".sudy-tab").sudyTab({
+			handle:".tab-menu >li",		// 控制器元素，默认为.tab-menu li
+			content:".tab-list >li",		// 内容体，可以有多个并以英文逗号隔开，如.tab-list li,.tab-more li,默认值为".tab-list li,.tab-more li"
+			trigger:"mouseenter",		// 触发事件，默认为"mouseenter"鼠标经过
+			start:1,					// 开始项，默认为第一个
+			autoPlay:{
+				active:false,			// 是否激活自动切换
+				interval:5000,		// 自动切换时间间隔
+				pauseHover:true		// 是否鼠标放上面时停止自动
+			}
+	});
+
+});
+
+</script>
+<script type="text/javascript">
+(function($){
+	$(function(){
+$("#focus").sudyfocus({
+	p:100, // 窗口号或频道号
+    json: [], // 文章的json数据
+    title: {
+        active: true, // 是否显示标题
+        isAutoWidth: true, // 标题背景自动宽度
+        href: true // 标题是否加文章链接
+    },
+    text: {
+        active: false, // 是否显示文章简介
+        isAutoHeight: true, // 简介背景自动高度
+        href: false // 简介是否加文章链接
+    },
+    href: true, // 图片是否加链接
+    zWidth: 980, // 窗口宽度
+    zHeight: 360, // 窗口高度
+    response: true, // 是否自适应缩放
+    navigation: true, // 是否显示按钮，上一张、下一张
+    isNavHover: true, // 导航按钮是否默认隐藏，鼠标经过时再显示
+    pagination: true, // 是否显示按钮，1、2、3、4...
+    effect: 'slide', // slide(滑动),fade(淡入),show(即显)
+    speed: 400, // 切换速度
+    crossfade: true, // 是否交叉淡入淡出
+    start: 1, // 默认从第一个开始切换
+    autoPlay: true, // 是否自动播放
+    interval: 5000 // 自动播放时间间隔
+});
+});
+})(jQuery);
+</script> 
+
+<script type="text/javascript">
+(function($){
+	$(function(){
+$("#focus1").sudyfocus({
+	p:101, // 窗口号或频道号
+    json: [], // 文章的json数据
+    title: {
+        active: true, // 是否显示标题
+        isAutoWidth: false, // 标题背景自动宽度
+        href: true // 标题是否加文章链接
+    },
+    text: {
+        active: false, // 是否显示文章简介
+        isAutoHeight: true, // 简介背景自动高度
+        href: false // 简介是否加文章链接
+    },
+    href: true, // 图片是否加链接
+    zWidth: 239, // 窗口宽度
+    zHeight: 190, // 窗口高度
+    response: true, // 是否自适应缩放
+    navigation: true, // 是否显示按钮，上一张、下一张
+    isNavHover: true, // 导航按钮是否默认隐藏，鼠标经过时再显示
+    pagination: true, // 是否显示按钮，1、2、3、4...
+    effect: 'slide', // slide(滑动),fade(淡入),show(即显)
+    speed: 400, // 切换速度
+    crossfade: true, // 是否交叉淡入淡出
+    start: 1, // 默认从第一个开始切换
+    autoPlay: true, // 是否自动播放
+    interval: 5000 // 自动播放时间间隔
+});
+});
+})(jQuery);
+</script> 
+
+
+<!--wgf20160830 e-->
+
+
+
+</head>
+<body class="xybj">
+<!-- header-->
+﻿<div class="wrapper" id="header-1"  >
+	<div class="inner">
+  	    <div class="head-1-l" frag="面板1">
+             <div frag="窗口1">
+                 <div id="wp_nav_w1"> 
+
+ 
+<ul class="wp_nav" data-nav-config="{drop_v: 'down', drop_w: 'right', dir: 'y', opacity_main: '1', opacity_sub: '0.8', dWidth: '0'}">
+      
+     <li class="nav-item i1 "> 
+         <a href="http://m.gxzfxy.cn/"" title="数字校园平台" target="_blank"><span class="item-name">数字校园平台</span></a><i class="mark"></i> 
+          
+     </li> 
+      
+     <li class="nav-item i2 "> 
+         <a href="http://www.gxzfxy.cn:8082" title="OA办公平台" target="_blank"><span class="item-name">OA办公平台</span></a><i class="mark"></i> 
+          
+     </li> 
+      
+	 <li class="nav-item i2 "> 
+         <a href="http://www.gxzfxy.cn:6080/jwweb" title="教务系统" target="_blank"><span class="item-name">教务系统</span></a><i class="mark"></i> 
+          
+     </li> 
+      
+     <li class="nav-item i3 "> 
+         <a href="http://www.gxzfxy.cn:9092/" title="工号查询" target="_self"><span class="item-name">工号查询</span></a><i class="mark"></i> 
+          
+     </li>
+
+</ul> 
+ 
+ 
+ </div>
+             </div>
+        </div>
+        <div class="head-1-r" frag="面板2">
+             <div frag="窗口2">
+                 <div id="wp_nav_w2"> 
+
+ 
+<ul class="wp_nav" data-nav-config="{drop_v: 'down', drop_w: 'right', dir: 'y', opacity_main: '1', opacity_sub: '0.8', dWidth: '0'}">
+      
+     <li class="nav-item i2 "> 
+         <a href="http://221.7.250.38:8080/" title="旧版入口" target="_blank"><span class="item-name">旧版入口</span></a><!--<i class="mark"></i> -->
+          
+     </li> 
+      
+     <!--<li class="nav-item i2 "> 
+         <a href="#" title="English Version" target="_blank"><span class="item-name">English Version</span></a><i class="mark"></i> 
+          
+     </li>--> 
+      
+</ul> 
+ 
+ 
+ </div>
+             </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+
+<!--<div class="header">
+	<a href="/"><h1 class="logo"></h1></a>
+	
+</div>
+-->
+<div class="wrapper" id="header">
+	<div class="inner">
+  	    <div class="head">
+           <a href="/"></a>
+        </div>
+        
+<!-- notice-->
+<div class="notice" style=" margin-bottom:-35px; margin-right:0px;">
+	<div class="search" >
+		<form name="search" id="search" method="get" action="search.php">
+			<input type="text" name="keyword" id="keyword" title="输入关键字进行搜索" value="" class="key" />
+			<button type="submit" id="search_btn" class="sub"><span>搜索</span></button>
+		</form>
+	</div>
+</div>
+<!-- /notice-->        
+        
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="navArea">
+	<div class="navBg">
+		<ul class="nav">
+			<li><a href="about.php?cid=2">学院概况</a><ul class="nav_sub sub"><li><a href="about.php?cid=2">学院简介</a></li><li><a href="about_ldList.php?cid=3">学院领导</a></li><li><a href="about.php?cid=5">校徽校训</a></li><li><a href="about.php?cid=6">常用电话</a></li></ul></li><li><a href="about_zzjg.php?cid=7">组织机构</a><ul class="nav_sub sub"><li><a href="about_zzjg.php?cid=7#dqjg">党群机构</a><ul class="s"><li><a href="/ydw">院党委</a></li><li><a href="/jcs">纪委监察室</a></li><li><a href="/gh">工会</a></li><li><a href="http://221.7.250.38:8080/node/8">团委</a></li></ul></li><li><a href="about_zzjg.php?cid=7#xzjg">行政机构</a><ul class="s"><li><a href="/bgs">办公室</a></li><li><a href="http://221.7.250.38:8080/zhengzhichu">政治处</a></li><li><a href="http://zfxyjwc.com/">教务处</a></li><li><a href="/xgc">学工处</a></li><li><a href="/hqc">后勤处</a></li><li><a href="#">科研处</a></li><li><a href="/cwu">财务规划处</a></li><li><a href="http://zsjy.gxzfxy.cn/">招生就业处</a></li><li><a href="http://www.gxzfxy.cn:2080/">图书馆</a></li><li><a href=" /jxzd ">教学指导委员会</a></li><li><a href="/pxzx2">培训中心</a></li><li><a href="/pgzx">教学与发展评估中心</a></li></ul></li><li><a href="#xbsz">系部设置</a><ul class="s"><li><a href="/flx">法律系</a></li><li><a href="/msfx">民商法系</a></li><li><a href="/glx">管理系</a></li><li><a href="/jcx">司法警察系</a></li><li><a href="/xxgcx">信息工程系</a></li><li><a href="/wyx">外语系</a></li><li><a href="/skb">社科部</a></li><li><a href="/jcb">基础部</a></li><li><a href="/zzb">中专部</a></li></ul></li></ul></li><li><a href="about.php?cid=81">专业设置</a><ul class="nav_sub sub"></ul></li><li><a href="http://zsjy.gxzfxy.cn/" target="_blank">招生就业</a><ul class="nav_sub sub"></ul></li><li><a href="http://www.gxzfxy.cn/pxzx2/">成教自考</a><ul class="nav_sub sub"></ul></li><li><a href="news_sec.php?cid=49&nid=9">合作交流</a><ul class="nav_sub sub"><li><a href="news_sec.php?cid=49&nid=9">合作办学</a></li><li><a href="news_sec.php?cid=50&nid=9">实习实践</a></li><li><a href="news_sec.php?cid=51&nid=9">对外培训</a></li></ul></li><li><a href="news_sec.php?cid=75&nid=10">师资队伍</a><ul class="nav_sub sub"><li><a href="news_sec.php?cid=75&nid=10">人才招聘</a></li><li><a href="news_sec.php?cid=76&nid=10">师资队伍建设</a></li><li><a href="news_sec.php?cid=77&nid=10">教授名录</a></li></ul></li><li><a href="news_sec.php?cid=79&nid=11">信息公开</a><ul class="nav_sub sub"><li><a href="news_sec.php?cid=79&nid=11">党务公开</a></li><li><a href="news_sec.php?cid=80&nid=11">校务公开</a></li></ul></li><li><a href="news.php?cid=82">学风建设</a><ul class="nav_sub sub"></ul></li>		</ul>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+$(function(){
+
+	/*当前页面导航高亮*/
+	var href = window.location.href.split('/')[window.location.href.split('/').length-1].substr(0,4);
+	if(href.length > 0){
+		$(function(){
+			$("ul.nav a:first[href^='"+href+"']").attr("class","off");
+			if($("ul.nav a:first[href^='"+href+"']").size() == 0){
+				$("ul.nav a:first[href^='index']").attr("class","on");
+			}
+		});
+	}else{
+		$(function(){$("ul.nav a:first[href^='index']").attr("class","on")});
+	}
+
+	/*下拉菜单*/
+	$(".nav li").hover(function(){
+		$(this).parents(".nav > li").find("a:first").addClass("on2");
+		$(this).find("ul:first").show(); //鼠标滑过查找li下面的第一个ul显示
+	},function(){
+		var navobj = $(this).find("ul:first");
+		navobj.hide();
+        $(this).parents(".nav > li").find("a:first").removeClass("on2");
+		//鼠标离开隐藏li下面的ul
+		if(navobj.attr("class") == "nav_sub")
+		{
+			$(this).find("a:first").removeClass("on2");
+		}
+	})
+
+	//给li下面ul是s的样式的前一个同辈元素添加css
+	$(".nav li ul li ul").prev().addClass("t");
+})
+
+
+//加入收藏
+function AddFavorite(){
+	if(document.all){
+		try{
+			window.external.addFavorite(window.location.href,document.title);
+		}catch(e){
+			alert("加入收藏失败，请使用Ctrl+D进行添加！");
+		}
+	}else if(window.sidebar){
+		window.sidebar.addPanel(document.title, window.location.href, "");
+	}else{
+		alert("加入收藏失败，请使用Ctrl+D进行添加！");
+	}
+}
+</script><!-- /header-->
+<!-- banner-->
+<div class="banner">
+	<div id="slideplay">
+		<ul>
+						<li><a href="http://zs.gxzfxy.cn/enrollment/show-418.html"><img src="uploads/image/20180321/1521627945.jpg" alt="幻灯片二" /></a></li>
+						<li><a href="http://zs.gxzfxy.cn/recruitment/show-413.html"><img src="uploads/image/20180325/1521977199.jpg" alt="幻灯片一" /></a></li>
+						<li><a href="javascript:;"><img src="uploads/image/20170501/1493642648.jpg" alt="幻灯片三" /></a></li>
+						<li><a href="http://www.gxzfxy.cn/newsshow.php?cid=54&id=3223"><img src="uploads/image/20180511/1526061189.jpg" alt="欢迎广大考生填报我院复征志愿" /></a></li>
+					</ul>
+	</div>
+</div>
+<!-- /banner-->
+
+
+
+
+
+
+<!--wgf 20160830 学院要闻 校园动态 焦点动态报告 通知公告 s -->
+<div class="wrapper" id="container">
+	 <div class="inner">
+           <div class="cont-2">
+                <div class="cont-2-l">
+                    <div class="sudy-tab">
+                  <ul class="tab-menu">
+  	                <li>学院要闻</li>
+                    <!--<li>校园动态</li>-->
+                    <li>教育厅要闻</li>
+                  </ul>
+                  <ul class="tab-list" style="position:relative;">
+  	                <li>
+                       
+                       <!--学院要闻 内容s-->
+                       <div class="clearfix" style="width:580px;">
+      	                <div class="cont-2-l-1" frag="面板101">
+                             <div frag="窗口101" style="display:none;">
+                                    <!-- 多图交替9 图片 标题 切换 -->
+<div style="position:relative;overflow:hidden;width:240px;height:180px;">
+    <div class="dtjt9_div_img">
+        <img id="w101imgShow" name="w101imgShow" onclick="w101openWindow();" style="FILTER: revealTrans(duration=2,transition=20); border: 0; cursor: pointer;" src="templates/default/_css/tpl/default/images/loading.gif" width="240px" height="180px" vspace="0">
+        <div id='w101imgNumber' class="number"></div>
+    </div>
+    <div class="dtjt9_div_text">
+        <div id='w101imgTitle' class="dtjt9_div_text_title"><a href="javascript:void(0)">&nbsp;</a></div>									
+    </div>
+</div>
+<script language="JavaScript" class="" >
+    var w101imgJsons = [
+    
+        
+		
+												 {
+						"src" : "uploads/image/20180118/1516251023.jpg",
+						"title" : "自治区党委常委、政法委书记黄世勇到我院...",
+						"url" : "newsshow.php?cid=57&id=3054"
+					},
+					
+				   				   
+				    
+				
+				
+														 {
+						"src" : "uploads/image/20171105/1509895801.jpg",
+						"title" : "我院召开十九大精神传达学习会",
+						"url" : "newsshow.php?cid=57&id=2889"
+					},
+					
+				   				   
+				    
+				
+				
+														 {
+						"src" : "uploads/image/20171025/1508925564.jpg",
+						"title" : "自治区土地储备中心魏玉平主任一行到我院...",
+						"url" : "newsshow.php?cid=57&id=2857"
+					},
+					
+				   				   
+				    
+				
+				
+													   
+				   					 {
+						"src" : "uploads/image/20171020/1508471675.jpg",
+						"title" : "学院召开学习党的十九大报告党总支书记专...",
+						"url" : "newsshow.php?cid=57&id=2839"
+					}
+					
+				   
+				
+				
+						
+                ];
+        
+    
+</script>
+<script language="JavaScript">
+            var w101imgUrl = new Array();
+            var w101imgLink = new Array();
+            var w101imgTitle = new Array();
+
+            var w101count = 0;
+            var w101running = false;
+            var w101index = 0;
+            var w101nextAdTimer;
+            var w101k = 0;
+            function w101nextAd(num) {
+                if (num >= 0 && num <= w101count - 1) {
+                    w101index = num;
+                    clearTimeout(w101nextAdTimer);
+                } else {
+                    num = w101index;
+                }
+                if (w101index > w101count - 1) {
+                    w101index = 0;
+                }
+                if (!w101running) {
+                    w101running = true;
+
+                } else if (document.all) {
+                    w101imgShow.filters.revealTrans.Transition = 50;
+                    w101imgShow.filters.revealTrans.apply();
+                    w101imgShow.filters.revealTrans.play();
+                }
+                document.getElementById('w101imgShow').src = w101imgUrl[w101index];
+                if (w101imgTitle[w101index] != '') {
+                    document.getElementById('w101imgTitle').innerHTML = '<a href="javascript:w101openWindow();" title="' + w101imgTitle[w101index] + '">' + w101imgTitle[w101index] + '</a>';
+                }
+                document.getElementById('w101imgNumber').innerHTML = "";
+                w101k = 0;
+                for (var i = 0; i < w101count; i++) {
+                    w101k++;
+                    if (i != w101index) {
+                        document.getElementById('w101imgNumber').innerHTML += '<a href="javascript:w101nextAd(' + i + ')" class="nomal">' + w101k + '</a>';
+                    } else {
+                        document.getElementById('w101imgNumber').innerHTML += '<a href="javascript:w101nextAd(' + i + ')" class="current">' + w101k + '</a>';
+                    }
+                }
+
+                w101index++;
+                if (w101count > 1) {
+                    w101nextAdTimer = setTimeout("w101nextAd(-1)", 4000);
+                }
+            }
+
+            function w101openWindow() {
+                var jumpUrl = w101imgLink[w101index - 1];
+                if (jumpUrl && jumpUrl != '') {
+                    window.open(jumpUrl);
+                }
+            }
+
+            $().ready(function() {
+                try {
+                    var objs = w101imgJsons;
+                    w101count = objs.length;
+                    if (w101count == 0) {
+                        document.getElementById('w101imgShow').style.display = "none";
+                        document.getElementById('w101imgNumber').style.display = "none";
+                        document.getElementById('w101imgTitle').style.display = "none";
+                        return;
+                    }
+                    for (var i = 0; i < objs.length; i++) {
+                        w101imgUrl[i] = objs[i].src;
+                        w101imgLink[i] = objs[i].url;
+                        w101imgTitle[i] = objs[i].title;
+                    }
+                    w101nextAd(-1);
+                } catch (e) {
+
+                }
+            });
+</script>
+
+                             </div>
+                             <div id="focus1" style="margin-top:10px;"></div>
+                        </div>
+                        <div class="cont-2-l-2" frag="面板5">
+      	                     <div class="post" frag="窗口5">
+                                    <div id="wp_news_w5"> 
+ 
+<ul class="wp_article_list"> 
+
+
+                
+					                     <li class="list_item i1"> 
+                         <div class="fields pr_fields"> 
+                             <span class='Article_Index'>1</span> 
+                             <span class='Article_Title'><a href='newsshow.php?cid=57&id=3271' target='_blank' title='学生工作处开展感恩国家资助、构建诚信校园讲座' alt='学生工作处开展感恩国家资助、构建诚信校园讲座'>学生工作处开展感恩国家资助、构建...</a></span> 
+                         </div> 
+                         <div class="fields ex_fields"> 
+                              
+                         </div> 
+                     </li> 
+					
+				   				
+				                
+					                     <li class="list_item i2"> 
+                         <div class="fields pr_fields"> 
+                             <span class='Article_Index'>1</span> 
+                             <span class='Article_Title'><a href='newsshow.php?cid=57&id=3270' target='_blank' title='我院荣获广西财经学院高等教育自学考试合作办学先进集体' alt='我院荣获广西财经学院高等教育自学考试合作办学先进集体'>我院荣获广西财经学院高等教育自学...</a></span> 
+                         </div> 
+                         <div class="fields ex_fields"> 
+                              
+                         </div> 
+                     </li> 
+					
+				   				
+				                
+					                     <li class="list_item i3"> 
+                         <div class="fields pr_fields"> 
+                             <span class='Article_Index'>1</span> 
+                             <span class='Article_Title'><a href='newsshow.php?cid=57&id=3268' target='_blank' title='民商法系学生座谈会' alt='民商法系学生座谈会'>民商法系学生座谈会</a></span> 
+                         </div> 
+                         <div class="fields ex_fields"> 
+                              
+                         </div> 
+                     </li> 
+					
+				   				
+				                
+					                     <li class="list_item i4"> 
+                         <div class="fields pr_fields"> 
+                             <span class='Article_Index'>1</span> 
+                             <span class='Article_Title'><a href='newsshow.php?cid=57&id=3266' target='_blank' title='定目标 创品牌—基础部召开教学改革会议' alt='定目标 创品牌—基础部召开教学改革会议'>定目标 创品牌—基础部召开教学改革...</a></span> 
+                         </div> 
+                         <div class="fields ex_fields"> 
+                              
+                         </div> 
+                     </li> 
+					
+				   				
+				                
+					                     <li class="list_item i5"> 
+                         <div class="fields pr_fields"> 
+                             <span class='Article_Index'>1</span> 
+                             <span class='Article_Title'><a href='newsshow.php?cid=57&id=3265' target='_blank' title='自治区政府副主席胡焯到广西政法管理干部学院调研' alt='自治区政府副主席胡焯到广西政法管理干部学院调研'>自治区政府副主席胡焯到广西政法管...</a></span> 
+                         </div> 
+                         <div class="fields ex_fields"> 
+                              
+                         </div> 
+                     </li> 
+					
+				   				
+				                
+					                     <li class="list_item i6"> 
+                         <div class="fields pr_fields"> 
+                             <span class='Article_Index'>1</span> 
+                             <span class='Article_Title'><a href='newsshow.php?cid=57&id=3262' target='_blank' title='我院召开党委扩大会议' alt='我院召开党委扩大会议'>我院召开党委扩大会议</a></span> 
+                         </div> 
+                         <div class="fields ex_fields"> 
+                              
+                         </div> 
+                     </li> 
+					
+				   				
+				</ul> 
+</div> 
+
+                             </div>
+                        </div>
+                        <div class="clear"></div>
+                        </div>
+                       <!--学院要闻 内容 e-->
+                        <a href="news.php?cid=57" class="more" target="_blank">更多&gt;&gt;</a>
+                    </li>
+					
+                    
+                    
+                    <!--wgf20160904 -->
+                    
+										
+                    
+                    <li style="padding-top:10px;">
+      	                 
+                         <!--教育厅要闻 采集 内容 s-->
+                           <div style="width:580px;" frag="面板6" >
+      	                <div class="post" frag="窗口6">
+                             <div id="wp_news_w6"> 
+ 
+<ul class="wp_article_list"> 
+                               <li class='list_item i1'><div class='fields pr_fields'><span class='Article_Title'><a href='http://www.moe.edu.cn/../../jyb_xwfb/gzdt_gzdt/s5987/201805/t20180529_337505.html' target='_blank' >教育部会同有关部门开展高考安全督查工作</a></span></div><div class='fields ex_fields'><span class='Article_PublishDate'>2018-05-29 </span> </div> </li><li class='list_item i1'><div class='fields pr_fields'><span class='Article_Title'><a href='http://www.moe.edu.cn/../../jyb_xwfb/s5147/201805/t20180529_337496.html' target='_blank' >全国各地高校深入学习贯彻习近平总书记在北京大学考察时的重...</a></span></div><div class='fields ex_fields'><span class='Article_PublishDate'>2018-05-29 </span> </div> </li><li class='list_item i1'><div class='fields pr_fields'><span class='Article_Title'><a href='http://www.moe.edu.cn//jyb_xwfb/xw_fbh/moe_2069/xwfbh_2018n/201805/t20180528_337317.html' target='_blank' >奋进之笔"1+1"系列发布采访活动 · 北京行发布会：介绍高校党...</a></span></div><div class='fields ex_fields'><span class='Article_PublishDate'>2018-05-28 </span> </div> </li><li class='list_item i1'><div class='fields pr_fields'><span class='Article_Title'><a href='http://www.moe.edu.cn/../../jyb_xwfb/gzdt_gzdt/moe_1485/201805/t20180527_337265.html' target='_blank' >教育部与湖北省签订共建“双一流”建设高校协议</a></span></div><div class='fields ex_fields'><span class='Article_PublishDate'>2018-05-27 </span> </div> </li><li class='list_item i1'><div class='fields pr_fields'><span class='Article_Title'><a href='http://www.moe.edu.cn//jyb_xwfb/xw_zt/moe_357/jyzt_2018n/2018_zt11/zt1811_gd/' target='_blank' >奋进之笔“1+1”系列发布采访活动 · 广东行发布会：公布校外...</a></span></div><div class='fields ex_fields'><span class='Article_PublishDate'>2018-05-25 </span> </div> </li><li class='list_item i1'><div class='fields pr_fields'><span class='Article_Title'><a href='http://www.moe.edu.cn/../../jyb_xwfb/gzdt_gzdt/s5987/201805/t20180525_337078.html' target='_blank' >教育部与各省(区、市)签订2018年高考安全责任书</a></span></div><div class='fields ex_fields'><span class='Article_PublishDate'>2018-05-25 </span> </div> </li><!--                         <li class="list_item i1"> 
+                             <div class="fields pr_fields"> 
+                                 <span class='Article_Index'>1</span> 
+                                 <span class='Article_Title'><a href='#' target='_blank' title=' ' alt=' '> </a></span> 
+                             </div> 
+                             <div class="fields ex_fields"> 
+                                  
+                                 <span class='Article_PublishDate'> </span> 
+                                  
+                             </div> 
+                         </li>-->
+      
+</ul> 
+</div> 
+
+                        </div>
+                        </div>
+                         
+                         <!--教育厅要闻 采集 内容 e -->  
+                           <a href="http://www.moe.edu.cn/jyb_sy/sy_jyyw/" class="more" target="_blank">更多&gt;&gt;</a>
+                    </li>
+                    <!--wgf20160904-->
+                    
+                  </ul>
+              </div>
+                </div>
+                <div class="cont-2-r">
+                    <div class="sudy-tab">
+                  <ul class="tab-menu">
+  	                
+                    <li>通知公告</li>
+                    <li>纪检监察举报方式</li>
+                  </ul>
+                  <ul class="tab-list" style="position:relative;">
+                  
+                  
+  	                
+                    
+                    
+                    
+					<li frag="面板8">
+      	                <div class="post" frag="窗口8">
+                             <div id="wp_news_w8"> 
+ 
+<ul class="wp_article_list"> 
+      
+      <!--通知公告 内容 s -->
+      
+                        
+					                    
+                         <li class="list_item i1"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>1</span> 
+             <span class='Article_Title'><a href='newsshow.php?cid=54&id=3226' target='_blank' title='2018年高职“专升本”推优候补学生名单公示' alt='2018年高职“专升本”推优候补学生名单公示'>2018年高职“专升本”推优候补...</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+             <span class='Article_PublishDate'>05-13</span> 
+              
+         </div> 
+     </li> 
+                    
+
+                    
+				   				
+				                
+					                    
+                         <li class="list_item i2"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>2</span> 
+             <span class='Article_Title'><a href='newsshow.php?cid=54&id=3223' target='_blank' title='欢迎广大考生填报我院复征志愿' alt='欢迎广大考生填报我院复征志愿'>欢迎广大考生填报我院复征志愿</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+             <span class='Article_PublishDate'>05-11</span> 
+              
+         </div> 
+     </li> 
+                    
+
+                    
+				   				
+				                
+					                    
+                         <li class="list_item i3"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>3</span> 
+             <span class='Article_Title'><a href='newsshow.php?cid=54&id=3222' target='_blank' title='2018年高职“专升本”推优学生名单公示' alt='2018年高职“专升本”推优学生名单公示'>2018年高职“专升本”推优学生...</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+             <span class='Article_PublishDate'>05-11</span> 
+              
+         </div> 
+     </li> 
+                    
+
+                    
+				   				
+				                
+					                    
+                         <li class="list_item i4"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>4</span> 
+             <span class='Article_Title'><a href='newsshow.php?cid=54&id=3218' target='_blank' title='收看警示教育片(下)' alt='收看警示教育片(下)'>收看警示教育片(下)</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+             <span class='Article_PublishDate'>05-08</span> 
+              
+         </div> 
+     </li> 
+                    
+
+                    
+				   				
+				                
+					                    
+                         <li class="list_item i5"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>5</span> 
+             <span class='Article_Title'><a href='newsshow.php?cid=54&id=3217' target='_blank' title='收看警示教育片(上)' alt='收看警示教育片(上)'>收看警示教育片(上)</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+             <span class='Article_PublishDate'>05-08</span> 
+              
+         </div> 
+     </li> 
+                    
+
+                    
+				   				
+				                
+					                    
+                         <li class="list_item i6"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>6</span> 
+             <span class='Article_Title'><a href='newsshow.php?cid=54&id=3195' target='_blank' title='关于2018年“清明节”、“壮族三月三”放假调休的通知' alt='关于2018年“清明节”、“壮族三月三”放假调休的通知'>关于2018年“清明节”、“壮族...</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+             <span class='Article_PublishDate'>04-01</span> 
+              
+         </div> 
+     </li> 
+                    
+
+                    
+				   				
+				     
+      
+      
+</ul> 
+</div> 
+
+                        </div> <!--通知公告 内容 e -->
+                        <a href="news.php?cid=54" class="more" target="_blank">更多&gt;&gt;</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+ <li frag="面板8">
+      	                <div class="post" frag="窗口8">
+                             <div id="wp_news_w8"> 
+ 
+<ul class="wp_article_list"> 
+      
+      <!--教育发展基金会2 内容 s -->
+      
+                        
+					                    
+                         <li class="list_item i1"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>1</span> 
+             <span class='Article_Title'><a href='newsshow.php?cid=83&id=3269' target='_blank' title='举报电子邮箱:zfxyjcs209@163.com' alt='举报电子邮箱:zfxyjcs209@163.com'>举报电子邮箱:zfxyjcs209@...</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+             <span class='Article_PublishDate'>2018-05-28</span> 
+              
+         </div> 
+     </li> 
+                    
+
+                    
+				   				
+				                
+					                    
+                         <li class="list_item i2"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>2</span> 
+             <span class='Article_Title'><a href='newsshow.php?cid=83&id=3237' target='_blank' title='学院纪检监察举报电话07715845216、5703115' alt='学院纪检监察举报电话07715845216、5703115'>学院纪检监察举报电话0771...</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+             <span class='Article_PublishDate'>2018-05-19</span> 
+              
+         </div> 
+     </li> 
+                    
+
+                    
+				   				
+				                
+					                    
+                         <li class="list_item i3"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>3</span> 
+             <span class='Article_Title'><a href='http://guangxi.12388.gov.cn/' target='_blank' title='点击网上举报方式' alt='点击网上举报方式'>点击网上举报方式</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+             <span class='Article_PublishDate'>2018-05-19</span> 
+              
+         </div> 
+     </li> 
+                    
+
+                    
+				   				
+				     
+      
+      
+</ul> 
+</div> 
+
+                        </div> <!--教育发展基金会2 内容 e -->
+                        <a href="news.php?cid=83" class="more" target="_blank">更多&gt;&gt;</a>
+                    </li>
+                                       
+                    
+                    
+                    
+                  </ul>
+              </div>
+                </div>
+                <div class="clear"></div>
+           </div>
+           
+     </div>
+</div></div>
+<!--wgf20160830 学院要闻 校园动态 焦点动态报告 通知公告  专题报道2 e-->
+
+
+ 
+
+
+
+<div class="wrapper" id="container-2" style="margin-top:30px;">
+	 <div class="inner">
+          <div class="cont-3">
+                <ul id="announce-wrap" class="clearfix">
+                
+                            <li class="announce-item announce-item-1"><a class="announce" id="ecnuutils" href="#ecnuutils" name="ecnuutils">友情链接</a>
+    							<div class="layer-box" frag="面板27">
+    								<div class="layer-inner" frag="窗口27">
+    									<div id="wp_news_w27"> 
+ 
+<ul class="wp_article_list wp_article_list2"> 
+      
+      
+     		
+         <li class="list_item i1  list_item2"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>1</span> 
+             <span class='Article_Title Article_Title2'><a href='http://www.moe.edu.cn/' target='_blank' title='中华人民共和国教育部' alt='中华人民共和国教育部'> 中华人民共和国教育部</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+         </div> 
+     </li>
+    
+    
+    
+		
+         <li class="list_item i2  list_item2"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>2</span> 
+             <span class='Article_Title Article_Title2'><a href='http://www.moj.gov.cn/' target='_blank' title='中华人民共和国司法部' alt='中华人民共和国司法部'> 中华人民共和国司法部</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+         </div> 
+     </li>
+    
+    
+    
+		
+         <li class="list_item i3  list_item2"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>3</span> 
+             <span class='Article_Title Article_Title2'><a href='http://www.cnki.net/' target='_blank' title='中国期刊网（知网）' alt='中国期刊网（知网）'> 中国期刊网（知网）</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+         </div> 
+     </li>
+    
+    
+    
+		
+         <li class="list_item i4  list_item2"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>4</span> 
+             <span class='Article_Title Article_Title2'><a href='http://www.sslibrary.com/' target='_blank' title='超星数字图书' alt='超星数字图书'> 超星数字图书</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+         </div> 
+     </li>
+    
+    
+    
+		
+         <li class="list_item i5  list_item2"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>5</span> 
+             <span class='Article_Title Article_Title2'><a href='http://www.pkulaw.cn/' target='_blank' title='北大法宝' alt='北大法宝'> 北大法宝</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+         </div> 
+     </li>
+    
+    
+    
+	      
+     
+</ul> 
+</div> 
+
+    								</div>
+    							</div>
+    						</li>
+                            
+    						<li class="announce-item announce-item-2"><a class="announce" id="ecnuutils" href="#ecnuutils" name="ecnuutils">专题报道</a>
+    							<div class="layer-box" frag="面板28">
+    								<div class="layer-inner" frag="窗口28">
+    									<div id="wp_news_w28"> 
+ 
+<ul class="wp_article_list wp_article_list2"> 
+      
+      
+      
+      	
+         <li class="list_item i1 list_item2"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>1</span> 
+             <span class='Article_Title Article_Title2'><a href='http://www.gxzfxy.cn/news_sec.php?cid=44&nid=8' target='_blank' title='大学两学一做专题网站' alt='大学两学一做专题网站'> 大学两学一做专题网站</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+         </div> 
+     </li>
+    
+    
+    
+		
+         <li class="list_item i2 list_item2"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>2</span> 
+             <span class='Article_Title Article_Title2'><a href='http://www.gxzfxy.cn/news_sec.php?cid=45&nid=8' target='_blank' title='践行社会主义核心价值观专题' alt='践行社会主义核心价值观专题'> 践行社会主义核心价值观专题</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+         </div> 
+     </li>
+    
+    
+    
+	      
+      
+  
+      
+</ul> 
+</div> 
+
+    								</div>
+    							</div>
+    						</li>
+							
+                            <li class="announce-item announce-item-3"><a class="announce" id="ecnuutils" href="#ecnuutils" name="ecnuutils">快速通道</a>
+    							<div class="layer-box" frag="面板29">
+    								<div class="layer-inner" frag="窗口29">
+    									<div id="wp_news_w29"> 
+ 
+<ul class="wp_article_list wp_article_list2"> 
+      
+      	
+         <li class="list_item i1 list_item2"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>1</span> 
+             <span class='Article_Title Article_Title2'><a href='http://m.gxzfxy.cn' target='_blank' title='数字校园' alt='数字校园'> 数字校园</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+         </div> 
+     </li>
+    
+    
+    
+		
+         <li class="list_item i2 list_item2"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>2</span> 
+             <span class='Article_Title Article_Title2'><a href='http://www.gxzfxy.cn:8082' target='_blank' title='OA办公协同系统' alt='OA办公协同系统'> OA办公协同系统</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+         </div> 
+     </li>
+    
+    
+    
+		
+         <li class="list_item i3 list_item2"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>3</span> 
+             <span class='Article_Title Article_Title2'><a href='http://www.gxzfxy.cn:6080/jwweb/' target='_blank' title='教务管理系统' alt='教务管理系统'> 教务管理系统</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+         </div> 
+     </li>
+    
+    
+    
+		
+         <li class="list_item i4 list_item2"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>4</span> 
+             <span class='Article_Title Article_Title2'><a href='http://172.16.2.204' target='_blank' title='旧教务系统(内网)' alt='旧教务系统(内网)'> 旧教务系统(内网)</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+         </div> 
+     </li>
+    
+    
+    
+		
+         <li class="list_item i5 list_item2"> 
+         <div class="fields pr_fields"> 
+             <span class='Article_Index'>5</span> 
+             <span class='Article_Title Article_Title2'><a href='http://221.7.250.38:8086/psytest2009/ZhgProgram/frmLogin.aspx' target='_blank' title='心理测验系统' alt='心理测验系统'> 心理测验系统</a></span> 
+         </div> 
+         <div class="fields ex_fields"> 
+              
+         </div> 
+     </li>
+    
+    
+    
+	      
+     
+</ul> 
+</div> 
+
+    								</div>
+    							</div>
+    						</li>
+                           
+                            
+						</ul>
+           </div>
+     </div>
+</div>
+
+
+
+<div class="wrapper" id="footer">
+	<div class="inner">
+  	<div class="foot-l">
+    	<p>版权所有 ©广西政法干部管理学院<br>
+ICP备案号：桂ICP备12001251号-1
+广西网警备案号：45010302000404<br/>
+学院地址：广西南宁市青秀区东葛路117号 <br/>邮编：530023  电子邮箱：gxzfxy117@qq.com<br/>
+
+</p>  	
+    </div>
+    <div class="foot-r"></div>
+    <div class="clear"></div>
+<style>
+img{ width:100px;}
+</style>
+<div style="text-align:right;margin-right:200px;margin-top:-112px;"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/21/000/0000/40939630/CA210000000409396300001.js' type='text/javascript'%3E%3C/script%3E"));</script></div>
+  </div>
+</div>
+
+<div class="wrapper" id="footer-b">
+	<div class="inner">
+
+  </div>
+</div>
+</body>
+
+<script type="text/javascript" src="templates/default/_upload/tpl/00/4a/74/template74/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="templates/default/_upload/tpl/00/4a/74/template74/js/jquery.selectbox.min.js"></script>
+<script type="text/javascript" src="templates/default/_upload/tpl/00/4a/74/template74/js/jquery.foundation.orbit.min.js"></script>
+<script type="text/javascript" src="templates/default/_upload/tpl/00/4a/74/template74/js/zoombox.js"></script>
+<script type="text/javascript" src="templates/default/_upload/tpl/00/4a/74/template74/js/base.js"></script>
+<script type="text/javascript" src="templates/default/_upload/tpl/00/4a/74/template74/js/main.js"></script>
+</html>
+

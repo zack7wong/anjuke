@@ -1,0 +1,729 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<LINK href="flash/css/mobanwang.css" type=text/css rel=stylesheet>
+<LINK href="menu.css" type=text/css rel=stylesheet>
+<SCRIPT src="flash/js/jquery-1.4.2.min.js" type=text/javascript></SCRIPT>
+<SCRIPT src="flash/js/mobanwang.js" type=text/javascript></SCRIPT>
+<script language="JavaScript" src="menu.js"></script>
+<title>宝鸡教育学院首页</title>
+<style>
+/* 网站基本样式 */
+* {padding:0; margin:0}
+div,form,img,ul,ol,li,dl,dt,dd {margin: 0; padding: 0; border: 0;}
+li,dt,dd {list-style-type:none;}
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0;}
+table,td,tr,th{font-size:12px;}
+body { margin:0px; font-size:12px; text-align:center; font-family:Verdana; color:#333; }
+a {text-decoration: none; color:#333 }
+a:hover {text-decoration: underline; color:#FF0000 }
+a.bai {text-decoration: none; color:#FFF }
+a:hover.bai {text-decoration: underline; color:#FFFF00 }
+a.blue {text-decoration: none; color:#082CB2 }
+a:hover.blue {text-decoration: underline; color:#082CB2 }
+a.ql {color:#06b0fc }
+a:hover.ql {text-decoration: underline; color:#06b0fc }
+
+.clear{
+	clear:both;font-size:0;overflow:hidden;height:1px
+}
+.img_ad a img {
+	border:1px solid #E8E6E6; margin-bottom:5px
+}
+.img_ad a:hover img {
+	border:1px solid #327FBB; margin-bottom:5px
+}
+#wrapper {
+	text-align:left;
+	width:959px;
+	margin: auto;
+	line-height:24px;
+	background:#FFF
+}
+
+/* 网站顶部banner */
+.top{
+background:url(images/banner.jpg) no-repeat;
+height:94px;}
+
+.content{
+  margin-top:5px;}
+.top p{
+float:right;
+margin-right:20px;
+margin-top:30px;
+word-spacing:8px;letter-spacing: 1px;
+width:300px;}
+
+.tq{ margin-right:10px;
+float:right;}
+
+.nav{
+background:url(images/nav.jpg) repeat-x;
+height:40px;
+margin-top:1px;}
+/*.nav p{
+font-size:16px;
+color:#FFFFFF;
+font-weight:bold;
+word-spacing:8px;letter-spacing:2px;
+text-indent:100px;
+padding:8px;}*/
+.nav ul { text-align:center;height:38px;line-height:38px; }
+.nav ul li { float:left; width:100px; margin-left:30px;}
+.nav ul li a { font-size:14px;font-weight:bold;color:#FFF;text-align:center;display:block ;background:url('images/menu_on.gif') no-repeat}
+.nav ul li a:hover { color:#FFF;text-decoration:underline; background:url('images/menu_ov.gif') no-repeat }
+/*.nav { margin-bottom:3px }
+.nav ul { text-align:center;height:38px;line-height:38px; }
+.nav ul li { float:left; width:125px;}
+.nav ul li a { font-size:14px;font-weight:bold;color:#FFF;text-align:center;display:block ;background:url('images/menu_on.gif') no-repeat}
+.nav ul li a:hover { color:#FFF;text-decoration:underline; background:url('images/menu_ov.gif') no-repeat }
+.nav ul .end a {
+	background:url('images/menu_end_on.gif') no-repeat;width:128px
+}
+.nav ul .end a:hover {
+	background:url('images/menu_end_ov.gif') no-repeat;width:128px
+}*/
+#preview{border:1px solid #cccccc; background:#9900CC;color:#fff; padding:5px; display:none; position:absolute;}
+.img{
+margin-top:3px;}
+
+.left{
+height:202px;
+width:743px;
+float:left;
+
+margin-top:5px;
+}
+.right{
+height:202px;
+
+}
+.kstd{
+height:45px;
+width:204px;
+border:solid 0px #afd6fd;
+float:right;
+margin-top:5px;}
+
+.kstd p{
+font-size:14px;
+padding:12px;
+line-height:24px;
+word-spacing:8px;letter-spacing: 1px;}
+
+
+
+.c_left{
+
+width:491px;
+float:left; }
+
+.c_tp{
+margin:10px 0;}
+
+.c_tp ul li {
+	width:147px;float:left;display:inline; margin-left:12px;
+	
+}
+.c_tp ul li p {
+	text-align:center; margin-left:1px;line-height:24px; color:#666 
+}
+.c_right{
+
+width:450px;
+float:right;}
+
+.l_nav{
+background:url(images/new_bg.gif) no-repeat;height:26px; line-height:26px; text-align:right; color:#FFFFFF; font-size:12px; padding-right:10px }
+
+
+.l_nav span { float:left;  text-indent:10px; font-size:14px;  }
+
+
+.r_nav{
+background:url(images/new_bg.gif) no-repeat;height:26px; line-height:26px; text-align:right; color:#FFFFFF; font-size:12px; padding-right:10px }
+
+
+.r_nav span { float:left;  text-indent:10px; font-size:14px;  }
+
+
+.r_nav p{
+font-size:14px;
+color:#FFFFFF;
+text-indent:16px;
+word-spacing:2px;letter-spacing: 1px;
+line-height:26px;
+
+}
+
+.news      { 
+	padding:3px  
+	text-align:right;
+}
+.news dl dd  {  
+	 line-height:24px; height:26px; background:url('images/gif-0670.gif') left center no-repeat; text-indent:10px; margin:0 2px; color:#8B8B8B;border-bottom:1px dashed #464646;
+	 text-align:right;
+
+}
+.news span{  float:left; text-indent:15px; font-size:12px; }
+
+.yqlj{ margin-top:15px; height:69px; clear:both; width:760px; float:left;}
+
+.l_bg{
+background:url(images/link_bg.gif) no-repeat;
+width:495px;
+height:24px;
+clear:both; }
+
+.l_bg p{
+font-size:14px;
+color:#FFFFFF;
+text-indent:20px;}
+.nei{border:1px solid #A1C7EC; width:493px; height:45px;}
+.nei_a{border:1px solid #A1C7EC; width:187px; height:45px;}
+
+.nei_tp{
+margin:20px 0;}
+
+.nei ul li {
+margin-top:5px;width:80px;float:left;display:inline; margin-left:10px; padding: 0px 3px;;
+	
+}
+.nei_a ul li {
+margin-top:2px;width:43px;float:left;display:inline; margin-left:2px;
+	
+}
+.db{
+
+margin-top:5px;
+border:#FF0000 solid 0px;
+height:75px;
+width:494px;
+}
+.db_l{
+float:left;
+width:493px;
+height:72px; border:#000000 solid 0px;}
+.db_r{
+float:right;
+width:189px;
+height:72px;
+}
+
+.cx{
+margin-top:15px; width:188px; height:75px;float:right;}
+.cx_list{
+height:50px;
+border:1px solid #A1C7EC;}
+.cx_title{
+background:url(images/cx.gif) no-repeat;
+height:24px;
+width:189px;}
+
+.cx_title p{
+font-size:14px;
+color:#FFFFFF;
+text-indent:20px;}
+
+.cx_img{
+margin-top:0px;
+border:1px solid #A1C7EC;
+height:50px;
+
+}
+.cx_img ul li {
+margin-top:5px;width:41px;float:left;display:inline; margin-left:2px;
+	
+}
+
+.sycx{
+float:right; width:188px;}
+.footer{ 
+border:#FF3300 solid 0px;
+background:url(images/footer_bg.gif) repeat-x;
+height:70px;
+clear:both;
+margin-top:5px;}
+.footer p{
+font-size:12px;
+text-align:center;
+padding:12px;}
+
+.STYLE1 {font-size: 12px}
+ .Scroller {line-height:20px; border:1px solid #D4D4D4; padding:0px 10px; height:40px; width:469px;
+ margin-bottom:10px; text-align:right; color:#FF0000}
+ .Scroller span{ float:left; color:#FF0000}
+    .Scroller *{margin:0px; padding:0px;}
+    .ScrollMid {float:left;}
+    .ScrollMid ul{width:400px;float:left;}
+    .ScrollMid li{list-style:none; float:left; width:450px; padding-left:10px;line-height:20px;  }
+	.anylinkcss{ background:#2B85D1; width:110px;}
+</style>
+    <SCRIPT type=text/javascript>
+    var $ = function (id) {
+    return "string" == typeof id ? document.getElementById(id) : id;
+    };
+    var Class = {
+    create: function() {
+    return function() {
+    this.initialize.apply(this, arguments);
+    }
+    }
+    }
+    Object.extend = function(destination, source) {
+    for (var property in source) {
+    destination[property] = source[property];
+    }
+    return destination;
+    }
+    function addEventHandler(oTarget, sEventType, fnHandler) {
+    if (oTarget.addEventListener) {
+    oTarget.addEventListener(sEventType, fnHandler, false);
+    } else if (oTarget.attachEvent) {
+    oTarget.attachEvent("on" + sEventType, fnHandler);
+    } else {
+    oTarget["on" + sEventType] = fnHandler;
+    }
+    };
+    var Scroller = Class.create();
+    Scroller.prototype = {
+    initialize: function(idScroller, idScrollMid, options) {
+    var oThis = this, oScroller = $(idScroller), oScrollMid = $(idScrollMid);
+    this.SetOptions(options);
+    this.Side = this.options.Side || ["up"];//方向
+    this.scroller = oScroller;   //对象
+    this.speed = this.options.Speed; //速度
+    this.timer = null;     //时间
+    this.pauseHeight = 0;    //定高
+    this.pauseWidth = 0;    //定宽
+    this.pause = 0;      //定高(宽)
+    this.side = 0;      //参数
+    //用于上下滚动
+    this.heightScroller = parseInt(oScroller.style.height) || oScroller.offsetHeight;
+    this.heightList = oScrollMid.offsetHeight;
+    //用于左右滚动
+    this.widthScroller = parseInt(oScroller.style.width) || oScroller.offsetWidth;
+    this.widthList = oScrollMid.offsetWidth;
+    //js取不到css设置的height和width
+    oScroller.style.overflow = "hidden";
+    oScrollMid.appendChild(oScrollMid.cloneNode(true));
+    oScrollMid.appendChild(oScrollMid.cloneNode(true));
+    addEventHandler(oScroller, "mouseover", function() { oThis.Stop(); });
+    addEventHandler(oScroller, "mouseout", function() { oThis.Start(); });
+    this.Start();
+    },
+    //设置默认属性
+    SetOptions: function(options) {
+    this.options = {//默认值
+    Step:   1,//每次变化的px量
+    Speed:  20,//速度(越大越慢)
+    Side:   ["up"],//滚动方向:"up"是上，"down"是下，"left"是左，"right"是右
+    PauseHeight: 0,//隔多高停一次
+    PauseWidth: 0,//隔多宽停一次
+    //当上下和左右一起使用时必须设置PauseHeight和PauseWidth来设置转向位置
+    PauseStep: 3000//停顿时间(PauseHeight或PauseWidth大于0该参数才有效)
+    };
+    Object.extend(this.options, options || {});
+    },
+    //转向
+    Turn: function() {
+    //通过设置方向数组的排列来转向
+    this.Side.push(this.Side.shift().toLowerCase());
+    },
+    //上下滚动
+    ScrollUpDown: function() {
+    this.pause = this.pauseHeight;
+    this.scroller.scrollTop = this.GetScroll(this.scroller.scrollTop, this.heightScroller, this.heightList,
+    this.options.PauseHeight);
+    this.pauseHeight = this.pause;
+    var oThis = this;
+    this.timer = window.setTimeout(function(){ oThis.Start(); }, this.speed);
+    },
+    //左右滚动
+    ScrollLeftRight: function() {
+    this.pause = this.pauseWidth;
+    //注意:scrollLeft超过1400会自动变回1400 注意长度
+    this.scroller.scrollLeft = this.GetScroll(this.scroller.scrollLeft, this.widthScroller, this.widthList,
+    this.options.PauseWidth);
+    this.pauseWidth = this.pause;
+    var oThis = this;
+    this.timer = window.setTimeout(function(){ oThis.Start(); }, this.speed);
+    },
+    //获取设置滚动数据
+    GetScroll: function(iScroll, iScroller, iList, iPause) {
+    var iStep = this.options.Step * this.side;
+    if(this.side > 0){
+    if(iScroll >= (iList * 2 - iScroller)){ iScroll -= iList; }
+    } else {
+    if(iScroll <= 0){ iScroll += iList; }
+    }
+    this.speed = this.options.Speed;
+
+    if(iPause > 0){
+    if(Math.abs(this.pause) >= iPause){
+    this.speed = this.options.PauseStep; this.pause = iStep = 0; this.Turn();
+    } else {
+    this.pause += iStep;
+    }
+    }
+    return (iScroll + iStep);
+    },
+    //开始
+    Start: function() {
+    //document.getElementById("test").innerHTML+=sTurn+",";
+    //方向设置
+    switch (this.Side[0].toLowerCase()) {
+    case "right" :
+    if(this.widthList < this.widthScroller) return;
+    this.side = -1;
+    this.ScrollLeftRight();
+    break;
+    case "left" :
+    if(this.widthList < this.widthScroller) return;
+    this.side = 1;
+    this.ScrollLeftRight();
+    break;
+    case "down" :
+    if(this.heightList < this.heightScroller) return;
+    this.side = -1;
+    this.ScrollUpDown();
+    break;
+    case "up" :
+    default :
+    if(this.heightList < this.heightScroller) return;
+    this.side = 1;
+    this.ScrollUpDown();
+    }
+    },
+    //停止
+    Stop: function() {
+    clearTimeout(this.timer);
+    }
+    };
+    </SCRIPT>
+
+</head>
+
+<body > 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+ 
+
+
+
+<div id="wrapper">
+		<div class="shang">
+		 <!--网站顶图片部-->
+            <div class="top">
+                   <p>
+                   2018-05-24 星期四   <A href="#" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.bjjyxy.cn');"title=设置本站为浏览器首页(启始页)>
+ 设为首页</A> | <A href="#" onclick="javascript:window.external.AddFavorite('http://www.bjjyxy.cn','宝鸡教育学院')" title="收藏本站到你的收藏夹">加入收藏</A> <iframe name="weather_inc" src="http://tianqi.xixik.com/cframe/5"; width=160 height=24 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no align=center id=url allowTransparency=true></iframe>
+
+                   </p>
+                  
+            </div>
+        	
+        <!--导航-->
+        <div class=nav>
+ <ul>
+   <li><a href='' title=''>首页</a></li>
+   <li><a href=''  title=''  onMouseover="dropdownmenu(this, event, 'anylinkmenu1')">学院概况</a></li>
+   <li><a href='' title=''  onMouseover="dropdownmenu(this, event, 'anylinkmenu2')">学历教育</a></li>
+   <li><a href='' title=''  onMouseover="dropdownmenu(this, event, 'anylinkmenu3')">师训干训</a></li>
+   <li><a href='' title=''  onMouseover="dropdownmenu(this, event, 'anylinkmenu4')">社会培训</a></li>
+   <li><a href='' title=''  onMouseover="dropdownmenu(this, event, 'anylinkmenu5')">教育科研</a></li>
+   <li><a href='' title=''  onMouseover="dropdownmenu(this, event, 'anylinkmenu6')">教育资源</a></li>
+  
+ </ul>
+</div>
+
+
+
+
+  <div > 
+</div>
+
+<div id="anylinkmenu1" class="anylinkcss" align="center">
+	<a href="about.php" class="bai">学院介绍</a><a href="ldbz.php" class="bai">领导班子</a><a href="jgsz.php" class="bai">机构设置</a>
+</div>
+
+<div id="anylinkmenu2" class="anylinkcss">
+<a href="train_list.php?lb=5oiQ5Lq65aSn5LiT" class="bai">成人大专</a><a href="train_list.php?lb=6L+c56iL5pWZ6IKy" class="bai">远程教育</a><a href="train_list.php?lb=56CU56m255Sf6K++56iL6L+b5L+u54+t" class="bai">研究生进修班</a>
+</div>
+<div id="anylinkmenu3" class="anylinkcss">
+	<a href="train_list.php?lb=5pWZ5biI5Z+56K6t" class="bai">教师培训</a><a href="train_list.php?lb=5qCh6ZW/5Z+56K6t" class="bai">校长培训</a><a href="train_list.php?lb=5pWZ6IKy566h55CG5bmy6YOo5Z+56K6t" class="bai">教育管理干部培训</a>
+</div>
+<div id="anylinkmenu4" class="anylinkcss">
+        <a href="train_list.php?lb=5pWZ5biI6LWE5qC86K6k5a6a5Z+56K6t" class="bai">教师资格认定培训</a>
+        <a href="train_list.php?lb=5a+85ri46LWE5qC85Z+56K6t" class="bai" >导游资格培训</a>
+        <a href="train_list.php?lb=5LyB5Lia5Z+56K6t" class="bai" >企业培训</a>
+        <a href="train_list.php?lb=5pmu6YCa6K+d5Z+56K6t" class="bai" >普通话培训</a>
+        <a href="train_list.php?lb=5LiT5Lia5oqA5pyv5Lq65ZGY5Z+56K6t" class="bai" >专业技术人员培训</a>
+</div>
+<div id="anylinkmenu5" class="anylinkcss">
+	<a href="train_list1.php?lb=5pWZ56CU5Yqo5oCB" class="bai">教研动态</a><a href="train_list1.php?lb=5qCh5pys56CU5L+u" class="bai">校本研修</a><a href="xk_list.php?lb=5a2m6Zmi5a2m5YiK" class="bai">学院学刊</a>
+</div>
+<div id="anylinkmenu6" class="anylinkcss">
+<a href="teachers.php" class="bai">名师风采</a><a href="resources_list.php?lb=1" class="bai">精品教案</a><a href="resources_list.php?lb=2" class="bai">精品课件</a><a href="resources_list.php?lb=3" class="bai">优秀试卷</a><a href="video_list.php" class="bai">精彩视频</a><a href="Software_list.php" class="bai">实用软件</a>
+ </div>
+            <!--flash和快速导航-->
+            <div class="img">
+                <div class="left">
+                <script language='javascript'>
+			linkarr = new Array();
+			picarr = new Array();
+			textarr = new Array();
+			var swf_width=743;
+			var swf_height=200;
+			//文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
+			var configtg='0xffffff|3|0x3FA61F|5|0xffffff|0xC5DDBC|0x000033|5|3|1|_blank';
+			var files = "";
+			var links = "";
+			var texts = "";
+			//这里设置调用标记
+		
+					linkarr[1] ="";
+			picarr[1]  ="jy_ht/admin-templates/flash_img/1411011837.jpg";
+			textarr[1] ="";
+					linkarr[2] ="";
+			picarr[2]  ="jy_ht/admin-templates/flash_img/1411011819.jpg";
+			textarr[2] ="";
+					linkarr[3] ="";
+			picarr[3]  ="jy_ht/admin-templates/flash_img/1411011795.jpg";
+			textarr[3] ="";
+					linkarr[4] ="";
+			picarr[4]  ="jy_ht/admin-templates/flash_img/1411011777.jpg";
+			textarr[4] ="";
+					linkarr[5] ="";
+			picarr[5]  ="jy_ht/admin-templates/flash_img/1411011757.jpg";
+			textarr[5] ="";
+					linkarr[6] ="";
+			picarr[6]  ="jy_ht/admin-templates/flash_img/1411011721.jpg";
+			textarr[6] ="";
+					
+
+			for(i=1;i<picarr.length;i++){
+			if(files=="") files = picarr[i];
+			else files += "|"+picarr[i];
+			}
+			for(i=1;i<linkarr.length;i++){
+			if(links=="") links = linkarr[i];
+			else links += "|"+linkarr[i];
+			}
+			for(i=1;i<textarr.length;i++){
+			if(texts=="") texts = textarr[i];
+			else texts += "|"+textarr[i];
+			}
+			document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+			document.write('<param name="movie" value="bcastr3.swf"><param name="quality" value="high">');
+			document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+			document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'">');
+			document.write('<embed src="bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'&menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
+			</script>
+                </div>
+                <div class="right">
+                    <div class="kstd"><a href="Training/login.html"><img src="images/bg12.gif" /></a></div>
+                    <div class="kstd"><a href="train_list.php?lb=5pWZ5biI6LWE5qC86K6k5a6a5Z+56K6t"><img src="images/bg22.gif" /></a></div>
+                    <div class="kstd"><a href="train_list.php?lb=5pmu6YCa6K+d5Z+56K6t"><img src="images/bg32.gif" /></a></div>
+                    <div class="kstd"><a href="train_list.php?lb=5LiT5Lia5oqA5pyv5Lq65ZGY5Z+56K6t"><img src="images/bg42.gif" /></a></div>
+                   
+                </div>
+            </div>
+        </div>
+         <!--图片新闻和新闻公告-->
+    	    
+       	<div class="content">
+        	 <div class="c_left">
+             <div class="l_nav"><span>| 最新公告</span>  <a href="gg_list.php" class="bai">more... </a></div>
+              <DIV class=Scroller id=idScroller>
+    <DIV style="WIDTH:700px; border:#000000 solid 0px;">
+    <DIV class=ScrollMid id=idScrollMid>
+    <UL>
+        <LI><a href="gg_content.php?id=52" target="_blank"><span> · 宝鸡市2018年第一期普通话水平测试公告</span></a>[2018-03-20]</LI>
+  	
+   	    </UL>
+    </DIV></DIV></DIV>
+    <SCRIPT>
+    new Scroller("idScroller", "idScrollMid",{ Side:["up",""], PauseHeight:20, PauseWidth:487});
+    </SCRIPT>
+
+
+       
+
+
+       
+               
+            
+              		<div class="l_nav"><span>| 图片新闻</span>  <a href="img_n_list.php" class="bai">more... </a></div>
+                    
+                    	<div class="c_tp">
+                      
+                            <ul>
+                                                         <li> <a href="img_n_content.php?id=43"><img src="jy_ht/admin-templates/upload/1516687445.jpg" width="150px" height="130px" /><p onmousemove="深度学习促提升，研训一体共成长">深度学习促提升，研训...</p></a></li>
+                             
+                             
+                                                          <li> <a href="img_n_content.php?id=42"><img src="jy_ht/admin-templates/upload/1516687485.jpg" width="150px" height="130px" /><p onmousemove="搭建平台，促进学科建设；学思结合，浓厚学术氛围">搭建平台，促进学科建...</p></a></li>
+                             
+                             
+                                                          <li> <a href="img_n_content.php?id=41"><img src="jy_ht/admin-templates/upload/1516687650.jpg" width="150px" height="130px" /><p onmousemove="“宝鸡市家庭教育公益大讲堂”荣获宝鸡市全民终身学习品牌项目">“宝鸡市家庭教育公益...</p></a></li>
+                             
+                             
+                                                         </ul>
+                            
+                          
+                        </div>
+                        
+              </div>
+              
+              <div class="c_right">
+          
+    				
+                    		   <div class="r_nav"><span>| 学院新闻</span><a href="news_list.php" class="bai"> more...</a> </div>
+                               <div class="news">
+                               <dl >
+                                                                   
+                    <dd><span ><a href="news_content.php?id=515" title="">
+							建设一流科学教育馆，助力基础教育大发展 
+                             </a>
+                                       
+                                        </span> [2018-05-18]</dd>
+                                   
+                                   
+                                                                     
+                    <dd><span ><a href="news_content.php?id=514" title="">
+							2018年第一批中小学教师资格认定现场确认工作圆满... 
+                             </a>
+                                       
+                                        </span> [2018-05-18]</dd>
+                                   
+                                   
+                                                                     
+                    <dd><span ><a href="news_content.php?id=513" title="">
+							关于举办第二十九期宝鸡市家庭教育公益大讲堂主题报告... 
+                             </a>
+                                       
+                                        </span> [2018-05-18]</dd>
+                                   
+                                   
+                                                                     
+                    <dd><span ><a href="news_content.php?id=512" title="">
+							关于举办第二十八期宝鸡市家庭教育公益大讲堂主题报告... 
+                             </a>
+                                       
+                                        </span> [2018-05-18]</dd>
+                                   
+                                   
+                                                                     
+                    <dd><span ><a href="news_content.php?id=511" title="">
+							诵读经典，弘扬美德 
+                             </a>
+                                       
+                                        </span> [2018-05-10]</dd>
+                                   
+                                   
+                                                                     
+                    <dd><span ><a href="news_content.php?id=510" title="">
+							共享优质学习资源，促进全员共同发展 
+                             </a>
+                                       
+                                        </span> [2018-05-08]</dd>
+                                   
+                                   
+                                                                     
+                    <dd><span ><a href="news_content.php?id=509" title="">
+							规范测试流程，确保考试质量 
+                             </a>
+                                       
+                                        </span> [2018-05-08]</dd>
+                                   
+                                   
+                                                                     
+                    <dd><span ><a href="news_content.php?id=508" title="">
+							感悟信息化，开拓新视野；学习新技术，推动新发展 
+                             </a>
+                                       
+                                        </span> [2018-05-08]</dd>
+                                   
+                                   
+                                                                     
+                    <dd><span ><a href="news_content.php?id=507" title="">
+							宝鸡教育学院组织全体教职工深入学习贯彻党的十九大精... 
+                             </a>
+                                       
+                                        </span> [2018-05-08]</dd>
+                                   
+                                   
+                                                                     
+                    <dd><span ><a href="news_content.php?id=506" title="">
+							探究高考综合改革，促进基础教育发展 
+                             </a>
+                                       
+                                        </span> [2018-05-08]</dd>
+                                   
+                                   
+                                                                     
+                    <dd><span ><a href="news_content.php?id=504" title="">
+							厚植沃土，化育生命 
+                             </a>
+                                       
+                                        </span> [2018-05-08]</dd>
+                                   
+                                   
+                                                                     
+                    <dd><span ><a href="news_content.php?id=503" title="">
+							域外培训打造名师团队，自我加压促进师训创新 
+                             </a>
+                                       
+                                        </span> [2018-05-08]</dd>
+                                   
+                                   
+                                         	
+         </dl>
+                </div>
+                    		
+          </div>
+        	
+        </div>
+
+    <div class="db">
+       	 <div class="db_l">
+         			<div class="l_bg">
+         			  <p>友情链接 <span class="STYLE1">Link</span></p>
+		   </div>
+                    <div class="nei">
+            		        <ul>
+                                                         <li> <a href="http://www.moe.gov.cn/"><img src="jy_ht/admin-templates/upload/1516687929.jpg" width="81" height="32" style=" border:#CCCCCC solid 1px;" /></a></li>
+                                                          <li> <a href="http://www.chinaedu.edu.cn/"><img src="jy_ht/admin-templates/upload/1516687901.jpg" width="81" height="32" style=" border:#CCCCCC solid 1px;" /></a></li>
+                                                          <li> <a href="http://www.snedu.gov.cn/"><img src="jy_ht/admin-templates/upload/1516687868.jpg" width="81" height="32" style=" border:#CCCCCC solid 1px;" /></a></li>
+                                                          <li> <a href="http://www.sxbjedu.com/"><img src="jy_ht/admin-templates/upload/1513294453.jpg" width="81" height="32" style=" border:#CCCCCC solid 1px;" /></a></li>
+                                                          <li> <a href="https://www.baidu.com/"><img src="jy_ht/admin-templates/upload/1513294408.jpg" width="81" height="32" style=" border:#CCCCCC solid 1px;" /></a></li>
+                                                         </ul>
+                     
+                 </div>
+         </div>
+       <!-- <div class="db_r">
+        		<div class="cx_title"><p>实用查询</p></div>
+                
+               	 <div class="nei_a">
+                 	 <ul>
+                 	<li><a 
+
+href="http://www.weather.com.cn/weather/101110901.shtml" target="_blank"><img src="images/cx_bg.gif" /></a></li>
+                    <li><a 
+
+href="http://site.baidu.com/list/wannianli.htm" target="_blank"><img src="images/rili.gif" /></a></li>
+                    <li><a href="http://www.huoche.com.cn/" target="_blank"><img src="images/lieche.gif" /></a></li>
+                    <li><a href="http://www.chsi.com.cn/xlcx/lscx.jsp" target="_blank"><img src="images/xueli.gif" /></a></li>
+                 </ul>
+                 </div>
+        </div>-->
+            
+        </div>
+<div class="footer"> <p>版权所有：陕西省宝鸡教育学院&nbsp;&nbsp; 
+<a href="http://www.miibeian.gov.cn/" target="_blank">陕ICP备12008180号</a> <br />&nbsp;&nbsp;电话：0917-2790719 &nbsp;&nbsp;传真：0917-2790721  &nbsp;&nbsp;地址：宝鸡市大庆路29号&nbsp;&nbsp; 邮编：721004&nbsp;&nbsp;技术支持：<A href="http://www.jep.net.cn" target="_blank">捷普数码</A>  &nbsp;&nbsp;<a href="jy_ht/admin-templates/login.html">后台管理</a>
+</p> </div>
+</div>
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript   src='http://dcs.conac.cn/js/27/390/0000/40905964/CA273900000409059640001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

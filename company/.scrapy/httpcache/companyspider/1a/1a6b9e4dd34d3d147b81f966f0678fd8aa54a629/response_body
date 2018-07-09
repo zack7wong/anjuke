@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>丽江师范高等专科学校</title>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+        $(function () {
+            $('.nav ul>li').hover(function () {
+                $(this).children('dl').stop().slideToggle();
+            })
+        })
+</script>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.STYLE9 {	font-size: 13px;
+	color: #333333;
+}
+-->
+</style>
+</head>
+<body>
+<div class="header">
+    <div class="top"><img src="tp/top.jpg" width="1410" height="180" /></div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.asp">首页</a></li>
+		    <li><a href="/xxkk/index.asp">学校概况</a>
+            				<dl >
+                    <dt>
+					                        <a href='http://www.lj-edu.cn/xxkk/index.asp'>学校简介</a>
+                                            <a href='http://www.lj-edu.cn/xxkk/ljszf.asp'>丽江师专赋</a>
+                                            <a href='http://www.lj-edu.cn/xxkk/index1.asp'>基本信息</a>
+                                            <a href='http://www.lj-edu.cn/jsfy.asp'>校园风光</a>
+                                            <a href='http://www.lj-edu.cn/xxkk/xrld.asp'>现任领导</a>
+                                            <a href='http://www.lj-edu.cn/xxkk/jxss.asp'>基础设施</a>
+                                            <a href='http://www.lj-edu.cn/xxkk/zmxy.asp'>知名校友</a>                              </dt>
+                    <dd><img src="tmp/001.jpg" width="167" height="84"/></dd>
+                </dl>
+          </li>
+          		    <li><a href="http://www.lj-edu.cn/xbsz.asp">机构设置</a></li>
+          		    <li><a href="javascript:;">人才培养</a>
+
+				<dl class="yxdh">
+                    <dt>
+					                        <a href='http://www.lj-edu.cn/jwc/' target="_blank">教学工作</a>
+											<a href='http://www.lj-edu.cn/ljsz_rsc' target="_blank">人事工作</a>
+                                            <a href='http://www.lj-edu.cn/xsc/' target="_blank">学生工作</a>                  </dt>
+                    <dd><img src="tmp/004.jpg" width="167" height="84"/></dd>
+                </dl>
+	             </li>
+          	<li><a href="http://www.lj-edu.cn/type.asp?typeid=51">科学研究</a></li>
+          <li><a href="javascript:;">社会服务</a>
+            				<dl class="rcpy" >
+                    <dt>
+					                        <a href='http://www.lj-edu.cn/jsfzzx/'>教师发展中心</a>
+                                            <a href='http://www.lj-edu.cn/type.asp?typeID=81'>职业资格鉴定及非学历考试中心</a>
+                                            <a href='http://www.lj-edu.cn/jxjyxy/'>继续教育学院</a>                           </dt>
+                    <dd><img src="tmp/003.jpg" width="167" height="84"/></dd>
+                </dl>
+          </li>
+          		    <li><a href="http://www.lj-edu.cn/LJSZ_mys/">文化传承</a></li>
+          		    <li><a href="http://www.lj-edu.cn/LJSZ_djgzw/index.asp">党建工作</a></li>
+          		    <li><a href="javascript:;">信息公开</a>
+            				<dl class="rcpy" >
+                    <dt>
+					                        <a href='#'>教务公开</a>
+                                            <a href='type.asp?typeID=29'>校务公开</a>                              </dt>
+                    <dd><img src="tmp/002.jpg" width="167" height="84"/></dd>
+                </dl>
+          </li>
+      </ul>
+    </div>
+</div>
+
+<div class="sel">
+<table width="1410" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="604" background="xh/bk_k.gif"><div align="center"><a href="http://www.ynjy.cn/"><img src="xh/jh1.jpg" width="248" height="30" border="0" /></a></div></td>
+    <td width="314" background="xh/bk_k.gif"><div align="right"><span class="6">&mdash;各部门&mdash;&mdash;
+              <select name="jumpMenu2" id="jumpMenu2" onChange="MM_jumpMenu('parent',this,0)">
+                <option>&mdash;&mdash;请选择&mdash;&mdash;</option>
+                <option value="dzb">党政办公室</option>
+                <option value="LJSZxcb">宣传统战部</option>
+                <option value="jxjyxy">继续教育学院</option>
+                <option value="LJSZjsc">监察审计处</option>
+                <option value="JWC">教务处</option>
+                <option value="type.asp?typeid=54">纪委办</option>
+                <option value="stu.asp?typeid=31">财务处</option>
+                <option value="type.asp?typeid=51">科技处</option>
+                <option value="type.asp?typeID=24">后勤处</option>
+                <option value="ghwyh">工会委员会</option>
+                <option value="xsc">学生处</option>
+                <option value="stu.asp?typeid=38">保卫处</option>
+                <option value="http://ljsztw.yn.qnzs.youth.cn/wsgqt/index">校团委</option>
+                <option value="LJTC_OICE">对外合作交流处</option>
+                <option value="LJSZ_gzb">国资处</option>
+                <option value="ljsz_tsg">图书馆</option>
+                <option value="zsjyw">招就处</option>
+				<option value="ljsz_rsc">人事处</option>
+                <option value="ljsz_zzb">组织部</option>
+                <option value="ljsz_mys">民族文化研究所</option>
+                <option value="jsfzzx">教师发展中心</option>
+                <option value="type.asp?typeID=81">职业资格鉴定及非学历考试中心</option>
+                <option value="type.asp?typeID=82">教学服务中心</option>
+              </select>
+    </span></div></td>
+    <td width="241" background="xh/bk_k.gif"><div align="right"><span class="6">&mdash;&mdash;教学系&mdash;&mdash;
+              <select name="jumpMenu" id="jumpMenu" onChange="MM_jumpMenu('parent',this,0)">
+                <option>&mdash;&mdash;请选择&mdash;&mdash;</option>
+                <option value="type.asp?typeid=88">学前教育学院</option>
+				<option value="type.asp?typeid=89">教师教育学院</option>
+				<option value="type.asp?typeid=90">国际旅游与工商管理学院</option>
+				<option value="type.asp?typeid=91">东巴艺术学院</option>
+				<option value="type.asp?typeid=92">应用技术学院</option>
+				<option value="type.asp?typeid=93">足球运动职业学院</option>
+				<option value="type.asp?typeid=94">公共体育教学部</option>
+				<option value="zwx">中文系</option>
+                <option value="LJSZ_ljx">旅经系</option>
+                <option value="type.asp?typeid=52">数计系</option>
+                <option value="type.asp?typeid=12">生科系</option>
+                <option value="wyx">外语系</option>
+                <option value="jykxx">教科系</option>
+                <option value="ljsz_szb">思政部</option>
+                <option value="type.asp?typeID=33">艺术系</option>
+                <option value="ljsz_tyx">体育系</option>
+              </select>
+    </span></div></td>
+    <td width="121" background="images/bk_k.gif">&nbsp;</td>
+  </tr>
+</table>
+</div>
+<div class="cenall">
+<table width="1410" height="514" border="0" align="center" cellpadding="0" cellspacing="0" background="tp1/bj1.jpg">
+  <!--DWLayoutTable-->
+  <tr>
+    <td width="211" height="264" background="tp1/bj1.jpg">&nbsp;</td>
+    <td colspan="3" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="987" height="264" background="tp1/in2.jpg">&nbsp;</td>
+        </tr>
+    </table></td>
+    <td width="212">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="38">&nbsp;</td>
+    <td width="485" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="485" height="38"><img src="tp1/an1.jpg" width="485" height="38" border="0" usemap="#Map" /></td>
+        </tr>
+    </table></td>
+    <td width="17" rowspan="2" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="17" height="204" background="tp1/k1.jpg">&nbsp;</td>
+      </tr>
+    </table>    </td>
+    <td width="485" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="485" height="38"><img src="tp1/an2.jpg" width="485" height="38" border="0" usemap="#Map2" /></td>
+        </tr>
+    </table></td>
+    <td>&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td height="166"></td>
+    <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="485" height="166"><table height="166" cellspacing="0" cellpadding="0" width="485" border="0">
+          <tbody>
+            <tr>
+              <td width="17" valign="top" background="xh/line_012.jpg">&nbsp;</td>
+              <td width="345" height="144" valign="top" background="xh/line_01.jpg"><script src="news.asp?typeid=25&amp;shu=7"></script></td>
+              <td width="28" valign="top" background="xh/line_01.jpg"><table width="10" height="6" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <th scope="col"></th>
+                  </tr>
+                </table>
+                  <img src="xhimages/new.gif" /><br />
+                  <br />
+                  <img src="xhimages/new.gif" /><br />
+                  <br />
+                  <img src="xhimages/new.gif" /></td>
+            </tr>
+          </tbody>
+        </table></td>
+        </tr>
+    </table></td>
+    <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="485" height="166"><table height="166" cellspacing="0" cellpadding="0" width="485" border="0">
+          <tbody>
+            <tr>
+              <td width="17" valign="top" background="xh/line_012.jpg">&nbsp;</td>
+              <td width="345" height="144" valign="top" background="xh/line_01.jpg"><script src="news.asp?typeid=7&amp;shu=7"></script></td>
+              <td width="28" valign="top" background="xh/line_01.jpg"><table width="10" height="6" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <th scope="col"></th>
+                  </tr>
+                </table>
+                  <img src="xhimages/new.gif" /><br />
+                  <br />
+                  <img src="xhimages/new.gif" /><br />
+                  <br />
+                  <img src="xhimages/new.gif" /></td>
+            </tr>
+          </tbody>
+        </table></td>
+        </tr>
+    </table></td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td height="46">&nbsp;</td>
+    <td colspan="3" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="987" height="46"><div align="center" class="STYLE9">
+          <p><a href="http://www.lj-edu.cn/type.asp?typeid=62">会议通知</a> | <a href="http://www.lj-edu.cn/type.asp?typeID=29">校务公开</a> | <a href="http://www.lj-edu.cn/mail/index.asp">电子邮件</a> | <a href="http://www.lj-edu.cn/zlgcw/Index.asp">质量工程</a> | <a href="http://192.168.210.83/seeyon/main.do">办公系统</a> | <a href="http://www.lj-edu.cn/jwglpt.asp">教务管理平台</a> | <a href="http://218.202.50.42:86/">数字财务</a> | <a href="http://www.lj-edu.cn:83/G2S/ShowSystem/Index.aspx">课程中心</a> | <a href="http://192.168.210.81:8001/zcgl">资产管理信息系统</a> <a href="http://www.lj-edu.cn/page.html"> | 书记信箱</a> | <a href="http://www.lj-edu.cn/page1.html">纪委邮箱</a> | <a href="http://www.lj-edu.cn/ljszxzxx/">校长信箱 </a>| <a href="http://www.lj-edu.cn/type.asp?typeID=79">校历</a> | <a href="http://www.lj-edu.cn/szb_szjy/">大学生思想政治教育 | </a><a href="http://www.lj-edu.cn/ljsz_zzb/type.asp?typeid=44">扶贫攻坚</a> | <a href="http://www.wenming.cn/">中国文明网</a>| <a href="http://www.gfbzb.gov.cn/">全国征兵网</a> | <a href="http://www.sizhengwang.cn/">全国高校思政工作网</a> |  <a href="http://www.lj-edu.cn/type.asp?typeid=84">文明单位创建</a>| <a href="type.asp?typeid=96">世界读书日</a> | <a href="type.asp?typeid=87">职业教育活动周</a> |</p>
+          </div></td>
+      </tr>
+    </table>
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</div>
+<script language="JavaScript"> 
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //select选择跳转 v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.STYLE6 {color: #333333}
+-->
+</style>
+<table width="1410" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="95" align="center" valign="top" bgcolor="#FFFFFF"><table width="850" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+<b></b>
+          <td width="850" height="30" align="center"><a href="index.asp#">联系我们</a> | <a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.lj-edu.cn');" href="javascript:;">设为首页</a> | <a onclick="window.external.AddFavorite(location.href,document.title);" href="javascript:;">加入收藏</a> | <a href="bbs/">教育论坛</a> | <a href="#">网站声明</a></td>
+        </tr>
+      </table>
+        <table width="900" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="1" background="xh/hengxian1.gif"></td>
+          </tr>
+        </table>
+        <table width="799" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="97" height="71" align="center" valign="middle"><font color="#ff3300"><a href=/ style="margin-left:-2010px">--</a></font>
+			</td>
+            <td width="60" align="center" valign="middle"><a href="http://61.159.214.200:81/RecValidate/RecView.aspx?RecordID=53070203302004"><img src="../xh/BA.jpg" width="60" height="67" border="0" /></a></td>
+            <td width="81" align="center" valign="middle"><div align="left"><a href="http://www.yn.cyberpolice.cn/"><img src="../xh/g1.jpg" width="80" height="81" border="0" /></a></div></td>
+            <td width="365" align="center" valign="middle"><p align="center" style="line-height: 150%">
+                <script language="JavaScript" src="include/counter.asp" type="text/javascript"></script>
+              <br />
+                <span class="STYLE6">校址：云南省丽江市古城新团片区|邮编：<font face="宋体">674199 <br />
+                版权所有：丽江师范高等专科学校<br />
+                行政邮箱：ljszedu@163.com<br />
+                招生热线：0888-3196076||15770407977<br />
+                </font></span><br/>
+                </p>
+				<div style="width:300px;margin:0 auto; padding:20px 0;">
+		 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=53070202001017" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://www.beian.gov.cn/file/ghs.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">滇公网安备 53070202001017号</p></a>
+		 	</div></td>
+            <td width="196" align="left" valign="middle"><div align="left"><a href="http://www.yn.cyberpolice.cn/"></a><a href="http://www.yn.cyberpolice.cn/"><img src="../xh/g2.jpg" width="79" height="81" border="0" /></a></div></td>
+          </tr>
+        </table>
+		<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/25/000/0000/60687498/CA250000000606874980002.js' type='text/javascript'%3E%3C/script%3E"));</script>
+      </td>
+    </tr>
+</table>
+<Script src="js/ad-01.js"></script>
+<map name="Map" id="Map">
+<area shape="rect" coords="430,11,475,31" href="type.asp?typeid=25" />
+</map>
+<map name="Map2" id="Map2"><area shape="rect" coords="434,13,473,30" href="type.asp?typeid=7" />
+</map></body>
+</html>

@@ -1,0 +1,695 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="baidu-site-verification" content="6yagXvahHd" />
+<meta http-equiv=”Cache-Control” content=”no-transform” />
+<meta http-equiv=”Cache-Control” content=”no-siteapp” />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<param name="wmode" value="opaque">
+<title>江西外语外贸职业学院</title>
+<link href="/templets/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/templets/javascripts/jquery.js"></script>
+<script type="text/javascript" src="/templets/javascripts/piaofu.js"></script>
+<script type="text/javascript" src="/templets/javascripts/mkit.js"></script>
+<script type="text/javascript" src="/templets/javascripts/common.js"></script>
+<script type="text/javascript" src="/templets/javascripts/change.js"></script>
+<script type="text/javascript" src="/templets/javascripts/class.js"></script>
+<script type="text/javascript"><!--新闻切换-->
+  window.onload = function()
+  {
+	
+	var dd1 = new opCard();
+	dd1.bind = ["partName1","a","partDiv1","ul"];
+	dd1.style = ["","on",""];
+	dd1.auto = [false, 6000];
+	dd1.overChange = true;
+	dd1.creat();
+	dd1 = null;
+    var dd2 = new opCard();
+	dd2.bind = ["partName2","a","partDiv2","ul"];
+	dd2.style = ["","on",""];
+	dd2.auto = [false, 6000];
+	dd2.overChange = true;
+	dd2.creat();
+	dd2 = null;
+  }
+  </script>
+</head>
+<script language="javascript" type="text/javascript" src="/resource/js/jquery-1.7.1.min.js"></script>
+<script language="javascript" type="text/javascript" src="/resource/js/jspublic.js"></script>
+<body>
+<script type="text/javascript">
+function off(obj){
+document.getElementById(obj).style.display="none";
+}
+</script>
+<div class="main">
+<div class="top">
+<span id="localtime"></span>
+<script type="text/javascript">
+	function showLocale(objD)
+	{
+		var str,colorhead,colorfoot;
+		var yy = objD.getYear();
+		if(yy<1900) yy = yy+1900;
+		var MM = objD.getMonth()+1;
+		if(MM<10) MM = '0' + MM;
+		var dd = objD.getDate();
+		if(dd<10) dd = '0' + dd;	
+		var ww = objD.getDay();
+		if  ( ww==0 )  colorhead="<font color=\"#000\">";
+		if  ( ww > 0 && ww < 6 )  colorhead="<font color=\"#000\">";
+		if  ( ww==6 )  colorhead="<font color=\"#000\">";
+		if  (ww==0)  ww="星期日";
+		if  (ww==1)  ww="星期一";
+		if  (ww==2)  ww="星期二";
+		if  (ww==3)  ww="星期三";
+		if  (ww==4)  ww="星期四";
+		if  (ww==5)  ww="星期五";
+		if  (ww==6)  ww="星期六";
+		colorfoot="</font>"
+		str = colorhead + yy + "年" + MM + "月" + dd + "日" + " "  + ww + colorfoot;
+		return(str);
+	}
+	function tick()
+	{
+		var today;
+		today = new Date();
+		document.getElementById("localtime").innerHTML = showLocale(today);
+		window.setTimeout("tick()", 10);
+	}
+	tick();
+</script>
+<script>
+$(function(){
+	
+$('.nicai').hover(function(){
+	$('.qrcode').css({'display':'block','backgroundColor':'#fff'});
+},function(){
+	$('.qrcode').css('display','none');
+});
+
+})
+</script>
+<div class="gsgg_wrap" style="height:30px;width:350px;border:none;">
+  <p style="float:left;padding-right:10px;font-size:14px;">关注我们:</p><img src="/templets/images/weixin.gif" class="nicai" style="float:left;cursor:pointer;padding:2px;">
+<div class="qrcode"><img src="/templets/images/erweima.png"></div>
+  
+
+  
+   <form action="/Search_loadList" method="post" id="FieldSearchForm">
+	<input type="text" name="title"  placeholder="请输入关键字" style="width:174px;height:26px;line-height:26px;float:left;" class="inp"  /><input type="submit" value="" style="background:url(/templets/images/sbtn.jpg);width:70px;height:30px;cursor:pointer;float:right;border:0px;"  />
+    </form>
+</div>
+
+</div>
+<div class="header">
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="980" height="205">
+    <param name="movie" value="/templets/images/top.swf" />
+    <param name="quality" value="high" />
+    <param name="wmode" value="transparent">
+    <embed src="/templets/images/top.swf" wmode="transparent" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="980" height="205"></embed>
+  </object>
+</div>
+<div class="nav">
+  <ul>
+  <div style=" float:left;">
+	<li><a href="/">网站首页</a> </li>
+	<li><a href="/html/2015/4-28/n38584065.html">学院概况</a>
+	  <dl>
+	  
+		<dd><a href="/html/wmxyjs/index.html">学院介绍</a></dd>
+	  
+		<dd><a href="/html/wmzyry/index.html">主要荣誉</a></dd>
+	  
+		<dd><a href="/html/wmxrld/index.html">现任领导</a></dd>
+	  
+		<dd><a href="/html/dsj/index.html">大事记</a></dd>
+	  
+	  </dl>
+	</li>
+	
+	<li><a href="/html/wmjgsz/index.html">机构设置</a></li>
+	
+    
+    	<li><a href="/html/wmjxky/index.html">教学科研</a>	
+	  <dl>
+		<dd><a href="http://jwc.jxcfs.com/" target="_blank">教学信息</a></dd>
+        <dd><a href="http://kyc.jxcfs.com/" target="_blank">科研信息</a></dd>
+	  </dl>
+	</li>
+	<li><a href="http://zjc.jxcfs.com/" target="_blank">招生就业</a></li>
+    	<li><a href="http://test15.jxcfs.com" target="_blank">国际交流</a>	
+	  <dl>
+		<dd><a href="http://px.jxcfs.com/" target="_blank">援外培训</a></dd>
+        <dd><a href="http://test15.jxcfs.com" target="_blank">对外交流</a></dd>
+	  </dl>
+	</li>
+	<li><a href="http://library.jxcfs.com/" target="_blank">图书馆</a></li>
+	<li><a href="http://jcjxb.jxcfs.com/" target="_blank">党建思政</a></li>
+	<li><a href="http://tw.jxcfs.com/"  target="_blank">团学在线</a></li>
+
+  </div>
+  </ul>
+</div>
+
+<div style="margin-top:10px;">
+    <a href="http://www.jxcfs.com/html/2017/11-13/n08345043.html" target="_blank"><img src="/templets/images/qz.png"></a>
+  </div>
+<table width="980" border="0" cellspacing="0" cellpadding="0" align="center" class="mt10">
+  <tr>
+    <td width="570">
+	  <div id="fsD1" class="focus">
+      <div id="D1pic1" class="fPic">
+	  
+        <div class="fcon"><a href="http://www.jxcfs.com/html/2018/4-23/n62605179.html" target="_blank" title="学院召开党委中心组（扩大）理论学习会"><img src="/_mediafile/wywm/files/20180523092934594.jpg"></a><span class="shadow"><a href="http://www.jxcfs.com/html/2018/4-23/n62605179.html" target="_blank" title="学院召开党委中心组（扩大）理论学习会">学院召开党委中心组（扩大）理论学习会</a></span></div>
+      
+        <div class="fcon"><a href="http://www.jxcfs.com/html/2018/4-24/n28675179.html" target="_blank" title="学校举办“唱响主旋律 筑梦新时代”红五月合唱比赛"><img src="/_mediafile/wywm/files/20180524080734202.jpg"></a><span class="shadow"><a href="http://www.jxcfs.com/html/2018/4-24/n28675179.html" target="_blank" title="学校举办“唱响主旋律 筑梦新时代”红五月合唱比赛">学校举办“唱响主旋律 筑梦新时代”红五月合唱比赛</a></span></div>
+      
+        <div class="fcon"><a href="http://www.jxcfs.com/html/2018/4-14/n08465179.html" target="_blank" title="学校举行2018年“文化艺术技能展示月暨职业活动周”启动仪式"><img src="/_mediafile/wywm/files/20180514093830636.jpg"></a><span class="shadow"><a href="http://www.jxcfs.com/html/2018/4-14/n08465179.html" target="_blank" title="学校举行2018年“文化艺术技能展示月暨职业活动周”启动仪式">学校举行2018年“文化艺术技能展示月暨职业活动周”启动...</a></span></div>
+      
+        <div class="fcon"><a href="http://www.jxcfs.com/html/2018/3-28/n08935179.html" target="_blank" title="学校举行创业学院首届开学典礼暨第四届“互联网+”大学生创新创业大赛启动式"><img src="/_mediafile/wywm/files/20180428164205896.jpg"></a><span class="shadow"><a href="http://www.jxcfs.com/html/2018/3-28/n08935179.html" target="_blank" title="学校举行创业学院首届开学典礼暨第四届“互联网+”大学生创新创业大赛启动式">学校举行创业学院首届开学典礼暨第四届“互联网+”大学生...</a></span></div>
+      
+        <div class="fcon"><a href="http://www.jxcfs.com/html/2018/3-28/n95925179.html" target="_blank" title="“2018年发展中国家矿产资源开发与管理研修班” 等3期研修班联合结业典礼在我校顺利举行"><img src="/_mediafile/wywm/files/20180428082909333.jpg"></a><span class="shadow"><a href="http://www.jxcfs.com/html/2018/3-28/n95925179.html" target="_blank" title="“2018年发展中国家矿产资源开发与管理研修班” 等3期研修班联合结业典礼在我校顺利举行">“2018年发展中国家矿产资源开发与管理研修班” 等3期研...</a></span></div>
+      
+
+      </div>
+      <div class="fbg">
+        <div class="D1fBt" id="D1fBt">
+		  <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"></a>
+		  <a href="javascript:void(0)" hidefocus="true" target="_self"></a>
+		  <a href="javascript:void(0)" hidefocus="true" target="_self"></a>
+		  <a href="javascript:void(0)" hidefocus="true" target="_self"></a>
+		  <a href="javascript:void(0)" hidefocus="true" target="_self"></a>
+		</div>
+      </div>
+      <span class="prev"></span>
+	  <span class="next"></span>
+	</div>
+	<script type="text/javascript" src="/templets/javascripts/koala.min.1.5.js"></script>
+    <script type="text/javascript">
+		Qfast.add('widgets', { path: "/templets/javascripts/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+		Qfast(false, 'widgets', function () {
+			K.tabs({
+				id: 'fsD1',   //焦点图包裹id  
+				conId: "D1pic1",  //** 大图域包裹id  
+				tabId:"D1fBt",  
+				tabTn:"a",
+				conCn: '.fcon', //** 大图域配置class       
+				auto: 1,   //自动播放 1或0
+				//effect: 'fade',   效果配置
+				eType: 'click', //** 鼠标事件
+				pageBt:true,//是否有按钮切换页码
+				bns: ['.prev', '.next'],//** 前后按钮配置class                          
+				interval: 5000  //** 停顿时间  
+			}) 
+		})  
+	</script>
+	</td>
+    <td width="9"> </td>
+    <td width="374">
+	  <div class="zxdt_wrap" style="height:310px;">
+	    <dl class="title_wrap">
+		  <dt><img src="/templets/images/titbg3.jpg" /></dt>
+		  <dt class="tit">学院新闻</dt>
+		  
+		  <dt class="more"><a href="/html/wmzxdt/index.html">更多>></a></dt>
+		  
+		</dl>
+		<ul class="zxdt_list">
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-29</span><a href="http://www.jxcfs.com/html/2018/4-29/n32285179.html" target="_blank" title="学校召开招生就业工作推进会暨2016-2018年度毕业生就业工作评估布置会">·学校召开招生就业工作推进会暨2016-201...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-29</span><a href="http://www.jxcfs.com/html/2018/4-29/n77385179.html" target="_blank" title="我“行”我“素”——记学院素食节活动">·我“行”我“素”——记学院素食节活动</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-29</span><a href="http://www.jxcfs.com/html/2018/4-29/n90265179.html" target="_blank" title="我校举办心理健康教育专题讲座">·我校举办心理健康教育专题讲座</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-29</span><a href="http://www.jxcfs.com/html/2018/4-29/n27335179.html" target="_blank" title="我校召开第四届“互联网+”大学生创新创业大赛工作推进会暨2018年高校创新创业教育专项督导工作调度会">·我校召开第四届“互联网+”大学生创新创...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-28</span><a href="http://www.jxcfs.com/html/2018/4-28/n12115179.html" target="_blank" title="孔华、黄明忠一行到禁毒宣教馆调研并指导工作">·孔华、黄明忠一行到禁毒宣教馆调研并指...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-28</span><a href="http://www.jxcfs.com/html/2018/4-28/n58015179.html" target="_blank" title="院领导参加英语学院公开教学活动">·院领导参加英语学院公开教学活动</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-28</span><a href="http://www.jxcfs.com/html/2018/4-28/n90585179.html" target="_blank" title="我校与南昌新四军军部旧址陈列馆共建思想政治理论课实践教学基地">·我校与南昌新四军军部旧址陈列馆共建思...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-28</span><a href="http://www.jxcfs.com/html/2018/4-28/n33215179.html" target="_blank" title="擦亮“外”字招牌">·擦亮“外”字招牌</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-27</span><a href="http://www.jxcfs.com/html/2018/4-27/n41335179.html" target="_blank" title="喜讯：我校应用本科班学生赴台湾地区参加国际比赛荣获一等奖">·喜讯：我校应用本科班学生赴台湾地区参...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-27</span><a href="http://www.jxcfs.com/html/2018/4-27/n90755179.html" target="_blank" title="热烈祝贺国际商务学院荣获2018年全国职业院校技能大赛高职组“互联网+国际贸易综合技能”赛项一等奖">·热烈祝贺国际商务学院荣获2018年全国职...</a></li>
+		
+
+		</ul>
+	  </div>
+	</td>
+    
+  </tr>
+</table>
+
+<table width="980" border="0" cellspacing="0" cellpadding="0" align="center" class="mt10">
+  <tr>
+    <td width="715">
+    <script type="text/javascript" src="/templets/javascripts/jquery.SuperSlide.js"></script>
+    <div class="focusBox9">
+                    <ul class="pic" style="position: relative; width: 715px; height: 97px;">
+
+	  <li><a href="http://www.jxcfs.com/Content_loadContent?id=451688461429" target="_blank"><img src="http://www.jxcfs.com/_mediafile/wywm/files/152749557326930.jpg" /></a></li>
+	   
+	  <li><a href="http://www.jxcfs.com/html/xxgcsjdjs/index.html" target="_blank"><img src="http://www.jxcfs.com/_mediafile/wywm/files/1515569787290437.jpg" /></a></li>
+	   
+	  <li><a href="http://test5.jxcfs.com/" target="_blank"><img src="http://www.jxcfs.com/_mediafile/wywm/files/1522388784749862.jpg" /></a></li>
+	   
+	  <li><a href="#" target="_blank"><img src="http://www.jxcfs.com/_mediafile/wywm/files/147349318811894.jpg" /></a></li>
+	   
+	  <li><a href="#" target="_blank"><img src="http://www.jxcfs.com/_mediafile/wywm/files/1467603891338522.jpg" /></a></li>
+	   
+                   </ul>
+                    <ul class="num">
+                      <li class="on"><a></a><span></span></li>
+                      <li class=""><a></a><span></span></li>
+                      <li class=""><a></a><span></span></li>
+                      <li class=""><a></a><span></span></li>
+                       <li class=""><a></a><span></span></li>
+                    </ul>
+                  </div>
+        <script type="text/javascript">
+          jQuery(".focusBox9").slide({ titCell:".num li", mainCell:".pic",effect:"fold", autoPlay:true,trigger:"click",startFun:function(i){jQuery(".focusBox9 .txt li").eq(i).animate({"bottom":30}).siblings().animate({"bottom":-60});}});
+	       </script>
+           </td>
+	
+    <td width="15"> </td>
+    <td width="250">
+       
+	  <div class="ztlj"><a href="/html/xyglsptshdjzl/index.html" target="_blank"><img src="/_mediafile/wywm/files/1463725187228223.jpg" /></a></div>
+	   
+	  <div class="ztlj"><a href="http://www.jadl.net/" target="_blank"><img src="/_mediafile/wywm/files/1463711409995975.jpg" /></a></div>
+	   
+	</td>
+  </tr>
+</table>
+
+<table width="980" border="0" cellspacing="0" cellpadding="0" align="center" class="mt10">
+  <tr>
+    <td width="715">
+	  <div class="list_wrap" id="partDiv1">
+	    <dl>
+		  <dt class="tit1" id="partName1">
+          <a href="/html/wmgsgg/index.html">公示公告</a>
+          <a href="/html/wjtz/index.html">文件通知</a>
+          </dt>
+		</dl>
+		<ul class="new">
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-15</span><a href="http://www.jxcfs.com/html/2018/4-15/n05185179.html" target="_blank" title="江西好望投资咨询有限公司关于江西省外语外贸职业学院消防维保项目 (采购编号：HWZC18011)竞争性磋商采购公告">·江西好望投资咨询有限公司关于江西...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-14</span><a href="http://www.jxcfs.com/html/2018/4-14/n10735179.html" target="_blank" title="江西省鼎跃招标咨询有限公司关于江西省江西外语外贸职业学院晚会服装、道具租赁项目（采购编号：JXDY2018-F0027）竞争性谈判采购成交结果公告">·江西省鼎跃招标咨询有限公司关于江...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-03</span><a href="http://www.jxcfs.com/html/2018/4-7/n57695179.html" target="_blank" title="江西省鼎跃招标咨询有限公司关于江西外语外贸职业学院晚会服装、道具租赁项目(采购编号：JXDY2018-F0027)竞争性谈判采购公告">·江西省鼎跃招标咨询有限公司关于江...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-04-25</span><a href="http://www.jxcfs.com/html/2018/3-25/n82115178.html" target="_blank" title="2018年5月份副科以上干部值班安排表">·2018年5月份副科以上干部值班安排表</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-03-28</span><a href="http://www.jxcfs.com/html/2018/2-28/n33185076.html" target="_blank" title="2018年4月份副科以上干部值班安排表">·2018年4月份副科以上干部值班安排表</a></li>
+		
+
+		</ul>
+        <ul class="new">
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-24</span><a href="http://www.jxcfs.com/html/2018/4-24/n25985179.html" target="_blank" title="关于印发《江西外语外贸职业学院2018年宪法学习宣传教育活动方案》的通知">·关于印发《江西外语外贸职业学院20...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-23</span><a href="http://www.jxcfs.com/html/2018/4-23/n02645179.html" target="_blank" title="关于成立学院食品安全工作领导小组和食品安全事故应急工作领导小组的通知">·关于成立学院食品安全工作领导小组...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-17</span><a href="http://www.jxcfs.com/html/2018/4-17/n19245179.html" target="_blank" title="关于召开院党委中心组（扩大）理论学习会的通知">·关于召开院党委中心组（扩大）理论...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-16</span><a href="http://www.jxcfs.com/html/2018/4-16/n69175179.html" target="_blank" title="关于组织微信制作培训的通知">·关于组织微信制作培训的通知</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-04-26</span><a href="http://www.jxcfs.com/html/2018/3-26/n85475179.html" target="_blank" title="关于组织开展2018年江西省百万网民学专利法专场竞赛活动的通知">·关于组织开展2018年江西省百万网民...</a></li>
+		
+
+		</ul>
+	  </div>
+	  <div class="list_wrap" style="margin-left:11px;">
+	    <dl>
+		  <dt class="tit">院系动态</dt>
+		  
+		  <dt class="more"><a href="/html/wmxbdt/index.html">更多>></a></dt>
+		 
+		</dl>
+		<ul class="new">
+		 
+		  <li style="border-bottom:none;"><span class="date">2018-05-28</span><a href="http://www.jxcfs.com/html/2018/4-28/n30925179.html" target="_blank" title="应用东语学院学生获学院教育发展基金会留学资助">·应用东语学院学生获学院教育发展基...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-28</span><a href="http://www.jxcfs.com/html/2018/4-28/n18465179.html" target="_blank" title="师生共读  品味经典  润心有道  健康成长">·师生共读  品味经典  润心有道  健...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-28</span><a href="http://www.jxcfs.com/html/2018/4-28/n45305179.html" target="_blank" title="会计金融学院举办“2018年第八届技能节技能竞赛之手工做账”比赛">·会计金融学院举办“2018年第八届技...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-25</span><a href="http://www.jxcfs.com/html/2018/4-25/n35055179.html" target="_blank" title="工商管理学院（旅游学院）成功举办 第五届学生技能竞赛节之市场营销技能大赛">·工商管理学院（旅游学院）成功举办...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-25</span><a href="http://www.jxcfs.com/html/2018/4-22/n17545179.html" target="_blank" title="强基础 筑初心 英语学院党总支举办党建知识竞赛">·强基础 筑初心 英语学院党总支举办...</a></li>
+		
+
+		</ul>
+	  </div>
+	  <div class="list_wrap" style="margin-top:10px;">
+	    <dl>
+		  <dt class="tit">教学科研</dt>
+		  
+		  <dt class="more"><a href="/html/wmjxky/index.html">更多>></a></dt>
+		 
+		</dl>
+		<ul class="new">
+		  
+		  <li style="border-bottom:none;"><span class="date">2018-05-29</span><a href="http://www.jxcfs.com/html/2018/4-29/n40655179.html" target="_blank" title="默默耕耘 汇果成展">·默默耕耘 汇果成展</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-28</span><a href="http://www.jxcfs.com/html/2018/4-28/n25335179.html" target="_blank" title="我校14级应用本科班毕业论文答辩顺利完成">·我校14级应用本科班毕业论文答辩顺...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-15</span><a href="http://www.jxcfs.com/html/2018/4-15/n91265179.html" target="_blank" title="用笔墨光影绘宏村印象">·用笔墨光影绘宏村印象</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-15</span><a href="http://www.jxcfs.com/html/2018/4-15/n09555179.html" target="_blank" title="国际商务学院邀请跨境电商企业专家来我校讲座">·国际商务学院邀请跨境电商企业专家...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-10</span><a href="http://www.jxcfs.com/html/2018/4-10/n71995179.html" target="_blank" title="国际商务学院会展策划与管理专业教师受邀参加2018第七届省际会展专业掌门人圆桌会议">·国际商务学院会展策划与管理专业教...</a></li>
+		
+
+		</ul>
+	  </div>
+	  <div class="list_wrap" style="margin-top:10px; margin-left:11px;" id="partDiv2">
+	    <dl>
+		  <dt class="tit1" id="partName2">
+          <a href="/html/wmmtjj/index.html">媒体聚焦</a>
+          <a href="/html/wmzhxx/index.html">综合信息</a></dt>
+		</dl>
+		<ul class="new">
+		 
+		  <li style="border-bottom:none;"><span class="date">2018-05-29</span><a href="http://edu.jxnews.com.cn/system/2018/05/29/016933355.shtml" target="_blank" title="【中国江西网】江西外语外贸职业学院荣获2018年全国职业院校技能大赛高职组“互联网+国际贸易综合技能”赛项一等奖">·【中国江西网】江西外语外贸职业学...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-29</span><a href="http://jx.ifeng.com/a/20180528/6610524_0.shtml" target="_blank" title="【凤凰网】江西外语外贸职业学院获国赛互联网+国贸综合技能赛项一等奖">·【凤凰网】江西外语外贸职业学院获...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-29</span><a href="http://bbs1.people.com.cn/post/129/1/2/167631228.html" target="_blank" title="【人民网强国论坛】互联网+国际贸易综合技能大赛举行 江西外语外贸职业学院获奖">·【人民网强国论坛】互联网+国际贸易...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-29</span><a href="http://jx.people.com.cn/GB/n2/2018/0528/c186330-31635695.html" target="_blank" title="【人民网】互联网+国际贸易综合技能大赛举行 江西外语外贸职业学院获奖">·【人民网】互联网+国际贸易综合技能...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-29</span><a href="http://xxgk.jxfz.gov.cn/lc/bmgkxx/shwj/gzdt/zwdt/201805/t20180528_3324410.htm" target="_blank" title="【抚州市临川区政府】江西外语外贸职业学院荣获2018年全国职业院校技能大赛高职组“互联网+国际贸易综合技能”赛项一等奖">·【抚州市临川区政府】江西外语外贸...</a></li>
+		
+
+		</ul>
+        <ul class="new">
+		 
+		  <li style="border-bottom:none;"><span class="date">2018-05-24</span><a href="http://www.xinhuanet.com/politics/2018-05/20/c_1122859959.htm" target="_blank" title="【新华网】中共中央办公厅印发《关于进一步激励广大干部新时代新担当新作为的意见》">·【新华网】中共中央办公厅印发《关...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-16</span><a href="http://www.moe.gov.cn/srcsite/A13/s7061/201805/t20180511_335724.html" target="_blank" title="中共教育部党组关于教育系统深入学习贯彻 习近平总书记在纪念马克思诞辰200周年 大会上重要讲话精神的通知">·中共教育部党组关于教育系统深入学...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-05-10</span><a href="http://www.moe.gov.cn/srcsite/A12/s7060/201805/t20180503_334971.html" target="_blank" title="中共教育部党组关于教育系统深入学习贯彻习近平总书记在北京大学师生座谈会上重要讲话精神的通知">·中共教育部党组关于教育系统深入学...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-04-27</span><a href="http://www.moe.gov.cn/srcsite/A13/moe_772/201804/t20180424_334099.html" target="_blank" title="教育部关于加强新时代高校“形势与政策”课 建设的若干意见">·教育部关于加强新时代高校“形势与...</a></li>
+		
+		  <li style="border-bottom:none;"><span class="date">2018-04-27</span><a href="http://www.moe.gov.cn/srcsite/A13/moe_772/201804/t20180424_334099.html" target="_blank" title="教育部关于印发《新时代高校思想政治理论课 教学工作基本要求》的通知">·教育部关于印发《新时代高校思想政...</a></li>
+		
+
+		</ul>
+	  </div>
+	  <div class="tup_wrap">
+	    <dl>
+		  <dt class="tit">江西最美校园</dt>
+         
+		  
+		  <dt class="more"><a href="/html/jxzmxy/index.html">更多>></a></dt>
+		 
+           <dt class="more"><a href ="http://www.jxcfs.com:8080/system/vw/manage/stat_newstoSourceStat" target="_blank" style="padding-right:250px;font-size:14px;color:#cc0000;font-weight:bold;">	<!--<a href ="http://www.jxcfs.com:8080/system/vw/manage/stat_newstoSourceStat?classCName=最新动态&classID=936896483612&startDate=2015-11-01&endDate=2015-11-30" target="_blank" style="padding-right:250px;font-size:16px;color:#cc0000;font-weight:bold;">-->各部门发稿统计</a></dt>
+		</dl>
+		<div class="scroll_wrap">
+			<div id="header_demo1x" style="width:100%; overflow:hidden;">
+			  <table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				  <td id="header_demo11x"><table border="0" cellspacing="0" cellpadding="0">
+					  <tr>
+					  
+						<td><a href="http://www.jxcfs.com/html/2015/4-28/n31054067.html" target="_blank" title="校园风景"><img src="/_mediafile/wywm/files/1432806876473211.jpg" />
+						  <p>校园风景</p>
+						  </a></td>
+					   
+						<td><a href="http://www.jxcfs.com/html/2015/4-28/n72124067.html" target="_blank" title="校园风景"><img src="/_mediafile/wywm/files/1432806876185334.jpg" />
+						  <p>校园风景</p>
+						  </a></td>
+					   
+						<td><a href="http://www.jxcfs.com/html/2015/4-28/n35924067.html" target="_blank" title="校园风景"><img src="/_mediafile/wywm/files/1432806875960822.jpg" />
+						  <p>校园风景</p>
+						  </a></td>
+					   
+						<td><a href="http://www.jxcfs.com/html/2015/4-28/n99464067.html" target="_blank" title="校园风景"><img src="/_mediafile/wywm/files/1432806875600496.jpg" />
+						  <p>校园风景</p>
+						  </a></td>
+					   
+						<td><a href="http://www.jxcfs.com/html/2015/4-28/n92494067.html" target="_blank" title="校园风景"><img src="/_mediafile/wywm/files/1432806875363554.jpg" />
+						  <p>校园风景</p>
+						  </a></td>
+					   
+						<td><a href="http://www.jxcfs.com/html/2015/4-28/n97844067.html" target="_blank" title="校园风景"><img src="/_mediafile/wywm/files/1432806875040832.jpg" />
+						  <p>校园风景</p>
+						  </a></td>
+					   
+
+					  </tr>
+					</table></td>
+				  <td id="header_demo12x"></td>
+				</tr>
+			  </table>
+			</div>
+		  </div>		
+<SCRIPT language=JavaScript>
+var header_demox = document.getElementById("header_demo1x");
+var header_demo1x = document.getElementById("header_demo11x");
+var header_demo2x = document.getElementById("header_demo12x");
+var speed3=20;  //数值越大滚动速度越慢
+header_demo2x.innerHTML = header_demo1x.innerHTML;
+
+//header_demo2.offsetWidth 总宽度 
+
+//alert(header_demo2.offsetWidth +"-"+header_demo.scrollLeft);
+function Marquee3(){
+    if(header_demo2x.offsetWidth-header_demox.scrollLeft<=0)
+        header_demox.scrollLeft-=header_demo1x.offsetWidth
+    else{
+        header_demox.scrollLeft++
+    }
+}
+var MyMar3 = setInterval(Marquee3,speed3);
+header_demox.onmouseover = function(){clearInterval(MyMar3)}
+header_demox.onmouseout = function(){MyMar3 = setInterval(Marquee3,speed3)}
+</SCRIPT>
+	  </div>
+	</td>
+    <td width="15"> </td>
+    <td width="250">
+	  <div class="gsgg_wrap" style="height:188px;">
+	    <dl class="title_wrap">
+		  <dt><img src="/templets/images/titbg3.jpg" /></dt>
+		  <dt class="tit">砥砺奋进的2017年</dt>
+		  
+		  <dt class="more"><a href="/html/xysp/index.html">更多>></a></dt>
+		  
+		</dl>
+		
+		<div class="xysp_video"><div class="close_light_bg" id="close_light_bg"></div>
+<div class="video" id="CuPlayer" >
+<SCRIPT LANGUAGE=JavaScript>
+var vID        = ""; 
+var vWidth     = "238";
+var vHeight    = "147";
+var vFile      = "/CuSunPlayerV25Cross/CuSunV2set.xml";
+var vPlayer    = "/CuSunPlayerV25Cross/player.swf?JcScpVideoPathHD=/_mediafile/wywm/video/2018011916251951087.mp4";
+var vPic       = '/_mediafile/wywm/videoPic/20180119162446927850.jpg';
+var vCssurl    = "/CuSunPlayerV25Cross/images/mini.css";
+var vServer    = '';
+var vMp4url    = '/_mediafile/wywm/video/20180119163219090817.flv';
+var vIosurl    = '/_mediafile/wywm/video/2018011916251951087.mp4';
+</SCRIPT> 
+<script class="CuPlayerVideo" data-mce-role="CuPlayerVideo" type="text/javascript" src="/CuSunPlayerV25Cross/js/CuSunX3.min.js"></script>
+</div>
+</div>
+		
+
+		
+	  </div>
+      <!--<div class="gsgg_wrap" style="height:45px;margin-top:5px;">
+     <a href="http://www.jxcfs.com/html/jbts/index.html" target="_blank"><img src="/templets/images/jbts.jpg" border="0" /></a> 
+        </div>-->
+	  <div class="gsgg_wrap" style="margin-top:5px; height:324px;">
+	    <dl class="title_wrap">
+		  <dt><img src="/templets/images/titbg3.jpg" /></dt>
+		  <dt class="tit">专题活动</dt>
+		</dl>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="ztlist">
+		 
+		  <tr>
+			<td><a href="http://zs.jxcfs.com/" target="_blank"><img src="/_mediafile/wywm/files/1433214161261807.gif" border="0" /></a></td>
+		  </tr>
+		 
+		  <tr>
+			<td><a href="http://jxwywmzy.bibibi.net/index" target="_blank"><img src="/_mediafile/wywm/files/1433214154754434.gif" border="0" /></a></td>
+		  </tr>
+		 
+		  <tr>
+			<td><a href="http://www.jxcfs.com/html/wmzwhzbx/index.html" target="_blank"><img src="/_mediafile/wywm/files/1434440498163444.gif" border="0" /></a></td>
+		  </tr>
+		 
+		  <tr>
+			<td><a href="http://www.jxcfs.com/html/yzxx/index.html" target="_blank"><img src="/_mediafile/wywm/files/1434440457029677.gif" border="0" /></a></td>
+		  </tr>
+		 
+		  <tr>
+			<td><a href="http://my.jxcfs.com/" target="_blank"><img src="/_mediafile/wywm/files/1434440297143817.gif" border="0" /></a></td>
+		  </tr>
+		 
+		  <tr>
+			<td><a href="http://www.laixincxy.com/" target="_blank"><img src="/_mediafile/wywm/files/1458094374081640.gif" border="0" /></a></td>
+		  </tr>
+		 
+		  <tr>
+			<td><a href="http://jjh.jxcfs.com" target="_blank"><img src="http://www.jxcfs.com/_mediafile/wywm/files/1490596738799138.gif" border="0" /></a></td>
+		  </tr>
+		
+		</table>
+	  </div>
+	</td>
+  </tr>
+</table>
+
+<div class="link_wrap">
+  <ul> 
+    
+    <li><a href="http://www.jxedu.gov.cn/" target="_blank"><img src="/_mediafile/wywm/files/1432883614275958.gif" border="0" /></a></li>
+	 
+    <li><a href="http://www.jxdoftec.gov.cn/" target="_blank"><img src="/_mediafile/wywm/files/1432883665565277.gif" border="0" /></a></li>
+	 
+    <li><a href="http://www.jiangxi.gov.cn/" target="_blank"><img src="/_mediafile/wywm/files/1432883704152797.gif" border="0" /></a></li>
+	 
+    <li><a href="http://www.moe.gov.cn/" target="_blank"><img src="/_mediafile/wywm/files/143288374839010.gif" border="0" /></a></li>
+	 
+    <li><a href="http://www.mofcom.gov.cn/" target="_blank"><img src="/_mediafile/wywm/files/1432883843662341.gif" border="0" /></a></li>
+	
+  </ul>
+  <div style="float:right; padding-top:4px;"><select name="" style="width:180px;" onchange="window.open(this.options[this.selectedIndex].value)">
+    <option>学院各部门导航</option>
+	 
+	  <option value="http://test12.jxcfs.com" target="_blank">党委（院长）办公室</option>
+	  
+	  <option value="http://test23.jxcfs.com/" target="_blank">组织人事处</option>
+	  
+	  <option value="http://www.jxcfs.com/html/2016/2-1/n65714805.html" target="_blank">宣传统战处</option>
+	  
+	  <option value="http://xgc.jxcfs.com/" target="_blank">学生工作处</option>
+	  
+	  <option value="http://jwc.jxcfs.com/" target="_blank">教务处</option>
+	  
+	  <option value="http://www.jxcfs.com/html/2017/11-25/n04925055.html" target="_blank">质量监控与评估办公室</option>
+	  
+	  <option value="http://zs.jxcfs.com/" target="_blank">招生就业处</option>
+	  
+	  <option value="http://cxcy.jxcfs.com" target="_blank">创新创业教育办公室（创业学院）</option>
+	  
+	  <option value="http://www.jxcfs.com/html/2016/2-1/n33524805.html" target="_blank">资产管理处</option>
+	  
+	  <option value="http://cwc.jxcfs.com" target="_blank">财务处</option>
+	  
+	  <option value="http://kyc.jxcfs.com" target="_blank">科研处（产学合作处）</option>
+	  
+	  <option value="http://test20.jxcfs.com" target="_blank">监察审计处</option>
+	  
+	  <option value="http://test15.jxcfs.com" target="_blank">外事处</option>
+	  
+	  <option value="http://test5.jxcfs.com" target="_blank">安全保卫处</option>
+	  
+	  <option value="http://test11.jxcfs.com" target="_blank">后勤管理处</option>
+	  
+	  <option value="http://english.jxcfs.com/" target="_blank">英语学院</option>
+	  
+	  <option value="http://ibd.jxcfs.com/" target="_blank">国际商务学院</option>
+	  
+	  <option value="http://www.jxcfs.com/html/2018/2-27/n85785076.html" target="_blank">应用西语学院</option>
+	  
+	  <option value="http://gsx.jxcfs.com/" target="_blank">工商管理学院</option>
+	  
+	  <option value="http://lyx.jxcfs.com/" target="_blank">旅游学院</option>
+	  
+	  <option value="http://kjx.jxcfs.com/" target="_blank">会计金融学院</option>
+	  
+	  <option value="http://gcglx.jxcfs.com/" target="_blank">国际工程学院</option>
+	  
+	  <option value="http://dsxy.jxcfs.com/" target="_blank">电子商务学院</option>
+	  
+	  <option value="http://ysx.jxcfs.com/" target="_blank">艺术与设计学院</option>
+	  
+	  <option value="http://jcjxb.jxcfs.com" target="_blank">基础教学部</option>
+	  
+	  <option value="http://szb.jxcfs.com" target="_blank">思想政治理论课教学部</option>
+	  
+	  <option value="http://px.jxcfs.com/" target="_blank">继续教育部（培训中心）</option>
+	  
+	  <option value="http://test6.jxcfs.com/" target="_blank">实训中心</option>
+	  
+	  <option value="http://library.jxcfs.com" target="_blank">图书馆</option>
+	  
+	  <option value="http://test17.jxcfs.com/" target="_blank">网络管理中心</option>
+	  
+	  <option value="http://www.jxcfs.com/html/2016/2-1/n52524805.html" target="_blank">高等职业教育研究所（发展规划办公室）</option>
+	  
+	  <option value="http://www.jxcfs.com/html/2016/2-1/n37444805.html" target="_blank">国际贸易研究所</option>
+	  
+	  <option value="http://www.jxcfs.com/html/2016/2-1/n49084805.html" target="_blank">外国文化研究所</option>
+	  
+	  <option value="http://www.jxcfs.com/html/2017/11-25/n51795055.html" target="_blank">“一带一路”语言文化研究所</option>
+	  
+	  <option value="http://gh.jxcfs.com/" target="_blank">工会（离退休干部管理办公室、妇联）</option>
+	  
+	  <option value="http://tw.jxcfs.com/" target="_blank">团 委</option>
+	  
+	  <option value="http://test8.jxcfs.com" target="_blank">档案馆</option>
+	  
+	  <option value="http://test14.jxcfs.com" target="_blank">卫生所</option>
+	  
+
+
+  </select></div>
+</div>
+
+<div class="clear"></div>
+<div class="copyright">
+  <dl>
+    <dt><a href="http://www.jxcfs.com/html/2015/4-29/n95464140.html" target="_blank">免责声明</a>|<a href="http://www.jxcfs.com/html/2015/4-29/n23394140.html" target="_blank">关于本站</a>|<a href="http://www.jxcfs.com/html/2015/4-29/n71684140.html" target="_blank">使用帮助</a>|<a href="http://www.jxcfs.com/html/2015/4-29/n72534140.html" target="_blank">网站声明</a>|<a href="http://www.jxcfs.com/html/2015/4-29/n16934140.html" target="_blank">联系我们</a>|
+</dt>
+  </dl>
+  <ul>
+    <li style="float:left;">学院地址：江西省南昌市天祥大道291号<br />招生热线：0791-88352677　传真：0791-88353587　邮编：330099<br /><span style="float:left;color:#ff0000;">精神文明建设链接：<a href="http://nc.wenming.cn/" target="_blank" style="color:#ff0000;">中国文明网南昌站</a><a href="http://www.ncwm.gov.cn/" target="_blank" style="color:#ff0000;padding-left:10px;">南昌文明网</a><a href="http://www.jxwmw.cn/" target="_blank" style="color:#ff0000;padding-left:10px;">江西文明网</a></span></li><!--<li style="float:left;padding-left:50px;"><br /><a href ="http://www.jxcfs.com:8080/system/vw/manage/stat_newstoSourceStat " target="_blank" style="color:#ff0000;font-size:14px;font-weight:bold;">	各部门发稿统计</a></li>-->
+	<li style="float:right; text-align:right;">Copyright © 2015 jxcfs.com ALL Rights Reserved<br />技术支持：<a href="http://www.vwell.cn" target="_blank">维网科技</a>　网站备案编号：赣ICP备16005704号 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254937668'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1254937668%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/15/000/0000/60576478/CA150000000605764780003.js' type='text/javascript'%3E%3C/script%3E"));</script></li>
+	<li style="float:right; padding:4px 25px 0 0;"><img src="/templets/images/jc.gif" /></li>
+  </ul>
+</div>
+</div> 
+</div>
+<SCRIPT language=JavaScript>
+ function closead()
+{
+var obj = document.getElementById( "gg1" );
+obj.style.visibility = "hidden";
+} 
+   function closead1()
+{
+var obj = document.getElementById( "gg2" );
+obj.style.visibility = "hidden";
+} 
+</SCRIPT>
+ 
+<DIV id=gg1 style="Z-INDEX: 100; right: 2px; WIDTH: 240px; POSITION: absolute; TOP: 43px; HEIGHT: 60px; 
+visibility: visible;"><p style="text-align:right; height:18px;"><a href="javascript:closead();" title="关闭"><img src="/templets/images/close.gif" /></a></p>
+  <a href="http://zs.jxcfs.com/html/2018/3-25/n80785178.html" target="_blank"><img src="http://www.jxcfs.com/_mediafile/wywm/files/1524709723691404.jpg"  width="240"  /></a><!--<a href="/html/zxzx/index.html" target="_blank"><img src="/templets/images/zx.jpg"  /></a>--></DIV>
+  
+ 
+<script type="text/javascript">
+var ad1=new AdMove("gg1");
+ad1.Run();
+var ad2=new AdMove("gg2");
+ad2.Run();
+</script>
+<!-- visitcount Begin --><iframe src='/front/visitcount/visit.jsp?siteId=580213432190&classId=&newsId=' name="vishidden" id="vishidden" frameborder="0" style="width:0; height:0; display:none"></iframe><!-- visitcount End -->
+</body>
+</html>
+

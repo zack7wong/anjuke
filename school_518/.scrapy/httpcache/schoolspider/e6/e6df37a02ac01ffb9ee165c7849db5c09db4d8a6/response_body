@@ -1,0 +1,375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>内蒙古包头市第九中学</title>
+<link href="/r/cms/www/btsdjzx/css/bjz.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/r/cms/www/btsdjzx/js/jquery.pack.js"></script>
+<script type="text/javascript" src="/r/cms/www/btsdjzx/js/jQuery.blockUI.js"></script>
+<script type="text/javascript" src="/r/cms/www/btsdjzx/js/jquery.SuperSlide.js"></script>
+<link href="/r/cms/www/btsdjzx/js/default.css" rel="stylesheet" type="text/css">
+<link href="/r/cms/www/btsdjzx/js/demo.css" rel="stylesheet" type="text/css">
+<script src="/r/cms/www/btsdjzx/js/jquery.KinSlideshow-1.2.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	$("#KinSlideshow").KinSlideshow();
+})
+</script>
+
+
+
+</head><body>
+<div class="bjz_head">
+<div class="bjz_heada">
+<div class="bjz_headb">
+<h3>您好，欢迎访问包九中！今天是<font color="#ff7200" >
+<span id="dqsj"></span>
+<script type="text/javascript">
+		    setInterval(function(){
+		    var sj=new Date();	
+		    document.getElementById("dqsj").innerHTML=sj.toLocaleDateString()+sj.toLocaleTimeString();
+	       },1000);		    
+</script>
+</font></h3>
+<div class="bjz_headc">
+<div style="float:left">
+<h3>站内搜索：</h3>
+<form action="/search.jspx" target="_blank" style="margin-top:2px;">
+<input name="q" type="text"  class="inputaa" value="请输入关键词" id="txtKey" onfocus="if(this.value=='请输入关键词')this.value=''" onblur="if(this.value=='')this.value='请输入关键词'" maxlength="24" autocomplete="off" style="line-height:19px;color:#666;font-size:12px;"   />
+<input name="" type="submit" value="搜索" id="btnSearch" style="width:42px; height:22px; background-color:#df8200; color:#FFF; border:none;margin-top:8px; font-weight:bold;font-size:12px;">
+</form>
+</div>
+<h3 style="float:right;font-size:12px;"><a onclick="AddFavorite(window.location,document.title)"href="javascript:void(0)">[加入收藏]</a> [<a onclick="SetHome(window.location)"href="javascript:void(0)">设为首页</a>]</h3>
+</div>
+<script type="text/javascript" language="javascript">
+   //加入收藏
+       function AddFavorite(sURL, sTitle) {
+           sURL =encodeURI(sURL); 
+       try{   
+          window.external.addFavorite(sURL, sTitle);   
+       }catch(e) {   
+          try{   
+              window.sidebar.addPanel(sTitle, sURL, "");   
+           }catch (e){   
+              alert("您的浏览器不支持自动加入收藏功能，请使用Ctrl+D进行添加，或手动在浏览器里进行设置！");
+          }   
+       }
+   }
+   
+   //设为首页
+   function SetHome(url){
+       if (document.all) {
+          document.body.style.behavior='url(#default#homepage)';
+             document.body.setHomePage(url);
+       }else{
+           alert("您的浏览器不支持自动设置页面为首页功能，请您手动在浏览器里设置该页面为首页！");
+       }
+   }
+</script>
+
+<div class="clear"></div>
+</div>
+</div>
+<div class="bjz_ad"><OBJECT WIDTH="960px" HEIGHT="231px;">
+  <param name="Wmode" value="transparent"> 
+          <EMBED src="/r/cms/www/btsdjzx/images/960x231.swf" WIDTH="960px" HEIGHT="231px" NAME="2" ALIGN="" wmode="transparent"></EMBED></OBJECT></div>
+<div class="bjz_headd">
+<div class="bjz_headda">
+<div style="float:left; width:9px;"><img src="/r/cms/www/btsdjzx/images/bjz_02.png" width="9" height="48"></div>
+<div class="bjz_headdb">
+<ul> 
+        <li class="current">
+        <a href="/" target="_self" ><span>首 页</span></a>
+        </li>
+        <li >
+        <a href="http://www.btjz.net.cn:80/xxgk/index.jhtml" target="_self" ><span>学校概况</span></a>
+        </li>
+        <li >
+        <a href="http://www.btjz.net.cn:80/djgz/index.jhtml" target="_self" ><span>党务公开</span></a>
+        </li>
+        <li >
+        <a href="http://www.btjz.net.cn:80/xydt1/index.jhtml" target="_self" ><span>校园动态</span></a>
+        </li>
+        <li >
+        <a href="http://www.btjz.net.cn:80/jxjy/index.jhtml" target="_self" ><span>教学教研</span></a>
+        </li>
+        <li >
+        <a href="http://www.btjz.net.cn:80/dygz/index.jhtml" target="_self" ><span>德育工作</span></a>
+        </li>
+        <li >
+        <a href="http://www.btjz.net.cn:80/qthd/index.jhtml" target="_self" ><span>群团活动</span></a>
+        </li>
+
+</ul>
+</div>
+
+<div style="float:right; width:9px;"><img src="/r/cms/www/btsdjzx/images/bjz_03.png" width="9" height="48"></div>
+</div>
+</div>
+</div><div class="bjz_content">
+    <div style="padding-top: 8px;"><a href="/znhyy/index.jhtml" target="_blank"><img src="/r/cms/www/btsdjzx/images/new_01.jpg" width="960" height="206" alt=""/></a></div>
+    <div class="bjz_pic">   <div id="KinSlideshow" style="visibility:hidden;">
+        <a href="http://www.btjz.net.cn:80/tpxw/1592.jhtml" target="_blank"><img src="/u/cms/www/201711/24155651j8u7.jpg" alt="包头市教育局 关于包一中、包九中、包九中分校（包九中外国语学校）三所直属中学招聘教师的公告" width="480" height="350" /></a>
+        <a href="http://www.btjz.net.cn:80/tpxw/1502.jhtml" target="_blank"><img src="/u/cms/www/201706/27172755vo6t.jpg" alt="2017年包九中国际部学校美、澳定向课程班招生简章" width="480" height="350" /></a>
+        <a href="http://www.btjz.net.cn:80/tpxw/1475.jhtml" target="_blank"><img src="/u/cms/www/201706/02173751m2x0.jpg" alt="中国禁毒数字展览馆" width="480" height="350" /></a>
+    </div>
+    </div>
+    <div class="bjz_newa">
+        <div class="bjz_newb">
+            <h2>校园动态</h2>
+            <span class="gd"><a href="http://www.btjz.net.cn:80/xydt1/index.jhtml" style="color:#333; line-height:20px;">更多>></a></span>
+        </div>
+        <div class="bjz_newc">
+            <ul class="bjz_dtb">
+                <li>
+                    <span class="data"><a href="http://www.btjz.net.cn:80/xydt1/1643.jhtml" title="【聚焦党建】包头市第九中学召开全面从严治党暨“作风建设年”动员部署会议" target="_blank">【聚焦党建】包头市第九中学召开全面从严治党暨“作风</a></span>
+                    <span class="date">2018-04-19</span><div class="clear"></div>
+                </li>
+                <li>
+                    <span class="data"><a href="http://www.btjz.net.cn:80/xydt1/1639.jhtml" title="包头市教育局 关于包一中、包九中、包九中分校（包九中外国语学校）三所直属中学招聘教师的公告" target="_blank">包头市教育局 关于包一中、包九中、包九中分校（包九</a></span>
+                    <span class="date">2018-04-21</span><div class="clear"></div>
+                </li>
+                <li>
+                    <span class="data"><a href="http://www.btjz.net.cn:80/xydt1/1634.jhtml" title="中共中央 国务院 关于全面深化新时代教师队伍建设改革的意见" target="_blank">中共中央 国务院 关于全面深化新时代教师队伍建设改革</a></span>
+                    <span class="date">2018-03-27</span><div class="clear"></div>
+                </li>
+                <li>
+                    <span class="data"><a href="http://www.btjz.net.cn:80/xydt1/1632.jhtml" title="教育部关于印发《教育部2018年 工作要点》的通知" target="_blank">教育部关于印发《教育部2018年 工作要点》的通知</a></span>
+                    <span class="date">2018-04-10</span><div class="clear"></div>
+                </li>
+                <li>
+                    <span class="data"><a href="http://www.btjz.net.cn:80/xydt1/1628.jhtml" title="包九中召开第八届五次教师职工代表大会" target="_blank">包九中召开第八届五次教师职工代表大会</a></span>
+                    <span class="date">2018-01-21</span><div class="clear"></div>
+                </li>
+                <li>
+                    <span class="data"><a href="http://www.btjz.net.cn:80/xydt1/1627.jhtml" title="九中给您拜年啦" target="_blank">九中给您拜年啦</a></span>
+                    <span class="date">2018-02-15</span><div class="clear"></div>
+                </li>
+                <li>
+                    <span class="data"><a href="http://www.btjz.net.cn:80/xydt1/1625.jhtml" title="围绕中心抓党建 凝聚人心促发展" target="_blank">围绕中心抓党建 凝聚人心促发展</a></span>
+                    <span class="date">2018-01-22</span><div class="clear"></div>
+                </li>
+                <li>
+                    <span class="data"><a href="http://www.btjz.net.cn:80/xydt1/1624.jhtml" title="市教育局检查我校 2017-2018学年度第二学期开学情况" target="_blank">市教育局检查我校 2017-2018学年度第二学期开学情况</a></span>
+                    <span class="date">2018-02-27</span><div class="clear"></div>
+                </li>
+                <li>
+                    <span class="data"><a href="http://www.btjz.net.cn:80/xydt1/1621.jhtml" title="我校被评为第一批自治区“平安校园”" target="_blank">我校被评为第一批自治区“平安校园”</a></span>
+                    <span class="date">2018-03-02</span><div class="clear"></div>
+                </li>
+                <li>
+                    <span class="data"><a href="http://www.btjz.net.cn:80/xydt1/1616.jhtml" title="包头九中第二届“未来杯”校园心理剧 圆满落下帷幕" target="_blank">包头九中第二届“未来杯”校园心理剧 圆满落下帷幕</a></span>
+                    <span class="date">2018-01-19</span><div class="clear"></div>
+                </li>
+                <li>
+                    <span class="data"><a href="http://www.btjz.net.cn:80/xydt1/1615.jhtml" title="包九中2017年校园安全工作总结会议简讯" target="_blank">包九中2017年校园安全工作总结会议简讯</a></span>
+                    <span class="date">2018-01-19</span><div class="clear"></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="clear"></div>
+    <div class="bjz_text">
+        <div class="bjz_texta">
+            <h2>教学科研</h2>
+            <span class="gd"><a href="http://www.btjz.net.cn:80/jxjy/index.jhtml" >更多>></a></span>
+        </div>
+        <div class="bjz_textb">
+            <ul>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/jxjy/585.jhtml" title="中科院院士来我校为师生做精彩报告" target="_blank">中科院院士来我校为师生做精彩报告</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/jxjy/586.jhtml" title="《包九中学生研究性学习成果选编》第十期在校内出版印刷" target="_blank">《包九中学生研究性学习成果选编》第十期在校内出版印</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/jxjy/1641.jhtml" title="专家莅临我校指导学习增值评价起点报告" target="_blank">专家莅临我校指导学习增值评价起点报告</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/jxjy/1633.jhtml" title="包九中高二年级举办自主招生讲座——竞赛生的自招之路" target="_blank">包九中高二年级举办自主招生讲座——竞赛生的自招之路</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/jxjy/1631.jhtml" title="包头市第九中学开展十九大精神进课堂活动：让理想之光照亮奋斗之路" target="_blank">包头市第九中学开展十九大精神进课堂活动：让理想之光</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/jxjy/1629.jhtml" title="包头九中召开高考誓师大会" target="_blank">包头九中召开高考誓师大会</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/jxjy/1626.jhtml" title="总结部署   整装出发" target="_blank">总结部署   整装出发</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/jxjy/1620.jhtml" title="包头九中高一寒假作业评比活动" target="_blank">包头九中高一寒假作业评比活动</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/jxjy/1618.jhtml" title="拓展家长视野 ，做好家校服务——包九中高二年级家长课堂自主招生系列微讲座开课啦！" target="_blank">拓展家长视野 ，做好家校服务——包九中高二年级家长</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/jxjy/1617.jhtml" title="“因材施教重实效，授之以渔会求知” 包九中名师借空中课堂为高三学生把脉复习" target="_blank">“因材施教重实效，授之以渔会求知” 包九中名师借空</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/jxjy/1613.jhtml" title="砥砺前行、追求卓越 ——包九中2017年信息学奥赛战绩骄人" target="_blank">砥砺前行、追求卓越 ——包九中2017年信息学奥赛战绩</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/jxjy/1612.jhtml" title="观历史知王朝兴替 品人物晓古往今来——包头市首届高中历史知识竞赛总决赛纪实" target="_blank">观历史知王朝兴替 品人物晓古往今来——包头市首届高</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="bjz_text" style="margin-left:10px;">
+        <div class="bjz_texta">
+            <h2>德育工作</h2>
+            <span class="gd"><a href="http://www.btjz.net.cn:80/dygz/index.jhtml" >更多>></a></span>
+        </div>
+        <div class="bjz_textb">
+            <ul>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/dygz/650.jhtml" title="2015学年度开学典礼" target="_blank">2015学年度开学典礼</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/dygz/706.jhtml" title="包头市委第七巡查组巡查包头九中" target="_blank">包头市委第七巡查组巡查包头九中</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/dygz/1638.jhtml" title="班主任如何提高班级整体成绩" target="_blank">班主任如何提高班级整体成绩</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/dygz/1637.jhtml" title="班级管理之我建" target="_blank">班级管理之我建</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/dygz/1636.jhtml" title="包头市第九中学“国家资助、助梦飞翔” 主题系列活动圆满结束" target="_blank">包头市第九中学“国家资助、助梦飞翔” 主题系列活动</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/dygz/1623.jhtml" title="音乐大师课" target="_blank">音乐大师课</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/dygz/1622.jhtml" title="包头九中2017--2018学年度寒假社会实践活动总结" target="_blank">包头九中2017--2018学年度寒假社会实践活动总结</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/dygz/1619.jhtml" title="  包头九中2018年“学雷锋 树新风 讲文明 懂礼貌”主题黑板报评比结果　" target="_blank">  包头九中2018年“学雷锋 树新风 讲文明 懂礼貌”主</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/dygz/1614.jhtml" title="教师的教育幸福" target="_blank">教师的教育幸福</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/dygz/1609.jhtml" title="包头九中校庆系列活动之一：交响乐团进校园专场音乐会" target="_blank">包头九中校庆系列活动之一：交响乐团进校园专场音乐会</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/dygz/1605.jhtml" title="高一年级暑期作业优秀作品展" target="_blank">高一年级暑期作业优秀作品展</a>
+                </li>
+                <li>
+                    <a href="http://www.btjz.net.cn:80/dygz/1562.jhtml" title="包头九中2016--2017学年度暑假社会实践活动总结" target="_blank">包头九中2016--2017学年度暑假社会实践活动总结</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="infor_bga">
+    <div class="infor_bg">
+        <div style="text-align:center;"><img src="/r/cms/www/btsdjzx/images/infor_03.png" width="148" height="119" alt=""/></div>
+    </div>
+    <div style="margin-top:10px;">
+      <a href="/test/index.jhtml" ><img src="/r/cms/www/btsdjzx/images/infor_02.jpg" width="232" height="125" alt=""/></a>
+    </div>
+   </div>
+   
+    <div class="clear"></div>
+    <div class="infor_pic"><a href="http://www.btswgyxx.org.cn" target="_blank"><img src="/r/cms/www/btsdjzx/images/infor_01.jpg" width="722" height="125" alt=""/></a></div>
+    <div class="infor_pica"><a href="http://www.btfls.org/cn/ihs" target="_blank"><img src="/r/cms/www/btsdjzx/images/infor_01aaa.jpg" width="232" height="125" alt=""/></a></div>
+
+
+    <div class="clear"></div>
+    <div class="new_jzjy">
+        <div class="new_jzjy_left"></div>
+        <div class="new_jzja_right">
+            <div id="demoContent" style="width:880px;">
+                <div class="effect" style="width:880px;">
+                    <div id="leftMarquee" class="leftLoop" >
+
+                        <div class="bd">
+                            <ul class="picList">
+                                <li>
+                                    <div class="pic"><a href="http://www.btjz.net.cn:80/jzjy1/1240.jhtml"><img src="/u/cms/www/201703/23095229ktdw.jpg" /></a></div>
+                                </li>
+                                <li>
+                                    <div class="pic"><a href="http://www.btjz.net.cn:80/jzjy1/1242.jhtml"><img src="/u/cms/www/201703/23095842kcat.jpg" /></a></div>
+                                </li>
+                                <li>
+                                    <div class="pic"><a href="http://www.btjz.net.cn:80/jzjy1/1251.jhtml"><img src="/u/cms/www/201703/23103607us87.jpg" /></a></div>
+                                </li>
+                                <li>
+                                    <div class="pic"><a href="http://www.btjz.net.cn:80/jzjy1/1241.jhtml"><img src="/u/cms/www/201703/23095618hkqj.jpg" /></a></div>
+                                </li>
+                                <li>
+                                    <div class="pic"><a href="http://www.btjz.net.cn:80/jzjy1/1256.jhtml"><img src="/u/cms/www/201703/23105204yt5p.jpg" /></a></div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <script type="text/javascript">jQuery("#leftMarquee").slide({ mainCell:".bd ul",effect:"leftMarquee",vis:3,interTime:40,autoPlay:true });</script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="btz_ts">
+            <div class="btz_ts01">
+                <h2 >资源链接</h2>
+                            </div>
+            <div class="new_lj">
+                <p>
+                    <a href="http://www.zujuan.com/" target="_blank" >网上组卷系统</a>|
+                    <a href="http://www.5ihzy.com/" target="_blank" >好资源网</a>|
+                    <a href=" http://www.eduyun.cn" target="_blank" >国家教育资源平台</a>|
+                    <a href="http://www.ziyuanku.com/zt/2015/lshjkd/" target="_blank" >中华资源库</a>|
+                    <a href="http://btjy.lm.chaoxing.com/" target="_blank" >包头教育局精品选修课  </a>|
+                    <a href="http://www.btjy.net/" target="_blank" >包头市教育局</a>|
+                </p>
+
+            </div>
+            <div class="clear"></div>
+    </div>
+    <div class="btz_ts">
+<div class="btz_ts01">
+<h2 >友情链接</h2>
+</div>
+<div class="new_lj">
+<select name="jumpMenu" id="jumpMenu" onchange="javascript:if (this.options[this.selectedIndex].value != '')
+ window.open(this.options[this.selectedIndex].value);this.options[0].selected;">
+<option>国家高等教育学校</option>
+
+</select>
+
+<select name="jumpMenu" id="jumpMenu" onchange="javascript:if (this.options[this.selectedIndex].value != '')
+ window.open(this.options[this.selectedIndex].value);this.options[0].selected;">
+<option>国家高等教育学校</option>
+</select>
+<select name="jumpMenu" id="jumpMenu" onchange="javascript:if (this.options[this.selectedIndex].value != '')
+ window.open(this.options[this.selectedIndex].value);this.options[0].selected;">
+<option>国家高等教育学校</option>
+</select>
+<select name="jumpMenu" id="jumpMenu" onchange="javascript:if (this.options[this.selectedIndex].value != '')
+ window.open(this.options[this.selectedIndex].value);this.options[0].selected;">
+  <option>国家高等教育学校</option>
+</select>
+	</div>
+<div class="clear"></div>
+</div>
+
+    </div>
+</div>
+<div class="btz_footer">
+<p>版权所有:包头市第九中学现代教育技术中心<br/>
+地址:包头市昆区乌兰道17号    电话:0472-2124402<br/>  邮箱:bt9z@qq.com    技术支持:内蒙古亨达海天网络技术责任有限公司</p>
+<div style="width:300px;margin:0 auto; padding:20px 0;text-align:center;">
+<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=15020302000192" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/r/cms/www/btsdjzx/images/ba.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">蒙公网安备 15020302000192号</p></a>
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/07/128/0000/40926503/CA071280000409265030001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+</div>
+</body>
+</html>
+</body>
+</html>

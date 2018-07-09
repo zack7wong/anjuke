@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>江西工业职业技术学院</title>
+    <meta name="keywords" content="江西工业职业技术学院">
+    <meta name="description" content="江西工业职业技术学院">
+    <link rel="stylesheet" href="/statics/gyzy/css/style.css"><!-- 主css -->
+    <script src="https://hm.baidu.com/hm.js?e8052507a3f06ab42fcb87ffd94fbc0b"></script>
+    <script src="/statics/gyzy/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/statics/gyzy/js/jquery.SuperSlide.js"></script>
+</head>
+<body>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?e8052507a3f06ab42fcb87ffd94fbc0b";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    	<div class="head">
+		<div class="head_top">
+			<img class="logo" src="/statics/gyzy/images/logo.jpg" alt="">
+
+			<div class="search">
+				<input type="text" class="search_text" placeholder="搜索关键词" name="keyword" id="keyword">
+				<button class="search_sub" type="submit"><img src="/statics/gyzy/images/search.png" alt=""></button>
+			</div>
+			<script>
+				$(function(){
+				   	$('.search_sub').click(function(){
+				        var search = $('#keyword').val();
+				        window.location.href = "/fullsearch/keyword-"+search+".html";
+				   	});
+				});
+				$('.search_text').bind('keypress',function(event){  
+		            if(event.keyCode == "13"){  
+		                var search = $('#keyword').val();
+				        window.location.href = "/fullsearch/keyword-"+search+".html"; 
+		            }  
+		        });
+			</script>
+		</div>
+		<div class="nav">
+			<ul>
+				<li style="width:72px;">
+					<a href="\"  style="width:72px;" class="nav_top">网站首页</a>
+				</li>
+								<li>
+					<a class="nav_top">学院概况</a>
+					<div class="nav_b">
+												<a href="http://www.jxgzy.cn/news-list-xueyuanjianjie.html">学院简介</a>
+												<a href="http://www.jxgzy.cn/news-list-xianrenlingdao.html">现任领导</a>
+												<a href="http://www.jxgzy.cn/news-list-rongyuchengguo.html">荣誉成果</a>
+												<a href="http://www.jxgzy.cn/news-list-xiaoquguihua.html">校区规划</a>
+												<a href="http://www.jxgzy.cn/news-list-xiaoyuanlueying.html">校园掠影</a>
+												<a href="http://www.jxgzy.cn/news-list-xueyuanshipin.html">学院视频</a>
+												<a href="http://www.jxgzy.cn/news-list-xueyuanditu.html">学院地图</a>
+												<div class="clear"></div>
+					</div>
+				</li>
+								<li>
+					<a class="nav_top">职能部门</a>
+					<div class="nav_b">
+												<a href="http://www.jxgzy.cn/news-list-dangzhengguanlijigou.html">党政管理机构</a>
+												<a href="http://www.jxgzy.cn/news-list-fushujigou.html">附属机构</a>
+												<a href="http://www.jxgzy.cn/news-list-anzhangchengshezhijigou.html">按章程设置机构</a>
+												<div class="clear"></div>
+					</div>
+				</li>
+								<li>
+					<a class="nav_top">教学机构</a>
+					<div class="nav_b">
+												<a href="http://jdgcxy.jxgzy.cn">机电工程学院</a>
+												<a href="http://jjglxy.jxgzy.cn">经济管理学院</a>
+												<a href="http://xxgcxy.jxgzy.cn">电子与信息工程学院</a>
+												<a href="http://jzysxy.jxgzy.cn">建筑与艺术学院</a>
+												<a href="http://qffzxy.jxgzy.cn">轻纺服装学院</a>
+												<a href="http://www.jxgzy.cn/news-list-chuangxinchuangyejiaoyubangong.html">创新创业教育办公室</a>
+												<a href="http://www.jxgzy.cn/news-list-jichujiaoxuebu.html">基础教学部</a>
+												<a href="http://www.jxgzy.cn/news-list-sixiangzhengzhililunkejiaoxueb.html">思想政治理论课教学部</a>
+												<a href="http://www.jxgzy.cn/news-list-jixujiaoyuxueyuan.html">继续教育学院</a>
+												<div class="clear"></div>
+					</div>
+				</li>
+								<li>
+					<a class="nav_top">教学科研</a>
+					<div class="nav_b">
+												<a href="http://jwc.jxgzy.cn">教务处</a>
+												<a href="http://kyc.jxgzy.cn">科研处</a>
+												<div class="clear"></div>
+					</div>
+				</li>
+								<li>
+					<a class="nav_top">学工团委</a>
+					<div class="nav_b">
+												<a href="http://xgc.jxgzy.cn">学工处</a>
+												<a href="http://www.jxgzy.cn/news-list-tuanwei71.html">团委</a>
+												<div class="clear"></div>
+					</div>
+				</li>
+								<li>
+					<a class="nav_top">智慧校园</a>
+					<div class="nav_b">
+												<a href="http://jxgzy.fanya.chaoxing.com/portal">经纬学习空间</a>
+												<a href="http://e-learning.jxgzy.cn/suite/portal/portalView.do?siteKey=-1">网络教学平台</a>
+												<a href="http://e-learning.jxgzy.cn/suite/portal/portalView.do?siteKey=-2">精品课程平台</a>
+												<a href="http://e-learning.jxgzy.cn/suite/portal/portalView.do?siteKey=-5">实习管理平台</a>
+												<a href="http://yunpan.jxgzy.cn">私有云盘系统</a>
+												<a href="http://jwgl.jxgzy.cn/jwweb/">教务管理系统</a>
+												<div class="clear"></div>
+					</div>
+				</li>
+								<li>
+					<a class="nav_top">图文信息</a>
+					<div class="nav_b">
+												<a href="http://www.jxgzy.cn/news-list-xuebaoxuekan.html">学报学刊</a>
+												<a href="http://www.jxgzy.cn/news-list-shuzitushuguan.html">数字图书馆</a>
+												<a href="http://www.jxgzy.cn/news-list-wangluoxinxizhongxin.html">网络信息中心</a>
+												<div class="clear"></div>
+					</div>
+				</li>
+								<li>
+					<a class="nav_top">招生就业</a>
+					<div class="nav_b">
+												<a href="http://zsw.jxgzy.cn">招生信息网</a>
+												<a href="http://jyw.jxgzy.cn">就业信息网</a>
+												<div class="clear"></div>
+					</div>
+				</li>
+								<li>
+					<a class="nav_top">信息服务</a>
+					<div class="nav_b">
+												<a href="http://www.jxgzy.cn/news-list-yuanchangxinxiang.html">领导信箱</a>
+												<a href="http://www.jxgzy.cn/news-list-gongwangziyuan.html">公网资源</a>
+												<a href="http://www.jxgzy.cn/news-list-neiwangfuwu.html">内网服务</a>
+												<a href="http://www.jxgzy.cn/news-list-dianhuachaxun.html">电话查询</a>
+												<a href="http://www.jxgzy.cn/news-list-xiaolichaxun.html">校历查询</a>
+												<div class="clear"></div>
+					</div>
+				</li>
+							</ul>
+		</div>
+	</div>
+	<div class="sapce1"></div>	    <div id="Bimg">
+        <div class="Bimg">
+            <ul class="pic1">
+              	            	<li><img src="/uploadfile/52/201805/e70eb56aab.jpg"></li>
+            	            	<li><img src="/uploadfile/52/201805/98bae1178f.jpg"></li>
+            	            </ul>
+        </div>
+        <script type="text/javascript">
+            jQuery(".Bimg").slide({ titCell:".num2 li",interTime:4000, mainCell:".pic1",effect:"fold", autoPlay:true});
+        </script>
+    </div>
+    <div id="news">
+        <div class="news">
+            <div class="news_s">
+                <div class="news_s1">
+                    <div class="news_s1_tit">
+                        <p class="ple">
+                            <img src="/statics/gyzy/images/xyyw.png" alt="">&nbsp;&nbsp;&nbsp;<span>学院要闻</span>
+                        </p>
+                        <p class="pri"><a href="http://www.jxgzy.cn/news-list-xueyuanyaowen.html">查看更多 ></a></p>
+                    </div>
+                    <div class="news_s1_con">
+                                                <div class="s1_dsp">
+                            <div class="dsp1"><a href="http://www.jxgzy.cn/news-show-3368.html" target="_blank"><img src="/uploadfile/52/201805/c7686a2943.jpg" alt=""></a></div>
+                            <div class="dsp2">
+                                <a href="http://www.jxgzy.cn/news-show-3368.html" target="_blank" style="0">我校青年志愿者协会联合省血..</a>
+                                <p>为进一步培育和践行社会主义核心价值观，充分发扬我校师生“奉献、友爱、互助、进步”精神，广泛宣传无偿献血知识，动员更多人员..</p>
+                            </div>
+                        </div>
+                                
+                        <ul class="newsl">
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3368.html" style="0">我校青年志愿者协会联合省血液中心举办“携手你..</a><span>05-28</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3357.html" style="0">我校组织召开辅导员专题培训暨“理论研讨、专题..</a><span>05-24</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3359.html" style="0">江西环境工程职业技术学院副校长叶超飞一行来校..</a><span>05-23</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3348.html" style="0">我校组织召开辅导员队伍标准化建设推进会</a><span>05-18</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3345.html" style="0">我校召开党委理论学习中心组（扩大）学习会</a><span>05-17</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3343.html" style="0">职教改革四十年 产教融合育工匠——我校职业教..</a><span>05-17</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3338.html" style="color:#ff0000">我校校园环境专项整治工作——首步“净化”初显..</a><span>05-17</span></li>
+                                                        <div class="clear"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="news_s2">
+                    <div class="news_s2_tit">
+                        <p class="ple">
+                            <img src="/statics/gyzy/images/tzgg.png" alt="">&nbsp;&nbsp;&nbsp;<span>通知公告</span>
+                        </p>
+                        <p class="pri"><a href="http://www.jxgzy.cn/news-list-tongzhigonggao.html">查看更多 ></a></p>
+                    </div>
+                    <div class="news_s2_con">
+                        <ul class="newsl">
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3257.html" style="0">[人力资源处]2017年公开招聘高层次人才补..</a><span>04-19</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3367.html" style="0">[资产管理处]青山湖校区空地平整垃圾外运项目..</a><span>05-26</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3366.html" style="0">[资产管理处]青山湖校区空地平整垃圾外运项目..</a><span>05-26</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3365.html" style="0">[资产管理处]瑶湖校区创新创业园（校内周边）..</a><span>05-26</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3364.html" style="0">[资产管理处]高考招生网上宣传服务项目拟中标..</a><span>05-26</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3363.html" style="0">[资产管理处]江西工业职业技术学院2018年..</a><span>05-26</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3362.html" style="0">[资产管理处]学院青山湖校区环境整治初期部分..</a><span>05-26</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3361.html" style="0">[资产管理处]学院瑶湖校区新增高压用电专线变..</a><span>05-26</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3356.html" style="0">[资产管理处]旅游景区实地认识实训项目招标公..</a><span>05-23</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3351.html" style="0">[资产管理处]江西工业职业技术学院2018年..</a><span>05-18</span></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3349.html" style="0">[资产管理处]高考招生网上宣传服务项目招标公..</a><span>05-18</span></li>
+                                                        <div class="clear"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="news_s3">
+                    <div class="bgyx">
+                        <div class="news_s3_tit1">
+                            <p class="ple">
+                                <img src="/statics/gyzy/images/bgyx.png" alt="">&nbsp;&nbsp;&nbsp;<span>数字化校园入口</span>
+                            </p>
+                        </div>
+                        <div class="login">
+                            <form id="myForm" action="" method="post" class="login">
+                                <div class="login_s1 lgs">
+                                    <span>用户名：</span>
+                                    <input id="usernameshow" name="username" value="" placeholder="请输入用户名" type="text" maxlength="20">
+                                    <input type="hidden" name="pwhidden">               
+                                </div>
+                                <div class="login_s2 lgs">
+                                    <span>密 码：</span>
+                                    <input id="pwshow" name="pwshow" placeholder="请输入密码" type="password" maxlength="20">
+                                    <input type="hidden" name="picnum" value="7652">               
+                                </div>
+                                <div class="login_s3">
+                                    <input type="submit" name="submit" value="登录" onclick="javascript:gook()" id="lgn">
+                                    <input type="button" name="Input" value="重置" onclick="formReset()" id="lgn">
+                                </div>
+                            </form>
+                            <script type="text/javascript">
+                                function formReset()
+                                {
+                                document.getElementById("myForm").reset();
+                                };
+
+                                function gook() {
+                                    f1.pwhidden.value = encode(f1.pwshow.value, parseInt(f1.picnum.value));
+
+                                    f1.submit();
+                                };
+
+                                function encode(datastr, bassnum) {
+                                    var tempstr;
+                                    var tchar;
+                                    var newdata = "";
+
+                                    for (var i = 0; i < datastr.length; i++)
+                                    {
+                                        tchar = 65535 + bassnum - datastr.charCodeAt(i);
+                                        tchar = tchar.toString();
+
+                                        while(tchar.length < 5)
+                                        {
+                                            tchar = "0" + tchar;
+                                        }
+
+                                        newdata = newdata + tchar;
+                                    }
+
+                                    return newdata;
+                                }
+                            </script>
+                        </div>      
+                    </div>  
+                    <div class="ksdh">
+                        <div class="news_s3_tit2">
+                            <p class="ple">
+                                <img src="/statics/gyzy/images/ksdh.png" alt="">&nbsp;&nbsp;&nbsp;<span>快速导航</span>
+                            </p>
+                        </div>
+                        <div class="ksdh_con">
+                            <ul>
+                                <li style="margin-left: 15px;">
+                                    <a href="#">
+                                        <img src="/statics/gyzy/images/ban.png" alt="">
+                                    </a>
+                                </li>
+                                <li style="margin-left: 15px;">
+                                    <a href="http://jwgl.jxgzy.cn/jwweb/">
+                                        <img src="/statics/gyzy/images/jiao.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://e-learning.jxgzy.cn/suite/portal/portalView.do?siteKey=-2">
+                                        <img src="/statics/gyzy/images/jing.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://e-learning.jxgzy.cn/suite/portal/portalView.do?siteKey=-1">
+                                        <img src="/statics/gyzy/images/wang.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://e-learning.jxgzy.cn/suite/portal/portalView.do?siteKey=-5">
+                                        <img src="/statics/gyzy/images/ding.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://e-learning.jxgzy.cn/suite/portal/portalView.do?siteKey=-3">
+                                        <img src="/statics/gyzy/images/gong.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="news_x">
+                <div class="news_x1">
+                    <div class="news_x1_tit">
+                        <p class="ple">
+                            <img src="/statics/gyzy/images/zxzt.png" alt="">&nbsp;&nbsp;&nbsp;<span>专题专栏</span>
+                        </p>
+                        <p class="pri0">
+                            <a href="http://www.jxgzy.cn/news-list-zxzt.html">
+                                <img src="/statics/gyzy/images/pt1.png" alt="">
+                                <img src="/statics/gyzy/images/pt2.png" alt="">
+                                <img src="/statics/gyzy/images/pt2.png" alt="">
+                            </a>
+                        </p>
+                    </div>
+                    <div class="news_x1_con">
+                        <ul class="gd1">
+                          	                            <li><a href="http://zzw.jxgzy.cn"><img src="/uploadfile/52/201803/aca6d10235.jpg" alt="综治网" /></a></li>
+                                                        <li><a href="http://jswmw.jxgzy.cn"><img src="/uploadfile/52/201803/dfcc0132dc.jpg" alt="精神文明网" /></a></li>
+                                                        <li><a href="http://djw.jxgzy.cn"><img src="/uploadfile/52/201804/29547e9110.jpg" alt="党建思政网" /></a></li>
+                                                        <li><a href="http://dflzw.jxgzy.cn"><img src="/uploadfile/52/201803/b5e8276f33.jpg" alt="党风廉政网" /></a></li>
+                                                        <li><a href="http://www.jxgzy.cn/news-show-3360.html"><img src="/uploadfile/52/201805/07c8d50dab.jpg" alt="教师违反师德行为举报方式" /></a></li>
+                             
+                        </ul>
+						<script>
+							jQuery(".news_x1_con").slide({mainCell:".gd1",autoPlay:true,effect:"leftMarquee",vis:5,interTime:50,trigger:"click"});
+						</script>
+                    </div>
+                </div>
+                <div class="news_x2">
+                    <div class="news_x2_tit">
+                        <p class="ple">
+                            <img src="/statics/gyzy/images/xwzx.png" alt="">&nbsp;&nbsp;&nbsp;<span>新闻中心</span>
+                        </p>
+                        <p class="pri"><a href="http://www.jxgzy.cn/news-list-xwzx.html">更多 ></a></p>
+                    </div>
+                    <div class="news_x2_con">
+                        <ul>
+                            <li><a href="http://www.jxgzy.cn/news-list-xwzx.html"><img src="/statics/gyzy/images/xw0.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>  
+    </div>
+    <script type="text/javascript" src="/statics/js/tj.js"></script>	<div id="foot">
+		<div class="foot">
+			<div class="btinf">
+				<p>招生电话：0791-88691909,0791-88351773&nbsp;&nbsp;&nbsp;招生传真：0791-88691909</p>
+				<p>制作维护：维网科技&nbsp;&nbsp;网站备案：赣ICP备11005640号</p>
+				<p>学院地址：南昌市青山湖大道1988号(青山湖校区)&nbsp;&nbsp;南昌市昌东高校园区天祥大道388号(瑶湖校区)</p>
+			</div>
+			<div class="daoh">
+				<div class="dh">
+                    <script type="text/javascript">
+                    //设为首页 www.jb51.net
+                    function SetHome(obj,url){
+                      try{
+                        obj.style.behavior='url(#default#homepage)';
+                        obj.setHomePage(url);
+                      }catch(e){
+                        if(window.netscape){
+                         try{
+                           netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                         }catch(e){
+                           alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+                         }
+                        }else{
+                        alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将【"+url+"】设置为首页。");
+                        }
+                     }
+                    };
+                    </script>
+					<p><a href="http://www.jxgzy.cn/news-list-yuanchangxinxiang.html">校长邮箱</a></p>
+					<p><a href="javascript:void(0);" onclick="SetHome(this,'http://www.jxgzy.cn');">设为首页</a></p>
+					<p style="margin-top:16px;"><a href="http://www.jxgzy.cn/news-list-xueyuanditu.html">学院地图</a></p>
+					<p style="margin-top:16px;"><a href="http://www.jxgzy.cn/news-list-wzdh.html">站内导航</a></p>
+					<div class="clear"></div>
+				</div>
+                <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/15/000/0000/60807128/CA150000000608071280001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+				<a href="#" class="sydw" style="display:none;"><img src="/statics/gyzy/images/sydw.png" alt=""></a>
+			</div>
+			<div class="links">
+				<select onchange="javascript:window.open(this.options[this.selectedIndex].value)" name="select" id="">
+	              	<option selected="selected">--&nbsp;学院链接&nbsp;--</option>
+                    <option value="http://jdgcxy.jxgzy.cn">机电工程学院</option>
+                    <option value="http://jjglxy.jxgzy.cn">经济管理学院</option>
+                    <option value="http://xxgcxy.jxgzy.cn">电子与信息工程学院</option>
+                    <option value="http://jzysxy.jxgzy.cn">建筑与艺术学院</option>
+                    <option value="http://qffzxy.jxgzy.cn">轻纺服装学院</option>
+                    <option value="http://jwc.jxgzy.cn">教务处</option>
+	              	<option value="http://xgc.jxgzy.cn">学工处</option>
+	            </select>
+				<select onchange="javascript:window.open(this.options[this.selectedIndex].value)" name="select" id="">
+                    <option selected="selected">--&nbsp;友情链接&nbsp;--</option>
+                    <option value="http://www.moe.edu.cn/">中国教育部</option>
+                    <option value="http://www.neea.edu.cn/">中国教育考试网</option>
+                    <option value="http://www.tech.net.cn">中国高职高专教育网</option>
+                    <option value="http://www.chsi.com.cn/xlcx/">中国高等教育学生信息网</option>
+                    <option value="http://www.jxedu.gov.cn">江西省教育厅</option>
+                    <option value="http://gaojiao.jxedu.gov.cn/">江西省教育厅-高教频道</option>
+					<option value="http://nc.wenming.cn/">中国文明网·南昌站</option>
+                    <option value="http://www.hep.com.cn/service/xuanshu">高教出版社信息检索系统</option>
+                </select>
+			</div>
+		</div>
+	</div><script src="/statics/gyzy/js/script.js"></script><!-- 主js -->
+</body></html>

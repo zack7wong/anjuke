@@ -1,0 +1,914 @@
+<html>
+<HEAD>
+<title>合肥42中学中铁校区 >> 首页</title>
+<meta name="Description" content="合肥42中学中铁校区" />
+<meta name="Keywords" content="合肥42中学中铁校区" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<script src="/JS/prototype.js"></script>
+<script src="/JS/scriptaculous.js"></script>
+<script src="/JS/checklogin.js"></script>
+<link href='/Skin/DefaultSkin.css' rel='stylesheet' type='text/css'> <script language='JavaScript' type='text/JavaScript' src='/js/menu.js'></script>
+
+<script language='javascript' src='/AD/201004/4.js'></script>
+<script language='javascript' src='/AD/201607/9.js'></script>
+<script language='javascript' src='/AD/201608/11.js'></script>
+</head>
+<body leftmargin=0 topmargin=0 onmousemove='HideMenu()'>
+<div style="Z-INDEX: 1000; POSITION: absolute; BACKGROUND-COLOR: #9cc5f8; WIDTH: 1px; HEIGHT: 1px; VISIBILITY: hidden" id=menuDiv>
+</div>
+<script src="/Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" background="/Skin/sznc/titlebg02.gif">
+  <tr>
+    <td width="311" height="33">　<IMG src="/Skin/sznc/03.gif" border=0 align=absMiddle> <A href="#" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.hf42zt.com');"><font color="#FFFFFF">设为首页</font> </a><IMG src="/Skin/sznc/03.gif" border=0 align=absMiddle> <a href="#" id="StranLink"><font color="#FFFFFF">繁体中文</font></a>
+      <script language="javascript" src="/js/Std_StranJF.Js"></script>
+<IMG src="/Skin/sznc/03.gif" border=0 align=absMiddle> <a href="/user/index.asp" target="_blank"><font color="#FFFFFF">用户登录</font></a></td>
+    <td width="679" align="right" valign="middle"><font color="#FFFFFF"><SCRIPT language=JavaScript >
+function RunGLNL(){
+var today=new Date();
+var d=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+var DDDD=(today.getFullYear()<100 ? today.getFullYear()+1900:today.getFullYear())+"年"+(today.getMonth()+1)+"月"+today.getDate()+"日";
+DDDD = DDDD + " " + d[today.getDay()];
+DDDD = DDDD+ " " + (CnDateofDateStr(today));
+//DDDD = DDDD+ " " + SolarTerm(today);
+document.write(DDDD);
+}
+function DaysNumberofDate(DateGL){
+return parseInt((Date.parse(DateGL)-Date.parse(DateGL.getFullYear()+"/1/1"))/86400000)+1;
+}
+function CnDateofDate(DateGL){
+var CnData=new Array(
+0x16,0x2a,0xda,0x00,0x83,0x49,0xb6,0x05,0x0e,0x64,0xbb,0x00,0x19,0xb2,0x5b,0x00,
+0x87,0x6a,0x57,0x04,0x12,0x75,0x2b,0x00,0x1d,0xb6,0x95,0x00,0x8a,0xad,0x55,0x02,
+0x15,0x55,0xaa,0x00,0x82,0x55,0x6c,0x07,0x0d,0xc9,0x76,0x00,0x17,0x64,0xb7,0x00,
+0x86,0xe4,0xae,0x05,0x11,0xea,0x56,0x00,0x1b,0x6d,0x2a,0x00,0x88,0x5a,0xaa,0x04,
+0x14,0xad,0x55,0x00,0x81,0xaa,0xd5,0x09,0x0b,0x52,0xea,0x00,0x16,0xa9,0x6d,0x00,
+0x84,0xa9,0x5d,0x06,0x0f,0xd4,0xae,0x00,0x1a,0xea,0x4d,0x00,0x87,0xba,0x55,0x04
+);
+var CnMonth=new Array();
+var CnMonthDays=new Array();
+var CnBeginDay;
+var LeapMonth;
+var Bytes=new Array();
+var I;
+var CnMonthData;
+var DaysCount;
+var CnDaysCount;
+var ResultMonth;
+var ResultDay;
+var yyyy=DateGL.getFullYear();
+var mm=DateGL.getMonth()+1;
+var dd=DateGL.getDate();
+if(yyyy<100) yyyy+=1900;
+  if ((yyyy < 1997) || (yyyy > 2020)){
+    return 0;
+    }
+  Bytes[0] = CnData[(yyyy - 1997) * 4];
+  Bytes[1] = CnData[(yyyy - 1997) * 4 + 1];
+  Bytes[2] = CnData[(yyyy - 1997) * 4 + 2];
+  Bytes[3] = CnData[(yyyy - 1997) * 4 + 3];
+  if ((Bytes[0] & 0x80) != 0) {CnMonth[0] = 12;}
+  else {CnMonth[0] = 11;}
+  CnBeginDay = (Bytes[0] & 0x7f);
+  CnMonthData = Bytes[1];
+  CnMonthData = CnMonthData << 8;
+  CnMonthData = CnMonthData | Bytes[2];
+  LeapMonth = Bytes[3];
+for (I=15;I>=0;I--){
+    CnMonthDays[15 - I] = 29;
+    if (((1 << I) & CnMonthData) != 0 ){
+      CnMonthDays[15 - I]++;}
+    if (CnMonth[15 - I] == LeapMonth ){
+      CnMonth[15 - I + 1] = - LeapMonth;}
+    else{
+      if (CnMonth[15 - I] < 0 ){CnMonth[15 - I + 1] = - CnMonth[15 - I] + 1;}
+      else {CnMonth[15 - I + 1] = CnMonth[15 - I] + 1;}
+      if (CnMonth[15 - I + 1] > 12 ){ CnMonth[15 - I + 1] = 1;}
+    }
+  }
+  DaysCount = DaysNumberofDate(DateGL) - 1;
+  if (DaysCount <= (CnMonthDays[0] - CnBeginDay)){
+    if ((yyyy > 1901) && (CnDateofDate(new Date((yyyy - 1)+"/12/31")) < 0)){
+      ResultMonth = - CnMonth[0];}
+    else {ResultMonth = CnMonth[0];}
+    ResultDay = CnBeginDay + DaysCount;
+  }
+  else{
+    CnDaysCount = CnMonthDays[0] - CnBeginDay;
+    I = 1;
+    while ((CnDaysCount < DaysCount) && (CnDaysCount + CnMonthDays[I] < DaysCount)){
+      CnDaysCount+= CnMonthDays[I];
+      I++;
+    }
+    ResultMonth = CnMonth[I];
+    ResultDay = DaysCount - CnDaysCount;
+  }
+  if (ResultMonth > 0){
+    return ResultMonth * 100 + ResultDay;}
+  else{return ResultMonth * 100 - ResultDay;}
+}
+function CnYearofDate(DateGL){
+var YYYY=DateGL.getFullYear();
+var MM=DateGL.getMonth()+1;
+var CnMM=parseInt(Math.abs(CnDateofDate(DateGL))/100);
+if(YYYY<100) YYYY+=1900;
+if(CnMM>MM) YYYY--;
+YYYY-=1864;
+return CnEra(YYYY)+"年";
+}
+function CnMonthofDate(DateGL){
+var  CnMonthStr=new Array("零","正","二","三","四","五","六","七","八","九","十","冬","腊");
+var  Month;
+  Month = parseInt(CnDateofDate(DateGL)/100);
+  if (Month < 0){return "闰" + CnMonthStr[-Month] + "月";}
+  else{return CnMonthStr[Month] + "月";}
+}
+function CnDayofDate(DateGL){
+var CnDayStr=new Array("零",
+    "初一", "初二", "初三", "初四", "初五",
+    "初六", "初七", "初八", "初九", "初十",
+    "十一", "十二", "十三", "十四", "十五",
+    "十六", "十七", "十八", "十九", "二十",
+    "廿一", "廿二", "廿三", "廿四", "廿五",
+    "廿六", "廿七", "廿八", "廿九", "三十");
+var Day;
+  Day = (Math.abs(CnDateofDate(DateGL)))%100;
+  return CnDayStr[Day];
+}
+function DaysNumberofMonth(DateGL){
+var MM1=DateGL.getFullYear();
+    MM1<100 ? MM1+=1900:MM1;
+var MM2=MM1;
+    MM1+="/"+(DateGL.getMonth()+1);
+    MM2+="/"+(DateGL.getMonth()+2);
+    MM1+="/1";
+    MM2+="/1";
+return parseInt((Date.parse(MM2)-Date.parse(MM1))/86400000);
+}
+function CnEra(YYYY){
+var Tiangan=new Array("甲","乙","丙","丁","戊","己","庚","辛","壬","癸");
+//var Dizhi=new Array("子(鼠)","丑(牛)","寅(虎)","卯(兔)","辰(龙)","巳(蛇)",
+                    //"午(马)","未(羊)","申(猴)","酉(鸡)","戌(狗)","亥(猪)");
+var Dizhi=new Array("子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥");
+return Tiangan[YYYY%10]+Dizhi[YYYY%12];
+}
+function CnDateofDateStr(DateGL){
+  if(CnMonthofDate(DateGL)=="零月") return "　请调整您的计算机日期!";
+  else return "农历"+CnYearofDate(DateGL)+ " " + CnMonthofDate(DateGL) + CnDayofDate(DateGL);
+}
+function SolarTerm(DateGL){
+  var SolarTermStr=new Array(
+        "小寒","大寒","立春","雨水","惊蛰","春分",
+        "清明","谷雨","立夏","小满","芒种","夏至",
+        "小暑","大暑","立秋","处暑","白露","秋分",
+        "寒露","霜降","立冬","小雪","大雪","冬至");
+  var DifferenceInMonth=new Array(
+        1272060,1275495,1281180,1289445,1299225,1310355,
+        1321560,1333035,1342770,1350855,1356420,1359045,
+        1358580,1355055,1348695,1340040,1329630,1318455,
+        1306935,1297380,1286865,1277730,1274550,1271556);
+  var DifferenceInYear=31556926;
+  var BeginTime=new Date(1901/1/1);
+  BeginTime.setTime(947120460000);
+     for(;DateGL.getFullYear()<BeginTime.getFullYear();){
+        BeginTime.setTime(BeginTime.getTime()-DifferenceInYear*1000);
+     }
+     for(;DateGL.getFullYear()>BeginTime.getFullYear();){
+        BeginTime.setTime(BeginTime.getTime()+DifferenceInYear*1000);
+     }
+     for(var M=0;DateGL.getMonth()>BeginTime.getMonth();M++){
+        BeginTime.setTime(BeginTime.getTime()+DifferenceInMonth[M]*1000);
+     }
+     if(DateGL.getDate()>BeginTime.getDate()){
+        BeginTime.setTime(BeginTime.getTime()+DifferenceInMonth[M]*1000);
+        M++;
+     }
+     if(DateGL.getDate()>BeginTime.getDate()){
+        BeginTime.setTime(BeginTime.getTime()+DifferenceInMonth[M]*1000);
+        M==23?M=0:M++;
+     }
+  var JQ;
+  if(DateGL.getDate()==BeginTime.getDate()){
+    JQ="　 今天是<font color='#FF9999'><b>"+SolarTermStr[M] + "</b></font>";
+  }
+  else if(DateGL.getDate()==BeginTime.getDate()-1){
+    JQ="　 明天是<font color='#FF9999'><b>"+SolarTermStr[M] + "</b></font>";
+  }
+  else if(DateGL.getDate()==BeginTime.getDate()-2){
+    JQ="　 后天是<font color='#FF9999'><b>"+SolarTermStr[M] + "</b></font>";
+  }
+  else{
+   JQ=" "
+   if(DateGL.getMonth()==BeginTime.getMonth()){
+      JQ+="　 本月";
+   }
+   else{
+     JQ+="　 下月";
+   }
+   JQ+=BeginTime.getDate()+"日"+"<font color='#FF9999'><b>"+SolarTermStr[M]+"</b></font>";
+  }
+return JQ;
+}
+function CAL()
+{}
+RunGLNL();
+
+function CurentTime(){ 
+    var now = new Date(); 
+    var hh = now.getHours(); 
+    var mm = now.getMinutes(); 
+    var ss = now.getTime() % 60000; 
+    ss = (ss - (ss % 1000)) / 1000; 
+    var clock = hh+':'; 
+    if (mm < 10) clock += '0'; 
+    clock += mm+':'; 
+    if (ss < 10) clock += '0'; 
+    clock += ss; 
+    return(clock); 
+} 
+</SCRIPT></font></td>
+    <td width="10" align="right" valign="middle"></td>
+  </tr>
+</table>
+<table cellSpacing=0 cellPadding=0 width=1000 align=center border=0>
+  <tr>
+    <td align=middle><script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0','width','1000','height','180','src','/Skin/lyzqc/web/top','quality','high','pluginspage','http://www.macromedia.com/go/getflashplayer','movie','/Skin/lyzqc/web/top' ); //end AC code
+</script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="1000" height="180">
+      <param name="movie" value="/Skin/lyzqc/web/top.swf">
+      <param name="quality" value="high">
+      <embed src="/Skin/lyzqc/web/top.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="1000" height="180"></embed>
+    </object></noscript></td>
+  </tr>
+</table>
+<table cellSpacing=0 cellPadding=0 width=1000 align=center border=0>
+  <tr>
+    <td background=/Skin/sznc/menu_bg0.gif height=36><div id="lyzqcdh">&nbsp;&nbsp;<a class='Channel2' href='/Index.asp'>网站首页</a>&nbsp;&nbsp;<a class='Channel'  href='/djzc/Index.asp' target='_blank' title=''>党建之窗</a>&nbsp;&nbsp;<a class='Channel'  href='/Article/Index.asp' target='_self' title=''>校务公开</a>&nbsp;&nbsp;<a class='Channel'  href='/jxpd/Index.asp' target='_self' title=''>教学频道</a>&nbsp;&nbsp;<a class='Channel'  href='/jkpd/Index.asp' target='_self' title=''>教科频道</a>&nbsp;&nbsp;<a class='Channel'  href='/dypd/Index.asp' target='_self' title=''>德育频道</a>&nbsp;&nbsp;<a class='Channel'  href='/Article/ShowClass.asp?ClassID=61' target='_self' title='庐阳教育督导'>教育督导</a>&nbsp;&nbsp;<a class='Channel'  href='/nlzc/Index.asp' target='_self' title=''>特色建设</a>&nbsp;&nbsp;<a class='Channel'  href='/xyaq/Index.asp' target='_blank' title=''>校园安全</a>&nbsp;&nbsp;<a class='Channel'  href='/Photo/Index.asp' target='_self' title=''>图片中心</a>&nbsp;&nbsp;</div></td>
+  </tr>
+  <tr>
+    <td height=8></td>
+  </tr>
+</table> 
+<script language='javascript' src='/AD/201105/2.js'></script> 
+  <table border=0 cellSpacing=0 cellPadding=0 width=1000 align=center>
+    <tr>
+      <td vAlign=top width=382 align=left><script src="/Skin/lyzqc/huandeng/sohufocus/js/sohuflash_1.js" type="text/javascript"></script>
+<table border="0" cellpadding="5" cellspacing="1" bgcolor="#CCCCCC">
+  <tr>
+    <td bgcolor="#FFFFFF"><div id="flashcontent01"></div></td>
+  </tr>
+</table>
+
+
+<script type="text/javascript">	
+var titles = "";
+var imgs = "";
+var urls = "";
+function addtitle(title){
+	if(titles!=""){
+		titles+="|";
+	}
+	titles+=title;
+}
+
+function addphotourl(photourl){
+	if(imgs!=""){
+		imgs+="|";
+	}
+	imgs+=photourl;
+}
+
+function addlink(link){
+	if(urls!=""){
+		urls+="|";
+	}
+	urls+=link;
+}
+
+
+addtitle("42中铁：展现核心素养&nbsp;落实立德树人");
+addphotourl("/jkpd/UploadFiles_5229/201805/2018052816245781.jpg");
+addlink("/jkpd/ShowArticle.asp?ArticleID=1727");
+
+addtitle("提升办学内涵，凸显办学特色");
+addphotourl("/jxpd/UploadFiles_9004/201805/2018052516023382.jpg");
+addlink("/jxpd/ShowArticle.asp?ArticleID=1726");
+
+addtitle("42中铁：走进课堂&nbsp;走近孩子");
+addphotourl("/Article/UploadFiles/201805/20180524165419441.jpg");
+addlink("/Article/ShowArticle.asp?ArticleID=1725");
+
+addtitle("42中铁：绿茵成就梦想&nbsp;激情挥洒青春（系列报道二）");
+addphotourl("/dypd/UploadFiles_4096/201805/2018052410452311.jpg");
+addlink("/dypd/ShowArticle.asp?ArticleID=1724");
+
+addtitle("42中铁：共进午餐话心声");
+addphotourl("/dypd/UploadFiles_4096/201805/2018052410365158.jpg");
+addlink("/dypd/ShowArticle.asp?ArticleID=1723");
+
+addtitle("提高师德师风素养&nbsp;&nbsp;&nbsp;争做新时期“四有”好老师");
+addphotourl("/Article/UploadFiles/201805/20180517162231377.jpg");
+addlink("/Article/ShowArticle.asp?ArticleID=1717");
+
+addtitle("合肥42中中铁校区宣传报道之七");
+addphotourl("/Article/UploadFiles/201805/2018051614044934.jpg");
+addlink("/Article/ShowArticle.asp?ArticleID=1716");
+
+addtitle("2017——2018学年度第二学期期中系列表彰");
+addphotourl("/dypd/UploadFiles_4096/201805/2018051509425724.jpg");
+addlink("/dypd/ShowArticle.asp?ArticleID=1715");
+
+					var speed = 4000;					
+					var sohuFlash2 = new sohuFlash("/Skin/lyzqc/huandeng/sohufocus/focus0414a.swf","flashcontent01","370","267","8","#ffffff");
+sohuFlash2.addParam("quality", "medium");
+sohuFlash2.addParam("wmode", "opaque");	
+sohuFlash2.addVariable("speed",speed);
+						sohuFlash2.addVariable("p",imgs);	
+						sohuFlash2.addVariable("l",urls);
+						sohuFlash2.addVariable("icon",titles);
+						sohuFlash2.write("flashcontent01");
+					</script></td>
+      <td width=8>&nbsp;</td>
+      <td vAlign=top width=301>
+        <table border=0 cellSpacing=1 cellPadding=0 width="100%" bgColor=#abdce6>
+          <tr>
+            <td class=title-bg1 height=26>
+              <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <tr>
+                  <td class=qingchunzhongxueA_tabletitle3 width="83%">最新动态</td>
+                  <td width="17%"><A href="/Article"><IMG border=0 src="/Skin/lyzqc/ico/more011.gif" width=36 height=17></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgColor=#ffffff>
+              <table border=0 cellSpacing=0 cellPadding=4 width="100%" height=250>
+                <tr>
+                  <td>
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1643" title="42中铁校区师德师风建设投诉举报电话" target="_self"><font color="#FF0000"><b>42中铁校区师德师风建设投诉举报电话</b></font></a></td><td align="right" class="bbb" width="40">03-24</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1729" title="一周菜单公示（2018年5月28日至6月1日）" target="_self">一周菜单公示（2018年5月28日至6月1日）</a></td><td align="right" class="ccc" width="40"><font color="red">05-29</font></td></tr><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1728" title="各部门主要工作行事历（5.28---6.3）" target="_self">各部门主要工作行事历（5.28---6.3）</a></td><td align="right" class="bbb" width="40"><font color="red">05-28</font></td></tr><tr><td width="10" valign="top" class="ccc"><img src="/jkpd/images/Article_common.gif" alt="普通教科"></td><td class="ccc"><a class="aaa" href="/jkpd/ShowArticle.asp?ArticleID=1727" title="42中铁：展现核心素养&nbsp;落实立德树人" target="_self">42中铁：展现核心素养&nbsp;落实立德树人</a></td><td align="right" class="ccc" width="40"><font color="red">05-28</font></td></tr><tr><td width="10" valign="top" class="bbb"><img src="/jxpd/images/Article_common.gif" alt="普通教学"></td><td class="bbb"><a class="aaa" href="/jxpd/ShowArticle.asp?ArticleID=1726" title="提升办学内涵，凸显办学特色" target="_self">提升办学内涵，凸显办学特色</a></td><td align="right" class="bbb" width="40"><font color="red">05-25</font></td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1725" title="42中铁：走进课堂&nbsp;走近孩子" target="_self">42中铁：走进课堂&nbsp;走近孩子</a></td><td align="right" class="ccc" width="40"><font color="red">05-24</font></td></tr><tr><td width="10" valign="top" class="bbb"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="bbb"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1724" title="42中铁：绿茵成就梦想&nbsp;激情挥洒青春（系列报道二）" target="_self">42中铁：绿茵成就梦想&nbsp;激情挥洒青春（系列…</a></td><td align="right" class="bbb" width="40"><font color="red">05-24</font></td></tr><tr><td width="10" valign="top" class="ccc"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="ccc"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1723" title="42中铁：共进午餐话心声" target="_self">42中铁：共进午餐话心声</a></td><td align="right" class="ccc" width="40"><font color="red">05-24</font></td></tr><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1722" title="各部门主要工作行事历（5.21—5.27）" target="_self">各部门主要工作行事历（5.21—5.27）</a></td><td align="right" class="bbb" width="40">05-21</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1721" title="一周菜单公示（2018年5月21日至25日）" target="_self">一周菜单公示（2018年5月21日至25日）</a></td><td align="right" class="ccc" width="40">05-18</td></tr><tr></tr></table></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td width=8>&nbsp;</td>
+      <td vAlign=top width=301>
+        <table border=0 cellSpacing=1 cellPadding=0 width="100%" bgColor=#fccaa9>
+          <tr>
+            <td class=title-bg3 height=26>
+              <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <tr>
+                  <td class=qingchunzhongxueA_tabletitle1 width="83%">通知公告</td>
+                  <td width="17%"><A href="/Article/ShowClass.asp?ClassID=1"><IMG border=0 src="/Skin/lyzqc/more/more04.gif" width=39 height=7></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgColor=#ffffff>
+              <table border=0 cellSpacing=0 cellPadding=4 width="100%" height=250>
+                <tr>
+                  <td><style type="text/css">
+/* --文字向上无缝滚动-- */
+#lyzqc_txtgundong {
+	overflow:hidden;
+	height: 230px;
+	text-align: center;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+</style>
+<div id="lyzqc_txtgundong">
+<div id="lyzqc_txtgundong1"><table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1643" title="42中铁校区师德师风建设投诉举报电话" target="_blank"><font color="#FF0000"><b>42中铁校区师德师风建设投诉举报电话</b></font></a></td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1720" title="（转发）合肥2018中小学招生方案公布！" target="_blank"><font color="#FF0000">（转发）合肥2018中小学招生方案公布！</font></a></td></tr><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1688" title="关于2018年五一节放假通知" target="_blank">关于2018年五一节放假通知</a></td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1661" title="关于2018年清明节放假通知" target="_blank">关于2018年清明节放假通知</a></td></tr><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1563" title="关于召开2017—2018学年第一学期期中表彰大会暨家长会的通知" target="_blank">关于召开2017—2018学年第一学期期中表彰大会暨家长会</a></td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1419" title="合肥市第42中学中铁国际城校区食堂经营招标中标公告" target="_blank">合肥市第42中学中铁国际城校区食堂经营招标中标公告</a></td></tr><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1418" title="合肥市第42中学中铁国际城校区食堂经营招标公告" target="_blank"><font color="#FF0000"><b>合肥市第42中学中铁国际城校区食堂经营招标公告</b></font></a></td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1417" title="合肥市第四十二中学中铁国际城校区选聘优秀教师公告" target="_blank">合肥市第四十二中学中铁国际城校区选聘优秀教师公告</a></td></tr><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1413" title="2017年中考喜报" target="_blank"><font color="#FF0000"><b>2017年中考喜报</b></font></a></td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1412" title="合肥42中中铁校区校聘教师公告" target="_blank">合肥42中中铁校区校聘教师公告</a></td></tr><tr></tr></table></div>
+<div id="lyzqc_txtgundong2"></div>
+</div>
+
+<script>
+<!--
+var speed=40; //数字越大速度越慢
+var tab=document.getElementById("lyzqc_txtgundong");
+var tab1=document.getElementById("lyzqc_txtgundong1");
+var tab2=document.getElementById("lyzqc_txtgundong2");
+tab2.innerHTML=tab1.innerHTML; //克隆lyzqc_txtgundong1为lyzqc_txtgundong2
+function Marquee(){
+if(tab2.offsetTop-tab.scrollTop<=0)//当滚动至lyzqc_txtgundong1与lyzqc_txtgundong2交界时
+tab.scrollTop-=tab1.offsetHeight //lyzqc_txtgundong跳到最顶端
+else{
+tab.scrollTop++
+}
+}
+var MyMar=setInterval(Marquee,speed);
+tab.onmouseover=function() {clearInterval(MyMar)};//鼠标移上时清除定时器达到滚动停止的目的
+tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};//鼠标移开时重设定时器
+-->
+</script>
+</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <table border=0 cellSpacing=0 cellPadding=0 width=1000 align=center>
+    <tr>
+      <td height=8></td>
+    </tr>
+    <tr>
+      <td height=141>
+      <script language='javascript' src='/AD/201605/8.js'></script></td>
+    </tr>
+    <tr>
+      <td height=8></td>
+    </tr>
+  </table>
+  <table border=0 cellSpacing=0 cellPadding=0 width=1000 align=center>
+    <tr>
+      <td vAlign=top align=left>
+        <table border=0 cellSpacing=1 cellPadding=0 width="100%" bgColor=#fccaa9>
+          <tr>
+            <td class=title-bg3 height=26>
+              <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <tr>
+                  <td width="79%"><SPAN class=qingchunzhongxueA_tabletitle1>机构设置</SPAN></td>
+                  <td width="21%">&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgColor=#ffffff height=250 vAlign=center align=middle>
+              <table border=0 cellSpacing=0 cellPadding=4 width="100%" height=250>
+                <tr>
+                  <td height="25%" align=middle><A href="/Article/ShowClass.asp?ClassID=25"><IMG border=0 src="/Skin/lyzqc/anniu/a1-1.gif" width=226 height=54></A></td>
+                </tr>
+                <tr>
+                  <td height="25%" align=middle><A href="/Article/ShowClass.asp?ClassID=24"><IMG border=0 src="/Skin/lyzqc/anniu/a2-2.gif" width=226 height=54></A></td>
+                </tr>
+                <tr>
+                  <td height="25%" align=middle><A href="/Article/ShowClass.asp?ClassID=60"><IMG border=0 src="/Skin/lyzqc/anniu/a3-3.gif" width=226 height=54></A></td>
+                </tr>
+                <tr>
+                  <td height="25%" align=middle><A href="/Article/ShowClass.asp?ClassID=59"><IMG border=0 src="/Skin/lyzqc/anniu/a4-4.gif" width=226 height=54></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td width=8>&nbsp;</td>
+      <td vAlign=top width=360>
+        <table border=0 cellSpacing=1 cellPadding=0 width="100%" bgColor=#abdce6>
+          <tr>
+            <td class=title-bg2 height=26>
+              <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <tr>
+                  <td width="86%"><SPAN class=qingchunzhongxueA_tabletitle2>教学频道</SPAN></td>
+                  <td width="14%"><A href="/jxpd"><IMG border=0 src="/Skin/lyzqc/ico/more011.gif" width=36 height=17></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgColor=#ffffff>
+              <table border=0 cellSpacing=0 cellPadding=4 width="100%" height=250>
+                <tr>
+                  <td>
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="bbb"><img src="/jxpd/images/Article_common.gif" alt="普通教学"></td><td class="bbb"><a class="aaa" href="/jxpd/ShowArticle.asp?ArticleID=1726" title="提升办学内涵，凸显办学特色" target="_self">提升办学内涵，凸显办学特色</a></td><td align="right" class="bbb" width="40"><font color="red">05-25</font></td></tr><tr><td width="10" valign="top" class="ccc"><img src="/jxpd/images/Article_common.gif" alt="普通教学"></td><td class="ccc"><a class="aaa" href="/jxpd/ShowArticle.asp?ArticleID=1713" title="42中铁：家长开放日邀请函" target="_self">42中铁：家长开放日邀请函</a></td><td align="right" class="ccc" width="40">05-14</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/jxpd/images/Article_common.gif" alt="普通教学"></td><td class="bbb"><a class="aaa" href="/jxpd/ShowArticle.asp?ArticleID=1710" title="合肥42中学中铁校区期中七年级家长学校专题讲座活动方案" target="_self">合肥42中学中铁校区期中七年级家长学校专题讲座活…</a></td><td align="right" class="bbb" width="40">05-11</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/jxpd/images/Article_common.gif" alt="普通教学"></td><td class="ccc"><a class="aaa" href="/jxpd/ShowArticle.asp?ArticleID=1709" title="合肥四十二中学中铁校区家长开放日活动方案" target="_self">合肥四十二中学中铁校区家长开放日活动方案</a></td><td align="right" class="ccc" width="40">05-11</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/jxpd/images/Article_common.gif" alt="普通教学"></td><td class="bbb"><a class="aaa" href="/jxpd/ShowArticle.asp?ArticleID=1707" title="42中铁：明确方向&nbsp;&nbsp;&nbsp;科学备考" target="_self">42中铁：明确方向&nbsp;&nbsp;&nbsp;科学备考</a></td><td align="right" class="bbb" width="40">05-11</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/jxpd/images/Article_common.gif" alt="普通教学"></td><td class="ccc"><a class="aaa" href="/jxpd/ShowArticle.asp?ArticleID=1706" title="42中铁：明确目标&nbsp;&nbsp;助力成长" target="_self">42中铁：明确目标&nbsp;&nbsp;助力成长</a></td><td align="right" class="ccc" width="40">05-11</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/jxpd/images/Article_common.gif" alt="普通教学"></td><td class="bbb"><a class="aaa" href="/jxpd/ShowArticle.asp?ArticleID=1699" title="合肥市第四十二中学中铁国际城校区宣传报道之五" target="_self">合肥市第四十二中学中铁国际城校区宣传报道之五</a></td><td align="right" class="bbb" width="40">05-02</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/jxpd/images/Article_common.gif" alt="普通教学"></td><td class="ccc"><a class="aaa" href="/jxpd/ShowArticle.asp?ArticleID=1698" title="合肥四十二中学中铁校区系列报道四" target="_self">合肥四十二中学中铁校区系列报道四</a></td><td align="right" class="ccc" width="40">05-02</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/jxpd/images/Article_common.gif" alt="普通教学"></td><td class="bbb"><a class="aaa" href="/jxpd/ShowArticle.asp?ArticleID=1647" title="42中铁：行走在结点和起点之间" target="_self">42中铁：行走在结点和起点之间</a></td><td align="right" class="bbb" width="40">03-27</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/jxpd/images/Article_common.gif" alt="普通教学"></td><td class="ccc"><a class="aaa" href="/jxpd/ShowArticle.asp?ArticleID=1640" title="42中铁：聚焦教学实践，打造高效课堂" target="_self">42中铁：聚焦教学实践，打造高效课堂</a></td><td align="right" class="ccc" width="40">03-21</td></tr><tr></tr></table></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td width=8>&nbsp;</td>
+      <td vAlign=top width=360>
+        <table border=0 cellSpacing=1 cellPadding=0 width="100%" bgColor=#abdce6>
+          <tr>
+            <td class=title-bg2 height=26>
+              <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <tr>
+                  <td width="86%"><SPAN class=qingchunzhongxueA_tabletitle2>校务公开</SPAN></td>
+                  <td width="14%"><A href="/Article"><IMG border=0 src="/Skin/lyzqc/ico/more011.gif" width=36 height=17></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgColor=#ffffff>
+              <table border=0 cellSpacing=0 cellPadding=4 width="100%" height=250>
+                <tr>
+                  <td>
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1643" title="42中铁校区师德师风建设投诉举报电话" target="_self"><font color="#FF0000"><b>42中铁校区师德师风建设投诉举报电话</b></font></a></td><td align="right" class="bbb" width="40">03-24</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1729" title="一周菜单公示（2018年5月28日至6月1日）" target="_self">一周菜单公示（2018年5月28日至6月1日）</a></td><td align="right" class="ccc" width="40"><font color="red">05-29</font></td></tr><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1728" title="各部门主要工作行事历（5.28---6.3）" target="_self">各部门主要工作行事历（5.28---6.3）</a></td><td align="right" class="bbb" width="40"><font color="red">05-28</font></td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1725" title="42中铁：走进课堂&nbsp;走近孩子" target="_self">42中铁：走进课堂&nbsp;走近孩子</a></td><td align="right" class="ccc" width="40"><font color="red">05-24</font></td></tr><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1722" title="各部门主要工作行事历（5.21—5.27）" target="_self">各部门主要工作行事历（5.21—5.27）</a></td><td align="right" class="bbb" width="40">05-21</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1721" title="一周菜单公示（2018年5月21日至25日）" target="_self">一周菜单公示（2018年5月21日至25日）</a></td><td align="right" class="ccc" width="40">05-18</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1720" title="（转发）合肥2018中小学招生方案公布！" target="_self"><font color="#FF0000">（转发）合肥2018中小学招生方案公布！</font></a></td><td align="right" class="bbb" width="40">05-18</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1717" title="提高师德师风素养&nbsp;&nbsp;&nbsp;争做新时期“四有”好老师" target="_self">提高师德师风素养&nbsp;&nbsp;&nbsp;争做新时期“四有”好老师</a></td><td align="right" class="ccc" width="40">05-17</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1716" title="合肥42中中铁校区宣传报道之七" target="_self">合肥42中中铁校区宣传报道之七</a></td><td align="right" class="bbb" width="40">05-16</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1714" title="各部门主要工作行事历（5.14—5.20）" target="_self">各部门主要工作行事历（5.14—5.20）</a></td><td align="right" class="ccc" width="40">05-14</td></tr><tr></tr></table></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <table border=0 cellSpacing=0 cellPadding=0 width=1000 align=center>
+    <tr>
+      <td height=8></td>
+    </tr>
+  </table>
+  <table border=0 cellSpacing=1 cellPadding=0 width=1000 bgColor=#cde1e9 align=center>
+    <tr>
+      <td height=54 background=Skin/sznc/search-ico1.gif>
+        <table border=0 cellSpacing=0 cellPadding=0 width="100%" align=left>
+<FORM method=post name=search action=search.asp>
+          <tr>
+            <td width=74><IMG src="/Skin/sznc/search-ico.gif"></td>
+            <td width=429 align=middle>
+  <Input value=Article CHECKED type=radio name=ModuleName> 文章 
+  <Input value=Soft type=radio name=ModuleName> 下载 
+  <Input value=Photo type=radio name=ModuleName> 图片 
+  <Input id=Keyword value=关键字 maxLength=40 size=16 name=Keyword> 
+  <Input id=Submit value=搜索 type=submit name=Submit> 
+              <Input id=Field value=Title type=hidden name=Field></td>
+            <td width=495 align=right><IFRAME height=50 marginHeight=0 src="http://m.weather.com.cn/m/pn11/weather.htm " frameBorder=0 width=490 allowTransparency marginWidth=0 scrolling=no></IFRAME></td>
+          </tr>
+</FORM>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <table border=0 cellSpacing=0 cellPadding=0 width=1000 align=center>
+    <tr>
+      <td height=8></td>
+    </tr>
+  </table>
+  <table border=0 cellSpacing=0 cellPadding=0 width=1000 align=center>
+    <tr>
+      <td vAlign=top align=left>
+        <table border=0 cellSpacing=1 cellPadding=0 width="100%" bgColor=#fccaa9>
+          <tr>
+            <td class=title-bg3 height=26>
+              <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <tr>
+                  <td width="79%"><SPAN class=qingchunzhongxueA_tabletitle1>快速通道</SPAN></td>
+                   </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgColor=#ffffff>
+              <table border=0 cellSpacing=0 cellPadding=4 width="100%" height=250>
+                <tr>
+                  <td height="25%" align=middle><A href="/Article/ShowClass.asp?ClassID=1"><IMG border=0 src="/Skin/sznc/tz-fw01.gif" width=226 height=54></A></td>
+                </tr>
+                <tr>
+                  <td height="25%" align=middle><A href="/Article/Search.asp"><IMG border=0 src="/Skin/sznc/tz-fw02.gif" width=226 height=54></A></td>
+                </tr>
+                <tr>
+                  <td height="25%" align=middle><A href="/SpecialList.asp"><IMG border=0 src="/Skin/sznc/tz-fw03.gif" width=226 height=54></A></td>
+                </tr>
+                <tr>
+                  <td height="25%" align=middle><A href="/Article/ShowClass.asp?ClassID=6"><IMG border=0 src="/Skin/sznc/tz-fw04.gif" width=226 height=54></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td width=8>&nbsp;</td>
+      <td vAlign=top width=360>
+        <table border=0 cellSpacing=1 cellPadding=0 width="100%" bgColor=#abdce6>
+          <tr>
+            <td class=title-bg2 height=26>
+              <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <tr>
+                  <td width="86%"><SPAN class=qingchunzhongxueA_tabletitle2>教科频道</SPAN></td>
+                  <td width="14%"><A href="/jkpd"><IMG border=0 src="/Skin/lyzqc/ico/more011.gif" width=36 height=17></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgColor=#ffffff>
+              <table border=0 cellSpacing=0 cellPadding=4 width="100%" height=250>
+                <tr>
+                  <td>
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="bbb"><img src="/jkpd/images/Article_common.gif" alt="普通教科"></td><td class="bbb"><a class="aaa" href="/jkpd/ShowArticle.asp?ArticleID=1727" title="42中铁：展现核心素养&nbsp;落实立德树人" target="_self">42中铁：展现核心素养&nbsp;落实立德树人</a></td><td align="right" class="bbb" width="40"><font color="red">05-28</font></td></tr><tr><td width="10" valign="top" class="ccc"><img src="/jkpd/images/Article_common.gif" alt="普通教科"></td><td class="ccc"><a class="aaa" href="/jkpd/ShowArticle.asp?ArticleID=1704" title="合肥市第四十二中学中铁国际城校区宣传报道之六" target="_self">合肥市第四十二中学中铁国际城校区宣传报道之六</a></td><td align="right" class="ccc" width="40">05-09</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/jkpd/images/Article_common.gif" alt="普通教科"></td><td class="bbb"><a class="aaa" href="/jkpd/ShowArticle.asp?ArticleID=1697" title="42中铁：同课异构共成长" target="_self">42中铁：同课异构共成长</a></td><td align="right" class="bbb" width="40">04-28</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/jkpd/images/Article_common.gif" alt="普通教科"></td><td class="ccc"><a class="aaa" href="/jkpd/ShowArticle.asp?ArticleID=1696" title="42中铁：碰撞中产生智慧火花&nbsp;&nbsp;交流中提升复习实效" target="_self">42中铁：碰撞中产生智慧火花&nbsp;&nbsp;交流中提升复习实效</a></td><td align="right" class="ccc" width="40">04-28</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/jkpd/images/Article_common.gif" alt="普通教科"></td><td class="bbb"><a class="aaa" href="/jkpd/ShowArticle.asp?ArticleID=1695" title="提升教师个人教学魅力&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提高学生课堂参与度" target="_self">提升教师个人教学魅力&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提高学生课堂参与度</a></td><td align="right" class="bbb" width="40">04-28</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/jkpd/images/Article_common.gif" alt="普通教科"></td><td class="ccc"><a class="aaa" href="/jkpd/ShowArticle.asp?ArticleID=1693" title="42中铁：观摩名师课堂&nbsp;&nbsp;感受体育魅力" target="_self">42中铁：观摩名师课堂&nbsp;&nbsp;感受体育魅力</a></td><td align="right" class="ccc" width="40">04-28</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/jkpd/images/Article_common.gif" alt="普通教科"></td><td class="bbb"><a class="aaa" href="/jkpd/ShowArticle.asp?ArticleID=1692" title="42中铁：期中复习微策略" target="_self">42中铁：期中复习微策略</a></td><td align="right" class="bbb" width="40">04-28</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/jkpd/images/Article_common.gif" alt="普通教科"></td><td class="ccc"><a class="aaa" href="/jkpd/ShowArticle.asp?ArticleID=1691" title="42中铁：启发学生思维，提高课堂效率" target="_self">42中铁：启发学生思维，提高课堂效率</a></td><td align="right" class="ccc" width="40">04-27</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/jkpd/images/Article_common.gif" alt="普通教科"></td><td class="bbb"><a class="aaa" href="/jkpd/ShowArticle.asp?ArticleID=1690" title="42中铁：&nbsp;“作文升格&not;——人物的细节描写”" target="_self">42中铁：&nbsp;“作文升格&not;——人物的细节描写”</a></td><td align="right" class="bbb" width="40">04-27</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/jkpd/images/Article_common.gif" alt="普通教科"></td><td class="ccc"><a class="aaa" href="/jkpd/ShowArticle.asp?ArticleID=1656" title="42中铁：理科实验在摸索中前进" target="_self">42中铁：理科实验在摸索中前进</a></td><td align="right" class="ccc" width="40">03-31</td></tr><tr></tr></table></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td width=8>&nbsp;</td>
+      <td vAlign=top width=360>
+        <table border=0 cellSpacing=1 cellPadding=0 width="100%" bgColor=#abdce6>
+          <tr>
+            <td class=title-bg2 height=26>
+              <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <tr>
+                  <td width="86%"><SPAN class=qingchunzhongxueA_tabletitle2>政策法规</SPAN></td>
+                  <td width="14%"><A href="/Article/ShowClass.asp?ClassID=6"><IMG border=0 src="/Skin/lyzqc/ico/more011.gif" width=36 height=17></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgColor=#ffffff>
+              <table border=0 cellSpacing=0 cellPadding=4 width="100%" height=250>
+                <tr>
+                  <td>
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1703" title="各部门主要工作行事历（5.7—5.13）" target="_self">各部门主要工作行事历（5.7—5.13）</a></td><td align="right" class="bbb" width="40">05-07</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1638" title="（转发）合肥市师德建设相关政策文件" target="_self">（转发）合肥市师德建设相关政策文件</a></td><td align="right" class="ccc" width="40">03-20</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1622" title="合肥42中学中铁校区师德师风承诺书" target="_self">合肥42中学中铁校区师德师风承诺书</a></td><td align="right" class="bbb" width="40">02-27</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1576" title="转发《安徽省教育厅关于进一步推进高中阶段学校考试招生制度改革的实施意见》" target="_self">转发《安徽省教育厅关于进一步推进高中阶段学校考</a></td><td align="right" class="ccc" width="40">12-12</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1553" title="中小学综合实践活动课程指导纲要" target="_self">中小学综合实践活动课程指导纲要</a></td><td align="right" class="bbb" width="40">11-24</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1552" title="中小学德育工作指南" target="_self">中小学德育工作指南</a></td><td align="right" class="ccc" width="40">11-24</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1514" title="关于做好2018年初中学业水平体育与健康学科考试工作的通知" target="_self">关于做好2018年初中学业水平体育与健康学科考试工</a></td><td align="right" class="bbb" width="40">11-15</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1273" title="关于规范学校门卫管理的若干规定" target="_self">关于规范学校门卫管理的若干规定</a></td><td align="right" class="ccc" width="40">09-29</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1272" title="保管室物品管理制度" target="_self">保管室物品管理制度</a></td><td align="right" class="bbb" width="40">09-29</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/Article/ShowArticle.asp?ArticleID=1271" title="合肥42中学中铁校区教师队伍建设方案" target="_self">合肥42中学中铁校区教师队伍建设方案</a></td><td align="right" class="ccc" width="40">09-29</td></tr><tr></tr></table></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <table border=0 cellSpacing=0 cellPadding=0 width=1000 align=center>
+    <tr>
+      <td height=8></td>
+    </tr>
+    <tr>
+      <td vAlign=top>
+        <table border=0 cellSpacing=1 cellPadding=0 width="100%" bgColor=#ede99d>
+          <tr>
+            <td height=32 background=Skin/sznc/tp.gif>
+              <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <tr>
+                  <td width="93%"><SPAN class=qingchunzhongxueA_tabletitle1>图片中心</SPAN></td>
+                  <td width="7%"><A href="/photo"><IMG border=0 src="/Skin/lyzqc/ico/more026.gif" width=41 height=11></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgColor=#ffffff height=160>
+              <table border=0 cellSpacing=0 cellPadding=0 width=978 align=center>
+                <tr>
+                  <td width=978>
+<div style="WIDTH: 978px; HEIGHT: 150px; OVERFLOW: hidden" id=demo>
+                    <table border=0 cellPadding=0 align=left cellspace="0">
+                      <tr>
+                        <td id=demo1 vAlign=top>
+                        <table width='100%' cellpadding='0' cellspacing='5' border='0' align='center'><tr valign='top'><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=50" title="乒乓球社团" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201711/2017111221204331.jpg'  width='140' height='107' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=50" title="乒乓球社团" target="_blank">乒乓球社团</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=49" title="足球社团招新" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201711/2017111221145123.jpg'  width='140' height='107' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=49" title="足球社团招新" target="_blank">足球社团招新</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=48" title="素描" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201711/2017111221135338.jpg'  width='140' height='107' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=48" title="素描" target="_blank">素描</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=47" title="舞动青春" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201711/2017111221034834.jpg'  width='140' height='107' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=47" title="舞动青春" target="_blank">舞动青春</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=46" title="质量分析会" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201711/2017111221002262.jpg'  width='140' height='107' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=46" title="质量分析会" target="_blank">质量分析会</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=44" title="远足" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201711/2017111220575975.jpg'  width='140' height='107' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=44" title="远足" target="_blank">远足</a></td><td align='center'><a class="" href="/Photo/ShowPhoto.asp?PhotoID=43" title="运动会" target="_blank"><img class='pic3' src='/Photo/UploadPhotos/201711/2017111220565395.jpg'  width='140' height='107' border='0'></a><br><a class="" href="/Photo/ShowPhoto.asp?PhotoID=43" title="运动会" target="_blank">运动会</a></td></tr></table></td>
+                        <td id=demo2 vAlign=top></td>
+                      </tr>
+                    </table>
+</div>
+<SCRIPT> 
+var speed=15 
+demo2.innerHTML=demo1.innerHTML 
+function Marquee1(){ 
+if(demo2.offsetWidth-demo.scrollLeft<=0) 
+demo.scrollLeft-=demo1.offsetWidth 
+else{ 
+demo.scrollLeft++ 
+} } 
+var MyMar1=setInterval(Marquee1,speed) 
+demo.onmouseover=function() {clearInterval(MyMar1)} 
+demo.onmouseout=function() {MyMar1=setInterval(Marquee1,speed)} 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </SCRIPT></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height=8></td>
+    </tr>
+  </table>
+  <table border=0 cellSpacing=0 cellPadding=0 width=1000 align=center>
+    <tr>
+      <td vAlign=top align=left>
+        <table border=0 cellSpacing=1 cellPadding=0 width="100%" bgColor=#fccaa9>
+          <tr>
+            <td class=title-bg3 height=26>
+              <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <tr>
+                  <td width="79%"><SPAN class=qingchunzhongxueA_tabletitle1>互动交流</SPAN></td>
+                  <td width="21%">&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgColor=#ffffff height=250>
+              <table border=0 cellSpacing=0 cellPadding=4 width="100%" height=250>
+                <tr>
+                  <td height="25%" align=middle><A href="/GuestBook/Index.asp"><IMG border=0 src="/Skin/sznc/tz-zs01.gif" width=226 height=54></A></td>
+                </tr>
+                <tr>
+                  <td height="25%" align=middle><A href="/Vote.asp?ID=1&Action=Show"><IMG border=0 src="/Skin/sznc/tz-zs02.gif" width=226 height=54></A></td>
+                </tr>
+                <tr>
+                  <td height="25%" align=middle><A href="/Article/ShowClass.asp?ClassID=30"><IMG border=0 src="/Skin/sznc/tz-zs03.gif" width=226 height=54></A></td>
+                </tr>
+                <tr>
+                  <td height="25%" align=middle><A href="mailto:master@master.com"><IMG border=0 src="/Skin/sznc/tz-zs05.gif" width=226 height=54></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td width=8>&nbsp;</td>
+      <td vAlign=top width=360>
+        <table border=0 cellSpacing=1 cellPadding=0 width="100%" bgColor=#abdce6>
+          <tr>
+            <td class=title-bg2 height=26>
+              <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <tr>
+                  <td width="86%"><SPAN class=qingchunzhongxueA_tabletitle2>德育频道</SPAN></td>
+                  <td width="14%"><A href="/dypd"><IMG border=0 src="/Skin/lyzqc/ico/more011.gif" width=36 height=17></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgColor=#ffffff>
+              <table border=0 cellSpacing=0 cellPadding=4 width="100%" height=250>
+                <tr>
+                  <td>
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="bbb"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="bbb"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1724" title="42中铁：绿茵成就梦想&nbsp;激情挥洒青春（系列报道二）" target="_self">42中铁：绿茵成就梦想&nbsp;激情挥洒青春（系列报道二）</a></td><td align="right" class="bbb" width="40"><font color="red">05-24</font></td></tr><tr><td width="10" valign="top" class="ccc"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="ccc"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1723" title="42中铁：共进午餐话心声" target="_self">42中铁：共进午餐话心声</a></td><td align="right" class="ccc" width="40"><font color="red">05-24</font></td></tr><tr><td width="10" valign="top" class="bbb"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="bbb"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1715" title="2017——2018学年度第二学期期中系列表彰" target="_self">2017——2018学年度第二学期期中系列表彰</a></td><td align="right" class="bbb" width="40">05-15</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="ccc"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1708" title="关于召开2017—2018学年第二学期期中表彰大会暨家长会的通知" target="_self">关于召开2017—2018学年第二学期期中表彰大会暨家…</a></td><td align="right" class="ccc" width="40">05-11</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="bbb"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1702" title="42中铁：绿茵成就梦想&nbsp;激情挥洒青春" target="_self">42中铁：绿茵成就梦想&nbsp;激情挥洒青春</a></td><td align="right" class="bbb" width="40">05-07</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="ccc"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1687" title="转发关于网络教育《致全国中小学生家长的一封信》" target="_self">转发关于网络教育《致全国中小学生家长的一封信》</a></td><td align="right" class="ccc" width="40">04-25</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="bbb"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1682" title="42中铁：聆听入团培训，坚定理想信念" target="_self">42中铁：聆听入团培训，坚定理想信念</a></td><td align="right" class="bbb" width="40">04-23</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="ccc"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1680" title="合肥42中中铁校区系列报道之三" target="_self">合肥42中中铁校区系列报道之三</a></td><td align="right" class="ccc" width="40">04-17</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="bbb"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1677" title="2017——2018学年第一学期期末表彰优秀学生名单" target="_self">2017——2018学年第一学期期末表彰优秀学生名单</a></td><td align="right" class="bbb" width="40">04-16</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="ccc"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1676" title="关于举行“意志品质培养专题教育月”的通知" target="_self">关于举行“意志品质培养专题教育月”的通知</a></td><td align="right" class="ccc" width="40">04-16</td></tr><tr></tr></table></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td width=8>&nbsp;</td>
+      <td vAlign=top width=360>
+        <table border=0 cellSpacing=1 cellPadding=0 width="100%" bgColor=#abdce6>
+          <tr>
+            <td class=title-bg2 height=26>
+              <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <tr>
+                  <td width="86%"><SPAN class=qingchunzhongxueA_tabletitle2>学生风采</SPAN></td>
+                  <td width="14%"><A href="/dypd/ShowClass.asp?ClassID=17"><IMG border=0 src="/Skin/lyzqc/ico/more011.gif" width=36 height=17></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgColor=#ffffff>
+              <table border=0 cellSpacing=0 cellPadding=4 width="100%" height=250>
+                <tr>
+                  <td>
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="bbb"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="bbb"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1677" title="2017——2018学年第一学期期末表彰优秀学生名单" target="_self">2017——2018学年第一学期期末表彰优秀学生名单</a></td><td align="right" class="bbb" width="40">04-16</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="ccc"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1675" title="2017—2018学年第二学期庐阳区青少年活动中心优秀学生名单" target="_self">2017—2018学年第二学期庐阳区青少年活动中心优秀…</a></td><td align="right" class="ccc" width="40">04-16</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="bbb"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1538" title="42中铁：八年级硬笔书法优秀作品展" target="_self">42中铁：八年级硬笔书法优秀作品展</a></td><td align="right" class="bbb" width="40">11-16</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="ccc"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1479" title="42中铁：2015年北京夏令营影集" target="_self">42中铁：2015年北京夏令营影集</a></td><td align="right" class="ccc" width="40">11-02</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="bbb"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1478" title="2017年我校班旗作品展" target="_self">2017年我校班旗作品展</a></td><td align="right" class="bbb" width="40">11-02</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="ccc"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1477" title="社团活动风采" target="_self">社团活动风采</a></td><td align="right" class="ccc" width="40">11-02</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="bbb"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1476" title="三月学雷锋主题教育活动学生征文优秀作品集" target="_self">三月学雷锋主题教育活动学生征文优秀作品集</a></td><td align="right" class="bbb" width="40">11-02</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="ccc"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1475" title="三月《狩猎者》观后感学生优秀作文集" target="_self">三月《狩猎者》观后感学生优秀作文集</a></td><td align="right" class="ccc" width="40">11-02</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/dypd/images/Article_common.gif" alt="普通德育"></td><td class="bbb"><a class="aaa" href="/dypd/ShowArticle.asp?ArticleID=1279" title="42中铁十月份黑板报及优秀作文展示" target="_self">42中铁十月份黑板报及优秀作文展示</a></td><td align="right" class="bbb" width="40">10-23</td></tr><tr></tr></table></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <table border=0 cellSpacing=0 cellPadding=0 width=1000 align=center>
+    <tr>
+      <td height=8></td>
+    </tr>
+    <tr>
+      <td height=65>
+      <script language='javascript' src='/AD/201003/2.js'></script></td>
+    </tr>
+    <tr>
+      <td height=8></td>
+    </tr>
+  </table>
+  <table border=0 cellSpacing=0 cellPadding=0 width=1000 align=center>
+    <tr>
+      <td vAlign=top align=left>
+        <table border=0 cellSpacing=1 cellPadding=0 width="100%" bgColor=#fccaa9>
+          <tr>
+            <td class=title-bg3 height=26>
+              <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <tr>
+                  <td width="79%"><SPAN class=qingchunzhongxueA_tabletitle1>网上办事</SPAN></td>
+                  <td width="21%">&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgColor=#ffffff height=250>
+              <table id=bianminfuwu border=0 cellSpacing=5 cellPadding=0 width="100%" align=center height="100%">
+                <tr>
+                  <td height="33%" vAlign=center width="33%" align=middle><A href="/Article/ShowClass.asp?ClassID=29" target=_blank><IMG border=0 src="/Skin/lyzqc/ico/bianminfuwu/icon_01.gif"><BR>办事指南</A></td>
+                  <td vAlign=center width="33%" align=middle><A href="/GuestBook/Index.asp" target=_blank><IMG border=0 src="/Skin/lyzqc/ico/bianminfuwu/icon_02.gif"><BR>在线办理</A></td>
+                  <td vAlign=center width="33%" align=middle><A href="/GuestBook/Index.asp" target=_blank><IMG border=0 src="/Skin/lyzqc/ico/bianminfuwu/icon_03.gif"><BR>在线咨询</A></td>
+                </tr>
+                <tr>
+                  <td height="33%" vAlign=center align=middle><A href="http://www.baidu.com/" target=_blank><IMG border=0 src="/Skin/lyzqc/ico/bianminfuwu/icon_04.gif"><BR>网上查询</A></td>
+                  <td vAlign=center align=middle><A href="/Soft/ShowClass.asp?ClassID=27" target=_blank><IMG border=0 src="/Skin/lyzqc/ico/bianminfuwu/icon_05.gif"><BR>资料下载</A></td>
+                  <td vAlign=center align=middle><A href="/Article/ShowClass.asp?ClassID=30" target=_blank><IMG border=0 src="/Skin/lyzqc/ico/bianminfuwu/icon_06.gif"><BR>部门电话</A></td>
+                </tr>
+                <tr>
+                  <td height="33%" vAlign=center align=middle><A href="/Article/ShowClass.asp?ClassID=31" target=_blank><IMG border=0 src="/Skin/lyzqc/ico/bianminfuwu/icon_07.gif"><BR>校历查询</A></td>
+                  <td vAlign=center align=middle><A href="/Article/ShowClass.asp?ClassID=32" target=_blank><IMG border=0 src="/Skin/lyzqc/ico/bianminfuwu/icon_08.gif"><BR>作息时间</A></td>
+                  <td vAlign=center align=middle><A href="/Article/ShowClass.asp?ClassID=33" target=_blank><IMG border=0 src="/Skin/lyzqc/ico/bianminfuwu/icon_09.gif"><BR>应急预案</A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td width=8>&nbsp;</td>
+      <td vAlign=top width=360>
+        <table border=0 cellSpacing=1 cellPadding=0 width="100%" bgColor=#abdce6>
+          <tr>
+            <td class=title-bg2 height=26>
+              <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <tr>
+                  <td width="86%"><SPAN class=qingchunzhongxueA_tabletitle2>校园安全</SPAN></td>
+                  <td width="14%"><A href="/xyaq"><IMG border=0 src="/Skin/lyzqc/ico/more011.gif" width=36 height=17></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgColor=#ffffff>
+              <table border=0 cellSpacing=0 cellPadding=4 width="100%" height=250>
+                <tr>
+                  <td>
+                  <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="bbb"><img src="/xyaq/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/xyaq/ShowArticle.asp?ArticleID=1712" title="42中铁：防患未然多演练&nbsp;紧急时刻保生命" target="_self">42中铁：防患未然多演练&nbsp;紧急时刻保生命</a></td><td align="right" class="bbb" width="40">05-14</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/xyaq/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/xyaq/ShowArticle.asp?ArticleID=1685" title="转发关于防溺水《致全国中小学生家长的一封信》" target="_self">转发关于防溺水《致全国中小学生家长的一封信》</a></td><td align="right" class="ccc" width="40">04-25</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/xyaq/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/xyaq/ShowArticle.asp?ArticleID=1671" title="42中铁：守住安全第一岗" target="_self">42中铁：守住安全第一岗</a></td><td align="right" class="bbb" width="40">04-12</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/xyaq/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/xyaq/ShowArticle.asp?ArticleID=1670" title="42中铁：不让安全保护缺位" target="_self">42中铁：不让安全保护缺位</a></td><td align="right" class="ccc" width="40">04-12</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/xyaq/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/xyaq/ShowArticle.asp?ArticleID=1669" title="爱心家长志愿者护学岗实施方案" target="_self">爱心家长志愿者护学岗实施方案</a></td><td align="right" class="bbb" width="40">04-11</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/xyaq/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/xyaq/ShowArticle.asp?ArticleID=1668" title="预防春季传染病致家长的一封信" target="_self">预防春季传染病致家长的一封信</a></td><td align="right" class="ccc" width="40">04-11</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/xyaq/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/xyaq/ShowArticle.asp?ArticleID=1604" title="42中铁冬季消防安全检查" target="_self">42中铁冬季消防安全检查</a></td><td align="right" class="bbb" width="40">01-02</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/xyaq/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/xyaq/ShowArticle.asp?ArticleID=1603" title="42中中铁校区年终物业总结会" target="_self">42中中铁校区年终物业总结会</a></td><td align="right" class="ccc" width="40">01-02</td></tr><tr><td width="10" valign="top" class="bbb"><img src="/xyaq/images/Article_common.gif" alt="普通文章"></td><td class="bbb"><a class="aaa" href="/xyaq/ShowArticle.asp?ArticleID=1556" title="定制法制套餐&nbsp;&nbsp;&nbsp;共筑校园平安" target="_self">定制法制套餐&nbsp;&nbsp;&nbsp;共筑校园平安</a></td><td align="right" class="bbb" width="40">11-29</td></tr><tr><td width="10" valign="top" class="ccc"><img src="/xyaq/images/Article_common.gif" alt="普通文章"></td><td class="ccc"><a class="aaa" href="/xyaq/ShowArticle.asp?ArticleID=1540" title="预防校园暴力工作预案" target="_self">预防校园暴力工作预案</a></td><td align="right" class="ccc" width="40">11-17</td></tr><tr></tr></table></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td width=8>&nbsp;</td>
+      <td vAlign=top width=360>
+        <table border=0 cellSpacing=1 cellPadding=0 width="100%" bgColor=#abdce6>
+          <tr>
+            <td class=title-bg2 height=26>
+              <table border=0 cellSpacing=0 cellPadding=0 width="100%">
+                <tr>
+                  <td width="86%"><SPAN class=qingchunzhongxueA_tabletitle2>最新留言</SPAN></td>
+                  <td width="14%"><A href="/guestbook"><IMG border=0 src="/Skin/lyzqc/ico/more011.gif" width=36 height=17></A></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td bgColor=#ffffff>
+              <table border=0 cellSpacing=0 cellPadding=4 width="100%" height=250>
+                <tr>
+                  <td class=guestbook_list>
+                  <script src='/guestbook/newguest.asp?KindId=0&OnlyTitle=1&num=10&Titlelen=20&Order=0&ShowPic=4&ShowKindName=0&ShowContentLen=0&ShowUserName=0&ShowTime=2'></script> </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="8"></td>
+  </tr>
+  <tr>
+    <td valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+      <tr>
+        <td height="32" background="/Skin/sznc/tp1.gif"><span class="qingchunzhongxueA_tabletitle1">友情链接</span></td>
+      </tr>
+      <tr>
+        <td height="40" align="center" bgcolor="#FFFFFF">
+          <table width="100%" cellSpacing="5"><tr align="center" class="tdbg"><td width='88'><a href="http://dudao.hfly.net" target="_blank" title="网站名称：庐阳督导
+网站地址：http://dudao.hfly.net
+网站简介：庐阳督导教育网"><img src='http://www.hf42zt.com/AD/UploadADPic/201607/2016071912455613.png' width='88' height='31' border='0'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td></tr><tr align='center' class='tdbg'><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td><td width='88'><a class='LinkFriendSite' href='/FriendSite/FriendSiteReg.asp' target='_blank'><img src='/images/nologo.gif' width='88' height='31' border='0' alt='点击申请'></a></td></tr></table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="4"></td>
+  </tr>
+</table>
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td background="/Skin/sznc/bbb.gif"><table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="8" align=center></td>
+      </tr>
+      <tr>
+        <td height="30" align=center background="/Skin/sznc/tz-copyright-bg.gif">| <A onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.hf42zt.com');" href="#">设为首页</A> | <A href="javascript:window.external.addFavorite('http://www.hf42zt.com','合肥42中学中铁校区');">加入收藏</A> | <A href="mailto:admin@163.com">联系站长</A> | <A href="/FriendSite/Index.asp" target=_blank>友情链接</A> | <A href="/Copyright.asp" target=_blank>版权申明</A> | <A href="/Announcelist.asp" target=_blank>网站公告</A> | <A href="/Admin/Admin_Index.asp" target=_blank>网站管理</A> |</td>
+      </tr>
+      <tr>
+        <td height="1" align=center bgcolor="#CCCCCC"></td>
+      </tr>
+      <tr>
+        <td height="100" align=center valign="top"><br>
+          版权所有：合肥42中学中铁校区 皖ICP备15022731号&nbsp;联系电话：0551-65721505  维护：信息中心&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+  
+</body>
+</html>

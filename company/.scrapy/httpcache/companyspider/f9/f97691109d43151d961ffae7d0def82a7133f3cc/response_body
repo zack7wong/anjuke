@@ -1,0 +1,589 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<TITLE>重庆外国语学校（川外附中）</TITLE>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="" />
+<link href="/style/index.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="/style/jquery.min.js"></script>
+<script src="/style/jquery.lazyload.js" type="text/javascript"></script>
+<script type="text/javascript" src="/style/focus.js"></script>
+<script src="/style/thinkhover.js"></script>
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/m/index.php">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="/m/index.php";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<!--[if IE 6]><script src="/style/iepng.js" type="text/javascript"></script><script type="text/javascript">EvPNG.fix('div, ul, img, li, input');</script><![endif]-->
+<script type="text/javascript">
+        var curIndex = 0;
+        var fcTimer;
+        $(function(){
+            $('.yema li').eq(curIndex).attr("class","cur");
+            $('.fc_pics .pica').eq(curIndex).css({"display":"block"});
+            fcTimer = setInterval("focusDo.indexChange()",3000);
+            $('.fc_pics').hover(function(){
+                clearInterval(fcTimer);
+            },function(){
+                fcTimer = setInterval("focusDo.indexChange()",3000);
+            });
+            $('.fc_pics .yema li').hover(function(){
+                var cIndex = $(this).index();
+                focusDo.cntShow(cIndex);
+                curIndex = cIndex;
+            },function(){});
+            $('.fc_pics .pre').click(function(){
+                curIndex -= 1;
+                if(curIndex < 0){
+                    curIndex = 4;
+                }
+                focusDo.cntShow(curIndex);
+            });
+            $('.fc_pics .nxt').click(function(){
+                curIndex += 1;
+                if(curIndex >=5){
+                    curIndex = 0;
+                }
+                focusDo.cntShow(curIndex);
+            });
+        });
+        var focusDo = {
+            cntShow : function(cIndex){
+                $('.fc_pics .pica').css({"display":"none"});
+                $('.fc_pics .pica').eq(cIndex).css({"display":"block"});
+                $('.fc_pics .yema li').removeClass();
+                $('.fc_pics .yema li').eq(cIndex).attr("class","cur");
+            },
+            indexChange : function(){
+                curIndex += 1;
+                if(curIndex == 5){
+                    curIndex = 0;
+                }
+                this.cntShow(curIndex);
+            }
+        };
+    </script>
+<script type="text/javascript">
+var showeffect = ""; 
+{showeffect = "fadeIn"} 
+jQuery(document).ready(function($) { 
+$("img").lazyload({ 
+placeholder: "/style/grey.gif", 
+effect: showeffect, 
+failurelimit: 10 
+}) 
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".guanbi").click(function(){
+  $(".adg").fadeOut(100);
+  });
+});
+</script>
+<script type="text/javascript">
+ function ThinkOver(thisObj, Num) {
+  if (thisObj.className == "active") return;
+  var tabObj = thisObj.parentNode.id;//赋值指定节点的父节点的id名字
+  var tabList = document.getElementById(tabObj).getElementsByTagName("li");
+  for (i = 0; i < tabList.length; i++) {//点击之后，其他tab变成灰色，内容隐藏，只有点击的tab和内容有属性
+  if (i == Num) {
+   thisObj.className = "active";
+   document.getElementById(tabObj + "C" + i).style.display = "block";
+  } else {
+   tabList[i].className = "normal";
+   document.getElementById(tabObj + "C" + i).style.display = "none";
+  }
+  }
+ }
+</script>
+</head>
+
+<body>﻿<div class="head">
+  <div id="top">
+    <div id="topleft">
+      <ul>
+        <li><a href="http://t.qq.com/cq_fls" target="_blank" class="tengxun">腾讯微博</a></li>
+        <li><a href="http://www.weibo.com/cqfls" target="_blank" rel="nofollow" class="xinlang">新浪微博</a></li>
+        <li><a href="#" class="rss" target="_blank">网站地图</a></li>
+        <li><a href="" target="_blank" class="phone">手机站</a></li>
+      </ul>
+    </div>
+    <div id="topright" data-unuse="1">
+      <ul>
+        <li><a href="/tags.php" target="_blank">TAG标签</a></li>
+        <li style="border-right: none;"><a href="/html/xwzx/xiaochangjianghua/" target="_blank">校长讲话</a></li>
+        <li style="border-right: none; display:none;"><a id="StranLink">繁体版</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="tip">
+  <h2><a href="/" title="重庆外国语学校（川外附中） "><img src="/style/logo.png" alt="重庆外国语学校（川外附中）"/></a></h2>
+  <div class="sub_logo">
+    <p><span style='font-size:10.0pt;color:red'>重</span><span style='font-size:9.0pt;color:#ED7D31;mso-themecolor:accent2'>庆</span><span style='font-size:10.0pt;color:#00B050'>的</span><span style='font-size:10.0pt;color:#002060'>一</span><span style='font-size:10.0pt;color:#0070C0'>外</span><span style='font-size:10.0pt;color:#666666'> <b style='mso-bidi-font-weight:normal'>·</b> </span><span style='font-size:10.0pt;color:#7030A0'>世</span><span style='font-size:10.0pt;color:#BF9000'>界</span><span style='font-size:10.0pt;color:#548235'>的</span><span style='font-size:9.0pt;color:#9B21AB'>重</span><span style='font-size:9.0pt;color:red'>外</span></p>
+    <div class="tianqi">
+      <iframe width="280" scrolling="no" height="22" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=1&icon=1&wind=0&num=1"></iframe>
+    </div>
+  </div>
+  <div class="tip_r">
+    <div class="search">
+      <form action="/plus/search.php" name="formsearch">
+        <input type="hidden" name="kwtype" value="0" />
+        <input type="text"  name="q" value="请输入关键词" class="s_w" onblur="if (this.value ==&#39;&#39;){this.value=this.defaultValue}" onclick="if(this.value==&#39;请输入关键词&#39;)this.value=&#39;&#39;"/>
+        <input type="submit" name="submit" value="提 交" class='an' style="border:0"/>
+      </form>
+    </div>
+    <div class="tag"><b>热门关键词：</b>　　<a href='/plus/search.php?keyword=%E5%BE%AE%E5%8D%9A'>微博</a> 　<a href='/plus/search.php?keyword=xxx'>xxx</a> 　<a href='/plus/search.php?keyword=4399'>4399</a> 　<a href='/plus/search.php?keyword=as'>as</a> 　<a href='/plus/search.php?keyword=%E5%8A%9E%E5%AD%A6%E7%90%86%E5%BF%B5'>办学理念</a> </div>
+  </div>
+</div>
+<div class="m">
+  <div class="menu"> <span class="nava"></span>
+    <ul class="naval">
+      <li><a href="/html/gysw/" target="_blank"><b>关于重外</b></a></li>
+      <li><a href="/html/gysw/xuexiaojianjie/">学校简介</a></li><li><a href="/html/gysw/zhongwaijianshi/">重外简史</a></li>
+      <li><a href="/html/dqgz/" target="_blank"><b>党群工作</b></a></li>
+      <li><a href="/html/dqgz/xiaodangwei/" target="_blank">校党委</a></li><li><a href="/html/dqgz/xiaogonghui/" target="_blank">校工会</a></li>
+    </ul>
+    <span class="navb"></span>
+    <ul class="naval">
+      <li><a href="/html/xwzx/" target="_blank"><b>新闻中心</b></a></li>
+      <li><a href="/html/xwzx/xydt/" target="_blank">校园动态</a></li><li><a href="/html/xwzx/tzgg/" target="_blank">通知公告</a></li>
+      <li><a href="/html/jxky/" target="_blank"><b>教学科研</b></a></li>
+      <li><a href="/html/jxky/xuekedongtai/" target="_blank">学科动态</a></li><li><a href="/html/jxky/mingshigongzuoshi/" target="_blank">名师工作室</a></li>
+    </ul>
+    <span class="navc"></span>
+    <ul class="naval">
+      <li><a href="/html/dygz/" target="_blank"><b>德育工作</b></a></li>
+      <li><a href="/html/dygz/xueshengguanli/" target="_blank">学生管理</a></li><li><a href="/html/dygz/jiachangxuexiao/" target="_blank">家长学校</a></li>
+      <li><a href="/html/gjfz/" target="_blank"><b>国际发展</b></a></li>
+      <li><a href="/html/gjfz/guojigaozhong/" target="_blank">国际高中班</a></li><li><a href="/html/gjfz/haiwaizhitongche/" target="_blank">海外直通车</a></li>
+    </ul>
+    <span class="navd"></span>
+    <ul class="navbl">
+      <li><a href="/html/xiaoyuanshenghuo/" target="_blank">校园生活</a></li>
+      <li><a href="http://st.cqfls.cn" target="_blank">校友社区</a></li>
+      <li><a href="/html/shuzixiaoyuan/" target="_blank">数字校园</a></li>
+      <li><a href="http://www.weblib.com.cn/cqfls/" target="_blank">校图书馆</a></li>
+    </ul>
+  </div>
+</div>
+<div class="gd">
+  <div class="gdc"> <b>通知公告：</b> 
+    <a href="/html/xwzx/tzgg/" class="more">更多</a> </div>
+</div>
+
+
+<div id="top-ad">
+ <div style="width:1000px;height:90px;"><img src="/img/logo.gif"  border="0" /></div>
+</div>
+<div class="jrtt">
+  <div class="toutiao"></div>
+  <a href="/html/xwzx/zkzx/263.html" title="<font color='#CC0000'>2018开门红！我校144人次保送国内名牌大学！</font>">
+  <h2><font color='#CC0000'>2018开门红！我校144人次保送国内名牌大学！</font></h2>
+  </a>
+
+  <ul>
+    <li><a href="/html/xwzx/zkzx/272.html" title="<font color='#FF0000'>我校国际部2018级111名学生被国外名牌大学录取！</font>"><font color='#FF0000'>我校国际部2018级111名学生被国外名牌大学录取！</font></a></li>
+<li><a href="/html/xwzx/xydt/261.html" title="开学第一周，校园各类大片精彩纷呈！">开学第一周，校园各类大片精彩纷呈！</a></li>
+<li><a href="/html/xwzx/xydt/252.html" title="<font color='#CC0000'>作别2017，这十个关键词让重外人难以忘怀！</font>"><font color='#CC0000'>作别2017，这十个关键词让重外人难以忘怀！</font></a></li>
+
+  </ul>
+</div>
+<div class="box1">
+  <div class="box1_l">
+    <div class="fc_pics"> <a class="pre" href="javascript:void(0);"></a> <a class="nxt" href="javascript:void(0);"></a>
+      <ul class="yema">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="pica"> <a class="pica_link" href="/html/dqgz/xiaotuanwei/2018/0507/276.html" title='校本部举行纪念“五四运动”九十九周年'><img src="/uploads/allimg/180507/1-1P50G3420R28-lp.jpg" width="330" height="220"  alt="校本部举行纪念“五四运动”九十九周年" /></a> <a class="pica_title" href="/html/dqgz/xiaotuanwei/2018/0507/276.html" title="校本部举行纪念“五四运动”九十九周年">校本部举行纪念“五四运动”九十九周年</a> </div>
+<div class="pica"> <a class="pica_link" href="/html/dqgz/xiaotuanwei/2018/0507/275.html" title='五四｜我们用这份成绩单向青春致敬！'><img src="/uploads/allimg/180507/1-1P50G3304M16-lp.jpg" width="330" height="220"  alt="五四｜我们用这份成绩单向青春致敬！" /></a> <a class="pica_title" href="/html/dqgz/xiaotuanwei/2018/0507/275.html" title="五四｜我们用这份成绩单向青春致敬！">五四｜我们用这份成绩单向青春致敬！</a> </div>
+<div class="pica"> <a class="pica_link" href="/html/dqgz/xiaotuanwei/2018/0503/271.html" title='市中学中职共青团改革交流会在我校召开'><img src="/uploads/allimg/180503/1-1P50315225Dc-lp.jpg" width="330" height="220"  alt="市中学中职共青团改革交流会在我校召开" /></a> <a class="pica_title" href="/html/dqgz/xiaotuanwei/2018/0503/271.html" title="市中学中职共青团改革交流会在我校召开">市中学中职共青团改革交流会在我校召开</a> </div>
+<div class="pica"> <a class="pica_link" href="/html/xiaoyuanshenghuo/tiyiwenhuajie/2018/0503/273.html" title='我校第十一届体艺文化节暨第四十六届田'><img src="/uploads/allimg/180503/1-1P503161215W5-lp.jpg" width="330" height="220"  alt="我校第十一届体艺文化节暨第四十六届田" /></a> <a class="pica_title" href="/html/xiaoyuanshenghuo/tiyiwenhuajie/2018/0503/273.html" title="我校第十一届体艺文化节暨第四十六届田">我校第十一届体艺文化节暨第四十六届田</a> </div>
+<div class="pica"> <a class="pica_link" href="/html/dqgz/xiaotuanwei/2018/0322/265.html" title='秀山团县委、县教委领导一行到我校交流'><img src="/uploads/allimg/180322/1-1P3221G441910-lp.jpg" width="330" height="220"  alt="秀山团县委、县教委领导一行到我校交流" /></a> <a class="pica_title" href="/html/dqgz/xiaotuanwei/2018/0322/265.html" title="秀山团县委、县教委领导一行到我校交流">秀山团县委、县教委领导一行到我校交流</a> </div>
+ </div>
+    <div class="yplist"> <li><a href="/html/dygz/xueshengguanli/2018/0528/286.html" title='校本部开展17-18学年度生活老师专业技能大赛'>校本部开展17-18学年度生活老师专业技能大赛</a></li>
+<li><a href="/html/dqgz/xiaotuanwei/2018/0507/276.html" title='校本部举行纪念“五四运动”九十九周年暨表彰'>校本部举行纪念“五四运动”九十九周年暨表彰</a></li>
+ </div>
+    <div class="ypimg"> <li><a href="/html/dqgz/xiaotuanwei/2018/0507/276.html" title='校本部举行纪念“五四运动”九十九周年'><img src="/uploads/allimg/180507/1-1P50G3420R28-lp.jpg"  ></a><span><a href="/html/dqgz/xiaotuanwei/2018/0507/276.html" title='校本部举行纪念“五四运动”九十九周年'>校本部举行纪念“五四运动”九十九周年</a></span></li>
+<li><a href="/html/dqgz/xiaotuanwei/2018/0507/275.html" title='五四｜我们用这份成绩单向青春致敬！'><img src="/uploads/allimg/180507/1-1P50G3304M16-lp.jpg"  ></a><span><a href="/html/dqgz/xiaotuanwei/2018/0507/275.html" title='五四｜我们用这份成绩单向青春致敬！'>五四｜我们用这份成绩单向青春致敬！</a></span></li>
+ </div>
+  </div>
+  <div class="box1_c">
+    <div class="ilistl_t clear">
+      <ul id="MB">
+        <li class="active" onmouseover="ThinkOver(this,0);">最新动态</li>
+        <li class="normal" onmouseover="ThinkOver(this,1);">公告通知</li>
+        <li class="normal" onmouseover="ThinkOver(this,2);">媒体报道</li>
+        <li class="normal" onmouseover="ThinkOver(this,3);">招考资讯</li>
+      </ul>
+    </div>
+    <div class="ilist" id="MBC0"> <ul class="ilist_top">
+        <a href="/html/dygz/xueshengguanli/2018/0528/286.html" target="_blank"><b>校本部开展17-18学年度生活老师专业技能大赛</b></a> <span>专业引领 以赛促进 2017-2018学年度生活老师专业技能大赛在笃学...<a href="/html/dygz/xueshengguanli/2018/0528/286.html" target="_blank"><font>[详情]</font></a></span>
+      </ul>
+
+      <ul class="ilist_c">
+        <li><span><a href="/html/xwzx/zkzx/263.html" title="<font color='#CC0000'>2018开门红！我校144人次保送国内名牌大学！</font>"><font color='#CC0000'>2018开门红！我校144人次保送国内名牌大学！</font></a></span></li>
+<li><span><a href="/html/gjfz/haiwaizhitongche/2018/0528/289.html" title="加拿大大学（五所）直通车">加拿大大学（五所）直通车</a></span></li>
+<li><span><a href="/html/gjfz/haiwaizhitongche/2018/0528/288.html" title="新加坡大学直通车">新加坡大学直通车</a></span></li>
+<li><span><a href="/html/gjfz/haiwaizhitongche/2018/0528/287.html" title="英国高中阶段直通车">英国高中阶段直通车</a></span></li>
+<li><span><a href="/html/dygz/xueshengguanli/2018/0528/286.html" title="校本部开展17-18学年度生活老师专业技能大赛">校本部开展17-18学年度生活老师专业技能大赛</a></span></li>
+<li><span><a href="/html/gjfz/guojigaozhong/2018/0528/285.html" title="AP项目介绍">AP项目介绍</a></span></li>
+<li><span><a href="/html/gjfz/guojigaozhong/2018/0528/284.html" title="A-Level项目介绍">A-Level项目介绍</a></span></li>
+<li><span><a href="/html/gjfz/guojigaozhong/2018/0516/282.html" title="我校国际部首届中德项目介绍">我校国际部首届中德项目介绍</a></span></li>
+<li><span><a href="/html/xwzx/tzgg/283.html" title="我校（华岩校区）教师招聘启事">我校（华岩校区）教师招聘启事</a></span></li>
+<li><span><a href="/html/dygz/gongzuojianbao/2018/0516/281.html" title="我校17-18学年下期半期德育工作总结会顺利召开">我校17-18学年下期半期德育工作总结会顺利召开</a></span></li>
+<li><span><a href="/html/xwzx/tzgg/280.html" title="我校2018年校服采购招标公告">我校2018年校服采购招标公告</a></span></li>
+
+      </ul>
+    </div>
+    <div class="ilist none" id="MBC1"> <ul class="ilist_top">
+        <a href="/html/xwzx/tzgg/243.html" target="_blank"><b>关于转发2017年暑假防震减灾安全知识家庭作业的</b></a> <span>尊敬的各位家长： 现将重庆市教育委员会、重庆市地震局关于印...<a href="/html/xwzx/tzgg/243.html" target="_blank"><font>[详情]</font></a></span>
+      </ul>
+
+      <ul class="ilist_c">
+        <li><span><a href="/html/xwzx/tzgg/283.html" title="我校（华岩校区）教师招聘启事">我校（华岩校区）教师招聘启事</a></span></li>
+<li><span><a href="/html/xwzx/tzgg/280.html" title="我校2018年校服采购招标公告">我校2018年校服采购招标公告</a></span></li>
+<li><span><a href="/html/xwzx/tzgg/267.html" title="郑重声明">郑重声明</a></span></li>
+<li><span><a href="/html/xwzx/tzgg/268.html" title="采购招标公告函">采购招标公告函</a></span></li>
+<li><span><a href="/html/xwzx/tzgg/262.html" title="我校研学活动招标公告">我校研学活动招标公告</a></span></li>
+<li><span><a href="/html/xwzx/tzgg/245.html" title="我校消防整改建设工程邀请招标公告">我校消防整改建设工程邀请招标公告</a></span></li>
+<li><span><a href="/plus/view.php?aid=155" title="重外17-18学年秋季开学缴费指南（暂仅支持建行）">重外17-18学年秋季开学缴费指南（暂仅支持建行）</a></span></li>
+<li><span><a href="/html/xwzx/tzgg/243.html" title="关于转发2017年暑假防震减灾安全知识家庭作业的通知">关于转发2017年暑假防震减灾安全知识家庭作业的通知</a></span></li>
+<li><span><a href="/html/xwzx/tzgg/234.html" title="A校区学生公寓楼热水设备采购及安装工程招标公告">A校区学生公寓楼热水设备采购及安装工程招标公告</a></span></li>
+<li><span><a href="/html/xwzx/tzgg/216.html" title="2017年户外大牌广告招标公告">2017年户外大牌广告招标公告</a></span></li>
+<li><span><a href="/html/xwzx/tzgg/214.html" title="重外国际部紧急通知">重外国际部紧急通知</a></span></li>
+
+      </ul>
+    </div>
+    <div class="ilist none" id="MBC2"> <ul class="ilist_top">
+        <a href="/html/xwzx/meitibaodao/2018/0322/264.html" target="_blank"><b>【九龙报】唐刚：办高品位高品质人民满意的好</b></a> <span>唐刚 总书记在重庆代表团审议时的重要讲话中，强调推动高质量...<a href="/html/xwzx/meitibaodao/2018/0322/264.html" target="_blank"><font>[详情]</font></a></span>
+      </ul>
+
+      <ul class="ilist_c">
+        <li><span><a href="/html/xwzx/meitibaodao/2018/0322/264.html" title="【九龙报】唐刚：办高品位高品质人民满意的好学校">【九龙报】唐刚：办高品位高品质人民满意的好学校</a></span></li>
+<li><span><a href="/html/xwzx/meitibaodao/2017/0322/219.html" title="校友王浩楠上央视《朗读者》，分享杨利伟作品！">校友王浩楠上央视《朗读者》，分享杨利伟作品！</a></span></li>
+<li><span><a href="/html/xwzx/meitibaodao/2017/0111/198.html" title="唐刚校长出席区十八届人大一次会议，积极建言九龙发">唐刚校长出席区十八届人大一次会议，积极建言九龙发</a></span></li>
+<li><span><a href="/html/xwzx/meitibaodao/2016/1122/176.html" title="【华龙网】重外学子与职场“菁媖”玩“闪约” get生涯">【华龙网】重外学子与职场“菁媖”玩“闪约” get生涯</a></span></li>
+<li><span><a href="/html/xwzx/meitibaodao/2016/1122/177.html" title="【华龙网】“汉语桥”美国代表团走进重外">【华龙网】“汉语桥”美国代表团走进重外</a></span></li>
+<li><span><a href="/html/xwzx/meitibaodao/2016/1024/165.html" title="【华龙网】我校自筹万元举办摄影展 诠释别样“光影世">【华龙网】我校自筹万元举办摄影展 诠释别样“光影世</a></span></li>
+<li><span><a href="/html/xwzx/meitibaodao/2015/0916/77.html" title="【爱奇艺】我去上学啦——重外篇（看明星在我校上学">【爱奇艺】我去上学啦——重外篇（看明星在我校上学</a></span></li>
+<li><span><a href="/html/xwzx/meitibaodao/2015/0831/52.html" title="【重庆商报】40人管弦乐队学校门口迎新生">【重庆商报】40人管弦乐队学校门口迎新生</a></span></li>
+
+      </ul>
+    </div>
+    <div class="ilist none" id="MBC3"> <ul class="ilist_top">
+        <a href="/html/xwzx/zkzx/272.html" target="_blank"><b><font color='#FF0000'>我校国际部2018级111名学生被国外名牌大学录取！</font></b></a> <span>截至4月8日，我校高2018届 已有111名学生（国际班97名、普高班...<a href="/html/xwzx/zkzx/272.html" target="_blank"><font>[详情]</font></a></span>
+      </ul>
+
+      <ul class="ilist_c">
+        <li><span><a href="/html/xwzx/zkzx/263.html" title="<font color='#CC0000'>2018开门红！我校144人次保送国内名牌大学！</font>"><font color='#CC0000'>2018开门红！我校144人次保送国内名牌大学！</font></a></span></li>
+<li><span><a href="/html/xwzx/zkzx/270.html" title="我校2018年重庆市中学生艺术团、体育后备人才招生简章">我校2018年重庆市中学生艺术团、体育后备人才招生简章</a></span></li>
+<li><span><a href="/html/xwzx/zkzx/272.html" title="<font color='#FF0000'>我校国际部2018级111名学生被国外名牌大学录取！</font>"><font color='#FF0000'>我校国际部2018级111名学生被国外名牌大学录取！</font></a></span></li>
+<li><span><a href="/html/xwzx/zkzx/266.html" title="我校4名学生被2018年最难录取大学UCLA录取">我校4名学生被2018年最难录取大学UCLA录取</a></span></li>
+<li><span><a href="/html/xwzx/zkzx/251.html" title="重外：喜欢rap的甜美女孩被“南方哈佛”录取！">重外：喜欢rap的甜美女孩被“南方哈佛”录取！</a></span></li>
+<li><span><a href="/html/xwzx/zkzx/242.html" title="<strong><font color='#FF0000'>我校2017级中考、高考再传捷报！</font></strong>"><strong><font color='#FF0000'>我校2017级中考、高考再传捷报！</font></strong></a></span></li>
+<li><span><a href="/html/xwzx/zkzx/232.html" title="我校2017年重庆市中学生艺术团、体育后备人才招生简章">我校2017年重庆市中学生艺术团、体育后备人才招生简章</a></span></li>
+<li><span><a href="/html/xwzx/zkzx/229.html" title="2017年362份海外名校录取通知来袭！83%来自全球前50名校">2017年362份海外名校录取通知来袭！83%来自全球前50名校</a></span></li>
+<li><span><a href="/html/xwzx/zkzx/175.html" title="我校2017年生物、地理教师招聘信息">我校2017年生物、地理教师招聘信息</a></span></li>
+<li><span><a href="/html/xwzx/zkzx/150.html" title="<font color='#FF0000'>我校高2016届高考、保送、出国再创佳绩！</font>"><font color='#FF0000'>我校高2016届高考、保送、出国再创佳绩！</font></a></span></li>
+<li><span><a href="/html/xwzx/zkzx/143.html" title="热烈祝贺我校278名学生被国内外名牌大学提前录取">热烈祝贺我校278名学生被国内外名牌大学提前录取</a></span></li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="box1_r">
+    <div class="box1_rlist">
+      <div class="box1_rlistt">
+        <h3>热点</h3>
+        <a href=""><span>更多</span></a></div>
+      <ul>
+        <li><span><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2016/0429/145.html" title="实外（分校）13届外语节初二组节目手绘海报展示">实外（分校）13届外语节初二组节目手绘海报展示</a></span></li>
+<li><span><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2016/0430/147.html" title="实外（分校）13届外语节初一组节目手绘海报展示">实外（分校）13届外语节初一组节目手绘海报展示</a></span></li>
+<li><span><a href="/html/dygz/jiachangxuexiao/2018/0123/257.html" title="转发2018年寒假学生消防安全家庭作业">转发2018年寒假学生消防安全家庭作业</a></span></li>
+<li><span><a href="/html/xwzx/zkzx/143.html" title="热烈祝贺我校278名学生被国内外名牌大学提前录">热烈祝贺我校278名学生被国内外名牌大学提前录</a></span></li>
+<li><span><a href="/html/xwzx/zkzx/150.html" title="<font color='#FF0000'>我校高2016届高考、保送、出国再创佳绩！</font>"><font color='#FF0000'>我校高2016届高考、保送、出国再创佳绩！</font></a></span></li>
+<li><span><a href="/html/xwzx/xydt/215.html" title="2017年我校158人次保送国内985、211院校！">2017年我校158人次保送国内985、211院校！</a></span></li>
+
+      </ul>
+      <div class="box1_rlist_ad1"><img src="/img/ad1.jpg"  border="0" /></div>
+      <div class="box1_rlist_ad1"><a href="http://www.eyijiao.com/register/high-school!addStudentInfo.action?schoolId=33"  target="_blank"><img src="/img/tcs.jpg"  border="0" /></a></br>
+<a href="http://www.eyijiao.com/register/gj-school!addStudentMobile.action?schoolId=33"  target="_blank"><img src="/img/gjb.jpg"  border="0" /></a></div>
+    </div>
+  </div>
+</div>
+<div class="adimg">
+  <div id="focus">
+    <ul>
+      <li><a href=""><img src="/img/ad/ad3.jpg"  border="0" /></a></li>
+<li><a href=""><img src="/img/ad/ad4.jpg"  border="0" /></a></li>
+    </ul>
+  </div>
+</div>
+<div class="box2">
+  <div class="box2_l">
+    <div class="box2_list">
+      <div class="box2_listt">
+        <h3>教学科研</h3>
+        <a href="/html/jxky/"><span>更多</span></a></div>
+      <dl>
+        <dt><a href="/html/jxky/xuekedongtai/2017/0214/201.html" title=" “一师一优课、一课一名师”我"><img src="/uploads/allimg/170214/1-1F214104355460-lp.jpg" alt=" “一师一优课、一课一名师”我" /></a>
+        <dd><a href="/html/jxky/xuekedongtai/2017/0214/201.html" title=" “一师一优课、一课一名师”我"><font> “一师一优课、一课一名师”我</font></a><br />
+          <a href="/html/jxky/xuekedongtai/2017/0214/201.html" title=" “一师一优课、一课一名师”我">日前，据教育部和重庆市教委公布的统计结果显</a></dd>
+        </dt>
+      </dl>
+
+      <ul>
+        <li><span><a href="/html/jxky/xuekedongtai/2017/1026/248.html" title="市初中数学教师培训团队到我校开展研讨活动">市初中数学教师培训团队到我校开展研讨活动</a></span></li>
+<li><span><a href="/plus/view.php?aid=196" title="分校2016年度教工排球赛高2018级夺冠">分校2016年度教工排球赛高2018级夺冠</a></span></li>
+<li><span><a href="/html/jxky/mingshifengcai/2016/1216/192.html" title="我校三名化学教师赢得全市学科竞赛大满贯！">我校三名化学教师赢得全市学科竞赛大满贯！</a></span></li>
+<li><span><a href="/html/jxky/mingshifengcai/2016/1219/194.html" title="重外师者｜赵逸庶：引导学生理性思考，教会学生">重外师者｜赵逸庶：引导学生理性思考，教会学生</a></span></li>
+<li><span><a href="/html/jxky/mingshifengcai/2016/1114/173.html" title="厉害了我的老师们！一个月里斩获31个一等奖！">厉害了我的老师们！一个月里斩获31个一等奖！</a></span></li>
+<li><span><a href="/html/jxky/xuekedongtai/2015/1201/108.html" title="我校刘露同学获2015全国高中数学应用能力测试活动">我校刘露同学获2015全国高中数学应用能力测试活动</a></span></li>
+<li><span><a href="/html/jxky/xuekedongtai/2015/1201/107.html" title="我校简学琴老师数学论文获全国一等奖">我校简学琴老师数学论文获全国一等奖</a></span></li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="box2_c">
+    <div class="box2_list">
+      <div class="box2_listt">
+        <h3>德育工作</h3>
+        <a href="/html/dygz/"><span>更多</span></a></div>
+      <dl>
+        <dt><a href="/html/dygz/xueshengguanli/2017/0605/238.html" title="我校开展法制讲座“远离校园暴力"><img src="/uploads/allimg/170605/1-1F6051F242212-lp.jpg" alt="我校开展法制讲座“远离校园暴力" /></a>
+        <dd><a href="/html/dygz/xueshengguanli/2017/0605/238.html" title="我校开展法制讲座“远离校园暴力"><font>我校开展法制讲座“远离校园暴力</font></a><br />
+          <a href="/html/dygz/xueshengguanli/2017/0605/238.html" title="我校开展法制讲座“远离校园暴力">如今，校园欺凌和暴力成为人们谈吐之间的热点</a></dd>
+        </dt>
+      </dl>
+
+      <ul>
+        <li><span><a href="/html/dygz/gongzuojianbao/2018/0516/281.html" title="我校17-18学年下期半期德育工作总结会顺利召开">我校17-18学年下期半期德育工作总结会顺利召开</a></span></li>
+<li><span><a href="/html/dygz/xueshengguanli/2017/0515/233.html" title="我校举办16-17年度班主任常规知识竞赛">我校举办16-17年度班主任常规知识竞赛</a></span></li>
+<li><span><a href="/plus/view.php?aid=195" title="校本部2018级开展生命教育活动之“青少年”禁毒">校本部2018级开展生命教育活动之“青少年”禁毒</a></span></li>
+<li><span><a href="/html/dygz/xinlijiankang/2016/1014/161.html" title="初三学习遇压力,心理辅导指方向">初三学习遇压力,心理辅导指方向</a></span></li>
+<li><span><a href="/html/dygz/jiachangxuexiao/2016/0930/158.html" title="“刻苦立己 齐家兴邦”国庆节致学生和家长的一封">“刻苦立己 齐家兴邦”国庆节致学生和家长的一封</a></span></li>
+<li><span><a href="/html/dygz/xinlijiankang/2016/0120/138.html" title="重庆市中小学生电梯安全知识试题">重庆市中小学生电梯安全知识试题</a></span></li>
+<li><span><a href="/html/dygz/xinlijiankang/2016/0108/134.html" title="电梯乘用安全公益宣教片">电梯乘用安全公益宣教片</a></span></li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="box2_r">
+    <div class="box1_rlist">
+      <div class="box1_rlistt">
+        <h3>国际发展</h3>
+        <a href="/html/gjfz/"><span>更多</span></a></div>
+      <ul>
+        <li><span><a href="/html/gjfz/haiwaizhitongche/2018/0528/289.html" title="加拿大大学（五所）直通车">加拿大大学（五所）直通车</a></span></li>
+<li><span><a href="/html/gjfz/haiwaizhitongche/2018/0528/288.html" title="新加坡大学直通车">新加坡大学直通车</a></span></li>
+<li><span><a href="/html/gjfz/haiwaizhitongche/2018/0528/287.html" title="英国高中阶段直通车">英国高中阶段直通车</a></span></li>
+<li><span><a href="/html/gjfz/guojigaozhong/2018/0528/285.html" title="AP项目介绍">AP项目介绍</a></span></li>
+<li><span><a href="/html/gjfz/guojigaozhong/2018/0528/284.html" title="A-Level项目介绍">A-Level项目介绍</a></span></li>
+<li><span><a href="/html/gjfz/guojigaozhong/2018/0516/282.html" title="我校国际部首届中德项目介绍">我校国际部首届中德项目介绍</a></span></li>
+<li><span><a href="/html/gjfz/huodongjianxun/2017/0317/217.html" title="第22届中国法语活动节，我校学子载誉而归！">第22届中国法语活动节，我校学子载誉而归！</a></span></li>
+<li><span><a href="/html/gjfz/huodongjianxun/2017/0216/204.html" title="国际部学生2016冬令营之美国模联项目纪实">国际部学生2016冬令营之美国模联项目纪实</a></span></li>
+<li><span><a href="/html/gjfz/huodongjianxun/2016/1021/163.html" title="我校举行留学咨询会">我校举行留学咨询会</a></span></li>
+<li><span><a href="/html/gjfz/huodongjianxun/2016/1017/162.html" title="习大大访问的美国林肯高中——我校的友好学校">习大大访问的美国林肯高中——我校的友好学校</a></span></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="box3">
+  <div class="lanmu_title">
+    <h3>图说重外</h3>
+    <div class="sub_lanmu"> <a href="/html/gysw/">关于重外</a><a href="/html/dqgz/">党群工作</a><a href="/html/xwzx/">新闻中心</a><a href="/html/jxky/">教学科研</a><a href="/html/dygz/">德育工作</a><a href="/html/gjfz/">国际发展</a><a href="/html/xiaoyuanshenghuo/">校园生活</a><a href="/html/shuzixiaoyuan/">数字校园</a> </div>
+    <span class="lanmu_more"> <a href="/html/gysw/">更多</a></span> </div>
+  <div class="box3_c"> <dl>
+      <dt><a href="/html/gjfz/guojigaozhong/2018/0528/285.html" title="AP项目介绍"><img src="/uploads/allimg/180528/AP-lp.jpg" width="140" height="110" alt="AP项目介绍"></a></dt>
+      <dd> <span><a href="/html/gjfz/guojigaozhong/2018/0528/285.html" title="AP项目介绍">AP项目介绍</a></span>
+        <p>...<a href="/html/gjfz/guojigaozhong/2018/0528/285.html" title="AP项目介绍">[详细]</a></p>
+      </dd>
+    </dl>
+<dl>
+      <dt><a href="/html/dygz/gongzuojianbao/2018/0516/281.html" title="我校17-18学年下期半"><img src="/uploads/allimg/180516/1-1P5161342364R-lp.jpg" width="140" height="110" alt="我校17-18学年下期半"></a></dt>
+      <dd> <span><a href="/html/dygz/gongzuojianbao/2018/0516/281.html" title="我校17-18学年下期半">我校17-18学年下期半</a></span>
+        <p>抓好德育工作 促进教育发展 2017-2018学年下学期半期德育...<a href="/html/dygz/gongzuojianbao/2018/0516/281.html" title="我校17-18学年下期半">[详细]</a></p>
+      </dd>
+    </dl>
+<dl>
+      <dt><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/278.html" title="重外（本部）27届外"><img src="/uploads/allimg/180511/1_05110Z2233037.jpg" width="140" height="110" alt="重外（本部）27届外"></a></dt>
+      <dd> <span><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/278.html" title="重外（本部）27届外">重外（本部）27届外</a></span>
+        <p>评比投票说明 本次网络投票截止时间：2018年5月14日12：...<a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/278.html" title="重外（本部）27届外">[详细]</a></p>
+      </dd>
+    </dl>
+<dl>
+      <dt><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/279.html" title="重外（本部）27届外"><img src="/uploads/allimg/180511/1-1P511120605H5.jpg" width="140" height="110" alt="重外（本部）27届外"></a></dt>
+      <dd> <span><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/279.html" title="重外（本部）27届外">重外（本部）27届外</a></span>
+        <p>评比投票说明 本次网络投票截止时间：2018年5月14日晚...<a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/279.html" title="重外（本部）27届外">[详细]</a></p>
+      </dd>
+    </dl>
+<dl>
+      <dt><a href="/html/dqgz/xiaotuanwei/2018/0507/276.html" title="校本部举行纪念“五"><img src="/uploads/allimg/180507/1-1P50G3420R28-lp.jpg" width="140" height="110" alt="校本部举行纪念“五"></a></dt>
+      <dd> <span><a href="/html/dqgz/xiaotuanwei/2018/0507/276.html" title="校本部举行纪念“五">校本部举行纪念“五</a></span>
+        <p>五四精神恒久远 扬帆起航新时代 纪念五四运动九十九周...<a href="/html/dqgz/xiaotuanwei/2018/0507/276.html" title="校本部举行纪念“五">[详细]</a></p>
+      </dd>
+    </dl>
+<dl>
+      <dt><a href="/html/dqgz/xiaotuanwei/2018/0507/275.html" title="五四｜我们用这份成"><img src="/uploads/allimg/180507/1-1P50G3304M16-lp.jpg" width="140" height="110" alt="五四｜我们用这份成"></a></dt>
+      <dd> <span><a href="/html/dqgz/xiaotuanwei/2018/0507/275.html" title="五四｜我们用这份成">五四｜我们用这份成</a></span>
+        <p>在学校党委的领导下，校团委带领广大青年积极贯彻践行...<a href="/html/dqgz/xiaotuanwei/2018/0507/275.html" title="五四｜我们用这份成">[详细]</a></p>
+      </dd>
+    </dl>
+ </div>
+</div>
+<div class="box4">
+  <div class="box2_l">
+    <div class="box4_list">
+      <div class="box2_listt">
+        <h3>校园生活</h3>
+        <a href="/html/xiaoyuanshenghuo/"><span>更多</span></a></div>
+      <div class="box4_listimg"> <p><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/278.html" title="重外（本部）27届外语节高2019级节目手绘海报"><img src="/uploads/allimg/180511/1_05110Z2233037.jpg" /></a><em><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/278.html" title="重外（本部）27届外语节高2019级节目手绘海报">重外（本部）27届外语节高2019级节目手绘海报</a></em></p>
+<p><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/279.html" title="重外（本部）27届外语节高2020级、国际部节目"><img src="/uploads/allimg/180511/1-1P511120605H5.jpg" /></a><em><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/279.html" title="重外（本部）27届外语节高2020级、国际部节目">重外（本部）27届外语节高2020级、国际部节目</a></em></p>
+ </div>
+      <ul>
+        <li><span><a href="/html/xiaoyuanshenghuo/shuxiangwenhuajie/2018/0428/269.html" title="《关于开展2018重庆市中小学“朗朗书声”朗读活">《关于开展2018重庆市中小学“朗朗书声”朗读活</a></span></li>
+<li><span><a href="/html/xiaoyuanshenghuo/shuxiangwenhuajie/2016/1024/166.html" title="实外举行第九届书香文化节系列活动之百人书画">实外举行第九届书香文化节系列活动之百人书画</a></span></li>
+<li><span><a href="/html/xiaoyuanshenghuo/tiyiwenhuajie/2016/0921/157.html" title="2016自编课间操">2016自编课间操</a></span></li>
+<li><span><a href="/html/xiaoyuanshenghuo/tiyiwenhuajie/2015/1225/115.html" title="艺术工作专项评估自评报告">艺术工作专项评估自评报告</a></span></li>
+<li><span><a href="/plus/view.php?aid=98" title="实外第八届书香文化节之百人书画大赛圆满落幕">实外第八届书香文化节之百人书画大赛圆满落幕</a></span></li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="box2_c">
+    <div class="box4_list">
+      <div class="box2_listt">
+        <h3>校友社区</h3>
+        <a href="/mun/mishuchuchengyuan/"><span>更多</span></a></div>
+      <div class="box4_listimg"> <p><a href="/mun/mishuchuchengyuan/2015/1229/119.html" title="副秘书长　李旭东"><img src="/uploads/allimg/151229/1-15122Z9195D12-lp.jpg" /></a><em><a href="/mun/mishuchuchengyuan/2015/1229/119.html" title="副秘书长　李旭东">副秘书长　李旭东</a></em></p>
+<p><a href="/mun/mishuchuchengyuan/2015/1229/129.html" title="学术总监　刘斯晨"><img src="/uploads/allimg/151229/1-1512291231052Q-lp.jpg" /></a><em><a href="/mun/mishuchuchengyuan/2015/1229/129.html" title="学术总监　刘斯晨">学术总监　刘斯晨</a></em></p>
+ </div>
+      <ul>
+        
+      </ul>
+    </div>
+  </div>
+  <div class="box2_r">
+    <div class="box1_rlist">
+      <div class="box1_rlistt">
+        <h3>知名校友</h3>
+        <a href=""><span>更多</span></a></div>
+      <ul>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="box8">
+  <div class="lanmu_title">
+    <h3>视频中心</h3>
+    <div class="sub_lanmu"> <a href="/video/xiaoyuanjiemu/">校园节目</a><a href="/video/huodongjianxun/">活动简讯</a> </div>
+    <span class="lanmu_more"> <a href="/video/">更多</a></span> </div>
+  <div class="image_box"> 
+    <!--图片列表项--> 
+    <div class="image_box_item"> <a href="/video/huodongjianxun/2017/0504/228.html" title='明星进重外之我去上学啦'> <img src="/uploads/allimg/170507/170510/1-1F510110J52U.png" width="190" height="130" /> </a> <a href="/video/huodongjianxun/2017/0504/228.html" title='明星进重外之我去上学啦'>明星进重外之我去上学啦</a> </div>
+<div class="image_box_item"> <a href="/video/huodongjianxun/2017/0504/226.html" title='明星进重外之我去上学啦'> <img src="/uploads/allimg/170504/1-1F5041U5430-L.jpg" width="190" height="130" /> </a> <a href="/video/huodongjianxun/2017/0504/226.html" title='明星进重外之我去上学啦'>明星进重外之我去上学啦</a> </div>
+<div class="image_box_item"> <a href="/video/huodongjianxun/2017/0504/227.html" title='明星进重外之我去上学啦'> <img src="/uploads/allimg/170504/1-1F5041953060-L.jpg" width="190" height="130" /> </a> <a href="/video/huodongjianxun/2017/0504/227.html" title='明星进重外之我去上学啦'>明星进重外之我去上学啦</a> </div>
+<div class="image_box_item"> <a href="/video/huodongjianxun/2017/0504/224.html" title='明星进重外之我去上学啦'> <img src="/uploads/allimg/170504/1-1F5041J3200-L.png" width="190" height="130" /> </a> <a href="/video/huodongjianxun/2017/0504/224.html" title='明星进重外之我去上学啦'>明星进重外之我去上学啦</a> </div>
+<div class="image_box_item"> <a href="/video/xiaoyuanjiemu/2017/0504/225.html" title='重外自编课间操（2016版）'> <img src="/uploads/allimg/170504/1-1F5041R5390-L.png" width="190" height="130" /> </a> <a href="/video/xiaoyuanjiemu/2017/0504/225.html" title='重外自编课间操（2016版）'>重外自编课间操（2016版）</a> </div>
+ 
+    <!--图片列表项结束--> 
+  </div>
+</div>
+<div class="adimg"><a href="/ad/gjbzssc.pdf"  target="_blank"><img src="/img/ad/gjbzssc.png"  border="0" /></a></div>
+<div class="box5 clearfix">
+  <div class="lanmu_title">
+    <h3>图库</h3>
+    <div class="sub_lanmu"> <a href="/html/gysw/">关于重外</a><a href="/html/dqgz/">党群工作</a><a href="/html/xwzx/">新闻中心</a><a href="/html/jxky/">教学科研</a><a href="/html/dygz/">德育工作</a><a href="/html/gjfz/">国际发展</a><a href="/html/xiaoyuanshenghuo/">校园生活</a><a href="/html/shuzixiaoyuan/">数字校园</a> </div>
+    <span class="lanmu_more"> <a href="/html/gysw/">更多</a></span> </div>
+  <div class="box5l"> <li class="box6"><a href="/html/dqgz/xiaotuanwei/2018/0507/276.html" title="校本部举行纪念“五四运动”九十九周年暨表"><img src="/uploads/allimg/180507/1-1P50G3420R28-lp.jpg"/></a><a href="/html/dqgz/xiaotuanwei/2018/0507/276.html" title="校本部举行纪念“五四运动”九十九周年暨表"><span>校本部举行纪念“五四运动”九十九周年暨表</span></a></li>
+
+    <li class="box7"><a href="/html/dqgz/xiaotuanwei/2018/0507/275.html" title="五四｜我们用这份成绩单向青"><img src="/uploads/allimg/180507/1-1P50G3304M16-lp.jpg"/></a><a href="/html/dqgz/xiaotuanwei/2018/0507/275.html" title="五四｜我们用这份成绩单向青"><span>五四｜我们用这份成绩单向青</span></a></li>
+<li class="box7"><a href="/html/dqgz/xiaotuanwei/2018/0503/271.html" title="市中学中职共青团改革交流会"><img src="/uploads/allimg/180503/1-1P50315225Dc-lp.jpg"/></a><a href="/html/dqgz/xiaotuanwei/2018/0503/271.html" title="市中学中职共青团改革交流会"><span>市中学中职共青团改革交流会</span></a></li>
+ </div>
+  <div class="box5c"> <li><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/279.html" title="重外（本部）27届外语节高2"><img src="/uploads/allimg/180511/1-1P511120605H5.jpg"/></a><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/279.html" title="重外（本部）27届外语节高2"><span>重外（本部）27届外语节高2</span></a></li>
+<li><a href="/html/dqgz/xiaotuanwei/2018/0507/276.html" title="校本部举行纪念“五四运动”"><img src="/uploads/allimg/180507/1-1P50G3420R28-lp.jpg"/></a><a href="/html/dqgz/xiaotuanwei/2018/0507/276.html" title="校本部举行纪念“五四运动”"><span>校本部举行纪念“五四运动”</span></a></li>
+<li><a href="/html/dqgz/xiaotuanwei/2018/0507/275.html" title="五四｜我们用这份成绩单向青"><img src="/uploads/allimg/180507/1-1P50G3304M16-lp.jpg"/></a><a href="/html/dqgz/xiaotuanwei/2018/0507/275.html" title="五四｜我们用这份成绩单向青"><span>五四｜我们用这份成绩单向青</span></a></li>
+ </div>
+  <div class="box5r"> <dl>
+      <dt><a href="/html/gjfz/guojigaozhong/2018/0528/285.html" title="AP项目介绍"><img src="/uploads/allimg/180528/AP-lp.jpg"  alt="AP项目介绍"></a></dt>
+      <dd> <span><a href="/html/gjfz/guojigaozhong/2018/0528/285.html" title="AP项目介绍">AP项目介绍</a></span>
+        <p>...</p>
+      </dd>
+    </dl>
+<dl>
+      <dt><a href="/html/dygz/gongzuojianbao/2018/0516/281.html" title="我校17-18学年下期"><img src="/uploads/allimg/180516/1-1P5161342364R-lp.jpg"  alt="我校17-18学年下期"></a></dt>
+      <dd> <span><a href="/html/dygz/gongzuojianbao/2018/0516/281.html" title="我校17-18学年下期">我校17-18学年下期</a></span>
+        <p>抓好德育工作 促进教...</p>
+      </dd>
+    </dl>
+<dl>
+      <dt><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/278.html" title="重外（本部）2"><img src="/uploads/allimg/180511/1_05110Z2233037.jpg"  alt="重外（本部）2"></a></dt>
+      <dd> <span><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/278.html" title="重外（本部）2">重外（本部）2</a></span>
+        <p>评比投票说明 本次网...</p>
+      </dd>
+    </dl>
+<dl>
+      <dt><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/279.html" title="重外（本部）2"><img src="/uploads/allimg/180511/1-1P511120605H5.jpg"  alt="重外（本部）2"></a></dt>
+      <dd> <span><a href="/html/xiaoyuanshenghuo/waiyuwenhuajie/2018/0511/279.html" title="重外（本部）2">重外（本部）2</a></span>
+        <p>评比投票说明 本次网...</p>
+      </dd>
+    </dl>
+<dl>
+      <dt><a href="/html/dqgz/xiaotuanwei/2018/0507/274.html" title="校本部举行2018年"><img src="/uploads/allimg/180507/1-1P50G31609425-lp.jpg"  alt="校本部举行2018年"></a></dt>
+      <dd> <span><a href="/html/dqgz/xiaotuanwei/2018/0507/274.html" title="校本部举行2018年">校本部举行2018年</a></span>
+        <p>不忘初心跟团走 建功...</p>
+      </dd>
+    </dl>
+ </div>
+</div>
+<div class="clear"></div>
+<div class="adimg"></div>
+<div class="yqlianjie">
+  <div class="city"> 
+     </div>
+  <div class="lianjie">
+    <div class="lianjieleft"><img src="/style/yqlianjie.jpg" alt="友情链接" /></div>
+  </div>
+  <div class="lianjiecontxt"><a href='http://www.cqjw.gov.cn' target='_blank'>重庆市教育委员会</a> <a href='http://www.sisu.edu.cn' target='_blank'>四川外国语大学</a> <a href='http://www.jlpjw.gov.cn' target='_blank'>九龙坡区教委</a> <a href='http://www.cqfls.cn/html/szpd.shtml' target='_blank'>重外高中生综合素质评</a> </div>
+</div>
+﻿<div class="clear"></div>
+<div class="footerfirst">
+  <div class="footerfirst_main"> <a href="/">首页</a> 
+    | <a href="/html/gysw/" title="关于重外" >关于重外</a> 
+    | <a href="/html/dqgz/" title="党群工作" >党群工作</a> 
+    | <a href="/html/xwzx/" title="新闻中心" >新闻中心</a> 
+    | <a href="/html/jxky/" title="教学科研" >教学科研</a> 
+    | <a href="/html/dygz/" title="德育工作" >德育工作</a> 
+    | <a href="/html/gjfz/" title="国际发展" >国际发展</a> 
+    | <a href="/html/xiaoyuanshenghuo/" title="校园生活" >校园生活</a> 
+    | <a href="http://st.cqfls.cn" title="校友社区" >校友社区</a> 
+    | <a href="/html/shuzixiaoyuan/" title="数字校园" >数字校园</a>  </div>
+</div>
+<div class="footersecond">
+  <div class="footersecond_main">
+    <div class="footersecond_main_right">
+            <p>本部地址：重庆市高新区石桥铺红育坡1号　邮编：400039　电话：023-68612896　传真：023-68612896</br>分校地址：重庆市九龙园区华龙大道10号　 邮编：400052　电话：023-65490003　传真：023-65490003</p>
+        <p> © 2015-2018 四川外国语大学附属外国语学校　重外新闻团　版权所有！　校信息中心　技术支持！</br><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50010702500423"><img src="/ga.png" />渝公网安备 50010702500423号</a>　
+<a href="http://www.miitbeian.gov.cn/" >渝ICP备13006200号</a>
+</p><p><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/04/000/0000/60513836/CA040000000605138360003.js' type='text/javascript'%3E%3C/script%3E"));</script></p>
+    </div>
+  </div>
+</div>
+<div class="footernew">
+  <ul>
+    <li> </li>
+  </ul>
+</div>
+<!--<div id="goTopBtn"><img src="/style/top.png" width="48"></div> --> 
+<script src="/style/backtop.js" type="text/javascript"></script> 
+<script type="text/javascript">goTopEx();</script>
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+
+ <script type="text/javascript">
+document.location.href = "/PortalSite";
+        var userAgent = navigator.userAgent;
+        var isOpera = userAgent.indexOf("Opera") > -1;
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera;
+        if (isIE) {
+            var userAgent = navigator.userAgent;
+            var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+            reIE.test(userAgent);
+            var fIEVersion = parseFloat(RegExp["$1"]);
+           // if (fIEVersion < 7) {
+               // document.location = "IEDownLoad.aspx";
+           // }else
+//{
+
+//}
+
+        }
+
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>

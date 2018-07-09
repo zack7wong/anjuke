@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta content="广州市协和中学" name="Keywords" />
+<meta content="广州市协和中学" name="Description"/>
+<title>广州市协和中学 - 网站首页</title>
+<link href="/Template/Default/Skin/peSkin/module.css" rel="stylesheet" type="text/css" />
+<link href="/Template/Default/Skin/peSkin/default.css" rel="stylesheet" type="text/css" />
+<link href="/Template/Default/Skin/peSkin/index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    var siteSetup = {sitePath: '/',ajaxPath: '/ajax.aspx',skinPath: '/Template/Default/Skin/'};
+</script>
+<script language="javascript" type="text/javascript" src="/js/jquery.pack.js"></script>
+<script language="javascript" type="text/javascript" src="/js/jquery.peex.js"></script>
+<script language="javascript" type="text/javascript" src="/Template/Default/Skin/peskin/js/jquery.SuperSlide.js"></script>
+<script language="javascript" type="text/javascript" src="/Template/Default/Skin/peskin/js/js.js"></script>
+</head>
+<body>
+    <!-- wrap S -->
+    <div id="wrap">
+        <!-- Header S -->
+        <div id="header">
+    <div class="headerCon">
+
+<script type="text/javascript">
+  function iconAppHover(btnObj,picObj,offsetLeft,offsetTop){
+      $(picObj).hover(function(){
+      $(this).show();
+      },function(){
+        $(this).hide();
+      });
+      $(btnObj).hover(function(){
+      var offset = $(this).offset();
+      var ulHeight =  $(this).height();
+      var divWidth = $(this).width();
+      var divLeft=parseFloat(offset.left)+parseFloat(offsetLeft);
+      var divTop =parseFloat(offset.top)+parseFloat(ulHeight)+parseFloat(offsetTop);
+      $(picObj).css({"left":divLeft,"top":divTop})
+      $(picObj).show();
+    },function(){
+      $(picObj).hide();
+    });
+  };
+$(function(){
+
+  //iconAppHover(".iphoneBtn",".iphoneIcon",'-25','0');
+});
+</script>
+
+        <h1 class="logo"><a href="/">广州市协和中学</a></h1>
+<div class="userPanel">
+        <a href="#" onclick="AddFavorite('http://gzxhzx.gz.idc800.net:81','广州市协和中学')">加入收藏</a>|
+        <a class="iphoneBtn" href="javascript:;" style=" position: relative;">手机版
+<img class="iphoneIcon" style="display:none; position: absolute; z-index: 999999;" src='/Template/Default/Skin/images/appIcon.png'>
+</a>|
+        <a href="http://www.gzxhhs.net/" target=＂_blank＂>旧版入口</a>
+</div>
+
+  <div class="searchBar">
+    <input type="text" class="input" onfocus="value='';" value="请输入搜索关键字" id="keyword" />
+    <input type="submit" class="submit" value="搜索" id="Submit" onclick="OnSearchCheckAndSubmit();" />
+    <script language="javascript" type="text/javascript">
+      function OnSearchCheckAndSubmit(){
+          var keyword = document.getElementById("keyword").value;
+          if (keyword == '' || keyword == "请输入搜索关键字") {
+              alert("请输入搜索关键字");
+              return;
+          }
+          else {
+          
+              //window.location = "/search.aspx?searchtype=0&Keyword=" + escape(keyword);
+              window.location = "/search/s.aspx?c=&f=0&wd=" + escape(keyword);
+
+          }
+      }
+    </script>
+  </div>
+  
+    </div>
+    <div class="mainNavBar1">
+    <div class="mainNavBar">
+        <ul id="mainNav" class="mainNav"><li class="li1 first1 on1" id="liID-2"><h4 class="h1" id="hID-2"><a target="_self" title="网站首页" class="a1" id="aID-2" href="/Default.aspx">网站首页</a></h4></li><li class="spe ">|</li><li class="li1 hasUl1" id="liID57"><h4 class="h1" id="hID57"><a target="_self" title="学校新闻" class="a1" id="aID57" href="/Category_57/Index.aspx">学校新闻</a></h4><ul class="ul1" id="ulID57">
+				<li class="li2 first2 last2" id="liID64">
+  <h4 class="h2" id="hID64"><a target="_self" title="新闻快讯" class="a2" id="aID64" href="/Category_64/Index.aspx">新闻快讯</a></h4>
+</li>
+			</ul></li><li class="spe ">|</li><li class="li1 hasUl1" id="liID58"><h4 class="h1" id="hID58"><a target="_self" title="学校概况" class="a1" id="aID58" href="/Category_58/Index.aspx">学校概况</a></h4><ul class="ul1" id="ulID58">
+				<li class="li2 first2" id="liID99">
+  <h4 class="h2" id="hID99"><a target="_self" title="学校简介" class="a2" id="aID99" href="/Category_99/Index.aspx">学校简介</a></h4>
+</li>
+<li class="li2" id="liID68">
+  <h4 class="h2" id="hID68"><a target="_self" title="校园美景" class="a2" id="aID68" href="/Category_68/Index.aspx">校园美景</a></h4>
+</li>
+<li class="li2" id="liID69">
+  <h4 class="h2" id="hID69"><a target="_self" title="行政队伍" class="a2" id="aID69" href="/Category_69/Index.aspx">行政队伍</a></h4>
+</li>
+<li class="li2" id="liID70">
+  <h4 class="h2" id="hID70"><a target="_self" title="办学成果" class="a2" id="aID70" href="/Category_70/Index.aspx">办学成果</a></h4>
+</li>
+<li class="li2 last2" id="liID71">
+  <h4 class="h2" id="hID71"><a target="_self" title="百年协和" class="a2" id="aID71" href="/Category_71/Index.aspx">百年协和</a></h4>
+</li>
+			</ul></li><li class="spe ">|</li><li class="li1 hasUl1" id="liID59"><h4 class="h1" id="hID59"><a target="_self" title="教学教研" class="a1" id="aID59" href="/Category_59/Index.aspx">教学教研</a></h4><ul class="ul1" id="ulID59">
+				<li class="li2 first2" id="liID72">
+  <h4 class="h2" id="hID72"><a target="_self" title="教学信息" class="a2" id="aID72" href="/Category_72/Index.aspx">教学信息</a></h4>
+</li>
+<li class="li2" id="liID73">
+  <h4 class="h2" id="hID73"><a target="_self" title="教研活动" class="a2" id="aID73" href="/Category_73/Index.aspx">教研活动</a></h4>
+</li>
+<li class="li2" id="liID74">
+  <h4 class="h2" id="hID74"><a target="_self" title="课题研究" class="a2" id="aID74" href="/Category_74/Index.aspx">课题研究</a></h4>
+</li>
+<li class="li2 last2" id="liID75">
+  <h4 class="h2" id="hID75"><a target="_self" title="教学资源" class="a2" id="aID75" href="/Category_75/Index.aspx">教学资源</a></h4>
+</li>
+			</ul></li><li class="spe spe4">|</li><li class="li1 hasUl1" id="liID60"><h4 class="h1" id="hID60"><a target="_self" title="德育园地" class="a1" id="aID60" href="/Category_60/Index.aspx">德育园地</a></h4><ul class="ul1" id="ulID60">
+				<li class="li2 first2" id="liID76">
+  <h4 class="h2" id="hID76"><a target="_self" title="家校互动" class="a2" id="aID76" href="/Category_76/Index.aspx">家校互动</a></h4>
+</li>
+<li class="li2" id="liID77">
+  <h4 class="h2" id="hID77"><a target="_self" title="德育制度" class="a2" id="aID77" href="/Category_77/Index.aspx">德育制度</a></h4>
+</li>
+<li class="li2" id="liID78">
+  <h4 class="h2" id="hID78"><a target="_self" title="德育研究" class="a2" id="aID78" href="/Category_78/Index.aspx">德育研究</a></h4>
+</li>
+<li class="li2 last2" id="liID79">
+  <h4 class="h2" id="hID79"><a target="_self" title="德育资源" class="a2" id="aID79" href="/Category_79/Index.aspx">德育资源</a></h4>
+</li>
+			</ul></li><li class="spe ">|</li><li class="li1 hasUl1" id="liID61"><h4 class="h1" id="hID61"><a target="_self" title="园丁礼赞" class="a1" id="aID61" href="/Category_61/Index.aspx">园丁礼赞</a></h4><ul class="ul1" id="ulID61">
+				<li class="li2 first2" id="liID100">
+  <h4 class="h2" id="hID100"><a target="_self" title="师资简介" class="a2" id="aID100" href="/Category_100/Index.aspx">师资简介</a></h4>
+</li>
+<li class="li2" id="liID81">
+  <h4 class="h2" id="hID81"><a target="_self" title="名师风采" class="a2" id="aID81" href="/Category_81/Index.aspx">名师风采</a></h4>
+</li>
+<li class="li2" id="liID82">
+  <h4 class="h2" id="hID82"><a target="_self" title="特色活动" class="a2" id="aID82" href="/Category_82/Index.aspx">特色活动</a></h4>
+</li>
+<li class="li2" id="liID83">
+  <h4 class="h2" id="hID83"><a target="_self" title="高考金榜" class="a2" id="aID83" href="/Category_83/Index.aspx">高考金榜</a></h4>
+</li>
+<li class="li2" id="liID84">
+  <h4 class="h2" id="hID84"><a target="_self" title="优秀学生" class="a2" id="aID84" href="/Category_84/Index.aspx">优秀学生</a></h4>
+</li>
+<li class="li2" id="liID85">
+  <h4 class="h2" id="hID85"><a target="_self" title="书香校园" class="a2" id="aID85" href="/Category_85/Index.aspx">书香校园</a></h4>
+</li>
+<li class="li2" id="liID86">
+  <h4 class="h2" id="hID86"><a target="_self" title="课余党校" class="a2" id="aID86" href="/Category_86/Index.aspx">课余党校</a></h4>
+</li>
+<li class="li2 last2" id="liID87">
+  <h4 class="h2" id="hID87"><a target="_self" title="社团巡礼" class="a2" id="aID87" href="/Category_87/Index.aspx">社团巡礼</a></h4>
+</li>
+			</ul></li><li class="spe ">|</li><li class="li1 hasUl1" id="liID62"><h4 class="h1" id="hID62"><a target="_self" title="协和党建" class="a1" id="aID62" href="/Category_62/Index.aspx">协和党建</a></h4><ul class="ul1" id="ulID62">
+				<li class="li2 first2" id="liID88">
+  <h4 class="h2" id="hID88"><a target="_self" title="党建信息" class="a2" id="aID88" href="/Category_88/Index.aspx">党建信息</a></h4>
+</li>
+<li class="li2" id="liID89">
+  <h4 class="h2" id="hID89"><a target="_self" title="组织机构" class="a2" id="aID89" href="/Category_89/Index.aspx">组织机构</a></h4>
+</li>
+<li class="li2" id="liID92">
+  <h4 class="h2" id="hID92"><a target="_self" title="学习园地" class="a2" id="aID92" href="/Category_92/Index.aspx">学习园地</a></h4>
+</li>
+<li class="li2 last2" id="liID91">
+  <h4 class="h2" id="hID91"><a target="_self" title="专题教育" class="a2" id="aID91" href="/Category_91/Index.aspx">专题教育</a></h4>
+</li>
+			</ul></li><li class="spe ">|</li><li class="li1 last1 hasUl1" id="liID63"><h4 class="h1" id="hID63"><a target="_self" title="民族教育" class="a1" id="aID63" href="/Category_63/Index.aspx">民族教育</a></h4><ul class="ul1" id="ulID63">
+				<li class="li2 first2" id="liID95">
+  <h4 class="h2" id="hID95"><a target="_self" title="新闻信息" class="a2" id="aID95" href="/Category_95/Index.aspx">新闻信息</a></h4>
+</li>
+<li class="li2" id="liID96">
+  <h4 class="h2" id="hID96"><a target="_self" title="师生风采" class="a2" id="aID96" href="/Category_96/Index.aspx">师生风采</a></h4>
+</li>
+<li class="li2" id="liID97">
+  <h4 class="h2" id="hID97"><a target="_self" title="文摘天地" class="a2" id="aID97" href="/Category_97/Index.aspx">文摘天地</a></h4>
+</li>
+<li class="li2 last2" id="liID98">
+  <h4 class="h2" id="hID98"><a target="_self" title="活动前景" class="a2" id="aID98" href="/Category_98/Index.aspx">活动前景</a></h4>
+</li>
+			</ul></li></ul><script type="text/javascript">
+			jQuery(function($){
+				var navST;
+				var navST1;
+				var name='mainNav';
+				var t=200;
+				var type='1';
+				var removeOn='false';
+				var effect='slide';
+				var appendItem = '';
+				var li="#"+name+" li";
+				var index = 0; 
+
+				if( !$("#"+name+" .li1").hasClass("on1") ){ $("#"+name+" .li1").first().addClass("on1"); } //默认第一个加.on1类
+				index = $("#"+name+" .li1").index( $("#"+name+" .on1") );
+
+				//鼠标离开导航后，回复默认.on1类位置
+				$("#"+name).hover(
+					function(){ if(navST1!=null)clearTimeout(navST1);},
+					function(){ navST1 = setTimeout( function(){ $("#"+name+" .li1").removeClass("on1").eq(index).addClass("on1") },500 ); }
+				); 
+
+				if(type=='1'){ li="#"+name+" .li1"; }
+				if( appendItem!='#'){ //插入内容
+				var appendHtml = $(appendItem).html();  $(li).first().append( appendHtml );  $(appendItem).remove(); }
+
+				if(type=='3'){ $("#"+name+" .on1").find("ul").first().show(); }
+
+				$(li).hover(function(){
+					var curItem = $(this);
+					var onNum = (curItem.attr("class").split(" "))[0].replace("li","");
+					$(li).removeClass("on"+onNum); curItem.addClass("on"+onNum);
+					navST = setTimeout(function(){//延时触发
+					
+					if( $("ul:first",curItem).css("display") !="block" ){ $(li+" .ul"+onNum).hide(); 
+						if( effect=='fade') $("ul:first",curItem).fadeIn(t);
+						else $("ul:first",curItem).slideDown(t);
+					};
+					navST = null;
+					},t);
+				}, function(){
+					if(navST!=null)clearTimeout(navST);
+					if(type=='1' || type=='2'){ 
+						if( effect=='fade') $(this).find("ul").first().fadeOut(t); 
+						else $(this).find("ul").first().slideUp(t); 
+					}
+					if (removeOn=='true') {  $(this).removeClass("on1"); }
+					},t); //end hover
+			});
+			</script>
+    </div>
+</div>
+</div>
+
+
+        <!-- Header E -->
+
+        <!-- banner S -->
+        <div class="banner">
+            <div class="bd">
+  <ul>
+    <li class="li1 first"><img src="/UploadFiles/UploadADPic/201801171808108019.jpg" alt="banner2"></li>
+    <li class="li2 last"><img src="/UploadFiles/UploadADPic/201801171805205498.jpg" alt="首页大图"></li>
+  </ul>
+</div>
+<div class="hd">
+  <ul>
+    <li>1</li>
+    <li>2</li>
+  </ul>
+</div>
+        </div>
+        <script type="text/javascript">
+        jQuery(".banner").slide({mainCell:".bd ul",effect:"fold",autoPlay:true});
+        </script>
+        <!-- banner E -->
+        
+        <!-- content S -->
+        <div id="content">
+                 <div id="mainContent1">
+                <!-- 新闻快讯 S -->
+                <div class="focusNews">
+                    <div class="iHd">
+                        <h3><a href="/Category_64/Index.aspx" title="" target="_self">新闻快讯</a></h3>
+                        <a href="/Category_64/Index.aspx" class="more">更多&gt;&gt;</a>
+                    </div>
+                    <div class="iBd">
+                        <div class="focusBox">
+                            
+            <div class="bd">
+  <ul>
+    <li>
+      <div class="pic"><a href="/Item/635.aspx" target="_blank"><img src="/UploadFiles/xxxw/2018/5/201805221804399832_380_285.JPG"></a></div>
+      <div class="con">
+        <div class="title"><a href="/Item/635.aspx" target="_blank">广州市协和中学2017学年第二学期 教…</a></div>
+        <div class="bg"></div>
+      </div>
+    </li>
+    <li>
+      <div class="pic"><a href="/Item/634.aspx" target="_blank"><img src="/UploadFiles/xxxw/2018/5/201805181939556549_380_285.JPG"></a></div>
+      <div class="con">
+        <div class="title"><a href="/Item/634.aspx" target="_blank">广州市协和中学关于2018年高中体育特…</a></div>
+        <div class="bg"></div>
+      </div>
+    </li>
+    <li>
+      <div class="pic"><a href="/Item/631.aspx" target="_blank"><img src="/UploadFiles/xxxw/2018/5/201805081740301421_380_285.jpg"></a></div>
+      <div class="con">
+        <div class="title"><a href="/Item/631.aspx" target="_blank">广州市协和中学开放日公告</a></div>
+        <div class="bg"></div>
+      </div>
+    </li>
+    <li>
+      <div class="pic"><a href="/Item/601.aspx" target="_blank"><img src="/UploadFiles/xxxw/2018/4/201804261356322808_380_285.jpg"></a></div>
+      <div class="con">
+        <div class="title"><a href="/Item/601.aspx" target="_blank">宏施教化兮复增初中，协和中学初中部…</a></div>
+        <div class="bg"></div>
+      </div>
+    </li>
+    <li>
+      <div class="pic"><a href="/Item/611.aspx" target="_blank"><img src="/UploadFiles/xxxw/2018/4/201804261743359205_380_285.jpg"></a></div>
+      <div class="con">
+        <div class="title"><a href="/Item/611.aspx" target="_blank">校友喜相聚 同谋新发展</a></div>
+        <div class="bg"></div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="hd">
+  <ul>
+    <li class="li1"><span>1</span></li>
+    <li class="li2"><span>2</span></li>
+    <li class="li3"><span>3</span></li>
+    <li class="li4"><span>4</span></li>
+    <li class="li5"><span>5</span></li>
+  </ul>
+</div>
+          
+                            <!-- optionalExtend="picTitle" -->
+                        </div>
+                        <script>jQuery(".focusBox").slide({titCell:".hd li",mainCell:".bd ul",interTime:4000,autoPlay:true});</script>
+                        <ul class="topicList1">
+                            
+            <li class="t t1"><div class="con"><div class="title"><a class="tit" href="/Item/635.aspx" target="_blank" title="标题：广州市协和中学2017学年第二学期 教学开放日邀请函&#xD;点击数：64&#xD;发表时间：18年05月22日">广州市协和中学2017学年第二学期 教学开…</a></div><div class="intro">尊敬的兄弟学校、家长和亲爱的广大考生：        为加强教育教学工作的合作与交流，提升课堂教学质量，促进共同…<a class="more" href="/Item/635.aspx" target="_blank">[详细]
+										</a></div></div></li><li class="n"><div class="title"><span class="date">05-18</span><a class="tit" href="/Item/634.aspx" target="_blank" title="标题：广州市协和中学关于2018年高中体育特长生通过专业测试考生名单公示&#xD;点击数：88&#xD;发表时间：18年05月18日">广州市协和中学关于2018年高中体育特长生通过专业测…</a></div></li><li class="n"><div class="title"><span class="date">05-18</span><a class="tit" href="/Item/633.aspx" target="_blank" title="标题：广州市协和中学关于2018年高中体育特长生通过专业测试考生名单公示&#xD;点击数：66&#xD;发表时间：18年05月18日">广州市协和中学关于2018年高中体育特长生通过专业测…</a></div></li><li class="n"><div class="title"><span class="date">05-10</span><a class="tit" href="/Item/632.aspx" target="_blank" title="标题：2018年广州市协和中学招收初中体育特长生拟录取名单公示&#xD;点击数：137&#xD;发表时间：18年05月10日">2018年广州市协和中学招收初中体育特长生拟录取名单…</a></div></li><li class="n last"><div class="title"><span class="date">05-08</span><a class="tit" href="/Item/631.aspx" target="_blank" title="标题：广州市协和中学开放日公告&#xD;点击数：357&#xD;发表时间：18年05月08日">广州市协和中学开放日公告</a></div></li>
+          
+                        </ul>
+                    </div>
+                </div>
+                <!-- 新闻快讯 E -->
+
+
+                <!-- 快速导航 S -->
+
+                    <div class="sideBox1">
+                    <div class="hd">
+                        <h3>快速导航</h3>
+                        </div>
+                  
+                  <div class="bd">
+                    <ul class="bianmin_dh">
+                      <li class="bmbtn1"><a href="http://www.gzxhhs.edu.cn/Category_62/Index.aspx" target="_blank"><em class="icon"></em>协和党建</a></li>
+                      <li class="bmbtn2"><a href="http://mail.gzxhhs.edu.cn" target="_blank"><em class="icon"></em>常用电话</a></li>
+                      <li class="bmbtn3"><a href="http://oa.gzxhhs.edu.cn" target="_blank"><em class="icon"></em>内部办公</a></li>
+                      <li class="bmbtn4"><a href="#" target="_blank"><em class="icon"></em>微校园</a></li>
+                    </ul>
+
+                  </div>
+
+                </div>
+
+                <!-- 快速导航 E -->
+
+</div>       
+
+            <div id="mainContent1">
+                <!-- 教学教研 S -->
+                <div class="sideBox2">
+                    <div class="hd">
+                        <h3 id="LMicon1"><a href="/Category_59/Index.aspx" title="" target="_self">教学教研</a></h3>
+                        <a href="/Category_59/Index.aspx" class="more">更多&gt;&gt;</a>
+                    </div>
+                    <div class="bd">
+                        <ul class="topicList topicHasPic">
+                            
+            <li class="t t1"><div class="pic"><a title="紧跟国际教育先进趋势，协和中学物理、历史科“STEM”项目开题" href="/Item/604.aspx" target="_blank"><img src="/UploadFiles/jxjy/2018/4/201804261401242185_130_97.jpg"></a></div><div class="con"><div class="title"><a class="tit" href="/Item/604.aspx" target="_blank" title="标题：紧跟国际教育先进趋势，协和中学物理、历史科“STEM”项目开题&#xD;点击数：139&#xD;发表时间：18年03月26日">紧跟国际教育先进趋势，协和中…</a></div><div class="intro"> “为未知而教，为未来而学"，是 STEM（科学，技术，工程，数学）教育的响亮口号。STEM教育即…<a class="more" href="/Item/604.aspx" target="_blank">[详细]
+										</a></div></div></li><li class="n"><div class="title"><span class="date">03-19</span><a class="tit" href="/Item/605.aspx" target="_blank" title="标题：协和与华师附中申报的“财经素养教育实践课题”开题啦！&#xD;点击数：103&#xD;发表时间：18年03月19日">协和与华师附中申报的“财经素养教育实践课题”开题…</a></div></li><li class="n"><div class="title"><span class="date">04-01</span><a class="tit" href="/Item/254.aspx" target="_blank" title="标题：我校郭永峰主任为越秀小学科学教师作科技研训&#xD;点击数：110&#xD;发表时间：17年04月01日">我校郭永峰主任为越秀小学科学教师作科技研训</a></div></li><li class="n"><div class="title"><span class="date">04-01</span><a class="tit" href="/Item/202.aspx" target="_blank" title="标题：传承百年传统  彰显文化特色&#xD;点击数：117&#xD;发表时间：17年04月01日">传承百年传统  彰显文化特色</a></div></li><li class="n last"><div class="title"><span class="date">10-25</span><a class="tit" href="/Item/217.aspx" target="_blank" title="标题：关于本学期第九周周五下午全市高中(中学理科)教研活动的通知&#xD;点击数：99&#xD;发表时间：16年10月25日">关于本学期第九周周五下午全市高中(中学理科)教研活…</a></div></li>
+          
+                        </ul>
+                    </div>
+                </div>
+                <!-- 教学教研 E -->
+                <!-- 德育园地 S -->
+                <div class="sideBox2" id="jianju"  >
+                    <div class="hd">
+                        <h3 id="LMicon2"><a href="/Category_60/Index.aspx" title="" target="_self">德育园地</a></h3>
+                        <a href="/Category_60/Index.aspx" class="more">更多&gt;&gt;</a>
+                    </div>
+                    <div class="bd">
+                        <ul class="topicList topicHasPic">
+                            
+            <li class="t t1"><div class="pic"><a title="好励志！协和07届学霸型学姐徐诗颖是如何成为学术之星的？！" href="/Item/616.aspx" target="_blank"><img src="/UploadFiles/dyyd/2018/4/201804261755087485_130_97.jpg"></a></div><div class="con"><div class="title"><a class="tit" href="/Item/616.aspx" target="_blank" title="标题：好励志！协和07届学霸型学姐徐诗颖是如何成为学术之星的？！&#xD;点击数：187&#xD;发表时间：17年12月19日">好励志！协和07届学霸型学姐徐…</a></div><div class="intro">徐诗颖个人简介： 徐诗颖，文学院中国现当代文学专业2015级博士研究生，师从刘俊教授，主要研…<a class="more" href="/Item/616.aspx" target="_blank">[详细]
+										</a></div></div></li><li class="n"><div class="title"><span class="date">04-26</span><a class="tit" href="/Item/629.aspx" target="_blank" title="标题：不娇纵不惩罚，一起做正面父母&#xD;点击数：113&#xD;发表时间：18年04月26日">不娇纵不惩罚，一起做正面父母</a></div></li><li class="n"><div class="title"><span class="date">04-26</span><a class="tit" href="/Item/626.aspx" target="_blank" title="标题：激活自信，扬帆起航&#xD;点击数：99&#xD;发表时间：18年04月26日">激活自信，扬帆起航</a></div></li><li class="n"><div class="title"><span class="date">03-26</span><a class="tit" href="/Item/617.aspx" target="_blank" title="标题：协和初中部举行男女生青春期心理健康讲座，为学子撑起青春保护伞&#xD;点击数：105&#xD;发表时间：18年03月26日">协和初中部举行男女生青春期心理健康讲座，为学子撑…</a></div></li><li class="n last"><div class="title"><span class="date">12-05</span><a class="tit" href="/Item/625.aspx" target="_blank" title="标题：班会、级会、故事分享&#xD;点击数：120&#xD;发表时间：17年12月05日">班会、级会、故事分享</a></div></li>
+          
+                        </ul>
+                    </div>
+                </div>
+                <!-- 德育园地 E -->
+                <!-- 民族教育 S -->
+                <div class="sideBox2" id="jianju">
+                    <div class="hd">
+                        <h3 id="LMicon3"><a href="/Category_63/Index.aspx" title="" target="_self">民族教育</a></h3>
+                        <a href="/Category_63/Index.aspx" class="more">更多&gt;&gt;</a>
+                    </div>
+                    <div class="bd">
+                        <ul class="topicList topicHasPic">
+                            
+            <li class="t t1"><div class="pic"><a title="座谈交流新疆班，共同筑起中国梦" href="/Item/607.aspx" target="_blank"><img src="/UploadFiles/mzjy/2018/4/201804261651510315_130_97.jpg"></a></div><div class="con"><div class="title"><a class="tit" href="/Item/607.aspx" target="_blank" title="标题：座谈交流新疆班，共同筑起中国梦&#xD;点击数：121&#xD;发表时间：18年03月10日">座谈交流新疆班，共同筑起中国梦</a></div><div class="intro"> 为了更好地了解和开展对广州市内地新疆班的教育管理服务工作，提升内地新疆班教育管理服务水…<a class="more" href="/Item/607.aspx" target="_blank">[详细]
+										</a></div></div></li><li class="n last"><div class="title"><span class="date">03-01</span><a class="tit" href="/Item/608.aspx" target="_blank" title="标题：春节慰问暖人心！市教育局领导莅临协和中学看望新疆班学生&#xD;点击数：116&#xD;发表时间：18年03月01日">春节慰问暖人心！市教育局领导莅临协和中学看望新疆…</a></div></li>
+          
+                        </ul>
+                    </div>
+                </div>
+                <!-- 民族教育 E -->
+                
+            </div>
+
+            <!-- 校园美景 S -->
+            <div class="clearbox"></div>
+            <div class="box1" id="hj">
+                <div class="hd">
+                    <h3><a href="/Category_68/Index.aspx" title="" target="_self">校园美景</a></h3>
+                    <a href="/Category_68/Index.aspx" class="more">更多&gt;&gt;</a>
+                </div>
+                <div class="bd">
+                    <ul class="picList">
+                        
+                        <li class="noData">暂无资料</li>
+                    
+                    </ul>
+                </div>
+            </div>
+            <script type="text/javascript">
+            jQuery("#hj").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:5,interTime:50,trigger:"click"});
+            </script>
+            <!-- 校园美景 E -->
+    
+        </div>
+        <!-- content E -->
+    
+        <!-- Footer S -->
+        
+<div id="footer">
+  <div class="copyRight">
+    <a href="javascript:SetHome('http://gzxhzx.gz.idc800.net:81')">设为首页</a>|
+<a href="#" onclick="AddFavorite('http://gzxhzx.gz.idc800.net:81','广州市协和中学')">加入收藏</a>|
+<a href="/user/default.aspx">校内登录</a>|
+<a href="/ZXAdmin/Index.aspx">管理入口</a><br/>
+COPYRIGHT © 2010 广州协和中学 ALL RIGHTS RESERVED.<br/>
+地址：广州市西增路18号 邮编：510160 电话：(020)26282512 传真：(020)26282512 电邮：xhhsweb@21cn.com<br/>
+粤ICP备15098847号   技术支持：动易软件
+  </div>
+</div>
+<script type="text/javascript">
+  $('.popBox').each(function() {
+      var $target = $($(this).attr('code'));
+      if ( !$target.length ) {
+          return false;
+      }
+
+      $(this).hover(function(){
+          $target.css({
+              left: $(this).offset().left - $target.outerWidth() -120,
+              top: $(this).offset().top + $(this).height()
+          });
+          $target.fadeIn();
+      }, function() {
+          $target.fadeOut();
+      });
+      
+  });
+</script>
+
+        <!-- Footer E -->
+    </div>
+    <!-- wrap E -->
+    
+</body>
+</html>

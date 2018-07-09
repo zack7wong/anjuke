@@ -1,0 +1,751 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="广西交通职业技术学院,交通学院,土木,汽车,管理,交通信息,信息,外语,招生就业,中加合作,BCIT" />
+<title>广西交通职业技术学院</title>
+<link rel='icon' href='../images/Logo.ico ' type='image/x-ico' />
+
+<link type="text/css" href="../css/index.css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/lhgdialog/_doc/prettify/prettify.js"></script>
+<script type="text/javascript" src="../js/lhgdialog/_demo/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/lhgdialog/_demo/lhgdialog.min.js"></script>
+<script type="text/javascript" src="../js/lhgdialog/_demo/demo.js"></script>
+<script type="text/javascript">
+  function menuFix() { 
+	var sfEls = document.getElementById("menu_nav").getElementsByTagName("li"); 
+	for (var i=0; i<sfEls.length; i++) { 
+	  sfEls[i].onmouseover=function() { 
+		this.className+=(this.className.length>0?"": "") +"sfhover"; 
+	  } 
+	  sfEls[i].onMouseDown=function() { 
+		this.className+=(this.className.length>0?"": "") +"sfhover"; 
+	  } 
+	  sfEls[i].onMouseUp=function() { 
+		this.className+=(this.className.length>0?"": "") +"sfhover"; 
+	  } 
+	  sfEls[i].onmouseout=function() { 
+		 this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"), ""); 
+	  } 
+	} 
+  } 
+  window.onload=menuFix; //导航菜单
+  
+  function showMenu(id){
+	  var idtabindex=id.tabIndex;
+	  if(idtabindex==1){
+		  $("#News1").show();
+		  $("#News2").hide();
+		  $("#News3").hide();
+		    $("#More1").show();
+		  $("#More2").hide();
+		   $("#More3").hide();
+		 }
+else if(idtabindex==2)  {
+		  $("#News1").hide();
+		  $("#News2").show();
+		  	  $("#News3").hide();
+		   $("#More1").hide();
+		  $("#More2").show();
+		   $("#More3").hide();
+		 }
+		 else{
+			  $("#News1").hide();
+		  $("#News2").hide();
+		  	  $("#News3").show();
+		   $("#More1").hide();
+		  $("#More2").hide();
+		   $("#More3").show(); 
+		 }
+		
+	  
+	  }
+</script>
+</head>
+
+<body>
+<div id="main" >
+  <div id="header"></div>
+  <!--网站头部-->
+  <div id="menu"><!--S 导航菜单-->
+    <div id="menu_l"></div>
+    <!--导航菜单左侧-->
+    <div id="menu_r"><!--S 导航菜单右侧-->
+       <ul id="menu_nav">
+            <li><a href="index.php">学院首页</a>
+</li>   <li><a href="List.php?NewCloID=gIXPL5NimAp7iGDetuCLCwGXJZYDYHGXJZYDYH">学院概况</a>
+</li>   <li><a href="List.php?NewCloID=jJInH48n96uGXJZYJHwNO91h9wWQGXJZYDYHGXJZYDYH">管理机构</a>
+</li>   <li><a href="List.php?NewCloID=JTqoUkJ1aZIVHWlElxjabQGXJZYDYHGXJZYDYH">教学系部</a>
+<ul><li><a href='../web_LQ/index.php' target=_blank>路桥工程系</a></li><li><a href='../web_QC/index.php' target=_blank>汽车工程系</a></li><li><a href='../web_GL/index.php' target=_blank>管理工程系</a></li><li><a href='../web_XX/index.php' target=_blank>交通信息工程系</a></li><li><a href='../web_JZ/index.php' target=_blank>建筑工程系</a></li><li><a href='../web_HH/index.php' target=_blank>航海工程系</a></li><li><a href='Content.php?ID=YD0yn3ayDbzGWgRu2EeZTAGXJZYDYHGXJZYDYH' target=_blank>基础教学部</a></li><li><a href='Content.php?ID=eSKGXJZYXG2SQFjYFeGbDAhPURQwGXJZYDYHGXJZYDYH' target=_blank>社会科学部</a></li></ul></li>   <li><a href="">招生就业</a>
+<ul><li><a href='../web_ZSJY/index.php' target=_blank>招生网</a></li><li><a href='../web_JY/index.php' target=_blank>就业网</a></li></ul></li>   <li><a href="../web_JJ/index.php">纪检监察</a>
+</li>   <li><a href="../web_JXJYB/">继续教育</a>
+</li>   <li><a href="../web_HQ/index.php">后勤服务</a>
+</li>   <li><a href="http://book.gxjzy.com/">图书馆</a>
+</li>   <li><a href="javascript:OpenWin();">领导信箱</a>
+        </ul>
+      
+<link href="../js/lhgdialog/_doc/prettify/prettify.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="../js/lhgdialog/_doc/prettify/prettify.js"></script>
+<script type="text/javascript" src="../js/lhgdialog/_demo/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/lhgdialog/_demo/lhgdialog.min.js"></script>
+<script type="text/javascript" src="../js/lhgdialog/_demo/demo.js"></script>
+<script>
+function showIsReply($item){
+	var value=$item.value;
+	if(value==1){
+	//document.getElementById('showinfo').style.display="block";
+	$("#showinfo").show();
+	}
+	else{
+	//	document.getElementById('showinfo').style.display="none";
+		$("#showinfo").hide();
+		}
+	}
+</script>
+<script type="text/javascript">
+	var DataCount = 0;
+	var OpenWinObj;
+	var TempHtml;
+	var IsShow = false;
+	//设置为同步
+	$.ajaxSetup({ async: false });
+	function OpenWin(){
+		if(IsShow == false){
+			$.post('SubmitContent.php?view=getcount', function (data, status) {
+				if (status == "success") 
+				DataCount = parseInt(data);
+				
+				}
+				);
+			
+	TempHtml ='<div style="width:539px;height:210px; margin:5px;color:#277ab9;font-family:"黑体";">';
+			TempHtml += '<div style=" padding-left:10px; font-size:18px; font-weight:bold; margin:10px; text-align:center;">意见与建议</div>';
+			TempHtml += '<textarea id="TetareContent" style="width:505px; height:120px; margin-left:10px; overflow:auto; font-size:16px; padding:5px;" onkeyup="textCounter(500)" wrap="virtual"></textarea>';
+			TempHtml += '<div style="text-align:right; margin-top:10px; margin-right:20px; margin-left:0px;">';
+			TempHtml += '<table width="100%" border="0" cellspacing="-1" cellpadding="-1">';
+			TempHtml += '<tr>';
+			TempHtml += '<td width="10%"><span id="maxlimitlable" style="margin-left:20px;">1000/1000</span></td>';
+			TempHtml += '<td width="50%" align="left"><span id="lable" style="margin-left:20px;"> 是否需要回复 :   是<input  name="IsReply" type="radio" onclick="showIsReply(this)"  value="1" />否<input  name="IsReply" type="radio"  value="0" onclick="showIsReply(this)"  /></span></td>';
+			TempHtml += '<td width="40%">目前已有'+DataCount+'人留言</td>';
+			TempHtml += '</tr>';
+			TempHtml += '</table>';
+			TempHtml += '<table width="100%" border="0" cellspacing="-1" cellpadding="-1" height="18">';
+			TempHtml += '<tr id="showinfo" >';
+			TempHtml += '<td width="10%" height="18" ></td>';
+			TempHtml += '<td  width="100" height="18"  align="left">电话：<input id="Phone" type="text"  class="Newinput" /></td>';
+				TempHtml += '<td  width="100" height="18"  align="left">邮箱：<input id="Email" type="text"  class="Newinput"  /></td>';
+			TempHtml += '</tr>';
+			TempHtml += '</table>';
+			TempHtml += '</div>';
+			TempHtml += '</div>';
+			OpenWinObj=$.dialog({
+				title:'学院领导信箱',
+				//lock: true,遮罩
+				content: TempHtml,
+				id: 'SubmitContentWin',
+				max:false,
+				min:false,
+				fixed: true,
+				ok: function () {
+					/* 这里要注意多层锁屏一定要加parent参数 */
+					//$.dialog({content: '再来一个锁屏', lock: true, parent:this});
+					//post方法,获得数据
+					SubmitContent();
+					IsShow = false			
+					return false;
+				},
+				cancel: function () {
+					IsShow = false;
+				}
+			});
+			IsShow = true;
+			TetareContent.focus();
+			$("#showinfo").hide();	
+		}
+		else return;
+		
+	}
+
+
+	var IsSubmitContent = true;
+	var OldContent='';
+	function SubmitContent(){
+	var strContent = trim(TetareContent.value);
+	   var IsReply=$('input:radio[name="IsReply"]:checked').val();  
+            var strtemp="";
+
+            if(IsReply==null){ 
+                alert("请选择是否需要回复!"); 
+				strtemp+="&IsReply="+IsReply;
+                return false; 
+            } 
+			
+			else{
+					
+				var Phone= document.getElementById('Phone').value;
+				var Email= document.getElementById('Email').value;
+				strtemp+="&IsReply="+IsReply+"&Phone="+Phone+"&Email="+Email;
+				
+			
+				}
+
+
+	 	if(IsSubmitContent == false) return;
+		if(strContent==""||typeof(strContent)=="undefined") { 
+			lable.innerHTML = "内容不能为！";
+			return;
+		}
+		if(OldContent==strContent){
+			lable.innerHTML = "您已经提交过相同的内容了！";
+			return;
+		}
+		var pattern=/[`~!@#\$%\^\&\*\(\)_\+<>\?:"\{\},\.\\\/;'\[\]]/im;      
+		if(pattern.test(strContent)){    
+			lable.innerHTML = "提交失败，内容中包含非法字符！";      
+			return;         
+		}         
+		//alert(strContent);
+		//post方法,获得数据
+		$.post(
+			'SubmitContent.php?view=submitcontent&Content='+strContent+strtemp, function (data, status) {//Sys_FieldInfo
+				if (status == "success") { 
+				 if(data=="1") {
+					lable.innerHTML = "提交成功！";
+					OldContent=strContent;
+					//btnOk.value = "30秒后解锁";
+					//IsSubmitContent = false;
+					//Timevalue(60);
+					//$.dialog.alert('提交成功！',icon: 'success.gif',title:'提示');
+					$.dialog({
+						time: 3,
+						title:'提示',
+						icon: 'success.gif',
+						content: '提交成功',
+						cancelVal: '确定',
+    					cancel: true /*为true等价于function(){}*/
+
+					});
+					OpenWinObj.close();	
+				 }
+				 else lable.innerHTML = "提交失败！";
+				}
+				else  lable.innerHTML = "提交失败！";
+		});
+	
+	}
+	function trim(str){
+		str = str.replace(/^ +/,'');
+		str = str.replace(/ +$/,'');
+		var reg=new RegExp("--","g"); //创建正则RegExp对象      
+		var newstr=str.replace(reg,"");   
+		return newstr;
+	} 
+	var Timei=0;
+	function Timevalue(s){//s为停止的时间
+		if ( Timei++<s){
+			var TextValue="秒后解锁";
+			btnOk.value = (s-Timei)+TextValue;
+			setTimeout("Timevalue("+s+");",1000); 
+		}
+		else{
+			//延时S秒后执行的语句
+			btnOk.value = "提 交";
+			IsSubmitContent = true;
+		}
+	}
+	function textCounter(maxlimit) { 
+		if (TetareContent.value.length > maxlimit){ 
+			TetareContent.value = TetareContent.value.substring(0, maxlimit); 
+		}else{ 
+			maxlimitlable.innerHTML = (maxlimit - TetareContent.value.length)+"/"+maxlimit; 
+		} 
+		//alert(TetareContent.value.length);
+	}
+
+</script>
+<!--<div id="ColumnDiv">
+	<div class="ColumnItem" title="点击打开留言簿进行留言" onClick="OpenWin()">
+		<img align="AbsMiddle" src="images/tubiao5.png" />
+		<span id="TitleText">党的群众路线实践教育活动意见留言簿</span>
+		<span id="TitleBtn">点击进入</span>
+	</div>
+</div>-->
+    </div>
+    <!--E 导航菜单右侧--> 
+  </div>
+  <!--E 导航菜单-->
+  <div id="linkMenu">
+    <div id=time><strong  style=" color: #F00; ">
+      2018年05月29日&nbsp;&nbsp;星期二</strong></div>
+    <div id=linkMenuC>
+<img src="../images/tubiao.gif"><a href="../web_YS/index.php">广西交通运输职业教育教学指导委员会</a><img src="../images/tubiao.gif"><a href="../GXJTYSZY/index.php">广西交通运输职业教育集团</a> <img src="../images/tubiao.gif"><a href="../web_DKBF/index.php">职业院校对口支援项目</a>
+<!--<img src="../images/tubiao.gif"><a href="../web_DKBF/index.php" target="_blank">职业院校对口支援项目</a>
+<img src="../images/tubiao.gif"><a href="../web_YSZT/index.php" target="_blank">2014-2015年度广西交通职业技术学院示范特色专业及实训基地建设立项项目验收专题网</a>-->
+</div>
+
+  </div>
+  <div id="linkMenu">
+   
+    <div id=linkMenuC style="width:1000px;"> <img src="../images/tubiao.gif"><a href="#">全国交通职业教育示范性院校</a> <img src="../images/tubiao.gif">&nbsp;<a href="#">广西示范性高等职业院校</a>&nbsp; <img src="../images/tubiao.gif">&nbsp;<a href="#">广西特色高等学校</a><img src="../images/tubiao.gif"><a href="#">国家现代学徒制试点单位</a><img src="../images/tubiao.gif">&nbsp;<a href="#">广西高等教育综合改革首批试点高校</a> </div>
+
+  </div>
+
+  <div id="linkMenuLine"></div>
+<!--
+<div align="center" style="width:1003px;height:40px;	
+	margin-left:auto;
+	margin-right:auto;
+	font-size:14px;
+	font-weight:bold;background:red;	">
+
+<a style="text-decoration:none; font-size:28px; color:#FF0;" href="#">新时代  新征程  贯彻十九大 创造新业绩</a></div>
+
+
+-->
+<a href="#">
+<div align="center" style="width:1003px;height:60px;	
+	margin-left:auto;
+	margin-right:auto;
+	font-size:14px;
+	font-weight:bold;
+	background:url(../images/20171215093143.jpg);	">
+</div>
+</a>
+
+  <!--线条-->
+  <div id="content"><!--S 中间区域-->
+    <div id="news"><!--S 新闻模块-->
+      <div id="news_top">
+        <ul>
+          <li><a href="#" onclick="showMenu(this)" tabindex="1" >学院新闻</a></li>
+          <li><a href="#" onclick="showMenu(this)" tabindex="2">系部新闻</a></li>
+		   <li><a href="#" onclick="showMenu(this)" tabindex="3">媒体关注</a></li>
+        </ul>
+        <span id="More1" class="rightspan" ><a href="List.php?NewCloID=GXJZYXGHGXJZYXGzUTbnysdBN52W0ziYCwGXJZYDYHGXJZYDYH" >MORE</a></span> <span id="More2" class="rightspan" style="display:none;" ><a href="List.php?NewCloID=chwwqqubfTNc9DvRQOgjkQGXJZYDYHGXJZYDYH" >MORE</a></span> <span id="More3" class="rightspan" style="display:none;" ><a href="List.php?NewCloID=ZQnWtsGXJZYXGLbhdF2W5JqaTxxgGXJZYDYHGXJZYDYH" >MORE</a></span> </div>
+      <!--新闻模块头部-->
+      <div id="news_content"><!--S 新闻模块内容-->
+        <div id="news_content_l">
+          <iframe frameborder="0" width="432" height="270" src="PicFlash.php" scrolling="no"></iframe>
+        </div>
+        <!-- 新闻模块-闪图-->
+        <div id="news_content_r"><!--S 新闻模块内容-列表-->
+          
+            
+            <ul id="News1">
+    <li><a href="Content.php?ID=B0sZDTt29xir7av4tVGXJZYXGGXJZYJHIgGXJZYDYHGXJZYDYH" title="大兴调查研究之风  写好交院发展“奋进之笔”——学院党委书记温宗胤率队赴四川院校开展调研" target="_blank"><span class="span_l">大兴调查研究之风  写好交院发展“奋进之笔”——学院党委</span><span class="span_r">[2018-05-23]</span>
+  </a></li>
+    <li><a href="Content.php?ID=JvGXJZYXGO9VUGjNGXJZYJH6pjFzjkggpwGXJZYDYHGXJZYDYH" title="【新华社】习近平：在纪念马克思诞辰200周年大会上的讲话" target="_blank"><span class="span_l">【新华社】习近平：在纪念马克思诞辰200周年大会上的讲话</span><span class="span_r">[2018-05-07]</span>
+  </a></li>
+    <li><a href="Content.php?ID=VmLFjxWcxdXg3UNIsheBigGXJZYDYHGXJZYDYH" title="【新华社】（受权发布）习近平：在北京大学师生座谈会上的讲话" target="_blank"><span class="span_l">【新华社】（受权发布）习近平：在北京大学师生座谈会上的讲</span><span class="span_r">[2018-05-03]</span>
+  </a></li>
+    <li><a href="Content.php?ID=KsTBTPmvDA4zO95g2FozGAGXJZYDYHGXJZYDYH" title="雨中竞速 赛场显威——中国-东盟卡丁赛车邀请赛·洛克中国卡丁车大奖赛南宁站赛事活动在我院圆满落幕" target="_blank"><span class="span_l">雨中竞速 赛场显威——中国-东盟卡丁赛车邀请赛·洛克中国</span><span class="span_r">[2018-05-28]</span>
+  </a></li>
+    <li><a href="Content.php?ID=rX5GXJZYXGi5Xtz9xYT2duaFjWCAGXJZYDYHGXJZYDYH" title="学院召开60周年校庆工作推进会" target="_blank"><span class="span_l">学院召开60周年校庆工作推进会</span><span class="span_r">[2018-05-28]</span>
+  </a></li>
+    <li><a href="Content.php?ID=bKuaR0pY53QXfNumIiWWawGXJZYDYHGXJZYDYH" title="学院承办2018年兴宁区体育旅游休闲大会——“中国-东盟卡丁赛车邀请赛暨洛克卡丁车中国大奖赛南宁站”赛事活动" target="_blank"><span class="span_l">学院承办2018年兴宁区体育旅游休闲大会——“中国-东盟</span><span class="span_r">[2018-05-26]</span>
+  </a></li>
+    <li><a href="Content.php?ID=NoNiZ4vpcleUQokXoIVxwwGXJZYDYHGXJZYDYH" title="校友举行“动员起来迎接校庆六十周年” 献礼筹备活动" target="_blank"><span class="span_l">校友举行“动员起来迎接校庆六十周年” 献礼筹备活动</span><span class="span_r">[2018-05-25]</span>
+  </a></li>
+    <li><a href="Content.php?ID=cdOfbqXEJdpwgZGXyrx7ogGXJZYDYHGXJZYDYH" title="喜迎校庆  学院发布60周年校庆标识" target="_blank"><span class="span_l">喜迎校庆  学院发布60周年校庆标识</span><span class="span_r">[2018-05-25]</span>
+  </a></li>
+    <li><a href="Content.php?ID=877wQhfqSQn1cXv09TTVQAGXJZYDYHGXJZYDYH" title="我院学子喜获2018年全国职业院校技能大赛（高职组）电子产品芯片级检测维修与数据恢复赛项三等奖" target="_blank"><span class="span_l">我院学子喜获2018年全国职业院校技能大赛（高职组）电子</span><span class="span_r">[2018-05-24]</span>
+  </a></li>
+    <li><a href="Content.php?ID=0dpjptGXJZYXGxGXJZYJHFwPwNv0wGXJZYXGMuywGXJZYDYHGXJZYDYH" title="我院组织教师参加全国高校思政课2018年版教材使用网络培训" target="_blank"><span class="span_l">我院组织教师参加全国高校思政课2018年版教材使用网络培</span><span class="span_r">[2018-05-23]</span>
+  </a></li>
+    <li><a href="Content.php?ID=wSGXJZYXG4bVhE2zZOkkTSLnQdQAGXJZYDYHGXJZYDYH" title="我院2018年教师职称申报工作正式启动" target="_blank"><span class="span_l">我院2018年教师职称申报工作正式启动</span><span class="span_r">[2018-05-23]</span>
+  </a></li>
+  </ul>
+          
+            
+            <ul id="News2" style="display:none;">
+    <li><a href="Content.php?ID=OGyfyG2mb1MBeeC1OuGXJZYXG46QGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">管理工程系召开2018年安全稳定工作专题会议</span><span class="span_r">[2018-05-24]</span>
+  </a></li>
+    <li><a href="Content.php?ID=uEXGXJZYXGQaavfAjAGaackk51VwGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">路桥工程系召开2018年廉政风险防控研讨会</span><span class="span_r">[2018-05-24]</span>
+  </a></li>
+    <li><a href="Content.php?ID=2c7mRc0S2BHtsqxVz3mANAGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">航海工程系党支部组织收看《广西三起县级扶贫办主任严重违纪</span><span class="span_r">[2018-05-22]</span>
+  </a></li>
+    <li><a href="Content.php?ID=QwpJb8Kyt4kh4P09GuhXNgGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">交通信息工程系第十四次团员代表大会暨学生代表大会圆满落幕</span><span class="span_r">[2018-05-22]</span>
+  </a></li>
+    <li><a href="Content.php?ID=T9g3NmXpxosb4cqyURfq8wGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">路桥工程系开展爱国主义教育活动  </span><span class="span_r">[2018-05-17]</span>
+  </a></li>
+    <li><a href="Content.php?ID=7Llp866XlrG2jOXKcrmIYQGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">路桥工程系易班工作站到广西中医药大学赛恩斯新医药学院进行</span><span class="span_r">[2018-05-16]</span>
+  </a></li>
+    <li><a href="Content.php?ID=ge15WcHsioEMah0vdlLDcQGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">后勤保卫处组织召开服务育人工作会议</span><span class="span_r">[2018-05-14]</span>
+  </a></li>
+    <li><a href="Content.php?ID=8piOjNEos6HfPIcriXK9ZgGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">建筑工程系第五次团员代表大会暨学生代表大会顺利召开</span><span class="span_r">[2018-05-14]</span>
+  </a></li>
+    <li><a href="Content.php?ID=KnR3slwDt2hvGXJZYXG8GEloKGXJZYXGbgGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">管理工程系举办“我爱交院”主题演讲比赛   献礼学院六十</span><span class="span_r">[2018-05-11]</span>
+  </a></li>
+    <li><a href="Content.php?ID=mVwOcIhD7xeGl7QjHGXJZYJH1cQgGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">航海工程系开展2018年心理活动系列之“心灵书屋”读书分</span><span class="span_r">[2018-05-11]</span>
+  </a></li>
+    <li><a href="Content.php?ID=MSAm9ff07mXKlDcS4Piv9wGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">2018年长安福特校企合作专场双选会在我院举行</span><span class="span_r">[2018-05-09]</span>
+  </a></li>
+  </ul>
+          
+            
+            <ul id="News3">
+    <li><a href="Content.php?ID=Z02yRgiAqv95U3unyVdwHQGXJZYDYHGXJZYDYH" title="【人民网】扬技能之长 筑“工匠”之梦——广西交通职业技术学院在2017年全国职业院校技能大赛中勇创佳绩" target="_blank"><span class="span_l">【人民网】扬技能之长 筑“工匠”之梦——广西交通职业技术</span><span class="span_r">[2017-09-25]</span>
+  </a></li>
+    <li><a href="Content.php?ID=m4NgBw7xGXJZYJHQ3HwrELsGXJZYXGAk2wGXJZYDYHGXJZYDYH" title="【东兰电视台】东兰电视台播报我院驻村工作队员为贫困群众送技能" target="_blank"><span class="span_l">【东兰电视台】东兰电视台播报我院驻村工作队员为贫困群众送</span><span class="span_r">[2018-04-28]</span>
+  </a></li>
+    <li><a href="Content.php?ID=yun1GXJZYXGe041i6td0G7HmoDHAGXJZYDYHGXJZYDYH" title="【中国教育报】广西交通职业技术学院：构建交通教学工场 提升服务产业能力" target="_blank"><span class="span_l">【中国教育报】广西交通职业技术学院：构建交通教学工场 提</span><span class="span_r">[2018-03-14]</span>
+  </a></li>
+    <li><a href="Content.php?ID=4IDwofGXJZYXGY7rGXJZYJH2aRgiVlmKVQGXJZYDYHGXJZYDYH" title="【广西交通厅网、广西教育厅】潘巍在广西交通职业技术学院2017年领导班子民主生活会上指出 全面深化教学改革 切实落实整改措施" target="_blank"><span class="span_l">【广西交通厅网、广西教育厅】潘巍在广西交通职业技术学院2</span><span class="span_r">[2018-03-14]</span>
+  </a></li>
+    <li><a href="Content.php?ID=QuivYoK7lPC4qIKBpizGXJZYXG6AGXJZYDYHGXJZYDYH" title="【广西交通厅、广西高校思政在线】学院采取“5322”方式深入学习十九大精神" target="_blank"><span class="span_l">【广西交通厅、广西高校思政在线】学院采取“5322”方式</span><span class="span_r">[2018-03-14]</span>
+  </a></li>
+    <li><a href="Content.php?ID=I90hPZqZXawJAsLjgbiotAGXJZYDYHGXJZYDYH" title="【广西高校思政在线】学院团队参加技能王挑战赛获最佳奖" target="_blank"><span class="span_l">【广西高校思政在线】学院团队参加技能王挑战赛获最佳奖</span><span class="span_r">[2017-12-30]</span>
+  </a></li>
+    <li><a href="Content.php?ID=H6a3HCWkrxGXJZYJHPSRan3zi82gGXJZYDYHGXJZYDYH" title="【广西教育厅】广西交通职业技术学院领导带头下基层上讲台宣讲党的十九大精神" target="_blank"><span class="span_l">【广西教育厅】广西交通职业技术学院领导带头下基层上讲台宣</span><span class="span_r">[2017-11-13]</span>
+  </a></li>
+    <li><a href="Content.php?ID=pXLtHpmyih9f9LKpCvMshQGXJZYDYHGXJZYDYH" title="【广西教育厅】广西交通职业技术学院举办学习党的十九大精神暨党务实务培训班" target="_blank"><span class="span_l">【广西教育厅】广西交通职业技术学院举办学习党的十九大精神</span><span class="span_r">[2017-11-02]</span>
+  </a></li>
+    <li><a href="Content.php?ID=GXJZYJHZsLiX08V7Wkioxl27ikWQGXJZYDYHGXJZYDYH" title="【广西高校思政在线】广西交通职业技术学院举办庆祝十九大胜利召开主题晚会" target="_blank"><span class="span_l">【广西高校思政在线】广西交通职业技术学院举办庆祝十九大胜</span><span class="span_r">[2017-11-02]</span>
+  </a></li>
+    <li><a href="Content.php?ID=r0J0IXl286IrBVOr7YgOHQGXJZYDYHGXJZYDYH" title="【广西交通厅、广西交通报】广西交通职业技术学院多举措迎十九大" target="_blank"><span class="span_l">【广西交通厅、广西交通报】广西交通职业技术学院多举措迎十</span><span class="span_r">[2017-11-02]</span>
+  </a></li>
+    <li><a href="Content.php?ID=cc9iSVAMVliDyPDI41MOywGXJZYDYHGXJZYDYH" title="【广西高校思政在线】学习勤廉榜样 传播发展正能量" target="_blank"><span class="span_l">【广西高校思政在线】学习勤廉榜样 传播发展正能量</span><span class="span_r">[2017-10-16]</span>
+  </a></li>
+  </ul>
+        </div>
+        <!--E 新闻模块内容-列表--> 
+      </div>
+      <!--E 新闻模块内容-->
+      <div id="news_bottom"></div>
+      <!--线条--> 
+    </div>
+    <!--E 新闻模块-->
+    <div id="column_list"><!--S 栏目集合-->
+      <div id="column_list_l"><!--S 栏目集合左侧-->
+        <div id="column_list_l_top"><!--S 栏目集合左侧头部-->
+          <div id="column_list_l_top_l"><!--S 栏目集合左侧头部-左侧-->
+             <div id="column_list_l_top_l_t"></div>
+			  <div id="column_list_l_top_l_m"><!--S 登录-->
+              
+              	<div class="DivMTop"></div>
+                <div class="btnDiv"><a href="https://www.gxjzy.com"><div class="btnDivImg">校园网信息平台（教师）</div></a></div>
+                <div class="DivMTop"></div>
+                <div class="btnDiv"><a href="https://www.gxjzy.com"><div class="btnDivImg">校园网信息平台（学生）</div></a></div>
+                <div class="DivMTop"></div>
+                <div class="btnDiv"><a href="http://180.141.89.219:8009/gxjt_web/"><div class="btnDivImg">顶岗实习管理系统</div></a></div>
+                <div class="DivMTop"></div>
+                <div class="btnDiv"><a href="#">校园网信息平台使用说明</a>
+                </div>
+              </div><!--E 登录-->
+			  <div id="column_list_l_top_l_b"></div>
+          </div>
+          <!--E 栏目集合左侧头部-左侧-->
+          <div id="column_list_l_top_c"><!--S 栏目集合左侧头部-中间-->
+            <div id="column_list_l_top_c_t"> <span class="rightsmallspan" ><a href="List.php?NewCloID=or8Yl2phCRDEUeBErZGXJZYJHDPgGXJZYDYHGXJZYDYH" >MORE</a></span></div>
+            <div id="column_list_l_top_c_b"><!--S 公示公告-->
+              
+            
+             <ul>
+    <li><a title="学院 2018年公开招聘工作人员(编外)公告" href="Content.php?ID=tukIDi0Ei186QVVrjcMCDgGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">学院 2018年公开招聘工作人员</span>
+  </a></li>
+    <li><a title="广西交通职业技术学院建校60周年校庆公告" href="Content.php?ID=xrZGx5T7OGXJZYXGV8DaGVj6gv1AGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">广西交通职业技术学院建校60周年</span>
+  </a></li>
+    <li><a title="9#-12#学生公寓楼项目挡土墙及 北面道路项目编制预算招标" href="Content.php?ID=L9vGXJZYXGSNPtoKW7GK25QhJJSQGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">9#-12#学生公寓楼项目挡土墙</span>
+  </a></li>
+    <li><a title="关于广西交通职业技术学院四塘校区 9-12#学生公寓引入纯净直饮水服务的招标公告" href="Content.php?ID=IjtY9LS1ZFBRLtAT4NGXJZYXG3hwGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">关于广西交通职业技术学院四塘校区</span>
+  </a></li>
+    <li><a title="校门及附属设施项目工程检测服务单位采购需求公告" href="Content.php?ID=WNnyH1XBImUAXw6jvn377QGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">校门及附属设施项目工程检测服务单</span>
+  </a></li>
+    <li><a title="2018年普通高校优秀高职高专生选拔升本升入本科学习名单补充公示" href="Content.php?ID=JDbTDluuSIRnzUnFOY5jXgGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">2018年普通高校优秀高职高专生</span>
+  </a></li>
+  </ul>
+            </div>
+            <!--E 公示公告--> 
+          </div>
+          <!--E 栏目集合左侧头部-中间-->
+          <div id="column_list_l_top_r"><!--S 栏目集合左侧头部-右侧-->
+            <div id="column_list_l_top_r_t"> <span class="rightsmallspan" ><a href="List.php?NewCloID=4J0WfwGXJZYJHkfZyNxcDQdSxZkAGXJZYDYHGXJZYDYH" >MORE</a></span></div>
+            <div id="column_list_l_top_r_b"><!--S 校园通知-->
+              
+            
+             <ul>
+    <li><a title="2017年国家网络安全宣传视频" href="Content.php?ID=EjIpDh9GXJZYXGHjOHJGXJZYJHuXf5OqwwGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">2017年国家网络安全宣传视频</span>
+  </a></li>
+    <li><a title="学院专题片" href="Content.php?ID=ODSXun3RmLiR3O47CUZzmQGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">学院专题片</span>
+  </a></li>
+    <li><a title="《参军报国 准备出发》征兵公益宣传片" href="Content.php?ID=8LMlNpiaJGXJZYXGHj87bWtODRjAGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">《参军报国 准备出发》征兵公益宣</span>
+  </a></li>
+    <li><a title="交通信息工程系宣传片" href="Content.php?ID=jbh4WU8YmeHidR7SZ5dGuQGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">交通信息工程系宣传片</span>
+  </a></li>
+    <li><a title="汽车工程系宣传片" href="Content.php?ID=XRSLEADGXJZYJHGlHWyxDwepjAqAGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">汽车工程系宣传片</span>
+  </a></li>
+    <li><a title="路桥教学工场宣传片" href="Content.php?ID=E0rCCR4rVFwwPameZoCZLwGXJZYDYHGXJZYDYH" target="_blank"><span class="span_l">路桥教学工场宣传片</span>
+  </a></li>
+  </ul>
+            </div>
+            <!--E 校园通知--> 
+          </div>
+          <div  style=" margin-left:20px; width:208px; height:187px; float:left;"><!--S 栏目集合右侧-->
+            <div id="column_list_r_t"> <span class="rightsmallspan" ><a href="List.php?NewCloID=3wFTGXJZYJHDkahhgjOspHZY6KBQGXJZYDYHGXJZYDYH" >MORE</a></span></div>
+            <div id="column_list_r_b" style=" height:146px;">
+				<!-- <  include("SpecialNews.php"); ?> -->
+				<a target="_blank" href="../web_SJD/index.php"><div style="width:208px; height:45px; background:url(../images/20171215093155.jpg); margin-top:3px;"></div></a>
+				<a target="_blank" href="../web_LXYZ/index.php"><div style="width:208px; height:45px; background:url(../images/20171215093256.jpg); margin-top:4px;"></div>
+				<a target="_blank" href="../web_FP/index.php"><div style="width:208px; height:45px; background:url(../images/20171215093305.jpg); margin-top:4px;"></div>
+            </div>
+          </div>
+          
+          
+          
+          <!--E 栏目集合左侧头部-右侧-->
+          
+        </div>
+        <!--E 栏目集合左侧头部-->
+        <div id="column_list_l_line"></div>
+        <div id="column_list_l_bottom"><!--S 栏目集合左侧低部-->
+          <div id="column_list_l_bottom_t"> <span class="rightbootspan" ><a href="PhotoList.php?NewCloID=iKUoojG6nTjixhLxriagIgGXJZYDYHGXJZYDYH" >MORE</a></span></div>
+          <div  id="column_list_l_bottom_b"><!--S 图片中心-->
+            <div style=" background:url(../images/xcbk.jpg) no-repeat; width:987px; height:176px; margin-top:5px;">
+<div id="photo-list">
+
+    <ul id="scroll">
+
+              <li> <a  href="PhotoContent.php?ID=USyJrbdJQWvYLSpOU80MRQGXJZYDYHGXJZYDYH" title="全区技能大赛" target="_blank"><img src="../imglist/2018-05/1526878469.thumb.jpg" width="120px" height="100px" alt="全区技能大赛" /><br />全区技能大赛</a></li>
+   
+       
+    <li> <a  href="PhotoContent.php?ID=goybZYGXJZYXGWZEKYl62rc5vCugGXJZYDYHGXJZYDYH" title="全区技能大赛" target="_blank"><img src="../imglist/2018-05/1526872392.thumb.jpg" width="120px" height="100px" alt="全区技能大赛" /><br />全区技能大赛</a></li>
+   
+       
+    <li> <a  href="PhotoContent.php?ID=hdTbESfa12aAjh923lXw0AGXJZYDYHGXJZYDYH" title="全区技能大赛" target="_blank"><img src="../imglist/2018-05/1526871060.thumb.jpg" width="120px" height="100px" alt="全区技能大赛" /><br />全区技能大赛</a></li>
+   
+       
+    <li> <a  href="PhotoContent.php?ID=Uthq4Vpz8aSbLqgis8qI5AGXJZYDYHGXJZYDYH" title="全区技能大赛" target="_blank"><img src="../imglist/2018-05/1526871049.thumb.jpg" width="120px" height="100px" alt="全区技能大赛" /><br />全区技能大赛</a></li>
+   
+       
+    <li> <a  href="PhotoContent.php?ID=xNCRID6dhFogR8pbMYDVMwGXJZYDYHGXJZYDYH" title="全区技能大赛" target="_blank"><img src="../imglist/2018-05/1526871030.thumb.jpg" width="120px" height="100px" alt="全区技能大赛" /><br />全区技能大赛</a></li>
+   
+       
+    <li> <a  href="PhotoContent.php?ID=xQ5Ot5veSPXHwSgjB9eOZAGXJZYDYHGXJZYDYH" title="全区技能大赛" target="_blank"><img src="../imglist/2018-05/1526871014.thumb.JPG" width="120px" height="100px" alt="全区技能大赛" /><br />全区技能大赛</a></li>
+   
+       
+    <li> <a  href="PhotoContent.php?ID=5KMGGXJZYXGeGXJZYJH51uIqiaoFGDggxQGXJZYDYHGXJZYDYH" title="全区技能大赛" target="_blank"><img src="../imglist/2018-05/1526870992.thumb.JPG" width="120px" height="100px" alt="全区技能大赛" /><br />全区技能大赛</a></li>
+   
+       
+    <li> <a  href="PhotoContent.php?ID=SUkrpjZThoRGXJZYXGzeGXJZYJHgqR6fWQGXJZYDYHGXJZYDYH" title="全区技能大赛" target="_blank"><img src="../imglist/2018-05/1526870913.thumb.JPG" width="120px" height="100px" alt="全区技能大赛" /><br />全区技能大赛</a></li>
+   
+       
+    <li> <a  href="PhotoContent.php?ID=WAwrsGXJZYJHpDDGXJZYJHLWVDUYbXPwIQGXJZYDYHGXJZYDYH" title="教学隧道" target="_blank"><img src="../imglist/2018-05/1526870563.thumb.jpg" width="120px" height="100px" alt="教学隧道" /><br />教学隧道</a></li>
+   
+       
+    <li> <a  href="PhotoContent.php?ID=lj6supkLPcxM7aGXJZYXGmTwmBAgGXJZYDYHGXJZYDYH" title="教学工场全貌" target="_blank"><img src="../imglist/2018-05/1526870508.thumb.jpg" width="120px" height="100px" alt="教学工场全貌" /><br />教学工场全貌</a></li>
+   
+       
+    <li> <a  href="PhotoContent.php?ID=7GXJZYXGL0zCuGXJZYJHcvwZcGXJZYXGfF4q6TiAGXJZYDYHGXJZYDYH" title="校园风光" target="_blank"><img src="../imglist/2018-05/1526870481.thumb.jpg" width="120px" height="100px" alt="校园风光" /><br />校园风光</a></li>
+   
+       
+    <li> <a  href="PhotoContent.php?ID=DGXJZYJHjCJGOGXJZYJHiQDSHsJY34UUDQGXJZYDYHGXJZYDYH" title="综合教学楼及附楼远景" target="_blank"><img src="../imglist/2018-05/1526870338.thumb.jpg" width="120px" height="100px" alt="综合教学楼及附楼远景" /><br />综合教学楼及附楼</a></li>
+   
+       
+    <li> <a  href="PhotoContent.php?ID=tEFznhVBS0lwqRGi8Is58QGXJZYDYHGXJZYDYH" title="综合教学楼" target="_blank"><img src="../imglist/2018-05/1526870312.thumb.JPG" width="120px" height="100px" alt="综合教学楼" /><br />综合教学楼</a></li>
+   
+       
+    <li> <a  href="PhotoContent.php?ID=PAp9yMN1xSVOabHtSH7PnAGXJZYDYHGXJZYDYH" title="校园风光" target="_blank"><img src="../imglist/2018-05/1526870633.thumb.jpg" width="120px" height="100px" alt="校园风光" /><br />校园风光</a></li>
+   
+       
+    <li> <a  href="PhotoContent.php?ID=IJeflLPIRmrGXJZYXGqdePsWVzZwGXJZYDYHGXJZYDYH" title="学院四塘校区大门" target="_blank"><img src="../imglist/2018-05/1526870168.thumb.JPG" width="120px" height="100px" alt="学院四塘校区大门" /><br />学院四塘校区大门</a></li>
+   
+       
+      
+    </ul>
+</div>
+</div>
+<script type="text/javascript">
+var id = function(el) {
+		return document.getElementById(el);
+	},
+	c = id('photo-list');
+if(c) {
+	var	ul = id('scroll'),
+		lis = ul.getElementsByTagName('li'),
+		itemCount = lis.length,
+		width = lis[0].offsetWidth, //获得每个img容器的宽度
+		marquee = function() {
+			c.scrollLeft += 2;
+			if(c.scrollLeft % width <= 1){  //当 c.scrollLeft 和 width 相等时，把第一个img追加到最后面
+				ul.appendChild(ul.getElementsByTagName('li')[0]);
+				c.scrollLeft = 0;
+			};
+		},
+		speed = 60; //数值越大越慢
+
+	ul.style.width = width*itemCount + 'px'; //加载完后设置容器长度
+	
+	var timer = setInterval(marquee, speed);
+	c.onmouseover = function() {
+		clearInterval(timer);
+	};
+	c.onmouseout = function() {
+		timer = setInterval(marquee, speed);
+	};
+};
+</script>
+          </div>
+          <!--E 图片中心--> 
+        </div>
+        <!--E 栏目集合左侧低部--> 
+      </div>
+      <!--E 栏目集合左侧--> 
+    </div>
+    <!--E 栏目集合--> 
+  </div>
+  <!--E 中间区域-->
+  <div id="school_add"><!--S 学院地址-->
+    <div id="school_add_top"></div>
+    <div id="school_add_content"><!--S 学院地址-内容-->
+      <div id="add_yh_text">
+        <div id="add_text_title">园湖校区</div>
+        <div id="add_text_content">广西南宁市</div>
+        <div id="add_text_content">园湖北路12号</div>
+      </div>
+      <div id="add_yh_map"><!--<iframe width="282px" height="127px" frameborder="0" scrolling="no" src="map_yh.html"></iframe>--><img onclick="javascript:window.open('map_yh.html');" width="282px" height="127px" style="border:none; cursor:pointer;" title="点击查看明细" src="../images/yh1.png" /></div>
+      <div id="add_st_text">
+        <div id="add_text_title">四塘校区</div>
+        <div id="add_text_content">广西南宁市兴宁区</div>
+        <div id="add_text_content">三塘镇四塘社区四塘街4号</div>
+      </div>
+      <div id="add_st_map"><!--<iframe width="282px" height="127px" frameborder="0" scrolling="no" src="map_st.html"></iframe>--><img onclick="javascript:window.open('map_st.html');" width="282px" height="127px" style="border:none; cursor:pointer;" title="点击查看明细" src="../images/st1.png" /></div>
+    </div>
+    <!--E 学院地址-内容-->
+    <div id="school_add_bottom"></div>
+  </div>
+  <!--E 学院地址-->
+  <div id="friendlink"><!--S 友情链接-->
+    <script language="javascript" type="text/javascript">
+function load(id){
+	var a=id.value;
+	if(id.value){
+		window.open(id.value);
+		}
+	}
+</script>
+
+ <div>
+        <select onchange="load(this)">
+        <option value="">国内教育</option>
+        <option value="http://www.moe.gov.cn/">国家教育部</option>
+        <option value="http://www.gxedu.gov.cn/">广西教育厅</option>
+        </select>
+        <select onchange="load(this)">
+        <option value="">常用网站</option>
+           <option value="http://jcyk.myclub2.com/">广西思政处</option>
+        
+        </select>
+        <select onchange="load(this)">
+        
+        <option value="">区内高校</option>
+                
+                        
+        <option value="http://www.gxu.edu.cn/">广西大学</option>
+        <option value="http://www.gxnu.edu.cn/default.html">广西师范大学</option>
+          <option value="http://www.ncvt.net/">南宁职业技术学院</option>
+            <option value="http://www.gxzjy.com/">广西职业技术学院</option>
+               <option value="http://www.gxcme.edu.cn/">广西机电职业技术学院</option>
+                    
+                         
+        </select >
+        <select onchange="load(this)">
+        <option value="">广西交通运输</option>
+        <option value="http://www.gxdot.gov.cn/">广西交通运输厅</option>
+        
+        </select>
+      </div>
+  </div>
+  <!--E 友情链接-->
+  <div id="footer"><!--S 页脚-->
+     <div id="footer_content">
+	    <p>Copyright Reserved 2012  广西交通职业技术学院现代教育技术部 | 桂icp备05003597号</p>
+        <p>地址：广西南宁市园湖北路12号 邮编：530023　电话：0771-5626108　传真：0771-5624699</p>
+	  </div><!--	ICP备案代码开始（以后维护此段代码可Ctrl+F查询此段注释）-->
+<div width="%100" align="center">
+备案:45010302000129
+<a id='_gx_baicp' href="http://www.gx.cyberpolice.cn/AlarmInfo/getTishi.do?icon=baicp&checkCode=eb40b4034dd2c3fa93530d7f57276a95" target="_blank" style=" text-decoration: none;display: block;padding-top: 12px; padding-left: 50px; height: 50px;width: 110px;">
+<img src="baicp.gif" alt="广西网警ICP备案" border="0">
+ </a>
+ <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript   src='http://dcs.conac.cn/js/21/000/0000/40961811/CA210000000409618110001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>
+<!--	ICP备案代码结束	-->  </div>
+  <!--E 页脚--> 
+</div>
+</body>
+</html>
+<script type="text/javascript">
+
+(function($){
+	$.fn.adFloat=function(options){
+		return new AdFloat(this,options);
+	}
+	var AdFloat=function(element,options){
+		this.element=$(element);
+		this.options=$.extend({
+			width:100,		//默认的广告的宽
+			height:150,		//默认的广告的高
+			top:0,			//默认的广告的Y坐标
+			left:0,			//默认的广告的X坐标
+			delay:30,		//延迟
+			step:2			//默认的广告每次移动的距离(像素)
+		},options);
+		this.interval=null;
+		this.xPos=this.options.left;
+		this.yPos=this.options.top;
+		this.yon=0;
+		this.xon=0;
+		this.isPause=false;
+		this.init();
+	};
+	AdFloat.prototype={
+		init:function(){
+			var me=this;
+			me.element.css("display","block");
+			me.element.css({position:"absolute",left:me.options.left,top:me.options.top,width:me.options.width,height:me.options.height,overflow:"hidden"})	
+			me.element.hover(function(){clearInterval(me.interval)},function(){me.interval=setInterval(function(){me.changePos();},me.options.delay);});
+			$(document).ready(function(){me.start();});
+		},
+		changePos:function(){
+			var me=this;
+			var clientWidth=$(window).width();
+			var clientHeight=$(window).height();
+			var Hoffset=me.options.height;
+			var Woffset=me.options.width;	
+			me.element.css({left:me.xPos+$(document).scrollLeft(),top:me.yPos+$(document).scrollTop()});
+			if(me.yon){
+				me.yPos=me.yPos+me.options.step;	
+			}else{
+				me.yPos=me.yPos-me.options.step;	
+			}
+			if(me.yPos<0){me.yon=1;me.yPos=0;}
+			if(me.yPos>=(clientHeight-Hoffset)){me.yon=0;me.yPos=(clientHeight-Hoffset);}
+			if(me.xon){
+				me.xPos=me.xPos+me.options.step;	
+			}else{
+				me.xPos=me.xPos-me.options.step;	
+			}
+			if(me.xPos<0){me.xon=1;me.xPos=0;}
+			if(me.xPos>=(clientWidth-Woffset)){me.xon=0;me.xPos=(clientWidth-Woffset);}
+		},
+		start:function(){
+			var me=this;
+			me.element.css("top",me.yPos);
+			me.interval=setInterval(function(){me.changePos();},me.options.delay);	
+		}	
+	}	
+})(jQuery);
+</script>
+<div id="Advsd" style="display:none;">
+<img src="ad2.jpg" width="300" height="300" usemap="#MenuMap"  style="cursor:pointer;"/>
+<map name="MenuMap">
+<area shape="rect" coords="0,0,300,150" href="http://www.gxjzy.com/JZYWEB/Content.php?ID=ffo62UjU06c0Bjx7OYzGXJZYJHPgGXJZYDYHGXJZYDYH" alt="广西交院驾校培训有限公司招聘" title="广西交院驾校培训有限公司招聘" style="cursor:pointer;"/>
+<area shape="rect" coords="0,150,300,300" href="http://www.gxjzy.com/JZYWEB/Content.php?ID=LGXJZYXGFuDUFLIfVRAsYSeetGjgGXJZYDYHGXJZYDYH" alt="广西交院研修教育发展有限公司招聘" title="广西交院研修教育发展有限公司招聘" style="cursor:pointer;"/>     
+</map>
+</div>
+<script type="text/javascript">
+$(function(){
+	  		
+});
+
+</script>

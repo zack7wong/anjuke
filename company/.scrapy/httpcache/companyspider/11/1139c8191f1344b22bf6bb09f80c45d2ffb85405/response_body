@@ -1,0 +1,516 @@
+<html>
+<head>
+<title>山东省聊城东昌中学 >> 首页</title>
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script src="/Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="/JS/prototype.js"></script>
+<script src="/JS/scriptaculous.js"></script>
+<script src="/JS/checklogin.js"></script> 
+<script language='JavaScript' type='text/JavaScript' src='/js/TreeGuide.js'></script>
+<script language='javascript' src='/AD/200912/1.js'></script>
+<link href='/Skin/DefaultSkin.css' rel='stylesheet' type='text/css'> <script language='JavaScript' type='text/JavaScript' src='/js/menu.js'></script>
+<script type='text/javascript' language='JavaScript1.2' src='/js/stm31.js'></script>
+</head>
+
+<script language='JavaScript' type='text/JavaScript'> 
+//树形导航的JS代码
+var expandState = 0;
+function expand(){
+  if(expandState == 0){setPace('master', 0, 10, 10); if(ie){document.menutop.src = '/images/menui.gif'}; expandState = 1;}
+  else{setPace('master', -200, 10, 10); if(ie){document.menutop.src='/images/menuo.gif'}; expandState = 0;}
+}
+document.write("<style type=text/css>#master {LEFT: -200px; POSITION: absolute; TOP: 25px; VISIBILITY: visible; Z-INDEX: 999}</style>")
+document.write("<table id=master width='218' border='0' cellspacing='0' cellpadding='0'><tr><td><img border=0 height=6 src=/images/menutop.gif  width=200></td><td rowspan='2' valign='top'><img id=menu onMouseOver=javascript:expand() border=0 height=70 name=menutop src=/images/menuo.gif width=18></td></tr>");
+document.write("<tr><td valign='top'><table width='100%' border='0' cellspacing='5' cellpadding='0'><tr><td height='400' valign='top'><table width=100% height='100%' border=1 cellpadding=0 cellspacing=5 bordercolor='#666666' bgcolor=#ecf6f5 style=FILTER: alpha(opacity=90)><tr>");
+document.write("<td height='10' align='center' bordercolor='#ecf6f5'><font color=999900><strong>栏 目 树 形 导 航</strong></font></td></tr><tr><td valign='top' bordercolor='#ecf6f5'>");
+document.write("<iframe width='100%' height='350' src='/Article/ClassTree.asp' frameborder=0 allowTransparency='true'></iframe></td></tr></table></td></tr></table></td></tr></table>");
+var ie = document.all ? 1 : 0
+var ns = document.layers ? 1 : 0
+var master = new Object('element')
+master.curLeft = -200;   master.curTop = 10;
+master.gapLeft = 0;      master.gapTop = 0;
+master.timer = null;
+if(ie){var sidemenu = document.all.master;}
+if(ns){var sidemenu = document.master;}
+setInterval('FixY()',100);
+</script>
+
+<body  onmousemove='HideMenu()'> 
+
+<div id=menuDiv style='Z-INDEX: 1000; VISIBILITY: hidden; WIDTH: 1px; POSITION: absolute; HEIGHT: 1px; BACKGROUND-COLOR: #9cc5f8'></div> 
+<table cellspacing="0" cellpadding="0" bgcolor="#0066FF" align="center"><tr><td>
+<center><table border=0 cellSpacing=0 cellPadding=0 width=950 align=center>
+    <tr>
+      <td><IMG src="/Skin/ls0578/top1.jpg" width=950 height=200></td>
+    </tr>
+    <tr>
+      <td> </td>
+    </tr>
+    <tr>
+      <td height=47 vAlign=top background=../Skin/ls0578/top3.jpg width=950>
+        <table border=0 cellSpacing=0 cellPadding=0 width=950>
+          <tr>
+            <td height=34 align=middle>
+            <script language="JavaScript1.2" type="text/JavaScript" src="/Article/JS/ShowClass_Menu.js"></script></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+<table width=626 border="0" cellspacing="0" cellpadding="0"  bgcolor="#FFFFFF" height=466 align="center">
+  <tr>
+  <td valign=top width=246>
+   	  <table width="246" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="33">
+    <table width="246" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="33"><img src="../Skin/ls0578/ggtop_left.gif" width="33" height="41"></td>
+    <td width="202" background="../Skin/ls0578/ggtop_mid.gif" height="33" style="padding-top:15px;"><span style="color:#096979; font-size:13px; font-weight:bold; padding-left:9px;">最新通知</span></td>
+    <td width="11"><img src="../Skin/ls0578/ggtop_right.gif" width="11" height="41"></td>
+  </tr>
+</table></td>
+    </tr>
+  <tr>
+    <td background="../Skin/ls0578/ggmid_left.gif" height="169" valign="top" style="padding:5px 12px 5px 12px;">
+    <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class="listbg"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=490" title="文章标题：赵磊校长带领东昌中学团队为中国“个性化教育”贡献“东昌表达”
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-5-8 8:45:21" target="_self">赵磊校长带领东昌中学…</a></td><td align="right" class="listbg" width="40">05-08</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=491" title="文章标题：为有豪情多壮志，可上九天揽明月——东昌总校2016级升旗仪式暨地生会考誓师大会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-5-24 9:23:16" target="_self">为有豪情多壮志，可上…</a><img src="/images/new.gif" alt="最新文章"></td><td align="right" class="listbg2" width="40"><font color="red">05-24</font></td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=475" title="文章标题：名校办分校再推进：东昌中学度假区分校正式成立
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-2-12 18:00:00" target="_self">名校办分校再推进：东…</a></td><td align="right" class="listbg" width="40">02-12</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=467" title="文章标题：衡水中学实验学校领导及同仁到我校参观交流
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-1-8 18:00:00" target="_self">衡水中学实验学校领导…</a></td><td align="right" class="listbg2" width="40">01-08</td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=436" title="文章标题：聊城东昌中学开展毕业生“文明离校”主题教育活动
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2017-6-13 17:40:14" target="_self">聊城东昌中学开展毕业…</a></td><td align="right" class="listbg" width="40">06-13</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=435" title="文章标题：聊城东昌中学附属小学正式成立&nbsp;誓做基础教育一股清流
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2017-6-13 17:33:15" target="_self">聊城东昌中学附属小学…</a></td><td align="right" class="listbg2" width="40">06-13</td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=418" title="文章标题：聊城市中小学教学质量综合评价改革研讨会在东昌中学新校区举行
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2017-4-27 18:55:54" target="_self">聊城市中小学教学质量…</a></td><td align="right" class="listbg" width="40">04-27</td></tr><tr></tr></table>    </td>
+    </tr>
+  <tr>
+    <td valign="top"><img src="../Skin/ls0578/gg_bot.gif" width="246" height="6"></td>
+    </tr>
+	  </table>
+		
+		
+<table width="246" border="0" cellspacing="0" cellpadding="0" id=table12>
+  <tr>
+    <td height="33">
+    <table width="246" border="0" cellspacing="0" cellpadding="0" id=table13>
+  <tr>
+    <td width="48"><img src="../Skin/ls0578/daohtop_left1.gif" width="48" height="35"></td>
+    <td colspan="2" background="../Skin/ls0578/daohtop_mid.gif" height="33" width="178"><span style="color:#ffffff; font-size:13px; font-weight:bold; padding-left:5px;">最新热点</span></td>
+    <td width="20" align="right"><img src="../Skin/ls0578/daohtop_right.gif" width="20" height="35" /></td>
+  </tr>
+</table>
+</td>
+    </tr>
+  <tr>
+  <td>
+  <table width="246" border="0" cellspacing="0" cellpadding="0" id=table14>
+  <tr>
+  <td width="6" background="../Skin/ls0578/daohmid_left.gif">　</td>
+    <td background="/Skin/lskfqxx/ggmid.gif" valign="top" style="padding:5px 12px 5px 8px;" width="233" height="157">
+   <script language="javascript" src="/Article/JS/Article_Hot2.js"></script>
+    </td>
+    <td width="7" background="../Skin/ls0578/daohmid_right.gif">　</td>
+    </tr>
+    </table>
+    </td>
+    </tr>
+  <tr>
+    <td>
+    <table width="246" border="0" cellspacing="0" cellpadding="0" id=table15>
+  <tr>
+    <td width="11"><img src="../Skin/ls0578/daohbot_left.gif" width="11" height="8" /></td>
+    <td width="215" background="../Skin/ls0578/daohbot_mid.gif"></td>
+    <td width="20"><img src="../Skin/ls0578/daohbot_right.gif" width="20" height="8" /></td>
+  </tr>
+</table>
+
+
+
+    </td>
+    </tr>
+	  </table>
+			    
+        <table width="246" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="33">
+    <table width="246" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="33"><img src="../Skin/ls0578/yqtop_left.gif" width="33" height="42"></td>
+    <td width="201" background="../Skin/ls0578/yqtop_mid.gif" height="33" style="padding-top:15px;"><span style="color:#095e2b; font-size:13px; font-weight:bold; padding-left:9px;">友情链接</span></td>
+    <td width="12"><img src="../Skin/ls0578/yqtop_right.gif" width="12" height="42"></td>
+  </tr>
+</table></td>
+    </tr>
+  <tr>
+    <td background="../Skin/ls0578/kcmid.gif" valign="top" style="padding:5px 12px 5px 12px;" align="center">
+  <select name='FriendSite' onchange="if(this.options[this.selectedIndex].value!=''){window.open(this.options[this.selectedIndex].value,'_blank');}"><option value=''>友情文字链接站点</option><option value='http://www.lcdczx.cn/wk'>网上课堂</option><option value='http://www.sdbe.gov.cn/'>学籍管理</option><option value='http://222.133.238.110:8001'>学生管理</option><option value='http://www.lcdczx.cn/cj/zscj/index.htm'>成绩查询</option><option value='http://10.80.9.226'>视频点播</option><option value='http://www.dcfhzx.com/'>东昌南校</option></select>
+   
+       </td>
+    </tr>
+  <tr>
+    <td valign="top"><img src="../Skin/ls0578/kcbot.gif"></td>
+    </tr>
+		</table>  
+		  
+		<iframe name=I1 marginwidth=1 marginheight=1 border=0 frameborder=0 src=link.asp scrolling=no width=246 height=100%>
+		浏览器不支持嵌入式框架，或被配置为不显示嵌入式框架。</iframe>
+		
+	</td>
+    
+    <td width=374 valign="top">
+    <table width="704" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table width="703" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="412"><table width="412" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td colspan="3">
+        
+        <table width="412" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+   <td width="120" height="41" background="../Skin/ls0578/zxwztop_left.gif" style="padding-top:15px;"><span style="color:#096979;font-size:13px;font-weight:bold; padding-left:51px;">最新文章</span></td>
+        <td background="../Skin/ls0578/zxwztop_mid.gif" width="215"></td>
+        <td width="77"><img src="../Skin/ls0578/zxwztop_right.gif" width="77" height="41"></td>
+  </tr>
+</table></td>
+      </tr>
+      <tr>
+        <td background="../Skin/ls0578/zxwzmid_left.gif">　</td>
+        <td height="190" valign="top"><table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class="listbg"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=490" title="文章标题：赵磊校长带领东昌中学团队为中国“个性化教育”贡献“东昌表达”
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-5-8 8:45:21" target="_self">赵磊校长带领东昌中学团队为中国“个性化教育”贡献…</a></td><td align="right" class="listbg" width="40">05-08</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=491" title="文章标题：为有豪情多壮志，可上九天揽明月——东昌总校2016级升旗仪式暨地生会考誓师大会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-5-24 9:23:16" target="_self">为有豪情多壮志，可上九天揽明月——东昌总校2016级…</a><img src="/images/new.gif" alt="最新文章"></td><td align="right" class="listbg2" width="40"><font color="red">05-24</font></td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=489" title="文章标题：聊城东昌完全中学2018年招聘教师简章
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-5-4 17:02:44" target="_self">聊城东昌完全中学2018年招聘教师简章</a></td><td align="right" class="listbg" width="40">05-04</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_elite.gif" alt="推荐文章"></td><td class="listbg2"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=486" title="文章标题：关于召开“个性化教育”创新与实践研讨会的通知
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-3-27 21:54:12" target="_self">关于召开“个性化教育”创新与实践研讨会的通知</a></td><td align="right" class="listbg2" width="40">03-27</td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=484" title="文章标题：聊城东昌完全中学附属小学招聘
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-3-14 15:00:31" target="_self">聊城东昌完全中学附属小学招聘</a></td><td align="right" class="listbg" width="40">03-14</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=481" title="文章标题：厉兵秣马战百日&nbsp;且听六月凯歌扬——东昌中学2015级迎中考百日冲刺誓师大会纪实
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-3-11 18:00:00" target="_self">厉兵秣马战百日&nbsp;且听六月凯歌扬——东昌中学2015级迎…</a></td><td align="right" class="listbg2" width="40">03-11</td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=480" title="文章标题：精准施策，尽锐出战&nbsp;——东昌中学召开语文学科教学工作会议
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-3-8 18:00:00" target="_self">精准施策，尽锐出战&nbsp;——东昌中学召开语文学科教学工…</a></td><td align="right" class="listbg" width="40">03-08</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=482" title="文章标题：新学期，新起点，新征程--东昌东校举行开学第一期班主任全体会暨学生心智力培养专题会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-3-4 10:00:00" target="_self">新学期，新起点，新征程--东昌东校举行开学第一期班…</a></td><td align="right" class="listbg2" width="40">03-04</td></tr><tr></tr></table></td>
+        <td background="../Skin/ls0578/zxwzmid_right.gif">　</td>
+        </tr>
+      <tr>
+        <td width="7"><img src="../Skin/ls0578/zxwzbot_left.gif" width="7" height="6"></td>
+        <td width="398" background="../Skin/ls0578/zxwzbot_mid.gif"></td>
+        <td width="7"><img src="../Skin/ls0578/zxwzbot_right.gif" width="7" height="6"></td>
+      </tr>
+    </table></td>
+    <td valign="top"><table width="291" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="33"><img src="../Skin/ls0578/hdptop_left.gif" width="33" height="22"></td>
+        <td width="221" background="../Skin/ls0578/hdptop_mid.gif"></td>
+        <td width="37"><img src="../Skin/ls0578/hdptop_right.gif" width="37" height="22"></td>
+      </tr>
+      <tr>
+        <td colspan="3"><table width="291" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="13" background="../Skin/ls0578/hdpmid_left.gif"><img src="../Skin/ls0578/hdpmid_left.gif" width="11" height="11"></td>
+    <td width="262" height="200" align="center" valign="middle">
+<script language="javascript">
+var swf_width = 260;
+var swf_height = 195;
+var files = "";		//图片地址
+var links = "";		//连接地址
+var texts = "";		//介绍性文字
+
+files = files == "" ? "/Article/UploadFiles/201803/2018031316421069.jpg" : files + "|" + "/Article/UploadFiles/201803/2018031316421069.jpg"
+links = links == "" ? "/Article/ShowArticle.asp?ArticleID=482" : links + "|" + "/Article/ShowArticle.asp?ArticleID=482"
+texts = texts == "" ? "新学期，新起点，新征程--东昌…" : texts + "|" + "新学期，新起点，新征程--东昌…"
+
+files = files == "" ? "/Article/UploadFiles/201803/2018031310433189.jpg" : files + "|" + "/Article/UploadFiles/201803/2018031310433189.jpg"
+links = links == "" ? "/Article/ShowArticle.asp?ArticleID=481" : links + "|" + "/Article/ShowArticle.asp?ArticleID=481"
+texts = texts == "" ? "厉兵秣马战百日&nbsp;且听六月凯歌扬…" : texts + "|" + "厉兵秣马战百日&nbsp;且听六月凯歌扬…"
+
+files = files == "" ? "/Article/UploadFiles/201803/2018031310160918.jpg" : files + "|" + "/Article/UploadFiles/201803/2018031310160918.jpg"
+links = links == "" ? "/Article/ShowArticle.asp?ArticleID=480" : links + "|" + "/Article/ShowArticle.asp?ArticleID=480"
+texts = texts == "" ? "精准施策，尽锐出战&nbsp;——东昌中…" : texts + "|" + "精准施策，尽锐出战&nbsp;——东昌中…"
+
+files = files == "" ? "/Article/UploadFiles/201803/2018030316455081.jpg" : files + "|" + "/Article/UploadFiles/201803/2018030316455081.jpg"
+links = links == "" ? "/Article/ShowArticle.asp?ArticleID=479" : links + "|" + "/Article/ShowArticle.asp?ArticleID=479"
+texts = texts == "" ? "心智升华&nbsp;感动常存——记东昌中…" : texts + "|" + "心智升华&nbsp;感动常存——记东昌中…"
+
+document.writeln('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cabversion=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+document.writeln('<param name="movie" value="/Skin/sw86/bcastr31.swf"><param name="quality" value="high">');
+document.writeln('<param name="menu" value="false"><param name=wmode value="opaque">');
+document.writeln('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'">');
+document.writeln('<embed src="/Skin/sw86/bcastr31.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'& menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+document.writeln('</object>');
+</script></td>
+    <td width="16" background="../Skin/ls0578/hdpmid_right.gif">　</td>
+  </tr>
+</table></td>
+        </tr>
+      <tr>
+        <td><img src="../Skin/ls0578/hdpbot_left.gif" width="33" height="13"></td>
+        <td background="../Skin/ls0578/hdpbot_mid.gif"></td>
+        <td><img src="../Skin/ls0578/hdpbot_right.gif" width="37" height="13"></td>
+      </tr>
+    </table></td>
+  </tr>
+</table></td>
+      </tr>
+    </table>
+  
+
+ <table width="703" border="0" cellspacing="0" cellpadding="0" style="background-image:url(../Skin/ls0578/midline.gif); background-position:345px 15px; background-repeat:repeat-y;">
+  <tr>
+    <td valign="top"><table width="341" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="44" background="../Skin/ls0578/wztop.gif" style="padding:13px 0px 0px 51px;"><a class='Class' href='/Article/ShowClass.asp?ClassID=2' title=''><b>新闻动态</b></td>
+    </tr>
+  <tr>
+    
+    <td width="329" height="175" valign="top" background="../Skin/ls0578/wzmid_left.gif" style="padding:10px;"><table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_ontop.gif" alt="固顶文章"></td><td class="listbg"><span class="S_headline3">[推荐]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=490" title="文章标题：赵磊校长带领东昌中学团队为中国“个性化教育”贡献“东昌表达”
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-5-8 8:45:21" target="_blank">赵磊校长带领东昌中学团…</a></td><td align="right" class="listbg" width="40">05-08</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><span class="S_headline1">[图文]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=491" title="文章标题：为有豪情多壮志，可上九天揽明月——东昌总校2016级升旗仪式暨地生会考誓师大会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-5-24 9:23:16" target="_blank">为有豪情多壮志，可上九…</a><img src="/images/new.gif" alt="最新文章"></td><td align="right" class="listbg2" width="40"><font color="red">05-24</font></td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline1">[图文]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=489" title="文章标题：聊城东昌完全中学2018年招聘教师简章
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-5-4 17:02:44" target="_blank">聊城东昌完全中学2018年…</a></td><td align="right" class="listbg" width="40">05-04</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_elite.gif" alt="推荐文章"></td><td class="listbg2"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=486" title="文章标题：关于召开“个性化教育”创新与实践研讨会的通知
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-3-27 21:54:12" target="_blank">关于召开“个性化教育”…</a></td><td align="right" class="listbg2" width="40">03-27</td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline1">[图文]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=484" title="文章标题：聊城东昌完全中学附属小学招聘
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-3-14 15:00:31" target="_blank">聊城东昌完全中学附属小…</a></td><td align="right" class="listbg" width="40">03-14</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=475" title="文章标题：名校办分校再推进：东昌中学度假区分校正式成立
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-2-12 18:00:00" target="_blank">名校办分校再推进：东昌…</a></td><td align="right" class="listbg2" width="40">02-12</td></tr><tr></tr></table></td>
+
+  </tr>
+  <tr>
+    <td><img src="../Skin/ls0578/wzbot.gif" width="341" height="7"></td>
+    </tr>
+</table>
+</td>
+    <td width='1'></td>
+    <td valign="top"><table width="341" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="44" background="../Skin/ls0578/wztop.gif" style="padding:13px 0px 0px 51px;"><a class='Class' href='/Article/ShowClass.asp?ClassID=3' title=''><b>教学教研</b></td>
+    </tr>
+  <tr>
+    
+    <td width="329" height="175" valign="top" background="../Skin/ls0578/wzmid_left.gif" style="padding:10px;"><table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=466" title="文章标题：东昌中学召开关于完善《语文学科教学指导纲要》的座谈会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-1-4 18:00:00" target="_blank">东昌中学召开关于完善《…</a></td><td align="right" class="listbg" width="40">01-04</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=457" title="文章标题：东昌中学第三届“大三六”教学精英赛圆满落下帷幕
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2017-12-8 18:00:00" target="_blank">东昌中学第三届“大三六…</a></td><td align="right" class="listbg2" width="40">12-08</td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=456" title="文章标题：东昌中学第三届“大三六”教学精英赛（东校区会场）
+作&nbsp;&nbsp;&nbsp;&nbsp;者：摄影：刘吉光 / 文案：贾雪省 /  编辑：龙茂磊
+更新时间：2017-12-7 18:00:00" target="_blank">东昌中学第三届“大三六…</a></td><td align="right" class="listbg" width="40">12-07</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=451" title="文章标题：东昌中学召开2017-2018学年度四校区学科突破工作会议
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2017-10-11 15:07:29" target="_blank">东昌中学召开2017-2018学年度四…</a></td><td align="right" class="listbg2" width="40">10-11</td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=447" title="文章标题：誓扬云帆搏巨浪&nbsp;甘育雏鹰翔九天
+作&nbsp;&nbsp;&nbsp;&nbsp;者：曹先宇
+更新时间：2017-9-3 9:08:40" target="_blank">誓扬云帆搏巨浪&nbsp;甘育雏鹰…</a></td><td align="right" class="listbg" width="40">09-03</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=446" title="文章标题：新思路开启新征程&nbsp;新起点续写新篇章
+作&nbsp;&nbsp;&nbsp;&nbsp;者：曹先宇
+更新时间：2017-9-3 9:06:04" target="_blank">新思路开启新征程&nbsp;新起点…</a></td><td align="right" class="listbg2" width="40">09-03</td></tr><tr></tr></table></td>
+
+  </tr>
+  <tr>
+    <td><img src="../Skin/ls0578/wzbot.gif" width="341" height="7"></td>
+    </tr>
+</table>
+</td>
+    </tr><tr>
+    <td valign="top"><table width="341" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="44" background="../Skin/ls0578/wztop.gif" style="padding:13px 0px 0px 51px;"><a class='Class' href='/Article/ShowClass.asp?ClassID=6' title=''><b>教师园地</b></td>
+    </tr>
+  <tr>
+    
+    <td width="329" height="175" valign="top" background="../Skin/ls0578/wzmid_left.gif" style="padding:10px;"><table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=460" title="文章标题：素质教育谱新篇&nbsp;实践基地展风采
+作&nbsp;&nbsp;&nbsp;&nbsp;者：摄影：占丁超 / 文案：张广彩 /  编辑：龙茂磊
+更新时间：2017-12-15 18:00:00" target="_blank">素质教育谱新篇&nbsp;实践基地…</a></td><td align="right" class="listbg" width="40">12-15</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><span class="S_headline3">[推荐]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=459" title="文章标题：你凭什么在单位立足？12条忠告！
+作&nbsp;&nbsp;&nbsp;&nbsp;者：赵磊推荐
+更新时间：2017-12-13 11:19:14" target="_blank">你凭什么在单位立足？12…</a></td><td align="right" class="listbg2" width="40">12-13</td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=433" title="文章标题：“立德于校园&nbsp;树人至千秋”
+作&nbsp;&nbsp;&nbsp;&nbsp;者：曹先宇
+更新时间：2017-6-9 16:50:23" target="_blank">“立德于校园&nbsp;树人至千秋…</a></td><td align="right" class="listbg" width="40">06-09</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><span class="S_headline4">[注意]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=251" title="文章标题：东昌中学召开体育组会议，赵磊校长发表重要讲话。
+作&nbsp;&nbsp;&nbsp;&nbsp;者：于景远
+更新时间：2015-11-18 7:15:59" target="_blank">东昌中学召开体育组会议…</a></td><td align="right" class="listbg2" width="40">11-18</td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=195" title="文章标题：2015年东昌中学颁奖大会
+作&nbsp;&nbsp;&nbsp;&nbsp;者：卢振
+更新时间：2015-3-18 14:45:33" target="_blank">2015年东昌中学颁奖大会</a></td><td align="right" class="listbg" width="40">03-18</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><span class="S_headline1">[图文]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=118" title="文章标题：2013年11月4号初一点评
+作&nbsp;&nbsp;&nbsp;&nbsp;者：卢振
+更新时间：2013-11-4 7:32:45" target="_blank">2013年11月4号初一点评</a></td><td align="right" class="listbg2" width="40">11-04</td></tr><tr></tr></table></td>
+
+  </tr>
+  <tr>
+    <td><img src="../Skin/ls0578/wzbot.gif" width="341" height="7"></td>
+    </tr>
+</table>
+</td>
+    <td width='1'></td>
+    <td valign="top"><table width="341" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="44" background="../Skin/ls0578/wztop.gif" style="padding:13px 0px 0px 51px;"><a class='Class' href='/Article/ShowClass.asp?ClassID=95' title=''><b>学生天地</b></td>
+    </tr>
+  <tr>
+    
+    <td width="329" height="175" valign="top" background="../Skin/ls0578/wzmid_left.gif" style="padding:10px;"><table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=471" title="文章标题：比出团结，赛出风采--记东昌东校拔河比赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2018-1-21 18:00:00" target="_blank">比出团结，赛出风采--记…</a></td><td align="right" class="listbg" width="40">01-21</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=469" title="文章标题：群贤毕至观东昌风采，少长咸集展新年鸿图
+作&nbsp;&nbsp;&nbsp;&nbsp;者：李金东、王向星
+更新时间：2018-1-8 8:00:00" target="_blank">群贤毕至观东昌风采，少…</a></td><td align="right" class="listbg2" width="40">01-08</td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=465" title="文章标题：活力东昌，诵英语菁华；梦笔生花，感语言魅力---东昌中学英语学科突破活动纪实
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2017-12-29 9:22:03" target="_blank">活力东昌，诵英语菁华；…</a></td><td align="right" class="listbg" width="40">12-29</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=464" title="文章标题：群英竞技谱华章——东昌中学学科突破之数学竞赛暨颁奖典礼
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2017-12-26 18:00:00" target="_blank">群英竞技谱华章——东昌…</a></td><td align="right" class="listbg2" width="40">12-26</td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=463" title="文章标题：能言善辩出真知，学以致用显良才--东昌中学政治学科突破之辩论赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2017-12-26 18:00:00" target="_blank">能言善辩出真知，学以致…</a></td><td align="right" class="listbg" width="40">12-26</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=462" title="文章标题：“魅力诗词”中吟出东昌风采——东昌中学语文学科突破之诗词大赛
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2017-12-26 18:00:00" target="_blank">“魅力诗词”中吟出东昌…</a></td><td align="right" class="listbg2" width="40">12-26</td></tr><tr></tr></table></td>
+
+  </tr>
+  <tr>
+    <td><img src="../Skin/ls0578/wzbot.gif" width="341" height="7"></td>
+    </tr>
+</table>
+</td>
+    </tr><tr>
+    <td valign="top"><table width="341" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="44" background="../Skin/ls0578/wztop.gif" style="padding:13px 0px 0px 51px;"><a class='Class' href='/Article/ShowClass.asp?ClassID=94' title=''><b>安全教育</b></td>
+    </tr>
+  <tr>
+    
+    <td width="329" height="175" valign="top" background="../Skin/ls0578/wzmid_left.gif" style="padding:10px;"><table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=454" title="文章标题：手牵手共创消防安全&nbsp;心连心共建和谐校园
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2017-11-30 16:30:50" target="_blank">手牵手共创消防安全&nbsp;心连…</a></td><td align="right" class="listbg" width="40">11-30</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=427" title="文章标题：东昌东校安全疏散演练
+作&nbsp;&nbsp;&nbsp;&nbsp;者：曹先宇
+更新时间：2017-3-31 14:18:44" target="_blank">东昌东校安全疏散演练</a></td><td align="right" class="listbg2" width="40">03-31</td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=403" title="文章标题：安全警钟长鸣&nbsp;创建平安校园—总校区初一年级安全疏散演练
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2017-3-31 19:11:53" target="_blank">安全警钟长鸣&nbsp;创建平安校…</a></td><td align="right" class="listbg" width="40">03-31</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=304" title="文章标题：防霾自救十招
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2015-12-23 7:42:49" target="_blank">防霾自救十招</a></td><td align="right" class="listbg2" width="40">12-23</td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><a class="listA" href="/Article/ShowArticle.asp?ArticleID=275" title="文章标题：中学生安全教育交通安全篇
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2015-12-4 15:22:40" target="_blank">中学生安全教育交通安全篇</a></td><td align="right" class="listbg" width="40">12-04</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><span class="S_headline2">[组图]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=263" title="文章标题：消防紧急疏散演练
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2015-11-24 15:13:08" target="_blank">消防紧急疏散演练</a></td><td align="right" class="listbg2" width="40">11-24</td></tr><tr></tr></table></td>
+
+  </tr>
+  <tr>
+    <td><img src="../Skin/ls0578/wzbot.gif" width="341" height="7"></td>
+    </tr>
+</table>
+</td>
+    <td width='1'></td>
+    <td valign="top"><table width="341" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="44" background="../Skin/ls0578/wztop.gif" style="padding:13px 0px 0px 51px;"><a class='Class' href='/Article/ShowClass.asp?ClassID=105' title=''><b>资源下载</b></td>
+    </tr>
+  <tr>
+    
+    <td width="329" height="175" valign="top" background="../Skin/ls0578/wzmid_left.gif" style="padding:10px;"><table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline1">[图文]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=221" title="文章标题：IP分配
+作&nbsp;&nbsp;&nbsp;&nbsp;者：车虎
+更新时间：2015-10-12 17:52:58" target="_blank"><font color="#800000"><b>IP分配</b></font></a></td><td align="right" class="listbg" width="40">10-12</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><span class="S_headline1">[图文]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=190" title="文章标题：win7
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2015-1-8 10:45:35" target="_blank">win7</a></td><td align="right" class="listbg2" width="40">01-08</td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline1">[图文]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=108" title="文章标题：IP地址分配
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2013-9-13 8:53:18" target="_blank">IP地址分配</a></td><td align="right" class="listbg" width="40">09-13</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><span class="S_headline1">[图文]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=106" title="文章标题：题库账号分配
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2013-8-27 15:08:01" target="_blank">题库账号分配</a></td><td align="right" class="listbg2" width="40">08-27</td></tr><tr><td width="10" valign="top" class="listbg"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg"><span class="S_headline1">[图文]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=105" title="文章标题：下载安装手册
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2013-8-27 10:18:04" target="_blank">下载安装手册</a></td><td align="right" class="listbg" width="40">08-27</td></tr><tr><td width="10" valign="top" class="listbg2"><img src="/Article/images/Article_common.gif" alt="普通文章"></td><td class="listbg2"><span class="S_headline1">[图文]</span><a class="listA" href="/Article/ShowArticle.asp?ArticleID=104" title="文章标题：中迪题库培训操作手册
+作&nbsp;&nbsp;&nbsp;&nbsp;者：佚名
+更新时间：2013-8-27 10:13:49" target="_blank">中迪题库培训操作手册</a></td><td align="right" class="listbg2" width="40">08-27</td></tr><tr></tr></table></td>
+
+  </tr>
+  <tr>
+    <td><img src="../Skin/ls0578/wzbot.gif" width="341" height="7"></td>
+    </tr>
+</table>
+</td>
+    <td width='1'></td>
+  </tr>
+</table>
+
+</td>
+  </tr>
+  <tr>
+  <td valign=top colspan=2 align=left>
+
+    <table width="950" border="0" cellspacing="0" cellpadding="0" id=table9>
+  <tr>
+    <td colspan="3">
+	<table width="950" border="0" cellspacing="0" cellpadding="0" id=table10>
+      <tr>
+        <td width="136" background="../Skin/ls0578/zxtptop_left.gif"  style="padding-top:10px;">
+		<p align=right><b>学校荣誉&nbsp;&nbsp;</b></td>
+        <td width="754" background="../Skin/ls0578/zxtptop_mid.gif" valign="center">
+       
+        </td>
+        <td width="60"><img src="../Skin/ls0578/zxtptop_right.gif" width="60" height="37"></td>
+      </tr>
+    </table></td>
+    </tr>
+  <tr>
+    <td width="14"><img src="../Skin/ls0578/zxtpmid_left.gif" width="14" height="130"></td>
+    <td width="652" bgcolor="#a1f6cb">
+    
+    <div id=rolllinka style="OVERFLOW: hidden; WIDTH: 910px; HEIGHT: 120px;margin-left:2px;"> 
+     <table align=left cellpadding=0 cellspace=0 border=0 id=table11>
+     <tr>
+     <td id=rolllinkb valign=top>
+       <div><table width='100%' cellpadding='0' cellspacing='5' border='0' align='center'><tr valign='top'><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=395" title="东昌中学荣获聊城市民办教育金牌学校荣誉称号" target="_blank"><img class='pic1' src='/Article/UploadFiles/201703/2017032710283240.jpg'  width='130' height='90' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=395" title="东昌中学荣获聊城市民办教育金牌学校荣誉称号" target="_blank">东昌中学荣获聊城…</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=394" title="东昌中学荣获聊城市初中教育教学工作先进集体荣誉称号" target="_blank"><img class='pic1' src='/Article/UploadFiles/201703/2017032710271140.jpg'  width='130' height='90' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=394" title="东昌中学荣获聊城市初中教育教学工作先进集体荣誉称号" target="_blank">东昌中学荣获聊城…</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=393" title="我校荣获聊城市教育教学工作先进集体荣誉称号" target="_blank"><img class='pic1' src='/Article/UploadFiles/201703/2017032710251585.jpg'  width='130' height='90' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=393" title="我校荣获聊城市教育教学工作先进集体荣誉称号" target="_blank">我校荣获聊城市教…</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=392" title="聊城市教育局授予东昌中学聊城市实验教学先进单位" target="_blank"><img class='pic1' src='/Article/UploadFiles/201703/2017032710175447.jpg'  width='130' height='90' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=392" title="聊城市教育局授予东昌中学聊城市实验教学先进单位" target="_blank">聊城市教育局授予…</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=391" title="聊城市教育局授予东昌中学教学示范学校" target="_blank"><img class='pic1' src='/Article/UploadFiles/201703/2017032710140492.jpg'  width='130' height='90' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=391" title="聊城市教育局授予东昌中学教学示范学校" target="_blank">聊城市教育局授予…</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=390" title="我校荣获2011年度全市社会组织先进单位" target="_blank"><img class='pic1' src='/Article/UploadFiles/201703/2017032710113934.jpg'  width='130' height='90' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=390" title="我校荣获2011年度全市社会组织先进单位" target="_blank">我校荣获2011年度…</a></td><td align='center'><a class="" href="/Article/ShowArticle.asp?ArticleID=389" title="我校在聊城市《快乐汉字》听写竞赛中荣获团体一等奖" target="_blank"><img class='pic1' src='/Article/UploadFiles/201703/2017032710090316.jpg'  width='130' height='90' border='0'></a><br><a class="" href="/Article/ShowArticle.asp?ArticleID=389" title="我校在聊城市《快乐汉字》听写竞赛中荣获团体一等奖" target="_blank">我校在聊城市《快…</a></td></tr></table></div>
+     </td>
+     <td id=rolllinkc valign=top></td>
+     </tr></table>
+	 </div>
+	 <!---SCRIPT> 
+	  var rollspeed=60
+	  rolllinkc.innerHTML=rolllinkb.innerHTML 
+	  function Marquee(){ 
+	  if(rolllinkc.offsetWidth-rolllinka.scrollLeft<=0) 
+	  rolllinka.scrollLeft-=rolllinkb.offsetWidth 
+	  else{ 
+	  rolllinka.scrollLeft++ 
+	  } 
+	  } 
+	  var MyMar1=setInterval(Marquee,rollspeed) 
+	  rolllinka.onmouseover=function() {clearInterval(MyMar1)} 
+	  rolllinka.onmouseout=function() {MyMar1=setInterval(Marquee,rollspeed)} 
+	 </SCRIPT-->
+     </td>
+    <td width="14"><img src="../Skin/ls0578/zxtpmid_right.gif" width="14" height="130"></td>
+  </tr>
+  <tr>
+    <td colspan="3"><img src="../Skin/ls0578/zxtpbot.gif" width="950" height="13"></td>
+    </tr>
+</table>   
+
+	</td>
+    
+  </tr>
+</table>
+
+<table border=0 cellSpacing=0 cellPadding=0 width=950 align=center>
+    <tr>
+      <td width=5>&nbsp;</td>
+      <td height=100 vAlign=top background=../Skin/ls0578/bodybot.gif width=940>
+        <table border=0 cellSpacing=0 cellPadding=0 width=950 height=102>
+          <tr>
+            <td height=33 vAlign=bottom align=middle>| <A class=Bottom onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.lcdczx.cn');" href="#">设为首页</A> | <A class=Bottom href="javascript:window.external.addFavorite('http://www.lcdczx.cn','山东省聊城东昌中学');">加入收藏</A> | <A class=Bottom href="mailto:zdc@sdlcsz.com">联系站长</A> |  <a class='Bottom' href='/Admin/Admin_Index.asp' target='_blank'>管理登录</a>&nbsp;|&nbsp;</td>
+          </tr>
+          <tr>
+            <td height=69 vAlign=center align=middle>&copy; 2009-2010 山东省聊城东昌中学 版权所有<br></td>
+          </tr>
+        </table>
+      </td>
+      <td width=5>&nbsp;</td>
+    </tr>
+  </table>
+</td></tr></table>
+
+</body>
+</html>

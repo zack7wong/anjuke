@@ -1,0 +1,706 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<script src="Resources/Script/jquery-1.7.2.js" type="text/javascript"></script>
+	<script type="text/javascript" src="XSK/jquery.soChange.js"></script>
+    <link href="XSK/images/css.css" rel="stylesheet" type="text/css" />  
+	<title>Mr.</title><meta content="1" name="keywords"><meta content="1" name="description">
+    <script type="text/javascript" src="XSK/jquery.SuperSlide.2.1.1.js"></script>
+
+	<SCRIPT LANGUAGE="JavaScript">
+        function AddFavorite(sURL, sTitle) {
+            try {
+                window.external.addFavorite(sURL, sTitle);
+            }
+            catch (e) {
+                try {
+                    window.sidebar.addPanel(sTitle, sURL, "");
+                }
+                catch (e) {
+                    alert("加入收藏失败，请使用Ctrl+D进行添加");
+                }
+            }
+        }
+        function SetHome(obj, vrl) {
+            try {
+                obj.style.behavior = 'url(#default#homepage)'; obj.setHomePage(vrl);
+            }
+            catch (e) {
+                if (window.netscape) {
+                    try {
+                        netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                    }
+                    catch (e) {
+                        alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                    }
+                    var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                    prefs.setCharPref('browser.startup.homepage', vrl);
+                }
+            }
+        }
+		function AddFavorite(title, url) {
+			try {
+				window.external.addFavorite(url, title);
+			}
+			catch (e) {
+				try {
+					window.sidebar.addPanel(title, url, "");
+				}
+				catch (e) {
+					alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请使用Ctrl+D进行添加");
+				}
+			}
+		}
+	</SCRIPT>
+    <!--PNG图片透明开始-->
+	<!--[if IE 6]>
+	<script type="text/javascript" src="XSK/images/DD_belatedPNG.js" ></script>
+	<script type="text/javascript">DD_belatedPNG.fix('.menuBox li.homePage,.menuBox li.HomeBtn,.changeBox .changeDiv div,.threeL-TwoR-Pic td div.jsfcPic div,.gsggList li,.zyxzBox li,.threeL_TwoNav0 img,.threeL_TwoNav1 img');</script>
+	<![endif]-->
+	<!--PNG图片透明结束-->
+<title>
+
+</title></head>
+<body>
+<div class="bodyBox">
+	<div class="topBox">
+		<div class="topContent">
+			<div class="topContentL"><a href="Index.aspx"><img src="XSK/images/web_logo.jpg" /></a></div>
+			<div class="topContentR">
+				<div class="topContentR_wz"><a onclick="SetHome(this,window.location)" href="javascript:void(0)">设为首页</a>｜
+				<a href="javascript:void(0);" onclick="AddFavorite('乐清市虹桥镇第二中学',location.href)">加入收藏</a></div>
+				
+<div class="topContentR_Search">
+    <table border="0" cellpadding="0" cellspacing="0">
+    <form action="../../Search.aspx" method="GET" target="_blank">
+        <tr>
+            <td width="90">
+            	<div class="search_select">
+                    <a class="btn-select" id="btn_select">
+                    	<span class="cur-select">选类别</span>
+                        <select name="searchType" class="searchSelect" id="select">
+                            <option id="opttitle" value="title">标题类</option>
+                            <option id="optauthor" value="author">作者类</option>
+                            <option id="optcontent" value="content">全文类</option>
+                        </select>
+                    </a>
+                </div>
+            </td>
+            <td><div class="search_Text"><input type="text" name="key" class="searchText" id="textfield4" size="60" value="" /></div></td>
+            <td width="66"><div class="search_Sub"><input type="submit" class="searchSub" value=" " /></div></td>
+        </tr>
+    </form>
+    </table>
+</div>
+<script type="text/javascript">
+	var $$ = function (id) {
+		return document.getElementById(id);
+	}
+	window.onload = function () {
+		var btnSelect = $$("btn_select");
+		var curSelect = btnSelect.getElementsByTagName("span")[0];
+		var oSelect = btnSelect.getElementsByTagName("select")[0];
+		var aOption = btnSelect.getElementsByTagName("option");
+		oSelect.onchange = function () {
+		var text=oSelect.options[oSelect.selectedIndex].text;
+			curSelect.innerHTML = text;
+		}
+	} 
+</script>
+			</div>
+		</div>
+		<div class="menuBox">
+			<ul>
+				<li class="homePages"><a href="Index.aspx">首页</a></li>
+				<li class="line"></li>
+				<li class='menu-a'><a href='ColumnList.aspx?code=89534'>学校概况</a></li><li class='line'></li><li class='menu-a'><a href='ColumnList.aspx?code=96625'>校园新闻</a></li><li class='line'></li><li class='menu-a'><a href='ColumnList.aspx?code=91953'>教师频道</a></li><li class='line'></li><li class='menu-a'><a href='ColumnList.aspx?code=88602'>学生天地</a></li><li class='line'></li><li class='menu-a'><a href='ColumnList.aspx?code=71957'>教学科研</a></li><li class='line'></li><li class='menu-a'><a href='ColumnList.aspx?code=96514'>德育之窗</a></li><li class='line'></li><li class='menu-a'><a href='ColumnList.aspx?code=59690'>党工共建</a></li><li class='line'></li><li class='menu-a'><a href='ColumnList.aspx?code=64399'>校园安全</a></li><li class='line'></li><li class='menu-a'><a href='ColumnList.aspx?code=17437'>后勤管理</a></li><li class='line'></li><li class='menu-a'><a href='ColumnList.aspx?code=4609'>资源下载</a></li><li class='line'></li>
+				<li><a href="http://banxue.yqer.cn" target="_blank">发展评估</a></li>
+			</ul>
+		</div>
+	</div>
+	
+<div class="bannerBox" id="change_1">
+    <div class='changeDiv' style='background:url(../files/029/Image/2015-10/a57a87a7-a14e-4482-9da6-f69be94b01cd.jpg) center top no-repeat;'></div>
+    <div class="flashwz">
+		<object id="yc" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="1004" align="middle" height="315">
+			<param name="_cx" value="29157">
+			<param name="_cy" value="7196">
+			<param name="FlashVars" value="">
+			<param name="Movie" value="XSK/flash/hqeztop.swf">
+			<param name="Src" value="XSK/flash/hqeztop.swf">
+			<param name="WMode" value="Transparent">
+			<param name="Play" value="-1">
+			<param name="Loop" value="-1">
+			<param name="Quality" value="High">
+			<param name="SAlign" value="">
+			<param name="Menu" value="-1">
+			<param name="Base" value="">
+			<param name="AllowScriptAccess" value="sameDomain">
+			<param name="Scale" value="ShowAll">
+			<param name="DeviceFont" value="0">
+			<param name="EmbedMovie" value="0">
+			<param name="BGColor" value="FFFFFF">
+			<param name="SWRemote" value="">
+			<param name="MovieData" value="">
+			<param name="SeamlessTabbing" value="1">
+			<param name="Profile" value="0">
+			<param name="ProfileAddress" value="">
+			<param name="ProfilePort" value="0">
+			<param name="AllowNetworking" value="all">
+			<param name="AllowFullScreen" value="false">
+			<param name="AllowFullScreenInteractive" value="false">
+			<param name="IsDependent" value="0">
+			<!--[if !IE]>-->
+			<object type="application/x-shockwave-flash" data="XSK/flash/hqeztop.swf" width="1004" height="315">
+				<param name="movie" value="XSK/flash/hqeztop.swf">
+				<param name="quality" value="high">
+				<param name="bgcolor" value="#ffffff">
+				<param name="play" value="true">
+				<param name="loop" value="true">
+				<param name="wmode" value="transparent">
+				<param name="scale" value="showall">
+				<param name="menu" value="true">
+				<param name="devicefont" value="false">
+				<param name="salign" value="">
+				<param name="allowScriptAccess" value="sameDomain">
+				<!--<![endif]-->
+				<a href="http://www.adobe.com/go/getflash">
+					<img src="UploadFiles/26815.gif" alt="获得 Adobe Flash Player">
+				</a>
+				<!--[if !IE]>-->
+			</object>
+			<!--<![endif]-->
+		</object>
+    </div>
+</div>
+<script type="text/javascript">
+    $('#change_1 div.changeDiv').soChange({
+		changeTime:10000
+	});
+</script>
+	
+<div class="indexBody clearfix">
+	<div class="content-one">
+    	
+<div class="content-oneL">
+	<div class="changeBox" id="change_32">
+	    <div class='changeDiv'><div><a href='Detail.aspx?id=898c01b7-abde-4d24-b4e5-2b1aff9a9863&code=64129' title='虹桥二中举行“家庭是孩子的第一所学校”家庭教育活动'>虹桥二中举行“家庭是孩子的第一所学校”家庭教育活动</a></div><a href='Detail.aspx?id=898c01b7-abde-4d24-b4e5-2b1aff9a9863&code=64129' title='虹桥二中举行“家庭是孩子的第一所学校”家庭教育活动' target='_blank'><img src='../files/029/Image/2018-03/fa6476b4-8e5c-4835-afea-90518a9ed997_all0.jpg' /></a></div><div class='changeDiv'><div><a href='Detail.aspx?id=91a7a3a2-0dec-4948-85da-e9e49d30b4f7&code=64129' title='虹桥二中举行“圆爱中国梦，成长心连心”大型感恩教育活动'>虹桥二中举行“圆爱中国梦，成长心连心”大型感恩教育活动</a></div><a href='Detail.aspx?id=91a7a3a2-0dec-4948-85da-e9e49d30b4f7&code=64129' title='虹桥二中举行“圆爱中国梦，成长心连心”大型感恩教育活动' target='_blank'><img src='../files/029/Image/2018-03/acdc6d10-3616-419a-92c4-01e68914d734_all0.png' /></a></div><div class='changeDiv'><div><a href='Detail.aspx?id=e490f39f-3987-4963-93d7-2cb2fcd0cc9f&code=64129' title='虹桥二中美食节'>虹桥二中美食节</a></div><a href='Detail.aspx?id=e490f39f-3987-4963-93d7-2cb2fcd0cc9f&code=64129' title='虹桥二中美食节' target='_blank'><img src='../files/029/Image/2016-01/93fa7632-98e7-43ab-b051-8f12413917c7_all0.jpg' /></a></div><div class='changeDiv'><div><a href='Detail.aspx?id=e7526b29-96e8-471c-a17d-43aa3d2e414e&code=64129' title='关于公布乐清市第55届中小学生田径运动会比赛结果的通知（乐教学〔2015〕27号）'>关于公布乐清市第55届中小学生田径运动会比赛结果的通知（乐教学〔2015〕27号）</a></div><a href='Detail.aspx?id=e7526b29-96e8-471c-a17d-43aa3d2e414e&code=64129' title='关于公布乐清市第55届中小学生田径运动会比赛结果的通知（乐教学〔2015〕27号）' target='_blank'><img src='../files/029/Image/2015-11/7c640894-e8fe-4315-9553-474fa7869054_all0.jpg' /></a></div><div class='changeDiv'><div><a href='Detail.aspx?id=7f450c77-d6d5-4419-8bce-728b397540f8&code=64129' title='我校田径队荣获乐清市初中组第五名'>我校田径队荣获乐清市初中组第五名</a></div><a href='Detail.aspx?id=7f450c77-d6d5-4419-8bce-728b397540f8&code=64129' title='我校田径队荣获乐清市初中组第五名' target='_blank'><img src='../files/029/Image/2015-11/de67d3a4-d34e-49c6-a930-8404540c517f_all0.jpg' /></a></div>
+	    <ul>
+	        <li><span>1</span></li><li><span>2</span></li><li><span>3</span></li><li><span>4</span></li><li><span>5</span></li>
+	    </ul>
+	</div>
+</div>
+<script type="text/javascript">
+    $('#change_32  div.changeDiv').soChange({
+        thumbObj:'#change_32 ul li',
+        thumbNowClass:'on',//自定义导航对象当前class为on
+        changeTime:4000//自定义切换时间为4000ms
+    });
+</script>
+        <div class="content-oneC">
+        	<div class="content-oneC_Tit">
+            	<div class="content-oneC_TitNav0 xyxw" id="xyxw0" onMouseMove="showA(0)">校园动态</div>
+				<div class="content-oneC_TitNav1 xyxw" id="xyxw1" onMouseMove="showA(1)">公告公示</div>
+				<div class="content-oneC_TitMore">
+					<span class="xyxwMore" id="xyxwMore0"><a href="CLists.aspx?code=64129" target="_blank">更多&gt;&gt;</a></span>
+					<span class="xyxwMore" id="xyxwMore1" style="display:none;"><a href="CLists.aspx?code=2407" target="_blank">更多&gt;&gt;</a></span>
+				</div>
+            </div>
+            <div class="content-oneC_List">
+				<ul class="Content1_List" id="Content1_List0">
+					<li><div class='oneC_List_tit'><a title='虹桥二中举行“家庭是孩子的第一所学校”家庭教育活动' target='_blank' href='Detail.aspx?id=898c01b7-abde-4d24-b4e5-2b1aff9a9863&code=64129'>虹桥二中举行“家庭是孩子的第一所学校”家庭教育活动</a></div><div class='oneC_List_data'>2018/03/22</div></li><li><div class='oneC_List_tit'><a title='虹桥二中举行“圆爱中国梦，成长心连心”大型感恩教育活动' target='_blank' href='Detail.aspx?id=91a7a3a2-0dec-4948-85da-e9e49d30b4f7&code=64129'>虹桥二中举行“圆爱中国梦，成长心连心”大型感恩教育活动</a></div><div class='oneC_List_data'>2017/10/30</div></li><li><div class='oneC_List_tit'><a title='我校举行做“四品八德”好学生演讲赛' target='_blank' href='Detail.aspx?id=f358d74a-a41f-40b0-8352-e2777ebac4bd&code=64129'>我校举行做“四品八德”好学生演讲赛</a></div><div class='oneC_List_data'>2016/12/01</div></li><li><div class='oneC_List_tit'><a title='虹桥镇第二中学颁发中考“合兴奖学金”' target='_blank' href='Detail.aspx?id=7e4afc36-536f-48da-8ef4-c793b73aabc5&code=64129'>虹桥镇第二中学颁发中考“合兴奖学金”</a></div><div class='oneC_List_data'>2016/09/10</div></li><li><div class='oneC_List_tit'><a title='我校开展“四品八德”主题班会' target='_blank' href='Detail.aspx?id=620d40ef-7621-4856-b76b-32902dfaa01d&code=64129'>我校开展“四品八德”主题班会</a></div><div class='oneC_List_data'>2016/06/01</div></li><li><div class='oneC_List_tit'><a title='虹桥二中美食节' target='_blank' href='Detail.aspx?id=e490f39f-3987-4963-93d7-2cb2fcd0cc9f&code=64129'>虹桥二中美食节</a></div><div class='oneC_List_data'>2016/01/02</div></li><li><div class='oneC_List_tit'><a title='我校如何应对新一轮课程改革' target='_blank' href='Detail.aspx?id=c72faa2e-8f35-4445-85ca-a5875ab58225&code=64129'>我校如何应对新一轮课程改革</a></div><div class='oneC_List_data'>2015/12/09</div></li><li><div class='oneC_List_tit'><a title='虹桥二中通过温州市功能室达标校验收' target='_blank' href='Detail.aspx?id=b538be57-0020-4c54-9969-83632b428fba&code=64129'>虹桥二中通过温州市功能室达标校验收</a></div><div class='oneC_List_data'>2015/12/05</div></li>
+				</ul>
+				<ul class="Content1_List" id="Content1_List1" style="display:none;">
+					<li><div class='oneC_List_tit'><a title='乐清市教育局关于做好2017年上半年中小学(幼儿园)教师培训自主选课和“提升工程”培训报名工作的通知 ' target='_blank' href='http://www.yqer.cn/Detail.aspx?id=7b937b0e-1d8a-43ea-ba49-a4004d14cb0e&code=55283'>乐清市教育局关于做好2017年上半年中小学(幼儿园)教师培训自主选课和“提升工程”培训报名工作的通知 </a></div><div class='oneC_List_data'>2016/12/15</div></li><li><div class='oneC_List_tit'><a title='乐清市教育局 乐清市体育事业发展局 关于公布乐清市第56届中小学生田径运动会比赛结果的通知' target='_blank' href='http://www.yqer.cn/Detail.aspx?id=35dacb3c-b3ec-4f56-9ffa-ae6eb3a10f6e&code=9244'>乐清市教育局 乐清市体育事业发展局 关于公布乐清市第56届中小学生田径运动会比赛结果的通知</a></div><div class='oneC_List_data'>2016/11/23</div></li><li><div class='oneC_List_tit'><a title='乐教办〔2016〕14号关于开展2016年全市第一届教师读书征文评选活动的通知' target='_blank' href='Detail.aspx?id=4b7d0a90-be02-42d7-9e7f-deee9e70e505&code=2407'>乐教办〔2016〕14号关于开展2016年全市第一届教师读书征文评选活动的通知</a></div><div class='oneC_List_data'>2016/09/22</div></li><li><div class='oneC_List_tit'><a title='乐教政〔2016〕35号乐清市教育局关于做好2016年下半年中小学(幼儿园)教师培训平台自主选课和“提升工程”培训报名工作的通知' target='_blank' href='Detail.aspx?id=ffea2f73-0f73-462a-b81e-e69e17eb25b2&code=2407'>乐教政〔2016〕35号乐清市教育局关于做好2016年下半年中小学(幼儿园)教师培训平台自主选课和“提升工程”培训报名工作的通知</a></div><div class='oneC_List_data'>2016/09/01</div></li><li><div class='oneC_List_tit'><a title='乐清市教育局关于开展2016年上半年乐清市中小学教师信息技术应用能力提升工程培训工作的通知' target='_blank' href='http://www.yqer.cn/Detail.aspx?id=551e1131-ceda-496e-9d01-ea43e8ad8ce1&code=55283'>乐清市教育局关于开展2016年上半年乐清市中小学教师信息技术应用能力提升工程培训工作的通知</a></div><div class='oneC_List_data'>2016/02/10</div></li><li><div class='oneC_List_tit'><a title='关于举行乐清市第二十二届中小学（幼儿园）教师教育教学  论文联评的通知' target='_blank' href='http://www.yqjys.net/html/jygw/wjtz/2994.html'>关于举行乐清市第二十二届中小学（幼儿园）教师教育教学  论文联评的通知</a></div><div class='oneC_List_data'>2016/01/06</div></li><li><div class='oneC_List_tit'><a title='乐清市虹桥镇第二中学章程' target='_blank' href='Detail.aspx?id=c3e07fd7-de8a-4e5f-9d02-695eb0165a13&code=2407'>乐清市虹桥镇第二中学章程</a></div><div class='oneC_List_data'>2015/12/17</div></li><li><div class='oneC_List_tit'><a title='乐清市虹桥镇第二中学章程（草案）公示' target='_blank' href='Detail.aspx?id=d40da487-227c-4038-9a85-4bcba597eec7&code=2407'>乐清市虹桥镇第二中学章程（草案）公示</a></div><div class='oneC_List_data'>2015/12/08</div></li>
+				</ul>
+			</div>
+        </div>
+        
+<script type="text/javascript">
+    function CheckInput() {
+        if (document.getElementById("jr").style.display == "block") {
+            document.getElementById("LoginName").value = "";
+            return true;
+        } else {
+            var loginName = document.getElementById("LoginName").value;
+            if (loginName == "") {
+                alert("用户名不能为空！");
+                return false;
+            }
+            var pwd = document.getElementById("pass").value;
+            if (pwd == "") {
+                alert("密码不能为空！");
+                return false;
+            }
+        }
+    }
+
+    function getd(id) {
+        $.post("Ajax.ashx?class=BUser&method=getu", { loginame: id }, function (data) {
+        });
+    }
+
+    function getpas(id) {
+        $.post("Ajax.ashx?class=BUser&method=getp", { pas: id }, function (data) {
+        });
+    }
+
+    function onP() {
+        str = document.getElementById("ContentPlaceHolder1_LoginAdmin_HiddenField1").value;
+        if (str != "") {
+            document.getElementById("mm1").style.display = "none";
+            document.getElementById("mm2").style.display = "none";
+            document.getElementById("userName").style.display = "none";
+            document.getElementById("btnSubmit").style.display = "none";
+            document.getElementById("jr").style.display = "block";
+            document.getElementById("jrs").style.display = "block";
+            document.getElementById("yhm").innerHTML = str;
+        }
+    }
+
+    //提交登录到数字校园的表单
+    function FormSubmit() {
+        var form = document.getElementById("form1");
+        form.submit();
+    }
+
+    function keydown(et) {
+        var e = window.event || et;
+        if (e.keyCode == 13) {
+            FormSubmit();
+        }
+    }
+
+    function onclickOut() {
+        var loginn = document.getElementById("ContentPlaceHolder1_LoginAdmin_HiddenField1").value;
+        $.post("Ajax.ashx?class=BUser&method=LogOut", { loginame: loginn }, function (data) {
+            document.getElementById("ContentPlaceHolder1_LoginAdmin_HiddenField1").value = "";
+            location.href = "http://szh.yqer.cn/LoginOut.aspx?ReturnUrl=http://www.hqez.net/Index.aspx";
+        });
+    }
+</script>
+<div class="content-oneR">
+    <div class="loginBox">
+        <table border="0" cellspacing="0" cellpadding="0">
+        <form method="post" action="http://szh.yqer.cn/simpleLogin.aspx?ReturnUrl=http://www.hqez.net/Index.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEzMjA3MTg0MGRk" />
+</div>
+
+          <tr id="mm1">
+            <td>
+            	<div class="loginText">
+                	<table border="0" cellspacing="0" cellpadding="0">
+                      <tr><td><input name="u" type="text" id="userName" onblur="getd(this.value)" /></td></tr>
+                      <tr><td class="TextC"></td></tr>
+                      <tr><td><input name="p" type="password" id="userPwd" onblur="getpas(this.value)"  onkeydown='if(event.keyCode==13){FormSubmit();}'></td></tr>
+                    </table>
+                </div>
+            </td>
+          </tr>
+          <tr id="mm2">
+            <td>
+                <input type="hidden" name="ctl00$ContentPlaceHolder1$LoginAdmin$HiddenField1" id="ContentPlaceHolder1_LoginAdmin_HiddenField1" />
+                <input type="button" name="btnSubmit" value="登录" class="loginSub" onclick="FormSubmit();" id="btnSubmit">
+            </td>
+          </tr>
+          <tr id="jr" style="display:none;">
+            <td>
+                <div class="loginText">
+                <a id="ContentPlaceHolder1_LoginAdmin_hyHt" title="后台管理" href="Admin/Main.aspx" target="_blank">后台管理</a>
+                <a id="ContentPlaceHolder1_LoginAdmin_lbEcampus" title="跳转到数字校园平台" target="_blank">数字校园</a>
+                </div>
+            </td>
+          </tr>
+          <tr id="jrs" style="display:none;">
+            <td><input type="button" name="btnOUt" value="退出" class="loginSub" onclick="onclickOut();" id="Button1"></td>
+          </tr>
+        </form>
+        </table>
+    </div>
+</div>
+    </div>
+    
+    <div class="content-two marginB12">
+    	
+<div class="twoNew">
+	<div class="twoNewTit">
+    	<div class="twoNewTitL"><a href='ColumnList.aspx?code=91953' go='#91953'>教师频道</a></div>
+        <div class="twoNewTitR"><a href="ColumnList.aspx?code=91953" target="_blank">更多&gt;&gt;</a></div>
+    </div>
+    <div class="twoNewList">
+    	<ul>
+            <li><div class='twoNewList_tit'><a title='虹二中〔2016〕32号关于开展阅读《与美国国家年度教师面对面》大讨论活动的通知' target='_blank' href='Detail.aspx?id=85169e5c-b9b3-4928-8936-6bb764212dd9&code=86558'>虹二中〔2016〕32号关于开展阅读《与美国国家年度教师面对面》大讨论活动的通知</a></div><div class='twoNewList_date'>2016/12/15</div></li><li><div class='twoNewList_tit'><a title='虹二中〔2016〕01号关于开展阅读《静悄悄的革命》大讨论活动的通知' target='_blank' href='Detail.aspx?id=3ec2c46e-6417-414b-b77b-c75b937bd1e1&code=86558'>虹二中〔2016〕01号关于开展阅读《静悄悄的革命》大讨论活动的通知</a></div><div class='twoNewList_date'>2016/04/28</div></li><li><div class='twoNewList_tit'><a title='乐清市教育局关于开展2016年上半年乐清市中小学教师信息技术应用能力提升工程培训工作的通知' target='_blank' href='http://www.yqer.cn/Detail.aspx?id=551e1131-ceda-496e-9d01-ea43e8ad8ce1&code=55283'>乐清市教育局关于开展2016年上半年乐清市中小学教师信息技术应用能力提升工程培训工作的通知</a></div><div class='twoNewList_date'>2016/02/10</div></li><li><div class='twoNewList_tit'><a title='关于开展阅读《一生的资本》大讨论活动的通知' target='_blank' href='Detail.aspx?id=c549a72f-c8b3-4f09-a0c2-148e5f690dfd&code=86558'>关于开展阅读《一生的资本》大讨论活动的通知</a></div><div class='twoNewList_date'>2015/12/28</div></li><li><div class='twoNewList_tit'><a title='我校如何应对新一轮课程改革' target='_blank' href='Detail.aspx?id=c72faa2e-8f35-4445-85ca-a5875ab58225&code=86558'>我校如何应对新一轮课程改革</a></div><div class='twoNewList_date'>2015/12/09</div></li><li><div class='twoNewList_tit'><a title='乐清市数学骨干教师  吴凤' target='_blank' href='Detail.aspx?id=afa249be-74de-4e68-a5a9-ba4cf6e65c45&code=35353'>乐清市数学骨干教师  吴凤</a></div><div class='twoNewList_date'>2015/11/15</div></li><li><div class='twoNewList_tit'><a title='温州市科学骨干教师  徐丕火' target='_blank' href='Detail.aspx?id=66a1581b-b408-4c5f-96a9-e823ab54db10&code=35353'>温州市科学骨干教师  徐丕火</a></div><div class='twoNewList_date'>2015/11/15</div></li>
+        </ul>
+    </div>
+</div>
+        <div class="twoNewC"></div>
+        
+<div class="twoNew">
+	<div class="twoNewTit">
+    	<div class="twoNewTitL"><a href='ColumnList.aspx?code=88602' go='#88602'>学生天地</a></div>
+        <div class="twoNewTitR"><a href="ColumnList.aspx?code=88602" target="_blank">更多&gt;&gt;</a></div>
+    </div>
+    <div class="twoNewList">
+    	<ul>
+            <li><div class='twoNewList_tit'><a title='虹桥镇第二中学颁发中考“合兴奖学金”' target='_blank' href='Detail.aspx?id=7e4afc36-536f-48da-8ef4-c793b73aabc5&code=28882'>虹桥镇第二中学颁发中考“合兴奖学金”</a></div><div class='twoNewList_date'>2016/09/10</div></li><li><div class='twoNewList_tit'><a title='2015学年第一学期文明寝室、文明个人' target='_blank' href='Detail.aspx?id=9b108ee0-3996-4cbb-9075-bb1cf8ba5a59&code=7688'>2015学年第一学期文明寝室、文明个人</a></div><div class='twoNewList_date'>2016/01/30</div></li><li><div class='twoNewList_tit'><a title='关于公布乐清市第55届中小学生田径运动会比赛结果的通知（乐教学〔2015〕27号）' target='_blank' href='http://www.yqer.cn/Detail.aspx?id=d951314a-26fd-451e-97e9-54a0b5d6aace&code=9244'>关于公布乐清市第55届中小学生田径运动会比赛结果的通知（乐教学〔2015〕27号）</a></div><div class='twoNewList_date'>2015/12/02</div></li><li><div class='twoNewList_tit'><a title='13级3班虞志杭（阳光少年）' target='_blank' href='Detail.aspx?id=20e38df6-7ca1-4084-bc51-1a7563774b00&code=28882'>13级3班虞志杭（阳光少年）</a></div><div class='twoNewList_date'>2015/11/23</div></li><li><div class='twoNewList_tit'><a title='13级3班薛莱茜（阳光少年）' target='_blank' href='Detail.aspx?id=e98a9886-3806-4469-9930-142bf4bfe17d&code=28882'>13级3班薛莱茜（阳光少年）</a></div><div class='twoNewList_date'>2015/11/23</div></li><li><div class='twoNewList_tit'><a title='13级3班吴小慧（优秀学生干部）' target='_blank' href='Detail.aspx?id=d2d4279e-835d-46e4-b545-1009d65337d8&code=28882'>13级3班吴小慧（优秀学生干部）</a></div><div class='twoNewList_date'>2015/11/23</div></li><li><div class='twoNewList_tit'><a title='13级3班姚国基（阳光少年）' target='_blank' href='Detail.aspx?id=44263629-1269-4791-9f81-b4bac9bb53aa&code=28882'>13级3班姚国基（阳光少年）</a></div><div class='twoNewList_date'>2015/11/23</div></li>
+        </ul>
+    </div>
+</div>
+        <div class="twoNewC2"></div>
+        
+
+<script type="text/javascript" src="XSK/jquery.SuperSlide.2.1.1.js"></script>
+<div class="twoNewR">
+	<div class="twoNewR_CList">
+        <ul>
+            <li><a target='_blank' href='ColumnList.aspx?code=68638'><img src='../files/029/Image/2016-11/8edb57c7-035f-48b2-8e7b-5692709b7aca.jpg' alt='拓展型课程'/></a></li><li><a target='_blank' href='http://yqbs.yqer.cn'><img src='../files/029/Image/2015-10/ff1ea6f8-952e-4cec-b091-c58d17d152f8.jpg' alt='乐清教育报送平台'/></a></li><li><a target='_blank' href='http://szh.yqer.cn'><img src='../files/029/Image/2015-10/01ccbc4f-8af3-4ec5-9423-2ad2d9fd6238.jpg' alt='数字化校园管理平台'/></a></li><li><a target='_blank' href='http://pxglpt.zjedu.gov.cn/'><img src='../files/029/Image/2015-10/f4d66423-0da8-41e7-9e2c-609b4bfff659.jpg' alt='浙江教师培训网'/></a></li><li><a target='_blank' href='http://www.zjxxt.com'><img src='../files/029/Image/2015-10/2465053b-ef2a-40c5-b51d-fff1af97a6b6.jpg' alt='校讯通平台'/></a></li><li><a target='_blank' href='http://www.baidu.com'><img src='../files/029/Image/2015-10/5b268d11-b538-4694-8ffc-5a6e3c5a1be2.jpg' alt='学生学籍管理'/></a></li><li><a target='_blank' href='http://www.zjjd.org/'><img src='../files/029/Image/2015-10/60e41088-73cf-4cda-888a-77fda334970d.jpg' alt='浙江禁毒网'/></a></li><li><a target='_blank' href='http://www.kaiwind.com/'><img src='../files/029/Image/2015-10/3afe58f0-67db-4b2e-a610-4978538efd0b.jpg' alt='凯风网'/></a></li><li><a target='_blank' href='Bjzy.aspx?code=31489'><img src='../files/029/Image/2015-10/8fa68df1-7933-4077-ab41-86bf8d67da21.jpg' alt='班级主页'/></a></li>
+        </ul>
+    </div>
+	<div class="twoNewR_Btn">
+    	<a class="prev"></a>
+        <div class="twoNewR_C"></div>
+        <a class="next"></a>
+        <ul></ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+	jQuery(".twoNewR").slide({titCell:".twoNewR_Btn ul",mainCell:".twoNewR_CList ul",autoPage:true,effect:"top",autoPlay:true,vis:4,trigger:"click"});
+</script>
+    </div>
+    <div class="content-three">
+        <object id="yc" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="990" align="middle" height="117">
+            <param name="_cx" value="29157">
+            <param name="_cy" value="7196">
+            <param name="FlashVars" value="">
+            <param name="Movie" value="XSK/flash/ggw.swf">
+            <param name="Src" value="XSK/flash/ggw.swf">
+            <param name="WMode" value="Transparent">
+            <param name="Play" value="-1">
+            <param name="Loop" value="-1">
+            <param name="Quality" value="High">
+            <param name="SAlign" value="">
+            <param name="Menu" value="-1">
+            <param name="Base" value="">
+            <param name="AllowScriptAccess" value="sameDomain">
+            <param name="Scale" value="ShowAll">
+            <param name="DeviceFont" value="0">
+            <param name="EmbedMovie" value="0">
+            <param name="BGColor" value="FFFFFF">
+            <param name="SWRemote" value="">
+            <param name="MovieData" value="">
+            <param name="SeamlessTabbing" value="1">
+            <param name="Profile" value="0">
+            <param name="ProfileAddress" value="">
+            <param name="ProfilePort" value="0">
+            <param name="AllowNetworking" value="all">
+            <param name="AllowFullScreen" value="false">
+            <param name="AllowFullScreenInteractive" value="false">
+            <param name="IsDependent" value="0">
+            <!--[if !IE]>-->
+            <object type="application/x-shockwave-flash" data="XSK/flash/ggw.swf" width="990" height="117">
+                <param name="movie" value="XSK/flash/ggw.swf">
+                <param name="quality" value="high">
+                <param name="bgcolor" value="#ffffff">
+                <param name="play" value="true">
+                <param name="loop" value="true">
+                <param name="wmode" value="transparent">
+                <param name="scale" value="showall">
+                <param name="menu" value="true">
+                <param name="devicefont" value="false">
+                <param name="salign" value="">
+                <param name="allowScriptAccess" value="sameDomain">
+                <!--<![endif]-->
+                <a href="http://www.adobe.com/go/getflash">
+                    <img src="UploadFiles/26815.gif" alt="获得 Adobe Flash Player">
+                </a>
+                <!--[if !IE]>-->
+            </object>
+            <!--<![endif]-->
+        </object>
+    </div>
+    
+    <div class="content-two marginB14">
+    	
+<div class="twoNew">
+	<div class="twoNewTit">
+    	<div class="twoNewTitL"><a href='ColumnList.aspx?code=71957' go='#71957'>教学科研</a></div>
+        <div class="twoNewTitR"><a href="ColumnList.aspx?code=71957" target="_blank">更多&gt;&gt;</a></div>
+    </div>
+    <div class="twoNewList">
+    	<ul>
+            <li><div class='twoNewList_tit'><a title='关于开展阅读《一生的资本》大讨论活动的通知' target='_blank' href='Detail.aspx?id=c549a72f-c8b3-4f09-a0c2-148e5f690dfd&code=67037'>关于开展阅读《一生的资本》大讨论活动的通知</a></div><div class='twoNewList_date'>2015/12/28</div></li><li><div class='twoNewList_tit'><a title='我校如何应对新一轮课程改革' target='_blank' href='Detail.aspx?id=c72faa2e-8f35-4445-85ca-a5875ab58225&code=63062'>我校如何应对新一轮课程改革</a></div><div class='twoNewList_date'>2015/12/09</div></li><li><div class='twoNewList_tit'><a title='虹桥二中骨干教师教学展示活动（1）' target='_blank' href='Detail.aspx?id=3c288e2c-0dbb-4a26-9912-cc9d9ace5f3c&code=45574'>虹桥二中骨干教师教学展示活动（1）</a></div><div class='twoNewList_date'>2015/11/25</div></li><li><div class='twoNewList_tit'><a title='虹桥学区青蓝工程教学展示活动（社政组）' target='_blank' href='Detail.aspx?id=e7c94652-20a5-4e42-ae73-ffdf12280477&code=45574'>虹桥学区青蓝工程教学展示活动（社政组）</a></div><div class='twoNewList_date'>2015/11/25</div></li><li><div class='twoNewList_tit'><a title='虹桥二中教师教科研工作考核办法' target='_blank' href='Detail.aspx?id=38971c00-7b93-423c-8a93-3844360833f3&code=40769'>虹桥二中教师教科研工作考核办法</a></div><div class='twoNewList_date'>2015/11/19</div></li><li><div class='twoNewList_tit'><a title='胡环同志对我校创建数字化校园进行指导、讲座' target='_blank' href='Detail.aspx?id=32067edd-630d-490d-af89-d6c656a97927&code=63062'>胡环同志对我校创建数字化校园进行指导、讲座</a></div><div class='twoNewList_date'>2015/10/13</div></li><li><div class='twoNewList_tit'><a title='温州市科学骨干教师“促进有效学习”研修班主题活动' target='_blank' href='Detail.aspx?id=5055565d-0122-41aa-a3f5-55100c39384e&code=67037'>温州市科学骨干教师“促进有效学习”研修班主题活动</a></div><div class='twoNewList_date'>2015/09/26</div></li>
+        </ul>
+    </div>
+</div>
+        <div class="twoNewC"></div>
+        
+<div class="twoNew">
+	<div class="twoNewTit">
+    	<div class="twoNewTitL"><a href='ColumnList.aspx?code=96514' go='#96514'>德育之窗</a></div>
+        <div class="twoNewTitR"><a href="ColumnList.aspx?code=96514" target="_blank">更多&gt;&gt;</a></div>
+    </div>
+    <div class="twoNewList">
+    	<ul>
+            <li><div class='twoNewList_tit'><a title='《虹桥二中家教导报》2017年第9期 不能养我一辈子，为何从小娇惯我？' target='_blank' href='Detail.aspx?id=a50d3ef6-2073-4b62-b827-2d3925c115dc&code=16683'>《虹桥二中家教导报》2017年第9期 不能养我一辈子，为何从小娇惯我？</a></div><div class='twoNewList_date'>2017/09/15</div></li><li><div class='twoNewList_tit'><a title='《虹桥二中家教导报》2017年第8期  停止夸孩子“你真聪明”' target='_blank' href='Detail.aspx?id=b44bf2a1-b27c-43ac-964b-92baf98868a0&code=16683'>《虹桥二中家教导报》2017年第8期  停止夸孩子“你真聪明”</a></div><div class='twoNewList_date'>2017/08/15</div></li><li><div class='twoNewList_tit'><a title='《虹桥二中家教导报》2017年第7期  一位妈妈写给叛逆儿子的信' target='_blank' href='Detail.aspx?id=f7f3690e-213c-4090-9c1a-4255e5a9639e&code=16683'>《虹桥二中家教导报》2017年第7期  一位妈妈写给叛逆儿子的信</a></div><div class='twoNewList_date'>2017/07/15</div></li><li><div class='twoNewList_tit'><a title='《虹桥二中家教导报》2017年第6期  伴孩子度过烦恼的青春期' target='_blank' href='Detail.aspx?id=981ad223-85f4-4175-a4b0-9f4daf08553a&code=16683'>《虹桥二中家教导报》2017年第6期  伴孩子度过烦恼的青春期</a></div><div class='twoNewList_date'>2017/06/15</div></li><li><div class='twoNewList_tit'><a title='《虹桥二中家教导报》2017年第5期  中国家庭教育十大败笔' target='_blank' href='Detail.aspx?id=84579843-a293-441a-a8c1-e5b558fe07c0&code=16683'>《虹桥二中家教导报》2017年第5期  中国家庭教育十大败笔</a></div><div class='twoNewList_date'>2017/05/15</div></li><li><div class='twoNewList_tit'><a title='单亲妈妈如何培养孩子健康心理' target='_blank' href='Detail.aspx?id=4b035214-8795-4c8f-9758-5038e60a75dd&code=3438'>单亲妈妈如何培养孩子健康心理</a></div><div class='twoNewList_date'>2017/04/19</div></li><li><div class='twoNewList_tit'><a title='《虹桥二中家教导报》2017年第4期  中国家长应该向西方学什么' target='_blank' href='Detail.aspx?id=2827043f-f91d-464c-8042-8c21af32e5c5&code=16683'>《虹桥二中家教导报》2017年第4期  中国家长应该向西方学什么</a></div><div class='twoNewList_date'>2017/04/15</div></li>
+        </ul>
+    </div>
+</div>
+        <div class="twoNewC3"></div>
+        
+<div class="twoNewR2">
+	<div class="twoNewR2_Tit">
+    	<div class="twoNewR2_TitL"><a href='ColumnList.aspx?code=59690' go='#59690'>党工共建</a></div>
+        <div class="twoNewR2_TitR"><a href="ColumnList.aspx?code=59690" target="_blank">更多+</a></div>
+    </div>
+    <div class="twoNewR2_List">
+    	<ul>
+            <li><a title='习近平说的“规矩”是指什么？' target='_blank' href='Detail.aspx?id=c0168907-2b39-4697-aa1a-91e67c9c4a26&code=82506'>习近平说的“规矩”是指什么？</a></li><li><a title='重读《为人民服务》 ' target='_blank' href='http://www.12371.cn/2015/04/14/ARTI1428979451104260.shtml'>重读《为人民服务》 </a></li><li><a title='中国共产党章程' target='_blank' href='http://www.12371.cn/special/zggcdzc/'>中国共产党章程</a></li><li><a title='习近平谈治国理政' target='_blank' href='http://www.12371.cn/special/blqs/xjptzglz/'>习近平谈治国理政</a></li><li><a title='习近平总书记系列重要讲话读本（2016年版）' target='_blank' href='http://www.12371.cn/special/blqs/xjpzsjxlzyjhdb2016/'>习近平总书记系列重要讲话读本（2016年版）</a></li><li><a title='中共虹桥镇二中支部委员会关于 “两学一做”学习教育计划安排的通知（虹二中党〔2016〕03号）' target='_blank' href='Detail.aspx?id=e6a15bc5-d4b7-481e-a38d-9e44bf2fe00f&code=899'>中共虹桥镇二中支部委员会关于 “两学一做”学习教育计划安排的通知（虹二中党〔2016〕03号）</a></li><li><a title='中共虹桥镇二中支部委员会印发《关于在学校开展“学党章党规、学系列讲话，做合格党员”学习教育实施方案》的通知（虹二中党〔2016〕02号）' target='_blank' href='Detail.aspx?id=33453d24-4f65-4ba7-ac7f-4322241882e6&code=899'>中共虹桥镇二中支部委员会印发《关于在学校开展“学党章党规、学系列讲话，做合格党员”学习教育实施方案》的通知（虹二中党〔2016〕02号）</a></li>
+        </ul>
+    </div>
+</div>
+    </div>
+    <div class="content-four">
+    	<div class="fourTit">
+        	<div class="fourTitNav0 jsfc" id="jsfc0" onMouseMove="showB(0)">教工风采</div>
+            <div class="fourTitNav1 jsfc" id="jsfc1" onMouseMove="showB(1)">学生风采</div>
+            <div class="fourTitMore">
+            	<span class="jsfcMore" id="jsfcMore0"><a href="CLists.aspx?code=35353" target="_blank">更多&gt;&gt;</a></span>
+                <span class="jsfcMore" id="jsfcMore1" style="display:none;"><a href="CLists.aspx?code=28882" target="_blank">更多&gt;&gt;</a></span>
+            </div>
+        </div>
+        <div class="fourList">
+        	<div class="jsfcList" id="jsfcList0">
+                
+<script type="text/javascript" language="JavaScript">
+    //调用向右滚动
+    function $P(id) { return document.getElementById(id) }
+
+    //向右滚动函数，demo包含demo1与demo2,speed是滚动速度，flag一个网页内有多个时设置为不同的任意字符。
+    //by 柳永法(yongfa365)'Blog　www.yongfa365.com
+    function toright(demo, demo1, demo2, speed, flag) {
+        demo = $P(demo); demo1 = $P(demo1); demo2 = $P(demo2)
+        demo2.innerHTML = demo1.innerHTML
+        function Marquee() {
+            if (demo.scrollLeft <= 0) {
+                demo.scrollLeft = demo2.offsetWidth
+            }
+            else {
+                demo.scrollLeft--
+            }
+        }
+        flag = setInterval(Marquee, speed)
+        demo.onmouseover = function () { clearInterval(flag); }
+        demo.onmouseout = function () { flag = setInterval(Marquee, speed); }
+    }
+</script>
+<div class="fourListBox" id="demo0">
+    <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td id="demo11" valign="top">
+                <table cellspacing="0" cellpadding="0" border="0">
+                    <tr align="center">
+                        
+                        <td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=afa249be-74de-4e68-a5a9-ba4cf6e65c45&code=35353'><img src='../files/029/Image/2015-11/ed7ced05-a6d0-4a98-b7f2-20812f46363a_all1.jpg' alt='乐清市数学骨干教师  吴凤' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=afa249be-74de-4e68-a5a9-ba4cf6e65c45&code=35353'>乐清市数学骨干教师  吴凤</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=66a1581b-b408-4c5f-96a9-e823ab54db10&code=35353'><img src='../files/029/Image/2015-11/e0ba91b6-0be5-4bff-a273-6a70d074ee59_all1.jpg' alt='温州市科学骨干教师  徐丕火' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=66a1581b-b408-4c5f-96a9-e823ab54db10&code=35353'>温州市科学骨干教师  徐丕火</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=eef90aea-f21b-40ee-a1d5-7ebbbe43b132&code=35353'><img src='../files/029/Image/2015-11/40baa6cf-bf80-4fba-84fa-882ff6e5ef7e_all1.jpg' alt='乐清市语文骨干教师 臧蓉蓉' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=eef90aea-f21b-40ee-a1d5-7ebbbe43b132&code=35353'>乐清市语文骨干教师 臧蓉蓉</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=14395df6-8a20-4dbd-853d-049721b845cd&code=35353'><img src='../files/029/Image/2015-11/8243cf13-9e34-4d13-837e-2fc98ebadd50_all1.jpg' alt='乐清市科学骨干教师 朱孟通' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=14395df6-8a20-4dbd-853d-049721b845cd&code=35353'>乐清市科学骨干教师 朱孟通</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=3d5bb80f-38af-4e5e-933a-e09b46f19152&code=35353'><img src='../files/029/Image/2015-11/829e3e70-453d-490f-9fe3-819221765090_all1.jpg' alt='乐清市科学骨干教师  张雪珍' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=3d5bb80f-38af-4e5e-933a-e09b46f19152&code=35353'>乐清市科学骨干教师  张雪珍</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=6de4d760-e182-45dd-8f49-b556c6100d76&code=35353'><img src='../files/029/Image/2015-11/fd27fd41-41fd-4079-a7af-7403b45b85d9_all1.jpg' alt='乐清市英语骨干教师  管莹莹' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=6de4d760-e182-45dd-8f49-b556c6100d76&code=35353'>乐清市英语骨干教师  管莹莹</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=27abf523-43b7-4ea0-8a1b-a791d626b9f1&code=35353'><img src='../files/029/Image/2015-11/7ea3ba0e-eafd-4831-a036-81030280167c_all1.jpg' alt='温州市社会骨干教师  黄秀云' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=27abf523-43b7-4ea0-8a1b-a791d626b9f1&code=35353'>温州市社会骨干教师  黄秀云</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=615d5dc0-3a2e-455c-bff1-9616f7dd809a&code=35353'><img src='../files/029/Image/2015-11/bf4e9922-05e2-4df9-88b1-cc7acf2cb389_all1.jpg' alt='温州市英语骨干教师  陈玲丽' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=615d5dc0-3a2e-455c-bff1-9616f7dd809a&code=35353'>温州市英语骨干教师  陈玲丽</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=24df9b8b-ad31-4555-9f74-9be8ebe811b7&code=35353'><img src='../files/029/Image/2015-11/eb58f192-0156-4545-8c32-222ce3abde06_all1.jpg' alt='温州市数学教坛中坚 陈微微' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=24df9b8b-ad31-4555-9f74-9be8ebe811b7&code=35353'>温州市数学教坛中坚 陈微微</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=e29783bc-cdd8-4fed-98b3-4974c1832261&code=35353'><img src='../files/029/Image/2015-11/cf2a803b-a165-40a1-9700-0253f87cbb29_all1.jpg' alt='乐清市数学骨干教师 叶晓丹' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=e29783bc-cdd8-4fed-98b3-4974c1832261&code=35353'>乐清市数学骨干教师 叶晓丹</a></div></div></td>
+                    </tr>
+                </table>
+            </td>
+            <td id='demo22' valign='top'></td>
+        </tr>
+    </table>
+    <script type='text/javascript' language='JavaScript'>toright('demo0', 'demo11', 'demo22', 20, 'hehe1123');</script>
+    
+</div>
+
+<script type="text/javascript">
+jQuery(".xyfgList").slide({mainCell:".xyfgPic ul",autoPlay:true,effect:"topMarquee",vis:2,interTime:30});
+</script>
+            </div>
+            <div class="jsfcList" id="jsfcList1" style="display:none;">
+                
+<script type="text/javascript" language="JavaScript">
+	//调用向右滚动
+	function $Ps(id) { return document.getElementById(id) }
+
+	//向右滚动函数，demo包含demo1与demo2,speed是滚动速度，flag一个网页内有多个时设置为不同的任意字符。
+	//by 柳永法(yongfa365)'Blog　www.yongfa365.com
+	function toright(demoA, demo1B, demo2C, speeds, flags) {
+		demoA = $Ps(demoA); demo1B = $Ps(demo1B); demo2C = $Ps(demo2C)
+		demo2C.innerHTML = demo1B.innerHTML
+		function Marquee_T() {
+			if (demoA.scrollLeft <= 0) {
+				demoA.scrollLeft = demo2C.offsetWidth
+			}
+			else {
+				demoA.scrollLeft--
+			}
+		}
+		flags = setInterval(Marquee_T, speeds)
+		demoA.onmouseover = function () { clearInterval(flags); }
+		demoA.onmouseout = function () { flags = setInterval(Marquee_T, speeds); }
+	}
+</script>
+<div class="fourListBox" id="demoA">
+    <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td id="demo1B" valign="top">
+                <table cellspacing="0" cellpadding="0" border="0">
+                    <tr align="center">
+                        
+                        <td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=20e38df6-7ca1-4084-bc51-1a7563774b00&code=28882'><img src='../files/029/Image/2015-11/1a670ad3-ddef-43c2-8cd0-ed418179698a_all1.jpg' alt='13级3班虞志杭（阳光少年）' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=20e38df6-7ca1-4084-bc51-1a7563774b00&code=28882'>13级3班虞志杭（阳光少年）</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=e98a9886-3806-4469-9930-142bf4bfe17d&code=28882'><img src='../files/029/Image/2015-11/61b1db0a-adec-49d0-b2ba-3466755e9d4a_all1.jpg' alt='13级3班薛莱茜（阳光少年）' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=e98a9886-3806-4469-9930-142bf4bfe17d&code=28882'>13级3班薛莱茜（阳光少年）</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=d2d4279e-835d-46e4-b545-1009d65337d8&code=28882'><img src='../files/029/Image/2015-11/297a2aac-67b2-484a-985b-f80d14e0626e_all1.jpg' alt='13级3班吴小慧（优秀学生干部）' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=d2d4279e-835d-46e4-b545-1009d65337d8&code=28882'>13级3班吴小慧（优秀学生干部）</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=44263629-1269-4791-9f81-b4bac9bb53aa&code=28882'><img src='../files/029/Image/2015-11/9d2fe7fd-439b-4b01-96f4-0529704f6102_all1.jpg' alt='13级3班姚国基（阳光少年）' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=44263629-1269-4791-9f81-b4bac9bb53aa&code=28882'>13级3班姚国基（阳光少年）</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=1977be0f-4286-4f50-93f8-97c7a6e26d1d&code=28882'><img src='../files/029/Image/2015-11/9b90b237-7c23-49cc-ba5e-ded5acf4a919_all1.jpg' alt='13级3班沈叶雯（阳光少年）' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=1977be0f-4286-4f50-93f8-97c7a6e26d1d&code=28882'>13级3班沈叶雯（阳光少年）</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=a529ea6b-9c70-44d7-ab81-e053bfbbbf37&code=28882'><img src='../files/029/Image/2015-11/a553d2d4-358b-4807-8841-ea2661dd5121_all1.jpg' alt='13级3班叶子依（阳光少年）' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=a529ea6b-9c70-44d7-ab81-e053bfbbbf37&code=28882'>13级3班叶子依（阳光少年）</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=d6967b48-4afa-4b0c-908a-1c012c592902&code=28882'><img src='../files/029/Image/2015-11/60a59045-bbf0-4417-beed-c7b800e4b17d_all1.jpg' alt='13级8班邹智豪（阳光少年）' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=d6967b48-4afa-4b0c-908a-1c012c592902&code=28882'>13级8班邹智豪（阳光少年）</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=bf044a76-2a54-4239-8902-096b3bc3e8bb&code=28882'><img src='../files/029/Image/2015-11/f80f2e8f-aac6-42fe-8ed2-7a9dff776272_all1.jpg' alt='13级8班朱良伟（优秀学生干部）' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=bf044a76-2a54-4239-8902-096b3bc3e8bb&code=28882'>13级8班朱良伟（优秀学生干部）</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=d1b7ade5-bdeb-49a3-abba-1b7448d2dab2&code=28882'><img src='../files/029/Image/2015-11/b5b663d4-6a8f-42a8-94bc-07da2c8bf6b8_all1.jpg' alt='13级6班林志森（优秀学生干部）' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=d1b7ade5-bdeb-49a3-abba-1b7448d2dab2&code=28882'>13级6班林志森（优秀学生干部）</a></div></div></td><td><div class='jsfcPic'><div class='jsfcPic_img'><a target='_blank' href='Detail.aspx?id=8d3703fa-4fd3-4009-92a6-f7acc5d01787&code=28882'><img src='../files/029/Image/2015-11/1d136f4d-2733-41e8-9c84-802a0623d3ce_all1.jpg' alt='13级6班李雨谌（阳光少年）' /></a></div><div class='jsfcPic_wz'><a href='Detail.aspx?id=8d3703fa-4fd3-4009-92a6-f7acc5d01787&code=28882'>13级6班李雨谌（阳光少年）</a></div></div></td>
+                    </tr>
+                </table>
+            </td>
+            <td id='demo2C' valign='top'></td>
+        </tr>
+    </table>
+    <script type='text/javascript' language='JavaScript'>toright('demoA', 'demo1B', 'demo2C', 20, 'hehe1125');</script>
+    
+</div>
+            </div>
+        </div>
+    </div>
+    
+    
+<script type="text/javascript">
+function openNew(obj) {
+    if (obj.value != null && obj.value != "") {
+        window.open(obj.value);
+    }
+}  
+</script>
+<div class="content-five">
+    <div class="yqljBox">
+        <ul>
+            
+            <li>
+            <select onchange="openNew(this)">
+                <option value="">--温州市有关网站--</option>
+                <option value='http://nic.wzer.net/' onchange='window.open(this.value)'>温州市电化教育馆</option><option value='http://www.wzjypgy.com/' onchange='window.open(this.value)'>温州教育评估网</option><option value='http://www.wzpx.cn/' onchange='window.open(this.value)'>温州教师教育网</option><option value='http://www.0577ms.net/' onchange='window.open(this.value)'>温州名师网</option><option value='http://www.wzjypgy.com/' onchange='window.open(this.value)'>温州市教育评估院</option><option value='http://interlibsso.wzlib.cn/interlibSSO/main/index.html' onchange='window.open(this.value)'>温州市图书馆数字资源服务平台</option><option value='http://www.wzpx.cn/' onchange='window.open(this.value)'>温州市教师教育院</option><option value='http://www.wzjky.net/' onchange='window.open(this.value)'>温州教研网</option>
+            </select>
+            </li>
+            
+            <li>
+            <select onchange="openNew(this)">
+                <option value="">--各县市区教育网--</option>
+                <option value='http://www.lwedu.cn/' onchange='window.open(this.value)'>龙湾教育网</option><option value='http://www.wcedu.org' onchange='window.open(this.value)'>文成教育网</option><option value='http://www.dtedu.gov.cn' onchange='window.open(this.value)'>洞头教育网</option><option value='http://www.tsedu.com.cn/' onchange='window.open(this.value)'>泰顺教育网</option><option value='http://www.pyedu.cc' onchange='window.open(this.value)'>平阳教育网</option><option value='http://www.rajyj.com' onchange='window.open(this.value)'>瑞安教育信息网</option><option value='http://www.cnjyw.net/' onchange='window.open(this.value)'>苍南教育网</option>
+            </select>
+            </li>
+            
+            <li>
+            <select onchange="openNew(this)">
+                <option value="">--本地教育网站--</option>
+                <option value='http://www.yqjsjx.cn/' onchange='window.open(this.value)'>乐清市教师进修学校</option><option value='http://www.yqjys.net/' onchange='window.open(this.value)'>乐清教科研网</option><option value='http://www.yqer.cn' onchange='window.open(this.value)'>乐清市教育局</option>
+            </select>
+            </li>
+            
+            <li>
+            <select onchange="openNew(this)">
+                <option value="">--上级单位--</option>
+                <option value='http://www.moe.gov.cn/' onchange='window.open(this.value)'>中华人民共和国教育部</option><option value='http://www.zjedu.gov.cn/' onchange='window.open(this.value)'>浙江省教育厅</option><option value='http://www.zjjys.org/' onchange='window.open(this.value)'>浙江教研网</option>
+            </select>
+            </li>
+            
+            <li>
+            <select onchange="openNew(this)">
+                <option value="">--兄弟学校--</option>
+                <option value='http://web.yqez.com/' onchange='window.open(this.value)'>乐清市第二中学</option><option value='http://new.hqsyzx.org/' onchange='window.open(this.value)'>乐清市虹桥镇实验中学</option><option value='http://www.yqhqyz.com' onchange='window.open(this.value)'>虹桥一中</option><option value='http://www.hongzhong.com/' onchange='window.open(this.value)'>虹桥中学</option><option value='http://www.yqzx.cn/' onchange='window.open(this.value)'>乐清中学</option>
+            </select>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+</div>
+
+
+<style type="text/css">
+.fixediv,.fixediv2{z-index:9999;}
+.fixediv img,.fixediv2 img{float:left;}
+.fixediv a.close,.fixediv2 a.close{display:block;height:30px;line-height:30px;font-size:14px;color:#5e5e5e;text-decoration:none;text-align:center;}
+
+.leftadv{left:0px;}
+.rightadv{right:0px;}
+</style>
+
+<!--单边广告开始-->
+<div class="fixediv2 leftadv">
+	<a href="http://dlib.wzer.net/index/lqhqzdezx"target="_blank"><img src="../files/float/2016-01/635893087486547500.jpg" ></a>
+	<a class="close" href="javascript:void(0);">关闭广告</a>
+</div>
+<!--单边广告结束-->
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".fixediv a").click(function(){
+		$(".fixediv").fadeOut(400);
+	});
+	$(".fixediv2 a").click(function(){
+		$(".fixediv2").fadeOut(400);
+	});
+	$(".fixediv").floatadv();
+	$(".fixediv2").floatadv();
+});
+
+jQuery.fn.floatadv = function(loaded) {
+	var obj = this;
+	body_height = parseInt($(window).height());
+	block_height = parseInt(obj.height());
+	
+	top_position = parseInt((block_height/2) + $(window).scrollTop());
+	if (body_height<block_height) { top_position = 0 + $(window).scrollTop(); };
+	
+	if(!loaded) {
+		obj.css({'position': 'absolute'});
+		obj.css({ 'top': top_position });
+		$(window).bind('resize', function() { 
+			obj.floatadv(!loaded);
+		});
+		$(window).bind('scroll', function() { 
+			obj.floatadv(!loaded);
+		});
+	} else {
+		obj.stop();
+		obj.css({'position': 'absolute'});
+		obj.animate({ 'top': top_position }, 400, 'linear');
+	}
+}
+</script>
+<div id="wxt_pic"><img src="XSK/images/wx_pic.jpg" /><a href="http://www.70zxt.com/wxt.htm" target="_blank"><img src="XSK/images/ewm_pic.jpg" onmouseout="this.src='XSK/images/ewm_pic.jpg'" onmousemove="this.src='XSK/images/ewm_pic_hov.jpg'" /></a></div>
+
+<script type="text/javascript">
+	function showA(n){
+		$(".xyxw").removeClass("content-oneC_TitNav0");
+		$(".xyxw").addClass("content-oneC_TitNav1");
+		$("#xyxw"+n).addClass("content-oneC_TitNav0");
+		$("#xyxw"+n).removeClass("content-oneC_TitNav1");
+		$(".Content1_List").hide();
+		$("#Content1_List"+n).show();
+		$(".xyxwMore").hide();
+		$("#xyxwMore"+n).show();
+	}
+	function showB(n){
+		$(".jsfc").removeClass("fourTitNav0");
+		$(".jsfc").addClass("fourTitNav1");
+		$("#jsfc"+n).addClass("fourTitNav0");
+		$("#jsfc"+n).removeClass("fourTitNav1");
+		$(".jsfcList").hide();
+		$("#jsfcList"+n).show();
+		$(".jsfcMore").hide();
+		$("#jsfcMore"+n).show();
+	}
+</script>
+
+	<div class="footBox">
+		版权所有：乐清市虹桥镇第二中学  备案号：浙ICP备12042713号-1  <a href="Admin/Login.aspx" target="_blank">网站后台管理登陆</a><br />
+		学校地址：乐清市虹桥镇育智路2号  邮政编码：325608  联系电话：0577-57123298  E-mail：hqzdezx@163.com <br />
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript   src='http://dcs.conac.cn/js/12/188/1417/41043887/CA121881417410438870003.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<a href="http://webscan.360.cn/index/checkwebsite/url/hqez.net"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/aa600ebde313b5aca08732f7e6aefcfd"/></a><a href="http://www.netpolice.gov.cn" target="_blank"><img src="XSK/images/wj_img.gif" /></a>
+
+	</div>
+</div>
+</body>
+</html>

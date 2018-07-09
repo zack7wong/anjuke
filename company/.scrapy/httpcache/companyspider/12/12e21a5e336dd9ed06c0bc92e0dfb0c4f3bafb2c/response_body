@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="x-ua-compatible" content="ie=7" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>怀铁一中首页--(湖南省示范性中学)</title>
+<link href="/css/index1.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/skin/default/js/tabs.js"></script>
+<script type="text/javascript" src="/e/data/js/ajax.js"></script>
+<script type="text/javascript">
+     var isIe=(document.all)?true:false; 
+
+	function getOSInfo()   //获取系统的环境
+        {
+            var ua=navigator.userAgent,type=0,system,agent=ua;
+           
+            var isIE = 0;
+            try{window.external.ShowBrowserUI(isIE);}catch(e){isIE=1;}
+           
+            if(ua.indexOf("Maxthon")>-1&&!isIE)
+            {
+                type="Maxthon";
+            }
+            else if(ua.indexOf("TencentTraveler")>-1&&!isIE)
+            {
+                type="TT";
+            }
+            else if(ua.indexOf("MSIE 6.0")>-1)
+            {
+                type="IE6";
+            }
+            else if(ua.indexOf("MSIE 7.0")>-1)
+            {
+                type="IE7";
+            }
+            else if(ua.indexOf("MSIE 8.0")>-1)
+            {
+                type="IE8";
+            }
+            else if(ua.indexOf("Firefox")>-1)
+            {
+                type="Firefox";
+            }
+            else if(ua.indexOf("Chrome")>-1)
+            {
+                type="Chrome";
+            }
+            else if(ua.indexOf("Safari")>-1&&ua.indexOf("Chrome")==-1)
+            {
+                type="Safari";
+            }
+            else if(ua.indexOf("Opera")>-1)
+            {
+                type="Opera";
+            }
+            else
+            {
+                type="Others";
+            };
+            
+              return type;
+   }
+		
+//设置图片		
+function Setpic(id,pic)
+{
+id.src=pic;
+}
+
+//显示块
+function showElement(id,w,h,font)
+{
+	
+var os=getOSInfo();
+var oid=document.getElementById(id);
+
+oldX= screen.width;
+oldY= screen.height;
+
+  oid.style.left=(oldX-w)/2+"px";
+  oid.style.top=100+"px";
+  oid.style.display="block";
+  oid.style.width=w+"px";
+  oid.style.height=h+"px";
+  oid.style.fontSize=font+"px";
+
+  if(os=="IE6")
+  oid.style.position="absolute";
+  //oid.innerHTML=obj;
+}
+
+//显示块
+function showElementPos(id,x,y,w,h,font)
+{
+ var oid=document.getElementById(id);
+//  var e = event || window.event;
+  oid.style.left=x;
+  oid.style.top=y;
+  oid.style.display="block";
+ 
+  oid.style.width=w;
+  oid.style.height=h;
+  oid.style.FontSize=font;
+ // oid.innerHTML=obj;
+}
+
+//设置信息
+function SetInfo(id,info)
+{
+ var oid=document.getElementById(id);
+  oid.innerHTML=info;
+}
+
+
+//设置信息
+function SetBxlnInfo(event,id,w,h,font,title,info)
+{
+ showElement(id,w,h,font);
+ SetInfo("bxln_info",info);
+ SetInfo("bxln_title",title);
+}
+
+function SetBxlnUrl(event,id,w,h,font,title,url)
+{
+ 
+ var ob=document.getElementById(id);
+ var bWidth=parseInt(document.documentElement.scrollWidth);
+ var bHeight=parseInt(document.documentElement.scrollHeight);
+ var back=document.createElement("div");
+ back.id="back";
+ var styleStr="top:0px;left:0px;position:absolute;background:#666;width:"+bWidth+"px;height:"+bHeight+"px;";
+ styleStr+=(isIe)?"filter:alpha(opacity=0);":"opacity:0;";
+ back.style.cssText=styleStr;
+ document.body.appendChild(back);
+ if(isIe)
+{
+ob.filters.alpha.opacity=0;
+
+}
+else
+{
+ob.style.opacity=0;
+
+}
+
+ showBackground(back,60);
+ showBackground(ob,100);
+ showElement(id,w,h,font);
+ showinfo(url,"bxln_info");
+ SetInfo("bxln_title",title);
+}
+
+//隐藏块
+function hideElement(id)
+{
+if(document.getElementById('back')!=null)
+{
+document.getElementById('back').parentNode.removeChild(document.getElementById('back'));
+
+}
+
+
+ document.getElementById(id).style.display="none";
+ if(isIe)
+{
+ document.getElementById(id).filters.alpha.opacity=0;
+}
+else{
+ document.getElementById(id).style.opacity=0;
+}
+
+}
+
+
+//让背景渐渐变暗
+function showBackground(obj,endInt)
+{
+if(isIe)
+{
+obj.filters.alpha.opacity+=5;
+if(obj.filters.alpha.opacity<endInt)
+{
+setTimeout(function(){showBackground(obj,endInt)},1);
+}
+}else{
+var al=parseFloat(obj.style.opacity);al+=0.05;
+obj.style.opacity=al;
+if(al<(endInt/100))
+{setTimeout(function(){showBackground(obj,endInt)},1);}
+}
+}
+
+function scrollDoor(){
+}
+scrollDoor.prototype = {
+sd : function(menus,divs,openClass,closeClass){
+var _this = this;
+if(menus.length != divs.length)
+{
+alert("菜单层数量和内容层数量不一样!");
+return false;
+}
+for(var i = 0 ; i < menus.length ; i++)
+{
+_this.$(menus[i]).value = i;
+_this.$(menus[i]).onmouseover = function(){
+for(var j = 0 ; j < menus.length ; j++)
+{
+_this.$(menus[j]).className = closeClass;
+_this.$(divs[j]).style.display = "none";
+}
+_this.$(menus[this.value]).className = openClass;
+_this.$(divs[this.value]).style.display = "block";
+}
+}
+},
+$ : function(oid){
+if(typeof(oid) == "string")
+return document.getElementById(oid);
+return oid;
+}
+}
+window.onload = function(){
+var SDmodel = new scrollDoor();
+SDmodel.sd(["jw","jy","dy"],["single_jw","single_jy","single_dy"],"news_title_active","news_title_normal");
+SDmodel.sd(["xsh","zzt","xxbb"],["single_xsh","single_zzt","single_xxbb"],"news_title_active","news_title_normal");
+//SDmodel.sd(["mmm01","mmm02","mmm03","mmm04","mmm05"],["ccc01","ccc02","ccc03","ccc04","ccc05"],"sd01","sd02");
+//加载办学理念特效
+
+}
+</script>
+
+<style type="text/css">
+
+
+#flash1{ width:1100px;height:331px;margin:auto;}
+
+#flash{ width:1100px;height:331px;margin:auto;display:none;}
+
+</style>
+
+</head>
+<body>
+
+
+<!--菜单-->
+<div class="titlebk">
+<div class="mymenu">
+   <a href="/index.html" class="menu">首页</a> | <a href="/column/xygk/" class="menu">校园概况</a> | <a href="/column/xwgk/" class="menu">  校务公开</a> | <a href="/column/dqgz" class="menu">党群工作</a> | <a href="/column/xxtd" class="menu">学生天地</a> | <a href="/column/jxky" class="menu">教学科研</a> | <a href="/column/dyjw" class="menu">德育经纬</a> | <a href="/column/jsbz2013" class="menu">教师风采</a> | <a href="/column/zsks" class="menu">招生考试</a> | <a href="#" class="menu">名师工作室</a> | <a href="wxst/" class="menu">新绿文学社</a>  |<a href="http://www.hhtyz.com/zonghe/"  class="menu" > 阳光服务</a>
+</div> <!--endmymenu-->
+</div>  <!--endtitlebk-->
+<!--end菜单-->
+
+<!--头部-->
+<div class="header">
+
+<div id="flash">
+  <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1100" height="331">
+    <param name="movie" value="swf/main.swf" />
+    <param name="quality" value="high" />
+    <param name="wmode" value="transparent" />
+    <param name="swfversion" value="15.0.0.0" />
+    <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+    <param name="expressinstall" value="Scripts/expressInstall.swf" />
+    <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+    <!--[if !IE]>-->
+    <object type="application/x-shockwave-flash" data="swf/main.swf" width="1100" height="331">
+      <!--<![endif]-->
+      <param name="quality" value="high" />
+      <param name="wmode" value="transparent" />
+      <param name="swfversion" value="15.0.0.0" />
+      <param name="expressinstall" value="Scripts/expressInstall.swf" />
+      <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+      <div>
+        <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+        <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+          <!--[if !IE]>-->
+    </object>
+    <!--<![endif]-->
+  </object>
+ </div>
+<div id="flash1"><a href="/shzy"><img src="images/header3.jpg" width="1100" height="367" /></a>
+ 
+ </div>
+
+<div class="wx">微信公众号<br /><img src="images/wx.jpg" width="129" height="129" />
+ <br />动态,咨询,成绩查询<br />&nbsp;
+ </div>
+
+
+</div>
+
+
+<script language="javascript">
+
+//setTimeout("document.getElementById('flash').style.display='block'",30000);//设置广告显示时间
+ //setTimeout("document.getElementById('flash1').style.display='none'",30000);//设置广告显示时间
+
+</script>
+
+<!--<![endif]-->
+
+</div>  
+
+<!--endheader-->
+<!--end头部-->
+
+<!--第一层-->
+<div class="container">
+ 
+ <div class="left">
+   
+   <div class="container_newsheader">  <!--标题-->
+      <div class="newsheader_l"><img src="images/index_t1.jpg" width="15" height="34" /></div>
+      <div class="newsheader_title">关于我们</div>
+      <div class="newsheader_r"><img src="images/index_t2.jpg" width="15" height="34" /></div> 
+   </div><!--end标题-->
+   
+   <!--关于我们正文-->
+  
+    <div id="b1">
+            <div id="left">
+            <img src="images/ld_1.jpg" width="120" height="114" />
+            
+            <div id="xzjy" onclick="SetBxlnUrl(event,'bxln',900,550,20,'校长寄语','/d/about/getinfo.php?info=3');"> <a href="#" class="cblack" >校长寄语</a></div>
+            </div>
+                             
+            <div id="right">
+                
+                   <li  onclick="SetBxlnUrl(event,'bxln',500,400,20,'我们的办学理念','/d/about/getinfo.php?info=1');"  > <a href="#" class="cblack" >我们的办学理念</a></li>
+                   <li  onclick="SetBxlnUrl(event,'bxln',900,690,14,'我们取得的成绩','/d/about/getinfo.php?info=2');"  > <a href="#" class="cblack" > 我们取得的成绩</a></li>
+                   <li  onclick="SetBxlnUrl(event,'bxln',700,520,20,'睿智的管理团队','/d/about/getinfo.php?info=4');"> <a href="#" class="cblack" >睿智的管理团队</a> </li>                
+                   <li><a href="/column/jsbz2013" class="cblack" target="_blank"> 敬业的教师队伍 </a></li>
+                   <li><a href="schpicture/xygj" class="cblack" > 优美的校园环境</a> </li>
+            </div>  
+          
+           <div id="tici">
+                   <img src="images/index_t3.jpg" width="162" height="98" />
+           </div>
+          
+       </div>  
+          
+      
+ </div>     
+ <!--end关于我们正文--> 
+ <div class="middle">
+   <div class="container_newsheader">  <!--标题-->
+      <div class="newsheader_l"><img src="images/index_t1.jpg" width="15" height="34" /></div>
+      <div class="newsheader_title">新闻动态</div>
+      <div class="newsheader_r"><img src="images/index_t2.jpg" width="15" height="34" /></div> 
+   </div><!--end标题-->
+   <div class="news_body">
+   
+     <div id="left"><!--图片新闻-->
+          <script type="text/javascript">
+<!--
+ var interval_time=3;
+ var focus_width=240;
+ var focus_height=180;
+ var text_height=22;
+ var text_align="center";
+ var swf_height = focus_height+text_height;
+ var swfpath="/e/data/images/pixviewer.swf";
+ var swfpatha="/e/data/images/pixviewer.swf";
+ 
+ var pics="%2Fd%2Ffile%2Fhtyznews%2Fxydt%2F%2F19%2F28bbd6afe72a540f51e14493e6e1f3cd.jpg%7C%2Fd%2Ffile%2Fhtyznews%2Fxydt%2F%2F22%2Fb1fe0cbe913cf66c45e8cc89558a13be.jpg%7C%2Fd%2Ffile%2Fhtyznews%2Fxydt%2F%2F44%2Fd149a269888b02cf6f4f0f74ee50a79a.jpg%7C%2Fd%2Ffile%2Fhtyznews%2Fxydt%2F%2F11%2F55bee6cb7bfadd9d91d8295ed0dc2d41.jpg%7C%2Fd%2Ffile%2Fhtyznews%2Fxydt%2F%2F12%2F81b71a89c8ce73d2948152a45a99f33e.jpg%7C%2Fd%2Ffile%2Fhtyznews%2Fxydt%2F%2F46%2Fddfb6c590a22f20c4c591feef35f8458.jpg";
+ var links="%2Fhtyznews%2Fxydt%2F2018-05-18%2F6030.html%7C%2Fhtyznews%2Fxydt%2F2018-03-07%2F5665.html%7C%2Fhtyznews%2Fxydt%2F2017-12-15%2F5660.html%7C%2Fhtyznews%2Fxydt%2F2017-12-04%2F5637.html%7C%2Fhtyznews%2Fxydt%2F2017-11-19%2F5510.html%7C%2Fhtyznews%2Fxydt%2F2017-11-13%2F5502.html";
+ var texts="怀铁一中召开新高考改革试点经验|怀铁一中举行流感、结核病防控知|学习贯彻党的十九大精神，我校开|怀铁一中足球队荣获2017年高中足|冬日，我们去远足(图文)|我校被市教育局授予 “2016-2017";
+ 
+ document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">');
+ document.write('<param name="movie" value="'+swfpath+'"><param name="quality" value="high"><param name="bgcolor" value="#ffffff">');
+ document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+ document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'&text_align='+text_align+'&interval_time='+interval_time+'">');
+ document.write('<embed src="'+swfpath+'" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'&text_align='+text_align+'&interval_time='+interval_time+'" menu="false" bgcolor="#ffffff" quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+ document.write('</object>');
+//-->
+</script>
+	           
+<div style="margin-top:6px;" >  
+ <li> <a href="/htyznews/xydt/2014-04-14/1800.html" title=“学校专题片" ><font color='#FF0000'><strong>专题片</strong></font></a>&nbsp;&nbsp;<a href="http://www.hhtyz.com/d/wk/" title="第一届微课大赛作品展"><font color='#ff0000'><strong>第一届微课大赛作品展</strong></font></a></li>
+
+  <li><a href="http://www.hhtyz.com/d/tv/339.html" title="怀化电视台对我校报道"><font color='#ff0000'><strong>怀化电视台对我校系列报道</strong></font></a></li>
+</div>
+   </div><!--end图片新闻-->
+     
+     
+     <div id="right">
+        <li><a href="/htyznews/xydt/2018-05-21/6047.html" title="空军工程大学来我校招生宣传"  target="_blank" >空军工程大学来我校招生宣传</a></li><li><a href="/htyznews/xydt/2018-05-18/6030.html" title="怀铁一中召开新高考改革试点经验研讨会(图文)"  target="_blank" >怀铁一中召开新高考改革试点经</a></li><li><a href="/htyznews/xydt/2018-05-04/6005.html" title="高二年级组学考表彰大会"  target="_blank" >高二年级组学考表彰大会</a></li><li><a href="/htyznews/xydt/2018-05-03/5991.html" title="高一年级举行期中考试总结暨表彰大会"  target="_blank" >高一年级举行期中考试总结暨表</a></li><li><a href="/htyznews/xydt/2018-04-26/5940.html" title="怀铁一中2018年招生简章"  target="_blank" >怀铁一中2018年招生简章</a></li><li><a href="/htyznews/xydt/2018-04-18/5925.html" title="怀铁一中第五节校园歌手大赛"  target="_blank" >怀铁一中第五节校园歌手大赛</a></li><li><a href="/htyznews/xydt/2018-04-16/5908.html" title="怀铁一中第五届社团展示活动"  target="_blank" >怀铁一中第五届社团展示活动</a></li><li><a href="/htyznews/xydt/2018-04-07/5882.html" title="砺拏云志寒窗挑灯苦读抟鹏翼    抚豪壮情六月背水勇战占鳌头——怀铁一中高二年级隆重举行学考誓师动员大会"  target="_blank" >砺拏云志寒窗挑灯苦读抟鹏翼  </a></li><li><a href="/htyznews/xydt/2018-04-03/5864.html" title="高二年级自主招生宣讲会"  target="_blank" >高二年级自主招生宣讲会</a></li>     
+     </div>
+   <div class="more"></div>
+
+
+     <div class="more"><a href="htyznews/xydt/"> <img src="images/index_t5.jpg" width="67" height="28" /><a></div>
+   </div>
+ 
+ </div>
+ 
+ <div class="right">
+   <div class="container_newsheader">  <!--标题-->
+      <div class="newsheader_l"><img src="images/index_t1.jpg" width="15" height="34" /></div>
+      <div class="newsheader_title">最新公告</div>
+      <div class="newsheader_r"><img src="images/index_t2.jpg" width="15" height="34" /></div> 
+   </div><!--end标题-->
+   <div class="news_body">
+   <div id="single">
+       <li><a href="/htyznews/gg/2018-05-06/6007.html" title="市直高中2018年秋季音体美特长生招生专业测试及资格认定通知(图文)"  target="_blank" ><strong><font color='#FF0000'>市直高中2018年秋季音体美特长</font></strong></a></li><li><a href="/htyznews/gg/2018-04-26/5939.html" title="怀铁一中2018年招生简章"  target="_blank" >怀铁一中2018年招生简章</a></li><li><a href="/htyznews/gg/2018-04-24/5933.html" title="2018年我校招生负责人及联系方式"  target="_blank" ><strong><font color='#FF0000'>2018年我校招生负责人及联系方</font></strong></a></li><li><a href="/htyznews/gg/2018-03-13/5752.html" title="关于举办第十五届湖南省中小学机器人竞赛的通知"  target="_blank" >关于举办第十五届湖南省中小学</a></li><li><a href="/htyznews/gg/2018-03-12/5700.html" title="第十九届湖南省中小学电脑制作活动"  target="_blank" >第十九届湖南省中小学电脑制作</a></li><li><a href="/htyznews/gg/2018-03-06/5662.html" title="怀铁一中班级学习小组组建模版"  target="_blank" >怀铁一中班级学习小组组建模版</a></li><li><a href="/htyznews/gg/2018-04-24/5934.html" title="怀化铁路第一中学2018年预算公开"  target="_blank" >怀化铁路第一中学2018年预算公</a></li>     </div>
+  <div class="more"></div>
+
+    <div class="more"><a href="htyznews/gg/"> <img src="images/index_t5.jpg" width="67" height="28" /><a></div>
+   </div>
+ </div>
+
+</div>  
+<!--endontainer-->
+<!--end第一层-->
+
+<!--办公及应用-->
+<div class="container1">
+ 
+  
+<div id="container1_pictitle" >
+      <img src="images/index_t4.jpg" width="80" height="160" />
+  </div>  
+ 
+ <div id="container1_piclink">
+ 
+<!--
+ <div id="tool">
+         <script type="text/javascript" >
+          showinfo('/d/tool/getdate.php','tool');
+          </script>
+      </div>  
+
+
+  <div id="weather">    
+          <iframe name="weather_inc" src="http://tianqi.xixik.com/cframe/1" width="330" height="30" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+  </div> 
+
+-->
+
+    <li><a href="/office/wsbm/"  ><img src="images/index_pic5.jpg" width="87" height="84" /></a><a href="/office/wsbm/"  class="cblack" >网上报名</a></li>
+   <li><a href="/e/cjforweb"  ><img src="images/index_pic2.jpg" width="87" height="84" /></a><a href="/e/cjforweb"  class="cblack" >成绩查询</a></li>
+   <li><a href="/office/student/"  ><img src="images/index_pic6.jpg" width="87" height="84" /></a><a href="/office/student/"  class="cblack">学籍管理</a></li>
+   <li><a href="/office/classmanege/"  ><img src="images/index_pic4.jpg" width="87" height="84" /></a><a href="/office/classmanege/"  >班级管理</a></li>
+    <li><a href="schpicture/"  class="cblack" ><img src="images/index_pic6.jpg" width="87" height="84" /></a><a href="schpicture/"  class="cblack" >校园图库</a></li>
+    <li><a href="/schdownload/xkzy/">  <img src="images/index_pic6.jpg" width="87" height="84" /></a><a href="schdownload/xkzy/"  class="cblack" >资源中心</a></li>
+ 
+ </div>
+    
+
+ <div id="container1_pro">
+   <li><a href="/d/webext/bgphone.php" class="title1">办公电话</a></li>    
+<li><a href="#" class="title1">同事电话</a></li>    
+<li><a href="/soft" class="title1" >常用软件</a></li>    
+<li><a href="net.html"  class="title1"  class="cblack">常用网站</a></li>    
+<li><a href="/student/" class="title1">学生作品</a></li>    
+<li><a href="#" class="title1">内部邮箱</a></li>    
+
+
+</div>
+
+<!--会员登录-->
+ <div id="container1_login">
+   <FORM action="/e/enews/index.php" method=post> <input type=hidden name=ecmsfrom value="/">
+    <input type=hidden name=enews value=login>
+<table width="200"  border="0" align="center" cellpadding="0" cellspacing="0" class="mail"  >
+  <tr>
+    <td height=20 colspan=2 align=center valign=bottom> 会员登录</td>
+    </tr>
+
+
+ <tr>
+      <td width="80" height="30" align="right" valign="middle" >用户名:</td>
+      <td width="155" align="left" valign="middle"><input class=mailinput name="username" type="text" id="username" size="14"><br /></td></tr>
+  
+  <tr>
+    <td height="30" align="right" valign="middle" >密&nbsp;&nbsp;码:</td>
+    <td align="left" valign="middle"><input class=mailinput name="password" type="password" id="password" size="14"></td>
+    </tr>
+  <tr>
+    <td height="40"    colspan="2" align="center"  ><INPUT class=bottun id=login type=submit value=登陆 name=login> 
+<INPUT class=bottun id=reg type=button value=注册 name=reg  onclick="parent.location.href='/e/member/register/';" ></td>
+    </tr>
+
+<tr><td height=20 colspan=2 align=center valign=bottom>
+    
+     <span id="logininfo"> <script type="text/javascript" >
+       showinfo('/e/member/login/islogin.php','logininfo');
+     </script>
+    </span></td>
+    </tr>
+<tr>
+     <td height="20" colspan=2 align=center valign=middle></td></tr>
+ <tr>
+ </table>  
+</FORM>
+
+ </div>
+
+  
+</div>  <!--endontainer1-->
+
+<!--end办公及应用-->
+
+<!--第三层-->
+<div class="container">
+ <div class="left">
+   
+   <div class="container_newsheader">  <!--标题-->
+      <div class="newsheader_l"><img src="images/index_t1.jpg" width="15" height="34" /></div>
+         <div class="newsheader_title">
+            <a href="column/zsks" class="cwhite"><div class="news_title_active" id="jw">  教务</div></a>
+            <a href="column/jxky" class="cwhite"><div class="news_title_normal" id="jy"> 教研</div></a>
+            <a href="column/dyjw" class="cwhite"><div class="news_title_normal" id="dy"> 德育</div></a>
+         </div>
+      <div class="newsheader_r"><img src="images/index_t2.jpg" width="15" height="34" /></div> 
+   </div><!--end标题-->
+  
+  <div class="news_body">
+   <div id="single_jw" style="display:block">
+       <li><a href="/column/zsks/gkzt/2017-05-02/5109.html" title="2017年高考，最后30天复习备考建议"  target="_blank" >2017年高考，最后30天复习备考建</a></li><li><a href="/column/zsks/gkzt/2017-03-19/4927.html" title="湖南2017高职单招最全信息"  target="_blank" >湖南2017高职单招最全信息</a></li><li><a href="/column/zsks/gkzt/2017-03-19/4926.html" title="未来的高考命题方向和改革趋势"  target="_blank" >未来的高考命题方向和改革趋势</a></li><li><a href="/column/zsks/gkzt/2015-12-23/3626.html" title="中国大学先修课程介绍（十一）"  target="_blank" >中国大学先修课程介绍（十一）</a></li><li><a href="/column/zsks/gkzt/2015-12-23/3625.html" title="中国大学先修课程介绍（十）"  target="_blank" >中国大学先修课程介绍（十）</a></li><li><a href="/column/zsks/gkzt/2015-12-22/3622.html" title="中国大学先修课程介绍（九）"  target="_blank" >中国大学先修课程介绍（九）</a></li><li><a href="/column/zsks/gkzt/2015-12-22/3621.html" title="中国大学先修课程介绍（八）"  target="_blank" >中国大学先修课程介绍（八）</a></li><li><a href="/column/zsks/gkzt/2015-12-17/3595.html" title="中国大学先修课程介绍（七）"  target="_blank" >中国大学先修课程介绍（七）</a></li>    </div>
+  
+  
+  <div id="single_jy" style="display:none">
+    
+       <li><a href="/column/jxky/jyhd/2016-05-04/4032.html" title="省教科院“深度送教送研”物理学科活动（二）"  target="_blank" >省教科院“深度送教送研”物理学</a></li><li><a href="/column/jxky/jyhd/2016-05-04/4031.html" title="省教科院“深度送教送研”物理学科活动（一）"  target="_blank" >省教科院“深度送教送研”物理学</a></li><li><a href="/column/jxky/jyhd/2016-04-27/4011.html" title="省教科院“深度送教送研”化学学科活动（四）"  target="_blank" >省教科院“深度送教送研”化学学</a></li><li><a href="/column/jxky/jyhd/2016-04-27/4010.html" title="省教科院“深度送教送研”化学学科活动（三）"  target="_blank" >省教科院“深度送教送研”化学学</a></li><li><a href="/column/jxky/jyhd/2016-04-25/3986.html" title="省教科院“深度送教送研”化学学科活动（二）"  target="_blank" >省教科院“深度送教送研”化学学</a></li><li><a href="/column/jxky/jyhd/2016-04-25/3985.html" title="省教科院“深度送教送研”化学学科活动（一）"  target="_blank" >省教科院“深度送教送研”化学学</a></li><li><a href="/column/jxky/ktyj/2016-04-12/3924.html" title="湖南省教育学会“十三五”教育科研课题申报表"  target="_blank" >湖南省教育学会“十三五”教育科</a></li><li><a href="/column/jxky/ktyj/2016-04-12/3923.html" title="设计课题研究方案的参考意见"  target="_blank" >设计课题研究方案的参考意见</a></li>    
+    
+    
+     </div>
+  
+ 
+  
+    <div id="single_dy" style="display:none">
+    
+      <li><a href="/column/dyjw/gqxjh/2018-05-25/6050.html" title="270班国旗下讲话"  target="_blank" >270班国旗下讲话</a></li><li><a href="/column/dyjw/gqxjh/2018-05-25/6049.html" title="268班国旗下讲话"  target="_blank" >268班国旗下讲话</a></li><li><a href="/column/dyjw/gqxjh/2018-04-17/5914.html" title="267班国旗下讲话"  target="_blank" >267班国旗下讲话</a></li><li><a href="/column/dyjw/bjgl/2018-04-18/5926.html" title="怀铁一中第五节校园歌手大赛"  target="_blank" >怀铁一中第五节校园歌手大赛</a></li><li><a href="/column/dyjw/bjpb/2018-04-16/5909.html" title="怀铁一中第五届社团展示活动"  target="_blank" >怀铁一中第五届社团展示活动</a></li><li><a href="/column/dyjw/bzrgz/2018-04-18/5927.html" title="怀铁一中第五届社团展示活动"  target="_blank" >怀铁一中第五届社团展示活动</a></li><li><a href="/column/dyjw/xsh/2018-04-18/5930.html" title="2018社团管理制度"  target="_blank" >2018社团管理制度</a></li><li><a href="/column/dyjw/xsh/2018-04-18/5929.html" title="2018年社团指导老师名单"  target="_blank" >2018年社团指导老师名单</a></li>      
+    </div>
+  
+  </div>
+  
+  
+ </div>
+ 
+ <div class="middle">
+   <div class="container_newsheader">  <!--标题-->
+      <div class="newsheader_l"><img src="images/index_t1.jpg" width="15" height="34" /></div>
+      <div class="newsheader_title">学科组 | 教师博客</div>
+      <div class="newsheader_r"><img src="images/index_t2.jpg" width="15" height="34" /></div> 
+   </div><!--end标题-->
+   <div class="news_body"> 
+      
+       <div id="left_x">
+            <img src="images/jyz_ywz.jpg" width="240" height="159" align="top">
+      <div id="xkz"><!--学科组-->
+                <div class="xkz_line">
+                 <div class="xkz_line">
+                 <li><a href="department/ywz" target="_blank" class="title" >语文组</a></li>
+                  <li><a href="department/sxz" target="_blank" class="title" >数学组</a></li>
+                  <li><a href="department/wlz" target="_blank"  class="title" >外语组</a></li>
+                  <li><a href="department/wdlz" target="_blank"  class="title" > 物理组</a></li>
+                  <li><a href="department/hxz" target="_blank" class="title" >化学组</a></li>
+                  <li><a href="department/lsz" target="_blank" class="title" >历史组</a></li>
+                  <li><a href="department/dlz" target="_blank"  class="title">地理组</a></li>
+                  <li><a href="department/zzz" target="_blank"  class="title" >政治组</a></li>
+                  <li><a href="department/swz" target="_blank"  class="title" >生物组</a></li>
+                  <li><a href="department/ytz" target="_blank"  class="title" >艺体组</a></li>
+                  <li><a href="department/jsz" target="_blank"  class="title" >信息组</a></li>
+                </div>               
+                </div>
+              </div><!--end学科组-->
+  </div>
+        
+         <div id="right_x">
+              <div id="xkznews">
+              
+             <li><a href="/department/wlz/zndt/2018-05-28/6054.html" title="5月22日高二英语备课组开展第十一次集体备课"  target="_blank" >5月22日高二英语备课组开展第十一</a></li><li><a href="/department/wlz/zndt/2018-05-28/6053.html" title="5月14日高二英语备课组开展第十次集体备课"  target="_blank" >5月14日高二英语备课组开展第十次</a></li><li><a href="/department/wlz/zndt/2018-05-28/6052.html" title="5月7日高二英语备课组开展第九次集体备课"  target="_blank" >5月7日高二英语备课组开展第九次</a></li><li><a href="/department/wlz/lnjx/2018-05-28/6051.html" title="Chinese Musician—Xian Xinghai"  target="_blank" >Chinese Musician—Xian Xinghai</a></li><li><a href="/department/swz/jyjx/2018-05-20/6039.html" title="高二学考三模"  target="_blank" >高二学考三模</a></li><li><a href="/department/swz/zndt/2018-05-20/6038.html" title="高二生物集体备课"  target="_blank" >高二生物集体备课</a></li><li><a href="/department/swz/zndt/2018-05-20/6033.html" title="高一生物集体备课"  target="_blank" >高一生物集体备课</a></li><li><a href="/department/wlz/lnjx/2018-05-18/6029.html" title="诗歌欣赏7"  target="_blank" >诗歌欣赏7</a></li>              </div>
+             
+       
+       
+       </div><!--学科组-->
+   </div>
+ </div>
+ 
+ <div class="right">
+   <div class="container_newsheader">  <!--标题-->
+      <div class="newsheader_l"><img src="images/index_t1.jpg" width="15" height="34" /></div>
+      <div class="newsheader_title">
+         <div class="news_title_active" id="xsh">  学生天地</div>
+        <div class="news_title_normal" id="xxbb"><a href="/column/xxtd/sjxxb/index.html" class="cwhite" > 校园之星</a></div>
+      
+          <div class="news_title_normal" id="zzt"> 校长助理团</div>
+ </div>
+      <div class="newsheader_r"><img src="images/index_t2.jpg" width="15" height="34" /></div> 
+   </div><!--end标题-->
+   <div class="news_body">
+   
+   
+      <div id="single_xsh" style="display:block">
+     <!----开始分上面层----->
+       <div id="xsh1">
+            <a href="/column/xxtd/xxcy/" >  <img src="/d/file/column/xxtd/xxcy//31/44c12576d2d4369473abf50755c11bf8.jpg"></a>
+    </div>
+         
+<div id="bott" ><!----下面分块开始--->
+          <li><a href="/column/xxtd/shzl/2017-03-17/4923.html" title="校园之星评选方案"  target="_blank" >校园之星评选方案</a></li><li><a href="/column/xxtd/yxzp/2015-12-23/3627.html" title="高一学生严文轩作品欣赏"  target="_blank" >高一学生严文轩作品欣赏</a></li><li><a href="/column/xxtd/shzl/2015-11-05/3369.html" title="怀铁一中第三十二届学生会各部门合照"  target="_blank" ><strong><font color='#FF0000'>怀铁一中第三十二届学生会各部</font></strong></a></li>
+       </div><!----下面块结束---->
+    </div><!----end single_xsh---->
+   
+       <div id="single_xxbb" style="display:none">
+    
+     
+ <div style="width:49%;float:left; text-align:center;"><!---上面图片1---->
+<div style="margin-top:10px; " ><a href="/column/xxtd/sjxxb/2014-11-17/564.html"><img border="0"  src="/e/data/tmp/titlepic/5af2c1d347fad94a81b157dc4da4ca12.jpg"   width="90"  height="108" /></a><br><span style="width:100%;margin:auto; text-align:center;font-size:12px;color:#ff0000 " >文艺之星黎晰月</span></div>
+</div>
+
+ <div style="width:49%;float:left; text-align:center;"><!---上面图片1---->
+<div style="margin-top:10px; " ><a href="/column/xxtd/sjxxb/2014-11-17/563.html"><img border="0"  src="/e/data/tmp/titlepic/979a0415b5adcb1a7bdba2612505a836.jpg"   width="90"  height="108" /></a><br><span style="width:100%;margin:auto; text-align:center;font-size:12px;color:#ff0000 " >奉献之星腾静宜</span></div>
+</div>
+
+ <div style="width:49%;float:left; text-align:center;"><!---上面图片1---->
+<div style="margin-top:10px; " ><a href="/column/xxtd/sjxxb/2014-11-17/562.html"><img border="0"  src="/e/data/tmp/titlepic/e45f6840a58e71f3362a22b2a903adb3.jpg"   width="90"  height="108" /></a><br><span style="width:100%;margin:auto; text-align:center;font-size:12px;color:#ff0000 " >勤奋学习之星严子雪</span></div>
+</div>
+
+ <div style="width:49%;float:left; text-align:center;"><!---上面图片1---->
+<div style="margin-top:10px; " ><a href="/column/xxtd/sjxxb/2014-11-17/561.html"><img border="0"  src="/e/data/tmp/titlepic/ed740800996b41dc1fdb7b41ea130a6a.jpg"   width="90"  height="108" /></a><br><span style="width:100%;margin:auto; text-align:center;font-size:12px;color:#ff0000 " >自强之星陈立得</span></div>
+</div>
+   
+     
+     </div>  
+  
+  <div id="single_zzt" style="display:none">
+    
+     <!----开始分上面层----->
+       <div style="width:100%; " >
+            <div style="float:right; ">
+
+                  <a href="/column/xxtd/xzzltcy/" >  <img src="/d/file/column/xxtd/xzzltcy//41/13493bb313b2743dead833b39d953291.jpg"></a>
+            </div >
+            
+            <div style="color: #ff0000; float:left; font-weight:bold; margin-top:10px;  ">
+                       
+                      <li><a href="/column/xxtd/xzzltcy/"  class="title" >成员</a></li>
+                     <li><a href="/column/xxtd/xzzlt/2014-11-27/p1.html"  class="title" >职能</a></li>
+                     <li><a href="/column/xxtd/xzzlt/2014-11-27/p2.html"  class="title" >制度</a></li>
+                     <li><a href="/column/xxtd/xzzlt/2014-11-27/p3.html"  class="title" >邮箱</a></li>
+
+                     
+           </div>
+
+      </div><!--end上面分层结束----->
+   
+       <div   style="width:95%; " ><!----下面分块开始--->
+          <li><a href="/column/xxtd/xzzlt/2018-05-21/6048.html" title="校长助理团5月21日国旗下讲话"  target="_blank" >校长助理团5月21日国旗下讲话</a></li><li><a href="/column/xxtd/xzzlt/2018-04-30/5967.html" title="校长助理团4月23国旗下讲话"  target="_blank" >校长助理团4月23国旗下讲话</a></li><li><a href="/column/xxtd/xzzlt/2016-04-12/3925.html" title="国旗下倡议（十二）"  target="_blank" >国旗下倡议（十二）</a></li><li><a href="/column/xxtd/xzzlt/2016-04-05/3909.html" title="国旗下倡议（十一）"  target="_blank" >国旗下倡议（十一）</a></li>
+       </div><!----下面块结束---->
+ 
+    
+    
+     </div>
+   
+   
+   </div>
+ </div>
+
+</div>  <!--endontainer-->
+<!--end第三层-->
+
+
+<!--办公及应用-->
+<div class="container2">
+ <div class="copyright">
+|<a href="/e/admin"> 管理用户</a> |<a href="/e/member/cp"> 会员中心</a> | <a href="/e/space/"> 会员空间 </a> |  <a href="/e/DoInfo/"> 我要投稿 </a>  | 
+<br />      版权属于:怀铁一中&nbsp;&nbsp;设计维护：怀铁一中信息组
+<br />建议使用1024*768分辨率高彩色，Internet Explorer 6.0以上浏览器
+<br />湘教QS7-201306-001563&nbsp;&nbsp;湘ICP备05012886号 
+<br /><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43120202000135" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#000000;">湘公网安备 43120202000135号</p></a>
+
+ 		 			   
+</div><!-- end版权信息 -->
+
+</div>  <!--endontainer1-->
+<!--end办公及应用-->
+<div id="bxln">
+<div id="title_bk">
+<div id="bxln_title"></div>
+<div id="bxln_close" onclick="hideElement('bxln');"> <a href='#' class="cwhite" >×</a>&nbsp;</div>
+</div>
+<div id="mypad"></div>
+<div id="bxln_info"></div>
+</div>
+
+
+<div id="guanggao"></div>
+</body>
+</html>

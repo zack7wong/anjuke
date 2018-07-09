@@ -1,0 +1,1045 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<!--
+<a href="http://webscan.360.cn/index/checkwebsite/url/www.dszx.net" name="7407ebbab5eca83edb50366a416dae30" >360网站安全检测平台</a>
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="江苏省健康促进学校 苏州市平安校园 苏州市德育先进学校" name="Keywords" />
+<meta content="江苏省健康促进学校 苏州市平安校园 苏州市德育先进学校" name="Description"/>
+<title>苏州市吴中区东山中学校园网站</title>
+<link href="/Template/Default/Skin/dingzhi/module.css" rel="stylesheet" type="text/css" />
+<link href="/Template/Default/Skin/dingzhi/default.css" rel="stylesheet" type="text/css" />
+<link href="/Template/Default/Skin/dingzhi/index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    var siteSetup = {sitePath: '/',ajaxPath: '/ajax.aspx',skinPath: '/Template/Default/Skin/'};
+</script>
+<script language="javascript" type="text/javascript" src="/JS/jquery.pack.js"></script>
+<script language="javascript" type="text/javascript" src="/JS/jquery.peex.js"></script>
+<script language="javascript" type="text/javascript" src="/Template/Default/Skin/dingzhi/js/jquery.SuperSlide.2.1.1.js"></script>
+<script language="javascript" type="text/javascript" src="/Template/Default/Skin/dingzhi/js/js.js"></script>
+ <!--[if IE 6]>
+<script type="text/javascript" src="/Template/Default/Skin/dingzhi/js/DD_belatedPNG.js"></script>
+<script>
+  DD_belatedPNG.fix('.png_bg');
+</script>
+<![endif]--> 
+
+</head>
+<body>
+<div id="wrapBox">
+<!-- wrap S-->
+<div id="wrap">
+	<!-- header S-->
+		<div id="header">
+ <iframe name="jxllt_login" src="/jxllt_login.htm" scrolling="no" border="0" frameborder="0" width="100%" height="28"></iframe>
+		<div class="topWrap">
+           <div class="top">
+               <!-- userPanel -->
+			<div class="userPanel"> <script src='/count/mystat.asp?style=ip' charset="gbk"></script>&nbsp;&nbsp;<span class="date">今天是：<script language="JavaScript">
+					<!--
+					var mydate=new Date();
+					var myweekday=mydate.getDay();
+					var mymonth=mydate.getMonth()+1;
+					var myday= mydate.getDate();
+					var myyear= mydate.getYear();
+					year=(myyear > 200) ? myyear : 1900 + myyear;
+					if(myweekday == 0)
+					weekday=" 星期日";
+					else if(myweekday == 1)
+					weekday=" 星期一";
+					else if(myweekday == 2)
+					weekday=" 星期二";
+					else if(myweekday == 3)
+					weekday=" 星期三";
+					else if(myweekday == 4)
+					weekday=" 星期四";
+					else if(myweekday == 5)
+					weekday=" 星期五";
+					else if(myweekday == 6)
+					weekday=" 星期六";
+					document.write(year+"年"+mymonth+"月"+myday+"日"+weekday);
+			 -->
+			 </script>
+				<!--|<a href="http://news.dszx.net">怀念旧版</a>-->
+			</span></div>
+			<div class="userLogin">	<div id="miniLoginStatus"><img id="" src="/Template/Default/Skin/Images/loading.gif" alt="正在加载数据..." /></div>
+	<div id="miniLogin" style="display: none">
+	
+	 <div class="leftLogin">
+		<span class="txt">用户名：<input value="dszx" name="username" type="text" class="input" onclick="this.value=''"/></span>
+		<span class="txt2">密码：<input value="" name="userpass" type="password" class="input" onclick="this.value=''"/></span>
+		<span class="txt" class="" id="miniValidate" style="display: none">验证码：<input id="miniValidationCode" name="validate" type="text" maxlength="6" /><img style="display:none" class="validateSign" id="miniValidateSign" title="换一个" src="" /></span>
+		</div>
+		
+		<span class="saveinfo"><a id="loginBtn" class="login" href="javascript:;">登录</a></span>
+		
+	</div>
+
+	<span id="miniLogined" style="display: none">
+		<strong>{username}</strong>，您好！欢迎您的回来。
+		<a href="/User/Default.aspx"><b>会员中心</b></a>|<a href="/User/Content/Signin.aspx">待签文章(<span style="color:#FF0000;fontWeight:700;">{signinArticle}</span>)</a>|<a id="loginoutBtn" name="logout" href="javascript:void(0)">退出登录</a>
+	</span>
+
+<script type="text/javascript">
+    jQuery(function() {
+        var miniCheckUserLogin = function() {
+            $.pe.ajax('checkUserLogin', { success: function(response) {
+                var _response = $(response);
+                if (_response.find('status').text() == 'ok') {
+                    $('#miniLoginStatus').hide();
+		   var _loginedUserInfo = $('#miniLogined');
+                    _loginedUserInfo.html($.pe.replaceUserInfoVariable(_loginedUserInfo.html(), _response)).fadeIn();
+                    
+                    $('#loginoutBtn').click(function() {
+                        $.pe.ajax('logout', { success: function(response) {
+                            if ($(response).find('status').text() == 'ok') {
+                                $('#miniLogin input[name="username"]').val('');
+                                $('#miniLogin input[name="userpass"]').val('');
+                                $('#miniLogin input[name="validate"]').val('');
+                                $('#miniLogin input[name="saveinfo"]').attr("checked", false);
+                                location.reload();
+                            }
+                        }
+                        });
+                    })
+                } else {
+                    $.pe.ajax('checkLoginValidate', { success: function(response) {
+                        if ($(response).find('status').text() == 'yes') {
+                            $('#miniValidateSign').click(function() { $.pe.refreshValidateCode('.validateSign'); });
+                            $('#miniValidate').show();
+                        }
+                    }
+                    });
+                    $('#miniValidationCode').focus(function(){$('#miniValidateSign').click();$('#miniValidateSign').show();})
+                    $('#loginBtn').click(function() {
+                        var username = $('#miniLogin input[name="username"]');
+                        var userpass = $('#miniLogin input[name="userpass"]');
+                        var saveinfo = $('#miniLogin input[name="saveinfo"]');
+                        var validate = $('#miniLogin input[name="validate"]');
+
+                        if (username.val() == '') {
+                            alert('请填写用户名！');
+                            username.focus();
+                            return;
+                        }
+                        if (userpass.val() == '') {
+                            alert('请填写密码！');
+                            userpass.focus();
+                            return;
+                        }
+                        if ($('#miniValidate').css("display") != 'none') {
+                            if (validate.val() == '') {
+                                alert("请填写验证码！");
+                                validate.focus();
+                                return;
+                            }
+                        }
+                        $.pe.ajax('userLogin', {
+                            params: {
+                                username: username.val(),
+                                password: userpass.val(),
+                                checkcode: validate.val(),
+                                expiration: saveinfo.attr("checked") ? 'Month' : 'None'
+                            }, success: function(response) {
+                                var _response = $(response)
+                                switch (_response.find('status').text()) {
+                                    case "ok":
+                                        location.reload();
+                                        break;
+                                    case "err":
+                                        alert(_response.find('body').text());
+                                        $.pe.refreshValidateCode($('.validateSign'));
+                                        break;
+                                }
+                            }
+                        })
+                    })
+                    $('#miniLoginStatus').hide();
+                    $('#miniLogin').fadeIn();
+                    $('#miniLogin').keypress(function(e) {
+                        if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+                            $('#loginBtn').click();
+                            return false;
+                        }
+                        return true;
+                    })
+                }
+            }
+            })
+        }
+        miniCheckUserLogin();
+    })
+</script></div>
+           </div>         
+		</div>
+		<div class="logoWrap">
+		<div class="logoBar">			
+			<div class="logo"><img src="/Template/Default/Skin/dingzhi/images/logo.png" alt=""/></div>
+			<div class="fn"><img src="/Template/Default/Skin/dingzhi/images/fn.png" alt=""/></div>
+			<!-- siteSearch -->
+			
+<div class="siteSearch">
+	<a href="javascript:gSearch()" class="searchBtn"></a>
+	<input type="text" maxlength="50" id="topKeyWord" class="keyWord" value="请输入搜索关键字" onfocus="this.value='';this.style.color='#333'" />
+</div>
+
+<script type="text/javascript">
+	if( ''!='' ){ document.getElementById('topKeyWord').value=''; }
+	document.getElementById("topKeyWord").onkeydown=function(e){
+	 e = e || window.event;
+	if(e.keyCode==13) {gSearch();}
+}
+
+function gSearch(){
+	var keyword = document.getElementById('topKeyWord').value;
+	if(keyword=='' || keyword=="请输入搜索关键字"){ alert("请输入搜索关键字"); }
+	else{
+		window.location = '/search.aspx?searchtype=0&fieldOption=title&Keyword='+encodeURI(keyword);
+	}
+}
+</script>
+		</div>
+	  </div>
+		<!-- navBar -->
+		<div class="navBar">
+			<ul id="mainNav" class="mainNav"><li class="li1 first1 on1" id="liID-2"><h4 class="h1" id="hID-2"><a class="a1" id="aID-2" href="/Default.aspx">网站首页</a></h4></li><li class="li1 hasUl1" id="liID1"><h4 class="h1" id="hID1"><a class="a1" id="aID1" href="/Category_1/Index.aspx">学校概况</a></h4><ul class="ul1" id="ulID1">
+				<li class="li2 first2" id="liID10">
+  <h4 class="h2" id="hID10"><a class="a2" id="aID10" href="/Category_10/Index.aspx">学校介绍</a></h4>
+</li>
+<li class="li2" id="liID11">
+  <h4 class="h2" id="hID11"><a class="a2" id="aID11" href="/Category_11/Index.aspx">校长寄语</a></h4>
+</li>
+<li class="li2" id="liID16">
+  <h4 class="h2" id="hID16"><a class="a2" id="aID16" href="/Category_16/Index.aspx">学校简史</a></h4>
+</li>
+<li class="li2" id="liID12">
+  <h4 class="h2" id="hID12"><a class="a2" id="aID12" href="/Category_12/Index.aspx">办学成果</a></h4>
+</li>
+<li class="li2" id="liID13">
+  <h4 class="h2" id="hID13"><a class="a2" id="aID13" href="/Category_13/Index.aspx">组织机构</a></h4>
+</li>
+<li class="li2 last2" id="liID72">
+  <h4 class="h2" id="hID72"><a class="a2" id="aID72" href="/Category_72/Index.aspx">校园简讯</a></h4>
+</li>
+			</ul></li><li class="li1 hasUl1" id="liID2"><h4 class="h1" id="hID2"><a class="a1" id="aID2" href="/Category_2/Index.aspx">校务工作</a></h4><ul class="ul1" id="ulID2">
+				<li class="li2 first2" id="liID17">
+  <h4 class="h2" id="hID17"><a class="a2" id="aID17" href="/Category_17/Index.aspx">公开文件</a></h4>
+</li>
+<li class="li2" id="liID18">
+  <h4 class="h2" id="hID18"><a class="a2" id="aID18" href="/Category_18/Index.aspx">校务通知</a></h4>
+</li>
+<li class="li2" id="liID19">
+  <h4 class="h2" id="hID19"><a class="a2" id="aID19" href="/Category_19/Index.aspx">公示公开</a></h4>
+</li>
+<li class="li2" id="liID25">
+  <h4 class="h2" id="hID25"><a class="a2" id="aID25" href="/Category_25/Index.aspx">日常管理</a></h4>
+</li>
+<li class="li2" id="liID20">
+  <h4 class="h2" id="hID20"><a class="a2" id="aID20" href="/Category_20/Index.aspx">一周工作安排</a></h4>
+</li>
+<li class="li2" id="liID23">
+  <h4 class="h2" id="hID23"><a class="a2" id="aID23" href="/Category_23/Index.aspx">计划安排</a></h4>
+</li>
+<li class="li2" id="liID131">
+  <h4 class="h2" id="hID131"><a class="a2" id="aID131" href="/Category_131/Index.aspx">政策法规</a></h4>
+</li>
+<li class="li2" id="liID22">
+  <h4 class="h2" id="hID22"><a class="a2" id="aID22" href="/Category_22/Index.aspx">规章制度</a></h4>
+</li>
+<li class="li2" id="liID24">
+  <h4 class="h2" id="hID24"><a class="a2" id="aID24" href="/Category_24/Index.aspx">招生及收费</a></h4>
+</li>
+<li class="li2" id="liID26">
+  <h4 class="h2" id="hID26"><a class="a2" id="aID26" href="/Category_26/Index.aspx">家校联系</a></h4>
+</li>
+<li class="li2 last2" id="liID124">
+  <h4 class="h2" id="hID124"><a class="a2" id="aID124" href="http://www.szwz.gov.cn/szwzweb/zwgkinfo/DepartMent/default.aspx?CategoryNum=010002&amp;DeptCode=011001007">政务公开</a></h4>
+</li>
+			</ul></li><li class="li1 hasUl1" id="liID3"><h4 class="h1" id="hID3"><a class="a1" id="aID3" href="/Category_3/Index.aspx">教务教学</a></h4><ul class="ul1" id="ulID3">
+				<li class="li2 first2" id="liID27">
+  <h4 class="h2" id="hID27"><a class="a2" id="aID27" href="/Category_27/Index.aspx">教务通知</a></h4>
+</li>
+<li class="li2" id="liID28">
+  <h4 class="h2" id="hID28"><a class="a2" id="aID28" href="/Category_28/Index.aspx">教务简讯</a></h4>
+</li>
+<li class="li2" id="liID29">
+  <h4 class="h2" id="hID29"><a class="a2" id="aID29" href="/Category_29/Index.aspx">考试安排</a></h4>
+</li>
+<li class="li2" id="liID30">
+  <h4 class="h2" id="hID30"><a class="a2" id="aID30" href="/Category_30/Index.aspx">学科建设</a></h4>
+</li>
+<li class="li2" id="liID31">
+  <h4 class="h2" id="hID31"><a class="a2" id="aID31" href="/Category_31/Index.aspx">学测高考</a></h4>
+</li>
+<li class="li2" id="liID32">
+  <h4 class="h2" id="hID32"><a class="a2" id="aID32" href="/Category_32/Index.aspx">教学比赛</a></h4>
+</li>
+<li class="li2" id="liID120">
+  <h4 class="h2" id="hID120"><a class="a2" id="aID120" href="/Category_120/Index.aspx">教研活动</a></h4>
+</li>
+<li class="li2 last2" id="liID33">
+  <h4 class="h2" id="hID33"><a class="a2" id="aID33" href="/Category_33/Index.aspx">自主学习指导</a></h4>
+</li>
+			</ul></li><li class="li1 hasUl1" id="liID4"><h4 class="h1" id="hID4"><a class="a1" id="aID4" href="/Category_4/Index.aspx">德育教育</a></h4><ul class="ul1" id="ulID4">
+				<li class="li2 first2" id="liID34">
+  <h4 class="h2" id="hID34"><a class="a2" id="aID34" href="/Category_34/Index.aspx">德育通知</a></h4>
+</li>
+<li class="li2" id="liID35">
+  <h4 class="h2" id="hID35"><a class="a2" id="aID35" href="/Category_35/Index.aspx">德育简讯</a></h4>
+</li>
+<li class="li2" id="liID36">
+  <h4 class="h2" id="hID36"><a class="a2" id="aID36" href="/Category_36/Index.aspx">国旗下讲话</a></h4>
+</li>
+<li class="li2" id="liID123">
+  <h4 class="h2" id="hID123"><a class="a2" id="aID123" href="/Category_123/Index.aspx">班级常规管理</a></h4>
+</li>
+<li class="li2" id="liID37">
+  <h4 class="h2" id="hID37"><a class="a2" id="aID37" href="/Category_37/Index.aspx">班主任</a></h4>
+</li>
+<li class="li2" id="liID38">
+  <h4 class="h2" id="hID38"><a class="a2" id="aID38" href="/Category_38/Index.aspx">家长学校</a></h4>
+</li>
+<li class="li2" id="liID39">
+  <h4 class="h2" id="hID39"><a class="a2" id="aID39" href="/Category_39/Index.aspx">法制园地</a></h4>
+</li>
+<li class="li2" id="liID40">
+  <h4 class="h2" id="hID40"><a class="a2" id="aID40" href="/Category_40/Index.aspx">廉洁文化</a></h4>
+</li>
+<li class="li2 last2" id="liID41">
+  <h4 class="h2" id="hID41"><a class="a2" id="aID41" href="/Category_41/Index.aspx">关心下一代工作</a></h4>
+</li>
+			</ul></li><li class="li1 hasUl1" id="liID5"><h4 class="h1" id="hID5"><a class="a1" id="aID5" href="/Category_5/Index.aspx">教育科研</a></h4><ul class="ul1" id="ulID5">
+				<li class="li2 first2" id="liID42">
+  <h4 class="h2" id="hID42"><a class="a2" id="aID42" href="/Category_42/Index.aspx">科研动态</a></h4>
+</li>
+<li class="li2" id="liID43">
+  <h4 class="h2" id="hID43"><a class="a2" id="aID43" href="/Category_43/Index.aspx">课题研究</a></h4>
+</li>
+<li class="li2" id="liID44">
+  <h4 class="h2" id="hID44"><a class="a2" id="aID44" href="/Category_44/Index.aspx">研究论文</a></h4>
+</li>
+<li class="li2" id="liID45">
+  <h4 class="h2" id="hID45"><a class="a2" id="aID45" href="/Category_45/Index.aspx">科研资源</a></h4>
+</li>
+<li class="li2" id="liID46">
+  <h4 class="h2" id="hID46"><a class="a2" id="aID46" href="/Category_46/Index.aspx">教育资讯</a></h4>
+</li>
+<li class="li2 last2" id="liID130">
+  <h4 class="h2" id="hID130"><a class="a2" id="aID130" href="/Category_130/Index.aspx">教师培训</a></h4>
+</li>
+			</ul></li><li class="li1 hasUl1" id="liID6"><h4 class="h1" id="hID6"><a class="a1" id="aID6" href="/Category_6/Index.aspx">教育技术</a></h4><ul class="ul1" id="ulID6">
+				<li class="li2 first2" id="liID47">
+  <h4 class="h2" id="hID47"><a class="a2" id="aID47" href="/Category_47/Index.aspx">组织领导</a></h4>
+</li>
+<li class="li2" id="liID48">
+  <h4 class="h2" id="hID48"><a class="a2" id="aID48" href="/Category_48/Index.aspx">实验室</a></h4>
+</li>
+<li class="li2" id="liID49">
+  <h4 class="h2" id="hID49"><a class="a2" id="aID49" href="/Category_49/Index.aspx">图书馆</a></h4>
+</li>
+<li class="li2" id="liID50">
+  <h4 class="h2" id="hID50"><a class="a2" id="aID50" href="/Category_50/Index.aspx">信息化</a></h4>
+</li>
+<li class="li2" id="liID51">
+  <h4 class="h2" id="hID51"><a class="a2" id="aID51" href="/Category_51/Index.aspx">艺体史地等室</a></h4>
+</li>
+<li class="li2" id="liID52">
+  <h4 class="h2" id="hID52"><a class="a2" id="aID52" href="/Category_52/Index.aspx">成绩荣誉</a></h4>
+</li>
+<li class="li2 last2" id="liID54">
+  <h4 class="h2" id="hID54"><a class="a2" id="aID54" href="/Category_54/Index.aspx">创建工作</a></h4>
+</li>
+			</ul></li><li class="li1 hasUl1" id="liID7"><h4 class="h1" id="hID7"><a class="a1" id="aID7" href="/Category_7/Index.aspx">师生园地</a></h4><ul class="ul1" id="ulID7">
+				<li class="li2 first2" id="liID73">
+  <h4 class="h2" id="hID73"><a class="a2" id="aID73" href="/Category_73/Index.aspx">教师风采</a></h4>
+</li>
+<li class="li2" id="liID74">
+  <h4 class="h2" id="hID74"><a class="a2" id="aID74" href="/Category_74/Index.aspx">教师获奖</a></h4>
+</li>
+<li class="li2" id="liID75">
+  <h4 class="h2" id="hID75"><a class="a2" id="aID75" href="/Category_75/Index.aspx">教学心得</a></h4>
+</li>
+<li class="li2" id="liID76">
+  <h4 class="h2" id="hID76"><a class="a2" id="aID76" href="/Category_76/Index.aspx">学生风采</a></h4>
+</li>
+<li class="li2" id="liID77">
+  <h4 class="h2" id="hID77"><a class="a2" id="aID77" href="/Category_77/Index.aspx">学生文化</a></h4>
+</li>
+<li class="li2" id="liID78">
+  <h4 class="h2" id="hID78"><a class="a2" id="aID78" href="/Category_78/Index.aspx">学生科普论文</a></h4>
+</li>
+<li class="li2 last2" id="liID79">
+  <h4 class="h2" id="hID79"><a class="a2" id="aID79" href="/Category_79/Index.aspx">班级主页</a></h4>
+</li>
+			</ul></li><li class="li1 hasUl1" id="liID8"><h4 class="h1" id="hID8"><a class="a1" id="aID8" href="/Category_8/Index.aspx">党工团后勤</a></h4><ul class="ul1" id="ulID8">
+				<li class="li2 first2" id="liID80">
+  <h4 class="h2" id="hID80"><a class="a2" id="aID80" href="/Category_80/Index.aspx">党建园地</a></h4>
+</li>
+<li class="li2" id="liID81">
+  <h4 class="h2" id="hID81"><a class="a2" id="aID81" href="/Category_81/Index.aspx">工会之家</a></h4>
+</li>
+<li class="li2" id="liID82">
+  <h4 class="h2" id="hID82"><a class="a2" id="aID82" href="/Category_82/Index.aspx">团委资讯</a></h4>
+</li>
+<li class="li2 last2" id="liID83">
+  <h4 class="h2" id="hID83"><a class="a2" id="aID83" href="/Category_83/Index.aspx">一周菜单</a></h4>
+</li>
+			</ul></li><li class="li1 last1 hasUl1" id="liID9"><h4 class="h1" id="hID9"><a class="a1" id="aID9" href="/Category_9/Index.aspx">学科资源</a></h4><ul class="ul1" id="ulID9">
+				<li class="li2 first2" id="liID92">
+  <h4 class="h2" id="hID92"><a class="a2" id="aID92" href="/Category_92/Index.aspx">语文</a></h4>
+</li>
+<li class="li2" id="liID93">
+  <h4 class="h2" id="hID93"><a class="a2" id="aID93" href="/Category_93/Index.aspx">数学</a></h4>
+</li>
+<li class="li2" id="liID94">
+  <h4 class="h2" id="hID94"><a class="a2" id="aID94" href="/Category_94/Index.aspx">英语</a></h4>
+</li>
+<li class="li2" id="liID95">
+  <h4 class="h2" id="hID95"><a class="a2" id="aID95" href="/Category_95/Index.aspx">物理</a></h4>
+</li>
+<li class="li2" id="liID96">
+  <h4 class="h2" id="hID96"><a class="a2" id="aID96" href="/Category_96/Index.aspx">化学</a></h4>
+</li>
+<li class="li2" id="liID97">
+  <h4 class="h2" id="hID97"><a class="a2" id="aID97" href="/Category_97/Index.aspx">历史</a></h4>
+</li>
+<li class="li2" id="liID98">
+  <h4 class="h2" id="hID98"><a class="a2" id="aID98" href="/Category_98/Index.aspx">政治</a></h4>
+</li>
+<li class="li2" id="liID99">
+  <h4 class="h2" id="hID99"><a class="a2" id="aID99" href="/Category_99/Index.aspx">地理</a></h4>
+</li>
+<li class="li2" id="liID100">
+  <h4 class="h2" id="hID100"><a class="a2" id="aID100" href="/Category_100/Index.aspx">生物</a></h4>
+</li>
+<li class="li2" id="liID101">
+  <h4 class="h2" id="hID101"><a class="a2" id="aID101" href="/Category_101/Index.aspx">体育</a></h4>
+</li>
+<li class="li2" id="liID102">
+  <h4 class="h2" id="hID102"><a class="a2" id="aID102" href="/Category_102/Index.aspx">音乐</a></h4>
+</li>
+<li class="li2" id="liID103">
+  <h4 class="h2" id="hID103"><a class="a2" id="aID103" href="/Category_103/Index.aspx">美术</a></h4>
+</li>
+<li class="li2" id="liID104">
+  <h4 class="h2" id="hID104"><a class="a2" id="aID104" href="/Category_104/Index.aspx">技术</a></h4>
+</li>
+<li class="li2 last2" id="liID121">
+  <h4 class="h2" id="hID121"><a class="a2" id="aID121" href="/Category_121/Index.aspx">综合</a></h4>
+</li>
+			</ul></li></ul><script type="text/javascript">
+			jQuery(function($){
+				var navST;
+				var name='mainNav';
+				var t=200;
+				var type='1';
+				var removeOn='false';
+				var effect='slide';
+				var appendItem = '#';
+				var li="#"+name+" li";
+
+				if( !$("#"+name+" .li1").hasClass("on1") ){ $("#"+name+" .li1").first().addClass("on1"); } //默认第一个加.on1类
+				if(type=='1'){ li="#"+name+" .li1"; }
+				if( appendItem!='#'){ //插入内容
+				var appendHtml = $(appendItem).html();  $(li).first().append( appendHtml );  $(appendItem).remove(); }
+
+				if(type=='3'){ $("#"+name+" .on1").find("ul").first().show(); }
+
+				$(li).hover(function(){
+					var curItem = $(this);
+					var onNum = (curItem.attr("class").split(" "))[0].replace("li","")
+					navST = setTimeout(function(){//延时触发
+					$(li).removeClass("on"+onNum); curItem.addClass("on"+onNum);
+					if( $("ul:first",curItem).css("display") !="block" ){ $(li+" .ul"+onNum).hide(); 
+						if( effect=='fade') $("ul:first",curItem).fadeIn(t);
+						else $("ul:first",curItem).slideDown(t);
+					};
+					navST = null;
+					},t);
+				}, function(){
+					if(navST!=null)clearTimeout(navST);
+					if(type=='1' || type=='2'){ 
+						if( effect=='fade') $(this).find("ul").first().fadeOut(t); 
+						else $(this).find("ul").first().slideUp(t); 
+					}
+					if (removeOn=='true') {  $(this).removeClass("on1"); }
+					},t); //end hover
+			});
+			</script>	
+
+		</div>
+	</div>
+<script src='/Analytics/CounterLink.aspx?Style=none'></script>
+
+	<!-- header E -->
+
+	<!-- content S -->
+	<div id="content">
+        <div  id="focusAd">
+    <div class="bd">
+  <ul>
+    <li class="li1">
+      <div class="pic"><img src="/UploadFiles/UploadADPic/201605091107230253_1200_380.jpg"></div>
+      <div class="con">
+        <div class="bg"></div>
+        <div class="title"><a title="首页Top Banner3" href="" target="_blank">…</a></div>
+      </div>
+    </li>
+    <li class="li2">
+      <div class="pic"><img src="/UploadFiles/UploadADPic/201605091123196184_1200_380.jpg"></div>
+      <div class="con">
+        <div class="bg"></div>
+        <div class="title"><a title="首页Top Banner2" href="" target="_blank">…</a></div>
+      </div>
+    </li>
+    <li class="li3">
+      <div class="pic"><img src="/UploadFiles/UploadADPic/201605091102134489_1200_380.jpg"></div>
+      <div class="con">
+        <div class="bg"></div>
+        <div class="title"><a title="首页Top Banner1" href="" target="_blank">…</a></div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="hd">
+  <ul>
+    <li class="li1"><span>1</span></li>
+    <li class="li2"><span>2</span></li>
+    <li class="li3"><span>3</span></li>
+  </ul>
+</div> 
+	</div>
+    <script type="text/javascript">jQuery("#focusAd").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,interTime:5000, delayTime:2000, mouseOverStop:false});</script>	
+
+
+<!--contA start-->
+   <div class="contA">   	   
+   	   <div class="sideBox fr" id="xwgz">
+   	     <div class="hd">
+   	     <span><a href="/Category_2/Index.aspx">更多>></a></span>
+   	     <h3><a href="/Category_2/Index.aspx">校务工作</a></h3>
+   	     </div>
+   	     <div class="bd">
+            <ul>
+   	       
+            <li class="t&#xD;&#xA;                  "><div class="time"><span class="green"><b>22日</b></span><span class="dateRight">2018-05</span></div><div class="con"><div class="title"><a class="tit" href="/Item/4735.aspx" target="_blank" title="标题：吴教人〔2018〕19号关于推荐与评选“吴中区第九批知名教师”的通知&#xD;点击数：25&#xD;发表时间：18年05月22日"><font style="color:#f96312;font-weight:bold;">吴教人〔2018〕19号关于推荐与评选“吴中区第九批知名教师”的通知</font><img src="/Template/Default/Skin/dingzhi/images/newnew.jpg" alt="最新内容"></a></div></div></li><li class="t&#xD;&#xA;                  "><div class="time"><span class="green"><b>21日</b></span><span class="dateRight">2018-05</span></div><div class="con"><div class="title"><a class="tit" href="/Item/4731.aspx" target="_blank" title="标题：东山中学2017-2018学年度第二学期第十三周工作安排&#xD;点击数：32&#xD;发表时间：18年05月21日"><font style="color:#f96312;font-weight:bold;">东山中学2017-2018学年度第二学期第十三周工作安排</font><img src="/Template/Default/Skin/dingzhi/images/newnew.jpg" alt="最新内容"></a></div></div></li><li class="t&#xD;&#xA;                  "><div class="time"><span class="green"><b>17日</b></span><span class="dateRight">2018-05</span></div><div class="con"><div class="title"><a class="tit" href="/Item/4730.aspx" target="_blank" title="标题：转《吴教人〔2018〕18号关于评选2018年度东吴教育人才的通知》&#xD;点击数：54&#xD;发表时间：18年05月17日"><font style="color:#f96312;font-weight:bold;">转《吴教人〔2018〕18号关于评选2018年度东吴教育人才的通知》</font><img src="/Template/Default/Skin/dingzhi/images/newnew.jpg" alt="最新内容"></a></div></div></li><li class="t&#xD;&#xA;                  "><div class="time"><span class="date">14日
+</span><span class="dateRight">2018-05</span></div><div class="con"><div class="title"><a class="tit" href="/Item/4723.aspx" target="_blank" title="标题：东山中学2017-2018学年度第二学期一周工作安排&#xD;点击数：26&#xD;发表时间：18年05月14日">东山中学2017-2018学年度第二学期一周工作安排</a></div></div></li><li class="t&#xD;&#xA;                  "><div class="time"><span class="date">07日
+</span><span class="dateRight">2018-05</span></div><div class="con"><div class="title"><a class="tit" href="/Item/4713.aspx" target="_blank" title="标题：东山中学2017-2018学年度第二学期第十一周工作安排&#xD;点击数：57&#xD;发表时间：18年05月07日">东山中学2017-2018学年度第二学期第十一周工作安排</a></div></div></li><li class="t&#xD;&#xA;                  "><div class="time"><span class="date">02日
+</span><span class="dateRight">2018-05</span></div><div class="con"><div class="title"><a class="tit" href="/Item/4710.aspx" target="_blank" title="标题：东山中学2017-2018学年度第二学期第十周工作安排&#xD;点击数：31&#xD;发表时间：18年05月02日">东山中学2017-2018学年度第二学期第十周工作安排</a></div></div></li>
+          
+           </ul>
+   	     <script type="text/javascript">
+        		jQuery("#xwgz").slide({ mainCell:".bd ul" , effect:"topMarquee" , autoPlay:"true",  interTime:100 , vis:5 });
+        </script>
+   	     </div>
+   	   </div>
+   	   <div class="main">
+   	   	  <div class="news fr">   	   	    
+   	   	    <ul class="topTxtList">
+   	   	    	   	  	     
+                <li class="t"><div class="con"><div class="title"><a class="tit" href="/Item/4738.aspx" target="_blank" title="标题：我校陈淑敏老师获东山片“不忘初心    牢记使命”演讲比赛二等奖&#xD;点击数：20&#xD;发表时间：18年05月23日">我校陈淑敏老师获东山片“不忘初心    牢记使…</a></div><div class="intro">
+				
+						我校陈淑敏老师获东山片“不忘初心 牢记使命”演讲比赛二等奖
+				
+				
+						
+								　
+					…<a class="more" href="/Item/4738.aspx" target="_blank">[详细]
+										</a></div></div></li><li class="n"><span class="date">05-22</span><a class="tit" href="/Item/4735.aspx" target="_blank" title="标题：吴教人〔2018〕19号关于推荐与评选“吴中区第九批知名教师”的通知&#xD;点击数：25&#xD;发表时间：18年05月22日">吴教人〔2018〕19号关于推荐与评选“吴中区…</a></li><li class="n"><span class="date">05-21</span><a class="tit" href="/Item/4732.aspx" target="_blank" title="标题：第十三周菜单&#xD;点击数：33&#xD;发表时间：18年05月21日">第十三周菜单</a></li><li class="n"><span class="date">05-21</span><a class="tit" href="/Item/4731.aspx" target="_blank" title="标题：东山中学2017-2018学年度第二学期第十三周工作安排&#xD;点击数：32&#xD;发表时间：18年05月21日">东山中学2017-2018学年度第二学期第十三周工…</a></li><li class="n"><span class="date">05-17</span><a class="tit" href="/Item/4730.aspx" target="_blank" title="标题：转《吴教人〔2018〕18号关于评选2018年度东吴教育人才的通知》&#xD;点击数：54&#xD;发表时间：18年05月17日">转《吴教人〔2018〕18号关于评选2018年度东…</a></li><li class="n"><span class="date">05-15</span><a class="tit" href="/Item/4729.aspx" target="_blank" title="标题：高二年级召开期中考试质量分析会&#xD;点击数：59&#xD;发表时间：18年05月15日">高二年级召开期中考试质量分析会</a></li><li class="n"><span class="date">05-15</span><a class="tit" href="/Item/4728.aspx" target="_blank" title="标题：家校携手，共创未来&#xD;点击数：95&#xD;发表时间：18年05月15日">家校携手，共创未来</a></li><li class="n"><span class="date">05-15</span><a class="tit" href="/Item/4727.aspx" target="_blank" title="标题：关于举办2018吴中区中学信息化教学能手的通知&#xD;点击数：40&#xD;发表时间：18年05月15日">关于举办2018吴中区中学信息化教学能手的通知</a></li><li class="n"><span class="date">05-14</span><a class="tit" href="/Item/4725.aspx" target="_blank" title="标题：第十二周菜单&#xD;点击数：26&#xD;发表时间：18年05月14日">第十二周菜单</a></li><li class="n"><span class="date">05-14</span><a class="tit" href="/Item/4724.aspx" target="_blank" title="标题：我校召开高二学生家长会&#xD;点击数：62&#xD;发表时间：18年05月14日">我校召开高二学生家长会</a></li><li class="n last"><span class="date">05-14</span><a class="tit" href="/Item/4723.aspx" target="_blank" title="标题：东山中学2017-2018学年度第二学期一周工作安排&#xD;点击数：26&#xD;发表时间：18年05月14日">东山中学2017-2018学年度第二学期一周工作安排</a></li>
+              
+   	   	    </ul>
+   	   	  </div>
+   	   	 <div class="slideBox-news fl" id="focusNews">
+						
+                <ul class="slideNav">
+  <li><a class=" a1">1</a></li>
+  <li><a class=" a2">2</a></li>
+  <li><a class=" a3">3</a></li>
+  <li><a class=" a4">4</a></li>
+  <li><a class=" a5">5</a></li>
+</ul>
+<ul class="slideCon">
+  <li>
+    <div class="pic"><a href="/Item/4738.aspx" target="_blank"><img src="/UploadFiles/dgthq/2018/5/201805231625279341_480_283.jpg" alt="我校陈淑敏老师获东山片“不忘初心    牢记使命”演讲比赛二等奖"></a></div>
+    <p class="title"><a href="/Item/4738.aspx" target="_blank">我校陈淑敏老师获东山片“不忘初心    牢…</a></p>
+  </li>
+  <li>
+    <div class="pic"><a href="/Item/4729.aspx" target="_blank"><img src="/UploadFiles/jwjx/2018/5/201805151923173506_480_283.jpg" alt="高二年级召开期中考试质量分析会"></a></div>
+    <p class="title"><a href="/Item/4729.aspx" target="_blank">高二年级召开期中考试质量分析会</a></p>
+  </li>
+  <li>
+    <div class="pic"><a href="/Item/4728.aspx" target="_blank"><img src="/UploadFiles/dyjy/2018/5/201805151550549731_480_283.jpg" alt="家校携手，共创未来"></a></div>
+    <p class="title"><a href="/Item/4728.aspx" target="_blank">家校携手，共创未来</a></p>
+  </li>
+  <li>
+    <div class="pic"><a href="/Item/4724.aspx" target="_blank"><img src="/UploadFiles/dyjy/2018/5/201805141307586408_480_283.jpg" alt="我校召开高二学生家长会"></a></div>
+    <p class="title"><a href="/Item/4724.aspx" target="_blank">我校召开高二学生家长会</a></p>
+  </li>
+  <li>
+    <div class="pic"><a href="/Item/4722.aspx" target="_blank"><img src="/UploadFiles/jwjx/2018/5/201805131839074833_480_283.jpg" alt="我校举行2018届高三二模考试教学研讨会"></a></div>
+    <p class="title"><a href="/Item/4722.aspx" target="_blank">我校举行2018届高三二模考试教学研讨会</a></p>
+  </li>
+</ul>
+              
+		</div>	
+	     <script type="text/javascript">jQuery("#focusNews").slide({titCell: ".slideNav li", mainCell:".slideCon",effect: "fade",autoPlay:true});</script>
+
+   	   </div> 
+   </div>
+<!--contA end-->
+<div class="contB">			
+	<div class="fr side">
+		
+		<div class="sideBox" id="xxjj">
+		  <div class="hd">		  
+		  <h3><a href="/Category_10/Index.aspx">学校简介</a></h3>
+		  </div>
+		  <div class="bd">
+		    <div class="pic">
+		    	<script type="text/javascript" src="/Dszx/slide.js"></script>
+		    </div>
+		    <div class="cont">
+&nbsp;坐落于太湖之滨的省三星级高中
+东山中学是一所具有70多年历史的老中
+学。学校管理理念先进，拥有完善的教
+育现代化设备，教育教学质量逐年提升
+先后荣获“江苏省健康促进学校”“苏
+州市平安校园”、“苏州市德育先进学
+校”等称号。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/Category_10/Index.aspx">更多>></a>
+		    </div>
+		  </div>
+		</div>
+		
+	</div>
+	<div class="fl main">
+		
+		<div class="box fr">
+		  <div class="hd">
+		  <span><a href="/Category_4/Index.aspx">更多>></a></span>
+		  <h3><a href="/Category_4/Index.aspx">德育教育</a></h3>
+		  </div>
+		  <div class="bd">		     
+		     <ul class="infoList">
+		         
+            <li><span class="date">05-15</span><a href="/Item/4728.aspx" target="_blank" title="标题：家校携手，共创未来&#xD;点击数：95&#xD;发表时间：18年05月15日">家校携手，共创未来</a></li><li><span class="date">05-14</span><a href="/Item/4724.aspx" target="_blank" title="标题：我校召开高二学生家长会&#xD;点击数：62&#xD;发表时间：18年05月14日">我校召开高二学生家长会</a></li><li><span class="date">05-08</span><a href="/Item/4737.aspx" target="_blank" title="标题：第十一周国旗下讲话&#xD;点击数：2&#xD;发表时间：18年05月08日">第十一周国旗下讲话</a></li><li><span class="date">04-25</span><a href="/Item/4736.aspx" target="_blank" title="标题：第九周国旗下讲话&#xD;点击数：9&#xD;发表时间：18年04月25日">第九周国旗下讲话</a></li><li><span class="date">04-23</span><a href="/Item/4694.aspx" target="_blank" title="标题：校园安全工作检查&#xD;点击数：135&#xD;发表时间：18年04月23日">校园安全工作检查</a></li><li><span class="date">04-20</span><a href="/Item/4688.aspx" target="_blank" title="标题：我校开展火灾应急疏散演练&#xD;点击数：101&#xD;发表时间：18年04月20日">我校开展火灾应急疏散演练</a></li><li><span class="date">04-17</span><a href="/Item/4676.aspx" target="_blank" title="标题：第八周国旗下讲话&#xD;点击数：72&#xD;发表时间：18年04月17日">第八周国旗下讲话</a></li><li class="last"><span class="date">04-16</span><a href="/Item/4672.aspx" target="_blank" title="标题：东山中学第二次班主任工作会议&#xD;点击数：90&#xD;发表时间：18年04月16日">东山中学第二次班主任工作会议</a></li>
+          
+		     </ul>		     
+		  </div>
+		</div>
+
+		<div class="box fl">
+		  <div class="hd">
+		  <span><a href="/Category_3/Index.aspx">更多>></a></span>
+		  <h3><a href="/Category_3/Index.aspx">教务教学</a></h3>
+		  </div>
+		  <div class="bd">
+		    <ul class="infoList">
+		         
+            <li><span class="date">05-15</span><a href="/Item/4729.aspx" target="_blank" title="标题：高二年级召开期中考试质量分析会&#xD;点击数：59&#xD;发表时间：18年05月15日">高二年级召开期中考试质量分析会</a></li><li><span class="date">05-13</span><a href="/Item/4722.aspx" target="_blank" title="标题：我校举行2018届高三二模考试教学研讨会&#xD;点击数：87&#xD;发表时间：18年05月13日">我校举行2018届高三二模考试教学研讨会</a></li><li><span class="date">05-02</span><a href="/Item/4709.aspx" target="_blank" title="标题：我校举行2018届高三冲刺高考誓师动员大会&#xD;点击数：145&#xD;发表时间：18年05月02日">我校举行2018届高三冲刺高考誓师动员大会</a></li><li><span class="date">05-01</span><a href="/Item/4708.aspx" target="_blank" title="标题：喜讯——我校历史组、政治组在区评优课、基本功竞赛中获佳绩&#xD;点击数：59&#xD;发表时间：18年05月01日">喜讯——我校历史组、政治组在区评优课、基本功竞…</a></li><li><span class="date">04-25</span><a href="/Item/4700.aspx" target="_blank" title="标题：“家在苏州•美丽吴中”区中小学生诗词童谣楹联创作大赛获奖喜报&#xD;点击数：67&#xD;发表时间：18年04月25日">“家在苏州•美丽吴中”区中小学生诗词童谣楹联创…</a></li><li><span class="date">04-19</span><a href="/Item/4689.aspx" target="_blank" title="标题：转发吴中区教育局关于征集“吴中好题”的通知&#xD;点击数：27&#xD;发表时间：18年04月19日">转发吴中区教育局关于征集“吴中好题”的通知</a></li><li><span class="date">04-18</span><a href="/Item/4687.aspx" target="_blank" title="标题：关于举行2017--2018学年度第二学期高一高二期中考试通知&#xD;点击数：102&#xD;发表时间：18年04月18日">关于举行2017--2018学年度第二学期高一高二期中考…</a></li><li class="last"><span class="date">04-16</span><a href="/Item/4673.aspx" target="_blank" title="标题：转发教育部及苏州市教育局关于2018继续开展“一师一优课”晒课活动的通知&#xD;点击数：28&#xD;发表时间：18年04月16日">转发教育部及苏州市教育局关于2018继续开展“一师…</a></li>
+          
+		     </ul>	
+		  </div>
+		</div>	
+        <div class="clearbox blank"></div>
+        <div  id="ad" style="height:113px">
+ <div class="bd">
+  <ul>
+    <li class="li1">
+      <div class="pic"><a href="http://www.dszx.net/Category_114/Index.aspx" target="_blank"><img src="/UploadFiles/UploadADPic/201606131244461406_900_113.jpg"></a></div>
+      <div class="con">
+        <div class="bg"></div>
+        <div class="title"><a title="两学一做" href="http://www.dszx.net/Category_114/Index.aspx" target="_blank">…</a></div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="hd">
+  <ul>
+    <li class="li1"><span>1</span></li>
+  </ul>
+</div> 
+	</div>
+    <script type="text/javascript">jQuery("#ad").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,interTime:5000, delayTime:2000, mouseOverStop:false});</script>	
+
+	</div>	
+</div>
+
+
+<!--contC start-->
+
+<div class="contC">			
+	<div class="side fr">
+		<div class="sideBox" id="ssyd">
+		  <div class="hd">		  
+		  <h3><a href="/Category_7/Index.aspx">师生园地</a></h3>
+		  </div>
+		  <div class="bd">
+		     <div class="pics">		     	
+		     	<ul class="picList">
+		     	      
+                        <li>
+  <div class="pic"><a title="高一年级期中考试质量分析会" href="/Item/4720.aspx" target="_blank"><img src="/UploadFiles/xxgk/2018/5/201805101947375691_140_105.jpg"></a></div>
+  <div class="title"><a title="高一年级期中考试质量分析会" href="/Item/4720.aspx" target="_blank">高一年级期中考…</a></div>
+</li>
+<li class="last">
+  <div class="pic"><a title="我校被评为2017年度东山镇先进集体" href="/Item/4610.aspx" target="_blank"><img src="/UploadFiles/xxgk/2018/2/201802251617479678_140_105.jpg"></a></div>
+  <div class="title"><a title="我校被评为2017年度东山镇先进集体" href="/Item/4610.aspx" target="_blank">我校被评为2017…</a></div>
+</li>
+                    
+		     	</ul>		     	
+		     </div>
+		     <div class="cont">		     	
+		     	<ul class="infoList">
+		     	    
+            <li><a href="/Item/4720.aspx" target="_blank" title="标题：高一年级期中考试质量分析会&#xD;点击数：144&#xD;发表时间：18年05月10日">高一年级期中考试质量分析会</a></li><li><a href="/Item/4610.aspx" target="_blank" title="标题：我校被评为2017年度东山镇先进集体&#xD;点击数：79&#xD;发表时间：18年02月25日">我校被评为2017年度东山镇先进集体</a></li><li><a href="/Item/4607.aspx" target="_blank" title="标题：砥砺奋斗，铸成佳绩—我校召开全体教职工大会&#xD;点击数：143&#xD;发表时间：18年02月24日">砥砺奋斗，铸成佳绩—我校召开全体…</a></li><li><a href="/Item/4606.aspx" target="_blank" title="标题：我校召开领导班子调整会议&#xD;点击数：208&#xD;发表时间：18年02月23日">我校召开领导班子调整会议</a></li><li><a href="/Item/4602.aspx" target="_blank" title="标题：抱朴求真促发展  务实敦行抓落实&#xD;点击数：95&#xD;发表时间：18年02月03日"><font style="color:#e51609;font-weight:bold;font-style:normal;;">抱朴求真促发展  务实敦行抓落实</font></a></li><li class="last"><a href="/Item/4588.aspx" target="_blank" title="标题：我校被评为2014-2016年度吴中区文明校园&#xD;点击数：78&#xD;发表时间：18年01月17日">我校被评为2014-2016年度吴中区文…</a></li>
+          
+		     	</ul>		     	
+		     </div>
+		  </div>
+		</div>
+
+       
+       <!--链接  start-->
+          <div class="sideLink">
+          	 <ul>
+		 		<li class="li1"><a href="http://www.dszx.net/baoxiu" target="_blank">电教设备报修</a>li>
+		 		<li class="li2"><a href="http://web.dszx.net/StuLogin" target="_blank">班级电脑登录密码修改</a></li>
+		 	</ul>
+          </div>
+       <!--链接  end-->
+       
+
+	</div>
+	<div class="fl main">
+		<div class="boxTab boxTab01 fl" style="width:446px">
+  		  <div class="hd">  		   
+  		    <ul>
+  		       <li><a href="/Category_5/Index.aspx">教育科研</a></li>
+  		       <li><a href="/Category_6/Index.aspx">教育技术</a></li>  		      
+  		    </ul>
+  		  </div>
+  		  <div class="bd">
+  		    <ul class="infoList">
+		         
+            <li><span class="date">05-09</span><a href="/Item/4716.aspx" target="_blank" title="标题：省第十六届“蓝天杯”优秀论文评选活动通知&#xD;点击数：32&#xD;发表时间：18年05月09日">省第十六届“蓝天杯”优秀论文评选活动通知</a></li><li><span class="date">05-03</span><a href="/Item/4712.aspx" target="_blank" title="标题：东山中学2018年江苏省“教海探航”征文参评简讯&#xD;点击数：81&#xD;发表时间：18年05月03日">东山中学2018年江苏省“教海探航”征文参评简讯</a></li><li><span class="date">04-27</span><a href="/Item/4707.aspx" target="_blank" title="标题：市教育学会十三五课题：1-4月课题组活动《中小学学科分层教学的实践与策略研究》&#xD;点击数：31&#xD;发表时间：18年04月27日">市教育学会十三五课题：1-4月课题组活动《中小学…</a></li><li><span class="date">04-27</span><a href="/Item/4706.aspx" target="_blank" title="标题：市教育学会十三五课题：学期汇报表《中小学学科分层教学的实践与策略研究》&#xD;点击数：38&#xD;发表时间：18年04月27日">市教育学会十三五课题：学期汇报表《中小学学科分…</a></li><li><span class="date">04-27</span><a href="/Item/4705.aspx" target="_blank" title="标题：市教育学会十三五课题：4月活动记载表《探究性学习在地理学科教学中的应用研究》&#xD;点击数：23&#xD;发表时间：18年04月27日">市教育学会十三五课题：4月活动记载表《探究性学…</a></li><li><span class="date">04-27</span><a href="/Item/4704.aspx" target="_blank" title="标题：市教育学会十三五课题：3月活动记载表《探究性学习在地理学科教学中的应用研究》&#xD;点击数：18&#xD;发表时间：18年04月27日">市教育学会十三五课题：3月活动记载表《探究性学…</a></li><li><span class="date">04-27</span><a href="/Item/4703.aspx" target="_blank" title="标题：市教育学会十三五课题：学期汇报表《探究性学习在地理学科教学中的应用研究》&#xD;点击数：23&#xD;发表时间：18年04月27日">市教育学会十三五课题：学期汇报表《探究性学习在…</a></li><li class="last"><span class="date">04-20</span><a href="/Item/4692.aspx" target="_blank" title="标题：市教育学会十三五课题：3月活动记载表2《三星级高中数学教学的有效性策略探究》&#xD;点击数：28&#xD;发表时间：18年04月20日">市教育学会十三五课题：3月活动记载表2《三星级高…</a></li>
+          
+		     </ul>	
+		     <ul class="infoList">
+		         
+            <li><span class="date">05-15</span><a href="/Item/4727.aspx" target="_blank" title="标题：关于举办2018吴中区中学信息化教学能手的通知&#xD;点击数：40&#xD;发表时间：18年05月15日">关于举办2018吴中区中学信息化教学能手的通知</a></li><li><span class="date">04-25</span><a href="/Item/4701.aspx" target="_blank" title="标题：2018年苏州市中小学教师信息技术应用能力提升工程培训（春季班）开班通知&#xD;点击数：158&#xD;发表时间：18年04月25日">2018年苏州市中小学教师信息技术应用能力提升工程…</a></li><li><span class="date">03-12</span><a href="/Item/4626.aspx" target="_blank" title="标题：2017 年吴中区教育信息化应用能力大赛获奖情况&#xD;点击数：109&#xD;发表时间：18年03月12日">2017 年吴中区教育信息化应用能力大赛获奖情况</a></li><li><span class="date">03-09</span><a href="/Item/4624.aspx" target="_blank" title="标题：2017年度苏州市实验论文评比获奖情况&#xD;点击数：88&#xD;发表时间：18年03月09日">2017年度苏州市实验论文评比获奖情况</a></li><li><span class="date">01-29</span><a href="/Item/4564.aspx" target="_blank" title="标题：2017年度教技条线教师荣誉汇总&#xD;点击数：164&#xD;发表时间：18年01月29日">2017年度教技条线教师荣誉汇总</a></li><li><span class="date">01-29</span><a href="/Item/4598.aspx" target="_blank" title="标题：2017年吴中区多媒体软件制作评比结果&#xD;点击数：76&#xD;发表时间：18年01月29日">2017年吴中区多媒体软件制作评比结果</a></li><li><span class="date">01-10</span><a href="/Item/4570.aspx" target="_blank" title="标题：关于组织2018年吴中区中小学电脑制作活动的通知&#xD;点击数：41&#xD;发表时间：18年01月10日">关于组织2018年吴中区中小学电脑制作活动的通知</a></li><li class="last"><span class="date">01-09</span><a href="/Item/4569.aspx" target="_blank" title="标题：关于2018年吴中区教育技术应用与研究论文评比活动的通知&#xD;点击数：30&#xD;发表时间：18年01月09日">关于2018年吴中区教育技术应用与研究论文评比活动…</a></li>
+          
+		     </ul>	
+  		  </div>
+  		</div>
+  		<script type="text/javascript">jQuery(".boxTab01").slide({titCell: ".hd li", mainCell:".bd",delayTime:500,autoPlay:true,targetCell:".hd span a"});</script>
+
+
+		<div class="boxTab boxTab02 fr" style="width:446px">
+  		  <div class="hd">  		   
+  		    <ul>
+  		       <li><a href="/Category_8/Index.aspx">党工团后勤</a></li>
+  		       <li><a href="/Category_9/Index.aspx">学科资源</a></li>  		      
+  		    </ul>
+  		  </div>
+  		  <div class="bd">
+  		    <ul class="infoList">
+		         
+            <li><span class="date">05-23</span><a href="/Item/4738.aspx" target="_blank" title="标题：我校陈淑敏老师获东山片“不忘初心    牢记使命”演讲比赛二等奖&#xD;点击数：20&#xD;发表时间：18年05月23日">我校陈淑敏老师获东山片“不忘初心    牢记使命”…</a></li><li><span class="date">05-21</span><a href="/Item/4732.aspx" target="_blank" title="标题：第十三周菜单&#xD;点击数：33&#xD;发表时间：18年05月21日">第十三周菜单</a></li><li><span class="date">05-14</span><a href="/Item/4725.aspx" target="_blank" title="标题：第十二周菜单&#xD;点击数：26&#xD;发表时间：18年05月14日">第十二周菜单</a></li><li><span class="date">05-10</span><a href="/Item/4719.aspx" target="_blank" title="标题：感恩 青春 梦想 责任  ——2016级学生十八岁成人仪式&#xD;点击数：70&#xD;发表时间：18年05月10日">感恩 青春 梦想 责任  ——2016级学生十八岁成人…</a></li><li><span class="date">05-10</span><a href="/Item/4718.aspx" target="_blank" title="标题：关于开展女职工读书活动暨“我爱阅读” 摄影比赛的通知&#xD;点击数：45&#xD;发表时间：18年05月10日">关于开展女职工读书活动暨“我爱阅读” 摄影比赛…</a></li><li><span class="date">05-09</span><a href="/Item/4717.aspx" target="_blank" title="标题：我校开展“不忘初心，牢记使命”主题演讲比赛&#xD;点击数：125&#xD;发表时间：18年05月09日">我校开展“不忘初心，牢记使命”主题演讲比赛</a></li><li><span class="date">05-08</span><a href="/Item/4714.aspx" target="_blank" title="标题：第十一周菜单&#xD;点击数：50&#xD;发表时间：18年05月08日">第十一周菜单</a></li><li class="last"><span class="date">05-03</span><a href="/Item/4711.aspx" target="_blank" title="标题：第十周菜单&#xD;点击数：34&#xD;发表时间：18年05月03日">第十周菜单</a></li>
+          
+		     </ul>	
+		     <ul class="infoList">
+		         
+            <li><span class="date">10-13</span><a href="/Item/4467.aspx" target="_blank" title="标题：火灾警示录（2016年消防工作会议）&#xD;点击数：59&#xD;发表时间：17年10月13日">火灾警示录（2016年消防工作会议）</a></li><li><span class="date">09-04</span><a href="/Item/4426.aspx" target="_blank" title="标题：[视频]2017年开学第一课《中华骄傲》&#xD;点击数：181&#xD;发表时间：17年09月04日">[视频]2017年开学第一课《中华骄傲》</a></li><li><span class="date">09-02</span><a href="/Item/4117.aspx" target="_blank" title="标题：[视频]2016年开学第一课《先辈的旗帜》&#xD;点击数：481&#xD;发表时间：16年09月02日">[视频]2016年开学第一课《先辈的旗帜》</a></li><li><span class="date">09-02</span><a href="/Item/3606.aspx" target="_blank" title="标题：[视频]2013年安全教育第一课&#xD;点击数：414&#xD;发表时间：14年09月02日"><font style=";">[视频]2013年安全教育第一课</font></a></li><li><span class="date">11-28</span><a href="/Item/1759.aspx" target="_blank" title="标题：离子反应&#xD;点击数：474&#xD;发表时间：13年11月28日"><font style=";">离子反应</font></a></li><li><span class="date">09-04</span><a href="/Item/3605.aspx" target="_blank" title="标题：[视频]2013年开学第一课&#xD;点击数：475&#xD;发表时间：13年09月04日"><font style=";">[视频]2013年开学第一课</font></a></li><li><span class="date">04-09</span><a href="/Item/539.aspx" target="_blank" title="标题：[视频]预防H7N9禽流感&#xD;点击数：523&#xD;发表时间：13年04月09日"><font style=";">[视频]预防H7N9禽流感</font></a></li><li class="last"><span class="date">02-22</span><a href="/Item/3604.aspx" target="_blank" title="标题：[资源]感动中国2012年度人物颁奖视频&#xD;点击数：467&#xD;发表时间：13年02月22日"><font style=";">[资源]感动中国2012年度人物颁奖视频</font></a></li>
+          
+		     </ul>	
+  		  </div>
+  		</div>
+  		<script type="text/javascript">jQuery(".boxTab02").slide({titCell: ".hd li", mainCell:".bd",delayTime:500,targetCell:".hd span a"});</script>
+<a name="houqin"></a>
+		 <div class="clearbox blank"></div>
+		 <div class="links">
+		 	<ul>
+		 		<li class="li1"><a href="/Category_2/Index.aspx" target="_blank">校务公开</a></li>
+		 		<li class="li2"><a href="/Category_126/Index.aspx" target="_blank">校长信箱</a></li>
+		 		<li class="li3"><a href="/Category_26/Index.aspx" target="_blank">咨询联系</a></li>
+		 		<li class="li4"><a href="/Category_13/Index.aspx" target="_blank">学校部门</a></li>
+		 		<li class="li5"><a href="/Category_83/Index.aspx" target="_blank">每周菜谱</a></li>
+		 		<li class="li6"><a href="/Category_115/Index.aspx" target="_blank">图片中心</a></li>
+		 		<li class="li7"><a href="http://blog.dszx.net" target="_blank">博客网志</a></li>
+		 		<li class="li8"><a href="http://www.dszx.net/mail" target="_blank">网络存储</a></li>
+		 		<li class="li9"><a href="http://www.dszx.net/xygl/" target="_blank">学业管理</a></li>
+		 		<li class="li10"><a href="http://yun.dszx.net/" target="_blank">莫厘云盘</a></li>
+		 		<li class="li11"><a href="http://web.dszx.net/dzbk/" target="_blank">电子备课</a></li>
+		 		<li class="li12"><a href="http://www.dszx.net/lib/" target="_blank">学校图书馆</a></li>
+		 		<li class="li13"><a href="http://vod.dszx.net/" target="_blank">云录播平台</a></li>
+		 		<li class="li14"><a href="http://weike.dszx.net/" target="_blank">微课资源库</a></li>
+		 		<li class="li15"><a href="http://www.dszx.net/soft" target="_blank">学校软件库</a></li>
+		 		<li class="li16"><a href="http://zyk.dszx.net/" target="_blank">教育视频库</a></li>
+		 		<li class="li17"><a href="http://zyk.dszx.net/gxzyk" target="_blank">综合资源库</a></li>
+		 		<li class="li18"><a href="/Item/281.aspx" target="_blank">未来教室直播</a></li>
+		 	</ul>
+		 </div>
+
+
+		
+
+	</div>
+	
+</div>
+  
+<!--contC end-->
+
+
+<!--contD start-->
+  <div class="contD">  			
+  	<div class="fr side">  		
+  		<div class="sideBox" id="wztj">
+  		  <div class="hd">  		
+  		  <h3><a name="webCount"></a>网站统计</h3>
+  		  </div>
+  		  <div class="bd">
+  		  <ul>
+  		  <li>文章总数：4738篇</li>
+  		   <li>总访问量：595953 人次</li>
+<li>总浏览量：2253352 人次</li>
+<li>月访量：1954 人次</li>
+<li>最高月访量：15232 人次</li>
+<li>今日访问：75 人次</li>
+<li>最高日访量：413 人次</li>
+<li><script type="text/javascript" src="ShengheNum.asp"></script></li>
+                        
+  		   </ul>
+                 </div>
+  		</div>
+  		
+  	</div>
+  	<div class="fl main">  		
+  		<div class="boxTab boxTab03 fr">
+  		  <div class="hd">  		   
+  		    <ul>
+  		       <li><a a href="http://blog.dszx.net/" target="_blank">博客网志</a></li>
+  		       <li><a a href="http://weike.dszx.net/" target="_blank">微课资源</a></li>  		      
+  		    </ul>
+  		  </div>
+  		  <div class="bd">
+  		    <ul class="infoList">
+                               <!-- 
+                                  <script language="JavaScript" type="text/JavaScript"  src="http://blog.dszx.net/jsNew.asp?action=blog"  charset="gbk"></script>
+                               -->   
+                                  <script language="JavaScript" type="text/JavaScript"  src="blogjs/js2.js"  charset="gbk"></script>
+		     </ul>	
+		     <ul class="infoList">
+                              <!-- 
+		         <script language="JavaScript" type="text/JavaScript" src="http://weike.dszx.net/NewsResourcejs1.asp" charset="gbk"></script>
+                              -->   
+                                  <script language="JavaScript" type="text/JavaScript"  src="blogjs/js3.js"  charset="gbk"></script>
+
+		     </ul>	
+  		  </div>
+  		</div>
+  		<script type="text/javascript">jQuery(".boxTab03").slide({titCell: ".hd li", mainCell:".bd",delayTime:300,targetCell:".hd span a"});</script>
+   		<div class="boxTab boxTab04 fl">
+  		  <div class="hd">  		   
+  		    <ul>
+  		       <li><a href="http://vod.dszx.net/"  target="_blank">课堂教学录像</a></li>
+  		       <li><a href="http://web.dszx.net/dzbk/" target="_blank">电子备课资料</a></li>  		      
+  		    </ul>
+  		  </div>
+  		  <div class="bd">
+  		    <ul class="infoList">
+	                 <!--
+		         <script language="JavaScript" type="text/JavaScript" src="http://vod.dszx.net/NewsResourcejs1.asp" charset="gbk"></script>
+                              -->   
+                                  <script language="JavaScript" type="text/JavaScript"  src="blogjs/js0.js"  charset="gbk"></script>
+		     </ul>	
+		     <ul class="infoList">
+                          <!--
+		         <script language="JavaScript" type="text/JavaScript" src='http://web.dszx.net/dzbk/newjs.asp?ArticleNum=7&ShowType=1&ShowCols=1&ShowTitle=true&ShowUpdateTime=true&TitleMaxLen=30&ContentMaxLen=200&OrderField=ArticleID&OrderType=desc
+' charset="gbk"></script>
+                              -->   
+                                  <script language="JavaScript" type="text/JavaScript"  src="blogjs/js1.js"  charset="gbk"></script>
+
+		     </ul>	
+  		  </div>
+  		</div>
+  		<script type="text/javascript">jQuery(".boxTab04").slide({titCell: ".hd li", mainCell:".bd",delayTime:300,targetCell:".hd span a"});</script> 		
+
+  	</div>
+  	
+  </div>
+<!--contD end-->
+
+
+
+
+		<div class="clearbox blank"></div>
+
+		<!-- 校园风光 -->
+		<div class="box"  id="xyfg">
+			<div class="hd">
+				<span><a href="/Category_115/Index.aspx">更多>></a></span>
+				<a class="prev"></a> <a class="next"></a>
+				<h3><a href="/Category_115/Index.aspx" >图片中心</a></h3>
+			</div>
+			<div class="bd">
+				<ul class="picList ">
+                        <li>
+  <div class="pic"><a title="我校田径队获得2016年吴中区中小学阳光体育大会田径项目团体总分第一，实现五连冠" href="/Item/4202.aspx" target="_blank"><img src="/UploadFiles/tpzx/2016/11/201611231428513854_S_194_137.JPG"></a></div>
+  <div class="title"><a title="我校田径队获得2016年吴中区中小学阳光体育大会田径项目团体总分第一，实现五连冠" href="/Item/4202.aspx" target="_blank">我校田径队获得2016…</a></div>
+</li>
+<li>
+  <div class="pic"><a title="第二十七届秋季运动会" href="/Item/4145.aspx" target="_blank"><img src="/UploadFiles/tpzx/2016/9/201609230952530473_194_137.JPG"></a></div>
+  <div class="title"><a title="第二十七届秋季运动会" href="/Item/4145.aspx" target="_blank">第二十七届秋季运动会</a></div>
+</li>
+<li>
+  <div class="pic"><a title="2016届高三励志跑操活动" href="/Item/4080.aspx" target="_blank"><img src="/UploadFiles/tpzx/2016/6/201606231854593290_194_137.JPG"></a></div>
+  <div class="title"><a title="2016届高三励志跑操活动" href="/Item/4080.aspx" target="_blank">2016届高三励志跑操…</a></div>
+</li>
+<li>
+  <div class="pic"><a title="校园风景照" href="/Item/4075.aspx" target="_blank"><img src="/UploadFiles/tpzx/2016/6/201606230858337409_194_137.jpg"></a></div>
+  <div class="title"><a title="校园风景照" href="/Item/4075.aspx" target="_blank">校园风景照</a></div>
+</li>
+<li>
+  <div class="pic"><a title="学校田径场" href="/Item/4074.aspx" target="_blank"><img src="/UploadFiles/tpzx/2016/6/201606230857202419_194_137.jpg"></a></div>
+  <div class="title"><a title="学校田径场" href="/Item/4074.aspx" target="_blank">学校田径场</a></div>
+</li>
+<li>
+  <div class="pic"><a title="新玉树楼" href="/Item/4073.aspx" target="_blank"><img src="/UploadFiles/tpzx/2016/6/201606230858443953_194_137.jpg"></a></div>
+  <div class="title"><a title="新玉树楼" href="/Item/4073.aspx" target="_blank">新玉树楼</a></div>
+</li>
+<li>
+  <div class="pic"><a title="校园夜景" href="/Item/4072.aspx" target="_blank"><img src="/UploadFiles/tpzx/2016/6/201606230858293000_194_137.jpg"></a></div>
+  <div class="title"><a title="校园夜景" href="/Item/4072.aspx" target="_blank">校园夜景</a></div>
+</li>
+<li>
+  <div class="pic"><a title="校园景色" href="/Item/4070.aspx" target="_blank"><img src="/UploadFiles/tpzx/2016/6/201606230858285484_194_137.jpg"></a></div>
+  <div class="title"><a title="校园景色" href="/Item/4070.aspx" target="_blank">校园景色</a></div>
+</li>
+<li>
+  <div class="pic"><a title="雪景" href="/Item/4071.aspx" target="_blank"><img src="/UploadFiles/tpzx/2016/6/201606230914315755_194_137.jpg"></a></div>
+  <div class="title"><a title="雪景" href="/Item/4071.aspx" target="_blank">雪景</a></div>
+</li>
+<li class="last">
+  <div class="pic"><a title="教学楼" href="/Item/4076.aspx" target="_blank"><img src="/UploadFiles/UploadPhotos/Dsc01683_194_137.jpg"></a></div>
+  <div class="title"><a title="教学楼" href="/Item/4076.aspx" target="_blank">教学楼</a></div>
+</li>
+                    </ul>
+			</div>
+		</div>
+		 <script type="text/javascript">jQuery("#xyfg").slide( {mainCell:".bd ul",effect:"leftMarquee",vis:5,scroll:1,autoPlay:true,interTime:"30"} ); //leftMarquee</script> 
+
+		<div class="clearbox blank"></div>
+		
+		<div class="box" id="yqlj">
+		  <div class="hd">
+		  <span><a href="/Category_105/Index.aspx">更多>></a></span>
+		  <h3><a href="/Category_105/Index.aspx">友情链接</a></h3>
+		  </div>
+		  <div class="bd">
+		     
+		    <div class="tpyqlj">	
+		    <a class="prev"></a> <a class="next"></a>	    	
+		    	<ul class="picList">        
+                    
+                        <li>
+  <div class="pic"><a title="江苏教师教育" href="/Item/6.aspx" target="_blank"><img src="/UploadFiles/yqlj/2016/6/201606241206229720_160_52.gif"></a></div>
+</li>
+<li>
+  <div class="pic"><a title="吴中教育信息网" href="/Item/5.aspx" target="_blank"><img src="/UploadFiles/yqlj/2016/6/201606141007168608_160_52.gif"></a></div>
+</li>
+<li>
+  <div class="pic"><a title="吴中教研网" href="/Item/4.aspx" target="_blank"><img src="/UploadFiles/yqlj/2016/6/201606141006329587_160_52.jpg"></a></div>
+</li>
+<li>
+  <div class="pic"><a title="苏州市网上教师学校" href="/Item/3.aspx" target="_blank"><img src="/UploadFiles/yqlj/2016/6/201606141005043903_160_52.jpg"></a></div>
+</li>
+<li>
+  <div class="pic"><a title="中学学科网" href="/Item/2.aspx" target="_blank"><img src="/UploadFiles/yqlj/2016/6/201606241209193395_160_52.jpg"></a></div>
+</li>
+<li class="last">
+  <div class="pic"><a title="苏州市教育信息化公共服务平台" href="/Item/1.aspx" target="_blank"><img src="/UploadFiles/yqlj/2016/6/201606140942374393_160_52.jpg"></a></div>
+</li>
+                    
+                  </ul>
+		    </div>
+          <script type="text/javascript">jQuery("#yqlj").slide( {mainCell:".bd .tpyqlj ul",effect:"leftLoop",vis:6,scroll:1,autoPlay:false,interTime:"3000"} ); //leftMarquee</script> 
+            
+
+
+
+
+
+		     <ul class="linkSelectList">
+		             
+		             		
+		                
+            <select id="friendsitelist" onchange="if(this.options[this.selectedIndex].value!=''){ window.open(this.options[this.selectedIndex].value)  }"><option>国家教育网站</option><option value=http://1s1k.eduyun.cn>国家教育资源公共服务平台</option><option value=http://www.cbern.gov.cn>国家基础教育资源网</option><option value=http://www.cbe21.com>中国基础教育网</option><option value=http://www.chinaedu.edu.cn>中国教育信息网</option><option value=http://www.moe.edu.cn>教育部</option></select>
+          
+		             		
+		                
+            <select id="friendsitelist" onchange="if(this.options[this.selectedIndex].value!=''){ window.open(this.options[this.selectedIndex].value)  }"><option>江苏教育网站</option><option value=http://www.jste.net.cn>江苏教师教育网</option><option value=http://www.jsve.edu.cn/>江苏职业教育网</option><option value=http://jcjy.jsjyt.edu.cn>江苏基础教育网</option><option value=http://www.jseea.cn>江苏省教育考试院</option><option value=http://www.jssjys.com>江苏省中小学教学研究室</option><option value=http://www.ec.js.edu.cn>江苏教育</option></select>
+          
+		             		
+		                
+            <select id="friendsitelist" onchange="if(this.options[this.selectedIndex].value!=''){ window.open(this.options[this.selectedIndex].value)  }"><option>市区县教育</option><option value=http://www.szedu.com/>苏州市教育局</option><option value=http://www.zjgedu.com.cn>张家港市教育局</option><option value=http://www.jscsedu.com>常熟市教育局</option><option value=http://www.tcedu.com.cn>太仓市教育局</option><option value=http://www.ksedu.cn/>昆山市教育局</option><option value=http://www.jswjedu.gov.cn>吴江区教育局</option><option value=http://www.szwzedu.gov.cn>吴中区教育局</option><option value=http://www.szxcedu.gov.cn/>相城区教育局</option><option value=http://gsedu.xxcn.net>姑苏区教育局</option><option value=http://www.sipedu.org/website/>工业园区教育局</option><option value=http://www.snd.gov.cn/wjj/>高新区教育局</option></select>
+          
+		             		
+		                
+            <select id="friendsitelist" onchange="if(this.options[this.selectedIndex].value!=''){ window.open(this.options[this.selectedIndex].value)  }"><option>友情链接</option><option value=http://www.jse.edu.cn/>江苏省教育信息化公共服务平台</option><option value=http://www.szeps.net>苏州教育公共服务平台</option><option value=http://www.cfed.cnki.net>cnki中小学数字图书馆</option><option value=http://web.szwzedu.cn/wzjykt/>吴中区教育科研课题管理网</option><option value=http://weike.wxedu.net>吴中教育-微课资源网</option><option value=http://jxyj.szwzedu.cn>吴中区教研网</option><option value=http://web.wxedu.net/jyjs/>吴中区教技网</option><option value=http://web.wxedu.net/zkw>吴中招考网</option><option value=http://zzxx.szwzedu.cn>吴中智慧教育-学生自主学习平台</option></select>
+          
+		             		
+		                
+            <select id="friendsitelist" onchange="if(this.options[this.selectedIndex].value!=''){ window.open(this.options[this.selectedIndex].value)  }"><option>吴中区学校</option><option value=http://www.muduhs.com>江苏省木渎高级中学</option><option value=http://www.syzx.com.cn>苏苑高级中学</option><option value=http://www.jsfls.com>江苏省外国语学校</option><option value=http://www.szlzzx.com>甪直高级中学</option><option value=http://www.dszx.net>东山中学</option><option value=http://www.mdsz.com.cn>木渎金山高级中学</option><option value=http://www.szwzsj.com>吴中区中小学综合实践学校</option><option value=http://www.mdsyzx.com/>木渎实验中学</option><option value=http://www.dsmlzx.net>东山莫厘中学</option><option value=http://www.lhdyzx.net>临湖第一中学</option><option value=http://www.lhdezx.net/>临湖实验中学</option><option value=http://www.szhjzx.com/>横泾中学</option></select>
+          
+		             
+		     </ul>
+		     
+		     
+		  </div>
+		</div>
+		
+		
+		
+
+	</div>
+	<!-- content E -->
+
+	<!-- footer S -->
+	  <div id="footer" >
+  	<div id="footerIn">
+		<!-- footNav -->
+		<div class="footNav">
+                        <a href='#' onclick="SetHome(this,'http://www.dszx.net/')">设为首页</a> |
+                        <a href="#" onclick="AddFavorite('http://www.dszx.net/','苏州市吴中区东山中学')">加入收藏</a> |
+			<!--<a  href="/Category_10/Index.aspx">学校简介</a> | 			
+			<a href="/Category_126/Index.aspx">网上留言</a> | -->
+			<a href="/Category_113/Index.aspx" target='_blank'>网站导航</a> | 
+			<a href="/Item/4063.aspx" target='_blank'>联系咨询</a> | 
+			<a href="http://map.baidu.com/detail?qt=ninf&uid=34f68ab06291790a8f55ec4f&wd=&b=(13403112.74,3621377.16;13405204.74,3622827.16)&detail=education&from=map&ugc_ver=1" target="_blank">学校地图</a> | 
+ 			<a href="/admin/login.aspx" target='_blank'>后台登录</a>  
+		</div>
+		<!-- copyright -->
+		<div class="copyright">版权所有:CopyRight(C)®1999-2016 V7.0 All Rights Reserved.<Br>
+地址:苏州市吴中区东山镇莫厘路140号(雨花路)   邮编：215107   电话:66283104<Br>
+<a href='http://www.miibeian.gov.cn' target='_blank'>苏ICP备11028588号</a>  <a href='cert/320506060517000025.gif' target='_blank'>苏公网安备案证字320506060517000025号</a></div>
+
+      <div class="weixin">
+         <ul>
+         <li><a  href="/Template/Default/Skin/dingzhi/images/weixin.png" target="_blank" title="微信企业号"><img src="/Template/Default/Skin/dingzhi/images/weixin.png" alt="微信企业号" width=120 height=120 /></a></li>
+ <!--        <li><a  href="#"><img src="/Template/Default/Skin/dingzhi/images/weibo.gif" alt="微博" /></a></li>
+-->         </ul>
+      </div>
+
+      <div class="gongxin"><span id="_ideConac"><a target="_blank" href="http://bszs.conac.cn/sitename?method=show&amp;id=233586971FC06761E053022819AC0FB0"><img vspace="0" border="0" hspace="0" data-bd-imgshare-binded="1" src="http://dcs.conac.cn/image/blue.png" id="imgConac"></a></span></div>
+
+	</div>	
+  </div>
+
+	<!-- footer E -->
+</div>
+<!-- wrap E -->
+</div>
+<script  type="text/javascript" src='AdZone.asp'></script>
+</body>
+</html>

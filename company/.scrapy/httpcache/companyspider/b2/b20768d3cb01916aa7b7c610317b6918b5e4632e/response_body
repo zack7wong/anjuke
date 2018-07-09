@@ -1,0 +1,478 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>梅林中学</title>
+    <link href="../images/swiper.min.css" rel="stylesheet" type="text/css">
+    <link href="../images/common.css" rel="stylesheet" type="text/css">
+    <link href="../images/mlzx_layout.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../images/jquery.min.js"></script>
+    <script type="text/javascript" src="../images/jQuery.resizeEnd.js"></script>
+    <script type="text/javascript" src="../images/swiper.min.js"></script>
+
+<script src="../images/hint20170601.js" type="text/javascript"></script>
+<style>
+/*浏览器弹窗*/
+.CWhint{width:580px; position: fixed; top: 50%;left: 50%; margin-top:-149px; margin-left:-290px; background: #fff; z-index: 9999; display:none;}
+.CWhinttit{ height:47px; background:#af251b; font-size:18px; color:#fff; line-height:47px; padding-left:20px; position: relative;}
+.CWhintbox{ margin:0 48px; padding:35px 0; position:relative; padding-left:81px;}
+.CWhintleft{ float:left; position:absolute; left:0; top:35px;}
+.CWbrowser{    padding-top: 10px;}
+.CWbrowser a{ display:inline-block; width:19%; font-size:12px; text-align:center;}
+.CWbrowser a img{ display:block;    max-width: 100%; margin:0 auto;}
+.CWbrowser a em{ display:block; color:#b80007;}
+.CWbrowser a span{ display:block;    line-height: 16px;}	
+.CWhintright h3{ font-size:18px;}
+.CWhintrighthref{ color:#af251b; border-bottom:1px solid #af251b; margin:5px 0; display:inline-block;}
+.CWhintgran{ color:#666; margin:10px 0;}
+.CWclsoe{ display:block; position: absolute; height:47px; width:52px; text-align:center; top: 2px; right: 0;}
+.masker02{ position: fixed; top: 0; left: 0;right:0;bottom:0; z-index: 9998; background: rgba(0,0,0,0.6); filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#8F000000,endcolorstr=#8F000000); display: none;}
+      @media (min-width: 1260px) {
+	
+.wnav ul li{float:left;margin-left: 8px;}
+
+ .nqhpopup { position:fixed;z-index:1000;top:0;left:0;bottom:0;right:0;display:none;}
+.nqhpopupbg { position:absolute;left:0;top:0;right:0;bottom:0;z-index:1;background:rgba(0,0,0,0.6);}
+.nqhpopupM{display:block;max-width:100%;position:absolute;z-index:2;top:50%;left:50%;transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);}
+.nqhpopupM img { display:block;width:240px;height:240px;}
+
+.introducelist04 ul li img {
+
+    opacity: 0.6;}
+}
+
+
+
+@media (min-width:991px) {
+.left_tc {position:fixed;top:250px;left:4px;height:67px; z-index:98;}
+.left_tc1 {position:fixed;top:472px;left:4px;height:67px; z-index:98;}
+.left_tc img{width:80px}
+.left_tc1 img{width:80px}
+.left_tc_x{width:15px;height:25px;background:#FBF148;color:#FFFFFF;font-size:15px;text-align:center;cursor:pointer;position:absolute; top:2px; right:2px}
+}
+ </style>
+</head>
+
+<body>
+   
+   <header class="wqheader">
+   		<div class="commonweb clearfix">
+        	 <div class="wnav visible-md">
+                <ul class="clearfix">
+                    <li><h3><a href="./" class="cur">首 页</a></h3></li>
+                  
+			 <li><h3><a href="./xxgk/">学校概况</a></h3></li>
+		  
+			 <li><h3><a href="./xyzx/">校园资讯</a></h3></li>
+		  
+			 <li><h3><a href="./dyyd/">专题专栏</a></h3></li>
+		  
+			 <li><h3><a href="./tsfz/">特色发展</a></h3></li>
+		  
+			 <li><h3><a href="./jxjy_933/">教学教研</a></h3></li>
+		  
+			 <li><h3><a href="./kjtd_939/">快捷通道</a></h3></li>
+		  
+			 <li><h3><a href="./wx/">服务窗口</a></h3></li>
+		  
+                <!-- <li>
+                        <h3><a href="javascript:;" class="iconA17">微信</a></h3>
+                    </li>-->
+                </ul>
+            </div>
+            <h3 class="wlogo"><a href="./"><img src="./images/P020170321845779925292.png" /></a></h3>
+       </div> 
+       <div class="mobilenav"><i class="icon-css-menu"></i></div>
+   </header>
+
+    <section class="wbanner banner">
+        <ul class="swiper-wrapper">
+            
+              
+
+             <li class="swiper-slide">
+                <img src="" pcsrc="./sydt/201703/W020170320623774650859.jpg" ydsrc="./sydt/201703/W020170320623774650859.jpg" /></li>
+
+
+             <li class="swiper-slide">
+                <img src="" pcsrc="./sydt/201703/W020170320623577111817.jpg" ydsrc="./sydt/201703/W020170320623577111817.jpg" /></li>
+
+
+             <li class="swiper-slide">
+                <img src="" pcsrc="./sydt/201703/W020170320623158810157.png" ydsrc="./sydt/201703/W020170320623158810157.png" /></li>
+
+
+             <li class="swiper-slide">
+                <img src="" pcsrc="./sydt/201703/W020170323521900788766.png" ydsrc="./sydt/201703/W020170323521900788766.png" /></li>
+
+
+             <li class="swiper-slide">
+                <img src="" pcsrc="./sydt/201703/W020170323522165168904.png" ydsrc="./sydt/201703/W020170323522165168904.png" /></li>
+
+        </ul>
+        <div class="bannerdot"></div>
+    </section>
+
+     <!-- <div class="newscont06 clearfix">
+       <div class="commonweb">
+           <div class="zmoduletitle">
+                <h4>新闻动态</h4>
+            </div>
+
+           <ul class="clearfix">
+            
+               <li class="col-lg-3 col-md-3 col-sm-6">
+                   <a class="znewsimg06" href="./xyzx/tpxw/201703/t20170317_8190.html"><img src="./xyzx/tpxw/201703/W020170317611575834849.jpg" /></a>
+                   <h4><a href="./xyzx/tpxw/201703/t20170317_8190.html"><a href="./xyzx/tpxw/201703/t20170317_8190.html">梅林中学第十五届艺术节暨新年文艺汇演圆满举行</a></a></h4>
+                   <p><br/>　　载歌载舞辞旧岁，同心同德贺新年！在2017年新年即将到来之际，在这师生同庆、...</p>
+                   <a class="zremore06" href="./xyzx/tpxw/201703/t20170317_8190.html">阅读详细</a>
+               </li>
+         
+               <li class="col-lg-3 col-md-3 col-sm-6">
+                   <a class="znewsimg06" href="./xyzx/tpxw/201703/t20170317_8191.html"><img src="./xyzx/tpxw/201703/W020170317611593023497.jpg" /></a>
+                   <h4><a href="./xyzx/tpxw/201703/t20170317_8191.html"><a href="./xyzx/tpxw/201703/t20170317_8191.html">梅林中学第21届运动会精彩回顾</a></a></h4>
+                   <p><br/>　　迎着秋日的朝阳，伴随着收获的季节，梅林中学第二十一届运动会于十月二十七日...</p>
+                   <a class="zremore06" href="./xyzx/tpxw/201703/t20170317_8191.html">阅读详细</a>
+               </li>
+         
+               <li class="col-lg-3 col-md-3 col-sm-6">
+                   <a class="znewsimg06" href="./xyzx/tpxw/201703/t20170317_8193.html"><img src="./xyzx/tpxw/201703/W020170317611643677966.jpg" /></a>
+                   <h4><a href="./xyzx/tpxw/201703/t20170317_8193.html"><a href="./xyzx/tpxw/201703/t20170317_8193.html">生也有涯，而知也无涯</a></a></h4>
+                   <p><br/>　　——国际生涯规划师认证培训（梅林中学专场）活动纪实<br/>　　酷热褪去，凉风送...</p>
+                   <a class="zremore06" href="./xyzx/tpxw/201703/t20170317_8193.html">阅读详细</a>
+               </li>
+         
+               <li class="col-lg-3 col-md-3 col-sm-6">
+                   <a class="znewsimg06" href="./xyzx/tpxw/201703/t20170317_8192.html"><img src="./xyzx/tpxw/201703/W020170317611618676194.jpg" /></a>
+                   <h4><a href="./xyzx/tpxw/201703/t20170317_8192.html"><a href="./xyzx/tpxw/201703/t20170317_8192.html">梅林中学2016级高一新生军训汇报展</a></a></h4>
+                   <p><br/>　　中学生参加军事训练是我国《兵役法》的明确规定，也是每一个青少年的必修课。...</p>
+                   <a class="zremore06" href="./xyzx/tpxw/201703/t20170317_8192.html">阅读详细</a>
+               </li>
+         
+               
+           </ul>
+           <a class="zmodulelink" href="./xyzx/tpxw/">了解更多</a>
+       </div>
+   </div>-->
+
+
+
+    
+
+    <!---------**made in 2017-03-23 begin**-------->
+    <!--底部有添加一个js板块-->
+    <div class="newscont06 clearfix">
+        <div class="newscont06L col-md-4">
+            <h4 class="smalltitle clearfix"><a href="./xyzx/tpxw/" class="morebtn">更多+</a>图片新闻</h4>
+            <div class="newscont06Llist swiper-container-horizontal">
+                <ul class="swiper-wrapper" style="transform: translate3d(-369px, 0px, 0px); transition-duration: 0ms;">
+
+                    
+                    <li class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 369px;"><a href="./xyzx/tpxw/201703/t20170317_8190.html">
+                        <img src="./xyzx/tpxw/201703/W020170317611572869544.jpg" /><p class="text textO">梅林中学第十五届艺术节暨新年文艺汇演圆满举行</p>
+                    </a></li>
+                       
+                     
+                    <li class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 369px;"><a href="./xyzx/tpxw/201703/t20170317_8191.html">
+                        <img src="./xyzx/tpxw/201703/W020170323822712156977.jpg" /><p class="text textO">梅林中学第21届运动会精彩回顾</p>
+                    </a></li>
+                       
+                     
+                    <li class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 369px;"><a href="./xyzx/tpxw/201703/t20170317_8193.html">
+                        <img src="./xyzx/tpxw/201703/W020170317611642576219.jpg" /><p class="text textO">生也有涯，而知也无涯</p>
+                    </a></li>
+                       
+                        
+                    <li class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 369px;"><a href="./xyzx/tpxw/201703/t20170317_8190.html">
+                        <img src="./xyzx/tpxw/201703/W020170317611572869544.jpg" /><p class="text textO">梅林中学第十五届艺术节暨新年文艺汇演圆满举行</p>
+                    </a></li>
+                       
+                     
+                     <li class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 369px;"><a href="./xyzx/tpxw/201703/t20170317_8191.html">
+                        <img src="./xyzx/tpxw/201703/W020170323822712156977.jpg" /><p class="text textO">梅林中学第21届运动会精彩回顾</p>
+                    </a></li>
+                       
+
+
+                     
+                     
+                </ul>
+                <div class="dot swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+            </div>
+        </div>
+        <div class="newscont06C col-md-4">
+            <h4 class="smalltitle clearfix"><a href="./xyzx/xxxw/" class="morebtn">更多+</a>学校新闻</h4>
+           <!-- <dl class="newscont06Ctop clearfix">
+             
+                <dt class="imgbox">
+                    <a href="./xyzx/xxxw/201805/t20180529_100234.html">
+                        <img src="" /></a>
+                </dt>
+                <dd class="textbox">
+                  
+                    <h5 class="name"><a href="./xyzx/xxxw/201805/t20180529_100234.html">梅林中学开展“阳光心态，成功在我”高考励志心理讲座</a></h5>
+                    <p class="text textO2">&nbsp;&nbsp;2018年5月25日，恰逢525心理健康日，我校邀请红岭中学高中...</p>
+                    <p class="time">05-29</p>
+             
+                </dd>
+                 
+            </dl>-->
+            <ul class="newscont06Ctoplist clearfix">
+               
+                <li class="clearfix"><a href="./xyzx/xxxw/201805/t20180529_100234.html" class="name textO">梅林中学开展“阳光心态，成功在我”高考励志心理讲座</a><span class="time">05-29</span></li>
+                 
+                <li class="clearfix"><a href="./xyzx/xxxw/201805/t20180529_100230.html" class="name textO">梅林中学扬威2018年广东省中学生田径冠军赛</a><span class="time">05-29</span></li>
+                 
+                <li class="clearfix"><a href="./xyzx/xxxw/201805/t20180524_99961.html" class="name textO">专业能力大比拼 同台竞技促成长</a><span class="time">05-24</span></li>
+                 
+                <li class="clearfix"><a href="./xyzx/xxxw/201805/t20180518_99718.html" class="name textO">纸上得来终觉浅，绝知此事要躬行</a><span class="time">05-18</span></li>
+                 
+                <li class="clearfix"><a href="./xyzx/xxxw/201805/t20180518_99706.html" class="name textO">千锤百炼 解题大赛方显本色</a><span class="time">05-18</span></li>
+                 
+                <li class="clearfix"><a href="./xyzx/xxxw/201805/t20180518_99704.html" class="name textO">美术好项目 特色誉福田</a><span class="time">05-18</span></li>
+                  
+            </ul>
+        </div>
+        <div class="newscont06R col-md-4">
+            <h4 class="smalltitle clearfix"><a href="./xyzx/xxgg/tzggx/" class="morebtn">更多+</a>学校公告</h4>
+            <div class="newscont06Rlist">
+
+             
+              
+                <dl class="clearfix">
+                    <dt>
+                        <span>15</span>
+                        <em>2018-05</em>
+                    </dt>
+                    <dd>
+                        <h4 class="textO"><a href="./xyzx/xxgg/tzggx/201805/t20180515_99471.html">深圳市福田区梅林中学校园安防监控增补设备采购招标公告</a></h4>
+                        <p><br/>　　深圳市福田区梅林中学校园安防监控增补设备采购项目进行...</p>
+                        <span class="phdate">2018-05-15</span>
+                    </dd>
+                </dl>
+                
+                <dl class="clearfix">
+                    <dt>
+                        <span>11</span>
+                        <em>2018-05</em>
+                    </dt>
+                    <dd>
+                        <h4 class="textO"><a href="./xyzx/xxgg/tzggx/201805/t20180511_99355.html">2018梅林中学艺体特色教育展示成绩查询公告</a></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;深圳市福田区梅林中学于5月6日顺利举行艺体特色教育展示...</p>
+                        <span class="phdate">2018-05-11</span>
+                    </dd>
+                </dl>
+                
+                <dl class="clearfix">
+                    <dt>
+                        <span>18</span>
+                        <em>2018-04</em>
+                    </dt>
+                    <dd>
+                        <h4 class="textO"><a href="./xyzx/xxgg/tzggx/201804/t20180418_98034.html">2018年梅林中学艺体特色展示交流日活动公告</a></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;梅林中学是深圳市教育局指定的，具有艺体特色团队自主招...</p>
+                        <span class="phdate">2018-04-18</span>
+                    </dd>
+                </dl>
+                 
+            </div>
+        </div>
+    </div>
+    <!---------**made in 2017-03-23 end**-------->
+
+
+   <div class="solutioncont4 clearfix">
+       <dl class="col-lg-3 col-md-3 col-sm-6 clearfix">
+           <dd>
+               <a href="./dyyd/zszl/">
+                   <h4>招生专栏</h4>
+                   <p>点燃青春，放飞梦想，梅林中学助你翱翔……</p>
+               </a>
+           </dd>
+           <dt style="background-image:url(../images/mszxzszl_20170223.jpg)"><a href="./dyyd/zszl/"><img src="../images/mszxzszl_20170223.jpg" /></a></dt>
+       </dl>
+       <dl class="col-lg-3 col-md-3 col-sm-6 clearfix">
+           <dd>
+               <a href="./dyyd/djzc/sjdzl/">
+                   <h4>党建之窗</h4>
+                   <p>全面贯彻党的十九大精神</p>
+               </a>
+           </dd>
+           <dt style="background-image:url(../images/mlzxsjd20171120.jpg)"><a href="./dyyd/djzc/sjdzl/"><img src="../images/mlzxsjd20171120.jpg" /></a></dt>
+       </dl>
+    
+       <dl class="col-lg-3 col-md-3 col-sm-6 clearfix">
+           <dd>
+               <a href="./dyyd/ysjy/">
+                   <h4>艺术教育</h4>
+                   <p>美育引领，多元选择，个性发展，梅林中学是你开启幸福人生的艺术殿堂……</p>
+               </a>
+           </dd>
+           <dt style="background-image:url(../images/mszxysjy_20170223.jpg)"><a href="./dyyd/ysjy/"><img src="../images/mszxysjy_20170223.jpg" /></a></dt>
+       </dl>
+          <dl class="col-lg-3 col-md-3 col-sm-6 clearfix">
+           <dd>
+               <a href="./dyyd/syzdzx/">
+                   <h4>生涯规划中心</h4>
+                   <p>认识自我，发展学业，指导升学，规划未来……</p>
+               </a>
+           </dd>
+           <dt style="background-image:url(../images/mszxsyzdzx_20170223.jpg)"><a href="./dyyd/syzdzx/"><img src="../images/mszxsyzdzx_20170223.jpg" /></a></dt>
+       </dl>
+   </div>
+   
+   
+   <div class="introducecont04 clearfix">
+       <div class="commonweb">
+       
+           <h4 class="zabouttitle04 canedit">梅林中学</h4>
+           <p class="zabouttext04 canedit">名师荟萃，学有所依；多元选择，个性发展；社团活动，丰富多彩；效益显著 学有所成。</p>
+           <a class="zmodulelink" href="./xxgk/xxjj/201704/t20170428_28529.html">了解更多</a>
+    
+       </div>
+       <div class="introducelist04">
+           <ul class="clearfix">
+               <li class="col-lg-3 col-md-3 col-sm-6">
+                   <a href="./xxgk/xxwh/">
+                       <img src="../images/mszxbxln_20170223.jpg" data-width="456" data-height="342" />
+                       <span class="introducetext04">
+                           <em class="canedit">学校文化</em>
+                           <i>了解更多</i>
+                       </span>
+                   </a>
+               </li>
+               <li class="col-lg-3 col-md-3 col-sm-6">
+                   <a href="./xxgk/xzfc/">
+                       <img src="../images/mszxxzfc_20170223.jpg" data-width="456" data-height="342" />
+                       <span class="introducetext04">
+                           <em class="canedit">校长风采</em>
+                           <i>了解更多</i>
+                       </span>
+                   </a>
+               </li>
+               <li class="col-lg-3 col-md-3 col-sm-6">
+                   <a href="./xxgk/mstd/">
+                       <img src="../images/version1_2017010516501812.jpg" data-width="456" data-height="342" />
+                       <span class="introducetext04">
+                           <em class="canedit">名师团队</em>
+                           <i>了解更多</i>
+                       </span>
+                   </a>
+               </li>
+               <li class="col-lg-3 col-md-3 col-sm-6">
+                   <a href="./xxgk/ryb/yxxs/">
+                       <img src="../images/mszxyyxz_20170223.jpg" data-width="456" data-height="342" />
+                       <span class="introducetext04">
+                           <em class="canedit">优秀学子</em>
+                           <i>了解更多</i>
+                       </span>
+                   </a>
+               </li>
+           </ul>
+       </div>
+</div>
+ <!--{foot begin-->
+     <footer class="footer">
+        <section class="commonweb clearfix footerweb">
+              <div class="p1 col-md-5 col-lg-4 clearfix">
+                  <!-- <a href="#" target="_blank">网站地图</a> |--> <a href="./xxgk/lxwm_942/" target="_blank">联系我们</a>
+               </div>
+               <p class="p2">© 2017 梅林中学  版权所有 </p>
+
+
+<p><a href="http://bszs.conac.cn/sitename?method=show&id=332D3D53B751795CE053012819AC05AD" class="footicon"><img src="../images/bluesydw.png" /></a></p>
+
+        </section>
+    </footer>
+
+  <!--二维码弹窗-->
+    <div class="nqhpopup rwmpopup">
+        <p class="nqhpopupbg"></p>
+        <div class="nqhpopupM">
+            <img src="../images/mlzxdyh_20170328.jpg" /><br/>
+            <img src="../images/mlzxfwh_20170328.jpg" />
+        </div>
+    </div>
+    <!--foot end-->
+<!--浏览器判断弹窗-->
+    <div class="masker02"></div>
+    <div class="CWhint">
+    	<h3 class="CWhinttit">提示<a class="CWclsoe" href="javascript:;"><img src="../images/wwpic21.png" /></a></h3>
+        <div class="CWhintbox">
+            <div class="CWhintleft">
+                <img src="../images/wwpic20.png" />
+            </div>
+            <div class="CWhintright">
+                <h3>很抱歉！您正在使用的浏览器版本过低，<br />无法得到最好的体验效果，建议您升级后再试！</h3>
+                <a class="CWhintrighthref" href="javascript:;">继续访问>></a>
+                <p class="CWhintgran">为获得最佳浏览体验，建议您升级或选用其他浏览器：</p>
+                <div class="CWbrowser">
+                	<a target="_blank" href="http://rj.baidu.com/soft/detail/14744.html?ald"><img src="../images/2016120901img.jpg" /><span>Chrome<em>（强烈推荐）</em></span></a>
+                	<a target="_blank" href="http://www.firefox.com.cn/download/"><img src="../images/2016120901img02.jpg" /><span>Firefox<em>&nbsp;</em></span></a>
+                	<a target="_blank" href="http://rj.baidu.com/soft/detail/14917.html?ald"><img src="../images/2016120901img03.jpg" /><span>IE<em>&nbsp;</em></span></a>
+                	<a target="_blank" href="http://rj.baidu.com/soft/detail/12966.html?ald"><img src="../images/2016120901img04.jpg" /><span>Safari<em>&nbsp;</em></span></a>
+                	<a target="_blank" href="http://rj.baidu.com/soft/detail/11508.html?ald"><img src="../images/2016120901img05.jpg" /><span>Opera<em>&nbsp;</em></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!--左侧重要提醒-->
+     <div id="left_zscd2" class="left_tc1" >
+        <a href='http://www.szga.gov.cn/SZJDZX/' target="_blank"><img src="../images/jindu.jpg" /></a>
+        <div id="close_02" class="left_tc_x" >×</div>
+    </div> 
+    <div id="left_zscd1" class="left_tc" >
+        <a href='http://futian.qgjydd.cn/login.jsp' target="_blank"><img src="../images/ftschool20170727.jpg" /></a>
+        <div id="close_01" class="left_tc_x" >×</div>
+    </div>  
+    
+
+    <script>
+		$(function(){
+			$("#close_01").click(function(){
+				$("#left_zscd1").css("display","none");	
+			});
+			$("#close_02").click(function(){
+				$("#left_zscd2").css("display","none");	
+			});
+           
+		});
+	</script>
+<!--左侧重要提醒结束-->
+
+</body>
+<script type="text/javascript" src="../images/version1_layout.js"></script>
+
+<script type="text/javascript">
+    var swiper = new Swiper('.banner', {
+        pagination: '.bannerdot',
+        autoplay: 5000,
+        loop: true,
+        paginationClickable: true,
+        speed: 1000
+    });
+
+    var swiper = new Swiper('.newscont06Llist', {
+        pagination: '.newscont06Llist .dot',
+        autoplay: 0,
+        loop: true,
+        paginationClickable: true,
+        speed: 1000
+    });
+
+  	 $(".clearfix a.iconA17").click(function () {
+        $(".rwmpopup").show();
+    })
+
+
+    $(function () {
+        $(".nav ul li").eq(0).find("a").addClass("cur");
+    })
+</script>
+</html>

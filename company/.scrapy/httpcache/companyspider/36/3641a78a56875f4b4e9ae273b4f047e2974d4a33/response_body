@@ -1,0 +1,1076 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="常州市武进区湖塘桥初级中学" />
+<meta name="description" content="" />
+<title>常州市武进区湖塘桥初级中学</title>
+<link href="/template/czhtqcz/mainsite/myfile/css/common.css" rel="stylesheet" type="text/css" />
+<link href="/template/czhtqcz/mainsite/myfile/css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="/template/czhtqcz/mainsite/myfile/js/common.js"></script>
+<!--登录之前JS-->
+<script type="text/javascript" src="/pub/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/pub/js/layer2/layer.js"></script>
+<!--登录后JS-->
+<script src="/pub/js/login.js"></script>
+<!--出现导航JS-->
+<script src="/pub/js/ExxJs.js"></script>
+</head>
+<body>
+
+
+<div class="width100 bg1">
+  <div class="width1000 mart0 top">
+    <div class="top_l height100 fl">
+      <div class="headrlogin">
+        <div class="unlogin"> <a id="loginform" class="dl">[用户登录]</a>
+          <div id="isloginform" action="" method="post" class="form3"> <span id="userinfo"></span>
+            <input onClick="loginout()" type="button" class="outbtn"  value="[退出]"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top_r height100 fr "> <a href="javascript:void(null)" onClick="setHome('http://www.htcz.exx.cn/');">设为首页</a>&nbsp;|&nbsp;<a href="javascript:addBookmark('湖塘桥初级中学','http://www.htcz.exx.cn/')">收藏本站</a> </div>
+    <div class="top_m height100 fr marrl5">
+      <form id="fm_search" action='/search.shtml'  method='get'>
+        <input type="text" id="search" name="keyword" value="请输入关键字..." onclick="if(this.value=='请输入关键字...')this.value=''" onblur="if(this.value=='')this.value='请输入关键字...'" />
+        <img src="/template/czhtqcz/mainsite/myfile/images/sear_btn.jpg" id="Submit" name="Button" onclick="submitn_search()" />
+        <input type="hidden" value="0" />
+      </form>
+    </div>
+  </div>
+</div>
+<script language="javascript"> 
+
+function addBookmark(title,url) { 
+
+if (window.sidebar) { 
+
+window.sidebar.addPanel(title, url,""); 
+
+} else if( document.all ) { 
+
+window.external.AddFavorite( url, title); 
+
+} else if( window.opera && window.print ) { 
+
+return true; 
+
+} 
+
+} 
+
+function setHome(url) 
+
+{ 
+
+if (document.all){ 
+
+document.body.style.behavior='url(#default#homepage)'; 
+
+document.body.setHomePage(url); 
+
+}else if (window.sidebar){ 
+
+if(window.netscape){ 
+
+try{ 
+
+netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect"); 
+
+}catch (e){ 
+
+alert( "该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true" ); 
+
+} 
+
+} 
+
+if(window.confirm("你确定要设置"+url+"为首页吗？")==1){ 
+
+var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch); 
+
+prefs.setCharPref('browser.startup.homepage',url); 
+
+} 
+
+} 
+
+} 
+
+</script>
+<div class="bg2 width100">
+  <div class="banner width1000 mart0"> <a href="/" class="logo_a"></a>
+    <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="511" height="215" class="fr">
+      <param name="movie" value="/template/czhtqcz/mainsite/myfile/flash/banner.swf">
+      <param name="quality" value="high">
+      <param name="wmode" value="transparent">
+      <param name="swfversion" value="6.0.65.0">
+      <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+      <param name="expressinstall" value="../../Scripts/expressInstall.swf">
+      <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 --> 
+      <!--[if !IE]>-->
+      <object type="application/x-shockwave-flash" data="/template/czhtqcz/mainsite/myfile/flash/banner.swf" width="511" height="215">
+        <!--<![endif]-->
+        <param name="quality" value="high">
+        <param name="wmode" value="transparent">
+        <param name="swfversion" value="6.0.65.0">
+        <param name="expressinstall" value="../../Scripts/expressInstall.swf">
+        <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+        <div>
+          <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+          <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33"></a></p>
+        </div>
+        <!--[if !IE]>-->
+      </object>
+      <!--<![endif]-->
+    </object>
+  </div>
+</div>
+<div class="width1000 mart0 nav bg3"> 
+<img src="/template/czhtqcz/mainsite/myfile/images/nav_l.jpg" class="fl" />
+<div id="topnav"></div>
+
+  <img src="/template/czhtqcz/mainsite/myfile/images/nav_r.jpg" class="fr" /> </div>
+<div class="width1000 mart0 navb">
+  <div class="navb_l fl">
+
+  </div>
+  <div class="navb_r fr" id="tady"> 今天是：<script type="text/javascript">
+				var s= GetToday();
+				var a = new Array("日", "一", "二", "三", "四", "五", "六");  
+				var week = new Date().getDay();  
+				var str = "星期"+ a[week];  
+				var _s = s.split(' ');
+				document.write(_s[3]+' '+str+_s[0] + ' ' + _s[1] + '' + _s[2]);
+			</script> </div>
+  
+</div>
+
+<div class="main1 width1000 mart15">
+	<div class="main1_l fl">
+    	<div class="focus fl">
+           <script type="text/javascript">
+						  var fla1 = [{"title":"山东梁山校长跟岗团来到湖中跟岗学习","bigimg":"/upload/20180403/93c1398828e340f9b1ecf65579f482a3.jpg","link":"/html/article885285.html"},{"title":"湖中举行“崇尚英雄精忠报国”主题班会活动","bigimg":"/upload/20180528/5083b8df816d4a0e88e02751ba9e5e9e.jpg","link":"/html/article954523.html"},{"title":"湖塘桥初中开展2018无偿献血志愿者活动","bigimg":"/upload/20180528/abe0a3d7d1f44d17ba34a5c4499177a1.jpg","link":"/html/article949538.html"},{"title":"湖中师生到市烈士陵园祭扫革命烈士墓","bigimg":"/upload/20180403/cfe456818fbb40878f4d7015586f16d8.jpg","link":"/html/article887784.html"},{"title":"区中片语文中考复习教学研讨会在湖塘初中举行","bigimg":"/upload/20180403/765eecbd44a84e429e6aad016efdfc55.jpg","link":"/html/article883646.html"},{}];
+						ExxFlash2(fla1, 'ExxFlash2', 4500, '_blank');
+</script> 
+       
+        </div>
+    	<div class="news fl marll0">
+        	<!--循环单元  start-->
+            <div class="qiehuan_id news_l" edata="qh">
+                <div class="hd">
+                    <ul><li edata="qht" class="on"><a href="/html/node3924.html">校园新闻</a></li><li edata="qht" class=""><a href="/html/node3925.html">荣誉奖项</a></li></ul>
+                </div>
+                <div class="bd">
+                    <ul edata="qhc">
+                       
+                        <dl>
+                            <dt id="topnew">
+    <a href="/html/article885285.html" target="_blank" data-id="885285">山东梁山校长跟岗团来到湖中跟岗学习</a> 
+                            </dt>
+                            <dd id="hot_news">
+                            
+          <table width="100%" class="tableclass0"><tr data-id="920574"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[校园新闻]</td><td class="tdclass_title0"><a href="/html/article920574.html" target="_blank" title="湖中海小组成的12-13岁组女足勇夺江苏省运会亚军">湖中海小组成的12-13岁组…</a></td>
+  <td align="right" data-time="20180511">05-11</td></tr><tr data-id="885285"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[校园新闻]</td><td class="tdclass_title0"><a href="/html/article885285.html" target="_blank" title="山东梁山校长跟岗团来到湖中跟岗学习">山东梁山校长跟岗团来到湖…</a></td>
+  <td align="right" data-time="20180329">03-29</td></tr><tr data-id="954523"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[校园新闻]</td><td class="tdclass_title0"><a href="/html/article954523.html" target="_blank" title="湖中举行“崇尚英雄精忠报国”主题班会活动">湖中举行“崇尚英雄精忠报…</a></td>
+  <td align="right" data-time="20180528">05-28</td></tr><tr data-id="949538"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[校园新闻]</td><td class="tdclass_title0"><a href="/html/article949538.html" target="_blank" title="湖塘桥初中开展2018无偿献血志愿者活动">湖塘桥初中开展2018无偿献…</a></td>
+  <td align="right" data-time="20180525">05-25</td></tr><tr data-id="948751"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[校园新闻]</td><td class="tdclass_title0"><a href="/html/article948751.html" target="_blank" title="“青果在线”课题课堂观摩活动在湖塘桥初中举行">“青果在线”课题课堂观摩…</a></td>
+  <td align="right" data-time="20180524">05-24</td></tr><tr data-id="948720"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[校园新闻]</td><td class="tdclass_title0"><a href="/html/article948720.html" target="_blank" title="湖塘桥初中接受区义务教育学校办学水平现场考核">湖塘桥初中接受区义务教育…</a></td>
+  <td align="right" data-time="20180524">05-24</td></tr><tr data-id="947559"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[校园新闻]</td><td class="tdclass_title0"><a href="/html/article947559.html" target="_blank" title="精细规划求实效   深挖潜能促提升">精细规划求实效   深挖潜…</a></td>
+  <td align="right" data-time="20180517">05-17</td></tr><tr data-id="939701"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[校园新闻]</td><td class="tdclass_title0"><a href="/html/article939701.html" target="_blank" title="福建省泉州市泉港区政府考察团来湖中交流考察">福建省泉州市泉港区政府考…</a></td>
+  <td align="right" data-time="20180516">05-16</td></tr></table> 
+
+                           </dd>
+                        </dl>
+                    </ul>
+                    <ul edata="qhc">
+                      
+                        <dl>
+                            <dt id="topnew">
+    <a href="/html/article885285.html" target="_blank" data-id="885285">山东梁山校长跟岗团来到湖中跟岗学习</a> 
+                            </dt>
+                            <dd id="hot_news">
+                            
+          <table width="100%" class="tableclass0"><tr data-id="884758"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[荣誉奖项]</td><td class="tdclass_title0"><a href="/html/article884758.html" target="_blank" title="我校金荣燕、朱静文同学分别获2017年常州市初一“美文阅读”比赛一、二等奖！">我校金荣燕、朱静文同学分…</a></td>
+  <td align="right" data-time="20180326">03-26</td></tr><tr data-id="945539"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[荣誉奖项]</td><td class="tdclass_title0"><a href="/html/article945539.html" target="_blank" title="我校获2017-2018学年武进区学校卫生工作先进集体！">我校获2017-2018学年武进…</a></td>
+  <td align="right" data-time="20180521">05-21</td></tr><tr data-id="945527"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[荣誉奖项]</td><td class="tdclass_title0"><a href="/html/article945527.html" target="_blank" title="我校语文、英语2个教研组获武进区第六届中小学优秀教研组！">我校语文、英语2个教研组…</a></td>
+  <td align="right" data-time="20180521">05-21</td></tr><tr data-id="947312"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[荣誉奖项]</td><td class="tdclass_title0"><a href="/html/article947312.html" target="_blank" title="我校获2018年武进区青少年“法治教育基地”荣誉称号！">我校获2018年武进区青少年…</a></td>
+  <td align="right" data-time="20180518">05-18</td></tr><tr data-id="933051"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[荣誉奖项]</td><td class="tdclass_title0"><a href="/html/article933051.html" target="_blank" title="我校李成功、张欣杰等18位学生在2018年四星级高中自主招生考试中取得优异成绩，被相关学校提前录取！">我校李成功、张欣杰等18位…</a></td>
+  <td align="right" data-time="20180514">05-14</td></tr><tr data-id="902353"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[荣誉奖项]</td><td class="tdclass_title0"><a href="/html/article902353.html" target="_blank" title="我校获2017年度武进教育新闻通讯先进集体，倪志坚老师获优秀通讯员！">我校获2017年度武进教育新…</a></td>
+  <td align="right" data-time="20180503">05-03</td></tr><tr data-id="901753"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[荣誉奖项]</td><td class="tdclass_title0"><a href="/html/article901753.html" target="_blank" title="我校八名学生分别获2018年常州市中小学生举重比赛第三名、第四名、第七名！">我校八名学生分别获2018年…</a></td>
+  <td align="right" data-time="20180430">04-30</td></tr><tr data-id="901748"><td width="12" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td> <td width="60"  style=" font-size:12px;">[荣誉奖项]</td><td class="tdclass_title0"><a href="/html/article901748.html" target="_blank" title="我校获2018年区中小学生举重比赛初中组团体总分第三名！">我校获2018年区中小学生举…</a></td>
+  <td align="right" data-time="20180430">04-30</td></tr></table> 
+
+                           </dd>
+                        </dl>
+                    </ul>
+                </div>
+            </div>
+            <!--循环单元  end-->
+        </div>
+        
+    </div>
+	<div class="main1_r fr">
+    	<div class="qiehuan_id core" style=" width:264px; margin:0px 0 0 0;  min-height:187px; height:187px; overflow:hidden;" edata="qh">
+            <div class="hd">
+         <ul><li edata="qht" class="">上级文件</li><li style=" width:100px; padding:0 5px 0" edata="qht" class=""><img src="/template/czhtqcz/mainsite/myfile/images/qizhi.png" style=" vertical-align:middle" />党群工作</li></ul>
+            </div>
+            <div class="bd">
+                <ul style="display: block; padding-top:0px;" edata="qhc">
+                     <table width="100%" class="tableclass0"><tr>
+    <td width="13" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article893626.html" target="_blank" title="转发区教育局《关于做好省特级教师、市特级教师后备人才、市学科带头人、市骨干教师、区学科带头人和区骨干教…">转发区教育局《关于做好省…</a></td><td align="right" data-time="20180305">03-05</td></tr><tr>
+    <td width="13" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article893623.html" target="_blank" title="转发区教育局《关于做好寒假春节期间校园安全管理工作的通知》">转发区教育局《关于做好寒…</a></td><td align="right" data-time="20180207">02-07</td></tr><tr>
+    <td width="13" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article893611.html" target="_blank" title="转发区教育局《关于做好学期结束及寒假期间各项工作的通知》">转发区教育局《关于做好学…</a></td><td align="right" data-time="20180117">01-17</td></tr><tr>
+    <td width="13" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article893610.html" target="_blank" title="转发武教办〔2018〕2号《关于印发《全区教育系统集中开展除隐患防事故保安全专项行动工作实施方案》的通知》…">转发武教办〔2018〕2号《…</a></td><td align="right" data-time="20180112">01-12</td></tr><tr>
+    <td width="13" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article893609.html" target="_blank" title="转发区食安办《关于加强2018年元旦春节期间食品安全监管工作的通知》的通知">转发区食安办《关于加强2…</a></td><td align="right" data-time="20180105">01-05</td></tr></table>
+      
+                </ul>
+                <ul style="display: block; padding-top:0px;" edata="qhc">
+                      <table width="100%" class="tableclass0"><tr>
+    <td width="13" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article949547.html" target="_blank" title="湖塘桥初中开展2018无偿献血志愿者活动">湖塘桥初中开展2018无偿献…</a></td><td align="right" data-time="20180525">05-25</td></tr><tr>
+    <td width="13" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article949546.html" target="_blank" title="湖塘桥初中开展2018无偿献血志愿者活动">湖塘桥初中开展2018无偿献…</a></td><td align="right" data-time="20180525">05-25</td></tr><tr>
+    <td width="13" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article949545.html" target="_blank" title="湖塘桥初中开展2018无偿献血志愿者活动">湖塘桥初中开展2018无偿献…</a></td><td align="right" data-time="20180525">05-25</td></tr><tr>
+    <td width="13" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article947032.html" target="_blank" title="湖塘桥初中党支部召开支部会议，落实全面从严治党主体责任">湖塘桥初中党支部召开支部…</a></td><td align="right" data-time="20180517">05-17</td></tr><tr>
+    <td width="13" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article947357.html" target="_blank" title="湖塘桥初中党支部召开支部委员会议，推进从严治党、师德建设、发挥先锋模范作用等工作">湖塘桥初中党支部召开支部…</a></td><td align="right" data-time="20180511">05-11</td></tr></table>
+      
+                </ul>
+            </div>
+        </div>
+        <img src="/template/czhtqcz/mainsite/images/jb.jpg" class="fl mar_top5" width="266" height="81">
+
+		<a href="http://112.21.191.229:83/Pages/Index.aspx" target="_blank"><img src="/template/czhtqcz/mainsite/myfile/images/jydd1.jpg" class="fl mar_top5" width="130" height="28"></a> 
+        <a href="/service/mailbox/" target="_blank"><img src="/template/czhtqcz/mainsite/myfile/images/xzxx.jpg" class="fr mar_top5" width="130" height="28"></a>   </div>
+</div>
+
+<div class="clr"></div>
+
+<div class=" width1000 mart10">
+	<a><img src="/template/czhtqcz/mainsite/myfile/images/ad.jpg" width="1002" height="121" /></a>
+</div>
+<div class="gonggao width1000 mart15"> <img src="/template/czhtqcz/mainsite/images/2017520151218360.jpg" width="36" height="36" />
+  <dl>
+    <dd class="gonggao1"><strong>网站公告：</strong>
+      <div class="txtScroll-left" id="gundong1">
+        <div class="bd">
+          <div class="LeftMovegg" emove="LeftMove" edata="content">
+            <ul>
+              <li><a href="/html/article865053.html" target="_blank">2018年收费公示</a><span>02-27</span></li><li><a href="/html/article844339.html" target="_blank">关于进一步加强学校QQ工作群管理的通知</a><span>01-30</span></li><li><a href="/html/article633518.html" target="_blank">湖塘桥初级中学校园LED电子显示屏使用管理规定</a><span>10-12</span></li><li><a href="/html/article513092.html" target="_blank">2017年初一招生通告</a><span>06-01</span></li><li><a href="/html/article512953.html" target="_blank">2016年初一新生招生通告（湖塘桥初级中学）</a><span>06-15</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </dd>
+    <dd class="gonggao2"><strong>信息发布：</strong>
+      <div class="txtScroll-left" id="gundong2" style="width:380px;">
+        <div class="bd">
+          <div class="LeftMovegg" emove="LeftMove" edata="content">
+            <ul>
+              <li><a href="/html/article861375.html" target="_blank">第三轮专业技术岗位等级晋级评分标准（常州市武进区湖塘桥初级中学）</a><span>02-05</span></li><li><a href="/html/article521443.html" target="_blank">2017年编外语文教师招聘简章（常州市武进区湖塘桥初级中学）</a><span>08-13</span></li><li><a href="/html/article513457.html" target="_blank">湖塘桥初中2017届初三中考情况通报</a><span>06-27</span></li><li><a href="/html/article513314.html" target="_blank">关于加强校务公开工作的通知</a><span>06-19</span></li><li><a href="/html/article512954.html" target="_blank">2017年编外教师招聘简章（常州市武进区湖塘桥初级中学）</a><span>05-05</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </dd>
+  </dl>
+</div>
+
+<div class="clr"></div>
+
+<div class="width1000 mart15 main2">
+	<div class="main2_l fl">
+    	
+        <!-- frame  start-->
+        <div class="frame width100">
+            <div class="title2 width100">
+                <span>办公平台</span>
+            </div>
+            
+            <!--循环单元  start-->
+            <div class="qiehuan_id core fl" edata="qh">
+                <div class="hd">
+                    <ul><li edata="qht" class="on"><a href="/html/node4172.html">工作通知</a></li><!--<li edata="qht" class=""><a href="/html/node25229.html">行政工作汇报</a></li>--></ul>
+                </div>
+                <div class="clr"></div>
+                <div class="bd">
+                    <ul style="display: none;" edata="qhc">
+                        <a href="/html/node4172.html" class="more1"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" /></a>
+                          <table width="100%" class="tableclass0"><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article902494.html" target="_blank" title="关于5月组织开展无偿献血活动的通知">关于5月组织开展无偿献血活动的通…</a></td>
+  <td align="right" data-time="20180502">05-02</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article902495.html" target="_blank" title="关于正确、规范填报《个人信息采集表》的通知">关于正确、规范填报《个人信息采集…</a></td>
+  <td align="right" data-time="20180417">04-17</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article865221.html" target="_blank" title="班主任寒假慰问学生通知">班主任寒假慰问学生通知</a></td>
+  <td align="right" data-time="20180206">02-06</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article839388.html" target="_blank" title="关于开展推荐师德考核优秀工作的通知">关于开展推荐师德考核优秀工作的通…</a></td>
+  <td align="right" data-time="20180123">01-23</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article838602.html" target="_blank" title="我校校园欺凌预防与处理应急预案安排通知">我校校园欺凌预防与处理应急预案安…</a></td>
+  <td align="right" data-time="20180101">01-01</td></tr></table>
+                    </ul>
+                     
+                     
+                </div>
+            </div>
+            <!--循环单元  end-->
+            
+            <!--循环单元  start-->
+            <div class="qiehuan_id core fl" edata="qh">
+                <div class="hd">
+                    <ul><li edata="qht" class="on">计划总结</li><li edata="qht" class=""><a href="/html/node25234.html">每周工作</a></li></ul>
+                </div>
+                <div class="bd">
+                    <ul style="display: block;" edata="qhc">
+                        <a href="/html/node4174.html" class="more1"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" /></a>
+                          <table width="100%" class="tableclass0"><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article865804.html" target="_blank" title="2017～2018学年度第二学期教务处工作计划">2017～2018学年度第二学期教务处工…</a></td>
+  <td align="right" data-time="20180301">03-01</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article893554.html" target="_blank" title="2017-2018年第二学期总务处工作计划">2017-2018年第二学期总务处工作计…</a></td>
+  <td align="right" data-time="20180228">02-28</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article866499.html" target="_blank" title="2017-2018学年度第二学期团委工作计划">2017-2018学年度第二学期团委工作…</a></td>
+  <td align="right" data-time="20180228">02-28</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article892195.html" target="_blank" title="2017-2018学年第二学期学校工作计划">2017-2018学年第二学期学校工作计…</a></td>
+  <td align="right" data-time="20180226">02-26</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article876311.html" target="_blank" title="2017-2018学年第二学期德育工作计划">2017-2018学年第二学期德育工作计…</a></td>
+  <td align="right" data-time="20180226">02-26</td></tr></table>
+                    </ul>
+                   <ul style="display: none;" edata="qhc">
+                        <a href="/html/node4173.html" class="more1"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" /></a>
+						   <table width="100%" class="tableclass0"><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article954624.html" target="_blank" title="2018（上）第14周工作安排">2018（上）第14周工作安排</a></td>
+  <td align="right" data-time="20180528">05-28</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article949128.html" target="_blank" title="2018（上）第13周工作安排">2018（上）第13周工作安排</a></td>
+  <td align="right" data-time="20180521">05-21</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article931381.html" target="_blank" title="2018（上）第12周工作安排">2018（上）第12周工作安排</a></td>
+  <td align="right" data-time="20180514">05-14</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article912506.html" target="_blank" title="2018（上）第11周工作安排">2018（上）第11周工作安排</a></td>
+  <td align="right" data-time="20180507">05-07</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article902491.html" target="_blank" title="2018（上）第10周工作安排">2018（上）第10周工作安排</a></td>
+  <td align="right" data-time="20180502">05-02</td></tr></table>
+                    </ul>
+                </div>
+            </div>
+            <!--循环单元  end-->
+            <div class="clr"></div>
+        </div>
+        <!-- frame  end-->
+    	
+        <!-- frame  start-->
+        <div class="frame width100 mar_top15"> 
+            <div class="title2 width100">
+                <span><a href="/html/node3950.html">教学科研</a></span>
+            </div>
+            
+            <!--循环单元  start-->
+            <div class="qiehuan_id core fl" edata="qh">
+                <div class="hd">
+                    <ul><li edata="qht" class="on">教学情况</li><li edata="qht" class="">课题研究</li></ul>
+                </div>
+                <div class="bd">
+                    <ul style="display: block;" edata="qhc">
+                        <a href="/html/node25200.html" class="more1"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" /></a>
+             <table width="100%" class="tableclass0"><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article513677.html" target="_blank" title="我校陈明蕾、张益群等16位学生在2017年四星级高中自主招生考试中取得优异成绩，被相关学校提前录取！">我校陈明蕾、张益群等16位学生在2…</a></td>
+  <td align="right" data-time="20170508">05-08</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article512101.html" target="_blank" title="我校获2015-2016学年度义务教育阶段实施素质教育工作一等奖（第17次综合评估一等奖）！">我校获2015-2016学年度义务教育阶…</a></td>
+  <td align="right" data-time="20170111">01-11</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article512025.html" target="_blank" title="我校金麟老师报送的《生活中的承诺》获中央电化教育馆部级“学科德育精品课程”！">我校金麟老师报送的《生活中的承诺…</a></td>
+  <td align="right" data-time="20161228">12-28</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article511540.html" target="_blank" title="湖塘初中与南京浦口三中开展教学互动">湖塘初中与南京浦口三中开展教学互…</a></td>
+  <td align="right" data-time="20161213">12-13</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article511508.html" target="_blank" title="武进区“校长聚焦课堂”初中政治物理公开课在湖中举行">武进区“校长聚焦课堂”初中政治物…</a></td>
+  <td align="right" data-time="20161209">12-09</td></tr></table>
+                    </ul>
+                    <ul style="display: none;" edata="qhc">
+                        <a href="/html/node3959.html" class="more1"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" /></a>
+                        
+						    <table width="100%" class="tableclass0"><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article512664.html" target="_blank" title="课题申报立项书">课题申报立项书</a></td>
+  <td align="right" data-time="20170420">04-20</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article512570.html" target="_blank" title="“青果在线”子课题观摩活动在湖塘桥初中举行">“青果在线”子课题观摩活动在湖塘…</a></td>
+  <td align="right" data-time="20170329">03-29</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article512666.html" target="_blank" title="尝试在初中生物教学中融入化学元素">尝试在初中生物教学中融入化学元素…</a></td>
+  <td align="right" data-time="20161212">12-12</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article511328.html" target="_blank" title="湖塘桥初中举行名教师工作室启动仪式">湖塘桥初中举行名教师工作室启动仪…</a></td>
+  <td align="right" data-time="20161115">11-15</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article511327.html" target="_blank" title="湖塘桥初中举行名教师工作室启动仪式">湖塘桥初中举行名教师工作室启动仪…</a></td>
+  <td align="right" data-time="20161115">11-15</td></tr></table>
+						
+                    </ul>
+                </div>
+            </div>
+            <!--循环单元  end-->
+            
+            <!--循环单元  start-->
+            <div class="qiehuan_id core fl" edata="qh">
+                <div class="hd">
+                    <ul><li edata="qht" class="on">公开课安排</li><li edata="qht" class="">听课安排</li></ul>
+                </div>
+                <div class="bd">
+                    <ul style="display: block;" edata="qhc">
+                        <a href="/html/node3958.html" class="more1"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" /></a>
+                        
+            
+						    <table width="100%" class="tableclass0"><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article509813.html" target="_blank" title="第十六周学校公开课安排">第十六周学校公开课安排</a></td>
+  <td align="right" data-time="20160606">06-06</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article509801.html" target="_blank" title="第十五周学校公开课安排">第十五周学校公开课安排</a></td>
+  <td align="right" data-time="20160531">05-31</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article509743.html" target="_blank" title="第十四周学校公开课安排">第十四周学校公开课安排</a></td>
+  <td align="right" data-time="20160523">05-23</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article509738.html" target="_blank" title="第十四周学校公开课安排">第十四周学校公开课安排</a></td>
+  <td align="right" data-time="20160520">05-20</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article509681.html" target="_blank" title="第十三周学校公开课安排">第十三周学校公开课安排</a></td>
+  <td align="right" data-time="20160516">05-16</td></tr></table>
+                    </ul>
+                    <ul style="display: block;" edata="qhc">
+                        <a href="/html/node25278.html" class="more1"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" /></a>
+                        
+            
+						    <table width="100%" class="tableclass0"><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article513102.html" target="_blank" title="第十七周听课安排">第十七周听课安排</a></td>
+  <td align="right" data-time="20170605">06-05</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article512876.html" target="_blank" title="第十四周听课安排">第十四周听课安排</a></td>
+  <td align="right" data-time="20170515">05-15</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article512786.html" target="_blank" title="第十三周听课安排">第十三周听课安排</a></td>
+  <td align="right" data-time="20170508">05-08</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article512726.html" target="_blank" title="第十一周听课安排">第十一周听课安排</a></td>
+  <td align="right" data-time="20170424">04-24</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article512460.html" target="_blank" title="第六周听课安排">第六周听课安排</a></td>
+  <td align="right" data-time="20170320">03-20</td></tr></table>
+      
+                    </ul>
+                </div>
+            </div>
+            <!--循环单元  end-->
+            <div class="clr"></div>
+        </div>
+        <!-- frame  end-->
+        
+        <!-- frame  start-->
+        <div class="frame width100 mart15">
+            <div class="title2 width100">
+                <span><a href="/html/node24720.html">敏行德育</a></span>
+            </div>
+            
+            <!--循环单元  start-->
+            <div class="qiehuan_id core fl">
+               <div class="hd">
+                    <ul><li class="on">德育共建</li></ul>
+                </div>
+                <div class="bd">
+                    <ul style="display: block;">
+                        <a href="/html/node24738.html" class="more1"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" /></a>
+                        
+            
+						    <table width="100%" class="tableclass0"><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article915340.html" target="_blank" title="《中国教育报》刊发湖中一家长家教实践经验">《中国教育报》刊发湖中一家长家教…</a></td>
+  <td align="right" data-time="20180507">05-07</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article915338.html" target="_blank" title="集中学习“教育部紧急通知 管住‘小网虫’”的通知">集中学习“教育部紧急通知 管住‘…</a></td>
+  <td align="right" data-time="20180507">05-07</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article864900.html" target="_blank" title="武进区湖塘桥初级中学学生家访记录表">武进区湖塘桥初级中学学生家访记录…</a></td>
+  <td align="right" data-time="20180202">02-02</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article697200.html" target="_blank" title="武进区湖塘桥初级中学家长会活动通知">武进区湖塘桥初级中学家长会活动通…</a></td>
+  <td align="right" data-time="20171113">11-13</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article864898.html" target="_blank" title="武进区湖塘桥初级中学家长会活动通知">武进区湖塘桥初级中学家长会活动通…</a></td>
+  <td align="right" data-time="20171113">11-13</td></tr></table>
+      
+                    </ul>
+                </div>
+            </div>
+            <!--循环单元  end-->
+            
+            <!--循环单元  start-->
+            <div class="qiehuan_id core fl">
+                <div class="hd">
+                    <ul><li class="on">班队建设</li></ul>
+                </div>
+                <div class="bd">
+                    <ul style="display: block;">
+                        <a href="/html/node24729.html" class="more1"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" /></a>
+                        
+             
+						    <table width="100%" class="tableclass0"><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article947605.html" target="_blank" title="湖中文明班级，宿舍4月评比结果">湖中文明班级，宿舍4月评比结果</a></td>
+  <td align="right" data-time="20180507">05-07</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article947600.html" target="_blank" title="2018年4月常规管理班级月考核结果">2018年4月常规管理班级月考核结果…</a></td>
+  <td align="right" data-time="20180507">05-07</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article902529.html" target="_blank" title="德育工作会议2018.5">德育工作会议2018.5</a></td>
+  <td align="right" data-time="20180502">05-02</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article902527.html" target="_blank" title="湖中班主任基本功大赛方案">湖中班主任基本功大赛方案</a></td>
+  <td align="right" data-time="20180418">04-18</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article895170.html" target="_blank" title="湖塘桥初级中学2018年市、区先进学生集体公示">湖塘桥初级中学2018年市、区先进学…</a></td>
+  <td align="right" data-time="20180413">04-13</td></tr></table>
+      
+                    </ul>
+                </div>
+            </div>
+            <!--循环单元  end-->
+            <div class="clr"></div>
+        </div>
+        <!-- frame  end-->
+        
+        <!-- frame  start-->
+        <div class="frame width100 mart15">
+            <div class="title2 width100">
+                <span>后勤保障</span>
+            </div>
+            
+            <!--循环单元  start-->
+            <div class="qiehuan_id core fl" edata="qh">
+                <div class="hd">
+                    <ul><li edata="qht" class="on">门卫管理</li><li edata="qht" class="">食堂管理</li></ul>
+                </div>
+                <div class="bd">
+                    <ul style="display: block;" edata="qhc">
+                        <a href="/html/node4085.html" class="more1"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" /></a>
+                        
+          
+						    <table width="100%" class="tableclass0"><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article943904.html" target="_blank" title="2018年5月校园安防系统、周界报警系统（湖塘桥初级中学）">2018年5月校园安防系统、周界报警…</a></td>
+  <td align="right" data-time="20180520">05-20</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article896345.html" target="_blank" title="2018年4月校园安防系统、周界报警系统（湖塘桥初级中学）">2018年4月校园安防系统、周界报警…</a></td>
+  <td align="right" data-time="20180422">04-22</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article880942.html" target="_blank" title="2018年3月校园安防系统、周界报警系统（湖塘桥初级中学）">2018年3月校园安防系统、周界报警…</a></td>
+  <td align="right" data-time="20180322">03-22</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article866244.html" target="_blank" title="2018年2月校园安防系统、周界报警系统（湖塘桥初级中学）">2018年2月校园安防系统、周界报警…</a></td>
+  <td align="right" data-time="20180223">02-23</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article825196.html" target="_blank" title="2018年1月校园安防系统、周界报警系统（湖塘桥初级中学）">2018年1月校园安防系统、周界报警…</a></td>
+  <td align="right" data-time="20180118">01-18</td></tr></table>
+      
+                    </ul>
+                    <ul style="display: none;" edata="qhc">
+                        <a href="/html/node4087.html" class="more1"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" /></a>
+                        
+             
+						    <table width="100%" class="tableclass0"><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article893564.html" target="_blank" title="2月26日-4月8日菜单">2月26日-4月8日菜单</a></td>
+  <td align="right" data-time="20180415">04-15</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article893559.html" target="_blank" title="2018年食堂支出明细">2018年食堂支出明细</a></td>
+  <td align="right" data-time="20180415">04-15</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article891619.html" target="_blank" title="湖塘桥初级中学膳食管理委员会名单及工作制度">湖塘桥初级中学膳食管理委员会名单…</a></td>
+  <td align="right" data-time="20171220">12-20</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article703010.html" target="_blank" title="湖塘桥初级中学食品安全管理制度">湖塘桥初级中学食品安全管理制度</a></td>
+  <td align="right" data-time="20171120">11-20</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article511966.html" target="_blank" title="后勤职工例会">后勤职工例会</a></td>
+  <td align="right" data-time="20161123">11-23</td></tr></table>
+                    </ul>
+                </div>
+            </div>
+            <!--循环单元  end-->
+            
+            <!--循环单元  start-->
+            <div class="qiehuan_id core fl" edata="qh">
+                <div class="hd">
+                    <ul><li edata="qht" class="on">宿舍管理</li><li edata="qht" class=""><a href="/teacher/houqin/baoxiu/list.aspx" class="" target="_blank">设备保修</a></li></ul>
+                </div>
+                <div class="bd">
+                    <ul style="display: block;" >
+                        <a href="/html/node4086.html" class="more1" edata="more"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" /></a>
+            
+						    <table width="100%" class="tableclass0"><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article510657.html" target="_blank" title="2016年9月与宿舍签订的《安全防范工作目标管理责任书》（湖塘桥初级中学）">2016年9月与宿舍签订的《安全防范…</a></td>
+  <td align="right" data-time="20160901">09-01</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article507966.html" target="_blank" title="2016年2月《寄宿生进宿舍交接单》（湖塘桥初级中学）">2016年2月《寄宿生进宿舍交接单》…</a></td>
+  <td align="right" data-time="20160229">02-29</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article507959.html" target="_blank" title="寄宿生注意事项及寄宿生承诺书（湖塘桥初级中学）">寄宿生注意事项及寄宿生承诺书（湖…</a></td>
+  <td align="right" data-time="20160222">02-22</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article507960.html" target="_blank" title="2016年2月与宿舍签订的《安全防范工作目标管理责任书》（湖塘桥初级中学）">2016年2月与宿舍签订的《安全防范…</a></td>
+  <td align="right" data-time="20160222">02-22</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article507962.html" target="_blank" title="2016年2月与门卫签订的《安全防范工作目标管理责任书》（湖塘桥初级中学）">2016年2月与门卫签订的《安全防范…</a></td>
+  <td align="right" data-time="20160222">02-22</td></tr></table>
+                    </ul>
+                    
+                </div>
+            </div>
+            <!--循环单元  end-->
+            <div class="clr"></div>
+        </div>
+        <!-- frame  end-->
+        
+    </div>
+    
+	<div class="main2_r fr">
+    	<a href="/html/node25212.html" target="_blank">
+    		<img src="/template/czhtqcz/mainsite/myfile/images/xljy.jpg" class="fl" />
+        </a>        
+    	<a href="/html/node3961.html" target="_blank">
+    		<img src="/template/czhtqcz/mainsite/myfile/images/ysjy.jpg" class="fr" />
+        </a>
+		<div class="clr"></div>
+<!--循环单元  start-->
+        <div class="qiehuan_id core" style=" width:280px; margin:10px 0 0 0;  min-height:310px; overflow:hidden;">
+            <div class="hd">
+                <ul><li class="on">校务公开</li></ul>
+            </div>
+            <div class="bd">
+                <ul style="display: block;">
+                    <a href="/html/node25238.html" class="more1"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" /></a>
+  <table width="100%" class="tableclass0"><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article900204.html" target="_blank" title="2018年述职报告（贺剑英）">2018年述职报告（贺剑英）…</a></td>
+  <td align="right" data-time="20180426">04-26</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article898315.html" target="_blank" title="2018年述职报告（金麟）">2018年述职报告（金麟）</a></td>
+  <td align="right" data-time="20180426">04-26</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article898313.html" target="_blank" title="2018年述职报告（壮旭东）">2018年述职报告（壮旭东）…</a></td>
+  <td align="right" data-time="20180426">04-26</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article898311.html" target="_blank" title="2018年述职报告（王娜）">2018年述职报告（王娜）</a></td>
+  <td align="right" data-time="20180426">04-26</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article898308.html" target="_blank" title="2018年述职报告 （胥国忠）">2018年述职报告 （胥国忠）…</a></td>
+  <td align="right" data-time="20180426">04-26</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article898262.html" target="_blank" title="2018年述职报告（孙坚）">2018年述职报告（孙坚）</a></td>
+  <td align="right" data-time="20180426">04-26</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article896811.html" target="_blank" title="关于择优推荐下列56位学生参加职业学校自主招生选拔的公示">关于择优推荐下列56位学生…</a></td>
+  <td align="right" data-time="20180423">04-23</td></tr><tr>
+    <td width="20" align="center" class="tdclass_first0"><img src="/template/czhtqcz/mainsite/images/ontop14.gif"></td>
+    <td class="tdclass_title0"><a href="/html/article896809.html" target="_blank" title="关于择优推荐下列31位学生参加省横林高级中学自主招生选拔的公示（湖塘桥初级中学）">关于择优推荐下列31位学生…</a></td>
+  <td align="right" data-time="20180423">04-23</td></tr></table>
+      
+                </ul>
+            </div>
+        </div>
+        <!--循环单元  end-->
+        <!--循环单元  start-->
+        <div class="qiehuan_id zhuantiwz mar_top15" edata="qh">
+            <div class="hd">
+                <ul><li edata="qht" class="on">专题网站</li><li edata="qht" class="">专题导航</li></ul>
+            </div>
+            <div class="bd">
+                <ul style="display: block;" edata="qhc">
+                   <dl>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti-31.jpg" /><br /><a href="http://112.21.191.229:84" target="_blank">督导评估</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti.jpg" /><br /><a href="/html/node3959.html" target="_blank">课题网站</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti-33.jpg" /><br /><a href="/html/node4129.html" target="_blank">党群工作</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti-28.jpg" /><br /><a href="/html/node4046.html" target="_blank">师德教育</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti-23.jpg" /><br /><a href="/html/node4040.html" target="_blank">校工会</a></dd>
+                        
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti-24.jpg" /><br /><a href="/html/node4061.html" target="_blank">档案管理</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti-29.jpg" /><br /><a href="/html/node25264.html" target="_blank">绿色学校</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti-26.jpg" /><br /><a href="/html/node25333.html" target="_blank">图书馆</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti-30.jpg" /><br /><a href="/html/node25315.html" target="_blank">实验室</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti-34.jpg" /><br /><a href="/teacher/knowledge/file_list.aspx" target="_blank">班主任论坛</a></dd>
+                    </dl>
+                </ul>
+                <ul style="display: none;" edata="qhc">
+                   <dl>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti2-02.jpg" /><br /><a href="http://pg.jydd.czedu.gov.cn/Pages/Index.aspx" target="_blank">督导评估</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti2.jpg" /><br /><a href="http://www.wjedu.net/" target="_blank">武进教育信息网</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti2-04.jpg" /><br /><a href="http://www.jste.net.cn/uids/" target="_blank">教师基本信息管理</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti2-05.jpg" /><br /><a href="http://jxjy.czks.cn/" target="_blank">专技人员继续教育</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti2-06.jpg" /><br /><a href="http://rsps.czedu.com.cn/nerp/login.jsp" target="_blank">教师职称评审系统</a></dd>
+                        
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti2-09.jpg" /><br /><a href="http://58.216.242.29:8080/zccj2016.aspx" target="_blank">职称成绩查询</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti2-07.jpg" /><br /><a href="http://www.jszg.edu.cn/portal/home/index" target="_blank">教师资格注册</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti2-08.jpg" /><br /><a href="/html/node4066.html" target="_blank">武进人事管理系统</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti2-03.jpg" /><br /><a href="/html/node4061.html" target="_blank">档案管理</a></dd>
+                        <dd><img src="/template/czhtqcz/mainsite/myfile/images/zhuanti2-10.jpg" /><br /><a href="http://www.eamn.net" target="_blank">资产管理系统</a></dd>
+                    </dl>
+                </ul>
+            </div>
+            <div class="clr"></div>
+        </div>
+        <!--循环单元  end-->
+    
+        
+        <div class="clr"></div>
+        <div class="title width100 mart15">
+        	<span>快速链接</span>
+            <!--<A href="###" class="more"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" class="fr" /></A>-->
+        </div>
+        <div class="con2 width100">
+        	<ul>
+            	<li><img src="/template/czhtqcz/mainsite/myfile/images/kslj_03.jpg"  /><a href="http://kwcx.wjedu.net/wjhtqcz/index.asp" target="_blank">课表查询</a></li>
+            	<li><img src="/template/czhtqcz/mainsite/myfile/images/kslj_05.jpg" /><a href="http://assets.czedu.gov.cn/am/login.jsf" target="_blank">装备管理</a></li>
+            	<li><img src="/template/czhtqcz/mainsite/myfile/images/kslj_07.jpg" /><a href="http://zbdd.wjedu.net/dudao/school_default.aspx?ddid=1&sid=23" target="_blank">装备督导</a></li>
+            	<li><img src="/template/czhtqcz/mainsite/myfile/images/kslj_09.jpg" /><a href="http://www.lcjzwx.com/xlcwx/web/login.aspx" target="_blank">校信通</a></li>
+            	<li><img src="/template/czhtqcz/mainsite/myfile/images/kslj_11.jpg"  /><a href="/html/node25933.html" target="_blank">班级网站</a></li>
+                <li><img src="/template/czhtqcz/mainsite/myfile/images/kslj_13.jpg"  /><a href="http://www.jste.net.cn/cmsplus/index.html" target="_blank">省教师管理</a></li>
+            	<li><img src="/template/czhtqcz/mainsite/myfile/images/kslj_14.jpg"  /><a href="http://58.216.216.23/xjgl/login.aspx" target="_blank">学籍管理</a></li>
+            	<li><img src="/template/czhtqcz/mainsite/myfile/images/kslj_16.jpg"  /><a href="http://da.jydd.czedu.gov.cn/f14b03b58fa243c7917d4519601a2a5b/Organization/Index.aspx" target="_blank">教育督导网</a></li>
+            	<li><img src="/template/czhtqcz/mainsite/myfile/images/kslj_18.jpg"  /><a href="/teacher/houqin/baoxiu/list.aspx" target="_blank">设备报修</a></li>
+            </ul>
+            <div class="clr"></div>
+        </div>
+        
+        <div class="clr"></div>
+ 
+    </div>
+</div>
+
+
+<div class="clr"></div>
+<div class="qiehuan_id img_q">
+    <div class="hd">
+        <ul><li class="on">学生园地</li></ul>
+    </div>
+    <div class="bd">
+        <ul style="display: block;">
+            <a href="/html/node3941.html" class="more1"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" /></a>
+           <div class="LeftMove" emove="LeftMove" edata="content">
+        <ul>
+          <li><a href="/html/article512828.html" target="_blank"><img src="/upload/20170508/e2373c7a33d246ff9bd12a1a69c6b122_S.jpg"/><span>我校冯逸飞同学又一次获…</span></a></li><li><a href="/html/article507702.html" target="_blank"><img src="/upload/20150731/fdb34504db5c48f280f64e3333a32e28_S.jpg"/><span>我校获2015年武进区中小…</span></a></li><li><a href="/html/article504943.html" target="_blank"><img src="/upload/20150707/6a5f598132ca43b6a1f655b00b008ef5_S.jpg"/><span>我校何佳逸获2015年常州…</span></a></li><li><a href="/html/article504942.html" target="_blank"><img src="/upload/20150707/3bd5d10878c24928a5e2afed1c2d4bf0_S.jpg"/><span>我校刘铠源、秦时月、胡…</span></a></li><li><a href="/html/article504938.html" target="_blank"><img src="/upload/20150512/b82e9a766e684562aac2be20e5bd0682_S.jpg"/><span>我校在学生李珏获第七届…</span></a></li><li><a href="/html/article507909.html" target="_blank"><img src="/upload/20150414/ab21f3729cae42b59012437cf2cb5811_S.jpg"/><span>我校姚琳怡同学在“七彩…</span></a></li><li><a href="/html/article504937.html" target="_blank"><img src="/upload/20150414/12d63c2b8f0041fd9832a743519228a8_S.jpg"/><span>我校姚琳怡同学在“七彩…</span></a></li><li><a href="/html/article504936.html" target="_blank"><img src="/upload/20150414/2a58aaab1b3148fdad58af7a0ee83f20_S.jpg"/><span>我校杜丹获2014年常州市…</span></a></li><li><a href="/html/article507907.html" target="_blank"><img src="/upload/20150407/038eca4b6c1848ef9b9ede9e843c6cd5_S.jpg"/><span>我校获武进区“坂上小学…</span></a></li><li><a href="/html/article504948.html" target="_blank"><img src="/upload/20150330/e84c0152778a422ca3c6d9e0a2144e26_S.jpg"/><span>我校学生胡嘉仪、周媛媛…</span></a></li>
+</ul>
+</div>
+        </ul>
+    </div>
+</div>
+
+<div class="clr"></div>
+
+<div class="flink width1000 mart15">
+    <div class="title1 width100">
+        <!--<a href="###" class="more"><img src="/template/czhtqcz/mainsite/myfile/images/more.jpg" width="43" height="13" /></a>-->
+        <img src="/template/czhtqcz/mainsite/myfile/images/ico.jpg" width="7" height="13" />友情链接
+    </div>
+    <div class="con6 width100">
+         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td colspan="7" style="padding:8px 0;"><table cellpadding="0" cellspacing="0">
+            <tr>
+              <td ><select name="menu384" onchange="window.open(this.options[this.selectedIndex].value);this.options[0].selected=true;size=1">
+                  <option selected="">————兄弟学校网站————</option>
+              <option value="http://www.wjljzx.net">礼嘉中学</option>
+<option value="http://www.wjmhzx.net">鸣凰中学</option>
+<option value="http://www.wjlycz.net">洛阳初级中学</option>
+<option value="http://www.wjzqwj.net">邹区初级中学</option>
+<option value="http://www.wjjzcz.net">嘉泽初级中学</option>
+<option value="http://www.wjhsqcz.net/">横山桥初级中学</option>
+<option value="http://www.wjlh.net/">礼河实验学校</option>
+<option value="http://www.ljxes.com">卢家巷实验学校</option>
+
+                </select></td>
+              <td ><select name="menu384" onchange="window.open(this.options[this.selectedIndex].value);this.options[0].selected=true;size=1">
+                  <option selected="">——教育信息门户——</option>
+                  <option value="http://www.chinaedu.edu.cn/">中国教育信息网</option>
+                  <option value="http://www.eol.cn/"> 中国教育在线</option>
+                  <option value="http://edu.china.com.cn/"> 中国网教育中国</option>
+                  <option value="http://www.gjjyw.cn/ "> 国家教育网</option>
+                  <option value="http://www.moe.gov.cn/"> 中华人民共和国教育部</option>
+                  <option value="http://www.ec.js.edu.cn/"> 江苏教育</option>
+                  <option value="http://www.jste.net.cn/cmsplus/index.html"> 江苏教师教育</option>
+                  <option value="http://www.jsjyjxx.com/index.html"> 江苏教育信息网</option>
+                  <option value="http://be.jse.edu.cn/"> 江苏基础教育云计算服务平台</option>
+                  <option value="http://jcjy.jsjyt.edu.cn/"> 江苏基础教育</option>
+                </select></td>
+              <td ><select name="menu384" onchange="window.open(this.options[this.selectedIndex].value);this.options[0].selected=true;size=1">
+                  <option selected="">——教育类其他常用——</option>
+                  <option value="http://www.wjedu.net/">武进区教育局</option>
+                  
+                  <option value="http://www.jtjiaoyu.com/">金坛市教育局</option>
+                  <option value="http://www.xbedu.net/">新北区社会事业局</option>
+                  <option value="http://www.zledu.com/">钟楼区教育文体局</option>
+                  <option value="http://www.tnedu.com/">天宁区教育文体局</option>
+         
+                  <option value="http://jyj.changzhou.gov.cn/">常州教育网</option>
+                </select></td>
+              <td ><select name="menu384" onchange="window.open(this.options[this.selectedIndex].value);this.options[0].selected=true;size=1">
+                  <option selected="">——其他常用——</option>
+                  <option value="http://www.eduyun.cn/">国家教育资源公共服务平台</option>
+                  
+                 
+                  <option value="http://www.xj5u.com/"> 小学资源网</option>
+              
+                  <option value="http://cai.7cxk.net/Index.html"> 7C教育资源网</option>
+                  <option value="http://www.zxxk.com/ "> 中学学科网</option>
+                  <option value="http://www.g12e.com/"> 中小学教育网</option>
+                  <option value="http://www.cnycedu.com/ "> 中国远程教育网</option>
+                  <option value="http://www.qingguo.me/">青果在线</option>
+                  <option value="http://www.jse.edu.cn/">省智慧教育云计算服务平台</option>
+
+
+                </select></td>
+            </tr>
+          </table></td>
+      </tr>
+    </table>
+
+    </div>
+</div>
+
+<div class="tplj">
+    <ul>
+    <li><a href="http://www.jyb.cn/" target="_blank"><img src="/template/czhtqcz/mainsite/images/yy05.jpg"/></a></li>
+    <li><a href="http://jyt.jiangsu.gov.cn/" target="_blank"><img src="/template/czhtqcz/mainsite/images/yy01.jpg"/></a></li>
+    <li><a href="http://jyj.changzhou.gov.cn/" target="_blank"><img src="/template/czhtqcz/mainsite/images/yy02.jpg"/></a></li>
+    <li><a href="http://www.wjedu.net/" target="_blank"><img src="/template/czhtqcz/mainsite/images/yy06.jpg"/></a></li>
+    <li><a href="http://www.jse.edu.cn" target="_blank"><img src="/template/czhtqcz/mainsite/images/yy03.jpg"/></a></li>
+    <li class="mr0"><a href="http://czwj.jse.edu.cn/" target="_blank"><img src="/template/czhtqcz/mainsite/images/yy04.jpg"/></a></li>
+    <li class="mr0 fr"><a href="http://www.626china.org" target="_blank"><img src="/template/czhtqcz/mainsite/images/yy07.jpg"/></a></li>
+    </ul>
+</div>
+
+
+
+<div class="clr"></div>
+<div class="width100 bg4 mar_top15">
+  <div class="foot width1000 mart0"> 
+  
+Copyright @ 2016 湖塘桥初级中学 All Rights Reserved <a href="http://jscainfo.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">苏ICP备12005337号</a> <a href="http://www.wanm.cn">万兆科技</a><br />
+    地址：江苏省常州市武进区湖塘镇武宜路217号 电话：0519-86504325; 0519-86505133 传真：0519-86504716<br/>
+    <div style="width:300px;margin:0 auto; padding:6px 0; text-align:center"> <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32041202001100" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="" style="float:left;"/>
+      <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;">苏公网安备 32041202001100号</p>
+      </a> </div>
+    <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/11/180/1313/60378587/CA111801313603785870001.js' type='text/javascript'%3E%3C/script%3E"));</script> 
+  </div>
+</div>
+
+
+<div class="hf">
+ <a href="/html/article513648.html" target="_blank" class="x1"><img src="/template/czhtqcz/mainsite/images/x1.jpg"/></a>
+ <a href="/html/article513649.html" target="_blank" class="x2"><img src="/template/czhtqcz/mainsite/images/x2.jpg"/></a>
+</div>
+
+</body>
+</html>
+<style type="text/css">
+/*登录框开始*/
+.headrlogin{ width: 410px; height: 28px; float: left; line-height: 28px;  }
+.headrlogin .unlogin{width: auto; height: 28px;color:#FFF; float: left; }
+.headrlogin .unlogin .dl{ color: #000; cursor:pointer; width:84px; height:28px;  float: left; display:block; text-align:center;}
+.headrlogin .unlogin a:hover{ text-decoration:none}
+/*登录后*/
+.form3{ height:28px; float:left; text-align:right; display:none; width:auto; padding-left:15px; margin-right:0px;}
+.form3 span{ height:28px; float:left; text-align:left;}
+.outbtn{ margin-left:10px; padding:0; width: 45px; height:28px; line-height: 28px;  border:none; color:#000; font-size:14px; cursor:pointer; background:none;}
+#userinfo{ color:#000}
+#userinfo a{color:#000; text-decoration:underline; cursor:pointer;}
+/*登录弹出窗口 start*/
+.login{width:370px; margin-left:9px; float:left; color:#FFFFFF; line-height:30px;}
+.login a{color:#FFF; border-left:1px solid #FFF; line-height:30px; height:30px; display:inline-block; padding-left:9px;}
+.login a:first-child{border-left:0px;}
+.login a img{width:15px; height:16px; margin:0 5px 0 0; vertical-align:middle;}
+.login .login_panel{ display:none; width:350px; height:362px; color:#999; margin:0 auto; }
+.login .login_panel input.login_name,.login .login_panel input.login_pass{ width:310px; height:46px; line-height:46px; border:1px solid #d4d4d4; font-size:14px; color:#333; font-size:14px; text-indent:5px; }
+.login .login_panel input.login_name{ background:url(../images/login_user.jpg) no-repeat 280px 10px #f1f1f1;}
+.login .login_panel input.login_pass{ background:url(../images/login_lock.jpg) no-repeat 280px 10px #f1f1f1;}
+.login_close{ cursor:pointer;}
+.login_window{ cursor:pointer;}
+/*登录弹出窗口  end*/
+
+</style>
+<!--------登录-------------------> 
+<script type="text/javascript">
+    function getloginmsg(obj) {
+        for (o in obj) {
+            if (o == "ErrorCode") {
+                layer.tips(obj.ErrorMsg, '#checkbutton', {
+                    tips: [1, '#ff0000'] //还可配置颜色
+                });
+                return;
+            }
+            break;
+        }
+        setislogin(obj);
+    }
+    function setislogin(obj) {
+        for (o in obj) {
+            if (!isNaN(o)) {
+                $("#loginform").show();
+                $("#isloginform").hide();
+            } else {
+                $("#isloginform").show();
+                $("#loginform").hide();
+            }
+            break;
+        }
+        if(obj && obj.shenfen && (obj.shenfen==1 || obj.shenfen==99))
+          $("#userinfo").html("您好，" + obj.truename + "！&nbsp<a href='/teacher' target='_blank'>进入后台</a>");
+        else
+          $("#userinfo").html("您好，" + obj.truename + "！");
+		layer.closeAll();
+    }
+    function setloginout() {
+        $("#isloginform").hide();
+        $("#loginform").show();
+        $("#password").val("");
+    }
+    $(document).ready(function () {
+        var input = getcookies("exxd");
+        $("#inputname").val(input);
+    }); 
+</script>
+<!-----------弹出窗口----------------------->
+<div class="login">
+  <div class="login_panel">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <th colspan="2" style=" background-color:#006ECB; text-align:left; font-size:14px; color:#FFFFFF; font-weight:bold; text-indent:20px;border-top-left-radius:3px;border-top-right-radius:3px;" height="44"> <img src="/template/czhtqcz/mainsite/images/login_close.jpg" class="login_close" style=" float:right; margin:7px;" />账号登录</th>
+      </tr>
+      <tr>
+        <td colspan="2" height="40"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="text" name="username" id="inputname" class="login_name" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" height="20"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" ><input type="password" name="password" id="password"  class="login_pass" /></td>
+      </tr>
+      <tr>
+        <td height="36" style=" text-align:left;text-indent:20px;"><input id="remember" type="checkbox">
+          保持登录</td>
+        <td align="right"><a href="/user/findpwd.aspx" target="_blank" style=" color:#999; margin-right:18px">忘记密码？</a></td>
+      </tr>
+     <tr>
+	<td colspan="2" height="40" align="center"><span style="color:red;font-size:14px;">账号与武进教师培训平台同步</span></td>
+</tr>
+
+      <tr>
+        <td colspan="2" align="center"><input onClick="checklogin()" id="checkbutton" type="button" style=" width:309px; height:42px; line-height:42px; border:0px; text-align:center; font-size:14px; background:#006ECB; color:#FFFFFF;" value="登录"/></td>
+      </tr>
+    </table>
+  </div>
+  <script type="text/javascript">
+				$("#loginform").click(function(){
+					layer.open({
+					  type: 1,
+					  title: false,
+					  closeBtn: 0,
+					  area: ['350px','362px'],
+					  shadeClose: true,
+					  content: $('.login_panel')
+					})
+					}
+				);
+				$(".login_close").click(function(){
+					layer.closeAll();
+				});
+			</script> 
+</div>
+
+<!-----------搜索-----------------------> 
+<script type="text/javascript">
+  function submitn_search(){
+	if($('#search').val()=='请输入关键字...') $('#search').val('');
+	  $('#fm_search').submit()
+  }
+</script> 
+<!-----------导航-----------------------> 
+<script type="text/javascript">
+var s = ',,3904,';
+var SiteMenu = [{"nodeid":3904,"nodename":"网站首页","nodeurl":"/","depth":0,"child":[]},{"nodeid":24564,"nodename":"湖中概况","nodeurl":"/html/node24564.html","depth":0,"child":[]},{"nodeid":3923,"nodename":"湖中新闻","nodeurl":"/html/node3923.html","depth":0,"child":[]},{"nodeid":24720,"nodename":"敏行德育","nodeurl":"/html/node24720.html","depth":0,"child":[]},{"nodeid":24715,"nodename":"课程教学","nodeurl":"/html/node24715.html","depth":0,"child":[]},{"nodeid":24565,"nodename":"教师发展","nodeurl":"/html/node24565.html","depth":0,"child":[]},{"nodeid":24566,"nodename":"学生发展","nodeurl":"/html/node24566.html","depth":0,"child":[]},{"nodeid":24567,"nodename":"管理服务","nodeurl":"/html/node24567.html","depth":0,"child":[]}];
+GetMenu('#topnav', SiteMenu, 0, '', s, 'on', '_self');
+$("#topnav li:last");
+</script> 
+
+
+<script type="text/javascript">
+var s = ',,3904,';
+var NodeMenu = [{"nodeid":3904,"nodename":"网站首页","nodeurl":"/","depth":0,"child":[]},{"nodeid":24564,"nodename":"湖中概况","nodeurl":"/html/node24564.html","depth":0,"child":[]},{"nodeid":3923,"nodename":"湖中新闻","nodeurl":"/html/node3923.html","depth":0,"child":[]},{"nodeid":24720,"nodename":"敏行德育","nodeurl":"/html/node24720.html","depth":0,"child":[]},{"nodeid":24715,"nodename":"课程教学","nodeurl":"/html/node24715.html","depth":0,"child":[]},{"nodeid":24565,"nodename":"教师发展","nodeurl":"/html/node24565.html","depth":0,"child":[]},{"nodeid":24566,"nodename":"学生发展","nodeurl":"/html/node24566.html","depth":0,"child":[]},{"nodeid":24567,"nodename":"管理服务","nodeurl":"/html/node24567.html","depth":0,"child":[]},{"nodeid":4058,"nodename":"专题网站","nodeurl":"/html/node4058.html","depth":0,"child":[]}];
+GetMenu('#submenu', NodeMenu, 0, '', s, 'on', '_self');
+</script>
+
+ <script type="text/javascript">
+
+$(function(){
+	//标红最近两天的文章
+	setFontRed("td",2);
+});
+</script>
+
+
+
+<script type="text/javascript">
+ExxQH("[edata='qh']", "[edata='qht']", "[edata='qhc']","[edata='more']", 'on');
+ExxQH('[edata="qh"]', '[edata="title"]', '[edata="content"]', '[edata="more"]', 'qiehuan');
+LeftMove('[emove="LeftMove"]', false,50, 1);
+LeftMove('[emove="LeftMovegg"]', false,50, 1);
+
+</script>
+
+<script>
+	$(document).ready(function(){
+		FilterTopnew("#hot_news tr","#topnew a");
+	});
+	
+	//校园新闻中过滤头条新闻
+	//sel_news:选择新闻列表  sel_filter：选择头条新闻A标签
+	function FilterTopnew(sel_news,sel_filter){
+		var id=$(sel_filter).attr("data-id");
+		var deling=$(sel_news+"[data-id='"+id+"']");
+		if(deling.length>0){
+			$(sel_news+"[data-id='"+id+"']").remove();
+		}else{
+			$(sel_news+":last").remove();
+		}
+	}
+
+</script>

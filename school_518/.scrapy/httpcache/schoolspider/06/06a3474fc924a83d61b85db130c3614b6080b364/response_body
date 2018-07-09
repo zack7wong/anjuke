@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>重庆市忠县中学 - 欢迎界面</title>
+<base href="http://www.cqzxzx.com/web/" />
+<meta name="Generator" content="重庆市忠县中学,教学资源,教案,课件" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ 
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<style type="text/css">
+body {
+ height:100%;
+ background-color: silver;
+}
+</style>
+</head>
+<body>
+
+<embed src="img/center.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" class='dd' wmode="transparent"></embed>
+</body>
+<div style="display:none;">
+在</div>
+<script type="text/javascript">
+function changesize() {
+var w = $(window).width();
+    var h = w * 0.520833333;
+    
+    $(".dd").css({ 
+        position: "absolute", 
+        left: 0,
+        top: ($(window).height() - h )/2
+    }).attr("width", w).attr("height",h);
+}
+$(window).resize(function(){ 
+            changesize();
+});
+changesize();
+</script>
+
+
+</html>
+<!-- this is a real static html file created at 2018-05-24 10:03:59 -->

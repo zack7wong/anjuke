@@ -1,0 +1,2035 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>常州市北郊初级中学</title>
+ <meta name="keywords" content="">
+    <meta name="description" content="">
+<script language="javascript" src="/include/dedeajax2.js"></script>
+<script type="text/javascript" src="/templets/flash/sinaflash.js"></script>
+<script language="javascript">
+function CheckLogin(){
+  var taget_obj = document.getElementById('_loginform');
+  myajax = new DedeAjax(taget_obj,false,false,"","","");
+  myajax.SendGet2("/member/loginsta.php");
+  DedeXHTTP = null;
+}
+</script>
+<style>
+body{margin:0;padding:0 0 12px 0;background:#fff;font-size:13px;line-height:22px;}
+div,p,li{font-family:Verdana,宋体;font-size:13px;}
+form,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+input,select{font-size:12px;line-height:16px;}
+img{border:0;}
+ul{list-style-type:none;}
+li{font-size:13px;}
+
+.tc{text-align:center;}.tl{text-align:left;}.tr{text-align:right;}
+
+.dis{display:block;}.undis{display:none;}
+
+.fl{float:left;}.fr{float:right;}.cl{clear:both;}
+
+.fh{height:22px;}.fb{font-weight:600}.fnb{font-weight:200;margin-left:-1px;}
+.fc30{color:#303030;font-family:"宋体";}.fchot{color:#ff0700}
+.f11{font-size:12px;font-family:tahoma}
+
+/*今日话题*/
+h1{font-size:16px;font-weight:200;font-family:黑体;}
+h1 a{color:#303030;}
+/*普通标题*/
+h3{font-size:14px;}
+/*页卡*/
+h4{font-weight:200;font-size:13px;cursor:pointer;}
+
+a{color:#00007F;text-decoration:none;}
+a:hover{color:#bd0a01;text-decoration:underline;}
+
+a.lcblue{color:#0F479C;}
+a.lchot{color:#bd0a01;}
+
+/*迷你导航-----*/
+#miniNav{height:18px;border-bottom:1px solid #e6e6e6;background:#f8f8f8;color:#a1a0a0;padding-top:3px;padding-bottom:3px;}
+#miniNav img{margin-bottom:4px;}
+#miniNav div{width:894px;margin:0 auto;text-align:right;padding:0 8px;font-size:10px}
+#miniNav a{color:#a1a0a0;margin:0 3px;font-size:12px;text-decoration:none;padding:1px 3px 1px 3px;}
+#miniNav a:hover{color:#fff;background:#929292;}
+
+
+/*图片代码*/
+#shangpic {
+	color: #333333;
+	width: 100%;
+	margin-left: 3px;
+}
+#shangpic ul{
+	margin: 0px;
+	padding: 0px;
+}
+#shangpic li{
+	float: left;
+	width: 285px;
+	text-align: center;
+	line-height: normal;
+}
+#shangpic li span{
+
+}
+#shangpic li span a{
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+}
+#shangpic li span a:hover{
+	font-size: 12px;
+	font-weight: normal;
+	color: #CC0000;
+	text-decoration: underline;
+}
+#shangpic li img{
+	height: 88px;
+	width: 115px;
+	padding: 3px;
+	border: 1px solid #CCCCCC;
+}
+
+/*顶部910de导航-----*/
+#TopNav{width:910px;margin:6px auto 4px auto;height:75px;line-height:19px;}
+#Logo{padding:0 0 0 4px;width:680px;float:left;}
+#TextNav{float:right;width:223px;padding:0 0 0 3px;}
+#TextNav a{padding:2px 6px 0 7px;}
+#TextNav a.lcnew{background:url(/templets/qq_style/9468357.gif) no-repeat 31px -37px;}
+#TextNav a:hover{color:#fff;text-decoration:none;}
+#TextNav a.lcnew:hover{color:#fff;background-image:url(/templets/qq_style/9468357.gif);background-position:31px -37px; background-repeat:no-repeat;}
+
+/*soso*/
+#Soso{width:912px;height:78px;margin:0 auto 0 auto;}
+#Soso_Left{padding:5px 0 0 25px;width:225px;margin:0 10px 0 0;float:left;}
+#Wealth{line-height:18px;height:54px;padding-bottom:7px;margin-top:-9px;margin-left:-5px;cursor:pointer;width:170px;}
+#Wealth *{line-height:18px;}
+#Wealth h6{font-size:13px;padding-top:20px;}
+#Wealth span.img{float:left;display:block;padding-top:8px}
+#Wealth p{float:left;margin:0;padding:0;}
+#Wealth div{font-size:12px;font-family:tahoma,宋体;width:100px;}
+
+/*皮肤列表*/
+#Skin div {float:left}
+#SkinList {width:56px;height:11px;overflow:hidden;display:block;}
+#Skin li{float:left;width:14px;height:11px;cursor:pointer;}
+#def div{background:url(/templets/qq_style/9468392.gif) no-repeat left top;}
+#s1 div{background:url(/templets/qq_style/9468392.gif) no-repeat left -11px;}
+#s2 div{background:url(/templets/qq_style/9468392.gif) no-repeat left -22px;}
+#s3 div{background:url(/templets/qq_style/9468392.gif) no-repeat left -33px;}
+#s4 div{background:url(/templets/qq_style/9468392.gif) no-repeat left -44px;}
+#s5 div{background:url(/templets/qq_style/9468392.gif) no-repeat left -55px;}
+#s6 div{background:url(/templets/qq_style/9468392.gif) no-repeat left -66px;}
+#s7 div{background:url(/templets/qq_style/9468392.gif) no-repeat left -77px;}
+#s8 div{background:url(/templets/qq_style/9468392.gif) no-repeat left -88px;}
+#s9 div{background:url(/templets/qq_style/9468392.gif) no-repeat left -99px;}
+
+#sar{cursor:pointer;}
+#sar div{background:url(/templets/qq_style/9468357.gif) no-repeat -20px -1px;}
+#sar div.s{background:url(/templets/qq_style/9468357.gif) no-repeat -10px -1px;}
+
+/*输入框区域*/
+#SosoArea{width:470px;padding:9px 0 0 0;float:left;}
+#sosoFod{padding-left:14px;height:25px;}
+#sosoFod h3{float:left;width:48px;height:26px;font-size:12px;font-weight:200;padding-left:13px;cursor:pointer;}
+#sosoFod #sosoqzone {width:50px;padding-left:3px;}
+#sosoFod #sosoqzone div{margin-top:-1px;font-size:12px;}
+
+#SosoArea input.w{width:392px;height:24px;border:0;padding:5px 5px 2px 5px;margin-right:6px;line-height:18px;font-size:14px;}
+#SosoArea input.bot{border:0;width:51px;height:27px;padding-top:2px;}
+#SosoArea table{line-height:17px;}
+#SosoArea table a{color:#fff;}
+
+#SosoAd{float:left;}
+
+#sosoLogo {position:absolute;margin:26px 0 0 -55px;}
+
+.more{position:absolute;background:#fff;margin:-2px 0 0 -5px!important;margin:16px 0 0 -46px;z-index:10000;border:1px solid #B2D0EA;}
+.more a{width:55px;display:block;padding-left:5px;}
+.more ul{list-style-type:none;margin:0;padding:0;}
+.more li{line-height:24px;list-style-type:none;margin:0;padding:0;text-align:left;}
+.more li a,.more li a:visited{color:#3B5995;text-decoration:none;font-size:12px;}
+.more li a:hover{background:#D6E9F8;color:#3B5995;text-decoration:none;font-sizFe:12px;}
+
+/*内容部分通用class*/
+.cArea{width:910px;margin:0 auto;padding:10px 0 0 0;clear:both;z-index:1;}
+.cArea1{width:910px;margin:0 auto;padding:7px 0 0 0;clear:both;}
+.txArea{width:714px;float:left;}
+.resArea{width:320px;float:left;}
+.proArea{width:385px;;float:right;}
+.adArea{width:186px;float:right}
+.adMArea{clear:both;padding-top:10px;}
+.imgArea{background:url(/templets/qq_style/9468391.gif) repeat-x bottom;height:83px;}
+.imgLArea{width:105px;height:70px;padding:0 12px 0 0;float:left;}
+.imgRArea,.imgRArea1{margin-left:117px;position:absolute;}
+.imgRArea *{font-size:14px;line-height:24px;}
+.imgLAreapic {width:105px;height:80px;padding:0 12px 0 0;float:left;text-align:center;}
+.imgLAreapic img{width:105px;height:55px;margin-bottom:1px;}
+.imgLAreapic a{font-size:13px;}
+.height{height:122px;}
+.res_b,.pro_b{height:2px;}
+
+.textArea{clear:both;padding:5px 0 0 0;}
+
+/*左边导航区域*/
+#proArea *{font-size:12px;line-height:22px;}
+#proArea span{position:block;margin-right:8px;font-weight:bold;}
+#proArea a.m{text-decoration:underline;margin-left:2px;}
+#proArea a.m:hover{color:#fff;text-decoration:underline;}
+#proArea{width:284px;height:111px;overflow:hidden;padding:3px 0 0 12px;margin-bottom:10px;}
+#proArea a{text-decoration:none;padding:3px 3px 1px 3px;}
+#proArea a.qq{text-decoration:none;padding:1px 3px 1px 3px;}
+#proArea a.lchot{color:#bd0a01;}
+
+#proAd{padding-bottom:10px;height:254px;width:409px;overflow:hidden;}
+#proAdFlash {position:absolute;width:409px;z-index:500;}
+
+#pro1{width:584px}
+#pro1 td{padding-right:12px;}
+
+/*今日导航*/
+#toDay{width:365px;height:107px;overflow:hidden;padding:10px;margin-bottom:10px;}
+#toDay div.t{float:left;width:73px;height:25px;text-align:center;padding:2px 12px 0 0px;line-height:25px;font-weight:700;font-size:12px;}
+#toDay div.t a:hover{text-decoration:none;}
+#toDay h1{float:left;line-height:26px;padding-top:2px;font-family:宋体;font-size:16px; font-weight:bold;height:36px;}
+#toDay h1 a:hover{color:#bd0a01;}
+#toDay h1 a.lchot{color:#bd0a01;}
+#toDay p{color:#bab9b9;clear:both;font-family:宋体;font-size:14px;line-height:24px;}
+#toDay p a.lchot:visited{color:#bd0a01;}
+
+/*左边频道栏目*/
+#NewsInfo .imgRArea li,#NewsInfo .imgRArea1 li,#SportsInfo .imgRArea li,#financeInfo .imgRArea li,#techInfo .imgRArea li,#carInfo .imgRArea li,#eduInfo li{padding:2px 0 0 12px;background:url(/templets/qq_style/9468357.gif) no-repeat -26px 10px;}
+
+/*内容链接颜色控制*/
+#News h4 a:hover,#Sports h4 a:hover,#finance h4 a:hover,#tech h4 a:hover,#car h4 a:hover,#edu h4 a:hover,#blog h4 a:hover,#ent h4 a:hover,#game h4 a:hover,#book h4 a:hover,#lady h4 a:hover,#comic h4 a:hover{color:#bd0a01;}
+#NewsInfo h3 a:hover{color:#bd0a01;}
+#NewsInfo a.lchot,#SportsInfo a.lchot,#financeInfo a.lchot,#techInfo a.lchot,#carInfo a.lchot,#eduInfo a.lchot{color:#bd0a01;}
+#NewsInfo a.lchot:visited,#SportsInfo a.lchot:visited,#financeInfo a.lchot:visited,#techInfo a.lchot:visited,#carInfo a.lchot:visited,#eduInfo a.lchot:visited{color:#bd0a01;}
+#blogInfo a.lchot,#entInfo a.lchot,#gameInfo a.lchot,#comicInfo a.lchot,#bookInfo a.lchot,#ladyInfo a.lchot,#comicInfo a.lchot{color:#bd0a01;}
+#blogInfo a.lchot:visited,#entInfo a.lchot:visited,#gameInfo a.lchot:visited,#comicInfo a.lchot:visited,#bookInfo a.lchot:visited,#ladyInfo a.lchot:visited,#comicInfo a.lchot:visited{color:#bd0a01;}
+
+/*新闻*/
+#News h4{float:left;height:20px;line-height:20px;text-align:center;width:73px;overflow:hidden;margin-right:1px;padding-top:3px;}
+#News h4.s,#News h4.s1{font-weight:700;border-right:0;width:73px;padding-bottom:4px;}
+#News span h4 {width:82px;padding-left:4px}
+#News span h4.s {width:86px;}
+#News span h4.s1 {width:102px;}
+#News span h4.s0 {width:102px;}
+#NewsInfo .imgRArea1 {margin-left:-16px;}
+
+/*左侧列表内容12链接文字14*/
+#NewsInfo *,#SportsInfo .textArea *,#financeInfo .textArea *,#techInfo .textArea *,#carInfo .textArea *,#eduInfo .textArea *{font-size:12px;line-height:23px;}
+#NewsInfo a,#tailorInfo a,#SportsInfo .textArea a,#financeInfo .textArea a,#techInfo .textArea a,#carInfo .textArea a,#eduInfo .textArea a {font-size:14px;}
+
+/*地方新闻定制页卡*/
+#tailor div{float:left;margin-left:5px;width:auto;}
+#tailor div.i{padding-top:3px;width:17px;height:12px;}
+#tailor div.io{padding-top:3px;width:17px;height:12px;}
+#tailorInfo .textArea{font-family:"宋体";font-size:12px;line-height:24px;}
+#tailorInfo .textArea a{font-size:14px;}
+#tailorInfo .imgLAreapic {width:105px;height:80px;padding:0 12px 0 6px;float:left;text-align:center;}
+#tailorInfo .imgLAreapic img{width:105px;height:55px;margin-bottom:5px;}
+#tailorInfo .imgLAreapic a{font-size:13px;line-height:15px;}
+
+#tailorInfo {padding-top:3px;}
+#tailorInfo .point{background:url(/templets/qq_style/9468391.gif) repeat-x top;clear:both;margin-top:4px;line-height:20px;}
+#tailorInfo .imgLArea {padding-top:4px;}
+#tailorInfo .imgLArea {display:none;}
+#tailorInfo .imgRArea a.c{color:#BA0F07;}
+#tailorInfo .imgRArea1 {margin:-3px 12px 0 6px;width:270px;line-height:20px;text-align:right;}
+#tailorInfo .imgRArea1 li{display:inline;background:url(/templets/qq_style/9468357.gif) no-repeat -26px 7px;}
+
+/* */
+#Sports h4,#finance h4,#tech h4,#car h4{float:left;height:20px;line-height:20px;width:73px;text-align:center;overflow:hidden;margin-right:1px;padding-top:3px;}
+#Sports h4.s,#finance h4.s,#tech h4.s,#car h4.s{height:20px;line-height:20px;font-weight:700;width:73px;padding:3px 0 4px 0;}
+#Sports span,#finance span,#tech span,#car span{position:absolute;overflow:visible;display:block;}
+#News h4 a:hover,#Sports h4 a:hover,#finance h4 a:hover,#tech h4 a:hover,#car h4 a:hover{color:#bd0a01;}
+
+#News,#Sports,#finance,#tech,#car{height:27px;}
+
+#NewsInfo,#SportsInfo,#financeInfo,#techInfo,#carInfo,#eduInfo{clear:both;overflow:hidden;padding:10px 6px 10px 2px;color:#BAB9B9;}
+#NewsInfo .imgLAreapic,#SportsInfo .imgLAreapic,#financeInfo .imgLAreapic,#techInfo .imgLAreapic,#carInfo .imgLAreapic,#eduInfo .imgLAreapic{width:105px;height:80px;padding:0 12px 0 6px;float:left;text-align:center;}
+#SportsInfo .textArea,#financeInfo .textArea,#techInfo .textArea{padding:10px 0;}
+#carInfo .textArea{padding:10px 0;}
+#eduInfo .textArea{padding:10px 0;}
+#NewsInfo{height:217px;padding-top:6px;}
+#SportsInfo{height:209px;}
+#financeInfo{height:247px;padding-bottom:0;}
+#techInfo {height:208px;}
+#carInfo{height:208px;}
+
+#financeInfo form{height:22px;margin:219px -10px 0 -2px;padding:4px 6px 3px 6px;color:#000;position:absolute;width:282px;}
+#financeInfo form input.w{width:53px;padding:1px;line-height:14px;}
+#financeInfo form input.i{width:39px;height:18px;padding-top:1px;cursor:pointer;}
+
+
+#map{position:absolute;margin:0 0 0 -2px;border-bottom:1px solid #8DC0E8;height:280px;z-index:999}
+
+/*中间一栏*/
+#blog h4,#ent h4,#game h4,#comic h4,#book h4,#edu h4,#lady h4{float:left;width:73px;text-align:center;height:20px;line-height:20px;margin-right:1px;padding-top:3px}
+#blog h4.s,#ent h4.s,#game h4.s,#book h4.s,#lady h4.s{font-weight:700;width:73px;padding:3px 0 4px 0;height:20px;line-height:20px;}
+
+#blog span,#ent span,#game span,#book span,#lady span{}
+#blog,#ent,#game,#book,#lady{height:27px;}
+#comic,#edu{height:25px;}
+
+#blog {width:409px}
+#blog div{float:right;padding:1px 13px 6px 0;height:17px;width:172px;text-align:right;}
+
+#entInfo,#gameInfo,#comicInfo,#bookInfo,#ladyInfo{width:363px;padding:10px;color:#BAB9B9;}
+
+#blogInfo .textArea *,#entInfo .textArea *,#entInfo .imgRArea,#gameInfo .textArea *,#comicInfo .textArea *,#bookInfo .textArea *,#ladyInfo .textArea *,#comicInfo .textArea *{font-size:14px;line-height:24px;}
+
+#blogInfo *,#entInfo div,#gameInfo div,#comicInfo div,#bookInfo div,#eduInfo div,#ladyInfo div,#NewsInfo div,#SportsInfo div,#financeInfo div,#techInfo div,#carInfo div,#paipaiInfo div{font-family:宋体}
+
+#blogInfo{height:225px;width:365px;padding:3px 9px 6px 9px;color:#BAB9B9; background:url(/templets/qq_style/9468350.gif) left 210px no-repeat;}
+#entInfo{height:209px;}
+#gameInfo{height:208px;}
+#comicInfo{height:207px;}
+#bookInfo{height:123px}
+#eduInfo{height:207px;}
+#ladyInfo{height:208px;}
+
+/**/
+
+#blogInfo .textArea {background:url(/templets/qq_style/9468391.gif) repeat-x bottom;height:100px;margin-top:-2px;}
+#blogInfo .textArea p{width:186px;}
+
+.blogHot{line-height:20px;height:20px;margin:4px 0 0 12px;}
+.blogHot .fl{text-align:left;margin-right:2px;}
+.blogHot .fr{float:left;width:298px;font-size:13px;text-align:left;}
+.blogHot .fl a{font-weight:bold;font-size:13px;font-family:Verdana;}
+.blogHot a{margin:0 1px;}
+#blogHotMar {line-height:20px;height:20px;overflow:hidden;}
+
+/*滚动*/
+#blogMar,#playMar{width:388px;text-align:center;padding-left:2px;}
+#blogMar p{width:120px;float:left; margin:0; padding:8px 0 3px 0;}
+#blogMar img{width:115px;height:62px;border:#dddddd 1px solid;padding:2px;}
+#blogMar p a{color:#9c9b9b;line-height:24px;}
+#blogMar p a:visited{color:#9c9b9b;}
+
+#magcov{width:386px;text-align:left;padding-left:14px;}
+#magcov p{width:92px;float:left; margin:0; padding:2px 0 0 0;}
+#magcov img{width:75px;height:90px;border:#dddddd 1px solid;padding:2px;}
+#magcov p a{color:#9c9b9b;line-height:24px;}
+#magcov p a:visited{color:#00007F;}
+
+#blogInfo .imgRArea,#entInfo .imgRArea,#gameInfo .imgRArea,#comicInfo .imgRArea,#ladyInfo .imgRArea{width:248px;}
+#entInfo .textArea div.tit_list{float:left;width:117px;height:117px;margin-top:5px;}
+#entInfo .textArea div.tit_list *{font-size:13px;line-height:22px;}
+#entInfo .textArea div.tit_list p{text-align:center;width:107px;}
+#entInfo .textArea div.tit_list div{padding:6px 0 3px 6px;}
+
+#ladyInfo .imgRArea{padding-top:2px;}
+#entInfo .imgRArea{padding-top:2px;}
+#gameInfo .imgRArea{padding-top:2px;}
+#gameInfo .imgRArea *,#entInfo .imgRArea,#ladyInfo .imgRArea *{line-height:26px;}
+#gameInfo .textArea{padding-top:10px;}
+#ladyInfo .textArea{padding-top:10px;}
+#entInfo .textArea div.imgRArea {font-size:14px;line-height:24px;padding-top:5px;}
+
+#comicHot {margin:14px -10px 0 -10px;height:96px;clear:both;padding:8px 10px 3px 10px;clear:both;}
+#comicHot .tit{padding-left:14px}
+#comicHot  .fr{width:176px}
+
+.edu_b,.comic_b{height:2px;}
+
+#comicInfo .imgLAreapic{height:112px;}
+#comicInfo .imgLAreapic p{margin:0; padding:0;}
+#comicInfo .imgLAreapic ul{margin:0;}
+#comicInfo .imgLAreapic li{background:url(/templets/qq_style/9468357.gif) no-repeat left -89px;;width:78px;padding:0 0 0 29px;margin:2px 0;}
+#entInfo .textArea li a{color:#838383;}
+#entInfo .textArea li{background:url(/templets/qq_style/9468357.gif) no-repeat left -89px;;width:78px;padding:0 0 0 29px;margin:2px 0;}
+#comicInfo .imgLAreapic li{background:url(/templets/qq_style/9468357.gif) no-repeat left -186px;;width:107px;padding:0 0 0 0;margin:2px 0;text-align:center;}
+#comicInfo .imgRArea{padding-top:6px;margin-right:4px;}
+#comicInfo .imgRArea .fl,#comicInfo .imgRArea .fr{width:135px;}
+
+#bookInfo .textArea{padding:3px 0 0 0;}
+#bookInfo .textArea .fl,#bookInfo .textArea .fr,#ladyInfo .textArea .fl,#ladyInfo .textArea .fr,#gameInfo .textArea .fl,#gameInfo .textArea .fr,{width:184px;}
+#bookMar {margin-top:-2px;clear:both;}
+#bookMar .fl,#bookMar .fr{padding-top:30px;}
+#bookMar #b_m {width:360px;overflow:hidden;}
+#bookMar td{text-align:center}
+#bookMar td img{border:1px solid #EAEAEA;padding:1px;}
+
+#ladyInfo form{height:22px;margin:195px -10px 0 -10px;padding:5px 10px 2px 10px;position:absolute;width:387px;}
+#ladyInfo form select{margin-right:6px;}
+#ladyInfo form input.i{width:66px;height:20px;margin-right:6px;padding-top:2px;cursor:pointer}
+
+#gameInfo .imgRArea .fl,#gameInfo .imgRArea .fr,#ladyInfo .imgRArea .fl,#ladyInfo .imgRArea .fr{width:135px;}
+
+#Skinlist {width:22px;height:70px;position:absolute;z-index:120;margin:5px 0 0 8px;text-align:center;padding-top:5px;}
+#Skinlist img{margin-bottom:5px;clear:both;cursor:pointer;}
+
+#bookArl img{background:url(/templets/qq_style/9468357.gif) no-repeat -30px -57px;}
+#bookArl img.m{background:url(/templets/qq_style/9468357.gif) no-repeat -39px -57px;}
+#bookArr img{background:url(/templets/qq_style/9468357.gif) no-repeat -48px -57px;}
+#bookArr img.m{background:url(/templets/qq_style/9468357.gif) no-repeat -57px -57 px;}
+
+/*广告区域*/
+#richAd{margin-bottom:10px;}
+
+/*广告区域标题*/
+.adArea h5{font-size:13px;font-weight:200;margin:-8px 6px 4px 0;line-height:20px;border-bottom:#d4d4d4 1px solid;}
+.adArea a.lchot{color:#bd0a01;}
+
+#adAreaAInfo,#adAreaBInfo,#adAreaC,#adAreaD,#adAreaE{padding:10px 8px 10px 14px;font-size:12px; font-family:"宋体";}
+
+#adAreaD h5{margin-top:-5px;}
+
+.adAreaA_b,.adAreaB_b,.adAreaA_t,.paipai_at,.paipai_ad{height:2px;}
+.adAreaB_b,.paipai_ad{margin-bottom:10px}
+
+/* */
+#adAreaA{width:186px;height:23px;}
+#adAreaAInfo h5{margin:0 8px 4px 0;}
+#adAreaA h3,#adAreaB h3{font-size:13px;font-weight:200;float:left;text-align:center;width:61px;cursor:pointer;margin-right:1px;}
+#adAreaA h3.s,#adAreaB h3.s{font-weight:700;width:62px;height:23px;}
+#adAreaA span h3,#adAreaB span h3{margin:0;}
+#adAreaAInfo{height:410px;padding:4px 6px 9px 14px;line-height:22px;}
+
+/* */
+#adAreaB{width:186px;height:24px}
+#adAreaB div{float:left;width:71px}
+#adAreaB p{float:right;margin:0;padding:0;}
+#adAreaB h3{width:37px;}
+#adAreaB h3.s{width:39px;}
+#adAreaBInfo{height:162px;padding:4px 6px 0 6px;}
+#adAreaBInfo p{margin:0;padding:1px 0;line-height:26px;}
+#adAreaBInfo img{float:left;padding:6px 0 0 1px; border-right:6px solid #fff;margin:0;}
+#adAreaBInfo .fl{float:left;width:46px;height:46px; padding-top:6px;overflow:hidden;font-size:12px;font-family:"宋体";}
+#adAreaBInfo .fr{float:right;width:118px;height:52px; overflow:hidden;font-size:12px;font-family:"宋体";}
+
+/* */
+#adAreaC{height:262px;}
+#adAreaC h5{margin-top:-5px;}
+
+/* */
+#adAreaE{height:233px;padding:10px 8px 10px 14px;}
+#adAreaE h5{margin-top:-5px}
+
+/*动态*/
+#adAreaD{height:230px;padding:10px 10px 10px 14px;}
+#adAreaD li{background:url(/templets/qq_style/9468389.gif) no-repeat 0px 8px;padding:0 0 0 8px;font-size:12px;font-family:"宋体";}
+
+#netGame{height:23px;}
+#netGame h4{float:left;width:93px;text-align:center;line-height:22px;height:23px;margin-right:1px;}
+#netGame h4.s{font-weight:700;width:92px;}
+#netGame span h4{margin:0;}
+
+#netGameInfo{height:232px;}
+#netGameInfo form{height:179px;padding:15px 0 0 10px;}
+#netGameInfo form div{padding-bottom:10px;}
+#netGameInfo form div select{width:80px;}
+#netGameInfo form img{cursor:pointer}
+#netGameInfo form p{padding:8px 10px 0 10px;height:70px;margin-left:-10px;}
+#netGameInfo form p.f1{padding:4px 10px 3px 10px;height:41px;margin-left:-10px;}
+#netGameInfo div.bot {padding:6px 0 0 8px;margin:0 auto;width:154px;}
+#netGameInfo div.bot input,#netGameInfo div.bot a.input{width:74px;height:24px;border:0;cursor:pointer;display:block;text-align:center;}
+#netGameInfo .tc a.input,#netGameInfo .tc input{width:114px;height:24px;border:0;padding:2px 0 0 12px;display:block}
+#netGameInfo div.bot a.input{float:left;}
+
+#paipaiBot img{padding-bottom:2px;cursor:pointer}
+#paipaiBot p{text-align:center;}
+#paipaiBot p a{padding-left:8px;}
+#paipaiBot p a:hover{text-decoration:underline}
+
+/* 内容*/
+#paipaiInfo{height:237px;padding:0 10px 10px 10px;background:#fff;border-left:1px solid #d4d4d4;border-right:1px solid #d4d4d4;}
+
+#paipaiInfo .fr{text-align:right;}
+#paipaiInfo .fr img{cursor:pointer;margin-top:3px;}
+#paipaiInfo .fl{font-size:12px;font-family:VERDANA}
+#paipaiInfo .fl a{margin:0 2px;}
+#paipaiInfo div.tit{height:21px;padding:3px 0 3px 0;}
+#paipaiArea table{margin:0 -1px}
+#paipaiArea table img{padding-bottom:3px;}
+#paipaiArea table td{text-align:center;line-height:14px;padding:0 2px 0 2px;font-size:12px;}
+#paipaiArea table td.w{text-align:center}
+#paipaiMar{width:28px;}
+
+.footernew {color:#515151;text-align:center;font-size:12px;line-height:24px;width:910px;margin:0 auto; padding-top:12px;}
+.footernew a {color:#515151;text-decoration:none;}
+.footernew a.lchot {color:#bd0a01;}
+.footernew a:hover {color:#bd0a01;text-decoration:underline;}
+.footernew a:visited {color:#515151;}
+.footernew div{
+	width:280px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+.footernew p{float:left;width:120px;height:50px;border:1px solid #d2d2d2;padding:0;line-height:20px; margin:6px;font-size:12px;}
+.footernew .fl{float:left;padding:3px;}
+.footernew .fr{float:right; width:72px;padding:5px 3px 0 3px;}
+
+/*火数据*/
+#iCokeInfo{color:#1f376d;font-size:14px;}
+#iCokeNum{font-size:16px;color:#bd0a01;font-weight:700;font-family:tahoma}
+/*-------------------------首页:底部:友情链接*/
+.flink{
+	width:898px;
+	margin:6px auto;
+	border:1px solid #DDD;
+	clear:both;
+}
+.flink .title{
+	height:26px;
+	line-height:26px;
+	background:url(../images/flink_title_bg.gif) repeat-x;
+}
+.flink .title dl dt{
+	width:200px;
+	float:left;
+	line-height:26px;
+	text-indent:20px;
+	font-weight:bold;
+	letter-spacing:2px;
+	color:#666666;
+}
+.flink .title dl dd{
+	color:#AAA;
+	float:right;
+	margin-right:10px;
+	display:inline;
+}
+.flink .title dl dd a{
+	color:#666666;
+}
+.flink .flinkcon{
+	width:880px;
+	margin:0px auto 0px;
+	overflow:hidden;
+	width:880px;
+	padding-bottom:10px;
+}
+.flink .flinkcon li{
+	color:#666666;
+	display:block;
+	float:left;
+	height:30px;
+	line-height:15px;
+	padding-right:12px;
+	padding-left:12px;
+	margin:10px 0px 0px -1px;
+	white-space:nowrap;
+	border-left:1px solid #EEE;
+}
+
+</style>
+<!--[if ie 6]>
+<style>
+div,p,li{overflow:hidden;}
+#sosoFod{margin-bottom:0;}
+#SosoArea input.w{background-attachment:fixed;}
+#proNav {overflow:hidden;background-position-y:90px;}
+#proNav td.m{padding:2px 0 0 28px;}
+#tailor div{float:left;margin-left:3px}
+#toDay p{padding:0}
+.imgRArea{margin-left:0;}
+#paipaiInfo .fr img{padding-top:4px;}
+
+#proAll {margin-left:10px;}
+#proAll form img.i{margin-top:1px;}
+#proNav .list a{display:block;width:64px;height:20px;padding:3px 0 0 4px}
+#comicInfo .imgLAreapic{height:102px;}
+#tailorInfo .imgRArea1{padding-left:0;}
+#tailorInfo .textArea{line-height:24px;}
+#miniNav{height:18px;border-bottom:1px solid #e6e6e6;background:#f8f8f8;color:#a1a0a0;padding-top:3px;padding-bottom:0;}
+#toDay h1{height:26px;}
+#NewsInfo *,#SportsInfo .textArea *,#financeInfo .textArea *,#techInfo .textArea *,#carInfo .textArea *,#eduInfo .textArea *{font-size:12px;line-height:24px;}
+</style>
+<![endif]-->
+<!--[if ie 7]>
+<style>
+div,p,li{overflow:hidden;}
+#sosoFod{margin-bottom:0;}
+#NewsPat{height:1px;line-height:0;margin-bottom:-6px;}
+.cl{height:0;line-height:0;width:0}
+#proNav {overflow:hidden;background-position-y:90px;}
+#proNav td.m{padding:2px 0 0 28px;}
+.imgRArea{margin-left:0;}
+#paipaiInfo .fr img{padding-top:4px;}
+
+#proAll {margin-left:10px;}
+#proAll form img.i{margin-top:1px;}
+#proNav .list a{display:block;width:64px;height:20px;padding:3px 0 0 4px}
+#comicInfo .imgLAreapic{height:102px;}
+#tailorInfo .imgLAreapic img{width:105px;height:55px;margin-bottom:4px;}
+#tailorInfo .imgRArea1{padding-left:0;}
+#tailorInfo .textArea{line-height:24px;}
+#miniNav div{width:900px;margin:0 auto;text-align:right;padding:0 5px;font-size:10px}
+#miniNav{height:18px;border-bottom:1px solid #e6e6e6;background:#f8f8f8;color:#a1a0a0;padding-bottom:3px;}
+#miniNav a{color:#a1a0a0;margin:0 6px;font-size:12px;}
+#blogMar,#playMar{width:389px;}
+#blogMarInfo,#playMarInfo{width:362px;overflow:hidden;padding-left:6px;}
+.more{position:relative;width:58px;}
+#NewsInfo *,#SportsInfo .textArea *,#financeInfo .textArea *,#techInfo .textArea *,#carInfo .textArea *,#eduInfo .textArea *{font-size:12px;line-height:24px;}
+</style>
+<![endif]-->
+<link id="cssChange" href="/templets/qq_style/style_s_2f.css" rel="stylesheet" type="text/css" />
+<script language="javascript">
+	window.onerror = function()
+	{
+		return true;
+	}
+
+	if (!window._sT)
+	{window._sT = window.setTimeout;window.setTimeout = function(fCallback, nDelay, oObject){if (typeof fCallback == 'function'){if (!oObject){oObject = window;}var argu = Array.prototype.slice.call(arguments, 3);var newFunc = (function(){ fCallback.apply(oObject, argu); });	return window._sT(newFunc, nDelay);	}return window._sT(fCallback, nDelay);};}
+
+	var marTime = new Array();
+	var marWay = new Array();
+	var moveTime = new Array();
+	moveTime[0] = 0;
+	moveTime[1] = 0;
+	var speed = 30;
+	var fodTime = 0;
+	var proFlog = 0;
+	var proTime = 0;
+
+	function $(o){ return (typeof o == "object")?o:document.getElementById(o);}
+
+	function getNames(obj,name,tij){var plist = $(obj).getElementsByTagName(tij);var rlist = new Array();for(i=0;i<plist.length;i++){if(plist[i].getAttribute("name") == name){rlist[rlist.length] = plist[i];}}return rlist;}
+
+	function cplay(){var o,n,t,na,c1,c2;o = $(arguments[0]);num=arguments[1];t=arguments[2];n=arguments[3];c1=arguments[4];c2=arguments[5];var f=getNames(o,n,t);for(i=0;i<f.length;i++){	if(i == num){f[i].className = c1;}else{f[i].className = c2;}}}
+
+	function newsPlay(){var o,n,t,na,c1,c2;o = $(arguments[0]);num=arguments[1];t=arguments[2];n=arguments[3];c1=arguments[4];c2=arguments[5];var f=getNames(o,n,t);for(i=0;i<f.length;i++)		{if(i == num){if(f[i].className == "s0" || f[i].className == "s1"){f[i].className = "s1";}else{f[i].className = c1;$("map").className = "undis";}}else{				if(f[i].className == "s0" || f[i].className == "s1"){f[i].className = "s0";	}else{f[i].className = c2;$("map").className = "undis";}}}}
+
+	function fod(){var o1,o2,t1,t2,n1,n2,c1,c2,c3,c4,num;o1=$(arguments[0]);o2=$(arguments[1]);num=arguments[2];t1=arguments[3];n1=arguments[4];t2=arguments[5];n2=arguments[6];c1=arguments[7];c2=arguments[8];c3=arguments[9];c4=arguments[10];if(o1.id=="News"){newsPlay(o1,num,t1,n1,c1,c2);}else{cplay(o1,num,t1,n1,c1,c2);}cplay(o2,num,t2,n2,c3,c4);}
+
+	function _fod(o1,o2,t0,t1,n1,t2,n2,c1,c2,c3,c4)
+	{return function(){fod(o1,o2,t0,t1,n1,t2,n2,c1,c2,c3,c4)}}
+
+	function formatArea()
+	{var o1=$(arguments[0]);var o2=$(arguments[0]+"Info");var t1=arguments[1];var n1=arguments[2];var t2=arguments[3];var n2=arguments[4];var c1,c2,c3,c4;if(arguments.length>5){c1=arguments[5];c2=arguments[6];c3=arguments[7];c4=arguments[8];}else{c1="s";c2="";c3="dis";c4="undis"}var f=getNames(o1,n1,t1);		for(i=0;i<f.length;i++){f[i].value = i;f[i].onmouseover = function(){clearTimeout(fodTime);fodTime=0;fodTime = setTimeout(_fod(o1,o2,this.value,t1,n1,t2,n2,c1,c2,c3,c4),100);	}; f[i].onmouseout=function(){clearTimeout(fodTime);fodTime=0;}}}
+
+	function formatPageZone()
+	{var o1=$(arguments[0]);var o2=$(arguments[0]+"Info");var t1=arguments[1];var n1=arguments[2];var t2=arguments[3];var n2=arguments[4];var c1,c2,c3,c4,c5;		if(arguments.length>5){c1=arguments[5];c2=arguments[6];c3=arguments[7];c4=arguments[8];c5=arguments[9]}		else{c1="s";c2="";c3="dis";c4="undis"}var f=getNames(o1,n1,t1);for(i=0;i<f.length;i++){f[i].value = i;f[i].onclick=function(){fod(o1,o2,this.value,t1,n1,t2,n2,c1,c2,c3,c4)};			f[i].onmouseover=function(){cplay(o1,this.value,t1,n1,c5,c2);};f[i].onmouseout=function(){cplay(o1,this.value,t1,n1,c2,c5);}}}
+
+	var sh,stt,nh,nt;//滚动多少高度停止,停止滚动的次数,当前的高度,当前已经停止滚动的次数.
+	sh=stt=17;
+	nh=nt=0;
+	function marquee(w,l,n){switch(w){case 0:marWay[n]?TheWay=0:TheWay=1;if(l[1].offsetWidth-l[2].scrollLeft<=0){l[2].scrollLeft-=l[0].offsetWidth;}else{l[2].scrollLeft++;}break;case 1:		marWay[n]?TheWay=0:TheWay=1;if(l[1].offsetWidth-l[2].scrollLeft>=l[1].offsetWidth){l[2].scrollLeft+=l[0].offsetWidth;}else{l[2].scrollLeft--;}break;case 2:				if(l[1].offsetHeight-l[2].scrollTop<=0){l[2].scrollTop-=l[0].offsetHeight;}else{if(nh==sh){if(!nt){l[2].scrollTop = sh*Math.floor(l[2].scrollTop/sh);}nt++;			if(nt==st){nh=nt=0;}}else{l[2].scrollTop++;nh++;}}break;}}
+
+	function _marquee(w,l,n){return function() {marquee(w,l,n);}}
+
+	function  formatmarquee(){var o,l,num;num=arguments[0];if(arguments.length<3){o=$(arguments[1]);l=getNames(o,"m","div");l[l.length]=o;l[1].innerHTML=l[0].innerHTML;marTime[num]=setInterval(_marquee(2,l),speed);}else{o=$(arguments[1]);var o2=$(arguments[2]);l=getNames(o,"m","td");l[l.length]=o;l[1].innerHTML=l[0].innerHTML;var l1=getNames(o2,"m","img");marWay[num] = 0;	l1[0].onmouseover = function(){this.className="m";clearInterval(marTime[num]);marWay[num]=0;marTime[num] = setInterval(_marquee(marWay[num],l,num),speed);};l1[1].onmouseover=function(){this.className="m";clearInterval(marTime[num]);marWay[num]=1;marTime[num]=setInterval(_marquee(marWay[num],l,num),speed);};l1[0].onmouseout=function(){this.className="";clearInterval(marTime[num]);marTime[num]=0};l1[1].onmouseout=function(){this.className="";clearInterval(marTime[num]);marTime[num]=0};}}
+
+	function papshow()
+	{var mar=$("marquee");var pap=$("papshow");if(mar.className=="dis"){mar.className="undis";pap.className="dis";}else{mar.className="dis";pap.className="undis";}}
+
+	function send_request(url)
+	{http_request = false;if(window.XMLHttpRequest)	{http_request = new XMLHttpRequest();if(http_request.overrideMimeType){http_request.overrideMimeType('text/xml');}		}else if (window.ActiveXObject)	{try{ http_request = new ActiveXObject("Msxml2.XMLHTTP");}catch (e){try { http_request = new ActiveXObject("Microsoft.XMLHTTP"); }catch (e)	{}}}if (!http_request){window.alert("不能创建XMLHttpRequest对象实例.");return false; }http_request.onreadystatechange = loadPage;	http_request.open("GET", url, true);	http_request.send(null);}
+
+	function loadPage()
+	{var ChangeInfo=$("tailorInfo");if(http_request.readyState == 4){var xmldom = http_request.responseXML;var map = $("map");if(xmldom.documentElement.text){				ChangeInfo.innerHTML = xmldom.documentElement.text;}else{ChangeInfo.innerHTML = xmldom.documentElement.textContent;}$("tailorArrow").onclick = function(){	if(map.className=="dis"){map.className="undis";}else{map.className="dis";}};$("tailorArrow").onmouseover = function(){this.className="io";};	$("tailorArrow").onmouseout = function(){this.className="i";};map.className="undis";}else{ChangeInfo.innerHTML = "<div style='margin:40px auto;width:140px;text-center:center'>正在载入内容....<br />请稍侯!</div>";}}
+
+	function tail()
+	{var name = arguments[0];var Tailor = $("tailor");strings = "<div><a href='"+area[name].l+"' target='_blank'>"+area[name].n+"</a></div><div id='tailorArrow' class='i'></div>";Tailor.innerHTML = strings;if(area[name].n.length > 4){if($("defTail").className == ""){Tailor.className = "s1";}else{Tailor.className = "s0";			};}else{if($("defTail").className == ""){Tailor.className = "s";}else{Tailor.className = "";};};send_request("/site/area/"+area[name].u);MiniSite.Cookie.set("Tencent",name);}
+
+	var cssList = new Array("style_deff.css","style_s_1f.css","style_s_2f.css","style_s_3f.css","style_s_4f.css","style_s_5f.css","style_s_6f.css","style_s_7f.css","style_s_8f.css","style_s_9f.css")
+
+	function setSkin(n)
+	{var css = $("cssChange");var cssurl = "/templets/qq_style/";cssurl +=cssList[n];css.href=cssurl;MiniSite.Cookie.set("TencentSkin",n);}
+
+	function formatSkin()
+	{var p = $("SkinList").getElementsByTagName("li");var s = $("sar");for(i=0;i<p.length;i++){p[i].num = i;p[i].onclick = function(){setSkin(this.num);}}s.onclick = function() { openSkin("sar","SkinList",140,56,2,0); };}
+
+	function _openSkin(o1,o2,max,min,speed,n)
+	{ return openSkin(o1,o2,max,min,speed,n);}
+
+	function _closeSkin(o1,o2,max,min,speed,n)
+	{ return closeSkin(o1,o2,max,min,speed,n);}
+
+	//n=0 skin n=1 pro
+	function openSkin(o1,o2,max,min,speed,n)
+	{var a = $(o1);	var s = $(o2);var w = s.offsetWidth;var move=function(){w+=speed;if(w>=max){w = max;s.style.width = w+"px";				if(moveTime[n]){window.clearInterval(moveTime[n]);}if(n){$("pro_arrow").className = "al";$("pro_arrow").onclick = function() {closeSkin(o1,o2,max,min,speed,n);}				}else{a.innerHTML = "<div class='s'><img src='/templets/qq_style/9471252.gif' alt='收缩' /></div>";a.onclick = function() {closeSkin(o1,o2,max,min,speed,n);}}}else{s.style.width = w + "px";if(n){}else{s.style.display = "block";};}};moveTime[n] = window.setInterval(move,5);}
+
+	function closeSkin(o1,o2,max,min,speed,n)
+	{var a = $(o1);var s = $(o2);var w = s.offsetWidth;var move = function(){w-=speed;if(w<=min){w = min;s.style.width = w + "px";if(n){				$("pro_arrow").className = "ar";$("pro_arrow").onclick = function() {openSkin(o1,o2,max,min,speed,n);};}else{a.innerHTML = "<div><img src='/templets/qq_style/9471252.gif' alt='更多皮肤' /></div>";a.onclick = function() { openSkin(o1,o2,max,min,speed,n);}	};		if(moveTime[n]){window.clearInterval(moveTime[n]);}}else{s.style.display = "block";s.style.width = w + "px";};};moveTime[n] = window.setInterval(move,5);}
+
+	loadJS = function(url){var script = "<scr"+"ipt type='text/javascript' src='" + url + "'></scr"+"ipt>";document.write(script);}
+
+	loadJS("/js/j.soso.weather.js");
+
+	function loadPng(o)
+	{if(MiniSite.Browser.ie){try{var img = o;var imgName = o.src.toUpperCase();if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+	{var imgID = (img.id) ? "id='" + img.id + "' " : "";var imgClass = (img.className) ? "class='" + img.className + "' " : "";var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' ";var imgStyle = "display:inline-block;" + img.style.cssText;if (img.align == "left") imgStyle = "float:left;" + imgStyle;if (img.align == "right") imgStyle = "float:right;" + imgStyle;if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle ;   var strNewHTML = "<span " + imgID + imgClass + imgTitle + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";" + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader" + "(src=\'" + img.src + "\', sizingMethod='image');\"></span>"; img.outerHTML = strNewHTML;			}}	catch (e){}}}
+
+function call_0410(type,item,page)
+{try{var purl='';if (type == "A"){purl = window.event.srcElement.href;}else if (type == "IMG"){purl = window.event.srcElement.parentNode.href;};var iurl = '#trace.qq.com/collect?pj=1001&item='+item+'&page='+page+'&url='+purl+'&rnd='+Math.random();var img  = new Image(1,1);img.onerror = function (){};img.src	 = iurl;	} catch (e) {}}
+
+function register0410(item,page) 
+{var type = window.event.srcElement.tagName;if (type == "A" || type == "IMG" ) {call_0410(type,item, page);}return true;}
+
+</script>
+<base target="_blank">
+</head>
+
+<body onload="document.frm_head.w.focus();document.execCommand('BackgroundImageCache',false,true)">
+    <script language="javascript">
+    if(typeof(pgvMain) == 'function')
+      pgvMain();
+    </script>
+	<div id="miniNav" onClick="register0410('mininav',1);">
+		<div>·<a href="/plus/heightsearch.php" target="_blank">高级搜索</a>
+			·<a href='#' onClick="javascript:window.external.AddFavorite('http://www.czbj.js.cn','常州市北郊初级中学');">收藏本站</a>
+			<!--· <a href="/plus/sitemap.html" target="_blank">网站地图</a>
+		        ·<a href="/plus/rssmap.html" target="_blank">RSS订阅<img src="/templets/qq_style/9499745.gif" /></a>
+		      -->
+		        ·<a href="http://www.czbj.js.cn:81" target="_blank">怀念旧版</a>
+		      </div>
+	</div>
+	<div id="TopNav" onClick="register0410('topnav',1);">
+	<div id="Logo"><a href="/" target="_self"><img src="/templets/qq_style/logo2.gif" alt="常州市北郊中学初中分校" /></a></div>
+           </div>
+	<div id="Soso" onClick="register0410('sobar',1);">
+		<div id="Soso_Left">
+			<div id="Wealth"><br />
+<script language='javascript'>
+var day="";
+var month="";
+var ampm="";
+var ampmhour="";
+var myweekday="";
+var year="";
+mydate=new Date();
+myweekday=mydate.getDay();
+mymonth=mydate.getMonth()+1;
+myday= mydate.getDate();
+myyear= mydate.getYear();
+year=(myyear > 200) ? myyear : 1900 + myyear;
+if(myweekday == 0)
+weekday=" 星期日 ";
+else if(myweekday == 1)
+weekday=" 星期一 ";
+else if(myweekday == 2)
+weekday=" 星期二 ";
+else if(myweekday == 3)
+weekday=" 星期三 ";
+else if(myweekday == 4)
+weekday=" 星期四 ";
+else if(myweekday == 5)
+weekday=" 星期五 ";
+else if(myweekday == 6)
+weekday=" 星期六 ";
+document.write(year+"年"+mymonth+"月"+myday+"日 "+weekday);</script></div>
+
+			<div id="Skin">
+				<div id="SkinList">
+					<ul>
+						<li id="def"><div><img src="/templets/qq_style/9471252.gif" alt="默认" /></div></li>
+						<li id="s1"><div><img src="/templets/qq_style/9471252.gif" alt="淡蓝" /></div></li>
+						<li id="s2"><div><img src="/templets/qq_style/9471252.gif" alt="宁夏" /></div></li>
+						<li id="s3"><div><img src="/templets/qq_style/9471252.gif" alt="新绿" /></div></li>
+						<li id="s4"><div><img src="/templets/qq_style/9471252.gif" alt="竹韵" /></div></li>
+						<li id="s5"><div><img src="/templets/qq_style/9471252.gif" alt="水墨" /></div></li>
+						<li id="s6"><div><img src="/templets/qq_style/9471252.gif" alt="星空" /></div></li>
+						<li id="s7"><div><img src="/templets/qq_style/9471252.gif" alt="奥运" /></div></li>
+						<li id="s8"><div><img src="/templets/qq_style/9471252.gif" alt="咖啡" /></div></li>
+						<li id="s9"><div><img src="/templets/qq_style/9471252.gif" alt="紫色" /></div></li>
+					</ul>				
+				</div>
+				<div id="sar"><div><img src="/templets/qq_style/9471252.gif" alt="展开" /></div></div>
+				<div class="cl"></div>
+			</div>
+			<script type="text/javascript">
+				formatSkin();//setdefSkin();
+        var currSkin=Math.floor(Math.random()*9);
+				setSkin(currSkin);
+			</script>
+		</div>
+		<div id="SosoArea">
+<div id="sosoLogo"><a href="/plus/heightsearch.php"><img width="44" height="24" src="/templets/qq_style/space.gif" alt="soso" /></a></div>
+			<form action="/plus/search.php" name="formsearch" method="GET" target="_blank">
+				
+				<div id="sosoFod">
+					<h3 class="s1"><a href="#"target="_self">首页</a></h3>
+<h3 class="s2"><a href='/html/xuexiaogaikuang/'>学校概况</a></h3><h3 class="s2"><a href='/html/kechengfazhan/'>课程发展</a></h3><h3 class="s2"><a href='/html/xueshengfazhan/'>学生发展</a></h3><h3 class="s2"><a href='/html/jiaoshifazhan/'>教师发展</a></h3><h3 class="s2"><a href='/html/houqinfuwu/'>后勤服务</a></h3><h3 class="s2"><a href='/html/dangtuanqungong/'>党团群工</a></h3><h3 class="s2"><a href='/html/nabutongzhi/'>内部通知</a></h3>
+					
+				</div>
+				<div>
+					<div class="fl">
+					<input class="w" style="color:#999999;" name="keyword" id="keyword" type="text">
+					</div>
+					<div class="fl">
+					<input type="submit" class="bot" src="/templets/qq_style/soso.gif" value="搜 搜" align="absmiddle" style="cursor:pointer;"/>
+
+					</div>
+				
+				</div>
+
+				<div class="cl"></div>
+			</form>
+			
+		</div>
+		<div class="fl" style="padding-left:14px;padding-top:10px;width:60px"><a href="mailto:czbjzx@126.com"><img src="/templets/qq_style/mail.gif"/></a></div>		
+		<div class="fl" style="padding-left:14px;padding-top:10px;width:60px"><a href="mailto:czbjxinling@126.com"><img src="/templets/qq_style/xinling.jpg"/></a></div>		
+
+		
+	<!--<div id="SosoAd">
+			<a href="#"><img src="/templets/qq_style/soso_ad04-045.png" onload="loadPng(this)" />KKKKK</a>
+		</div>-->
+		<div class="cl"></div>
+	</div>
+
+	<div class="cArea1">
+		<div class="txArea">
+			<div class="resArea">
+			<div id="proAreass" >
+
+<!-- 焦点图 begin -->
+<div class="focusImg" id="focusImg"></div>
+<script type="text/javascript">
+
+var mylinkpic1,mynews1;
+mylinkpic1="";
+mynews1="";
+
+mylinkpic1= mylinkpic1 + "/uploads/allimg/170905/1_0Z512122L415.jpg" + "#";
+mylinkpic1= mylinkpic1 + "/html/jiaoshifazhan/yaodianxinwen/2017/0905/4715.html" + "#";
+mylinkpic1= mylinkpic1 + "奔跑吧，领创青春！" + "#"+"[要点新闻]"+"|";
+mylinkpic1= mylinkpic1 + "/uploads/allimg/170821/1_170821124313_1-lp.JPG" + "#";
+mylinkpic1= mylinkpic1 + "/html/jiaoshifazhan/yaodianxinwen/2017/0821/4695.html" + "#";
+mylinkpic1= mylinkpic1 + "北郊，我来啦！" + "#"+"[要点新闻]"+"|";
+mylinkpic1= mylinkpic1 + "/uploads/allimg/170821/1_170821123921_1-lp.jpg" + "#";
+mylinkpic1= mylinkpic1 + "/html/jiaoshifazhan/yaodianxinwen/2017/0821/4694.html" + "#";
+mylinkpic1= mylinkpic1 + "用爱守候，用心耕耘" + "#"+"[要点新闻]"+"|";
+mylinkpic1= mylinkpic1 + "/uploads/allimg/170527/1_170527151025_1-lp.jpg" + "#";
+mylinkpic1= mylinkpic1 + "/html/jiaoshifazhan/yaodianxinwen/2017/0527/4666.html" + "#";
+mylinkpic1= mylinkpic1 + "腹有诗书气自华，吟诗诵章满芬芳" + "#"+"[要点新闻]"+"|";
+
+if(mylinkpic1=="")mylinkpic1="/templets/images/nopic.jpg#常州市北郊中学#初中分校|";
+mylinkpic1=mylinkpic1.substring(0,mylinkpic1.length-1); 
+
+var sinaFlash2 = new sinaFlash("/templets/flash/focus.swf", "focusimg", "320", "310", "8", "#000000");
+sinaFlash2.addParam("quality", "best");
+sinaFlash2.addParam("wmode", "transparent");
+sinaFlash2.addParam("bgcolor", "#ffffff");
+//sinaFlash2.addParam("menu", "false");
+//此处添加图片地址（图片地址，大标题，小标题，用"#"分割），用"|"分割
+sinaFlash2.addVariable("mylinkpic", mylinkpic1);
+//此处添加详细信息，图库等（图库，详细，连接用"#"分割），用"|"分割
+//sinaFlash2.addVariable("mynews", "详细>>#url#图库>>#url|");
+sinaFlash2.write("focusImg");
+</script>
+
+<!-- 焦点图 end -->
+
+	</div>
+				<div style="height:10px"></div>
+				<div id="News" class="fh">
+	<h4 class="s" name="d" id="defTail">通知安排</h4>
+	<span>
+
+</div>
+<div id="NewsInfo">
+					<div name="f" class="dis"  onClick="register0410('news',1);">
+					<table width="100%" border="0" cellspacing="1" cellpadding="1">
+					<tr >
+						<td width="88%">·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0528/4895.html'>第十四周工作周报</a>
+<img src='/templets/qq_style/new.gif' />
+办公室							
+						</td>
+						<td width="12%" align="right">05-28</td>
+						</tr>
+<tr >
+						<td width="88%">·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0521/4891.html'>第十三周工作周报</a>
+
+办公室							
+						</td>
+						<td width="12%" align="right">05-21</td>
+						</tr>
+<tr >
+						<td width="88%">·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0514/4888.html'>第十二周工作周报</a>
+
+办公室							
+						</td>
+						<td width="12%" align="right">05-14</td>
+						</tr>
+<tr >
+						<td width="88%">·<a href='/html/xueshengfazhan/tongzhigonggao/2018/0510/4887.html'>2018年科技、体育、艺术特长</a>
+
+学生成长中心							
+						</td>
+						<td width="12%" align="right">05-10</td>
+						</tr>
+<tr >
+						<td width="88%">·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0507/4884.html'>第十一周工作周报</a>
+
+办公室							
+						</td>
+						<td width="12%" align="right">05-07</td>
+						</tr>
+<tr >
+						<td width="88%">·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0502/4883.html'>第十周工作周报</a>
+
+办公室							
+						</td>
+						<td width="12%" align="right">05-02</td>
+						</tr>
+<tr >
+						<td width="88%">·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0423/4878.html'>第九周工作周报</a>
+
+办公室							
+						</td>
+						<td width="12%" align="right">04-23</td>
+						</tr>
+<tr >
+						<td width="88%">·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0416/4874.html'>第八周工作周报</a>
+
+办公室							
+						</td>
+						<td width="12%" align="right">04-19</td>
+						</tr>
+
+					</table>
+</div>
+
+					<div id="map" class="undis"></div>
+										<div name="f" class="undis" onClick="register0410('news',2);">
+
+
+
+					</div>
+
+			  </div>
+				<div class="res_b"></div>
+			</div>
+			<script type="text/javascript">
+				var mapTime = 0;
+				$("tailorArrow").onclick = function(){if($("map").className=="dis"){ $("map").className="undis";}else{$("map").className="dis";}	}
+				$("tailorArrow").onmouseover = function() {this.className="io";}
+				$("tailorArrow").onmouseout = function() {this.className="i";}
+				$("tailor").onmouseout = function(){setTimeout(function(){$("map").className="undis"},300);}
+				$("map").onmouseover = function(){clearTimeout(mapTime);$("map").className="dis";}
+				$("map").onmouseout = function(){$("map").className="undis";}
+				formatArea("News","h4","d","div","f");	
+				setdef();		
+			</script>
+			
+			<div class="proArea">
+				<div id="toDay"  onClick="register0410('today',1);">
+					<div class="t">学校动态</div>
+					<h1><a href='/html/jiaoshifazhan/yaodianxinwen/2017/0821/4694.html'>用爱守候，用心耕耘</a></h1>
+					<p>
+						<SPAN><div>&#160;&#160;&#160;&#160;记北郊初级中学 2017级新生 班主任培训 201 7 年 8 月 2 0 日，北郊初中新一届的新生即将踏入校园之际，七年级班主任的培训活动顺利起航，班主任们齐聚敦行厅，获得了……</div></SPAN>
+				  </p>
+
+			 </div>
+	
+		<div class="proArea">
+				<div id="book" class="fh">
+					<h4 class="s" name="d"><a href="/html/jiaoshifazhan/">校园新闻</a></h4>
+          <h4 name="d"><a href="/html/kechengfazhan/">教研动态</a></h4>
+          <h4 name="d"><a href="/html/xueshengfazhan/">学生活动</a></h4>
+				</div>
+				<div id="bookInfo">
+					<div name="f" class="dis" onClick="register0410('book',1);">
+            <div class="fl" style="width:220px">
+               ·<a href='/html/jiaoshifazhan/yaodianxinwen/2018/0521/4892.html'>常州市北郊初级中学“中国</a>(05/21)<br>
+·<a href='/html/jiaoshifazhan/yaodianxinwen/2018/0423/4882.html'>春季健康小报</a>(04/23)<br>
+·<a href='/html/jiaoshifazhan/yaodianxinwen/2018/0403/4865.html'>社区医生走进课堂四</a>(04/03)<br>
+·<a href='/html/jiaoshifazhan/yaodianxinwen/2018/0322/4857.html'>加强消防演练 共筑平安校</a>(03/22)<br>
+·<a href='/html/jiaoshifazhan/yaodianxinwen/2017/1228/4814.html'>扎实，丰富，精彩——青年</a>(12/28)<br>
+·<a href='/html/jiaoshifazhan/yaodianxinwen/2017/1205/4798.html'>艾滋病日宣传</a>(12/05)<br>
+
+            </div>
+           <div class="fr">
+               <div id="shangpic"><p><a href="/html/jiaoshifazhan/yaodianxinwen/2018/0521/4892.html"><img src='/uploads/allimg/180521/11_180521124934_1-lp.jpg' border='0' width='120' height='90' alt='常州市北郊初级中学“中国学生营养日”活动小结'></a><br />
+            <a href='/html/jiaoshifazhan/yaodianxinwen/2018/0521/4892.html'>常州市北郊初级中学“中国学生营</a></p>
+</div>
+</div>
+
+					</div>
+					<div name="f" class="undis" onClick="register0410('book',2);">
+<div class="fl" style="width:220px">
+·<a href='/html/kechengfazhan/zhudongfazhan/2012/0917/2457.html'>聚焦精品课堂，领略名师风采</a><br>
+·<a href='/html/kechengfazhan/zhudongfazhan/2012/0805/2378.html'>把握教材新变化  关注高效课堂</a><br>
+·<a href='/html/kechengfazhan/zhudongfazhan/2011/0310/1633.html'>历史组盘点2011.1</a><br>
+·<a href='/html/kechengfazhan/zhudongfazhan/2011/0119/1524.html'>语文组期末盘点2011.1</a><br>
+·<a href='/html/kechengfazhan/zhudongfazhan/2011/0119/1523.html'>地理组期末盘点2011.1</a><br>
+·<a href='/html/kechengfazhan/zhudongfazhan/2011/0117/1521.html'>数学组期末盘点2011.1</a><br>
+
+</div>
+<div class="fr">
+<div id="shangpic"><p><a href="/html/kechengfazhan/zhudongfazhan/2012/0805/2378.html"><img src='/uploads/allimg/120805/7_0P51950203U3.jpg' border='0' width='120' height='90' alt='把握教材新变化  关注高效课堂'></a><br />
+<a href='/html/kechengfazhan/zhudongfazhan/2012/0805/2378.html'>把握教材新变化  关注高效课堂</a></p>
+</div>
+</div>						
+					</div>
+					<div name="f" class="undis" onClick="register0410('book',3);">
+<div class="fl" style="width:220px">
+·<a href='/html/xueshengfazhan/zhutihuodong/2016/1130/4569.html'>这个纸飞机给满分</a><br>
+·<a href='/html/xueshengfazhan/zhutihuodong/2016/1130/4568.html'>玩转魔方</a><br>
+·<a href='/html/xueshengfazhan/zhutihuodong/2016/1130/4567.html'>小魔方，大世界</a><br>
+·<a href='/html/xueshengfazhan/zhutihuodong/2016/0401/4392.html'> 游上海自然博物馆</a><br>
+·<a href='/html/xueshengfazhan/zhutihuodong/2015/0529/4045.html'>唇枪舌剑  谁与争锋</a><br>
+·<a href='/html/xueshengfazhan/zhutihuodong/2015/0331/3918.html'>笑声洒遍恐龙园</a><br>
+
+</div>
+<div class="fr">
+<div id="shangpic"><p><a href="/html/xueshengfazhan/zhutihuodong/2016/1130/4569.html"><img src='/uploads/allimg/161130/1861_161130132211_1-lp.jpg' border='0' width='120' height='90' alt='这个纸飞机给满分'></a><br />
+<a href='/html/xueshengfazhan/zhutihuodong/2016/1130/4569.html'>这个纸飞机给满分</a></p>
+</div>
+</div>
+					</div>
+					
+				</div>	
+				<div class="pro_b"></div>
+				<script type="text/javascript">			
+				formatArea("book","h4","d","div","f");
+			</script>
+
+			</div>
+
+		
+<div id="proAd" >
+<div id='ad_qq_rm_video' style="overflow:visible;">
+
+				<div id="blog" class="fh">
+					<h4 class="s" name="d"><a href="/html/xueshengfazhan/banjizaixian/">班级在线</a></h4>
+					<h4 name="d"><a href="/html/kechengfazhan/jiaoshifengcai/">教师风采</a></h4>
+				</div>
+				<div id="blogInfo">
+					<div name="f" class="dis" onClick="register0410('blog',1);">
+						<div class="fl">·<a href='/html/xueshengfazhan/banjizaixian/2017/0824/4710.html'> 原来初中是这样子的</a> 
+						
+						李静娟	
+						(08/24)
+						
+						<br>
+·<a href='/html/xueshengfazhan/banjizaixian/2017/0824/4709.html'> 快乐的夏令营--梦想</a> 
+						
+						李静娟	
+						(08/24)
+						
+						<br>
+·<a href='/html/xueshengfazhan/banjizaixian/2017/0824/4708.html'>青春的梦</a> 
+						
+						李静娟	
+						(08/24)
+						
+						<br>
+·<a href='/html/xueshengfazhan/banjizaixian/2017/0824/4707.html'> FEI·YI班来也</a> 
+						
+						李静娟	
+						(08/24)
+						
+						<br>
+·<a href='/html/xueshengfazhan/banjizaixian/2017/0824/4706.html'> 我们终将启程</a> 
+						
+						李静娟	
+						(08/24)
+						
+						<br>
+
+
+	
+						</div>
+						<div id="blogMar">
+						<p><a href="/html/xueshengfazhan/banjizaixian/2017/0824/4710.html" class="pimg"><img src='/uploads/allimg/170824/8_170824090407_1-lp.jpg' border='0' width='88' height='66' alt=' 原来初中是这样子的'></a><br />
+<a href='/html/xueshengfazhan/banjizaixian/2017/0824/4710.html'> 原来初中是这样子</a></p>
+<p><a href="/html/xueshengfazhan/banjizaixian/2017/0824/4709.html" class="pimg"><img src='/uploads/allimg/170824/8_170824090119_1-lp.jpg' border='0' width='88' height='66' alt=' 快乐的夏令营--梦想'></a><br />
+<a href='/html/xueshengfazhan/banjizaixian/2017/0824/4709.html'> 快乐的夏令营--梦</a></p>
+<p><a href="/html/xueshengfazhan/banjizaixian/2017/0824/4707.html" class="pimg"><img src='/uploads/allimg/170824/8_170824085746_1-lp.jpg' border='0' width='88' height='66' alt=' FEI·YI班来也'></a><br />
+<a href='/html/xueshengfazhan/banjizaixian/2017/0824/4707.html'> FEI·YI班来也</a></p>
+
+
+						</div>
+			<div class="cl"></div>			
+
+	<div class="blogHot">
+	<div id="blogHotMar">
+		<div name="m" class="dis">
+			<div class="fl"><a href="http://blog.czbj.js.cn" >班级博客：</a><a href="/" target="_self"></a></span></div>
+		
+		</div>
+		<div name="m" class="undis">
+			<div class="fl" style="margin-top:-1px;"><a href="http://blog.czbj.js.cn" >班级主页：</a><span class="fc30"></span></div>
+		</div>
+		<div name="m" class="undis">
+			<div class="fl" style="margin-top:-1px;"><a href="/" target="_self"><span style="font-family:Verdana;">333</span></a><span class="fc30"></span></div>
+		</div>		
+	</div>
+</div>
+
+
+<script language="javascript">
+							var stoptime = 4000;
+							var blogNum = 0;
+							function blogplay()
+							{
+								var l = getNames($("blogHotMar"),"m","div");
+								if(blogNum>1)
+								{blogNum = 0;}
+								cplay("blogHotMar",blogNum,"div","m","dis","undis");
+								blogNum ++;
+							}
+							var blogtime = setInterval(blogplay,stoptime);
+							$("blogHotMar").onmouseover = function(){clearInterval(blogtime)};
+							$("blogHotMar").onmouseout = function(){blogtime = setInterval(blogplay,stoptime);}
+						</script>
+					</div>
+					
+					<div name="f" class="undis" onClick="register0410('blog',2);">
+    <div >
+    <table width="100%" border="0" cellspacing="1" cellpadding="1">
+  <tr><td > <a href="/html/kechengfazhan/jiaoshifengcai/2009/0210/41.html" class="pimg"><img src='/uploads/090210/1_101611_1_lit.jpg' border='0' width='120' height='80' alt='化学组周艳老师'></a><br /><a href='/html/kechengfazhan/jiaoshifengcai/2009/0210/41.html'>化学组周艳老师</a><br>
+	</td>
+	 
+	 <td>我 1997 年参加教学工作以来一直任教初中毕业班化学，并在近年来连续担任毕业班班主任。现为中教一级，任北郊中学生化教研组副组长， 2007 年被...</td>
+	 </tr>
+<tr><td > <a href="/html/kechengfazhan/jiaoshifengcai/2010/0408/1090.html" class="pimg"><img src='/uploads/100408/1_130705_1_lit.jpg' border='0' width='120' height='80' alt='语文组史尔娜老师'></a><br /><a href='/html/kechengfazhan/jiaoshifengcai/2010/0408/1090.html'>语文组史尔娜老师</a><br>
+	</td>
+	 
+	 <td>史尔娜，扬州大学语文学科教育硕士，常州市教学能手。 曾连续三年获校优秀班主任、青年教师基本功比赛一等奖荣誉。 全国教育科学十一五规划教育...</td>
+	 </tr>
+
+</table>
+
+ 
+</div>
+		
+
+						<div class="cl"></div>
+						<div class="blogHot">
+							<div class="fl" style="margin-top:-1px;"><a href="/" target="_self"><span style="font-family:Verdana;">常州市北郊中学初中分校</span></a><span class="fc30"></span></div>
+						</div>
+					</div>
+
+</div>
+	<div class="pro_b"></div>
+</div>
+</div>				
+				
+</div>
+<script type="text/javascript">formatArea("blog","h4","d","div","f");</script>
+
+<div class="adMArea" onClick="register0410('admarea',1);">
+
+<!--
+
+<script language="javascript" type="text/javascript">
+var oImgs=new Array(
+"http://www.czbj.js.cn/swf/dyyd.swf",
+"http://www.czbj.js.cn/swf/syspg.swf",
+"http://www.czbj.js.cn/swf/zhsj.swf"
+);
+
+var n=oImgs.length;
+var currIndex=Math.floor(Math.random()*n)
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="760" height="100" id="banner" align="center">')
+document.write('<param name=movie value="'+oImgs[currIndex]+'"')
+document.write('<param name=quality value=high>')
+document.write('<embed src="'+oImgs[currIndex]+'"')
+document.write('quality=high  width="714" height="90" name="banner"')
+document.write('align="center" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>')
+document.write('</object>')
+</script>
+-->
+<!--
+第一通栏广告开始
+-->
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="728" height="90">
+<param name="movie" value="uploads/media/yun2.swf">
+<param name="quality" value="high">
+<embed src="uploads/media/yun2.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="728" height="90">
+</embed> 
+</object>
+
+
+<!--
+第一通栏广告结束
+-->
+</div>
+		</div>
+
+		<div class="adArea" onClick="register0410('adarea',1);">
+			<div class="paipai_at"></div>
+			<div id="paipaiInfo">
+				<div class="tit">
+					<div class="fl">校园资源 内部访问</div>
+					<div class="fr" id="paipaiMar"><span id="paipai_al"><img src="/templets/qq_style/space.gif" width="15" height="13" name="m" /></span><span id="paipai_ar"><img src="/templets/qq_style/space.gif" width="13" height="13" name="m" /></span></div>
+				</div>
+				<div id="paipaiArea">
+					<div id="paipaiMarInfo">
+						<div name="f" class="dis">
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr align="center">
+									<td><a href="ftp://zhihui:zhihui@ftp.czbj.js.cn">
+
+									<img src="/templets/qq_style/51-41-1-0.jpg"  /><br />
+
+								  智慧库<br /><br /></a></td>
+									<td><a href="ftp://nianji:nianji@ftp.czbj.js.cn">
+									<img src="/templets/qq_style/51-41-2-3.jpg"  /><br />
+								  年级库<br /><br /></a></td>
+									<td><a href="ftp://jiaowu:jiaowu@ftp.czbj.js.cn">
+										<img src="/templets/qq_style/51-41-2-4.jpg"  /><br />
+								  教务室<br /><br /></a></td>
+							 </tr>
+							 <tr align="center">
+                                    <td><a href="ftp://jiaoshi:jiaoshi@ftp.czbj.js.cn"">
+
+										<img src="/templets/qq_style/51-41-2-7.gif"  /><br />
+
+								  办公室<br /><br /></a></td>
+									<td><a href="ftp://kecheng:kecheng@ftp.czbj.js.cn">
+									<img src="/templets/qq_style/51-41-2-5.jpg"  /><br />
+								  课程中心<br /><br /></a></td>
+									<td><a href="ftp://yuwen:yuwen@ftp.czbj.js.cn" target="_blank"><img src="/templets/qq_style/51-41-1-1.jpg" border="0" /><br />
+								  语文<br /><br /></a></td>
+								</tr>	
+								<tr align="center">
+									<td><a href="ftp://shuxue:shuxue@ftp.czbj.js.cn"  target="_blank"><img src="/templets/qq_style/51-41-1-2.jpg"  /><br />
+								  数学<br /><br /></a></td>
+									<td><a href="ftp://yingyu:yingyu@ftp.czbj.js.cn"><img src="/templets/qq_style/51-41-1-3.jpg"  /><br />
+								  英语<br /><br /></a></td>
+									<td>
+										<a href="ftp://wuli:wuli@ftp.czbj.js.cn"><img src="/templets/qq_style/51-41-1-4.jpg"  /><br />
+								  物理<br /><br /></a></td>
+														
+								</tr>
+							</table>
+						</div>
+						<div name="f" class="undis">
+							<table border="0" cellpadding="0" cellspacing="0">
+								<tr align="center">
+									<td>
+										<a href="ftp://huaxue:huaxue@ftp.czbj.js.cn"><img src="/templets/qq_style/51-41-1-5.jpg"  /><br />
+								  化学<br /><br /></a></td>			
+                  <td><a href="ftp://zhengzhi:zhengzhi@ftp.czbj.js.cn">
+									<img src="/templets/qq_style/51-41-1-6.jpg"  /><br />
+								  政治<br /><br /></a></td>
+									<td><a href="ftp://lishi:lishi@ftp.czbj.js.cn">
+										<img src="/templets/qq_style/51-41-1-7.jpg"  /><br />
+								  历史<br /><br /></a></td>
+								</tr>
+								<tr align="center">	
+									<td><a href="ftp://shengwu:shengwu@ftp.czbj.js.cn">
+									<img src="/templets/qq_style/51-41-1-8.jpg"  /><br />
+								  生物<br /><br /></a></td>							
+									<td>
+									<a href="ftp://dili:dili@ftp.czbj.js.cn">
+									<img src="/templets/qq_style/51-41-1-9.jpg"  /><br />
+								  地理<br /><br /></a></td>    									
+									<td><a href="ftp://ytmxx:ytmxx@ftp.czbj.js.cn">
+										<img src="/templets/qq_style/51-41-2-1.jpg"  /><br />
+								  音体美信<br /><br /></a></td>
+									
+								</tr>
+								<tr align="center">
+									<td><a href="ftp://zhsj:zhsj@ftp.czbj.js.cn">
+									<img src="/templets/qq_style/51-41-2-2.jpg"  /><br />
+								  综合实践<br /><br /></a></td>
+									
+									
+									<td><a href="ftp://xbkc:xbkc@ftp.czbj.js.cn">
+									<img src="/templets/qq_style/51-41-2-2.jpg"  /><br />
+								  校本课程<br /><br /></a></td>
+									<td><a href=""><img src="/templets/qq_style/51-41-2-9.jpg"  /><br />
+								  <br /><br /></a></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+				<script type="text/javascript">
+					formatPageZone("paipaiMar","img","m","div","f","","","dis","undis","s");
+				</script>
+			</div>	
+			<div class="paipai_ad"></div>
+			
+			<div class="adAreaA_t"></div>
+			<div id="adAreaAInfo">
+				快速通道
+<a href="http://ucenter.czbj.js.cn/bbs"><img src="/templets/qq_style/link/luntan.gif"  /></a><br>
+<a href="http://www.czbj.js.cn/kt"><img src="/templets/qq_style/link/jyky.gif"  /></a><br>
+<a href="http://www.czbj.js.cn/html/dangtuanqungong/dangjiangongzuo/"><img src="/templets/qq_style/link/dangwei.gif"  /></a><br>				
+<a href="/html/xueshengfazhan/"><img src="/templets/qq_style/link/xszx.gif"  /></a><br>
+<a href="/html/kechengfazhan/"><img src="/templets/qq_style/link/kczx.gif"  /></a><br>
+<a href="/html/xinlingjiayuan/"><img src="/templets/qq_style/link/xljy.gif"  /></a><br>
+<a href="http://10.17.104.150"><img src="/templets/qq_style/link/tsg.gif"  /></a><br>
+
+		  </div>
+			<div class="adAreaA_b"></div>
+		</div>
+	</div>
+
+
+	<div class="cArea">
+		<div class="txArea">
+			<div class="resArea">
+				<div id="tech" class="fh">
+					<h4 class="s" name="d"><a href="/html/kechengfazhan/tongzhigonggao/">课程通知</a></h4>
+<h4 class="d" name="d"><a href="/html/kechengfazhan/ketiyanjiu/">课题研究</a></h4>
+<div align="right"><a href="/html/kechengfazhan/">『课程发展』更多...</a></div>
+				</div>
+				<div id="techInfo">
+					
+<!-- 工作通知 Begin-->					
+<div name="f" class="dis" onClick="register0410('tech',1);">
+<!-- 	 <div class="imgArea">
+    <div class="imgLAreapic"><a href="/html/kechengfazhan/tongzhigonggao/2018/0225/4842.html" class="pimg"><img src='/plus/img/addon-lp.gif' border='0' width='105' height='55' alt='2017学年第二学期总课表等下载'></a><br />
+<a href='/html/kechengfazhan/tongzhigonggao/2018/0225/4842.html'>2017学年第二学期总课</a></div>	
+   <div class="imgRArea111"><a href="/html/kechengfazhan/tongzhigonggao/2018/0225/4842.html">常州市北郊初级中学2017-2018学年度第二学期总课表等下载： 1、总课程表： /uploads/soft/18...</a></div>
+
+	</div> -->
+	<div class="textArea">
+		<div style="width:300px;float:left"> ·<a href='/html/kechengfazhan/tongzhigonggao/2018/0225/4842.html'>2017学年第二学期总课表等下载</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/kechengfazhan/tongzhigonggao/2018/0222/4841.html'>2017第二学期教研组工作计划</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/kechengfazhan/tongzhigonggao/2018/0222/4840.html'>2017学年第二学期教学进度表</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/kechengfazhan/tongzhigonggao/2018/0222/4839.html'>开学初教研活动安排 (2月24日)</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/kechengfazhan/tongzhigonggao/2018/0115/4826.html'>市第二十一周教研活动安排表</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/kechengfazhan/tongzhigonggao/2018/0108/4821.html'>市第二十周教研活动安排表</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/kechengfazhan/tongzhigonggao/2018/0102/4815.html'>市第十九周教研活动安排</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/kechengfazhan/tongzhigonggao/2017/1222/4809.html'>市第十八周教研活动安排</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/kechengfazhan/tongzhigonggao/2017/1218/4805.html'>市第十七周教研活动安排</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/kechengfazhan/tongzhigonggao/2017/1211/4800.html'>市第十六周教研活动安排</a></div>
+
+	</div>
+</div>
+<!-- 工作通知 End -->		
+					
+	
+<!-- 课题研究 Begin-->						
+<div name="f" class="undis" onClick="register0410('tech',2);">
+	<div class="imgArea">
+  	<div class="imgLAreapic"><a href="/html/kechengfazhan/ketiyanjiu/2013/0924/3078.html" class="pimg"><img src='/plus/img/addon-lp.gif' border='0' width='105' height='55' alt='校级课题表格下载'></a><br /><a href='/html/kechengfazhan/ketiyanjiu/2013/0924/3078.html'>校级课题表格下载</a>
+</div>
+    <div class="imgRArea">
+				<ul><li><a href='/html/kechengfazhan/xiaobenyanxun/2009/0212/85.html'>2007-2008学年寒假研</a></li>
+<li><a href='/html/kechengfazhan/xiaobenyanxun/2009/0212/83.html'>九年级寒假研究性学习</a></li>
+<li><a href='/html/kechengfazhan/xiaobenyanxun/2009/0212/82.html'>各学科研究性学习优秀</a></li>
+
+				</ul>
+		</div>
+	</div>
+	<div class="textArea">
+    	·<a href='/html/kechengfazhan/ketiyanjiu/2013/0508/2812.html'>“共写教育随笔”子课题组2013年4月份</a><br />
+·<a href='/html/kechengfazhan/ketiyanjiu/2013/0401/2760.html'>“共写教育随笔”子课题组2013年3月份</a><br />
+·<a href='/html/kechengfazhan/ketiyanjiu/2013/0221/2663.html'>“共写教育随笔”子课题组2013年寒假成</a><br />
+·<a href='/html/kechengfazhan/ketiyanjiu/2013/0105/2618.html'>“共写教育随笔”子课题组2012年12月成</a><br />
+·<a href='/html/kechengfazhan/ketiyanjiu/2012/1203/2558.html'>“共写教育随笔”子课题组2012年11月成</a><br />
+
+	</div>
+</div>
+<!-- 课题研究 End-->
+
+				</div>
+				<div class="res_b"></div>
+			</div>
+			<div class="proArea">
+				<div id="game">
+              <h4 class="s" name="d"><a href="/html/xueshengfazhan/tongzhigonggao/">学生通知</a></h4>
+					<h4 class="s" name="d"><a href="/html/xueshengfazhan/banzhurenshalong/">班主任沙龙</a></h4>
+          <h4 name="d"><a href="/html/xueshengfazhan/tiyishow/">体艺show</a></h4>
+          <h4 name="d"><a href="/html/xueshengfazhan/chengguozhanshi/">成果展示</a></h4>
+          <div align="right"><a href="html/xueshengfazhan/">『学生发展』更多...</a></div>
+				</div>
+				<div id="gameInfo">
+				
+<!-- 工作通知 Begin-->					
+<div name="f" class="dis" onClick="register0410('game',1);">
+<!-- 	 <div class="imgArea">
+    <div class="imgLAreapic"><a href="/html/xueshengfazhan/tongzhigonggao/2018/0510/4887.html" class="pimg"><img src='/plus/img/addon-lp.gif' border='0' width='105' height='55' alt='2018年科技、体育、艺术特长生招生简章'></a><br />
+<a href='/html/xueshengfazhan/tongzhigonggao/2018/0510/4887.html'>2018年科技、体育、艺</a></div>	
+   <div class="imgRArea111"><a href="/html/xueshengfazhan/tongzhigonggao/2018/0510/4887.html">为贯彻《中共中央国务院关于深化教育改革，全面推进素质教育的决定》，进一步推动学校特色教...</a></div>
+
+	</div> -->
+	<div class="textArea">
+		<div style="width:300px;float:left"> ·<a href='/html/xueshengfazhan/tongzhigonggao/2018/0510/4887.html'>2018年科技、体育、艺术特长生招生简章</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/xueshengfazhan/tongzhigonggao/2017/0629/4689.html'>2017年科技、体育、艺术特长生拟录取名单公</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/xueshengfazhan/tongzhigonggao/2017/0527/4665.html'>2017年科技、体育、艺术特长生招生简章</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/xueshengfazhan/tongzhigonggao/2017/0419/4634.html'>常州市北郊初级中学2017高中、高职自主招生</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/xueshengfazhan/tongzhigonggao/2017/0419/4635.html'>2017重点高中自主招生 校长实名推荐和学校</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/xueshengfazhan/tongzhigonggao/2016/0407/4400.html'>2016年北郊初中科技、体育、艺术特长生招生</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/xueshengfazhan/tongzhigonggao/2015/0624/4078.html'>2015年北郊初级中学特长生录取名单公示</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/xueshengfazhan/tongzhigonggao/2015/0525/4033.html'>2015北郊初级中学体育、科技特长生招生简章</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/xueshengfazhan/tongzhigonggao/2014/0625/3579.html'>2014年北郊初级中学特长生录取名单公示</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/xueshengfazhan/tongzhigonggao/2014/0604/3553.html'>市第十六周教研活动安排</a></div>
+
+	</div>
+</div>
+<!-- 工作通知 End -->	
+
+<!-- 班主任沙龙 Begin-->				
+<div name="f" class="dis" onClick="register0410('game',1);">
+	<div class="imgArea">
+		<div class="imgLAreapic">
+    <a href="/html/xueshengfazhan/banzhurenshalong/2014/0921/3683.html" class="pimg"><img src='/uploads/allimg/140921/8_0921154604O51.jpg' border='0' width='105' height='55' alt='班级文化建设百花齐放   智慧分享我们且行且思'></a><br />
+<a href='/html/xueshengfazhan/banzhurenshalong/2014/0921/3683.html'>班级文化建设百花</a>
+
+    </div>
+    <div class="imgRArea">·<a href='/html/xueshengfazhan/banzhurenshalong/2014/0921/3683.html'>班级文化建设百花齐放   智慧分享我们</a><br />
+·<a href='/html/xueshengfazhan/banzhurenshalong/2009/0923/758.html'>九（9）班班主任工作计划</a><br />
+·<a href='/html/xueshengfazhan/banzhurenshalong/2009/0923/757.html'>九（12）班主任工作计划</a><br />
+
+    </div>
+	</div>
+	<div class="textArea">
+		<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/banzhurenshalong/2009/0923/756.html'>九11班主任工作计划</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/banzhurenshalong/2009/0923/755.html'>九（10）班主任工作计划</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/banzhurenshalong/2009/0923/754.html'>九（7）班主任工作计划</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/banzhurenshalong/2009/0923/753.html'>九6班主任工作计划</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/banzhurenshalong/2009/0923/752.html'>九（4）班主任工作计划</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/banzhurenshalong/2009/0923/751.html'>九（3）班主任工作计划</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/banzhurenshalong/2009/0923/750.html'>九（2）班主任工作计划</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/banzhurenshalong/2009/0923/749.html'>九（1）班主任工作计划</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/banzhurenshalong/2009/0923/748.html'>八（12）班主任工作计划</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/banzhurenshalong/2009/0923/747.html'>八（11）班主任工作计划</a></div>
+    </td>
+    </tr>
+    </table>
+
+	</div>
+</div>					
+<!-- 班主任沙龙 End -->
+					
+<!-- 体艺show Begin-->					
+<div name="f" class="undis" onClick="register0410('game',2);">
+	<div class="imgArea">
+    <div class="imgLAreapic"><a href="/html/xueshengfazhan/tiyishow/2009/1119/833.html" class="pimg"><img src='/uploads/litimg/091119/1G0301F34.jpg' border='0' width='105' height='55' alt='常州市中学生合唱比赛视频'></a><br />
+<a href='/html/xueshengfazhan/tiyishow/2009/1119/833.html'>常州市中学生合唱比赛</a>
+    </div>
+  	<div class="imgRArea111"><a href="/html/xueshengfazhan/tiyishow/2009/1119/833.html">...</a></div>
+
+	</div>
+	<div class="textArea">
+		<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/tiyishow/2009/1119/833.html'>常州市中学生合唱比赛视频</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/tiyishow/2009/0210/64.html'>记北郊中学初中分校“12.9</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/tiyishow/2009/0210/63.html'>记北郊中学初中体育大会</a></div>
+    </td>
+    <td width='50%'>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+    </td>
+    <td width='50%'>
+    </td>
+    </tr>
+    </table>
+
+	</div>
+</div>
+<!-- 体艺show End -->
+
+	
+<!-- 成果展示 Begin-->					
+<div name="f" class="undis" onClick="register0410('game',3);">
+	<div class="imgArea">
+    <div class="imgLAreapic"><a href="/html/xueshengfazhan/chengguozhanshi/2009/0210/66.html" class="pimg"><img src='/uploads/090213/1_143604_1.jpg' border='0' width='105' height='55' alt='八年级“美德少年”候选人风采展示'></a><br />
+<a href='/html/xueshengfazhan/chengguozhanshi/2009/0210/66.html'>八年级“美德少年”候</a></div>	<div class="imgRArea111"><a href="/html/xueshengfazhan/chengguozhanshi/2009/0210/66.html">为进一步在未成年人中加强社会主义核心价值体系建设，深化美德少年阳光行动道德实践活动 , 鼓励更多的未成...</a></div>
+
+	</div>
+	<div class="textArea">
+		<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/chengguozhanshi/2009/0209/12.html'>“阳光天使”特色中队</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/chengguozhanshi/2013/1202/3246.html'>冬季谨防煤气中毒</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/chengguozhanshi/2011/0322/1676.html'>快乐人生的八条秘决</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/chengguozhanshi/2009/0227/167.html'>寒假社会实践活动表彰名单</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/xueshengfazhan/chengguozhanshi/2009/0210/66.html'>八年级“美德少年”候选人</a></div>
+    </td>
+    <td width='50%'>
+    </td>
+    </tr>
+    </table>
+
+	</div>
+</div>
+<!--  成果展示 End -->				
+					
+		
+				</div>
+				<div class="pro_b"></div>
+			</div>
+			<script language="javascript">
+				formatArea("tech","h4","d","div","f");formatArea("game","h4","d","div","f");
+			</script>
+		</div>
+<!-- 专题栏目 Begin -->		
+		<div class="adArea">
+			<div class="adAreaA_t"></div>
+			<div id="adAreaE" onClick="register0410('adareae',1);">
+				专题栏目
+				<a href="http://c.pjjy.com/page/pc/login.asp?db=site_20171031210000"><img src="/templets/qq_style/link/bjenglish.gif"  /></a><br>
+        <a href="http://www.czbj.js.cn/html/guojilijiejiaoyu/"><img src="/templets/qq_style/link/gjljjj.gif"  /></a><br>
+        <a href="/html/zhuanti/xialingying/"><img src="/templets/qq_style/link/xly.gif"  /></a><br>
+        <a href="/plus/guestbook.php"><img src="/templets/qq_style/link/jxhd.gif"  /></a><br> 
+						
+			</div>
+			<div class="adAreaA_b"></div>
+		</div>
+
+	</div>
+<!-- 专题栏目 End -->		
+	<div class="cArea">
+		<div class="txArea" onClick="register0410('adimg3',1);">
+<!--		
+		<img src="/templets/qq_style/ad3.gif" width="714" height="90" />
+-->
+<!--
+第二通栏广告开始
+-->
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="728" height="90">
+<param name="movie" value="uploads/media/yun7.swf">
+<param name="quality" value="high">
+<embed src="uploads/media/yun7.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="728" height="90">
+</embed> 
+</object>
+
+
+<!--
+第二通栏广告结束
+-->		
+		</div>
+		<div class="adArea" onClick="register0410('adimg4',1);"><a href="http://www.czbj.js.cn/html/kechengfazhan/tongzhigonggao/2017/0905/4716.html"><img src="/templets/qq_style/kbcx.gif" width="186" height="90" /></a></div>
+	</div>
+
+	<div class="cArea">
+		<div class="txArea">
+			<div class="resArea">
+				<div id="car" class="fh">
+<h4 class="s" name="d"><a href="/html/jiaoshifazhan/tongzhianpai/">工作通知</a></h4>
+<h4 class="s" name="d"><a href="/html/jiaoshifazhan/xuexiyuandi/">学习园地</a></h4>
+<h4 class="d" name="d"><a href="/html/jiaoshifazhan/zhuanyefazhan/">专业发展</a></h4>
+<div align="right"><a href="/html/jiaoshifazhan/">『教师发展』更多...</a></div>
+				</div>
+				<div id="carInfo">
+			
+<!-- 工作通知 Begin-->					
+<div name="f" class="dis" onClick="register0410('tech',1);">
+<!-- 	 <div class="imgArea">
+    <div class="imgLAreapic"><a href="/html/jiaoshifazhan/tongzhianpai/2018/0227/4848.html" class="pimg"><img src='/uploads/allimg/180227/10_180227150855_1_lit.jpg' border='0' width='105' height='55' alt='常州市北郊初级中学收费公示'></a><br />
+<a href='/html/jiaoshifazhan/tongzhianpai/2018/0227/4848.html'>常州市北郊初级中学收</a></div>	
+   <div class="imgRArea111"><a href="/html/jiaoshifazhan/tongzhianpai/2018/0227/4848.html">点击图片可放大...</a></div>
+
+	</div> -->
+	<div class="textArea">
+		<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0528/4895.html'>第十四周工作周报</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0521/4891.html'>第十三周工作周报</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0514/4888.html'>第十二周工作周报</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0507/4884.html'>第十一周工作周报</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0502/4883.html'>第十周工作周报</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0423/4878.html'>第九周工作周报</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0416/4874.html'>第八周工作周报</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0408/4869.html'>第七周工作周报</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0402/4864.html'>第六周工作周报</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/tongzhianpai/2018/0326/4859.html'>第五周工作周报</a></div>
+
+	</div>
+</div>
+<!-- 工作通知 End -->	
+			
+<!-- 学习园地 Begin-->					
+<div name="f" class="dis" onClick="register0410('tech',1);">
+<!-- 	 <div class="imgArea">
+    
+	</div> -->
+	<div class="textArea">
+		<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/xuexiyuandi/2010/0907/1360.html'>国家中长期教育改革和发展规划纲要（2010—</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/xuexiyuandi/2009/0225/161.html'>教师职业道德规范让教师的操守有规可依</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/xuexiyuandi/2009/0225/160.html'>教师唯一要做的，就是保护好学生的主动性</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/xuexiyuandi/2009/0219/128.html'>西方教师学生管理策略主题六：与家长的沟通</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/xuexiyuandi/2009/0219/127.html'>西方教师学生管理策略主题五：班会和班级活</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/xuexiyuandi/2009/0219/126.html'>西方教师学生管理策略主题四：师生互动与沟</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/xuexiyuandi/2009/0219/125.html'>西方教师学生管理策略主题三：纪律管理</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/xuexiyuandi/2009/0219/123.html'>西方教师学生管理策略主题二：家庭作业</a></div>
+
+	</div>
+</div>
+<!-- 学习园地 End -->							
+					
+<!-- 专业发展 Begin-->					
+<div name="f" class="undis" onClick="register0410('tech',2);">
+<!-- 	 <div class="imgArea">
+    
+	</div> -->
+	<div class="textArea">
+		<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/zhuanyefazhan/2009/0420/307.html'>09职评用表格</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/zhuanyefazhan/2009/0226/164.html'>参考：职称计算机报名事项</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/zhuanyefazhan/2009/0216/97.html'>参考：关于做好08年常州市中小学教师专业技</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/zhuanyefazhan/2009/0216/96.html'>参考：08年评审中高教师专业技术资格细化标</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/jiaoshifazhan/zhuanyefazhan/2009/0216/94.html'>参考：08年评审中一教师专业技术资格细化标</a></div>
+
+	</div>
+</div>
+<!-- 专业发展 End -->	
+					
+<div name="f" class="undis" onClick="register0410('car',2);">
+							<div class="imgArea">
+  <div class="imgLAreapic"><a href="/html/jiaoshifazhan/xiaobenpeixun/2009/0211/76.html" class="pimg"><img src='/uploads/090213/1_145705_1.jpg' border='0' width='105' height='55' alt='综合实践活动组开展培训活动'></a><br />
+<a href='/html/jiaoshifazhan/xiaobenpeixun/2009/0211/76.html'>综合实践活动组开</a>
+</div>
+    <div class="imgRArea">
+									<ul><li><a href='/html/jiaoshifazhan/xiaobenpeixun/2009/0211/76.html'>综合实践活动组开展培</a></li>
+
+
+								</ul>
+  </div>
+</div>
+<div class="textArea">
+    	
+</div>
+</div>
+
+				</div>
+				<div class="res_b"></div>
+			</div>
+			
+			<div class="proArea">
+				<div id="lady" class="fh">
+					<h4 class="s" name="d"><a href="/html/dangtuanqungong/dangjiangongzuo/">党建工作</a></h4>					                                  <h4 name="d"><a href="/html/dangtuanqungong/gonghui/">工会</a></h4>
+					<h4 name="d"><a href="/html/dangtuanqungong/tuanqingkuaibao/">团情快报</a></h4>
+      	<!--     <h4 name="d"><a href="/html/dangtuanqungong/guoqixiajianghua/">国旗下讲话</a></h4>-->
+
+<div align="right"><a href="/html/dangtuanqungong/">『党团群工』更多...</a></div>
+				</div>
+				<div id="ladyInfo">  
+
+	<!-- 党建工作 Begin-->			
+	<div name="f" class="dis" onClick="register0410('lady',1);">
+	<div class="imgArea">
+    <div class="imgLAreapic"><a href="/html/dangtuanqungong/dangjiangongzuo/2009/0330/270.html" class="pimg"><img src='/uploads/090330/15_090647_1_lit.jpg' border='0' width='105' height='55' alt='精心策划 周密部署'></a><br />
+<a href='/html/dangtuanqungong/dangjiangongzuo/2009/0330/270.html'>精心策划 周密部署</a>
+    </div>
+  	<div class="imgRArea111"><a href="/html/dangtuanqungong/dangjiangongzuo/2009/0330/270.html">北郊中学精心策划学习实践科学发展观活动 3月27日下午，北郊中学召开专题研讨会策划学习实践科学发展观活动...</a></div>
+
+	</div>
+	<div class="textArea">
+		<div style="width:350px;float:left"> ·<a href='/html/dangtuanqungong/dangjiangongzuo/2009/0330/270.html'>精心策划 周密部署</a></div>
+<div style="width:350px;float:left"> ·<a href='/html/dangtuanqungong/dangjiangongzuo/2009/0325/261.html'>初中分校党支部深入学习实践科学发展观活动的思考</a></div>
+
+	</div>
+</div>
+<!-- 党建工作 End -->		
+					
+<!--工会 Begin-->					
+<div name="f" class="undis" onClick="register0410('lady',2);">
+	<div class="imgArea">
+    <div class="imgLAreapic"><a href="/html/dangtuanqungong/gonghui/2017/1101/4768.html" class="pimg"><img src='http://www.czbj.js.cn/uploads/allimg/171101/1866_171101093044_1_lit.JPG' border='0' width='105' height='55' alt='九九重阳日 浓浓敬老情'></a><br />
+<a href='/html/dangtuanqungong/gonghui/2017/1101/4768.html'>九九重阳日 浓浓敬老</a>
+    </div>
+  	<div class="imgRArea111"><a href="/html/dangtuanqungong/gonghui/2017/1101/4768.html">九九重阳日 浓浓敬老情 岁岁重阳，今又重阳，不是春光，胜似春光。 10 月 26 日下午，为了庆祝九九重阳节暨...</a></div>
+
+	</div>
+	<div class="textArea">
+		<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/dangtuanqungong/gonghui/2017/1101/4768.html'>九九重阳日 浓浓敬老情</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/dangtuanqungong/gonghui/2017/1101/4767.html'>青蓝结对，共添锦上花</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/dangtuanqungong/gonghui/2013/0329/2753.html'>理解共同体，青蓝共成长</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/dangtuanqungong/gonghui/2012/1024/2506.html'>常州市北郊初级中学2012-2</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+    </td>
+    <td width='50%'>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+    </td>
+    <td width='50%'>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+    </td>
+    <td width='50%'>
+    </td>
+    </tr>
+    </table>
+
+	</div>
+</div>
+<!--工会 End -->						
+						
+
+  <!-- 国旗下讲话 Begin-->					
+<!-- <div name="f" class="undis" onClick="register0410('lady',3);">
+	<div class="imgArea">
+    <div class="imgLAreapic"><a href="/html/dangtuanqungong/guoqixiajianghua/2009/0213/89.html" class="pimg"><img src='/uploads/090213/1_150358_1.jpg' border='0' width='105' height='55' alt='第一周国旗下讲话'></a><br />
+<a href='/html/dangtuanqungong/guoqixiajianghua/2009/0213/89.html'>第一周国旗下讲话</a></div>	<div class="imgRArea111"><a href="/html/dangtuanqungong/guoqixiajianghua/2009/0213/89.html">亲爱的老师们、同学们： 在新学期上课的第一天，请允许我代表学校向大家拜个年，并怀着喜悦的心情欢迎大家...</a></div>
+
+	</div>
+	<div class="textArea">
+		<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/dangtuanqungong/guoqixiajianghua/2010/0908/1364.html'>第一周国旗下讲话</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/dangtuanqungong/guoqixiajianghua/2010/0223/1004.html'>第一周国旗下讲话</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/dangtuanqungong/guoqixiajianghua/2009/0505/339.html'>第十二周国旗下讲话</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/dangtuanqungong/guoqixiajianghua/2009/0407/297.html'>第八周国旗下讲话</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/dangtuanqungong/guoqixiajianghua/2009/0323/252.html'>第七周国旗下讲话</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/dangtuanqungong/guoqixiajianghua/2009/0317/242.html'>第六周国旗下讲话</a></div>
+    </td>
+    </tr>
+    </table>
+
+	</div>
+</div>	-->	
+<!-- 国旗下讲话 End -->	
+
+<!-- 学生会 Begin-->					
+<div name="f" class="undis" onClick="register0410('lady',3);">
+	<div class="imgArea">
+    <div class="imgLAreapic"><a href="/plus/view.php?aid=4379" class="pimg"><img src='/uploads/allimg/160322/15_160322130905_1-lp.jpg' border='0' width='105' height='55' alt=' 家长进校园,品味每一个生命绽放独特的魅力'></a><br />
+<a href='/plus/view.php?aid=4379'> 家长进校园,品味每一</a></div>	<div class="imgRArea111"><a href="/plus/view.php?aid=4379">让每一个生命绽放独特魅力！家长们走进校园，走进教室，亲身体验共同见证孩子们的精彩。 每一间教室、每一...</a></div>
+
+	</div>
+	<div class="textArea">
+		<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/plus/view.php?aid=4379'> 家长进校园,品味每一个生</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/dangtuanqungong/guangongwei/jiachangxuexiao/2016/0427/4438.html'>家长进校园,品味每一个生</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/plus/view.php?aid=4380'>陪伴成长，就是这么快乐</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/dangtuanqungong/guangongwei/xinwenkuaixun/2016/0414/4410.html'>舌战北郊，精彩绽放</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/dangtuanqungong/guangongwei/tongzhigonggao/2016/0413/4407.html'>2016关工委工作计划</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/dangtuanqungong/guangongwei/xinwenkuaixun/2016/0413/4406.html'>幸福像花儿一样</a></div>
+    </td>
+    </tr>
+    </table>
+
+	</div>
+</div> 
+<!-- 学生会 End -->
+					
+					
+
+				</div>
+				<div class="pro_b"></div>
+			</div>
+			<script type="text/javascript">formatArea("car","h4","d","div","f");formatArea("lady","h4","d","div","f");</script>
+		</div>
+
+		<div class="adArea">
+			<div class="adAreaA_t"></div>
+			<div id="adAreaE" onClick="register0410('adareae',1);">
+			
+
+				<h5>一月热点</h5>
+<a href='/html/xueshengfazhan/weishengjiankang/2018/0521/4893.html'>18年5月18日大扫除检查结果	</a><br>
+<a href='/html/jiaoshifazhan/yaodianxinwen/2018/0521/4892.html'>常州市北郊初级中学“中国学</a><br>
+<a href='/html/xueshengfazhan/weishengjiankang/2018/0507/4885.html'>18年5月2日-5月4日卫生常规</a><br>
+<a href='/html/jiaoshifazhan/tongzhianpai/2018/0528/4895.html'>第十四周工作周报</a><br>
+<a href='/html/xueshengfazhan/weishengjiankang/2018/0521/4894.html'>18年5月14日-5月18日卫生常</a><br>
+<a href='/html/xueshengfazhan/weishengjiankang/2018/0514/4889.html'>营养+运动，平衡促健康</a><br>
+<a href='/html/xueshengfazhan/weishengjiankang/2018/0528/4897.html'>世界无烟日宣传</a><br>
+<a href='/html/xueshengfazhan/weishengjiankang/2018/0514/4890.html'>18年5月7日-5月11日卫生常规</a><br>
+<a href='/html/xueshengfazhan/tongzhigonggao/2018/0510/4887.html'>2018年科技、体育、艺术特长</a><br>
+<a href='/html/jiaoshifazhan/tongzhianpai/2018/0521/4891.html'>第十三周工作周报</a><br>
+
+
+</div>
+	
+<div class="pro_b"></div>
+</div>
+
+	<div class="cArea">
+		<div class="txArea">
+
+			<div class="resArea">
+				<div id="edu" class="fh">
+					<h4 class="s" name="d"><a href="/html/tushufuwu/meiwenshoucang/">美文收藏</a></h4>
+          <h4 class="d" name="d"><a href="/html/tushufuwu/lunwendaohang/">论文导航</a></h4>
+         <div align="right"><a href="/html/tushufuwu/">『图书服务』更多...</a></div>
+				</div>
+				<div id="eduInfo">
+<!-- 美文收藏 Begin-->					
+<div name="f" class="dis" onClick="register0410('tech',1);">
+<!-- 	 <div class="imgArea">
+    
+	</div> -->
+	<div class="textArea">
+		<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/meiwenshoucang/2014/0514/3525.html'>素色流年，静守安然</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/meiwenshoucang/2014/0513/3522.html'>岁月静好，坦淡行之</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/meiwenshoucang/2014/0513/3521.html'>浅夏，盈一眸清凉，捻一指馨香</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/meiwenshoucang/2014/0513/3520.html'>告别春天</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/meiwenshoucang/2014/0512/3518.html'>五月风</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/meiwenshoucang/2014/0512/3517.html'>感恩母爱</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/meiwenshoucang/2014/0512/3516.html'>温情五月</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/meiwenshoucang/2014/0418/3472.html'>四月花语</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/meiwenshoucang/2014/0324/3439.html'>图书漂流，撒播书香，传播文化</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/meiwenshoucang/2014/0324/3438.html'>图书漂流，一段文明的奇妙之旅</a></div>
+
+	</div>
+</div>
+<!-- 美文收藏  End -->							
+					
+<!-- 论文导航 Begin-->					
+<div name="f" class="undis" onClick="register0410('tech',2);">
+<!-- 	 <div class="imgArea">
+    
+	</div> -->
+	<div class="textArea">
+		<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/lunwendaohang/2013/1211/3316.html'>教育论文写作的格式要求</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/lunwendaohang/2013/1209/3312.html'>论文提纲格式举例</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/lunwendaohang/2013/1209/3311.html'>论文格式6个组成部分</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/lunwendaohang/2013/1204/3267.html'>论文撰写中5个常见问题病因的诊断分析</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/lunwendaohang/2013/1204/3261.html'>中学教学论文写作指导</a></div>
+<div style="width:300px;float:left"> ·<a href='/html/tushufuwu/lunwendaohang/2013/1204/3255.html'>论文写作的关键</a></div>
+
+	</div>
+</div>
+<!-- 论文导航 End -->	
+		
+	</div>
+	<div class="edu_b"></div>
+</div>
+		
+			<div class="proArea">
+				<div id="comic" class="fh">
+					<h4 class="s" name="d"><a href="/html/houqinfuwu/">后勤服务</a></h4>
+<div align="right"><a href="/html/houqinfuwu/">『后勤服务』更多...</a></div>
+				</div>
+			
+			
+			<!-- 夏令营 Begin-->	
+	<div id="ladyInfo"> 		
+	<div name="f" class="dis" onClick="register0410('lady',1);">
+	<div class="imgArea">
+    <div class="imgLAreapic"><a href="/html/houqinfuwu/houqintongzhi/2017/0921/4741.html" class="pimg"><img src='/plus/img/addon-lp.gif' border='0' width='105' height='55' alt='常州市北郊初级中学实验室教学仪器询价公告'></a><br />
+<a href='/html/houqinfuwu/houqintongzhi/2017/0921/4741.html'>常州市北郊初级中学实</a>
+    </div>
+  	<div class="imgRArea111"><a href="/html/houqinfuwu/houqintongzhi/2017/0921/4741.html">常州市北郊初级中学实验室教学仪器询价公告 因教学需要现对常州市北郊初级中学实验室教学仪器公开询价，欢...</a></div>
+
+	</div>
+	<div class="textArea">
+		<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/houqinfuwu/houqintongzhi/2017/0930/4750.html'>明德实验中学采购学生电脑</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/houqinfuwu/houqintongzhi/2017/0927/4749.html'>明德实验中学采购学生机房</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/houqinfuwu/houqintongzhi/2017/0925/4745.html'>常州市明德实验中学采购学</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/houqinfuwu/houqintongzhi/2017/0924/4743.html'>常州市北郊初级中学物业管</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/houqinfuwu/houqintongzhi/2017/0921/4741.html'>常州市北郊初级中学实验室</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/houqinfuwu/houqintongzhi/2017/0914/4728.html'>常州市北郊初级中学物业管</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/houqinfuwu/guizhangzhidu/2016/0505/4447.html'>消 防 组 织 网 络 图</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/houqinfuwu/guizhangzhidu/2016/0505/4448.html'>消防安全重点部位及防火安</a></div>
+    </td>
+    </tr>
+<tr>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/houqinfuwu/guizhangzhidu/2015/0906/4133.html'>常州市北郊初级中学卫生管</a></div>
+    </td>
+    <td width='50%'>
+<div style="width:186px;float:left"> ·<a href='/html/houqinfuwu/guizhangzhidu/2015/0906/4132.html'>北郊初级中学消防管理制度</a></div>
+    </td>
+    </tr>
+    </table>
+
+	</div>
+</div>
+<!-- 夏令营 End -->			
+
+</div>
+</div>
+</div>
+
+<!--友情链接-->
+<div class="cl"></div>
+	<div class="flink"  onClick="register0410('footer',1);"> <div class="title"><dl><dt>友情链接：</dt><dd>more...</dd><dl></div>
+	<div class="flinkcon">
+	<li><a href='http://www.c20.org.cn' target='_blank'><img src='/uploads/flink/c20.jpg' width='88' height='31' border='0'></a> </li><li><a href='http://a.wuxizazhi.cnki.net/org/czbjcz' target='_blank'><img src='/uploads/flink/1301161451229675.jpg' width='88' height='31' border='0'></a> </li><li><a href='http://www.ec.js.edu.cn/' target='_blank'><img src='/uploads/flink/0902121334544716.jpg' width='88' height='31' border='0'></a> </li><li><a href='http://2007.czedu.gov.cn/knowledge/' target='_blank'><img src='/uploads/flink/0902121330458610.jpg' width='88' height='31' border='0'></a> </li><li><a href='http://jyjnew.czedu.gov.cn/jyj/index.aspx' target='_blank'><img src='/uploads/flink/0902121329415942.gif' width='88' height='31' border='0'></a> </li><li><a href='http://www.czedu.gov.cn/list_5_109.shtml' target='_blank'><img src='/uploads/flink/0902121328566100.gif' width='88' height='31' border='0'></a> </li><li><a href='http://www.qikan.com.cn/' target='_blank'><img src='/uploads/flink/0902121314389550.jpg' width='88' height='31' border='0'></a> </li><li><a href='http://www.czedu.com.cn' target='_blank'><img src='/uploads/flink/0902121306407260.gif' width='88' height='31' border='0'></a> </li>
+	</div>
+	</div>
+
+	<div class="footernew"  onClick="register0410('footer',1);">
+	常州市北郊初级中学<br />
+	地址：常州市通江南路125号,邮编：213002,电话0519-86634428<br>
+Copyright &copy; 2002 - 2009 All Rights Reserved<br>
+Best view on 1024*768,IE6.0+ <br><a href="http://www.miitbeian.gov.cn" target=_blank>苏ICP备14001775号</a>
+<br>
+<script type="text/javascript">document.write(unescape("%3Cspan id=_ideConac %3E%3C/span%3E%3Cscript src=http://dcs.conac.cn/js/11/180/0000/60359427/CA111800000603594270002.js type=text/javascript%3E%3C/script%3E"));</script><br>
+ <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>
+</div>
+
+<!--漂浮广告-->
+<DIV id=img1 style="Z-INDEX: 100; LEFT: 2px; WIDTH: 500px; POSITION: absolute; TOP: 43px; HEIGHT: 200px;
+ visibility: visible;"><a href="/uploads/flink/weixin.jpg" target="_blank"><img src="/uploads/flink/weixin.jpg" width="200" height="200" border="0"></a></DIV>
+<SCRIPT>
+var xPos = 300;
+var yPos = 200; 
+var step = 1;
+var delay = 30; 
+var height = 0;
+var Hoffset = 0;
+var Woffset = 0;
+var yon = 0;
+var xon = 0;
+var pause = true;
+var interval;
+img1.style.top = yPos;
+function changePos() 
+{
+	width = document.body.clientWidth;
+	height = document.body.clientHeight;
+	Hoffset = img1.offsetHeight;
+	Woffset = img1.offsetWidth;
+	img1.style.left = xPos + document.body.scrollLeft;
+	img1.style.top = yPos + document.body.scrollTop;
+	if (yon) 
+		{yPos = yPos + step;}
+	else 
+		{yPos = yPos - step;}
+	if (yPos < 0) 
+		{yon = 1;yPos = 0;}
+	if (yPos >= (height - Hoffset)) 
+		{yon = 0;yPos = (height - Hoffset);}
+	if (xon) 
+		{xPos = xPos + step;}
+	else 
+		{xPos = xPos - step;}
+	if (xPos < 0) 
+		{xon = 1;xPos = 0;}
+	if (xPos >= (width - Woffset)) 
+		{xon = 0;xPos = (width - Woffset);   }
+	}
+	
+	function start()
+	 {
+	 	img1.visibility = "visible";
+		interval = setInterval('changePos()', delay);
+	}
+	function pause_resume() 
+	{
+		if(pause) 
+		{
+			clearInterval(interval);
+			pause = false;}
+		else 
+		{
+			interval = setInterval('changePos()',delay);
+			pause = true; 
+			}
+		}
+	start();
+</SCRIPT>
+<!-- 漂浮广告 End -->	
+
+
+
+
+</body>
+</html>

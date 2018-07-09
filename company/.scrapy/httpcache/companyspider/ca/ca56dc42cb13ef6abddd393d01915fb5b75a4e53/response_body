@@ -1,0 +1,920 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+        进才中学 --
+	首  页
+    </title>
+
+    <link href="css/jquery.slideBox.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.slideBox.min.js" type="text/javascript"></script>
+
+    <script src="js/login.js" type="text/javascript"></script>
+
+    <script language="JavaScript" type="text/JavaScript" src="js/FlashPic.js"></script>
+
+    <script type="text/javascript" src="js/jquery.media.js"></script>
+
+    <script src="js/jquery.soChange.js" type="text/javascript"></script>
+
+    <script src="../../BasePlate/js/interface.js" language="javascript" type="text/javascript"></script>
+
+    <script src="../../BasePlate/js/tool.js" language="javascript" type="text/javascript"></script>
+    
+    <script src="../../js/BigInt.js" type="text/javascript"></script>
+    <script src="../../js/RSA.js" type="text/javascript"></script>
+    <script src="../../js/Barrett.js" type="text/javascript"></script>   
+
+    <link href="css/style.css?ver=20171201" type="text/css" rel="stylesheet" />
+
+<script>
+jQuery(function($){
+	$('#kt_2730013').slideBox({
+		duration : 0.3,//滚动持续时间，单位：秒
+		easing : 'linear',//swing,linear//滚动特效
+		delay : 5,//滚动延迟时间，单位：秒
+		hideClickBar : false,//不自动隐藏点选按键
+		clickBarRadius : 10,
+		width: 328,
+		height: 219
+	});
+});
+</script>
+
+    <!--[if lte IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a,button');
+    </script>
+<![endif]-->
+</head>
+<body onload="changeSubject(1);">
+    <div id="index">
+        <div class="top clear">
+            <div class="date" id="linkweb" style="width: 350px;">
+
+                <script type="text/javascript">
+                    setInterval("linkweb.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());", 1000);
+                </script>
+
+            </div>
+            <div class="utility" style="width: 550px;">
+                <ul class="topnav" style="width: 400px;">
+                    
+                            <li class="topnav_last" style="padding-top:3px;float:right;margin-right:1em;" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:GoodoNS="urn:WT">
+  <select name="select" id="select" onchange="if(this.value.length>0)window.open(this.value,'_blank');" class="fast_access" style="width:88px;color:#333;">
+    <option>--快速通道--<option value="JCBack/main.aspx" title="">我的工作平台</option><option value="http://www.baidu.com/" title="百度">--百度--</option></option>
+  </select>
+</li>
+                        
+                    <li style="float: right;"><a href="map.aspx">网站导航</a></li>
+                    <li style="float: right;"><a href="javascript:void(0);" class="login" id="login" style="display:none;">登录</a>
+                        <a href="javascript:void(0);" id="loginin" style="display:none;">
+                            
+                            欢迎您</a> <a href="javascript:void(0);" id="loginout" style="display:none;">【注销】</a></li>
+                </ul>
+                <div class="search_from">
+  <input type="text" class="searchtext" name="tbKeyword" value="" id="tbKeyword" style="color:White;">
+  <a href="javascript:void(0);" class="search_btn" onclick="window.location.href='search.aspx?Keyword='+tbKeyword.value;">
+  </a>
+</div>
+            </div>
+        </div>
+
+
+
+        <div class="banner">
+            <a href="javascript:void(0)" class="logo">
+  <img src="images/logo.png">
+</a>
+            <div class="login_box" style="display: none;">
+                <a href="javascript:void(0);" class="close"></a>
+                <form name="form_Login" method="post" action="index.aspx?SiteID=273&amp;SubjectID=273001" id="form_Login" onsubmit="return loginSubmitCheck()">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="e+9Ve+gd9nYBTar4moQc4cyLARK7qRp71Mjor6Af6MwGBwb2ldINbpLluTB/P1b7GCw4uAHjaCj0fPY+adgXMPeF3IEGG9J+oyaBBNI0GQ7rlj7pQ92CZzZ8WxG/0B95Nc+/aXXkJ8wkxYNH1yTwgLwqwMOxYp0lAtq8nf655hEIYzSgPSjv3IBkQHobHrail3sXM6fT2ovS6uz0L8R7YwriKA+eUwptW1w3P2cjlcFv+a3thAmPGftzwsbhYGmkRH+wvQ1wH66K+U6keBnX1dUexeSmOwn5opt21fZdBlW9bsYYRjTVGab2P+5N2IzogXEg4sD7eCOmi8S0lIZsfy86jRHwl77h8jTj08RB0UN3JhH4aIXdbyxkPey81IvyTry9k4emvR6D5sp2dGIGX56jtDDIJ3Dwy1tcjOiuNSAo9CHVbq5X8xER6pg1EwBXNy48EJ1koV1IY5qxhiV7b6zT5EH741BO+kDTq4Gpo6UKv2jk03yC/1BkOxPVgkoYzBmzPubiRXdJVGQqskPhj5FpcQt95K1UO12pDjno1zn9FUuFr6+l8rdqOJQZ0mlxTKnyTkD49zlTu1+agpP0sdwr2wgT8svTSfo37r+OgR+7lxRMuCwTcA5MNwwcSh579pdqWQ==" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C78E5817" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="4XoLyuBaOKLW9RG0NqKXDbE8p2e42VQBoOUeoztKOJKpO7yCI+iZOCF7KhrlB1FIY+eV+Qik4EF4UvVFlS0JXehwIXnQPjBMulOZAFaEIRANMH0j80yvcfkK1yI=" />
+</div>
+                <table width="236" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="51" height="29">
+                            用户名：
+                        </td>
+                        <td colspan="3">
+                            <input name="LoginID" id="LoginID" type="text" class="l_input" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="24">
+                            密&nbsp;&nbsp;&nbsp;&nbsp;码：
+                        </td>
+                        <td colspan="3">
+                            <input name="Password" type="password" id="Password" class="l_input" />
+			<input name="EnPassword" type="hidden"/>
+		          <span id="LoginKey" style="display:none;">235906710665127083735656</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="37" colspan="4">
+                                <span class="content" style="color:Red;"></span>
+                            <a href="javascript:void(0);">
+                                <input type="image" name="imgbtSubmit" id="imgbtSubmit" class="loginBtn" src="images/loginBtn.png" onclick="return LoginFormSubmit(this,LoginID,Password);" style="border-width:0px;" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                </form>
+                
+            </div>
+        </div>
+        <script language="JavaScript">
+			
+function Hidden(oTag)
+{
+    if(document.getElementById(oTag)!=null) document.getElementById(oTag).style.display="none";
+}
+function Visible(oTag)
+{
+    if(document.getElementById(oTag)!=null) document.getElementById(oTag).style.display="block";
+}
+
+		</script>
+<div class="nav clear">
+  <ul>
+    <li>
+      <a href="273001.htm">首  页</a>
+    </li>
+    <li onmouseover="Visible('subMenu_273002')" onmouseout="Hidden('subMenu_273002')">
+      <a href="273002.htm">学校概况</a>
+      <div class="col1" style="display:none;" id="subMenu_273002">
+        <ul>
+          <li>
+            <a href="2730007.htm">学校简介</a>
+          </li>
+          <li>
+            <a href="2730008.htm">校长寄语</a>
+          </li>
+          <li>
+            <a href="2730009.htm">校园环境</a>
+          </li>
+          <li>
+            <a href="2730010.htm">办学理念</a>
+          </li>
+          <li>
+            <a href="2730011.htm">学校荣誉</a>
+          </li>
+          <li>
+            <a href="2730002.htm">部门设置</a>
+          </li>
+          <li>
+            <a href="2730093.htm">进才校歌</a>
+          </li>
+          <li>
+            <a href="2730097.htm">进才校标</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li onmouseover="Visible('subMenu_2730026')" onmouseout="Hidden('subMenu_2730026')">
+      <a href="2730026.htm">教学科研</a>
+      <div class="col1" style="display:none;" id="subMenu_2730026">
+        <ul>
+          <li>
+            <a href="2730018.htm">师资建设</a>
+          </li>
+          <li>
+            <a href="2730019.htm">教育科研</a>
+          </li>
+          <li>
+            <a href="2730066.htm">集团办学</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li onmouseover="Visible('subMenu_2730082')" onmouseout="Hidden('subMenu_2730082')">
+      <a href="2730082.htm">德育探索</a>
+      <div class="col1" style="display:none;" id="subMenu_2730082">
+        <ul>
+          <li>
+            <a href="2730020.htm">德育课程</a>
+          </li>
+          <li>
+            <a href="2730022.htm">社团管理</a>
+          </li>
+          <li>
+            <a href="2730042.htm">心理教育</a>
+          </li>
+          <li>
+            <a href="2730044.htm">家校互动</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li onmouseover="Visible('subMenu_2730027')" onmouseout="Hidden('subMenu_2730027')">
+      <a href="2730027.htm">党旗飘飘</a>
+      <div class="col1" style="display:none;" id="subMenu_2730027">
+        <ul>
+          <li>
+            <a href="2730064.htm">党务指南</a>
+          </li>
+          <li>
+            <a href="2730065.htm">总支概况</a>
+          </li>
+          <li>
+            <a href="2730067.htm">党建动态</a>
+          </li>
+          <li>
+            <a href="2730069.htm">党务公开</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li onmouseover="Visible('subMenu_2730029')" onmouseout="Hidden('subMenu_2730029')">
+      <a href="2730029.htm">教工之家</a>
+      <div class="col1" style="display:none;" id="subMenu_2730029">
+        <ul>
+          <li>
+            <a href="2730070.htm">工会组织</a>
+          </li>
+          <li>
+            <a href="2730071.htm">教代会</a>
+          </li>
+          <li>
+            <a href="2730072.htm">维权工作</a>
+          </li>
+          <li>
+            <a href="2730074.htm">妇女工作</a>
+          </li>
+          <li>
+            <a href="2730073.htm">文体活动</a>
+          </li>
+          <li>
+            <a href="2730075.htm">帮困送暖</a>
+          </li>
+          <li>
+            <a href="2730076.htm">文明班组</a>
+          </li>
+          <li>
+            <a href="2730077.htm">退管会</a>
+          </li>
+          <li>
+            <a href="2730078.htm">宣传教育</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li onmouseover="Visible('subMenu_2730003')" onmouseout="Hidden('subMenu_2730003')">
+      <a href="2730003.htm">国际部</a>
+    </li>
+    <li onmouseover="Visible('subMenu_2730016')" onmouseout="Hidden('subMenu_2730016')">
+      <a href="2730016.htm">资源管理</a>
+      <div class="col1" style="display:none;" id="subMenu_2730016">
+        <ul>
+          <li>
+            <a href="2730049.htm">规章制度</a>
+          </li>
+          <li>
+            <a href="2730050.htm">服务指南</a>
+          </li>
+          <li>
+            <a href="2730053.htm">风采展示</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li onmouseover="Visible('subMenu_2730036')" onmouseout="Hidden('subMenu_2730036')">
+      <a href="2730036.htm">招生招聘</a>
+      <div class="col1" style="display:none;" id="subMenu_2730036">
+        <ul>
+          <li>
+            <a href="2730037.htm">招生信息</a>
+          </li>
+          <li>
+            <a href="2730038.htm">招聘信息</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li onmouseover="Visible('subMenu_2730096')" onmouseout="Hidden('subMenu_2730096')">
+      <a href="2730096.htm">招生信息</a>
+      <div class="col1" style="display:none;" id="subMenu_2730096">
+        <ul>
+          <li>
+            <a href="2730084.htm">招生公告</a>
+          </li>
+          <li>
+            <a href="2730085.htm">招生计划</a>
+          </li>
+          <li>
+            <a href="2730086.htm">提前录取</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+        
+                <div class="slider" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:GoodoNS="urn:WT">
+  <ul id="features_container">
+    <li>
+      <div class="change" style="position:absolute;display:none;">
+        <div style="padding-left:10px;z-index:5;">
+          <img src="/Upload/Content/273/636225946704111250_191_68341.jpg" class="animate-out" width="981" height="341">
+        </div>
+      </div>
+      <div class="change" style="position:absolute;display:none;">
+        <div style="padding-left:10px;z-index:5;">
+          <img src="/Upload/Content/273/636225946420830000_191_41911.jpg" class="animate-out" width="981" height="341">
+        </div>
+      </div>
+      <div class="change" style="position:absolute;display:none;">
+        <div style="padding-left:10px;z-index:5;">
+          <img src="/Upload/Content/273/636225945992705000_191_82413.jpg" class="animate-out" width="981" height="341">
+        </div>
+      </div>
+      <div class="change" style="position:absolute;display:none;">
+        <div style="padding-left:10px;z-index:5;">
+          <img src="/Upload/Content/273/636225945669580000_191_21738.jpg" class="animate-out" width="981" height="341">
+        </div>
+      </div>
+      <div class="change" style="position:absolute;display:none;">
+        <div style="padding-left:10px;z-index:5;">
+          <img src="/Upload/Content/273/636225945380517500_191_99125.jpg" class="animate-out" width="981" height="341">
+        </div>
+      </div>
+      <div class="change" style="position:absolute;display:none;">
+        <div style="padding-left:10px;z-index:5;">
+          <img src="/Upload/Content/273/2017517171732469.jpg" class="animate-out" width="981" height="341">
+        </div>
+      </div>
+      <div class="change" style="position:absolute;display:none;">
+        <div style="padding-left:10px;z-index:5;">
+          <img src="/Upload/Content/273/2017517171717406.jpg" class="animate-out" width="981" height="341">
+        </div>
+      </div>
+      <div class="change" style="position:absolute;display:none;">
+        <div style="padding-left:10px;z-index:5;">
+          <img src="/Upload/Content/273/201751717171828.jpg" class="animate-out" width="981" height="341">
+        </div>
+      </div>
+      <div class="change" style="position:absolute;display:none;">
+        <div style="padding-left:10px;z-index:5;">
+          <img src="/Upload/Content/273/2017517163536828.jpg" class="animate-out" width="981" height="341">
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<ul id="featurenav" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:GoodoNS="urn:WT">
+  <li>
+    <a href="2730004-2730000001027.htm">
+    </a>
+    <a href="2730004-2730000001026.htm">
+    </a>
+    <a href="2730004-2730000001025.htm">
+    </a>
+    <a href="2730004-2730000001024.htm">
+    </a>
+    <a href="2730004-2730000001023.htm">
+    </a>
+    <a href="2730004-2730000001118.htm">
+    </a>
+    <a href="2730004-2730000001117.htm">
+    </a>
+    <a href="2730004-2730000001116.htm">
+    </a>
+    <a href="2730004-2730000001115.htm">
+    </a>
+  </li>
+</ul>
+            
+        <div id="second_primary">
+            
+                    <div class="notice" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:GoodoNS="urn:WT">
+  <table width="260" border="0" cellspacing="0" cellpadding="0" class="notice_title">
+    <tr>
+      <td width="52">
+        <img src="images/Sound.png">
+      </td>
+      <td width="173">公告栏</td>
+      <td width="35">
+        <a href="2730001.htm">&gt;&gt;</a>
+      </td>
+    </tr>
+  </table>
+  <div class="notice_box">
+    <table width="260" border="0" cellspacing="0" cellpadding="0" class="notice_tab" style="margin-bottom: 10px;">
+      <tr>
+        <td width="70" rowspan="3" class="box_left">
+          <a href="2730001-2730000001418.htm">2018-04-21</a>
+        </td>
+        <td width="10" height="22">&nbsp;</td>
+        <td width="168">
+          <strong>
+            <a href="2730001-2730000001418.htm" title="2018年上海市高中推荐生招生计划">2018年上海市高中推荐生招生计划</a>
+          </strong>
+        </td>
+        <td width="21">&nbsp;</td>
+        <td>
+          <a href="2730001-2730000001418.htm">
+            <img src="images/jia.png">
+          </a>
+        </td>
+      </tr>
+    </table>
+    <table width="260" border="0" cellspacing="0" cellpadding="0" class="notice_tab" style="margin-bottom: 10px;">
+      <tr>
+        <td width="70" rowspan="3" class="box_left">
+          <a href="2730001-2730000001417.htm">2018-04-21</a>
+        </td>
+        <td width="10" height="22">&nbsp;</td>
+        <td width="168">
+          <strong>
+            <a href="2730001-2730000001417.htm" title="2018年上海市高中自荐生招生计划">2018年上海市高中自荐生招生计划</a>
+          </strong>
+        </td>
+        <td width="21">&nbsp;</td>
+        <td>
+          <a href="2730001-2730000001417.htm">
+            <img src="images/jia.png">
+          </a>
+        </td>
+      </tr>
+    </table>
+    <table width="260" border="0" cellspacing="0" cellpadding="0" class="notice_tab" style="margin-bottom: 10px;">
+      <tr>
+        <td width="70" rowspan="3" class="box_left">
+          <a href="2730001-2730000001415.htm">2018-04-21</a>
+        </td>
+        <td width="10" height="22">&nbsp;</td>
+        <td width="168">
+          <strong>
+            <a href="2730001-2730000001415.htm" title="2018年上海市进才中学“提前招生录取”方案">2018年上海市进才中学“提前招生录取”方案</a>
+          </strong>
+        </td>
+        <td width="21">&nbsp;</td>
+        <td>
+          <a href="2730001-2730000001415.htm">
+            <img src="images/jia.png">
+          </a>
+        </td>
+      </tr>
+    </table>
+    <table width="260" border="0" cellspacing="0" cellpadding="0" class="notice_tab" style="margin-bottom: 10px;">
+      <tr>
+        <td width="70" rowspan="3" class="box_left">
+          <a href="2730001-2730000001399.htm">2018-03-30</a>
+        </td>
+        <td width="10" height="22">&nbsp;</td>
+        <td width="168">
+          <strong>
+            <a href="2730001-2730000001399.htm" title="上海市进才中学2018年艺术特长生招生方案">上海市进才中学2018年艺术特长生招生方案</a>
+          </strong>
+        </td>
+        <td width="21">&nbsp;</td>
+        <td>
+          <a href="2730001-2730000001399.htm">
+            <img src="images/jia.png">
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+                
+            
+                    <div class="slideBox" id="kt_2730013" style="display:none;" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:GoodoNS="urn:WT"><ul class="items"><li><a href="2730014-2730000001442.htm" title="披荆斩棘 再获佳绩——进才创新教育又传喜讯" target="_blank"><img src="/Upload/Content/273/636631032989893712_191_47814.jpg" height="172px" width="226px"></a></li><li><a href="2730014-2730000001441.htm" title="喜报 | 我校荣获浦东新区青少年科技节多项嘉奖" target="_blank"><img src="/Upload/Content/273/636626067780249502_191_79668.jpg" height="172px" width="226px"></a></li><li><a href="2730014-2730000001439.htm" title="喜报 | 我校收获上海市青少年科技创新大赛各等级奖项" target="_blank"><img src="/Upload/Content/273/636622490211769835_191_68910.jpg" height="172px" width="226px"></a></li><li><a href="2730014-2730000001438.htm" title="喜报 | 我校学生荣获恒源祥文学之星二等奖" target="_blank"><img src="/Upload/Content/273/636622489890877271_191_6076.jpg" height="172px" width="226px"></a></li><li><a href="2730014-2730000001437.htm" title="台北市永春高中师生访问我校" target="_blank"><img src="/Upload/Content/273/636622489532076641_191_44049.jpg" height="172px" width="226px"></a></li><li><a href="2730014-2730000001436.htm" title="联合教研探新路 校际交流促发展" target="_blank"><img src="/Upload/Content/273/636621439304801545_191_76809.jpg" height="172px" width="226px"></a></li><li><a href="2730014-2730000001435.htm" title="上海市青少年科学创新实践工作站在进才中学实践点顺利开展开题汇报" target="_blank"><img src="/Upload/Content/273/636621438867532777_191_84000.jpg" height="172px" width="226px"></a></li><li><a href="2730014-2730000001434.htm" title="合唱团｜获奖喜讯&amp;大师课堂" target="_blank"><img src="/Upload/Content/273/636621438459592060_191_85811.jpg" height="172px" width="226px"></a></li></ul></div>
+                
+                    <div class="pic_level" id="kt_2730094" style="display:none;" name="sp" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:GoodoNS="urn:WT"><img src="/Upload/Content/273/636121286689593521_191_6059.jpg" class="pic_l" width="328" height="218"></div>
+                
+            <div class="new_level">
+                <script language="JavaScript" type="text/JavaScript" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:GoodoNS="urn:WT">
+			var nCount=2;
+			var oArray = new Array();
+			function changeSubject(oTag)
+			{
+			for(i=0;i < nCount;i++)
+			{
+			var id="mt_"+oArray[i];
+
+			if(i+1==oTag)
+			{
+			document.getElementById("mt_"+oArray[i]).className="";
+			document.getElementById("mt_"+oArray[i]).firstChild.className="levelH";
+			document.getElementById("vt_"+oArray[i]).style.display="";
+			document.getElementById("kt_"+oArray[i]).style.display="";
+			}
+			else
+			{
+			document.getElementById("mt_"+oArray[i]).className="";
+			document.getElementById("mt_"+oArray[i]).firstChild.className="";
+			document.getElementById("vt_"+oArray[i]).style.display="none";
+			document.getElementById("kt_"+oArray[i]).style.display="none";
+			}
+			}
+
+			}
+		</script><div class="level_bar" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:GoodoNS="urn:WT"><ul><script language="JavaScript" type="text/JavaScript">
+				oArray[0]="2730013";
+			</script><li id="mt_2730013" onmouseover="changeSubject(1);this.style.cursor='hand';"><a href="2730006.htm">新闻动态</a></li><script language="JavaScript" type="text/JavaScript">
+				oArray[1]="2730094";
+			</script><li id="mt_2730094" onmouseover="changeSubject(2);this.style.cursor='hand';"><a href="2730006.htm">视频焦点</a></li></ul></div>
+                
+                        <ul class="news" id="vt_2730013" style="display:none;" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:GoodoNS="urn:WT"><li onmouseover="this.className='news_Hover';" onmouseout="this.className='';"><span>2018-05-28</span><a href="2730014-2730000001442.htm">披荆斩棘 再获佳绩——进才创新教育又传喜讯</a></li><li onmouseover="this.className='news_Hover';" onmouseout="this.className='';"><span>2018-05-22</span><a href="2730014-2730000001441.htm">喜报 | 我校荣获浦东新区青少年科技节多项嘉奖</a></li><li onmouseover="this.className='news_Hover';" onmouseout="this.className='';"><span>2018-05-18</span><a href="2730014-2730000001439.htm">喜报 | 我校收获上海市青少年科技创新大赛各等级…</a></li><li onmouseover="this.className='news_Hover';" onmouseout="this.className='';"><span>2018-05-18</span><a href="2730014-2730000001438.htm">喜报 | 我校学生荣获恒源祥文学之星二等奖</a></li><li onmouseover="this.className='news_Hover';" onmouseout="this.className='';"><span>2018-05-18</span><a href="2730014-2730000001437.htm">台北市永春高中师生访问我校</a></li><li onmouseover="this.className='news_Hover';" onmouseout="this.className='';"><span>2018-05-17</span><a href="2730014-2730000001436.htm">联合教研探新路 校际交流促发展</a></li><li onmouseover="this.className='news_Hover';" onmouseout="this.className='';"><span>2018-05-17</span><a href="2730014-2730000001435.htm">上海市青少年科学创新实践工作站在进才中学实践点…</a></li><li style="background:none;"><span><a href="2730006.htm" target="_blank" style="color:#8b0504;">更多&gt;&gt;</a></span></li></ul>
+                    
+                        <ul class="news" id="vt_2730094" style="display:none;" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:GoodoNS="urn:WT"><li onmouseover="this.className='news_Hover';" onmouseout="this.className='';"><span>2016-10-15</span><a href="2730015-2730000000956.htm">【直播】全国高中名师公开课暨进才教育集团首届学…</a></li><li onmouseover="this.className='news_Hover';" onmouseout="this.className='';"><span>2015-03-16</span><a href="2730015-2730000000415.htm">2015“雅典杯”全国中学生模拟联合国大会</a></li><li onmouseover="this.className='news_Hover';" onmouseout="this.className='';"><span>2014-11-07</span><a href="2730015-2730000000359.htm">进才中学广播操航拍</a></li><li onmouseover="this.className='news_Hover';" onmouseout="this.className='';"><span>2014-02-21</span><a href="2730015-2730000000211.htm">微电影-选择相信（60MB）</a></li><li onmouseover="this.className='news_Hover';" onmouseout="this.className='';"><span>2014-02-21</span><a href="2730015-2730000000210.htm">微电影-选择相信（90MB）</a></li><li onmouseover="this.className='news_Hover';" onmouseout="this.className='';"><span>2014-02-21</span><a href="2730015-2730000000208.htm">2014“雅典杯”全国中学生模拟联合国大会开幕式视频</a></li><li onmouseover="this.className='news_Hover';" onmouseout="this.className='';"><span>2013-12-23</span><a href="2730015-2730000000163.htm">进才中学电视台新年祝福</a></li><li style="background:none;"><span><a href="2730006.htm" target="_blank" style="color:#8b0504;">更多&gt;&gt;</a></span></li></ul>
+                    
+            </div>
+        </div>
+        <div id="accordion">
+            <ul>
+                
+                        <li class="A_1">
+                            <div style="margin-top: 20px; margin-left: 2px;">
+                                <a href="javascript:void(0);" onclick="ShowSubject(2730056)">
+                                    主题活动
+                                </a>
+                            </div>
+                        </li>
+                        <li class="A_box A_box2" style="display: none;" id="li_2730056">
+                            
+                                    <div class="A_newBox boxL">
+</div>
+<div class="A_newBox box2">
+</div>
+                                
+                            <a href="2730056.htm" class="O_more"></a></li>
+                    
+                        <li class="A_2">
+                            <div style="margin-top: 20px; margin-left: 2px;">
+                                <a href="javascript:void(0);" onclick="ShowSubject(2730021)">
+                                    进才学子
+                                </a>
+                            </div>
+                        </li>
+                        <li class="A_box A_box2" style="display: none;" id="li_2730021">
+                            
+                                    <div class="A_newBox boxL">
+  <p class="A_Bar">
+    <span>优秀学生</span>
+  </p>
+  <ul class="Anews">
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2016-01-07</span>
+      <a href="2730046-2730000000725.htm">2014学年进才中学礼仪之星——张珺安</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2016-01-07</span>
+      <a href="2730046-2730000000724.htm">2014学年进才中学礼仪之星——唐诗蓓</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2016-01-07</span>
+      <a href="2730046-2730000000723.htm">2014学年进才中学礼仪之星——陈杰</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2016-01-07</span>
+      <a href="2730046-2730000000722.htm">2014学年进才中学礼仪之星——余诗棋</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2016-01-07</span>
+      <a href="2730046-2730000000721.htm">2014学年进才中学礼仪之星——汪央</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2016-01-07</span>
+      <a href="2730046-2730000000720.htm">2014学年进才中学礼仪之星——陈超颖</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2016-01-07</span>
+      <a href="2730046-2730000000719.htm">2014学年进才中学礼仪之星——朱佳霖</a>
+    </li>
+  </ul>
+</div>
+                                
+                                    <div class="A_newBox box2">
+  <p class="A_Bar">
+    <span>校园活动</span>
+  </p>
+  <ul class="Anews">
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2016-01-06</span>
+      <a href="2730040-2730000000710.htm">“启梦2016”进才中学元旦迎新活动之迎新晚会</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2016-01-06</span>
+      <a href="2730040-2730000000709.htm">“启梦2016”进才迎新活动之进才教育集团秀</a>
+    </li>
+  </ul>
+</div>
+                                
+                            <a href="2730021.htm" class="O_more"></a></li>
+                    
+                        <li class="A_3">
+                            <div style="margin-top: 20px; margin-left: 2px;">
+                                <a href="javascript:void(0);" onclick="ShowSubject(2730054)">
+                                    国际交流
+                                </a>
+                            </div>
+                        </li>
+                        <li class="A_box A_box2" style="display: none;" id="li_2730054">
+                            
+                                    <div class="A_newBox boxL">
+  <p class="A_Bar">
+    <span>AFS项目</span>
+  </p>
+  <ul class="Anews">
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2017-10-31</span>
+      <a href="2730083-2730000001266.htm">2018-2019年进才中学国际交流项目选拔要求</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2017-10-31</span>
+      <a href="2730083-2730000001265.htm">2017-2018年进才中学国际交流项目选拔要求</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2015-09-22</span>
+      <a href="2730083-2730000000503.htm">2016-2017年进才中学国际交流项目选拔要求</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2014-09-16</span>
+      <a href="2730083-2730000000319.htm">2015-2016年进才中学国际交流项目选拔要求</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2013-11-05</span>
+      <a href="2730083-2730000000108.htm">2014-2015年进才中学国际交流项目选拔要求</a>
+    </li>
+  </ul>
+</div>
+                                
+                                    <div class="A_newBox box2">
+  <p class="A_Bar">
+    <span>外事接待</span>
+  </p>
+  <ul class="Anews">
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2018-05-14</span>
+      <a href="2730089-2730000001433.htm">上海德威外籍人员子女学校师生访问我校</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2018-05-07</span>
+      <a href="2730089-2730000001430.htm">新西兰西湖男子中学师生访问我校</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2017-10-31</span>
+      <a href="2730089-2730000001269.htm">德国友好学校艾雷诺恩高级中学师生来校访问</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2017-10-31</span>
+      <a href="2730089-2730000001268.htm">美国Germantown Academy校长来访</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2017-10-31</span>
+      <a href="2730089-2730000001267.htm">搭建交流平台，共话中外教育</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2015-12-31</span>
+      <a href="2730089-2730000000696.htm">汉语桥-英国三大皇家属地中小学校长团来访</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2015-12-31</span>
+      <a href="2730089-2730000000695.htm">美国GA学校来访</a>
+    </li>
+  </ul>
+</div>
+                                
+                            <a href="2730081.htm" class="O_more"></a></li>
+                    
+                        <li class="A_4">
+                            <div style="margin-top: 20px; margin-left: 2px;">
+                                <a href="javascript:void(0);" onclick="ShowSubject(2730055)">
+                                    教学成果
+                                </a>
+                            </div>
+                        </li>
+                        <li class="A_box A_box2" style="display: none;" id="li_2730055">
+                            
+                                    <div class="A_newBox box2">
+  <p class="A_Bar">
+    <span>2016学年</span>
+  </p>
+  <ul class="Anews">
+  </ul>
+</div>
+                                
+                                    <div class="A_newBox boxL">
+  <p class="A_Bar">
+    <span>2015学年</span>
+  </p>
+  <ul class="Anews">
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2013-05-17</span>
+      <a href="2730061-2730000000060.htm">中国中学生作文大赛高中组比赛成绩揭晓</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2013-04-19</span>
+      <a href="2730061-2730000000061.htm">第八届“中国中学生作文大赛”上海市作文竞赛</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2012-12-12</span>
+      <a href="2730061-2730000000063.htm">第十一届上海市中学生古诗文阅读大赛</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2012-12-11</span>
+      <a href="2730061-2730000000064.htm">第十四届“创作杯”演讲邀请赛</a>
+    </li>
+  </ul>
+</div>
+                                
+                                    <div class="A_newBox boxL">
+  <p class="A_Bar">
+    <span>2014学年</span>
+  </p>
+  <ul class="Anews">
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2012-05-12</span>
+      <a href="2730062-2730000000070.htm">“新知杯”作文竞赛获奖喜报</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2012-05-12</span>
+      <a href="2730062-2730000000065.htm">我校学生入选亚太地区天文奥林匹克竞赛喜报</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2012-02-12</span>
+      <a href="2730062-2730000000071.htm">上海市第八届未来工程师大赛</a>
+    </li>
+    <li onmouseover="this.className='Anews_Hover';" onmouseout="this.className='';">
+      <span>2011-11-04</span>
+      <a href="2730062-2730000000072.htm">我校教师荣获2011年新区“知心教师”称号</a>
+    </li>
+  </ul>
+</div>
+                                
+                            <a href="2730055.htm" class="O_more"></a></li>
+                    
+            </ul>
+        </div>
+    </div>
+    <!--index end-->
+    <div id="bottom">
+        
+                <div class="YQ_link" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:GoodoNS="urn:WT">
+  <table width="1000" border="0" cellspacing="0" cellpadding="0" class="YQ_tab">
+    <tr>
+      <td width="23" height="28">&nbsp;</td>
+      <td width="51" rowspan="2">
+        <div align="center">
+          <img src="images/YQ.png">
+        </div>
+      </td>
+      <td width="89" rowspan="2" class="link_word">友情链接</td>
+      <td width="27" rowspan="2">
+      </td>
+      <td style="width:115px;">
+        <a href="http://www.jincai.sh.cn:82/jcwenming/">上海市文明校园创建</a>
+      </td>
+      <td style="width:115px;">
+        <a href="http://www.pudong-edu.sh.cn/">浦东教育信息网</a>
+      </td>
+      <td style="width:115px;">
+        <a href="http://www.jcid.cn">国际部</a>
+      </td>
+      <td style="width:115px;">
+        <a href="http://www.jincai.sh.cn:6666/po/info/info_list.jsp?categoryId=3106">进才简报</a>
+      </td>
+      <td style="width:115px;">
+        <a href="http://www.jincai.sh.cn:81/xingwei/">行为规范</a>
+      </td>
+      <td style="width:115px;">
+        <a href="http://www.hao123.com">生活常识</a>
+      </td>
+      <td style="width:115px;">
+        <a href="http://www.jincai.sh.cn:6666/po/info/info_list.jsp?categoryId=40">语言文字</a>
+      </td>
+    </tr>
+    <tr>
+      <td height="28">&nbsp;</td>
+      <td style="width:115px;">
+        <a href="http://www.626china.org">中国禁毒数字展览馆</a>
+      </td>
+      <td style="width:115px;">
+        <a href="http://www.shjdg.org">市禁毒科普教育馆</a>
+      </td>
+      <td style="width:115px;">
+        <a href="http://www.yf678.net">学生生涯规划</a>
+      </td>
+    </tr>
+  </table>
+</div>
+            
+        <div id="foot">
+  <div style="width: 300px; margin: 0 auto;">
+    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502100215" style="display: inline-block; text- decoration: none; height: 20px; line-height: 20px;">
+      <img src="images/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png" style="float: left;">
+      <p style="float: left; height: 20px; line-height: 20px; margin: 0px 0px 0px 5px; color: #939393;">沪公网安备31011502100215号</p>
+    </a>
+  </div>
+  <div style="width: 300px; margin: 0 auto;">沪ICP备11043675号-2</div>
+  <div style="width: 300px; margin: 0 auto;">
+    <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/02/032/0000/40674149/CA020320000406741490001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+  </div><p align="center"><span class="s3">上海市浦东新区杨高中路2788号 邮编：200135&nbsp;&nbsp; 电话总机：68541158<br />版权所有?进才中学 | 技术支持<span style="color:#ffcccc;"> </span><a href="http://www.goodo.com.cn" target="_blank"><span style="color:#c0c0c0;">上海鼎创</span></a></span></p></div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+	var IsOn = -1	
+	if(IsOn > 0)
+	{
+	   $("#login").hide();
+	   $("#loginin").show();
+	   $("#loginout").show();
+	}
+        else
+        {
+	   $("#login").show();
+	   $("#loginin").hide();
+	   $("#loginout").hide();
+	}
+
+        $("[class^='A_box']:eq(0)").show();
+
+    });
+
+
+
+
+    $('.change').soChange({
+        thumbObj: '#featurenav a',
+        //导航为数字形式，选择器指向包含数字的a对象 
+        thumbNowClass: 'active',
+        //自定义导航对象当前class为active 
+        changeTime: 4000//自定义切换时间为4000ms 
+    });
+
+
+    $(".close").click(function() {
+        $(".login_box").hide();
+    });
+
+    $(".login").click(function() {
+        $(".login_box").show();
+    });
+
+    $(".loginBtn").click(function() {
+        $(".login_box").hide();
+    });
+
+    function ShowSubject(SID) {
+        $("#li_" + SID).show().siblings("[id]").hide();
+    }
+
+
+    $("#loginout").click(function() {//登出
+        if (confirm("确实要退出吗？") == true) {
+            $.ajax({
+              url:"../../BasePlate/Interface/ICheckWS.asmx/LoginOut",
+              async:false,
+              dataType:"text",
+              success:function(data){
+                 window.location.href="273001.htm?RD="+Math.random(); 
+              }    
+            }); 
+            return true; 
+        }
+        return false;
+    })
+
+    var OpenType = "flash";
+    $("[name='sp']").find("img").attr("src", "")
+    $("[name='sp']").click(function() {
+
+        if ($(this).find("img").length > 0) {
+            var oUrl = $(this).find("img").attr("src");
+            if (oUrl.length > 0) {
+                oUrl = oUrl.substr(0, oUrl.length - 3) + "flv";
+
+                if (OpenType.length > 0) {
+                    if (OpenType != "flash") $.fn.media.mapFormat("flv", OpenType);
+                    $(this).media({
+                        width: "328",
+                        height: "218",
+                        bgColor: "#000000", // background color  
+                        autoplay: true,
+                        src: oUrl,
+                        params: { allowfullscreen: true, maintainaspect: true, controls: "ImageWindow,ControlPanel" }, // object params/embed attrs 最后一个不显示控制条，因为首页上控制条太占地方了
+                        flashvars: { autostart: true }
+                    });
+                }
+            }
+        }
+    });
+</script>
+

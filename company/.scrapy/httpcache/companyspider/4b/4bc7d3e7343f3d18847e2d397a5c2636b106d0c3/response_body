@@ -1,0 +1,2577 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name='360_ssp_verify' content='852906bc5f04527417f5bac2c9ef9a9c' />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+   <!-- <meta http-equiv="X-UA-Compatible" content="IE=6"/>-->
+    <title>鹿泉一中____首页</title>
+    <link href="Templets/css/style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #Layer1
+        {
+            position: absolute;
+            width: 883px;
+            height: 63px;
+            z-index: 1;
+            left: 11px;
+            top: 1248px;
+        }
+        .STYLE2
+        {
+            color: #FF0000;
+        }
+        .a02
+        {
+            color: #FFFFFF;
+        }
+        a:link
+        {
+            text-decoration: none;
+            color: #000000;
+        }
+        a:visited
+        {
+            text-decoration: none;
+        }
+        a:hover
+        {
+            text-decoration: none;
+            color: #FF0000;
+        }
+        a:active
+        {
+            text-decoration: none;
+        }
+        .STYLE4
+        {
+            font-size: 12px;
+        }
+        body
+        {
+            margin-left: 0px; font-size: 12px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+        .STYLE6
+        {
+            font-size: 16px;
+        }
+    </style>
+    <script language="javascript">
+        function showtb1(tname, n, select_n) {
+            for (i = 1; i <= n; i++) {
+                aa = document.getElementById(tname + i)
+                aa.style.display = "none"
+                if (select_n == i) {
+                    aa.style.display = "block"
+                }
+            }
+        }
+    </script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+  <script type="text/javascript">
+      //核心代码
+      function $(element) {
+          if (arguments.length > 1) {
+              for (var i = 0, elements = [], length = arguments.length; i < length; i++)
+                  elements.push($(arguments[i]));
+              return elements;
+          }
+          if (typeof element == "string")
+              return document.getElementById(element);
+          else
+              return element;
+      }
+      Function.prototype.bind = function (object) {
+          var method = this;
+          return function () {
+              method.apply(object, arguments);
+          }
+      }
+      var Class = {
+          create: function () {
+              return function () {
+                  this.initialize.apply(this, arguments);
+              }
+          }
+      }
+      Object.extend = function (destination, resource) {
+          for (var property in resource) {
+              destination[property] = resource[property];
+          }
+          return destination;
+      }
+      //对联广告类
+      var float_ad = Class.create();
+      float_ad.prototype = {
+          initialize: function (id, content, top, left, width) {
+              document.write('<div id=' + id + ' style="position:absolute;">' + content + '</div>');
+              this.id = $(id);
+              this.top = top;
+              if (!!left) {
+                  this.id.style.left = "8px";
+              } else {
+                  this.id.style.left = (document.documentElement.clientWidth - width - 8) + "px";
+                  window.onresize = function () {
+                      this.id.style.left = (document.documentElement.clientWidth - width - 8) + "px";
+                  } .bind(this);
+              }
+              this.id.style.top = top + "px";
+
+              this.interId = setInterval(this.scroll.bind(this), 20);
+          },
+          scroll: function () {
+              this.stmnStartPoint = parseInt(this.id.style.top, 10);
+              this.stmnEndPoint = document.documentElement.scrollTop + this.top;
+              if (navigator.userAgent.indexOf("Chrome") > 0) {
+                  this.stmnEndPoint = document.body.scrollTop + this.top;
+              }
+              if (this.stmnStartPoint != this.stmnEndPoint) {
+                  this.stmnScrollAmount = Math.ceil(Math.abs(this.stmnEndPoint - this.stmnStartPoint) / 15);
+                  this.id.style.top = parseInt(this.id.style.top, 10) + ((this.stmnEndPoint < this.stmnStartPoint) ? -this.stmnScrollAmount : this.stmnScrollAmount) + "px";
+              }
+          }
+      }
+      //漂浮广告类
+      var move_ad = Class.create();
+      move_ad.prototype = {
+          initialize: function (imgOption, initPosition, delay) {
+              this.imgOptions = Object.extend({ url: "", link: "", alt: "", width: 120, height: 120 }, imgOption || {});
+              this.adPosition = Object.extend({ left: 40, top: 120 }, initPosition || {});
+              this.delay = delay;
+              this.step = 1;
+              this.herizonFlag = true;
+              this.verticleFlag = true;
+              this.id = "ad_move_sg";
+              var vHtmlString = "<div id='" + this.id + "' style='position:absolute; left:" + this.adPosition.left + "px; top:" + this.adPosition.top + "px; width:" + this.imgOptions.width + "px;";
+              vHtmlString += " height:" + this.imgOptions.height + "px; z-index:10;'><a href='" + this.imgOptions.link + "' target='_blank' title='" + this.imgOptions.alt + "'><img src='" + this.imgOptions.url + "' width='" + this.imgOptions.width + "' height='" + this.imgOptions.height + "' style='border:none;' alt='" + this.imgOptions.alt + "' /></a></div>";
+              document.write(vHtmlString);
+              this.id = $(this.id);
+              this.intervalId = setInterval(this.scroll.bind(this), this.delay);
+              this.id.onmouseover = this.stop.bind(this);
+              this.id.onmouseout = this.start.bind(this);
+          },
+          scroll: function () {
+              var L = T = 0;
+              var B = document.documentElement.clientHeight - this.id.offsetHeight;
+              var R = document.documentElement.clientWidth - this.id.offsetWidth;
+              this.id.style.left = this.adPosition.left + document.documentElement.scrollLeft + "px";
+              this.id.style.top = this.adPosition.top + document.documentElement.scrollTop + "px";
+              this.adPosition.left = this.adPosition.left + this.step * (this.herizonFlag ? 1 : -1);
+              if (this.adPosition.left < L) { this.herizonFlag = true; this.adPosition.left = L; }
+              if (this.adPosition.left > R) { this.herizonFlag = false; this.adPosition.left = R; }
+              this.adPosition.top = this.adPosition.top + this.step * (this.verticleFlag ? 1 : -1);
+              if (this.adPosition.top <= T) { this.verticleFlag = true; this.adPosition.top = T; }
+              if (this.adPosition.top >= B) { this.verticleFlag = false; this.adPosition.top = B; }
+          },
+          stop: function () {
+              clearInterval(this.intervalId);
+          },
+          start: function () {
+              this.intervalId = setInterval(this.scroll.bind(this), this.delay);
+          }
+      }
+
+    </script>
+    <script>
+        new float_ad("ad_l", "<a href='/2015/index.aspx' target='_blank'></a>", 150, true, 150);
+        new float_ad("ad_r", "<a href='/2015/bm.aspx' target='_blank'></a>", 150, false, 200);
+    </script>
+</head>
+<script language="JavaScript" src="http://www.hblqyz.cn/FS_Inc/Prototype.js"></script>
+<!--Created Page at 2017-6-19 18:24:45,by Foosun.Cn,Foosun Content Management System 4.0.0(FoosunCMS)-->
+<style>
+.weiquan{ line-height:4px;}
+</style>
+<body>
+<!--图片漂浮广告代码开始-->
+<div id="www_qpsh_com" style="position:absolute">
+<!--链接地址-->
+<a href="http://www.hblqyz.cn/news/xuexiaoxinwen/2015/6/156111514165286.asp" _fcksavedurl="http://www.hblqyz.cn/news/xuexiaoxinwen/2015/6/156111514165286.asp"  target="_blank">
+<!--图片地址-->
+</a>
+</div>
+<script>
+    var x = 50, y = 60
+    var xin = true, yin = true
+    var step = 1
+    var delay = 10
+    var obj = document.getElementById("www_qpsh_com")
+    function floatwww_qpsh_com() {
+        var L = T = 0
+        //by www.qpsh.com
+        var R = document.body.clientWidth - obj.offsetWidth
+        var B = document.body.clientHeight - obj.offsetHeight
+        obj.style.left = x + document.body.scrollLeft
+        obj.style.top = y + document.body.scrollTop
+        x = x + step * (xin ? 1 : -1)
+        if (x < L) { xin = true; x = L }
+        if (x > R) { xin = false; x = R }
+        y = y + step * (yin ? 1 : -1)
+        if (y < T) { yin = true; y = T }
+        if (y > B) { yin = false; y = B }
+    }
+    var itl = setInterval("floatwww_qpsh_com()", delay)
+    obj.onmouseover = function () { clearInterval(itl) }
+    obj.onmouseout = function () { itl = setInterval("floatwww_qpsh_com()", delay) }
+</script>
+<!--图片漂浮广告代码结束-->
+ <center>
+    <!--<script language=javascript src="/Templets/js/float.js" type=text/javascript></script>
+<div id=top1><span id=ad1><a 
+href="/news/yizhongxiaoqing/index.asp" target=_blank><img border=0
+height=98 src="/Templets/img/yzxq.jpg" width=175></a>
+<div onmouseup=turnit(top1); style="font-size: 12px; cursor: hand" 
+align=right>关闭</div></span></div>
+<script type=text/javascript>   
+    var ad1 = new AdMove("ad1");
+    ad1.Run(); 
+</script>-->
+    <table width="1003" height="80" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                
+                <table width="1003" height="80" border="0" cellpadding="0" cellspacing="0" background="/Templets/20150704img/sylogo.jpg">
+                    <tr>
+                        <td valign="top">
+                            <table width="704" height="63" border="0" align="right" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td height="28" colspan="11">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="35">
+                                        <a href="/index.html">
+                                            <img src="/Templets/img/top1.jpg" width="72" height="35" border="0" /></a>
+                                    </td>
+                                    <td>
+                                        <a href="/news/xxjj1/Index.asp">
+                                            <img src="/Templets/img/top2.jpg" width="71" height="35" border="0" /></a>
+                                    </td>
+                                    <td>
+                                        <a href="/news/xuexiaoxinwen/Index.asp">
+                                            <img src="/Templets/img/top3.jpg" width="71" height="35" border="0" /></a>
+                                    </td>
+                                    <td>
+                                        <a href="/news/xuexiaoguanli/Index.asp">
+                                            <img src="/Templets/img/top4.jpg" width="71" height="35" border="0" /></a>
+                                    </td>
+                                    <td>
+                                        <a href="/news/jiaoxueyanjiu/Index.asp">
+                                            <img src="/Templets/img/top5.jpg" width="72" height="35" border="0" /></a>
+                                    </td>
+                                    <td>
+                                        <a href="/news/wenhuajianshe/Index.asp">
+                                            <img src="/Templets/img/top6.jpg" width="71" height="35" border="0" /></a>
+                                    </td>
+                                    <td>
+                                        <a href="/news/jiaoshifengcai/Index.asp">
+                                            <img src="/Templets/img/top7.jpg" width="71" height="35" border="0" /></a>
+                                    </td>
+                                    <td>
+                                        <a href="/news/rongyuxuezi/Index.asp">
+                                            <img src="/Templets/img/top8.jpg" width="71" height="35" border="0" /></a>
+                                    </td>
+                                    <td>
+                                        <a href="/news/banjizhuye/Index.asp">
+                                            <img src="/Templets/img/top9.jpg" width="71" height="35" border="0" /></a>
+                                    </td>
+                                    <td>
+                                        <a href="/news/yizhongxiaoqing/index.asp">
+                                            <img src="/Templets/img/top11.jpg" width="71" height="35" border="0" /></a>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="1003" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+        <tr>
+            <td width="289" height="615" valign="top">
+                <table width="289" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="54" colspan="2">
+                            <img src="/Templets/20150704img/zssh.jpg" width="289" height="54" />
+                        </td>
+                    </tr><tr><td height="160" colspan="2" valign="top"><div id="container"><a href="http://www.macromedia.com/go/getflashplayer">Get the Flash Player</a> to see this rotator.</div>
+                         <script type="text/javascript">
+var s1 = new SWFObject("swf/imagerotator.swf","rotator","289","159","7");
+	s1.addVariable("file","xml/xixi.xml");
+	s1.addVariable("transition","fade");
+	s1.addVariable("overstretch","false");
+	s1.addVariable('shownavigation','false');
+	s1.addVariable("width","289");
+	s1.addVariable("height","159");
+	s1.addVariable("linkfromdisplay","false");
+	s1.write("container");
+</script></td></tr></table>
+                <table width="289" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="4">
+                        </td>
+                    </tr>
+                </table>
+                <table width="289" height="155" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                       <td valign="top" background="/Templets/img/dlkoubg1.jpg" style=" padding-top:6px;">
+                     <table width="100%" height="35" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td height="32">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td width="80%" height="40" align="center" valign="top">
+                                        <table width="98%" height="20" border="0" align="left" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td width="12%" align="right">&nbsp;
+
+                                                </td>
+                                                <td width="88%" align="center">
+                                                   <!-- <div id="FS400_User_Login">登录模块加载中...</div>
+<script language="JavaScript" src="http://www.hblqyz.cn/User/m_UserLogin.asp?DisTF=0&DisType=vertical&spanid=FS400_User_Login"></script>
+-->
+                                                   <img width="125" height="105" src="/Templets/images/erweima.jpg" alt="二维码扫描" />
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="20%" align="center" valign="middle">
+                                        <a href="/User/Reg_service.asp" target="_blank"></a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <a href="/User/Reg_service.asp" target="_blank"></a>
+                        </td>
+                    </tr>
+                </table>
+                <table width="289" height="117" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <div style='display: none;'>
+                            <a href="/images/index.asp">chuangqisifu</a></div>
+                        <td>
+                            <img src="http://www.hblqyz.cn/Templets/img/dlkouxia.jpg" width="289" height="118" border="0" usemap="#Map2" />
+                            <map name="Map2" id="Map2">
+                                <area shape="rect" coords="174,20,197,95" href="/wangsbx/admin/index.asp" target="_blank" />
+                                <area shape="rect" coords="19,9,41,108" href="http://192.168.103.200:8080/school" target="_blank" />
+                                <area shape="rect" coords="99,9,120,106" href="http://192.168.103.252/muse" target="_blank" alt="对不起，本页面只供本校人员浏览" />
+                                <area shape="rect" coords="214,10,234,107" href="http://192.168.103.251" target="_blank" />
+                                <area shape="rect" coords="251,16,276,97" href="http://www.hebxxt.com/" target="_blank" />
+                                <area shape="rect" coords="55,22,80,104" href="/Templets/1.htm" target="_blank" alt="对不起，本页面只供本校人员浏览" />
+                                <area shape="rect" coords="134,8,157,112" href="/Templets/1.htm" target="_blank" alt="对不起，本页面只供本校人员浏览" />
+                            </map>
+                        </td>
+                    </tr>
+                </table>
+                <table width="289" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="4">
+                        </td>
+                    </tr>
+                </table>
+                <table width="289" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="33" valign="middle" background="/Templets/img/xxjjsh.jpg">
+                            <table width="289" height="20" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="26">
+                                    </td>
+                                    <td width="82" align="left" class="sybtzi">
+                                        学校简介
+                                    </td>
+                                    <td width="181" align="left" class="sybtziyw">
+                                        About us
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="156" valign="top" background="/Templets/img/xxjjbg.jpg">
+                            <table width="90%" height="173" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td height="158" align="left">
+                                        学校站在教育发展的战略制高点，做出了“文化立校”的战略决策。与山东大学“学校文化研究中心”合作，认真梳理学校传统文化，融入时代精神，建立了学校文化系统。“以制度奠基、以理念引领、以行为落实，以环境熏陶”的办学思想和策略正在逐步现实。<br />
+                                        精心、精细、精进，是学校的管理原则；校长办公会领导下的职能部门和年级条、块结合的管理体制。采用了以制度为基础、以文化为引领的管理策略。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="13" align="right">
+                                        <a href="http://www.hblqyz.cn/news/xuexiaojianjie/2008/11/0811181432395820.asp"><span class="STYLE2">详细..</span></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="/Templets/img/xxjjxia.jpg" width="289" height="11" />
+                        </td>
+                    </tr>
+                </table>
+                <table width="289" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="4">
+                        </td>
+                    </tr>
+                </table>
+                <table width="289" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="33" valign="middle" background="/Templets/img/xxjjsh.jpg">
+                            <table width="289" height="20" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="26">
+                                    </td>
+                                    <td width="82" align="left" class="sybtzi">
+                                        对外交流
+                                    </td>
+                                    <td width="181" align="left" class="sybtziyw">
+                                        Exchange
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="172" valign="top" background="/Templets/img/xxjjbg.jpg">
+                            <table width="289" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td width="22" height="170">
+                                    </td>
+                                    <td width="259" valign="top">
+                                        <img src="/Templets/img/dwjltu.jpg" width="261" height="179" border="0" usemap="#Map3" />
+                                        <map name="Map3" id="Map3">
+                                            <area shape="rect" coords="122,33,216,59" href="/isx/index.asp" target="_blank" />
+                                            <area shape="rect" coords="132,120,227,150" href="mailto:lqyzmiss_lyx@163.com" target="_blank" />
+                                            <area shape="rect" coords="134,74,228,102" href="/bm/index+.asp" target="_blank" />
+                                        </map>
+                                    </td>
+                                    <td width="10">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="/Templets/img/xxjjxia.jpg" width="289" height="11" />
+                        </td>
+                    </tr>
+                </table>
+                <table width="289" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="4">
+                        </td>
+                    </tr>
+                </table>
+                <table width="289" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <div style="position: absolute; top: -18px; left: -18px;">
+                        </div>
+                        <td height="33" valign="middle" background="/Templets/img/xxjjsh.jpg">
+                            <table width="289" height="20" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="26">
+                                    </td>
+                                    <td width="82" align="left" class="sybtzi">
+                                        文化建设
+                                    </td>
+                                    <td width="181" align="left" class="sybtziyw">
+                                        Culture
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" background="/Templets/img/xxjjbg.jpg">
+                            <table width="289" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td width="32" height="170">
+                                    </td>
+                                    <td width="246" height="182" valign="top" background="/Templets/img/whjstu.jpg">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td height="103">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td width="8%" height="70">
+                                                </td>
+                                                <td width="88%" align="left" valign="top">
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td>
+                                                                <table width="100%" height="20" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td width="23" align="right">
+                                                                            <img src="/Templets/img/whjffh.jpg" width="21" height="21" />
+                                                                        </td>
+                                                                        <td width="4">
+                                                                        </td>
+                                                                        <td width="87" class="STYLE4">
+                                                                            <a href="/news/wenhualinianxitong/Index.asp">文化/理念系统</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td>
+                                                                <table width="100%" height="20" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td width="23" align="right">
+                                                                            <img src="/Templets/img/whjffh.jpg" width="21" height="21" />
+                                                                        </td>
+                                                                        <td width="4">
+                                                                        </td>
+                                                                        <td width="87">
+                                                                            <a href="/news/xuexiaowenzhai/Index.asp">学校文摘</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td>
+                                                                <table width="100%" height="20" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td width="23" align="right">
+                                                                            <img src="/Templets/img/whjffh.jpg" width="21" height="21" />
+                                                                        </td>
+                                                                        <td width="4">
+                                                                        </td>
+                                                                        <td width="87">
+                                                                            <a href="/news/yizhongbao/Index.asp">鹿泉一中报</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td>
+                                                                <table width="100%" height="20" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td width="23" align="right">
+                                                                            <img src="/Templets/img/whjffh.jpg" width="21" height="21" />
+                                                                        </td>
+                                                                        <td width="4">
+                                                                        </td>
+                                                                        <td width="87">
+                                                                            <a href="/news/wenhuaxiliecongshu/Index.asp">文化系列丛书</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td>
+                                                                <table width="100%" height="20" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td width="23" align="right">
+                                                                            <img src="/Templets/img/whjffh.jpg" width="21" height="21" />
+                                                                        </td>
+                                                                        <td width="4">
+                                                                        </td>
+                                                                        <td width="87">
+                                                                            <a href="/news/shiyiwuguihua/Index.asp">十一五规划</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td>
+                                                                <table width="100%" height="20" border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td width="23" align="right">
+                                                                            <img src="/Templets/img/whjffh.jpg" width="21" height="21" />
+                                                                        </td>
+                                                                        <td width="4">
+                                                                        </td>
+                                                                        <td width="87">
+                                                                            <a href="/news/dianzizz/Index.asp" target="_blank">一中电子杂志 </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="4%">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="15">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="/Templets/img/xxjjxia.jpg" width="289" height="11" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="10" valign="top">
+                <table width="10" height="14" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <img src="/Templets/img/xiaotu.jpg" width="10" height="14" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <div style="position: absolute; top: -19px; left: -19px;">
+            </div>
+            <td width="768" rowspan="2" valign="top">
+                <table width="100%" height="14" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+                <table width="706" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="585" height="607" valign="top">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td width="375">
+                                        <table width="368" height="20" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td width="67" valign="bottom" class="sybtzi">
+                                                    公告通知
+                                                </td>
+                                                <td width="45" valign="bottom">
+                                                    <span class="sybtziyw">NOTICE</span>
+                                                </td>
+                                                <td width="212">
+                                                </td>
+                                                <td width="40" align="left" valign="bottom">
+                                                    <a href="http://www.hblqyz.cn/news/gonggaotongzhi/Index.asp" target="_blank"><span class="STYLE2">+MORE</span></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="368" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td height="5" valign="bottom">
+                                                    <img src="/Templets/img/NEWSXIAN.jpg" width="368" height="2" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="368" height="148" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td valign="top" background="/Templets/img/GONGGAOBG.jpg">
+                                                    <table width="368" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td height="5">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+   <tr><td>
+
+<table class="weiquan" height="23" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+	
+<tbody>
+		
+<tr>
+			
+<td align="middle" width="6%">
+				<img height="9" alt="" src="http://www.hblqyz.cn/Files/FH.gif" width="9" border="0" /> </td>
+			
+<td width="74%">
+				
+<p align="left"><a href="/news/gonggaotongzhi/2013/10/131023211347905.asp" target="_blank"><font color="#FF0000"><strong>更多一中消息或动态，请关注官方微信公众平台</strong></font></a></p></td>
+		</tr>
+	</tbody>
+</table></td></tr>
+   <tr><td>
+
+<table class="weiquan" height="23" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+	
+<tbody>
+		
+<tr>
+			
+<td align="middle" width="6%">
+				<img height="9" alt="" src="http://www.hblqyz.cn/Files/FH.gif" width="9" border="0" /> </td>
+			
+<td width="74%">
+				
+<p align="left"><a href="http://mp.weixin.qq.com/s/AGU6BeX4zyAjHIOGm_UL-w" target="_blank">关于举办首届“风景这边独好-校园之春”摄影活动的通知</a></p></td>
+		</tr>
+	</tbody>
+</table></td></tr>
+   <tr><td>
+
+<table class="weiquan" height="23" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+	
+<tbody>
+		
+<tr>
+			
+<td align="middle" width="6%">
+				<img height="9" alt="" src="http://www.hblqyz.cn/Files/FH.gif" width="9" border="0" /> </td>
+			
+<td width="74%">
+				
+<p align="left"><a href="http://mp.weixin.qq.com/s/-5019eh8qOpkR8A-C9qs9Q" target="_blank">2016首届草原读书节暨第八届全国聊书会</a></p></td>
+		</tr>
+	</tbody>
+</table></td></tr>
+   <tr><td>
+
+<table class="weiquan" height="23" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+	
+<tbody>
+		
+<tr>
+			
+<td align="middle" width="6%">
+				<img height="9" alt="" src="http://www.hblqyz.cn/Files/FH.gif" width="9" border="0" /> </td>
+			
+<td width="74%">
+				
+<p align="left"><a href="/news/gonggaotongzhi/2016/2/162294951356.asp" target="_blank">关于进一步倡导教师阅读、提升教师专业化水平</a></p></td>
+		</tr>
+	</tbody>
+</table></td></tr>
+   <tr><td>
+
+<table class="weiquan" height="23" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+	
+<tbody>
+		
+<tr>
+			
+<td align="middle" width="6%">
+				<img height="9" alt="" src="http://www.hblqyz.cn/Files/FH.gif" width="9" border="0" /> </td>
+			
+<td width="74%">
+				
+<p align="left"><a href="/news/gonggaotongzhi/2015/11/151121726459460.asp" target="_blank">2014—2015学年评优评先结果</a></p></td>
+		</tr>
+	</tbody>
+</table></td></tr>
+   <tr><td>
+
+<table class="weiquan" height="23" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+	
+<tbody>
+		
+<tr>
+			
+<td align="middle" width="6%">
+				<img height="9" alt="" src="http://www.hblqyz.cn/Files/FH.gif" width="9" border="0" /> </td>
+			
+<td width="74%">
+				
+<p align="left"><a href="/news/gonggaotongzhi/2015/10/15102282087408.asp" target="_blank">【真实的鹿泉一中系列报道（一）】鹿泉一中的课堂生态怎么样</a></p></td>
+		</tr>
+	</tbody>
+</table></td></tr></table>
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="210">
+                                        <table width="204" height="169" border="0" cellpadding="0" cellspacing="0" background="/Templets/img/XL.jpg">
+                                            <tr>
+                                                <td valign="top">
+                                                  <a href="http://www.hblqyz.cn/news/shuangchuang/Index.asp"><img src="../images/lan.jpg"> </a>
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="582" height="28" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td background="/Templets/img/SOUSUOBG.gif">
+                                        <table width="582" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td width="122" align="right">
+                                                    <img src="/Templets/img/SOUSOU.gif" width="64" height="26" />
+                                                </td>
+                                                <td width="460" align="center">
+                                                    <table width="100%"><form action="http://www.hblqyz.cn/Search.html" id="SearchForm" name="SearchForm" method="get"><tr><td><input name="SubSys" type="hidden" id="SubSys" value="NS" /><input name="Keyword" type="text" id="Keyword" size="15" /> <select name="s_type" id="s_type">
+<option value="title" selected="selected">标题</option>
+<option value="stitle">副标题</option>
+<option value="content">全文</option>
+<option value="author">作者</option>
+<option value="keyword">关键字</option>
+<option value="NaviContent">导航</option>
+<option value="source">来源</option>
+</select>
+<select name="ClassId" id="ClassId"><option value="">不指定栏目</option>
+<option value="0FAK05CIGI0J1GA">┝双创内容</option>
+<option value="1477EH502AA96C5">┝┉┉校园环境</option>
+<option value="8FK44H5C91I1D67">┝┉┉校园文化</option>
+<option value="ED4F3G942I9AGBA">┝┉┉活动阵地</option>
+<option value="DD8B8K0K9F10I4E">┝┉┉思想道德教育</option>
+<option value="IE385KIA6HF4G4B">┝┉┉教师队伍</option>
+<option value="JKHI5CDG119C3B2">┝┉┉领导班子</option>
+
+<option value="IE04A23JDA218CD">┝人民教育石家庄实验学校</option>
+<option value="6FHJ3J2EB085A37">┝┉┉实施方案</option>
+
+<option value="44GEFAH4I38IC20">┝京津冀教育协同发展</option>
+
+<option value="BGC3KE47CD8FFD4">┝创先争优</option>
+<option value="BFH3IA71G07C144">┝┉┉图文信息</option>
+<option value="8A9B023E11CBJ48">┝┉┉头条新闻</option>
+<option value="2324FIEI2CIAI27">┝┉┉典型推介</option>
+<option value="9A24I0ABC10C35E">┝┉┉特色活动</option>
+<option value="2AJ92BJ5CCC132C">┝┉┉学习材料</option>
+<option value="810CBE85A5AC8FC">┝┉┉实施方案</option>
+<option value="E54D4KAIF3219BG">┝┉┉信息公告</option>
+
+<option value="IKA0H3K7GG0I2J2">┝一中校庆</option>
+<option value="D078HEG2HA93K96">┝┉┉校志</option>
+<option value="H18F796F6315F2H">┝┉┉旧貌新颜</option>
+<option value="2J7269J4J00F8I1">┝┉┉校友风采</option>
+<option value="F75EH3043CC43H9">┝┉┉校庆贺词</option>
+<option value="I1G3KIAIHFHE86E">┝┉┉一中荣光</option>
+<option value="CHID681D09AG6D7">┝┉┉校庆捐赠</option>
+<option value="F125BE83DGJ646J">┝┉┉校庆视频</option>
+<option value="JHD346D6JIK4BBG">┝┉┉校友心声</option>
+<option value="A0E58449I8B3D4D">┝┉┉校庆动态</option>
+
+<option value="1500J23H0I5HA2C">┝科学发展观</option>
+
+<option value="75BK75D9J05748C">┝早操</option>
+
+<option value="12F2H15CDA20C21">┝第一期</option>
+
+<option value="2CFJ19KG44667F1">┝艺术动向</option>
+
+<option value="11K3C70B06FHJB6">┝学校采风</option>
+
+<option value="EBF113H7JFE5IJ9">┝联系我们</option>
+
+<option value="8A703KG37E625KG">┝法律声明</option>
+
+<option value="KGJ322G025J1H1G">┝青春箴言</option>
+
+<option value="AB50DI3HJ699HA6">┝校历</option>
+
+<option value="229E1G3G46H1F8F">┝公告通知</option>
+
+<option value="5G6D8HGB2DD3I1B">┝班级主页</option>
+<option value="0E07II625KCF42B">┝┉┉高三主页</option>
+<option value="JJ1GIH4I5K8G7EC">┝┉┉高二主页</option>
+<option value="H3CEH0HA0BHJCH6">┝┉┉高一主页</option>
+
+<option value="E8C62DAG46IJ4KK">┝荣誉学子</option>
+
+<option value="9J9BH7FJ1C92KD6">┝教师频道</option>
+<option value="41BC1D0I11DG85C">┝┉┉校友风采</option>
+<option value="3EE5517G8J91716">┝┉┉教师风采</option>
+
+<option value="754E33069KD89AI">┝文化建设</option>
+<option value="AB108831G6H5CB3">┝┉┉一中电子杂志</option>
+<option value="62DGG5I7CH9I9K3">┝┉┉十一五规划</option>
+<option value="2BF6F60FHJC5GIG">┝┉┉文化系列丛书</option>
+<option value="64I36HEK7BIDHKF">┝┉┉鹿泉一中报</option>
+<option value="BBFJE8E2654D28A">┝┉┉学校文摘</option>
+<option value="BA6795DB7B284EF">┝┉┉┉物理之光</option>
+<option value="5GKI8KJ4HD82DK7">┝┉┉┉人物/楷模</option>
+<option value="8EA8AD0G98GBAGA">┝┉┉┉教育/探索</option>
+<option value="AJK9II64AA364CB">┝┉┉文化/理念系统</option>
+
+<option value="5245IB7FC00HD7I">┝教学研究</option>
+<option value="I5E295DDA603H81">┝┉┉心理健康</option>
+<option value="36ED2B4I832I79I">┝┉┉┉互动空间</option>
+<option value="C2I5K05H4GHH41B">┝┉┉┉放松吧</option>
+<option value="8AA243D767J5BF5">┝┉┉┉感悟人生</option>
+<option value="J8933C05F7B943F">┝┉┉┉回音壁</option>
+<option value="2KKGBFH0H8F1C77">┝┉┉┉心灵方舟</option>
+<option value="H6ED4430JB047AE">┝┉┉┉心理QQ</option>
+<option value="2FE2DAFHB82F24B">┝┉┉信息技术</option>
+<option value="3C41KEB7CFE2HHA">┝┉┉┉教学反思</option>
+<option value="588DI2HBBKD7DA2">┝┉┉┉技术园地</option>
+<option value="CBHI8ACJG846215">┝┉┉┉教学研究</option>
+<option value="A15964AJ63KG509">┝┉┉┉教学课件</option>
+<option value="1DB808K5HHKBC6C">┝┉┉┉会考专题</option>
+<option value="3EF0A217H2992JK">┝┉┉┉学案</option>
+<option value="J0CC2K8911A9B7E">┝┉┉┉最新动态</option>
+<option value="KA1B678192FBG3K">┝┉┉体育组</option>
+<option value="34BCKKBB5IK58IH">┝┉┉┉身体档案</option>
+<option value="2G7A4C116FAA1D8">┝┉┉┉体育科研</option>
+<option value="IFEFE8IH6J3G9G3">┝┉┉┉教师健身</option>
+<option value="644748FAH2AJ9AJ">┝┉┉┉课外活动</option>
+<option value="D1KJ0KA0AJAI0DH">┝┉┉┉课余训练</option>
+<option value="8FHK2E4B7AB5340">┝┉┉┉课堂教学</option>
+<option value="3E8J5A38F932B47">┝┉┉┉教师介绍</option>
+<option value="F2B2DBA1C1E364J">┝┉┉┉最新动态</option>
+<option value="HIEFCF9AAFA5988">┝┉┉艺术组</option>
+<option value="I4J59105JDDD55H">┝┉┉┉教研动态</option>
+<option value="24I6CG7CFIJDC9G">┝┉┉┉艺术动向</option>
+<option value="E99G65I2JE4ABG4">┝┉┉┉教研、原创</option>
+<option value="77FHB6CCEJ17KGC">┝┉┉┉教学探索</option>
+<option value="F069FD3243J2E92">┝┉┉┉名曲欣赏</option>
+<option value="ABADIH5CA027GIB">┝┉┉┉学案、课件</option>
+<option value="45A0AJ50IHGEAD9">┝┉┉┉音乐名家</option>
+<option value="4GAC55G09CKD1A8">┝┉┉┉名画赏析</option>
+<option value="0G441J46KI8FK9B">┝┉┉┉师生画廊</option>
+<option value="DCII29G2DC79H8G">┝┉┉┉作品欣赏</option>
+<option value="36GIFIAF5J90F01">┝┉┉┉教学活动</option>
+<option value="2HJBB3CG43J3CE8">┝┉┉政治组</option>
+<option value="EEKE7FK7653D917">┝┉┉┉学科资源</option>
+<option value="4JH8798AJ5F3K62">┝┉┉┉学科课件</option>
+<option value="F130EK7IE35E02F">┝┉┉┉教学反思</option>
+<option value="DA4A2JJJAIC7KBJ">┝┉┉┉学法指导</option>
+<option value="48DJ0H693CCK47E">┝┉┉┉学案</option>
+<option value="4H58AEB05D73BG5">┝┉┉┉教研动态</option>
+<option value="HDC3H83J59EJ2IF">┝┉┉┉高考研究</option>
+<option value="G0KB2CI1J0K26C5">┝┉┉┉同步练习题</option>
+<option value="309I1J858IH4J0A">┝┉┉┉教学试题</option>
+<option value="DB4AD24F61DEI0G">┝┉┉┉时事透视</option>
+<option value="HKF82D6JK263I27">┝┉┉┉时事新闻</option>
+<option value="GD4CFC5K3BJA7J1">┝┉┉地理组</option>
+<option value="725ICD35E2H40B6">┝┉┉┉学科资源</option>
+<option value="69G01A076A1244F">┝┉┉┉学科课件</option>
+<option value="HEA2IGFBGGECJHA">┝┉┉┉教学反思</option>
+<option value="551GK47D6DIIEG0">┝┉┉┉学法指导</option>
+<option value="K9A521H1C1E51JG">┝┉┉┉学案</option>
+<option value="IBGEJA38DHKEI55">┝┉┉┉教研动态</option>
+<option value="KGEAJJ83K7K3IF7">┝┉┉┉学科资料</option>
+<option value="G8F79713K60120A">┝┉┉┉学科史话</option>
+<option value="EBD996C99D7I3H8">┝┉┉┉竞赛</option>
+<option value="K422GA1DIAF3009">┝┉┉┉课堂实录</option>
+<option value="4EIJBB653HIJJB2">┝┉┉┉习题</option>
+<option value="998I28GB035H5F2">┝┉┉历史组</option>
+<option value="K7JFA8A4B554255">┝┉┉┉学科资源</option>
+<option value="IE390EGJ2AF4H2K">┝┉┉┉学科课件</option>
+<option value="1827J7I92F11DHG">┝┉┉┉教学反思</option>
+<option value="AI385HFF913A9C8">┝┉┉┉学法指导</option>
+<option value="8H71F2I9GGK4DC6">┝┉┉┉学案</option>
+<option value="F9GE268D3C7BBG7">┝┉┉┉教研动态</option>
+<option value="4H2BIH33J306AFJ">┝┉┉┉学科资料</option>
+<option value="K0442DA1774EDH6">┝┉┉┉历史典故</option>
+<option value="63CC48K531GC424">┝┉┉┉习题</option>
+<option value="I0I0K042JK9772I">┝┉┉生物组</option>
+<option value="5BF7E03CD7G49I9">┝┉┉┉学科资源</option>
+<option value="GJHAK15FHFHA704">┝┉┉┉学科课件</option>
+<option value="6D509K3JA26J4K3">┝┉┉┉教学反思</option>
+<option value="KJKAAG0CCB2DJ5K">┝┉┉┉学法指导</option>
+<option value="D783B1H25K8D3JE">┝┉┉┉学案</option>
+<option value="7K48DB3IEADDID6">┝┉┉┉教研动态</option>
+<option value="G67C3D0JD2IB511">┝┉┉┉学科资料</option>
+<option value="I042C6J3J580I4D">┝┉┉┉学科史话</option>
+<option value="EAH472C4HD75382">┝┉┉┉竞赛</option>
+<option value="E7FDCIC33JA8GBB">┝┉┉┉课堂实录</option>
+<option value="I95ICC408K4KEB6">┝┉┉┉习题</option>
+<option value="2D57IJK8070B3FJ">┝┉┉化学组</option>
+<option value="C7CJ848BGGFA32D">┝┉┉┉化学教师风采</option>
+<option value="FB5F5J7771FHJEA">┝┉┉┉学科资源</option>
+<option value="AB4771G817G11BF">┝┉┉┉学科课件</option>
+<option value="2JFHBCI3985GD1H">┝┉┉┉教学反思</option>
+<option value="KB3IBJ3C6KFD4AH">┝┉┉┉学法指导</option>
+<option value="9EK698H4ACIEGEI">┝┉┉┉学案</option>
+<option value="69GFI9DCIDFHIC3">┝┉┉┉教研动态</option>
+<option value="87C0J93G79GAJF5">┝┉┉┉学科资料</option>
+<option value="G0I049BC5CDED8D">┝┉┉┉学科史话</option>
+<option value="9281AF8909K706C">┝┉┉┉竞赛</option>
+<option value="DKBA89177FFK7HH">┝┉┉┉课堂实录</option>
+<option value="C2JE92DK13HCGHJ">┝┉┉┉习题</option>
+<option value="D3A2G31EBJ4AD8G">┝┉┉物理组</option>
+<option value="F8J66F1C656C697">┝┉┉┉学科资源</option>
+<option value="BJCDI09I4AI6JA7">┝┉┉┉学科课件</option>
+<option value="0BABA4DHC63007F">┝┉┉┉教学反思</option>
+<option value="JI6DDIAHHD1KAIJ">┝┉┉┉学法指导</option>
+<option value="H8971CJEJA02F65">┝┉┉┉学案</option>
+<option value="1I5KH8E79F45AC0">┝┉┉┉教研动态</option>
+<option value="DJJF6DC66J6C285">┝┉┉┉学科资料</option>
+<option value="50BKDF7K6K6FH78">┝┉┉┉学科史话</option>
+<option value="CBF6GD7066IJ8K4">┝┉┉┉竞赛</option>
+<option value="BA74I14H89992J1">┝┉┉┉课堂实录</option>
+<option value="4GAB8G4F536D0C3">┝┉┉┉习题</option>
+<option value="ICG9A4E10DD7DB1">┝┉┉英语组</option>
+<option value="1JD39JJ1FAKEH9E">┝┉┉┉学科资源</option>
+<option value="4K48JKA702HK3J0">┝┉┉┉学科课件</option>
+<option value="C3AJ62IABJ547DF">┝┉┉┉教学反思</option>
+<option value="BJ7K4K7GGFJFJDH">┝┉┉┉学法指导</option>
+<option value="K041I1JA7H40A9G">┝┉┉┉学案</option>
+<option value="4008F5395IIHI0G">┝┉┉┉教研动态</option>
+<option value="EFC4A0F60E48A5I">┝┉┉┉英语网站导航</option>
+<option value="KE2A3J6AFA53947">┝┉┉┉习作园地</option>
+<option value="3EA7G7480CHI20C">┝┉┉┉备课资料</option>
+<option value="6F1AAEJ6BAE38CB">┝┉┉┉高考研究</option>
+<option value="929FGBHIH8CFG53">┝┉┉┉竞赛</option>
+<option value="BHJ963CD56A3279">┝┉┉┉同步练习</option>
+<option value="AJ2FHBJBGB32EC2">┝┉┉数学组</option>
+<option value="J9KJ17DHBCJK7F6">┝┉┉┉学科竞赛</option>
+<option value="D1J4E32CEJHA5F6">┝┉┉┉课堂实录</option>
+<option value="41HCJ4IB6EC9IAK">┝┉┉┉教研动态</option>
+<option value="HA60561AH2BGJ14">┝┉┉┉学科资源</option>
+<option value="6KBCC248205KA39">┝┉┉┉学科课件</option>
+<option value="JHC4CK98IAEBAJJ">┝┉┉┉教学反思</option>
+<option value="JHJEG6BB2E5282B">┝┉┉┉学法指导</option>
+<option value="J8638KFEH4IK1GF">┝┉┉┉学案</option>
+<option value="B01GH2KHC8KC76G">┝┉┉┉模拟训练</option>
+<option value="FFG00K58G2EJ424">┝┉┉┉月考试题</option>
+<option value="CDICJ8974F03BG4">┝┉┉┉经典例题</option>
+<option value="A4566B246HGDFA3">┝┉┉┉高考\会考研究</option>
+<option value="5J6B4I54I0AK98E">┝┉┉┉竞赛</option>
+<option value="5J6B5DK16G3K89B">┝┉┉┉同步练习</option>
+<option value="J0HBBKIJ0D9DG7B">┝┉┉┉数学名人</option>
+<option value="K6EJC4F573AA65B">┝┉┉┉数学史话</option>
+<option value="F43FAG8BE82I84J">┝┉┉┉数学公式</option>
+<option value="CE6400158IG8985">┝┉┉语文组</option>
+<option value="GHK480A6JIG451G">┝┉┉┉学科竞赛</option>
+<option value="2EK9D1K54I8EI0A">┝┉┉┉课堂实录</option>
+<option value="DGGK9JKCK6359AE">┝┉┉┉学科资源</option>
+<option value="IJB07G8887EB4A2">┝┉┉┉学科课件</option>
+<option value="9FF6F2242F4I84C">┝┉┉┉教学反思</option>
+<option value="FF3H9I21J45DCEE">┝┉┉┉学法指导</option>
+<option value="6A8DB11F83GB7HD">┝┉┉┉学案</option>
+<option value="KB15KHDC5E15A9D">┝┉┉┉教研动态</option>
+<option value="E1A4DB882FI0DEJ">┝┉┉┉备课资料</option>
+<option value="8GJ1C5DEDBBF88B">┝┉┉┉随笔</option>
+<option value="J482D1K522EHA5H">┝┉┉┉优秀作文</option>
+<option value="9BGJEII8208D96K">┝┉┉┉高考研究</option>
+<option value="20K4JD608B8A0KF">┝┉┉┉月考试题</option>
+<option value="6DFC2JE408J0776">┝┉┉┉单元检测</option>
+<option value="9EH50G813AI4B97">┝┉┉┉跟踪练习</option>
+
+<option value="FJ1I5BC7012F249">┝学校管理</option>
+<option value="FABC9G7A4B7E38K">┝┉┉现代教育技术处</option>
+<option value="3CIE0I0G7013008">┝┉┉┉一中视频</option>
+<option value="3KJ97419KAFK20A">┝┉┉┉工作计划总结</option>
+<option value="AF4JK2J69H6C665">┝┉┉┉技术园地</option>
+<option value="3F6KB86C6539BCD">┝┉┉┉理念宗旨</option>
+<option value="81J237FJ0E4HH12">┝┉┉┉组织机构</option>
+<option value="5G01ABBIACECJ08">┝┉┉┉科室公告</option>
+<option value="IIJ15F96B86BGHD">┝┉┉法制安全处</option>
+<option value="0FAF2GIE8BE6JB9">┝┉┉┉隐患排查大家做</option>
+<option value="ICI1KAA5E3DG7B7">┝┉┉┉法制安全教育在线</option>
+<option value="509A3D0H8C6K5C1">┝┉┉┉安全管理</option>
+<option value="BJBGBKC8C755K7I">┝┉┉┉法制教育</option>
+<option value="410J6E51IBBI90D">┝┉┉┉安全教育</option>
+<option value="A3A22720661HJF8">┝┉┉┉科室动态</option>
+<option value="K417D42JH18G44D">┝┉┉┉科室公告</option>
+<option value="CHFHEBEGFK4J5C0">┝┉┉团委会</option>
+<option value="9FAHC337FK5DD22">┝┉┉┉团员风采</option>
+<option value="9HH0D1007378J9H">┝┉┉┉重大活动</option>
+<option value="65GCC4F4AEJ52HI">┝┉┉┉社会实践</option>
+<option value="6I22CBG83H38FI4">┝┉┉┉团务知识</option>
+<option value="313CHB90K1427G4">┝┉┉┉学生会</option>
+<option value="J3E1DDHIF56EGHE">┝┉┉┉年级支部</option>
+<option value="6A3GIGAD46H73E4">┝┉┉┉国旗下讲话</option>
+<option value="54849D653K3AB32">┝┉┉┉团委公告</option>
+<option value="3C3KD84I3A09E82">┝┉┉教科室</option>
+<option value="K5CB99EBI138HKB">┝┉┉┉鹿泉一中报</option>
+<option value="59GBI44C2AF4F75">┝┉┉┉作品集锦</option>
+<option value="DA268GI447D5CJI">┝┉┉┉课题管理</option>
+<option value="45FCHD1EH62B81C">┝┉┉┉理论前沿</option>
+<option value="402G7IK6KG4C8II">┝┉┉┉课改动态</option>
+<option value="EJ5F74F8B7955GJ">┝┉┉┉规章制度</option>
+<option value="C84CH0F1AFGI7EE">┝┉┉┉管理机构</option>
+<option value="9694FDG5I0G6K33">┝┉┉┉专家指导</option>
+<option value="FKHE8AKD0B35D9B">┝┉┉总务处</option>
+<option value="1JJH599IJG55H8K">┝┉┉┉职工风采</option>
+<option value="G7KDCJ6AK7K4F4J">┝┉┉┉八面来风</option>
+<option value="16GJ92B9I7C02GJ">┝┉┉┉维修服务</option>
+<option value="DB2H3G8BDBD620A">┝┉┉┉资产管理</option>
+<option value="6D533J69I0DJ5GE">┝┉┉┉制度汇编</option>
+<option value="8GA7GB4DACC02DF">┝┉┉┉科室公告</option>
+<option value="57BH4C04JJK31F1">┝┉┉教导处</option>
+<option value="9FH26915J4IJ6BE">┝┉┉┉实验室</option>
+<option value="CIADHA01F959GG2">┝┉┉┉图书馆</option>
+<option value="1028CG7GF28D8CG">┝┉┉┉阅览室</option>
+<option value="4D2J7CF2K94G515">┝┉┉┉常规工作</option>
+<option value="3G2JG2BCJ9BC427">┝┉┉┉教学动态</option>
+<option value="ECDC0A029G0H4C1">┝┉┉┉规章制度</option>
+<option value="B44B353A5995JD7">┝┉┉┉管理机构</option>
+<option value="4BHD2I0FECF7H8I">┝┉┉┉科室公告</option>
+<option value="AFK06H745K7823H">┝┉┉教育处</option>
+<option value="1I51A6HIHDB4B8B">┝┉┉┉门卫管理</option>
+<option value="D8J5555I11ACD7H">┝┉┉┉宿舍管理</option>
+<option value="508KJIG5GB64DK6">┝┉┉┉值日班管理</option>
+<option value="5B6F3C00JDA35C1">┝┉┉┉值班统计</option>
+<option value="4A29A5AD7DE4132">┝┉┉┉班级管理</option>
+<option value="435D0689127J2DH">┝┉┉┉制度汇编</option>
+<option value="2FD78915242776H">┝┉┉┉今日值班</option>
+<option value="5H019GH01G0BJKB">┝┉┉┉科室公告</option>
+<option value="6GB5ICHD2J209DK">┝┉┉┉管理机构</option>
+<option value="ID49E1JH3I1IIFH">┝┉┉办公室</option>
+<option value="G9434B6KKK1C5A7">┝┉┉┉计划总结</option>
+<option value="CAAHF92076CDDJC">┝┉┉┉图片新闻</option>
+<option value="7HEG9D87DBCCH42">┝┉┉┉政策法规</option>
+<option value="HE7K0251EE89C2E">┝┉┉┉规章制度</option>
+<option value="958IB20E02G4BG6">┝┉┉┉公告通知</option>
+<option value="62H9J955FF8G76B">┝┉┉高三年级</option>
+<option value="9419K10H7KE20EC">┝┉┉┉考试</option>
+<option value="IC7H0GBB6J7694D">┝┉┉┉学科竞赛光荣榜</option>
+<option value="2H1C1AGGI0BDHKG">┝┉┉┉学案展示</option>
+<option value="2CGCBGGJIF5E2F7">┝┉┉┉优秀教案</option>
+<option value="2K54G9AFDJ777AE">┝┉┉┉班级管理经验交流</option>
+<option value="G1G1A7DGG9D0DFI">┝┉┉┉工作安排表</option>
+<option value="3E5B97KG5KA716A">┝┉┉┉年级管理机构</option>
+<option value="1H62BFK2E03BEAE">┝┉┉┉年级动态</option>
+<option value="3C5G4F4J0JEACE4">┝┉┉┉年级工作总结</option>
+<option value="JAK5F6K6GI58FB2">┝┉┉┉年级工作计划</option>
+<option value="H48I1G59A24BC77">┝┉┉┉年级公告</option>
+<option value="8A9A4DC8IDJBI52">┝┉┉高二年级</option>
+<option value="H51KI3A7D8CH3JB">┝┉┉┉考试</option>
+<option value="EH2629949KD7KE3">┝┉┉┉学科竞赛光荣榜</option>
+<option value="7AJEF7AG8HI7F2B">┝┉┉┉学案展示</option>
+<option value="DA58AFA5BGJ8IG5">┝┉┉┉优秀教案</option>
+<option value="K1IDB48C6259C39">┝┉┉┉班级管理经验交流</option>
+<option value="G8C3EA6B5K7KG7C">┝┉┉┉工作安排表</option>
+<option value="095J2JGJH00D93J">┝┉┉┉年级管理机构</option>
+<option value="3AD37A69KC6GAE3">┝┉┉┉年级动态</option>
+<option value="B012J7CFB9DIEIA">┝┉┉┉年级工作总结</option>
+<option value="AF8B41010BJA4EB">┝┉┉┉年级工作计划</option>
+<option value="K746B44DKIBG172">┝┉┉┉年级公告</option>
+<option value="230271JD56B0CJE">┝┉┉高一年级</option>
+<option value="1446CIDKG1460GI">┝┉┉┉考试</option>
+<option value="98C6I39CK6JJJF4">┝┉┉┉学科竞赛光荣榜</option>
+<option value="8CCAH7ABG21BG60">┝┉┉┉学案展示</option>
+<option value="70HAJ70E33868D9">┝┉┉┉优秀教案</option>
+<option value="5AG683071AFJAB4">┝┉┉┉班级管理经验交流</option>
+<option value="AB91HC9GDB9C27B">┝┉┉┉工作安排表</option>
+<option value="H0A94H34GF76BC7">┝┉┉┉年级管理机构</option>
+<option value="06F1KB658EDK4BE">┝┉┉┉年级动态</option>
+<option value="I3K51833K0J67IF">┝┉┉┉年级工作总结</option>
+<option value="7C8DD9HICG60KD3">┝┉┉┉年级工作计划</option>
+<option value="5HAF1KIKIB99J3C">┝┉┉┉年级公告</option>
+
+<option value="025J90KG02FB19A">┝学校新闻</option>
+
+<option value="K039K7B77JI6H0A">┝学校简介</option>
+<option value="143B9CE5GDIJ5J1">┝┉┉组织机构</option>
+<option value="E6J638691EH2DEH">┝┉┉学校荣誉</option>
+<option value="24HICBFD16JB24B">┝┉┉学校历史</option>
+<option value="6I49IH4H8AHA35I">┝┉┉学校简介</option>
+
+</select><input type="submit" id="SearchSubmit" value="搜索" /></td></tr></form></table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="4">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="582" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td width="378" height="155" align="left" valign="top">
+                                        <table width="368" height="20" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td width="65" valign="bottom" class="sybtzi">
+                                                    学校新闻
+                                                </td>
+                                                <td width="36" valign="bottom" class="sybtziyw">
+                                                    NEWS
+                                                </td>
+                                                <td width="220">
+                                                </td>
+                                                <td width="40" align="left" valign="bottom" class="STYLE2">
+                                                    <a href="http://www.hblqyz.cn/news/xuexiaoxinwen/Index.asp" target="_blank">+MORE</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="368" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td height="5" valign="bottom">
+                                                    <img src="/Templets/img/NEWSXIAN.jpg" width="368" height="2" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="368" height="148" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td valign="top" background="/Templets/img/XINWENBG.jpg">
+                                                    <table width="368" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td height="5">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <table width="368" height="189" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td valign="top" background="/Templets/img/XINWENBG.GIF">
+                                                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+   <tr><td>
+
+<table class="weiquan" height="23" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+	
+<tbody>
+		
+<tr>
+			
+<td align="middle" width="6%">
+				<img height="9" alt="" src="http://www.hblqyz.cn/Files/FH.gif" width="9" border="0" /> </td>
+			
+<td width="74%">
+				
+<p align="left"><a href="http://mp.weixin.qq.com/s/PLykSwvGMSAQ0UdxdnDnAw" target="_blank">我校开展志愿者服务活动</a></p></td>
+		</tr>
+	</tbody>
+</table></td></tr>
+   <tr><td>
+
+<table class="weiquan" height="23" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+	
+<tbody>
+		
+<tr>
+			
+<td align="middle" width="6%">
+				<img height="9" alt="" src="http://www.hblqyz.cn/Files/FH.gif" width="9" border="0" /> </td>
+			
+<td width="74%">
+				
+<p align="left"><a href="http://mp.weixin.qq.com/s/U5PwS3sOmL8bCjsvA5R8hQ" target="_blank">我校组织星级优秀宿舍成员外出活动</a></p></td>
+		</tr>
+	</tbody>
+</table></td></tr>
+   <tr><td>
+
+<table class="weiquan" height="23" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+	
+<tbody>
+		
+<tr>
+			
+<td align="middle" width="6%">
+				<img height="9" alt="" src="http://www.hblqyz.cn/Files/FH.gif" width="9" border="0" /> </td>
+			
+<td width="74%">
+				
+<p align="left"><a href="http://mp.weixin.qq.com/s/LVMGSFNGCdJau4lE6EIeUw" target="_blank">我校加入中国航天科技教育联盟</a></p></td>
+		</tr>
+	</tbody>
+</table></td></tr>
+   <tr><td>
+
+<table class="weiquan" height="23" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+	
+<tbody>
+		
+<tr>
+			
+<td align="middle" width="6%">
+				<img height="9" alt="" src="http://www.hblqyz.cn/Files/FH.gif" width="9" border="0" /> </td>
+			
+<td width="74%">
+				
+<p align="left"><a href="http://mp.weixin.qq.com/s/Vntoa1-CqWUKnium2G8Kxg" target="_blank">我校学生在“百年追梦&nbsp;全面小康”读书教育活动</a></p></td>
+		</tr>
+	</tbody>
+</table></td></tr>
+   <tr><td>
+
+<table class="weiquan" height="23" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+	
+<tbody>
+		
+<tr>
+			
+<td align="middle" width="6%">
+				<img height="9" alt="" src="http://www.hblqyz.cn/Files/FH.gif" width="9" border="0" /> </td>
+			
+<td width="74%">
+				
+<p align="left"><a href="http://mp.weixin.qq.com/s/58u8XpXZBHt8dFLrjItK7A" target="_blank">2017年春季田径运动会开幕</a></p></td>
+		</tr>
+	</tbody>
+</table></td></tr>
+   <tr><td>
+
+<table class="weiquan" height="23" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+	
+<tbody>
+		
+<tr>
+			
+<td align="middle" width="6%">
+				<img height="9" alt="" src="http://www.hblqyz.cn/Files/FH.gif" width="9" border="0" /> </td>
+			
+<td width="74%">
+				
+<p align="left"><a href="http://mp.weixin.qq.com/s/BP_p_gjrfO7rmuyctfo22Q" target="_blank">张耀新老师获河北省第四届中小学学科名师</a></p></td>
+		</tr>
+	</tbody>
+</table></td></tr>
+   <tr><td>
+
+<table class="weiquan" height="23" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+	
+<tbody>
+		
+<tr>
+			
+<td align="middle" width="6%">
+				<img height="9" alt="" src="http://www.hblqyz.cn/Files/FH.gif" width="9" border="0" /> </td>
+			
+<td width="74%">
+				
+<p align="left"><a href="http://mp.weixin.qq.com/s/qK1k_WpxKoW-21UtZvTnsQ" target="_blank">梁会彦、齐爱岭老师在“六校联合体”赛课活动</a></p></td>
+		</tr>
+	</tbody>
+</table></td></tr>
+   <tr><td>
+
+<table class="weiquan" height="23" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+	
+<tbody>
+		
+<tr>
+			
+<td align="middle" width="6%">
+				<img height="9" alt="" src="http://www.hblqyz.cn/Files/FH.gif" width="9" border="0" /> </td>
+			
+<td width="74%">
+				
+<p align="left"><a href="http://mp.weixin.qq.com/s/-mOQhaX9aYcxAyvmbboyMA" target="_blank">中国航天科技国际交流中心到我校考察</a></p></td>
+		</tr>
+	</tbody>
+</table></td></tr></table>
+
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="204" height="169" valign="top">
+                                        <table width="204" height="23" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" valign="middle" class="sybtzi">
+                                                    图片新闻
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="204" height="196" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="center" valign="middle" background="/Templets/img/tpxw.jpg">
+                                                    <script language="vbscript">
+Dim FileList,FileListArr,TxtList,TxtListArr,LinkList,LinkArr
+FileList = "/Files/u%3D3656636172%2C2699295406%26fm%3D21%26gp%3D0.jpg,/Files/2011041113304420315.jpg,/Files/392723d828eeb53110df9b37.jpg,/Files/fzg.JPG"
+LinkList = "http://192.168.103.54,http://www.hblqyz.cn/news/chuangyouzhengxian/Index.asp,http://www.hblqyz.cn/4/index.htm,/news/xuexiaoxinwen/2009/3/093189428791.asp"
+TxtList = "<a  href='http://192.168.103.54' target='_blank'>群众路线教育实践</a>,<a  href='http://www.hblqyz.cn/news/chuangyouzhengxian/Index.asp'  target='_blank'>鹿泉一中创先争优活动</a>,<a  href='http://www.hblqyz.cn/4/index.htm'  target='_blank'>鹿泉一中科学发展观专题</a>,<a  href='/news/xuexiaoxinwen/2009/3/093189428791.asp'  target='_blank'>我校召开深入学习科学发展观活动</a>"
+FileListArr = Split(FileList,",")
+LinkArr = Split(LinkList,",")
+TxtListArr = Split(TxtList,",")
+Dim CanPlay
+CanPlay = CInt(Split(Split(navigator.appVersion,";")(1)," ")(2))>5
+Dim FilterStr
+FilterStr = "RevealTrans(duration=2,transition=23)"
+FilterStr = FilterStr + ";BlendTrans(duration=2)"
+If CanPlay Then
+FilterStr = FilterStr + ";progid:DXImageTransform.Microsoft.Fade(duration=2,overlap=0)"
+FilterStr = FilterStr + ";progid:DXImageTransform.Microsoft.Wipe(duration=3,gradientsize=0.25,motion=reverse)"
+Else
+Msgbox "幻灯片播放具有多种动态图片切换效果，但此功能需要您的浏览器为IE5.5或以上版本，否则您将只能看到部分的切换效果。",64
+End If
+Dim FilterArr
+FilterArr = Split(FilterStr,";")
+Dim PlayImg_M
+PlayImg_M = 5 * 1000  
+Dim I
+I = 1
+Sub ChangeImg
+Do While FileListArr(I)=""
+I = I + 1
+If I>UBound(FileListArr) Then I = 0
+Loop
+Dim J
+If I>UBound(FileListArr) Then I = 0
+Randomize
+J = Int(Rnd * (UBound(FilterArr)+1))
+Img.style.filter = FilterArr(J)
+Img.filters(0).Apply
+Img.Src = FileListArr(I)
+Img.filters(0).play
+Link.Href = LinkArr(I)
+Txt.filters(0).Apply
+Txt.innerHTML = TxtListArr(I)
+Txt.filters(0).play
+I = I + 1
+If I>UBound(FileListArr) Then I = 0
+TempImg.Src = FileListArr(I)
+TempLink.Href = LinkArr(I)
+SetTimeout "ChangeImg", PlayImg_M,"VBScript"
+End Sub
+</SCRIPT>
+<TABLE WIDTH="100%" height="100%" BORDER="0" CELLSPACING="" CELLPADDING="0">
+<TR ID="NoScript">
+<TD Align="Center" Style="Color:White">对不起，图片浏览功能需脚本支持，但您的浏览器已经设置了禁止脚本运行。请您在浏览器设置中调整有关安全选项。</TD>
+</TR>
+<TR Style="Display:none" ID="CanRunScript"><TD HEIGHT="100%" Align="Center" vAlign="Center"><a id="Link" target='_blank'><Img ID="Img"  width="190" height="170" Border="0" ></a>
+</TD></TR><TR Style="Display:none"><TD><a id=TempLink ><Img ID="TempImg" Border="0"></a></TD></TR>
+<TR><TD HEIGHT="100%" Align="Center" vAlign="Top">
+<div ID="Txt" style="PADDING-LEFT: 5px; Z-INDEX: 1; FILTER: progid:DXImageTransform.Microsoft.Fade(duration=1,overlap=0); POSITION:"><a  href='http://192.168.103.54' target='_blank'>群众路线教育实践</a></div></TD></TR>
+</TABLE>
+<Script Language="VBScript">
+NoScript.Style.Display = "none"
+CanRunScript.Style.Display = ""
+Img.Src = FileListArr(0)
+Link.Href = LinkArr(0)
+SetTimeout "ChangeImg", PlayImg_M,"VBScript"
+</Script>
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="582" height="53" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td background="http://www.hblqyz.cn/Templets/20150704img/zhenyanbg.jpg">
+                                      <!--  <table width="200" height="15" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td>
+                                                </td>
+                                            </tr>
+                                        </table>-->
+                                        <table width="582" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td width="81" height="12">
+                                                </td>
+                                                <td width="420" align="left" valign="middle" class="STYLE2">
+                                                    <span class="STYLE6" style=" margin:110px;">
+                                                        <marquee direction="left" scrollamount="2" width="360" height="30" >
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+   <tr><td><TABLE height=20 cellSpacing=0 cellPadding=0 width="100%" border=0>
+<TBODY>
+<TR>
+<TD align=right width="3%"></TD>
+<TD width="2%"></TD>
+<TD>
+<P align=left>思考比传道重要 观点比解惑重要</P></TD></TR></TBODY></TABLE></td></tr></table>
+
+                        </marquee>
+                                                    </span>
+                                                </td>
+                                                <td width="81">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="4">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="582" height="30" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td background="/Templets/img/xxglbg.jpg">
+                                        <table width="582" height="20" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td width="27">
+                                                </td>
+                                                <td width="79" align="center" valign="bottom" class="sybtzi1">
+                                                    课改园地
+                                                </td>
+                                                <td width="413">
+                                                    <table width="95%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td width="51%" align="center" valign="bottom">
+                                                                <a href="/news/8keyandongtai/Index.asp" target="_blank">课改动态</a>
+                                                            </td>
+                                                            <td width="49%" align="center" valign="bottom">
+                                                                <a href="/news/11guzhangbaoxiu/Index.asp" target="_blank">一中视频</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="63" valign="bottom" class="STYLE2">&nbsp;
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="582" height="130" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td valign="top" background="/Templets/img/xxglk.jpg">
+                                        <br />
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td width="51%" align="left" valign="top">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="http://mp.weixin.qq.com/s/2Zg2vuWsOpXLs4n_KTVwkw" target=_blank>石家庄市教科所专家莅临我校听课</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="http://mp.weixin.qq.com/s/N2kf6BdBku4OqA45eV7oFQ" target=_blank>我校组织全体教师观看“庆祝建党</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="http://mp.weixin.qq.com/s/sLMRDgXrGk0eVH_XAIo6Jg" target=_blank>【真实的鹿泉一中（四）】鹿泉一</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="http://mp.weixin.qq.com/s/_1yT6XNENq2wty7Qgwv0Sw" target=_blank>【真实的鹿泉一中（三）】鹿泉一</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="http://https://mp.weixin.qq.com/s/aLex--bbX3e1hkMnwap80g" target=_blank>【真实的鹿泉一中（二）】我们是</A></P></TD></TR></TBODY></TABLE></DIV></td></tr></table>
+
+                                                </td>
+                                                <td width="49%" align="left" valign="top">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="/news/11guzhangbaoxiu/2014/6/146251447259475.asp" target=_blank>化学微课专题</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="http://mp.weixin.qq.com/s/og1pihos9OPeYF_ftDTc4Q" target=_blank>微话鹿泉一中</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="/news/11guzhangbaoxiu/2012/1/121129249142.asp" target=_blank>化学科普知识竞赛暨演讲比赛--国</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="/news/11guzhangbaoxiu/2012/1/12141416216518.asp" target=_blank>第三届全国高中新课程课堂教学经</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="/news/11guzhangbaoxiu/2011/10/111016205854791.asp" target=_blank>[小崔说事]老师,听我讲(20111016</A></P></TD></TR></TBODY></TABLE></DIV></td></tr></table>
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="4">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="582" height="30" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td background="/Templets/img/xxglbg.jpg">
+                                        <table width="582" height="20" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td width="27">
+                                                </td>
+                                                <td width="79" align="center" valign="bottom" class="sybtzi1">
+                                                    专业引领
+                                                </td>
+                                                <td width="413">
+                                                    <table width="95%" border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td width="51%" align="center" valign="bottom">
+                                                                <a href="/news/8keshigonggao/Index.asp" target="_blank">专家指导</a>
+                                                            </td>
+                                                            <td width="49%" align="center" valign="bottom">
+                                                                <a href="/news/8gzuoliucheng/Index.asp" target="_blank">理论前沿</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="63" valign="bottom" class="STYLE2">&nbsp;
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="582" height="130" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td valign="top" background="/Templets/img/xxglk.jpg">
+                                        <br />
+                                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td width="51%" align="left" valign="top">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="/news/8keshigonggao/2015/11/151141042264250.asp" target=_blank>科学谋划　扎实推进　促进信息技</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="/news/8keshigonggao/2015/11/1511385279717.asp" target=_blank>新时代的教师&nbsp;&nbsp;&nbsp;韩爱学</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="/news/8keshigonggao/2015/11/151138486525.asp" target=_blank>京津冀教育协同发展专家报告之徐</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="/news/8keshigonggao/2015/11/15113844112035.asp" target=_blank>京津冀教育协同发展专家报告之张</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="/news/8keshigonggao/2015/11/15113839111890.asp" target=_blank>京津冀教育协同发展专家报告之赵</A></P></TD></TR></TBODY></TABLE></DIV></td></tr></table>
+
+                                                </td>
+                                                <td width="49%" align="left" valign="top">
+                                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="/news/8gzuoliucheng/2016/5/16517154639604.asp" target=_blank>互联网+自主课堂——网络建设</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="/news/8gzuoliucheng/2011/9/119131511241514.asp" target=_blank>有效促进教师专业化发展的策略研</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="/news/8gzuoliucheng/2011/5/11531947567668.asp" target=_blank>教学目标——不该被遗忘的教学起</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="/news/8gzuoliucheng/2009/7/09711184030440.asp" target=_blank>要重视老师的精神成长</A></P></TD></TR></TBODY></TABLE></DIV></td></tr>
+   <tr><td><DIV>
+<TABLE class=weiquan height=20 cellSpacing=0 cellPadding=0 width="96%" align=center border=0>
+<TBODY>
+<TR>
+<TD align=middle width="7%"><IMG alt="" src="/files/20060905030514601.gif" border=0></TD>
+<TD width="93%">
+<P align=left><A href="/news/8gzuoliucheng/2009/6/09623158384625.asp" target=_blank>学校贯彻ISO9000：2000质量管理体</A></P></TD></TR></TBODY></TABLE></DIV></td></tr></table>
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="4">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="582" border="0" cellspacing="0" cellpadding="0" id="t1">
+                                <tr>
+                                    <td width="14" height="26">
+                                    </td>
+                                    <td width="104" align="center" valign="middle" background="/Templets/img/lan.jpg">
+                                        <a href="#" class="sybtzi2" onmousemove="showtb1('t',3,1)">校友风采</a>
+                                    </td>
+                                    <td width="7">
+                                    </td>
+                                    <td width="104" align="center" valign="middle" background="/Templets/img/lv.jpg">
+                                        <a href="#" class="sybtzi2" onmousemove="showtb1('t',3,2)">教师风采</a>
+                                    </td>
+                                    <td width="7">
+                                    </td>
+                                    <td width="104" align="center" valign="middle" background="/Templets/img/huang.jpg">
+                                        <a href="/blog/index.html" target="_blank" class="sybtzi2" onmousemove="showtb1('t',3,3)">教师博客</a>
+                                    </td>
+                                    <td width="242">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="4" colspan="7">
+                                        <img src="/Templets/img/lan1.jpg" width="582" height="4" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="140" colspan="7" valign="top">
+                                        <table width="582" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td>
+                                                    <img src="/Templets/img/ryksh.jpg" width="582" height="8" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="125" align="center" valign="top" background="/Templets/img/rykbg.jpg">
+                                                    <div id="butong_net_right" style="overflow: hidden; width: 570px;">
+                                                        <table width="570" height="111" border="0" cellpadding="0" cellspacing="0">
+                                                            <tr>
+                                                                <td id="butong_net_right1" valign="top" align="center">
+                                                                    <table width="570" height="111" border="0" cellpadding="2" cellspacing="0">
+                                                                        <tr align="center">
+                                                                            <td>
+                                                                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/xiaoyoufengcai/2011/10/111010174363677.asp"><IMG height=111 alt="" src="/Files/liyonghui.jpg" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/xiaoyoufengcai/2011/10/111010174363677.asp">李永辉  上海医药工业研究院博士</A><A href="/news/xiaoyoufengcai/2011/10/111010174363677.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/xiaoyoufengcai/2011/10/1110101741203227.asp"><IMG height=111 alt="" src="/Files/liyansha.jpg" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/xiaoyoufengcai/2011/10/1110101741203227.asp">李彦莎   中 科院遗传与发育生物学研究所博士</A><A href="/news/xiaoyoufengcai/2011/10/1110101741203227.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/xiaoyoufengcai/2011/10/1110101739252297.asp"><IMG height=111 alt="" src="/Files/liaijun.jpg" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/xiaoyoufengcai/2011/10/1110101739252297.asp"></A><A href="/news/xiaoyoufengcai/2011/10/1110101739252297.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/xiaoyoufengcai/2011/10/1110101736368247.asp"><IMG height=111 alt="" src="/Files/jiahongjie.jpg" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/xiaoyoufengcai/2011/10/1110101736368247.asp">贾红杰  天津大学电气与自动化工程学院工学博士、天津大学精仪器学院从事博士后研究工作、天津大学教授、博士生导师</A><A href="/news/xiaoyoufengcai/2011/10/1110101736368247.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/xiaoyoufengcai/2011/10/1110101732443699.asp"><IMG height=111 alt="" src="/Files/hejing.jpg" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/xiaoyoufengcai/2011/10/1110101732443699.asp">何静  牛津大学化学系有机化学专业毕业、博士</A><A href="/news/xiaoyoufengcai/2011/10/1110101732443699.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/xiaoyoufengcai/2011/10/111010173081695.asp"><IMG height=111 alt="" src="/Files/guoxiaojing.jpg" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/xiaoyoufengcai/2011/10/111010173081695.asp">郭肖静  清华大学硕士</A><A href="/news/xiaoyoufengcai/2011/10/111010173081695.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/xiaoyoufengcai/2011/10/1110101727527114.asp"><IMG height=111 alt="" src="/Files/gujunxia.jpg" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/xiaoyoufengcai/2011/10/1110101727527114.asp">谷军霞  中国气象局国家气象信息中心博士</A><A href="/news/xiaoyoufengcai/2011/10/1110101727527114.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/xiaoyoufengcai/2011/10/1110101724395999.asp"><IMG height=111 alt="" src="/Files/gehongwei.jpg" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/xiaoyoufengcai/2011/10/1110101724395999.asp">葛宏伟  中国科学院云南天文台理学博士助理研究员</A><A href="/news/xiaoyoufengcai/2011/10/1110101724395999.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/xiaoyoufengcai/2011/10/1110101721394184.asp"><IMG height=111 alt="" src="/Files/gaoxiaoyan.jpg" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/xiaoyoufengcai/2011/10/1110101721394184.asp">高晓燕  1980年获鹿中学文科四班毕业，经济学博士，教授，硕士生导师，天津财经大学金融系货币教研室主任</A><A href="/news/xiaoyoufengcai/2011/10/1110101721394184.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/xiaoyoufengcai/2011/10/111010171756788.asp"><IMG height=111 alt="" src="/Files/duqianbo.jpg" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/xiaoyoufengcai/2011/10/111010171756788.asp">杜倩博  复旦大学行政管理专业博士</A><A href="/news/xiaoyoufengcai/2011/10/111010171756788.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td></tr>
+  <tr></tr>
+</table>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td id="butong_net_right2" valign="top">
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <script>
+                                                        var speed = 30//速度数值越大速度越慢
+                                                        butong_net_right2.innerHTML = butong_net_right1.innerHTML
+                                                        function Marquee4() {
+                                                            if (butong_net_right.scrollLeft <= 0)
+                                                                butong_net_right.scrollLeft += butong_net_right2.offsetWidth
+                                                            else {
+                                                                butong_net_right.scrollLeft--
+                                                            }
+                                                        }
+                                                        var MyMar4 = setInterval(Marquee4, speed)
+                                                        butong_net_right.onmouseover = function () { clearInterval(MyMar4) }
+                                                        butong_net_right.onmouseout = function () { MyMar4 = setInterval(Marquee4, speed) }
+                                                    </script>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="/Templets/img/rykxia.jpg" width="582" height="7" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="582" border="0" cellspacing="0" cellpadding="0" id="t2" style="display: none">
+                                <tr>
+                                    <td width="14" height="26">
+                                    </td>
+                                    <td width="104" align="center" valign="middle" background="/Templets/img/lan.jpg">
+                                        <a href="#" class="sybtzi2" onmousemove="showtb1('t',3,1)">校友风采</a>
+                                    </td>
+                                    <td width="7">
+                                    </td>
+                                    <td width="104" align="center" valign="middle" background="/Templets/img/lv.jpg">
+                                        <a href="#" class="sybtzi2" onmousemove="showtb1('t',3,2)">教师风采</a>
+                                    </td>
+                                    <td width="7">
+                                    </td>
+                                    <td width="104" align="center" valign="middle" background="/Templets/img/huang.jpg">
+                                        <a href="#" class="sybtzi2" onmousemove="showtb1('t',3,3)">教师博客</a>
+                                    </td>
+                                    <td width="242">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="4" colspan="7">
+                                        <img src="/Templets/img/lv1.jpg" width="582" height="4" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="140" colspan="7" valign="top">
+                                        <table width="582" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td>
+                                                    <img src="/Templets/img/ryksh.jpg" width="582" height="8" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="125" valign="top" background="/Templets/img/rykbg.jpg">
+                                                    <table width="570" height="109" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="1" height="93" valign="top" bgcolor="#bec1ae">
+                                                                </td>
+                                                                <td colspan="2">
+                                                                    <div id="demo" style="overflow: hidden; width: 570px; align: center">
+                                                                        <table cellspacing="0" cellpadding="0" align="center" border="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td id="marquePic1" valign="top">
+                                                                                        <table width="570" height="109" border="0" cellpadding="0" cellspacing="0">
+                                                                                            <tr>
+                                                                                                <td width="570" height="109" align="center">
+                                                                                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="http://https://mp.weixin.qq.com/s/BP_p_gjrfO7rmuyctfo22Q"><IMG height=111 alt="" src="" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="http://https://mp.weixin.qq.com/s/BP_p_gjrfO7rmuyctfo22Q"></A><A href="http://https://mp.weixin.qq.com/s/BP_p_gjrfO7rmuyctfo22Q"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="http://mp.weixin.qq.com/s/qK1k_WpxKoW-21UtZvTnsQ"><IMG height=111 alt="" src="" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="http://mp.weixin.qq.com/s/qK1k_WpxKoW-21UtZvTnsQ"></A><A href="http://mp.weixin.qq.com/s/qK1k_WpxKoW-21UtZvTnsQ"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="http://mp.weixin.qq.com/s/VhAIutkr5YlvGmj_mQvuqA"><IMG height=111 alt="" src="" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="http://mp.weixin.qq.com/s/VhAIutkr5YlvGmj_mQvuqA"></A><A href="http://mp.weixin.qq.com/s/VhAIutkr5YlvGmj_mQvuqA"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="http://mp.weixin.qq.com/s/jXR6GbhHRVqZTrR5cZgMCA"><IMG height=111 alt="" src="" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="http://mp.weixin.qq.com/s/jXR6GbhHRVqZTrR5cZgMCA"></A><A href="http://mp.weixin.qq.com/s/jXR6GbhHRVqZTrR5cZgMCA"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/jiaoshifengcai/2009/6/09626940451705.asp"><IMG height=111 alt="" src="/Files/P1000666.jpg" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/jiaoshifengcai/2009/6/09626940451705.asp">2009年5月15日，我校举办了鹿泉一中第九届教职工春季登山健身活动，自2005年起，我校本着“立足师生幸福”的学校愿景，秉承”以人为本“的办学理念，注重教职工身</A><A href="/news/jiaoshifengcai/2009/6/09626940451705.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/jiaoshifengcai/2009/6/096241125312044.asp"><IMG height=111 alt="" src="/Files/tiaowu.jpg" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/jiaoshifengcai/2009/6/096241125312044.asp">08年10月，我校教师参加了石家庄市首届”校园交谊舞“大赛，并在大赛中取得优异成绩。</A><A href="/news/jiaoshifengcai/2009/6/096241125312044.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/jiaoshifengcai/2009/1/0913635504677.asp"><IMG height=111 alt="" src="/Files/zhangyaoxin.jpg" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/jiaoshifengcai/2009/1/0913635504677.asp">收藏是一门爱好，更是一门艺术和学问。现在收藏很热，搞收藏的人也很多。收藏的品味也很高。说实话，我搞收藏，却真不是凑这个“热闹”。收藏品种也不上什么档次</A><A href="/news/jiaoshifengcai/2009/1/0913635504677.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/jiaoshifengcai/2008/11/0811201819538921.asp"><IMG height=111 alt="" src="/Files/g1js.JPG" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/jiaoshifengcai/2008/11/0811201819538921.asp">高一教师表演舞蹈</A><A href="/news/jiaoshifengcai/2008/11/0811201819538921.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/jiaoshifengcai/2008/11/0811201816148897.asp"><IMG height=111 alt="" src="/Files/JY11.JPG" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/jiaoshifengcai/2008/11/0811201816148897.asp">坚持就是胜利！</A><A href="/news/jiaoshifengcai/2008/11/0811201816148897.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td><td width="10%"><TABLE height=67 cellSpacing=0 cellPadding=0 width=285 border=0>
+<TBODY>
+<TR>
+<TD vAlign=center align=middle width=102>
+<P align=center><A href="/news/jiaoshifengcai/2008/11/0811171746244382.asp"><IMG height=111 alt="" src="/Files/2.jpg" width=95 border=0></A></P></TD>
+<TD vAlign=top align=left width=174 height=67><FONT color=#ff0000>
+<P class=news align=left><BR><A href="/news/jiaoshifengcai/2008/11/0811171746244382.asp"></A><A href="/news/jiaoshifengcai/2008/11/0811171746244382.asp"><FONT color=#ff0000>更多..</FONT></A><BR></P></FONT></TD>
+<TD vAlign=top width=10></TD></TR></TBODY></TABLE></td></tr>
+  <tr></tr>
+</table>
+
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td height="13" colspan="10" align="center">
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                    <td id="marquePic2" valign="top">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                    <script type="text/javascript">
+                                                                        var speed = 30
+                                                                        marquePic2.innerHTML = marquePic1.innerHTML
+                                                                        function Marquee() {
+                                                                            if (demo.scrollLeft >= marquePic1.scrollWidth) {
+                                                                                demo.scrollLeft = 0
+                                                                            } else {
+                                                                                demo.scrollLeft++
+                                                                            }
+                                                                        }
+                                                                        var MyMar = setInterval(Marquee, speed)
+                                                                        demo.onmouseover = function () { clearInterval(MyMar) }
+                                                                        demo.onmouseout = function () { MyMar = setInterval(Marquee, speed) }
+                                                                    </script>
+                                                                </td>
+                                                                <td valign="top" width="1" bgcolor="#bec1ae">
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="/Templets/img/rykxia.jpg" width="582" height="7" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="582" border="0" cellspacing="0" cellpadding="0" id="t3" style="display: none">
+                                <tr>
+                                    <td width="14" height="26">
+                                    </td>
+                                    <td width="104" align="center" valign="middle" background="/Templets/img/lan.jpg">
+                                        <a href="#" class="sybtzi2" onmousemove="showtb1('t',3,1)">校友风采</a>
+                                    </td>
+                                    <td width="7">
+                                    </td>
+                                    <td width="104" align="center" valign="middle" background="/Templets/img/lv.jpg">
+                                        <a href="#" class="sybtzi2" onmousemove="showtb1('t',3,2)">教师风采</a>
+                                    </td>
+                                    <td width="7">
+                                    </td>
+                                    <td width="104" align="center" valign="middle" background="/Templets/img/huang.jpg">
+                                        <a href="#" class="sybtzi2" onmousemove="showtb1('t',3,3)">教师博客</a>
+                                    </td>
+                                    <td width="242">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="4" colspan="7">
+                                        <img src="/Templets/img/huang1.jpg" width="582" height="4" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="140" colspan="7" valign="top">
+                                        <table width="582" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td>
+                                                    <img src="/Templets/img/ryksh.jpg" width="582" height="8" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="125" valign="top" background="/Templets/img/rykbg.jpg">
+                                                    <iframe width="575" height="105" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="Templets/js.htm"></iframe>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="/Templets/img/rykxia.jpg" width="582" height="7" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="4" valign="top">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="582" height="26" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td height="30" background="/Templets/img/xxglbg.jpg">
+                                        <table width="582" height="20" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td width="27">
+                                                </td>
+                                                <td width="79" align="center" valign="bottom" class="sybtzi1">
+                                                    荣誉学子
+                                                </td>
+                                                <td width="413">
+                                                </td>
+                                                <td width="63" valign="bottom" class="STYLE2">
+                                                    <a href="http://www.hblqyz.cn/news/rongyuxuezi/Index.asp" target="_blank">+MORE</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="582" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <img src="/Templets/img/ryksh.jpg" width="582" height="8" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="125" background="/Templets/img/rykbg.jpg">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr><td width="20%"><TABLE cellSpacing=0 cellPadding=0 width=32 border=0>
+<TBODY>
+<TR>
+<TD colSpan=2></TD>
+<TD width=10>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR vAlign=center align=middle bgColor=#646464>
+<TD align=middle bgColor=#3399fe colSpan=2>
+<TABLE onmouseover="this.style.backgroundColor='#DA191A'" onmouseout="this.style.backgroundColor=''" height=115 cellSpacing=3 cellPadding=0 width=85 border=0>
+<TBODY>
+<TR>
+<TD align=middle width=88 height=109><A href="/news/rongyuxuezi/2011/10/111010178544402.asp"><IMG class=kuang height=109 alt=鹿泉一中 src="/Files/li.gif" width=85 border=0></A></TD></TR></TBODY></TABLE></TD></TR>
+<TR align=middle>
+<TD align=middle height=22><A href="/news/rongyuxuezi/2011/10/111010178544402.asp">李华锋[图]</A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></td><td width="20%"><TABLE cellSpacing=0 cellPadding=0 width=32 border=0>
+<TBODY>
+<TR>
+<TD colSpan=2></TD>
+<TD width=10>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR vAlign=center align=middle bgColor=#646464>
+<TD align=middle bgColor=#3399fe colSpan=2>
+<TABLE onmouseover="this.style.backgroundColor='#DA191A'" onmouseout="this.style.backgroundColor=''" height=115 cellSpacing=3 cellPadding=0 width=85 border=0>
+<TBODY>
+<TR>
+<TD align=middle width=88 height=109><A href="/news/rongyuxuezi/2011/10/111010174433246.asp"><IMG class=kuang height=109 alt=鹿泉一中 src="/Files/zhang.gif" width=85 border=0></A></TD></TR></TBODY></TABLE></TD></TR>
+<TR align=middle>
+<TD align=middle height=22><A href="/news/rongyuxuezi/2011/10/111010174433246.asp">张天亮[图]</A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></td><td width="20%"><TABLE cellSpacing=0 cellPadding=0 width=32 border=0>
+<TBODY>
+<TR>
+<TD colSpan=2></TD>
+<TD width=10>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR vAlign=center align=middle bgColor=#646464>
+<TD align=middle bgColor=#3399fe colSpan=2>
+<TABLE onmouseover="this.style.backgroundColor='#DA191A'" onmouseout="this.style.backgroundColor=''" height=115 cellSpacing=3 cellPadding=0 width=85 border=0>
+<TBODY>
+<TR>
+<TD align=middle width=88 height=109><A href="/news/rongyuxuezi/2011/10/11101017021178.asp"><IMG class=kuang height=109 alt=鹿泉一中 src="/Files/qieyahuan.gif" width=85 border=0></A></TD></TR></TBODY></TABLE></TD></TR>
+<TR align=middle>
+<TD align=middle height=22><A href="/news/rongyuxuezi/2011/10/11101017021178.asp">郄亚寰[图]</A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></td><td width="20%"><TABLE cellSpacing=0 cellPadding=0 width=32 border=0>
+<TBODY>
+<TR>
+<TD colSpan=2></TD>
+<TD width=10>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR vAlign=center align=middle bgColor=#646464>
+<TD align=middle bgColor=#3399fe colSpan=2>
+<TABLE onmouseover="this.style.backgroundColor='#DA191A'" onmouseout="this.style.backgroundColor=''" height=115 cellSpacing=3 cellPadding=0 width=85 border=0>
+<TBODY>
+<TR>
+<TD align=middle width=88 height=109><A href="/news/rongyuxuezi/2011/10/111010165293525.asp"><IMG class=kuang height=109 alt=鹿泉一中 src="/Files/梁裕.gif" width=85 border=0></A></TD></TR></TBODY></TABLE></TD></TR>
+<TR align=middle>
+<TD align=middle height=22><A href="/news/rongyuxuezi/2011/10/111010165293525.asp">梁裕[图]</A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></td><td width="20%"><TABLE cellSpacing=0 cellPadding=0 width=32 border=0>
+<TBODY>
+<TR>
+<TD colSpan=2></TD>
+<TD width=10>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR vAlign=center align=middle bgColor=#646464>
+<TD align=middle bgColor=#3399fe colSpan=2>
+<TABLE onmouseover="this.style.backgroundColor='#DA191A'" onmouseout="this.style.backgroundColor=''" height=115 cellSpacing=3 cellPadding=0 width=85 border=0>
+<TBODY>
+<TR>
+<TD align=middle width=88 height=109><A href="/news/rongyuxuezi/2010/6/106151044165089.asp"><IMG class=kuang height=109 alt=鹿泉一中 src="/Files/DSC02315.JPG" width=85 border=0></A></TD></TR></TBODY></TABLE></TD></TR>
+<TR align=middle>
+<TD align=middle height=22><A href="/news/rongyuxuezi/2010/6/106151044165089.asp">高佳鑫[图]</A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></td></tr>
+  <tr></tr>
+</table>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="/Templets/img/rykxia.jpg" width="582" height="7" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="5" rowspan="2" valign="top">
+                        </td>
+                        <td width="116" rowspan="2" valign="top">
+                            <table width="113" height="349" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td height="157" valign="top" background="/Templets/img/XXJG.jpg">
+                                        <table width="100%" height="56" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td height="53">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/gaoyinianji/Index.asp" target="_blank" class="a01">高一年级</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/gaoernianji/Index.asp" target="_blank" class="a01">高二年级</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/gaosannianji/Index.asp" target="_blank" class="a01">高三年级</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/bangongshi/Index.asp" target="_blank" class="a01">办公室</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/jiaoyuchu/Index.asp" target="_blank" class="a01">教育处</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/jiaodaochu/Index.asp" target="_blank" class="a01">教导处</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/zongwuchu/Index.asp" target="_blank" class="a01">总务处</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/jiaokeshi/Index.asp" target="_blank" class="a01">教科室</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/tuanweihui/Index.asp" target="_blank" class="a01">团委会</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/fazhianquanchu/Index.asp" target="_blank" class="a01">法制安全处</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/xiandaijiaoyujishuchu/Index.asp" target="_blank" class="a01">现代教育技术</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="4">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="113" height="393" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td valign="top" background="/Templets/img/JYZ.jpg">
+                                        <table width="100%" height="55" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td height="53">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/yuwenzu/Index.asp" target="_blank" class="a01">语文组</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/shuxuezu/Index.asp" target="_blank" class="a01">数学组</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/yingyuzu/Index.asp" target="_blank" class="a01">英语组</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/wulizu/Index.asp" target="_blank" class="a01">物理组</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/huaxuezu/Index.asp" target="_blank" class="a01">化学组</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/shengwuzu/Index.asp" target="_blank" class="a01">生物组</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/lishizu/Index.asp" target="_blank" class="a01">历史组</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/dilizu/Index.asp" target="_blank" class="a01">地理组</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/zhengzhizu/Index.asp" target="_blank" class="a01">政治组</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/yishuzu/Index.asp" target="_blank" class="a01">艺术组</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/tiyuzu/Index.asp" target="_blank" class="a01">体育组</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/xinxijishu/Index.asp" target="_blank" class="a01">信息技术</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="/news/xinlijiankang/Index.asp" target="_blank" class="a01">心理健康</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="4">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="113" height="188" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td valign="top" background="/Templets/img/XNZY.jpg">
+                                        <table width="100%" height="55" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td height="53">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="http://www.jtyhjy.com/edu/index.jsp" target="_blank" class="a01">金太阳好教育</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="http://www.dearedu.com/" target="_blank" class="a01">第二教育网</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="23" align="center" valign="top">
+                                                    <a href="http://home.c20.org.cn/mooc/
+" target="_blank" class="a01">慕课联盟</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="25" align="center" valign="top">
+                                                    <a href="http://192.168.103.10:8080/pemapsch" target="_blank" class="a01">心检系统</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="4">
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="113" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <img src="/Templets/img/XYL1.jpg" width="113" height="328" border="0" usemap="#Map4" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="13" valign="top">
+                            <table width="100%" border="0" cellspacing="1" cellpadding="3">
+ <tr>
+   <td width="25%" align="center" valign="meddle"><a href="http://www.yasipeixun.net"  target="_blank">雅思培训网</a></td>
+  <td width="25%" align="center" valign="meddle"><a href="http://www.sjzlxw.com"  target="_blank">石家庄留学网</a></td>
+  <td width="25%" align="center" valign="meddle"><a href="http://www.wenming.cn/"  target="_blank">中国文明网</a></td>
+  <td width="25%" align="center" valign="meddle"><a href="http://gzxkglm.guoshi.com/"  target="_blank">全国高中课改联盟</a></td>
+</tr><tr>  <td width="25%" align="center" valign="meddle"><a href="http://www.guoshi.com/"  target="_blank">果实网</a></td>
+  <td width="25%" align="center" valign="meddle"><a href="http://www.gaokao789.com/"  target="_blank">高考网址导航</a></td>
+  <td width="25%" align="center" valign="meddle"><a href="http://www.huaxue.com.cn/"  target="_blank">化学教育网</a></td>
+  <td width="25%" align="center" valign="meddle"><a href="http://www.wuli.com.cn/"  target="_blank">物理教育网</a></td>
+</tr><tr>  <td width="25%" align="center" valign="meddle"><a href="http://r163.com/Index.htm"  target="_blank">高中政治网</a></td>
+  <td width="25%" align="center" valign="meddle"><a href="http://www.gzmath.com/"  target="_blank">高中数学网</a></td>
+  <td width="25%" align="center" valign="meddle"><a href="http://www.cnyww.com/"  target="_blank">中国语文网</a></td>
+  <td width="25%" align="center" valign="meddle"><a href="http://www.educast.com.cn"  target="_blank">河北远程教育网</a></td>
+</tr><tr>
+ </tr>
+</table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="13" align="right" valign="top">
+                <a href="/User/Flink/Flink_add.asp" target="_blank">
+                    <img src="/Templets/img/Title_yqlj.jpg" width="280" height="70" border="0" /></a>
+            </td>
+            <td width="10" valign="top">
+            </td>
+        </tr>
+    </table>
+    <table border="0" cellspacing="0" cellpadding="0" width="1003" align="center">
+	
+<tbody>
+		
+<tr>
+			
+<td height="43" background="/Templets/img/didaohang.jpg">
+				
+<table border="0" cellspacing="0" cellpadding="0" width="100%" height="20">
+					
+<tbody>
+						
+<tr>
+							
+<td width="97%" align="middle">
+								
+<table border="0" cellspacing="0" cellpadding="0" width="90%" align="center">
+									
+<tbody>
+										
+<tr>
+											
+<td width="67"><a href="/Index.html"><font size="2">网站首页</font></a></td>
+											
+<td width="68" align="middle"><font size="2"><a href="http://www.hblqyz.cn/news/xuexiaojianjie/2008/12/081218950211505.asp">学校简介</a></font></td>
+											
+<td width="70" align="middle"><font size="2"><a href="/news/xuexiaoxinwen/Index.asp">学校新闻</a></font></td>
+											
+<td width="69" align="middle"><font size="2"><a href="/news/xuexiaoguanli/Index.asp">学校管理</a></font></td>
+											
+<td width="70" align="middle"><font size="2"><a href="/news/jiaoxueyanjiu/Index.asp">教学研究</a></font></td>
+											
+<td width="68" align="middle"><font size="2"><a href="/news/wenhuajianshe/Index.asp">文化建设</a></font></td>
+											
+<td width="76" align="middle"><font size="2"><a href="/news/jiaoshifengcai/Index.asp">教师频道</a></font></td>
+											
+<td width="69" align="middle"><font size="2"><a href="/news/rongyuxuezi/Index.asp">荣誉学子</a></font></td>
+											
+<td width="65" align="middle"><font size="2"><a href="/news/banjizhuye/Index.asp">班级网页</a></font></td>
+											
+<td width="59" align="middle"><a href="/news/yizhongxiaoqing/Index.asp" target="_blank"><font size="2">一中校庆</font></a></td>
+											
+<td width="74"><font size="2"><a href="/admin/login.asp" target="_blank">后台管理</a></font></td>
+											
+<td width="75"><a href="/news/falshengming/2008/11/0811111234145376.asp">法律声明</a></td>
+											
+<td width="146">
+												
+<p align="left"><a href="http://www.hblqyz.cn/Templets/daohang.htm">网站地图</a></p></td>
+										</tr>
+									</tbody>
+								</table></td>
+							
+<td width="3%"></td>
+						</tr>
+					</tbody>
+				</table></td>
+		</tr>
+	</tbody>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="0" width="1003" align="center">
+	
+<tbody>
+		
+<tr>
+			
+<td height="10"></td>
+		</tr>
+		
+<tr>
+			
+<td height="80" valign="center" align="middle">
+				
+<div>
+Copyright 2008, All Rights Reserved <br />
+热线电话：0311-82285085</br>
+					地址：鹿泉一中 电话:0311-82285052 邮编：050200 <br />
+					备案/许可证编号为：冀ICP备<a href="http://www.miibeian.gov.cn/">08107046</a>号 技术支持：<a href="http://www.itsjz.cn">天涯科技</a> 
+					<span class="STYLE2"></span>欢迎光临本站 <br />
+					<br />
+					
+					
+</div>
+				
+</td>
+		</tr>
+	</tbody>
+</table>
+<map id="Map" name="Map">
+	<area href="/xiaoyoul/Default.asp" shape="RECT" target="_blank" coords="12,13,105,57" />
+	<area href="/news/1banjizhuye/Index.html" shape="RECT" target="_blank" coords="13,69,107,117" />
+</map>
+    <map name="Map" id="Map">
+        <area shape="rect" coords="16,127,108,202" href="http://www.hblqyz.net/gxdh/1.htm" target="_blank" />
+        <area shape="rect" coords="16,72,106,117" href="/news/banjizhuye/Index.asp" target="_blank" />
+        <area shape="rect" coords="17,10,106,57" href="/xiaoyoul/Default.asp" target="_blank" />
+    </map>
+    <map name="Map4" id="Map4">
+        <area shape="rect" coords="11,12,108,59" href="http://www.hblqyz.cn/xiaoyoul/Default.asp" target="_blank" />
+        <area shape="rect" coords="12,72,106,117" href="http://www.hblqyz.cn/news/banjizhuye/Index.asp" target="_blank" />
+        <area shape="rect" coords="11,182,112,252" href="http://www.edu.cn/HomePage/jiao_yu_zi_yuan/college_cernet.php" target="_blank" />
+        <area shape="rect" coords="14,126,107,174" href="http://www.hblqyz.cn/html/index.html" target="_blank" />
+    </map>
+</center>
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/05/102/0012/41187125/CA051020012411871250000.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

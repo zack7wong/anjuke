@@ -1,0 +1,1020 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>南昌二十六中 - Powered by nc26z</title>
+<meta content="南昌二十六中,二十六中" name="keywords" />
+<meta content="南昌二十六中,南昌市第二十六中学" name="description" />
+<meta name="author" content="nc26z"/>
+<meta name="copyright" content="Copyright &copy; 2014 nc26z.com All Rights Reserved."/>
+<link rel="shortcut icon" href="/skin/pms/default/img/favicon.ico">
+<link href="/skin/pms/default/css/style.css" rel="stylesheet"/>
+
+<link href="/skin/pms/default/css/menu.css" rel="stylesheet"/>
+
+<link href="/skin/pms/default/css/tabPage.css" rel="stylesheet"/>
+<link href="/skin/pms/default/css/gundong.css" rel="stylesheet"/>
+
+
+<script src="/skin/comm/js/jquery-1.8.3.js"></script>
+<script src="/skin/pms/default/js/com.js"></script>
+
+<script src="/skin/pms/default/js/tabPage.js"></script>
+<script src="/skin/pms/default/js/gundong.js"></script>
+ 
+
+<script src="/skin/pms/default/js/gdCyy.js"></script>
+<script src="/skin/pms/default/js/gdKyys.js"></script>
+
+
+<!--[if IE]><script src="/skin/pms/default/js/html5.js"></script><![endif]-->
+<script language="javascript">
+$(function() {
+	var oItem = document.getElementById('item');
+	var oSpan = oItem.getElementsByTagName('span')[0];
+	var oUl = oItem.getElementsByTagName('ul')[0];
+	var aLi =oUl.getElementsByTagName('li');
+	oItem.onmouseover=function(){
+		oUl.style.display = 'block';
+		for(var i=0;i<aLi.length;i++){
+			aLi[i].index = i;
+			aLi[i].onmouseover=function(){
+				this.style.background = '#C8E1EA';
+				if(this.index!=aLi.length-1){
+					this.style.color ='#ff3300';
+				}
+			}
+			aLi[i].onmouseout=function(){
+				this.style.background = 'none';
+				this.style.color ='';
+			}
+			aLi[i].onclick=function(){
+				if(this.index!=aLi.length){
+					oSpan.innerHTML = this.innerHTML;
+					oUl.style.display = 'none';
+					var idstr = $(this).attr("id");
+					var id = idstr.substring(5);
+					$("#mId").val(id);
+				}
+			}
+		}
+	}
+	oItem.onmouseout=function(){
+		oUl.style.display = 'none';
+	}
+  
+  var scrtime;
+  $(".comList").hover(function(){
+	  clearInterval(scrtime);
+	 },function(){
+	  scrtime = setInterval(function(){
+	  var $ul = $(".comList");
+	  var liHeight = $ul.find("li:last").height();
+	  $ul.animate({marginTop : liHeight+20 +"px"},1000,function(){
+	  $ul.find("li:last").prependTo($ul);
+	  $ul.find("li:first").hide();
+	  $ul.css({marginTop:0});
+	  $ul.find("li:first").fadeIn(1000);
+	  }); 
+	 },3000);
+  }).trigger("mouseleave");
+})
+
+function checkval(){
+	if($("input[name='q']").val()=="请输入关键词"){
+		 alert("请输入关键词!");
+	   	 $("input[name='q']").focus();
+	   	 return false;
+	}
+	return true;
+}
+</script>
+</head>
+
+<body>
+<!--header-->
+<header>
+    <!--top-->
+    <!--<div id="loginhtml"></div>
+-->
+    <!--/top-->
+    
+    <!-- top_search -->
+        <!-- 		<div id="search" style="float:left;background-image:url(../img/dh_zj.png)">
+		<form action="/query.jsp" name="search" id="search" method="post" onsubmit="return checkval();">
+                    <div id="search">
+                        <div class="bar">
+                            <div class="item" id="item"> <span>新闻</span>
+                                <ul>
+                                    <li id="model2">新闻</li>
+                                    <li id="model3">图集</li>
+                                    <li id="model4">视频</li>
+                                    <li id="model5">专题</li>
+                                </ul>
+                            </div>
+                            <div class="sText"><input type="text" value="请输入关键词" onfocus="if(this.value=='请输入关键词')this.value=''" onblur="if(this.value=='')this.value='请输入关键词'" autocomplete="off" name="q"/></div>
+                        </div>
+                        <input type="hidden" name="mId" id="mId" value="2"/>
+                        <div class="sSubmit"><input type="submit" value=""/></div>
+                    </div>
+                </form>
+            </div>
+
+  -->
+    <!-- /top_search -->
+
+<div style="margin-left: auto;margin-right: auto;width:1000px;background-image:url(../img/dh_zj.png)">
+<center style="vertical-align: top;">
+      <object
+        classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+        codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,42,0"
+        id="hengfu" width="1000" height="146" >
+        <param name="movie" value="hengfu.swf">
+        <param name="bgcolor" value="#FFFFFF">
+        <param name="quality" value="high">
+        <param name="seamlesstabbing" value="false">
+        <param name="allowscriptaccess" value="samedomain">
+        <embed
+          type="application/x-shockwave-flash"
+          pluginspage="http://www.adobe.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"
+          name="hengfu" width="1000" height="146"  src="/skin/pms/default/flash/hengfu2.swf"
+          bgcolor="#FFFFFF"  quality="high"  seamlesstabbing="false" allowscriptaccess="samedomain"
+        >
+          <noembed>
+          </noembed>
+        </embed>
+      </object>
+</center>
+</div>   
+</header>
+<!--/header--> 
+
+
+
+<!--ad_1-->
+<script type="text/javascript">
+$(document).ready(function(){
+    $(function(){
+        $("body").floatAd({
+            imgSrc : '',
+            url:'',
+            id : '2'
+        });
+    })
+});
+</script>
+<!--ad_1-->
+
+<!-- nav -->
+<section class="s mt10">
+<div style="margin-left: auto;margin-right: auto;width:1000px;background-image:url(../img/dh_zj.png)">
+                <ul style="z-index:9999" id="nav"> 
+            <li style="z-index:9999;font-size:16px"><strong><a href="http://www.nc26z.com/" title="首页">首页</a></strong></li>
+                
+        	<li style="z-index:9999;font-size:16px"  class="nb"><strong><a href="http://www.nc26z.com/xxgk/index.html" title="学校概况">学校概况</a></strong>
+        	 <ul  style="z-index:9999">
+                   
+
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/xxjs/index.html" target="_blank" title="学校介绍">学校介绍</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/eslzln/index.html" target="_blank" title="办学理念">办学理念</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/xxld/index.html" target="_blank" title="学校领导">学校领导</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/bmjj/index.html" target="_blank" title="部门简介">部门简介</a></li>
+                </ul>
+        	</li>
+        	<li style="z-index:9999;font-size:16px" ><strong><a href="http://www.nc26z.com/xydt/index.html" title="校园动态">校园动态</a></strong>
+        	 <ul  style="z-index:9999">
+                   
+
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/dygz/index.html" target="_blank" title="德育工作">德育工作</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/jxgz/index.html" target="_blank" title="教学工作">教学工作</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/jyky/index.html" target="_blank" title="教育科研">教育科研</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/hqgz/index.html" target="_blank" title="后勤工作">后勤工作</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/ghgz/index.html" target="_blank" title="工会工作">工会工作</a></li>
+                </ul>
+        	</li>
+        	<li style="z-index:9999;font-size:16px" ><strong><a href="http://www.nc26z.com/djgz/index.html" title="党建工作">党建工作</a></strong>
+        	 <ul  style="z-index:9999">
+                   
+
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/zzjg/index.html" target="_blank" title="组织机构">组织机构</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/djdt/index.html" target="_blank" title="党建动态">党建动态</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/xxyd/index.html" target="_blank" title="学习园地">学习园地</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/dyfc/index.html" target="_blank" title="党员风采">党员风采</a></li>
+                </ul>
+        	</li>
+        	<li style="z-index:9999;font-size:16px" ><strong><a href="http://www.nc26z.com/paxy/index.html" title="平安校园">平安校园</a></strong>
+        	 <ul  style="z-index:9999">
+                   
+
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/gzdt/index.html" target="_blank" title="工作动态">工作动态</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/aqzd/index.html" target="_blank" title="安全制度">安全制度</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/xcjy/index.html" target="_blank" title="宣传教育">宣传教育</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/aftx/index.html" target="_blank" title="安防体系">安防体系</a></li>
+                </ul>
+        	</li>
+        	<li style="z-index:9999;font-size:16px" ><strong><a href="http://www.nc26z.com/ssfc/index.html" title="师生风采">师生风采</a></strong>
+        	 <ul  style="z-index:9999">
+                   
+
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/jsfc/index.html" target="_blank" title="教师风采">教师风采</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/xyzx/index.html" target="_blank" title="校园之星">校园之星</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/jshj/index.html" target="_blank" title="教师获奖">教师获奖</a></li>
+				<li style="z-index:9999" ><a style="border-bottom: 1px solid white;width:126px" href="http://www.nc26z.com/xsry/index.html" target="_blank" title="学生荣誉">学生荣誉</a></li>
+                </ul>
+        	</li>
+               
+                <!--li class="nb">&nbsp;</li-->
+                <!--li class="nb" style="width:90px" >&nbsp;</li-->
+
+       
+                          
+
+               
+
+            <!--li><strong><a href="" title="南昌二十六中">南昌二十六中</a></strong>
+				<a href="">南昌二十六中</a>
+				<a href="管理中心">管理中心</a>
+				<a href="/messageboard.jsp" target="_blank" title="留言板">留言板</a>
+				<a href="/questionList.jsp" target="_blank" title="问卷调查">问卷调查</a>
+            </li-->
+        </ul>
+    
+</div>
+		<div id="search" style="float:left;background-image:url(../img/dh_zj.png)">
+		<form action="/query.jsp" name="search" id="search" method="post" onsubmit="return checkval();">
+                    <div id="search">
+                        <div class="bar">
+                            <div class="item" id="item"> <span>新闻</span>
+                                <ul>
+                                    <li id="model2">新闻</li>
+                                    <li id="model3">图集</li>
+                                    <li id="model4">视频</li>
+                                    <li id="model5">专题</li>
+                                </ul>
+                            </div>
+                            <div class="sText"><input type="text" value="请输入关键词" onfocus="if(this.value=='请输入关键词')this.value=''" onblur="if(this.value=='')this.value='请输入关键词'" autocomplete="off" name="q"/></div>
+                        </div>
+                        <input type="hidden" name="mId" id="mId" value="2"/>
+                        <div class="sSubmit"><input type="submit" value=""/></div>
+                    </div>
+                </form>
+            </div>
+
+</section> 
+<!-- /nav -->
+
+<!-- 向左滚动图片广告 -->
+<section class="s mt10">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>图片滚动</title>
+</head>
+<body  >
+<style type="text/css">
+<!--
+
+#demo {
+background: #FFF;
+overflow:hidden;
+border: 1px dashed #CCC;
+width: 1000px;
+}
+#demo img {
+border: 3px solid #F2F2F2;
+}
+#indemo {
+float: left;
+width: 800%;
+}
+#demo1 {
+float: left;
+}
+#demo2 {
+float: left;
+}
+-->
+</style>
+ 
+ 
+<div id="demo">
+<div id="indemo">
+<div id="demo1">
+
+            <a href="http://www.nc26z.com/gdtp/1368.html" title="程斌" target="_blank"><img src='/skin/pms/default/img/gdtp/1368.jpg' border="0" /></a>
+            <a href="http://www.nc26z.com/gdtp/1288.html" title="学校3" target="_blank"><img src='/skin/pms/default/img/gdtp/1288.jpg' border="0" /></a>
+            <a href="http://www.nc26z.com/gdtp/1287.html" title="学校2" target="_blank"><img src='/skin/pms/default/img/gdtp/1287.jpg' border="0" /></a>
+            <a href="http://www.nc26z.com/gdtp/1286.html" title="学校1" target="_blank"><img src='/skin/pms/default/img/gdtp/1286.jpg' border="0" /></a>
+            <a href="http://www.nc26z.com/gdtp/1285.html" title="教学楼" target="_blank"><img src='/skin/pms/default/img/gdtp/1285.jpg' border="0" /></a>
+            <a href="http://www.nc26z.com/gdtp/1211.html" title="涂小明" target="_blank"><img src='/skin/pms/default/img/gdtp/1211.jpg' border="0" /></a>
+            <a href="http://www.nc26z.com/gdtp/1210.html" title="晏小明" target="_blank"><img src='/skin/pms/default/img/gdtp/1210.jpg' border="0" /></a>
+
+</div>
+<div id="demo2"></div>
+</div>
+</div>
+ 
+<script>
+<!--
+var speed=10;
+var tab=document.getElementById("demo");
+var tab1=document.getElementById("demo1");
+var tab2=document.getElementById("demo2");
+tab2.innerHTML=tab1.innerHTML;
+function Marquee(){
+if(tab2.offsetWidth-tab.scrollLeft<=0)
+tab.scrollLeft-=tab1.offsetWidth
+else{
+tab.scrollLeft++;
+}
+}
+var MyMar=setInterval(Marquee,speed);
+tab.onmouseover=function() {clearInterval(MyMar)};
+tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+-->
+</script>
+</body>
+</html></section> 
+
+<!--duilian-->
+
+<!-- 对联广告 -->
+ 
+<div id="leftDiv" style="position:absolute;top:60px;left:2%">
+	<div><a href="" target="_blank" title="热烈庆祝"><img src="/skin/pms/default/img/left.jpg" alt="热烈庆祝"/></a></div>
+	<span style="font-size:12px;color:red;cursor:pointer;" onclick="close_duilian()">关闭×</span>
+</div>
+<div id="rightDiv" style="position:absolute;top:60px;right:2%;">
+	<div><a href="" target="_blank" title="热烈庆祝"><img src="/skin/pms/default/img/right.jpg" alt="热烈庆祝"/></a></div>
+	<span style="font-size:12px;color:red;cursor:pointer;text-align:right;" onclick="close_duilian()">关闭×</span>
+</div>
+ 
+
+<script type="text/javascript">
+<!-- 
+lastScrollY = 0;
+function heartBeat(){ 
+var diffY;
+if (document.documentElement && document.documentElement.scrollTop)
+ diffY = document.documentElement.scrollTop;
+else if (document.body)
+ diffY = document.body.scrollTop
+else
+    {/*Netscape stuff*/}
+ 
+percent=.1*(diffY-lastScrollY); 
+if(percent>0)percent=Math.ceil(percent); 
+else percent=Math.floor(percent); 
+document.getElementById("leftDiv").style.top = parseInt(document.getElementById("leftDiv").style.top)+percent+"px";
+document.getElementById("rightDiv").style.top = parseInt(document.getElementById("leftDiv").style.top)+percent+"px";
+lastScrollY=lastScrollY+percent; 
+}
+
+//下面这段删除后，对联将不跟随屏幕而移动。
+window.setInterval("heartBeat()",20);
+function close_duilian(){
+  var l=document.getElementById("leftDiv");
+  var r=document.getElementById("rightDiv");
+   l.style.display="none";
+   r.style.display="none";
+}
+//-->
+</script>
+
+<!--/duilian-->
+
+<!--piaofu-->
+<!-- 漂浮广告 -->
+<!--
+<script src="/skin/pms/default/js/admove.js"></script>
+<div id="pfad-5" class="pfad-5" style="position: absolute; left: 1141px; top: 65px;z-index:9999;">
+        <a href="/messageboard.jsp" title="留言板" target="_blank"><img src="/skin/pms/default/img/pfgg2.jpg" width="152" height="46" alt="留言板"></a>
+        <div onclick="hidead5();" style="font-size:12px;cursor:pointer;" align="right">关闭×</div>
+</div>
+
+
+<script type="text/javascript">
+	var ad1=new AdMove("pfad-5");
+	ad1.Run();
+	function hidead5()
+	{document.getElementById("pfad-5").style.display="none";}
+</script>
+-->
+<!--/piaofu-->
+
+
+<!-- 滚动-->
+<!--div  style="margin:0 auto;width:1000px;height:21px">
+	<div style="float:left;height:21px;width:26px;background-image:url(/skin/pms/default/img/laba.png);background-repeat: no-repeat">
+	</div>
+	<div style="height:21px;float:left;width:950px;background-repeat: no-repeat;text-align:center">
+		<marquee style="font:'宋体';color:#FF0000">南昌市第二十六中学</marquee>
+	</div>
+
+	
+</div-->
+<!-- 滚动-->
+
+<!--main_1-->
+<section class="s mt5 b">
+  <div class="ml"  style="width:366px;">
+    <div id="jxqc_con"style="width:366px;">
+      <div class="tit" style="width:366px;"><h2>通知公示</h2><em><a href="http://www.nc26z.com/tzgs/index.jsp" target="_blank">更多 &raquo;</a></em></div>
+      <div id="jxqc_tagContent" style="width:366px;">
+        <div class="cont" style="height:183px;width:366px">
+            <ul class="nlist w96">
+              <li><a href="http://www.nc26z.com/tzgs/1487.html" title="2018年南昌市第二十六中学体育特长班招生简章" target="_blank">2018年南昌市第二十六中学体育特长班招生&hellip;</a><label>04-27</label></li>
+              
+              <li><a href="http://www.nc26z.com/tzgs/1463.html" title="关于表彰2017--2018学年度第一学期" target="_blank">关于表彰2017--2018学年度第一学期</a><label>03-13</label></li>
+              
+              <li><a href="http://www.nc26z.com/tzgs/1434.html" title="南昌二十六中第17周国旗下讲话" target="_blank">南昌二十六中第17周国旗下讲话</a><label>12-27</label></li>
+              
+              <li><a href="http://www.nc26z.com/tzgs/1433.html" title="热烈祝贺我校教师在“班班通”成果展示活动中荣获一等奖" target="_blank">热烈祝贺我校教师在“班班通”成果展示活&hellip;</a><label>12-26</label></li>
+              
+              <li><a href="http://www.nc26z.com/tzgs/1425.html" title="南昌二十六中关于征集十届二次教代会提案的通知" target="_blank">南昌二十六中关于征集十届二次教代会提案&hellip;</a><label>12-18</label></li>
+              
+              <li><a href="http://www.nc26z.com/tzgs/1424.html" title="第八届德育学术年会论文我校教师参与情况通报" target="_blank">第八届德育学术年会论文我校教师参与情况&hellip;</a><label>12-14</label></li>
+              
+              <li><a href="http://www.nc26z.com/tzgs/1416.html" title="转发：省规划办2018年度课题立项申报的通知" target="_blank">转发：省规划办2018年度课题立项申报的通知</a><label>12-12</label></li>
+              
+	    </ul>
+        </div>
+      </div>	
+   </div>
+ </div>
+
+ <div class="mc"  style="width:309px;">
+   <div id="hydt qcxw"  style="width:309px;">
+     <div id="hydt_con" style="width:309px;">
+	   <div class="tit" style="width:309px;"><h2>学校概况</h2><em><a href="http://www.nc26z.com/xxgk/index.jsp" target="_blank">更多 &raquo;</a></em></div>
+	   <div id="hydt_tagContent"  style="width:309px;">
+	     <div class="cont" style="height:183px;width:309px">
+	         <ul class="nlist w96">
+			    <li><a href="http://www.nc26z.com/xyfm/1217.html" title="办公大楼" target="_blank">办公大楼</a><label>03-13</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/xyfm/1216.html" title="学校广场" target="_blank">学校广场</a><label>03-13</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/xyfm/1215.html" title="学校足球场" target="_blank">学校足球场</a><label>03-13</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/xyfm/1253.html" title="学校大门" target="_blank">学校大门</a><label>03-20</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/xyfm/1252.html" title="学校广场-升旗台" target="_blank">学校广场-升旗台</a><label>03-20</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/xyfm/1251.html" title="教学大楼" target="_blank">教学大楼</a><label>03-20</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/xyfm/1250.html" title="学校篮球场" target="_blank">学校篮球场</a><label>03-20</label></li>
+			    
+  		 </ul>
+	     </div>
+	   </div>	
+     </div>
+   </div>
+ </div>
+
+ <div class="mr" style="width:296px;">
+     <div id="hydt qcxw" style="width:296px;">
+     <div id="hydt_con" style="width:296px;">
+	   <div class="tit" style="width:296px;"><h2>专题专栏</h2><em><a href="http://www.nc26z.com/ztzl/index.jsp" target="_blank">更多 &raquo;</a></em></div>
+	   <div id="hydt_tagContent"  style="height:186px;width:296px;">
+	     <div class="cont" style="height:186px";width:296px;">
+		     <li><a href="http://www.nc26z.com/jtbx/index.jsp" title="集团办学" target="_blank"><img src="/skin/pms/default/img/zhuanLan/zl_jtbx.jpg" width="295px" height="86px" border="0"></a></li>
+		     <li><a href="http://www.nc26z.com/lxyz/index.jsp" title="两学一做" target="_blank"><img src="/skin/pms/default/img/zhuanLan/zl_lxyz.jpg" width="295px" height="86px" border="0"></a></li>
+		     <!--li><a href="http://www.nc26z.com/sdsf/index.jsp" title="师德师风" target="_blank"><img src="/skin/pms/default/img/zhuanLan/zl_sdsf.jpg" width="295px" height="42px" border="0"></a></li>
+		     <li><a href="http://www.nc26z.com/jswmjs/index.jsp" title="精神文明建设" target="_blank"><img src="/skin/pms/default/img/zhuanLan/zl_jswmjs.jpg" width="295px" height="42px" border="0"></a></li-->
+	     </div>
+	   </div>	
+     </div>
+   </div>
+ </div>
+</section>
+<!--/main_1-->
+
+<!--main_2-->
+<!--ad_2-->
+<!--section class="s mt10">
+	<a href="http://www.nc26z.com" target="_blank" title="网站"><img width="1000" src="/skin/pms/default/img/ad.jpg" alt="网站"/></a>
+</section-->
+<!--/ad_2-->
+<!--/main_2-->
+
+<!--main_3-->
+<section class="s b mt10" style="width:1000px">
+<div class="ml" style="width:687px">
+   <div class="tit" style="width:687px"><h2>学校动态</h2><em><a href="http://www.nc26z.com/xxdt/index.jsp" target="_blank">更多 &raquo;</a></em></div>
+      <div class="cont"  style=" border-style:solid;border:1px solid #aecbd4;height:156px";style="width:687px"> 
+	<MARQUEE behavior="scroll" onmouseover=this.stop(); onmouseout=this.start(); scrollAmount=2 scrollDelay=6 direction=up height="155"  width="687">
+	<ul class="nlist w96">
+	   
+	      <li><a href="http://www.nc26z.com/dygz/1492.html" title="国旗下讲话  防溺水专题教育" target="_blank">国旗下讲话  防溺水专题教育</a><label>05-22</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/jyky/1491.html" title="南昌二十六中召开第二届“探究杯”教学竞赛工作布置会" target="_blank">南昌二十六中召开第二届“探究杯”教学竞赛工作布置会</a><label>05-18</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/jyky/1490.html" title="南昌二十六中表彰“青年教工基本功竞赛”获奖者" target="_blank">南昌二十六中表彰“青年教工基本功竞赛”获奖者</a><label>05-09</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/jyky/1489.html" title="南昌二十六中开展“南昌市教育云平台”培训活动" target="_blank">南昌二十六中开展“南昌市教育云平台”培训活动</a><label>05-09</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/jyky/1488.html" title="南昌二十六中“青年教工基本功竞赛”揭晓" target="_blank">南昌二十六中“青年教工基本功竞赛”揭晓</a><label>05-09</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/tzgs/1487.html" title="2018年南昌市第二十六中学体育特长班招生简章" target="_blank">2018年南昌市第二十六中学体育特长班招生简章</a><label>04-27</label></li>
+	      <li class="bb2"></li>
+	
+	   
+	      <li><a href="http://www.nc26z.com/dygz/1485.html" title="南昌市第二十六中学迎接市教育教学督导检查" target="_blank">南昌市第二十六中学迎接市教育教学督导检查</a><label>04-17</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/jyky/1481.html" title="4月份一体机卫生检查情况通报" target="_blank">4月份一体机卫生检查情况通报</a><label>04-08</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/dygz/1479.html" title="南昌二十六中组织全体初二学生开展“缅怀革命先烈”暨“三色文化”主题实践活动 " target="_blank">南昌二十六中组织全体初二学生开展“缅怀革命先烈”暨“三色文化”主题实践活动 </a><label>04-08</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/dygz/1477.html" title="追忆红色文化，传承红色基因" target="_blank">追忆红色文化，传承红色基因</a><label>04-08</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/dygz/1473.html" title="南昌二十六中第 七 周国旗下讲话" target="_blank">南昌二十六中第 七 周国旗下讲话</a><label>04-08</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/jxgz/1467.html" title="南昌二十六中教辅活动正式开课" target="_blank">南昌二十六中教辅活动正式开课</a><label>03-19</label></li>
+	      <li class="bb2"></li>
+	
+	   
+	      <li><a href="http://www.nc26z.com/jxgz/1466.html" title="南昌二十六中高考报名体检工作顺利完成" target="_blank">南昌二十六中高考报名体检工作顺利完成</a><label>03-19</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/tzgs/1463.html" title="关于表彰2017--2018学年度第一学期" target="_blank">关于表彰2017--2018学年度第一学期</a><label>03-13</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/dygz/1460.html" title="南昌二十六中学表彰文明学生" target="_blank">南昌二十六中学表彰文明学生</a><label>03-13</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/dygz/1458.html" title="南昌二十六中开展开学初仪容仪表大检查活动" target="_blank">南昌二十六中开展开学初仪容仪表大检查活动</a><label>03-13</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/hqgz/1456.html" title="南昌二十六中采取措施积极应对恶劣天气带来的安全隐患" target="_blank">南昌二十六中采取措施积极应对恶劣天气带来的安全隐患</a><label>01-26</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/jyky/1454.html" title="好书推荐之——《家为何伤人》" target="_blank">好书推荐之——《家为何伤人》</a><label>01-23</label></li>
+	      <li class="bb2"></li>
+	
+	   
+	      <li><a href="http://www.nc26z.com/dygz/1451.html" title="南昌二十六中开展“阳光心理健康人生”主题晨会" target="_blank">南昌二十六中开展“阳光心理健康人生”主题晨会</a><label>01-22</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/dygz/1450.html" title=" 南昌二十六中开展“禁燃”系列活动" target="_blank"> 南昌二十六中开展“禁燃”系列活动</a><label>01-22</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/dygz/1447.html" title="第22周国旗下讲话" target="_blank">第22周国旗下讲话</a><label>01-22</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/dygz/1444.html" title="新年寄语" target="_blank">新年寄语</a><label>01-15</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/dygz/1441.html" title="21周国旗下讲话" target="_blank">21周国旗下讲话</a><label>01-15</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/dygz/1438.html" title="南昌26中第27届“江北之星”艺术节文艺汇演" target="_blank">南昌26中第27届“江北之星”艺术节文艺汇演</a><label>12-27</label></li>
+	      <li class="bb2"></li>
+	
+	   
+	      <li><a href="http://www.nc26z.com/tzgs/1434.html" title="南昌二十六中第17周国旗下讲话" target="_blank">南昌二十六中第17周国旗下讲话</a><label>12-27</label></li>
+	      
+	
+	   
+	      <li><a href="http://www.nc26z.com/tzgs/1433.html" title="热烈祝贺我校教师在“班班通”成果展示活动中荣获一等奖" target="_blank">热烈祝贺我校教师在“班班通”成果展示活动中荣获一等奖</a><label>12-26</label></li>
+	      
+	
+	</ul>
+	</MARQUEE>   
+
+  </div>
+</div>
+
+<div class="mc" style="width:1px;">
+</div>
+
+<div class="mr" style="width:296px;">
+     <div id="hydt qcxw" style="width:296px;">
+     <div id="hydt_con" style="width:296px;">
+	   
+	   <div id="hydt_tagContent"  style="height:186px;width:296px;">
+	     <div class="cont" style="height:186px";width:296px;">
+		     <!--li><a href="http://www.nc26z.com/jtbx/index.jsp" title="集团办学" target="_blank"><img src="/skin/pms/default/img/zhuanLan/zl_jtbx.jpg" width="295px" height="42px" border="0"></a></li>
+		     <li><a href="http://www.nc26z.com/lxyz/index.jsp" title="两学一做" target="_blank"><img src="/skin/pms/default/img/zhuanLan/zl_lxyz.jpg" width="295px" height="42px" border="0"></a></li-->
+		     <li><a href="http://www.nc26z.com/sdsf/index.jsp" title="师德师风" target="_blank"><img src="/skin/pms/default/img/zhuanLan/zl_sdsf.jpg" width="295px" height="86px" border="0"></a></li>
+		     <li><a href="http://www.nc26z.com/jswmjs/index.jsp" title="精神文明建设" target="_blank"><img src="/skin/pms/default/img/zhuanLan/zl_jswmjs.jpg" width="295px" height="86px" border="0"></a></li>
+	     </div>
+	   </div>	
+     </div>
+   </div>
+ </div>
+<!--
+	<div class="mc">
+    	<div class="tit"><h2>教育资讯</h2><em><a href="http://www.nc26z.com/jyzx/index.jsp" target="_blank">更多 &raquo;</a></em></div>
+	  <div class="cont" style=" border-style:solid;border:1px solid #aecbd4;height:153px"> 
+	
+	    <ul class="nlist w96">
+	    <li><a href="http://www.nc26z.com/jyzx/1465.html" title="南昌二十六中开展教辅志愿服务宣传周活动" target="_blank">南昌二十六中开展教辅志愿服务宣传&hellip;</a><label>03-15</label></li>
+	    
+	    <li><a href="http://www.nc26z.com/jyzx/1415.html" title="有朋自远方来，不亦乐乎” ——记长沙市教育局考察团到我校随访观摩" target="_blank">有朋自远方来，不亦乐乎” ——记&hellip;</a><label>12-11</label></li>
+	    
+	    <li><a href="http://www.nc26z.com/jyzx/1311.html" title="南昌二十六中教辅工作再创新思路" target="_blank">南昌二十六中教辅工作再创新思路</a><label>03-29</label></li>
+	    
+	    <li><a href="http://www.nc26z.com/jyzx/1301.html" title="理想的教育永远在路上 ---- 市教育局举办2016年全市教育系统领导干部新春学习班，市委常委、宣传部长龙和南出席并讲话     " target="_blank">理想的教育永远在路上 ---- 市教育&hellip;</a><label>03-26</label></li>
+	    
+	    <li><a href="http://www.nc26z.com/jyzx/1281.html" title="南昌二十六中开学初聘请专家来校讲座" target="_blank">南昌二十六中开学初聘请专家来校讲座</a><label>03-24</label></li>
+	    
+	    <li><a href="http://www.nc26z.com/jyzx/1267.html" title="南昌二十六中召开期末“初升高”编写小组阶段会" target="_blank">南昌二十六中召开期末“初升高”编&hellip;</a><label>03-24</label></li>
+	    
+		</ul>
+            </div>
+	</div>
+
+	<div class="mr">
+		<div class="tit"><h2>专题专栏</h2><em><a href="http://www.nc26z.com/ztzl/index.jsp" target="_blank">更多 &raquo;</a></em></div>
+		    <div class="cont"  style="border-style:solid;border:1px solid #aecbd4;height:159px"> 
+			 <ul class="nlist w96">
+			    <li><a href="http://www.nc26z.com/ztzl/1453.html" title="好书推荐之——《家为何伤人》" target="_blank">好书推荐之——《家为何伤&hellip;</a><label>01-23</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/ztzl/1302.html" title="市教育局专项督查考核“两个责任” 落实情况　" target="_blank">市教育局专项督查考核“两&hellip;</a><label>03-26</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/ztzl/1300.html" title="教育部对2016年全国城市义务教育招生入学工作做出部署" target="_blank">教育部对2016年全国城市义&hellip;</a><label>03-26</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/ztzl/1241.html" title="南昌市市直机关事业单位医疗保险政策知识问答" target="_blank">南昌市市直机关事业单位医&hellip;</a><label>03-13</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/ztzl/1236.html" title="刘振北—奔跑的蜗牛" target="_blank">刘振北—奔跑的蜗牛</a><label>03-13</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/ztzl/1235.html" title="聂清平—用微课翻转课堂" target="_blank">聂清平—用微课翻转课堂</a><label>03-13</label></li>
+			    
+			 </ul>
+		    </div>
+
+
+		</div>
+	</div>
+-->
+
+</section>
+
+<!--/main_3-->
+
+
+<!--main_4-->
+<section class="s b mt10">
+	<div class="ml">
+          <div> 
+		<div class="tit"><h2>德育工作</h2><em><a href="http://www.nc26z.com/dygz/index.jsp" target="_blank">更多 &raquo;</a></em></div>
+	  </div>
+           <div class="cont"  style=" border-style:solid;border:1px solid #aecbd4;height:153px"> 
+            <ul class="nlist w96">
+            <li><a href="http://www.nc26z.com/dygz/1492.html" title="国旗下讲话  防溺水专题教育" target="_blank">国旗下讲话  防溺水专题教育</a><label>05-22</label></li>
+            
+            <li><a href="http://www.nc26z.com/dygz/1485.html" title="南昌市第二十六中学迎接市教育教学督导检查" target="_blank">南昌市第二十六中学迎接市教育教学&hellip;</a><label>04-17</label></li>
+            
+            <li><a href="http://www.nc26z.com/dygz/1479.html" title="南昌二十六中组织全体初二学生开展“缅怀革命先烈”暨“三色文化”主题实践活动 " target="_blank">南昌二十六中组织全体初二学生开展&hellip;</a><label>04-08</label></li>
+            
+            <li><a href="http://www.nc26z.com/dygz/1477.html" title="追忆红色文化，传承红色基因" target="_blank">追忆红色文化，传承红色基因</a><label>04-08</label></li>
+            
+            <li><a href="http://www.nc26z.com/dygz/1473.html" title="南昌二十六中第 七 周国旗下讲话" target="_blank">南昌二十六中第 七 周国旗下讲话</a><label>04-08</label></li>
+            
+            <li><a href="http://www.nc26z.com/dygz/1460.html" title="南昌二十六中学表彰文明学生" target="_blank">南昌二十六中学表彰文明学生</a><label>03-13</label></li>
+            
+		</ul>
+	  </div>
+	  </div>
+        </div>
+
+
+	<div class="mc">
+    	<div class="tit"><h2>教学工作</h2><em><a href="http://www.nc26z.com/jxgz/index.jsp" target="_blank">更多 &raquo;</a></em></div>
+	  <div class="cont" style=" border-style:solid;border:1px solid #aecbd4;height:153px"> 
+	
+	    <ul class="nlist w96">
+	    <li><a href="http://www.nc26z.com/jwgz/1383.html" title="关于举办校第三届“体育节”暨第三十一届田径运动会的通知" target="_blank">关于举办校第三届“体育节”暨第三&hellip;</a><label>11-26</label></li>
+	    
+	    <li><a href="http://www.nc26z.com/jwgz/1379.html" title="南昌市第二十六中学招聘教师公告" target="_blank">南昌市第二十六中学招聘教师公告</a><label>11-26</label></li>
+	    
+	    <li><a href="http://www.nc26z.com/jwgz/1381.html" title="2017-2018学年度第一学期二中教育集团初三第一次联考阅卷人员及时间安排" target="_blank">2017-2018学年度第一学期二中教育&hellip;</a><label>11-21</label></li>
+	    
+	    <li><a href="http://www.nc26z.com/jwgz/1382.html" title="2017-2018学年度第一学期南昌二中教育集团二十六中校区期中考试工作安排" target="_blank">2017-2018学年度第一学期南昌二中&hellip;</a><label>11-20</label></li>
+	    
+	    <li><a href="http://www.nc26z.com/jwgz/1380.html" title="2017年11月南昌二中教育集团二十六中校区期中考试考务工作安排" target="_blank">2017年11月南昌二中教育集团二十六&hellip;</a><label>11-20</label></li>
+	    
+	    <li><a href="http://www.nc26z.com/jwgz/1277.html" title="南昌二十六中举办2013-2014学年班主任上岗培训班" target="_blank">南昌二十六中举办2013-2014学年班&hellip;</a><label>03-24</label></li>
+	    
+		</ul>
+            </div>
+	</div>
+
+	<div class="mr">
+		<div class="tit"><h2>团委工作</h2><em><a href="http://www.nc26z.com/twgz/index.jsp" target="_blank">更多 &raquo;</a></em></div>
+		    <div class="cont"  style="border-style:solid;border:1px solid #aecbd4;height:153px"> 
+			 <ul class="nlist w96">
+			    <li><a href="http://www.nc26z.com/twgz/1484.html" title="南昌二十六中组织全体初二学生开展"缅怀革命先烈"暨"三色文化"主题实践活动" target="_blank">南昌二十六中组织全体初二&hellip;</a><label>04-08</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/twgz/1483.html" title="追忆红色文化，传承红色基因--南昌二十六中组织学生参观方志敏烈士纪念馆" target="_blank">追忆红色文化，传承红色基&hellip;</a><label>04-08</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/twgz/1482.html" title="南昌二十六中开展"清明祭扫，缅怀先烈"主题活动" target="_blank">南昌二十六中开展"清明祭&hellip;</a><label>04-08</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/twgz/1472.html" title="南昌二十六中志愿者小分队向居民发放绿色清明倡导书" target="_blank">南昌二十六中志愿者小分队&hellip;</a><label>03-27</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/twgz/1471.html" title=" 关于清明期间开展革命烈士陵园祭扫活动的通知" target="_blank"> 关于清明期间开展革命烈&hellip;</a><label>03-20</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/twgz/1470.html" title=" 南昌二十六中“学雷锋”走进敬老院" target="_blank"> 南昌二十六中“学雷锋”&hellip;</a><label>03-20</label></li>
+			    
+			 </ul>
+		    </div>
+
+
+		</div>
+	</div>
+
+
+</section>
+
+<!--/main_4-->
+
+
+
+<!--main_5-->
+<section class="s b mt10">
+	<div class="ml">
+          <div> 
+		<div class="tit"><h2>教育科研</h2><em><a href="http://www.nc26z.com/jyky/index.jsp" target="_blank">更多 &raquo;</a></em></div>
+	  </div>
+           <div class="cont"  style=" border-style:solid;border:1px solid #aecbd4;height:153px"> 
+            <ul class="nlist w96">
+            <li><a href="http://www.nc26z.com/jyky/1491.html" title="南昌二十六中召开第二届“探究杯”教学竞赛工作布置会" target="_blank">南昌二十六中召开第二届“探究杯”&hellip;</a><label>05-18</label></li>
+            
+            <li><a href="http://www.nc26z.com/jyky/1490.html" title="南昌二十六中表彰“青年教工基本功竞赛”获奖者" target="_blank">南昌二十六中表彰“青年教工基本功&hellip;</a><label>05-09</label></li>
+            
+            <li><a href="http://www.nc26z.com/jyky/1489.html" title="南昌二十六中开展“南昌市教育云平台”培训活动" target="_blank">南昌二十六中开展“南昌市教育云平&hellip;</a><label>05-09</label></li>
+            
+            <li><a href="http://www.nc26z.com/jyky/1488.html" title="南昌二十六中“青年教工基本功竞赛”揭晓" target="_blank">南昌二十六中“青年教工基本功竞赛&hellip;</a><label>05-09</label></li>
+            
+            <li><a href="http://www.nc26z.com/jyky/1481.html" title="4月份一体机卫生检查情况通报" target="_blank">4月份一体机卫生检查情况通报</a><label>04-08</label></li>
+            
+            <li><a href="http://www.nc26z.com/jyky/1454.html" title="好书推荐之——《家为何伤人》" target="_blank">好书推荐之——《家为何伤人》</a><label>01-23</label></li>
+            
+		</ul>
+	  </div>
+	  </div>
+        </div>
+
+
+	<div class="mc">
+    	<div class="tit"><h2>后勤工作</h2><em><a href="http://www.nc26z.com/hqgz/index.jsp" target="_blank">更多 &raquo;</a></em></div>
+	  <div class="cont" style=" border-style:solid;border:1px solid #aecbd4;height:153px"> 
+	
+	    <ul class="nlist w96">
+	    <li><a href="http://www.nc26z.com/hqgz/1456.html" title="南昌二十六中采取措施积极应对恶劣天气带来的安全隐患" target="_blank">南昌二十六中采取措施积极应对恶劣&hellip;</a><label>01-26</label></li>
+	    
+	    <li><a href="http://www.nc26z.com/hqgz/1324.html" title="后勤工作" target="_blank">后勤工作</a><label>09-12</label></li>
+	    
+	    <li><a href="http://www.nc26z.com/hqgz/1429.html" title="南昌二十六中学校教室管理制度" target="_blank">南昌二十六中学校教室管理制度</a><label>08-31</label></li>
+	    
+	    <li><a href="http://www.nc26z.com/hqgz/1428.html" title="南昌市第二十六中学食品卫生安全管理制度汇编" target="_blank">南昌市第二十六中学食品卫生安全管&hellip;</a><label>07-26</label></li>
+	    
+	    <li><a href="http://www.nc26z.com/hqgz/1430.html" title="南昌二十六中班级公物管理试行办法" target="_blank">南昌二十六中班级公物管理试行办法</a><label>08-30</label></li>
+	    
+		</ul>
+            </div>
+	</div>
+
+	<div class="mr">
+		<div class="tit"><h2>工会工作</h2><em><a href="http://www.nc26z.com/ghgz/index.jsp" target="_blank">更多 &raquo;</a></em></div>
+		    <div class="cont"  style="border-style:solid;border:1px solid #aecbd4;height:153px"> 
+			 <ul class="nlist w96">
+			    <li><a href="http://www.nc26z.com/ghgz/1426.html" title="南昌二十六中十届二次教代会提案表" target="_blank">南昌二十六中十届二次教代&hellip;</a><label>12-18</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/ghgz/1387.html" title="我校为退休教师祝寿" target="_blank">我校为退休教师祝寿</a><label>11-27</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/ghgz/1240.html" title="南昌市市直机关事业单位医疗保险政策知识问答" target="_blank">南昌市市直机关事业单位医&hellip;</a><label>03-13</label></li>
+			    
+			    <li><a href="http://www.nc26z.com/ghgz/1221.html" title="洪教人字[2014]69号  南昌市转发第七次省特级教师评选文件" target="_blank">洪教人字[2014]69号  南昌&hellip;</a><label>03-13</label></li>
+			    
+			 </ul>
+		    </div>
+
+
+		</div>
+	</div>
+
+
+</section>
+
+<!--/main_5-->
+
+
+
+
+
+
+<!--main_6-->
+<section class="s mt10 bor1 b">
+
+
+<!--main_1-->
+
+<!--/main_1-->
+
+
+<section class="s mt5 b">
+	<div class="ml">
+          <div> 
+		<div class="tit"><h2>学生天地</h2><em><a href="http://www.nc26z.com/xstd/index.jsp" target="_blank">更多 &raquo;</a></em></div>
+	  </div>
+           <div class="cont">
+            <ul class="nlist w96">
+            <li><a href="http://www.nc26z.com/xstd/1493.html" title="国旗下讲话  防溺水专题教育" target="_blank">国旗下讲话  防溺水专题教育</a><label>05-22</label></li>
+            
+            <li><a href="http://www.nc26z.com/xstd/1486.html" title="南昌市第二十六中学迎接市教育教学督导检查" target="_blank">南昌市第二十六中学迎接市教育教学&hellip;</a><label>04-17</label></li>
+            
+            <li><a href="http://www.nc26z.com/xstd/1480.html" title="南昌二十六中组织全体初二学生开展“缅怀革命先烈”暨“三色文化”主题实践活动" target="_blank">南昌二十六中组织全体初二学生开展&hellip;</a><label>04-08</label></li>
+            
+            <li><a href="http://www.nc26z.com/xstd/1478.html" title="追忆红色文化，传承红色基因" target="_blank">追忆红色文化，传承红色基因</a><label>04-08</label></li>
+            
+            <li><a href="http://www.nc26z.com/xstd/1474.html" title="南昌二十六中第 七 周国旗下讲话" target="_blank">南昌二十六中第 七 周国旗下讲话</a><label>04-08</label></li>
+            
+            <li><a href="http://www.nc26z.com/xstd/1462.html" title="南昌二十六中学表彰文明学生" target="_blank">南昌二十六中学表彰文明学生</a><label>03-13</label></li>
+            
+		</ul>
+	  </div>
+	  </div>
+	  
+        </div>
+
+		 
+	<div class="mc">
+	  <div class="tit"><h2>精彩课堂</h2><em><a href="http://www.nc26z.com/jckt/index.jsp" target="_blank">更多 &raquo;</a></em></div>
+	 
+           <div class="cont">
+
+	   <div id="gdKyys" style="overflow:hidden;height:152px; width:350px; border:1px solid #dde5bc; float:left">
+	   <div id=gdKyys1> 
+            <ul class="nlist w96">
+            <li><a href="http://www.nc26z.com/jckt/1280.html" title="熊兰—浅谈我校中加班体育课教学内容调整方向" target="_blank">熊兰—浅谈我校中加班体育课教学内容调整方向</a></li>
+            
+            <li><a href="http://www.nc26z.com/jckt/1279.html" title="南昌二十六中张盛华老师向学生传播国粹知识" target="_blank">南昌二十六中张盛华老师向学生传播国粹知识</a></li>
+            
+            <li><a href="http://www.nc26z.com/jckt/1278.html" title="南昌二十六中教师节前学习龚全珍" target="_blank">南昌二十六中教师节前学习龚全珍</a></li>
+            
+            <li><a href="http://www.nc26z.com/jckt/1195.html" title="涂礼达_美术《美术作品的意义与价值判断》" target="_blank">涂礼达_美术《美术作品的意义与价值判断》</a></li>
+            
+            <li><a href="http://www.nc26z.com/jckt/1194.html" title="吴歆_语文《采薇》" target="_blank">吴歆_语文《采薇》</a></li>
+            
+            <li><a href="http://www.nc26z.com/jckt/1193.html" title="王国华_历史《古代商业的发展》" target="_blank">王国华_历史《古代商业的发展》</a></li>
+            
+		</ul>
+
+	    </div>
+	    <div id=gdKyys2></div>
+            </div>
+
+	  </div>
+	  </div>
+     </div>
+
+
+	<div class="mr">
+	  <div class="tit"><h2>咨询建议</h2><em><a href="http://www.nc26z.com/jyjy/index.jsp" target="_blank">更多 &raquo;</a></em></div>
+	
+           <div class="cont">
+            <ul class="nlist w96">
+            <li><a href="http://www.nc26z.com/jyjy/1464.html" title="南昌二十六中初三名校联盟考试质量分析会" target="_blank">南昌二十六中初三名校联盟考试质量分析会</a></li>
+            
+            <li><a href="http://www.nc26z.com/jyjy/1294.html" title="全市普通高中多样化特色化发展专题研修班开班" target="_blank">全市普通高中多样化特色化发展专题研修班开班</a></li>
+            
+            <li><a href="http://www.nc26z.com/jyjy/1292.html" title="南昌二十六中教研组开展十八大精神学习会" target="_blank">南昌二十六中教研组开展十八大精神学习会</a></li>
+            
+            <li><a href="http://www.nc26z.com/jyjy/1282.html" title="南昌二十六中重视校本教材的研发工作" target="_blank">南昌二十六中重视校本教材的研发工作</a></li>
+            
+            <li><a href="http://www.nc26z.com/jyjy/1242.html" title="南昌市二十六中学教学质量分析表" target="_blank">南昌市二十六中学教学质量分析表</a></li>
+            
+            <li><a href="http://www.nc26z.com/jyjy/1237.html" title="高中教育多样化特色化发展的实施意见" target="_blank">高中教育多样化特色化发展的实施意见</a></li>
+            
+		</ul>
+	  </div>
+	  </div>
+
+        </div>
+              
+    </div>
+</section>
+
+
+ 
+ 
+
+ 
+<!--/main_6-->
+
+ 
+
+
+
+<!--ad_2-->
+<!--section class="s mt10">
+	<a href="http://www.nc26z.com/jswmjs/index.html" target="_blank" title="网站"><img width="1000" src="/skin/pms/default/img/bottom.jpg" alt="网站"/></a>
+</section-->
+<!--/ad_2-->
+
+<!--ad_2-->
+<!--section class="s mt10">
+	<a href="http://www.nc26z.com/jswmjs/index.html" target="_blank" title="网站"><img width="1000" src="/skin/pms/default/img/ad2.jpg" alt="网站"/></a>
+</section-->
+<!--/ad_2-->
+
+
+<!--flink-->
+<div class="s flink mt10 bor1">
+	<div class="tit1"><h2>友情链接</h2></div>
+    <!--div class="fcont w98 mt10 mb5">
+    	    </div-->
+
+<table width="100%" cellspacing="5">
+<tbody>
+<tr align="center">
+<td width="103">
+<a href="http://www.moe.edu.cn/" target="_blank" title="网站名称：中国教育部：http://http://www.moe.edu.cn/网站简介：">
+<img src="http://www.nc26z.com/member/upload/pms/links/zgjyb.jpg" width="103" height="41" border="0"></a></td><td width="103">
+<a href="http://www.jxedu.gov.cn" target="_blank" title="网站名称：江西教育网网站地址：http://www.jxedu.gov.cn.cn网站简介：">
+<img src="http://www.nc26z.com/member/upload/pms/links/jxedu.jpg" width="103" height="41" border="0"></a></td>
+<td width="103"><a href="http://www.ncedu.com.cn" target="_blank" title="网站名称：南昌教育信息网网站地址：http://www.ncedu.gov.cn
+网站简介：南昌教育信息网"><img src="http://www.ncedu.gov.cn/images/logo.jpg" width="103" height="41" border="0"></a></td>
+<td width="103"><a href="http://www.jxdjg.gov.cn/" target="_blank" title="网站名称：江西省电化教育馆网站地址：http://www.jxdjg.gov.cn/网站简介：">
+<img src="http://www.nc26z.com/member/upload/pms/links/jxdjw.jpg" width="103" height="41" border="0"></a></td><td width="103">
+<a href="http://www.jxjyzy.com/" target="_blank" title="网站名称：江西省基础教育资源网网站地址：http://www.jxjyzy.com/网站简介：">
+<img src="http://www.nc26z.com/member/upload/pms/links/jxjcjyzyw.jpg" width="103" height="41" border="0"></a></td><td width="103">
+<a href="http://nc.wenming.cn/" target="_blank" title="网站名称：中国文明网南昌站网站地址：http://nc.wenming.cn/网站简介：">
+<img src="http://www.nc26z.com/member/upload/pms/links/ncwmw.jpg" width="103" height="41" border="0"></a></td><td width="103">
+
+<a href="http://www.jxwmw.cn/" target="_blank" title="网站名称：江西文明网：http://www.jxwmw.cn/网站简介：">
+<img src="http://www.nc26z.com/member/upload/pms/links/jxwmw.jpg" width="103" height="41" border="0"></a></td><td width="103">
+
+<!--a href="http://www.ncwm.gov.cn/" target="_blank" title="网站名称：南昌文明网网站地址：http://www.ncwm.gov.cn/网站简介：">
+<img src="http://www.nc26z.com/member/upload/pms/links/ncwmw1.jpg" width="103" height="41" border="0"></a></td><td width="103"-->
+
+<a href="http://www.jxncez.cn/Index.shtml" target="_blank" title="网站名称：南昌二中地址：http://www.jxncez.cn/网站简介：">
+<img src="http://www.nc26z.com/member/upload/pms/links/nc2z.jpg" width="103" height="41" border="0"></a></td><td width="103">
+
+<!--a href="http://bszs.conac.cn/sitename?method=show&id=2AC069D5A379773FE053022819AC7384" target="_blank"><img src="/skin/pms/default/img/blue.png" width="80" height="80" border="0"></a-->
+
+
+</td></tr><tr align="center" class="tdbg"></tr></tbody></table>
+
+
+</div> 
+<!--flink-->
+
+<!--footer--> 
+<footer class="s mt5">
+<a href="">关于我们</a>    |   <!--a href="/messageboard.jsp">留言板</a-->   
+
+<!--a href="">信息中心</a> | <a href="/guide/index.jsp">网站导航</a--><br/>
+ICP备案号：赣ICP备12004603号-2 &nbsp; Copyright &copy; 2016 - 2017 <a href="" target="_blank">www.nc26z.com All Rights Reserved </a>
+<script type="text/javascript">
+  document.write(unescape("%3Cscript src='/visitViews.jsp%3Furl%3D")+document.location.href+unescape("' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</footer>
+<script language="javascript">
+$(function() {
+	$.get("/jslogin.jsp",{},function(data){
+		$("#loginhtml").html(data);
+	},"html");
+})
+</script><!--/footer-->
+
+<!--duilian-->
+<!--/duilian-->
+<!--piaofu-->
+<!--/piaofu-->
+
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript   src='http://dcs.conac.cn/js/15/223/0000/41166060/CA152230000411660600001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

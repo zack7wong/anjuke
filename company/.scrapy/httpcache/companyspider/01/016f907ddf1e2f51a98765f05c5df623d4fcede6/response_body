@@ -1,0 +1,1082 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head><meta http-equiv="X-UA-Compatible" content="IE=7"> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+<title>景县中学</title>
+<script type="text/javascript" src="/Script/jquery.js"></script> 
+<script type="text/javascript" src="http://resource.uninforun.com/image/3641/1/dw_26_bjzs.js"></script> 
+<link href="http://resource.uninforun.com/image/3641/1/dw_26_Style.css" rel="stylesheet" type="text/css" /> 
+</head> 
+<body>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> <script type="text/javascript" src="http://resource.uninforun.com/image/systemData/sysmemberlogin/1.0/26/CommonJs/CommonFunction.js"></script>
+    <script type="text/javascript" src="http://resource.uninforun.com/image/systemData/sysmemberlogin/1.0/26/CommonJs/Validator.js"></script>
+    <script type="text/javascript" src="http://resource.uninforun.com/image/systemData/sysmemberlogin/1.0/26/script/PopIframe.js"></script>
+    <script src="http://resource.uninforun.com/image/systemData/sysmemberlogin/1.0/26/CommonJs/HebcaClient.js" type="text/javascript"></script>
+<div class="head">
+  <div class="top"><div style="float:right; margin-top:20px;"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="334" height="274">
+       <param name="movie" value="http://resource.uninforun.com/image/3641/1/index.swf">
+       <param name="quality" value="high" />
+       <param name="wmode" value="transparent">
+       <embed src="http://resource.uninforun.com/image/3641/1/index.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"  width="334" height="274" wmode="transparent" ></embed>
+</object></div></div>
+</div>
+<div class="nav" >
+  <div class="topnav" >
+    <ul>
+      <li style="width:88px;"><a href="Default.aspx">首页</a></li>
+      <li style="width:88px;"><a href="List.aspx?sections=7">学校概况 </a></li>
+      <li style="width:88px;"><a href="List.aspx?sections=8">教育教学</a></li>
+      <li style="width:88px;"><a href="List.aspx?sections=9">招生升学</a></li>
+      <li style="width:88px;"><a href="List.aspx?sections=10">学生天地</a></li>
+      <li style="width:88px;"><a href="List.aspx?sections=11">文化景中</a></li>
+      <li style="width:88px;"><a href="List.aspx?sections=12">景中新闻</a></li>
+      <li style="width:88px;"><a href="List.aspx?sections=13">通知公告</a></li>
+ <li style="width:88px;"><a href="List.aspx?sections=49">德育之窗</a></li>
+ <li style="width:88px;"><a href="signup.aspx">学校开放日</a></li>
+ <li style="width:88px;"><a href=http://home.xinkaoyun.com>家校互联</a></li>
+
+    </ul>
+  </div>
+</div>
+<div class="w980">
+  <div class="login">
+    <div class="login_l">&nbsp;&nbsp;欢迎您登录河北景县中学，今天是：<script>
+var week=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+var testDate = new Date(); 
+function getNowFormatDate() 
+{ 
+var day = new Date(); 
+var Year = 0; 
+var Month = 0; 
+var Day = 0; 
+var CurrentDate = ""; 
+//初始化时间 
+//Year= day.getYear();//有火狐下2008年显示108的bug 
+Year= day.getFullYear();//ie火狐下都可以 
+Month= day.getMonth()+1; 
+Day = day.getDate(); 
+//Hour = day.getHours(); 
+// Minute = day.getMinutes(); 
+// Second = day.getSeconds(); 
+CurrentDate += Year + "年"; 
+if (Month >= 10 ) 
+{ 
+CurrentDate += Month + "月"; 
+} 
+else 
+{ 
+CurrentDate += "0" + Month + "月"; 
+} 
+if (Day >= 10 ) 
+{ 
+CurrentDate += Day ; 
+} 
+else 
+{ 
+CurrentDate += "0" + Day ; 
+} 
+return CurrentDate+"日"; 
+}
+document.write(getNowFormatDate()+" "+week[testDate .getDay()]);
+</script></div>
+    <div class="login_r">
+ <div id="logincs"  style="display:none;">
+
+      <form id="frm_ca_login" action="sysmemberlogin/SaveForm.ashx" method="post" target="ifm" onsubmit="return _doPostData(this, false)">
+<input type="hidden" name="__CALLBACK" value="window.parent.window.caSignCallBack('{0}')"/>
+<input type="hidden" name="__FUNC" value="0"/>
+<input type="hidden" name="__DLL" value="Eshr.Member"/>
+<input type="hidden" name="__METHOD" value="Eshr.Member.Web.MemberLogin.SsoCaLogin"/>
+                            <input type="hidden" id="sso_signature" name="sso_signature" />
+                            <input type="hidden" id="sso_signCert" name="sso_signCert" />
+                            <input type="hidden" id="sso_cryptCert" name="sso_cryptCert" />
+                            <input type="hidden" name="TRUN_PAGE" value="../Default.aspx" />
+                     </form>
+ <form id="frm_login" action="sysmemberlogin/SaveForm.ashx" method="post" target="ifm" onsubmit="return _doPostData(this, false)">
+<input type="hidden" name="__CALLBACK" value="window.parent.window.LocalCallBack('{0}')"/>
+<input type="hidden" name="__FUNC" value="0"/>
+<input type="hidden" name="__DLL" value="Eshr.Member"/>
+<input type="hidden" name="__METHOD" value="Eshr.Member.Web.MemberLogin.SsoLogin"/>
+      <table width="600" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><span><strong>教师登录</strong></span></td>
+          <td>用户名： </td>
+          <td><input id="username" type="text" name="username" maxlength="30"  class="logink" style="width:80px" /></td>
+          <td> 密码：</td>
+          <td><input id="password" type="password" name="password"  maxlength="30" class="logink" style="width:80px" /></td>
+<td>验证码：<input type="text" maxlength="4" id="vcode" name="vcode" autocomplete="off" class="logink" style="width:80px" /><img id="imgVcode" align="absmiddle" src="http://221.192.138.100/eshrsso/SSO_ValidateImageHandler.ashx" alt="图片看不清？点击重新得到验证码" onclick="change_verify();"
+                                            style="border:#FFCC00 1px solid; cursor: pointer;" /></td>
+          <td><a href="#" onclick="LocalSubmit()" ><img src="http://resource.uninforun.com/image/3641/1/dw_27_dl.jpg" width="51" height="21" /></a></td>
+        </tr>
+      </table>
+<input type="hidden" name="TRUN_PAGE" value="../Fdefault.aspx"/>
+                                
+                                <input type="hidden" name="hid_sitepkid" id="hid_sitepkid" value="1" />
+                                </form>
+ <iframe id="ifm" style="display: none;" name="ifm" width="100%" height="500px"></iframe>
+</div>
+<div id="blogin" style="display:none;">
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><span><strong>教师登录</strong></span></td>
+          <td>欢迎 <span style=" color:#900">老师</span>，<a href="Fdefault.aspx" style=" color:red;"  target="_blank">进入河北景县中学教师专用网</a>&nbsp;&nbsp;<a href="sysnews/default.aspx" style="color:red;"  target="_blank" >新闻管理</a>|<a href="sysmemberlogin/EditPassWord.aspx"  style="color:red;"  target="_blank" >修改密码</a></td>
+          <td><a href="sysmemberlogin/Logout.aspx" ><img src="http://resource.uninforun.com/image/3641/1/dw_31_tc.jpg" width="51" height="21" /></a></td>
+        </tr>
+      </table>
+</div>
+ <div id="dlglogout" style="width: 300px; height: 150px; display:none;">
+    </div>
+ <script type="text/javascript">
+ var uid = ""; 
+        if(uid != ""){
+            document.getElementById("blogin").style.display = "";
+        }else
+{
+document.getElementById("logincs").style.display = "";
+}
+    function change_verify(){
+         var url =  "http://221.192.138.100/eshrsso/SSO_ValidateImageHandler.ashx"+"?tmp="+Math.random();
+         document.all.imgVcode.src=url;
+    }
+    
+    function cleanVerify(){
+        document.getElementById("vcode").value="";
+    }
+    
+    
+    /* 登录部分提交数据*/   
+    function LocalSubmit(){
+        var v = Validate();       
+        if(!v){ return false;}
+        document.forms["frm_login"].submit();
+    }
+    
+    
+    function LocalCallBack(info){
+        if(Validate())
+        {     
+            var array = info.split("|");
+            $F("frm_login").action = array[0];
+            document.forms["frm_login"].target = "_self";    
+            document.forms["frm_login"].submit();   
+        }  
+    }
+    
+    function getses(){
+    
+        if(document.getElementById("vcode") != null){
+            document.getElementById("vcode").style.color = "#999999";  
+            document.getElementById("vcode").onfocus = function(){
+               cleanVerify();
+            }
+        }
+        var error="";
+if(error!= ""){
+            alert(error);        }
+        //判断是否已经有本地session
+        var uid = ""; 
+        if(uid != ""){
+            document.forms["frm_login"].style.display = "none";
+            document.getElementById("divIncoming").style.display = "";
+        }
+                
+        var year,month,day,hours,minutes,seconds,ap;
+        var intYear,intMonth,intDay,intHours,intMinutes,intSeconds;
+        var today;
+        today=new Date();
+        intYear=today.getYear();
+        intMonth=today.getMonth()+1;
+        intDay=today.getDate();
+        intHours=today.getHours();
+        intMinutes=today.getMinutes();
+        intSeconds=today.getSeconds();
+        //获取系统时间的小时数
+        if(intHours==0)
+        {
+        hours=intHours+":";
+        ap="凌晨";
+        }
+        else if(intHours<12)
+        {
+        hours=intHours+":";
+        ap="上午";
+        }
+        else if(intHours==12)
+        {
+        hours=intHours+":";
+        ap="中午";
+        }
+        else
+        {
+        intHours=intHours-12;
+        hours=intHours+":";
+        ap="下午";
+        }
+        //获取系统时间的分数
+        if(intMinutes<10)
+        {
+        minutes="0"+intMinutes;
+        }
+        else
+        minutes=intMinutes;
+        //获取系统时间的秒数
+        if(intSeconds<10)
+        seconds="0"+intSeconds+" ";
+        else
+        seconds=intSeconds+" ";
+        timeString=intYear+"年"+intMonth+"月"+intDay+"日 "+hours+minutes+" "+ap;
+    }
+    if (document.all){window.attachEvent('onload',getses)}//IE
+           else{window.addEventListener('load',getses,false);} //FireFox
+    function reset(){
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+    }
+        
+    function Validate(){
+        var bool = false;
+        bool = RequiredValidator("username", "", "请输入登录名", true);
+        bool = bool &&  RequiredValidator("password", "", "请输入用户密码", true);
+        bool = bool &&  RequiredValidator("vcode", "", "请输入验证码", true);
+        return bool;
+    }
+    
+    function DoLogout(){
+        var ifm   =  $C("iframe");
+        ifm.src="DoLogOut.aspx";
+        document.body.appendChild(ifm);  
+        ifm.style.width= "100%"; 
+        ifm.style.display = "none";
+        var ifram   =   document.frames[0];  
+        PopIframeOpen('', 'Wait.aspx',280, 120); 
+     }
+    </script>
+    <script type="text/javascript">
+   
+    function caSign() {
+        try {
+            var client = new HebcaClient();
+            $("#frm_ca_login")[0].submit();
+        } catch (e) {
+            alert(e.message);
+        }
+        return false;
+    }
+    function caSigntoServer(random) {    
+        try {
+            var client = new HebcaClient();
+            $("#sso_signature").val(client.Sign(random));
+            $("#sso_signCert").val(client.GetSignCert());
+            $("#sso_cryptCert").val(client.GetCryptCert());
+            $("#frm_ca_login").attr("action", $("#frm_ca_login").attr("pre_action"));           
+            $("#frm_ca_login").attr("target", "_self");
+            $("#frm_ca_login")[0].submit();
+        } catch (e) { alert(e.message) }
+    }
+    function caSignCallBack(src) {
+        if (src.substr(0, 4) == "http") {
+            var urls = src.split("||");
+            $("#frm_ca_login").attr("pre_action", urls[0]);
+            var randomurl = urls[1];
+            //appendJsonp(randomurl,{},caSigntoServer);
+            $.ajax({url:randomurl,dataType:"jsonp",jsonp:"func",success:function(rd){ caSigntoServer(rd);},error:function(errtxt){ alert(errtxt);}});
+        }
+        else {
+            alert(src);
+        }
+    }
+    </script>
+    </div>
+  </div>
+</div><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><div class="w980">
+<div class="main_l">
+<div class="w220 zxgg mt10">
+<h4>最新公告<span><a href="List.aspx?sections=13" target="_blank" >更多>></a></span></h4>
+<marquee scrollamount="1" direction="up" onMouseOver="stop()" onMouseOut="start()" height="180px;"> <ul>
+
+<li>
+<a href="Content.aspx?sections=13&pkid=1363" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">2018年5月河北景县中学最新教师招聘公告</a><p>05-09</p></li>
+
+<li>
+<a href="Content.aspx?sections=13&pkid=1353" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">我校将于5月4日举行盛大成人礼活动！</a><p>04-28</p></li>
+
+<li>
+<a href="Content.aspx?sections=13&pkid=1349" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">2018河北景县中学教师招聘公告（三）</a><p>04-18</p></li>
+
+<li>
+<a href="Content.aspx?sections=13&pkid=1343" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">2018年河北景县中学教师招聘公告（二）</a><p>04-09</p></li>
+
+<li>
+<a href="Content.aspx?sections=13&pkid=1329" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">2018年河北景县中学教师招聘公告（一）</a><p>03-22</p></li>
+
+<li>
+<a href="Content.aspx?sections=13&pkid=1299" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">河北景县中学诚聘高中教师（三）</a><p>12-21</p></li>
+
+<li>
+<a href="Content.aspx?sections=13&pkid=1286" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">河北景县中学诚聘高中教师（二）</a><p>11-24</p></li>
+
+<li>
+<a href="Content.aspx?sections=13&pkid=1285" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">河北景县中学诚聘高中教师(一)</a><p>11-23</p></li>
+
+<li>
+<a href="Content.aspx?sections=13&pkid=1284" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">景县中学教师招聘公告（三）</a><p>11-08</p></li>
+
+<li>
+<a href="Content.aspx?sections=13&pkid=1283" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">景县中学教师招聘公告（二）</a><p>11-06</p></li>
+
+</ul></marquee>
+</div>
+<div class="w220 whjz mt10">
+<h4>文化景中<span><a href="List.aspx?sections=11" target="_blank" >更多>></a></span></h4>
+<ul>
+
+<li>
+<a href="Content.aspx?sections=11&pkid=1362" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">心之所向，无所不能——我校高三开始二模考试</a></li>
+
+<li>
+<a href="Content.aspx?sections=11&pkid=1352" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">优秀班级推介——高三B12</a></li>
+
+<li>
+<a href="Content.aspx?sections=11&pkid=1350" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">优秀班级推介——高三B10</a></li>
+
+<li>
+<a href="Content.aspx?sections=11&pkid=1346" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">4月7、8日我校开展2018年高三一模考试！</a></li>
+
+<li>
+<a href="Content.aspx?sections=11&pkid=1345" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">我校学子“语文报杯”再得佳绩！</a></li>
+
+<li>
+<a href="Content.aspx?sections=11&pkid=1338" target="_blank" style="float:left; width:170px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">高三B部举行一模誓师动员会</a></li>
+
+</ul>
+</div>
+</div>
+    <div class="mainty">
+        <div class="xwzx">
+            <h4>
+                <span style="float:left">
+                    景中新闻
+                </span>
+                <span style="float:right">
+                    <a href="List.aspx?sections=12" target="_blank" class="more">
+                        <img src="http://resource.uninforun.com/image/3641/1/dw_26_gd.png" width="42"
+                        height="34" />
+                    </a>
+                </span>
+            </h4>
+            <div class="xwzx">
+                <div class="dtpic">
+                    <div class="foucs1 " onMouseOver="clearAuto1();" onMouseOut="setAuto1()">
+                        <ul id="foucs1">
+                            
+                                    <li style="display: none;">
+                                        <a href="Content.aspx?sections=34&pkid=1365" target="_blank">
+                                                <img src="http://resource.uninforun.com/fileuploadweb/3641/SysData/1/34/1_1365/link.jpg">
+                                            </a>
+                                    </li>
+                                
+                                    <li style="display: none;">
+                                        <a href="Content.aspx?sections=34&pkid=1364" target="_blank">
+                                                <img src="http://resource.uninforun.com/fileuploadweb/3641/SysData/1/34/1_1364/link.jpg">
+                                            </a>
+                                    </li>
+                                
+                                    <li style="display: none;">
+                                        <a href="Content.aspx?sections=34&pkid=1359" target="_blank">
+                                                <img src="http://resource.uninforun.com/fileuploadweb/3641/SysData/1/34/1_1359/link.jpg">
+                                            </a>
+                                    </li>
+                                
+                                    <li style="display: none;">
+                                        <a href="Content.aspx?sections=34&pkid=1355" target="_blank">
+                                                <img src="http://resource.uninforun.com/fileuploadweb/3641/SysData/1/34/1_1355/link.jpg">
+                                            </a>
+                                    </li>
+                                
+                                    <li style="display: none;">
+                                        <a href="Content.aspx?sections=34&pkid=1344" target="_blank">
+                                                <img src="http://resource.uninforun.com/fileuploadweb/3641/SysData/1/34/1_1344/link.jpg">
+                                            </a>
+                                    </li>
+                                
+                        </ul>
+                        <script>
+                            document.getElementById("foucs1").getElementsByTagName("li")[0].style.display = "block";
+                        </script>
+                        <ul id="con1">
+                            
+                                    <li>
+                                        <a href="Content.aspx?sections=34&pkid=1365" target="_blank">我校召开家长委员会工作会议</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="Content.aspx?sections=34&pkid=1364" target="_blank">市安全督导组来我校督查学校安全工作</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="Content.aspx?sections=34&pkid=1359" target="_blank">十八而志，担当以行——景县中学首届成人礼取得圆满成功！</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="Content.aspx?sections=34&pkid=1355" target="_blank">景县中学2018年体育节隆重开幕</a>
+                                    </li>
+                                
+                                    <li>
+                                        <a href="Content.aspx?sections=34&pkid=1344" target="_blank">“幸福是奋斗出来的” ——我校召开全体教职工大会</a>
+                                    </li>
+                                
+                        </ul>
+                        <script>
+                            document.getElementById("con1").getElementsByTagName("li")[0].style.display = "block";
+                        </script>
+                        <ul id="num1">
+                            <script>
+                                var num1xs = 1;
+                            </script>
+                            
+                                    <script>
+                                        if (num1xs == 1) document.write("<li onClick='Mea1(" + (num1xs - 1) + ");' class='on'>" + num1xs + "</li>");
+                                        else document.write("<li onClick='Mea1(" + (num1xs - 1) + ");' class=''>" + num1xs + "</li>");
+                                        num1xs++;
+                                    </script>
+                                
+                                    <script>
+                                        if (num1xs == 1) document.write("<li onClick='Mea1(" + (num1xs - 1) + ");' class='on'>" + num1xs + "</li>");
+                                        else document.write("<li onClick='Mea1(" + (num1xs - 1) + ");' class=''>" + num1xs + "</li>");
+                                        num1xs++;
+                                    </script>
+                                
+                                    <script>
+                                        if (num1xs == 1) document.write("<li onClick='Mea1(" + (num1xs - 1) + ");' class='on'>" + num1xs + "</li>");
+                                        else document.write("<li onClick='Mea1(" + (num1xs - 1) + ");' class=''>" + num1xs + "</li>");
+                                        num1xs++;
+                                    </script>
+                                
+                                    <script>
+                                        if (num1xs == 1) document.write("<li onClick='Mea1(" + (num1xs - 1) + ");' class='on'>" + num1xs + "</li>");
+                                        else document.write("<li onClick='Mea1(" + (num1xs - 1) + ");' class=''>" + num1xs + "</li>");
+                                        num1xs++;
+                                    </script>
+                                
+                                    <script>
+                                        if (num1xs == 1) document.write("<li onClick='Mea1(" + (num1xs - 1) + ");' class='on'>" + num1xs + "</li>");
+                                        else document.write("<li onClick='Mea1(" + (num1xs - 1) + ");' class=''>" + num1xs + "</li>");
+                                        num1xs++;
+                                    </script>
+                                
+                        </ul>
+                        <script>
+                            var showNum1 = document.getElementById("num1");
+                            //首屏焦点图
+                            var m1 = showNum1.getElementsByTagName("li").length; //图片个数
+                            var n1 = 0;
+                            var showNum1 = document.getElementById("num1");
+                            function Mea1(value) {
+                                n1 = value;
+                                setBg1(value);
+                                plays1(value);
+                                cons1(value);
+                            }
+                            function setBg1(value) {
+                                for (var i = 0; i < m1; i++) if (value == i) {
+                                    showNum1.getElementsByTagName("li")[i].className = 'on';
+                                } else {
+                                    showNum1.getElementsByTagName("li")[i].className = '';
+                                }
+                            }
+                            function plays1(value) {
+                                try {
+                                    with(foucs1) {
+                                        filters[0].Apply();
+                                        for (i = 0; i < m1; i++) {
+                                            i == value ? children[i].style.display = "block": children[i].style.display = "none";
+                                        }
+                                        filters[0].play();
+                                    }
+                                } catch(e) {
+                                    var divlist1 = document.getElementById("foucs1").getElementsByTagName("li");
+                                    for (i = 0; i < m1; i++) {
+                                        i == value ? divlist1[i].style.display = "block": divlist1[i].style.display = "none";
+                                    }
+                                }
+                            }
+                            function cons1(value) {
+                                try {
+                                    with(con1) {
+                                        for (i = 0; i < m1; i++) i == value ? children[i].style.display = "block": children[i].style.display = "none";
+                                    }
+                                } catch(e) {
+                                    var titList1 = document.getElementById("con1").getElementsByTagName("li");
+                                    for (i = 0; i < m1; i++) {
+                                        i == value ? titList1[i].style.display = "block": titList1[i].style.display = "none";
+                                    }
+                                }
+                            }
+                            function clearAuto1() {
+                                clearInterval(autoStart1);
+                            }
+                            function setAuto1() {
+                                autoStart1 = setInterval("auto1(n1)", 3000);
+                            }
+                            function auto1() {
+                                n1++;
+                                if (n1 > m1 - 1) n1 = 0;
+                                Mea1(n1);
+                            }
+                            setAuto1();
+                        </script>
+                    </div>
+                </div>
+                <div class="dtlist">
+                    <div class="dtlistone">
+                        
+                                <h3>
+                                    <a href="Content.aspx?sections=35&pkid=1365" target="_blank" class="hongfont">我校召开家长委员会工作会议</a>
+                                </h3>
+                                <p>
+                                    <input type="hidden" id="szywh" value="1365"
+                                    />
+                                    <a href="Content.aspx?sections=35&pkid=1365" target="_blank">
+                                            详情>>
+                                        </a>
+                                </p>
+                            
+                    </div>
+                    <ul>
+                        
+                                <li style="width:390px">
+                                    <a href="Content.aspx?sections=35&pkid=1365" target="_blank" style="float:left; width:300px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">我校召开家长委员会工作会议</a>
+                                    <span>
+                                        2018-05-28
+                                    </span>
+                                </li>
+                            
+                                <li style="width:390px">
+                                    <a href="Content.aspx?sections=35&pkid=1364" target="_blank" style="float:left; width:300px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">市安全督导组来我校督查学校安全工作</a>
+                                    <span>
+                                        2018-05-14
+                                    </span>
+                                </li>
+                            
+                                <li style="width:390px">
+                                    <a href="Content.aspx?sections=35&pkid=1363" target="_blank" style="float:left; width:300px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">2018年5月河北景县中学最新教师招聘公告</a>
+                                    <span>
+                                        2018-05-09
+                                    </span>
+                                </li>
+                            
+                                <li style="width:390px">
+                                    <a href="Content.aspx?sections=35&pkid=1359" target="_blank" style="float:left; width:300px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">十八而志，担当以行——景县中学首届成人礼取得圆满成功！</a>
+                                    <span>
+                                        2018-05-07
+                                    </span>
+                                </li>
+                            
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mainty2" style="margin-top:20px;">
+            <div class="byjyw">
+                <div>
+                    <h4>
+                        <span style="float:left">
+                            教育教学
+                        </span>
+                        <span style="float:right">
+                            <a href="List.aspx?sections=8" target="_blank" class="more">
+                                <img src="http://resource.uninforun.com/image/3641/1/dw_26_gd.png" width="86"
+                                height="34" />
+                            </a>
+                        </span>
+                    </h4>
+                </div>
+                <div class="byjy">
+                    <ul>
+                        
+                                <li>
+                                    <a href="Content.aspx?sections=8&pkid=1360" target="_blank" style="float:left; width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">春蚕品格暖学子，红烛精神照儒乡—— 我校青年教师王飞被共青团景县县委 评为“儒乡最美青年”</a>
+                                    <span>
+                                        2018-05-07
+                                    </span>
+                                </li>
+                            
+                                <li>
+                                    <a href="Content.aspx?sections=8&pkid=1347" target="_blank" style="float:left; width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">加强队伍建设 培育青年才俊</a>
+                                    <span>
+                                        2018-04-12
+                                    </span>
+                                </li>
+                            
+                                <li>
+                                    <a href="Content.aspx?sections=8&pkid=1341" target="_blank" style="float:left; width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">我校开展“优秀教师示范课”活动</a>
+                                    <span>
+                                        2018-04-09
+                                    </span>
+                                </li>
+                            
+                                <li>
+                                    <a href="Content.aspx?sections=8&pkid=1316" target="_blank" style="float:left; width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">受伤不下火线，一心教书育人——记景中教师王英霞</a>
+                                    <span>
+                                        2018-01-22
+                                    </span>
+                                </li>
+                            
+                                <li>
+                                    <a href="Content.aspx?sections=8&pkid=1309" target="_blank" style="float:left; width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">爱心献学生，热情洒教育--青年才俊杨学玲老师</a>
+                                    <span>
+                                        2018-01-08
+                                    </span>
+                                </li>
+                            
+                                <li>
+                                    <a href="Content.aspx?sections=8&pkid=1307" target="_blank" style="float:left; width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">瞄准高考，解读考纲</a>
+                                    <span>
+                                        2017-12-31
+                                    </span>
+                                </li>
+                            
+                    </ul>
+                </div>
+            </div>
+            <div class="jygyw">
+                <div>
+                    <h4>
+                        <span style="float:left">
+                            招生升学
+                        </span>
+                        <span style="float:right">
+                            <a href="List.aspx?sections=9" target="_blank" class="more">
+                                <img src="http://resource.uninforun.com/image/3641/1/dw_26_gd.png" width="86"
+                                height="34" />
+                            </a>
+                        </span>
+                    </h4>
+                </div>
+                <div class="jygy">
+                    <ul>
+                        
+                                <li>
+                                    <a href="Content.aspx?sections=9&pkid=1362" target="_blank" style="float:left; width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">心之所向，无所不能——我校高三开始二模考试</a>
+                                    <span>
+                                        2018-05-08
+                                    </span>
+                                </li>
+                            
+                                <li>
+                                    <a href="Content.aspx?sections=9&pkid=1352" target="_blank" style="float:left; width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">优秀班级推介——高三B12</a>
+                                    <span>
+                                        2018-04-26
+                                    </span>
+                                </li>
+                            
+                                <li>
+                                    <a href="Content.aspx?sections=9&pkid=1350" target="_blank" style="float:left; width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">优秀班级推介——高三B10</a>
+                                    <span>
+                                        2018-04-20
+                                    </span>
+                                </li>
+                            
+                                <li>
+                                    <a href="Content.aspx?sections=9&pkid=1346" target="_blank" style="float:left; width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">4月7、8日我校开展2018年高三一模考试！</a>
+                                    <span>
+                                        2018-04-12
+                                    </span>
+                                </li>
+                            
+                                <li>
+                                    <a href="Content.aspx?sections=9&pkid=1345" target="_blank" style="float:left; width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">我校学子“语文报杯”再得佳绩！</a>
+                                    <span>
+                                        2018-04-12
+                                    </span>
+                                </li>
+                            
+                                <li>
+                                    <a href="Content.aspx?sections=9&pkid=1338" target="_blank" style="float:left; width:180px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">高三B部举行一模誓师动员会</a>
+                                    <span>
+                                        2018-04-03
+                                    </span>
+                                </li>
+                            
+                    </ul>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="w980">
+        <div class="mainty2">
+            <div>
+                <h4>
+                    学生天地
+                    <span>
+                        <a href="List.aspx?sections=10" target="_blank" class="more">
+                            <img src="http://resource.uninforun.com/image/3641/1/dw_26_gd.png" width="86"
+                            height="34" />
+                        </a>
+                    </span>
+                </h4>
+            </div>
+            <DIV class="jcsjbj">
+                <div class="jcsj">
+                    <div id="demo">
+                        <div id="indemo">
+                            <div id="demo1">
+                                <ul class="gundong">
+                                    
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=1313" target="_blank">
+                                                                <img src="" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=1313" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">2018新年晚会（一）</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=1305" target="_blank">
+                                                                <img src="http://resource.uninforun.com/image/3641/1/2018迎新晚会小视频.flv" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=1305" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">联欢迎元旦，开启新征程</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=1085" target="_blank">
+                                                                <img src="" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=1085" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">2017年体育节精彩瞬间（一）</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=1082" target="_blank">
+                                                                <img src="" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=1082" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">河北景县中学高考励志演讲</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=725" target="_blank">
+                                                                <img src="" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=725" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">彰显集体力量，团结就会成功</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=638" target="_blank">
+                                                                <img src="" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=638" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">军训结束教官们为同学们进行表演</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=501" target="_blank">
+                                                                <img src="http://resource.uninforun.com/fileuploadweb/3641/SysData/1/30/1_501/link.jpg" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=501" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">昂扬斗志  振奋精神</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=500" target="_blank">
+                                                                <img src="http://resource.uninforun.com/fileuploadweb/3641/SysData/1/30/1_500/link.jpg" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=500" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">2016体育节精彩瞬间（三）</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=499" target="_blank">
+                                                                <img src="" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=499" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">2016体育节精彩瞬间（二）</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=493" target="_blank">
+                                                                <img src="http://resource.uninforun.com/fileuploadweb/3641/SysData/1/30/1_493/link.jpg" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=493" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">2016体育节精彩瞬间（一）</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=492" target="_blank">
+                                                                <img src="" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=492" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">育人为本 健康第一</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=480" target="_blank">
+                                                                <img src="http://resource.uninforun.com/fileuploadweb/3641/SysData/1/30/1_480/link.jpg" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=480" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">传承传统文化    领略国学风采</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=447" target="_blank">
+                                                                <img src="http://resource.uninforun.com/fileuploadweb/3641/SysData/1/30/1_447/link.jpg" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=447" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">张弛皆有度 严肃而活泼</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=139" target="_blank">
+                                                                <img src="http://resource.uninforun.com/fileuploadweb/3641/SysData/1/30/1_139/link.jpg" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=139" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">高二年级篮球赛</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=73" target="_blank">
+                                                                <img src="http://resource.uninforun.com/fileuploadweb/3641/SysData/1/30/1_73/link.JPG" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=73" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">高二年级拔河比赛</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=66" target="_blank">
+                                                                <img src="http://resource.uninforun.com/fileuploadweb/3641/SysData/1/30/1_66/link.JPG" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=66" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">2015高一军训</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=63" target="_blank">
+                                                                <img src="http://resource.uninforun.com/fileuploadweb/3641/SysData/1/30/1_63/link.png" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=63" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">景县中学学生课间操风采</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                            <li>
+                                                <div align="center">
+                                                    <span class="jcsj">
+                                                        <a href="Content.aspx?sections=30&pkid=26" target="_blank">
+                                                                <img src="http://resource.uninforun.com/fileuploadweb/3641/SysData/1/30/1_26/link.jpg" width="" height="" />
+                                                            </a>
+                                                        <br/>
+                                                        <a href="Content.aspx?sections=30&pkid=26" target="_blank" style="float:left; width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">高三学生百日誓师大会</a>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        
+                                </ul>
+                            </div>
+                            <div id="demo2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+               
+                var speed = 1;
+                var tab = document.getElementById("demo");
+                var tab1 = document.getElementById("demo1");
+                var tab2 = document.getElementById("demo2");
+                tab2.innerHTML = tab1.innerHTML;
+                function Marquee() {
+                    if (tab2.offsetWidth - tab.scrollLeft <= 0) tab.scrollLeft -= tab1.offsetWidth
+                    else {
+                        tab.scrollLeft++;
+                    }
+                }
+                var MyMar = setInterval(Marquee, speed);
+                tab.onmouseover = function() {
+                    clearInterval(MyMar)
+                };
+                tab.onmouseout = function() {
+                    MyMar = setInterval(Marquee, speed)
+                }; 
+            </script>
+        </div>
+    </div>
+    <style>
+        #stuff { position: fixed; top:370px; right:50px; z-index: 999; width:
+        200px; height:200px; text-align:center }
+    </style>
+    <div id="stuff">
+        <img src="http://resource.uninforun.com/image/3641/1/erweima.jpg" width="200"
+        height="200" />
+        <p style="text-align:center">
+            关注我们
+        </p>
+    </div>
+    <div class="w980 clear" style="padding-top:10px; padding-bottom:10px;">
+        <div class="link  mt10 ">
+            <ul>
+                
+                        <li style="width:150px">
+                            <a href='http://121.17.126.22:8132/jingxianzhongxue/Login.aspx' target="_blank">
+                                景县中学家校互联
+                            </a>
+                        </li>
+                    
+                        <li style="width:150px">
+                            <a href='http://www.nlc.cn' target="_blank">
+                                中国国家数字图书馆
+                            </a>
+                        </li>
+                    
+                        <li style="width:150px">
+                            <a href='http://www.gushiwen.org' target="_blank">
+                                中国古诗文网
+                            </a>
+                        </li>
+                    
+                        <li style="width:150px">
+                            <a href='http://www.xiangpi.com/' target="_blank">
+                                橡皮网
+                            </a>
+                        </li>
+                    
+                        <li style="width:150px">
+                            <a href='http://www.zxxk.com/' target="_blank">
+                                中学学科网
+                            </a>
+                        </li>
+                    
+                        <li style="width:150px">
+                            <a href='http://www.jszg.cn/' target="_blank">
+                                中国教师资格网
+                            </a>
+                        </li>
+                    
+                        <li style="width:150px">
+                            <a href='http://www.zgxjyw.com' target="_blank">
+                                中国新教育网
+                            </a>
+                        </li>
+                    
+                        <li style="width:150px">
+                            <a href='http://rc.k12.com.cn/' target="_blank">
+                                k12教育资源云
+                            </a>
+                        </li>
+                    
+                        <li style="width:150px">
+                            <a href='http://www.teacher.com.cn/' target="_blank">
+                                全国中小学教师继续教育网
+                            </a>
+                        </li>
+                    
+                        <li style="width:150px">
+                            <a href='http://www.jy12.net/index.asp' target="_blank">
+                                中国教师教研网
+                            </a>
+                        </li>
+                    
+                        <li style="width:150px">
+                            <a href='http://www.dearedu.com/' target="_blank">
+                                第二教育网
+                            </a>
+                        </li>
+                    
+                        <li style="width:150px">
+                            <a href='http://www.hbhz.net/' target="_blank">
+                                衡水中学
+                            </a>
+                        </li>
+                    
+                        <li style="width:150px">
+                            <a href='http://www.eol.cn/' target="_blank">
+                                中国教育在线
+                            </a>
+                        </li>
+                    
+                        <li style="width:150px">
+                            <a href='http://www.moe.gov.cn/' target="_blank">
+                                教育部
+                            </a>
+                        </li>
+                    
+            </ul>
+        </div>
+    </div>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><div class="foot">版权所有·河北景县中学<br />
+学校地址:景县景华大街189号   联系电话：03184222331    邮政编码：053500<br/>冀ICP备15023823号-1
+</div>
+</body>
+</html>

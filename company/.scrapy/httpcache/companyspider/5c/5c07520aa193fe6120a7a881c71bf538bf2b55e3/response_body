@@ -1,0 +1,514 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+ <meta name="Keywords" content="重庆工贸职业技术学院，重庆工贸学院，工贸学院，工贸职业技术学院，重庆工贸职院，蒿大,重庆高职，重庆大专，重庆专科">
+
+<meta name="Description" content="重庆工贸职业技术学院是重庆市人民政府举办的全日制普通高等职业学校，自1936年建校以来，为国家培养了6万多名技术人才和管理人才。">
+
+ <title>重庆工贸职业技术学院官方网站——市级示范院校</title>
+ <link rel="shortcut icon" href="/favicon.ico" />
+<link rel="prefetch" href="/Item/list.asp?id=594" />
+ <link href="/images/mainpic/maincss.css" rel="stylesheet" type="text/css" />
+ <LINK href="/images/qq/qq.css" type=text/css rel=stylesheet>
+ <style type="text/css">
+#mainmenu ul li {	width:94px;
+		padding: 10px 0 9px 6px;
+	 z-index:998;
+	_width: 100px; /* IE6 */
+	_padding: 10px 0px 0px;/* IE6 */
+}
+#buttomer {
+		background-image: url(/UploadFiles/2014-06-13/283/2014061311472897008.jpg);
+	}
+.jb{ background-image: url(/UploadFiles/2014-06-18/283/2014061814424585909.gif); 
+}
+#ddzszl {
+	height: 146px;
+	width: 297px;
+}
+
+#gglan .mulitline a{display:inline;}
+#gglan .mulitline li{height:60px;border-top:0px;background-image: url(/UploadFiles/2014-06-18/283/2014061814460320820.gif);}
+.more{
+position:absolute;z-index:100;left:340px;top:7px;letter-spacing:1px;
+width:60px;height:20px;}
+.more a{font-size:13px;}
+/*
+#bgkk{background-image:url(/UploadFiles/2014-06-18/283/2014061813574324300.jpg);
+background-repeat:repeat-y;
+background-position:center;
+}
+*/
+</style>
+ <script src="/images/mainpic/jquery10.1.js" type="text/javascript"></script>
+ <script src="/images/mainpic/jquery.kinMaxShow.js" type="text/javascript"></script>
+<script src="/images/mainpic/DD_belatedPNG.js" type="text/javascript"></script>
+<SCRIPT src="/images/qq/ServiceQQ.htm"></SCRIPT>
+ <script type="text/javascript"  language="javascript"> 
+   
+
+$(function(){ 
+ $("#kinMaxShow").kinMaxShow({
+   height:380,hoverPause:false,
+   button:{
+     showIndex:false,
+     normal:{background:'url(/images/mainpic/slider-sprites.png) no-repeat -30px 0',width:'30px',height:'30px',marginRight:'5px',border:'0',right:'44%',bottom:'30px'},
+     focus:{background:'url(/images/mainpic/slider-sprites.png) no-repeat 0 0',border:'0'}
+    }  
+  }); 
+});
+
+
+  
+    $(function(){
+    var _wrap=$('ul.mulitline');
+    var _interval=3000;
+    var _moving;	
+    _wrap.hover(function(){
+    clearInterval(_moving);
+    },function(){
+    _moving=setInterval(function(){
+    var _field=_wrap.find('li:first');
+    var _h=_field.height();
+    _field.animate({marginTop:-_h+'px'},600,function(){
+    _field.css('marginTop',0).appendTo(_wrap);
+    })
+    },_interval)
+    }).trigger('mouseleave');
+    });
+ 
+    
+
+    $(function(){
+    $(".m1").mouseover(function(){
+    $(this).css("background-image","url('/images/mainpic/bg0001.png')");
+    }
+    ).mouseout(function(){
+    $(this).css("background-image","none");
+    });
+    });
+	
+
+
+$(document).ready(function(){
+	var $tab_li = $('#tab ul li');
+	$tab_li.hover(function(){
+		$(this).addClass('selected').siblings().removeClass('selected');
+		var index = $tab_li.index(this);
+		$('div.tab_box > div').eq(index).show().siblings().hide();
+	});	
+});
+function showLocale(objD)
+{
+	var str,colorhead,colorfoot;
+	var yy = objD.getYear();
+	if(yy<1900) yy = yy+1900;
+	var MM = objD.getMonth()+1;
+	//if(MM<10) MM = '0' + MM;
+	var dd = objD.getDate();
+	//if(dd<10) dd = '0' + dd;
+	var hh = objD.getHours();
+	if(hh<10) hh = '0' + hh;
+	var mm = objD.getMinutes();
+	if(mm<10) mm = '0' + mm;
+	var ss = objD.getSeconds();
+	if(ss<10) ss = '0' + ss;
+	var ww = objD.getDay();
+	//if  ( ww==0 )  colorhead="<font color=\"#FF0000\">";
+	//if  ( ww > 0 && ww < 6 )  colorhead="<font color=\"#373737\">";
+	//if  ( ww==6 )  colorhead="<font color=\"#008000\">";
+	if  (ww==0)  ww="星期日";
+	if  (ww==1)  ww="星期一";
+	if  (ww==2)  ww="星期二";
+	if  (ww==3)  ww="星期三";
+	if  (ww==4)  ww="星期四";
+	if  (ww==5)  ww="星期五";
+	if  (ww==6)  ww="星期六";
+	//colorfoot="</font>"
+	str =  yy + "年" + MM + "月" + dd + "日 " + hh + ":" + mm + ":" + ss + "  " + ww ;
+	return(str);
+}
+
+function tick()
+{
+	var today;
+	today = new Date();
+	document.getElementById("localtime").innerHTML = showLocale(today);
+	window.setTimeout("tick()", 1000);
+}  
+//
+
+//截取字符串 包含中文处理 
+//(串,长度,增加...) 
+function subString(str, len, hasDot) 
+{ 
+    var newLength = 0; 
+    var newStr = ""; 
+    var chineseRegex = /[^\x00-\xff]/g; 
+    var singleChar = ""; 
+    var strLength = str.replace(chineseRegex,"**").length; 
+    for(var i = 0;i < strLength;i++) 
+    { 
+        singleChar = str.charAt(i).toString(); 
+        if(singleChar.match(chineseRegex) != null) 
+        { 
+            newLength += 2; 
+        }     
+        else 
+        { 
+            newLength++; 
+        } 
+        if(newLength > len) 
+        { 
+            break; 
+        } 
+        newStr += singleChar; 
+    } 
+     
+    if(hasDot && strLength > len) 
+    { 
+        newStr += "..."; 
+    } 
+    return newStr; 
+} 
+
+
+
+ </script>
+ </head>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261340689'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261340689' type='text/javascript'%3E%3C/script%3E"));</script>
+<script src="https://s95.cnzz.com/z_stat.php?id=1261340689&web_id=1261340689" language="JavaScript"></script>
+<script src='http://pw.cnzz.com/c.php?id=394032086@qq.com&l=2' language='JavaScript' charset='gb2312'></script>
+ <body class="jb">
+<div id="topk" class="clearfloat">
+   <div id="top"><img src="/images/mainpic/logo.png" width="500" height="120" alt="重庆工贸职业技术学院" longdesc="http://www.cqgmy.cn" style="float:left" class="pngFix" />
+    <div class="email"><span id=localtime></span><script language="javascript" type="text/javascript">tick();</script>　　　<a href="mailto:ygmysjxx@163.com" title="给学院书记发邮件" target="_blank">· 书记信箱</a>　<a href="mailto:ygmyyzxx@163.com" title="给院长发邮件" target="_blank">· 院长信箱</a></div>
+    <div id="sfyx"><img src="/images/mainpic/sf_logo.png" width="255" height="42" alt="市级示范院校重庆工贸职业技术学院"  class="pngFix" /></div>
+<div id="Search">
+       <form id="SearchForm" name="SearchForm" method="get" action="/item/index.asp"  target="_blank">
+        <input name="key" id="key" type="text" class="inp" value="搜索你关注的内容" onfocus="this.value=''" onblur="if(this.value==''){this.value='';}">
+        <a  href="javascript:document.SearchForm.submit();" class="btn" onClick="forms['SearchForm'].submit();" title="站内搜索"></a>
+        <input name="ChannelID" value="1" type="hidden">
+        <input name="t" value="1" type="hidden">
+        <input name="tid" value="0" type="hidden">
+      </form>
+     </div>
+    
+  </div>
+ </div>
+<div id="mainmenu"  class="clearfloat">
+   <ul>
+    <li><a href="/Item/list.asp?id=561" a target="_blank">学院概况 </a>
+       <ul>
+        <li><a target="_blank" href="/Item/Show.asp?m=1&d=5" title="">学校简介</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=572" title="">学院领导</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=644" title="">组织机构</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=682" title="">校园风光</a></li>
+       
+      </ul>
+     </li>
+    <li><a href="/Item/list.asp?id=644" a target="_blank">组织机构 </a>
+       <ul>
+        <li><a target="_blank" href="/Item/list.asp?id=645" title="">教学系部</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=671" title="">党政机构</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=672" title="">党群机构</a></li>
+      </ul>
+     </li>
+        <li><a href="/Item/list.asp?id=568" a target="_blank">招生就业 </a>
+       <ul>
+        <li><a target="_blank" href="/Item/list.asp?id=594" title="">招生信息</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=595" title="">就业信息</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=696" title="">最新动态</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=1535" title="">单独招生</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=661" title="">系部介绍</a></li>
+      </ul>
+     </li>
+    <li><a href="/Item/list.asp?id=569" a target="_blank">教学管理 </a>
+    	<ul>
+        <li><a target="_blank" href="/Item/list.asp?id=622" title="">教学动态</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=623" title="">质量工程</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=624" title="">职业技能</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=625" title="">制度建设</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=830" title="">精品课程</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=847" title="">资料下载</a></li>
+      </ul>
+    
+    </li>
+    <li><a href="/Item/list.asp?id=744" a target="_blank">科学研究 </a>
+       <ul>
+        <li><a target="_blank" href="/Item/list.asp?id=745" title="">科研公告</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=748" title="">科技信息</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=1536" title="">学报信息</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=1538" title="">学风建设</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=1539" title="">下载中心</a></li>
+      </ul>
+     </li>
+     <li><a href="/Item/list.asp?id=570" a target="_blank">学生管理 </a>
+       <ul>
+        <li><a target="_blank" href="/Item/list.asp?id=627" title="">工作动态</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=628" title="">规章制度</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=629" title="">学生动态</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=630" title="">办事指南</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=631" title="">学生资助</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=633" title="">武装工作</a></li>
+        <li><a target="_blank" href="/club/index.asp?boardid=13" title="">建言献策</a></li>
+        <li><a target="_blank" href="/Item/list.asp?id=662" title="">资料下载</a></li>
+      </ul>
+     </li>
+    <li><a href="/Item/list.asp?id=682" a target="_blank">校园风光</a> </li>
+    <li><a href="http://oa.cqgmy.cn:800/" a target="_blank">在线办公</a> </li>
+<li><a href="/Item/list.asp?id=1601" a target="_blank">众创空间</a> </li>
+
+    <li><a href="/Item/list.asp?id=877" a target="_blank">信息公开</a> </li>
+    
+  </ul>
+ </div>
+<div id="kinMaxShow"  class="clearfloat">
+   <div> <img src="/UploadFiles/2017-11-16/283/2017111613195010483.jpg"   /> 
+    <div class="sub-02"><div class="ad">
+        <img src="/images//mainpic/slider-download1210520.png" class="pngFix" /> 
+<a href="/lqxx/" class="download-button no-outline">招生信息</a>
+</div>
+     </div>
+  </div>
+ 
+<div> <img src="/UploadFiles/2018-01-19/283/2018011911065854063.jpg"   /> 
+    <div class="sub-02"><div class="ad">
+        <img src="/images//mainpic/slider-download1210520.png" class="pngFix" /> 
+
+<a href="/lqxx/" class="download-button no-outline">招生信息</a>
+</div>
+     </div>
+  </div>
+
+
+
+<div> <img src="/UploadFiles/2014-08-08/283/2014080813121453857.jpg"   /> 
+    <div class="sub-02"><div class="ad">
+        <img src="/images//mainpic/slider-download1210520.png" class="pngFix" /> 
+
+<a href="/lqxx/" class="download-button no-outline">招生信息</a>
+</div>
+     </div>
+  </div>
+
+<div> <img src="/UploadFiles/2014-06-18/283/2014061812312917696.jpg"   /> 
+    <div class="sub-02"><div class="ad">
+       <img src="/images//mainpic/slider-download1210520.png" class="pngFix" /> 
+
+<a href="/lqxx/" class="download-button no-outline">招生信息</a>
+</div>
+     </div>
+  </div>
+
+<div> <img src="/UploadFiles/2014-07-22/283/2014072213210645421.jpg"   />
+    <div class="sub-02"><div class="ad">
+        <img src="/images//mainpic/slider-download1210520.png" class="pngFix" /> 
+
+<a href="/lqxx/" class="download-button no-outline">招生信息</a>
+</div>
+     </div>
+  </div>
+
+
+<div> <img src="/UploadFiles/2014-06-18/283/2014061812314732692.jpg"   />
+    <div class="sub-02"><div class="ad">
+        <img src="/images//mainpic/slider-download1210520.png" class="pngFix" /> 
+
+<a href="/lqxx/" class="download-button no-outline">招生信息</a>
+</div>
+     </div>
+  </div>
+ </div>
+<div id="main"  class="clearfloat">
+   <div id="menu"> <span class="m1" style="border-left:#bfbfbf 1px dotted; "><a href="/item/list.asp?id=1437" target="_blank">机电工程系</a></span> <span class="m1"><a href="/item/list.asp?id=1438" target="_blank">财经贸易系</a></span> <span class="m1"><a href="/item/list.asp?id=1439" target="_blank">生物化学工程系</a></span> <span class="m1"><a href="/item/list.asp?id=1440" target="_blank">建筑工程系</a></span> 
+<span class="m1"><a href="/item/list.asp?id=1441" target="_blank">汽车与电子工程系</a></span> <span class="m1"><a href="/item/list.asp?id=1504" target="_blank">艺术与文化传播系</a></span> <span class="m1"><a href="/item/list.asp?id=673" target="_blank">基础教学部</a></span><span class="m1"><a href="Item/list.asp?id=862" target="_blank">继续教育部</a></span></div>
+ </div>
+<div id="bgkk" class="clearfloat">
+<div id="newstop"  class="clearfloat">
+   <h2>置顶新闻</h2>
+   <ul>
+     
+<li>
+       <div class="ydate ydate_2" id="div_ydate_1">
+
+<script type="text/javascript"  language="javascript">
+var s="2017.12.11";
+ document.write("<SPAN>"+s.substring(8,10)+"</SPAN>"+s.substring(0,7));
+</script>
+        </div>
+       <div class="tn">
+        <h3><a href="/Item/Show.asp?m=1&d=11514" target="_blank"> <script type="text/javascript"  language="javascript"> document.write(subString("我院学生获全国机械行业职业院校技能大赛一等奖",54)); 
+</script></a></h3>
+        <p id="news_summary_1">2017年12月11日，我院机电工程系学生在2017年全国机械行业职业院校技能大赛中荣获注塑模具设计与制造赛项团体一等奖、冲压模具设计与制造技......</p>
+      </div>
+     </li>
+
+ 
+<li>
+       <div class="ydate ydate_2" id="div_ydate_1">
+
+<script type="text/javascript"  language="javascript">
+var s="2017.01.26";
+ document.write("<SPAN>"+s.substring(8,10)+"</SPAN>"+s.substring(0,7));
+</script>
+        </div>
+       <div class="tn">
+        <h3><a href="/Item/Show.asp?m=1&d=10732" target="_blank"> <script type="text/javascript"  language="javascript"> document.write(subString("我院竞争力综合排名上升48位",54)); 
+</script></a></h3>
+        <p id="news_summary_1">2017年1月12日，中国科学评价研究中心（RCCSE）、武汉大学中国教育质量评价中心（ECCEQ）和中国科教评价网（www.nseac.com）联合发布了2017年中国......</p>
+      </div>
+     </li>
+
+ 
+<li>
+       <div class="ydate ydate_2" id="div_ydate_1">
+
+<script type="text/javascript"  language="javascript">
+var s="2016.05.20";
+ document.write("<SPAN>"+s.substring(8,10)+"</SPAN>"+s.substring(0,7));
+</script>
+        </div>
+       <div class="tn">
+        <h3><a href="/Item/Show.asp?m=1&d=10168" target="_blank"> <script type="text/javascript"  language="javascript"> document.write(subString("我院学生荣获2016年国赛化工生产技术赛项一等奖",54)); 
+</script></a></h3>
+        <p id="news_summary_1">&#160;&#160;&#160;19日，我院生物化学工程系学生刘鹏程、何天俊、倪荣娇在由教育部等单位主办、常州工业职业技术学院等单位协办的2016年全......</p>
+      </div>
+     </li>
+
+
+  </ul>
+ </div>
+<div id="hotnews"  class="clearfloat">
+   <div id="gglan">
+    <h2> 通知公告</h2>
+    <ul class="mulitline">
+        
+<li><a href="/Item/Show.asp?m=1&d=11285" target="_blank" title="征集志愿通告重庆2017年高考生：2017年高职专科第一次征集志愿时间为：2017年8月12日21：00——2017年8月13日8"><span>[08.11]</span> 征集志愿通告</a></li>
+ 
+<li><a href="/Item/Show.asp?m=1&d=12266" target="_blank" title="各位考生：根据《重庆工贸职业技术学院2018年公开招聘工作人员简章》（以下简称“招聘简章”）规定和工作的实际"><span>[05.28]</span> 关于2018年公开招聘工作人员资格复审相关事宜的通知</a></li>
+ 
+<li><a href="/Item/Show.asp?m=1&d=12265" target="_blank" title="一、教师1岗位报名人数为14人，初审合格人数为9人，初审合格名单为：黄验路、康轶、刘情、马云风、陶应文、杨柠"><span>[05.28]</span> 关于公布2018年公开招聘工作人员初审合格名单的通知</a></li>
+ 
+<li><a href="/Item/Show.asp?m=1&d=12262" target="_blank" title="竞争性谈判文件项目号：20180410谈判项目编号：20180410项目名称：生化系在线考试系统开发采购人：重庆工贸职业"><span>[05.28]</span> 生化系在线考试系统开发竞争性谈判文件</a></li>
+ 
+<li><a href="/Item/Show.asp?m=1&d=12237" target="_blank" title="为更好地实现我院档案管理数字化、电子化及网络化，我院档案科申请购买南大之星档案管理软件6.0网络标准版（B"><span>[05.24]</span> 单一来源采购公示（档案室购买南大之星档案管理系统）</a></li>
+
+     </ul>
+  </div>
+   <div id="picnews">
+    <h2>焦点图片</h2>
+    <script src="/ks_inc/loadflash.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+var focus_width=320;
+var focus_height=208;
+var text_height=22;
+var pics='/UploadFiles/2018-05-25/283/2018052516483225762.jpg|/UploadFiles/2018-05-25/283/2018052516431813860.jpg|/UploadFiles/2018-05-25/283/2018052516383743208.jpg|/UploadFiles/2018-05-18/283/20180518165318681.jpg|/UploadFiles/2018-05-18/283/201805181648287277.jpg';
+var links=escape('/Item/Show.asp?m=1&d=12259|/Item/Show.asp?m=1&d=12258|/Item/Show.asp?m=1&d=12255|/Item/Show.asp?m=1&d=12188|/Item/Show.asp?m=1&d=12186');
+var texts='机电工程系举办第二届“双胞胎杯”教师技能大赛|机电工程系智能制造专业群项目组到企业调研|学院开展火灾应急疏散演练及消防知识讲座|汽车与电子工程系在敦仁移民小区开展系列志愿服务|学院隆重举行纪念五四运动99周年暨2018年五四表彰大';
+LoadFlash('/KS_Inc/Slideviewer.swf','transparent',focus_width,focus_height+text_height,'pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height);
+//-->
+</script>
+
+  </div>
+   <div id="gmnews">
+    <div id="tab">
+       <ul class="tab_menu">
+        <li class="selected">工贸新闻</li>
+        <li>媒体视点</li>
+
+      </ul><div class="more"><a href="/Item/list.asp?id=564"  target="_blank">更多...</a></div>
+       <div class="tab_box">
+        <div><ul>
+            
+<li><a href="/Item/Show.asp?m=1&d=12260" target="_blank" title="宣传统战处处长王劲松为青马工程暨业余团校学员作报告">· 宣传统战处处长王劲松为青马工程</a><span class="right">[05.25]</span></li>
+ 
+<li><a href="/Item/Show.asp?m=1&d=12259" target="_blank" title="机电工程系举办第二届“双胞胎杯”教师技能大赛">· 机电工程系举办第二届“双胞胎杯</a><span class="right">[05.25]</span></li>
+ 
+<li><a href="/Item/Show.asp?m=1&d=12258" target="_blank" title="机电工程系智能制造专业群项目组到企业调研">· 机电工程系智能制造专业群项目组</a><span class="right">[05.25]</span></li>
+ 
+<li><a href="/Item/Show.asp?m=1&d=12257" target="_blank" title="建筑工程系举行2018年春期拔河比赛">· 建筑工程系举行2018年春期拔河比</a><span class="right">[05.25]</span></li>
+ 
+<li><a href="/Item/Show.asp?m=1&d=12256" target="_blank" title="学院组织拟发展对象开展“党的知识”集中培训">· 学院组织拟发展对象开展“党的知</a><span class="right">[05.25]</span></li>
+ 
+<li><a href="/Item/Show.asp?m=1&d=12255" target="_blank" title="学院开展火灾应急疏散演练及消防知识讲座">· 学院开展火灾应急疏散演练及消防</a><span class="right">[05.25]</span></li>
+
+
+           </ul>
+         </div>
+        <div class="hide">
+           <ul>
+             
+<li><a href="/Item/Show.asp?m=1&d=11188" target="_blank" title="《中国教育报》报道学院创新发展情况">· 《中国教育报》报道学院创新发展情况</a><span class="right">[07.03]</span></li>
+ 
+<li><a href="/Item/Show.asp?m=1&d=11187" target="_blank" title="《重庆日报》报道学院教学模式的探索与实践">· 《重庆日报》报道学院教学模式的探索与</a><span class="right">[07.03]</span></li>
+ 
+<li><a href="/Item/Show.asp?m=1&d=10863" target="_blank" title="学院院长宋正富教授接受《新华网》专访">· 学院院长宋正富教授接受《新华网》专访</a><span class="right">[03.03]</span></li>
+ 
+<li><a href="/Item/Show.asp?m=1&d=10286" target="_blank" title="《重庆日报》以《创新求变，打造人才培养“高精尖”》为题用半版深入报道了我院办学情况">· 《重庆日报》以《创新求变，打造人才培养</a><span class="right">[06.21]</span></li>
+ 
+<li><a href="/Item/Show.asp?m=1&d=9766" target="_blank" title="人民网、重庆电视台等媒体全面报道我院">· 人民网等媒体报道我院承办的全国大赛</a><span class="right">[11.18]</span></li>
+ 
+<li><a href="/Item/Show.asp?m=1&d=9680" target="_blank" title="《中国教育报》报道我院政校企融合办学经验">· 《中国教育报》报道我院政校企融合办学</a><span class="right">[09.28]</span></li>
+
+          </ul>
+         </div>
+      </div>
+     </div>
+  </div>
+ </div>
+<div class="bottomk clearfloat">
+   <div id="special" class="clearfloat">
+    <div class="left">
+       <h2> 　常用链接</h2>
+       <hr />
+       <ul>
+        <li><a href="http://cwc.cqgmy.cn:8083/school" target="_blank">网上缴费</a> &#8250;&#8250;</li>
+<li><a href="http://jwgl.cqgmy.cn:83" target="_blank">教务管理系统</a> &#8250;&#8250;</li>
+<li><a href="http://10.1.100.121/open/main.htm" target="_blank">数字图书馆</a> &#8250;&#8250;</li>
+<li><a href="http://jpkc.cqgmy.cn:8081/" target="_blank">精品课程</a> &#8250;&#8250;</li>
+<li><a href="http://jpkc.cqgmy.cn:8081/suite/portal/portalView.do?siteKey=2259" target="_blank">共享专业资源库</a> &#8250;&#8250;</li>
+<li><a href="/Item/list.asp?id=1601" target="_blank">众创空间</a> &#8250;&#8250;</li>
+      </ul>
+     </div>
+    <div class="right"><a href="http://www.icve.com.cn/xlsjygy" target="_blank"><img src="/
+images/mainpic/cqgmyqgx.png" width="230" height="95" alt="资源库" /></a> <a 
+href="/Item/list.asp?id=1614" target="_blank"><img src="/images/mainpic/zylj.png" 
+width="107" height="95" alt="管理水平提升" /></a> <a href="http://www.cqwa.gov.cn/" target="_blank"><img src="/images/mainpic/cqwj.jpg" width="122" height="95" alt="重庆网络警察" /></a></div>
+  </div>
+ </div>
+<div id="yqlink" class="clearfloat">
+   <div class="qy">
+    <ul> 
+<li><a href="http://www.moe.edu.cn/" title="">中华人民共和国教育部</a></li>
+ 
+<li><a href="http://www.miitbeian.gov.cn" title="">备案查询网</a></li>
+ 
+<li><a href="http://www.cquc.net" title="">重庆高校数字资源共建共享平台</a></li>
+ 
+<li><a href="http://www.cqjw.gov.cn/" title="">重庆市教委</a></li>
+ 
+<li><a href="http://www.cqzk.com.cn/" title="">重庆招考信息网</a></li>
+ 
+<li><a href="http://www.cqksy.cn/site/default.html" title="">重庆市教育考试院</a></li>
+ 
+<li><a href="http://www.cqzjw.com.cn/" title="">重庆高职教育网</a></li>
+ 
+<li><a href="http://www.tvet.org.cn/html/index.html" title="">中国职业教育信息资源网</a></li>
+ 
+<li><a href="http://www.tech.net.cn/web/index.aspx" title="">中国高职高专教育网</a></li>
+</ul>
+  </div>
+ </div>
+<div id="buttomer" class="clearfloat">
+   <div id="copyright">Copyright 2003-2015 重庆工贸职业技术学院，All Rights Reserved&#160;<br />
+    学院地址：重庆市蒿枝坝都市工业园（涪陵区涪南路108号） 邮编：408000 联系我们：cqgmywlzx@163.com<br />
+    党政办：023-72806399（传真） 招生热线：023- 72806301 72806302 72806303 <a href=http://www.miitbeian.gov.cn>渝ICP备12004279号-1</a> <br />
+    网站设计制作：重庆工贸院新闻网管中心 电话:023-72806336 站点地图</div>
+ </div></div>
+</body>
+</html>
+
+<script src="/ks_inc/ajax.js" type="text/javascript"></script>

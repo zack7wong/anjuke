@@ -1,0 +1,976 @@
+<!DOCTYPE html  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+-->
+<head>
+<script>document.title='南京市人民中学';</script>
+
+<link rel="stylesheet" type="text/css" href="http://www.njrmzx.com/images/rmzx/css.css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script type="text/javascript">
+function tabshow(a,b,c)
+{
+	for(i=a;i<a+b;i++)
+	{
+		if(i==c)
+		{
+			document.getElementById("tab"+i).className="show";
+			document.getElementById("con"+i).style.display="block";
+			document.getElementById("more"+i).style.display="block";
+		}
+		else
+		{
+			document.getElementById("tab"+i).className="hidd";
+			document.getElementById("con"+i).style.display="none";
+			document.getElementById("more"+i).style.display="none";
+		}
+	}
+}
+
+window.onload=function()
+{
+	var username=document.getElementById("hid").value;
+	/*alert(username);*/
+
+	if(username=='/')
+	{
+		document.getElementById("mdl").style.display="";
+		document.getElementById("ydl").style.display="none";
+	}
+	else
+	{
+		document.getElementById("ydl").style.display="block";
+		document.getElementById("mdl").style.display="none";
+	}
+}
+</script>
+</head>
+<body>
+<!--顶部登陆-->
+<div id="toplogin">
+	<div class="floatleft" style="line-height:22px;">
+<input id="hid" type="hidden" value= />
+
+<span id="mdl">
+<form name="form1" method="get" action="http://www.njrmzx.com/login.php">&#160;登陆名：<input type="text" name="username" style="width:100px;height:14px;border:1px solid #ccc;"/>&#160;&#160;密码：<input type="password" name="password" style="margin-bottom:0px;width:100px;height:14px;border:1px solid #ccc;"/>&#160;&#160;<input name="Submit" type="submit" value="登陆" width="40px" style="width:40px;height:18px;"/><input type="hidden" name="step" value="2"><input class="radio" type="hidden" name="cookietime" value="86400" >&#160;&#160;&#160;&#160;&#160;<a href="list.php?fid=213" target="_blank">学校位置</a>&#160;&#160;<a href="http://map.baidu.com/?newmap=1&s=inf%26uid%3Da01f4b41462a194bb9bd63f8%26c%3D315&fr=alasg" target="_blank">百度地图</a>&#160;&#160;<a href="http://www.8684.cn/" target="_blank">公交查询</a></form>
+</span>
+<span id="ydl" style="display:none;">
+	&#160;hello!：<a style="color:#FF0000;"></a>  &#160;<a href="http://www.njrmzx.com/member/index.php?main=myarticle.php" target="_blank">我的文章</a>&#160;<a href="http://www.njrmzx.com/member/" target="_blank">个人信息</a>&#160;<a href="http://www.njrmzx.com/member/index.php?main=userinfo.php?job=edit" target="_blank">修改资料</a>&#160;<a href="http://www.njrmzx.com/login.php?action=quit">安全退出</a>
+	&#160;&#160;&#160;&#160;&#160;<a href="list.php?fid=213" target="_blank">学校位置</a>&#160;&#160;<a href="http://map.baidu.com/?newmap=1&s=inf%26uid%3Da01f4b41462a194bb9bd63f8%26c%3D315&fr=alasg" target="_blank">百度地图</a>&#160;&#160;<a href="http://www.8684.cn/" target="_blank">公交查询</a>
+</span>
+	</div><div class="floatright" style="margin-bottom:2px;"><iframe name="weather_inc" src="http://tianqi.xixik.com/cframe/1" width="330" height="26" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="margin-top:-4px;"></iframe>&#160;</div><span class="clear" style="font-size:0px;"></span>
+</div>
+
+<!--菜单栏-->
+<div id="topmenu"><div style="position:absolute;margin-top:-27px;height:28px;line-height:28px;margin-left:580px;"><a href="http://app.baidu.com/riliwannianli/index.html" target="_blank" style="color:#000000;font-size:12px;">万年历</a></div>
+<table style="font-size:14px;color:white;margin-left:-10px;">
+<tr>
+<td width="50" height="32">&nbsp;</td>
+<td width="60"><a href="index.php">首页</a></td>
+<td width="75"><a href="list.php?fid=101">学校简介</a></td>
+<td width="75"><a href="index.php?&ch=10">新闻中心</a></td>
+<td width="75"><a href="index.php?&ch=11">部门动态</a></td>
+<td width="75"><a href="index.php?&ch=34">学科教学</a></td>
+<td width="75"><a href="index.php?&ch=13">教师风采</a></td>
+<td width="75"><a href="index.php?&ch=14">学生园地</a></td>
+<td width="75"><a href="http://www.njrmzx.com/list.php?fid=117">招生在线</a></td>
+<td width="75"><a href="list.php?fid=118">招聘信息</a></td>
+<td width="75"><a href="http://www.njrmzx.com/rmzx_blog/" target="_blank">校园博客</a></td>
+<td width="75"><a href="http://www.njrmzx.com/index.php?&ch=52" target="_blank">督导专栏</a></td>
+<td width="75"><a href="http://gaoxiao.js-edu.cn/360view/test/njpeopleschool/" target="_blank" >3D校园</a></td>
+<td width="75"><a href="http://www.njrmzx.com/index.php?&ch=53" target="_blank" >汇文女中</a></td>
+</tr>
+</table></div>
+<!--顶部flash-->
+<div id="headflash" style="margin-bottom:5px;"></div>
+
+
+
+
+<script type="text/javascript">
+ <!--
+    //公共脚本文件 main.js
+    function addEvent(obj, evtType, func, cap) {
+        cap = cap || false;
+        if (obj.addEventListener) {
+            obj.addEventListener(evtType, func, cap);
+            return true;
+        } else if (obj.attachEvent) {
+            if (cap) {
+                obj.setCapture();
+                return true;
+            } else {
+                return obj.attachEvent("on" + evtType, func);
+            }
+        } else {
+            return false;
+        }
+    }
+    function getPageScroll() {
+        var xScroll, yScroll;
+        if (self.pageXOffset) {
+            xScroll = self.pageXOffset;
+        } else if (document.documentElement && document.documentElement.scrollLeft) {
+            xScroll = document.documentElement.scrollLeft;
+        } else if (document.body) {
+            xScroll = document.body.scrollLeft;
+        }
+        if (self.pageYOffset) {
+            yScroll = self.pageYOffset;
+        } else if (document.documentElement && document.documentElement.scrollTop) {
+            yScroll = document.documentElement.scrollTop;
+        } else if (document.body) {
+            yScroll = document.body.scrollTop;
+        }
+        arrayPageScroll = new Array(xScroll, yScroll);
+        return arrayPageScroll;
+    }
+    function GetPageSize() {
+        var xScroll, yScroll;
+        if (window.innerHeight && window.scrollMaxY) {
+            xScroll = document.body.scrollWidth;
+            yScroll = window.innerHeight + window.scrollMaxY;
+        } else if (document.body.scrollHeight > document.body.offsetHeight) {
+            xScroll = document.body.scrollWidth;
+            yScroll = document.body.scrollHeight;
+        } else {
+            xScroll = document.body.offsetWidth;
+            yScroll = document.body.offsetHeight;
+        }
+        var windowWidth, windowHeight;
+        if (self.innerHeight) {
+            windowWidth = self.innerWidth;
+            windowHeight = self.innerHeight;
+        } else if (document.documentElement && document.documentElement.clientHeight) {
+            windowWidth = document.documentElement.clientWidth;
+            windowHeight = document.documentElement.clientHeight;
+        } else if (document.body) {
+            windowWidth = document.body.clientWidth;
+            windowHeight = document.body.clientHeight;
+        }
+        if (yScroll < windowHeight) {
+            pageHeight = windowHeight;
+        } else {
+            pageHeight = yScroll;
+        }
+        if (xScroll < windowWidth) {
+            pageWidth = windowWidth;
+        } else {
+            pageWidth = xScroll;
+        }
+        arrayPageSize = new Array(pageWidth, pageHeight, windowWidth, windowHeight)
+        return arrayPageSize;
+    }
+    var AdMoveConfig = new Object();
+    AdMoveConfig.IsInitialized = false;
+    AdMoveConfig.ScrollX = 0;
+    AdMoveConfig.ScrollY = 0;
+    AdMoveConfig.MoveWidth = 0;
+    AdMoveConfig.MoveHeight = 0;
+    AdMoveConfig.Resize = function () {
+        var winsize = GetPageSize();
+        AdMoveConfig.MoveWidth = winsize[2];
+        AdMoveConfig.MoveHeight = winsize[3];
+        AdMoveConfig.Scroll();
+    }
+    AdMoveConfig.Scroll = function () {
+        var winscroll = getPageScroll();
+        AdMoveConfig.ScrollX = winscroll[0];
+        AdMoveConfig.ScrollY = winscroll[1];
+    }
+    addEvent(window, "resize", AdMoveConfig.Resize);
+    addEvent(window, "scroll", AdMoveConfig.Scroll);
+    function AdMove(id) {
+        if (!AdMoveConfig.IsInitialized) {
+            AdMoveConfig.Resize();
+            AdMoveConfig.IsInitialized = true;
+        }
+        var obj = document.getElementById(id);
+        obj.style.position = "absolute";
+        var W = AdMoveConfig.MoveWidth - obj.offsetWidth;
+        var H = AdMoveConfig.MoveHeight - obj.offsetHeight;
+        var x = W * Math.random(), y = H * Math.random();
+        var rad = (Math.random() + 1) * Math.PI / 6;
+        var kx = Math.sin(rad), ky = Math.cos(rad);
+        var dirx = (Math.random() < 0.5 ? 1 : -1), diry = (Math.random() < 0.5 ? 1 : -1);
+        var step = 1;
+        var interval;
+        this.SetLocation = function (vx, vy) { x = vx; y = vy; }
+        this.SetDirection = function (vx, vy) { dirx = vx; diry = vy; }
+        obj.CustomMethod = function () {
+            obj.style.left = (x + AdMoveConfig.ScrollX) + "px";
+            obj.style.top = (y + AdMoveConfig.ScrollY) + "px";
+            rad = (Math.random() + 1) * Math.PI / 6;
+            W = AdMoveConfig.MoveWidth - obj.offsetWidth;
+            H = AdMoveConfig.MoveHeight - obj.offsetHeight;
+            x = x + step * kx * dirx;
+            if (x < 0) { dirx = 1; x = 0; kx = Math.sin(rad); ky = Math.cos(rad); }
+            if (x > W) { dirx = -1; x = W; kx = Math.sin(rad); ky = Math.cos(rad); }
+            y = y + step * ky * diry;
+            if (y < 0) { diry = 1; y = 0; kx = Math.sin(rad); ky = Math.cos(rad); }
+            if (y > H) { diry = -1; y = H; kx = Math.sin(rad); ky = Math.cos(rad); }
+        }
+        this.Run = function () {
+            var delay = 10;
+            interval = setInterval(obj.CustomMethod, delay);
+            obj.onmouseover = function () { clearInterval(interval); }
+            obj.onmouseout = function () { interval = setInterval(obj.CustomMethod, delay); }
+        }
+    }
+ //-->
+ </script>
+
+
+
+ 		 <!--<div id="gg1">
+		 			<div id="closeP">关闭</div>
+                    <a href="bencandy.php?fid=32&id=6074"><IMG border=0 src="upload_files/other/212_20160421090422_xPC3Z.jpg" width=200 ></a>
+
+                      </div>
+                    <script type="text/javascript">
+                        var ad1 = new AdMove("gg1");
+                        ad1.Run();
+                        var close=document.getElementById("closeP");
+                        var gg1=document.getElementById("gg1");                        
+                        close.onclick=function(){
+                        gg1.style.display="none";                   
+                        }
+                    </script>-->
+
+
+
+<!--
+-->
+
+
+<!--通知-->
+<div id="headnote">
+	<div class="floatleft headnote_left"></div>
+	<div class="floatleft headnote_center" style="height:30px;text-align:left;"><div style="float:left;width:560px;text-align:left;line-height:32px;"></div>  <span style="height:30px;position:absolute;z-index:5;margin-left:-30px;"><img src="upload_files/other/212_20111025091027_i3uWk.gif" /></span><span style="display:inline-block;line-height:30px;"></span></div>
+	<div class="floatright headnote_right"></div>
+	<span class="clear"></span>
+</div>
+
+<!--通知公告,最新发布,flash,新闻中心,每周日程-->
+<div id="nfn111" style="width:996px;margin:0 auto;">
+	<div class="floatleft nfn_left">
+<!--通知公告-->
+		<div><div class="nfn_left_11"><div style="height:30px;line-height:30px;text-align:right;"><a href="list.php?fid=73" alt="" target="_blank" style="color:white;font-family:Consolas;">more>></a> </div></div>
+
+		<div class="nfn_left_12"><table width='100%' border='0' cellspacing='0' cellpadding='0'><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="130" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=73&id=8158" target="_blank">2018年玄武区优秀教育</a></td><td width="72" align="left">(2018-05-24)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="130" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=73&id=8128" target="_blank">2018年南京市人民中学</a></td><td width="72" align="left">(2018-05-21)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="130" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=73&id=8117" target="_blank">关于开展2018年享受政</a></td><td width="72" align="left">(2018-05-14)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="130" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=73&id=8116" target="_blank">关于开展2018年江苏省</a></td><td width="72" align="left">(2018-05-14)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="130" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=73&id=8052" target="_blank">2018南京市人民中学初</a></td><td width="72" align="left">(2018-04-25)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="130" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=73&id=8004" target="_blank">2018年南京市人民中学</a></td><td width="72" align="left">(2018-04-21)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="130" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=73&id=7910" target="_blank">南京市人民中学2018年</a></td><td width="72" align="left">(2018-03-27)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="130" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=73&id=7882" target="_blank">南京市、玄武区德育带</a></td><td width="72" align="left">(2018-03-20)
+</td></tr>
+</table></td></tr></table></div>
+		</div>
+
+				<!--新闻发布-->
+		<div>
+			<div class="nfn_left_21"><div style="height:30px;line-height:30px;text-align:right;"><a href="list.php?fid=30" alt="" target="_blank" style="color:white;font-family:Consolas;">more>></a> </div></div>
+			<div class="nfn_left_22"><table width='100%' border='0' cellspacing='0' cellpadding='0'><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="135" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=32&id=8204" target="_blank"> 少淑女礼仪学后感</a></td><td width="72" align="left">(2018-05-29)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="135" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=287&id=8203" target="_blank">“永和日志”（2568）</a></td><td width="72" align="left">(2018-05-29)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="135" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=287&id=8200" target="_blank">“永和日志”（2567）</a></td><td width="72" align="left">(2018-05-29)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="135" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=287&id=8199" target="_blank">“永和日志”（2566）</a></td><td width="72" align="left">(2018-05-29)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="135" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=287&id=8196" target="_blank">“永和日志”（2565）</a></td><td width="72" align="left">(2018-05-29)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="135" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=287&id=8195" target="_blank">”永和日志“（2564）</a></td><td width="72" align="left">(2018-05-29)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="135" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=287&id=8192" target="_blank">“永和日志”（2563）</a></td><td width="72" align="left">(2018-05-29)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="135" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=287&id=8191" target="_blank">“永和日志”（2562）</a></td><td width="72" align="left">(2018-05-29)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="135" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=32&id=8188" target="_blank">崇尚英雄，精忠报国 —</a></td><td width="72" align="left">(2018-05-28)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="135" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=287&id=8186" target="_blank">“永和日志”（2561）</a></td><td width="72" align="left">(2018-05-27)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="135" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=32&id=8184" target="_blank">人民中学举行“崇尚英</a></td><td width="72" align="left">(2018-05-26)
+</td></tr>
+</table></td></tr><tr><td width=100%><table width="235px;" cellspacing="0" cellpadding="0" >
+<tr><td width="15" height="24"><img 
+src="images/default/arrow.gif" /></td><td width="135" 
+align="left" style="overflow:hidden;"><a href="http://www.njrmzx.com/bencandy.php?fid=135&id=8183" target="_blank">2017-2018第二学期第十</a></td><td width="72" align="left">(2018-05-26)
+</td></tr>
+</table></td></tr></table></div>
+		</div>
+	</div>
+
+	<div class="floatright nfn_right">
+		<div class="nfn_right_1">
+			<!--幻灯片-->
+			<div class="floatleft nfn_right_11">
+<SCRIPT type='text/javascript'>
+<!--
+var focus_width=285;
+var focus_height=215;
+var text_height=18;
+
+if(focus_width==undefined) var focus_width=220;
+if(focus_height==undefined) var focus_height=190;
+if(text_height==undefined) var text_height=20;
+
+var xsImgs = new Array('http://www.njrmzx.com/upload_files/article/32/116_20180529090507_Vfx4u_jpg.gif','http://www.njrmzx.com/upload_files/article/32/94_20180528150516_gXGsM_jpg.gif','http://www.njrmzx.com/upload_files/article/32/238_20180526130552_lIRAD_jpg.gif','http://www.njrmzx.com/upload_files/article/32/145_20180526110519_Qxzru_jpg.gif','http://www.njrmzx.com/upload_files/article/32/116_20180526100519_P8RFO_jpg.gif');
+var xsImgLinks = new Array('http://www.njrmzx.com/bencandy.php?fid=32&id=8204','http://www.njrmzx.com/bencandy.php?fid=32&id=8188','http://www.njrmzx.com/bencandy.php?fid=32&id=8184','http://www.njrmzx.com/bencandy.php?fid=32&id=8182','http://www.njrmzx.com/bencandy.php?fid=32&id=8181');
+var xsImgTexts = new Array(' 少淑女礼仪学后感','崇尚英雄，精忠报国 ——..','人民中学举行“崇尚英雄 ..','我校承办玄武、秦淮、建..','伟大的英雄，不灭的赞歌');
+var xsImgSize = new Array(focus_width, focus_height);
+//-->
+</script>
+<script type='text/javascript' src='http://www.njrmzx.com/images/default/rollpic.js'></script>
+	</div>
+			<!--新闻中心-->
+			<div class="floatright nfn_right_12">
+				<div class="nfn_right_12_1">
+					<div id="more1" style="height:30px;line-height:30px;text-align:right;"><a href="list.php?fid=32" alt="" target="_blank" style="color:white;font-family:Consolas;">more>></a>  </div>
+					<div id="more2" style="display:none;height:30px;line-height:30px;text-align:right;"><a href="list.php?fid=30" alt="" target="_blank" style="color:white;font-family:Consolas;">more>></a>  </div>
+					<div id="more3" style="display:none;height:30px;line-height:30px;text-align:right;"><a href="list.php?fid=31" alt="" target="_blank" style="color:white;font-family:Consolas;">more>></a>  </div>				
+				</div>
+				<div class="nfn_right_12_2">
+					<div class="nfn_xwzx_top">						
+						<table cellspacing="0" cellpadding="0" style="font-size:12px;padding-top:5px;" align="center" height="30">
+							<tr><td colspan="7"></td></tr>
+							<tr>
+								<td width="3" height="26" style="border-bottom:solid 1px #A0A0A0;font-size:1px;"> </td>
+								<td id="tab1" class="show" width="79" align="center" style="cursor:hand;">
+									<span onmouseover="tabshow(1,3,1)">学校新闻</span>
+								</td>
+								<td width="1" style="border-bottom:solid 1px #A0A0A0;font-size:1px;"> </td>
+								<td id="tab2" class="hidd" width="79" align="center" style="cursor:hand;">
+									<span onmouseover="tabshow(1,3,2)">时事新闻</span>
+								</td>
+								<td width="1" style="border-bottom:solid 1px #A0A0A0;font-size:1px;"> </td>
+								<td id="tab3" class="hidd" width="79" align="center" style="cursor:hand;">
+									<span onmouseover="tabshow(1,3,3)">教育新闻</span>
+								</td>
+								<td width="202" style="border-bottom:solid 1px #A0A0A0;font-size:1px;"> </td>
+							</tr>
+						</table>						
+					</div>
+					<div id="con1" class="nfn_xwzx_con"><table width='100%' border='0' cellspacing='0' cellpadding='0'><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=32&id=8204" target="_blank"> 少淑女礼仪学后感</a></td><td width="80" align="left">[2018-05-29]</td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=32&id=8188" target="_blank">崇尚英雄，精忠报国 ——记初二2班主题班会</a></td><td width="80" align="left">[2018-05-28]</td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=32&id=8184" target="_blank">人民中学举行“崇尚英雄  精忠报国”主题班..</a></td><td width="80" align="left">[2018-05-26]</td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=32&id=8182" target="_blank">我校承办玄武、秦淮、建邺三区联片地理教研..</a></td><td width="80" align="left">[2018-05-26]</td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=32&id=8181" target="_blank">伟大的英雄，不灭的赞歌</a></td><td width="80" align="left">[2018-05-26]</td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=32&id=8159" target="_blank">我校承办玄武、鼓楼、栖霞三区联片体育教研..</a></td><td width="80" align="left">[2018-05-25]</td></tr>
+</table></td></tr></table></div>
+					<div id="con2" class="nfn_xwzx_con" style="display:none;"><table width='100%' border='0' cellspacing='0' cellpadding='0'><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=30&id=7577" target="_blank">永和微评：现在的世界真“奇妙”</a></td><td width="80" align="left">[2017-12-20]</td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=30&id=7572" target="_blank">微评：国际事务，靠我们自己</a></td><td width="80" align="left">[2017-12-19]</td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=30&id=7550" target="_blank">永和微评：赢在正义，胜在正直</a></td><td width="80" align="left">[2017-12-08]</td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=30&id=7512" target="_blank">永和微评：卖人玫瑰，手有余香</a></td><td width="80" align="left">[2017-11-24]</td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=30&id=7507" target="_blank">永和微评：难得“虚心”的印度</a></td><td width="80" align="left">[2017-11-22]</td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=30&id=7485" target="_blank">永和微评：虐童，也虐心</a></td><td width="80" align="left">[2017-11-09]</td></tr>
+</table></td></tr></table></div>
+					<div id="con3" class="nfn_xwzx_con" style="display:none;"><table width='100%' border='0' cellspacing='0' cellpadding='0'><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=31&id=8202" target="_blank">永和日志：板桥中学张荷晶老师化学期中考试质</a></td><td width="80" align="left">[2018-05-29]</td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=31&id=8201" target="_blank">永和日志：板桥中学张荣老师语文期中考试质量</a></td><td width="80" align="left">[2018-05-29]</td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=31&id=8198" target="_blank">永和日志：板桥中学宴莉莉老师语文期中考试质</a></td><td width="80" align="left">[2018-05-29]</td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=31&id=8197" target="_blank">永和日志：板桥中学孙瑶老师期中考试质量分析</a></td><td width="80" align="left">[2018-05-29]</td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=31&id=8194" target="_blank">永和日志：板桥中学任璐老师语文期中考试质量</a></td><td width="80" align="left">[2018-05-29]</td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0" style="border-bottom:dotted 1px 
+#E9E9E9;"><tr><td width="10" height="24">&nbsp;</td><td width="320" align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=31&id=8193" target="_blank">永和日志：板桥中学毛海玲老师物理期中考试质</a></td><td width="80" align="left">[2018-05-29]</td></tr>
+</table></td></tr></table></div>
+				</div>
+			</div>
+			<span class="clear"></span>
+		</div>
+		<!--每周日程-->
+		<div class="nfn_right_2">
+			<div class="nfn_right_21"><div style="font-size:14px;color:white;font-weight:bold;height:30px;line-height:32px;float:left;">     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第 14 周（2018年5月28日至2018年6月3日）</div><div style="float:right;height:30px;line-height:30px;text-align:right;"><a href="list.php?fid=214" alt="" target="_blank" style="color:white;font-family:Consolas;">more>></a>  </div><div class="clear"></div></div>
+			<div class="nfn_right_22"><iframe src="mzrc.php" width="720px" height="280" style="margin-top:10px;"></iframe></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+
+<!--特色专题-->
+<div id="tszt">
+	<div class="tszt_1">
+	<div id="more1" style="height:30px;line-height:30px;text-align:right;"><a href="#" alt="" target="_blank" style="color:white;font-family:Consolas;">more>></a>  </div>
+	</div>
+	<div class="tszt_2">
+		<div class="floatleft tszt_2left"><a href="http://www.njrmzx.com/index.php?&ch=53" target="_blank"><img src="http://www.njrmzx.com/upload_files/article/283/212_20160827100826_Kwh8q.jpg" alt="" style="border:solid 1px #9A9A9A;" /></a></div>
+<!--upload_files/other/1_20110526110529_mN5yS.gif-->
+		<div class="floatright tszt_2right">
+			<table align="left" width="95%">
+				<tr><td height="50" width="200"><a href="http://www.njrmzx.com/taiwan/index.htm" target="_blank"><img src="/images/rmzx/images/rmzx0_53.jpg" alt="" /></a></td><td width="270"><a href="http://www.njrmzx.com/index.php?&ch=51" target="_blank"><img src="/upload_files/other/212_20140107160103_M8fmj.jpg" alt="" /></a></td><td width="240"><a href="/list.php?fid=222" target="_blank"><img src="/images/rmzx/images/rmzx0_59.jpg" alt="" /></a></td></tr>
+				<tr><td height="45"><a href="/list.php?fid=240" target="_blank"><img src="/images/rmzx/images/rmzx0_65.jpg" alt="" /></a></td><td align="center"><a href="/list.php?fid=241" target="_blank"><img src="/upload_files/other/212_20111013141012_EPnR1.jpg" alt="" /></a><!--<a href="/rm/index.htm" target="_blank"><img src="/images/rmzx/images/rmzx0_67.jpg" alt="" /></a>--></td><td><!--<a href="/bx/index.htm" target="_blank"><img src="/images/rmzx/images/rmzx0_69.jpg" alt="" /></a>--><a href="http://www.njrmzx.com/list.php?fid=271" target="_blank"><img src="/images/rmzx/images/rmzx0_69.jpg" alt="" /></a></td></tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<!--首页中下部-->
+<div id="midbot">
+	<!--左侧-->
+	<div class="floatleft midbot_left">
+		<div class="midbot_left0"></div>
+		<!--中下部左侧校长信箱等导航链接图-->
+		<div class="midbot_left1">
+			<div><a href="xzbook/" target="_blank"><img src="http://www.njrmzx.com/images/rmzx/images/rmzx_midbot_left_03.jpg" alt="" /></a></div>
+			<div><a href="zrdh.html" target="_blank"><img src="http://www.njrmzx.com/images/rmzx/images/rmzx_midbot_left_06.jpg" alt="" /></a></div>
+			<div><a href="http://www.njrmzx.com/list.php?fid=117" target="_blank"><img src="http://www.njrmzx.com/images/rmzx/images/rmzx_midbot_left_08.jpg" alt="" /></a></div>
+			<div><a href="list.php?fid=118" target="_blank"><img src="http://www.njrmzx.com/images/rmzx/images/rmzx_midbot_left_10.jpg" alt="" /></a></div>
+			<div><a href="list.php?fid=233" target="_blank"><img src="http://www.njrmzx.com/images/rmzx/images/rmzx_midbot_left_12.jpg" alt="" /></a></div>
+		</div>
+		<!--部门动态与学科教学-->
+		<div class="midbot_left2" style="height:295px;">
+			<div class="midbot_left2_top">
+			<div style="height:30px;line-height:30px;text-align:right;"><a href="index.php?&ch=11" alt="" target="_blank" style="color:white;font-family:Consolas;">more>></a> </div>
+				<!--<table>
+					<tr>
+						<td id="tab4" class="show1"><span onmouseover="tabshow(2,2,4);">部门动态</span></td>
+						<td id="tab5" class="hidd1"><span onmouseover="tabshow(2,2,5);">学科教学</span></td>
+					</tr>
+				</table>-->
+			</div>
+			<div id="con4" class="midbot_left2_con">
+				<table cellspacing="0" cellpadding="5">
+					<tr>
+						<td align="left"><a href="index.php?&ch=47" target="_blank"><img src="http://www.njrmzx.com/images/rmzx/images/rmzx_midbot_left_17.jpg" target="_blank" /></a></td>
+						<td align="left"><a href="index.php?&ch=18" target="_blank"><img src="http://www.njrmzx.com/images/rmzx/images/rmzx_midbot_left_23.jpg" target="_blank" /></a></td>
+					</tr>
+					<tr>
+						<td align="left"><a href="index.php?&ch=15" target="_blank"><img src="http://www.njrmzx.com/images/rmzx/images/rmzx_midbot_left_21.jpg" alt="" /></a></td>
+						<td align="left"><a href="index.php?&ch=23" target="_blank"><img src="http://www.njrmzx.com/images/rmzx/images/rmzx_midbot_left_37.jpg" alt="" /></a></td>
+					</tr>
+					<tr>
+						<td align="left"><a href="index.php?&ch=19" target="_blank"><img src="http://www.njrmzx.com/images/rmzx/images/rmzx_midbot_left_27.jpg" alt="" /></a></td>
+						<td align="left"><a href="index.php?&ch=22" target="_blank"><img src="http://www.njrmzx.com/images/rmzx/images/rmzx_midbot_left_28.jpg" target="_blank" /></a></td>
+					</tr>
+					<tr>
+						<td align="left"><a href="index.php?&ch=48" target="_blank"><img src="http://www.njrmzx.com/images/rmzx/images/rmzx_midbot_left_31.jpg" alt="" /></a></td>
+						<td align="left"><a href="index.php?&ch=21" target="_blank"><img src="http://www.njrmzx.com/images/rmzx/images/rmzx_midbot_left_33.jpg" target="_blank" /></a></td>
+					</tr>
+                                        <tr>
+						<td align="left"><a href="index.php?&ch=54" target="_blank"><img src="http://www.njrmzx.com/upload_files/article/286/212_20161230131254_Q3zJO.png" alt="" /></a></td>
+                                                <td align="left"><a href="http://218.94.40.28:81/lyh/index.asp?T_ID=200" target="_blank"><img src="http://www.njrmzx.com/upload_files/article/286/212_20161230131202_NDbiu.jpg" alt=""  width="115"/></a></td>
+						
+					</tr>
+<tr>
+						<td align="left"><a href="index.php?&ch=55" target="_blank"><img src="http://www.njrmzx.com/upload_files/article/291/212_20170411110400_9mwnn.png" alt="" /></a></td>
+                                                <td align="left"><a href="http://www.njrmzx.com/index.php?&ch=56" target="_blank"><img src="http://www.njrmzx.com/upload_files/article/303/212_20180112150128_ZroS9.png" alt=""  width="115"/></a></td>
+						
+					</tr>
+				</table>
+			</div>
+			<div id="con5" style="display:none;"></div>
+		</div>
+		<!--联系我们-->
+		<div class="midbot_left3">
+			<div class="midbot_left3_top"></div>
+			<div class="midbot_left3_con">
+				<table width="90%">
+<tbody>
+<tr>
+<td style="HEIGHT: 10px; FONT-SIZE: 10px" colSpan=2>&nbsp;</td></tr>
+<tr>
+<td height=24 width="100%" colSpan=2 align=right><span style="COLOR: #be2c03; FONT-WEIGHT: bold"><!--招生电话：68537024--></span></td></tr>
+<tr>
+<td height=24 width="100%" colSpan=2 align=right>门卫电话：83159781</td></tr>
+<tr>
+<td width=58>&nbsp;</td>
+<td style="BORDER-BOTTOM: #666666 1px dotted" height=26 width=176 align=right>校长室电话：83159566</td></tr>
+<tr>
+<td height=38 width="100%" colSpan=2 align=right>地址：南京市中山路178号</td></tr></tbody></table>
+			</div>
+		</div>
+		<!--在线统计-->
+		<div class="midbot_left4">
+			<div class="midbot_left4_top"></div>
+			<div class="midbot_left4_con">
+				<div style="WIDTH: 100%; HEIGHT: 15px"></div>
+<script src="http://www.njrmzx.com/hack.php?hack=webmsg&job=js&cktime=60"></script>
+			</div>
+		</div>
+	</div>
+	<!--右侧-->
+	<div class="floatright midbot_right">
+		<div class="midbot_right1">
+			<!--教师风采-->
+			<div class="floatleft">
+				<div class="midbot_right1_left_top"><div style="height:30px;line-height:30px;text-align:right;"><a href="index.php?&ch=13" alt="" target="_blank" style="color:white;font-family:Consolas;">more>></a>  </div></div>
+					
+				<div class="midbot_right1_left_con">
+					<table style="border-bottom:dotted 1px #666666;"><tr><td width="3" style="font-size:3px;"> </td><td width="148" height="120" align="left"><table width='100%' border='0' cellspacing='0' cellpadding='0'><tr><td width=100%><table><tr><td align="center" valign="middle" style="border:solid 1px 
+#DADADA;padding:1px;"><a href="http://www.njrmzx.com/bencandy.php?fid=113&id=7207" target="_blank"><img src="http://www.njrmzx.com/upload_files/article/113/212_20170706130730_DCP6i_jpg.gif" width="122" height="92" alt="社会主义核心价值观" /></a></td></tr></table></td></tr></table></td><td width="202" align="center"><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=113&id=7207" target="_blank">社会主义核心价值观</a></td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=113&id=2378" target="_blank">【第二届师德标兵候选人】朱文阵</a></td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=113&id=2377" target="_blank">【第二届师德标兵候选人】周向前</a></td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=113&id=2376" target="_blank">【第二届师德标兵候选人】周茜</a></td></tr>
+</table></td></tr></table>
+					<table><tr><td width="3" style="font-size:3px;"> </td><td width="148" height="120" align="left"><table width='100%' border='0' cellspacing='0' cellpadding='0'><tr><td width=100%><table><tr><td align="center" valign="middle" style="border:solid 1px 
+#DADADA;padding:1px;"><a href="http://www.njrmzx.com/bencandy.php?fid=227&id=7150" target="_blank"><img src="http://www.njrmzx.com/upload_files/article/113/212_20170623090626_1v3if_jpg.gif" width="122" height="92" alt="刘永和——江苏省特" /></a></td></tr></table></td></tr></table></td><td width="202" align="center"><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=227&id=7150" target="_blank">刘永和——江苏省特级教师</a></td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=227&id=6452" target="_blank">陈仲翔——陶行知奖</a></td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=227&id=644" target="_blank">程  智－－南京市学科带头人</a></td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a 
+href="http://www.njrmzx.com/bencandy.php?fid=227&id=641" target="_blank">徐其锐－－南京市学科带头人</a></td></tr>
+</table></td></tr></table>
+				</div>
+			</div>
+			<!--学生园地-->
+			<div class="floatright">
+				<div class="midbot_right1_right_top"><div style="height:30px;line-height:30px;text-align:right;"><a href="index.php?&ch=14" alt="" target="_blank" style="color:white;font-family:Consolas;">more>></a>  </div></div>					
+				<div class="midbot_right1_right_con">
+					<table style="border-bottom:dotted 1px #666666;"><tr><td width="3" style="font-size:3px;"> </td><td width="148" height="120" align="left"><table><tr><td align="center" valign="middle" style="border:solid 1px 
+#DADADA;padding:1px;"><a href="http://www.njrmzx.com/bencandy.php?fid=174&id=6718" target="_blank"><img src="http://www.njrmzx.com/upload_files/article/174/212_20170303210326_4cGxL_jpg.gif" width="122" 
+height="92" alt="旅行规划——台北之旅" /></a></td></tr></table></td><td width="202" align="center"><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=174&id=6718" target="_blank">旅行规划——台北之旅</a></td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=184&id=6328" target="_blank">魅力新校园随手拍系列（1）</a></td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=174&id=5873" target="_blank">机器人社团活动心得</a></td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=184&id=5733" target="_blank">杨“先生”“小”“慢”“痴”</a></td></tr>
+</table></td></tr></table>
+					<table><tr><td width="3" style="font-size:3px;"> </td><td width="148" height="120" align="left"><table><tr><td align="center" valign="middle" style="border:solid 1px
+#DADADA;padding:1px;"><a href="http://www.njrmzx.com/bencandy.php?fid=259&id=5404" target="_blank"><img src="http://www.njrmzx.com/upload_files/article/32/158_20150909090952_qtYup_jpg.gif" width="122" height="92" alt="扬帆起航" /></a></td></tr></table></td><td width="202" align="center"><table width='100%' border='0' cellspacing='0' cellpadding='0'><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=259&id=5414" target="_blank">团结友爱</a></td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=259&id=5404" target="_blank">扬帆起航</a></td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=259&id=5389" target="_blank">“奥妙的地球和奇特的生命”图</a></td></tr>
+</table></td></tr><tr><td width=100%><table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="190" height=24 align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=259&id=5388" target="_blank">“奥妙的地球和奇特的生命”图</a></td></tr>
+</table></td></tr></table></td></tr></table>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="midbot_right2">
+			<!--教育科研-->
+			<div class="floatleft">
+				<div class="midbot_right2_left_top"><div style="height:30px;line-height:30px;text-align:right;"><a href="list.php?fid=114" alt="" target="_blank" style="color:white;font-family:Consolas;">more>></a>  </div></div>
+					
+				<div class="midbot_right2_left_con">
+					<div class="wuyule">
+					<table width="100%" cellspacing="0" cellpadding="0"><tr><td width="20" height="24"><img src="images/default/arrow.gif" /></td><td width="240" 
+align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=114&id=7345" target="_blank">【转】浙江实验区“走班制”实施中的问题</a></td><td width="80" align="left">
+[2017-09-13]</td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0"><tr><td width="20" height="24"><img src="images/default/arrow.gif" /></td><td width="240" 
+align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=114&id=7344" target="_blank">【转】教研组建立动态教学资源库的尝试</a></td><td width="80" align="left">
+[2017-09-13]</td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0"><tr><td width="20" height="24"><img src="images/default/arrow.gif" /></td><td width="240" 
+align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=114&id=7343" target="_blank">【转】当前课堂教学存在的突出问题与改进</a></td><td width="80" align="left">
+[2017-09-13]</td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0"><tr><td width="20" height="24"><img src="images/default/arrow.gif" /></td><td width="240" 
+align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=114&id=7342" target="_blank">【转】教育经验的效用及超越</a></td><td width="80" align="left">
+[2017-09-13]</td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0"><tr><td width="20" height="24"><img src="images/default/arrow.gif" /></td><td width="240" 
+align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=114&id=7341" target="_blank">【转】共情理论在班级管理中的应用探索</a></td><td width="80" align="left">
+[2017-09-13]</td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0"><tr><td width="20" height="24"><img src="images/default/arrow.gif" /></td><td width="240" 
+align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=114&id=7340" target="_blank">【转】学校绩效管理面临的挑战与优化</a></td><td width="80" align="left">
+[2017-09-13]</td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0"><tr><td width="20" height="24"><img src="images/default/arrow.gif" /></td><td width="240" 
+align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=114&id=7322" target="_blank">【转】知识权威视野下学生主体性的缺失与</a></td><td width="80" align="left">
+[2017-09-11]</td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0"><tr><td width="20" height="24"><img src="images/default/arrow.gif" /></td><td width="240" 
+align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=114&id=7321" target="_blank">【转】核心素养评价的价值、原则与方法</a></td><td width="80" align="left">
+[2017-09-11]</td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0"><tr><td width="20" height="24"><img src="images/default/arrow.gif" /></td><td width="240" 
+align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=114&id=7304" target="_blank">【转】教学评价应遵循的原则</a></td><td width="80" align="left">
+[2017-09-09]</td></tr>
+</table><table width="100%" cellspacing="0" cellpadding="0"><tr><td width="20" height="24"><img src="images/default/arrow.gif" /></td><td width="240" 
+align="left"><a href="http://www.njrmzx.com/bencandy.php?fid=114&id=7303" target="_blank">【转】教师成长需要深度学习</a></td><td width="80" align="left">
+[2017-09-09]</td></tr>
+</table>
+					</div>
+				</div>
+			</div>
+			<!--快速通道-->
+			<div class="floatright">
+				<div class="midbot_right2_right_top"></div>
+					
+				<div class="midbot_right2_right_con">
+<table>
+<tbody>
+<tr>
+<td><a href="http://teacher.xwemis.cn/" target=_blank><img alt="" src="/images/rmzx/images/jsfzpt.jpg" /></a></td>
+<td><a href="http://www.xwjyoa.cn" target=_blank><img alt="" src="/images/rmzx/images/ykjxxpt.jpg" /></a></td>
+<td><a href="http://www.xwjyoa.cn" target=_blank><img alt="" src="/images/rmzx/images/xwoabgpt.jpg" /></a></td></tr>
+<tr>
+<td><a href="http://www.zxxk.com/ " target=_blank><!--<a href="list.php?fid=239" target=_blank>--><img alt="" src="/images/rmzx/images/xkwzj.jpg" /></a></td>
+<td><a href="http://www.duxiu.com/login.jsp" target=_blank><img border=0 alt="" src="/images/rmzx/images/dxzyk.jpg" /></a></td>
+<td><a href="http://yunpan.360.cn/" target=_blank><img alt="" src="/images/rmzx/images/360yp.jpg" /></a></td></tr>
+<tr>
+<td><a href="http://nj.eamn.net/am/login.jsf" target=_blank><img border=0 alt="" src="/images/rmzx/images/sysgl.jpg" /></a></td>
+<td><a href="http://www.njrmzx.com/xxzxbook/" target=_blank><img border=0 alt="" src="/images/rmzx/images/xxbx.jpg" /></a></td>
+<td><a href="http://www.njrmzx.com/zwcbook/" target=_blank><img border=0 alt="" src="/images/rmzx/images/zwbx.jpg" /></a></td>
+</tr></tbody></table>
+</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!--图片新闻-->
+		<div class="midbot_right3">
+			<div>
+				<div class="floatleft midbot_right3_left"></div>
+				<div class="floatleft midbot_right3_right">
+					
+					<div id="demo">
+					<div id="indemo">
+					<div id="demo1">
+					<div  class="listpic" style="float:left;margin-right:18px"> 
+              <p class="img" style="padding:0;margin:10px 0 5px;"><a href="http://www.njrmzx.com/bencandy.php?fid=294&id=7529" target="_blank"><img width="120" height="65" onload="makesmallpic(this,120 65);" src="http://www.njrmzx.com/upload_files/article/294/212_20171201141247_d1o2l_png.gif" border="0"></a></p>
+              <span class=title style="text-align:center;"><A HREF="http://www.njrmzx.com/bencandy.php?fid=294&id=7529" title='南京市人民中学招聘新教师公告' target="_blank">南京市人民中学招聘</A></span>
+            </div><div  class="listpic" style="float:left;margin-right:18px"> 
+              <p class="img" style="padding:0;margin:10px 0 5px;"><a href="http://www.njrmzx.com/bencandy.php?fid=294&id=7524" target="_blank"><img width="120" height="65" onload="makesmallpic(this,120 65);" src="http://www.njrmzx.com/upload_files/article/294/212_20171127131127_xzKcM_jpg.gif" border="0"></a></p>
+              <span class=title style="text-align:center;"><A HREF="http://www.njrmzx.com/bencandy.php?fid=294&id=7524" title='社会主义核心价值观' target="_blank">社会主义核心价值观</A></span>
+            </div><div  class="listpic" style="float:left;margin-right:18px"> 
+              <p class="img" style="padding:0;margin:10px 0 5px;"><a href="http://www.njrmzx.com/bencandy.php?fid=294&id=7523" target="_blank"><img width="120" height="65" onload="makesmallpic(this,120 65);" src="http://www.njrmzx.com/upload_files/article/294/212_20171127131103_tqP8g_jpg.gif" border="0"></a></p>
+              <span class=title style="text-align:center;"><A HREF="http://www.njrmzx.com/bencandy.php?fid=294&id=7523" title='八礼四仪' target="_blank">八礼四仪</A></span>
+            </div><div  class="listpic" style="float:left;margin-right:18px"> 
+              <p class="img" style="padding:0;margin:10px 0 5px;"><a href="http://www.njrmzx.com/bencandy.php?fid=294&id=7522" target="_blank"><img width="120" height="65" onload="makesmallpic(this,120 65);" src="http://www.njrmzx.com/upload_files/article/294/212_20171127131135_wuEb4_jpg.gif" border="0"></a></p>
+              <span class=title style="text-align:center;"><A HREF="http://www.njrmzx.com/bencandy.php?fid=294&id=7522" title='中学生守则' target="_blank">中学生守则</A></span>
+            </div><div  class="listpic" style="float:left;margin-right:18px"> 
+              <p class="img" style="padding:0;margin:10px 0 5px;"><a href="http://www.njrmzx.com/bencandy.php?fid=294&id=7521" target="_blank"><img width="120" height="65" onload="makesmallpic(this,120 65);" src="http://www.njrmzx.com/upload_files/article/294/212_20171127131139_LnCJW_jpg.gif" border="0"></a></p>
+              <span class=title style="text-align:center;"><A HREF="http://www.njrmzx.com/bencandy.php?fid=294&id=7521" title='中国梦,和为贵' target="_blank">中国梦,和为贵</A></span>
+            </div>
+					</div>
+					<div id="demo2"></div>
+					</div>
+					</div>
+
+
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div>
+				<div class="floatleft midbot_right3_bot_left"></div>
+				<div class="floatleft midbot_right3_bot_mid"></div>
+				<div class="floatright midbot_right_bot_right"></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--友情链接-->
+		<div class="midbot_right4">
+			<div class="midbot_right4_top"></div>
+			<div class="midbot_right4_con">
+				<table width="730" cellspacing="0" cellpadding="0" align="center" valign="middle">
+					<tr>						
+						<td width="25%" height="80"><select style="WIDTH: 176px" onchange="if(this.options[this.selectedIndex].value != ''){window.open(this.options[this.selectedIndex].value,'_blank');}" name=friend> <option selected>-------政府网站-------</option> <option value=http://www.gov.cn/>中华人民共和国政府</option> <option value=http://www.moe.edu.cn/>中华人民共和国教育部</option> <option value=http://www.jiangsu.gov.cn/>中国江苏</option> <option value=http://www.ec.js.edu.cn/html/>江苏教育</option> <option value=http://www.jseea.cn/>江苏教育考试院</option> <option value=http://www.etec.edu.cn/>江苏教育资源网</option> <option value=http://www.jse.edu.cn/channels/14/default.htm>江苏基础教育公共服务平台</option> </select> </td>
+						<td width="25%"><select style="WIDTH: 176px" onchange="if(this.options[this.selectedIndex].value != ''){window.open(this.options[this.selectedIndex].value,'_blank');}" name=friend> <option selected>--------教育办公网站-------</option> <option value=http://www.nje.cn/>南京教育信息网</option> <option value=http://www.njsjys.com/>南京市教研室</option> <option value=http://www.njjks.cn/default.aspx>南京市教科所</option> 
+<option value=http://account.xwemis.cn/home/Navigation>玄武区教育信息化公共服务平台</option> 
+ <option value=http://www.xwjy.cn/>玄武教育</option> 
+
+<option value=http://nj.eamn.net/am/login.jsf>南京市教育局资产与装备管理平台</option>
+<option value=http://www.xjgl.net/jcgl/>电教教材征订网</option>
+<option value=http://njxwq.xuexi365.net/>信息技术教研平台</option>
+<option value=http://www.njyxt.net>翼校通管理平台</option>
+<option value=http://pm.eamn.net:8086/login.jsf>教学仪器采购平台</option>
+</select> </td>
+						<td width="25%"><select style="WIDTH: 176px" onchange="if(this.options[this.selectedIndex].value != ''){window.open(this.options[this.selectedIndex].value,'_blank');}" name=friend> <option selected>------资源库-----</option> <option value=http://www.duxiu.com/>读秀</option> <option value=http://www.zxxk.com/>学科网组卷平台</option> <option value=http://www.xwjinxiu.cn/xwrs/manager/>玄武全学科资源库</option> <option value=http://www.njsjys.cn/>市教研室全学科资源库</option> <option value=http://cnki.nje.cn/Default.aspx>中国教育期刊、博士论文库</option> <option value=http://zidong.net.cn/FriendSite/FriendSiteUrl.asp?ID=21>中华数字书苑</option>
+<option value=http://www.njct.superlib.net/areas/njct/index1.jsp>南京市中小学数字图书馆</option> 
+<option value=http://www.jalis.org.cn/>江苏省高等学校数字图书馆</option> 
+<option value=http://c.jslib.org.cn/nar/Index.html>江苏省少儿数字图书馆</option> 
+<option value=http://elib.jstvu.edu.cn/>江苏开放大学数字图书馆</option></select> </td>
+						<td width="25%"><select style="WIDTH: 176px" onchange="if(this.options[this.selectedIndex].value != ''){window.open(this.options[this.selectedIndex].value,'_blank');}" name=friend> <option selected>--------其它网站-------</option> <option value=http://www.weather.com.cn/weather/101190101.shtml>南京天气</option> <option value=http://www.8684.cn/>南京公交</option> <option value=http://qq.ip138.com/train/>全国列车时刻查询</option> <option value=http://www.onlinedown.net/>华军软件园</option><option value=http://www.dangdang.com/>当当网</option><option value=http://www.zxxk.com/>中学学科网</option><option value=http://www.ks5u.com/>高考资源网</option><option value=http://www.gx211.com>中国高校之窗</option></select>
+</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
+<!--<div style="position:fixed;left:0;top:7%;"><img src="http://www.njrmzx.com/images/rmzx/images/tf1.jpg" /></div>
+<div style="position:fixed;right:0;top:7%;"><img src="http://www.njrmzx.com/images/rmzx/images/tf2.jpg" /></div>-->
+<SCRIPT type=text/javascript>
+function hidead()
+{document.getElementById("ad2").style.display="none";}
+</SCRIPT>
+
+
+<script type="text/javascript">
+ <!--
+    //公共脚本文件 main.js
+    function addEvent(obj, evtType, func, cap) {
+        cap = cap || false;
+        if (obj.addEventListener) {
+            obj.addEventListener(evtType, func, cap);
+            return true;
+        } else if (obj.attachEvent) {
+            if (cap) {
+                obj.setCapture();
+                return true;
+            } else {
+                return obj.attachEvent("on" + evtType, func);
+            }
+        } else {
+            return false;
+        }
+    }
+    function getPageScroll() {
+        var xScroll, yScroll;
+        if (self.pageXOffset) {
+            xScroll = self.pageXOffset;
+        } else if (document.documentElement && document.documentElement.scrollLeft) {
+            xScroll = document.documentElement.scrollLeft;
+        } else if (document.body) {
+            xScroll = document.body.scrollLeft;
+        }
+        if (self.pageYOffset) {
+            yScroll = self.pageYOffset;
+        } else if (document.documentElement && document.documentElement.scrollTop) {
+            yScroll = document.documentElement.scrollTop;
+        } else if (document.body) {
+            yScroll = document.body.scrollTop;
+        }
+        arrayPageScroll = new Array(xScroll, yScroll);
+        return arrayPageScroll;
+    }
+    function GetPageSize() {
+        var xScroll, yScroll;
+        if (window.innerHeight && window.scrollMaxY) {
+            xScroll = document.body.scrollWidth;
+            yScroll = window.innerHeight + window.scrollMaxY;
+        } else if (document.body.scrollHeight > document.body.offsetHeight) {
+            xScroll = document.body.scrollWidth;
+            yScroll = document.body.scrollHeight;
+        } else {
+            xScroll = document.body.offsetWidth;
+            yScroll = document.body.offsetHeight;
+        }
+        var windowWidth, windowHeight;
+        if (self.innerHeight) {
+            windowWidth = self.innerWidth;
+            windowHeight = self.innerHeight;
+        } else if (document.documentElement && document.documentElement.clientHeight) {
+            windowWidth = document.documentElement.clientWidth;
+            windowHeight = document.documentElement.clientHeight;
+        } else if (document.body) {
+            windowWidth = document.body.clientWidth;
+            windowHeight = document.body.clientHeight;
+        }
+        if (yScroll < windowHeight) {
+            pageHeight = windowHeight;
+        } else {
+            pageHeight = yScroll;
+        }
+        if (xScroll < windowWidth) {
+            pageWidth = windowWidth;
+        } else {
+            pageWidth = xScroll;
+        }
+        arrayPageSize = new Array(pageWidth, pageHeight, windowWidth, windowHeight)
+        return arrayPageSize;
+    }
+    var AdMoveConfig = new Object();
+    AdMoveConfig.IsInitialized = false;
+    AdMoveConfig.ScrollX = 0;
+    AdMoveConfig.ScrollY = 0;
+    AdMoveConfig.MoveWidth = 0;
+    AdMoveConfig.MoveHeight = 0;
+    AdMoveConfig.Resize = function () {
+        var winsize = GetPageSize();
+        AdMoveConfig.MoveWidth = winsize[2];
+        AdMoveConfig.MoveHeight = winsize[3];
+        AdMoveConfig.Scroll();
+    }
+    AdMoveConfig.Scroll = function () {
+        var winscroll = getPageScroll();
+        AdMoveConfig.ScrollX = winscroll[0];
+        AdMoveConfig.ScrollY = winscroll[1];
+    }
+    addEvent(window, "resize", AdMoveConfig.Resize);
+    addEvent(window, "scroll", AdMoveConfig.Scroll);
+    function AdMove(id) {
+        if (!AdMoveConfig.IsInitialized) {
+            AdMoveConfig.Resize();
+            AdMoveConfig.IsInitialized = true;
+        }
+        var obj = document.getElementById(id);
+        obj.style.position = "absolute";
+        var W = AdMoveConfig.MoveWidth - obj.offsetWidth;
+        var H = AdMoveConfig.MoveHeight - obj.offsetHeight;
+        var x = W * Math.random(), y = H * Math.random();
+        var rad = (Math.random() + 1) * Math.PI / 6;
+        var kx = Math.sin(rad), ky = Math.cos(rad);
+        var dirx = (Math.random() < 0.5 ? 1 : -1), diry = (Math.random() < 0.5 ? 1 : -1);
+        var step = 1;
+        var interval;
+        this.SetLocation = function (vx, vy) { x = vx; y = vy; }
+        this.SetDirection = function (vx, vy) { dirx = vx; diry = vy; }
+        obj.CustomMethod = function () {
+            obj.style.left = (x + AdMoveConfig.ScrollX) + "px";
+            obj.style.top = (y + AdMoveConfig.ScrollY) + "px";
+            rad = (Math.random() + 1) * Math.PI / 6;
+            W = AdMoveConfig.MoveWidth - obj.offsetWidth;
+            H = AdMoveConfig.MoveHeight - obj.offsetHeight;
+            x = x + step * kx * dirx;
+            if (x < 0) { dirx = 1; x = 0; kx = Math.sin(rad); ky = Math.cos(rad); }
+            if (x > W) { dirx = -1; x = W; kx = Math.sin(rad); ky = Math.cos(rad); }
+            y = y + step * ky * diry;
+            if (y < 0) { diry = 1; y = 0; kx = Math.sin(rad); ky = Math.cos(rad); }
+            if (y > H) { diry = -1; y = H; kx = Math.sin(rad); ky = Math.cos(rad); }
+        }
+        this.Run = function () {
+            var delay = 10;
+            interval = setInterval(obj.CustomMethod, delay);
+            obj.onmouseover = function () { clearInterval(interval); }
+            obj.onmouseout = function () { interval = setInterval(obj.CustomMethod, delay); }
+        }
+    }
+ //-->
+ </script>
+            
+          <div id="gg1">
+		 			<div id="closeP1">关闭</div>
+                    <IMG border=0 src="http://www.njrmzx.com/upload_files/article/140/212_20180528080502_AeIqA.png" width=200 >
+
+                      </div>
+                    <script type="text/javascript">
+                        var ad1 = new AdMove("gg1");
+                        ad1.Run();
+                        var close1=document.getElementById("closeP1");
+                        var gg1=document.getElementById("gg1");                        
+                        close1.onclick=function(){
+                        gg1.style.display="none";                   
+                        }
+                    </script>
+
+                <!--<div id="gg2">
+		 			<div id="closeP">关闭</div>
+                    <a href="http://www.njrmzx.com/list.php?fid=118"><IMG border=0 src="http://www.njrmzx.com/upload_files/article/294/212_20171201141247_d1o2l.png" width=300 ></a>
+
+                      </div>
+                    <script type="text/javascript">
+                        var ad2 = new AdMove("gg2");
+                        ad2.Run();
+                        var close=document.getElementById("closeP");
+                        var gg2=document.getElementById("gg2");                        
+                        close.onclick=function(){
+                        gg2.style.display="none";                   
+                        }
+                    </script>-->
+                               
+
+<!--
+-->
+<!--底部-->
+<div id="footbot">
+	<div class="footimg"></div>
+	<div class="footcon">主办单位：南京市人民中学&nbsp;&nbsp;&nbsp;地址：南京市中山路178号<br/><a href="http://www.miitbeian.gov.cn/">备案：苏ICP备11017275号</a>&nbsp;&nbsp;&nbsp;&nbsp;开发单位：南京冠邦&nbsp;&nbsp;&nbsp;&nbsp;维护：人民中学信息中心<br/></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	首页 - 南京市共青团路中学
+</title><link href="/Admin/VisualTemplate/Style/VisualDesign.LayoutsBasics.css" rel="stylesheet" type="text/css" /><link id="ctl00_themestyle" href="/Widgets/Themes/theme2/Style.css" type="text/css" rel="stylesheet" class="themestyle" /><script src="/Widgets/Scripts/jquery.pack.js" type="text/javascript" class="jquerypack" id="jquerypack"></script><script src="/Widgets/Scripts/jquery.peex.js" type="text/javascript" class="jquerypeex" id="jquerypeex"></script><script src="/Widgets/Scripts/Plugins/Common.js" type="text/javascript" class="commonPlugin" id="commonPlugin"></script><link href="/_skins/gzx/Style/UxStyle.css" type="text/css" rel="stylesheet" /><meta name="keywords" content="南京市共青团路中学,联澳科技"></meta><meta name="description" content=""></meta></head>
+<body style="background-color:transparent;background-position:center top;background-repeat:repeat; background-attachment:scroll;">
+    <div id="pagecontainer" style="width:1220px;margin:0 auto">
+       
+          <div id="RadDockZone_head">
+            <div id="we7layout_146769003441266" class="sf_cols">
+ <div style="float: left; width: 50%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+  
+ <!--htmlWidgetStart--> 
+ 
+        <div><img width="475" height="98" src="/_data/images/logo2.jpg" alt="" /></div>
+     
+ <!--HtmlWidgetEnd--></div></div>
+  <div style="float: left; width: 50%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+ 
+<div class="Search_Bar">
+<div class="web_tool">
+                <div class="full_model_search">
+                    <input value="输入关键字" class="model_search"><input type="button" class="model_search_click" value="搜索">
+              
+                </div>
+            </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        //$('a[class="fav"]').addFavorite();
+        //$('a[class="home"]').setHomePage();
+
+        $('#change_search_model').click(function () {
+            if ($('.model_list').css('display') != 'block') {
+                $('.model_list').slideDown(500);
+                try {
+                    clearTimeout(timer);
+                } catch (e) {
+                }
+            } else {
+                $('.model_list').mouseleave();
+            }
+            ;
+        });
+
+        $('.model_list').mouseleave(function () {
+            timer = setTimeout(function () {
+                $('.model_list').slideUp(100);
+            }, 500);
+        });
+
+        $('.model_list a').click(function () {
+            $('#change_search_model').text($(this).text());
+            $('.model_list').slideUp(100);
+            try {
+                clearTimeout(timer);
+            } catch (e) {
+            }
+        });
+        
+        $('.model_search').click(function(){
+            if($('.model_search').val()=='输入关键字')
+                {
+                    $('.model_search').val('');
+                }
+        });
+        
+        $('.model_search_click').click(function () {
+            var model = checkSearchModel();
+            doModelSearch(model[0], model[1]);
+        });
+
+        $('#model_adv_search').click(function () {
+            var model = checkSearchModel();
+            doModelSearch(model[0], 2);
+        });
+
+        var checkSearchModel = function () {
+            var model = $('#change_search_model').text();
+            switch (model) {
+                case '文章':
+                    return [1, 1];
+                case '图片':
+                    return [2, 1];
+                case '软件':
+                    return [3, 1];
+                default:
+                    return [0, 2];
+            }
+        };
+
+        var doModelSearch = function (modelId, searchType) {
+            var searchValue = escape($('.model_search').val());
+
+            if (searchType != 2 && (searchValue == null || searchValue == '')) {
+                alert('请输入要搜索的关键词');
+                $('.model_search').focus();
+                return;
+            }
+            if (searchType == 2 && modelId == 0) {
+                window.location.href ="http://"+window.location.host+ '/Search.aspx?keywords=' + searchValue;
+                return;
+            }
+            switch (modelId) {
+                case 1:
+                    location.href = '?searchtype=1&modelId=' + modelId + '&nodeId=1&fieldOption=title&keywords=' + searchValue;
+                    break;
+                case 2:
+                    location.href = '?searchType=1&modelId=' + modelId + '&nodeId=2&fieldOption=title&keywords=' + searchValue;
+                    break;
+                default:
+                    location.href = '?searchtype=1&modelId=' + modelId + '&nodeId=3&fieldOption=title&keywords=' + searchValue;
+                    break;
+            }
+        }
+    });
+</script></div></div>
+<div style= "clear:both;height:0;font-size:1px;"></div></div> 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd--> 
+ <!--htmlWidgetStart--> 
+ 
+        <div id="dmenu">
+        <ul>
+            <li id="current"><a href="/default.aspx" >网站首页</a></li>
+            <li><a href="/xyxw/default.aspx" >学校新闻</a>
+            <ul>
+                <li><a href="/xyxw/xxxw/default.aspx" >学校新闻</a></li>
+                <li><a href="/xyxw/xxsp/default.aspx" >学校视频</a></li>
+            </ul>
+            </li>
+            <li><a href="/xxxxy/default.aspx">学校概况</a>
+            <ul>
+                <li><a href="/xxxxy/xxry/default.aspx" >学校荣誉</a></li>
+                <li><a href="/xxxxy/ldbz/default.aspx" >领导班子</a></li>
+                <li><a href="/xxxxy/xymj/default.aspx" >美丽的共中</a></li>
+                <li><a href="/xxxxy/lsyg/default.aspx" >历史沿革</a></li>
+                <li><a href="/xxxxy/jxzl/default.aspx" >教学质量</a></li>
+            </ul>
+            </li>
+            <li><a href="/tzgg/default.aspx" >通知公告</a>
+            <ul>
+                <li><a href="/tzgg/zwgg/default.aspx" >总务公告</a></li>
+                <li><a href="/tzgg/xcsgg/default.aspx" >校长室公告</a></li>
+                <li><a href="/tzgg/jwgg/default.aspx" >教务公告</a></li>
+                <li><a href="/tzgg/jsfzgg/default.aspx" >教师发展公告</a></li>
+                <li><a href="/tzgg/ghgg/default.aspx" >工会公告</a></li>
+                <li><a href="/tzgg/rsgg/default.aspx" >人事公告</a></li>
+            </ul>
+            </li>
+            <li><a href="/jyrd/default.aspx" >教育热点</a>
+            <ul>
+                <li><a href="/jyrd/jyxsx/default.aspx" >教育新思想</a></li>
+                <li><a href="/jyrd/jyzm/default.aspx" >教育争鸣</a></li>
+                <li><a href="/jyrd/jyrdwt/default.aspx" >教育热点问题</a></li>
+            </ul>
+            </li>
+            <li><a href="/dytd/default.aspx" >德育天地</a>
+            <ul>
+                <li><a href="/dytd/tdtd/default.aspx" >团队天地</a></li>
+                <li><a href="/dytd/cjwmcs/default.aspx">创建文明城市</a></li>
+                <li><a href="/dytd/dyxw/default.aspx" >德育新闻</a></li>
+                <li><a href="/dytd/gzxy/default.aspx" >共中心苑</a></li>
+            </ul>
+            </li>
+            <li><a href="/jykx/default.aspx" >教研快讯</a>
+            <ul>
+                <li><a href="/jykx/jyxw/default.aspx" >教研新闻</a></li>
+                <li><a href="/jykx/klyj/default.aspx" >课例研究</a></li>
+                <li><a href="/jykx/lsxx/default.aspx" >绿色学校</a></li>
+                <li><a href="/jykx/sqjyhd/default.aspx" >市区教研活动</a></li>
+                <li><a href="/jykx/xtmtk/default.aspx">校推磨听课</a></li>
+                <li><a href="/jykx/byy/default.aspx" >半月议</a></li>
+            </ul>
+            </li>
+            <li><a href="/jsfz/default.aspx" >教师发展</a>
+            <ul>
+                <li><a href="/jsfz/jspx/default.aspx" >教师培训</a></li>
+                <li><a href="/jsfz/jymzjj/default.aspx" >教研名著简介</a></li>
+                <li><a href="/jsfz/msfc/default.aspx" >名师风采</a></li>
+                <li><a href="/jsfz/ktyj/default.aspx" >课题研究</a></li>
+                <li><a href="/jsfz/msyd/default.aspx" >名师园地</a></li>
+                <li><a href="/jsfz/jslw/default.aspx" >竞赛论文</a></li>
+                <li><a href="http://www.njgz.net/oblog_gqtlzx/index.html" >教师博客</a></li>
+                <li><a href="/jsfz/wgxz/default.aspx" >文稿下载</a></li>
+                <li><a href="/jsfz/jshj/default.aspx" >教师获奖</a></li>
+                <li><a href="/jsfz/hy/default.aspx">会议</a></li>
+                <li><a href="/jsfz/yxjx/default.aspx" >有效教学</a></li>
+                <li><a href="/jsfz/wj/default.aspx" >文件</a></li>
+            </ul>
+            </li>
+            <li><a href="/djgz/default.aspx" >党建工作</a>
+            <ul>
+                <li><a href="/djgz/cxzy/default.aspx" >创先争优</a></li>
+                <li><a href="/djgz/qtgz/default.aspx" >群团工作</a></li>
+                <li><a href="/djgz/djzh/default.aspx" >党建纵横</a></li>
+                <li><a href="/djgz/djdt/default.aspx" >党建动态</a></li>
+                <li><a href="/djgz/xfpy/default.aspx" >行风评论</a></li>
+                <li><a href="/djgz/djzs/default.aspx" >党建知识</a></li>
+            </ul>
+            </li>
+            <li><a href="/jtdt/default.aspx" >交通地图</a></li>
+        </ul>
+        </div>
+     
+ <!--HtmlWidgetEnd--> 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd--> 
+ <!--htmlWidgetStart--> 
+ 
+        <div id="qt" style="width:100%;">
+        <div style="z-index:100;" class="quan"><script>
+	var h = window.screen.height;
+        var w = window.screen.width;
+        var p = 335 / 1680;
+        var time2 = 6000;
+        var index = 0;
+
+        var winWidth = 0;
+        var winHeight = 0;
+
+        $(document).ready(function () {
+            // 获取窗口宽度 
+            if (window.innerWidth)
+                winWidth = window.innerWidth;
+            else if ((document.body) && (document.body.clientWidth))
+                winWidth = document.body.clientWidth;
+            // 获取窗口高度 
+            if (window.innerHeight)
+                winHeight = window.innerHeight;
+            else if ((document.body) && (document.body.clientHeight))
+                winHeight = document.body.clientHeight;
+            // 通过深入 Document 内部对 body 进行检测，获取窗口大小 
+            if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) 	    {
+                winHeight = document.documentElement.clientHeight;
+                winWidth = document.documentElement.clientWidth;
+            }
+
+            w = winWidth-10;
+	    
+            if (w > 1680) {
+                $(".container").css("width", "1680px");
+		$(".mySlideshow img").css("width", "1680px");
+		$(".container").css("height", "335px");
+		$("#qt").css("height", "335px");
+                $(".mySlideshow img").css("height", "335px");
+            }
+            else {
+                var wi = w-10 + "px";
+		var we=w/2-53;
+                $(".container").css("width", wi);
+                $(".mySlideshow img").css("width", wi);
+                var h2 = w * p;
+                var hi = h2 + "px";
+                $(".container").css("height", hi);
+		$("#qt").css("height", hi);
+		$("#page").css("margin-left",we+"px");
+                $(".mySlideshow img").css("height", hi);
+            }
+        });
+
+
+        $(function () {
+            $(".mySlideshow").children('li:eq(0)').show();
+            setInterval(marque2,time2);
+        })
+
+	function pageclick(i)
+	{
+		index=i;
+		marque2();
+	}
+
+
+        function marque2() {
+            $("#page li").removeClass("opt");
+	    $("#page li").addClass("ONopt");
+	    $(".mySlideshow li").css("display","none");
+
+            $(".mySlideshow").children('li:eq(' + index + ')').show();
+	    $("#page").children('li:eq(' + index + ')').removeClass("ONopt");
+	    $("#page").children('li:eq(' + index + ')').addClass("opt");
+            if (index == 3)
+                index = 0;
+            else
+                index++;
+        }
+
+		</script> 		 		<style type="text/css">
+			.quan{width:100%;position:absolute;left:0px;top:170px;}
+        		.container{ overflow:hidden;margin:0 auto;}
+        		.mySlideshow li{ float:left;list-style-type: none; display:none;z-index:100;}
+        		.mySlideshow{position: absolute;}
+			#page li{float:left;padding-right:10px; width:19px; height:19px;cursor:pointer;cursor:hand;}
+			.opt{background:url("/_data/images/dj1.png") no-repeat;z-index:100;}
+			.ONopt{background:url("/_data/images/dj2.png") no-repeat;}
+    		</style>
+        <div class="container">
+        <div id="page" style="bottom:10px;position:absolute;z-index:99;">
+
+            <li class="opt" onclick="pageclick(0);"></li>
+            <li class="ONopt" onclick="pageclick(1);"></li>
+            <li class="ONopt" onclick="pageclick(2);"></li>
+            <li class="ONopt" onclick="pageclick(3);"></li>
+
+        </div>
+        <div class="mySlideshow">
+
+            <li><img src="/_data/images/qh1.jpg" alt="" /></li>
+            <li><img src="/_data/images/qh2.jpg" alt="" /></li>
+            <li><img src="/_data/images/qh3.jpg" alt="" /></li>
+            <li><img src="/_data/images/qh5.jpg" alt="" /></li>
+
+        </div>
+        </div>
+        </div>
+        </div>
+     
+ <!--HtmlWidgetEnd--> 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd--> 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd-->
+          </div>
+          <div id="RadDockZone_body">
+            <div id="we7layout_146768315800174" class="sf_cols">
+ <div style="float: left; width: 62%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+  
+ <!--htmlWidgetStart--> 
+ 
+        <style type="text/css">
+#xwgd{background:url(/_data/images/xwt.jpg) 0 0 no-repeat;padding-right:10px;height:32px;margin-right:10px;line-height:32px;}
+#xwgd a{font-size:12px;color:#444444;float:right;}
+#xwgd a:hover{color:#444;}
+</style>
+        <div id="xwgd"><a href="http://www.njgz.net/xyxw/default.aspx" target="_blank">更多...</a></div>
+     
+ <!--HtmlWidgetEnd--><div id="we7layout_146768322662960" class="sf_cols">
+ <div style="float: left; width: 47%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+ 
+        <div class="FlashShow_Default  mtop10 mleft10">
+<div id="ctl00_FlashShow_Default_146762415181541" class="content"></div>
+            </div>
+<script type="text/javascript">
+     $.installPlugins(["FlashShow.js"]);
+    $("#ctl00_FlashShow_Default_146762415181541").FlashShow({
+        focus_width:345,
+        focus_height:259,
+       text_height:20,
+        pics:'/_data/2018/04/19/1af43463_6358_489d_9f18_1b773eabe46c/啦啦队_sytpdt.JPG|/_data/2018/03/05/d1aacf3b_ad6e_4ae6_8604_1bad1e52721f/h_001_sytpdt.jpg|/_data/2018/02/27/e7759062_844f_40ee_b13e_e0fdb57c8aff/QQ截图20180309092542_sytpdt.jpg|/_data/2018/02/27/45add517_8cef_4fdb_9e23_c92fb2c23a6c/QQ截图20180309092629_sytpdt.jpg|/_data/2018/02/26/a0545e2d_0246_4808_9d95_3e51607b8f54/QQ截图20180309092707_sytpdt.jpg|/_data/2018/01/03/92dfe1ed_a0ab_4bb2_8420_e3da21a01467/QQ截图20180309092901_sytpdt.jpg',
+        links:'/xyxw/xxxw/2018-04-19-1404.aspx|/xyxw/xxxw/2018-03-05-1331.aspx|/xyxw/xxxw/2018-02-27-1325.aspx|/xyxw/xxxw/2018-02-27-1324.aspx|/xyxw/xxxw/2018-02-26-1323.aspx|/xyxw/xxxw/2018-01-03-1282.aspx',
+        texts:'与国际名校交流合作，创建基础教育优质品牌|多姿多彩寒假生活|新时代 新学期 新目标|雨花台区教师发展中心教研室到我校进行督导|新学期，新征程|共青团路中学举行30周年校庆暨迎新文艺汇演'
+    });
+</script>
+</div></div>
+  <div style="float: left; width: 53%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+  
+ <!--htmlWidgetStart--> 
+ 
+        <div><script type="text/javascript">
+	function PositionZxlx()
+	{
+		$("#float1").css("top",(100+document.documentElement.scrollTop)+"px");
+		$("#float2").css("top",(100+document.documentElement.scrollTop)+"px");
+	}
+	window.setInterval(PositionZxlx,100);
+
+	function closediv1(did)
+	{
+		if(document.all.float1!=null)
+			document.all.float1.style.display="none";
+	}
+	function closediv2(did)
+	{
+		if(document.all.float2!=null)
+			document.all.float2.style.display="none";
+	}
+
+	function addEvent(obj,evtType,func,cap){
+		cap=cap||false;
+		if(obj.addEventListener){
+			obj.addEventListener(evtType,func,cap);
+		return true;
+		}else if(obj.attachEvent){
+				if(cap){
+				obj.setCapture();
+				return true;
+			}else{
+			return obj.attachEvent("on" + evtType,func);
+		}
+	}
+	else{
+		return false;
+		}
+	}
+	
+	function getPageScroll(){
+		var xScroll,yScroll;
+	if (self.pageXOffset) {
+	xScroll = self.pageXOffset;
+	} else if (document.documentElement && document.documentElement.scrollLeft){
+	xScroll = document.documentElement.scrollLeft;
+	} else if (document.body) {
+	xScroll = document.body.scrollLeft;
+	}
+	if (self.pageYOffset) {
+	yScroll = self.pageYOffset;
+	} else if (document.documentElement && document.documentElement.scrollTop){
+	yScroll = document.documentElement.scrollTop;
+	} else if (document.body) {
+	yScroll = document.body.scrollTop;
+	}
+	arrayPageScroll = new Array(xScroll,yScroll);
+	return arrayPageScroll;
+	}
+	
+	function GetPageSize(){
+		var xScroll, yScroll;
+		if (window.innerHeight && window.scrollMaxY) { 
+			xScroll = document.body.scrollWidth;
+			yScroll = window.innerHeight + window.scrollMaxY;
+		} else if (document.body.scrollHeight > document.body.offsetHeight){
+			xScroll = document.body.scrollWidth;
+			yScroll = document.body.scrollHeight;
+		} else {
+			xScroll = document.body.offsetWidth;
+			yScroll = document.body.offsetHeight;
+		}
+		var windowWidth, windowHeight;
+		if (self.innerHeight) {
+			windowWidth = self.innerWidth;
+			windowHeight = self.innerHeight;
+		} else if (document.documentElement && document.documentElement.clientHeight) {
+			windowWidth = document.documentElement.clientWidth;
+			windowHeight = document.documentElement.clientHeight;
+		} else if (document.body) {
+			windowWidth = document.body.clientWidth;
+			windowHeight = document.body.clientHeight;
+		} 
+		if(yScroll < windowHeight){
+			pageHeight = windowHeight;
+		} else { 
+			pageHeight = yScroll;
+		}
+		if(xScroll < windowWidth){ 
+			pageWidth = windowWidth;
+		} else {
+			pageWidth = xScroll;
+		}
+		arrayPageSize = new Array(pageWidth,pageHeight,windowWidth,windowHeight) 
+		return arrayPageSize;
+	}
+	
+
+var AdMoveConfig=new Object();
+AdMoveConfig.IsInitialized=false;
+AdMoveConfig.ScrollX=0;
+AdMoveConfig.ScrollY=0;
+AdMoveConfig.MoveWidth=0;
+AdMoveConfig.MoveHeight=0;
+AdMoveConfig.Resize=function(){
+    var winsize=GetPageSize();
+    AdMoveConfig.MoveWidth=winsize[2];
+    AdMoveConfig.MoveHeight=winsize[3];
+    AdMoveConfig.Scroll();
+}
+AdMoveConfig.Scroll=function(){
+    var winscroll=getPageScroll();
+    AdMoveConfig.ScrollX=winscroll[0];
+    AdMoveConfig.ScrollY=winscroll[1];
+}
+addEvent(window,"resize",AdMoveConfig.Resize);
+addEvent(window,"scroll",AdMoveConfig.Scroll);
+function AdMove(id){
+    if(!AdMoveConfig.IsInitialized){
+        AdMoveConfig.Resize();
+        AdMoveConfig.IsInitialized=true;
+    }
+    var obj=document.getElementById(id);
+    obj.style.position="absolute";
+    var W=AdMoveConfig.MoveWidth-obj.offsetWidth;
+    var H=AdMoveConfig.MoveHeight-obj.offsetHeight;
+    var x = W*Math.random(),y = H*Math.random();
+    var rad=(Math.random()+1)*Math.PI/6;
+    var kx=Math.sin(rad),ky=Math.cos(rad);
+    var dirx = (Math.random()<0.5?1:-1), diry = (Math.random()<0.5?1:-1);
+    var step = 1;
+    var interval;
+    this.SetLocation=function(vx,vy){x=vx;y=vy;}
+    this.SetDirection=function(vx,vy){dirx=vx;diry=vy;}
+    obj.CustomMethod=function(){
+        obj.style.left = (x + AdMoveConfig.ScrollX) + "px";
+        obj.style.top = (y + AdMoveConfig.ScrollY) + "px";
+        rad=(Math.random()+1)*Math.PI/6;
+        W=AdMoveConfig.MoveWidth-obj.offsetWidth;
+        H=AdMoveConfig.MoveHeight-obj.offsetHeight;
+        x = x + step*kx*dirx;
+        if (x < 0){dirx = 1;x = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+        if (x > W){dirx = -1;x = W;kx=Math.sin(rad);ky=Math.cos(rad);}
+        y = y + step*ky*diry;
+        if (y < 0){diry = 1;y = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+        if (y > H){diry = -1;y = H;kx=Math.sin(rad);ky=Math.cos(rad);}
+    }
+    this.Run=function(){
+        var delay = 50;
+        interval=setInterval(obj.CustomMethod,delay);
+        obj.onmouseover=function(){clearInterval(interval);}
+        obj.onmouseout=function(){interval=setInterval(obj.CustomMethod, delay);}
+    }
+}
+
+	$(document).ready(
+		function()
+		{
+			$(".adver").each(
+				function()
+				{
+					var ad=new AdMove($(this).attr("id"));
+					ad.Run();
+				}
+			);
+		}
+	);
+
+</script>
+        <div style="z-index:999;" class="adver" id="adver2"><span onclick="adver2.style.display='none'" style="cursor:pointer;font-size:25px;color:#861212;right:5px;position:absolute;">&times;</span> <a href="http://www.njgz.net/cwm/" target="_blank"><img width="222" height="132" src="/_data/2017/11/30/0abb1330_6603_4507_9acd_6fb70e2ea287/images/cj1.png" alt="" /></a></div>
+        <div style="z-index:999;" class="adver" id="adver1"><span onclick="adver1.style.display='none'" style="cursor:pointer;font-size:25px;color:#861212;right:5px;position:absolute;">&times;</span><a href="http://www.njgz.net/dytd/cjwmcs/2018-05-14-1453.aspx" target="_blank"><img width="220" height="104" src="/_data/images/QQ%E5%9B%BE%E7%89%8720180514101404.jpg" alt="" /></a></div>
+        <div style="z-index:999;" class="adver" id="adver3"><span onclick="adver3.style.display='none'" style="cursor:pointer;font-size:25px;color:#861212;right:5px;position:absolute;">&times;</span><a href="http://www.njgz.net/dytd/cjwmcs/2018-05-14-1452.aspx" target="_blank"><img width="220" height="110" src="/_data/images/QQ%E5%9B%BE%E7%89%8720180514101410.jpg" alt="" /></a></div>
+        </div>
+     
+ <!--HtmlWidgetEnd-->
+<div class="gzlist ">
+    <div class="area  mtop10 mleft10">
+        <dl>
+            <dt>
+                <h3 style="height:0px;">
+                    
+                </h3>
+            </dt>
+            <dd>
+                <ul >
+                    
+                               <li><span class="datetime " >[2018-05-28]</span><a target="_blank" title="喜报"  href="/xyxw/xxxw/2018-05-28-1476.aspx" >
+                            喜报</a>
+                        <img src="/_data/images/wj.gif">
+                        </li>
+                        
+                               <li><span class="datetime " >[2018-05-28]</span><a target="_blank" title="换个角度学英语，选种方式用英语"  href="/xyxw/xxxw/2018-05-28-1475.aspx" >
+                            换个角度学英语，选种方式用英语</a>
+                        <img src="/_data/images/wj.gif">
+                        </li>
+                        
+                               <li><span class="datetime " >[2018-05-25]</span><a target="_blank" title="督导之下我们一直在进步"  href="/xyxw/xxxw/2018-05-25-1474.aspx" >
+                            督导之下我们一直在进步</a></li>
+                        
+                               <li><span class="datetime " >[2018-05-24]</span><a target="_blank" title="我校骨干教师代表赴启东折桂中学学习交流"  href="/xyxw/xxxw/2018-05-24-1472.aspx" >
+                            我校骨干教师代表赴启东折桂中学学习交...</a></li>
+                        
+                               <li><span class="datetime " >[2018-05-23]</span><a target="_blank" title="逐梦篮球创佳绩"  href="/xyxw/xxxw/2018-05-23-1467.aspx" >
+                            逐梦篮球创佳绩</a></li>
+                        
+                               <li><span class="datetime " >[2018-05-21]</span><a target="_blank" title="南京市校园广播剧创作培训班在共青团路中学进行"  href="/xyxw/xxxw/2018-05-21-1466.aspx" >
+                            南京市校园广播剧创作培训班在共青团路...</a></li>
+                        
+                               <li><span class="datetime " >[2018-05-21]</span><a target="_blank" title="我校足球特长生测试工作圆满完成"  href="/xyxw/xxxw/2018-05-21-1464.aspx" >
+                            我校足球特长生测试工作圆满完成</a></li>
+                        
+                               <li><span class="datetime " >[2018-05-18]</span><a target="_blank" title="共生、共建、共创、共享——我校召开德育名师创新研究室筹备会议"  href="/xyxw/xxxw/2018-05-18-1463.aspx" >
+                            共生、共建、共创、共享——我校召开德...</a></li>
+                        
+                               <li><span class="datetime " >[2018-05-17]</span><a target="_blank" title="第五届“爱鸟周”活动在我校蓬勃开展"  href="/xyxw/xxxw/2018-05-17-1460.aspx" >
+                            第五届“爱鸟周”活动在我校蓬勃开展</a></li>
+                        
+                               <li><span class="datetime " >[2018-05-16]</span><a target="_blank" title="南京市教育局领导来我校督查"  href="/xyxw/xxxw/2018-05-16-1456.aspx" >
+                            南京市教育局领导来我校督查</a></li>
+                        
+                     <div style="clear:both;"></div>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</div>
+ 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd--></div></div>
+<div style= "clear:both;height:0;font-size:1px;"></div></div></div></div>
+  <div style="float: left; width: 38%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+ 
+<div class="gzlist2 ">
+    <div class="area  mleft10">
+        <dl>
+            <dt>
+                <h3 style="background:url(/_skins/gzx/images/tzgg2.jpg) 0 0  no-repeat;height:36px;">
+                    <span ><a title="更多"  target="_blank" href="/tzgg//default.aspx">更多...
+                       </a></span>通知公告
+                </h3>
+            </dt>
+            <dd>
+                <ul >
+                    
+                               <li><span class="datetime " >[2018-05-21]</span><a target="_blank" title="南京市共青团路中学男足特长生专业加试成绩公示"  href="/tzgg/2018-05-21-1465.aspx" >
+                            南京市共青团路中学男足特长生专业加试成绩...</a></li>
+                        
+                               <li><span class="datetime " >[2018-05-04]</span><a target="_blank" title="评选第十届“雨花台区学科教学带头人”和第十一届“雨花台区教坛新秀”的通知"  href="/tzgg/jsfzgg/2018-05-04-1435.aspx" >
+                            评选第十届“雨花台区学科教学带头人”和第...</a></li>
+                        
+                               <li><span class="datetime " >[2018-04-27]</span><a target="_blank" title="2018年“黄浦杯”长三角城市群“我的教育观” 教育征文评选活动启事与投稿须知"  href="/tzgg/jsfzgg/2018-04-27-1429.aspx" >
+                            2018年“黄浦杯”长三角城市群“我的教育观...</a></li>
+                        
+                               <li><span class="datetime " >[2018-04-25]</span><a target="_blank" title="南京市共青团路中学  足球特长生招生工作方案"  href="/tzgg/2018-04-25-1424.aspx" >
+                            南京市共青团路中学  足球特长生招生工作方...</a></li>
+                        
+                               <li><span class="datetime " >[2018-04-21]</span><a target="_blank" title="南京市共青团路中学2018年初中招生公告"  href="/tzgg/xcsgg/2018-04-21-1419.aspx" >
+                            南京市共青团路中学2018年初中招生公告</a></li>
+                        
+                               <li><span class="datetime " >[2018-03-21]</span><a target="_blank" title="关于开展2018年度优秀教育案例、教育叙事征文评选活动的通知"  href="/tzgg/jsfzgg/2018-03-21-1354.aspx" >
+                            关于开展2018年度优秀教育案例、教育叙事征...</a></li>
+                        
+                               <li><span class="datetime " >[2018-03-09]</span><a target="_blank" title="公告"  href="/tzgg/zwgg/2018-03-09-1334.aspx" >
+                            公告</a></li>
+                        
+                               <li><span class="datetime " >[2017-11-27]</span><a target="_blank" title="公告"  href="/tzgg/zwgg/2017-11-27-1239.aspx" >
+                            公告</a></li>
+                        
+                               <li><span class="datetime " >[2017-11-17]</span><a target="_blank" title="语言文字相关法律法规"  href="/tzgg/jsfzgg/2017-11-17-1220.aspx" >
+                            语言文字相关法律法规</a></li>
+                        
+                               <li><span class="datetime " >[2017-11-14]</span><a target="_blank" title="关于雨花台区第十期教师个人课题补充申报的通知"  href="/tzgg/jsfzgg/2017-11-14-1213.aspx" >
+                            关于雨花台区第十期教师个人课题补充申报的...</a></li>
+                        
+                     <div style="clear:both;"></div>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</div>
+</div></div>
+<div style= "clear:both;height:0;font-size:1px;"></div></div> 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd--><div id="we7layout_151944304026079" class="sf_cols">
+ <div style="float: left; width: 29%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+ 
+<div class="gzlist6 ">
+    <div class="area  mtop10 mleft10">
+        <dl>
+            <dt>
+                <h3 style="background:url(/_skins/gzx/images/cdt2.jpg) 0 0  no-repeat;height:30px;">
+                    <span ><a title="更多"  target="_blank" href="/xxxxy/xxry//default.aspx">更多...
+                       </a></span>学校荣誉
+                </h3>
+            </dt>
+            <dd>
+        <div id="demoTop">
+        <div id="demoTop1">
+                <ul >
+                    
+                               <li><span class="datetime " >[2016-03-08]</span><a target="_blank" title="江苏省平安校园"  href="/xxxxy/xxry/2016-03-08-172.aspx" >
+                            江苏省平安校园</a></li>
+                        
+                               <li><span class="datetime " >[2016-03-08]</span><a target="_blank" title="南京市首批推进素质教育示范初中"  href="/xxxxy/xxry/2016-03-08-171.aspx" >
+                            南京市首批推进素质教育示范初...</a></li>
+                        
+                               <li><span class="datetime " >[2016-03-08]</span><a target="_blank" title="南京市基础教育课程改革先进集体"  href="/xxxxy/xxry/2016-03-08-170.aspx" >
+                            南京市基础教育课程改革先进集...</a></li>
+                        
+                               <li><span class="datetime " >[2016-03-08]</span><a target="_blank" title="第26、27届全国中小学生金钥匙科技竞赛科技教育先进学校"  href="/xxxxy/xxry/2016-03-08-169.aspx" >
+                            第26、27届全国中小学生金钥匙...</a></li>
+                        
+                               <li><span class="datetime " >[2016-03-08]</span><a target="_blank" title="南京市教育系统第八届师德先进群体"  href="/xxxxy/xxry/2016-03-08-168.aspx" >
+                            南京市教育系统第八届师德先进...</a></li>
+                        
+                               <li><span class="datetime " >[2016-03-08]</span><a target="_blank" title="南京市教育系统第八届师德先进群体"  href="/xxxxy/xxry/2016-03-08-164.aspx" >
+                            南京市教育系统第八届师德先进...</a></li>
+                        
+                               <li><span class="datetime " >[2016-03-08]</span><a target="_blank" title="南京市依法治校示范校"  href="/xxxxy/xxry/2016-03-08-163.aspx" >
+                            南京市依法治校示范校</a></li>
+                        
+                               <li><span class="datetime " >[2016-03-08]</span><a target="_blank" title="首届“金陵杯”power tech科创竞赛团体奖"  href="/xxxxy/xxry/2016-03-08-162.aspx" >
+                            首届“金陵杯”power tech科创...</a></li>
+                        
+                     <div style="clear:both;"></div>
+                </ul>
+        </div>
+        
+        <div id="demoTop2">
+
+        </div>
+        </div>
+            </dd>
+        </dl>
+    </div>
+
+    
+</div>
+ 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="margin-top:20px;margin-bottom:16px;">
+        <table>
+            <tbody>
+                <tr>
+                    <td><a href="/lxyz/" target="_blank"><img width="169" height="50" src="/_data/images/l03.jpg" alt="" /></a></td>
+                    <td><a target="_blank" href="http://www.njgz.net/tzgg/zwgg/2017-05-26-1009.aspx"><img width="169" height="50" src="/_data/images/l02.jpg" alt="" /></a></td>
+                </tr>
+                <tr>
+                    <td style="padding-left:2px;"><a href="/xxxxy/default.aspx" target="_blank"><img width="169" height="50" src="/_data/images/l4.jpg" alt="" /></a></td>
+                    <td style="padding-left:2px;"><a href="/mzsp/"><img width="169" height="50" src="/_data/images/l102.jpg" alt="" /></a></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+     
+ <!--HtmlWidgetEnd--></div></div>
+  <div style="float: left; width: 71%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+  
+ <!--htmlWidgetStart--> 
+ 
+        <div>
+        <div style="margin-bottom:10px;margin-left:16px;">
+        <table>
+            <tbody>
+                <tr>
+                    <td style="padding-right:18px;"><a href="http://www.njgz.net/oanew/login.aspx?ReturnUrl=%2foanew%2findex.aspx" target="_blank"><img width="136" height="68" src="/_data/images/1_03.jpg" alt="" /></a></td>
+                    <td style="padding-right:8px;"><a target="_blank" href="/jwpt/"><img width="123" height="68" src="/_data/images/1_05.jpg" alt="" />                     </a></td>
+                    <td style="padding-left:18px;"><a target="_blank" href="/dyqt/"><img width="104" height="68" src="/_data/images/1_07.jpg" alt="" /></a></td>
+                    <td style="padding-right:18px;"><a target="_blank" href="/jsfzpt/"><img width="137" height="67" src="/_data/images/1_10.jpg" alt="" /></a></td>
+                    <td style="padding-right:18px;"><a target="_blank" href="/xxzxpt/"><img width="144" height="67" src="/_data/images/1_12(1).jpg" alt="" /></a></td>
+                    <td><a target="_blank" href="/xwpt/"><img width="109" height="67" src="/_data/images/1_14.jpg" alt="" /></a></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        </div>
+     
+ <!--HtmlWidgetEnd--><div id="we7layout_151944305455658" class="sf_cols">
+ <div style="float: left; width: 50%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+ 
+<div class="gzlist4 ">
+    <div class="area  mtop10 mleft10">
+        <dl>
+            <dt>
+                <h3 style="background:url(/_skins/gzx/images/wzlb.jpg) 0 0  no-repeat;height:38px;">
+                    <span ><a title="更多"  target="_blank" href="/jykx//default.aspx">更多...
+                       </a></span>教研快讯
+                </h3>
+            </dt>
+            <dd>
+                <ul >
+                    
+                               <li><span class="datetime " >[2018-05-17]</span><a target="_blank" title="我校进行多分平台使用培训"  href="/jykx/jyxw/2018-05-17-1461.aspx" >
+                            我校进行多分平台使用培训</a></li>
+                        
+                               <li><span class="datetime " >[2018-05-11]</span><a target="_blank" title="我校进行初一初二期中考试质量分析会议"  href="/jykx/jyxw/2018-05-11-1451.aspx" >
+                            我校进行初一初二期中考试质量分析会议</a></li>
+                        
+                               <li><span class="datetime " >[2018-05-09]</span><a target="_blank" title="雨花台区初三数学教研活动在我校进行"  href="/jykx/jyxw/2018-05-09-1444.aspx" >
+                            雨花台区初三数学教研活动在我校进行</a></li>
+                        
+                               <li><span class="datetime " >[2018-04-20]</span><a target="_blank" title="同课异构，同放异彩——初中生物第七届“雨花杯”优质课展示活动"  href="/jykx/jyxw/sw/2018-04-20-1411.aspx" >
+                            同课异构，同放异彩——初中生物第七届...</a></li>
+                        
+                               <li><span class="datetime " >[2017-12-21]</span><a target="_blank" title="热闹的“冬锻”"  href="/jykx/2017-12-21-1270.aspx" >
+                            热闹的“冬锻”</a></li>
+                        
+                               <li><span class="datetime " >[2017-11-15]</span><a target="_blank" title="远到交流,共同进步——佛山市禅城区教育局领导和部分学校校长莅临我校交流学习"  href="/jykx/2017-11-15-1214.aspx" >
+                            远到交流,共同进步——佛山市禅城区教...</a></li>
+                        
+                               <li><span class="datetime " >[2017-11-03]</span><a target="_blank" title="雨花台区2017~2018学年第一学期 11.6 ~11.13教培活动通知"  href="/jykx/sqjyhd/2017-11-03-1188.aspx" >
+                            雨花台区2017~2018学年第一学期 11.6 ~...</a></li>
+                        
+                               <li><span class="datetime " >[2017-09-26]</span><a target="_blank" title="我校开展“魅力课堂”展示课活动"  href="/jykx/2017-09-26-1157.aspx" >
+                            我校开展“魅力课堂”展示课活动</a></li>
+                        
+                               <li><span class="datetime " >[2017-09-25]</span><a target="_blank" title="雨花台区2017~2018学年第一学期9.25~10.9教培活动通知"  href="http://www.yhjyxx.cn/NewShow-81776.aspx" >
+                            雨花台区2017~2018学年第一学期9.25~10...</a></li>
+                        
+                     <div style="clear:both;"></div>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</div>
+</div></div>
+  <div style="float: left; width: 50%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+ 
+<div class="gzlist5 ">
+    <div class="area  mtop10 mleft10">
+        <dl>
+            <dt>
+                <h3 style="background:url(/_skins/gzx/images/wzlb.jpg) 0 0  no-repeat;height:38px;">
+                    <span ><a title="更多"  target="_blank" href="/mzrc//default.aspx">更多...
+                       </a></span>每周日程
+                </h3>
+            </dt>
+            <dd>
+                <ul >
+                    
+                               <li><span class="datetime " >[2018-05-14]</span><a target="_blank" title="第12周工作要点"  href="/mzrc/2018-05-14-1455.aspx" >
+                            第12周工作要点</a></li>
+                        
+                               <li><span class="datetime " >[2018-05-07]</span><a target="_blank" title="第11周工作要点"  href="/mzrc/2018-05-07-1442.aspx" >
+                            第11周工作要点</a></li>
+                        
+                               <li><span class="datetime " >[2018-04-17]</span><a target="_blank" title="第8周工作要点"  href="/mzrc/2018-04-17-1390.aspx" >
+                            第8周工作要点</a></li>
+                        
+                               <li><span class="datetime " >[2018-04-17]</span><a target="_blank" title="第7周工作要点"  href="/mzrc/2018-04-17-1389.aspx" >
+                            第7周工作要点</a></li>
+                        
+                               <li><span class="datetime " >[2018-04-17]</span><a target="_blank" title="第6周工作要点"  href="/mzrc/2018-04-17-1388.aspx" >
+                            第6周工作要点</a></li>
+                        
+                               <li><span class="datetime " >[2018-03-26]</span><a target="_blank" title="第5周工作要点"  href="/mzrc/2018-03-26-1371.aspx" >
+                            第5周工作要点</a></li>
+                        
+                               <li><span class="datetime " >[2018-03-19]</span><a target="_blank" title="第4周工作要点"  href="/mzrc/2018-03-19-1351.aspx" >
+                            第4周工作要点</a></li>
+                        
+                               <li><span class="datetime " >[2018-03-19]</span><a target="_blank" title="第3周工作要点"  href="/mzrc/2018-03-19-1350.aspx" >
+                            第3周工作要点</a></li>
+                        
+                               <li><span class="datetime " >[2018-03-19]</span><a target="_blank" title="第2周工作要点"  href="/mzrc/2018-03-19-1349.aspx" >
+                            第2周工作要点</a></li>
+                        
+                     <div style="clear:both;"></div>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</div>
+</div></div>
+<div style= "clear:both;height:0;font-size:1px;"></div></div></div></div>
+<div style= "clear:both;height:0;font-size:1px;"></div></div><div id="we7layout_146768784106725" class="sf_cols">
+ <div style="float: left; width: 29%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+ 
+<div class="gzlist3 ">
+    <div class="area  mtop10 mleft10">
+        <dl>
+            <dt>
+                <h3 style="background:url(/_skins/gzx/images/cdt2.jpg) 0 0  no-repeat;height:30px;">
+                    <span ><a title="更多"  target="_blank" href="/xcjd//default.aspx">更多...
+                       </a></span>校长专栏
+                </h3>
+            </dt>
+            <dd>
+                <ul >
+                    
+                     <div style="clear:both;"></div>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</div>
+</div></div>
+  <div style="float: left; width: 71%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+ <div id="we7layout_146769689815275" class="sf_cols">
+ <div style="float: left; width: 50%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+ 
+<script type="text/javascript">
+    function nTabs(tabObj, obj) {
+        var tabList = document.getElementById(tabObj).getElementsByTagName("li");
+        for (i = 0; i < tabList.length; i++) {
+            if (tabList[i].id == obj.id) {
+                document.getElementById(tabObj + "_Title" + i).className = "active";
+                document.getElementById(tabObj + "_Content" + i).style.display = "block";
+            } else {
+                var temp = document.getElementById(tabObj + "_Title" + i);
+                if (temp != null) {
+                    document.getElementById(tabObj + "_Title" + i).className = "normal";
+                    document.getElementById(tabObj + "_Content" + i).style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+<div class="z7 floatLeft">
+    
+    <div class="n4Tab" id="n4Tabctl00_NewsTab_Default_151944018847435">
+        <div class="TabTitle" >
+            
+          <li  id="n4Tabctl00_NewsTab_Default_151944018847435_Title0" class="active" onmouseover="nTabs('n4Tabctl00_NewsTab_Default_151944018847435',this);">
+                <a href="/dytd/">
+                    德育天地</a></li>
+            
+          <li  id="n4Tabctl00_NewsTab_Default_151944018847435_Title1" class="normal" onmouseover="nTabs('n4Tabctl00_NewsTab_Default_151944018847435',this);">
+                <a href="/xsyd/">
+                    学生园地</a></li>
+            
+            <div class="clear">
+            </div>
+        </div>
+        
+        <div id="n4Tabctl00_NewsTab_Default_151944018847435_Content0" style="display:block; "
+            class="TabContent">
+            
+            <li><a target="_blank" title="八礼四仪" href="/dytd/cjwmcs/2018-05-14-1453.aspx">
+                八礼四仪</a><span class="datetime">[2018-05-14]</span></li>
+            
+            <li><a target="_blank" title="社会主义核心价值观" href="/dytd/cjwmcs/2018-05-14-1452.aspx">
+                社会主义核心价值观</a><span class="datetime">[2018-05-14]</span></li>
+            
+            <li><a target="_blank" title="与人为善，让心更温暖" href="/dytd/2017-11-01-1179.aspx">
+                与人为善，让心更温暖</a><span class="datetime">[2017-11-01]</span></li>
+            
+            <li><a target="_blank" title="我校召开11月班主任工作例会" href="/dytd/2017-11-01-1176.aspx">
+                我校召开11月班主任工作例会</a><span class="datetime">[2017-11-01]</span></li>
+            
+            <li><a target="_blank" title="挥洒的汗水，飞扬的青春" href="/dytd/2017-10-31-1172.aspx">
+                挥洒的汗水，飞扬的青春</a><span class="datetime">[2017-10-31]</span></li>
+            
+            <li><a target="_blank" title="节约粮食，从我做起" href="/dytd/2017-10-31-1170.aspx">
+                节约粮食，从我做起</a><span class="datetime">[2017-10-31]</span></li>
+            
+            <li><a target="_blank" title="雨花台区第六届少年法学院知识竞赛圆满结束" href="/dytd/2017-10-31-1169.aspx">
+                雨花台区第六届少年法学院知识竞...</a><span class="datetime">[2017-10-31]</span></li>
+            
+            <li><a target="_blank" title="社会实践，满载而归" href="/dytd/2017-10-31-1166.aspx">
+                社会实践，满载而归</a><span class="datetime">[2017-10-31]</span></li>
+            
+        </div>
+        
+        <div id="n4Tabctl00_NewsTab_Default_151944018847435_Content1" style="display:none; "
+            class="TabContent">
+            
+            <li><a target="_blank" title="综合素质标兵" href="/xsyd/2016-09-02-388.aspx">
+                综合素质标兵</a><span class="datetime">[2016-09-02]</span></li>
+            
+            <li><a target="_blank" title="综合素质标兵" href="/xsyd/2016-09-02-387.aspx">
+                综合素质标兵</a><span class="datetime">[2016-09-02]</span></li>
+            
+            <li><a target="_blank" title="综合素质标兵" href="/xsyd/2016-09-02-386.aspx">
+                综合素质标兵</a><span class="datetime">[2016-09-02]</span></li>
+            
+            <li><a target="_blank" title="综合素质标兵" href="/xsyd/2016-09-02-385.aspx">
+                综合素质标兵</a><span class="datetime">[2016-09-02]</span></li>
+            
+            <li><a target="_blank" title="综合素质标兵" href="/xsyd/2016-09-02-384.aspx">
+                综合素质标兵</a><span class="datetime">[2016-09-02]</span></li>
+            
+            <li><a target="_blank" title="综合素质标兵" href="/xsyd/2016-09-02-383.aspx">
+                综合素质标兵</a><span class="datetime">[2016-09-02]</span></li>
+            
+            <li><a target="_blank" title="综合素质标兵" href="/xsyd/2016-09-02-382.aspx">
+                综合素质标兵</a><span class="datetime">[2016-09-02]</span></li>
+            
+            <li><a target="_blank" title="综合素质标兵" href="/xsyd/2016-09-02-381.aspx">
+                综合素质标兵</a><span class="datetime">[2016-09-02]</span></li>
+            
+        </div>
+        
+    </div>
+</div>
+</div></div>
+  <div style="float: left; width: 50%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+ 
+<script type="text/javascript">
+    function nTabs(tabObj, obj) {
+        var tabList = document.getElementById(tabObj).getElementsByTagName("li");
+        for (i = 0; i < tabList.length; i++) {
+            if (tabList[i].id == obj.id) {
+                document.getElementById(tabObj + "_Title" + i).className = "active";
+                document.getElementById(tabObj + "_Content" + i).style.display = "block";
+            } else {
+                var temp = document.getElementById(tabObj + "_Title" + i);
+                if (temp != null) {
+                    document.getElementById(tabObj + "_Title" + i).className = "normal";
+                    document.getElementById(tabObj + "_Content" + i).style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+<div class="z7 floatLeft">
+    
+    <div class="n4Tab" id="n4Tabctl00_NewsTab_Default_151944469065983">
+        <div class="TabTitle" >
+            
+          <li  id="n4Tabctl00_NewsTab_Default_151944469065983_Title0" class="active" onmouseover="nTabs('n4Tabctl00_NewsTab_Default_151944469065983',this);">
+                <a href="/jsfz/">
+                    教师发展</a></li>
+            
+          <li  id="n4Tabctl00_NewsTab_Default_151944469065983_Title1" class="normal" onmouseover="nTabs('n4Tabctl00_NewsTab_Default_151944469065983',this);">
+                <a href="/zhxy/">
+                    智慧校园</a></li>
+            
+            <div class="clear">
+            </div>
+        </div>
+        
+        <div id="n4Tabctl00_NewsTab_Default_151944469065983_Content0" style="display:block; "
+            class="TabContent">
+            
+            <li><a target="_blank" title="教师发展处组织鸿和电子白板软件培训" href="/jsfz/2018-05-16-1457.aspx">
+                教师发展处组织鸿和电子白板软件...</a><span class="datetime">[2018-05-16]</span></li>
+            
+            <li><a target="_blank" title="教师发展处全体成员参加LED显示屏使用的培训" href="/jsfz/2018-05-10-1450.aspx">
+                教师发展处全体成员参加LED显示...</a><span class="datetime">[2018-05-10]</span></li>
+            
+            <li><a target="_blank" title="同课异构，同放异彩——初中生物第七届“雨花杯”优质课展示活动" href="/jsfz/2018-04-20-1409.aspx">
+                同课异构，同放异彩——初中生物...</a><span class="datetime">[2018-04-20]</span></li>
+            
+            <li><a target="_blank" title="盛慧老师" href="/jsfz/msfc/2016-03-10-222.aspx">
+                盛慧老师</a><span class="datetime">[2016-03-10]</span></li>
+            
+            <li><a target="_blank" title="朱丹丹老师" href="/jsfz/msfc/2016-03-10-221.aspx">
+                朱丹丹老师</a><span class="datetime">[2016-03-10]</span></li>
+            
+            <li><a target="_blank" title="马长春老师" href="/jsfz/msfc/2016-03-10-220.aspx">
+                马长春老师</a><span class="datetime">[2016-03-10]</span></li>
+            
+            <li><a target="_blank" title="周晨老师" href="/jsfz/msfc/2016-03-10-219.aspx">
+                周晨老师</a><span class="datetime">[2016-03-10]</span></li>
+            
+            <li><a target="_blank" title="林祥老师" href="/jsfz/msfc/2016-03-10-218.aspx">
+                林祥老师</a><span class="datetime">[2016-03-10]</span></li>
+            
+        </div>
+        
+        <div id="n4Tabctl00_NewsTab_Default_151944469065983_Content1" style="display:none; "
+            class="TabContent">
+            
+            <li><a target="_blank" title="教师发展处组织鸿和电子白板软件培训" href="/zhxy/2018-05-16-1459.aspx">
+                教师发展处组织鸿和电子白板软件...</a><span class="datetime">[2018-05-16]</span></li>
+            
+            <li><a target="_blank" title="同课异构，同放异彩——初中生物第七届“雨花杯”优质课展示活动" href="/zhxy/2018-04-20-1415.aspx">
+                同课异构，同放异彩——初中生物...</a><span class="datetime">[2018-04-20]</span></li>
+            
+            <li><a target="_blank" title="我校进行智慧校园专题培训" href="/zhxy/2018-04-18-1413.aspx">
+                我校进行智慧校园专题培训</a><span class="datetime">[2018-04-18]</span></li>
+            
+        </div>
+        
+    </div>
+</div>
+</div></div>
+<div style= "clear:both;height:0;font-size:1px;"></div></div></div></div>
+<div style= "clear:both;height:0;font-size:1px;"></div></div> 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd--> 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd-->
+    <div class="hdztp  mtop10 mleft10" >
+<div class="pic_article">
+<h3 style="background:url(/_skins/gzx/images/fc2.jpg) no-repeat;height:36px;line-height:36px;">
+    <span class=" CsCssshow" style="font-size:12px;color:#999;"><a title="更多" target="_blank" href="/jsfz/msfc//default.aspx">更多...
+                       </a></span><span style="" style="float:left;">名师风采</span></h3>
+
+    
+          <div id="demo">
+        <div id="indemo">
+        <div id="demo1">
+    <ul >
+    
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-222.aspx">
+            <img width=120px height=90px alt="盛慧老师" src="/_data/2016/03/10/7e2c193f_3cce_414e_857e_3886a8c64e39/20100302-092335_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-222.aspx">盛慧老师</a></div></li>
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-221.aspx">
+            <img width=120px height=90px alt="朱丹丹老师" src="/_data/2016/03/10/757946da_4e1f_4810_aec7_6f0105a9ccd9/451_297_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-221.aspx">朱丹丹老师</a></div></li>
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-220.aspx">
+            <img width=120px height=90px alt="马长春老师" src="/_data/2016/03/10/1b321d4c_d8ef_4dc8_bd07_b35fb5eca6ee/391_245_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-220.aspx">马长春老师</a></div></li>
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-219.aspx">
+            <img width=120px height=90px alt="周晨老师" src="/_data/2016/03/10/ea3c408c_8792_4c0e_9cd1_3b4448ca4d8c/395_248_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-219.aspx">周晨老师</a></div></li>
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-218.aspx">
+            <img width=120px height=90px alt="林祥老师" src="/_data/2016/03/10/6d825435_7d9b_4bd3_87bc_7acb6b832558/452_298_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-218.aspx">林祥老师</a></div></li>
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-217.aspx">
+            <img width=120px height=90px alt="魏曙明老师" src="/_data/2016/03/10/238d7116_0586_40c5_84c6_b26b7fbde121/377_230_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-217.aspx">魏曙明老师</a></div></li>
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-216.aspx">
+            <img width=120px height=90px alt="黎宗霞老师" src="/_data/2016/03/10/3d2102d9_a686_4b5e_a4c3_224ac75bd8f3/453_299_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-216.aspx">黎宗霞老师</a></div></li>
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-212.aspx">
+            <img width=120px height=90px alt="蒋旭东老师" src="/_data/2016/03/10/dd8f882a_fecb_477f_8bd6_aa951568ccf4/378_231_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-212.aspx">蒋旭东老师</a></div></li>
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-211.aspx">
+            <img width=120px height=90px alt="乐平老师" src="/_data/2016/03/10/19ddb458_2e48_4008_81e1_10ff8452191f/744_629_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-211.aspx">乐平老师</a></div></li>
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-210.aspx">
+            <img width=120px height=90px alt="端木义香老师" src="/_data/2016/03/10/bc1eca4a_9799_4343_acab_9cc39c918d78/745_630_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-210.aspx">端木义香老师</a></div></li>
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-209.aspx">
+            <img width=120px height=90px alt="曹文强老师" src="/_data/2016/03/10/e4e48296_3f98_481f_a4cb_ce3df447c613/747_632_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-209.aspx">曹文强老师</a></div></li>
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-208.aspx">
+            <img width=120px height=90px alt="郝沁老师" src="/_data/2016/03/10/ce72cba6_ab38_4f41_8220_9b11af3e5e97/749_634_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-208.aspx">郝沁老师</a></div></li>
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-207.aspx">
+            <img width=120px height=90px alt="周遇老师" src="/_data/2016/03/10/2a211066_1947_4773_ae81_a6ad9577e4c8/750_638_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-207.aspx">周遇老师</a></div></li>
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-206.aspx">
+            <img width=120px height=90px alt="杨世春老师" src="/_data/2016/03/10/64b76f52_67be_4953_8a60_ddfc73c93fbc/413_267_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-206.aspx">杨世春老师</a></div></li>
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-205.aspx">
+            <img width=120px height=90px alt="梅芳老师" src="/_data/2016/03/10/e219b389_9c03_4b75_871a_23abaa8cda4a/492_364_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-205.aspx">梅芳老师</a></div></li>
+        
+        <li style="font-size:12px;"><div><a target="_blank" href="/jsfz/msfc/2016-03-10-204.aspx">
+            <img width=120px height=90px alt="潘祥粉老师" src="/_data/2016/03/10/ce01b4c3_a2bc_4a45_8247_8b4f0c0606d1/392_246_nytp.jpg"></a></div><div ><a
+                target="_blank" href="/jsfz/msfc/2016-03-10-204.aspx">潘祥粉老师</a></div></li>
+        
+        <div class="clear">
+        </div>
+    </ul>
+    </div>
+     <div id="demo2"></div>
+</div>
+</div>
+ <script>
+
+            var speed = 50;
+            var tab = document.getElementById("demo");
+            var tab1 = document.getElementById("demo1");
+            var tab2 = document.getElementById("demo2");
+            tab2.innerHTML = tab1.innerHTML;
+            function Marquee() {
+                if (tab2.offsetWidth - tab.scrollLeft <= 0)
+                    tab.scrollLeft -= tab1.offsetWidth
+                else {
+                    tab.scrollLeft++;
+                }
+            }
+            var MyMar = setInterval(Marquee, speed);
+            tab.onmouseover = function () { clearInterval(MyMar) };
+            tab.onmouseout = function () { MyMar = setInterval(Marquee, speed) };
+            
+            </script>
+            
+</div>
+            
+</div>
+ 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd--> 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd--> 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd--> 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd--><div id="we7layout_14677017702676" class="sf_cols">
+ <div style="float: left; width: 29%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+ 
+<div class="gzlist3 ">
+    <div class="area  mtop10 mleft10">
+        <dl>
+            <dt>
+                <h3 style="background:url(/_skins/gzx/images/cdt2.jpg) 0 0  no-repeat;height:30px;">
+                    <span ><a title="更多"  target="_blank" href="/djgz//default.aspx">更多...
+                       </a></span>党建工作
+                </h3>
+            </dt>
+            <dd>
+                <ul >
+                    
+                               <li><span class="datetime " >[2018-03-21]</span><a target="_blank" title="认真梳理意见，查摆突出问题"  href="/djgz/djdt/2018-03-21-1360.aspx" >
+                            认真梳理意见，查摆突出问题</a></li>
+                        
+                               <li><span class="datetime " >[2017-09-21]</span><a target="_blank" title="雨花台区迎接党的十九大主题宣讲会在共青团路中学拉开帷幕"  href="/djgz/2017-09-21-1142.aspx" >
+                            雨花台区迎接党的十九大主题宣...</a></li>
+                        
+                               <li><span class="datetime " >[2016-12-07]</span><a target="_blank" title="习近平在中国文联十大、中国作协九大开幕式上的讲话"  href="/djgz/2016-12-07-535.aspx" >
+                            习近平在中国文联十大、中国作...</a></li>
+                        
+                               <li><span class="datetime " >[2016-10-27]</span><a target="_blank" title="弘扬长征精神，推进党的建设"  href="/djgz/2016-10-27-450.aspx" >
+                            弘扬长征精神，推进党的建设</a></li>
+                        
+                               <li><span class="datetime " >[2016-05-20]</span><a target="_blank" title="举“校”上下全部署，“两学一做”新风立"  href="/djgz/2016-05-20-312.aspx" >
+                            举“校”上下全部署，“两学一...</a></li>
+                        
+                               <li><span class="datetime " >[2016-03-08]</span><a target="_blank" title="少年毛泽东从《荀子》中探寻交友之道"  href="/djgz/djzh/2016-03-08-175.aspx" >
+                            少年毛泽东从《荀子》中探寻交...</a></li>
+                        
+                               <li><span class="datetime " >[2016-03-08]</span><a target="_blank" title="共中：就“十二五”发展规划（讨论稿）广泛征求意见"  href="/djgz/djdt/2016-03-08-174.aspx" >
+                            共中：就“十二五”发展规划（...</a></li>
+                        
+                               <li><span class="datetime " >[2016-03-08]</span><a target="_blank" title="中共共青团路中学党支部召开专题组织生活会"  href="/djgz/djdt/2016-03-08-173.aspx" >
+                            中共共青团路中学党支部召开专...</a></li>
+                        
+                               <li><span class="datetime " >[2016-03-08]</span><a target="_blank" title="共中召开“中心组”学习会"  href="/djgz/cxzy/2016-03-08-138.aspx" >
+                            共中召开“中心组”学习会</a></li>
+                        
+                               <li><span class="datetime " >[2015-12-08]</span><a target="_blank" title="共中召开组织发展大会"  href="/djgz/xfpy/2016-03-08-146.aspx" >
+                            共中召开组织发展大会</a></li>
+                        
+                     <div style="clear:both;"></div>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</div>
+</div></div>
+  <div style="float: left; width: 71%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+ <div id="we7layout_14677018051443" class="sf_cols">
+ <div style="float: left; width: 50%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+ 
+<div class="gzlist4 ">
+    <div class="area  mtop10 mleft10">
+        <dl>
+            <dt>
+                <h3 style="background:url(/_skins/gzx/images/wzlb.jpg) 0 0  no-repeat;height:38px;">
+                    <span ><a title="更多"  target="_blank" href="/zqtd//default.aspx">更多...
+                       </a></span>足球天地
+                </h3>
+            </dt>
+            <dd>
+                <ul >
+                    
+                               <li><span class="datetime " >[2018-05-07]</span><a target="_blank" title="弘扬足球文化 浸润多彩校园（二）"  href="/zqtd/2018-05-07-1437.aspx" >
+                            弘扬足球文化 浸润多彩校园（二）</a></li>
+                        
+                               <li><span class="datetime " >[2018-05-03]</span><a target="_blank" title="弘扬足球文化   浸润多彩校园（一）"  href="/zqtd/2018-05-03-1432.aspx" >
+                            弘扬足球文化   浸润多彩校园（一）</a></li>
+                        
+                               <li><span class="datetime " >[2018-04-25]</span><a target="_blank" title="我校召开校园足球工作专项会议"  href="/zqtd/2018-04-25-1425.aspx" >
+                            我校召开校园足球工作专项会议</a></li>
+                        
+                               <li><span class="datetime " >[2018-04-23]</span><a target="_blank" title="推广校园足球文化   我校班级足球联赛正式启动"  href="/zqtd/2018-04-23-1420.aspx" >
+                            推广校园足球文化   我校班级足球联赛...</a></li>
+                        
+                               <li><span class="datetime " >[2018-04-19]</span><a target="_blank" title="2017-2018学年度共青团路中学初二年级八人制足球比赛规程"  href="/zqtd/2018-04-19-1401.aspx" >
+                            2017-2018学年度共青团路中学初二年级...</a></li>
+                        
+                               <li><span class="datetime " >[2018-04-19]</span><a target="_blank" title="2017-2018学年度共青团路中学初一年级三人制笼式足球比赛规程"  href="/zqtd/2018-04-19-1400.aspx" >
+                            2017-2018学年度共青团路中学初一年级...</a></li>
+                        
+                               <li><span class="datetime " >[2018-04-19]</span><a target="_blank" title="2017-2018学年度共青团路中学初一年级足球运球绕杆基本功比赛规程"  href="/zqtd/2018-04-19-1399.aspx" >
+                            2017-2018学年度共青团路中学初一年级...</a></li>
+                        
+                               <li><span class="datetime " >[2018-04-09]</span><a target="_blank" title="丰富多彩足球生活"  href="/zqtd/2018-04-09-1380.aspx" >
+                            丰富多彩足球生活</a></li>
+                        
+                               <li><span class="datetime " >[2018-04-03]</span><a target="_blank" title="足球大课间体育活动制度"  href="/zqtd/2018-04-03-1376.aspx" >
+                            足球大课间体育活动制度</a></li>
+                        
+                               <li><span class="datetime " >[2018-04-03]</span><a target="_blank" title="南京市共青团路中学运动员（足球队）管理条例"  href="/zqtd/2018-04-03-1375.aspx" >
+                            南京市共青团路中学运动员（足球队）管...</a></li>
+                        
+                     <div style="clear:both;"></div>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</div>
+</div></div>
+  <div style="float: left; width: 50%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+ 
+<div class="gzlist5 ">
+    <div class="area  mtop10 mleft10">
+        <dl>
+            <dt>
+                <h3 style="background:url(/_skins/gzx/images/wzlb.jpg) 0 0  no-repeat;height:38px;">
+                    <span ><a title="更多"  target="_blank" href="/jsfz/jsbk//default.aspx">更多...
+                       </a></span>教师博客
+                </h3>
+            </dt>
+            <dd>
+                <ul >
+                    
+                               <li><span class="datetime " >[2016-03-03]</span><a target="_blank" title="开课小结"  href="/jsfz/jsbk/2016-03-03-11.aspx" >
+                            开课小结</a></li>
+                        
+                               <li><span class="datetime " >[2016-02-29]</span><a target="_blank" title="听课小结"  href="/jsfz/jsbk/2016-03-03-10.aspx" >
+                            听课小结</a></li>
+                        
+                               <li><span class="datetime " >[2016-02-29]</span><a target="_blank" title="思维导图及其在中学物理教学中的应用"  href="/jsfz/jsbk/2016-03-03-9.aspx" >
+                            思维导图及其在中学物理教学中的应用</a></li>
+                        
+                               <li><span class="datetime " >[2016-02-29]</span><a target="_blank" title="上山打老虎"  href="/jsfz/jsbk/2016-03-03-8.aspx" >
+                            上山打老虎</a></li>
+                        
+                               <li><span class="datetime " >[2016-02-29]</span><a target="_blank" title="方向的不同"  href="/jsfz/jsbk/2016-03-03-7.aspx" >
+                            方向的不同</a></li>
+                        
+                               <li><span class="datetime " >[2016-02-29]</span><a target="_blank" title="读书笔记"  href="/jsfz/jsbk/2016-03-03-6.aspx" >
+                            读书笔记</a></li>
+                        
+                               <li><span class="datetime " >[2016-02-29]</span><a target="_blank" title="不一样的美国教育"  href="/jsfz/jsbk/2016-03-03-5.aspx" >
+                            不一样的美国教育</a></li>
+                        
+                               <li><span class="datetime " >[2016-02-25]</span><a target="_blank" title="与君共勉"  href="/jsfz/jsbk/2016-03-03-20.aspx" >
+                            与君共勉</a></li>
+                        
+                               <li><span class="datetime " >[2016-02-22]</span><a target="_blank" title="锻炼身体是刚需"  href="/jsfz/jsbk/2016-03-03-12.aspx" >
+                            锻炼身体是刚需</a></li>
+                        
+                               <li><span class="datetime " >[2016-02-20]</span><a target="_blank" title="寒假短"  href="/jsfz/jsbk/2016-03-03-13.aspx" >
+                            寒假短</a></li>
+                        
+                     <div style="clear:both;"></div>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</div>
+</div></div>
+<div style= "clear:both;height:0;font-size:1px;"></div></div></div></div>
+<div style= "clear:both;height:0;font-size:1px;"></div></div>
+          </div>
+          <div id="RadDockZone_footer">
+             
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd--> 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd--><div id="we7layout_146770322208098" class="sf_cols">
+ <div style="float: left; width: 60%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+ 
+<div class="Statistic_Default">
+<div class="statistics mtop10">
+    <h3 style="display:none;" >
+        网站统计</h3>
+    <div style="text-align:center;color:#333;border:1px solid #d7e7c7;font-size:14px;font-family:微软雅黑;line-height:23px;margin-top:15px;"  class="statistics_content">
+         总访问量：280837人次&nbsp;
+                            总浏览量：3108448人次&nbsp;
+                            今日访问：302人次&nbsp;
+                            日均访问：339人次
+    </div>
+</div>
+</div></div></div>
+  <div style="float: left; width: 40%; margin: 0; ;" class="sf_colsOut"><div class="sf_colsIn ">
+  
+ <!--htmlWidgetStart--> 
+ 
+        <div style="margin-bottom:10px;width:100%;" class="yqlj">
+        <div style="float:left;">
+        <form>
+            <select style="margin-left:10px;width:140px;margin-top:10px;" name="" onchange="javascript:if (this.options[this.selectedIndex].value != '')
+            window.open(this.options[this.selectedIndex].value);this.options[0].selected;">
+            <option value="">教育网站</option>
+            <option value="http://www1.pep.com.cn/">人民教育出版社</option>
+            <option value="http://www.nje.cn/">江苏教育信息网</option>
+            <option value="http://www.jse.edu.cn/">南京教育信息网</option>
+            <option value="http://www.ec.js.edu.cn/">江苏教育</option>
+            <option value="http://njetc.nje.cn/">市电教馆</option>
+            <option value="http://www.ncet.edu.cn/">中央电化教育馆</option>
+            <option value="http://www.chinaedu.edu.cn/">中国教育信息网</option>
+            <option value="http://www.yhjyxx.cn/">雨花教育信息</option>
+            <option value="http://www.njjks.cn/">南京市教科所</option>
+            <option value="http://njyht.jse.edu.cn/default.htm">雨花台区教育信息化公共服务平台</option>
+            <option value="http://psp.nje.cn/acommonapp/chome/mindex.do">南京智慧教育云服务平台</option>
+            </select>
+        </form>
+        </div>
+        <div style="float:left">
+        <form>
+            <select style="margin-left:30px;width:140px;margin-top:10px;" name="" onchange="javascript:if (this.options[this.selectedIndex].value != '')
+            window.open(this.options[this.selectedIndex].value);this.options[0].selected;">
+            <option value="">资源网站</option>
+            <option value="http://www.google.cn/">Google</option>
+            <option value="http://www.onlinedown.net/">华军软件园</option>
+            <option value="http://www.cdstm.cn/">中国数字科技馆</option>
+            <option value="http://www.cnweike.cn/">中国微课网</option>
+            </select>
+        </form>
+        </div>
+        <div style="float:right">
+        <form>
+            <select onchange="javascript:if (this.options[this.selectedIndex].value != '')
+            window.open(this.options[this.selectedIndex].value);this.options[0].selected;" name="" style="margin-left:10px;width:140px;margin-top:10px;">
+            <option value="">高等院校</option>
+            <option value="http://www.pku.edu.cn/">北京大学</option>
+            <option value="http://www.fudan.edu.cn/index.html">复旦大学</option>
+            <option value="http://www.zju.edu.cn/">浙江大学</option>
+            <option value="http://www.hrbust.edu.cn/">哈尔滨理工大学</option>
+            <option value="http://www.nju.edu.cn/">南京大学</option>
+            </select>
+        </form>
+        </div>
+        </div>
+     
+ <!--HtmlWidgetEnd--></div></div>
+<div style= "clear:both;height:0;font-size:1px;"></div></div> 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd--> 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd--> 
+ <!--htmlWidgetStart--> 
+ 
+        <style type="text/css">
+.wzwt{background:#6cb623;width:100%;height:180px;font-size:14px;font-family:微软雅黑;margin:0 auto;}
+.wzwz{margin-left:235px;;line-height:30px;color:#fff;padding-top:10px; }
+.wzwz a{color:#fff;}
+.wzwz a:hover{color:#fff;text-decoration:underline;}
+
+</style>
+        <div class="wzwt">
+        <div class="wzwz">
+        <table>
+            <tbody>
+                <tr>
+                    <td><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/11/173/1285/60439761/CA111731285604397610001.js' type='text/javascript'%3E%3C/script%3E"));</script></td>
+                    <td>南京市共青团路中学&nbsp; 地址：南京市雨花新村5村19幢 &nbsp; 联系电话：52416967&nbsp; 电子邮箱：njgqtlzx@126.com <br />
+                    Copyright 2008 GongQingTuanLu Junior Middle School, All Rights Reserved &nbsp;&nbsp;<a href="http://www.njgz.net/webold/index.aspx" target="_blank">怀旧版</a>   &nbsp;&nbsp; &nbsp;&nbsp;                 <span style="font-size:16px;"><a href="/admin/" target="_blank">后台管理</a></span>                     <br />
+                    技术支持:<a href="http://www.lanall.com" target="_blank">联澳科技 &nbsp;</a><a href="http://www.miitbeian.gov.cn" target="_blank">工信部备案号：苏ICP备09013293号-1</a>&nbsp;&nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011402010045" style="display:inline-block;text-decoration:none;"><img width="20" height="20" alt="" src="/_data/images/备案图标.png" style="float:left;" />
+                    <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#fff;">苏公网安备 32011402010045号</p>
+                    </a></td>
+                    <td><img width="120" height="120" alt="" src="/_data/2016/03/08/a2358025_6484_4284_bccb_d2c881ddf247/images/qrcode_for_gh_0911c26c6ba4_1280.jpg" /><br />
+                    <span style="font-size:12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;微信公众号</span></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        </div>
+     
+ <!--HtmlWidgetEnd--> 
+ <!--htmlWidgetStart--> 
+ 
+        <div style="width:100%;height:10px;background:#fff;"></div>
+     
+ <!--HtmlWidgetEnd-->
+          </div>
+      
+    </div>
+</body>
+</html>

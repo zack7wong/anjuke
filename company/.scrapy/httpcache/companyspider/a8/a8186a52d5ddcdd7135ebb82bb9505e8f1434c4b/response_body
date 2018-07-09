@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>昆明医科大学海源学院</title>
+<link href="/Template/Default/kmyxy2/zsxxw/indexxf/xf.css" rel="stylesheet" type="text/css" />
+<link href="/Template/Default/kyhyxy201404/images001/css.css" rel="stylesheet" type="text/css" />
+<script src="/Template/Default/kyhyxy201404/images001/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/Template/Default/kyhyxy201404/images001/nav.js" type="text/javascript"></script>
+<script type="text/javascript" src="/Template/Default/kyhyxy201404/images001/jquery.pack.js"></script>
+<script type="text/javascript" src="/Template/Default/kyhyxy201404/images001/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="/Template/Default/kmyxy2/zsxxw/indexxf/xf.js"></script>
+</head>
+<body>
+
+<div class="head">
+  <div class="top">
+    <div class="logo"><img src="/Template/Default/kyhyxy201404//images001/logo.png"></div>
+    <div class="indexss">
+      <div class="indexss1"><a href="/Category_963/Index.aspx">English</a><a href="#">加入收藏</a><a href="/admin/login.aspx">后台登录</a></div>
+                 <div class="indexss2">
+<input id="keyword" name="keyword" type="text"  style="background:url(/Template/Default/kyhyxy201404//images001/indexss.png) no-repeat; width:140px; height:22px; border:0px; text-indent:10px;"/>
+<input  onclick="OnSearchCheckAndSubmit();" id="Submit" name="Submit" type="image"  src="/Template/Default/kyhyxy201404//images001/indexan.png"/>
+<script language="javascript" type="text/javascript">
+  function OnSearchCheckAndSubmit(){
+      var keyword = document.getElementById("keyword").value;
+      if (keyword == '' || keyword == null) {
+          alert("请填写您想搜索的关键词");
+          return;
+      }
+      else {
+      
+          window.location = "/search.aspx?searchtype=0&Keyword=" + escape(keyword);
+      }
+  }
+</script>
+</div>
+         </div>
+    <div class="nav">
+      <div class="navmain">
+        <ul id="nav_all">
+          <li><a href="/">首 页</a></li>
+          <li><a href="/Item/624.aspx">学院概况</a><ul style="left: 43px;">
+              <li><a href="/Item/624.aspx">学院简介</a></li>
+              <li><a href="/Item/5375.aspx">领导机构</a></li>
+              <li><a href="/Item/5292.aspx">领导关怀</a></li>
+              <li><a href="/item/5124.aspx">组织机构</a></li>
+              <li><a href="/Item/627.aspx">校历</a></li>
+              <li><a href="/Item/628.aspx">校园地图</a></li>
+            </ul>
+          </li>
+          <li><a href="/Item/10903.aspx">院系设置</a></li>
+          <li><a href="http://www.kyhyxy.com:8008/">招考中心</a><ul style="left: 255px;">
+              <li><a href="http://www.kyhyxy.com:8008/">专业和招生</a></li>
+              <li><a href="/Category_867/Index.aspx">师培与科研</a></li>
+              <li><a href="/Category_875/Index.aspx">教学指导委员会
+</a></li>
+              <li><a href="/Category_873/Index.aspx">等级考试</a></li>
+            </ul>
+          </li>
+          <li><a href="/Category_474/Index.aspx">教育教学</a><ul style="left: 360px;">
+              <li><a href="/Item/5033.aspx">师资队伍</a></li>
+              <li><a href="/Category_626/Index.aspx">本科教育</a></li>
+              <li><a href="/Item/5238.aspx">教学科室</a></li>
+            </ul>
+          </li>
+          <li><a href="/Category_671/Index.aspx">学生工作</a><ul style="left: 360px;">
+              <li><a href="/Category_746/Index.aspx">就业指导</a></li>
+              <li><a href="/Category_671/Index.aspx">学生管理</a></li>
+              <li><a href="/Category_768/Index.aspx">团委工作</a></li>
+            </ul>
+          </li>
+          <li><a href="/Category_475/Index.aspx">科学研究</a><ul style="left: 575px;">
+              <li><a href="/Category_482/Index.aspx">学术交流</a></li>
+              <li><a href="/Category_483/Index.aspx">学术期刊</a></li>
+              <li><a href="/Category_828/Index.aspx">质量工程</a></li>
+            </ul>
+          </li>
+          <li><a>数字资源</a><ul style="right:155px;">
+              <li><a href="http://www.kyhyxy.com:8007/">教学资源库</a></li>
+              <li><a href="/Category_691/Index.aspx">图书馆</a></li>
+              <li><a href="http://www.kyhyxy.com/Item/1587.aspx">中国知网</a></li>
+            </ul>
+          </li>
+          <li><a>校园文化</a><ul style="right:55px;">
+              <li><a href="/Item/3236.aspx">学校精神</a></li>
+              <li><a href="/Category_768/Index.aspx">团委</a></li>
+              <li><a href="/Category_780/Index.aspx">学生社团</a></li>
+              <li><a href="/Category_784/Index.aspx">校园活动</a></li>
+              <li><a href="/Category_897/Index.aspx">校园风光</a></li>
+            </ul>
+          </li>
+          <li><a href="/Item/5121.aspx">董事会</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="main">
+	<div id="focusBox" class="focusBox">
+        <div class="hd">
+            <ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li></ul>
+        </div>
+        <div class="bd">
+            <ul>
+                <li><div class="pic"><img src="/Template/Default/kyhyxy201404/images001/ad20.jpg" /></div></li>
+                <li><div class="pic"><img src="/Template/Default/kyhyxy201404/images001/ad21.jpg" /></div></li>
+                <li><div class="pic"><img src="/Template/Default/kyhyxy201404/images001/ad17.jpg" /></div></li>
+                <li><div class="pic"><img src="/Template/Default/kyhyxy201404/images001/ad18.jpg" /></div></li>
+                <li><div class="pic"><img src="/Template/Default/kyhyxy201404/images001/ad3.jpg" /></div></li>
+                <li><div class="pic"><img src="/Template/Default/kyhyxy201404/images001/ad19.jpg" /></div></li>
+                <li><div class="pic"><img src="/Template/Default/kyhyxy201404/images001/ad9.jpg" /></div></li>
+                <li><div class="pic"><img src="/Template/Default/kyhyxy201404/images001/ad10.jpg" /></div></li>
+                <li><div class="pic"><img src="/Template/Default/kyhyxy201404/images001/ad2-1.jpg" /></div></li>
+               
+            </ul>
+        </div>
+        <div class="indextd"><img src="/Template/Default/kyhyxy201404/images001/tdbj2.png"><dl class="td1"><a href="/Category_714/Index.aspx">精品课程</a></dl>
+  <dl class="td2"><a href="/Item/5101.aspx">工资查询</a></dl>
+  <dl class="td3"><a href="/item/627.aspx">校历查阅</a></dl>
+  <dl class="td4"><a href="/item/670.aspx">校车查询</a></dl>
+  <dl class="td5"><a href="/item/628.aspx">校园地图</a></dl>
+  <dl class="td6"><a href="/Category_583/Index.aspx">人才招聘</a></dl>
+  <dl class="td7"><a href="/item/5195.aspx">教务管理</a></dl>
+  <dl class="td8"><a href="/Category_718/Index.aspx">简报专栏</a></dl>
+  <dl class="td9"><a href="/Category_897/Index.aspx">校园风光</a></dl>
+  <dl class="td10"><a href="/Item/5031.aspx">专题网站</a></dl>
+</div>
+
+</div>
+
+
+
+
+    <script type="text/javascript">jQuery(".focusBox").slide( { mainCell:".bd ul",autoPlay:true, delayTime:0, trigger:"click"} );</script>
+    
+    <div class="line"><img src="/Template/Default/kyhyxy201404/images001/line.jpg"/></div>
+    <div class="mainmid">
+        	<div class="mainleft">
+               <dl class="title"><dt style=" background:url(/Template/Default/kyhyxy201404/images001/001.jpg) no-repeat left 8px;">通知公告</dt><dd><a href="Category_33/Index.aspx"><img src="/Template/Default/kyhyxy201404/images001/more.jpg"/></a></dd></dl>
+                     
+                     
+            <li><span><a href="/Item/12462.aspx" target="_blank" title="标题：图书馆电子阅览室及期刊阅览室正常开放通知&#xD;点击数：59&#xD;发表时间：18年05月24日">图书馆电子阅览室及期刊阅览室正常开放通知</a></span></li><li><span><a href="/Item/12435.aspx" target="_blank" title="标题：昆明医科大学海源学院关于召开2018届毕业生供需见面会的通知&#xD;点击数：258&#xD;发表时间：18年05月18日">昆明医科大学海源学院关于召开2018届毕业生供需见面…</a></span></li><li><span><a href="/Item/12422.aspx" target="_blank" title="标题：上海新起点康复医院专场宣讲招聘会通知&#xD;点击数：116&#xD;发表时间：18年05月18日">上海新起点康复医院专场宣讲招聘会通知</a></span></li><li><span><a href="/Item/12387.aspx" target="_blank" title="标题：昆明医科大学海源学院院领导接待日公告&#xD;点击数：215&#xD;发表时间：18年05月09日">昆明医科大学海源学院院领导接待日公告</a></span></li><li><span><a href="/Item/12373.aspx" target="_blank" title="标题：昆明医科大学海源学院第二届教师全英文课堂教学比赛表彰决定&#xD;点击数：183&#xD;发表时间：18年05月07日">昆明医科大学海源学院第二届教师全英文课堂教学比赛…</a></span></li>
+          
+               <dl class="indexnrtp">
+                    	<dt>  <a href="http://www.kyhyxy.com:8008/" target="_blank">  <img src="/Template/Default/kyhyxy201404/images001/1-1.jpg" /></a></dt>
+                       <dt style="text-align:right;"> <a href="http://www.kyhyxy.com:8007/" target="_blank"> <img src="/Template/Default/kyhyxy201404/images001/1-2.jpg" /></a></dt>
+                        <dt> <a href="/Category_746/Index.aspx" target="_blank"> <img src="/Template/Default/kyhyxy201404/images001/1-3.jpg" /></a></dt>
+                        <dt style="text-align:right;"> <a href="/Category_949/Index.aspx" target="_blank"> <img src="/Template/Default/kyhyxy201404/images001/1-6.jpg" /></a></dt>
+               </dl>
+                    
+          </div>
+            <div class="mainmmid">
+                	<dl class="title1"><dt style=" background:url(/Template/Default/kyhyxy201404/images001/002.jpg) no-repeat left 8px;">学校新闻</dt><dd><a href="Category_86/Index.aspx"><img src="/Template/Default/kyhyxy201404/images001/more.jpg"/></a></dd></dl>
+                        <dl class="indexnr2">
+  <dt><a href="/Item/12542.aspx"><img width="144" height="93" src="/UploadFiles/xwzx/2018/5/201805252202050996.jpg"></a></dt>
+  <dd><a style="font-size:18px; line-height:30px;" href="/Item/12542.aspx" title="学院举办“万名党员进党校” 第四讲专题培训">学院举办“万名党员进…</a></dd>
+  <dd>5月25日19:00，学院&amp;ldquo;万名党员进党校&amp;rdquo;专题培训第四讲&amp;mdash;&amp;mdash;十九大党章解读…<a href="/Item/12542.aspx">
+【详情】</a></dd>
+</dl>                            
+                    
+            <dl class="indexnr3"><a href="/Item/12543.aspx" title="医学技术系召开2018年度教学工作会">医学技术系召开2018年度教学工作会</a><span></span></dl><dl class="indexnr3"><a href="/Item/12542.aspx" title="学院举办“万名党员进党校” 第四讲专题培训">学院举办“万名党员进党校” 第四讲专题培训</a><span></span></dl><dl class="indexnr3"><a href="/Item/12529.aspx" title="医学技术系召开2018年度教学工作会">医学技术系召开2018年度教学工作会</a><span></span></dl><dl class="indexnr3"><a href="/Item/12510.aspx" title="高新校区2018年4月师生代表座谈会顺利召开">高新校区2018年4月师生代表座谈会顺利召开</a><span></span></dl><dl class="indexnr3"><a href="/Item/12496.aspx" title="云南省2018届医药类毕业生双向选择洽谈会昆明医科大学海源学院专场双选会顺利举办">云南省2018届医药类毕业生双向选择洽谈会昆明医科大学海源学院专场双选会顺利举办</a><span></span></dl>
+          
+            </div>
+            <div class="mainright">
+           	  <DIV id=con>
+<UL id=tags>
+  <LI class=selectTag ><img src="/Template/Default/kyhyxy201404/images001/003.jpg"/><A onMouseOver="selectTag('tagContent0',this)" href="javascript:void(0)">行政部门</A> </LI>
+  <LI ><img src="/Template/Default/kyhyxy201404/images001/004.jpg"/><A onMouseOver="selectTag('tagContent1',this)" href="javascript:void(0)">教学部门</A> </LI></UL>
+<DIV id=tagContent>
+<DIV class="tagContent selectTag" id=tagContent0>
+	<dl><dt><a href="/Category_637/Index.aspx">党政办公室</a></dt><dd><a href="/Category_616/Index.aspx">财务资产部</a></dd></dl>
+    <dl><dt><a href="/Category_575/Index.aspx">人才资源部</a></dt><dd><a href="/Category_626/Index.aspx">教务部</a></dd></dl>
+    <dl><dt><a href="/Category_671/Index.aspx">学生工作部(武装部)</a></dt><dd><a href="/Category_691/Index.aspx">图书馆</a></dd></dl>
+    <dl><dt><a href="http://www.kyhyxy.com:8008/">招生考试中心</a></dt><dd><a href="/Category_646/Index.aspx">高新校区管理办公室</a></dd></dl>
+    <dl><dt><a href="/Category_653/Index.aspx">后勤部</a></dt><dd><a href="/Category_768/Index.aspx">团委</a></dd></dl>
+    <dl><dt><a href="/Category_763/Index.aspx">保卫部</a></dt><dd><a href="/Category_889/Index.aspx">工会</a></dd></dl>
+</DIV>
+<DIV class="tagContent" id=tagContent1>
+	<dl><dt><a href="/Category_504/Index.aspx">临床一系</a></dt><dd><a href="/Category_514/Index.aspx">临床二系</a></dd></dl>
+    <dl><dt><a href="/Category_524/Index.aspx">医学技术系</a></dt><dd><a href="/Category_534/Index.aspx">护理一系</a></dd></dl>
+    <dl><dt><a href="/Category_544/Index.aspx">口腔系</a></dt><dd><a href="/Category_554/Index.aspx">药学系</a></dd></dl>
+    <dl><dt><a href="/Category_564/Index.aspx">公卫系</a></dt><dd><a href="/Category_586/Index.aspx">文理系</a></dd></dl>
+    <dl><dt><a href="/Category_596/Index.aspx">基础教学部</a></dt><dd><a href="/Category_606/Index.aspx">人文社科部</a></dd></dl>
+    <dl><dt><a href="/Category_934/Index.aspx">护理二系</a></dt><!--  <dd><a href="/Category_968/Index.aspx">校友会</a></dd></dl>-->
+</DIV></DIV></DIV>
+<SCRIPT type=text/javascript>
+function selectTag(showContent,selfObj){
+	// 操作标签
+	var tag = document.getElementById("tags").getElementsByTagName("li");
+	var taglength = tag.length;
+	for(i=0; i<taglength; i++){
+		tag[i].className = "";
+	}
+	selfObj.parentNode.className = "selectTag";
+	// 操作内容
+	for(i=0; j=document.getElementById("tagContent"+i); i++){
+		j.style.display = "none";
+	}
+	document.getElementById(showContent).style.display = "block";
+	
+	
+}
+</SCRIPT>
+            
+</div>
+        </div>  
+</div>
+
+
+
+<!--首页悬浮开始-->
+<div id="leftDiv" style="top:190px; left:20px;">
+<div id="leftDivup">
+<a href="http://www.kyhyxy.com/Category_946/Index.aspx" target="_blank"><img src="/Template/Default/kmyxy2/zsxxw/indexxf/bt1.jpg"  width="150" height="125"></a>
+</div>
+<div id="sulb"><input type="image" src="/Template/Default/kmyxy2/zsxxw/indexxf/close.png" onClick="clollsu();"></div>
+<div id="leftDivinner"><a href="http://www.kyhyxy.com:8008/" target="_blank"><img src="/Template/Default/kmyxy2/zsxxw/indexxf/zswl.jpg" width="85" height="350" title="招生网" /></a></div>
+<div id="clobl"><input type="image" src="/Template/Default/kmyxy2/zsxxw/indexxf/btn.jpg" onClick="clol();"></div>
+</div>
+
+<div id="rightDiv" style="top:190px; right:20px;">
+<div id="rightDivup">
+<a href="http://www.kyhyxy.com/Category_946/Index.aspx" target="_blank"><img src="/Template/Default/kmyxy2/zsxxw/indexxf/bt1.jpg"  width="150" height="125"></a>
+</div>
+<div id="surb"><input type="image" src="/Template/Default/kmyxy2/zsxxw/indexxf/close.png" onClick="clolrsu();"></div>
+<div id="rightDivinner">
+<div id="rightDivup2">
+<a href="http://www.kyhyxy.com:8008/" target="_blank"><img src="/Template/Default/kmyxy2/zsxxw/indexxf/zswr.jpg"  width="85" height="350"></a>
+</div>
+<div id="divbr"><input type="image" src="/Template/Default/kmyxy2/zsxxw/indexxf/btn.jpg" onClick="clor();"></div>
+</div>
+</div>
+
+
+<Script language="javascript" type="text/javascript">
+function openwindow(url,name,iWidth,iHeight)
+ {
+  var url;                                 //转向网页的地址;
+  var name;                           //网页名称，可为空;
+  var iWidth;                          //弹出窗口的宽度;
+  var iHeight;                        //弹出窗口的高度;
+  var iTop = (window.screen.availHeight-30-iHeight)/2;       //获得窗口的垂直位置;
+  var iLeft = (window.screen.availWidth-10-iWidth)/2;           //获得窗口的水平位置;
+  window.open(url,name,'height='+iHeight+',,innerHeight='+iHeight+',width='+iWidth+',innerWidth='+iWidth+',top='+iTop',left='+iLeft+',
+toolbar=no,menubar=no,scrollbars=auto,resizeable=no,location=no,status=no');
+ }
+</Script>
+<!--首页悬浮结束-->
+
+<div class="clear"></div>
+<div class="link">
+  <dl><a href="http://www.moe.gov.cn/"><img src="/Template/Default/kyhyxy201404/images001/link1.jpg"></a></dl>
+  <dl><a href="http://www.ynjy.cn/indexweb.jsp"><img src="/Template/Default/kyhyxy201404/images001/link2.jpg"></a></dl>
+  <dl><a href="http://www.pbh.yn.gov.cn/"><img src="/Template/Default/kyhyxy201404/images001/link3.jpg"></a></dl>
+  <dl><a href="http://www.kmmc.cn/"><img src="/Template/Default/kyhyxy201404/images001/link4.jpg"></a></dl>
+  <dl><a href="http://www.ynhr.com/"><img src="/Template/Default/kyhyxy201404/images001/link5.jpg"></a></dl>
+  <dl><a href="http://www.sizhengwang.cn/"><img src="/Template/Default/kyhyxy201404/images001/link7.jpg"></a></dl>
+</div>
+<div class="clear"></div>
+<div class="footer">
+ 版权所有Copyright 2007 昆明医科大学海源学院 云教ICP备 0709007 滇ICP备07003921号<br>
+地址： 云南省昆明市高新技术开发区海源北路389号 邮编：650106<br>
+电话：0871-68317446 招生办公室电话：0871-68317580  
+<a href="http://webscan.360.cn/index/checkwebsite/url/www.kyhyxy.com"><img width="30" height="10" border="0" src="http://img.webscan.360.cn/status/pai/hash/f398d0264b2c2a5cc56fb89ff724869d"></a></div>
+
+<div align="center"><a target="_blank" href="http://www.cowcc.com/cn/kyhyxy.html"><img src="http://www.cowcc.com/cn/cowcc_files/kyhyxy.jpg" width="177" height="45" border="0"alt="官方网站认证标志" title="官方网站认证标志" /></a>
+</div>
+
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

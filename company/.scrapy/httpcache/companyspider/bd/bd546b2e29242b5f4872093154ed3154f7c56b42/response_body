@@ -1,0 +1,612 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" > 
+<head id="Head1"><title>
+	成都高新和平学校 - 
+</title><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" /><link href="/content/css/css.css" rel="stylesheet" type="text/css" /><meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <script type="text/javascript" src="/content/js/jquery.js"></script>  
+     <script type="text/javascript" src="/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="/source/jquery.fancybox.css?v=2.1.5" media="screen" /><link rel="stylesheet" type="text/css" href="/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script> 
+	<link rel="stylesheet" type="text/css" href="/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script> 
+	<script type="text/javascript" src="/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('.fancybox').fancybox({ 'topRatio': 0.5 });
+                  
+             });
+
+        </script>      <style>
+        .sub {
+        display:none}
+        .meuncp {
+        height:30px; margin-left:1px;text-align:center ;font-size:16px;font-weight:bold;color:white;position:relative}
+       .menucp a, span {
+       color:white;text-decoration : none ; }
+       .menucp a, span:hover {
+       color:red;text-decoration : none }
+          .ca1 {
+        position:absolute;}
+        .ca2 {
+        position:absolute;display:none;}
+        .ca3 {
+        position:absolute;display:none;}
+        .mores a{
+       color:#834e39 }
+        .mores a:hover{
+       color:red }
+        .news li {
+        line-height:25px}
+        .news li a {
+        color:#454545}
+         .news li span {
+        color:#a5a2a2}
+
+
+           .news1 li {
+        line-height:20px}
+        .news1 li a {
+        color:#593001}
+         .news1 li span {
+        color:#593001}
+          .imgp img {
+        width:62px; margin:4px;height:54px;}
+        .imgp {
+        margin-left:5px; width:70px;float:left; display:inline;   background-color:#efefef; cursor:pointer;margin-top:10px; }
+        .fontg {margin:7px 0 0 5px;font-size:16px;font-weight:bold
+        }
+        .auto-style1 {
+            width: 161px;
+            height: 142px;
+        }
+        .auto-style2 {
+            position: absolute;
+            top:23px;
+            left: 481px;
+        }
+    </style>
+       <script>
+           function cright(right, right1, right2) {
+               var speed = 30//速度数值越大速度越慢
+               var colee_right2 = document.getElementById(right2);
+               var colee_right1 = document.getElementById(right1);
+               var colee_right = document.getElementById(right);
+               colee_right2.innerHTML = colee_right1.innerHTML
+               function Marquee4() {
+                   if (colee_right.scrollLeft <= 0)
+                       colee_right.scrollLeft += colee_right2.offsetWidth
+                   else {
+                       colee_right.scrollLeft--
+                   }
+               }//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+               var MyMar4 = setInterval(Marquee4, speed)
+               colee_right.onmouseover = function () { clearInterval(MyMar4) }
+               colee_right.onmouseout = function () { MyMar4 = setInterval(Marquee4, speed) }
+           }
+           function cleft(right, right1, right2) {
+               var speed = 30//速度数值越大速度越慢
+               var colee_left2 = document.getElementById(right2);
+               var colee_left1 = document.getElementById(right1);
+               var colee_left = document.getElementById(right);
+               colee_left2.innerHTML = colee_left1.innerHTML
+               function Marquee3() {
+                   if (colee_left2.offsetWidth - colee_left.scrollLeft <= 0)
+                       colee_left.scrollLeft -= colee_left1.offsetWidth
+                   else {
+                       colee_left.scrollLeft++
+                   }
+               }
+               var MyMar3 = setInterval(Marquee3, speed)
+               colee_left.onmouseover = function () { clearInterval(MyMar3) }
+               colee_left.onmouseout = function () { MyMar3 = setInterval(Marquee3, speed) }
+           }
+</script>
+</head>
+
+<body style=" margin:0;padding:0">
+    
+<table width="998" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="167" valign="top" background="/content/images/index/top_bg.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="24" valign="bottom"><table width="997" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="562">&nbsp;</td>
+            <td width="435"><DIV><script language="javascript" type="text/javascript" src="/content/images/index/date.js"></script> &nbsp;<A title="设为首页" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.gxhpxx.net');" href="#">设为首页</A> <A title="加入收藏" href="javascript:if(document.all){window.external.addFavorite('http://www.gxhpxx','成都高新和平学校');}else if(window.sidebar){window.sidebar.addPanel('成都高新和平学校', 'http://www.gxhpxx.net','');}">加入收藏</A> </DIV></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><div align="center">
+          <object 
+      codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" 
+      height="129" width="833" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+            <param name="movie" value="/content/images/index/1.swf" />
+            <param name="quality" value="high" />
+            <param name="wmode" value="transparent" />
+            <embed src="/content/images/index/1.swf" width="833" 
+      height="129" quality="high"       
+      pluginspage="http://www.macromedia.com/go/getflashplayer"        
+      type="application/x-shockwave-flash"     wmode="transparent"> </embed>
+          </object>
+        </div></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<TABLE WIDTH=998 BORDER=0 align="center" CELLPADDING=0 CELLSPACING=0>
+  <TR>
+    <TD height="36" valign="top" background="/content/images/index/index_02.gif"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="20" valign="middle"><div align="center" style="margin-top:5px"> <table style="width:100%" cellpadding="0" cellspacing="0"><tr>     <td ><div class="meuncp c2" ><a href="/home/index" title="网站首页" class="top_link"><span class="down">网站首页</span></a></td>          <td ><div class="meuncp c2" ><a href="/home/list?ClassID=0201" title="校园动态" class="top_link"><span class="down">校园动态</span></a>  <ul class="sub"><li class="cda2"><a href="/home/list?ClassID=020101" title="校内动态">校内动态</a></li><li class="cda2"><a href="/home/list?ClassID=020102" title="教育新闻">教育新闻</a></li><li class="cda2"><a href="/home/list?ClassID=020103" title="上级来文">上级来文</a></li></div></td>  <td ><div class="meuncp c3" ><a href="/home/list?ClassID=0202" title="学校概况" class="top_link"><span class="down">学校概况</span></a>  <ul class="sub"><li class="cda3"><a href="/home/list?ClassID=020201" title="学校简介">学校简介</a></li><li class="cda3"><a href="/home/list?ClassID=020202" title="校园风貌">校园风貌</a></li><li class="cda3"><a href="/home/list?ClassID=020203" title="师资队伍">师资队伍</a></li></div></td>  <td ><div class="meuncp c4" ><a href="/home/list?ClassID=0203" title="公告通知" class="top_link"><span class="down">公告通知</span></a>  <ul class="sub"><li class="cda4"><a href="/home/list?ClassID=020301" title="校务公开">校务公开</a></li><li class="cda4"><a href="/home/list?ClassID=020302" title="招生招聘">招生招聘</a></li><li class="cda4"><a href="/home/list?ClassID=020303" title="管理制度">管理制度</a></li></div></td>  <td ><div class="meuncp c5" ><a href="/home/list?ClassID=0205" title="教学科研" class="top_link"><span class="down">教学科研</span></a>  <ul class="sub"><li class="cda5"><a href="/home/list?ClassID=020501" title="论文荟萃">论文荟萃</a></li><li class="cda5"><a href="/home/list?ClassID=020502" title="读书笔记">读书笔记</a></li><li class="cda5"><a href="/home/list?ClassID=020503" title="课程改革">课程改革</a></li><li class="cda5"><a href="/home/list?ClassID=020504" title="和平特色">和平特色</a></li></div></td>  <td ><div class="meuncp c6" ><a href="/home/list?ClassID=0206" title="德育园地" class="top_link"><span class="down">德育园地</span></a>  <ul class="sub"><li class="cda6"><a href="/home/list?ClassID=020601" title="菁菁校园">菁菁校园</a></li><li class="cda6"><a href="/home/list?ClassID=020602" title="家长频道">家长频道</a></li><li class="cda6"><a href="/home/list?ClassID=020603" title="国旗下的演讲">国旗下的演讲</a></li></div></td>  <td ><div class="meuncp c7" ><a href="/home/list?ClassID=0207" title="党团建设" class="top_link"><span class="down">党团建设</span></a></div> </td>  <td ><div class="meuncp c8" ><a href="/home/list?ClassID=0209" title="群众路线教育" class="top_link"><span class="down">群众路线教育</span></a></div> </td>  <td ><div class="meuncp c9" ><a href="/yfyoa.aspx" title="协同办公" class="top_link"><span class="down">协同办公</span></a></div> </td></tr></table></div></td>
+      </tr>
+    </table></TD>
+  </TR>
+</TABLE>
+   
+ <div id="div_weixin"    style="position:absolute; z-index:1000; cursor:pointer;">
+        
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#div_weixin").mousemove(function () { window.clearInterval(settime) }).mouseout(function () {
+                settime = setInterval("move()", 100);
+            });
+        });
+        var windowHeight = $(window).height();
+        var windowWidth = $(window).width();
+        var settime;
+        var currenttop = 0;
+        var currentleft =0;
+        var moverpx = 5;
+        $(document).ready(function () {
+            $("#div_weixin").css({"top":windowHeight / 2});
+            currenttop = windowHeight / 2;
+             settime = setInterval("move()",100);
+        });
+        var topmovetype = 0;
+        var leftmovetype = 0;
+        function move() {
+            if (currenttop - moverpx >= 0 && topmovetype == 0) {
+                $("#div_weixin").css({ "top": currenttop - moverpx });
+                currenttop = currenttop - moverpx;
+            }
+            else {
+                topmovetype = 1;
+                if (currenttop + moverpx <= windowHeight - 120) {
+                    $("#div_weixin").css({ "top": currenttop + moverpx });
+                    currenttop = currenttop + moverpx;
+                }
+                else
+                    topmovetype = 0;
+            }
+            if (currentleft + moverpx <= windowWidth - 135 && leftmovetype == 0) {
+                $("#div_weixin").css({ "left": currentleft + moverpx });
+                currentleft = currentleft + moverpx;
+            }
+            else {
+                leftmovetype = 1;
+                if (currentleft - moverpx >= 0) {
+                    $("#div_weixin").css({ "left": currentleft - moverpx });
+                    currentleft = currentleft - moverpx;
+                }
+                else
+                    leftmovetype = 0;
+            }
+        }
+    </script> 
+    <link href="/content/images/index/style.css" rel="stylesheet" type="text/css"> 
+<table width="998" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td width="214" valign="top"><table width="214" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="34" valign="top" background="/content/images/index/left_new_top.gif"><table width="96%" height="32" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="16%" height="29">&nbsp;</td>
+            <td width="84%" valign="bottom"><div class="big13" style="margin-top:10px"><STRONG>学校领导</STRONG></div></td>
+          </tr>
+          
+        </table></td>
+      </tr>
+      <tr>
+        <td background="/content/images/index/left_new_mid.gif"><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="160" valign="middle"><div align="center"><a href='/Home/detail?id=88247'><img src="/content/111.jpg" alt="校长简介" width="180" height="130" border="0" /></a></div></td>
+          </tr>
+          <tr>
+            <td><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>&nbsp;<a href='/Home/detail?id=88247'> <FONT color=#236f8f><STRONG>校长简介：</STRONG>于建，男，汉族，中共党员，中学高级教师，1961年生，四川乐山人，省市优秀教育工作者，四川省教育...</FONT></a></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td valign="top"><img src="/content/images/index/left_new_foot.gif" width="214" height="12" /></td>
+      </tr>
+      <tr>
+        <td height="4"></td>
+      </tr>
+
+    </table>
+      <table width="214" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="34" valign="top" background="/content/images/index/left_new_top.gif"><table width="96%" height="32" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="16%" height="29">&nbsp;</td>
+                <td width="84%" valign="bottom"><div class="big13" style="margin-top:10px"><STRONG>通知公告</STRONG></div></td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td background="/content/images/index/left_new_mid.gif"><table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td valign="bottom"><div align="left"><ul style="" class="news"><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=1089932" target="_blank">2018年防范非法集资宣...</a></span>  <span style=" float:right"></span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=1059932" target="_blank">成都市高新区2018年户...</a></span>  <span style=" float:right"></span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=1059933" target="_blank">成都市2018年小学一年...</a></span>  <span style=" float:right"></span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=1059934" target="_blank">成都市2018年小学入学...</a></span>  <span style=" float:right"></span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=1059935" target="_blank">成都市小学一年级网上报名...</a></span>  <span style=" float:right"></span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=1059936" target="_blank">市教育局：关于做好201...</a></span>  <span style=" float:right"></span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=959928" target="_blank">成都高新和平学校2018...</a></span>  <span style=" float:right"></span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=929931" target="_blank">成都高新和平学校2018...</a></span>  <span style=" float:right"></span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=929930" target="_blank">关于认真做好2018年成...</a></span>  <span style=" float:right"></span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=929929" target="_blank">关于成都市2018年高中...</a></span>  <span style=" float:right"></span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=929928" target="_blank">成都市招生考试委员会  ...</a></span>  <span style=" float:right"></span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=909931" target="_blank">成都高新和平学校近三年获...</a></span>  <span style=" float:right"></span></li><div style='clear:both'></div></ul></div></td>
+              </tr>
+
+          </table></td>
+        </tr>
+        <tr>
+          <td valign="top"><img src="/content/images/index/left_new_foot.gif" width="214" height="12" /></td>
+        </tr>
+        <tr>
+          <td height="4"></td>
+        </tr>
+      </table>
+      <table width="214" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="34" valign="top" background="/content/images/index/left_new_top.gif"><table width="96%" height="32" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="16%" height="29">&nbsp;</td>
+                <td width="84%" valign="bottom"><span class="big13"><div class="big13" style="margin-top:10px"><STRONG>快速导航</STRONG></div></span></td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td height="100" background="/content/images/index/left_new_mid.gif">
+              <table width="196" border="0" align="center" cellpadding="0" cellspacing="0">  <tr>
+              <td height='29' valign='bottom' background='/content/images/index/lm_bg.gif'><table width='186' border='0' cellspacing='0' cellpadding='0'>
+                  <tr>
+                    <td width='18'>&nbsp;</td>
+                    <td width='148' ><div style='margin-top:7px'><a href='http://yun.cdgxedu.com'  target=_blank><FONT color=#006595>高新区教学应用平台</FONT></a></div></td>
+                  </tr>
+              </table></td>
+            </tr>  <tr>
+              <td height='29' valign='bottom' background='/content/images/index/lm_bg.gif'><table width='186' border='0' cellspacing='0' cellpadding='0'>
+                  <tr>
+                    <td width='18'>&nbsp;</td>
+                    <td width='148' ><div style='margin-top:7px'><a href='http://gxszxx.cdgxedu.com/login/Defaultscwy.aspx'  target=_blank><FONT color=#006595>高新区学数字校园云平台</FONT></a></div></td>
+                  </tr>
+              </table></td>
+            </tr>  <tr>
+              <td height='29' valign='bottom' background='/content/images/index/lm_bg.gif'><table width='186' border='0' cellspacing='0' cellpadding='0'>
+                  <tr>
+                    <td width='18'>&nbsp;</td>
+                    <td width='148' ><div style='margin-top:7px'><a href='http://1s1k.scedu.com.cn/'  target=_blank><FONT color=#006595>四川省一师一优课活动</FONT></a></div></td>
+                  </tr>
+              </table></td>
+            </tr>  <tr>
+              <td height='29' valign='bottom' background='/content/images/index/lm_bg.gif'><table width='186' border='0' cellspacing='0' cellpadding='0'>
+                  <tr>
+                    <td width='18'>&nbsp;</td>
+                    <td width='148' ><div style='margin-top:7px'><a href='http://chengdu.safetree.com.cn/'  target=_blank><FONT color=#006595>成都市安全教育平台</FONT></a></div></td>
+                  </tr>
+              </table></td>
+            </tr>  <tr>
+              <td height='29' valign='bottom' background='/content/images/index/lm_bg.gif'><table width='186' border='0' cellspacing='0' cellpadding='0'>
+                  <tr>
+                    <td width='18'>&nbsp;</td>
+                    <td width='148' ><div style='margin-top:7px'><a href='http://oa.cdgxedu.com/yyoa/index.jsp'  target=_blank><FONT color=#006595>成都高新教育协同管理</FONT></a></div></td>
+                  </tr>
+              </table></td>
+            </tr>  <tr>
+              <td height='29' valign='bottom' background='/content/images/index/lm_bg.gif'><table width='186' border='0' cellspacing='0' cellpadding='0'>
+                  <tr>
+                    <td width='18'>&nbsp;</td>
+                    <td width='148' ><div style='margin-top:7px'><a href='http://scnlts.scedu.com.cn/'  target=_blank><FONT color=#006595>信息技术应用能力提升工程</FONT></a></div></td>
+                  </tr>
+              </table></td>
+            </tr>  <tr>
+              <td height='29' valign='bottom' background='/content/images/index/lm_bg.gif'><table width='186' border='0' cellspacing='0' cellpadding='0'>
+                  <tr>
+                    <td width='18'>&nbsp;</td>
+                    <td width='148' ><div style='margin-top:7px'><a href='http://www.626china.org/'  target=_blank><FONT color=#006595>中国禁毒数字展览馆</FONT></a></div></td>
+                  </tr>
+              </table></td>
+            </tr>  </table></td>
+        </tr>
+        <tr>
+          <td valign="top"><img src="/content/images/index/left_new_foot.gif" width="214" height="12" /></td>
+        </tr>
+        <tr>
+          <td height="4"></td>
+        </tr>
+      </table>
+      <table width="214" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="34" valign="top" background="/content/images/index/left_new_top.gif"><table width="96%" height="32" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="16%" height="29">&nbsp;</td>
+                <td width="84%" valign="bottom"><div class="big13" style="margin-top:10px"><STRONG>热点关注</STRONG></div></td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td background="/content/images/index/left_new_mid.gif"><table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td valign="bottom"><ul class="news"><li><span style="color:black; float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=899927" target="_blank">【一寸赤心 芳华教育——...</a></span>  <span style=" float:right"></span></li><li><span style="color:black; float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=799929" target="_blank">【艺术教育出实效 和融文...</a></span>  <span style=" float:right"></span></li><li><span style="color:black; float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=819928" target="_blank">【瑞犬福旺至 十五华章启...</a></span>  <span style=" float:right"></span></li><li><span style="color:black; float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=799928" target="_blank">【成都高新和平学校开展2...</a></span>  <span style=" float:right"></span></li><li><span style="color:black; float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=859926" target="_blank">【成都高新和平学校获“2...</a></span>  <span style=" float:right"></span></li><li><span style="color:black; float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=799926" target="_blank">【智慧课堂 智慧成长】</a></span>  <span style=" float:right"></span></li><li><span style="color:black; float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=809928" target="_blank">【和平学校参加崇州市小初...</a></span>  <span style=" float:right"></span></li><li><span style="color:black; float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=799927" target="_blank">【成都高新和平学校九年级...</a></span>  <span style=" float:right"></span></li><li><span style="color:black; float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=809926" target="_blank">【以神来想象之笔 显女娲...</a></span>  <span style=" float:right"></span></li><li><span style="color:black; float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=879926" target="_blank">【以创促建 勇攀高峰——...</a></span>  <span style=" float:right"></span></li></ul></td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td valign="top"><img src="/content/images/index/left_new_foot.gif" width="214" height="12" /></td>
+        </tr>
+        <tr>
+          <td height="4"></td>
+        </tr>
+      </table>
+      <table width="214" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="34" valign="top" background="/content/images/index/left_new_top.gif"><table width="96%" height="32" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="16%" height="29">&nbsp;</td>
+                <td width="84%" valign="bottom"><div class="big13" style="margin-top:10px"><STRONG>访问统计</STRONG></div></td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td height="50" background="/content/images/index/left_new_mid.gif"><div style="margin:20px">总访问量：2671307<br />
+              当前在线：23</div></td>
+        </tr>
+        <tr>
+          <td valign="top"><img src="/content/images/index/left_new_foot.gif" width="214" height="12" /></td>
+        </tr>
+        <tr>
+          <td height="4"></td>
+        </tr>
+      </table>
+      <div align="center"></div></td>
+    <td width="784" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="37" background="/content/images/index/new_top_bg.gif"><table width="98%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><div class="fontg">最新动态</div></td>
+              <td><div style="margin-top:10px" align="right"><a href="/home/list?classid=020101">更多</a></div></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><table width="778" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#D2E5EE">
+          <tr>
+            <td height="180" bgcolor="#FFFFFF"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td> <ul style="" class="news"><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=1099933" target="_blank">【成都高新和平学校“2017年度四川省爱路护路宣传...</a></span>  <span style=" float:right">[05-28]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=1099932" target="_blank">【“崇尚英雄 精忠报国”主题班会活动】</a></span>  <span style=" float:right">[05-28]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=1089933" target="_blank">【小升初精要——记上海市家庭教育专家陈默老师莅临我...</a></span>  <span style=" float:right">[05-24]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=1079932" target="_blank">【和平十五载“遇见?和平”校庆诗文、绘画作品征集活动】</a></span>  <span style=" float:right">[05-23]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=1069933" target="_blank">【十五载风雨兼程 新征途再写辉煌——第七届班主任艺...</a></span>  <span style=" float:right">[05-22]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=1069932" target="_blank">【九年级二诊质量分析会】</a></span>  <span style=" float:right">[05-22]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=1049932" target="_blank">【成都高新区初中化学赛课暨化学学科实训基地活动】</a></span>  <span style=" float:right">[05-19]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=1039933" target="_blank">【朝露日晞，敏求学！——2019届新教师成长班班会】</a></span>  <span style=" float:right">[05-18]</span></li><div style='clear:both'></div></ul> </td>
+              </tr>
+            </table></td>
+            <td width="43%" valign="middle" bgcolor="#F4F9FF"><div align="center">
+ 
+<iframe height=207 width=301 src='http://player.youku.com/embed/XMzI3MzU3Nzk4MA==' allowscriptaccess="always"
+                            allowfullscreen="true"
+                            wmode="opaque"
+                            allowTransparency="true"
+                            frameborder="0"
+                            type="application/x-shockwave-flash"></iframe> 
+ </td>
+          </tr>
+        </table>        
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="4"></td>
+            </tr>
+          </table></td>
+      </tr>
+    </table>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td height="37" background="/content/images/index/new_top_bg.gif"><table width="98%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><div class="fontg" style="margin:7px 0 0 15px">图片新闻</div></td>
+                   <td><div style="margin-top:10px" align="right"> </div></td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="778" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#D2E5EE">
+              <tr>
+                <td height="100" bgcolor="#FFFFFF"><table width="96%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="8"></td>
+                  </tr>
+                </table>
+                  <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td><div id="div1" style="overflow:hidden;width:735px;height:100px;"><table cellpadding="0" cellspacing="0" border="0"><tr><td id="div2" valign="top" align="center"><table cellpadding="2" cellspacing="0" border="0"><tr align="center"><td style='text-align:center'><a href="detail?classid=020101&id=1099933" target="_blank"  title="【成都高新和平学校“2017年度四川省爱路护路宣传教育示范学校”授牌仪式】"><img  src="/uploadfile/web/020101/201854280654470.jpg" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020101&id=1099932" target="_blank"  title="【“崇尚英雄 精忠报国”主题班会活动】"><img  src="/uploadfile/web/020101/201830280630520.jpg" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020101&id=1089933" target="_blank"  title="【小升初精要——记上海市家庭教育专家陈默老师莅临我校开展讲座】"><img  src="/uploadfile/web/020101/201829241129020.jpg" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020101&id=1079932" target="_blank"  title="【和平十五载“遇见?和平”校庆诗文、绘画作品征集活动】"><img  src="/uploadfile/web/020101/201821231121550.jpg" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020101&id=1069933" target="_blank"  title="【十五载风雨兼程 新征途再写辉煌——第七届班主任艺术节暨十佳班主任表彰大会】"><img  src="/uploadfile/web/020101/201857220657590.jpg" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020101&id=1069932" target="_blank"  title="【九年级二诊质量分析会】"><img  src="/uploadfile/web/020101/201849220649010.jpg" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020101&id=1049932" target="_blank"  title="【成都高新区初中化学赛课暨化学学科实训基地活动】"><img  src="/uploadfile/web/020101/201825190725140.jpg" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020101&id=1039933" target="_blank"  title="【朝露日晞，敏求学！——2019届新教师成长班班会】"><img  src="/uploadfile/web/020101/201812181212420.jpg" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020101&id=1039932" target="_blank"  title="【同心协力 共绘未来——成都高新和平学校期中学业质量分析会】"><img  src="/uploadfile/web/020101/201836170936410.jpg" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020101&id=1029934" target="_blank"  title="【成都高新和平学校2018纪念“5.12”避震疏散演练活动】"><img  src="/uploadfile/web/020101/201841120141030.jpg" height='100'></a></td></tr></table></td><td id="div3" valign="top"></td></tr></table></div><script> cleft("div1", "div2", "div3");</script></td>
+                    </tr>
+                  </table></td>
+              </tr>
+          </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="6"></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table>
+      <table width="781" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="51%" height="37" background="/content/images/index/new_top_bg.gif"><table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td><div class="fontg">教育科研</div></td>
+               <td><div style="margin-top:10px" align="right"><a href="/home/list?classid=0205">更多</a></div></td>
+            </tr>
+          </table></td>
+          <td width="49%" background="/content/images/index/new_top_bg.gif"><table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td><div class="fontg">德育园地</div></td>
+             <td><div style="margin-top:10px" align="right"><a href="/home/list?classid=0206">更多</a></div></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="99%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#D2E5EE">
+              <tr>
+                <td height="200" bgcolor="#FFFFFF"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td> <ul style="" class="news"><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88939" target="_blank">【苦练教师基本功，尽显课堂艺术美】</a></span>  <span style=" float:right">[08-30]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88879" target="_blank">任炯工作坊“几何课专题教研活动”在和平学...</a></span>  <span style=" float:right">[05-04]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88748" target="_blank">成都高新区五校联盟视导暨九年级联校互动研...</a></span>  <span style=" float:right">[04-10]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=89580" target="_blank">我安全 我健康 我快乐</a></span>  <span style=" float:right">[04-01]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88741" target="_blank">见证我校2015年科研课题的力量</a></span>  <span style=" float:right">[03-24]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88738" target="_blank">我校举行第十一届和平奖学金颁奖典礼</a></span>  <span style=" float:right">[03-24]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88705" target="_blank">我校《学唐诗》节目荣获成都市中华经典主题...</a></span>  <span style=" float:right">[12-11]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=89516" target="_blank">红领巾心系中国梦</a></span>  <span style=" float:right">[10-23]</span></li><div style='clear:both'></div></ul> </td>
+                  </tr>
+                </table></td>
+              </tr>
+          </table></td>
+          <td><table width="98%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#D2E5EE">
+            <tr>
+              <td height="200" bgcolor="#FFFFFF"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td><ul style="" class="news"><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=89891" target="_blank">播一片绿林，种一份爱心</a></span>  <span style=" float:right">[03-21]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88745" target="_blank">我安全 我健康 我快乐</a></span>  <span style=" float:right">[04-01]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88681" target="_blank">红领巾心系中国梦</a></span>  <span style=" float:right">[10-23]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88670" target="_blank">成都高新和平学校2014年暑期学生军训活动</a></span>  <span style=" float:right">[08-29]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88632" target="_blank">理解班主任 感谢班主任 发展班主任</a></span>  <span style=" float:right">[05-04]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88569" target="_blank">关于共青团成都高新和平学校委员会竞选第六...</a></span>  <span style=" float:right">[03-20]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88566" target="_blank">成都高新和平学校十佳班主任评选方案</a></span>  <span style=" float:right">[03-19]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88565" target="_blank">成都高新和平学校第三届班主任艺术节活动方案 </a></span>  <span style=" float:right">[03-19]</span></li><div style='clear:both'></div></ul></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="8"></td>
+        </tr>
+      </table>
+      <table width="781" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="51%" height="37" background="/content/images/index/new_top_bg.gif"><table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><div class="fontg">和平特色</div></td>
+                <td><div style="margin-top:10px" align="right"><a href="/home/list?classid=0211">更多</a></div></td>
+              </tr>
+          </table></td>
+          <td width="49%" background="/content/images/index/new_top_bg.gif"><table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><div class="fontg">群众路线教育</div></td>
+                  <td><div style="margin-top:10px" align="right"><a href="/home/list?classid=0209">更多</a></div></td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="99%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#D2E5EE">
+              <tr>
+                <td height="200" bgcolor="#FFFFFF"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td><ul style="" class="news"><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88939" target="_blank">【苦练教师基本功，尽显课堂艺术美】</a></span>  <span style=" float:right">[08-30]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=89580" target="_blank">我安全 我健康 我快乐</a></span>  <span style=" float:right">[04-01]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88738" target="_blank">我校举行第十一届和平奖学金颁奖典礼</a></span>  <span style=" float:right">[03-24]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88705" target="_blank">我校《学唐诗》节目荣获成都市中华经典主题...</a></span>  <span style=" float:right">[12-11]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=89516" target="_blank">红领巾心系中国梦</a></span>  <span style=" float:right">[10-23]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=89505" target="_blank">成都高新和平学校2014年暑期学生军训活动</a></span>  <span style=" float:right">[08-29]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=89503" target="_blank">成都高新和平学校2013-2014学年度...</a></span>  <span style=" float:right">[08-27]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=89488" target="_blank">以青春的名义</a></span>  <span style=" float:right">[06-03]</span></li><div style='clear:both'></div></ul></td>
+                    </tr>
+                </table></td>
+              </tr>
+          </table></td>
+          <td><table width="98%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#D2E5EE">
+              <tr>
+                <td height="200" bgcolor="#FFFFFF"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td><ul style="" class="news"><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88733" target="_blank">向应凯同志学习</a></span>  <span style=" float:right">[03-04]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88714" target="_blank">管委会文件：三次创业社会事业发展规划</a></span>  <span style=" float:right">[01-07]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88701" target="_blank">重点抓好“八个专题”学习</a></span>  <span style=" float:right">[12-02]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88697" target="_blank">成都高新区教育系统开展庸懒散浮拖问题专项...</a></span>  <span style=" float:right">[12-02]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88696" target="_blank">廉洁从政承诺书（党员干部）</a></span>  <span style=" float:right">[12-02]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88695" target="_blank">廉洁从政承诺书（校长）</a></span>  <span style=" float:right">[12-02]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88694" target="_blank">廉洁从教承诺书(教师)</a></span>  <span style=" float:right">[12-02]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=88693" target="_blank">成都高新区社会事业局关于在全区教育系统开...</a></span>  <span style=" float:right">[12-02]</span></li><div style='clear:both'></div></ul></td>
+                    </tr>
+                </table></td>
+              </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="8"><table width="784" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="36" background="/content/images/index/pic_new_bg.gif"><table width="98%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="62%"><div class="fontg">校园风貌</div></td>
+                    <td><div style="margin-top:10px" align="right"><a href="/home/list?classid=020202">更多</a></div></td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td><table width="781" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><table width="780" border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td width="730" height="6"></td>
+                        </tr>
+                        <tr>
+                          <td><div id="div4" style="overflow:hidden;width:735px;height:100px;"><table cellpadding="0" cellspacing="0" border="0"><tr><td id="div5" valign="top" align="center"><table cellpadding="2" cellspacing="0" border="0"><tr align="center"><td style='text-align:center'><a href="detail?classid=020202&id=89864" target="_blank"  title="美术室"><img  src="/uploadfile/web/020202/201519221119380.JPG" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020202&id=89863" target="_blank"  title="实验室"><img  src="/uploadfile/web/020202/201517221117370.JPG" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020202&id=89862" target="_blank"  title="计算机教室"><img  src="/uploadfile/web/020202/201515221115360.JPG" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020202&id=89861" target="_blank"  title="多功能厅"><img  src="/uploadfile/web/020202/201512221112380.jpg" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020202&id=89860" target="_blank"  title="英语角"><img  src="/uploadfile/web/020202/201505221105450.jpg" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020202&id=89859" target="_blank"  title="音乐空间"><img  src="/uploadfile/web/020202/201502221102470.JPG" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020202&id=89858" target="_blank"  title="科技之窗"><img  src="/uploadfile/web/020202/201558221058230.JPG" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020202&id=89857" target="_blank"  title="零度工作室"><img  src="/uploadfile/web/020202/201554221054410.JPG" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020202&id=89856" target="_blank"  title="体育场馆"><img  src="/uploadfile/web/020202/201552221052130.jpg" height='100'></a></td><td style='text-align:center'><a href="detail?classid=020202&id=89855" target="_blank"  title="书法室"><img  src="/uploadfile/web/020202/201549221049560.JPG" height='100'></a></td></tr></table></td><td id="div6" valign="top"></td></tr></table></div><script> cleft("div4", "div5", "div6");</script></td>
+                        </tr>
+                    </table></td>
+                  </tr>
+              </table></td>
+            </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="781" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="51%" height="37" background="/content/images/index/new_top_bg.gif"><table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><div class="fontg">党团建设</div></td>
+                <td><div style="margin-top:10px" align="right"><a href="/home/list?classid=0207">更多</a></div></td>
+              </tr>
+          </table></td>
+          <td width="49%" background="/content/images/index/new_top_bg.gif"><table width="92%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><div class="fontg"><a href="/qjxy/index.html?v=1" target="_blank">全景校园</a></div></td>
+                <td><div style="margin-top:10px" align="right"> </div></td>
+              </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td><table width="99%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#D2E5EE">
+              <tr>
+                <td height="200" bgcolor="#FFFFFF"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td><ul style="" class="news"><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=999938" target="_blank">[科研促成长 党员在行动]</a></span>  <span style=" float:right">[05-07]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=999937" target="_blank">[春风来扫千山雪 和融共享促优质]</a></span>  <span style=" float:right">[05-07]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=999936" target="_blank">[“宝剑锋从磨砺出”中考誓师大会——目标...</a></span>  <span style=" float:right">[05-07]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=999935" target="_blank">[继承传统 缅怀先烈——中共成都高新和平...</a></span>  <span style=" float:right">[05-07]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=999934" target="_blank">[一寸赤心，芳华教育——记国家发改委社会...</a></span>  <span style=" float:right">[05-07]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=999933" target="_blank">[以创促建  勇攀高峰——中共成都高新和...</a></span>  <span style=" float:right">[05-07]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=999932" target="_blank">[十五载风雨兼程 新征途再写辉煌——记中...</a></span>  <span style=" float:right">[05-07]</span></li><div style='clear:both'></div><li><span style="float:left;"><img src='/content/images/index/titledot2.gif'> <a href="/Home/detail?id=419924" target="_blank">【缅怀一二九 共抒爱国情】</a></span>  <span style=" float:right">[12-23]</span></li><div style='clear:both'></div></ul></td>
+                    </tr>
+                </table></td>
+              </tr>
+          </table></td>
+          <td><table width="98%" border="0" align="center" cellpadding="1" cellspacing="1" bgcolor="#D2E5EE">
+              <tr>
+                <td height="200" bgcolor="#FFFFFF"><table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td><a href="/qjxy/index.html" target="_blank"><img width="358" height="200" src="/2.jpg"/></a></td>
+                    </tr>
+                </table></td>
+              </tr>
+          </table></td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="8"></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<div style="position:fixed;bottom:20px;right:20px"><img src='/ewm11.png'  width=150></div>
+
+
+   <table width="998" height="39" border="0" align="center" cellpadding="0" cellspacing="0">
+   <tr>
+    <td height="150" valign="top" background="/content/images/index/foot_bg.gif"><table width="990" height="128" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="337" valign="top"><div align="right"><img src="/content/images/index/foot_logo.gif" width="200" height="110" /></div></td>
+        <td width="653" valign="bottom" style="position:relative"><div style="position:absolute;top:46px; left:-312px"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/23/333/4449/40607197/CA233334449406071970002.js' type='text/javascript'%3E%3C/script%3E"));</script></div><font color="#333333">
+            <br />
+            <br />
+            <br />
+            2010 &reg;&nbsp;成都市高新和平学校&nbsp; 版权所有，未经授权禁止复制或镜像<BR>策划：于建 廖有俊 制作：岑波 备案号：蜀ICP备05012579号 邮箱：gxhpxx@sohu.com<BR>地址：成都市高新区天和路10号&nbsp;&nbsp; 联系电话：028-85350431 </font>
+            <div class="auto-style2"><a href='/ewm11.png' class='fancybox'><img src="/ewm1.png" width=100/></a></div>
+        </td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>
+
+        
+     
+
+    

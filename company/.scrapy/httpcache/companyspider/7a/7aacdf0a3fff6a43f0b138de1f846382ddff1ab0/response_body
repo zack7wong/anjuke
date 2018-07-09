@@ -1,0 +1,209 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>湖南省汉寿县第一中学欢迎您！</title>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META content=汉寿一中,汉寿县第一中学,汉寿县,县一中,中学教育,廉洁文化,教学资源,汉寿一中校友 name=Keywords>
+<META content="我校是省级文明单位、省级示范性普通高级中学、省级体育传统项目（田径）学校、省级现代教育技术实验学校、省级园林式单位、省级文明卫生单位。学校占地87325平方米（131亩）；建筑总面积60754.5平方米；另有校办农场68亩。现有教学班60个，学生3543人。共有教职工301人，其中专任教师均为本科学历，研究生结业的10人；有特级教师2人，中学高级教师114人，国家级、省级、市级骨干教师38人；市级学科带头人5人，市“十百千人才工程”二、三层次人才7人，汉寿县高中学科带头人均为我校教师；有全国教育系统劳动模范、全国模范教师1人，省优秀共产党员1人，省市级办学功臣、优秀教师、优秀班主任17人；有市级以上学术研究会理事长、副理事长、理事12人……" name=Description>
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #8EB3CD;
+}
+.STYLE2 {font-size: 10px}
+.STYLE3 {
+	color: #FF9933;
+	font-size: 24px;
+}
+-->
+</style>
+</head>
+
+<script language="JavaScript">
+<!--
+function SetMiddle()
+{var Sheight=screen.height-768;
+    if(Sheight>0){
+        document.body.style.marginTop=Sheight/2+"px";
+    }
+}
+//-->
+</script>
+
+
+
+<body onload="SetMiddle();">
+<div align="center">
+<div style="border:1px solid #004E98; width: 982px;">
+<!-- <DIV id=img1 style="Z-INDEX: 100; LEFT: 2px; WIDTH: 59px; POSITION: absolute; TOP: 43px; HEIGHT: 61px;
+ visibility: visible;"><a href="/2013_ZhaoPin.asp" target="_blank"><img src="Images/xiqin/2013_zp.gif" width="120" height="120" border="0"></a></DIV>  -->
+
+<SCRIPT>
+var xPos = 300;
+var yPos = 200; 
+var step = 1;
+var delay = 30; 
+var height = 0;
+var Hoffset = 0;
+var Woffset = 0;
+var yon = 0;
+var xon = 0;
+var pause = true;
+var interval;
+img1.style.top = yPos;
+function changePos() 
+{
+	width = document.body.clientWidth;
+	height = document.body.clientHeight;
+	Hoffset = img1.offsetHeight;
+	Woffset = img1.offsetWidth;
+	img1.style.left = xPos + document.body.scrollLeft;
+	img1.style.top = yPos + document.body.scrollTop;
+	if (yon) 
+		{yPos = yPos + step;}
+	else 
+		{yPos = yPos - step;}
+	if (yPos < 0) 
+		{yon = 1;yPos = 0;}
+	if (yPos >= (height - Hoffset)) 
+		{yon = 0;yPos = (height - Hoffset);}
+	if (xon) 
+		{xPos = xPos + step;}
+	else 
+		{xPos = xPos - step;}
+	if (xPos < 0) 
+		{xon = 1;xPos = 0;}
+	if (xPos >= (width - Woffset)) 
+		{xon = 0;xPos = (width - Woffset);   }
+	}
+	
+	function start()
+	 {
+	 	img1.visibility = "visible";
+		interval = setInterval('changePos()', delay);
+	}
+	function pause_resume() 
+	{
+		if(pause) 
+		{
+			clearInterval(interval);
+			pause = false;}
+		else 
+		{
+			interval = setInterval('changePos()',delay);
+			pause = true; 
+			}
+		}
+	start();
+</SCRIPT>
+
+<table border="0" height="100%" width="100%" cellspacing="0" cellpadding="0" > 
+<tr> 
+<td valign="middle"> 
+<table width="982" height="595" border="0" cellspacing="0" background="Images/index.jpg">
+  <tr>
+    <td width="403" height="201">&nbsp;</td>
+    <td width="270">&nbsp;</td>
+    <td colspan="4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="187" colspan="6" valign="middle">
+
+<div align='center' id='demo' style='overflow:hidden;height:160px;width:960px;'>
+<table align='center' cellpadding='0' cellspace='0' border='0'>
+<tr>
+<td id='demo1' valign='top'>
+<table width='100%' cellpadding='0' cellspacing='0' border='0' align='center'>
+<tr valign='top'>
+<td><img src="Images/mlxy/13.jpg"></td>
+<td><img src="Images/mlxy/1.jpg"></td>
+<td><img src="Images/mlxy/2.jpg"></td>
+<td><img src="Images/mlxy/3.jpg"></td> 
+<td><img src="Images/mlxy/4.jpg"></td> 
+<td><img src="Images/mlxy/5.jpg"></td> 
+<td><img src="Images/mlxy/6.jpg"></td> 
+<td><img src="Images/mlxy/7.jpg"></td> 
+<td><img src="Images/mlxy/8.jpg"></td> 
+<td><img src="Images/mlxy/9.jpg"></td>
+<td><img src="Images/mlxy/10.jpg"></td>
+</tr>
+</table></td>
+<td id=demo2 valign=top></td>
+</tr>
+</table>
+</div>
+<script>
+var speed=15
+demo2.innerHTML=demo1.innerHTML
+function Marquee1(){
+if(demo2.offsetWidth-demo.scrollLeft<=0)
+demo.scrollLeft-=demo1.offsetWidth
+else{
+demo.scrollLeft++
+}
+}
+var MyMar1=setInterval(Marquee1,speed)
+demo.onmouseover=function() {clearInterval(MyMar1)}
+demo.onmouseout=function() {MyMar1=setInterval(Marquee1,speed)}
+</script>
+<tr>
+    <td height="143" rowspan="4"></td>
+    <td height="15"></td>
+    <td width="135" height="15"></td>
+    <td width="270" height="15"></td>
+    <td height="15" colspan="2"></td>
+</tr>
+<tr>
+    <td height="55" colspan="4" align="center"><table width="500" border="0">
+        <tr>
+          <td><a href="index.asp"><img src="Images/XXWZ.gif" alt="进入学校主网站" border="0" /></a></td>
+          <td><a href="http://school.ziguiw.com/zgwt/" target="_blank"><img src="Images/GuanLPTXLW.gif" alt="登录添翼校园管理信息化系统" border="0" /></a></td>
+          <td><a href="http://www.worlduc.com/SpaceShow/Index.aspx?uid=912551" target="_blank"><img src="Images/dudaokongjian.gif" alt="进入学校督导评估空间站" width="129" height="39" border="0" /></a></td>
+          
+        </tr>
+      </table></td>
+    <td width="60" align="left">&nbsp;</td>
+</tr>
+  <tr>
+    <td colspan="4" align="center"><table width="500" border="0">
+      <tr>
+        <td><a href="http://www.hsyz.org.cn/lianzheng/"><img src="Images/jwwz.gif" alt="进入汉寿一中纪委网站" width="129" height="39" border="0" /></a></td>
+        <td><a href="http://www.hsyz.org.cn/jjh/"><img src="Images/jjhwz.gif" alt="进入汉寿一中基金会网站" width="129" height="39" border="0" /></a></td>
+        
+        <td><a href="http://218.75.145.123:8088/" target="_blank"><img src="Images/TuShuGuan.gif" alt="进入学校图书馆" width="129" height="39" border="0" /></a></td>
+        
+      </tr>
+    </table></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td height="2" colspan="5"></td>
+    </tr>
+  <tr>
+    <td height="14" colspan="6"><span class="STYLE1">　　　　</span>
+      <table width="100%" border="0" cellpadding="0" cellspacing="3">
+        <tr>
+          <td style="height: 18px">&nbsp;</td>
+          <td style="height: 18px">&nbsp;</td>
+          <td width="410" style="height: 18px">&nbsp;</td>
+          <td style="height: 18px"><span class="STYLE1"><a href="http://beian.hnedu.cn" target="_blank">湘教QS7-201209-001323</a> 　　<a href="http://www.miibeian.gov.cn" target="_blank">湘ICP备12013049号</a></span></td>
+        </tr>
+      </table>
+      </td>
+    </tr>
+    <tr>
+    <td height="15" colspan="6" align="right"><span class="STYLE1">学校地址：湖南省汉寿县龙阳镇东正街77号  电话：0736－2861216 邮政编码：415900 </span>&nbsp;&nbsp;</td>
+  </tr>
+</table>
+<script src="http://www.hsyz.org.cn/itcounter/mystat.asp?style=no"></script> 
+</td>
+</tr> 
+</table> 
+<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/19/293/1899/60270474/CA192931899602704740001.js' type='text/javascript'%3E%3C/script%3E"));</script>

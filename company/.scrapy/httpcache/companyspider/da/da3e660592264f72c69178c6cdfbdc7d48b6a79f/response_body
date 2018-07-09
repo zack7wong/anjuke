@@ -1,0 +1,2061 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+<title>安徽省合肥市第七十九中学</title>
+<meta name="Copyright" content="安徽迅时网络网站管理系统" />
+<meta name="keywords" content="合肥市第七十九中学,合肥七十九中学" />
+<meta name="description" content="安徽省合肥市第七十九中学" />
+<meta name="author" content="ahxunjie@163.com,安徽迅时网络技术有限公司" />
+<meta name="generator" content="安徽迅时网络" />
+<link type="text/css" rel="stylesheet" href="/css/bszcss.css">
+<script type="text/javascript"><!--屏蔽网页js错误-->
+  function killErrors() {
+    return true;
+  }
+  window.onerror = killErrors;
+</script>
+</head>
+
+
+<body>
+
+<link rel="shortcut icon" href="/favicon.ico"/>
+<script type="text/javascript" src="/js/img.js"></script>
+<script type="text/javascript" src="/js/img_t.js"></script>
+<script type="text/javascript" src="/js/img_i.js"></script>
+<script type="text/javascript" src="/js/img_c.js"></script>
+<script type="text/javascript" src="/js/img_n.js"></script>
+<script type="text/javascript" src="/js/img_ks.js"></script>
+
+<script type="text/javascript" src="/js/dtree.js"></script>
+<script type="text/javascript" src="/js/jquery_swf.js"></script>
+
+<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+<script type="text/javascript" defer>
+
+$(function(){
+	$("#ads embed").attr({width:'1440',height:350,wmode:'transparent'});
+});
+
+$(function(){ //去除链接虚线
+  for(var i=0; i<document.links.length; i++)
+  document.links[i].onfocus=function(){this.blur()}
+})
+
+</script>
+
+
+<!--顶部浮动广告所需js 开始-->
+<script type="text/javascript">
+  var time = 500;
+  var h = 0;
+    function addCount()
+    {
+        if(time>0)
+        {
+            time--;
+            h = h+5;
+        }
+        else
+        {
+            return;
+        }
+        if(h>350)  //高度
+        {
+            return;
+        }
+        document.getElementById("ads").style.display = "";
+        document.getElementById("ads").style.height = h+"px";
+        setTimeout("addCount()",30); 
+    }
+    
+    window.onload = function showAds()
+    {
+        addCount();
+        setTimeout("noneAds()",20000); //停留时间自己适当调整
+    }
+</script>
+    
+<script type="text/javascript">
+  var T = 500;
+  var N = 350; //高度
+    function noneAds()
+    {
+        if(T>0)
+        {
+            T--;
+            N = N-5;
+        }
+        else
+        {
+            return;
+        }
+        if(N<0)
+        {
+            document.getElementById("ads").style.display = "none";
+            return;
+        }
+        
+        document.getElementById("ads").style.height = N+"px";
+        setTimeout("noneAds()",30); 
+    }
+</script>
+<!--顶部浮动广告所需js 结束-->
+
+<!--顶部浮动广告 开始-->
+
+<!--顶部浮动广告 结束-->
+
+
+
+
+<!--漂浮 公共脚本文件 开始-->
+<script type="text/javascript">
+function addEvent(obj,evtType,func,cap){
+    cap=cap||false;
+if(obj.addEventListener){
+     obj.addEventListener(evtType,func,cap);
+   return true;
+}else if(obj.attachEvent){
+        if(cap){
+         obj.setCapture();
+         return true;
+     }else{
+      return obj.attachEvent("on" + evtType,func);
+   }
+}else{
+   return false;
+    }
+}
+function getPageScroll(){
+    var xScroll,yScroll;
+if (self.pageXOffset) {
+   xScroll = self.pageXOffset;
+} else if (document.documentElement && document.documentElement.scrollLeft){
+   xScroll = document.documentElement.scrollLeft;
+} else if (document.body) {
+   xScroll = document.body.scrollLeft;
+}
+if (self.pageYOffset) {
+   yScroll = self.pageYOffset;
+} else if (document.documentElement && document.documentElement.scrollTop){
+   yScroll = document.documentElement.scrollTop;
+} else if (document.body) {
+   yScroll = document.body.scrollTop;
+}
+arrayPageScroll = new Array(xScroll,yScroll);
+return arrayPageScroll;
+}
+function GetPageSize(){
+    var xScroll, yScroll;
+    if (window.innerHeight && window.scrollMaxY) { 
+        xScroll = document.body.scrollWidth;
+        yScroll = window.innerHeight + window.scrollMaxY;
+    } else if (document.body.scrollHeight > document.body.offsetHeight){
+        xScroll = document.body.scrollWidth;
+        yScroll = document.body.scrollHeight;
+    } else {
+        xScroll = document.body.offsetWidth;
+        yScroll = document.body.offsetHeight;
+    }
+    var windowWidth, windowHeight;
+    if (self.innerHeight) {
+        windowWidth = self.innerWidth;
+        windowHeight = self.innerHeight;
+    } else if (document.documentElement && document.documentElement.clientHeight) {
+        windowWidth = document.documentElement.clientWidth;
+        windowHeight = document.documentElement.clientHeight;
+    } else if (document.body) {
+        windowWidth = document.body.clientWidth;
+        windowHeight = document.body.clientHeight;
+    } 
+    if(yScroll < windowHeight){
+        pageHeight = windowHeight;
+    } else { 
+        pageHeight = yScroll;
+    }
+    if(xScroll < windowWidth){ 
+        pageWidth = windowWidth;
+    } else {
+        pageWidth = xScroll;
+    }
+    arrayPageSize = new Array(pageWidth,pageHeight,windowWidth,windowHeight) 
+    return arrayPageSize;
+}
+//脚本文件 AdMove.js
+/*
+例子
+<div id="Div2">
+    ***** content ******
+</div>
+var ad=new AdMove("Div2");
+ad.Run();
+*/
+////////////////////////////////////////////////////////
+var AdMoveConfig=new Object();
+AdMoveConfig.IsInitialized=false;
+AdMoveConfig.ScrollX=0;
+AdMoveConfig.ScrollY=0;
+AdMoveConfig.MoveWidth=0;
+AdMoveConfig.MoveHeight=0;
+AdMoveConfig.Resize=function(){
+    var winsize=GetPageSize();
+    AdMoveConfig.MoveWidth=winsize[2];
+    AdMoveConfig.MoveHeight=winsize[3];
+    AdMoveConfig.Scroll();
+}
+AdMoveConfig.Scroll=function(){
+    var winscroll=getPageScroll();
+    AdMoveConfig.ScrollX=winscroll[0];
+    AdMoveConfig.ScrollY=winscroll[1];
+}
+addEvent(window,"resize",AdMoveConfig.Resize);
+addEvent(window,"scroll",AdMoveConfig.Scroll);
+function AdMove(id){
+    if(!AdMoveConfig.IsInitialized){
+        AdMoveConfig.Resize();
+        AdMoveConfig.IsInitialized=true;
+    }
+    var obj=document.getElementById(id);
+    obj.style.position="absolute";
+    var W=AdMoveConfig.MoveWidth-obj.offsetWidth;
+    var H=AdMoveConfig.MoveHeight-obj.offsetHeight;
+    var x = W*Math.random(),y = H*Math.random();
+    var rad=(Math.random()+1)*Math.PI/6;
+    var kx=Math.sin(rad),ky=Math.cos(rad);
+    var dirx = (Math.random()<0.5?1:-1), diry = (Math.random()<0.5?1:-1);
+    var step = 1;
+    var interval;
+    this.SetLocation=function(vx,vy){x=vx;y=vy;}
+    this.SetDirection=function(vx,vy){dirx=vx;diry=vy;}
+    obj.CustomMethod=function(){
+        obj.style.left = (x + AdMoveConfig.ScrollX) + "px";
+        obj.style.top = (y + AdMoveConfig.ScrollY) + "px";
+        rad=(Math.random()+1)*Math.PI/6;
+        W=AdMoveConfig.MoveWidth-obj.offsetWidth;
+        H=AdMoveConfig.MoveHeight-obj.offsetHeight;
+        x = x + step*kx*dirx;
+        if (x < 0){dirx = 1;x = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+        if (x > W){dirx = -1;x = W;kx=Math.sin(rad);ky=Math.cos(rad);}
+        y = y + step*ky*diry;
+        if (y < 0){diry = 1;y = 0;kx=Math.sin(rad);ky=Math.cos(rad);} 
+        if (y > H){diry = -1;y = H;kx=Math.sin(rad);ky=Math.cos(rad);}
+    }
+    this.Run=function(){
+        var delay = 10;
+        interval=setInterval(obj.CustomMethod,delay);
+        obj.onmouseover=function(){clearInterval(interval);}
+        obj.onmouseout=function(){interval=setInterval(obj.CustomMethod, delay);}
+    }
+}
+</script>
+<!--漂浮 公共脚本文件 结束-->
+
+
+<!--漂浮图片-1 开始-->
+
+<!--漂浮图片-1 结束-->
+
+
+
+<!--漂浮图片-2 开始-->
+
+<!--漂浮图片-2 结束-->
+
+<!--漂浮图片-3 开始-->
+
+<!--漂浮图片-3 结束-->
+
+   <!--[if lt IE 7]>
+    <script type="text/javascript" src="/js/DD_belatedPNG.js"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+    DD_belatedPNG.fix('a:hover,.png_bg,.navCurrent');
+     //]]>
+    </script>
+    <![endif]-->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="228" valign="top" align="center">
+      <div class="container">
+	    <div class="tFlash">
+
+
+
+	  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="1440" height="228">
+            <param name="movie" value="/images/banner.swf" />
+            <param name="quality" value="high" />
+			<param name="wmode" value="transparent" />
+			<param name="menu" value="false" />
+            <embed src="/images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="1440" height="228" wmode="transparent" menu="false"></embed>
+	      </object>
+	  
+
+
+
+		</div>
+	  </div>
+	</td>
+  </tr>
+</table>
+<table width="1060" border="0" cellspacing="0" cellpadding="0" align="center" style="background:url(/images/dhbg.jpg) left top repeat-x;">
+  <tr>
+    <td width="6" align="left" valign="top"><img src="/images/dhleft.jpg" width="6" height="74"/></td>
+	<td width="1048" valign="top">
+	  <table width="1048" height="38" border="0" cellspacing="0" cellpadding="0" id="btn">
+	    <tr>
+		  <td width="103" align="center" valign="middle"><a href="/" class="navCurrent">网站首页</a></td>
+	      <td width="2" align="center"><img src="/images/dhline.jpg" width="2" height="38"/></td>
+		  
+
+		  <td width="103" align="center" valign="middle" onmouseover="MM_showHideLayers('menu1','','show');this.style.cursor='hand'"  onmouseout="MM_showHideLayers('menu1','','hide')"><a  href="/about" class="nav">学校概况<!--学校概况--></a></td>
+	      <td width="2" align="center"><img src="/images/dhline.jpg" width="2" height="38"/></td>
+		  
+
+	      <td width="103" align="center" valign="middle" onmouseover="MM_showHideLayers('menu2','','show');this.style.cursor='hand'"  onmouseout="MM_showHideLayers('menu2','','hide')"><a  href="/news" class="nav">校园资讯<!--校园资讯--></a></td>
+	      <td width="2" align="center"><img src="/images/dhline.jpg" width="2" height="38"/></td>
+		  
+
+		  <td width="103" align="center" valign="middle" onmouseover="MM_showHideLayers('menu3','','show');this.style.cursor='hand'"  onmouseout="MM_showHideLayers('menu3','','hide')"><a  href="/jxjy" class="nav">教学教研<!--教学教研--></a></td>
+	      <td width="2" align="center"><img src="/images/dhline.jpg" width="2" height="38"/></td>
+		  
+
+		  <td width="103" align="center" valign="middle" onmouseover="MM_showHideLayers('menu4','','show');this.style.cursor='hand'"  onmouseout="MM_showHideLayers('menu4','','hide')"><a  href="/jsfz" class="nav">教师发展<!--教师发展--></a></td>
+	      <td width="2" align="center"><img src="/images/dhline.jpg" width="2" height="38"/></td>
+		  
+
+		  <td width="103" align="center" valign="middle" onmouseover="MM_showHideLayers('menu5','','show');this.style.cursor='hand'"  onmouseout="MM_showHideLayers('menu5','','hide')"><a  href="/jygl" class="nav">教育管理<!--教育管理--></a></td>
+	      <td width="2" align="center"><img src="/images/dhline.jpg" width="2" height="38"/></td>
+		  
+
+		  <td width="103" align="center" valign="middle" onmouseover="MM_showHideLayers('menu6','','show');this.style.cursor='hand'"  onmouseout="MM_showHideLayers('menu6','','hide')"><a  href="/dyyd" class="nav">德育园地<!--德育园地--></a></td>
+	      <td width="2" align="center"><img src="/images/dhline.jpg" width="2" height="38"/></td>
+		  
+
+		  <td width="103" align="center" valign="middle" onmouseover="MM_showHideLayers('menu7','','show');this.style.cursor='hand'"  onmouseout="MM_showHideLayers('menu7','','hide')"><a  href="/xsly" class="nav">学生乐园<!--学生乐园--></a></td>
+	      <td width="2" align="center"><img src="/images/dhline.jpg" width="2" height="38"/></td>
+		  
+
+		  <td width="103" align="center" valign="middle" onmouseover="MM_showHideLayers('menu8','','show');this.style.cursor='hand'"  onmouseout="MM_showHideLayers('menu8','','hide')"><a  href="/jzxx" class="nav">家长学校<!--家长学校--></a></td>
+		  <td width="2" align="center"><img src="/images/dhline.jpg" width="2" height="38"/></td>
+		  
+
+		  <td width="103" align="center" valign="middle" onmouseover="MM_showHideLayers('menu9','','show');this.style.cursor='hand'"  onmouseout="MM_showHideLayers('menu9','','hide')"><a  href="/zyzx" class="nav">资源中心<!--资源中心--></a></td>
+        </tr>
+	  </table>
+	  <!-- 二级栏目 下拉开始-->
+		<script language="JavaScript" type="text/JavaScript">
+		<!--
+		function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+		  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+			document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+		  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+		}
+		MM_reloadPage(true);
+		
+		function MM_findObj(n, d) { //v4.01
+		  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+			d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+		  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+		  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+		  if(!x && d.getElementById) x=d.getElementById(n); return x;
+		}
+		
+		function MM_showHideLayers() { //v6.0
+		  var i,p,v,obj,args=MM_showHideLayers.arguments;
+		  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+			if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+			obj.visibility=v; }
+		}
+		//-->
+		</script>
+		<div id="Layer1" style="z-index: 1; width:1048px; margin:auto auto; position:relative;">
+		  <div id="menu1" style="z-index:50;left:117px;width:78px;position:absolute;top:0px;height:24px;visibility:hidden;" onmouseover="MM_showHideLayers('menu1','','show')" onmouseout="MM_showHideLayers('menu1','','hide')">
+			<table cellspacing="0" cellpadding="0" width="100%" border="0">
+			  
+				<tr>
+				  <td valign="top" align="center">
+					<table width="78" border="0" cellpadding="0" cellspacing="1" bgcolor="#eeeeee" id="whitelink">
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/about?web=947" style="color:#ffffff;">学校简介</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/about?web=1015" style="color:#ffffff;">校长寄语</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/about?web=1074" style="color:#ffffff;">领导班子</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/about?web=1014" style="color:#ffffff;">规章制度</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/about?web=989" style="color:#ffffff;">学校荣誉</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/about?web=1067" style="color:#ffffff;">发展规划</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/about?web=1073" style="color:#ffffff;">校园风采</a></td>
+			   </tr>
+
+				  
+
+					  
+					</table>
+				  </td>
+				</tr>
+			  
+			</table>
+		  </div>
+		  <div id="menu2" style="z-index:50;left:222px;width:78px;position:absolute;top:0px;height:24px;visibility:hidden;" onmouseover="MM_showHideLayers('menu2','','show')" onmouseout="MM_showHideLayers('menu2','','hide')">
+			<table cellspacing="0" cellpadding="0" width="100%" border="0">
+			  
+				<tr>
+				  <td valign="top" align="center">
+					<table width="78" border="0" cellpadding="0" cellspacing="1" bgcolor="#eeeeee" id="whitelink">
+					  
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/news?web=958" style="color:#ffffff;">校园新闻</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/news?web=959" style="color:#ffffff;">教育新闻</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/news?web=1069" style="color:#ffffff;">一周重点工作</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/news?web=1018" style="color:#ffffff;">通知公告</a></td>
+			   </tr>
+
+
+					  
+					</table>
+				  </td>
+				</tr>
+			  
+			</table>
+		  </div>
+		  <div id="menu3" style="z-index:50;left:327px;width:78px;position:absolute;top:0px;height:24px;visibility:hidden;" onmouseover="MM_showHideLayers('menu3','','show')" onmouseout="MM_showHideLayers('menu3','','hide')">
+			<table cellspacing="0" cellpadding="0" width="100%" border="0">
+			  
+				<tr>
+				  <td valign="top" align="center">
+					<table width="78" border="0" cellpadding="0" cellspacing="1" bgcolor="#eeeeee" id="whitelink">
+					  
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jxjy?web=999" style="color:#ffffff;">教学管理</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jxjy?web=1000" style="color:#ffffff;">教研科研</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jxjy?web=1001" style="color:#ffffff;">课题研究</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jxjy?web=1101" style="color:#ffffff;">校本培训</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jxjy?web=1102" style="color:#ffffff;">特色之路</a></td>
+			   </tr>
+
+
+					  
+					</table>
+				  </td>
+				</tr>
+			  
+			</table>
+		  </div>   
+		  <div id="menu4" style="z-index:50;left:432px;width:78px;position:absolute;top:0px;height:24px;visibility:hidden;" onmouseover="MM_showHideLayers('menu4','','show')" onmouseout="MM_showHideLayers('menu4','','hide')">
+			<table cellspacing="0" cellpadding="0" width="100%" border="0">
+			  
+				<tr>
+				  <td valign="top" align="center">
+					<table width="78" border="0" cellpadding="0" cellspacing="1" bgcolor="#eeeeee" id="whitelink">
+					  
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jsfz?web=904" style="color:#ffffff;">教师风采</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jsfz?web=905" style="color:#ffffff;">教师作品</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jsfz?web=906" style="color:#ffffff;">教师博客</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jsfz?web=1011" style="color:#ffffff;">教师培训</a></td>
+			   </tr>
+
+
+					  
+					</table>
+				  </td>
+				</tr>
+			  
+			</table>
+		  </div>
+		  <div id="menu5" style="z-index:50;left:537px;width:78px;position:absolute;top:0px;height:24px;visibility:hidden;" onmouseover="MM_showHideLayers('menu5','','show')" onmouseout="MM_showHideLayers('menu5','','hide')">
+			<table cellspacing="0" cellpadding="0" width="100%" border="0">
+			  
+				<tr>
+				  <td valign="top" align="center">
+					<table width="78" border="0" cellpadding="0" cellspacing="1" bgcolor="#eeeeee" id="whitelink">
+					  
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jygl?web=1078" style="color:#ffffff;">文件法规</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jygl?web=950" style="color:#ffffff;">上级文件</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jygl?web=967" style="color:#ffffff;">人事管理</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jygl?web=968" style="color:#ffffff;">校发文件</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jygl?web=949" style="color:#ffffff;">财务管理</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jygl?web=1103" style="color:#ffffff;">安全教育</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jygl?web=1104" style="color:#ffffff;">绿色校园</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/jygl?web=1105" style="color:#ffffff;">开放周活动</a></td>
+			   </tr>
+
+
+					  
+					</table>
+				  </td>
+				</tr>
+			  
+			</table>
+		  </div>
+		  <div id="menu6" style="z-index:50;left:642px;width:78px;position:absolute;top:0px;height:24px;visibility:hidden;" onmouseover="MM_showHideLayers('menu6','','show')" onmouseout="MM_showHideLayers('menu6','','hide')">
+			<table cellspacing="0" cellpadding="0" width="100%" border="0">
+			  
+				<tr>
+				  <td valign="top" align="center">
+					<table width="78" border="0" cellpadding="0" cellspacing="1" bgcolor="#eeeeee" id="whitelink">
+					  
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/dyyd?web=1076" style="color:#ffffff;">党团活动</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/dyyd?web=952" style="color:#ffffff;">综合实践活动</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/dyyd?web=1050" style="color:#ffffff;">普法天地</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/dyyd?web=1051" style="color:#ffffff;">安全教育</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/dyyd?web=1052" style="color:#ffffff;">廉政文化</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/dyyd?web=1053" style="color:#ffffff;">健康教育</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/dyyd?web=1071" style="color:#ffffff;">留守儿童工作</a></td>
+			   </tr>
+
+
+					  
+					</table>
+				  </td>
+				</tr>
+			  
+			</table>
+		  </div>
+		  <div id="menu7" style="z-index:50;left:747px;width:78px;position:absolute;top:0px;height:24px;visibility:hidden;" onmouseover="MM_showHideLayers('menu7','','show')" onmouseout="MM_showHideLayers('menu7','','hide')">
+			<table cellspacing="0" cellpadding="0" width="100%" border="0">
+			  
+				<tr>
+				  <td valign="top" align="center">
+					<table width="78" border="0" cellpadding="0" cellspacing="1" bgcolor="#eeeeee" id="whitelink">
+					  
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/xsly?web=978" style="color:#ffffff;">学生作品</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/xsly?web=1044" style="color:#ffffff;">学生风采</a></td>
+			   </tr>
+
+
+					  
+					</table>
+				  </td>
+				</tr>
+			  
+			</table>
+		  </div>
+		  <div id="menu8" style="z-index:50;left:852px;width:78px;position:absolute;top:0px;height:24px;visibility:hidden;" onmouseover="MM_showHideLayers('menu8','','show')" onmouseout="MM_showHideLayers('menu8','','hide')">
+			<table cellspacing="0" cellpadding="0" width="100%" border="0">
+			  
+				<tr>
+				  <td valign="top" align="center">
+					<table width="78" border="0" cellpadding="0" cellspacing="1" bgcolor="#eeeeee" id="whitelink">
+					  
+
+					  
+					</table>
+				  </td>
+				</tr>
+			  
+			</table>
+		  </div>
+		  <div id="menu9" style="z-index:50;left:960px;width:78px;position:absolute;top:0px;height:24px;visibility:hidden;" onmouseover="MM_showHideLayers('menu9','','show')" onmouseout="MM_showHideLayers('menu9','','hide')">
+			<table cellspacing="0" cellpadding="0" width="100%" border="0">
+			  
+				<tr>
+				  <td valign="top" align="center">
+					<table width="78" border="0" cellpadding="0" cellspacing="1" bgcolor="#eeeeee" id="whitelink">
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/zyzx?web=974" style="color:#ffffff;">农远资源</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/zyzx?web=975" style="color:#ffffff;">校本资源</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/zyzx?web=976" style="color:#ffffff;">课件下载</a></td>
+			   </tr>
+
+
+               <tr>
+				 <td width="78" height="24" align="center" bgcolor="#007CD6" onmouseover="this.bgColor='#48bffb'" onmouseout="this.bgColor='#007CD6'"><a  href="/zyzx?web=1005" style="color:#ffffff;">常用文档</a></td>
+			   </tr>
+
+
+  
+					</table>
+				  </td>
+				</tr>
+			  
+			</table>
+		  </div>
+		</div>
+      <!-- 二级栏目 下拉结束-->
+	  <table width="1048" height="36" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="750" align="left" valign="top" style="padding:13px 0px 0px 29px; background:url(/images/dateico.jpg) 5px 13px no-repeat;">
+		  今天是：2018年5月29日&nbsp;<span style="color:#FF0000">星期二</span>&nbsp;&nbsp;农历：戊戌年&nbsp;四月十五
+		  </td>
+          <td width="90" align="left" valign="middle"><img src="/images/search.png" width="75" height="15" style="vertical-align:middle;" /></td>
+	      <td width="210" align="left" valign="middle">
+
+<script type="text/javascript" defer="defer">
+  function chkk(){
+    var tits=document.fm1.tits.value;
+	if (tits=="输入搜索关键字"){
+	  alert("请输入搜索关键字　");
+	  document.fm1.tits.value="";
+	  document.fm1.tits.focus();
+	  return false;
+	}
+	if (tits.length<1){
+	  alert("请输入搜索关键字…　")
+	  document.fm1.tits.focus()
+	  return false;
+	}
+  }
+</script>
+	        <form name="fm1" action="/search" method="get" onsubmit="return chkk();">
+	        <table width="200" border="0" cellspacing="0" cellpadding="0">
+		      <tr>
+			    <td width="120" valign="middle"><input type="text" name="tits" value="输入搜索关键字" style="border:0px; color:#666666; border:1px solid #CBCBCB; border-right:0px; height:21px; width:138px; line-height:21px; padding-left:4px;" maxlength="50" onclick="this.value='';"></td>
+			    <td width="78" align="left" valign="middle"><input type="image" src="/images/srhbtn.jpg" onfocus="this.blur();"></td>
+		      </tr>    
+	        </table>
+	        </form>
+	      </td>
+        </tr>
+      </table>
+	</td>
+	<td width="6" align="right" valign="top"><img src="/images/dhright.jpg" width="6" height="74"/></td>
+  </tr>
+  <tr>
+    <td colspan="3" height="10"></td>
+  </tr>
+</table>
+
+
+<table width="1060" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+	<td width="776" valign="top">
+	  <table width="776" height="245" border="0" cellspacing="0" cellpadding="0">
+	    <tr>
+		  <td valign="top" width="300" height="235" style="padding:4px 4px 1px 4px; border:1px solid #DBDBDB;">
+		  
+<!--校园新闻幻灯 开始-->
+
+
+<a target=_blank href="javascript:goUrl()"> 
+<script type="text/javascript">
+
+ var focus_width=300
+ var focus_height=215
+ var text_height=20
+ var swf_height = focus_height+text_height
+ 
+ var pics="/uploadfiles/20170519115643753.jpg|/uploadfiles/20170107091056896.jpg|/uploadfiles/20170106150701306.jpg"
+ var links=""
+ var texts="我校顺利开展合肥工业游活动|社会发展局副局长彭桂贞莅临我校指导工作|合肥名师工作室王莉工作室在我校挂牌"
+ 
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">');
+document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="/images/playswf.swf"><param name=wmode value=transparent><param name="quality" value="high">');
+document.write('<param name="menu" value="false"><param name=wmode value="transparent">');
+document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+document.write('<embed src="/images/playswf.swf" wmode="transparent" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" bgcolor="#DADADA" quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');  document.write('</object>');
+</script></a>
+
+
+<!-- 校园新闻幻灯 结束-->
+
+
+		  </td>
+		  <td width="10"></td>
+		  <td width="456" height="245" valign="top">
+	        <table width="457" border="0" cellspacing="0" cellpadding="0" style="background:url(/images/newsbg.gif) left top no-repeat;">
+	          <tr>
+		        <td width="124" height="22" valign="top" align="center" style="font-size:14px; font-weight:bold; padding-top:9px;"><a href="/news?web=958" style="color:#fff;">校园新闻<!--校园新闻--></a></td>
+		        <td width="333" align="right" valign="top" style="padding:9px 12px 0px 0px;"><a href="/news?web=958">更多&gt;&gt;</a></td>
+		      </tr>
+	          <tr>
+		        <td colspan="2" height="213" valign="top" style="padding:1px 10px 0px 10px; border:1px solid #DBDBDB; border-top:0px;" class="cc">
+		          <ul>
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2018-03-28</span><a href="/show/?3882.html" target="_blank" title="我校召开加强师德师风建设动员大会" style="font-size:12px;">我校召开加强师德师风建设动员大会</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2018-03-21</span><a href="/show/?3881.html" target="_blank" title="合肥市王莉名师工作室中期考核在我校举行" style="font-size:12px;">合肥市王莉名师工作室中期考核在我校举行</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2018-03-08</span><a href="/show/?3880.html" target="_blank" title="我校开展学生记者新闻业务培训" style="font-size:12px;">我校开展学生记者新闻业务培训</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2018-03-06</span><a href="/show/?3878.html" target="_blank" title="九（3）班举办“努力奋斗，决胜中考”誓师大会" style="font-size:12px;">九（3）班举办“努力奋斗，决胜中考”誓师大会</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-12-15</span><a href="/show/?3870.html" target="_blank" title="我校开展第三届“写生活，增实效”作文竞赛" style="font-size:12px;">我校开展第三届“写生活，增实效”作文竞赛</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-12-08</span><a href="/show/?3867.html" target="_blank" title="讲好电影故事 育好少年儿童" style="font-size:12px;">讲好电影故事 育好少年儿童</a></li>
+
+
+		
+	<li><span>2017-11-07</span><a href="/show/?3866.html" target="_blank" title="我校第22届秋季运动会隆重开幕" style="font-size:12px;">我校第22届秋季运动会隆重开幕</a></li>
+
+
+   
+		          </ul>
+		        </td>
+	          </tr>
+	        </table>
+	      </td>
+	    </tr>
+	  </table>
+	</td>
+	<td width="12"></td>
+	<td width="272" valign="top">
+      <table width="272" border="0" cellspacing="0" cellpadding="0" style="background:url(/images/newstopbg.jpg) left top no-repeat">
+        <tr>
+          <td height="22" width="200" align="left" valign="top" style=" font-size:14px; font-weight:bold; padding:7px 0px 0px 15px;"><a href="/news?web=1018" style="color:#ffffff;">通知公告<!--通知公告--></a></td>
+          <td width="48" align="left" valign="top" style="padding:8px 0px 0px 0px;"><a href="/news?web=1018" style="color:#ffffff;">更多&gt;&gt;</a></td>
+        </tr>
+        <tr>
+          <td colspan="2" height="205" valign="top" style="border:1px solid #DBDBDB; border-top:0px; padding:11px 4px 0px 6px;">
+
+<!--通知公告 开始-->
+	
+	
+<!--滚动 开始-->
+
+<div id=demo style="overflow:hidden;width:248px;height:205px;"> 
+<div id=demo1 class="notice"> 
+<!--滚动内容开始-->
+    <ul>
+
+
+	<li><a href="/show/?3884.html" target="_blank" title="合肥市第七十九中学八年级学生工业游招标结果公示" style="font-size:12px;">合肥市第七十九中学八年级学生工业游招标结果公示</a></li>
+
+
+
+	<li><a href="/show/?3883.html" target="_blank" title="合肥市第七十九中学八年级工业游活动公示" style="font-size:12px;">合肥市第七十九中学八年级工业游活动公示</a></li>
+
+
+
+	<li><a href="/show/?3877.html" target="_blank" title="合教[2018]38号关于印发《合肥市市区2018年初中学业水平理科实验操作考试实施方案》的通知" style="font-size:12px;">合教[2018]38号关于印发《合肥市市区2018年初中学业水平理科实验操作考试实施方案》的通知</a></li>
+
+
+
+	<li><a href="/show/?3874.html" target="_blank" title="致中小学生家长的一封信" style="font-size:12px;">致中小学生家长的一封信</a></li>
+
+
+
+	<li><a href="/show/?3869.html" target="_blank" title="合肥市第七十九中学七年级学生研学游招标结果公示" style="font-size:12px;">合肥市第七十九中学七年级学生研学游招标结果公示</a></li>
+
+
+
+	<li><a href="/show/?3868.html" target="_blank" title="合肥市第七十九中学七年级研学游活动公示" style="font-size:12px;">合肥市第七十九中学七年级研学游活动公示</a></li>
+
+
+
+	<li><a href="/show/?3857.html" target="_blank" title="合教秘[2017]384号转发《安徽省教育厅关于规范办学行为暗访情况的通报》的通知" style="font-size:12px;">合教秘[2017]384号转发《安徽省教育厅关于规范办学行为暗访情况的通报》的通知</a></li>
+
+
+
+	<li><a href="/show/?3853.html" target="_blank" title="合肥市市区2017年普通高中招生代码表" style="font-size:12px;">合肥市市区2017年普通高中招生代码表</a></li>
+
+
+
+	<li><a href="/show/?3852.html" target="_blank" title="2017年合肥市市区高中阶段学校招生志愿预填表" style="font-size:12px;">2017年合肥市市区高中阶段学校招生志愿预填表</a></li>
+
+
+
+	<li><a href="/show/?3825.html" target="_blank" title="关于合肥市2017年中小学幼儿园暑假安排的通知" style="font-size:12px;">关于合肥市2017年中小学幼儿园暑假安排的通知</a></li>
+
+
+
+	<li><a href="/show/?3824.html" target="_blank" title="合教[2017]122号关于合肥市市区2017年省示范高中指标到校生计划安排的通知" style="font-size:12px;">合教[2017]122号关于合肥市市区2017年省示范高中指标到校生计划安排的通知</a></li>
+
+
+
+	<li><a href="/show/?3823.html" target="_blank" title="中小学2016－17第二学期期末质量检测通知" style="font-size:12px;">中小学2016－17第二学期期末质量检测通知</a></li>
+
+
+
+	<li><a href="/show/?3814.html" target="_blank" title="合肥市第七十九中学八年级学生工业游招标结果公示" style="font-size:12px;">合肥市第七十九中学八年级学生工业游招标结果公示</a></li>
+
+
+
+	<li><a href="/show/?3812.html" target="_blank" title="合肥市第七十九中学2016-2017学年度第二学期家长会活动方案" style="font-size:12px;">合肥市第七十九中学2016-2017学年度第二学期家长会活动方案</a></li>
+
+
+
+	<li><a href="/show/?3813.html" target="_blank" title="合肥七十九中开展工业游活动公示" style="font-size:12px;">合肥七十九中开展工业游活动公示</a></li>
+
+
+
+	<li><a href="/show/?3805.html" target="_blank" title="关于举办安徽省第二届中小学微课大赛的通知" style="font-size:12px;">关于举办安徽省第二届中小学微课大赛的通知</a></li>
+
+
+
+	<li><a href="/show/?3771.html" target="_blank" title="市教科院2017年优质课和论文评比通知" style="font-size:12px;">市教科院2017年优质课和论文评比通知</a></li>
+
+
+
+	<li><a href="/show/?3770.html" target="_blank" title="关于印发《合肥市市区2017年初中毕业升学体育考试实施方案》的通知" style="font-size:12px;">关于印发《合肥市市区2017年初中毕业升学体育考试实施方案》的通知</a></li>
+
+
+
+	<li><a href="/show/?3767.html" target="_blank" title="合教秘[2017]41号关于开展2017年春季中小学开学工作检查的通知" style="font-size:12px;">合教秘[2017]41号关于开展2017年春季中小学开学工作检查的通知</a></li>
+
+
+
+	<li><a href="/show/?3766.html" target="_blank" title="合教[2017]13号关于印发《合肥市市区2017年初中毕业学业理科实验操作考试实施方案》的通知" style="font-size:12px;">合教[2017]13号关于印发《合肥市市区2017年初中毕业学业理科实验操作考试实施方案》的通知</a></li>
+
+
+  
+  <li style="background:none;">&nbsp;</li>
+  <li style="background:none;">&nbsp;</li>
+  <li style="background:none;">&nbsp;</li>
+
+
+  </ul>
+<!--滚动内容开始-->
+</div> 
+<div id=demo2 class="notice"></div> 
+</div> 
+<script> 
+var speed=50 //值越大速度越慢
+demo2.innerHTML=demo1.innerHTML //克隆demo1为demo2 
+function Marquee(){ 
+
+//向上滚动
+if(demo2.offsetTop-demo.scrollTop<=0) //当滚动至demo1与demo2交界时
+demo.scrollTop-=demo1.offsetHeight //demo跳到最顶端 
+else{ 
+demo.scrollTop++ 
+} 
+
+} 
+var MyMar=setInterval(Marquee,speed)//设置定时器 
+//鼠标移上时清除定时器达到滚动停止的目的 
+demo.onmouseover=function() {clearInterval(MyMar)} 
+//鼠标移开时重设定时器 
+demo.onmouseout=function(){MyMar=setInterval(Marquee,speed)} 
+</script>
+
+<!--滚动 结束-->
+
+
+
+<!--通知公告 结束-->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr><td colspan="3" height="10"></td></tr>
+</table>
+
+
+<table width="1060" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td valign="top" width="387">
+	  <table width="385" border="0" cellspacing="0" cellpadding="0" style="background:url(/images/jxglbg.gif) left top no-repeat;">
+	    <tr>
+		  <td width="120" height="21" valign="top" align="center" style="font-size:14px; font-weight:bold; padding-top:9px;"><a href="/jxjy?web=999" style="color:#fff;">教学管理<!--教学管理--></a></td>
+		  <td width="255" align="right" valign="top" style="padding:9px 12px 0px 0px;"><a href="/jxjy?web=999">更多&gt;&gt;</a></td>
+		</tr>
+	    <tr>
+		  <td colspan="2" height="222" valign="top" style="border:1px solid #DBDBDB; border-top:0px; padding:3px 8px 0px 8px;" class="cc2">
+		    <ul>
+
+		
+	<li  style="border-bottom:1px dashed #eaeaea;"><span>2018-04-23</span><a href="/show/?3885.html" target="_blank" title="教育督导工作信息第3期（2018年）" style="font-size:12px;">教育督导工作信息第3期（2018年）</a></li>
+
+
+		
+	<li  style="border-bottom:1px dashed #eaeaea;"><span>2018-03-06</span><a href="/show/?3879.html" target="_blank" title="教育督导工作信息第2期（2018年）" style="font-size:12px;">教育督导工作信息第2期（2018年）</a></li>
+
+
+		
+	<li  style="border-bottom:1px dashed #eaeaea;"><span>2018-02-10</span><a href="/show/?3876.html" target="_blank" title="教育督导工作信息第1期（2018年）" style="font-size:12px;">教育督导工作信息第1期（2018年）</a></li>
+
+
+		
+	<li  style="border-bottom:1px dashed #eaeaea;"><span>2018-01-10</span><a href="/show/?3875.html" target="_blank" title="经开区教育督导工作信息第12期" style="font-size:12px;">经开区教育督导工作信息第12期</a></li>
+
+
+		
+	<li  style="border-bottom:1px dashed #eaeaea;"><span>2017-12-15</span><a href="/show/?3871.html" target="_blank" title="经开区教育督导工作信息第11期" style="font-size:12px;">经开区教育督导工作信息第11期</a></li>
+
+
+		
+	<li  style="border-bottom:1px dashed #eaeaea;"><span>2017-11-08</span><a href="/show/?3865.html" target="_blank" title="教育督导工作信息第10期" style="font-size:12px;">教育督导工作信息第10期</a></li>
+
+
+		
+	<li  style="border-bottom:1px dashed #eaeaea;"><span>2017-11-08</span><a href="/show/?3864.html" target="_blank" title="教育督导工作信息第9期" style="font-size:12px;">教育督导工作信息第9期</a></li>
+
+
+		    </ul>
+		  </td>
+	    </tr>
+	  </table>
+	</td>
+    
+	<td width="10"></td>
+    
+	<td valign="top" width="385">
+	  <table width="385" border="0" cellspacing="0" cellpadding="0" style="background:url(/images/jxglbg.gif) left top no-repeat;">
+	    <tr>
+		  <td width="120" height="21" valign="top" align="center" style="font-size:14px; font-weight:bold; padding-top:9px;"><a href="/jxjy?web=1000" style="color:#fff;">教研科研<!--教研科研--></a></td>
+		  <td width="255" align="right" valign="top" style="padding:9px 12px 0px 0px;"><a href="/jxjy?web=1000">更多&gt;&gt;</a></td>
+		</tr>
+	    <tr>
+		  <td colspan="2" height="222" valign="top" style="border:1px solid #DBDBDB; border-top:0px; padding:3px 8px 0px 8px;" class="cc2">
+		    <ul>
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2015-12-03</span><a href="/show/?3499.html" target="_blank" title="关于2015年合经区中学数学教研论文评比结果的通知" style="font-size:12px;">关于2015年合经区中学数学教研论文评比结果…</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2015-09-07</span><a href="/show/?3391.html" target="_blank" title="支教，我教育生命中的源头活水" style="font-size:12px;">支教，我教育生命中的源头活水</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2015-08-24</span><a href="/show/?3381.html" target="_blank" title="浙大德育培训心得" style="font-size:12px;">浙大德育培训心得</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2015-04-24</span><a href="/show/?3282.html" target="_blank" title="苏州大学培训心得" style="font-size:12px;">苏州大学培训心得</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2015-04-23</span><a href="/show/?3278.html" target="_blank" title="赴杭州天杭试验学校学习心得" style="font-size:12px;">赴杭州天杭试验学校学习心得</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2015-04-23</span><a href="/show/?3277.html" target="_blank" title="天杭之行" style="font-size:12px;">天杭之行</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2015-04-23</span><a href="/show/?3276.html" target="_blank" title="赴天杭学校研修体会" style="font-size:12px;">赴天杭学校研修体会</a></li>
+
+
+		    </ul>
+		  </td>
+	    </tr>
+	  </table>
+	</td>
+    
+	<td width="10"></td>
+    
+	<td width="272" valign="top">
+      <table width="272" border="0" cellspacing="0" cellpadding="0" style="background:url(/images/newstopbg.jpg) left top no-repeat">
+        <tr>
+          <td height="22" width="190" align="left" valign="top" style=" font-size:14px; font-weight:bold; padding:7px 0px 0px 15px;"><a href="/about?web=1015" style="color:#ffffff;">校长寄语<!--校长寄语--></a></td>
+          <td width="48" align="left" valign="top" style="padding:8px 0px 0px 0px;"><a href="/about?web=1015" style="color:#ffffff;">更多&gt;&gt;</a></td>
+        </tr>
+        <tr>
+          <td colspan="2" height="168" valign="top" style="border:1px solid #DBDBDB;border-top:0px;padding:10px 4px 0px 8px;line-height:24px;;position:relative;">
+
+		  <img src="/uploadfiles/20151031132535413.jpg" width="120" height="100" style="border:1px solid #DCDCDC; padding:2px; float:left; margin:0px 5px 0px 0px;" />
+
+
+
+&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+ 学生，是一艘启航的小船，他的航行，需要爱的指引；教师，是沧海中的航标，无论风雨雾霁，坚毅是他高贵的品格；学校，是宁静的港…
+		  
+		  <a href="/about?web=1015" style="color:#FF0000;position:absolute; right:8px; top:155px;">[详细]</a>
+		  
+		  </td>
+        </tr>
+		<tr>
+		  <td colspan="2" height="50" valign="bottom"><a href="/xzxx"><img src="/images/xzmail.jpg" width="272" height="44" border="0" /></a></td>
+		</tr>
+      </table>
+    </td>
+  </tr>
+  <tr><td colspan="5" height="10"></td></tr>
+</table>
+<table width="1060" border="0" cellspacing="0" cellpadding="0" align="center" style="background:url(/images/newstopbg2.jpg) left top no-repeat">
+  <tr>
+    <td width="114" height="23" valign="top" align="center" style="font-size:14px; font-weight:bold; padding-top:9px;"><a href="/about?web=989" style="color:#fff;">学校荣誉<!--学校荣誉--></a></td>
+	<td width="934" align="right" valign="top" style="padding:9px 12px 0px 0px;"><a href="/about?web=989">更多&gt;&gt;</a></td>
+  </tr>
+  <tr>
+    <td colspan="2" height="170" valign="top" style="border:1px solid #DBDBDB; border-top:0px; padding:12px 14px 0px 14px;">
+    <!--- 滚动开始----->
+      <div id=de style="float:left;overflow:hidden;width:1030px;">
+      <TABLE cellSpacing=0 cellPadding=0 align=left border=0 cellspace="0">
+        <TR>
+          <TD id=de1 vAlign=top>
+		    <table border="0" cellpadding="0" cellspacing="0">
+			  <tr>	
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3769.html" title="2016年度教育宣传先进集体" target="_blank"><img src="/uploadfiles/20170226181302.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3769.html" target="_blank" title="2016年度教育宣传先进集体" style="color:;">2016年度教育宣传先进集</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3756.html" title="2014-2016年合肥市中小学德育先进集体" target="_blank"><img src="/uploadfiles/20170107095707.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3756.html" target="_blank" title="2014-2016年合肥市中小学德育先进集体" style="color:;">2014-2016年合肥市</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3755.html" title="2016经开区篮球赛初中组三等奖" target="_blank"><img src="/uploadfiles/20170107095456.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3755.html" target="_blank" title="2016经开区篮球赛初中组三等奖" style="color:;">2016经开区篮球赛初中组</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3754.html" title="合肥市第六届“广玉兰杯”经典诵读初中组三等奖" target="_blank"><img src="/uploadfiles/20170107095214.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3754.html" target="_blank" title="合肥市第六届“广玉兰杯”经典诵读初中组三等奖" style="color:;">合肥市第六届“广玉兰杯”经</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3721.html" title="经开区第七届校园文化艺术节朗诵项目一等奖" target="_blank"><img src="/uploadfiles/20160905154701.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3721.html" target="_blank" title="经开区第七届校园文化艺术节朗诵项目一等奖" style="color:;">经开区第七届校园文化艺术节</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3720.html" title="经开区第七届校园文化艺术节合唱项目三等奖" target="_blank"><img src="/uploadfiles/20160905154518.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3720.html" target="_blank" title="经开区第七届校园文化艺术节合唱项目三等奖" style="color:;">经开区第七届校园文化艺术节</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3716.html" title="经开区第二届中小学生社团评选二等奖" target="_blank"><img src="/uploadfiles/20160905151551.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3716.html" target="_blank" title="经开区第二届中小学生社团评选二等奖" style="color:;">经开区第二届中小学生社团评</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3549.html" title="首届全国青少年法治知识网络大赛优秀组织奖" target="_blank"><img src="/uploadfiles/20160314114122.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3549.html" target="_blank" title="首届全国青少年法治知识网络大赛优秀组织奖" style="color:;">首届全国青少年法治知识网络</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3532.html" title="经开区2015年度教育宣传集体" target="_blank"><img src="/uploadfiles/20160306145434.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3532.html" target="_blank" title="经开区2015年度教育宣传集体" style="color:;">经开区2015年度教育宣传</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3502.html" title="经开区第四届中小学生运动会篮球接力初中组第二名" target="_blank"><img src="/uploadfiles/20151205144502.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3502.html" target="_blank" title="经开区第四届中小学生运动会篮球接力初中组第二名" style="color:;">经开区第四届中小学生运动会</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3501.html" title="经开区第二届体育艺术2+1项目成果展示比赛团体二等奖" target="_blank"><img src="/uploadfiles/20151205143906.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3501.html" target="_blank" title="经开区第二届体育艺术2+1项目成果展示比赛团体二等奖" style="color:;">经开区第二届体育艺术2+1</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3500.html" title="合肥市2014年爱国主义电影进校园等活动优秀组织奖" target="_blank"><img src="/uploadfiles/20151205143648.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3500.html" target="_blank" title="合肥市2014年爱国主义电影进校园等活动优秀组织奖" style="color:;">合肥市2014年爱国主义电</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3441.html" title="经开区第四届运动会团体总分第五名" target="_blank"><img src="/uploadfiles/20151021144919.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3441.html" target="_blank" title="经开区第四届运动会团体总分第五名" style="color:;">经开区第四届运动会团体总分</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3440.html" title="经开区体育道德风尚奖" target="_blank"><img src="/uploadfiles/20151021144827.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3440.html" target="_blank" title="经开区体育道德风尚奖" style="color:;">经开区体育道德风尚奖</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3423.html" title="语文规范化大赛组织奖" target="_blank"><img src="/uploadfiles/20151019072527.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3423.html" target="_blank" title="语文规范化大赛组织奖" style="color:;">语文规范化大赛组织奖</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3422.html" title="肥西县文明单位" target="_blank"><img src="/uploadfiles/20151019072430.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3422.html" target="_blank" title="肥西县文明单位" style="color:;">肥西县文明单位</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3421.html" title="“文达杯”初中女子团体总分第二名" target="_blank"><img src="/uploadfiles/20151019072254.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3421.html" target="_blank" title="“文达杯”初中女子团体总分第二名" style="color:;">“文达杯”初中女子团体总分</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3420.html" title="合肥市招生考试先进集体" target="_blank"><img src="/uploadfiles/20151019072143.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3420.html" target="_blank" title="合肥市招生考试先进集体" style="color:;">合肥市招生考试先进集体</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3419.html" title="合肥市平安校园" target="_blank"><img src="/uploadfiles/20151019071815.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3419.html" target="_blank" title="合肥市平安校园" style="color:;">合肥市平安校园</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+	
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:4px;"><a href="/show/?3418.html" title="合肥市绿色学校" target="_blank"><img src="/uploadfiles/20151019071638.jpg" width="185" height="125" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom"><a href="/show/?3418.html" target="_blank" title="合肥市绿色学校" style="color:;">合肥市绿色学校</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+
+              </tr>			
+            </table>
+		  </TD>
+          <TD id=de2 vAlign=top>&nbsp;</TD>
+		</TR>
+	  </TABLE>
+	  </div>
+<script language=JavaScript> 
+var speed5=40//速度数值越大速度越慢
+de2.innerHTML=de1.innerHTML
+ 
+function Marquee5(){
+if(de2.offsetWidth-de.scrollLeft<=0)
+de.scrollLeft-=de1.offsetWidth
+else{
+de.scrollLeft++
+}
+}
+var MyMar5=setInterval(Marquee5,speed5)
+de.onmouseover=function() {clearInterval(MyMar5)}
+de.onmouseout=function() {MyMar5=setInterval(Marquee5,speed5)}
+</script>
+<!--- 滚动结束----->
+    </td>
+  </tr>
+  <tr><td colspan="3" height="10"></td></tr>
+</table>
+
+<table width="1060" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td valign="top" width="385">
+	  <table width="385" border="0" cellspacing="0" cellpadding="0" style="background:url(/images/jxglbg.gif) left top no-repeat;">
+	    <tr>
+		  <td width="120" height="21" valign="top" align="center" style="font-size:14px; font-weight:bold; padding-top:9px;"><a href="/jygl?web=1078" style="color:#fff;">文件法规<!--文件法规--></a></td>
+		  <td width="255" align="right" valign="top" style="padding:9px 12px 0px 0px;"><a href="/jygl?web=1078">更多&gt;&gt;</a></td>
+		</tr>
+	    <tr>
+		  <td colspan="2" height="222" valign="top" style="border:1px solid #DBDBDB; border-top:0px; padding:3px 8px 0px 8px;" class="cc2">
+		    <ul>
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2016-03-24</span><a href="/show/?3611.html" target="_blank" title="关于进一步加强中小学实验室危险 化学药品及易制毒化学品管理的通知" style="font-size:12px;">关于进一步加强中小学实验室危险 化学药品及易…</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2015-10-21</span><a href="/show/?3442.html" target="_blank" title="新版《中学生守则》" style="font-size:12px;">新版《中学生守则》</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2015-04-20</span><a href="/show/?3246.html" target="_blank" title="党政机关机关厉行节约反对浪费条例" style="font-size:12px;">党政机关机关厉行节约反对浪费条例</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2015-04-19</span><a href="/show/?3211.html" target="_blank" title="教育部关于进一步加强和改进师德建设的意见" style="font-size:12px;">教育部关于进一步加强和改进师德建设的意见</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2015-04-19</span><a href="/show/?3210.html" target="_blank" title="中华人民共和国教师法" style="font-size:12px;">中华人民共和国教师法</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2015-04-19</span><a href="/show/?3209.html" target="_blank" title="中华人民共和国预防未成年人犯罪保护法" style="font-size:12px;">中华人民共和国预防未成年人犯罪保护法</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2015-04-19</span><a href="/show/?3208.html" target="_blank" title="中华人民共和国未成年人保护法" style="font-size:12px;">中华人民共和国未成年人保护法</a></li>
+
+
+		    </ul>
+		  </td>
+	    </tr>
+	  </table>
+	</td>
+	<td width="10"></td>
+	<td valign="top" width="385">
+	  <table width="385" border="0" cellspacing="0" cellpadding="0" style="background:url(/images/jxglbg.gif) left top no-repeat;">
+	    <tr>
+		  <td width="120" height="21" valign="top" align="center" style="font-size:14px; font-weight:bold; padding-top:9px;"><a href="/jxjy?web=1102" style="color:#fff;">特色之路<!--特色之路--></a></td>
+		  <td width="255" align="right" valign="top" style="padding:9px 12px 0px 0px;"><a href="/jxjy?web=1102">更多&gt;&gt;</a></td>
+		</tr>
+	    <tr>
+		  <td colspan="2" height="222" valign="top" style="border:1px solid #DBDBDB; border-top:0px; padding:3px 8px 0px 8px;" class="cc2">
+		    <ul>
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2016-09-05</span><a href="/show/?3726.html" target="_blank" title="李君怡：经开区2016年度美德少年" style="font-size:12px;">李君怡：经开区2016年度美德少年</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2016-09-05</span><a href="/show/?3725.html" target="_blank" title="苏庆梅：社会主义核心价值观主题电影观后征文一等奖" style="font-size:12px;">苏庆梅：社会主义核心价值观主题电影观后征文一…</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2016-09-05</span><a href="/show/?3724.html" target="_blank" title="马欣怡：经开区2016年度优秀学生干部" style="font-size:12px;">马欣怡：经开区2016年度优秀学生干部</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2016-09-05</span><a href="/show/?3723.html" target="_blank" title="吕莹莹：经开区2016年度爱国主义读书活动二等奖" style="font-size:12px;">吕莹莹：经开区2016年度爱国主义读书活动二…</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2016-09-05</span><a href="/show/?3722.html" target="_blank" title="徐恒：经开区2016年度“三好学生”" style="font-size:12px;">徐恒：经开区2016年度“三好学生”</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2016-03-20</span><a href="/show/?3563.html" target="_blank" title="周礼硕－入选“普法人才成长营”" style="font-size:12px;">周礼硕－入选“普法人才成长营”</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2016-03-20</span><a href="/show/?3562.html" target="_blank" title="周家骑－入选“普法人才成长营”" style="font-size:12px;">周家骑－入选“普法人才成长营”</a></li>
+
+
+		    </ul>
+		  </td>
+	    </tr>
+	  </table>
+	</td>
+	<td width="10"></td>
+	<td width="272" valign="top">
+      <table width="272" border="0" cellspacing="0" cellpadding="0" style="background:url(/images/newstopbg.jpg) left top no-repeat">
+        <tr>
+          <td height="22" width="190" align="left" valign="top" style=" font-size:14px; font-weight:bold; padding:7px 0px 0px 15px;"><a href="/ksdh" style="color:#ffffff;">快速导航</a></td>
+          <td width="48" align="left" valign="top" style="padding:8px 0px 0px 0px;"><a href="/ksdh" style="color:#ffffff;">更多&gt;&gt;</a></td>
+        </tr>
+        <tr>
+          <td colspan="2" height="220" valign="top" style="border:1px solid #DBDBDB; border-top:0px; padding:8px 0px 0px 10px;" class="ksdh">
+		    <ul>
+
+		
+	<li><A href="/zyzx?web=976"><IMG border=0 src="/uploadfiles/20150119173332971.jpg"></A></li>
+
+
+		
+	<li><A href="/message"><IMG border=0 src="/uploadfiles/20150119173242950.jpg"></A></li>
+
+
+		
+	<li><A href="/contact"><IMG border=0 src="/uploadfiles/20150119173157756.jpg"></A></li>
+
+
+		
+	<li><A href="/qsjzx/login" target=_blank><IMG border=0 src="/uploadfiles/20150119173114648.jpg"></A></li>
+
+
+			</ul>
+		  </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr><td colspan="5" height="10"></td></tr>
+</table>
+<table width="1060" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td valign="top" width="385">
+	  <table width="385" border="0" cellspacing="0" cellpadding="0" style="background:url(/images/jxglbg.gif) left top no-repeat;">
+	    <tr>
+		  <td width="120" height="21" valign="top" align="center" style="font-size:14px; font-weight:bold; padding-top:9px;"><a href="/jsfz" style="color:#fff;">教师发展<!--教师发展--></a></td>
+		  <td width="255" align="right" valign="top" style="padding:9px 12px 0px 0px;"><a href="/jsfz">更多&gt;&gt;</a></td>
+		</tr>
+	    <tr>
+		  <td colspan="2" height="222" valign="top" style="border:1px solid #DBDBDB; border-top:0px; padding:3px 8px 0px 8px;" class="cc2">
+		    <ul>
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-06-19</span><a href="/show/?3850.html" target="_blank" title="合经区刘亮荣初中化学名师工作室的博客" style="font-size:12px;">合经区刘亮荣初中化学名师工作室的博客</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-03-03</span><a href="/show/?3795.html" target="_blank" title="孔维红-安徽省优课" style="font-size:12px;">孔维红-安徽省优课</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-03-03</span><a href="/show/?3794.html" target="_blank" title="夏帮付-安徽省优课" style="font-size:12px;">夏帮付-安徽省优课</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-03-03</span><a href="/show/?3793.html" target="_blank" title="王强-安徽省优课" style="font-size:12px;">王强-安徽省优课</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-03-03</span><a href="/show/?3792.html" target="_blank" title="陈自明-合肥市优课" style="font-size:12px;">陈自明-合肥市优课</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-03-03</span><a href="/show/?3791.html" target="_blank" title="张圣祥-合肥市优课" style="font-size:12px;">张圣祥-合肥市优课</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-03-03</span><a href="/show/?3790.html" target="_blank" title="张强-合肥市优课" style="font-size:12px;">张强-合肥市优课</a></li>
+
+
+		    </ul>
+		  </td>
+	    </tr>
+	  </table>
+	</td>
+	<td width="10"></td>
+	<td valign="top" width="385">
+	  <table width="385" border="0" cellspacing="0" cellpadding="0" style="background:url(/images/jxglbg.gif) left top no-repeat;">
+	    <tr>
+		  <td width="120" height="21" valign="top" align="center" style="font-size:14px; font-weight:bold; padding-top:9px;"><a href="/xsly" style="color:#fff;">学生乐园<!--学生乐园--></a></td>
+		  <td width="255" align="right" valign="top" style="padding:9px 12px 0px 0px;"><a href="/xsly">更多&gt;&gt;</a></td>
+		</tr>
+	    <tr>
+		  <td colspan="2" height="222" valign="top" style="border:1px solid #DBDBDB; border-top:0px; padding:3px 8px 0px 8px;" class="cc2">
+		    <ul>
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-06-07</span><a href="/show/?3844.html" target="_blank" title="鼓起勇气面向未来" style="font-size:12px;">鼓起勇气面向未来</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-06-07</span><a href="/show/?3843.html" target="_blank" title="《阳光校园，我们是好伙伴》读后感" style="font-size:12px;">《阳光校园，我们是好伙伴》读后感</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-06-07</span><a href="/show/?3842.html" target="_blank" title="阳光校园我们是好伙伴" style="font-size:12px;">阳光校园我们是好伙伴</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-06-07</span><a href="/show/?3841.html" target="_blank" title="阳光校园——我们是好伙伴" style="font-size:12px;">阳光校园——我们是好伙伴</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-06-07</span><a href="/show/?3840.html" target="_blank" title="阳光校园我们是好伙伴" style="font-size:12px;">阳光校园我们是好伙伴</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-06-07</span><a href="/show/?3839.html" target="_blank" title="《阳光校园，我们是好伙伴》读后感" style="font-size:12px;">《阳光校园，我们是好伙伴》读后感</a></li>
+
+
+		
+	<li style="border-bottom:1px dashed #eaeaea;"><span>2017-06-07</span><a href="/show/?3838.html" target="_blank" title="阳光校园我们是好伙伴" style="font-size:12px;">阳光校园我们是好伙伴</a></li>
+
+
+		    </ul>
+		  </td>
+	    </tr>
+	  </table>
+	</td>
+	<td width="12"></td>
+	<td width="272" valign="top">
+      <table width="272" border="0" cellspacing="0" cellpadding="0" style="background:url(/images/newstopbg.jpg) left top no-repeat">
+        <tr>
+          <td height="22" width="190" align="left" valign="top" style=" font-size:14px; font-weight:bold; padding:7px 0px 0px 15px;"><a href="/xxph" style="color:#ffffff;">信息排行</a></td>
+          <td width="48" align="left" valign="top" style="padding:8px 0px 0px 0px;"><a href="/xxph" style="color:#ffffff;">更多&gt;&gt;</a></td>
+        </tr>
+        <tr>
+          <td colspan="2" height="222" valign="top" style="border:1px solid #DBDBDB; border-top:0px; padding:7px 5px 0px 8px;" class="xxph">
+		  
+
+
+
+		    <ul>
+
+
+		
+	<li><span><a href="/bmnews?cxbmmc=%B0%EC%B9%AB%CA%D2" target="_blank">338</a></span><img src="/images/n1.jpg" width="15" height="11" style="vertical-align:middle; padding-right:5px;" /><a href="/bmnews?cxbmmc=%B0%EC%B9%AB%CA%D2" target="_blank" title="办公室">办公室</a></li>
+
+
+		
+	<li><span><a href="/bmnews?cxbmmc=%CD%C5%CE%AF" target="_blank">54</a></span><img src="/images/n2.jpg" width="15" height="11" style="vertical-align:middle; padding-right:5px;" /><a href="/bmnews?cxbmmc=%CD%C5%CE%AF" target="_blank" title="团委">团委</a></li>
+
+
+		
+	<li><span><a href="/bmnews?cxbmmc=%BD%CC%D1%D0%B4%A6" target="_blank">11</a></span><img src="/images/n3.jpg" width="15" height="11" style="vertical-align:middle; padding-right:5px;" /><a href="/bmnews?cxbmmc=%BD%CC%D1%D0%B4%A6" target="_blank" title="教研处">教研处</a></li>
+
+
+		
+	<li><span><a href="/bmnews?cxbmmc=%BD%CC%B5%BC%B4%A6" target="_blank">0</a></span><img src="/images/n4.jpg" width="15" height="11" style="vertical-align:middle; padding-right:5px;" /><a href="/bmnews?cxbmmc=%BD%CC%B5%BC%B4%A6" target="_blank" title="教导处">教导处</a></li>
+
+
+		
+	<li><span><a href="/bmnews?cxbmmc=%D7%DC%CE%F1%B4%A6" target="_blank">0</a></span><img src="/images/n5.jpg" width="15" height="11" style="vertical-align:middle; padding-right:5px;" /><a href="/bmnews?cxbmmc=%D7%DC%CE%F1%B4%A6" target="_blank" title="总务处">总务处</a></li>
+
+
+		
+	<li><span><a href="/bmnews?cxbmmc=%B5%B3%D6%A7%B2%BF" target="_blank">0</a></span><img src="/images/n6.jpg" width="15" height="11" style="vertical-align:middle; padding-right:5px;" /><a href="/bmnews?cxbmmc=%B5%B3%D6%A7%B2%BF" target="_blank" title="党支部">党支部</a></li>
+
+
+		
+	<li><span><a href="/bmnews?cxbmmc=%B9%A4%BB%E1" target="_blank">0</a></span><img src="/images/n7.jpg" width="15" height="11" style="vertical-align:middle; padding-right:5px;" /><a href="/bmnews?cxbmmc=%B9%A4%BB%E1" target="_blank" title="工会">工会</a></li>
+
+
+
+			</ul>
+			
+		  </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr><td colspan="5" height="7"></td></tr>
+</table>
+
+<table width="1060" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="58" height="193" valign="top"><a href="/about?web=1073"><img src="/images/xyfc.jpg" width="58" height="193" border="0"/></a></td>
+	<td width="966" valign="top" style="background:url(/images/xyfcbg.jpg) left top repeat-x; padding-top:20px;">
+    <!--- 滚动开始----->
+      <div id=dea style="float:left;overflow:hidden;width:987px;">
+      <TABLE cellSpacing=0 cellPadding=0 align=left border=0 cellspace="0">
+        <TR>
+          <TD id=de1a vAlign=top>
+		    <table border="0" cellpadding="0" cellspacing="0">
+			  <tr>	
+
+
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:3px;"><a href="/show/?3507.html" title="第二届美德少年颁奖" target="_blank"><img src="/uploadfiles/20151207141206.jpg" width="178" height="130" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr><td height="5px;"></td></tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom" style="background:#ececec; line-height:23px;"><a href="/show/?3507.html" target="_blank" title="第二届美德少年颁奖" style="color:;">第二届美德少年颁奖</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:3px;"><a href="/show/?3506.html" title="第20届校运会剪影二" target="_blank"><img src="/uploadfiles/20151207140952.jpg" width="178" height="130" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr><td height="5px;"></td></tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom" style="background:#ececec; line-height:23px;"><a href="/show/?3506.html" target="_blank" title="第20届校运会剪影二" style="color:;">第20届校运会剪影二</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:3px;"><a href="/show/?3505.html" title="第20届校运会剪影一" target="_blank"><img src="/uploadfiles/20151207140842.jpg" width="178" height="130" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr><td height="5px;"></td></tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom" style="background:#ececec; line-height:23px;"><a href="/show/?3505.html" target="_blank" title="第20届校运会剪影一" style="color:;">第20届校运会剪影一</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:3px;"><a href="/show/?3434.html" title="学生参加经开区团体操比赛" target="_blank"><img src="/uploadfiles/20151019090242.jpg" width="178" height="130" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr><td height="5px;"></td></tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom" style="background:#ececec; line-height:23px;"><a href="/show/?3434.html" target="_blank" title="学生参加经开区团体操比赛" style="color:;">学生参加经开区团体操比赛</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:3px;"><a href="/show/?3430.html" title="徐世奎校长在开学典礼上讲话" target="_blank"><img src="/uploadfiles/20151019084254.jpg" width="178" height="130" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr><td height="5px;"></td></tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom" style="background:#ececec; line-height:23px;"><a href="/show/?3430.html" target="_blank" title="徐世奎校长在开学典礼上讲话" style="color:;">徐世奎校长在开学典礼上讲话</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:3px;"><a href="/show/?3429.html" title="文明寝室授旗" target="_blank"><img src="/uploadfiles/20151019083633.jpg" width="178" height="130" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr><td height="5px;"></td></tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom" style="background:#ececec; line-height:23px;"><a href="/show/?3429.html" target="_blank" title="文明寝室授旗" style="color:;">文明寝室授旗</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:3px;"><a href="/show/?3428.html" title="学生现场学习书法" target="_blank"><img src="/uploadfiles/20151019083128.jpg" width="178" height="130" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr><td height="5px;"></td></tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom" style="background:#ececec; line-height:23px;"><a href="/show/?3428.html" target="_blank" title="学生现场学习书法" style="color:;">学生现场学习书法</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:3px;"><a href="/show/?3427.html" title="学生为退休教师演出" target="_blank"><img src="/uploadfiles/20151019083009.jpg" width="178" height="130" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr><td height="5px;"></td></tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom" style="background:#ececec; line-height:23px;"><a href="/show/?3427.html" target="_blank" title="学生为退休教师演出" style="color:;">学生为退休教师演出</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:3px;"><a href="/show/?3426.html" title="检查食堂" target="_blank"><img src="/uploadfiles/20151019082757.jpg" width="178" height="130" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr><td height="5px;"></td></tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom" style="background:#ececec; line-height:23px;"><a href="/show/?3426.html" target="_blank" title="检查食堂" style="color:;">检查食堂</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:3px;"><a href="/show/?3425.html" title="留守儿童在活动" target="_blank"><img src="/uploadfiles/20151019082642.jpg" width="178" height="130" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr><td height="5px;"></td></tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom" style="background:#ececec; line-height:23px;"><a href="/show/?3425.html" target="_blank" title="留守儿童在活动" style="color:;">留守儿童在活动</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+                <td>
+                  <div style="padding-left:14px;">
+                  <table cellpadding="0" cellspacing="0" border="0" align="center">
+                    <tr>
+                      <td align="center" valign="middle" style="border:1px solid #DBDBDB; padding:3px;"><a href="/show/?3424.html" title="学生实验" target="_blank"><img src="/uploadfiles/20151019082346.jpg" width="178" height="130" onerror="this.src='/images/no.jpg'"/></a></td>
+                    </tr>
+                    <tr><td height="5px;"></td></tr>
+                    <tr>
+					  <td height="23" align="center" valign="bottom" style="background:#ececec; line-height:23px;"><a href="/show/?3424.html" target="_blank" title="学生实验" style="color:;">学生实验</a></td>
+					</tr>
+                  </table>
+                  </div>
+                </td>
+
+
+
+              </tr>			
+            </table>
+		  </TD>
+          <TD id=de2a vAlign=top>&nbsp;</TD>
+		</TR>
+	  </TABLE>
+	  </div>
+<script language=JavaScript> 
+var speed5a=40//速度数值越大速度越慢
+de2a.innerHTML=de1a.innerHTML
+ 
+function Marquee5a(){
+if(de2a.offsetWidth-dea.scrollLeft<=0)
+dea.scrollLeft-=de1a.offsetWidth
+else{
+dea.scrollLeft++
+}
+}
+var MyMar5a=setInterval(Marquee5a,speed5a)
+dea.onmouseover=function() {clearInterval(MyMar5a)}
+dea.onmouseout=function() {MyMar5a=setInterval(Marquee5a,speed5a)}
+</script>
+<!--- 滚动结束----->	  
+	</td>
+	<td width="15" align="right" valign="top"><img src="/images/xyfcright.jpg" width="15" height="193" /></td>
+  </tr>
+  <tr><td colspan="3" height="12" style="position:relative;">
+  <div style="position:absolute;width:150px;height:90px;right:30px;top:100px; text-align:center;">
+  <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/13/197/0000/40654550/CA131970000406545500000.js' type='text/javascript'%3E%3C/script%3E"));</script>
+  </div>
+  </td></tr>
+</table>
+
+<table width="1060" height="60" border="0" cellspacing="0" cellpadding="0" align="center" style="border:1px solid #DBDBDB; background:url(/images/linksbg.jpg) left top repeat-x;">
+  <tr>
+	<td width="30"></td>
+	<td align="center" valign="middle">
+    <select onChange="if(this.value!='')window.open(this.options[this.selectedIndex].value,'_blank')">
+	  <option value="">&nbsp;&nbsp;&nbsp;== 政府类网站 ==&nbsp;&nbsp;&nbsp;</option>
+	
+      <option value="http://www.hetda.com/">合肥经济技术开发区</option>
+
+	
+      <option value="http://www.hefei.gov.cn">政府服务直通车</option>
+
+	
+	</select>
+	</td>
+	<td align="center" valign="middle">
+	  <select onChange="if(this.value!='')window.open(this.options[this.selectedIndex].value,'_blank')">
+	  <option value="">&nbsp;&nbsp;&nbsp;== 教育类网站 ==&nbsp;&nbsp;&nbsp;</option>
+	
+      <option value="http://www.fxjyw.net/">肥西教育网</option>
+
+	
+      <option value="http://www.cbe21.com/">中国基础教育网</option>
+
+	
+      <option value="http://www.51jyzy.com/">教育资源网</option>
+
+	
+      <option value="http://www.ahedu.gov.cn/">安徽教育网</option>
+
+	
+      <option value="http://www.ahedu.cn/">安徽基础教育资源网</option>
+
+	
+      <option value="http://www.ttshopping.net/">免费教育资源网</option>
+
+	
+      <option value="http://www.cbern.gov.cn/">国家基础教育资源网</option>
+
+	
+      <option value="http://www.kejianhome.com/">教师课件之家</option>
+
+	
+      <option value="http://www.hfjy.net.cn">合肥教育网</option>
+
+	
+	</select>
+	</td>
+	<td align="center" valign="middle">
+	  <select onChange="if(this.value!='')window.open(this.options[this.selectedIndex].value,'_blank')">
+	  <option value="">&nbsp;&nbsp;&nbsp;== 学校类网站 ==&nbsp;&nbsp;&nbsp;</option>
+	
+      <option value="http://www.59zhong.com/">合肥市第五十九中学</option>
+
+	
+      <option value="http://www.68zhong.com/">合肥市第六十八中学</option>
+
+	
+      <option value="http://www.hf168mgy.com/">合肥一六八玫瑰园学校</option>
+
+	
+      <option value="http://www.hffrxx.com/">合肥市芙蓉小学</option>
+
+	
+      <option value="http://www.hflhxx.com/">合肥市莲花小学</option>
+
+	
+      <option value="http://www.hfxyxx.com/">合肥市习友小学</option>
+
+	
+      <option value="http://www.hfnyxx.com/">合肥市南艳小学</option>
+
+	
+      <option value="http://www.hfslinhuxx.cn/">合肥市临湖小学</option>
+
+	
+      <option value="http://www.hffxxx.com/">合肥市方兴小学</option>
+
+	
+	</select>
+	</td>
+	<td align="center" valign="middle">
+	  <select onChange="if(this.value!='')window.open(this.options[this.selectedIndex].value,'_blank')">
+	  <option value="">&nbsp;&nbsp;&nbsp;== 常用网站 ==&nbsp;&nbsp;&nbsp;</option>
+	
+      <option value="http://www.hetda.com/shfzj/">合肥经济技术开发区社会发展局</option>
+
+	
+      <option value="http://www.baidu.com">百度搜索</option>
+
+	
+      <option value="http://www.hfbus.cn">合肥公交集团</option>
+
+	
+      <option value="http://www.ahxunshi.com">安徽迅时网络</option>
+
+	
+      <option value="http://www.ahxjnet.cn">安徽迅捷网络</option>
+
+	
+      <option value="http://www.ahyajing.com">安徽雅景传媒</option>
+
+	
+	</select>
+	</td>
+	<td width="30"></td>
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="background:url(/images/bottombg.jpg) left 12px repeat-x; min-width:1060px;">
+  <tr><td height="12"></td></tr>
+  <tr><td height="108" align="center" style=" font-family:Verdana; line-height:2.4; color:#FFFFFF;"><script type="text/javascript" src="/counter/counter.asp"></script><br />版权所有：安徽省合肥市第七十九中学 &#169; All Rights Reserved　E-mail：hefeiqsjzx@126.com<br />地址：安徽省合肥经济技术开发区高刘镇河滨路2号　电话：0551-68661565　备案号：皖ICP备15001208号　技术支持：<a href="http://www.ahxunshi.com" target="_blank" style="color:#FFFFFF;">安徽迅时网络</a></td></tr>
+</table>
+</body>
+</html>

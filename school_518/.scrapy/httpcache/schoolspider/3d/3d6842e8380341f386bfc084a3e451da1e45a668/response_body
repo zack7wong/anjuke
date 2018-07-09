@@ -1,0 +1,825 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>阳江职业技术学院欢迎您</title>
+<meta content="阳江,大学,职业教育,高等教育,高校" name="keywords" />
+<meta content="阳江职业技术学院是经广东省人民政府批准设立，国家教育部备案，阳江市人民政府举办的综合性普通高等学校。学院以“崇德远志，精艺博才”为校训，按照“立足地方，以区域发展需要的专业为主体；培养可持续发展的高技能实操型人才；建设为区域发展做出重要贡献的高等职业院校”的办学定位，办优师范、办强工科，突出优势，凝聚特色，注重实践能力的培养和人文素质的教育。培养人民满意、社会需要、具有持续竞争力的应用型职业技能人才。" name="description" />
+<link media="screen" type="text/css" href="/templates/YjcollegeIndex2015/css/style.css" rel="stylesheet">
+<script type="text/javascript" src="/templates/YjcollegeIndex2015/js/jquery-1.js"></script>
+<script type="text/javascript" src="/templates/YjcollegeIndex2015/js/jquery.js"></script>
+<script src="/Scripts/base.js" type="text/javascript"></script>
+
+
+<script type="text/javascript" src="/templates/YjcollegeIndex2015/js/jquery.cycle.all.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 			   
+	$('#slideshow').cycle({
+        fx:     'fade',
+        speed:  'slow',
+        timeout: 5000,
+        pager:  '#slider_nav',
+        pagerAnchorBuilder: function(idx, slide) {
+        return '#slider_nav li:eq(' + (idx) + ') a';
+        }
+    });
+});	
+</script>
+
+<style type="text/css">
+#slider { width:1200px; height:235px;  margin:0 auto;}
+div#slideshow { float:left; width:100%; height:235px; overflow:hidden; }
+.slider-item { width:100% !important; height:235px; }
+</style>
+</head>
+
+<body>
+<div class="top_line_box">
+    <ul>
+        <li>欢迎报读阳江职业技院——学院代码：12771</li>
+    </ul>
+</div>
+<!--页头开始-->
+<div class="header">
+<!--页头LOGO开始-->
+	<div class="box1">
+        <div class="logo">
+            <ul>
+                <li><img src="/templates/YjcollegeIndex2015/images/logo.png" width="368" height="88" alt="阳江职业技术学院欢迎您！">
+                </li>
+
+            </ul>
+
+        </div>
+        <!--页头LOGO结束-->
+        <!--页头右边-->
+        <div class="right">
+<div class="ls">
+
+<a href="/ppzyjs2/index.html" title="第二批广东省高等职业教育品牌专业申报 " target='_blank' ><img src="/templates/YjcollegeIndex2015/images/ppzy2.jpg" alt='第二批广东省高等职业教育品牌专业申报 ' width="100"  border="0" /></a>
+                        <a href="/ggsxzx/index.html" title="2017省高职教育公共实训中心项目申报" target='_blank' ><img src="/templates/YjcollegeIndex2015/images/SXZXSB.jpg" alt='2017省高职教育公共实训中心项目申报' width="100"  border="0" /></a> 
+</div>
+        <!--页头右边图标开始-->
+            <!--二维码开始-->
+             <script type="text/javascript">
+                 function erweimove() {
+                     var hoverImg;
+                     hoverImg = document.getElementById("hoverImg");
+                     hoverImg.style.display = '';
+                 }
+             </script>
+          
+                 
+              <!--二维码结束-->
+            <ul class="icons">
+                <li><a href="/index.html" title="主页"><img src="/templates/YjcollegeIndex2015/images/icon1.png" width="30" height="26" alt="主页"/></a></li>
+                <li><a href="#" title="收藏" onClick="window.external.AddFavorite('http://www.cnyjpt.cn','阳江职业技术学院')"><img src="/templates/YjcollegeIndex2015/images/icon2.png" width="30" height="26" alt="收藏"/></a></li>
+                <li><img src="/templates/YjcollegeIndex2015/images/icon3.png" width="28" height="25" alt="Rss订阅"/></li>
+                <li><img src="/templates/YjcollegeIndex2015/images/icon5.png" width="30" height="26" alt="微信平台" onmousemove="erweimove()" onmouseout="javascript:document.getElementById('hoverImg').style.display='none';"/></li>
+            </ul>
+            <ul class="ewbox" id="hoverImg" style="display: none" >
+                <li><img src="/templates/YjcollegeIndex2015/images/xygz.jpg" width="96" height="96"/>公众平台</li>
+                <li><img src="/templates/YjcollegeIndex2015/images/xyw.png" width="96" height="96" />阳职官网</li>
+                <li> <img src="/templates/YjcollegeIndex2015/images/zsb.png" width="96" height="96"/>阳职招生</li>
+           	</ul>             <!--页头右边图标结束-->
+            <!--页头右边搜索开始-->
+            <ul class="search">
+                <li>
+                     <input id="keywords" name="keywords" type="text" x-webkit-speech="" autofocus="" placeholder="输入回车搜索" onkeydown="if(event.keyCode==13){SiteSearchCategory('/search.html','#keywords','Index');return false};" />
+                 </li>
+             </ul>
+             <!--页头右边搜索结束-->
+         </div>
+     <!--页头右边结束-->
+  </div>
+</div>
+     <!--导航开始-->
+<div class="nav">
+        <ul>
+            <li><a href="/index.html">首页</a><span></span></li>
+            <li><a href="/content/jigoushezhi.html">机构设置</a><span></span></li>
+            <li><a href="/content/xibuzhuanye.html">系部专业</a><span></span>
+                   <ul>
+                          <li><a href="/zwx/index.html" target="_blank">中文系</a></li>
+                          <li><a href="/wyx/index.html" target="_blank">外语系</a></li>
+                          <li><a href="/sxx/index.html" target="_blank">数学系</a></li>
+                          <li><a href="/jdx/index.html" target="_blank">机电系</a></li>
+                           <li><a href="/ydzx/index.html" target="_blank">机电系（粤德培训中心）</a> </li>
+                          <li><a href="/cjx/index.html" target="_blank">财经系</a></li>
+                          <li><a href="/xxgcx/index.html" target="_blank">信息工程系 </a></li>
+                          <li><a href="/skx/index.html" target="_blank">食品与环境工程系 </a></li>
+                          <li><a href="/ysx/index.html" target="_blank">艺术与设计系 </a></li>
+                          <li><a href="/lyglx/index.html" target="_blank">旅游管理系 </a></li>
+                          <li><a href="/tyx/index.html" target="_blank">体育系 </a></li>
+                          <li><a href="/szb/index.html" target="_blank">思想政治理论课教学部 </a></li>
+                          <li><a href="/jxjyb/index.html" target="_blank">继续教育部</a></li>
+                          
+                  </ul>
+            </li>
+            <li><a>招生就业</a><span></span>
+                   <ul>
+                          <li><a href="http://www.cnyjpt.cn:8080/lqcx/" target="_blank">录取信息查询</a></li>
+                          <li><a href="/jyzd/index.html" target="_blank">就业信息网</a></li>
+                          <li><a href="/zsb/index.html" target="_blank">招生信息网</a></li>
+                  </ul>
+            </li>
+            <li><a href='http://221.5.51.230/' target="_blank">图书馆</a><span></span></li>
+            <li><a>网络服务</a><span></span>
+                   <ul>
+                          <li><a href="/wlzx/index.html" target="_blank">网络与教育技术中心</a></li>
+                          <li><a href="https://cas.cnyjpt.cn/lyuapServer/login" target="_blank">校园一卡通</a></li>
+                         <li><a href="/wlzx/new/52.html" target="_blank">网络安全</a></li>
+                          <li><a href="https://cas.cnyjpt.cn/lyuapServer/login" target="_blank">网上办事大厅</a></li>
+                  </ul>
+            </li>
+ <li><a href='/rsc/index.html' target="_blank">人事招聘</a><span></span></li>
+            <li><a>学生社区</a><span></span>
+                   <ul>
+                        
+                  </ul>
+            </li>
+            <li><a href="/jxjyb/index.html" target="_blank">继续教育</a><span></span></li>
+            <li><a href="/xyh/index.html" >校友网</a><span></span></li>
+            <li><a href="https://cas.cnyjpt.cn/lyuapServer/login" target="_blank">网上办事大厅</a><span></span></li>
+            <li><a href="/dwb/new/74.html" target="_blank">阳职院报</a><span></span></li>
+        </ul>
+    </div>
+    
+    <script>
+    $(function(){
+        $('.nav li').hover(function(){
+            $('span',this).stop().css('height','2px');
+            $('span',this).animate({
+                left:'0',
+                width:'100%',
+                right:'0'
+            },200);
+        },function(){
+            $('span',this).stop().animate({
+                left:'50%',
+                width:'0'
+            },200);
+        });
+    });
+    </script>
+    <!--导航结束-->
+<!--页头结束-->
+
+
+
+
+<div class="banner">
+  <div id="slider">
+     <div id="slideshow">
+        <div class="slider-item"><img src="/templates/YjcollegeIndex2015/images/banner_y.jpg" alt="icon" width="1200" height="235" border="0" /></div>
+<div class="slider-item"><img src="/templates/YjcollegeIndex2015/images/banner3.jpg" alt="icon" width="1200" height="235" border="0" /></div>
+     </div>
+  </div>
+</div>
+<p id="p" ></p>
+<!--入口开始-->
+<div id="site_rk" class="warp">
+
+    <div class="tabs">
+        <li><a class="" href="javascript:;">学生入口</a> </li>
+        <li><a href="javascript:;">教师入口</a> </li>
+        <li><a href="javascript:;">内涵建设</a> </li>
+        <li class="last"><a href="javascript:;">走进阳职</a> </li>
+    </div>
+    <!--第一入口开始-->
+    <div style="height: 0px;" flg="0" id="rk_xs" class="panel" h="440">
+
+        <div class="ruk1 rk_col bl">
+           <!--左边框开始-->
+            <div class="sc1">
+            	<ul class="s_bar">
+                	<li> 最新动态</li>
+                </ul>
+               	<ul class="t-content">
+                    
+                        <li><a href="/news/s/15325.html" title="高进副院长到中文系参加教学观摩课活动" target="_blank">高进副院长到中文系参加教学观摩课活动</a></li>
+                    
+                        <li><a href="/news/s/15326.html" title="茂名职业技术学院梁德萍副院长带队到我系参观交流" target="_blank">茂名职业技术学院梁德萍副院长带队到我系参观交流…</a></li>
+                    
+                        <li><a href="/news/s/15293.html" title="热烈祝贺外语系学生叶芬芬参加第六届岭南杯英语写作技能大赛荣获二等奖及金笔奖（专业英语专科组）；蔡文杰等荣获本大赛三等奖" target="_blank">热烈祝贺外语系学生叶芬芬参加第六届岭南杯英语写…</a></li>
+                    
+                        <li><a href="/news/s/15290.html" title="展文秘风采，秀文秘技能" target="_blank">展文秘风采，秀文秘技能</a></li>
+                    
+                        <li><a href="/news/s/15280.html" title="吴教育院长到外语系调研指导工作" target="_blank">吴教育院长到外语系调研指导工作</a></li>
+                    
+               	</ul>
+                
+                <ul class="ew" >
+                    <li><img src="/templates/YjcollegeIndex2015/images/xygz.jpg" width="96" height="96"/>公众平台</li>
+                    <li><img src="/templates/YjcollegeIndex2015/images/xyw.png" width="96" height="96" />阳职官网</li>
+                    <li> <img src="/templates/YjcollegeIndex2015/images/zsb.png" width="96" height="96"/>阳职招生</li>
+           		</ul>
+            </div>
+            <!--左边框结束-->
+            <!--中框开始-->
+            <div class="sc2">
+            	
+                <div class="scL">
+                	<ul class="s_bar">
+                    	<li>学生社团</li>
+                    </ul>
+                    <ul class="content">
+                        
+                    </ul>
+                </div>
+                <div class="scL">
+                	<ul class="s_bar">
+                    	<li>团学之窗</li>
+                    </ul>
+                    <ul class="content">
+                    	<li><a href="/tw/index.html" target="_blank">团委</a></li>
+                    </ul>
+                </div>
+                <div class="scL">
+                	<ul class="s_bar">
+                    	<li>就业创业</li>
+                    </ul>
+                    <ul class="content">
+                    	<li><a href="/jyzd/index.html" target="_blank">就业信息网</a></li>
+                        <li><a href="/zsb/index.html" target="_blank">招生信息网</a></li>
+                    </ul>
+                </div>
+                 <div class="scL">
+                	<ul class="s_bar">
+                    	<li>校园生活</li>
+                    </ul>
+                    <ul class="content">
+                    	<li><a href="javascript:;">心理健康教育与咨询中心</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--中框结束-->
+            <!--右边框开始-->
+            <div class="sc3">
+            	 <div class="scL">
+                	<ul class="s_bar">
+                    	<li>学习平台</li>
+                    </ul>
+                    <ul class="content">
+                        <li><a href="http://10.20.18.14" target="_blank">计算机自主学习平台</a></li>
+                    </ul>
+                </div>
+                 <div class="scL">
+                	<ul class="s_bar">
+                    	<li>信息服务</li>
+                    </ul>
+                    <ul class="content">
+                        <li><a href="https://cas.cnyjpt.cn/lyuapServer/login" target="_blank">教务系统</a></li>
+                    	<li><a href="https://cas.cnyjpt.cn/lyuapServer/login" target="_blank">网上办事大厅</a></li>
+                         <li><a href="https://cas.cnyjpt.cn/lyuapServer/login" target="_blank">校园一卡通</a></li>
+                        <li><a href="http://221.5.51.230/" target="_blank">图书馆</a></li>
+                    </ul>
+                </div>
+
+                 <div class="scL">
+                	<ul class="s_bar">
+                    	<li>新生导读</li>
+                    </ul>
+                    <ul class="content">
+                    	<li><a href="/content/xueyuanjianjie.html">学校概况</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!--右边框开结束-->
+        </div>
+    </div>
+   <!--第一入口结束-->
+   <!--第二入口开始-->
+    <div style="height: 0px;" flg="0" id="rk_js" class="panel" h="410">
+        <div class="ruk2 rk_col bl">
+        <!--左边框开始-->
+            <div class="sc1">
+            	<ul class="s_bar">
+                	<li> 最新动态</li>
+                </ul>
+               	<ul class="t-content">
+                    
+                        <li><a href="/news/s/15325.html" title="高进副院长到中文系参加教学观摩课活动" target="_blank">高进副院长到中文系参加教学观摩课活动</a></li>
+                    
+                        <li><a href="/news/s/15326.html" title="茂名职业技术学院梁德萍副院长带队到我系参观交流" target="_blank">茂名职业技术学院梁德萍副院长带队到我系参观交流…</a></li>
+                    
+                        <li><a href="/news/s/15293.html" title="热烈祝贺外语系学生叶芬芬参加第六届岭南杯英语写作技能大赛荣获二等奖及金笔奖（专业英语专科组）；蔡文杰等荣获本大赛三等奖" target="_blank">热烈祝贺外语系学生叶芬芬参加第六届岭南杯英语写…</a></li>
+                    
+                        <li><a href="/news/s/15290.html" title="展文秘风采，秀文秘技能" target="_blank">展文秘风采，秀文秘技能</a></li>
+                    
+                        <li><a href="/news/s/15280.html" title="吴教育院长到外语系调研指导工作" target="_blank">吴教育院长到外语系调研指导工作</a></li>
+                    
+               	</ul>
+                 <ul class="ew" >
+                    <li><img src="/templates/YjcollegeIndex2015/images/xygz.jpg" width="96" height="96"/>公众平台</li>
+                    <li><img src="/templates/YjcollegeIndex2015/images/xyw.png" width="96" height="96" />阳职官网</li>
+                    <li> <img src="/templates/YjcollegeIndex2015/images/zsb.png" width="96" height="96"/>阳职招生</li>
+           		</ul>
+            </div>
+            <!--左边框结束-->
+            <!--中框开始-->
+            <div class="sc2">
+            	<div class="scL">
+                	<ul class="s_bar">
+                    	<li>教学科研</li>
+                    </ul>
+                    <ul class="content">
+                    	<li><a href="http://221.5.51.230/" target="_blank">图书文献</a></li>
+                    </ul>
+                    <ul class="content">
+                    	<li><a href="http://www.cchve.com.cn/" target="_blank">国家资源库</a></li>
+                    </ul>
+                </div>
+                <div class="scL">
+                	<ul class="s_bar">
+                    	<li>人力资源</li>
+                    </ul>
+                    <ul class="content">
+                    	<li><a href="/rsc/index.html" target="_blank">人事处</a></li>
+                    </ul>
+                </div> 
+                 <div class="scL">
+                	<ul class="s_bar">
+                    	<li>信息服务</li>
+                    </ul>
+                    <ul class="content">
+                    	<li><a href="/jwc/down/348.html"  target="_blank">阳职校历</a></li>
+                        <li><a href="https://cas.cnyjpt.cn/lyuapServer/login" target="_blank">工资查询</a></li>
+                    	<li><a href="https://cas.cnyjpt.cn/lyuapServer/login" target="_blank">网上办事大厅</a></li>
+                         <li><a href="https://cas.cnyjpt.cn/lyuapServer/login" target="_blank">校园一卡通</a></li>
+                    </ul>
+                </div> 
+            </div>
+            <!--中框结束-->
+            <!--右边框开始-->
+            <div class="sc3">
+            	 <div class="scL">
+                	<ul class="s_bar">
+                    	<li>教工之家</li>
+                    </ul>
+                    <ul class="content">
+                    	<li><a href="/gh/index.html" target="_blank">工会网站</a></li>
+                    </ul>
+                </div>
+                 <div class="scL">
+                	<ul class="s_bar">
+                    	<li>系统平台</li>
+                    </ul>
+                    <ul class="content">
+                        <li><a href="https://cas.cnyjpt.cn/lyuapServer/login" target="_blank">教务系统</a></li>
+                        <li><a href="http://oa.cnyjpt.cn" target="_blank">OA平台</a></li> 
+                        <li><a href="http://kq.cnyjpt.cn" target="_blank">考勤系统</a></li>  
+                        <li><a href="http://119.146.166.75" target="_blank">人才培养采集</a></li>
+                        <li><a href="/jpkc/index.html" target="_blank">精品课程</a></li>
+                        <li><a href='http://221.5.51.233:8080/manage/ht/login/pre.html' target="_blank">新生报到</a></li>
+                        <!--<li><a href='http://baoming.yjlao.com/Account/Auth/index' target="_blank">自主招生报名</a></li>-->
+                        <li><a href='https://cas.cnyjpt.cn/lyuapServer/login' target="_blank">专业资源库</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!--右边框开结束-->
+        </div>
+    </div>
+      <!--第二入口结束-->
+      <!--第三入口开始-->
+    <div style="height: 0px;" flg="0" id="rk_xy" class="panel" h="440">
+        <div class="ruk3 rk_col bl">
+         <!--左边框开始-->
+            <div class="sc1">
+            	<ul class="s_bar">
+                	<li> 最新动态</li>
+                </ul>
+               	<ul class="t-content">
+                    
+                        <li><a href="/news/s/15325.html" title="高进副院长到中文系参加教学观摩课活动" target="_blank">高进副院长到中文系参加教学观摩课活动</a></li>
+                    
+                        <li><a href="/news/s/15326.html" title="茂名职业技术学院梁德萍副院长带队到我系参观交流" target="_blank">茂名职业技术学院梁德萍副院长带队到我系参观交流…</a></li>
+                    
+                        <li><a href="/news/s/15293.html" title="热烈祝贺外语系学生叶芬芬参加第六届岭南杯英语写作技能大赛荣获二等奖及金笔奖（专业英语专科组）；蔡文杰等荣获本大赛三等奖" target="_blank">热烈祝贺外语系学生叶芬芬参加第六届岭南杯英语写…</a></li>
+                    
+                        <li><a href="/news/s/15290.html" title="展文秘风采，秀文秘技能" target="_blank">展文秘风采，秀文秘技能</a></li>
+                    
+                        <li><a href="/news/s/15280.html" title="吴教育院长到外语系调研指导工作" target="_blank">吴教育院长到外语系调研指导工作</a></li>
+                    
+               	</ul>
+                 <ul class="ew" >
+                    <li><img src="/templates/YjcollegeIndex2015/images/xygz.jpg" width="96" height="96"/>公众平台</li>
+                    <li><img src="/templates/YjcollegeIndex2015/images/xyw.png" width="96" height="96" />阳职官网</li>
+                    <li> <img src="/templates/YjcollegeIndex2015/images/zsb.png" width="96" height="96"/>阳职招生</li>
+           		</ul>
+            </div>
+            <!--左边框结束-->
+            <!--中框开始-->
+            <div class="sc2">
+            	<div class="scL">
+                	<ul class="s_bar">
+                    	<li>申报入口</li>
+                    </ul>
+                    <ul class="content">
+                    	<li><a href="/zdzyys/index.html" target="_blank">广东省高等职业教育重点专业建设项目验收</a></li>
+                    </ul>
+                    <ul class="content">
+                    	<li><a href="http://www.cnyjpt.cn:8080/jlgcxmys/" target="_blank">广东省高等职业教育质量工程建设平台</a></li>
+                    </ul>
+                    <ul class="content">
+                    	<li><a href="http://www.cnyjpt.cn:8080/jyzxzj/" target="_blank">省高职教育专项资金项目申报</a></li>
+                    </ul>
+                     <ul class="content">
+                    	<li><a href="/ppzyjs/index.html" target="_blank">广东省高等职业教育品牌专业建设平台</a></li>
+                    </ul>
+                     <ul class="content">
+                    	<li><a href="/tszyjs/index.html" target="_blank">广东省高等职业教育特色专业建设平台</a></li>
+                    </ul>
+                     <ul class="content">
+                    	<li><a href="http://kc.cnyjpt.cn/solver/classView.do?classKey=9683853" target="_blank">2016年新增专业检查</a></li>
+                    </ul>
+                    <ul class="content">
+                    	<li><a href="/gzjxkc/index.html" target="_blank">2016年省高职教育专业教学资源库和精品在线开放课程</a></li>
+                    </ul>
+                     <ul class="content">
+                    	<li><a href="/ppzyjs2/index.html" target="_blank">第二批广东省高等职业教育品牌专业申报</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--中框结束-->
+        </div>
+    </div>
+       <!--第三入口结束-->
+          <!--第四入口开始-->
+    <div style="height: 0px;" flg="0" id="rk_fk" class="panel" h="440">
+        <div class="ruk4 rk_col bl">
+         <!--左边框开始-->
+            <div class="sc1">
+            	<ul class="s_bar">
+                	<li>阳江职业技术学院欢迎您！</li>
+                </ul>
+                <ul class="s_banner">
+                	<li><img src="/templates/YjcollegeIndex2015/images/s_banner.jpg" width="350" height="90" /></li>
+                </ul>
+               	<ul class="t-content">
+                  
+                    <li>阳江职业技术学院是经广东省人民政府批准设立，国家教育部备案，阳江市人民政府举办的综合性普通高等学校。我院以“崇德远志，精艺博才”为校训，按照“立足地方，以区域发展需要的专业为主体；培养可持续发展的高技能…<a href="/content/xueyuanjianjie.html" >[详细]</a></li>
+                  
+               	</ul>
+                <ul>
+                     <div class="scL">
+                        <ul class="s_bar">
+                            <li>学校详情</li>
+                        </ul>
+                        <ul class="content">
+                            <li><a href="/content/xueyuanjianjie.html" >学院简介</a></li>
+                            <li>学院成果</li>
+                            <li><a href="/news_list_xyld.html" >学院领导</a></li>
+                            <li><a href="/content/lingdaoguanhuai.html" >领导关怀</a></li>
+                            <li><a href="/content/xueyuanjiyu.html" >学院寄语</a></li>
+                            <li><a href="/content/xiaohuixiaoxun.html" >校徽校训</a></li>
+                            <li><a href="/xxgk/index.html" target="_blank">信息公开</a></li>
+                        </ul>
+                    </div> 
+               </ul>
+            </div>
+            <!--左边框结束-->
+            <!--中框开始-->
+            <div class="sc2">
+            	<div class="scL">
+                	<ul class="s_bar">
+                    	<li>阳职风采</li>
+                    </ul>
+                    <ul class="content">
+                    	<li><a href="/jsfc/index.html" target="_blank">名师名教</a></li>
+                        <li><a href="javascript:;" >校友风采</a></li>
+                    </ul>
+                </div>
+                <div class="scL">
+                	<ul class="s_bar">
+                    	<li>学校环境</li>
+                    </ul>
+                    <ul class="content">
+                    	<li><a href="http://l.map.qq.com/11216724593?m" target="_blank">学院地图</a></li>
+                        <li><a href="/photo/45.html">阳职风光</a></li>
+                    </ul>
+                </div> 
+                <div class="scL">
+                 <ul class="ew" >
+                    <li><img src="/templates/YjcollegeIndex2015/images/xygz.jpg" width="96" height="96"/>公众平台</li>
+                    <li><img src="/templates/YjcollegeIndex2015/images/xyw.png" width="96" height="96" />阳职官网</li>
+                    <li> <img src="/templates/YjcollegeIndex2015/images/zsb.png" width="96" height="96"/>阳职招生</li>
+           		</ul>
+                </div>
+            </div>
+            <!--中框结束-->
+            <!--右边框开始-->
+            <div class="sc3">
+            	
+                
+            </div>
+            <!--右边框开结束-->
+        </div>
+    </div>
+       <!--第四入口结束-->
+</div>
+<script type="text/javascript" src="/templates/YjcollegeIndex2015/js/rk.js"></script>
+<!--入口结束-->
+
+
+<!--内容框开始-->
+<div class="maincontent">
+<!--框1开始-->
+	<div class="mainbox1">
+    <!--栏目1开始-->
+    	<div class="c_1">
+        	<ul class="c_bar">
+            	<li><a href="/news/6.html">通知公告</a></li>
+            </ul>
+            <ul class="content">
+            
+            	<li><a href="/news/s/15252.html" title="阳江职业技术学院创新团队红宝石石斑鱼饲料询价采购项目中标结果公示">阳江职业技术学院创新团队红宝…</a><span>05-18</span></li>
+                
+            	<li><a href="/news/s/15250.html" title="阳江职业技术学院创新团队水车式增氧机询价采购项目中标结果公示">阳江职业技术学院创新团队水车…</a><span>05-18</span></li>
+                
+            	<li><a href="/news/s/15248.html" title="阳江职业技术学院后勤管理处风扇询价采购项目中标结果公示">阳江职业技术学院后勤管理处风…</a><span>05-18</span></li>
+                
+            	<li><a href="/news/s/15200.html" title="阳江职业技术学院创新团队水车式增氧机询价采购项目招标公告">阳江职业技术学院创新团队水车…</a><span>05-15</span></li>
+                
+            	<li><a href="/news/s/15198.html" title="阳江职业技术学院创新团队红宝石石斑鱼饲料询价采购项目招标公告">阳江职业技术学院创新团队红宝…</a><span>05-15</span></li>
+                
+            	<li><a href="/news/s/15184.html" title="阳江职业技术学院后勤管理处风扇询价采购项目招标公告">阳江职业技术学院后勤管理处风…</a><span>05-15</span></li>
+                
+            	<li><a href="/news/s/15147.html" title="关于做好我院2018年建设项目申报工作的通知">关于做好我院2018年建设项目申…</a><span>05-10</span></li>
+                
+            	<li><a href="/news/s/15096.html" title="阳江职业技术学院2018-2020年零星（修缮）工程施工承包候选人中标结果公示">阳江职业技术学院2018-2020年…</a><span>05-04</span></li>
+                
+            	<li><a href="/news/s/14984.html" title="阳江职业技术学院图书馆电子书借阅系统询价采购项目中标结果公示">阳江职业技术学院图书馆电子书…</a><span>04-24</span></li>
+                
+            </ul>
+        </div>
+    <!--栏目1结束-->
+    <!--栏目2开始-->
+        <div class="c_2">
+            <ul class="c_bar">
+                <li><a href="/news/1.html">学院新闻</a></li>
+            </ul>
+           
+            
+              	<ul class="top_new">
+                    <li class="t_t"><a href="/news/s/15293.html" >热烈祝贺外语系学生叶芬芬参加第六届岭南杯英语写作技能大…</a></li>
+                    <li class="t_c">2018年5月19日，外语系2016级英语教育专业学生叶芬芬、蔡文杰、潘瑞凤、陈秀珠以及2017级计算机应用1班熊智宏、2017级学前教育2班蔡燕定在陈秋骆、林月俏、林进娜和潘菊珍等老师的指导下参加第六届岭南杯英语写作技能…<a href="/news/s/15293.html" >[详细]</a></li>   
+            	</ul>
+                <ul class="content">
+                
+                    <li><a href="/news/s/15280.html" title="吴教育院长到外语系调研指导工作" >吴教育院长到外语系调研指导工作</a><span class="date">2018-05-21</span>
+                    
+                    <span class="icon-new"></span></li>
+                    
+                    <li><a href="/news/s/15255.html" title="我院教师校长培训中心举行阳江市美术教师水彩教学培训班" >我院教师校长培训中心举行阳江市美术教师水彩教学培训…</a><span class="date">2018-05-18</span>
+                    
+                    <span class="icon-new"></span></li>
+                    
+                    <li><a href="/news/s/15247.html" title="吴教育院长主持的省教育科学规划项目通过结项验收" >吴教育院长主持的省教育科学规划项目通过结项验收</a><span class="date">2018-05-17</span>
+                    
+                    <li><a href="/news/s/15234.html" title="省教育厅授牌我院为“广东省创建国家教师教育创新实验区”合作共建单位" >省教育厅授牌我院为“广东省创建国家教师教育创新实验…</a><span class="date">2018-05-17</span>
+                    
+                    <li><a href="/news/s/15218.html" title="阳江市总工会调研我院劳模创新工作室" >阳江市总工会调研我院劳模创新工作室</a><span class="date">2018-05-17</span>
+                    
+                        
+                </ul>
+       </div>
+    
+    <!--栏目2结束-->
+    
+    <!--栏目3开始-->
+    	<div class="c_3">
+        	<ul class="c_bar">
+            	<li><a href="/vod/347.html">视频新闻</a></li>
+            </ul>
+            <ul class="vod-box">
+                     
+            	           <li><a href="/vod/show/14471.html" title="阳江职院两专业列入“五年一贯制”招生" ><img src="/upload/201803/13/201803131044048670.jpg" width="100%" height="175px"/></a></li>
+			 
+             <li class="info_bj"></li>
+             <li class="info">阳江职院两专业列入“五年一贯制”招…</li>
+             
+            </ul>
+            <ul class="content">
+                        
+            	           <li><a href="/vod/show/14471.html" title="阳江职院两专业列入“五年一贯制”招生" >阳江职院两专业列入“五年一贯制”招生…</a></li>
+			 
+            	           <li><a href="/vod/show/14004.html" title="广东大数据研讨会在阳江职院举行" >广东大数据研讨会在阳江职院举行</a></li>
+			 
+            	           <li><a href="/vod/show/12702.html" title="生源地助学贷款政策和办理流程宣传动漫" >生源地助学贷款政策和办理流程宣传动漫…</a></li>
+			 
+            	           <li><a href="/vod/show/12701.html" title="助学贷款公益宣传片（2017）" >助学贷款公益宣传片（2017）</a></li>
+			 
+            </ul>
+    	</div>
+    
+    <!--栏目3结束-->
+    </div>
+    <!--框1结束-->
+
+     <!--专栏框开始-->
+       <div class="zl_box">
+            <ul>
+            	<li>
+<a href="/zdzyys/index.html" title="2016年省高等职业教育重点专业建设项目验收 " target='_blank' style="cursor:pointer"><img src="/templates/YjcollegeIndex2015/images/2016zdzyys.jpg" alt='2016年省高等职业教育重点专业建设项目验收' width="150"  border="0" /></a>
+<a href="/jxcg2017/index.html" title="2017年省级教育教学成果奖评审 " target='_blank' style="cursor:pointer"><img src="/templates/YjcollegeIndex2015/images/17cg.jpg" alt='2017年省级教育教学成果奖评审' width="150"  border="0" /></a>
+
+<a href="/ppzyjs2/index.html" title="第二批广东省高等职业教育品牌专业申报 " target='_blank' style="cursor:pointer"><img src="/templates/YjcollegeIndex2015/images/ppzy2.jpg" alt='第二批广东省高等职业教育品牌专业申报 ' width="150"  border="0" /></a>
+                        <a href="/ggsxzx/index.html" title="2017省高职教育公共实训中心项目申报" target='_blank' ><img src="/templates/YjcollegeIndex2015/images/SXZXSB.jpg" alt='2017省高职教育公共实训中心项目申报' width="150"  border="0" /></a>
+                	<a href="http://www.cnyjpt.cn:8080/jlgcxmys/content.aspx?years=2015zlgc" title="2015年质量工程年度教学质量与教学改革工程项目建设平台" target='_blank' ><img src="/templates/YjcollegeIndex2015/images/zlgc.jpg" alt='2015年质量工程年度教学质量与教学改革工程项目建设平台' width="150"  border="0" /></a>
+<a href="/gzjxkc/index.html" title="专业教学资源库" target='_blank' ><img src="/templates/YjcollegeIndex2015/images/jxzyk.jpg" alt='专业教学资源库' width="150"  border="0" /></a>
+<a href="/gzjxkc/index.html" title="精品在线开放课程" target='_blank' ><img src="/templates/YjcollegeIndex2015/images/jpzxkf.jpg" alt='精品在线开放课程' width="150"  border="0" /></a>
+                </li>
+            </ul>
+        </div>
+     <!--专栏框结束-->
+
+    <!--框2开始-->
+    <div class="mainbox2">
+    <!--栏目1开始-->
+    	<div class="c_4">
+        	<ul class="c_bar">
+            	<li><a href="/news/37.html">专题报导</a></li>
+            </ul>
+            <ul class="content">
+             
+            	<li><a href="/news/s/14199.html" title="阳江职业技术学院高等职业教育质量年度报告(2018)" >阳江职业技术学院高等职业教育…</a><span>01-15</span></li>
+            
+            	<li><a href="/news/s/14188.html" title="企业报告：阳江市太仕模具有限公司参与高等职业教育人才培养年度报告（2018）：阳江职业技术学院" >企业报告：阳江市太仕模具有限…</a><span>01-15</span></li>
+            
+            	<li><a href="/news/s/11880.html" title="阳江职业技术学院高等职业教育质量年度报告(2017)" >阳江职业技术学院高等职业教育…</a><span>01-03</span></li>
+            
+            	<li><a href="/news/s/11347.html" title="阳职院适应社会需求能力评估自评报告" >阳职院适应社会需求能力评估自…</a><span>10-31</span></li>
+            
+            	<li><a href="/news/s/3335.html" title="阳职院高等职业教育质量年度报告（2015）" >阳职院高等职业教育质量年度报…</a><span>01-05</span></li>
+            
+            	<li><a href="/news/s/3329.html" title="我院获阳江市首届哲学社会科学优秀成果奖名单" >我院获阳江市首届哲学社会科学…</a><span>03-10</span></li>
+            
+            </ul>
+        </div>
+    <!--栏目1结束-->
+    <!--栏目2开始-->
+        <div class="c_5">
+            <ul class="c_bar">
+                <li><a href="/news_list_xbdt.html">系部动态</a></li>
+            </ul>
+            <ul class="content">
+             
+                <li><span class="web_title">[中文系]</span><a href="/zwx/new/s/15325.html" target="_blank">高进副院长到中文系参加教学观摩课活动</a><span>2018-05-24</span></li>
+             
+                <li><span class="web_title">[思想政治理论课教学部]</span><a href="/szb/new/s/15320.html" target="_blank">李国柱老师上教学观摩课</a><span>2018-05-23</span></li>
+             
+                <li><span class="web_title">[信息工程系]</span><a href="/xxgcx/new/s/15306.html" target="_blank">信息工程系教师举行教学观摩课</a><span>2018-05-23</span></li>
+             
+                <li><span class="web_title">[食品与环境工程系]</span><a href="/skx/new/s/15304.html" target="_blank">刘和平博士调研棕榈生态城镇发展股份有限公司植物研…</a><span>2018-05-22</span></li>
+             
+                <li><span class="web_title">[粤德合作职业教育与培训中心]</span><a href="/ydzx/new/s/15303.html" target="_blank">我中心教师参加省高职机械制造教指委会议</a><span>2018-05-22</span></li>
+             
+                <li><span class="web_title">[机电系]</span><a href="/jdx/new/s/15302.html" target="_blank">机电系汽检专业师生到通利华马自达4S店见习</a><span>2018-05-22</span></li>
+             
+            </ul>
+        </div>
+    
+    <!--栏目2结束-->
+    
+    <!--栏目3开始-->
+    	<div class="c_6">
+        	<ul class="c_bar">
+            	<li>快速通道</li>
+            </ul>
+            <ul class="content">
+            	<li><a href="/content/xueyuanjianjie.html"><span>></span>学院简介</a></li>
+                <li><a href="/jsfc/index.html" target="_blank"><span>></span>教师风采</a></li>
+                <li><a href="https://cas.cnyjpt.cn/lyuapServer/login" target="_blank" style="color:#ff0000"><span>></span>网上办事大厅</a></li>
+                <li><a href="https://cas.cnyjpt.cn/lyuapServer/login" target="_blank"><span>></span>教务平台</a></li>
+                <li><a href="https://cas.cnyjpt.cn/lyuapServer/login" target="_blank"><span>></span>人才培养</a></li>
+                <li><a href="http://www.cnyjpt.cn/jpkc/index.html" target="_blank"><span>></span>精品课程</a></li>
+                <li><a href="https://cas.cnyjpt.cn/lyuapServer/login" target="_blank"><span>></span>校园一卡通</a></li>
+                <li><a href="http://10.20.18.14" target="_blank"><span>></span>计算自主学习机平台</a></li>
+                <li><a href="http://oa.cnyjpt.cn" target="_blank"><span>></span>OA平台</a></li>
+                <li><a href='http://221.5.51.233:8080/manage/ht/login/pre.html' target="_blank"><span>></span>新生报到</a></li>
+                <li><a href='https://cas.cnyjpt.cn/lyuapServer/login' target="_blank"><span>></span>专业资源库</a></li>
+            </ul>
+    	</div>
+    
+    <!--栏目3结束-->
+    </div>
+    <!--框2结束-->
+</div>
+<!--内容框结束-->
+<!--infobox开始<style>
+.infobox{ width:1196px; height:96px;border:2px solid #0c78a5;margin:0 auto;}
+.infobox_content{width:100%;}
+</style>
+
+<div class="infobox">
+        <div class="infobox_content">
+               <ul>
+                      <li><img src="/templates/YjcollegeIndex2015/images/2015zlgc.jpg" alt='2015年质量工程年度教学质量与教学改革工程项目建设平台'  height="80" border="0" /></li>
+               </ul>
+        </div>
+</div>
+-->
+<!--页脚开始-->
+<div class="footer">
+	<!--友情链接开始-->
+	<div class="link">
+    	<ul class="link-content">
+        	<li class="icons-link">教学系部网点
+            	<ul>
+                    <li><a href="/zwx/index.html" target="_blank">中文系</a></li>
+                    <li><a href="/wyx/index.html" target="_blank">外语系</a></li>
+                    <li><a href="/sxx/index.html" target="_blank">数学系</a></li>
+                    <li><a href="/jdx/index.html" target="_blank">机电系</a></li>
+                    <li><a href="/ydzx/index.html" target="_blank">机电系（粤德培训中心）</a> </li>
+                    <li><a href="/cjx/index.html" target="_blank">财经系</a></li>
+                    <li><a href="/xxgcx/index.html" target="_blank">信息工程系</a></li>
+                    <li><a href="/skx/index.html" target="_blank">食品与环境工程系</a></li>
+                    <li><a href="/ysx/index.html" target="_blank">艺术与设计系</a></li>
+                    <li><a href="/lyglx/index.html" target="_blank">旅游与管理系</a></li>
+                    <li><a href="/tyx/index.html" target="_blank">体育系</a></li>
+                   	<li><a href="/szb/index.html" target="_blank">思想政治理论课教学部</a></li>
+                    <li><a href="/jxjyb/index.html" target="_blank">继续教育部</a></li>
+
+                </ul>
+            </li>
+            <li class="icons-library">行政教辅部门
+            	<ul>
+                    <li><a href="/dwb/index.html" target="_blank">党委办公室</a></li>
+                    <li><a href="http://www.cnyjpt.cn:8080/bgs" target="_blank">学院办公室</a></li>
+                    <li><a href="http://www.cnyjpt.cn:8080/rsc" target="_blank">人事处</a></li>
+                    <li><a href="/jwc/index.html" target="_blank">教务处</a></li>
+                    <li><a href="/xsc/index.html" target="_blank">学生处</a></li>
+                    <li><a href="/cwc/index.html" target="_blank">财务处</a></li>
+                    <li><a href="/hqglc/index.html" target="_blank">后勤管理处</a></li>
+                    <li><a href="/zsb/index.html" target="_blank">招生办公室</a></li>
+                    <li><a href="/jyzd/index.html" target="_blank">就业办公室</a></li>
+                    <li><a href="/jw/index.html" target="_blank">纪检监察审计室</a></li>
+                    <li><a href="/dds/index.html" target="_blank">评估督导办公室</a></li>
+                    <li><a href="http://221.5.51.230" target="_blank">图书馆</a></li>
+                    <li><a href="http://www.cnyjpt.cn:8080/sxzx" target="_blank">实训中心</a></li>
+                    <li><a href="/wlzx/index.html" target="_blank">网络信息中心</a></li>
+                    <li><a href="/gjs/index.html" target="_blank">高教所</a></li>
+                    <li><a href="http://soft.psy.com.cn/2011/yjzy" target="_blank">心理健康教育与咨询中心</a></li>
+                    <li><a href="/gh/index.html" target="_blank">工会</a></li>
+                    <li><a href="/tw/index.html" target="_blank">团委</a></li>
+                </ul>
+            </li>
+            <li class="icons-settings">院内专题网点
+           		<ul>
+                    <li><a href="/jpkc/index.html" target="_blank">精品课程网</a></li>
+                    <li><a href="/zdzy/index.html" target="_blank">重点专业专题</a></li>
+                    <li><a href="/zdkc/index.html" target="_blank">重点课程专题</a></li>
+                    <li><a href="http://card.cnyjpt.cn" target="_blank">校园一卡通</a></li>
+                    <li><a href="http://jw.cnyjpt.cn" target="_blank">教务系统</a></li>
+                    <li><a href="http://10.20.18.14" target="_blank">计算机自主学习平台</a></li>
+                    <li><a href="http://rcpy.cnyjpt.cn" target="_blank">人才培养数据采集平台</a></li>
+                    <li><a href="http://oa.cnyjpt.cn" target="_blank">OA系统</a></li>
+                    <li><a href='http://baoming.yjlao.com/Account/Auth/index' target="_blank">自主招生报名</a></li>
+                </ul>
+            </li>
+            <li class="icons-f08e">友情链接
+            	<ul>
+                    <li><a href="http://www.gdhed.edu.cn"  target="_blank">广东省教育厅</a></li>
+                    <li><a href="http://www.tech.net.cn"  target="_blank">中国高职高专教育网</a></li>
+                    <li><a href="http://www.edu.cn"  target="_blank">中国教育与科研计算机网</a></li>
+                    <li><a href="http://www.edu201.com"  target="_blank">中国高考招生</a></li>
+                    <li><a href="http://www.gfbzb.gov.cn/"  target="_blank">全国征兵网</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--友情链接结束-->
+    <!--页脚信息开始-->
+     <div class="content">
+    	<ul class="info">
+        	<li>
+            地址:广东省阳江市江城区东山路213号 邮编:529566 招生专线：0662-3362800、0662-2239158  传真:0662-3316729 
+            粤ICP备17149655号 Copyright © 2015-2016 阳江职业技术学院 版权所有  设计维护:网络与教育技术中心
+           
+          <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44170202000131" ><p  class="gabeian"> 粤公网安备 44170202000131号</p></a>
+             </li>
+        </ul>
+        
+        <ul class="ico">
+        	<script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/20/302/0000/40704221/CA203020000407042210001.js' type='text/javascript'%3E%3C/script%3E"));</script>
+        </ul>
+    </div>
+    <!--页脚信息结束-->
+</div>
+<!--页脚结束-->
+		 
+<script type="text/javascript">
+window.onload=function()
+{
+var sheight=screen.height;
+if (sheight < 900){
+window.location.hash="#p";
+}
+}
+</script>
+</body>
+</html>

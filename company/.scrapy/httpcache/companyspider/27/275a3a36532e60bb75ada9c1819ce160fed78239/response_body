@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>喜迎十九大</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style>
+<!--
+.intro{
+position:absolute;
+left:0;
+top:0;
+layer-background-color:red;
+background-color:red;
+border:0.1px solid red
+}
+.pt9 {  font-family: "宋体"; font-size: 9pt; text-decoration: none}
+body { font-family: "宋体"; font-size: 9pt; text-decoration: none ; margin-top: 0px}
+-->
+</style>
+<script LANGUAGE="Javascript">
+i=0;
+function f_wave()
+{i=i-4;
+showimg.style.filter="Wave(Freq=1,LightStrength=20,Phase=" + i + ")";
+setTimeout("f_wave()",100);
+}
+window.onload=f_wave;
+</script>
+<META content="20; URL=/index20151112.htm" http-equiv=Refresh>
+</head>
+
+<body bgcolor="#FAFAD2">
+<!--
+<script>
+window.open("/南康区中英文补习学校2018届招生公告.doc","","width=1024,height=743,top="+(screen.availHeight-743)/2+",left="+(screen.availWidth-1024)/2+",toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no");
+</script>
+-->
+<div id="top"; style=" width:100%;margin:60 auto;"><center>
+  <a href="index20151112.htm"><img src="Images/happy3.jpg" border="0" ID=showimg /></a>
+</center></div>
+
+<div id="i1" class="intro"></div><div id="i2" class="intro"></div><script
+language="JavaScript1.2">
+
+/*
+Left-Right Curtain Script- 
+?Dynamic Drive (www.dynamicdrive.com)
+For full source code, installation instructions,
+100's more free DHTML scripts, and Terms Of
+Use, visit dynamicdrive.com
+*/
+
+var speed=20
+var temp=new Array()
+var temp2=new Array()
+if (document.layers){
+for (i=1;i<=2;i++){
+temp[i]=eval("document.i"+i+".clip")
+temp2[i]=eval("document.i"+i)
+temp[i].width=window.innerWidth/2
+temp[i].height=window.innerHeight
+temp2[i].left=(i-1)*temp[i].width
+}
+}
+else if (document.all){
+var clipright=document.body.clientWidth/2,clipleft=0
+for (i=1;i<=2;i++){
+temp[i]=eval("document.all.i"+i+".style")
+temp[i].width=document.body.clientWidth/2
+temp[i].height=document.body.offsetHeight
+temp[i].left=(i-1)*parseInt(temp[i].width)
+}
+}
+
+
+function openit(){
+window.scrollTo(0,0)
+if (document.layers){
+temp[1].right-=speed
+temp[2].left+=speed
+if (temp[2].left>window.innerWidth/2)
+clearInterval(stopit)
+}
+else if (document.all){
+clipright-=speed
+temp[1].clip="rect(0 "+clipright+" auto 0)"
+clipleft+=speed
+temp[2].clip="rect(0 auto auto "+clipleft+")"
+if (clipright<=0)
+clearInterval(stopit)
+}
+}
+
+function gogo(){
+stopit=setInterval("openit()",100)
+}
+gogo()
+
+</script>
+</body>
+</html>
+

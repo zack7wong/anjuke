@@ -1,0 +1,961 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312">
+<link rel="stylesheet" href="include/css.css" type="text/css">
+<title>上海市朝阳中学-Powered by ChaoYang website</title>
+<meta name="keywords" content="朝阳中学,朝阳中学新闻发布系统,新闻系统,朝阳中学文章发布系统">
+<meta name="description" content="朝阳中学新闻发布系统，朝阳中学文章发布系统">
+<meta content="cyc@zb.edu.sh.cn" name="author">
+<link rel="shortcut icon" href="favicon.ico">
+<meta content=all name="robots">
+<meta content=all name="googleot">
+<!--图片漂浮广告代码开始-->
+
+<div id="chaoyang" style="position:absolute">
+<!--链接地址--><a href="../chydj/default.asp" target="_blank">
+<!--图片地址--><img src="images/kxfzg.gif" border="0">
+</a>
+</div>
+<script> 
+var x = 50,y = 60 
+var xin = true, yin = true 
+var step = 1 
+var delay = 10 
+var obj=document.getElementById("chaoyang") 
+function floatchaoyang() { 
+var L=T=0
+var R= document.body.clientWidth-obj.offsetWidth 
+var B = document.body.clientHeight-obj.offsetHeight 
+obj.style.left = x + document.body.scrollLeft 
+obj.style.top = y + document.body.scrollTop 
+x = x + step*(xin?1:-1) 
+if (x < L) { xin = true; x = L} 
+if (x > R){ xin = false; x = R} 
+y = y + step*(yin?1:-1) 
+if (y < T) { yin = true; y = T } 
+if (y > B) { yin = false; y = B } 
+} 
+var itl= setInterval("floatchaoyang()", delay) 
+obj.onmouseover=function(){clearInterval(itl)} 
+obj.onmouseout=function(){itl=setInterval("floatchaoyang()", delay)} 
+</script>
+<!--图片漂浮广告代码结束-->
+
+<script language="JavaScript">
+<!--
+
+function win_gonggao(theurl)
+{
+  window.open(theurl,'','toolbar=no,  status=no,menubar=no, scrollbars=yes,resizable=no,width=520,height=400,left=200,top=100,scrollbars=yes');
+ //OW("E","650","580","","","no","no","no","no","no",theurl,"modal");
+}
+// -->//-->
+</script>
+</head>
+<body topmargin="0" onKeydown="button_submit()">
+<center>
+<!-- <script language="JavaScript">
+a = 3 
+var slump = Math.random();
+var talet = Math.round(slump * (a-1))+1;
+function create() {
+        this.src = ''
+        this.border = ''
+	this.alt = ''
+	
+}
+
+b = new Array()
+for(var i=1; i<=a; i++) { b[i] = new create() }  -->
+  <!-- 改变下面三幅图像的名称 -->
+<!-- b[1].src    = "images/1.gif"
+b[1].border = "0"
+b[1].alt    = ""
+
+b[2].src    = "images/2.gif"
+b[2].border = "0"
+b[2].alt    = ""
+
+b[3].src    = "images/"
+b[3].border = "0"
+b[3].alt    = ""
+var visa = "";
+
+visa += '<img src='+b[talet].src+' border="0"'+' alt='+b[talet].alt+'>';
+</script> -->
+<!-- <script language="JavaScript">-->
+<!-- Hide this script from old browsers -->
+<!-- document.write(visa)
+</script> -->
+  <table width="900" height="169" border="0" align="center"><tr><td>
+	<object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="obj1" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0" width="900" height="169" align="center">
+		<param name="movie" value="../images/top.swf">
+		<param name="quality" value="High">
+		<param name="menu" value="false">
+		<embed src="../images/top.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="900" height="169" quality="High" menu="false"></object>
+	</td></tr></table>
+  <table width="900" height="35" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td height="40" align="center" background="images/menu-bg.gif"><a href="default.asp">首　页</a></td>
+          <td align="center" background="images/menu-bg.gif">
+			
+			<a href="otype.asp?classid=1">学校概况</a>
+			
+			</td>
+          <td align="center" background="images/menu-bg.gif">
+			
+			<a href="chydj/default.asp" target="_blank">党建工会</a>
+			
+			</td>
+          <td align="center" background="images/menu-bg.gif">
+			
+			<a href="otype.asp?classid=3">教学天地</a>
+			
+			</td>
+          <td align="center" background="images/menu-bg.gif">
+			
+			<a href="otype.asp?classid=4">德育空间</a>
+			
+			</td>
+          <td align="center" background="images/menu-bg.gif">
+			
+			<a href="otype.asp?classid=5">科研动态</a>
+			
+			</td>
+          <td align="center" background="images/menu-bg.gif">
+			
+			<a href="otype.asp?classid=6">教师学习</a>
+			
+			</td>
+          <td align="center" background="images/menu-bg.gif">
+			
+			<a href="otype.asp?classid=7">图书管理</a>
+			
+			</td>
+          <td align="center" background="images/menu-bg.gif">
+			
+			<a href="http://10.40.36.4/xlcp/web/index.aspx" target="_blank">心理专栏</a>
+			
+			</td>
+          <td align="center" background="images/menu-bg.gif">
+			
+			<a href="otype.asp?classid=10">学生园地</a>
+			
+			</td>
+          <td align="center" background="images/menu-bg.gif">
+			
+			<a href="otype.asp?classid=11">家长学校</a>
+			
+			</td>
+          <td align="center" background="images/menu-bg.gif">
+			
+			<a href="otype.asp?classid=12">语言文字</a>
+			
+			</td>
+ 
+        <td align="center" background="images/menu-bg.gif"><a href="download.asp">下载中心</a></td>
+        <!-- <td align="center" background="images/menu-bg.gif"><a href="guestbook.asp">访客留言</a></td> -->
+      </tr>
+    </tbody>
+  </table>
+  </center>
+<table width="900" height="29" border="0" align="center" cellpadding="0" cellspacing="0" background="images/gaobei_top2.gif">
+     <tbody>
+     <tr>
+      <td width="93"></td>
+       <td valign="center" width="210"><div style="padding-bottom:6px; color:#ffffff">
+<script src="include/date.js" type=text/javascript></script> <span id="time"></span>	<script>setInterval("time.innerHTML=new Date().getHours()+':'+new Date().getMinutes()+':'+new Date().getSeconds()",1000);</script>
+       </div></td>
+     <td width="20"></td>
+ <td width="577"><div style="padding-bottom:3px;"><font color="#008af7">您现在所在的位置：</font><a href="default.asp">首页</a></div></td>
+       </tr>
+  </tbody>
+</table>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="680" align="center" valign="top">
+<div style="width:680px;">
+  <div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div>
+  <table width="680" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="280" align="center" bgcolor="#ffffff">
+<script type="text/javascript">
+				var swf_width=278;
+				var swf_height=220;
+				var config='4|0xffffff|0x99CC66|40|0xffffff|0x0099ff|0x000000';
+				//-- config 参数设置 -- 自动播放时间(秒)|文字颜色|文字背景色|文字背景透明度|按键数字颜色|当前按键颜色|普通按键色彩 --
+				var files='',links='', texts='';
+				</script>
+
+<script type="text/javascript">
+  files+='|uppic/201852813251IMGL2519_副本.jpg';
+  links+='|onews.asp?id=939';
+  texts+='朝阳中学体验浸入式戏剧《四行仓库保卫|';
+ </script> 
+
+<script type="text/javascript">
+  files+='|uppic/20185211530434.jpg';
+  links+='|onews.asp?id=937';
+  texts+=' 回味经典，品读文化——静安区教育系|';
+ </script> 
+
+<script type="text/javascript">
+  files+='|uppic/20185793720IMGL205011.jpg';
+  links+='|onews.asp?id=934';
+  texts+='“小荷才露尖尖角”-----记朝阳中|';
+ </script> 
+
+<script type="text/javascript">
+  files+='|uppic/2018327122921心淑10年路.jpg';
+  links+='|onews.asp?id=931';
+  texts+='风雨同舟十年路，感恩奋进新时代——朝|';
+ </script> 
+
+<script type="text/javascript">
+  files+='|uppic/20183231166微信图片_20180321125102.jpg';
+  links+='|onews.asp?id=930';
+  texts+=' 谋定未来 搏出精彩——上海市朝阳中|';
+ </script> 
+
+<script type="text/javascript">
+  files+='|uppic/2018314122239IMGL1406.JPG';
+  links+='|onews.asp?id=928';
+  texts+='静安区教育局教研室来朝阳中学开展听课|';
+ </script> 
+
+<script type="text/javascript">
+files=files.substring(1);links=links.substring(1);texts=texts.substring(1);
+				document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+				document.write('<param name="movie" value="Images/focus.swf" />');
+				document.write('<param name="quality" value="high" />');
+				document.write('<param name="menu" value="false" />');
+				document.write('<param name=wmode value="opaque" />');
+                                document.write('<param name="FlashVars" value="config='+config+'&bcastr_flie='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'" />');
+				document.write('<embed src="Images/focus.swf" wmode="opaque" FlashVars="config='+config+'&bcastr_flie='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'& menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+				document.write('</object>');
+				</script>
+ </td>
+    <td width="390" align="center" valign="top" bgcolor="#ffffff">
+<table width="96%" border="0" cellpadding="0" cellspacing="0">
+
+      <tr>
+        <td height="24" align="left" class="i_news"> <span>[05-28]</span><img src='images/news_ico.gif' width=15 height=11 border=0>&nbsp;<img src='images/news.gif' border=0 alt='图片新闻'><a class="a01" href="onews.asp?id=939" title="朝阳中学体验浸入式戏剧《四行仓库保卫战》" target="_blank">朝阳中学体验浸入式戏剧《四行仓库保卫战》</a></td>
+  </tr>
+      
+      <tr>
+        <td height="24" align="left" class="i_news"> <span>[05-23]</span><img src='images/news_ico.gif' width=15 height=11 border=0>&nbsp;<a class="a02" href="onews.asp?id=938" title="上海市朝阳中学2018年教师招聘【第三批】报名通知" target="_blank">上海市朝阳中学2018年教师招聘【第三批】报名…</a></td>
+  </tr>
+      
+      <tr>
+        <td height="24" align="left" class="i_news"> <span>[05-21]</span><img src='images/news_ico.gif' width=15 height=11 border=0>&nbsp;<img src='images/news.gif' border=0 alt='图片新闻'><a class="a01" href="onews.asp?id=937" title=" 回味经典，品读文化——静安区教育系统教职工诗词诵读竞赛" target="_blank"> 回味经典，品读文化——静安区教育系统教职工诗…</a></td>
+  </tr>
+      
+      <tr>
+        <td height="24" align="left" class="i_news"> <span>[05-15]</span><img src='images/news_ico.gif' width=15 height=11 border=0>&nbsp;<a class="a01" href="onews.asp?id=936" title="关于开展“教育改革40年——我读《上海教育丛书》”征文活动的通知" target="_blank">关于开展“教育改革40年——我读《上海教育丛书…</a></td>
+  </tr>
+      
+      <tr>
+        <td height="24" align="left" class="i_news"> <span>[05-10]</span><img src='images/news_ico.gif' width=15 height=11 border=0>&nbsp;<a class="a01" href="onews.asp?id=935" title="2018年5月新书介绍" target="_blank">2018年5月新书介绍</a></td>
+  </tr>
+      
+      <tr>
+        <td height="24" align="left" class="i_news"> <span>[05-07]</span><img src='images/news_ico.gif' width=15 height=11 border=0>&nbsp;<img src='images/news.gif' border=0 alt='图片新闻'><a class="a01" href="onews.asp?id=934" title="“小荷才露尖尖角”-----记朝阳中学庆祝“五四”青年节教工团活动" target="_blank">“小荷才露尖尖角”-----记朝阳中学庆祝“五…</a></td>
+  </tr>
+      
+      <tr>
+        <td height="24" align="left" class="i_news"> <span>[05-02]</span><img src='images/news_ico.gif' width=15 height=11 border=0>&nbsp;<a class="links" href="onews.asp?id=933" title="2018年上海市朝阳中学教师公开招聘【第二批】----录用名单" target="_blank">2018年上海市朝阳中学教师公开招聘【第二批】…</a></td>
+  </tr>
+      
+      <tr>
+        <td height="24" align="left" class="i_news"> <span>[04-20]</span><img src='images/news_ico.gif' width=15 height=11 border=0>&nbsp;<a class="a01" href="onews.asp?id=932" title="观影《厉害了，我的国》" target="_blank">观影《厉害了，我的国》</a></td>
+  </tr>
+      
+      <tr>
+        <td height="24" align="left" class="i_news"> <span>[03-27]</span><img src='images/news_ico.gif' width=15 height=11 border=0>&nbsp;<img src='images/news.gif' border=0 alt='图片新闻'><a class="a01" href="onews.asp?id=931" title="风雨同舟十年路，感恩奋进新时代——朝阳中学举行心淑教育奖励基金十周年庆典暨校园开放日活动" target="_blank">风雨同舟十年路，感恩奋进新时代——朝阳中学举行…</a></td>
+  </tr>
+      
+      <tr>
+        <td height="24" align="left" class="i_news"> <span>[03-23]</span><img src='images/news_ico.gif' width=15 height=11 border=0>&nbsp;<img src='images/news.gif' border=0 alt='图片新闻'><a class="a01" href="onews.asp?id=930" title=" 谋定未来 搏出精彩——上海市朝阳中学中考动员大会" target="_blank"> 谋定未来 搏出精彩——上海市朝阳中学中考动员…</a></td>
+  </tr>
+      
+</table>
+ </td>
+  </tr>
+</table>
+<div style="width:100%"><img src="images/spacer.gif" width="1" height="8"></div>
+  <table width="680" border="0" cellspacing="0" cellpadding="0">
+
+  <tr>
+  
+    <td width="330" align="center" valign="top">
+<table width=298 border=0 cellpadding=0 cellspacing=0 class="hemo_new">
+      <tbody>
+        <tr>
+          <td width=22 height="33" align="center"><img src="images/article_ico_1.gif" width="11" height="13"></td>
+          <td width=273 align="left"><a href="otype.asp?classid=1"><strong>学校概况</strong></a></td>
+          <td width=30>　</td>
+        </tr>
+        <tr>
+          <td height="23" colspan="3" align="center">
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="3"></div>
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[05-23]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=938" title="上海市朝阳中学2018年教师招聘【第三批】报名通知" target="_blank" class="a02">上海市朝阳中学2018年教师招聘【第三…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[05-21]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=937" title=" 回味经典，品读文化——静安区教育系统教职工诗词诵读竞赛" target="_blank" class="a01"> 回味经典，品读文化——静安区教育系统…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[05-02]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=933" title="2018年上海市朝阳中学教师公开招聘【第二批】----录用名单" target="_blank" class="links">2018年上海市朝阳中学教师公开招聘【…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[03-01]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=926" title="踏准改革契机，实现新年跨越-----记静安区教育党工委胥书记一行莅临上海市朝阳中学调研指导" target="_blank" class="a01">踏准改革契机，实现新年跨越-----记…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[01-02]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=922" title="“不忘初心  继续前进”-----记朝阳中学全体党员参观“中共三大后中央局机关历史纪念馆”" target="_blank" class="a01">“不忘初心  继续前进”-----记朝…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[12-18]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=919" title="“学习新党章，迈步新时代”——记朝阳中学党支部学习新党章知识竞赛活动" target="_blank" class="a01">“学习新党章，迈步新时代”——记朝阳中…</a></td>
+  </tr>
+
+</table>
+
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div></td>
+          </tr>
+      </tbody>
+    </table>
+	<div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div>
+	</td>
+	
+    <td width="330" align="center" valign="top">
+<table width=298 border=0 cellpadding=0 cellspacing=0 class="hemo_new">
+      <tbody>
+        <tr>
+          <td width=22 height="33" align="center"><img src="images/article_ico_1.gif" width="11" height="13"></td>
+          <td width=273 align="left"><a href="otype.asp?classid=3"><strong>教学天地</strong></a></td>
+          <td width=30>　</td>
+        </tr>
+        <tr>
+          <td height="23" colspan="3" align="center">
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="3"></div>
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[05-07]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=934" title="“小荷才露尖尖角”-----记朝阳中学庆祝“五四”青年节教工团活动" target="_blank" class="a01">“小荷才露尖尖角”-----记朝阳中学…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[03-27]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=931" title="风雨同舟十年路，感恩奋进新时代——朝阳中学举行心淑教育奖励基金十周年庆典暨校园开放日活动" target="_blank" class="a01">风雨同舟十年路，感恩奋进新时代——朝阳…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[03-23]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=930" title=" 谋定未来 搏出精彩——上海市朝阳中学中考动员大会" target="_blank" class="a01"> 谋定未来 搏出精彩——上海市朝阳中学…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[03-14]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=928" title="静安区教育局教研室来朝阳中学开展听课调研活动" target="_blank" class="a01">静安区教育局教研室来朝阳中学开展听课调…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[03-14]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=927" title="初中体育与健身教研活动在朝阳中学举行" target="_blank" class="a01">初中体育与健身教研活动在朝阳中学举行</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[06-16]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=902" title="“融合 研究 提升”静安区心理教研活动在朝阳中学举行" target="_blank" class="a01">“融合 研究 提升”静安区心理教研活动…</a></td>
+  </tr>
+
+</table>
+
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div></td>
+          </tr>
+      </tbody>
+    </table>
+	<div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div>
+	</td>
+	
+    </tr>
+	
+  <tr>
+  
+    <td width="330" align="center" valign="top">
+<table width=298 border=0 cellpadding=0 cellspacing=0 class="hemo_new">
+      <tbody>
+        <tr>
+          <td width=22 height="33" align="center"><img src="images/article_ico_1.gif" width="11" height="13"></td>
+          <td width=273 align="left"><a href="otype.asp?classid=4"><strong>德育空间</strong></a></td>
+          <td width=30>　</td>
+        </tr>
+        <tr>
+          <td height="23" colspan="3" align="center">
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="3"></div>
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[05-28]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=939" title="朝阳中学体验浸入式戏剧《四行仓库保卫战》" target="_blank" class="a01">朝阳中学体验浸入式戏剧《四行仓库保卫战…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[04-20]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=932" title="观影《厉害了，我的国》" target="_blank" class="a01">观影《厉害了，我的国》</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[02-26]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=925" title="“金犬献瑞，愿‘旺’成真”——朝阳中学2017第二学期开学典礼暨“心淑教育奖励基金”颁奖仪式" target="_blank" class="a01">“金犬献瑞，愿‘旺’成真”——朝阳中学…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[12-22]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=921" title="冬日暖阳下的老少融融-------记朝阳中学四叶草爱心助老活动" target="_blank" class="a01">冬日暖阳下的老少融融-------记朝…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[12-05]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=918" title="弘扬宪法精神，建设法治中国，共创美好生活——上海市朝阳中学开展“国家宪法日”宣传活动" target="_blank" class="a01">弘扬宪法精神，建设法治中国，共创美好生…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[12-05]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=917" title="“不忘初心跟党走，雏鹰振翅新时代”——朝阳中学少代会" target="_blank" class="a01">“不忘初心跟党走，雏鹰振翅新时代”——…</a></td>
+  </tr>
+
+</table>
+
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div></td>
+          </tr>
+      </tbody>
+    </table>
+	<div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div>
+	</td>
+	
+    <td width="330" align="center" valign="top">
+<table width=298 border=0 cellpadding=0 cellspacing=0 class="hemo_new">
+      <tbody>
+        <tr>
+          <td width=22 height="33" align="center"><img src="images/article_ico_1.gif" width="11" height="13"></td>
+          <td width=273 align="left"><a href="otype.asp?classid=5"><strong>科研动态</strong></a></td>
+          <td width=30>　</td>
+        </tr>
+        <tr>
+          <td height="23" colspan="3" align="center">
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="3"></div>
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[10-31]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=574" title="朝阳中学2013年6月科研工作动态" target="_blank" class="a02">朝阳中学2013年6月科研工作动态</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[10-31]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=573" title="朝阳中学2013年5月科研工作动态" target="_blank" class="a02">朝阳中学2013年5月科研工作动态</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[10-31]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=572" title="朝阳中学2013年4月科研工作动态" target="_blank" class="a02">朝阳中学2013年4月科研工作动态</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[10-31]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=571" title=" 朝阳中学3月科研工作动态" target="_blank" class="a02"> 朝阳中学3月科研工作动态</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[10-31]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=570" title="朝阳中学2013年2月科研工作动态" target="_blank" class="a02">朝阳中学2013年2月科研工作动态</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[10-31]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=569" title="2012年12月科研工作动态" target="_blank" class="a02">2012年12月科研工作动态</a></td>
+  </tr>
+
+</table>
+
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div></td>
+          </tr>
+      </tbody>
+    </table>
+	<div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div>
+	</td>
+	
+    </tr>
+	
+  <tr>
+  
+    <td width="330" align="center" valign="top">
+<table width=298 border=0 cellpadding=0 cellspacing=0 class="hemo_new">
+      <tbody>
+        <tr>
+          <td width=22 height="33" align="center"><img src="images/article_ico_1.gif" width="11" height="13"></td>
+          <td width=273 align="left"><a href="otype.asp?classid=6"><strong>教师学习</strong></a></td>
+          <td width=30>　</td>
+        </tr>
+        <tr>
+          <td height="23" colspan="3" align="center">
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="3"></div>
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[09-18]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=834" title=" 教师的素质" target="_blank" class="a01"> 教师的素质</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[09-22]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=652" title=" 习近平总书记号召全国教师做“四有”好老师" target="_blank" class="a01"> 习近平总书记号召全国教师做“四有”好…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[04-25]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=624" title=" 朝阳中学组织学习《中小学教师违反职业道德行为处理办法》" target="_blank" class="a01"> 朝阳中学组织学习《中小学教师违反职业…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[03-13]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=330" title=" 组织全体教师观看影片《钱学森》" target="_blank" class="a01"> 组织全体教师观看影片《钱学森》</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[03-11]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=291" title="教师阳光语录" target="_blank" class="a01">教师阳光语录</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[11-23]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=185" title=" 迎世博，上图讲座进百校 " target="_blank" class="a02"> 迎世博，上图讲座进百校 </a></td>
+  </tr>
+
+</table>
+
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div></td>
+          </tr>
+      </tbody>
+    </table>
+	<div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div>
+	</td>
+	
+    <td width="330" align="center" valign="top">
+<table width=298 border=0 cellpadding=0 cellspacing=0 class="hemo_new">
+      <tbody>
+        <tr>
+          <td width=22 height="33" align="center"><img src="images/article_ico_1.gif" width="11" height="13"></td>
+          <td width=273 align="left"><a href="otype.asp?classid=7"><strong>图书管理</strong></a></td>
+          <td width=30>　</td>
+        </tr>
+        <tr>
+          <td height="23" colspan="3" align="center">
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="3"></div>
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[05-15]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=936" title="关于开展“教育改革40年——我读《上海教育丛书》”征文活动的通知" target="_blank" class="a01">关于开展“教育改革40年——我读《上海…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[05-10]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=935" title="2018年5月新书介绍" target="_blank" class="a01">2018年5月新书介绍</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[01-24]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=924" title="2018年寒假推荐书目" target="_blank" class="a01">2018年寒假推荐书目</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[11-30]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=916" title="电子期刊" target="_blank" class="a01">电子期刊</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[11-23]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=915" title="2017年11月新书介绍" target="_blank" class="a01">2017年11月新书介绍</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[06-21]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=903" title="2017年暑期推荐书目" target="_blank" class="links">2017年暑期推荐书目</a></td>
+  </tr>
+
+</table>
+
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div></td>
+          </tr>
+      </tbody>
+    </table>
+	<div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div>
+	</td>
+	
+    </tr>
+	
+  <tr>
+  
+    <td width="330" align="center" valign="top">
+<table width=298 border=0 cellpadding=0 cellspacing=0 class="hemo_new">
+      <tbody>
+        <tr>
+          <td width=22 height="33" align="center"><img src="images/article_ico_1.gif" width="11" height="13"></td>
+          <td width=273 align="left"><a href="otype.asp?classid=10"><strong>学生园地</strong></a></td>
+          <td width=30>　</td>
+        </tr>
+        <tr>
+          <td height="23" colspan="3" align="center">
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="3"></div>
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[01-25]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=209" title="【艺鹰画社】艺鹰掇英" target="_blank" class="links">【艺鹰画社】艺鹰掇英</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[01-25]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=208" title="【艺鹰画社】辉煌从这里起步" target="_blank" class="links">【艺鹰画社】辉煌从这里起步</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[08-31]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=150" title="2009学年第一学期“心淑教育奖励基金”获奖名单" target="_blank" class="a01">2009学年第一学期“心淑教育奖励基金…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[08-31]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=149" title="2008学年第一学期"心淑奖学金"获奖名单" target="_blank" class="a01">2008学年第一学期"心淑奖学金"获奖…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[08-31]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=148" title="朝阳中学“心淑教育奖励基金”2007学年度第二学期获奖学生名单" target="_blank" class="a01">朝阳中学“心淑教育奖励基金”2007学…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[08-31]</span><img src="images/news_ico.gif" width="15" height="11">
+      <img src='images/news.gif' border=0 alt='图片新闻'><a href="onews.asp?id=147" title="朝阳中学“心淑教育奖励基金”2007学年第一学期奖励名单" target="_blank" class="a01">朝阳中学“心淑教育奖励基金”2007学…</a></td>
+  </tr>
+
+</table>
+
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div></td>
+          </tr>
+      </tbody>
+    </table>
+	<div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div>
+	</td>
+	
+    <td width="330" align="center" valign="top">
+<table width=298 border=0 cellpadding=0 cellspacing=0 class="hemo_new">
+      <tbody>
+        <tr>
+          <td width=22 height="33" align="center"><img src="images/article_ico_1.gif" width="11" height="13"></td>
+          <td width=273 align="left"><a href="otype.asp?classid=11"><strong>家长学校</strong></a></td>
+          <td width=30>　</td>
+        </tr>
+        <tr>
+          <td height="23" colspan="3" align="center">
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="3"></div>
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[11-15]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=275" title="开展良好的家庭教育 构筑未成年人思想道德防线" target="_blank" class="a01">开展良好的家庭教育 构筑未成年人思想道…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[10-29]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=271" title=" 家庭教育的灵魂是人文教育" target="_blank" class="a01"> 家庭教育的灵魂是人文教育</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[10-19]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=267" title="[家庭教育指导案例]爸爸，今天我最快乐！" target="_blank" class="a01">[家庭教育指导案例]爸爸，今天我最快乐…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[10-19]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=264" title="[家庭教育指导案例]单亲家庭子女教育案例" target="_blank" class="a01">[家庭教育指导案例]单亲家庭子女教育案…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[10-08]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=259" title=" [家庭教育案例分析]教育中的作用力与反作用力" target="_blank" class="a01"> [家庭教育案例分析]教育中的作用力与…</a></td>
+  </tr>
+
+  <tr>
+    <td height="24" align="left" class="i_news"> <span>[12-09]</span><img src="images/news_ico.gif" width="15" height="11">
+      <a href="onews.asp?id=187" title=" 第十讲 全面提高家长的素养" target="_blank" class="a01"> 第十讲 全面提高家长的素养</a></td>
+  </tr>
+
+</table>
+
+		  <div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div></td>
+          </tr>
+      </tbody>
+    </table>
+	<div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div>
+	</td>
+	
+    </tr>
+	
+</table>
+  <div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div>
+  </div></td>
+<td width="220" height="100%" align="center" valign="top">
+<table width="201" border="0" cellpadding="0" cellspacing="0" >
+            <tr> 
+              <td colspan="3">
+				<img src="Images/xygg1.gif" width="192" height="34"></td>
+            </tr>
+            <tr> 
+               <td width="201" height="191" valign="top" background="Images/231.gif">
+                
+<table width="77%" border="0" align="center" cellpadding="3" class="turl">
+  <tr>
+    <td >
+	<MARQUEE scrollamount="1" scrolldelay="40" direction= "up" height="157" width="171" id="gg" onmouseover="gg.stop()" onmouseout="gg.start()">
+暂无公告2018-5-29</MARQUEE>
+	</td>
+  </tr>
+</table>
+
+</td>
+            </tr>
+                      </table>
+          <br>
+
+<table width="220" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="40" align="center" background="images/tit_bg.gif">
+	<span style="letter-spacing: 4px"><strong><font size="3" color="#0066FF">站内搜索</font></strong></span></td>
+  </tr>
+  <tr>
+    <td align="center"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="tab_k">
+       <form action="search.asp" method="get" name="form1" id="form1">
+        <tr>
+          <td height="35" align="center" bgcolor="#F4F4F4"><input name="key" type="text" class="input" id="key" size="19" /></td>
+        </tr>
+        <tr>
+          <td height="35" align="center" bgcolor="#F4F4F4"><select name="otype" class="input" id="otype" style="line-height:30px;">
+            <option value="title" selected="selected" class="input">新闻标题</option>
+            <option value="msg" class="input">新闻内容</option>
+          </select>
+                <input type="submit" name="submit2" value="搜索" class="input" /></td>
+        </tr>
+      </form>
+      <tr><td></td></tr>
+    </table></td>
+  </tr>
+</table>
+  <br>
+  <table width="220" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="33" align="center" background="images/tit_bg.gif"><strong>热门新闻</strong> top10</td>
+    </tr>
+    <tr>
+      <td height="22" align="center"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="tab_k">
+          
+          <tr onMouseOver="this.bgcolor='#ffffff';" onMouseOut="this.bgcolor='#F4F4F4';" bgcolor=#F4F4F4>
+            <td width="85%" align="left">&nbsp; <a class="a02" href="onews.asp?id=362" title=" 2012年5月新书介绍" target="_blank"><span class="s01"> 2012年5月新书介绍
+            </span></a></td>
+            <td width="15%" height="23"><font color="#ff0000">25670</font></td>
+          </tr>
+          
+          <tr onMouseOver="this.bgcolor='#ffffff';" onMouseOut="this.bgcolor='#F4F4F4';" bgcolor=#F4F4F4>
+            <td width="85%" align="left">&nbsp; <a class="a01" href="onews.asp?id=186" title="第九讲 家教误区种种——现代初中生家庭教育中存在的主要问题" target="_blank"><span class="s01">第九讲 家教误区种种——
+              …
+              
+            </span></a></td>
+            <td width="15%" height="23"><font color="#ff0000">20286</font></td>
+          </tr>
+          
+          <tr onMouseOver="this.bgcolor='#ffffff';" onMouseOut="this.bgcolor='#F4F4F4';" bgcolor=#F4F4F4>
+            <td width="85%" align="left">&nbsp; <a class="a01" href="onews.asp?id=179" title=" 第七讲 孩子自立的重要一步——家庭劳动教育" target="_blank"><span class="s01"> 第七讲 孩子自立的重要
+              …
+              
+            </span></a></td>
+            <td width="15%" height="23"><font color="#ff0000">19132</font></td>
+          </tr>
+          
+          <tr onMouseOver="this.bgcolor='#ffffff';" onMouseOut="this.bgcolor='#F4F4F4';" bgcolor=#F4F4F4>
+            <td width="85%" align="left">&nbsp; <a class="a01" href="onews.asp?id=153" title="  安全文明校园岗位工作细则" target="_blank"><span class="s01">  安全文明校园岗位工作
+            </span></a></td>
+            <td width="15%" height="23"><font color="#ff0000">18261</font></td>
+          </tr>
+          
+          <tr onMouseOver="this.bgcolor='#ffffff';" onMouseOut="this.bgcolor='#F4F4F4';" bgcolor=#F4F4F4>
+            <td width="85%" align="left">&nbsp; <a class="a01" href="onews.asp?id=160" title=" 细说毛泽东给儿子开列的书单" target="_blank"><span class="s01"> 细说毛泽东给儿子开列的
+            </span></a></td>
+            <td width="15%" height="23"><font color="#ff0000">17744</font></td>
+          </tr>
+          
+          <tr onMouseOver="this.bgcolor='#ffffff';" onMouseOut="this.bgcolor='#F4F4F4';" bgcolor=#F4F4F4>
+            <td width="85%" align="left">&nbsp; <a class="a01" href="onews.asp?id=157" title=" 学生坐不直危害健康 专家:背手坐直可防脊柱侧弯" target="_blank"><span class="s01"> 学生坐不直危害健康 专
+              …
+              
+            </span></a></td>
+            <td width="15%" height="23"><font color="#ff0000">17699</font></td>
+          </tr>
+          
+          <tr onMouseOver="this.bgcolor='#ffffff';" onMouseOut="this.bgcolor='#F4F4F4';" bgcolor=#F4F4F4>
+            <td width="85%" align="left">&nbsp; <a class="a01" href="onews.asp?id=119" title=" 飞扬的青春，成长的足迹——记朝阳中学十四岁生日暨八年级入团仪式活动" target="_blank"><span class="s01"> 飞扬的青春，成长的足迹
+              …
+              
+            </span></a></td>
+            <td width="15%" height="23"><font color="#ff0000">17635</font></td>
+          </tr>
+          
+          <tr onMouseOver="this.bgcolor='#ffffff';" onMouseOut="this.bgcolor='#F4F4F4';" bgcolor=#F4F4F4>
+            <td width="85%" align="left">&nbsp; <a class="a01" href="onews.asp?id=170" title=" 第三讲 孩子成才的必要条件" target="_blank"><span class="s01"> 第三讲 孩子成才的必要
+            </span></a></td>
+            <td width="15%" height="23"><font color="#ff0000">17243</font></td>
+          </tr>
+          
+          <tr onMouseOver="this.bgcolor='#ffffff';" onMouseOut="this.bgcolor='#F4F4F4';" bgcolor=#F4F4F4>
+            <td width="85%" align="left">&nbsp; <a class="a01" href="onews.asp?id=174" title=" 第五讲 吃得苦中苦，方为现代人——提高孩子承受挫折的能力" target="_blank"><span class="s01"> 第五讲 吃得苦中苦，方
+              …
+              
+            </span></a></td>
+            <td width="15%" height="23"><font color="#ff0000">15579</font></td>
+          </tr>
+          
+          <tr onMouseOver="this.bgcolor='#ffffff';" onMouseOut="this.bgcolor='#F4F4F4';" bgcolor=#F4F4F4>
+            <td width="85%" align="left">&nbsp; <a class="a01" href="onews.asp?id=101" title=" 政史地心活动周简讯" target="_blank"><span class="s01"> 政史地心活动周简讯
+            </span></a></td>
+            <td width="15%" height="23"><font color="#ff0000">14827</font></td>
+          </tr>
+          
+      </table></td>
+    </tr>
+  </table>
+  　</td>
+  </tr>
+</table>
+ <table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+   <tr>
+     <td width="82%" height="33" background="images/tit_bg.gif"><span class="links_">&nbsp;<strong>快速通道</strong></span></td>
+   </tr>
+   <tr>
+     <td height="22" align="center"><table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#F4F4F4" class="tab_k" >
+         
+         <tr onMouseOver="this.bgcolor='#ffffff';"onmouseout="this.bgcolor='#efefef';" >
+           <td width="82%" height="27" align="left" >
+
+             <a href="http://www.cyschool.edu.sh.cn/anmai" target="_blank"><img src="../images/link/amxj.jpg" alt="朝阳中学安脉学藉管理" width="95" height="50" hspace="2" vspace="2" border="0" /></a>
+             
+             <a href="http://www.easc.sh.cn" target="_blank"><img src="../images/link/easc.jpg" alt="教育督察网" width="95" height="50" hspace="2" vspace="2" border="0" /></a>
+             
+             <a href="http://www.shjdg.org/html/" target="_blank"><img src="../images/link/106.jpg" alt="上海市禁毒科普教育馆" width="95" height="50" hspace="2" vspace="2" border="0" /></a>
+             
+             <a href="http://www.shedunews.com/web/Channel_19.html" target="_blank"><img src="../images/link/上海文明教育LOGO.jpg" alt="上海教育文明在线" width="95" height="50" hspace="2" vspace="2" border="0" /></a>
+             
+             <a href="http://www.shedunews.com" target="_blank"><img src="../images/link/上海教育新闻网LOGO.jpg" alt="上海教育新闻网" width="95" height="50" hspace="2" vspace="2" border="0" /></a>
+             
+             <a href="http://10.40.36.3" target="_blank"><img src="../images/link/dzts.jpg" alt="上海市朝阳中学电子图书馆" width="95" height="50" hspace="2" vspace="2" border="0" /></a>
+                        </td>
+         </tr>
+     </table></td>
+   </tr>
+ </table>
+ </center>
+ <div style="width:100%"><img src="images/spacer.gif" width="1" height="5"></div>
+<center>
+<div style="width:900px;">
+<div style="width:900px; background-color:#bbe5a6; height:25px; line-height:200%; text-align:center">
+<a title="把本站设为首页" 
+      onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.cyschool.edu.sh.cn');" 
+      href="javascript:" target="_self">设为首页</a>&nbsp;|&nbsp;<a title="加入收藏夹" 
+      onclick="window.external.addFavorite('http://www.cyschool.edu.sh.cn','上海市朝阳中学新闻系统')" 
+      href="javascript:" target="_self">收藏本站</a>&nbsp;|&nbsp;<a href="" target="_blank">过客留言</a>&nbsp;|&nbsp;<a href="mailto:cyc@zb.edu.sh.cn" target="_blank">联系我们</a>&nbsp;|&nbsp;<a href="link.asp">友情链接</a>&nbsp;|&nbsp;<a href="" target="_blank">RSS订阅</a>&nbsp;&nbsp;</div>
+<div style="width:903px; background-image:url('images/bottom.gif'); float:left;height:126px;text-align:center; line-height:200%">
+	<div align="left">
+	<table border="0" id="table1" cellspacing="0" cellpadding="0" align="center">
+		<tr>
+			<td align="center" valign="bottom">　<a href="http://www.cyschool.edu.sh.cn/" target="_blank">上海市朝阳中学新闻系统</a></td>
+			<td align="center" rowspan="2"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript   src='http://dcs.conac.cn/js/02/025/0000/40239510/CA020250000402395100002.js' type='text/javascript'%3E%3C/script%3E"));</script></td>
+			<td align="center" rowspan="2">
+			<img border="0" src="../images/gaba.png" width="20" height="20"><br><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010602002189" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px;">沪公网安备 31010602002189号</p></a></td>
+		</tr>
+		<tr>
+			<td align="center" valign="top"><a href="mailto:cyc@zb.edu.sh.cn">Email:cyc@zb.edu.sh.cn</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;copyright @ 2006-2008<br/></td>
+		</tr>
+	</table>
+	</div>
+	<br>
+	<br>
+</div>
+</div>
+</center></body>
+</html>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html1/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html2/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html3/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html4/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html5/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html6/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html7/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html8/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html9/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html10/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html11/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html12/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html13/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html14/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html15/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html16/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html17/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html18/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html19/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html20/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html21/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html22/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html23/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html24/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html25/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html26/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html27/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html28/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html29/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html30/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html31/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html32/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html33/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html34/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html35/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html36/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html37/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html38/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html39/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html40/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html41/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html42/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html43/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html44/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html45/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html46/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html47/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html48/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html49/index.asp'></a>
+<a href='http://www.cyschool.edu.sh.cn/yyhs/gallery/news/html50/index.asp'></a>

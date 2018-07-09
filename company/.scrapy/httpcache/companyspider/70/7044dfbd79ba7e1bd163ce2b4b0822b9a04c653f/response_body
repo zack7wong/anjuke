@@ -1,0 +1,220 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta content="南京市建宁中学 建宁中学" name="Keywords" /><meta name="Description" /><title>
+	建宁中学
+</title><link rel="stylesheet" type="text/css" href="themes/16526/default/css/common.css" /><link rel="stylesheet" type="text/css" href="themes/16526/default/css/index.css" /><link rel="stylesheet" type="text/css" href="themes/16526/default/css/lrtk.css" />
+<script language="javascript" type="text/javascript" src="themes/16526/default/js/jquery.js" ></script>
+<script language="javascript" type="text/javascript" src="themes/16526/default/js/date.js" ></script>
+<script type="text/javascript" src="themes/16526/default/js/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="themes/16526/default/js/cufon-yui.js"></script>
+<script type="text/javascript" src="themes/16526/default/js/scripts.js"></script>
+<script type="text/javascript" src="themes/16526/default/js/custom.js"></script>
+<link rel="stylesheet"href="css_web/SouSuo.css" type="text/css" />
+<script type="text/javascript" src="js/index_nojquery.js"></script>
+<script src="Js/flv.js" type="text/javascript"></script>
+<script type ="text/javascript">
+    function Search() {
+
+        var searstr = document.getElementById("searchmsg").value;
+
+        if (searstr.length == 0) {
+            $(document).ready(function() { f_alert2('warn', '请输入搜索内容!'); });
+            return false;
+        }
+        else {
+            var str = "Search.aspx?msg=" + encodeURI(encodeURI(searstr));
+
+            $(document).ready(function() { f_openLayerAndRefresh(str, '900', '450', '搜索结果', '', '1900'); });
+            return false;
+        }
+
+    }
+
+</script>
+</head>
+<body>
+    <div class="header">
+    
+    <table border=0 width="1102">
+                <tr>
+                    <td width="540">
+                    <div style ="padding-left:45px;padding-top:8px">
+                        <a class="flo_left">
+                            <img src="themes/16526/default/images/logo.png" /></a></div>
+                    </td>
+                    <td align="left" valign="top">
+                    <div style ="padding-top:40px;padding-left:100px">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input class="search_input" name="searchmsg" id="searchmsg" type="text" maxlength="64"
+                                        autocomplete="off" value="" />
+                                </td>
+                                <td>
+                                    <button onmouseout="this.className='search'" onmouseover="this.className='search search_hover'"
+                                        class="search" onclick="return Search();">
+                                    </button>
+                                </td>
+                    </tr></table></div>
+                    </td>
+                </tr>
+            </table>
+        
+        <div class="nav">
+            <ul class='nav_items'><li class='nav_li'><a href='default.aspx'>网站首页</a></li><li class='nav_li'><a href=http://www.njjnzx.com/WarticleView.aspx?articleid=2rtUQqV1oQk= target='_blank'>学校简介</a></li><li class='nav_li'><a href=WarticleList.aspx?typeid=uZ9QPwIjYeg=>新闻动态</a></li><li class='nav_li'><a href=WarticleList.aspx?typeid=v12hNAV62Ls=>园丁天地</a></li><li class='nav_li'><a href=WarticleList.aspx?typeid=v12hNAV62Ls=&bigclassid=cuiYHZCOwSU=>党建工作</a></li><li class='nav_li'><a href=WarticleList.aspx?typeid=0zbaPXcmgn4=&bigclassid=YC5dzgBwxiw=>校园足球</a></li><li class='nav_li'><a href=WarticleList.aspx?typeid=0zbaPXcmgn4=&bigclassid=PNG3bLIjrs4=>创客教育</a></li><li class='nav_li'><a href=WarticleList.aspx?typeid=0zbaPXcmgn4=&bigclassid=h,1nRHCiNU8=>学生活动</a></li><li class='nav_li'><a href=WarticleList.aspx?typeid=i2znGxFApmE=>电子校刊</a></li><li class='nav_li'><a href=WarticleList.aspx?typeid=aBZs788msvk=>荣誉展示</a></li><li class='nav_li'><a href=http://www.njjnzx.com/login.aspx target='_blank'>校园内网</a></li></ul>
+        </div>
+    </div>
+    <div class="newsbig" id="slider-bg">
+        <div class="full-width-wrapper" id="slider-frame">
+            <div class="fixed-width-wrapper maxx-theme" id="slider-wrapper">
+                <div id="slider">
+                <a href='WarticleView.aspx?articleid=cgMbybOdkzk=' title='放飞青春 追逐梦想' target='_blank'><img src='UpLoadFile/4/20180524094440.jpg' width=1202 height=440><span class='txt_bg'></span><span class='txt'>放飞青春 追逐梦想</span></a><a href='WarticleView.aspx?articleid=DwVCnRMVpW0=' title='远离犯罪 珍惜青春' target='_blank'><img src='UpLoadFile/19/20180524085433.jpg' width=1202 height=440><span class='txt_bg'></span><span class='txt'>远离犯罪 珍惜青春</span></a><a href='WarticleView.aspx?articleid=vlJugCsyhxs=' title='育新启航' target='_blank'><img src='UpLoadFile/4/20180515020045.jpg' width=1202 height=440><span class='txt_bg'></span><span class='txt'>育新启航</span></a><a href='WarticleView.aspx?articleid=n59HED5kGMU=' title='春季户外拓展圆满落幕' target='_blank'><img src='UpLoadFile/4/20180509040856.jpg' width=1202 height=440><span class='txt_bg'></span><span class='txt'>春季户外拓展圆满落幕</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="news main">
+<div class="gonggao">
+            <div class="gonggao_l">
+            </div>
+            <div class="gonggao_r">
+                <table border="0" height="30px">
+                    <tr>
+                        <td width="80px" valign="top">
+                            <div style="padding-top: 6px;width:70px;font-size:14px;">
+                                <b>通知公告：</b></div>
+                        </td>
+                        <td>
+                            <div style="position: relative; width: 1300px; overflow: hidden" id="tempWrap2">
+                                <marquee direction='left' scrollamount='3' style='width: 1070px;'><a href='WarticleView.aspx?articleid=fwSpUmBqABk=' target='_blank'><img src='images/006.gif' border='0'>南京市义务教育家庭经济困难学生资助申请指南(05-04)</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='WarticleView.aspx?articleid=xT9gmT1CE60=' target='_blank'><img src='images/006.gif' border='0'>2018年招聘编外体育教师公告(05-03)</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='WarticleView.aspx?articleid=5cfFyx6HCi8=' target='_blank'><img src='images/006.gif' border='0'>2018年招聘编外工作人员公告(04-08)</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</marquee>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+	<div class="tzgg">
+    	<div class="tzgg_tilte"><span><a href="WarticleList.aspx?typeid=uZ9QPwIjYeg=">>></a></span><h2>
+            新闻动态</h2></div>
+            
+            <div><a href=WarticleView.aspx?articleid=cgMbybOdkzk= target='_blank'><img src='UpLoadFile/4/small/20180524094440.jpg' width='360' height='160' border=0 /></a></div><div class='titlestyle'><a href=WarticleView.aspx?articleid=cgMbybOdkzk= target='_blank'>放飞青春 追逐梦想</a></div><div style ='paddint-bottom:10px;text-align:left'>2018/5/24</div>
+            <div class="xian"></div>
+            <div class='titlestyle'><a href='WarticleView.aspx?articleid=vlJugCsyhxs=' target='_blank'>育新启航</a></div><div style ='paddint-bottom:10px;text-align:left'>2018-05-15</div><div class='titlesmallstyle'><a href='WarticleView.aspx?articleid=vlJugCsyhxs=' target='_blank'>4月26日下午，“2018江苏省高雅艺术进校园活动”之南京艺术学院走进我校声乐专场音乐会在我校多功能厅热情开演。
+
+此次音乐会得到了民盟江苏省委和南京艺术学院的大力支持。民盟江苏省委社会综合处袁骞副处长，南京艺术学院艺术创作与实践处金捷处长、史小玲教授与我校师生一起欣赏了这场充满浓郁少数民族与...</a></div>
+            
+    </div>
+    <div class="xwdt">
+    	<div class="tzgg_tilte"><span><a href="WarticleList.aspx?typeid=v12hNAV62Ls=&bigclassid=cuiYHZCOwSU=">>></a></span><h2>党建工作</h2></div>
+
+            
+            <div class='titlestyle'><a href='WarticleView.aspx?articleid=f94WL1N11iE=' target='_blank'>我校组织党员认真学习十九大精神</a></div><div style ='paddint-bottom:10px;text-align:left'>2017-10-30</div><div class='titlesmallstyle'><a href='WarticleView.aspx?articleid=f94WL1N11iE=' target='_blank'>10月24日，中国共产党第十九次全国代表大会在北京胜利闭幕。为了及时向全校党员传达十九大报告中的一系列新思想、新目标、新论断、新举措、新部署，我校党总支组织全体党员开展了集中学习。
+
+大家共同分享了《担负起新时代中国共产党的历史使命——从党的十九大看伟大斗争伟大工程伟大事业伟大梦想》、《新时代 新征...</a></div>
+            <div class="xian2"></div>
+            <div><a href=WarticleView.aspx?articleid=,Aq,6SwJurM= target='_blank'><img src='UpLoadFile/11/small/20171128115523.jpg' width='360' height='160' border=0 /></a></div><div class='titlestyle'><a href=WarticleView.aspx?articleid=,Aq,6SwJurM= target='_blank'>中心组学习搬进帮扶农家共学十九大精神</a></div><div style ='paddint-bottom:10px;text-align:left'>2017/11/28</div>
+            
+
+    </div>
+    <div class="jqhd">
+        <div class="tzgg_tilte"><span><a href="WarticleList.aspx?typeid=v12hNAV62Ls=">>></a></span><h2>
+            园丁天地</h2></div>
+            <div class='titlestyle'><a href='WarticleView.aspx?articleid=8oViPvIocLM=' target='_blank'>课堂上闪耀的德育（三）</a></div><div style ='paddint-bottom:10px;text-align:left'>2018-05-23</div><div class='titlesmallstyle'><a href='WarticleView.aspx?articleid=8oViPvIocLM=' target='_blank'>“课堂上闪耀的德育”第三轮课堂教学公开课活动于四月落下帷幕。活动中，各教研组老师研究年级、班级学情，把握不同年龄段学生在情感认知和意志品质方面的特点，研读教学内容，着力于将“陶冶情操、锻炼意志、提高认识、确立信念、培养道德行为习惯”等德育目标与教学内容相互渗透，贯穿于课堂教学活动中，发挥学科教学...</a></div>
+            <div class="xian2"></div>
+            <div><a href=WarticleView.aspx?articleid=jCt2s9lelro= target='_blank'><img src='UpLoadFile/9/small/20180309092356.jpg' width='360' height='160' border=0 /></a></div><div class='titlestyle'><a href=WarticleView.aspx?articleid=jCt2s9lelro= target='_blank'>班级学期工作计划展示交流会议召开</a></div><div style ='paddint-bottom:10px;text-align:left'>2018/3/9</div>
+
+    </div>
+</div>
+
+
+<div class="news main">
+	<div  class="tzgg">
+    	<div class="tzgg_tilte"><span><a href="WarticleList.aspx?typeid=0zbaPXcmgn4=&bigclassid=YC5dzgBwxiw=">>></a></span><h2>
+            校园足球</h2></div>
+            <div><a href=WarticleView.aspx?articleid=WA72cCAQ9DU= target='_blank'><img src='UpLoadFile/17/small/20170609025052.jpg' width='360' height='160' border=0 /></a></div><div class='titlestyle'><a href=WarticleView.aspx?articleid=WA72cCAQ9DU= target='_blank'>首届“校长杯”校园足球联赛圆满落幕</a></div><div style ='paddint-bottom:10px;text-align:left'>2017/6/9</div>
+            <div class="xian"></div>
+            <div class='titlestyle'><a href='WarticleView.aspx?articleid=pLXwCNWStqA=' target='_blank'>南京市建宁中学足球队训练时间表</a></div><div style ='paddint-bottom:10px;text-align:left'>2018-04-13</div><div class='titlesmallstyle'><a href='WarticleView.aspx?articleid=pLXwCNWStqA=' target='_blank'>一、初中足球队：
+
+星期一下午15：45——17:30
+
+星期二早上6:40——7:45
+
+星期二下午14:50——16:30
+
+星期三下午15：45——17:30
+
+星期四下午14:50——16:30
+
+星期五早上6:40——7:45
+
+星期五下午16:00——17:30
+
+星期六上午8:30——11:30
+
+二、中专足球队：
+
+星期二上午10:1</a></div>
+    </div>
+    <div class="xwdt">
+    	<div class="tzgg_tilte"><span><a href="WarticleList.aspx?typeid=0zbaPXcmgn4=&bigclassid=h,1nRHCiNU8=">>></a></span><h2>学生活动</h2></div>
+            <div class='titlestyle'><a href='WarticleView.aspx?articleid=Va6EDkKeZz0=' target='_blank'>学习团知识 力争做团员</a></div><div style ='paddint-bottom:10px;text-align:left'>2018-04-09</div><div class='titlesmallstyle'><a href='WarticleView.aspx?articleid=Va6EDkKeZz0=' target='_blank'>2018年4月9日，阳光正好，春意盎然。我校14名学生入团积极分子在团总支的组织下齐集微格教室，开始了向团组织积极靠拢的又一重要步伐——团课学习。团总支陶书记详细介绍了共青团发展历史，从团旗、团徽、团歌等核心知识开始，进一步介绍了共青团的组织原则、纪律等。并为同学们着重讲解分析了共青团的权利和义务，鼓...</a></div>
+            <div class="xian2"></div>
+            <div><a href=WarticleView.aspx?articleid=DwVCnRMVpW0= target='_blank'><img src='UpLoadFile/19/small/20180524085433.jpg' width='360' height='160' border=0 /></a></div><div class='titlestyle'><a href=WarticleView.aspx?articleid=DwVCnRMVpW0= target='_blank'>远离犯罪 珍惜青春</a></div><div style ='paddint-bottom:10px;text-align:left'>2018/5/24</div>
+    </div>
+    <div class="jqhd">
+        <div class="tzgg_tilte"><span><a href="WarticleList.aspx?typeid=0zbaPXcmgn4=&bigclassid=PNG3bLIjrs4=">>></a></span><h2>
+            创客教育</h2></div>
+            <div class='titlestyle'><a href='WarticleView.aspx?articleid=2t8N1lJhfUo=' target='_blank'>FRC远征美国</a></div><div style ='paddint-bottom:10px;text-align:left'>2017-06-05</div><div class='titlesmallstyle'><a href='WarticleView.aspx?articleid=2t8N1lJhfUo=' target='_blank'>2017年4月19-22号，我校组建的南京FRC队伍5839，参加了在美国休斯敦举办的FRC世界锦标赛。这是我校第三次参加这种世界级的机器人大赛。整个比赛参赛国家众多，队员接近4万人，我们被分在休斯敦牛顿赛区，该赛区高手如林，是一个向世界顶尖高手学习的大好机会。在比赛中，我们克服了各种困难，充分展现了我们自己所...</a></div>
+            <div class="xian2"></div>
+            <div><a href=WarticleView.aspx?articleid=qBV1iKGKa0I= target='_blank'><img src='UpLoadFile/4/small/20180509034731.jpg' width='360' height='160' border=0 /></a></div><div class='titlestyle'><a href=WarticleView.aspx?articleid=qBV1iKGKa0I= target='_blank'>我校获省第二届中小学创客大赛二等奖</a></div><div style ='paddint-bottom:10px;text-align:left'>2018/5/9</div>
+    </div>
+</div>
+<br />
+<br />
+<div  class="footer">
+    <div style ="text-align:center;margin:0 auto;">
+    <table width="880" border=0 align=center><tr><td align="left" style ="color:White">主办单位：南京市建宁中学&nbsp;&nbsp;&nbsp;&nbsp招生电话：85535057、85535058&nbsp;&nbsp;&nbsp;&nbsp;备案号：苏ICP备06003740号<br/>
+        地址：南京市鼓楼区幕府南路孙家洼82号&nbsp;&nbsp;&nbsp;&nbsp;<a href='login.aspx' target='_blank' style='color:#fff'>[管理入口]</a><br />文章总数：366&nbsp;&nbsp;&nbsp;今日访问：687&nbsp;&nbsp;&nbsp;本月访问：53083&nbsp;&nbsp;&nbsp;访问总数：201259</td><td><img src="erweima.jpg" border=0 width=100 height=100/></td></tr></table>
+       </div>
+	
+</div>
+<style type="text/css"> 
+#left_aside{
+    display:block;
+    height:390px;
+    position:absolute;
+    left:0;
+    top:120px;
+}
+#right_aside{
+    display:block;
+    height:390px;
+    position:absolute;
+    right:0;
+    top:120px;
+}
+.close{
+    position:absolute;
+    z-index:999;
+    cursor:default;
+}
+.left{
+     top:5px;
+     right:5px;
+     color:#fff;
+}
+.right{
+     top:5px;
+     left:5px;
+     color:#fff;
+}
+.left:hover,.right:hover{cursor: pointer;color:#fff}
+</style>
+ 
+
+</body>
+</html>

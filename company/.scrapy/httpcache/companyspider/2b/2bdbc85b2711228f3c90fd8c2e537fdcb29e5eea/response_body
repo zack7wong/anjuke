@@ -1,0 +1,578 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>重庆市工业学校、重庆职工会计专科学校欢迎您！</title>
+<meta name="keywords" content="重庆市工业学校,重庆职工会计专科学校,中职学校,工业学校,工业校,会专" />
+<meta name="description" content="重庆市工业学校创建于1956年，是重庆市经济和信息化委员会主管的一所综合性重点中等专业学校。学校的前身是分别建校于1956年-1958年的重庆市城建校、重庆市化工校、重庆市机电校、重庆市科技校和重庆市煤炭校五所学校。1961年经重庆市委批准，五校合并成立一所新的学校，定名为重庆市工业学校。“文革”中，学校被迫停办。1973年学校恢复办学和招生以后，学校逐步发展壮大。1998年学校经市政府批准为“省部级重点中专”，2004年3月学校成为国家教育部首批公布的“国家级重点中职学校”。" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="skin/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="skin/css/common_style.css"/>
+<link rel="stylesheet" type="text/css" href="skin/css/home.css"/>
+<link type="text/css" rel="stylesheet" href="http://www.cqiss.com/skin/css/mF_YSlider.css" />
+<script type="text/javascript" src="http://www.cqiss.com/skin/scripts/myfocus-1.2.4.full.js"></script>
+<script type="text/javascript" src="http://www.cqiss.com/skin/scripts/mF_YSlider.js"></script>
+<script type="text/javascript" src="http://www.cqiss.com/skin/scripts/jquery.js"></script>
+<script type="text/javascript" src="http://www.cqiss.com/skin/scripts/tipswindown.js"></script>
+<script type="text/javascript"> 
+newsurl="http://www.cqiss.com/";
+</script>
+<script type="text/javascript" src="http://www.cqiss.com/skin/scripts/scrolltopcontrol.js"></script>
+<script type="text/javascript" src="http://www.cqiss.com/skin/scripts/jquery-ui-1.8.19.custom.min.js"></script>
+<script type="text/javascript" src="http://www.cqiss.com/skin/scripts/jquery.scrollfollow.js"></script>
+<script type="text/javascript" src="http://www.cqiss.com/skin/scripts/common_js.js"></script>
+<script type="text/javascript" src="http://www.cqiss.com/skin/scripts/base64.js"></script>
+<script type="text/javascript">
+       	
+	//手动loginsubmit
+	loginsubmit = function(){
+	      var userName = document.getElementById("username").value; 
+	      var password = document.getElementById("password").value;
+
+
+	     var b = new Base64();
+
+	     if(userName.length>0){
+	        userName = b.encode(userName);
+	     }
+	     
+	     if(password.length>0){
+	        password = b.encode(password);
+	     }
+	      
+	     document.getElementById("loginName").value = userName;
+	     document.getElementById("loginPassword").value = password;
+
+	     var form = document.getElementById("loginForm");
+	     
+		 if (form.fireEvent) {
+		
+		 	form.fireEvent('onsubmit');
+		
+		 	form.submit();
+		
+		 } else if (document.createEvent) {
+		
+		 	var ev = document.createEvent('HTMLEvents');
+		
+		 	ev.initEvent('submit', false, true);
+		
+		 	form.dispatchEvent(ev);
+		
+		 }
+	}
+</script>
+<style type="text/css">
+.container {
+	position: relative;
+}
+#floatBanner {
+	width: 220px;
+	height: 140px;
+	position: fixed;
+	_position: absolute;
+	left: 0px;
+	top: 200px;
+	z-index: 10000;
+	background: url(/d/file/p/2015-12-07/fd44a47c560f79603eca3ae987c3b154.jpg) no-repeat left top;
+	cursor: pointer;
+}
+.btn_close_floatBanner {
+	width: 26px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	color: #FFF;
+	cursor: pointer;
+	float: right;
+}
+#float_div_fzxy {
+	padding: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9000;
+}
+.btn_fzxy {
+/*	width: 210px;
+	height: 97px;
+	position: absolute;
+	right: 10px;
+	cursor: pointer;*/
+}
+#xwzxHot a.first_news, #xwzxHot a.first_news:link {
+	width: 392px;
+	}
+.fzxy{border: 1px solid #a7cbf4;
+    cursor: pointer;
+    display: block;
+    height: 52px;
+    padding: 1px;
+    position: relative;
+    width: 229px;
+    z-index: 1000;}
+
+.news-box-a1{ width:240px; height:211px; margin-right:6px; float:left; }	
+.zsjy{ width:240px; height:136px; float:none; }
+.djgz{ width:240px; height:65px; display:block; border:none; padding:0; margin-top:12px; }
+.zysz{ width:500px; height:213px; float:left; background:url(http://www.cqiss.com/d/file/p/2017-06-20/b346a290665a1d7bb076a1af33aa0ec8.png) no-repeat left top; position:relative;  border:1px solid #dadada; }
+.btn-subject{ width:155px; height:60px; position:absolute; display:block;}
+.btn-subject-1{ left:12px; top:8px; }
+.btn-subject-2{ left:172px; top:8px; }
+.btn-subject-3{ left:334px; top:8px; }
+.btn-subject-4{ left:12px; top:77px; }
+.btn-subject-5{ left:334px; top:77px; }
+.btn-subject-6{ left:12px; top:147px; }
+.btn-subject-7{ left:334px; top:147px; }
+
+
+.right_sec_col ul.newslist_2 li {
+    width:98%;
+}
+.right_sec_col ul.newslist_2 li span{ display:none; }
+
+.zsjy .title_1{ width:100%; }
+</style>
+</head>
+
+<body>
+<!--<script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8cf3f400e75aff91416f203d0551c714' type='text/javascript'%3E%3C/script%3E")) </script>-->
+<div class="bg_container">
+<!--  <div id="floatBanner" title="重庆市工业学校在线咨询" onclick="javascript:window.open('http://p.qiao.baidu.com//im/index?siteid=7932479&ucid=10101279');">
+    <div class="btn_close_floatBanner">关闭</div>
+  </div>-->
+  <div class="container"> <!-----------------------------------------------------------页面头部----------------------------------------------------------------->
+
+<div class="header">
+  
+  <div class="banner" style="background:url(http://www.cqiss.com/d/file/p/2017-04-11/2aa98b49d07dbd7d1c87f7818c7614da.jpg">
+  </div>
+  <div class="logo" onclick="javascript:window.open('http://www.cqiss.com/');"></div>
+  <!--搜索框-->
+  <ul id="search" style="right:100px; top:8px;">
+    <form action="http://www.cqiss.com/e/search/index.php" method="post" name="searchform" id="searchform"  target= "_self">
+      <li>
+        <input type="text" value="请输入关键字查询" name="keyboard" border="0" id="keyboard" class="keyboard"  style=" background:#FFF; " onfocus="javascript:this.value='';this.style.color='#F00';"/>
+        <input type="hidden" name="show" value="title" />
+        <input type="hidden" name="tempid" value="1" />
+      </li>
+      <li>
+        <input type="image" src="http://www.cqiss.com/skin/images/common_style/btn_search.jpg" class="inputSub" />
+      </li>
+    </form>
+  </ul>
+  <ul class="headerLink">
+    <li class="swsy" onclick="javascript:SetHome(this,window.location);"><a onClick="SetHome(this,window.location);" style="color:#F00;">设为首页</a></li>
+    <li class="headerLink_divider">|</li>
+    <li class="jrsc"><a onClick="javascript:addfavorite();" style="color:#F00;">加入收藏</a> </li>
+  </ul>
+  <!--banner-->
+  
+  <div class="clearfloat"></div>
+  <!--导航栏-->
+  <ul class="nav">
+        <li class="selected_nav"><a href="/">首&nbsp;&nbsp;页</a></li>
+            <li class=""><a href="http://www.cqiss.com/xxgk/" target="_self">学校概况</a></li>
+            <li class=""><a href="http://www.cqiss.com/jyjy/" target="_self">教育教研</a></li>
+            <li class=""><a href="http://www.cqiss.com/zsjy/" target="_self">招生就业</a></li>
+            <li class=""><a href="http://www.cqiss.com/ggfw/" target="_self">信息公开</a></li>
+            <li class=""><a href="http://www.cqiss.com/pxjd/" target="_self">培训鉴定</a></li>
+            <li class=""><a href="http://www.cqiss.com/xywh/" target="_self">校园文化</a></li>
+            <li class=""><a href="http://www.cqiss.com/szxy/" target="_self">数字校园</a></li>
+            <li class=""><a href="http://www.cqiss.com/xqhz/" target="_self">校企合作</a></li>
+      </ul> </div>
+<div class="clearfloat"></div>
+<script type="text/javascript">
+$(function(){
+	$(".inputSub").hover(function(){
+		$(this).attr("src","http://www.cqiss.com/skin/images/common_style/btn_search_over.jpg");
+		},function(){
+			$(this).attr("src","http://www.cqiss.com/skin/images/common_style/btn_search.jpg");
+			})
+	})
+</script> 
+    
+    <!-----------------------------------------------------------------页面主体内容（pageMain） 开始----------------------------------------------------------------->
+    <div class="pageMain"> <div class="pageMain_top_bar">
+  <div class="text_weather">今日天气：</div>
+  <div class="weather">
+    <iframe name="weather_inc"  src="http://i.tianqi.com/index.php?c=code&id=11&icon=1" width="270" height="28" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="padding-top:7px;"></iframe>
+  </div>
+  <div class="date"><script language="javascript" src="http://www.cqiss.com/skin/scripts/date.js"></script></div>
+</div>
+ <div class="clearfloat"></div> 
+      <!-----------------------------------------------------------页面主体内容---第一栏----------------------------------------------------------------->
+      <div class="first_col">
+        <div class="left_col_1">
+          <div class="ggtz">
+            <div class="btn_more_ggtz" onclick="javascript:window.open('http://www.cqiss.com/ggfw/ggtz/');"></div>
+            <div class="container_ggtz " id="container_ggtz">
+              <ul class="newslist_3">
+                <li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-05-17/4110.html"  target="_blank" title="食堂经营服务采购招标公告（2018-05-17）"  >食堂经营服务采购招标公告</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-04-16/4085.html"  target="_blank" title="学生实验实训耗材采购项目（第二次）中（2018-04-16）"  >学生实验实训耗材采购项目（第二次）中</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-04-10/4082.html"  target="_blank" title="学生实验实训耗材采购项目招标公告（2018-04-10）"  >学生实验实训耗材采购项目招标公告</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-04-09/4079.html"  target="_blank" title="内控制度建设服务采购项目中标结果（2018-04-08）"  >内控制度建设服务采购项目中标结果</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-04-09/4078.html"  target="_blank" title="车辆工程科学生实训耗材中标结果公（2018-04-08）"  >车辆工程科学生实训耗材中标结果公</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-04-02/4077.html"  target="_blank" title="关于2014级大专学生返校办理毕业事（2018-04-02）"  >关于2014级大专学生返校办理毕业事</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-03-30/4074.html"  target="_blank" title="学生实验实训耗材采购项目招标文件（2018-03-30）"  >学生实验实训耗材采购项目招标文件</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-03-30/4073.html"  target="_blank" title="内控制度建设服务采购招标文件（第二（2018-03-30）"  >内控制度建设服务采购招标文件（第二</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-03-27/4071.html"  target="_blank" title="内控制度建设服务采购招标文件（2018-03-27）"  >内控制度建设服务采购招标文件</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-03-21/4070.html"  target="_blank" title="校园零星装饰改造项目中标结果公示（2018-03-21）"  >校园零星装饰改造项目中标结果公示</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-05-17/4110.html"  target="_blank" title="食堂经营服务采购招标公告（2018-05-17）"  >食堂经营服务采购招标公告</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-04-16/4085.html"  target="_blank" title="学生实验实训耗材采购项目（第二次）中（2018-04-16）"  >学生实验实训耗材采购项目（第二次）中</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-04-10/4082.html"  target="_blank" title="学生实验实训耗材采购项目招标公告（2018-04-10）"  >学生实验实训耗材采购项目招标公告</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-04-09/4079.html"  target="_blank" title="内控制度建设服务采购项目中标结果（2018-04-08）"  >内控制度建设服务采购项目中标结果</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-04-09/4078.html"  target="_blank" title="车辆工程科学生实训耗材中标结果公（2018-04-08）"  >车辆工程科学生实训耗材中标结果公</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-04-02/4077.html"  target="_blank" title="关于2014级大专学生返校办理毕业事（2018-04-02）"  >关于2014级大专学生返校办理毕业事</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-03-30/4074.html"  target="_blank" title="学生实验实训耗材采购项目招标文件（2018-03-30）"  >学生实验实训耗材采购项目招标文件</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-03-30/4073.html"  target="_blank" title="内控制度建设服务采购招标文件（第二（2018-03-30）"  >内控制度建设服务采购招标文件（第二</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-03-27/4071.html"  target="_blank" title="内控制度建设服务采购招标文件（2018-03-27）"  >内控制度建设服务采购招标文件</a></li><li><div class="bg_newslist_3"></div><a href="http://www.cqiss.com/ggfw/ggtz/2018-03-21/4070.html"  target="_blank" title="校园零星装饰改造项目中标结果公示（2018-03-21）"  >校园零星装饰改造项目中标结果公示</a></li>              </ul>
+            </div>
+            <script>
+			 var speed = 5000;
+			function scroll_news(){
+				$(function(){
+					$('.container_ggtz li').eq(0).fadeOut('slow',function(){
+						$(this).clone().appendTo($(this).parent()).fadeIn('slow');
+						$(this).remove();
+					});
+				});
+			}
+		
+			var MyMar=setInterval(scroll_news,speed)
+			$(function(){
+			$("#ggtz,.container_ggtz,.newslist_3 li a").hover(function(){
+				clearInterval(MyMar);
+				},function(){
+					MyMar=setInterval(scroll_news,speed);
+					})
+			 })
+   		 </script> 
+          </div>
+          <div class="clearfloat"></div>
+          <div class="loginbox">
+            <div style="display:none">
+              <form id="loginForm" method="post" action="http://183.230.36.38/dc/integrationlogin/login!login.action">
+                <input type="hidden" name="loginName" value="" id="loginName"/>
+                <input type="hidden" name="loginPassword" value="" id="loginPassword"/>
+                <input type="hidden" name="encryptstate" value="1" id="encryptstate"/>
+              </form>
+            </div>
+            <input value="admin"  onfocus="this.value=''"  name="loginName" id="username" type="text" class="text">
+            <input name="loginPassword" value="123456"  onfocus="this.value=''" id="password" type="password" class="text">
+            <input class="btn btn_login" id="submit" value="" onclick="javascript:loginsubmit();"   type="button">
+          </div>
+        </div>
+        
+        <!--焦点图图框----------------开始-->
+        <div class="focus_pic">
+          <div id="spotFlash">
+            <div id="myFocus-wrap">
+              <div id="myFocus" style="visibility:hidden"> 
+                <!--焦点图盒子-->
+                <ul class="pic">
+                  <!--内容列表--> 
+                                    <li><a href="http://www.cqiss.com/xywh/xyxw/2018-05-16/4109.html" target="_blank"><img src="http://www.cqiss.com/d/file/xywh/xyxw/2018-05-16/6c85090ba1b16abf9ee3a4ce75cf0b46.jpg" thumb="" alt="我校81届机械甘孜班校友重聚母校开" text="我校81届机械甘孜班校友重聚母校开" title="我校81届机械甘孜班校友重聚母校开展入校40周年师生座谈会" width="342px" height="264px"/></a></li>
+                                    <li><a href="http://www.cqiss.com/xywh/tshd/2018-05-25/4124.html" target="_blank"><img src="http://www.cqiss.com/d/file/xywh/xyxw/2018-05-16/6c85090ba1b16abf9ee3a4ce75cf0b46.jpg" thumb="" alt="我校81届机械甘孜班校友重聚母校开" text="我校81届机械甘孜班校友重聚母校开" title="我校81届机械甘孜班校友重聚母校开展入校40周年师生座谈会" width="342px" height="264px"/></a></li>
+                                    <li><a href="http://www.cqiss.com/xywh/xyxw/2018-05-16/4107.html" target="_blank"><img src="http://www.cqiss.com/d/file/xywh/xyxw/2018-05-16/042f63f7781b373b0d6671721f6f0a0e.jpg" thumb="" alt="“奔鼎杯”建筑图抄绘竞赛落幕" text="“奔鼎杯”建筑图抄绘竞赛落幕" title="“奔鼎杯”建筑图抄绘竞赛落幕" width="342px" height="264px"/></a></li>
+                                    <li><a href="http://www.cqiss.com/xywh/tshd/2018-05-25/4122.html" target="_blank"><img src="http://www.cqiss.com/d/file/xywh/xyxw/2018-05-16/042f63f7781b373b0d6671721f6f0a0e.jpg" thumb="" alt="“奔鼎杯”建筑图抄绘竞赛落幕" text="“奔鼎杯”建筑图抄绘竞赛落幕" title="“奔鼎杯”建筑图抄绘竞赛落幕" width="342px" height="264px"/></a></li>
+                                    <li><a href="http://www.cqiss.com/xywh/ssfc/2018-05-25/4142.html" target="_blank"><img src="http://www.cqiss.com/d/file/xywh/xyxw/2018-05-16/042f63f7781b373b0d6671721f6f0a0e.jpg" thumb="" alt="“奔鼎杯”建筑图抄绘竞赛落幕" text="“奔鼎杯”建筑图抄绘竞赛落幕" title="“奔鼎杯”建筑图抄绘竞赛落幕" width="342px" height="264px"/></a></li>
+                                  </ul>
+              </div>
+            </div>
+            <script type="text/javascript">
+var mf=myFocus;//简称
+var html=mf.$('myFocus-wrap').innerHTML;//保存原html
+function getParam(){//获取全部参数
+	return {
+		id:'myFocus',
+		pattern:'mF_YSlider',
+		time:3,
+		trigger:'mouseover',
+		width:342,
+		height:264,
+		txtHeight:23,
+		auto:true,/*自动播放*/
+		autoZoom:false,/*是否缩小居中图片以适应焦点图大小*/
+		wrap:false,/*显示自带边框(如果有的话)*/
+		index:0,/*开始显示的图片顺序*/
+		delay:0,/*按钮悬停(mouseover)模式下的延迟*/
+		//额外参数
+		duration:600,/*运动速度*/
+		direction:'top',/*运动方向*/
+		easing:'easeOut',/*运动形式*/
+		less:1,/*是否无缝*/
+		chip:8,/*图切片数量(能被图高整除才有效)*/
+		type:4,/*切片效果*/
+		pad:32,/*图片留边宽度*/
+		txtWidth:38,/*文字段宽度*/
+		gray:0,/*非当前图片是否变灰*/
+		direct:'random',/*切出方向*/
+		turn:'random'/*翻牌方向*/
+	};
+}
+function reHTML(){//还原
+	mf.$('myFocus-wrap').innerHTML=html;
+	var css=mf.$$('style')[0];
+	css.parentNode.removeChild(css);
+};
+
+function apply(){//应用
+	reHTML();//还原
+	var p=getParam();//获取参数
+	p.waiting=false;//不等待图片加载
+	myFocus.set(p,true);
+}
+//开始设置
+myFocus.set(getParam(),true);
+//屏蔽IE执行误差
+window.onerror=function(){return true};
+</script> 
+          </div>
+        </div>
+        <!--焦点图图框----------------结束-->
+        <div class="xxxw appear_box">
+          <div class="title_xxxw"><a href="/xywh/xyxw/" class="morelink_1">更多&gt;&gt;</a></div>
+          <div id="xwzxHot"><a href="http://www.cqiss.com/xywh/xyxw/2018-05-25/4141.html" target="_blank" class="first_news">重庆市工业学校举行“两学一做”学习教育专题</a>
+<p><span> 5月22日下午，学校党委书记熊满川同志以《坚守底线 廉洁自律 坚决贯彻从严治党要求》为题，在励行楼8楼会议室给全校在职党员同志上了一堂深刻而又生动的专题廉政党课。党课由纪委书记左磊同志主持。专题廉政党课上，熊书记结合自己的学习体会和工作实际，从坚守政治纪律政治规矩，加强修养、坚定信念，加强作风建设、慎用手中权力三个 </span><a href="http://www.cqiss.com/xywh/xyxw/2018-05-25/4141.html" target="_blank">详细&gt;&gt;</a></p></div>
+          <ul class="newslist_1">
+            <li titleImg="http://www.cqiss.com/e/data/images/notimg.gif" smallText=" 5月22日下午，学校党委书记熊满川同志以《坚守底线 廉洁自律 坚决贯彻从严治党要求》为题，在励行楼8楼会议室给全校在职党员同志上了一堂深刻而又生动的专题廉政党课。党课由纪委书记左磊同志主持。专题廉政党课上，熊书记结合自己的学习体会和工作实际，从坚守政治纪律政治规矩，加强修养、坚定信念，加强作风建设、慎用手中权力三个"><span>2018-05-25</span><a href="http://www.cqiss.com/xywh/xyxw/2018-05-25/4141.html"  target="_blank" title="重庆市工业学校举行“两学一做”学习教育专题廉政党课"  >重庆市工业学校举行“两学一做”学习教育专题廉政党课</a></li><li titleImg="http://www.cqiss.com/e/data/images/notimg.gif" smallText=" 为了倾听青年教职工的心声，促进青年教职工尽快成长，5月17日下午，学校2018年青年教职工座谈会在励行楼8楼大会议室召开。学校校长杜宏伟，副校长吴岭、左磊、陈雅娟，全体中干、全校青年教职工参加了此次会议，会议由团委书记李卉卉主持。座谈会上，今年新进的青年教职工逐一作了自我介绍。随后，进行了一个学校知识竞赛抢答小活动，利用知"><span>2018-05-25</span><a href="http://www.cqiss.com/xywh/xyxw/2018-05-25/4140.html"  target="_blank" title="重庆市工业学校举行2018年青年教职工座谈会"  >重庆市工业学校举行2018年青年教职工座谈会</a></li><li titleImg="http://www.cqiss.com/d/file/xywh/xyxw/2018-05-16/6c85090ba1b16abf9ee3a4ce75cf0b46.jpg" smallText="虎头岩下再聚首，共叙当年师生情。5月15日，我校81届机械甘孜班的33名校友重返母校，开展庆祝入校40周年师生座谈会。校长杜宏伟、副校长刘正瑜、工会主席况力、退休校领导幸大富出席相关活动。座谈会由原重庆市第二中级人民法院政治部主任、81届机械甘孜班班长吴克强主持。会前，校友们先后参观了校史室、红岩文化室、机电和车辆工"><span>2018-05-16</span><a href="http://www.cqiss.com/xywh/xyxw/2018-05-16/4109.html"  target="_blank" title="我校81届机械甘孜班校友重聚母校开展入校40周年师生座谈会"  >我校81届机械甘孜班校友重聚母校开展入校40周年师生座</a></li><li titleImg="http://www.cqiss.com/e/data/images/notimg.gif" smallText="2018年5月9日，由车辆工程科主办的汽车知识大赛在学校大礼堂里一片欢呼声中圆满落下帷幕。车辆工程科科长陈刚、德育辅导员、专业教师、班主任及学生参加了大赛。本次比赛的24队选手分为甲、乙两组分别进行比赛。大赛题目经过龚丽萍老师精心设计，赛题内容全面，难度也更兼顾两个年级，专业程度较高。大赛的第一个环节是每队选手两道"><span>2018-05-16</span><a href="http://www.cqiss.com/xywh/xyxw/2018-05-16/4108.html"  target="_blank" title="“广达杯”汽车知识竞赛圆满成功"  >“广达杯”汽车知识竞赛圆满成功</a></li>          </ul>
+        </div>
+        <img src="http://www.cqiss.com/d/file/p/2017-03-15/9495fb2d0543afaf090c7f0302413e7e.jpg"   title="职业院校管理水平提升行动计划" class="sfxjs" onclick="window.open('/jyjy/xdjh/');"/> </div>
+      <div class="clearfloat"></div>
+      <!-----------------------------------------------------------页面主体内容---第二栏----------------------------------------------------------------->
+      <div class="sec_col">
+        <div class="left_sec_col appear_box"> <img src="http://www.cqiss.com/d/file/p/2017-06-20/0d4f61acba2708deae35cc5237862e89.png"  onclick="window.open('/xywh/fzxy/');" title="法制校园" class="fzxy"/>
+          <div class="spdp">             <div class="moiveContent">
+              <center><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="640" height="480">
+<param name="movie" value="http://www.cqiss.com/e/data/images/flvplayer.swf?vcastr_file=http://www.cqiss.com/d/file/xxsp/2018-01-18/a2e0af696d72caf2394c494f3f7577a4.flv&amp;vcastr_title=&amp;BarColor=0xFF6600&amp;BarPosition=1&amp;IsAutoPlay=true" />
+<param name="quality" value="high" />
+<param name="allowFullScreen" value="true" /><embed width="640" height="480" src="http://www.cqiss.com/e/data/images/flvplayer.swf?vcastr_file=http://www.cqiss.com/d/file/xxsp/2018-01-18/a2e0af696d72caf2394c494f3f7577a4.flv&amp;vcastr_title=&amp;BarColor=0xFF6600&amp;BarPosition=1&amp;IsAutoPlay=true" allowfullscreen="true" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed></object></center>            </div>
+            <img src="http://www.cqiss.com/d/file/xxsp/2018-01-18/3221e9be2ebd4a1bb1035a1e48cdcf2f.jpg" title="学校校长杜宏伟做客新华网"  alt="学校校长杜宏伟做客新华网" width="229" height="145"/>  </div>
+        </div>
+        <div class="right_sec_col appear_box">
+          <div class="right_sec_col">
+            <div class="news-box-a1">
+            <div  class="zsjy">
+              <div class="title_1"><span>招生信息</span> <a href="/zsjy/zsxx/" class="morelink_1">更多&gt;&gt;</a></div>
+              <ul class="newslist_2">
+                <li><span>2018-04-02</span><a href="http://www.cqiss.com/zsjy/zsxx/zzzs/2018-04-02/4076.html"  target="_blank" title="小编带你读“两会”，选择工校这些专业前景可观！"  >[中职招生]小编带你读“两会”，选择工校这些专</a></li><li><span>2018-02-06</span><a href="http://www.cqiss.com/zsjy/zsxx/zzzs/2018-02-06/4047.html"  target="_blank" title="2018年中专招生简章"  >[中职招生]<strong>2018年中专招生简章</strong></a></li><li><span>2017-03-27</span><a href="http://www.cqiss.com/zsjy/zsxx/dzzs/2017-03-27/3685.html"  target="_blank" title="重庆职工会计专科学校招生简章"  >[大专招生]重庆职工会计专科学校招生简章</a></li>              </ul>
+              </div>
+               <img src="http://www.cqiss.com/d/file/p/2017-06-20/8d85c3f36ec03862aac2ef23fd04cad0.png"   title="党建工作" class="djgz" onclick="window.open('/djgz/');"/>
+            </div>
+            <div class="news_box_1 zysz">
+				<a href="/zsjy/zysz/2016-03-25/3060.html" class="btn-subject btn-subject-1" target="_blank"></a>
+                <a href="/zsjy/zysz/2016-03-25/3059.html" class="btn-subject btn-subject-2" target="_blank"></a>
+                <a href="/zsjy/zysz/2016-03-25/3062.html" class="btn-subject btn-subject-3" target="_blank"></a>
+                <a href="/zsjy/zysz/2016-03-25/3063.html" class="btn-subject btn-subject-4" target="_blank"></a>
+                <a href="/zsjy/zysz/2016-03-25/3064.html" class="btn-subject btn-subject-5" target="_blank"></a>
+                <a href="/zsjy/zysz/2016-03-25/3061.html" class="btn-subject btn-subject-6" target="_blank"></a>
+                <a href="/zsjy/zysz/2017-06-18/3819.html" class="btn-subject btn-subject-7" target="_blank"></a>
+            </div>
+            <div class="clearfloat"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfloat"></div>
+      <!-----------------------------------------------------------页面主体内容---第三栏----------------------------------------------------------------->
+      <div class="third_col appear_box">
+        <div id="rowpic">
+          <div id="rowBtnL"><a href="javascript:void(0);"></a></div>
+          <div id="rowpiccom">
+            <ul>
+              <li><img src="http://www.cqiss.com/d/file/xxgk/xyfg/2017-06-20/c6bde10fe3217ec26dc1250692855777.jpg" alt="校园一角"  title="校园一角"  onclick="window.open('/xxgk/xyfg/')" class="img_border" style="cursor:pointer;"/><div class="pic_name">校园一角</div></li><li><img src="http://www.cqiss.com/d/file/xxgk/xyfg/2017-06-20/217bd1250b26a4c6d8b3d32a1aa29c57.jpg" alt="食堂礼堂综合楼"  title="食堂礼堂综合楼"  onclick="window.open('/xxgk/xyfg/')" class="img_border" style="cursor:pointer;"/><div class="pic_name">食堂礼堂综合楼</div></li><li><img src="http://www.cqiss.com/d/file/xxgk/xyfg/2016-04-25/8371dd5b7a24b7ab9948bda6962c7eeb.jpg" alt="校赋墙"  title="校赋墙"  onclick="window.open('/xxgk/xyfg/')" class="img_border" style="cursor:pointer;"/><div class="pic_name">校赋墙</div></li><li><img src="http://www.cqiss.com/d/file/xxgk/xyfg/2017-06-20/370c1f12e54c9c1fa6b40811c9c4d3c1.jpg" alt="励行楼"  title="励行楼"  onclick="window.open('/xxgk/xyfg/')" class="img_border" style="cursor:pointer;"/><div class="pic_name">励行楼</div></li><li><img src="http://www.cqiss.com/d/file/xxgk/xyfg/2017-06-20/b5c7aeee5a448d34ccde8643dc9b3d93.jpg" alt="鸿翔亭"  title="鸿翔亭"  onclick="window.open('/xxgk/xyfg/')" class="img_border" style="cursor:pointer;"/><div class="pic_name">鸿翔亭</div></li><li><img src="http://www.cqiss.com/d/file/xxgk/xyfg/2016-04-25/6a032b47b2830874dd10f5f59c67ffc3.jpg" alt="琴房"  title="琴房"  onclick="window.open('/xxgk/xyfg/')" class="img_border" style="cursor:pointer;"/><div class="pic_name">琴房</div></li><li><img src="http://www.cqiss.com/d/file/xxgk/xyfg/2016-04-25/995f296fa84e645b9cd199f863866aff.jpg" alt="形体房"  title="形体房"  onclick="window.open('/xxgk/xyfg/')" class="img_border" style="cursor:pointer;"/><div class="pic_name">形体房</div></li><li><img src="http://www.cqiss.com/d/file/xxgk/xyfg/2016-04-25/54e7bebc90fb8d722bb424ec9a41b975.jpg" alt="校史室"  title="校史室"  onclick="window.open('/xxgk/xyfg/')" class="img_border" style="cursor:pointer;"/><div class="pic_name">校史室</div></li><li><img src="http://www.cqiss.com/d/file/xxgk/xyfg/2016-04-25/3fabdc5bd12c0ed2fc8b182eda0e1147.jpg" alt="红岩文化室"  title="红岩文化室"  onclick="window.open('/xxgk/xyfg/')" class="img_border" style="cursor:pointer;"/><div class="pic_name">红岩文化室</div></li><li><img src="http://www.cqiss.com/d/file/xxgk/xyfg/2016-04-25/b825b8a85d18c95d1c6e7004c4c48c03.jpg" alt="学生公寓"  title="学生公寓"  onclick="window.open('/xxgk/xyfg/')" class="img_border" style="cursor:pointer;"/><div class="pic_name">学生公寓</div></li>            </ul>
+          </div>
+          <div id="rowBtnR"><a href="javascript:void(0);"></a></div>
+        </div>
+      </div>
+      <div class="clearfloat"></div>
+      <!-----------------------------------------------------------页面主体内容---第四栏----------------------------------------------------------------->
+      <div class="fourth_col yqlj appear_box"> <a href="http://www.moe.gov.cn/" target="_blank"  title="中华人民共和国教育部">
+        中华人民共和国教育部        </a>&nbsp;<a href="http://www.cqei.gov.cn/" target="_blank"  title="重庆市经济和信息化委员会">
+        重庆市经济和信息化委员会        </a>&nbsp;<a href="http://www.cqjw.gov.cn/" target="_blank"  title="重庆市教育委员会">
+        重庆市教育委员会        </a>&nbsp;<a href="http://www.cqzyjy.com/" target="_blank"  title="重庆职业教育网">
+        重庆职业教育网        </a>&nbsp;<a href="http://www.cqjy.com/" target="_blank"  title="重庆市教育科学研究院">
+        重庆市教育科学研究院        </a>&nbsp;<a href="http://www.cqiss.com/cqhbcy/" target="_blank"  title="重庆环保产业职业教育集团">
+        重庆环保产业职业教育集团        </a>&nbsp; <a href="http://oa.cqiss.com:800/" target="_blank" class="btn_oa">学校OA地址</a></div>
+      <div class="clearfloat"></div>
+    </div>
+    <!-----------------------------------------------------------------页面主体内容（pageMain） 结束----------------------------------------------------------------->
+    
+    <div id="float_div_fzxy">
+      <!--<div class="btn_fzxy" onclick="window.open('/xywh/fzxy/');"><img src="/d/file/p/2015-04-14/57268ca4cca3d7b5048fcf299310ce08.png"/></div>-->
+      <div class="siderBar">
+        <div class="btn_siderBar"><img src="http://www.cqiss.com/skin/images/homes/btn_zxzx.png"  onclick="window.open('http://p.qiao.baidu.com//im/index?siteid=7932479&ucid=10101279');" class="btn_img"/>
+          <div class="btn_name">在线咨询</div>
+        </div>
+        <div class="btn_siderBar"><img src="http://www.cqiss.com/skin/images/homes/btn_zyjs.png"  onclick="window.open('/zsjy/zysz/');" class="btn_img"/>
+          <div class="btn_name">专业介绍</div>
+        </div>
+        <div class="btn_siderBar"><img src="http://www.cqiss.com/skin/images/homes/btn_zxbm.png" onclick="window.open('/zsjy/zxbm/');" class="btn_img"/>
+          <div class="btn_name">在线报名</div>
+        </div>
+
+        <div class="btn_siderBar"><img src="http://www.cqiss.com/skin/images/homes/btn_zsxcp.png"  class="btn_img btn_img_zsxcp"/>
+          <div class="btn_name">招生宣传片</div>
+                    <div class="moiveContent_zs">
+            <center><center><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="600" height="360">
+<param name="movie" value="http://www.cqiss.com/e/data/images/flvplayer.swf?vcastr_file=http://www.cqiss.com/d/file/zsjy/zsxx/zzzs/2018-05-14/bf35867d6dc128904610d60bab52165c.flv&amp;vcastr_title=&amp;BarColor=0xFF6600&amp;BarPosition=1&amp;IsAutoPlay=true" />
+<param name="quality" value="high" />
+<param name="allowFullScreen" value="true" /><embed src="http://www.cqiss.com/e/data/images/flvplayer.swf?vcastr_file=http://www.cqiss.com/d/file/zsjy/zsxx/zzzs/2018-05-14/bf35867d6dc128904610d60bab52165c.flv&amp;vcastr_title=&amp;BarColor=0xFF6600&amp;BarPosition=1&amp;IsAutoPlay=true" allowfullscreen="true" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="600" height="360"></embed></object></center></center><center>&nbsp;</center>
+<p>&nbsp;</p>          </div>
+           </div>
+        <div class="btn_siderBar"><img src="http://www.cqiss.com/skin/images/homes/mm_code.jpg"  /> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style type="text/css">
+.footer_color a,.footer_color a:link{ color:#000;}
+</style>
+<!-----------------------------------------------------------页面尾部----------------------------------------------------------------->
+<div class="footer">
+  <p>电话（传真）：（023）- 63311363&nbsp;&nbsp;&nbsp;&nbsp;电话（传真）：023- 63311363（党政办）&nbsp;&nbsp;&nbsp;&nbsp;023-63307489、63317727（招生就业办）</p>
+  <p>学校地址：重庆市渝中区红岩村(交农村360号)  &nbsp;&nbsp; 邮政编码：400043</p>
+  <p class="footer_color">版权所有：Copyright© 2011 &nbsp;&nbsp;<a href="http://www.miibeian.gov.cn/" target="_blank">渝ICP备17006908号</a>&nbsp;&nbsp;重庆市工业学校&nbsp;&nbsp;重庆职工会计专科学校</p>
+</div>
+<script type="text/javascript"> 
+scrolltotop.init();
+</script>
+<div style="display:none;"> 
+  <script src="http://www.cqiss.com/e/extend/stats/"></script> 
+</div>
+<script type="text/javascript">
+//拖动函数内页面
+function dragable(id){
+	var d=document,o=d.getElementById(id),s=o.style,x,y,p='onmousemove';
+	o.onmousedown=function(e){e=e||event;
+	x=e.clientX-o.offsetLeft;
+	y=e.clientY-o.offsetTop;
+	d[p]=function(e){e=e||event;s.left=e.clientX-x+'px';s.top=e.clientY-y+'px'};
+	d.onmouseup=function(){d[p]=null}}
+}
+function movdiv(id){//左下
+	//网页可见区域宽：document.body.offsetWidth (包括边线的宽) 
+	//网页可见区域高：document.body.offsetHeight (包括边线的宽)
+	width_cut=parseInt($("#"+id).width());
+	var d=document,o=d.getElementById(id),s=o.style,x,y;
+	var mx, my;
+	//s.left=0+'px';
+	//s.top=0+'px'
+	mx =  parseInt(window.screen.width)-width_cut;
+	my = window.screen.height ;
+	x=o.offsetLeft;
+	y=o.offsetTop;
+	if(y<my){
+	x=x*1+5;
+	y=y*1+5;
+	s.left=x+'px';
+	s.top=y+'px'
+	}else{
+		clearInterval(tm);
+		tm = setInterval("movdivt('floatBanner')", 60);
+	}
+}
+function movdivt(id){//右上
+	width_cut=parseInt($("#"+id).width());
+	var d=document,o=d.getElementById(id),s=o.style,x,y;
+	var mx, my;
+	//s.left=0+'px';
+	//s.top=0+'px'
+	mx =  parseInt(window.screen.width)-width_cut;
+	my = window.screen.height ;
+	x=o.offsetLeft;
+	y=o.offsetTop;
+	if(x<mx){
+	x=x*1+5;
+	y=y*1-5;
+	s.left=x+'px';
+	s.top=y+'px'
+	}else{
+		clearInterval(tm);
+		tm = setInterval("movdivtr('floatBanner')", 60);
+	}
+}
+function movdivtr(id){//右上
+	width_cut=parseInt($("#"+id).width());
+	var d=document,o=d.getElementById(id),s=o.style,x,y;
+	var mx, my;
+	//s.left=0+'px';
+	//s.top=0+'px'
+	mx =  parseInt(window.screen.width)-width_cut;
+	my = window.screen.height ;
+	x=o.offsetLeft;
+	y=o.offsetTop;
+	if(y>0){
+	x=x*1-5;
+	y=y*1-5;
+	s.left=x+'px';
+	s.top=y+'px'
+	}else{
+		clearInterval(tm);
+		tm = setInterval("movdivs('floatBanner')", 60);
+	}
+}
+function movdivs(id){
+	width_cut=parseInt($("#"+id).width());
+	var d=document,o=d.getElementById(id),s=o.style,x,y;
+	var mx, my;
+	//s.left=0+'px';
+	//s.top=0+'px'
+	mx =  parseInt(window.screen.width)-width_cut;
+	my = window.screen.height ;
+	x=o.offsetLeft;
+	y=o.offsetTop;
+	if(x>0){
+	x=x*1-5;
+	y=y*1+5;
+	s.left=x+'px';
+	s.top=y+'px'
+	}else{
+		clearInterval(tm);
+		tm = setInterval("movdiv('floatBanner')", 60);
+	}
+}
+var n = 0;//接收参数
+
+//“学校图片”栏目板块 滚动图片
+setRowPic();
+
+//学校新闻头条信息文字长度设置
+$("#xwzxHot p span").each(function(){
+		strText = $(this).text();
+		strText=strText.replace(/[ ]/g,"");
+		$(this).text(set_Chapter(strText,150));
+	})
+
+if( $.browser.version != '6.0'){
+		appear_func();
+	}
+	
+function sheight(){//设置高度
+	$("#float_div_fzxy").height($(".container").height());
+}
+
+
+$(function(){
+	$("body a").eq(0).remove();
+	moiveContent=$(".moiveContent").html();
+	$(".moiveContent").remove();
+	$(".spdp").css("cursor","pointer").click(function(){
+		stitle=$(this).find("img").attr("title");
+		tipsWindown(stitle,"iframe:"+moiveContent,640,480,"true","","true","text");
+		});
+		
+	moiveContent_zs=$(".moiveContent_zs").html();
+	$(".moiveContent_zs").remove();
+	$(".btn_img_zsxcp").css("cursor","pointer").click(function(){
+		tipsWindown("重庆市工业学校招生宣传片","iframe:"+moiveContent_zs,640,480,"true","","true","text");
+		});
+
+	tm = setInterval("movdiv('floatBanner')", 100);
+	//dragable('floatBanner');
+	$("#floatBanner").mouseover(function(){
+		clearInterval(tm);
+	}).mouseout(function(){
+		tm = setInterval("movdiv('floatBanner')", 500);
+	})
+
+	$(".btn_close_floatBanner").click(function(){
+		clearInterval(tm);
+		$(".btn_close_floatBanner").remove();
+		$("#floatBanner").remove();
+		})
+
+		setInterval("sheight()", 10); 
+		
+		function setScroll(){
+			//$('.btn_fzxy ').scrollFollow({speed: 1000, offset: 284});
+			$('.siderBar ').scrollFollow({speed: 1000, offset: 240});	   	   
+		}
+		setScroll();
+
+	})
+</script>
+</body>
+</html>

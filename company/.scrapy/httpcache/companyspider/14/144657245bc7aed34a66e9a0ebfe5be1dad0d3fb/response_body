@@ -1,0 +1,702 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" id="html">
+<head>
+<title>重庆清华中学 >> 首页</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href='/Skin/DefaultSkin.css' rel='stylesheet' type='text/css'>
+<script src="/JS/prototype.js"></script>
+<script src="/JS/scriptaculous.js"></script>
+<script src="/JS/checklogin.js"></script>
+
+<script type="text/javascript" src="/lib/jquery.js"></script>
+<script type="text/javascript" src="/lib/chili-1.7.pack.js"></script>
+<script type="text/javascript" src="/lib/jquery.easing.js"></script>
+<script type="text/javascript" src="/lib/jquery.dimensions.js"></script>
+<script type="text/javascript" src="/lib/jquery.accordion.js"></script>
+<script type="text/javascript" src="/JS/PhotoPlay.js"></script>
+<script language="javascript" type="text/javascript">
+document.getElementsByID = function(sIDValue,oBox) {
+  //适用于获取某个HTML区块内部同属于某一特定type的所有HTML元素，如:input,script,link等等
+  this.d= oBox || document;
+  var children = this.d.getElementsByTagName('*') || document.all;
+  var elements = new Array();
+  for (var ii = 0; ii < children.length; ii++) {
+    if (children[ii].id == sIDValue) {
+      elements.push(children[ii]);
+    }
+  }
+  return elements;
+}
+document.getElementsByClassName = function(className,oBox) {
+//适用于获取某个HTML区块内部含有某一特定className的所有HTML元素
+  this.d= oBox || document;
+  var children = this.d.getElementsByTagName('*') || document.all;
+  var elements = new Array();
+  for (var ii = 0; ii < children.length; ii++) {
+    var child = children[ii];
+    var classNames = child.className.split(' ');
+    for (var j = 0; j < classNames.length; j++) {
+      if (classNames[j] == className) {
+        elements.push(child);
+        break;
+      }
+    }
+  }
+  return elements;
+}
+function addEvent(obj, evType, fn){
+  if (obj.addEventListener){
+    obj.addEventListener(evType, fn, false);
+    return true;
+  } else if (obj.attachEvent){
+    var r = obj.attachEvent("on"+evType, fn);
+    return r;
+  } else {
+    return false;
+  }
+}
+  function addfavorite()
+  {
+  var url = "http://www.xxx.com";
+  var title = "重庆清华中学　官方主页x";
+    
+  if (document.all){  
+    try{  
+      window.external.addFavorite(url,title);  
+    }catch(e){  
+      alert( "加入收藏失败，请使用Ctrl+D进行添加" );  
+    }  
+      
+  }else if (window.sidebar){  
+    window.sidebar.addPanel(title, url, "");  
+   }else{  
+    alert( "加入收藏失败，请使用Ctrl+D进行添加" );  
+  }  
+  }
+  function ShowTab(id, a)
+  {
+    var bar = document.getElementById(id);
+    var lis = bar.getElementsByTagName("li");
+    for (var i=0; i<lis.length; i++) { 
+      lis[i].childNodes[0].className = ""
+    }
+    lis[a-1].childNodes[0].className = "on";
+    bar.id
+    document.getElementsByID("b1tab1",bar)[0].style.display = "none";
+    document.getElementsByID("b1tab2",bar)[0].style.display = "none";
+    document.getElementsByID("b1tab3",bar)[0].style.display = "none";
+    document.getElementsByID("b1tab4",bar)[0].style.display = "none";
+    document.getElementsByID("b1tab"+a,bar)[0].style.display = "block";
+  }
+  var ddmenuitem	= 0;
+
+  // open hidden layer
+  function mopen(id)
+  {	
+    // cancel close timer
+    mclose();
+    // close old layer
+    if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+    // get new layer and show it
+    ddmenuitem = document.getElementById(id);
+    ddmenuitem.style.visibility = 'visible';
+  }
+  // close showed layer
+  function mclose()
+  {
+    if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+  }
+
+  // close layer when click-out
+  document.onclick = mclose;
+  
+  jQuery().ready(function(){
+    // simple accordion
+    jQuery('#container').accordion({
+      header: '.title'
+    });
+  });
+/*
+function initdav() 
+{ 
+var fullWidth = getViewportWidth();
+document.getElementById("adv2").style.left = (fullWidth-150)+"px";
+} 
+addEvent(window, "load", initdav);
+addEvent(window, "resize", initdav);
+*/
+function move() 
+{ 
+if(document.documentElement.scrollTop>170){
+    document.getElementById("adv1").style.top=(document.documentElement.scrollTop+10) + "px";
+    document.getElementById("adv2").style.top=(document.documentElement.scrollTop+10) + "px";
+    document.getElementById("adv3").style.top=(document.documentElement.scrollTop+10) + "px";
+}
+else{
+    document.getElementById("adv1").style.top="170px";
+    document.getElementById("adv2").style.top="170px";
+    document.getElementById("adv3").style.top="170px";
+}
+if(document.documentElement.scrollTop>280){
+    document.getElementById("adv4").style.top=(document.documentElement.scrollTop+120) + "px";
+    document.getElementById("adv5").style.top=(document.documentElement.scrollTop+120) + "px";
+}
+else{
+    document.getElementById("adv4").style.top="280px";
+    document.getElementById("adv5").style.top="280px";
+}
+}
+ 
+function getViewportWidth() {
+	if (window.innerWidth!=window.undefined) return window.innerWidth; 
+	if (document.compatMode=='CSS1Compat') return document.documentElement.clientWidth; 
+	if (document.body) return document.body.clientWidth; 
+	return window.undefined; 
+}
+addEvent(window, "scroll", move);
+var x,y,Img1,flag,days,Btn,Link;
+        function CgHgt(){
+            Img1=document.getElementById("Header_Img_1");
+            days=document.getElementById("Days");
+            Btn=document.getElementById("Btn");
+	 Link=document.getElementById("Link");
+            if(y==undefined || y==1){
+                y=0;
+                x=0;
+            }
+            else{
+                y=1;
+                x=-67;
+                Img1.style.backgroundPositionY="-67px";
+                Img1.style.backgroundImage="url(Images/school/80banana_B.png)";
+                Btn.style.backgroundImage="url(Images/school/80bananaup.png)";
+                days.style.display="none";
+	      Link.style.height="110px";
+            }
+            days.innerHTML=GetDateDiff(Date(),'2018-04-29');
+            clearInterval(flag);
+            flag=setInterval(move,2);
+        }
+
+        function move(){
+
+            if(y<=0){
+                x=x-1;
+                Btn.style.top=(x+65)+"px";
+                Img1.style.backgroundPositionY=x+"px";
+                if(x<=-67){
+                    clearInterval(flag);
+                    Img1.style.backgroundPositionY="0px";
+                    Img1.style.backgroundImage="url(Images/school/80banana_L.png)";
+                    Btn.style.backgroundImage="url(Images/school/80bananado.png)";
+                    days.style.display="block";
+	         Link.style.height="60px";
+                }
+            }
+            else{
+                x=x+1;
+                Btn.style.top=(x+65)+"px";
+                Img1.style.backgroundPositionY=x+"px";
+                if(x>=0)
+                {
+                    clearInterval(flag);
+                }
+            }
+        }
+        function GetDateDiff(startDate,endDate)
+        {
+            var startTime = new Date(Date.parse(startDate.replace(/-/g,   "/"))).getTime();
+            var endTime = new Date(Date.parse(endDate.replace(/-/g,   "/"))).getTime();
+            var dates = Math.abs((startTime - endTime))/(1000*60*60*24);
+            return Math.floor(dates);
+        }
+
+
+</script>
+</head>
+
+<body id="body">	  
+        <div id="Link" style="position:absolute;left:0px;top:0px;width:9999px;height:110px; z-index:1000; cursor:pointer; " onclick="window.open('http://www.cqqhzx.cn/anni/Index.asp','_blank');" ></div>
+        <div id="Days" style="position:absolute;left:52%;top:3px;width:57px;height:32px; display:none;font-size:200%; line-height:30px; font-weight:700; color:red;"></div>
+        
+<div style="Z-INDEX: 1; POSITION: absolute; TOP: 170px; RIGHT: 0px" id=adv1>
+<P><A href="http://chem.cqqh.net/" target=_blank><IMG src="/images/school/gk.jpg"></A></P>
+</div>
+<div style="Z-INDEX: 1; POSITION: absolute; TOP: 170px; LEFT: 0px" id=adv3>
+<P><A href="/Category08/ShowClass.asp?ClassID=113" target=_blank><IMG src="/images/school/gk1.jpg"></A></P>
+</div>
+<div style="Z-INDEX: 1; POSITION: absolute; TOP: 280px; LEFT: 0px" id=adv4>
+<P><A href="/Article/ShowArticle.asp?ArticleID=2983" target=_blank><IMG src="/images/school/gk2.jpg"></A></P>
+</div>
+<div style="Z-INDEX: 1; POSITION: absolute; TOP: 280px; RIGHT: 0px" id=adv5>
+<P><A href="/Article/ShowArticle.asp?ArticleID=3544" target=_blank><IMG src="/images/school/11.jpg"></A></P>
+</div>
+<div style="Z-INDEX: 1; POSITION: absolute; TOP: 170px; LEFT: 0px" id=adv2>
+<P><A href="http://cqqhzx.vpea.ca/" target=_blank>  </A></P>
+</div>
+    <div id=Header><H1><A title=_官方网 href="/"></A></H1>
+<div id=TopPannel><SPAN id=Link><A title=加入收藏 onclick=addfavorite() href="#">加入收藏</A> <A title=在线视频 href="http://9.9.9.9/webmedia/" target=_blank>在线视频</A> <A title=下载中心 href="/soft/index.asp">下载中心</A> </SPAN></div>
+<div id=Nav>
+<UL class=NavUl>
+<LI><A class=curr href="/index.asp">网站首页</A> </LI>
+<LI onmouseover="mopen('m1')" onmouseout=mclose()><A href="/category01/index.asp">学校概况</A> 
+<div id=m1 class=ChildNavIn><A href="/Category01/ShowClass.asp?ClassID=1">基本信息</A><I>|</I><A href="/Category01/ShowClass.asp?ClassID=2">学校领导</A><I>|</I><A href="/Photo/ShowClass.asp?ClassID=51">人文校园</A><I>|</I><A href="/Category01/ShowClass.asp?ClassID=3">学校荣誉</A> </div></LI>
+<LI onmouseover="mopen('m2')" onmouseout=mclose()><A href="/article/index.asp">校园新闻</A> 
+<div id=m2 class=ChildNavIn><A href="/Article/ShowClass.asp?ClassID=12">校园动态</A><I>|</I><A href="/Article/ShowClass.asp?ClassID=13">通知公告</A><I>|</I><A href="/Photo/ShowClass.asp?ClassID=52">清华报电子版</A><I>|</I><A href="/Article/ShowClass.asp?ClassID=14">后勤保障</A><I>|</I><A href="/Article/ShowClass.asp?ClassID=16">领导关怀</A><I>|</I><A href="/Article/ShowClass.asp?ClassID=17">媒体关注</A><I>|</I><A href="/Article/ShowClass.asp?ClassID=108">校园视频</A> </div></LI>
+<LI onmouseover="mopen('m3')" onmouseout=mclose()><A href="/category02/index.asp">教育教学</A> 
+<div id=m3 class=ChildNavIn><A href="/Category02/ShowClass.asp?ClassID=18">教学活动</A><I>|</I><A href="/Category02/ShowClass.asp?ClassID=19">教学资源</A><I>|</I><A href="/Category02/ShowClass.asp?ClassID=20">学科社团</A><I>|</I><A href="/Category02/ShowClass.asp?ClassID=21">教学成绩</A><I>|</I><A href="/Category02/ShowClass.asp?ClassID=22">名师荟萃</A> </div></LI>
+<LI onmouseover="mopen('m4')" onmouseout=mclose()><A href="/category03/index.asp">教学科研</A> 
+<div id=m4 class=ChildNavIn><A href="/Category03/ShowClass.asp?ClassID=23">课程改革</A><I>|</I><A href="/Category03/ShowClass.asp?ClassID=24">论文论著</A><I>|</I><A href="/Category03/ShowClass.asp?ClassID=25">课题研究</A><I>|</I><A href="/Category03/ShowClass.asp?ClassID=26">交流讲学</A><I>|</I><A href="/Category03/ShowClass.asp?ClassID=27">专业发展</A><I>|</I><A href="/Category03/ShowClass.asp?ClassID=28">继续教育</A> </div></LI>
+<LI onmouseover="mopen('m5')" onmouseout=mclose()><A href="/category04/index.asp">学生德育</A> 
+<div id=m5 class=ChildNavIn><A href="/Category04/ShowClass.asp?ClassID=29">德育工作</A><I>|</I><A href="/Category04/ShowClass.asp?ClassID=30">家长学校</A><I>|</I><A href="/Category04/ShowClass.asp?ClassID=31">心理辅导</A><I>|</I><A href="/Category04/ShowClass.asp?ClassID=32">学生活动</A><I>|</I><A href="/Category04/ShowClass.asp?ClassID=33">团委学生会</A><I>|</I><A href="/Category04/ShowClass.asp?ClassID=34">平安校园</A> </div></LI>
+<LI onmouseover="mopen('m6')" onmouseout=mclose()><A href="/category05/index.asp">党建工作</A> 
+<div id=m6 class=ChildNavIn><A href="/Category05/ShowClass.asp?ClassID=114">党内生活</A><I>|</I><A href="/Category05/ShowClass.asp?ClassID=110">纪检监察|</I><A href="/Category05/ShowClass.asp?ClassID=115">群团工作</A> 
+</div></LI>
+<LI onmouseover="mopen('m7')" onmouseout=mclose()><A href="/category07/index.asp">国际交流</A> 
+<div style="WIDTH: 700px; LEFT: -330px" id=m7 class=ChildNavIn><A href="/Category07/ShowClass.asp?ClassID=40">汉语推广</A><I>|</I><A href="/Category07/ShowClass.asp?ClassID=41">外教工作</A><I>|</I><A href="/Category07/ShowClass.asp?ClassID=42">留学工作</A><I>|</I><A href="/Category07/ShowClass.asp?ClassID=43">合作项目</A><I>|</I><A href="/Category07/ShowClass.asp?ClassID=44">友好往来</A><I>|</I><A href="/Category07/ShowClass.asp?ClassID=45">德语教学</A><I>|</I><A href="/Category07/ShowClass.asp?ClassID=46">师生活动</A><I>|</I><A href="/Category07/ShowClass.asp?ClassID=47">冬夏令营</A><I>|</I><A href="/Category07/ShowClass.asp?ClassID=48">友好学校</A><I>|</I><A href="/Category07/ShowClass.asp?ClassID=49">其它活动</A> </div></LI>
+<LI onmouseover="mopen('m8')" onmouseout=mclose()><A href="/category06/index.asp">校友情结</A> 
+<div id=m8 class=ChildNavIn><A href="/Category06/ShowClass.asp?ClassID=36">校友故事</A><I>|</I><A href="/Category06/ShowClass.asp?ClassID=37">情结母校</A><I>|</I><A href="/Category06/ShowClass.asp?ClassID=38">助教助学</A><I>|</I><A href="/Category06/ShowClass.asp?ClassID=39">校友名录</A> </div></LI></UL></div> 
+</div>
+<div style="TEXT-ALIGN: left; MARGIN: 0px auto; WIDTH: 980px" id=contect>
+  <table border=0 cellSpacing=0 cellPadding=0 width=980>
+    <tr>
+      <td vAlign=top>
+        <table border=0 cellSpacing=0 cellPadding=0 width=980>
+          <tr>
+            <td width=744>
+<div class=loop_photo_div>
+<div id=LoopPhotoImg>
+<div>
+<dl>
+<dt><A href="/Photo/ShowClass.asp?ClassID=51" target=_blank><IMG id=PhotoImg0 title=清华中学 alt=清华中学 src="/Images/school/banner.jpg"> </A>
+</dt>
+</dl>
+</div>
+</div>
+<div id=LoopPhotoTb><SPAN class=show></SPAN>
+</div>
+</div>
+            </td>
+            <td width=5></td>
+            <td vAlign=top>
+              <table border=0 cellSpacing=0 cellPadding=0 width=230>
+                <tr>
+                  <td>
+                    <table style="BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid" border=0 cellSpacing=0 cellPadding=0 width=230>
+                      <tr>
+                        <td width=10><A href="/Category04/ShowClass.asp?ClassID=102"><IMG border=0 src="/Images/school/index_T_ZW.jpg" width=33 height=54></A></td>
+                        <td vAlign=middle width=218 height=66>
+                        <!--$人文活动最新$--> 
+                        <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Category04/images/Article_common9.gif" alt="普通文章"></td><td class=""><a class="" href="/Category04/ShowArticle.asp?ArticleID=3533" title="清华四月，研学花开" target="_self">清华四月，研学花开</a></td></tr><tr><td width="10" valign="top" class=""><img src="/Category04/images/Article_common9.gif" alt="普通文章"></td><td class=""><a class="" href="/Category04/ShowArticle.asp?ArticleID=3520" title="地理绿野仙踪&nbsp;野外实践简报" target="_self">地理绿野仙踪&nbsp;野外实践简报</a></td></tr><tr></tr></table> </td>
+                      </tr>
+                      <tr>
+                        <td height=1 background=/Images/school/index_T_line.gif></td>
+                        <td height=1 background=/Images/school/index_T_line.gif></td>
+                      </tr>
+                      <tr>
+                        <td><A href="/Category04/ShowClass.asp?ClassID=105"><IMG border=0 src="/Images/school/index_T_YS.jpg" width=33 height=54></A></td>
+                        <td vAlign=middle height=66>
+                        <!--$艺术活动最新$--> 
+                        <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Category04/images/Article_common9.gif" alt="普通文章"></td><td class=""><a class="" href="/Category04/ShowArticle.asp?ArticleID=3308" title="重庆市清华中学班级合唱比赛" target="_self">重庆市清华中学班级合唱比赛</a></td></tr><tr><td width="10" valign="top" class=""><img src="/Category04/images/Article_common9.gif" alt="普通文章"></td><td class=""><a class="" href="/Category04/ShowArticle.asp?ArticleID=3093" title="我校合唱队在市中小学学生艺术活动月中获市级一等奖" target="_self">我校合唱队在市中小学学生艺术</a></td></tr><tr></tr></table></td>
+                      </tr>
+                      <tr>
+                        <td height=1 background=/Images/school/index_T_line.gif></td>
+                        <td height=1 background=/Images/school/index_T_line.gif></td>
+                      </tr>
+                      <tr>
+                        <td><A href="/Category04/ShowClass.asp?ClassID=106"><IMG border=0 src="/Images/school/index_T_KJ.jpg" width=33 height=54></A></td>
+                        <td vAlign=middle height=66>
+                        <!--$科技活动最新$--> 
+                        <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Category04/images/Article_common9.gif" alt="普通文章"></td><td class=""><a class="" href="/Category04/ShowArticle.asp?ArticleID=3545" title="创客工作室获奖喜报" target="_self">创客工作室获奖喜报</a></td></tr><tr><td width="10" valign="top" class=""><img src="/Category04/images/Article_common9.gif" alt="普通文章"></td><td class=""><a class="" href="/Category04/ShowArticle.asp?ArticleID=3517" title="重庆市第33届青少年科技创新大赛清华中学获奖喜报" target="_self">重庆市第33届青少年科技创新大</a></td></tr><tr></tr></table></td>
+                      </tr>
+                      <tr>
+                        <td height=1 background=/Images/school/index_T_line.gif></td>
+                        <td height=1 background=/Images/school/index_T_line.gif></td>
+                      </tr>
+                      <tr>
+                        <td><A href="/Category04/ShowClass.asp?ClassID=107"><IMG border=0 src="/Images/school/index_T_TY.jpg" width=33 height=54></A></td>
+                        <td vAlign=middle height=66>
+                        <!--$体育活动最新$--> 
+                        <table width="100%" cellpadding="0" cellspacing="0"><tr><td width="10" valign="top" class=""><img src="/Category04/images/Article_common9.gif" alt="普通文章"></td><td class=""><a class="" href="/Category04/ShowArticle.asp?ArticleID=3489" title="张冬浩丨勇夺重马半程组冠军，我靠的不是运气！" target="_self">张冬浩丨勇夺重马半程组冠军，</a></td></tr><tr><td width="10" valign="top" class=""><img src="/Category04/images/Article_common9.gif" alt="普通文章"></td><td class=""><a class="" href="/Category04/ShowArticle.asp?ArticleID=3482" title="迈步在春天里" target="_self">迈步在春天里</a></td></tr><tr></tr></table></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height=10 vAlign=top></td>
+    </tr>
+    <tr>
+      <td>
+        <table border=0 cellSpacing=0 cellPadding=0 width=980>
+          <tr>
+            <td height=226 vAlign=top width=298>
+              <table style="BORDER-BOTTOM: #940404 1px solid; BORDER-LEFT: #940404 1px solid; BORDER-TOP: #940404 1px solid; BORDER-RIGHT: #940404 1px solid" border=0 cellSpacing=3 cellPadding=0 width=292>
+                <tr>
+                  <td id=Title_SlidePic height=220 vAlign=top background=Images/school/index_M_BG.jpg width=292 align=left>
+                  <!--$图片新闻$--> 
+                  <object classid=clsid:d27cdb6e-ae6d-11cf-96b8-444553540000 codebase=http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0 width=291 height=220>
+<param name=allowScriptAccess value=sameDomain><param name=movie value=/images/xman.swf><param name=quality value=high><param name=bgcolor value=#F0F0F0>
+<param name=menu value=false><param name=wmode value=opaque>
+<param name=FlashVars value=pics=/Article/UploadFiles/201805/2018050409451603.jpg|/Article/UploadFiles/201805/2018050715451343.jpg|/Category02/UploadFiles_7196/201805/2018050715113408.jpg|/Article/UploadFiles/201805/2018050311043695.jpg&links=/Article/ShowArticle.asp?ArticleID=3538|/Article/ShowArticle.asp?ArticleID=3542|/Category02/ShowArticle.asp?ArticleID=3540|/Article/ShowArticle.asp?ArticleID=3536&texts=2018年度男子足球特长生招生简章|成都理工大学与清华中学举行优质生源基地签|喜报：我校地理教师在市级赛课活动中荣获一|校庆丨清华放歌，花溪吟唱&borderwidth=291&borderheight=193&textheight=27>
+<embed  height=220 src=/images/xman.swf  wmode=opaque FlashVars=pics=/Article/UploadFiles/201805/2018050409451603.jpg|/Article/UploadFiles/201805/2018050715451343.jpg|/Category02/UploadFiles_7196/201805/2018050715113408.jpg|/Article/UploadFiles/201805/2018050311043695.jpg&links=/Article/ShowArticle.asp?ArticleID=3538|/Article/ShowArticle.asp?ArticleID=3542|/Category02/ShowArticle.asp?ArticleID=3540|/Article/ShowArticle.asp?ArticleID=3536&texts=2018年度男子足球特长生招生简章|成都理工大学与清华中学举行优质生源基地签|喜报：我校地理教师在市级赛课活动中荣获一|校庆丨清华放歌，花溪吟唱&borderwidth=291&borderheight=193&textheight=27 menu=false bgcolor=#F0F0F0 quality=high width=291 height=193 allowScriptAccess=sameDomain type=application/x-shockwave-flash pluginspage=http://www.macromedia.com/go/getflashplayer />
+</object>
+ </td>
+                </tr>
+              </table>
+            </td>
+            <td vAlign=top width=5></td>
+            <td vAlign=top width=440>
+<div id=Bar1>
+<UL class=BarHead>
+<LI><A class=on>新闻导读</A></LI></UL>
+<div class=BarContect>
+<div id=b1tab1 class=tabcs>
+            <!--$所有文章频道最新文章$--> 
+            <div class="tablecs2"><img src="/Category04/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category04/ShowClass.asp?ClassID=106">科技活动</a>] <a class="" href="/Category04/ShowArticle.asp?ArticleID=3545" title="创客工作室获奖喜报" target="_blank">创客工作室获奖喜报</a></div><div class="tablecs2"><img src="/Article/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Article/ShowClass.asp?ClassID=12">校园动态</a>] <a class="" href="/Article/ShowArticle.asp?ArticleID=3542" title="成都理工大学与清华中学举行优质生源基地签约授牌仪式" target="_blank">成都理工大学与清华中学举行优质生源基地签约授牌仪式</a></div><div class="tablecs2"><img src="/Category02/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category02/ShowClass.asp?ClassID=18">教学活动</a>] <a class="" href="/Category02/ShowArticle.asp?ArticleID=3540" title="喜报：我校地理教师在市级赛课活动中荣获一等奖" target="_blank">喜报：我校地理教师在市级赛课活动中荣获一等奖</a></div><div class="tablecs2"><img src="/Article/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Article/ShowClass.asp?ClassID=12">校园动态</a>] <a class="" href="/Article/ShowArticle.asp?ArticleID=3536" title="校庆丨清华放歌，花溪吟唱" target="_blank">校庆丨清华放歌，花溪吟唱</a></div><div class="tablecs2"><img src="/Article/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Article/ShowClass.asp?ClassID=12">校园动态</a>] <a class="" href="/Article/ShowArticle.asp?ArticleID=3535" title="校庆丨清华中学建校80周年校庆大会“大佬”云集！" target="_blank">校庆丨清华中学建校80周年校庆大会“大佬”云集！</a></div><div class="tablecs2"><img src="/Category04/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category04/ShowClass.asp?ClassID=102">人文活动</a>] <a class="" href="/Category04/ShowArticle.asp?ArticleID=3533" title="清华四月，研学花开" target="_blank">清华四月，研学花开</a></div><div class="tablecs2"><img src="/Category04/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category04/ShowClass.asp?ClassID=31">心理辅导</a>] <a class="" href="/Category04/ShowArticle.asp?ArticleID=3529" title="我校高2018级高考冲刺阶段压力管理团体心理辅导圆满结束" target="_blank">我校高2018级高考冲刺阶段压力管理团体心理辅导圆满结束</a></div><div class="tablecs2"><img src="/Category04/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category04/ShowClass.asp?ClassID=33">团委学生会</a>] <a class="" href="/Category04/ShowArticle.asp?ArticleID=3521" title="关注食品安全，共建健康校园" target="_blank">关注食品安全，共建健康校园</a></div> 
+</div>
+</div>
+<div class=BarFooter>
+</div>
+</div>
+            </td>
+            <td width=5></td>
+            <td vAlign=top width=230>
+              <table border=0 cellSpacing=0 cellPadding=0 width=230>
+                <tr>
+                  <td><IMG src="/Images/school/index_M_photo.jpg" width=230 height=165></td>
+                </tr>
+                <tr>
+                  <td><IMG src="/Images/school/index_M_photoD.jpg" width=230 height=61></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+    <tr>
+      <td height=10 vAlign=top></td>
+    </tr>
+        <!--<table border=0 cellSpacing=0 cellPadding=0 width=980>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td height=40 width=980><A href="http://chem.cqqh.net/" target=_blank><IMG border=0 src="/Images/school/hlhx.jpg" width=980 height=40></A></td>
+          </tr>
+          <tr>
+            <td height=14></td>
+          </tr>
+        </table>-->
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table border=0 cellSpacing=0 cellPadding=0 width=980>
+          <tr>
+            <td vAlign=top width=323>
+              <table border=0 cellSpacing=0 cellPadding=0 width=323>
+                <tr>
+                  <td>
+<div id="" class=BarHead2><A href="/Category05/ShowClass.asp?ClassID=114" target="_blank" style="font-size:14px" ><strong style="line-height:2" >&nbsp;&nbsp;&nbsp;&nbsp;党内生活</strong></A> 
+|<A href="/Category05/ShowClass.asp?ClassID=110" target="_blank" style="font-size:14px" ><strong style="line-height:2" >&nbsp;纪检监察</strong></A> 
+|<A href="/Category05/ShowClass.asp?ClassID=115" target="_blank" style="font-size:14px" ><strong style="line-height:2" >&nbsp;群团工作</strong></A> 
+</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   <table cellSpacing=0 cellPadding=0 width=323 style="BORDER-BOTTOM: #cdcdcd 1px solid; BORDER-LEFT: #cdcdcd 1px solid;BORDER-RIGHT: #cdcdcd 1px solid">
+                    <tr>
+                     <td style="line-height:2">                  
+                  <!--$党建工作文章$--> 
+                  <div class="tablecs2"><img src="/Category05/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category05/ShowClass.asp?ClassID=114">党内生活</a>] <a class="" href="/Category05/ShowArticle.asp?ArticleID=3456" title="清华中学党委召开意识形态工作专题会" target="_blank">清华中学党委召开意识形态工作专题会</a></div><div class="tablecs2"><img src="/Category05/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category05/ShowClass.asp?ClassID=114">党内生活</a>] <a class="" href="/Category05/ShowArticle.asp?ArticleID=3440" title="清华教育集团上好廉政教育开学第一课" target="_blank">清华教育集团上好廉政教育开学第一课</a></div><div class="tablecs2"><img src="/Category05/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category05/ShowClass.asp?ClassID=114">党内生活</a>] <a class="" href="/Category05/ShowArticle.asp?ArticleID=3410" title="不忘教育初心、严守育人之本" target="_blank">不忘教育初心、严守育人之本</a></div><div class="tablecs2"><img src="/Category05/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category05/ShowClass.asp?ClassID=114">党内生活</a>] <a class="" href="/Category05/ShowArticle.asp?ArticleID=3396" title="全民创卫&nbsp;党员先行" target="_blank">全民创卫&nbsp;党员先行</a></div><div class="tablecs2"><img src="/Category05/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category05/ShowClass.asp?ClassID=114">党内生活</a>] <a class="" href="/Category05/ShowArticle.asp?ArticleID=3391" title="花溪中学宣讲十九大精神出新招" target="_blank">花溪中学宣讲十九大精神出新招</a></div><div class="tablecs2"><img src="/Category05/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category05/ShowClass.asp?ClassID=114">党内生活</a>] <a class="" href="/Category05/ShowArticle.asp?ArticleID=3390" title="巴南区花溪中学教师立志要做新时代的行动家" target="_blank">巴南区花溪中学教师立志要做新时代的行动</a></div><div class="tablecs2"><img src="/Category05/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category05/ShowClass.asp?ClassID=114">党内生活</a>] <a class="" href="/Category05/ShowArticle.asp?ArticleID=3379" title="清华中学校工会委员会学习十九大精神活动" target="_blank">清华中学校工会委员会学习十九大精神活动</a></div><div class="tablecs2"><img src="/Category05/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category05/ShowClass.asp?ClassID=110">纪检监察</a>] <a class="" href="/Category05/ShowArticle.asp?ArticleID=3302" title="重庆清华教育集团组织干部接受廉政教育" target="_blank">重庆清华教育集团组织干部接受廉政教育</a></div><div class="tablecs2"><img src="/Category05/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category05/ShowClass.asp?ClassID=114">党内生活</a>] <a class="" href="/Category05/ShowArticle.asp?ArticleID=3220" title="“两学一做”学习教育专题党课课件喜报" target="_blank">“两学一做”学习教育专题党课课件喜报</a></div>
+                     </td>
+                     </tr>
+                   </table>  
+                </td>
+                </tr>
+              </table>
+            </td>
+            <td width=5>&nbsp;</td>
+            <td width=323>
+              <table border=0 cellSpacing=0 cellPadding=0 width=323>
+                <tr>
+                  <td>
+<div id="" class=BarHead1><A href="/Article/ShowClass.asp?ClassID=13" target="_blank" style="font-size:14px" ><strong style="line-height:2" >&nbsp;&nbsp;&nbsp;&nbsp;重要通知</strong></A> 
+</div>
+                 </td>
+                </tr>
+                <tr>
+                  <td>
+                   <table cellSpacing=0 cellPadding=0 width=323 style="BORDER-BOTTOM: #cdcdcd 1px solid; BORDER-LEFT: #cdcdcd 1px solid;BORDER-RIGHT: #cdcdcd 1px solid">
+                <tr>
+                  <td style="line-height:2">
+                  <!--$重要通知信息文章$--> 
+                  <div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3546" title="第14周工作安排" target="_blank">第14周工作安排</a></div><div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3543" title="“测一测，2018政府工作报告知多少”在线学习答题活动参与步骤" target="_blank">“测一测，2018政府工作报告知多少”在线学习答题活</a></div><div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3539" title="第11周工作安排" target="_blank">第11周工作安排</a></div><div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3538" title="2018年度男子足球特长生招生简章" target="_blank">2018年度男子足球特长生招生简章</a></div><div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3532" title="第10周工作安排" target="_blank">第10周工作安排</a></div><div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3522" title="第9周工作安排" target="_blank">第9周工作安排</a></div><div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3508" title="第7周工作安排" target="_blank">第7周工作安排</a></div><div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3500" title="第6周工作安排" target="_blank">第6周工作安排</a></div><div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3488" title="第5周工作安排" target="_blank">第5周工作安排</a></div>
+                     </td>
+                     </tr>
+                   </table> 
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td width=5>&nbsp;</td>
+            <td width=324>
+              <table border=0 cellSpacing=0 cellPadding=0 width=323>
+                <tr>
+                  <td>
+<div id="" class=BarHead1><A href="/category04/index.asp" target="_blank" style="font-size:14px" ><strong style="line-height:2" >&nbsp;&nbsp;&nbsp;&nbsp;学生德育</strong></A> 
+</div>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                   <table cellSpacing=0 cellPadding=0 width=323 style="BORDER-BOTTOM: #cdcdcd 1px solid; BORDER-LEFT: #cdcdcd 1px solid;BORDER-RIGHT: #cdcdcd 1px solid">
+                <tr>
+                  <td style="line-height:2">
+
+                  <!--$学生德育文章$--> 
+                  <div class="tablecs2"><img src="/Category04/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category04/ShowClass.asp?ClassID=106">科技活动</a>] <a class="" href="/Category04/ShowArticle.asp?ArticleID=3545" title="创客工作室获奖喜报" target="_blank">创客工作室获奖喜报</a></div><div class="tablecs2"><img src="/Category04/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category04/ShowClass.asp?ClassID=102">人文活动</a>] <a class="" href="/Category04/ShowArticle.asp?ArticleID=3533" title="清华四月，研学花开" target="_blank">清华四月，研学花开</a></div><div class="tablecs2"><img src="/Category04/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category04/ShowClass.asp?ClassID=31">心理辅导</a>] <a class="" href="/Category04/ShowArticle.asp?ArticleID=3529" title="我校高2018级高考冲刺阶段压力管理团体心理辅导圆满结束" target="_blank">我校高2018级高考冲刺阶段压力管理团体</a></div><div class="tablecs2"><img src="/Category04/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category04/ShowClass.asp?ClassID=33">团委学生会</a>] <a class="" href="/Category04/ShowArticle.asp?ArticleID=3521" title="关注食品安全，共建健康校园" target="_blank">关注食品安全，共建健康校园</a></div><div class="tablecs2"><img src="/Category04/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category04/ShowClass.asp?ClassID=102">人文活动</a>] <a class="" href="/Category04/ShowArticle.asp?ArticleID=3520" title="地理绿野仙踪&nbsp;野外实践简报" target="_blank">地理绿野仙踪&nbsp;野外实践简报</a></div><div class="tablecs2"><img src="/Category04/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category04/ShowClass.asp?ClassID=106">科技活动</a>] <a class="" href="/Category04/ShowArticle.asp?ArticleID=3517" title="重庆市第33届青少年科技创新大赛清华中学获奖喜报" target="_blank">重庆市第33届青少年科技创新大赛清华中</a></div><div class="tablecs2"><img src="/Category04/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category04/ShowClass.asp?ClassID=106">科技活动</a>] <a class="" href="/Category04/ShowArticle.asp?ArticleID=3504" title="赛车进校园&nbsp;&nbsp;&nbsp;助力清华学子腾飞" target="_blank">赛车进校园&nbsp;&nbsp;&nbsp;助力清华学子腾飞</a></div><div class="tablecs2"><img src="/Category04/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category04/ShowClass.asp?ClassID=107">体育活动</a>] <a class="" href="/Category04/ShowArticle.asp?ArticleID=3489" title="张冬浩丨勇夺重马半程组冠军，我靠的不是运气！" target="_blank">张冬浩丨勇夺重马半程组冠军，我靠的不</a></div><div class="tablecs2"><img src="/Category04/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category04/ShowClass.asp?ClassID=102">人文活动</a>] <a class="" href="/Category04/ShowArticle.asp?ArticleID=3484" title="献礼校庆，把我说给你听" target="_blank">献礼校庆，把我说给你听</a></div>
+                     </td>
+                     </tr>
+                   </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+              <tr>
+                <td width=323>&nbsp;</td>
+                <td width=5>&nbsp;</td>
+                <td width=323>&nbsp;</td>
+                <td width=5>&nbsp;</td>
+                <td width=324>&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table border=0 cellSpacing=0 cellPadding=0 width=980>
+              <tr>
+                <td vAlign=top width=323>
+                  <table border=0 cellSpacing=0 cellPadding=0 width=323>
+                    <tr>
+                      <td>
+<div id="" class=BarHead1><A href="/category03/index.asp" target="_blank" style="font-size:14px" ><strong style="line-height:2" >&nbsp;&nbsp;&nbsp;&nbsp;教育教学</strong></A> 
+</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                       <table cellSpacing=0 cellPadding=0 width=323 style="BORDER-BOTTOM: #cdcdcd 1px solid; BORDER-LEFT: #cdcdcd 1px solid;BORDER-RIGHT: #cdcdcd 1px solid">
+                <tr>
+                  <td style="line-height:2">
+                      <!--$教育教学文章$--> 
+                      <div class="tablecs2"><img src="/Category02/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category02/ShowClass.asp?ClassID=18">教学活动</a>] <a class="" href="/Category02/ShowArticle.asp?ArticleID=3540" title="喜报：我校地理教师在市级赛课活动中荣获一等奖" target="_blank">喜报：我校地理教师在市级赛课活动中荣获</a></div><div class="tablecs2"><img src="/Category02/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category02/ShowClass.asp?ClassID=18">教学活动</a>] <a class="" href="/Category02/ShowArticle.asp?ArticleID=3507" title="清华教研" target="_blank">清华教研</a></div><div class="tablecs2"><img src="/Category02/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category02/ShowClass.asp?ClassID=18">教学活动</a>] <a class="" href="/Category02/ShowArticle.asp?ArticleID=3501" title="“两江交汇”般的思维碰撞与融合" target="_blank">“两江交汇”般的思维碰撞与融合</a></div><div class="tablecs2"><img src="/Category02/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category02/ShowClass.asp?ClassID=73">高三年级</a>] <a class="" href="/Category02/ShowArticle.asp?ArticleID=3483" title="学以致用最“妖娆”" target="_blank">学以致用最“妖娆”</a></div><div class="tablecs2"><img src="/Category02/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category02/ShowClass.asp?ClassID=77">高一年级</a>] <a class="" href="/Category02/ShowArticle.asp?ArticleID=3473" title="同课异构&nbsp;共放异彩" target="_blank">同课异构&nbsp;共放异彩</a></div><div class="tablecs2"><img src="/Category02/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category02/ShowClass.asp?ClassID=22">名师荟萃</a>] <a class="" href="/Category02/ShowArticle.asp?ArticleID=3458" title="清华教师王书浩——用爱,让贫困生梦想去飞" target="_blank">清华教师王书浩——用爱,让贫困生梦想去飞</a></div><div class="tablecs2"><img src="/Category02/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category02/ShowClass.asp?ClassID=18">教学活动</a>] <a class="" href="/Category02/ShowArticle.asp?ArticleID=3404" title="材料做先锋，腐朽化神奇" target="_blank">材料做先锋，腐朽化神奇</a></div><div class="tablecs2"><img src="/Category02/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category02/ShowClass.asp?ClassID=18">教学活动</a>] <a class="" href="/Category02/ShowArticle.asp?ArticleID=3378" title="英语业界专家再次走进清华中学" target="_blank">英语业界专家再次走进清华中学</a></div><div class="tablecs2"><img src="/Category02/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category02/ShowClass.asp?ClassID=18">教学活动</a>] <a class="" href="/Category02/ShowArticle.asp?ArticleID=3309" title="记清华中学教育集团教学开放周活动" target="_blank">记清华中学教育集团教学开放周活动</a></div><div class="tablecs2"><img src="/Category02/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category02/ShowClass.asp?ClassID=18">教学活动</a>] <a class="" href="/Category02/ShowArticle.asp?ArticleID=3213" title="我校组织数字化探究实验室培训" target="_blank">我校组织数字化探究实验室培训</a></div>
+                          </td>
+                        </tr>
+                      </table>                     
+                    </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width=5>&nbsp;</td>
+                <td width=323>
+                  <table border=0 cellSpacing=0 cellPadding=0 width=323>
+                    <tr>
+                      <td>
+<div id="" class=BarHead1><A href="/Article/ShowClass.asp?ClassID=14" target="_blank" style="font-size:14px" ><strong style="line-height:2" >&nbsp;&nbsp;&nbsp;&nbsp;教学科研</strong></A> 
+</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                   <table cellSpacing=0 cellPadding=0 width=323 style="BORDER-BOTTOM: #cdcdcd 1px solid; BORDER-LEFT: #cdcdcd 1px solid;BORDER-RIGHT: #cdcdcd 1px solid">
+                <tr>
+                  <td style="line-height:2">
+                      <!--$教学科研文章$--> 
+                      <div class="tablecs2"><img src="/Category03/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category03/ShowClass.asp?ClassID=25">课题研究</a>] <a class="" href="/Category03/ShowArticle.asp?ArticleID=3519" title="开展课题研究&nbsp;&nbsp;&nbsp;提升专业素养" target="_blank">开展课题研究&nbsp;&nbsp;&nbsp;提升专业素养</a></div><div class="tablecs2"><img src="/Category03/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category03/ShowClass.asp?ClassID=27">专业发展</a>] <a class="" href="/Category03/ShowArticle.asp?ArticleID=3415" title="抓好“青蓝工程”,促进教师专业成长" target="_blank">抓好“青蓝工程”,促进教师专业成长</a></div><div class="tablecs2"><img src="/Category03/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category03/ShowClass.asp?ClassID=25">课题研究</a>] <a class="" href="/Category03/ShowArticle.asp?ArticleID=3407" title="研创客理念教育，促教学质量提升" target="_blank">研创客理念教育，促教学质量提升</a></div><div class="tablecs2"><img src="/Category03/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category03/ShowClass.asp?ClassID=28">继续教育</a>] <a class="" href="/Category03/ShowArticle.asp?ArticleID=3386" title="巴南区文继明中学化学名师工作室12月通讯稿" target="_blank">巴南区文继明中学化学名师工作室12月通讯</a></div><div class="tablecs2"><img src="/Category03/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category03/ShowClass.asp?ClassID=28">继续教育</a>] <a class="" href="/Category03/ShowArticle.asp?ArticleID=3385" title="巴南区物理新教师工作坊教学研习活动在我校开展" target="_blank">巴南区物理新教师工作坊教学研习活动在我</a></div><div class="tablecs2"><img src="/Category03/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category03/ShowClass.asp?ClassID=25">课题研究</a>] <a class="" href="/Category03/ShowArticle.asp?ArticleID=3224" title="生涯规划课题实践活动" target="_blank">生涯规划课题实践活动</a></div><div class="tablecs2"><img src="/Category03/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category03/ShowClass.asp?ClassID=25">课题研究</a>] <a class="" href="/Category03/ShowArticle.asp?ArticleID=3202" title="“学生生涯教育专家报告会”成功举行" target="_blank">“学生生涯教育专家报告会”成功举行</a></div><div class="tablecs2"><img src="/Category03/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category03/ShowClass.asp?ClassID=27">专业发展</a>] <a class="" href="/Category03/ShowArticle.asp?ArticleID=3179" title="市数学教研员张晓斌老师到我校做专题报告" target="_blank">市数学教研员张晓斌老师到我校做专题报告</a></div><div class="tablecs2"><img src="/Category03/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category03/ShowClass.asp?ClassID=25">课题研究</a>] <a class="" href="/Category03/ShowArticle.asp?ArticleID=3169" title="我校三大市级课题齐开题" target="_blank">我校三大市级课题齐开题</a></div><div class="tablecs2"><img src="/Category03/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category03/ShowClass.asp?ClassID=25">课题研究</a>] <a class="" href="/Category03/ShowArticle.asp?ArticleID=3164" title="教育教学改革研究重大课题开题论证会" target="_blank">教育教学改革研究重大课题开题论证会</a></div>
+                           </td>
+                         </tr>
+                       </table>                     
+                     </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width=5>&nbsp;</td>
+                <td width=324>
+                  <table border=0 cellSpacing=0 cellPadding=0 width=323>
+                    <tr>
+                      <td>
+<div id="" class=BarHead1><A href="/category05/index.asp" target="_blank" style="font-size:14px" ><strong style="line-height:2" >&nbsp;&nbsp;&nbsp;&nbsp;后勤保障</strong></A> 
+</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                   <table cellSpacing=0 cellPadding=0 width=323 style="BORDER-BOTTOM: #cdcdcd 1px solid; BORDER-LEFT: #cdcdcd 1px solid;BORDER-RIGHT: #cdcdcd 1px solid">
+                <tr>
+                  <td style="line-height:2">
+                      <!--$后勤保障文章$--> 
+                      <div class="tablecs2"><img src="/Article/images/Article_common9.gif" alt="普通文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3132" title="高压线入地改造工程中标公示" target="_blank">高压线入地改造工程中标公示</a></div><div class="tablecs2"><img src="/Article/images/Article_common9.gif" alt="普通文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3131" title="高压线入地招标公告" target="_blank">高压线入地招标公告</a></div><div class="tablecs2"><img src="/Article/images/Article_common9.gif" alt="普通文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3084" title="食堂鲜肉定点采购项目招标公告" target="_blank">食堂鲜肉定点采购项目招标公告</a></div><div class="tablecs2"><img src="/Article/images/Article_common9.gif" alt="普通文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3083" title="食堂蔬菜定点采购项目招标公告" target="_blank">食堂蔬菜定点采购项目招标公告</a></div><div class="tablecs2"><img src="/Article/images/Article_common9.gif" alt="普通文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3082" title="食堂冻货定点采购招标公告" target="_blank">食堂冻货定点采购招标公告</a></div><div class="tablecs2"><img src="/Article/images/Article_common9.gif" alt="普通文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3076" title="整修愚公池廊桥工程中标公示" target="_blank">整修愚公池廊桥工程中标公示</a></div><div class="tablecs2"><img src="/Article/images/Article_common9.gif" alt="普通文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3075" title="修建户外椅工程中标公示" target="_blank">修建户外椅工程中标公示</a></div><div class="tablecs2"><img src="/Article/images/Article_common9.gif" alt="普通文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3074" title="北门循环流水系统修复工程中标公示" target="_blank">北门循环流水系统修复工程中标公示</a></div><div class="tablecs2"><img src="/Article/images/Article_common9.gif" alt="普通文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3073" title="重庆市清华中学整修愚公池廊桥招标公告" target="_blank">重庆市清华中学整修愚公池廊桥招标公告</a></div><div class="tablecs2"><img src="/Article/images/Article_common9.gif" alt="普通文章">&nbsp;<a class="" href="/Article/ShowArticle.asp?ArticleID=3072" title="重庆市清华中学修建户外椅招标公告" target="_blank">重庆市清华中学修建户外椅招标公告</a></div>
+                          </td>
+                         </tr>
+                        </table>                      
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td width=323>&nbsp;</td>
+                <td width=5>&nbsp;</td>
+                <td width=323>&nbsp;</td>
+                <td width=5>&nbsp;</td>
+                <td width=324>&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td vAlign=top colSpan=3>
+            <table border=0 cellSpacing=0 cellPadding=0 width=980>
+              <tr>
+                <td height=3 vAlign=top width=300 align=left><table width="300" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                      <td width="142" height="10"></td>
+                  <td height="10"></td>
+                  <td width="147" height="10"></td>
+                    </tr>
+                    <tr>
+                      <td align="left"><a href="http://office.189.cn" target=_blank><img border=0 src="/Images/school/OA.jpg" width=142 height=71 /></a></td>
+                      <td width="7"></td>
+                      <td align="left"><a href="http://61.161.125.23:8989" target=_blank><img border=0 src="/Images/school/OA2.jpg" width=142 height=71 /></a></td>
+                    </tr>
+                    <tr>
+                      <td height="10"></td>
+                      <td width="7" height="10"></td>
+                      <td height="10"></td>
+                    </tr>
+                    <tr>
+                      <td align="left"><a href="http://blog.163.com/qhq_cq" target=_blank><img border=0 src="/Images/school/QHQ.png" width=141 height=71 /></a></td>
+                      <td width="7">&nbsp;</td>
+                      <td align="left"><a href="http://cqqhzx.vpea.ca/" target=_blank><img border=0 src="/Images/school/ZJ.jpg" width=141 height=71 /></a></td>
+                    </tr>
+                    <tr>
+                      <td height="10" align="left"></td>
+                      <td height="10"></td>
+                      <td height="10" align="left"></td>
+                  </tr>
+                    <tr>
+                      <td align="left"><a href="http://61.161.125.17:8080/" target=_blank><img border=0 src="/Images/school/images01.jpg" width=141 height=71 /></a></td>
+                      <td>&nbsp;</td>
+                      <td align="left"><a href="/category08/index.asp" target=_blank><img border=0 src="/Images/school/zs.jpg" width=141 height=71 /></a></td>
+                    </tr>
+                </table></td>
+                <td width=5></td>
+                <td vAlign=top width=440>
+<div id=Bar2>
+<UL class=BarHead>
+<!-- <LI><A class=on onmouseover="ShowTab('Bar2',1)" href="/Article/ShowClass.asp?ClassID=15">工会活动</A></LI> -->
+<LI><A class=on onmouseover="ShowTab('Bar2',1)" href="/Category07/Index.asp">国际交流</A></LI>
+<LI><A onmouseover="ShowTab('Bar2',2)" href="/Category06/Index.asp">校友情结</A></LI></UL>
+<div class=BarContect>
+<!-- <div id=b1tab1 class=tabcs> -->
+                <!--$工会活动文章$--> 
+                <!--$<div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;[<a class="" href="/Article/ShowClass.asp?ClassID=13">重要通知</a>] <a class="" href="/Article/ShowArticle.asp?ArticleID=3546" title="第14周工作安排" target="_blank">第14周工作安排</a></div><div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;[<a class="" href="/Article/ShowClass.asp?ClassID=13">重要通知</a>] <a class="" href="/Article/ShowArticle.asp?ArticleID=3543" title="“测一测，2018政府工作报告知多少”在线学习答题活动参与步骤" target="_blank">“测一测，2018政府工作报告知多少”在线学习</a></div><div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;[<a class="" href="/Article/ShowClass.asp?ClassID=13">重要通知</a>] <a class="" href="/Article/ShowArticle.asp?ArticleID=3539" title="第11周工作安排" target="_blank">第11周工作安排</a></div><div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;[<a class="" href="/Article/ShowClass.asp?ClassID=13">重要通知</a>] <a class="" href="/Article/ShowArticle.asp?ArticleID=3538" title="2018年度男子足球特长生招生简章" target="_blank">2018年度男子足球特长生招生简章</a></div><div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;[<a class="" href="/Article/ShowClass.asp?ClassID=13">重要通知</a>] <a class="" href="/Article/ShowArticle.asp?ArticleID=3532" title="第10周工作安排" target="_blank">第10周工作安排</a></div><div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;[<a class="" href="/Article/ShowClass.asp?ClassID=13">重要通知</a>] <a class="" href="/Article/ShowArticle.asp?ArticleID=3522" title="第9周工作安排" target="_blank">第9周工作安排</a></div><div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;[<a class="" href="/Article/ShowClass.asp?ClassID=13">重要通知</a>] <a class="" href="/Article/ShowArticle.asp?ArticleID=3508" title="第7周工作安排" target="_blank">第7周工作安排</a></div><div class="tablecs2"><img src="/Article/images/Article_ontop9.gif" alt="固顶文章">&nbsp;[<a class="" href="/Article/ShowClass.asp?ClassID=13">重要通知</a>] <a class="" href="/Article/ShowArticle.asp?ArticleID=3500" title="第6周工作安排" target="_blank">第6周工作安排</a></div>$--> 
+<!-- </div> --> 
+<div id=b1tab1 class=tabcs>
+                <!--$国际交流文章$--> 
+                <div class="tablecs2"><img src="/Category07/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category07/ShowClass.asp?ClassID=45">德语教学</a>] <a class="" href="/Category07/ShowArticle.asp?ArticleID=3035" title="第七届全国德语奥林匹克竞赛" target="_blank">第七届全国德语奥林匹克竞赛</a></div><div class="tablecs2"><img src="/Category07/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category07/ShowClass.asp?ClassID=45">德语教学</a>] <a class="" href="/Category07/ShowArticle.asp?ArticleID=3034" title="第七届全国德语奥林匹克竞赛心得体会" target="_blank">第七届全国德语奥林匹克竞赛心得体会</a></div><div class="tablecs2"><img src="/Category07/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category07/ShowClass.asp?ClassID=45">德语教学</a>] <a class="" href="/Category07/ShowArticle.asp?ArticleID=2857" title="2015德国bielefield夏令营" target="_blank">2015德国bielefield夏令营</a></div><div class="tablecs2"><img src="/Category07/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category07/ShowClass.asp?ClassID=45">德语教学</a>] <a class="" href="/Category07/ShowArticle.asp?ArticleID=2856" title="2015年德国Beliefeld德语夏令营" target="_blank">2015年德国Beliefeld德语夏令营</a></div><div class="tablecs2"><img src="/Category07/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category07/ShowClass.asp?ClassID=45">德语教学</a>] <a class="" href="/Category07/ShowArticle.asp?ArticleID=2855" title="2015泰国夏令营" target="_blank">2015泰国夏令营</a></div><div class="tablecs2"><img src="/Category07/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category07/ShowClass.asp?ClassID=45">德语教学</a>] <a class="" href="/Category07/ShowArticle.asp?ArticleID=2854" title="2015年上海德语夏令营" target="_blank">2015年上海德语夏令营</a></div><div class="tablecs2"><img src="/Category07/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category07/ShowClass.asp?ClassID=43">合作办学</a>] <a class="" href="/Category07/ShowArticle.asp?ArticleID=2810" title="加拿大歌摩士谷教育局官员Steve来访我校简讯" target="_blank">加拿大歌摩士谷教育局官员Steve来访我校简讯</a></div><div class="tablecs2"><img src="/Category07/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category07/ShowClass.asp?ClassID=45">德语教学</a>] <a class="" href="/Category07/ShowArticle.asp?ArticleID=2790" title="关于2015年德语全额奖学金夏令营入选学生名单公示" target="_blank">关于2015年德语全额奖学金夏令营入选学生名单</a></div> 
+</div>
+<div style="DISPLAY: none" id=b1tab2 class=tabcs>
+                <!--$校友情结文章$--> 
+                <div class="tablecs2"><img src="/Category06/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category06/ShowClass.asp?ClassID=109">励学基金</a>] <a class="" href="/Category06/ShowArticle.asp?ArticleID=3474" title="黎明女士捐资维修烈士碑&nbsp;&nbsp;&nbsp;&nbsp;彰显殷殷战友情" target="_blank">黎明女士捐资维修烈士碑&nbsp;&nbsp;&nbsp;&nbsp;彰显殷殷战友情</a></div><div class="tablecs2"><img src="/Category06/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category06/ShowClass.asp?ClassID=109">励学基金</a>] <a class="" href="/Category06/ShowArticle.asp?ArticleID=3423" title="2017年“清华校友——傅任敢励学基金”发放情况" target="_blank">2017年“清华校友——傅任敢励学基金”发放情</a></div><div class="tablecs2"><img src="/Category06/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category06/ShowClass.asp?ClassID=36">校友故事</a>] <a class="" href="/Category06/ShowArticle.asp?ArticleID=2946" title="校友介绍——朱世杰" target="_blank">校友介绍——朱世杰</a></div><div class="tablecs2"><img src="/Category06/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category06/ShowClass.asp?ClassID=37">情结母校</a>] <a class="" href="/Category06/ShowArticle.asp?ArticleID=2945" title="唐锡阳写给傅渝生的信" target="_blank">唐锡阳写给傅渝生的信</a></div><div class="tablecs2"><img src="/Category06/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category06/ShowClass.asp?ClassID=37">情结母校</a>] <a class="" href="/Category06/ShowArticle.asp?ArticleID=2944" title="思盼" target="_blank">思盼</a></div><div class="tablecs2"><img src="/Category06/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category06/ShowClass.asp?ClassID=37">情结母校</a>] <a class="" href="/Category06/ShowArticle.asp?ArticleID=2943" title="关于《傅任敢教育思想与实践之研究》的设想与建议" target="_blank">关于《傅任敢教育思想与实践之研究》的设想与</a></div><div class="tablecs2"><img src="/Category06/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category06/ShowClass.asp?ClassID=37">情结母校</a>] <a class="" href="/Category06/ShowArticle.asp?ArticleID=2942" title="流金岁月——郎文忠校友向学校送照片" target="_blank">流金岁月——郎文忠校友向学校送照片</a></div><div class="tablecs2"><img src="/Category06/images/Article_common9.gif" alt="普通文章">&nbsp;[<a class="" href="/Category06/ShowClass.asp?ClassID=37">情结母校</a>] <a class="" href="/Category06/ShowArticle.asp?ArticleID=2940" title="欢聚在清华园" target="_blank">欢聚在清华园</a></div> 
+</div>
+<div style="DISPLAY: none" id=b1tab3 class=tabcs>
+</div>
+<div style="DISPLAY: none" id=b1tab4 class=tabcs>
+</div>
+</div>
+<div class=BarFooter>
+</div>
+</div>
+                </td>
+                <td width=5></td>
+                <td vAlign=top>
+                  <table border=0 cellSpacing=0 cellPadding=0 width=230>
+                    <tr>
+                      <td><A href="/Category06/ShowClass.asp?ClassID=109"><IMG border=0 src="/Images/school/index_M_newBook.jpg" width=230 height=75></A></td>
+                    </tr>
+                    <tr>
+                      <td height=10></td>
+                    </tr>
+                    <tr>
+                      <td><A href="/Photo/ShowClass.asp?ClassID=52"><IMG border=0 src="/Images/school/index_M_Paper.jpg" width=230 height=69></A></td>
+                    </tr>
+                    <tr>
+                      <td height=10></td>
+                    </tr>
+                    <tr>
+                      <td><A href="/Category04/ShowClass.asp?ClassID=101"><IMG border=0 src="/Images/school/index_M_Paty.jpg" width=230 height=70></A></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+</div>
+<div id=Footer>
+<script type="text/javascript"> 
+function setHome(url) 
+{ 
+if (document.all){ 
+document.body.style.behavior='url(defaulthomepage)'; 
+document.body.setHomePage(url); 
+}else if (window.sidebar){ 
+if(window.netscape){ 
+try{ 
+netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect"); 
+}catch (e){ 
+alert( "该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true" ); 
+} 
+} 
+if(window.confirm("你确定要设置"+url+"为首页吗？")==1){ 
+var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch); 
+prefs.setCharPref('browser.startup.homepage',url); 
+} 
+} 
+} 
+</script> 
+<div id=FootMenu>│<A href="/Category08/ShowArticle.asp?ArticleID=1549">联系我们</A>│ <A onclick="setHome('http://www.cqqh.net');" href="javascript:void(null)">设为首页</A>│ <A onclick=addfavorite() title=加入收藏 href="#">加入收藏</A>│ <A href="/Category01/ShowArticle.asp?ArticleID=10">网站地图</A>│ <A href="/FriendSite/Index.asp">友情链接</A>│ </div>
+<div id=CopyRight>
+<div style="FLOAT: left"><A href="http://www.cqnet110.gov.cn/" target=_blank><IMG style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" src="/Images/school/sentrybox.gif" width=50 align=absMiddle height=63></A> </div>
+<div style="FLOAT: left"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/04/071/0000/60276431/CA040710000602764310003.js' type='text/javascript'%3E%3C/script%3E"));</script></div>
+<div style="WIDTH: 600px; FLOAT: left">All Rights Reserved Copyright (C) 2011 重庆清华中学信息中心 制作<BR>学校地址：重庆市巴南区李家沱土桥 邮编：400054<BR>62599998/62597082（招生热线）62590064（教学处）62590560（行政办公室） </div>
+<div style="FLOAT: right"><A href="http://www.cqnet110.gov.cn/" target=_blank><IMG style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px" src="/Images/school/wa50011301100009.gif" width=90 align=absMiddle height=100></A> </div></div> 
+</div>
+<div>
+</div>
+</div>
+<script type="text/javascript">displayPhoto()</script>
+
+</body>
+
+</html>

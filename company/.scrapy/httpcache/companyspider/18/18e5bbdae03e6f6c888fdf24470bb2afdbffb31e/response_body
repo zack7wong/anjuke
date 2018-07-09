@@ -1,0 +1,275 @@
+
+ 
+
+
+
+
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>潞河中学</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/noticeFloating.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	setTimeout(function(){
+		window.location.href="page/home.jsp";
+	},5000);
+	$('.dropdown').mouseenter(function(){
+		$('.sublinks').stop(false, true).hide();
+		var submenu = $(this).parent().next();
+		
+		submenu.css({
+			position:'absolute',
+			top: 30 + 'px',
+			left: 0 + 'px',
+			zIndex:1000
+		});
+		
+		submenu.stop().slideDown(300);
+		
+		submenu.mouseleave(function(){
+			$(this).slideUp(300);
+		});
+	});
+	/**
+	$("#container").bind("mouseover",function(e){
+		var pointX = e.pageX;
+		var pointY = e.pageY;
+		if((pointX > 800 || pointX<600) && (pointY<50 || pointY>100)){
+			$('.sublinks').stop(false, true).hide();
+		}
+	});**/
+	
+});
+</script>
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<link href="css/menu1.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+	.flashbutton {cursor:pointer; border:0; background:#fff; margin:0; padding:0;｝
+</style>
+<!-- 实现二级菜单的显示与隐藏 -->
+<script type="text/javascript">
+	var timeout = 500;
+	var closetimer = 0;
+	var ddmenuitem = 0;
+	// open hidden layer
+	function mopen(id) {
+		// cancel close timer
+		mcancelclosetime();
+		// close old layer
+		if (ddmenuitem)
+			ddmenuitem.style.visibility = 'hidden';
+		// get new layer and show it
+		ddmenuitem = document.getElementById(id);
+		ddmenuitem.style.visibility = 'visible';
+	}
+	// close showed layer
+	function mclose() {
+		if (ddmenuitem)
+			ddmenuitem.style.visibility = 'hidden';
+	}
+	// go close timer
+	function mclosetime() {
+		closetimer = window.setTimeout(mclose, timeout);
+	}
+	// cancel close timer
+	function mcancelclosetime() {
+		if (closetimer) {
+			window.clearTimeout(closetimer);
+			closetimer = null;
+		}
+	}
+	// close layer when click-out
+	document.onclick = mclose;
+</script>
+</head>
+<body id="index">
+
+<div id="bg_logo" style="height:760px;">
+
+  <div id="container"><!-- #BeginLibraryItem "/Library/header_index.lbi" -->
+<div id="header" style="position:absolute;left:0px;top:0px;z-index:99999"><!-- 添加style目的是为了让导航始终在最上部显示 -->
+  <h1 id="logo"><a href="index.jsp" title="潞河中学"><img src="images/logo.gif" alt="潞河中学" /></a></h1>
+  <div class="f_l block600">
+    <ul id="language">
+      <li><a><img src="images/language_kr.jpg" /></a></li>
+      <li><a><img src="images/language_ru.jpg" /></a></li>
+      <li><a><img src="images/language_en.jpg" /></a></li>
+    </ul>
+    <div id="nav">
+			<div id="container" style="margin-top:0px;margin-left:-75px ">
+				<ul id="sddm">
+					<li><a href="page/home.jsp">潞河首页</a>
+					</li>
+					<li style="color:#c3b499;font-weight:bold;line-height:23px;vertical-align: middle;">|</li>
+					<li><a href="page/school_intro.jsp" onmouseover="mopen('m1')" onmouseout="mclosetime()">学校概览</a>
+						<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+						<a href="page/school_intro.jsp">学校简介</a>
+						<a href="page/organ_luhe.jsp">机构设置</a>
+						<a href="page/teach_environment.jsp">教育环境</a>
+						<a href="page/school_scenery.jsp">校园风采</a>
+						<a href="page/school_history.jsp">走进校史馆</a>
+						</div>
+					</li>
+					<li style="color:#c3b499;font-weight:bold;line-height:23px;vertical-align: middle;">|</li>
+					<li><a href="page/kuaixun.jsp">校园快讯</a>
+					</li>
+					<li style="color:#c3b499;font-weight:bold;line-height:23px;vertical-align: middle;">|</li>
+					<li><a href="page/teach_jianshe.jsp" onmouseover="mopen('m2')" onmouseout="mclosetime()">教学天地</a>
+						<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+						<a href="page/teach_jianshe.jsp">课程建设</a>
+						<a href="page/teach_gongzuo.jsp">科研工作</a>
+						<a href="page/teaching_education.jsp">课堂教学</a>
+						<a href="page/teach_activity.jsp">科技活动</a>
+						<a href="page/teaching_gonggao.jsp">教务公告</a>
+						</div>
+					</li>
+					<li style="color:#c3b499;font-weight:bold;line-height:23px;vertical-align: middle;">|</li>
+					<li><a href="page/zhaosheng.jsp" onmouseover="mopen('m3')" onmouseout="mclosetime()">招生招聘</a>
+						<div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+						<a href="page/zhaosheng.jsp">招生</a>
+						<a href="page/zhaopin.jsp">招聘</a>
+						</div>
+					</li>
+					<li style="color:#c3b499;font-weight:bold;line-height:23px;vertical-align: middle;">|</li>
+					<li><a href="page/banzhuren.jsp" onmouseover="mopen('m4')" onmouseout="mclosetime()">德育园地</a>
+						<div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+						<a href="page/banzhuren.jsp">班主任</a>
+						<a href="page/jiazhang_xuexiao.jsp">家长学校</a>
+						<a href="page/shetuan_zhanshi.jsp">社团展示</a>
+						<a href="page/minzu_jiaoyu.jsp">民族教育</a>
+						<a href="page/edcu_fengcai.jsp">艺体风采</a>
+						<a href="page/edcu_shenghuo.jsp">校园生活</a>
+						</div>
+					</li>
+					<li style="color:#c3b499;font-weight:bold;line-height:23px;vertical-align: middle;">|</li>
+					<li><a href="page/jiaoliu.jsp">国际交流</a>
+					</li>
+					<li style="color:#c3b499;font-weight:bold;line-height:23px;vertical-align: middle;">|</li>
+					<li><!--<a href="http://www.luhe.net:8088/index.asp">党建工作</a>-->
+					<a href="http://www.luhe.net/cms/cms/luhe/page/list2.jsp?path=party">党建工作</a>
+					</li>
+					<!--<li style="color:#c3b499;font-weight:bold;line-height:23px;vertical-align: middle;">|</li>
+					<li><a href="page/qidai.jsp" >互动空间</a>
+					</li>-->
+				</ul>
+
+			</div>
+    </div>
+  </div>
+</div><!-- #EndLibraryItem -->
+<div id="index_flash" style="margin-top:95px;position:absolute; z-index:0;">
+    <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="900" height="600">
+        <param name="movie" value="flash/index.swf"/>
+        <param name="quality" value="high" />
+        <param name="swfversion" value="6.0.65.0" />
+        <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+        <param name="expressinstall" value="Scripts/expressInstall.swf" />
+        <param name="wmode" value="transparent" />
+         <param name="allowScriptAccess" value="always">
+        <param name="menu" value="false" />
+        <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+        <!--[if !IE]>-->
+        <object type="application/x-shockwave-flash" data="flash/index.swf" width="900" height="600">
+          <!--<![endif]-->
+          <param name="quality" value="high" />
+          <param name="swfversion" value="6.0.65.0" />
+          <param name="expressinstall" value="Scripts/expressInstall.swf" />
+          <param name="wmode" value="transparent" />
+          <param name="menu" value="false" />
+          <param name="allowScriptAccess" value="always">
+          <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+          <div>
+            <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+            <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" width="112" height="33" /></a></p>
+          </div>
+          <!--[if !IE]>-->
+        </object>
+        <!--<![endif]-->
+      </object>
+  </div>
+  <div id="index_flash" style=" width:65%;position:absolute;left:0px;top:80px; z-index:9;">
+  	<a href="page/home.jsp" title="点击进入潞河首页"><div style="position:absolute;left:50px;top:50px; width:550px;height:500px;z-index:10" ></div></a >
+  </div>
+    <ul id="pic_gallery">
+      <li>
+        <div class="item"><a href="page/school_intro.jsp">学校概览</a></div>
+        <div class="pic"><a title="学校概览" href="page/school_intro.jsp">
+        	<img width=100% height=100% src="/data/img/2013/11/52786c7f37374.jpg"/></a>
+        </div>
+        <div class="tit"><a href="page/school_intro.jsp">人生的考场</a></div>
+      </li>
+      <li>
+        <div class="item"><a href="page/kuaixun.jsp">校园快讯</a></div>
+        <div class="pic"><a title="校园快讯" href="page/kuaixun.jsp"><img width=100% height=100% src="/data/infoimg/2018/03/5aa8ee1694378.JPG" /></a></div>
+        <div class="tit"><a href="page/kuaixun.jsp">我校多位老师在第八届“春华杯”课堂教学评优活动中表现优异，喜获佳绩</a></div>
+      </li>
+      <li>
+        <div class="item"><a href="page/zhaosheng.jsp">招生招聘</a></div>
+        <div class="pic"><a title="招生招聘" href="page/zhaosheng.jsp"><img width=100% height=100% src="/data/zhaosheng.jpg" /></a></div>
+        <div class="tit"><a href="page/zhaosheng.jsp">招生简章</a></div>
+      </li>
+      <li>
+        <div class="item"><a href="page/edcu_fengcai.jsp">体艺风采</a></div><!-- interactive_guestbook_list.jsp -->
+        <div class="pic"><a title="体艺风采" href="page/edcu_fengcai.jsp"><img width=100% height=100% src="/data/infoimg/2018/05/5b014eceb2862.jpg" /></a></div>
+        <div class="tit"><a href="page/edcu_fengcai.jsp">民族音乐创作漫谈——潞河中学韵之灵民乐团开放日活动</a></div>
+      </li>
+    </ul>
+    <!-- #BeginLibraryItem "/Library/footer.lbi" -->
+    <!--
+ 
+  <div id="footer">
+      <p style="text-align:center"><a href="contact.jsp" title="联系我们">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="school_intro.jsp" title="学校概况">学校概览</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="kuaixun.jsp" title="校园快讯">校园快讯</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="teach_jianshe.jsp" title="教学天地">教学天地</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="zhaosheng.jsp" title="招生招聘">招生招聘</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="banzhuren.jsp" title="德育园地">德育园地</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="jiaoliu.jsp" title="国际交流">国际交流</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="http://www.luhe.net/cms/cms/luhe/page/list2.jsp?path=party" title="党建工作">党建工作</a></p>
+      <p style="text-align:center"><a href="http://www.miibeian.gov.cn/">京ICP备05037833号</a>&nbsp;&nbsp;技术支持：<a href="http://www.boxiao.cn/" title="博校文达">博校文达</a></p>
+    </div> -->
+    <div id="footer" style="margin-top:760px;" >
+      <p style="text-align:center">
+	      <a href="page/contact.jsp" title="联系我们">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	      <a href="page/school_intro.jsp" title="学校概况">学校概览</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	      <a href="page/kuaixun.jsp" title="校园快讯">校园快讯</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	      <a href="page/teach_jianshe.jsp" title="教学天地">教学天地</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	      <a href="page/zhaosheng.jsp" title="招生招聘">招生招聘</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	      <a href="page/banzhuren.jsp" title="德育园地">德育园地</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	      <a href="page/jiaoliu.jsp" title="国际交流">国际交流</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	      <a href="http://www.luhe.net/cms/cms/luhe/page/list2.jsp?path=party" title="党建工作">党建工作</a></p>
+      <p style="text-align:center">
+      	<a href="http://www.miibeian.gov.cn/">京ICP备05037833号</a>&nbsp;&nbsp;技术支持：<a href="http://www.boxiao.cn/" title="博校文达">博校文达</a>
+      </p>
+    </div>
+    <!-- #EndLibraryItem --></div>
+</div>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+</script>
+<!--<div id="zhaosheng" style="position: absolute; left: 0px; top: 0px;z-index:9999999" style="display:none">
+	 <a href="http://www.luhe.net:8888/" target="_blank">
+        <img src="images/socialism.jpg"  border="0" style="border-radius: 11px;" >
+    </a>
+</div>
+<script type="text/javascript">
+
+    var ad1=new Ad_Move("zhaosheng");
+    ad1.SetLocation(120, 100);
+    ad1.SetType(1);
+    ad1.Run();
+
+</script>
+-->
+</body>
+<!-- InstanceEndEditable -->
+<!-- InstanceEnd --></html>
+

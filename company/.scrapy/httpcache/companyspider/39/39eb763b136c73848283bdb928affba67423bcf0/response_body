@@ -1,0 +1,447 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	上海市奉贤中学
+</title><link href="Css/website.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.pagination.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.BindList.min.js" type="text/javascript"></script>
+    <script src="Scripts/getTime.js" type="text/javascript"></script>
+</head>
+<body>
+    <form name="form1" method="post" action="index.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+</div>
+        <div class="main">
+             <div class="top">
+    <img alt="" src="images/logo_1.jpg" class="logo left"/>
+    <img alt="" src="images/logo_2.jpg" class="by left" />
+</div>
+<div class="top_menu">
+    <div class="menu_info">
+        <ul id="menuBar">
+           <li class="menu" style="width:61px">
+               <a class="menuItem"  href="index.aspx">首页</a>
+           </li>
+        </ul>
+    </div>
+</div>
+
+            <div class="top_pic">
+                <div id="Banner" class="top_pic">
+                    
+                            <img alt="" src='ImageFiles/20150313101855481.jpg' class="top_pic" />
+                        
+                            <img alt="" src='ImageFiles/20170323123511170.jpg' class="top_pic" />
+                        
+                            <img alt="" src='ImageFiles/20150313101835357.jpg' class="top_pic" />
+                        
+                </div>
+                <ul id="top_btnbar"></ul>
+            </div>
+
+            <div class="center">
+                <div class="notice_login left">
+                    <div class="notice">
+                        <div class="notice_mk">
+                            <div class="notice_bt">
+                                <img alt="" src="images/notice_1.png" class="left" />
+                                <span class="bt_zw left">通知公告</span>
+                                <span class="bt_yw left">ANNOUNCEMENT</span>
+                            </div>
+                            <div class="notice_nr">
+                                <ul>
+                                    
+                                            <li>
+                                                <img alt="" src="images/dian.png" class="mk_img left" />
+                                                <a target="_blank" href='articleContent.aspx?id=3956&tId=12' title='2018年上海市奉贤中学“提前招生录取”方案'>
+                                                    2018年上海市奉贤中学“提前招生录取”方案
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <img alt="" src="images/dian.png" class="mk_img left" />
+                                                <a target="_blank" href='articleContent.aspx?id=3908&tId=12' title='2018年上海市奉贤中学校园开放日公告'>
+                                                    2018年上海市奉贤中学校园开放日公告
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <img alt="" src="images/dian.png" class="mk_img left" />
+                                                <a target="_blank" href='articleContent.aspx?id=3346&tId=12' title='奉贤中学2018学年师资招聘信息'>
+                                                    奉贤中学2018学年师资招聘信息
+                                                </a>
+                                            </li>
+                                        
+                                </ul>
+                                <div class="more">
+                                    <a href="articleList.aspx?typeId=12&tId=0">
+                                        <img alt="" src="images/more.png" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mk_d"></div>
+                    </div>
+                    <div class="login">
+                        <div class="login_mk">
+                            <div class="login_Title">管理平台</div>
+                            <div class="login_Form">
+                                <select id="Select1" onchange="redirect(this.value)">
+                                    <option>请选择</option>
+                                    
+                                            <option value="http://www.626china.org
+">
+                                                中国禁毒数字展览馆
+                                            </option>
+                                        
+                                            <option value="http://www.shjdg.org
+">
+                                                上海市禁毒科普教育馆
+                                            </option>
+                                        
+                                            <option value="http://gzmooc.edu.sh.cn/mooc/schoolIndex.action?param=1821
+">
+                                                上海市高中名校慕课
+                                            </option>
+                                        
+                                            <option value="http://www.yf678.net/
+">
+                                                学生生涯规划
+                                            </option>
+                                        
+                                            <option value="http://www.fxzx.fx.edu.sh.cn/zhxy/xsbm/index.shtml">
+                                                校园开放日报名
+                                            </option>
+                                        
+                                            <option value="http://fxzx.vip.qikan.com
+">
+                                                龙源期刊
+                                            </option>
+                                        
+                                            <option value="http://shfxzx.xuetangx.com/">
+                                                奉贤中学“在线学堂”MOOC平台
+                                            </option>
+                                        
+                                            <option value="http://www.fxzx.fx.edu.sh.cn/zhxy/page/login/index.shtml
+">
+                                                智慧网
+                                            </option>
+                                        
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mk_d"></div>
+                    </div>
+                </div>
+                <div class="news left">
+                    <div class="news_mk news_w">
+                        <div class="news_bt">
+                            <img alt="" src="images/news_1.png" class="left" />
+                            <span class="bt_zw left">校园新闻</span>
+                            <span class="bt_yw left">SCHOOL NEWS</span>
+                        </div>
+                        <div class="news_nr">
+                            <div class="left" id="slideShow">
+                                <div class="news_pic_t" id="slideCont">
+                                    
+                                            <img title='上海市民族班（校）片组合唱比赛在我校举行' alt="" src='ImageFiles/20180528151330556.jpg' onclick='SelectNews(4022,3)' />
+                                        
+                                            <img title='敞开改革之门 追随创新之路' alt="" src='ImageFiles/20180514100717944.jpg' onclick='SelectNews(3999,3)' />
+                                        
+                                            <img title='立足专业发展 提升教师素养' alt="" src='ImageFiles/20180508102856476.jpg' onclick='SelectNews(3992,3)' />
+                                        
+                                            <img title='用智慧和品质，当好教育的引路人' alt="" src='ImageFiles/20180418133138856.jpg' onclick='SelectNews(3960,3)' />
+                                        
+                                </div>
+                                <ul id="slider"></ul>
+                            </div>
+                            <div class="news_wz left">
+                                <div class="news_wz_top">
+                                    
+                                            <div class="news_wz_top_bt">
+                                                <a target="_blank" href='articleContent.aspx?id=4025&tId=3' title='“贤中博爱 梦圆学子”主题党（团）日活动在校举行'>
+                                                    “贤中博爱 梦圆学子”主题党（团）日活动在校举行
+                                                </a>
+                                            </div>
+                                        
+                                </div>
+                                <ul class="ul" id="news">
+                                    
+                                            <li>
+                                                <span class="date right">
+                                                    2018-05-28
+                                                </span>
+                                                <img alt="" src="images/dian.png" class="mk_img left" />
+                                                <a target="_blank" href='articleContent.aspx?id=4022&tId=3' title='上海市民族班（校）片组合唱比赛在我校举行'>
+                                                    上海市民族班（校）片组合唱比赛在我校举行
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <span class="date right">
+                                                    2018-05-22
+                                                </span>
+                                                <img alt="" src="images/dian.png" class="mk_img left" />
+                                                <a target="_blank" href='articleContent.aspx?id=4005&tId=3' title='奉贤中学第十一届第七次教工代表大会圆满召开'>
+                                                    奉贤中学第十一届第七次教工代表大会圆满召开
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <span class="date right">
+                                                    2018-05-14
+                                                </span>
+                                                <img alt="" src="images/dian.png" class="mk_img left" />
+                                                <a target="_blank" href='articleContent.aspx?id=3999&tId=3' title='敞开改革之门 追随创新之路'>
+                                                    敞开改革之门 追随创新之路
+                                                </a>
+                                            </li>
+                                        
+                                </ul>
+                                <div class="more">
+                                    <a href="articleList.aspx?typeId=3&tId=0">
+                                        <img alt="" src="images/more.png" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mk_d mk_d_news"></div>
+                </div>
+                <div class="kgdt left">
+                    <div class="news_mk dt_w">
+                        <div class="kgdt_bt">
+                            <img alt="" src="images/kgdt_1.png" class="left" />
+                            <span class="bt_zw left">课改动态</span>
+                            <span class="bt_yw left">TREND</span>
+                        </div>
+                        <div class="notice_nr">
+                            <ul>
+                                
+                                        <li>
+                                            <img alt="" src="images/dian.png" class="mk_img left" />
+                                            <a target="_blank" href='articleContent.aspx?id=3950&tId=13' title='奉贤中学教师积极参加第三届翻转课堂本土创新暨微课堂教学法教学观摩会'>
+                                                奉贤中学教师积极参加第三届翻转课堂本土创新暨微课堂教学法教学观摩会
+                                            </a>
+                                        </li>
+                                    
+                                        <li>
+                                            <img alt="" src="images/dian.png" class="mk_img left" />
+                                            <a target="_blank" href='articleContent.aspx?id=3107&tId=13' title='信息科技学科开展核心概念引领下的主题教研活动'>
+                                                信息科技学科开展核心概念引领下的主题教研活动
+                                            </a>
+                                        </li>
+                                    
+                                        <li>
+                                            <img alt="" src="images/dian.png" class="mk_img left" />
+                                            <a target="_blank" href='articleContent.aspx?id=3074&tId=13' title='细化教学基本要求，完善单元教学指南——市语文教研员范彪来校指导'>
+                                                细化教学基本要求，完善单元教学指南——市语文教研员范彪来校指导
+                                            </a>
+                                        </li>
+                                    
+                                        <li>
+                                            <img alt="" src="images/dian.png" class="mk_img left" />
+                                            <a target="_blank" href='articleContent.aspx?id=3020&tId=13' title='新疆部召开数学教学工作研讨会'>
+                                                新疆部召开数学教学工作研讨会
+                                            </a>
+                                        </li>
+                                    
+                                        <li>
+                                            <img alt="" src="images/dian.png" class="mk_img left" />
+                                            <a target="_blank" href='articleContent.aspx?id=2958&tId=13' title='不一样的课堂，不一样的学习'>
+                                                不一样的课堂，不一样的学习
+                                            </a>
+                                        </li>
+                                    
+                                        <li>
+                                            <img alt="" src="images/dian.png" class="mk_img left" />
+                                            <a target="_blank" href='articleContent.aspx?id=2910&tId=13' title='科艺创新教研组活动系列之三'>
+                                                科艺创新教研组活动系列之三
+                                            </a>
+                                        </li>
+                                    
+                            </ul>
+                            <div class="more">
+                                <a href="articleList.aspx?typeId=13&tId=0">
+                                    <img alt="" src="images/more.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mk_d mk_d_dt"></div>
+                </div>
+            </div>
+            <div class="lj">
+                <ul>
+                    <li>
+                        <a>
+                            <img id="mail" alt="" src="images/lj_1.jpg" style="cursor: pointer" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="articleList.aspx?typeId=14&tId=0">
+                            <img alt="" src="images/lj_2.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="articleList.aspx?typeId=15&tId=0">
+                            <img alt="" src="images/lj_3.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img alt="" src="images/lj_4.jpg" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="down">
+    <div>
+        <script type="text/javascript">
+            document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/02/035/0000/40231852/CA020350000402318520002.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+    </div>
+    <p>
+        地址：上海市奉贤区南桥镇南奉公路7058号&nbsp;&nbsp;邮编：201400&nbsp;&nbsp;电话：021-67186846
+    </p>
+</div>
+        </div>
+    </form>
+
+    <!--校长信箱-->
+    <div id="Layer_Cover"></div>
+
+    <div id="Layer_Mail">
+        <div class="MailWindow">
+
+            <div class="MailWindow_Content">
+                <div class="Mail_TopBar">
+                    <div class="Mail_TopTitle">校长信箱</div>
+                    <a id="Mail_TopClose">关闭</a>
+                </div>
+
+                <div class="Mail_Send_Reply">
+                    <a id="reply">查看建议答复</a>
+                    <a id="SendMailForm" style="display: none">发送留言</a>
+                </div>
+
+                <div id="MailFormArea">
+                    <div class="MailFormItem">
+
+                        <div class="MailFormLabel" style="margin-left: 20px; text-align: left">
+                            <div class="MailFormInputNeeded">*</div>
+                            为必填项
+
+                        </div>
+                    </div>
+                    <div class="MailFormItem">
+                        <div class="MailFormLabel">姓名:</div>
+                        <div class="MailFormInput" style="width: 150px">
+                            <input type="text" name="username" maxlength="10" />
+                        </div>
+                        <div class="MailFormInputNeeded">*</div>
+                    </div>
+                    <div class="MailFormItem">
+                        <div class="MailFormLabel">联系电话:</div>
+                        <div class="MailFormInput">
+                            <input type="text" name="telephone" maxlength="11" />
+                        </div>
+                        <div class="MailFormLabel">邮政编码:</div>
+                        <div class="MailFormInput">
+                            <input type="text" name="zipcode" maxlength="6" />
+                        </div>
+                    </div>
+                    <div class="MailFormItem">
+                        <div class="MailFormLabel">移动电话:</div>
+                        <div class="MailFormInput">
+                            <input type="text" name="cellphone" maxlength="11" />
+                        </div>
+                        <div class="MailFormLabel">E-Mail:</div>
+                        <div class="MailFormInput" style="width: 150px">
+                            <input type="text" name="email" maxlength="20" />
+                        </div>
+                        <div class="MailFormInputNeeded">*</div>
+                    </div>
+                    <div class="MailFormItem">
+                        <div class="MailFormLabel">联系地址:</div>
+                        <div class="MailFormInput">
+                            <input type="text" name="address" style="width: 260px" maxlength="20" />
+                        </div>
+                    </div>
+                    <div class="MailLine"></div>
+
+                    <div class="MailFormItem" style="margin-top: 10px">
+                        <div class="MailFormLabel">主题:</div>
+                        <div class="MailFormInput" style="width: 260px">
+                            <input type="text" name="topic" style="width: 260px" maxlength="20" />
+                        </div>
+                        <div class="MailFormInputNeeded">*</div>
+                    </div>
+
+                    <div class="MailFormItem" style="height: auto;">
+                        <div class="MailFormLabel">内容:</div>
+                        <div class="MailFormInput" style="width: 450px; height: 270px; overflow: auto">
+                            <textarea name="content" style="width: 420px; height: 260px" id="myContent"></textarea>
+                        </div>
+                        <div class="MailFormInputNeeded">*</div>
+                    </div>
+
+                    <div class="MailFormItem" style="height: 30px;">
+                        <input type="button" value="提交" style="margin: 0 0 0 250px; width: 50px; height: 20px" id="sendMail" />
+                        <input type="button" value="重置" style="margin: 0 0 0 20px; width: 50px; height: 20px" id="resetForm" />
+                    </div>
+                </div>
+
+                <div id="MailReplyArea">
+                    <div id="divResultMail">
+                        <ul id="resultUL"></ul>
+                    </div>
+                    <div id="pager"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="Layer_Cover2"></div>
+    <div id="Layer_MailReply">
+        <div class="MailReplyWindow">
+            <div class="MailReplyWindowTopBar">
+                <a id="MailReplyWindowTopClose">返回</a>
+            </div>
+            <div id="MailReplyWindowTopic"></div>
+            <div id="ClickCount"></div>
+            <div class="MailReplyLine" style="margin-top: 15px"></div>
+            <div class="MailContentDateBar">
+                <div class="MailContentDateTitle">信件内容:</div>
+                <div id="ContentDate" class="MailContentDate"></div>
+            </div>
+            <div id="Content" class="MailContent"></div>
+            <div class="MailReplyLine"></div>
+            <div class="MailContentDateBar">
+                <div class="MailContentDateTitle">回复内容:</div>
+                <div id="ReplyDate" class="MailContentDate"></div>
+            </div>
+            <div id="ContentReply" class="MailReplyContent"></div>
+        </div>
+    </div>
+</body>
+<script src="Scripts/jquery.cycle.all.min.js" type="text/javascript"></script>
+<script src="Scripts/foyo.js" type="text/javascript"></script>
+<script src="Scripts/menu.js" type="text/javascript"></script>
+
+<script src="Scripts/float.js" type="text/javascript"></script>
+<script type="text/javascript">
+    showAdv({src:'ImageFiles/20180104104503610.png',url:'http://www.fxzx.fx.edu.sh.cn/articleList.aspx?typeId=9&tId=0',left:0});showAdv({src:'ImageFiles/20171211101647844.png',url:'http://www.fxzx.fx.edu.sh.cn/articleList.aspx?typeId=534&tId=0',left:200});showAdv({src:'ImageFiles/20170524105334687.png',url:'http://www.fxzx.fx.edu.sh.cn/articleList.aspx?typeId=525&tId=0',left:400});
+</script>
+</html>

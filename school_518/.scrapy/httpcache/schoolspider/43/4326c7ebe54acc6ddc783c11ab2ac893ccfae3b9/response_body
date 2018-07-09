@@ -1,0 +1,500 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>重庆航天职业技术学院</title>
+<meta name="Keywords" content="重庆航天职业技术学院" >
+<meta name="Description" content="重庆航天职业技术学院" >
+<link type="text/css" href="/Templates/hangtian/style.css" rel="stylesheet" />
+<SCRIPT type=text/javascript>
+function selectTag(showContent,selfObj){
+	// 操作标签
+	
+	var tag = document.getElementById("tags").getElementsByTagName("div");
+	var taglength = tag.length;
+	for(i=0; i<taglength; i++){
+		tag[i].className = "off_bt";	
+		
+	}
+
+	for(i=1; i<=taglength; i++){
+		
+		if (("tagContent"+i) == showContent)
+		{
+		var bb=i-1;
+		tag[bb].className = "on_bt";
+		if (i==1){
+		document.getElementById("shijian").innerHTML ="<a href='/list/?213_1.html'>更多>></a>"
+		}
+		if (i==2)
+		{
+		document.getElementById("shijian").innerHTML ="<a href='/list/?229_1.html'>更多>></a>"
+		}
+		}
+	}
+	selfObj.parentNode.className = "selectTag";
+	// 操作内容
+	for(i=1; j=document.getElementById("tagContent"+i); i++){
+	    
+		j.style.display = "none";
+		
+	}
+	document.getElementById(showContent).style.display = "block";
+	
+	
+}
+function aa(){
+var tagt = document.getElementById("tags").getElementsByTagName("div");
+	var taglength = tagt.length;
+	tagt[0].className = 'on_bt';
+}
+</SCRIPT></head>
+<body onload="aa()">
+<div class="top">
+    <div class="tbgg">
+      <div class="float">你好：欢迎光临重庆航天职业技术学院官方网站！</div>
+      <div class="shijian"><a href='#' onclick='window.external.AddFavorite("","重庆航天职业技术学院")'>加入收藏</a> | <a href="#" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('')">设为首页</a> | <a href="http://www.cqepc.cn" target="_blank">学院旧网站</a> | </div>
+    </div> 
+    <div class="float">
+      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="1180" height="303">
+        <param name="movie" value="../../../images/banner.swf" />
+        <param name="quality" value="high" />
+        <embed src="../../../images/banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="1180" height="303"></embed>
+<param name="wmode" value="transparent">
+      </object>
+    </div>
+	
+	
+    <script type="text/javascript" src="/Templates/hangtian/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="/Templates/hangtian/js/slide.js"></script>
+    <link href="/Templates/hangtian/css/meun.css" rel="stylesheet" type="text/css" />
+ <div id="menu">
+      <ul id="index_nav">
+        <li class="meun_li1"><a href="http://www.cqepc.cn/index.html">网站首页</a></li>
+        
+        <li class="mainlevel" id="mainlevel_01"><a href="/aspcms/newslist/list-109-1.html">学院概况</a>
+          <ul id="sub_01">
+            
+            <li><a href='/aspcms/about/about-212.html' title="学院简介">学院简介</a></li>
+            
+            <li><a href='/aspcms/about/about-199.html' title="现任领导">现任领导</a></li>
+            
+            <li><a href='/aspcms/about/about-281.html' title="机构设置">机构设置</a></li>
+            
+            <li><a href='/aspcms/about/about-262.html' title="校史回顾">校史回顾</a></li>
+            
+            <li><a href='http://www.cqepc.cn:9001/jichu' title="江津校区">江津校区</a></li>
+            
+            <li><a href='/aspcms/productlist/list-214-1.html' title="校园风光">校园风光</a></li>
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_02"><a href="/about/?267.html">航天文化</a>
+          <ul id="sub_02">
+            
+            <li><a href='/aspcms/about/about-267.html' title="中国航天文化">中国航天文化</a></li>
+            
+            <li><a href='/aspcms/about/about-268.html' title="航天七院文化">航天七院文化</a></li>
+            
+            <li><a href='/aspcms/about/about-271.html' title="校园文化">校园文化</a></li>
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_03"><a href="/aspcms/about/about-222.html">人才培养</a>
+          <ul id="sub_03">
+            
+            <li><a href='http://www.cqepc.cn:9001/jiaowu/' title="教务处">教务处</a></li>
+            
+            <li><a href='http://www.cqepc.cn:9000/xuesheng' title="学生处">学生处</a></li>
+            
+            <li><a href='http://www.cqepc.cn:9000/dianzi' title="电子工程系">电子工程系</a></li>
+            
+            <li><a href='http://www.cqepc.cn:9000/jidian' title="机电工程系">机电工程系</a></li>
+            
+            <li><a href='http://www.cqepc.cn:9000/jisuanji' title="计算机工程系">计算机工程系</a></li>
+            
+            <li><a href='http://www.cqepc.cn:9000/guanli' title="管理工程系">管理工程系</a></li>
+            
+            <li><a href='http://www.cqepc.cn:9000/renwen' title="人文社科系">人文社科系</a></li>
+            
+            <li><a href='http://www.cqepc.cn:9000/yishu' title="艺术设计系">艺术设计系</a></li>
+            
+            <li><a href='http://www.cqepc.cn:9000/jichu' title="基础学科部">基础学科部</a></li>
+            
+            <li><a href='http://www.cqepc.cn:9000/jijiao' title="继续教育学院">继续教育学院</a></li>
+            
+            <li><a href='http://www.cqepc.cn:9000/xqjy' title="学前教育系">学前教育系</a></li>
+            
+            <li><a href='http://www.cqepc.cn:9000/sgxy' title="士官学院">士官学院</a></li>
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_04"><a href="http://www.cqepc.cn:9001/renli">师资队伍</a>
+          <ul id="sub_04">
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_05"><a href="/aspcms/about/about-259.html">招生就业</a>
+          <ul id="sub_05">
+            
+            <li><a href='http://www.cqepc.cn:9000/zhaosheng' title="招生信息网">招生信息网</a></li>
+            
+            <li><a href='http://www.cqepc.cn:9001/jiuye' title="就业信息网">就业信息网</a></li>
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_06"><a href="http://www.cqepc.cn:9001/yanxue">合作交流</a>
+          <ul id="sub_06">
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_07"><a href="http://www.cqepc.cn:9001/keyan">教改科研</a>
+          <ul id="sub_07">
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_08"><a href="http://www.cqepc.cn:9000/xuesheng/">学生工作</a>
+          <ul id="sub_08">
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_09"><a href="/aspcms/newslist/list-256-1.html">公共服务</a>
+          <ul id="sub_09">
+            
+            <li><a href='http://jw.cqepc.cn' title="教学服务">教学服务</a></li>
+            
+            <li><a href='http://www.cqepc.cn:9001/houqin' title="后勤服务">后勤服务</a></li>
+            
+            <li><a href='http://www.cqepc.cn:9001/tushuguan' title="图书馆">图书馆</a></li>
+            
+            <li><a href='/aspcms/about/about-299.html' title="交通地图">交通地图</a></li>
+            
+            <li><a href='http://www.cqepc.cn:8010' title="示范专题网">示范专题网</a></li>
+            
+            <li><a href='/aspcms/about/about-372.html' title="院长书记信箱">院长书记信箱</a></li>
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_010"><a href="/aspcms/newslist/list-229-1.html">媒体关注</a>
+          <ul id="sub_010">
+            
+            <li><a href='/aspcms/newslist/list-337-1.html' title="重庆日报">重庆日报</a></li>
+            
+            <li><a href='/aspcms/newslist/list-338-1.html' title="四川航天报">四川航天报</a></li>
+            
+            <li><a href='/aspcms/newslist/list-342-1.html' title="中国航天报">中国航天报</a></li>
+            
+            <li><a href='/aspcms/newslist/list-340-1.html' title="重庆商报">重庆商报</a></li>
+            
+            <li><a href='/aspcms/newslist/list-343-1.html' title="工人日报">工人日报</a></li>
+            
+            <li><a href='/aspcms/newslist/list-354-1.html' title="华龙网">华龙网</a></li>
+            
+            <li><a href='/aspcms/newslist/list-355-1.html' title="江津教育委员会">江津教育委员会</a></li>
+            
+            <li><a href='/aspcms/newslist/list-359-1.html' title="江津发布">江津发布</a></li>
+            
+            <li><a href='/aspcms/newslist/list-362-1.html' title="中国文明网">中国文明网</a></li>
+            
+            <li><a href='/aspcms/newslist/list-364-1.html' title="重庆晨报">重庆晨报</a></li>
+            
+            <li><a href='/aspcms/newslist/list-363-1.html' title="重庆职业教育网">重庆职业教育网</a></li>
+            
+            <li><a href='/aspcms/newslist/list-376-1.html' title="潼南日报">潼南日报</a></li>
+            
+            <li><a href='/aspcms/newslist/list-365-1.html' title="新浪网">新浪网</a></li>
+            
+            <li><a href='/aspcms/newslist/list-380-1.html' title="重庆晚报">重庆晚报</a></li>
+            
+            <li><a href='/aspcms/newslist/list-366-1.html' title="江津电视台">江津电视台</a></li>
+            
+            <li><a href='/aspcms/newslist/list-353-1.html' title="新华网">新华网</a></li>
+            
+            <li><a href='/aspcms/newslist/list-367-1.html' title="永川电视台">永川电视台</a></li>
+            
+            <li><a href='/aspcms/newslist/list-368-1.html' title="搜狐网">搜狐网</a></li>
+            
+            <li><a href='/aspcms/newslist/list-369-1.html' title="临空都市报">临空都市报</a></li>
+            
+            <li><a href='/aspcms/newslist/list-339-1.html' title="江津日报">江津日报</a></li>
+            
+            <li><a href='/aspcms/newslist/list-370-1.html' title="重庆电视台">重庆电视台</a></li>
+            
+            <li><a href='/aspcms/newslist/list-374-1.html' title="江津网">江津网</a></li>
+            
+            <li><a href='/aspcms/newslist/list-381-1.html' title="今日头条">今日头条</a></li>
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_011"><a href="/aspcms/newslist/list-255-1.html">通知公告</a>
+          <ul id="sub_011">
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_012"><a href="/aspcms/newslist/list-254-1.html">招生就业</a>
+          <ul id="sub_012">
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_013"><a href="/aspcms/newslist/list-253-1.html">学院公告</a>
+          <ul id="sub_013">
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_014"><a href="/aspcms/newslist/list-282-1.html">党委工作</a>
+          <ul id="sub_014">
+            
+            <li><a href='/aspcms/newslist/list-315-1.html' title="党务公开">党务公开</a></li>
+            
+            <li><a href='/aspcms/newslist/list-316-1.html' title="群众路线">群众路线</a></li>
+            
+            <li><a href='/aspcms/newslist/list-317-1.html' title="综合信息">综合信息</a></li>
+            
+            <li><a href='/aspcms/newslist/list-329-1.html' title="入党须知">入党须知</a></li>
+            
+            <li><a href='/aspcms/newslist/list-318-1.html' title="资源下载">资源下载</a></li>
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_015"><a href="/aspcms/about/about-19.html">联系我们</a>
+          <ul id="sub_015">
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_016"><a href="/aspcms/newslist/list-309-1.html">江津校区</a>
+          <ul id="sub_016">
+            
+            <li><a href='/aspcms/about/about-310.html' title="校区简介">校区简介</a></li>
+            
+            <li><a href='/aspcms/about/about-311.html' title="历史沿革">历史沿革</a></li>
+            
+            <li><a href='/aspcms/newslist/list-312-1.html' title="校园动态">校园动态</a></li>
+            
+            <li><a href='/aspcms/productlist/list-313-1.html' title="校园风光">校园风光</a></li>
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_017"><a href="/aspcms/about/about-325.html">信息公开</a>
+          <ul id="sub_017">
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_018"><a href="/aspcms/about/about-326.html">院系导航</a>
+          <ul id="sub_018">
+            
+          </ul>
+        </li>
+        
+        <li class="mainlevel" id="mainlevel_019"><a href="/aspcms/newslist/list-327-1.html">2013年全国普通高考招生计划</a>
+          <ul id="sub_019">
+            
+          </ul>
+        </li>
+        
+      </ul>
+    </div>	
+    <div style="width:1180px; float:left">
+      <div class="meun_div">
+        <div class="float"><img src="/Templates/hangtian/images/nav_left.jpg" width="154" height="42" /></div>
+        <div class="gg"> <span class="float"><a href="/aspcms/news/2018-3-2/3628.html" title="重庆航天职业技术学院2018年重庆市高职分类考试招生章程" target="_blank">重庆航天职业技术学院2018年重庆市高职分类考试招生章程</a></span><span class="shijian">2018-03-02              </span> </div>
+        <div class="float"><img src="/Templates/hangtian/images/nav_right.jpg" width="290" height="42" /></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/piaofu.js" language="JavaScript"></script><script src="/inc/AspCms_AdvJs.asp?type=pf" language="JavaScript"></script>
+
+
+
+<div id="mid">
+  <div class="mid_div">
+    <div class="mid_left">
+      <div class="float"><img src="/Templates/hangtian/images/left_pic2.jpg" width="756" height="71" /></div>
+      <div class="mid_left_content">
+        <div class="mid_left_info">
+          <div class="mid_left_top">
+            <div class="mid_left_info_flash">
+              <div class="tj"><img src="/Templates/hangtian/images/tj.png" width="95" height="94" /></div>
+              <div class="mid_left_info_flash_info"><SCRIPT language=JavaScript type=text/javascript>
+var swf_width='323';
+var swf_height='214';
+var configtg='0xffffff:文字颜色|2:文字位置|0x000000:文字背景颜色|30:文字背景透明度|0xffffff:按键文字颜色|0x4f6898:按键默认颜色|0x000033:按键当前颜色|8:自动播放时间|3:图片过渡效果|1:是否显示按钮|_blank:打开新窗口';
+var files='/upLoad/slide/month_1711/201711031944584079.jpg|/upLoad/slide/month_1709/201709121451523459.jpg|/upLoad/slide/month_1706/201706262012423761.jpg|/upLoad/slide/month_1706/201706262031506392.jpg|/upLoad/slide/month_1706/201706262141299574.jpg';
+var links='http://www.cqepc.cn/aspcms/news/2017-11-3/3521.html|http://www.cqepc.cn/aspcms/news/2017-9-1/3469.html|http://www.cqepc.cn/aspcms/news/2016-12-4/3112.html|http://www.cqepc.cn/aspcms/news/2016-3-11/2836.html|http://www.cqepc.cn/aspcms/news/2015-6-23/2670.html';
+var texts='时代楷模徐立平先进事迹报告会在我院举行||||';
+document.write('<object id="focus_flash" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+document.write('<param name="allowScriptAccess" value="sameDomain">');
+document.write('<param name="movie" value="/flash/focus.swf">');
+document.write('<param name="quality" value="high">');
+document.write('<param name="bgcolor" value="#ffffff">');
+document.write('<param name="menu" value="false">');
+document.write('<param name=wmode value="transparent">');
+document.write('<param name="FlashVars" value="pics='+files+'&links='+links+'&textsb='+texts+'&borderwidth='+swf_width+'&borderheight='+swf_height+'&textheight=0">');
+document.write('<embed id="focus_flash" src="/flash/focus.swf" wmode="transparent" FlashVars="pics='+files+'&links='+links+'&texts='+texts+'&borderwidth='+swf_width+'&borderheight='+swf_height+'&textheight=0" menu="false" class="tablebody1"  quality="high" width="'+ swf_width +'" height="'+ swf_height +'" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>'); 
+</SCRIPT></div>
+            </div>
+            <div class="bt">
+              <div id="tags">
+                <div class="off_bt" onmouseover="selectTag('tagContent1',this)" href="javascript:void(0)">校园新闻</div>
+                <div class="off_bt" onmouseover="selectTag('tagContent2',this)" href="javascript:void(0)">媒体关注</div>
+                <span class="shijian" id="shijian"><a href="/list/?213_1.html">更多>></a></span> </div>
+            </div>
+            <div class="news" id="tagContent1">
+              <ul>
+                
+                <li><a href="/aspcms/news/2018-5-23/3765.html" title="学院航空物流专业委员会成立大会暨人才培养方案研讨会顺利召开" target="_blank">学院航空物流专业委员会成立大...</a><span class="shijian">2018-05-23【人文社科系】</span></li>
+                
+                <li><a href="/aspcms/news/2018-5-22/3763.html" title="学院召开澳洲TAFE职业教育高校考察调研会" target="_blank">学院召开澳洲TAFE职业教育...</a><span class="shijian">2018-05-22【产学合作处】</span></li>
+                
+                <li><a href="/aspcms/news/2018-5-22/3762.html" title="学院举行大学生公文写作技能竞赛" target="_blank">学院举行大学生公文写作技能竞...</a><span class="shijian">2018-05-22【教务处】</span></li>
+                
+                <li><a href="/aspcms/news/2018-5-21/3764.html" title="我院学生处一行到电子工程职业学院交流工作" target="_blank">我院学生处一行到电子工程职业...</a><span class="shijian">2018-05-21【学生处】</span></li>
+                
+                <li><a href="/aspcms/news/2018-5-18/3761.html" title="四川航天2018年安全保卫培训班在我院江津校区顺利结束" target="_blank">四川航天2018年安全保卫培...</a><span class="shijian">2018-05-18【江津校区管委会】</span></li>
+                
+                <li><a href="/aspcms/news/2018-5-18/3759.html" title="我院两项创新项目喜获川航集团2018年度创新项目立项" target="_blank">我院两项创新项目喜获川航集团...</a><span class="shijian">2018-05-18【科研处】</span></li>
+                
+                <li><a href="/aspcms/news/2018-5-17/3757.html" title="学院两门课程被认定为重庆市高校首批精品在线开放课程" target="_blank">学院两门课程被认定为重庆市高...</a><span class="shijian">2018-05-17【教务处】</span></li>
+                
+                <li><a href="/aspcms/news/2018-5-16/3758.html" title="四川航天2018年安全保卫培训班在我院开班" target="_blank">四川航天2018年安全保卫培...</a><span class="shijian">2018-05-16【江津校区管委会】</span></li>
+                
+                <li><a href="/aspcms/news/2018-5-15/3756.html" title="我院旅游管理专业在全国旅游院校服务技能大赛中获得佳绩" target="_blank">我院旅游管理专业在全国旅游院...</a><span class="shijian">2018-05-15【人文社科系】</span></li>
+                
+              </ul>
+            </div>
+            <div class="news" id="tagContent2" style="display:none">
+              <ul>
+                
+                <li><a href="/aspcms/news/2018-5-18/3760.html" title="重庆航天职院航模队走进江津双槐树小学 普及科普知识、教学生制作“飞机”" target="_blank">重庆航天职院航模队走进江津双...</a><span class="shijian">2018-05-18【华龙网】</span></li>
+                
+                <li><a href="/aspcms/news/2018-2-9/3623.html" title="内涵建设助推转型攻坚" target="_blank">内涵建设助推转型攻坚</a><span class="shijian">2018-02-09【四川航天报】</span></li>
+                
+                <li><a href="/aspcms/news/2018-1-28/3622.html" title="蓄势腾飞   激活人才培养的优质新动能" target="_blank">蓄势腾飞   激活人才培养的...</a><span class="shijian">2018-01-28【重庆日报】</span></li>
+                
+                <li><a href="/aspcms/news/2018-1-27/3615.html" title="蓄势腾飞    激活人才培养的优质新动能" target="_blank">蓄势腾飞    激活人才培养...</a><span class="shijian">2018-01-27【重庆日报】</span></li>
+                
+                <li><a href="/aspcms/news/2017-12-30/3596.html" title="重庆这49名大学生直接进入部队当士官" target="_blank">重庆这49名大学生直接进入部...</a><span class="shijian">2017-12-30【重庆晚报】</span></li>
+                
+                <li><a href="/aspcms/news/2017-12-29/3595.html" title="开启军旅梦想 重庆航天职业技术学院首批49名定向培养直招士官生光荣入伍" target="_blank">开启军旅梦想 重庆航天职业技...</a><span class="shijian">2017-12-29【华龙网】</span></li>
+                
+                <li><a href="/aspcms/news/2017-12-28/3594.html" title="重庆这49名大学生直接进入部队当士官" target="_blank">重庆这49名大学生直接进入部...</a><span class="shijian">2017-12-28【今日头条】</span></li>
+                
+                <li><a href="/aspcms/news/2017-12-5/3593.html" title="党支部书记及组工干部学习十九大精神专题培训班开班" target="_blank">党支部书记及组工干部学习十九...</a><span class="shijian">2017-12-05【四川航天报】</span></li>
+                
+                <li><a href="/aspcms/news/2017-11-25/3592.html" title="四川航天工业集团开展重庆片区党员轮训" target="_blank">四川航天工业集团开展重庆片区...</a><span class="shijian">2017-11-25【四川航天报】</span></li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="tzgg_div">
+            <div class="tzgg_bt"><strong>通知公告</strong><a href="/list/?255_1.html">更多></a></div>
+            <div class="tzgg">
+              <ul>
+                
+                <li><a href="/aspcms/news/2018-5-24/3766.html" title="重庆航天职业技术学院教材代购比选公示" target="_blank">重庆航天职业技术学院教材代购比选公示</a><span class="shijian">2018-05-24</span></li>
+                
+                <li><a href="/aspcms/news/2018-5-23/3651.html" title="重庆航天职业技术学院2018年公开招聘工作人员简章" target="_blank">重庆航天职业技术学院2018年公开招聘工作人员简...</a><span class="shijian">2018-05-23</span></li>
+                
+                <li><a href="/aspcms/news/2018-5-15/3754.html" title="重庆航天职业技术学院A区5#学生宿舍维修改造项目比选公告" target="_blank">重庆航天职业技术学院A区5#学生宿舍维修改造项目...</a><span class="shijian">2018-05-15</span></li>
+                
+                <li><a href="/aspcms/news/2018-5-15/3753.html" title="重庆航天职业技术学院A区4#学生宿舍维修改造项目比选公告" target="_blank">重庆航天职业技术学院A区4#学生宿舍维修改造项目...</a><span class="shijian">2018-05-15</span></li>
+                
+                <li><a href="/aspcms/news/2018-5-10/3718.html" title="重庆航天职业技术学院2018-2019 2019-2020学年度教材代购比选公告" target="_blank">重庆航天职业技术学院2018-2019 2019...</a><span class="shijian">2018-05-10</span></li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="zhaobiao_div">
+            <div class="zhaobiao_bt"><strong>招生就业</strong><a href="/list/?254_1.html">更多></a></div>
+            <div class="zhaobiao">
+              <ul>
+                
+                <li><a href="/aspcms/news/2018-3-2/3627.html" title="重庆航天职业技术学院2018年重庆市高职分类考试招生简章" target="_blank">重庆航天职业技术学院2018年重庆市高职分类...</a></li>
+                
+                <li><a href="/aspcms/news/2018-3-2/3626.html" title="重庆航天职业技术学院2018年重庆市高职分类考试招生专业" target="_blank">重庆航天职业技术学院2018年重庆市高职分类...</a></li>
+                
+                <li><a href="/aspcms/news/2018-3-2/3625.html" title="重庆航天职业技术学院2018年重庆市高职分类考试招生计划" target="_blank">重庆航天职业技术学院2018年重庆市高职分类...</a></li>
+                
+                <li><a href="/aspcms/news/2018-3-2/3624.html" title="重庆航天职业技术学院2018年重庆市高职分类考试招生章程" target="_blank">重庆航天职业技术学院2018年重庆市高职分类...</a></li>
+                
+                <li><a href="/aspcms/news/2017-5-31/3353.html" title="重庆航天职业技术学院2017年全国普通高考招生简章" target="_blank">重庆航天职业技术学院2017年全国普通高考招...</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="float"><img src="/Templates/hangtian/images/left_foot.jpg" width="756" height="6" /></div>
+    </div>
+   <div class="mid_right">
+      <div class="float"><img src="/Templates/hangtian/images/ksdh.jpg" width="280" height="48" /></div>
+      <div class="mid_right_content">
+        <div class="mid_right_dh">
+          <div class="mid_right_dh_bt"><a target="_blank" href="http://www.cqepc.cn/aspcms/about/about-372.html">院长书记信箱</a></div>
+          <div class="mid_right_dh_bt"><a target="_blank" href="http://jw.cqepc.cn/">教务系统</a></div>
+          <div class="mid_right_dh_bt2"> <a target="_blank" href="http://www.cqepc.cn:9001/xinxi/">信息公开</a> </div>
+          <div class="mid_right_dh_bt2"> <a target="_blank" href="http://www.cqepc.cn:9001/jiwei">党风廉政</a> </div>
+          <div class="mid_right_dh_bt2"> <a target="_blank" href="http://www.cqepc.cn:9001/tushuguan">图书馆</a> </div>
+          <div class="mid_right_dh_bt2"> <a target="_blank" href="http://www.cqepc.cn:9001/jiaowu">教务处</a> </div>
+          <div class="mid_right_dh_bt2"> <a target="_blank" href="http://www.cqepc.cn:9000/zhaosheng">招生信息网</a> </div>
+          <div class="mid_right_dh_bt2"> <a target="_blank" href="http://www.cqepc.cn:9001/jiuye">就业信息网</a> </div>
+          <div class="mid_right_dh_bt2"> <a target="_blank" href="/about/?326.html">院系导航</a> </div>
+          <div class="mid_right_dh_bt2"> <a target="_blank" href="http://www.cqepc.cn:9001/anquan/">安全工作</a> </div>
+          <div class="mid_right_dh_bt2"> <a target="_blank" href="http://jp.cqepc.cn/">教学资源平台</a> </div>
+          <div class="mid_right_dh_bt2"> <a target="_blank" href="http://www.cqepc.cn/jing/">精品课程</a> </div>
+          <div class="mid_right_dh_bt2"> <a target="_blank" href="http://www.cqepc.cn:9000/jijiao">继续教育学院</a> </div>
+          <div class="mid_right_dh_bt2"> <a target="_blank" href="http://10.10.3.142/">创新发展计划</a> </div>
+        </div>
+        <div class="contact_bt">学院联系方式</div>
+        <div class="contact">
+          <p><strong>重庆航天职业技术学院</strong></p>
+<p>地址：重庆市江北区红石路255号</p>
+<p>邮编：400021</p>
+<p>院办电话：023－67613015</p>
+<p>招办电话：023－67613088</p>
+<p>就业办电话：023－67607068</p>
+           </div>
+      </div>
+      <div class="float"><img src="/Templates/hangtian/images/right_foot.jpg" width="280" height="6" /></div>
+    </div>
+  </div>
+</div>
+<div id="foot">
+  <div class="banquan">
+    <div><img src="/Templates/hangtian/images/foot_mid.jpg" width="163" height="14" /></div>
+    <div class="banquan_info">
+      <div class="float"> 友情链接： <a href="http://www.spacechina.com" target="_blank">中国航天科技集团公司</a> | 
+         <a href="http://scaat.spacechina.com" target="_blank">四川航天技术研究院</a> | 
+         <a href="http://www.cqksy.cn" target="_blank">重庆市教育考试院</a> | 
+         <a href="http://www.cqat.cn" target="_blank">飞行学院通用航空培训公司</a> | 
+         <a href="http://www.cqzyjy.cn/" target="_blank">重庆职业教育</a> | 
+         <br />
+        版权所有：重庆航天职业技术学院  学院地址：重庆市江北区红石路255号 邮编：400021 <br />
+院办电话：023－67613015 招办电话：023－67613088 就业处电话：023-67607068 <br />
+<a href="http://www.miibeian.gov.cn">*渝ICP备11004150号</a>  教委前置备案编号：2011036 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5097786'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D5097786%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script></div>
+      <div class="shijian"><a target="_blank" href="http://www.cqwa.gov.cn"><img src="/Templates/hangtian/images/sentrybox.gif" width="51" height="70" /></a><a target="_blank" href="http://beian.cqnet110.gov.cn/open/showRecord?id=50010501500222"><img src="/Templates/hangtian/images/getRecordLogo.gif" width="60" height="60" /></a><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/04/000/0000/60603446/CA040000000606034460006.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<img src="/Templates/hangtian/images/wx.jpg" width="80" height="80" /></div>
+    </div>
+  </div>
+</div>
+<P align="center"><A href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50010502000090"><FONT color="#000000"><IMG src="images/ghs.png">公安备案号：50010502000090</FONT></A></P>
+</body>
+</html>
